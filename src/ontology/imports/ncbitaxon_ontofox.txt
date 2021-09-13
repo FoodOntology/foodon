@@ -4250,7 +4250,8 @@ includeComputedIntermediates
 
 [Source annotation URIs]
 http://www.w3.org/2000/01/rdf-schema#label
-#copyTo http://purl.obolibrary.org/obo/IAO_0000111
+# copyTo http://purl.obolibrary.org/obo/IAO_0000111 IAO:preferred term
 http://www.geneontology.org/formats/oboInOwl#hasExactSynonym
-#mapTo http://purl.obolibrary.org/obo/IAO_0000118 #iao:alternative term
+# mapTo http://purl.obolibrary.org/obo/IAO_0000118 #iao:alternative term
 http://purl.obolibrary.org/obo/ncbitaxon#common_name
+http://purl.obolibrary.org/obo/ncbitaxon#genbank_synonym
