@@ -1,6 +1,6 @@
 <?xml version="1.0"?>
-<rdf:RDF xmlns="http://purl.obolibrary.org/obo/foodon/imports/dietary_supplement_import.owl#"
-     xml:base="http://purl.obolibrary.org/obo/foodon/imports/dietary_supplement_import.owl"
+<rdf:RDF xmlns="http://purl.obolibrary.org/obo/foodon/imports/robot_dietary_supplement.owl#"
+     xml:base="http://purl.obolibrary.org/obo/foodon/imports/robot_dietary_supplement.owl"
      xmlns:dc="http://purl.org/dc/elements/1.1/"
      xmlns:obo="http://purl.obolibrary.org/obo/"
      xmlns:owl="http://www.w3.org/2002/07/owl#"
@@ -9,7 +9,7 @@
      xmlns:xsd="http://www.w3.org/2001/XMLSchema#"
      xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
      xmlns:oboInOwl="http://www.geneontology.org/formats/oboInOwl#">
-    <owl:Ontology rdf:about="http://purl.obolibrary.org/obo/foodon/imports/dietary_supplement_import.owl"/>
+    <owl:Ontology rdf:about="http://purl.obolibrary.org/obo/foodon/imports/robot_dietary_supplement.owl"/>
     
 
 
