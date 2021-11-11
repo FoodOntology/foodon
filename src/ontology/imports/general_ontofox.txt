@@ -386,6 +386,27 @@ http://purl.obolibrary.org/obo/IAO_0000114
 http://purl.obolibrary.org/obo/IAO_0000119
 http://purl.obolibrary.org/obo/OBI_0001886
 
+###########################################
+
+[Source ontology]
+MSIO
+
+[Low level source term URIs]
+http://purl.obolibrary.org/obo/MSIO_0000167 # fermenter
+
+[Top level source term URIs and target direct superclass URIs]
+http://purl.obolibrary.org/obo/BFO_0000001
+
+[Source term retrieval setting]
+includeAllIntermediates
+
+[Source annotation URIs]
+http://www.w3.org/2000/01/rdf-schema#label
+http://purl.obolibrary.org/obo/IAO_0000115 
+http://purl.obolibrary.org/obo/IAO_0000111
+http://purl.obolibrary.org/obo/IAO_0000114
+http://purl.obolibrary.org/obo/IAO_0000119
+http://purl.obolibrary.org/obo/OBI_0001886
 
 ###########################################
 
@@ -439,6 +460,11 @@ http://purl.obolibrary.org/obo/PO_0009060 # calyx
 http://purl.obolibrary.org/obo/PO_0025281 # pollen
 http://purl.obolibrary.org/obo/PO_0000056 # flower bud
 http://purl.obolibrary.org/obo/PO_0000003 # whole plant
+http://purl.obolibrary.org/obo/PO_0009053 # peduncle
+http://purl.obolibrary.org/obo/PO_0030112 # pedicel
+http://purl.obolibrary.org/obo/PO_0020055 # leaf rachis
+
+http://purl.obolibrary.org/obo/PO_0025104 # first order inflorescence axis
 
 http://purl.obolibrary.org/obo/PO_0025083 # strobilus / cone
 
@@ -593,6 +619,9 @@ http://purl.obolibrary.org/obo/BFO_0000054 # part of
 http://purl.obolibrary.org/obo/RO_0002473 # composed primarily of
 http://purl.obolibrary.org/obo/RO_0002350 # member of
 http://purl.obolibrary.org/obo/RO_0002351 # has member
+
+http://purl.obolibrary.org/obo/RO_0002170 # connected to
+http://purl.obolibrary.org/obo/RO_0002371 #    attached to
 
 http://purl.obolibrary.org/obo/RO_0000086 # has quality
 http://purl.obolibrary.org/obo/RO_0000087 # has_role
