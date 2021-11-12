@@ -7,6 +7,7 @@
      xmlns:xml="http://www.w3.org/XML/1998/namespace"
      xmlns:xsd="http://www.w3.org/2001/XMLSchema#"
      xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
+     xmlns:terms="http://purl.org/dc/terms/"
      xmlns:oboInOwl="http://www.geneontology.org/formats/oboInOwl#">
     <owl:Ontology rdf:about="http://purl.obolibrary.org/obo/foodon/imports/robot_process.owl"/>
     
@@ -47,6 +48,12 @@
     
 
 
+    <!-- http://purl.org/dc/terms/date -->
+
+    <owl:AnnotationProperty rdf:about="http://purl.org/dc/terms/date"/>
+    
+
+
     <!-- http://www.geneontology.org/formats/oboInOwl#hasDbXref -->
 
     <owl:AnnotationProperty rdf:about="http://www.geneontology.org/formats/oboInOwl#hasDbXref"/>
@@ -82,15 +89,15 @@
     
 
 
-    <!-- http://purl.obolibrary.org/obo/RO_0002233 -->
+    <!-- http://purl.obolibrary.org/obo/OBI_0000293 -->
 
-    <owl:ObjectProperty rdf:about="http://purl.obolibrary.org/obo/RO_0002233"/>
+    <owl:ObjectProperty rdf:about="http://purl.obolibrary.org/obo/OBI_0000293"/>
     
 
 
-    <!-- http://purl.obolibrary.org/obo/RO_0002234 -->
+    <!-- http://purl.obolibrary.org/obo/OBI_0000299 -->
 
-    <owl:ObjectProperty rdf:about="http://purl.obolibrary.org/obo/RO_0002234"/>
+    <owl:ObjectProperty rdf:about="http://purl.obolibrary.org/obo/OBI_0000299"/>
     
 
 
@@ -124,6 +131,12 @@
     
 
 
+    <!-- http://purl.obolibrary.org/obo/FOODON_00001071 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/FOODON_00001071"/>
+    
+
+
     <!-- http://purl.obolibrary.org/obo/FOODON_00001181 -->
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/FOODON_00001181"/>
@@ -132,7 +145,9 @@
 
     <!-- http://purl.obolibrary.org/obo/FOODON_00001258 -->
 
-    <owl:Class rdf:about="http://purl.obolibrary.org/obo/FOODON_00001258"/>
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/FOODON_00001258">
+        <rdfs:label xml:lang="en">food (fermented)</rdfs:label>
+    </owl:Class>
     
 
 
@@ -143,7 +158,7 @@
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/FOODON_03470107"/>
         <rdfs:subClassOf>
             <owl:Restriction>
-                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/RO_0002234"/>
+                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/OBI_0000299"/>
                 <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/FOODON_00001258"/>
             </owl:Restriction>
         </rdfs:subClassOf>
@@ -209,7 +224,7 @@
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/FOODON_00002409"/>
         <rdfs:subClassOf>
             <owl:Restriction>
-                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/RO_0002234"/>
+                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/OBI_0000299"/>
                 <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/FOODON_00002649"/>
             </owl:Restriction>
         </rdfs:subClassOf>
@@ -226,7 +241,7 @@
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/FOODON_03460130"/>
         <rdfs:subClassOf>
             <owl:Restriction>
-                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/RO_0002234"/>
+                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/OBI_0000299"/>
                 <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/FOODON_00002418"/>
             </owl:Restriction>
         </rdfs:subClassOf>
@@ -259,7 +274,7 @@
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/BFO_0000015"/>
         <rdfs:subClassOf>
             <owl:Restriction>
-                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/RO_0002234"/>
+                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/OBI_0000299"/>
                 <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/FOODON_00002403"/>
             </owl:Restriction>
         </rdfs:subClassOf>
@@ -283,7 +298,7 @@
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/FOODON_03450026"/>
         <rdfs:subClassOf>
             <owl:Restriction>
-                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/RO_0002234"/>
+                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/OBI_0000299"/>
                 <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/FOODON_00002660"/>
             </owl:Restriction>
         </rdfs:subClassOf>
@@ -308,7 +323,9 @@
 
     <!-- http://purl.obolibrary.org/obo/FOODON_00002649 -->
 
-    <owl:Class rdf:about="http://purl.obolibrary.org/obo/FOODON_00002649"/>
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/FOODON_00002649">
+        <rdfs:label xml:lang="en">food (milled)</rdfs:label>
+    </owl:Class>
     
 
 
@@ -348,7 +365,7 @@
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/FOODON_03460130"/>
         <rdfs:subClassOf>
             <owl:Restriction>
-                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/RO_0002234"/>
+                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/OBI_0000299"/>
                 <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/FOODON_00002708"/>
             </owl:Restriction>
         </rdfs:subClassOf>
@@ -377,7 +394,7 @@
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/FOODON_03460238"/>
         <rdfs:subClassOf>
             <owl:Restriction>
-                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/RO_0002234"/>
+                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/OBI_0000299"/>
                 <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/FOODON_00002720"/>
             </owl:Restriction>
         </rdfs:subClassOf>
@@ -394,7 +411,7 @@
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/FOODON_03460238"/>
         <rdfs:subClassOf>
             <owl:Restriction>
-                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/RO_0002234"/>
+                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/OBI_0000299"/>
                 <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/FOODON_00003874"/>
             </owl:Restriction>
         </rdfs:subClassOf>
@@ -412,7 +429,7 @@
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/FOODON_03460225"/>
         <rdfs:subClassOf>
             <owl:Restriction>
-                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/RO_0002234"/>
+                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/OBI_0000299"/>
                 <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/FOODON_00002733"/>
             </owl:Restriction>
         </rdfs:subClassOf>
@@ -442,7 +459,7 @@
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/FOODON_00002451"/>
         <rdfs:subClassOf>
             <owl:Restriction>
-                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/RO_0002234"/>
+                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/OBI_0000299"/>
                 <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/FOODON_00002739"/>
             </owl:Restriction>
         </rdfs:subClassOf>
@@ -473,13 +490,13 @@
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/FOODON_00002451"/>
         <rdfs:subClassOf>
             <owl:Restriction>
-                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/RO_0002233"/>
+                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/OBI_0000293"/>
                 <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/FOODON_00003402"/>
             </owl:Restriction>
         </rdfs:subClassOf>
         <rdfs:subClassOf>
             <owl:Restriction>
-                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/RO_0002234"/>
+                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/OBI_0000299"/>
                 <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/FOODON_00003374"/>
             </owl:Restriction>
         </rdfs:subClassOf>
@@ -528,9 +545,295 @@
     
 
 
+    <!-- http://purl.obolibrary.org/obo/FOODON_00003417 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/FOODON_00003417"/>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/FOODON_00003638 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/FOODON_00003638"/>
+    
+
+
     <!-- http://purl.obolibrary.org/obo/FOODON_00003874 -->
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/FOODON_00003874"/>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/FOODON_00004036 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/FOODON_00004036">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/FOODON_03460238"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/OBI_0000293"/>
+                <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/FOODON_00003638"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/OBI_0000299"/>
+                <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/FOODON_00003417"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/OBI_0000299"/>
+                <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/PO_0009053"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/OBI_0000299"/>
+                <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/PO_0020055"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/OBI_0000299"/>
+                <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/PO_0030112"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <obo:IAO_0000117 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">http://orcid.org/0000-0002-8844-9165</obo:IAO_0000117>
+        <terms:date rdf:datatype="http://www.w3.org/2001/XMLSchema#string">2021-11-10T17:52:28</terms:date>
+        <rdfs:label xml:lang="en">grape destemming</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/FOODON_00004037 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/FOODON_00004037">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/FOODON_03460130"/>
+        <rdfs:label xml:lang="en">fruit crushing</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/FOODON_00004038 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/FOODON_00004038">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/FOODON_00004037"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/OBI_0000293"/>
+                <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/FOODON_00003417"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/OBI_0000299"/>
+                <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/FOODON_00001071"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <obo:IAO_0000115 xml:lang="en">The crushing of whole grapes</obo:IAO_0000115>
+        <rdfs:label xml:lang="en">grape crushing</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/FOODON_00004039 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/FOODON_00004039"/>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/FOODON_00004040 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/FOODON_00004040">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/FOODON_03460238"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/OBI_0000299"/>
+                <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/FOODON_00004045"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/OBI_0000299"/>
+                <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/FOODON_00004046"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <obo:IAO_0000119 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">https://en.wikipedia.org/wiki/Pressing_(wine)</obo:IAO_0000119>
+        <rdfs:label xml:lang="en">grape pressing</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/FOODON_00004041 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/FOODON_00004041">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/FOODON_00004040"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/OBI_0000293"/>
+                <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/FOODON_00003417"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <obo:IAO_0000115 xml:lang="en">A grape pressing process in which whole grapes or destemmed grape must is input directly into a grape press.</obo:IAO_0000115>
+        <obo:IAO_0000119 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">https://en.wikipedia.org/wiki/Pressing_(wine)</obo:IAO_0000119>
+        <rdfs:label xml:lang="en">destemmed grape pressing</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/FOODON_00004042 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/FOODON_00004042">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/FOODON_00004040"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/OBI_0000293"/>
+                <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/FOODON_00003638"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <obo:IAO_0000115 xml:lang="en">A grape pressing process in which whole grapes and grape clusters are input directly into a grape press.</obo:IAO_0000115>
+        <obo:IAO_0000119 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">https://en.wikipedia.org/wiki/Pressing_(wine)</obo:IAO_0000119>
+        <rdfs:comment xml:lang="en">By avoiding a maceration process, this technique limits the extraction of phenolics into white wines.</rdfs:comment>
+        <rdfs:label xml:lang="en">whole-cluster grape pressing</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/FOODON_00004043 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/FOODON_00004043">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/FOODON_03460238"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/OBI_0000293"/>
+                <owl:someValuesFrom>
+                    <owl:Class>
+                        <owl:unionOf rdf:parseType="Collection">
+                            <rdf:Description rdf:about="http://purl.obolibrary.org/obo/FOODON_00003417"/>
+                            <rdf:Description rdf:about="http://purl.obolibrary.org/obo/FOODON_00003638"/>
+                        </owl:unionOf>
+                    </owl:Class>
+                </owl:someValuesFrom>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/OBI_0000299"/>
+                <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/FOODON_00004039"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <obo:IAO_0000115 xml:lang="en">A food component separation process that accomplishes grape crushing and destemming with one device.</obo:IAO_0000115>
+        <rdfs:comment xml:lang="en">This process may be carried out by a &quot;stemmer-crusher&quot; aka &quot;destemmer-crusher&quot;.</rdfs:comment>
+        <rdfs:label xml:lang="en">grape crushing and destemming</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/FOODON_00004045 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/FOODON_00004045"/>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/FOODON_00004046 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/FOODON_00004046"/>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/FOODON_00004068 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/FOODON_00004068">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/FOODON_00002451"/>
+        <obo:IAO_0000115 xml:lang="en">A food transformation process which is the production of wine, starting with the selection of the fruit, its fermentation into alcohol, and the bottling or packaging of the finished liquid.</obo:IAO_0000115>
+        <obo:IAO_0000119 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">https://en.wikipedia.org/wiki/Winemaking</obo:IAO_0000119>
+        <oboInOwl:hasExactSynonym xml:lang="en">winemaking | vinification</oboInOwl:hasExactSynonym>
+        <rdfs:label xml:lang="en">winemaking</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/FOODON_00004069 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/FOODON_00004069">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/FOODON_03460141"/>
+        <obo:IAO_0000115 xml:lang="en">A food modification process which is a step in winemaking where the phenolic materials of the grape - tannins, coloring agents (anthocyanins) and flavor compounds - are leached from the grape skins, seeds and stems into the must.</obo:IAO_0000115>
+        <obo:IAO_0000119 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">https://en.wikipedia.org/wiki/Maceration_(wine)</obo:IAO_0000119>
+        <rdfs:label xml:lang="en">wine maceration</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/FOODON_00004070 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/FOODON_00004070">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/FOODON_00004069"/>
+        <obo:IAO_0000115 xml:lang="en">A wine maceration process which occurs in a room temperature environment without other atmospheric controls.????</obo:IAO_0000115>
+        <rdfs:label xml:lang="en">convetional maceration</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/FOODON_00004071 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/FOODON_00004071">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/FOODON_00004069"/>
+        <obo:IAO_0000115 xml:lang="en">A method of maceration involving high-temperature treatment of grape must before fermentation.</obo:IAO_0000115>
+        <obo:IAO_0000119 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">https://www.bio-conferences.org/articles/bioconf/full_html/2017/02/bioconf-oiv2017_02032</obo:IAO_0000119>
+        <oboInOwl:hasExactSynonym xml:lang="en">thermo-maceration | thermomaceration | thermo-vinification</oboInOwl:hasExactSynonym>
+        <rdfs:comment xml:lang="en">Various techniques of thermo-maceration were developed on the basis of evolution of the industrial technologies. The extraction principle consists in heating the whole grapes or the crushed and destemmed grapes to high temperatures (65–80◦C), promoting the diffusion of phenolics from the skins, especially anthocyanins.&quot;[https://www.bio-conferences.org/articles/bioconf/full_html/2017/02/bioconf-oiv2017_02032]</rdfs:comment>
+        <rdfs:label xml:lang="en">hot maceration</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/FOODON_00004072 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/FOODON_00004072">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/FOODON_00004069"/>
+        <obo:IAO_0000115 xml:lang="en">A maceration process where seeds and skins of grapes are left in contact with juice or wine for a shorter period of time.</obo:IAO_0000115>
+        <rdfs:label xml:lang="en">limited maceration</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/FOODON_00004073 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/FOODON_00004073">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/FOODON_00004069"/>
+        <obo:IAO_0000115 xml:lang="en">A maceration process where seeds and skins of grapes are left in contact with juice or wine for a longer period of time.</obo:IAO_0000115>
+        <rdfs:label xml:lang="en">extended maceration</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/FOODON_00004074 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/FOODON_00004074">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/FOODON_00004069"/>
+        <obo:IAO_0000115 xml:lang="en">A wine maceration process in which  temperatures of the fermenting must are kept low to encourage extraction by water and added sulfur dioxide rather than relying principally on heat and alcohol to act as a solvent.</obo:IAO_0000115>
+        <obo:IAO_0000119 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">https://en.wikipedia.org/wiki/Maceration_(wine)</obo:IAO_0000119>
+        <oboInOwl:hasExactSynonym xml:lang="en">cold soak</oboInOwl:hasExactSynonym>
+        <rdfs:label xml:lang="en">cold maceration</rdfs:label>
+        <rdfs:seeAlso rdf:datatype="http://www.w3.org/2001/XMLSchema#string">https://www.sciencedirect.com/science/article/abs/pii/S0023643818304122</rdfs:seeAlso>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/FOODON_00004075 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/FOODON_00004075">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/FOODON_00004069"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/OBI_0000293"/>
+                <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/FOODON_00003417"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <obo:IAO_0000115 xml:lang="en">A maceration process in which whole grapes are fermented in a carbon dioxide rich environment before crushing.  Fermentation occurs within grape tissue, rather than from the skin surface.</obo:IAO_0000115>
+        <obo:IAO_0000119 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">https://en.wikipedia.org/wiki/Carbonic_maceration</obo:IAO_0000119>
+        <rdfs:comment xml:lang="en">This method involves filling a sealed vessel with carbon dioxide and then adding whole grapes or grape clusters. ... Carbonic maceration ferments most of the juice while it is still inside the grape, although grapes at the bottom of the vessel are crushed by gravity and undergo conventional fermentation.&quot;[https://en.wikipedia.org/wiki/Carbonic_maceration]</rdfs:comment>
+        <rdfs:label xml:lang="en">carbonic maceration</rdfs:label>
+    </owl:Class>
     
 
 
@@ -540,7 +843,7 @@
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/FOODON_03460130"/>
         <rdfs:subClassOf>
             <owl:Restriction>
-                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/RO_0002234"/>
+                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/OBI_0000299"/>
                 <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/FOODON_00002655"/>
             </owl:Restriction>
         </rdfs:subClassOf>
@@ -577,7 +880,7 @@
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/FOODON_00002451"/>
         <rdfs:subClassOf>
             <owl:Restriction>
-                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/RO_0002234"/>
+                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/OBI_0000299"/>
                 <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/FOODON_00001181"/>
             </owl:Restriction>
         </rdfs:subClassOf>
@@ -606,7 +909,7 @@
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/FOODON_03450004"/>
         <rdfs:subClassOf>
             <owl:Restriction>
-                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/RO_0002234"/>
+                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/OBI_0000299"/>
                 <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/FOODON_00002456"/>
             </owl:Restriction>
         </rdfs:subClassOf>
@@ -670,7 +973,7 @@
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/FOODON_03450004"/>
         <rdfs:subClassOf>
             <owl:Restriction>
-                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/RO_0002234"/>
+                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/OBI_0000299"/>
                 <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/FOODON_00002659"/>
             </owl:Restriction>
         </rdfs:subClassOf>
@@ -721,7 +1024,7 @@
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/FOODON_03450013"/>
         <rdfs:subClassOf>
             <owl:Restriction>
-                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/RO_0002234"/>
+                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/OBI_0000299"/>
                 <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/FOODON_00002688"/>
             </owl:Restriction>
         </rdfs:subClassOf>
@@ -805,7 +1108,7 @@
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/FOODON_03450012"/>
         <rdfs:subClassOf>
             <owl:Restriction>
-                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/RO_0002234"/>
+                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/OBI_0000299"/>
                 <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/FOODON_00002657"/>
             </owl:Restriction>
         </rdfs:subClassOf>
@@ -903,7 +1206,7 @@
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/FOODON_03450025"/>
         <rdfs:subClassOf>
             <owl:Restriction>
-                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/RO_0002234"/>
+                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/OBI_0000299"/>
                 <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/FOODON_03307052"/>
             </owl:Restriction>
         </rdfs:subClassOf>
@@ -1578,7 +1881,7 @@
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/FOODON_03460130"/>
         <rdfs:subClassOf>
             <owl:Restriction>
-                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/RO_0002233"/>
+                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/OBI_0000293"/>
                 <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/FOODON_00001868"/>
             </owl:Restriction>
         </rdfs:subClassOf>
@@ -1806,7 +2109,7 @@
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/FOODON_03460230"/>
         <rdfs:subClassOf>
             <owl:Restriction>
-                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/RO_0002233"/>
+                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/OBI_0000293"/>
                 <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/FOODON_03411345"/>
             </owl:Restriction>
         </rdfs:subClassOf>
@@ -1823,7 +2126,7 @@
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/FOODON_03460148"/>
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/FOODON_03460225"/>
         <oboInOwl:hasDbXref rdf:datatype="http://www.w3.org/2001/XMLSchema#string">http://www.langual.org/langual_thesaurus.asp?termid=H0259</oboInOwl:hasDbXref>
-        <oboInOwl:hasSynonym xml:lang="en">made from concentrate|moistened|previously concentrated|reconstituted to liquid|soaked</oboInOwl:hasSynonym>
+        <oboInOwl:hasSynonym xml:lang="en">made from concentrate | moistened | previously concentrated | reconstituted to liquid | soaked</oboInOwl:hasSynonym>
         <rdfs:comment xml:lang="en">LanguaL curation note: Used for a product that is prepared by adding water or a water-based liquid (milk, juice, broth) to a dehydrated or concentrated product or to a product that contains an indexed dehydrated ingredient plus water to rehydrate that ingredient. Examples:  juice or juice drink from concentrate; milk reconstituted from dry or concentrated milk; soaked dried beans or stewed fruit; biscuit dough (prepared by rehydrating flour); soup made from dehydrated ingredients; cooked noodles or boiled rice. If the resulting product contains water beyond its natural water level, also index *WATER ADDED*.</rdfs:comment>
         <rdfs:label xml:lang="en">rehydration process</rdfs:label>
     </owl:Class>
@@ -2522,7 +2825,7 @@
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/FOODON_03470145"/>
         <rdfs:subClassOf>
             <owl:Restriction>
-                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/RO_0002234"/>
+                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/OBI_0000299"/>
                 <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/FOODON_03307539"/>
             </owl:Restriction>
         </rdfs:subClassOf>
@@ -3225,14 +3528,33 @@
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/FOODON_03470182">
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/FOODON_03470135"/>
-        <obo:IAO_0000115 xml:lang="en">Low-Temperature-Long-Time Treatment (LTLT) uses low heat for a longer time to kill pathogenic bacteria. For example, milk is pasteurized at 63° C (145° F) for 30 minutes.</obo:IAO_0000115>
+        <obo:IAO_0000115 xml:lang="en">A pasteurization by heating process which uses low heat for a longer time to kill pathogenic bacteria.</obo:IAO_0000115>
         <oboInOwl:hasDbXref rdf:datatype="http://www.w3.org/2001/XMLSchema#string">http://www.langual.org/langual_thesaurus.asp?termid=J0182</oboInOwl:hasDbXref>
         <oboInOwl:hasExactSynonym xml:lang="en">batch pasteurization | holding pasteurization | LTLT</oboInOwl:hasExactSynonym>
+        <rdfs:comment xml:lang="en">An example of LTLT is when milk is pasteurized at 63° C (145° F) for 30 minutes.</rdfs:comment>
         <rdfs:label xml:lang="en">low-temperature-long-time (LTLT) pasteurization</rdfs:label>
     </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/PO_0009053 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/PO_0009053"/>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/PO_0020055 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/PO_0020055"/>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/PO_0030112 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/PO_0030112"/>
 </rdf:RDF>
 
 
 
-<!-- Generated by the OWL API (version 4.5.9.2019-02-01T07:24:44Z) https://github.com/owlcs/owlapi -->
+<!-- Generated by the OWL API (version 4.5.6) https://github.com/owlcs/owlapi -->
 
