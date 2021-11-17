@@ -21928,6 +21928,16 @@ For industrial processing, e.g. in the process inactivation of enzymatic activit
         <rdfs:label xml:lang="en">obsolete: leaf celery plant</rdfs:label>
         <obo:IAO_0100001 rdf:resource="http://purl.obolibrary.org/obo/NCBITaxon_941588"/>
     </rdf:Description>
+    <rdf:Description rdf:about="http://purl.obolibrary.org/obo/FOODON_03413761">
+        <owl:deprecated rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">true</owl:deprecated>
+        <rdfs:label xml:lang="en">obsolete: vitamin b12</rdfs:label>
+        <obo:IAO_0100001 rdf:resource="http://purl.obolibrary.org/obo/CHEBI_176843"/>
+    </rdf:Description>
+    <rdf:Description rdf:about="http://purl.obolibrary.org/obo/FOODON_03413763">
+        <obo:IAO_0100001 rdf:resource="http://purl.obolibrary.org/obo/CHEBI_176783"/>
+        <rdfs:label xml:lang="en">obsolete: vitamin C</rdfs:label>
+        <owl:deprecated rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">true</owl:deprecated>
+    </rdf:Description>
     <rdf:Description rdf:about="http://purl.obolibrary.org/obo/FOODON_03414174">
         <obo:IAO_0100001 rdf:resource="http://purl.obolibrary.org/obo/NCBITaxon_91752"/>
         <rdfs:label xml:lang="en">obsolete: monkeyhead mushroom</rdfs:label>
@@ -21971,12 +21981,17 @@ For industrial processing, e.g. in the process inactivation of enzymatic activit
     <rdf:Description rdf:about="http://purl.obolibrary.org/obo/FOODON_03420289">
         <obo:IAO_0100001 rdf:resource="http://purl.obolibrary.org/obo/PO_0000055"/>
         <rdfs:label xml:lang="en">obsolete: bud</rdfs:label>
-        <obo:IAO_0000115 xml:lang="en">A small swelling or projection on a plant, from which a shoot, cluster of leaves, or flower develops (Source: Webster&apos;s)</obo:IAO_0000115>
         <owl:deprecated rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">true</owl:deprecated>
+        <obo:IAO_0000115 xml:lang="en">A small swelling or projection on a plant, from which a shoot, cluster of leaves, or flower develops (Source: Webster&apos;s)</obo:IAO_0000115>
     </rdf:Description>
     <rdf:Description rdf:about="http://purl.obolibrary.org/obo/FOODON_03420310">
         <obo:IAO_0100001 rdf:resource="http://purl.obolibrary.org/obo/PO_0009029"/>
         <rdfs:label xml:lang="en">obsolete: stamen</rdfs:label>
+    </rdf:Description>
+    <rdf:Description rdf:about="http://purl.obolibrary.org/obo/FOODON_03460216">
+        <rdfs:label xml:lang="en">obsolete: vitamin B</rdfs:label>
+        <owl:deprecated rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">true</owl:deprecated>
+        <obo:IAO_0100001 rdf:resource="http://purl.obolibrary.org/obo/CHEBI_75769"/>
     </rdf:Description>
 </rdf:RDF>
 
