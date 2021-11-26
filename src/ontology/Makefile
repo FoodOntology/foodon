@@ -30,7 +30,7 @@ test: reason
 # Run a basic reasoner to find inconsistencies
 .PHONY: reason
 reason: foodon-merged.owl
-	$(ROBOT) reason --input $< --reasoner ELK
+	$(ROBOT) reason --input $< --reasoner ELK --equivalent-classes-allowed asserted-only
 
 prepare_release: all
 	cp $(ONT).owl $(RELEASEDIR) &&\
