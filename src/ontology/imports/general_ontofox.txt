@@ -10,6 +10,12 @@ OBI
 [Low level source term URIs] 
 http://purl.obolibrary.org/obo/OBI_0100026 # organism
 
+http://purl.obolibrary.org/obo/OBI_0000011 # Planned process
+http://purl.obolibrary.org/obo/OBI_0000293 # has_specified_input
+http://purl.obolibrary.org/obo/OBI_0000299 # has_specified_output
+http://purl.obolibrary.org/obo/OBI_0000312 # is_specified_output_of
+http://purl.obolibrary.org/obo/OBI_0000295 # is_specified_input_of
+
 http://purl.obolibrary.org/obo/OBI_0001886 # NIAID GSCID-BRC alternative term
 http://purl.obolibrary.org/obo/IAO_0000030 # information content entity
 http://purl.obolibrary.org/obo/IAO_0000027 #    data item
@@ -43,7 +49,8 @@ http://purl.obolibrary.org/obo/IAO_0000423 #to be replaced with external ontolog
 http://purl.obolibrary.org/obo/IAO_0000123 #metadata incomplete
 http://purl.obolibrary.org/obo/IAO_0000125 #pending final vetting
 
-http://purl.obolibrary.org/obo/OBI_0000437 # analyte measurement objective
+http://purl.obolibrary.org/obo/OBI_1110108 # material to be added
+http://purl.obolibrary.org/obo/OBI_0000967 # container
 
 # INFORMATION CONTENT 
 http://purl.obolibrary.org/obo/OBI_0200000 # data transformation
@@ -53,6 +60,9 @@ http://purl.obolibrary.org/obo/OBI_0200079 # arithmetic mean calculation
 http://purl.obolibrary.org/obo/OBI_0001755 # selection criterion
 http://purl.obolibrary.org/obo/OBI_0001885 # specimen repository organization
 http://purl.obolibrary.org/obo/OBI_0001619 # specimen collection time measurement datum
+
+http://purl.obolibrary.org/obo/OBI_0000437 # analyte measurement objective
+http://purl.obolibrary.org/obo/IAO_0000039 # has measurement unit label
 
 # PROCESSES
 http://purl.obolibrary.org/obo/OBI_0000659 # specimen collection process
@@ -81,6 +91,7 @@ http://purl.obolibrary.org/obo/IAO_0000111
 http://purl.obolibrary.org/obo/IAO_0000114
 http://purl.obolibrary.org/obo/IAO_0000119
 http://purl.obolibrary.org/obo/OBI_0001886
+
 
 ###########################################
 
@@ -206,26 +217,6 @@ includeAllAnnotationProperties
 
 ###########################################
 
-[Source ontology]
-OBI
-
-[Low level source term URIs]
-http://purl.obolibrary.org/obo/OBI_0000011 # Planned process
-http://purl.obolibrary.org/obo/OBI_0000293 # has_specified_input
-http://purl.obolibrary.org/obo/OBI_0000299 # has_specified_output
-http://purl.obolibrary.org/obo/OBI_0000312 # is_specified_output_of
-http://purl.obolibrary.org/obo/OBI_0000295 # is_specified_input_of
-
-[Top level source term URIs and target direct superclass URIs]
-http://purl.obolibrary.org/obo/BFO_0000001 # entity
-
-[Source term retrieval setting]
-includeAllIntermediates
-
-[Source annotation URIs]
-includeAllAnnotationProperties
-###########################################
-
 #[Source ontology]
 #GAZ
 #http://purl.obolibrary.org/obo/GAZ_00002560 # CANADA
@@ -286,6 +277,7 @@ NCIT
 http://purl.obolibrary.org/obo/NCIT_C25464 # country
 
 http://purl.obolibrary.org/obo/NCIT_C45305 # Mixture
+http://purl.obolibrary.org/obo/NCIT_C45298 # Liquid
 http://purl.obolibrary.org/obo/NCIT_C80248 # Meal
 includeAllChildren
 

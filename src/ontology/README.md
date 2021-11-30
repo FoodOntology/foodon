@@ -11,7 +11,7 @@ The /src/ontology/foodon-edit.owl and many /src/ontology/imports/ files can be e
 
 ## To TEST
 
-robot reason --input foodon-edit.owl --reasoner hermit --equivalent-classes-allowed asserted-only
+robot reason --input foodon-edit.owl --reasoner hermit --equivalent-classes-allowed none
 
 ##To regenerate the files
 
