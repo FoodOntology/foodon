@@ -163,6 +163,9 @@ CDNO
 http://purl.obolibrary.org/obo/CDNO_0000001 # dietary nutritional component
 includeAllChildren
 
+http://purl.obolibrary.org/obo/PATO_0000033 # concentration of
+includeAllChildren
+
 [Top level source term URIs and target direct superclass URIs]
 http://purl.obolibrary.org/obo/BFO_0000001 # entity
 
