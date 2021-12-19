@@ -69,8 +69,6 @@ http://purl.obolibrary.org/obo/OBI_0000659 # specimen collection process
 http://purl.obolibrary.org/obo/OBI_0000443 # analyte assay
 
 # RELATIONS
-http://purl.obolibrary.org/obo/BFO_0000050 # is part of
-http://purl.obolibrary.org/obo/RO_0000052 # inheres in
 http://purl.obolibrary.org/obo/IAO_0000136 # is about
 http://purl.obolibrary.org/obo/OBI_0001927 # specifies value of
 
@@ -199,17 +197,14 @@ includeAllAnnotationProperties
 COB
 
 [Low level source term URIs]
-http://purl.obolibrary.org/obo/COB_0000066 # physico-chemical process
-http://purl.obolibrary.org/obo/COB_0000037 # biological process
-#http://purl.obolibrary.org/obo/COB_0000082 # planned process
-http://purl.obolibrary.org/obo/COB_0000086 # executes
+http://purl.obolibrary.org/obo/MOP_0000543 # physico-chemical process
+http://purl.obolibrary.org/obo/GO_0008150 # biological process
+http://purl.obolibrary.org/obo/STATO_0000102 # executes
 
 http://purl.obolibrary.org/obo/COB_0000511 # has quantity
-http://purl.obolibrary.org/obo/COB_0000512 # has characteristic
-http://purl.obolibrary.org/obo/COB_0000023 # characteristic of
 
 [Top level source term URIs and target direct superclass URIs]
-http://purl.obolibrary.org/obo/COB_0000034 # process
+http://purl.obolibrary.org/obo/BFO_0000015 # process
 
 [Source term retrieval setting]
 includeAllIntermediates
@@ -629,8 +624,6 @@ RO
 http://purl.obolibrary.org/obo/RO_0002577 # system
 
 http://purl.obolibrary.org/obo/RO_0001900 # temporal interpretation
-http://purl.obolibrary.org/obo/BFO_0000051 # has part
-http://purl.obolibrary.org/obo/BFO_0000054 # part of
 http://purl.obolibrary.org/obo/RO_0002473 # composed primarily of
 http://purl.obolibrary.org/obo/RO_0002350 # member of
 http://purl.obolibrary.org/obo/RO_0002351 # has member
@@ -638,8 +631,7 @@ http://purl.obolibrary.org/obo/RO_0002351 # has member
 http://purl.obolibrary.org/obo/RO_0002170 # connected to
 http://purl.obolibrary.org/obo/RO_0002371 #    attached to
 
-http://purl.obolibrary.org/obo/RO_0000086 # has quality
-http://purl.obolibrary.org/obo/RO_0000087 # has_role
+
 http://purl.obolibrary.org/obo/RO_0001000 # Derives from
 http://purl.obolibrary.org/obo/RO_0001020 # [material entity] is allergic triger for [phenotype/disease]
 http://purl.obolibrary.org/obo/RO_0001022 # [phenotype/disease] has allergic trigger [material entity]
@@ -660,8 +652,13 @@ http://purl.obolibrary.org/obo/RO_0009002 # has substance removed
 http://purl.obolibrary.org/obo/RO_0009003 # immersed in
 http://purl.obolibrary.org/obo/RO_0009004 # has consumer
 
-http://purl.obolibrary.org/obo/RO_0000052 # inheres in
+http://purl.obolibrary.org/obo/RO_0000052 # characteristic of / inheres in
 includeAllChildren
+http://purl.obolibrary.org/obo/RO_0000053 # has characteristic
+http://purl.obolibrary.org/obo/RO_0000085 #    has function
+http://purl.obolibrary.org/obo/RO_0000086 #    has quality
+http://purl.obolibrary.org/obo/RO_0000087 #    has_role
+http://purl.obolibrary.org/obo/RO_0000091 #    has disposition
 
 http://purl.obolibrary.org/obo/RO_0002233 # has input
 http://purl.obolibrary.org/obo/RO_0002234 # has output
@@ -669,13 +666,9 @@ http://purl.obolibrary.org/obo/RO_0002234 # has output
 http://purl.obolibrary.org/obo/RO_0000056 # participates in
 http://purl.obolibrary.org/obo/RO_0002352 # input of
 http://purl.obolibrary.org/obo/RO_0002353 # output of
-http://purl.obolibrary.org/obo/RO_0002233 # has input
-http://purl.obolibrary.org/obo/RO_0002234 # has output
 
 http://purl.obolibrary.org/obo/RO_0002354 #     formed as a result of [process]
 
-http://purl.obolibrary.org/obo/BFO_0000055 # realizes
-http://purl.obolibrary.org/obo/RO_0000085 # has function
 http://purl.obolibrary.org/obo/RO_0001001 # derives into
 http://purl.obolibrary.org/obo/RO_0002221 # surrounds
 http://purl.obolibrary.org/obo/RO_0002224 # starts with
@@ -683,9 +676,13 @@ http://purl.obolibrary.org/obo/RO_0002230 # ends with
 http://purl.obolibrary.org/obo/RO_0002608 # process has causal agent
 http://purl.obolibrary.org/obo/RO_HOM0000000 # in similarity relationship with
 
+http://purl.obolibrary.org/obo/BFO_0000050 # part of
+http://purl.obolibrary.org/obo/BFO_0000051 # has part
+http://purl.obolibrary.org/obo/BFO_0000054 # realized in 
+http://purl.obolibrary.org/obo/BFO_0000055 # realizes
 
 [Top level source term URIs and target direct superclass URIs]
-http://www.w3.org/2002/07/owl#topObjectProperty
+
 
 [Source term retrieval setting]
 includeAllIntermediates
