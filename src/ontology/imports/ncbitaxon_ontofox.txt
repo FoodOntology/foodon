@@ -9,12 +9,15 @@ NCBITaxon
 # NEED Smilax aristolochiifolia / Mexican sasparilla
 # NEED Mitragyna javanica
 
+
 # NOT LOADING at moment because its not in ONTOBEE, but it is in OLS
 http://purl.obolibrary.org/obo/NCBITaxon_2838343 # Chaetodipterus zonatus / pacific spadefish
 # So we load its parent at least
 http://purl.obolibrary.org/obo/NCBITaxon_75017 # Chaetodipterus
 http://purl.obolibrary.org/obo/NCBITaxon_313200 # Claytonia Lanceolata
 
+
+http://purl.obolibrary.org/obo/NCBITaxon_186965 # Petasites japonicus / Petasites japonica
 http://purl.obolibrary.org/obo/NCBITaxon_2719090 # Rajella lintea # WAS http://purl.obolibrary.org/obo/NCBITaxon_1072472 # species:Dipturus linteus (Fries, 1838)
 http://purl.obolibrary.org/obo/NCBITaxon_2762064 # Leukoma thaca # REPLACES NCBITaxon_549450 # species:Protothaca thaca (Molina, 1782)
 
