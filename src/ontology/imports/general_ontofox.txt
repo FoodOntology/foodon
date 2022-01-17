@@ -532,7 +532,8 @@ http://purl.obolibrary.org/obo/PO_0030115 # raceme inflorescence
 http://purl.obolibrary.org/obo/PO_0025597 # ear infructescence
 
 http://purl.obolibrary.org/obo/PO_0025538 # plant sap
-
+http://purl.obolibrary.org/obo/PO_0009049 # inflorescence # ISSUE, this is getting CARO_0000000 parent
+http://purl.obolibrary.org/obo/PO_0006342 # infructescence
 
 # This section exists just to organize classes that would otherwise just
 # hang out at top level because they were introduced with the includeAllAxioms
@@ -601,6 +602,8 @@ http://purl.obolibrary.org/obo/PO_0008016 # vegetative shoot apical meristem
 [Top level source term URIs and target direct superclass URIs]
 http://purl.obolibrary.org/obo/PO_0009012 # plant structure development stage
 http://purl.obolibrary.org/obo/PO_0025131 # plant anatomical entity
+http://purl.obolibrary.org/obo/PO_0009049 # inflorescence # ISSUE, this is getting CARO_0000000 parent, so stopping path here
+http://purl.obolibrary.org/obo/PO_0006342 # infructescence # DITTO
 
 http://purl.obolibrary.org/obo/PO_0025131
 [Source term retrieval setting]

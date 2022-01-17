@@ -10,16 +10,30 @@ NCBITaxon
 # NEED Mitragyna javanica
 
 
-# NOT LOADING at moment because its not in ONTOBEE, but it is in OLS
 http://purl.obolibrary.org/obo/NCBITaxon_2838343 # Chaetodipterus zonatus / pacific spadefish
-# So we load its parent at least
-http://purl.obolibrary.org/obo/NCBITaxon_75017 # Chaetodipterus
+
 http://purl.obolibrary.org/obo/NCBITaxon_313200 # Claytonia Lanceolata
 
+#http://purl.obolibrary.org/obo/NCBITaxon_218804 # Leiognathus equulus # DELETED
+http://purl.obolibrary.org/obo/NCBITaxon_2893490 # Leiognathus equula
+
+http://purl.obolibrary.org/obo/NCBITaxon_4557 # Sorghum
+#http://purl.obolibrary.org/obo/NCBITaxon_1428164 # species:Sorghum X drummondii (Nees ex Steud.) Millsp. & Chase # DELETED
+http://purl.obolibrary.org/obo/NCBITaxon_171959 # Sorghum bicolor subsp. drummondii
 
 http://purl.obolibrary.org/obo/NCBITaxon_186965 # Petasites japonicus / Petasites japonica
 http://purl.obolibrary.org/obo/NCBITaxon_2719090 # Rajella lintea # WAS http://purl.obolibrary.org/obo/NCBITaxon_1072472 # species:Dipturus linteus (Fries, 1838)
 http://purl.obolibrary.org/obo/NCBITaxon_2762064 # Leukoma thaca # REPLACES NCBITaxon_549450 # species:Protothaca thaca (Molina, 1782)
+
+http://purl.obolibrary.org/obo/NCBITaxon_516932 # Rhynchocinetes durbanensis
+http://purl.obolibrary.org/obo/NCBITaxon_6775 # Geryonidae
+http://purl.obolibrary.org/obo/NCBITaxon_160428 #Potamidae
+http://purl.obolibrary.org/obo/NCBITaxon_166512 # Potamonautidae
+http://purl.obolibrary.org/obo/NCBITaxon_116703 # Trichodactylidae
+http://purl.obolibrary.org/obo/NCBITaxon_304467 # Platythelphusa
+http://purl.obolibrary.org/obo/NCBITaxon_168676 # Gecarcinucidae 
+http://purl.obolibrary.org/obo/NCBITaxon_84649 # Pseudothelphusidae
+http://purl.obolibrary.org/obo/NCBITaxon_1124764 # Macrocheira kaempferi
 
 http://purl.obolibrary.org/obo/NCBITaxon_166759
 http://purl.obolibrary.org/obo/NCBITaxon_398647
@@ -545,7 +559,10 @@ http://purl.obolibrary.org/obo/NCBITaxon_141999 # genus:Carpobrotus N.E. Br.
 http://purl.obolibrary.org/obo/NCBITaxon_1421200 # Clinocardium californiense
 http://purl.obolibrary.org/obo/NCBITaxon_1423690 # Lolliguncula panamensis
 http://purl.obolibrary.org/obo/NCBITaxon_142487 #    Kinosternon subrubrum
-http://purl.obolibrary.org/obo/NCBITaxon_1428164 # species:Sorghum X drummondii (Nees ex Steud.) Millsp. & Chase
+
+
+
+
 http://purl.obolibrary.org/obo/NCBITaxon_1432686 # order:Decapoda Latreille, 1802
 http://purl.obolibrary.org/obo/NCBITaxon_143315 # species:Saurida undosquamis (Richardson, 1848)
 http://purl.obolibrary.org/obo/NCBITaxon_143330 # Crenimugil crenilabis
@@ -1089,7 +1106,8 @@ http://purl.obolibrary.org/obo/NCBITaxon_217509 # Carassius carassius
 http://purl.obolibrary.org/obo/NCBITaxon_218797 # Lutjanus malabaricus
 http://purl.obolibrary.org/obo/NCBITaxon_218798 # Scomberomorus commerson
 http://purl.obolibrary.org/obo/NCBITaxon_218801 # Leiognathus spp.
-http://purl.obolibrary.org/obo/NCBITaxon_218804 # Leiognathus equulus
+
+
 http://purl.obolibrary.org/obo/NCBITaxon_218808 # Leiognathus splendens
 http://purl.obolibrary.org/obo/NCBITaxon_21910 # family:Verbenaceae Adans., nom. cons.
 http://purl.obolibrary.org/obo/NCBITaxon_219135 # Polinices spp.
