@@ -37,7 +37,7 @@ http://purl.obolibrary.org/obo/IAO_0000408 #          length measurement datum
 http://purl.obolibrary.org/obo/IAO_0000414 #          mass measurement datum
 http://purl.obolibrary.org/obo/IAO_0000416 #          time measurement datum
 http://purl.obolibrary.org/obo/OBI_0001619 #             specimen collection time measurement datum
-
+http://purl.obolibrary.org/obo/IAO_0000104 # plan specification
 http://purl.obolibrary.org/obo/IAO_0000078 # curation status specification
 http://purl.obolibrary.org/obo/IAO_0000428 #    requires discussion 
 http://purl.obolibrary.org/obo/IAO_0000120 #    metadata complete 
@@ -74,7 +74,6 @@ http://purl.obolibrary.org/obo/OBI_0001927 # specifies value of
 
 [Top level source term URIs and target direct superclass URIs]
 http://purl.obolibrary.org/obo/BFO_0000001
-#subClassOf
 
 
 [Source term retrieval setting]

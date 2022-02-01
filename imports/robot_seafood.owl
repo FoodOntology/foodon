@@ -84,6 +84,7 @@
     <!-- http://purl.obolibrary.org/obo/FOODON_00003954 -->
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/FOODON_00003954">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/FOODON_03411021"/>
         <obo:IAO_0000117 rdf:datatype="http://www.w3.org/2000/01/rdf-schema#anyURI">https://orcid.org/0000-0001-5275-8866 </obo:IAO_0000117>
         <oboInOwl:hasBroadSynonym xml:lang="en">snail</oboInOwl:hasBroadSynonym>
         <oboInOwl:hasExactSynonym xml:lang="en">angulate volute</oboInOwl:hasExactSynonym>
@@ -388,6 +389,7 @@
     <!-- http://purl.obolibrary.org/obo/FOODON_00003965 -->
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/FOODON_00003965">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/FOODON_03411021"/>
         <obo:IAO_0000117 rdf:datatype="http://www.w3.org/2000/01/rdf-schema#anyURI">https://orcid.org/0000-0001-5275-8866 </obo:IAO_0000117>
         <oboInOwl:hasBroadSynonym xml:lang="en">surfclam</oboInOwl:hasBroadSynonym>
         <oboInOwl:hasDbXref rdf:datatype="http://www.w3.org/2001/XMLSchema#string">ITIS:568285</oboInOwl:hasDbXref>
@@ -439,6 +441,7 @@
     <!-- http://purl.obolibrary.org/obo/FOODON_00003967 -->
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/FOODON_00003967">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/FOODON_03411021"/>
         <obo:IAO_0000117 rdf:datatype="http://www.w3.org/2000/01/rdf-schema#anyURI">https://orcid.org/0000-0001-5275-8866 </obo:IAO_0000117>
         <oboInOwl:hasBroadSynonym xml:lang="en">threadfin</oboInOwl:hasBroadSynonym>
         <oboInOwl:hasDbXref rdf:datatype="http://www.w3.org/2001/XMLSchema#string">ITIS:645691</oboInOwl:hasDbXref>
@@ -466,6 +469,7 @@
     <!-- http://purl.obolibrary.org/obo/FOODON_00003968 -->
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/FOODON_00003968">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/FOODON_03411021"/>
         <obo:IAO_0000117 rdf:datatype="http://www.w3.org/2000/01/rdf-schema#anyURI">https://orcid.org/0000-0001-5275-8866 </obo:IAO_0000117>
         <oboInOwl:hasBroadSynonym xml:lang="en">surfclam</oboInOwl:hasBroadSynonym>
         <oboInOwl:hasDbXref rdf:datatype="http://www.w3.org/2001/XMLSchema#string">ITIS:697658</oboInOwl:hasDbXref>
@@ -517,6 +521,7 @@
     <!-- http://purl.obolibrary.org/obo/FOODON_00003970 -->
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/FOODON_00003970">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/FOODON_03411021"/>
         <obo:IAO_0000117 rdf:datatype="http://www.w3.org/2000/01/rdf-schema#anyURI">https://orcid.org/0000-0001-5275-8866 </obo:IAO_0000117>
         <oboInOwl:hasBroadSynonym xml:lang="en">surfclam</oboInOwl:hasBroadSynonym>
         <oboInOwl:hasDbXref rdf:datatype="http://www.w3.org/2001/XMLSchema#string">ITIS:568284</oboInOwl:hasDbXref>
@@ -655,6 +660,7 @@
     <!-- http://purl.obolibrary.org/obo/FOODON_00003975 -->
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/FOODON_00003975">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/FOODON_03411021"/>
         <obo:IAO_0000117 rdf:datatype="http://www.w3.org/2000/01/rdf-schema#anyURI">https://orcid.org/0000-0001-5275-8866 </obo:IAO_0000117>
         <oboInOwl:hasBroadSynonym xml:lang="en">tilefish</oboInOwl:hasBroadSynonym>
         <oboInOwl:hasDbXref rdf:datatype="http://www.w3.org/2001/XMLSchema#string">ITIS:630461</oboInOwl:hasDbXref>
@@ -737,6 +743,7 @@
     <!-- http://purl.obolibrary.org/obo/FOODON_00003978 -->
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/FOODON_00003978">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/FOODON_03411021"/>
         <obo:IAO_0000117 rdf:datatype="http://www.w3.org/2000/01/rdf-schema#anyURI">https://orcid.org/0000-0001-5275-8866 </obo:IAO_0000117>
         <oboInOwl:hasBroadSynonym xml:lang="en">bonito</oboInOwl:hasBroadSynonym>
         <oboInOwl:hasDbXref rdf:datatype="http://www.w3.org/2001/XMLSchema#string">ITIS:172467</oboInOwl:hasDbXref>
@@ -789,12 +796,14 @@
     <!-- http://purl.obolibrary.org/obo/FOODON_00003980 -->
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/FOODON_00003980">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/FOODON_03411021"/>
         <obo:IAO_0000117 rdf:datatype="http://www.w3.org/2000/01/rdf-schema#anyURI">https://orcid.org/0000-0001-5275-8866 </obo:IAO_0000117>
         <oboInOwl:hasBroadSynonym xml:lang="en">yellow rock crab</oboInOwl:hasBroadSynonym>
         <oboInOwl:hasDbXref rdf:datatype="http://www.w3.org/2001/XMLSchema#string">ITIS:98680</oboInOwl:hasDbXref>
         <oboInOwl:hasExactSynonym xml:lang="en">rock crab</oboInOwl:hasExactSynonym>
         <rdfs:label xml:lang="en">Cancer anthonyi</rdfs:label>
-        <rdfs:seeAlso rdf:datatype="http://www.w3.org/2001/XMLSchema#string">https://en.wikipedia.org/wiki/Metacarcinus_anthonyi</rdfs:seeAlso>
+        <rdfs:seeAlso rdf:datatype="http://www.w3.org/2001/XMLSchema#string"> https://www.gbif.org/species/2222082 </rdfs:seeAlso>
+        <rdfs:seeAlso rdf:datatype="http://www.w3.org/2001/XMLSchema#string">https://en.wikipedia.org/wiki/Metacarcinus_anthonyi </rdfs:seeAlso>
     </owl:Class>
     <owl:Axiom>
         <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/FOODON_00003980"/>
@@ -814,6 +823,7 @@
     <!-- http://purl.obolibrary.org/obo/FOODON_00003981 -->
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/FOODON_00003981">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/FOODON_03411021"/>
         <obo:IAO_0000117 rdf:datatype="http://www.w3.org/2000/01/rdf-schema#anyURI">https://orcid.org/0000-0001-5275-8866 </obo:IAO_0000117>
         <oboInOwl:hasBroadSynonym xml:lang="en">giant grouper</oboInOwl:hasBroadSynonym>
         <oboInOwl:hasBroadSynonym xml:lang="en">grouper</oboInOwl:hasBroadSynonym>
@@ -1070,6 +1080,7 @@
     <!-- http://purl.obolibrary.org/obo/FOODON_00003990 -->
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/FOODON_00003990">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/FOODON_03411021"/>
         <obo:IAO_0000117 rdf:datatype="http://www.w3.org/2000/01/rdf-schema#anyURI">https://orcid.org/0000-0001-5275-8866 </obo:IAO_0000117>
         <oboInOwl:hasBroadSynonym xml:lang="en">shrimp</oboInOwl:hasBroadSynonym>
         <oboInOwl:hasDbXref rdf:datatype="http://www.w3.org/2001/XMLSchema#string">ITIS:95886</oboInOwl:hasDbXref>
@@ -1122,6 +1133,7 @@
     <!-- http://purl.obolibrary.org/obo/FOODON_00003992 -->
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/FOODON_00003992">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/FOODON_03411021"/>
         <obo:IAO_0000117 rdf:datatype="http://www.w3.org/2000/01/rdf-schema#anyURI">https://orcid.org/0000-0001-5275-8866 </obo:IAO_0000117>
         <oboInOwl:hasBroadSynonym xml:lang="en">goatfish</oboInOwl:hasBroadSynonym>
         <oboInOwl:hasExactSynonym xml:lang="en">white saddle goatfish</oboInOwl:hasExactSynonym>
@@ -1145,6 +1157,7 @@
     <!-- http://purl.obolibrary.org/obo/FOODON_00003993 -->
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/FOODON_00003993">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/FOODON_03411021"/>
         <obo:IAO_0000117 rdf:datatype="http://www.w3.org/2000/01/rdf-schema#anyURI">https://orcid.org/0000-0001-5275-8866 </obo:IAO_0000117>
         <oboInOwl:hasBroadSynonym xml:lang="en">caballa</oboInOwl:hasBroadSynonym>
         <oboInOwl:hasBroadSynonym xml:lang="en">gemfish</oboInOwl:hasBroadSynonym>
@@ -1259,6 +1272,7 @@
     <!-- http://purl.obolibrary.org/obo/FOODON_00003997 -->
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/FOODON_00003997">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/FOODON_03411021"/>
         <obo:IAO_0000117 rdf:datatype="http://www.w3.org/2000/01/rdf-schema#anyURI">https://orcid.org/0000-0001-5275-8866 </obo:IAO_0000117>
         <oboInOwl:hasBroadSynonym xml:lang="en">claresse</oboInOwl:hasBroadSynonym>
         <oboInOwl:hasExactSynonym xml:lang="en">hybrid clarias catfish</oboInOwl:hasExactSynonym>
@@ -1309,6 +1323,7 @@
     <!-- http://purl.obolibrary.org/obo/FOODON_00003999 -->
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/FOODON_00003999">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/FOODON_03411021"/>
         <obo:IAO_0000117 rdf:datatype="http://www.w3.org/2000/01/rdf-schema#anyURI">https://orcid.org/0000-0001-5275-8866 </obo:IAO_0000117>
         <oboInOwl:hasBroadSynonym xml:lang="en">scallop</oboInOwl:hasBroadSynonym>
         <oboInOwl:hasDbXref rdf:datatype="http://www.w3.org/2001/XMLSchema#string">ITIS:79644</oboInOwl:hasDbXref>
@@ -1334,6 +1349,7 @@
     <!-- http://purl.obolibrary.org/obo/FOODON_00004000 -->
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/FOODON_00004000">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/FOODON_03411021"/>
         <obo:IAO_0000117 rdf:datatype="http://www.w3.org/2000/01/rdf-schema#anyURI">https://orcid.org/0000-0001-5275-8866 </obo:IAO_0000117>
         <oboInOwl:hasBroadSynonym xml:lang="en">scallop</oboInOwl:hasBroadSynonym>
         <oboInOwl:hasExactSynonym xml:lang="en">peruvian calico scallop</oboInOwl:hasExactSynonym>
@@ -1553,6 +1569,7 @@
     <!-- http://purl.obolibrary.org/obo/FOODON_00004008 -->
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/FOODON_00004008">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/FOODON_03411021"/>
         <obo:IAO_0000117 rdf:datatype="http://www.w3.org/2000/01/rdf-schema#anyURI">https://orcid.org/0000-0001-5275-8866 </obo:IAO_0000117>
         <oboInOwl:hasBroadSynonym xml:lang="en">grouper</oboInOwl:hasBroadSynonym>
         <oboInOwl:hasExactSynonym xml:lang="en">dot-dash grouper</oboInOwl:hasExactSynonym>
@@ -2071,6 +2088,7 @@
     <!-- http://purl.obolibrary.org/obo/FOODON_00004027 -->
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/FOODON_00004027">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/FOODON_03411021"/>
         <obo:IAO_0000117 rdf:datatype="http://www.w3.org/2000/01/rdf-schema#anyURI">https://orcid.org/0000-0001-5275-8866 </obo:IAO_0000117>
         <oboInOwl:hasBroadSynonym xml:lang="en">barnacle</oboInOwl:hasBroadSynonym>
         <oboInOwl:hasExactSynonym xml:lang="en">pico</oboInOwl:hasExactSynonym>
@@ -2094,6 +2112,7 @@
     <!-- http://purl.obolibrary.org/obo/FOODON_00004028 -->
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/FOODON_00004028">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/FOODON_03411021"/>
         <obo:IAO_0000117 rdf:datatype="http://www.w3.org/2000/01/rdf-schema#anyURI">https://orcid.org/0000-0001-5275-8866 </obo:IAO_0000117>
         <oboInOwl:hasBroadSynonym xml:lang="en">sandperch</oboInOwl:hasBroadSynonym>
         <oboInOwl:hasExactSynonym xml:lang="en">sandperch</oboInOwl:hasExactSynonym>
@@ -2297,6 +2316,12 @@
         <owl:annotatedTarget xml:lang="en">golden carpet shell</owl:annotatedTarget>
         <obo:IAO_0000412 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">FDA SFL Common Name</obo:IAO_0000412>
     </owl:Axiom>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/FOODON_03411021 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/FOODON_03411021"/>
     
 
 
@@ -4078,6 +4103,17 @@
     
 
 
+    <!-- http://purl.obolibrary.org/obo/NCBITaxon_1124764 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/NCBITaxon_1124764">
+        <oboInOwl:hasBroadSynonym xml:lang="en">sea crab</oboInOwl:hasBroadSynonym>
+        <oboInOwl:hasDbXref rdf:datatype="http://www.w3.org/2001/XMLSchema#string">ITIS:659876</oboInOwl:hasDbXref>
+        <oboInOwl:hasExactSynonym xml:lang="en">Japanese spider crab</oboInOwl:hasExactSynonym>
+        <rdfs:seeAlso rdf:datatype="http://www.w3.org/2001/XMLSchema#string">https://en.wikipedia.org/wiki/Japanese_spider_crab </rdfs:seeAlso>
+    </owl:Class>
+    
+
+
     <!-- http://purl.obolibrary.org/obo/NCBITaxon_112728 -->
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/NCBITaxon_112728">
@@ -4749,6 +4785,17 @@
         <owl:annotatedTarget xml:lang="en">southern quahog</owl:annotatedTarget>
         <obo:IAO_0000412 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">FDA SFL Common Name</obo:IAO_0000412>
     </owl:Axiom>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/NCBITaxon_116703 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/NCBITaxon_116703">
+        <oboInOwl:hasBroadSynonym xml:lang="en">freshwater crab family | freshwater crab</oboInOwl:hasBroadSynonym>
+        <oboInOwl:hasDbXref rdf:datatype="http://www.w3.org/2001/XMLSchema#string">ITIS:621498</oboInOwl:hasDbXref>
+        <rdfs:seeAlso rdf:datatype="http://www.w3.org/2001/XMLSchema#string"> https://en.wikipedia.org/wiki/Trichodactylidae </rdfs:seeAlso>
+        <rdfs:seeAlso rdf:datatype="http://www.w3.org/2001/XMLSchema#string">https://en.wikipedia.org/wiki/Freshwater_crab </rdfs:seeAlso>
+    </owl:Class>
     
 
 
@@ -9486,6 +9533,17 @@
     
 
 
+    <!-- http://purl.obolibrary.org/obo/NCBITaxon_160428 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/NCBITaxon_160428">
+        <oboInOwl:hasBroadSynonym xml:lang="en">freshwater crab family | freshwater crab</oboInOwl:hasBroadSynonym>
+        <oboInOwl:hasDbXref rdf:datatype="http://www.w3.org/2001/XMLSchema#string">ITIS:98903</oboInOwl:hasDbXref>
+        <rdfs:seeAlso rdf:datatype="http://www.w3.org/2001/XMLSchema#string"> https://en.wikipedia.org/wiki/Potamidae </rdfs:seeAlso>
+        <rdfs:seeAlso rdf:datatype="http://www.w3.org/2001/XMLSchema#string">https://en.wikipedia.org/wiki/Freshwater_crab </rdfs:seeAlso>
+    </owl:Class>
+    
+
+
     <!-- http://purl.obolibrary.org/obo/NCBITaxon_1604569 -->
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/NCBITaxon_1604569">
@@ -10636,6 +10694,17 @@
     
 
 
+    <!-- http://purl.obolibrary.org/obo/NCBITaxon_166512 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/NCBITaxon_166512">
+        <oboInOwl:hasBroadSynonym xml:lang="en">freshwater crab family | freshwater crab</oboInOwl:hasBroadSynonym>
+        <oboInOwl:hasDbXref rdf:datatype="http://www.w3.org/2001/XMLSchema#string">ITIS:621512</oboInOwl:hasDbXref>
+        <rdfs:seeAlso rdf:datatype="http://www.w3.org/2001/XMLSchema#string"> https://en.wikipedia.org/wiki/Freshwater_crab </rdfs:seeAlso>
+        <rdfs:seeAlso rdf:datatype="http://www.w3.org/2001/XMLSchema#string">https://en.wikipedia.org/wiki/Potamonautidae </rdfs:seeAlso>
+    </owl:Class>
+    
+
+
     <!-- http://purl.obolibrary.org/obo/NCBITaxon_166759 -->
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/NCBITaxon_166759"/>
@@ -10710,6 +10779,17 @@
         <owl:annotatedTarget xml:lang="en">bullseye puffer</owl:annotatedTarget>
         <obo:IAO_0000412 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">FDA SFL Common Name</obo:IAO_0000412>
     </owl:Axiom>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/NCBITaxon_168676 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/NCBITaxon_168676">
+        <oboInOwl:hasBroadSynonym xml:lang="en">freshwater crab family | freshwater crab</oboInOwl:hasBroadSynonym>
+        <oboInOwl:hasDbXref rdf:datatype="http://www.w3.org/2001/XMLSchema#string">ITIS:621514</oboInOwl:hasDbXref>
+        <rdfs:seeAlso rdf:datatype="http://www.w3.org/2001/XMLSchema#string"> https://en.wikipedia.org/wiki/Gecarcinucidae </rdfs:seeAlso>
+        <rdfs:seeAlso rdf:datatype="http://www.w3.org/2001/XMLSchema#string">https://en.wikipedia.org/wiki/Freshwater_crab  </rdfs:seeAlso>
+    </owl:Class>
     
 
 
@@ -13453,8 +13533,10 @@
         <obo:IAO_0000117 rdf:datatype="http://www.w3.org/2000/01/rdf-schema#anyURI">https://orcid.org/0000-0001-5275-8866 </obo:IAO_0000117>
         <oboInOwl:hasBroadSynonym xml:lang="en">barb</oboInOwl:hasBroadSynonym>
         <oboInOwl:hasDbXref rdf:datatype="http://www.w3.org/2001/XMLSchema#string">ITIS:688445</oboInOwl:hasDbXref>
+        <oboInOwl:hasExactSynonym xml:lang="en">river barb</oboInOwl:hasExactSynonym>
         <oboInOwl:hasExactSynonym xml:lang="en">tinfoil barb</oboInOwl:hasExactSynonym>
-        <rdfs:seeAlso rdf:datatype="http://www.w3.org/2001/XMLSchema#string">https://en.wikipedia.org/wiki/Tinfoil_barb</rdfs:seeAlso>
+        <rdfs:seeAlso rdf:datatype="http://www.w3.org/2001/XMLSchema#string"> https://www.gbif.org/species/2366101 </rdfs:seeAlso>
+        <rdfs:seeAlso rdf:datatype="http://www.w3.org/2001/XMLSchema#string">https://en.wikipedia.org/wiki/Tinfoil_barb </rdfs:seeAlso>
     </owl:Class>
     <owl:Axiom>
         <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/NCBITaxon_1906136"/>
@@ -15061,6 +15143,7 @@
         <oboInOwl:hasBroadSynonym xml:lang="en">goby</oboInOwl:hasBroadSynonym>
         <oboInOwl:hasDbXref rdf:datatype="http://www.w3.org/2001/XMLSchema#string">ITIS:637376</oboInOwl:hasDbXref>
         <oboInOwl:hasExactSynonym xml:lang="en">tank goby</oboInOwl:hasExactSynonym>
+        <rdfs:label xml:lang="en">baila</rdfs:label>
         <rdfs:seeAlso rdf:datatype="http://www.w3.org/2001/XMLSchema#string">https://en.wikipedia.org/wiki/Tank_goby</rdfs:seeAlso>
     </owl:Class>
     <owl:Axiom>
@@ -16040,37 +16123,6 @@
     
 
 
-    <!-- http://purl.obolibrary.org/obo/NCBITaxon_218804 -->
-
-    <owl:Class rdf:about="http://purl.obolibrary.org/obo/NCBITaxon_218804">
-        <obo:IAO_0000117 rdf:datatype="http://www.w3.org/2000/01/rdf-schema#anyURI">https://orcid.org/0000-0001-5275-8866 </obo:IAO_0000117>
-        <oboInOwl:hasBroadSynonym xml:lang="en">ponyfish</oboInOwl:hasBroadSynonym>
-        <oboInOwl:hasBroadSynonym xml:lang="en">slipmouth</oboInOwl:hasBroadSynonym>
-        <oboInOwl:hasDbXref rdf:datatype="http://www.w3.org/2001/XMLSchema#string">ITIS:168799</oboInOwl:hasDbXref>
-        <oboInOwl:hasExactSynonym xml:lang="en">greater ponyfish</oboInOwl:hasExactSynonym>
-        <rdfs:seeAlso rdf:datatype="http://www.w3.org/2001/XMLSchema#string">https://en.wikipedia.org/wiki/Leiognathus_equulus</rdfs:seeAlso>
-    </owl:Class>
-    <owl:Axiom>
-        <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/NCBITaxon_218804"/>
-        <owl:annotatedProperty rdf:resource="http://www.geneontology.org/formats/oboInOwl#hasBroadSynonym"/>
-        <owl:annotatedTarget xml:lang="en">ponyfish</owl:annotatedTarget>
-        <obo:IAO_0000412 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">FDA SFL Acceptable Market Name</obo:IAO_0000412>
-    </owl:Axiom>
-    <owl:Axiom>
-        <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/NCBITaxon_218804"/>
-        <owl:annotatedProperty rdf:resource="http://www.geneontology.org/formats/oboInOwl#hasBroadSynonym"/>
-        <owl:annotatedTarget xml:lang="en">slipmouth</owl:annotatedTarget>
-        <obo:IAO_0000412 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">FDA SFL Acceptable Market Name</obo:IAO_0000412>
-    </owl:Axiom>
-    <owl:Axiom>
-        <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/NCBITaxon_218804"/>
-        <owl:annotatedProperty rdf:resource="http://www.geneontology.org/formats/oboInOwl#hasExactSynonym"/>
-        <owl:annotatedTarget xml:lang="en">greater ponyfish</owl:annotatedTarget>
-        <obo:IAO_0000412 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">FDA SFL Common Name</obo:IAO_0000412>
-    </owl:Axiom>
-    
-
-
     <!-- http://purl.obolibrary.org/obo/NCBITaxon_218808 -->
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/NCBITaxon_218808">
@@ -16158,7 +16210,11 @@
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/NCBITaxon_220873">
         <obo:IAO_0000117 rdf:datatype="http://www.w3.org/2000/01/rdf-schema#anyURI">https://orcid.org/0000-0001-5275-8866 </obo:IAO_0000117>
         <oboInOwl:hasBroadSynonym xml:lang="en">cockle</oboInOwl:hasBroadSynonym>
+        <oboInOwl:hasExactSynonym xml:lang="en">blood clam</oboInOwl:hasExactSynonym>
         <oboInOwl:hasExactSynonym xml:lang="en">blood cockle</oboInOwl:hasExactSynonym>
+        <rdfs:label xml:lang="en">Tegillarca granosa</rdfs:label>
+        <rdfs:seeAlso rdf:datatype="http://www.w3.org/2001/XMLSchema#string">  https://www.gbif.org/species/5855403 </rdfs:seeAlso>
+        <rdfs:seeAlso rdf:datatype="http://www.w3.org/2001/XMLSchema#string">https://en.wikipedia.org/wiki/Tegillarca_granosa </rdfs:seeAlso>
     </owl:Class>
     <owl:Axiom>
         <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/NCBITaxon_220873"/>
@@ -20881,6 +20937,37 @@
     
 
 
+    <!-- http://purl.obolibrary.org/obo/NCBITaxon_2893490 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/NCBITaxon_2893490">
+        <obo:IAO_0000117 rdf:datatype="http://www.w3.org/2000/01/rdf-schema#anyURI">https://orcid.org/0000-0001-5275-8866 </obo:IAO_0000117>
+        <oboInOwl:hasBroadSynonym xml:lang="en">ponyfish</oboInOwl:hasBroadSynonym>
+        <oboInOwl:hasBroadSynonym xml:lang="en">slipmouth</oboInOwl:hasBroadSynonym>
+        <oboInOwl:hasDbXref rdf:datatype="http://www.w3.org/2001/XMLSchema#string">ITIS:168799</oboInOwl:hasDbXref>
+        <oboInOwl:hasExactSynonym xml:lang="en">greater ponyfish</oboInOwl:hasExactSynonym>
+        <rdfs:seeAlso rdf:datatype="http://www.w3.org/2001/XMLSchema#string">https://en.wikipedia.org/wiki/Leiognathus_equulus</rdfs:seeAlso>
+    </owl:Class>
+    <owl:Axiom>
+        <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/NCBITaxon_2893490"/>
+        <owl:annotatedProperty rdf:resource="http://www.geneontology.org/formats/oboInOwl#hasBroadSynonym"/>
+        <owl:annotatedTarget xml:lang="en">ponyfish</owl:annotatedTarget>
+        <obo:IAO_0000412 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">FDA SFL Acceptable Market Name</obo:IAO_0000412>
+    </owl:Axiom>
+    <owl:Axiom>
+        <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/NCBITaxon_2893490"/>
+        <owl:annotatedProperty rdf:resource="http://www.geneontology.org/formats/oboInOwl#hasBroadSynonym"/>
+        <owl:annotatedTarget xml:lang="en">slipmouth</owl:annotatedTarget>
+        <obo:IAO_0000412 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">FDA SFL Acceptable Market Name</obo:IAO_0000412>
+    </owl:Axiom>
+    <owl:Axiom>
+        <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/NCBITaxon_2893490"/>
+        <owl:annotatedProperty rdf:resource="http://www.geneontology.org/formats/oboInOwl#hasExactSynonym"/>
+        <owl:annotatedTarget xml:lang="en">greater ponyfish</owl:annotatedTarget>
+        <obo:IAO_0000412 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">FDA SFL Common Name</obo:IAO_0000412>
+    </owl:Axiom>
+    
+
+
     <!-- http://purl.obolibrary.org/obo/NCBITaxon_29019 -->
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/NCBITaxon_29019">
@@ -22179,6 +22266,16 @@
     
 
 
+    <!-- http://purl.obolibrary.org/obo/NCBITaxon_304467 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/NCBITaxon_304467">
+        <oboInOwl:hasBroadSynonym xml:lang="en">freshwater crab</oboInOwl:hasBroadSynonym>
+        <rdfs:seeAlso rdf:datatype="http://www.w3.org/2001/XMLSchema#string"> https://en.wikipedia.org/wiki/Platythelphusa </rdfs:seeAlso>
+        <rdfs:seeAlso rdf:datatype="http://www.w3.org/2001/XMLSchema#string">https://en.wikipedia.org/wiki/Freshwater_crab  </rdfs:seeAlso>
+    </owl:Class>
+    
+
+
     <!-- http://purl.obolibrary.org/obo/NCBITaxon_30478 -->
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/NCBITaxon_30478">
@@ -22605,7 +22702,7 @@
         <obo:IAO_0000117 rdf:datatype="http://www.w3.org/2000/01/rdf-schema#anyURI">https://orcid.org/0000-0001-5275-8866 </obo:IAO_0000117>
         <oboInOwl:hasBroadSynonym xml:lang="en">grouper</oboInOwl:hasBroadSynonym>
         <oboInOwl:hasDbXref rdf:datatype="http://www.w3.org/2001/XMLSchema#string">ITIS:551073</oboInOwl:hasDbXref>
-        <oboInOwl:hasExactSynonym xml:lang="en">snubnose grouper</oboInOwl:hasExactSynonym>
+        <oboInOwl:hasExactSynonym xml:lang="en">Genome Tracker</oboInOwl:hasExactSynonym>
     </owl:Class>
     <owl:Axiom>
         <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/NCBITaxon_308563"/>
@@ -22616,7 +22713,7 @@
     <owl:Axiom>
         <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/NCBITaxon_308563"/>
         <owl:annotatedProperty rdf:resource="http://www.geneontology.org/formats/oboInOwl#hasExactSynonym"/>
-        <owl:annotatedTarget xml:lang="en">snubnose grouper</owl:annotatedTarget>
+        <owl:annotatedTarget xml:lang="en">Genome Tracker</owl:annotatedTarget>
         <obo:IAO_0000412 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">FDA SFL Common Name</obo:IAO_0000412>
     </owl:Axiom>
     
@@ -27123,10 +27220,12 @@
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/NCBITaxon_36212">
         <obo:IAO_0000117 rdf:datatype="http://www.w3.org/2000/01/rdf-schema#anyURI">https://orcid.org/0000-0001-5275-8866 </obo:IAO_0000117>
+        <oboInOwl:hasBroadSynonym xml:lang="en">horse mackerel</oboInOwl:hasBroadSynonym>
         <oboInOwl:hasBroadSynonym xml:lang="en">scad</oboInOwl:hasBroadSynonym>
         <oboInOwl:hasDbXref rdf:datatype="http://www.w3.org/2001/XMLSchema#string">ITIS:168588</oboInOwl:hasDbXref>
         <oboInOwl:hasExactSynonym xml:lang="en">european horse mackerel</oboInOwl:hasExactSynonym>
-        <rdfs:seeAlso rdf:datatype="http://www.w3.org/2001/XMLSchema#string">https://en.wikipedia.org/wiki/Atlantic_horse_mackerel</rdfs:seeAlso>
+        <rdfs:seeAlso rdf:datatype="http://www.w3.org/2001/XMLSchema#string"> https://www.fao.org/3/y2668b/y2668b06.htm </rdfs:seeAlso>
+        <rdfs:seeAlso rdf:datatype="http://www.w3.org/2001/XMLSchema#string">https://en.wikipedia.org/wiki/Atlantic_horse_mackerel </rdfs:seeAlso>
     </owl:Class>
     <owl:Axiom>
         <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/NCBITaxon_36212"/>
@@ -34519,6 +34618,17 @@
     
 
 
+    <!-- http://purl.obolibrary.org/obo/NCBITaxon_516932 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/NCBITaxon_516932">
+        <oboInOwl:hasBroadSynonym xml:lang="en">seawater shrimp</oboInOwl:hasBroadSynonym>
+        <oboInOwl:hasDbXref rdf:datatype="http://www.w3.org/2001/XMLSchema#string">ITIS:659876</oboInOwl:hasDbXref>
+        <oboInOwl:hasExactSynonym xml:lang="en">hingebeak shrimp</oboInOwl:hasExactSynonym>
+        <rdfs:seeAlso rdf:datatype="http://www.w3.org/2001/XMLSchema#string">https://en.wikipedia.org/wiki/Rhynchocinetes_durbanensis</rdfs:seeAlso>
+    </owl:Class>
+    
+
+
     <!-- http://purl.obolibrary.org/obo/NCBITaxon_51758 -->
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/NCBITaxon_51758">
@@ -40043,6 +40153,16 @@
         <owl:annotatedTarget xml:lang="en">blue crab</owl:annotatedTarget>
         <obo:IAO_0000412 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">FDA SFL Common Name</obo:IAO_0000412>
     </owl:Axiom>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/NCBITaxon_6775 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/NCBITaxon_6775">
+        <oboInOwl:hasBroadSynonym xml:lang="en">sea crab family | sea crabs</oboInOwl:hasBroadSynonym>
+        <oboInOwl:hasDbXref rdf:datatype="http://www.w3.org/2001/XMLSchema#string">ITIS:98904</oboInOwl:hasDbXref>
+        <oboInOwl:hasExactSynonym xml:lang="en">deepsea crab family</oboInOwl:hasExactSynonym>
+    </owl:Class>
     
 
 
@@ -46176,7 +46296,8 @@
         <oboInOwl:hasBroadSynonym xml:lang="en">barramundi</oboInOwl:hasBroadSynonym>
         <oboInOwl:hasDbXref rdf:datatype="http://www.w3.org/2001/XMLSchema#string">ITIS:167669</oboInOwl:hasDbXref>
         <oboInOwl:hasExactSynonym xml:lang="en">giant perch</oboInOwl:hasExactSynonym>
-        <rdfs:seeAlso rdf:datatype="http://www.w3.org/2001/XMLSchema#string">https://en.wikipedia.org/wiki/Barramundi</rdfs:seeAlso>
+        <rdfs:label xml:lang="en">coral | koral | koral fish | dhani koral | bhetki</rdfs:label>
+        <rdfs:seeAlso rdf:datatype="http://www.w3.org/2001/XMLSchema#string">https://en.wikipedia.org/wiki/Barramundi </rdfs:seeAlso>
     </owl:Class>
     <owl:Axiom>
         <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/NCBITaxon_8187"/>
@@ -46957,6 +47078,17 @@
         <owl:annotatedTarget xml:lang="en">rohu</owl:annotatedTarget>
         <obo:IAO_0000412 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">FDA SFL Common Name</obo:IAO_0000412>
     </owl:Axiom>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/NCBITaxon_84649 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/NCBITaxon_84649">
+        <oboInOwl:hasBroadSynonym xml:lang="en">freshwater crab family | freshwater crab</oboInOwl:hasBroadSynonym>
+        <oboInOwl:hasDbXref rdf:datatype="http://www.w3.org/2001/XMLSchema#string">ITIS:621513</oboInOwl:hasDbXref>
+        <rdfs:seeAlso rdf:datatype="http://www.w3.org/2001/XMLSchema#string"> https://en.wikipedia.org/wiki/Pseudothelphusidae </rdfs:seeAlso>
+        <rdfs:seeAlso rdf:datatype="http://www.w3.org/2001/XMLSchema#string">https://en.wikipedia.org/wiki/Freshwater_crab  </rdfs:seeAlso>
+    </owl:Class>
     
 
 
@@ -49389,6 +49521,7 @@
         <obo:IAO_0000117 rdf:datatype="http://www.w3.org/2000/01/rdf-schema#anyURI">https://orcid.org/0000-0001-5275-8866 </obo:IAO_0000117>
         <oboInOwl:hasBroadSynonym xml:lang="en">crawfish</oboInOwl:hasBroadSynonym>
         <oboInOwl:hasBroadSynonym xml:lang="en">crayfish</oboInOwl:hasBroadSynonym>
+        <oboInOwl:hasExactSynonym xml:lang="en">freshwater crawfish</oboInOwl:hasExactSynonym>
         <oboInOwl:hasExactSynonym xml:lang="en">freshwater crayfish</oboInOwl:hasExactSynonym>
         <rdfs:seeAlso rdf:datatype="http://www.w3.org/2001/XMLSchema#string">https://en.wikipedia.org/wiki/Paranephrops</rdfs:seeAlso>
     </owl:Class>

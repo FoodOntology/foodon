@@ -165,6 +165,12 @@
     
 
 
+    <!-- http://purl.obolibrary.org/obo/FOODON_00001147 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/FOODON_00001147"/>
+    
+
+
     <!-- http://purl.obolibrary.org/obo/FOODON_00001170 -->
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/FOODON_00001170"/>
@@ -4501,7 +4507,7 @@
         <oboInOwl:hasExactSynonym xml:lang="en">fuzzy kiwifruit</oboInOwl:hasExactSynonym>
         <oboInOwl:hasExactSynonym xml:lang="en">kiwi</oboInOwl:hasExactSynonym>
         <oboInOwl:hasExactSynonym xml:lang="en">kiwifruit</oboInOwl:hasExactSynonym>
-        <rdfs:label xml:lang="en">kiwifruit (whole)</rdfs:label>
+        <rdfs:label xml:lang="en">fuzzy kiwifruit (whole)</rdfs:label>
     </owl:Class>
     
 
@@ -5766,7 +5772,7 @@
         </owl:equivalentClass>
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/PO_0025034"/>
         <obo:IAO_0000115 xml:lang="en">A leaf of a celery plant (Apium graveolens Dulce Group).</obo:IAO_0000115>
-        <obo:IAO_0000119 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">https://en.wikipedia.org/wiki/Celery</obo:IAO_0000119>
+        <obo:IAO_0000119 rdf:resource="https://en.wikipedia.org/wiki/Celery"/>
         <dc:date rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2021-02-11T02:01:06</dc:date>
         <oboInOwl:hasExactSynonym xml:lang="en">celery leaf</oboInOwl:hasExactSynonym>
         <rdfs:label xml:lang="en">celery leaf (whole)</rdfs:label>
@@ -5796,7 +5802,7 @@
                 </owl:intersectionOf>
             </owl:Class>
         </owl:equivalentClass>
-        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/FOODON_00001704"/>
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/FOODON_00004123"/>
         <obo:IAO_0000115 xml:lang="en">A bunch of a raw celery leaves.</obo:IAO_0000115>
         <obo:IAO_0000119 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">https://en.wikipedia.org/wiki/Celery</obo:IAO_0000119>
         <dc:date rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2021-02-11T02:01:46</dc:date>
@@ -8828,7 +8834,7 @@
         <owl:equivalentClass>
             <owl:Class>
                 <owl:intersectionOf rdf:parseType="Collection">
-                    <rdf:Description rdf:about="http://purl.obolibrary.org/obo/PO_0030108"/>
+                    <rdf:Description rdf:about="http://purl.obolibrary.org/obo/PO_0025355"/>
                     <owl:Restriction>
                         <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/RO_0001000"/>
                         <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/NCBITaxon_4639"/>
@@ -8836,7 +8842,7 @@
                 </owl:intersectionOf>
             </owl:Class>
         </owl:equivalentClass>
-        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/FOODON_03316257"/>
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/FOODON_00001147"/>
         <obo:IAO_0000115 xml:lang="en">A berry fruit of a red Abyssinian banana plant (Ensete ventricosum)</obo:IAO_0000115>
         <obo:IAO_0000119 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">https://en.wikipedia.org/wiki/Ensete_ventricosum</obo:IAO_0000119>
         <dc:date rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2021-02-11T23:19:52</dc:date>
@@ -8845,7 +8851,7 @@
         <oboInOwl:hasExactSynonym xml:lang="en">false banana</oboInOwl:hasExactSynonym>
         <oboInOwl:hasExactSynonym xml:lang="en">red banana</oboInOwl:hasExactSynonym>
         <oboInOwl:hasExactSynonym xml:lang="en">red-skinned banana</oboInOwl:hasExactSynonym>
-        <rdfs:label xml:lang="en">red Abyssinian banana (whole)</rdfs:label>
+        <rdfs:label xml:lang="en">red Abyssinian banana corm (whole)</rdfs:label>
     </owl:Class>
     
 
@@ -10799,6 +10805,12 @@
     
 
 
+    <!-- http://purl.obolibrary.org/obo/FOODON_00004123 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/FOODON_00004123"/>
+    
+
+
     <!-- http://purl.obolibrary.org/obo/FOODON_03301227 -->
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/FOODON_03301227">
@@ -11940,7 +11952,7 @@
         <obo:IAO_0000115 xml:lang="en">A berry fruit of a banana tree (Musa acuminata AAA Group).</obo:IAO_0000115>
         <obo:IAO_0000117 rdf:datatype="http://www.w3.org/2000/01/rdf-schema#anyURI">http://orcid.org/0000-0002-8844-9165</obo:IAO_0000117>
         <oboInOwl:hasExactSynonym xml:lang="en">banana</oboInOwl:hasExactSynonym>
-        <rdfs:label xml:lang="en">banana (whole)</rdfs:label>
+        <rdfs:label xml:lang="en">Cavendish banana (whole)</rdfs:label>
     </owl:Class>
     
 
