@@ -9167,7 +9167,6 @@
     <!-- http://purl.obolibrary.org/obo/FOODON_00003786 -->
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/FOODON_00003786">
-        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/FOODON_00003427"/>
         <oboInOwl:hasExactSynonym xml:lang="en">long grain rice</oboInOwl:hasExactSynonym>
         <rdfs:label xml:lang="en">long grain rice kernel</rdfs:label>
     </owl:Class>
