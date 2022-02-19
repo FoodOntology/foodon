@@ -9,6 +9,7 @@ NCBITaxon
 # NEED Smilax aristolochiifolia / Mexican sasparilla
 # NEED Mitragyna javanica
 
+
 http://purl.obolibrary.org/obo/NCBITaxon_2711 # Citrus x sinensis 
 
 http://purl.obolibrary.org/obo/NCBITaxon_434242 # Chenopodium giganteum
@@ -76,6 +77,8 @@ http://purl.obolibrary.org/obo/NCBITaxon_1760
 
 # BRANCHES OF TAXA
 
+http://purl.obolibrary.org/obo/NCBITaxon_412675 # Cucumis melo subsp. melo
+includeAllChildren
 http://purl.obolibrary.org/obo/NCBITaxon_161934 # Beta vulgaris
 includeAllChildren
 http://purl.obolibrary.org/obo/NCBITaxon_3712 # species:Brassica oleracea L.
