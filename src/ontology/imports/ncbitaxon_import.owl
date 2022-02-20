@@ -46,6 +46,12 @@
     
 
 
+    <!-- http://purl.obolibrary.org/obo/FOODON_03411311 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/FOODON_03411311"/>
+    
+
+
     <!-- http://purl.obolibrary.org/obo/NCBITaxon_1000425 -->
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/NCBITaxon_1000425">
@@ -9731,6 +9737,16 @@
         <obo:IAO_0000412 rdf:resource="http://purl.obolibrary.org/obo/ncbitaxon.owl"/>
         <oboInOwl:hasExactSynonym rdf:datatype="http://www.w3.org/2001/XMLSchema#string">cucumberfish</oboInOwl:hasExactSynonym>
         <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Retropinna retropinna</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/NCBITaxon_1703 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/NCBITaxon_1703">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/NCBITaxon_1760"/>
+        <obo:IAO_0000412 rdf:resource="http://purl.obolibrary.org/obo/ncbitaxon.owl"/>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Brevibacterium linens</rdfs:label>
     </owl:Class>
     
 
@@ -23301,10 +23317,10 @@
     <!-- http://purl.obolibrary.org/obo/NCBITaxon_326968 -->
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/NCBITaxon_326968">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/FOODON_03411311"/>
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/NCBITaxon_72171"/>
         <obo:IAO_0000412 rdf:resource="http://purl.obolibrary.org/obo/ncbitaxon.owl"/>
         <oboInOwl:hasExactSynonym rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Chinese jujube</oboInOwl:hasExactSynonym>
-        <oboInOwl:hasExactSynonym rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Zizyphus jujuba</oboInOwl:hasExactSynonym>
         <oboInOwl:hasExactSynonym rdf:datatype="http://www.w3.org/2001/XMLSchema#string">common jujube</oboInOwl:hasExactSynonym>
         <oboInOwl:hasExactSynonym rdf:datatype="http://www.w3.org/2001/XMLSchema#string">zao</oboInOwl:hasExactSynonym>
         <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Ziziphus jujuba</rdfs:label>
@@ -27536,6 +27552,17 @@
     
 
 
+    <!-- http://purl.obolibrary.org/obo/NCBITaxon_371859 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/NCBITaxon_371859">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/NCBITaxon_106975"/>
+        <obo:IAO_0000412 rdf:resource="http://purl.obolibrary.org/obo/ncbitaxon.owl"/>
+        <oboInOwl:hasExactSynonym rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Indian-fig</oboInOwl:hasExactSynonym>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Opuntia ficus-indica</rdfs:label>
+    </owl:Class>
+    
+
+
     <!-- http://purl.obolibrary.org/obo/NCBITaxon_371864 -->
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/NCBITaxon_371864">
@@ -27696,7 +27723,13 @@
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/NCBITaxon_2706"/>
         <obo:IAO_0000412 rdf:resource="http://purl.obolibrary.org/obo/ncbitaxon.owl"/>
         <oboInOwl:hasExactSynonym rdf:datatype="http://www.w3.org/2001/XMLSchema#string">buntan</oboInOwl:hasExactSynonym>
+        <oboInOwl:hasExactSynonym xml:lang="en">jabong</oboInOwl:hasExactSynonym>
+        <oboInOwl:hasExactSynonym xml:lang="en">jambola</oboInOwl:hasExactSynonym>
+        <oboInOwl:hasExactSynonym xml:lang="en">lusho fruit</oboInOwl:hasExactSynonym>
+        <oboInOwl:hasExactSynonym xml:lang="en">pamplemousse</oboInOwl:hasExactSynonym>
+        <oboInOwl:hasExactSynonym xml:lang="en">pomello</oboInOwl:hasExactSynonym>
         <oboInOwl:hasExactSynonym rdf:datatype="http://www.w3.org/2001/XMLSchema#string">pomelo</oboInOwl:hasExactSynonym>
+        <oboInOwl:hasExactSynonym xml:lang="en">pommelo</oboInOwl:hasExactSynonym>
         <oboInOwl:hasExactSynonym rdf:datatype="http://www.w3.org/2001/XMLSchema#string">pummelo</oboInOwl:hasExactSynonym>
         <oboInOwl:hasExactSynonym rdf:datatype="http://www.w3.org/2001/XMLSchema#string">shaddock</oboInOwl:hasExactSynonym>
         <oboInOwl:hasExactSynonym rdf:datatype="http://www.w3.org/2001/XMLSchema#string">yu</oboInOwl:hasExactSynonym>
@@ -35744,6 +35777,18 @@
         <obo:IAO_0000412 rdf:resource="http://purl.obolibrary.org/obo/ncbitaxon.owl"/>
         <oboInOwl:hasExactSynonym rdf:datatype="http://www.w3.org/2001/XMLSchema#string">pigfish</oboInOwl:hasExactSynonym>
         <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Orthopristis chrysoptera</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/NCBITaxon_482947 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/NCBITaxon_482947">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/NCBITaxon_375274"/>
+        <obo:IAO_0000412 rdf:resource="http://purl.obolibrary.org/obo/ncbitaxon.owl"/>
+        <oboInOwl:hasExactSynonym rdf:datatype="http://www.w3.org/2001/XMLSchema#string">waiwai</oboInOwl:hasExactSynonym>
+        <oboInOwl:hasExactSynonym rdf:datatype="http://www.w3.org/2001/XMLSchema#string">yellow strawberry guava</oboInOwl:hasExactSynonym>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Psidium cattleyanum var. littorale</rdfs:label>
     </owl:Class>
     
 

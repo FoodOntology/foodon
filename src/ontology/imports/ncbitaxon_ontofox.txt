@@ -10,6 +10,17 @@ NCBITaxon
 # NEED Mitragyna javanica
 
 
+http://purl.obolibrary.org/obo/NCBITaxon_112823 # Pangium edule
+
+http://purl.obolibrary.org/obo/NCBITaxon_35925 # Diospyros kaki # Japanese persimmon
+includeAllChildren
+
+http://purl.obolibrary.org/obo/NCBITaxon_371859 # Opuntia ficus-indica
+
+http://purl.obolibrary.org/obo/NCBITaxon_1703 # Brevibacterium linens  (Limburger cheese bacteria)
+
+http://purl.obolibrary.org/obo/NCBITaxon_482947 # Psidium cattleyanum var. littorale
+
 http://purl.obolibrary.org/obo/NCBITaxon_2711 # Citrus x sinensis 
 
 http://purl.obolibrary.org/obo/NCBITaxon_434242 # Chenopodium giganteum
@@ -76,6 +87,9 @@ http://purl.obolibrary.org/obo/NCBITaxon_36065
 http://purl.obolibrary.org/obo/NCBITaxon_1760
 
 # BRANCHES OF TAXA
+
+http://purl.obolibrary.org/obo/NCBITaxon_375274 # species:Psidium cattleianum
+includeAllChildren
 
 http://purl.obolibrary.org/obo/NCBITaxon_412675 # Cucumis melo subsp. melo
 includeAllChildren
@@ -2112,7 +2126,7 @@ http://purl.obolibrary.org/obo/NCBITaxon_3747 # species:Fragaria X ananassa Duch
 http://purl.obolibrary.org/obo/NCBITaxon_374709 # species:Euphrasia officinalis L.
 http://purl.obolibrary.org/obo/NCBITaxon_37488 # species:Diospyros texana Scheele
 http://purl.obolibrary.org/obo/NCBITaxon_3750 # Apple - malus domestica 
-http://purl.obolibrary.org/obo/NCBITaxon_375274 # species:Psidium cattleianum Sabine
+
 http://purl.obolibrary.org/obo/NCBITaxon_3754 # genus:Prunus L.
 http://purl.obolibrary.org/obo/NCBITaxon_37540 # Buccinum spp.
 http://purl.obolibrary.org/obo/NCBITaxon_375458 # Callinectes rathbunae
