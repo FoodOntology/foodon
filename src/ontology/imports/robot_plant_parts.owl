@@ -3413,7 +3413,7 @@
         <dc:date rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2020-10-14T12:37:01</dc:date>
         <oboInOwl:hasExactSynonym xml:lang="en">mushroom</oboInOwl:hasExactSynonym>
         <oboInOwl:hasExactSynonym xml:lang="en">toadstool</oboInOwl:hasExactSynonym>
-        <rdfs:label xml:lang="en">mushroom (fruitbody)</rdfs:label>
+        <rdfs:label xml:lang="en">mushroom fruitbody</rdfs:label>
     </owl:Class>
     
 
@@ -11371,7 +11371,7 @@
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/PO_0009010"/>
         <obo:IAO_0000115 xml:lang="en">A seed of a fenugreek plant (Trigonella foenum-graecum)</obo:IAO_0000115>
         <oboInOwl:hasExactSynonym xml:lang="en">fenugreek seed</oboInOwl:hasExactSynonym>
-        <rdfs:label xml:lang="en">fenugreek seed (whole)</rdfs:label>
+        <rdfs:label xml:lang="en">fenugreek seed (whole, dried)</rdfs:label>
     </owl:Class>
     
 
