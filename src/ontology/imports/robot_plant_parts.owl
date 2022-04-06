@@ -12482,7 +12482,7 @@
                 </owl:intersectionOf>
             </owl:Class>
         </owl:equivalentClass>
-        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/FOODON_00003528"/>
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/FOODON_03413452"/>
         <obo:IAO_0000115 xml:lang="en">A fruitbody of a Boletus edulis fungus.</obo:IAO_0000115>
         <obo:IAO_0000119 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">https://en.wikipedia.org/wiki/Boletus_edulis</obo:IAO_0000119>
         <oboInOwl:hasExactSynonym xml:lang="en">cep</oboInOwl:hasExactSynonym>
@@ -12652,7 +12652,7 @@
                 </owl:intersectionOf>
             </owl:Class>
         </owl:equivalentClass>
-        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/FOODON_00003528"/>
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/FOODON_03413452"/>
         <obo:IAO_0000115 xml:lang="en">A fruitbody of a Suillus luteus fungus.</obo:IAO_0000115>
         <obo:IAO_0000119 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">https://en.wikipedia.org/wiki/Suillus_luteus</obo:IAO_0000119>
         <oboInOwl:hasExactSynonym xml:lang="en">ringed boletus</oboInOwl:hasExactSynonym>
@@ -12787,7 +12787,7 @@
                 </owl:intersectionOf>
             </owl:Class>
         </owl:equivalentClass>
-        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/FOODON_00003528"/>
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/FOODON_03413452"/>
         <obo:IAO_0000115 xml:lang="en">A fruitbody of a Leccinum aurantiacum fungus.</obo:IAO_0000115>
         <obo:IAO_0000119 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">https://en.wikipedia.org/wiki/Leccinum_aurantiacum</obo:IAO_0000119>
         <oboInOwl:hasExactSynonym xml:lang="en">boletus rufus</oboInOwl:hasExactSynonym>
@@ -12811,7 +12811,7 @@
                 </owl:intersectionOf>
             </owl:Class>
         </owl:equivalentClass>
-        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/FOODON_00003528"/>
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/FOODON_03413452"/>
         <obo:IAO_0000115 xml:lang="en">A fruitbody of a Leccinum scabrum fungus.</obo:IAO_0000115>
         <obo:IAO_0000119 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">https://en.wikipedia.org/wiki/Leccinum_scabrum</obo:IAO_0000119>
         <oboInOwl:hasExactSynonym xml:lang="en">birch boletus</oboInOwl:hasExactSynonym>
@@ -12878,6 +12878,12 @@
         <rdfs:comment xml:lang="en">Food additive; technological purpose(s): bulking agent, carrier, emulsifier, glazing agent, stabilizer, thickener.</rdfs:comment>
         <rdfs:label xml:lang="en">gum arabic</rdfs:label>
     </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/FOODON_03413452 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/FOODON_03413452"/>
     
 
 
@@ -13561,7 +13567,7 @@
                 </owl:intersectionOf>
             </owl:Class>
         </owl:equivalentClass>
-        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/FOODON_00003528"/>
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/FOODON_03413452"/>
         <obo:IAO_0000115 xml:lang="en">A fruitbody of a Boletus pinophilus fungus.</obo:IAO_0000115>
         <obo:IAO_0000119 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">https://en.wikipedia.org/wiki/Boletus_pinophilus</obo:IAO_0000119>
         <oboInOwl:hasExactSynonym xml:lang="en">pine cep</oboInOwl:hasExactSynonym>
@@ -13585,7 +13591,7 @@
                 </owl:intersectionOf>
             </owl:Class>
         </owl:equivalentClass>
-        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/FOODON_00003528"/>
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/FOODON_03413452"/>
         <obo:IAO_0000115 xml:lang="en">A fruitbody of a boletus reticulatus fungus.</obo:IAO_0000115>
         <obo:IAO_0000119 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">https://en.wikipedia.org/wiki/Boletus_reticulatus</obo:IAO_0000119>
         <oboInOwl:hasExactSynonym xml:lang="en">summer cep</oboInOwl:hasExactSynonym>
