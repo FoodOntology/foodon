@@ -71,8 +71,7 @@ all_imports: $(IMPORTS_OWL)
 # Because OWLAPI is erroniously parsing 1 line commented out annotations, make the "sed ..." step last.
 # On Macs we need the '.bak' after -i to avoid a parsing error; while on other linux it fails
 imports/%_import.owl: imports/%_ontofox.txt
-	curl -s -F file=@imports/$*_ontofox.txt -o $@ http://ontofox.hegroup.org/service.php
-
+	curl -s -F file=@imports/$*_ontofox.txt -o $@ https://ontofox.hegroup.org/service.php
 	echo "Downloaded $@"
 
 	$(ROBOT) reduce -i $@ -r ELK -o $@
