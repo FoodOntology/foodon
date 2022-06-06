@@ -78,6 +78,13 @@ Datatype: idrange:5
     EquivalentTo: 
         xsd:integer[> 3600000 , <= 3600999]
 
+Datatype: idrange:6
+
+    Annotations: 
+        allocatedto: "Charlie Barclay"
+    
+    EquivalentTo: 
+        xsd:integer[> 3601000 , <= 3601999]
     
 Datatype: rdf:PlainLiteral
 
