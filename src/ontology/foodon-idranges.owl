@@ -88,4 +88,13 @@ Datatype: idrange:6
     
 Datatype: rdf:PlainLiteral
 
+Datatype: idrange:7
+
+    Annotations: 
+        allocatedto: "Rhiannon Cameron"
+    
+    EquivalentTo: 
+        xsd:integer[> 3602000 , <= 3602999]
+    
+Datatype: rdf:PlainLiteral
     
