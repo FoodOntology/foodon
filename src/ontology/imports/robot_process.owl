@@ -2955,6 +2955,8 @@
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/FOODON_03470112"/>
         <obo:IAO_0000115 xml:lang="en">Dehydration by sublimation under reduced pressure while frozen. Usually the product is not stored frozen.</obo:IAO_0000115>
         <oboInOwl:hasDbXref rdf:datatype="http://www.w3.org/2001/XMLSchema#string">http://www.langual.org/langual_thesaurus.asp?termid=J0130</oboInOwl:hasDbXref>
+        <oboInOwl:hasExactSynonym xml:lang="en">cryodesiccation</oboInOwl:hasExactSynonym>
+        <oboInOwl:hasExactSynonym xml:lang="en">lyophilization</oboInOwl:hasExactSynonym>
         <rdfs:label xml:lang="en">freeze-drying</rdfs:label>
     </owl:Class>
     
