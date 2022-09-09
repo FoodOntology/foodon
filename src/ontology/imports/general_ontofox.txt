@@ -125,9 +125,6 @@ http://purl.obolibrary.org/obo/DRON_00012339  # Propolis
 [Top level source term URIs and target direct superclass URIs]
 http://purl.obolibrary.org/obo/BFO_0000001 # entity
 
-[Top level source term URIs and target direct superclass URIs]
-http://purl.obolibrary.org/obo/BFO_0000001 # entity
-
 [Source term retrieval setting]
 includeAllIntermediates
 
@@ -145,6 +142,26 @@ includeAllChildren
 
 [Top level source term URIs and target direct superclass URIs]
 http://purl.obolibrary.org/obo/FAO_0000001 # fungal structure
+
+[Source term retrieval setting]
+includeNoIntermediates
+
+[Source annotation URIs]
+includeAllAxioms
+
+###########################################
+
+[Source ontology]
+FLOPO
+
+[Low level source term URIs]
+
+http://purl.obolibrary.org/obo/FLOPO_0012953 # seed mature
+http://purl.obolibrary.org/obo/FLOPO_0014628 #seed immature
+http://purl.obolibrary.org/obo/FLOPO_0003948 #seed split
+
+[Top level source term URIs and target direct superclass URIs]
+http://purl.obolibrary.org/obo/UBERON_0001062 # anatomical entity
 
 [Source term retrieval setting]
 includeNoIntermediates
