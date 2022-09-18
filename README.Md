@@ -17,7 +17,7 @@ Contact Us
 
 ## To view
 
-An easy place to browse FoodOn is at [https://www.ebi.ac.uk/ols/ontologies/foodon](https://www.ebi.ac.uk/ols/ontologies/foodon). As well the URI's of terms in the ontology resolve to the comprehensive [Ontobee ontology lookup service](http://www.ontobee.org/). It is organized according to the upper level BFO ontology, so most terms can be browsed by starting at the OBI "entity" term (e.g. in [Ontobee](http://www.ontobee.org/ontology/FOODON?iri=http://purl.obolibrary.org/obo/BFO_0000001)).
+An easy place to browse FoodOn is at [https://www.ebi.ac.uk/ols/ontologies/foodon](https://www.ebi.ac.uk/ols/ontologies/foodon). As well the URI's of terms in the ontology resolve to the comprehensive [Ontobee ontology lookup service](http://www.ontobee.org/). It is organized according to the upper level BFO ontology, so most terms can be browsed by starting at the BFO "entity" term (e.g. in [Ontobee](http://www.ontobee.org/ontology/FOODON?iri=http://purl.obolibrary.org/obo/BFO_0000001)).
 
 The foodon_core.owl main file currently contains everything FoodOn has to offer, including a "foodon food product" branch of over 9,000 products. foodon_siren.owl has a slightly larger food product database, but is kept only for reference, as we improve the foodon food product branch. The food products mainly originate from the FDA SIREN indexed food database, imported from LanguaL.org. (Currently foodon.owl is identical to foodon_core.owl).
 
