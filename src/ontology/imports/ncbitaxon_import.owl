@@ -18231,6 +18231,16 @@
     
 
 
+    <!-- http://purl.obolibrary.org/obo/NCBITaxon_272846 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/NCBITaxon_272846">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/NCBITaxon_4685"/>
+        <obo:IAO_0000412 rdf:resource="http://purl.obolibrary.org/obo/ncbitaxon.owl"/>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Asparagus racemosus</rdfs:label>
+    </owl:Class>
+    
+
+
     <!-- http://purl.obolibrary.org/obo/NCBITaxon_27292 -->
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/NCBITaxon_27292">
@@ -20406,6 +20416,18 @@
         <oboInOwl:hasExactSynonym rdf:datatype="http://www.w3.org/2001/XMLSchema#string">common plantain</oboInOwl:hasExactSynonym>
         <oboInOwl:hasExactSynonym rdf:datatype="http://www.w3.org/2001/XMLSchema#string">white-man&apos;s-foot</oboInOwl:hasExactSynonym>
         <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Plantago major</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/NCBITaxon_29892 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/NCBITaxon_29892">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/NCBITaxon_5230"/>
+        <obo:IAO_0000412 rdf:resource="http://purl.obolibrary.org/obo/ncbitaxon.owl"/>
+        <oboInOwl:hasExactSynonym rdf:datatype="http://www.w3.org/2001/XMLSchema#string">ear fungus</oboInOwl:hasExactSynonym>
+        <oboInOwl:hasExactSynonym rdf:datatype="http://www.w3.org/2001/XMLSchema#string">wood ear</oboInOwl:hasExactSynonym>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Auricularia auricula-judae</rdfs:label>
     </owl:Class>
     
 
@@ -35189,10 +35211,20 @@
     
 
 
+    <!-- http://purl.obolibrary.org/obo/NCBITaxon_4685 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/NCBITaxon_4685">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/NCBITaxon_40552"/>
+        <obo:IAO_0000412 rdf:resource="http://purl.obolibrary.org/obo/ncbitaxon.owl"/>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Asparagus</rdfs:label>
+    </owl:Class>
+    
+
+
     <!-- http://purl.obolibrary.org/obo/NCBITaxon_4686 -->
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/NCBITaxon_4686">
-        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/NCBITaxon_40552"/>
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/NCBITaxon_4685"/>
         <obo:IAO_0000412 rdf:resource="http://purl.obolibrary.org/obo/ncbitaxon.owl"/>
         <oboInOwl:hasExactSynonym rdf:datatype="http://www.w3.org/2001/XMLSchema#string">garden asparagus</oboInOwl:hasExactSynonym>
         <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Asparagus officinalis</rdfs:label>

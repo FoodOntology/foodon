@@ -155,16 +155,23 @@ includeAllAxioms
 FLOPO
 
 [Low level source term URIs]
-
-http://purl.obolibrary.org/obo/FLOPO_0012953 # seed mature
-http://purl.obolibrary.org/obo/FLOPO_0014628 #seed immature
-http://purl.obolibrary.org/obo/FLOPO_0003948 #seed split
+http://purl.obolibrary.org/obo/FLOPO_0012953
+http://purl.obolibrary.org/obo/FLOPO_0014628
+http://purl.obolibrary.org/obo/FLOPO_0003948
 
 [Top level source term URIs and target direct superclass URIs]
 http://purl.obolibrary.org/obo/UBERON_0001062 # anatomical entity
 
+http://purl.obolibrary.org/obo/FLOPO_0012953 # seed mature, has no FLOPO parent
+subClassOf http://purl.obolibrary.org/obo/PO_0009010 # seed
+http://purl.obolibrary.org/obo/FLOPO_0014628 # seed immature, has no FLOPO parent
+subClassOf http://purl.obolibrary.org/obo/PO_0009010 # seed
+http://purl.obolibrary.org/obo/FLOPO_0003948 # seed split, has no FLOPO parent
+subClassOf http://purl.obolibrary.org/obo/FOODON_03420178 # seed part
+
 [Source term retrieval setting]
 includeNoIntermediates
+
 
 [Source annotation URIs]
 includeAllAxioms
