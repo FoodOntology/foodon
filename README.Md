@@ -5,7 +5,9 @@
 
 Our [FoodOn.org](https://foodon.org) website introduces FoodOn and its design and community.
 
-FoodOn is initially based on a conversion of the [LanguaL.org](http://langual.org) food indexing thesaurus, integrated with OBOFoundry ontology terms from UBERON, ChEBI, and NCBITaxon and others.  This approach allows LanguaL(tm)'s thesaurus file to be updated over time, and the owl file to be updated as needed.  
+FoodOn aims to be the Lingua Franca about human and companion animal food product vocabulary. As an open-source inter-agency supported project, it provides a neutral and ontology-driven standard for government agencies, industry, nonprofits and consumers to name and reference food products and their components throughout the food supply chain. In partnership with other ontologies, the project also explores the semantic bedrock of vocabulary involved in modelling food composition, food processing, nutrition and food related disease.
+
+FoodOn was initially based on a conversion of the [LanguaL.org](http://langual.org) food indexing thesaurus, integrated with OBOFoundry ontology terms from UBERON, ChEBI, and NCBITaxon and others.
 
 Contact Us
 
