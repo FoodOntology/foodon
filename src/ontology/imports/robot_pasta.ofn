@@ -1,0 +1,130 @@
+Prefix(:=<http://purl.obolibrary.org/obo/foodon/imports/robot_pasta.ofn#>)
+Prefix(owl:=<http://www.w3.org/2002/07/owl#>)
+Prefix(rdf:=<http://www.w3.org/1999/02/22-rdf-syntax-ns#>)
+Prefix(xml:=<http://www.w3.org/XML/1998/namespace>)
+Prefix(xsd:=<http://www.w3.org/2001/XMLSchema#>)
+Prefix(rdfs:=<http://www.w3.org/2000/01/rdf-schema#>)
+
+
+Ontology(<http://purl.obolibrary.org/obo/foodon/imports/robot_pasta.ofn>
+
+Declaration(Class(<http://purl.obolibrary.org/obo/FOODON_00001211>))
+Declaration(Class(<http://purl.obolibrary.org/obo/FOODON_00002631>))
+Declaration(Class(<http://purl.obolibrary.org/obo/FOODON_00002632>))
+Declaration(Class(<http://purl.obolibrary.org/obo/FOODON_00002633>))
+Declaration(Class(<http://purl.obolibrary.org/obo/FOODON_00002634>))
+Declaration(Class(<http://purl.obolibrary.org/obo/FOODON_00002635>))
+Declaration(Class(<http://purl.obolibrary.org/obo/FOODON_00002636>))
+Declaration(Class(<http://purl.obolibrary.org/obo/FOODON_00002637>))
+Declaration(Class(<http://purl.obolibrary.org/obo/FOODON_00002638>))
+Declaration(Class(<http://purl.obolibrary.org/obo/FOODON_00002831>))
+Declaration(AnnotationProperty(<http://purl.obolibrary.org/obo/IAO_0000114>))
+Declaration(AnnotationProperty(<http://purl.obolibrary.org/obo/IAO_0000115>))
+Declaration(AnnotationProperty(<http://purl.obolibrary.org/obo/IAO_0000117>))
+Declaration(AnnotationProperty(<http://purl.obolibrary.org/obo/IAO_0000119>))
+Declaration(AnnotationProperty(<http://schema.org/image>))
+Declaration(AnnotationProperty(<http://www.geneontology.org/formats/oboInOwl#hasExactSynonym>))
+
+
+############################
+#   Classes
+############################
+
+# Class: <http://purl.obolibrary.org/obo/FOODON_00001211> (pasta food product)
+
+AnnotationAssertion(rdfs:label <http://purl.obolibrary.org/obo/FOODON_00001211> "pasta food product"@en)
+
+# Class: <http://purl.obolibrary.org/obo/FOODON_00002631> (tagliatelle)
+
+AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000114> <http://purl.obolibrary.org/obo/FOODON_00002631> <http://purl.obolibrary.org/obo/IAO_0000122>)
+AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000115> <http://purl.obolibrary.org/obo/FOODON_00002631> "Tagliatelle is a traditional type of egg pasta from the Emilia-Romagna and Marche regions of Italy. Individual pieces of tagliatelle are long, flat ribbons that are similar in shape to fettuccine and are typically about 6.5 to 10 mm (0.26 to 0.39 in) wide."@en)
+AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000117> <http://purl.obolibrary.org/obo/FOODON_00002631> "Ginny Pichler"^^xsd:string)
+AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000119> <http://purl.obolibrary.org/obo/FOODON_00002631> "https://en.wikipedia.org/wiki/Tagliatelle"^^xsd:string)
+AnnotationAssertion(<http://schema.org/image> <http://purl.obolibrary.org/obo/FOODON_00002631> <https://upload.wikimedia.org/wikipedia/commons/thumb/0/02/Tagliatelles2.jpg/312px-Tagliatelles2.jpg>)
+AnnotationAssertion(rdfs:label <http://purl.obolibrary.org/obo/FOODON_00002631> "tagliatelle"@en)
+SubClassOf(<http://purl.obolibrary.org/obo/FOODON_00002631> <http://purl.obolibrary.org/obo/FOODON_00001211>)
+
+# Class: <http://purl.obolibrary.org/obo/FOODON_00002632> (tortellini)
+
+AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000114> <http://purl.obolibrary.org/obo/FOODON_00002632> <http://purl.obolibrary.org/obo/IAO_0000122>)
+AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000115> <http://purl.obolibrary.org/obo/FOODON_00002632> "Tortellini are ring-shaped pasta, sometimes also described as \"navel shaped\", hence their alternative name of \"belly button\" (ombelico). They are typically stuffed with a mix of meat (pork loin, raw prosciutto, Mortadella), and Parmigiano Reggiano cheese."@en)
+AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000117> <http://purl.obolibrary.org/obo/FOODON_00002632> "Ginny Pichler"^^xsd:string)
+AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000119> <http://purl.obolibrary.org/obo/FOODON_00002632> "https://en.wikipedia.org/wiki/Tortellini"^^xsd:string)
+AnnotationAssertion(<http://schema.org/image> <http://purl.obolibrary.org/obo/FOODON_00002632> <https://upload.wikimedia.org/wikipedia/commons/thumb/4/42/Tortellini_Bolognesi.jpg/320px-Tortellini_Bolognesi.jpg>)
+AnnotationAssertion(rdfs:label <http://purl.obolibrary.org/obo/FOODON_00002632> "tortellini"@en)
+SubClassOf(<http://purl.obolibrary.org/obo/FOODON_00002632> <http://purl.obolibrary.org/obo/FOODON_00001211>)
+
+# Class: <http://purl.obolibrary.org/obo/FOODON_00002633> (tortelloni)
+
+AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000114> <http://purl.obolibrary.org/obo/FOODON_00002633> <http://purl.obolibrary.org/obo/IAO_0000122>)
+AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000115> <http://purl.obolibrary.org/obo/FOODON_00002633> "Tortelloni are stuffed pasta, the same shape as tortellini, but larger. They are usually stuffed with ricotta cheese and leaf vegetables, such as spinach."@en)
+AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000117> <http://purl.obolibrary.org/obo/FOODON_00002633> "Shannon Russell"^^xsd:string)
+AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000119> <http://purl.obolibrary.org/obo/FOODON_00002633> "https://en.wikipedia.org/wiki/Tortelloni"^^xsd:string)
+AnnotationAssertion(<http://schema.org/image> <http://purl.obolibrary.org/obo/FOODON_00002633> <https://upload.wikimedia.org/wikipedia/commons/thumb/4/4c/Tortelloni_tomato_sauce1.JPG/275px-Tortelloni_tomato_sauce1.JPG>)
+AnnotationAssertion(rdfs:label <http://purl.obolibrary.org/obo/FOODON_00002633> "tortelloni"@en)
+SubClassOf(<http://purl.obolibrary.org/obo/FOODON_00002633> <http://purl.obolibrary.org/obo/FOODON_00001211>)
+
+# Class: <http://purl.obolibrary.org/obo/FOODON_00002634> (tortiglioni)
+
+AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000114> <http://purl.obolibrary.org/obo/FOODON_00002634> <http://purl.obolibrary.org/obo/IAO_0000122>)
+AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000115> <http://purl.obolibrary.org/obo/FOODON_00002634> "Tortiglioni are a type of pasta, similar to rigatoni but larger and with deeper grooves which spiral around the pasta."@en)
+AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000117> <http://purl.obolibrary.org/obo/FOODON_00002634> "Lauren Tindale"^^xsd:string)
+AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000119> <http://purl.obolibrary.org/obo/FOODON_00002634> "https://en.wikipedia.org/wiki/Tortiglioni"^^xsd:string)
+AnnotationAssertion(<http://schema.org/image> <http://purl.obolibrary.org/obo/FOODON_00002634> <https://upload.wikimedia.org/wikipedia/commons/thumb/e/ef/Tortiglioni_closeup.png/320px-Tortiglioni_closeup.png>)
+AnnotationAssertion(rdfs:label <http://purl.obolibrary.org/obo/FOODON_00002634> "tortiglioni"@en)
+SubClassOf(<http://purl.obolibrary.org/obo/FOODON_00002634> <http://purl.obolibrary.org/obo/FOODON_00001211>)
+
+# Class: <http://purl.obolibrary.org/obo/FOODON_00002635> (fusilli)
+
+AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000114> <http://purl.obolibrary.org/obo/FOODON_00002635> <http://purl.obolibrary.org/obo/IAO_0000122>)
+AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000115> <http://purl.obolibrary.org/obo/FOODON_00002635> "Fusilli are a variety of pasta that are formed into corkscrew or helical shapes. The word fusilli presumably comes from fuso (\"spindle\"), as traditionally it is \"spun\" by pressing and rolling a small rod over the thin strips of pasta to wind them around it in a corkscrew shape."@en)
+AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000117> <http://purl.obolibrary.org/obo/FOODON_00002635> "Shannon Russell"^^xsd:string)
+AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000119> <http://purl.obolibrary.org/obo/FOODON_00002635> "https://en.wikipedia.org/wiki/Fusilli"^^xsd:string)
+AnnotationAssertion(<http://schema.org/image> <http://purl.obolibrary.org/obo/FOODON_00002635> <https://en.wikipedia.org/wiki/Fusilli#/media/File:Fusilli.png>)
+AnnotationAssertion(<http://www.geneontology.org/formats/oboInOwl#hasExactSynonym> <http://purl.obolibrary.org/obo/FOODON_00002635> "rotini"@en)
+AnnotationAssertion(rdfs:label <http://purl.obolibrary.org/obo/FOODON_00002635> "fusilli"@en)
+SubClassOf(<http://purl.obolibrary.org/obo/FOODON_00002635> <http://purl.obolibrary.org/obo/FOODON_00001211>)
+
+# Class: <http://purl.obolibrary.org/obo/FOODON_00002636> (conchiglie)
+
+AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000114> <http://purl.obolibrary.org/obo/FOODON_00002636> <http://purl.obolibrary.org/obo/IAO_0000122>)
+AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000115> <http://purl.obolibrary.org/obo/FOODON_00002636> "Conchiglie, commonly known as \"shells\" or \"seashells\" is a type of pasta. It is usually sold in the plain durum wheat variety. The shell shape of the pasta allows the sauce to adhere to it."@en)
+AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000117> <http://purl.obolibrary.org/obo/FOODON_00002636> "Emma Griffiths"^^xsd:string)
+AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000119> <http://purl.obolibrary.org/obo/FOODON_00002636> "https://en.wikipedia.org/wiki/Conchiglie"^^xsd:string)
+AnnotationAssertion(<http://schema.org/image> <http://purl.obolibrary.org/obo/FOODON_00002636> <https://upload.wikimedia.org/wikipedia/commons/thumb/2/20/Conchiglie_rigate.png/320px-Conchiglie_rigate.png>)
+AnnotationAssertion(rdfs:label <http://purl.obolibrary.org/obo/FOODON_00002636> "conchiglie"@en)
+SubClassOf(<http://purl.obolibrary.org/obo/FOODON_00002636> <http://purl.obolibrary.org/obo/FOODON_00001211>)
+
+# Class: <http://purl.obolibrary.org/obo/FOODON_00002637> (linguine)
+
+AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000114> <http://purl.obolibrary.org/obo/FOODON_00002637> <http://purl.obolibrary.org/obo/IAO_0000122>)
+AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000115> <http://purl.obolibrary.org/obo/FOODON_00002637> "Linguine is a type of pasta similar to fettuccine and trenette but elliptical in section rather than flat. It is about 4 millimetres in width, which is wider than spaghetti but not as wide as fettuccine."@en)
+AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000117> <http://purl.obolibrary.org/obo/FOODON_00002637> "Lauren Tindale"^^xsd:string)
+AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000119> <http://purl.obolibrary.org/obo/FOODON_00002637> "https://en.wikipedia.org/wiki/Linguine"^^xsd:string)
+AnnotationAssertion(<http://schema.org/image> <http://purl.obolibrary.org/obo/FOODON_00002637> <https://en.wikipedia.org/wiki/Linguine#/media/File:Linguine.jpg>)
+AnnotationAssertion(<http://www.geneontology.org/formats/oboInOwl#hasExactSynonym> <http://purl.obolibrary.org/obo/FOODON_00002637> "trenette"@en)
+AnnotationAssertion(rdfs:label <http://purl.obolibrary.org/obo/FOODON_00002637> "linguine"@en)
+SubClassOf(<http://purl.obolibrary.org/obo/FOODON_00002637> <http://purl.obolibrary.org/obo/FOODON_00001211>)
+
+# Class: <http://purl.obolibrary.org/obo/FOODON_00002638> (penne)
+
+AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000114> <http://purl.obolibrary.org/obo/FOODON_00002638> <http://purl.obolibrary.org/obo/IAO_0000122>)
+AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000115> <http://purl.obolibrary.org/obo/FOODON_00002638> "Penne is an extruded type of pasta with cylinder-shaped pieces, their ends cut at a bias. It is lexically related to Latin penna (meaning \"feather\" or \"quill\"), and was originally intended to imitate the then-ubiquitous fountain pen's steel nibs."@en)
+AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000117> <http://purl.obolibrary.org/obo/FOODON_00002638> "Emma Griffiths"^^xsd:string)
+AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000119> <http://purl.obolibrary.org/obo/FOODON_00002638> "https://en.wikipedia.org/wiki/Penne"^^xsd:string)
+AnnotationAssertion(<http://schema.org/image> <http://purl.obolibrary.org/obo/FOODON_00002638> <https://en.wikipedia.org/wiki/Penne#/media/File:Pennelisce_closeup.png>)
+AnnotationAssertion(rdfs:label <http://purl.obolibrary.org/obo/FOODON_00002638> "penne"@en)
+SubClassOf(<http://purl.obolibrary.org/obo/FOODON_00002638> <http://purl.obolibrary.org/obo/FOODON_00001211>)
+
+# Class: <http://purl.obolibrary.org/obo/FOODON_00002831> (cannelloni)
+
+AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000114> <http://purl.obolibrary.org/obo/FOODON_00002831> <http://purl.obolibrary.org/obo/IAO_0000122>)
+AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000115> <http://purl.obolibrary.org/obo/FOODON_00002831> "Cannelloni are a cylindrical type of lasagna generally served baked with a filling and covered by a sauce in Italian cuisine."@en)
+AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000117> <http://purl.obolibrary.org/obo/FOODON_00002831> "Damion Dooley"^^xsd:string)
+AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000119> <http://purl.obolibrary.org/obo/FOODON_00002831> "https://en.wikipedia.org/wiki/Cannelloni"^^xsd:string)
+AnnotationAssertion(<http://schema.org/image> <http://purl.obolibrary.org/obo/FOODON_00002831> <https://upload.wikimedia.org/wikipedia/commons/thumb/6/6e/Cannelloni2.png/320px-Cannelloni2.png>)
+AnnotationAssertion(rdfs:label <http://purl.obolibrary.org/obo/FOODON_00002831> "cannelloni"@en)
+SubClassOf(<http://purl.obolibrary.org/obo/FOODON_00002831> <http://purl.obolibrary.org/obo/FOODON_00001211>)
+
+
+)
