@@ -81,12 +81,12 @@ all_imports: $(IMPORTS_OWL)
 # On Macs we need the '.bak' after -i to avoid a parsing error; while on other linux it fails
 
 imports/%_import.ofn: imports/%_ontofox.txt
-	curl -s -F file=@imports/$*_ontofox.txt -o $@ https://ontofox.hegroup.org/service.php
-	echo "Downloaded $@"
+	curl -s -F file=@imports/$*_ontofox.txt -o $*_import.owl https://ontofox.hegroup.org/service.php
+	echo "Downloaded *_import.owl"
 
 #	$(ROBOT) reduce --input $@ --reasoner ELK --output $@
-	$(ROBOT) reduce --input $@ --xml-entities --reasoner ELK --output imports/$*_import.ofn
-	rm $@
+	$(ROBOT) reduce --input $*_import.owl --xml-entities --reasoner ELK --output imports/$*_import.ofn
+	rm $*_import.owl
 
 #	echo "Entity substitution."
 
