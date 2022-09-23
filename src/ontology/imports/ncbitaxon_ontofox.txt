@@ -1,5 +1,5 @@
 [URI of the OWL(RDF/XML) output file]
-http://purl.obolibrary.org/obo/foodon/imports/ncbitaxon_import.owl
+http://purl.obolibrary.org/obo/foodon/imports/ncbitaxon_import.ofn
 
 [Source ontology]
 NCBITaxon
@@ -9,14 +9,45 @@ NCBITaxon
 # NEED Smilax aristolochiifolia / Mexican sasparilla
 # NEED Mitragyna javanica
 
+# DELETED IN NCBITaxon http://purl.obolibrary.org/obo/NCBITaxon_30478 # Raja rhina
+http://purl.obolibrary.org/obo/NCBITaxon_2838338 # Beringraja rhina (Synonym: Raja rhina, Alternative ID->NCBITaxon_30478)
+
+# DELETED " http://purl.obolibrary.org/obo/NCBITaxon_218804 # Leiognathus equulus
+http://purl.obolibrary.org/obo/NCBITaxon_2893490 # Leiognathus equula (Alternative ID-> NCBITaxon_218804)
+
+# DELETED " http://purl.obolibrary.org/obo/NCBITaxon_1428164 # species:Sorghum X drummondii (Nees ex Steud.) Millsp. & Chase 
+
+# DELETED " http://purl.obolibrary.org/obo/NCBITaxon_302770 # Hermosilla azurea
+http://purl.obolibrary.org/obo/NCBITaxon_2838349 # Kyphosus azureus (Synonym: Hermosilla azurea, Alternative ID-> NCBITaxon_302770)
+
+# DELETED " http://purl.obolibrary.org/obo/NCBITaxon_341241 # Raja binoculata
+http://purl.obolibrary.org/obo/NCBITaxon_2838337 # Beringraja binoculata ( Synonym: Raja binoculare, Alternative ID-> NCBITaxon_341241)
+
+# DELETED " http://purl.obolibrary.org/obo/NCBITaxon_50905 # Rhacochilus vacca
+http://purl.obolibrary.org/obo/NCBITaxon_2838341 # Phanerodon vaccai (Synonym: Rhacochilus vacca, Alternative ID->NCBITaxon_50905)
+
+# DELETED " http://purl.obolibrary.org/obo/NCBITaxon_740706 # Raja inornata
+http://purl.obolibrary.org/obo/NCBITaxon_2838339 # Beringraja inornata (synonym: Raja inornata, Alternative ID->NCBITaxon_740706)
+
+# DELETED " http://purl.obolibrary.org/obo/NCBITaxon_114055 # Chlorella / Chlorella <Trebouxiophyceae incertae sedis>
+http://purl.obolibrary.org/obo/NCBITaxon_3071 # Chlorella
+
+
+http://purl.obolibrary.org/obo/NCBITaxon_516932 # Rhynchocinetes durbanensis
+
+http://purl.obolibrary.org/obo/NCBITaxon_197266 # Hoodia gordonii
+
+http://purl.obolibrary.org/obo/NCBITaxon_3617 # Fagopryum esculentum
+
+http://purl.obolibrary.org/obo/NCBITaxon_29892 #  Auricularia auricula-judae 
+
+http://purl.obolibrary.org/obo/NCBITaxon_272846 # Asparagus racemosus
 http://purl.obolibrary.org/obo/NCBITaxon_48037 # Foeniculum
 
-http://purl.obolibrary.org/obo/NCBITaxon_3071 # Chlorella
+
 http://purl.obolibrary.org/obo/NCBITaxon_2843217 # Rhaphiolepis bibas
 
 http://purl.obolibrary.org/obo/NCBITaxon_941588 # Apium graveolens Secalinum Group
-
-http://purl.obolibrary.org/obo/NCBITaxon_114055 # Chlorella / Chlorella <Trebouxiophyceae incertae sedis>
 
 http://purl.obolibrary.org/obo/NCBITaxon_197265 # Hoodia
 
@@ -44,11 +75,11 @@ http://purl.obolibrary.org/obo/NCBITaxon_2838343 # Chaetodipterus zonatus / paci
 
 http://purl.obolibrary.org/obo/NCBITaxon_313200 # Claytonia Lanceolata
 
-#http://purl.obolibrary.org/obo/NCBITaxon_218804 # Leiognathus equulus # DELETED
+
 http://purl.obolibrary.org/obo/NCBITaxon_2893490 # Leiognathus equula
 
 http://purl.obolibrary.org/obo/NCBITaxon_4557 # Sorghum
-#http://purl.obolibrary.org/obo/NCBITaxon_1428164 # species:Sorghum X drummondii (Nees ex Steud.) Millsp. & Chase # DELETED
+
 http://purl.obolibrary.org/obo/NCBITaxon_171959 # Sorghum bicolor subsp. drummondii
 
 http://purl.obolibrary.org/obo/NCBITaxon_186965 # Petasites japonicus / Petasites japonica
@@ -1604,7 +1635,7 @@ http://purl.obolibrary.org/obo/NCBITaxon_301703 # species:Annona glabra L.
 http://purl.obolibrary.org/obo/NCBITaxon_301862 # species:Annona reticulata L.
 http://purl.obolibrary.org/obo/NCBITaxon_302047 # Seriola lalandi
 http://purl.obolibrary.org/obo/NCBITaxon_302049 # Carcharhinus longimanus
-http://purl.obolibrary.org/obo/NCBITaxon_302770 # Hermosilla azurea
+
 http://purl.obolibrary.org/obo/NCBITaxon_303001 # Puntius chola
 http://purl.obolibrary.org/obo/NCBITaxon_303685 # Balistes capriscus
 http://purl.obolibrary.org/obo/NCBITaxon_303687 # Balistes vetula
@@ -1633,7 +1664,7 @@ http://purl.obolibrary.org/obo/NCBITaxon_30455 # species:Fulmarus glacialis (Lin
 http://purl.obolibrary.org/obo/NCBITaxon_30458 # order:Strigiformes
 http://purl.obolibrary.org/obo/NCBITaxon_30459 # family:Strigidae
 http://purl.obolibrary.org/obo/NCBITaxon_30475 # family:Rajidae Blainville, 1816
-http://purl.obolibrary.org/obo/NCBITaxon_30478 # Raja rhina
+
 http://purl.obolibrary.org/obo/NCBITaxon_30483 # order:Carcharhiniformes
 http://purl.obolibrary.org/obo/NCBITaxon_304850 # Babylonia areolata
 http://purl.obolibrary.org/obo/NCBITaxon_30493 # species:Triakis semifasciata Girard, 1855
@@ -1901,7 +1932,7 @@ http://purl.obolibrary.org/obo/NCBITaxon_338315 # Scomber colias
 http://purl.obolibrary.org/obo/NCBITaxon_338571 # species:Amaranthus blitum L.
 http://purl.obolibrary.org/obo/NCBITaxon_3394 # family:Cycadaceae
 http://purl.obolibrary.org/obo/NCBITaxon_3395 # genus:Cycas L.
-http://purl.obolibrary.org/obo/NCBITaxon_341241 # Raja binoculata
+
 http://purl.obolibrary.org/obo/NCBITaxon_341243 # Bathyraja aleutica
 http://purl.obolibrary.org/obo/NCBITaxon_341244 # Bathyraja interrupta
 http://purl.obolibrary.org/obo/NCBITaxon_341249 # Bathyraja parmifera
@@ -2033,7 +2064,7 @@ http://purl.obolibrary.org/obo/NCBITaxon_36103 # Haliotis tuberculata
 http://purl.obolibrary.org/obo/NCBITaxon_36137 # Pollicipes polymerus
 http://purl.obolibrary.org/obo/NCBITaxon_3615 # family:Polygonaceae
 http://purl.obolibrary.org/obo/NCBITaxon_361634 # Hyas araneus
-http://purl.obolibrary.org/obo/NCBITaxon_3617 # species:Fagopyrum esculentum Moench
+http://purl.obolibrary.org/obo/NCBITaxon_3617 # Fagopyrum esculentum
 http://purl.obolibrary.org/obo/NCBITaxon_36177 # Acipenser oxyrinchus
 http://purl.obolibrary.org/obo/NCBITaxon_36178 # Scaphirhynchus albus
 http://purl.obolibrary.org/obo/NCBITaxon_3618 # genus:Rumex L.
@@ -2842,7 +2873,6 @@ http://purl.obolibrary.org/obo/NCBITaxon_508012 # Taenioides cirratus
 http://purl.obolibrary.org/obo/NCBITaxon_508553 # Ciliata septentrionalis
 http://purl.obolibrary.org/obo/NCBITaxon_508556 # species:Sprattus sprattus sprattus (Linnaeus, 1758)
 http://purl.obolibrary.org/obo/NCBITaxon_508657 # Hyperoplus lanceolatus
-http://purl.obolibrary.org/obo/NCBITaxon_50905 # Rhacochilus vacca
 http://purl.obolibrary.org/obo/NCBITaxon_5098 # Monascus purpureus
 http://purl.obolibrary.org/obo/NCBITaxon_509962 # Aequipecten glyptus
 http://purl.obolibrary.org/obo/NCBITaxon_509964 # Argopecten nucleus
@@ -3524,7 +3554,6 @@ http://purl.obolibrary.org/obo/NCBITaxon_72901 # genus:Blumea DC.
 http://purl.obolibrary.org/obo/NCBITaxon_73102 # species:Gaultheria shallon Pursh
 http://purl.obolibrary.org/obo/NCBITaxon_7375 #  Lucilia cuprina
 http://purl.obolibrary.org/obo/NCBITaxon_740705 # Platyrhinoidis triseriata
-http://purl.obolibrary.org/obo/NCBITaxon_740706 # Raja inornata
 http://purl.obolibrary.org/obo/NCBITaxon_740707 # Raja stellulata
 http://purl.obolibrary.org/obo/NCBITaxon_740708 # Sphyraena ensis
 http://purl.obolibrary.org/obo/NCBITaxon_741939 # Austroglossus microlepis

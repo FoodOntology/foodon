@@ -1,0 +1,141 @@
+Prefix(:=<http://purl.obolibrary.org/obo/foodon/imports/metadata_import.owl#>)
+Prefix(dc:=<http://purl.org/dc/elements/1.1/>)
+Prefix(obo:=<http://purl.obolibrary.org/obo/>)
+Prefix(owl:=<http://www.w3.org/2002/07/owl#>)
+Prefix(rdf:=<http://www.w3.org/1999/02/22-rdf-syntax-ns#>)
+Prefix(xml:=<http://www.w3.org/XML/1998/namespace>)
+Prefix(xsd:=<http://www.w3.org/2001/XMLSchema#>)
+Prefix(rdfs:=<http://www.w3.org/2000/01/rdf-schema#>)
+Prefix(taxon:=<http://purl.obolibrary.org/obo/NCBITaxon#>)
+Prefix(oboInOwl:=<http://www.geneontology.org/formats/oboInOwl#>)
+
+
+Ontology(<http://purl.obolibrary.org/obo/foodon/imports/metadata_import.ofn>
+
+Declaration(ObjectProperty(obo:RO_0000087))
+Declaration(AnnotationProperty(obo:GENEPIO_0000005))
+Declaration(AnnotationProperty(obo:IAO_0000111))
+Declaration(AnnotationProperty(obo:IAO_0000114))
+Declaration(AnnotationProperty(obo:IAO_0000115))
+Declaration(AnnotationProperty(obo:IAO_0000117))
+Declaration(AnnotationProperty(obo:IAO_0000119))
+Declaration(AnnotationProperty(obo:IAO_0000231))
+Declaration(AnnotationProperty(obo:IAO_0000412))
+Declaration(AnnotationProperty(obo:IAO_0100001))
+Declaration(AnnotationProperty(taxon:_taxonomic_rank))
+Declaration(AnnotationProperty(oboInOwl:hasBroadSynonym))
+Declaration(AnnotationProperty(oboInOwl:hasDbXref))
+Declaration(AnnotationProperty(oboInOwl:hasExactSynonym))
+Declaration(AnnotationProperty(oboInOwl:hasNarrowSynonym))
+Declaration(AnnotationProperty(oboInOwl:hasRelatedSynonym))
+Declaration(AnnotationProperty(oboInOwl:hasSynonym))
+Declaration(AnnotationProperty(rdfs:label))
+############################
+#   Annotation Properties
+############################
+
+# Annotation Property: obo:IAO_0000111 (editor preferred term)
+
+AnnotationAssertion(obo:IAO_0000111 obo:IAO_0000111 "editor preferred label"@en)
+AnnotationAssertion(obo:IAO_0000114 obo:IAO_0000111 obo:IAO_0000122)
+AnnotationAssertion(obo:IAO_0000115 obo:IAO_0000111 "The concise, meaningful, and human-friendly name for a class or property preferred by the ontology developers. (US-English)"@en)
+AnnotationAssertion(obo:IAO_0000119 obo:IAO_0000111 "GROUP:OBI:<http://purl.obolibrary.org/obo/obi>"@en)
+AnnotationAssertion(rdfs:label obo:IAO_0000111 "editor preferred label")
+AnnotationAssertion(rdfs:label obo:IAO_0000111 "editor preferred label"@en)
+AnnotationAssertion(rdfs:label obo:IAO_0000111 "editor preferred term")
+AnnotationAssertion(rdfs:label obo:IAO_0000111 "editor preferred term"@en)
+AnnotationAssertion(rdfs:label obo:IAO_0000111 "editor preferred term~editor preferred label")
+
+# Annotation Property: obo:IAO_0000114 (has curation status)
+
+AnnotationAssertion(obo:IAO_0000111 obo:IAO_0000114 "has curation status"@en)
+AnnotationAssertion(obo:IAO_0000119 obo:IAO_0000114 "OBI_0000281"@en)
+AnnotationAssertion(rdfs:label obo:IAO_0000114 "has curation status"@en)
+
+# Annotation Property: obo:IAO_0000115 (definition)
+
+AnnotationAssertion(obo:IAO_0000111 obo:IAO_0000115 "definition"@en)
+AnnotationAssertion(obo:IAO_0000114 obo:IAO_0000115 obo:IAO_0000122)
+AnnotationAssertion(obo:IAO_0000115 obo:IAO_0000115 "The official OBI definition, explaining the meaning of a class or property. Shall be Aristotelian, formalized and normalized. Can be augmented with colloquial definitions."@en)
+AnnotationAssertion(obo:IAO_0000115 obo:IAO_0000115 "The official definition, explaining the meaning of a class or property. Shall be Aristotelian, formalized and normalized. Can be augmented with colloquial definitions."@en)
+AnnotationAssertion(obo:IAO_0000119 obo:IAO_0000115 "GROUP:OBI:<http://purl.obolibrary.org/obo/obi>"@en)
+AnnotationAssertion(rdfs:label obo:IAO_0000115 "definition")
+AnnotationAssertion(rdfs:label obo:IAO_0000115 "definition"@en)
+AnnotationAssertion(rdfs:label obo:IAO_0000115 "textual definition")
+
+# Annotation Property: obo:IAO_0000119 (definition source)
+
+AnnotationAssertion(obo:IAO_0000111 obo:IAO_0000119 "definition source"@en)
+AnnotationAssertion(obo:IAO_0000114 obo:IAO_0000119 obo:IAO_0000122)
+AnnotationAssertion(obo:IAO_0000115 obo:IAO_0000119 "formal citation, e.g. identifier in external database to indicate / attribute source(s) for the definition. Free text indicate / attribute source(s) for the definition. EXAMPLE: Author Name, URI, MeSH Term C04, PUBMED ID, Wiki uri on 31.01.2007"@en)
+AnnotationAssertion(obo:IAO_0000119 obo:IAO_0000119 "Discussion on obo-discuss mailing-list, see http://bit.ly/hgm99w"^^xsd:string)
+AnnotationAssertion(obo:IAO_0000119 obo:IAO_0000119 "GROUP:OBI:<http://purl.obolibrary.org/obo/obi>"@en)
+AnnotationAssertion(rdfs:label obo:IAO_0000119 "definition source"@en)
+
+# Annotation Property: obo:IAO_0000231 (has obsolescence reason)
+
+AnnotationAssertion(obo:IAO_0000111 obo:IAO_0000231 "has obsolescence reason"@en)
+AnnotationAssertion(obo:IAO_0000115 obo:IAO_0000231 "Relates an annotation property to an obsolescence reason. The values of obsolescence reasons come from a list of predefined terms, instances of the class obsolescence reason specification."@en)
+AnnotationAssertion(obo:IAO_0000117 obo:IAO_0000231 "PERSON:Alan Ruttenberg"@en)
+AnnotationAssertion(obo:IAO_0000117 obo:IAO_0000231 "PERSON:Melanie Courtot"@en)
+AnnotationAssertion(rdfs:label obo:IAO_0000231 "has obsolescence reason"@en)
+
+# Annotation Property: obo:IAO_0000412 (imported from)
+
+AnnotationAssertion(rdfs:label obo:IAO_0000412 "imported from"@en)
+
+# Annotation Property: obo:IAO_0100001 (term replaced by)
+
+AnnotationAssertion(obo:IAO_0000111 obo:IAO_0100001 "term replaced by"@en)
+AnnotationAssertion(obo:IAO_0000114 obo:IAO_0100001 obo:IAO_0000125)
+AnnotationAssertion(obo:IAO_0000115 obo:IAO_0100001 "Add as annotation triples in the granting ontology"@en)
+AnnotationAssertion(obo:IAO_0000115 obo:IAO_0100001 "Use on obsolete terms, relating the term to another term that can be used as a substitute"@en)
+AnnotationAssertion(obo:IAO_0000117 obo:IAO_0100001 "Person:Alan Ruttenberg"@en)
+AnnotationAssertion(obo:IAO_0000119 obo:IAO_0100001 "Person:Alan Ruttenberg"@en)
+AnnotationAssertion(rdfs:label obo:IAO_0100001 "term replaced by"@en)
+
+# Annotation Property: oboInOwl:hasBroadSynonym (has broad synonym)
+
+AnnotationAssertion(rdfs:label oboInOwl:hasBroadSynonym "has broad synonym"@en)
+SubAnnotationPropertyOf(oboInOwl:hasBroadSynonym oboInOwl:hasSynonym)
+
+# Annotation Property: oboInOwl:hasDbXref (database cross reference)
+
+AnnotationAssertion(rdfs:label oboInOwl:hasDbXref "database cross reference"@en)
+
+# Annotation Property: oboInOwl:hasExactSynonym (oboInOwl:hasExactSynonym)
+
+SubAnnotationPropertyOf(oboInOwl:hasExactSynonym oboInOwl:hasSynonym)
+
+# Annotation Property: oboInOwl:hasNarrowSynonym (has narrow synonym)
+
+AnnotationAssertion(rdfs:label oboInOwl:hasNarrowSynonym "has narrow synonym"@en)
+SubAnnotationPropertyOf(oboInOwl:hasNarrowSynonym oboInOwl:hasSynonym)
+
+# Annotation Property: oboInOwl:hasRelatedSynonym (oboInOwl:hasRelatedSynonym)
+
+SubAnnotationPropertyOf(oboInOwl:hasRelatedSynonym oboInOwl:hasSynonym)
+
+# Annotation Property: oboInOwl:hasSynonym (has synonym)
+
+AnnotationAssertion(rdfs:label oboInOwl:hasSynonym "has synonym"@en)
+
+# Annotation Property: rdfs:label (label)
+
+AnnotationAssertion(rdfs:label rdfs:label "label"@en)
+
+
+############################
+#   Object Properties
+############################
+
+# Object Property: obo:RO_0000087 (has role)
+
+AnnotationAssertion(obo:IAO_0000115 obo:RO_0000087 "a relation between an independent continuant (the bearer) and a role, in which the role specifically depends on the bearer for its existence"@en)
+AnnotationAssertion(obo:IAO_0000412 obo:RO_0000087 obo:ro.owl)
+AnnotationAssertion(rdfs:label obo:RO_0000087 "has role"@en)
+
+
+
+AnnotationAssertion(obo:IAO_0000115 <http://schema.org/image> "An image of the item. ,In Protege, this can be a URL."@en)
+)

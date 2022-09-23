@@ -1,5 +1,5 @@
 [URI of the OWL(RDF/XML) output file]
-http://purl.obolibrary.org/obo/foodon/imports/general_import.owl
+http://purl.obolibrary.org/obo/foodon/imports/general_import.ofn
 
 ###########################################
 
@@ -125,9 +125,6 @@ http://purl.obolibrary.org/obo/DRON_00012339  # Propolis
 [Top level source term URIs and target direct superclass URIs]
 http://purl.obolibrary.org/obo/BFO_0000001 # entity
 
-[Top level source term URIs and target direct superclass URIs]
-http://purl.obolibrary.org/obo/BFO_0000001 # entity
-
 [Source term retrieval setting]
 includeAllIntermediates
 
@@ -148,6 +145,33 @@ http://purl.obolibrary.org/obo/FAO_0000001 # fungal structure
 
 [Source term retrieval setting]
 includeNoIntermediates
+
+[Source annotation URIs]
+includeAllAxioms
+
+###########################################
+
+[Source ontology]
+FLOPO
+
+[Low level source term URIs]
+http://purl.obolibrary.org/obo/FLOPO_0012953
+http://purl.obolibrary.org/obo/FLOPO_0014628
+http://purl.obolibrary.org/obo/FLOPO_0003948
+
+[Top level source term URIs and target direct superclass URIs]
+http://purl.obolibrary.org/obo/UBERON_0001062 # anatomical entity
+
+http://purl.obolibrary.org/obo/FLOPO_0012953 # seed mature, has no FLOPO parent
+subClassOf http://purl.obolibrary.org/obo/PO_0009010 # seed
+http://purl.obolibrary.org/obo/FLOPO_0014628 # seed immature, has no FLOPO parent
+subClassOf http://purl.obolibrary.org/obo/PO_0009010 # seed
+http://purl.obolibrary.org/obo/FLOPO_0003948 # seed split, has no FLOPO parent
+subClassOf http://purl.obolibrary.org/obo/FOODON_03420178 # seed part
+
+[Source term retrieval setting]
+includeNoIntermediates
+
 
 [Source annotation URIs]
 includeAllAxioms
@@ -322,7 +346,12 @@ http://purl.obolibrary.org/obo/BFO_0000001 # entity
 includeAllIntermediates
 
 [Source annotation URIs]
-includeAllAxioms
+http://www.w3.org/2000/01/rdf-schema#label
+http://purl.obolibrary.org/obo/IAO_0000115 
+http://purl.obolibrary.org/obo/IAO_0000111
+http://purl.obolibrary.org/obo/IAO_0000114
+http://purl.obolibrary.org/obo/IAO_0000119
+http://purl.obolibrary.org/obo/OBI_0001886
 
 ###########################################
 
