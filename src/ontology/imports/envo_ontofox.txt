@@ -1,5 +1,5 @@
 [URI of the OWL(RDF/XML) output file]
-http://purl.obolibrary.org/obo/foodon/imports/envo_import.owl #Environment Ontology
+http://purl.obolibrary.org/obo/foodon/imports/envo_import.ofn #Environment Ontology
 
 [Source ontology]
 ENVO
@@ -32,7 +32,6 @@ http://purl.obolibrary.org/obo/ENVO_01000181 #    terrestrial - mangrove
 http://purl.obolibrary.org/obo/ENVO_01000180 #    terrestrial - tundra
 
 # ENVIRONMENTAL FEATURE
-http://purl.obolibrary.org/obo/ENVO_00002297 # environmental feature
 
 http://purl.obolibrary.org/obo/ENVO_00000000 # geographic feature
 http://purl.obolibrary.org/obo/ENVO_00000063 # water body
