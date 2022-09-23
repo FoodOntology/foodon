@@ -64,8 +64,10 @@ The --input "../../foodon-merged.ofn" parameter brings in entities that are refe
 The --prefix parameter is used to expand abbreviated namespace URLs.
 All output files get delivered to parent directory.  Manually import them in FoodOn (in Active Ontology -> Ontology Imports section of Protege.
 
-Do this against foodon-edit.owl and all imports/foodon-product-import.ofn etc.    
+Do this against foodon-edit.owl and all imports/foodon_product_import.ofn etc.    
 
-grep -v '^Declaration' imports/robot_plant_parts.ofn > temp2.ofn
-robot unmerge --input foodon-edit.owl --input temp2.ofn convert --format ofn --output foodon-edit.owl  
-robot unmerge --input foodon-product-import.ofn --input temp2.ofn --output foodon-product-import.ofn
+grep -v '^Declaration' imports/robot_plant_parts.ofn > temp.ofn
+robot unmerge --input foodon-edit.ofn --input temp.ofn --output foodon-edit.ofn
+robot unmerge --input imports/foodon_product_import.ofn --input temp.ofn --output imports/foodon_product_import.ofn
+rm temp.ofn
+
