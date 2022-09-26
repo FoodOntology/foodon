@@ -1,6 +1,7 @@
 PREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#>
 PREFIX obo:  <http://purl.obolibrary.org/obo/>
 PREFIX oboInOwl:  <http://www.geneontology.org/formats/oboInOwl#>
+PREFIX owl: <http://www.w3.org/2002/07/owl#>
 
 SELECT DISTINCT ?class ?parent ?type ?label 
 WHERE {
@@ -49,6 +50,14 @@ WHERE {
 		UNION {
 			?class obo:IAO_0000118 ?label.
 			BIND ('label (alternative)' as ?type).
+		}
+
+		#Retrieve taxon
+		UNION {
+			?class rdfs:subClassOf ?restriction.
+			?restriction owl:onProperty obo:RO_0002162. # in taxon
+			?restriction owl:someValuesFrom ?label.
+			BIND ('taxon' as ?type).
 		}
 	}
 }

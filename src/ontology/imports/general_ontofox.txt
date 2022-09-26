@@ -329,33 +329,6 @@ http://purl.obolibrary.org/obo/IAO_0100001 # replaced by
 ###########################################
 
 [Source ontology]
-ONS
-
-[Low level source term URIs]
-http://purl.obolibrary.org/obo/ONS_1000001 # diet
-includeAllChildren
-http://purl.obolibrary.org/obo/ONS_0000094 # dietary pattern
-includeAllChildren
-http://purl.obolibrary.org/obo/ONS_0000085 # Meal
-http://purl.obolibrary.org/obo/ONS_1000064 # dietary pattern data item
-
-[Top level source term URIs and target direct superclass URIs]
-http://purl.obolibrary.org/obo/BFO_0000001 # entity
-
-[Source term retrieval setting]
-includeAllIntermediates
-
-[Source annotation URIs]
-http://www.w3.org/2000/01/rdf-schema#label
-http://purl.obolibrary.org/obo/IAO_0000115 
-http://purl.obolibrary.org/obo/IAO_0000111
-http://purl.obolibrary.org/obo/IAO_0000114
-http://purl.obolibrary.org/obo/IAO_0000119
-http://purl.obolibrary.org/obo/OBI_0001886
-
-###########################################
-
-[Source ontology]
 PECO
 
 [Low level source term URIs]
