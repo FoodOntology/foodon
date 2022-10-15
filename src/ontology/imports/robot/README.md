@@ -2,6 +2,9 @@ To regenerate an owl file from a robot template, run this style of command:
 NOTE: --input command ONLY ALLOWS ONE INPUT file; if you do multiple --input
 only LAST one is used.
 
+To do a once-off generation of tsv from existing isolated .owl file of food items or processes, run the following. (Used to fetch content for google sheet via a manually exported .owl file hierarchy of food processes originating in foodon-edit.owl.
+robot export --input ../robot_process_import.owl   --header "ID|LABEL|SubClass Of [NAME NAMED]|SubClass Of [NAME ANON]|Equivalent Class|oboInOwl:hasSynonym|oboInOwl:hasExactSynonym|oboInOwl:hasNarrowSynonym|oboInOwl:hasDbXref|IAO:0000115|IAO:0000600|rdfs:comment|IAO:0000117|IAO:0000114|dc:date"   --sort "ID"   --format tsv   --export robot_process_import.tsv
+
 
 FoodOn ontology robot managed term table imports:
 animals.tsv
