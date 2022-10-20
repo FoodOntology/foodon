@@ -68,7 +68,6 @@ Declaration(Class(<http://purl.obolibrary.org/obo/FOODON_03601024>))
 Declaration(Class(<http://purl.obolibrary.org/obo/FOODON_03601025>))
 Declaration(Class(<http://purl.obolibrary.org/obo/FOODON_03601026>))
 Declaration(Class(<http://purl.obolibrary.org/obo/FOODON_03601027>))
-Declaration(Class(<http://purl.obolibrary.org/obo/FOODON_03601028>))
 Declaration(Class(<http://purl.obolibrary.org/obo/FOODON_03601029>))
 Declaration(Class(<http://purl.obolibrary.org/obo/FOODON_03601030>))
 Declaration(Class(<http://purl.obolibrary.org/obo/FOODON_03601031>))
@@ -279,7 +278,7 @@ AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000115> <http://purl.ob
 AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000119> <http://purl.obolibrary.org/obo/FOODON_03601021> " https://www.britannica.com/topic/chaat"^^xsd:string)
 AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000119> <http://purl.obolibrary.org/obo/FOODON_03601021> "https://en.wikipedia.org/wiki/Chaat "^^xsd:string)
 AnnotationAssertion(<http://purl.org/dc/terms/contributor> <http://purl.obolibrary.org/obo/FOODON_03601021> "https://orcid.org/0000-0001-8008-8249"^^xsd:string)
-AnnotationAssertion(<http://www.geneontology.org/formats/oboInOwl#hasExactSynonym> <http://purl.obolibrary.org/obo/FOODON_03601021> "chÄ�t"@en)
+AnnotationAssertion(<http://www.geneontology.org/formats/oboInOwl#hasExactSynonym> <http://purl.obolibrary.org/obo/FOODON_03601021> "chāt"@en)
 AnnotationAssertion(rdfs:label <http://purl.obolibrary.org/obo/FOODON_03601021> "chaat"@en)
 SubClassOf(<http://purl.obolibrary.org/obo/FOODON_03601021> <http://purl.obolibrary.org/obo/FOODON_03315013>)
 
@@ -335,7 +334,7 @@ AnnotationAssertion(<http://purl.org/dc/terms/contributor> <http://purl.obolibra
 AnnotationAssertion(<http://schema.org/image> <http://purl.obolibrary.org/obo/FOODON_03601025> <https://upload.wikimedia.org/wikipedia/commons/d/d6/Hyderabadi_Mutton_Haleem.jpg>)
 AnnotationAssertion(<http://www.geneontology.org/formats/oboInOwl#hasRelatedSynonym> <http://purl.obolibrary.org/obo/FOODON_03601025> "khichra"@en)
 AnnotationAssertion(rdfs:label <http://purl.obolibrary.org/obo/FOODON_03601025> "haleem"@en)
-SubClassOf(<http://purl.obolibrary.org/obo/FOODON_03601025> <http://purl.obolibrary.org/obo/FOODON_00003140>)
+SubClassOf(<http://purl.obolibrary.org/obo/FOODON_03601025> <http://purl.obolibrary.org/obo/FOODON_03601026>)
 
 # Class: <http://purl.obolibrary.org/obo/FOODON_03601026> (khichra)
 
@@ -344,8 +343,8 @@ AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000115> <http://purl.ob
 AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000119> <http://purl.obolibrary.org/obo/FOODON_03601026> "https://en.wikipedia.org/wiki/Khichra"^^xsd:string)
 AnnotationAssertion(<http://purl.org/dc/terms/contributor> <http://purl.obolibrary.org/obo/FOODON_03601026> " https://orcid.org/0000-0001-8008-8249"^^xsd:string)
 AnnotationAssertion(<http://purl.org/dc/terms/contributor> <http://purl.obolibrary.org/obo/FOODON_03601026> "https://orcid.org/0000-0001-5275-8866 "^^xsd:string)
+AnnotationAssertion(<http://schema.org/image> <http://purl.obolibrary.org/obo/FOODON_03601026> <https://upload.wikimedia.org/wikipedia/commons/a/a3/Khichra.JPG>)
 AnnotationAssertion(<http://www.geneontology.org/formats/oboInOwl#hasExactSynonym> <http://purl.obolibrary.org/obo/FOODON_03601026> "Khichda"@en)
-AnnotationAssertion(<http://www.geneontology.org/formats/oboInOwl#hasRelatedSynonym> <http://purl.obolibrary.org/obo/FOODON_03601026> "haleem"@en)
 AnnotationAssertion(rdfs:comment <http://purl.obolibrary.org/obo/FOODON_03601026> "Khichra is the meat based variant of rice dish from the Indian subcontinent called Khichdi. It is popular in India and Pakistan where it is sold as street food."@en)
 AnnotationAssertion(rdfs:label <http://purl.obolibrary.org/obo/FOODON_03601026> "khichra"@en)
 SubClassOf(<http://purl.obolibrary.org/obo/FOODON_03601026> <http://purl.obolibrary.org/obo/FOODON_00003140>)
@@ -359,18 +358,6 @@ AnnotationAssertion(<http://purl.org/dc/terms/contributor> <http://purl.obolibra
 AnnotationAssertion(<http://schema.org/image> <http://purl.obolibrary.org/obo/FOODON_03601027> <https://upload.wikimedia.org/wikipedia/commons/e/e0/Homemade_Jambalaya.JPG>)
 AnnotationAssertion(rdfs:label <http://purl.obolibrary.org/obo/FOODON_03601027> "jambalaya"@en)
 SubClassOf(<http://purl.obolibrary.org/obo/FOODON_03601027> <http://purl.obolibrary.org/obo/FOODON_00001180>)
-
-# Class: <http://purl.obolibrary.org/obo/FOODON_03601028> (khichra)
-
-AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000114> <http://purl.obolibrary.org/obo/FOODON_03601028> <http://purl.obolibrary.org/obo/IAO_0000428>)
-AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000115> <http://purl.obolibrary.org/obo/FOODON_03601028> "A stew which is made of chunks of meat, lentils and spices and cooked to a thick paste."@en)
-AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000119> <http://purl.obolibrary.org/obo/FOODON_03601028> "https://en.wikipedia.org/wiki/Khichra"^^xsd:string)
-AnnotationAssertion(<http://purl.org/dc/terms/contributor> <http://purl.obolibrary.org/obo/FOODON_03601028> "https://orcid.org/0000-0001-5193-0062"^^xsd:string)
-AnnotationAssertion(<http://schema.org/image> <http://purl.obolibrary.org/obo/FOODON_03601028> <https://upload.wikimedia.org/wikipedia/commons/a/a3/Khichra.JPG>)
-AnnotationAssertion(<http://www.geneontology.org/formats/oboInOwl#hasNarrowSynonym> <http://purl.obolibrary.org/obo/FOODON_03601028> "haleem"@en)
-AnnotationAssertion(rdfs:comment <http://purl.obolibrary.org/obo/FOODON_03601028> "Originates in the Indian subcontinent."@en)
-AnnotationAssertion(rdfs:label <http://purl.obolibrary.org/obo/FOODON_03601028> "khichra"@en)
-SubClassOf(<http://purl.obolibrary.org/obo/FOODON_03601028> <http://purl.obolibrary.org/obo/FOODON_00003140>)
 
 # Class: <http://purl.obolibrary.org/obo/FOODON_03601029> (khmeli suneli)
 
@@ -480,7 +467,7 @@ SubClassOf(<http://purl.obolibrary.org/obo/FOODON_03601037> <http://purl.obolibr
 # Class: <http://purl.obolibrary.org/obo/FOODON_03601038> (food (crumbled))
 
 AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000114> <http://purl.obolibrary.org/obo/FOODON_03601038> <http://purl.obolibrary.org/obo/IAO_0000428>)
-AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000115> <http://purl.obolibrary.org/obo/FOODON_03601038> "A food product which has been processed by a crumbling technique where fingers are used to apply pressure to break the food into smaller pieces."@en)
+AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000115> <http://purl.obolibrary.org/obo/FOODON_03601038> "A food product which has been processed by a crumbling technique to break the food into smaller pieces."@en)
 AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000119> <http://purl.obolibrary.org/obo/FOODON_03601038> "https://www.recipetips.com/glossary-term/t--35352/crumble.asp#:~:text=Crumble.%20Refers%20to%20the%20breaking%20or%20food%20into,slight%20pressure%20uniformly%20across%20the%20item%20being%20crumbled"^^xsd:string)
 AnnotationAssertion(<http://purl.org/dc/terms/contributor> <http://purl.obolibrary.org/obo/FOODON_03601038> "https://orcid.org/0000-0001-8008-8249"^^xsd:string)
 AnnotationAssertion(<http://www.geneontology.org/formats/oboInOwl#hasBroadSynonym> <http://purl.obolibrary.org/obo/FOODON_03601038> "food (ground)"@en)
@@ -585,7 +572,7 @@ SubClassOf(<http://purl.obolibrary.org/obo/FOODON_03601046> <http://purl.obolibr
 # Class: <http://purl.obolibrary.org/obo/FOODON_03601047> (pasta primavera)
 
 AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000114> <http://purl.obolibrary.org/obo/FOODON_03601047> <http://purl.obolibrary.org/obo/IAO_0000428>)
-AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000115> <http://purl.obolibrary.org/obo/FOODON_03601047> "A pasta dish, which is american in origin and is made with lightly sautÃ©ed fresh vegetables."@en)
+AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000115> <http://purl.obolibrary.org/obo/FOODON_03601047> "A pasta dish, which is american in origin and is made with lightly sautéed fresh vegetables."@en)
 AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000119> <http://purl.obolibrary.org/obo/FOODON_03601047> "https://en.wikipedia.org/wiki/Pasta_primavera"^^xsd:string)
 AnnotationAssertion(<http://purl.org/dc/terms/contributor> <http://purl.obolibrary.org/obo/FOODON_03601047> " https://orcid.org/0000-0001-8008-8249  "^^xsd:string)
 AnnotationAssertion(<http://purl.org/dc/terms/contributor> <http://purl.obolibrary.org/obo/FOODON_03601047> "https://orcid.org/0000-0001-5193-0062 "^^xsd:string)
@@ -609,7 +596,7 @@ SubClassOf(<http://purl.obolibrary.org/obo/FOODON_03601048> <http://purl.obolibr
 # Class: <http://purl.obolibrary.org/obo/FOODON_03601049> (ras malai)
 
 AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000114> <http://purl.obolibrary.org/obo/FOODON_03601049> <http://purl.obolibrary.org/obo/IAO_0000428>)
-AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000115> <http://purl.obolibrary.org/obo/FOODON_03601049> "A dairy based dessert which originated from the Indian subcontinent which is made from soft cheese balls or milk cakes in sweet creamy syrup.'"@en)
+AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000115> <http://purl.obolibrary.org/obo/FOODON_03601049> "A dairy based dessert which originated from the Indian subcontinent which is made from soft cheese balls or milk cakes in sweet creamy syrup."@en)
 AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000119> <http://purl.obolibrary.org/obo/FOODON_03601049> "https://en.wikipedia.org/wiki/Ras_malai"^^xsd:string)
 AnnotationAssertion(<http://purl.org/dc/terms/contributor> <http://purl.obolibrary.org/obo/FOODON_03601049> " https://orcid.org/0000-0001-8008-8249  "^^xsd:string)
 AnnotationAssertion(<http://purl.org/dc/terms/contributor> <http://purl.obolibrary.org/obo/FOODON_03601049> "https://orcid.org/0000-0001-5193-0062 "^^xsd:string)
@@ -733,7 +720,7 @@ SubClassOf(<http://purl.obolibrary.org/obo/FOODON_03601058> <http://purl.obolibr
 # Class: <http://purl.obolibrary.org/obo/FOODON_03601059> (tuna saku)
 
 AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000114> <http://purl.obolibrary.org/obo/FOODON_03601059> <http://purl.obolibrary.org/obo/IAO_0000428>)
-AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000115> <http://purl.obolibrary.org/obo/FOODON_03601059> "A saku which is derived from the tuna fish."@en)
+AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000115> <http://purl.obolibrary.org/obo/FOODON_03601059> "A saku which is derived from tuna fish."@en)
 AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000119> <http://purl.obolibrary.org/obo/FOODON_03601059> "https://www.tunaloinsupplier.com/2018/01/tuna-loin-saku-definition-and-advantages.html#:~:text=In%20Japan%2C%20the%20term%20of%20tuna%20saku%20means,They%20are%20also%20used%20for%20other%20sliced%20presentations"^^xsd:string)
 AnnotationAssertion(<http://purl.org/dc/terms/contributor> <http://purl.obolibrary.org/obo/FOODON_03601059> " https://orcid.org/0000-0001-8008-8249  "^^xsd:string)
 AnnotationAssertion(<http://purl.org/dc/terms/contributor> <http://purl.obolibrary.org/obo/FOODON_03601059> "https://orcid.org/0000-0001-5193-0062 "^^xsd:string)
