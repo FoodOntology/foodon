@@ -24,7 +24,7 @@ robot template --template dietary_supplement.tsv\
   --output ../robot_dietary_supplement.ofn
 
 robot template --template pasta.tsv \
-  --input "../general_import.ofn" \
+  --input "../../foodon-merged.ofn" \
   --ontology-iri "http://purl.obolibrary.org/obo/foodon/imports/robot_pasta.ofn" \
   --output ../robot_pasta.ofn
 
@@ -51,11 +51,10 @@ robot template --template wine.tsv \
 
 
 
-An experimental USDA FDC robot managed ontology
-fdc.tsv
+An experimental USDA FDC robot managed ontology: fdc.tsv
 
 robot template --template fdc.tsv \
-  --input "../general_import.owl" \
+  --input "../../foodon-merged.ofn" \
   --ontology-iri "http://purl.obolibrary.org/obo/foodon/imports/robot_fdc.owl" \
   --output ../robot_fdc.owl
 
