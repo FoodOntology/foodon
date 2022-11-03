@@ -197,6 +197,9 @@ includeAllIntermediates
 [Source annotation URIs]
 includeAllAxioms
 
+[Source annotation URIs to be excluded]
+http://www.geneontology.org/formats/oboInOwl#hasDbXref
+
 ###########################################
 
 [Source ontology]
@@ -214,6 +217,7 @@ includeNoIntermediates
 
 [Source annotation URIs]
 includeAllAnnotationProperties
+[Source annotation URIs to be excluded]
 
 ###########################################
 

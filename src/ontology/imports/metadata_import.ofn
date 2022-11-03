@@ -99,11 +99,7 @@ AnnotationAssertion(rdfs:label obo:IAO_0100001 "term replaced by"@en)
 AnnotationAssertion(rdfs:label oboInOwl:hasBroadSynonym "has broad synonym"@en)
 SubAnnotationPropertyOf(oboInOwl:hasBroadSynonym oboInOwl:hasSynonym)
 
-# Annotation Property: oboInOwl:hasDbXref (database cross reference)
-
-AnnotationAssertion(rdfs:label oboInOwl:hasDbXref "database cross reference"@en)
-
-# Annotation Property: oboInOwl:hasExactSynonym (oboInOwl:hasExactSynonym)
+# Annotation Property: oboInOwl:hasExactSynonym (has_exact_synonym)
 
 SubAnnotationPropertyOf(oboInOwl:hasExactSynonym oboInOwl:hasSynonym)
 
@@ -112,7 +108,7 @@ SubAnnotationPropertyOf(oboInOwl:hasExactSynonym oboInOwl:hasSynonym)
 AnnotationAssertion(rdfs:label oboInOwl:hasNarrowSynonym "has narrow synonym"@en)
 SubAnnotationPropertyOf(oboInOwl:hasNarrowSynonym oboInOwl:hasSynonym)
 
-# Annotation Property: oboInOwl:hasRelatedSynonym (oboInOwl:hasRelatedSynonym)
+# Annotation Property: oboInOwl:hasRelatedSynonym (has_related_synonym)
 
 SubAnnotationPropertyOf(oboInOwl:hasRelatedSynonym oboInOwl:hasSynonym)
 

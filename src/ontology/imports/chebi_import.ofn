@@ -100,7 +100,6 @@ Declaration(Class(obo:CHEBI_177086))
 Declaration(Class(obo:CHEBI_177089))
 Declaration(Class(obo:CHEBI_177090))
 Declaration(Class(obo:CHEBI_17716))
-Declaration(Class(obo:CHEBI_17754))
 Declaration(Class(obo:CHEBI_17792))
 Declaration(Class(obo:CHEBI_17822))
 Declaration(Class(obo:CHEBI_17855))
@@ -1636,14 +1635,6 @@ AnnotationAssertion(obo:IAO_0000115 obo:CHEBI_17716 "A glycosylglucose disacchar
 AnnotationAssertion(obo:IAO_0000412 obo:CHEBI_17716 obo:chebi.owl)
 AnnotationAssertion(rdfs:label obo:CHEBI_17716 "lactose"^^xsd:string)
 SubClassOf(obo:CHEBI_17716 obo:CHEBI_24405)
-
-# Class: obo:CHEBI_17754 (glycerol)
-
-AnnotationAssertion(obo:IAO_0000115 obo:CHEBI_17754 "A triol with a structure of propane substituted at positions 1, 2 and 3 by hydroxy groups."^^xsd:string)
-AnnotationAssertion(obo:IAO_0000412 obo:CHEBI_17754 obo:chebi.owl)
-AnnotationAssertion(rdfs:label obo:CHEBI_17754 "glycerol"^^xsd:string)
-SubClassOf(obo:CHEBI_17754 obo:CHEBI_17522)
-SubClassOf(obo:CHEBI_17754 obo:CHEBI_27136)
 
 # Class: obo:CHEBI_17792 (organohalogen compound)
 
