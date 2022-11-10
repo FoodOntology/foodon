@@ -3155,20 +3155,7 @@ AnnotationAssertion(owl:deprecated obo:FOODON_03311368 "true"^^xsd:boolean)
 
 # Class: obo:FOODON_03311443 (obsolete: potato hash brown shred made from idaho burbank russet potato)
 
-AnnotationAssertion(obo:IAO_0000117 obo:FOODON_03311443 "Damion Dooley"@en)
 AnnotationAssertion(obo:IAO_0100001 obo:FOODON_03311443 "http://purl.obolibrary.org/obo/FOODON_03310607"^^xsd:anyURI)
-AnnotationAssertion(oboInOwl:hasDbXref obo:FOODON_03311443 "SUBSET_SIREN:F11443")
-AnnotationAssertion(rdfs:comment obo:FOODON_03311443 "Only potatoes grown in Idaho can have Idaho(tm) mentioned in their names."@en)
-AnnotationAssertion(rdfs:comment obo:FOODON_03311443 "SIREN DB annotation:
-* has quality 'divided into pieces, thickness 0.3-1.5 cm.' (http://purl.obolibrary.org/obo/FOODON_03430115)
-* derives from 'root, tuber or bulb, without peel' (http://purl.obolibrary.org/obo/FOODON_03420240)
-* formed as a result of 'water removal process' (http://purl.obolibrary.org/obo/FOODON_03460138)
-* formed as a result of 'preservation by adding chemicals' (http://purl.obolibrary.org/obo/FOODON_03470100)
-* formed as a result of 'preservation by dehydration or drying' (http://purl.obolibrary.org/obo/FOODON_03470116)
-* has substance added  'monosodium glutamate' (http://purl.obolibrary.org/obo/CHEBI_64220)
-* has substance added  'spice or herb added' (http://purl.obolibrary.org/obo/FOODON_03460151)
-* has substance added  http://purl.obolibrary.org/obo/FOODON_03460260
-        "@en)
 AnnotationAssertion(rdfs:label obo:FOODON_03311443 "obsolete: potato hash brown shred made from idaho burbank russet potato"@en)
 AnnotationAssertion(owl:deprecated obo:FOODON_03311443 "true"^^xsd:boolean)
 
