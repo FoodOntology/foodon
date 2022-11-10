@@ -1718,15 +1718,6 @@ EquivalentClasses(<http://purl.obolibrary.org/obo/FOODON_00002765> ObjectInterse
 SubClassOf(<http://purl.obolibrary.org/obo/FOODON_00002765> <http://purl.obolibrary.org/obo/FOODON_00001635>)
 SubClassOf(<http://purl.obolibrary.org/obo/FOODON_00002765> <http://purl.obolibrary.org/obo/PO_0030100>)
 
-# Class: <http://purl.obolibrary.org/obo/FOODON_00002774> (garbanzo bean (whole))
-
-AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000115> <http://purl.obolibrary.org/obo/FOODON_00002774> "A seed of a garbanzo bean varietal."@en)
-AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000119> <http://purl.obolibrary.org/obo/FOODON_00002774> "https://en.wikipedia.org/wiki/Chickpea"^^xsd:string)
-AnnotationAssertion(<http://purl.org/dc/elements/1.1/date> <http://purl.obolibrary.org/obo/FOODON_00002774> "2019-07-09T17:26:45"^^xsd:dateTime)
-AnnotationAssertion(<http://www.geneontology.org/formats/oboInOwl#hasExactSynonym> <http://purl.obolibrary.org/obo/FOODON_00002774> "garbanzo bean"@en)
-AnnotationAssertion(rdfs:label <http://purl.obolibrary.org/obo/FOODON_00002774> "garbanzo bean (whole)"@en)
-SubClassOf(<http://purl.obolibrary.org/obo/FOODON_00002774> <http://purl.obolibrary.org/obo/FOODON_03306811>)
-
 # Class: <http://purl.obolibrary.org/obo/FOODON_00002775> (bambara groundnut (whole))
 
 AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000114> <http://purl.obolibrary.org/obo/FOODON_00002775> <http://purl.obolibrary.org/obo/IAO_0000122>)
