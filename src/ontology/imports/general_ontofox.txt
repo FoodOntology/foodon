@@ -226,7 +226,6 @@ COB
 
 [Low level source term URIs]
 http://purl.obolibrary.org/obo/MOP_0000543 # physico-chemical process
-http://purl.obolibrary.org/obo/GO_0008150 # biological process
 http://purl.obolibrary.org/obo/STATO_0000102 # executes
 
 http://purl.obolibrary.org/obo/COB_0000511 # has quantity
@@ -719,7 +718,8 @@ STATO
 http://purl.obolibrary.org/obo/STATO_0000503 # simple random sampling
 
 [Top level source term URIs and target direct superclass URIs]
-http://purl.obolibrary.org/obo/OBI_0000011 # Planned process
+http://purl.obolibrary.org/obo/STATO_0000502 # statistical sampling
+
 
 [Source term retrieval setting]
 includeAllIntermediates

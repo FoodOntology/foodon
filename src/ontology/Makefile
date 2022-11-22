@@ -36,7 +36,7 @@ prepare_release: all
 #	cp $(ONT).owl $(RELEASEDIR)
 #	cp imports/*.ofn $(RELEASEDIR)/imports/ &&\
 
-	robot convert --input $(ONT)-merged.ofn --xml-entities --output $(RELEASEDIR)/$(ONT).owl &&\
+	$(ROBOT) convert --input $(ONT)-merged.ofn --xml-entities --output $(RELEASEDIR)/$(ONT).owl &&\
 	cp $(ONT)-base.owl $(RELEASEDIR) &&\
 	cp foodon-synonyms.tsv $(RELEASEDIR)
 
@@ -53,6 +53,8 @@ $(ONT).owl: $(SRC)
 # import files have them.
 # remove --select "owl:NamedIndividual=obo:BFO_*"
 	$(ROBOT) merge --input $(SRC) --xml-entities reason --reasoner ELK --equivalent-classes-allowed false relax reduce --output $(ONT)-merged.ofn
+
+	python3 foodon-merged-remediation.py
 
 # Make foodon-base.owl, stripped of food product import tags and files
 # Add GAZ?

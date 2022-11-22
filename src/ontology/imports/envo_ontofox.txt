@@ -182,6 +182,7 @@ http://purl.obolibrary.org/obo/ENVO_00000124 # supranational geopolitical entity
 [Top level source term URIs and target direct superclass URIs]
 # don't reference BFO terms or else triggers duplicate annotations on them.
 http://purl.obolibrary.org/obo/BFO_0000001 # thing
+http://purl.obolibrary.org/obo/BFO_0000024 # fiat object part
 #http://purl.obolibrary.org/obo/ENVO_01000254 # environmental system
 #http://purl.obolibrary.org/obo/ENVO_00010483 # environmental material
 #http://purl.obolibrary.org/obo/ENVO_00002297 # environmental feature

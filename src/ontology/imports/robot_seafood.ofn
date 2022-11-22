@@ -6996,13 +6996,13 @@ AnnotationAssertion(<http://www.geneontology.org/formats/oboInOwl#hasDbXref> <ht
 AnnotationAssertion(Annotation(<http://purl.obolibrary.org/obo/IAO_0000412> "FDA SFL Common Name"^^xsd:string) <http://www.geneontology.org/formats/oboInOwl#hasExactSynonym> <http://purl.obolibrary.org/obo/NCBITaxon_204814> "moontail blassop"@en)
 AnnotationAssertion(rdfs:seeAlso <http://purl.obolibrary.org/obo/NCBITaxon_204814> "https://en.wikipedia.org/wiki/Lunartail_puffer"^^xsd:string)
 
-# Class: <http://purl.obolibrary.org/obo/NCBITaxon_205127> (baila)
+# Class: <http://purl.obolibrary.org/obo/NCBITaxon_205127> (<http://purl.obolibrary.org/obo/NCBITaxon_205127>)
 
 AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000117> <http://purl.obolibrary.org/obo/NCBITaxon_205127> "https://orcid.org/0000-0001-5275-8866 "^^rdfs:anyURI)
 AnnotationAssertion(Annotation(<http://purl.obolibrary.org/obo/IAO_0000412> "FDA SFL Acceptable Market Name"^^xsd:string) <http://www.geneontology.org/formats/oboInOwl#hasBroadSynonym> <http://purl.obolibrary.org/obo/NCBITaxon_205127> "goby"@en)
 AnnotationAssertion(<http://www.geneontology.org/formats/oboInOwl#hasDbXref> <http://purl.obolibrary.org/obo/NCBITaxon_205127> "ITIS:637376"^^xsd:string)
+AnnotationAssertion(<http://www.geneontology.org/formats/oboInOwl#hasExactSynonym> <http://purl.obolibrary.org/obo/NCBITaxon_205127> "baila"@en)
 AnnotationAssertion(Annotation(<http://purl.obolibrary.org/obo/IAO_0000412> "FDA SFL Common Name"^^xsd:string) <http://www.geneontology.org/formats/oboInOwl#hasExactSynonym> <http://purl.obolibrary.org/obo/NCBITaxon_205127> "tank goby"@en)
-AnnotationAssertion(rdfs:label <http://purl.obolibrary.org/obo/NCBITaxon_205127> "baila"@en)
 AnnotationAssertion(rdfs:seeAlso <http://purl.obolibrary.org/obo/NCBITaxon_205127> "https://en.wikipedia.org/wiki/Tank_goby"^^xsd:string)
 
 # Class: <http://purl.obolibrary.org/obo/NCBITaxon_205130> (<http://purl.obolibrary.org/obo/NCBITaxon_205130>)
