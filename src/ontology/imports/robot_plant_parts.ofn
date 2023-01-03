@@ -934,6 +934,7 @@ Declaration(Class(<http://purl.obolibrary.org/obo/FOODON_03301562>))
 Declaration(Class(<http://purl.obolibrary.org/obo/FOODON_03301593>))
 Declaration(Class(<http://purl.obolibrary.org/obo/FOODON_03301595>))
 Declaration(Class(<http://purl.obolibrary.org/obo/FOODON_03301607>))
+Declaration(Class(<http://purl.obolibrary.org/obo/FOODON_03301641>))
 Declaration(Class(<http://purl.obolibrary.org/obo/FOODON_03301645>))
 Declaration(Class(<http://purl.obolibrary.org/obo/FOODON_03301701>))
 Declaration(Class(<http://purl.obolibrary.org/obo/FOODON_03301721>))
@@ -5622,7 +5623,7 @@ SubClassOf(<http://purl.obolibrary.org/obo/FOODON_00003785> <http://purl.obolibr
 AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000115> <http://purl.obolibrary.org/obo/FOODON_00003786> "A rice kernel which is three times longer than it is wide."@en)
 AnnotationAssertion(<http://www.geneontology.org/formats/oboInOwl#hasExactSynonym> <http://purl.obolibrary.org/obo/FOODON_00003786> "long grain rice"@en)
 AnnotationAssertion(rdfs:label <http://purl.obolibrary.org/obo/FOODON_00003786> "long grain rice kernel"@en)
-SubClassOf(<http://purl.obolibrary.org/obo/FOODON_00003786> <http://purl.obolibrary.org/obo/FOODON_00001185>)
+SubClassOf(<http://purl.obolibrary.org/obo/FOODON_00003786> <http://purl.obolibrary.org/obo/FOODON_03301641>)
 
 # Class: <http://purl.obolibrary.org/obo/FOODON_00003787> (white rice (whole))
 
