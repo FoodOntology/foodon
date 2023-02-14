@@ -98,3 +98,12 @@ Datatype: idrange:7
     
 Datatype: rdf:PlainLiteral
     
+Datatype: idrange:8
+
+    Annotations: 
+        allocatedto: "Troy Ruemping"
+    
+    EquivalentTo: 
+        xsd:integer[> 3603000 , <= 3603999]
+    
+Datatype: rdf:PlainLiteral
