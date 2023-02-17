@@ -57,7 +57,7 @@ WHERE {
 			?class rdfs:subClassOf ?restriction.
 			?restriction owl:onProperty obo:RO_0002162. # in taxon
 			?restriction owl:someValuesFrom ?label.
-			FILTER (!isBlank(?label)).
+			FILTER (!isBlank(?label)). # FUTURE: retrieve disjunctions of taxa
 			BIND ('taxon' as ?type).
 		}
 	}
