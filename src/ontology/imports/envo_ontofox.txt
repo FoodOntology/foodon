@@ -5,24 +5,26 @@ http://purl.obolibrary.org/obo/foodon/imports/envo_import.ofn #Environment Ontol
 ENVO
 
 [Low level source term URIs]
-http://purl.obolibrary.org/obo/GO_0015979 # photosynthesis
-http://purl.obolibrary.org/obo/GO_0045333 # cellular respiration
+
+http://purl.obolibrary.org/obo/ENVO_00000020 # lake
+http://purl.obolibrary.org/obo/ENVO_00000015 # ocean
+http://purl.obolibrary.org/obo/ENVO_00000016 # sea
+http://purl.obolibrary.org/obo/ENVO_00000027 # spring
+http://purl.obolibrary.org/obo/ENVO_00000022 # river
+http://purl.obolibrary.org/obo/ENVO_00000033 # pond
 
 http://purl.obolibrary.org/obo/ENVO_00000428 # biome
-http://purl.obolibrary.org/obo/ENVO_00002030 #    aquatic 
-http://purl.obolibrary.org/obo/ENVO_00000873 #    aquatic - freshwater
-http://purl.obolibrary.org/obo/ENVO_01000252 #    aquatic - freshwater - lake
-http://purl.obolibrary.org/obo/ENVO_00000033 #    aquatic - freshwater - lake - pond
-http://purl.obolibrary.org/obo/ENVO_01000253 #    aquatic - freshwater - river
-http://purl.obolibrary.org/obo/ENVO_00000447 #    aquatic - marine 
-http://purl.obolibrary.org/obo/ENVO_01000048 #    aquatic - marine - ocean
+http://purl.obolibrary.org/obo/ENVO_00002030 #    aquatic biome
+http://purl.obolibrary.org/obo/ENVO_00000873 #    freshwater biome
+http://purl.obolibrary.org/obo/ENVO_01000252 #      freshwater lake biome
+http://purl.obolibrary.org/obo/ENVO_01000253 #      freshwater river biome
+http://purl.obolibrary.org/obo/ENVO_00000447 #    marine biome
+http://purl.obolibrary.org/obo/ENVO_01000048 #      ocean biome
+
 http://purl.obolibrary.org/obo/ENVO_00000446 #    terrestrial
 http://purl.obolibrary.org/obo/ENVO_01000219 #    terrestrial - anthropogenic terrestrial biome
-http://purl.obolibrary.org/obo/ENVO_01000248 #    terrestrial - anthropogenic - dense settlement
-http://purl.obolibrary.org/obo/ENVO_01000248 #    terrestrial - anthropogenic - dense settlement - urban
 http://purl.obolibrary.org/obo/ENVO_01000245 #    terrestrial - anthropogenic - cropland
 http://purl.obolibrary.org/obo/ENVO_01000247 #    terrestrial - anthropogenic - rangeland (rural)
-http://purl.obolibrary.org/obo/ENVO_01000246 #    terrestrial - anthropogenic - village (mixed urban)
 http://purl.obolibrary.org/obo/ENVO_01000179 #    terrestrial - desert
 http://purl.obolibrary.org/obo/ENVO_01000174 #    terrestrial - forest
 http://purl.obolibrary.org/obo/ENVO_01000177 #    terrestrial - grassland
@@ -36,77 +38,43 @@ http://purl.obolibrary.org/obo/ENVO_01000180 #    terrestrial - tundra
 http://purl.obolibrary.org/obo/ENVO_00000000 # geographic feature
 http://purl.obolibrary.org/obo/ENVO_00000063 # water body
 
-#http://purl.obolibrary.org/obo/ #    agricultural - crop
-http://purl.obolibrary.org/obo/ENVO_00003862 #    agricultural - dairy
-http://purl.obolibrary.org/obo/ENVO_00000014 # canal
-http://purl.obolibrary.org/obo/ENVO_00000078 #    agricultural - farm
+http://purl.obolibrary.org/obo/ENVO_00003862 #    dairy
+http://purl.obolibrary.org/obo/ENVO_00000078 #    farm
+http://purl.obolibrary.org/obo/ENVO_00000294 #    fish farm
+http://purl.obolibrary.org/obo/ENVO_00000295 #    fish hatchery
+http://purl.obolibrary.org/obo/ENVO_00000117 #    plantation
+http://purl.obolibrary.org/obo/ENVO_01000627 #    feedlot
+http://purl.obolibrary.org/obo/ENVO_01000626 #    drylot
+http://purl.obolibrary.org/obo/ENVO_00000266 #    pasture
+http://purl.obolibrary.org/obo/ENVO_00000519 #    agricultural terrace
 
-http://purl.obolibrary.org/obo/ENVO_00005749 #    agricultural - farm - farm soil
-http://purl.obolibrary.org/obo/ENVO_00000294 #    agricultural - fish farm
-http://purl.obolibrary.org/obo/ENVO_00000295 #    agricultural - fish hatchery
-http://purl.obolibrary.org/obo/ENVO_00000139 #    agricultural - irrigation ditch
-http://purl.obolibrary.org/obo/ENVO_00000117 #    agricultural - plantation
-http://purl.obolibrary.org/obo/ENVO_01000627 #    agricultural - feedlot
-http://purl.obolibrary.org/obo/ENVO_01000626 #    	 agricultural - drylot
-http://purl.obolibrary.org/obo/ENVO_00000266 #    agricultural - pasture
-
-#http://purl.obolibrary.org/obo/ # edit    agricultural - storage - feed
-#http://purl.obolibrary.org/obo/ # edit    agricultural - storage - manure
-http://purl.obolibrary.org/obo/ENVO_00000519 #    agricultural - terrace
-http://purl.obolibrary.org/obo/ENVO_00003040 #    animal - housing - built
-http://purl.obolibrary.org/obo/ENVO_01000921 #    animal - housing - built - closed
-http://purl.obolibrary.org/obo/ENVO_01000918 #    animal - housing - built - open
-http://purl.obolibrary.org/obo/ENVO_00002191 #    animal - litter / bedding
+http://purl.obolibrary.org/obo/ENVO_00002191 #    animal litter
 http://purl.obolibrary.org/obo/ENVO_01000922 #	  animal cage
-http://purl.obolibrary.org/obo/ENVO_00003041 #    cow shed
+http://purl.obolibrary.org/obo/ENVO_00003040 #    animal house
+includeAllChildren
 
-http://purl.obolibrary.org/obo/ENVO_01000923 #	  animal petting zoo
+# http://purl.obolibrary.org/obo/ENVO_00003074 # manufactured product
 
-http://purl.obolibrary.org/obo/ENVO_00003074 # manufactured product
-
-http://purl.obolibrary.org/obo/ENVO_00000073 #    building
-http://purl.obolibrary.org/obo/ENVO_01000925 # edit    building - abattoir or meat processing
-#http://purl.obolibrary.org/obo/ # edit    building - agricultural fair
-http://purl.obolibrary.org/obo/ENVO_00003864 #    building - bakery
-http://purl.obolibrary.org/obo/ENVO_00003885 #    building - brewery
-#http://purl.obolibrary.org/obo/edit #    building - dairy processing
-http://purl.obolibrary.org/obo/ENVO_01000927 #    building - daycare
-http://purl.obolibrary.org/obo/ENVO_01000928 #    building - fish processing
-http://purl.obolibrary.org/obo/ENVO_00003863 #    building - food processing factory
-http://purl.obolibrary.org/obo/ENVO_01000486 #    building - floor
-
-http://purl.obolibrary.org/obo/ENVO_00002222 #    building - grocery / retail / food store
-#http://purl.obolibrary.org/obo/ENVO_00002173 #    building - hospital
-http://purl.obolibrary.org/obo/ENVO_01000932 #    building - long term care facility
-#http://purl.obolibrary.org/obo/ENVO_00000469 #    building - research facility
-http://purl.obolibrary.org/obo/ENVO_01000933 #    building - residential
-http://purl.obolibrary.org/obo/ENVO_01000934 #    building - restaurant
-http://purl.obolibrary.org/obo/ENVO_01000935 #	  campground
-http://purl.obolibrary.org/obo/ENVO_01000936 # 	       dedicated campground	
-http://purl.obolibrary.org/obo/ENVO_01000937 #         impromptu campground	
-http://purl.obolibrary.org/obo/ENVO_01000938 #    hot tub / jacuzzi / spa
-http://purl.obolibrary.org/obo/ENVO_01000924 #    plumbing drain
-
-http://purl.obolibrary.org/obo/ENVO_00002006 #    water
-http://purl.obolibrary.org/obo/ENVO_01000252 #    water - lake
-http://purl.obolibrary.org/obo/ENVO_00000020 #	  water body - lentic >  lake
-http://purl.obolibrary.org/obo/ENVO_00003064 #    water - municipal (drinking water)
-http://purl.obolibrary.org/obo/ENVO_00003096 #    water - municipal (tap water)
-http://purl.obolibrary.org/obo/ENVO_01000048 #    water - ocean
-http://purl.obolibrary.org/obo/ENVO_01000253 #    water - river
-http://purl.obolibrary.org/obo/ENVO_00000022 # river
-http://purl.obolibrary.org/obo/ENVO_00000023 #    water - stream
-http://purl.obolibrary.org/obo/ENVO_01000002 #    water - well
-http://purl.obolibrary.org/obo/ENVO_00002018 #    water - sewage (contaminated with feces or urin)
-
-http://purl.obolibrary.org/obo/ENVO_00002149 # 	  sea water
-http://purl.obolibrary.org/obo/ENVO_00002011 #    fresh water
-
-http://purl.obolibrary.org/obo/ENVO_00000015 # ocean
-http://purl.obolibrary.org/obo/ENVO_00000016 # sea
-http://purl.obolibrary.org/obo/ENVO_00000027 # spring
+# http://purl.obolibrary.org/obo/ENVO_00000073 #    building
+http://purl.obolibrary.org/obo/ENVO_01000925 #    abattoir
+http://purl.obolibrary.org/obo/ENVO_00003864 #    bakery
+http://purl.obolibrary.org/obo/ENVO_00003885 #    brewery
+http://purl.obolibrary.org/obo/ENVO_01000928 #    fish processing building
+http://purl.obolibrary.org/obo/ENVO_00003863 #    food processing building
+http://purl.obolibrary.org/obo/ENVO_00002222 #    food shop
+http://purl.obolibrary.org/obo/ENVO_01000934 #    restaurant
 
 http://purl.obolibrary.org/obo/ENVO_01000277 # water ice
+http://purl.obolibrary.org/obo/ENVO_00002006 #    liquid water
+http://purl.obolibrary.org/obo/ENVO_00002149 # 	    sea water
+http://purl.obolibrary.org/obo/ENVO_00002011 #      fresh water
+includeAllChildren
+
+http://purl.obolibrary.org/obo/ENVO_00000023 #    stream
+http://purl.obolibrary.org/obo/ENVO_01000002 #    water well
+http://purl.obolibrary.org/obo/ENVO_00002018 #    sewage (contaminated with feces or urine)
+
+
 
 # ENVIRONMENTAL MATERIAL
 http://purl.obolibrary.org/obo/ENVO_00010483 # environmental material
@@ -119,38 +87,20 @@ http://purl.obolibrary.org/obo/ENVO_01000575 # wax
 http://purl.obolibrary.org/obo/ENVO_02000090 # ash
 http://purl.obolibrary.org/obo/ENVO_01000480 # glass
 
-http://purl.obolibrary.org/obo/ENVO_02000047 # animal feed
-#    http://purl.obolibrary.org/obo/ edit #    animal - feed (blood meal)
-# http://purl.obolibrary.org/obo/AGRO_00000086 blood meal
-# Foodon already has blood meal though!!!!
 http://purl.obolibrary.org/obo/ENVO_02000055 # plant feed
 http://purl.obolibrary.org/obo/ENVO_02000054 #     bone meal
-#    http://purl.obolibrary.org/obo/ edit #    animal - feed (fish meal)
-#    http://purl.obolibrary.org/obo/ edit #    animal - feed (other)
-#    http://purl.obolibrary.org/obo/ edit (not really ingredient) #    animal - feed (pet food)
 http://purl.obolibrary.org/obo/ENVO_00003030 #	silage 
 includeAllChildren
 
-#    http://purl.obolibrary.org/obo/     #    animal - fluid, carcass
-# http://purl.obolibrary.org/obo/UBERON_0006314 # animal - body fluid (not necessarily carcass though)
 http://purl.obolibrary.org/obo/ENVO_00003031 #    animal manure
-http://purl.obolibrary.org/obo/ENVO_01001116 #    animal manure - bovine (dairy liquid)
-http://purl.obolibrary.org/obo/ENVO_01001119 #    animal manure - composted
-http://purl.obolibrary.org/obo/ENVO_00003884 #    animal manure - farmyard
-http://purl.obolibrary.org/obo/ENVO_00003032 #    animal manure - fresh
-http://purl.obolibrary.org/obo/ENVO_00003859 #    animal manure - horse
-http://purl.obolibrary.org/obo/ENVO_00003860 #    animal manure - porcine (pig slurry)
-#    http://purl.obolibrary.org/obo/    edit #    animal manure - poultry
-#    http://purl.obolibrary.org/obo/    edit #    animal manure - poultry (heat treated)
-http://purl.obolibrary.org/obo/ENVO_00003927 #    animal manure - stable
-#    http://purl.obolibrary.org/obo/    edit #    animal manure product (commercial/retail, heat treated) 
+includeAllChildren
+
 http://purl.obolibrary.org/obo/ENVO_0010001 #    anthropogenic environmental material
-http://purl.obolibrary.org/obo/ENVO_00002008 #    dust
-http://purl.obolibrary.org/obo/ENVO_01000018 #    gravel
 http://purl.obolibrary.org/obo/ENVO_01000001 #    mud
 http://purl.obolibrary.org/obo/ENVO_01000155 #    organic material
 http://purl.obolibrary.org/obo/ENVO_01000017 #    sand
 http://purl.obolibrary.org/obo/ENVO_00001998 #    soil
+http://purl.obolibrary.org/obo/ENVO_00005749 #    farm soil
 http://purl.obolibrary.org/obo/ENVO_00002259 #    soil - agricultural
 http://purl.obolibrary.org/obo/ENVO_00005747 #    soil - compost
 http://purl.obolibrary.org/obo/ENVO_00002263 #    soil - garden
@@ -176,17 +126,9 @@ http://purl.obolibrary.org/obo/ENVO_00000292 #  terrain - watershed
 http://purl.obolibrary.org/obo/ENVO_00000043 #    terrain - wetland
 http://purl.obolibrary.org/obo/ENVO_00000109 #    terrain - woodland
 
-http://purl.obolibrary.org/obo/ENVO_00000009 # national geopolitical entity
-http://purl.obolibrary.org/obo/ENVO_00000124 # supranational geopolitical entity
-
 [Top level source term URIs and target direct superclass URIs]
-# don't reference BFO terms or else triggers duplicate annotations on them.
 http://purl.obolibrary.org/obo/BFO_0000001 # thing
-http://purl.obolibrary.org/obo/BFO_0000024 # fiat object part
-#http://purl.obolibrary.org/obo/ENVO_01000254 # environmental system
-#http://purl.obolibrary.org/obo/ENVO_00010483 # environmental material
-#http://purl.obolibrary.org/obo/ENVO_00002297 # environmental feature
-#http://purl.obolibrary.org/obo/ENVO_01000408 # environmental zone (a site)
+#http://purl.obolibrary.org/obo/BFO_0000024 # fiat object part
 
 [Source term retrieval setting]
 includeAllIntermediates

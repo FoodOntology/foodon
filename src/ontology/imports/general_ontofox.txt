@@ -539,7 +539,7 @@ http://purl.obolibrary.org/obo/PO_0030115 # raceme inflorescence
 http://purl.obolibrary.org/obo/PO_0025597 # ear infructescence
 
 http://purl.obolibrary.org/obo/PO_0025538 # plant sap
-http://purl.obolibrary.org/obo/PO_0009049 # inflorescence # ISSUE, this is getting CARO_0000000 parent
+http://purl.obolibrary.org/obo/PO_0009049 # inflorescence
 http://purl.obolibrary.org/obo/PO_0006342 # infructescence
 
 # This section exists just to organize classes that would otherwise just
@@ -609,8 +609,6 @@ http://purl.obolibrary.org/obo/PO_0008016 # vegetative shoot apical meristem
 [Top level source term URIs and target direct superclass URIs]
 http://purl.obolibrary.org/obo/PO_0009012 # plant structure development stage
 http://purl.obolibrary.org/obo/PO_0025131 # plant anatomical entity
-http://purl.obolibrary.org/obo/PO_0009049 # inflorescence # ISSUE, this is getting CARO_0000000 parent, so stopping path here
-http://purl.obolibrary.org/obo/PO_0006342 # infructescence # DITTO
 
 http://purl.obolibrary.org/obo/PO_0025131
 [Source term retrieval setting]
@@ -739,23 +737,39 @@ http://purl.obolibrary.org/obo/IAO_0100001 # replaced by
 
 ###########################################
 
-
 [Source ontology]
 UBERON
 
 [Low level source term URIs]
+
+http://purl.obolibrary.org/obo/UBERON_0010000 # multicellular anatomical structure
+http://purl.obolibrary.org/obo/UBERON_0000062 #   organ
+http://purl.obolibrary.org/obo/UBERON_0002097 #     skin of body
+http://purl.obolibrary.org/obo/UBERON_0000064 #   organ part
+http://purl.obolibrary.org/obo/UBERON_0000014 #     zone of skin
+
 http://purl.obolibrary.org/obo/UBERON_0000978 # leg
 http://purl.obolibrary.org/obo/UBERON_0001474 # bone element
 http://purl.obolibrary.org/obo/UBERON_0006611 # exoskeleton / shell
-http://purl.obolibrary.org/obo/UBERON_0000468 # multicellular organism
+
+http://purl.obolibrary.org/obo/UBERON_0010000 # multicellular anatomical structure 
+http://purl.obolibrary.org/obo/UBERON_0000468 #   multicellular organism
 includeAllChildren
 
 http://purl.obolibrary.org/obo/UBERON_0001630 # muscle organ
 http://purl.obolibrary.org/obo/UBERON_0002385 # muscle tissue
 
-http://purl.obolibrary.org/obo/UBERON_0002472 # stylopod
+http://purl.obolibrary.org/obo/UBERON_0010758 # subdivision of organism along appendicular axis
+http://purl.obolibrary.org/obo/UBERON_0006058 #   multi-limb segment region
+http://purl.obolibrary.org/obo/UBERON_0010538 #   paired limb/fin segment
+http://purl.obolibrary.org/obo/UBERON_0002529 #     limb segment
+http://purl.obolibrary.org/obo/UBERON_0008784 #       lower limb segment
+http://purl.obolibrary.org/obo/UBERON_0000978 #         leg
+http://purl.obolibrary.org/obo/UBERON_0008785 #       upper limb segment
+http://purl.obolibrary.org/obo/UBERON_0001460 #         arm
+http://purl.obolibrary.org/obo/UBERON_0002472 #       stylopod
 includeAllChildren
-http://purl.obolibrary.org/obo/UBERON_0002471 # zeugopod
+http://purl.obolibrary.org/obo/UBERON_0002471 #       zeugopod
 includeAllChildren
 
 http://purl.obolibrary.org/obo/UBERON_0006314 # body fluid
@@ -809,10 +823,11 @@ http://purl.obolibrary.org/obo/UBERON_0001988 # feces
 
 
 [Top level source term URIs and target direct superclass URIs]
-
+http://purl.obolibrary.org/obo/UBERON_0000104 # life cycle
+http://purl.obolibrary.org/obo/UBERON_0001062 # anatomical entity
 
 [Source term retrieval setting]
-includeNoIntermediates
+includeAllIntermediates
 
 [Source annotation URIs]
 http://www.w3.org/2000/01/rdf-schema#label

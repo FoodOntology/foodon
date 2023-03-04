@@ -11,20 +11,13 @@ Ontology(<http://purl.obolibrary.org/obo/foodon/imports/envo_import.ofn>
 
 Declaration(Class(obo:BFO_0000001))
 Declaration(Class(obo:BFO_0000002))
-Declaration(Class(obo:BFO_0000003))
 Declaration(Class(obo:BFO_0000004))
-Declaration(Class(obo:BFO_0000015))
 Declaration(Class(obo:BFO_0000024))
 Declaration(Class(obo:BFO_0000029))
 Declaration(Class(obo:BFO_0000040))
 Declaration(Class(obo:BFO_0000141))
 Declaration(Class(obo:ENVO_00000000))
 Declaration(Class(obo:ENVO_00000002))
-Declaration(Class(obo:ENVO_00000004))
-Declaration(Class(obo:ENVO_00000009))
-Declaration(Class(obo:ENVO_00000011))
-Declaration(Class(obo:ENVO_00000012))
-Declaration(Class(obo:ENVO_00000014))
 Declaration(Class(obo:ENVO_00000015))
 Declaration(Class(obo:ENVO_00000016))
 Declaration(Class(obo:ENVO_00000020))
@@ -34,7 +27,6 @@ Declaration(Class(obo:ENVO_00000026))
 Declaration(Class(obo:ENVO_00000027))
 Declaration(Class(obo:ENVO_00000029))
 Declaration(Class(obo:ENVO_00000033))
-Declaration(Class(obo:ENVO_00000037))
 Declaration(Class(obo:ENVO_00000043))
 Declaration(Class(obo:ENVO_00000062))
 Declaration(Class(obo:ENVO_00000063))
@@ -51,18 +43,12 @@ Declaration(Class(obo:ENVO_00000111))
 Declaration(Class(obo:ENVO_00000112))
 Declaration(Class(obo:ENVO_00000114))
 Declaration(Class(obo:ENVO_00000117))
-Declaration(Class(obo:ENVO_00000121))
-Declaration(Class(obo:ENVO_00000123))
-Declaration(Class(obo:ENVO_00000124))
-Declaration(Class(obo:ENVO_00000139))
 Declaration(Class(obo:ENVO_00000191))
 Declaration(Class(obo:ENVO_00000266))
 Declaration(Class(obo:ENVO_00000292))
 Declaration(Class(obo:ENVO_00000294))
 Declaration(Class(obo:ENVO_00000295))
 Declaration(Class(obo:ENVO_00000300))
-Declaration(Class(obo:ENVO_00000309))
-Declaration(Class(obo:ENVO_00000395))
 Declaration(Class(obo:ENVO_00000428))
 Declaration(Class(obo:ENVO_00000446))
 Declaration(Class(obo:ENVO_00000447))
@@ -75,17 +61,18 @@ Declaration(Class(obo:ENVO_00001999))
 Declaration(Class(obo:ENVO_00002000))
 Declaration(Class(obo:ENVO_00002001))
 Declaration(Class(obo:ENVO_00002006))
-Declaration(Class(obo:ENVO_00002008))
 Declaration(Class(obo:ENVO_00002010))
 Declaration(Class(obo:ENVO_00002011))
 Declaration(Class(obo:ENVO_00002018))
 Declaration(Class(obo:ENVO_00002030))
 Declaration(Class(obo:ENVO_00002040))
 Declaration(Class(obo:ENVO_00002149))
+Declaration(Class(obo:ENVO_00002158))
 Declaration(Class(obo:ENVO_00002186))
 Declaration(Class(obo:ENVO_00002191))
 Declaration(Class(obo:ENVO_00002221))
 Declaration(Class(obo:ENVO_00002222))
+Declaration(Class(obo:ENVO_00002228))
 Declaration(Class(obo:ENVO_00002258))
 Declaration(Class(obo:ENVO_00002259))
 Declaration(Class(obo:ENVO_00002263))
@@ -95,6 +82,7 @@ Declaration(Class(obo:ENVO_00003031))
 Declaration(Class(obo:ENVO_00003032))
 Declaration(Class(obo:ENVO_00003040))
 Declaration(Class(obo:ENVO_00003041))
+Declaration(Class(obo:ENVO_00003042))
 Declaration(Class(obo:ENVO_00003064))
 Declaration(Class(obo:ENVO_00003071))
 Declaration(Class(obo:ENVO_00003074))
@@ -114,15 +102,11 @@ Declaration(Class(obo:ENVO_00003978))
 Declaration(Class(obo:ENVO_00005747))
 Declaration(Class(obo:ENVO_00005749))
 Declaration(Class(obo:ENVO_00010483))
-Declaration(Class(obo:ENVO_00010504))
-Declaration(Class(obo:ENVO_00010625))
 Declaration(Class(obo:ENVO_0010001))
 Declaration(Class(obo:ENVO_0010003))
 Declaration(Class(obo:ENVO_01000001))
 Declaration(Class(obo:ENVO_01000002))
 Declaration(Class(obo:ENVO_01000017))
-Declaration(Class(obo:ENVO_01000018))
-Declaration(Class(obo:ENVO_01000044))
 Declaration(Class(obo:ENVO_01000048))
 Declaration(Class(obo:ENVO_01000060))
 Declaration(Class(obo:ENVO_01000155))
@@ -135,23 +119,19 @@ Declaration(Class(obo:ENVO_01000180))
 Declaration(Class(obo:ENVO_01000181))
 Declaration(Class(obo:ENVO_01000219))
 Declaration(Class(obo:ENVO_01000245))
-Declaration(Class(obo:ENVO_01000246))
 Declaration(Class(obo:ENVO_01000247))
-Declaration(Class(obo:ENVO_01000248))
 Declaration(Class(obo:ENVO_01000252))
 Declaration(Class(obo:ENVO_01000253))
 Declaration(Class(obo:ENVO_01000254))
 Declaration(Class(obo:ENVO_01000277))
-Declaration(Class(obo:ENVO_01000281))
 Declaration(Class(obo:ENVO_01000320))
 Declaration(Class(obo:ENVO_01000352))
 Declaration(Class(obo:ENVO_01000404))
 Declaration(Class(obo:ENVO_01000408))
 Declaration(Class(obo:ENVO_01000417))
-Declaration(Class(obo:ENVO_01000418))
 Declaration(Class(obo:ENVO_01000480))
-Declaration(Class(obo:ENVO_01000486))
 Declaration(Class(obo:ENVO_01000575))
+Declaration(Class(obo:ENVO_01000600))
 Declaration(Class(obo:ENVO_01000617))
 Declaration(Class(obo:ENVO_01000618))
 Declaration(Class(obo:ENVO_01000625))
@@ -160,28 +140,20 @@ Declaration(Class(obo:ENVO_01000627))
 Declaration(Class(obo:ENVO_01000658))
 Declaration(Class(obo:ENVO_01000685))
 Declaration(Class(obo:ENVO_01000752))
-Declaration(Class(obo:ENVO_01000781))
 Declaration(Class(obo:ENVO_01000813))
 Declaration(Class(obo:ENVO_01000814))
 Declaration(Class(obo:ENVO_01000815))
 Declaration(Class(obo:ENVO_01000918))
 Declaration(Class(obo:ENVO_01000921))
 Declaration(Class(obo:ENVO_01000922))
-Declaration(Class(obo:ENVO_01000923))
-Declaration(Class(obo:ENVO_01000924))
 Declaration(Class(obo:ENVO_01000925))
-Declaration(Class(obo:ENVO_01000927))
 Declaration(Class(obo:ENVO_01000928))
-Declaration(Class(obo:ENVO_01000932))
-Declaration(Class(obo:ENVO_01000933))
 Declaration(Class(obo:ENVO_01000934))
-Declaration(Class(obo:ENVO_01000935))
-Declaration(Class(obo:ENVO_01000936))
-Declaration(Class(obo:ENVO_01000937))
-Declaration(Class(obo:ENVO_01000938))
 Declaration(Class(obo:ENVO_01001069))
 Declaration(Class(obo:ENVO_01001110))
 Declaration(Class(obo:ENVO_01001116))
+Declaration(Class(obo:ENVO_01001117))
+Declaration(Class(obo:ENVO_01001118))
 Declaration(Class(obo:ENVO_01001119))
 Declaration(Class(obo:ENVO_01001125))
 Declaration(Class(obo:ENVO_01001199))
@@ -189,17 +161,12 @@ Declaration(Class(obo:ENVO_01001206))
 Declaration(Class(obo:ENVO_01001222))
 Declaration(Class(obo:ENVO_01001243))
 Declaration(Class(obo:ENVO_01001244))
-Declaration(Class(obo:ENVO_01001275))
 Declaration(Class(obo:ENVO_01001305))
 Declaration(Class(obo:ENVO_01001308))
-Declaration(Class(obo:ENVO_01001311))
 Declaration(Class(obo:ENVO_01001319))
 Declaration(Class(obo:ENVO_01001476))
 Declaration(Class(obo:ENVO_01001477))
 Declaration(Class(obo:ENVO_01001479))
-Declaration(Class(obo:ENVO_01001480))
-Declaration(Class(obo:ENVO_01001483))
-Declaration(Class(obo:ENVO_01001684))
 Declaration(Class(obo:ENVO_01001780))
 Declaration(Class(obo:ENVO_01001784))
 Declaration(Class(obo:ENVO_01001787))
@@ -208,34 +175,37 @@ Declaration(Class(obo:ENVO_01001789))
 Declaration(Class(obo:ENVO_01001790))
 Declaration(Class(obo:ENVO_01001813))
 Declaration(Class(obo:ENVO_01001873))
+Declaration(Class(obo:ENVO_01001884))
+Declaration(Class(obo:ENVO_01001886))
 Declaration(Class(obo:ENVO_02000001))
 Declaration(Class(obo:ENVO_02000054))
 Declaration(Class(obo:ENVO_02000055))
+Declaration(Class(obo:ENVO_02000084))
 Declaration(Class(obo:ENVO_02000090))
 Declaration(Class(obo:ENVO_02000140))
+Declaration(Class(obo:ENVO_03501252))
+Declaration(Class(obo:ENVO_03501258))
+Declaration(Class(obo:ENVO_03501286))
+Declaration(Class(obo:ENVO_03501287))
+Declaration(Class(obo:ENVO_03501300))
+Declaration(Class(obo:ENVO_03501352))
+Declaration(Class(obo:ENVO_03600081))
 Declaration(Class(obo:FOODON_00002403))
-Declaration(Class(obo:FOODON_00004325))
-Declaration(Class(obo:GO_0006091))
-Declaration(Class(obo:GO_0008150))
-Declaration(Class(obo:GO_0008152))
-Declaration(Class(obo:GO_0009987))
-Declaration(Class(obo:GO_0015979))
-Declaration(Class(obo:GO_0015980))
-Declaration(Class(obo:GO_0044237))
-Declaration(Class(obo:GO_0045333))
 Declaration(Class(obo:RO_0002577))
 Declaration(AnnotationProperty(obo:IAO_0000115))
 Declaration(AnnotationProperty(obo:IAO_0000118))
 Declaration(AnnotationProperty(obo:IAO_0000119))
 Declaration(AnnotationProperty(obo:IAO_0000412))
+Declaration(AnnotationProperty(obo:IAO_0100001))
 Declaration(AnnotationProperty(rdfs:label))
+Declaration(AnnotationProperty(owl:deprecated))
 ############################
 #   Annotation Properties
 ############################
 
 # Annotation Property: obo:IAO_0000115 (definition)
 
-AnnotationAssertion(rdfs:label obo:IAO_0000115 "definition"^^xsd:string)
+AnnotationAssertion(rdfs:label obo:IAO_0000115 "definition")
 
 # Annotation Property: obo:IAO_0000118 (alternative term)
 
@@ -248,6 +218,10 @@ AnnotationAssertion(rdfs:label obo:IAO_0000119 "definition source")
 # Annotation Property: obo:IAO_0000412 (imported from)
 
 AnnotationAssertion(rdfs:label obo:IAO_0000412 "imported from"@en)
+
+# Annotation Property: obo:IAO_0100001 (term replaced by)
+
+AnnotationAssertion(rdfs:label obo:IAO_0100001 "term replaced by")
 
 
 
@@ -267,13 +241,6 @@ AnnotationAssertion(obo:IAO_0000412 obo:BFO_0000002 obo:envo.owl)
 AnnotationAssertion(rdfs:label obo:BFO_0000002 "continuant"@en)
 SubClassOf(obo:BFO_0000002 obo:BFO_0000001)
 
-# Class: obo:BFO_0000003 (occurrent)
-
-AnnotationAssertion(obo:IAO_0000115 obo:BFO_0000003 "An entity that has temporal parts and that happens, unfolds or develops through time."@en)
-AnnotationAssertion(obo:IAO_0000412 obo:BFO_0000003 obo:envo.owl)
-AnnotationAssertion(rdfs:label obo:BFO_0000003 "occurrent"@en)
-SubClassOf(obo:BFO_0000003 obo:BFO_0000001)
-
 # Class: obo:BFO_0000004 (independent continuant)
 
 AnnotationAssertion(obo:IAO_0000115 obo:BFO_0000004 "A continuant that is a bearer of quality and realizable entity entities, in which other entities inhere and which itself cannot inhere in anything."@en)
@@ -282,19 +249,12 @@ AnnotationAssertion(obo:IAO_0000412 obo:BFO_0000004 obo:envo.owl)
 AnnotationAssertion(rdfs:label obo:BFO_0000004 "independent continuant"@en)
 SubClassOf(obo:BFO_0000004 obo:BFO_0000002)
 
-# Class: obo:BFO_0000015 (process)
-
-AnnotationAssertion(obo:IAO_0000115 obo:BFO_0000015 "An occurrent that has temporal proper parts and for some time t, p s-depends_on some material entity at t."@en)
-AnnotationAssertion(obo:IAO_0000115 obo:BFO_0000015 "p is a process = Def. p is an occurrent that has temporal proper parts and for some time t, p s-depends_on some material entity at t. (axiom label in BFO2 Reference: [083-003])"@en)
-AnnotationAssertion(obo:IAO_0000412 obo:BFO_0000015 obo:envo.owl)
-AnnotationAssertion(rdfs:label obo:BFO_0000015 "process"@en)
-SubClassOf(obo:BFO_0000015 obo:BFO_0000003)
-
 # Class: obo:BFO_0000024 (fiat object part)
 
 AnnotationAssertion(obo:IAO_0000412 obo:BFO_0000024 obo:envo.owl)
 AnnotationAssertion(rdfs:label obo:BFO_0000024 "fiat object"@en)
 AnnotationAssertion(rdfs:label obo:BFO_0000024 "fiat object part"@en)
+SubClassOf(obo:BFO_0000024 obo:BFO_0000040)
 
 # Class: obo:BFO_0000029 (site)
 
@@ -306,6 +266,7 @@ SubClassOf(obo:BFO_0000029 obo:BFO_0000141)
 
 AnnotationAssertion(obo:IAO_0000115 obo:BFO_0000040 "An independent continuant that is spatially extended whose identity is independent of that of other entities and can be maintained through time."@en)
 AnnotationAssertion(obo:IAO_0000412 obo:BFO_0000040 obo:envo.owl)
+AnnotationAssertion(rdfs:label obo:BFO_0000040 "material entity")
 AnnotationAssertion(rdfs:label obo:BFO_0000040 "material entity"@en)
 SubClassOf(obo:BFO_0000040 obo:BFO_0000004)
 
@@ -317,449 +278,359 @@ SubClassOf(obo:BFO_0000141 obo:BFO_0000004)
 
 # Class: obo:ENVO_00000000 (geographic feature)
 
+AnnotationAssertion(obo:IAO_0000115 obo:ENVO_00000000 "An astrononmical body part which delimited by physical discontinuities with its surroundings."@en)
 AnnotationAssertion(obo:IAO_0000412 obo:ENVO_00000000 obo:envo.owl)
-AnnotationAssertion(rdfs:label obo:ENVO_00000000 "geographic feature"^^xsd:string)
+AnnotationAssertion(rdfs:label obo:ENVO_00000000 "geographic feature")
 SubClassOf(obo:ENVO_00000000 obo:ENVO_01000813)
 
 # Class: obo:ENVO_00000002 (anthropogenic geographic feature)
 
-AnnotationAssertion(obo:IAO_0000115 obo:ENVO_00000002 "An anthropogenic geographic feature is a geographic feature resulting from the influence of human beings on nature."^^xsd:string)
+AnnotationAssertion(obo:IAO_0000115 obo:ENVO_00000002 "An anthropogenic geographic feature is a geographic feature resulting from the influence of human beings on nature.")
 AnnotationAssertion(obo:IAO_0000412 obo:ENVO_00000002 obo:envo.owl)
-AnnotationAssertion(rdfs:label obo:ENVO_00000002 "anthropogenic geographic feature"^^xsd:string)
+AnnotationAssertion(rdfs:label obo:ENVO_00000002 "anthropogenic geographic feature")
 SubClassOf(obo:ENVO_00000002 obo:ENVO_00000000)
-
-# Class: obo:ENVO_00000004 (administrative region)
-
-AnnotationAssertion(obo:IAO_0000412 obo:ENVO_00000004 obo:envo.owl)
-AnnotationAssertion(rdfs:label obo:ENVO_00000004 "administrative region"^^xsd:string)
-SubClassOf(obo:ENVO_00000004 obo:BFO_0000029)
-
-# Class: obo:ENVO_00000009 (national geopolitical entity)
-
-AnnotationAssertion(obo:IAO_0000115 obo:ENVO_00000009 "A political association with effective dominion over a geographic area."^^xsd:string)
-AnnotationAssertion(obo:IAO_0000412 obo:ENVO_00000009 obo:envo.owl)
-AnnotationAssertion(rdfs:label obo:ENVO_00000009 "national geopolitical entity"^^xsd:string)
-SubClassOf(obo:ENVO_00000009 obo:ENVO_00000123)
-
-# Class: obo:ENVO_00000011 (garden)
-
-AnnotationAssertion(obo:IAO_0000115 obo:ENVO_00000011 "An enclosure for displaying selected plant or animal life."^^xsd:string)
-AnnotationAssertion(obo:IAO_0000412 obo:ENVO_00000011 obo:envo.owl)
-AnnotationAssertion(rdfs:label obo:ENVO_00000011 "garden"^^xsd:string)
-SubClassOf(obo:ENVO_00000011 obo:ENVO_00000002)
-
-# Class: obo:ENVO_00000012 (hydrographic feature)
-
-AnnotationAssertion(obo:IAO_0000115 obo:ENVO_00000012 "A geographical feature associated with water."^^xsd:string)
-AnnotationAssertion(obo:IAO_0000412 obo:ENVO_00000012 obo:envo.owl)
-AnnotationAssertion(rdfs:label obo:ENVO_00000012 "hydrographic feature"^^xsd:string)
-SubClassOf(obo:ENVO_00000012 obo:ENVO_00000000)
-
-# Class: obo:ENVO_00000014 (canal)
-
-AnnotationAssertion(obo:IAO_0000115 obo:ENVO_00000014 "Artificial watercourse with no flow or a controlled flow used for navigation, drainage or irrigation."^^xsd:string)
-AnnotationAssertion(obo:IAO_0000412 obo:ENVO_00000014 obo:envo.owl)
-AnnotationAssertion(rdfs:label obo:ENVO_00000014 "canal")
-SubClassOf(obo:ENVO_00000014 obo:ENVO_00000029)
 
 # Class: obo:ENVO_00000015 (ocean)
 
-AnnotationAssertion(obo:IAO_0000115 obo:ENVO_00000015 "A marine water body which is constitutes the majority of an astronomical body's hydrosphere."^^xsd:string)
+AnnotationAssertion(obo:IAO_0000115 obo:ENVO_00000015 "A marine water body which is constitutes the majority of an astronomical body's hydrosphere.")
 AnnotationAssertion(obo:IAO_0000412 obo:ENVO_00000015 obo:envo.owl)
-AnnotationAssertion(rdfs:label obo:ENVO_00000015 "ocean"^^xsd:string)
+AnnotationAssertion(rdfs:label obo:ENVO_00000015 "ocean")
 SubClassOf(obo:ENVO_00000015 obo:ENVO_00001999)
 SubClassOf(obo:ENVO_00000015 obo:ENVO_01001319)
 
 # Class: obo:ENVO_00000016 (sea)
 
-AnnotationAssertion(obo:IAO_0000115 obo:ENVO_00000016 "A large expanse of saline water usually connected with an ocean."^^xsd:string)
+AnnotationAssertion(obo:IAO_0000115 obo:ENVO_00000016 "A large expanse of saline water usually connected with an ocean.")
 AnnotationAssertion(obo:IAO_0000412 obo:ENVO_00000016 obo:envo.owl)
-AnnotationAssertion(rdfs:label obo:ENVO_00000016 "sea"^^xsd:string)
+AnnotationAssertion(rdfs:label obo:ENVO_00000016 "sea")
 SubClassOf(obo:ENVO_00000016 obo:ENVO_00001999)
 SubClassOf(obo:ENVO_00000016 obo:ENVO_01001319)
 
 # Class: obo:ENVO_00000020 (lake)
 
-AnnotationAssertion(obo:IAO_0000115 obo:ENVO_00000020 "A body of water or other liquid of considerable size contained in a depression on a landmass."^^xsd:string)
+AnnotationAssertion(obo:IAO_0000115 obo:ENVO_00000020 "A body of water or other liquid of considerable size contained in a depression on a landmass.")
 AnnotationAssertion(obo:IAO_0000412 obo:ENVO_00000020 obo:envo.owl)
-AnnotationAssertion(rdfs:label obo:ENVO_00000020 "lake"^^xsd:string)
+AnnotationAssertion(rdfs:label obo:ENVO_00000020 "lake")
 SubClassOf(obo:ENVO_00000020 obo:ENVO_01000617)
 
 # Class: obo:ENVO_00000022 (river)
 
-AnnotationAssertion(obo:IAO_0000115 obo:ENVO_00000022 "A stream which, through permanent or seasonal flow processes, moves from elevated land towards lower elevations through a definite channel and empties either into a sea, lake, or another river or ends on land as bed seepage and evapotranspiration exceed water supply."^^xsd:string)
+AnnotationAssertion(obo:IAO_0000115 obo:ENVO_00000022 "A stream which, through permanent or seasonal flow processes, moves from elevated land towards lower elevations through a definite channel and empties either into a sea, lake, or another river or ends on land as bed seepage and evapotranspiration exceed water supply.")
 AnnotationAssertion(obo:IAO_0000412 obo:ENVO_00000022 obo:envo.owl)
-AnnotationAssertion(rdfs:label obo:ENVO_00000022 "river"^^xsd:string)
+AnnotationAssertion(rdfs:label obo:ENVO_00000022 "river")
 SubClassOf(obo:ENVO_00000022 obo:ENVO_00000023)
 
 # Class: obo:ENVO_00000023 (stream)
 
-AnnotationAssertion(obo:IAO_0000115 obo:ENVO_00000023 "A watercourse which is linear and flows across the solid portion of a planetary surface."^^xsd:string)
+AnnotationAssertion(obo:IAO_0000115 obo:ENVO_00000023 "A watercourse which is linear and flows across the solid portion of a planetary surface.")
 AnnotationAssertion(obo:IAO_0000412 obo:ENVO_00000023 obo:envo.owl)
-AnnotationAssertion(rdfs:label obo:ENVO_00000023 "stream"^^xsd:string)
+AnnotationAssertion(rdfs:label obo:ENVO_00000023 "stream")
 SubClassOf(obo:ENVO_00000023 obo:ENVO_00000029)
 
 # Class: obo:ENVO_00000026 (well)
 
-AnnotationAssertion(obo:IAO_0000115 obo:ENVO_00000026 "A cylindrical hole, pit, or tunnel drilled or dug down to a depth from which water, oil, or gas can be pumped or brought to the surface."^^xsd:string)
+AnnotationAssertion(obo:IAO_0000115 obo:ENVO_00000026 "A cylindrical hole, pit, or tunnel drilled or dug down to a depth from which water, oil, or gas can be pumped or brought to the surface.")
 AnnotationAssertion(obo:IAO_0000412 obo:ENVO_00000026 obo:envo.owl)
-AnnotationAssertion(rdfs:label obo:ENVO_00000026 "well"^^xsd:string)
+AnnotationAssertion(rdfs:label obo:ENVO_00000026 "well")
 SubClassOf(obo:ENVO_00000026 obo:ENVO_00000002)
 
 # Class: obo:ENVO_00000027 (spring)
 
-AnnotationAssertion(obo:IAO_0000115 obo:ENVO_00000027 "A point where groundwater or steam flows out of the ground, and is thus where the aquifer surface meets the ground surface or where there is a fissure."^^xsd:string)
+AnnotationAssertion(obo:IAO_0000115 obo:ENVO_00000027 "A surface landform which provides an egress for groundwater or steam to flow out of the ground."@en)
 AnnotationAssertion(obo:IAO_0000412 obo:ENVO_00000027 obo:envo.owl)
-AnnotationAssertion(rdfs:label obo:ENVO_00000027 "spring"^^xsd:string)
-SubClassOf(obo:ENVO_00000027 obo:ENVO_01001479)
-SubClassOf(obo:ENVO_00000027 obo:ENVO_01001784)
+AnnotationAssertion(rdfs:label obo:ENVO_00000027 "spring")
+SubClassOf(obo:ENVO_00000027 obo:ENVO_01001884)
 
 # Class: obo:ENVO_00000029 (watercourse)
 
-AnnotationAssertion(obo:IAO_0000115 obo:ENVO_00000029 "A flowing body of water."^^xsd:string)
+AnnotationAssertion(obo:IAO_0000115 obo:ENVO_00000029 "A flowing body of water.")
 AnnotationAssertion(obo:IAO_0000412 obo:ENVO_00000029 obo:envo.owl)
-AnnotationAssertion(rdfs:label obo:ENVO_00000029 "watercourse"^^xsd:string)
+AnnotationAssertion(rdfs:label obo:ENVO_00000029 "watercourse")
 SubClassOf(obo:ENVO_00000029 obo:ENVO_01000618)
 
 # Class: obo:ENVO_00000033 (pond)
 
-AnnotationAssertion(obo:IAO_0000115 obo:ENVO_00000033 "A body of water, usually of smaller size than a lake."^^xsd:string)
+AnnotationAssertion(obo:IAO_0000115 obo:ENVO_00000033 "A body of water, usually of smaller size than a lake.")
 AnnotationAssertion(obo:IAO_0000412 obo:ENVO_00000033 obo:envo.owl)
-AnnotationAssertion(rdfs:label obo:ENVO_00000033 "pond"^^xsd:string)
+AnnotationAssertion(rdfs:label obo:ENVO_00000033 "pond")
 SubClassOf(obo:ENVO_00000033 obo:ENVO_01000617)
-
-# Class: obo:ENVO_00000037 (ditch)
-
-AnnotationAssertion(obo:IAO_0000115 obo:ENVO_00000037 "A small, human-made channel which has been dug for draining or irrigating the land."^^xsd:string)
-AnnotationAssertion(obo:IAO_0000412 obo:ENVO_00000037 obo:envo.owl)
-AnnotationAssertion(rdfs:label obo:ENVO_00000037 "ditch"^^xsd:string)
-SubClassOf(obo:ENVO_00000037 obo:ENVO_00000121)
 
 # Class: obo:ENVO_00000043 (wetland area)
 
-AnnotationAssertion(obo:IAO_0000115 obo:ENVO_00000043 "An vegetated area which overlaps a wetland ecosystem."^^xsd:string)
+AnnotationAssertion(obo:IAO_0000115 obo:ENVO_00000043 "An vegetated area which overlaps a wetland ecosystem.")
 AnnotationAssertion(obo:IAO_0000412 obo:ENVO_00000043 obo:envo.owl)
-AnnotationAssertion(rdfs:label obo:ENVO_00000043 "wetland area"^^xsd:string)
+AnnotationAssertion(rdfs:label obo:ENVO_00000043 "wetland area")
 SubClassOf(obo:ENVO_00000043 obo:ENVO_01001305)
 
 # Class: obo:ENVO_00000062 (populated place)
 
-AnnotationAssertion(obo:IAO_0000115 obo:ENVO_00000062 "Place or area with clustered or scattered buildings and a permanent human population."^^xsd:string)
+AnnotationAssertion(obo:IAO_0000115 obo:ENVO_00000062 "Place or area with clustered or scattered buildings and a permanent human population.")
 AnnotationAssertion(obo:IAO_0000412 obo:ENVO_00000062 obo:envo.owl)
-AnnotationAssertion(rdfs:label obo:ENVO_00000062 "populated place"^^xsd:string)
+AnnotationAssertion(rdfs:label obo:ENVO_00000062 "populated place")
 SubClassOf(obo:ENVO_00000062 obo:ENVO_01000408)
 
 # Class: obo:ENVO_00000063 (water body)
 
-AnnotationAssertion(obo:IAO_0000115 obo:ENVO_00000063 "An accumulation of water of varying size."^^xsd:string)
+AnnotationAssertion(obo:IAO_0000115 obo:ENVO_00000063 "An accumulation of water of varying size.")
 AnnotationAssertion(obo:IAO_0000412 obo:ENVO_00000063 obo:envo.owl)
-AnnotationAssertion(rdfs:label obo:ENVO_00000063 "water body"^^xsd:string)
+AnnotationAssertion(rdfs:label obo:ENVO_00000063 "water body")
 SubClassOf(obo:ENVO_00000063 obo:ENVO_01000685)
 
 # Class: obo:ENVO_00000070 (human construction)
 
-AnnotationAssertion(obo:IAO_0000115 obo:ENVO_00000070 "A construction that has been assembled by deliberate human effort."^^xsd:string)
+AnnotationAssertion(obo:IAO_0000115 obo:ENVO_00000070 "A construction that has been assembled by deliberate human effort.")
 AnnotationAssertion(obo:IAO_0000412 obo:ENVO_00000070 obo:envo.owl)
-AnnotationAssertion(rdfs:label obo:ENVO_00000070 "human construction"^^xsd:string)
+AnnotationAssertion(rdfs:label obo:ENVO_00000070 "human construction")
 SubClassOf(obo:ENVO_00000070 obo:ENVO_01001813)
 
 # Class: obo:ENVO_00000073 (building)
 
-AnnotationAssertion(obo:IAO_0000115 obo:ENVO_00000073 "A permanent walled and roofed construction."^^xsd:string)
+AnnotationAssertion(obo:IAO_0000115 obo:ENVO_00000073 "A permanent walled and roofed construction.")
 AnnotationAssertion(obo:IAO_0000412 obo:ENVO_00000073 obo:envo.owl)
-AnnotationAssertion(rdfs:label obo:ENVO_00000073 "building"^^xsd:string)
+AnnotationAssertion(rdfs:label obo:ENVO_00000073 "building")
 SubClassOf(obo:ENVO_00000073 obo:ENVO_00000070)
 
 # Class: obo:ENVO_00000077 (agricultural ecosystem)
 
 AnnotationAssertion(obo:IAO_0000412 obo:ENVO_00000077 obo:envo.owl)
-AnnotationAssertion(rdfs:label obo:ENVO_00000077 "agricultural ecosystem"^^xsd:string)
+AnnotationAssertion(rdfs:label obo:ENVO_00000077 "agricultural ecosystem")
 SubClassOf(obo:ENVO_00000077 obo:ENVO_01001110)
 
 # Class: obo:ENVO_00000078 (farm)
 
-AnnotationAssertion(obo:IAO_0000115 obo:ENVO_00000078 "An area of land which is used for the cultivation of crops or grazing of livestock, including any agricultural constructions therein."^^xsd:string)
+AnnotationAssertion(obo:IAO_0000115 obo:ENVO_00000078 "An area of land which is used for the cultivation of crops or grazing of livestock, including any agricultural constructions therein.")
 AnnotationAssertion(obo:IAO_0000412 obo:ENVO_00000078 obo:envo.owl)
-AnnotationAssertion(rdfs:label obo:ENVO_00000078 "farm"^^xsd:string)
+AnnotationAssertion(rdfs:label obo:ENVO_00000078 "farm")
 SubClassOf(obo:ENVO_00000078 obo:ENVO_00000077)
 
 # Class: obo:ENVO_00000086 (plain)
 
-AnnotationAssertion(obo:IAO_0000115 obo:ENVO_00000086 "A region of general uniform slope, comparatively level, and of considerable extent."^^xsd:string)
+AnnotationAssertion(obo:IAO_0000115 obo:ENVO_00000086 "A region of general uniform slope, comparatively level, and of considerable extent.")
 AnnotationAssertion(obo:IAO_0000412 obo:ENVO_00000086 obo:envo.owl)
-AnnotationAssertion(rdfs:label obo:ENVO_00000086 "plain"^^xsd:string)
-SubClassOf(obo:ENVO_00000086 obo:ENVO_00000191)
+AnnotationAssertion(rdfs:label obo:ENVO_00000086 "plain")
+SubClassOf(obo:ENVO_00000086 obo:ENVO_01001884)
 
 # Class: obo:ENVO_00000091 (beach)
 
-AnnotationAssertion(obo:IAO_0000115 obo:ENVO_00000091 "A landform consisting of loose rock particles such as sand, gravel, shingle, pebbles, cobble, or even shell fragments along the shoreline of a body of water."^^xsd:string)
+AnnotationAssertion(obo:IAO_0000115 obo:ENVO_00000091 "A landform consisting of loose rock particles such as sand, gravel, shingle, pebbles, cobble, or even shell fragments along the shoreline of a body of water.")
 AnnotationAssertion(obo:IAO_0000412 obo:ENVO_00000091 obo:envo.owl)
-AnnotationAssertion(rdfs:label obo:ENVO_00000091 "beach"^^xsd:string)
-SubClassOf(obo:ENVO_00000091 obo:ENVO_00000191)
+AnnotationAssertion(rdfs:label obo:ENVO_00000091 "beach")
+SubClassOf(obo:ENVO_00000091 obo:ENVO_01001884)
 
 # Class: obo:ENVO_00000097 (desert area)
 
-AnnotationAssertion(obo:IAO_0000115 obo:ENVO_00000097 "A region rendered barren or partially barren by environmental extremes, especially by low rainfall."^^xsd:string)
+AnnotationAssertion(obo:IAO_0000115 obo:ENVO_00000097 "A region rendered barren or partially barren by environmental extremes, especially by low rainfall.")
 AnnotationAssertion(obo:IAO_0000412 obo:ENVO_00000097 obo:envo.owl)
-AnnotationAssertion(rdfs:label obo:ENVO_00000097 "desert area"^^xsd:string)
+AnnotationAssertion(rdfs:label obo:ENVO_00000097 "desert area")
 SubClassOf(obo:ENVO_00000097 obo:ENVO_01000752)
 
 # Class: obo:ENVO_00000106 (grassland area)
 
-AnnotationAssertion(obo:IAO_0000115 obo:ENVO_00000106 "An area in which grasses (Graminae) are a significant component of the vegetation."^^xsd:string)
+AnnotationAssertion(obo:IAO_0000115 obo:ENVO_00000106 "An area in which grasses (Graminae) are a significant component of the vegetation.")
 AnnotationAssertion(obo:IAO_0000412 obo:ENVO_00000106 obo:envo.owl)
-AnnotationAssertion(rdfs:label obo:ENVO_00000106 "grassland area"^^xsd:string)
+AnnotationAssertion(rdfs:label obo:ENVO_00000106 "grassland area")
 SubClassOf(obo:ENVO_00000106 obo:ENVO_01001305)
 
 # Class: obo:ENVO_00000109 (woodland area)
 
-AnnotationAssertion(obo:IAO_0000115 obo:ENVO_00000109 "Land having a cover of trees, shrubs, or both."^^xsd:string)
+AnnotationAssertion(obo:IAO_0000115 obo:ENVO_00000109 "Land having a cover of trees, shrubs, or both.")
 AnnotationAssertion(obo:IAO_0000412 obo:ENVO_00000109 obo:envo.owl)
-AnnotationAssertion(rdfs:label obo:ENVO_00000109 "woodland area"^^xsd:string)
+AnnotationAssertion(rdfs:label obo:ENVO_00000109 "woodland area")
 SubClassOf(obo:ENVO_00000109 obo:ENVO_01001305)
 
 # Class: obo:ENVO_00000111 (forested area)
 
-AnnotationAssertion(obo:IAO_0000115 obo:ENVO_00000111 "An area with a high density of trees. A small forest may be called a wood."^^xsd:string)
+AnnotationAssertion(obo:IAO_0000115 obo:ENVO_00000111 "An area with a high density of trees. A small forest may be called a wood.")
 AnnotationAssertion(obo:IAO_0000412 obo:ENVO_00000111 obo:envo.owl)
-AnnotationAssertion(rdfs:label obo:ENVO_00000111 "forested area"^^xsd:string)
+AnnotationAssertion(rdfs:label obo:ENVO_00000111 "forested area")
 SubClassOf(obo:ENVO_00000111 obo:ENVO_00000109)
 
 # Class: obo:ENVO_00000112 (area of tundra)
 
-AnnotationAssertion(obo:IAO_0000115 obo:ENVO_00000112 "A vegetated area which is part of a tundra ecosystem."^^xsd:string)
+AnnotationAssertion(obo:IAO_0000115 obo:ENVO_00000112 "A vegetated area which is part of a tundra ecosystem.")
 AnnotationAssertion(obo:IAO_0000412 obo:ENVO_00000112 obo:envo.owl)
-AnnotationAssertion(rdfs:label obo:ENVO_00000112 "area of tundra"^^xsd:string)
+AnnotationAssertion(rdfs:label obo:ENVO_00000112 "area of tundra")
 SubClassOf(obo:ENVO_00000112 obo:ENVO_01001305)
 
 # Class: obo:ENVO_00000114 (agricultural field)
 
-AnnotationAssertion(obo:IAO_0000115 obo:ENVO_00000114 "A field which is located on land and used for agricultural purposes, such as the grazing of livestock or the cultivation of crops."^^xsd:string)
+AnnotationAssertion(obo:IAO_0000115 obo:ENVO_00000114 "A field which is located on land and used for agricultural purposes, such as the grazing of livestock or the cultivation of crops.")
 AnnotationAssertion(obo:IAO_0000412 obo:ENVO_00000114 obo:envo.owl)
-AnnotationAssertion(rdfs:label obo:ENVO_00000114 "agricultural field"^^xsd:string)
+AnnotationAssertion(rdfs:label obo:ENVO_00000114 "agricultural field")
 SubClassOf(obo:ENVO_00000114 obo:ENVO_01000352)
 
 # Class: obo:ENVO_00000117 (plantation)
 
-AnnotationAssertion(obo:IAO_0000115 obo:ENVO_00000117 "An intentional planting of a crop, on a large scale, usually for uses other than cereal production or pasture. The term is currently most often used for plantings of trees and shrubs. The term tends also to be used for plantings maintained on economic bases other than that of subsistence farming."^^xsd:string)
+AnnotationAssertion(obo:IAO_0000115 obo:ENVO_00000117 "An intentional planting of a crop, on a large scale, usually for uses other than cereal production or pasture. The term is currently most often used for plantings of trees and shrubs. The term tends also to be used for plantings maintained on economic bases other than that of subsistence farming.")
 AnnotationAssertion(obo:IAO_0000412 obo:ENVO_00000117 obo:envo.owl)
-AnnotationAssertion(rdfs:label obo:ENVO_00000117 "plantation"^^xsd:string)
+AnnotationAssertion(rdfs:label obo:ENVO_00000117 "plantation")
 SubClassOf(obo:ENVO_00000117 obo:ENVO_00000078)
-
-# Class: obo:ENVO_00000121 (artificial channel)
-
-AnnotationAssertion(obo:IAO_0000412 obo:ENVO_00000121 obo:envo.owl)
-AnnotationAssertion(rdfs:label obo:ENVO_00000121 "artificial channel"^^xsd:string)
-SubClassOf(obo:ENVO_00000121 obo:ENVO_00000395)
-
-# Class: obo:ENVO_00000123 (political entity)
-
-AnnotationAssertion(obo:IAO_0000115 obo:ENVO_00000123 "A geographical region whose affairs and population are administered by an authority."^^xsd:string)
-AnnotationAssertion(obo:IAO_0000412 obo:ENVO_00000123 obo:envo.owl)
-AnnotationAssertion(rdfs:label obo:ENVO_00000123 "political entity"^^xsd:string)
-SubClassOf(obo:ENVO_00000123 obo:ENVO_00000004)
-
-# Class: obo:ENVO_00000124 (supranational geopolitical entity)
-
-AnnotationAssertion(obo:IAO_0000115 obo:ENVO_00000124 "A political entitity established by more than one state and with at least some influence over the affairs of its member states."^^xsd:string)
-AnnotationAssertion(obo:IAO_0000412 obo:ENVO_00000124 obo:envo.owl)
-AnnotationAssertion(rdfs:label obo:ENVO_00000124 "supranational geopolitical entity"^^xsd:string)
-SubClassOf(obo:ENVO_00000124 obo:ENVO_00000123)
-
-# Class: obo:ENVO_00000139 (irrigation ditch)
-
-AnnotationAssertion(obo:IAO_0000115 obo:ENVO_00000139 "A ditch that supplies water to surrounding land."^^xsd:string)
-AnnotationAssertion(obo:IAO_0000412 obo:ENVO_00000139 obo:envo.owl)
-AnnotationAssertion(rdfs:label obo:ENVO_00000139 "irrigation ditch"^^xsd:string)
-SubClassOf(obo:ENVO_00000139 obo:ENVO_00000037)
 
 # Class: obo:ENVO_00000191 (solid astronomical body part)
 
 AnnotationAssertion(obo:IAO_0000115 obo:ENVO_00000191 "A part of an astronomical body which is primarily composed of a continuous volume of solid material, shaped by one or more environmental processes.")
 AnnotationAssertion(obo:IAO_0000412 obo:ENVO_00000191 obo:envo.owl)
-AnnotationAssertion(rdfs:label obo:ENVO_00000191 "solid astronomical body part"^^xsd:string)
-SubClassOf(obo:ENVO_00000191 obo:ENVO_01000813)
+AnnotationAssertion(rdfs:label obo:ENVO_00000191 "solid astronomical body part")
+SubClassOf(obo:ENVO_00000191 obo:ENVO_01001784)
 
 # Class: obo:ENVO_00000266 (pasture)
 
-AnnotationAssertion(obo:IAO_0000115 obo:ENVO_00000266 "A grassland ecosystem which is used for grazing of ungulate livestock as part of a farm or ranch."^^xsd:string)
+AnnotationAssertion(obo:IAO_0000115 obo:ENVO_00000266 "A grassland ecosystem which is used for grazing of ungulate livestock as part of a farm or ranch.")
 AnnotationAssertion(obo:IAO_0000412 obo:ENVO_00000266 obo:envo.owl)
-AnnotationAssertion(rdfs:label obo:ENVO_00000266 "pasture"^^xsd:string)
+AnnotationAssertion(rdfs:label obo:ENVO_00000266 "pasture")
 SubClassOf(obo:ENVO_00000266 obo:ENVO_00000077)
 SubClassOf(obo:ENVO_00000266 obo:ENVO_01001206)
 
 # Class: obo:ENVO_00000292 (watershed)
 
-AnnotationAssertion(obo:IAO_0000115 obo:ENVO_00000292 "The separation between neighbouring drainage basins (catchments). In hilly country, the divide lies along topographical peaks and ridges, but in flat country or on a high plateau (especially where the ground is marshy) the divide may be invisible - just a more or less notional line on the ground on either side of which falling raindrops will start a journey to different rivers, and even to different sides of a country or continent."^^xsd:string)
+AnnotationAssertion(obo:IAO_0000115 obo:ENVO_00000292 "The separation between neighbouring drainage basins (catchments). In hilly country, the divide lies along topographical peaks and ridges, but in flat country or on a high plateau (especially where the ground is marshy) the divide may be invisible - just a more or less notional line on the ground on either side of which falling raindrops will start a journey to different rivers, and even to different sides of a country or continent.")
 AnnotationAssertion(obo:IAO_0000412 obo:ENVO_00000292 obo:envo.owl)
-AnnotationAssertion(rdfs:label obo:ENVO_00000292 "watershed"^^xsd:string)
+AnnotationAssertion(rdfs:label obo:ENVO_00000292 "watershed")
 SubClassOf(obo:ENVO_00000292 obo:ENVO_00000191)
 
 # Class: obo:ENVO_00000294 (fish farm)
 
-AnnotationAssertion(obo:IAO_0000115 obo:ENVO_00000294 "A facility in which fish are raised commercially in tanks or enclosures, usually for food."^^xsd:string)
+AnnotationAssertion(obo:IAO_0000115 obo:ENVO_00000294 "A facility in which fish are raised commercially in tanks or enclosures, usually for food.")
 AnnotationAssertion(obo:IAO_0000412 obo:ENVO_00000294 obo:envo.owl)
-AnnotationAssertion(rdfs:label obo:ENVO_00000294 "fish farm"^^xsd:string)
+AnnotationAssertion(rdfs:label obo:ENVO_00000294 "fish farm")
 SubClassOf(obo:ENVO_00000294 obo:ENVO_00000077)
 
 # Class: obo:ENVO_00000295 (fish hatchery)
 
-AnnotationAssertion(obo:IAO_0000115 obo:ENVO_00000295 "A hatchery in which the eggs of fish are hatched under artificial conditions."^^xsd:string)
+AnnotationAssertion(obo:IAO_0000115 obo:ENVO_00000295 "A hatchery in which the eggs of fish are hatched under artificial conditions.")
 AnnotationAssertion(obo:IAO_0000412 obo:ENVO_00000295 obo:envo.owl)
-AnnotationAssertion(rdfs:label obo:ENVO_00000295 "fish hatchery"^^xsd:string)
+AnnotationAssertion(rdfs:label obo:ENVO_00000295 "fish hatchery")
 SubClassOf(obo:ENVO_00000295 obo:ENVO_01001873)
 
 # Class: obo:ENVO_00000300 (scrubland area)
 
-AnnotationAssertion(obo:IAO_0000115 obo:ENVO_00000300 "Area covered with low-growing or stunted perennial vegetation and usually not mixed with trees."^^xsd:string)
+AnnotationAssertion(obo:IAO_0000115 obo:ENVO_00000300 "Area covered with low-growing or stunted perennial vegetation and usually not mixed with trees.")
 AnnotationAssertion(obo:IAO_0000412 obo:ENVO_00000300 obo:envo.owl)
-AnnotationAssertion(rdfs:label obo:ENVO_00000300 "scrubland area"^^xsd:string)
+AnnotationAssertion(rdfs:label obo:ENVO_00000300 "scrubland area")
 SubClassOf(obo:ENVO_00000300 obo:ENVO_01001305)
-
-# Class: obo:ENVO_00000309 (depression)
-
-AnnotationAssertion(obo:IAO_0000115 obo:ENVO_00000309 "A landform sunken or depressed below the surrounding area."^^xsd:string)
-AnnotationAssertion(obo:IAO_0000412 obo:ENVO_00000309 obo:envo.owl)
-AnnotationAssertion(rdfs:label obo:ENVO_00000309 "depression"^^xsd:string)
-SubClassOf(obo:ENVO_00000309 obo:ENVO_00000191)
-
-# Class: obo:ENVO_00000395 (channel of a watercourse)
-
-AnnotationAssertion(obo:IAO_0000115 obo:ENVO_00000395 "The physical confine of a river, slough or ocean strait consisting of a bed and banks."^^xsd:string)
-AnnotationAssertion(obo:IAO_0000412 obo:ENVO_00000395 obo:envo.owl)
-AnnotationAssertion(rdfs:label obo:ENVO_00000395 "channel of a watercourse"^^xsd:string)
-SubClassOf(obo:ENVO_00000395 obo:ENVO_00000309)
 
 # Class: obo:ENVO_00000428 (biome)
 
-AnnotationAssertion(obo:IAO_0000115 obo:ENVO_00000428 "A biome is an ecosystem to which resident ecological communities have evolved adaptations."^^xsd:string)
+AnnotationAssertion(obo:IAO_0000115 obo:ENVO_00000428 "A biome is an ecosystem to which resident ecological communities have evolved adaptations.")
 AnnotationAssertion(obo:IAO_0000412 obo:ENVO_00000428 obo:envo.owl)
 AnnotationAssertion(rdfs:label obo:ENVO_00000428 "biome")
 SubClassOf(obo:ENVO_00000428 obo:ENVO_01001110)
 
 # Class: obo:ENVO_00000446 (terrestrial biome)
 
-AnnotationAssertion(obo:IAO_0000115 obo:ENVO_00000446 "A biome which is  primarily or completely situated on a landmass."^^xsd:string)
+AnnotationAssertion(obo:IAO_0000115 obo:ENVO_00000446 "A biome which is  primarily or completely situated on a landmass.")
 AnnotationAssertion(obo:IAO_0000412 obo:ENVO_00000446 obo:envo.owl)
-AnnotationAssertion(rdfs:label obo:ENVO_00000446 "terrestrial biome"^^xsd:string)
+AnnotationAssertion(rdfs:label obo:ENVO_00000446 "terrestrial biome")
 SubClassOf(obo:ENVO_00000446 obo:ENVO_00000428)
 
 # Class: obo:ENVO_00000447 (marine biome)
 
-AnnotationAssertion(obo:IAO_0000115 obo:ENVO_00000447 "An aquatic biome which is determined by a marine water body."^^xsd:string)
+AnnotationAssertion(obo:IAO_0000115 obo:ENVO_00000447 "An aquatic biome which is determined by a marine water body.")
 AnnotationAssertion(obo:IAO_0000412 obo:ENVO_00000447 obo:envo.owl)
-AnnotationAssertion(rdfs:label obo:ENVO_00000447 "marine biome"^^xsd:string)
+AnnotationAssertion(rdfs:label obo:ENVO_00000447 "marine biome")
 SubClassOf(obo:ENVO_00000447 obo:ENVO_00002030)
 SubClassOf(obo:ENVO_00000447 obo:ENVO_01001788)
 
 # Class: obo:ENVO_00000508 (terrace)
 
-AnnotationAssertion(obo:IAO_0000115 obo:ENVO_00000508 "A step-like feature between higher and lower ground: a relatively flat or gently inclined shelf of earth, backed and fronted by steep slopes or manmade detaining walls."^^xsd:string)
+AnnotationAssertion(obo:IAO_0000115 obo:ENVO_00000508 "A step-like feature between higher and lower ground: a relatively flat or gently inclined shelf of earth, backed and fronted by steep slopes or manmade detaining walls.")
 AnnotationAssertion(obo:IAO_0000412 obo:ENVO_00000508 obo:envo.owl)
-AnnotationAssertion(rdfs:label obo:ENVO_00000508 "terrace"^^xsd:string)
-SubClassOf(obo:ENVO_00000508 obo:ENVO_00000191)
+AnnotationAssertion(rdfs:label obo:ENVO_00000508 "terrace")
+SubClassOf(obo:ENVO_00000508 obo:ENVO_01001884)
 
 # Class: obo:ENVO_00000519 (agricultural terrace)
 
+AnnotationAssertion(obo:IAO_0000115 obo:ENVO_00000519 "A terrace which is used for agricultural activities."@en)
 AnnotationAssertion(obo:IAO_0000412 obo:ENVO_00000519 obo:envo.owl)
-AnnotationAssertion(rdfs:label obo:ENVO_00000519 "agricultural terrace"^^xsd:string)
+AnnotationAssertion(rdfs:label obo:ENVO_00000519 "agricultural terrace")
 SubClassOf(obo:ENVO_00000519 obo:ENVO_00000077)
 SubClassOf(obo:ENVO_00000519 obo:ENVO_00000508)
 
 # Class: obo:ENVO_00000856 (city)
 
-AnnotationAssertion(obo:IAO_0000115 obo:ENVO_00000856 "Incorporated populated place."^^xsd:string)
+AnnotationAssertion(obo:IAO_0000115 obo:ENVO_00000856 "Incorporated populated place.")
 AnnotationAssertion(obo:IAO_0000412 obo:ENVO_00000856 obo:envo.owl)
-AnnotationAssertion(rdfs:label obo:ENVO_00000856 "city"^^xsd:string)
+AnnotationAssertion(rdfs:label obo:ENVO_00000856 "city")
 SubClassOf(obo:ENVO_00000856 obo:ENVO_01000658)
 
 # Class: obo:ENVO_00000873 (freshwater biome)
 
-AnnotationAssertion(obo:IAO_0000115 obo:ENVO_00000873 "An aquatic biome which is determined by a body of freshwater."^^xsd:string)
+AnnotationAssertion(obo:IAO_0000115 obo:ENVO_00000873 "An aquatic biome which is determined by a body of freshwater.")
 AnnotationAssertion(obo:IAO_0000412 obo:ENVO_00000873 obo:envo.owl)
-AnnotationAssertion(rdfs:label obo:ENVO_00000873 "freshwater biome"^^xsd:string)
+AnnotationAssertion(rdfs:label obo:ENVO_00000873 "freshwater biome")
 SubClassOf(obo:ENVO_00000873 obo:ENVO_00002030)
 SubClassOf(obo:ENVO_00000873 obo:ENVO_01001789)
 
 # Class: obo:ENVO_00001998 (soil)
 
-AnnotationAssertion(obo:IAO_0000115 obo:ENVO_00001998 "Soil is an environmental material which is primarily composed of minerals, varying proportions of sand, silt, and clay, organic material such as humus, gases, liquids, and a broad range of resident micro- and macroorganisms."^^xsd:string)
+AnnotationAssertion(obo:IAO_0000115 obo:ENVO_00001998 "An environmental material which is primarily composed of minerals, varying proportions of sand, silt, and clay, organic material such as humus, interstitial gases, liquids, and a broad range of resident micro- and macroorganisms."@en)
 AnnotationAssertion(obo:IAO_0000412 obo:ENVO_00001998 obo:envo.owl)
-AnnotationAssertion(rdfs:label obo:ENVO_00001998 "soil"^^xsd:string)
+AnnotationAssertion(rdfs:label obo:ENVO_00001998 "soil")
 SubClassOf(obo:ENVO_00001998 obo:ENVO_00010483)
 
 # Class: obo:ENVO_00001999 (marine water body)
 
-AnnotationAssertion(obo:IAO_0000115 obo:ENVO_00001999 "A significant accumulation of water which is part of a marine biome."^^xsd:string)
+AnnotationAssertion(obo:IAO_0000115 obo:ENVO_00001999 "A significant accumulation of water which is part of a marine biome.")
 AnnotationAssertion(obo:IAO_0000412 obo:ENVO_00001999 obo:envo.owl)
-AnnotationAssertion(rdfs:label obo:ENVO_00001999 "marine water body"^^xsd:string)
-SubClassOf(obo:ENVO_00001999 obo:ENVO_01000044)
+AnnotationAssertion(rdfs:label obo:ENVO_00001999 "marine water body")
 SubClassOf(obo:ENVO_00001999 obo:ENVO_01000617)
 SubClassOf(obo:ENVO_00001999 obo:ENVO_01001308)
 
 # Class: obo:ENVO_00002000 (slope)
 
-AnnotationAssertion(obo:IAO_0000115 obo:ENVO_00002000 "A solid astronomical body part which is part of the planetary surface between the peak of an elevation or the bottom of a depression and  relatively flat surrounding land."^^xsd:string)
+AnnotationAssertion(obo:IAO_0000115 obo:ENVO_00002000 "A solid astronomical body part which is part of the planetary surface between the peak of an elevation or the bottom of a depression and relatively flat surrounding land.")
 AnnotationAssertion(obo:IAO_0000412 obo:ENVO_00002000 obo:envo.owl)
-AnnotationAssertion(rdfs:label obo:ENVO_00002000 "slope"^^xsd:string)
-SubClassOf(obo:ENVO_00002000 obo:ENVO_00000191)
+AnnotationAssertion(rdfs:label obo:ENVO_00002000 "slope")
+SubClassOf(obo:ENVO_00002000 obo:ENVO_01001886)
 
 # Class: obo:ENVO_00002001 (waste water)
 
-AnnotationAssertion(obo:IAO_0000115 obo:ENVO_00002001 "Water that has been adversely affected in quality by anthropogenic influence."^^xsd:string)
+AnnotationAssertion(obo:IAO_0000115 obo:ENVO_00002001 "Water that has been adversely affected in quality by anthropogenic influence.")
 AnnotationAssertion(obo:IAO_0000412 obo:ENVO_00002001 obo:envo.owl)
-AnnotationAssertion(rdfs:label obo:ENVO_00002001 "waste water"^^xsd:string)
+AnnotationAssertion(rdfs:label obo:ENVO_00002001 "waste water")
 SubClassOf(obo:ENVO_00002001 obo:ENVO_00002186)
 SubClassOf(obo:ENVO_00002001 obo:ENVO_00002264)
 
 # Class: obo:ENVO_00002006 (liquid water)
 
-AnnotationAssertion(obo:IAO_0000115 obo:ENVO_00002006 "An environmental material primarily composed of dihydrogen oxide in its liquid form."^^xsd:string)
+AnnotationAssertion(obo:IAO_0000115 obo:ENVO_00002006 "An environmental material primarily composed of dihydrogen oxide in its liquid form.")
 AnnotationAssertion(obo:IAO_0000412 obo:ENVO_00002006 obo:envo.owl)
-AnnotationAssertion(rdfs:label obo:ENVO_00002006 "liquid water"^^xsd:string)
+AnnotationAssertion(rdfs:label obo:ENVO_00002006 "liquid water")
 SubClassOf(obo:ENVO_00002006 obo:ENVO_01000815)
-
-# Class: obo:ENVO_00002008 (dust)
-
-AnnotationAssertion(obo:IAO_0000115 obo:ENVO_00002008 "Minute solid particles with diameters less than 500 micrometers. Occurs in and may be deposited from, the atmosphere."^^xsd:string)
-AnnotationAssertion(obo:IAO_0000412 obo:ENVO_00002008 obo:envo.owl)
-AnnotationAssertion(rdfs:label obo:ENVO_00002008 "dust"^^xsd:string)
-SubClassOf(obo:ENVO_00002008 obo:ENVO_01000060)
-SubClassOf(obo:ENVO_00002008 obo:ENVO_01000814)
 
 # Class: obo:ENVO_00002010 (saline water)
 
 AnnotationAssertion(obo:IAO_0000115 obo:ENVO_00002010 "Water which contains a significant concentration of dissolved salts.")
 AnnotationAssertion(obo:IAO_0000412 obo:ENVO_00002010 obo:envo.owl)
-AnnotationAssertion(rdfs:label obo:ENVO_00002010 "saline water"^^xsd:string)
+AnnotationAssertion(rdfs:label obo:ENVO_00002010 "saline water")
 SubClassOf(obo:ENVO_00002010 obo:ENVO_00002006)
 
 # Class: obo:ENVO_00002011 (fresh water)
 
 AnnotationAssertion(obo:IAO_0000115 obo:ENVO_00002011 "Water which has a low concentration of dissolved solutes, particularly that of sodium chloride.")
 AnnotationAssertion(obo:IAO_0000412 obo:ENVO_00002011 obo:envo.owl)
-AnnotationAssertion(rdfs:label obo:ENVO_00002011 "fresh water"^^xsd:string)
+AnnotationAssertion(rdfs:label obo:ENVO_00002011 "fresh water")
 SubClassOf(obo:ENVO_00002011 obo:ENVO_00002006)
 
 # Class: obo:ENVO_00002018 (sewage)
 
-AnnotationAssertion(obo:IAO_0000115 obo:ENVO_00002018 "Wastewater that is contaminated with feces or urine,"^^xsd:string)
+AnnotationAssertion(obo:IAO_0000115 obo:ENVO_00002018 "Wastewater that is contaminated with feces or urine,")
 AnnotationAssertion(obo:IAO_0000412 obo:ENVO_00002018 obo:envo.owl)
-AnnotationAssertion(rdfs:label obo:ENVO_00002018 "sewage"^^xsd:string)
+AnnotationAssertion(rdfs:label obo:ENVO_00002018 "sewage")
 SubClassOf(obo:ENVO_00002018 obo:ENVO_00002001)
 
 # Class: obo:ENVO_00002030 (aquatic biome)
 
 AnnotationAssertion(obo:IAO_0000115 obo:ENVO_00002030 "A biome which is determined by a water body and which has ecological climax communities adapted to life in or on water.")
 AnnotationAssertion(obo:IAO_0000412 obo:ENVO_00002030 obo:envo.owl)
-AnnotationAssertion(rdfs:label obo:ENVO_00002030 "aquatic biome"^^xsd:string)
+AnnotationAssertion(rdfs:label obo:ENVO_00002030 "aquatic biome")
 SubClassOf(obo:ENVO_00002030 obo:ENVO_00000428)
 SubClassOf(obo:ENVO_00002030 obo:ENVO_01001787)
 
 # Class: obo:ENVO_00002040 (wood)
 
 AnnotationAssertion(obo:IAO_0000412 obo:ENVO_00002040 obo:envo.owl)
-AnnotationAssertion(rdfs:label obo:ENVO_00002040 "wood"^^xsd:string)
+AnnotationAssertion(rdfs:label obo:ENVO_00002040 "wood")
 SubClassOf(obo:ENVO_00002040 obo:ENVO_01000155)
 SubClassOf(obo:ENVO_00002040 obo:ENVO_01000814)
 
@@ -767,466 +638,432 @@ SubClassOf(obo:ENVO_00002040 obo:ENVO_01000814)
 
 AnnotationAssertion(obo:IAO_0000115 obo:ENVO_00002149 "Water which has physicochemical properties that have been determined by the processes occuring in a sea or ocean.")
 AnnotationAssertion(obo:IAO_0000412 obo:ENVO_00002149 obo:envo.owl)
-AnnotationAssertion(rdfs:label obo:ENVO_00002149 "sea water"^^xsd:string)
+AnnotationAssertion(rdfs:label obo:ENVO_00002149 "sea water")
 SubClassOf(obo:ENVO_00002149 obo:ENVO_00002010)
+
+# Class: obo:ENVO_00002158 (ditch water)
+
+AnnotationAssertion(obo:IAO_0000412 obo:ENVO_00002158 obo:envo.owl)
+AnnotationAssertion(rdfs:label obo:ENVO_00002158 "ditch water")
+SubClassOf(obo:ENVO_00002158 obo:ENVO_00002011)
 
 # Class: obo:ENVO_00002186 (contaminated water)
 
 AnnotationAssertion(obo:IAO_0000412 obo:ENVO_00002186 obo:envo.owl)
-AnnotationAssertion(rdfs:label obo:ENVO_00002186 "contaminated water"^^xsd:string)
+AnnotationAssertion(rdfs:label obo:ENVO_00002186 "contaminated water")
 SubClassOf(obo:ENVO_00002186 obo:ENVO_00002006)
 
 # Class: obo:ENVO_00002191 (animal litter)
 
-AnnotationAssertion(obo:IAO_0000115 obo:ENVO_00002191 "Straw or other material strewn in an animal's enclosure (e.g. a stable) for it to sleep on and to absorb its faeces and urine."^^xsd:string)
+AnnotationAssertion(obo:IAO_0000115 obo:ENVO_00002191 "Straw or other material strewn in an animal's enclosure (e.g. a stable) for it to sleep on and to absorb its faeces and urine.")
 AnnotationAssertion(obo:IAO_0000412 obo:ENVO_00002191 obo:envo.owl)
-AnnotationAssertion(rdfs:label obo:ENVO_00002191 "animal litter"^^xsd:string)
+AnnotationAssertion(rdfs:label obo:ENVO_00002191 "animal litter")
 SubClassOf(obo:ENVO_00002191 obo:ENVO_00010483)
 
 # Class: obo:ENVO_00002221 (shop)
 
 AnnotationAssertion(obo:IAO_0000115 obo:ENVO_00002221 "A building in which a business presents a selection of goods and offers to trade or sell them to customers for money or other goods.")
 AnnotationAssertion(obo:IAO_0000412 obo:ENVO_00002221 obo:envo.owl)
-AnnotationAssertion(rdfs:label obo:ENVO_00002221 "shop"^^xsd:string)
+AnnotationAssertion(rdfs:label obo:ENVO_00002221 "shop")
 SubClassOf(obo:ENVO_00002221 obo:ENVO_01001222)
 
 # Class: obo:ENVO_00002222 (food shop)
 
 AnnotationAssertion(obo:IAO_0000115 obo:ENVO_00002222 "A shop in which a business offers food products for sale or trade.")
 AnnotationAssertion(obo:IAO_0000412 obo:ENVO_00002222 obo:envo.owl)
-AnnotationAssertion(rdfs:label obo:ENVO_00002222 "food shop"^^xsd:string)
+AnnotationAssertion(rdfs:label obo:ENVO_00002222 "food shop")
 SubClassOf(obo:ENVO_00002222 obo:ENVO_00002221)
+
+# Class: obo:ENVO_00002228 (pond water)
+
+AnnotationAssertion(obo:IAO_0000412 obo:ENVO_00002228 obo:envo.owl)
+AnnotationAssertion(rdfs:label obo:ENVO_00002228 "pond water")
+SubClassOf(obo:ENVO_00002228 obo:ENVO_00002011)
 
 # Class: obo:ENVO_00002258 (loam)
 
-AnnotationAssertion(obo:IAO_0000115 obo:ENVO_00002258 "A soil composed of sand, silt, and clay in relatively even concentration (about 40-40-20% concentration respectively)."^^xsd:string)
+AnnotationAssertion(obo:IAO_0000115 obo:ENVO_00002258 "A soil which is composed of approximately equal proportions of sand and silt, with a smaller proportion of clay."@en)
 AnnotationAssertion(obo:IAO_0000412 obo:ENVO_00002258 obo:envo.owl)
-AnnotationAssertion(rdfs:label obo:ENVO_00002258 "loam"^^xsd:string)
+AnnotationAssertion(rdfs:label obo:ENVO_00002258 "loam")
 SubClassOf(obo:ENVO_00002258 obo:ENVO_00001998)
 
 # Class: obo:ENVO_00002259 (agricultural soil)
 
+AnnotationAssertion(obo:IAO_0000115 obo:ENVO_00002259 "Soil which is part of an ecosystem used for agricultural activities."@en)
 AnnotationAssertion(obo:IAO_0000412 obo:ENVO_00002259 obo:envo.owl)
-AnnotationAssertion(rdfs:label obo:ENVO_00002259 "agricultural soil"^^xsd:string)
+AnnotationAssertion(rdfs:label obo:ENVO_00002259 "agricultural soil")
 SubClassOf(obo:ENVO_00002259 obo:ENVO_00001998)
 
 # Class: obo:ENVO_00002263 (garden soil)
 
 AnnotationAssertion(obo:IAO_0000115 obo:ENVO_00002263 "A portion of soil which is found in a garden.")
 AnnotationAssertion(obo:IAO_0000412 obo:ENVO_00002263 obo:envo.owl)
-AnnotationAssertion(rdfs:label obo:ENVO_00002263 "garden soil"^^xsd:string)
+AnnotationAssertion(rdfs:label obo:ENVO_00002263 "garden soil")
 SubClassOf(obo:ENVO_00002263 obo:ENVO_00001998)
 
 # Class: obo:ENVO_00002264 (waste material)
 
 AnnotationAssertion(obo:IAO_0000115 obo:ENVO_00002264 "A material which is not the desired output of a process and which is typically the input of a process which removes it from its producer (e.g. a disposal process).")
 AnnotationAssertion(obo:IAO_0000412 obo:ENVO_00002264 obo:envo.owl)
-AnnotationAssertion(rdfs:label obo:ENVO_00002264 "waste material"^^xsd:string)
+AnnotationAssertion(rdfs:label obo:ENVO_00002264 "waste material")
 SubClassOf(obo:ENVO_00002264 obo:ENVO_00010483)
 
 # Class: obo:ENVO_00003030 (silage)
 
-AnnotationAssertion(obo:IAO_0000115 obo:ENVO_00003030 "A fermented, high-moisture forage that can be fed to ruminants."^^xsd:string)
+AnnotationAssertion(obo:IAO_0000115 obo:ENVO_00003030 "A fermented, high-moisture forage that can be fed to ruminants.")
 AnnotationAssertion(obo:IAO_0000412 obo:ENVO_00003030 obo:envo.owl)
-AnnotationAssertion(rdfs:label obo:ENVO_00003030 "silage"^^xsd:string)
+AnnotationAssertion(rdfs:label obo:ENVO_00003030 "silage")
 SubClassOf(obo:ENVO_00003030 obo:ENVO_0010003)
 
 # Class: obo:ENVO_00003031 (animal manure)
 
+AnnotationAssertion(obo:IAO_0000115 obo:ENVO_00003031 "Manure which is derived from the waste products of animals."@en)
 AnnotationAssertion(obo:IAO_0000412 obo:ENVO_00003031 obo:envo.owl)
-AnnotationAssertion(rdfs:label obo:ENVO_00003031 "animal manure"^^xsd:string)
-SubClassOf(obo:ENVO_00003031 obo:ENVO_00010483)
+AnnotationAssertion(rdfs:label obo:ENVO_00003031 "animal manure")
+SubClassOf(obo:ENVO_00003031 obo:ENVO_03501300)
 
 # Class: obo:ENVO_00003032 (fresh animal manure)
 
 AnnotationAssertion(obo:IAO_0000412 obo:ENVO_00003032 obo:envo.owl)
-AnnotationAssertion(rdfs:label obo:ENVO_00003032 "fresh animal manure"^^xsd:string)
+AnnotationAssertion(rdfs:label obo:ENVO_00003032 "fresh animal manure")
 SubClassOf(obo:ENVO_00003032 obo:ENVO_00003031)
 
 # Class: obo:ENVO_00003040 (animal house)
 
 AnnotationAssertion(obo:IAO_0000115 obo:ENVO_00003040 "A house used for sheltering non-human animals.")
 AnnotationAssertion(obo:IAO_0000412 obo:ENVO_00003040 obo:envo.owl)
-AnnotationAssertion(rdfs:label obo:ENVO_00003040 "animal house"^^xsd:string)
+AnnotationAssertion(rdfs:label obo:ENVO_00003040 "animal house")
 SubClassOf(obo:ENVO_00003040 obo:ENVO_01000417)
 
 # Class: obo:ENVO_00003041 (cow shed)
 
 AnnotationAssertion(obo:IAO_0000115 obo:ENVO_00003041 "An animal house which is used to shelter cows.")
 AnnotationAssertion(obo:IAO_0000412 obo:ENVO_00003041 obo:envo.owl)
-AnnotationAssertion(rdfs:label obo:ENVO_00003041 "cow shed"^^xsd:string)
+AnnotationAssertion(rdfs:label obo:ENVO_00003041 "cow shed")
 SubClassOf(obo:ENVO_00003041 obo:ENVO_00003040)
+
+# Class: obo:ENVO_00003042 (piggery)
+
+AnnotationAssertion(obo:IAO_0000115 obo:ENVO_00003042 "An animal house which is used to house pigs.")
+AnnotationAssertion(obo:IAO_0000412 obo:ENVO_00003042 obo:envo.owl)
+AnnotationAssertion(rdfs:label obo:ENVO_00003042 "piggery")
+SubClassOf(obo:ENVO_00003042 obo:ENVO_00003040)
 
 # Class: obo:ENVO_00003064 (drinking water)
 
 AnnotationAssertion(obo:IAO_0000115 obo:ENVO_00003064 "Drinking water is water which may be consumed by humans with no adverse effects on their health.")
 AnnotationAssertion(obo:IAO_0000412 obo:ENVO_00003064 obo:envo.owl)
-AnnotationAssertion(rdfs:label obo:ENVO_00003064 "drinking water"^^xsd:string)
+AnnotationAssertion(rdfs:label obo:ENVO_00003064 "drinking water")
 SubClassOf(obo:ENVO_00003064 obo:ENVO_00002011)
 
 # Class: obo:ENVO_00003071 (grass silage)
 
 AnnotationAssertion(obo:IAO_0000412 obo:ENVO_00003071 obo:envo.owl)
-AnnotationAssertion(rdfs:label obo:ENVO_00003071 "grass silage"^^xsd:string)
+AnnotationAssertion(rdfs:label obo:ENVO_00003071 "grass silage")
 SubClassOf(obo:ENVO_00003071 obo:ENVO_00003030)
 
 # Class: obo:ENVO_00003074 (manufactured product)
 
-AnnotationAssertion(obo:IAO_0000115 obo:ENVO_00003074 "A material entity that has been processed by humans or their technology in any way, including intermediate products as well as final products."^^xsd:string)
+AnnotationAssertion(obo:IAO_0000115 obo:ENVO_00003074 "A material entity that has been processed by humans or their technology in any way, including intermediate products as well as final products.")
 AnnotationAssertion(obo:IAO_0000412 obo:ENVO_00003074 obo:envo.owl)
-AnnotationAssertion(rdfs:label obo:ENVO_00003074 "manufactured product"^^xsd:string)
+AnnotationAssertion(rdfs:label obo:ENVO_00003074 "manufactured product")
 SubClassOf(obo:ENVO_00003074 obo:BFO_0000040)
 
 # Class: obo:ENVO_00003096 (tap water)
 
 AnnotationAssertion(obo:IAO_0000412 obo:ENVO_00003096 obo:envo.owl)
-AnnotationAssertion(rdfs:label obo:ENVO_00003096 "tap water"^^xsd:string)
+AnnotationAssertion(rdfs:label obo:ENVO_00003096 "tap water")
 SubClassOf(obo:ENVO_00003096 obo:ENVO_00002011)
 
 # Class: obo:ENVO_00003859 (horse manure)
 
 AnnotationAssertion(obo:IAO_0000412 obo:ENVO_00003859 obo:envo.owl)
-AnnotationAssertion(rdfs:label obo:ENVO_00003859 "horse manure"^^xsd:string)
+AnnotationAssertion(rdfs:label obo:ENVO_00003859 "horse manure")
 SubClassOf(obo:ENVO_00003859 obo:ENVO_00003031)
 
 # Class: obo:ENVO_00003860 (pig manure)
 
 AnnotationAssertion(obo:IAO_0000115 obo:ENVO_00003860 "Manure which is primarily composed of pig feces.")
 AnnotationAssertion(obo:IAO_0000412 obo:ENVO_00003860 obo:envo.owl)
-AnnotationAssertion(rdfs:label obo:ENVO_00003860 "pig manure"^^xsd:string)
+AnnotationAssertion(rdfs:label obo:ENVO_00003860 "pig manure")
 SubClassOf(obo:ENVO_00003860 obo:ENVO_00003031)
 
 # Class: obo:ENVO_00003861 (industrial building)
 
 AnnotationAssertion(obo:IAO_0000115 obo:ENVO_00003861 "An industrial building is a building within which goods are produced and, optionally, stored or within which services are rendered.")
 AnnotationAssertion(obo:IAO_0000412 obo:ENVO_00003861 obo:envo.owl)
-AnnotationAssertion(rdfs:label obo:ENVO_00003861 "industrial building"^^xsd:string)
+AnnotationAssertion(rdfs:label obo:ENVO_00003861 "industrial building")
 SubClassOf(obo:ENVO_00003861 obo:ENVO_00000073)
 
 # Class: obo:ENVO_00003862 (dairy)
 
 AnnotationAssertion(obo:IAO_0000115 obo:ENVO_00003862 "A dairy is a building in which animal milk is harvested and, optionally, processed for human consumption.")
 AnnotationAssertion(obo:IAO_0000412 obo:ENVO_00003862 obo:envo.owl)
-AnnotationAssertion(rdfs:label obo:ENVO_00003862 "dairy"^^xsd:string)
+AnnotationAssertion(rdfs:label obo:ENVO_00003862 "dairy")
 SubClassOf(obo:ENVO_00003862 obo:ENVO_00003861)
 
 # Class: obo:ENVO_00003863 (food processing building)
 
 AnnotationAssertion(obo:IAO_0000115 obo:ENVO_00003863 "A food processing building is a building in which materials that contain or consist of essential body nutrients - such as carbohydrates, fats, proteins, vitamins, or minerals - and may be ingested and assimilated by an organism to produce energy, stimulate growth, and maintain life are converted alternative forms.")
 AnnotationAssertion(obo:IAO_0000412 obo:ENVO_00003863 obo:envo.owl)
-AnnotationAssertion(rdfs:label obo:ENVO_00003863 "food processing building"^^xsd:string)
+AnnotationAssertion(rdfs:label obo:ENVO_00003863 "food processing building")
 SubClassOf(obo:ENVO_00003863 obo:ENVO_00003861)
 
 # Class: obo:ENVO_00003864 (bakery)
 
 AnnotationAssertion(obo:IAO_0000115 obo:ENVO_00003864 "A bakery is a building in which raw flour-based food is baked in an oven to produce food products such as bread, cakes, pastries, and pies. These products are often sold from the bakery itself.")
 AnnotationAssertion(obo:IAO_0000412 obo:ENVO_00003864 obo:envo.owl)
-AnnotationAssertion(rdfs:label obo:ENVO_00003864 "bakery"^^xsd:string)
+AnnotationAssertion(rdfs:label obo:ENVO_00003864 "bakery")
 SubClassOf(obo:ENVO_00003864 obo:ENVO_00003861)
 
 # Class: obo:ENVO_00003884 (farmyard manure)
 
 AnnotationAssertion(obo:IAO_0000412 obo:ENVO_00003884 obo:envo.owl)
-AnnotationAssertion(rdfs:label obo:ENVO_00003884 "farmyard manure"^^xsd:string)
+AnnotationAssertion(rdfs:label obo:ENVO_00003884 "farmyard manure")
 SubClassOf(obo:ENVO_00003884 obo:ENVO_00003031)
 
 # Class: obo:ENVO_00003885 (brewery)
 
-AnnotationAssertion(obo:IAO_0000115 obo:ENVO_00003885 "A brewery is a building in which alcoholic beverages are produced by brewing, that is, steeping a starch source (commonly cereal grains) in water and fermenting the resulting sweet liquid with yeast. At times, the products are also sold from the brewery."^^xsd:string)
+AnnotationAssertion(obo:IAO_0000115 obo:ENVO_00003885 "A brewery is a building in which alcoholic beverages are produced by brewing, that is, steeping a starch source (commonly cereal grains) in water and fermenting the resulting sweet liquid with yeast. At times, the products are also sold from the brewery.")
 AnnotationAssertion(obo:IAO_0000412 obo:ENVO_00003885 obo:envo.owl)
-AnnotationAssertion(rdfs:label obo:ENVO_00003885 "brewery"^^xsd:string)
+AnnotationAssertion(rdfs:label obo:ENVO_00003885 "brewery")
 SubClassOf(obo:ENVO_00003885 obo:ENVO_00003861)
 
 # Class: obo:ENVO_00003895 (paper product)
 
+AnnotationAssertion(obo:IAO_0000115 obo:ENVO_00003895 "A product which is composed primarily of paper."@en)
 AnnotationAssertion(obo:IAO_0000412 obo:ENVO_00003895 obo:envo.owl)
-AnnotationAssertion(rdfs:label obo:ENVO_00003895 "paper product"^^xsd:string)
+AnnotationAssertion(rdfs:label obo:ENVO_00003895 "paper product")
 SubClassOf(obo:ENVO_00003895 obo:ENVO_00003074)
 
 # Class: obo:ENVO_00003900 (rye grass silage)
 
 AnnotationAssertion(obo:IAO_0000412 obo:ENVO_00003900 obo:envo.owl)
-AnnotationAssertion(rdfs:label obo:ENVO_00003900 "rye grass silage"^^xsd:string)
+AnnotationAssertion(rdfs:label obo:ENVO_00003900 "rye grass silage")
 SubClassOf(obo:ENVO_00003900 obo:ENVO_00003071)
 
 # Class: obo:ENVO_00003927 (stable manure)
 
 AnnotationAssertion(obo:IAO_0000412 obo:ENVO_00003927 obo:envo.owl)
-AnnotationAssertion(rdfs:label obo:ENVO_00003927 "stable manure"^^xsd:string)
+AnnotationAssertion(rdfs:label obo:ENVO_00003927 "stable manure")
 SubClassOf(obo:ENVO_00003927 obo:ENVO_00003031)
 
 # Class: obo:ENVO_00003978 (potato silage)
 
 AnnotationAssertion(obo:IAO_0000412 obo:ENVO_00003978 obo:envo.owl)
-AnnotationAssertion(rdfs:label obo:ENVO_00003978 "potato silage"^^xsd:string)
+AnnotationAssertion(rdfs:label obo:ENVO_00003978 "potato silage")
 SubClassOf(obo:ENVO_00003978 obo:ENVO_00003030)
 
 # Class: obo:ENVO_00005747 (compost soil)
 
 AnnotationAssertion(obo:IAO_0000115 obo:ENVO_00005747 "Soil which is derived from compost.")
 AnnotationAssertion(obo:IAO_0000412 obo:ENVO_00005747 obo:envo.owl)
-AnnotationAssertion(rdfs:label obo:ENVO_00005747 "compost soil"^^xsd:string)
+AnnotationAssertion(rdfs:label obo:ENVO_00005747 "compost soil")
 SubClassOf(obo:ENVO_00005747 obo:ENVO_00001998)
 
 # Class: obo:ENVO_00005749 (farm soil)
 
 AnnotationAssertion(obo:IAO_0000115 obo:ENVO_00005749 "A portion of soil which is part of a cropland or a rangeland biome.")
 AnnotationAssertion(obo:IAO_0000412 obo:ENVO_00005749 obo:envo.owl)
-AnnotationAssertion(rdfs:label obo:ENVO_00005749 "farm soil"^^xsd:string)
+AnnotationAssertion(rdfs:label obo:ENVO_00005749 "farm soil")
 SubClassOf(obo:ENVO_00005749 obo:ENVO_00001998)
 
 # Class: obo:ENVO_00010483 (environmental material)
 
-AnnotationAssertion(obo:IAO_0000115 obo:ENVO_00010483 "A portion of environmental material is a fiat object part which forms the medium or part of the medium of an environmental system."^^xsd:string)
+AnnotationAssertion(obo:IAO_0000115 obo:ENVO_00010483 "A portion of environmental material is a fiat object part which forms the medium or part of the medium of an environmental system.")
 AnnotationAssertion(obo:IAO_0000412 obo:ENVO_00010483 obo:envo.owl)
-AnnotationAssertion(rdfs:label obo:ENVO_00010483 "environmental material"^^xsd:string)
+AnnotationAssertion(rdfs:label obo:ENVO_00010483 "environmental material")
 SubClassOf(obo:ENVO_00010483 obo:BFO_0000024)
-
-# Class: obo:ENVO_00010504 (surface layer)
-
-AnnotationAssertion(obo:IAO_0000115 obo:ENVO_00010504 "A layer of some material entity which is adjacent to one or more of its external boundaries and directly interacts with its immediate surroundings."^^xsd:string)
-AnnotationAssertion(obo:IAO_0000412 obo:ENVO_00010504 obo:envo.owl)
-AnnotationAssertion(rdfs:label obo:ENVO_00010504 "surface layer"^^xsd:string)
-SubClassOf(obo:ENVO_00010504 obo:ENVO_01001684)
-
-# Class: obo:ENVO_00010625 (zoological garden)
-
-AnnotationAssertion(obo:IAO_0000115 obo:ENVO_00010625 "A facility in which animals are confined within enclosures and displayed to the public, and in which they may also be bred."^^xsd:string)
-AnnotationAssertion(obo:IAO_0000412 obo:ENVO_00010625 obo:envo.owl)
-AnnotationAssertion(rdfs:label obo:ENVO_00010625 "zoological garden"^^xsd:string)
-SubClassOf(obo:ENVO_00010625 obo:ENVO_00000011)
 
 # Class: obo:ENVO_0010001 (anthropogenic environmental material)
 
-AnnotationAssertion(obo:IAO_0000115 obo:ENVO_0010001 "Anthropogenic material in or on which organisms may live."^^xsd:string)
+AnnotationAssertion(obo:IAO_0000115 obo:ENVO_0010001 "Anthropogenic material in or on which organisms may live.")
 AnnotationAssertion(obo:IAO_0000412 obo:ENVO_0010001 obo:envo.owl)
-AnnotationAssertion(rdfs:label obo:ENVO_0010001 "anthropogenic environmental material"^^xsd:string)
+AnnotationAssertion(rdfs:label obo:ENVO_0010001 "anthropogenic environmental material")
 SubClassOf(obo:ENVO_0010001 obo:ENVO_00010483)
 
 # Class: obo:ENVO_0010003 (agricultural environmental material)
 
 AnnotationAssertion(obo:IAO_0000412 obo:ENVO_0010003 obo:envo.owl)
-AnnotationAssertion(rdfs:label obo:ENVO_0010003 "agricultural environmental material"^^xsd:string)
+AnnotationAssertion(rdfs:label obo:ENVO_0010003 "agricultural environmental material")
 SubClassOf(obo:ENVO_0010003 obo:ENVO_0010001)
 
 # Class: obo:ENVO_01000001 (mud)
 
-AnnotationAssertion(obo:IAO_0000115 obo:ENVO_01000001 "A liquid or semi-liquid mixture of water and some combination of soil, silt, and clay."^^xsd:string)
+AnnotationAssertion(obo:IAO_0000115 obo:ENVO_01000001 "An environmental material which is a liquid or semi-liquid mixture of water and some combination of soil, silt, and clay particles."@en)
 AnnotationAssertion(obo:IAO_0000412 obo:ENVO_01000001 obo:envo.owl)
-AnnotationAssertion(rdfs:label obo:ENVO_01000001 "mud"^^xsd:string)
+AnnotationAssertion(rdfs:label obo:ENVO_01000001 "mud")
 SubClassOf(obo:ENVO_01000001 obo:ENVO_00010483)
 
 # Class: obo:ENVO_01000002 (water well)
 
 AnnotationAssertion(obo:IAO_0000115 obo:ENVO_01000002 "A well which provides access to groundwater held  in an aquifer.")
 AnnotationAssertion(obo:IAO_0000412 obo:ENVO_01000002 obo:envo.owl)
-AnnotationAssertion(rdfs:label obo:ENVO_01000002 "water well"^^xsd:string)
+AnnotationAssertion(rdfs:label obo:ENVO_01000002 "water well")
 SubClassOf(obo:ENVO_01000002 obo:ENVO_00000026)
 
 # Class: obo:ENVO_01000017 (sand)
 
-AnnotationAssertion(obo:IAO_0000115 obo:ENVO_01000017 "A naturally occurring granular material composed of finely divided rock and mineral particles."^^xsd:string)
+AnnotationAssertion(obo:IAO_0000115 obo:ENVO_01000017 "Particulate environmental material which is composed primarily of particles of sand with only minor proportions of other substances."@en)
 AnnotationAssertion(obo:IAO_0000412 obo:ENVO_01000017 obo:envo.owl)
-AnnotationAssertion(rdfs:label obo:ENVO_01000017 "sand"^^xsd:string)
-SubClassOf(obo:ENVO_01000017 obo:ENVO_00010483)
-
-# Class: obo:ENVO_01000018 (gravel)
-
-AnnotationAssertion(obo:IAO_0000115 obo:ENVO_01000018 "Gravel is an environmental material which is composed of pieces of rock that are at least two millimeters (2mm) in its largest dimension and no more than 75 millimeters."^^xsd:string)
-AnnotationAssertion(obo:IAO_0000412 obo:ENVO_01000018 obo:envo.owl)
-AnnotationAssertion(rdfs:label obo:ENVO_01000018 "gravel"^^xsd:string)
-SubClassOf(obo:ENVO_01000018 obo:ENVO_00010483)
-
-# Class: obo:ENVO_01000044 (marine pelagic feature)
-
-AnnotationAssertion(obo:IAO_0000115 obo:ENVO_01000044 "A prominent or distinctive aspect, quality, or characteristic of environments occurring within the marine water column."^^xsd:string)
-AnnotationAssertion(obo:IAO_0000412 obo:ENVO_01000044 obo:envo.owl)
-AnnotationAssertion(rdfs:label obo:ENVO_01000044 "marine pelagic feature"^^xsd:string)
-SubClassOf(obo:ENVO_01000044 obo:ENVO_00000012)
+AnnotationAssertion(rdfs:label obo:ENVO_01000017 "sand")
+SubClassOf(obo:ENVO_01000017 obo:ENVO_01000060)
 
 # Class: obo:ENVO_01000048 (ocean biome)
 
-AnnotationAssertion(obo:IAO_0000115 obo:ENVO_01000048 "A marine biome which is determined by an ocean."^^xsd:string)
+AnnotationAssertion(obo:IAO_0000115 obo:ENVO_01000048 "A marine biome which is determined by an ocean.")
 AnnotationAssertion(obo:IAO_0000412 obo:ENVO_01000048 obo:envo.owl)
-AnnotationAssertion(rdfs:label obo:ENVO_01000048 "ocean biome"^^xsd:string)
+AnnotationAssertion(rdfs:label obo:ENVO_01000048 "ocean biome")
 SubClassOf(obo:ENVO_01000048 obo:ENVO_00000447)
 
-# Class: obo:ENVO_01000060 (particulate matter)
+# Class: obo:ENVO_01000060 (particulate environmental material)
 
-AnnotationAssertion(obo:IAO_0000115 obo:ENVO_01000060 "Particulate material is an environmental material which is composed of microscopic portions of solid or liquid material suspended in another environmental material.")
+AnnotationAssertion(obo:IAO_0000115 obo:ENVO_01000060 "An environmental material which is composed primarily of particles."@en)
 AnnotationAssertion(obo:IAO_0000412 obo:ENVO_01000060 obo:envo.owl)
-AnnotationAssertion(rdfs:label obo:ENVO_01000060 "particulate matter"@en)
+AnnotationAssertion(rdfs:label obo:ENVO_01000060 "particulate environmental material"@en)
 SubClassOf(obo:ENVO_01000060 obo:ENVO_00010483)
 
 # Class: obo:ENVO_01000155 (organic material)
 
-AnnotationAssertion(obo:IAO_0000115 obo:ENVO_01000155 "Environmental material derived from living organisms and composed primarily of one or more biomacromolecules."^^xsd:string)
+AnnotationAssertion(obo:IAO_0000115 obo:ENVO_01000155 "Environmental material derived from living organisms and composed primarily of one or more biomacromolecules.")
 AnnotationAssertion(obo:IAO_0000412 obo:ENVO_01000155 obo:envo.owl)
-AnnotationAssertion(rdfs:label obo:ENVO_01000155 "organic material"^^xsd:string)
+AnnotationAssertion(rdfs:label obo:ENVO_01000155 "organic material")
 SubClassOf(obo:ENVO_01000155 obo:ENVO_00010483)
 
 # Class: obo:ENVO_01000174 (forest biome)
 
-AnnotationAssertion(obo:IAO_0000115 obo:ENVO_01000174 "A forest ecosystem in which dominant ecological communities have reached their climax successional state."^^xsd:string)
+AnnotationAssertion(obo:IAO_0000115 obo:ENVO_01000174 "A forest ecosystem in which dominant ecological communities have reached their climax successional state.")
 AnnotationAssertion(obo:IAO_0000412 obo:ENVO_01000174 obo:envo.owl)
-AnnotationAssertion(rdfs:label obo:ENVO_01000174 "forest biome"^^xsd:string)
+AnnotationAssertion(rdfs:label obo:ENVO_01000174 "forest biome")
 SubClassOf(obo:ENVO_01000174 obo:ENVO_01001243)
 
 # Class: obo:ENVO_01000175 (woodland biome)
 
-AnnotationAssertion(obo:IAO_0000115 obo:ENVO_01000175 "A woodland biome is a terrestrial biome which includes, across its entire spatial extent, woody plants spaced sufficiently far apart to allow light penetration to support communities of herbaceous plants or shrubs living closer to the woodland floor."^^xsd:string)
+AnnotationAssertion(obo:IAO_0000115 obo:ENVO_01000175 "A woodland biome is a terrestrial biome which includes, across its entire spatial extent, woody plants spaced sufficiently far apart to allow light penetration to support communities of herbaceous plants or shrubs living closer to the woodland floor.")
 AnnotationAssertion(obo:IAO_0000412 obo:ENVO_01000175 obo:envo.owl)
-AnnotationAssertion(rdfs:label obo:ENVO_01000175 "woodland biome"^^xsd:string)
+AnnotationAssertion(rdfs:label obo:ENVO_01000175 "woodland biome")
 SubClassOf(obo:ENVO_01000175 obo:ENVO_00000446)
 
 # Class: obo:ENVO_01000176 (shrubland biome)
 
-AnnotationAssertion(obo:IAO_0000115 obo:ENVO_01000176 "A shrubland biome is a terrestrial biome which includes, across its entire spatial extent, dense groups of shrubs."^^xsd:string)
+AnnotationAssertion(obo:IAO_0000115 obo:ENVO_01000176 "A shrubland biome is a terrestrial biome which includes, across its entire spatial extent, dense groups of shrubs.")
 AnnotationAssertion(obo:IAO_0000412 obo:ENVO_01000176 obo:envo.owl)
-AnnotationAssertion(rdfs:label obo:ENVO_01000176 "shrubland biome"^^xsd:string)
+AnnotationAssertion(rdfs:label obo:ENVO_01000176 "shrubland biome")
 SubClassOf(obo:ENVO_01000176 obo:ENVO_00000446)
 
 # Class: obo:ENVO_01000177 (grassland biome)
 
-AnnotationAssertion(obo:IAO_0000115 obo:ENVO_01000177 "A grassland ecosystem in which dominant ecological communities have reached their climax successional state."^^xsd:string)
+AnnotationAssertion(obo:IAO_0000115 obo:ENVO_01000177 "A grassland ecosystem in which dominant ecological communities have reached their climax successional state.")
 AnnotationAssertion(obo:IAO_0000412 obo:ENVO_01000177 obo:envo.owl)
-AnnotationAssertion(rdfs:label obo:ENVO_01000177 "grassland biome"^^xsd:string)
+AnnotationAssertion(rdfs:label obo:ENVO_01000177 "grassland biome")
 SubClassOf(obo:ENVO_01000177 obo:ENVO_01001206)
 
 # Class: obo:ENVO_01000179 (desert biome)
 
-AnnotationAssertion(obo:IAO_0000115 obo:ENVO_01000179 "A desert biome is a terrestrial biome which loses more liquid water by evapotranspiration than is supplied by precipitation and includes communities adapted to these conditions."^^xsd:string)
+AnnotationAssertion(obo:IAO_0000115 obo:ENVO_01000179 "A desert biome is a terrestrial biome which loses more liquid water by evapotranspiration than is supplied by precipitation and includes communities adapted to these conditions.")
 AnnotationAssertion(obo:IAO_0000412 obo:ENVO_01000179 obo:envo.owl)
-AnnotationAssertion(rdfs:label obo:ENVO_01000179 "desert biome"^^xsd:string)
+AnnotationAssertion(rdfs:label obo:ENVO_01000179 "desert biome")
 SubClassOf(obo:ENVO_01000179 obo:ENVO_01001780)
 
 # Class: obo:ENVO_01000180 (tundra biome)
 
-AnnotationAssertion(obo:IAO_0000115 obo:ENVO_01000180 "A terrestrial biome which comprises a tundra ecosystem that has reached its climax community."^^xsd:string)
+AnnotationAssertion(obo:IAO_0000115 obo:ENVO_01000180 "A terrestrial biome which comprises a tundra ecosystem that has reached its climax community.")
 AnnotationAssertion(obo:IAO_0000412 obo:ENVO_01000180 obo:envo.owl)
-AnnotationAssertion(rdfs:label obo:ENVO_01000180 "tundra biome"^^xsd:string)
+AnnotationAssertion(rdfs:label obo:ENVO_01000180 "tundra biome")
 SubClassOf(obo:ENVO_01000180 obo:ENVO_00000446)
 
 # Class: obo:ENVO_01000181 (mangrove biome)
 
-AnnotationAssertion(obo:IAO_0000115 obo:ENVO_01000181 "A mangrove biome is a terrestrial biome which includes, across its spatial extent, mangrove plants (Rhizophoraceae). Mangrove plants are able to withstand high levels of salinity as well as regions of anoxia and frequent tidal inundation. Mangrove biomes often occur near tropical and sub-tropical estuaries and depositional marine coastal environments where fine sediments (often with high organic content) collect in areas protected from high energy wave action."^^xsd:string)
+AnnotationAssertion(obo:IAO_0000115 obo:ENVO_01000181 "A mangrove biome is a terrestrial biome which includes, across its spatial extent, mangrove plants (Rhizophoraceae). Mangrove plants are able to withstand high levels of salinity as well as regions of anoxia and frequent tidal inundation. Mangrove biomes often occur near tropical and sub-tropical estuaries and depositional marine coastal environments where fine sediments (often with high organic content) collect in areas protected from high energy wave action.")
 AnnotationAssertion(obo:IAO_0000412 obo:ENVO_01000181 obo:envo.owl)
-AnnotationAssertion(rdfs:label obo:ENVO_01000181 "mangrove biome"^^xsd:string)
+AnnotationAssertion(rdfs:label obo:ENVO_01000181 "mangrove biome")
 SubClassOf(obo:ENVO_01000181 obo:ENVO_00000446)
 
 # Class: obo:ENVO_01000219 (anthropogenic terrestrial biome)
 
-AnnotationAssertion(obo:IAO_0000115 obo:ENVO_01000219 "An anthropogenic terrestrial biome is a terrestrial biome which has community structures determined by human activity."^^xsd:string)
+AnnotationAssertion(obo:IAO_0000115 obo:ENVO_01000219 "An anthropogenic terrestrial biome is a terrestrial biome which has community structures determined by human activity.")
 AnnotationAssertion(obo:IAO_0000412 obo:ENVO_01000219 obo:envo.owl)
-AnnotationAssertion(rdfs:label obo:ENVO_01000219 "anthropogenic terrestrial biome"^^xsd:string)
+AnnotationAssertion(rdfs:label obo:ENVO_01000219 "anthropogenic terrestrial biome")
 SubClassOf(obo:ENVO_01000219 obo:ENVO_00000446)
 
 # Class: obo:ENVO_01000245 (cropland biome)
 
-AnnotationAssertion(obo:IAO_0000115 obo:ENVO_01000245 "A cropland ecosystem in which dominant ecological communities are maintained in a stable state - mimicking a climax community - by human intervention."^^xsd:string)
+AnnotationAssertion(obo:IAO_0000115 obo:ENVO_01000245 "A cropland ecosystem in which dominant ecological communities are maintained in a stable state - mimicking a climax community - by human intervention.")
 AnnotationAssertion(obo:IAO_0000412 obo:ENVO_01000245 obo:envo.owl)
-AnnotationAssertion(rdfs:label obo:ENVO_01000245 "cropland biome"^^xsd:string)
+AnnotationAssertion(rdfs:label obo:ENVO_01000245 "cropland biome")
 SubClassOf(obo:ENVO_01000245 obo:ENVO_01001244)
-
-# Class: obo:ENVO_01000246 (village biome)
-
-AnnotationAssertion(obo:IAO_0000115 obo:ENVO_01000246 "A village biome is an anthropogenic terrestrial biome which contains settlements such as villages, towns, and/or small cities and which is primarily used for agricultural activity."^^xsd:string)
-AnnotationAssertion(obo:IAO_0000412 obo:ENVO_01000246 obo:envo.owl)
-AnnotationAssertion(rdfs:label obo:ENVO_01000246 "village biome"^^xsd:string)
-SubClassOf(obo:ENVO_01000246 obo:ENVO_01000219)
 
 # Class: obo:ENVO_01000247 (rangeland biome)
 
-AnnotationAssertion(obo:IAO_0000115 obo:ENVO_01000247 "A rangeland biome is an anthropogenic terrestrial biome which is primarily used for the rearing and grazing of livestock."^^xsd:string)
+AnnotationAssertion(obo:IAO_0000115 obo:ENVO_01000247 "A rangeland biome is an anthropogenic terrestrial biome which is primarily used for the rearing and grazing of livestock.")
 AnnotationAssertion(obo:IAO_0000412 obo:ENVO_01000247 obo:envo.owl)
-AnnotationAssertion(rdfs:label obo:ENVO_01000247 "rangeland biome"^^xsd:string)
+AnnotationAssertion(rdfs:label obo:ENVO_01000247 "rangeland biome")
 SubClassOf(obo:ENVO_01000247 obo:ENVO_01000219)
-
-# Class: obo:ENVO_01000248 (dense settlement biome)
-
-AnnotationAssertion(obo:IAO_0000115 obo:ENVO_01000248 "A dense settlement biome is an anthropogenic terrestrial biome which is primarily used for human habitation, recreation, and industry within built structures with little other land use."^^xsd:string)
-AnnotationAssertion(obo:IAO_0000412 obo:ENVO_01000248 obo:envo.owl)
-AnnotationAssertion(rdfs:label obo:ENVO_01000248 "dense settlement biome"^^xsd:string)
-SubClassOf(obo:ENVO_01000248 obo:ENVO_01000219)
 
 # Class: obo:ENVO_01000252 (freshwater lake biome)
 
 AnnotationAssertion(obo:IAO_0000115 obo:ENVO_01000252 "A biome which is determined by a freshwater lake.")
 AnnotationAssertion(obo:IAO_0000412 obo:ENVO_01000252 obo:envo.owl)
-AnnotationAssertion(rdfs:label obo:ENVO_01000252 "freshwater lake biome"^^xsd:string)
+AnnotationAssertion(rdfs:label obo:ENVO_01000252 "freshwater lake biome")
 SubClassOf(obo:ENVO_01000252 obo:ENVO_00000873)
 
 # Class: obo:ENVO_01000253 (freshwater river biome)
 
+AnnotationAssertion(obo:IAO_0000115 obo:ENVO_01000253 "A freshwater biome which is determined by a freshwater river."@en)
 AnnotationAssertion(obo:IAO_0000412 obo:ENVO_01000253 obo:envo.owl)
-AnnotationAssertion(rdfs:label obo:ENVO_01000253 "freshwater river biome"^^xsd:string)
+AnnotationAssertion(rdfs:label obo:ENVO_01000253 "freshwater river biome")
 SubClassOf(obo:ENVO_01000253 obo:ENVO_00000873)
 
 # Class: obo:ENVO_01000254 (environmental system)
 
-AnnotationAssertion(obo:IAO_0000115 obo:ENVO_01000254 "A system which has the disposition to environ one or more material entities."^^xsd:string)
+AnnotationAssertion(obo:IAO_0000115 obo:ENVO_01000254 "A system which has the disposition to environ one or more material entities.")
 AnnotationAssertion(obo:IAO_0000412 obo:ENVO_01000254 obo:envo.owl)
-AnnotationAssertion(rdfs:label obo:ENVO_01000254 "environmental system"^^xsd:string)
+AnnotationAssertion(rdfs:label obo:ENVO_01000254 "environmental system")
 SubClassOf(obo:ENVO_01000254 obo:RO_0002577)
 
 # Class: obo:ENVO_01000277 (water ice)
 
-AnnotationAssertion(obo:IAO_0000115 obo:ENVO_01000277 "Ice which is formed from water."^^xsd:string)
+AnnotationAssertion(obo:IAO_0000115 obo:ENVO_01000277 "Ice which is formed from water.")
 AnnotationAssertion(obo:IAO_0000412 obo:ENVO_01000277 obo:envo.owl)
-AnnotationAssertion(rdfs:label obo:ENVO_01000277 "water ice"^^xsd:string)
+AnnotationAssertion(rdfs:label obo:ENVO_01000277 "water ice")
 SubClassOf(obo:ENVO_01000277 obo:ENVO_01000814)
 SubClassOf(obo:ENVO_01000277 obo:ENVO_01001125)
 
-# Class: obo:ENVO_01000281 (layer)
-
-AnnotationAssertion(obo:IAO_0000115 obo:ENVO_01000281 "A layer is a quantity of some material which is spatially continuous, has comparable thickness, and usually covers some surface."^^xsd:string)
-AnnotationAssertion(obo:IAO_0000412 obo:ENVO_01000281 obo:envo.owl)
-AnnotationAssertion(rdfs:label obo:ENVO_01000281 "layer"^^xsd:string)
-SubClassOf(obo:ENVO_01000281 obo:BFO_0000040)
-
 # Class: obo:ENVO_01000320 (marine environment)
 
-AnnotationAssertion(obo:IAO_0000115 obo:ENVO_01000320 "A marine environment and enviroment which is determined by a marine water body."^^xsd:string)
+AnnotationAssertion(obo:IAO_0000115 obo:ENVO_01000320 "A marine environment and enviroment which is determined by a marine water body.")
 AnnotationAssertion(obo:IAO_0000412 obo:ENVO_01000320 obo:envo.owl)
 AnnotationAssertion(rdfs:label obo:ENVO_01000320 "marine environment")
 SubClassOf(obo:ENVO_01000320 obo:ENVO_01000254)
 
 # Class: obo:ENVO_01000352 (field)
 
-AnnotationAssertion(obo:IAO_0000115 obo:ENVO_01000352 "An unbroken expanse (as of ice)"^^xsd:string)
+AnnotationAssertion(obo:IAO_0000115 obo:ENVO_01000352 "An unbroken expanse (as of ice)")
 AnnotationAssertion(obo:IAO_0000412 obo:ENVO_01000352 obo:envo.owl)
 AnnotationAssertion(rdfs:label obo:ENVO_01000352 "field")
 SubClassOf(obo:ENVO_01000352 obo:ENVO_01000813)
 
-# Class: obo:ENVO_01000404 (manufactured plastic)
+# Class: obo:ENVO_01000404 (obsolete manufactured plastic)
 
-AnnotationAssertion(obo:IAO_0000115 obo:ENVO_01000404 "A (portion of) plastic is an (portion of) anthropogenic environmental material including any of numerous organic synthetic or processed materials which are primarily composed of thermoplastic or thermosetting polymers of high molecular weight."^^xsd:string)
+AnnotationAssertion(obo:IAO_0000115 obo:ENVO_01000404 "OBSOLETE A (portion of) plastic is an (portion of) anthropogenic environmental material including any of numerous organic synthetic or processed materials which are primarily composed of thermoplastic or thermosetting polymers of high molecular weight.")
 AnnotationAssertion(obo:IAO_0000412 obo:ENVO_01000404 obo:envo.owl)
-AnnotationAssertion(rdfs:label obo:ENVO_01000404 "manufactured plastic")
-SubClassOf(obo:ENVO_01000404 obo:ENVO_00003074)
-SubClassOf(obo:ENVO_01000404 obo:ENVO_0010001)
-SubClassOf(obo:ENVO_01000404 obo:ENVO_01000814)
+AnnotationAssertion(obo:IAO_0100001 obo:ENVO_01000404 <ENVO:06105112>)
+AnnotationAssertion(rdfs:label obo:ENVO_01000404 "obsolete manufactured plastic")
+AnnotationAssertion(owl:deprecated obo:ENVO_01000404 "true"^^xsd:boolean)
 
 # Class: obo:ENVO_01000408 (environmental zone)
 
-AnnotationAssertion(obo:IAO_0000115 obo:ENVO_01000408 "A site which has its extent determined by the presence or influence of one or more components of an environmental system or the processes occurring therein."^^xsd:string)
+AnnotationAssertion(obo:IAO_0000115 obo:ENVO_01000408 "A site which has its extent determined by the presence or influence of one or more components of an environmental system or the processes occurring therein.")
 AnnotationAssertion(obo:IAO_0000412 obo:ENVO_01000408 obo:envo.owl)
 AnnotationAssertion(rdfs:label obo:ENVO_01000408 "environmental zone")
 SubClassOf(obo:ENVO_01000408 obo:BFO_0000029)
 
 # Class: obo:ENVO_01000417 (house)
 
-AnnotationAssertion(obo:IAO_0000115 obo:ENVO_01000417 "A house is a building that provides a dwelling-place for a living entity."^^xsd:string)
+AnnotationAssertion(obo:IAO_0000115 obo:ENVO_01000417 "A house is a building that provides a dwelling-place for a living entity.")
 AnnotationAssertion(obo:IAO_0000412 obo:ENVO_01000417 obo:envo.owl)
 AnnotationAssertion(rdfs:label obo:ENVO_01000417 "house")
 SubClassOf(obo:ENVO_01000417 obo:ENVO_00000073)
-
-# Class: obo:ENVO_01000418 (human house)
-
-AnnotationAssertion(obo:IAO_0000412 obo:ENVO_01000418 obo:envo.owl)
-AnnotationAssertion(rdfs:label obo:ENVO_01000418 "human house")
-SubClassOf(obo:ENVO_01000418 obo:ENVO_01000417)
-SubClassOf(obo:ENVO_01000418 obo:ENVO_01001480)
 
 # Class: obo:ENVO_01000480 (glass)
 
@@ -1235,20 +1072,19 @@ AnnotationAssertion(obo:IAO_0000412 obo:ENVO_01000480 obo:envo.owl)
 AnnotationAssertion(rdfs:label obo:ENVO_01000480 "glass")
 SubClassOf(obo:ENVO_01000480 obo:ENVO_01000814)
 
-# Class: obo:ENVO_01000486 (building floor)
-
-AnnotationAssertion(obo:IAO_0000115 obo:ENVO_01000486 "A building floor is a surface layer which is part of a building and used for walking."^^xsd:string)
-AnnotationAssertion(obo:IAO_0000412 obo:ENVO_01000486 obo:envo.owl)
-AnnotationAssertion(rdfs:label obo:ENVO_01000486 "building floor")
-SubClassOf(obo:ENVO_01000486 obo:ENVO_01001311)
-SubClassOf(obo:ENVO_01000486 obo:ENVO_01001483)
-
 # Class: obo:ENVO_01000575 (wax)
 
 AnnotationAssertion(obo:IAO_0000115 obo:ENVO_01000575 "A wax is an environmental material which is primarily composed of lipids or other organic compounds that consist of long alkyl chains. Waxes are are malleable near ambient temperatures and melt at approximately 45 degrees Celsius.")
 AnnotationAssertion(obo:IAO_0000412 obo:ENVO_01000575 obo:envo.owl)
 AnnotationAssertion(rdfs:label obo:ENVO_01000575 "wax"@en)
 SubClassOf(obo:ENVO_01000575 obo:ENVO_00010483)
+
+# Class: obo:ENVO_01000600 (rainwater)
+
+AnnotationAssertion(obo:IAO_0000115 obo:ENVO_01000600 "Rainwater is liquid water which has precipitated in the form of droplets through the condensation of atmospheric water vapour.")
+AnnotationAssertion(obo:IAO_0000412 obo:ENVO_01000600 obo:envo.owl)
+AnnotationAssertion(rdfs:label obo:ENVO_01000600 "rainwater"@en)
+SubClassOf(obo:ENVO_01000600 obo:ENVO_00002011)
 
 # Class: obo:ENVO_01000617 (lentic water body)
 
@@ -1307,13 +1143,6 @@ AnnotationAssertion(obo:IAO_0000412 obo:ENVO_01000752 obo:envo.owl)
 AnnotationAssertion(rdfs:label obo:ENVO_01000752 "area of barren land"@en)
 SubClassOf(obo:ENVO_01000752 obo:ENVO_01001199)
 
-# Class: obo:ENVO_01000781 (public building)
-
-AnnotationAssertion(obo:IAO_0000115 obo:ENVO_01000781 "A building which is publically accessible.")
-AnnotationAssertion(obo:IAO_0000412 obo:ENVO_01000781 obo:envo.owl)
-AnnotationAssertion(rdfs:label obo:ENVO_01000781 "public building"@en)
-SubClassOf(obo:ENVO_01000781 obo:ENVO_00000073)
-
 # Class: obo:ENVO_01000813 (astronomical body part)
 
 AnnotationAssertion(obo:IAO_0000115 obo:ENVO_01000813 "A material part of an astronomical body.")
@@ -1356,33 +1185,12 @@ AnnotationAssertion(obo:IAO_0000412 obo:ENVO_01000922 obo:envo.owl)
 AnnotationAssertion(rdfs:label obo:ENVO_01000922 "animal cage"@en)
 SubClassOf(obo:ENVO_01000922 obo:ENVO_01000625)
 
-# Class: obo:ENVO_01000923 (petting zoo)
-
-AnnotationAssertion(obo:IAO_0000115 obo:ENVO_01000923 "A petting zoo is a zoological garden which contains domesticated non-human animals and some wild non-human animals that are docile enough for humans to touch and feed.")
-AnnotationAssertion(obo:IAO_0000412 obo:ENVO_01000923 obo:envo.owl)
-AnnotationAssertion(rdfs:label obo:ENVO_01000923 "petting zoo"@en)
-SubClassOf(obo:ENVO_01000923 obo:ENVO_00010625)
-
-# Class: obo:ENVO_01000924 (plumbing drain)
-
-AnnotationAssertion(obo:IAO_0000115 obo:ENVO_01000924 "An artificial channel which transports unwanted water or waste liquids away from their source, either to a more useful area, a receptacle, or into sewers or stormwater mains as waste discharge to be released or processed.")
-AnnotationAssertion(obo:IAO_0000412 obo:ENVO_01000924 obo:envo.owl)
-AnnotationAssertion(rdfs:label obo:ENVO_01000924 "plumbing drain"@en)
-SubClassOf(obo:ENVO_01000924 obo:ENVO_00000121)
-
 # Class: obo:ENVO_01000925 (abattoir)
 
 AnnotationAssertion(obo:IAO_0000115 obo:ENVO_01000925 "A facility in which non-human animals are slaughtered and processed for human consumption.")
 AnnotationAssertion(obo:IAO_0000412 obo:ENVO_01000925 obo:envo.owl)
 AnnotationAssertion(rdfs:label obo:ENVO_01000925 "abattoir"@en)
 SubClassOf(obo:ENVO_01000925 obo:ENVO_00003861)
-
-# Class: obo:ENVO_01000927 (day care building)
-
-AnnotationAssertion(obo:IAO_0000115 obo:ENVO_01000927 "A building which is used to care for a human child during the working day by a person, outside the child's immediate family, other than that child's legal guardians.")
-AnnotationAssertion(obo:IAO_0000412 obo:ENVO_01000927 obo:envo.owl)
-AnnotationAssertion(rdfs:label obo:ENVO_01000927 "day care building"@en)
-SubClassOf(obo:ENVO_01000927 obo:ENVO_01001222)
 
 # Class: obo:ENVO_01000928 (fish processing building)
 
@@ -1391,54 +1199,12 @@ AnnotationAssertion(obo:IAO_0000412 obo:ENVO_01000928 obo:envo.owl)
 AnnotationAssertion(rdfs:label obo:ENVO_01000928 "fish processing building"@en)
 SubClassOf(obo:ENVO_01000928 obo:ENVO_00003863)
 
-# Class: obo:ENVO_01000932 (nursing home)
-
-AnnotationAssertion(obo:IAO_0000115 obo:ENVO_01000932 "A building in which nursing aides and skilled nurses provide care and treatment to residents who have significant difficulty coping with the required activities of daily living.")
-AnnotationAssertion(obo:IAO_0000412 obo:ENVO_01000932 obo:envo.owl)
-AnnotationAssertion(rdfs:label obo:ENVO_01000932 "nursing home"@en)
-SubClassOf(obo:ENVO_01000932 obo:ENVO_01000781)
-
-# Class: obo:ENVO_01000933 (residential building)
-
-AnnotationAssertion(obo:IAO_0000115 obo:ENVO_01000933 "A human house which serves as a long-term shelter for its inhabitants and within which they store personal property.")
-AnnotationAssertion(obo:IAO_0000412 obo:ENVO_01000933 obo:envo.owl)
-AnnotationAssertion(rdfs:label obo:ENVO_01000933 "residential building"@en)
-SubClassOf(obo:ENVO_01000933 obo:ENVO_01000418)
-
 # Class: obo:ENVO_01000934 (restaurant)
 
 AnnotationAssertion(obo:IAO_0000115 obo:ENVO_01000934 "A building within which food and drink are prepared and served to customers in exchange for money or other goods and/or services.")
 AnnotationAssertion(obo:IAO_0000412 obo:ENVO_01000934 obo:envo.owl)
 AnnotationAssertion(rdfs:label obo:ENVO_01000934 "restaurant"@en)
 SubClassOf(obo:ENVO_01000934 obo:ENVO_01001222)
-
-# Class: obo:ENVO_01000935 (campground)
-
-AnnotationAssertion(obo:IAO_0000115 obo:ENVO_01000935 "A part of an ecosystem which may be or has been used for one or more overnight stays by humans sheltering in tents, camper vans, caravans, or improvised shelters.")
-AnnotationAssertion(obo:IAO_0000412 obo:ENVO_01000935 obo:envo.owl)
-AnnotationAssertion(rdfs:label obo:ENVO_01000935 "campground"@en)
-SubClassOf(obo:ENVO_01000935 obo:ENVO_00000002)
-
-# Class: obo:ENVO_01000936 (dedicated campground)
-
-AnnotationAssertion(obo:IAO_0000115 obo:ENVO_01000936 "A campground which has been modified by humans to provide and maintain facilities for camping such as fire pits, road access, latrines, and garbage bins.")
-AnnotationAssertion(obo:IAO_0000412 obo:ENVO_01000936 obo:envo.owl)
-AnnotationAssertion(rdfs:label obo:ENVO_01000936 "dedicated campground"@en)
-SubClassOf(obo:ENVO_01000936 obo:ENVO_01000935)
-
-# Class: obo:ENVO_01000937 (impromptu campground)
-
-AnnotationAssertion(obo:IAO_0000115 obo:ENVO_01000937 "A campground which has no pre-existing facilities installed or maintained by humans, usually found outside of anthropised ecosystems.")
-AnnotationAssertion(obo:IAO_0000412 obo:ENVO_01000937 obo:envo.owl)
-AnnotationAssertion(rdfs:label obo:ENVO_01000937 "impromptu campground"@en)
-SubClassOf(obo:ENVO_01000937 obo:ENVO_01000935)
-
-# Class: obo:ENVO_01000938 (hot tub)
-
-AnnotationAssertion(obo:IAO_0000115 obo:ENVO_01000938 "A manufactured product which may hold a volume of heated water suitable for one or more humans to bathe in, usually for the purposes of hydrotherapy or pleasure.")
-AnnotationAssertion(obo:IAO_0000412 obo:ENVO_01000938 obo:envo.owl)
-AnnotationAssertion(rdfs:label obo:ENVO_01000938 "hot tub"@en)
-SubClassOf(obo:ENVO_01000938 obo:ENVO_00003074)
 
 # Class: obo:ENVO_01001069 (metallic material)
 
@@ -1460,6 +1226,20 @@ AnnotationAssertion(obo:IAO_0000115 obo:ENVO_01001116 "Manure which has been col
 AnnotationAssertion(obo:IAO_0000412 obo:ENVO_01001116 obo:envo.owl)
 AnnotationAssertion(rdfs:label obo:ENVO_01001116 "bovine dairy liquid manure"@en)
 SubClassOf(obo:ENVO_01001116 obo:ENVO_00003031)
+
+# Class: obo:ENVO_01001117 (poultry manure)
+
+AnnotationAssertion(obo:IAO_0000115 obo:ENVO_01001117 "Manure which is composed primarily of the feces of poultry.")
+AnnotationAssertion(obo:IAO_0000412 obo:ENVO_01001117 obo:envo.owl)
+AnnotationAssertion(rdfs:label obo:ENVO_01001117 "poultry manure"@en)
+SubClassOf(obo:ENVO_01001117 obo:ENVO_00003031)
+
+# Class: obo:ENVO_01001118 (heat-treated animal manure)
+
+AnnotationAssertion(obo:IAO_0000115 obo:ENVO_01001118 "Manure which has been subjected to heat treatment for solidification and/or sterilization purposes.")
+AnnotationAssertion(obo:IAO_0000412 obo:ENVO_01001118 obo:envo.owl)
+AnnotationAssertion(rdfs:label obo:ENVO_01001118 "heat-treated animal manure"@en)
+SubClassOf(obo:ENVO_01001118 obo:ENVO_00003031)
 
 # Class: obo:ENVO_01001119 (composted animal manure)
 
@@ -1484,7 +1264,7 @@ SubClassOf(obo:ENVO_01001199 obo:ENVO_01000408)
 
 # Class: obo:ENVO_01001206 (grassland ecosystem)
 
-AnnotationAssertion(obo:IAO_0000115 obo:ENVO_01001206 "An ecosystem in which grasses (Graminae) are the dominant form of vegetation and determine the system's structure and dynamics."^^xsd:string)
+AnnotationAssertion(obo:IAO_0000115 obo:ENVO_01001206 "An ecosystem in which grasses (Graminae) are the dominant form of vegetation and determine the system's structure and dynamics.")
 AnnotationAssertion(obo:IAO_0000412 obo:ENVO_01001206 obo:envo.owl)
 AnnotationAssertion(rdfs:label obo:ENVO_01001206 "grassland ecosystem"@en)
 SubClassOf(obo:ENVO_01001206 obo:ENVO_01001790)
@@ -1510,13 +1290,6 @@ AnnotationAssertion(obo:IAO_0000412 obo:ENVO_01001244 obo:envo.owl)
 AnnotationAssertion(rdfs:label obo:ENVO_01001244 "cropland ecosystem"@en)
 SubClassOf(obo:ENVO_01001244 obo:ENVO_01001790)
 
-# Class: obo:ENVO_01001275 (solid layer)
-
-AnnotationAssertion(obo:IAO_0000115 obo:ENVO_01001275 "A layer which is primarily composed of some solid material, allowing for non-solid parts such as interstitial pockets of gas or liquid.")
-AnnotationAssertion(obo:IAO_0000412 obo:ENVO_01001275 obo:envo.owl)
-AnnotationAssertion(rdfs:label obo:ENVO_01001275 "solid layer"@en)
-SubClassOf(obo:ENVO_01001275 obo:ENVO_01000281)
-
 # Class: obo:ENVO_01001305 (vegetated area)
 
 AnnotationAssertion(obo:IAO_0000115 obo:ENVO_01001305 "A vegetated area is a geographic feature which has ground cover dominated by plant communities.")
@@ -1526,18 +1299,10 @@ SubClassOf(obo:ENVO_01001305 obo:ENVO_01001199)
 
 # Class: obo:ENVO_01001308 (hydroform)
 
-AnnotationAssertion(obo:IAO_0000115 obo:ENVO_01001308 "A geographic feature which is primarily composed of a continuous volume of liquid water held in shape or sustained by an environmental process.")
+AnnotationAssertion(obo:IAO_0000115 obo:ENVO_01001308 "A liquid astronomical body part which is primarily composed of a continuous volume of liquid water and is held in shape or sustained by an environmental process.")
 AnnotationAssertion(obo:IAO_0000412 obo:ENVO_01001308 obo:envo.owl)
 AnnotationAssertion(rdfs:label obo:ENVO_01001308 "hydroform")
 SubClassOf(obo:ENVO_01001308 obo:ENVO_01001477)
-
-# Class: obo:ENVO_01001311 (solid surface layer)
-
-AnnotationAssertion(obo:IAO_0000115 obo:ENVO_01001311 "A surface layer which is composed primarily of solid environmental material.")
-AnnotationAssertion(obo:IAO_0000412 obo:ENVO_01001311 obo:envo.owl)
-AnnotationAssertion(rdfs:label obo:ENVO_01001311 "solid surface layer"@en)
-SubClassOf(obo:ENVO_01001311 obo:ENVO_00010504)
-SubClassOf(obo:ENVO_01001311 obo:ENVO_01001275)
 
 # Class: obo:ENVO_01001319 (saline water body)
 
@@ -1548,6 +1313,7 @@ SubClassOf(obo:ENVO_01001319 obo:ENVO_00000063)
 
 # Class: obo:ENVO_01001476 (body of liquid)
 
+AnnotationAssertion(obo:IAO_0000115 obo:ENVO_01001476 "A liquid astronomical body part which is continuous and is delimited by physical discontinuities or non-liquid boundaries."@en)
 AnnotationAssertion(obo:IAO_0000412 obo:ENVO_01001476 obo:envo.owl)
 AnnotationAssertion(rdfs:label obo:ENVO_01001476 "body of liquid"@en)
 SubClassOf(obo:ENVO_01001476 obo:ENVO_01001477)
@@ -1567,27 +1333,6 @@ AnnotationAssertion(obo:IAO_0000412 obo:ENVO_01001479 obo:envo.owl)
 AnnotationAssertion(rdfs:label obo:ENVO_01001479 "fluid astronomical body part"@en)
 SubClassOf(obo:ENVO_01001479 obo:ENVO_01000813)
 
-# Class: obo:ENVO_01001480 (domestic building)
-
-AnnotationAssertion(obo:IAO_0000115 obo:ENVO_01001480 "A building which is primarily used for the long-term habitation of humans.")
-AnnotationAssertion(obo:IAO_0000412 obo:ENVO_01001480 obo:envo.owl)
-AnnotationAssertion(rdfs:label obo:ENVO_01001480 "domestic building"@en)
-SubClassOf(obo:ENVO_01001480 obo:ENVO_00000073)
-
-# Class: obo:ENVO_01001483 (surface of an astronomical body)
-
-AnnotationAssertion(obo:IAO_0000115 obo:ENVO_01001483 "A surface layer where the solid or liquid material of an astronomical body comes into contact with an atmosphere or outer space.")
-AnnotationAssertion(obo:IAO_0000412 obo:ENVO_01001483 obo:envo.owl)
-AnnotationAssertion(rdfs:label obo:ENVO_01001483 "surface of an astronomical body"@en)
-SubClassOf(obo:ENVO_01001483 obo:ENVO_00010504)
-
-# Class: obo:ENVO_01001684 (interface layer)
-
-AnnotationAssertion(obo:IAO_0000115 obo:ENVO_01001684 "A layer which separates two portions of environmental material which possess 1) differing compositions, 2) a discontinuity of some property, or 3) some derivative of some property in a direction normal to the interface."@en)
-AnnotationAssertion(obo:IAO_0000412 obo:ENVO_01001684 obo:envo.owl)
-AnnotationAssertion(rdfs:label obo:ENVO_01001684 "interface layer"@en)
-SubClassOf(obo:ENVO_01001684 obo:ENVO_01000281)
-
 # Class: obo:ENVO_01001780 (desert ecosystem)
 
 AnnotationAssertion(obo:IAO_0000115 obo:ENVO_01001780 "An ecosystem in which the composition, structure, and function of resident ecological assemblages are primarily determined by a desert.")
@@ -1597,7 +1342,7 @@ SubClassOf(obo:ENVO_01001780 obo:ENVO_01001110)
 
 # Class: obo:ENVO_01001784 (compound astronomical body part)
 
-AnnotationAssertion(obo:IAO_0000115 obo:ENVO_01001784 "A part of an astronomical body which is primarily composed of a continuous medium bearing liquid, gaseous, and solid material in varying quantities.")
+AnnotationAssertion(obo:IAO_0000115 obo:ENVO_01001784 "A part of an astronomical body which is composed of a continuous medium bearing liquid, gaseous, and solid material in variable quantities."@en)
 AnnotationAssertion(obo:IAO_0000412 obo:ENVO_01001784 obo:envo.owl)
 AnnotationAssertion(rdfs:label obo:ENVO_01001784 "compound astronomical body part"@en)
 SubClassOf(obo:ENVO_01001784 obo:ENVO_01000813)
@@ -1641,26 +1386,46 @@ AnnotationAssertion(obo:IAO_0000412 obo:ENVO_01001873 obo:envo.owl)
 AnnotationAssertion(rdfs:label obo:ENVO_01001873 "hatchery"@en)
 SubClassOf(obo:ENVO_01001873 obo:ENVO_00000070)
 
+# Class: obo:ENVO_01001884 (surface landform)
+
+AnnotationAssertion(obo:IAO_0000115 obo:ENVO_01001884 "A landform which occurs on the surface of an astronomical body."@en)
+AnnotationAssertion(obo:IAO_0000412 obo:ENVO_01001884 obo:envo.owl)
+AnnotationAssertion(rdfs:label obo:ENVO_01001884 "surface landform"@en)
+SubClassOf(obo:ENVO_01001884 obo:ENVO_01001886)
+
+# Class: obo:ENVO_01001886 (landform)
+
+AnnotationAssertion(obo:IAO_0000115 obo:ENVO_01001886 "A solid astronomical body part which has been formed from and is composed primarily of the matter of that astronomical body."@en)
+AnnotationAssertion(obo:IAO_0000412 obo:ENVO_01001886 obo:envo.owl)
+AnnotationAssertion(rdfs:label obo:ENVO_01001886 "landform"@en)
+SubClassOf(obo:ENVO_01001886 obo:ENVO_00000191)
+
 # Class: obo:ENVO_02000001 (textile)
 
-AnnotationAssertion(obo:IAO_0000115 obo:ENVO_02000001 "A textile is a manufactured product comprised of a network of natural or artificial fibers (often referred to as thread or yarn)."^^xsd:string)
+AnnotationAssertion(obo:IAO_0000115 obo:ENVO_02000001 "A textile is a manufactured product comprised of a network of natural or artificial fibers (often referred to as thread or yarn).")
 AnnotationAssertion(obo:IAO_0000412 obo:ENVO_02000001 obo:envo.owl)
-AnnotationAssertion(rdfs:label obo:ENVO_02000001 "textile"^^xsd:string)
+AnnotationAssertion(rdfs:label obo:ENVO_02000001 "textile")
 SubClassOf(obo:ENVO_02000001 obo:ENVO_00003074)
 
 # Class: obo:ENVO_02000054 (bone meal)
 
-AnnotationAssertion(obo:IAO_0000115 obo:ENVO_02000054 "A mixture of crushed and coarsely ground bones that is used as an organic fertilizer for plants and formerly in animal feed."^^xsd:string)
+AnnotationAssertion(obo:IAO_0000115 obo:ENVO_02000054 "A mixture of crushed and coarsely ground bones that is used as an organic fertilizer for plants and formerly in animal feed.")
 AnnotationAssertion(obo:IAO_0000412 obo:ENVO_02000054 obo:envo.owl)
-AnnotationAssertion(rdfs:label obo:ENVO_02000054 "bone meal"^^xsd:string)
+AnnotationAssertion(rdfs:label obo:ENVO_02000054 "bone meal")
 SubClassOf(obo:ENVO_02000054 obo:ENVO_02000055)
 
 # Class: obo:ENVO_02000055 (plant feed)
 
-AnnotationAssertion(obo:IAO_0000115 obo:ENVO_02000055 "Food material which can be used to meet nutritional requirements of plants."^^xsd:string)
+AnnotationAssertion(obo:IAO_0000115 obo:ENVO_02000055 "Food material which can be used to meet nutritional requirements of plants.")
 AnnotationAssertion(obo:IAO_0000412 obo:ENVO_02000055 obo:envo.owl)
-AnnotationAssertion(rdfs:label obo:ENVO_02000055 "plant feed"^^xsd:string)
+AnnotationAssertion(rdfs:label obo:ENVO_02000055 "plant feed")
 SubClassOf(obo:ENVO_02000055 obo:FOODON_00002403)
+
+# Class: obo:ENVO_02000084 (goat manure)
+
+AnnotationAssertion(obo:IAO_0000412 obo:ENVO_02000084 obo:envo.owl)
+AnnotationAssertion(rdfs:label obo:ENVO_02000084 "goat manure")
+SubClassOf(obo:ENVO_02000084 obo:ENVO_00003031)
 
 # Class: obo:ENVO_02000090 (ash)
 
@@ -1676,62 +1441,61 @@ AnnotationAssertion(obo:IAO_0000412 obo:ENVO_02000140 obo:envo.owl)
 AnnotationAssertion(rdfs:label obo:ENVO_02000140 "fluid environmental material"@en)
 SubClassOf(obo:ENVO_02000140 obo:ENVO_00010483)
 
+# Class: obo:ENVO_03501252 (chicken manure)
+
+AnnotationAssertion(obo:IAO_0000115 obo:ENVO_03501252 "Poultry manure made of chicken feces."@en)
+AnnotationAssertion(obo:IAO_0000412 obo:ENVO_03501252 obo:envo.owl)
+AnnotationAssertion(rdfs:label obo:ENVO_03501252 "chicken manure"@en)
+SubClassOf(obo:ENVO_03501252 obo:ENVO_01001117)
+
+# Class: obo:ENVO_03501258 (chicken house)
+
+AnnotationAssertion(obo:IAO_0000115 obo:ENVO_03501258 "An animal house where fowl are kept."@en)
+AnnotationAssertion(obo:IAO_0000412 obo:ENVO_03501258 obo:envo.owl)
+AnnotationAssertion(rdfs:label obo:ENVO_03501258 "chicken house"@en)
+SubClassOf(obo:ENVO_03501258 obo:ENVO_00003040)
+
+# Class: obo:ENVO_03501286 (calf shed)
+
+AnnotationAssertion(obo:IAO_0000115 obo:ENVO_03501286 "A cow shed for baby cows/bulls."@en)
+AnnotationAssertion(obo:IAO_0000412 obo:ENVO_03501286 obo:envo.owl)
+AnnotationAssertion(rdfs:label obo:ENVO_03501286 "calf shed"@en)
+SubClassOf(obo:ENVO_03501286 obo:ENVO_00003041)
+
+# Class: obo:ENVO_03501287 (livestock house)
+
+AnnotationAssertion(obo:IAO_0000115 obo:ENVO_03501287 "An animal house used for housing livestock."@en)
+AnnotationAssertion(obo:IAO_0000412 obo:ENVO_03501287 obo:envo.owl)
+AnnotationAssertion(rdfs:label obo:ENVO_03501287 "livestock house"@en)
+SubClassOf(obo:ENVO_03501287 obo:ENVO_00003040)
+
+# Class: obo:ENVO_03501300 (manure)
+
+AnnotationAssertion(obo:IAO_0000115 obo:ENVO_03501300 "An environmental material consisting of organic matter from plants and/or animals that is used in agriculture as fertilizer."@en)
+AnnotationAssertion(obo:IAO_0000412 obo:ENVO_03501300 obo:envo.owl)
+AnnotationAssertion(rdfs:label obo:ENVO_03501300 "manure"@en)
+SubClassOf(obo:ENVO_03501300 obo:ENVO_00010483)
+
+# Class: obo:ENVO_03501352 (animal rescue shelter)
+
+AnnotationAssertion(obo:IAO_0000115 obo:ENVO_03501352 "An animal house which houses stray, lost, abandoned or surrendered animals."@en)
+AnnotationAssertion(obo:IAO_0000412 obo:ENVO_03501352 obo:envo.owl)
+AnnotationAssertion(rdfs:label obo:ENVO_03501352 "animal rescue shelter"@en)
+SubClassOf(obo:ENVO_03501352 obo:ENVO_00003040)
+
+# Class: obo:ENVO_03600081 (cloud water)
+
+AnnotationAssertion(obo:IAO_0000115 obo:ENVO_03600081 "Fresh water which is harvested from cloud."@en)
+AnnotationAssertion(obo:IAO_0000412 obo:ENVO_03600081 obo:envo.owl)
+AnnotationAssertion(rdfs:label obo:ENVO_03600081 "cloud water"@en)
+SubClassOf(obo:ENVO_03600081 obo:ENVO_00002011)
+
 # Class: obo:FOODON_00002403 (food material)
 
 AnnotationAssertion(obo:IAO_0000115 obo:FOODON_00002403 "Any substance that can be consumed by an organism to satisfy nutritional or other health needs, or to provide a social or organoleptic food experience"@en)
 AnnotationAssertion(obo:IAO_0000119 obo:FOODON_00002403 <https://en.wikipedia.org/wiki/Food>)
 AnnotationAssertion(obo:IAO_0000412 obo:FOODON_00002403 obo:envo.owl)
 AnnotationAssertion(rdfs:label obo:FOODON_00002403 "food material"@en)
-
-# Class: obo:GO_0006091 (generation of precursor metabolites and energy)
-
-AnnotationAssertion(obo:IAO_0000412 obo:GO_0006091 obo:envo.owl)
-AnnotationAssertion(rdfs:label obo:GO_0006091 "generation of precursor metabolites and energy")
-SubClassOf(obo:GO_0006091 obo:GO_0044237)
-
-# Class: obo:GO_0008150 (biological_process)
-
-AnnotationAssertion(obo:IAO_0000115 obo:GO_0008150 "A biological process represents a specific objective that the organism is genetically programmed to achieve. Biological processes are often described by their outcome or ending state, e.g., the biological process of cell division results in the creation of two daughter cells (a divided cell) from a single parent cell. A biological process is accomplished by a particular set of molecular functions carried out by specific gene products (or macromolecular complexes), often in a highly regulated manner and in a particular temporal sequence.")
-AnnotationAssertion(obo:IAO_0000412 obo:GO_0008150 obo:envo.owl)
-AnnotationAssertion(rdfs:label obo:GO_0008150 "biological_process")
-SubClassOf(obo:GO_0008150 obo:BFO_0000015)
-
-# Class: obo:GO_0008152 (metabolic process)
-
-AnnotationAssertion(obo:IAO_0000412 obo:GO_0008152 obo:envo.owl)
-AnnotationAssertion(rdfs:label obo:GO_0008152 "metabolic process")
-SubClassOf(obo:GO_0008152 obo:GO_0008150)
-
-# Class: obo:GO_0009987 (cellular process)
-
-AnnotationAssertion(obo:IAO_0000412 obo:GO_0009987 obo:envo.owl)
-AnnotationAssertion(rdfs:label obo:GO_0009987 "cellular process")
-SubClassOf(obo:GO_0009987 obo:GO_0008150)
-
-# Class: obo:GO_0015979 (photosynthesis)
-
-AnnotationAssertion(obo:IAO_0000412 obo:GO_0015979 obo:envo.owl)
-AnnotationAssertion(rdfs:label obo:GO_0015979 "photosynthesis")
-SubClassOf(obo:GO_0015979 obo:GO_0044237)
-
-# Class: obo:GO_0015980 (energy derivation by oxidation of organic compounds)
-
-AnnotationAssertion(obo:IAO_0000412 obo:GO_0015980 obo:envo.owl)
-AnnotationAssertion(rdfs:label obo:GO_0015980 "energy derivation by oxidation of organic compounds")
-SubClassOf(obo:GO_0015980 obo:GO_0006091)
-
-# Class: obo:GO_0044237 (cellular metabolic process)
-
-AnnotationAssertion(obo:IAO_0000412 obo:GO_0044237 obo:envo.owl)
-AnnotationAssertion(rdfs:label obo:GO_0044237 "cellular metabolic process")
-SubClassOf(obo:GO_0044237 obo:GO_0008152)
-SubClassOf(obo:GO_0044237 obo:GO_0009987)
-
-# Class: obo:GO_0045333 (cellular respiration)
-
-AnnotationAssertion(obo:IAO_0000412 obo:GO_0045333 obo:envo.owl)
-AnnotationAssertion(rdfs:label obo:GO_0045333 "cellular respiration")
-SubClassOf(obo:GO_0045333 obo:GO_0015980)
 
 # Class: obo:RO_0002577 (system)
 
@@ -1742,6 +1506,4 @@ AnnotationAssertion(rdfs:label obo:RO_0002577 "system")
 SubClassOf(obo:RO_0002577 obo:BFO_0000040)
 
 
-AnnotationAssertion(obo:IAO_0000412 _:genid2147483768 obo:envo.owl)
-AnnotationAssertion(obo:IAO_0000412 _:genid2147483769 obo:envo.owl)
 )
