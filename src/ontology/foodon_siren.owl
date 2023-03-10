@@ -5,7 +5,6 @@
     <!ENTITY owl "http://www.w3.org/2002/07/owl#" >
     <!ENTITY obo "http://purl.obolibrary.org/obo/" >
     <!ENTITY patterns "http://www.co-ode.org/patterns#" >
-    <!ENTITY dc "http://purl.org/dc/elements/1.1/" >
     <!ENTITY xsd "http://www.w3.org/2001/XMLSchema#" >
     <!ENTITY xml "http://www.w3.org/XML/1998/namespace" >
     <!ENTITY rdfs "http://www.w3.org/2000/01/rdf-schema#" >
@@ -25,8 +24,7 @@
      xmlns:xsd="http://www.w3.org/2001/XMLSchema#"
      xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
      xmlns:NCBITaxon="&obo;NCBITaxon#"
-     xmlns:obo="http://purl.obolibrary.org/obo/"
-     xmlns:dc="http://purl.org/dc/elements/1.1/">
+     xmlns:obo="http://purl.obolibrary.org/obo/">
     <owl:Ontology rdf:about="&obo;foodon_siren.owl">
         <owl:versionIRI rdf:resource="&obo;foodon/releases/2017-08-05/foodon_siren.owl"/>
         <owl:imports rdf:resource="&obo;foodon/imports/gaz_import.owl"/>
@@ -49,10 +47,6 @@
         <owl:imports rdf:resource="http://purl.obolibrary.org/obo/foodon/imports/langual_deprecated_import.owl"/>
         <owl:imports rdf:resource="http://purl.obolibrary.org/obo/foodon/imports/subset_siren_import.owl"/>
 
-        <dc:contributor xml:lang="en">Damion Dooley</dc:contributor>
-        <dc:contributor xml:lang="en">William Hsiao</dc:contributor>
-        <dc:contributor xml:lang="en">Pier Buttigieg</dc:contributor>
-        <dc:contributor xml:lang="en">Robert Hohendorf</dc:contributor>
     </owl:Ontology>
     
 

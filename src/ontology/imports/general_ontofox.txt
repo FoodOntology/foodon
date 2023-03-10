@@ -112,7 +112,12 @@ http://purl.obolibrary.org/obo/BFO_0000001 # entity
 includeAllIntermediates
 
 [Source annotation URIs]
-includeAllAnnotationProperties
+http://www.w3.org/2000/01/rdf-schema#label
+http://purl.obolibrary.org/obo/IAO_0000115 # definition
+http://purl.obolibrary.org/obo/IAO_0000111
+http://purl.obolibrary.org/obo/IAO_0000114
+http://purl.obolibrary.org/obo/IAO_0000119
+http://purl.obolibrary.org/obo/OBI_0001886
 
 ###########################################
 
@@ -238,16 +243,6 @@ includeAllIntermediates
 
 [Source annotation URIs]
 includeAllAnnotationProperties
-
-
-###########################################
-
-#[Source ontology]
-#GAZ
-#http://purl.obolibrary.org/obo/GAZ_00002560 # CANADA
-#http://purl.obolibrary.org/obo/GAZ_00002637 # UNITED KINGDOM
-#http://purl.obolibrary.org/obo/GAZ_00003744 # THAILAND
-#http://purl.obolibrary.org/obo/GAZ_00002459 # UNITED STATES
 
 
 ###########################################

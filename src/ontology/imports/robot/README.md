@@ -17,11 +17,13 @@ wine.tsv
 
 
 robot template --template animals.tsv\
+  --prefix "dcterms:http://purl.org/dc/terms/" \
   --input "../../foodon-merged.ofn" \
   --ontology-iri "http://purl.obolibrary.org/obo/foodon/imports/robot_animals.ofn" \
   --output ../robot_animals.ofn
 
 robot template --template dietary_supplement.tsv\
+  --prefix "dcterms:http://purl.org/dc/terms/" \
   --input "../../foodon-merged.ofn" \
   --ontology-iri "http://purl.obolibrary.org/obo/foodon/imports/robot_dietary_supplement.ofn" \
   --output ../robot_dietary_supplement.ofn
@@ -32,6 +34,7 @@ robot template --template pasta.tsv \
   --output ../robot_pasta.ofn
 
 robot template --template plant_parts.tsv \
+  --prefix "dcterms:http://purl.org/dc/terms/" \
   --input "../../foodon-merged.ofn" \
   --ontology-iri "http://purl.obolibrary.org/obo/foodon/imports/robot_plant_parts.ofn" \
   --output ../robot_plant_parts.ofn
