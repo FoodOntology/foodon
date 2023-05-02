@@ -433,6 +433,34 @@ http://purl.obolibrary.org/obo/IAO_0000114
 http://purl.obolibrary.org/obo/IAO_0000119
 http://purl.obolibrary.org/obo/OBI_0001886
 
+
+###########################################
+
+[Source ontology]
+OMO
+
+[Low level source term URIs]
+http://purl.obolibrary.org/obo/IAO_0000118 # alternative label
+includeAllChildren
+
+http://www.w3.org/2000/01/rdf-schema#comment # comment
+http://purl.obolibrary.org/obo/IAO_0000111 # editor preferred term
+http://purl.obolibrary.org/obo/IAO_0000115 # definition
+http://purl.obolibrary.org/obo/IAO_0000119 # definition source
+http://purl.obolibrary.org/obo/IAO_0000412 # imported from
+http://purl.obolibrary.org/obo/IAO_0000114 # has curation status
+http://purl.obolibrary.org/obo/IAO_0100001 # term replaced by
+http://purl.obolibrary.org/obo/IAO_0000231 # has obsolescence reason
+
+[Top level source term URIs and target direct superclass URIs]
+
+[Source term retrieval setting]
+includeNoIntermediates
+
+[Source annotation URIs]
+includeAllAnnotationProperties
+
+
 ###########################################
 
 [Source ontology]
