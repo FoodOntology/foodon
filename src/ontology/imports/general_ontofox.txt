@@ -1,8 +1,8 @@
 [URI of the OWL(RDF/XML) output file]
 http://purl.obolibrary.org/obo/foodon/imports/general_import.ofn
 
-###########################################
 
+###########################################
 
 [Source ontology]
 OBI
@@ -18,6 +18,7 @@ http://purl.obolibrary.org/obo/OBI_0000295 # is_specified_input_of
 http://purl.obolibrary.org/obo/IAO_0000007 # action specification
 
 http://purl.obolibrary.org/obo/OBI_0001886 # NIAID GSCID-BRC alternative term
+
 http://purl.obolibrary.org/obo/IAO_0000030 # information content entity
 http://purl.obolibrary.org/obo/IAO_0000027 #    data item
 http://purl.obolibrary.org/obo/OBI_0000679 #        average value
@@ -74,7 +75,11 @@ http://purl.obolibrary.org/obo/IAO_0000136 # is about
 http://purl.obolibrary.org/obo/OBI_0001927 # specifies value of
 
 [Top level source term URIs and target direct superclass URIs]
-http://purl.obolibrary.org/obo/BFO_0000001
+http://purl.obolibrary.org/obo/IAO_0000030 # information
+http://purl.obolibrary.org/obo/PATO_0000001 # characteristic
+http://purl.obolibrary.org/obo/BFO_0000041 # immaterial entity
+http://purl.obolibrary.org/obo/BFO_0000040 # material entity
+http://purl.obolibrary.org/obo/BFO_0000015 # process
 
 
 [Source term retrieval setting]
@@ -106,7 +111,11 @@ http://purl.obolibrary.org/obo/AGRO_00000363 # greenhouse
 
 
 [Top level source term URIs and target direct superclass URIs]
-http://purl.obolibrary.org/obo/BFO_0000001 # entity
+http://purl.obolibrary.org/obo/IAO_0000030 # information
+http://purl.obolibrary.org/obo/PATO_0000001 # characteristic
+http://purl.obolibrary.org/obo/BFO_0000041 # immaterial entity
+http://purl.obolibrary.org/obo/BFO_0000040 # material entity
+http://purl.obolibrary.org/obo/BFO_0000015 # process
 
 [Source term retrieval setting]
 includeAllIntermediates
@@ -128,7 +137,7 @@ DRON
 http://purl.obolibrary.org/obo/DRON_00012339  # Propolis
 
 [Top level source term URIs and target direct superclass URIs]
-http://purl.obolibrary.org/obo/BFO_0000001 # entity
+http://purl.obolibrary.org/obo/BFO_0000040 # material entity
 
 [Source term retrieval setting]
 includeAllIntermediates
@@ -194,7 +203,8 @@ http://purl.obolibrary.org/obo/PATO_0000033 # concentration of
 includeAllChildren
 
 [Top level source term URIs and target direct superclass URIs]
-http://purl.obolibrary.org/obo/BFO_0000001 # entity
+http://purl.obolibrary.org/obo/PATO_0000001 # characteristic
+http://purl.obolibrary.org/obo/BFO_0000040 # material entity
 
 [Source term retrieval setting]
 includeAllIntermediates
@@ -224,26 +234,6 @@ includeNoIntermediates
 includeAllAnnotationProperties
 [Source annotation URIs to be excluded]
 
-###########################################
-
-[Source ontology]
-COB
-
-[Low level source term URIs]
-http://purl.obolibrary.org/obo/MOP_0000543 # physico-chemical process
-http://purl.obolibrary.org/obo/STATO_0000102 # executes
-
-http://purl.obolibrary.org/obo/COB_0000511 # has quantity
-
-[Top level source term URIs and target direct superclass URIs]
-http://purl.obolibrary.org/obo/BFO_0000015 # process
-
-[Source term retrieval setting]
-includeAllIntermediates
-
-[Source annotation URIs]
-includeAllAnnotationProperties
-
 
 ###########################################
 
@@ -263,7 +253,6 @@ http://purl.obolibrary.org/obo/IAO_0000119
 http://purl.obolibrary.org/obo/OBI_0001886
 
 ###########################################
-
 
 
 [Source ontology]
@@ -360,7 +349,6 @@ http://purl.obolibrary.org/obo/PATO_0001163 # decreased concentration
 http://purl.obolibrary.org/obo/PATO_0002305 # increased quality
 http://purl.obolibrary.org/obo/PATO_0001162 # increased concentration
 http://purl.obolibrary.org/obo/PATO_0000069 # deviation from normal
-http://purl.obolibrary.org/obo/PATO_0000125 # mass
 http://purl.obolibrary.org/obo/PATO_0000918 # volume
 http://purl.obolibrary.org/obo/PATO_0002138 # edibility
 includeAllChildren
@@ -432,6 +420,7 @@ http://purl.obolibrary.org/obo/ECOCORE_00000008 #trophic process
 includeAllChildren
 
 [Top level source term URIs and target direct superclass URIs]
+http://purl.obolibrary.org/obo/BFO_0000015 # process
 
 [Source term retrieval setting]
 includeAllIntermediates
@@ -605,7 +594,6 @@ http://purl.obolibrary.org/obo/PO_0008016 # vegetative shoot apical meristem
 http://purl.obolibrary.org/obo/PO_0009012 # plant structure development stage
 http://purl.obolibrary.org/obo/PO_0025131 # plant anatomical entity
 
-http://purl.obolibrary.org/obo/PO_0025131
 [Source term retrieval setting]
 includeAllIntermediates
 
@@ -711,8 +699,7 @@ STATO
 http://purl.obolibrary.org/obo/STATO_0000503 # simple random sampling
 
 [Top level source term URIs and target direct superclass URIs]
-http://purl.obolibrary.org/obo/STATO_0000502 # statistical sampling
-
+http://purl.obolibrary.org/obo/BFO_0000015 # process
 
 [Source term retrieval setting]
 includeAllIntermediates
