@@ -15073,7 +15073,7 @@ AnnotationAssertion(owl:deprecated obo:FOODON_03510276 "true"^^xsd:boolean)
 # Class: obo:FOODON_03520001 (obsolete: geographic place or region not known)
 
 AnnotationAssertion(obo:IAO_0000412 obo:FOODON_03520001 "http://langual.org")
-AnnotationAssertion(obo:IAO_0100001 obo:FOODON_03520001 obo:GEO_000000372)
+AnnotationAssertion(obo:IAO_0100001 obo:FOODON_03520001 obo:COB_0000032)
 AnnotationAssertion(oboInOwl:hasDbXref obo:FOODON_03520001 "http://www.langual.org/langual_thesaurus.asp?termid=R0001")
 AnnotationAssertion(rdfs:label obo:FOODON_03520001 "obsolete: geographic place or region not known"@en)
 AnnotationAssertion(owl:deprecated obo:FOODON_03520001 "true"^^xsd:boolean)
@@ -15081,7 +15081,7 @@ AnnotationAssertion(owl:deprecated obo:FOODON_03520001 "true"^^xsd:boolean)
 # Class: obo:FOODON_03520010 (obsolete: geographic places and regions)
 
 AnnotationAssertion(obo:IAO_0000412 obo:FOODON_03520010 "http://langual.org")
-AnnotationAssertion(obo:IAO_0100001 obo:FOODON_03520010 obo:GEO_000000372)
+AnnotationAssertion(obo:IAO_0100001 obo:FOODON_03520010 obo:COB_0000032)
 AnnotationAssertion(rdfs:label obo:FOODON_03520010 "obsolete: geographic places and regions"@en)
 AnnotationAssertion(owl:deprecated obo:FOODON_03520010 "true"^^xsd:boolean)
 
@@ -15102,8 +15102,7 @@ AnnotationAssertion(owl:deprecated obo:FOODON_03520365 "true"^^xsd:boolean)
 
 # Class: obo:FOODON_03520509 (obsolete: continents, regions and countries)
 
-AnnotationAssertion(obo:IAO_0000412 obo:FOODON_03520509 "http://langual.org")
-AnnotationAssertion(obo:IAO_0100001 obo:FOODON_03520509 obo:GEO_000000372)
+AnnotationAssertion(obo:IAO_0100001 obo:FOODON_03520509 obo:COB_0000032)
 AnnotationAssertion(rdfs:label obo:FOODON_03520509 "obsolete: continents, regions and countries"@en)
 AnnotationAssertion(owl:deprecated obo:FOODON_03520509 "true"^^xsd:boolean)
 
