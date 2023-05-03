@@ -34,9 +34,12 @@ http://purl.obolibrary.org/obo/OBI_0000047 # processed material entity
 http://purl.obolibrary.org/obo/BFO_0000015 # process
 includeAllChildren
 
-# OBJECT AND DATA PROPERTIES
-http://purl.obolibrary.org/obo/STATO_0000102 # executes
-http://purl.obolibrary.org/obo/COB_0000511 # has quantity
+# OBJECT AND DATA PROPERTIES.  Some are only in COB, not in RO.
+http://www.w3.org/2002/07/owl#topObjectProperty
+includeAllChildren
+
+# http://purl.obolibrary.org/obo/STATO_0000102 # executes
+# http://purl.obolibrary.org/obo/COB_0000511 # has quantity
 
 
 [Top level source term URIs and target direct superclass URIs]
