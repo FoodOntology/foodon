@@ -9,10 +9,7 @@ Prefix(rdfs:=<http://www.w3.org/2000/01/rdf-schema#>)
 
 Ontology(<http://purl.obolibrary.org/obo/foodon/imports/ons_import.ofn>
 
-Declaration(Class(obo:BFO_0000001))
-Declaration(Class(obo:BFO_0000002))
 Declaration(Class(obo:BFO_0000017))
-Declaration(Class(obo:BFO_0000031))
 Declaration(Class(obo:IAO_0000027))
 Declaration(Class(obo:IAO_0000030))
 Declaration(Class(obo:IAO_0000033))
@@ -120,7 +117,7 @@ Declaration(AnnotationProperty(rdfs:label))
 #   Annotation Properties
 ############################
 
-# Annotation Property: obo:IAO_0000111 (editor preferred term)
+# Annotation Property: obo:IAO_0000111 (editor preferred label)
 
 AnnotationAssertion(obo:IAO_0000111 obo:IAO_0000111 "editor preferred label")
 AnnotationAssertion(obo:IAO_0000111 obo:IAO_0000111 "editor preferred label"@en)
