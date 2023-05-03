@@ -15,17 +15,21 @@ includeAllChildren
 
 http://purl.obolibrary.org/obo/BFO_0000041 # immaterial entity
 includeAllChildren
+http://purl.obolibrary.org/obo/COB_0000032 # geographical location
 
 http://purl.obolibrary.org/obo/BFO_0000040 # material entity
-http://purl.obolibrary.org/obo/COB_0000011 # atom
-includeAllChildren
+http://purl.obolibrary.org/obo/COB_0000080 # complex of molecular entities
+http://purl.obolibrary.org/obo/GO_0032991 # protein-containing macromolecular complex
 http://purl.obolibrary.org/obo/CL_0000000  # cell
 http://purl.obolibrary.org/obo/PCO_0000000 # collection of organisms
-http://purl.obolibrary.org/obo/COB_0000080 # complex of molecular entities
 http://purl.obolibrary.org/obo/ENVO_01000813 # geophysical entity (astronomical body part)
+
 http://purl.obolibrary.org/obo/CARO_0001008 # gross anatomical part]
+http://purl.obolibrary.org/obo/COB_0000011 # atom
+http://purl.obolibrary.org/obo/CHEBI_33252 # atomic nucleus
 http://purl.obolibrary.org/obo/COB_0000013 # molecular entity
 includeAllChildren
+
 http://purl.obolibrary.org/obo/OBI_0100026 # organism
 includeAllChildren
 http://purl.obolibrary.org/obo/OBI_0000245 # organization
@@ -35,14 +39,19 @@ http://purl.obolibrary.org/obo/BFO_0000015 # process
 includeAllChildren
 
 # OBJECT AND DATA PROPERTIES.  Some are only in COB, not in RO.
-http://www.w3.org/2002/07/owl#topObjectProperty
-includeAllChildren
 
-# http://purl.obolibrary.org/obo/STATO_0000102 # executes
-# http://purl.obolibrary.org/obo/COB_0000511 # has quantity
-
+http://purl.obolibrary.org/obo/STATO_0000102 # executes
+http://purl.obolibrary.org/obo/COB_0000511 # has quantity
 
 [Top level source term URIs and target direct superclass URIs]
+http://purl.obolibrary.org/obo/IAO_0000030 # information
+http://purl.obolibrary.org/obo/PATO_0000001 # characteristic
+http://purl.obolibrary.org/obo/BFO_0000040 # material entity
+http://purl.obolibrary.org/obo/BFO_0000141 # immaterial entity
+http://purl.obolibrary.org/obo/BFO_0000015 # process
+
+# TEMPORARY FIX, WRONG ID:
+http://purl.obolibrary.org/obo/BFO_0000041 # immaterial entity
 
 [Source term retrieval setting]
 includeAllIntermediates

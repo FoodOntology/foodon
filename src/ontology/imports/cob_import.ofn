@@ -10,13 +10,7 @@ Prefix(skos:=<http://www.w3.org/2004/02/skos/core#>)
 Prefix(terms:=<http://purl.org/dc/terms/>)
 
 
-Ontology(<http://purl.obolibrary.org/obo/cob.owl>
-<http://purl.obolibrary.org/obo/cob/releases/2022-11-02/cob.owl>
-Annotation(dc:description "COB brings together key terms from a wide range of OBO projects to improve interoperability."@en)
-Annotation(dc:title "Core Ontology for Biology and Biomedicine"@en)
-Annotation(terms:license <https://creativecommons.org/publicdomain/zero/1.0/>)
-Annotation(rdfs:comment "This version of COB includes native OBO URIs, only using COB IRIs where equivalent natives could not be found. To see the edition that includes native IRIs, consult cob-edit.owl."@en)
-Annotation(owl:versionInfo "2022-11-02")
+Ontology(<http://purl.obolibrary.org/obo/foodon/imports/cob_import.ofn>
 
 Declaration(Class(obo:BFO_0000015))
 Declaration(Class(obo:BFO_0000016))
@@ -29,20 +23,11 @@ Declaration(Class(obo:BFO_0000041))
 Declaration(Class(obo:CARO_0001008))
 Declaration(Class(obo:CARO_0010004))
 Declaration(Class(obo:CHEBI_10545))
-Declaration(Class(obo:CHEBI_24636))
-Declaration(Class(obo:CHEBI_24867))
-Declaration(Class(obo:CHEBI_30222))
-Declaration(Class(obo:CHEBI_33250))
 Declaration(Class(obo:CHEBI_33252))
 Declaration(Class(obo:CHEBI_36342))
 Declaration(Class(obo:CL_0000000))
-Declaration(Class(obo:CL_0000003))
-Declaration(Class(obo:CL_0001034))
-Declaration(Class(obo:COB_0000005))
 Declaration(Class(obo:COB_0000011))
 Declaration(Class(obo:COB_0000013))
-Declaration(Class(obo:COB_0000014))
-Declaration(Class(obo:COB_0000020))
 Declaration(Class(obo:COB_0000032))
 Declaration(Class(obo:COB_0000056))
 Declaration(Class(obo:COB_0000073))
@@ -50,18 +35,13 @@ Declaration(Class(obo:COB_0000077))
 Declaration(Class(obo:COB_0000080))
 Declaration(Class(obo:COB_0000082))
 Declaration(Class(obo:COB_0000083))
-Declaration(Class(obo:COB_0000116))
 Declaration(Class(obo:COB_0000119))
 Declaration(Class(obo:COB_0000120))
 Declaration(Class(obo:COB_0000121))
-Declaration(Class(obo:COB_0000122))
 Declaration(Class(obo:COB_0001000))
-Declaration(Class(obo:DRON_0000005))
 Declaration(Class(obo:ENVO_01000813))
-Declaration(Class(obo:ENVO_01001110))
 Declaration(Class(obo:ENVO_02500000))
 Declaration(Class(obo:GO_0003674))
-Declaration(Class(obo:GO_0005634))
 Declaration(Class(obo:GO_0008150))
 Declaration(Class(obo:GO_0032991))
 Declaration(Class(obo:IAO_0000005))
@@ -86,44 +66,29 @@ Declaration(Class(obo:OGMS_0000063))
 Declaration(Class(obo:OGMS_0000073))
 Declaration(Class(obo:PATO_0000001))
 Declaration(Class(obo:PATO_0000125))
-Declaration(Class(obo:PATO_0002193))
 Declaration(Class(obo:PCO_0000000))
 Declaration(Class(obo:PR_000000001))
 Declaration(Class(obo:SEPIO_0000048))
 Declaration(ObjectProperty(obo:BFO_0000050))
 Declaration(ObjectProperty(obo:BFO_0000051))
-Declaration(ObjectProperty(obo:BFO_0000054))
 Declaration(ObjectProperty(obo:BFO_0000066))
-Declaration(ObjectProperty(obo:BFO_0000067))
-Declaration(ObjectProperty(obo:COB_0000016))
 Declaration(ObjectProperty(obo:COB_0000078))
 Declaration(ObjectProperty(obo:COB_0000081))
-Declaration(ObjectProperty(obo:COB_0000084))
-Declaration(ObjectProperty(obo:COB_0000085))
 Declaration(ObjectProperty(obo:COB_0000087))
 Declaration(ObjectProperty(obo:IAO_0000136))
 Declaration(ObjectProperty(obo:OBI_0000293))
-Declaration(ObjectProperty(obo:OBI_0000295))
 Declaration(ObjectProperty(obo:OBI_0000299))
-Declaration(ObjectProperty(obo:OBI_0000312))
 Declaration(ObjectProperty(obo:RO_0000052))
 Declaration(ObjectProperty(obo:RO_0000053))
-Declaration(ObjectProperty(obo:RO_0000056))
 Declaration(ObjectProperty(obo:RO_0000057))
-Declaration(ObjectProperty(obo:RO_0000058))
 Declaration(ObjectProperty(obo:RO_0002333))
 Declaration(ObjectProperty(obo:STATO_0000102))
 Declaration(DataProperty(obo:COB_0000511))
-Declaration(DataProperty(obo:COB_0000800))
 Declaration(DataProperty(obo:COB_0000801))
-Declaration(DataProperty(obo:COB_0000803))
 Declaration(AnnotationProperty(obo:COB_based_on))
 Declaration(AnnotationProperty(obo:IAO_0000115))
 Declaration(AnnotationProperty(obo:IAO_0000116))
-Declaration(AnnotationProperty(dc:description))
-Declaration(AnnotationProperty(dc:title))
-Declaration(AnnotationProperty(terms:license))
-Declaration(AnnotationProperty(skos:exactMatch))
+Declaration(AnnotationProperty(obo:IAO_0000412))
 ############################
 #   Annotation Properties
 ############################
@@ -131,6 +96,10 @@ Declaration(AnnotationProperty(skos:exactMatch))
 # Annotation Property: obo:IAO_0000115 (definition)
 
 AnnotationAssertion(rdfs:label obo:IAO_0000115 "definition")
+
+# Annotation Property: obo:IAO_0000412 (imported from)
+
+AnnotationAssertion(rdfs:label obo:IAO_0000412 "imported from"@en)
 
 
 ############################
@@ -140,119 +109,62 @@ AnnotationAssertion(rdfs:label obo:IAO_0000115 "definition")
 # Object Property: obo:BFO_0000050 (part of)
 
 AnnotationAssertion(rdfs:label obo:BFO_0000050 "part of")
-InverseObjectProperties(obo:BFO_0000050 obo:BFO_0000051)
 TransitiveObjectProperty(obo:BFO_0000050)
 
 # Object Property: obo:BFO_0000051 (has part)
 
 AnnotationAssertion(rdfs:label obo:BFO_0000051 "has part")
 
-# Object Property: obo:BFO_0000054 (realized in)
-
-AnnotationAssertion(rdfs:label obo:BFO_0000054 "realized in"@en)
-InverseObjectProperties(obo:BFO_0000054 obo:COB_0000087)
-
 # Object Property: obo:BFO_0000066 (occurs in)
 
 AnnotationAssertion(rdfs:label obo:BFO_0000066 "occurs in")
-InverseObjectProperties(obo:BFO_0000066 obo:BFO_0000067)
-ObjectPropertyDomain(obo:BFO_0000066 obo:BFO_0000015)
-
-# Object Property: obo:BFO_0000067 (contains process)
-
-AnnotationAssertion(rdfs:label obo:BFO_0000067 "contains process"@en)
-
-# Object Property: obo:COB_0000016 (executed by)
-
-AnnotationAssertion(rdfs:label obo:COB_0000016 "executed by"@en)
-InverseObjectProperties(obo:COB_0000016 obo:STATO_0000102)
 
 # Object Property: obo:COB_0000078 (concretizes)
 
 AnnotationAssertion(rdfs:label obo:COB_0000078 "concretizes")
-InverseObjectProperties(obo:COB_0000078 obo:RO_0000058)
+InverseObjectProperties(obo:COB_0000078 ObjectInverseOf(obo:COB_0000078))
 
 # Object Property: obo:COB_0000081 (intended to realize)
 
 AnnotationAssertion(rdfs:label obo:COB_0000081 "intended to realize")
 
-# Object Property: obo:COB_0000084 (has plan)
-
-AnnotationAssertion(rdfs:label obo:COB_0000084 "has plan")
-
-# Object Property: obo:COB_0000085 (intended plan process type)
-
-AnnotationAssertion(rdfs:label obo:COB_0000085 "intended plan process type")
-
 # Object Property: obo:COB_0000087 (realizes)
 
 AnnotationAssertion(rdfs:label obo:COB_0000087 "realizes")
-ObjectPropertyDomain(obo:COB_0000087 obo:BFO_0000015)
-ObjectPropertyRange(obo:COB_0000087 obo:BFO_0000017)
 
 # Object Property: obo:IAO_0000136 (is about)
 
-AnnotationAssertion(obo:COB_based_on obo:IAO_0000136 "http://purl.obolibrary.org/obo/IAO_0000136")
 AnnotationAssertion(rdfs:label obo:IAO_0000136 "is about")
 
 # Object Property: obo:OBI_0000293 (has specified input)
 
 AnnotationAssertion(rdfs:label obo:OBI_0000293 "has specified input"@en)
-SubObjectPropertyOf(obo:OBI_0000293 obo:RO_0000057)
-InverseObjectProperties(obo:OBI_0000293 obo:OBI_0000295)
-ObjectPropertyDomain(obo:OBI_0000293 obo:OBI_0000011)
-
-# Object Property: obo:OBI_0000295 (is specified input of)
-
-AnnotationAssertion(rdfs:label obo:OBI_0000295 "is specified input of"@en)
-SubObjectPropertyOf(obo:OBI_0000295 obo:RO_0000056)
 
 # Object Property: obo:OBI_0000299 (has specified output)
 
 AnnotationAssertion(rdfs:label obo:OBI_0000299 "has specified output"@en)
-SubObjectPropertyOf(obo:OBI_0000299 obo:RO_0000057)
-InverseObjectProperties(obo:OBI_0000299 obo:OBI_0000312)
-ObjectPropertyDomain(obo:OBI_0000299 obo:OBI_0000011)
-
-# Object Property: obo:OBI_0000312 (is specified output of)
-
-AnnotationAssertion(rdfs:label obo:OBI_0000312 "is specified output of"@en)
-SubObjectPropertyOf(obo:OBI_0000312 obo:RO_0000056)
 
 # Object Property: obo:RO_0000052 (characteristic of)
 
 AnnotationAssertion(rdfs:label obo:RO_0000052 "characteristic of"@en)
-InverseObjectProperties(obo:RO_0000052 obo:RO_0000053)
 
 # Object Property: obo:RO_0000053 (has characteristic)
 
 AnnotationAssertion(rdfs:label obo:RO_0000053 "has characteristic")
-AnnotationAssertion(rdfs:seeAlso obo:RO_0000053 "https://github.com/oborel/obo-relations/pull/284")
+InverseObjectProperties(obo:RO_0000053 ObjectInverseOf(obo:RO_0000053))
 InverseFunctionalObjectProperty(obo:RO_0000053)
-ObjectPropertyDomain(Annotation(rdfs:comment "Anything can have a characteristic") obo:RO_0000053 owl:Thing)
-ObjectPropertyRange(obo:RO_0000053 obo:PATO_0000001)
-
-# Object Property: obo:RO_0000056 (participates in)
-
-AnnotationAssertion(rdfs:label obo:RO_0000056 "participates in"@en)
-InverseObjectProperties(obo:RO_0000056 obo:RO_0000057)
 
 # Object Property: obo:RO_0000057 (has participant)
 
 AnnotationAssertion(rdfs:label obo:RO_0000057 "has participant")
-ObjectPropertyDomain(obo:RO_0000057 obo:BFO_0000015)
-
-# Object Property: obo:RO_0000058 (is concretized as)
-
-AnnotationAssertion(rdfs:label obo:RO_0000058 "is concretized as"@en)
 
 # Object Property: obo:RO_0002333 (enabled by)
 
 AnnotationAssertion(rdfs:label obo:RO_0002333 "enabled by")
-SubObjectPropertyOf(obo:RO_0002333 obo:RO_0000057)
 
 # Object Property: obo:STATO_0000102 (executes)
 
+AnnotationAssertion(obo:IAO_0000412 obo:STATO_0000102 obo:cob.owl)
 AnnotationAssertion(rdfs:label obo:STATO_0000102 "executes")
 
 
@@ -262,29 +174,15 @@ AnnotationAssertion(rdfs:label obo:STATO_0000102 "executes")
 
 # Data Property: obo:COB_0000511 (has quantity)
 
+AnnotationAssertion(obo:IAO_0000412 obo:COB_0000511 obo:cob.owl)
 AnnotationAssertion(rdfs:comment obo:COB_0000511 "The range of this property should be a user-defined unit datatype, e.g 182^:cm")
 AnnotationAssertion(rdfs:label obo:COB_0000511 "has quantity")
 AnnotationAssertion(rdfs:seeAlso obo:COB_0000511 "https://github.com/OBOFoundry/COB/issues/35")
 DataPropertyDomain(obo:COB_0000511 obo:PATO_0000001)
 
-# Data Property: obo:COB_0000800 (has atomic number)
-
-AnnotationAssertion(obo:IAO_0000115 obo:COB_0000800 "Number of protons in an atomic nucleus")
-AnnotationAssertion(rdfs:comment obo:COB_0000800 "We are undecided as to whether to ultimately model this as a data property of object property + cardinality, but for now we are using DPs as these are faster for reasoning")
-AnnotationAssertion(rdfs:label obo:COB_0000800 "has atomic number"@en)
-DataPropertyDomain(obo:COB_0000800 obo:COB_0000011)
-DataPropertyRange(obo:COB_0000800 xsd:nonNegativeInteger)
-
 # Data Property: obo:COB_0000801 (has number of atomic nuclei)
 
 AnnotationAssertion(rdfs:label obo:COB_0000801 "has number of atomic nuclei"@en)
-DataPropertyDomain(obo:COB_0000801 obo:BFO_0000040)
-DataPropertyRange(obo:COB_0000801 xsd:nonNegativeInteger)
-
-# Data Property: obo:COB_0000803 (has inchi string)
-
-AnnotationAssertion(rdfs:label obo:COB_0000803 "has inchi string"@en)
-SubDataPropertyOf(obo:COB_0000803 owl:topDataProperty)
 
 
 
@@ -294,88 +192,75 @@ SubDataPropertyOf(obo:COB_0000803 owl:topDataProperty)
 
 # Class: obo:BFO_0000015 (process)
 
+AnnotationAssertion(obo:IAO_0000412 obo:BFO_0000015 obo:cob.owl)
 AnnotationAssertion(rdfs:label obo:BFO_0000015 "process"@en)
-SubClassOf(obo:BFO_0000015 owl:Thing)
-SubClassOf(obo:BFO_0000015 ObjectAllValuesFrom(obo:BFO_0000050 obo:BFO_0000015))
 
 # Class: obo:BFO_0000016 (disposition)
 
+AnnotationAssertion(obo:IAO_0000412 obo:BFO_0000016 obo:cob.owl)
 AnnotationAssertion(rdfs:label obo:BFO_0000016 "disposition"@en)
 SubClassOf(obo:BFO_0000016 obo:BFO_0000017)
 
 # Class: obo:BFO_0000017 (realizable)
 
+AnnotationAssertion(obo:IAO_0000412 obo:BFO_0000017 obo:cob.owl)
 AnnotationAssertion(rdfs:label obo:BFO_0000017 "realizable"@en)
 SubClassOf(obo:BFO_0000017 obo:PATO_0000001)
 
 # Class: obo:BFO_0000023 (role)
 
+AnnotationAssertion(obo:IAO_0000412 obo:BFO_0000023 obo:cob.owl)
 AnnotationAssertion(rdfs:label obo:BFO_0000023 "role"@en)
 SubClassOf(obo:BFO_0000023 obo:BFO_0000017)
 
 # Class: obo:BFO_0000029 (site)
 
+AnnotationAssertion(obo:IAO_0000412 obo:BFO_0000029 obo:cob.owl)
 AnnotationAssertion(rdfs:label obo:BFO_0000029 "site")
 SubClassOf(obo:BFO_0000029 obo:BFO_0000041)
 
 # Class: obo:BFO_0000034 (function)
 
+AnnotationAssertion(obo:IAO_0000412 obo:BFO_0000034 obo:cob.owl)
 AnnotationAssertion(rdfs:label obo:BFO_0000034 "function"@en)
 SubClassOf(obo:BFO_0000034 obo:BFO_0000016)
 
 # Class: obo:BFO_0000040 (material entity)
 
+AnnotationAssertion(obo:IAO_0000412 obo:BFO_0000040 obo:cob.owl)
 AnnotationAssertion(rdfs:label obo:BFO_0000040 "material entity"@en)
-SubClassOf(obo:BFO_0000040 owl:Thing)
 
 # Class: obo:BFO_0000041 (immaterial entity)
 
+AnnotationAssertion(obo:IAO_0000412 obo:BFO_0000041 obo:cob.owl)
 AnnotationAssertion(rdfs:label obo:BFO_0000041 "immaterial entity"@en)
-SubClassOf(obo:BFO_0000041 owl:Thing)
 
 # Class: obo:CARO_0001008 (gross anatomical part)
 
 AnnotationAssertion(obo:IAO_0000115 obo:CARO_0001008 "A part of a multicellular organism that is a collection of cell components that are not all contained in one cell.")
+AnnotationAssertion(obo:IAO_0000412 obo:CARO_0001008 obo:cob.owl)
 AnnotationAssertion(rdfs:comment obo:CARO_0001008 "Bodily fluids, such as urine, are currently defined as anatomical entities in UBERON. We should make sure there is a proper home for these here.")
 AnnotationAssertion(rdfs:label obo:CARO_0001008 "gross anatomical part"@en)
 SubClassOf(obo:CARO_0001008 obo:BFO_0000040)
 
 # Class: obo:CARO_0010004 (cellular organism)
 
+AnnotationAssertion(obo:IAO_0000412 obo:CARO_0010004 obo:cob.owl)
 AnnotationAssertion(rdfs:label obo:CARO_0010004 "cellular organism"@en)
 SubClassOf(obo:CARO_0010004 obo:OBI_0100026)
 
 # Class: obo:CHEBI_10545 (electron)
 
+AnnotationAssertion(obo:IAO_0000412 obo:CHEBI_10545 obo:cob.owl)
 AnnotationAssertion(rdfs:label obo:CHEBI_10545 "electron"@en)
 AnnotationAssertion(rdfs:label obo:CHEBI_10545 "nucleic acid polymer")
 SubClassOf(obo:CHEBI_10545 obo:CHEBI_36342)
 SubClassOf(obo:CHEBI_10545 obo:COB_0000013)
 SubClassOf(obo:CHEBI_10545 DataHasValue(obo:COB_0000801 "0"^^xsd:integer))
 
-# Class: obo:CHEBI_24636 (proton)
-
-AnnotationAssertion(rdfs:label obo:CHEBI_24636 "proton"@en)
-SubClassOf(obo:CHEBI_24636 obo:CHEBI_36342)
-
-# Class: obo:CHEBI_24867 (monoatomic ion)
-
-AnnotationAssertion(rdfs:label obo:CHEBI_24867 "monoatomic ion")
-SubClassOf(obo:CHEBI_24867 obo:COB_0000011)
-DisjointClasses(obo:CHEBI_24867 obo:CHEBI_33250)
-
-# Class: obo:CHEBI_30222 (neutron)
-
-AnnotationAssertion(rdfs:label obo:CHEBI_30222 "neutron"@en)
-SubClassOf(obo:CHEBI_30222 obo:CHEBI_36342)
-
-# Class: obo:CHEBI_33250 (uncharged atom)
-
-AnnotationAssertion(rdfs:label obo:CHEBI_33250 "uncharged atom")
-SubClassOf(obo:CHEBI_33250 obo:COB_0000011)
-
 # Class: obo:CHEBI_33252 (atomic nucleus)
 
+AnnotationAssertion(obo:IAO_0000412 obo:CHEBI_33252 obo:cob.owl)
 AnnotationAssertion(rdfs:comment obo:CHEBI_33252 "Some people may be uncomfortable calling every proton an atomic nucleus")
 AnnotationAssertion(rdfs:comment obo:CHEBI_33252 "This is equivalent to CHEBI:33252")
 AnnotationAssertion(rdfs:label obo:CHEBI_33252 "atomic nucleus"@en)
@@ -383,88 +268,60 @@ SubClassOf(obo:CHEBI_33252 obo:CHEBI_36342)
 
 # Class: obo:CHEBI_36342 (subatomic particle)
 
+AnnotationAssertion(obo:IAO_0000412 obo:CHEBI_36342 obo:cob.owl)
 AnnotationAssertion(rdfs:label obo:CHEBI_36342 "subatomic particle"@en)
 SubClassOf(obo:CHEBI_36342 obo:BFO_0000040)
 
 # Class: obo:CL_0000000 (cell)
 
 AnnotationAssertion(obo:IAO_0000115 obo:CL_0000000 "A material entity that has a plasma membrane and results from cellular division.")
+AnnotationAssertion(obo:IAO_0000412 obo:CL_0000000 obo:cob.owl)
 AnnotationAssertion(rdfs:comment obo:CL_0000000 "CL and GO definitions of cell differ based on inclusive or exclusive of cell wall, etc.")
 AnnotationAssertion(rdfs:comment obo:CL_0000000 "We struggled with this definition. We are worried about circularity. We also considered requiring the capability of metabolism.")
 AnnotationAssertion(rdfs:label obo:CL_0000000 "cell"@en)
 SubClassOf(obo:CL_0000000 obo:BFO_0000040)
 
-# Class: obo:CL_0000003 (native cell)
-
-AnnotationAssertion(rdfs:label obo:CL_0000003 "native cell"@en)
-SubClassOf(obo:CL_0000003 obo:CL_0000000)
-
-# Class: obo:CL_0001034 (cell in vitro)
-
-AnnotationAssertion(rdfs:label obo:CL_0001034 "cell in vitro"@en)
-SubClassOf(obo:CL_0001034 obo:CL_0000000)
-
-# Class: obo:COB_0000005 (obsolete_elementary charge)
-
-AnnotationAssertion(obo:IAO_0000116 obo:COB_0000005 "no longer needed")
-AnnotationAssertion(rdfs:label obo:COB_0000005 "obsolete_elementary charge"@en)
-AnnotationAssertion(owl:deprecated obo:COB_0000005 "true"^^xsd:boolean)
-SubClassOf(obo:COB_0000005 owl:Thing)
-
 # Class: obo:COB_0000011 (atom)
 
 AnnotationAssertion(obo:IAO_0000115 obo:COB_0000011 "A material entity consisting of exactly one atomic nucleus and the electron(s) orbiting it.")
+AnnotationAssertion(obo:IAO_0000412 obo:COB_0000011 obo:cob.owl)
 AnnotationAssertion(rdfs:comment obo:COB_0000011 "This atom is closely related to ChEBI's atom, but not exactly equivalent to.")
 AnnotationAssertion(rdfs:label obo:COB_0000011 "atom"@en)
 EquivalentClasses(obo:COB_0000011 DataHasValue(obo:COB_0000801 "1"^^xsd:integer))
 SubClassOf(obo:COB_0000011 obo:BFO_0000040)
 SubClassOf(obo:COB_0000011 ObjectSomeValuesFrom(obo:BFO_0000051 obo:CHEBI_33252))
-DisjointClasses(obo:COB_0000011 obo:COB_0000013)
 
 # Class: obo:COB_0000013 (molecular entity)
 
 AnnotationAssertion(obo:IAO_0000115 obo:COB_0000013 "A material entity that consists of two or more atoms that are all connected via covalent bonds such that any atom can be transitively connected with any other atom.")
+AnnotationAssertion(obo:IAO_0000412 obo:COB_0000013 obo:cob.owl)
 AnnotationAssertion(rdfs:comment obo:COB_0000013 "This molecular entity is different than ChEBI's 'molecular entity'.")
 AnnotationAssertion(rdfs:comment obo:COB_0000013 "We would like to have cardinality restrictions on the logic, but there are some technical limitations.")
 AnnotationAssertion(rdfs:label obo:COB_0000013 "molecular entity"@en)
 SubClassOf(obo:COB_0000013 obo:BFO_0000040)
 SubClassOf(obo:COB_0000013 ObjectSomeValuesFrom(obo:BFO_0000051 obo:COB_0000011))
-DisjointClasses(obo:COB_0000013 obo:COB_0000080)
-
-# Class: obo:COB_0000014 (obsolete macromolecular entity)
-
-AnnotationAssertion(obo:IAO_0000115 obo:COB_0000014 "A material entity consisting of multiple atoms that are completely connected by covalent bonds and structured in subunits, and where the most determinate class identity of the macromolecule is not necessarily changed when there is an addition or subtraction of atoms or bonds.")
-AnnotationAssertion(rdfs:comment obo:COB_0000014 "Terms moved to 'molecular entity', see https://github.com/OBOFoundry/Experimental-OBO-Core/issues/33")
-AnnotationAssertion(rdfs:label obo:COB_0000014 "obsolete macromolecular entity"@en)
-AnnotationAssertion(owl:deprecated obo:COB_0000014 "true"^^xsd:boolean)
-SubClassOf(obo:COB_0000014 owl:Thing)
-
-# Class: obo:COB_0000020 (subcellular structure)
-
-AnnotationAssertion(obo:IAO_0000115 obo:COB_0000020 "A material entity consisting of at least two macromolecular entities derived from a cell as parts, and that has a function for the cell.")
-AnnotationAssertion(rdfs:comment obo:COB_0000020 "Components are larger than individual macromolecular entities. It is tricky to define distinction between 'cell component' and 'macromolecular entity', e.g. ribosome. We would like to exclude most protein complexes.")
-AnnotationAssertion(rdfs:comment obo:COB_0000020 "Overlaps with some cellular components from GO")
-AnnotationAssertion(rdfs:label obo:COB_0000020 "subcellular structure"@en)
-SubClassOf(obo:COB_0000020 obo:BFO_0000040)
-SubClassOf(obo:COB_0000020 ObjectSomeValuesFrom(obo:BFO_0000051 obo:COB_0000013))
 
 # Class: obo:COB_0000032 (geographical location)
 
+AnnotationAssertion(obo:IAO_0000412 obo:COB_0000032 obo:cob.owl)
 AnnotationAssertion(rdfs:label obo:COB_0000032 "geographical location"@en)
 SubClassOf(obo:COB_0000032 obo:BFO_0000041)
 
 # Class: obo:COB_0000056 (immaterial anatomical entity)
 
+AnnotationAssertion(obo:IAO_0000412 obo:COB_0000056 obo:cob.owl)
 AnnotationAssertion(rdfs:label obo:COB_0000056 "immaterial anatomical entity")
 SubClassOf(obo:COB_0000056 obo:BFO_0000041)
 
 # Class: obo:COB_0000073 (gene product)
 
+AnnotationAssertion(obo:IAO_0000412 obo:COB_0000073 obo:cob.owl)
 AnnotationAssertion(rdfs:label obo:COB_0000073 "gene product")
 SubClassOf(obo:COB_0000073 obo:COB_0000013)
 
 # Class: obo:COB_0000077 (action specification)
 
+AnnotationAssertion(obo:IAO_0000412 obo:COB_0000077 obo:cob.owl)
 AnnotationAssertion(rdfs:label obo:COB_0000077 "action specification")
 SubClassOf(obo:COB_0000077 obo:IAO_0000033)
 SubClassOf(obo:COB_0000077 ObjectSomeValuesFrom(obo:BFO_0000051 obo:COB_0000077))
@@ -473,13 +330,15 @@ SubClassOf(obo:COB_0000077 ObjectSomeValuesFrom(obo:BFO_0000051 obo:IAO_0000005)
 # Class: obo:COB_0000080 (complex of molecular entities)
 
 AnnotationAssertion(obo:IAO_0000115 obo:COB_0000080 "A complex of two or more molecular entities that are not covalently bound.")
+AnnotationAssertion(obo:IAO_0000412 obo:COB_0000080 obo:cob.owl)
 AnnotationAssertion(rdfs:label obo:COB_0000080 "complex of molecular entities")
 SubClassOf(obo:COB_0000080 obo:BFO_0000040)
-SubClassOf(Annotation(rdfs:comment ">=2 parts (not we cannot use cardinality with transitive properties)") obo:COB_0000080 ObjectSomeValuesFrom(obo:BFO_0000051 obo:COB_0000013))
+SubClassOf(obo:COB_0000080 ObjectSomeValuesFrom(obo:BFO_0000051 obo:COB_0000013))
 
 # Class: obo:COB_0000082 (planned process)
 
 AnnotationAssertion(obo:IAO_0000115 obo:COB_0000082 "A process that is initiated by an agent who intends to carry out a plan to achieve an objective through one or more actions as described in a plan specification.")
+AnnotationAssertion(obo:IAO_0000412 obo:COB_0000082 obo:cob.owl)
 AnnotationAssertion(rdfs:label obo:COB_0000082 "planned process")
 SubClassOf(obo:COB_0000082 obo:BFO_0000015)
 SubClassOf(obo:COB_0000082 ObjectSomeValuesFrom(obo:COB_0000081 obo:OBI_0000260))
@@ -487,24 +346,21 @@ SubClassOf(obo:COB_0000082 ObjectSomeValuesFrom(obo:COB_0000087 obo:SEPIO_000004
 
 # Class: obo:COB_0000083 (failed planned process)
 
+AnnotationAssertion(obo:IAO_0000412 obo:COB_0000083 obo:cob.owl)
 AnnotationAssertion(rdfs:label obo:COB_0000083 "failed planned process")
 SubClassOf(obo:COB_0000083 obo:COB_0000082)
-DisjointClasses(obo:COB_0000083 obo:OBI_0000011)
-
-# Class: obo:COB_0000116 (cellular membrane)
-
-AnnotationAssertion(rdfs:label obo:COB_0000116 "cellular membrane"@en)
-SubClassOf(obo:COB_0000116 obo:COB_0000020)
 
 # Class: obo:COB_0000119 (evaluant role)
 
 AnnotationAssertion(obo:COB_based_on obo:COB_0000119 "OBI:0000067")
+AnnotationAssertion(obo:IAO_0000412 obo:COB_0000119 obo:cob.owl)
 AnnotationAssertion(rdfs:label obo:COB_0000119 "evaluant role")
 SubClassOf(obo:COB_0000119 obo:BFO_0000023)
 
 # Class: obo:COB_0000120 (information representation)
 
 AnnotationAssertion(obo:COB_based_on obo:COB_0000120 "http://purl.obolibrary.org/obo/IAO_0000015")
+AnnotationAssertion(obo:IAO_0000412 obo:COB_0000120 obo:cob.owl)
 AnnotationAssertion(rdfs:comment obo:COB_0000120 "Pier 'representational entity'")
 AnnotationAssertion(rdfs:comment obo:COB_0000120 "This captures: pattern of writing in a book; neural state in the brain, electronic charges in computer memory etc")
 AnnotationAssertion(rdfs:label obo:COB_0000120 "information representation")
@@ -514,102 +370,78 @@ SubClassOf(obo:COB_0000120 obo:PATO_0000001)
 # Class: obo:COB_0000121 (measurement datum)
 
 AnnotationAssertion(obo:COB_based_on obo:COB_0000121 "http://purl.obolibrary.org/obo/IAO_0000109")
+AnnotationAssertion(obo:IAO_0000412 obo:COB_0000121 obo:cob.owl)
 AnnotationAssertion(rdfs:label obo:COB_0000121 "measurement datum")
 SubClassOf(obo:COB_0000121 obo:IAO_0000027)
-
-# Class: obo:COB_0000122 (physical information carrier)
-
-AnnotationAssertion(rdfs:label obo:COB_0000122 "physical information carrier")
-EquivalentClasses(obo:COB_0000122 ObjectSomeValuesFrom(obo:RO_0000053 ObjectSomeValuesFrom(obo:COB_0000078 obo:IAO_0000030)))
-SubClassOf(obo:COB_0000122 obo:BFO_0000040)
 
 # Class: obo:COB_0001000 (exposure of organism)
 
 AnnotationAssertion(obo:IAO_0000115 obo:COB_0001000 "A process during which an organism comes into contact with another entity.")
+AnnotationAssertion(obo:IAO_0000412 obo:COB_0001000 obo:cob.owl)
 AnnotationAssertion(rdfs:label obo:COB_0001000 "exposure of organism"@en)
 SubClassOf(obo:COB_0001000 obo:BFO_0000015)
 
-# Class: obo:DRON_0000005 (drug product)
-
-AnnotationAssertion(obo:COB_based_on obo:DRON_0000005 obo:DRON_00000005)
-AnnotationAssertion(obo:IAO_0000115 obo:DRON_0000005 "A processed material entity created to be administered to an individual with the intent to improve health.")
-AnnotationAssertion(rdfs:label obo:DRON_0000005 "drug product")
-SubClassOf(obo:DRON_0000005 obo:OBI_0000047)
-
 # Class: obo:ENVO_01000813 (geophysical entity)
 
+AnnotationAssertion(obo:IAO_0000412 obo:ENVO_01000813 obo:cob.owl)
 AnnotationAssertion(rdfs:label obo:ENVO_01000813 "geophysical entity")
 SubClassOf(obo:ENVO_01000813 obo:BFO_0000040)
 
-# Class: obo:ENVO_01001110 (ecosystem)
-
-AnnotationAssertion(rdfs:label obo:ENVO_01001110 "ecosystem")
-SubClassOf(obo:ENVO_01001110 obo:BFO_0000040)
-
 # Class: obo:ENVO_02500000 (environmental process)
 
+AnnotationAssertion(obo:IAO_0000412 obo:ENVO_02500000 obo:cob.owl)
 AnnotationAssertion(rdfs:label obo:ENVO_02500000 "environmental process")
 SubClassOf(obo:ENVO_02500000 obo:BFO_0000015)
-DisjointClasses(obo:ENVO_02500000 obo:GO_0003674)
-DisjointClasses(obo:ENVO_02500000 obo:GO_0008150)
-DisjointClasses(obo:ENVO_02500000 obo:MOP_0000543)
 
 # Class: obo:GO_0003674 (gene product or complex activity)
 
+AnnotationAssertion(obo:IAO_0000412 obo:GO_0003674 obo:cob.owl)
 AnnotationAssertion(rdfs:comment obo:GO_0003674 "This is the same as GO molecular function")
 AnnotationAssertion(rdfs:label obo:GO_0003674 "gene product or complex activity"@en)
 SubClassOf(obo:GO_0003674 obo:BFO_0000015)
 SubClassOf(obo:GO_0003674 ObjectSomeValuesFrom(obo:RO_0002333 ObjectUnionOf(obo:COB_0000073 obo:GO_0032991)))
-DisjointClasses(obo:GO_0003674 obo:GO_0008150)
-DisjointClasses(obo:GO_0003674 obo:MOP_0000543)
-
-# Class: obo:GO_0005634 (cell nucleus)
-
-AnnotationAssertion(rdfs:label obo:GO_0005634 "cell nucleus"@en)
-SubClassOf(obo:GO_0005634 obo:COB_0000020)
 
 # Class: obo:GO_0008150 (biological process)
 
 AnnotationAssertion(obo:IAO_0000115 obo:GO_0008150 "A process that emerges from two or more causally-connected macromolecular activities and has evolved to achieve a biological objective.")
+AnnotationAssertion(obo:IAO_0000412 obo:GO_0008150 obo:cob.owl)
 AnnotationAssertion(rdfs:comment obo:GO_0008150 "A biological process is an evolved process")
 AnnotationAssertion(rdfs:label obo:GO_0008150 "biological process"@en)
 SubClassOf(obo:GO_0008150 obo:BFO_0000015)
 SubClassOf(obo:GO_0008150 ObjectUnionOf(ObjectSomeValuesFrom(obo:BFO_0000066 obo:OBI_0100026) ObjectSomeValuesFrom(obo:RO_0000057 obo:OBI_0100026) ObjectSomeValuesFrom(obo:RO_0000057 ObjectSomeValuesFrom(obo:BFO_0000050 obo:OBI_0100026))))
 SubClassOf(obo:GO_0008150 ObjectSomeValuesFrom(obo:BFO_0000051 obo:GO_0003674))
-DisjointClasses(obo:GO_0008150 obo:MOP_0000543)
 
 # Class: obo:GO_0032991 (protein-containing macromolecular complex)
 
-AnnotationAssertion(rdfs:comment obo:GO_0032991 "This is not covalently bonded, which conflicts with changes to the parent definition.")
 AnnotationAssertion(rdfs:label obo:GO_0032991 "protein-containing macromolecular complex")
-SubClassOf(obo:GO_0032991 obo:COB_0000080)
-SubClassOf(obo:GO_0032991 ObjectSomeValuesFrom(obo:BFO_0000051 obo:COB_0000073))
 
 # Class: obo:IAO_0000005 (objective specification)
 
+AnnotationAssertion(obo:IAO_0000412 obo:IAO_0000005 obo:cob.owl)
 AnnotationAssertion(rdfs:label obo:IAO_0000005 "objective specification")
 SubClassOf(obo:IAO_0000005 obo:IAO_0000033)
 
 # Class: obo:IAO_0000027 (data item)
 
+AnnotationAssertion(obo:IAO_0000412 obo:IAO_0000027 obo:cob.owl)
 AnnotationAssertion(rdfs:label obo:IAO_0000027 "data item"@en)
 SubClassOf(obo:IAO_0000027 obo:IAO_0000030)
 
-# Class: obo:IAO_0000030 (information)
+# Class: obo:IAO_0000030 (information content entity)
 
+AnnotationAssertion(obo:IAO_0000412 obo:IAO_0000030 obo:cob.owl)
 AnnotationAssertion(rdfs:comment obo:IAO_0000030 "Pier: 'data, information or knowledge'. OR 'representation")
 AnnotationAssertion(rdfs:label obo:IAO_0000030 "information")
-SubClassOf(obo:IAO_0000030 owl:Thing)
-SubClassOf(obo:IAO_0000030 ObjectSomeValuesFrom(obo:IAO_0000136 owl:Thing))
-SubClassOf(obo:IAO_0000030 ObjectSomeValuesFrom(ObjectInverseOf(obo:COB_0000078) obo:COB_0000120))
 
 # Class: obo:IAO_0000033 (directive information entity)
 
+AnnotationAssertion(obo:IAO_0000412 obo:IAO_0000033 obo:cob.owl)
 AnnotationAssertion(rdfs:label obo:IAO_0000033 "directive information entity")
 SubClassOf(obo:IAO_0000033 obo:IAO_0000030)
 
 # Class: obo:IAO_0000104 (plan specification)
 
+AnnotationAssertion(obo:IAO_0000412 obo:IAO_0000104 obo:cob.owl)
 AnnotationAssertion(rdfs:label obo:IAO_0000104 "plan specification")
 SubClassOf(obo:IAO_0000104 obo:IAO_0000033)
 SubClassOf(obo:IAO_0000104 ObjectSomeValuesFrom(obo:BFO_0000051 obo:COB_0000077))
@@ -617,17 +449,20 @@ SubClassOf(obo:IAO_0000104 ObjectSomeValuesFrom(obo:BFO_0000051 obo:IAO_0000005)
 
 # Class: obo:IAO_0000310 (document)
 
+AnnotationAssertion(obo:IAO_0000412 obo:IAO_0000310 obo:cob.owl)
 AnnotationAssertion(rdfs:label obo:IAO_0000310 "document"@en)
 SubClassOf(obo:IAO_0000310 obo:IAO_0000030)
 
 # Class: obo:MOP_0000543 (physico-chemical process)
 
+AnnotationAssertion(obo:IAO_0000412 obo:MOP_0000543 obo:cob.owl)
 AnnotationAssertion(rdfs:comment obo:MOP_0000543 "This is meant to capture processes that are more fundamental than macromolecular activities")
 AnnotationAssertion(rdfs:label obo:MOP_0000543 "physico-chemical process")
 SubClassOf(obo:MOP_0000543 obo:BFO_0000015)
 
 # Class: obo:OBI_0000011 (completely executed planned process)
 
+AnnotationAssertion(obo:IAO_0000412 obo:OBI_0000011 obo:cob.owl)
 AnnotationAssertion(rdfs:label obo:OBI_0000011 "completely executed planned process"@en)
 SubClassOf(obo:OBI_0000011 obo:COB_0000082)
 SubClassOf(obo:OBI_0000011 ObjectSomeValuesFrom(obo:COB_0000087 obo:OBI_0000260))
@@ -635,16 +470,19 @@ SubClassOf(obo:OBI_0000011 ObjectSomeValuesFrom(obo:COB_0000087 obo:OBI_0000260)
 # Class: obo:OBI_0000047 (processed material entity)
 
 AnnotationAssertion(obo:IAO_0000115 obo:OBI_0000047 "A material entity processed by human activity with an intent to produce")
+AnnotationAssertion(obo:IAO_0000412 obo:OBI_0000047 obo:cob.owl)
 AnnotationAssertion(rdfs:label obo:OBI_0000047 "processed material entity"@en)
 SubClassOf(obo:OBI_0000047 obo:BFO_0000040)
 
 # Class: obo:OBI_0000066 (investigation)
 
+AnnotationAssertion(obo:IAO_0000412 obo:OBI_0000066 obo:cob.owl)
 AnnotationAssertion(rdfs:label obo:OBI_0000066 "investigation"@en)
 SubClassOf(obo:OBI_0000066 obo:OBI_0000011)
 
 # Class: obo:OBI_0000070 (assay)
 
+AnnotationAssertion(obo:IAO_0000412 obo:OBI_0000070 obo:cob.owl)
 AnnotationAssertion(rdfs:label obo:OBI_0000070 "assay"@en)
 SubClassOf(obo:OBI_0000070 obo:OBI_0000011)
 SubClassOf(obo:OBI_0000070 ObjectSomeValuesFrom(obo:OBI_0000293 ObjectIntersectionOf(obo:BFO_0000040 ObjectSomeValuesFrom(obo:RO_0000053 obo:COB_0000119))))
@@ -652,17 +490,20 @@ SubClassOf(obo:OBI_0000070 ObjectSomeValuesFrom(obo:OBI_0000299 ObjectIntersecti
 
 # Class: obo:OBI_0000094 (material processing)
 
+AnnotationAssertion(obo:IAO_0000412 obo:OBI_0000094 obo:cob.owl)
 AnnotationAssertion(rdfs:label obo:OBI_0000094 "material processing"@en)
 SubClassOf(obo:OBI_0000094 obo:OBI_0000011)
 
 # Class: obo:OBI_0000245 (organization)
 
+AnnotationAssertion(obo:IAO_0000412 obo:OBI_0000245 obo:cob.owl)
 AnnotationAssertion(rdfs:comment obo:OBI_0000245 "Should revisit if we can place outside of material entity - a collection of roles.")
 AnnotationAssertion(rdfs:label obo:OBI_0000245 "organization"@en)
 SubClassOf(obo:OBI_0000245 obo:BFO_0000040)
 
 # Class: obo:OBI_0000260 (plan)
 
+AnnotationAssertion(obo:IAO_0000412 obo:OBI_0000260 obo:cob.owl)
 AnnotationAssertion(rdfs:label obo:OBI_0000260 "plan"@en)
 SubClassOf(obo:OBI_0000260 obo:BFO_0000017)
 SubClassOf(obo:OBI_0000260 obo:COB_0000120)
@@ -671,12 +512,14 @@ SubClassOf(obo:OBI_0000260 ObjectAllValuesFrom(ObjectInverseOf(obo:COB_0000087) 
 
 # Class: obo:OBI_0001909 (conclusion based on data)
 
+AnnotationAssertion(obo:IAO_0000412 obo:OBI_0001909 obo:cob.owl)
 AnnotationAssertion(rdfs:label obo:OBI_0001909 "conclusion based on data")
 SubClassOf(obo:OBI_0001909 obo:IAO_0000030)
 
 # Class: obo:OBI_0100026 (organism)
 
 AnnotationAssertion(obo:IAO_0000115 obo:OBI_0100026 "A material entity that is a maximal functionally integrated unit that develops from a program encoded in a genome.")
+AnnotationAssertion(obo:IAO_0000412 obo:OBI_0100026 obo:cob.owl)
 AnnotationAssertion(rdfs:comment obo:OBI_0100026 "\"Maximal functionally integrated unit\" is intended to express unity, which Barry considers synonymous with BFO 'object'.")
 AnnotationAssertion(rdfs:comment obo:OBI_0100026 "Includes virus - we will later have a class for cellular organisms.")
 AnnotationAssertion(rdfs:label obo:OBI_0100026 "organism"@en)
@@ -684,61 +527,66 @@ SubClassOf(obo:OBI_0100026 obo:BFO_0000040)
 
 # Class: obo:OBI_0200000 (data transformation)
 
+AnnotationAssertion(obo:IAO_0000412 obo:OBI_0200000 obo:cob.owl)
 AnnotationAssertion(rdfs:label obo:OBI_0200000 "data transformation"@en)
 SubClassOf(obo:OBI_0200000 obo:OBI_0000011)
 
 # Class: obo:OGMS_0000014 (phenotypic finding)
 
+AnnotationAssertion(obo:IAO_0000412 obo:OGMS_0000014 obo:cob.owl)
 AnnotationAssertion(rdfs:label obo:OGMS_0000014 "phenotypic finding")
 SubClassOf(obo:OGMS_0000014 obo:IAO_0000030)
 
 # Class: obo:OGMS_0000063 (disease course)
 
+AnnotationAssertion(obo:IAO_0000412 obo:OGMS_0000063 obo:cob.owl)
 AnnotationAssertion(rdfs:label obo:OGMS_0000063 "disease course")
 SubClassOf(obo:OGMS_0000063 obo:BFO_0000015)
 
 # Class: obo:OGMS_0000073 (disease diagnosis)
 
+AnnotationAssertion(obo:IAO_0000412 obo:OGMS_0000073 obo:cob.owl)
 AnnotationAssertion(rdfs:label obo:OGMS_0000073 "disease diagnosis")
 SubClassOf(obo:OGMS_0000073 obo:IAO_0000030)
 
 # Class: obo:PATO_0000001 (characteristic)
 
+AnnotationAssertion(obo:IAO_0000412 obo:PATO_0000001 obo:cob.owl)
 AnnotationAssertion(rdfs:label obo:PATO_0000001 "characteristic"@en)
 AnnotationAssertion(rdfs:seeAlso obo:PATO_0000001 "https://github.com/OBOFoundry/COB/issues/65")
 AnnotationAssertion(rdfs:seeAlso obo:PATO_0000001 "https://github.com/oborel/obo-relations/pull/284")
-SubClassOf(obo:PATO_0000001 owl:Thing)
-SubClassOf(Annotation(rdfs:comment "We should name the inverse in COB and avoid the confusing inverse(..) construct") obo:PATO_0000001 ObjectSomeValuesFrom(ObjectInverseOf(obo:RO_0000053) owl:Thing))
-SubClassOf(obo:PATO_0000001 ObjectAllValuesFrom(obo:BFO_0000051 obo:PATO_0000001))
 
 # Class: obo:PATO_0000125 (mass)
 
+AnnotationAssertion(obo:IAO_0000412 obo:PATO_0000125 obo:cob.owl)
 AnnotationAssertion(rdfs:label obo:PATO_0000125 "mass"@en)
 SubClassOf(obo:PATO_0000125 obo:PATO_0000001)
 SubClassOf(obo:PATO_0000125 ObjectSomeValuesFrom(obo:RO_0000052 obo:BFO_0000040))
 
-# Class: obo:PATO_0002193 (charge)
-
-AnnotationAssertion(rdfs:label obo:PATO_0002193 "charge"@en)
-SubClassOf(obo:PATO_0002193 obo:PATO_0000001)
-SubClassOf(obo:PATO_0002193 ObjectSomeValuesFrom(obo:RO_0000052 obo:BFO_0000040))
-
 # Class: obo:PCO_0000000 (collection of organisms)
 
+AnnotationAssertion(obo:IAO_0000412 obo:PCO_0000000 obo:cob.owl)
 AnnotationAssertion(rdfs:label obo:PCO_0000000 "collection of organisms")
 SubClassOf(obo:PCO_0000000 obo:BFO_0000040)
 
-# Class: obo:PR_000000001 (protein)
+# Class: obo:PR_000000001 (protein (PR ontology))
 
+AnnotationAssertion(obo:IAO_0000412 obo:PR_000000001 obo:cob.owl)
 AnnotationAssertion(rdfs:label obo:PR_000000001 "protein"@en)
 SubClassOf(obo:PR_000000001 obo:COB_0000013)
 
 # Class: obo:SEPIO_0000048 (agent role)
 
 AnnotationAssertion(obo:IAO_0000116 obo:SEPIO_0000048 "A role realized by a participant in a process such that the participant causes the process.")
+AnnotationAssertion(obo:IAO_0000412 obo:SEPIO_0000048 obo:cob.owl)
 AnnotationAssertion(rdfs:label obo:SEPIO_0000048 "agent role")
 SubClassOf(obo:SEPIO_0000048 obo:BFO_0000023)
 
 
 SubObjectPropertyOf(ObjectPropertyChain(obo:COB_0000087 obo:COB_0000078) obo:STATO_0000102)
+AnnotationAssertion(obo:IAO_0000412 _:genid2147490111 obo:cob.owl)
+AnnotationAssertion(obo:IAO_0000412 _:genid2147490112 obo:cob.owl)
+AnnotationAssertion(obo:IAO_0000412 _:genid2147490113 obo:cob.owl)
+AnnotationAssertion(obo:IAO_0000412 _:genid2147490114 obo:cob.owl)
+AnnotationAssertion(obo:IAO_0000412 _:genid2147490115 obo:cob.owl)
 )
