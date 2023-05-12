@@ -6,7 +6,14 @@ COB
 
 [Low level source term URIs]
 http://purl.obolibrary.org/obo/IAO_0000030 # information
-includeAllChildren
+http://purl.obolibrary.org/obo/IAO:0000027 #	data item ()
+http://purl.obolibrary.org/obo/COB:0000121 #		measurement datum
+http://purl.obolibrary.org/obo/IAO:0000033 #	directive information entity
+http://purl.obolibrary.org/obo/COB:0000077 #		action specification
+http://purl.obolibrary.org/obo/IAO:0000005 #		objective specification
+http://purl.obolibrary.org/obo/IAO:0000104 #		plan specification 
+http://purl.obolibrary.org/obo/IAO:0000310 #	document
+
 
 http://purl.obolibrary.org/obo/PATO_0000001 # characteristic
 http://purl.obolibrary.org/obo/PATO_0000125 # mass
@@ -32,6 +39,7 @@ includeAllChildren
 
 http://purl.obolibrary.org/obo/OBI_0100026 # organism
 includeAllChildren
+
 http://purl.obolibrary.org/obo/OBI_0000245 # organization
 http://purl.obolibrary.org/obo/OBI_0000047 # processed material entity
 
@@ -57,4 +65,4 @@ http://purl.obolibrary.org/obo/BFO_0000041 # immaterial entity
 includeAllIntermediates
 
 [Source annotation URIs]
-includeAllAxioms
+includeAllAxiomsRecursively
