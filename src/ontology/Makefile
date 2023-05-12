@@ -46,7 +46,7 @@ prepare_release: all
 #make
 #Annotates foodon.owl ( $(ONT).owl ) file with release
 $(ONT).owl: $(SRC)
-	$(ROBOT) annotate --input $(SRC) --xml-entities -V $(BASE)/releases/`date +%Y-%m-%d`/$(ONT).owl --typed-annotation http://purl.org/dc/terms/date `date +%Y-%m-%d` xsd:date --output $(SRC)
+#	$(ROBOT) annotate --input $(SRC) --xml-entities -V $(BASE)/releases/`date +%Y-%m-%d`/$(ONT).owl --typed-annotation http://purl.org/dc/terms/date `date +%Y-%m-%d` xsd:date --output $(SRC)
 
 # Merge ontology and imports into one file, and commment out imports tags
 # production merged file shouldn't allow equivalent classes but sometimes
@@ -87,7 +87,7 @@ imports/%_import.ofn: imports/%_ontofox.txt
 	echo "Downloaded *_import.owl"
 
 #	$(ROBOT) reduce --input $@ --reasoner ELK --output $@
-	$(ROBOT) reduce --input $*_import.owl --xml-entities --reasoner ELK --output imports/$*_import.ofn
+	$(ROBOT) reduce --input $*_import.owl --xml-entities --prefix "obo: http://purl.obolibrary.org/obo/" --reasoner ELK --output imports/$*_import.ofn
 	rm $*_import.owl
 
 #	echo "Entity substitution."
