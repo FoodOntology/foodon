@@ -10,14 +10,14 @@ OBI
 [Low level source term URIs] 
 http://purl.obolibrary.org/obo/OBI_0100026 # organism
 
-http://purl.obolibrary.org/obo/OBI_0000011 # Planned process
-http://purl.obolibrary.org/obo/OBI_0000293 # has_specified_input
-http://purl.obolibrary.org/obo/OBI_0000299 # has_specified_output
 http://purl.obolibrary.org/obo/OBI_0000312 # is_specified_output_of
 http://purl.obolibrary.org/obo/OBI_0000295 # is_specified_input_of
 http://purl.obolibrary.org/obo/IAO_0000007 # action specification
 
 http://purl.obolibrary.org/obo/OBI_0001886 # NIAID GSCID-BRC alternative term
+
+http://purl.obolibrary.org/obo/IAO_0000104 # plan specification
+http://purl.obolibrary.org/obo/OBI_0000658 # data representational model
 
 http://purl.obolibrary.org/obo/IAO_0000030 # information content entity
 http://purl.obolibrary.org/obo/IAO_0000027 #    data item
@@ -31,6 +31,7 @@ http://purl.obolibrary.org/obo/OBI_0002138 #           temperature value specifi
 http://purl.obolibrary.org/obo/OBI_0002139 #           volume value specification
 
 http://purl.obolibrary.org/obo/IAO_0000028 #    symbol
+http://purl.obolibrary.org/obo/IAO_0000300 # 	textual entity
 
 http://purl.obolibrary.org/obo/OBI_0000938 # categorical measurement datum
 http://purl.obolibrary.org/obo/IAO_0000032 #       scalar measurement datum
@@ -39,17 +40,18 @@ http://purl.obolibrary.org/obo/IAO_0000408 #          length measurement datum
 http://purl.obolibrary.org/obo/IAO_0000414 #          mass measurement datum
 http://purl.obolibrary.org/obo/IAO_0000416 #          time measurement datum
 http://purl.obolibrary.org/obo/OBI_0001619 #             specimen collection time measurement datum
-http://purl.obolibrary.org/obo/IAO_0000104 # plan specification
+
+
 http://purl.obolibrary.org/obo/IAO_0000078 # curation status specification
-http://purl.obolibrary.org/obo/IAO_0000428 #    requires discussion 
-http://purl.obolibrary.org/obo/IAO_0000120 #    metadata complete 
-http://purl.obolibrary.org/obo/IAO_0000122 #ready for release
-http://purl.obolibrary.org/obo/IAO_0000124 #uncurated
-http://purl.obolibrary.org/obo/IAO_0000002 #example to be eventually removed
-http://purl.obolibrary.org/obo/IAO_0000121 #organizational term
-http://purl.obolibrary.org/obo/IAO_0000423 #to be replaced with external ontology term
-http://purl.obolibrary.org/obo/IAO_0000123 #metadata incomplete
-http://purl.obolibrary.org/obo/IAO_0000125 #pending final vetting
+http://purl.obolibrary.org/obo/IAO_0000428 #    requires discussion
+http://purl.obolibrary.org/obo/IAO_0000120 #    metadata complete
+http://purl.obolibrary.org/obo/IAO_0000122 #    ready for release
+http://purl.obolibrary.org/obo/IAO_0000124 #    uncurated
+http://purl.obolibrary.org/obo/IAO_0000002 #    example to be eventually removed
+http://purl.obolibrary.org/obo/IAO_0000121 #    organizational term
+http://purl.obolibrary.org/obo/IAO_0000423 #    to be replaced with external ontology term
+http://purl.obolibrary.org/obo/IAO_0000123 #    metadata incomplete
+http://purl.obolibrary.org/obo/IAO_0000125 #    pending final vetting
 
 http://purl.obolibrary.org/obo/OBI_1110108 # material to be added
 http://purl.obolibrary.org/obo/OBI_0000967 # container
@@ -65,6 +67,7 @@ http://purl.obolibrary.org/obo/OBI_0001619 # specimen collection time measuremen
 
 http://purl.obolibrary.org/obo/OBI_0000437 # analyte measurement objective
 http://purl.obolibrary.org/obo/IAO_0000039 # has measurement unit label
+http://purl.obolibrary.org/obo/IAO_0000577 # centrally registered identifier symbol
 
 # PROCESSES
 http://purl.obolibrary.org/obo/OBI_0000659 # specimen collection process
@@ -77,7 +80,7 @@ http://purl.obolibrary.org/obo/OBI_0001927 # specifies value of
 [Top level source term URIs and target direct superclass URIs]
 http://purl.obolibrary.org/obo/IAO_0000030 # information
 http://purl.obolibrary.org/obo/PATO_0000001 # characteristic
-http://purl.obolibrary.org/obo/BFO_0000041 # immaterial entity
+http://purl.obolibrary.org/obo/BFO_0000141 # immaterial entity
 http://purl.obolibrary.org/obo/BFO_0000040 # material entity
 http://purl.obolibrary.org/obo/BFO_0000015 # process
 
@@ -87,7 +90,6 @@ includeAllIntermediates
 
 
 [Source annotation URIs]
-#includeAllAxioms
 http://www.w3.org/2000/01/rdf-schema#label
 http://purl.obolibrary.org/obo/IAO_0000115 # definition
 http://purl.obolibrary.org/obo/IAO_0000111
@@ -113,7 +115,7 @@ http://purl.obolibrary.org/obo/AGRO_00000363 # greenhouse
 [Top level source term URIs and target direct superclass URIs]
 http://purl.obolibrary.org/obo/IAO_0000030 # information
 http://purl.obolibrary.org/obo/PATO_0000001 # characteristic
-http://purl.obolibrary.org/obo/BFO_0000041 # immaterial entity
+http://purl.obolibrary.org/obo/BFO_0000141 # immaterial entity
 http://purl.obolibrary.org/obo/BFO_0000040 # material entity
 http://purl.obolibrary.org/obo/BFO_0000015 # process
 
@@ -137,13 +139,22 @@ DRON
 http://purl.obolibrary.org/obo/DRON_00012339  # Propolis
 
 [Top level source term URIs and target direct superclass URIs]
+http://purl.obolibrary.org/obo/IAO_0000030 # information
+http://purl.obolibrary.org/obo/PATO_0000001 # characteristic
+http://purl.obolibrary.org/obo/BFO_0000141 # immaterial entity
 http://purl.obolibrary.org/obo/BFO_0000040 # material entity
+http://purl.obolibrary.org/obo/BFO_0000015 # process
 
 [Source term retrieval setting]
 includeAllIntermediates
 
 [Source annotation URIs]
-includeAllAxioms
+http://www.w3.org/2000/01/rdf-schema#label
+http://purl.obolibrary.org/obo/IAO_0000115 # definition
+http://purl.obolibrary.org/obo/IAO_0000111
+http://purl.obolibrary.org/obo/IAO_0000114
+http://purl.obolibrary.org/obo/IAO_0000119
+http://purl.obolibrary.org/obo/OBI_0001886
 
 ###########################################
 
@@ -174,6 +185,12 @@ http://purl.obolibrary.org/obo/FLOPO_0014628
 http://purl.obolibrary.org/obo/FLOPO_0003948
 
 [Top level source term URIs and target direct superclass URIs]
+http://purl.obolibrary.org/obo/IAO_0000030 # information
+http://purl.obolibrary.org/obo/PATO_0000001 # characteristic
+http://purl.obolibrary.org/obo/BFO_0000141 # immaterial entity
+http://purl.obolibrary.org/obo/BFO_0000040 # material entity
+http://purl.obolibrary.org/obo/BFO_0000015 # process
+
 http://purl.obolibrary.org/obo/UBERON_0001062 # anatomical entity
 
 http://purl.obolibrary.org/obo/FLOPO_0012953 # seed mature, has no FLOPO parent
@@ -203,8 +220,11 @@ http://purl.obolibrary.org/obo/PATO_0000033 # concentration of
 includeAllChildren
 
 [Top level source term URIs and target direct superclass URIs]
+http://purl.obolibrary.org/obo/IAO_0000030 # information
 http://purl.obolibrary.org/obo/PATO_0000001 # characteristic
+http://purl.obolibrary.org/obo/BFO_0000141 # immaterial entity
 http://purl.obolibrary.org/obo/BFO_0000040 # material entity
+http://purl.obolibrary.org/obo/BFO_0000015 # process
 
 [Source term retrieval setting]
 includeAllIntermediates
@@ -214,6 +234,161 @@ includeAllAxioms
 
 [Source annotation URIs to be excluded]
 http://www.geneontology.org/formats/oboInOwl#hasDbXref
+
+
+[Source ontology]
+ENVO
+
+[Low level source term URIs]
+
+http://purl.obolibrary.org/obo/ENVO_00000020 # lake
+http://purl.obolibrary.org/obo/ENVO_00000015 # ocean
+http://purl.obolibrary.org/obo/ENVO_00000016 # sea
+http://purl.obolibrary.org/obo/ENVO_00000027 # spring
+http://purl.obolibrary.org/obo/ENVO_00000022 # river
+http://purl.obolibrary.org/obo/ENVO_00000033 # pond
+
+http://purl.obolibrary.org/obo/ENVO_00000428 # biome
+http://purl.obolibrary.org/obo/ENVO_00002030 #    aquatic biome
+http://purl.obolibrary.org/obo/ENVO_00000873 #    freshwater biome
+http://purl.obolibrary.org/obo/ENVO_01000252 #      freshwater lake biome
+http://purl.obolibrary.org/obo/ENVO_01000253 #      freshwater river biome
+http://purl.obolibrary.org/obo/ENVO_00000447 #    marine biome
+http://purl.obolibrary.org/obo/ENVO_01000048 #      ocean biome
+
+http://purl.obolibrary.org/obo/ENVO_00000446 #    terrestrial
+http://purl.obolibrary.org/obo/ENVO_01000219 #    terrestrial - anthropogenic terrestrial biome
+http://purl.obolibrary.org/obo/ENVO_01000245 #    terrestrial - anthropogenic - cropland
+http://purl.obolibrary.org/obo/ENVO_01000247 #    terrestrial - anthropogenic - rangeland (rural)
+http://purl.obolibrary.org/obo/ENVO_01000179 #    terrestrial - desert
+http://purl.obolibrary.org/obo/ENVO_01000174 #    terrestrial - forest
+http://purl.obolibrary.org/obo/ENVO_01000177 #    terrestrial - grassland
+http://purl.obolibrary.org/obo/ENVO_01000176 #    terrestrial - shrubland
+http://purl.obolibrary.org/obo/ENVO_01000175 #    terrestrial - woodland
+http://purl.obolibrary.org/obo/ENVO_01000181 #    terrestrial - mangrove
+http://purl.obolibrary.org/obo/ENVO_01000180 #    terrestrial - tundra
+
+# ENVIRONMENTAL FEATURE
+
+http://purl.obolibrary.org/obo/ENVO_00000000 # geographic feature
+http://purl.obolibrary.org/obo/ENVO_00000063 # water body
+
+http://purl.obolibrary.org/obo/ENVO_00003862 #    dairy
+http://purl.obolibrary.org/obo/ENVO_00000078 #    farm
+http://purl.obolibrary.org/obo/ENVO_00000294 #    fish farm
+http://purl.obolibrary.org/obo/ENVO_00000295 #    fish hatchery
+http://purl.obolibrary.org/obo/ENVO_00000117 #    plantation
+http://purl.obolibrary.org/obo/ENVO_01000627 #    feedlot
+http://purl.obolibrary.org/obo/ENVO_01000626 #    drylot
+http://purl.obolibrary.org/obo/ENVO_00000266 #    pasture
+http://purl.obolibrary.org/obo/ENVO_00000519 #    agricultural terrace
+
+http://purl.obolibrary.org/obo/ENVO_00002191 #    animal litter
+http://purl.obolibrary.org/obo/ENVO_01000922 #	  animal cage
+http://purl.obolibrary.org/obo/ENVO_00003040 #    animal house
+includeAllChildren
+
+# http://purl.obolibrary.org/obo/ENVO_00003074 # manufactured product
+
+# http://purl.obolibrary.org/obo/ENVO_00000073 #    building
+http://purl.obolibrary.org/obo/ENVO_01000925 #    abattoir
+http://purl.obolibrary.org/obo/ENVO_00003864 #    bakery
+http://purl.obolibrary.org/obo/ENVO_00003885 #    brewery
+http://purl.obolibrary.org/obo/ENVO_01000928 #    fish processing building
+http://purl.obolibrary.org/obo/ENVO_00003863 #    food processing building
+http://purl.obolibrary.org/obo/ENVO_00002222 #    food shop
+http://purl.obolibrary.org/obo/ENVO_01000934 #    restaurant
+
+http://purl.obolibrary.org/obo/ENVO_01000277 # water ice
+http://purl.obolibrary.org/obo/ENVO_00002006 #    liquid water
+http://purl.obolibrary.org/obo/ENVO_00002149 # 	    sea water
+http://purl.obolibrary.org/obo/ENVO_00002011 #      fresh water
+includeAllChildren
+
+http://purl.obolibrary.org/obo/ENVO_00000023 #    stream
+http://purl.obolibrary.org/obo/ENVO_01000002 #    water well
+http://purl.obolibrary.org/obo/ENVO_00002018 #    sewage (contaminated with feces or urine)
+
+
+
+# ENVIRONMENTAL MATERIAL
+http://purl.obolibrary.org/obo/ENVO_00010483 # environmental material
+http://purl.obolibrary.org/obo/ENVO_00002040 # wood
+http://purl.obolibrary.org/obo/ENVO_02000001 # textile
+http://purl.obolibrary.org/obo/ENVO_01001069 # metallic material
+http://purl.obolibrary.org/obo/ENVO_00003895 # paper product
+http://purl.obolibrary.org/obo/ENVO_01000404 # manufactured plastic
+http://purl.obolibrary.org/obo/ENVO_01000575 # wax
+http://purl.obolibrary.org/obo/ENVO_02000090 # ash
+http://purl.obolibrary.org/obo/ENVO_01000480 # glass
+
+http://purl.obolibrary.org/obo/ENVO_02000055 # plant feed
+http://purl.obolibrary.org/obo/ENVO_02000054 #     bone meal
+http://purl.obolibrary.org/obo/ENVO_00003030 #	silage 
+includeAllChildren
+
+http://purl.obolibrary.org/obo/ENVO_00003031 #    animal manure
+includeAllChildren
+
+http://purl.obolibrary.org/obo/ENVO_0010001 #    anthropogenic environmental material
+http://purl.obolibrary.org/obo/ENVO_01000001 #    mud
+http://purl.obolibrary.org/obo/ENVO_01000155 #    organic material
+http://purl.obolibrary.org/obo/ENVO_01000017 #    sand
+http://purl.obolibrary.org/obo/ENVO_00001998 #    soil
+http://purl.obolibrary.org/obo/ENVO_00005749 #    farm soil
+http://purl.obolibrary.org/obo/ENVO_00002259 #    soil - agricultural
+http://purl.obolibrary.org/obo/ENVO_00005747 #    soil - compost
+http://purl.obolibrary.org/obo/ENVO_00002263 #    soil - garden
+http://purl.obolibrary.org/obo/ENVO_00002258 #    soil - loam
+
+# ENVIRONMENTAL SYSTEM
+http://purl.obolibrary.org/obo/ENVO_01000254 # environmental system
+
+# PHYSIOGRAPHIC FEATURE
+http://purl.obolibrary.org/obo/ENVO_00000191 # physiographic feature   #Environmental terrain 
+http://purl.obolibrary.org/obo/ENVO_00000091 #    terrain - beach
+http://purl.obolibrary.org/obo/ENVO_00000097 #    terrain - desert
+http://purl.obolibrary.org/obo/ENVO_00000114 #    terrain - field / agricultural field
+http://purl.obolibrary.org/obo/ENVO_00000111 #    terrain - forest
+http://purl.obolibrary.org/obo/ENVO_00000106 #    terrain - grassland
+http://purl.obolibrary.org/obo/ENVO_00000086 #  terrain - plain    
+http://purl.obolibrary.org/obo/ENVO_00000300 #    terrain - scrubland
+http://purl.obolibrary.org/obo/ENVO_00002000 #    terrain - slope
+http://purl.obolibrary.org/obo/ENVO_00000508 #    terrain - terrace
+http://purl.obolibrary.org/obo/ENVO_00000112 #  terrain - tundra      
+http://purl.obolibrary.org/obo/ENVO_00000856 #    terrain - urban
+http://purl.obolibrary.org/obo/ENVO_00000292 #  terrain - watershed    
+http://purl.obolibrary.org/obo/ENVO_00000043 #    terrain - wetland
+http://purl.obolibrary.org/obo/ENVO_00000109 #    terrain - woodland
+
+[Top level source term URIs and target direct superclass URIs]
+http://purl.obolibrary.org/obo/IAO_0000030 # information
+http://purl.obolibrary.org/obo/PATO_0000001 # characteristic
+http://purl.obolibrary.org/obo/BFO_0000141 # immaterial entity
+http://purl.obolibrary.org/obo/BFO_0000040 # material entity
+http://purl.obolibrary.org/obo/BFO_0000015 # process
+
+# CURRENTLY ENVO has food material under environmental material but that will change
+http://purl.obolibrary.org/obo/FOODON_00002403 # food material
+subClassOf http://purl.obolibrary.org/obo/BFO_0000040 # material entity
+
+[Source term retrieval setting]
+includeAllIntermediates
+
+[Source annotation URIs]
+http://www.w3.org/2000/01/rdf-schema#label
+http://purl.obolibrary.org/obo/IAO_0000115 
+http://purl.obolibrary.org/obo/IAO_0000111
+http://purl.obolibrary.org/obo/IAO_0000114
+http://purl.obolibrary.org/obo/IAO_0000118
+http://purl.obolibrary.org/obo/IAO_0000119
+http://purl.obolibrary.org/obo/OBI_0001886
+
+http://www.w3.org/2002/07/owl#deprecated
+http://purl.obolibrary.org/obo/IAO_0100001 # replaced by
+
+[Source annotation URIs to be excluded]
+
 
 ###########################################
 
@@ -234,26 +409,7 @@ includeNoIntermediates
 includeAllAnnotationProperties
 [Source annotation URIs to be excluded]
 
-
 ###########################################
-
-[Source ontology]
-GEO
-
-[Low level source term URIs]
-http://purl.obolibrary.org/obo/GEO_000000370 # Geographical entity
-http://purl.obolibrary.org/obo/GEO_000000372 # Geographical region
-
-[Source annotation URIs]
-http://www.w3.org/2000/01/rdf-schema#label
-http://purl.obolibrary.org/obo/IAO_0000115 
-http://purl.obolibrary.org/obo/IAO_0000111
-http://purl.obolibrary.org/obo/IAO_0000114
-http://purl.obolibrary.org/obo/IAO_0000119
-http://purl.obolibrary.org/obo/OBI_0001886
-
-###########################################
-
 
 [Source ontology]
 GO
@@ -350,6 +506,8 @@ http://purl.obolibrary.org/obo/PATO_0002305 # increased quality
 http://purl.obolibrary.org/obo/PATO_0001162 # increased concentration
 http://purl.obolibrary.org/obo/PATO_0000069 # deviation from normal
 http://purl.obolibrary.org/obo/PATO_0000918 # volume
+# http://purl.obolibrary.org/obo/PATO_0000125 # mass ; imported by way of COB
+
 http://purl.obolibrary.org/obo/PATO_0002138 # edibility
 includeAllChildren
 
@@ -622,6 +780,9 @@ http://purl.obolibrary.org/obo/PO_0008016 # vegetative shoot apical meristem
 http://purl.obolibrary.org/obo/PO_0009012 # plant structure development stage
 http://purl.obolibrary.org/obo/PO_0025131 # plant anatomical entity
 
+#REQUIRED IN ORDER TO AVOID MATERIAL ENTITY FROM BEING CHILD OF INDEPENDENT CONTINUANT ETC. IN COB HIERARCHY.
+http://purl.obolibrary.org/obo/CARO_0030000 # biological entity 
+
 [Source term retrieval setting]
 includeAllIntermediates
 
@@ -835,6 +996,16 @@ http://purl.obolibrary.org/obo/UBERON_0001988 # feces
 [Top level source term URIs and target direct superclass URIs]
 http://purl.obolibrary.org/obo/UBERON_0000104 # life cycle
 http://purl.obolibrary.org/obo/UBERON_0001062 # anatomical entity
+
+# Oddly UBERON roots lots of terms to CARO_0000000 which itself has parent "independent continuant"
+http://purl.obolibrary.org/obo/CARO_0000000 # anatomical entity DUPLICATE!
+subClassOf http://purl.obolibrary.org/obo/BFO_0000040 # material entity
+
+http://purl.obolibrary.org/obo/IAO_0000030 # information
+http://purl.obolibrary.org/obo/PATO_0000001 # characteristic
+http://purl.obolibrary.org/obo/BFO_0000141 # immaterial entity
+http://purl.obolibrary.org/obo/BFO_0000040 # material entity
+http://purl.obolibrary.org/obo/BFO_0000015 # process
 
 [Source term retrieval setting]
 includeAllIntermediates
