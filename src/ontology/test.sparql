@@ -1,30 +1,10 @@
+PREFIX owl: <http://www.w3.org/2002/07/owl#>
 PREFIX rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>
 PREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#>
-PREFIX owl: <http://www.w3.org/2002/07/owl#>
-PREFIX obo: <http://purl.obolibrary.org/obo/>
+PREFIX DOID: <http://purl.obolibrary.org/obo/DOID_>
 
-# robot query --input foodon-merged.ofn --query test.sparql temp.tsv --format TSV; cat temp.tsv
-# robot query --input ../../foodon.owl --update test.sparql --output test.owl
-
-SELECT DISTINCT ?ontology_id ?alt_label
-# DELETE {?ontology_id ?p ?alt_label } # Not working in robot for some reason
-
-WHERE { 
-    ?ontology_id rdfs:label ?label.
-
-    # Un-comment this out to see only given ontology terms
-    FILTER (STRSTARTS(STR(?ontology_id), "http://purl.obolibrary.org/obo/CHEBI_" )).
-
-    ?ontology_id rdfs:label ?alt_label.
-
-    # Use > to eliminate returning both a != b and b != a.
-    Filter (str(?alt_label) < str(?label)).  
-
-    #Filter (lang(?alt_label) = "en") # For identifying CHEBI terms to remove.
-
-    ?ontology_id ?p ?alt_label
+SELECT * WHERE {
+  GRAPH ?ontology {
+    rdf:type rdf:type owl:AnnotationProperty
+  }
 }
-
-# Orders all duplicate annotations by ontology, then label
-ORDER BY STRBEFORE( str(?ontology_id) , "_") ?label
-# LIMIT 10
