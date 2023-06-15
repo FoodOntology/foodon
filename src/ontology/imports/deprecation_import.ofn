@@ -14781,9 +14781,7 @@ AnnotationAssertion(owl:deprecated obo:FOODON_03460191 "true"^^xsd:boolean)
 
 # Class: obo:FOODON_03460202 (obsolete: sweetener added)
 
-AnnotationAssertion(obo:IAO_0000412 obo:FOODON_03460202 "http://langual.org")
 AnnotationAssertion(obo:IAO_0100001 obo:FOODON_03460202 "http://purl.obolibrary.org/obo/FOODON_00002300"^^xsd:anyURI)
-AnnotationAssertion(rdfs:comment obo:FOODON_03460202 "LanguaL curation note: Includes *NONNUTRITIVE SWEETENER ADDED*, and *NUTRITIVE SWEETENER ADDED*; see scope notes for these terms."@en)
 AnnotationAssertion(rdfs:label obo:FOODON_03460202 "obsolete: sweetener added"@en)
 AnnotationAssertion(owl:deprecated obo:FOODON_03460202 "true"^^xsd:boolean)
 
