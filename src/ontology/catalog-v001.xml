@@ -1,32 +1,32 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
 <catalog prefer="public" xmlns="urn:oasis:names:tc:entity:xmlns:xml:catalog">
-    <uri id="Imports Wizard Entry" name="http://purl.obolibrary.org/obo/foodon/imports/robot_199.ofn" uri="imports/robot_199.ofn"/>
-    <uri id="Imports Wizard Entry" name="http://purl.obolibrary.org/obo/foodon/imports/robot_wine.ofn" uri="imports/robot_wine.ofn"/>
-    <uri id="Imports Wizard Entry" name="http://purl.obolibrary.org/obo/foodon/imports/robot_seafood.ofn" uri="imports/robot_seafood.ofn"/>
-    <uri id="Imports Wizard Entry" name="http://purl.obolibrary.org/obo/foodon/imports/robot_process.ofn" uri="imports/robot_process.ofn"/>
-    <uri id="Imports Wizard Entry" name="http://purl.obolibrary.org/obo/foodon/imports/robot_plant_parts.ofn" uri="imports/robot_plant_parts.ofn"/>
-    <uri id="Imports Wizard Entry" name="http://purl.obolibrary.org/obo/foodon/imports/robot_pasta.ofn" uri="imports/robot_pasta.ofn"/>
-    <uri id="Imports Wizard Entry" name="http://purl.obolibrary.org/obo/foodon/imports/robot_dietary_supplement.ofn" uri="imports/robot_dietary_supplement.ofn"/>
-    <uri id="Imports Wizard Entry" name="http://purl.obolibrary.org/obo/foodon/imports/robot_animals.ofn" uri="imports/robot_animals.ofn"/>
-    <uri id="Imports Wizard Entry" name="http://purl.obolibrary.org/obo/foodon/imports/siren_augment_codes.ofn" uri="imports/siren_augment_codes.ofn"/>
-    <uri id="Imports Wizard Entry" name="http://purl.obolibrary.org/obo/foodon/imports/product_type_import.ofn" uri="imports/product_type_import.ofn"/>
-    <uri id="Imports Wizard Entry" name="http://purl.obolibrary.org/obo/foodon/imports/ons_import.ofn" uri="imports/ons_import.ofn"/>
-    <uri id="Imports Wizard Entry" name="http://purl.obolibrary.org/obo/foodon/imports/ncbitaxon_import.ofn" uri="imports/ncbitaxon_import.ofn"/>
-    <uri id="Imports Wizard Entry" name="http://purl.obolibrary.org/obo/foodon/imports/metadata_import.ofn" uri="imports/metadata_import.ofn"/>
-    <uri id="Imports Wizard Entry" name="http://purl.obolibrary.org/obo/foodon/imports/general_import.ofn" uri="imports/general_import.ofn"/>
-    <uri id="Imports Wizard Entry" name="http://purl.obolibrary.org/obo/foodon/imports/geem_import.ofn" uri="imports/geem_import.ofn"/>
-    <uri id="Imports Wizard Entry" name="http://purl.obolibrary.org/obo/foodon/imports/gaz_import.ofn" uri="imports/gaz_import.ofn"/>
-    <uri id="Imports Wizard Entry" name="http://purl.obolibrary.org/obo/foodon/imports/foodon_product_import.ofn" uri="imports/foodon_product_import.ofn"/>
-    <uri id="Imports Wizard Entry" name="http://purl.obolibrary.org/obo/foodon/imports/envo_import.ofn" uri="imports/envo_import.ofn"/>
-    <uri id="Imports Wizard Entry" name="http://purl.obolibrary.org/obo/foodon/imports/deprecation_import.ofn" uri="imports/deprecation_import.ofn"/>
-    <uri id="Imports Wizard Entry" name="http://purl.obolibrary.org/obo/foodon/imports/chebi_import.ofn" uri="imports/chebi_import.ofn"/>
-    <group id="Folder Repository, directory=, recursive=true, Auto-Update=true, version=2" prefer="public" xml:base="">
-        <uri id="Automatically generated entry, Timestamp=1676523345355" name="http://genepio.org/lexmapr/imports/agency_categories.owl" uri="imports/crossreference/agency_categories.owl"/>
-        <uri id="Automatically generated entry, Timestamp=1676523345355" name="http://purl.obolibrary.org/foodon/imports/robot_fdc.owl" uri="imports/robot_fdc.owl"/>
-        <uri id="Automatically generated entry, Timestamp=1676523345355" name="http://purl.obolibrary.org/obo/bfo.owl" uri="imports/bfo.owl"/>
-        <uri id="Automatically generated entry, Timestamp=1676523345355" name="http://purl.obolibrary.org/obo/foodon-base.owl" uri="foodon-base.owl"/>
-        <uri id="Automatically generated entry, Timestamp=1676523345355" name="http://purl.obolibrary.org/obo/foodon.owl" uri="foodon.owl"/>
-        <uri id="Automatically generated entry, Timestamp=1676523345355" name="http://purl.obolibrary.org/obo/foodon/imports/subset_siren_import.owl" uri="imports/subset_siren_import.owl"/>
-        <uri id="Automatically generated entry, Timestamp=1676523345355" name="http://purl.obolibrary.org/obo/foodon_siren.owl" uri="foodon_siren.owl"/>
+
+    <group id="Folder Repository, directory=, recursive=false, Auto-Update=false, version=2" prefer="public" xml:base="">
+
+        <uri name="http://purl.obolibrary.org/obo/foodon-base.owl" uri="foodon-base.owl"/>
+        <uri name="http://purl.obolibrary.org/obo/foodon.owl" uri="foodon.owl"/>
+
+        <uri name="http://purl.obolibrary.org/obo/foodon/imports/cob_import.ofn" uri="imports/cob_import.ofn"/>
+
+        <uri name="http://purl.obolibrary.org/obo/foodon/imports/chebi_import.ofn" uri="imports/chebi_import.ofn"/>
+
+        <uri name="http://purl.obolibrary.org/obo/foodon/imports/deprecation_import.ofn" uri="imports/deprecation_import.ofn"/>
+        <uri name="http://purl.obolibrary.org/obo/foodon/imports/foodon_product_import.ofn" uri="imports/foodon_product_import.ofn"/>
+        <uri name="http://purl.obolibrary.org/obo/foodon/imports/gaz_import.ofn" uri="imports/gaz_import.ofn"/>
+        <uri name="http://purl.obolibrary.org/obo/foodon/imports/general_import.ofn" uri="imports/general_import.ofn"/>
+        <uri name="http://purl.obolibrary.org/obo/foodon/imports/ncbitaxon_import.ofn" uri="imports/ncbitaxon_import.ofn"/>
+        <uri name="http://purl.obolibrary.org/obo/foodon/imports/ons_import.ofn" uri="imports/ons_import.ofn"/>
+        <uri name="http://purl.obolibrary.org/obo/foodon/imports/product_type_import.ofn" uri="imports/product_type_import.ofn"/>
+
+        <uri name="http://purl.obolibrary.org/obo/foodon/imports/robot_animals.ofn" uri="imports/robot_animals.ofn"/>
+        <uri name="http://purl.obolibrary.org/obo/foodon/imports/robot_dietary_supplement.ofn" uri="imports/robot_dietary_supplement.ofn"/>
+        <uri name="http://purl.obolibrary.org/obo/foodon/imports/robot_pasta.ofn" uri="imports/robot_pasta.ofn"/>    
+        <uri name="http://purl.obolibrary.org/obo/foodon/imports/robot_plant_parts.ofn" uri="imports/robot_plant_parts.ofn"/>
+        <uri name="http://purl.obolibrary.org/obo/foodon/imports/robot_process.ofn" uri="imports/robot_process.ofn"/>
+        <uri name="http://purl.obolibrary.org/obo/foodon/imports/robot_seafood.ofn" uri="imports/robot_seafood.ofn"/>
+        <uri name="http://purl.obolibrary.org/obo/foodon/imports/robot_wine.ofn" uri="imports/robot_wine.ofn"/>
+
+        <uri name="http://purl.obolibrary.org/obo/foodon/imports/siren_augment_codes.ofn" uri="imports/siren_augment_codes.ofn"/>
+
     </group>
 </catalog>
