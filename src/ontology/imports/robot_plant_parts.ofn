@@ -1718,7 +1718,7 @@ EquivalentClasses(<http://purl.obolibrary.org/obo/FOODON_00002765> ObjectInterse
 SubClassOf(<http://purl.obolibrary.org/obo/FOODON_00002765> <http://purl.obolibrary.org/obo/FOODON_00001635>)
 SubClassOf(<http://purl.obolibrary.org/obo/FOODON_00002765> <http://purl.obolibrary.org/obo/PO_0030100>)
 
-# Class: <http://purl.obolibrary.org/obo/FOODON_00002774> (garbanzo bean (whole))
+# Class: <http://purl.obolibrary.org/obo/FOODON_00002774> (obsolete: garbanzo bean (whole))
 
 AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000115> <http://purl.obolibrary.org/obo/FOODON_00002774> "A seed of a garbanzo bean varietal."@en)
 AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000119> <http://purl.obolibrary.org/obo/FOODON_00002774> "https://en.wikipedia.org/wiki/Chickpea")
@@ -7386,15 +7386,6 @@ AnnotationAssertion(<http://purl.org/dc/terms/date> <http://purl.obolibrary.org/
 AnnotationAssertion(rdfs:label <http://purl.obolibrary.org/obo/FOODON_03000038> "chicory leaf (whole, raw)"@en)
 SubClassOf(<http://purl.obolibrary.org/obo/FOODON_03000038> <http://purl.obolibrary.org/obo/FOODON_00003623>)
 
-# Class: <http://purl.obolibrary.org/obo/FOODON_03000039> (lentil (whole, raw))
-
-AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000115> <http://purl.obolibrary.org/obo/FOODON_03000039> "A whole raw lentil seed."@en)
-AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000117> <http://purl.obolibrary.org/obo/FOODON_03000039> "https://orcid.org/0000-0001-5275-8866"^^rdfs:anyURI)
-AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000119> <http://purl.obolibrary.org/obo/FOODON_03000039> "https://en.wikipedia.org/wiki/Lentil")
-AnnotationAssertion(<http://purl.org/dc/terms/date> <http://purl.obolibrary.org/obo/FOODON_03000039> "2022-03-09T10:45:32Z"^^xsd:dateTime)
-AnnotationAssertion(rdfs:label <http://purl.obolibrary.org/obo/FOODON_03000039> "lentil (whole, raw)"@en)
-SubClassOf(<http://purl.obolibrary.org/obo/FOODON_03000039> <http://purl.obolibrary.org/obo/FOODON_03310641>)
-
 # Class: <http://purl.obolibrary.org/obo/FOODON_03000040> (red potato (whole, raw))
 
 AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000115> <http://purl.obolibrary.org/obo/FOODON_03000040> "A whole raw red potato."@en)
@@ -9232,7 +9223,6 @@ AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000117> <http://purl.ob
 AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000119> <http://purl.obolibrary.org/obo/FOODON_03000231> "https://en.wikipedia.org/wiki/Parsley")
 AnnotationAssertion(<http://www.geneontology.org/formats/oboInOwl#hasExactSynonym> <http://purl.obolibrary.org/obo/FOODON_03000231> "parsley leaf"@en)
 AnnotationAssertion(rdfs:label <http://purl.obolibrary.org/obo/FOODON_03000231> "parsley leaf (whole or parts)"@en)
-SubClassOf(<http://purl.obolibrary.org/obo/FOODON_03000231> <http://purl.obolibrary.org/obo/FOODON_03000230>)
 
 # Class: <http://purl.obolibrary.org/obo/FOODON_03000232> (pattypan squash (whole or parts))
 
