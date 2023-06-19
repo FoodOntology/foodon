@@ -300,6 +300,7 @@ Declaration(Class(obo:NCBITaxon_119374))
 Declaration(Class(obo:NCBITaxon_1193840))
 Declaration(Class(obo:NCBITaxon_1194678))
 Declaration(Class(obo:NCBITaxon_119488))
+Declaration(Class(obo:NCBITaxon_1195127))
 Declaration(Class(obo:NCBITaxon_119680))
 Declaration(Class(obo:NCBITaxon_119681))
 Declaration(Class(obo:NCBITaxon_119682))
@@ -1264,6 +1265,7 @@ Declaration(Class(obo:NCBITaxon_2039245))
 Declaration(Class(obo:NCBITaxon_204141))
 Declaration(Class(obo:NCBITaxon_204149))
 Declaration(Class(obo:NCBITaxon_204180))
+Declaration(Class(obo:NCBITaxon_204211))
 Declaration(Class(obo:NCBITaxon_2044477))
 Declaration(Class(obo:NCBITaxon_2045261))
 Declaration(Class(obo:NCBITaxon_204813))
@@ -1381,6 +1383,7 @@ Declaration(Class(obo:NCBITaxon_21910))
 Declaration(Class(obo:NCBITaxon_219121))
 Declaration(Class(obo:NCBITaxon_219134))
 Declaration(Class(obo:NCBITaxon_219135))
+Declaration(Class(obo:NCBITaxon_21922))
 Declaration(Class(obo:NCBITaxon_219535))
 Declaration(Class(obo:NCBITaxon_219545))
 Declaration(Class(obo:NCBITaxon_219865))
@@ -1596,6 +1599,7 @@ Declaration(Class(obo:NCBITaxon_251531))
 Declaration(Class(obo:NCBITaxon_251532))
 Declaration(Class(obo:NCBITaxon_252557))
 Declaration(Class(obo:NCBITaxon_252599))
+Declaration(Class(obo:NCBITaxon_252867))
 Declaration(Class(obo:NCBITaxon_252929))
 Declaration(Class(obo:NCBITaxon_252938))
 Declaration(Class(obo:NCBITaxon_2529462))
@@ -1796,6 +1800,7 @@ Declaration(Class(obo:NCBITaxon_2787988))
 Declaration(Class(obo:NCBITaxon_2787991))
 Declaration(Class(obo:NCBITaxon_2790914))
 Declaration(Class(obo:NCBITaxon_2794))
+Declaration(Class(obo:NCBITaxon_2800123))
 Declaration(Class(obo:NCBITaxon_2806))
 Declaration(Class(obo:NCBITaxon_280675))
 Declaration(Class(obo:NCBITaxon_281464))
@@ -2614,6 +2619,7 @@ Declaration(Class(obo:NCBITaxon_372806))
 Declaration(Class(obo:NCBITaxon_3729))
 Declaration(Class(obo:NCBITaxon_373249))
 Declaration(Class(obo:NCBITaxon_37334))
+Declaration(Class(obo:NCBITaxon_3734))
 Declaration(Class(obo:NCBITaxon_373637))
 Declaration(Class(obo:NCBITaxon_3737))
 Declaration(Class(obo:NCBITaxon_373995))
@@ -3792,6 +3798,7 @@ Declaration(Class(obo:NCBITaxon_600346))
 Declaration(Class(obo:NCBITaxon_603456))
 Declaration(Class(obo:NCBITaxon_60347))
 Declaration(Class(obo:NCBITaxon_603998))
+Declaration(Class(obo:NCBITaxon_60418))
 Declaration(Class(obo:NCBITaxon_60419))
 Declaration(Class(obo:NCBITaxon_60423))
 Declaration(Class(obo:NCBITaxon_60698))
@@ -4684,6 +4691,7 @@ Declaration(Class(obo:NCBITaxon_83375))
 Declaration(Class(obo:NCBITaxon_83392))
 Declaration(Class(obo:NCBITaxon_83393))
 Declaration(Class(obo:NCBITaxon_8342))
+Declaration(Class(obo:NCBITaxon_83431))
 Declaration(Class(obo:NCBITaxon_83716))
 Declaration(Class(obo:NCBITaxon_83752))
 Declaration(Class(obo:NCBITaxon_83875))
@@ -7133,6 +7141,12 @@ AnnotationAssertion(oboInOwl:hasExactSynonym obo:NCBITaxon_119488 "Chinese perch
 AnnotationAssertion(oboInOwl:hasExactSynonym obo:NCBITaxon_119488 "mandarin fish")
 AnnotationAssertion(rdfs:label obo:NCBITaxon_119488 "Siniperca chuatsi")
 SubClassOf(obo:NCBITaxon_119488 obo:NCBITaxon_1545897)
+
+# Class: obo:NCBITaxon_1195127 (Selenicereus megalanthus)
+
+AnnotationAssertion(obo:IAO_0000412 obo:NCBITaxon_1195127 obo:ncbitaxon.owl)
+AnnotationAssertion(rdfs:label obo:NCBITaxon_1195127 "Selenicereus megalanthus")
+SubClassOf(obo:NCBITaxon_1195127 obo:NCBITaxon_83431)
 
 # Class: obo:NCBITaxon_119680 (Acanthopagrus berda)
 
@@ -11931,7 +11945,7 @@ SubClassOf(obo:NCBITaxon_1760 obo:NCBITaxon_1783272)
 AnnotationAssertion(obo:IAO_0000412 obo:NCBITaxon_176265 obo:ncbitaxon.owl)
 AnnotationAssertion(oboInOwl:hasExactSynonym obo:NCBITaxon_176265 "dragon fruit")
 AnnotationAssertion(rdfs:label obo:NCBITaxon_176265 "Selenicereus undatus")
-SubClassOf(obo:NCBITaxon_176265 obo:NCBITaxon_186265)
+SubClassOf(obo:NCBITaxon_176265 obo:NCBITaxon_83431)
 
 # Class: obo:NCBITaxon_176853 (Crepidula fornicata)
 
@@ -13645,6 +13659,13 @@ AnnotationAssertion(obo:IAO_0000412 obo:NCBITaxon_204180 obo:ncbitaxon.owl)
 AnnotationAssertion(rdfs:label obo:NCBITaxon_204180 "Coleus amboinicus")
 SubClassOf(obo:NCBITaxon_204180 obo:NCBITaxon_216719)
 
+# Class: obo:NCBITaxon_204211 (Callicarpa americana)
+
+AnnotationAssertion(obo:IAO_0000412 obo:NCBITaxon_204211 obo:ncbitaxon.owl)
+AnnotationAssertion(oboInOwl:hasExactSynonym obo:NCBITaxon_204211 "American beauty-berry")
+AnnotationAssertion(rdfs:label obo:NCBITaxon_204211 "Callicarpa americana")
+SubClassOf(obo:NCBITaxon_204211 obo:NCBITaxon_21922)
+
 # Class: obo:NCBITaxon_2044477 (Carya palmeri)
 
 AnnotationAssertion(obo:IAO_0000412 obo:NCBITaxon_2044477 obo:ncbitaxon.owl)
@@ -14435,6 +14456,13 @@ SubClassOf(obo:NCBITaxon_219134 obo:NCBITaxon_911341)
 AnnotationAssertion(obo:IAO_0000412 obo:NCBITaxon_219135 obo:ncbitaxon.owl)
 AnnotationAssertion(rdfs:label obo:NCBITaxon_219135 "Polinices")
 SubClassOf(obo:NCBITaxon_219135 obo:NCBITaxon_208830)
+
+# Class: obo:NCBITaxon_21922 (Callicarpa <eudicots>)
+
+AnnotationAssertion(obo:IAO_0000412 obo:NCBITaxon_21922 obo:ncbitaxon.owl)
+AnnotationAssertion(oboInOwl:hasExactSynonym obo:NCBITaxon_21922 "Callicarpa")
+AnnotationAssertion(rdfs:label obo:NCBITaxon_21922 "Callicarpa <eudicots>")
+SubClassOf(obo:NCBITaxon_21922 obo:NCBITaxon_4136)
 
 # Class: obo:NCBITaxon_219535 (Ameiurus platycephalus)
 
@@ -15857,6 +15885,14 @@ AnnotationAssertion(oboInOwl:hasExactSynonym obo:NCBITaxon_252599 "white-blotche
 AnnotationAssertion(rdfs:label obo:NCBITaxon_252599 "Epinephelus multinotatus")
 SubClassOf(obo:NCBITaxon_252599 obo:NCBITaxon_94231)
 
+# Class: obo:NCBITaxon_252867 (Lanxangia tsao-ko)
+
+AnnotationAssertion(obo:IAO_0000412 obo:NCBITaxon_252867 obo:ncbitaxon.owl)
+AnnotationAssertion(oboInOwl:hasExactSynonym obo:NCBITaxon_252867 "cao guo")
+AnnotationAssertion(oboInOwl:hasExactSynonym obo:NCBITaxon_252867 "tsao ko")
+AnnotationAssertion(rdfs:label obo:NCBITaxon_252867 "Lanxangia tsao-ko")
+SubClassOf(obo:NCBITaxon_252867 obo:NCBITaxon_4642)
+
 # Class: obo:NCBITaxon_252929 (Grimothea johni)
 
 AnnotationAssertion(obo:IAO_0000412 obo:NCBITaxon_252929 obo:ncbitaxon.owl)
@@ -17210,6 +17246,12 @@ SubClassOf(obo:NCBITaxon_2790914 obo:NCBITaxon_600346)
 AnnotationAssertion(obo:IAO_0000412 obo:NCBITaxon_2794 obo:ncbitaxon.owl)
 AnnotationAssertion(rdfs:label obo:NCBITaxon_2794 "Rhodymenia")
 SubClassOf(obo:NCBITaxon_2794 obo:NCBITaxon_2045261)
+
+# Class: obo:NCBITaxon_2800123 (Carya ovalis)
+
+AnnotationAssertion(obo:IAO_0000412 obo:NCBITaxon_2800123 obo:ncbitaxon.owl)
+AnnotationAssertion(rdfs:label obo:NCBITaxon_2800123 "Carya ovalis")
+SubClassOf(obo:NCBITaxon_2800123 obo:NCBITaxon_13402)
 
 # Class: obo:NCBITaxon_2806 (Florideophyceae)
 
@@ -22849,6 +22891,12 @@ AnnotationAssertion(oboInOwl:hasExactSynonym obo:NCBITaxon_37334 "yu")
 AnnotationAssertion(rdfs:label obo:NCBITaxon_37334 "Citrus maxima")
 SubClassOf(obo:NCBITaxon_37334 obo:NCBITaxon_2706)
 
+# Class: obo:NCBITaxon_3734 (Moringa)
+
+AnnotationAssertion(obo:IAO_0000412 obo:NCBITaxon_3734 obo:ncbitaxon.owl)
+AnnotationAssertion(rdfs:label obo:NCBITaxon_3734 "Moringa")
+SubClassOf(obo:NCBITaxon_3734 obo:NCBITaxon_3699)
+
 # Class: obo:NCBITaxon_373637 (Aulacomya atra)
 
 AnnotationAssertion(obo:IAO_0000412 obo:NCBITaxon_373637 obo:ncbitaxon.owl)
@@ -27160,7 +27208,7 @@ SubClassOf(obo:NCBITaxon_46104 obo:NCBITaxon_1804623)
 
 AnnotationAssertion(obo:IAO_0000412 obo:NCBITaxon_461200 obo:ncbitaxon.owl)
 AnnotationAssertion(rdfs:label obo:NCBITaxon_461200 "Callicarpa acuminata")
-SubClassOf(obo:NCBITaxon_461200 obo:NCBITaxon_4136)
+SubClassOf(obo:NCBITaxon_461200 obo:NCBITaxon_21922)
 
 # Class: obo:NCBITaxon_461258 (Upeneus parvus)
 
@@ -30922,6 +30970,13 @@ AnnotationAssertion(obo:IAO_0000412 obo:NCBITaxon_603998 obo:ncbitaxon.owl)
 AnnotationAssertion(oboInOwl:hasExactSynonym obo:NCBITaxon_603998 "oriental sweetlips")
 AnnotationAssertion(rdfs:label obo:NCBITaxon_603998 "Plectorhinchus orientalis")
 SubClassOf(obo:NCBITaxon_603998 obo:NCBITaxon_349641)
+
+# Class: obo:NCBITaxon_60418 (Carya ovata)
+
+AnnotationAssertion(obo:IAO_0000412 obo:NCBITaxon_60418 obo:ncbitaxon.owl)
+AnnotationAssertion(oboInOwl:hasExactSynonym obo:NCBITaxon_60418 "shagbark hickory")
+AnnotationAssertion(rdfs:label obo:NCBITaxon_60418 "Carya ovata")
+SubClassOf(obo:NCBITaxon_60418 obo:NCBITaxon_13402)
 
 # Class: obo:NCBITaxon_60419 (Castanea mollissima)
 
@@ -37087,6 +37142,12 @@ AnnotationAssertion(oboInOwl:hasExactSynonym obo:NCBITaxon_8342 "frogs")
 AnnotationAssertion(oboInOwl:hasExactSynonym obo:NCBITaxon_8342 "frogs and toads")
 AnnotationAssertion(rdfs:label obo:NCBITaxon_8342 "Anura")
 SubClassOf(obo:NCBITaxon_8342 obo:NCBITaxon_32523)
+
+# Class: obo:NCBITaxon_83431 (Selenicereus)
+
+AnnotationAssertion(obo:IAO_0000412 obo:NCBITaxon_83431 obo:ncbitaxon.owl)
+AnnotationAssertion(rdfs:label obo:NCBITaxon_83431 "Selenicereus")
+SubClassOf(obo:NCBITaxon_83431 obo:NCBITaxon_186265)
 
 # Class: obo:NCBITaxon_83716 (Grevillea)
 
