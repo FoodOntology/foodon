@@ -6,6 +6,25 @@ CHEBI
 
 [Low level source term URIs]
 
+# with ontofox seem to have to include these:
+http://purl.obolibrary.org/obo/CHEBI_15956 # biotin
+http://purl.obolibrary.org/obo/CHEBI_15864
+http://purl.obolibrary.org/obo/CHEBI_17226
+http://purl.obolibrary.org/obo/CHEBI_18152
+http://purl.obolibrary.org/obo/CHEBI_18388
+http://purl.obolibrary.org/obo/CHEBI_24698
+http://purl.obolibrary.org/obo/CHEBI_26710
+http://purl.obolibrary.org/obo/CHEBI_36090
+http://purl.obolibrary.org/obo/CHEBI_4630
+http://purl.obolibrary.org/obo/CHEBI_47925
+http://purl.obolibrary.org/obo/CHEBI_2197
+http://purl.obolibrary.org/obo/CHEBI_23053
+http://purl.obolibrary.org/obo/CHEBI_36281
+http://purl.obolibrary.org/obo/CHEBI_50202
+http://purl.obolibrary.org/obo/CHEBI_23909
+http://purl.obolibrary.org/obo/CHEBI_24182
+http://purl.obolibrary.org/obo/CHEBI_28794
+
 http://purl.obolibrary.org/obo/CHEBI_190512 # calcium tartrate
 
 http://purl.obolibrary.org/obo/CHEBI_83162 # propolis extract / A mixture resulting from extraction from propolis.
@@ -403,9 +422,9 @@ http://purl.obolibrary.org/obo/IAO_0000111
 http://purl.obolibrary.org/obo/IAO_0000114
 http://purl.obolibrary.org/obo/IAO_0000119
 http://purl.obolibrary.org/obo/OBI_0001886
-
 http://www.w3.org/2002/07/owl#deprecated
 http://purl.obolibrary.org/obo/IAO_0100001 # replaced by
+http://purl.obolibrary.org/obo/CHEBI_16646
 
 [Source annotation URIs to be excluded]
-http://www.geneontology.org/formats/oboInOwl#hasDbXref
+#http://www.geneontology.org/formats/oboInOwl#hasDbXref

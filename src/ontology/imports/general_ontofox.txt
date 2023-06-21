@@ -213,27 +213,35 @@ includeAllAxioms
 CDNO
 
 [Low level source term URIs]
-http://purl.obolibrary.org/obo/CDNO_0000001 # dietary nutritional component
+http://purl.obolibrary.org/obo/CDNO_0500001 # dietary role
 includeAllChildren
-
 http://purl.obolibrary.org/obo/PATO_0000033 # concentration of
+includeAllChildren
+http://purl.obolibrary.org/obo/BFO_0000040 # material entity
 includeAllChildren
 
 [Top level source term URIs and target direct superclass URIs]
-http://purl.obolibrary.org/obo/IAO_0000030 # information
-http://purl.obolibrary.org/obo/PATO_0000001 # characteristic
-http://purl.obolibrary.org/obo/BFO_0000141 # immaterial entity
-http://purl.obolibrary.org/obo/BFO_0000040 # material entity
-http://purl.obolibrary.org/obo/BFO_0000015 # process
 
 [Source term retrieval setting]
 includeAllIntermediates
 
 [Source annotation URIs]
-includeAllAxioms
+includeAllAxiomsRecursively
+
+http://www.w3.org/2000/01/rdf-schema#label
+http://purl.obolibrary.org/obo/IAO_0000115 
+http://purl.obolibrary.org/obo/IAO_0000111
+http://purl.obolibrary.org/obo/IAO_0000114
+http://purl.obolibrary.org/obo/IAO_0000118
+http://purl.obolibrary.org/obo/IAO_0000119
+http://purl.obolibrary.org/obo/OBI_0001886
+#http://www.w3.org/2002/07/owl#equivalentClass # doesn't seem to work without generating error "EquivalentClasses(error:Error1 obo:CDNO_0200776)"
+http://www.w3.org/2002/07/owl#deprecated
+http://purl.obolibrary.org/obo/IAO_0100001 # replaced by
+http://purl.obolibrary.org/obo/CHEBI_16646 # has alternative id
 
 [Source annotation URIs to be excluded]
-http://www.geneontology.org/formats/oboInOwl#hasDbXref
+
 
 ###########################################
 
