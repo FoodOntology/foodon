@@ -20,6 +20,7 @@ Declaration(Class(<http://purl.obolibrary.org/obo/FOODON_00001015>))
 Declaration(Class(<http://purl.obolibrary.org/obo/FOODON_00001057>))
 Declaration(Class(<http://purl.obolibrary.org/obo/FOODON_00001093>))
 Declaration(Class(<http://purl.obolibrary.org/obo/FOODON_00001147>))
+Declaration(Class(<http://purl.obolibrary.org/obo/FOODON_00001151>))
 Declaration(Class(<http://purl.obolibrary.org/obo/FOODON_00001164>))
 Declaration(Class(<http://purl.obolibrary.org/obo/FOODON_00001170>))
 Declaration(Class(<http://purl.obolibrary.org/obo/FOODON_00001172>))
@@ -318,6 +319,7 @@ Declaration(Class(<http://purl.obolibrary.org/obo/FOODON_00003599>))
 Declaration(Class(<http://purl.obolibrary.org/obo/FOODON_00003600>))
 Declaration(Class(<http://purl.obolibrary.org/obo/FOODON_00003601>))
 Declaration(Class(<http://purl.obolibrary.org/obo/FOODON_00003602>))
+Declaration(Class(<http://purl.obolibrary.org/obo/FOODON_00003603>))
 Declaration(Class(<http://purl.obolibrary.org/obo/FOODON_00003604>))
 Declaration(Class(<http://purl.obolibrary.org/obo/FOODON_00003606>))
 Declaration(Class(<http://purl.obolibrary.org/obo/FOODON_00003607>))
@@ -665,16 +667,17 @@ Declaration(Class(<http://purl.obolibrary.org/obo/FOODON_00004357>))
 Declaration(Class(<http://purl.obolibrary.org/obo/FOODON_00004358>))
 Declaration(Class(<http://purl.obolibrary.org/obo/FOODON_00004359>))
 Declaration(Class(<http://purl.obolibrary.org/obo/FOODON_00004360>))
-Declaration(Class(<http://purl.obolibrary.org/obo/FOODON_00004361>))
 Declaration(Class(<http://purl.obolibrary.org/obo/FOODON_00004364>))
 Declaration(Class(<http://purl.obolibrary.org/obo/FOODON_00004367>))
 Declaration(Class(<http://purl.obolibrary.org/obo/FOODON_00004368>))
 Declaration(Class(<http://purl.obolibrary.org/obo/FOODON_00004369>))
+Declaration(Class(<http://purl.obolibrary.org/obo/FOODON_00004371>))
 Declaration(Class(<http://purl.obolibrary.org/obo/FOODON_00004378>))
 Declaration(Class(<http://purl.obolibrary.org/obo/FOODON_00004379>))
 Declaration(Class(<http://purl.obolibrary.org/obo/FOODON_00004381>))
 Declaration(Class(<http://purl.obolibrary.org/obo/FOODON_00004382>))
 Declaration(Class(<http://purl.obolibrary.org/obo/FOODON_00004383>))
+Declaration(Class(<http://purl.obolibrary.org/obo/FOODON_00004384>))
 Declaration(Class(<http://purl.obolibrary.org/obo/FOODON_00004385>))
 Declaration(Class(<http://purl.obolibrary.org/obo/FOODON_00004387>))
 Declaration(Class(<http://purl.obolibrary.org/obo/FOODON_00004388>))
@@ -695,6 +698,25 @@ Declaration(Class(<http://purl.obolibrary.org/obo/FOODON_00004403>))
 Declaration(Class(<http://purl.obolibrary.org/obo/FOODON_00004404>))
 Declaration(Class(<http://purl.obolibrary.org/obo/FOODON_00004406>))
 Declaration(Class(<http://purl.obolibrary.org/obo/FOODON_00004407>))
+Declaration(Class(<http://purl.obolibrary.org/obo/FOODON_00004431>))
+Declaration(Class(<http://purl.obolibrary.org/obo/FOODON_00004432>))
+Declaration(Class(<http://purl.obolibrary.org/obo/FOODON_00004433>))
+Declaration(Class(<http://purl.obolibrary.org/obo/FOODON_00004435>))
+Declaration(Class(<http://purl.obolibrary.org/obo/FOODON_00004437>))
+Declaration(Class(<http://purl.obolibrary.org/obo/FOODON_00004440>))
+Declaration(Class(<http://purl.obolibrary.org/obo/FOODON_00004441>))
+Declaration(Class(<http://purl.obolibrary.org/obo/FOODON_00004442>))
+Declaration(Class(<http://purl.obolibrary.org/obo/FOODON_00004443>))
+Declaration(Class(<http://purl.obolibrary.org/obo/FOODON_00004444>))
+Declaration(Class(<http://purl.obolibrary.org/obo/FOODON_00004445>))
+Declaration(Class(<http://purl.obolibrary.org/obo/FOODON_00004446>))
+Declaration(Class(<http://purl.obolibrary.org/obo/FOODON_00004447>))
+Declaration(Class(<http://purl.obolibrary.org/obo/FOODON_00004448>))
+Declaration(Class(<http://purl.obolibrary.org/obo/FOODON_00004449>))
+Declaration(Class(<http://purl.obolibrary.org/obo/FOODON_00004450>))
+Declaration(Class(<http://purl.obolibrary.org/obo/FOODON_00004451>))
+Declaration(Class(<http://purl.obolibrary.org/obo/FOODON_00004452>))
+Declaration(Class(<http://purl.obolibrary.org/obo/FOODON_00004453>))
 Declaration(Class(<http://purl.obolibrary.org/obo/FOODON_03000006>))
 Declaration(Class(<http://purl.obolibrary.org/obo/FOODON_03000007>))
 Declaration(Class(<http://purl.obolibrary.org/obo/FOODON_03000008>))
@@ -1053,6 +1075,7 @@ Declaration(Class(<http://purl.obolibrary.org/obo/FOODON_03310299>))
 Declaration(Class(<http://purl.obolibrary.org/obo/FOODON_03310641>))
 Declaration(Class(<http://purl.obolibrary.org/obo/FOODON_03310646>))
 Declaration(Class(<http://purl.obolibrary.org/obo/FOODON_03310788>))
+Declaration(Class(<http://purl.obolibrary.org/obo/FOODON_03310789>))
 Declaration(Class(<http://purl.obolibrary.org/obo/FOODON_03310893>))
 Declaration(Class(<http://purl.obolibrary.org/obo/FOODON_03311295>))
 Declaration(Class(<http://purl.obolibrary.org/obo/FOODON_03311818>))
@@ -1107,6 +1130,7 @@ Declaration(Class(<http://purl.obolibrary.org/obo/FOODON_03411456>))
 Declaration(Class(<http://purl.obolibrary.org/obo/FOODON_03411478>))
 Declaration(Class(<http://purl.obolibrary.org/obo/FOODON_03411491>))
 Declaration(Class(<http://purl.obolibrary.org/obo/FOODON_03411494>))
+Declaration(Class(<http://purl.obolibrary.org/obo/FOODON_03411502>))
 Declaration(Class(<http://purl.obolibrary.org/obo/FOODON_03411531>))
 Declaration(Class(<http://purl.obolibrary.org/obo/FOODON_03411543>))
 Declaration(Class(<http://purl.obolibrary.org/obo/FOODON_03411567>))
@@ -1749,14 +1773,16 @@ SubClassOf(<http://purl.obolibrary.org/obo/FOODON_00001705> <http://purl.obolibr
 
 # Class: <http://purl.obolibrary.org/obo/FOODON_00001949> (hemp food product)
 
+AnnotationAssertion(<http://purl.org/dc/terms/date> <http://purl.obolibrary.org/obo/FOODON_00001949> "2023-06-19T08:07:21Z"^^xsd:dateTime)
 AnnotationAssertion(rdfs:label <http://purl.obolibrary.org/obo/FOODON_00001949> "hemp food product"@en)
 SubClassOf(<http://purl.obolibrary.org/obo/FOODON_00001949> <http://purl.obolibrary.org/obo/FOODON_00001093>)
 
 # Class: <http://purl.obolibrary.org/obo/FOODON_00002107> (pecan nut food product)
 
 AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000115> <http://purl.obolibrary.org/obo/FOODON_00002107> "A food product which derives from a pecan cultivar (Carya illinoinensis) nut."@en)
+AnnotationAssertion(<http://purl.org/dc/terms/date> <http://purl.obolibrary.org/obo/FOODON_00002107> "2023-06-18T15:53:21Z"^^xsd:dateTime)
 AnnotationAssertion(rdfs:label <http://purl.obolibrary.org/obo/FOODON_00002107> "pecan nut food product"@en)
-SubClassOf(<http://purl.obolibrary.org/obo/FOODON_00002107> <http://purl.obolibrary.org/obo/FOODON_00004351>)
+SubClassOf(<http://purl.obolibrary.org/obo/FOODON_00002107> <http://purl.obolibrary.org/obo/FOODON_00004435>)
 
 # Class: <http://purl.obolibrary.org/obo/FOODON_00002473> (apple (whole))
 
@@ -2024,6 +2050,7 @@ SubClassOf(<http://purl.obolibrary.org/obo/FOODON_00002969> <http://purl.obolibr
 # Class: <http://purl.obolibrary.org/obo/FOODON_00002998> (ivy gourd food product)
 
 AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000115> <http://purl.obolibrary.org/obo/FOODON_00002998> "A food product made from an ivy gourd plant species."@en)
+AnnotationAssertion(<http://purl.org/dc/terms/date> <http://purl.obolibrary.org/obo/FOODON_00002998> "2023-06-19T08:07:21Z"^^xsd:dateTime)
 AnnotationAssertion(rdfs:label <http://purl.obolibrary.org/obo/FOODON_00002998> "ivy gourd food product"@en)
 SubClassOf(<http://purl.obolibrary.org/obo/FOODON_00002998> <http://purl.obolibrary.org/obo/FOODON_00001015>)
 
@@ -2108,7 +2135,7 @@ AnnotationAssertion(<http://purl.org/dc/terms/date> <http://purl.obolibrary.org/
 AnnotationAssertion(<http://www.geneontology.org/formats/oboInOwl#hasExactSynonym> <http://purl.obolibrary.org/obo/FOODON_00003089> "Hickory nut"@en)
 AnnotationAssertion(rdfs:label <http://purl.obolibrary.org/obo/FOODON_00003089> "hickory nut (whole)"@en)
 EquivalentClasses(<http://purl.obolibrary.org/obo/FOODON_00003089> ObjectIntersectionOf(<http://purl.obolibrary.org/obo/PO_0030103> ObjectSomeValuesFrom(<http://purl.obolibrary.org/obo/RO_0002162> <http://purl.obolibrary.org/obo/NCBITaxon_13402>) ObjectAllValuesFrom(<http://purl.obolibrary.org/obo/RO_0002162> <http://purl.obolibrary.org/obo/NCBITaxon_13402>)))
-SubClassOf(<http://purl.obolibrary.org/obo/FOODON_00003089> <http://purl.obolibrary.org/obo/FOODON_00004351>)
+SubClassOf(<http://purl.obolibrary.org/obo/FOODON_00003089> <http://purl.obolibrary.org/obo/FOODON_00004435>)
 SubClassOf(<http://purl.obolibrary.org/obo/FOODON_00003089> <http://purl.obolibrary.org/obo/PO_0030103>)
 
 # Class: <http://purl.obolibrary.org/obo/FOODON_00003091> (european chestnut (whole, raw))
@@ -3872,6 +3899,7 @@ AnnotationAssertion(<http://www.geneontology.org/formats/oboInOwl#hasExactSynony
 AnnotationAssertion(<http://www.geneontology.org/formats/oboInOwl#hasExactSynonym> <http://purl.obolibrary.org/obo/FOODON_00003599> "summer crookneck squash"@en)
 AnnotationAssertion(rdfs:label <http://purl.obolibrary.org/obo/FOODON_00003599> "acorn squash (whole)"@en)
 EquivalentClasses(<http://purl.obolibrary.org/obo/FOODON_00003599> ObjectIntersectionOf(<http://purl.obolibrary.org/obo/PO_0030111> ObjectSomeValuesFrom(<http://purl.obolibrary.org/obo/RO_0002162> <http://purl.obolibrary.org/obo/NCBITaxon_300795>)))
+SubClassOf(<http://purl.obolibrary.org/obo/FOODON_00003599> <http://purl.obolibrary.org/obo/FOODON_00003946>)
 SubClassOf(<http://purl.obolibrary.org/obo/FOODON_00003599> <http://purl.obolibrary.org/obo/PO_0030111>)
 
 # Class: <http://purl.obolibrary.org/obo/FOODON_00003600> (avocado (whole))
@@ -3905,7 +3933,6 @@ SubClassOf(<http://purl.obolibrary.org/obo/FOODON_00003602> <http://purl.obolibr
 # Class: <http://purl.obolibrary.org/obo/FOODON_00003604> (arugula leaf (whole))
 
 AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000115> <http://purl.obolibrary.org/obo/FOODON_00003604> "A leaf of a rocket plant (Eruca vesicaria subsp. sativa)"@en)
-AnnotationAssertion(<http://www.geneontology.org/formats/oboInOwl#hasExactSynonym> <http://purl.obolibrary.org/obo/FOODON_00003604> "arugula greens"@en)
 AnnotationAssertion(<http://www.geneontology.org/formats/oboInOwl#hasExactSynonym> <http://purl.obolibrary.org/obo/FOODON_00003604> "arugula leaf"@en)
 AnnotationAssertion(<http://www.geneontology.org/formats/oboInOwl#hasExactSynonym> <http://purl.obolibrary.org/obo/FOODON_00003604> "colewort"@en)
 AnnotationAssertion(<http://www.geneontology.org/formats/oboInOwl#hasExactSynonym> <http://purl.obolibrary.org/obo/FOODON_00003604> "rocket leaf"@en)
@@ -4311,7 +4338,8 @@ AnnotationAssertion(<http://www.geneontology.org/formats/oboInOwl#hasExactSynony
 AnnotationAssertion(<http://www.geneontology.org/formats/oboInOwl#hasExactSynonym> <http://purl.obolibrary.org/obo/FOODON_00003643> "arugula greens"@en)
 AnnotationAssertion(rdfs:label <http://purl.obolibrary.org/obo/FOODON_00003643> "arugula greens bunch"@en)
 EquivalentClasses(<http://purl.obolibrary.org/obo/FOODON_00003643> ObjectIntersectionOf(<http://purl.obolibrary.org/obo/BFO_0000027> ObjectSomeValuesFrom(<http://purl.obolibrary.org/obo/RO_0000086> <http://purl.obolibrary.org/obo/FOODON_00004348>) ObjectSomeValuesFrom(<http://purl.obolibrary.org/obo/RO_0002351> <http://purl.obolibrary.org/obo/FOODON_00003604>) ObjectAllValuesFrom(<http://purl.obolibrary.org/obo/RO_0002351> <http://purl.obolibrary.org/obo/FOODON_00003604>)))
-SubClassOf(<http://purl.obolibrary.org/obo/FOODON_00003643> <http://purl.obolibrary.org/obo/FOODON_00002143>)
+SubClassOf(<http://purl.obolibrary.org/obo/FOODON_00003643> <http://purl.obolibrary.org/obo/FOODON_00003603>)
+SubClassOf(<http://purl.obolibrary.org/obo/FOODON_00003643> <http://purl.obolibrary.org/obo/FOODON_03310789>)
 
 # Class: <http://purl.obolibrary.org/obo/FOODON_00003644> (parsley bunch)
 
@@ -5200,6 +5228,7 @@ AnnotationAssertion(<http://www.geneontology.org/formats/oboInOwl#hasExactSynony
 AnnotationAssertion(rdfs:label <http://purl.obolibrary.org/obo/FOODON_00003731> "tangelo (whole)"@en)
 EquivalentClasses(<http://purl.obolibrary.org/obo/FOODON_00003731> ObjectIntersectionOf(<http://purl.obolibrary.org/obo/PO_0030109> ObjectIntersectionOf(ObjectSomeValuesFrom(<http://purl.obolibrary.org/obo/RO_0002162> <http://purl.obolibrary.org/obo/NCBITaxon_229630>) ObjectAllValuesFrom(<http://purl.obolibrary.org/obo/RO_0002162> <http://purl.obolibrary.org/obo/NCBITaxon_229630>))))
 SubClassOf(<http://purl.obolibrary.org/obo/FOODON_00003731> <http://purl.obolibrary.org/obo/FOODON_00003324>)
+SubClassOf(<http://purl.obolibrary.org/obo/FOODON_00003731> <http://purl.obolibrary.org/obo/FOODON_00004371>)
 
 # Class: <http://purl.obolibrary.org/obo/FOODON_00003732> (yuzu (whole))
 
@@ -6029,13 +6058,13 @@ SubClassOf(<http://purl.obolibrary.org/obo/FOODON_00003812> <http://purl.obolibr
 
 # Class: <http://purl.obolibrary.org/obo/FOODON_00003813> (italian prune plum (whole))
 
-AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000115> <http://purl.obolibrary.org/obo/FOODON_00003813> "A dried drupe fruit of an italian prune plum plant (Prunus cocomili)"@en)
+AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000115> <http://purl.obolibrary.org/obo/FOODON_00003813> "A drupe fruit of an italian prune plum plant (Prunus cocomili)"@en)
 AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000119> <http://purl.obolibrary.org/obo/FOODON_00003813> "https://en.wikipedia.org/wiki/Prunus_cocomilia")
 AnnotationAssertion(<http://purl.org/dc/terms/date> <http://purl.obolibrary.org/obo/FOODON_00003813> "2021-02-12T18:40:18"^^xsd:dateTime)
 AnnotationAssertion(<http://www.geneontology.org/formats/oboInOwl#hasExactSynonym> <http://purl.obolibrary.org/obo/FOODON_00003813> "italian prune plum"@en)
 AnnotationAssertion(rdfs:label <http://purl.obolibrary.org/obo/FOODON_00003813> "italian prune plum (whole)"@en)
 EquivalentClasses(<http://purl.obolibrary.org/obo/FOODON_00003813> ObjectIntersectionOf(<http://purl.obolibrary.org/obo/PO_0030103> ObjectIntersectionOf(ObjectSomeValuesFrom(<http://purl.obolibrary.org/obo/RO_0002162> <http://purl.obolibrary.org/obo/NCBITaxon_114936>) ObjectAllValuesFrom(<http://purl.obolibrary.org/obo/RO_0002162> <http://purl.obolibrary.org/obo/NCBITaxon_114936>))))
-SubClassOf(<http://purl.obolibrary.org/obo/FOODON_00003813> <http://purl.obolibrary.org/obo/FOODON_03301721>)
+SubClassOf(<http://purl.obolibrary.org/obo/FOODON_00003813> <http://purl.obolibrary.org/obo/FOODON_00003483>)
 
 # Class: <http://purl.obolibrary.org/obo/FOODON_00003814> (herb leaf (whole))
 
@@ -7099,7 +7128,9 @@ SubClassOf(<http://purl.obolibrary.org/obo/FOODON_00004244> <http://purl.obolibr
 
 # Class: <http://purl.obolibrary.org/obo/FOODON_00004245> (rowal food product)
 
+AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000115> <http://purl.obolibrary.org/obo/FOODON_00004245> "A food product that derives from the rowal tree (Pangium edule)."@en)
 AnnotationAssertion(rdfs:label <http://purl.obolibrary.org/obo/FOODON_00004245> "rowal food product"@en)
+SubClassOf(<http://purl.obolibrary.org/obo/FOODON_00004245> <http://purl.obolibrary.org/obo/FOODON_00001015>)
 
 # Class: <http://purl.obolibrary.org/obo/FOODON_00004246> (rowal fruit (whole))
 
@@ -7264,48 +7295,31 @@ SubClassOf(<http://purl.obolibrary.org/obo/FOODON_00004330> <http://purl.obolibr
 # Class: <http://purl.obolibrary.org/obo/FOODON_00004343> (mafurra nut (whole))
 
 AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000115> <http://purl.obolibrary.org/obo/FOODON_00004343> "A whole mafurra nut."@en)
+AnnotationAssertion(<http://purl.org/dc/terms/date> <http://purl.obolibrary.org/obo/FOODON_00004343> "2023-06-19T08:07:21Z"^^xsd:dateTime)
 AnnotationAssertion(rdfs:label <http://purl.obolibrary.org/obo/FOODON_00004343> "mafurra nut (whole)"@en)
 EquivalentClasses(<http://purl.obolibrary.org/obo/FOODON_00004343> ObjectIntersectionOf(<http://purl.obolibrary.org/obo/PO_0030091> ObjectSomeValuesFrom(<http://purl.obolibrary.org/obo/RO_0002162> <http://purl.obolibrary.org/obo/NCBITaxon_43895>) ObjectAllValuesFrom(<http://purl.obolibrary.org/obo/RO_0002162> <http://purl.obolibrary.org/obo/NCBITaxon_43895>)))
-SubClassOf(<http://purl.obolibrary.org/obo/FOODON_00004343> <http://purl.obolibrary.org/obo/FOODON_00004361>)
+SubClassOf(<http://purl.obolibrary.org/obo/FOODON_00004343> <http://purl.obolibrary.org/obo/FOODON_00004431>)
 
 # Class: <http://purl.obolibrary.org/obo/FOODON_00004349> (navy bean (whole, raw, sprouted))
 
-AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000115> <http://purl.obolibrary.org/obo/FOODON_00004349> "A lentil of red color"@en)
 AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000115> <http://purl.obolibrary.org/obo/FOODON_00004349> "A whole raw sprouted lima bean."@en)
 AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000117> <http://purl.obolibrary.org/obo/FOODON_00004349> "https://orcid.org/0000-0001-5275-8866"^^rdfs:anyURI)
-AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000117> <http://purl.obolibrary.org/obo/FOODON_00004349> "https://orcid.org/0000-0002-8461-9745"^^rdfs:anyURI)
 AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000119> <http://purl.obolibrary.org/obo/FOODON_00004349> "https://en.wikipedia.org/wiki/Navy_bean")
 AnnotationAssertion(<http://purl.org/dc/terms/date> <http://purl.obolibrary.org/obo/FOODON_00004349> "2022-03-21T15:05:30Z"^^xsd:dateTime)
-AnnotationAssertion(rdfs:label <http://purl.obolibrary.org/obo/FOODON_00004349> "asparagus bean (whole)"@en)
-AnnotationAssertion(rdfs:label <http://purl.obolibrary.org/obo/FOODON_00004349> "brown lentil (whole, dried)"@en)
 AnnotationAssertion(rdfs:label <http://purl.obolibrary.org/obo/FOODON_00004349> "navy bean (whole, raw, sprouted)"@en)
-EquivalentClasses(<http://purl.obolibrary.org/obo/FOODON_00004349> ObjectIntersectionOf(<http://purl.obolibrary.org/obo/FOODON_03301421> ObjectSomeValuesFrom(<http://purl.obolibrary.org/obo/RO_0000086> <http://purl.obolibrary.org/obo/PATO_0000952>)))
 EquivalentClasses(<http://purl.obolibrary.org/obo/FOODON_00004349> ObjectIntersectionOf(<http://purl.obolibrary.org/obo/FOODON_03301949> <http://purl.obolibrary.org/obo/FOODON_03420102>))
-SubClassOf(<http://purl.obolibrary.org/obo/FOODON_00004349> <http://purl.obolibrary.org/obo/FOODON_00002773>)
-SubClassOf(<http://purl.obolibrary.org/obo/FOODON_00004349> <http://purl.obolibrary.org/obo/FOODON_03301421>)
 SubClassOf(<http://purl.obolibrary.org/obo/FOODON_00004349> <http://purl.obolibrary.org/obo/FOODON_03301949>)
 
-# Class: <http://purl.obolibrary.org/obo/FOODON_00004350> (red lentil (whole, dried))
+# Class: <http://purl.obolibrary.org/obo/FOODON_00004350> (asparagus bean (whole, raw))
 
-AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000115> <http://purl.obolibrary.org/obo/FOODON_00004350> "A lentil of brown color"@en)
-AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000117> <http://purl.obolibrary.org/obo/FOODON_00004350> "https://orcid.org/0000-0002-8461-9745"^^rdfs:anyURI)
 AnnotationAssertion(rdfs:label <http://purl.obolibrary.org/obo/FOODON_00004350> "asparagus bean (whole, raw)"@en)
-AnnotationAssertion(rdfs:label <http://purl.obolibrary.org/obo/FOODON_00004350> "red lentil (whole, dried)"@en)
-EquivalentClasses(<http://purl.obolibrary.org/obo/FOODON_00004350> ObjectIntersectionOf(<http://purl.obolibrary.org/obo/FOODON_03301421> ObjectSomeValuesFrom(<http://purl.obolibrary.org/obo/RO_0000086> <http://purl.obolibrary.org/obo/PATO_0000322>)))
-SubClassOf(<http://purl.obolibrary.org/obo/FOODON_00004350> <http://purl.obolibrary.org/obo/FOODON_00004349>)
-SubClassOf(<http://purl.obolibrary.org/obo/FOODON_00004350> <http://purl.obolibrary.org/obo/FOODON_03301421>)
+SubClassOf(<http://purl.obolibrary.org/obo/FOODON_00004350> <http://purl.obolibrary.org/obo/FOODON_03000097>)
 
 # Class: <http://purl.obolibrary.org/obo/FOODON_00004351> (asparagus bean (whole, raw, mature))
 
-AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000115> <http://purl.obolibrary.org/obo/FOODON_00004351> "A food product which derives from a hickory cultivar (Carya) nut."@en)
 AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000117> <http://purl.obolibrary.org/obo/FOODON_00004351> "https://orcid.org/0000-0001-5275-8866"^^rdfs:anyURI)
-AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000117> <http://purl.obolibrary.org/obo/FOODON_00004351> "https://orcid.org/0000-0002-8461-9745"^^rdfs:anyURI)
-AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000119> <http://purl.obolibrary.org/obo/FOODON_00004351> "https://en.wikipedia.org/wiki/Hickory")
 AnnotationAssertion(<http://purl.org/dc/terms/date> <http://purl.obolibrary.org/obo/FOODON_00004351> "2022-11-14T14:10:23Z"^^xsd:dateTime)
-AnnotationAssertion(<http://purl.org/dc/terms/date> <http://purl.obolibrary.org/obo/FOODON_00004351> "2023-06-18T15:53:21Z"^^xsd:dateTime)
 AnnotationAssertion(rdfs:label <http://purl.obolibrary.org/obo/FOODON_00004351> "asparagus bean (whole, raw, mature)"@en)
-AnnotationAssertion(rdfs:label <http://purl.obolibrary.org/obo/FOODON_00004351> "hickory nut food product"@en)
-SubClassOf(<http://purl.obolibrary.org/obo/FOODON_00004351> <http://purl.obolibrary.org/obo/FOODON_00001172>)
 SubClassOf(<http://purl.obolibrary.org/obo/FOODON_00004351> <http://purl.obolibrary.org/obo/FOODON_00004350>)
 
 # Class: <http://purl.obolibrary.org/obo/FOODON_00004352> (pigeon pea (whole, immature, raw))
@@ -7318,55 +7332,35 @@ SubClassOf(<http://purl.obolibrary.org/obo/FOODON_00004352> <http://purl.obolibr
 # Class: <http://purl.obolibrary.org/obo/FOODON_00004353> (white glutinous rice)
 
 AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000115> <http://purl.obolibrary.org/obo/FOODON_00004353> "A long grain white rice endosperm that has a low amylose starch content."@en)
-AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000115> <http://purl.obolibrary.org/obo/FOODON_00004353> "A whole hickory nut from a pignut hickory tree (Carya glabra)."@en)
 AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000117> <http://purl.obolibrary.org/obo/FOODON_00004353> "https://orcid.org/0000-0001-5275-8866"^^rdfs:anyURI)
-AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000117> <http://purl.obolibrary.org/obo/FOODON_00004353> "https://orcid.org/0000-0002-6020-5919"^^rdfs:anyURI)
 AnnotationAssertion(<http://purl.org/dc/terms/date> <http://purl.obolibrary.org/obo/FOODON_00004353> "2022-11-23T11:15:42Z"^^xsd:dateTime)
-AnnotationAssertion(<http://purl.org/dc/terms/date> <http://purl.obolibrary.org/obo/FOODON_00004353> "2023-06-18T15:53:21Z"^^xsd:dateTime)
-AnnotationAssertion(rdfs:label <http://purl.obolibrary.org/obo/FOODON_00004353> "pignut hickory nut (whole)"@en)
 AnnotationAssertion(rdfs:label <http://purl.obolibrary.org/obo/FOODON_00004353> "white glutinous rice"@en)
-EquivalentClasses(<http://purl.obolibrary.org/obo/FOODON_00004353> ObjectIntersectionOf(<http://purl.obolibrary.org/obo/FOODON_00003089> ObjectSomeValuesFrom(<http://purl.obolibrary.org/obo/RO_0002162> <http://purl.obolibrary.org/obo/NCBITaxon_13403>) ObjectAllValuesFrom(<http://purl.obolibrary.org/obo/RO_0002162> <http://purl.obolibrary.org/obo/NCBITaxon_13403>)))
-SubClassOf(<http://purl.obolibrary.org/obo/FOODON_00004353> <http://purl.obolibrary.org/obo/FOODON_00003089>)
 SubClassOf(<http://purl.obolibrary.org/obo/FOODON_00004353> <http://purl.obolibrary.org/obo/FOODON_00004353>)
 SubClassOf(<http://purl.obolibrary.org/obo/FOODON_00004353> <http://purl.obolibrary.org/obo/FOODON_03000273>)
 
 # Class: <http://purl.obolibrary.org/obo/FOODON_00004354> (white glutinous rice (uncooked))
 
 AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000115> <http://purl.obolibrary.org/obo/FOODON_00004354> "A white glutinous rice endosperm that is uncooked."@en)
-AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000115> <http://purl.obolibrary.org/obo/FOODON_00004354> "A whole hickory nut from a shellback hickory tree (Carya lacinosa)"@en)
 AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000117> <http://purl.obolibrary.org/obo/FOODON_00004354> "https://orcid.org/0000-0001-5275-8866"^^rdfs:anyURI)
-AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000117> <http://purl.obolibrary.org/obo/FOODON_00004354> "https://orcid.org/0000-0002-6020-5919"^^rdfs:anyURI)
 AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000119> <http://purl.obolibrary.org/obo/FOODON_00004354> "  https://www.webstaurantstore.com/guide/658/types-of-rice.html")
 AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000119> <http://purl.obolibrary.org/obo/FOODON_00004354> "https://en.wikipedia.org/wiki/Glutinous_rice ")
 AnnotationAssertion(<http://purl.org/dc/terms/date> <http://purl.obolibrary.org/obo/FOODON_00004354> "2022-11-23T11:37:21Z"^^xsd:dateTime)
-AnnotationAssertion(<http://www.geneontology.org/formats/oboInOwl#hasExactSynonym> <http://purl.obolibrary.org/obo/FOODON_00004354> "Shellbark hickory"@en)
-AnnotationAssertion(rdfs:label <http://purl.obolibrary.org/obo/FOODON_00004354> "shellback hickory nut (whole)"@en)
 AnnotationAssertion(rdfs:label <http://purl.obolibrary.org/obo/FOODON_00004354> "white glutinous rice (uncooked)"@en)
-EquivalentClasses(<http://purl.obolibrary.org/obo/FOODON_00004354> ObjectIntersectionOf(<http://purl.obolibrary.org/obo/FOODON_00003089> ObjectSomeValuesFrom(<http://purl.obolibrary.org/obo/RO_0002162> <http://purl.obolibrary.org/obo/NCBITaxon_1370058>) ObjectAllValuesFrom(<http://purl.obolibrary.org/obo/RO_0002162> <http://purl.obolibrary.org/obo/NCBITaxon_1370058>)))
-SubClassOf(<http://purl.obolibrary.org/obo/FOODON_00004354> <http://purl.obolibrary.org/obo/FOODON_00003089>)
 SubClassOf(<http://purl.obolibrary.org/obo/FOODON_00004354> <http://purl.obolibrary.org/obo/FOODON_00004353>)
 
-# Class: <http://purl.obolibrary.org/obo/FOODON_00004355> (red hickory nut (whole))
+# Class: <http://purl.obolibrary.org/obo/FOODON_00004355> (mustard spinach food product)
 
 AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000115> <http://purl.obolibrary.org/obo/FOODON_00004355> "A brassica food product that is derived from japense mustard spinach plant."@en)
-AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000115> <http://purl.obolibrary.org/obo/FOODON_00004355> "A whole hickory nut from a red hickory tree (Carya ovalis)"@en)
 AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000117> <http://purl.obolibrary.org/obo/FOODON_00004355> "https://orcid.org/0000-0001-5275-8866"^^rdfs:anyURI)
-AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000117> <http://purl.obolibrary.org/obo/FOODON_00004355> "https://orcid.org/0000-0002-6020-5919"^^rdfs:anyURI)
 AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000119> <http://purl.obolibrary.org/obo/FOODON_00004355> "https://en.wikipedia.org/wiki/Komatsuna")
 AnnotationAssertion(<http://purl.org/dc/terms/date> <http://purl.obolibrary.org/obo/FOODON_00004355> "2022-11-23T11:42:07Z"^^xsd:dateTime)
-AnnotationAssertion(<http://www.geneontology.org/formats/oboInOwl#hasExactSynonym> <http://purl.obolibrary.org/obo/FOODON_00004355> "Sweet pignut hickory"@en)
 AnnotationAssertion(rdfs:label <http://purl.obolibrary.org/obo/FOODON_00004355> "mustard spinach food product"@en)
-AnnotationAssertion(rdfs:label <http://purl.obolibrary.org/obo/FOODON_00004355> "red hickory nut (whole)"@en)
-EquivalentClasses(<http://purl.obolibrary.org/obo/FOODON_00004355> ObjectIntersectionOf(<http://purl.obolibrary.org/obo/FOODON_00003089> ObjectSomeValuesFrom(<http://purl.obolibrary.org/obo/RO_0002162> <http://purl.obolibrary.org/obo/NCBITaxon_2800123>) ObjectAllValuesFrom(<http://purl.obolibrary.org/obo/RO_0002162> <http://purl.obolibrary.org/obo/NCBITaxon_2800123>)))
-SubClassOf(<http://purl.obolibrary.org/obo/FOODON_00004355> <http://purl.obolibrary.org/obo/FOODON_00003089>)
 SubClassOf(<http://purl.obolibrary.org/obo/FOODON_00004355> <http://purl.obolibrary.org/obo/FOODON_00003341>)
 
-# Class: <http://purl.obolibrary.org/obo/FOODON_00004356> (shagbark hickory nut (whole))
+# Class: <http://purl.obolibrary.org/obo/FOODON_00004356> (mustard spinach leaf (whole))
 
 AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000115> <http://purl.obolibrary.org/obo/FOODON_00004356> "A leaf of a mustard spinach plant (Brassica rapa var. perviridis)"@en)
-AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000115> <http://purl.obolibrary.org/obo/FOODON_00004356> "A whole hickory nut from a shagbark hickory tree (Carya ovata)"@en)
 AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000117> <http://purl.obolibrary.org/obo/FOODON_00004356> "https://orcid.org/0000-0001-5275-8866"^^rdfs:anyURI)
-AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000117> <http://purl.obolibrary.org/obo/FOODON_00004356> "https://orcid.org/0000-0002-6020-5919"^^rdfs:anyURI)
 AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000119> <http://purl.obolibrary.org/obo/FOODON_00004356> "https://en.wikipedia.org/wiki/Komatsuna")
 AnnotationAssertion(<http://purl.org/dc/terms/date> <http://purl.obolibrary.org/obo/FOODON_00004356> "2022-11-23T11:45:36Z"^^xsd:dateTime)
 AnnotationAssertion(<http://www.geneontology.org/formats/oboInOwl#hasExactSynonym> <http://purl.obolibrary.org/obo/FOODON_00004356> "Komatsuna"@en)
@@ -7375,35 +7369,22 @@ AnnotationAssertion(<http://www.geneontology.org/formats/oboInOwl#hasExactSynony
 AnnotationAssertion(<http://www.geneontology.org/formats/oboInOwl#hasExactSynonym> <http://purl.obolibrary.org/obo/FOODON_00004356> "spinach mustard"@en)
 AnnotationAssertion(<http://www.geneontology.org/formats/oboInOwl#hasExactSynonym> <http://purl.obolibrary.org/obo/FOODON_00004356> "tendergreen"@en)
 AnnotationAssertion(rdfs:label <http://purl.obolibrary.org/obo/FOODON_00004356> "mustard spinach leaf (whole)"@en)
-AnnotationAssertion(rdfs:label <http://purl.obolibrary.org/obo/FOODON_00004356> "shagbark hickory nut (whole)"@en)
-EquivalentClasses(<http://purl.obolibrary.org/obo/FOODON_00004356> ObjectIntersectionOf(<http://purl.obolibrary.org/obo/FOODON_00003089> ObjectSomeValuesFrom(<http://purl.obolibrary.org/obo/RO_0002162> <http://purl.obolibrary.org/obo/NCBITaxon_60418>) ObjectAllValuesFrom(<http://purl.obolibrary.org/obo/RO_0002162> <http://purl.obolibrary.org/obo/NCBITaxon_60418>)))
 EquivalentClasses(<http://purl.obolibrary.org/obo/FOODON_00004356> ObjectIntersectionOf(<http://purl.obolibrary.org/obo/PO_0025034> ObjectSomeValuesFrom(<http://purl.obolibrary.org/obo/RO_0002162> <http://purl.obolibrary.org/obo/NCBITaxon_344680>) ObjectAllValuesFrom(<http://purl.obolibrary.org/obo/RO_0002162> <http://purl.obolibrary.org/obo/NCBITaxon_344680>)))
-SubClassOf(<http://purl.obolibrary.org/obo/FOODON_00004356> <http://purl.obolibrary.org/obo/FOODON_00003089>)
 SubClassOf(<http://purl.obolibrary.org/obo/FOODON_00004356> <http://purl.obolibrary.org/obo/FOODON_00004355>)
 SubClassOf(<http://purl.obolibrary.org/obo/FOODON_00004356> <http://purl.obolibrary.org/obo/PO_0025034>)
 
-# Class: <http://purl.obolibrary.org/obo/FOODON_00004357> (mexican hickory nut (whole))
+# Class: <http://purl.obolibrary.org/obo/FOODON_00004357> (mustard spinach leaf (whole, raw))
 
-AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000115> <http://purl.obolibrary.org/obo/FOODON_00004357> "A whole hickory nut from a mexican hickory tree (Carya palmeri)"@en)
 AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000115> <http://purl.obolibrary.org/obo/FOODON_00004357> "A whole raw mustard spinach leaf."@en)
 AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000117> <http://purl.obolibrary.org/obo/FOODON_00004357> "https://orcid.org/0000-0001-5275-8866"^^rdfs:anyURI)
-AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000117> <http://purl.obolibrary.org/obo/FOODON_00004357> "https://orcid.org/0000-0002-6020-5919"^^rdfs:anyURI)
 AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000119> <http://purl.obolibrary.org/obo/FOODON_00004357> "https://en.wikipedia.org/wiki/Komatsuna")
 AnnotationAssertion(<http://purl.org/dc/terms/date> <http://purl.obolibrary.org/obo/FOODON_00004357> "2022-11-23T11:49:36Z"^^xsd:dateTime)
-AnnotationAssertion(rdfs:label <http://purl.obolibrary.org/obo/FOODON_00004357> "mexican hickory nut (whole)"@en)
 AnnotationAssertion(rdfs:label <http://purl.obolibrary.org/obo/FOODON_00004357> "mustard spinach leaf (whole, raw)"@en)
-EquivalentClasses(<http://purl.obolibrary.org/obo/FOODON_00004357> ObjectIntersectionOf(<http://purl.obolibrary.org/obo/FOODON_00003089> ObjectSomeValuesFrom(<http://purl.obolibrary.org/obo/RO_0002162> <http://purl.obolibrary.org/obo/NCBITaxon_2044477>) ObjectAllValuesFrom(<http://purl.obolibrary.org/obo/RO_0002162> <http://purl.obolibrary.org/obo/NCBITaxon_2044477>)))
-SubClassOf(<http://purl.obolibrary.org/obo/FOODON_00004357> <http://purl.obolibrary.org/obo/FOODON_00003089>)
 SubClassOf(<http://purl.obolibrary.org/obo/FOODON_00004357> <http://purl.obolibrary.org/obo/FOODON_00004356>)
 
-# Class: <http://purl.obolibrary.org/obo/FOODON_00004358> (black hickory nut (whole))
+# Class: <http://purl.obolibrary.org/obo/FOODON_00004358> (kelp (raw))
 
-AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000115> <http://purl.obolibrary.org/obo/FOODON_00004358> "A whole hickory nut from a black hickory tree (Carya texana)"@en)
-AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000117> <http://purl.obolibrary.org/obo/FOODON_00004358> "https://orcid.org/0000-0002-6020-5919"^^rdfs:anyURI)
-AnnotationAssertion(rdfs:label <http://purl.obolibrary.org/obo/FOODON_00004358> "black hickory nut (whole)"@en)
 AnnotationAssertion(rdfs:label <http://purl.obolibrary.org/obo/FOODON_00004358> "kelp (raw)"@en)
-EquivalentClasses(<http://purl.obolibrary.org/obo/FOODON_00004358> ObjectIntersectionOf(<http://purl.obolibrary.org/obo/FOODON_00003089> ObjectSomeValuesFrom(<http://purl.obolibrary.org/obo/RO_0002162> <http://purl.obolibrary.org/obo/NCBITaxon_1370061>) ObjectAllValuesFrom(<http://purl.obolibrary.org/obo/RO_0002162> <http://purl.obolibrary.org/obo/NCBITaxon_1370061>)))
-SubClassOf(<http://purl.obolibrary.org/obo/FOODON_00004358> <http://purl.obolibrary.org/obo/FOODON_00003089>)
 SubClassOf(<http://purl.obolibrary.org/obo/FOODON_00004358> <http://purl.obolibrary.org/obo/FOODON_03301195>)
 
 # Class: <http://purl.obolibrary.org/obo/FOODON_00004359> (goji berry food product)
@@ -7422,12 +7403,6 @@ AnnotationAssertion(rdfs:label <http://purl.obolibrary.org/obo/FOODON_00004360> 
 SubClassOf(<http://purl.obolibrary.org/obo/FOODON_00004360> <http://purl.obolibrary.org/obo/FOODON_00003521>)
 SubClassOf(<http://purl.obolibrary.org/obo/FOODON_00004360> ObjectSomeValuesFrom(<http://purl.obolibrary.org/obo/RO_0002162> ObjectUnionOf(<http://purl.obolibrary.org/obo/NCBITaxon_112863> <http://purl.obolibrary.org/obo/NCBITaxon_112883>)))
 
-# Class: <http://purl.obolibrary.org/obo/FOODON_00004361> (mafurra nut food product)
-
-AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000115> <http://purl.obolibrary.org/obo/FOODON_00004361> "A food product derived from a mafurra (Trichilia emetica) nut."@en)
-AnnotationAssertion(rdfs:label <http://purl.obolibrary.org/obo/FOODON_00004361> "mafurra nut food product"@en)
-SubClassOf(<http://purl.obolibrary.org/obo/FOODON_00004361> <http://purl.obolibrary.org/obo/FOODON_00001172>)
-
 # Class: <http://purl.obolibrary.org/obo/FOODON_00004364> (durum wheat kernel (raw))
 
 AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000115> <http://purl.obolibrary.org/obo/FOODON_00004364> "A durum wheat kernel which is raw (not dried)."@en)
@@ -7440,6 +7415,7 @@ SubClassOf(<http://purl.obolibrary.org/obo/FOODON_00004364> <http://purl.obolibr
 # Class: <http://purl.obolibrary.org/obo/FOODON_00004368> (moringa food product)
 
 AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000115> <http://purl.obolibrary.org/obo/FOODON_00004368> "A food product which derives from a moringa tree (Moringa)."@en)
+AnnotationAssertion(<http://purl.org/dc/terms/date> <http://purl.obolibrary.org/obo/FOODON_00004368> "2023-06-19T08:07:21Z"^^xsd:dateTime)
 AnnotationAssertion(rdfs:label <http://purl.obolibrary.org/obo/FOODON_00004368> "moringa food product"@en)
 SubClassOf(<http://purl.obolibrary.org/obo/FOODON_00004368> <http://purl.obolibrary.org/obo/FOODON_00001015>)
 
@@ -7447,11 +7423,19 @@ SubClassOf(<http://purl.obolibrary.org/obo/FOODON_00004368> <http://purl.obolibr
 
 AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000115> <http://purl.obolibrary.org/obo/FOODON_00004369> "A moringa pod which is raw."@en)
 AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000117> <http://purl.obolibrary.org/obo/FOODON_00004369> "http://orcid.org/0000-0002-8844-9165"^^rdfs:anyURI)
+AnnotationAssertion(<http://purl.org/dc/terms/date> <http://purl.obolibrary.org/obo/FOODON_00004369> "2023-06-19T08:07:21Z"^^xsd:dateTime)
 AnnotationAssertion(rdfs:label <http://purl.obolibrary.org/obo/FOODON_00004369> "moringa pod (raw)"@en)
 SubClassOf(<http://purl.obolibrary.org/obo/FOODON_00004369> <http://purl.obolibrary.org/obo/FOODON_00004368>)
 
+# Class: <http://purl.obolibrary.org/obo/FOODON_00004371> (tangelo food product)
+
+AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000115> <http://purl.obolibrary.org/obo/FOODON_00004371> "A citris fruit food product which derives from a tangelo plant."@en)
+AnnotationAssertion(rdfs:label <http://purl.obolibrary.org/obo/FOODON_00004371> "tangelo food product"@en)
+SubClassOf(<http://purl.obolibrary.org/obo/FOODON_00004371> <http://purl.obolibrary.org/obo/FOODON_00001151>)
+
 # Class: <http://purl.obolibrary.org/obo/FOODON_00004378> (sumac food product)
 
+AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000115> <http://purl.obolibrary.org/obo/FOODON_00004378> "A food product derived from a sumac plant."@en)
 AnnotationAssertion(rdfs:label <http://purl.obolibrary.org/obo/FOODON_00004378> "sumac food product"@en)
 SubClassOf(<http://purl.obolibrary.org/obo/FOODON_00004378> <http://purl.obolibrary.org/obo/FOODON_00001015>)
 
@@ -7465,6 +7449,7 @@ SubClassOf(<http://purl.obolibrary.org/obo/FOODON_00004379> <http://purl.obolibr
 
 AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000115> <http://purl.obolibrary.org/obo/FOODON_00004381> "A food product derived from a pitaya fruit."@en)
 AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000119> <http://purl.obolibrary.org/obo/FOODON_00004381> "https://en.wikipedia.org/wiki/Pitaya")
+AnnotationAssertion(<http://purl.org/dc/terms/date> <http://purl.obolibrary.org/obo/FOODON_00004381> "2023-06-19T08:07:21Z"^^xsd:dateTime)
 AnnotationAssertion(rdfs:label <http://purl.obolibrary.org/obo/FOODON_00004381> "pitaya food product"@en)
 SubClassOf(<http://purl.obolibrary.org/obo/FOODON_00004381> <http://purl.obolibrary.org/obo/FOODON_00001015>)
 SubClassOf(<http://purl.obolibrary.org/obo/FOODON_00004381> ObjectSomeValuesFrom(<http://purl.obolibrary.org/obo/RO_0001000> <http://purl.obolibrary.org/obo/FOODON_03412781>))
@@ -7473,6 +7458,7 @@ SubClassOf(<http://purl.obolibrary.org/obo/FOODON_00004381> ObjectSomeValuesFrom
 
 AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000115> <http://purl.obolibrary.org/obo/FOODON_00004382> "A fruit of several different cactus species of the family Cactaceae which are indigenous to the region of southern Mexico and along the Pacific coasts of Guatemala, Costa Rica, and El Salvador."@en)
 AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000119> <http://purl.obolibrary.org/obo/FOODON_00004382> "https://en.wikipedia.org/wiki/Pitaya")
+AnnotationAssertion(<http://purl.org/dc/terms/date> <http://purl.obolibrary.org/obo/FOODON_00004382> "2023-06-19T08:07:21Z"^^xsd:dateTime)
 AnnotationAssertion(rdfs:comment <http://purl.obolibrary.org/obo/FOODON_00004382> "Pitaya usually refers to fruit of the genus Stenocereus, while pitahaya or dragon fruit refers to fruit of the genus Selenicereus\" - https://en.wikipedia.org/wiki/Pitaya"@en)
 AnnotationAssertion(rdfs:label <http://purl.obolibrary.org/obo/FOODON_00004382> "pitaya fruit (whole)"@en)
 EquivalentClasses(<http://purl.obolibrary.org/obo/FOODON_00004382> ObjectIntersectionOf(<http://purl.obolibrary.org/obo/PO_0030108> ObjectSomeValuesFrom(<http://purl.obolibrary.org/obo/RO_0002162> <http://purl.obolibrary.org/obo/FOODON_03412781>)))
@@ -7482,13 +7468,23 @@ SubClassOf(<http://purl.obolibrary.org/obo/FOODON_00004382> <http://purl.obolibr
 # Class: <http://purl.obolibrary.org/obo/FOODON_00004383> (yellow pitaya fruit (whole))
 
 AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000115> <http://purl.obolibrary.org/obo/FOODON_00004383> "A fruit from the yellow pitaya cactus (Selenicereus megalanthus)."@en)
+AnnotationAssertion(<http://purl.org/dc/terms/date> <http://purl.obolibrary.org/obo/FOODON_00004383> "2023-06-19T08:07:21Z"^^xsd:dateTime)
 AnnotationAssertion(rdfs:label <http://purl.obolibrary.org/obo/FOODON_00004383> "yellow pitaya fruit (whole)"@en)
 EquivalentClasses(<http://purl.obolibrary.org/obo/FOODON_00004383> ObjectIntersectionOf(<http://purl.obolibrary.org/obo/PO_0030108> ObjectSomeValuesFrom(<http://purl.obolibrary.org/obo/RO_0002162> <http://purl.obolibrary.org/obo/NCBITaxon_1195127>) ObjectAllValuesFrom(<http://purl.obolibrary.org/obo/RO_0002162> <http://purl.obolibrary.org/obo/NCBITaxon_1195127>)))
 SubClassOf(<http://purl.obolibrary.org/obo/FOODON_00004383> <http://purl.obolibrary.org/obo/FOODON_00004382>)
 
+# Class: <http://purl.obolibrary.org/obo/FOODON_00004384> (Jamaican tangelo (whole, raw))
+
+AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000115> <http://purl.obolibrary.org/obo/FOODON_00004384> "A Jamaican tangelo which is raw."@en)
+AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000119> <http://purl.obolibrary.org/obo/FOODON_00004384> "https://en.wikipedia.org/wiki/Jamaican_tangelo")
+AnnotationAssertion(rdfs:label <http://purl.obolibrary.org/obo/FOODON_00004384> "Jamaican tangelo (whole, raw)"@en)
+EquivalentClasses(<http://purl.obolibrary.org/obo/FOODON_00004384> ObjectIntersectionOf(<http://purl.obolibrary.org/obo/FOODON_03411502> ObjectSomeValuesFrom(<http://purl.obolibrary.org/obo/RO_0000086> <http://purl.obolibrary.org/obo/FOODON_00004348>)))
+SubClassOf(<http://purl.obolibrary.org/obo/FOODON_00004384> <http://purl.obolibrary.org/obo/FOODON_03411502>)
+
 # Class: <http://purl.obolibrary.org/obo/FOODON_00004385> (dragon fruit (whole))
 
 AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000115> <http://purl.obolibrary.org/obo/FOODON_00004385> "A fruit from the dragon fruit cactus (Selenicereus undatus)."@en)
+AnnotationAssertion(<http://purl.org/dc/terms/date> <http://purl.obolibrary.org/obo/FOODON_00004385> "2023-06-19T08:07:21Z"^^xsd:dateTime)
 AnnotationAssertion(rdfs:label <http://purl.obolibrary.org/obo/FOODON_00004385> "dragon fruit (whole)"@en)
 EquivalentClasses(<http://purl.obolibrary.org/obo/FOODON_00004385> ObjectIntersectionOf(<http://purl.obolibrary.org/obo/PO_0030108> ObjectSomeValuesFrom(<http://purl.obolibrary.org/obo/RO_0002162> <http://purl.obolibrary.org/obo/NCBITaxon_176265>) ObjectAllValuesFrom(<http://purl.obolibrary.org/obo/RO_0002162> <http://purl.obolibrary.org/obo/NCBITaxon_176265>)))
 SubClassOf(<http://purl.obolibrary.org/obo/FOODON_00004385> <http://purl.obolibrary.org/obo/FOODON_00004382>)
@@ -7527,67 +7523,79 @@ SubClassOf(<http://purl.obolibrary.org/obo/FOODON_00004391> <http://purl.obolibr
 
 # Class: <http://purl.obolibrary.org/obo/FOODON_00004392> (beautyberry food product)
 
+AnnotationAssertion(<http://purl.org/dc/terms/date> <http://purl.obolibrary.org/obo/FOODON_00004392> "2023-06-19T08:07:21Z"^^xsd:dateTime)
 AnnotationAssertion(rdfs:label <http://purl.obolibrary.org/obo/FOODON_00004392> "beautyberry food product"@en)
 EquivalentClasses(<http://purl.obolibrary.org/obo/FOODON_00004392> ObjectIntersectionOf(<http://purl.obolibrary.org/obo/FOODON_00001640> ObjectSomeValuesFrom(<http://purl.obolibrary.org/obo/RO_0001000> <http://purl.obolibrary.org/obo/FOODON_00004393>)))
 SubClassOf(<http://purl.obolibrary.org/obo/FOODON_00004392> <http://purl.obolibrary.org/obo/FOODON_00001640>)
 
 # Class: <http://purl.obolibrary.org/obo/FOODON_00004393> (beautyberry (whole))
 
+AnnotationAssertion(<http://purl.org/dc/terms/date> <http://purl.obolibrary.org/obo/FOODON_00004393> "2023-06-19T08:07:21Z"^^xsd:dateTime)
 AnnotationAssertion(rdfs:label <http://purl.obolibrary.org/obo/FOODON_00004393> "beautyberry (whole)"@en)
 EquivalentClasses(<http://purl.obolibrary.org/obo/FOODON_00004393> ObjectIntersectionOf(<http://purl.obolibrary.org/obo/PO_0030108> ObjectSomeValuesFrom(<http://purl.obolibrary.org/obo/RO_0002162> <http://purl.obolibrary.org/obo/NCBITaxon_21922>) ObjectAllValuesFrom(<http://purl.obolibrary.org/obo/RO_0002162> <http://purl.obolibrary.org/obo/NCBITaxon_21922>)))
 SubClassOf(<http://purl.obolibrary.org/obo/FOODON_00004393> <http://purl.obolibrary.org/obo/FOODON_00004392>)
 
 # Class: <http://purl.obolibrary.org/obo/FOODON_00004394> (black beautyberry (whole))
 
+AnnotationAssertion(<http://purl.org/dc/terms/date> <http://purl.obolibrary.org/obo/FOODON_00004394> "2023-06-19T08:07:21Z"^^xsd:dateTime)
 AnnotationAssertion(rdfs:label <http://purl.obolibrary.org/obo/FOODON_00004394> "black beautyberry (whole)"@en)
 EquivalentClasses(<http://purl.obolibrary.org/obo/FOODON_00004394> ObjectIntersectionOf(<http://purl.obolibrary.org/obo/FOODON_00004393> ObjectSomeValuesFrom(<http://purl.obolibrary.org/obo/RO_0002162> <http://purl.obolibrary.org/obo/NCBITaxon_461200>) ObjectAllValuesFrom(<http://purl.obolibrary.org/obo/RO_0002162> <http://purl.obolibrary.org/obo/NCBITaxon_461200>)))
 SubClassOf(<http://purl.obolibrary.org/obo/FOODON_00004394> <http://purl.obolibrary.org/obo/FOODON_00004393>)
 
 # Class: <http://purl.obolibrary.org/obo/FOODON_00004395> (black beautyberry (whole, raw))
 
+AnnotationAssertion(<http://purl.org/dc/terms/date> <http://purl.obolibrary.org/obo/FOODON_00004395> "2023-06-19T08:07:21Z"^^xsd:dateTime)
 AnnotationAssertion(rdfs:label <http://purl.obolibrary.org/obo/FOODON_00004395> "black beautyberry (whole, raw)"@en)
 EquivalentClasses(<http://purl.obolibrary.org/obo/FOODON_00004395> ObjectIntersectionOf(<http://purl.obolibrary.org/obo/FOODON_00004394> ObjectSomeValuesFrom(<http://purl.obolibrary.org/obo/RO_0000086> <http://purl.obolibrary.org/obo/FOODON_00004348>)))
 SubClassOf(<http://purl.obolibrary.org/obo/FOODON_00004395> <http://purl.obolibrary.org/obo/FOODON_00004394>)
 
 # Class: <http://purl.obolibrary.org/obo/FOODON_00004396> (american beautyberry (whole))
 
+AnnotationAssertion(<http://purl.org/dc/terms/date> <http://purl.obolibrary.org/obo/FOODON_00004396> "2023-06-19T08:07:21Z"^^xsd:dateTime)
 AnnotationAssertion(rdfs:label <http://purl.obolibrary.org/obo/FOODON_00004396> "american beautyberry (whole)"@en)
 SubClassOf(<http://purl.obolibrary.org/obo/FOODON_00004396> <http://purl.obolibrary.org/obo/FOODON_00004393>)
 
 # Class: <http://purl.obolibrary.org/obo/FOODON_00004397> (american beautyberry (whole, raw))
 
+AnnotationAssertion(<http://purl.org/dc/terms/date> <http://purl.obolibrary.org/obo/FOODON_00004397> "2023-06-19T08:07:21Z"^^xsd:dateTime)
 AnnotationAssertion(rdfs:label <http://purl.obolibrary.org/obo/FOODON_00004397> "american beautyberry (whole, raw)"@en)
 EquivalentClasses(<http://purl.obolibrary.org/obo/FOODON_00004397> ObjectIntersectionOf(<http://purl.obolibrary.org/obo/FOODON_00004396> ObjectSomeValuesFrom(<http://purl.obolibrary.org/obo/RO_0000086> <http://purl.obolibrary.org/obo/FOODON_00004348>)))
 SubClassOf(<http://purl.obolibrary.org/obo/FOODON_00004397> <http://purl.obolibrary.org/obo/FOODON_00004396>)
 
 # Class: <http://purl.obolibrary.org/obo/FOODON_00004398> (welchs pink berry (whole))
 
+AnnotationAssertion(<http://purl.org/dc/terms/date> <http://purl.obolibrary.org/obo/FOODON_00004398> "2023-06-19T08:07:21Z"^^xsd:dateTime)
 AnnotationAssertion(rdfs:label <http://purl.obolibrary.org/obo/FOODON_00004398> "welchs pink berry (whole)"@en)
 SubClassOf(<http://purl.obolibrary.org/obo/FOODON_00004398> <http://purl.obolibrary.org/obo/FOODON_00004393>)
 
 # Class: <http://purl.obolibrary.org/obo/FOODON_00004399> (welchs pink berry (whole, raw))
 
+AnnotationAssertion(<http://purl.org/dc/terms/date> <http://purl.obolibrary.org/obo/FOODON_00004399> "2019-08-13T05:27:41Z"^^xsd:dateTime)
 AnnotationAssertion(rdfs:label <http://purl.obolibrary.org/obo/FOODON_00004399> "welchs pink berry (whole, raw)"@en)
 EquivalentClasses(<http://purl.obolibrary.org/obo/FOODON_00004399> ObjectIntersectionOf(<http://purl.obolibrary.org/obo/FOODON_00004398> ObjectSomeValuesFrom(<http://purl.obolibrary.org/obo/RO_0000086> <http://purl.obolibrary.org/obo/FOODON_00004348>)))
 SubClassOf(<http://purl.obolibrary.org/obo/FOODON_00004399> <http://purl.obolibrary.org/obo/FOODON_00004398>)
 
 # Class: <http://purl.obolibrary.org/obo/FOODON_00004400> (hemp seed (dehulled, raw))
 
+AnnotationAssertion(<http://purl.org/dc/terms/date> <http://purl.obolibrary.org/obo/FOODON_00004400> "2023-06-19T08:07:21Z"^^xsd:dateTime)
 AnnotationAssertion(rdfs:label <http://purl.obolibrary.org/obo/FOODON_00004400> "hemp seed (dehulled, raw)"@en)
 SubClassOf(<http://purl.obolibrary.org/obo/FOODON_00004400> <http://purl.obolibrary.org/obo/FOODON_00001949>)
 
 # Class: <http://purl.obolibrary.org/obo/FOODON_00004401> (hemp seed (raw))
 
+AnnotationAssertion(<http://purl.org/dc/terms/date> <http://purl.obolibrary.org/obo/FOODON_00004401> "2023-06-19T08:07:21Z"^^xsd:dateTime)
 AnnotationAssertion(rdfs:label <http://purl.obolibrary.org/obo/FOODON_00004401> "hemp seed (raw)"@en)
 SubClassOf(<http://purl.obolibrary.org/obo/FOODON_00004401> <http://purl.obolibrary.org/obo/FOODON_00004402>)
 
 # Class: <http://purl.obolibrary.org/obo/FOODON_00004402> (hemp seed)
 
+AnnotationAssertion(<http://purl.org/dc/terms/date> <http://purl.obolibrary.org/obo/FOODON_00004402> "2023-06-19T08:07:21Z"^^xsd:dateTime)
 AnnotationAssertion(rdfs:label <http://purl.obolibrary.org/obo/FOODON_00004402> "hemp seed"@en)
 SubClassOf(<http://purl.obolibrary.org/obo/FOODON_00004402> <http://purl.obolibrary.org/obo/FOODON_00001949>)
 
 # Class: <http://purl.obolibrary.org/obo/FOODON_00004403> (habanero (whole, raw))
 
+AnnotationAssertion(<http://purl.org/dc/terms/date> <http://purl.obolibrary.org/obo/FOODON_00004403> "2023-06-19T08:07:21Z"^^xsd:dateTime)
 AnnotationAssertion(rdfs:label <http://purl.obolibrary.org/obo/FOODON_00004403> "habanero (whole, raw)"@en)
 SubClassOf(<http://purl.obolibrary.org/obo/FOODON_00004403> <http://purl.obolibrary.org/obo/FOODON_00002111>)
 
@@ -7605,8 +7613,171 @@ SubClassOf(<http://purl.obolibrary.org/obo/FOODON_00004406> <http://purl.obolibr
 
 # Class: <http://purl.obolibrary.org/obo/FOODON_00004407> (ivy gourd (frozen raw))
 
+AnnotationAssertion(<http://purl.org/dc/terms/date> <http://purl.obolibrary.org/obo/FOODON_00004407> "2023-06-19T08:07:21Z"^^xsd:dateTime)
 AnnotationAssertion(rdfs:label <http://purl.obolibrary.org/obo/FOODON_00004407> "ivy gourd (frozen raw)"@en)
 SubClassOf(<http://purl.obolibrary.org/obo/FOODON_00004407> <http://purl.obolibrary.org/obo/FOODON_00002998>)
+
+# Class: <http://purl.obolibrary.org/obo/FOODON_00004431> (mafurra nut food product)
+
+AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000115> <http://purl.obolibrary.org/obo/FOODON_00004431> "A food product derived from a mafurra (Trichilia emetica) nut."@en)
+AnnotationAssertion(<http://purl.org/dc/terms/date> <http://purl.obolibrary.org/obo/FOODON_00004431> "2023-06-19T08:07:21Z"^^xsd:dateTime)
+AnnotationAssertion(rdfs:label <http://purl.obolibrary.org/obo/FOODON_00004431> "mafurra nut food product"@en)
+SubClassOf(<http://purl.obolibrary.org/obo/FOODON_00004431> <http://purl.obolibrary.org/obo/FOODON_00001172>)
+
+# Class: <http://purl.obolibrary.org/obo/FOODON_00004432> (red lentil (whole, dried))
+
+AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000115> <http://purl.obolibrary.org/obo/FOODON_00004432> "A lentil with a red cotyledon which is dried."@en)
+AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000117> <http://purl.obolibrary.org/obo/FOODON_00004432> "https://orcid.org/0000-0002-8461-9745"^^rdfs:anyURI)
+AnnotationAssertion(rdfs:label <http://purl.obolibrary.org/obo/FOODON_00004432> "red lentil (whole, dried)"@en)
+EquivalentClasses(<http://purl.obolibrary.org/obo/FOODON_00004432> ObjectIntersectionOf(<http://purl.obolibrary.org/obo/FOODON_03301421> ObjectSomeValuesFrom(<http://purl.obolibrary.org/obo/RO_0000086> <http://purl.obolibrary.org/obo/PATO_0000322>)))
+SubClassOf(<http://purl.obolibrary.org/obo/FOODON_00004432> <http://purl.obolibrary.org/obo/FOODON_03301421>)
+
+# Class: <http://purl.obolibrary.org/obo/FOODON_00004433> (brown lentil (whole, dried))
+
+AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000115> <http://purl.obolibrary.org/obo/FOODON_00004433> "A lentil with a brown cotyledon which is dried."@en)
+AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000117> <http://purl.obolibrary.org/obo/FOODON_00004433> "https://orcid.org/0000-0002-8461-9745"^^rdfs:anyURI)
+AnnotationAssertion(rdfs:label <http://purl.obolibrary.org/obo/FOODON_00004433> "brown lentil (whole, dried)"@en)
+EquivalentClasses(<http://purl.obolibrary.org/obo/FOODON_00004433> ObjectIntersectionOf(<http://purl.obolibrary.org/obo/FOODON_03301421> ObjectSomeValuesFrom(<http://purl.obolibrary.org/obo/RO_0000086> <http://purl.obolibrary.org/obo/PATO_0000952>)))
+SubClassOf(<http://purl.obolibrary.org/obo/FOODON_00004433> <http://purl.obolibrary.org/obo/FOODON_03301421>)
+
+# Class: <http://purl.obolibrary.org/obo/FOODON_00004435> (hickory nut food product)
+
+AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000115> <http://purl.obolibrary.org/obo/FOODON_00004435> "A food product which derives from a hickory cultivar (Carya) nut."@en)
+AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000117> <http://purl.obolibrary.org/obo/FOODON_00004435> "https://orcid.org/0000-0002-8461-9745"^^rdfs:anyURI)
+AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000119> <http://purl.obolibrary.org/obo/FOODON_00004435> "https://en.wikipedia.org/wiki/Hickory")
+AnnotationAssertion(<http://purl.org/dc/terms/date> <http://purl.obolibrary.org/obo/FOODON_00004435> "2023-06-18T15:53:21Z"^^xsd:dateTime)
+AnnotationAssertion(rdfs:label <http://purl.obolibrary.org/obo/FOODON_00004435> "hickory nut food product"@en)
+SubClassOf(<http://purl.obolibrary.org/obo/FOODON_00004435> <http://purl.obolibrary.org/obo/FOODON_00001172>)
+
+# Class: <http://purl.obolibrary.org/obo/FOODON_00004437> (baby arugula greens)
+
+AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000115> <http://purl.obolibrary.org/obo/FOODON_00004437> "A bunch of baby arugula leaves (immature leaves)"@en)
+AnnotationAssertion(rdfs:label <http://purl.obolibrary.org/obo/FOODON_00004437> "baby arugula greens"@en)
+SubClassOf(<http://purl.obolibrary.org/obo/FOODON_00004437> <http://purl.obolibrary.org/obo/FOODON_00003643>)
+
+# Class: <http://purl.obolibrary.org/obo/FOODON_00004440> (delicata squash (whole))
+
+AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000115> <http://purl.obolibrary.org/obo/FOODON_00004440> "A whole delicata squash."@en)
+AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000119> <http://purl.obolibrary.org/obo/FOODON_00004440> "https://en.wikipedia.org/wiki/Delicata_squash")
+AnnotationAssertion(rdfs:label <http://purl.obolibrary.org/obo/FOODON_00004440> "delicata squash (whole)"@en)
+SubClassOf(<http://purl.obolibrary.org/obo/FOODON_00004440> <http://purl.obolibrary.org/obo/FOODON_00003946>)
+
+# Class: <http://purl.obolibrary.org/obo/FOODON_00004441> (delicata squash (whole, raw))
+
+AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000115> <http://purl.obolibrary.org/obo/FOODON_00004441> "A whole delicata squash which is raw."@en)
+AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000119> <http://purl.obolibrary.org/obo/FOODON_00004441> "https://en.wikipedia.org/wiki/Delicata_squash")
+AnnotationAssertion(rdfs:label <http://purl.obolibrary.org/obo/FOODON_00004441> "delicata squash (whole, raw)"@en)
+SubClassOf(<http://purl.obolibrary.org/obo/FOODON_00004441> <http://purl.obolibrary.org/obo/FOODON_00004440>)
+
+# Class: <http://purl.obolibrary.org/obo/FOODON_00004442> (green acorn squash (whole))
+
+AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000115> <http://purl.obolibrary.org/obo/FOODON_00004442> "A whole acorn squash which has a green skin."@en)
+AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000119> <http://purl.obolibrary.org/obo/FOODON_00004442> "https://en.wikipedia.org/wiki/Acorn_squash")
+AnnotationAssertion(<http://purl.org/dc/terms/date> <http://purl.obolibrary.org/obo/FOODON_00004442> "2023-06-20T21:50:47Z"^^xsd:dateTime)
+AnnotationAssertion(rdfs:label <http://purl.obolibrary.org/obo/FOODON_00004442> "green acorn squash (whole)"@en)
+SubClassOf(<http://purl.obolibrary.org/obo/FOODON_00004442> <http://purl.obolibrary.org/obo/FOODON_00003599>)
+
+# Class: <http://purl.obolibrary.org/obo/FOODON_00004443> (green acorn squash (whole, raw))
+
+AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000115> <http://purl.obolibrary.org/obo/FOODON_00004443> "A whole green acorn squash which is raw."@en)
+AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000117> <http://purl.obolibrary.org/obo/FOODON_00004443> "https://orcid.org/0000-0002-8844-9165"^^rdfs:anyURI)
+AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000119> <http://purl.obolibrary.org/obo/FOODON_00004443> "https://en.wikipedia.org/wiki/Acorn_squash")
+AnnotationAssertion(<http://purl.org/dc/terms/date> <http://purl.obolibrary.org/obo/FOODON_00004443> "2023-06-20T21:50:47Z"^^xsd:dateTime)
+AnnotationAssertion(rdfs:label <http://purl.obolibrary.org/obo/FOODON_00004443> "green acorn squash (whole, raw)"@en)
+SubClassOf(<http://purl.obolibrary.org/obo/FOODON_00004443> <http://purl.obolibrary.org/obo/FOODON_00004442>)
+
+# Class: <http://purl.obolibrary.org/obo/FOODON_00004444> (golden acorn squash (whole))
+
+AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000115> <http://purl.obolibrary.org/obo/FOODON_00004444> "A whole acorn squash which has a golden or yellow skin."@en)
+AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000117> <http://purl.obolibrary.org/obo/FOODON_00004444> "https://orcid.org/0000-0002-8844-9165"^^rdfs:anyURI)
+AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000119> <http://purl.obolibrary.org/obo/FOODON_00004444> "https://en.wikipedia.org/wiki/Acorn_squash")
+AnnotationAssertion(<http://purl.org/dc/terms/date> <http://purl.obolibrary.org/obo/FOODON_00004444> "2023-06-20T21:50:47Z"^^xsd:dateTime)
+AnnotationAssertion(rdfs:label <http://purl.obolibrary.org/obo/FOODON_00004444> "golden acorn squash (whole)"@en)
+SubClassOf(<http://purl.obolibrary.org/obo/FOODON_00004444> <http://purl.obolibrary.org/obo/FOODON_00003599>)
+
+# Class: <http://purl.obolibrary.org/obo/FOODON_00004445> (golden acorn squash (whole, raw))
+
+AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000115> <http://purl.obolibrary.org/obo/FOODON_00004445> "A whole golden acorn squash which is raw."@en)
+AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000117> <http://purl.obolibrary.org/obo/FOODON_00004445> "https://orcid.org/0000-0002-8844-9165"^^rdfs:anyURI)
+AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000119> <http://purl.obolibrary.org/obo/FOODON_00004445> "https://en.wikipedia.org/wiki/Acorn_squash")
+AnnotationAssertion(<http://purl.org/dc/terms/date> <http://purl.obolibrary.org/obo/FOODON_00004445> "2023-06-20T21:50:47Z"^^xsd:dateTime)
+AnnotationAssertion(rdfs:label <http://purl.obolibrary.org/obo/FOODON_00004445> "golden acorn squash (whole, raw)"@en)
+SubClassOf(<http://purl.obolibrary.org/obo/FOODON_00004445> <http://purl.obolibrary.org/obo/FOODON_00004442>)
+
+# Class: <http://purl.obolibrary.org/obo/FOODON_00004446> (Mexican grey squash (whole))
+
+AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000115> <http://purl.obolibrary.org/obo/FOODON_00004446> "A whole Mexican grey squash."@en)
+AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000117> <http://purl.obolibrary.org/obo/FOODON_00004446> "https://orcid.org/0000-0002-8844-9165"^^rdfs:anyURI)
+AnnotationAssertion(<http://purl.org/dc/terms/date> <http://purl.obolibrary.org/obo/FOODON_00004446> "2023-06-20T21:50:47Z"^^xsd:dateTime)
+AnnotationAssertion(rdfs:label <http://purl.obolibrary.org/obo/FOODON_00004446> "Mexican grey squash (whole)"@en)
+AnnotationAssertion(rdfs:label <http://purl.obolibrary.org/obo/FOODON_00004446> "mexican grey squash (whole)"@en)
+SubClassOf(<http://purl.obolibrary.org/obo/FOODON_00004446> <http://purl.obolibrary.org/obo/FOODON_00003708>)
+SubClassOf(<http://purl.obolibrary.org/obo/FOODON_00004446> <http://purl.obolibrary.org/obo/PO_0030111>)
+
+# Class: <http://purl.obolibrary.org/obo/FOODON_00004447> (mexican grey squash (whole, raw))
+
+AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000115> <http://purl.obolibrary.org/obo/FOODON_00004447> "A whole Mexican grey squash which is raw."@en)
+AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000117> <http://purl.obolibrary.org/obo/FOODON_00004447> "https://orcid.org/0000-0002-8844-9165"^^rdfs:anyURI)
+AnnotationAssertion(<http://purl.org/dc/terms/date> <http://purl.obolibrary.org/obo/FOODON_00004447> "2023-06-20T21:50:47Z"^^xsd:dateTime)
+AnnotationAssertion(rdfs:label <http://purl.obolibrary.org/obo/FOODON_00004447> "Mexican grey squash (whole, raw)"@en)
+AnnotationAssertion(rdfs:label <http://purl.obolibrary.org/obo/FOODON_00004447> "mexican grey squash (whole, raw)"@en)
+SubClassOf(<http://purl.obolibrary.org/obo/FOODON_00004447> <http://purl.obolibrary.org/obo/FOODON_00004446>)
+
+# Class: <http://purl.obolibrary.org/obo/FOODON_00004448> (pignut hickory nut (whole))
+
+AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000115> <http://purl.obolibrary.org/obo/FOODON_00004448> "A whole hickory nut from a pignut hickory tree (Carya glabra)."@en)
+AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000117> <http://purl.obolibrary.org/obo/FOODON_00004448> "https://orcid.org/0000-0002-6020-5919"^^rdfs:anyURI)
+AnnotationAssertion(<http://purl.org/dc/terms/date> <http://purl.obolibrary.org/obo/FOODON_00004448> "2023-06-18T15:53:21Z"^^xsd:dateTime)
+AnnotationAssertion(rdfs:label <http://purl.obolibrary.org/obo/FOODON_00004448> "pignut hickory nut (whole)"@en)
+EquivalentClasses(<http://purl.obolibrary.org/obo/FOODON_00004448> ObjectIntersectionOf(<http://purl.obolibrary.org/obo/FOODON_00003089> ObjectSomeValuesFrom(<http://purl.obolibrary.org/obo/RO_0002162> <http://purl.obolibrary.org/obo/NCBITaxon_13403>) ObjectAllValuesFrom(<http://purl.obolibrary.org/obo/RO_0002162> <http://purl.obolibrary.org/obo/NCBITaxon_13403>)))
+SubClassOf(<http://purl.obolibrary.org/obo/FOODON_00004448> <http://purl.obolibrary.org/obo/FOODON_00003089>)
+
+# Class: <http://purl.obolibrary.org/obo/FOODON_00004449> (shellback hickory nut (whole))
+
+AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000115> <http://purl.obolibrary.org/obo/FOODON_00004449> "A whole hickory nut from a shellback hickory tree (Carya lacinosa)"@en)
+AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000117> <http://purl.obolibrary.org/obo/FOODON_00004449> "https://orcid.org/0000-0002-6020-5919"^^rdfs:anyURI)
+AnnotationAssertion(<http://purl.org/dc/terms/date> <http://purl.obolibrary.org/obo/FOODON_00004449> "2023-06-18T15:53:21Z"^^xsd:dateTime)
+AnnotationAssertion(<http://www.geneontology.org/formats/oboInOwl#hasExactSynonym> <http://purl.obolibrary.org/obo/FOODON_00004449> "Shellbark hickory"@en)
+AnnotationAssertion(rdfs:label <http://purl.obolibrary.org/obo/FOODON_00004449> "shellback hickory nut (whole)"@en)
+EquivalentClasses(<http://purl.obolibrary.org/obo/FOODON_00004449> ObjectIntersectionOf(<http://purl.obolibrary.org/obo/FOODON_00003089> ObjectSomeValuesFrom(<http://purl.obolibrary.org/obo/RO_0002162> <http://purl.obolibrary.org/obo/NCBITaxon_1370058>) ObjectAllValuesFrom(<http://purl.obolibrary.org/obo/RO_0002162> <http://purl.obolibrary.org/obo/NCBITaxon_1370058>)))
+SubClassOf(<http://purl.obolibrary.org/obo/FOODON_00004449> <http://purl.obolibrary.org/obo/FOODON_00003089>)
+
+# Class: <http://purl.obolibrary.org/obo/FOODON_00004450> (red hickory nut (whole))
+
+AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000115> <http://purl.obolibrary.org/obo/FOODON_00004450> "A whole hickory nut from a red hickory tree (Carya ovalis)"@en)
+AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000117> <http://purl.obolibrary.org/obo/FOODON_00004450> "https://orcid.org/0000-0002-6020-5919"^^rdfs:anyURI)
+AnnotationAssertion(<http://purl.org/dc/terms/date> <http://purl.obolibrary.org/obo/FOODON_00004450> "2023-06-18T15:53:21Z"^^xsd:dateTime)
+AnnotationAssertion(<http://www.geneontology.org/formats/oboInOwl#hasExactSynonym> <http://purl.obolibrary.org/obo/FOODON_00004450> "Sweet pignut hickory"@en)
+AnnotationAssertion(rdfs:label <http://purl.obolibrary.org/obo/FOODON_00004450> "red hickory nut (whole)"@en)
+EquivalentClasses(<http://purl.obolibrary.org/obo/FOODON_00004450> ObjectIntersectionOf(<http://purl.obolibrary.org/obo/FOODON_00003089> ObjectSomeValuesFrom(<http://purl.obolibrary.org/obo/RO_0002162> <http://purl.obolibrary.org/obo/NCBITaxon_2800123>) ObjectAllValuesFrom(<http://purl.obolibrary.org/obo/RO_0002162> <http://purl.obolibrary.org/obo/NCBITaxon_2800123>)))
+SubClassOf(<http://purl.obolibrary.org/obo/FOODON_00004450> <http://purl.obolibrary.org/obo/FOODON_00003089>)
+
+# Class: <http://purl.obolibrary.org/obo/FOODON_00004451> (shagbark hickory nut (whole))
+
+AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000115> <http://purl.obolibrary.org/obo/FOODON_00004451> "A whole hickory nut from a shagbark hickory tree (Carya ovata)"@en)
+AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000117> <http://purl.obolibrary.org/obo/FOODON_00004451> "https://orcid.org/0000-0002-6020-5919"^^rdfs:anyURI)
+AnnotationAssertion(<http://purl.org/dc/terms/date> <http://purl.obolibrary.org/obo/FOODON_00004451> "2023-06-18T15:53:21Z"^^xsd:dateTime)
+AnnotationAssertion(rdfs:label <http://purl.obolibrary.org/obo/FOODON_00004451> "shagbark hickory nut (whole)"@en)
+EquivalentClasses(<http://purl.obolibrary.org/obo/FOODON_00004451> ObjectIntersectionOf(<http://purl.obolibrary.org/obo/FOODON_00003089> ObjectSomeValuesFrom(<http://purl.obolibrary.org/obo/RO_0002162> <http://purl.obolibrary.org/obo/NCBITaxon_60418>) ObjectAllValuesFrom(<http://purl.obolibrary.org/obo/RO_0002162> <http://purl.obolibrary.org/obo/NCBITaxon_60418>)))
+SubClassOf(<http://purl.obolibrary.org/obo/FOODON_00004451> <http://purl.obolibrary.org/obo/FOODON_00003089>)
+
+# Class: <http://purl.obolibrary.org/obo/FOODON_00004452> (mexican hickory nut (whole))
+
+AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000115> <http://purl.obolibrary.org/obo/FOODON_00004452> "A whole hickory nut from a mexican hickory tree (Carya palmeri)"@en)
+AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000117> <http://purl.obolibrary.org/obo/FOODON_00004452> "https://orcid.org/0000-0002-6020-5919"^^rdfs:anyURI)
+AnnotationAssertion(<http://purl.org/dc/terms/date> <http://purl.obolibrary.org/obo/FOODON_00004452> "2023-06-18T15:53:21Z"^^xsd:dateTime)
+AnnotationAssertion(rdfs:label <http://purl.obolibrary.org/obo/FOODON_00004452> "mexican hickory nut (whole)"@en)
+EquivalentClasses(<http://purl.obolibrary.org/obo/FOODON_00004452> ObjectIntersectionOf(<http://purl.obolibrary.org/obo/FOODON_00003089> ObjectSomeValuesFrom(<http://purl.obolibrary.org/obo/RO_0002162> <http://purl.obolibrary.org/obo/NCBITaxon_2044477>) ObjectAllValuesFrom(<http://purl.obolibrary.org/obo/RO_0002162> <http://purl.obolibrary.org/obo/NCBITaxon_2044477>)))
+SubClassOf(<http://purl.obolibrary.org/obo/FOODON_00004452> <http://purl.obolibrary.org/obo/FOODON_00003089>)
+
+# Class: <http://purl.obolibrary.org/obo/FOODON_00004453> (black hickory nut (whole))
+
+AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000115> <http://purl.obolibrary.org/obo/FOODON_00004453> "A whole hickory nut from a black hickory tree (Carya texana)"@en)
+AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000117> <http://purl.obolibrary.org/obo/FOODON_00004453> "https://orcid.org/0000-0002-6020-5919"^^rdfs:anyURI)
+AnnotationAssertion(<http://purl.org/dc/terms/date> <http://purl.obolibrary.org/obo/FOODON_00004453> "2023-06-18T15:53:21Z"^^xsd:dateTime)
+AnnotationAssertion(rdfs:label <http://purl.obolibrary.org/obo/FOODON_00004453> "black hickory nut (whole)"@en)
+EquivalentClasses(<http://purl.obolibrary.org/obo/FOODON_00004453> ObjectIntersectionOf(<http://purl.obolibrary.org/obo/FOODON_00003089> ObjectSomeValuesFrom(<http://purl.obolibrary.org/obo/RO_0002162> <http://purl.obolibrary.org/obo/NCBITaxon_1370061>) ObjectAllValuesFrom(<http://purl.obolibrary.org/obo/RO_0002162> <http://purl.obolibrary.org/obo/NCBITaxon_1370061>)))
+SubClassOf(<http://purl.obolibrary.org/obo/FOODON_00004453> <http://purl.obolibrary.org/obo/FOODON_00003089>)
 
 # Class: <http://purl.obolibrary.org/obo/FOODON_03000006> (fenugreek seed (whole))
 
@@ -8500,7 +8671,8 @@ AnnotationAssertion(<http://purl.org/dc/terms/date> <http://purl.obolibrary.org/
 AnnotationAssertion(<http://www.geneontology.org/formats/oboInOwl#hasBroadSynonym> <http://purl.obolibrary.org/obo/FOODON_03000097> "yard-long bean"@en)
 AnnotationAssertion(<http://www.geneontology.org/formats/oboInOwl#hasBroadSynonym> <http://purl.obolibrary.org/obo/FOODON_03000097> "yardlong bean"@en)
 AnnotationAssertion(rdfs:label <http://purl.obolibrary.org/obo/FOODON_03000097> "asparagus bean (whole)"@en)
-EquivalentClasses(<http://purl.obolibrary.org/obo/FOODON_03000097> ObjectIntersectionOf(<http://purl.obolibrary.org/obo/PO_0009010> ObjectSomeValuesFrom(<http://purl.obolibrary.org/obo/RO_0002162> <http://purl.obolibrary.org/obo/NCBITaxon_138955>)))
+EquivalentClasses(<http://purl.obolibrary.org/obo/FOODON_03000097> ObjectIntersectionOf(<http://purl.obolibrary.org/obo/PO_0009010> ObjectSomeValuesFrom(<http://purl.obolibrary.org/obo/RO_0002162> <http://purl.obolibrary.org/obo/NCBITaxon_138955>) ObjectAllValuesFrom(<http://purl.obolibrary.org/obo/RO_0002162> <http://purl.obolibrary.org/obo/NCBITaxon_138955>)))
+SubClassOf(<http://purl.obolibrary.org/obo/FOODON_03000097> <http://purl.obolibrary.org/obo/FOODON_00002773>)
 SubClassOf(<http://purl.obolibrary.org/obo/FOODON_03000097> <http://purl.obolibrary.org/obo/FOODON_00003414>)
 
 # Class: <http://purl.obolibrary.org/obo/FOODON_03000098> (baby zucchini squash (whole, raw))
@@ -8675,7 +8847,7 @@ SubClassOf(<http://purl.obolibrary.org/obo/FOODON_03000114> <http://purl.obolibr
 
 # Class: <http://purl.obolibrary.org/obo/FOODON_03000115> (pink lentil (whole))
 
-AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000115> <http://purl.obolibrary.org/obo/FOODON_03000115> "An unshelled lentil with a brown seed coat and an orange-red cotyledon."@en)
+AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000115> <http://purl.obolibrary.org/obo/FOODON_03000115> "A lentil with an orange-red cotyledon."@en)
 AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000117> <http://purl.obolibrary.org/obo/FOODON_03000115> "https://orcid.org/0000-0001-5275-8866"^^rdfs:anyURI)
 AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000119> <http://purl.obolibrary.org/obo/FOODON_03000115> "https://en.wikipedia.org/wiki/Lentil")
 AnnotationAssertion(<http://purl.org/dc/terms/date> <http://purl.obolibrary.org/obo/FOODON_03000115> "2022-03-28T16:12:32Z"^^xsd:dateTime)
@@ -8688,7 +8860,7 @@ SubClassOf(<http://purl.obolibrary.org/obo/FOODON_03000115> <http://purl.obolibr
 
 # Class: <http://purl.obolibrary.org/obo/FOODON_03000116> (pink lentil (whole, raw))
 
-AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000115> <http://purl.obolibrary.org/obo/FOODON_03000116> "A whole raw pink lentil."@en)
+AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000115> <http://purl.obolibrary.org/obo/FOODON_03000116> "A pink lentil which is raw."@en)
 AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000117> <http://purl.obolibrary.org/obo/FOODON_03000116> "https://orcid.org/0000-0001-5275-8866"^^rdfs:anyURI)
 AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000119> <http://purl.obolibrary.org/obo/FOODON_03000116> "https://en.wikipedia.org/wiki/Lentil")
 AnnotationAssertion(<http://purl.org/dc/terms/date> <http://purl.obolibrary.org/obo/FOODON_03000116> "2022-03-28T16:12:32Z"^^xsd:dateTime)
@@ -8815,7 +8987,7 @@ AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000117> <http://purl.ob
 AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000119> <http://purl.obolibrary.org/obo/FOODON_03000128> "https://en.wikipedia.org/wiki/Serrano_pepper")
 AnnotationAssertion(<http://purl.org/dc/terms/date> <http://purl.obolibrary.org/obo/FOODON_03000128> "2022-04-06T20:37:04Z"^^xsd:dateTime)
 AnnotationAssertion(rdfs:label <http://purl.obolibrary.org/obo/FOODON_03000128> "serrano pepper (whole)"@en)
-EquivalentClasses(<http://purl.obolibrary.org/obo/FOODON_03000128> ObjectIntersectionOf(<http://purl.obolibrary.org/obo/PO_0030108> ObjectIntersectionOf(ObjectSomeValuesFrom(<http://purl.obolibrary.org/obo/RO_0002162> <http://purl.obolibrary.org/obo/FOODON_03412563>) ObjectAllValuesFrom(<http://purl.obolibrary.org/obo/RO_0002162> <http://purl.obolibrary.org/obo/FOODON_03412563>))))
+EquivalentClasses(<http://purl.obolibrary.org/obo/FOODON_03000128> ObjectIntersectionOf(<http://purl.obolibrary.org/obo/PO_0030108> ObjectSomeValuesFrom(<http://purl.obolibrary.org/obo/RO_0002162> <http://purl.obolibrary.org/obo/FOODON_03412563>) ObjectAllValuesFrom(<http://purl.obolibrary.org/obo/RO_0002162> <http://purl.obolibrary.org/obo/FOODON_03412563>)))
 SubClassOf(<http://purl.obolibrary.org/obo/FOODON_03000128> <http://purl.obolibrary.org/obo/FOODON_00003744>)
 
 # Class: <http://purl.obolibrary.org/obo/FOODON_03000129> (serrano pepper (whole, raw))
@@ -10983,6 +11155,15 @@ AnnotationAssertion(<http://www.geneontology.org/formats/oboInOwl#hasExactSynony
 AnnotationAssertion(rdfs:label <http://purl.obolibrary.org/obo/FOODON_03317621> "butterbur stem"@en)
 EquivalentClasses(<http://purl.obolibrary.org/obo/FOODON_03317621> ObjectIntersectionOf(<http://purl.obolibrary.org/obo/PO_0009047> ObjectIntersectionOf(ObjectSomeValuesFrom(<http://purl.obolibrary.org/obo/RO_0002162> <http://purl.obolibrary.org/obo/NCBITaxon_186965>) ObjectAllValuesFrom(<http://purl.obolibrary.org/obo/RO_0002162> <http://purl.obolibrary.org/obo/NCBITaxon_186965>))))
 SubClassOf(<http://purl.obolibrary.org/obo/FOODON_03317621> <http://purl.obolibrary.org/obo/FOODON_03000012>)
+
+# Class: <http://purl.obolibrary.org/obo/FOODON_03411502> (Jamaican tangelo (whole))
+
+AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000115> <http://purl.obolibrary.org/obo/FOODON_03411502> "A whole tangelo of species Citrus reticulata × paradisi"@en)
+AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000119> <http://purl.obolibrary.org/obo/FOODON_03411502> "https://en.wikipedia.org/wiki/Jamaican_tangelo")
+AnnotationAssertion(<http://www.geneontology.org/formats/oboInOwl#hasExactSynonym> <http://purl.obolibrary.org/obo/FOODON_03411502> "UGLI fruit"@en)
+AnnotationAssertion(rdfs:comment <http://purl.obolibrary.org/obo/FOODON_03411502> "UGLI is the trademark of Cabel Hall Citrus Limited and under which they sell their Jamaican tangelo, a citrus fruit created by hybridizing a grapefruit (or pomelo), an orange and a tangerine. Its species is *Citrus reticulata* × *Citrus paradisi*."@en)
+AnnotationAssertion(rdfs:label <http://purl.obolibrary.org/obo/FOODON_03411502> "Jamaican tangelo (whole)"@en)
+SubClassOf(<http://purl.obolibrary.org/obo/FOODON_03411502> <http://purl.obolibrary.org/obo/FOODON_00003731>)
 
 # Class: <http://purl.obolibrary.org/obo/FOODON_03411569> (golden chanterelle)
 
