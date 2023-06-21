@@ -58,7 +58,7 @@ $(ONT).owl: $(SRC)
 
 # Make foodon-base.owl, stripped of food product import tags and files
 # Add GAZ?
-	$(ROBOT) remove --input $(ONT)-edit.ofn --select imports --trim true annotate --ontology-iri "http://purl.obolibrary.org/obo/foodon-base.owl" merge --input imports/general_import.ofn --input imports/ncbitaxon_import.ofn --input imports/chebi_import.ofn --input imports/robot_process.ofn convert --output $(ONT)-base.owl
+	$(ROBOT) remove --input $(ONT)-edit.ofn --xml-entities --select imports --trim true annotate --ontology-iri "http://purl.obolibrary.org/obo/foodon-base.owl" merge --input imports/general_import.ofn --input imports/ncbitaxon_import.ofn --input imports/chebi_import.ofn --input imports/robot_process.ofn convert --output $(ONT)-base.owl
 
 
 # Make a file that provides labels and synonyms for each term in ontology from BFO:Entity down.
