@@ -145,7 +145,7 @@ SubClassOf(<http://purl.obolibrary.org/obo/FOODON_03000442> <http://purl.obolibr
 
 AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000115> <http://purl.obolibrary.org/obo/FOODON_03000443> "A capsules made of powdered kratom leaves."@en)
 AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000117> <http://purl.obolibrary.org/obo/FOODON_03000443> "https://orcid.org/0000-0001-5275-8866"^^rdfs:anyURI)
-AnnotationAssertion(<http://purl.org/dc/terms/date> <http://purl.obolibrary.org/obo/FOODON_03000443> "2021-12-22T19:4821Z"^^xsd:dateTime)
+AnnotationAssertion(<http://purl.org/dc/terms/date> <http://purl.obolibrary.org/obo/FOODON_03000443> "2021-12-22T19:48:21Z"^^xsd:dateTime)
 AnnotationAssertion(rdfs:comment <http://purl.obolibrary.org/obo/FOODON_03000443> "Kratom capsule has been used for pain-relieving effects."@en)
 AnnotationAssertion(rdfs:label <http://purl.obolibrary.org/obo/FOODON_03000443> "kratom capsule"@en)
 EquivalentClasses(<http://purl.obolibrary.org/obo/FOODON_03000443> ObjectIntersectionOf(<http://purl.obolibrary.org/obo/FOODON_03401306> ObjectSomeValuesFrom(<http://purl.obolibrary.org/obo/RO_0001000> <http://purl.obolibrary.org/obo/NCBITaxon_170351>)))
@@ -155,7 +155,7 @@ SubClassOf(<http://purl.obolibrary.org/obo/FOODON_03000443> <http://purl.obolibr
 
 AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000115> <http://purl.obolibrary.org/obo/FOODON_03000444> "A dietary supplement made from Kalahari cactus plant (Hoodia gordonii)."@en)
 AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000117> <http://purl.obolibrary.org/obo/FOODON_03000444> "https://orcid.org/0000-0001-5275-8866"^^rdfs:anyURI)
-AnnotationAssertion(<http://purl.org/dc/terms/date> <http://purl.obolibrary.org/obo/FOODON_03000444> "2021-12-22T19:4821Z"^^xsd:dateTime)
+AnnotationAssertion(<http://purl.org/dc/terms/date> <http://purl.obolibrary.org/obo/FOODON_03000444> "2021-12-22T19:48:21Z"^^xsd:dateTime)
 AnnotationAssertion(rdfs:comment <http://purl.obolibrary.org/obo/FOODON_03000444> "Hoodia dietary supplement claims to reduce appetite and boost weight loss."@en)
 AnnotationAssertion(rdfs:label <http://purl.obolibrary.org/obo/FOODON_03000444> "hoodia supplement"@en)
 EquivalentClasses(<http://purl.obolibrary.org/obo/FOODON_03000444> ObjectIntersectionOf(<http://purl.obolibrary.org/obo/FOODON_03401306> ObjectSomeValuesFrom(<http://purl.obolibrary.org/obo/RO_0001000> <http://purl.obolibrary.org/obo/NCBITaxon_197266>)))
