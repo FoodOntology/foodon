@@ -2972,7 +2972,7 @@ SubClassOf(<http://purl.obolibrary.org/obo/FOODON_00003490> <http://purl.obolibr
 
 AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000115> <http://purl.obolibrary.org/obo/FOODON_00003491> "A black marked seed of a blackeyed pea plant, a cultivar of a cowpea plant (Vigna unguiculata subsp. unguiculata)."@en)
 AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000117> <http://purl.obolibrary.org/obo/FOODON_00003491> "https://orcid.org/0000-0001-5275-8866"^^rdfs:anyURI)
-AnnotationAssertion(<http://purl.org/dc/terms/date> <http://purl.obolibrary.org/obo/FOODON_00003491> "2022-03-22 15:59:09"^^xsd:dateTime)
+AnnotationAssertion(<http://purl.org/dc/terms/date> <http://purl.obolibrary.org/obo/FOODON_00003491> "2022-03-22T15:59:09"^^xsd:dateTime)
 AnnotationAssertion(<http://www.geneontology.org/formats/oboInOwl#hasExactSynonym> <http://purl.obolibrary.org/obo/FOODON_00003491> "black-eyed bean"@en)
 AnnotationAssertion(<http://www.geneontology.org/formats/oboInOwl#hasExactSynonym> <http://purl.obolibrary.org/obo/FOODON_00003491> "black-eyed pea"@en)
 AnnotationAssertion(<http://www.geneontology.org/formats/oboInOwl#hasExactSynonym> <http://purl.obolibrary.org/obo/FOODON_00003491> "crowder pea"@en)
@@ -5730,7 +5730,6 @@ SubClassOf(<http://purl.obolibrary.org/obo/FOODON_00003779> <http://purl.obolibr
 
 AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000115> <http://purl.obolibrary.org/obo/FOODON_00003780> "A pepo fruit of a Calabash melon plant (Lagenaria siceraria)."@en)
 AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000119> <http://purl.obolibrary.org/obo/FOODON_00003780> "https://edis.ifas.ufl.edu/publication/MV070")
-AnnotationAssertion(<http://purl.org/dc/terms/date> <http://purl.obolibrary.org/obo/FOODON_00003780> "https://edis.ifas.ufl.edu/publication/MV070"^^xsd:dateTime)
 AnnotationAssertion(<http://www.geneontology.org/formats/oboInOwl#hasExactSynonym> <http://purl.obolibrary.org/obo/FOODON_00003780> "Guinea bean"@en)
 AnnotationAssertion(<http://www.geneontology.org/formats/oboInOwl#hasExactSynonym> <http://purl.obolibrary.org/obo/FOODON_00003780> "Italian edible gourd"@en)
 AnnotationAssertion(<http://www.geneontology.org/formats/oboInOwl#hasExactSynonym> <http://purl.obolibrary.org/obo/FOODON_00003780> "New Guinea bean"@en)
@@ -5744,7 +5743,7 @@ AnnotationAssertion(<http://www.geneontology.org/formats/oboInOwl#hasExactSynony
 AnnotationAssertion(rdfs:comment <http://purl.obolibrary.org/obo/FOODON_00003780> "(some sources say that zucca melon is Lagenaria siceraria, a botle guord, https://forums.botanicalgarden.ubc.ca/threads/zucca-mellons.29365/ , http://www.grassrootsolutions.com/pdf/Pages%2043-36%20from%20Every%20Seed%20090316%20final%20printed%20(1).pdf , but i m not 100% sure about it-Anoosha)"@en)
 AnnotationAssertion(rdfs:label <http://purl.obolibrary.org/obo/FOODON_00003780> "zucca melon (whole)"@en)
 AnnotationAssertion(rdfs:seeAlso <http://purl.obolibrary.org/obo/FOODON_00003780> " https://en.wikipedia.org/wiki/Gourd")
-AnnotationAssertion(rdfs:seeAlso <http://purl.obolibrary.org/obo/FOODON_00003780> "http://www.grassrootsolutions.com/pdf/Pages%2043-36%20from%20Every%20Seed%20090316%20final%20printed%20(1).pdf ")
+AnnotationAssertion(rdfs:seeAlso <http://purl.obolibrary.org/obo/FOODON_00003780> "http://www.grassrootsolutions.com/pdf/Pages%2043-36%20from%20Every%20Seed%20090316%20final%20printed%20(1).pdf")
 EquivalentClasses(<http://purl.obolibrary.org/obo/FOODON_00003780> ObjectIntersectionOf(<http://purl.obolibrary.org/obo/PO_0030111> ObjectIntersectionOf(ObjectSomeValuesFrom(<http://purl.obolibrary.org/obo/RO_0002162> <http://purl.obolibrary.org/obo/NCBITaxon_3668>) ObjectAllValuesFrom(<http://purl.obolibrary.org/obo/RO_0002162> <http://purl.obolibrary.org/obo/NCBITaxon_3668>))))
 SubClassOf(<http://purl.obolibrary.org/obo/FOODON_00003780> <http://purl.obolibrary.org/obo/FOODON_00001915>)
 
@@ -6345,7 +6344,7 @@ SubClassOf(<http://purl.obolibrary.org/obo/FOODON_00003840> ObjectSomeValuesFrom
 AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000115> <http://purl.obolibrary.org/obo/FOODON_00003856> "The white, fleshy part of a coconut."@en)
 AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000117> <http://purl.obolibrary.org/obo/FOODON_00003856> "https://orcid.org/0000-0001-5275-8866"^^rdfs:anyURI)
 AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000119> <http://purl.obolibrary.org/obo/FOODON_00003856> "https://en.wikipedia.org/wiki/Coconut")
-AnnotationAssertion(<http://purl.org/dc/terms/date> <http://purl.obolibrary.org/obo/FOODON_00003856> "2021-05-19 18:20:02"^^xsd:dateTime)
+AnnotationAssertion(<http://purl.org/dc/terms/date> <http://purl.obolibrary.org/obo/FOODON_00003856> "2021-05-19T18:20:02Z"^^xsd:dateTime)
 AnnotationAssertion(rdfs:label <http://purl.obolibrary.org/obo/FOODON_00003856> "coconut meat"@en)
 SubClassOf(<http://purl.obolibrary.org/obo/FOODON_00003856> <http://purl.obolibrary.org/obo/FOODON_03316908>)
 
@@ -7704,7 +7703,7 @@ AnnotationAssertion(<http://purl.org/dc/terms/date> <http://purl.obolibrary.org/
 AnnotationAssertion(rdfs:label <http://purl.obolibrary.org/obo/FOODON_00004445> "golden acorn squash (whole, raw)"@en)
 SubClassOf(<http://purl.obolibrary.org/obo/FOODON_00004445> <http://purl.obolibrary.org/obo/FOODON_00004442>)
 
-# Class: <http://purl.obolibrary.org/obo/FOODON_00004446> (Mexican grey squash (whole))
+# Class: <http://purl.obolibrary.org/obo/FOODON_00004446> (mexican grey squash (whole))
 
 AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000115> <http://purl.obolibrary.org/obo/FOODON_00004446> "A whole Mexican grey squash."@en)
 AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000117> <http://purl.obolibrary.org/obo/FOODON_00004446> "https://orcid.org/0000-0002-8844-9165"^^rdfs:anyURI)
@@ -8041,7 +8040,7 @@ SubClassOf(<http://purl.obolibrary.org/obo/FOODON_03000032> <http://purl.obolibr
 AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000115> <http://purl.obolibrary.org/obo/FOODON_03000033> "A rosette leaf of a garden cress plant."@en)
 AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000117> <http://purl.obolibrary.org/obo/FOODON_03000033> "https://orcid.org/0000-0001-5275-8866"^^rdfs:anyURI)
 AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000119> <http://purl.obolibrary.org/obo/FOODON_03000033> "https://en.wikipedia.org/wiki/Garden_cress")
-AnnotationAssertion(<http://purl.org/dc/terms/date> <http://purl.obolibrary.org/obo/FOODON_03000033> "2022-03-07T 17:20:02Z"^^xsd:dateTime)
+AnnotationAssertion(<http://purl.org/dc/terms/date> <http://purl.obolibrary.org/obo/FOODON_03000033> "2022-03-07T17:20:02Z"^^xsd:dateTime)
 AnnotationAssertion(<http://www.geneontology.org/formats/oboInOwl#hasExactSynonym> <http://purl.obolibrary.org/obo/FOODON_03000033> "cress"@en)
 AnnotationAssertion(<http://www.geneontology.org/formats/oboInOwl#hasExactSynonym> <http://purl.obolibrary.org/obo/FOODON_03000033> "garden cress"@en)
 AnnotationAssertion(<http://www.geneontology.org/formats/oboInOwl#hasExactSynonym> <http://purl.obolibrary.org/obo/FOODON_03000033> "garden pepper cress"@en)
@@ -8468,7 +8467,7 @@ SubClassOf(<http://purl.obolibrary.org/obo/FOODON_03000075> ObjectIntersectionOf
 
 AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000115> <http://purl.obolibrary.org/obo/FOODON_03000076> "A whole raw hubbard squash."@en)
 AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000117> <http://purl.obolibrary.org/obo/FOODON_03000076> "https://orcid.org/0000-0001-5275-8866"^^rdfs:anyURI)
-AnnotationAssertion(<http://purl.org/dc/terms/date> <http://purl.obolibrary.org/obo/FOODON_03000076> "2022-03-16T14:00:255Z"^^xsd:dateTime)
+AnnotationAssertion(<http://purl.org/dc/terms/date> <http://purl.obolibrary.org/obo/FOODON_03000076> "2022-03-16T14:00:25Z"^^xsd:dateTime)
 AnnotationAssertion(rdfs:label <http://purl.obolibrary.org/obo/FOODON_03000076> "hubbard squash (whole, raw)"@en)
 SubClassOf(<http://purl.obolibrary.org/obo/FOODON_03000076> <http://purl.obolibrary.org/obo/FOODON_03000075>)
 
@@ -9724,7 +9723,7 @@ SubClassOf(<http://purl.obolibrary.org/obo/FOODON_03000205> <http://purl.obolibr
 AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000115> <http://purl.obolibrary.org/obo/FOODON_03000206> "A whole raw mature chickpea"@en)
 AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000117> <http://purl.obolibrary.org/obo/FOODON_03000206> "https://orcid.org/0000-0001-5275-8866"^^rdfs:anyURI)
 AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000119> <http://purl.obolibrary.org/obo/FOODON_03000206> "https://en.wikipedia.org/wiki/Chickpea")
-AnnotationAssertion(<http://purl.org/dc/terms/date> <http://purl.obolibrary.org/obo/FOODON_03000206> "2022-04-65T13:31:02Z"^^xsd:dateTime)
+AnnotationAssertion(<http://purl.org/dc/terms/date> <http://purl.obolibrary.org/obo/FOODON_03000206> "2022-04-15T13:31:02Z")
 AnnotationAssertion(rdfs:label <http://purl.obolibrary.org/obo/FOODON_03000206> "chickpea (whole, raw, mature)"@en)
 EquivalentClasses(<http://purl.obolibrary.org/obo/FOODON_03000206> ObjectIntersectionOf(<http://purl.obolibrary.org/obo/FLOPO_0012953> <http://purl.obolibrary.org/obo/FOODON_03000123>))
 SubClassOf(<http://purl.obolibrary.org/obo/FOODON_03000206> <http://purl.obolibrary.org/obo/FOODON_03000123>)
