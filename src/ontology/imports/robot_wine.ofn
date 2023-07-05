@@ -650,14 +650,14 @@ AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000119> <http://purl.ob
 AnnotationAssertion(rdfs:label <http://purl.obolibrary.org/obo/FOODON_00002630> "Barbera grape plant"@en)
 SubClassOf(<http://purl.obolibrary.org/obo/FOODON_00002630> <http://purl.obolibrary.org/obo/NCBITaxon_29760>)
 
-# Class: <http://purl.obolibrary.org/obo/FOODON_00002639> (Zakynthos Wine)
+# Class: <http://purl.obolibrary.org/obo/FOODON_00002639> (Zakynthos wine)
 
 AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000114> <http://purl.obolibrary.org/obo/FOODON_00002639> <http://purl.obolibrary.org/obo/IAO_0000122>)
 AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000115> <http://purl.obolibrary.org/obo/FOODON_00002639> "Zakynthos Wine is wine produced on the Greek island of Zakynthos (Zante) in the Ionian Sea. A wide array of native Ionian grape varieties have been planted on the island for centuries, and are most famously used to make the intensely flavored, highly acidic Verdea wine."@en)
 AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000117> <http://purl.obolibrary.org/obo/FOODON_00002639> "http://orcid.org/0000-0002-8844-9165")
 AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000119> <http://purl.obolibrary.org/obo/FOODON_00002639> "https://www.wine-searcher.com/regions-zakynthos")
 AnnotationAssertion(<http://www.geneontology.org/formats/oboInOwl#hasExactSynonym> <http://purl.obolibrary.org/obo/FOODON_00002639> "zante wine"@en)
-AnnotationAssertion(rdfs:label <http://purl.obolibrary.org/obo/FOODON_00002639> "Zakynthos Wine"@en)
+AnnotationAssertion(rdfs:label <http://purl.obolibrary.org/obo/FOODON_00002639> "Zakynthos wine"@en)
 SubClassOf(<http://purl.obolibrary.org/obo/FOODON_00002639> <http://purl.obolibrary.org/obo/FOODON_00002577>)
 
 # Class: <http://purl.obolibrary.org/obo/FOODON_00002640> (Cabernet Sauvignon grape plant)
@@ -824,12 +824,12 @@ AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000119> <http://purl.ob
 AnnotationAssertion(rdfs:comment <http://purl.obolibrary.org/obo/FOODON_00004055> "In wines, it parallels the hierarchical systems of France (1935) and Italy (1963), although Rioja (1925) and Jerez (1933) preceded the full system.[https://en.wikipedia.org/wiki/Denominaci%C3%B3n_de_origen]"@en)
 AnnotationAssertion(rdfs:label <http://purl.obolibrary.org/obo/FOODON_00004055> "Denominación de origen"@en)
 
-# Class: <http://purl.obolibrary.org/obo/FOODON_00004056> (Spanish wine production framework)
+# Class: <http://purl.obolibrary.org/obo/FOODON_00004056> (spanish wine production framework)
 
 AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000115> <http://purl.obolibrary.org/obo/FOODON_00004056> "A food product appellaction framework pertaining to Spanish wine."@en)
 AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000119> <http://purl.obolibrary.org/obo/FOODON_00004056> " https://en.wikipedia.org/wiki/Spanish_wine_regions")
 AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000119> <http://purl.obolibrary.org/obo/FOODON_00004056> "https://en.wikipedia.org/wiki/Denominaci%C3%B3n_de_origen#Wine ")
-AnnotationAssertion(rdfs:label <http://purl.obolibrary.org/obo/FOODON_00004056> "Spanish wine production framework"@en)
+AnnotationAssertion(rdfs:label <http://purl.obolibrary.org/obo/FOODON_00004056> "spanish wine production framework"@en)
 SubClassOf(<http://purl.obolibrary.org/obo/FOODON_00004056> <http://purl.obolibrary.org/obo/FOODON_03530087>)
 
 # Class: <http://purl.obolibrary.org/obo/FOODON_00004057> (Denominación de Origen Protegida)
@@ -1042,10 +1042,6 @@ AnnotationAssertion(<http://www.geneontology.org/formats/oboInOwl#hasExactSynony
 AnnotationAssertion(rdfs:comment <http://purl.obolibrary.org/obo/FOODON_03530258> "It is modelled after the French AOC. It was instituted in 1963 and overhauled in 1992 for compliance with the equivalent EU law on Protected Designation of Origin, which came into effect that year .\"[https://en.wikipedia.org/wiki/Denominazione_di_origine_controllata]."@en)
 AnnotationAssertion(rdfs:label <http://purl.obolibrary.org/obo/FOODON_03530258> "Denominazione di origine controllata"@en)
 SubClassOf(<http://purl.obolibrary.org/obo/FOODON_03530258> <http://purl.obolibrary.org/obo/FOODON_03530087>)
-
-# Class: <http://purl.obolibrary.org/obo/NCBITaxon_29760> (Vitis vinifera)
-
-AnnotationAssertion(rdfs:label <http://purl.obolibrary.org/obo/NCBITaxon_29760> "Vitis vinifera"@en)
 
 
 )
