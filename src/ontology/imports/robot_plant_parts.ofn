@@ -8643,15 +8643,6 @@ AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000115> <http://purl.ob
 AnnotationAssertion(rdfs:label <http://purl.obolibrary.org/obo/FOODON_03000094> "yellow bean (whole, raw)"@en)
 SubClassOf(<http://purl.obolibrary.org/obo/FOODON_03000094> <http://purl.obolibrary.org/obo/FOODON_03000093>)
 
-# Class: <http://purl.obolibrary.org/obo/FOODON_03000095> (mung bean (whole, raw))
-
-AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000115> <http://purl.obolibrary.org/obo/FOODON_03000095> "A whole raw mung bean."@en)
-AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000117> <http://purl.obolibrary.org/obo/FOODON_03000095> "https://orcid.org/0000-0001-5275-8866"^^rdfs:anyURI)
-AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000119> <http://purl.obolibrary.org/obo/FOODON_03000095> "https://en.wikipedia.org/wiki/Mung_bean")
-AnnotationAssertion(<http://purl.org/dc/terms/date> <http://purl.obolibrary.org/obo/FOODON_03000095> "2022-03-22T12:20:33Z"^^xsd:dateTime)
-AnnotationAssertion(rdfs:label <http://purl.obolibrary.org/obo/FOODON_03000095> "mung bean (whole, raw)"@en)
-SubClassOf(<http://purl.obolibrary.org/obo/FOODON_03000095> <http://purl.obolibrary.org/obo/FOODON_03301275>)
-
 # Class: <http://purl.obolibrary.org/obo/FOODON_03000096> (hyacinth bean (whole, raw))
 
 AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000115> <http://purl.obolibrary.org/obo/FOODON_03000096> "A whole raw hyacinth bean."@en)
@@ -9533,8 +9524,8 @@ AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000117> <http://purl.ob
 AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000119> <http://purl.obolibrary.org/obo/FOODON_03000186> "https://en.wikipedia.org/wiki/Mung_bean")
 AnnotationAssertion(<http://purl.org/dc/terms/date> <http://purl.obolibrary.org/obo/FOODON_03000186> "2022-03-21T11:58:57Z"^^xsd:dateTime)
 AnnotationAssertion(rdfs:label <http://purl.obolibrary.org/obo/FOODON_03000186> "mung bean (whole, raw, sprouted)"@en)
-EquivalentClasses(<http://purl.obolibrary.org/obo/FOODON_03000186> ObjectIntersectionOf(<http://purl.obolibrary.org/obo/FOODON_03000095> <http://purl.obolibrary.org/obo/FOODON_03420102>))
-SubClassOf(<http://purl.obolibrary.org/obo/FOODON_03000186> <http://purl.obolibrary.org/obo/FOODON_03000095>)
+EquivalentClasses(<http://purl.obolibrary.org/obo/FOODON_03000186> ObjectIntersectionOf(<http://purl.obolibrary.org/obo/FOODON_03000088> <http://purl.obolibrary.org/obo/FOODON_03420102>))
+SubClassOf(<http://purl.obolibrary.org/obo/FOODON_03000186> <http://purl.obolibrary.org/obo/FOODON_03000088>)
 
 # Class: <http://purl.obolibrary.org/obo/FOODON_03000187> (kidney bean (whole, raw, sprouted))
 
@@ -9633,8 +9624,8 @@ AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000117> <http://purl.ob
 AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000119> <http://purl.obolibrary.org/obo/FOODON_03000197> "https://en.wikipedia.org/wiki/Mung_bean")
 AnnotationAssertion(<http://purl.org/dc/terms/date> <http://purl.obolibrary.org/obo/FOODON_03000197> "2022-03-22T12:18:56Z"^^xsd:dateTime)
 AnnotationAssertion(rdfs:label <http://purl.obolibrary.org/obo/FOODON_03000197> "mung bean (whole, raw, mature)"@en)
-EquivalentClasses(<http://purl.obolibrary.org/obo/FOODON_03000197> ObjectIntersectionOf(<http://purl.obolibrary.org/obo/FLOPO_0012953> <http://purl.obolibrary.org/obo/FOODON_03000095>))
-SubClassOf(<http://purl.obolibrary.org/obo/FOODON_03000197> <http://purl.obolibrary.org/obo/FOODON_03000095>)
+EquivalentClasses(<http://purl.obolibrary.org/obo/FOODON_03000197> ObjectIntersectionOf(<http://purl.obolibrary.org/obo/FLOPO_0012953> <http://purl.obolibrary.org/obo/FOODON_03000088>))
+SubClassOf(<http://purl.obolibrary.org/obo/FOODON_03000197> <http://purl.obolibrary.org/obo/FOODON_03000088>)
 
 # Class: <http://purl.obolibrary.org/obo/FOODON_03000198> (winged bean (whole, raw, mature))
 
