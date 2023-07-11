@@ -8,12 +8,16 @@ Prefix(rdfs:=<http://www.w3.org/2000/01/rdf-schema#>)
 
 Ontology(<http://purl.obolibrary.org/obo/foodon/imports/robot_animals.ofn>
 
+Declaration(Class(<http://purl.obolibrary.org/obo/FOODON_00002616>))
+Declaration(Class(<http://purl.obolibrary.org/obo/FOODON_00002726>))
+Declaration(Class(<http://purl.obolibrary.org/obo/FOODON_00003004>))
 Declaration(Class(<http://purl.obolibrary.org/obo/FOODON_00003951>))
 Declaration(Class(<http://purl.obolibrary.org/obo/FOODON_00003952>))
 Declaration(Class(<http://purl.obolibrary.org/obo/FOODON_00003953>))
 Declaration(Class(<http://purl.obolibrary.org/obo/FOODON_00004271>))
 Declaration(Class(<http://purl.obolibrary.org/obo/FOODON_03000300>))
 Declaration(Class(<http://purl.obolibrary.org/obo/FOODON_03000301>))
+Declaration(Class(<http://purl.obolibrary.org/obo/FOODON_03411304>))
 Declaration(Class(<http://purl.obolibrary.org/obo/NCBITaxon_100937>))
 Declaration(Class(<http://purl.obolibrary.org/obo/NCBITaxon_1234591>))
 Declaration(Class(<http://purl.obolibrary.org/obo/NCBITaxon_142487>))
@@ -56,6 +60,7 @@ Declaration(Class(<http://purl.obolibrary.org/obo/NCBITaxon_9438>))
 Declaration(Class(<http://purl.obolibrary.org/obo/NCBITaxon_9544>))
 Declaration(Class(<http://purl.obolibrary.org/obo/NCBITaxon_9614>))
 Declaration(Class(<http://purl.obolibrary.org/obo/NCBITaxon_9627>))
+Declaration(Class(<http://purl.obolibrary.org/obo/NCBITaxon_9685>))
 Declaration(Class(<http://purl.obolibrary.org/obo/NCBITaxon_9689>))
 Declaration(Class(<http://purl.obolibrary.org/obo/NCBITaxon_9690>))
 Declaration(Class(<http://purl.obolibrary.org/obo/NCBITaxon_9691>))
@@ -89,6 +94,7 @@ AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000119> <http://purl.ob
 AnnotationAssertion(<http://purl.org/dc/terms/contributor> <http://purl.obolibrary.org/obo/FOODON_00003951> "https://orcid.org/0000-0001-5275-8866")
 AnnotationAssertion(<http://purl.org/dc/terms/date> <http://purl.obolibrary.org/obo/FOODON_00003951> "2021-09-06T20:39:00"^^xsd:dateTime)
 AnnotationAssertion(rdfs:label <http://purl.obolibrary.org/obo/FOODON_00003951> "conure"@en)
+SubClassOf(<http://purl.obolibrary.org/obo/FOODON_00003951> <http://purl.obolibrary.org/obo/FOODON_00002726>)
 
 # Class: <http://purl.obolibrary.org/obo/FOODON_00003952> (piglet)
 
@@ -99,6 +105,7 @@ AnnotationAssertion(<http://purl.org/dc/terms/contributor> <http://purl.obolibra
 AnnotationAssertion(<http://purl.org/dc/terms/date> <http://purl.obolibrary.org/obo/FOODON_00003952> "2021-09-06T20:39:00"^^xsd:dateTime)
 AnnotationAssertion(<http://www.geneontology.org/formats/oboInOwl#hasExactSynonym> <http://purl.obolibrary.org/obo/FOODON_00003952> "shoat"@en)
 AnnotationAssertion(rdfs:label <http://purl.obolibrary.org/obo/FOODON_00003952> "piglet"@en)
+SubClassOf(<http://purl.obolibrary.org/obo/FOODON_00003952> <http://purl.obolibrary.org/obo/NCBITaxon_9825>)
 
 # Class: <http://purl.obolibrary.org/obo/FOODON_00003953> (eagle)
 
@@ -108,6 +115,7 @@ AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000119> <http://purl.ob
 AnnotationAssertion(<http://purl.org/dc/terms/contributor> <http://purl.obolibrary.org/obo/FOODON_00003953> "https://orcid.org/0000-0001-5275-8866")
 AnnotationAssertion(<http://purl.org/dc/terms/date> <http://purl.obolibrary.org/obo/FOODON_00003953> "2021-09-06T20:39:00"^^xsd:dateTime)
 AnnotationAssertion(rdfs:label <http://purl.obolibrary.org/obo/FOODON_00003953> "eagle"@en)
+SubClassOf(<http://purl.obolibrary.org/obo/FOODON_00003953> <http://purl.obolibrary.org/obo/FOODON_00002616>)
 
 # Class: <http://purl.obolibrary.org/obo/FOODON_00004271> (kitten)
 
@@ -116,6 +124,7 @@ AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000119> <http://purl.ob
 AnnotationAssertion(<http://purl.org/dc/terms/contributor> <http://purl.obolibrary.org/obo/FOODON_00004271> "https://orcid.org/0000-0001-5275-8866")
 AnnotationAssertion(<http://purl.org/dc/terms/date> <http://purl.obolibrary.org/obo/FOODON_00004271> "2021-11-22T21:12:31Z"^^xsd:dateTime)
 AnnotationAssertion(rdfs:label <http://purl.obolibrary.org/obo/FOODON_00004271> "kitten"@en)
+SubClassOf(<http://purl.obolibrary.org/obo/FOODON_00004271> <http://purl.obolibrary.org/obo/NCBITaxon_9685>)
 
 # Class: <http://purl.obolibrary.org/obo/FOODON_03000300> (companion animal)
 
@@ -123,6 +132,7 @@ AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000115> <http://purl.ob
 AnnotationAssertion(<http://purl.org/dc/terms/contributor> <http://purl.obolibrary.org/obo/FOODON_03000300> "https://orcid.org/0000-0001-5275-8866")
 AnnotationAssertion(<http://www.geneontology.org/formats/oboInOwl#hasExactSynonym> <http://purl.obolibrary.org/obo/FOODON_03000300> "pet"@en)
 AnnotationAssertion(rdfs:label <http://purl.obolibrary.org/obo/FOODON_03000300> "companion animal"@en)
+SubClassOf(<http://purl.obolibrary.org/obo/FOODON_03000300> <http://purl.obolibrary.org/obo/FOODON_00003004>)
 
 # Class: <http://purl.obolibrary.org/obo/FOODON_03000301> (squab)
 
@@ -131,6 +141,7 @@ AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000119> <http://purl.ob
 AnnotationAssertion(<http://purl.org/dc/terms/contributor> <http://purl.obolibrary.org/obo/FOODON_03000301> "https://orcid.org/0000-0001-5275-8866")
 AnnotationAssertion(<http://purl.org/dc/terms/date> <http://purl.obolibrary.org/obo/FOODON_03000301> "2022-10-20T12:36:43Z"^^xsd:dateTime)
 AnnotationAssertion(rdfs:label <http://purl.obolibrary.org/obo/FOODON_03000301> "squab"@en)
+SubClassOf(<http://purl.obolibrary.org/obo/FOODON_03000301> <http://purl.obolibrary.org/obo/FOODON_03411304>)
 
 # Class: <http://purl.obolibrary.org/obo/NCBITaxon_100937> (<http://purl.obolibrary.org/obo/NCBITaxon_100937>)
 
