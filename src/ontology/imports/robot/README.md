@@ -29,6 +29,7 @@ robot template --template dietary_supplement.tsv\
   --output ../robot_dietary_supplement.ofn
 
 robot template --template pasta.tsv \
+  --prefix "dcterms:http://purl.org/dc/terms/" \
   --input "../../foodon-merged.ofn" \
   --ontology-iri "http://purl.obolibrary.org/obo/foodon/imports/robot_pasta.ofn" \
   --output ../robot_pasta.ofn
@@ -40,16 +41,19 @@ robot template --template plant_parts.tsv \
   --output ../robot_plant_parts.ofn
 
 robot template --template process.tsv\
+  --prefix "dcterms:http://purl.org/dc/terms/" \
   --input "../../foodon-merged.ofn" \
   --ontology-iri "http://purl.obolibrary.org/obo/foodon/imports/robot_process.ofn" \
   --output ../robot_process.ofn
 
 robot template --template seafood.tsv\
+  --prefix "dcterms:http://purl.org/dc/terms/" \
   --input "../../foodon-merged.ofn" \
   --ontology-iri "http://purl.obolibrary.org/obo/foodon/imports/robot_seafood.ofn" \
   --output ../robot_seafood.ofn
 
 robot template --template wine.tsv \
+  --prefix "dcterms:http://purl.org/dc/terms/" \
   --input "../../foodon-merged.ofn" \
   --ontology-iri "http://purl.obolibrary.org/obo/foodon/imports/robot_wine.ofn" \
   --output ../robot_wine.ofn

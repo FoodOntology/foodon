@@ -1,61 +1,62 @@
-"Ontology ID	"	parent	NCBITaxon label	foodon label	definition (if not NCBITaxon)	definition source (if not NCBITaxon)	created	See Also (since term originates from NCBITaxon)	ITIS 	Exact Synonym		GenBank Common Name	term_source	curation status	Comment	"term editor	"	Curation Comment
-ID			AL rdfs:label@en	AL IAO:0000115@en	A IAO:0000119 SPLIT=|	AT dcterms:date^^xsd:dateTime	A rdfs:seeAlso SPLIT=|	A oboInOwl:hasDbXref	AL oboInOwl:hasExactSynonym@en				AI IAO:0000114	AL rdfs:comment@en	"AT IAO:0000117^^rdfs:anyURI SPLIT=|	"	
-NCBITaxon:34899		Petaurus breviceps					https://en.wikipedia.org/wiki/Sugar_glider	ITIS.: 609841 	sugar glider 		sugar glider	Genome Tracker			https://orcid.org/0000-0001-5275-8866	
-NCBITaxon:76717		Lontra canadensis					https://en.wikipedia.org/wiki/North_American_river_otter	ITIS.: 180549 	river otter | common otter | northern river otter |Northern American river otter		Northern American river otter	Genome Tracker			https://orcid.org/0000-0001-5275-8866	
-NCBITaxon:34844		Erethizon dorsatum					https://en.wikipedia.org/wiki/North_American_porcupine	ITIS: 180393	canadian porcupine | North American porcupine		North American porcupine	Genome Tracker			https://orcid.org/0000-0001-5275-8866	
-NCBITaxon:75842		Spatula discors					https://en.wikipedia.org/wiki/Blue-winged_teal	ITIS: 175086	anas discors | querquedula discors |bluewinged teal | blue-winged teal		blue-winged teal	Genome Tracker			https://orcid.org/0000-0001-5275-8866	
-NCBITaxon:64278		Quiscalus mexicanus					https://en.wikipedia.org/wiki/Great-tailed_grackle	ITIS:179109	Great-tailed grackle		Great-tailed grackle	Genome Tracker			https://orcid.org/0000-0001-5275-8866	
-NCBITaxon:9627		Vulpes vulpes					https://en.wikipedia.org/wiki/Red_fox	ITIS:180604	red fox		red fox	Genome Tracker			https://orcid.org/0000-0001-5275-8866	
-NCBITaxon:365635		Trachemys scripta scripta					https://en.wikipedia.org/wiki/Yellow-bellied_slider	ITIS:173821				Genome Tracker			https://orcid.org/0000-0001-5275-8866	
-NCBITaxon:9691		Panthera pardus					https://en.wikipedia.org/wiki/Leopard	ITIS:183804	leopard		leopard	Genome Tracker			https://orcid.org/0000-0001-5275-8866	
-NCBITaxon:9689		Panthera leo					https://en.wikipedia.org/wiki/Lion	ITIS:183803	lion		lion	Genome Tracker			https://orcid.org/0000-0001-5275-8866	
-NCBITaxon:71006		Myrmecophaga tridactyla					https://en.wikipedia.org/wiki/Giant_anteater	ITIS:624911	giant anteater		giant anteater	Genome Tracker			https://orcid.org/0000-0001-5275-8866	
-NCBITaxon:9807		Ceratotherium simum					https://en.wikipedia.org/wiki/White_rhinoceros	ITIS:625001	white rhinoceros		white rhinoceros	Genome Tracker			https://orcid.org/0000-0001-5275-8866	
-NCBITaxon:904227		Staurotypus salvinii					https://en.wikipedia.org/wiki/Giant_musk_turtle	ITIS:551863				Genome Tracker			https://orcid.org/0000-0001-5275-8866	
-NCBITaxon:8758		Sistrurus miliarius					https://en.wikipedia.org/wiki/Sistrurus_miliarius	ITIS:174302	pigmy rattlesnake		pigmy rattlesnake	Genome Tracker			https://orcid.org/0000-0001-5275-8866	
-NCBITaxon:9694		Panthera tigris					https://en.wikipedia.org/wiki/Tiger	ITIS:183805	tiger		tiger	Genome Tracker			https://orcid.org/0000-0001-5275-8866	
-NCBITaxon:9544		Macaca mulatta					https://en.wikipedia.org/wiki/Rhesus_macaque	ITIS:180099	Rhesus monkey		Rhesus monkey	Genome Tracker			https://orcid.org/0000-0001-5275-8866	
-NCBITaxon:56117		Tapirus bairdii					https://en.wikipedia.org/wiki/Baird%27s_tapir	ITIS:624997	Baird's tapir		Baird's tapir	Genome Tracker			https://orcid.org/0000-0001-5275-8866	
-NCBITaxon:100937		Papio papio					https://en.wikipedia.org/wiki/Guinea_baboon	ITIS:944212	Guinea baboon		Guinea baboon	Genome Tracker			https://orcid.org/0000-0001-5275-8866	
-NCBITaxon:9267		Didelphis virginiana					https://en.wikipedia.org/wiki/Virginia_opossum	ITIS:179921	North American opossum		North American opossum	Genome Tracker			https://orcid.org/0000-0001-5275-8866	
-NCBITaxon:9438		Tadarida brasiliensis					https://en.wikipedia.org/wiki/Mexican_free-tailed_bat	ITIS:180088	Brazilian free-tailed bat		Brazilian free-tailed bat	Genome Tracker			https://orcid.org/0000-0001-5275-8866	
-NCBITaxon:55048		Mustela frenata					https://en.wikipedia.org/wiki/Long-tailed_weasel	ITIS:180556	long-tailed weasel		long-tailed weasel	Genome Tracker			https://orcid.org/0000-0001-5275-8866	
-NCBITaxon:9690		Panthera onca					https://en.wikipedia.org/wiki/Jaguar	ITIS:180593	jaguar		jaguar	Genome Tracker			https://orcid.org/0000-0001-5275-8866	
-NCBITaxon:55550		Dermatemys mawii					https://en.wikipedia.org/wiki/Hickatee	ITIS:202127				Genome Tracker			https://orcid.org/0000-0001-5275-8866	
-NCBITaxon:30422		Corvus corone					https://en.wikipedia.org/wiki/Carrion_crow	ITIS:559494	carrion crow		carrion crow	Genome Tracker			https://orcid.org/0000-0001-5275-8866	
-NCBITaxon:8839		Anas platyrhynchos					https://en.wikipedia.org/wiki/Mallard	ITIS:175063	mallard		mallard	Genome Tracker			https://orcid.org/0000-0001-5275-8866	
-NCBITaxon:9808		Rhinoceros					https://en.wikipedia.org/wiki/Rhinoceros	ITIS:624934				Genome Tracker			https://orcid.org/0000-0001-5275-8866	
-NCBITaxon:66444		Oreotragus oreotragus					https://en.wikipedia.org/wiki/Klipspringer	ITIS:625111	klipspringer		klipspringer	Genome Tracker			https://orcid.org/0000-0001-5275-8866	
-NCBITaxon:67940		Nanger dama					https://en.wikipedia.org/wiki/Dama_gazelle	ITIS:898225	Dama gazelle		Dama gazelle	Genome Tracker			https://orcid.org/0000-0001-5275-8866	
-NCBITaxon:56350		Falco sparverius					https://en.wikipedia.org/wiki/American_kestrel	ITIS:175622				Genome Tracker			https://orcid.org/0000-0001-5275-8866	
-NCBITaxon:381874		Pteroglossus bailloni					https://en.wikipedia.org/wiki/Saffron_toucanet	ITIS:1145221	Saffron toucanet			Genome Tracker			https://orcid.org/0000-0001-5275-8866	Orignal term was 'Gizzard pteroglossus bailloni but as discussed, will be adding 'gizzard' as a seperate anatomical part by importing from Uberon.'
-NCBITaxon:9694		Panthera tigris					https://en.wikipedia.org/wiki/Tiger	ITIS:183805	tiger		tiger	Genome Tracker			https://orcid.org/0000-0001-5275-8866	Orignal term 'Panthera tigris, feces'
-NCBITaxon:9899		Ammotragus lervia					https://en.wikipedia.org/wiki/Barbary_sheep	ITIS:180719	auodad		aoudad	Genome Tracker			https://orcid.org/0000-0001-5275-8866	Orignal term 'Auodad' which is a common name. Will be adding as a synonym.
-NCBITaxon:390684		Aulotrachichthys prosthemius					https://en.wikipedia.org/wiki/Aulotrachichthys_prosthemius					Genome Tracker			https://orcid.org/0000-0001-5275-8866	Original term 'A. prosthemius '
-NCBITaxon:9825		Sus scrofa domesticus					https://en.wikipedia.org/wiki/Domestic_pig	ITIS:898917	domestic pig		domestic pig				https://orcid.org/0000-0001-5275-8866	
-NCBITaxon:142487		Kinosternon subrubrum					https://en.wikipedia.org/wiki/Eastern_mud_turtle	ITIS:949136	common mud turtle		common mud turtle	Genome Tracker			https://orcid.org/0000-0001-5275-8866	
-NCBITaxon:9397		Chiroptera					https://en.wikipedia.org/wiki/Bat	ITIS:179985	bat		bats	Genome Tracker			https://orcid.org/0000-0001-5275-8866	Orignal term 'Bat'
-NCBITaxon:7375		Lucilia cuprina					https://en.wikipedia.org/wiki/Lucilia_cuprina		Australian sheep blowfly		Australian sheep blowfly	Genome Tracker			https://orcid.org/0000-0001-5275-8866	Original term 'Lucilia cuorina,alimentary canal'.  Have to add 'alimentary canal as a seperate anatomical term
-NCBITaxon:30062		Anthomyiidae					https://en.wikipedia.org/wiki/Anthomyiidae	ITIS:148685				Genome Tracker			https://orcid.org/0000-0001-5275-8866	Original term'Anthomyiidae spp.,alimentary canal-'
-NCBITaxon:1234591		Sarcophaga haemorrhoidalis					https://en.wikipedia.org/wiki/Sarcophaga_pernix		redtailed flesh fly		redtailed flesh fly	Genome Tracker			https://orcid.org/0000-0001-5275-8866	
-NCBITaxon:371913		Eudocimus albus					https://en.wikipedia.org/wiki/American_white_ibis	ITIS:174930				Genome Tracker			https://orcid.org/0000-0001-5275-8866	Original term 'White ibis', i think its referring to african white ibis.
-NCBITaxon:9933		Gazella					https://en.wikipedia.org/wiki/Gazelle	ITIS:624969	gazelle		gazelles	Genome Tracker			https://orcid.org/0000-0001-5275-8866	Original term 'Gazelle, slender-horned-colon'
-NCBITaxon:59896		Ovis vignei					https://en.wikipedia.org/wiki/Urial	ITIS:625155	urial		urial	Genome Tracker			https://orcid.org/0000-0001-5275-8866	Original term 'Urial, transcaspian-rectum '
-NCBITaxon:69297		Tragelaphus eurycerus					https://en.wikipedia.org/wiki/Bongo_(antelope)	ITIS:625130	bongo		bongo	Genome Tracker			https://orcid.org/0000-0001-5275-8866	Original term 'Cephalophus , bongo-rectum'
-NCBITaxon:155054		Budorcas taxicolor tibetana					https://en.wikipedia.org/wiki/Sichuan_takin	ITIS:898765	Sichuan takin		Sichuan takin	Genome Tracker			https://orcid.org/0000-0001-5275-8866	Budorcas taxicolor tibetana, sichuan takin-rectum'
-NCBITaxon:66442		Neotragus moschatus					https://en.wikipedia.org/wiki/Suni	ITIS:625109	suni		suni	Genome Tracker			https://orcid.org/0000-0001-5275-8866	Cephalophus , suni 
-NCBITaxon:146146		Selar crumenophthalmus					https://en.wikipedia.org/wiki/Bigeye_scad	ITIS:168677	bigeye scad		bigeye scad	Genome Tracker			https://orcid.org/0000-0001-5275-8866	 Trachurops crumenophthalmius -> Not available at wikipedia or NCBI. But mentioned as a synonym of 'Selar crumenophthalmus' in ITIS. 
-NCBITaxon:37171		Damaliscus pygargus dorcas							bontebok		bontebok	Genome Tracker			https://orcid.org/0000-0001-5275-8866	Cephalophus , bontebok -> As per NCBI
-NCBITaxon:9614		 Canis latrans					https://en.wikipedia.org/wiki/Coyote	ITIS:180599	coyote		coyote	Genome Tracker			https://orcid.org/0000-0001-5275-8866	Original term 'coyote'
-NCBITaxon:56259		Accipitridae					https://en.wikipedia.org/wiki/Accipitridae	ITIS:175280				Genome Tracker			https://orcid.org/0000-0001-5275-8866	Original term 'Accipitridae, eagle-pericardial sac ' Accipitridae or eagle? Eagle belongs to several groups of genera.
-NCBITaxon:555253		Fulica ardesiaca					https://en.wikipedia.org/wiki/Andean_coot	ITIS: 560122	andean coot			Genome Tracker			https://orcid.org/0000-0001-5275-8866	Orignal term 'focha andina'. As per this link, https://ebird.org/colombia/species/slccoo1/CO-NAR 
-NCBITaxon:9954		Cephalophus					https://en.wikipedia.org/wiki/Cephalophus	ITIS:183848							https://orcid.org/0000-0001-5275-8866	
-NCBITaxon:9952		Cephalophinae					https://en.wikipedia.org/wiki/Duiker		duiker			Genome Tracker			https://orcid.org/0000-0001-5275-8866	"Original term is 'Cephalophus , duiker 
-.'Cephalophus (contains around 15 species of duiker)"
-NCBITaxon:52644		Haliaeetus leucocephalus					https://en.wikipedia.org/wiki/Bald_eagle		bald eagle							
-NCBITaxon:8969		Haliaeetus albicilla					https://en.wikipedia.org/wiki/White-tailed_eagle		white-tailed eagle							
-FOODON:00003951	parrot		conure	A diverse, loosely defined group of small to medium-sized parrots	https://en.wikipedia.org/wiki/Conure	2021-09-06T20:39:00						Genome Tracker	IAO:0000122		https://orcid.org/0000-0001-5275-8866	
-FOODON:00003953	avian animal		eagle	A common name for many large birds of prey which are a subset of the family Accipitridae	https://en.wikipedia.org/wiki/Eagle	2021-09-06T20:39:00	https://en.wikipedia.org/wiki/Eagle					Genome Tracker	IAO:0000122		https://orcid.org/0000-0001-5275-8866	
-FOODON:00003952	Sus scrofa domesticus		piglet	An unweaned or immature pig.	https://en.wikipedia.org/wiki/Pig_farming#cite_note-18	2021-09-06T20:39:00			shoat			Genome Tracker	IAO:0000122		https://orcid.org/0000-0001-5275-8866	
-																
-																
+Ontology ID	parent	NCBITaxon label	foodon label	definition (if not NCBITaxon)	definition source (if not NCBITaxon)	created	See Also (since term originates from NCBITaxon)	ITIS 	Exact Synonym	Broad Synonym (FoodOn)	GenBank Common Name	term requested	Comment	term contributor     	curation status	Curation Comment
+ID			AL rdfs:label@en	AL IAO:0000115@en	A IAO:0000119 SPLIT=|	AT dcterms:date^^xsd:dateTime	A rdfs:seeAlso SPLIT=|	A oboInOwl:hasDbXref SPLIT=|	AL oboInOwl:hasExactSynonym@en SPLIT=|	AL oboInOwl:hasBroadSynonym@en SPLIT=|			AL rdfs:comment@en	A dcterms:contributor SPLIT=|	AI IAO:0000114	
+NCBITaxon:34899		Petaurus breviceps					https://en.wikipedia.org/wiki/Sugar_glider	itis:609841 	sugar glider 		sugar glider	Genome Tracker		https://orcid.org/0000-0001-5275-8866		
+NCBITaxon:76717		Lontra canadensis					https://en.wikipedia.org/wiki/North_American_river_otter	itis:180549 	river otter|common otter|northern river otter|Northern American river otter		Northern American river otter	Genome Tracker		https://orcid.org/0000-0001-5275-8866		
+NCBITaxon:34844		Erethizon dorsatum					https://en.wikipedia.org/wiki/North_American_porcupine	itis:180393	canadian porcupine|North American porcupine		North American porcupine	Genome Tracker		https://orcid.org/0000-0001-5275-8866		
+NCBITaxon:75842		Spatula discors					https://en.wikipedia.org/wiki/Blue-winged_teal	itis:175086	anas discors|querquedula discors|bluewinged teal|blue-winged teal		blue-winged teal	Genome Tracker		https://orcid.org/0000-0001-5275-8866		
+NCBITaxon:64278		Quiscalus mexicanus					https://en.wikipedia.org/wiki/Great-tailed_grackle	itis:179109	Great-tailed grackle		Great-tailed grackle	Genome Tracker		https://orcid.org/0000-0001-5275-8866		
+NCBITaxon:9627		Vulpes vulpes					https://en.wikipedia.org/wiki/Red_fox	itis:180604	red fox		red fox	Genome Tracker		https://orcid.org/0000-0001-5275-8866		
+NCBITaxon:365635		Trachemys scripta scripta					https://en.wikipedia.org/wiki/Yellow-bellied_slider	itis:173821				Genome Tracker		https://orcid.org/0000-0001-5275-8866		
+NCBITaxon:9691		Panthera pardus					https://en.wikipedia.org/wiki/Leopard	itis:183804	leopard		leopard	Genome Tracker		https://orcid.org/0000-0001-5275-8866		
+NCBITaxon:9689		Panthera leo					https://en.wikipedia.org/wiki/Lion	itis:183803	lion		lion	Genome Tracker		https://orcid.org/0000-0001-5275-8866		
+NCBITaxon:71006		Myrmecophaga tridactyla					https://en.wikipedia.org/wiki/Giant_anteater	itis:624911	giant anteater		giant anteater	Genome Tracker		https://orcid.org/0000-0001-5275-8866		
+NCBITaxon:9807		Ceratotherium simum					https://en.wikipedia.org/wiki/White_rhinoceros	itis:625001	white rhinoceros		white rhinoceros	Genome Tracker		https://orcid.org/0000-0001-5275-8866		
+NCBITaxon:904227		Staurotypus salvinii					https://en.wikipedia.org/wiki/Giant_musk_turtle	itis:551863				Genome Tracker		https://orcid.org/0000-0001-5275-8866		
+NCBITaxon:8758		Sistrurus miliarius					https://en.wikipedia.org/wiki/Sistrurus_miliarius	itis:174302	pigmy rattlesnake		pigmy rattlesnake	Genome Tracker		https://orcid.org/0000-0001-5275-8866		
+NCBITaxon:9694		Panthera tigris					https://en.wikipedia.org/wiki/Tiger	itis:183805	tiger		tiger	Genome Tracker		https://orcid.org/0000-0001-5275-8866		
+NCBITaxon:9544		Macaca mulatta					https://en.wikipedia.org/wiki/Rhesus_macaque	itis:180099	Rhesus monkey		Rhesus monkey	Genome Tracker		https://orcid.org/0000-0001-5275-8866		
+NCBITaxon:56117		Tapirus bairdii					https://en.wikipedia.org/wiki/Baird%27s_tapir	itis:624997	Baird's tapir		Baird's tapir	Genome Tracker		https://orcid.org/0000-0001-5275-8866		
+NCBITaxon:100937		Papio papio					https://en.wikipedia.org/wiki/Guinea_baboon	itis:944212	Guinea baboon		Guinea baboon	Genome Tracker		https://orcid.org/0000-0001-5275-8866		
+NCBITaxon:9267		Didelphis virginiana					https://en.wikipedia.org/wiki/Virginia_opossum	itis:179921	North American opossum		North American opossum	Genome Tracker		https://orcid.org/0000-0001-5275-8866		
+NCBITaxon:9438		Tadarida brasiliensis					https://en.wikipedia.org/wiki/Mexican_free-tailed_bat	itis:180088	Brazilian free-tailed bat		Brazilian free-tailed bat	Genome Tracker		https://orcid.org/0000-0001-5275-8866		
+NCBITaxon:55048		Mustela frenata					https://en.wikipedia.org/wiki/Long-tailed_weasel	itis:180556	long-tailed weasel		long-tailed weasel	Genome Tracker		https://orcid.org/0000-0001-5275-8866		
+NCBITaxon:9690		Panthera onca					https://en.wikipedia.org/wiki/Jaguar	itis:180593	jaguar		jaguar	Genome Tracker		https://orcid.org/0000-0001-5275-8866		
+NCBITaxon:55550		Dermatemys mawii					https://en.wikipedia.org/wiki/Hickatee	itis:202127				Genome Tracker		https://orcid.org/0000-0001-5275-8866		
+NCBITaxon:30422		Corvus corone					https://en.wikipedia.org/wiki/Carrion_crow	itis:559494	carrion crow		carrion crow	Genome Tracker		https://orcid.org/0000-0001-5275-8866		
+NCBITaxon:8839		Anas platyrhynchos					https://en.wikipedia.org/wiki/Mallard	itis:175063	mallard		mallard	Genome Tracker		https://orcid.org/0000-0001-5275-8866		
+NCBITaxon:9808		Rhinoceros					https://en.wikipedia.org/wiki/Rhinoceros	itis:624934				Genome Tracker		https://orcid.org/0000-0001-5275-8866		
+NCBITaxon:66444		Oreotragus oreotragus					https://en.wikipedia.org/wiki/Klipspringer	itis:625111	klipspringer		klipspringer	Genome Tracker		https://orcid.org/0000-0001-5275-8866		
+NCBITaxon:67940		Nanger dama					https://en.wikipedia.org/wiki/Dama_gazelle	itis:898225	Dama gazelle		Dama gazelle	Genome Tracker		https://orcid.org/0000-0001-5275-8866		
+NCBITaxon:56350		Falco sparverius					https://en.wikipedia.org/wiki/American_kestrel	itis:175622				Genome Tracker		https://orcid.org/0000-0001-5275-8866		
+NCBITaxon:381874		Pteroglossus bailloni					https://en.wikipedia.org/wiki/Saffron_toucanet	itis:1145221	Saffron toucanet			Genome Tracker		https://orcid.org/0000-0001-5275-8866		Orignal term was 'Gizzard pteroglossus bailloni but as discussed, will be adding 'gizzard' as a seperate anatomical part by importing from Uberon.'
+NCBITaxon:9694		Panthera tigris					https://en.wikipedia.org/wiki/Tiger	itis:183805	tiger		tiger	Genome Tracker		https://orcid.org/0000-0001-5275-8866		Orignal term 'Panthera tigris, feces'
+NCBITaxon:9899		Ammotragus lervia					https://en.wikipedia.org/wiki/Barbary_sheep	itis:180719	auodad		aoudad	Genome Tracker		https://orcid.org/0000-0001-5275-8866		Orignal term 'Auodad' which is a common name. Will be adding as a synonym.
+NCBITaxon:390684		Aulotrachichthys prosthemius					https://en.wikipedia.org/wiki/Aulotrachichthys_prosthemius					Genome Tracker		https://orcid.org/0000-0001-5275-8866		Original term 'A. prosthemius '
+NCBITaxon:9825		Sus scrofa domesticus					https://en.wikipedia.org/wiki/Domestic_pig	itis:898917	domestic pig		domestic pig			https://orcid.org/0000-0001-5275-8866		
+NCBITaxon:142487		Kinosternon subrubrum					https://en.wikipedia.org/wiki/Eastern_mud_turtle	itis:949136	common mud turtle		common mud turtle	Genome Tracker		https://orcid.org/0000-0001-5275-8866		
+NCBITaxon:9397		Chiroptera					https://en.wikipedia.org/wiki/Bat	itis:179985	bat		bats	Genome Tracker		https://orcid.org/0000-0001-5275-8866		Orignal term 'Bat'
+NCBITaxon:7375		Lucilia cuprina					https://en.wikipedia.org/wiki/Lucilia_cuprina		Australian sheep blowfly		Australian sheep blowfly	Genome Tracker		https://orcid.org/0000-0001-5275-8866		Original term 'Lucilia cuorina,alimentary canal'.  Have to add 'alimentary canal as a seperate anatomical term
+NCBITaxon:30062		Anthomyiidae					https://en.wikipedia.org/wiki/Anthomyiidae	itis:148685				Genome Tracker		https://orcid.org/0000-0001-5275-8866		Original term'Anthomyiidae spp.,alimentary canal-'
+NCBITaxon:1234591		Sarcophaga haemorrhoidalis					https://en.wikipedia.org/wiki/Sarcophaga_pernix		redtailed flesh fly		redtailed flesh fly	Genome Tracker		https://orcid.org/0000-0001-5275-8866		
+NCBITaxon:371913		Eudocimus albus					https://en.wikipedia.org/wiki/American_white_ibis	itis:174930				Genome Tracker		https://orcid.org/0000-0001-5275-8866		Original term 'White ibis', i think its referring to african white ibis.
+NCBITaxon:9933		Gazella					https://en.wikipedia.org/wiki/Gazelle	itis:624969	gazelle		gazelles	Genome Tracker		https://orcid.org/0000-0001-5275-8866		Original term 'Gazelle, slender-horned-colon'
+NCBITaxon:59896		Ovis vignei					https://en.wikipedia.org/wiki/Urial	itis:625155	urial		urial	Genome Tracker		https://orcid.org/0000-0001-5275-8866		Original term 'Urial, transcaspian-rectum '
+NCBITaxon:69297		Tragelaphus eurycerus					https://en.wikipedia.org/wiki/Bongo_(antelope)	itis:625130	bongo		bongo	Genome Tracker		https://orcid.org/0000-0001-5275-8866		Original term 'Cephalophus , bongo-rectum'
+NCBITaxon:155054		Budorcas taxicolor tibetana					https://en.wikipedia.org/wiki/Sichuan_takin	itis:898765	Sichuan takin		Sichuan takin	Genome Tracker		https://orcid.org/0000-0001-5275-8866		Budorcas taxicolor tibetana, sichuan takin-rectum'
+NCBITaxon:66442		Neotragus moschatus					https://en.wikipedia.org/wiki/Suni	itis:625109	suni		suni	Genome Tracker		https://orcid.org/0000-0001-5275-8866		Cephalophus , suni 
+NCBITaxon:146146		Selar crumenophthalmus					https://en.wikipedia.org/wiki/Bigeye_scad	itis:168677	bigeye scad		bigeye scad	Genome Tracker		https://orcid.org/0000-0001-5275-8866		Trachurops crumenophthalmius -> Not available at wikipedia or NCBI. But mentioned as a synonym of 'Selar crumenophthalmus' in ITIS. 
+NCBITaxon:37171		Damaliscus pygargus dorcas							bontebok		bontebok	Genome Tracker		https://orcid.org/0000-0001-5275-8866		Cephalophus , bontebok -> As per NCBI
+NCBITaxon:9614		Canis latrans					https://en.wikipedia.org/wiki/Coyote	itis:180599	coyote		coyote	Genome Tracker		https://orcid.org/0000-0001-5275-8866		Original term 'coyote'
+NCBITaxon:56259		Accipitridae					https://en.wikipedia.org/wiki/Accipitridae	itis:175280				Genome Tracker		https://orcid.org/0000-0001-5275-8866		Original term 'Accipitridae, eagle-pericardial sac ' Accipitridae or eagle? Eagle belongs to several groups of genera.
+NCBITaxon:555253		Fulica ardesiaca	Focha andina				https://en.wikipedia.org/wiki/Andean_coot	itis:560122	andean coot			Genome Tracker		https://orcid.org/0000-0001-5275-8866		Orignal term 'focha andina'. As per this link, https://ebird.org/colombia/species/slccoo1/CO-NAR 
+NCBITaxon:9954		Cephalophus					https://en.wikipedia.org/wiki/Cephalophus	itis:183848						https://orcid.org/0000-0001-5275-8866		
+NCBITaxon:9952		Cephalophinae					https://en.wikipedia.org/wiki/Duiker		duiker			Genome Tracker		https://orcid.org/0000-0001-5275-8866		Original term is 'Cephalophus , duiker.' Cephalophus (contains around 15 species of duiker)
+NCBITaxon:52644		Haliaeetus leucocephalus					https://en.wikipedia.org/wiki/Bald_eagle		bald eagle					https://orcid.org/0000-0001-5275-8866		
+NCBITaxon:8969		Haliaeetus albicilla					https://en.wikipedia.org/wiki/White-tailed_eagle		white-tailed eagle					https://orcid.org/0000-0001-5275-8866		
+NCBITaxon:2671080		Threskiornis molucca					https://en.wikipedia.org/wiki/Australian_white_ibis			white ibis		Genome Tracker		https://orcid.org/0000-0001-5275-8866		Orignal term was 'white ibis'. Added Australian White ibis and American White Ibis.
+FOODON:00003951	parrot		conure	A diverse, loosely defined group of small to medium-sized parrots	https://en.wikipedia.org/wiki/Conure	2021-09-06T20:39:00						Genome Tracker		https://orcid.org/0000-0001-5275-8866	IAO:0000122	
+FOODON:00003953	avian animal		eagle	A common name for many large birds of prey which are a subset of the family Accipitridae	https://en.wikipedia.org/wiki/Eagle	2021-09-06T20:39:00						Genome Tracker		https://orcid.org/0000-0001-5275-8866	IAO:0000122	
+FOODON:00003952	Sus scrofa domesticus		piglet	An unweaned or immature pig.	https://en.wikipedia.org/wiki/Pig_farming#cite_note-18	2021-09-06T20:39:00			shoat			Genome Tracker		https://orcid.org/0000-0001-5275-8866	IAO:0000122	
+FOODON:03000300	mammal		companion animal	An animal that is kept as a companion. 					pet			GRDI		https://orcid.org/0000-0001-5275-8866		
+FOODON:03000301	pigeon		squab	An immature domestic pigeon, typically under four weeks old.	https://en.wikipedia.org/wiki/Squab	2022-10-20T12:36:43Z						USDA		https://orcid.org/0000-0001-5275-8866		
+FOODON:00004271	Felis catus		kitten	A juvenile cat.	https://en.wikipedia.org/wiki/Kitten	2021-11-22T21:12:31Z						Genome Tracker		https://orcid.org/0000-0001-5275-8866		

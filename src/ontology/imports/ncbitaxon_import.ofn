@@ -1674,6 +1674,7 @@ Declaration(Class(obo:NCBITaxon_26496))
 Declaration(Class(obo:NCBITaxon_2650123))
 Declaration(Class(obo:NCBITaxon_2653789))
 Declaration(Class(obo:NCBITaxon_267067))
+Declaration(Class(obo:NCBITaxon_2671080))
 Declaration(Class(obo:NCBITaxon_267258))
 Declaration(Class(obo:NCBITaxon_267511))
 Declaration(Class(obo:NCBITaxon_26766))
@@ -2312,6 +2313,7 @@ Declaration(Class(obo:NCBITaxon_33514))
 Declaration(Class(obo:NCBITaxon_335480))
 Declaration(Class(obo:NCBITaxon_33554))
 Declaration(Class(obo:NCBITaxon_33556))
+Declaration(Class(obo:NCBITaxon_33574))
 Declaration(Class(obo:NCBITaxon_3362))
 Declaration(Class(obo:NCBITaxon_336262))
 Declaration(Class(obo:NCBITaxon_3363))
@@ -5176,7 +5178,7 @@ Declaration(AnnotationProperty(oboInOwl:hasExactSynonym))
 
 AnnotationAssertion(rdfs:label obo:IAO_0000412 "imported from"@en)
 
-# Annotation Property: oboInOwl:hasExactSynonym (has exact synonym)
+# Annotation Property: oboInOwl:hasExactSynonym (has_exact_synonym)
 
 AnnotationAssertion(rdfs:label oboInOwl:hasExactSynonym "has_exact_synonym")
 
@@ -16402,6 +16404,13 @@ AnnotationAssertion(oboInOwl:hasExactSynonym obo:NCBITaxon_267067 "giant octopus
 AnnotationAssertion(rdfs:label obo:NCBITaxon_267067 "Enteroctopus dofleini")
 SubClassOf(obo:NCBITaxon_267067 obo:NCBITaxon_6647)
 
+# Class: obo:NCBITaxon_2671080 (Threskiornis molucca)
+
+AnnotationAssertion(obo:IAO_0000412 obo:NCBITaxon_2671080 obo:ncbitaxon.owl)
+AnnotationAssertion(oboInOwl:hasExactSynonym obo:NCBITaxon_2671080 "Australian ibis")
+AnnotationAssertion(rdfs:label obo:NCBITaxon_2671080 "Threskiornis molucca")
+SubClassOf(obo:NCBITaxon_2671080 obo:NCBITaxon_33574)
+
 # Class: obo:NCBITaxon_267258 (Rosa suffulta)
 
 AnnotationAssertion(obo:IAO_0000412 obo:NCBITaxon_267258 obo:ncbitaxon.owl)
@@ -20746,6 +20755,12 @@ AnnotationAssertion(oboInOwl:hasExactSynonym obo:NCBITaxon_33556 "Antarctic mink
 AnnotationAssertion(rdfs:label obo:NCBITaxon_33556 "Balaenoptera bonaerensis")
 SubClassOf(obo:NCBITaxon_33556 obo:NCBITaxon_9766)
 
+# Class: obo:NCBITaxon_33574 (Threskiornithidae)
+
+AnnotationAssertion(obo:IAO_0000412 obo:NCBITaxon_33574 obo:ncbitaxon.owl)
+AnnotationAssertion(rdfs:label obo:NCBITaxon_33574 "Threskiornithidae")
+SubClassOf(obo:NCBITaxon_33574 obo:NCBITaxon_8825)
+
 # Class: obo:NCBITaxon_3362 (Podocarpaceae)
 
 AnnotationAssertion(obo:IAO_0000412 obo:NCBITaxon_3362 obo:ncbitaxon.owl)
@@ -20902,7 +20917,7 @@ AnnotationAssertion(obo:IAO_0000412 obo:NCBITaxon_3395 obo:ncbitaxon.owl)
 AnnotationAssertion(rdfs:label obo:NCBITaxon_3395 "Cycas")
 SubClassOf(obo:NCBITaxon_3395 obo:NCBITaxon_3394)
 
-# Class: obo:NCBITaxon_3398 (Magnoliophyta)
+# Class: obo:NCBITaxon_3398 (Magnoliopsida)
 
 AnnotationAssertion(obo:IAO_0000412 obo:NCBITaxon_3398 obo:ncbitaxon.owl)
 AnnotationAssertion(oboInOwl:hasExactSynonym obo:NCBITaxon_3398 "angiosperms")
@@ -22832,7 +22847,7 @@ SubClassOf(obo:NCBITaxon_3719 obo:NCBITaxon_980083)
 
 AnnotationAssertion(obo:IAO_0000412 obo:NCBITaxon_371913 obo:ncbitaxon.owl)
 AnnotationAssertion(rdfs:label obo:NCBITaxon_371913 "Eudocimus albus")
-SubClassOf(obo:NCBITaxon_371913 obo:NCBITaxon_8825)
+SubClassOf(obo:NCBITaxon_371913 obo:NCBITaxon_33574)
 
 # Class: obo:NCBITaxon_372321 (Patagioenas fasciata)
 

@@ -116,8 +116,8 @@ Declaration(ObjectProperty(<http://purl.obolibrary.org/obo/OBI_0000312>))
 Declaration(ObjectProperty(<http://purl.obolibrary.org/obo/RO_0001000>))
 Declaration(AnnotationProperty(<http://purl.obolibrary.org/obo/IAO_0000114>))
 Declaration(AnnotationProperty(<http://purl.obolibrary.org/obo/IAO_0000115>))
-Declaration(AnnotationProperty(<http://purl.obolibrary.org/obo/IAO_0000117>))
 Declaration(AnnotationProperty(<http://purl.obolibrary.org/obo/IAO_0000119>))
+Declaration(AnnotationProperty(<http://purl.org/dc/terms/contributor>))
 Declaration(AnnotationProperty(<http://schema.org/image>))
 Declaration(AnnotationProperty(<http://www.geneontology.org/formats/oboInOwl#hasDbXref>))
 Declaration(AnnotationProperty(<http://www.geneontology.org/formats/oboInOwl#hasExactSynonym>))
@@ -153,8 +153,8 @@ SubClassOf(<http://purl.obolibrary.org/obo/FOODON_00002583> <http://purl.obolibr
 
 AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000114> <http://purl.obolibrary.org/obo/FOODON_00002584> <http://purl.obolibrary.org/obo/IAO_0000122>)
 AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000115> <http://purl.obolibrary.org/obo/FOODON_00002584> "Chardonnay wine is wine produced using only Chardonnay grapes."@en)
-AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000117> <http://purl.obolibrary.org/obo/FOODON_00002584> "Emma Griffiths")
 AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000119> <http://purl.obolibrary.org/obo/FOODON_00002584> "https://en.wikipedia.org/wiki/Chardonnay")
+AnnotationAssertion(<http://purl.org/dc/terms/contributor> <http://purl.obolibrary.org/obo/FOODON_00002584> "Emma Griffiths")
 AnnotationAssertion(rdfs:label <http://purl.obolibrary.org/obo/FOODON_00002584> "Chardonnay wine"@en)
 SubClassOf(<http://purl.obolibrary.org/obo/FOODON_00002584> <http://purl.obolibrary.org/obo/FOODON_03310273>)
 SubClassOf(<http://purl.obolibrary.org/obo/FOODON_00002584> ObjectSomeValuesFrom(<http://purl.obolibrary.org/obo/RO_0001000> <http://purl.obolibrary.org/obo/FOODON_00002583>))
@@ -163,8 +163,8 @@ SubClassOf(<http://purl.obolibrary.org/obo/FOODON_00002584> ObjectSomeValuesFrom
 
 AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000114> <http://purl.obolibrary.org/obo/FOODON_00002585> <http://purl.obolibrary.org/obo/IAO_0000122>)
 AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000115> <http://purl.obolibrary.org/obo/FOODON_00002585> "A Cabernet Sauvignon wine is any wine produced using only Cabernet Sauvignon grapes. It often appears with Merlot and Cabernet Franc in blended Bordeaux wines."@en)
-AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000117> <http://purl.obolibrary.org/obo/FOODON_00002585> "http://orcid.org/0000-0002-8844-9165")
 AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000119> <http://purl.obolibrary.org/obo/FOODON_00002585> "https://en.wikipedia.org/wiki/Cabernet_Sauvignon")
+AnnotationAssertion(<http://purl.org/dc/terms/contributor> <http://purl.obolibrary.org/obo/FOODON_00002585> "http://orcid.org/0000-0002-8844-9165")
 AnnotationAssertion(rdfs:label <http://purl.obolibrary.org/obo/FOODON_00002585> "Cabernet Sauvignon wine"@en)
 SubClassOf(<http://purl.obolibrary.org/obo/FOODON_00002585> <http://purl.obolibrary.org/obo/FOODON_03310272>)
 SubClassOf(<http://purl.obolibrary.org/obo/FOODON_00002585> ObjectSomeValuesFrom(<http://purl.obolibrary.org/obo/RO_0001000> <http://purl.obolibrary.org/obo/FOODON_00002640>))
@@ -173,7 +173,7 @@ SubClassOf(<http://purl.obolibrary.org/obo/FOODON_00002585> ObjectSomeValuesFrom
 
 AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000114> <http://purl.obolibrary.org/obo/FOODON_00002586> <http://purl.obolibrary.org/obo/IAO_0000122>)
 AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000115> <http://purl.obolibrary.org/obo/FOODON_00002586> "A Chenin blanc wine is any wine produced using only Chenin blanc grapes."@en)
-AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000117> <http://purl.obolibrary.org/obo/FOODON_00002586> "Lauren Tindale")
+AnnotationAssertion(<http://purl.org/dc/terms/contributor> <http://purl.obolibrary.org/obo/FOODON_00002586> "Lauren Tindale")
 AnnotationAssertion(rdfs:label <http://purl.obolibrary.org/obo/FOODON_00002586> "Chenin blanc wine"@en)
 SubClassOf(<http://purl.obolibrary.org/obo/FOODON_00002586> <http://purl.obolibrary.org/obo/FOODON_03310273>)
 SubClassOf(<http://purl.obolibrary.org/obo/FOODON_00002586> ObjectSomeValuesFrom(<http://purl.obolibrary.org/obo/RO_0001000> <http://purl.obolibrary.org/obo/FOODON_00002587>))
@@ -182,8 +182,8 @@ SubClassOf(<http://purl.obolibrary.org/obo/FOODON_00002586> ObjectSomeValuesFrom
 
 AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000114> <http://purl.obolibrary.org/obo/FOODON_00002587> <http://purl.obolibrary.org/obo/IAO_0000122>)
 AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000115> <http://purl.obolibrary.org/obo/FOODON_00002587> "Chenin blanc grapes are a White wine grape variety from the Loire Valley of France. Its high acidity means it can be used to make everything from sparkling wines to well-balanced dessert wines, although it can produce very bland, neutral wines if the vine's natural vigor is not controlled."@en)
-AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000117> <http://purl.obolibrary.org/obo/FOODON_00002587> "Lauren Tindale")
 AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000119> <http://purl.obolibrary.org/obo/FOODON_00002587> "https://en.wikipedia.org/wiki/Chenin_blanc")
+AnnotationAssertion(<http://purl.org/dc/terms/contributor> <http://purl.obolibrary.org/obo/FOODON_00002587> "Lauren Tindale")
 AnnotationAssertion(<http://www.geneontology.org/formats/oboInOwl#hasExactSynonym> <http://purl.obolibrary.org/obo/FOODON_00002587> "Pineau de la Loire"@fr)
 AnnotationAssertion(rdfs:label <http://purl.obolibrary.org/obo/FOODON_00002587> "Chenin blanc grape plant"@en)
 SubClassOf(<http://purl.obolibrary.org/obo/FOODON_00002587> <http://purl.obolibrary.org/obo/NCBITaxon_29760>)
@@ -192,7 +192,7 @@ SubClassOf(<http://purl.obolibrary.org/obo/FOODON_00002587> <http://purl.obolibr
 
 AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000114> <http://purl.obolibrary.org/obo/FOODON_00002588> <http://purl.obolibrary.org/obo/IAO_0000122>)
 AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000115> <http://purl.obolibrary.org/obo/FOODON_00002588> "A Malbec wine is any wine produced using only Malbec grapes."@en)
-AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000117> <http://purl.obolibrary.org/obo/FOODON_00002588> "Lauren Tindale")
+AnnotationAssertion(<http://purl.org/dc/terms/contributor> <http://purl.obolibrary.org/obo/FOODON_00002588> "Lauren Tindale")
 AnnotationAssertion(rdfs:label <http://purl.obolibrary.org/obo/FOODON_00002588> "Malbec wine"@en)
 SubClassOf(<http://purl.obolibrary.org/obo/FOODON_00002588> <http://purl.obolibrary.org/obo/FOODON_03310272>)
 SubClassOf(<http://purl.obolibrary.org/obo/FOODON_00002588> ObjectSomeValuesFrom(<http://purl.obolibrary.org/obo/RO_0001000> <http://purl.obolibrary.org/obo/FOODON_00002589>))
@@ -201,8 +201,8 @@ SubClassOf(<http://purl.obolibrary.org/obo/FOODON_00002588> ObjectSomeValuesFrom
 
 AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000114> <http://purl.obolibrary.org/obo/FOODON_00002589> <http://purl.obolibrary.org/obo/IAO_0000122>)
 AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000115> <http://purl.obolibrary.org/obo/FOODON_00002589> "Malbec grapes are a purple grape variety used in making red wine. The grapes tend to have an inky dark color and robust tannins, and are known as one of the six grapes allowed in the blend of red Bordeaux wine. The French plantations of Malbec are now found primarily in Cahors in South West France. It is increasingly celebrated as an Argentine varietal wine and is being grown around the world."@en)
-AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000117> <http://purl.obolibrary.org/obo/FOODON_00002589> "Lauren Tindale")
 AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000119> <http://purl.obolibrary.org/obo/FOODON_00002589> "https://en.wikipedia.org/wiki/Malbec")
+AnnotationAssertion(<http://purl.org/dc/terms/contributor> <http://purl.obolibrary.org/obo/FOODON_00002589> "Lauren Tindale")
 AnnotationAssertion(rdfs:label <http://purl.obolibrary.org/obo/FOODON_00002589> "Malbec grape plant"@en)
 SubClassOf(<http://purl.obolibrary.org/obo/FOODON_00002589> <http://purl.obolibrary.org/obo/NCBITaxon_29760>)
 
@@ -210,7 +210,7 @@ SubClassOf(<http://purl.obolibrary.org/obo/FOODON_00002589> <http://purl.obolibr
 
 AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000114> <http://purl.obolibrary.org/obo/FOODON_00002590> <http://purl.obolibrary.org/obo/IAO_0000122>)
 AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000115> <http://purl.obolibrary.org/obo/FOODON_00002590> "A Merlot wine is any wine produced using only Merlot grapes."@en)
-AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000117> <http://purl.obolibrary.org/obo/FOODON_00002590> "Lauren Tindale")
+AnnotationAssertion(<http://purl.org/dc/terms/contributor> <http://purl.obolibrary.org/obo/FOODON_00002590> "Lauren Tindale")
 AnnotationAssertion(rdfs:label <http://purl.obolibrary.org/obo/FOODON_00002590> "Merlot wine"@en)
 SubClassOf(<http://purl.obolibrary.org/obo/FOODON_00002590> <http://purl.obolibrary.org/obo/FOODON_03310272>)
 SubClassOf(<http://purl.obolibrary.org/obo/FOODON_00002590> ObjectSomeValuesFrom(<http://purl.obolibrary.org/obo/RO_0001000> <http://purl.obolibrary.org/obo/FOODON_00002591>))
@@ -219,8 +219,8 @@ SubClassOf(<http://purl.obolibrary.org/obo/FOODON_00002590> ObjectSomeValuesFrom
 
 AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000114> <http://purl.obolibrary.org/obo/FOODON_00002591> <http://purl.obolibrary.org/obo/IAO_0000122>)
 AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000115> <http://purl.obolibrary.org/obo/FOODON_00002591> "Merlot is a dark blue-colored wine grape variety, that is used as both a blending grape and for varietal wines."@en)
-AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000117> <http://purl.obolibrary.org/obo/FOODON_00002591> "Lauren Tindale")
 AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000119> <http://purl.obolibrary.org/obo/FOODON_00002591> "https://en.wikipedia.org/wiki/Merlot")
+AnnotationAssertion(<http://purl.org/dc/terms/contributor> <http://purl.obolibrary.org/obo/FOODON_00002591> "Lauren Tindale")
 AnnotationAssertion(<http://schema.org/image> <http://purl.obolibrary.org/obo/FOODON_00002591> <https://upload.wikimedia.org/wikipedia/commons/thumb/e/ee/Merlot_Grape.jpg/320px-Merlot_Grape.jpg>)
 AnnotationAssertion(rdfs:label <http://purl.obolibrary.org/obo/FOODON_00002591> "Merlot grape plant"@en)
 SubClassOf(<http://purl.obolibrary.org/obo/FOODON_00002591> <http://purl.obolibrary.org/obo/NCBITaxon_29760>)
@@ -229,7 +229,7 @@ SubClassOf(<http://purl.obolibrary.org/obo/FOODON_00002591> <http://purl.obolibr
 
 AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000114> <http://purl.obolibrary.org/obo/FOODON_00002592> <http://purl.obolibrary.org/obo/IAO_0000122>)
 AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000115> <http://purl.obolibrary.org/obo/FOODON_00002592> "A pinot blanc wine is any wine produced using only Pinco blanc grapes."@en)
-AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000117> <http://purl.obolibrary.org/obo/FOODON_00002592> "Lauren Tindale")
+AnnotationAssertion(<http://purl.org/dc/terms/contributor> <http://purl.obolibrary.org/obo/FOODON_00002592> "Lauren Tindale")
 AnnotationAssertion(rdfs:label <http://purl.obolibrary.org/obo/FOODON_00002592> "Pinot blanc wine"@en)
 SubClassOf(<http://purl.obolibrary.org/obo/FOODON_00002592> <http://purl.obolibrary.org/obo/FOODON_03310273>)
 SubClassOf(<http://purl.obolibrary.org/obo/FOODON_00002592> ObjectSomeValuesFrom(<http://purl.obolibrary.org/obo/RO_0001000> <http://purl.obolibrary.org/obo/FOODON_00002593>))
@@ -238,8 +238,8 @@ SubClassOf(<http://purl.obolibrary.org/obo/FOODON_00002592> ObjectSomeValuesFrom
 
 AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000114> <http://purl.obolibrary.org/obo/FOODON_00002593> <http://purl.obolibrary.org/obo/IAO_0000122>)
 AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000115> <http://purl.obolibrary.org/obo/FOODON_00002593> "Pinot blanc is a white wine grape. It is a point genetic mutation of Pinot noir."@en)
-AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000117> <http://purl.obolibrary.org/obo/FOODON_00002593> "Lauren Tindale")
 AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000119> <http://purl.obolibrary.org/obo/FOODON_00002593> "https://en.wikipedia.org/wiki/Pinot_blanc")
+AnnotationAssertion(<http://purl.org/dc/terms/contributor> <http://purl.obolibrary.org/obo/FOODON_00002593> "Lauren Tindale")
 AnnotationAssertion(<http://schema.org/image> <http://purl.obolibrary.org/obo/FOODON_00002593> <https://upload.wikimedia.org/wikipedia/commons/thumb/b/b3/Pinot-blanc.jpg/440px-Pinot-blanc.jpg>)
 AnnotationAssertion(rdfs:label <http://purl.obolibrary.org/obo/FOODON_00002593> "Pinot blanc grape plant"@en)
 SubClassOf(<http://purl.obolibrary.org/obo/FOODON_00002593> <http://purl.obolibrary.org/obo/NCBITaxon_29760>)
@@ -248,8 +248,8 @@ SubClassOf(<http://purl.obolibrary.org/obo/FOODON_00002593> <http://purl.obolibr
 
 AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000114> <http://purl.obolibrary.org/obo/FOODON_00002594> <http://purl.obolibrary.org/obo/IAO_0000122>)
 AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000115> <http://purl.obolibrary.org/obo/FOODON_00002594> "Pinot gris is a white wine varietal produced only from Pinot gris grapes.  The Italian synonym, Pinot Grigio, has become strongly associated with lighter wines produced in great quantities, particularly in northern Italy."@en)
-AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000117> <http://purl.obolibrary.org/obo/FOODON_00002594> "Ginny Pichler")
 AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000119> <http://purl.obolibrary.org/obo/FOODON_00002594> "https://www.wine-searcher.com/grape-381-pinot-grigio")
+AnnotationAssertion(<http://purl.org/dc/terms/contributor> <http://purl.obolibrary.org/obo/FOODON_00002594> "Ginny Pichler")
 AnnotationAssertion(<http://schema.org/image> <http://purl.obolibrary.org/obo/FOODON_00002594> <https://upload.wikimedia.org/wikipedia/commons/thumb/5/59/Alto_adige_Pinot_grigio.jpg/179px-Alto_adige_Pinot_grigio.jpg>)
 AnnotationAssertion(<http://www.geneontology.org/formats/oboInOwl#hasExactSynonym> <http://purl.obolibrary.org/obo/FOODON_00002594> "Grauburgunder"@ge)
 AnnotationAssertion(<http://www.geneontology.org/formats/oboInOwl#hasExactSynonym> <http://purl.obolibrary.org/obo/FOODON_00002594> "Pinot Grigio"@it)
@@ -261,8 +261,8 @@ SubClassOf(<http://purl.obolibrary.org/obo/FOODON_00002594> ObjectSomeValuesFrom
 
 AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000114> <http://purl.obolibrary.org/obo/FOODON_00002595> <http://purl.obolibrary.org/obo/IAO_0000122>)
 AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000115> <http://purl.obolibrary.org/obo/FOODON_00002595> "Pinot gris is a white wine grape variety (mutation) of the Pinot family which shares its genetic fingerprint with Pinot Noir, Pinot Blanc et al. . Pinot gris is grown around the globe with the \"spicy\" full-bodied Alsatian and lighter-bodied, more acidic Italian styles being most widely recognized."@en)
-AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000117> <http://purl.obolibrary.org/obo/FOODON_00002595> "Ginny Pichler")
 AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000119> <http://purl.obolibrary.org/obo/FOODON_00002595> "https://en.wikipedia.org/wiki/Pinot_gris")
+AnnotationAssertion(<http://purl.org/dc/terms/contributor> <http://purl.obolibrary.org/obo/FOODON_00002595> "Ginny Pichler")
 AnnotationAssertion(<http://schema.org/image> <http://purl.obolibrary.org/obo/FOODON_00002595> <https://commons.wikimedia.org/wiki/File:Pinot_Gris_close.JPG>)
 AnnotationAssertion(<http://www.geneontology.org/formats/oboInOwl#hasExactSynonym> <http://purl.obolibrary.org/obo/FOODON_00002595> "Grauburgunder"@ge)
 AnnotationAssertion(<http://www.geneontology.org/formats/oboInOwl#hasExactSynonym> <http://purl.obolibrary.org/obo/FOODON_00002595> "Pinot Grigio grape"@it)
@@ -273,8 +273,8 @@ SubClassOf(<http://purl.obolibrary.org/obo/FOODON_00002595> <http://purl.obolibr
 
 AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000114> <http://purl.obolibrary.org/obo/FOODON_00002596> <http://purl.obolibrary.org/obo/IAO_0000122>)
 AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000115> <http://purl.obolibrary.org/obo/FOODON_00002596> "Pinot noir wine is a red wine varietal made only from Pinot noir grapes.  The thin skins and low levels of phenolic compounds lends pinot to producing mostly lightly colored, medium-bodied and low-tannin wines that can often go through phases of uneven and unpredictable aging."@en)
-AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000117> <http://purl.obolibrary.org/obo/FOODON_00002596> "Shannon Russell")
 AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000119> <http://purl.obolibrary.org/obo/FOODON_00002596> "https://en.wikipedia.org/wiki/Pinot_noir")
+AnnotationAssertion(<http://purl.org/dc/terms/contributor> <http://purl.obolibrary.org/obo/FOODON_00002596> "Shannon Russell")
 AnnotationAssertion(<http://www.geneontology.org/formats/oboInOwl#hasExactSynonym> <http://purl.obolibrary.org/obo/FOODON_00002596> "Blauburgunder"@ge)
 AnnotationAssertion(<http://www.geneontology.org/formats/oboInOwl#hasExactSynonym> <http://purl.obolibrary.org/obo/FOODON_00002596> "Pinot Nero"@fr)
 AnnotationAssertion(<http://www.geneontology.org/formats/oboInOwl#hasExactSynonym> <http://purl.obolibrary.org/obo/FOODON_00002596> "Rulandské modré"@fr)
@@ -287,8 +287,8 @@ SubClassOf(<http://purl.obolibrary.org/obo/FOODON_00002596> ObjectSomeValuesFrom
 
 AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000114> <http://purl.obolibrary.org/obo/FOODON_00002597> <http://purl.obolibrary.org/obo/IAO_0000122>)
 AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000115> <http://purl.obolibrary.org/obo/FOODON_00002597> "Pinot noir grape is a red wine grape variety. The name is derived from the French words for pine and black. The word pine alludes to the grape variety having tightly clustered, pine cone-shaped bunches of fruit. Pinot noir grapes are grown around the world, mostly in the cooler climates, and the grape is chiefly associated with the Burgundy region of France."@en)
-AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000117> <http://purl.obolibrary.org/obo/FOODON_00002597> "Shannon Russell")
 AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000119> <http://purl.obolibrary.org/obo/FOODON_00002597> "https://en.wikipedia.org/wiki/Pinot_noir")
+AnnotationAssertion(<http://purl.org/dc/terms/contributor> <http://purl.obolibrary.org/obo/FOODON_00002597> "Shannon Russell")
 AnnotationAssertion(<http://schema.org/image> <http://purl.obolibrary.org/obo/FOODON_00002597> <https://en.wikipedia.org/wiki/Pinot_noir#/media/File:Grape_near_Sancerre.jpg>)
 AnnotationAssertion(rdfs:label <http://purl.obolibrary.org/obo/FOODON_00002597> "Pinot noir grape plant"@en)
 SubClassOf(<http://purl.obolibrary.org/obo/FOODON_00002597> <http://purl.obolibrary.org/obo/NCBITaxon_29760>)
@@ -297,8 +297,8 @@ SubClassOf(<http://purl.obolibrary.org/obo/FOODON_00002597> <http://purl.obolibr
 
 AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000114> <http://purl.obolibrary.org/obo/FOODON_00002598> <http://purl.obolibrary.org/obo/IAO_0000122>)
 AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000115> <http://purl.obolibrary.org/obo/FOODON_00002598> "Pinotage wine is a red wine varietal produced only from Pinotage grapes. This type of wine can range from a fairly cheap, light-bodied red wine with some funky aromas (including extremes such as acetone, paint, rubber, and at times banana) all the way to full-bodied red wines with balance, elegance, fully developed black fruit flavors, and an enduring, sweet, smokey finish."@en)
-AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000117> <http://purl.obolibrary.org/obo/FOODON_00002598> "Ginny Pichler")
 AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000119> <http://purl.obolibrary.org/obo/FOODON_00002598> "https://www.thespruceeats.com/what-is-pinotage-wine-3511226")
+AnnotationAssertion(<http://purl.org/dc/terms/contributor> <http://purl.obolibrary.org/obo/FOODON_00002598> "Ginny Pichler")
 AnnotationAssertion(<http://schema.org/image> <http://purl.obolibrary.org/obo/FOODON_00002598> <https://upload.wikimedia.org/wikipedia/commons/thumb/e/e4/Stellenbosch_Pinotage.jpg/179px-Stellenbosch_Pinotage.jpg>)
 AnnotationAssertion(rdfs:label <http://purl.obolibrary.org/obo/FOODON_00002598> "Pinotage wine"@en)
 SubClassOf(<http://purl.obolibrary.org/obo/FOODON_00002598> <http://purl.obolibrary.org/obo/FOODON_03310272>)
@@ -308,8 +308,8 @@ SubClassOf(<http://purl.obolibrary.org/obo/FOODON_00002598> ObjectSomeValuesFrom
 
 AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000114> <http://purl.obolibrary.org/obo/FOODON_00002599> <http://purl.obolibrary.org/obo/IAO_0000122>)
 AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000115> <http://purl.obolibrary.org/obo/FOODON_00002599> "Pinotage is a red wine grape that is South Africa's signature variety. It was bred there in 1925 as a crossbetween Pinot noir and Cinsaut. The grape is a viticultural intraspecific cross of two varieties of Vitis vinifera, not an interspecific hybrid."@en)
-AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000117> <http://purl.obolibrary.org/obo/FOODON_00002599> "Ginny Pichler")
 AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000119> <http://purl.obolibrary.org/obo/FOODON_00002599> "https://en.wikipedia.org/wiki/Pinotage")
+AnnotationAssertion(<http://purl.org/dc/terms/contributor> <http://purl.obolibrary.org/obo/FOODON_00002599> "Ginny Pichler")
 AnnotationAssertion(<http://schema.org/image> <http://purl.obolibrary.org/obo/FOODON_00002599> <https://i2.wp.com/www.winetwofive.com/wp-content/uploads/2018/06/CEP-TIBOUREN.jpg?resize=128%2C128>)
 AnnotationAssertion(rdfs:label <http://purl.obolibrary.org/obo/FOODON_00002599> "Pinotage grape plant"@en)
 SubClassOf(<http://purl.obolibrary.org/obo/FOODON_00002599> <http://purl.obolibrary.org/obo/NCBITaxon_29760>)
@@ -318,8 +318,8 @@ SubClassOf(<http://purl.obolibrary.org/obo/FOODON_00002599> <http://purl.obolibr
 
 AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000114> <http://purl.obolibrary.org/obo/FOODON_00002600> <http://purl.obolibrary.org/obo/IAO_0000122>)
 AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000115> <http://purl.obolibrary.org/obo/FOODON_00002600> "Reserve wine is wine of a higher quality than usual, or a wine that has been aged before being sold, or both. Traditionally, winemakers would reserve some of their best wine rather than sell it immediately, coining the term."@en)
-AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000117> <http://purl.obolibrary.org/obo/FOODON_00002600> "http://orcid.org/0000-0002-8844-9165")
 AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000119> <http://purl.obolibrary.org/obo/FOODON_00002600> "https://en.wikipedia.org/wiki/Reserve_wine")
+AnnotationAssertion(<http://purl.org/dc/terms/contributor> <http://purl.obolibrary.org/obo/FOODON_00002600> "http://orcid.org/0000-0002-8844-9165")
 AnnotationAssertion(rdfs:label <http://purl.obolibrary.org/obo/FOODON_00002600> "Reserve wine"@en)
 SubClassOf(<http://purl.obolibrary.org/obo/FOODON_00002600> <http://purl.obolibrary.org/obo/FOODON_03301014>)
 
@@ -327,8 +327,8 @@ SubClassOf(<http://purl.obolibrary.org/obo/FOODON_00002600> <http://purl.obolibr
 
 AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000114> <http://purl.obolibrary.org/obo/FOODON_00002601> <http://purl.obolibrary.org/obo/IAO_0000122>)
 AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000115> <http://purl.obolibrary.org/obo/FOODON_00002601> "Riesling wine is a white wine varietal produced only from Riesling grapes, and offered as dry, semi-sweet, sweet, and sparkling white wines. Riesling wines are usually varietally pure and are seldom oaked."@en)
-AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000117> <http://purl.obolibrary.org/obo/FOODON_00002601> "Ginny Pichler")
 AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000119> <http://purl.obolibrary.org/obo/FOODON_00002601> "https://en.wikipedia.org/wiki/Riesling")
+AnnotationAssertion(<http://purl.org/dc/terms/contributor> <http://purl.obolibrary.org/obo/FOODON_00002601> "Ginny Pichler")
 AnnotationAssertion(<http://schema.org/image> <http://purl.obolibrary.org/obo/FOODON_00002601> <https://upload.wikimedia.org/wikipedia/commons/thumb/9/96/Alsatian_Riesling_.jpg/179px-Alsatian_Riesling_.jpg>)
 AnnotationAssertion(rdfs:label <http://purl.obolibrary.org/obo/FOODON_00002601> "Riesling wine"@en)
 SubClassOf(<http://purl.obolibrary.org/obo/FOODON_00002601> <http://purl.obolibrary.org/obo/FOODON_03310273>)
@@ -338,8 +338,8 @@ SubClassOf(<http://purl.obolibrary.org/obo/FOODON_00002601> ObjectSomeValuesFrom
 
 AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000114> <http://purl.obolibrary.org/obo/FOODON_00002602> <http://purl.obolibrary.org/obo/IAO_0000122>)
 AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000115> <http://purl.obolibrary.org/obo/FOODON_00002602> "Riesling grape is an aromatic white grape variety displaying flowery, almost perfumed, aromas as well as high acidity."@en)
-AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000117> <http://purl.obolibrary.org/obo/FOODON_00002602> "Ginny Pichler")
 AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000119> <http://purl.obolibrary.org/obo/FOODON_00002602> "https://en.wikipedia.org/wiki/Riesling")
+AnnotationAssertion(<http://purl.org/dc/terms/contributor> <http://purl.obolibrary.org/obo/FOODON_00002602> "Ginny Pichler")
 AnnotationAssertion(<http://schema.org/image> <http://purl.obolibrary.org/obo/FOODON_00002602> <https://upload.wikimedia.org/wikipedia/commons/thumb/7/76/Riesling_grapes_leaves.jpg/320px-Riesling_grapes_leaves.jpg>)
 AnnotationAssertion(rdfs:label <http://purl.obolibrary.org/obo/FOODON_00002602> "Riesling grape plant"@en)
 SubClassOf(<http://purl.obolibrary.org/obo/FOODON_00002602> <http://purl.obolibrary.org/obo/NCBITaxon_29760>)
@@ -348,8 +348,8 @@ SubClassOf(<http://purl.obolibrary.org/obo/FOODON_00002602> <http://purl.obolibr
 
 AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000114> <http://purl.obolibrary.org/obo/FOODON_00002603> <http://purl.obolibrary.org/obo/IAO_0000122>)
 AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000115> <http://purl.obolibrary.org/obo/FOODON_00002603> "Sangiovese wine is a red wine varietal produced only from Sangiovese grapes. It is prized for its high acid, firm tannins and balanced nature. Savory flavors of dark cherries and black stonefruit are characteristic, and may be backed by secondary notes of tomato leaf and dried herbs."@en)
-AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000117> <http://purl.obolibrary.org/obo/FOODON_00002603> "Ginny Pichler")
 AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000119> <http://purl.obolibrary.org/obo/FOODON_00002603> "https://www.wine-searcher.com/grape-432-sangiovese")
+AnnotationAssertion(<http://purl.org/dc/terms/contributor> <http://purl.obolibrary.org/obo/FOODON_00002603> "Ginny Pichler")
 AnnotationAssertion(<http://schema.org/image> <http://purl.obolibrary.org/obo/FOODON_00002603> <https://upload.wikimedia.org/wikipedia/commons/thumb/2/2e/Sangiovese_wine.jpg/180px-Sangiovese_wine.jpg>)
 AnnotationAssertion(rdfs:label <http://purl.obolibrary.org/obo/FOODON_00002603> "Sangiovese wine"@en)
 SubClassOf(<http://purl.obolibrary.org/obo/FOODON_00002603> <http://purl.obolibrary.org/obo/FOODON_03310272>)
@@ -359,8 +359,8 @@ SubClassOf(<http://purl.obolibrary.org/obo/FOODON_00002603> ObjectSomeValuesFrom
 
 AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000114> <http://purl.obolibrary.org/obo/FOODON_00002604> <http://purl.obolibrary.org/obo/IAO_0000122>)
 AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000115> <http://purl.obolibrary.org/obo/FOODON_00002604> "Sangiovese is a red Italian wine grape variety that derives its name from the Latin sanguis Jovis, \"the blood of Jupiter\"."@en)
-AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000117> <http://purl.obolibrary.org/obo/FOODON_00002604> "Ginny Pichler")
 AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000119> <http://purl.obolibrary.org/obo/FOODON_00002604> "https://en.wikipedia.org/wiki/Sangiovese")
+AnnotationAssertion(<http://purl.org/dc/terms/contributor> <http://purl.obolibrary.org/obo/FOODON_00002604> "Ginny Pichler")
 AnnotationAssertion(<http://schema.org/image> <http://purl.obolibrary.org/obo/FOODON_00002604> <https://upload.wikimedia.org/wikipedia/commons/thumb/3/37/Sangiovese_close_up_crop.jpg/277px-Sangiovese_close_up_crop.jpg>)
 AnnotationAssertion(rdfs:label <http://purl.obolibrary.org/obo/FOODON_00002604> "Sangiovese grape plant"@en)
 SubClassOf(<http://purl.obolibrary.org/obo/FOODON_00002604> <http://purl.obolibrary.org/obo/NCBITaxon_29760>)
@@ -369,8 +369,8 @@ SubClassOf(<http://purl.obolibrary.org/obo/FOODON_00002604> <http://purl.obolibr
 
 AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000114> <http://purl.obolibrary.org/obo/FOODON_00002605> <http://purl.obolibrary.org/obo/IAO_0000122>)
 AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000115> <http://purl.obolibrary.org/obo/FOODON_00002605> "Sauvignon blanc wine is a white wine varietal produced only from Sauvignon blanc grapes.  Its primary fruit flavors are lime, green apple, passion fruit and white peach. Depending on how ripe the grapes are when the wine is made, the flavor will range from zesty lime to flowery peach."@en)
-AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000117> <http://purl.obolibrary.org/obo/FOODON_00002605> "Shannon Russell")
 AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000119> <http://purl.obolibrary.org/obo/FOODON_00002605> "https://winefolly.com/review/sauvignon-blanc-wine-taste-food-pairing/")
+AnnotationAssertion(<http://purl.org/dc/terms/contributor> <http://purl.obolibrary.org/obo/FOODON_00002605> "Shannon Russell")
 AnnotationAssertion(<http://www.geneontology.org/formats/oboInOwl#hasExactSynonym> <http://purl.obolibrary.org/obo/FOODON_00002605> "Blanc fume"@fr)
 AnnotationAssertion(<http://www.geneontology.org/formats/oboInOwl#hasExactSynonym> <http://purl.obolibrary.org/obo/FOODON_00002605> "Fume blanc"@fr)
 AnnotationAssertion(<http://www.geneontology.org/formats/oboInOwl#hasExactSynonym> <http://purl.obolibrary.org/obo/FOODON_00002605> "Muskat-Silvaner"@en)
@@ -383,8 +383,8 @@ SubClassOf(<http://purl.obolibrary.org/obo/FOODON_00002605> ObjectSomeValuesFrom
 
 AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000114> <http://purl.obolibrary.org/obo/FOODON_00002606> <http://purl.obolibrary.org/obo/IAO_0000122>)
 AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000115> <http://purl.obolibrary.org/obo/FOODON_00002606> "Sauvignon blanc is a green-skinned grape variety that originates from the Bordeaux region of France. The grape most likely gets its name from the French words sauvage (\"wild\") and blanc (\"white\") due to its early origins as an indigenous grape in South West France."@en)
-AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000117> <http://purl.obolibrary.org/obo/FOODON_00002606> "Shannon Russell")
 AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000119> <http://purl.obolibrary.org/obo/FOODON_00002606> "https://en.wikipedia.org/wiki/Sauvignon_blanc")
+AnnotationAssertion(<http://purl.org/dc/terms/contributor> <http://purl.obolibrary.org/obo/FOODON_00002606> "Shannon Russell")
 AnnotationAssertion(<http://schema.org/image> <http://purl.obolibrary.org/obo/FOODON_00002606> <https://upload.wikimedia.org/wikipedia/commons/thumb/5/50/Sauvignon_blanc_grapes.jpg/360px-Sauvignon_blanc_grapes.jpg>)
 AnnotationAssertion(rdfs:label <http://purl.obolibrary.org/obo/FOODON_00002606> "Sauvignon blanc grape plant"@en)
 SubClassOf(<http://purl.obolibrary.org/obo/FOODON_00002606> <http://purl.obolibrary.org/obo/NCBITaxon_29760>)
@@ -393,8 +393,8 @@ SubClassOf(<http://purl.obolibrary.org/obo/FOODON_00002606> <http://purl.obolibr
 
 AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000114> <http://purl.obolibrary.org/obo/FOODON_00002607> <http://purl.obolibrary.org/obo/IAO_0000122>)
 AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000115> <http://purl.obolibrary.org/obo/FOODON_00002607> "Semillon wine is a white wine varietal produced only from Semillon grapes.  The primary fruit flavors in Semillon wine are lemon, apple, pear and green papaya. Semillon is France’s 3rd most planted white wine variety behind Sauvignon Blanc and Chardonnay."@en)
-AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000117> <http://purl.obolibrary.org/obo/FOODON_00002607> "Ginny Pichler")
 AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000119> <http://purl.obolibrary.org/obo/FOODON_00002607> "https://winefolly.com/review/have-you-heard-of-semillon-the-3rd-most-important-french-white-wine/")
+AnnotationAssertion(<http://purl.org/dc/terms/contributor> <http://purl.obolibrary.org/obo/FOODON_00002607> "Ginny Pichler")
 AnnotationAssertion(<http://schema.org/image> <http://purl.obolibrary.org/obo/FOODON_00002607> <https://upload.wikimedia.org/wikipedia/commons/thumb/1/1d/Late_harvest_Semillon.jpg/179px-Late_harvest_Semillon.jpg>)
 AnnotationAssertion(<http://www.geneontology.org/formats/oboInOwl#hasExactSynonym> <http://purl.obolibrary.org/obo/FOODON_00002607> "Sémillon wine"@fr)
 AnnotationAssertion(rdfs:label <http://purl.obolibrary.org/obo/FOODON_00002607> "Semillon wine"@en)
@@ -405,8 +405,8 @@ SubClassOf(<http://purl.obolibrary.org/obo/FOODON_00002607> ObjectSomeValuesFrom
 
 AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000114> <http://purl.obolibrary.org/obo/FOODON_00002608> <http://purl.obolibrary.org/obo/IAO_0000122>)
 AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000115> <http://purl.obolibrary.org/obo/FOODON_00002608> "Semillon is a golden-skinned grape used to make dry and sweet white wines, mostly in France and Australia."@en)
-AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000117> <http://purl.obolibrary.org/obo/FOODON_00002608> "Ginny Pichler")
 AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000119> <http://purl.obolibrary.org/obo/FOODON_00002608> "https://en.wikipedia.org/wiki/S%C3%A9millon")
+AnnotationAssertion(<http://purl.org/dc/terms/contributor> <http://purl.obolibrary.org/obo/FOODON_00002608> "Ginny Pichler")
 AnnotationAssertion(<http://schema.org/image> <http://purl.obolibrary.org/obo/FOODON_00002608> <https://upload.wikimedia.org/wikipedia/commons/thumb/2/27/Semillon_starting_to_get_noble_rot_at_Ch%C3%A2teau_Doisy-V%C3%A9drines%2C_Barsac%2C_Sauternes.jpg/160px-Semillon_starting_to_get_noble_rot_at_Ch%C3%A2teau_Doisy-V%C3%A9drines%2C_Barsac%2C_Sauternes.jpg>)
 AnnotationAssertion(<http://www.geneontology.org/formats/oboInOwl#hasExactSynonym> <http://purl.obolibrary.org/obo/FOODON_00002608> "Sémillon grape"@fr)
 AnnotationAssertion(rdfs:label <http://purl.obolibrary.org/obo/FOODON_00002608> "Semillon grape plant"@en)
@@ -416,7 +416,7 @@ SubClassOf(<http://purl.obolibrary.org/obo/FOODON_00002608> <http://purl.obolibr
 
 AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000114> <http://purl.obolibrary.org/obo/FOODON_00002609> <http://purl.obolibrary.org/obo/IAO_0000122>)
 AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000115> <http://purl.obolibrary.org/obo/FOODON_00002609> "Glera wine is a white wine varietal produced only from Glera grapes."@en)
-AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000117> <http://purl.obolibrary.org/obo/FOODON_00002609> "Ginny Pichler")
+AnnotationAssertion(<http://purl.org/dc/terms/contributor> <http://purl.obolibrary.org/obo/FOODON_00002609> "Ginny Pichler")
 AnnotationAssertion(<http://www.geneontology.org/formats/oboInOwl#hasExactSynonym> <http://purl.obolibrary.org/obo/FOODON_00002609> "Prosecco wine"@en)
 AnnotationAssertion(rdfs:label <http://purl.obolibrary.org/obo/FOODON_00002609> "Glera wine"@en)
 SubClassOf(<http://purl.obolibrary.org/obo/FOODON_00002609> <http://purl.obolibrary.org/obo/FOODON_03310273>)
@@ -426,8 +426,8 @@ SubClassOf(<http://purl.obolibrary.org/obo/FOODON_00002609> ObjectSomeValuesFrom
 
 AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000114> <http://purl.obolibrary.org/obo/FOODON_00002610> <http://purl.obolibrary.org/obo/IAO_0000122>)
 AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000115> <http://purl.obolibrary.org/obo/FOODON_00002610> "Glera is a white variety of grape of Slovenian origin, which was brought to the village of Prosecco from Slovenia's Karst region. Glera was, until 2009, mostly referred to as Prosecco. It is mainly cultivated for use in sparkling Italian wine styles."@en)
-AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000117> <http://purl.obolibrary.org/obo/FOODON_00002610> "Ginny Pichler")
 AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000119> <http://purl.obolibrary.org/obo/FOODON_00002610> "https://en.wikipedia.org/wiki/Glera_(grape)")
+AnnotationAssertion(<http://purl.org/dc/terms/contributor> <http://purl.obolibrary.org/obo/FOODON_00002610> "Ginny Pichler")
 AnnotationAssertion(<http://schema.org/image> <http://purl.obolibrary.org/obo/FOODON_00002610> <https://cdn1.wine-searcher.net/images/grape/glera-(prosecco)-392-1-1.jpg>)
 AnnotationAssertion(<http://www.geneontology.org/formats/oboInOwl#hasExactSynonym> <http://purl.obolibrary.org/obo/FOODON_00002610> "Prosecco grape"@en)
 AnnotationAssertion(rdfs:label <http://purl.obolibrary.org/obo/FOODON_00002610> "Glera grape plant"@en)
@@ -437,8 +437,8 @@ SubClassOf(<http://purl.obolibrary.org/obo/FOODON_00002610> <http://purl.obolibr
 
 AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000114> <http://purl.obolibrary.org/obo/FOODON_00002611> <http://purl.obolibrary.org/obo/IAO_0000122>)
 AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000115> <http://purl.obolibrary.org/obo/FOODON_00002611> "Prosecco is an Italian white wine varietal produced primarily from Glera grapes, but other grape varieties may be included. Prosecco controlled designation of origin can be spumante (\"sparkling wine\"), frizzante (\"semi-sparkling wine\"), or tranquillo (\"still wine\")."@en)
-AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000117> <http://purl.obolibrary.org/obo/FOODON_00002611> "Ginny Pichler")
 AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000119> <http://purl.obolibrary.org/obo/FOODON_00002611> "https://en.wikipedia.org/wiki/Prosecco")
+AnnotationAssertion(<http://purl.org/dc/terms/contributor> <http://purl.obolibrary.org/obo/FOODON_00002611> "Ginny Pichler")
 AnnotationAssertion(<http://schema.org/image> <http://purl.obolibrary.org/obo/FOODON_00002611> <https://upload.wikimedia.org/wikipedia/commons/thumb/c/ce/Prosecco_di_Conegliano_bottle_and_glass.jpg/151px-Prosecco_di_Conegliano_bottle_and_glass.jpg>)
 AnnotationAssertion(<http://www.geneontology.org/formats/oboInOwl#hasExactSynonym> <http://purl.obolibrary.org/obo/FOODON_00002611> "frizzante"@it)
 AnnotationAssertion(<http://www.geneontology.org/formats/oboInOwl#hasExactSynonym> <http://purl.obolibrary.org/obo/FOODON_00002611> "spumante"@it)
@@ -451,8 +451,8 @@ SubClassOf(<http://purl.obolibrary.org/obo/FOODON_00002611> ObjectSomeValuesFrom
 
 AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000114> <http://purl.obolibrary.org/obo/FOODON_00002612> <http://purl.obolibrary.org/obo/IAO_0000122>)
 AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000115> <http://purl.obolibrary.org/obo/FOODON_00002612> "Syrah wine is a white wine produced entirely from Syrah grapes.  The wines are often powerfully flavoured and full-bodied."@en)
-AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000117> <http://purl.obolibrary.org/obo/FOODON_00002612> "Ginny Pichler")
 AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000119> <http://purl.obolibrary.org/obo/FOODON_00002612> "https://en.wikipedia.org/wiki/Syrah#Shiraz_wines")
+AnnotationAssertion(<http://purl.org/dc/terms/contributor> <http://purl.obolibrary.org/obo/FOODON_00002612> "Ginny Pichler")
 AnnotationAssertion(<http://schema.org/image> <http://purl.obolibrary.org/obo/FOODON_00002612> <https://upload.wikimedia.org/wikipedia/commons/thumb/8/8e/Walla_walla_Syrah.jpg/179px-Walla_walla_Syrah.jpg>)
 AnnotationAssertion(rdfs:label <http://purl.obolibrary.org/obo/FOODON_00002612> "Syrah wine"@en)
 SubClassOf(<http://purl.obolibrary.org/obo/FOODON_00002612> <http://purl.obolibrary.org/obo/FOODON_03310272>)
@@ -462,8 +462,8 @@ SubClassOf(<http://purl.obolibrary.org/obo/FOODON_00002612> ObjectSomeValuesFrom
 
 AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000114> <http://purl.obolibrary.org/obo/FOODON_00002613> <http://purl.obolibrary.org/obo/IAO_0000122>)
 AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000115> <http://purl.obolibrary.org/obo/FOODON_00002613> "Syrah is a dark-skinned grape variety grown throughout the world and used primarily to produce red wine. In 1999, Syrah was found to be the offspring of two obscure grapes from southeastern France, Dureza and Mondeuse Blanche."@en)
-AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000117> <http://purl.obolibrary.org/obo/FOODON_00002613> "Ginny Pichler")
 AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000119> <http://purl.obolibrary.org/obo/FOODON_00002613> "https://en.wikipedia.org/wiki/Syrah")
+AnnotationAssertion(<http://purl.org/dc/terms/contributor> <http://purl.obolibrary.org/obo/FOODON_00002613> "Ginny Pichler")
 AnnotationAssertion(<http://schema.org/image> <http://purl.obolibrary.org/obo/FOODON_00002613> <https://upload.wikimedia.org/wikipedia/commons/thumb/e/eb/Shiraz_Grapes.jpg/320px-Shiraz_Grapes.jpg>)
 AnnotationAssertion(<http://www.geneontology.org/formats/oboInOwl#hasExactSynonym> <http://purl.obolibrary.org/obo/FOODON_00002613> "Shiraz"@en)
 AnnotationAssertion(rdfs:label <http://purl.obolibrary.org/obo/FOODON_00002613> "Syrah grape plant"@en)
@@ -473,8 +473,8 @@ SubClassOf(<http://purl.obolibrary.org/obo/FOODON_00002613> <http://purl.obolibr
 
 AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000114> <http://purl.obolibrary.org/obo/FOODON_00002614> <http://purl.obolibrary.org/obo/IAO_0000122>)
 AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000115> <http://purl.obolibrary.org/obo/FOODON_00002614> "Tempranillo wine is a red wine varietal produced entirely from Tempranillo grapes."@en)
-AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000117> <http://purl.obolibrary.org/obo/FOODON_00002614> "http://orcid.org/0000-0002-8844-9165")
 AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000119> <http://purl.obolibrary.org/obo/FOODON_00002614> "https://en.wikipedia.org/wiki/Tempranillo")
+AnnotationAssertion(<http://purl.org/dc/terms/contributor> <http://purl.obolibrary.org/obo/FOODON_00002614> "http://orcid.org/0000-0002-8844-9165")
 AnnotationAssertion(rdfs:label <http://purl.obolibrary.org/obo/FOODON_00002614> "Tempranillo wine"@en)
 SubClassOf(<http://purl.obolibrary.org/obo/FOODON_00002614> <http://purl.obolibrary.org/obo/FOODON_03310272>)
 SubClassOf(<http://purl.obolibrary.org/obo/FOODON_00002614> ObjectSomeValuesFrom(<http://purl.obolibrary.org/obo/RO_0001000> <http://purl.obolibrary.org/obo/FOODON_00002615>))
@@ -483,8 +483,8 @@ SubClassOf(<http://purl.obolibrary.org/obo/FOODON_00002614> ObjectSomeValuesFrom
 
 AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000114> <http://purl.obolibrary.org/obo/FOODON_00002615> <http://purl.obolibrary.org/obo/IAO_0000122>)
 AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000115> <http://purl.obolibrary.org/obo/FOODON_00002615> "Tempranillo is a black grape variety widely grown to make full-bodied red wines in its native Spain."@en)
-AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000117> <http://purl.obolibrary.org/obo/FOODON_00002615> "http://orcid.org/0000-0002-8844-9165")
 AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000119> <http://purl.obolibrary.org/obo/FOODON_00002615> "https://en.wikipedia.org/wiki/Tempranillo")
+AnnotationAssertion(<http://purl.org/dc/terms/contributor> <http://purl.obolibrary.org/obo/FOODON_00002615> "http://orcid.org/0000-0002-8844-9165")
 AnnotationAssertion(<http://www.geneontology.org/formats/oboInOwl#hasExactSynonym> <http://purl.obolibrary.org/obo/FOODON_00002615> "Aragonez"@pt)
 AnnotationAssertion(<http://www.geneontology.org/formats/oboInOwl#hasExactSynonym> <http://purl.obolibrary.org/obo/FOODON_00002615> "Cencibel"@es)
 AnnotationAssertion(<http://www.geneontology.org/formats/oboInOwl#hasExactSynonym> <http://purl.obolibrary.org/obo/FOODON_00002615> "Tinta Roriz"@pt)
@@ -497,8 +497,8 @@ SubClassOf(<http://purl.obolibrary.org/obo/FOODON_00002615> <http://purl.obolibr
 
 AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000114> <http://purl.obolibrary.org/obo/FOODON_00002617> <http://purl.obolibrary.org/obo/IAO_0000122>)
 AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000115> <http://purl.obolibrary.org/obo/FOODON_00002617> "Zinfandel wine is a red wine varietal produced entirely from Zinfandel grapes.  A classic wine is high in both alcohol and tannins, intensely flavored and deeply colored."@en)
-AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000117> <http://purl.obolibrary.org/obo/FOODON_00002617> "Ginny Pichler")
 AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000119> <http://purl.obolibrary.org/obo/FOODON_00002617> "https://www.wine-searcher.com/grape-391-primitivo")
+AnnotationAssertion(<http://purl.org/dc/terms/contributor> <http://purl.obolibrary.org/obo/FOODON_00002617> "Ginny Pichler")
 AnnotationAssertion(rdfs:label <http://purl.obolibrary.org/obo/FOODON_00002617> "Zinfandel wine"@en)
 SubClassOf(<http://purl.obolibrary.org/obo/FOODON_00002617> <http://purl.obolibrary.org/obo/FOODON_03310272>)
 SubClassOf(<http://purl.obolibrary.org/obo/FOODON_00002617> ObjectSomeValuesFrom(<http://purl.obolibrary.org/obo/RO_0001000> <http://purl.obolibrary.org/obo/FOODON_00002618>))
@@ -507,8 +507,8 @@ SubClassOf(<http://purl.obolibrary.org/obo/FOODON_00002617> ObjectSomeValuesFrom
 
 AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000114> <http://purl.obolibrary.org/obo/FOODON_00002618> <http://purl.obolibrary.org/obo/IAO_0000122>)
 AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000115> <http://purl.obolibrary.org/obo/FOODON_00002618> "Zinfandel is a variety of black-skinned wine grape."@en)
-AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000117> <http://purl.obolibrary.org/obo/FOODON_00002618> "Ginny Pichler")
 AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000119> <http://purl.obolibrary.org/obo/FOODON_00002618> "https://en.wikipedia.org/wiki/Zinfandel")
+AnnotationAssertion(<http://purl.org/dc/terms/contributor> <http://purl.obolibrary.org/obo/FOODON_00002618> "Ginny Pichler")
 AnnotationAssertion(<http://schema.org/image> <http://purl.obolibrary.org/obo/FOODON_00002618> <https://upload.wikimedia.org/wikipedia/commons/f/fc/Zinfandel_grapes.jpg>)
 AnnotationAssertion(<http://www.geneontology.org/formats/oboInOwl#hasExactSynonym> <http://purl.obolibrary.org/obo/FOODON_00002618> "Primitivo"@en)
 AnnotationAssertion(rdfs:label <http://purl.obolibrary.org/obo/FOODON_00002618> "Zinfandel grape plant"@en)
@@ -518,8 +518,8 @@ SubClassOf(<http://purl.obolibrary.org/obo/FOODON_00002618> <http://purl.obolibr
 
 AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000114> <http://purl.obolibrary.org/obo/FOODON_00002619> <http://purl.obolibrary.org/obo/IAO_0000122>)
 AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000115> <http://purl.obolibrary.org/obo/FOODON_00002619> "Frappato wine is a red wine varietal produced entirely from Frappato grapes.  As a varietal, Frappato produces light bodied wines with a distinct grapey aroma."@en)
-AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000117> <http://purl.obolibrary.org/obo/FOODON_00002619> "http://orcid.org/0000-0002-8844-9165")
 AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000119> <http://purl.obolibrary.org/obo/FOODON_00002619> "https://en.wikipedia.org/wiki/Frappato")
+AnnotationAssertion(<http://purl.org/dc/terms/contributor> <http://purl.obolibrary.org/obo/FOODON_00002619> "http://orcid.org/0000-0002-8844-9165")
 AnnotationAssertion(<http://www.geneontology.org/formats/oboInOwl#hasExactSynonym> <http://purl.obolibrary.org/obo/FOODON_00002619> "Frappato Nero"@it)
 AnnotationAssertion(<http://www.geneontology.org/formats/oboInOwl#hasExactSynonym> <http://purl.obolibrary.org/obo/FOODON_00002619> "Frappato Nero di Vittoria"@it)
 AnnotationAssertion(<http://www.geneontology.org/formats/oboInOwl#hasExactSynonym> <http://purl.obolibrary.org/obo/FOODON_00002619> "Frappatu"@it)
@@ -535,8 +535,8 @@ SubClassOf(<http://purl.obolibrary.org/obo/FOODON_00002619> ObjectSomeValuesFrom
 
 AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000114> <http://purl.obolibrary.org/obo/FOODON_00002620> <http://purl.obolibrary.org/obo/IAO_0000122>)
 AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000115> <http://purl.obolibrary.org/obo/FOODON_00002620> "Frappato di Vittoria or Frappato is a red Italian wine grape variety planted primarily in Sicily."@en)
-AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000117> <http://purl.obolibrary.org/obo/FOODON_00002620> "http://orcid.org/0000-0002-8844-9165")
 AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000119> <http://purl.obolibrary.org/obo/FOODON_00002620> "https://en.wikipedia.org/wiki/Frappato")
+AnnotationAssertion(<http://purl.org/dc/terms/contributor> <http://purl.obolibrary.org/obo/FOODON_00002620> "http://orcid.org/0000-0002-8844-9165")
 AnnotationAssertion(<http://www.geneontology.org/formats/oboInOwl#hasExactSynonym> <http://purl.obolibrary.org/obo/FOODON_00002620> "Frappato di Vittoria"@it)
 AnnotationAssertion(rdfs:label <http://purl.obolibrary.org/obo/FOODON_00002620> "Frappato grape plant"@en)
 SubClassOf(<http://purl.obolibrary.org/obo/FOODON_00002620> <http://purl.obolibrary.org/obo/NCBITaxon_29760>)
@@ -545,8 +545,8 @@ SubClassOf(<http://purl.obolibrary.org/obo/FOODON_00002620> <http://purl.obolibr
 
 AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000114> <http://purl.obolibrary.org/obo/FOODON_00002621> <http://purl.obolibrary.org/obo/IAO_0000122>)
 AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000115> <http://purl.obolibrary.org/obo/FOODON_00002621> "Gamay noir wine is a red wine varietal produced entirely from Gamay grapes."@en)
-AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000117> <http://purl.obolibrary.org/obo/FOODON_00002621> "http://orcid.org/0000-0002-8844-9165")
 AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000119> <http://purl.obolibrary.org/obo/FOODON_00002621> "https://en.wikipedia.org/wiki/Gamay")
+AnnotationAssertion(<http://purl.org/dc/terms/contributor> <http://purl.obolibrary.org/obo/FOODON_00002621> "http://orcid.org/0000-0002-8844-9165")
 AnnotationAssertion(rdfs:label <http://purl.obolibrary.org/obo/FOODON_00002621> "Gamay noir wine"@en)
 SubClassOf(<http://purl.obolibrary.org/obo/FOODON_00002621> <http://purl.obolibrary.org/obo/FOODON_03310272>)
 SubClassOf(<http://purl.obolibrary.org/obo/FOODON_00002621> ObjectSomeValuesFrom(<http://purl.obolibrary.org/obo/RO_0001000> <http://purl.obolibrary.org/obo/FOODON_00002622>))
@@ -555,8 +555,8 @@ SubClassOf(<http://purl.obolibrary.org/obo/FOODON_00002621> ObjectSomeValuesFrom
 
 AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000114> <http://purl.obolibrary.org/obo/FOODON_00002622> <http://purl.obolibrary.org/obo/IAO_0000122>)
 AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000115> <http://purl.obolibrary.org/obo/FOODON_00002622> "Gamay is a purple-colored grape variety used to make red wines, most notably grown in Beaujolais and in the Loire Valley around Tours."@en)
-AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000117> <http://purl.obolibrary.org/obo/FOODON_00002622> "http://orcid.org/0000-0002-8844-9165")
 AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000119> <http://purl.obolibrary.org/obo/FOODON_00002622> "https://en.wikipedia.org/wiki/Gamay")
+AnnotationAssertion(<http://purl.org/dc/terms/contributor> <http://purl.obolibrary.org/obo/FOODON_00002622> "http://orcid.org/0000-0002-8844-9165")
 AnnotationAssertion(<http://schema.org/image> <http://purl.obolibrary.org/obo/FOODON_00002622> <https://upload.wikimedia.org/wikipedia/commons/3/38/Gamay.jpg>)
 AnnotationAssertion(<http://www.geneontology.org/formats/oboInOwl#hasExactSynonym> <http://purl.obolibrary.org/obo/FOODON_00002622> "Gamay Noir à Jus Blanc"@fr)
 AnnotationAssertion(rdfs:label <http://purl.obolibrary.org/obo/FOODON_00002622> "Gamay grape plant"@en)
@@ -566,8 +566,8 @@ SubClassOf(<http://purl.obolibrary.org/obo/FOODON_00002622> <http://purl.obolibr
 
 AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000114> <http://purl.obolibrary.org/obo/FOODON_00002623> <http://purl.obolibrary.org/obo/IAO_0000122>)
 AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000115> <http://purl.obolibrary.org/obo/FOODON_00002623> "Gewürztraminerwine is a white wine varietal produced entirely from Gewürztraminer grapes."@en)
-AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000117> <http://purl.obolibrary.org/obo/FOODON_00002623> "http://orcid.org/0000-0002-8844-9165")
 AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000119> <http://purl.obolibrary.org/obo/FOODON_00002623> "https://en.wikipedia.org/wiki/Gew%C3%BCrztraminer")
+AnnotationAssertion(<http://purl.org/dc/terms/contributor> <http://purl.obolibrary.org/obo/FOODON_00002623> "http://orcid.org/0000-0002-8844-9165")
 AnnotationAssertion(rdfs:label <http://purl.obolibrary.org/obo/FOODON_00002623> "Gewürztraminer wine"@en)
 SubClassOf(<http://purl.obolibrary.org/obo/FOODON_00002623> <http://purl.obolibrary.org/obo/FOODON_03310273>)
 SubClassOf(<http://purl.obolibrary.org/obo/FOODON_00002623> ObjectSomeValuesFrom(<http://purl.obolibrary.org/obo/RO_0001000> <http://purl.obolibrary.org/obo/FOODON_00002624>))
@@ -576,8 +576,8 @@ SubClassOf(<http://purl.obolibrary.org/obo/FOODON_00002623> ObjectSomeValuesFrom
 
 AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000114> <http://purl.obolibrary.org/obo/FOODON_00002624> <http://purl.obolibrary.org/obo/IAO_0000122>)
 AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000115> <http://purl.obolibrary.org/obo/FOODON_00002624> "Gewürztraminer is an aromatic wine grape variety, used in white wines, and performs best in cooler climates."@en)
-AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000117> <http://purl.obolibrary.org/obo/FOODON_00002624> "http://orcid.org/0000-0002-8844-9165")
 AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000119> <http://purl.obolibrary.org/obo/FOODON_00002624> "https://en.wikipedia.org/wiki/Gew%C3%BCrztraminer")
+AnnotationAssertion(<http://purl.org/dc/terms/contributor> <http://purl.obolibrary.org/obo/FOODON_00002624> "http://orcid.org/0000-0002-8844-9165")
 AnnotationAssertion(<http://schema.org/image> <http://purl.obolibrary.org/obo/FOODON_00002624> <https://upload.wikimedia.org/wikipedia/en/thumb/1/11/Gewurztraminer_-_raisins_sur_pied_de_vigne.jpg/320px-Gewurztraminer_-_raisins_sur_pied_de_vigne.jpg>)
 AnnotationAssertion(<http://www.geneontology.org/formats/oboInOwl#hasExactSynonym> <http://purl.obolibrary.org/obo/FOODON_00002624> "Gewurztraminer"@fr)
 AnnotationAssertion(<http://www.geneontology.org/formats/oboInOwl#hasExactSynonym> <http://purl.obolibrary.org/obo/FOODON_00002624> "Gewürz"@en)
@@ -588,8 +588,8 @@ SubClassOf(<http://purl.obolibrary.org/obo/FOODON_00002624> <http://purl.obolibr
 
 AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000114> <http://purl.obolibrary.org/obo/FOODON_00002625> <http://purl.obolibrary.org/obo/IAO_0000122>)
 AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000115> <http://purl.obolibrary.org/obo/FOODON_00002625> "Carignane wine is a red wine varietal produced entirely from Carignane grapes."@en)
-AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000117> <http://purl.obolibrary.org/obo/FOODON_00002625> "http://orcid.org/0000-0002-8844-9165")
 AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000119> <http://purl.obolibrary.org/obo/FOODON_00002625> "https://en.wikipedia.org/wiki/Carignan")
+AnnotationAssertion(<http://purl.org/dc/terms/contributor> <http://purl.obolibrary.org/obo/FOODON_00002625> "http://orcid.org/0000-0002-8844-9165")
 AnnotationAssertion(rdfs:label <http://purl.obolibrary.org/obo/FOODON_00002625> "Carignane wine"@en)
 SubClassOf(<http://purl.obolibrary.org/obo/FOODON_00002625> <http://purl.obolibrary.org/obo/FOODON_03310272>)
 SubClassOf(<http://purl.obolibrary.org/obo/FOODON_00002625> ObjectSomeValuesFrom(<http://purl.obolibrary.org/obo/RO_0001000> <http://purl.obolibrary.org/obo/FOODON_00002626>))
@@ -598,8 +598,8 @@ SubClassOf(<http://purl.obolibrary.org/obo/FOODON_00002625> ObjectSomeValuesFrom
 
 AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000114> <http://purl.obolibrary.org/obo/FOODON_00002626> <http://purl.obolibrary.org/obo/IAO_0000122>)
 AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000115> <http://purl.obolibrary.org/obo/FOODON_00002626> "Carignan (also known as Carignane) is a red grape variety of Spanish origin that is more commonly found in French wine but is widely planted throughout the western Mediterranean and around the globe."@en)
-AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000117> <http://purl.obolibrary.org/obo/FOODON_00002626> "http://orcid.org/0000-0002-8844-9165")
 AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000119> <http://purl.obolibrary.org/obo/FOODON_00002626> "https://en.wikipedia.org/wiki/Carignan")
+AnnotationAssertion(<http://purl.org/dc/terms/contributor> <http://purl.obolibrary.org/obo/FOODON_00002626> "http://orcid.org/0000-0002-8844-9165")
 AnnotationAssertion(<http://schema.org/image> <http://purl.obolibrary.org/obo/FOODON_00002626> <https://upload.wikimedia.org/wikipedia/commons/thumb/7/77/Carignan_Viala_et_Vermorel.jpg/415px-Carignan_Viala_et_Vermorel.jpg>)
 AnnotationAssertion(<http://www.geneontology.org/formats/oboInOwl#hasExactSynonym> <http://purl.obolibrary.org/obo/FOODON_00002626> "Bovale Grande"@it)
 AnnotationAssertion(<http://www.geneontology.org/formats/oboInOwl#hasExactSynonym> <http://purl.obolibrary.org/obo/FOODON_00002626> "Carignano"@it)
@@ -614,8 +614,8 @@ SubClassOf(<http://purl.obolibrary.org/obo/FOODON_00002626> <http://purl.obolibr
 
 AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000114> <http://purl.obolibrary.org/obo/FOODON_00002627> <http://purl.obolibrary.org/obo/IAO_0000122>)
 AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000115> <http://purl.obolibrary.org/obo/FOODON_00002627> "Grenache wine is a red wine varietal produced entirely from Grenache grapes."@en)
-AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000117> <http://purl.obolibrary.org/obo/FOODON_00002627> "http://orcid.org/0000-0002-8844-9165")
 AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000119> <http://purl.obolibrary.org/obo/FOODON_00002627> "https://en.wikipedia.org/wiki/Grenache")
+AnnotationAssertion(<http://purl.org/dc/terms/contributor> <http://purl.obolibrary.org/obo/FOODON_00002627> "http://orcid.org/0000-0002-8844-9165")
 AnnotationAssertion(rdfs:label <http://purl.obolibrary.org/obo/FOODON_00002627> "Grenache wine"@en)
 SubClassOf(<http://purl.obolibrary.org/obo/FOODON_00002627> <http://purl.obolibrary.org/obo/FOODON_03310272>)
 SubClassOf(<http://purl.obolibrary.org/obo/FOODON_00002627> ObjectSomeValuesFrom(<http://purl.obolibrary.org/obo/RO_0001000> <http://purl.obolibrary.org/obo/FOODON_00002628>))
@@ -624,8 +624,8 @@ SubClassOf(<http://purl.obolibrary.org/obo/FOODON_00002627> ObjectSomeValuesFrom
 
 AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000114> <http://purl.obolibrary.org/obo/FOODON_00002628> <http://purl.obolibrary.org/obo/IAO_0000122>)
 AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000115> <http://purl.obolibrary.org/obo/FOODON_00002628> "Grenache is one of the most widely planted red wine grape varieties in the world."@en)
-AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000117> <http://purl.obolibrary.org/obo/FOODON_00002628> "http://orcid.org/0000-0002-8844-9165")
 AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000119> <http://purl.obolibrary.org/obo/FOODON_00002628> "https://en.wikipedia.org/wiki/Grenache")
+AnnotationAssertion(<http://purl.org/dc/terms/contributor> <http://purl.obolibrary.org/obo/FOODON_00002628> "http://orcid.org/0000-0002-8844-9165")
 AnnotationAssertion(<http://schema.org/image> <http://purl.obolibrary.org/obo/FOODON_00002628> <https://upload.wikimedia.org/wikipedia/commons/thumb/b/bd/Grenache_N.jpg/440px-Grenache_N.jpg>)
 AnnotationAssertion(<http://www.geneontology.org/formats/oboInOwl#hasExactSynonym> <http://purl.obolibrary.org/obo/FOODON_00002628> "Garnacha"@es)
 AnnotationAssertion(rdfs:label <http://purl.obolibrary.org/obo/FOODON_00002628> "Grenache grape plant"@en)
@@ -635,8 +635,8 @@ SubClassOf(<http://purl.obolibrary.org/obo/FOODON_00002628> <http://purl.obolibr
 
 AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000114> <http://purl.obolibrary.org/obo/FOODON_00002629> <http://purl.obolibrary.org/obo/IAO_0000122>)
 AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000115> <http://purl.obolibrary.org/obo/FOODON_00002629> "Barbera wine is a red wine varietal produced entirely from Barbera grapes."@en)
-AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000117> <http://purl.obolibrary.org/obo/FOODON_00002629> "http://orcid.org/0000-0002-8844-9165")
 AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000119> <http://purl.obolibrary.org/obo/FOODON_00002629> "https://en.wikipedia.org/wiki/Barbera")
+AnnotationAssertion(<http://purl.org/dc/terms/contributor> <http://purl.obolibrary.org/obo/FOODON_00002629> "http://orcid.org/0000-0002-8844-9165")
 AnnotationAssertion(rdfs:label <http://purl.obolibrary.org/obo/FOODON_00002629> "Barbera wine"@en)
 SubClassOf(<http://purl.obolibrary.org/obo/FOODON_00002629> <http://purl.obolibrary.org/obo/FOODON_03310272>)
 SubClassOf(<http://purl.obolibrary.org/obo/FOODON_00002629> ObjectSomeValuesFrom(<http://purl.obolibrary.org/obo/RO_0001000> <http://purl.obolibrary.org/obo/FOODON_00002630>))
@@ -645,8 +645,8 @@ SubClassOf(<http://purl.obolibrary.org/obo/FOODON_00002629> ObjectSomeValuesFrom
 
 AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000114> <http://purl.obolibrary.org/obo/FOODON_00002630> <http://purl.obolibrary.org/obo/IAO_0000122>)
 AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000115> <http://purl.obolibrary.org/obo/FOODON_00002630> "Barbera is a red Italian wine grape variety that, as of 2000, was the third most-planted red grape variety in Italy (after Sangiovese and Montepulciano). It produces good yields and is known for deep color, full body, low tannins and high levels of acid."@en)
-AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000117> <http://purl.obolibrary.org/obo/FOODON_00002630> "http://orcid.org/0000-0002-8844-9165")
 AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000119> <http://purl.obolibrary.org/obo/FOODON_00002630> "https://en.wikipedia.org/wiki/Barbera")
+AnnotationAssertion(<http://purl.org/dc/terms/contributor> <http://purl.obolibrary.org/obo/FOODON_00002630> "http://orcid.org/0000-0002-8844-9165")
 AnnotationAssertion(rdfs:label <http://purl.obolibrary.org/obo/FOODON_00002630> "Barbera grape plant"@en)
 SubClassOf(<http://purl.obolibrary.org/obo/FOODON_00002630> <http://purl.obolibrary.org/obo/NCBITaxon_29760>)
 
@@ -654,8 +654,8 @@ SubClassOf(<http://purl.obolibrary.org/obo/FOODON_00002630> <http://purl.obolibr
 
 AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000114> <http://purl.obolibrary.org/obo/FOODON_00002639> <http://purl.obolibrary.org/obo/IAO_0000122>)
 AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000115> <http://purl.obolibrary.org/obo/FOODON_00002639> "Zakynthos Wine is wine produced on the Greek island of Zakynthos (Zante) in the Ionian Sea. A wide array of native Ionian grape varieties have been planted on the island for centuries, and are most famously used to make the intensely flavored, highly acidic Verdea wine."@en)
-AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000117> <http://purl.obolibrary.org/obo/FOODON_00002639> "http://orcid.org/0000-0002-8844-9165")
 AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000119> <http://purl.obolibrary.org/obo/FOODON_00002639> "https://www.wine-searcher.com/regions-zakynthos")
+AnnotationAssertion(<http://purl.org/dc/terms/contributor> <http://purl.obolibrary.org/obo/FOODON_00002639> "http://orcid.org/0000-0002-8844-9165")
 AnnotationAssertion(<http://www.geneontology.org/formats/oboInOwl#hasExactSynonym> <http://purl.obolibrary.org/obo/FOODON_00002639> "zante wine"@en)
 AnnotationAssertion(rdfs:label <http://purl.obolibrary.org/obo/FOODON_00002639> "Zakynthos wine"@en)
 SubClassOf(<http://purl.obolibrary.org/obo/FOODON_00002639> <http://purl.obolibrary.org/obo/FOODON_00002577>)
@@ -664,8 +664,8 @@ SubClassOf(<http://purl.obolibrary.org/obo/FOODON_00002639> <http://purl.obolibr
 
 AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000114> <http://purl.obolibrary.org/obo/FOODON_00002640> <http://purl.obolibrary.org/obo/IAO_0000122>)
 AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000115> <http://purl.obolibrary.org/obo/FOODON_00002640> "The Cabernet Sauvignon grape plant originates from a cross between Cabernet Franc and Sauvignon blanc varieties. It produces Cabernet Sauvignon grapes, a red wine grape variety."@en)
-AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000117> <http://purl.obolibrary.org/obo/FOODON_00002640> "Emma Griffiths")
 AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000119> <http://purl.obolibrary.org/obo/FOODON_00002640> "https://en.wikipedia.org/wiki/Cabernet_Sauvignon")
+AnnotationAssertion(<http://purl.org/dc/terms/contributor> <http://purl.obolibrary.org/obo/FOODON_00002640> "Emma Griffiths")
 AnnotationAssertion(rdfs:label <http://purl.obolibrary.org/obo/FOODON_00002640> "Cabernet Sauvignon grape plant"@en)
 SubClassOf(<http://purl.obolibrary.org/obo/FOODON_00002640> <http://purl.obolibrary.org/obo/NCBITaxon_29760>)
 
@@ -673,8 +673,8 @@ SubClassOf(<http://purl.obolibrary.org/obo/FOODON_00002640> <http://purl.obolibr
 
 AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000114> <http://purl.obolibrary.org/obo/FOODON_00002641> <http://purl.obolibrary.org/obo/IAO_0000122>)
 AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000115> <http://purl.obolibrary.org/obo/FOODON_00002641> "Any wine produced in the Bordeaux region of southwest France."@en)
-AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000117> <http://purl.obolibrary.org/obo/FOODON_00002641> "http://orcid.org/0000-0002-8844-9165")
 AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000119> <http://purl.obolibrary.org/obo/FOODON_00002641> "https://en.wikipedia.org/wiki/Bordeaux_wine")
+AnnotationAssertion(<http://purl.org/dc/terms/contributor> <http://purl.obolibrary.org/obo/FOODON_00002641> "http://orcid.org/0000-0002-8844-9165")
 AnnotationAssertion(<http://www.geneontology.org/formats/oboInOwl#hasExactSynonym> <http://purl.obolibrary.org/obo/FOODON_00002641> "claret"@en-br)
 AnnotationAssertion(rdfs:label <http://purl.obolibrary.org/obo/FOODON_00002641> "Bordeaux wine"@en)
 SubClassOf(<http://purl.obolibrary.org/obo/FOODON_00002641> <http://purl.obolibrary.org/obo/FOODON_00002577>)
@@ -683,8 +683,8 @@ SubClassOf(<http://purl.obolibrary.org/obo/FOODON_00002641> <http://purl.obolibr
 
 AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000114> <http://purl.obolibrary.org/obo/FOODON_00002863> <http://purl.obolibrary.org/obo/IAO_0000122>)
 AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000115> <http://purl.obolibrary.org/obo/FOODON_00002863> "Blaufränkisch (German for blue Frankish) is a dark-skinned variety of grape used for red wine."@en)
-AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000117> <http://purl.obolibrary.org/obo/FOODON_00002863> "http://orcid.org/0000-0002-8844-9165")
 AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000119> <http://purl.obolibrary.org/obo/FOODON_00002863> "https://en.wikipedia.org/wiki/Blaufr%C3%A4nkisch")
+AnnotationAssertion(<http://purl.org/dc/terms/contributor> <http://purl.obolibrary.org/obo/FOODON_00002863> "http://orcid.org/0000-0002-8844-9165")
 AnnotationAssertion(<http://www.geneontology.org/formats/oboInOwl#hasExactSynonym> <http://purl.obolibrary.org/obo/FOODON_00002863> "Blauer Limberger"@ge)
 AnnotationAssertion(<http://www.geneontology.org/formats/oboInOwl#hasExactSynonym> <http://purl.obolibrary.org/obo/FOODON_00002863> "Blaufränkisch grape"@ge)
 AnnotationAssertion(<http://www.geneontology.org/formats/oboInOwl#hasExactSynonym> <http://purl.obolibrary.org/obo/FOODON_00002863> "Blue Limberger"@ge)
@@ -696,8 +696,8 @@ SubClassOf(<http://purl.obolibrary.org/obo/FOODON_00002863> <http://purl.obolibr
 
 AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000114> <http://purl.obolibrary.org/obo/FOODON_00002864> <http://purl.obolibrary.org/obo/IAO_0000122>)
 AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000115> <http://purl.obolibrary.org/obo/FOODON_00002864> "A red wine varietal produced entirely from Blaufränkisch grapes."@en)
-AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000117> <http://purl.obolibrary.org/obo/FOODON_00002864> "http://orcid.org/0000-0002-8844-9165")
 AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000119> <http://purl.obolibrary.org/obo/FOODON_00002864> "https://en.wikipedia.org/wiki/Blaufr%C3%A4nkisch")
+AnnotationAssertion(<http://purl.org/dc/terms/contributor> <http://purl.obolibrary.org/obo/FOODON_00002864> "http://orcid.org/0000-0002-8844-9165")
 AnnotationAssertion(rdfs:label <http://purl.obolibrary.org/obo/FOODON_00002864> "Blaufränkisch wine"@en)
 SubClassOf(<http://purl.obolibrary.org/obo/FOODON_00002864> <http://purl.obolibrary.org/obo/FOODON_03310272>)
 SubClassOf(<http://purl.obolibrary.org/obo/FOODON_00002864> ObjectSomeValuesFrom(<http://purl.obolibrary.org/obo/RO_0001000> <http://purl.obolibrary.org/obo/FOODON_00002863>))
@@ -706,8 +706,8 @@ SubClassOf(<http://purl.obolibrary.org/obo/FOODON_00002864> ObjectSomeValuesFrom
 
 AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000114> <http://purl.obolibrary.org/obo/FOODON_00002868> <http://purl.obolibrary.org/obo/IAO_0000122>)
 AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000115> <http://purl.obolibrary.org/obo/FOODON_00002868> "A red wine grape plant variety that is grown in many regions around the world including the Rhône and Provence regions of France, the Valencia and Jumilla denominaciones de origen of Spain, as well as the Balearic Islands, California and Washington and the Australian regions of South Australia and New South Wales, as well as South Africa."@en)
-AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000117> <http://purl.obolibrary.org/obo/FOODON_00002868> "http://orcid.org/0000-0002-8844-9165")
 AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000119> <http://purl.obolibrary.org/obo/FOODON_00002868> "https://en.wikipedia.org/wiki/Mourv%C3%A8dre")
+AnnotationAssertion(<http://purl.org/dc/terms/contributor> <http://purl.obolibrary.org/obo/FOODON_00002868> "http://orcid.org/0000-0002-8844-9165")
 AnnotationAssertion(<http://schema.org/image> <http://purl.obolibrary.org/obo/FOODON_00002868> <https://upload.wikimedia.org/wikipedia/commons/thumb/c/c6/Balzac_noir-mourvedre.jpg/451px-Balzac_noir-mourvedre.jpg>)
 AnnotationAssertion(<http://www.geneontology.org/formats/oboInOwl#hasExactSynonym> <http://purl.obolibrary.org/obo/FOODON_00002868> "Mataró"@en)
 AnnotationAssertion(<http://www.geneontology.org/formats/oboInOwl#hasExactSynonym> <http://purl.obolibrary.org/obo/FOODON_00002868> "Monastrell"@en)
@@ -719,8 +719,8 @@ SubClassOf(<http://purl.obolibrary.org/obo/FOODON_00002868> <http://purl.obolibr
 # Class: <http://purl.obolibrary.org/obo/FOODON_00002869> (Mourvèdre wine)
 
 AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000114> <http://purl.obolibrary.org/obo/FOODON_00002869> <http://purl.obolibrary.org/obo/IAO_0000122>)
-AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000117> <http://purl.obolibrary.org/obo/FOODON_00002869> "http://orcid.org/0000-0002-8844-9165")
 AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000119> <http://purl.obolibrary.org/obo/FOODON_00002869> "https://en.wikipedia.org/wiki/Mourv%C3%A8dre")
+AnnotationAssertion(<http://purl.org/dc/terms/contributor> <http://purl.obolibrary.org/obo/FOODON_00002869> "http://orcid.org/0000-0002-8844-9165")
 AnnotationAssertion(rdfs:label <http://purl.obolibrary.org/obo/FOODON_00002869> "Mourvèdre wine"@en)
 SubClassOf(<http://purl.obolibrary.org/obo/FOODON_00002869> <http://purl.obolibrary.org/obo/FOODON_03310272>)
 SubClassOf(<http://purl.obolibrary.org/obo/FOODON_00002869> ObjectSomeValuesFrom(<http://purl.obolibrary.org/obo/RO_0001000> <http://purl.obolibrary.org/obo/FOODON_00002868>))
@@ -824,12 +824,12 @@ AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000119> <http://purl.ob
 AnnotationAssertion(rdfs:comment <http://purl.obolibrary.org/obo/FOODON_00004055> "In wines, it parallels the hierarchical systems of France (1935) and Italy (1963), although Rioja (1925) and Jerez (1933) preceded the full system.[https://en.wikipedia.org/wiki/Denominaci%C3%B3n_de_origen]"@en)
 AnnotationAssertion(rdfs:label <http://purl.obolibrary.org/obo/FOODON_00004055> "Denominación de origen"@en)
 
-# Class: <http://purl.obolibrary.org/obo/FOODON_00004056> (spanish wine production framework)
+# Class: <http://purl.obolibrary.org/obo/FOODON_00004056> (Spanish wine production framework)
 
 AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000115> <http://purl.obolibrary.org/obo/FOODON_00004056> "A food product appellaction framework pertaining to Spanish wine."@en)
 AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000119> <http://purl.obolibrary.org/obo/FOODON_00004056> " https://en.wikipedia.org/wiki/Spanish_wine_regions")
 AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000119> <http://purl.obolibrary.org/obo/FOODON_00004056> "https://en.wikipedia.org/wiki/Denominaci%C3%B3n_de_origen#Wine ")
-AnnotationAssertion(rdfs:label <http://purl.obolibrary.org/obo/FOODON_00004056> "spanish wine production framework"@en)
+AnnotationAssertion(rdfs:label <http://purl.obolibrary.org/obo/FOODON_00004056> "Spanish wine production framework"@en)
 SubClassOf(<http://purl.obolibrary.org/obo/FOODON_00004056> <http://purl.obolibrary.org/obo/FOODON_03530087>)
 
 # Class: <http://purl.obolibrary.org/obo/FOODON_00004057> (Denominación de Origen Protegida)
@@ -938,9 +938,9 @@ SubClassOf(<http://purl.obolibrary.org/obo/FOODON_03307296> <http://purl.obolibr
 # Class: <http://purl.obolibrary.org/obo/FOODON_03310272> (red wine)
 
 AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000115> <http://purl.obolibrary.org/obo/FOODON_03310272> "A type of wine made from dark-colored grape varieties."@en)
-AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000117> <http://purl.obolibrary.org/obo/FOODON_03310272> " http://orcid.org/0000-0002-4366-3088 ")
-AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000117> <http://purl.obolibrary.org/obo/FOODON_03310272> "http://orcid.org/0000-0002-1816-4260 ")
 AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000119> <http://purl.obolibrary.org/obo/FOODON_03310272> "https://en.wikipedia.org/wiki/Red_wine")
+AnnotationAssertion(<http://purl.org/dc/terms/contributor> <http://purl.obolibrary.org/obo/FOODON_03310272> " http://orcid.org/0000-0002-4366-3088 ")
+AnnotationAssertion(<http://purl.org/dc/terms/contributor> <http://purl.obolibrary.org/obo/FOODON_03310272> "http://orcid.org/0000-0002-1816-4260 ")
 AnnotationAssertion(<http://www.geneontology.org/formats/oboInOwl#hasDbXref> <http://purl.obolibrary.org/obo/FOODON_03310272> "SUBSET_SIREN:F10272")
 AnnotationAssertion(rdfs:comment <http://purl.obolibrary.org/obo/FOODON_03310272> "The actual color of the wine can range from intense violet, typical of young wines, through to brick red for mature wines and brown for older red wines.\"[https://en.wikipedia.org/wiki/Red_wine]"@en)
 AnnotationAssertion(rdfs:label <http://purl.obolibrary.org/obo/FOODON_03310272> "red wine"@en)
@@ -950,9 +950,9 @@ SubClassOf(<http://purl.obolibrary.org/obo/FOODON_03310272> ObjectSomeValuesFrom
 # Class: <http://purl.obolibrary.org/obo/FOODON_03310273> (white wine)
 
 AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000115> <http://purl.obolibrary.org/obo/FOODON_03310273> "A wine that is fermented with little or no grape skin contact."@en)
-AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000117> <http://purl.obolibrary.org/obo/FOODON_03310273> " http://orcid.org/0000-0002-4366-3088 ")
-AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000117> <http://purl.obolibrary.org/obo/FOODON_03310273> "http://orcid.org/0000-0002-1816-4260 ")
 AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000119> <http://purl.obolibrary.org/obo/FOODON_03310273> "https://en.wikipedia.org/wiki/White_wine")
+AnnotationAssertion(<http://purl.org/dc/terms/contributor> <http://purl.obolibrary.org/obo/FOODON_03310273> " http://orcid.org/0000-0002-4366-3088 ")
+AnnotationAssertion(<http://purl.org/dc/terms/contributor> <http://purl.obolibrary.org/obo/FOODON_03310273> "http://orcid.org/0000-0002-1816-4260 ")
 AnnotationAssertion(<http://www.geneontology.org/formats/oboInOwl#hasDbXref> <http://purl.obolibrary.org/obo/FOODON_03310273> "SUBSET_SIREN:F10273")
 AnnotationAssertion(rdfs:comment <http://purl.obolibrary.org/obo/FOODON_03310273> "A wine whose color can be straw-yellow, yellow-green, or yellow-gold. It is produced by the alcoholic fermentation of the non-coloured pulp of grapes, which may have a skin of any colour."@en)
 AnnotationAssertion(rdfs:label <http://purl.obolibrary.org/obo/FOODON_03310273> "white wine"@en)
@@ -973,8 +973,8 @@ SubClassOf(<http://purl.obolibrary.org/obo/FOODON_03310734> <http://purl.obolibr
 
 AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000114> <http://purl.obolibrary.org/obo/FOODON_03311123> <http://purl.obolibrary.org/obo/IAO_0000122>)
 AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000115> <http://purl.obolibrary.org/obo/FOODON_03311123> "Chablis wine is a wine made in the Chablis region of France."@en)
-AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000117> <http://purl.obolibrary.org/obo/FOODON_03311123> "Emma Griffiths")
 AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000119> <http://purl.obolibrary.org/obo/FOODON_03311123> "https://en.wikipedia.org/wiki/Chablis_wine")
+AnnotationAssertion(<http://purl.org/dc/terms/contributor> <http://purl.obolibrary.org/obo/FOODON_03311123> "Emma Griffiths")
 AnnotationAssertion(rdfs:label <http://purl.obolibrary.org/obo/FOODON_03311123> "Chablis wine"@en)
 SubClassOf(<http://purl.obolibrary.org/obo/FOODON_03311123> <http://purl.obolibrary.org/obo/FOODON_00002577>)
 
@@ -982,8 +982,8 @@ SubClassOf(<http://purl.obolibrary.org/obo/FOODON_03311123> <http://purl.obolibr
 
 AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000114> <http://purl.obolibrary.org/obo/FOODON_03311270> <http://purl.obolibrary.org/obo/IAO_0000122>)
 AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000115> <http://purl.obolibrary.org/obo/FOODON_03311270> "A French Appellation d'Origine Contrôlée (AOC) wine generally made of the Gamay grape which has a thin skin and is low in tannins."@en)
-AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000117> <http://purl.obolibrary.org/obo/FOODON_03311270> "http://orcid.org/0000-0002-8844-9165")
 AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000119> <http://purl.obolibrary.org/obo/FOODON_03311270> "https://en.wikipedia.org/wiki/Beaujolais")
+AnnotationAssertion(<http://purl.org/dc/terms/contributor> <http://purl.obolibrary.org/obo/FOODON_03311270> "http://orcid.org/0000-0002-8844-9165")
 AnnotationAssertion(<http://schema.org/image> <http://purl.obolibrary.org/obo/FOODON_03311270> <https://upload.wikimedia.org/wikipedia/commons/thumb/d/d8/Carte_vignoble_beaujolais.png/356px-Carte_vignoble_beaujolais.png>)
 AnnotationAssertion(rdfs:label <http://purl.obolibrary.org/obo/FOODON_03311270> "Beaujolais wine"@en)
 SubClassOf(<http://purl.obolibrary.org/obo/FOODON_03311270> <http://purl.obolibrary.org/obo/FOODON_00002577>)
