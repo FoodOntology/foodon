@@ -3699,7 +3699,7 @@ AnnotationAssertion(<http://www.geneontology.org/formats/oboInOwl#hasExactSynony
 AnnotationAssertion(rdfs:label <http://purl.obolibrary.org/obo/FOODON_00003572> "root vegetable"@en)
 SubClassOf(<http://purl.obolibrary.org/obo/FOODON_00003572> <http://purl.obolibrary.org/obo/FOODON_03420239>)
 
-# Class: <http://purl.obolibrary.org/obo/FOODON_00003573> (artichoke)
+# Class: <http://purl.obolibrary.org/obo/FOODON_00003573> (artichoke head)
 
 AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000115> <http://purl.obolibrary.org/obo/FOODON_00003573> "An inflorescence of an artichoke plant (Cynara cardunculus var. scolymus)."@en)
 AnnotationAssertion(<http://purl.org/dc/terms/contributor> <http://purl.obolibrary.org/obo/FOODON_00003573> "https://orcid.org/0000-0001-5275-8866")
@@ -3707,7 +3707,7 @@ AnnotationAssertion(<http://purl.org/dc/terms/date> <http://purl.obolibrary.org/
 AnnotationAssertion(<http://www.geneontology.org/formats/oboInOwl#hasExactSynonym> <http://purl.obolibrary.org/obo/FOODON_00003573> "french artichoke"@en)
 AnnotationAssertion(<http://www.geneontology.org/formats/oboInOwl#hasExactSynonym> <http://purl.obolibrary.org/obo/FOODON_00003573> "globe artichoke"@en)
 AnnotationAssertion(<http://www.geneontology.org/formats/oboInOwl#hasExactSynonym> <http://purl.obolibrary.org/obo/FOODON_00003573> "green artichoke"@en)
-AnnotationAssertion(rdfs:label <http://purl.obolibrary.org/obo/FOODON_00003573> "artichoke"@en)
+AnnotationAssertion(rdfs:label <http://purl.obolibrary.org/obo/FOODON_00003573> "artichoke head"@en)
 EquivalentClasses(<http://purl.obolibrary.org/obo/FOODON_00003573> ObjectIntersectionOf(<http://purl.obolibrary.org/obo/PO_0009049> ObjectSomeValuesFrom(<http://purl.obolibrary.org/obo/RO_0002162> <http://purl.obolibrary.org/obo/NCBITaxon_59895>)))
 SubClassOf(<http://purl.obolibrary.org/obo/FOODON_00003573> <http://purl.obolibrary.org/obo/PO_0009049>)
 
@@ -7716,7 +7716,7 @@ AnnotationAssertion(<http://purl.org/dc/terms/date> <http://purl.obolibrary.org/
 AnnotationAssertion(rdfs:label <http://purl.obolibrary.org/obo/FOODON_00004445> "golden acorn squash (raw)"@en)
 SubClassOf(<http://purl.obolibrary.org/obo/FOODON_00004445> <http://purl.obolibrary.org/obo/FOODON_00004442>)
 
-# Class: <http://purl.obolibrary.org/obo/FOODON_00004446> (Mexican grey squash)
+# Class: <http://purl.obolibrary.org/obo/FOODON_00004446> (mexican grey squash)
 
 AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000115> <http://purl.obolibrary.org/obo/FOODON_00004446> "A whole Mexican grey squash."@en)
 AnnotationAssertion(<http://purl.org/dc/terms/contributor> <http://purl.obolibrary.org/obo/FOODON_00004446> "https://orcid.org/0000-0002-8844-9165")
@@ -7726,7 +7726,7 @@ AnnotationAssertion(rdfs:label <http://purl.obolibrary.org/obo/FOODON_00004446> 
 SubClassOf(<http://purl.obolibrary.org/obo/FOODON_00004446> <http://purl.obolibrary.org/obo/FOODON_00003708>)
 SubClassOf(<http://purl.obolibrary.org/obo/FOODON_00004446> <http://purl.obolibrary.org/obo/FOODON_00003946>)
 
-# Class: <http://purl.obolibrary.org/obo/FOODON_00004447> (Mexican grey squash (raw))
+# Class: <http://purl.obolibrary.org/obo/FOODON_00004447> (mexican grey squash (raw))
 
 AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000115> <http://purl.obolibrary.org/obo/FOODON_00004447> "A whole Mexican grey squash which is raw."@en)
 AnnotationAssertion(<http://purl.org/dc/terms/contributor> <http://purl.obolibrary.org/obo/FOODON_00004447> "https://orcid.org/0000-0002-8844-9165")

@@ -41,10 +41,10 @@ http://purl.obolibrary.org/obo/OBI_0100026 # organism
 includeAllChildren
 
 http://purl.obolibrary.org/obo/OBI_0000245 # organization
-http://purl.obolibrary.org/obo/OBI_0000047 # processed material entity
+# http://purl.obolibrary.org/obo/OBI_0000047 # processed material entity # label different from OBI issue
 
 http://purl.obolibrary.org/obo/BFO_0000015 # process
-includeAllChildren
+http://purl.obolibrary.org/obo/COB_0000083 # failed process
 
 # OBJECT AND DATA PROPERTIES.  Some are only in COB, not in RO.
 

@@ -5178,7 +5178,7 @@ Declaration(AnnotationProperty(oboInOwl:hasExactSynonym))
 
 AnnotationAssertion(rdfs:label obo:IAO_0000412 "imported from"@en)
 
-# Annotation Property: oboInOwl:hasExactSynonym (has_exact_synonym)
+# Annotation Property: oboInOwl:hasExactSynonym (has exact synonym)
 
 AnnotationAssertion(rdfs:label oboInOwl:hasExactSynonym "has_exact_synonym")
 
@@ -20917,7 +20917,7 @@ AnnotationAssertion(obo:IAO_0000412 obo:NCBITaxon_3395 obo:ncbitaxon.owl)
 AnnotationAssertion(rdfs:label obo:NCBITaxon_3395 "Cycas")
 SubClassOf(obo:NCBITaxon_3395 obo:NCBITaxon_3394)
 
-# Class: obo:NCBITaxon_3398 (Magnoliopsida)
+# Class: obo:NCBITaxon_3398 (Magnoliophyta)
 
 AnnotationAssertion(obo:IAO_0000412 obo:NCBITaxon_3398 obo:ncbitaxon.owl)
 AnnotationAssertion(oboInOwl:hasExactSynonym obo:NCBITaxon_3398 "angiosperms")
@@ -29999,7 +29999,7 @@ AnnotationAssertion(oboInOwl:hasExactSynonym obo:NCBITaxon_55521 "veined rapa wh
 AnnotationAssertion(rdfs:label obo:NCBITaxon_55521 "Rapana venosa")
 SubClassOf(obo:NCBITaxon_55521 obo:NCBITaxon_39476)
 
-# Class: obo:NCBITaxon_555253 (Fulica ardesiaca)
+# Class: obo:NCBITaxon_555253 (Focha andina)
 
 AnnotationAssertion(obo:IAO_0000412 obo:NCBITaxon_555253 obo:ncbitaxon.owl)
 AnnotationAssertion(rdfs:label obo:NCBITaxon_555253 "Fulica ardesiaca")
@@ -30967,7 +30967,6 @@ AnnotationAssertion(obo:IAO_0000412 obo:NCBITaxon_59895 obo:ncbitaxon.owl)
 AnnotationAssertion(oboInOwl:hasExactSynonym obo:NCBITaxon_59895 "artichoke")
 AnnotationAssertion(oboInOwl:hasExactSynonym obo:NCBITaxon_59895 "globe artichoke")
 AnnotationAssertion(rdfs:label obo:NCBITaxon_59895 "Cynara cardunculus var. scolymus")
-SubClassOf(obo:NCBITaxon_59895 obo:NCBITaxon_4265)
 
 # Class: obo:NCBITaxon_59896 (Ovis vignei)
 
