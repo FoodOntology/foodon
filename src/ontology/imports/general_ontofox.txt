@@ -10,6 +10,8 @@ OBI
 [Low level source term URIs] 
 http://purl.obolibrary.org/obo/OBI_0100026 # organism
 
+http://purl.obolibrary.org/obo/OBI_0000293 # has specified input
+http://purl.obolibrary.org/obo/OBI_0000299 # has specified output
 http://purl.obolibrary.org/obo/OBI_0000312 # is_specified_output_of
 http://purl.obolibrary.org/obo/OBI_0000295 # is_specified_input_of
 http://purl.obolibrary.org/obo/IAO_0000007 # action specification
@@ -371,6 +373,11 @@ http://purl.obolibrary.org/obo/ENVO_00000292 #  terrain - watershed
 http://purl.obolibrary.org/obo/ENVO_00000043 #    terrain - wetland
 http://purl.obolibrary.org/obo/ENVO_00000109 #    terrain - woodland
 
+http://purl.obolibrary.org/obo/ENVO_2000032 # thermal energy
+
+http://purl.obolibrary.org/obo/ENVO_03501267 # peeler
+http://purl.obolibrary.org/obo/ENVO_01000990 # sink fixture
+
 [Top level source term URIs and target direct superclass URIs]
 http://purl.obolibrary.org/obo/IAO_0000030 # information
 http://purl.obolibrary.org/obo/PATO_0000001 # characteristic
@@ -460,6 +467,11 @@ includeAllChildren
 http://purl.obolibrary.org/obo/NCIT_C14238 # Mouse
 http://purl.obolibrary.org/obo/NCIT_C14212 # Hamster
 http://purl.obolibrary.org/obo/NCIT_C14191 # cat
+
+http://purl.obolibrary.org/obo/NCIT_C54021 # Knife Device
+
+http://purl.obolibrary.org/obo/NCIT_C94729
+includeAllChildren
 
 [Top level source term URIs and target direct superclass URIs]
 
