@@ -614,9 +614,9 @@ AnnotationAssertion(rdfs:label <http://purl.obolibrary.org/obo/FOODON_00004075> 
 SubClassOf(<http://purl.obolibrary.org/obo/FOODON_00004075> <http://purl.obolibrary.org/obo/FOODON_00004069>)
 SubClassOf(<http://purl.obolibrary.org/obo/FOODON_00004075> ObjectSomeValuesFrom(<http://purl.obolibrary.org/obo/OBI_0000293> <http://purl.obolibrary.org/obo/FOODON_00003417>))
 
-# Class: <http://purl.obolibrary.org/obo/FOODON_00004078> (adding substance to container)
+# Class: <http://purl.obolibrary.org/obo/FOODON_00004078> (adding material to container)
 
-AnnotationAssertion(rdfs:label <http://purl.obolibrary.org/obo/FOODON_00004078> "adding substance to container"@en)
+AnnotationAssertion(rdfs:label <http://purl.obolibrary.org/obo/FOODON_00004078> "adding material to container"@en)
 SubClassOf(<http://purl.obolibrary.org/obo/FOODON_00004078> <http://purl.obolibrary.org/obo/FOODON_03460225>)
 SubClassOf(<http://purl.obolibrary.org/obo/FOODON_00004078> ObjectSomeValuesFrom(<http://purl.obolibrary.org/obo/OBI_0000293> <http://purl.obolibrary.org/obo/OBI_0000967>))
 
@@ -632,7 +632,7 @@ AnnotationAssertion(rdfs:label <http://purl.obolibrary.org/obo/FOODON_00004080> 
 SubClassOf(<http://purl.obolibrary.org/obo/FOODON_00004080> <http://purl.obolibrary.org/obo/FOODON_00004078>)
 SubClassOf(<http://purl.obolibrary.org/obo/FOODON_00004080> ObjectSomeValuesFrom(<http://purl.obolibrary.org/obo/OBI_0000293> <http://purl.obolibrary.org/obo/OBI_0000967>))
 
-# Class: <http://purl.obolibrary.org/obo/FOODON_00004088> (direct heating of container)
+# Class: <http://purl.obolibrary.org/obo/FOODON_00004088> (heating of container)
 
 AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000115> <http://purl.obolibrary.org/obo/FOODON_00004088> "A heating container process in which the container conducts heat by being in proximity to an open flame, a hot surface or an oven."@en)
 AnnotationAssertion(rdfs:comment <http://purl.obolibrary.org/obo/FOODON_00004088> "The challenge here is to make a clean distinction between methods that immerse a cooking container in water or steam vs those that don't."@en)
