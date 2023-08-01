@@ -22,6 +22,12 @@ robot template --template animals.tsv\
   --ontology-iri "http://purl.obolibrary.org/obo/foodon/imports/robot_animals.ofn" \
   --output ../robot_animals.ofn
 
+robot template --template meat_cuts.tsv\
+  --prefix "dcterms:http://purl.org/dc/terms/" \
+  --input "../../foodon-merged.ofn" \
+  --ontology-iri "http://purl.obolibrary.org/obo/foodon/imports/robot_meat_cuts.ofn" \
+  --output ../robot_meat_cuts.ofn
+
 robot template --template dietary_supplement.tsv\
   --prefix "dcterms:http://purl.org/dc/terms/" \
   --input "../../foodon-merged.ofn" \

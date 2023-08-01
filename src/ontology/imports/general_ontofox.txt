@@ -571,27 +571,6 @@ http://purl.obolibrary.org/obo/IAO_0000114
 http://purl.obolibrary.org/obo/IAO_0000119
 http://purl.obolibrary.org/obo/OBI_0001886
 
-###########################################
-# NOT IN OBOFoundry
-#[Source ontology]
-#MSIO
-#
-#[Low level source term URIs]
-#http://purl.obolibrary.org/obo/MSIO_0000167 # fermenter
-#
-#[Top level source term URIs and target direct superclass URIs]
-#http://purl.obolibrary.org/obo/BFO_0000001
-#
-#[Source term retrieval setting]
-#includeAllIntermediates
-#
-#[Source annotation URIs]
-#http://www.w3.org/2000/01/rdf-schema#label
-#http://purl.obolibrary.org/obo/IAO_0000115 
-#http://purl.obolibrary.org/obo/IAO_0000111
-#http://purl.obolibrary.org/obo/IAO_0000114
-#http://purl.obolibrary.org/obo/IAO_0000119
-#http://purl.obolibrary.org/obo/OBI_0001886
 
 ###########################################
 
@@ -1021,10 +1000,6 @@ http://purl.obolibrary.org/obo/UBERON_0001988 # feces
 [Top level source term URIs and target direct superclass URIs]
 http://purl.obolibrary.org/obo/UBERON_0000104 # life cycle
 http://purl.obolibrary.org/obo/UBERON_0001062 # anatomical entity
-
-# Oddly UBERON roots lots of terms to CARO_0000000 which itself has parent "independent continuant"
-http://purl.obolibrary.org/obo/CARO_0000000 # anatomical entity DUPLICATE!
-subClassOf http://purl.obolibrary.org/obo/BFO_0000040 # material entity
 
 http://purl.obolibrary.org/obo/IAO_0000030 # information
 http://purl.obolibrary.org/obo/PATO_0000001 # characteristic
