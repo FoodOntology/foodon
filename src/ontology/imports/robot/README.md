@@ -28,6 +28,12 @@ robot template --template meat_cuts.tsv\
   --ontology-iri "http://purl.obolibrary.org/obo/foodon/imports/robot_meat_cuts.ofn" \
   --output ../robot_meat_cuts.ofn
 
+robot template --template animal_parts.tsv\
+  --prefix "dcterms:http://purl.org/dc/terms/" \
+  --input "../../foodon-merged.ofn" \
+  --ontology-iri "http://purl.obolibrary.org/obo/foodon/imports/animal_parts.ofn" \
+  --output ../robot_animal_parts.ofn
+
 robot template --template dietary_supplement.tsv\
   --prefix "dcterms:http://purl.org/dc/terms/" \
   --input "../../foodon-merged.ofn" \

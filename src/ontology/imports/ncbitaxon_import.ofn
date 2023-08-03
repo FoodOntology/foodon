@@ -2267,6 +2267,7 @@ Declaration(Class(obo:NCBITaxon_331523))
 Declaration(Class(obo:NCBITaxon_331524))
 Declaration(Class(obo:NCBITaxon_33154))
 Declaration(Class(obo:NCBITaxon_3318))
+Declaration(Class(obo:NCBITaxon_33208))
 Declaration(Class(obo:NCBITaxon_33213))
 Declaration(Class(obo:NCBITaxon_3329))
 Declaration(Class(obo:NCBITaxon_332922))
@@ -5178,7 +5179,7 @@ Declaration(AnnotationProperty(oboInOwl:hasExactSynonym))
 
 AnnotationAssertion(rdfs:label obo:IAO_0000412 "imported from"@en)
 
-# Annotation Property: oboInOwl:hasExactSynonym (has exact synonym)
+# Annotation Property: oboInOwl:hasExactSynonym (has_exact_synonym)
 
 AnnotationAssertion(rdfs:label oboInOwl:hasExactSynonym "has_exact_synonym")
 
@@ -20436,6 +20437,14 @@ AnnotationAssertion(oboInOwl:hasExactSynonym obo:NCBITaxon_3318 "pine family")
 AnnotationAssertion(rdfs:label obo:NCBITaxon_3318 "Pinaceae")
 SubClassOf(obo:NCBITaxon_3318 obo:NCBITaxon_3313)
 
+# Class: obo:NCBITaxon_33208 (Metazoa)
+
+AnnotationAssertion(obo:IAO_0000412 obo:NCBITaxon_33208 obo:ncbitaxon.owl)
+AnnotationAssertion(oboInOwl:hasExactSynonym obo:NCBITaxon_33208 "metazoans")
+AnnotationAssertion(oboInOwl:hasExactSynonym obo:NCBITaxon_33208 "multicellular animals")
+AnnotationAssertion(rdfs:label obo:NCBITaxon_33208 "Metazoa")
+SubClassOf(obo:NCBITaxon_33208 obo:NCBITaxon_33154)
+
 # Class: obo:NCBITaxon_33213 (Bilateria)
 
 AnnotationAssertion(obo:IAO_0000412 obo:NCBITaxon_33213 obo:ncbitaxon.owl)
@@ -20917,7 +20926,7 @@ AnnotationAssertion(obo:IAO_0000412 obo:NCBITaxon_3395 obo:ncbitaxon.owl)
 AnnotationAssertion(rdfs:label obo:NCBITaxon_3395 "Cycas")
 SubClassOf(obo:NCBITaxon_3395 obo:NCBITaxon_3394)
 
-# Class: obo:NCBITaxon_3398 (Magnoliophyta)
+# Class: obo:NCBITaxon_3398 (Magnoliopsida)
 
 AnnotationAssertion(obo:IAO_0000412 obo:NCBITaxon_3398 obo:ncbitaxon.owl)
 AnnotationAssertion(oboInOwl:hasExactSynonym obo:NCBITaxon_3398 "angiosperms")
@@ -29999,7 +30008,7 @@ AnnotationAssertion(oboInOwl:hasExactSynonym obo:NCBITaxon_55521 "veined rapa wh
 AnnotationAssertion(rdfs:label obo:NCBITaxon_55521 "Rapana venosa")
 SubClassOf(obo:NCBITaxon_55521 obo:NCBITaxon_39476)
 
-# Class: obo:NCBITaxon_555253 (Focha andina)
+# Class: obo:NCBITaxon_555253 (Fulica ardesiaca)
 
 AnnotationAssertion(obo:IAO_0000412 obo:NCBITaxon_555253 obo:ncbitaxon.owl)
 AnnotationAssertion(rdfs:label obo:NCBITaxon_555253 "Fulica ardesiaca")
@@ -30967,6 +30976,7 @@ AnnotationAssertion(obo:IAO_0000412 obo:NCBITaxon_59895 obo:ncbitaxon.owl)
 AnnotationAssertion(oboInOwl:hasExactSynonym obo:NCBITaxon_59895 "artichoke")
 AnnotationAssertion(oboInOwl:hasExactSynonym obo:NCBITaxon_59895 "globe artichoke")
 AnnotationAssertion(rdfs:label obo:NCBITaxon_59895 "Cynara cardunculus var. scolymus")
+SubClassOf(obo:NCBITaxon_59895 obo:NCBITaxon_4265)
 
 # Class: obo:NCBITaxon_59896 (Ovis vignei)
 
@@ -31060,7 +31070,7 @@ SubClassOf(obo:NCBITaxon_60698 obo:NCBITaxon_4329)
 
 AnnotationAssertion(obo:IAO_0000412 obo:NCBITaxon_6072 obo:ncbitaxon.owl)
 AnnotationAssertion(rdfs:label obo:NCBITaxon_6072 "Eumetazoa")
-SubClassOf(obo:NCBITaxon_6072 obo:NCBITaxon_33154)
+SubClassOf(obo:NCBITaxon_6072 obo:NCBITaxon_33208)
 
 # Class: obo:NCBITaxon_60964 (Cambarus)
 
