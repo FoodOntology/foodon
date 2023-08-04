@@ -336,8 +336,10 @@ Declaration(Class(<http://purl.obolibrary.org/obo/FOODON_02010317>))
 Declaration(Class(<http://purl.obolibrary.org/obo/FOODON_02010318>))
 Declaration(Class(<http://purl.obolibrary.org/obo/FOODON_02010319>))
 Declaration(Class(<http://purl.obolibrary.org/obo/FOODON_02010320>))
+Declaration(Class(<http://purl.obolibrary.org/obo/FOODON_03302001>))
 Declaration(Class(<http://purl.obolibrary.org/obo/FOODON_03420127>))
 Declaration(Class(<http://purl.obolibrary.org/obo/FOODON_03420164>))
+Declaration(Class(<http://purl.obolibrary.org/obo/FOODON_03420190>))
 Declaration(Class(<http://purl.obolibrary.org/obo/FOODON_03530146>))
 Declaration(Class(<http://purl.obolibrary.org/obo/FOODON_03530155>))
 Declaration(Class(<http://purl.obolibrary.org/obo/NCBITaxon_32524>))
@@ -749,6 +751,7 @@ AnnotationAssertion(<http://purl.org/dc/terms/date> <http://purl.obolibrary.org/
 AnnotationAssertion(rdfs:label <http://purl.obolibrary.org/obo/FOODON_02010033> "animal fat"@en)
 EquivalentClasses(<http://purl.obolibrary.org/obo/FOODON_02010033> ObjectIntersectionOf(<http://purl.obolibrary.org/obo/FOODON_00004332> ObjectSomeValuesFrom(<http://purl.obolibrary.org/obo/RO_0001000> <http://purl.obolibrary.org/obo/UBERON_0001013>)))
 SubClassOf(<http://purl.obolibrary.org/obo/FOODON_02010033> <http://purl.obolibrary.org/obo/FOODON_00004332>)
+SubClassOf(<http://purl.obolibrary.org/obo/FOODON_02010033> <http://purl.obolibrary.org/obo/FOODON_03420190>)
 
 # Class: <http://purl.obolibrary.org/obo/FOODON_02010034> (animal external fat)
 
