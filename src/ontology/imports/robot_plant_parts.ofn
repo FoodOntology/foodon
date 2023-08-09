@@ -1752,7 +1752,6 @@ Declaration(ObjectProperty(<http://purl.obolibrary.org/obo/RO_0001000>))
 Declaration(ObjectProperty(<http://purl.obolibrary.org/obo/RO_0002162>))
 Declaration(ObjectProperty(<http://purl.obolibrary.org/obo/RO_0002170>))
 Declaration(ObjectProperty(<http://purl.obolibrary.org/obo/RO_0002351>))
-Declaration(AnnotationProperty(<http://purl.obolibrary.org/obo/FOODON_03301246>))
 Declaration(AnnotationProperty(<http://purl.obolibrary.org/obo/IAO_0000114>))
 Declaration(AnnotationProperty(<http://purl.obolibrary.org/obo/IAO_0000115>))
 Declaration(AnnotationProperty(<http://purl.obolibrary.org/obo/IAO_0000119>))
@@ -1760,18 +1759,6 @@ Declaration(AnnotationProperty(<http://purl.org/dc/terms/contributor>))
 Declaration(AnnotationProperty(<http://purl.org/dc/terms/date>))
 Declaration(AnnotationProperty(<http://www.geneontology.org/formats/oboInOwl#hasBroadSynonym>))
 Declaration(AnnotationProperty(<http://www.geneontology.org/formats/oboInOwl#hasExactSynonym>))
-############################
-#   Annotation Properties
-############################
-
-# Annotation Property: <http://purl.obolibrary.org/obo/FOODON_03301246> (date)
-
-AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000115> <http://purl.obolibrary.org/obo/FOODON_03301246> "A drupe fruit of a date plant (Phoenix dactylifera)"@en)
-AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000119> <http://purl.obolibrary.org/obo/FOODON_03301246> "https://en.wikipedia.org/wiki/Date_palm")
-AnnotationAssertion(<http://www.geneontology.org/formats/oboInOwl#hasExactSynonym> <http://purl.obolibrary.org/obo/FOODON_03301246> "date"@en)
-AnnotationAssertion(<http://www.geneontology.org/formats/oboInOwl#hasExactSynonym> <http://purl.obolibrary.org/obo/FOODON_03301246> "date palm"@en)
-AnnotationAssertion(rdfs:label <http://purl.obolibrary.org/obo/FOODON_03301246> "date"@en)
-
 
 
 
@@ -10523,6 +10510,14 @@ AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000115> <http://purl.ob
 AnnotationAssertion(<http://www.geneontology.org/formats/oboInOwl#hasExactSynonym> <http://purl.obolibrary.org/obo/FOODON_03301232> "white bean"@en)
 AnnotationAssertion(rdfs:label <http://purl.obolibrary.org/obo/FOODON_03301232> "white bean"@en)
 SubClassOf(<http://purl.obolibrary.org/obo/FOODON_03301232> <http://purl.obolibrary.org/obo/FOODON_00002753>)
+
+# Class: <http://purl.obolibrary.org/obo/FOODON_03301246> (date (fruit))
+
+AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000115> <http://purl.obolibrary.org/obo/FOODON_03301246> "A drupe fruit of a date plant (Phoenix dactylifera)"@en)
+AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000119> <http://purl.obolibrary.org/obo/FOODON_03301246> "https://en.wikipedia.org/wiki/Date_palm")
+AnnotationAssertion(<http://www.geneontology.org/formats/oboInOwl#hasExactSynonym> <http://purl.obolibrary.org/obo/FOODON_03301246> "date"@en)
+AnnotationAssertion(<http://www.geneontology.org/formats/oboInOwl#hasExactSynonym> <http://purl.obolibrary.org/obo/FOODON_03301246> "date palm"@en)
+AnnotationAssertion(rdfs:label <http://purl.obolibrary.org/obo/FOODON_03301246> "date (fruit)"@en)
 
 # Class: <http://purl.obolibrary.org/obo/FOODON_03301275> (mung bean)
 

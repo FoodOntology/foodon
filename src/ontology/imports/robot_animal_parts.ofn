@@ -591,7 +591,7 @@ AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000114> <http://purl.ob
 AnnotationAssertion(<http://purl.org/dc/terms/date> <http://purl.obolibrary.org/obo/FOODON_02010014> "2023-08-01T21:25:29Z"^^xsd:dateTime)
 AnnotationAssertion(rdfs:label <http://purl.obolibrary.org/obo/FOODON_02010014> "animal blood"@en)
 EquivalentClasses(<http://purl.obolibrary.org/obo/FOODON_02010014> ObjectIntersectionOf(<http://purl.obolibrary.org/obo/FOODON_02010001> <http://purl.obolibrary.org/obo/UBERON_0000178>))
-SubClassOf(<http://purl.obolibrary.org/obo/FOODON_02010014> <http://purl.obolibrary.org/obo/FOODON_02010001>)
+SubClassOf(<http://purl.obolibrary.org/obo/FOODON_02010014> <http://purl.obolibrary.org/obo/FOODON_02010126>)
 
 # Class: <http://purl.obolibrary.org/obo/FOODON_02010015> (animal blood (raw))
 
