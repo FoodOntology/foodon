@@ -1251,7 +1251,7 @@ AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000114> <http://purl.ob
 AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000115> <http://purl.obolibrary.org/obo/FOODON_02000066> "A beef denver steak that is raw."@en)
 AnnotationAssertion(<http://purl.org/dc/terms/contributor> <http://purl.obolibrary.org/obo/FOODON_02000066> "https://orcid.org/0000-0001-5275-8866")
 AnnotationAssertion(rdfs:label <http://purl.obolibrary.org/obo/FOODON_02000066> "beef denver steak (raw)"@en)
-EquivalentClasses(<http://purl.obolibrary.org/obo/FOODON_02000066> ObjectIntersectionOf(<http://purl.obolibrary.org/obo/FOODON_02000063> ObjectSomeValuesFrom(<http://purl.obolibrary.org/obo/RO_0000086> <http://purl.obolibrary.org/obo/FOODON_00004348>)))
+EquivalentClasses(<http://purl.obolibrary.org/obo/FOODON_02000066> ObjectIntersectionOf(<http://purl.obolibrary.org/obo/FOODON_02000065> ObjectSomeValuesFrom(<http://purl.obolibrary.org/obo/RO_0000086> <http://purl.obolibrary.org/obo/FOODON_00004348>)))
 SubClassOf(<http://purl.obolibrary.org/obo/FOODON_02000066> <http://purl.obolibrary.org/obo/FOODON_02000065>)
 
 # Class: <http://purl.obolibrary.org/obo/FOODON_02000067> (beef denver roast)
@@ -2669,7 +2669,7 @@ AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000115> <http://purl.ob
 AnnotationAssertion(<http://purl.org/dc/terms/contributor> <http://purl.obolibrary.org/obo/FOODON_02000194> "https://orcid.org/0000-0001-5275-8866")
 AnnotationAssertion(<http://purl.org/dc/terms/date> <http://purl.obolibrary.org/obo/FOODON_02000194> "2023-08-01T21:30:23Z"^^xsd:dateTime)
 AnnotationAssertion(rdfs:label <http://purl.obolibrary.org/obo/FOODON_02000194> "beef brisket flat half (boneless, raw)"@en)
-EquivalentClasses(<http://purl.obolibrary.org/obo/FOODON_02000194> ObjectIntersectionOf(<http://purl.obolibrary.org/obo/FOODON_02000191> ObjectSomeValuesFrom(<http://purl.obolibrary.org/obo/RO_0000086> <http://purl.obolibrary.org/obo/FOODON_00004348>)))
+EquivalentClasses(<http://purl.obolibrary.org/obo/FOODON_02000194> ObjectIntersectionOf(<http://purl.obolibrary.org/obo/FOODON_02000193> ObjectSomeValuesFrom(<http://purl.obolibrary.org/obo/RO_0000086> <http://purl.obolibrary.org/obo/FOODON_00004348>)))
 SubClassOf(<http://purl.obolibrary.org/obo/FOODON_02000194> <http://purl.obolibrary.org/obo/FOODON_02000193>)
 
 # Class: <http://purl.obolibrary.org/obo/FOODON_02000195> (beef brisket point half)
@@ -4426,7 +4426,7 @@ AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000115> <http://purl.ob
 AnnotationAssertion(<http://purl.org/dc/terms/contributor> <http://purl.obolibrary.org/obo/FOODON_02000357> "https://orcid.org/0000-0001-5275-8866")
 AnnotationAssertion(<http://purl.org/dc/terms/date> <http://purl.obolibrary.org/obo/FOODON_02000357> "2023-08-01T21:30:23Z"^^xsd:dateTime)
 AnnotationAssertion(rdfs:label <http://purl.obolibrary.org/obo/FOODON_02000357> "veal rib roast (raw)"@en)
-EquivalentClasses(<http://purl.obolibrary.org/obo/FOODON_02000357> ObjectIntersectionOf(<http://purl.obolibrary.org/obo/FOODON_02000354> ObjectSomeValuesFrom(<http://purl.obolibrary.org/obo/RO_0000086> <http://purl.obolibrary.org/obo/FOODON_00004348>)))
+EquivalentClasses(<http://purl.obolibrary.org/obo/FOODON_02000357> ObjectIntersectionOf(<http://purl.obolibrary.org/obo/FOODON_02000356> ObjectSomeValuesFrom(<http://purl.obolibrary.org/obo/RO_0000086> <http://purl.obolibrary.org/obo/FOODON_00004348>)))
 SubClassOf(<http://purl.obolibrary.org/obo/FOODON_02000357> <http://purl.obolibrary.org/obo/FOODON_02000356>)
 
 # Class: <http://purl.obolibrary.org/obo/FOODON_02000358> (veal breast)
