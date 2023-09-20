@@ -1212,6 +1212,7 @@ AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000119> <http://purl.ob
 AnnotationAssertion(<http://purl.org/dc/terms/contributor> <http://purl.obolibrary.org/obo/FOODON_02000062> "https://orcid.org/0000-0001-5275-8866")
 AnnotationAssertion(<http://www.geneontology.org/formats/oboInOwl#hasExactSynonym> <http://purl.obolibrary.org/obo/FOODON_02000062> "chuck flat"@en)
 AnnotationAssertion(rdfs:label <http://purl.obolibrary.org/obo/FOODON_02000062> "beef under blade"@en)
+SubClassOf(<http://purl.obolibrary.org/obo/FOODON_02000062> <http://purl.obolibrary.org/obo/FOODON_00004478>)
 SubClassOf(<http://purl.obolibrary.org/obo/FOODON_02000062> ObjectSomeValuesFrom(<http://purl.obolibrary.org/obo/RO_0001000> <http://purl.obolibrary.org/obo/FOODON_02000052>))
 
 # Class: <http://purl.obolibrary.org/obo/FOODON_02000063> (beef sierra steak)

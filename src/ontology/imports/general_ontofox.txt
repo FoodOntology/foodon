@@ -82,7 +82,10 @@ http://purl.obolibrary.org/obo/OBI_0001927 # specifies value of
 
 [Top level source term URIs and target direct superclass URIs]
 http://purl.obolibrary.org/obo/IAO_0000030 # information
+http://purl.obolibrary.org/obo/BFO_0000020 # characteristic
 http://purl.obolibrary.org/obo/PATO_0000001 # characteristic
+subClassOf http://purl.obolibrary.org/obo/BFO_0000020
+http://purl.obolibrary.org/obo/BFO_0000020 # characteristic
 http://purl.obolibrary.org/obo/BFO_0000141 # immaterial entity
 http://purl.obolibrary.org/obo/BFO_0000040 # material entity
 http://purl.obolibrary.org/obo/BFO_0000015 # process
@@ -117,7 +120,10 @@ http://purl.obolibrary.org/obo/AGRO_00000363 # greenhouse
 
 [Top level source term URIs and target direct superclass URIs]
 http://purl.obolibrary.org/obo/IAO_0000030 # information
+http://purl.obolibrary.org/obo/BFO_0000020 # characteristic
 http://purl.obolibrary.org/obo/PATO_0000001 # characteristic
+subClassOf http://purl.obolibrary.org/obo/BFO_0000020
+
 http://purl.obolibrary.org/obo/BFO_0000141 # immaterial entity
 http://purl.obolibrary.org/obo/BFO_0000040 # material entity
 http://purl.obolibrary.org/obo/BFO_0000015 # process
@@ -143,7 +149,9 @@ http://purl.obolibrary.org/obo/DRON_00012339  # Propolis
 
 [Top level source term URIs and target direct superclass URIs]
 http://purl.obolibrary.org/obo/IAO_0000030 # information
+http://purl.obolibrary.org/obo/BFO_0000020 # characteristic
 http://purl.obolibrary.org/obo/PATO_0000001 # characteristic
+subClassOf http://purl.obolibrary.org/obo/BFO_0000020
 http://purl.obolibrary.org/obo/BFO_0000141 # immaterial entity
 http://purl.obolibrary.org/obo/BFO_0000040 # material entity
 http://purl.obolibrary.org/obo/BFO_0000015 # process
@@ -183,19 +191,11 @@ includeAllAxioms
 FLOPO
 
 [Low level source term URIs]
-http://purl.obolibrary.org/obo/FLOPO_0012953
-http://purl.obolibrary.org/obo/FLOPO_0014628
-http://purl.obolibrary.org/obo/FLOPO_0003948
+http://purl.obolibrary.org/obo/FLOPO_0012953 # seed mature
+http://purl.obolibrary.org/obo/FLOPO_0014628 # seed immature
+http://purl.obolibrary.org/obo/FLOPO_0003948 # seed split
 
 [Top level source term URIs and target direct superclass URIs]
-http://purl.obolibrary.org/obo/IAO_0000030 # information
-http://purl.obolibrary.org/obo/PATO_0000001 # characteristic
-http://purl.obolibrary.org/obo/BFO_0000141 # immaterial entity
-http://purl.obolibrary.org/obo/BFO_0000040 # material entity
-http://purl.obolibrary.org/obo/BFO_0000015 # process
-
-http://purl.obolibrary.org/obo/UBERON_0001062 # anatomical entity
-
 http://purl.obolibrary.org/obo/FLOPO_0012953 # seed mature, has no FLOPO parent
 subClassOf http://purl.obolibrary.org/obo/PO_0009010 # seed
 http://purl.obolibrary.org/obo/FLOPO_0014628 # seed immature, has no FLOPO parent
@@ -224,12 +224,14 @@ http://purl.obolibrary.org/obo/BFO_0000040 # material entity
 includeAllChildren
 
 [Top level source term URIs and target direct superclass URIs]
+http://purl.obolibrary.org/obo/CDNO_0500001
+subClassOf http://purl.obolibrary.org/obo/BFO_0000017 # realizable
 
 [Source term retrieval setting]
 includeAllIntermediates
 
 [Source annotation URIs]
-includeAllAxiomsRecursively
+includeAllAxioms
 
 http://www.w3.org/2000/01/rdf-schema#label
 http://purl.obolibrary.org/obo/IAO_0000115 
@@ -323,6 +325,8 @@ http://purl.obolibrary.org/obo/ENVO_00002018 #    sewage (contaminated with fece
 
 
 
+
+
 # ENVIRONMENTAL MATERIAL
 http://purl.obolibrary.org/obo/ENVO_00010483 # environmental material
 http://purl.obolibrary.org/obo/ENVO_00002040 # wood
@@ -336,6 +340,8 @@ http://purl.obolibrary.org/obo/ENVO_01000480 # glass
 
 http://purl.obolibrary.org/obo/ENVO_02000055 # plant feed
 http://purl.obolibrary.org/obo/ENVO_02000054 #     bone meal
+http://purl.obolibrary.org/obo/ENVO_02000048 # contaminated animal feed
+
 http://purl.obolibrary.org/obo/ENVO_00003030 #	silage 
 includeAllChildren
 
@@ -380,14 +386,17 @@ http://purl.obolibrary.org/obo/ENVO_01000990 # sink fixture
 
 [Top level source term URIs and target direct superclass URIs]
 http://purl.obolibrary.org/obo/IAO_0000030 # information
+http://purl.obolibrary.org/obo/BFO_0000020 # characteristic
 http://purl.obolibrary.org/obo/PATO_0000001 # characteristic
+subClassOf http://purl.obolibrary.org/obo/BFO_0000020
 http://purl.obolibrary.org/obo/BFO_0000141 # immaterial entity
 http://purl.obolibrary.org/obo/BFO_0000040 # material entity
 http://purl.obolibrary.org/obo/BFO_0000015 # process
 
-# CURRENTLY ENVO has food material under environmental material but that will change
-http://purl.obolibrary.org/obo/FOODON_00002403 # food material
-subClassOf http://purl.obolibrary.org/obo/BFO_0000040 # material entity
+http://purl.obolibrary.org/obo/ENVO_02000048 # contaminated animal feed
+subClassOf http://purl.obolibrary.org/obo/FOODON_00004325 # FoodOn animal feed
+http://purl.obolibrary.org/obo/ENVO_02000055 # plant feed
+subClassOf http://purl.obolibrary.org/obo/FOODON_00002403 # food material
 
 [Source term retrieval setting]
 includeAllIntermediates
@@ -559,6 +568,7 @@ includeAllChildren
 
 [Top level source term URIs and target direct superclass URIs]
 http://purl.obolibrary.org/obo/PATO_0000001
+subClassOf http://purl.obolibrary.org/obo/BFO_0000020
 
 [Source term retrieval setting]
 includeAllIntermediates
@@ -1016,7 +1026,9 @@ http://purl.obolibrary.org/obo/UBERON_0000104 # life cycle
 http://purl.obolibrary.org/obo/UBERON_0001062 # anatomical entity
 
 http://purl.obolibrary.org/obo/IAO_0000030 # information
+http://purl.obolibrary.org/obo/BFO_0000020 # characteristic
 http://purl.obolibrary.org/obo/PATO_0000001 # characteristic
+subClassOf http://purl.obolibrary.org/obo/BFO_0000020
 http://purl.obolibrary.org/obo/BFO_0000141 # immaterial entity
 http://purl.obolibrary.org/obo/BFO_0000040 # material entity
 http://purl.obolibrary.org/obo/BFO_0000015 # process
