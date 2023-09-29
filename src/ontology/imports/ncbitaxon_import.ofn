@@ -5179,7 +5179,7 @@ Declaration(AnnotationProperty(oboInOwl:hasExactSynonym))
 
 AnnotationAssertion(rdfs:label obo:IAO_0000412 "imported from"@en)
 
-# Annotation Property: oboInOwl:hasExactSynonym (has_exact_synonym)
+# Annotation Property: oboInOwl:hasExactSynonym (has exact synonym)
 
 AnnotationAssertion(rdfs:label oboInOwl:hasExactSynonym "has_exact_synonym")
 
@@ -30008,7 +30008,7 @@ AnnotationAssertion(oboInOwl:hasExactSynonym obo:NCBITaxon_55521 "veined rapa wh
 AnnotationAssertion(rdfs:label obo:NCBITaxon_55521 "Rapana venosa")
 SubClassOf(obo:NCBITaxon_55521 obo:NCBITaxon_39476)
 
-# Class: obo:NCBITaxon_555253 (Fulica ardesiaca)
+# Class: obo:NCBITaxon_555253 (Focha andina)
 
 AnnotationAssertion(obo:IAO_0000412 obo:NCBITaxon_555253 obo:ncbitaxon.owl)
 AnnotationAssertion(rdfs:label obo:NCBITaxon_555253 "Fulica ardesiaca")
