@@ -52,6 +52,7 @@ Declaration(Class(<http://purl.obolibrary.org/obo/NCBITaxon_75842>))
 Declaration(Class(<http://purl.obolibrary.org/obo/NCBITaxon_76717>))
 Declaration(Class(<http://purl.obolibrary.org/obo/NCBITaxon_8758>))
 Declaration(Class(<http://purl.obolibrary.org/obo/NCBITaxon_8839>))
+Declaration(Class(<http://purl.obolibrary.org/obo/NCBITaxon_8930>))
 Declaration(Class(<http://purl.obolibrary.org/obo/NCBITaxon_8969>))
 Declaration(Class(<http://purl.obolibrary.org/obo/NCBITaxon_904227>))
 Declaration(Class(<http://purl.obolibrary.org/obo/NCBITaxon_9267>))
@@ -141,62 +142,62 @@ AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000119> <http://purl.ob
 AnnotationAssertion(<http://purl.org/dc/terms/contributor> <http://purl.obolibrary.org/obo/FOODON_03000301> "https://orcid.org/0000-0001-5275-8866")
 AnnotationAssertion(<http://purl.org/dc/terms/date> <http://purl.obolibrary.org/obo/FOODON_03000301> "2022-10-20T12:36:43Z"^^xsd:dateTime)
 AnnotationAssertion(rdfs:label <http://purl.obolibrary.org/obo/FOODON_03000301> "squab"@en)
-SubClassOf(<http://purl.obolibrary.org/obo/FOODON_03000301> <http://purl.obolibrary.org/obo/FOODON_03411304>)
+SubClassOf(<http://purl.obolibrary.org/obo/FOODON_03000301> <http://purl.obolibrary.org/obo/NCBITaxon_8930>)
 
-# Class: <http://purl.obolibrary.org/obo/NCBITaxon_100937> (<http://purl.obolibrary.org/obo/NCBITaxon_100937>)
+# Class: <http://purl.obolibrary.org/obo/NCBITaxon_100937> (Papio papio)
 
 AnnotationAssertion(<http://purl.org/dc/terms/contributor> <http://purl.obolibrary.org/obo/NCBITaxon_100937> "https://orcid.org/0000-0001-5275-8866")
 AnnotationAssertion(<http://www.geneontology.org/formats/oboInOwl#hasDbXref> <http://purl.obolibrary.org/obo/NCBITaxon_100937> "itis:944212")
 AnnotationAssertion(<http://www.geneontology.org/formats/oboInOwl#hasExactSynonym> <http://purl.obolibrary.org/obo/NCBITaxon_100937> "Guinea baboon"@en)
 AnnotationAssertion(rdfs:seeAlso <http://purl.obolibrary.org/obo/NCBITaxon_100937> "https://en.wikipedia.org/wiki/Guinea_baboon")
 
-# Class: <http://purl.obolibrary.org/obo/NCBITaxon_1234591> (<http://purl.obolibrary.org/obo/NCBITaxon_1234591>)
+# Class: <http://purl.obolibrary.org/obo/NCBITaxon_1234591> (Sarcophaga haemorrhoidalis)
 
 AnnotationAssertion(<http://purl.org/dc/terms/contributor> <http://purl.obolibrary.org/obo/NCBITaxon_1234591> "https://orcid.org/0000-0001-5275-8866")
 AnnotationAssertion(<http://www.geneontology.org/formats/oboInOwl#hasExactSynonym> <http://purl.obolibrary.org/obo/NCBITaxon_1234591> "redtailed flesh fly"@en)
 AnnotationAssertion(rdfs:seeAlso <http://purl.obolibrary.org/obo/NCBITaxon_1234591> "https://en.wikipedia.org/wiki/Sarcophaga_pernix")
 
-# Class: <http://purl.obolibrary.org/obo/NCBITaxon_142487> (<http://purl.obolibrary.org/obo/NCBITaxon_142487>)
+# Class: <http://purl.obolibrary.org/obo/NCBITaxon_142487> (Kinosternon subrubrum)
 
 AnnotationAssertion(<http://purl.org/dc/terms/contributor> <http://purl.obolibrary.org/obo/NCBITaxon_142487> "https://orcid.org/0000-0001-5275-8866")
 AnnotationAssertion(<http://www.geneontology.org/formats/oboInOwl#hasDbXref> <http://purl.obolibrary.org/obo/NCBITaxon_142487> "itis:949136")
 AnnotationAssertion(<http://www.geneontology.org/formats/oboInOwl#hasExactSynonym> <http://purl.obolibrary.org/obo/NCBITaxon_142487> "common mud turtle"@en)
 AnnotationAssertion(rdfs:seeAlso <http://purl.obolibrary.org/obo/NCBITaxon_142487> "https://en.wikipedia.org/wiki/Eastern_mud_turtle")
 
-# Class: <http://purl.obolibrary.org/obo/NCBITaxon_146146> (<http://purl.obolibrary.org/obo/NCBITaxon_146146>)
+# Class: <http://purl.obolibrary.org/obo/NCBITaxon_146146> (Selar crumenophthalmus)
 
 AnnotationAssertion(<http://purl.org/dc/terms/contributor> <http://purl.obolibrary.org/obo/NCBITaxon_146146> "https://orcid.org/0000-0001-5275-8866")
 AnnotationAssertion(<http://www.geneontology.org/formats/oboInOwl#hasDbXref> <http://purl.obolibrary.org/obo/NCBITaxon_146146> "itis:168677")
 AnnotationAssertion(<http://www.geneontology.org/formats/oboInOwl#hasExactSynonym> <http://purl.obolibrary.org/obo/NCBITaxon_146146> "bigeye scad"@en)
 AnnotationAssertion(rdfs:seeAlso <http://purl.obolibrary.org/obo/NCBITaxon_146146> "https://en.wikipedia.org/wiki/Bigeye_scad")
 
-# Class: <http://purl.obolibrary.org/obo/NCBITaxon_155054> (<http://purl.obolibrary.org/obo/NCBITaxon_155054>)
+# Class: <http://purl.obolibrary.org/obo/NCBITaxon_155054> (Budorcas taxicolor tibetana)
 
 AnnotationAssertion(<http://purl.org/dc/terms/contributor> <http://purl.obolibrary.org/obo/NCBITaxon_155054> "https://orcid.org/0000-0001-5275-8866")
 AnnotationAssertion(<http://www.geneontology.org/formats/oboInOwl#hasDbXref> <http://purl.obolibrary.org/obo/NCBITaxon_155054> "itis:898765")
 AnnotationAssertion(<http://www.geneontology.org/formats/oboInOwl#hasExactSynonym> <http://purl.obolibrary.org/obo/NCBITaxon_155054> "Sichuan takin"@en)
 AnnotationAssertion(rdfs:seeAlso <http://purl.obolibrary.org/obo/NCBITaxon_155054> "https://en.wikipedia.org/wiki/Sichuan_takin")
 
-# Class: <http://purl.obolibrary.org/obo/NCBITaxon_2671080> (<http://purl.obolibrary.org/obo/NCBITaxon_2671080>)
+# Class: <http://purl.obolibrary.org/obo/NCBITaxon_2671080> (Threskiornis molucca)
 
 AnnotationAssertion(<http://purl.org/dc/terms/contributor> <http://purl.obolibrary.org/obo/NCBITaxon_2671080> "https://orcid.org/0000-0001-5275-8866")
 AnnotationAssertion(<http://www.geneontology.org/formats/oboInOwl#hasBroadSynonym> <http://purl.obolibrary.org/obo/NCBITaxon_2671080> "white ibis"@en)
 AnnotationAssertion(rdfs:seeAlso <http://purl.obolibrary.org/obo/NCBITaxon_2671080> "https://en.wikipedia.org/wiki/Australian_white_ibis")
 
-# Class: <http://purl.obolibrary.org/obo/NCBITaxon_30062> (<http://purl.obolibrary.org/obo/NCBITaxon_30062>)
+# Class: <http://purl.obolibrary.org/obo/NCBITaxon_30062> (Anthomyiidae)
 
 AnnotationAssertion(<http://purl.org/dc/terms/contributor> <http://purl.obolibrary.org/obo/NCBITaxon_30062> "https://orcid.org/0000-0001-5275-8866")
 AnnotationAssertion(<http://www.geneontology.org/formats/oboInOwl#hasDbXref> <http://purl.obolibrary.org/obo/NCBITaxon_30062> "itis:148685")
 AnnotationAssertion(rdfs:seeAlso <http://purl.obolibrary.org/obo/NCBITaxon_30062> "https://en.wikipedia.org/wiki/Anthomyiidae")
 
-# Class: <http://purl.obolibrary.org/obo/NCBITaxon_30422> (<http://purl.obolibrary.org/obo/NCBITaxon_30422>)
+# Class: <http://purl.obolibrary.org/obo/NCBITaxon_30422> (Corvus corone)
 
 AnnotationAssertion(<http://purl.org/dc/terms/contributor> <http://purl.obolibrary.org/obo/NCBITaxon_30422> "https://orcid.org/0000-0001-5275-8866")
 AnnotationAssertion(<http://www.geneontology.org/formats/oboInOwl#hasDbXref> <http://purl.obolibrary.org/obo/NCBITaxon_30422> "itis:559494")
 AnnotationAssertion(<http://www.geneontology.org/formats/oboInOwl#hasExactSynonym> <http://purl.obolibrary.org/obo/NCBITaxon_30422> "carrion crow"@en)
 AnnotationAssertion(rdfs:seeAlso <http://purl.obolibrary.org/obo/NCBITaxon_30422> "https://en.wikipedia.org/wiki/Carrion_crow")
 
-# Class: <http://purl.obolibrary.org/obo/NCBITaxon_34844> (<http://purl.obolibrary.org/obo/NCBITaxon_34844>)
+# Class: <http://purl.obolibrary.org/obo/NCBITaxon_34844> (Erethizon dorsatum)
 
 AnnotationAssertion(<http://purl.org/dc/terms/contributor> <http://purl.obolibrary.org/obo/NCBITaxon_34844> "https://orcid.org/0000-0001-5275-8866")
 AnnotationAssertion(<http://www.geneontology.org/formats/oboInOwl#hasDbXref> <http://purl.obolibrary.org/obo/NCBITaxon_34844> "itis:180393")
@@ -204,49 +205,49 @@ AnnotationAssertion(<http://www.geneontology.org/formats/oboInOwl#hasExactSynony
 AnnotationAssertion(<http://www.geneontology.org/formats/oboInOwl#hasExactSynonym> <http://purl.obolibrary.org/obo/NCBITaxon_34844> "canadian porcupine"@en)
 AnnotationAssertion(rdfs:seeAlso <http://purl.obolibrary.org/obo/NCBITaxon_34844> "https://en.wikipedia.org/wiki/North_American_porcupine")
 
-# Class: <http://purl.obolibrary.org/obo/NCBITaxon_34899> (<http://purl.obolibrary.org/obo/NCBITaxon_34899>)
+# Class: <http://purl.obolibrary.org/obo/NCBITaxon_34899> (Petaurus breviceps)
 
 AnnotationAssertion(<http://purl.org/dc/terms/contributor> <http://purl.obolibrary.org/obo/NCBITaxon_34899> "https://orcid.org/0000-0001-5275-8866")
 AnnotationAssertion(<http://www.geneontology.org/formats/oboInOwl#hasDbXref> <http://purl.obolibrary.org/obo/NCBITaxon_34899> "itis:609841 ")
 AnnotationAssertion(<http://www.geneontology.org/formats/oboInOwl#hasExactSynonym> <http://purl.obolibrary.org/obo/NCBITaxon_34899> "sugar glider"@en)
 AnnotationAssertion(rdfs:seeAlso <http://purl.obolibrary.org/obo/NCBITaxon_34899> "https://en.wikipedia.org/wiki/Sugar_glider")
 
-# Class: <http://purl.obolibrary.org/obo/NCBITaxon_365635> (<http://purl.obolibrary.org/obo/NCBITaxon_365635>)
+# Class: <http://purl.obolibrary.org/obo/NCBITaxon_365635> (Trachemys scripta scripta)
 
 AnnotationAssertion(<http://purl.org/dc/terms/contributor> <http://purl.obolibrary.org/obo/NCBITaxon_365635> "https://orcid.org/0000-0001-5275-8866")
 AnnotationAssertion(<http://www.geneontology.org/formats/oboInOwl#hasDbXref> <http://purl.obolibrary.org/obo/NCBITaxon_365635> "itis:173821")
 AnnotationAssertion(rdfs:seeAlso <http://purl.obolibrary.org/obo/NCBITaxon_365635> "https://en.wikipedia.org/wiki/Yellow-bellied_slider")
 
-# Class: <http://purl.obolibrary.org/obo/NCBITaxon_37171> (<http://purl.obolibrary.org/obo/NCBITaxon_37171>)
+# Class: <http://purl.obolibrary.org/obo/NCBITaxon_37171> (Damaliscus pygargus dorcas)
 
 AnnotationAssertion(<http://purl.org/dc/terms/contributor> <http://purl.obolibrary.org/obo/NCBITaxon_37171> "https://orcid.org/0000-0001-5275-8866")
 AnnotationAssertion(<http://www.geneontology.org/formats/oboInOwl#hasExactSynonym> <http://purl.obolibrary.org/obo/NCBITaxon_37171> "bontebok"@en)
 
-# Class: <http://purl.obolibrary.org/obo/NCBITaxon_371913> (<http://purl.obolibrary.org/obo/NCBITaxon_371913>)
+# Class: <http://purl.obolibrary.org/obo/NCBITaxon_371913> (Eudocimus albus)
 
 AnnotationAssertion(<http://purl.org/dc/terms/contributor> <http://purl.obolibrary.org/obo/NCBITaxon_371913> "https://orcid.org/0000-0001-5275-8866")
 AnnotationAssertion(<http://www.geneontology.org/formats/oboInOwl#hasDbXref> <http://purl.obolibrary.org/obo/NCBITaxon_371913> "itis:174930")
 AnnotationAssertion(rdfs:seeAlso <http://purl.obolibrary.org/obo/NCBITaxon_371913> "https://en.wikipedia.org/wiki/American_white_ibis")
 
-# Class: <http://purl.obolibrary.org/obo/NCBITaxon_381874> (<http://purl.obolibrary.org/obo/NCBITaxon_381874>)
+# Class: <http://purl.obolibrary.org/obo/NCBITaxon_381874> (Pteroglossus bailloni)
 
 AnnotationAssertion(<http://purl.org/dc/terms/contributor> <http://purl.obolibrary.org/obo/NCBITaxon_381874> "https://orcid.org/0000-0001-5275-8866")
 AnnotationAssertion(<http://www.geneontology.org/formats/oboInOwl#hasDbXref> <http://purl.obolibrary.org/obo/NCBITaxon_381874> "itis:1145221")
 AnnotationAssertion(<http://www.geneontology.org/formats/oboInOwl#hasExactSynonym> <http://purl.obolibrary.org/obo/NCBITaxon_381874> "Saffron toucanet"@en)
 AnnotationAssertion(rdfs:seeAlso <http://purl.obolibrary.org/obo/NCBITaxon_381874> "https://en.wikipedia.org/wiki/Saffron_toucanet")
 
-# Class: <http://purl.obolibrary.org/obo/NCBITaxon_390684> (<http://purl.obolibrary.org/obo/NCBITaxon_390684>)
+# Class: <http://purl.obolibrary.org/obo/NCBITaxon_390684> (Aulotrachichthys prosthemius)
 
 AnnotationAssertion(<http://purl.org/dc/terms/contributor> <http://purl.obolibrary.org/obo/NCBITaxon_390684> "https://orcid.org/0000-0001-5275-8866")
 AnnotationAssertion(rdfs:seeAlso <http://purl.obolibrary.org/obo/NCBITaxon_390684> "https://en.wikipedia.org/wiki/Aulotrachichthys_prosthemius")
 
-# Class: <http://purl.obolibrary.org/obo/NCBITaxon_52644> (<http://purl.obolibrary.org/obo/NCBITaxon_52644>)
+# Class: <http://purl.obolibrary.org/obo/NCBITaxon_52644> (Haliaeetus leucocephalus)
 
 AnnotationAssertion(<http://purl.org/dc/terms/contributor> <http://purl.obolibrary.org/obo/NCBITaxon_52644> "https://orcid.org/0000-0001-5275-8866")
 AnnotationAssertion(<http://www.geneontology.org/formats/oboInOwl#hasExactSynonym> <http://purl.obolibrary.org/obo/NCBITaxon_52644> "bald eagle"@en)
 AnnotationAssertion(rdfs:seeAlso <http://purl.obolibrary.org/obo/NCBITaxon_52644> "https://en.wikipedia.org/wiki/Bald_eagle")
 
-# Class: <http://purl.obolibrary.org/obo/NCBITaxon_55048> (<http://purl.obolibrary.org/obo/NCBITaxon_55048>)
+# Class: <http://purl.obolibrary.org/obo/NCBITaxon_55048> (Mustela frenata)
 
 AnnotationAssertion(<http://purl.org/dc/terms/contributor> <http://purl.obolibrary.org/obo/NCBITaxon_55048> "https://orcid.org/0000-0001-5275-8866")
 AnnotationAssertion(<http://www.geneontology.org/formats/oboInOwl#hasDbXref> <http://purl.obolibrary.org/obo/NCBITaxon_55048> "itis:180556")
@@ -261,87 +262,87 @@ AnnotationAssertion(<http://www.geneontology.org/formats/oboInOwl#hasExactSynony
 AnnotationAssertion(rdfs:label <http://purl.obolibrary.org/obo/NCBITaxon_555253> "Focha andina"@en)
 AnnotationAssertion(rdfs:seeAlso <http://purl.obolibrary.org/obo/NCBITaxon_555253> "https://en.wikipedia.org/wiki/Andean_coot")
 
-# Class: <http://purl.obolibrary.org/obo/NCBITaxon_55550> (<http://purl.obolibrary.org/obo/NCBITaxon_55550>)
+# Class: <http://purl.obolibrary.org/obo/NCBITaxon_55550> (Dermatemys mawii)
 
 AnnotationAssertion(<http://purl.org/dc/terms/contributor> <http://purl.obolibrary.org/obo/NCBITaxon_55550> "https://orcid.org/0000-0001-5275-8866")
 AnnotationAssertion(<http://www.geneontology.org/formats/oboInOwl#hasDbXref> <http://purl.obolibrary.org/obo/NCBITaxon_55550> "itis:202127")
 AnnotationAssertion(rdfs:seeAlso <http://purl.obolibrary.org/obo/NCBITaxon_55550> "https://en.wikipedia.org/wiki/Hickatee")
 
-# Class: <http://purl.obolibrary.org/obo/NCBITaxon_56117> (<http://purl.obolibrary.org/obo/NCBITaxon_56117>)
+# Class: <http://purl.obolibrary.org/obo/NCBITaxon_56117> (Tapirus bairdii)
 
 AnnotationAssertion(<http://purl.org/dc/terms/contributor> <http://purl.obolibrary.org/obo/NCBITaxon_56117> "https://orcid.org/0000-0001-5275-8866")
 AnnotationAssertion(<http://www.geneontology.org/formats/oboInOwl#hasDbXref> <http://purl.obolibrary.org/obo/NCBITaxon_56117> "itis:624997")
 AnnotationAssertion(<http://www.geneontology.org/formats/oboInOwl#hasExactSynonym> <http://purl.obolibrary.org/obo/NCBITaxon_56117> "Baird's tapir"@en)
 AnnotationAssertion(rdfs:seeAlso <http://purl.obolibrary.org/obo/NCBITaxon_56117> "https://en.wikipedia.org/wiki/Baird%27s_tapir")
 
-# Class: <http://purl.obolibrary.org/obo/NCBITaxon_56259> (<http://purl.obolibrary.org/obo/NCBITaxon_56259>)
+# Class: <http://purl.obolibrary.org/obo/NCBITaxon_56259> (Accipitridae)
 
 AnnotationAssertion(<http://purl.org/dc/terms/contributor> <http://purl.obolibrary.org/obo/NCBITaxon_56259> "https://orcid.org/0000-0001-5275-8866")
 AnnotationAssertion(<http://www.geneontology.org/formats/oboInOwl#hasDbXref> <http://purl.obolibrary.org/obo/NCBITaxon_56259> "itis:175280")
 AnnotationAssertion(rdfs:seeAlso <http://purl.obolibrary.org/obo/NCBITaxon_56259> "https://en.wikipedia.org/wiki/Accipitridae")
 
-# Class: <http://purl.obolibrary.org/obo/NCBITaxon_56350> (<http://purl.obolibrary.org/obo/NCBITaxon_56350>)
+# Class: <http://purl.obolibrary.org/obo/NCBITaxon_56350> (Falco sparverius)
 
 AnnotationAssertion(<http://purl.org/dc/terms/contributor> <http://purl.obolibrary.org/obo/NCBITaxon_56350> "https://orcid.org/0000-0001-5275-8866")
 AnnotationAssertion(<http://www.geneontology.org/formats/oboInOwl#hasDbXref> <http://purl.obolibrary.org/obo/NCBITaxon_56350> "itis:175622")
 AnnotationAssertion(rdfs:seeAlso <http://purl.obolibrary.org/obo/NCBITaxon_56350> "https://en.wikipedia.org/wiki/American_kestrel")
 
-# Class: <http://purl.obolibrary.org/obo/NCBITaxon_59896> (<http://purl.obolibrary.org/obo/NCBITaxon_59896>)
+# Class: <http://purl.obolibrary.org/obo/NCBITaxon_59896> (Ovis vignei)
 
 AnnotationAssertion(<http://purl.org/dc/terms/contributor> <http://purl.obolibrary.org/obo/NCBITaxon_59896> "https://orcid.org/0000-0001-5275-8866")
 AnnotationAssertion(<http://www.geneontology.org/formats/oboInOwl#hasDbXref> <http://purl.obolibrary.org/obo/NCBITaxon_59896> "itis:625155")
 AnnotationAssertion(<http://www.geneontology.org/formats/oboInOwl#hasExactSynonym> <http://purl.obolibrary.org/obo/NCBITaxon_59896> "urial"@en)
 AnnotationAssertion(rdfs:seeAlso <http://purl.obolibrary.org/obo/NCBITaxon_59896> "https://en.wikipedia.org/wiki/Urial")
 
-# Class: <http://purl.obolibrary.org/obo/NCBITaxon_64278> (<http://purl.obolibrary.org/obo/NCBITaxon_64278>)
+# Class: <http://purl.obolibrary.org/obo/NCBITaxon_64278> (Quiscalus mexicanus)
 
 AnnotationAssertion(<http://purl.org/dc/terms/contributor> <http://purl.obolibrary.org/obo/NCBITaxon_64278> "https://orcid.org/0000-0001-5275-8866")
 AnnotationAssertion(<http://www.geneontology.org/formats/oboInOwl#hasDbXref> <http://purl.obolibrary.org/obo/NCBITaxon_64278> "itis:179109")
 AnnotationAssertion(<http://www.geneontology.org/formats/oboInOwl#hasExactSynonym> <http://purl.obolibrary.org/obo/NCBITaxon_64278> "Great-tailed grackle"@en)
 AnnotationAssertion(rdfs:seeAlso <http://purl.obolibrary.org/obo/NCBITaxon_64278> "https://en.wikipedia.org/wiki/Great-tailed_grackle")
 
-# Class: <http://purl.obolibrary.org/obo/NCBITaxon_66442> (<http://purl.obolibrary.org/obo/NCBITaxon_66442>)
+# Class: <http://purl.obolibrary.org/obo/NCBITaxon_66442> (Neotragus moschatus)
 
 AnnotationAssertion(<http://purl.org/dc/terms/contributor> <http://purl.obolibrary.org/obo/NCBITaxon_66442> "https://orcid.org/0000-0001-5275-8866")
 AnnotationAssertion(<http://www.geneontology.org/formats/oboInOwl#hasDbXref> <http://purl.obolibrary.org/obo/NCBITaxon_66442> "itis:625109")
 AnnotationAssertion(<http://www.geneontology.org/formats/oboInOwl#hasExactSynonym> <http://purl.obolibrary.org/obo/NCBITaxon_66442> "suni"@en)
 AnnotationAssertion(rdfs:seeAlso <http://purl.obolibrary.org/obo/NCBITaxon_66442> "https://en.wikipedia.org/wiki/Suni")
 
-# Class: <http://purl.obolibrary.org/obo/NCBITaxon_66444> (<http://purl.obolibrary.org/obo/NCBITaxon_66444>)
+# Class: <http://purl.obolibrary.org/obo/NCBITaxon_66444> (Oreotragus oreotragus)
 
 AnnotationAssertion(<http://purl.org/dc/terms/contributor> <http://purl.obolibrary.org/obo/NCBITaxon_66444> "https://orcid.org/0000-0001-5275-8866")
 AnnotationAssertion(<http://www.geneontology.org/formats/oboInOwl#hasDbXref> <http://purl.obolibrary.org/obo/NCBITaxon_66444> "itis:625111")
 AnnotationAssertion(<http://www.geneontology.org/formats/oboInOwl#hasExactSynonym> <http://purl.obolibrary.org/obo/NCBITaxon_66444> "klipspringer"@en)
 AnnotationAssertion(rdfs:seeAlso <http://purl.obolibrary.org/obo/NCBITaxon_66444> "https://en.wikipedia.org/wiki/Klipspringer")
 
-# Class: <http://purl.obolibrary.org/obo/NCBITaxon_67940> (<http://purl.obolibrary.org/obo/NCBITaxon_67940>)
+# Class: <http://purl.obolibrary.org/obo/NCBITaxon_67940> (Nanger dama)
 
 AnnotationAssertion(<http://purl.org/dc/terms/contributor> <http://purl.obolibrary.org/obo/NCBITaxon_67940> "https://orcid.org/0000-0001-5275-8866")
 AnnotationAssertion(<http://www.geneontology.org/formats/oboInOwl#hasDbXref> <http://purl.obolibrary.org/obo/NCBITaxon_67940> "itis:898225")
 AnnotationAssertion(<http://www.geneontology.org/formats/oboInOwl#hasExactSynonym> <http://purl.obolibrary.org/obo/NCBITaxon_67940> "Dama gazelle"@en)
 AnnotationAssertion(rdfs:seeAlso <http://purl.obolibrary.org/obo/NCBITaxon_67940> "https://en.wikipedia.org/wiki/Dama_gazelle")
 
-# Class: <http://purl.obolibrary.org/obo/NCBITaxon_69297> (<http://purl.obolibrary.org/obo/NCBITaxon_69297>)
+# Class: <http://purl.obolibrary.org/obo/NCBITaxon_69297> (Tragelaphus eurycerus)
 
 AnnotationAssertion(<http://purl.org/dc/terms/contributor> <http://purl.obolibrary.org/obo/NCBITaxon_69297> "https://orcid.org/0000-0001-5275-8866")
 AnnotationAssertion(<http://www.geneontology.org/formats/oboInOwl#hasDbXref> <http://purl.obolibrary.org/obo/NCBITaxon_69297> "itis:625130")
 AnnotationAssertion(<http://www.geneontology.org/formats/oboInOwl#hasExactSynonym> <http://purl.obolibrary.org/obo/NCBITaxon_69297> "bongo"@en)
 AnnotationAssertion(rdfs:seeAlso <http://purl.obolibrary.org/obo/NCBITaxon_69297> "https://en.wikipedia.org/wiki/Bongo_(antelope)")
 
-# Class: <http://purl.obolibrary.org/obo/NCBITaxon_71006> (<http://purl.obolibrary.org/obo/NCBITaxon_71006>)
+# Class: <http://purl.obolibrary.org/obo/NCBITaxon_71006> (Myrmecophaga tridactyla)
 
 AnnotationAssertion(<http://purl.org/dc/terms/contributor> <http://purl.obolibrary.org/obo/NCBITaxon_71006> "https://orcid.org/0000-0001-5275-8866")
 AnnotationAssertion(<http://www.geneontology.org/formats/oboInOwl#hasDbXref> <http://purl.obolibrary.org/obo/NCBITaxon_71006> "itis:624911")
 AnnotationAssertion(<http://www.geneontology.org/formats/oboInOwl#hasExactSynonym> <http://purl.obolibrary.org/obo/NCBITaxon_71006> "giant anteater"@en)
 AnnotationAssertion(rdfs:seeAlso <http://purl.obolibrary.org/obo/NCBITaxon_71006> "https://en.wikipedia.org/wiki/Giant_anteater")
 
-# Class: <http://purl.obolibrary.org/obo/NCBITaxon_7375> (<http://purl.obolibrary.org/obo/NCBITaxon_7375>)
+# Class: <http://purl.obolibrary.org/obo/NCBITaxon_7375> (Lucilia cuprina)
 
 AnnotationAssertion(<http://purl.org/dc/terms/contributor> <http://purl.obolibrary.org/obo/NCBITaxon_7375> "https://orcid.org/0000-0001-5275-8866")
 AnnotationAssertion(<http://www.geneontology.org/formats/oboInOwl#hasExactSynonym> <http://purl.obolibrary.org/obo/NCBITaxon_7375> "Australian sheep blowfly"@en)
 AnnotationAssertion(rdfs:seeAlso <http://purl.obolibrary.org/obo/NCBITaxon_7375> "https://en.wikipedia.org/wiki/Lucilia_cuprina")
 
-# Class: <http://purl.obolibrary.org/obo/NCBITaxon_75842> (<http://purl.obolibrary.org/obo/NCBITaxon_75842>)
+# Class: <http://purl.obolibrary.org/obo/NCBITaxon_75842> (Spatula discors)
 
 AnnotationAssertion(<http://purl.org/dc/terms/contributor> <http://purl.obolibrary.org/obo/NCBITaxon_75842> "https://orcid.org/0000-0001-5275-8866")
 AnnotationAssertion(<http://www.geneontology.org/formats/oboInOwl#hasDbXref> <http://purl.obolibrary.org/obo/NCBITaxon_75842> "itis:175086")
@@ -351,7 +352,7 @@ AnnotationAssertion(<http://www.geneontology.org/formats/oboInOwl#hasExactSynony
 AnnotationAssertion(<http://www.geneontology.org/formats/oboInOwl#hasExactSynonym> <http://purl.obolibrary.org/obo/NCBITaxon_75842> "querquedula discors"@en)
 AnnotationAssertion(rdfs:seeAlso <http://purl.obolibrary.org/obo/NCBITaxon_75842> "https://en.wikipedia.org/wiki/Blue-winged_teal")
 
-# Class: <http://purl.obolibrary.org/obo/NCBITaxon_76717> (<http://purl.obolibrary.org/obo/NCBITaxon_76717>)
+# Class: <http://purl.obolibrary.org/obo/NCBITaxon_76717> (Lontra canadensis)
 
 AnnotationAssertion(<http://purl.org/dc/terms/contributor> <http://purl.obolibrary.org/obo/NCBITaxon_76717> "https://orcid.org/0000-0001-5275-8866")
 AnnotationAssertion(<http://www.geneontology.org/formats/oboInOwl#hasDbXref> <http://purl.obolibrary.org/obo/NCBITaxon_76717> "itis:180549 ")
@@ -361,143 +362,143 @@ AnnotationAssertion(<http://www.geneontology.org/formats/oboInOwl#hasExactSynony
 AnnotationAssertion(<http://www.geneontology.org/formats/oboInOwl#hasExactSynonym> <http://purl.obolibrary.org/obo/NCBITaxon_76717> "river otter"@en)
 AnnotationAssertion(rdfs:seeAlso <http://purl.obolibrary.org/obo/NCBITaxon_76717> "https://en.wikipedia.org/wiki/North_American_river_otter")
 
-# Class: <http://purl.obolibrary.org/obo/NCBITaxon_8758> (<http://purl.obolibrary.org/obo/NCBITaxon_8758>)
+# Class: <http://purl.obolibrary.org/obo/NCBITaxon_8758> (Sistrurus miliarius)
 
 AnnotationAssertion(<http://purl.org/dc/terms/contributor> <http://purl.obolibrary.org/obo/NCBITaxon_8758> "https://orcid.org/0000-0001-5275-8866")
 AnnotationAssertion(<http://www.geneontology.org/formats/oboInOwl#hasDbXref> <http://purl.obolibrary.org/obo/NCBITaxon_8758> "itis:174302")
 AnnotationAssertion(<http://www.geneontology.org/formats/oboInOwl#hasExactSynonym> <http://purl.obolibrary.org/obo/NCBITaxon_8758> "pigmy rattlesnake"@en)
 AnnotationAssertion(rdfs:seeAlso <http://purl.obolibrary.org/obo/NCBITaxon_8758> "https://en.wikipedia.org/wiki/Sistrurus_miliarius")
 
-# Class: <http://purl.obolibrary.org/obo/NCBITaxon_8839> (<http://purl.obolibrary.org/obo/NCBITaxon_8839>)
+# Class: <http://purl.obolibrary.org/obo/NCBITaxon_8839> (Anas platyrhynchos)
 
 AnnotationAssertion(<http://purl.org/dc/terms/contributor> <http://purl.obolibrary.org/obo/NCBITaxon_8839> "https://orcid.org/0000-0001-5275-8866")
 AnnotationAssertion(<http://www.geneontology.org/formats/oboInOwl#hasDbXref> <http://purl.obolibrary.org/obo/NCBITaxon_8839> "itis:175063")
 AnnotationAssertion(<http://www.geneontology.org/formats/oboInOwl#hasExactSynonym> <http://purl.obolibrary.org/obo/NCBITaxon_8839> "mallard"@en)
 AnnotationAssertion(rdfs:seeAlso <http://purl.obolibrary.org/obo/NCBITaxon_8839> "https://en.wikipedia.org/wiki/Mallard")
 
-# Class: <http://purl.obolibrary.org/obo/NCBITaxon_8969> (<http://purl.obolibrary.org/obo/NCBITaxon_8969>)
+# Class: <http://purl.obolibrary.org/obo/NCBITaxon_8969> (Haliaeetus albicilla)
 
 AnnotationAssertion(<http://purl.org/dc/terms/contributor> <http://purl.obolibrary.org/obo/NCBITaxon_8969> "https://orcid.org/0000-0001-5275-8866")
 AnnotationAssertion(<http://www.geneontology.org/formats/oboInOwl#hasExactSynonym> <http://purl.obolibrary.org/obo/NCBITaxon_8969> "white-tailed eagle"@en)
 AnnotationAssertion(rdfs:seeAlso <http://purl.obolibrary.org/obo/NCBITaxon_8969> "https://en.wikipedia.org/wiki/White-tailed_eagle")
 
-# Class: <http://purl.obolibrary.org/obo/NCBITaxon_904227> (<http://purl.obolibrary.org/obo/NCBITaxon_904227>)
+# Class: <http://purl.obolibrary.org/obo/NCBITaxon_904227> (Staurotypus salvinii)
 
 AnnotationAssertion(<http://purl.org/dc/terms/contributor> <http://purl.obolibrary.org/obo/NCBITaxon_904227> "https://orcid.org/0000-0001-5275-8866")
 AnnotationAssertion(<http://www.geneontology.org/formats/oboInOwl#hasDbXref> <http://purl.obolibrary.org/obo/NCBITaxon_904227> "itis:551863")
 AnnotationAssertion(rdfs:seeAlso <http://purl.obolibrary.org/obo/NCBITaxon_904227> "https://en.wikipedia.org/wiki/Giant_musk_turtle")
 
-# Class: <http://purl.obolibrary.org/obo/NCBITaxon_9267> (<http://purl.obolibrary.org/obo/NCBITaxon_9267>)
+# Class: <http://purl.obolibrary.org/obo/NCBITaxon_9267> (Didelphis virginiana)
 
 AnnotationAssertion(<http://purl.org/dc/terms/contributor> <http://purl.obolibrary.org/obo/NCBITaxon_9267> "https://orcid.org/0000-0001-5275-8866")
 AnnotationAssertion(<http://www.geneontology.org/formats/oboInOwl#hasDbXref> <http://purl.obolibrary.org/obo/NCBITaxon_9267> "itis:179921")
 AnnotationAssertion(<http://www.geneontology.org/formats/oboInOwl#hasExactSynonym> <http://purl.obolibrary.org/obo/NCBITaxon_9267> "North American opossum"@en)
 AnnotationAssertion(rdfs:seeAlso <http://purl.obolibrary.org/obo/NCBITaxon_9267> "https://en.wikipedia.org/wiki/Virginia_opossum")
 
-# Class: <http://purl.obolibrary.org/obo/NCBITaxon_9397> (<http://purl.obolibrary.org/obo/NCBITaxon_9397>)
+# Class: <http://purl.obolibrary.org/obo/NCBITaxon_9397> (Chiroptera)
 
 AnnotationAssertion(<http://purl.org/dc/terms/contributor> <http://purl.obolibrary.org/obo/NCBITaxon_9397> "https://orcid.org/0000-0001-5275-8866")
 AnnotationAssertion(<http://www.geneontology.org/formats/oboInOwl#hasDbXref> <http://purl.obolibrary.org/obo/NCBITaxon_9397> "itis:179985")
 AnnotationAssertion(<http://www.geneontology.org/formats/oboInOwl#hasExactSynonym> <http://purl.obolibrary.org/obo/NCBITaxon_9397> "bat"@en)
 AnnotationAssertion(rdfs:seeAlso <http://purl.obolibrary.org/obo/NCBITaxon_9397> "https://en.wikipedia.org/wiki/Bat")
 
-# Class: <http://purl.obolibrary.org/obo/NCBITaxon_9438> (<http://purl.obolibrary.org/obo/NCBITaxon_9438>)
+# Class: <http://purl.obolibrary.org/obo/NCBITaxon_9438> (Tadarida brasiliensis)
 
 AnnotationAssertion(<http://purl.org/dc/terms/contributor> <http://purl.obolibrary.org/obo/NCBITaxon_9438> "https://orcid.org/0000-0001-5275-8866")
 AnnotationAssertion(<http://www.geneontology.org/formats/oboInOwl#hasDbXref> <http://purl.obolibrary.org/obo/NCBITaxon_9438> "itis:180088")
 AnnotationAssertion(<http://www.geneontology.org/formats/oboInOwl#hasExactSynonym> <http://purl.obolibrary.org/obo/NCBITaxon_9438> "Brazilian free-tailed bat"@en)
 AnnotationAssertion(rdfs:seeAlso <http://purl.obolibrary.org/obo/NCBITaxon_9438> "https://en.wikipedia.org/wiki/Mexican_free-tailed_bat")
 
-# Class: <http://purl.obolibrary.org/obo/NCBITaxon_9544> (<http://purl.obolibrary.org/obo/NCBITaxon_9544>)
+# Class: <http://purl.obolibrary.org/obo/NCBITaxon_9544> (Macaca mulatta)
 
 AnnotationAssertion(<http://purl.org/dc/terms/contributor> <http://purl.obolibrary.org/obo/NCBITaxon_9544> "https://orcid.org/0000-0001-5275-8866")
 AnnotationAssertion(<http://www.geneontology.org/formats/oboInOwl#hasDbXref> <http://purl.obolibrary.org/obo/NCBITaxon_9544> "itis:180099")
 AnnotationAssertion(<http://www.geneontology.org/formats/oboInOwl#hasExactSynonym> <http://purl.obolibrary.org/obo/NCBITaxon_9544> "Rhesus monkey"@en)
 AnnotationAssertion(rdfs:seeAlso <http://purl.obolibrary.org/obo/NCBITaxon_9544> "https://en.wikipedia.org/wiki/Rhesus_macaque")
 
-# Class: <http://purl.obolibrary.org/obo/NCBITaxon_9614> (<http://purl.obolibrary.org/obo/NCBITaxon_9614>)
+# Class: <http://purl.obolibrary.org/obo/NCBITaxon_9614> (Canis latrans)
 
 AnnotationAssertion(<http://purl.org/dc/terms/contributor> <http://purl.obolibrary.org/obo/NCBITaxon_9614> "https://orcid.org/0000-0001-5275-8866")
 AnnotationAssertion(<http://www.geneontology.org/formats/oboInOwl#hasDbXref> <http://purl.obolibrary.org/obo/NCBITaxon_9614> "itis:180599")
 AnnotationAssertion(<http://www.geneontology.org/formats/oboInOwl#hasExactSynonym> <http://purl.obolibrary.org/obo/NCBITaxon_9614> "coyote"@en)
 AnnotationAssertion(rdfs:seeAlso <http://purl.obolibrary.org/obo/NCBITaxon_9614> "https://en.wikipedia.org/wiki/Coyote")
 
-# Class: <http://purl.obolibrary.org/obo/NCBITaxon_9627> (<http://purl.obolibrary.org/obo/NCBITaxon_9627>)
+# Class: <http://purl.obolibrary.org/obo/NCBITaxon_9627> (Vulpes vulpes)
 
 AnnotationAssertion(<http://purl.org/dc/terms/contributor> <http://purl.obolibrary.org/obo/NCBITaxon_9627> "https://orcid.org/0000-0001-5275-8866")
 AnnotationAssertion(<http://www.geneontology.org/formats/oboInOwl#hasDbXref> <http://purl.obolibrary.org/obo/NCBITaxon_9627> "itis:180604")
 AnnotationAssertion(<http://www.geneontology.org/formats/oboInOwl#hasExactSynonym> <http://purl.obolibrary.org/obo/NCBITaxon_9627> "red fox"@en)
 AnnotationAssertion(rdfs:seeAlso <http://purl.obolibrary.org/obo/NCBITaxon_9627> "https://en.wikipedia.org/wiki/Red_fox")
 
-# Class: <http://purl.obolibrary.org/obo/NCBITaxon_9689> (<http://purl.obolibrary.org/obo/NCBITaxon_9689>)
+# Class: <http://purl.obolibrary.org/obo/NCBITaxon_9689> (Panthera leo)
 
 AnnotationAssertion(<http://purl.org/dc/terms/contributor> <http://purl.obolibrary.org/obo/NCBITaxon_9689> "https://orcid.org/0000-0001-5275-8866")
 AnnotationAssertion(<http://www.geneontology.org/formats/oboInOwl#hasDbXref> <http://purl.obolibrary.org/obo/NCBITaxon_9689> "itis:183803")
 AnnotationAssertion(<http://www.geneontology.org/formats/oboInOwl#hasExactSynonym> <http://purl.obolibrary.org/obo/NCBITaxon_9689> "lion"@en)
 AnnotationAssertion(rdfs:seeAlso <http://purl.obolibrary.org/obo/NCBITaxon_9689> "https://en.wikipedia.org/wiki/Lion")
 
-# Class: <http://purl.obolibrary.org/obo/NCBITaxon_9690> (<http://purl.obolibrary.org/obo/NCBITaxon_9690>)
+# Class: <http://purl.obolibrary.org/obo/NCBITaxon_9690> (Panthera onca)
 
 AnnotationAssertion(<http://purl.org/dc/terms/contributor> <http://purl.obolibrary.org/obo/NCBITaxon_9690> "https://orcid.org/0000-0001-5275-8866")
 AnnotationAssertion(<http://www.geneontology.org/formats/oboInOwl#hasDbXref> <http://purl.obolibrary.org/obo/NCBITaxon_9690> "itis:180593")
 AnnotationAssertion(<http://www.geneontology.org/formats/oboInOwl#hasExactSynonym> <http://purl.obolibrary.org/obo/NCBITaxon_9690> "jaguar"@en)
 AnnotationAssertion(rdfs:seeAlso <http://purl.obolibrary.org/obo/NCBITaxon_9690> "https://en.wikipedia.org/wiki/Jaguar")
 
-# Class: <http://purl.obolibrary.org/obo/NCBITaxon_9691> (<http://purl.obolibrary.org/obo/NCBITaxon_9691>)
+# Class: <http://purl.obolibrary.org/obo/NCBITaxon_9691> (Panthera pardus)
 
 AnnotationAssertion(<http://purl.org/dc/terms/contributor> <http://purl.obolibrary.org/obo/NCBITaxon_9691> "https://orcid.org/0000-0001-5275-8866")
 AnnotationAssertion(<http://www.geneontology.org/formats/oboInOwl#hasDbXref> <http://purl.obolibrary.org/obo/NCBITaxon_9691> "itis:183804")
 AnnotationAssertion(<http://www.geneontology.org/formats/oboInOwl#hasExactSynonym> <http://purl.obolibrary.org/obo/NCBITaxon_9691> "leopard"@en)
 AnnotationAssertion(rdfs:seeAlso <http://purl.obolibrary.org/obo/NCBITaxon_9691> "https://en.wikipedia.org/wiki/Leopard")
 
-# Class: <http://purl.obolibrary.org/obo/NCBITaxon_9694> (<http://purl.obolibrary.org/obo/NCBITaxon_9694>)
+# Class: <http://purl.obolibrary.org/obo/NCBITaxon_9694> (Panthera tigris)
 
 AnnotationAssertion(<http://purl.org/dc/terms/contributor> <http://purl.obolibrary.org/obo/NCBITaxon_9694> "https://orcid.org/0000-0001-5275-8866")
 AnnotationAssertion(<http://www.geneontology.org/formats/oboInOwl#hasDbXref> <http://purl.obolibrary.org/obo/NCBITaxon_9694> "itis:183805")
 AnnotationAssertion(<http://www.geneontology.org/formats/oboInOwl#hasExactSynonym> <http://purl.obolibrary.org/obo/NCBITaxon_9694> "tiger"@en)
 AnnotationAssertion(rdfs:seeAlso <http://purl.obolibrary.org/obo/NCBITaxon_9694> "https://en.wikipedia.org/wiki/Tiger")
 
-# Class: <http://purl.obolibrary.org/obo/NCBITaxon_9807> (<http://purl.obolibrary.org/obo/NCBITaxon_9807>)
+# Class: <http://purl.obolibrary.org/obo/NCBITaxon_9807> (Ceratotherium simum)
 
 AnnotationAssertion(<http://purl.org/dc/terms/contributor> <http://purl.obolibrary.org/obo/NCBITaxon_9807> "https://orcid.org/0000-0001-5275-8866")
 AnnotationAssertion(<http://www.geneontology.org/formats/oboInOwl#hasDbXref> <http://purl.obolibrary.org/obo/NCBITaxon_9807> "itis:625001")
 AnnotationAssertion(<http://www.geneontology.org/formats/oboInOwl#hasExactSynonym> <http://purl.obolibrary.org/obo/NCBITaxon_9807> "white rhinoceros"@en)
 AnnotationAssertion(rdfs:seeAlso <http://purl.obolibrary.org/obo/NCBITaxon_9807> "https://en.wikipedia.org/wiki/White_rhinoceros")
 
-# Class: <http://purl.obolibrary.org/obo/NCBITaxon_9808> (<http://purl.obolibrary.org/obo/NCBITaxon_9808>)
+# Class: <http://purl.obolibrary.org/obo/NCBITaxon_9808> (Rhinoceros)
 
 AnnotationAssertion(<http://purl.org/dc/terms/contributor> <http://purl.obolibrary.org/obo/NCBITaxon_9808> "https://orcid.org/0000-0001-5275-8866")
 AnnotationAssertion(<http://www.geneontology.org/formats/oboInOwl#hasDbXref> <http://purl.obolibrary.org/obo/NCBITaxon_9808> "itis:624934")
 AnnotationAssertion(rdfs:seeAlso <http://purl.obolibrary.org/obo/NCBITaxon_9808> "https://en.wikipedia.org/wiki/Rhinoceros")
 
-# Class: <http://purl.obolibrary.org/obo/NCBITaxon_9825> (<http://purl.obolibrary.org/obo/NCBITaxon_9825>)
+# Class: <http://purl.obolibrary.org/obo/NCBITaxon_9825> (Sus scrofa domesticus)
 
 AnnotationAssertion(<http://purl.org/dc/terms/contributor> <http://purl.obolibrary.org/obo/NCBITaxon_9825> "https://orcid.org/0000-0001-5275-8866")
 AnnotationAssertion(<http://www.geneontology.org/formats/oboInOwl#hasDbXref> <http://purl.obolibrary.org/obo/NCBITaxon_9825> "itis:898917")
 AnnotationAssertion(<http://www.geneontology.org/formats/oboInOwl#hasExactSynonym> <http://purl.obolibrary.org/obo/NCBITaxon_9825> "domestic pig"@en)
 AnnotationAssertion(rdfs:seeAlso <http://purl.obolibrary.org/obo/NCBITaxon_9825> "https://en.wikipedia.org/wiki/Domestic_pig")
 
-# Class: <http://purl.obolibrary.org/obo/NCBITaxon_9899> (<http://purl.obolibrary.org/obo/NCBITaxon_9899>)
+# Class: <http://purl.obolibrary.org/obo/NCBITaxon_9899> (Ammotragus lervia)
 
 AnnotationAssertion(<http://purl.org/dc/terms/contributor> <http://purl.obolibrary.org/obo/NCBITaxon_9899> "https://orcid.org/0000-0001-5275-8866")
 AnnotationAssertion(<http://www.geneontology.org/formats/oboInOwl#hasDbXref> <http://purl.obolibrary.org/obo/NCBITaxon_9899> "itis:180719")
 AnnotationAssertion(<http://www.geneontology.org/formats/oboInOwl#hasExactSynonym> <http://purl.obolibrary.org/obo/NCBITaxon_9899> "auodad"@en)
 AnnotationAssertion(rdfs:seeAlso <http://purl.obolibrary.org/obo/NCBITaxon_9899> "https://en.wikipedia.org/wiki/Barbary_sheep")
 
-# Class: <http://purl.obolibrary.org/obo/NCBITaxon_9933> (<http://purl.obolibrary.org/obo/NCBITaxon_9933>)
+# Class: <http://purl.obolibrary.org/obo/NCBITaxon_9933> (Gazella)
 
 AnnotationAssertion(<http://purl.org/dc/terms/contributor> <http://purl.obolibrary.org/obo/NCBITaxon_9933> "https://orcid.org/0000-0001-5275-8866")
 AnnotationAssertion(<http://www.geneontology.org/formats/oboInOwl#hasDbXref> <http://purl.obolibrary.org/obo/NCBITaxon_9933> "itis:624969")
 AnnotationAssertion(<http://www.geneontology.org/formats/oboInOwl#hasExactSynonym> <http://purl.obolibrary.org/obo/NCBITaxon_9933> "gazelle"@en)
 AnnotationAssertion(rdfs:seeAlso <http://purl.obolibrary.org/obo/NCBITaxon_9933> "https://en.wikipedia.org/wiki/Gazelle")
 
-# Class: <http://purl.obolibrary.org/obo/NCBITaxon_9952> (<http://purl.obolibrary.org/obo/NCBITaxon_9952>)
+# Class: <http://purl.obolibrary.org/obo/NCBITaxon_9952> (Cephalophinae)
 
 AnnotationAssertion(<http://purl.org/dc/terms/contributor> <http://purl.obolibrary.org/obo/NCBITaxon_9952> "https://orcid.org/0000-0001-5275-8866")
 AnnotationAssertion(<http://www.geneontology.org/formats/oboInOwl#hasExactSynonym> <http://purl.obolibrary.org/obo/NCBITaxon_9952> "duiker"@en)
 AnnotationAssertion(rdfs:seeAlso <http://purl.obolibrary.org/obo/NCBITaxon_9952> "https://en.wikipedia.org/wiki/Duiker")
 
-# Class: <http://purl.obolibrary.org/obo/NCBITaxon_9954> (<http://purl.obolibrary.org/obo/NCBITaxon_9954>)
+# Class: <http://purl.obolibrary.org/obo/NCBITaxon_9954> (Cephalophus)
 
 AnnotationAssertion(<http://purl.org/dc/terms/contributor> <http://purl.obolibrary.org/obo/NCBITaxon_9954> "https://orcid.org/0000-0001-5275-8866")
 AnnotationAssertion(<http://www.geneontology.org/formats/oboInOwl#hasDbXref> <http://purl.obolibrary.org/obo/NCBITaxon_9954> "itis:183848")
