@@ -9,6 +9,7 @@ Prefix(rdfs:=<http://www.w3.org/2000/01/rdf-schema#>)
 Ontology(<http://purl.obolibrary.org/obo/foodon/imports/robot_plant_parts.ofn>
 
 Declaration(Class(<http://purl.obolibrary.org/obo/BFO_0000027>))
+Declaration(Class(<http://purl.obolibrary.org/obo/BTO_0000262>))
 Declaration(Class(<http://purl.obolibrary.org/obo/BTO_0001217>))
 Declaration(Class(<http://purl.obolibrary.org/obo/FAO_0000007>))
 Declaration(Class(<http://purl.obolibrary.org/obo/FLOPO_0003948>))
@@ -3798,8 +3799,7 @@ AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000115> <http://purl.ob
 AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000119> <http://purl.obolibrary.org/obo/FOODON_00003583> "https://en.wikipedia.org/wiki/Garlic")
 AnnotationAssertion(<http://purl.org/dc/terms/date> <http://purl.obolibrary.org/obo/FOODON_00003583> "2020-12-16T22:42:26"^^xsd:dateTime)
 AnnotationAssertion(rdfs:label <http://purl.obolibrary.org/obo/FOODON_00003583> "garlic clove"@en)
-EquivalentClasses(<http://purl.obolibrary.org/obo/FOODON_00003583> ObjectIntersectionOf(<http://purl.obolibrary.org/obo/FOODON_00003793> ObjectSomeValuesFrom(<http://purl.obolibrary.org/obo/RO_0002162> <http://purl.obolibrary.org/obo/NCBITaxon_4682>)))
-SubClassOf(<http://purl.obolibrary.org/obo/FOODON_00003583> <http://purl.obolibrary.org/obo/FOODON_00003793>)
+EquivalentClasses(<http://purl.obolibrary.org/obo/FOODON_00003583> ObjectIntersectionOf(<http://purl.obolibrary.org/obo/BTO_0000262> ObjectSomeValuesFrom(<http://purl.obolibrary.org/obo/RO_0002162> <http://purl.obolibrary.org/obo/NCBITaxon_4682>)))
 
 # Class: <http://purl.obolibrary.org/obo/FOODON_00003584> (garlic scape)
 
@@ -5872,13 +5872,13 @@ AnnotationAssertion(rdfs:label <http://purl.obolibrary.org/obo/FOODON_00003792> 
 EquivalentClasses(<http://purl.obolibrary.org/obo/FOODON_00003792> ObjectIntersectionOf(<http://purl.obolibrary.org/obo/PO_0009010> ObjectSomeValuesFrom(<http://purl.obolibrary.org/obo/RO_0002162> <http://purl.obolibrary.org/obo/NCBITaxon_105181>)))
 SubClassOf(<http://purl.obolibrary.org/obo/FOODON_00003792> <http://purl.obolibrary.org/obo/FOODON_00001683>)
 
-# Class: <http://purl.obolibrary.org/obo/FOODON_00003793> (clove)
+# Class: <http://purl.obolibrary.org/obo/FOODON_00003793> (clove (spice))
 
 AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000115> <http://purl.obolibrary.org/obo/FOODON_00003793> "A flower bud of a clove plant (Syzygium aromaticum)."@en)
 AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000119> <http://purl.obolibrary.org/obo/FOODON_00003793> "https://en.wikipedia.org/wiki/Clove")
 AnnotationAssertion(<http://purl.org/dc/terms/date> <http://purl.obolibrary.org/obo/FOODON_00003793> "2021-02-12T17:29:05"^^xsd:dateTime)
 AnnotationAssertion(<http://www.geneontology.org/formats/oboInOwl#hasExactSynonym> <http://purl.obolibrary.org/obo/FOODON_00003793> "clove"@en)
-AnnotationAssertion(rdfs:label <http://purl.obolibrary.org/obo/FOODON_00003793> "clove"@en)
+AnnotationAssertion(rdfs:label <http://purl.obolibrary.org/obo/FOODON_00003793> "clove (spice)"@en)
 EquivalentClasses(<http://purl.obolibrary.org/obo/FOODON_00003793> ObjectIntersectionOf(<http://purl.obolibrary.org/obo/PO_0000056> ObjectSomeValuesFrom(<http://purl.obolibrary.org/obo/RO_0002162> <http://purl.obolibrary.org/obo/NCBITaxon_219868>)))
 SubClassOf(<http://purl.obolibrary.org/obo/FOODON_00003793> <http://purl.obolibrary.org/obo/PO_0000056>)
 
