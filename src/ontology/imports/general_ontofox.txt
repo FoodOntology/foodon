@@ -566,6 +566,9 @@ includeAllChildren
 http://purl.obolibrary.org/obo/PATO_0000261 # maturity
 includeAllChildren
 
+http://purl.obolibrary.org/obo/PATO_0000309 # young
+http://purl.obolibrary.org/obo/PATO_0000308 # old
+
 [Top level source term URIs and target direct superclass URIs]
 http://purl.obolibrary.org/obo/PATO_0000001
 subClassOf http://purl.obolibrary.org/obo/BFO_0000020
