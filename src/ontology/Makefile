@@ -4,7 +4,7 @@ ONT=foodon
 BASE=$(OBO)/$(ONT)
 SRC=$(ONT)-edit.ofn
 RELEASEDIR=../..
-ROBOT= robot
+ROBOT= robot --catalog catalog-v001.xml
 OWLTOOLS= owltools
 
 # THE "make" PROCESS VIA robot/owlapi PAYS ATTENTION TO THE catalog-v001.xml
@@ -25,7 +25,11 @@ OWLTOOLS= owltools
 all: all_imports $(ONT).owl
 
 .PHONY: test
-test: reason
+test: reason owl2dl
+
+.PHONY: owl2dl
+owl2dl: foodon-merged.ofn
+	$(ROBOT) validate-profile -i $< --profile DL -o owl2_profile_violations.txt
 
 # Run a basic reasoner to find inconsistencies
 .PHONY: reason
@@ -53,7 +57,7 @@ $(ONT).owl: $(SRC)
 # import files have them.
 # remove --select "owl:NamedIndividual=obo:BFO_*"
 	$(ROBOT) merge --input $(SRC) --xml-entities reason --reasoner ELK --equivalent-classes-allowed false relax reduce --output $(ONT)-merged.ofn
-
+	make test
 	python3 foodon-merged-remediation.py
 
 # Make foodon-base.owl, stripped of food product import tags and files
