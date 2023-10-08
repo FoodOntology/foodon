@@ -3860,10 +3860,6 @@ SubClassOf(<http://purl.obolibrary.org/obo/FOODON_00003589> <http://purl.obolibr
 
 AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000115> <http://purl.obolibrary.org/obo/FOODON_00003590> "A leaf of a casava plant (Manihot esculenta)"@en)
 AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000119> <http://purl.obolibrary.org/obo/FOODON_00003590> "https://en.wikipedia.org/wiki/Cassava")
-AnnotationAssertion(<http://www.geneontology.org/formats/oboInOwl#hasExactSynonym> <http://purl.obolibrary.org/obo/FOODON_00003590> "cassava"@en)
-AnnotationAssertion(<http://www.geneontology.org/formats/oboInOwl#hasExactSynonym> <http://purl.obolibrary.org/obo/FOODON_00003590> "manioc"@en)
-AnnotationAssertion(<http://www.geneontology.org/formats/oboInOwl#hasExactSynonym> <http://purl.obolibrary.org/obo/FOODON_00003590> "tapioca"@en)
-AnnotationAssertion(<http://www.geneontology.org/formats/oboInOwl#hasExactSynonym> <http://purl.obolibrary.org/obo/FOODON_00003590> "yuca"@en)
 AnnotationAssertion(rdfs:label <http://purl.obolibrary.org/obo/FOODON_00003590> "cassava leaf"@en)
 EquivalentClasses(<http://purl.obolibrary.org/obo/FOODON_00003590> ObjectIntersectionOf(<http://purl.obolibrary.org/obo/PO_0025034> ObjectSomeValuesFrom(<http://purl.obolibrary.org/obo/RO_0002162> <http://purl.obolibrary.org/obo/NCBITaxon_3983>)))
 SubClassOf(<http://purl.obolibrary.org/obo/FOODON_00003590> <http://purl.obolibrary.org/obo/PO_0025034>)
