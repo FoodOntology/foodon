@@ -1,0 +1,142 @@
+Prefix(:=<http://purl.obolibrary.org/obo/foodon/imports/robot_food_production_streams.ofn#>)
+Prefix(owl:=<http://www.w3.org/2002/07/owl#>)
+Prefix(rdf:=<http://www.w3.org/1999/02/22-rdf-syntax-ns#>)
+Prefix(xml:=<http://www.w3.org/XML/1998/namespace>)
+Prefix(xsd:=<http://www.w3.org/2001/XMLSchema#>)
+Prefix(rdfs:=<http://www.w3.org/2000/01/rdf-schema#>)
+
+
+Ontology(<http://purl.obolibrary.org/obo/foodon/imports/robot_food_production_streams.ofn>
+
+Declaration(Class(<http://purl.obolibrary.org/obo/FOODON_03000449>))
+Declaration(Class(<http://purl.obolibrary.org/obo/FOODON_03000451>))
+Declaration(Class(<http://purl.obolibrary.org/obo/FOODON_03000452>))
+Declaration(Class(<http://purl.obolibrary.org/obo/FOODON_03000453>))
+Declaration(Class(<http://purl.obolibrary.org/obo/FOODON_03000454>))
+Declaration(Class(<http://purl.obolibrary.org/obo/FOODON_03000455>))
+Declaration(Class(<http://purl.obolibrary.org/obo/FOODON_03000456>))
+Declaration(Class(<http://purl.obolibrary.org/obo/FOODON_03000458>))
+Declaration(Class(<http://purl.obolibrary.org/obo/FOODON_03000459>))
+Declaration(Class(<http://purl.obolibrary.org/obo/FOODON_03000460>))
+Declaration(Class(<http://purl.obolibrary.org/obo/FOODON_03000461>))
+Declaration(Class(<http://purl.obolibrary.org/obo/FOODON_03000462>))
+Declaration(Class(<http://purl.obolibrary.org/obo/FOODON_03530206>))
+Declaration(AnnotationProperty(<http://purl.obolibrary.org/obo/IAO_0000115>))
+Declaration(AnnotationProperty(<http://purl.obolibrary.org/obo/IAO_0000119>))
+Declaration(AnnotationProperty(<http://purl.org/dc/terms/contributor>))
+Declaration(AnnotationProperty(<http://www.geneontology.org/formats/oboInOwl#hasExactSynonym>))
+
+
+############################
+#   Classes
+############################
+
+# Class: <http://purl.obolibrary.org/obo/FOODON_03000449> (food production stream)
+
+AnnotationAssertion(<http://purl.org/dc/terms/contributor> <http://purl.obolibrary.org/obo/FOODON_03000449> " https://orcid.org/0000-0002-9578-07888 "^^xsd:string)
+AnnotationAssertion(<http://purl.org/dc/terms/contributor> <http://purl.obolibrary.org/obo/FOODON_03000449> "https://orcid.org/0000-0001-5275-8866  "^^xsd:string)
+AnnotationAssertion(rdfs:label <http://purl.obolibrary.org/obo/FOODON_03000449> "food production stream"@en)
+SubClassOf(<http://purl.obolibrary.org/obo/FOODON_03000449> <http://purl.obolibrary.org/obo/FOODON_03530206>)
+
+# Class: <http://purl.obolibrary.org/obo/FOODON_03000451> (cattle production stream)
+
+AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000115> <http://purl.obolibrary.org/obo/FOODON_03000451> "A food animal production stream that involves breeding, rearing, and finishing cattle."@en)
+AnnotationAssertion(<http://purl.org/dc/terms/contributor> <http://purl.obolibrary.org/obo/FOODON_03000451> " https://orcid.org/0000-0002-9578-07888 "^^xsd:string)
+AnnotationAssertion(<http://purl.org/dc/terms/contributor> <http://purl.obolibrary.org/obo/FOODON_03000451> "https://orcid.org/0000-0001-5275-8866  "^^xsd:string)
+AnnotationAssertion(<http://www.geneontology.org/formats/oboInOwl#hasExactSynonym> <http://purl.obolibrary.org/obo/FOODON_03000451> "cattle production pathway"@en)
+AnnotationAssertion(<http://www.geneontology.org/formats/oboInOwl#hasExactSynonym> <http://purl.obolibrary.org/obo/FOODON_03000451> "cattle production system"@en)
+AnnotationAssertion(rdfs:label <http://purl.obolibrary.org/obo/FOODON_03000451> "cattle production stream"@en)
+SubClassOf(<http://purl.obolibrary.org/obo/FOODON_03000451> <http://purl.obolibrary.org/obo/FOODON_03000449>)
+
+# Class: <http://purl.obolibrary.org/obo/FOODON_03000452> (beef cattle production stream)
+
+AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000115> <http://purl.obolibrary.org/obo/FOODON_03000452> "A cattle production stream that involves breeding, rearing and finishing of cows intended for beef consumption."@en)
+AnnotationAssertion(<http://purl.org/dc/terms/contributor> <http://purl.obolibrary.org/obo/FOODON_03000452> " https://orcid.org/0000-0002-9578-07888 "^^xsd:string)
+AnnotationAssertion(<http://purl.org/dc/terms/contributor> <http://purl.obolibrary.org/obo/FOODON_03000452> "https://orcid.org/0000-0001-5275-8866  "^^xsd:string)
+AnnotationAssertion(rdfs:label <http://purl.obolibrary.org/obo/FOODON_03000452> "beef cattle production stream"@en)
+SubClassOf(<http://purl.obolibrary.org/obo/FOODON_03000452> <http://purl.obolibrary.org/obo/FOODON_03000451>)
+
+# Class: <http://purl.obolibrary.org/obo/FOODON_03000453> (dairy cattle production stream)
+
+AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000115> <http://purl.obolibrary.org/obo/FOODON_03000453> "A cattle production stream that involves breeding, rearing and management of cattle intended for the production of milk."@en)
+AnnotationAssertion(<http://purl.org/dc/terms/contributor> <http://purl.obolibrary.org/obo/FOODON_03000453> " https://orcid.org/0000-0002-9578-07888 "^^xsd:string)
+AnnotationAssertion(<http://purl.org/dc/terms/contributor> <http://purl.obolibrary.org/obo/FOODON_03000453> "https://orcid.org/0000-0001-5275-8866  "^^xsd:string)
+AnnotationAssertion(rdfs:label <http://purl.obolibrary.org/obo/FOODON_03000453> "dairy cattle production stream"@en)
+SubClassOf(<http://purl.obolibrary.org/obo/FOODON_03000453> <http://purl.obolibrary.org/obo/FOODON_03000451>)
+
+# Class: <http://purl.obolibrary.org/obo/FOODON_03000454> (poultry production stream)
+
+AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000115> <http://purl.obolibrary.org/obo/FOODON_03000454> "A food animal production stream that involves breeding, rearing, and finishing poultry."@en)
+AnnotationAssertion(<http://purl.org/dc/terms/contributor> <http://purl.obolibrary.org/obo/FOODON_03000454> " https://orcid.org/0000-0002-9578-07888 "^^xsd:string)
+AnnotationAssertion(<http://purl.org/dc/terms/contributor> <http://purl.obolibrary.org/obo/FOODON_03000454> "https://orcid.org/0000-0001-5275-8866  "^^xsd:string)
+AnnotationAssertion(<http://www.geneontology.org/formats/oboInOwl#hasExactSynonym> <http://purl.obolibrary.org/obo/FOODON_03000454> "poultry production pathway"@en)
+AnnotationAssertion(<http://www.geneontology.org/formats/oboInOwl#hasExactSynonym> <http://purl.obolibrary.org/obo/FOODON_03000454> "poultry production system"@en)
+AnnotationAssertion(rdfs:label <http://purl.obolibrary.org/obo/FOODON_03000454> "poultry production stream"@en)
+SubClassOf(<http://purl.obolibrary.org/obo/FOODON_03000454> <http://purl.obolibrary.org/obo/FOODON_03000449>)
+
+# Class: <http://purl.obolibrary.org/obo/FOODON_03000455> (broiler chicken production stream)
+
+AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000115> <http://purl.obolibrary.org/obo/FOODON_03000455> "A poultry production stream that involves breeding, rearing and finishing of broiler chickens intended for consumption."@en)
+AnnotationAssertion(<http://purl.org/dc/terms/contributor> <http://purl.obolibrary.org/obo/FOODON_03000455> " https://orcid.org/0000-0002-9578-07888 "^^xsd:string)
+AnnotationAssertion(<http://purl.org/dc/terms/contributor> <http://purl.obolibrary.org/obo/FOODON_03000455> "https://orcid.org/0000-0001-5275-8866  "^^xsd:string)
+AnnotationAssertion(rdfs:label <http://purl.obolibrary.org/obo/FOODON_03000455> "broiler chicken production stream"@en)
+SubClassOf(<http://purl.obolibrary.org/obo/FOODON_03000455> <http://purl.obolibrary.org/obo/FOODON_03000454>)
+
+# Class: <http://purl.obolibrary.org/obo/FOODON_03000456> (layer chicken production stream)
+
+AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000115> <http://purl.obolibrary.org/obo/FOODON_03000456> "A poultry production stream that involves breeding, rearing and finishing of layer chickens intended for the production of eggs."@en)
+AnnotationAssertion(<http://purl.org/dc/terms/contributor> <http://purl.obolibrary.org/obo/FOODON_03000456> " https://orcid.org/0000-0002-9578-07888 "^^xsd:string)
+AnnotationAssertion(<http://purl.org/dc/terms/contributor> <http://purl.obolibrary.org/obo/FOODON_03000456> "https://orcid.org/0000-0001-5275-8866  "^^xsd:string)
+AnnotationAssertion(rdfs:label <http://purl.obolibrary.org/obo/FOODON_03000456> "layer chicken production stream"@en)
+SubClassOf(<http://purl.obolibrary.org/obo/FOODON_03000456> <http://purl.obolibrary.org/obo/FOODON_03000454>)
+
+# Class: <http://purl.obolibrary.org/obo/FOODON_03000458> (egg production stream)
+
+AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000115> <http://purl.obolibrary.org/obo/FOODON_03000458> "A food production stream that involves production and processing of eggs."@en)
+AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000119> <http://purl.obolibrary.org/obo/FOODON_03000458> "https://www.woah.org/fileadmin/Home/eng/Health_standards/tahc/current/chapitre_aw_dairy_cattle.pdf"^^xsd:string)
+AnnotationAssertion(<http://purl.org/dc/terms/contributor> <http://purl.obolibrary.org/obo/FOODON_03000458> " https://orcid.org/0000-0002-9578-07888 "^^xsd:string)
+AnnotationAssertion(<http://purl.org/dc/terms/contributor> <http://purl.obolibrary.org/obo/FOODON_03000458> "https://orcid.org/0000-0001-5275-8866  "^^xsd:string)
+AnnotationAssertion(rdfs:comment <http://purl.obolibrary.org/obo/FOODON_03000458> "Typically used in retail and consumption."@en)
+AnnotationAssertion(rdfs:label <http://purl.obolibrary.org/obo/FOODON_03000458> "egg production stream"@en)
+SubClassOf(<http://purl.obolibrary.org/obo/FOODON_03000458> <http://purl.obolibrary.org/obo/FOODON_03000449>)
+
+# Class: <http://purl.obolibrary.org/obo/FOODON_03000459> (milk production stream)
+
+AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000115> <http://purl.obolibrary.org/obo/FOODON_03000459> "A food production stream that involves production and processing of milk."@en)
+AnnotationAssertion(<http://purl.org/dc/terms/contributor> <http://purl.obolibrary.org/obo/FOODON_03000459> " https://orcid.org/0000-0002-9578-07888 "^^xsd:string)
+AnnotationAssertion(<http://purl.org/dc/terms/contributor> <http://purl.obolibrary.org/obo/FOODON_03000459> "https://orcid.org/0000-0001-5275-8866  "^^xsd:string)
+AnnotationAssertion(rdfs:comment <http://purl.obolibrary.org/obo/FOODON_03000459> "Typically used in retail and consumption."@en)
+AnnotationAssertion(rdfs:label <http://purl.obolibrary.org/obo/FOODON_03000459> "milk production stream"@en)
+SubClassOf(<http://purl.obolibrary.org/obo/FOODON_03000459> <http://purl.obolibrary.org/obo/FOODON_03000449>)
+
+# Class: <http://purl.obolibrary.org/obo/FOODON_03000460> (meat production stream)
+
+AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000115> <http://purl.obolibrary.org/obo/FOODON_03000460> "A food production stream that involves production and processing of meat."@en)
+AnnotationAssertion(<http://purl.org/dc/terms/contributor> <http://purl.obolibrary.org/obo/FOODON_03000460> " https://orcid.org/0000-0002-9578-07888 "^^xsd:string)
+AnnotationAssertion(<http://purl.org/dc/terms/contributor> <http://purl.obolibrary.org/obo/FOODON_03000460> "https://orcid.org/0000-0001-5275-8866  "^^xsd:string)
+AnnotationAssertion(rdfs:comment <http://purl.obolibrary.org/obo/FOODON_03000460> "Typically used in retail and consumption."@en)
+AnnotationAssertion(rdfs:label <http://purl.obolibrary.org/obo/FOODON_03000460> "meat production stream"@en)
+SubClassOf(<http://purl.obolibrary.org/obo/FOODON_03000460> <http://purl.obolibrary.org/obo/FOODON_03000449>)
+
+# Class: <http://purl.obolibrary.org/obo/FOODON_03000461> (veal meat production stream)
+
+AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000115> <http://purl.obolibrary.org/obo/FOODON_03000461> "A meat production stream that involves production and processing of veal."@en)
+AnnotationAssertion(<http://purl.org/dc/terms/contributor> <http://purl.obolibrary.org/obo/FOODON_03000461> " https://orcid.org/0000-0002-9578-07888 "^^xsd:string)
+AnnotationAssertion(<http://purl.org/dc/terms/contributor> <http://purl.obolibrary.org/obo/FOODON_03000461> "https://orcid.org/0000-0001-5275-8866  "^^xsd:string)
+AnnotationAssertion(rdfs:comment <http://purl.obolibrary.org/obo/FOODON_03000461> "Typically used in retail and consumption."@en)
+AnnotationAssertion(rdfs:label <http://purl.obolibrary.org/obo/FOODON_03000461> "veal meat production stream"@en)
+SubClassOf(<http://purl.obolibrary.org/obo/FOODON_03000461> <http://purl.obolibrary.org/obo/FOODON_03000460>)
+
+# Class: <http://purl.obolibrary.org/obo/FOODON_03000462> (swine production stream)
+
+AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000115> <http://purl.obolibrary.org/obo/FOODON_03000462> "A food animal production stream that involves breeding, rearing, and finishing swine."@en)
+AnnotationAssertion(<http://purl.org/dc/terms/contributor> <http://purl.obolibrary.org/obo/FOODON_03000462> " https://orcid.org/0000-0002-9578-07888 "^^xsd:string)
+AnnotationAssertion(<http://purl.org/dc/terms/contributor> <http://purl.obolibrary.org/obo/FOODON_03000462> "https://orcid.org/0000-0001-5275-8866  "^^xsd:string)
+AnnotationAssertion(<http://www.geneontology.org/formats/oboInOwl#hasExactSynonym> <http://purl.obolibrary.org/obo/FOODON_03000462> "swine production pathway"@en)
+AnnotationAssertion(<http://www.geneontology.org/formats/oboInOwl#hasExactSynonym> <http://purl.obolibrary.org/obo/FOODON_03000462> "swine production system"@en)
+AnnotationAssertion(rdfs:comment <http://purl.obolibrary.org/obo/FOODON_03000462> "Typically used in retail and consumption."@en)
+AnnotationAssertion(rdfs:label <http://purl.obolibrary.org/obo/FOODON_03000462> "swine production stream"@en)
+SubClassOf(<http://purl.obolibrary.org/obo/FOODON_03000462> <http://purl.obolibrary.org/obo/FOODON_03000449>)
+
+
+)
