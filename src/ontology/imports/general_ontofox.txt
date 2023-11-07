@@ -246,7 +246,15 @@ http://purl.obolibrary.org/obo/IAO_0100001 # replaced by
 http://purl.obolibrary.org/obo/CHEBI_16646 # has alternative id
 
 [Source annotation URIs to be excluded]
-
+http://purl.obolibrary.org/obo/chebi/charge
+http://purl.obolibrary.org/obo/chebi/formula
+http://www.geneontology.org/formats/oboInOwl#inSubset
+http://purl.obolibrary.org/obo/chebi/inchi
+http://purl.obolibrary.org/obo/chebi/inchikey
+http://purl.obolibrary.org/obo/chebi/mass
+http://purl.obolibrary.org/obo/chebi/monoisotopicmass
+http://purl.obolibrary.org/obo/chebi/smiles
+http://www.geneontology.org/formats/oboInOwl#hasDbXref
 
 ###########################################
 
