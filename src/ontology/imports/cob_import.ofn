@@ -229,7 +229,6 @@ SubClassOf(obo:CARO_0001008 obo:BFO_0000040)
 
 AnnotationAssertion(obo:IAO_0000412 obo:CHEBI_10545 obo:cob.owl)
 AnnotationAssertion(rdfs:label obo:CHEBI_10545 "electron"@en)
-AnnotationAssertion(rdfs:label obo:CHEBI_10545 "nucleic acid polymer")
 SubClassOf(obo:CHEBI_10545 obo:CHEBI_36342)
 SubClassOf(obo:CHEBI_10545 obo:COB_0000013)
 SubClassOf(obo:CHEBI_10545 DataHasValue(obo:COB_0000801 "0"^^xsd:integer))
