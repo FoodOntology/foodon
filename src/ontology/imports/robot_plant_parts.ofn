@@ -7704,7 +7704,6 @@ SubClassOf(<http://purl.obolibrary.org/obo/FOODON_00004441> <http://purl.obolibr
 
 # Class: <http://purl.obolibrary.org/obo/FOODON_00004442> (green acorn squash)
 
-AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000115> <http://purl.obolibrary.org/obo/FOODON_00004442> "A squash from a green acorn squash plant."@en)
 AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000115> <http://purl.obolibrary.org/obo/FOODON_00004442> "A whole acorn squash which has a green skin."@en)
 AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000119> <http://purl.obolibrary.org/obo/FOODON_00004442> "https://en.wikipedia.org/wiki/Acorn_squash")
 AnnotationAssertion(<http://purl.org/dc/terms/date> <http://purl.obolibrary.org/obo/FOODON_00004442> "2023-06-20T21:50:47Z"^^xsd:dateTime)
@@ -7713,7 +7712,6 @@ SubClassOf(<http://purl.obolibrary.org/obo/FOODON_00004442> <http://purl.obolibr
 
 # Class: <http://purl.obolibrary.org/obo/FOODON_00004443> (green acorn squash (raw))
 
-AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000115> <http://purl.obolibrary.org/obo/FOODON_00004443> "A raw green acorn squash."@en)
 AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000115> <http://purl.obolibrary.org/obo/FOODON_00004443> "A whole green acorn squash which is raw."@en)
 AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000119> <http://purl.obolibrary.org/obo/FOODON_00004443> "https://en.wikipedia.org/wiki/Acorn_squash")
 AnnotationAssertion(<http://purl.org/dc/terms/contributor> <http://purl.obolibrary.org/obo/FOODON_00004443> "https://orcid.org/0000-0002-8844-9165")
