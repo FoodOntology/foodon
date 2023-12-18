@@ -1,6 +1,9 @@
 [URI of the OWL(RDF/XML) output file]
 http://purl.obolibrary.org/obo/foodon/imports/ncbitaxon_import.ofn
 
+# IF THIS ISN'T RETURNING VALID RESULTS, chances are that a line doesn't 
+# begin with a comment # or an "h"!  Regex search: ^[^h\n]
+
 [Source ontology]
 NCBITaxon
 
@@ -9,28 +12,61 @@ NCBITaxon
 # NEED Smilax aristolochiifolia / Mexican sasparilla
 # NEED Mitragyna javanica
 
-# DELETED IN NCBITaxon http://purl.obolibrary.org/obo/NCBITaxon_30478 # Raja rhina
+# DELETED NCBITaxon_30478 # Raja rhina
 http://purl.obolibrary.org/obo/NCBITaxon_2838338 # Beringraja rhina (Synonym: Raja rhina, Alternative ID->NCBITaxon_30478)
 
-# DELETED " http://purl.obolibrary.org/obo/NCBITaxon_218804 # Leiognathus equulus
+# DELETED NCBITaxon_218804 # Leiognathus equulus
 http://purl.obolibrary.org/obo/NCBITaxon_2893490 # Leiognathus equula (Alternative ID-> NCBITaxon_218804)
 
-# DELETED " http://purl.obolibrary.org/obo/NCBITaxon_1428164 # species:Sorghum X drummondii (Nees ex Steud.) Millsp. & Chase 
+# DELETED NCBITaxon_1428164 # species:Sorghum X drummondii (Nees ex Steud.) Millsp. & Chase 
 
-# DELETED " http://purl.obolibrary.org/obo/NCBITaxon_302770 # Hermosilla azurea
+# DELETED NCBITaxon_302770 # Hermosilla azurea
 http://purl.obolibrary.org/obo/NCBITaxon_2838349 # Kyphosus azureus (Synonym: Hermosilla azurea, Alternative ID-> NCBITaxon_302770)
 
-# DELETED " http://purl.obolibrary.org/obo/NCBITaxon_341241 # Raja binoculata
+# DELETED NCBITaxon_341241 # Raja binoculata
 http://purl.obolibrary.org/obo/NCBITaxon_2838337 # Beringraja binoculata ( Synonym: Raja binoculare, Alternative ID-> NCBITaxon_341241)
 
-# DELETED " http://purl.obolibrary.org/obo/NCBITaxon_50905 # Rhacochilus vacca
+# DELETED NCBITaxon_50905 # Rhacochilus vacca
 http://purl.obolibrary.org/obo/NCBITaxon_2838341 # Phanerodon vaccai (Synonym: Rhacochilus vacca, Alternative ID->NCBITaxon_50905)
 
-# DELETED " http://purl.obolibrary.org/obo/NCBITaxon_740706 # Raja inornata
+# DELETED NCBITaxon_740706 # Raja inornata
 http://purl.obolibrary.org/obo/NCBITaxon_2838339 # Beringraja inornata (synonym: Raja inornata, Alternative ID->NCBITaxon_740706)
 
-# DELETED " http://purl.obolibrary.org/obo/NCBITaxon_114055 # Chlorella / Chlorella <Trebouxiophyceae incertae sedis>
+# DELETED NCBITaxon_114055 # Chlorella / Chlorella <Trebouxiophyceae incertae sedis>
 http://purl.obolibrary.org/obo/NCBITaxon_3071 # Chlorella
+
+# DELETED NCBITaxon_3840 Vigna unguiculata subsp. cylindrica
+http://purl.obolibrary.org/obo/NCBITaxon_3091605 # 'Vigna cylindrica'
+
+# DELETED NCBITaxon_2843217 Rhaphiolepis bibas replaced by NCBITaxon_32224 Eriobotrya japonica 
+
+
+http://purl.obolibrary.org/obo/NCBITaxon_123931 # Lepista saeva
+
+http://purl.obolibrary.org/obo/NCBITaxon_104198 # Cantharellus lutescens
+
+http://purl.obolibrary.org/obo/NCBITaxon_113600 # Tricholoma magnivelare / Armillaria ponderosa
+
+http://purl.obolibrary.org/obo/NCBITaxon_29893 # Auricularia polytricha
+
+http://purl.obolibrary.org/obo/NCBITaxon_179837 # Perilla frutescens var. crispa, aka Shiso
+
+http://purl.obolibrary.org/obo/NCBITaxon_56646 # Fusarium venenatum
+
+http://purl.obolibrary.org/obo/NCBITaxon_44622 # Gyromitra montana
+
+http://purl.obolibrary.org/obo/NCBITaxon_33161 # Gyromitra esculenta
+
+
+http://purl.obolibrary.org/obo/NCBITaxon_39416 # Tuber melanosporum
+
+http://purl.obolibrary.org/obo/NCBITaxon_364196 # Tuber sinense
+
+http://purl.obolibrary.org/obo/NCBITaxon_59557 # Tuber aestivum
+
+http://purl.obolibrary.org/obo/NCBITaxon_42249 # Tuber magnatum
+
+http://purl.obolibrary.org/obo/NCBITaxon_56646 # Fusarium venenatum
 
 
 http://purl.obolibrary.org/obo/NCBITaxon_8932 # Columba livia (Domestic Pigeon)
@@ -1497,7 +1533,7 @@ http://purl.obolibrary.org/obo/NCBITaxon_270604 # Osphronemus goramy
 http://purl.obolibrary.org/obo/NCBITaxon_270605 # family:Percophidae
 http://purl.obolibrary.org/obo/NCBITaxon_270608 # genus:Bembrops Steindachner, 1876
 http://purl.obolibrary.org/obo/NCBITaxon_27065 # family:Theaceae
-http://purl.obolibrary.org/obo/NCBITaxon_2708 # Citrus limon
+http://purl.obolibrary.org/obo/NCBITaxon_2708 # Citrus x limon
 http://purl.obolibrary.org/obo/NCBITaxon_2711 # Citrus sinensis  
 http://purl.obolibrary.org/obo/NCBITaxon_271192 # Pimpinella anisum
 http://purl.obolibrary.org/obo/NCBITaxon_271697 # Melothria sphaerocarpa
@@ -2292,7 +2328,7 @@ http://purl.obolibrary.org/obo/NCBITaxon_3868 # species:Lotus tetragonolobus L.
 http://purl.obolibrary.org/obo/NCBITaxon_3869 # genus:Lupinus L.
 http://purl.obolibrary.org/obo/NCBITaxon_3870 # Lupinus albus
 http://purl.obolibrary.org/obo/NCBITaxon_38705 # species:Phyllostachys edulis  (Carr.) Houz.
-http://purl.obolibrary.org/obo/NCBITaxon_387127  # Coccinia grandis
+http://purl.obolibrary.org/obo/NCBITaxon_387127 # Coccinia grandis
 http://purl.obolibrary.org/obo/NCBITaxon_387446 # Lambis lambis
 http://purl.obolibrary.org/obo/NCBITaxon_387448 # species:Strombus alatus Gmelin, 1791
 http://purl.obolibrary.org/obo/NCBITaxon_387452 # species:Strombus costatus Gmelin, 1791
@@ -2486,7 +2522,7 @@ http://purl.obolibrary.org/obo/NCBITaxon_41241 # species:Rumex acetosa L.
 http://purl.obolibrary.org/obo/NCBITaxon_4136 # family:Lamiaceae
 http://purl.obolibrary.org/obo/NCBITaxon_4144 # family:Oleaceae
 http://purl.obolibrary.org/obo/NCBITaxon_41447 # Seriola dumerili
-http://purl.obolibrary.org/obo/NCBITaxon_4146  # Olea europaea
+http://purl.obolibrary.org/obo/NCBITaxon_4146 # Olea europaea
 http://purl.obolibrary.org/obo/NCBITaxon_414735 # species:Citrus limetta Risso
 http://purl.obolibrary.org/obo/NCBITaxon_41475 # genus:Antennaria Gaertn.
 http://purl.obolibrary.org/obo/NCBITaxon_4149 # family:Scrophulariaceae
@@ -3228,7 +3264,7 @@ http://purl.obolibrary.org/obo/NCBITaxon_617122 # Apsilus dentatus
 http://purl.obolibrary.org/obo/NCBITaxon_61716 # species:Hapalochlaena maculosa (Hoyle, 1883)
 http://purl.obolibrary.org/obo/NCBITaxon_61819 # Amphilophus citrinellus
 http://purl.obolibrary.org/obo/NCBITaxon_61865 # Carcharhinus limbatus
-http://purl.obolibrary.org/obo/NCBITaxon_61886 # species:Cucumis metuliferus E. Mey. ex Naud.
+http://purl.obolibrary.org/obo/NCBITaxon_61886 # Cucumis metuliferus
 http://purl.obolibrary.org/obo/NCBITaxon_61967 # Acipenser nudiventris
 http://purl.obolibrary.org/obo/NCBITaxon_61971 # Huso huso
 http://purl.obolibrary.org/obo/NCBITaxon_61976 # Psephurus gladius
@@ -3676,7 +3712,7 @@ http://purl.obolibrary.org/obo/NCBITaxon_7677 # Pseudocentrotus spp.
 http://purl.obolibrary.org/obo/NCBITaxon_7684 # Holothuria spp.
 http://purl.obolibrary.org/obo/NCBITaxon_768495 # Genypterus maculatus
 http://purl.obolibrary.org/obo/NCBITaxon_7685 # Holothuria tubulosa
-http://purl.obolibrary.org/obo/NCBITaxon_768507  # Cytophagales
+http://purl.obolibrary.org/obo/NCBITaxon_768507 # Cytophagales
 http://purl.obolibrary.org/obo/NCBITaxon_7688 # Parastichopus spp.
 http://purl.obolibrary.org/obo/NCBITaxon_7691 # Stichopus spp.
 http://purl.obolibrary.org/obo/NCBITaxon_76912 # species:Zea mays ssp. parviglumis Iltis & Doebley
@@ -4032,7 +4068,7 @@ http://purl.obolibrary.org/obo/NCBITaxon_85553 # Scylla tranquebarica
 http://purl.obolibrary.org/obo/NCBITaxon_8556 # genus:Varanus Merrem, 1820
 http://purl.obolibrary.org/obo/NCBITaxon_85571 # species:Citrus reticulata Blanco
 http://purl.obolibrary.org/obo/NCBITaxon_8561 # family:Gekkonidae
-http://purl.obolibrary.org/obo/NCBITaxon_85681 # Citrus clementina
+http://purl.obolibrary.org/obo/NCBITaxon_85681 # Citrus x clementina
 http://purl.obolibrary.org/obo/NCBITaxon_8570 # species:Serpentes Linnaeus, 1758
 http://purl.obolibrary.org/obo/NCBITaxon_8573 # Boa
 http://purl.obolibrary.org/obo/NCBITaxon_8574 # Boa constrictor
@@ -4394,12 +4430,8 @@ http://purl.obolibrary.org/obo/NCBITaxon_883761
 
 
 [Top level source term URIs and target direct superclass URIs]
-http://purl.obolibrary.org/obo/NCBITaxon_2 # Bacteria
+http://purl.obolibrary.org/obo/NCBITaxon_131567 # Cellular Organisms
 subClassOf http://purl.obolibrary.org/obo/OBI_0100026 #OBI:organism
-
-http://purl.obolibrary.org/obo/NCBITaxon_2759
-subClassOf http://purl.obolibrary.org/obo/OBI_0100026 #OBI:organism
-
 
 [Source term retrieval setting]
 includeComputedIntermediates
