@@ -422,7 +422,6 @@ AnnotationAssertion(<http://purl.org/dc/terms/date> <http://purl.obolibrary.org/
 AnnotationAssertion(rdfs:comment <http://purl.obolibrary.org/obo/FOODON_00003004> "A whole animal can be dead or alive, but its body must be relatively intact."@en)
 AnnotationAssertion(rdfs:label <http://purl.obolibrary.org/obo/FOODON_00003004> "animal"@en)
 EquivalentClasses(<http://purl.obolibrary.org/obo/FOODON_00003004> ObjectIntersectionOf(<http://purl.obolibrary.org/obo/UBERON_0000468> ObjectSomeValuesFrom(<http://purl.obolibrary.org/obo/RO_0002162> <http://purl.obolibrary.org/obo/NCBITaxon_33208>)))
-SubClassOf(<http://purl.obolibrary.org/obo/FOODON_00003004> <http://purl.obolibrary.org/obo/FOODON_00003004>)
 
 # Class: <http://purl.obolibrary.org/obo/FOODON_00004242> (animal food product)
 
@@ -601,22 +600,23 @@ AnnotationAssertion(<http://purl.org/dc/terms/date> <http://purl.obolibrary.org/
 AnnotationAssertion(rdfs:label <http://purl.obolibrary.org/obo/FOODON_02010015> "animal blood (raw)"@en)
 SubClassOf(<http://purl.obolibrary.org/obo/FOODON_02010015> <http://purl.obolibrary.org/obo/FOODON_02010014>)
 
-# Class: <http://purl.obolibrary.org/obo/FOODON_02010016> (animal fillet cut)
+# Class: <http://purl.obolibrary.org/obo/FOODON_02010016> (animal fillet)
 
 AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000114> <http://purl.obolibrary.org/obo/FOODON_02010016> <http://purl.obolibrary.org/obo/IAO_0000122>)
 AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000115> <http://purl.obolibrary.org/obo/FOODON_02010016> "A usually boneless butchery cut of animal meat."@en)
 AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000119> <http://purl.obolibrary.org/obo/FOODON_02010016> "https://en.wikipedia.org/wiki/Fillet_(cut)")
 AnnotationAssertion(<http://purl.org/dc/terms/date> <http://purl.obolibrary.org/obo/FOODON_02010016> "2023-08-01T21:25:29Z"^^xsd:dateTime)
+AnnotationAssertion(<http://www.geneontology.org/formats/oboInOwl#hasExactSynonym> <http://purl.obolibrary.org/obo/FOODON_02010016> "filet"@en)
 AnnotationAssertion(<http://www.geneontology.org/formats/oboInOwl#hasExactSynonym> <http://purl.obolibrary.org/obo/FOODON_02010016> "fillet"@en)
-AnnotationAssertion(rdfs:label <http://purl.obolibrary.org/obo/FOODON_02010016> "animal fillet cut"@en)
-SubClassOf(<http://purl.obolibrary.org/obo/FOODON_02010016> <http://purl.obolibrary.org/obo/FOODON_02010107>)
+AnnotationAssertion(rdfs:label <http://purl.obolibrary.org/obo/FOODON_02010016> "animal fillet"@en)
+SubClassOf(<http://purl.obolibrary.org/obo/FOODON_02010016> <http://purl.obolibrary.org/obo/FOODON_03530146>)
 
-# Class: <http://purl.obolibrary.org/obo/FOODON_02010017> (animal fillet cut (raw))
+# Class: <http://purl.obolibrary.org/obo/FOODON_02010017> (animal fillet (raw))
 
 AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000114> <http://purl.obolibrary.org/obo/FOODON_02010017> <http://purl.obolibrary.org/obo/IAO_0000122>)
 AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000115> <http://purl.obolibrary.org/obo/FOODON_02010017> "An animal fillet cut that is raw."@en)
 AnnotationAssertion(<http://purl.org/dc/terms/date> <http://purl.obolibrary.org/obo/FOODON_02010017> "2023-08-01T21:25:29Z"^^xsd:dateTime)
-AnnotationAssertion(rdfs:label <http://purl.obolibrary.org/obo/FOODON_02010017> "animal fillet cut (raw)"@en)
+AnnotationAssertion(rdfs:label <http://purl.obolibrary.org/obo/FOODON_02010017> "animal fillet (raw)"@en)
 SubClassOf(<http://purl.obolibrary.org/obo/FOODON_02010017> <http://purl.obolibrary.org/obo/FOODON_02010016>)
 
 # Class: <http://purl.obolibrary.org/obo/FOODON_02010018> (animal (whole or pieces, raw))
@@ -2252,14 +2252,6 @@ AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000115> <http://purl.ob
 AnnotationAssertion(<http://purl.org/dc/terms/date> <http://purl.obolibrary.org/obo/FOODON_02010214> "2023-08-01T21:25:29Z"^^xsd:dateTime)
 AnnotationAssertion(rdfs:label <http://purl.obolibrary.org/obo/FOODON_02010214> "piece of light animal meat (skinless, raw)"@en)
 SubClassOf(<http://purl.obolibrary.org/obo/FOODON_02010214> <http://purl.obolibrary.org/obo/FOODON_02010213>)
-
-# Class: <http://purl.obolibrary.org/obo/FOODON_02010215> (piece(s) of animal skin)
-
-AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000114> <http://purl.obolibrary.org/obo/FOODON_02010215> <http://purl.obolibrary.org/obo/IAO_0000122>)
-AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000115> <http://purl.obolibrary.org/obo/FOODON_02010215> "One or more pieces of animal skin."@en)
-AnnotationAssertion(<http://purl.org/dc/terms/date> <http://purl.obolibrary.org/obo/FOODON_02010215> "2023-08-01T21:25:29Z"^^xsd:dateTime)
-AnnotationAssertion(rdfs:label <http://purl.obolibrary.org/obo/FOODON_02010215> "piece(s) of animal skin"@en)
-SubClassOf(<http://purl.obolibrary.org/obo/FOODON_02010215> <http://purl.obolibrary.org/obo/FOODON_00004335>)
 
 # Class: <http://purl.obolibrary.org/obo/FOODON_02010216> (piece(s) of animal meat)
 
