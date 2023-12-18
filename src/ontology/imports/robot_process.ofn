@@ -73,6 +73,9 @@ Declaration(Class(<http://purl.obolibrary.org/obo/FOODON_00004079>))
 Declaration(Class(<http://purl.obolibrary.org/obo/FOODON_00004080>))
 Declaration(Class(<http://purl.obolibrary.org/obo/FOODON_00004088>))
 Declaration(Class(<http://purl.obolibrary.org/obo/FOODON_00004089>))
+Declaration(Class(<http://purl.obolibrary.org/obo/FOODON_00004531>))
+Declaration(Class(<http://purl.obolibrary.org/obo/FOODON_00004533>))
+Declaration(Class(<http://purl.obolibrary.org/obo/FOODON_00004534>))
 Declaration(Class(<http://purl.obolibrary.org/obo/FOODON_03000001>))
 Declaration(Class(<http://purl.obolibrary.org/obo/FOODON_03307052>))
 Declaration(Class(<http://purl.obolibrary.org/obo/FOODON_03307539>))
@@ -333,14 +336,14 @@ Declaration(AnnotationProperty(<http://www.geneontology.org/formats/oboInOwl#has
 # Class: <http://purl.obolibrary.org/obo/FOODON_00000071> (food cutting process)
 
 AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000115> <http://purl.obolibrary.org/obo/FOODON_00000071> "A process of cutting food into smaller pieces, chunks or slices."@en)
-AnnotationAssertion(<http://purl.org/dc/terms/contributor> <http://purl.obolibrary.org/obo/FOODON_00000071> "Damion Dooley")
+AnnotationAssertion(<http://purl.org/dc/terms/contributor> <http://purl.obolibrary.org/obo/FOODON_00000071> "https://orcid.org/0000-0002-8844-9165")
 AnnotationAssertion(rdfs:label <http://purl.obolibrary.org/obo/FOODON_00000071> "food cutting process"@en)
 SubClassOf(<http://purl.obolibrary.org/obo/FOODON_00000071> <http://purl.obolibrary.org/obo/FOODON_03460130>)
 
 # Class: <http://purl.obolibrary.org/obo/FOODON_00001304> (food fermentation)
 
 AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000115> <http://purl.obolibrary.org/obo/FOODON_00001304> "A fermentation process in which either carbohydrates, proteins or fats are modified through microbial, enzymatic and/or other biological process."@en)
-AnnotationAssertion(<http://purl.org/dc/terms/contributor> <http://purl.obolibrary.org/obo/FOODON_00001304> "Damion Dooley")
+AnnotationAssertion(<http://purl.org/dc/terms/contributor> <http://purl.obolibrary.org/obo/FOODON_00001304> "https://orcid.org/0000-0002-8844-9165")
 AnnotationAssertion(rdfs:label <http://purl.obolibrary.org/obo/FOODON_00001304> "food fermentation"@en)
 SubClassOf(<http://purl.obolibrary.org/obo/FOODON_00001304> <http://purl.obolibrary.org/obo/FOODON_03460119>)
 SubClassOf(<http://purl.obolibrary.org/obo/FOODON_00001304> <http://purl.obolibrary.org/obo/FOODON_03470107>)
@@ -349,43 +352,43 @@ SubClassOf(<http://purl.obolibrary.org/obo/FOODON_00001304> ObjectSomeValuesFrom
 # Class: <http://purl.obolibrary.org/obo/FOODON_00002404> (meat roasting)
 
 AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000115> <http://purl.obolibrary.org/obo/FOODON_00002404> "Roasting is a baking process when the food being baked is meats"@en)
-AnnotationAssertion(<http://purl.org/dc/terms/contributor> <http://purl.obolibrary.org/obo/FOODON_00002404> "Damion Dooley")
+AnnotationAssertion(<http://purl.org/dc/terms/contributor> <http://purl.obolibrary.org/obo/FOODON_00002404> "https://orcid.org/0000-0002-8844-9165")
 AnnotationAssertion(rdfs:label <http://purl.obolibrary.org/obo/FOODON_00002404> "meat roasting"@en)
 SubClassOf(<http://purl.obolibrary.org/obo/FOODON_00002404> <http://purl.obolibrary.org/obo/FOODON_03450005>)
 
-# Class: <http://purl.obolibrary.org/obo/FOODON_00002409> (food physical forming process)
+# Class: <http://purl.obolibrary.org/obo/FOODON_00002409> (food physical forming)
 
 AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000115> <http://purl.obolibrary.org/obo/FOODON_00002409> "Modification through physical treatment to affect the shape quality of a food product."@en)
-AnnotationAssertion(<http://purl.org/dc/terms/contributor> <http://purl.obolibrary.org/obo/FOODON_00002409> "Damion Dooley")
-AnnotationAssertion(rdfs:label <http://purl.obolibrary.org/obo/FOODON_00002409> "food physical forming process"@en)
+AnnotationAssertion(<http://purl.org/dc/terms/contributor> <http://purl.obolibrary.org/obo/FOODON_00002409> "https://orcid.org/0000-0002-8844-9165")
+AnnotationAssertion(rdfs:label <http://purl.obolibrary.org/obo/FOODON_00002409> "food physical forming"@en)
 SubClassOf(<http://purl.obolibrary.org/obo/FOODON_00002409> <http://purl.obolibrary.org/obo/FOODON_03460130>)
 
-# Class: <http://purl.obolibrary.org/obo/FOODON_00002414> (food solvent extraction process)
+# Class: <http://purl.obolibrary.org/obo/FOODON_00002414> (food solvent extraction)
 
 AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000115> <http://purl.obolibrary.org/obo/FOODON_00002414> "Extraction of substance(s) from a food source using a solvent such as alcohol, hexane, or ethanol."@en)
-AnnotationAssertion(<http://purl.org/dc/terms/contributor> <http://purl.obolibrary.org/obo/FOODON_00002414> "Damion Dooley")
-AnnotationAssertion(rdfs:label <http://purl.obolibrary.org/obo/FOODON_00002414> "food solvent extraction process"@en)
+AnnotationAssertion(<http://purl.org/dc/terms/contributor> <http://purl.obolibrary.org/obo/FOODON_00002414> "https://orcid.org/0000-0002-8844-9165")
+AnnotationAssertion(rdfs:label <http://purl.obolibrary.org/obo/FOODON_00002414> "food solvent extraction"@en)
 SubClassOf(<http://purl.obolibrary.org/obo/FOODON_00002414> <http://purl.obolibrary.org/obo/FOODON_03460130>)
 
-# Class: <http://purl.obolibrary.org/obo/FOODON_00002415> (food milling process)
+# Class: <http://purl.obolibrary.org/obo/FOODON_00002415> (food milling)
 
 AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000115> <http://purl.obolibrary.org/obo/FOODON_00002415> "The process of milling grain into flour, usually performed by a grist mill, corn mill or flour mill."@en)
-AnnotationAssertion(<http://purl.org/dc/terms/contributor> <http://purl.obolibrary.org/obo/FOODON_00002415> "Damion Dooley")
-AnnotationAssertion(rdfs:label <http://purl.obolibrary.org/obo/FOODON_00002415> "food milling process"@en)
+AnnotationAssertion(<http://purl.org/dc/terms/contributor> <http://purl.obolibrary.org/obo/FOODON_00002415> "https://orcid.org/0000-0002-8844-9165")
+AnnotationAssertion(rdfs:label <http://purl.obolibrary.org/obo/FOODON_00002415> "food milling"@en)
 SubClassOf(<http://purl.obolibrary.org/obo/FOODON_00002415> <http://purl.obolibrary.org/obo/FOODON_00002409>)
 SubClassOf(<http://purl.obolibrary.org/obo/FOODON_00002415> ObjectSomeValuesFrom(<http://purl.obolibrary.org/obo/OBI_0000299> <http://purl.obolibrary.org/obo/FOODON_00002649>))
 
-# Class: <http://purl.obolibrary.org/obo/FOODON_00002416> (food canning process)
+# Class: <http://purl.obolibrary.org/obo/FOODON_00002416> (food canning)
 
-AnnotationAssertion(<http://purl.org/dc/terms/contributor> <http://purl.obolibrary.org/obo/FOODON_00002416> "Damion Dooley")
-AnnotationAssertion(rdfs:label <http://purl.obolibrary.org/obo/FOODON_00002416> "food canning process"@en)
+AnnotationAssertion(<http://purl.org/dc/terms/contributor> <http://purl.obolibrary.org/obo/FOODON_00002416> "https://orcid.org/0000-0002-8844-9165")
+AnnotationAssertion(rdfs:label <http://purl.obolibrary.org/obo/FOODON_00002416> "food canning"@en)
 SubClassOf(<http://purl.obolibrary.org/obo/FOODON_00002416> <http://purl.obolibrary.org/obo/FOODON_03460130>)
 SubClassOf(<http://purl.obolibrary.org/obo/FOODON_00002416> ObjectSomeValuesFrom(<http://purl.obolibrary.org/obo/OBI_0000299> <http://purl.obolibrary.org/obo/FOODON_00002418>))
 
 # Class: <http://purl.obolibrary.org/obo/FOODON_00002419> (food evaporation process)
 
 AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000115> <http://purl.obolibrary.org/obo/FOODON_00002419> "A food evaporation process is the process of removing water from a food."@en)
-AnnotationAssertion(<http://purl.org/dc/terms/contributor> <http://purl.obolibrary.org/obo/FOODON_00002419> "Damion Dooley")
+AnnotationAssertion(<http://purl.org/dc/terms/contributor> <http://purl.obolibrary.org/obo/FOODON_00002419> "https://orcid.org/0000-0002-8844-9165")
 AnnotationAssertion(rdfs:label <http://purl.obolibrary.org/obo/FOODON_00002419> "food evaporation process"@en)
 SubClassOf(<http://purl.obolibrary.org/obo/FOODON_00002419> <http://purl.obolibrary.org/obo/FOODON_03460130>)
 
@@ -393,7 +396,7 @@ SubClassOf(<http://purl.obolibrary.org/obo/FOODON_00002419> <http://purl.obolibr
 
 AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000114> <http://purl.obolibrary.org/obo/FOODON_00002451> "requires discussion")
 AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000115> <http://purl.obolibrary.org/obo/FOODON_00002451> "A process involving the physical transformation of a food source or food product into some derived organic material or food product"@en)
-AnnotationAssertion(<http://purl.org/dc/terms/contributor> <http://purl.obolibrary.org/obo/FOODON_00002451> "Damion Dooley")
+AnnotationAssertion(<http://purl.org/dc/terms/contributor> <http://purl.obolibrary.org/obo/FOODON_00002451> "https://orcid.org/0000-0002-8844-9165")
 AnnotationAssertion(rdfs:label <http://purl.obolibrary.org/obo/FOODON_00002451> "food transformation process"@en)
 SubClassOf(<http://purl.obolibrary.org/obo/FOODON_00002451> <http://purl.obolibrary.org/obo/BFO_0000015>)
 SubClassOf(<http://purl.obolibrary.org/obo/FOODON_00002451> ObjectSomeValuesFrom(<http://purl.obolibrary.org/obo/OBI_0000299> <http://purl.obolibrary.org/obo/FOODON_00002403>))
@@ -401,7 +404,7 @@ SubClassOf(<http://purl.obolibrary.org/obo/FOODON_00002451> ObjectSomeValuesFrom
 # Class: <http://purl.obolibrary.org/obo/FOODON_00002462> (shallow frying)
 
 AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000115> <http://purl.obolibrary.org/obo/FOODON_00002462> "A form of frying characterized by the use of minimal cooking oil or fat (compared to shallow frying or deep frying); typically using just enough oil to lubricate the pan. A pan fry takes place at lower heat than does a sauté."@en)
-AnnotationAssertion(<http://purl.org/dc/terms/contributor> <http://purl.obolibrary.org/obo/FOODON_00002462> "Damion Dooley")
+AnnotationAssertion(<http://purl.org/dc/terms/contributor> <http://purl.obolibrary.org/obo/FOODON_00002462> "https://orcid.org/0000-0002-8844-9165")
 AnnotationAssertion(rdfs:label <http://purl.obolibrary.org/obo/FOODON_00002462> "shallow frying"@en)
 SubClassOf(<http://purl.obolibrary.org/obo/FOODON_00002462> <http://purl.obolibrary.org/obo/FOODON_03450026>)
 SubClassOf(<http://purl.obolibrary.org/obo/FOODON_00002462> ObjectSomeValuesFrom(<http://purl.obolibrary.org/obo/OBI_0000299> <http://purl.obolibrary.org/obo/FOODON_00002660>))
@@ -409,40 +412,40 @@ SubClassOf(<http://purl.obolibrary.org/obo/FOODON_00002462> ObjectSomeValuesFrom
 # Class: <http://purl.obolibrary.org/obo/FOODON_00002648> (food scalding)
 
 AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000115> <http://purl.obolibrary.org/obo/FOODON_00002648> "A method of precooking food where a liquid is heated to just below the boiling point. Often used to retard the spoiling of milk."@en)
-AnnotationAssertion(<http://purl.org/dc/terms/contributor> <http://purl.obolibrary.org/obo/FOODON_00002648> "Damion Dooley")
+AnnotationAssertion(<http://purl.org/dc/terms/contributor> <http://purl.obolibrary.org/obo/FOODON_00002648> "https://orcid.org/0000-0002-8844-9165")
 AnnotationAssertion(<http://www.geneontology.org/formats/oboInOwl#hasExactSynonym> <http://purl.obolibrary.org/obo/FOODON_00002648> "scalding"@en)
 AnnotationAssertion(rdfs:label <http://purl.obolibrary.org/obo/FOODON_00002648> "food scalding"@en)
 SubClassOf(<http://purl.obolibrary.org/obo/FOODON_00002648> <http://purl.obolibrary.org/obo/FOODON_03450002>)
 
-# Class: <http://purl.obolibrary.org/obo/FOODON_00002707> (food cleaning process)
+# Class: <http://purl.obolibrary.org/obo/FOODON_00002707> (food cleaning)
 
 AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000115> <http://purl.obolibrary.org/obo/FOODON_00002707> "The process of cleaning food to separate other environmental materials or body substances."@en)
-AnnotationAssertion(<http://purl.org/dc/terms/contributor> <http://purl.obolibrary.org/obo/FOODON_00002707> "Damion Dooley")
-AnnotationAssertion(rdfs:label <http://purl.obolibrary.org/obo/FOODON_00002707> "food cleaning process"@en)
+AnnotationAssertion(<http://purl.org/dc/terms/contributor> <http://purl.obolibrary.org/obo/FOODON_00002707> "https://orcid.org/0000-0002-8844-9165")
+AnnotationAssertion(rdfs:label <http://purl.obolibrary.org/obo/FOODON_00002707> "food cleaning"@en)
 SubClassOf(<http://purl.obolibrary.org/obo/FOODON_00002707> <http://purl.obolibrary.org/obo/FOODON_03460130>)
 SubClassOf(<http://purl.obolibrary.org/obo/FOODON_00002707> ObjectSomeValuesFrom(<http://purl.obolibrary.org/obo/OBI_0000299> <http://purl.obolibrary.org/obo/FOODON_00002708>))
 
-# Class: <http://purl.obolibrary.org/obo/FOODON_00002721> (food dehulling process)
+# Class: <http://purl.obolibrary.org/obo/FOODON_00002721> (food dehulling)
 
 AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000115> <http://purl.obolibrary.org/obo/FOODON_00002721> "Dehulling is the process of removing the hulls (or chaff) from beans and other seeds."@en)
-AnnotationAssertion(<http://purl.org/dc/terms/contributor> <http://purl.obolibrary.org/obo/FOODON_00002721> "Damion Dooley")
-AnnotationAssertion(rdfs:label <http://purl.obolibrary.org/obo/FOODON_00002721> "food dehulling process"@en)
+AnnotationAssertion(<http://purl.org/dc/terms/contributor> <http://purl.obolibrary.org/obo/FOODON_00002721> "https://orcid.org/0000-0002-8844-9165")
+AnnotationAssertion(rdfs:label <http://purl.obolibrary.org/obo/FOODON_00002721> "food dehulling"@en)
 SubClassOf(<http://purl.obolibrary.org/obo/FOODON_00002721> <http://purl.obolibrary.org/obo/FOODON_03460238>)
 SubClassOf(<http://purl.obolibrary.org/obo/FOODON_00002721> ObjectSomeValuesFrom(<http://purl.obolibrary.org/obo/OBI_0000299> <http://purl.obolibrary.org/obo/FOODON_00002720>))
 
-# Class: <http://purl.obolibrary.org/obo/FOODON_00002722> (corn husking process)
+# Class: <http://purl.obolibrary.org/obo/FOODON_00002722> (corn husking)
 
 AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000115> <http://purl.obolibrary.org/obo/FOODON_00002722> "Husking of corn is the process of removing its outer layers, leaving only the cob or seed rack of the corn"@en)
-AnnotationAssertion(<http://purl.org/dc/terms/contributor> <http://purl.obolibrary.org/obo/FOODON_00002722> "Damion Dooley")
+AnnotationAssertion(<http://purl.org/dc/terms/contributor> <http://purl.obolibrary.org/obo/FOODON_00002722> "https://orcid.org/0000-0002-8844-9165")
 AnnotationAssertion(<http://www.geneontology.org/formats/oboInOwl#hasExactSynonym> <http://purl.obolibrary.org/obo/FOODON_00002722> "husking"@en)
-AnnotationAssertion(rdfs:label <http://purl.obolibrary.org/obo/FOODON_00002722> "corn husking process"@en)
+AnnotationAssertion(rdfs:label <http://purl.obolibrary.org/obo/FOODON_00002722> "corn husking"@en)
 SubClassOf(<http://purl.obolibrary.org/obo/FOODON_00002722> <http://purl.obolibrary.org/obo/FOODON_03460238>)
 SubClassOf(<http://purl.obolibrary.org/obo/FOODON_00002722> ObjectSomeValuesFrom(<http://purl.obolibrary.org/obo/OBI_0000299> <http://purl.obolibrary.org/obo/FOODON_00003874>))
 
 # Class: <http://purl.obolibrary.org/obo/FOODON_00002732> (food seasoning process)
 
 AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000115> <http://purl.obolibrary.org/obo/FOODON_00002732> "A process of applying a seasoning mixture to a given food."@en)
-AnnotationAssertion(<http://purl.org/dc/terms/contributor> <http://purl.obolibrary.org/obo/FOODON_00002732> "Damion Dooley")
+AnnotationAssertion(<http://purl.org/dc/terms/contributor> <http://purl.obolibrary.org/obo/FOODON_00002732> "https://orcid.org/0000-0002-8844-9165")
 AnnotationAssertion(<http://www.geneontology.org/formats/oboInOwl#hasExactSynonym> <http://purl.obolibrary.org/obo/FOODON_00002732> "seasoning"@en)
 AnnotationAssertion(rdfs:label <http://purl.obolibrary.org/obo/FOODON_00002732> "food seasoning process"@en)
 SubClassOf(<http://purl.obolibrary.org/obo/FOODON_00002732> <http://purl.obolibrary.org/obo/FOODON_03460225>)
@@ -451,7 +454,7 @@ SubClassOf(<http://purl.obolibrary.org/obo/FOODON_00002732> ObjectSomeValuesFrom
 # Class: <http://purl.obolibrary.org/obo/FOODON_00002740> (food packaging process)
 
 AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000115> <http://purl.obolibrary.org/obo/FOODON_00002740> "A process that applies packaging material to a food product for preservation, shipping and/or presentation purposes."@en)
-AnnotationAssertion(<http://purl.org/dc/terms/contributor> <http://purl.obolibrary.org/obo/FOODON_00002740> "Damion Dooley")
+AnnotationAssertion(<http://purl.org/dc/terms/contributor> <http://purl.obolibrary.org/obo/FOODON_00002740> "https://orcid.org/0000-0002-8844-9165")
 AnnotationAssertion(rdfs:label <http://purl.obolibrary.org/obo/FOODON_00002740> "food packaging process"@en)
 SubClassOf(<http://purl.obolibrary.org/obo/FOODON_00002740> <http://purl.obolibrary.org/obo/FOODON_00002451>)
 SubClassOf(<http://purl.obolibrary.org/obo/FOODON_00002740> ObjectSomeValuesFrom(<http://purl.obolibrary.org/obo/OBI_0000299> <http://purl.obolibrary.org/obo/FOODON_00002739>))
@@ -460,7 +463,7 @@ SubClassOf(<http://purl.obolibrary.org/obo/FOODON_00002740> ObjectSomeValuesFrom
 
 AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000115> <http://purl.obolibrary.org/obo/FOODON_00002814> "Ikejime is a method of slaughtering fish to maintain the quality of its meat. The technique originated in Japan, but is now in widespread use. It involves the insertion of a spike quickly and directly into the hindbrain, usually located slightly behind and above the eye, thereby causing immediate brain death."@en)
 AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000119> <http://purl.obolibrary.org/obo/FOODON_00002814> "https://en.wikipedia.org/wiki/Ikejime")
-AnnotationAssertion(<http://purl.org/dc/terms/contributor> <http://purl.obolibrary.org/obo/FOODON_00002814> "Damion Dooley")
+AnnotationAssertion(<http://purl.org/dc/terms/contributor> <http://purl.obolibrary.org/obo/FOODON_00002814> "https://orcid.org/0000-0002-8844-9165")
 AnnotationAssertion(<http://www.geneontology.org/formats/oboInOwl#hasExactSynonym> <http://purl.obolibrary.org/obo/FOODON_00002814> "Ikijime"@en)
 AnnotationAssertion(<http://www.geneontology.org/formats/oboInOwl#hasExactSynonym> <http://purl.obolibrary.org/obo/FOODON_00002814> "活き締め"@en)
 AnnotationAssertion(<http://www.geneontology.org/formats/oboInOwl#hasExactSynonym> <http://purl.obolibrary.org/obo/FOODON_00002814> "活け締め"@en)
@@ -632,7 +635,7 @@ AnnotationAssertion(rdfs:label <http://purl.obolibrary.org/obo/FOODON_00004080> 
 SubClassOf(<http://purl.obolibrary.org/obo/FOODON_00004080> <http://purl.obolibrary.org/obo/FOODON_00004078>)
 SubClassOf(<http://purl.obolibrary.org/obo/FOODON_00004080> ObjectSomeValuesFrom(<http://purl.obolibrary.org/obo/OBI_0000293> <http://purl.obolibrary.org/obo/OBI_0000967>))
 
-# Class: <http://purl.obolibrary.org/obo/FOODON_00004088> (heating of container)
+# Class: <http://purl.obolibrary.org/obo/FOODON_00004088> (direct heating of container)
 
 AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000115> <http://purl.obolibrary.org/obo/FOODON_00004088> "A heating container process in which the container conducts heat by being in proximity to an open flame, a hot surface or an oven."@en)
 AnnotationAssertion(rdfs:comment <http://purl.obolibrary.org/obo/FOODON_00004088> "The challenge here is to make a clean distinction between methods that immerse a cooking container in water or steam vs those that don't."@en)
@@ -645,11 +648,31 @@ AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000115> <http://purl.ob
 AnnotationAssertion(rdfs:label <http://purl.obolibrary.org/obo/FOODON_00004089> "heating liquid in container"@en)
 SubClassOf(<http://purl.obolibrary.org/obo/FOODON_00004089> <http://purl.obolibrary.org/obo/FOODON_03450032>)
 
-# Class: <http://purl.obolibrary.org/obo/FOODON_03000001> (food peeling process)
+# Class: <http://purl.obolibrary.org/obo/FOODON_00004531> (deboning)
+
+AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000115> <http://purl.obolibrary.org/obo/FOODON_00004531> "The process of removing bone from animal meat."@en)
+AnnotationAssertion(<http://purl.org/dc/terms/contributor> <http://purl.obolibrary.org/obo/FOODON_00004531> "https://orcid.org/0000-0002-8844-9165")
+AnnotationAssertion(<http://purl.org/dc/terms/date> <http://purl.obolibrary.org/obo/FOODON_00004531> "2023-12-15T19:51:12Z"^^xsd:dateTime)
+AnnotationAssertion(rdfs:label <http://purl.obolibrary.org/obo/FOODON_00004531> "deboning"@en)
+SubClassOf(<http://purl.obolibrary.org/obo/FOODON_00004531> <http://purl.obolibrary.org/obo/FOODON_03460130>)
+
+# Class: <http://purl.obolibrary.org/obo/FOODON_00004533> (food grinding)
+
+AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000115> <http://purl.obolibrary.org/obo/FOODON_00004533> "The process of grinding food such as meat."@en)
+AnnotationAssertion(rdfs:label <http://purl.obolibrary.org/obo/FOODON_00004533> "food grinding"@en)
+SubClassOf(<http://purl.obolibrary.org/obo/FOODON_00004533> <http://purl.obolibrary.org/obo/FOODON_00002409>)
+
+# Class: <http://purl.obolibrary.org/obo/FOODON_00004534> (food mincing)
+
+AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000115> <http://purl.obolibrary.org/obo/FOODON_00004534> "The process of cutting food such as meat into very fine pieces."@en)
+AnnotationAssertion(rdfs:label <http://purl.obolibrary.org/obo/FOODON_00004534> "food mincing"@en)
+SubClassOf(<http://purl.obolibrary.org/obo/FOODON_00004534> <http://purl.obolibrary.org/obo/FOODON_00002409>)
+
+# Class: <http://purl.obolibrary.org/obo/FOODON_03000001> (food peeling)
 
 AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000115> <http://purl.obolibrary.org/obo/FOODON_03000001> "peeling\" is the process of removing the outer covering, layer or skin from a fruit, vegetable, or plant or animal (such as a shrimp)."@en)
 AnnotationAssertion(<http://purl.org/dc/terms/contributor> <http://purl.obolibrary.org/obo/FOODON_03000001> "Damion Dooley")
-AnnotationAssertion(rdfs:label <http://purl.obolibrary.org/obo/FOODON_03000001> "food peeling process"@en)
+AnnotationAssertion(rdfs:label <http://purl.obolibrary.org/obo/FOODON_03000001> "food peeling"@en)
 SubClassOf(<http://purl.obolibrary.org/obo/FOODON_03000001> <http://purl.obolibrary.org/obo/FOODON_03460130>)
 SubClassOf(<http://purl.obolibrary.org/obo/FOODON_03000001> ObjectSomeValuesFrom(<http://purl.obolibrary.org/obo/OBI_0000299> <http://purl.obolibrary.org/obo/FOODON_00002655>))
 
@@ -1234,9 +1257,10 @@ SubClassOf(<http://purl.obolibrary.org/obo/FOODON_03460182> <http://purl.obolibr
 
 # Class: <http://purl.obolibrary.org/obo/FOODON_03460190> (pickling)
 
-AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000115> <http://purl.obolibrary.org/obo/FOODON_03460190> "Treated with acid that may be produced by fermentation or added and/or with salt brine, often in the presence of spices or herbs, producing changes in flavor and texture."@en)
+AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000115> <http://purl.obolibrary.org/obo/FOODON_03460190> "A process of preserving or extending the shelf life of food by either anaerobic fermentation in brine or immersion in vinegar."@en)
+AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000119> <http://purl.obolibrary.org/obo/FOODON_03460190> "https://en.wikipedia.org/wiki/Pickling")
 AnnotationAssertion(<http://www.geneontology.org/formats/oboInOwl#hasDbXref> <http://purl.obolibrary.org/obo/FOODON_03460190> "http://www.langual.org/langual_thesaurus.asp?termid=H0190")
-AnnotationAssertion(rdfs:comment <http://purl.obolibrary.org/obo/FOODON_03460190> "LanguaL curation note: Also index by other applicable terms from *MICROBIALLY/ ENZYMATICALLY MODIFIED*."@en)
+AnnotationAssertion(rdfs:comment <http://purl.obolibrary.org/obo/FOODON_03460190> "LanguaL curation note: Also index by other applicable terms from *MICROBIALLY/ ENZYMATICALLY MODIFIED*.  LanguaL definition: \"Treated with acid that may be produced by fermentation or added and/or with salt brine, often in the presence of spices or herbs, producing changes in flavor and texture.\""@en)
 AnnotationAssertion(rdfs:label <http://purl.obolibrary.org/obo/FOODON_03460190> "pickling"@en)
 SubClassOf(<http://purl.obolibrary.org/obo/FOODON_03460190> <http://purl.obolibrary.org/obo/FOODON_03460119>)
 
@@ -1883,6 +1907,7 @@ SubClassOf(<http://purl.obolibrary.org/obo/FOODON_03470112> <http://purl.obolibr
 
 # Class: <http://purl.obolibrary.org/obo/FOODON_03470113> (sterilization by irradiation)
 
+AnnotationAssertion(<http://purl.org/dc/terms/date> <http://purl.obolibrary.org/obo/FOODON_03470113> "Irradiation"^^xsd:dateTime)
 AnnotationAssertion(<http://www.geneontology.org/formats/oboInOwl#hasDbXref> <http://purl.obolibrary.org/obo/FOODON_03470113> "http://www.langual.org/langual_thesaurus.asp?termid=J0113")
 AnnotationAssertion(rdfs:comment <http://purl.obolibrary.org/obo/FOODON_03470113> "LanguaL curation note: Used for a food product that has been packed in a hermetically sealed container and rendered commercially sterile by ionizing radiation (e.g. 24-28 kGy)."@en)
 AnnotationAssertion(rdfs:label <http://purl.obolibrary.org/obo/FOODON_03470113> "sterilization by irradiation"@en)
