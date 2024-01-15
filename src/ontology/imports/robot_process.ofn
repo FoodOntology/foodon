@@ -2397,4 +2397,8 @@ AnnotationAssertion(rdfs:label <http://purl.obolibrary.org/obo/FOODON_03470182> 
 SubClassOf(<http://purl.obolibrary.org/obo/FOODON_03470182> <http://purl.obolibrary.org/obo/FOODON_03470135>)
 
 
+AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000115> <http://purl.obolibrary.org/obo/FOODON_00004550> "The process of cutting food such as meat into cubic pieces."@en)
+AnnotationAssertion(<http://purl.org/dc/terms/contributor> <http://purl.obolibrary.org/obo/FOODON_00004550> <https://orcid.org/0000-0002-8844-9165>)
+AnnotationAssertion(<http://purl.org/dc/terms/date> <http://purl.obolibrary.org/obo/FOODON_00004550> "2024-01-15T09:29:58Z"^^xsd:dateTime)
+AnnotationAssertion(rdfs:label <http://purl.obolibrary.org/obo/FOODON_00004550> "food cubing"@en)
 )
