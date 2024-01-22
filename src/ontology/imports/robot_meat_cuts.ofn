@@ -11,7 +11,6 @@ Ontology(<http://purl.obolibrary.org/obo/foodon/imports/robot_meat_cuts.ofn>
 Declaration(Class(<http://purl.obolibrary.org/obo/FOODON_00001282>))
 Declaration(Class(<http://purl.obolibrary.org/obo/FOODON_00002570>))
 Declaration(Class(<http://purl.obolibrary.org/obo/FOODON_00002574>))
-Declaration(Class(<http://purl.obolibrary.org/obo/FOODON_00002706>))
 Declaration(Class(<http://purl.obolibrary.org/obo/FOODON_00002882>))
 Declaration(Class(<http://purl.obolibrary.org/obo/FOODON_00002954>))
 Declaration(Class(<http://purl.obolibrary.org/obo/FOODON_00003029>))
@@ -61,6 +60,7 @@ Declaration(Class(<http://purl.obolibrary.org/obo/FOODON_00004542>))
 Declaration(Class(<http://purl.obolibrary.org/obo/FOODON_00004543>))
 Declaration(Class(<http://purl.obolibrary.org/obo/FOODON_00004544>))
 Declaration(Class(<http://purl.obolibrary.org/obo/FOODON_00004545>))
+Declaration(Class(<http://purl.obolibrary.org/obo/FOODON_00004551>))
 Declaration(Class(<http://purl.obolibrary.org/obo/FOODON_02000000>))
 Declaration(Class(<http://purl.obolibrary.org/obo/FOODON_02000001>))
 Declaration(Class(<http://purl.obolibrary.org/obo/FOODON_02000002>))
@@ -495,10 +495,6 @@ Declaration(Class(<http://purl.obolibrary.org/obo/FOODON_02000431>))
 Declaration(Class(<http://purl.obolibrary.org/obo/FOODON_02000432>))
 Declaration(Class(<http://purl.obolibrary.org/obo/FOODON_02000433>))
 Declaration(Class(<http://purl.obolibrary.org/obo/FOODON_02000434>))
-Declaration(Class(<http://purl.obolibrary.org/obo/FOODON_02000435>))
-Declaration(Class(<http://purl.obolibrary.org/obo/FOODON_02000436>))
-Declaration(Class(<http://purl.obolibrary.org/obo/FOODON_02000437>))
-Declaration(Class(<http://purl.obolibrary.org/obo/FOODON_02000438>))
 Declaration(Class(<http://purl.obolibrary.org/obo/FOODON_02000439>))
 Declaration(Class(<http://purl.obolibrary.org/obo/FOODON_02000440>))
 Declaration(Class(<http://purl.obolibrary.org/obo/FOODON_02000441>))
@@ -560,7 +556,7 @@ Declaration(AnnotationProperty(<http://www.geneontology.org/formats/oboInOwl#has
 # Class: <http://purl.obolibrary.org/obo/FOODON_00001282> (beef (ground))
 
 AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000115> <http://purl.obolibrary.org/obo/FOODON_00001282> "Beef that has been ground."@en)
-AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000119> <http://purl.obolibrary.org/obo/FOODON_00001282> <https://en.wikipedia.org/wiki/Ground_beef>)
+AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000119> <http://purl.obolibrary.org/obo/FOODON_00001282> "https://en.wikipedia.org/wiki/Ground_beef")
 AnnotationAssertion(rdfs:label <http://purl.obolibrary.org/obo/FOODON_00001282> "beef (ground)"@en)
 EquivalentClasses(<http://purl.obolibrary.org/obo/FOODON_00001282> ObjectIntersectionOf(<http://purl.obolibrary.org/obo/FOODON_02000412> ObjectSomeValuesFrom(<http://purl.obolibrary.org/obo/OBI_0000312> <http://purl.obolibrary.org/obo/FOODON_00004533>)))
 SubClassOf(<http://purl.obolibrary.org/obo/FOODON_00001282> <http://purl.obolibrary.org/obo/FOODON_02000412>)
@@ -574,18 +570,12 @@ AnnotationAssertion(rdfs:label <http://purl.obolibrary.org/obo/FOODON_00002570> 
 SubClassOf(<http://purl.obolibrary.org/obo/FOODON_00002570> <http://purl.obolibrary.org/obo/FOODON_00004483>)
 SubClassOf(<http://purl.obolibrary.org/obo/FOODON_00002570> ObjectSomeValuesFrom(<http://purl.obolibrary.org/obo/RO_0001000> <http://purl.obolibrary.org/obo/FOODON_00004483>))
 
-# Class: <http://purl.obolibrary.org/obo/FOODON_00002574> (cut of beef)
+# Class: <http://purl.obolibrary.org/obo/FOODON_00002574> (butchery cut of beef)
 
 AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000115> <http://purl.obolibrary.org/obo/FOODON_00002574> "A butchery cut of beef that is primal, sub-primal or a retail cut."@en)
 AnnotationAssertion(<http://purl.org/dc/terms/contributor> <http://purl.obolibrary.org/obo/FOODON_00002574> " https://orcid.org/0000-0001-5275-8866")
 AnnotationAssertion(rdfs:label <http://purl.obolibrary.org/obo/FOODON_00002574> "butchery cut of beef"@en)
 SubClassOf(<http://purl.obolibrary.org/obo/FOODON_00002574> <http://purl.obolibrary.org/obo/FOODON_02000403>)
-
-# Class: <http://purl.obolibrary.org/obo/FOODON_00002706> (chicken giblet)
-
-AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000115> <http://purl.obolibrary.org/obo/FOODON_00002706> "A chicken carcass that includes giblets."@en)
-AnnotationAssertion(rdfs:label <http://purl.obolibrary.org/obo/FOODON_00002706> "chicken carcass (with giblets)"@en)
-SubClassOf(<http://purl.obolibrary.org/obo/FOODON_00002706> <http://purl.obolibrary.org/obo/FOODON_00003360>)
 
 # Class: <http://purl.obolibrary.org/obo/FOODON_00002882> (beef short rib)
 
@@ -660,7 +650,7 @@ AnnotationAssertion(rdfs:label <http://purl.obolibrary.org/obo/FOODON_00004469> 
 
 # Class: <http://purl.obolibrary.org/obo/FOODON_00004470> (beef primal cut)
 
-AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000115> <http://purl.obolibrary.org/obo/FOODON_00004470> "A cut of beef that is initially separated from the carcass of a{n} {animal} during butchering."@en)
+AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000115> <http://purl.obolibrary.org/obo/FOODON_00004470> "A cut of beef that is initially separated from the carcass of a{n} {organism} during butchering."@en)
 AnnotationAssertion(<http://purl.org/dc/terms/contributor> <http://purl.obolibrary.org/obo/FOODON_00004470> "https://orcid.org/0000-0001-5275-8866")
 AnnotationAssertion(rdfs:label <http://purl.obolibrary.org/obo/FOODON_00004470> "beef primal cut"@en)
 SubClassOf(<http://purl.obolibrary.org/obo/FOODON_00004470> <http://purl.obolibrary.org/obo/FOODON_00002574>)
@@ -747,9 +737,9 @@ AnnotationAssertion(rdfs:label <http://purl.obolibrary.org/obo/FOODON_00004491> 
 
 AnnotationAssertion(rdfs:label <http://purl.obolibrary.org/obo/FOODON_00004492> "pork muscle tissue cut"@en)
 
-# Class: <http://purl.obolibrary.org/obo/FOODON_00004493> (piece of pork)
+# Class: <http://purl.obolibrary.org/obo/FOODON_00004493> (piece of pork meat)
 
-AnnotationAssertion(rdfs:label <http://purl.obolibrary.org/obo/FOODON_00004493> "piece of pork"@en)
+AnnotationAssertion(rdfs:label <http://purl.obolibrary.org/obo/FOODON_00004493> "piece of pork meat"@en)
 
 # Class: <http://purl.obolibrary.org/obo/FOODON_00004494> (piece of ostrich meat)
 
@@ -782,7 +772,6 @@ AnnotationAssertion(rdfs:label <http://purl.obolibrary.org/obo/FOODON_00004536> 
 # Class: <http://purl.obolibrary.org/obo/FOODON_00004537> (bison primal cut)
 
 AnnotationAssertion(rdfs:label <http://purl.obolibrary.org/obo/FOODON_00004537> "bison primal cut"@en)
-AnnotationAssertion(rdfs:label <http://purl.obolibrary.org/obo/FOODON_00004537> "turkey carcass"@en)
 
 # Class: <http://purl.obolibrary.org/obo/FOODON_00004538> (bison carcass)
 
@@ -815,6 +804,10 @@ SubClassOf(<http://purl.obolibrary.org/obo/FOODON_00004544> <http://purl.obolibr
 AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000115> <http://purl.obolibrary.org/obo/FOODON_00004545> "A buffalo meat cut that has a flat-cut appearance."@en)
 AnnotationAssertion(rdfs:label <http://purl.obolibrary.org/obo/FOODON_00004545> "buffalo steak"@en)
 SubClassOf(<http://purl.obolibrary.org/obo/FOODON_00004545> <http://purl.obolibrary.org/obo/FOODON_00004544>)
+
+# Class: <http://purl.obolibrary.org/obo/FOODON_00004551> (turkey carcass)
+
+AnnotationAssertion(rdfs:label <http://purl.obolibrary.org/obo/FOODON_00004551> "turkey carcass"@en)
 
 # Class: <http://purl.obolibrary.org/obo/FOODON_02000000> (beef round)
 
@@ -5421,31 +5414,6 @@ AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000115> <http://purl.ob
 AnnotationAssertion(rdfs:label <http://purl.obolibrary.org/obo/FOODON_02000434> "ostrich tenderloin (raw)"@en)
 SubClassOf(<http://purl.obolibrary.org/obo/FOODON_02000434> <http://purl.obolibrary.org/obo/FOODON_02000433>)
 
-# Class: <http://purl.obolibrary.org/obo/FOODON_02000435> (chicken carcass (with giblets and neck))
-
-AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000115> <http://purl.obolibrary.org/obo/FOODON_02000435> "A chicken carcass that includes giblets and neck."@en)
-AnnotationAssertion(rdfs:label <http://purl.obolibrary.org/obo/FOODON_02000435> "chicken carcass (with giblets and neck)"@en)
-SubClassOf(<http://purl.obolibrary.org/obo/FOODON_02000435> <http://purl.obolibrary.org/obo/FOODON_00003360>)
-
-# Class: <http://purl.obolibrary.org/obo/FOODON_02000436> (chicken carcass (with giblets and neck, raw))
-
-AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000115> <http://purl.obolibrary.org/obo/FOODON_02000436> "A raw chicken carcass that includes giblets and neck."@en)
-AnnotationAssertion(rdfs:label <http://purl.obolibrary.org/obo/FOODON_02000436> "chicken carcass (with giblets and neck, raw)"@en)
-SubClassOf(<http://purl.obolibrary.org/obo/FOODON_02000436> <http://purl.obolibrary.org/obo/FOODON_02000435>)
-
-# Class: <http://purl.obolibrary.org/obo/FOODON_02000437> (turkey carcass (with giblets))
-
-AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000115> <http://purl.obolibrary.org/obo/FOODON_02000437> "A turkey carcass that includes giblets."@en)
-AnnotationAssertion(rdfs:label <http://purl.obolibrary.org/obo/FOODON_02000437> "turkey carcass (with giblets)"@en)
-SubClassOf(<http://purl.obolibrary.org/obo/FOODON_02000437> <http://purl.obolibrary.org/obo/FOODON_00004537>)
-
-# Class: <http://purl.obolibrary.org/obo/FOODON_02000438> (turkey carcass (with giblets, raw))
-
-AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000115> <http://purl.obolibrary.org/obo/FOODON_02000438> "A raw turkey carcass that includes giblets."@en)
-AnnotationAssertion(rdfs:label <http://purl.obolibrary.org/obo/FOODON_02000438> "turkey carcass (with giblets, raw)"@en)
-EquivalentClasses(<http://purl.obolibrary.org/obo/FOODON_02000438> ObjectIntersectionOf(<http://purl.obolibrary.org/obo/FOODON_02000437> ObjectSomeValuesFrom(<http://purl.obolibrary.org/obo/RO_0000086> <http://purl.obolibrary.org/obo/FOODON_00004348>)))
-SubClassOf(<http://purl.obolibrary.org/obo/FOODON_02000438> <http://purl.obolibrary.org/obo/FOODON_02000437>)
-
 # Class: <http://purl.obolibrary.org/obo/FOODON_02000439> (bison sirloin)
 
 AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000114> <http://purl.obolibrary.org/obo/FOODON_02000439> <http://purl.obolibrary.org/obo/IAO_0000122>)
@@ -5702,14 +5670,14 @@ SubClassOf(<http://purl.obolibrary.org/obo/FOODON_02000462> <http://purl.obolibr
 
 AnnotationAssertion(rdfs:label <http://purl.obolibrary.org/obo/FOODON_02010032> "animal muscle tissue cut"@en)
 
-# Class: <http://purl.obolibrary.org/obo/FOODON_03301886> (ground beef (raw))
+# Class: <http://purl.obolibrary.org/obo/FOODON_03301886> (beef (ground, raw))
 
 AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000115> <http://purl.obolibrary.org/obo/FOODON_03301886> "Raw beef that has been ground."@en)
 AnnotationAssertion(rdfs:label <http://purl.obolibrary.org/obo/FOODON_03301886> "beef (ground, raw)"@en)
 EquivalentClasses(<http://purl.obolibrary.org/obo/FOODON_03301886> ObjectIntersectionOf(<http://purl.obolibrary.org/obo/FOODON_00001282> ObjectSomeValuesFrom(<http://purl.obolibrary.org/obo/RO_0000086> <http://purl.obolibrary.org/obo/FOODON_00004348>)))
 SubClassOf(<http://purl.obolibrary.org/obo/FOODON_03301886> <http://purl.obolibrary.org/obo/FOODON_00001282>)
 
-# Class: <http://purl.obolibrary.org/obo/FOODON_03309737> (beef (raw))
+# Class: <http://purl.obolibrary.org/obo/FOODON_03309737> (piece of beef (raw))
 
 AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000115> <http://purl.obolibrary.org/obo/FOODON_03309737> "A raw piece of beef."@en)
 AnnotationAssertion(rdfs:label <http://purl.obolibrary.org/obo/FOODON_03309737> "piece of beef (raw)"@en)
