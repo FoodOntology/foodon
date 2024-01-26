@@ -679,20 +679,20 @@ AnnotationAssertion(rdfs:comment <http://purl.obolibrary.org/obo/FOODON_02010024
 AnnotationAssertion(rdfs:label <http://purl.obolibrary.org/obo/FOODON_02010024> "animal processed carcass (raw, skinless)"@en)
 SubClassOf(<http://purl.obolibrary.org/obo/FOODON_02010024> <http://purl.obolibrary.org/obo/FOODON_02010023>)
 
-# Class: <http://purl.obolibrary.org/obo/FOODON_02010025> (animal processed carcass (butchered))
+# Class: <http://purl.obolibrary.org/obo/FOODON_02010025> (animal carcass (butchered))
 
 AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000114> <http://purl.obolibrary.org/obo/FOODON_02010025> <http://purl.obolibrary.org/obo/IAO_0000122>)
 AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000115> <http://purl.obolibrary.org/obo/FOODON_02010025> "A animal carcass that is eviscerated and cleaned."@en)
 AnnotationAssertion(<http://purl.org/dc/terms/date> <http://purl.obolibrary.org/obo/FOODON_02010025> "2023-08-01T21:25:29Z"^^xsd:dateTime)
-AnnotationAssertion(rdfs:label <http://purl.obolibrary.org/obo/FOODON_02010025> "animal processed carcass (butchered)"@en)
+AnnotationAssertion(rdfs:label <http://purl.obolibrary.org/obo/FOODON_02010025> "animal carcass (butchered)"@en)
 SubClassOf(<http://purl.obolibrary.org/obo/FOODON_02010025> <http://purl.obolibrary.org/obo/FOODON_02010022>)
 
-# Class: <http://purl.obolibrary.org/obo/FOODON_02010026> (animal processed carcass (gutted))
+# Class: <http://purl.obolibrary.org/obo/FOODON_02010026> (animal carcass (gutted))
 
 AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000114> <http://purl.obolibrary.org/obo/FOODON_02010026> <http://purl.obolibrary.org/obo/IAO_0000122>)
 AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000115> <http://purl.obolibrary.org/obo/FOODON_02010026> "A animal carcass which is gutted."@en)
 AnnotationAssertion(<http://purl.org/dc/terms/date> <http://purl.obolibrary.org/obo/FOODON_02010026> "2023-08-01T21:25:29Z"^^xsd:dateTime)
-AnnotationAssertion(rdfs:label <http://purl.obolibrary.org/obo/FOODON_02010026> "animal processed carcass (gutted)"@en)
+AnnotationAssertion(rdfs:label <http://purl.obolibrary.org/obo/FOODON_02010026> "animal carcass (gutted)"@en)
 SubClassOf(<http://purl.obolibrary.org/obo/FOODON_02010026> <http://purl.obolibrary.org/obo/FOODON_02010022>)
 
 # Class: <http://purl.obolibrary.org/obo/FOODON_02010027> (animal piece (raw))
