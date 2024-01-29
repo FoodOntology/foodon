@@ -1785,6 +1785,7 @@ Declaration(Class(obo:NCBITaxon_27772))
 Declaration(Class(obo:NCBITaxon_27774))
 Declaration(Class(obo:NCBITaxon_27778))
 Declaration(Class(obo:NCBITaxon_27787))
+Declaration(Class(obo:NCBITaxon_27791))
 Declaration(Class(obo:NCBITaxon_278022))
 Declaration(Class(obo:NCBITaxon_27808))
 Declaration(Class(obo:NCBITaxon_278110))
@@ -1929,6 +1930,7 @@ Declaration(Class(obo:NCBITaxon_29710))
 Declaration(Class(obo:NCBITaxon_29719))
 Declaration(Class(obo:NCBITaxon_29722))
 Declaration(Class(obo:NCBITaxon_29727))
+Declaration(Class(obo:NCBITaxon_297284))
 Declaration(Class(obo:NCBITaxon_29760))
 Declaration(Class(obo:NCBITaxon_2976026))
 Declaration(Class(obo:NCBITaxon_297798))
@@ -4922,6 +4924,7 @@ Declaration(Class(obo:NCBITaxon_9102))
 Declaration(Class(obo:NCBITaxon_9103))
 Declaration(Class(obo:NCBITaxon_9108))
 Declaration(Class(obo:NCBITaxon_911341))
+Declaration(Class(obo:NCBITaxon_9117))
 Declaration(Class(obo:NCBITaxon_9119))
 Declaration(Class(obo:NCBITaxon_91214))
 Declaration(Class(obo:NCBITaxon_9126))
@@ -4937,6 +4940,7 @@ Declaration(Class(obo:NCBITaxon_91888))
 Declaration(Class(obo:NCBITaxon_91896))
 Declaration(Class(obo:NCBITaxon_92049))
 Declaration(Class(obo:NCBITaxon_92050))
+Declaration(Class(obo:NCBITaxon_9206))
 Declaration(Class(obo:NCBITaxon_9224))
 Declaration(Class(obo:NCBITaxon_925390))
 Declaration(Class(obo:NCBITaxon_9263))
@@ -17176,6 +17180,12 @@ AnnotationAssertion(oboInOwl:hasExactSynonym obo:NCBITaxon_27787 "hawksbill turt
 AnnotationAssertion(rdfs:label obo:NCBITaxon_27787 "Eretmochelys imbricata")
 SubClassOf(obo:NCBITaxon_27787 obo:NCBITaxon_8465)
 
+# Class: obo:NCBITaxon_27791 (Chelonioidea)
+
+AnnotationAssertion(obo:IAO_0000412 obo:NCBITaxon_27791 obo:ncbitaxon.owl)
+AnnotationAssertion(rdfs:label obo:NCBITaxon_27791 "Chelonioidea")
+SubClassOf(obo:NCBITaxon_27791 obo:NCBITaxon_1579336)
+
 # Class: obo:NCBITaxon_278022 (Humulus lupulus var. cordifolius)
 
 AnnotationAssertion(obo:IAO_0000412 obo:NCBITaxon_278022 obo:ncbitaxon.owl)
@@ -18142,6 +18152,14 @@ AnnotationAssertion(oboInOwl:hasExactSynonym obo:NCBITaxon_29727 "arugula")
 AnnotationAssertion(oboInOwl:hasExactSynonym obo:NCBITaxon_29727 "garden rocket")
 AnnotationAssertion(rdfs:label obo:NCBITaxon_29727 "Eruca vesicaria subsp. sativa")
 SubClassOf(obo:NCBITaxon_29727 obo:NCBITaxon_981071)
+
+# Class: obo:NCBITaxon_297284 (Bos taurus x Bison bison)
+
+AnnotationAssertion(obo:IAO_0000412 obo:NCBITaxon_297284 obo:ncbitaxon.owl)
+AnnotationAssertion(oboInOwl:hasExactSynonym obo:NCBITaxon_297284 "Bison bison x Bos taurus")
+AnnotationAssertion(oboInOwl:hasExactSynonym obo:NCBITaxon_297284 "beefalo")
+AnnotationAssertion(rdfs:label obo:NCBITaxon_297284 "Bos taurus x Bison bison")
+SubClassOf(obo:NCBITaxon_297284 obo:NCBITaxon_27592)
 
 # Class: obo:NCBITaxon_29760 (Vitis vinifera)
 
@@ -37548,7 +37566,7 @@ SubClassOf(obo:NCBITaxon_84649 obo:NCBITaxon_116706)
 AnnotationAssertion(obo:IAO_0000412 obo:NCBITaxon_8465 obo:ncbitaxon.owl)
 AnnotationAssertion(oboInOwl:hasExactSynonym obo:NCBITaxon_8465 "sea turtles")
 AnnotationAssertion(rdfs:label obo:NCBITaxon_8465 "Cheloniidae")
-SubClassOf(obo:NCBITaxon_8465 obo:NCBITaxon_1579336)
+SubClassOf(obo:NCBITaxon_8465 obo:NCBITaxon_27791)
 
 # Class: obo:NCBITaxon_8467 (Caretta caretta)
 
@@ -38766,6 +38784,13 @@ AnnotationAssertion(obo:IAO_0000412 obo:NCBITaxon_911341 obo:ncbitaxon.owl)
 AnnotationAssertion(rdfs:label obo:NCBITaxon_911341 "Heliantheae alliance")
 SubClassOf(obo:NCBITaxon_911341 obo:NCBITaxon_102804)
 
+# Class: obo:NCBITaxon_9117 (Grus americana)
+
+AnnotationAssertion(obo:IAO_0000412 obo:NCBITaxon_9117 obo:ncbitaxon.owl)
+AnnotationAssertion(oboInOwl:hasExactSynonym obo:NCBITaxon_9117 "Whooping crane")
+AnnotationAssertion(rdfs:label obo:NCBITaxon_9117 "Grus americana")
+SubClassOf(obo:NCBITaxon_9117 obo:NCBITaxon_9108)
+
 # Class: obo:NCBITaxon_9119 (Rallidae)
 
 AnnotationAssertion(obo:IAO_0000412 obo:NCBITaxon_9119 obo:ncbitaxon.owl)
@@ -38864,6 +38889,13 @@ AnnotationAssertion(obo:IAO_0000412 obo:NCBITaxon_92050 obo:ncbitaxon.owl)
 AnnotationAssertion(oboInOwl:hasExactSynonym obo:NCBITaxon_92050 "Patagonian grenadier")
 AnnotationAssertion(rdfs:label obo:NCBITaxon_92050 "Macruronus magellanicus")
 SubClassOf(obo:NCBITaxon_92050 obo:NCBITaxon_92049)
+
+# Class: obo:NCBITaxon_9206 (Phalacrocoracidae)
+
+AnnotationAssertion(obo:IAO_0000412 obo:NCBITaxon_9206 obo:ncbitaxon.owl)
+AnnotationAssertion(oboInOwl:hasExactSynonym obo:NCBITaxon_9206 "cormorants and shags")
+AnnotationAssertion(rdfs:label obo:NCBITaxon_9206 "Phalacrocoracidae")
+SubClassOf(obo:NCBITaxon_9206 obo:NCBITaxon_8825)
 
 # Class: obo:NCBITaxon_9224 (Psittacidae)
 
