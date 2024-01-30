@@ -55,11 +55,26 @@ Datatype: xsd:integer
 Datatype: idrange:3
 
     Annotations: 
-        allocatedto: "TermGenie"
+        allocatedto: "Meat cuts"
     
     EquivalentTo: 
-        xsd:integer[> 2000000 , <= 2999999]
+        xsd:integer[> 2000000 , <= 2009999]
 
+Datatype: idrange:9
+
+    Annotations: 
+        allocatedto: "Animal parts"
+    
+    EquivalentTo: 
+        xsd:integer[> 2010000 , <= 2099999]
+
+Datatype: idrange:10
+
+    Annotations: 
+        allocatedto: "Plant parts"
+    
+    EquivalentTo: 
+        xsd:integer[> 2100000 , <= 2199999]
 
 Datatype: idrange:4
 
