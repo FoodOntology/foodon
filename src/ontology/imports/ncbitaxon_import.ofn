@@ -454,7 +454,6 @@ Declaration(Class(obo:NCBITaxon_1311505))
 Declaration(Class(obo:NCBITaxon_1311532))
 Declaration(Class(obo:NCBITaxon_131240))
 Declaration(Class(obo:NCBITaxon_131282))
-Declaration(Class(obo:NCBITaxon_131567))
 Declaration(Class(obo:NCBITaxon_1315725))
 Declaration(Class(obo:NCBITaxon_13205))
 Declaration(Class(obo:NCBITaxon_132107))
@@ -8236,11 +8235,6 @@ AnnotationAssertion(obo:IAO_0000412 obo:NCBITaxon_131282 obo:ncbitaxon.owl)
 AnnotationAssertion(rdfs:label obo:NCBITaxon_131282 "Linospadix monostachyos")
 SubClassOf(obo:NCBITaxon_131282 obo:NCBITaxon_169703)
 
-# Class: obo:NCBITaxon_131567 (cellular organisms)
-
-AnnotationAssertion(obo:IAO_0000412 obo:NCBITaxon_131567 obo:ncbitaxon.owl)
-AnnotationAssertion(rdfs:label obo:NCBITaxon_131567 "cellular organisms")
-
 # Class: obo:NCBITaxon_1315725 (Oreochromini)
 
 AnnotationAssertion(obo:IAO_0000412 obo:NCBITaxon_1315725 obo:ncbitaxon.owl)
@@ -13506,7 +13500,6 @@ SubClassOf(obo:NCBITaxon_199623 obo:NCBITaxon_4642)
 AnnotationAssertion(obo:IAO_0000412 obo:NCBITaxon_2 obo:ncbitaxon.owl)
 AnnotationAssertion(oboInOwl:hasExactSynonym obo:NCBITaxon_2 "eubacteria")
 AnnotationAssertion(rdfs:label obo:NCBITaxon_2 "Bacteria")
-SubClassOf(obo:NCBITaxon_2 obo:NCBITaxon_131567)
 
 # Class: obo:NCBITaxon_2005230 (Penaeus occidentalis)
 
@@ -16983,7 +16976,6 @@ AnnotationAssertion(obo:IAO_0000412 obo:NCBITaxon_2759 obo:ncbitaxon.owl)
 AnnotationAssertion(oboInOwl:hasExactSynonym obo:NCBITaxon_2759 "eucaryotes")
 AnnotationAssertion(oboInOwl:hasExactSynonym obo:NCBITaxon_2759 "eukaryotes")
 AnnotationAssertion(rdfs:label obo:NCBITaxon_2759 "Eukaryota")
-SubClassOf(obo:NCBITaxon_2759 obo:NCBITaxon_131567)
 
 # Class: obo:NCBITaxon_27590 (Tetronarce nobiliana)
 
