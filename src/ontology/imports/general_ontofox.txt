@@ -83,7 +83,6 @@ http://purl.obolibrary.org/obo/IAO_0000030 # information
 http://purl.obolibrary.org/obo/BFO_0000020 # characteristic
 http://purl.obolibrary.org/obo/PATO_0000001 # characteristic
 subClassOf http://purl.obolibrary.org/obo/BFO_0000020
-http://purl.obolibrary.org/obo/BFO_0000020 # characteristic
 http://purl.obolibrary.org/obo/BFO_0000141 # immaterial entity
 http://purl.obolibrary.org/obo/BFO_0000040 # material entity
 http://purl.obolibrary.org/obo/BFO_0000015 # process
@@ -146,13 +145,7 @@ DRON
 http://purl.obolibrary.org/obo/DRON_00012339  # Propolis
 
 [Top level source term URIs and target direct superclass URIs]
-http://purl.obolibrary.org/obo/IAO_0000030 # information
-http://purl.obolibrary.org/obo/BFO_0000020 # characteristic
-http://purl.obolibrary.org/obo/PATO_0000001 # characteristic
-subClassOf http://purl.obolibrary.org/obo/BFO_0000020
-http://purl.obolibrary.org/obo/BFO_0000141 # immaterial entity
 http://purl.obolibrary.org/obo/BFO_0000040 # material entity
-http://purl.obolibrary.org/obo/BFO_0000015 # process
 
 [Source term retrieval setting]
 includeAllIntermediates
@@ -177,7 +170,6 @@ http://purl.obolibrary.org/obo/FAO_0000001
 includeAllChildren
 
 [Top level source term URIs and target direct superclass URIs]
-http://purl.obolibrary.org/obo/FAO_0000001 # fungal structure
 
 [Source term retrieval setting]
 includeNoIntermediates
@@ -556,7 +548,7 @@ http://purl.obolibrary.org/obo/PATO_0000308 # old
 
 [Top level source term URIs and target direct superclass URIs]
 http://purl.obolibrary.org/obo/PATO_0000001
-subClassOf http://purl.obolibrary.org/obo/BFO_0000020
+subClassOf http://purl.obolibrary.org/obo/BFO_0000020 # characteristic
 
 [Source term retrieval setting]
 includeAllIntermediates
@@ -626,7 +618,6 @@ http://purl.obolibrary.org/obo/IAO_0000115
 http://purl.obolibrary.org/obo/IAO_0000114
 http://purl.obolibrary.org/obo/IAO_0000118
 http://purl.obolibrary.org/obo/IAO_0000119
-http://www.geneontology.org/formats/oboInOwl#oboInOwl:hasExactSynonym
 http://www.w3.org/2002/07/owl#deprecated
 http://purl.obolibrary.org/obo/IAO_0100001 # replaced by
 
@@ -727,8 +718,7 @@ http://purl.obolibrary.org/obo/PO_0030115 # raceme inflorescence
 http://purl.obolibrary.org/obo/PO_0025597 # ear infructescence
 
 http://purl.obolibrary.org/obo/PO_0025538 # plant sap
-http://purl.obolibrary.org/obo/PO_0009049 # inflorescence
-http://purl.obolibrary.org/obo/PO_0006342 # infructescence
+
 
 # This section exists just to organize classes that would otherwise just
 # hang out at top level because they were introduced with the includeAllAxioms
@@ -794,12 +784,24 @@ http://purl.obolibrary.org/obo/PO_0025223 # vegetative shoot apex
 http://purl.obolibrary.org/obo/PO_0000037 # shoot axis apex
 http://purl.obolibrary.org/obo/PO_0008016 # vegetative shoot apical meristem
 
+http://purl.obolibrary.org/obo/PO_0009049 # inflorescence 
+http://purl.obolibrary.org/obo/PO_0006342 # infructescence
+
 [Top level source term URIs and target direct superclass URIs]
 http://purl.obolibrary.org/obo/PO_0009012 # plant structure development stage
-http://purl.obolibrary.org/obo/PO_0025131 # plant anatomical entity
+# MUST IMPORT THIS BUT NO PARENT CONTINUANT
+# http://purl.obolibrary.org/obo/UBERON_0001062 # anatomical entity
+
+http://purl.obolibrary.org/obo/BFO_0000040 # material entity
+
+# PROBLEM WITH DL These come in under anatomical entity - continuant which inherits both "part of" only continuant AND "part of" only "independent continuant"
+http://purl.obolibrary.org/obo/PO_0009049 # inflorescence
+subClassOf http://purl.obolibrary.org/obo/PO_0025131 # plant anatomical entity
+http://purl.obolibrary.org/obo/PO_0006342 # infructescence
+subClassOf http://purl.obolibrary.org/obo/PO_0025131 # plant anatomical entity
 
 #REQUIRED IN ORDER TO AVOID MATERIAL ENTITY FROM BEING CHILD OF INDEPENDENT CONTINUANT ETC. IN COB HIERARCHY.
-http://purl.obolibrary.org/obo/CARO_0030000 # biological entity 
+#http://purl.obolibrary.org/obo/CARO_0030000 # biological entity 
 
 [Source term retrieval setting]
 includeAllIntermediates
@@ -874,11 +876,13 @@ http://purl.obolibrary.org/obo/BFO_0000054 # realized in
 http://purl.obolibrary.org/obo/BFO_0000055 # realizes
 
 [Top level source term URIs and target direct superclass URIs]
+#http://www.w3.org/2002/07/owl#topObjectProperty
 
 [Source term retrieval setting]
 includeAllIntermediates
 
 [Source annotation URIs]
+#includeAllAxioms # CANT DO THIS UNTIL COB FULLY INTEGRATED WITH RO
 http://www.w3.org/2000/01/rdf-schema#label
 http://purl.obolibrary.org/obo/IAO_0000115 
 http://purl.obolibrary.org/obo/IAO_0000114
@@ -1016,14 +1020,20 @@ http://purl.obolibrary.org/obo/UBERON_0001988 # feces
 
 [Top level source term URIs and target direct superclass URIs]
 http://purl.obolibrary.org/obo/UBERON_0000104 # life cycle
-http://purl.obolibrary.org/obo/UBERON_0001062 # anatomical entity
 
-http://purl.obolibrary.org/obo/IAO_0000030 # information
+# MUST IMPORT THIS BUT NO PARENT. DL problem shows up with continuant ???
+# http://purl.obolibrary.org/obo/UBERON_0001062 # anatomical entity
+
+#http://purl.obolibrary.org/obo/UBERON_0000466 # immaterial anatomical entity UNUSED
+http://purl.obolibrary.org/obo/UBERON_0000465 # material anatomical entity
+subClassOf http://purl.obolibrary.org/obo/BFO_0000040 # material entity
+
+# CRITICAL or DL error from continuant / independent continuant shows up:
+http://purl.obolibrary.org/obo/BFO_0000040 # material entity
+
 http://purl.obolibrary.org/obo/BFO_0000020 # characteristic
 http://purl.obolibrary.org/obo/PATO_0000001 # characteristic
 subClassOf http://purl.obolibrary.org/obo/BFO_0000020
-http://purl.obolibrary.org/obo/BFO_0000141 # immaterial entity
-http://purl.obolibrary.org/obo/BFO_0000040 # material entity
 http://purl.obolibrary.org/obo/BFO_0000015 # process
 
 [Source term retrieval setting]
