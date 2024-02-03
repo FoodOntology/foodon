@@ -1,7 +1,6 @@
 [URI of the OWL(RDF/XML) output file]
 http://purl.obolibrary.org/obo/foodon/imports/general_import.ofn
 
-
 ###########################################
 
 [Source ontology]
@@ -42,7 +41,6 @@ http://purl.obolibrary.org/obo/IAO_0000408 #          length measurement datum
 http://purl.obolibrary.org/obo/IAO_0000414 #          mass measurement datum
 http://purl.obolibrary.org/obo/IAO_0000416 #          time measurement datum
 http://purl.obolibrary.org/obo/OBI_0001619 #             specimen collection time measurement datum
-
 
 http://purl.obolibrary.org/obo/IAO_0000078 # curation status specification
 http://purl.obolibrary.org/obo/IAO_0000428 #    requires discussion
@@ -90,19 +88,18 @@ http://purl.obolibrary.org/obo/BFO_0000141 # immaterial entity
 http://purl.obolibrary.org/obo/BFO_0000040 # material entity
 http://purl.obolibrary.org/obo/BFO_0000015 # process
 
-
 [Source term retrieval setting]
 includeAllIntermediates
 
-
 [Source annotation URIs]
 http://www.w3.org/2000/01/rdf-schema#label
-http://purl.obolibrary.org/obo/IAO_0000115 # definition
-http://purl.obolibrary.org/obo/IAO_0000111
+http://purl.obolibrary.org/obo/IAO_0000115 
 http://purl.obolibrary.org/obo/IAO_0000114
+http://purl.obolibrary.org/obo/IAO_0000118
 http://purl.obolibrary.org/obo/IAO_0000119
-http://purl.obolibrary.org/obo/OBI_0001886
-
+http://www.geneontology.org/formats/oboInOwl#oboInOwl:hasExactSynonym
+http://www.w3.org/2002/07/owl#deprecated
+http://purl.obolibrary.org/obo/IAO_0100001 # replaced by
 
 ###########################################
 
@@ -116,7 +113,6 @@ http://purl.obolibrary.org/obo/AGRO_01000020 #      crop cultivation process
 http://purl.obolibrary.org/obo/AGRO_00000322 #      treatment
 
 http://purl.obolibrary.org/obo/AGRO_00000363 # greenhouse
-
 
 [Top level source term URIs and target direct superclass URIs]
 http://purl.obolibrary.org/obo/IAO_0000030 # information
@@ -133,11 +129,13 @@ includeAllIntermediates
 
 [Source annotation URIs]
 http://www.w3.org/2000/01/rdf-schema#label
-http://purl.obolibrary.org/obo/IAO_0000115 # definition
-http://purl.obolibrary.org/obo/IAO_0000111
+http://purl.obolibrary.org/obo/IAO_0000115 
 http://purl.obolibrary.org/obo/IAO_0000114
+http://purl.obolibrary.org/obo/IAO_0000118
 http://purl.obolibrary.org/obo/IAO_0000119
-http://purl.obolibrary.org/obo/OBI_0001886
+http://www.geneontology.org/formats/oboInOwl#oboInOwl:hasExactSynonym
+http://www.w3.org/2002/07/owl#deprecated
+http://purl.obolibrary.org/obo/IAO_0100001 # replaced by
 
 ###########################################
 
@@ -161,11 +159,13 @@ includeAllIntermediates
 
 [Source annotation URIs]
 http://www.w3.org/2000/01/rdf-schema#label
-http://purl.obolibrary.org/obo/IAO_0000115 # definition
-http://purl.obolibrary.org/obo/IAO_0000111
+http://purl.obolibrary.org/obo/IAO_0000115 
 http://purl.obolibrary.org/obo/IAO_0000114
+http://purl.obolibrary.org/obo/IAO_0000118
 http://purl.obolibrary.org/obo/IAO_0000119
-http://purl.obolibrary.org/obo/OBI_0001886
+http://www.geneontology.org/formats/oboInOwl#oboInOwl:hasExactSynonym
+http://www.w3.org/2002/07/owl#deprecated
+http://purl.obolibrary.org/obo/IAO_0100001 # replaced by
 
 ###########################################
 
@@ -183,7 +183,14 @@ http://purl.obolibrary.org/obo/FAO_0000001 # fungal structure
 includeNoIntermediates
 
 [Source annotation URIs]
-includeAllAxioms
+http://www.w3.org/2000/01/rdf-schema#label
+http://purl.obolibrary.org/obo/IAO_0000115 
+http://purl.obolibrary.org/obo/IAO_0000114
+http://purl.obolibrary.org/obo/IAO_0000118
+http://purl.obolibrary.org/obo/IAO_0000119
+http://www.geneontology.org/formats/oboInOwl#oboInOwl:hasExactSynonym
+http://www.w3.org/2002/07/owl#deprecated
+http://purl.obolibrary.org/obo/IAO_0100001 # replaced by
 
 ###########################################
 
@@ -206,55 +213,16 @@ subClassOf http://purl.obolibrary.org/obo/FOODON_03420178 # seed part
 [Source term retrieval setting]
 includeNoIntermediates
 
-
 [Source annotation URIs]
-includeAllAxioms
-
-###########################################
-
-[Source ontology]
-CDNO
-
-[Low level source term URIs]
-http://purl.obolibrary.org/obo/CDNO_0500001 # dietary role
-includeAllChildren
-http://purl.obolibrary.org/obo/PATO_0000033 # concentration of
-includeAllChildren
-http://purl.obolibrary.org/obo/BFO_0000040 # material entity
-includeAllChildren
-
-[Top level source term URIs and target direct superclass URIs]
-http://purl.obolibrary.org/obo/CDNO_0500001
-subClassOf http://purl.obolibrary.org/obo/BFO_0000017 # realizable
-
-[Source term retrieval setting]
-includeAllIntermediates
-
-[Source annotation URIs]
-includeAllAxioms
-
 http://www.w3.org/2000/01/rdf-schema#label
 http://purl.obolibrary.org/obo/IAO_0000115 
-http://purl.obolibrary.org/obo/IAO_0000111
 http://purl.obolibrary.org/obo/IAO_0000114
 http://purl.obolibrary.org/obo/IAO_0000118
 http://purl.obolibrary.org/obo/IAO_0000119
-http://purl.obolibrary.org/obo/OBI_0001886
-#http://www.w3.org/2002/07/owl#equivalentClass # doesn't seem to work without generating error "EquivalentClasses(error:Error1 obo:CDNO_0200776)"
+http://www.geneontology.org/formats/oboInOwl#oboInOwl:hasExactSynonym
 http://www.w3.org/2002/07/owl#deprecated
 http://purl.obolibrary.org/obo/IAO_0100001 # replaced by
-http://purl.obolibrary.org/obo/CHEBI_16646 # has alternative id
 
-[Source annotation URIs to be excluded]
-http://purl.obolibrary.org/obo/chebi/charge
-http://purl.obolibrary.org/obo/chebi/formula
-http://www.geneontology.org/formats/oboInOwl#inSubset
-http://purl.obolibrary.org/obo/chebi/inchi
-http://purl.obolibrary.org/obo/chebi/inchikey
-http://purl.obolibrary.org/obo/chebi/mass
-http://purl.obolibrary.org/obo/chebi/monoisotopicmass
-http://purl.obolibrary.org/obo/chebi/smiles
-http://www.geneontology.org/formats/oboInOwl#hasDbXref
 
 ###########################################
 
@@ -412,12 +380,10 @@ includeAllIntermediates
 [Source annotation URIs]
 http://www.w3.org/2000/01/rdf-schema#label
 http://purl.obolibrary.org/obo/IAO_0000115 
-http://purl.obolibrary.org/obo/IAO_0000111
 http://purl.obolibrary.org/obo/IAO_0000114
 http://purl.obolibrary.org/obo/IAO_0000118
 http://purl.obolibrary.org/obo/IAO_0000119
-http://purl.obolibrary.org/obo/OBI_0001886
-
+http://www.geneontology.org/formats/oboInOwl#oboInOwl:hasExactSynonym
 http://www.w3.org/2002/07/owl#deprecated
 http://purl.obolibrary.org/obo/IAO_0100001 # replaced by
 
@@ -440,7 +406,15 @@ http://purl.obolibrary.org/obo/HANCESTRO_0308 # HasCountryOfOrigin
 includeNoIntermediates
 
 [Source annotation URIs]
-includeAllAnnotationProperties
+http://www.w3.org/2000/01/rdf-schema#label
+http://purl.obolibrary.org/obo/IAO_0000115 
+http://purl.obolibrary.org/obo/IAO_0000114
+http://purl.obolibrary.org/obo/IAO_0000118
+http://purl.obolibrary.org/obo/IAO_0000119
+http://www.geneontology.org/formats/oboInOwl#oboInOwl:hasExactSynonym
+http://www.w3.org/2002/07/owl#deprecated
+http://purl.obolibrary.org/obo/IAO_0100001 # replaced by
+
 [Source annotation URIs to be excluded]
 
 ###########################################
@@ -461,10 +435,12 @@ includeAllIntermediates
 [Source annotation URIs]
 http://www.w3.org/2000/01/rdf-schema#label
 http://purl.obolibrary.org/obo/IAO_0000115 
-http://purl.obolibrary.org/obo/IAO_0000111
 http://purl.obolibrary.org/obo/IAO_0000114
+http://purl.obolibrary.org/obo/IAO_0000118
 http://purl.obolibrary.org/obo/IAO_0000119
-http://purl.obolibrary.org/obo/OBI_0001886
+http://www.geneontology.org/formats/oboInOwl#oboInOwl:hasExactSynonym
+http://www.w3.org/2002/07/owl#deprecated
+http://purl.obolibrary.org/obo/IAO_0100001 # replaced by
 
 ###########################################
 
@@ -498,13 +474,11 @@ includeNoIntermediates
 
 [Source annotation URIs]
 http://www.w3.org/2000/01/rdf-schema#label
-http://www.geneontology.org/formats/oboInOwl#hasSynonym
 http://purl.obolibrary.org/obo/IAO_0000115 
-http://purl.obolibrary.org/obo/IAO_0000111
 http://purl.obolibrary.org/obo/IAO_0000114
+http://purl.obolibrary.org/obo/IAO_0000118
 http://purl.obolibrary.org/obo/IAO_0000119
-http://purl.obolibrary.org/obo/OBI_0001886
-
+http://www.geneontology.org/formats/oboInOwl#oboInOwl:hasExactSynonym
 http://www.w3.org/2002/07/owl#deprecated
 http://purl.obolibrary.org/obo/IAO_0100001 # replaced by
 
@@ -525,13 +499,14 @@ includeAllIntermediates
 [Source annotation URIs]
 http://www.w3.org/2000/01/rdf-schema#label
 http://purl.obolibrary.org/obo/IAO_0000115 
-http://purl.obolibrary.org/obo/IAO_0000111
 http://purl.obolibrary.org/obo/IAO_0000114
+http://purl.obolibrary.org/obo/IAO_0000118
 http://purl.obolibrary.org/obo/IAO_0000119
-http://purl.obolibrary.org/obo/OBI_0001886
+http://www.geneontology.org/formats/oboInOwl#oboInOwl:hasExactSynonym
+http://www.w3.org/2002/07/owl#deprecated
+http://purl.obolibrary.org/obo/IAO_0100001 # replaced by
 
 ###########################################
-
 
 [Source ontology]
 PATO
@@ -589,10 +564,12 @@ includeAllIntermediates
 [Source annotation URIs]
 http://www.w3.org/2000/01/rdf-schema#label
 http://purl.obolibrary.org/obo/IAO_0000115 
-http://purl.obolibrary.org/obo/IAO_0000111
 http://purl.obolibrary.org/obo/IAO_0000114
+http://purl.obolibrary.org/obo/IAO_0000118
 http://purl.obolibrary.org/obo/IAO_0000119
-http://purl.obolibrary.org/obo/OBI_0001886
+http://www.geneontology.org/formats/oboInOwl#oboInOwl:hasExactSynonym
+http://www.w3.org/2002/07/owl#deprecated
+http://purl.obolibrary.org/obo/IAO_0100001 # replaced by
 
 
 ###########################################
@@ -613,10 +590,12 @@ includeAllIntermediates
 [Source annotation URIs]
 http://www.w3.org/2000/01/rdf-schema#label
 http://purl.obolibrary.org/obo/IAO_0000115 
-http://purl.obolibrary.org/obo/IAO_0000111
 http://purl.obolibrary.org/obo/IAO_0000114
+http://purl.obolibrary.org/obo/IAO_0000118
 http://purl.obolibrary.org/obo/IAO_0000119
-http://purl.obolibrary.org/obo/OBI_0001886
+http://www.geneontology.org/formats/oboInOwl#oboInOwl:hasExactSynonym
+http://www.w3.org/2002/07/owl#deprecated
+http://purl.obolibrary.org/obo/IAO_0100001 # replaced by
 
 
 ###########################################
@@ -642,7 +621,14 @@ http://purl.obolibrary.org/obo/IAO_0000231 # has obsolescence reason
 includeNoIntermediates
 
 [Source annotation URIs]
-includeAllAnnotationProperties
+http://www.w3.org/2000/01/rdf-schema#label
+http://purl.obolibrary.org/obo/IAO_0000115 
+http://purl.obolibrary.org/obo/IAO_0000114
+http://purl.obolibrary.org/obo/IAO_0000118
+http://purl.obolibrary.org/obo/IAO_0000119
+http://www.geneontology.org/formats/oboInOwl#oboInOwl:hasExactSynonym
+http://www.w3.org/2002/07/owl#deprecated
+http://purl.obolibrary.org/obo/IAO_0100001 # replaced by
 
 
 ###########################################
@@ -660,7 +646,14 @@ http://purl.obolibrary.org/obo/BTO_0001217 # scape
 includeNoIntermediates
 
 [Source annotation URIs]
-includeAllAnnotationProperties
+http://www.w3.org/2000/01/rdf-schema#label
+http://purl.obolibrary.org/obo/IAO_0000115 
+http://purl.obolibrary.org/obo/IAO_0000114
+http://purl.obolibrary.org/obo/IAO_0000118
+http://purl.obolibrary.org/obo/IAO_0000119
+http://www.geneontology.org/formats/oboInOwl#oboInOwl:hasExactSynonym
+http://www.w3.org/2002/07/owl#deprecated
+http://purl.obolibrary.org/obo/IAO_0100001 # replaced by
 
 ###########################################
 
@@ -813,16 +806,6 @@ includeAllIntermediates
 
 [Source annotation URIs]
 includeAllAxioms
-#http://www.w3.org/2000/01/rdf-schema#label
-#http://purl.obolibrary.org/obo/IAO_0000115 
-#http://purl.obolibrary.org/obo/IAO_0000111
-#http://purl.obolibrary.org/obo/IAO_0000114
-#http://purl.obolibrary.org/obo/IAO_0000119
-#http://purl.obolibrary.org/obo/OBI_0001886
-
-http://www.geneontology.org/formats/oboInOwl#hasExactSynonym
-http://www.w3.org/2002/07/owl#deprecated
-http://purl.obolibrary.org/obo/IAO_0100001 # replaced by
 
 ###########################################
 
@@ -892,17 +875,18 @@ http://purl.obolibrary.org/obo/BFO_0000055 # realizes
 
 [Top level source term URIs and target direct superclass URIs]
 
-
 [Source term retrieval setting]
 includeAllIntermediates
 
 [Source annotation URIs]
-# includeAllAxioms
 http://www.w3.org/2000/01/rdf-schema#label
-http://purl.obolibrary.org/obo/IAO_0000111
+http://purl.obolibrary.org/obo/IAO_0000115 
 http://purl.obolibrary.org/obo/IAO_0000114
-http://purl.obolibrary.org/obo/IAO_0000115
+http://purl.obolibrary.org/obo/IAO_0000118
 http://purl.obolibrary.org/obo/IAO_0000119
+http://www.geneontology.org/formats/oboInOwl#oboInOwl:hasExactSynonym
+http://www.w3.org/2002/07/owl#deprecated
+http://purl.obolibrary.org/obo/IAO_0100001 # replaced by
 
 ###########################################
 
@@ -921,12 +905,10 @@ includeAllIntermediates
 [Source annotation URIs]
 http://www.w3.org/2000/01/rdf-schema#label
 http://purl.obolibrary.org/obo/IAO_0000115 
-http://purl.obolibrary.org/obo/IAO_0000111
 http://purl.obolibrary.org/obo/IAO_0000114
+http://purl.obolibrary.org/obo/IAO_0000118
 http://purl.obolibrary.org/obo/IAO_0000119
-http://purl.obolibrary.org/obo/OBI_0001886
-
-http://www.geneontology.org/formats/oboInOwl#hasExactSynonym
+http://www.geneontology.org/formats/oboInOwl#oboInOwl:hasExactSynonym
 http://www.w3.org/2002/07/owl#deprecated
 http://purl.obolibrary.org/obo/IAO_0100001 # replaced by
 
@@ -1032,7 +1014,6 @@ http://purl.obolibrary.org/obo/UBERON_0000993 # oviduct
 http://purl.obolibrary.org/obo/UBERON_0002406 # pericardial sac
 http://purl.obolibrary.org/obo/UBERON_0001988 # feces
 
-
 [Top level source term URIs and target direct superclass URIs]
 http://purl.obolibrary.org/obo/UBERON_0000104 # life cycle
 http://purl.obolibrary.org/obo/UBERON_0001062 # anatomical entity
@@ -1051,11 +1032,10 @@ includeAllIntermediates
 [Source annotation URIs]
 http://www.w3.org/2000/01/rdf-schema#label
 http://purl.obolibrary.org/obo/IAO_0000115 
-http://purl.obolibrary.org/obo/IAO_0000111
 http://purl.obolibrary.org/obo/IAO_0000114
+http://purl.obolibrary.org/obo/IAO_0000118
 http://purl.obolibrary.org/obo/IAO_0000119
-http://purl.obolibrary.org/obo/OBI_0001886
-http://www.geneontology.org/formats/oboInOwl#hasExactSynonym
+http://www.geneontology.org/formats/oboInOwl#oboInOwl:hasExactSynonym
 http://www.w3.org/2002/07/owl#deprecated
 http://purl.obolibrary.org/obo/IAO_0100001 # replaced by
 
@@ -1124,6 +1104,10 @@ includeAllIntermediates
 
 [Source annotation URIs]
 http://www.w3.org/2000/01/rdf-schema#label
-http://purl.obolibrary.org/obo/IAO_0000115 #iao:definition
-http://www.geneontology.org/formats/oboInOwl#hasSynonym
-http://www.w3.org/2000/01/rdf-schema#seeAlso
+http://purl.obolibrary.org/obo/IAO_0000115 
+http://purl.obolibrary.org/obo/IAO_0000114
+http://purl.obolibrary.org/obo/IAO_0000118
+http://purl.obolibrary.org/obo/IAO_0000119
+http://www.geneontology.org/formats/oboInOwl#oboInOwl:hasExactSynonym
+http://www.w3.org/2002/07/owl#deprecated
+http://purl.obolibrary.org/obo/IAO_0100001 # replaced by
