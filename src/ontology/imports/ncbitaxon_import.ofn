@@ -46,6 +46,7 @@ Declaration(Class(obo:NCBITaxon_1010711))
 Declaration(Class(obo:NCBITaxon_1010714))
 Declaration(Class(obo:NCBITaxon_1010792))
 Declaration(Class(obo:NCBITaxon_101185))
+Declaration(Class(obo:NCBITaxon_10157))
 Declaration(Class(obo:NCBITaxon_1016941))
 Declaration(Class(obo:NCBITaxon_10184))
 Declaration(Class(obo:NCBITaxon_102107))
@@ -2326,6 +2327,7 @@ Declaration(Class(obo:NCBITaxon_335062))
 Declaration(Class(obo:NCBITaxon_33511))
 Declaration(Class(obo:NCBITaxon_33514))
 Declaration(Class(obo:NCBITaxon_335480))
+Declaration(Class(obo:NCBITaxon_33550))
 Declaration(Class(obo:NCBITaxon_33554))
 Declaration(Class(obo:NCBITaxon_33556))
 Declaration(Class(obo:NCBITaxon_33574))
@@ -5106,6 +5108,7 @@ Declaration(Class(obo:NCBITaxon_98293))
 Declaration(Class(obo:NCBITaxon_98297))
 Declaration(Class(obo:NCBITaxon_98307))
 Declaration(Class(obo:NCBITaxon_9831))
+Declaration(Class(obo:NCBITaxon_9832))
 Declaration(Class(obo:NCBITaxon_9833))
 Declaration(Class(obo:NCBITaxon_983408))
 Declaration(Class(obo:NCBITaxon_98342))
@@ -5456,6 +5459,14 @@ AnnotationAssertion(obo:IAO_0000412 obo:NCBITaxon_101185 obo:ncbitaxon.owl)
 AnnotationAssertion(oboInOwl:hasExactSynonym obo:NCBITaxon_101185 "leopard toadfish")
 AnnotationAssertion(rdfs:label obo:NCBITaxon_101185 "Opsanus pardus")
 SubClassOf(obo:NCBITaxon_101185 obo:NCBITaxon_8067)
+
+# Class: obo:NCBITaxon_10157 (Myocastor coypus)
+
+AnnotationAssertion(obo:IAO_0000412 obo:NCBITaxon_10157 obo:ncbitaxon.owl)
+AnnotationAssertion(oboInOwl:hasExactSynonym obo:NCBITaxon_10157 "coypu")
+AnnotationAssertion(oboInOwl:hasExactSynonym obo:NCBITaxon_10157 "nutria")
+AnnotationAssertion(rdfs:label obo:NCBITaxon_10157 "Myocastor coypus")
+SubClassOf(obo:NCBITaxon_10157 obo:NCBITaxon_33550)
 
 # Class: obo:NCBITaxon_1016941 (Oxynotus centrina)
 
@@ -20868,6 +20879,13 @@ AnnotationAssertion(obo:IAO_0000412 obo:NCBITaxon_335480 obo:ncbitaxon.owl)
 AnnotationAssertion(rdfs:label obo:NCBITaxon_335480 "Chlamys albidus")
 SubClassOf(obo:NCBITaxon_335480 obo:NCBITaxon_6569)
 
+# Class: obo:NCBITaxon_33550 (Hystricomorpha)
+
+AnnotationAssertion(obo:IAO_0000412 obo:NCBITaxon_33550 obo:ncbitaxon.owl)
+AnnotationAssertion(oboInOwl:hasExactSynonym obo:NCBITaxon_33550 "guinea pigs and others")
+AnnotationAssertion(rdfs:label obo:NCBITaxon_33550 "Hystricomorpha")
+SubClassOf(obo:NCBITaxon_33550 obo:NCBITaxon_9989)
+
 # Class: obo:NCBITaxon_33554 (Carnivora)
 
 AnnotationAssertion(obo:IAO_0000412 obo:NCBITaxon_33554 obo:ncbitaxon.owl)
@@ -21478,7 +21496,7 @@ SubClassOf(obo:NCBITaxon_3483 obo:NCBITaxon_3481)
 AnnotationAssertion(obo:IAO_0000412 obo:NCBITaxon_34844 obo:ncbitaxon.owl)
 AnnotationAssertion(oboInOwl:hasExactSynonym obo:NCBITaxon_34844 "North American porcupine")
 AnnotationAssertion(rdfs:label obo:NCBITaxon_34844 "Erethizon dorsatum")
-SubClassOf(obo:NCBITaxon_34844 obo:NCBITaxon_9989)
+SubClassOf(obo:NCBITaxon_34844 obo:NCBITaxon_33550)
 
 # Class: obo:NCBITaxon_348443 (Ciliata mustela)
 
@@ -40055,12 +40073,18 @@ AnnotationAssertion(obo:IAO_0000412 obo:NCBITaxon_9831 obo:ncbitaxon.owl)
 AnnotationAssertion(rdfs:label obo:NCBITaxon_9831 "Hippopotamidae")
 SubClassOf(obo:NCBITaxon_9831 obo:NCBITaxon_2653789)
 
+# Class: obo:NCBITaxon_9832 (Hippopotamus)
+
+AnnotationAssertion(obo:IAO_0000412 obo:NCBITaxon_9832 obo:ncbitaxon.owl)
+AnnotationAssertion(rdfs:label obo:NCBITaxon_9832 "Hippopotamus")
+SubClassOf(obo:NCBITaxon_9832 obo:NCBITaxon_9831)
+
 # Class: obo:NCBITaxon_9833 (Hippopotamus amphibius)
 
 AnnotationAssertion(obo:IAO_0000412 obo:NCBITaxon_9833 obo:ncbitaxon.owl)
 AnnotationAssertion(oboInOwl:hasExactSynonym obo:NCBITaxon_9833 "hippopotamus")
 AnnotationAssertion(rdfs:label obo:NCBITaxon_9833 "Hippopotamus amphibius")
-SubClassOf(obo:NCBITaxon_9833 obo:NCBITaxon_9831)
+SubClassOf(obo:NCBITaxon_9833 obo:NCBITaxon_9832)
 
 # Class: obo:NCBITaxon_983408 (Diospyros kaki var. silvestris)
 
