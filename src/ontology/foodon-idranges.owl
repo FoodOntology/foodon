@@ -60,13 +60,29 @@ Datatype: idrange:3
     EquivalentTo: 
         xsd:integer[> 2000000 , <= 2009999]
 
+Datatype: idrange:11
+
+    Annotations: 
+        allocatedto: "Animal template (generated)"
+    
+    EquivalentTo: 
+        xsd:integer[> 2010000 , <= 2012999]
+
 Datatype: idrange:9
 
     Annotations: 
         allocatedto: "Animal parts"
     
     EquivalentTo: 
-        xsd:integer[> 2010000 , <= 2099999]
+        xsd:integer[> 2013000 , <= 2099999]
+
+Datatype: idrange:12
+
+    Annotations: 
+        allocatedto: "Plant template (generated)"
+    
+    EquivalentTo: 
+        xsd:integer[> 2100000 , <= 2102999]
 
 Datatype: idrange:10
 
@@ -74,7 +90,7 @@ Datatype: idrange:10
         allocatedto: "Plant parts"
     
     EquivalentTo: 
-        xsd:integer[> 2100000 , <= 2199999]
+        xsd:integer[> 2103000 , <= 2199999]
 
 Datatype: idrange:4
 
