@@ -1,0 +1,116 @@
+PREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#>
+PREFIX rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>
+PREFIX owl: <http://www.w3.org/2002/07/owl#>
+PREFIX GO: <http://purl.obolibrary.org/obo/GO_>
+PREFIX FOODON: <http://purl.obolibrary.org/obo/FOODON_>
+PREFIX PATO: <http://purl.obolibrary.org/obo/PATO_>
+PREFIX IAO: <http://purl.obolibrary.org/obo/IAO_>
+PREFIX dc: <http://purl.org/dc/terms/> 
+PREFIX schema: <http://schema.org/>  
+
+SELECT ?class ?label
+      (GROUP_CONCAT(DISTINCT ?ext_syn; SEPARATOR="|") AS ?exact_syn)
+      (GROUP_CONCAT(DISTINCT ?brd_syn; SEPARATOR="|") AS ?broad_syn)
+      (GROUP_CONCAT(DISTINCT ?nrw_syn; SEPARATOR="|") AS ?narrow_syn)
+      (GROUP_CONCAT(DISTINCT ?rld_syn; SEPARATOR="|") AS ?related_syn)
+      (GROUP_CONCAT(DISTINCT ?db_xref; SEPARATOR="|") AS ?database_cross_reference)
+      (GROUP_CONCAT(DISTINCT ?com; SEPARATOR="|") AS ?comment)
+      (GROUP_CONCAT(DISTINCT ?edt_nt; SEPARATOR="|") AS ?editor_note)
+      (GROUP_CONCAT(DISTINCT ?ipt_frm; SEPARATOR="|") AS ?imported_from)
+      (GROUP_CONCAT(DISTINCT ?cur_stat; SEPARATOR="|") AS ?has_curation_status)
+      (GROUP_CONCAT(DISTINCT ?df_src; SEPARATOR="|") AS ?definition_source)
+      (GROUP_CONCAT(DISTINCT ?s_a; SEPARATOR="|") AS ?see_also)
+      (GROUP_CONCAT(DISTINCT ?date; SEPARATOR="|") AS ?created)
+      (GROUP_CONCAT(DISTINCT ?cbtr; SEPARATOR="|") AS ?contributor)
+      (GROUP_CONCAT(DISTINCT ?trm_edt; SEPARATOR="|") AS ?term_editor)
+      (GROUP_CONCAT(DISTINCT ?img; SEPARATOR="|") AS ?image)
+      (GROUP_CONCAT(DISTINCT ?rh; SEPARATOR="|") AS ?rightsHolder)
+      (GROUP_CONCAT(DISTINCT ?lc; SEPARATOR="|") AS ?license)
+      
+
+WHERE {
+  ?c a owl:Class .
+
+  VALUES ?class_list {
+  FOODON:03316061
+  FOODON:03305091
+  FOODON:00003344
+  FOODON:03308025
+  FOODON:02000000
+  FOODON:03530146
+  }
+
+  FILTER (?c IN (?class_list))
+
+  ?c rdfs:label ?label .
+
+  OPTIONAL {
+  ?c <http://www.geneontology.org/formats/oboInOwl#hasExactSynonym> ?ext_syn.
+  }
+
+  OPTIONAL {
+  ?c <http://www.geneontology.org/formats/oboInOwl#hasBroadSynonym> ?brd_syn.
+  }
+
+  OPTIONAL {
+  ?c <http://www.geneontology.org/formats/oboInOwl#hasNarrowSynonym> ?nrw_syn.
+  }
+
+  OPTIONAL {
+  ?c <http://www.geneontology.org/formats/oboInOwl#hasRelatedSynonym> ?rld_syn.
+  }
+
+  OPTIONAL {
+  ?c <http://www.geneontology.org/formats/oboInOwl#hasDbXref> ?db_xref.
+  }
+
+  OPTIONAL {
+  ?c rdfs:comment ?com.
+  }
+
+  OPTIONAL {
+  ?c IAO:0000116 ?edt_nt.
+  }
+
+  OPTIONAL {
+  ?c IAO:0000412 ?ipt_frm.
+  }
+
+  OPTIONAL {
+  ?c IAO:0000114 ?cur_stat.
+  }
+
+  OPTIONAL {
+  ?c IAO:0000119 ?df_src.
+  }
+
+  OPTIONAL {
+  ?c IAO:0000117 ?trm_edt.
+  }
+
+  OPTIONAL {
+  ?c dc:contributor ?cbtr.
+  }
+  
+
+  OPTIONAL {
+  ?c rdfs:seeAlso ?s_a.
+  }
+  
+  OPTIONAL {
+  ?c dc:date ?date.
+  }
+
+  
+  OPTIONAL {
+  ?c schema:image ?img.
+  ?x owl:annotatedTarget ?img.
+  ?x dc:rightsHolder ?rh.
+  ?x dc:license ?lc
+  }
+
+
+BIND(REPLACE(STR(?c),"http://purl.obolibrary.org/obo/FOODON_","FOODON:" ) AS ?class).
+}
+GROUP BY ?class ?label
+ORDER BY ?class
