@@ -656,7 +656,7 @@ AnnotationAssertion(<http://purl.org/dc/terms/date> <http://purl.obolibrary.org/
 AnnotationAssertion(rdfs:label <http://purl.obolibrary.org/obo/FOODON_00004531> "deboning"@en)
 SubClassOf(<http://purl.obolibrary.org/obo/FOODON_00004531> <http://purl.obolibrary.org/obo/FOODON_03460130>)
 
-# Class: <http://purl.obolibrary.org/obo/FOODON_00004533> (food grinding)
+# Class: <http://purl.obolibrary.org/obo/FOODON_00004533> (food grinding process)
 
 AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000115> <http://purl.obolibrary.org/obo/FOODON_00004533> "The process of grinding food such as meat."@en)
 AnnotationAssertion(rdfs:label <http://purl.obolibrary.org/obo/FOODON_00004533> "food grinding"@en)
@@ -1907,7 +1907,6 @@ SubClassOf(<http://purl.obolibrary.org/obo/FOODON_03470112> <http://purl.obolibr
 
 # Class: <http://purl.obolibrary.org/obo/FOODON_03470113> (sterilization by irradiation)
 
-AnnotationAssertion(<http://purl.org/dc/terms/date> <http://purl.obolibrary.org/obo/FOODON_03470113> "Irradiation"^^xsd:dateTime)
 AnnotationAssertion(<http://www.geneontology.org/formats/oboInOwl#hasDbXref> <http://purl.obolibrary.org/obo/FOODON_03470113> "http://www.langual.org/langual_thesaurus.asp?termid=J0113")
 AnnotationAssertion(rdfs:comment <http://purl.obolibrary.org/obo/FOODON_03470113> "LanguaL curation note: Used for a food product that has been packed in a hermetically sealed container and rendered commercially sterile by ionizing radiation (e.g. 24-28 kGy)."@en)
 AnnotationAssertion(rdfs:label <http://purl.obolibrary.org/obo/FOODON_03470113> "sterilization by irradiation"@en)
