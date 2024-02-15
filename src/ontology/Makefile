@@ -91,7 +91,8 @@ imports/%_import.ofn: imports/%_ontofox.txt
 	echo "Downloaded *_import.owl"
 
 #	$(ROBOT) reduce --input $@ --reasoner ELK --output $@
-	$(ROBOT) reduce --input $*_import.owl --xml-entities --prefix "obo: http://purl.obolibrary.org/obo/" --reasoner ELK --output imports/$*_import.ofn
+# ISSUE: rdf:type sneaking in as an annotation property which is causing DL validation fail.
+	$(ROBOT) reduce --input $*_import.owl --xml-entities --prefix "obo: http://purl.obolibrary.org/obo/"  --reasoner ELK remove --term rdf:type --select annotation-properties --select self --output imports/$*_import.ofn
 	rm $*_import.owl
 
 #	echo "Entity substitution."

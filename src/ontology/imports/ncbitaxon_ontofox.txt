@@ -4439,8 +4439,11 @@ http://purl.obolibrary.org/obo/NCBITaxon_99347 # Scomberomorus tritor
 
 
 [Top level source term URIs and target direct superclass URIs]
-http://purl.obolibrary.org/obo/NCBITaxon_131567 # Cellular Organisms
-subClassOf http://purl.obolibrary.org/obo/OBI_0100026 #OBI:organism
+http://purl.obolibrary.org/obo/NCBITaxon_2 # Bacteria
+http://purl.obolibrary.org/obo/NCBITaxon_2759 # Eucaryota
+
+#http://purl.obolibrary.org/obo/NCBITaxon_131567 # Cellular Organisms
+#subClassOf http://purl.obolibrary.org/obo/OBI_0100026 #OBI:organism
 
 [Source term retrieval setting]
 includeComputedIntermediates
