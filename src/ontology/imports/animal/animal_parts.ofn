@@ -11102,6 +11102,13 @@ AnnotationAssertion(<http://purl.org/dc/terms/contributor> <http://purl.obolibra
 AnnotationAssertion(<http://purl.org/dc/terms/contributor> <http://purl.obolibrary.org/obo/FOODON_02020313> "https://orcid.org/0000-0002-3410-4655")
 AnnotationAssertion(<http://purl.org/dc/terms/contributor> <http://purl.obolibrary.org/obo/FOODON_02020313> "https://orcid.org/0000-0002-8844-9165")
 AnnotationAssertion(<http://purl.org/dc/terms/date> <http://purl.obolibrary.org/obo/FOODON_02020313> "2024-02-12T14:11:19Z"^^xsd:dateTime)
+AnnotationAssertion(<http://www.geneontology.org/formats/oboInOwl#hasDbXref> <http://purl.obolibrary.org/obo/FOODON_02020313> <https://bioregistry.io/reference/siren:F5355>)
+AnnotationAssertion(<http://www.geneontology.org/formats/oboInOwl#hasExactSynonym> <http://purl.obolibrary.org/obo/FOODON_02020313> "deboned raw chicken"@en)
+AnnotationAssertion(rdfs:comment <http://purl.obolibrary.org/obo/FOODON_02020313> "SIREN DB annotation:
+* divided into pieces FOODON:03430152
+* not heat-treated FOODON:03440003
+* meat color, undesignated or unknown (deprecated) FOODON:03530003
+* skeletal meat part, without bone or shell FOODON:03420125"@en)
 AnnotationAssertion(rdfs:label <http://purl.obolibrary.org/obo/FOODON_02020313> "piece(s) of chicken meat (deboned, raw)"@en)
 EquivalentClasses(<http://purl.obolibrary.org/obo/FOODON_02020313> ObjectIntersectionOf(<http://purl.obolibrary.org/obo/FOODON_00002702> ObjectSomeValuesFrom(<http://purl.obolibrary.org/obo/RO_0000086> <http://purl.obolibrary.org/obo/FOODON_00004348>)))
 SubClassOf(<http://purl.obolibrary.org/obo/FOODON_02020313> <http://purl.obolibrary.org/obo/FOODON_00002702>)
@@ -11125,9 +11132,8 @@ AnnotationAssertion(<http://purl.org/dc/terms/contributor> <http://purl.obolibra
 AnnotationAssertion(<http://purl.org/dc/terms/contributor> <http://purl.obolibrary.org/obo/FOODON_02020315> "https://orcid.org/0000-0002-3410-4655")
 AnnotationAssertion(<http://purl.org/dc/terms/contributor> <http://purl.obolibrary.org/obo/FOODON_02020315> "https://orcid.org/0000-0002-8844-9165")
 AnnotationAssertion(<http://purl.org/dc/terms/date> <http://purl.obolibrary.org/obo/FOODON_02020315> "2024-02-12T14:11:19Z"^^xsd:dateTime)
+AnnotationAssertion(<http://www.geneontology.org/formats/oboInOwl#hasDbXref> <http://purl.obolibrary.org/obo/FOODON_02020315> <https://bioregistry.io/reference/siren:F11740>)
 AnnotationAssertion(rdfs:label <http://purl.obolibrary.org/obo/FOODON_02020315> "piece(s) of chicken meat (mechanically deboned, raw)"@en)
-EquivalentClasses(<http://purl.obolibrary.org/obo/FOODON_02020315> ObjectIntersectionOf(<http://purl.obolibrary.org/obo/FOODON_02020314> ObjectSomeValuesFrom(<http://purl.obolibrary.org/obo/RO_0000086> <http://purl.obolibrary.org/obo/FOODON_00004348>)))
-SubClassOf(<http://purl.obolibrary.org/obo/FOODON_02020315> <http://purl.obolibrary.org/obo/FOODON_02020314>)
 
 # Class: <http://purl.obolibrary.org/obo/FOODON_02020316> (piece(s) of chicken meat (frozen))
 
@@ -30922,7 +30928,7 @@ AnnotationAssertion(rdfs:label <http://purl.obolibrary.org/obo/FOODON_03530294> 
 EquivalentClasses(<http://purl.obolibrary.org/obo/FOODON_03530294> ObjectIntersectionOf(<http://purl.obolibrary.org/obo/FOODON_02010128> ObjectSomeValuesFrom(<http://purl.obolibrary.org/obo/RO_0001000> <http://purl.obolibrary.org/obo/FOODON_00004298>)))
 SubClassOf(<http://purl.obolibrary.org/obo/FOODON_03530294> <http://purl.obolibrary.org/obo/FOODON_03315883>)
 
-# Class: <http://purl.obolibrary.org/obo/FOODON_03530295> (poultry foot)
+# Class: <http://purl.obolibrary.org/obo/FOODON_03530295> (foot (poultry meat cut))
 
 AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000114> <http://purl.obolibrary.org/obo/FOODON_03530295> <http://purl.obolibrary.org/obo/IAO_0000122>)
 AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000115> <http://purl.obolibrary.org/obo/FOODON_03530295> "A whole foot that derives from a poultry."@en)

@@ -2627,6 +2627,7 @@ Declaration(Class(obo:NCBITaxon_371673))
 Declaration(Class(obo:NCBITaxon_37171))
 Declaration(Class(obo:NCBITaxon_371729))
 Declaration(Class(obo:NCBITaxon_37176))
+Declaration(Class(obo:NCBITaxon_37184))
 Declaration(Class(obo:NCBITaxon_371859))
 Declaration(Class(obo:NCBITaxon_371864))
 Declaration(Class(obo:NCBITaxon_3719))
@@ -22970,6 +22971,12 @@ AnnotationAssertion(oboInOwl:hasExactSynonym obo:NCBITaxon_37176 "musk-ox")
 AnnotationAssertion(oboInOwl:hasExactSynonym obo:NCBITaxon_37176 "muskox")
 AnnotationAssertion(rdfs:label obo:NCBITaxon_37176 "Ovibos moschatus")
 SubClassOf(obo:NCBITaxon_37176 obo:NCBITaxon_9963)
+
+# Class: obo:NCBITaxon_37184 (Hippotragus)
+
+AnnotationAssertion(obo:IAO_0000412 obo:NCBITaxon_37184 obo:ncbitaxon.owl)
+AnnotationAssertion(rdfs:label obo:NCBITaxon_37184 "Hippotragus")
+SubClassOf(obo:NCBITaxon_37184 obo:NCBITaxon_9895)
 
 # Class: obo:NCBITaxon_371859 (Opuntia ficus-indica)
 

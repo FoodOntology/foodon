@@ -8,6 +8,7 @@ Prefix(rdfs:=<http://www.w3.org/2000/01/rdf-schema#>)
 
 Ontology(<http://purl.obolibrary.org/obo/foodon/imports/robot_meat_cuts.ofn>
 
+Declaration(Class(<http://purl.obolibrary.org/obo/FOODON_00001132>))
 Declaration(Class(<http://purl.obolibrary.org/obo/FOODON_00001282>))
 Declaration(Class(<http://purl.obolibrary.org/obo/FOODON_00002570>))
 Declaration(Class(<http://purl.obolibrary.org/obo/FOODON_00002574>))
@@ -61,6 +62,9 @@ Declaration(Class(<http://purl.obolibrary.org/obo/FOODON_00004543>))
 Declaration(Class(<http://purl.obolibrary.org/obo/FOODON_00004544>))
 Declaration(Class(<http://purl.obolibrary.org/obo/FOODON_00004545>))
 Declaration(Class(<http://purl.obolibrary.org/obo/FOODON_00004551>))
+Declaration(Class(<http://purl.obolibrary.org/obo/FOODON_00004556>))
+Declaration(Class(<http://purl.obolibrary.org/obo/FOODON_00004557>))
+Declaration(Class(<http://purl.obolibrary.org/obo/FOODON_00004558>))
 Declaration(Class(<http://purl.obolibrary.org/obo/FOODON_02000000>))
 Declaration(Class(<http://purl.obolibrary.org/obo/FOODON_02000001>))
 Declaration(Class(<http://purl.obolibrary.org/obo/FOODON_02000002>))
@@ -520,9 +524,13 @@ Declaration(Class(<http://purl.obolibrary.org/obo/FOODON_02000460>))
 Declaration(Class(<http://purl.obolibrary.org/obo/FOODON_02000461>))
 Declaration(Class(<http://purl.obolibrary.org/obo/FOODON_02000462>))
 Declaration(Class(<http://purl.obolibrary.org/obo/FOODON_02010032>))
+Declaration(Class(<http://purl.obolibrary.org/obo/FOODON_02010127>))
+Declaration(Class(<http://purl.obolibrary.org/obo/FOODON_02020892>))
+Declaration(Class(<http://purl.obolibrary.org/obo/FOODON_02021651>))
 Declaration(Class(<http://purl.obolibrary.org/obo/FOODON_03301886>))
 Declaration(Class(<http://purl.obolibrary.org/obo/FOODON_03302051>))
 Declaration(Class(<http://purl.obolibrary.org/obo/FOODON_03305517>))
+Declaration(Class(<http://purl.obolibrary.org/obo/FOODON_03307055>))
 Declaration(Class(<http://purl.obolibrary.org/obo/FOODON_03309737>))
 Declaration(Class(<http://purl.obolibrary.org/obo/FOODON_03309967>))
 Declaration(Class(<http://purl.obolibrary.org/obo/FOODON_03310939>))
@@ -808,6 +816,28 @@ SubClassOf(<http://purl.obolibrary.org/obo/FOODON_00004545> <http://purl.obolibr
 # Class: <http://purl.obolibrary.org/obo/FOODON_00004551> (turkey carcass)
 
 AnnotationAssertion(rdfs:label <http://purl.obolibrary.org/obo/FOODON_00004551> "turkey carcass"@en)
+
+# Class: <http://purl.obolibrary.org/obo/FOODON_00004556> (cow foot)
+
+AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000115> <http://purl.obolibrary.org/obo/FOODON_00004556> "A whole foot that derives from a cow."@en)
+AnnotationAssertion(<http://www.geneontology.org/formats/oboInOwl#hasExactSynonym> <http://purl.obolibrary.org/obo/FOODON_00004556> "cow trotter"@en)
+AnnotationAssertion(rdfs:label <http://purl.obolibrary.org/obo/FOODON_00004556> "cow foot"@en)
+EquivalentClasses(<http://purl.obolibrary.org/obo/FOODON_00004556> ObjectIntersectionOf(<http://purl.obolibrary.org/obo/FOODON_02010127> ObjectSomeValuesFrom(<http://purl.obolibrary.org/obo/RO_0001000> <http://purl.obolibrary.org/obo/FOODON_02020892>)))
+SubClassOf(<http://purl.obolibrary.org/obo/FOODON_00004556> <http://purl.obolibrary.org/obo/FOODON_00004530>)
+
+# Class: <http://purl.obolibrary.org/obo/FOODON_00004557> (pig foot)
+
+AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000115> <http://purl.obolibrary.org/obo/FOODON_00004557> "A whole foot that derives from a pig."@en)
+AnnotationAssertion(rdfs:label <http://purl.obolibrary.org/obo/FOODON_00004557> "pig foot"@en)
+EquivalentClasses(<http://purl.obolibrary.org/obo/FOODON_00004557> ObjectIntersectionOf(<http://purl.obolibrary.org/obo/FOODON_02010127> ObjectSomeValuesFrom(<http://purl.obolibrary.org/obo/RO_0001000> <http://purl.obolibrary.org/obo/FOODON_02021651>)))
+SubClassOf(<http://purl.obolibrary.org/obo/FOODON_00004557> <http://purl.obolibrary.org/obo/FOODON_00001132>)
+
+# Class: <http://purl.obolibrary.org/obo/FOODON_00004558> (pig foot (raw))
+
+AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000115> <http://purl.obolibrary.org/obo/FOODON_00004558> "A whole raw pig foot."@en)
+AnnotationAssertion(rdfs:label <http://purl.obolibrary.org/obo/FOODON_00004558> "pig foot (raw)"@en)
+EquivalentClasses(<http://purl.obolibrary.org/obo/FOODON_00004558> ObjectIntersectionOf(<http://purl.obolibrary.org/obo/FOODON_00004557> ObjectSomeValuesFrom(<http://purl.obolibrary.org/obo/RO_0000086> <http://purl.obolibrary.org/obo/FOODON_00004348>)))
+SubClassOf(<http://purl.obolibrary.org/obo/FOODON_00004558> <http://purl.obolibrary.org/obo/FOODON_00004557>)
 
 # Class: <http://purl.obolibrary.org/obo/FOODON_02000000> (beef round)
 
@@ -5474,7 +5504,7 @@ AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000115> <http://purl.ob
 AnnotationAssertion(<http://purl.org/dc/terms/contributor> <http://purl.obolibrary.org/obo/FOODON_02000444> "https://orcid.org/0000-0001-5275-8866")
 AnnotationAssertion(<http://purl.org/dc/terms/date> <http://purl.obolibrary.org/obo/FOODON_02000444> "2023-10-10T15:20:43Z"^^xsd:dateTime)
 AnnotationAssertion(rdfs:label <http://purl.obolibrary.org/obo/FOODON_02000444> "bison top sirloin steak (raw)"@en)
-EquivalentClasses(<http://purl.obolibrary.org/obo/FOODON_02000444> ObjectIntersectionOf(<http://purl.obolibrary.org/obo/FOODON_02000424> ObjectSomeValuesFrom(<http://purl.obolibrary.org/obo/RO_0000086> <http://purl.obolibrary.org/obo/FOODON_00004348>)))
+EquivalentClasses(<http://purl.obolibrary.org/obo/FOODON_02000444> ObjectIntersectionOf(<http://purl.obolibrary.org/obo/FOODON_02000443> ObjectSomeValuesFrom(<http://purl.obolibrary.org/obo/RO_0000086> <http://purl.obolibrary.org/obo/FOODON_00004348>)))
 SubClassOf(<http://purl.obolibrary.org/obo/FOODON_02000444> <http://purl.obolibrary.org/obo/FOODON_02000443>)
 
 # Class: <http://purl.obolibrary.org/obo/FOODON_02000445> (bison round)
@@ -5676,6 +5706,13 @@ AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000115> <http://purl.ob
 AnnotationAssertion(rdfs:label <http://purl.obolibrary.org/obo/FOODON_03301886> "beef (ground, raw)"@en)
 EquivalentClasses(<http://purl.obolibrary.org/obo/FOODON_03301886> ObjectIntersectionOf(<http://purl.obolibrary.org/obo/FOODON_00001282> ObjectSomeValuesFrom(<http://purl.obolibrary.org/obo/RO_0000086> <http://purl.obolibrary.org/obo/FOODON_00004348>)))
 SubClassOf(<http://purl.obolibrary.org/obo/FOODON_03301886> <http://purl.obolibrary.org/obo/FOODON_00001282>)
+
+# Class: <http://purl.obolibrary.org/obo/FOODON_03307055> (cow foot (raw))
+
+AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000115> <http://purl.obolibrary.org/obo/FOODON_03307055> "A whole raw cow foot."@en)
+AnnotationAssertion(rdfs:label <http://purl.obolibrary.org/obo/FOODON_03307055> "cow foot (raw)"@en)
+EquivalentClasses(<http://purl.obolibrary.org/obo/FOODON_03307055> ObjectIntersectionOf(<http://purl.obolibrary.org/obo/FOODON_00004556> ObjectSomeValuesFrom(<http://purl.obolibrary.org/obo/RO_0000086> <http://purl.obolibrary.org/obo/FOODON_00004348>)))
+SubClassOf(<http://purl.obolibrary.org/obo/FOODON_03307055> <http://purl.obolibrary.org/obo/FOODON_00004556>)
 
 # Class: <http://purl.obolibrary.org/obo/FOODON_03309737> (piece of beef (raw))
 
