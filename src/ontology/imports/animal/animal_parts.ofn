@@ -2299,6 +2299,7 @@ Declaration(Class(<http://purl.obolibrary.org/obo/FOODON_03411711>))
 Declaration(Class(<http://purl.obolibrary.org/obo/FOODON_03412092>))
 Declaration(Class(<http://purl.obolibrary.org/obo/FOODON_03412406>))
 Declaration(Class(<http://purl.obolibrary.org/obo/FOODON_03412407>))
+Declaration(Class(<http://purl.obolibrary.org/obo/FOODON_03420116>))
 Declaration(Class(<http://purl.obolibrary.org/obo/FOODON_03420164>))
 Declaration(Class(<http://purl.obolibrary.org/obo/FOODON_03530146>))
 Declaration(Class(<http://purl.obolibrary.org/obo/FOODON_03530155>))
@@ -3603,7 +3604,7 @@ AnnotationAssertion(<http://purl.org/dc/terms/contributor> <http://purl.obolibra
 AnnotationAssertion(<http://purl.org/dc/terms/date> <http://purl.obolibrary.org/obo/FOODON_02010001> "2023-08-01T21:25:29Z"^^xsd:dateTime)
 AnnotationAssertion(rdfs:comment <http://purl.obolibrary.org/obo/FOODON_02010001> "This includes things like eggs and milk."@en)
 AnnotationAssertion(rdfs:label <http://purl.obolibrary.org/obo/FOODON_02010001> "animal substance"@en)
-EquivalentClasses(<http://purl.obolibrary.org/obo/FOODON_02010001> ObjectIntersectionOf(<http://purl.obolibrary.org/obo/FOODON_02010001> ObjectSomeValuesFrom(<http://purl.obolibrary.org/obo/RO_0001000> <http://purl.obolibrary.org/obo/FOODON_00003004>)))
+EquivalentClasses(<http://purl.obolibrary.org/obo/FOODON_02010001> ObjectIntersectionOf(<http://purl.obolibrary.org/obo/UBERON_0000463> ObjectSomeValuesFrom(<http://purl.obolibrary.org/obo/RO_0001000> <http://purl.obolibrary.org/obo/FOODON_00003004>)))
 SubClassOf(<http://purl.obolibrary.org/obo/FOODON_02010001> <http://purl.obolibrary.org/obo/FOODON_03420164>)
 SubClassOf(<http://purl.obolibrary.org/obo/FOODON_02010001> <http://purl.obolibrary.org/obo/UBERON_0000463>)
 
@@ -3716,7 +3717,7 @@ AnnotationAssertion(<http://purl.org/dc/terms/contributor> <http://purl.obolibra
 AnnotationAssertion(<http://purl.org/dc/terms/contributor> <http://purl.obolibrary.org/obo/FOODON_02010012> "https://orcid.org/0000-0002-8844-9165")
 AnnotationAssertion(<http://purl.org/dc/terms/date> <http://purl.obolibrary.org/obo/FOODON_02010012> "2023-08-01T21:25:29Z"^^xsd:dateTime)
 AnnotationAssertion(rdfs:label <http://purl.obolibrary.org/obo/FOODON_02010012> "animal milk"@en)
-EquivalentClasses(<http://purl.obolibrary.org/obo/FOODON_02010012> ObjectIntersectionOf(<http://purl.obolibrary.org/obo/FOODON_02010001> <http://purl.obolibrary.org/obo/UBERON_0001913>))
+EquivalentClasses(<http://purl.obolibrary.org/obo/FOODON_02010012> ObjectIntersectionOf(<http://purl.obolibrary.org/obo/UBERON_0001913> ObjectSomeValuesFrom(<http://purl.obolibrary.org/obo/RO_0003001> <http://purl.obolibrary.org/obo/FOODON_00003004>)))
 SubClassOf(<http://purl.obolibrary.org/obo/FOODON_02010012> <http://purl.obolibrary.org/obo/FOODON_02010001>)
 
 # Class: <http://purl.obolibrary.org/obo/FOODON_02010013> (animal milk (raw))
@@ -30846,7 +30847,7 @@ AnnotationAssertion(<http://www.geneontology.org/formats/oboInOwl#hasDbXref> <ht
 AnnotationAssertion(rdfs:comment <http://purl.obolibrary.org/obo/FOODON_03420164> "Langual note: Includes eggs and milk that, although separated from the animal, are produced as integral parts and are affected by the animal's food intake and metabolism."@en)
 AnnotationAssertion(rdfs:comment <http://purl.obolibrary.org/obo/FOODON_03420164> "This branch isn't necessarily food material"@en)
 AnnotationAssertion(rdfs:label <http://purl.obolibrary.org/obo/FOODON_03420164> "animal material"@en)
-EquivalentClasses(<http://purl.obolibrary.org/obo/FOODON_03420164> ObjectIntersectionOf(<http://purl.obolibrary.org/obo/UBERON_0000465> ObjectSomeValuesFrom(<http://purl.obolibrary.org/obo/RO_0001000> <http://purl.obolibrary.org/obo/FOODON_00003004>)))
+EquivalentClasses(<http://purl.obolibrary.org/obo/FOODON_03420164> ObjectIntersectionOf(<http://purl.obolibrary.org/obo/FOODON_03420116> ObjectSomeValuesFrom(<http://purl.obolibrary.org/obo/RO_0001000> <http://purl.obolibrary.org/obo/FOODON_00003004>)))
 
 # Class: <http://purl.obolibrary.org/obo/FOODON_03530146> (butchery cut of animal meat)
 
