@@ -7342,7 +7342,7 @@ SubClassOf(<http://purl.obolibrary.org/obo/FOODON_00004266> <http://purl.obolibr
 
 # Class: <http://purl.obolibrary.org/obo/FOODON_00004327> (rice)
 
-AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000115> <http://purl.obolibrary.org/obo/FOODON_00004327> "An aggregate of rice kernels."@en)
+AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000115> <http://purl.obolibrary.org/obo/FOODON_00004327> "An aggregate of rice seeds which may have had their germ and/or bran and/or husk layers removed."@en)
 AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000119> <http://purl.obolibrary.org/obo/FOODON_00004327> "https://en.wikipedia.org/wiki/Rice")
 AnnotationAssertion(rdfs:label <http://purl.obolibrary.org/obo/FOODON_00004327> "rice"@en)
 SubClassOf(<http://purl.obolibrary.org/obo/FOODON_00004327> <http://purl.obolibrary.org/obo/FOODON_03301641>)
@@ -7802,7 +7802,7 @@ AnnotationAssertion(<http://purl.org/dc/terms/date> <http://purl.obolibrary.org/
 AnnotationAssertion(rdfs:label <http://purl.obolibrary.org/obo/FOODON_00004445> "golden acorn squash (raw)"@en)
 SubClassOf(<http://purl.obolibrary.org/obo/FOODON_00004445> <http://purl.obolibrary.org/obo/FOODON_00004442>)
 
-# Class: <http://purl.obolibrary.org/obo/FOODON_00004446> (mexican grey squash)
+# Class: <http://purl.obolibrary.org/obo/FOODON_00004446> (Mexican grey squash)
 
 AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000115> <http://purl.obolibrary.org/obo/FOODON_00004446> "A whole Mexican grey squash."@en)
 AnnotationAssertion(<http://purl.org/dc/terms/contributor> <http://purl.obolibrary.org/obo/FOODON_00004446> "https://orcid.org/0000-0002-8844-9165")
@@ -7810,7 +7810,7 @@ AnnotationAssertion(<http://purl.org/dc/terms/date> <http://purl.obolibrary.org/
 AnnotationAssertion(rdfs:label <http://purl.obolibrary.org/obo/FOODON_00004446> "Mexican grey squash"@en)
 SubClassOf(<http://purl.obolibrary.org/obo/FOODON_00004446> <http://purl.obolibrary.org/obo/FOODON_00003946>)
 
-# Class: <http://purl.obolibrary.org/obo/FOODON_00004447> (mexican grey squash (raw))
+# Class: <http://purl.obolibrary.org/obo/FOODON_00004447> (Mexican grey squash (raw))
 
 AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000115> <http://purl.obolibrary.org/obo/FOODON_00004447> "A whole Mexican grey squash which is raw."@en)
 AnnotationAssertion(<http://purl.org/dc/terms/contributor> <http://purl.obolibrary.org/obo/FOODON_00004447> "https://orcid.org/0000-0002-8844-9165")
@@ -10699,7 +10699,7 @@ AnnotationAssertion(rdfs:label <http://purl.obolibrary.org/obo/FOODON_03301453> 
 EquivalentClasses(<http://purl.obolibrary.org/obo/FOODON_03301453> ObjectIntersectionOf(<http://purl.obolibrary.org/obo/PO_0030108> ObjectSomeValuesFrom(<http://purl.obolibrary.org/obo/RO_0002162> <http://purl.obolibrary.org/obo/NCBITaxon_4081>)))
 SubClassOf(<http://purl.obolibrary.org/obo/FOODON_03301453> <http://purl.obolibrary.org/obo/PO_0030108>)
 
-# Class: <http://purl.obolibrary.org/obo/FOODON_03301542> (herb leaf (dried))
+# Class: <http://purl.obolibrary.org/obo/FOODON_03301542> (herb (dried))
 
 AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000115> <http://purl.obolibrary.org/obo/FOODON_03301542> "A whole dried herb leaf."@en)
 AnnotationAssertion(<http://purl.org/dc/terms/contributor> <http://purl.obolibrary.org/obo/FOODON_03301542> "https://orcid.org/0000-0001-5275-8866")
