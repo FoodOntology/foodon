@@ -14439,7 +14439,7 @@ AnnotationAssertion(rdfs:comment obo:FOODON_03301837 "SIREN DB annotation:
 * not heat-treated FOODON:03440003
 * whole animal or most parts used FOODON:03420173"@en)
 
-# Class: obo:FOODON_03301839 (bean curd)
+# Class: obo:FOODON_03301839 (tofu (cooked))
 
 AnnotationAssertion(rdfs:comment obo:FOODON_03301839 "SIREN DB annotation:
 * whole, shape achieved by forming FOODON:03430147
@@ -56597,14 +56597,6 @@ AnnotationAssertion(rdfs:comment obo:FOODON_03309530 "SIREN DB annotation:
 * food baking process FOODON:03450005
 * ingredient: sucrose added FOODON:03460158"@en)
 
-# Class: obo:FOODON_03309532 (piece of capon meat (raw))
-
-AnnotationAssertion(rdfs:comment obo:FOODON_03309532 "SIREN DB annotation:
-* solid FOODON:03430151
-* not heat-treated FOODON:03440003
-* meat color, undesignated or unknown (deprecated) FOODON:03530003
-* skeletal meat part FOODON:03420175"@en)
-
 # Class: obo:FOODON_03309536 (salt (fortified))
 
 AnnotationAssertion(rdfs:comment obo:FOODON_03309536 "SIREN DB annotation:
@@ -57828,7 +57820,7 @@ AnnotationAssertion(rdfs:comment obo:FOODON_03309736 "SIREN DB annotation:
 * milk (mammary secretion) UBERON:0001913
 * ingredient: flavoring, spice or herb added FOODON:03460227"@en)
 
-# Class: obo:FOODON_03309737 (beef (raw))
+# Class: obo:FOODON_03309737 (piece of beef (raw))
 
 AnnotationAssertion(rdfs:comment obo:FOODON_03309737 "SIREN DB annotation:
 * solid FOODON:03430151
@@ -67062,7 +67054,7 @@ AnnotationAssertion(rdfs:comment obo:FOODON_03311479 "SIREN DB annotation:
 * ingredient: flavoring, spice or herb added FOODON:03460227
 * ingredient: gum added FOODON:03460375"@en)
 
-# Class: obo:FOODON_03311480 (bean curd (dried))
+# Class: obo:FOODON_03311480 (tofu (cooked, dried))
 
 AnnotationAssertion(rdfs:comment obo:FOODON_03311480 "SIREN DB annotation:
 * whole, shape achieved by forming FOODON:03430147
