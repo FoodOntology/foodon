@@ -1,6 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
 <catalog prefer="public" xmlns="urn:oasis:names:tc:entity:xmlns:xml:catalog">
-
     <group id="Folder Repository, directory=, recursive=false, Auto-Update=false, version=2" prefer="public" xml:base="">
         <uri name="http://purl.obolibrary.org/obo/foodon-base.owl" uri="foodon-base.owl"/>
         <uri name="http://purl.obolibrary.org/obo/foodon.owl" uri="foodon.owl"/>
@@ -18,6 +17,7 @@
         <uri name="http://purl.obolibrary.org/obo/foodon/imports/product_type_import.ofn" uri="imports/product_type_import.ofn"/>
         <uri name="http://purl.obolibrary.org/obo/foodon/imports/robot_animals.ofn" uri="imports/robot_animals.ofn"/>
         <uri name="http://purl.obolibrary.org/obo/foodon/imports/robot_dietary_supplement.ofn" uri="imports/robot_dietary_supplement.ofn"/>
+        <uri name="http://purl.obolibrary.org/obo/foodon/imports/robot_food_process.ofn" uri="imports/robot_food_process.ofn"/>
         <uri name="http://purl.obolibrary.org/obo/foodon/imports/robot_pasta.ofn" uri="imports/robot_pasta.ofn"/>
         <uri name="http://purl.obolibrary.org/obo/foodon/imports/robot_plant_parts.ofn" uri="imports/robot_plant_parts.ofn"/>
         <uri name="http://purl.obolibrary.org/obo/foodon/imports/robot_process.ofn" uri="imports/robot_process.ofn"/>
