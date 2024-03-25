@@ -22,7 +22,6 @@ FOODON:00004483	pork primal cut															pork primal cut
 FOODON:00004486	pork sub-primal cut															pork sub-primal cut	
 FOODON:00004490	pork chop															pork chop	
 FOODON:00004480	pork roast															pork roast	
-FOODON:00004488	pork retail cut															pork retail cut	
 FOODON:00004493	piece of pork meat															piece of pork meat	
 																	
 FOODON:00004484	veal primal cut															veal primal cut	
@@ -35,7 +34,6 @@ FOODON:00004540	bison sub-primal cut															bison sub-primal cut
 FOODON:00004541	buffalo primal cut															buffalo primal cut	
 FOODON:00004543	buffalo sub-primal cut															buffalo sub-primal cut	
 																	
-FOODON:00004471	piece of emu meat															piece of emu meat	
 FOODON:00004494	piece of ostrich meat															piece of ostrich meat	
 FOODON:00004472	elk roast															elk roast	
 																	
@@ -76,10 +74,14 @@ FOODON:02000427	beef (ground, medium)	beef (ground)			Beef that is medium ground
 FOODON:02000428	beef (ground, regular)	beef (ground)			Beef that is ground and regular.											#N/A	
 FOODON:02000429	beef (ground, sirloin)	beef (ground)			Beef that comes from sirloin region and is ground.											#N/A	
 FOODON:00002574	butchery cut of beef	piece of beef			A butchery cut of beef that is primal, sub-primal or a retail cut.							 https://orcid.org/0000-0001-5275-8866				#N/A	
-FOODON:02000415	butchery cut of beef (raw)	butchery cut of beef			A raw butchery cut of beef.							https://orcid.org/0000-0001-5275-8866				#N/A	
+FOODON:02000415	butchery cut of beef (raw)	butchery cut of beef	'butchery cut of beef' and 'has quality' some 'raw'		A raw butchery cut of beef.							https://orcid.org/0000-0001-5275-8866				#N/A	
 FOODON:00004470	beef primal cut	butchery cut of beef			A cut of beef that is initially separated from the carcass of a{n} {organism} during butchering.							https://orcid.org/0000-0001-5275-8866				#N/A	
+FOODON:02000463	beef primal cut (raw)	beef primal cut	'beef primal cut' and 'has quality' some 'raw'		A raw beef primal cut.											#N/A	
 FOODON:00004476	beef sub-primal cut	butchery cut of beef			A smaller cut of beef that is obtained from the larger primal cut of beef.							https://orcid.org/0000-0001-5275-8866				#N/A	
+FOODON:02000464	beef sub-primal cut (raw)	beef sub-primal cut	'beef sub-primal cut' and 'has quality' some 'raw'		A raw beef sub-primal cut.											#N/A	
 FOODON:00004478	beef retail cut	butchery cut of beef			A cut of beef that is derived from a sub-primal, individual muscle cut or minor primal cut.							https://orcid.org/0000-0001-5275-8866				#N/A	
+FOODON:02000465	beef retail cut (raw)	beef retail cut	'beef retail cut' and 'has quality' some 'raw'		A raw beef retail cut.											#N/A	
+																	
 	Beef Primal cut- Round															#N/A	
 FOODON:00004477	beef roast															beef roast	
 FOODON:02000000	beef round	beef primal cut		'derives from' some 'beef carcass'	A beef cut that comes from the 'round', the rear leg of the beef.	https://www.beefitswhatsfordinner.com/cuts/cut/2949/round-primal	Sometimes referred to as the “Beef Hip.”	IMPS/NAMP - 158		https://www.ams.usda.gov/sites/default/files/media/IMPS100SeriesDraft2020.pdf	2023-08-01T21:30:23Z	https://orcid.org/0000-0001-5275-8866	ready for release			#N/A	
@@ -558,7 +560,4 @@ FOODON:00004544	buffalo retail cut	animal retail cut			A buffalo meat cut that i
 FOODON:00004545	buffalo steak	buffalo retail cut			A buffalo meat cut that has a flat-cut appearance.											buffalo steak	
 FOODON:02000461	buffalo top round steak	buffalo steak	'buffalo steak' and 'derives from' some 'buffalo top round'		A steak cut from the buffalo top round.				inside round steak		2023-10-10T15:20:43Z	https://orcid.org/0000-0001-5275-8866	ready for release			#N/A	
 FOODON:02000462	buffalo top round steak (raw)	buffalo top round steak	'buffalo top round steak' and 'has quality' some 'raw'		A raw buffalo top round steak.						2023-10-10T15:20:43Z	https://orcid.org/0000-0001-5275-8866	ready for release			#N/A	
-																	
-																	
-																	
 																	
