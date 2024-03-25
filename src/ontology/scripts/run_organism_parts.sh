@@ -2,7 +2,7 @@
 
 # Author: Kai Blumberg https://orcid.org/0000-0002-3410-4655
 
-# Example run in this folder: sh run_organism_parts.sh MODE=test MODULE=animal
+# Example run in this folder: sh run_organism_parts.sh MODE=test MODULE=animal TERM_CONTRIBUTOR_STR=https://orcid.org/0000-0001-5275-8866
 # Parameters:
 #   MODE=test|run
 #   MODULE=animal|plant
