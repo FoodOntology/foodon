@@ -2,6 +2,12 @@
 
 # Author: Kai Blumberg https://orcid.org/0000-0002-3410-4655
 
+# Example run in this folder: sh run_organism_parts.sh MODE=test MODULE=animal
+# Parameters:
+#   MODE=test|run
+#   MODULE=animal|plant
+#   TERM_CONTRIBUTOR_STR=https://orcid.org/0000-0001-5275-8866|contributor2| etc.
+#
 set -e
 
 for ARGUMENT in "$@"
