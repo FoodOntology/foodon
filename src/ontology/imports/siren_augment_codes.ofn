@@ -38,6 +38,7 @@ Declaration(Class(obo:FOODON_00001023))
 Declaration(Class(obo:FOODON_00001067))
 Declaration(Class(obo:FOODON_00001216))
 Declaration(Class(obo:FOODON_00002243))
+Declaration(Class(obo:FOODON_02020805))
 Declaration(Class(obo:FOODON_03301000))
 Declaration(Class(obo:FOODON_03301002))
 Declaration(Class(obo:FOODON_03301003))
@@ -9423,7 +9424,6 @@ Declaration(Class(obo:FOODON_03411317))
 Declaration(Class(obo:FOODON_03411331))
 Declaration(Class(obo:FOODON_03411374))
 Declaration(Class(obo:FOODON_03411433))
-Declaration(Class(obo:FOODON_03411489))
 Declaration(Class(obo:FOODON_03411514))
 Declaration(Class(obo:FOODON_03411644))
 Declaration(Class(obo:FOODON_03411655))
@@ -10647,7 +10647,7 @@ AnnotationAssertion(rdfs:comment obo:FOODON_03301134 "SIREN DB annotation:
 * alcohol fermentation process FOODON:03460232
 * preservation by fermentation FOODON:03470104"@en)
 
-# Class: obo:FOODON_03301136 (brown rice food product)
+# Class: obo:FOODON_03301136 (brown rice kernel food product)
 
 AnnotationAssertion(rdfs:comment obo:FOODON_03301136 "SIREN DB annotation:
 * whole, natural shape FOODON:03430150
@@ -45117,7 +45117,7 @@ AnnotationAssertion(rdfs:comment obo:FOODON_03307155 "SIREN DB annotation:
 * seed, skin removed, germ removed (endosperm) FOODON:03420208
 * ingredient: flavoring or spice extract or concentrate added FOODON:03460100"@en)
 
-# Class: obo:FOODON_03307157 (brown rice (enriched, precooked))
+# Class: obo:FOODON_03307157 (brown rice kernel (enriched, precooked))
 
 AnnotationAssertion(rdfs:comment obo:FOODON_03307157 "SIREN DB annotation:
 * whole, natural shape FOODON:03430150
@@ -48784,7 +48784,7 @@ AnnotationAssertion(rdfs:comment obo:FOODON_03307890 "SIREN DB annotation:
 * meat part of animal FOODON:03420103
 * sterilization by heating FOODON:03470123"@en)
 
-# Class: obo:FOODON_03307902 (brown rice (enriched))
+# Class: obo:FOODON_03307902 (brown rice kernel (enriched))
 
 AnnotationAssertion(rdfs:comment obo:FOODON_03307902 "SIREN DB annotation:
 * whole, natural shape FOODON:03430150
@@ -62359,7 +62359,7 @@ AnnotationAssertion(rdfs:comment obo:FOODON_03310739 "SIREN DB annotation:
 * liquid FOODON:03430130
 * fruit, peel present, core, pit or seed present FOODON:03420140"@en)
 
-# Class: obo:FOODON_03310743 (cardamom (ground))
+# Class: obo:FOODON_03310743 (cardamom seed (ground))
 
 AnnotationAssertion(rdfs:comment obo:FOODON_03310743 "SIREN DB annotation:
 * finely ground FOODON:03430106
