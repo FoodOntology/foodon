@@ -7,7 +7,7 @@ TRUE	pigeon		Columbidae	NCBITaxon:8930	Aves	FoodOn has a term 'pigeon'.	USDA
 TRUE	emu		Dromaius novaehollandiae	NCBITaxon:8790	Aves		USDA
 TRUE	duck		duck	FOODON:03411316	Aves		USDA
 TRUE	chicken		Gallus gallus	NCBITaxon:9031	Aves		USDA
-TRUE	goose		goose	FOODON:03411253	Aves	NCBI has genera 'Anser' with genbank name as 'geese' group comprises the genera Anser (the grey geese and white geese) and Branta (the black geese). Either we can use both these NCBItaxons in the EQ, or alternatively, can just go with the FoodOn term?	USDA
+TRUE	goose		goose	FOODON:03411253	Aves	NCBI has genera 'Anser' with genbank name as 'geese'  group comprises the genera Anser (the grey geese and white geese) and Branta (the black geese). Either we can use both these NCBItaxons in the EQ, or alternatively, can just go with the FoodOn term?	USDA
 TRUE	turkey		Meleagris gallopavo	NCBITaxon:9103	Aves		USDA
 TRUE	guinea fowl		Numididae	NCBITaxon:8990	Aves	Note: guineahen or guinea fowl?	USDA
 TRUE	pheasant		Phasianus	NCBITaxon:9053	Aves	FoodOn also has a term 'pheasant', should we deprecate that?	USDA
@@ -57,3 +57,27 @@ TRUE	nutria		Myocastor coypus	NCBITaxon:10157	Rodentia
 TRUE	wild boar		wild boar	FOODON:00004286	Suina	boar has a synonym 'wild boar'	USDA
 TRUE	pig	pork	Sus scrofa domesticus	NCBITaxon:9823	Suina		USDA
 TRUE	bear		Ursidae	NCBITaxon:9632	Ursidae	FoodOn has 'bear'	USDA
+TRUE	whale		whale	FOODON:03411343	Cetacea		
+TRUE	dolphin		dolphin family	FOODON:03413363	Cetacea		
+TRUE	porpoise		porpoise family	FOODON:03413364	Cetacea		
+TRUE	atlantic cod		Gadus morhua	NCBITaxon:8049	Seafood	Requested by PTFI	
+TRUE	catfish		Siluriformes	NCBITaxon:7995	Seafood	Requested by PTFI	
+TRUE	nile tilapia		Oreochromis niloticus	NCBITaxon:8128	Seafood	Requested by PTFI	
+TRUE	sockeye salmon		Oncorhynchus nerka	NCBITaxon:8023	Seafood	Requested by PTFI	
+TRUE	blue swimmer crab		Portunus pelagicus	NCBITaxon:80836	Crustacea	Requested by PTFI	
+TRUE	cricket (insect)		Grylloidea	NCBITaxon:70906	Hexapoda	Requested by PTFI	
+TRUE	jamaican cricket		Gryllus assimilis	NCBITaxon:128156	Hexapoda	Requested by PTFI	
+TRUE	house cricket		Acheta domesticus	NCBITaxon:6997	Hexapoda	Need as a referenced term for curating the food products derived from house cricket. (PTFI)	
+TRUE	european anchovy		Engraulis encrasicolus	NCBITaxon:184585	Seafood	Need this for USDA Mappings.	
+TRUE	lingcod		Ophiodon elongatus	NCBITaxon:225387	Seafood	Need this for USDA Mappings.	
+TRUE	devilfish		Mobula mobular	NCBITaxon:1579277	Seafood	Need this for USDA Mappings.	
+TRUE	monkfish		Lophius	NCBITaxon:8072	Seafood	Need this for USDA Mappings.	
+TRUE	florida pompano		Trachinotus carolinus	NCBITaxon:173342	Seafood	Need this for USDA Mappings.	
+TRUE	american shad		Alosa sapidissima	NCBITaxon:34773	Seafood	Need this for USDA Mappings.	
+TRUE	rainbow smelt		Osmerus mordax	NCBITaxon:8014	Seafood	Need this for USDA Mappings.	
+TRUE	white sucker		Catostomus commersonii	NCBITaxon:7971	Seafood	Need this for USDA Mappings.	
+TRUE	pumpkinseed sunfish		Lepomis gibbosus	NCBITaxon:270329	Seafood	Need this for USDA Mappings.	
+TRUE	swordfish		Xiphias gladius	NCBITaxon:8245	Seafood	Need this for USDA Mappings.	
+TRUE	tilefish		Malacanthidae	NCBITaxon:30851	Seafood	Need this for USDA Mappings.	
+TRUE	cuttlefish		Sepiidae	NCBITaxon:6608	Seafood	Need this for USDA Mappings.	
+TRUE	common octopus		Octopus vulgaris	NCBITaxon:6645	Seafood	Need this for USDA Mappings.	
