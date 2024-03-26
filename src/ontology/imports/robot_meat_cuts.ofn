@@ -740,7 +740,7 @@ AnnotationAssertion(rdfs:label <http://purl.obolibrary.org/obo/FOODON_00004491> 
 
 AnnotationAssertion(rdfs:label <http://purl.obolibrary.org/obo/FOODON_00004492> "pork muscle tissue cut"@en)
 
-# Class: <http://purl.obolibrary.org/obo/FOODON_00004493> (piece of pork meat)
+# Class: <http://purl.obolibrary.org/obo/FOODON_00004493> (piece of pig)
 
 AnnotationAssertion(rdfs:label <http://purl.obolibrary.org/obo/FOODON_00004493> "piece of pork meat"@en)
 
@@ -5730,13 +5730,6 @@ AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000115> <http://purl.ob
 AnnotationAssertion(rdfs:label <http://purl.obolibrary.org/obo/FOODON_03307055> "cow foot (raw)"@en)
 EquivalentClasses(<http://purl.obolibrary.org/obo/FOODON_03307055> ObjectIntersectionOf(<http://purl.obolibrary.org/obo/FOODON_00004556> ObjectSomeValuesFrom(<http://purl.obolibrary.org/obo/RO_0000086> <http://purl.obolibrary.org/obo/FOODON_00004348>)))
 SubClassOf(<http://purl.obolibrary.org/obo/FOODON_03307055> <http://purl.obolibrary.org/obo/FOODON_00004556>)
-
-# Class: <http://purl.obolibrary.org/obo/FOODON_03309737> (piece of beef (raw))
-
-AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000115> <http://purl.obolibrary.org/obo/FOODON_03309737> "A raw piece of beef."@en)
-AnnotationAssertion(rdfs:label <http://purl.obolibrary.org/obo/FOODON_03309737> "piece of beef (raw)"@en)
-EquivalentClasses(<http://purl.obolibrary.org/obo/FOODON_03309737> ObjectIntersectionOf(<http://purl.obolibrary.org/obo/FOODON_02000403> ObjectSomeValuesFrom(<http://purl.obolibrary.org/obo/RO_0000086> <http://purl.obolibrary.org/obo/FOODON_00004348>)))
-SubClassOf(<http://purl.obolibrary.org/obo/FOODON_03309737> <http://purl.obolibrary.org/obo/FOODON_02000403>)
 
 # Class: <http://purl.obolibrary.org/obo/FOODON_03309967> (pork tenderloin (raw))
 
