@@ -8,7 +8,6 @@ http://purl.obolibrary.org/obo/foodon/imports/ncbitaxon_import.ofn
 NCBITaxon
 
 [Low level source term URIs]
-
 # NEED Smilax aristolochiifolia / Mexican sasparilla
 # NEED Mitragyna javanica
 
@@ -39,8 +38,31 @@ http://purl.obolibrary.org/obo/NCBITaxon_3071 # Chlorella
 http://purl.obolibrary.org/obo/NCBITaxon_3091605 # 'Vigna cylindrica'
 
 # DELETED NCBITaxon_2843217 Rhaphiolepis bibas replaced by NCBITaxon_32224 Eriobotrya japonica 
- 
+http://purl.obolibrary.org/obo/NCBITaxon_32224 # Eriobotrya japonica
 
+# DELETED NCBITaxon_260673 # species:Citrullus lanatus var. citroides Replaced by
+http://purl.obolibrary.org/obo/NCBITaxon_1567104 # Citrullus amarus
+
+# DELETED NCBITaxon_260674 # Citrullus lanatus subsp. vulgaris Replaced by
+http://purl.obolibrary.org/obo/NCBITaxon_3654 # Citrullus lanatus
+
+# DELETED NCBITaxon_206130 # Chelidonichthys lucernus Replaced by
+http://purl.obolibrary.org/obo/NCBITaxon_2576622 # Chelidonichthys lucerna
+
+# DELETED http://purl.obolibrary.org/obo/NCBITaxon_3840 # Vigna unguiculata subsp. cylindrica Replaced with 
+http://purl.obolibrary.org/obo/NCBITaxon_3091605
+
+# DELETED http://purl.obolibrary.org/obo/NCBITaxon_436001 # Alectis indicus / Alectis indica Replaced with
+http://purl.obolibrary.org/obo/NCBITaxon_3040459 # Scyris indica
+
+# DELETED http://purl.obolibrary.org/obo/NCBITaxon_45947 # family:Corbiculidae Gray, 1847 REPLACED WITH
+http://purl.obolibrary.org/obo/NCBITaxon_1176409 # Cyrenidae
+
+# DELETED http://purl.obolibrary.org/obo/NCBITaxon_48038 # Foeniculum vulgare P. Mill. REPLACED WITH
+http://purl.obolibrary.org/obo/NCBITaxon_2849586 # Anethum foeniculum
+
+# DELETED http://purl.obolibrary.org/obo/NCBITaxon_5400 # species:Agrocybe aegerita REPLACED WITH
+http://purl.obolibrary.org/obo/NCBITaxon_1973307 # Cyclocybe aegerita
 
 http://purl.obolibrary.org/obo/NCBITaxon_193297 # Aronia / (chokecherry)
 http://purl.obolibrary.org/obo/NCBITaxon_661339 # Aronia melanocarpa / black chokecherry
@@ -55,7 +77,7 @@ http://purl.obolibrary.org/obo/NCBITaxon_661104 # Morchella tomentosa
 http://purl.obolibrary.org/obo/NCBITaxon_69108 # Adansonia
 http://purl.obolibrary.org/obo/NCBITaxon_190531 # Vaccinium deliciosum
 http://purl.obolibrary.org/obo/NCBITaxon_1125938 # Selenicereus costaricensis
-http://purl.obolibrary.org/obo/NCBITaxon:4281 # Cornus
+http://purl.obolibrary.org/obo/NCBITaxon_4281 # Cornus
 
 
 http://purl.obolibrary.org/obo/NCBITaxon_37184 # antelope 
@@ -147,8 +169,6 @@ http://purl.obolibrary.org/obo/NCBITaxon_29892 #  Auricularia auricula-judae
 http://purl.obolibrary.org/obo/NCBITaxon_272846 # Asparagus racemosus
 http://purl.obolibrary.org/obo/NCBITaxon_48037 # Foeniculum
 
-
-http://purl.obolibrary.org/obo/NCBITaxon_2843217 # Rhaphiolepis bibas
 
 http://purl.obolibrary.org/obo/NCBITaxon_941588 # Apium graveolens Secalinum Group
 
@@ -1537,8 +1557,6 @@ http://purl.obolibrary.org/obo/NCBITaxon_260201 # Pandanus amaryllifolius
 http://purl.obolibrary.org/obo/NCBITaxon_260508 # species:Spirinchus thaleichthys (Ayres, 1860)
 http://purl.obolibrary.org/obo/NCBITaxon_260511 # genus:Argentina Linnaeus, 1758
 http://purl.obolibrary.org/obo/NCBITaxon_260524 # Lutjanus fulvus
-http://purl.obolibrary.org/obo/NCBITaxon_260673 # species:Citrullus lanatus var. citroides (Bailey) Mansf.
-http://purl.obolibrary.org/obo/NCBITaxon_260674 # Citrullus lanatus subsp. vulgaris
 http://purl.obolibrary.org/obo/NCBITaxon_260718 # Phyllanthus acidus
 http://purl.obolibrary.org/obo/NCBITaxon_260976 # species:Scardinius graecus Stephanidis, 1937
 http://purl.obolibrary.org/obo/NCBITaxon_262399 # Chionoecetes tanneri
@@ -1954,7 +1972,7 @@ http://purl.obolibrary.org/obo/NCBITaxon_321602 # species:Rubus illecebrosus Foc
 http://purl.obolibrary.org/obo/NCBITaxon_32201 # Carya illinoinensis
 http://purl.obolibrary.org/obo/NCBITaxon_322133 # Botia dario
 http://purl.obolibrary.org/obo/NCBITaxon_32219 # species:Amelanchier alnifolia (Nutt.) Nutt. ex M. Roem.
-http://purl.obolibrary.org/obo/NCBITaxon_32224 # Eriobotrya japonica
+
 http://purl.obolibrary.org/obo/NCBITaxon_32244 # species:Quillaja saponaria Molina
 http://purl.obolibrary.org/obo/NCBITaxon_32247 # Rubus idaeus
 http://purl.obolibrary.org/obo/NCBITaxon_32278 # Metapenaeus ensis
@@ -2675,7 +2693,7 @@ http://purl.obolibrary.org/obo/NCBITaxon_435239 # genus:Valamugil Smith, 1948
 http://purl.obolibrary.org/obo/NCBITaxon_435271 # species:Parastromateus Bleeker, 1865
 http://purl.obolibrary.org/obo/NCBITaxon_435272 # Parastromateus niger
 http://purl.obolibrary.org/obo/NCBITaxon_435999 # Trachinotus blochii
-http://purl.obolibrary.org/obo/NCBITaxon_436001 # Alectis indicus
+
 http://purl.obolibrary.org/obo/NCBITaxon_436207 # Arnica montana
 http://purl.obolibrary.org/obo/NCBITaxon_43691 # Canarium ovatum
 http://purl.obolibrary.org/obo/NCBITaxon_43698 # family:Synbranchidae
@@ -2797,7 +2815,7 @@ http://purl.obolibrary.org/obo/NCBITaxon_458613 # Urophycis cirrata
 http://purl.obolibrary.org/obo/NCBITaxon_45918 # genus:Empetrum L.
 http://purl.obolibrary.org/obo/NCBITaxon_459284 # Johnius dussumieri
 http://purl.obolibrary.org/obo/NCBITaxon_459287 # Otolithoides biauritus
-http://purl.obolibrary.org/obo/NCBITaxon_45947 # family:Corbiculidae Gray, 1847
+
 http://purl.obolibrary.org/obo/NCBITaxon_45948 # Corbicula spp.
 http://purl.obolibrary.org/obo/NCBITaxon_45949 # species:Corbicula fluminea (O. F. Müller, 1774)
 http://purl.obolibrary.org/obo/NCBITaxon_459635 # Pseudoplatystoma tigrinum
@@ -2898,7 +2916,7 @@ http://purl.obolibrary.org/obo/NCBITaxon_479862 # Aluterus monoceros
 http://purl.obolibrary.org/obo/NCBITaxon_479980 # Anarhichas orientalis
 http://purl.obolibrary.org/obo/NCBITaxon_480040 # Coregonus pidschian
 http://purl.obolibrary.org/obo/NCBITaxon_480368 # species:Borassus aethiopum C. Martius
-http://purl.obolibrary.org/obo/NCBITaxon_48038 # species:Foeniculum vulgare P. Mill.
+
 http://purl.obolibrary.org/obo/NCBITaxon_48042 # species:Levisticum officinale W.D.J. Koch
 http://purl.obolibrary.org/obo/NCBITaxon_480971 # species:Caryocar brasiliense Cambess.
 http://purl.obolibrary.org/obo/NCBITaxon_48106 # species:Centella asiatica (L.) Urban
@@ -3086,7 +3104,7 @@ http://purl.obolibrary.org/obo/NCBITaxon_53845 # genus:Caesalpinia L.
 http://purl.obolibrary.org/obo/NCBITaxon_53852 # species:Cassia fistula L.
 http://purl.obolibrary.org/obo/NCBITaxon_53868 # genus:Dialium L.
 http://purl.obolibrary.org/obo/NCBITaxon_53873 # species:Dipteryx odorata (Aublet) Willd.
-http://purl.obolibrary.org/obo/NCBITaxon_5400 # species:Agrocybe aegerita
+
 http://purl.obolibrary.org/obo/NCBITaxon_540279 # Zapteryx exasperata
 http://purl.obolibrary.org/obo/NCBITaxon_540795 # species:Cestrum laurifolium L'Hér.
 http://purl.obolibrary.org/obo/NCBITaxon_542674 # species:Phyla dulcis (Trevir.) Moldenke
