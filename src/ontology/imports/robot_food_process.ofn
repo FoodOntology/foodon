@@ -546,22 +546,22 @@ AnnotationAssertion(<http://purl.org/dc/terms/date> <http://purl.obolibrary.org/
 AnnotationAssertion(rdfs:label <http://purl.obolibrary.org/obo/FOODON_03000481> "american cheese (fat free)"@en)
 SubClassOf(<http://purl.obolibrary.org/obo/FOODON_03000481> <http://purl.obolibrary.org/obo/FOODON_03000480>)
 
-# Class: <http://purl.obolibrary.org/obo/FOODON_03000482> (pasteurized process american cheese)
+# Class: <http://purl.obolibrary.org/obo/FOODON_03000482> (american cheese (processed, pasteurized))
 
 AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000115> <http://purl.obolibrary.org/obo/FOODON_03000482> "American cheese that is made from combining more than one cheese."@en)
 AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000119> <http://purl.obolibrary.org/obo/FOODON_03000482> "https://en.wikipedia.org/wiki/American_cheese")
 AnnotationAssertion(<http://purl.org/dc/terms/contributor> <http://purl.obolibrary.org/obo/FOODON_03000482> "https://orcid.org/0000-0001-5275-8866")
 AnnotationAssertion(<http://purl.org/dc/terms/date> <http://purl.obolibrary.org/obo/FOODON_03000482> "2023-10-13T19:38:15Z"^^xsd:dateTime)
-AnnotationAssertion(rdfs:label <http://purl.obolibrary.org/obo/FOODON_03000482> "pasteurized process american cheese"@en)
+AnnotationAssertion(rdfs:label <http://purl.obolibrary.org/obo/FOODON_03000482> "american cheese (processed, pasteurized)"@en)
 SubClassOf(<http://purl.obolibrary.org/obo/FOODON_03000482> <http://purl.obolibrary.org/obo/FOODON_03000480>)
 
-# Class: <http://purl.obolibrary.org/obo/FOODON_03000483> (pasteurized process american cheese (vitamin D fortified))
+# Class: <http://purl.obolibrary.org/obo/FOODON_03000483> (american cheese (processed, pasteurized, vitamin D fortified))
 
 AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000115> <http://purl.obolibrary.org/obo/FOODON_03000483> "A pasteurized process american cheese that is vitamin D fortified."@en)
 AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000119> <http://purl.obolibrary.org/obo/FOODON_03000483> "https://en.wikipedia.org/wiki/American_cheese")
 AnnotationAssertion(<http://purl.org/dc/terms/contributor> <http://purl.obolibrary.org/obo/FOODON_03000483> "https://orcid.org/0000-0001-5275-8866")
 AnnotationAssertion(<http://purl.org/dc/terms/date> <http://purl.obolibrary.org/obo/FOODON_03000483> "2023-10-13T19:38:15Z"^^xsd:dateTime)
-AnnotationAssertion(rdfs:label <http://purl.obolibrary.org/obo/FOODON_03000483> "pasteurized process american cheese (vitamin D fortified)"@en)
+AnnotationAssertion(rdfs:label <http://purl.obolibrary.org/obo/FOODON_03000483> "american cheese (processed, pasteurized, vitamin D fortified)"@en)
 SubClassOf(<http://purl.obolibrary.org/obo/FOODON_03000483> <http://purl.obolibrary.org/obo/FOODON_03000482>)
 
 # Class: <http://purl.obolibrary.org/obo/FOODON_03000484> (pasteurized process american cheese food)

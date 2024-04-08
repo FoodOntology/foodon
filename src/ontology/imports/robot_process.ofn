@@ -656,7 +656,7 @@ AnnotationAssertion(<http://purl.org/dc/terms/date> <http://purl.obolibrary.org/
 AnnotationAssertion(rdfs:label <http://purl.obolibrary.org/obo/FOODON_00004531> "deboning"@en)
 SubClassOf(<http://purl.obolibrary.org/obo/FOODON_00004531> <http://purl.obolibrary.org/obo/FOODON_03460130>)
 
-# Class: <http://purl.obolibrary.org/obo/FOODON_00004533> (food grinding process)
+# Class: <http://purl.obolibrary.org/obo/FOODON_00004533> (food grinding)
 
 AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000115> <http://purl.obolibrary.org/obo/FOODON_00004533> "The process of grinding food such as meat."@en)
 AnnotationAssertion(rdfs:label <http://purl.obolibrary.org/obo/FOODON_00004533> "food grinding"@en)
