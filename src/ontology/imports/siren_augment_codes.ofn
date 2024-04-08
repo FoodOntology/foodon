@@ -10547,7 +10547,7 @@ AnnotationAssertion(rdfs:comment obo:FOODON_03301115 "SIREN DB annotation:
 * seed (anatomical part) FOODON:03420155
 * proteolytic fermentation process FOODON:03460102"@en)
 
-# Class: obo:FOODON_03301116 (wheat flour)
+# Class: obo:FOODON_03301116 (white wheat flour (not heat treated))
 
 AnnotationAssertion(rdfs:comment obo:FOODON_03301116 "SIREN DB annotation:
 * finely ground FOODON:03430106
@@ -11474,14 +11474,6 @@ AnnotationAssertion(rdfs:comment obo:FOODON_03301283 "SIREN DB annotation:
 * water removal process FOODON:03460138
 * preservation by dehydration or drying FOODON:03470116"@en)
 
-# Class: obo:FOODON_03301285 (strawberry (frozen))
-
-AnnotationAssertion(rdfs:comment obo:FOODON_03301285 "SIREN DB annotation:
-* whole, natural shape FOODON:03430150
-* not heat-treated FOODON:03440003
-* fruit, peel present, core, pit or seed present FOODON:03420140
-* preservation by freezing FOODON:03470136"@en)
-
 # Class: obo:FOODON_03301286 (strawberry (sliced, frozen))
 
 AnnotationAssertion(rdfs:comment obo:FOODON_03301286 "SIREN DB annotation:
@@ -11955,7 +11947,7 @@ AnnotationAssertion(rdfs:comment obo:FOODON_03301380 "SIREN DB annotation:
 * root, tuber or bulb, without peel FOODON:03420240
 * sterilization by heating FOODON:03470123"@en)
 
-# Class: obo:FOODON_03301381 (pimiento (canned))
+# Class: obo:FOODON_03301381 (pimiento pieces (canned))
 
 AnnotationAssertion(rdfs:comment obo:FOODON_03301381 "SIREN DB annotation:
 * surrounded by 'can, bottle or jar' FOODON:03490194
@@ -12437,7 +12429,7 @@ AnnotationAssertion(rdfs:comment obo:FOODON_03301459 "SIREN DB annotation:
 * water removal process FOODON:03460138
 * preservation by dehydration or drying FOODON:03470116"@en)
 
-# Class: obo:FOODON_03301460 (tomato catsup)
+# Class: obo:FOODON_03301460 (tomato ketchup)
 
 AnnotationAssertion(rdfs:comment obo:FOODON_03301460 "SIREN DB annotation:
 * semiliquid with smooth consistency FOODON:03430135
@@ -14908,7 +14900,7 @@ AnnotationAssertion(rdfs:comment obo:FOODON_03301942 "SIREN DB annotation:
 * fully heat-treated FOODON:03440014
 * broiling or grilling FOODON:03450006"@en)
 
-# Class: obo:FOODON_03301943 (wheat flour (enriched))
+# Class: obo:FOODON_03301943 (white wheat flour (enriched, not heat treated))
 
 AnnotationAssertion(rdfs:comment obo:FOODON_03301943 "SIREN DB annotation:
 * finely ground FOODON:03430106
@@ -15096,7 +15088,7 @@ AnnotationAssertion(rdfs:comment obo:FOODON_03301968 "SIREN DB annotation:
 * water removal process FOODON:03460138
 * preservation by dehydration or drying FOODON:03470116"@en)
 
-# Class: obo:FOODON_03301969 (wheat flour (unbleached, enriched))
+# Class: obo:FOODON_03301969 (white wheat flour (unbleached, enriched))
 
 AnnotationAssertion(rdfs:comment obo:FOODON_03301969 "SIREN DB annotation:
 * finely ground FOODON:03430106
@@ -17259,7 +17251,7 @@ AnnotationAssertion(rdfs:comment obo:FOODON_03302338 "SIREN DB annotation:
 * carbohydrate fermentation process FOODON:03460256
 * ingredient: color added FOODON:03460150"@en)
 
-# Class: obo:FOODON_03302339 (wheat flour (white))
+# Class: obo:FOODON_03302339 (white wheat flour)
 
 AnnotationAssertion(rdfs:comment obo:FOODON_03302339 "SIREN DB annotation:
 * finely ground FOODON:03430106
@@ -18433,7 +18425,7 @@ AnnotationAssertion(rdfs:comment obo:FOODON_03302524 "SIREN DB annotation:
 * ingredient: sucrose added FOODON:03460158
 * ingredient: butter added FOODON:03460271"@en)
 
-# Class: obo:FOODON_03302525 (wheat flour (hydrolyzed))
+# Class: obo:FOODON_03302525 (white wheat flour (hydrolyzed))
 
 AnnotationAssertion(rdfs:comment obo:FOODON_03302525 "SIREN DB annotation:
 * finely ground FOODON:03430106
@@ -20049,7 +20041,7 @@ AnnotationAssertion(rdfs:comment obo:FOODON_03302788 "SIREN DB annotation:
 * D-glucose CHEBI:17634
 * water removal process FOODON:03460138"@en)
 
-# Class: obo:FOODON_03302789 (tomato catsup (homogenized))
+# Class: obo:FOODON_03302789 (tomato ketchup (homogenized))
 
 AnnotationAssertion(rdfs:comment obo:FOODON_03302789 "SIREN DB annotation:
 * semiliquid with smooth consistency FOODON:03430135
@@ -20083,7 +20075,7 @@ AnnotationAssertion(rdfs:comment obo:FOODON_03302792 "SIREN DB annotation:
 * preservation by dehydration or drying FOODON:03470116
 * ingredient: flavoring, spice or herb added FOODON:03460227"@en)
 
-# Class: obo:FOODON_03302794 (tomato catsup (no salt added))
+# Class: obo:FOODON_03302794 (tomato ketchup (no salt added))
 
 AnnotationAssertion(rdfs:comment obo:FOODON_03302794 "SIREN DB annotation:
 * semiliquid with smooth consistency FOODON:03430135
@@ -21020,7 +21012,7 @@ AnnotationAssertion(rdfs:comment obo:FOODON_03302932 "SIREN DB annotation:
 * not heat-treated FOODON:03440003
 * animal as consumer FOODON:03510021"@en)
 
-# Class: obo:FOODON_03302933 (corn meal (enriched))
+# Class: obo:FOODON_03302933 (cornmeal (enriched))
 
 AnnotationAssertion(rdfs:comment obo:FOODON_03302933 "SIREN DB annotation:
 * medium ground FOODON:03430117
@@ -22559,7 +22551,7 @@ AnnotationAssertion(rdfs:comment obo:FOODON_03303186 "SIREN DB annotation:
 * liquid, low viscosity, with no visible particles FOODON:03430123
 * fruit, peel present, core, pit or seed present FOODON:03420140"@en)
 
-# Class: obo:FOODON_03303187 (corn meal (water ground))
+# Class: obo:FOODON_03303187 (cornmeal (water ground))
 
 AnnotationAssertion(rdfs:comment obo:FOODON_03303187 "SIREN DB annotation:
 * medium ground FOODON:03430117
@@ -22603,7 +22595,7 @@ AnnotationAssertion(rdfs:comment obo:FOODON_03303191 "SIREN DB annotation:
 * seed, skin present, germ present FOODON:03420133
 * sterilization by heating FOODON:03470123"@en)
 
-# Class: obo:FOODON_03303192 (corn meal mix)
+# Class: obo:FOODON_03303192 (cornmeal mix)
 
 AnnotationAssertion(rdfs:comment obo:FOODON_03303192 "SIREN DB annotation:
 * medium ground FOODON:03430117
@@ -22613,7 +22605,7 @@ AnnotationAssertion(rdfs:comment obo:FOODON_03303192 "SIREN DB annotation:
 * water removal process FOODON:03460138
 * preservation by dehydration or drying FOODON:03470116"@en)
 
-# Class: obo:FOODON_03303193 (corn meal (stone ground))
+# Class: obo:FOODON_03303193 (cornmeal (stone ground))
 
 AnnotationAssertion(rdfs:comment obo:FOODON_03303193 "SIREN DB annotation:
 * medium ground FOODON:03430117
@@ -22631,7 +22623,7 @@ AnnotationAssertion(rdfs:comment obo:FOODON_03303194 "SIREN DB annotation:
 * water removal process FOODON:03460138
 * preservation by dehydration or drying FOODON:03470116"@en)
 
-# Class: obo:FOODON_03303196 (yellow corn meal (stone ground))
+# Class: obo:FOODON_03303196 (yellow cornmeal (stone ground))
 
 AnnotationAssertion(rdfs:comment obo:FOODON_03303196 "SIREN DB annotation:
 * medium ground FOODON:03430117
@@ -22660,7 +22652,7 @@ AnnotationAssertion(rdfs:comment obo:FOODON_03303198 "SIREN DB annotation:
 * ingredient: corn plant (sensu maize) FOODON:03411232
 * ingredient: fat or oil added FOODON:03460221"@en)
 
-# Class: obo:FOODON_03303199 (corn meal (instant))
+# Class: obo:FOODON_03303199 (cornmeal (instant))
 
 AnnotationAssertion(rdfs:comment obo:FOODON_03303199 "SIREN DB annotation:
 * medium ground FOODON:03430117
@@ -26568,7 +26560,7 @@ AnnotationAssertion(rdfs:comment obo:FOODON_03304042 "SIREN DB annotation:
 * curd FOODON:03420245
 * ingredient: flavoring, spice or herb added FOODON:03460227"@en)
 
-# Class: obo:FOODON_03304043 (bread flour)
+# Class: obo:FOODON_03304043 (white bread flour)
 
 AnnotationAssertion(rdfs:comment obo:FOODON_03304043 "SIREN DB annotation:
 * finely ground FOODON:03430106
@@ -27139,7 +27131,7 @@ AnnotationAssertion(rdfs:comment obo:FOODON_03304144 "SIREN DB annotation:
 * ingredient: butter added FOODON:03460271
 * packed in gravy or sauce FOODON:03480034"@en)
 
-# Class: obo:FOODON_03304146 (tomato catsup (low-sodium))
+# Class: obo:FOODON_03304146 (tomato ketchup (low-sodium))
 
 AnnotationAssertion(rdfs:comment obo:FOODON_03304146 "SIREN DB annotation:
 * whole, shape achieved by forming, thickness <0.3 cm. FOODON:03430153
@@ -28605,7 +28597,7 @@ AnnotationAssertion(rdfs:comment obo:FOODON_03304389 "SIREN DB annotation:
 * milk (mammary secretion) UBERON:0001913
 * preservation by freezing FOODON:03470136"@en)
 
-# Class: obo:FOODON_03304390 (cow milk (reconstituted))
+# Class: obo:FOODON_03304390 (whole cow milk (reconstituted))
 
 AnnotationAssertion(rdfs:comment obo:FOODON_03304390 "SIREN DB annotation:
 * liquid, low viscosity, with no visible particles FOODON:03430123
@@ -28831,7 +28823,7 @@ AnnotationAssertion(rdfs:comment obo:FOODON_03304423 "SIREN DB annotation:
 * sugars free food FOODON:03510056
 * low sodium food FOODON:03510156"@en)
 
-# Class: obo:FOODON_03304424 (tomato catsup (low-sodium, sugar-free))
+# Class: obo:FOODON_03304424 (tomato ketchup (low-sodium, sugar-free))
 
 AnnotationAssertion(rdfs:comment obo:FOODON_03304424 "SIREN DB annotation:
 * semiliquid with smooth consistency FOODON:03430135
@@ -29171,7 +29163,7 @@ AnnotationAssertion(rdfs:comment obo:FOODON_03304479 "SIREN DB annotation:
 * ingredient: grain added FOODON:03460152
 * dietary claim or use FOODON:03510023"@en)
 
-# Class: obo:FOODON_03304480 (wheat flour (treated with nitric acid))
+# Class: obo:FOODON_03304480 (white wheat flour (treated with nitric acid))
 
 AnnotationAssertion(rdfs:comment obo:FOODON_03304480 "SIREN DB annotation:
 * finely ground FOODON:03430106
@@ -29181,7 +29173,7 @@ AnnotationAssertion(rdfs:comment obo:FOODON_03304480 "SIREN DB annotation:
 * acidified FOODON:03460200
 * preservation by dehydration or drying FOODON:03470116"@en)
 
-# Class: obo:FOODON_03304481 (wheat flour (bromated))
+# Class: obo:FOODON_03304481 (white wheat flour (bromated))
 
 AnnotationAssertion(rdfs:comment obo:FOODON_03304481 "SIREN DB annotation:
 * finely ground FOODON:03430106
@@ -29211,7 +29203,7 @@ AnnotationAssertion(rdfs:comment obo:FOODON_03304483 "SIREN DB annotation:
 * fat removal process FOODON:03460161
 * preservation by dehydration or drying FOODON:03470116"@en)
 
-# Class: obo:FOODON_03304484 (wheat flour (instantized))
+# Class: obo:FOODON_03304484 (white wheat flour (instantized))
 
 AnnotationAssertion(rdfs:comment obo:FOODON_03304484 "SIREN DB annotation:
 * finely ground FOODON:03430106
@@ -29560,7 +29552,7 @@ AnnotationAssertion(rdfs:comment obo:FOODON_03304533 "SIREN DB annotation:
 * ingredient: dextrose added FOODON:03460154
 * ingredient: nutrient or dietary substance added FOODON:03460194"@en)
 
-# Class: obo:FOODON_03304534 (wheat flour (all purpose))
+# Class: obo:FOODON_03304534 (white wheat flour (all purpose))
 
 AnnotationAssertion(rdfs:comment obo:FOODON_03304534 "SIREN DB annotation:
 * finely ground FOODON:03430106
@@ -30256,7 +30248,7 @@ AnnotationAssertion(rdfs:comment obo:FOODON_03304628 "SIREN DB annotation:
 * boiling FOODON:03450014
 * ingredient: fat or oil added FOODON:03460221"@en)
 
-# Class: obo:FOODON_03304629 (wheat flour (starch-reduced))
+# Class: obo:FOODON_03304629 (white wheat flour (starch-reduced))
 
 AnnotationAssertion(rdfs:comment obo:FOODON_03304629 "SIREN DB annotation:
 * finely ground FOODON:03430106
@@ -33354,7 +33346,7 @@ AnnotationAssertion(rdfs:comment obo:FOODON_03305104 "SIREN DB annotation:
 * water removal process FOODON:03460138
 * preservation by dehydration or drying FOODON:03470116"@en)
 
-# Class: obo:FOODON_03305106 (tomato catsup (artificially-sweetened))
+# Class: obo:FOODON_03305106 (tomato ketchup (artificially-sweetened))
 
 AnnotationAssertion(rdfs:comment obo:FOODON_03305106 "SIREN DB annotation:
 * semiliquid with smooth consistency FOODON:03430135
@@ -36529,7 +36521,7 @@ AnnotationAssertion(rdfs:comment obo:FOODON_03305639 "SIREN DB annotation:
 * ingredient: gelatin added FOODON:03460165
 * ingredient: corn syrup added FOODON:03460224"@en)
 
-# Class: obo:FOODON_03305640 (corn meal (degerminated, enriched))
+# Class: obo:FOODON_03305640 (cornmeal (degerminated, enriched))
 
 AnnotationAssertion(rdfs:comment obo:FOODON_03305640 "SIREN DB annotation:
 * medium ground FOODON:03430117
@@ -36542,7 +36534,7 @@ AnnotationAssertion(rdfs:comment obo:FOODON_03305640 "SIREN DB annotation:
 * ingredient: iron added FOODON:03460181
 * ingredient: nutrient or dietary substance added FOODON:03460194"@en)
 
-# Class: obo:FOODON_03305642 (yellow corn meal)
+# Class: obo:FOODON_03305642 (yellow cornmeal)
 
 AnnotationAssertion(rdfs:comment obo:FOODON_03305642 "SIREN DB annotation:
 * medium ground FOODON:03430117
@@ -36551,7 +36543,7 @@ AnnotationAssertion(rdfs:comment obo:FOODON_03305642 "SIREN DB annotation:
 * water removal process FOODON:03460138
 * preservation by dehydration or drying FOODON:03470116"@en)
 
-# Class: obo:FOODON_03305643 (yellow corn meal (degerminated))
+# Class: obo:FOODON_03305643 (yellow cornmeal (degerminated))
 
 AnnotationAssertion(rdfs:comment obo:FOODON_03305643 "SIREN DB annotation:
 * medium ground FOODON:03430117
@@ -41395,7 +41387,7 @@ AnnotationAssertion(rdfs:comment obo:FOODON_03306532 "SIREN DB annotation:
 * whole plant or most parts used FOODON:03420150
 * sterilization by heating FOODON:03470123"@en)
 
-# Class: obo:FOODON_03306533 (tomato catsup with mushrooms)
+# Class: obo:FOODON_03306533 (tomato ketchup with mushrooms)
 
 AnnotationAssertion(rdfs:comment obo:FOODON_03306533 "SIREN DB annotation:
 * semiliquid with smooth consistency FOODON:03430135
@@ -46007,7 +45999,7 @@ AnnotationAssertion(rdfs:comment obo:FOODON_03307323 "SIREN DB annotation:
 * ingredient: sugar or sugar syrup added FOODON:03460136
 * ingredient: fat or oil added FOODON:03460221"@en)
 
-# Class: obo:FOODON_03307325 (trout (frozen))
+# Class: obo:FOODON_03307325 (piece(s) of trout meat (frozen))
 
 AnnotationAssertion(rdfs:comment obo:FOODON_03307325 "SIREN DB annotation:
 * solid FOODON:03430151
@@ -49188,7 +49180,7 @@ AnnotationAssertion(rdfs:comment obo:FOODON_03307975 "SIREN DB annotation:
 * preservation by dehydration or drying FOODON:03470116
 * ingredient: nutrient or dietary substance added FOODON:03460194"@en)
 
-# Class: obo:FOODON_03307976 (wheat flour (self-rising))
+# Class: obo:FOODON_03307976 (white wheat flour (self-rising))
 
 AnnotationAssertion(rdfs:comment obo:FOODON_03307976 "SIREN DB annotation:
 * finely ground FOODON:03430106
@@ -49243,7 +49235,7 @@ AnnotationAssertion(rdfs:comment obo:FOODON_03307992 "SIREN DB annotation:
 * not heat-treated FOODON:03440003
 * skeletal meat part FOODON:03420175"@en)
 
-# Class: obo:FOODON_03307996 (atlantic salmon (raw))
+# Class: obo:FOODON_03307996 (piece of atlantic salmon meat (raw))
 
 AnnotationAssertion(rdfs:comment obo:FOODON_03307996 "SIREN DB annotation:
 * solid FOODON:03430151
@@ -49910,28 +49902,28 @@ AnnotationAssertion(rdfs:comment obo:FOODON_03308121 "SIREN DB annotation:
 * not heat-treated FOODON:03440003
 * whole animal or most parts used FOODON:03420173"@en)
 
-# Class: obo:FOODON_03308122 (clam (soft shell, in shell, raw))
+# Class: obo:FOODON_03308122 (soft shell clam (shell on, raw))
 
 AnnotationAssertion(rdfs:comment obo:FOODON_03308122 "SIREN DB annotation:
 * whole, natural shape FOODON:03430150
 * not heat-treated FOODON:03440003
 * skeletal meat part, with bone or shell FOODON:03420243"@en)
 
-# Class: obo:FOODON_03308123 (clam (hard shell, in shell, raw))
+# Class: obo:FOODON_03308123 (hard shell clam (shell on, raw))
 
 AnnotationAssertion(rdfs:comment obo:FOODON_03308123 "SIREN DB annotation:
 * whole, natural shape FOODON:03430150
 * not heat-treated FOODON:03440003
 * skeletal meat part, with bone or shell FOODON:03420243"@en)
 
-# Class: obo:FOODON_03308124 (clam (hard shell, shucked, raw))
+# Class: obo:FOODON_03308124 (hard shell clam (shell off, raw))
 
 AnnotationAssertion(rdfs:comment obo:FOODON_03308124 "SIREN DB annotation:
 * whole, natural shape FOODON:03430150
 * not heat-treated FOODON:03440003
 * skeletal meat part, without bone or shell FOODON:03420125"@en)
 
-# Class: obo:FOODON_03308125 (clam (soft shell, shucked, raw))
+# Class: obo:FOODON_03308125 (soft shell clam (shell off, raw))
 
 AnnotationAssertion(rdfs:comment obo:FOODON_03308125 "SIREN DB annotation:
 * whole, natural shape FOODON:03430150
@@ -52912,7 +52904,7 @@ AnnotationAssertion(rdfs:comment obo:FOODON_03308735 "SIREN DB annotation:
 * skeletal meat part, without bone, without skin FOODON:03420268
 * ingredient: fat or oil added FOODON:03460221"@en)
 
-# Class: obo:FOODON_03308745 (clam (hard, raw))
+# Class: obo:FOODON_03308745 (hard shell clam (raw))
 
 AnnotationAssertion(rdfs:comment obo:FOODON_03308745 "SIREN DB annotation:
 * whole, natural shape FOODON:03430150
@@ -53005,13 +52997,6 @@ AnnotationAssertion(rdfs:comment obo:FOODON_03308763 "SIREN DB annotation:
 * food filling process FOODON:03460207
 * ingredient: food added FOODON:03460180"@en)
 
-# Class: obo:FOODON_03308764 (clam (raw))
-
-AnnotationAssertion(rdfs:comment obo:FOODON_03308764 "SIREN DB annotation:
-* whole, natural shape FOODON:03430150
-* not heat-treated FOODON:03440003
-* whole animal or most parts used FOODON:03420173"@en)
-
 # Class: obo:FOODON_03308766 (cockle (new zealand, raw))
 
 AnnotationAssertion(rdfs:comment obo:FOODON_03308766 "SIREN DB annotation:
@@ -53048,7 +53033,7 @@ AnnotationAssertion(rdfs:comment obo:FOODON_03308770 "SIREN DB annotation:
 * whole animal or most parts used FOODON:03420173
 * preservation by freezing FOODON:03470136"@en)
 
-# Class: obo:FOODON_03308771 (clam (soft shell, raw))
+# Class: obo:FOODON_03308771 (soft shell clam (raw))
 
 AnnotationAssertion(rdfs:comment obo:FOODON_03308771 "SIREN DB annotation:
 * whole, natural shape FOODON:03430150
@@ -57914,7 +57899,7 @@ AnnotationAssertion(rdfs:comment obo:FOODON_03309765 "SIREN DB annotation:
 * water removal process FOODON:03460138
 * preservation by dehydration or drying FOODON:03470116"@en)
 
-# Class: obo:FOODON_03309766 (white corn meal)
+# Class: obo:FOODON_03309766 (white cornmeal)
 
 AnnotationAssertion(rdfs:comment obo:FOODON_03309766 "SIREN DB annotation:
 * medium ground FOODON:03430117
@@ -58032,7 +58017,7 @@ AnnotationAssertion(rdfs:comment obo:FOODON_03309794 "SIREN DB annotation:
 * sugar syrup or syrup solids FOODON:03420271
 * ingredient: flavoring or taste ingredient added FOODON:03460117"@en)
 
-# Class: obo:FOODON_03309795 (tomato catsup substitute (sweetened with honey))
+# Class: obo:FOODON_03309795 (tomat oketchup substitute (sweetened with honey))
 
 AnnotationAssertion(rdfs:comment obo:FOODON_03309795 "SIREN DB annotation:
 * semiliquid with smooth consistency FOODON:03430135
@@ -61673,7 +61658,7 @@ AnnotationAssertion(rdfs:comment obo:FOODON_03310628 "SIREN DB annotation:
 * meat color, undesignated or unknown (deprecated) FOODON:03530003
 * skeletal meat part, without bone, without skin FOODON:03420268"@en)
 
-# Class: obo:FOODON_03310629 (soy milk substitute (hypoallergenic))
+# Class: obo:FOODON_03310629 (soybean milk substitute (hypoallergenic))
 
 AnnotationAssertion(rdfs:comment obo:FOODON_03310629 "SIREN DB annotation:
 * liquid, low viscosity, with no visible particles FOODON:03430123
@@ -64571,14 +64556,6 @@ AnnotationAssertion(rdfs:comment obo:FOODON_03311106 "SIREN DB annotation:
 * water removal process FOODON:03460138
 * preservation by dehydration or drying FOODON:03470116"@en)
 
-# Class: obo:FOODON_03311109 (turkey meat (ground, raw))
-
-AnnotationAssertion(rdfs:comment obo:FOODON_03311109 "SIREN DB annotation:
-* divided or disintegrated FOODON:03430122
-* not heat-treated FOODON:03440003
-* meat color, undesignated or unknown (deprecated) FOODON:03530003
-* skeletal meat part, without bone or shell FOODON:03420125"@en)
-
 # Class: obo:FOODON_03311110 (instant shake mix)
 
 AnnotationAssertion(rdfs:comment obo:FOODON_03311110 "SIREN DB annotation:
@@ -67190,12 +67167,6 @@ AnnotationAssertion(rdfs:comment obo:FOODON_03311503 "SIREN DB annotation:
 AnnotationAssertion(rdfs:comment obo:FOODON_03311504 "SIREN DB annotation:
 * extract, concentrate or isolate of plant or animal FOODON:03420228"@en)
 
-# Class: obo:FOODON_03311506 (piece of pork kidney)
-
-AnnotationAssertion(rdfs:comment obo:FOODON_03311506 "SIREN DB annotation:
-* solid FOODON:03430151
-* kidney UBERON:0002113"@en)
-
 # Class: obo:FOODON_03311507 (pork trimming)
 
 AnnotationAssertion(rdfs:comment obo:FOODON_03311507 "SIREN DB annotation:
@@ -67337,7 +67308,7 @@ AnnotationAssertion(rdfs:comment obo:FOODON_03311524 "SIREN DB annotation:
 * whole, shape achieved by forming FOODON:03430147
 * meat part of animal FOODON:03420103"@en)
 
-# Class: obo:FOODON_03311525 (wheat flour (unbleached))
+# Class: obo:FOODON_03311525 (white wheat flour (unbleached))
 
 AnnotationAssertion(rdfs:comment obo:FOODON_03311525 "SIREN DB annotation:
 * finely ground FOODON:03430106
@@ -68000,7 +67971,7 @@ AnnotationAssertion(rdfs:comment obo:FOODON_03311654 "SIREN DB annotation:
 * skeletal meat part FOODON:03420175
 * curing or aging process FOODON:03460253"@en)
 
-# Class: obo:FOODON_03311655 (wheat flour dough)
+# Class: obo:FOODON_03311655 (white wheat flour dough)
 
 AnnotationAssertion(rdfs:comment obo:FOODON_03311655 "SIREN DB annotation:
 * semisolid FOODON:03430144
@@ -68256,12 +68227,6 @@ AnnotationAssertion(rdfs:comment obo:FOODON_03311710 "SIREN DB annotation:
 * root, tuber or bulb, without peel FOODON:03420240
 * ingredient: margarine added FOODON:03460272
 * packed in fat or oil FOODON:03480026"@en)
-
-# Class: obo:FOODON_03311711 (catfish fillet (raw))
-
-AnnotationAssertion(rdfs:comment obo:FOODON_03311711 "SIREN DB annotation:
-* divided into pieces FOODON:03430152
-* skeletal meat part, without bone or shell FOODON:03420125"@en)
 
 # Class: obo:FOODON_03311712 (potato (sliced, raw, vaccum-packed))
 
@@ -68642,7 +68607,7 @@ AnnotationAssertion(rdfs:comment obo:FOODON_03311790 "SIREN DB annotation:
 * not heat-treated FOODON:03440003
 * fruit part FOODON:03420167"@en)
 
-# Class: obo:FOODON_03311791 (tomato (raw, genetically modified))
+# Class: obo:FOODON_03311791 (tomato (genetically modified, raw))
 
 AnnotationAssertion(rdfs:comment obo:FOODON_03311791 "SIREN DB annotation:
 * whole, natural shape FOODON:03430150
@@ -68681,7 +68646,7 @@ AnnotationAssertion(rdfs:comment obo:FOODON_03311804 "SIREN DB annotation:
 * ingredient: pectin added FOODON:03460145
 * energy special claim or use FOODON:03510045"@en)
 
-# Class: obo:FOODON_03311805 (rapeseed (dried, genetically modified))
+# Class: obo:FOODON_03311805 (rapeseed (genetically modifide, dried))
 
 AnnotationAssertion(rdfs:comment obo:FOODON_03311805 "SIREN DB annotation:
 * whole, natural shape FOODON:03430150
@@ -68871,7 +68836,7 @@ AnnotationAssertion(rdfs:comment obo:FOODON_03311835 "SIREN DB annotation:
 * seed (anatomical part) FOODON:03420155
 * food baking process FOODON:03450005"@en)
 
-# Class: obo:FOODON_03311837 (cottonseed (dried, genetically modified))
+# Class: obo:FOODON_03311837 (cottonseed (genetically modified, dried))
 
 AnnotationAssertion(rdfs:comment obo:FOODON_03311837 "SIREN DB annotation:
 * whole, natural shape FOODON:03430150
@@ -69105,7 +69070,7 @@ AnnotationAssertion(rdfs:comment obo:FOODON_03311877 "SIREN DB annotation:
 * seed (anatomical part) FOODON:03420155
 * microbial/enzymatic modification process FOODON:03460119"@en)
 
-# Class: obo:FOODON_03311878 (wheat flour (defatted))
+# Class: obo:FOODON_03311878 (white wheat flour (defatted))
 
 AnnotationAssertion(rdfs:comment obo:FOODON_03311878 "SIREN DB annotation:
 * finely ground FOODON:03430106
@@ -69837,13 +69802,6 @@ AnnotationAssertion(rdfs:comment obo:FOODON_03315104 "SIREN DB annotation:
 * whole, natural shape FOODON:03430150
 * fruit, peel present, core, pit or seed present FOODON:03420140"@en)
 
-# Class: obo:FOODON_03315108 (tangerine)
-
-AnnotationAssertion(rdfs:comment obo:FOODON_03315108 "SIREN DB annotation:
-* whole, natural shape FOODON:03430150
-* not heat-treated FOODON:03440003
-* fruit, peel present, core, pit or seed present FOODON:03420140"@en)
-
 # Class: obo:FOODON_03315109 (baking mix (yeast leavened))
 
 AnnotationAssertion(rdfs:comment obo:FOODON_03315109 "SIREN DB annotation:
@@ -70527,7 +70485,7 @@ AnnotationAssertion(rdfs:comment obo:FOODON_03315292 "SIREN DB annotation:
 * part of plant FOODON:03420174
 * ingredient: nut or seed added FOODON:03460177"@en)
 
-# Class: obo:FOODON_03315295 (catsup)
+# Class: obo:FOODON_03315295 (tomato ketchup (fermented))
 
 AnnotationAssertion(rdfs:comment obo:FOODON_03315295 "SIREN DB annotation:
 * semiliquid with smooth consistency FOODON:03430135
@@ -72699,7 +72657,7 @@ AnnotationAssertion(rdfs:comment obo:FOODON_03315736 "SIREN DB annotation:
 * fully heat-treated FOODON:03440014
 * meat part of animal FOODON:03420103"@en)
 
-# Class: obo:FOODON_03315740 (wheat flour (white, enriched))
+# Class: obo:FOODON_03315740 (white wheat flour (enriched))
 
 AnnotationAssertion(rdfs:comment obo:FOODON_03315740 "SIREN DB annotation:
 * finely ground FOODON:03430106
@@ -73045,7 +73003,7 @@ AnnotationAssertion(rdfs:comment obo:FOODON_03315813 "SIREN DB annotation:
 * fully heat-treated FOODON:03440014
 * instantizing process FOODON:03460169"@en)
 
-# Class: obo:FOODON_03315815 (wheat flour (white, vitamin b enriched))
+# Class: obo:FOODON_03315815 (white wheat flour (vitamin b enriched))
 
 AnnotationAssertion(rdfs:comment obo:FOODON_03315815 "SIREN DB annotation:
 * finely ground FOODON:03430106
@@ -78219,7 +78177,7 @@ AnnotationAssertion(rdfs:comment obo:FOODON_03316841 "SIREN DB annotation:
 * ingredient: iron added FOODON:03460181
 * ingredient: nutrient or dietary substance added FOODON:03460194"@en)
 
-# Class: obo:FOODON_03316842 (wheat flour (phosphated))
+# Class: obo:FOODON_03316842 (white wheat flour (phosphated))
 
 AnnotationAssertion(rdfs:comment obo:FOODON_03316842 "SIREN DB annotation:
 * finely ground FOODON:03430106
@@ -78228,7 +78186,7 @@ AnnotationAssertion(rdfs:comment obo:FOODON_03316842 "SIREN DB annotation:
 * food phosphating process FOODON:03460278
 * preservation by dehydration or drying FOODON:03470116"@en)
 
-# Class: obo:FOODON_03316843 (wheat flour (self-rising, enriched))
+# Class: obo:FOODON_03316843 (white wheat flour (self-rising, enriched))
 
 AnnotationAssertion(rdfs:comment obo:FOODON_03316843 "SIREN DB annotation:
 * finely ground FOODON:03430106
@@ -78251,7 +78209,7 @@ AnnotationAssertion(rdfs:comment obo:FOODON_03316844 "SIREN DB annotation:
 * water removal process FOODON:03460138
 * preservation by dehydration or drying FOODON:03470116"@en)
 
-# Class: obo:FOODON_03316845 (white corn meal (self-rising))
+# Class: obo:FOODON_03316845 (white cornmeal (self-rising))
 
 AnnotationAssertion(rdfs:comment obo:FOODON_03316845 "SIREN DB annotation:
 * medium ground FOODON:03430117
@@ -78260,7 +78218,7 @@ AnnotationAssertion(rdfs:comment obo:FOODON_03316845 "SIREN DB annotation:
 * preservation by dehydration or drying FOODON:03470116
 * ingredient: chemical leavening agent added FOODON:03460351"@en)
 
-# Class: obo:FOODON_03316846 (yellow corn meal (self-rising))
+# Class: obo:FOODON_03316846 (yellow cornmeal (self-rising))
 
 AnnotationAssertion(rdfs:comment obo:FOODON_03316846 "SIREN DB annotation:
 * medium ground FOODON:03430117
@@ -80242,7 +80200,7 @@ AnnotationAssertion(rdfs:comment obo:FOODON_03317232 "SIREN DB annotation:
 * water removal process FOODON:03460138
 * preservation by dehydration or drying FOODON:03470116"@en)
 
-# Class: obo:FOODON_03317233 (white corn meal (bolted))
+# Class: obo:FOODON_03317233 (white cornmeal (bolted))
 
 AnnotationAssertion(rdfs:comment obo:FOODON_03317233 "SIREN DB annotation:
 * medium ground and sifted (bolted) FOODON:03430101
@@ -80250,7 +80208,7 @@ AnnotationAssertion(rdfs:comment obo:FOODON_03317233 "SIREN DB annotation:
 * water removal process FOODON:03460138
 * preservation by dehydration or drying FOODON:03470116"@en)
 
-# Class: obo:FOODON_03317234 (white corn meal (degerminated))
+# Class: obo:FOODON_03317234 (white cornmeal (degerminated))
 
 AnnotationAssertion(rdfs:comment obo:FOODON_03317234 "SIREN DB annotation:
 * medium ground FOODON:03430117
@@ -80258,7 +80216,7 @@ AnnotationAssertion(rdfs:comment obo:FOODON_03317234 "SIREN DB annotation:
 * water removal process FOODON:03460138
 * preservation by dehydration or drying FOODON:03470116"@en)
 
-# Class: obo:FOODON_03317235 (yellow corn meal (bolted))
+# Class: obo:FOODON_03317235 (yellow cornmeal (bolted))
 
 AnnotationAssertion(rdfs:comment obo:FOODON_03317235 "SIREN DB annotation:
 * medium ground and sifted (bolted) FOODON:03430101
