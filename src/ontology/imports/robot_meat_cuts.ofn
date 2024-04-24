@@ -644,14 +644,6 @@ AnnotationAssertion(rdfs:seeAlso <http://purl.obolibrary.org/obo/FOODON_00003305
 SubClassOf(<http://purl.obolibrary.org/obo/FOODON_00003305> <http://purl.obolibrary.org/obo/FOODON_00003029>)
 SubClassOf(<http://purl.obolibrary.org/obo/FOODON_00003305> ObjectSomeValuesFrom(<http://purl.obolibrary.org/obo/RO_0001000> <http://purl.obolibrary.org/obo/FOODON_02000118>))
 
-# Class: <http://purl.obolibrary.org/obo/FOODON_00004348> (raw)
-
-AnnotationAssertion(rdfs:label <http://purl.obolibrary.org/obo/FOODON_00004348> "raw"@en)
-
-# Class: <http://purl.obolibrary.org/obo/FOODON_00004469> (fresh frozen)
-
-AnnotationAssertion(rdfs:label <http://purl.obolibrary.org/obo/FOODON_00004469> "fresh frozen"@en)
-
 # Class: <http://purl.obolibrary.org/obo/FOODON_00004470> (beef primal cut)
 
 AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000115> <http://purl.obolibrary.org/obo/FOODON_00004470> "A cut of beef that is initially separated from the carcass of a{n} {organism} during butchering."@en)
