@@ -48364,7 +48364,7 @@ For example, A and B may be gene products and binding of B by A positively regul
                         <owl:someValuesFrom>
                             <owl:Class>
                                 <owl:intersectionOf rdf:parseType="Collection">
-                                    <rdf:Description rdf:about="http://purl.obolibrary.org/obo/CHEBI_28600)"/>
+                                    <rdf:Description rdf:about="http://purl.obolibrary.org/obo/CHEBI_28600"/>
                                     <owl:Restriction>
                                         <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/BFO_0000050"/>
                                         <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/BFO_0000040"/>
@@ -48383,7 +48383,7 @@ For example, A and B may be gene products and binding of B by A positively regul
                 <owl:someValuesFrom>
                     <owl:Class>
                         <owl:intersectionOf rdf:parseType="Collection">
-                            <rdf:Description rdf:about="http://purl.obolibrary.org/obo/CHEBI_28600)"/>
+                            <rdf:Description rdf:about="http://purl.obolibrary.org/obo/CHEBI_28600"/>
                             <owl:Restriction>
                                 <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/BFO_0000050"/>
                                 <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/BFO_0000040"/>
@@ -48412,7 +48412,7 @@ For example, A and B may be gene products and binding of B by A positively regul
                         <owl:someValuesFrom>
                             <owl:Class>
                                 <owl:intersectionOf rdf:parseType="Collection">
-                                    <rdf:Description rdf:about="http://purl.obolibrary.org/obo/CHEBI_28283)"/>
+                                    <rdf:Description rdf:about="http://purl.obolibrary.org/obo/CHEBI_28283"/>
                                     <owl:Restriction>
                                         <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/BFO_0000050"/>
                                         <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/BFO_0000040"/>
@@ -48431,7 +48431,7 @@ For example, A and B may be gene products and binding of B by A positively regul
                 <owl:someValuesFrom>
                     <owl:Class>
                         <owl:intersectionOf rdf:parseType="Collection">
-                            <rdf:Description rdf:about="http://purl.obolibrary.org/obo/CHEBI_28283)"/>
+                            <rdf:Description rdf:about="http://purl.obolibrary.org/obo/CHEBI_28283"/>
                             <owl:Restriction>
                                 <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/BFO_0000050"/>
                                 <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/BFO_0000040"/>
@@ -48460,7 +48460,7 @@ For example, A and B may be gene products and binding of B by A positively regul
                         <owl:someValuesFrom>
                             <owl:Class>
                                 <owl:intersectionOf rdf:parseType="Collection">
-                                    <rdf:Description rdf:about="http://purl.obolibrary.org/obo/CHEBI_4038)"/>
+                                    <rdf:Description rdf:about="http://purl.obolibrary.org/obo/CHEBI_4038"/>
                                     <owl:Restriction>
                                         <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/BFO_0000050"/>
                                         <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/BFO_0000040"/>
@@ -48479,7 +48479,7 @@ For example, A and B may be gene products and binding of B by A positively regul
                 <owl:someValuesFrom>
                     <owl:Class>
                         <owl:intersectionOf rdf:parseType="Collection">
-                            <rdf:Description rdf:about="http://purl.obolibrary.org/obo/CHEBI_4038)"/>
+                            <rdf:Description rdf:about="http://purl.obolibrary.org/obo/CHEBI_4038"/>
                             <owl:Restriction>
                                 <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/BFO_0000050"/>
                                 <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/BFO_0000040"/>
@@ -48508,7 +48508,7 @@ For example, A and B may be gene products and binding of B by A positively regul
                         <owl:someValuesFrom>
                             <owl:Class>
                                 <owl:intersectionOf rdf:parseType="Collection">
-                                    <rdf:Description rdf:about="http://purl.obolibrary.org/obo/CHEBI_5993)"/>
+                                    <rdf:Description rdf:about="http://purl.obolibrary.org/obo/CHEBI_5993"/>
                                     <owl:Restriction>
                                         <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/BFO_0000050"/>
                                         <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/BFO_0000040"/>
@@ -48527,7 +48527,7 @@ For example, A and B may be gene products and binding of B by A positively regul
                 <owl:someValuesFrom>
                     <owl:Class>
                         <owl:intersectionOf rdf:parseType="Collection">
-                            <rdf:Description rdf:about="http://purl.obolibrary.org/obo/CHEBI_5993)"/>
+                            <rdf:Description rdf:about="http://purl.obolibrary.org/obo/CHEBI_5993"/>
                             <owl:Restriction>
                                 <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/BFO_0000050"/>
                                 <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/BFO_0000040"/>
@@ -48604,7 +48604,7 @@ For example, A and B may be gene products and binding of B by A positively regul
                         <owl:someValuesFrom>
                             <owl:Class>
                                 <owl:intersectionOf rdf:parseType="Collection">
-                                    <rdf:Description rdf:about="http://purl.obolibrary.org/obo/CHEBI_6360)"/>
+                                    <rdf:Description rdf:about="http://purl.obolibrary.org/obo/CHEBI_6360"/>
                                     <owl:Restriction>
                                         <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/BFO_0000050"/>
                                         <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/BFO_0000040"/>
@@ -48623,7 +48623,7 @@ For example, A and B may be gene products and binding of B by A positively regul
                 <owl:someValuesFrom>
                     <owl:Class>
                         <owl:intersectionOf rdf:parseType="Collection">
-                            <rdf:Description rdf:about="http://purl.obolibrary.org/obo/CHEBI_6360)"/>
+                            <rdf:Description rdf:about="http://purl.obolibrary.org/obo/CHEBI_6360"/>
                             <owl:Restriction>
                                 <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/BFO_0000050"/>
                                 <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/BFO_0000040"/>
@@ -48652,7 +48652,7 @@ For example, A and B may be gene products and binding of B by A positively regul
                         <owl:someValuesFrom>
                             <owl:Class>
                                 <owl:intersectionOf rdf:parseType="Collection">
-                                    <rdf:Description rdf:about="http://purl.obolibrary.org/obo/CHEBI_6699)"/>
+                                    <rdf:Description rdf:about="http://purl.obolibrary.org/obo/CHEBI_6699"/>
                                     <owl:Restriction>
                                         <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/BFO_0000050"/>
                                         <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/BFO_0000040"/>
@@ -48671,7 +48671,7 @@ For example, A and B may be gene products and binding of B by A positively regul
                 <owl:someValuesFrom>
                     <owl:Class>
                         <owl:intersectionOf rdf:parseType="Collection">
-                            <rdf:Description rdf:about="http://purl.obolibrary.org/obo/CHEBI_6699)"/>
+                            <rdf:Description rdf:about="http://purl.obolibrary.org/obo/CHEBI_6699"/>
                             <owl:Restriction>
                                 <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/BFO_0000050"/>
                                 <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/BFO_0000040"/>
@@ -48700,7 +48700,7 @@ For example, A and B may be gene products and binding of B by A positively regul
                         <owl:someValuesFrom>
                             <owl:Class>
                                 <owl:intersectionOf rdf:parseType="Collection">
-                                    <rdf:Description rdf:about="http://purl.obolibrary.org/obo/CHEBI_7603)"/>
+                                    <rdf:Description rdf:about="http://purl.obolibrary.org/obo/CHEBI_7603"/>
                                     <owl:Restriction>
                                         <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/BFO_0000050"/>
                                         <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/BFO_0000040"/>
@@ -48719,7 +48719,7 @@ For example, A and B may be gene products and binding of B by A positively regul
                 <owl:someValuesFrom>
                     <owl:Class>
                         <owl:intersectionOf rdf:parseType="Collection">
-                            <rdf:Description rdf:about="http://purl.obolibrary.org/obo/CHEBI_7603)"/>
+                            <rdf:Description rdf:about="http://purl.obolibrary.org/obo/CHEBI_7603"/>
                             <owl:Restriction>
                                 <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/BFO_0000050"/>
                                 <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/BFO_0000040"/>
@@ -48796,7 +48796,7 @@ For example, A and B may be gene products and binding of B by A positively regul
                         <owl:someValuesFrom>
                             <owl:Class>
                                 <owl:intersectionOf rdf:parseType="Collection">
-                                    <rdf:Description rdf:about="http://purl.obolibrary.org/obo/CHEBI_90275)"/>
+                                    <rdf:Description rdf:about="http://purl.obolibrary.org/obo/CHEBI_90275"/>
                                     <owl:Restriction>
                                         <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/BFO_0000050"/>
                                         <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/BFO_0000040"/>
@@ -48815,7 +48815,7 @@ For example, A and B may be gene products and binding of B by A positively regul
                 <owl:someValuesFrom>
                     <owl:Class>
                         <owl:intersectionOf rdf:parseType="Collection">
-                            <rdf:Description rdf:about="http://purl.obolibrary.org/obo/CHEBI_90275)"/>
+                            <rdf:Description rdf:about="http://purl.obolibrary.org/obo/CHEBI_90275"/>
                             <owl:Restriction>
                                 <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/BFO_0000050"/>
                                 <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/BFO_0000040"/>
@@ -59230,6 +59230,15 @@ For example, A and B may be gene products and binding of B by A positively regul
     
 
 
+    <!-- http://purl.obolibrary.org/obo/CHEBI_28283 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/CHEBI_28283">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/CHEBI_26658"/>
+        <rdfs:label rdf:datatype="http://www.w3.org/XML/1998/namespacestring">capsidiol </rdfs:label>
+    </owl:Class>
+    
+
+
     <!-- http://purl.obolibrary.org/obo/CHEBI_28299 -->
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/CHEBI_28299">
@@ -59439,6 +59448,15 @@ For example, A and B may be gene products and binding of B by A positively regul
         <oboInOwl:id>CHEBI:28591</oboInOwl:id>
         <rdfs:label>guaiacol</rdfs:label>
         <rdfs:label rdf:datatype="http://www.w3.org/XML/1998/namespacestring">guaiacol</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/CHEBI_28600 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/CHEBI_28600">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/CHEBI_26658"/>
+        <rdfs:label rdf:datatype="http://www.w3.org/XML/1998/namespacestring">farnesol </rdfs:label>
     </owl:Class>
     
 
@@ -62164,6 +62182,15 @@ For example, A and B may be gene products and binding of B by A positively regul
     
 
 
+    <!-- http://purl.obolibrary.org/obo/CHEBI_4038 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/CHEBI_4038">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/CHEBI_26658"/>
+        <rdfs:label rdf:datatype="http://www.w3.org/XML/1998/namespacestring">Cynaropicrin </rdfs:label>
+    </owl:Class>
+    
+
+
     <!-- http://purl.obolibrary.org/obo/CHEBI_40968 -->
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/CHEBI_40968">
@@ -63366,6 +63393,15 @@ For example, A and B may be gene products and binding of B by A positively regul
     
 
 
+    <!-- http://purl.obolibrary.org/obo/CHEBI_5993 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/CHEBI_5993">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/CHEBI_26658"/>
+        <rdfs:label rdf:datatype="http://www.w3.org/XML/1998/namespacestring">Isocaryophyllene </rdfs:label>
+    </owl:Class>
+    
+
+
     <!-- http://purl.obolibrary.org/obo/CHEBI_59979 -->
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/CHEBI_59979">
@@ -63572,6 +63608,15 @@ For example, A and B may be gene products and binding of B by A positively regul
         <oboInOwl:id>CHEBI:6359</oboInOwl:id>
         <rdfs:label>lactulose</rdfs:label>
         <rdfs:label rdf:datatype="http://www.w3.org/XML/1998/namespacestring">lactulose</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/CHEBI_6360 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/CHEBI_6360">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/CHEBI_26658"/>
+        <rdfs:label rdf:datatype="http://www.w3.org/XML/1998/namespacestring">Lactupicrin </rdfs:label>
     </owl:Class>
     
 
@@ -63868,6 +63913,15 @@ For example, A and B may be gene products and binding of B by A positively regul
         <oboInOwl:id>CHEBI:6698</oboInOwl:id>
         <rdfs:label>(-)-matairesinol</rdfs:label>
         <rdfs:label rdf:datatype="http://www.w3.org/XML/1998/namespacestring">(-)-matairesinol</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/CHEBI_6699 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/CHEBI_6699">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/CHEBI_26658"/>
+        <rdfs:label rdf:datatype="http://www.w3.org/XML/1998/namespacestring">Matricin </rdfs:label>
     </owl:Class>
     
 
@@ -64706,6 +64760,15 @@ For example, A and B may be gene products and binding of B by A positively regul
     
 
 
+    <!-- http://purl.obolibrary.org/obo/CHEBI_7603 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/CHEBI_7603">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/CHEBI_26658"/>
+        <rdfs:label rdf:datatype="http://www.w3.org/XML/1998/namespacestring">Nobilin </rdfs:label>
+    </owl:Class>
+    
+
+
     <!-- http://purl.obolibrary.org/obo/CHEBI_7609 -->
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/CHEBI_7609">
@@ -65372,6 +65435,15 @@ For example, A and B may be gene products and binding of B by A positively regul
     
 
 
+    <!-- http://purl.obolibrary.org/obo/CHEBI_90275 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/CHEBI_90275">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/CHEBI_26658"/>
+        <rdfs:label rdf:datatype="http://www.w3.org/XML/1998/namespacestring">lactucopicrin </rdfs:label>
+    </owl:Class>
+    
+
+
     <!-- http://purl.obolibrary.org/obo/CHEBI_9045 -->
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/CHEBI_9045">
@@ -65733,78 +65805,6 @@ For example, A and B may be gene products and binding of B by A positively regul
     
 
 
-    <!-- http://purl.obolibrary.org/obo/CHEBI_28283) -->
-
-    <owl:Class rdf:about="http://purl.obolibrary.org/obo/CHEBI_28283)">
-        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/CHEBI_26658"/>
-        <rdfs:label rdf:datatype="http://www.w3.org/XML/1998/namespacestring">capsidiol </rdfs:label>
-    </owl:Class>
-    
-
-
-    <!-- http://purl.obolibrary.org/obo/CHEBI_28600) -->
-
-    <owl:Class rdf:about="http://purl.obolibrary.org/obo/CHEBI_28600)">
-        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/CHEBI_26658"/>
-        <rdfs:label rdf:datatype="http://www.w3.org/XML/1998/namespacestring">farnesol </rdfs:label>
-    </owl:Class>
-    
-
-
-    <!-- http://purl.obolibrary.org/obo/CHEBI_4038) -->
-
-    <owl:Class rdf:about="http://purl.obolibrary.org/obo/CHEBI_4038)">
-        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/CHEBI_26658"/>
-        <rdfs:label rdf:datatype="http://www.w3.org/XML/1998/namespacestring">Cynaropicrin </rdfs:label>
-    </owl:Class>
-    
-
-
-    <!-- http://purl.obolibrary.org/obo/CHEBI_5993) -->
-
-    <owl:Class rdf:about="http://purl.obolibrary.org/obo/CHEBI_5993)">
-        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/CHEBI_26658"/>
-        <rdfs:label rdf:datatype="http://www.w3.org/XML/1998/namespacestring">Isocaryophyllene </rdfs:label>
-    </owl:Class>
-    
-
-
-    <!-- http://purl.obolibrary.org/obo/CHEBI_6360) -->
-
-    <owl:Class rdf:about="http://purl.obolibrary.org/obo/CHEBI_6360)">
-        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/CHEBI_26658"/>
-        <rdfs:label rdf:datatype="http://www.w3.org/XML/1998/namespacestring">Lactupicrin </rdfs:label>
-    </owl:Class>
-    
-
-
-    <!-- http://purl.obolibrary.org/obo/CHEBI_6699) -->
-
-    <owl:Class rdf:about="http://purl.obolibrary.org/obo/CHEBI_6699)">
-        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/CHEBI_26658"/>
-        <rdfs:label rdf:datatype="http://www.w3.org/XML/1998/namespacestring">Matricin </rdfs:label>
-    </owl:Class>
-    
-
-
-    <!-- http://purl.obolibrary.org/obo/CHEBI_7603) -->
-
-    <owl:Class rdf:about="http://purl.obolibrary.org/obo/CHEBI_7603)">
-        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/CHEBI_26658"/>
-        <rdfs:label rdf:datatype="http://www.w3.org/XML/1998/namespacestring">Nobilin </rdfs:label>
-    </owl:Class>
-    
-
-
-    <!-- http://purl.obolibrary.org/obo/CHEBI_90275) -->
-
-    <owl:Class rdf:about="http://purl.obolibrary.org/obo/CHEBI_90275)">
-        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/CHEBI_26658"/>
-        <rdfs:label rdf:datatype="http://www.w3.org/XML/1998/namespacestring">lactucopicrin </rdfs:label>
-    </owl:Class>
-    
-
-
     <!-- 
     ///////////////////////////////////////////////////////////////////////////////////////
     //
@@ -65822,5 +65822,5 @@ For example, A and B may be gene products and binding of B by A positively regul
 
 
 
-<!-- Generated by the OWL API (version 4.5.26.2023-07-17T20:34:13Z) https://github.com/owlcs/owlapi -->
+<!-- Generated by the OWL API (version 4.5.25.2023-02-15T19:15:49Z) https://github.com/owlcs/owlapi -->
 

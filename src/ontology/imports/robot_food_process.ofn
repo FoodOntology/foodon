@@ -239,8 +239,6 @@ SubClassOf(<http://purl.obolibrary.org/obo/FOODON_00004712> <http://purl.obolibr
 
 # Class: <http://purl.obolibrary.org/obo/FOODON_00004713> (cricket food product)
 
-AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000115> <http://purl.obolibrary.org/obo/FOODON_00004713> "A food product that has crickets as a defining ingredient."@en)
-AnnotationAssertion(rdfs:label <http://purl.obolibrary.org/obo/FOODON_00004713> "cricket food product"@en)
 SubClassOf(<http://purl.obolibrary.org/obo/FOODON_00004713> <http://purl.obolibrary.org/obo/FOODON_00001177>)
 
 # Class: <http://purl.obolibrary.org/obo/FOODON_03000280> (soybean meal (defatted))
