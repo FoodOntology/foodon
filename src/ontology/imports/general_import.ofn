@@ -81,7 +81,6 @@ Declaration(Class(obo:ENVO_00000027))
 Declaration(Class(obo:ENVO_00000029))
 Declaration(Class(obo:ENVO_00000033))
 Declaration(Class(obo:ENVO_00000043))
-Declaration(Class(obo:ENVO_00000062))
 Declaration(Class(obo:ENVO_00000063))
 Declaration(Class(obo:ENVO_00000070))
 Declaration(Class(obo:ENVO_00000073))
@@ -177,6 +176,7 @@ Declaration(Class(obo:ENVO_01000252))
 Declaration(Class(obo:ENVO_01000253))
 Declaration(Class(obo:ENVO_01000254))
 Declaration(Class(obo:ENVO_01000277))
+Declaration(Class(obo:ENVO_01000313))
 Declaration(Class(obo:ENVO_01000320))
 Declaration(Class(obo:ENVO_01000352))
 Declaration(Class(obo:ENVO_01000404))
@@ -204,6 +204,10 @@ Declaration(Class(obo:ENVO_01000928))
 Declaration(Class(obo:ENVO_01000934))
 Declaration(Class(obo:ENVO_01000989))
 Declaration(Class(obo:ENVO_01000990))
+Declaration(Class(obo:ENVO_01000997))
+Declaration(Class(obo:ENVO_01001000))
+Declaration(Class(obo:ENVO_01001002))
+Declaration(Class(obo:ENVO_01001055))
 Declaration(Class(obo:ENVO_01001069))
 Declaration(Class(obo:ENVO_01001110))
 Declaration(Class(obo:ENVO_01001116))
@@ -217,8 +221,8 @@ Declaration(Class(obo:ENVO_01001222))
 Declaration(Class(obo:ENVO_01001243))
 Declaration(Class(obo:ENVO_01001244))
 Declaration(Class(obo:ENVO_01001305))
-Declaration(Class(obo:ENVO_01001308))
 Declaration(Class(obo:ENVO_01001319))
+Declaration(Class(obo:ENVO_01001370))
 Declaration(Class(obo:ENVO_01001476))
 Declaration(Class(obo:ENVO_01001477))
 Declaration(Class(obo:ENVO_01001479))
@@ -229,6 +233,8 @@ Declaration(Class(obo:ENVO_01001788))
 Declaration(Class(obo:ENVO_01001789))
 Declaration(Class(obo:ENVO_01001790))
 Declaration(Class(obo:ENVO_01001813))
+Declaration(Class(obo:ENVO_01001828))
+Declaration(Class(obo:ENVO_01001829))
 Declaration(Class(obo:ENVO_01001873))
 Declaration(Class(obo:ENVO_01001884))
 Declaration(Class(obo:ENVO_01001886))
@@ -1067,7 +1073,10 @@ Declaration(Class(obo:PO_0009085))
 Declaration(Class(obo:PO_0009086))
 Declaration(Class(obo:PO_0009087))
 Declaration(Class(obo:PO_0009089))
+Declaration(Class(obo:PO_0009090))
+Declaration(Class(obo:PO_0019022))
 Declaration(Class(obo:PO_0020003))
+Declaration(Class(obo:PO_0020006))
 Declaration(Class(obo:PO_0020030))
 Declaration(Class(obo:PO_0020031))
 Declaration(Class(obo:PO_0020038))
@@ -1638,13 +1647,13 @@ AnnotationAssertion(rdfs:label obo:IAO_0000114 "has curation status"@en)
 # Annotation Property: obo:IAO_0000115 (definition)
 
 AnnotationAssertion(obo:IAO_0000114 obo:IAO_0000115 obo:IAO_0000122)
+AnnotationAssertion(obo:IAO_0000115 obo:IAO_0000115 "A property representing the English language definitions of what NCI means by the concept. They may also include information about the definition's source and attribution in a form that can easily be interpreted by software.")
 AnnotationAssertion(obo:IAO_0000115 obo:IAO_0000115 "The official OBI definition, explaining the meaning of a class or property. Shall be Aristotelian, formalized and normalized. Can be augmented with colloquial definitions."@en)
 AnnotationAssertion(obo:IAO_0000115 obo:IAO_0000115 "The official definition, explaining the meaning of a class or property. Shall be Aristotelian, formalized and normalized. Can be augmented with colloquial definitions."@en)
-AnnotationAssertion(obo:IAO_0000115 obo:IAO_0000115 "A property representing the English language definitions of what NCI means by the concept. They may also include information about the definition's source and attribution in a form that can easily be interpreted by software.")
 AnnotationAssertion(obo:IAO_0000119 obo:IAO_0000115 "GROUP:OBI:<http://purl.obolibrary.org/obo/obi>"@en)
+AnnotationAssertion(rdfs:label obo:IAO_0000115 "definition")
 AnnotationAssertion(rdfs:label obo:IAO_0000115 "definition"@en)
 AnnotationAssertion(rdfs:label obo:IAO_0000115 "textual definition")
-AnnotationAssertion(rdfs:label obo:IAO_0000115 "definition")
 
 # Annotation Property: obo:IAO_0000118 (alternative_term)
 
@@ -1662,9 +1671,9 @@ AnnotationAssertion(rdfs:label obo:IAO_0000118 "alternative_term")
 AnnotationAssertion(obo:IAO_0000114 obo:IAO_0000119 obo:IAO_0000122)
 AnnotationAssertion(obo:IAO_0000115 obo:IAO_0000119 "Formal citation, e.g. identifier in external database to indicate / attribute source(s) for the definition. Free text indicate / attribute source(s) for the definition. EXAMPLE: Author Name, URI, MeSH Term C04, PUBMED ID, Wiki uri on 31.01.2007"@en)
 AnnotationAssertion(obo:IAO_0000115 obo:IAO_0000119 "formal citation, e.g. identifier in external database to indicate / attribute source(s) for the definition. Free text indicate / attribute source(s) for the definition. EXAMPLE: Author Name, URI, MeSH Term C04, PUBMED ID, Wiki uri on 31.01.2007"@en)
+AnnotationAssertion(obo:IAO_0000119 obo:IAO_0000119 "Discussion on obo-discuss mailing-list, see http://bit.ly/hgm99w")
 AnnotationAssertion(obo:IAO_0000119 obo:IAO_0000119 "Discussion on obo-discuss mailing-list, see http://bit.ly/hgm99w"@en)
 AnnotationAssertion(obo:IAO_0000119 obo:IAO_0000119 "GROUP:OBI:<http://purl.obolibrary.org/obo/obi>"@en)
-AnnotationAssertion(obo:IAO_0000119 obo:IAO_0000119 "Discussion on obo-discuss mailing-list, see http://bit.ly/hgm99w")
 AnnotationAssertion(rdfs:label obo:IAO_0000119 "definition source")
 AnnotationAssertion(rdfs:label obo:IAO_0000119 "definition source"@en)
 AnnotationAssertion(rdfs:label obo:IAO_0000119 "definition_source")
@@ -1686,8 +1695,8 @@ AnnotationAssertion(rdfs:label obo:IAO_0000412 "imported from"@en)
 AnnotationAssertion(obo:IAO_0000114 obo:IAO_0100001 obo:IAO_0000125)
 AnnotationAssertion(obo:IAO_0000115 obo:IAO_0100001 "Use on obsolete terms, relating the term to another term that can be used as a substitute"@en)
 AnnotationAssertion(obo:IAO_0000119 obo:IAO_0100001 "Person:Alan Ruttenberg"@en)
-AnnotationAssertion(rdfs:label obo:IAO_0100001 "term replaced by"@en)
 AnnotationAssertion(rdfs:label obo:IAO_0100001 "term replaced by")
+AnnotationAssertion(rdfs:label obo:IAO_0100001 "term replaced by"@en)
 
 # Annotation Property: obo:OBI_0001886 (NIAID GSCID-BRC alternative term)
 
@@ -1760,16 +1769,18 @@ AnnotationAssertion(rdfs:label rdfs:label "label")
 AnnotationAssertion(obo:IAO_0000115 obo:BFO_0000050 "a core relation that holds between a part and its whole"@en)
 AnnotationAssertion(obo:IAO_0000118 obo:BFO_0000050 "part_of"@en)
 AnnotationAssertion(obo:IAO_0000412 obo:BFO_0000050 obo:ro.owl)
+AnnotationAssertion(rdfs:label obo:BFO_0000050 "part of")
 AnnotationAssertion(rdfs:label obo:BFO_0000050 "part of"@en)
 AnnotationAssertion(rdfs:label obo:BFO_0000050 "part_of")
 TransitiveObjectProperty(obo:BFO_0000050)
 
-# Object Property: obo:BFO_0000051 (has_part)
+# Object Property: obo:BFO_0000051 (has part)
 
 AnnotationAssertion(obo:IAO_0000115 obo:BFO_0000051 "a core relation that holds between a whole and its part"@en)
 AnnotationAssertion(obo:IAO_0000118 obo:BFO_0000051 "has_part"@en)
 AnnotationAssertion(obo:IAO_0000412 obo:BFO_0000051 obo:obi.owl)
 AnnotationAssertion(obo:IAO_0000412 obo:BFO_0000051 obo:ro.owl)
+AnnotationAssertion(rdfs:label obo:BFO_0000051 "has part")
 AnnotationAssertion(rdfs:label obo:BFO_0000051 "has part"@en)
 AnnotationAssertion(rdfs:label obo:BFO_0000051 "has_part")
 TransitiveObjectProperty(obo:BFO_0000051)
@@ -1786,7 +1797,7 @@ AnnotationAssertion(rdfs:label obo:BFO_0000054 "realized in"@en)
 AnnotationAssertion(obo:IAO_0000412 obo:BFO_0000055 obo:ro.owl)
 AnnotationAssertion(rdfs:label obo:BFO_0000055 "realizes"@en)
 
-# Object Property: obo:BFO_0000062 (preceded_by)
+# Object Property: obo:BFO_0000062 (preceded by)
 
 AnnotationAssertion(rdfs:label obo:BFO_0000062 "preceded by"@en)
 AnnotationAssertion(rdfs:label obo:BFO_0000062 "preceded_by")
@@ -1852,7 +1863,7 @@ AnnotationAssertion(obo:IAO_0000412 obo:OBI_0001927 obo:obi.owl)
 AnnotationAssertion(rdfs:label obo:OBI_0001927 "specifies value of")
 SubObjectPropertyOf(obo:OBI_0001927 obo:IAO_0000136)
 
-# Object Property: obo:RO_0000052 (characteristic of)
+# Object Property: obo:RO_0000052 (inheres in)
 
 AnnotationAssertion(obo:IAO_0000115 obo:RO_0000052 "a relation between a specifically dependent continuant (the characteristic) and any other entity (the bearer), in which the characteristic depends on the bearer for its existence."@en)
 AnnotationAssertion(obo:IAO_0000118 obo:RO_0000052 "inheres_in"@en)
@@ -1860,16 +1871,17 @@ AnnotationAssertion(obo:IAO_0000412 obo:RO_0000052 obo:ro.owl)
 AnnotationAssertion(rdfs:label obo:RO_0000052 "characteristic of"@en)
 FunctionalObjectProperty(obo:RO_0000052)
 
-# Object Property: obo:RO_0000053 (has characteristic)
+# Object Property: obo:RO_0000053 (bearer of)
 
 AnnotationAssertion(obo:IAO_0000115 obo:RO_0000053 "Inverse of characteristic_of"@en)
 AnnotationAssertion(obo:IAO_0000118 obo:RO_0000053 "bearer_of"@en)
 AnnotationAssertion(obo:IAO_0000118 obo:RO_0000053 "is bearer of"@en)
 AnnotationAssertion(obo:IAO_0000412 obo:RO_0000053 obo:ro.owl)
+AnnotationAssertion(rdfs:label obo:RO_0000053 "has characteristic")
 AnnotationAssertion(rdfs:label obo:RO_0000053 "has characteristic"@en)
 InverseFunctionalObjectProperty(obo:RO_0000053)
 
-# Object Property: obo:RO_0000056 (participates_in)
+# Object Property: obo:RO_0000056 (participates in)
 
 AnnotationAssertion(obo:IAO_0000115 obo:RO_0000056 "a relation between a continuant and a process, in which the continuant is somehow involved in the process"@en)
 AnnotationAssertion(obo:IAO_0000118 obo:RO_0000056 "participates_in"@en)
@@ -1878,7 +1890,7 @@ AnnotationAssertion(obo:IAO_0000412 obo:RO_0000056 obo:ro.owl)
 AnnotationAssertion(rdfs:label obo:RO_0000056 "participates in"@en)
 AnnotationAssertion(rdfs:label obo:RO_0000056 "participates_in")
 
-# Object Property: obo:RO_0000057 (has_participant)
+# Object Property: obo:RO_0000057 (has participant)
 
 AnnotationAssertion(obo:IAO_0000115 obo:RO_0000057 "a relation between a process and a continuant, in which the continuant is somehow involved in the process"@en)
 AnnotationAssertion(obo:IAO_0000118 obo:RO_0000057 "has_participant"@en)
@@ -1984,7 +1996,7 @@ AnnotationAssertion(rdfs:label obo:RO_0001025 "located in"@en)
 AnnotationAssertion(rdfs:label obo:RO_0001025 "located_in")
 TransitiveObjectProperty(obo:RO_0001025)
 
-# Object Property: obo:RO_0002160 (only_in_taxon)
+# Object Property: obo:RO_0002160 (only in taxon)
 
 AnnotationAssertion(rdfs:label obo:RO_0002160 "only in taxon")
 AnnotationAssertion(rdfs:label obo:RO_0002160 "only_in_taxon")
@@ -2242,10 +2254,10 @@ SubClassOf(obo:APOLLO_SV_00000796 obo:OBI_0000011)
 
 # Class: obo:BFO_0000015 (process)
 
-AnnotationAssertion(obo:IAO_0000115 obo:BFO_0000015 "An occurrent that has temporal proper parts and for some time t, p s-depends_on some material entity at t."@en)
-AnnotationAssertion(obo:IAO_0000115 obo:BFO_0000015 "p is a process = Def. p is an occurrent that has temporal proper parts and for some time t, p s-depends_on some material entity at t. (axiom label in BFO2 Reference: [083-003])"@en)
 AnnotationAssertion(obo:IAO_0000115 obo:BFO_0000015 "An occurrent that has temporal proper parts and for some time t, p s-depends_on some material entity at t.")
+AnnotationAssertion(obo:IAO_0000115 obo:BFO_0000015 "An occurrent that has temporal proper parts and for some time t, p s-depends_on some material entity at t."@en)
 AnnotationAssertion(obo:IAO_0000115 obo:BFO_0000015 "p is a process = Def. p is an occurrent that has temporal proper parts and for some time t, p s-depends_on some material entity at t. (axiom label in BFO2 Reference: [083-003])")
+AnnotationAssertion(obo:IAO_0000115 obo:BFO_0000015 "p is a process = Def. p is an occurrent that has temporal proper parts and for some time t, p s-depends_on some material entity at t. (axiom label in BFO2 Reference: [083-003])"@en)
 AnnotationAssertion(obo:IAO_0000412 obo:BFO_0000015 obo:agro.owl)
 AnnotationAssertion(obo:IAO_0000412 obo:BFO_0000015 obo:ecocore.owl)
 AnnotationAssertion(obo:IAO_0000412 obo:BFO_0000015 obo:envo.owl)
@@ -2261,27 +2273,27 @@ AnnotationAssertion(obo:IAO_0000412 obo:BFO_0000016 obo:envo.owl)
 AnnotationAssertion(rdfs:label obo:BFO_0000016 "disposition"@en)
 SubClassOf(obo:BFO_0000016 obo:BFO_0000017)
 
-# Class: obo:BFO_0000017 (realizable entity)
+# Class: obo:BFO_0000017 (realizable)
 
 AnnotationAssertion(obo:IAO_0000115 obo:BFO_0000017 "A specifically dependent continuant  that inheres in continuant  entities and are not exhibited in full at every time in which it inheres in an entity or group of entities. The exhibition or actualization of a realizable entity is a particular manifestation, functioning or process that occurs under certain circumstances."@en)
 AnnotationAssertion(obo:IAO_0000412 obo:BFO_0000017 obo:envo.owl)
 AnnotationAssertion(rdfs:label obo:BFO_0000017 "realizable entity"@en)
 SubClassOf(obo:BFO_0000017 obo:BFO_0000020)
 
-# Class: obo:BFO_0000020 (specifically dependent continuant)
+# Class: obo:BFO_0000020 (characteristic)
 
-AnnotationAssertion(obo:IAO_0000115 obo:BFO_0000020 "A continuant that inheres in or is borne by other entities. Every instance of A requires some specific instance of B which must always be the same."@en)
-AnnotationAssertion(obo:IAO_0000115 obo:BFO_0000020 "b is a relational specifically dependent continuant = Def. b is a specifically dependent continuant and there are n &gt; 1 independent continuants c1, … cn which are not spatial regions are such that for all 1  i &lt; j  n, ci  and cj share no common parts, are such that for each 1  i  n, b s-depends_on ci at every time t during the course of b’s existence (axiom label in BFO2 Reference: [131-004])"@en)
-AnnotationAssertion(obo:IAO_0000115 obo:BFO_0000020 "b is a specifically dependent continuant = Def. b is a continuant & there is some independent continuant c which is not a spatial region and which is such that b s-depends_on c at every time t during the course of b’s existence. (axiom label in BFO2 Reference: [050-003])"@en)
 AnnotationAssertion(obo:IAO_0000115 obo:BFO_0000020 "A continuant that inheres in or is borne by other entities. Every instance of A requires some specific instance of B which must always be the same.")
+AnnotationAssertion(obo:IAO_0000115 obo:BFO_0000020 "A continuant that inheres in or is borne by other entities. Every instance of A requires some specific instance of B which must always be the same."@en)
 AnnotationAssertion(obo:IAO_0000115 obo:BFO_0000020 "b is a relational specifically dependent continuant = Def. b is a specifically dependent continuant and there are n &gt; 1 independent continuants c1, … cn which are not spatial regions are such that for all 1  i &lt; j  n, ci  and cj share no common parts, are such that for each 1  i  n, b s-depends_on ci at every time t during the course of b’s existence (axiom label in BFO2 Reference: [131-004])")
+AnnotationAssertion(obo:IAO_0000115 obo:BFO_0000020 "b is a relational specifically dependent continuant = Def. b is a specifically dependent continuant and there are n &gt; 1 independent continuants c1, … cn which are not spatial regions are such that for all 1  i &lt; j  n, ci  and cj share no common parts, are such that for each 1  i  n, b s-depends_on ci at every time t during the course of b’s existence (axiom label in BFO2 Reference: [131-004])"@en)
 AnnotationAssertion(obo:IAO_0000115 obo:BFO_0000020 "b is a specifically dependent continuant = Def. b is a continuant & there is some independent continuant c which is not a spatial region and which is such that b s-depends_on c at every time t during the course of b’s existence. (axiom label in BFO2 Reference: [050-003])")
+AnnotationAssertion(obo:IAO_0000115 obo:BFO_0000020 "b is a specifically dependent continuant = Def. b is a continuant & there is some independent continuant c which is not a spatial region and which is such that b s-depends_on c at every time t during the course of b’s existence. (axiom label in BFO2 Reference: [050-003])"@en)
 AnnotationAssertion(obo:IAO_0000412 obo:BFO_0000020 obo:agro.owl)
 AnnotationAssertion(obo:IAO_0000412 obo:BFO_0000020 obo:envo.owl)
 AnnotationAssertion(obo:IAO_0000412 obo:BFO_0000020 obo:obi.owl)
 AnnotationAssertion(obo:IAO_0000412 obo:BFO_0000020 obo:uberon.owl)
-AnnotationAssertion(rdfs:label obo:BFO_0000020 "specifically dependent continuant"@en)
 AnnotationAssertion(rdfs:label obo:BFO_0000020 "specifically dependent continuant")
+AnnotationAssertion(rdfs:label obo:BFO_0000020 "specifically dependent continuant"@en)
 
 # Class: obo:BFO_0000024 (fiat object part)
 
@@ -2293,14 +2305,13 @@ SubClassOf(obo:BFO_0000024 obo:BFO_0000040)
 # Class: obo:BFO_0000029 (site)
 
 AnnotationAssertion(obo:IAO_0000412 obo:BFO_0000029 obo:agro.owl)
-AnnotationAssertion(obo:IAO_0000412 obo:BFO_0000029 obo:envo.owl)
 AnnotationAssertion(rdfs:label obo:BFO_0000029 "site"@en)
 SubClassOf(obo:BFO_0000029 obo:BFO_0000141)
 
 # Class: obo:BFO_0000040 (material entity)
 
-AnnotationAssertion(obo:IAO_0000115 obo:BFO_0000040 "An independent continuant that is spatially extended whose identity is independent of that of other entities and can be maintained through time."@en)
 AnnotationAssertion(obo:IAO_0000115 obo:BFO_0000040 "An independent continuant that is spatially extended whose identity is independent of that of other entities and can be maintained through time.")
+AnnotationAssertion(obo:IAO_0000115 obo:BFO_0000040 "An independent continuant that is spatially extended whose identity is independent of that of other entities and can be maintained through time."@en)
 AnnotationAssertion(obo:IAO_0000412 obo:BFO_0000040 obo:agro.owl)
 AnnotationAssertion(obo:IAO_0000412 obo:BFO_0000040 obo:dron.owl)
 AnnotationAssertion(obo:IAO_0000412 obo:BFO_0000040 obo:envo.owl)
@@ -2713,13 +2724,6 @@ AnnotationAssertion(obo:IAO_0000412 obo:ENVO_00000043 obo:envo.owl)
 AnnotationAssertion(rdfs:label obo:ENVO_00000043 "wetland area")
 SubClassOf(obo:ENVO_00000043 obo:ENVO_01001305)
 
-# Class: obo:ENVO_00000062 (populated place)
-
-AnnotationAssertion(obo:IAO_0000115 obo:ENVO_00000062 "Place or area with clustered or scattered buildings and a permanent human population.")
-AnnotationAssertion(obo:IAO_0000412 obo:ENVO_00000062 obo:envo.owl)
-AnnotationAssertion(rdfs:label obo:ENVO_00000062 "populated place")
-SubClassOf(obo:ENVO_00000062 obo:ENVO_01000408)
-
 # Class: obo:ENVO_00000063 (water body)
 
 AnnotationAssertion(obo:IAO_0000115 obo:ENVO_00000063 "An accumulation of water of varying size.")
@@ -2732,6 +2736,7 @@ SubClassOf(obo:ENVO_00000063 obo:ENVO_01000685)
 AnnotationAssertion(obo:IAO_0000115 obo:ENVO_00000070 "A construction that has been assembled by deliberate human effort.")
 AnnotationAssertion(obo:IAO_0000412 obo:ENVO_00000070 obo:envo.owl)
 AnnotationAssertion(rdfs:label obo:ENVO_00000070 "human construction")
+SubClassOf(obo:ENVO_00000070 obo:ENVO_01000813)
 SubClassOf(obo:ENVO_00000070 obo:ENVO_01001813)
 
 # Class: obo:ENVO_00000073 (building)
@@ -2745,7 +2750,7 @@ SubClassOf(obo:ENVO_00000073 obo:ENVO_00000070)
 
 AnnotationAssertion(obo:IAO_0000412 obo:ENVO_00000077 obo:envo.owl)
 AnnotationAssertion(rdfs:label obo:ENVO_00000077 "agricultural ecosystem")
-SubClassOf(obo:ENVO_00000077 obo:ENVO_01001110)
+SubClassOf(obo:ENVO_00000077 obo:ENVO_01001828)
 
 # Class: obo:ENVO_00000078 (farm)
 
@@ -2816,10 +2821,11 @@ AnnotationAssertion(obo:IAO_0000115 obo:ENVO_00000117 "An intentional planting o
 AnnotationAssertion(obo:IAO_0000412 obo:ENVO_00000117 obo:envo.owl)
 AnnotationAssertion(rdfs:label obo:ENVO_00000117 "plantation")
 SubClassOf(obo:ENVO_00000117 obo:ENVO_00000078)
+SubClassOf(obo:ENVO_00000117 obo:ENVO_01000813)
 
 # Class: obo:ENVO_00000191 (solid astronomical body part)
 
-AnnotationAssertion(obo:IAO_0000115 obo:ENVO_00000191 "A part of an astronomical body which is primarily composed of a continuous volume of solid material, shaped by one or more environmental processes.")
+AnnotationAssertion(obo:IAO_0000115 obo:ENVO_00000191 "A part of an astronomical body which is primarily composed of solid material."@en)
 AnnotationAssertion(obo:IAO_0000412 obo:ENVO_00000191 obo:envo.owl)
 AnnotationAssertion(rdfs:label obo:ENVO_00000191 "solid astronomical body part")
 SubClassOf(obo:ENVO_00000191 obo:ENVO_01001784)
@@ -2862,9 +2868,10 @@ SubClassOf(obo:ENVO_00000300 obo:ENVO_01001305)
 
 # Class: obo:ENVO_00000428 (biome)
 
-AnnotationAssertion(obo:IAO_0000115 obo:ENVO_00000428 "A biome is an ecosystem to which resident ecological communities have evolved adaptations.")
+AnnotationAssertion(obo:IAO_0000115 obo:ENVO_00000428 "A biome is an ecosystem which is undergoing climactic ecological succession."@en)
 AnnotationAssertion(obo:IAO_0000412 obo:ENVO_00000428 obo:envo.owl)
 AnnotationAssertion(rdfs:label obo:ENVO_00000428 "biome")
+SubClassOf(obo:ENVO_00000428 obo:ENVO_01000813)
 SubClassOf(obo:ENVO_00000428 obo:ENVO_01001110)
 
 # Class: obo:ENVO_00000446 (terrestrial biome)
@@ -2873,6 +2880,7 @@ AnnotationAssertion(obo:IAO_0000115 obo:ENVO_00000446 "A biome which is  primari
 AnnotationAssertion(obo:IAO_0000412 obo:ENVO_00000446 obo:envo.owl)
 AnnotationAssertion(rdfs:label obo:ENVO_00000446 "terrestrial biome")
 SubClassOf(obo:ENVO_00000446 obo:ENVO_00000428)
+SubClassOf(obo:ENVO_00000446 obo:ENVO_01001790)
 
 # Class: obo:ENVO_00000447 (marine biome)
 
@@ -2918,14 +2926,14 @@ AnnotationAssertion(obo:IAO_0000115 obo:ENVO_00001998 "An environmental material
 AnnotationAssertion(obo:IAO_0000412 obo:ENVO_00001998 obo:envo.owl)
 AnnotationAssertion(rdfs:label obo:ENVO_00001998 "soil")
 SubClassOf(obo:ENVO_00001998 obo:ENVO_00010483)
+SubClassOf(obo:ENVO_00001998 obo:ENVO_01000813)
 
 # Class: obo:ENVO_00001999 (marine water body)
 
-AnnotationAssertion(obo:IAO_0000115 obo:ENVO_00001999 "A significant accumulation of water which is part of a marine biome.")
+AnnotationAssertion(obo:IAO_0000115 obo:ENVO_00001999 "A lentic water body which is composed primarily of marine water."@en)
 AnnotationAssertion(obo:IAO_0000412 obo:ENVO_00001999 obo:envo.owl)
 AnnotationAssertion(rdfs:label obo:ENVO_00001999 "marine water body")
 SubClassOf(obo:ENVO_00001999 obo:ENVO_01000617)
-SubClassOf(obo:ENVO_00001999 obo:ENVO_01001308)
 
 # Class: obo:ENVO_00002000 (slope)
 
@@ -2997,6 +3005,7 @@ SubClassOf(obo:ENVO_00002149 obo:ENVO_00002010)
 AnnotationAssertion(obo:IAO_0000412 obo:ENVO_00002158 obo:envo.owl)
 AnnotationAssertion(rdfs:label obo:ENVO_00002158 "ditch water")
 SubClassOf(obo:ENVO_00002158 obo:ENVO_00002011)
+SubClassOf(obo:ENVO_00002158 obo:ENVO_01000813)
 
 # Class: obo:ENVO_00002186 (contaminated water)
 
@@ -3030,6 +3039,7 @@ SubClassOf(obo:ENVO_00002222 obo:ENVO_00002221)
 AnnotationAssertion(obo:IAO_0000412 obo:ENVO_00002228 obo:envo.owl)
 AnnotationAssertion(rdfs:label obo:ENVO_00002228 "pond water")
 SubClassOf(obo:ENVO_00002228 obo:ENVO_00002011)
+SubClassOf(obo:ENVO_00002228 obo:ENVO_01000813)
 
 # Class: obo:ENVO_00002258 (loam)
 
@@ -3221,10 +3231,10 @@ SubClassOf(obo:ENVO_00005749 obo:ENVO_00001998)
 
 # Class: obo:ENVO_00010483 (environmental material)
 
-AnnotationAssertion(obo:IAO_0000115 obo:ENVO_00010483 "A portion of environmental material is a fiat object part which forms the medium or part of the medium of an environmental system.")
+AnnotationAssertion(obo:IAO_0000115 obo:ENVO_00010483 "A material entity which other material entities in an environmental system are primarily or partially composed of."@en)
 AnnotationAssertion(obo:IAO_0000412 obo:ENVO_00010483 obo:envo.owl)
 AnnotationAssertion(rdfs:label obo:ENVO_00010483 "environmental material")
-SubClassOf(obo:ENVO_00010483 obo:BFO_0000024)
+SubClassOf(obo:ENVO_00010483 obo:BFO_0000040)
 
 # Class: obo:ENVO_0010001 (anthropogenic environmental material)
 
@@ -3283,9 +3293,10 @@ SubClassOf(obo:ENVO_01000155 obo:ENVO_00010483)
 
 # Class: obo:ENVO_01000174 (forest biome)
 
-AnnotationAssertion(obo:IAO_0000115 obo:ENVO_01000174 "A forest ecosystem in which dominant ecological communities have reached their climax successional state.")
+AnnotationAssertion(obo:IAO_0000115 obo:ENVO_01000174 "A forest ecosystem which is undergoing climactic ecological succession."@en)
 AnnotationAssertion(obo:IAO_0000412 obo:ENVO_01000174 obo:envo.owl)
 AnnotationAssertion(rdfs:label obo:ENVO_01000174 "forest biome")
+SubClassOf(obo:ENVO_01000174 obo:ENVO_00000446)
 SubClassOf(obo:ENVO_01000174 obo:ENVO_01001243)
 
 # Class: obo:ENVO_01000175 (woodland biome)
@@ -3307,21 +3318,24 @@ SubClassOf(obo:ENVO_01000176 obo:ENVO_00000446)
 AnnotationAssertion(obo:IAO_0000115 obo:ENVO_01000177 "A grassland ecosystem in which dominant ecological communities have reached their climax successional state.")
 AnnotationAssertion(obo:IAO_0000412 obo:ENVO_01000177 obo:envo.owl)
 AnnotationAssertion(rdfs:label obo:ENVO_01000177 "grassland biome")
+SubClassOf(obo:ENVO_01000177 obo:ENVO_00000446)
 SubClassOf(obo:ENVO_01000177 obo:ENVO_01001206)
 
 # Class: obo:ENVO_01000179 (desert biome)
 
-AnnotationAssertion(obo:IAO_0000115 obo:ENVO_01000179 "A desert biome is a terrestrial biome which loses more liquid water by evapotranspiration than is supplied by precipitation and includes communities adapted to these conditions.")
+AnnotationAssertion(obo:IAO_0000115 obo:ENVO_01000179 "A desert ecosystem which is undergoing climactic ecological succession."@en)
 AnnotationAssertion(obo:IAO_0000412 obo:ENVO_01000179 obo:envo.owl)
 AnnotationAssertion(rdfs:label obo:ENVO_01000179 "desert biome")
+SubClassOf(obo:ENVO_01000179 obo:ENVO_00000428)
 SubClassOf(obo:ENVO_01000179 obo:ENVO_01001780)
 
 # Class: obo:ENVO_01000180 (tundra biome)
 
-AnnotationAssertion(obo:IAO_0000115 obo:ENVO_01000180 "A terrestrial biome which comprises a tundra ecosystem that has reached its climax community.")
+AnnotationAssertion(obo:IAO_0000115 obo:ENVO_01000180 "A tundra ecosystem which is undergoing climactic ecological succession."@en)
 AnnotationAssertion(obo:IAO_0000412 obo:ENVO_01000180 obo:envo.owl)
 AnnotationAssertion(rdfs:label obo:ENVO_01000180 "tundra biome")
 SubClassOf(obo:ENVO_01000180 obo:ENVO_00000446)
+SubClassOf(obo:ENVO_01000180 obo:ENVO_01001370)
 
 # Class: obo:ENVO_01000181 (mangrove biome)
 
@@ -3336,12 +3350,14 @@ AnnotationAssertion(obo:IAO_0000115 obo:ENVO_01000219 "An anthropogenic terrestr
 AnnotationAssertion(obo:IAO_0000412 obo:ENVO_01000219 obo:envo.owl)
 AnnotationAssertion(rdfs:label obo:ENVO_01000219 "anthropogenic terrestrial biome")
 SubClassOf(obo:ENVO_01000219 obo:ENVO_00000446)
+SubClassOf(obo:ENVO_01000219 obo:ENVO_01001828)
 
 # Class: obo:ENVO_01000245 (cropland biome)
 
-AnnotationAssertion(obo:IAO_0000115 obo:ENVO_01000245 "A cropland ecosystem in which dominant ecological communities are maintained in a stable state - mimicking a climax community - by human intervention.")
+AnnotationAssertion(obo:IAO_0000115 obo:ENVO_01000245 "A cropland ecosystem which is undergoing climactic ecological succession."@en)
 AnnotationAssertion(obo:IAO_0000412 obo:ENVO_01000245 obo:envo.owl)
 AnnotationAssertion(rdfs:label obo:ENVO_01000245 "cropland biome")
+SubClassOf(obo:ENVO_01000245 obo:ENVO_01000219)
 SubClassOf(obo:ENVO_01000245 obo:ENVO_01001244)
 
 # Class: obo:ENVO_01000247 (rangeland biome)
@@ -3377,8 +3393,14 @@ SubClassOf(obo:ENVO_01000254 obo:RO_0002577)
 AnnotationAssertion(obo:IAO_0000115 obo:ENVO_01000277 "Ice which is formed from water.")
 AnnotationAssertion(obo:IAO_0000412 obo:ENVO_01000277 obo:envo.owl)
 AnnotationAssertion(rdfs:label obo:ENVO_01000277 "water ice")
-SubClassOf(obo:ENVO_01000277 obo:ENVO_01000814)
 SubClassOf(obo:ENVO_01000277 obo:ENVO_01001125)
+
+# Class: obo:ENVO_01000313 (anthropogenic environment)
+
+AnnotationAssertion(obo:IAO_0000115 obo:ENVO_01000313 "An anthropogenic environment is an environmental system which is the product of human activity.")
+AnnotationAssertion(obo:IAO_0000412 obo:ENVO_01000313 obo:envo.owl)
+AnnotationAssertion(rdfs:label obo:ENVO_01000313 "anthropogenic environment")
+SubClassOf(obo:ENVO_01000313 obo:ENVO_01000254)
 
 # Class: obo:ENVO_01000320 (marine environment)
 
@@ -3386,6 +3408,7 @@ AnnotationAssertion(obo:IAO_0000115 obo:ENVO_01000320 "A marine environment and 
 AnnotationAssertion(obo:IAO_0000412 obo:ENVO_01000320 obo:envo.owl)
 AnnotationAssertion(rdfs:label obo:ENVO_01000320 "marine environment")
 SubClassOf(obo:ENVO_01000320 obo:ENVO_01000254)
+SubClassOf(obo:ENVO_01000320 obo:ENVO_01000813)
 
 # Class: obo:ENVO_01000352 (field)
 
@@ -3408,6 +3431,7 @@ AnnotationAssertion(obo:IAO_0000115 obo:ENVO_01000408 "A site which has its exte
 AnnotationAssertion(obo:IAO_0000412 obo:ENVO_01000408 obo:agro.owl)
 AnnotationAssertion(obo:IAO_0000412 obo:ENVO_01000408 obo:envo.owl)
 AnnotationAssertion(rdfs:label obo:ENVO_01000408 "environmental zone")
+SubClassOf(obo:ENVO_01000408 obo:BFO_0000024)
 SubClassOf(obo:ENVO_01000408 obo:BFO_0000029)
 
 # Class: obo:ENVO_01000417 (house)
@@ -3478,7 +3502,7 @@ SubClassOf(obo:ENVO_01000627 obo:ENVO_00000077)
 AnnotationAssertion(obo:IAO_0000115 obo:ENVO_01000658 "A settlement with a high density of buildings and inhabitants.")
 AnnotationAssertion(obo:IAO_0000412 obo:ENVO_01000658 obo:envo.owl)
 AnnotationAssertion(rdfs:label obo:ENVO_01000658 "dense settlement"@en)
-SubClassOf(obo:ENVO_01000658 obo:ENVO_00000062)
+SubClassOf(obo:ENVO_01000658 obo:ENVO_01001829)
 
 # Class: obo:ENVO_01000685 (water mass)
 
@@ -3495,12 +3519,12 @@ AnnotationAssertion(obo:IAO_0000412 obo:ENVO_01000752 obo:envo.owl)
 AnnotationAssertion(rdfs:label obo:ENVO_01000752 "area of barren land"@en)
 SubClassOf(obo:ENVO_01000752 obo:ENVO_01001199)
 
-# Class: obo:ENVO_01000813 (astronomical body part)
+# Class: obo:ENVO_01000813 (geophysical entity)
 
 AnnotationAssertion(obo:IAO_0000115 obo:ENVO_01000813 "A material part of an astronomical body.")
 AnnotationAssertion(obo:IAO_0000412 obo:ENVO_01000813 obo:envo.owl)
 AnnotationAssertion(rdfs:label obo:ENVO_01000813 "astronomical body part"@en)
-SubClassOf(obo:ENVO_01000813 obo:BFO_0000024)
+SubClassOf(obo:ENVO_01000813 obo:BFO_0000040)
 
 # Class: obo:ENVO_01000814 (solid environmental material)
 
@@ -3572,6 +3596,36 @@ AnnotationAssertion(obo:IAO_0000412 obo:ENVO_01000990 obo:envo.owl)
 AnnotationAssertion(rdfs:label obo:ENVO_01000990 "sink fixture"@en)
 SubClassOf(obo:ENVO_01000990 obo:ENVO_01000989)
 
+# Class: obo:ENVO_01000997 (environmental system determined by a quality)
+
+AnnotationAssertion(obo:IAO_0000115 obo:ENVO_01000997 "An environmental system which is determined by materials bearing roughly homogeneous qualities.")
+AnnotationAssertion(obo:IAO_0000412 obo:ENVO_01000997 obo:envo.owl)
+AnnotationAssertion(rdfs:label obo:ENVO_01000997 "environmental system determined by a quality"@en)
+SubClassOf(obo:ENVO_01000997 obo:ENVO_01000254)
+
+# Class: obo:ENVO_01001000 (environmental system determined by an organism)
+
+AnnotationAssertion(obo:IAO_0000115 obo:ENVO_01001000 "An environmental system which is determined by a living organism.")
+AnnotationAssertion(obo:IAO_0000412 obo:ENVO_01001000 obo:envo.owl)
+AnnotationAssertion(rdfs:label obo:ENVO_01001000 "environmental system determined by an organism"@en)
+SubClassOf(obo:ENVO_01001000 obo:ENVO_01000254)
+
+# Class: obo:ENVO_01001002 (animal-associated environment)
+
+AnnotationAssertion(obo:IAO_0000115 obo:ENVO_01001002 "An environmental system determined by an animal.")
+AnnotationAssertion(obo:IAO_0000118 obo:ENVO_01001002 "Animal")
+AnnotationAssertion(obo:IAO_0000412 obo:ENVO_01001002 obo:envo.owl)
+AnnotationAssertion(rdfs:label obo:ENVO_01001002 "animal-associated environment"@en)
+SubClassOf(obo:ENVO_01001002 obo:ENVO_01001000)
+
+# Class: obo:ENVO_01001055 (environment associated with an animal part or small animal)
+
+AnnotationAssertion(obo:IAO_0000115 obo:ENVO_01001055 "An environmental system determined by part of a living or dead animal, or a whole small animal.")
+AnnotationAssertion(obo:IAO_0000118 obo:ENVO_01001055 "Animal corpus")
+AnnotationAssertion(obo:IAO_0000412 obo:ENVO_01001055 obo:envo.owl)
+AnnotationAssertion(rdfs:label obo:ENVO_01001055 "environment associated with an animal part or small animal"@en)
+SubClassOf(obo:ENVO_01001055 obo:ENVO_01001110)
+
 # Class: obo:ENVO_01001069 (metallic material)
 
 AnnotationAssertion(obo:IAO_0000115 obo:ENVO_01001069 "A material which is composed primarily of one or more pure metals and which shows their properties.")
@@ -3619,7 +3673,7 @@ SubClassOf(obo:ENVO_01001119 obo:ENVO_00003031)
 AnnotationAssertion(obo:IAO_0000115 obo:ENVO_01001125 "An ice is an environmental material which is either frozen or which is maintained in a solid state by gravitational forces or pressure.")
 AnnotationAssertion(obo:IAO_0000412 obo:ENVO_01001125 obo:envo.owl)
 AnnotationAssertion(rdfs:label obo:ENVO_01001125 "ice"@en)
-SubClassOf(obo:ENVO_01001125 obo:ENVO_00010483)
+SubClassOf(obo:ENVO_01001125 obo:ENVO_01000814)
 
 # Class: obo:ENVO_01001199 (terrestrial environmental zone)
 
@@ -3627,6 +3681,7 @@ AnnotationAssertion(obo:IAO_0000115 obo:ENVO_01001199 "An environmental zone whi
 AnnotationAssertion(obo:IAO_0000412 obo:ENVO_01001199 obo:envo.owl)
 AnnotationAssertion(rdfs:label obo:ENVO_01001199 "terrestrial environmental zone"@en)
 SubClassOf(obo:ENVO_01001199 obo:ENVO_01000408)
+SubClassOf(obo:ENVO_01001199 obo:ENVO_01000813)
 
 # Class: obo:ENVO_01001206 (grassland ecosystem)
 
@@ -3655,6 +3710,7 @@ AnnotationAssertion(obo:IAO_0000115 obo:ENVO_01001244 "An ecosystem which 1) is 
 AnnotationAssertion(obo:IAO_0000412 obo:ENVO_01001244 obo:envo.owl)
 AnnotationAssertion(rdfs:label obo:ENVO_01001244 "cropland ecosystem"@en)
 SubClassOf(obo:ENVO_01001244 obo:ENVO_01001790)
+SubClassOf(obo:ENVO_01001244 obo:ENVO_01001828)
 
 # Class: obo:ENVO_01001305 (vegetated area)
 
@@ -3663,19 +3719,19 @@ AnnotationAssertion(obo:IAO_0000412 obo:ENVO_01001305 obo:envo.owl)
 AnnotationAssertion(rdfs:label obo:ENVO_01001305 "vegetated area")
 SubClassOf(obo:ENVO_01001305 obo:ENVO_01001199)
 
-# Class: obo:ENVO_01001308 (hydroform)
-
-AnnotationAssertion(obo:IAO_0000115 obo:ENVO_01001308 "A liquid astronomical body part which is primarily composed of a continuous volume of liquid water and is held in shape or sustained by an environmental process.")
-AnnotationAssertion(obo:IAO_0000412 obo:ENVO_01001308 obo:envo.owl)
-AnnotationAssertion(rdfs:label obo:ENVO_01001308 "hydroform")
-SubClassOf(obo:ENVO_01001308 obo:ENVO_01001477)
-
 # Class: obo:ENVO_01001319 (saline water body)
 
 AnnotationAssertion(obo:IAO_0000115 obo:ENVO_01001319 "A body of water which is primarily composed of saline water.")
 AnnotationAssertion(obo:IAO_0000412 obo:ENVO_01001319 obo:envo.owl)
 AnnotationAssertion(rdfs:label obo:ENVO_01001319 "saline water body"@en)
 SubClassOf(obo:ENVO_01001319 obo:ENVO_00000063)
+
+# Class: obo:ENVO_01001370 (tundra ecosystem)
+
+AnnotationAssertion(obo:IAO_0000115 obo:ENVO_01001370 "An ecosystem which 1) typically has monthly average temperatures below 10 degrees Celsius 2) has a low evapotranspiration ratio 3) is dominated by treeless terrain, covered by communities of low-growing vegetation such as dwarf shrubs, sedges and grasses, mosses, and lichens, 4) contains areas of soil underlain by permafrost with a thin active layer and 5) occurs in both polar and alpine regions (i.e., both high latitudes and high altitudes), and 5) does not have permanent snow or ice cover.")
+AnnotationAssertion(obo:IAO_0000412 obo:ENVO_01001370 obo:envo.owl)
+AnnotationAssertion(rdfs:label obo:ENVO_01001370 "tundra ecosystem"@en)
+SubClassOf(obo:ENVO_01001370 obo:ENVO_01001790)
 
 # Class: obo:ENVO_01001476 (body of liquid)
 
@@ -3686,7 +3742,7 @@ SubClassOf(obo:ENVO_01001476 obo:ENVO_01001477)
 
 # Class: obo:ENVO_01001477 (liquid astronomical body part)
 
-AnnotationAssertion(obo:IAO_0000115 obo:ENVO_01001477 "A part of an astronomical body which is primarily composed of a continuous volume of liquid material, shaped by one or more environmental processes.")
+AnnotationAssertion(obo:IAO_0000115 obo:ENVO_01001477 "A part of an astronomical body which is primarily composed of liquid material."@en)
 AnnotationAssertion(obo:IAO_0000412 obo:ENVO_01001477 obo:envo.owl)
 AnnotationAssertion(rdfs:label obo:ENVO_01001477 "liquid astronomical body part"@en)
 SubClassOf(obo:ENVO_01001477 obo:ENVO_01001479)
@@ -3694,16 +3750,17 @@ SubClassOf(obo:ENVO_01001477 obo:ENVO_01001784)
 
 # Class: obo:ENVO_01001479 (fluid astronomical body part)
 
-AnnotationAssertion(obo:IAO_0000115 obo:ENVO_01001479 "A part of an astronomical body which is primarily composed of a continuous volume of liquid or gaseous material, shaped by one or more environmental processes.")
+AnnotationAssertion(obo:IAO_0000115 obo:ENVO_01001479 "A part of an astronomical body which is primarily composed of fluid."@en)
 AnnotationAssertion(obo:IAO_0000412 obo:ENVO_01001479 obo:envo.owl)
 AnnotationAssertion(rdfs:label obo:ENVO_01001479 "fluid astronomical body part"@en)
 SubClassOf(obo:ENVO_01001479 obo:ENVO_01000813)
 
 # Class: obo:ENVO_01001780 (desert ecosystem)
 
-AnnotationAssertion(obo:IAO_0000115 obo:ENVO_01001780 "An ecosystem in which the composition, structure, and function of resident ecological assemblages are primarily determined by a desert.")
+AnnotationAssertion(obo:IAO_0000115 obo:ENVO_01001780 "An ecosystem in which the composition, structure, and function of resident ecological assemblages are primarily determined by a desert."@en)
 AnnotationAssertion(obo:IAO_0000412 obo:ENVO_01001780 obo:envo.owl)
 AnnotationAssertion(rdfs:label obo:ENVO_01001780 "desert ecosystem"@en)
+SubClassOf(obo:ENVO_01001780 obo:ENVO_01000813)
 SubClassOf(obo:ENVO_01001780 obo:ENVO_01001110)
 
 # Class: obo:ENVO_01001784 (compound astronomical body part)
@@ -3717,6 +3774,7 @@ SubClassOf(obo:ENVO_01001784 obo:ENVO_01000813)
 
 AnnotationAssertion(obo:IAO_0000412 obo:ENVO_01001787 obo:envo.owl)
 AnnotationAssertion(rdfs:label obo:ENVO_01001787 "aquatic ecosystem"@en)
+SubClassOf(obo:ENVO_01001787 obo:ENVO_01000813)
 SubClassOf(obo:ENVO_01001787 obo:ENVO_01001110)
 
 # Class: obo:ENVO_01001788 (marine ecosystem)
@@ -3734,8 +3792,11 @@ SubClassOf(obo:ENVO_01001789 obo:ENVO_01001787)
 
 # Class: obo:ENVO_01001790 (terrestrial ecosystem)
 
+AnnotationAssertion(obo:IAO_0000115 obo:ENVO_01001790 "An ecosystem which primarily occurs on land."@en)
 AnnotationAssertion(obo:IAO_0000412 obo:ENVO_01001790 obo:envo.owl)
 AnnotationAssertion(rdfs:label obo:ENVO_01001790 "terrestrial ecosystem"@en)
+SubClassOf(obo:ENVO_01001790 obo:ENVO_01000813)
+SubClassOf(obo:ENVO_01001790 obo:ENVO_01000997)
 SubClassOf(obo:ENVO_01001790 obo:ENVO_01001110)
 
 # Class: obo:ENVO_01001813 (construction)
@@ -3744,6 +3805,24 @@ AnnotationAssertion(obo:IAO_0000115 obo:ENVO_01001813 "A material entity which h
 AnnotationAssertion(obo:IAO_0000412 obo:ENVO_01001813 obo:envo.owl)
 AnnotationAssertion(rdfs:label obo:ENVO_01001813 "construction"@en)
 SubClassOf(obo:ENVO_01001813 obo:BFO_0000040)
+
+# Class: obo:ENVO_01001828 (anthropised ecosystem)
+
+AnnotationAssertion(obo:IAO_0000115 obo:ENVO_01001828 "An ecosystem which is formed as a result of human activity or impact."@en)
+AnnotationAssertion(obo:IAO_0000412 obo:ENVO_01001828 obo:envo.owl)
+AnnotationAssertion(rdfs:label obo:ENVO_01001828 "anthropised ecosystem"@en)
+SubClassOf(obo:ENVO_01001828 obo:ENVO_01000313)
+SubClassOf(obo:ENVO_01001828 obo:ENVO_01001110)
+
+# Class: obo:ENVO_01001829 (human settlement)
+
+AnnotationAssertion(obo:IAO_0000115 obo:ENVO_01001829 "An anthropised ecosystem which is determined by the presence of humans and their constructions."@en)
+AnnotationAssertion(obo:IAO_0000412 obo:ENVO_01001829 obo:envo.owl)
+AnnotationAssertion(rdfs:label obo:ENVO_01001829 "human settlement"@en)
+SubClassOf(obo:ENVO_01001829 obo:ENVO_01000813)
+SubClassOf(obo:ENVO_01001829 obo:ENVO_01001002)
+SubClassOf(obo:ENVO_01001829 obo:ENVO_01001055)
+SubClassOf(obo:ENVO_01001829 obo:ENVO_01001828)
 
 # Class: obo:ENVO_01001873 (hatchery)
 
@@ -3809,7 +3888,7 @@ SubClassOf(obo:ENVO_02000090 obo:ENVO_01000814)
 
 # Class: obo:ENVO_02000140 (fluid environmental material)
 
-AnnotationAssertion(obo:IAO_0000115 obo:ENVO_02000140 "A liquid or a gas.")
+AnnotationAssertion(obo:IAO_0000115 obo:ENVO_02000140 "An environmental material which is unable to resist shear forces and continuously deforms when subject to them."@en)
 AnnotationAssertion(obo:IAO_0000412 obo:ENVO_02000140 obo:envo.owl)
 AnnotationAssertion(rdfs:label obo:ENVO_02000140 "fluid environmental material"@en)
 SubClassOf(obo:ENVO_02000140 obo:ENVO_00010483)
@@ -6775,7 +6854,7 @@ AnnotationAssertion(obo:IAO_0000412 obo:IAO_0000028 obo:obi.owl)
 AnnotationAssertion(rdfs:label obo:IAO_0000028 "symbol"@en)
 SubClassOf(obo:IAO_0000028 obo:IAO_0000030)
 
-# Class: obo:IAO_0000030 (information content entity)
+# Class: obo:IAO_0000030 (information)
 
 AnnotationAssertion(obo:IAO_0000114 obo:IAO_0000030 obo:IAO_0000122)
 AnnotationAssertion(obo:IAO_0000115 obo:IAO_0000030 "A generically dependent continuant that is about some thing."@en)
@@ -8920,18 +8999,18 @@ AnnotationAssertion(oboInOwl:hasExactSynonym obo:PO_0000003 "planta entera (Span
 AnnotationAssertion(oboInOwl:hasExactSynonym obo:PO_0000003 "植物体全体 (Japanese, exact)")
 AnnotationAssertion(oboInOwl:hasNarrowSynonym obo:PO_0000003 "bush (narrow)")
 AnnotationAssertion(oboInOwl:hasNarrowSynonym obo:PO_0000003 "frutex (narrow)")
-AnnotationAssertion(oboInOwl:hasNarrowSynonym obo:PO_0000003 "frutices (narrow)")
+AnnotationAssertion(oboInOwl:hasNarrowSynonym obo:PO_0000003 "frutices (narrow, plural)")
 AnnotationAssertion(oboInOwl:hasNarrowSynonym obo:PO_0000003 "gametophyte (narrow)")
 AnnotationAssertion(oboInOwl:hasNarrowSynonym obo:PO_0000003 "herb (narrow)")
 AnnotationAssertion(oboInOwl:hasNarrowSynonym obo:PO_0000003 "liana (narrow)")
-AnnotationAssertion(oboInOwl:hasNarrowSynonym obo:PO_0000003 "prothalli (narrow)")
+AnnotationAssertion(oboInOwl:hasNarrowSynonym obo:PO_0000003 "prothalli (narrow, plural)")
 AnnotationAssertion(oboInOwl:hasNarrowSynonym obo:PO_0000003 "prothallium (narrow)")
 AnnotationAssertion(oboInOwl:hasNarrowSynonym obo:PO_0000003 "prothallus (narrow)")
 AnnotationAssertion(oboInOwl:hasNarrowSynonym obo:PO_0000003 "seedling (narrow)")
 AnnotationAssertion(oboInOwl:hasNarrowSynonym obo:PO_0000003 "shrub (narrow)")
 AnnotationAssertion(oboInOwl:hasNarrowSynonym obo:PO_0000003 "sporophyte (narrow)")
 AnnotationAssertion(oboInOwl:hasNarrowSynonym obo:PO_0000003 "suffrutex (narrow)")
-AnnotationAssertion(oboInOwl:hasNarrowSynonym obo:PO_0000003 "suffrutices (narrow)")
+AnnotationAssertion(oboInOwl:hasNarrowSynonym obo:PO_0000003 "suffrutices (narrow, plural)")
 AnnotationAssertion(oboInOwl:hasNarrowSynonym obo:PO_0000003 "tree (narrow)")
 AnnotationAssertion(oboInOwl:hasNarrowSynonym obo:PO_0000003 "vine (narrow)")
 AnnotationAssertion(oboInOwl:hasNarrowSynonym obo:PO_0000003 "woody clump (narrow)")
@@ -9817,7 +9896,7 @@ AnnotationAssertion(oboInOwl:hasNarrowSynonym obo:PO_0009006 "tree crown (narrow
 AnnotationAssertion(oboInOwl:hasOBONamespace obo:PO_0009006 "plant_anatomy")
 AnnotationAssertion(oboInOwl:hasRelatedSynonym obo:PO_0009006 "Poaceae crown (related)")
 AnnotationAssertion(oboInOwl:hasRelatedSynonym obo:PO_0009006 "shoot (related)")
-AnnotationAssertion(oboInOwl:hasRelatedSynonym obo:PO_0009006 "thalli (related)")
+AnnotationAssertion(oboInOwl:hasRelatedSynonym obo:PO_0009006 "thalli (related, plural)")
 AnnotationAssertion(oboInOwl:hasRelatedSynonym obo:PO_0009006 "thallus (related)")
 AnnotationAssertion(oboInOwl:id obo:PO_0009006 "PO:0009006")
 AnnotationAssertion(oboInOwl:inSubset obo:PO_0009006 <http://purl.oboInOwllibrary.org/oboInOwl/po#TraitNet>)
@@ -10177,7 +10256,7 @@ AnnotationAssertion(oboInOwl:hasExactSynonym obo:PO_0009047 "茎 (Japanese, exac
 AnnotationAssertion(oboInOwl:hasNarrowSynonym obo:PO_0009047 "bole (narrow)")
 AnnotationAssertion(oboInOwl:hasNarrowSynonym obo:PO_0009047 "cane (narrow)")
 AnnotationAssertion(oboInOwl:hasNarrowSynonym obo:PO_0009047 "caudex (narrow)")
-AnnotationAssertion(oboInOwl:hasNarrowSynonym obo:PO_0009047 "caudices (narrow)")
+AnnotationAssertion(oboInOwl:hasNarrowSynonym obo:PO_0009047 "caudices (narrow, plural)")
 AnnotationAssertion(oboInOwl:hasNarrowSynonym obo:PO_0009047 "core (narrow)")
 AnnotationAssertion(oboInOwl:hasNarrowSynonym obo:PO_0009047 "primocane (narrow)")
 AnnotationAssertion(oboInOwl:hasNarrowSynonym obo:PO_0009047 "scape (narrow)")
@@ -10626,6 +10705,41 @@ AnnotationAssertion(rdfs:label obo:PO_0009089 "endosperm")
 SubClassOf(obo:PO_0009089 obo:PO_0009007)
 SubClassOf(obo:PO_0009089 ObjectSomeValuesFrom(obo:BFO_0000050 obo:PO_0009010))
 
+# Class: obo:PO_0009090 (aril)
+
+AnnotationAssertion(obo:IAO_0000115 obo:PO_0009090 "An arilloid that is an outgrowth of a seed from a seed funicle.")
+AnnotationAssertion(obo:IAO_0000412 obo:PO_0009090 obo:po.owl)
+AnnotationAssertion(oboInOwl:hasDbXref obo:PO_0009090 "PO_GIT:242")
+AnnotationAssertion(oboInOwl:hasExactSynonym obo:PO_0009090 "arilo (Spanish, exact)")
+AnnotationAssertion(oboInOwl:hasExactSynonym obo:PO_0009090 "仮種皮 (Japanese, exact)")
+AnnotationAssertion(oboInOwl:hasOBONamespace obo:PO_0009090 "plant_anatomy")
+AnnotationAssertion(oboInOwl:id obo:PO_0009090 "PO:0009090")
+AnnotationAssertion(oboInOwl:inSubset obo:PO_0009090 <http://purl.oboInOwllibrary.org/oboInOwl/po#TraitNet>)
+AnnotationAssertion(oboInOwl:inSubset obo:PO_0009090 <http://purl.oboInOwllibrary.org/oboInOwl/po#reference>)
+AnnotationAssertion(rdfs:comment obo:PO_0009090 "Usually envelopes most of the seed and is fleshy. If the ovule is pressed against the funicle to form a raphe, it may appear that the aril is growing from the raphe.")
+AnnotationAssertion(rdfs:label obo:PO_0009090 "aril")
+SubClassOf(obo:PO_0009090 obo:PO_0019022)
+SubClassOf(obo:PO_0009090 ObjectSomeValuesFrom(obo:RO_0002202 obo:PO_0020006))
+
+# Class: obo:PO_0019022 (arilloid)
+
+AnnotationAssertion(obo:IAO_0000115 obo:PO_0019022 "A cardinal part of multi-tissue plant structure (PO:0025498) that is a fleshy outgrowth of a seed (PO:0009010).")
+AnnotationAssertion(obo:IAO_0000412 obo:PO_0019022 obo:po.owl)
+AnnotationAssertion(oboInOwl:hasDbXref obo:PO_0019022 "FNA:2343b950-6cbd-4879-b15d-db6804ace6a0")
+AnnotationAssertion(oboInOwl:hasDbXref obo:PO_0019022 "PO_GIT:243")
+AnnotationAssertion(oboInOwl:hasExactSynonym obo:PO_0019022 "arilli (exact)")
+AnnotationAssertion(oboInOwl:hasExactSynonym obo:PO_0019022 "arillus (exact)")
+AnnotationAssertion(oboInOwl:hasExactSynonym obo:PO_0019022 "arilodio (Spanish, exact)")
+AnnotationAssertion(oboInOwl:hasExactSynonym obo:PO_0019022 "種皮附属物,　アリロイド (Japanese, exact)")
+AnnotationAssertion(oboInOwl:hasNarrowSynonym obo:PO_0019022 "arillode (narrow)")
+AnnotationAssertion(oboInOwl:hasOBONamespace obo:PO_0019022 "plant_anatomy")
+AnnotationAssertion(oboInOwl:id obo:PO_0019022 "PO:0019022")
+AnnotationAssertion(oboInOwl:inSubset obo:PO_0019022 <http://purl.oboInOwllibrary.org/oboInOwl/po#TraitNet>)
+AnnotationAssertion(rdfs:comment obo:PO_0019022 "Often conspicuous and found on seeds with a hard testa that are dispersed by animals. There is some variation in how different sources define the subtypes of arilloids.")
+AnnotationAssertion(rdfs:label obo:PO_0019022 "arilloid")
+SubClassOf(obo:PO_0019022 obo:PO_0025498)
+SubClassOf(obo:PO_0019022 ObjectSomeValuesFrom(obo:BFO_0000050 obo:PO_0009010))
+
 # Class: obo:PO_0020003 (plant ovule)
 
 AnnotationAssertion(obo:IAO_0000115 obo:PO_0020003 "A plant organ (PO:0009008) that has as parts a nucellus (PO:0020020) in which a female gametophyte (PO:0025279) is located, one or two integuments (PO:0020021), and a funicle (PO:0020006).")
@@ -10646,6 +10760,10 @@ AnnotationAssertion(rdfs:comment obo:PO_0020003 "A seed (PO:0009010) develops fr
 AnnotationAssertion(rdfs:label obo:PO_0020003 "plant ovule")
 SubClassOf(obo:PO_0020003 obo:PO_0009008)
 SubClassOf(obo:PO_0020003 ObjectSomeValuesFrom(obo:RO_0002202 obo:PO_0000018))
+
+# Class: obo:PO_0020006 (funicle)
+
+AnnotationAssertion(rdfs:label obo:PO_0020006 "funicle")
 
 # Class: obo:PO_0020030 (cotyledon)
 
@@ -11369,9 +11487,9 @@ AnnotationAssertion(oboInOwl:creation_date obo:PO_0025173 "2010-11-18T08:10:24Z"
 AnnotationAssertion(oboInOwl:hasBroadSynonym obo:PO_0025173 "barb (broad)")
 AnnotationAssertion(oboInOwl:hasBroadSynonym obo:PO_0025173 "barbel (broad)")
 AnnotationAssertion(oboInOwl:hasBroadSynonym obo:PO_0025173 "barbella (broad)")
-AnnotationAssertion(oboInOwl:hasBroadSynonym obo:PO_0025173 "barbellae (broad)")
+AnnotationAssertion(oboInOwl:hasBroadSynonym obo:PO_0025173 "barbellae (broad, plural)")
 AnnotationAssertion(oboInOwl:hasBroadSynonym obo:PO_0025173 "barbellula (broad)")
-AnnotationAssertion(oboInOwl:hasBroadSynonym obo:PO_0025173 "barbellulae (broad)")
+AnnotationAssertion(oboInOwl:hasBroadSynonym obo:PO_0025173 "barbellulae (broad, plural)")
 AnnotationAssertion(oboInOwl:hasBroadSynonym obo:PO_0025173 "barbellule (broad)")
 AnnotationAssertion(oboInOwl:hasDbXref obo:PO_0025173 "FNA:00e30ce4-70bc-489c-86df-73030c9ece1e")
 AnnotationAssertion(oboInOwl:hasDbXref obo:PO_0025173 "FNA:1f0e37d5-db79-4b3f-abba-eabd63380f67")
@@ -11404,7 +11522,7 @@ AnnotationAssertion(oboInOwl:hasExactSynonym obo:PO_0025202 "microsporangia (exa
 AnnotationAssertion(oboInOwl:hasExactSynonym obo:PO_0025202 "microsporangio (Spanish, exact)")
 AnnotationAssertion(oboInOwl:hasExactSynonym obo:PO_0025202 "小胞子嚢 (Japanese, exact)")
 AnnotationAssertion(oboInOwl:hasOBONamespace obo:PO_0025202 "plant_anatomy")
-AnnotationAssertion(oboInOwl:hasRelatedSynonym obo:PO_0025202 "macrosporangia (related)")
+AnnotationAssertion(oboInOwl:hasRelatedSynonym obo:PO_0025202 "macrosporangia (related, plural)")
 AnnotationAssertion(oboInOwl:hasRelatedSynonym obo:PO_0025202 "macrosporangium (related)")
 AnnotationAssertion(oboInOwl:id obo:PO_0025202 "PO:0025202")
 AnnotationAssertion(rdfs:label obo:PO_0025202 "microsporangium")
@@ -13218,7 +13336,6 @@ AnnotationAssertion(obo:IAO_0000412 obo:UBERON_0002106 obo:uberon.owl)
 AnnotationAssertion(rdfs:label obo:UBERON_0002106 "spleen")
 SubClassOf(obo:UBERON_0002106 obo:UBERON_0004177)
 SubClassOf(obo:UBERON_0002106 obo:UBERON_0005057)
-SubClassOf(obo:UBERON_0002106 obo:UBERON_0013765)
 SubClassOf(obo:UBERON_0002106 obo:UBERON_0017672)
 
 # Class: obo:UBERON_0002107 (liver)
@@ -13241,7 +13358,7 @@ SubClassOf(obo:UBERON_0002108 obo:UBERON_0013765)
 
 # Class: obo:UBERON_0002113 (kidney)
 
-AnnotationAssertion(obo:IAO_0000115 obo:UBERON_0002113 "A paired organ of the urinary tract which has the production of urine as its primary function.")
+AnnotationAssertion(obo:IAO_0000115 obo:UBERON_0002113 "A paired organ of the urinary tract that produces urine and maintains bodily fluid homeostasis, blood pressure, pH levels, red blood cell production and skeleton mineralization.")
 AnnotationAssertion(obo:IAO_0000412 obo:UBERON_0002113 obo:uberon.owl)
 AnnotationAssertion(rdfs:label obo:UBERON_0002113 "kidney")
 SubClassOf(obo:UBERON_0002113 obo:UBERON_0000489)
@@ -13836,6 +13953,7 @@ AnnotationAssertion(obo:IAO_0000115 obo:UBERON_0008979 "A body of a multi-cellul
 AnnotationAssertion(obo:IAO_0000412 obo:UBERON_0008979 obo:uberon.owl)
 AnnotationAssertion(rdfs:label obo:UBERON_0008979 "carcass")
 SubClassOf(obo:UBERON_0008979 obo:UBERON_0000468)
+SubClassOf(obo:UBERON_0008979 ObjectSomeValuesFrom(obo:RO_0000053 obo:PATO_0001422))
 
 # Class: obo:UBERON_0009097 (gravid organism)
 
@@ -14831,15 +14949,15 @@ AnnotationAssertion(rdfs:label obo:IAO_0000428 "requires discussion"@en)
 ClassAssertion(obo:IAO_0000078 obo:IAO_0000428)
 
 
-AnnotationAssertion(obo:IAO_0000412 _:genid2147483783 obo:po.owl)
-AnnotationAssertion(obo:IAO_0000412 _:genid2147483784 obo:obi.owl)
-AnnotationAssertion(obo:IAO_0000412 _:genid2147483785 obo:obi.owl)
-AnnotationAssertion(obo:IAO_0000412 _:genid2147483786 obo:obi.owl)
-AnnotationAssertion(obo:IAO_0000412 _:genid2147483787 obo:po.owl)
-AnnotationAssertion(obo:IAO_0000412 _:genid2147483788 obo:obi.owl)
-AnnotationAssertion(obo:IAO_0000412 _:genid2147483789 obo:po.owl)
-AnnotationAssertion(obo:IAO_0000412 _:genid2147483790 obo:po.owl)
-AnnotationAssertion(obo:IAO_0000412 _:genid2147483791 obo:obi.owl)
-AnnotationAssertion(obo:IAO_0000412 _:genid2147483792 obo:po.owl)
-AnnotationAssertion(obo:IAO_0000412 _:genid2147483793 obo:obi.owl)
+AnnotationAssertion(obo:IAO_0000412 _:genid2147497216 obo:po.owl)
+AnnotationAssertion(obo:IAO_0000412 _:genid2147497217 obo:po.owl)
+AnnotationAssertion(obo:IAO_0000412 _:genid2147497218 obo:obi.owl)
+AnnotationAssertion(obo:IAO_0000412 _:genid2147497219 obo:obi.owl)
+AnnotationAssertion(obo:IAO_0000412 _:genid2147497220 obo:po.owl)
+AnnotationAssertion(obo:IAO_0000412 _:genid2147497221 obo:obi.owl)
+AnnotationAssertion(obo:IAO_0000412 _:genid2147497222 obo:obi.owl)
+AnnotationAssertion(obo:IAO_0000412 _:genid2147497223 obo:obi.owl)
+AnnotationAssertion(obo:IAO_0000412 _:genid2147497224 obo:po.owl)
+AnnotationAssertion(obo:IAO_0000412 _:genid2147497225 obo:po.owl)
+AnnotationAssertion(obo:IAO_0000412 _:genid2147497226 obo:obi.owl)
 )

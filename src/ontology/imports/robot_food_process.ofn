@@ -10,7 +10,10 @@ Ontology(<http://purl.obolibrary.org/obo/foodon/imports/robot_food_process.ofn>
 
 Declaration(Class(<http://purl.obolibrary.org/obo/FOODON_00001013>))
 Declaration(Class(<http://purl.obolibrary.org/obo/FOODON_00001056>))
+Declaration(Class(<http://purl.obolibrary.org/obo/FOODON_00001141>))
+Declaration(Class(<http://purl.obolibrary.org/obo/FOODON_00001177>))
 Declaration(Class(<http://purl.obolibrary.org/obo/FOODON_00001183>))
+Declaration(Class(<http://purl.obolibrary.org/obo/FOODON_00001598>))
 Declaration(Class(<http://purl.obolibrary.org/obo/FOODON_00001769>))
 Declaration(Class(<http://purl.obolibrary.org/obo/FOODON_00001911>))
 Declaration(Class(<http://purl.obolibrary.org/obo/FOODON_00001946>))
@@ -18,7 +21,31 @@ Declaration(Class(<http://purl.obolibrary.org/obo/FOODON_00002022>))
 Declaration(Class(<http://purl.obolibrary.org/obo/FOODON_00002265>))
 Declaration(Class(<http://purl.obolibrary.org/obo/FOODON_00002266>))
 Declaration(Class(<http://purl.obolibrary.org/obo/FOODON_00002815>))
+Declaration(Class(<http://purl.obolibrary.org/obo/FOODON_00003000>))
 Declaration(Class(<http://purl.obolibrary.org/obo/FOODON_00003237>))
+Declaration(Class(<http://purl.obolibrary.org/obo/FOODON_00003314>))
+Declaration(Class(<http://purl.obolibrary.org/obo/FOODON_00003394>))
+Declaration(Class(<http://purl.obolibrary.org/obo/FOODON_00003950>))
+Declaration(Class(<http://purl.obolibrary.org/obo/FOODON_00004235>))
+Declaration(Class(<http://purl.obolibrary.org/obo/FOODON_00004639>))
+Declaration(Class(<http://purl.obolibrary.org/obo/FOODON_00004695>))
+Declaration(Class(<http://purl.obolibrary.org/obo/FOODON_00004696>))
+Declaration(Class(<http://purl.obolibrary.org/obo/FOODON_00004697>))
+Declaration(Class(<http://purl.obolibrary.org/obo/FOODON_00004698>))
+Declaration(Class(<http://purl.obolibrary.org/obo/FOODON_00004699>))
+Declaration(Class(<http://purl.obolibrary.org/obo/FOODON_00004700>))
+Declaration(Class(<http://purl.obolibrary.org/obo/FOODON_00004701>))
+Declaration(Class(<http://purl.obolibrary.org/obo/FOODON_00004702>))
+Declaration(Class(<http://purl.obolibrary.org/obo/FOODON_00004703>))
+Declaration(Class(<http://purl.obolibrary.org/obo/FOODON_00004704>))
+Declaration(Class(<http://purl.obolibrary.org/obo/FOODON_00004705>))
+Declaration(Class(<http://purl.obolibrary.org/obo/FOODON_00004706>))
+Declaration(Class(<http://purl.obolibrary.org/obo/FOODON_00004708>))
+Declaration(Class(<http://purl.obolibrary.org/obo/FOODON_00004711>))
+Declaration(Class(<http://purl.obolibrary.org/obo/FOODON_00004712>))
+Declaration(Class(<http://purl.obolibrary.org/obo/FOODON_00004713>))
+Declaration(Class(<http://purl.obolibrary.org/obo/FOODON_02020120>))
+Declaration(Class(<http://purl.obolibrary.org/obo/FOODON_02020121>))
 Declaration(Class(<http://purl.obolibrary.org/obo/FOODON_03000280>))
 Declaration(Class(<http://purl.obolibrary.org/obo/FOODON_03000281>))
 Declaration(Class(<http://purl.obolibrary.org/obo/FOODON_03000282>))
@@ -80,9 +107,11 @@ Declaration(Class(<http://purl.obolibrary.org/obo/FOODON_03304793>))
 Declaration(Class(<http://purl.obolibrary.org/obo/FOODON_03305252>))
 Declaration(Class(<http://purl.obolibrary.org/obo/FOODON_03305509>))
 Declaration(Class(<http://purl.obolibrary.org/obo/FOODON_03306123>))
+Declaration(Class(<http://purl.obolibrary.org/obo/FOODON_03309664>))
 Declaration(Class(<http://purl.obolibrary.org/obo/FOODON_03310780>))
 Declaration(Class(<http://purl.obolibrary.org/obo/FOODON_03311533>))
 Declaration(Class(<http://purl.obolibrary.org/obo/FOODON_03315521>))
+Declaration(Class(<http://purl.obolibrary.org/obo/PO_0030104>))
 Declaration(AnnotationProperty(<http://purl.obolibrary.org/obo/IAO_0000115>))
 Declaration(AnnotationProperty(<http://purl.obolibrary.org/obo/IAO_0000119>))
 Declaration(AnnotationProperty(<http://purl.org/dc/terms/contributor>))
@@ -94,11 +123,129 @@ Declaration(AnnotationProperty(<http://www.geneontology.org/formats/oboInOwl#has
 #   Classes
 ############################
 
+# Class: <http://purl.obolibrary.org/obo/FOODON_00004639> (barley seed (cooked))
+
+AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000115> <http://purl.obolibrary.org/obo/FOODON_00004639> "A barley seed which is cooked."@en)
+AnnotationAssertion(<http://purl.org/dc/terms/contributor> <http://purl.obolibrary.org/obo/FOODON_00004639> " https://orcid.org/0000-0002-0995-02788 ")
+AnnotationAssertion(<http://purl.org/dc/terms/contributor> <http://purl.obolibrary.org/obo/FOODON_00004639> " https://orcid.org/0000-0002-8461-9745 ")
+AnnotationAssertion(<http://purl.org/dc/terms/contributor> <http://purl.obolibrary.org/obo/FOODON_00004639> " https://orcid.org/0000-0002-8844-9165 ")
+AnnotationAssertion(<http://purl.org/dc/terms/contributor> <http://purl.obolibrary.org/obo/FOODON_00004639> " https://orcid.org/0000-0003-3653-3805 ")
+AnnotationAssertion(<http://purl.org/dc/terms/contributor> <http://purl.obolibrary.org/obo/FOODON_00004639> "https://orcid.org/0000-0001-5275-8866 ")
+AnnotationAssertion(rdfs:label <http://purl.obolibrary.org/obo/FOODON_00004639> "barley seed (cooked)"@en)
+SubClassOf(<http://purl.obolibrary.org/obo/FOODON_00004639> <http://purl.obolibrary.org/obo/FOODON_00003394>)
+
+# Class: <http://purl.obolibrary.org/obo/FOODON_00004695> (white bean flatbread)
+
+AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000115> <http://purl.obolibrary.org/obo/FOODON_00004695> "A flatbread made with dried white beans."@en)
+AnnotationAssertion(rdfs:label <http://purl.obolibrary.org/obo/FOODON_00004695> "white bean flatbread"@en)
+SubClassOf(<http://purl.obolibrary.org/obo/FOODON_00004695> <http://purl.obolibrary.org/obo/FOODON_00003000>)
+SubClassOf(<http://purl.obolibrary.org/obo/FOODON_00004695> <http://purl.obolibrary.org/obo/FOODON_00003314>)
+
+# Class: <http://purl.obolibrary.org/obo/FOODON_00004696> (elk stew meat)
+
+AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000115> <http://purl.obolibrary.org/obo/FOODON_00004696> "Chopped elk meat suitable for cooking into a stew."@en)
+AnnotationAssertion(rdfs:label <http://purl.obolibrary.org/obo/FOODON_00004696> "elk stew meat"@en)
+SubClassOf(<http://purl.obolibrary.org/obo/FOODON_00004696> <http://purl.obolibrary.org/obo/FOODON_00001598>)
+
+# Class: <http://purl.obolibrary.org/obo/FOODON_00004697> (tofu)
+
+AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000115> <http://purl.obolibrary.org/obo/FOODON_00004697> "A food product that is prepared by coagulating soy milk and then pressing the resulting curds into solid white blocks of varying softness: silken, soft, firm, extra firm."@en)
+AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000119> <http://purl.obolibrary.org/obo/FOODON_00004697> "https://en.wikipedia.org/wiki/Tofu")
+AnnotationAssertion(<http://www.geneontology.org/formats/oboInOwl#hasExactSynonym> <http://purl.obolibrary.org/obo/FOODON_00004697> "bean curd"@en)
+AnnotationAssertion(rdfs:label <http://purl.obolibrary.org/obo/FOODON_00004697> "tofu"@en)
+SubClassOf(<http://purl.obolibrary.org/obo/FOODON_00004697> <http://purl.obolibrary.org/obo/FOODON_03309664>)
+
+# Class: <http://purl.obolibrary.org/obo/FOODON_00004698> (extra firm tofu)
+
+AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000115> <http://purl.obolibrary.org/obo/FOODON_00004698> "A tofu that has less water than firm tofu."@en)
+AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000119> <http://purl.obolibrary.org/obo/FOODON_00004698> "https://en.wikipedia.org/wiki/Tofu")
+AnnotationAssertion(rdfs:label <http://purl.obolibrary.org/obo/FOODON_00004698> "extra firm tofu"@en)
+SubClassOf(<http://purl.obolibrary.org/obo/FOODON_00004698> <http://purl.obolibrary.org/obo/FOODON_00004697>)
+
+# Class: <http://purl.obolibrary.org/obo/FOODON_00004699> (extra firm tofu (raw))
+
+AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000115> <http://purl.obolibrary.org/obo/FOODON_00004699> "An extra firm tofu that is raw."@en)
+AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000119> <http://purl.obolibrary.org/obo/FOODON_00004699> "https://en.wikipedia.org/wiki/Tofu")
+AnnotationAssertion(rdfs:label <http://purl.obolibrary.org/obo/FOODON_00004699> "extra firm tofu (raw)"@en)
+SubClassOf(<http://purl.obolibrary.org/obo/FOODON_00004699> <http://purl.obolibrary.org/obo/FOODON_00004698>)
+
+# Class: <http://purl.obolibrary.org/obo/FOODON_00004700> (extra firm tofu (sauteed))
+
+AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000115> <http://purl.obolibrary.org/obo/FOODON_00004700> "An extra firm tofu which has been sauteed."@en)
+AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000119> <http://purl.obolibrary.org/obo/FOODON_00004700> "https://en.wikipedia.org/wiki/Tofu")
+AnnotationAssertion(rdfs:label <http://purl.obolibrary.org/obo/FOODON_00004700> "extra firm tofu (sauteed)"@en)
+SubClassOf(<http://purl.obolibrary.org/obo/FOODON_00004700> <http://purl.obolibrary.org/obo/FOODON_00004698>)
+
+# Class: <http://purl.obolibrary.org/obo/FOODON_00004701> (farro food product)
+
+AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000115> <http://purl.obolibrary.org/obo/FOODON_00004701> "A food product that has farro as a defining ingredient."@en)
+AnnotationAssertion(rdfs:label <http://purl.obolibrary.org/obo/FOODON_00004701> "farro food product"@en)
+SubClassOf(<http://purl.obolibrary.org/obo/FOODON_00004701> <http://purl.obolibrary.org/obo/FOODON_00001141>)
+
+# Class: <http://purl.obolibrary.org/obo/FOODON_00004702> (farro kernel)
+
+AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000115> <http://purl.obolibrary.org/obo/FOODON_00004702> "A caryopsis fruit of any of three hulled wheat species: spelt (Triticum spelta), emmer (Triticum dicoccum), and einkorn (Triticum monococcum)."@en)
+AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000115> <http://purl.obolibrary.org/obo/FOODON_00004702> "A farro kernel which is raw (not dried)."@en)
+AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000119> <http://purl.obolibrary.org/obo/FOODON_00004702> " https://www.wheatfoods.org/resources/wheat-facts/ancient-wheat-and-pseudo-grains/")
+AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000119> <http://purl.obolibrary.org/obo/FOODON_00004702> "https://en.wikipedia.org/wiki/Farro ")
+AnnotationAssertion(rdfs:label <http://purl.obolibrary.org/obo/FOODON_00004702> "farro kernel"@en)
+AnnotationAssertion(rdfs:label <http://purl.obolibrary.org/obo/FOODON_00004702> "farro kernel (raw)"@en)
+SubClassOf(<http://purl.obolibrary.org/obo/FOODON_00004702> <http://purl.obolibrary.org/obo/FOODON_00003950>)
+SubClassOf(<http://purl.obolibrary.org/obo/FOODON_00004702> <http://purl.obolibrary.org/obo/FOODON_00004701>)
+SubClassOf(<http://purl.obolibrary.org/obo/FOODON_00004702> <http://purl.obolibrary.org/obo/FOODON_00004702>)
+SubClassOf(<http://purl.obolibrary.org/obo/FOODON_00004702> <http://purl.obolibrary.org/obo/PO_0030104>)
+
+# Class: <http://purl.obolibrary.org/obo/FOODON_00004703> (farro kernel (cooked))
+
+AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000115> <http://purl.obolibrary.org/obo/FOODON_00004703> "A farro kernel which is cooked."@en)
+AnnotationAssertion(rdfs:label <http://purl.obolibrary.org/obo/FOODON_00004703> "farro kernel (cooked)"@en)
+SubClassOf(<http://purl.obolibrary.org/obo/FOODON_00004703> <http://purl.obolibrary.org/obo/FOODON_00004702>)
+
+# Class: <http://purl.obolibrary.org/obo/FOODON_00004704> (duck egg white (boiled))
+
+AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000115> <http://purl.obolibrary.org/obo/FOODON_00004704> "A duck egg white that has been boiled."@en)
+AnnotationAssertion(rdfs:label <http://purl.obolibrary.org/obo/FOODON_00004704> "duck egg white (boiled)"@en)
+SubClassOf(<http://purl.obolibrary.org/obo/FOODON_00004704> <http://purl.obolibrary.org/obo/FOODON_02020120>)
+
+# Class: <http://purl.obolibrary.org/obo/FOODON_00004705> (duck egg yolk (boiled))
+
+AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000115> <http://purl.obolibrary.org/obo/FOODON_00004705> "A duck egg yolk that has been boiled."@en)
+AnnotationAssertion(rdfs:label <http://purl.obolibrary.org/obo/FOODON_00004705> "duck egg yolk (boiled)"@en)
+SubClassOf(<http://purl.obolibrary.org/obo/FOODON_00004705> <http://purl.obolibrary.org/obo/FOODON_02020121>)
+
+# Class: <http://purl.obolibrary.org/obo/FOODON_00004706> (Monterey Jack cheese flavoured with chili flakes)
+
+AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000115> <http://purl.obolibrary.org/obo/FOODON_00004706> "A variant of monterey jack cheese that is flavoured with chili flakes."@en)
+AnnotationAssertion(rdfs:label <http://purl.obolibrary.org/obo/FOODON_00004706> "Monterey Jack cheese flavoured with chili flakes"@en)
+SubClassOf(<http://purl.obolibrary.org/obo/FOODON_00004706> <http://purl.obolibrary.org/obo/FOODON_00004235>)
+
+# Class: <http://purl.obolibrary.org/obo/FOODON_00004708> (house cricket powder)
+
+AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000115> <http://purl.obolibrary.org/obo/FOODON_00004708> "A powder that is made from a house cricket."@en)
+AnnotationAssertion(rdfs:label <http://purl.obolibrary.org/obo/FOODON_00004708> "house cricket powder"@en)
+SubClassOf(<http://purl.obolibrary.org/obo/FOODON_00004708> <http://purl.obolibrary.org/obo/FOODON_00004711>)
+
+# Class: <http://purl.obolibrary.org/obo/FOODON_00004711> (cricket powder)
+
+AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000115> <http://purl.obolibrary.org/obo/FOODON_00004711> "A powder that is made from a cricket."@en)
+AnnotationAssertion(rdfs:label <http://purl.obolibrary.org/obo/FOODON_00004711> "cricket powder"@en)
+SubClassOf(<http://purl.obolibrary.org/obo/FOODON_00004711> <http://purl.obolibrary.org/obo/FOODON_00004713>)
+
+# Class: <http://purl.obolibrary.org/obo/FOODON_00004712> (jamaican cricket powder)
+
+AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000115> <http://purl.obolibrary.org/obo/FOODON_00004712> "A powder that is made from a jamaican cricket."@en)
+AnnotationAssertion(rdfs:label <http://purl.obolibrary.org/obo/FOODON_00004712> "jamaican cricket powder"@en)
+SubClassOf(<http://purl.obolibrary.org/obo/FOODON_00004712> <http://purl.obolibrary.org/obo/FOODON_00004711>)
+
+# Class: <http://purl.obolibrary.org/obo/FOODON_00004713> (cricket food product)
+
+SubClassOf(<http://purl.obolibrary.org/obo/FOODON_00004713> <http://purl.obolibrary.org/obo/FOODON_00001177>)
+
 # Class: <http://purl.obolibrary.org/obo/FOODON_03000280> (soybean meal (defatted))
 
 AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000115> <http://purl.obolibrary.org/obo/FOODON_03000280> "A soybean meal without hull."@en)
-AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000119> <http://purl.obolibrary.org/obo/FOODON_03000280> "https://en.wikipedia.org/wiki/Soybean_meal"^^xsd:string)
-AnnotationAssertion(<http://purl.org/dc/terms/contributor> <http://purl.obolibrary.org/obo/FOODON_03000280> "https://orcid.org/0000-0001-5275-8866"^^xsd:string)
+AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000119> <http://purl.obolibrary.org/obo/FOODON_03000280> "https://en.wikipedia.org/wiki/Soybean_meal")
+AnnotationAssertion(<http://purl.org/dc/terms/contributor> <http://purl.obolibrary.org/obo/FOODON_03000280> "https://orcid.org/0000-0001-5275-8866")
 AnnotationAssertion(<http://purl.org/dc/terms/date> <http://purl.obolibrary.org/obo/FOODON_03000280> "2023-10-13T19:38:15Z"^^xsd:dateTime)
 AnnotationAssertion(rdfs:label <http://purl.obolibrary.org/obo/FOODON_03000280> "soybean meal (defatted)"@en)
 SubClassOf(<http://purl.obolibrary.org/obo/FOODON_03000280> <http://purl.obolibrary.org/obo/FOODON_00002265>)
@@ -106,7 +253,7 @@ SubClassOf(<http://purl.obolibrary.org/obo/FOODON_03000280> <http://purl.obolibr
 # Class: <http://purl.obolibrary.org/obo/FOODON_03000281> (soy margarine (hydrogenated))
 
 AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000115> <http://purl.obolibrary.org/obo/FOODON_03000281> "Margarine that is made from hydrogenated soy oil."@en)
-AnnotationAssertion(<http://purl.org/dc/terms/contributor> <http://purl.obolibrary.org/obo/FOODON_03000281> "https://orcid.org/0000-0001-5275-8866"^^xsd:string)
+AnnotationAssertion(<http://purl.org/dc/terms/contributor> <http://purl.obolibrary.org/obo/FOODON_03000281> "https://orcid.org/0000-0001-5275-8866")
 AnnotationAssertion(<http://purl.org/dc/terms/date> <http://purl.obolibrary.org/obo/FOODON_03000281> "2023-10-13T19:38:15Z"^^xsd:dateTime)
 AnnotationAssertion(rdfs:label <http://purl.obolibrary.org/obo/FOODON_03000281> "soy margarine (hydrogenated)"@en)
 SubClassOf(<http://purl.obolibrary.org/obo/FOODON_03000281> <http://purl.obolibrary.org/obo/FOODON_00002022>)
@@ -115,8 +262,8 @@ SubClassOf(<http://purl.obolibrary.org/obo/FOODON_03000281> <http://purl.obolibr
 # Class: <http://purl.obolibrary.org/obo/FOODON_03000282> (skim milk (vitamin A and D fortified))
 
 AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000115> <http://purl.obolibrary.org/obo/FOODON_03000282> "Skim milk that is  Vitamin A and Vitamin D fortified."@en)
-AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000119> <http://purl.obolibrary.org/obo/FOODON_03000282> "https://www.healthline.com/nutrition/fortified-milk"^^xsd:string)
-AnnotationAssertion(<http://purl.org/dc/terms/contributor> <http://purl.obolibrary.org/obo/FOODON_03000282> "https://orcid.org/0000-0001-5275-8866"^^xsd:string)
+AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000119> <http://purl.obolibrary.org/obo/FOODON_03000282> "https://www.healthline.com/nutrition/fortified-milk")
+AnnotationAssertion(<http://purl.org/dc/terms/contributor> <http://purl.obolibrary.org/obo/FOODON_03000282> "https://orcid.org/0000-0001-5275-8866")
 AnnotationAssertion(<http://purl.org/dc/terms/date> <http://purl.obolibrary.org/obo/FOODON_03000282> "2023-10-13T19:38:15Z"^^xsd:dateTime)
 AnnotationAssertion(rdfs:label <http://purl.obolibrary.org/obo/FOODON_03000282> "skim milk (vitamin A and D fortified)"@en)
 SubClassOf(<http://purl.obolibrary.org/obo/FOODON_03000282> <http://purl.obolibrary.org/obo/FOODON_00003237>)
@@ -124,7 +271,7 @@ SubClassOf(<http://purl.obolibrary.org/obo/FOODON_03000282> <http://purl.obolibr
 # Class: <http://purl.obolibrary.org/obo/FOODON_03000283> (skim milk (vitamin A and D fortified, nonfat milk solids added))
 
 AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000115> <http://purl.obolibrary.org/obo/FOODON_03000283> "Skim milk which is Vitamin A and Vitamin D fortified and also have nonfat milk solids added in it."@en)
-AnnotationAssertion(<http://purl.org/dc/terms/contributor> <http://purl.obolibrary.org/obo/FOODON_03000283> "https://orcid.org/0000-0001-5275-8866"^^xsd:string)
+AnnotationAssertion(<http://purl.org/dc/terms/contributor> <http://purl.obolibrary.org/obo/FOODON_03000283> "https://orcid.org/0000-0001-5275-8866")
 AnnotationAssertion(<http://purl.org/dc/terms/date> <http://purl.obolibrary.org/obo/FOODON_03000283> "2023-10-13T19:38:15Z"^^xsd:dateTime)
 AnnotationAssertion(rdfs:label <http://purl.obolibrary.org/obo/FOODON_03000283> "skim milk (vitamin A and D fortified, nonfat milk solids added)"@en)
 SubClassOf(<http://purl.obolibrary.org/obo/FOODON_03000283> <http://purl.obolibrary.org/obo/FOODON_00003237>)
@@ -132,7 +279,7 @@ SubClassOf(<http://purl.obolibrary.org/obo/FOODON_03000283> <http://purl.obolibr
 # Class: <http://purl.obolibrary.org/obo/FOODON_03000284> (skim milk (vitamin A and D fortified, protein fortified))
 
 AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000115> <http://purl.obolibrary.org/obo/FOODON_03000284> "Skim milk which is Vitamin A, Vitamin D and protein fortified."@en)
-AnnotationAssertion(<http://purl.org/dc/terms/contributor> <http://purl.obolibrary.org/obo/FOODON_03000284> "https://orcid.org/0000-0001-5275-8866"^^xsd:string)
+AnnotationAssertion(<http://purl.org/dc/terms/contributor> <http://purl.obolibrary.org/obo/FOODON_03000284> "https://orcid.org/0000-0001-5275-8866")
 AnnotationAssertion(<http://purl.org/dc/terms/date> <http://purl.obolibrary.org/obo/FOODON_03000284> "2023-10-13T19:38:15Z"^^xsd:dateTime)
 AnnotationAssertion(rdfs:label <http://purl.obolibrary.org/obo/FOODON_03000284> "skim milk (vitamin A and D fortified, protein fortified)"@en)
 SubClassOf(<http://purl.obolibrary.org/obo/FOODON_03000284> <http://purl.obolibrary.org/obo/FOODON_00003237>)
@@ -140,7 +287,7 @@ SubClassOf(<http://purl.obolibrary.org/obo/FOODON_03000284> <http://purl.obolibr
 # Class: <http://purl.obolibrary.org/obo/FOODON_03000285> (lowfat cow milk (1% fat, vitamin A and D fortified, nonfat milk solids added))
 
 AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000115> <http://purl.obolibrary.org/obo/FOODON_03000285> "Low fat cow milk that contains 1% fat, and is Vitamin A and Vitamin D fortified, and has nonfat milk solids added in it."@en)
-AnnotationAssertion(<http://purl.org/dc/terms/contributor> <http://purl.obolibrary.org/obo/FOODON_03000285> "https://orcid.org/0000-0001-5275-8866"^^xsd:string)
+AnnotationAssertion(<http://purl.org/dc/terms/contributor> <http://purl.obolibrary.org/obo/FOODON_03000285> "https://orcid.org/0000-0001-5275-8866")
 AnnotationAssertion(<http://purl.org/dc/terms/date> <http://purl.obolibrary.org/obo/FOODON_03000285> "2023-10-13T19:38:15Z"^^xsd:dateTime)
 AnnotationAssertion(rdfs:label <http://purl.obolibrary.org/obo/FOODON_03000285> "lowfat cow milk (1% fat, vitamin A and D fortified, nonfat milk solids added)"@en)
 SubClassOf(<http://purl.obolibrary.org/obo/FOODON_03000285> <http://purl.obolibrary.org/obo/FOODON_00002815>)
@@ -148,7 +295,7 @@ SubClassOf(<http://purl.obolibrary.org/obo/FOODON_03000285> <http://purl.obolibr
 # Class: <http://purl.obolibrary.org/obo/FOODON_03000286> (yellow mustard (prepared))
 
 AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000115> <http://purl.obolibrary.org/obo/FOODON_03000286> "A food product that is made from yellow mustard."@en)
-AnnotationAssertion(<http://purl.org/dc/terms/contributor> <http://purl.obolibrary.org/obo/FOODON_03000286> "https://orcid.org/0000-0001-5275-8866"^^xsd:string)
+AnnotationAssertion(<http://purl.org/dc/terms/contributor> <http://purl.obolibrary.org/obo/FOODON_03000286> "https://orcid.org/0000-0001-5275-8866")
 AnnotationAssertion(<http://purl.org/dc/terms/date> <http://purl.obolibrary.org/obo/FOODON_03000286> "2023-10-13T19:38:15Z"^^xsd:dateTime)
 AnnotationAssertion(rdfs:label <http://purl.obolibrary.org/obo/FOODON_03000286> "yellow mustard (prepared)"@en)
 SubClassOf(<http://purl.obolibrary.org/obo/FOODON_03000286> <http://purl.obolibrary.org/obo/FOODON_03301186>)
@@ -156,8 +303,8 @@ SubClassOf(<http://purl.obolibrary.org/obo/FOODON_03000286> <http://purl.obolibr
 # Class: <http://purl.obolibrary.org/obo/FOODON_03000287> (cheese)
 
 AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000115> <http://purl.obolibrary.org/obo/FOODON_03000287> "A dairy product that is formed by coagulation of the milk protein casein."@en)
-AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000119> <http://purl.obolibrary.org/obo/FOODON_03000287> "https://en.wikipedia.org/wiki/Cheese"^^xsd:string)
-AnnotationAssertion(<http://purl.org/dc/terms/contributor> <http://purl.obolibrary.org/obo/FOODON_03000287> "https://orcid.org/0000-0001-5275-8866"^^xsd:string)
+AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000119> <http://purl.obolibrary.org/obo/FOODON_03000287> "https://en.wikipedia.org/wiki/Cheese")
+AnnotationAssertion(<http://purl.org/dc/terms/contributor> <http://purl.obolibrary.org/obo/FOODON_03000287> "https://orcid.org/0000-0001-5275-8866")
 AnnotationAssertion(<http://purl.org/dc/terms/date> <http://purl.obolibrary.org/obo/FOODON_03000287> "2023-10-13T19:38:15Z"^^xsd:dateTime)
 AnnotationAssertion(rdfs:label <http://purl.obolibrary.org/obo/FOODON_03000287> "cheese"@en)
 SubClassOf(<http://purl.obolibrary.org/obo/FOODON_03000287> <http://purl.obolibrary.org/obo/FOODON_00001013>)
@@ -165,8 +312,8 @@ SubClassOf(<http://purl.obolibrary.org/obo/FOODON_03000287> <http://purl.obolibr
 # Class: <http://purl.obolibrary.org/obo/FOODON_03000288> (bread)
 
 AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000115> <http://purl.obolibrary.org/obo/FOODON_03000288> "A food prepared from a dough of flour and water, usually by baking."@en)
-AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000119> <http://purl.obolibrary.org/obo/FOODON_03000288> "https://en.wikipedia.org/wiki/Bread"^^xsd:string)
-AnnotationAssertion(<http://purl.org/dc/terms/contributor> <http://purl.obolibrary.org/obo/FOODON_03000288> "https://orcid.org/0000-0001-5275-8866"^^xsd:string)
+AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000119> <http://purl.obolibrary.org/obo/FOODON_03000288> "https://en.wikipedia.org/wiki/Bread")
+AnnotationAssertion(<http://purl.org/dc/terms/contributor> <http://purl.obolibrary.org/obo/FOODON_03000288> "https://orcid.org/0000-0001-5275-8866")
 AnnotationAssertion(<http://purl.org/dc/terms/date> <http://purl.obolibrary.org/obo/FOODON_03000288> "2023-10-13T19:38:15Z"^^xsd:dateTime)
 AnnotationAssertion(rdfs:label <http://purl.obolibrary.org/obo/FOODON_03000288> "bread"@en)
 SubClassOf(<http://purl.obolibrary.org/obo/FOODON_03000288> <http://purl.obolibrary.org/obo/FOODON_00001183>)
@@ -174,7 +321,7 @@ SubClassOf(<http://purl.obolibrary.org/obo/FOODON_03000288> <http://purl.obolibr
 # Class: <http://purl.obolibrary.org/obo/FOODON_03000289> (chocolate milk (reduced fat))
 
 AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000115> <http://purl.obolibrary.org/obo/FOODON_03000289> "Chocolate milk in which milk fat is 2% of the total weight of the milk."@en)
-AnnotationAssertion(<http://purl.org/dc/terms/contributor> <http://purl.obolibrary.org/obo/FOODON_03000289> "https://orcid.org/0000-0001-5275-8866"^^xsd:string)
+AnnotationAssertion(<http://purl.org/dc/terms/contributor> <http://purl.obolibrary.org/obo/FOODON_03000289> "https://orcid.org/0000-0001-5275-8866")
 AnnotationAssertion(<http://purl.org/dc/terms/date> <http://purl.obolibrary.org/obo/FOODON_03000289> "2023-10-13T19:38:15Z"^^xsd:dateTime)
 AnnotationAssertion(rdfs:label <http://purl.obolibrary.org/obo/FOODON_03000289> "chocolate milk (reduced fat)"@en)
 SubClassOf(<http://purl.obolibrary.org/obo/FOODON_03000289> <http://purl.obolibrary.org/obo/FOODON_03305509>)
@@ -182,7 +329,7 @@ SubClassOf(<http://purl.obolibrary.org/obo/FOODON_03000289> <http://purl.obolibr
 # Class: <http://purl.obolibrary.org/obo/FOODON_03000290> (chocolate milk (reduced fat, vitamin A and D fortified))
 
 AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000115> <http://purl.obolibrary.org/obo/FOODON_03000290> "Reduced fat chocolate milk that is Vitamin A and D fortified."@en)
-AnnotationAssertion(<http://purl.org/dc/terms/contributor> <http://purl.obolibrary.org/obo/FOODON_03000290> "https://orcid.org/0000-0001-5275-8866"^^xsd:string)
+AnnotationAssertion(<http://purl.org/dc/terms/contributor> <http://purl.obolibrary.org/obo/FOODON_03000290> "https://orcid.org/0000-0001-5275-8866")
 AnnotationAssertion(<http://purl.org/dc/terms/date> <http://purl.obolibrary.org/obo/FOODON_03000290> "2023-10-13T19:38:15Z"^^xsd:dateTime)
 AnnotationAssertion(rdfs:label <http://purl.obolibrary.org/obo/FOODON_03000290> "chocolate milk (reduced fat, vitamin A and D fortified)"@en)
 SubClassOf(<http://purl.obolibrary.org/obo/FOODON_03000290> <http://purl.obolibrary.org/obo/FOODON_03000289>)
@@ -190,7 +337,7 @@ SubClassOf(<http://purl.obolibrary.org/obo/FOODON_03000290> <http://purl.obolibr
 # Class: <http://purl.obolibrary.org/obo/FOODON_03000291> (cow milk (reduced fat, vitamin A and D fortified, nonfat milk solids added))
 
 AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000115> <http://purl.obolibrary.org/obo/FOODON_03000291> "Reduced fat cow milk that  and is Vitamin A and Vitamin D fortified and have nonfat milk solids added in it."@en)
-AnnotationAssertion(<http://purl.org/dc/terms/contributor> <http://purl.obolibrary.org/obo/FOODON_03000291> "https://orcid.org/0000-0001-5275-8866"^^xsd:string)
+AnnotationAssertion(<http://purl.org/dc/terms/contributor> <http://purl.obolibrary.org/obo/FOODON_03000291> "https://orcid.org/0000-0001-5275-8866")
 AnnotationAssertion(<http://purl.org/dc/terms/date> <http://purl.obolibrary.org/obo/FOODON_03000291> "2023-10-13T19:38:15Z"^^xsd:dateTime)
 AnnotationAssertion(rdfs:label <http://purl.obolibrary.org/obo/FOODON_03000291> "cow milk (reduced fat, vitamin A and D fortified, nonfat milk solids added)"@en)
 SubClassOf(<http://purl.obolibrary.org/obo/FOODON_03000291> <http://purl.obolibrary.org/obo/FOODON_03000292>)
@@ -198,7 +345,7 @@ SubClassOf(<http://purl.obolibrary.org/obo/FOODON_03000291> <http://purl.obolibr
 # Class: <http://purl.obolibrary.org/obo/FOODON_03000292> (cow milk (reduced fat))
 
 AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000115> <http://purl.obolibrary.org/obo/FOODON_03000292> "Cow milk that has approximately 2% fat."@en)
-AnnotationAssertion(<http://purl.org/dc/terms/contributor> <http://purl.obolibrary.org/obo/FOODON_03000292> "https://orcid.org/0000-0001-5275-8866"^^xsd:string)
+AnnotationAssertion(<http://purl.org/dc/terms/contributor> <http://purl.obolibrary.org/obo/FOODON_03000292> "https://orcid.org/0000-0001-5275-8866")
 AnnotationAssertion(<http://purl.org/dc/terms/date> <http://purl.obolibrary.org/obo/FOODON_03000292> "2023-10-13T19:38:15Z"^^xsd:dateTime)
 AnnotationAssertion(rdfs:label <http://purl.obolibrary.org/obo/FOODON_03000292> "cow milk (reduced fat)"@en)
 SubClassOf(<http://purl.obolibrary.org/obo/FOODON_03000292> <http://purl.obolibrary.org/obo/FOODON_03302116>)
@@ -206,7 +353,7 @@ SubClassOf(<http://purl.obolibrary.org/obo/FOODON_03000292> <http://purl.obolibr
 # Class: <http://purl.obolibrary.org/obo/FOODON_03000293> (cow milk (reduced fat, vitamin A and D fortified, protein fortified))
 
 AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000115> <http://purl.obolibrary.org/obo/FOODON_03000293> "Reduced fat cow milk that is Vitamin A, Vitamin D and protein fortified."@en)
-AnnotationAssertion(<http://purl.org/dc/terms/contributor> <http://purl.obolibrary.org/obo/FOODON_03000293> "https://orcid.org/0000-0001-5275-8866"^^xsd:string)
+AnnotationAssertion(<http://purl.org/dc/terms/contributor> <http://purl.obolibrary.org/obo/FOODON_03000293> "https://orcid.org/0000-0001-5275-8866")
 AnnotationAssertion(<http://purl.org/dc/terms/date> <http://purl.obolibrary.org/obo/FOODON_03000293> "2023-10-13T19:38:15Z"^^xsd:dateTime)
 AnnotationAssertion(rdfs:label <http://purl.obolibrary.org/obo/FOODON_03000293> "cow milk (reduced fat, vitamin A and D fortified, protein fortified)"@en)
 SubClassOf(<http://purl.obolibrary.org/obo/FOODON_03000293> <http://purl.obolibrary.org/obo/FOODON_03000292>)
@@ -214,8 +361,8 @@ SubClassOf(<http://purl.obolibrary.org/obo/FOODON_03000293> <http://purl.obolibr
 # Class: <http://purl.obolibrary.org/obo/FOODON_03000294> (chocolate whole milk (vitamin A and D fortified))
 
 AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000115> <http://purl.obolibrary.org/obo/FOODON_03000294> "Chocolate whole milk that is Vitamin A and D fortified."@en)
-AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000119> <http://purl.obolibrary.org/obo/FOODON_03000294> "https://nunuchocolates.com/whole-chocolate-milk-the-good-the-bad-and-the-delicious/"^^xsd:string)
-AnnotationAssertion(<http://purl.org/dc/terms/contributor> <http://purl.obolibrary.org/obo/FOODON_03000294> "https://orcid.org/0000-0001-5275-8866"^^xsd:string)
+AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000119> <http://purl.obolibrary.org/obo/FOODON_03000294> "https://nunuchocolates.com/whole-chocolate-milk-the-good-the-bad-and-the-delicious/")
+AnnotationAssertion(<http://purl.org/dc/terms/contributor> <http://purl.obolibrary.org/obo/FOODON_03000294> "https://orcid.org/0000-0001-5275-8866")
 AnnotationAssertion(<http://purl.org/dc/terms/date> <http://purl.obolibrary.org/obo/FOODON_03000294> "2023-10-13T19:38:15Z"^^xsd:dateTime)
 AnnotationAssertion(rdfs:label <http://purl.obolibrary.org/obo/FOODON_03000294> "chocolate whole milk (vitamin A and D fortified)"@en)
 SubClassOf(<http://purl.obolibrary.org/obo/FOODON_03000294> <http://purl.obolibrary.org/obo/FOODON_03305509>)
@@ -223,7 +370,7 @@ SubClassOf(<http://purl.obolibrary.org/obo/FOODON_03000294> <http://purl.obolibr
 # Class: <http://purl.obolibrary.org/obo/FOODON_03000295> (ucuhuba butter oil)
 
 AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000115> <http://purl.obolibrary.org/obo/FOODON_03000295> "Butter oil that is made from the seeds of ucuuba tree (Virola surinamensis)."@en)
-AnnotationAssertion(<http://purl.org/dc/terms/contributor> <http://purl.obolibrary.org/obo/FOODON_03000295> "https://orcid.org/0000-0001-5275-8866"^^xsd:string)
+AnnotationAssertion(<http://purl.org/dc/terms/contributor> <http://purl.obolibrary.org/obo/FOODON_03000295> "https://orcid.org/0000-0001-5275-8866")
 AnnotationAssertion(<http://purl.org/dc/terms/date> <http://purl.obolibrary.org/obo/FOODON_03000295> "2023-10-13T19:38:15Z"^^xsd:dateTime)
 AnnotationAssertion(rdfs:label <http://purl.obolibrary.org/obo/FOODON_03000295> "ucuhuba butter oil"@en)
 SubClassOf(<http://purl.obolibrary.org/obo/FOODON_03000295> <http://purl.obolibrary.org/obo/FOODON_03302508>)
@@ -231,8 +378,8 @@ SubClassOf(<http://purl.obolibrary.org/obo/FOODON_03000295> <http://purl.obolibr
 # Class: <http://purl.obolibrary.org/obo/FOODON_03000296> (mutton tallow)
 
 AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000115> <http://purl.obolibrary.org/obo/FOODON_03000296> "Rendered fat from a sheep."@en)
-AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000119> <http://purl.obolibrary.org/obo/FOODON_03000296> "https://en.wikipedia.org/wiki/Tallow"^^xsd:string)
-AnnotationAssertion(<http://purl.org/dc/terms/contributor> <http://purl.obolibrary.org/obo/FOODON_03000296> "https://orcid.org/0000-0001-5275-8866"^^xsd:string)
+AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000119> <http://purl.obolibrary.org/obo/FOODON_03000296> "https://en.wikipedia.org/wiki/Tallow")
+AnnotationAssertion(<http://purl.org/dc/terms/contributor> <http://purl.obolibrary.org/obo/FOODON_03000296> "https://orcid.org/0000-0001-5275-8866")
 AnnotationAssertion(<http://purl.org/dc/terms/date> <http://purl.obolibrary.org/obo/FOODON_03000296> "2023-10-13T19:38:15Z"^^xsd:dateTime)
 AnnotationAssertion(rdfs:label <http://purl.obolibrary.org/obo/FOODON_03000296> "mutton tallow"@en)
 SubClassOf(<http://purl.obolibrary.org/obo/FOODON_03000296> <http://purl.obolibrary.org/obo/FOODON_03315521>)
@@ -240,8 +387,8 @@ SubClassOf(<http://purl.obolibrary.org/obo/FOODON_03000296> <http://purl.obolibr
 # Class: <http://purl.obolibrary.org/obo/FOODON_03000463> (cod liver oil)
 
 AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000115> <http://purl.obolibrary.org/obo/FOODON_03000463> "A fish oil that is derived from the liver of cod fish."@en)
-AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000119> <http://purl.obolibrary.org/obo/FOODON_03000463> "https://en.wikipedia.org/wiki/Cod_liver_oil"^^xsd:string)
-AnnotationAssertion(<http://purl.org/dc/terms/contributor> <http://purl.obolibrary.org/obo/FOODON_03000463> "https://orcid.org/0000-0001-5275-8866"^^xsd:string)
+AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000119> <http://purl.obolibrary.org/obo/FOODON_03000463> "https://en.wikipedia.org/wiki/Cod_liver_oil")
+AnnotationAssertion(<http://purl.org/dc/terms/contributor> <http://purl.obolibrary.org/obo/FOODON_03000463> "https://orcid.org/0000-0001-5275-8866")
 AnnotationAssertion(<http://purl.org/dc/terms/date> <http://purl.obolibrary.org/obo/FOODON_03000463> "2023-10-13T19:38:15Z"^^xsd:dateTime)
 AnnotationAssertion(rdfs:label <http://purl.obolibrary.org/obo/FOODON_03000463> "cod liver oil"@en)
 SubClassOf(<http://purl.obolibrary.org/obo/FOODON_03000463> <http://purl.obolibrary.org/obo/FOODON_03306123>)
@@ -249,7 +396,7 @@ SubClassOf(<http://purl.obolibrary.org/obo/FOODON_03000463> <http://purl.obolibr
 # Class: <http://purl.obolibrary.org/obo/FOODON_03000464> (sardine oil)
 
 AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000115> <http://purl.obolibrary.org/obo/FOODON_03000464> "A fish oil that is derived from sardine fish."@en)
-AnnotationAssertion(<http://purl.org/dc/terms/contributor> <http://purl.obolibrary.org/obo/FOODON_03000464> "https://orcid.org/0000-0001-5275-8866"^^xsd:string)
+AnnotationAssertion(<http://purl.org/dc/terms/contributor> <http://purl.obolibrary.org/obo/FOODON_03000464> "https://orcid.org/0000-0001-5275-8866")
 AnnotationAssertion(<http://purl.org/dc/terms/date> <http://purl.obolibrary.org/obo/FOODON_03000464> "2023-10-13T19:38:15Z"^^xsd:dateTime)
 AnnotationAssertion(rdfs:label <http://purl.obolibrary.org/obo/FOODON_03000464> "sardine oil"@en)
 SubClassOf(<http://purl.obolibrary.org/obo/FOODON_03000464> <http://purl.obolibrary.org/obo/FOODON_03306123>)
@@ -257,8 +404,8 @@ SubClassOf(<http://purl.obolibrary.org/obo/FOODON_03000464> <http://purl.obolibr
 # Class: <http://purl.obolibrary.org/obo/FOODON_03000465> (menhaden oil)
 
 AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000115> <http://purl.obolibrary.org/obo/FOODON_03000465> "A fish oil that is derived from menhaden fish."@en)
-AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000119> <http://purl.obolibrary.org/obo/FOODON_03000465> "https://www.sciencedirect.com/topics/neuroscience/menhaden-oil"^^xsd:string)
-AnnotationAssertion(<http://purl.org/dc/terms/contributor> <http://purl.obolibrary.org/obo/FOODON_03000465> "https://orcid.org/0000-0001-5275-8866"^^xsd:string)
+AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000119> <http://purl.obolibrary.org/obo/FOODON_03000465> "https://www.sciencedirect.com/topics/neuroscience/menhaden-oil")
+AnnotationAssertion(<http://purl.org/dc/terms/contributor> <http://purl.obolibrary.org/obo/FOODON_03000465> "https://orcid.org/0000-0001-5275-8866")
 AnnotationAssertion(<http://purl.org/dc/terms/date> <http://purl.obolibrary.org/obo/FOODON_03000465> "2023-10-13T19:38:15Z"^^xsd:dateTime)
 AnnotationAssertion(rdfs:label <http://purl.obolibrary.org/obo/FOODON_03000465> "menhaden oil"@en)
 SubClassOf(<http://purl.obolibrary.org/obo/FOODON_03000465> <http://purl.obolibrary.org/obo/FOODON_03306123>)
@@ -266,7 +413,7 @@ SubClassOf(<http://purl.obolibrary.org/obo/FOODON_03000465> <http://purl.obolibr
 # Class: <http://purl.obolibrary.org/obo/FOODON_03000466> (menhaden oil (hydrogenated))
 
 AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000115> <http://purl.obolibrary.org/obo/FOODON_03000466> "A hydrogenated derivative of menhaden oil."@en)
-AnnotationAssertion(<http://purl.org/dc/terms/contributor> <http://purl.obolibrary.org/obo/FOODON_03000466> "https://orcid.org/0000-0001-5275-8866"^^xsd:string)
+AnnotationAssertion(<http://purl.org/dc/terms/contributor> <http://purl.obolibrary.org/obo/FOODON_03000466> "https://orcid.org/0000-0001-5275-8866")
 AnnotationAssertion(<http://purl.org/dc/terms/date> <http://purl.obolibrary.org/obo/FOODON_03000466> "2023-10-13T19:38:15Z"^^xsd:dateTime)
 AnnotationAssertion(rdfs:label <http://purl.obolibrary.org/obo/FOODON_03000466> "menhaden oil (hydrogenated)"@en)
 SubClassOf(<http://purl.obolibrary.org/obo/FOODON_03000466> <http://purl.obolibrary.org/obo/FOODON_03000465>)
@@ -274,7 +421,7 @@ SubClassOf(<http://purl.obolibrary.org/obo/FOODON_03000466> <http://purl.obolibr
 # Class: <http://purl.obolibrary.org/obo/FOODON_03000467> (cow whole milk 3.5% fat (vitamin D fortified))
 
 AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000115> <http://purl.obolibrary.org/obo/FOODON_03000467> "Cow whole milk that is Vitamin A andVitamin D fortified."@en)
-AnnotationAssertion(<http://purl.org/dc/terms/contributor> <http://purl.obolibrary.org/obo/FOODON_03000467> "https://orcid.org/0000-0001-5275-8866"^^xsd:string)
+AnnotationAssertion(<http://purl.org/dc/terms/contributor> <http://purl.obolibrary.org/obo/FOODON_03000467> "https://orcid.org/0000-0001-5275-8866")
 AnnotationAssertion(<http://purl.org/dc/terms/date> <http://purl.obolibrary.org/obo/FOODON_03000467> "2023-10-13T19:38:15Z"^^xsd:dateTime)
 AnnotationAssertion(rdfs:label <http://purl.obolibrary.org/obo/FOODON_03000467> "cow whole milk 3.5% fat (vitamin D fortified)"@en)
 SubClassOf(<http://purl.obolibrary.org/obo/FOODON_03000467> <http://purl.obolibrary.org/obo/FOODON_03310780>)
@@ -282,7 +429,7 @@ SubClassOf(<http://purl.obolibrary.org/obo/FOODON_03000467> <http://purl.obolibr
 # Class: <http://purl.obolibrary.org/obo/FOODON_03000468> (chocolate milk (low fat, Vitamin A and D fortified))
 
 AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000115> <http://purl.obolibrary.org/obo/FOODON_03000468> "Low fat chocolate milk that is Vitamin A and Vitamin D fortified."@en)
-AnnotationAssertion(<http://purl.org/dc/terms/contributor> <http://purl.obolibrary.org/obo/FOODON_03000468> "https://orcid.org/0000-0001-5275-8866"^^xsd:string)
+AnnotationAssertion(<http://purl.org/dc/terms/contributor> <http://purl.obolibrary.org/obo/FOODON_03000468> "https://orcid.org/0000-0001-5275-8866")
 AnnotationAssertion(<http://purl.org/dc/terms/date> <http://purl.obolibrary.org/obo/FOODON_03000468> "2023-10-13T19:38:15Z"^^xsd:dateTime)
 AnnotationAssertion(rdfs:label <http://purl.obolibrary.org/obo/FOODON_03000468> "chocolate milk (low fat, Vitamin A and D fortified)"@en)
 SubClassOf(<http://purl.obolibrary.org/obo/FOODON_03000468> <http://purl.obolibrary.org/obo/FOODON_03304793>)
@@ -290,8 +437,8 @@ SubClassOf(<http://purl.obolibrary.org/obo/FOODON_03000468> <http://purl.obolibr
 # Class: <http://purl.obolibrary.org/obo/FOODON_03000469> (arrowroot flour)
 
 AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000115> <http://purl.obolibrary.org/obo/FOODON_03000469> "A white, powdery starch extracted from the rhizome of an arrowroot plant (Maranta arundinacea), which is naturally gluten-free and grain-free."@en)
-AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000119> <http://purl.obolibrary.org/obo/FOODON_03000469> "https://en.wikipedia.org/wiki/Arrowroot"^^xsd:string)
-AnnotationAssertion(<http://purl.org/dc/terms/contributor> <http://purl.obolibrary.org/obo/FOODON_03000469> "https://orcid.org/0000-0001-5275-8866"^^xsd:string)
+AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000119> <http://purl.obolibrary.org/obo/FOODON_03000469> "https://en.wikipedia.org/wiki/Arrowroot")
+AnnotationAssertion(<http://purl.org/dc/terms/contributor> <http://purl.obolibrary.org/obo/FOODON_03000469> "https://orcid.org/0000-0001-5275-8866")
 AnnotationAssertion(<http://purl.org/dc/terms/date> <http://purl.obolibrary.org/obo/FOODON_03000469> "2023-10-13T19:38:15Z"^^xsd:dateTime)
 AnnotationAssertion(rdfs:label <http://purl.obolibrary.org/obo/FOODON_03000469> "arrowroot flour"@en)
 SubClassOf(<http://purl.obolibrary.org/obo/FOODON_03000469> <http://purl.obolibrary.org/obo/FOODON_03000491>)
@@ -299,8 +446,8 @@ SubClassOf(<http://purl.obolibrary.org/obo/FOODON_03000469> <http://purl.obolibr
 # Class: <http://purl.obolibrary.org/obo/FOODON_03000470> (shortening (partially hydrogenated))
 
 AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000115> <http://purl.obolibrary.org/obo/FOODON_03000470> "Shortening made from partially hydrogenated oil."@en)
-AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000119> <http://purl.obolibrary.org/obo/FOODON_03000470> "https://bakerpedia.com/ingredients/partially-hydrogenated-oil-pho/"^^xsd:string)
-AnnotationAssertion(<http://purl.org/dc/terms/contributor> <http://purl.obolibrary.org/obo/FOODON_03000470> "https://orcid.org/0000-0001-5275-8866"^^xsd:string)
+AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000119> <http://purl.obolibrary.org/obo/FOODON_03000470> "https://bakerpedia.com/ingredients/partially-hydrogenated-oil-pho/")
+AnnotationAssertion(<http://purl.org/dc/terms/contributor> <http://purl.obolibrary.org/obo/FOODON_03000470> "https://orcid.org/0000-0001-5275-8866")
 AnnotationAssertion(<http://purl.org/dc/terms/date> <http://purl.obolibrary.org/obo/FOODON_03000470> "2023-10-13T19:38:15Z"^^xsd:dateTime)
 AnnotationAssertion(rdfs:label <http://purl.obolibrary.org/obo/FOODON_03000470> "shortening (partially hydrogenated)"@en)
 SubClassOf(<http://purl.obolibrary.org/obo/FOODON_03000470> <http://purl.obolibrary.org/obo/FOODON_03301314>)
@@ -308,7 +455,7 @@ SubClassOf(<http://purl.obolibrary.org/obo/FOODON_03000470> <http://purl.obolibr
 # Class: <http://purl.obolibrary.org/obo/FOODON_03000471> (goat milk (vitamin d fortified))
 
 AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000115> <http://purl.obolibrary.org/obo/FOODON_03000471> "Goat milk that is vitamin D fortified."@en)
-AnnotationAssertion(<http://purl.org/dc/terms/contributor> <http://purl.obolibrary.org/obo/FOODON_03000471> "https://orcid.org/0000-0001-5275-8866"^^xsd:string)
+AnnotationAssertion(<http://purl.org/dc/terms/contributor> <http://purl.obolibrary.org/obo/FOODON_03000471> "https://orcid.org/0000-0001-5275-8866")
 AnnotationAssertion(<http://purl.org/dc/terms/date> <http://purl.obolibrary.org/obo/FOODON_03000471> "2023-10-13T19:38:15Z"^^xsd:dateTime)
 AnnotationAssertion(rdfs:label <http://purl.obolibrary.org/obo/FOODON_03000471> "goat milk (vitamin d fortified)"@en)
 SubClassOf(<http://purl.obolibrary.org/obo/FOODON_03000471> <http://purl.obolibrary.org/obo/FOODON_00001911>)
@@ -316,7 +463,7 @@ SubClassOf(<http://purl.obolibrary.org/obo/FOODON_03000471> <http://purl.obolibr
 # Class: <http://purl.obolibrary.org/obo/FOODON_03000472> (ricotta cheese (made from whole milk))
 
 AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000115> <http://purl.obolibrary.org/obo/FOODON_03000472> "Ricotta chesse that is made from whole milk."@en)
-AnnotationAssertion(<http://purl.org/dc/terms/contributor> <http://purl.obolibrary.org/obo/FOODON_03000472> "https://orcid.org/0000-0001-5275-8866"^^xsd:string)
+AnnotationAssertion(<http://purl.org/dc/terms/contributor> <http://purl.obolibrary.org/obo/FOODON_03000472> "https://orcid.org/0000-0001-5275-8866")
 AnnotationAssertion(<http://purl.org/dc/terms/date> <http://purl.obolibrary.org/obo/FOODON_03000472> "2023-10-13T19:38:15Z"^^xsd:dateTime)
 AnnotationAssertion(rdfs:label <http://purl.obolibrary.org/obo/FOODON_03000472> "ricotta cheese (made from whole milk)"@en)
 SubClassOf(<http://purl.obolibrary.org/obo/FOODON_03000472> <http://purl.obolibrary.org/obo/FOODON_03302908>)
@@ -324,24 +471,24 @@ SubClassOf(<http://purl.obolibrary.org/obo/FOODON_03000472> <http://purl.obolibr
 # Class: <http://purl.obolibrary.org/obo/FOODON_03000473> (romano cheese)
 
 AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000115> <http://purl.obolibrary.org/obo/FOODON_03000473> "Hard grating cheese that is made from cow, goat, and/or sheep's milk and contain less than 34% water and at least 38% milkfat."@en)
-AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000119> <http://purl.obolibrary.org/obo/FOODON_03000473> "https://en.wikipedia.org/wiki/Romano_cheese"^^xsd:string)
-AnnotationAssertion(<http://purl.org/dc/terms/contributor> <http://purl.obolibrary.org/obo/FOODON_03000473> "https://orcid.org/0000-0001-5275-8866"^^xsd:string)
+AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000119> <http://purl.obolibrary.org/obo/FOODON_03000473> "https://en.wikipedia.org/wiki/Romano_cheese")
+AnnotationAssertion(<http://purl.org/dc/terms/contributor> <http://purl.obolibrary.org/obo/FOODON_03000473> "https://orcid.org/0000-0001-5275-8866")
 AnnotationAssertion(<http://purl.org/dc/terms/date> <http://purl.obolibrary.org/obo/FOODON_03000473> "2023-10-13T19:38:15Z"^^xsd:dateTime)
 AnnotationAssertion(rdfs:label <http://purl.obolibrary.org/obo/FOODON_03000473> "romano cheese"@en)
 SubClassOf(<http://purl.obolibrary.org/obo/FOODON_03000473> <http://purl.obolibrary.org/obo/FOODON_00001946>)
 
-# Class: <http://purl.obolibrary.org/obo/FOODON_03000474> (cow buttermilk ( low fat, cultured))
+# Class: <http://purl.obolibrary.org/obo/FOODON_03000474> (cow buttermilk (low fat, cultured))
 
 AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000115> <http://purl.obolibrary.org/obo/FOODON_03000474> "Cow buttermilk that has low fat and is cultured."@en)
-AnnotationAssertion(<http://purl.org/dc/terms/contributor> <http://purl.obolibrary.org/obo/FOODON_03000474> "https://orcid.org/0000-0001-5275-8866"^^xsd:string)
+AnnotationAssertion(<http://purl.org/dc/terms/contributor> <http://purl.obolibrary.org/obo/FOODON_03000474> "https://orcid.org/0000-0001-5275-8866")
 AnnotationAssertion(<http://purl.org/dc/terms/date> <http://purl.obolibrary.org/obo/FOODON_03000474> "2023-10-13T19:38:15Z"^^xsd:dateTime)
-AnnotationAssertion(rdfs:label <http://purl.obolibrary.org/obo/FOODON_03000474> "cow buttermilk ( low fat, cultured)"@en)
+AnnotationAssertion(rdfs:label <http://purl.obolibrary.org/obo/FOODON_03000474> "cow buttermilk (low fat, cultured)"@en)
 SubClassOf(<http://purl.obolibrary.org/obo/FOODON_03000474> <http://purl.obolibrary.org/obo/FOODON_00001769>)
 
 # Class: <http://purl.obolibrary.org/obo/FOODON_03000475> (cottage cheese (reduced fat))
 
 AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000115> <http://purl.obolibrary.org/obo/FOODON_03000475> "Cottage cheese that has 2% milk fat."@en)
-AnnotationAssertion(<http://purl.org/dc/terms/contributor> <http://purl.obolibrary.org/obo/FOODON_03000475> "https://orcid.org/0000-0001-5275-8866"^^xsd:string)
+AnnotationAssertion(<http://purl.org/dc/terms/contributor> <http://purl.obolibrary.org/obo/FOODON_03000475> "https://orcid.org/0000-0001-5275-8866")
 AnnotationAssertion(<http://purl.org/dc/terms/date> <http://purl.obolibrary.org/obo/FOODON_03000475> "2023-10-13T19:38:15Z"^^xsd:dateTime)
 AnnotationAssertion(rdfs:label <http://purl.obolibrary.org/obo/FOODON_03000475> "cottage cheese (reduced fat)"@en)
 SubClassOf(<http://purl.obolibrary.org/obo/FOODON_03000475> <http://purl.obolibrary.org/obo/FOODON_03301605>)
@@ -349,7 +496,7 @@ SubClassOf(<http://purl.obolibrary.org/obo/FOODON_03000475> <http://purl.obolibr
 # Class: <http://purl.obolibrary.org/obo/FOODON_03000476> (butter (whipped, salted))
 
 AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000115> <http://purl.obolibrary.org/obo/FOODON_03000476> "Whipped butter that contains salt."@en)
-AnnotationAssertion(<http://purl.org/dc/terms/contributor> <http://purl.obolibrary.org/obo/FOODON_03000476> "https://orcid.org/0000-0001-5275-8866"^^xsd:string)
+AnnotationAssertion(<http://purl.org/dc/terms/contributor> <http://purl.obolibrary.org/obo/FOODON_03000476> "https://orcid.org/0000-0001-5275-8866")
 AnnotationAssertion(<http://purl.org/dc/terms/date> <http://purl.obolibrary.org/obo/FOODON_03000476> "2023-10-13T19:38:15Z"^^xsd:dateTime)
 AnnotationAssertion(<http://www.geneontology.org/formats/oboInOwl#hasExactSynonym> <http://purl.obolibrary.org/obo/FOODON_03000476> "sour cream (reduced fat)"@en)
 AnnotationAssertion(rdfs:label <http://purl.obolibrary.org/obo/FOODON_03000476> "butter (whipped, salted)"@en)
@@ -358,7 +505,7 @@ SubClassOf(<http://purl.obolibrary.org/obo/FOODON_03000476> <http://purl.obolibr
 # Class: <http://purl.obolibrary.org/obo/FOODON_03000477> (light sour cream)
 
 AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000115> <http://purl.obolibrary.org/obo/FOODON_03000477> "Sour cream that is made from half-and-half and has around 40 percent less fat."@en)
-AnnotationAssertion(<http://purl.org/dc/terms/contributor> <http://purl.obolibrary.org/obo/FOODON_03000477> "https://orcid.org/0000-0001-5275-8866"^^xsd:string)
+AnnotationAssertion(<http://purl.org/dc/terms/contributor> <http://purl.obolibrary.org/obo/FOODON_03000477> "https://orcid.org/0000-0001-5275-8866")
 AnnotationAssertion(<http://purl.org/dc/terms/date> <http://purl.obolibrary.org/obo/FOODON_03000477> "2023-10-13T19:38:15Z"^^xsd:dateTime)
 AnnotationAssertion(rdfs:label <http://purl.obolibrary.org/obo/FOODON_03000477> "light sour cream"@en)
 SubClassOf(<http://purl.obolibrary.org/obo/FOODON_03000477> <http://purl.obolibrary.org/obo/FOODON_03302515>)
@@ -366,7 +513,7 @@ SubClassOf(<http://purl.obolibrary.org/obo/FOODON_03000477> <http://purl.obolibr
 # Class: <http://purl.obolibrary.org/obo/FOODON_03000478> (mozzarella cheese (made with whole milk, low moisture))
 
 AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000115> <http://purl.obolibrary.org/obo/FOODON_03000478> "Mozzeralla cheese that is made from whole cow’s milk and has low moisture."@en)
-AnnotationAssertion(<http://purl.org/dc/terms/contributor> <http://purl.obolibrary.org/obo/FOODON_03000478> "https://orcid.org/0000-0001-5275-8866"^^xsd:string)
+AnnotationAssertion(<http://purl.org/dc/terms/contributor> <http://purl.obolibrary.org/obo/FOODON_03000478> "https://orcid.org/0000-0001-5275-8866")
 AnnotationAssertion(<http://purl.org/dc/terms/date> <http://purl.obolibrary.org/obo/FOODON_03000478> "2023-10-13T19:38:15Z"^^xsd:dateTime)
 AnnotationAssertion(rdfs:label <http://purl.obolibrary.org/obo/FOODON_03000478> "mozzarella cheese (made with whole milk, low moisture)"@en)
 SubClassOf(<http://purl.obolibrary.org/obo/FOODON_03000478> <http://purl.obolibrary.org/obo/FOODON_03303578>)
@@ -374,7 +521,7 @@ SubClassOf(<http://purl.obolibrary.org/obo/FOODON_03000478> <http://purl.obolibr
 # Class: <http://purl.obolibrary.org/obo/FOODON_03000479> (american cheese food product)
 
 AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000115> <http://purl.obolibrary.org/obo/FOODON_03000479> "A cheese food product that is derived from american cheese."@en)
-AnnotationAssertion(<http://purl.org/dc/terms/contributor> <http://purl.obolibrary.org/obo/FOODON_03000479> "https://orcid.org/0000-0001-5275-8866"^^xsd:string)
+AnnotationAssertion(<http://purl.org/dc/terms/contributor> <http://purl.obolibrary.org/obo/FOODON_03000479> "https://orcid.org/0000-0001-5275-8866")
 AnnotationAssertion(<http://purl.org/dc/terms/date> <http://purl.obolibrary.org/obo/FOODON_03000479> "2023-10-13T19:38:15Z"^^xsd:dateTime)
 AnnotationAssertion(rdfs:label <http://purl.obolibrary.org/obo/FOODON_03000479> "american cheese food product"@en)
 SubClassOf(<http://purl.obolibrary.org/obo/FOODON_03000479> <http://purl.obolibrary.org/obo/FOODON_00001013>)
@@ -382,8 +529,8 @@ SubClassOf(<http://purl.obolibrary.org/obo/FOODON_03000479> <http://purl.obolibr
 # Class: <http://purl.obolibrary.org/obo/FOODON_03000480> (american cheese)
 
 AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000115> <http://purl.obolibrary.org/obo/FOODON_03000480> "Cheese that is made from cheddar, Colby, or similar cheeses. It is mild with a creamy and salty flavor, has a medium-firm consistency, and has a low melting point. It is typically yellow or white in color"@en)
-AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000119> <http://purl.obolibrary.org/obo/FOODON_03000480> "https://en.wikipedia.org/wiki/American_cheese"^^xsd:string)
-AnnotationAssertion(<http://purl.org/dc/terms/contributor> <http://purl.obolibrary.org/obo/FOODON_03000480> "https://orcid.org/0000-0001-5275-8866"^^xsd:string)
+AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000119> <http://purl.obolibrary.org/obo/FOODON_03000480> "https://en.wikipedia.org/wiki/American_cheese")
+AnnotationAssertion(<http://purl.org/dc/terms/contributor> <http://purl.obolibrary.org/obo/FOODON_03000480> "https://orcid.org/0000-0001-5275-8866")
 AnnotationAssertion(<http://purl.org/dc/terms/date> <http://purl.obolibrary.org/obo/FOODON_03000480> "2023-10-13T19:38:15Z"^^xsd:dateTime)
 AnnotationAssertion(rdfs:label <http://purl.obolibrary.org/obo/FOODON_03000480> "american cheese"@en)
 SubClassOf(<http://purl.obolibrary.org/obo/FOODON_03000480> <http://purl.obolibrary.org/obo/FOODON_03000479>)
@@ -391,36 +538,36 @@ SubClassOf(<http://purl.obolibrary.org/obo/FOODON_03000480> <http://purl.obolibr
 # Class: <http://purl.obolibrary.org/obo/FOODON_03000481> (american cheese (fat free))
 
 AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000115> <http://purl.obolibrary.org/obo/FOODON_03000481> "American cheese that is made from fat free milk."@en)
-AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000119> <http://purl.obolibrary.org/obo/FOODON_03000481> "https://en.wikipedia.org/wiki/American_cheese"^^xsd:string)
-AnnotationAssertion(<http://purl.org/dc/terms/contributor> <http://purl.obolibrary.org/obo/FOODON_03000481> "https://orcid.org/0000-0001-5275-8866"^^xsd:string)
+AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000119> <http://purl.obolibrary.org/obo/FOODON_03000481> "https://en.wikipedia.org/wiki/American_cheese")
+AnnotationAssertion(<http://purl.org/dc/terms/contributor> <http://purl.obolibrary.org/obo/FOODON_03000481> "https://orcid.org/0000-0001-5275-8866")
 AnnotationAssertion(<http://purl.org/dc/terms/date> <http://purl.obolibrary.org/obo/FOODON_03000481> "2023-10-13T19:38:15Z"^^xsd:dateTime)
 AnnotationAssertion(rdfs:label <http://purl.obolibrary.org/obo/FOODON_03000481> "american cheese (fat free)"@en)
 SubClassOf(<http://purl.obolibrary.org/obo/FOODON_03000481> <http://purl.obolibrary.org/obo/FOODON_03000480>)
 
-# Class: <http://purl.obolibrary.org/obo/FOODON_03000482> (pasteurized process american cheese)
+# Class: <http://purl.obolibrary.org/obo/FOODON_03000482> (american cheese (processed, pasteurized))
 
 AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000115> <http://purl.obolibrary.org/obo/FOODON_03000482> "American cheese that is made from combining more than one cheese."@en)
-AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000119> <http://purl.obolibrary.org/obo/FOODON_03000482> "https://en.wikipedia.org/wiki/American_cheese"^^xsd:string)
-AnnotationAssertion(<http://purl.org/dc/terms/contributor> <http://purl.obolibrary.org/obo/FOODON_03000482> "https://orcid.org/0000-0001-5275-8866"^^xsd:string)
+AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000119> <http://purl.obolibrary.org/obo/FOODON_03000482> "https://en.wikipedia.org/wiki/American_cheese")
+AnnotationAssertion(<http://purl.org/dc/terms/contributor> <http://purl.obolibrary.org/obo/FOODON_03000482> "https://orcid.org/0000-0001-5275-8866")
 AnnotationAssertion(<http://purl.org/dc/terms/date> <http://purl.obolibrary.org/obo/FOODON_03000482> "2023-10-13T19:38:15Z"^^xsd:dateTime)
-AnnotationAssertion(rdfs:label <http://purl.obolibrary.org/obo/FOODON_03000482> "pasteurized process american cheese"@en)
+AnnotationAssertion(rdfs:label <http://purl.obolibrary.org/obo/FOODON_03000482> "american cheese (processed, pasteurized)"@en)
 SubClassOf(<http://purl.obolibrary.org/obo/FOODON_03000482> <http://purl.obolibrary.org/obo/FOODON_03000480>)
 
-# Class: <http://purl.obolibrary.org/obo/FOODON_03000483> (pasteurized process american cheese (vitamin D fortified))
+# Class: <http://purl.obolibrary.org/obo/FOODON_03000483> (american cheese (processed, pasteurized, vitamin D fortified))
 
 AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000115> <http://purl.obolibrary.org/obo/FOODON_03000483> "A pasteurized process american cheese that is vitamin D fortified."@en)
-AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000119> <http://purl.obolibrary.org/obo/FOODON_03000483> "https://en.wikipedia.org/wiki/American_cheese"^^xsd:string)
-AnnotationAssertion(<http://purl.org/dc/terms/contributor> <http://purl.obolibrary.org/obo/FOODON_03000483> "https://orcid.org/0000-0001-5275-8866"^^xsd:string)
+AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000119> <http://purl.obolibrary.org/obo/FOODON_03000483> "https://en.wikipedia.org/wiki/American_cheese")
+AnnotationAssertion(<http://purl.org/dc/terms/contributor> <http://purl.obolibrary.org/obo/FOODON_03000483> "https://orcid.org/0000-0001-5275-8866")
 AnnotationAssertion(<http://purl.org/dc/terms/date> <http://purl.obolibrary.org/obo/FOODON_03000483> "2023-10-13T19:38:15Z"^^xsd:dateTime)
-AnnotationAssertion(rdfs:label <http://purl.obolibrary.org/obo/FOODON_03000483> "pasteurized process american cheese (vitamin D fortified)"@en)
+AnnotationAssertion(rdfs:label <http://purl.obolibrary.org/obo/FOODON_03000483> "american cheese (processed, pasteurized, vitamin D fortified)"@en)
 SubClassOf(<http://purl.obolibrary.org/obo/FOODON_03000483> <http://purl.obolibrary.org/obo/FOODON_03000482>)
 
 # Class: <http://purl.obolibrary.org/obo/FOODON_03000484> (pasteurized process american cheese food)
 
 AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000115> <http://purl.obolibrary.org/obo/FOODON_03000484> "American cheese that contains at least 51% cheese but other specific dairy ingredients such as cream, milk, skim milk, buttermilk, cheese whey, or albumin from cheese whey are added."@en)
-AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000119> <http://purl.obolibrary.org/obo/FOODON_03000484> "https://en.wikipedia.org/wiki/American_cheese"^^xsd:string)
-AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000119> <http://purl.obolibrary.org/obo/FOODON_03000484> "https://www.ams.usda.gov/sites/default/files/media/FINALDPPC5PasteurizedProcessAmericanCheeseSpec092019.pdf "^^xsd:string)
-AnnotationAssertion(<http://purl.org/dc/terms/contributor> <http://purl.obolibrary.org/obo/FOODON_03000484> "https://orcid.org/0000-0001-5275-8866"^^xsd:string)
+AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000119> <http://purl.obolibrary.org/obo/FOODON_03000484> "https://en.wikipedia.org/wiki/American_cheese")
+AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000119> <http://purl.obolibrary.org/obo/FOODON_03000484> "https://www.ams.usda.gov/sites/default/files/media/FINALDPPC5PasteurizedProcessAmericanCheeseSpec092019.pdf ")
+AnnotationAssertion(<http://purl.org/dc/terms/contributor> <http://purl.obolibrary.org/obo/FOODON_03000484> "https://orcid.org/0000-0001-5275-8866")
 AnnotationAssertion(<http://purl.org/dc/terms/date> <http://purl.obolibrary.org/obo/FOODON_03000484> "2023-10-13T19:38:15Z"^^xsd:dateTime)
 AnnotationAssertion(rdfs:label <http://purl.obolibrary.org/obo/FOODON_03000484> "pasteurized process american cheese food"@en)
 SubClassOf(<http://purl.obolibrary.org/obo/FOODON_03000484> <http://purl.obolibrary.org/obo/FOODON_03303517>)
@@ -428,7 +575,7 @@ SubClassOf(<http://purl.obolibrary.org/obo/FOODON_03000484> <http://purl.obolibr
 # Class: <http://purl.obolibrary.org/obo/FOODON_03000485> (pasteurized process american cheese spread)
 
 AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000115> <http://purl.obolibrary.org/obo/FOODON_03000485> "A pasteurized process cheese spread that is derived from american cheese."@en)
-AnnotationAssertion(<http://purl.org/dc/terms/contributor> <http://purl.obolibrary.org/obo/FOODON_03000485> "https://orcid.org/0000-0001-5275-8866"^^xsd:string)
+AnnotationAssertion(<http://purl.org/dc/terms/contributor> <http://purl.obolibrary.org/obo/FOODON_03000485> "https://orcid.org/0000-0001-5275-8866")
 AnnotationAssertion(<http://purl.org/dc/terms/date> <http://purl.obolibrary.org/obo/FOODON_03000485> "2023-10-13T19:38:15Z"^^xsd:dateTime)
 AnnotationAssertion(rdfs:label <http://purl.obolibrary.org/obo/FOODON_03000485> "pasteurized process american cheese spread"@en)
 SubClassOf(<http://purl.obolibrary.org/obo/FOODON_03000485> <http://purl.obolibrary.org/obo/FOODON_03303047>)
@@ -436,7 +583,7 @@ SubClassOf(<http://purl.obolibrary.org/obo/FOODON_03000485> <http://purl.obolibr
 # Class: <http://purl.obolibrary.org/obo/FOODON_03000486> (ricotta cheese (part-skim))
 
 AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000115> <http://purl.obolibrary.org/obo/FOODON_03000486> "Ricotta cheese that is partly skimmed and have less fat and calories."@en)
-AnnotationAssertion(<http://purl.org/dc/terms/contributor> <http://purl.obolibrary.org/obo/FOODON_03000486> "https://orcid.org/0000-0001-5275-8866"^^xsd:string)
+AnnotationAssertion(<http://purl.org/dc/terms/contributor> <http://purl.obolibrary.org/obo/FOODON_03000486> "https://orcid.org/0000-0001-5275-8866")
 AnnotationAssertion(<http://purl.org/dc/terms/date> <http://purl.obolibrary.org/obo/FOODON_03000486> "2023-10-13T19:38:15Z"^^xsd:dateTime)
 AnnotationAssertion(rdfs:label <http://purl.obolibrary.org/obo/FOODON_03000486> "ricotta cheese (part-skim)"@en)
 SubClassOf(<http://purl.obolibrary.org/obo/FOODON_03000486> <http://purl.obolibrary.org/obo/FOODON_03302908>)
@@ -444,7 +591,7 @@ SubClassOf(<http://purl.obolibrary.org/obo/FOODON_03000486> <http://purl.obolibr
 # Class: <http://purl.obolibrary.org/obo/FOODON_03000487> (nonfat dry milk (instant, vitamin A and D fortified))
 
 AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000115> <http://purl.obolibrary.org/obo/FOODON_03000487> "Not fat instant dry milk that is vitamin A and vitamin D fortified."@en)
-AnnotationAssertion(<http://purl.org/dc/terms/contributor> <http://purl.obolibrary.org/obo/FOODON_03000487> "https://orcid.org/0000-0001-5275-8866"^^xsd:string)
+AnnotationAssertion(<http://purl.org/dc/terms/contributor> <http://purl.obolibrary.org/obo/FOODON_03000487> "https://orcid.org/0000-0001-5275-8866")
 AnnotationAssertion(<http://purl.org/dc/terms/date> <http://purl.obolibrary.org/obo/FOODON_03000487> "2023-10-13T19:38:15Z"^^xsd:dateTime)
 AnnotationAssertion(rdfs:label <http://purl.obolibrary.org/obo/FOODON_03000487> "nonfat dry milk (instant, vitamin A and D fortified)"@en)
 SubClassOf(<http://purl.obolibrary.org/obo/FOODON_03000487> <http://purl.obolibrary.org/obo/FOODON_03311533>)
@@ -452,7 +599,7 @@ SubClassOf(<http://purl.obolibrary.org/obo/FOODON_03000487> <http://purl.obolibr
 # Class: <http://purl.obolibrary.org/obo/FOODON_03000488> (full cream milk (dry, vitamin D fortified))
 
 AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000115> <http://purl.obolibrary.org/obo/FOODON_03000488> "Full cream milk powder that is vitamin D fortified."@en)
-AnnotationAssertion(<http://purl.org/dc/terms/contributor> <http://purl.obolibrary.org/obo/FOODON_03000488> "https://orcid.org/0000-0001-5275-8866"^^xsd:string)
+AnnotationAssertion(<http://purl.org/dc/terms/contributor> <http://purl.obolibrary.org/obo/FOODON_03000488> "https://orcid.org/0000-0001-5275-8866")
 AnnotationAssertion(<http://purl.org/dc/terms/date> <http://purl.obolibrary.org/obo/FOODON_03000488> "2023-10-13T19:38:15Z"^^xsd:dateTime)
 AnnotationAssertion(rdfs:label <http://purl.obolibrary.org/obo/FOODON_03000488> "full cream milk (dry, vitamin D fortified)"@en)
 SubClassOf(<http://purl.obolibrary.org/obo/FOODON_03000488> <http://purl.obolibrary.org/obo/FOODON_03305252>)
@@ -460,8 +607,8 @@ SubClassOf(<http://purl.obolibrary.org/obo/FOODON_03000488> <http://purl.obolibr
 # Class: <http://purl.obolibrary.org/obo/FOODON_03000489> (gjetost cheese)
 
 AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000115> <http://purl.obolibrary.org/obo/FOODON_03000489> "A brown norwegian cheese made of goat's milk or a blend of goat and cow's milk. It is produced by slowly heating a vat of whey, cream and milk."@en)
-AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000119> <http://purl.obolibrary.org/obo/FOODON_03000489> "https://en.wikipedia.org/wiki/Brunost"^^xsd:string)
-AnnotationAssertion(<http://purl.org/dc/terms/contributor> <http://purl.obolibrary.org/obo/FOODON_03000489> "https://orcid.org/0000-0001-5275-8866"^^xsd:string)
+AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000119> <http://purl.obolibrary.org/obo/FOODON_03000489> "https://en.wikipedia.org/wiki/Brunost")
+AnnotationAssertion(<http://purl.org/dc/terms/contributor> <http://purl.obolibrary.org/obo/FOODON_03000489> "https://orcid.org/0000-0001-5275-8866")
 AnnotationAssertion(<http://purl.org/dc/terms/date> <http://purl.obolibrary.org/obo/FOODON_03000489> "2023-10-13T19:38:15Z"^^xsd:dateTime)
 AnnotationAssertion(rdfs:label <http://purl.obolibrary.org/obo/FOODON_03000489> "gjetost cheese"@en)
 SubClassOf(<http://purl.obolibrary.org/obo/FOODON_03000489> <http://purl.obolibrary.org/obo/FOODON_00001013>)
@@ -469,7 +616,7 @@ SubClassOf(<http://purl.obolibrary.org/obo/FOODON_03000489> <http://purl.obolibr
 # Class: <http://purl.obolibrary.org/obo/FOODON_03000490> (pasteurized process american cheese food (vitamin D fortified))
 
 AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000115> <http://purl.obolibrary.org/obo/FOODON_03000490> "A pasteurized process american cheese food that is vitamin D fortified."@en)
-AnnotationAssertion(<http://purl.org/dc/terms/contributor> <http://purl.obolibrary.org/obo/FOODON_03000490> "https://orcid.org/0000-0001-5275-8866"^^xsd:string)
+AnnotationAssertion(<http://purl.org/dc/terms/contributor> <http://purl.obolibrary.org/obo/FOODON_03000490> "https://orcid.org/0000-0001-5275-8866")
 AnnotationAssertion(<http://purl.org/dc/terms/date> <http://purl.obolibrary.org/obo/FOODON_03000490> "2023-10-13T19:38:15Z"^^xsd:dateTime)
 AnnotationAssertion(rdfs:label <http://purl.obolibrary.org/obo/FOODON_03000490> "pasteurized process american cheese food (vitamin D fortified)"@en)
 SubClassOf(<http://purl.obolibrary.org/obo/FOODON_03000490> <http://purl.obolibrary.org/obo/FOODON_03000484>)
@@ -477,8 +624,8 @@ SubClassOf(<http://purl.obolibrary.org/obo/FOODON_03000490> <http://purl.obolibr
 # Class: <http://purl.obolibrary.org/obo/FOODON_03000491> (arrowroot flour food product)
 
 AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000115> <http://purl.obolibrary.org/obo/FOODON_03000491> "A food product that is derived from arrowroot flour."@en)
-AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000119> <http://purl.obolibrary.org/obo/FOODON_03000491> "https://en.wikipedia.org/wiki/Arrowroot"^^xsd:string)
-AnnotationAssertion(<http://purl.org/dc/terms/contributor> <http://purl.obolibrary.org/obo/FOODON_03000491> "https://orcid.org/0000-0001-5275-8866"^^xsd:string)
+AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000119> <http://purl.obolibrary.org/obo/FOODON_03000491> "https://en.wikipedia.org/wiki/Arrowroot")
+AnnotationAssertion(<http://purl.org/dc/terms/contributor> <http://purl.obolibrary.org/obo/FOODON_03000491> "https://orcid.org/0000-0001-5275-8866")
 AnnotationAssertion(<http://purl.org/dc/terms/date> <http://purl.obolibrary.org/obo/FOODON_03000491> "2023-10-13T19:38:15Z"^^xsd:dateTime)
 AnnotationAssertion(rdfs:label <http://purl.obolibrary.org/obo/FOODON_03000491> "arrowroot flour food product"@en)
 SubClassOf(<http://purl.obolibrary.org/obo/FOODON_03000491> <http://purl.obolibrary.org/obo/FOODON_00001056>)
