@@ -228,6 +228,9 @@ def main():
 
                             if item['parent class'] is None:
                                 parent_class = ''
+                            # Special case for row with FOODON:00003004 set parent class to be 'animal_parent' from species list
+                            elif s['animal_parent'] and item['ID'] == 'FOODON:00003004':
+                                parent_class = s['animal_parent']
                             else:
                                 parent_class = item['parent class'].format(organism=species_label, organism_base=s['species'])
 
@@ -262,6 +265,10 @@ def main():
                             else:
                                 if item['Equivalence axiom'] is None:
                                     equivalence = ''
+                                # Special case for row with FOODON:00003004 and row has an Equivalence axiom
+                                elif s['animal_parent'] and item['ID'] == 'FOODON:00003004':
+                                    equivalence = item['Equivalence axiom'].format(organism=s['species'], organism_base=s['species'], taxon=s['ID'])
+                                    equivalence = equivalence.replace("animal", s['animal_parent'])
                                 else:
                                     equivalence = item['Equivalence axiom'].format(organism=species_label, organism_base=s['species'], taxon=s['ID'])
 
