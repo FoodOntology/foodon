@@ -58,7 +58,7 @@ $(ONT).owl: $(SRC)
 # remove --select "owl:NamedIndividual=obo:BFO_*"
 	$(ROBOT) merge --input $(SRC) --xml-entities reason --reasoner ELK --equivalent-classes-allowed false relax reduce --output $(ONT)-merged.ofn
 	make test
-	python3 foodon-merged-remediation.py
+	python3 scripts/foodon-merged-remediation.py
 
 # Make foodon-base.owl, stripped of food product import tags and files
 # Add GAZ?
@@ -112,5 +112,3 @@ imports/robot/plant_parts.ofn: imports/robot/plant_parts.tsv
 	$(ROBOT) template --template $< -i foodon-merged.ofn --ontology-iri "http://purl.obolibrary.org/foodon/imports/robot_plant_parts.ofn" -o $@.tmp.owl && mv $@.tmp.owl $@
 
 
-release: $(ONT).owl
-	cp $^ $RELEASEDIR && cp imports/*.owl $RELEASEDIR/imports
