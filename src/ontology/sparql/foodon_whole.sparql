@@ -1,0 +1,26 @@
+PREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#>
+PREFIX obo:  <http://purl.obolibrary.org/obo/>
+PREFIX oboInOwl:  <http://www.geneontology.org/formats/oboInOwl#>
+PREFIX owl: <http://www.w3.org/2002/07/owl#>
+
+SELECT DISTINCT ?label ?class
+WHERE {
+
+	# Enter ontology term identifier here to start report with:
+	# obo:BFO_0000001 entity includes every term in ontology
+	# obo:BFO_0000040 material entity, including chemical food components and food products
+	# obo:ENVO_00010483  environmental material terms, including food materials
+	# obo:FOODON_00002403 food material terms, including all food products and additives
+	VALUES (?search) {
+	    (obo:FOODON_00002381) # food product by organism
+	    (obo:FOODON_03420116) # organism material
+	    (obo:PO_0009011) # plant structure
+	} 	
+
+	# Retrieve term and all subclass terms.
+	?class rdfs:subClassOf* ?search.
+	?class rdfs:label ?label.
+
+}
+ORDER BY ?label
+

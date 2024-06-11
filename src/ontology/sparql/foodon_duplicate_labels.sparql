@@ -1,0 +1,20 @@
+PREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#>
+PREFIX obo:  <http://purl.obolibrary.org/obo/>
+PREFIX oboInOwl:  <http://www.geneontology.org/formats/oboInOwl#>
+PREFIX owl: <http://www.w3.org/2002/07/owl#>
+
+SELECT DISTINCT ?label ?class ?class2
+WHERE {
+
+	?class rdfs:label ?label
+	FILTER NOT EXISTS {
+		filter strstarts(str(?label), "obsolete")
+	}.
+	?class2 rdfs:label ?label.
+	FILTER (?class != ?class2).
+	filter strstarts(str(?class), "http://purl.obolibrary.org/obo/FOODON").
+	filter strstarts(str(?class2), "http://purl.obolibrary.org/obo/FOODON")
+}
+ORDER BY ?label ?class
+
+# robot query --format TSV --input foodon-merged.ofn -s foodon_duplicate_labels.sparql foodon-duplicate-labels.tsv
