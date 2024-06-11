@@ -18,7 +18,7 @@ with open('foodon-merged-modify.txt', 'r') as lookup_handler:
 	    	content_dict[key] = val;
 
 new_content = [];
-with open('foodon-merged.ofn', 'r') as foodon_merged:
+with open('../foodon-merged.ofn', 'r') as foodon_merged:
 	lines = foodon_merged.readlines()
 	for index, line in enumerate(lines):
 		# if index % 1000 == 0:	print (index)
@@ -31,5 +31,5 @@ with open('foodon-merged.ofn', 'r') as foodon_merged:
 
 	print ("Processed",len(lines))
 
-with open('foodon-merged.ofn', 'w') as foodon_merged:
+with open('../foodon-merged.ofn', 'w') as foodon_merged:
 	foodon_merged.writelines(new_content)
