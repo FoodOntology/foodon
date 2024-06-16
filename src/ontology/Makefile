@@ -69,7 +69,7 @@ $(ONT).owl: $(SRC)
 #	$(ROBOT) convert --input $(ONT)-merged.ofn --output $(ONT)-merged.owl
 #	$(ROBOT) query --format TSV --input $(ONT)-merged.owl -s foodon_synonyms.sparql foodon-synonyms.tsv
 #	rm $(ONT)-merged.owl
-	$(ROBOT) query --format TSV --input $(ONT)-merged.ofn -s foodon_synonyms.sparql foodon-synonyms.tsv
+	$(ROBOT) query --format TSV --input $(ONT)-merged.ofn -s sparql/foodon_synonyms.sparql foodon-synonyms.tsv
 
 # ALL OntoFox imports: chebi efo envo eo gazetteer ncbitaxon obi ro
 # ISSUE WITH BFO: Ontofox doesn't download disjointWith axioms????
