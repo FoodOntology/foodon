@@ -48,7 +48,6 @@ Declaration(Class(<http://purl.obolibrary.org/obo/FOODON_00003307>))
 Declaration(Class(<http://purl.obolibrary.org/obo/FOODON_00003374>))
 Declaration(Class(<http://purl.obolibrary.org/obo/FOODON_00003402>))
 Declaration(Class(<http://purl.obolibrary.org/obo/FOODON_00003417>))
-Declaration(Class(<http://purl.obolibrary.org/obo/FOODON_00003437>))
 Declaration(Class(<http://purl.obolibrary.org/obo/FOODON_00003638>))
 Declaration(Class(<http://purl.obolibrary.org/obo/FOODON_00003874>))
 Declaration(Class(<http://purl.obolibrary.org/obo/FOODON_00004036>))
@@ -74,9 +73,11 @@ Declaration(Class(<http://purl.obolibrary.org/obo/FOODON_00004079>))
 Declaration(Class(<http://purl.obolibrary.org/obo/FOODON_00004080>))
 Declaration(Class(<http://purl.obolibrary.org/obo/FOODON_00004088>))
 Declaration(Class(<http://purl.obolibrary.org/obo/FOODON_00004089>))
+Declaration(Class(<http://purl.obolibrary.org/obo/FOODON_00004278>))
 Declaration(Class(<http://purl.obolibrary.org/obo/FOODON_00004531>))
 Declaration(Class(<http://purl.obolibrary.org/obo/FOODON_00004533>))
 Declaration(Class(<http://purl.obolibrary.org/obo/FOODON_00004534>))
+Declaration(Class(<http://purl.obolibrary.org/obo/FOODON_00004550>))
 Declaration(Class(<http://purl.obolibrary.org/obo/FOODON_03000001>))
 Declaration(Class(<http://purl.obolibrary.org/obo/FOODON_03307052>))
 Declaration(Class(<http://purl.obolibrary.org/obo/FOODON_03307539>))
@@ -338,6 +339,8 @@ Declaration(AnnotationProperty(<http://www.geneontology.org/formats/oboInOwl#has
 
 AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000115> <http://purl.obolibrary.org/obo/FOODON_00000071> "A process of cutting food into smaller pieces, chunks or slices."@en)
 AnnotationAssertion(<http://purl.org/dc/terms/contributor> <http://purl.obolibrary.org/obo/FOODON_00000071> "https://orcid.org/0000-0002-8844-9165")
+AnnotationAssertion(<http://purl.org/dc/terms/date> <http://purl.obolibrary.org/obo/FOODON_00000071> "2024-01-15T09:29:58Z"^^xsd:dateTime)
+AnnotationAssertion(rdfs:comment <http://purl.obolibrary.org/obo/FOODON_00000071> "The term includes 'process' in order to distinguish from 'food cutting' as a noun."@en)
 AnnotationAssertion(rdfs:label <http://purl.obolibrary.org/obo/FOODON_00000071> "food cutting process"@en)
 SubClassOf(<http://purl.obolibrary.org/obo/FOODON_00000071> <http://purl.obolibrary.org/obo/FOODON_03460130>)
 
@@ -478,7 +481,7 @@ AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000115> <http://purl.ob
 AnnotationAssertion(rdfs:comment <http://purl.obolibrary.org/obo/FOODON_00003203> "This includes harvesting from plants, hunting a deer, or milking process of a cow.  The food is derived from part or whole of a single organism species (with perhaps a few exceptions, such as lichen)."@en)
 AnnotationAssertion(rdfs:label <http://purl.obolibrary.org/obo/FOODON_00003203> "food harvesting"@en)
 SubClassOf(<http://purl.obolibrary.org/obo/FOODON_00003203> <http://purl.obolibrary.org/obo/FOODON_00002451>)
-SubClassOf(<http://purl.obolibrary.org/obo/FOODON_00003203> ObjectSomeValuesFrom(<http://purl.obolibrary.org/obo/OBI_0000293> <http://purl.obolibrary.org/obo/FOODON_00003437>))
+SubClassOf(<http://purl.obolibrary.org/obo/FOODON_00003203> ObjectSomeValuesFrom(<http://purl.obolibrary.org/obo/OBI_0000293> <http://purl.obolibrary.org/obo/FOODON_00003402>))
 SubClassOf(<http://purl.obolibrary.org/obo/FOODON_00003203> ObjectSomeValuesFrom(<http://purl.obolibrary.org/obo/OBI_0000299> <http://purl.obolibrary.org/obo/FOODON_00003374>))
 
 # Class: <http://purl.obolibrary.org/obo/FOODON_00003215> (winterization of oil)
@@ -660,14 +663,27 @@ SubClassOf(<http://purl.obolibrary.org/obo/FOODON_00004531> <http://purl.obolibr
 # Class: <http://purl.obolibrary.org/obo/FOODON_00004533> (food grinding)
 
 AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000115> <http://purl.obolibrary.org/obo/FOODON_00004533> "The process of grinding food such as meat."@en)
+AnnotationAssertion(<http://purl.org/dc/terms/contributor> <http://purl.obolibrary.org/obo/FOODON_00004533> "https://orcid.org/0000-0002-8844-9165")
+AnnotationAssertion(<http://purl.org/dc/terms/date> <http://purl.obolibrary.org/obo/FOODON_00004533> "2024-01-15T09:29:58Z"^^xsd:dateTime)
 AnnotationAssertion(rdfs:label <http://purl.obolibrary.org/obo/FOODON_00004533> "food grinding"@en)
 SubClassOf(<http://purl.obolibrary.org/obo/FOODON_00004533> <http://purl.obolibrary.org/obo/FOODON_00002409>)
 
 # Class: <http://purl.obolibrary.org/obo/FOODON_00004534> (food mincing)
 
 AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000115> <http://purl.obolibrary.org/obo/FOODON_00004534> "The process of cutting food such as meat into very fine pieces."@en)
+AnnotationAssertion(<http://purl.org/dc/terms/contributor> <http://purl.obolibrary.org/obo/FOODON_00004534> "https://orcid.org/0000-0002-8844-9165")
+AnnotationAssertion(<http://purl.org/dc/terms/date> <http://purl.obolibrary.org/obo/FOODON_00004534> "2024-01-15T09:29:58Z"^^xsd:dateTime)
 AnnotationAssertion(rdfs:label <http://purl.obolibrary.org/obo/FOODON_00004534> "food mincing"@en)
 SubClassOf(<http://purl.obolibrary.org/obo/FOODON_00004534> <http://purl.obolibrary.org/obo/FOODON_00002409>)
+
+# Class: <http://purl.obolibrary.org/obo/FOODON_00004550> (food cubing)
+
+AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000115> <http://purl.obolibrary.org/obo/FOODON_00004550> "The process of cutting food such as meat into cubic pieces."@en)
+AnnotationAssertion(<http://purl.org/dc/terms/contributor> <http://purl.obolibrary.org/obo/FOODON_00004550> "https://orcid.org/0000-0002-8844-9165")
+AnnotationAssertion(<http://purl.org/dc/terms/date> <http://purl.obolibrary.org/obo/FOODON_00004550> "2024-01-15T09:29:58Z"^^xsd:dateTime)
+AnnotationAssertion(rdfs:label <http://purl.obolibrary.org/obo/FOODON_00004550> "food cubing"@en)
+SubClassOf(<http://purl.obolibrary.org/obo/FOODON_00004550> <http://purl.obolibrary.org/obo/FOODON_00002409>)
+SubClassOf(<http://purl.obolibrary.org/obo/FOODON_00004550> ObjectSomeValuesFrom(<http://purl.obolibrary.org/obo/OBI_0000299> <http://purl.obolibrary.org/obo/FOODON_00004278>))
 
 # Class: <http://purl.obolibrary.org/obo/FOODON_03000001> (food peeling)
 
@@ -1869,7 +1885,7 @@ AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000115> <http://purl.ob
 AnnotationAssertion(<http://www.geneontology.org/formats/oboInOwl#hasDbXref> <http://purl.obolibrary.org/obo/FOODON_03470107> "http://www.langual.org/langual_thesaurus.asp?termid=J0107")
 AnnotationAssertion(rdfs:comment <http://purl.obolibrary.org/obo/FOODON_03470107> "LanguaL curation note: This term is for CLASSIFICATION ONLY; DO NOT USE term in indexing. Use a more precise narrower term."@en)
 AnnotationAssertion(rdfs:label <http://purl.obolibrary.org/obo/FOODON_03470107> "food preservation process"@en)
-SubClassOf(<http://purl.obolibrary.org/obo/FOODON_03470107> <http://purl.obolibrary.org/obo/FOODON_00002451>)
+SubClassOf(<http://purl.obolibrary.org/obo/FOODON_03470107> <http://purl.obolibrary.org/obo/FOODON_03460111>)
 
 # Class: <http://purl.obolibrary.org/obo/FOODON_03470108> (preservation by treatment with chemicals)
 
@@ -2397,8 +2413,4 @@ AnnotationAssertion(rdfs:label <http://purl.obolibrary.org/obo/FOODON_03470182> 
 SubClassOf(<http://purl.obolibrary.org/obo/FOODON_03470182> <http://purl.obolibrary.org/obo/FOODON_03470135>)
 
 
-AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000115> <http://purl.obolibrary.org/obo/FOODON_00004550> "The process of cutting food such as meat into cubic pieces."@en)
-AnnotationAssertion(<http://purl.org/dc/terms/contributor> <http://purl.obolibrary.org/obo/FOODON_00004550> <https://orcid.org/0000-0002-8844-9165>)
-AnnotationAssertion(<http://purl.org/dc/terms/date> <http://purl.obolibrary.org/obo/FOODON_00004550> "2024-01-15T09:29:58Z"^^xsd:dateTime)
-AnnotationAssertion(rdfs:label <http://purl.obolibrary.org/obo/FOODON_00004550> "food cubing"@en)
 )
