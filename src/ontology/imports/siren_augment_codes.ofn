@@ -19725,13 +19725,6 @@ AnnotationAssertion(rdfs:comment obo:FOODON_03302733 "SIREN DB annotation:
 * physical/chemical modification process FOODON:03460130
 * poultry as consumer FOODON:03510018"@en)
 
-# Class: obo:FOODON_03302734 (beef liver (raw))
-
-AnnotationAssertion(rdfs:comment obo:FOODON_03302734 "SIREN DB annotation:
-* whole, natural shape FOODON:03430150
-* not heat-treated FOODON:03440003
-* liver UBERON:0002107"@en)
-
 # Class: obo:FOODON_03302735 (pork meat (raw))
 
 AnnotationAssertion(rdfs:comment obo:FOODON_03302735 "SIREN DB annotation:
@@ -39320,7 +39313,7 @@ AnnotationAssertion(rdfs:comment obo:FOODON_03306140 "SIREN DB annotation:
 * water removal process FOODON:03460138
 * preservation by dehydration or drying FOODON:03470116"@en)
 
-# Class: obo:FOODON_03306141 (shiso)
+# Class: obo:FOODON_03306141 (shiso leaf (raw))
 
 AnnotationAssertion(rdfs:comment obo:FOODON_03306141 "SIREN DB annotation:
 * whole, natural shape FOODON:03430150
@@ -61417,13 +61410,6 @@ AnnotationAssertion(rdfs:comment obo:FOODON_03310589 "SIREN DB annotation:
 * meat color, undesignated or unknown (deprecated) FOODON:03530003
 * skeletal meat part, without bone, without skin FOODON:03420268
 * ingredient: flavoring, spice or herb added FOODON:03460227"@en)
-
-# Class: obo:FOODON_03310590 (beef kidney (raw))
-
-AnnotationAssertion(rdfs:comment obo:FOODON_03310590 "SIREN DB annotation:
-* solid FOODON:03430151
-* not heat-treated FOODON:03440003
-* kidney UBERON:0002113"@en)
 
 # Class: obo:FOODON_03310591 (beef round steak (raw))
 
