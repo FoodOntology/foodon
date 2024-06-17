@@ -282,7 +282,7 @@ def main():
                             if item['comment'] is None:
                                 comment = ''
                             else:
-                                comment = item['comment'].format(organism=species_label, organism_base=s['species'])
+                                comment = item['comment'].format(organism=species_label, organism_base=s['species'], n=article)
 
                             if item['Exact Synonym'] is None:
                                 exact_synonym = ''
