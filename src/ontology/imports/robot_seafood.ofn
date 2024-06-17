@@ -243,6 +243,7 @@ Declaration(Class(<http://purl.obolibrary.org/obo/NCBITaxon_1236058>))
 Declaration(Class(<http://purl.obolibrary.org/obo/NCBITaxon_1241940>))
 Declaration(Class(<http://purl.obolibrary.org/obo/NCBITaxon_1248172>))
 Declaration(Class(<http://purl.obolibrary.org/obo/NCBITaxon_125897>))
+Declaration(Class(<http://purl.obolibrary.org/obo/NCBITaxon_1260532>))
 Declaration(Class(<http://purl.obolibrary.org/obo/NCBITaxon_1262608>))
 Declaration(Class(<http://purl.obolibrary.org/obo/NCBITaxon_1262610>))
 Declaration(Class(<http://purl.obolibrary.org/obo/NCBITaxon_1266862>))
@@ -1290,7 +1291,6 @@ Declaration(Class(<http://purl.obolibrary.org/obo/NCBITaxon_433389>))
 Declaration(Class(<http://purl.obolibrary.org/obo/NCBITaxon_433393>))
 Declaration(Class(<http://purl.obolibrary.org/obo/NCBITaxon_43341>))
 Declaration(Class(<http://purl.obolibrary.org/obo/NCBITaxon_435128>))
-Declaration(Class(<http://purl.obolibrary.org/obo/NCBITaxon_435129>))
 Declaration(Class(<http://purl.obolibrary.org/obo/NCBITaxon_435133>))
 Declaration(Class(<http://purl.obolibrary.org/obo/NCBITaxon_435138>))
 Declaration(Class(<http://purl.obolibrary.org/obo/NCBITaxon_435155>))
@@ -4034,6 +4034,14 @@ AnnotationAssertion(Annotation(<http://purl.obolibrary.org/obo/IAO_0000412> "FDA
 AnnotationAssertion(<http://www.geneontology.org/formats/oboInOwl#hasDbXref> <http://purl.obolibrary.org/obo/NCBITaxon_125897> "itis:553012")
 AnnotationAssertion(Annotation(<http://purl.obolibrary.org/obo/IAO_0000412> "FDA SFL Common Name") <http://www.geneontology.org/formats/oboInOwl#hasExactSynonym> <http://purl.obolibrary.org/obo/NCBITaxon_125897> "japanese fan lobster"@en)
 AnnotationAssertion(rdfs:seeAlso <http://purl.obolibrary.org/obo/NCBITaxon_125897> "https://en.wikipedia.org/wiki/Ibacus_ciliatus")
+
+# Class: <http://purl.obolibrary.org/obo/NCBITaxon_1260532> (Micropogonias megalops)
+
+AnnotationAssertion(<http://purl.org/dc/terms/contributor> <http://purl.obolibrary.org/obo/NCBITaxon_1260532> "https://orcid.org/0000-0001-5275-8866")
+AnnotationAssertion(Annotation(<http://purl.obolibrary.org/obo/IAO_0000412> "FDA SFL Acceptable Market Name") <http://www.geneontology.org/formats/oboInOwl#hasBroadSynonym> <http://purl.obolibrary.org/obo/NCBITaxon_1260532> "croaker"@en)
+AnnotationAssertion(<http://www.geneontology.org/formats/oboInOwl#hasDbXref> <http://purl.obolibrary.org/obo/NCBITaxon_1260532> "itis:646538")
+AnnotationAssertion(Annotation(<http://purl.obolibrary.org/obo/IAO_0000412> "FDA SFL Common Name") <http://www.geneontology.org/formats/oboInOwl#hasExactSynonym> <http://purl.obolibrary.org/obo/NCBITaxon_1260532> "donkey croaker"@en)
+AnnotationAssertion(rdfs:seeAlso <http://purl.obolibrary.org/obo/NCBITaxon_1260532> "https://en.wikipedia.org/wiki/Pennahia_anea")
 
 # Class: <http://purl.obolibrary.org/obo/NCBITaxon_1262608> (Epinnula magistralis)
 
@@ -8171,7 +8179,7 @@ AnnotationAssertion(Annotation(<http://purl.obolibrary.org/obo/IAO_0000412> "FDA
 AnnotationAssertion(Annotation(<http://purl.obolibrary.org/obo/IAO_0000412> "FDA SFL Common Name") <http://www.geneontology.org/formats/oboInOwl#hasExactSynonym> <http://purl.obolibrary.org/obo/NCBITaxon_2567184> "new zealand spider crab"@en)
 AnnotationAssertion(rdfs:seeAlso <http://purl.obolibrary.org/obo/NCBITaxon_2567184> "https://www.gbif.org/species/2226564")
 
-# Class: <http://purl.obolibrary.org/obo/NCBITaxon_2576622> (<http://purl.obolibrary.org/obo/NCBITaxon_2576622>)
+# Class: <http://purl.obolibrary.org/obo/NCBITaxon_2576622> (Chelidonichthys lucerna)
 
 AnnotationAssertion(<http://purl.org/dc/terms/contributor> <http://purl.obolibrary.org/obo/NCBITaxon_2576622> "https://orcid.org/0000-0001-5275-8866")
 AnnotationAssertion(Annotation(<http://purl.obolibrary.org/obo/IAO_0000412> "FDA SFL Acceptable Market Name") <http://www.geneontology.org/formats/oboInOwl#hasBroadSynonym> <http://purl.obolibrary.org/obo/NCBITaxon_2576622> "searobin"@en)
@@ -12082,14 +12090,6 @@ AnnotationAssertion(Annotation(<http://purl.obolibrary.org/obo/IAO_0000412> "FDA
 AnnotationAssertion(<http://www.geneontology.org/formats/oboInOwl#hasDbXref> <http://purl.obolibrary.org/obo/NCBITaxon_435128> "itis:639992")
 AnnotationAssertion(Annotation(<http://purl.obolibrary.org/obo/IAO_0000412> "FDA SFL Common Name") <http://www.geneontology.org/formats/oboInOwl#hasExactSynonym> <http://purl.obolibrary.org/obo/NCBITaxon_435128> "giant catfish"@en)
 AnnotationAssertion(rdfs:seeAlso <http://purl.obolibrary.org/obo/NCBITaxon_435128> "https://en.wikipedia.org/wiki/Giant_catfish")
-
-# Class: <http://purl.obolibrary.org/obo/NCBITaxon_435129> (Pennahia anea)
-
-AnnotationAssertion(<http://purl.org/dc/terms/contributor> <http://purl.obolibrary.org/obo/NCBITaxon_435129> "https://orcid.org/0000-0001-5275-8866")
-AnnotationAssertion(Annotation(<http://purl.obolibrary.org/obo/IAO_0000412> "FDA SFL Acceptable Market Name") <http://www.geneontology.org/formats/oboInOwl#hasBroadSynonym> <http://purl.obolibrary.org/obo/NCBITaxon_435129> "croaker"@en)
-AnnotationAssertion(<http://www.geneontology.org/formats/oboInOwl#hasDbXref> <http://purl.obolibrary.org/obo/NCBITaxon_435129> "itis:646538")
-AnnotationAssertion(Annotation(<http://purl.obolibrary.org/obo/IAO_0000412> "FDA SFL Common Name") <http://www.geneontology.org/formats/oboInOwl#hasExactSynonym> <http://purl.obolibrary.org/obo/NCBITaxon_435129> "donkey croaker"@en)
-AnnotationAssertion(rdfs:seeAlso <http://purl.obolibrary.org/obo/NCBITaxon_435129> "https://en.wikipedia.org/wiki/Pennahia_anea")
 
 # Class: <http://purl.obolibrary.org/obo/NCBITaxon_435138> (Brachirus orientalis)
 
@@ -16346,7 +16346,7 @@ AnnotationAssertion(<http://www.geneontology.org/formats/oboInOwl#hasDbXref> <ht
 AnnotationAssertion(Annotation(<http://purl.obolibrary.org/obo/IAO_0000412> "FDA SFL Common Name") <http://www.geneontology.org/formats/oboInOwl#hasExactSynonym> <http://purl.obolibrary.org/obo/NCBITaxon_7908> "green sturgeon"@en)
 AnnotationAssertion(rdfs:seeAlso <http://purl.obolibrary.org/obo/NCBITaxon_7908> "https://en.wikipedia.org/wiki/Green_sturgeon")
 
-# Class: <http://purl.obolibrary.org/obo/NCBITaxon_7910> (Accipenser platorynchus)
+# Class: <http://purl.obolibrary.org/obo/NCBITaxon_7910> (Scaphirhynchus platorynchus)
 
 AnnotationAssertion(<http://purl.org/dc/terms/contributor> <http://purl.obolibrary.org/obo/NCBITaxon_7910> "https://orcid.org/0000-0001-5275-8866")
 AnnotationAssertion(Annotation(<http://purl.obolibrary.org/obo/IAO_0000412> "FDA SFL Acceptable Market Name") <http://www.geneontology.org/formats/oboInOwl#hasBroadSynonym> <http://purl.obolibrary.org/obo/NCBITaxon_7910> "sturgeon"@en)
