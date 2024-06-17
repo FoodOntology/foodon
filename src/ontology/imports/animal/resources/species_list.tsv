@@ -12,7 +12,7 @@ TRUE	bovine	bison		Bison	NCBITaxon:9900	Bovidae			USDA
 TRUE	swim crab (portunus spp.)	blue swimmer crab		Portunus pelagicus	NCBITaxon:80836	Crustacea		Requested by PTFI	PTFI		v2024-03-26
 TRUE	bovine	buffalo		Bison bison	NCBITaxon:9918	Bovidae			USDA		
 TRUE	chicken	capon		capon	FOODON:03411711	Aves			USDA		
-TRUE	bullhead catfish famil	catfish		Siluriformes	NCBITaxon:7995	Fish		Requested by PTFI	PTFI		v2024-03-26
+TRUE	bullhead catfish family	catfish		Siluriformes	NCBITaxon:7995	Fish		Requested by PTFI	PTFI		v2024-03-26
 TRUE	poultry	chicken		Gallus gallus	NCBITaxon:9031	Aves			USDA		
 TRUE	octopus	common octopus		Octopus vulgaris	NCBITaxon:6645	Cephalopoda		Need this for USDA Mappings.	USDA		v2024-03-26
 TRUE	bovine	cow	beef	Bos taurus	NCBITaxon:9913	Bovidae			USDA		
@@ -23,7 +23,7 @@ TRUE	deer family	deer		Cervidae	NCBITaxon:9850	Cervidae			USDA
 TRUE	manta family	devilfish		Mobula mobular	NCBITaxon:1579277	Fish		Need this for USDA Mappings.	USDA		v2024-03-26
 TRUE	dolphin family	dolphin		dolphin family	FOODON:03413363	Cetacea					
 TRUE	bovine	domestic yak		Bos grunniens	NCBITaxon:30521	Bovidae					
-TRUE	equine mammal	donkey		Equus asinus	NCBITaxon:9793	Perissodactyla					
+TRUE	equine animal	donkey		Equus asinus	NCBITaxon:9793	Perissodactyla					
 TRUE	avian animal	duck		duck	FOODON:03411316	Aves			USDA		
 TRUE	mammal	elephant		Elephantidae	NCBITaxon:9780	Other					
 TRUE	deer family	elk		Cervus canadensis	NCBITaxon:1574408	Cervidae		FoodOn has 'guinea fowl' with a narrow synonym 'guinea hen'	USDA		
@@ -31,14 +31,14 @@ TRUE	ratite	emu		Dromaius novaehollandiae	NCBITaxon:8790	Aves			USDA
 TRUE	anchovy family	european anchovy		Engraulis encrasicolus	NCBITaxon:184585	Fish		Need this for USDA Mappings.	USDA		v2024-03-26
 TRUE	pompano	florida pompano		Trachinotus carolinus	NCBITaxon:173342	Fish		Need this for USDA Mappings.	USDA		v2024-03-26
 TRUE	amphibian	frog		Anura	NCBITaxon:8342	Amphibian	frog food product	Common name is frog as per NCBI, but genbank name is 'frogs and toads'. Or should we use 'FoodOn' term?			
-TRUE	bovidae	gazelle		Gazella	NCBITaxon:9933	Bovidae					
+TRUE	bovid	gazelle		Gazella	NCBITaxon:9933	Bovidae					
 TRUE	mammal	giraffe		Giraffa	NCBITaxon:9893	Giraffoidea					
 TRUE	mammal	goat		Capra hircus	NCBITaxon:9925	Bovidae			USDA		
 TRUE	avian animal	goose		goose	FOODON:03411253	Aves		NCBI has genera 'Anser' with genbank name as 'geese'  group comprises the genera Anser (the grey geese and white geese) and Branta (the black geese). Either we can use both these NCBItaxons in the EQ, or alternatively, can just go with the FoodOn term?	USDA		
 TRUE	turtle	green sea turtle		Chelonia mydas	NCBITaxon:8469	Reptilia			USDA		
 TRUE	avian animal	guinea fowl		Numididae	NCBITaxon:8990	Aves		Note: guineahen or guinea fowl?	USDA		
 TRUE	mammal	hippopotamus		Hippopotamus	NCBITaxon:9832	Hippopotamidae					
-TRUE	equine mammal	horse		Equus caballus	NCBITaxon:9796	Perissodactyla		FoodOn has 'horse'			
+TRUE	equine animal	horse		Equus caballus	NCBITaxon:9796	Perissodactyla		FoodOn has 'horse'			
 TRUE	cricket	house cricket		Acheta domesticus	NCBITaxon:6997	Hexapoda		Need as a referenced term for curating the food products derived from house cricket. (PTFI)	PTFI		v2024-03-26
 TRUE	cricket	jamaican cricket		Gryllus assimilis	NCBITaxon:128156	Hexapoda		Requested by PTFI	PTFI		v2024-03-26
 TRUE	mammal	kangaroo		kangaroo	FOODON:03412092	Diprotodontia					
@@ -66,7 +66,7 @@ TRUE	deer family	reindeer		Rangifer tarandus	NCBITaxon:9870	Cervidae			USDA
 TRUE	bivalve	scallop		Pectinidae	NCBITaxon:6566	Bivalvia		In shell, shelled	USDA		
 TRUE	reptile	sea turtle		Chelonioidea	NCBITaxon:27791	Reptilia		FoodOn has 'sea turtle'	USDA		
 TRUE	pinniped group	seal		Phocidae	NCBITaxon:9709	Pinnipedia		FoodOn has 'seal family'			
-TRUE	bovidae	sheep		Ovis aries	NCBITaxon:9940	Bovidae		FoodOn has a term 'sheep' with foodon id.	USDA		
+TRUE	bovid	sheep		Ovis aries	NCBITaxon:9940	Bovidae		FoodOn has a term 'sheep' with foodon id.	USDA		
 TRUE	decapod	shrimp		shrimp	FOODON:03411237	Crustacea					
 TRUE	pacific salmon	sockeye salmon		Oncorhynchus nerka	NCBITaxon:8023	Fish		Requested by PTFI	PTFI		v2024-03-26
 TRUE	pigeon	squab		squab	FOODON:03000301	Aves		Its in the 'animal' tab, probably still needs to go in FoodOn.	USDA		
@@ -81,7 +81,7 @@ TRUE	cetacean marine mammal	whale		whale	FOODON:03411343	Cetacea
 TRUE	neogastropod	whelk		whelk	FOODON:03411633	Gastropoda			USDA		
 TRUE	sucker	white sucker		Catostomus commersonii	NCBITaxon:7971	Fish		Need this for USDA Mappings.	USDA		v2024-03-26
 TRUE	swine	wild boar		wild boar	FOODON:00004286	Suina		boar has a synonym 'wild boar'	USDA		
-TRUE	equine mammal	zebra		Equus zebra	NCBITaxon:9791	Perissodactyla		Common name 'Zebra' in ITIS			
+TRUE	equine animal	zebra		Equus zebra	NCBITaxon:9791	Perissodactyla		Common name 'Zebra' in ITIS			
 TRUE	eared seal family	steller sea lion		Eumetopias jubatus	NCBITaxon:34886	Pinnipedia			USDA	2024-05-28T20:13:25.525Z	
 TRUE	seal family	bearded seal		Erignathus barbatus	NCBITaxon:39304	Pinnipedia			USDA	2024-05-30T20:11:42.215Z	
 TRUE	pinniped group	walrus		Odobenus rosmarus	NCBITaxon:9707	Pinnipedia			USDA	2024-05-30T20:11:42.215Z	
