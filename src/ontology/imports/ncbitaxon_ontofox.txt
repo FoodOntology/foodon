@@ -11,6 +11,12 @@ NCBITaxon
 # NEED Smilax aristolochiifolia / Mexican sasparilla
 # NEED Mitragyna javanica
 
+# DELETED NCBITaxon_435129 # Pennahia anea
+http://purl.obolibrary.org/obo/NCBITaxon_1260532 # Micropogonias megalops Donkey Croaker
+
+# DELETED NCBITaxon_4111 # Solanum melongena # eggplant
+http://purl.obolibrary.org/obo/NCBITaxon_223891 # Solanum virginianum
+
 # DELETED NCBITaxon_30478 # Raja rhina
 http://purl.obolibrary.org/obo/NCBITaxon_2838338 # Beringraja rhina (Synonym: Raja rhina, Alternative ID->NCBITaxon_30478)
 
@@ -2577,7 +2583,7 @@ http://purl.obolibrary.org/obo/NCBITaxon_40949 # species:Angelica archangelica L
 http://purl.obolibrary.org/obo/NCBITaxon_40959 # species:Pimpinella saxifraga L.
 http://purl.obolibrary.org/obo/NCBITaxon_410349 # Saxidomus gigantea
 http://purl.obolibrary.org/obo/NCBITaxon_410350 # Clinocardium nuttallii
-http://purl.obolibrary.org/obo/NCBITaxon_4111 # Solanum melongena
+
 http://purl.obolibrary.org/obo/NCBITaxon_41117 # Pollicipes pollicipes
 http://purl.obolibrary.org/obo/NCBITaxon_4112 # species:Solanum nigrum L.
 http://purl.obolibrary.org/obo/NCBITaxon_4113 # species:Solanum tuberosum L.
@@ -2686,7 +2692,6 @@ http://purl.obolibrary.org/obo/NCBITaxon_4335 # family:Primulaceae
 http://purl.obolibrary.org/obo/NCBITaxon_43364 # species:Aesculus hippocastanum L.
 http://purl.obolibrary.org/obo/NCBITaxon_4345 # family:Ericaceae
 http://purl.obolibrary.org/obo/NCBITaxon_435128 # Netuma thalassina
-http://purl.obolibrary.org/obo/NCBITaxon_435129 # Pennahia anea
 http://purl.obolibrary.org/obo/NCBITaxon_435138 # Brachirus orientalis
 http://purl.obolibrary.org/obo/NCBITaxon_435155 # Harpadon nehereus
 http://purl.obolibrary.org/obo/NCBITaxon_435161 # Lepturacanthus savala

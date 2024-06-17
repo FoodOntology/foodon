@@ -388,6 +388,7 @@ Declaration(Class(obo:NCBITaxon_124943))
 Declaration(Class(obo:NCBITaxon_125009))
 Declaration(Class(obo:NCBITaxon_125896))
 Declaration(Class(obo:NCBITaxon_125897))
+Declaration(Class(obo:NCBITaxon_1260532))
 Declaration(Class(obo:NCBITaxon_1262608))
 Declaration(Class(obo:NCBITaxon_1262610))
 Declaration(Class(obo:NCBITaxon_126670))
@@ -1433,6 +1434,7 @@ Declaration(Class(obo:NCBITaxon_223862))
 Declaration(Class(obo:NCBITaxon_223863))
 Declaration(Class(obo:NCBITaxon_223888))
 Declaration(Class(obo:NCBITaxon_223889))
+Declaration(Class(obo:NCBITaxon_223891))
 Declaration(Class(obo:NCBITaxon_224270))
 Declaration(Class(obo:NCBITaxon_224313))
 Declaration(Class(obo:NCBITaxon_224703))
@@ -7800,6 +7802,14 @@ AnnotationAssertion(oboInOwl:hasExactSynonym obo:NCBITaxon_125897 "Japanese fan 
 AnnotationAssertion(oboInOwl:hasExactSynonym obo:NCBITaxon_125897 "sand crayfish")
 AnnotationAssertion(rdfs:label obo:NCBITaxon_125897 "Ibacus ciliatus")
 SubClassOf(obo:NCBITaxon_125897 obo:NCBITaxon_125896)
+
+# Class: obo:NCBITaxon_1260532 (Micropogonias megalops)
+
+AnnotationAssertion(obo:IAO_0000412 obo:NCBITaxon_1260532 obo:ncbitaxon.owl)
+AnnotationAssertion(oboInOwl:hasExactSynonym obo:NCBITaxon_1260532 "Gulf croaker")
+AnnotationAssertion(oboInOwl:hasExactSynonym obo:NCBITaxon_1260532 "bigeye croaker")
+AnnotationAssertion(rdfs:label obo:NCBITaxon_1260532 "Micropogonias megalops")
+SubClassOf(obo:NCBITaxon_1260532 obo:NCBITaxon_29153)
 
 # Class: obo:NCBITaxon_1262608 (Epinnula magistralis)
 
@@ -14844,6 +14854,16 @@ AnnotationAssertion(obo:IAO_0000412 obo:NCBITaxon_223889 obo:ncbitaxon.owl)
 AnnotationAssertion(oboInOwl:hasExactSynonym obo:NCBITaxon_223889 "shagreen ray")
 AnnotationAssertion(rdfs:label obo:NCBITaxon_223889 "Leucoraja fullonica")
 SubClassOf(obo:NCBITaxon_223889 obo:NCBITaxon_117861)
+
+# Class: obo:NCBITaxon_223891 (Solanum virginianum)
+
+AnnotationAssertion(obo:IAO_0000412 obo:NCBITaxon_223891 obo:ncbitaxon.owl)
+AnnotationAssertion(oboInOwl:hasExactSynonym obo:NCBITaxon_223891 "aubergine")
+AnnotationAssertion(oboInOwl:hasExactSynonym obo:NCBITaxon_223891 "brinjal")
+AnnotationAssertion(oboInOwl:hasExactSynonym obo:NCBITaxon_223891 "eggplant")
+AnnotationAssertion(oboInOwl:hasExactSynonym obo:NCBITaxon_223891 "yellow-fruit nightshade")
+AnnotationAssertion(rdfs:label obo:NCBITaxon_223891 "Solanum virginianum")
+SubClassOf(obo:NCBITaxon_223891 obo:NCBITaxon_4107)
 
 # Class: obo:NCBITaxon_224270 (Diplectrum formosum)
 
