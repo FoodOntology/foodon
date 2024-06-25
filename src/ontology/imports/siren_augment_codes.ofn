@@ -12295,7 +12295,7 @@ AnnotationAssertion(rdfs:comment obo:FOODON_03301437 "SIREN DB annotation:
 * not heat-treated FOODON:03440003
 * egg FOODON:03420194"@en)
 
-# Class: obo:FOODON_03301438 (hen egg (shell off, solids, dried, ground))
+# Class: obo:FOODON_03301438 (chicken egg (shell off, solids, dried, ground))
 
 AnnotationAssertion(rdfs:comment obo:FOODON_03301438 "SIREN DB annotation:
 * disintegrated or ground FOODON:03430136
@@ -12303,7 +12303,7 @@ AnnotationAssertion(rdfs:comment obo:FOODON_03301438 "SIREN DB annotation:
 * water removal process FOODON:03460138
 * preservation by dehydration or drying FOODON:03470116"@en)
 
-# Class: obo:FOODON_03301439 (hen egg yolk (raw))
+# Class: obo:FOODON_03301439 (chicken egg yolk (raw))
 
 AnnotationAssertion(rdfs:comment obo:FOODON_03301439 "SIREN DB annotation:
 * liquid, high viscosity, with no visible particles FOODON:03430139
@@ -12347,7 +12347,7 @@ AnnotationAssertion(rdfs:comment obo:FOODON_03301446 "SIREN DB annotation:
 * not heat-treated FOODON:03440003
 * sprout FOODON:03420183"@en)
 
-# Class: obo:FOODON_03301447 (hen egg liquid (frozen))
+# Class: obo:FOODON_03301447 (chicken egg liquid (frozen))
 
 AnnotationAssertion(rdfs:comment obo:FOODON_03301447 "SIREN DB annotation:
 * liquid, high viscosity, with no visible particles FOODON:03430139
@@ -12714,7 +12714,7 @@ AnnotationAssertion(rdfs:comment obo:FOODON_03301508 "SIREN DB annotation:
 * ingredient: vitamin a or carotenes added FOODON:03460213
 * low fat food FOODON:03510039"@en)
 
-# Class: obo:FOODON_03301509 (hen egg product (unpasteurized))
+# Class: obo:FOODON_03301509 (chicken egg product (unpasteurized))
 
 AnnotationAssertion(rdfs:comment obo:FOODON_03301509 "SIREN DB annotation:
 * egg FOODON:03420194"@en)
@@ -12879,7 +12879,7 @@ AnnotationAssertion(rdfs:comment obo:FOODON_03301540 "SIREN DB annotation:
 * semisolid FOODON:03430144
 * fruit part FOODON:03420167"@en)
 
-# Class: obo:FOODON_03301544 (scallop (shucked, raw))
+# Class: obo:FOODON_03301544 (scallop (shell off, raw))
 
 AnnotationAssertion(rdfs:comment obo:FOODON_03301544 "SIREN DB annotation:
 * whole, natural shape FOODON:03430150
@@ -15102,7 +15102,7 @@ AnnotationAssertion(rdfs:comment obo:FOODON_03301969 "SIREN DB annotation:
 * ingredient: nutrient or dietary substance added FOODON:03460194
 * unbleached claim or use FOODON:03510123"@en)
 
-# Class: obo:FOODON_03301970 (hen egg liquid (pasteurized))
+# Class: obo:FOODON_03301970 (chicken egg liquid (pasteurized))
 
 AnnotationAssertion(rdfs:comment obo:FOODON_03301970 "SIREN DB annotation:
 * liquid, high viscosity, with no visible particles FOODON:03430139
@@ -17376,7 +17376,7 @@ AnnotationAssertion(rdfs:comment obo:FOODON_03302352 "SIREN DB annotation:
 * carbohydrate fermentation process FOODON:03460256
 * ingredient: honey added FOODON:03460149"@en)
 
-# Class: obo:FOODON_03302353 (hen egg (shell off, solids, dried, finely ground))
+# Class: obo:FOODON_03302353 (chicken egg (shell off, solids, dried, finely ground))
 
 AnnotationAssertion(rdfs:comment obo:FOODON_03302353 "SIREN DB annotation:
 * finely ground FOODON:03430106
@@ -19658,7 +19658,7 @@ AnnotationAssertion(rdfs:comment obo:FOODON_03302716 "SIREN DB annotation:
 * ingredient: flavoring or taste ingredient added FOODON:03460117
 * ingredient: color added FOODON:03460150"@en)
 
-# Class: obo:FOODON_03302720 (hen egg (shell on, hard boiled, colored))
+# Class: obo:FOODON_03302720 (chicken egg (shell on, hard boiled, colored))
 
 AnnotationAssertion(rdfs:comment obo:FOODON_03302720 "SIREN DB annotation:
 * whole, natural shape FOODON:03430150
@@ -25924,7 +25924,7 @@ AnnotationAssertion(rdfs:comment obo:FOODON_03303894 "SIREN DB annotation:
 * fruit, peel removed, core, pit or seed present FOODON:03420230
 * ingredient: flavoring, spice or herb added FOODON:03460227"@en)
 
-# Class: obo:FOODON_03303895 (hen egg (semiliquid, pasteurized, frozen))
+# Class: obo:FOODON_03303895 (chicken egg (semiliquid, pasteurized, frozen))
 
 AnnotationAssertion(rdfs:comment obo:FOODON_03303895 "SIREN DB annotation:
 * semiliquid FOODON:03430103
@@ -30124,20 +30124,13 @@ AnnotationAssertion(rdfs:comment obo:FOODON_03304614 "SIREN DB annotation:
 * sugars free food FOODON:03510056
 * sodium free food FOODON:03510152"@en)
 
-# Class: obo:FOODON_03304615 (hen egg (shell on, hard boiled))
+# Class: obo:FOODON_03304615 (chicken egg (shell on, hard boiled))
 
 AnnotationAssertion(rdfs:comment obo:FOODON_03304615 "SIREN DB annotation:
 * whole, natural shape FOODON:03430150
 * fully heat-treated FOODON:03440014
 * shelled egg UBERON:0007379
 * boiling and then draining FOODON:03450015"@en)
-
-# Class: obo:FOODON_03304616 (hen egg (shell on, raw))
-
-AnnotationAssertion(rdfs:comment obo:FOODON_03304616 "SIREN DB annotation:
-* whole, natural shape FOODON:03430150
-* not heat-treated FOODON:03440003
-* shelled egg UBERON:0007379"@en)
 
 # Class: obo:FOODON_03304617 (fruit juice (artificially sweetened, canned))
 
@@ -30176,7 +30169,7 @@ AnnotationAssertion(rdfs:comment obo:FOODON_03304621 "SIREN DB annotation:
 * ingredient: flavoring or taste ingredient added FOODON:03460117
 * ingredient: sugar or sugar syrup added FOODON:03460136"@en)
 
-# Class: obo:FOODON_03304622 (hen egg liquid (partially heat treated))
+# Class: obo:FOODON_03304622 (chicken egg liquid (partially heat treated))
 
 AnnotationAssertion(rdfs:comment obo:FOODON_03304622 "SIREN DB annotation:
 * liquid, high viscosity FOODON:03430102
@@ -30184,7 +30177,7 @@ AnnotationAssertion(rdfs:comment obo:FOODON_03304622 "SIREN DB annotation:
 * whole egg without shell FOODON:03420225
 * preservation by heat treatment FOODON:03470120"@en)
 
-# Class: obo:FOODON_03304623 (hen egg (pickled))
+# Class: obo:FOODON_03304623 (chicken egg (pickled))
 
 AnnotationAssertion(rdfs:comment obo:FOODON_03304623 "SIREN DB annotation:
 * whole, natural shape FOODON:03430150
@@ -30198,7 +30191,7 @@ AnnotationAssertion(rdfs:comment obo:FOODON_03304623 "SIREN DB annotation:
 * ingredient: sucrose added FOODON:03460158
 * packed in vinegar with sugar FOODON:03480010"@en)
 
-# Class: obo:FOODON_03304624 (brown hen egg (shell on, raw))
+# Class: obo:FOODON_03304624 (brown chicken egg (shell on, raw))
 
 AnnotationAssertion(rdfs:comment obo:FOODON_03304624 "SIREN DB annotation:
 * whole, natural shape FOODON:03430150
@@ -30214,7 +30207,7 @@ AnnotationAssertion(rdfs:comment obo:FOODON_03304625 "SIREN DB annotation:
 * egg FOODON:03420194
 * sterilization by heating FOODON:03470123"@en)
 
-# Class: obo:FOODON_03304626 (hen egg yolk (frozen))
+# Class: obo:FOODON_03304626 (chicken egg yolk (frozen))
 
 AnnotationAssertion(rdfs:comment obo:FOODON_03304626 "SIREN DB annotation:
 * liquid, high viscosity FOODON:03430102
@@ -30232,7 +30225,7 @@ AnnotationAssertion(rdfs:comment obo:FOODON_03304627 "SIREN DB annotation:
 * preservation by dehydration or drying FOODON:03470116
 * ingredient: flavoring, spice or herb added FOODON:03460227"@en)
 
-# Class: obo:FOODON_03304628 (hen egg salad)
+# Class: obo:FOODON_03304628 (chicken egg salad)
 
 AnnotationAssertion(rdfs:comment obo:FOODON_03304628 "SIREN DB annotation:
 * semisolid with solid pieces FOODON:03430134
@@ -30873,7 +30866,7 @@ AnnotationAssertion(rdfs:comment obo:FOODON_03304720 "SIREN DB annotation:
 * acidified FOODON:03460200
 * ingredient: flavoring, spice or herb added FOODON:03460227"@en)
 
-# Class: obo:FOODON_03304722 (hen egg white (frozen))
+# Class: obo:FOODON_03304722 (chicken egg white (frozen))
 
 AnnotationAssertion(rdfs:comment obo:FOODON_03304722 "SIREN DB annotation:
 * liquid, high viscosity FOODON:03430102
@@ -30963,7 +30956,7 @@ AnnotationAssertion(rdfs:comment obo:FOODON_03304735 "SIREN DB annotation:
 * not heat-treated FOODON:03440003
 * skeletal meat part FOODON:03420175"@en)
 
-# Class: obo:FOODON_03304736 (hen egg white (dried, whipping aid added))
+# Class: obo:FOODON_03304736 (chicken egg white (dried, whipping aid added))
 
 AnnotationAssertion(rdfs:comment obo:FOODON_03304736 "SIREN DB annotation:
 * solid FOODON:03430151
@@ -31373,7 +31366,7 @@ AnnotationAssertion(rdfs:comment obo:FOODON_03304789 "SIREN DB annotation:
 * enzymatic modification process FOODON:03460252
 * preservation by dehydration or drying FOODON:03470116"@en)
 
-# Class: obo:FOODON_03304791 (scrambled hen egg)
+# Class: obo:FOODON_03304791 (scrambled chicken egg)
 
 AnnotationAssertion(rdfs:comment obo:FOODON_03304791 "SIREN DB annotation:
 * semisolid with solid pieces FOODON:03430134
@@ -31418,14 +31411,14 @@ AnnotationAssertion(rdfs:comment obo:FOODON_03304795 "SIREN DB annotation:
 * liquid, low viscosity, with no visible particles FOODON:03430123
 * peel, core or seed FOODON:03420110"@en)
 
-# Class: obo:FOODON_03304796 (scrambled hen egg mix)
+# Class: obo:FOODON_03304796 (scrambled chicken egg mix)
 
 AnnotationAssertion(rdfs:comment obo:FOODON_03304796 "SIREN DB annotation:
 * liquid, high viscosity, with no visible particles FOODON:03430139
 * formulated mix FOODON:03530074
 * whole egg without shell FOODON:03420225"@en)
 
-# Class: obo:FOODON_03304797 (scrambled hen egg (frozen))
+# Class: obo:FOODON_03304797 (scrambled chicken egg (frozen))
 
 AnnotationAssertion(rdfs:comment obo:FOODON_03304797 "SIREN DB annotation:
 * semisolid with solid pieces FOODON:03430134
@@ -31433,7 +31426,7 @@ AnnotationAssertion(rdfs:comment obo:FOODON_03304797 "SIREN DB annotation:
 * whole egg without shell FOODON:03420225
 * preservation by freezing FOODON:03470136"@en)
 
-# Class: obo:FOODON_03304798 (hen egg (fried, frozen))
+# Class: obo:FOODON_03304798 (chicken egg (fried, frozen))
 
 AnnotationAssertion(rdfs:comment obo:FOODON_03304798 "SIREN DB annotation:
 * whole FOODON:03430131
@@ -31441,7 +31434,7 @@ AnnotationAssertion(rdfs:comment obo:FOODON_03304798 "SIREN DB annotation:
 * whole egg without shell FOODON:03420225
 * preservation by freezing FOODON:03470136"@en)
 
-# Class: obo:FOODON_03304799 (hen egg white (pasteurized, frozen))
+# Class: obo:FOODON_03304799 (chicken egg white (pasteurized, frozen))
 
 AnnotationAssertion(rdfs:comment obo:FOODON_03304799 "SIREN DB annotation:
 * liquid, high viscosity FOODON:03430102
@@ -31736,7 +31729,7 @@ AnnotationAssertion(rdfs:comment obo:FOODON_03304837 "SIREN DB annotation:
 * physical/chemical modification process FOODON:03460130
 * preservation by filtration FOODON:03470121"@en)
 
-# Class: obo:FOODON_03304838 (hen egg (freeze-dried, with emulsifier))
+# Class: obo:FOODON_03304838 (chicken egg (freeze-dried, with emulsifier))
 
 AnnotationAssertion(rdfs:comment obo:FOODON_03304838 "SIREN DB annotation:
 * finely ground FOODON:03430106
@@ -32953,7 +32946,7 @@ AnnotationAssertion(rdfs:comment obo:FOODON_03305041 "SIREN DB annotation:
 * water removal process FOODON:03460138
 * preservation by dehydration or drying FOODON:03470116"@en)
 
-# Class: obo:FOODON_03305042 (hen egg yolk (dried))
+# Class: obo:FOODON_03305042 (chicken egg yolk (dried))
 
 AnnotationAssertion(rdfs:comment obo:FOODON_03305042 "SIREN DB annotation:
 * solid FOODON:03430151
@@ -33003,7 +32996,7 @@ AnnotationAssertion(rdfs:comment obo:FOODON_03305051 "SIREN DB annotation:
 * water removal process FOODON:03460138
 * preservation by dehydration or drying FOODON:03470116"@en)
 
-# Class: obo:FOODON_03305052 (hen egg yolk (cooked))
+# Class: obo:FOODON_03305052 (chicken egg yolk (cooked))
 
 AnnotationAssertion(rdfs:comment obo:FOODON_03305052 "SIREN DB annotation:
 * fully heat-treated FOODON:03440014
@@ -36343,7 +36336,7 @@ AnnotationAssertion(rdfs:comment obo:FOODON_03305610 "SIREN DB annotation:
 * http://purl.obolibrary.org/obo/RO_0002220 http://purl.obolibrary.org/obo/FOODON_03500019
 * sterilization by heating FOODON:03470123"@en)
 
-# Class: obo:FOODON_03305612 (hen egg white (dried))
+# Class: obo:FOODON_03305612 (chicken egg white (dried))
 
 AnnotationAssertion(rdfs:comment obo:FOODON_03305612 "SIREN DB annotation:
 * disintegrated or ground FOODON:03430136
@@ -37105,7 +37098,7 @@ AnnotationAssertion(rdfs:comment obo:FOODON_03305730 "SIREN DB annotation:
 * ingredient: flavoring, spice or herb added FOODON:03460227
 * ingredient: vegetable fat or oil added FOODON:03460263"@en)
 
-# Class: obo:FOODON_03305731 (hen egg and mushroom spread)
+# Class: obo:FOODON_03305731 (chicken egg and mushroom spread)
 
 AnnotationAssertion(rdfs:comment obo:FOODON_03305731 "SIREN DB annotation:
 * semisolid with solid pieces FOODON:03430134
@@ -48752,7 +48745,7 @@ AnnotationAssertion(rdfs:comment obo:FOODON_03307885 "SIREN DB annotation:
 * ingredient: gelatin added FOODON:03460165
 * ingredient: food added FOODON:03460180"@en)
 
-# Class: obo:FOODON_03307888 (hen egg (dried, fumigated))
+# Class: obo:FOODON_03307888 (chicken egg (dried, fumigated))
 
 AnnotationAssertion(rdfs:comment obo:FOODON_03307888 "SIREN DB annotation:
 * finely ground FOODON:03430106
@@ -49332,7 +49325,7 @@ AnnotationAssertion(rdfs:comment obo:FOODON_03308020 "SIREN DB annotation:
 * not heat-treated FOODON:03440003
 * skeletal meat part FOODON:03420175"@en)
 
-# Class: obo:FOODON_03308021 (oyster (shucked, raw))
+# Class: obo:FOODON_03308021 (oyster shell off, raw))
 
 AnnotationAssertion(rdfs:comment obo:FOODON_03308021 "SIREN DB annotation:
 * whole, natural shape FOODON:03430150
@@ -49937,7 +49930,7 @@ AnnotationAssertion(rdfs:comment obo:FOODON_03308127 "SIREN DB annotation:
 * whole animal or most parts used FOODON:03420173
 * preservation by freezing FOODON:03470136"@en)
 
-# Class: obo:FOODON_03308128 (mussel (shucked, raw))
+# Class: obo:FOODON_03308128 (mussel shell off, raw))
 
 AnnotationAssertion(rdfs:comment obo:FOODON_03308128 "SIREN DB annotation:
 * whole, natural shape FOODON:03430150
@@ -56367,7 +56360,7 @@ AnnotationAssertion(rdfs:comment obo:FOODON_03309502 "SIREN DB annotation:
 * ingredient: starch added FOODON:03460146
 * ingredient: sucrose added FOODON:03460158"@en)
 
-# Class: obo:FOODON_03309503 (hen egg extender (artificially colored))
+# Class: obo:FOODON_03309503 (chicken egg extender (artificially colored))
 
 AnnotationAssertion(rdfs:comment obo:FOODON_03309503 "SIREN DB annotation:
 * finely ground FOODON:03430106
@@ -59490,7 +59483,7 @@ AnnotationAssertion(rdfs:comment obo:FOODON_03310154 "SIREN DB annotation:
 * not heat-treated FOODON:03440003
 * skeletal meat part FOODON:03420175"@en)
 
-# Class: obo:FOODON_03310155 (hen egg white (raw))
+# Class: obo:FOODON_03310155 (chicken egg white (raw))
 
 AnnotationAssertion(rdfs:comment obo:FOODON_03310155 "SIREN DB annotation:
 * liquid, high viscosity, with no visible particles FOODON:03430139
@@ -59938,7 +59931,7 @@ AnnotationAssertion(rdfs:comment obo:FOODON_03310223 "SIREN DB annotation:
 * ingredient: fat or oil added FOODON:03460221
 * packed in gravy or sauce FOODON:03480034"@en)
 
-# Class: obo:FOODON_03310224 (hen egg white (boiled))
+# Class: obo:FOODON_03310224 (chicken egg white (boiled))
 
 AnnotationAssertion(rdfs:comment obo:FOODON_03310224 "SIREN DB annotation:
 * solid FOODON:03430151
@@ -59946,7 +59939,7 @@ AnnotationAssertion(rdfs:comment obo:FOODON_03310224 "SIREN DB annotation:
 * albumen UBERON:0008944
 * boiling FOODON:03450014"@en)
 
-# Class: obo:FOODON_03310225 (hen egg white (fried))
+# Class: obo:FOODON_03310225 (chicken egg white (fried))
 
 AnnotationAssertion(rdfs:comment obo:FOODON_03310225 "SIREN DB annotation:
 * solid FOODON:03430151
@@ -60011,7 +60004,7 @@ AnnotationAssertion(rdfs:comment obo:FOODON_03310233 "SIREN DB annotation:
 * preservation by dehydration or drying FOODON:03470116
 * food animal as consumer FOODON:03510015"@en)
 
-# Class: obo:FOODON_03310235 (hen egg white (browned))
+# Class: obo:FOODON_03310235 (chicken egg white (browned))
 
 AnnotationAssertion(rdfs:comment obo:FOODON_03310235 "SIREN DB annotation:
 * solid FOODON:03430151
@@ -62024,14 +62017,14 @@ AnnotationAssertion(rdfs:comment obo:FOODON_03310690 "SIREN DB annotation:
 * not heat-treated FOODON:03440003
 * part of plant FOODON:03420174"@en)
 
-# Class: obo:FOODON_03310694 (hen egg (shell on, iodine enriched))
+# Class: obo:FOODON_03310694 (chicken egg (shell on, iodine enriched))
 
 AnnotationAssertion(rdfs:comment obo:FOODON_03310694 "SIREN DB annotation:
 * whole egg FOODON:03420274
 * iodized FOODON:03460189
 * ingredient: nutrient or dietary substance added FOODON:03460194"@en)
 
-# Class: obo:FOODON_03310695 (hen egg (hard-cooked by microwave, cubed))
+# Class: obo:FOODON_03310695 (chicken egg (hard-cooked by microwave, cubed))
 
 AnnotationAssertion(rdfs:comment obo:FOODON_03310695 "SIREN DB annotation:
 * whole, shape achieved by forming FOODON:03430147
@@ -63504,7 +63497,7 @@ AnnotationAssertion(rdfs:comment obo:FOODON_03310949 "SIREN DB annotation:
 * ingredient: flavoring, spice or herb added FOODON:03460227
 * ingredient: dairy product added FOODON:03460242"@en)
 
-# Class: obo:FOODON_03310951 (hen egg (boiled, shell off, salted))
+# Class: obo:FOODON_03310951 (chicken egg (boiled, shell off, salted))
 
 AnnotationAssertion(rdfs:comment obo:FOODON_03310951 "SIREN DB annotation:
 * liquid FOODON:03430130
@@ -64042,14 +64035,14 @@ AnnotationAssertion(rdfs:comment obo:FOODON_03311037 "SIREN DB annotation:
 * water removal process FOODON:03460138
 * full fat removal process FOODON:03460248"@en)
 
-# Class: obo:FOODON_03311038 (hen egg yolk (preserved, salted))
+# Class: obo:FOODON_03311038 (chicken egg yolk (preserved, salted))
 
 AnnotationAssertion(rdfs:comment obo:FOODON_03311038 "SIREN DB annotation:
 * liquid FOODON:03430130
 * egg yolk UBERON:0007378
 * salted FOODON:03460173"@en)
 
-# Class: obo:FOODON_03311039 (hen egg liquid (shell off))
+# Class: obo:FOODON_03311039 (chicken egg liquid (shell off))
 
 AnnotationAssertion(rdfs:comment obo:FOODON_03311039 "SIREN DB annotation:
 * liquid FOODON:03430130
@@ -64065,7 +64058,7 @@ AnnotationAssertion(rdfs:comment obo:FOODON_03311040 "SIREN DB annotation:
 * ingredient: sucrose added FOODON:03460158
 * ingredient: fat or oil added FOODON:03460221"@en)
 
-# Class: obo:FOODON_03311041 (hen egg (shell off, solids, dried))
+# Class: obo:FOODON_03311041 (chicken egg (shell off, solids, dried))
 
 AnnotationAssertion(rdfs:comment obo:FOODON_03311041 "SIREN DB annotation:
 * solid FOODON:03430151
@@ -64132,7 +64125,7 @@ AnnotationAssertion(rdfs:comment obo:FOODON_03311052 "SIREN DB annotation:
 * head (plant) FOODON:03420151
 * boiling and then draining FOODON:03450015"@en)
 
-# Class: obo:FOODON_03311053 (hen egg (shell on, soft boiled))
+# Class: obo:FOODON_03311053 (chicken egg (shell on, soft boiled))
 
 AnnotationAssertion(rdfs:comment obo:FOODON_03311053 "SIREN DB annotation:
 * whole, natural shape FOODON:03430150
@@ -65266,7 +65259,7 @@ AnnotationAssertion(rdfs:comment obo:FOODON_03311204 "SIREN DB annotation:
 * ingredient: grain added FOODON:03460152
 * ingredient: flavoring, spice or herb added FOODON:03460227"@en)
 
-# Class: obo:FOODON_03311205 (hen egg yolk (raw, sugared))
+# Class: obo:FOODON_03311205 (chicken egg yolk (raw, sugared))
 
 AnnotationAssertion(rdfs:comment obo:FOODON_03311205 "SIREN DB annotation:
 * liquid FOODON:03430130
@@ -65274,7 +65267,7 @@ AnnotationAssertion(rdfs:comment obo:FOODON_03311205 "SIREN DB annotation:
 * egg yolk UBERON:0007378
 * ingredient: sucrose added FOODON:03460158"@en)
 
-# Class: obo:FOODON_03311206 (hen egg yolk (raw, salted))
+# Class: obo:FOODON_03311206 (chicken egg yolk (raw, salted))
 
 AnnotationAssertion(rdfs:comment obo:FOODON_03311206 "SIREN DB annotation:
 * liquid FOODON:03430130
@@ -66070,7 +66063,7 @@ AnnotationAssertion(rdfs:comment obo:FOODON_03311325 "SIREN DB annotation:
 * microbial/enzymatic modification process FOODON:03460119
 * curing or aging process FOODON:03460253"@en)
 
-# Class: obo:FOODON_03311326 (hen egg white (raw, stabilized))
+# Class: obo:FOODON_03311326 (chicken egg white (raw, stabilized))
 
 AnnotationAssertion(rdfs:comment obo:FOODON_03311326 "SIREN DB annotation:
 * liquid, high viscosity, with no visible particles FOODON:03430139
@@ -68307,7 +68300,7 @@ AnnotationAssertion(rdfs:comment obo:FOODON_03311736 "SIREN DB annotation:
 * curing or aging process FOODON:03460253
 * preservation by smoking FOODON:03470106"@en)
 
-# Class: obo:FOODON_03311738 (hen egg yolk (low cholesterol, low fat))
+# Class: obo:FOODON_03311738 (chicken egg yolk (low cholesterol, low fat))
 
 AnnotationAssertion(rdfs:comment obo:FOODON_03311738 "SIREN DB annotation:
 * liquid, high viscosity, with no visible particles FOODON:03430139
@@ -68463,7 +68456,7 @@ AnnotationAssertion(rdfs:comment obo:FOODON_03311768 "SIREN DB annotation:
 * liquid FOODON:03430130
 * ingredient: sweetener added FOODON:03460202"@en)
 
-# Class: obo:FOODON_03311769 (hen egg liquid (decholesterolized))
+# Class: obo:FOODON_03311769 (chicken egg liquid (decholesterolized))
 
 AnnotationAssertion(rdfs:comment obo:FOODON_03311769 "SIREN DB annotation:
 * liquid FOODON:03430130
@@ -68471,7 +68464,7 @@ AnnotationAssertion(rdfs:comment obo:FOODON_03311769 "SIREN DB annotation:
 * component removal process FOODON:03460238
 * cholesterol free food FOODON:03510042"@en)
 
-# Class: obo:FOODON_03311770 (hen egg (semiliquid, pasteurized))
+# Class: obo:FOODON_03311770 (chicken egg (semiliquid, pasteurized))
 
 AnnotationAssertion(rdfs:comment obo:FOODON_03311770 "SIREN DB annotation:
 * semiliquid FOODON:03430103
@@ -70108,7 +70101,7 @@ AnnotationAssertion(rdfs:comment obo:FOODON_03315180 "SIREN DB annotation:
 * whole, shape achieved by forming FOODON:03430147
 * dietary claim or use FOODON:03510023"@en)
 
-# Class: obo:FOODON_03315181 (hen egg white (solid))
+# Class: obo:FOODON_03315181 (chicken egg white (solid))
 
 AnnotationAssertion(rdfs:comment obo:FOODON_03315181 "SIREN DB annotation:
 * solid FOODON:03430151
@@ -71826,7 +71819,7 @@ AnnotationAssertion(rdfs:comment obo:FOODON_03315567 "SIREN DB annotation:
 * water removal process FOODON:03460138
 * preservation by dehydration or drying FOODON:03470116"@en)
 
-# Class: obo:FOODON_03315568 (hen egg omelette mix)
+# Class: obo:FOODON_03315568 (chicken egg omelette mix)
 
 AnnotationAssertion(rdfs:comment obo:FOODON_03315568 "SIREN DB annotation:
 * formulated mix FOODON:03530074
@@ -72668,7 +72661,7 @@ AnnotationAssertion(rdfs:comment obo:FOODON_03315741 "SIREN DB annotation:
 AnnotationAssertion(rdfs:comment obo:FOODON_03315742 "SIREN DB annotation:
 * formulated mix FOODON:03530074"@en)
 
-# Class: obo:FOODON_03315743 (hen egg white (delysozymized))
+# Class: obo:FOODON_03315743 (chicken egg white (delysozymized))
 
 AnnotationAssertion(rdfs:comment obo:FOODON_03315743 "SIREN DB annotation:
 * albumen UBERON:0008944
@@ -73278,7 +73271,7 @@ AnnotationAssertion(rdfs:comment obo:FOODON_03315876 "SIREN DB annotation:
 * skeletal meat part, without bone or shell FOODON:03420125
 * preservation by freezing FOODON:03470136"@en)
 
-# Class: obo:FOODON_03315879 (hen egg mix (albumen and yolk, dried))
+# Class: obo:FOODON_03315879 (chicken egg mix (albumen and yolk, dried))
 
 AnnotationAssertion(rdfs:comment obo:FOODON_03315879 "SIREN DB annotation:
 * finely ground FOODON:03430106
@@ -73287,7 +73280,7 @@ AnnotationAssertion(rdfs:comment obo:FOODON_03315879 "SIREN DB annotation:
 * water removal process FOODON:03460138
 * preservation by dehydration or drying FOODON:03470116"@en)
 
-# Class: obo:FOODON_03315880 (hen egg yolk mix (dried))
+# Class: obo:FOODON_03315880 (chicken egg yolk mix (dried))
 
 AnnotationAssertion(rdfs:comment obo:FOODON_03315880 "SIREN DB annotation:
 * finely ground FOODON:03430106
@@ -75670,7 +75663,7 @@ AnnotationAssertion(rdfs:comment obo:FOODON_03316424 "SIREN DB annotation:
 * water removal process FOODON:03460138
 * preservation by dehydration or drying FOODON:03470116"@en)
 
-# Class: obo:FOODON_03316425 (hen egg (preserved))
+# Class: obo:FOODON_03316425 (chicken egg (preserved))
 
 AnnotationAssertion(rdfs:comment obo:FOODON_03316425 "SIREN DB annotation:
 * solid FOODON:03430151
@@ -76019,7 +76012,7 @@ AnnotationAssertion(rdfs:comment obo:FOODON_03316496 "SIREN DB annotation:
 * whole, shape achieved by forming FOODON:03430147
 * preservation by freezing FOODON:03470136"@en)
 
-# Class: obo:FOODON_03316499 (hen egg white hydrolysate)
+# Class: obo:FOODON_03316499 (chicken egg white hydrolysate)
 
 AnnotationAssertion(rdfs:comment obo:FOODON_03316499 "SIREN DB annotation:
 * liquid, high viscosity FOODON:03430102
@@ -78652,7 +78645,7 @@ AnnotationAssertion(rdfs:comment obo:FOODON_03316920 "SIREN DB annotation:
 * food filling process FOODON:03460207
 * ingredient: barley plant as food source FOODON:03411230"@en)
 
-# Class: obo:FOODON_03316922 (hen egg white mass (quick-frozen))
+# Class: obo:FOODON_03316922 (chicken egg white mass (quick-frozen))
 
 AnnotationAssertion(rdfs:comment obo:FOODON_03316922 "SIREN DB annotation:
 * solid FOODON:03430151
@@ -81658,7 +81651,7 @@ AnnotationAssertion(rdfs:comment obo:FOODON_03317513 "SIREN DB annotation:
 * water removal process FOODON:03460138
 * preservation by dehydration or drying FOODON:03470116"@en)
 
-# Class: obo:FOODON_03317517 (hen egg product (dehydrated))
+# Class: obo:FOODON_03317517 (chicken egg product (dehydrated))
 
 AnnotationAssertion(rdfs:comment obo:FOODON_03317517 "SIREN DB annotation:
 * solid FOODON:03430151
@@ -81666,18 +81659,18 @@ AnnotationAssertion(rdfs:comment obo:FOODON_03317517 "SIREN DB annotation:
 * water removal process FOODON:03460138
 * preservation by dehydration or drying FOODON:03470116"@en)
 
-# Class: obo:FOODON_03317518 (hen egg product (concentrated))
+# Class: obo:FOODON_03317518 (chicken egg product (concentrated))
 
 AnnotationAssertion(rdfs:comment obo:FOODON_03317518 "SIREN DB annotation:
 * egg FOODON:03420194"@en)
 
-# Class: obo:FOODON_03317519 (hen egg product (frozen))
+# Class: obo:FOODON_03317519 (chicken egg product (frozen))
 
 AnnotationAssertion(rdfs:comment obo:FOODON_03317519 "SIREN DB annotation:
 * egg FOODON:03420194
 * preservation by freezing FOODON:03470136"@en)
 
-# Class: obo:FOODON_03317520 (hen egg product (deep-frozen))
+# Class: obo:FOODON_03317520 (chicken egg product (deep-frozen))
 
 AnnotationAssertion(rdfs:comment obo:FOODON_03317520 "SIREN DB annotation:
 * egg FOODON:03420194
@@ -82473,7 +82466,7 @@ AnnotationAssertion(rdfs:comment obo:FOODON_03317654 "SIREN DB annotation:
 * ingredient: spice or herb added FOODON:03460151
 * ingredient: grain added FOODON:03460152"@en)
 
-# Class: obo:FOODON_03317655 (hen egg jam)
+# Class: obo:FOODON_03317655 (chicken egg jam)
 
 AnnotationAssertion(rdfs:comment obo:FOODON_03317655 "SIREN DB annotation:
 * semisolid FOODON:03430144
