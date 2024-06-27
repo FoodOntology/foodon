@@ -2276,7 +2276,7 @@ AnnotationAssertion(owl:deprecated obo:FOODON_00002117 "true"^^xsd:boolean)
 AnnotationAssertion(obo:IAO_0000231 obo:FOODON_00002123 "Redundant entry, already have 'alcoholic beverage' and both have the parent class 'plant derived fermented beverage'")
 AnnotationAssertion(obo:IAO_0100001 obo:FOODON_00002123 obo:FOODON_00001579)
 AnnotationAssertion(rdfs:label obo:FOODON_00002123 "obsolete: plant based alcoholic beverage"@en)
-AnnotationAssertion(owl:deprecated obo:FOODON_00002123 "true"@en)
+AnnotationAssertion(owl:deprecated obo:FOODON_00002123 "true"^^xsd:boolean)
 
 # Class: obo:FOODON_00002124 (obsolete: plant based animal feed food product)
 
@@ -2289,7 +2289,7 @@ AnnotationAssertion(owl:deprecated obo:FOODON_00002124 "true"^^xsd:boolean)
 AnnotationAssertion(obo:IAO_0000231 obo:FOODON_00002136 "Redundant entry"@en)
 AnnotationAssertion(obo:IAO_0100001 obo:FOODON_00002136 obo:FOODON_00001817)
 AnnotationAssertion(rdfs:label obo:FOODON_00002136 "obsolete: plant derived distilled spirit"@en)
-AnnotationAssertion(owl:deprecated obo:FOODON_00002136 "true"@en)
+AnnotationAssertion(owl:deprecated obo:FOODON_00002136 "true"^^xsd:boolean)
 
 # Class: obo:FOODON_00002169 (obsolete: foodon product type template)
 
@@ -2401,7 +2401,6 @@ AnnotationAssertion(owl:deprecated obo:FOODON_03000005 "true"^^xsd:boolean)
 
 # Class: obo:FOODON_03301074 (obsolete: hen egg product (not further specified))
 
-AnnotationAssertion(obo:IAO_0000412 obo:FOODON_03301074 "http://langual.org")
 AnnotationAssertion(obo:IAO_0100001 obo:FOODON_03301074 "http://purl.obolibrary.org/obo/FOODON_00001275")
 AnnotationAssertion(oboInOwl:hasDbXref obo:FOODON_03301074 "SUBSET_SIREN:F1074")
 AnnotationAssertion(rdfs:label obo:FOODON_03301074 "obsolete: hen egg product (not further specified)"@en)
@@ -2409,7 +2408,6 @@ AnnotationAssertion(owl:deprecated obo:FOODON_03301074 "true"^^xsd:boolean)
 
 # Class: obo:FOODON_03301076 (obsolete: cheese (not further specified))
 
-AnnotationAssertion(obo:IAO_0000412 obo:FOODON_03301076 "http://langual.org")
 AnnotationAssertion(obo:IAO_0100001 obo:FOODON_03301076 "http://purl.obolibrary.org/obo/FOODON_00001013"^^xsd:anyURI)
 AnnotationAssertion(oboInOwl:hasDbXref obo:FOODON_03301076 "SUBSET_SIREN:F1076")
 AnnotationAssertion(rdfs:label obo:FOODON_03301076 "obsolete: cheese (not further specified)"@en)
@@ -2417,7 +2415,6 @@ AnnotationAssertion(owl:deprecated obo:FOODON_03301076 "true"^^xsd:boolean)
 
 # Class: obo:FOODON_03301113 (obsolete: sausage (raw))
 
-AnnotationAssertion(obo:IAO_0000412 obo:FOODON_03301113 "http://langual.org")
 AnnotationAssertion(obo:IAO_0100001 obo:FOODON_03301113 "http://purl.obolibrary.org/obo/FOODON_00001222"^^xsd:anyURI)
 AnnotationAssertion(rdfs:label obo:FOODON_03301113 "obsolete: sausage (raw)"@en)
 AnnotationAssertion(owl:deprecated obo:FOODON_03301113 "true"^^xsd:boolean)
@@ -2430,28 +2427,24 @@ AnnotationAssertion(owl:deprecated obo:FOODON_03301120 "true"^^xsd:boolean)
 
 # Class: obo:FOODON_03301128 (obsolete: blue cheese)
 
-AnnotationAssertion(obo:IAO_0000412 obo:FOODON_03301128 "http://langual.org")
 AnnotationAssertion(obo:IAO_0100001 obo:FOODON_03301128 "http://purl.obolibrary.org/obo/FOODON_00001065"^^xsd:anyURI)
 AnnotationAssertion(rdfs:label obo:FOODON_03301128 "obsolete: blue cheese"@en)
 AnnotationAssertion(owl:deprecated obo:FOODON_03301128 "true"^^xsd:boolean)
 
 # Class: obo:FOODON_03301139 (obsolete: food (canned))
 
-AnnotationAssertion(obo:IAO_0000412 obo:FOODON_03301139 "http://langual.org")
 AnnotationAssertion(obo:IAO_0100001 obo:FOODON_03301139 "http://purl.obolibrary.org/obo/FOODON_00002418"^^xsd:anyURI)
 AnnotationAssertion(rdfs:label obo:FOODON_03301139 "obsolete: food (canned)"@en)
 AnnotationAssertion(owl:deprecated obo:FOODON_03301139 "true"^^xsd:boolean)
 
 # Class: obo:FOODON_03301302 (obsolete: pickled food)
 
-AnnotationAssertion(obo:IAO_0000412 obo:FOODON_03301302 "http://langual.org")
 AnnotationAssertion(obo:IAO_0100001 obo:FOODON_03301302 "http://purl.obolibrary.org/obo/FOODON_00001079"^^xsd:anyURI)
 AnnotationAssertion(rdfs:label obo:FOODON_03301302 "obsolete: pickled food"@en)
 AnnotationAssertion(owl:deprecated obo:FOODON_03301302 "true"^^xsd:boolean)
 
 # Class: obo:FOODON_03301316 (obsolete: coffee (decaffeinated))
 
-AnnotationAssertion(obo:IAO_0000412 obo:FOODON_03301316 "http://langual.org")
 AnnotationAssertion(obo:IAO_0100001 obo:FOODON_03301316 "http://purl.obolibrary.org/obo/FOODON_03316937"^^xsd:anyURI)
 AnnotationAssertion(oboInOwl:hasDbXref obo:FOODON_03301316 "SUBSET_SIREN:F1316")
 AnnotationAssertion(oboInOwl:inSubset obo:FOODON_03301316 "subset_siren")
@@ -2468,7 +2461,6 @@ AnnotationAssertion(owl:deprecated obo:FOODON_03301316 "true"^^xsd:boolean)
 
 # Class: obo:FOODON_03301349 (obsolete: molasses)
 
-AnnotationAssertion(obo:IAO_0000412 obo:FOODON_03301349 "http://langual.org")
 AnnotationAssertion(obo:IAO_0100001 obo:FOODON_03301349 "http://purl.obolibrary.org/obo/CHEBI_83163"@en)
 AnnotationAssertion(oboInOwl:hasDbXref obo:FOODON_03301349 "SUBSET_SIREN:F1349")
 AnnotationAssertion(oboInOwl:inSubset obo:FOODON_03301349 "subset_siren")
@@ -2482,7 +2474,6 @@ AnnotationAssertion(owl:deprecated obo:FOODON_03301349 "true"^^xsd:boolean)
 
 # Class: obo:FOODON_03301350 (obsolete: peanut product)
 
-AnnotationAssertion(obo:IAO_0000412 obo:FOODON_03301350 "http://langual.org")
 AnnotationAssertion(obo:IAO_0100001 obo:FOODON_03301350 "http://purl.obolibrary.org/obo/FOODON_00002099"^^xsd:anyURI)
 AnnotationAssertion(oboInOwl:inSubset obo:FOODON_03301350 "subset_siren")
 AnnotationAssertion(rdfs:label obo:FOODON_03301350 "obsolete: peanut product"@en)
@@ -2491,7 +2482,6 @@ AnnotationAssertion(owl:deprecated obo:FOODON_03301350 "true"^^xsd:boolean)
 # Class: obo:FOODON_03301404 (obsolete: pickle)
 
 AnnotationAssertion(obo:IAO_0000114 obo:FOODON_03301404 obo:IAO_0000428)
-AnnotationAssertion(obo:IAO_0000412 obo:FOODON_03301404 "http://langual.org")
 AnnotationAssertion(oboInOwl:hasDbXref obo:FOODON_03301404 "SUBSET_SIREN:F1404")
 AnnotationAssertion(oboInOwl:inSubset obo:FOODON_03301404 "subset_siren")
 AnnotationAssertion(rdfs:comment obo:FOODON_03301404 "SIREN DB annotation:
@@ -2516,7 +2506,6 @@ AnnotationAssertion(owl:deprecated obo:FOODON_03301419 "true"^^xsd:boolean)
 
 # Class: obo:FOODON_03301442 (obsolete: dairy product analog (not further specified))
 
-AnnotationAssertion(obo:IAO_0000412 obo:FOODON_03301442 "http://langual.org")
 AnnotationAssertion(obo:IAO_0100001 obo:FOODON_03301442 obo:FOODON_00001801)
 AnnotationAssertion(oboInOwl:inSubset obo:FOODON_03301442 "subset_siren")
 AnnotationAssertion(rdfs:label obo:FOODON_03301442 "obsolete: dairy product analog (not further specified)"@en)
@@ -2524,7 +2513,6 @@ AnnotationAssertion(owl:deprecated obo:FOODON_03301442 "true"^^xsd:boolean)
 
 # Class: obo:FOODON_03301711 (obsolete: dairy product (not further specified))
 
-AnnotationAssertion(obo:IAO_0000412 obo:FOODON_03301711 "http://langual.org")
 AnnotationAssertion(obo:IAO_0100001 obo:FOODON_03301711 "http://purl.obolibrary.org/obo/FOODON_00001256")
 AnnotationAssertion(oboInOwl:hasDbXref obo:FOODON_03301711 "SUBSET_SIREN:F1711")
 AnnotationAssertion(oboInOwl:inSubset obo:FOODON_03301711 "subset_siren")
@@ -2536,7 +2524,6 @@ AnnotationAssertion(owl:deprecated obo:FOODON_03301711 "true"^^xsd:boolean)
 
 # Class: obo:FOODON_03301888 (obsolete: gluten)
 
-AnnotationAssertion(obo:IAO_0000412 obo:FOODON_03301888 "http://langual.org")
 AnnotationAssertion(obo:IAO_0100001 obo:FOODON_03301888 "http://purl.obolibrary.org/obo/FOODON_03420177"^^xsd:anyURI)
 AnnotationAssertion(oboInOwl:hasDbXref obo:FOODON_03301888 "SUBSET_SIREN:F1888")
 AnnotationAssertion(oboInOwl:inSubset obo:FOODON_03301888 "subset_siren")
@@ -2556,7 +2543,6 @@ AnnotationAssertion(owl:deprecated obo:FOODON_03301971 "true"^^xsd:boolean)
 
 # Class: obo:FOODON_03302385 (obsolete: orange beverage)
 
-AnnotationAssertion(obo:IAO_0000412 obo:FOODON_03302385 "http://langual.org")
 AnnotationAssertion(obo:IAO_0100001 obo:FOODON_03302385 "http://purl.obolibrary.org/obo/FOODON_00001100"^^xsd:anyURI)
 AnnotationAssertion(oboInOwl:inSubset obo:FOODON_03302385 "subset_siren")
 AnnotationAssertion(rdfs:label obo:FOODON_03302385 "obsolete: orange beverage"@en)
@@ -2565,14 +2551,12 @@ AnnotationAssertion(owl:deprecated obo:FOODON_03302385 "true"^^xsd:boolean)
 # Class: obo:FOODON_03302410 (obsolete: distilled spirits)
 
 AnnotationAssertion(obo:IAO_0000231 obo:FOODON_03302410 "Redundant entry")
-AnnotationAssertion(obo:IAO_0000412 obo:FOODON_03302410 "http://langual.org")
 AnnotationAssertion(obo:IAO_0100001 obo:FOODON_03302410 obo:FOODON_00001817)
 AnnotationAssertion(rdfs:label obo:FOODON_03302410 "obsolete: distilled spirits"@en)
-AnnotationAssertion(owl:deprecated obo:FOODON_03302410 "true"@en)
+AnnotationAssertion(owl:deprecated obo:FOODON_03302410 "true"^^xsd:boolean)
 
 # Class: obo:FOODON_03302833 (obsolete: brown sugar)
 
-AnnotationAssertion(obo:IAO_0000412 obo:FOODON_03302833 "http://langual.org")
 AnnotationAssertion(obo:IAO_0100001 obo:FOODON_03302833 "http://purl.obolibrary.org/obo/FOODON_03420156"^^xsd:anyURI)
 AnnotationAssertion(oboInOwl:hasDbXref obo:FOODON_03302833 "SUBSET_SIREN:F2833")
 AnnotationAssertion(oboInOwl:inSubset obo:FOODON_03302833 "subset_siren")
@@ -2589,7 +2573,6 @@ AnnotationAssertion(owl:deprecated obo:FOODON_03302833 "true"^^xsd:boolean)
 # Class: obo:FOODON_03303954 (obsolete: naranja orange shell)
 
 AnnotationAssertion(obo:IAO_0000114 obo:FOODON_03303954 obo:IAO_0000428)
-AnnotationAssertion(obo:IAO_0000412 obo:FOODON_03303954 "http://langual.org")
 AnnotationAssertion(obo:IAO_0100001 obo:FOODON_03303954 "http://purl.obolibrary.org/obo/FOODON_03303116"^^xsd:anyURI)
 AnnotationAssertion(oboInOwl:hasDbXref obo:FOODON_03303954 "SUBSET_SIREN:F3954")
 AnnotationAssertion(rdfs:label obo:FOODON_03303954 "obsolete: naranja orange shell"@en)
@@ -2597,7 +2580,6 @@ AnnotationAssertion(owl:deprecated obo:FOODON_03303954 "true"^^xsd:boolean)
 
 # Class: obo:FOODON_03304196 (obsolete: soup cube)
 
-AnnotationAssertion(obo:IAO_0000412 obo:FOODON_03304196 "http://langual.org")
 AnnotationAssertion(obo:IAO_0100001 obo:FOODON_03304196 obo:FOODON_03301469)
 AnnotationAssertion(oboInOwl:hasDbXref obo:FOODON_03304196 "SUBSET_SIREN:F4196")
 AnnotationAssertion(oboInOwl:inSubset obo:FOODON_03304196 "subset_siren")
@@ -2606,7 +2588,6 @@ AnnotationAssertion(owl:deprecated obo:FOODON_03304196 "true"^^xsd:boolean)
 
 # Class: obo:FOODON_03304288 (obsolete: spice blend)
 
-AnnotationAssertion(obo:IAO_0000412 obo:FOODON_03304288 "http://langual.org")
 AnnotationAssertion(obo:IAO_0100001 obo:FOODON_03304288 "http://purl.obolibrary.org/obo/FOODON_03304292"^^xsd:anyURI)
 AnnotationAssertion(oboInOwl:hasDbXref obo:FOODON_03304288 "SUBSET_SIREN:F4288")
 AnnotationAssertion(oboInOwl:inSubset obo:FOODON_03304288 "subset_siren")
@@ -2621,14 +2602,12 @@ AnnotationAssertion(owl:deprecated obo:FOODON_03304288 "true"^^xsd:boolean)
 
 # Class: obo:FOODON_03304298 (obsolete: white sugar (granulated))
 
-AnnotationAssertion(obo:IAO_0000412 obo:FOODON_03304298 "http://langual.org")
 AnnotationAssertion(obo:IAO_0100001 obo:FOODON_03304298 "http://purl.obolibrary.org/obo/FOODON_03420157"^^xsd:anyURI)
 AnnotationAssertion(rdfs:label obo:FOODON_03304298 "obsolete: white sugar (granulated)"@en)
 AnnotationAssertion(owl:deprecated obo:FOODON_03304298 "true"^^xsd:boolean)
 
 # Class: obo:FOODON_03304467 (obsolete: cow milk (sterilized))
 
-AnnotationAssertion(obo:IAO_0000412 obo:FOODON_03304467 "http://langual.org")
 AnnotationAssertion(obo:IAO_0100001 obo:FOODON_03304467 "http://purl.obolibrary.org/obo/FOODON_03304396"^^xsd:anyURI)
 AnnotationAssertion(oboInOwl:inSubset obo:FOODON_03304467 "subset_siren")
 AnnotationAssertion(rdfs:label obo:FOODON_03304467 "obsolete: cow milk (sterilized)"@en)
@@ -2636,7 +2615,6 @@ AnnotationAssertion(owl:deprecated obo:FOODON_03304467 "true"^^xsd:boolean)
 
 # Class: obo:FOODON_03305038 (obsolete: infant formula (liquid, milk-based, canned))
 
-AnnotationAssertion(obo:IAO_0000412 obo:FOODON_03305038 "http://langual.org")
 AnnotationAssertion(obo:IAO_0100001 obo:FOODON_03305038 obo:FOODON_03304216)
 AnnotationAssertion(oboInOwl:inSubset obo:FOODON_03305038 "subset_siren")
 AnnotationAssertion(rdfs:label obo:FOODON_03305038 "obsolete: infant formula (liquid, milk-based, canned)"@en)
@@ -2645,7 +2623,6 @@ AnnotationAssertion(owl:deprecated obo:FOODON_03305038 "true"^^xsd:boolean)
 # Class: obo:FOODON_03305105 (obsolete: food (liquid))
 
 AnnotationAssertion(obo:IAO_0000114 obo:FOODON_03305105 obo:IAO_0000428)
-AnnotationAssertion(obo:IAO_0000412 obo:FOODON_03305105 "http://langual.org")
 AnnotationAssertion(obo:IAO_0100001 obo:FOODON_03305105 "http://purl.obolibrary.org/obo/FOODON_03430130"^^xsd:anyURI)
 AnnotationAssertion(oboInOwl:hasDbXref obo:FOODON_03305105 "SUBSET_SIREN:F5105")
 AnnotationAssertion(oboInOwl:inSubset obo:FOODON_03305105 "subset_siren")
@@ -2657,7 +2634,6 @@ AnnotationAssertion(owl:deprecated obo:FOODON_03305105 "true"^^xsd:boolean)
 
 # Class: obo:FOODON_03305224 (obsolete: glace fruit)
 
-AnnotationAssertion(obo:IAO_0000412 obo:FOODON_03305224 "http://langual.org")
 AnnotationAssertion(obo:IAO_0100001 obo:FOODON_03305224 "http://purl.obolibrary.org/obo/FOODON_03305040"^^xsd:anyURI)
 AnnotationAssertion(oboInOwl:hasDbXref obo:FOODON_03305224 "SUBSET_SIREN:F5224")
 AnnotationAssertion(oboInOwl:inSubset obo:FOODON_03305224 "subset_siren")
@@ -2683,7 +2659,6 @@ AnnotationAssertion(owl:deprecated obo:FOODON_03305644 "true"^^xsd:boolean)
 
 # Class: obo:FOODON_03305676 (obsolete: sweetener (artificial))
 
-AnnotationAssertion(obo:IAO_0000412 obo:FOODON_03305676 "http://langual.org")
 AnnotationAssertion(obo:IAO_0100001 obo:FOODON_03305676 "http://purl.obolibrary.org/obo/FOODON_00001618")
 AnnotationAssertion(oboInOwl:hasDbXref obo:FOODON_03305676 "SUBSET_SIREN:F5676")
 AnnotationAssertion(oboInOwl:inSubset obo:FOODON_03305676 "subset_siren")
@@ -2692,7 +2667,6 @@ AnnotationAssertion(owl:deprecated obo:FOODON_03305676 "true"^^xsd:boolean)
 
 # Class: obo:FOODON_03305955 (obsolete: fruit jelly)
 
-AnnotationAssertion(obo:IAO_0000412 obo:FOODON_03305955 "http://langual.org")
 AnnotationAssertion(obo:IAO_0100001 obo:FOODON_03305955 "http://purl.obolibrary.org/obo/FOODON_03301811"@en)
 AnnotationAssertion(oboInOwl:hasDbXref obo:FOODON_03305955 "SUBSET_SIREN:F5955")
 AnnotationAssertion(oboInOwl:inSubset obo:FOODON_03305955 "subset_siren")
@@ -2708,7 +2682,6 @@ AnnotationAssertion(owl:deprecated obo:FOODON_03305955 "true"^^xsd:boolean)
 
 # Class: obo:FOODON_03306009 (obsolete: fruit juice from concentrate)
 
-AnnotationAssertion(obo:IAO_0000412 obo:FOODON_03306009 "http://langual.org")
 AnnotationAssertion(obo:IAO_0100001 obo:FOODON_03306009 "http://purl.obolibrary.org/obo/FOODON_03306173"@en)
 AnnotationAssertion(oboInOwl:hasDbXref obo:FOODON_03306009 "SUBSET_SIREN:F6009")
 AnnotationAssertion(oboInOwl:inSubset obo:FOODON_03306009 "subset_siren")
@@ -2722,7 +2695,6 @@ AnnotationAssertion(owl:deprecated obo:FOODON_03306009 "true"^^xsd:boolean)
 
 # Class: obo:FOODON_03306258 (obsolete: beverage base)
 
-AnnotationAssertion(obo:IAO_0000412 obo:FOODON_03306258 "http://langual.org")
 AnnotationAssertion(obo:IAO_0100001 obo:FOODON_03306258 obo:FOODON_03530088)
 AnnotationAssertion(rdfs:label obo:FOODON_03306258 "obsolete: beverage base"@en)
 AnnotationAssertion(owl:deprecated obo:FOODON_03306258 "true"^^xsd:boolean)
@@ -2735,7 +2707,6 @@ AnnotationAssertion(owl:deprecated obo:FOODON_03306299 "true"^^xsd:boolean)
 
 # Class: obo:FOODON_03306496 (obsolete: chicken-flavored soup cube)
 
-AnnotationAssertion(obo:IAO_0000412 obo:FOODON_03306496 "http://langual.org")
 AnnotationAssertion(obo:IAO_0100001 obo:FOODON_03306496 obo:FOODON_03301433)
 AnnotationAssertion(oboInOwl:hasDbXref obo:FOODON_03306496 "SUBSET_SIREN:F6496")
 AnnotationAssertion(rdfs:label obo:FOODON_03306496 "obsolete: chicken-flavored soup cube"@en)
@@ -2744,7 +2715,6 @@ AnnotationAssertion(owl:deprecated obo:FOODON_03306496 "true"^^xsd:boolean)
 # Class: obo:FOODON_03306675 (obsolete: poppy pastry filling (canned))
 
 AnnotationAssertion(obo:IAO_0000231 obo:FOODON_03306675 "Unable to find a product to match this to."@en)
-AnnotationAssertion(obo:IAO_0000412 obo:FOODON_03306675 "http://langual.org")
 AnnotationAssertion(oboInOwl:hasDbXref obo:FOODON_03306675 "SUBSET_SIREN:F6675")
 AnnotationAssertion(oboInOwl:inSubset obo:FOODON_03306675 "subset_siren")
 AnnotationAssertion(rdfs:comment obo:FOODON_03306675 "SIREN DB annotation:
@@ -2763,7 +2733,6 @@ AnnotationAssertion(owl:deprecated obo:FOODON_03306675 "true"^^xsd:boolean)
 
 # Class: obo:FOODON_03306744 (obsolete: liquid cow milk)
 
-AnnotationAssertion(obo:IAO_0000412 obo:FOODON_03306744 "http://langual.org")
 AnnotationAssertion(obo:IAO_0100001 obo:FOODON_03306744 "http://purl.obolibrary.org/obo/FOODON_03305609"^^xsd:anyURI)
 AnnotationAssertion(oboInOwl:hasDbXref obo:FOODON_03306744 "SUBSET_SIREN:F6744")
 AnnotationAssertion(oboInOwl:inSubset obo:FOODON_03306744 "subset_siren")
@@ -2772,7 +2741,6 @@ AnnotationAssertion(owl:deprecated obo:FOODON_03306744 "true"^^xsd:boolean)
 
 # Class: obo:FOODON_03307070 (obsolete: rock cornish game hen (stuffed with wild rice and mushrooms))
 
-AnnotationAssertion(obo:IAO_0000412 obo:FOODON_03307070 "http://langual.org")
 AnnotationAssertion(oboInOwl:hasDbXref obo:FOODON_03307070 "SUBSET_SIREN:F7070")
 AnnotationAssertion(oboInOwl:inSubset obo:FOODON_03307070 "subset_siren")
 AnnotationAssertion(rdfs:comment obo:FOODON_03307070 "SIREN DB annotation:
@@ -2787,14 +2755,12 @@ AnnotationAssertion(owl:deprecated obo:FOODON_03307070 "true"^^xsd:boolean)
 
 # Class: obo:FOODON_03307286 (obsolete: tap water)
 
-AnnotationAssertion(obo:IAO_0000412 obo:FOODON_03307286 "http://langual.org")
 AnnotationAssertion(obo:IAO_0100001 obo:FOODON_03307286 "http://purl.obolibrary.org/obo/ENVO_00003096"^^xsd:anyURI)
 AnnotationAssertion(rdfs:label obo:FOODON_03307286 "obsolete: tap water"@en)
 AnnotationAssertion(owl:deprecated obo:FOODON_03307286 "true"^^xsd:boolean)
 
 # Class: obo:FOODON_03308169 (obsolete: lobster (shovel, raw))
 
-AnnotationAssertion(obo:IAO_0000412 obo:FOODON_03308169 "http://langual.org")
 AnnotationAssertion(obo:IAO_0100001 obo:FOODON_03308169 "http://purl.obolibrary.org/obo/FOODON_03308351"@en)
 AnnotationAssertion(oboInOwl:hasDbXref obo:FOODON_03308169 "SUBSET_SIREN:F8169")
 AnnotationAssertion(oboInOwl:inSubset obo:FOODON_03308169 "subset_siren")
@@ -2808,14 +2774,12 @@ AnnotationAssertion(owl:deprecated obo:FOODON_03308169 "true"^^xsd:boolean)
 
 # Class: obo:FOODON_03308236 (obsolete: chilean baby crawfish (raw))
 
-AnnotationAssertion(obo:IAO_0000412 obo:FOODON_03308236 "http://langual.org")
 AnnotationAssertion(obo:IAO_0100001 obo:FOODON_03308236 obo:FOODON_03308235)
 AnnotationAssertion(rdfs:label obo:FOODON_03308236 "obsolete: chilean baby crawfish (raw)"@en)
 AnnotationAssertion(owl:deprecated obo:FOODON_03308236 "true"^^xsd:boolean)
 
 # Class: obo:FOODON_03308245 (obsolete: deep sea cray (raw))
 
-AnnotationAssertion(obo:IAO_0000412 obo:FOODON_03308245 "http://langual.org")
 AnnotationAssertion(obo:IAO_0100001 obo:FOODON_03308245 obo:FOODON_03308235)
 AnnotationAssertion(rdfs:label obo:FOODON_03308245 "obsolete: deep sea cray (raw)"@en)
 AnnotationAssertion(owl:deprecated obo:FOODON_03308245 "true"^^xsd:boolean)
@@ -2823,7 +2787,6 @@ AnnotationAssertion(owl:deprecated obo:FOODON_03308245 "true"^^xsd:boolean)
 # Class: obo:FOODON_03308246 (obsolete: crayster (raw))
 
 AnnotationAssertion(obo:IAO_0000231 obo:FOODON_03308246 "Unable to find any reference to \"crayster\""@en)
-AnnotationAssertion(obo:IAO_0000412 obo:FOODON_03308246 "http://langual.org")
 AnnotationAssertion(obo:IAO_0100001 obo:FOODON_03308246 obo:FOODON_03308536)
 AnnotationAssertion(oboInOwl:hasDbXref obo:FOODON_03308246 "SUBSET_SIREN:F8246")
 AnnotationAssertion(rdfs:label obo:FOODON_03308246 "obsolete: crayster (raw)"@en)
@@ -2831,14 +2794,12 @@ AnnotationAssertion(owl:deprecated obo:FOODON_03308246 "true"^^xsd:boolean)
 
 # Class: obo:FOODON_03308248 (obsolete: south pacific shellfish (raw))
 
-AnnotationAssertion(obo:IAO_0000412 obo:FOODON_03308248 "http://langual.org")
 AnnotationAssertion(obo:IAO_0100001 obo:FOODON_03308248 obo:FOODON_03308235)
 AnnotationAssertion(rdfs:label obo:FOODON_03308248 "obsolete: south pacific shellfish (raw)"@en)
 AnnotationAssertion(owl:deprecated obo:FOODON_03308248 "true"^^xsd:boolean)
 
 # Class: obo:FOODON_03309665 (obsolete: fish cutlet (raw))
 
-AnnotationAssertion(obo:IAO_0000412 obo:FOODON_03309665 "http://langual.org")
 AnnotationAssertion(obo:IAO_0100001 obo:FOODON_03309665 obo:FOODON_03308394)
 AnnotationAssertion(oboInOwl:hasDbXref obo:FOODON_03309665 "SUBSET_SIREN:F9665")
 AnnotationAssertion(oboInOwl:inSubset obo:FOODON_03309665 "subset_siren")
@@ -2848,7 +2809,6 @@ AnnotationAssertion(owl:deprecated obo:FOODON_03309665 "true"^^xsd:boolean)
 # Class: obo:FOODON_03309761 (obsolete: spring water with white chardonnay wine (food product))
 
 AnnotationAssertion(obo:IAO_0000231 obo:FOODON_03309761 "Product is too specific.")
-AnnotationAssertion(obo:IAO_0000412 obo:FOODON_03309761 "http://langual.org")
 AnnotationAssertion(oboInOwl:hasDbXref obo:FOODON_03309761 "SUBSET_SIREN:F9761")
 AnnotationAssertion(oboInOwl:inSubset obo:FOODON_03309761 "subset_siren")
 AnnotationAssertion(rdfs:comment obo:FOODON_03309761 "SIREN DB annotation:
@@ -2860,26 +2820,18 @@ AnnotationAssertion(owl:deprecated obo:FOODON_03309761 "true"^^xsd:boolean)
 
 # Class: obo:FOODON_03309850 (obsolete yellow corn meal)
 
-AnnotationAssertion(obo:IAO_0000412 obo:FOODON_03309850 "http://langual.org")
 AnnotationAssertion(obo:IAO_0100001 obo:FOODON_03309850 obo:FOODON_03305642)
 AnnotationAssertion(rdfs:label obo:FOODON_03309850 "obsolete yellow corn meal"@en)
 AnnotationAssertion(owl:deprecated obo:FOODON_03309850 "true"^^xsd:boolean)
 
 # Class: obo:FOODON_03309864 (obsolete: food made from almonds (food product))
 
-AnnotationAssertion(obo:IAO_0000412 obo:FOODON_03309864 "http://langual.org")
 AnnotationAssertion(obo:IAO_0100001 obo:FOODON_03309864 "http://purl.obolibrary.org/obo/FOODON_00001587"^^xsd:anyURI)
-AnnotationAssertion(oboInOwl:hasDbXref obo:FOODON_03309864 "SUBSET_SIREN:F9864")
-AnnotationAssertion(oboInOwl:inSubset obo:FOODON_03309864 "subset_siren")
-AnnotationAssertion(rdfs:comment obo:FOODON_03309864 "SIREN DB annotation:
-* derives from 'seed (anatomical part)' (http://purl.obolibrary.org/obo/FOODON_03420155)
-        "@en)
 AnnotationAssertion(rdfs:label obo:FOODON_03309864 "obsolete: food made from almonds (food product)"@en)
 AnnotationAssertion(owl:deprecated obo:FOODON_03309864 "true"^^xsd:boolean)
 
 # Class: obo:FOODON_03309988 (obsolete: food made from maize (food product))
 
-AnnotationAssertion(obo:IAO_0000412 obo:FOODON_03309988 "http://langual.org")
 AnnotationAssertion(obo:IAO_0100001 obo:FOODON_03309988 "http://purl.obolibrary.org/obo/FOODON_03411232"^^xsd:anyURI)
 AnnotationAssertion(oboInOwl:hasDbXref obo:FOODON_03309988 "SUBSET_SIREN:F9988")
 AnnotationAssertion(oboInOwl:inSubset obo:FOODON_03309988 "subset_siren")
@@ -2888,7 +2840,6 @@ AnnotationAssertion(owl:deprecated obo:FOODON_03309988 "true"^^xsd:boolean)
 
 # Class: obo:FOODON_03310156 (obsolete: linseed meal)
 
-AnnotationAssertion(obo:IAO_0000412 obo:FOODON_03310156 "http://langual.org")
 AnnotationAssertion(obo:IAO_0100001 obo:FOODON_03310156 "http://purl.obolibrary.org/obo/FOODON_03306424"^^xsd:anyURI)
 AnnotationAssertion(oboInOwl:hasDbXref obo:FOODON_03310156 "SUBSET_SIREN:F10156")
 AnnotationAssertion(oboInOwl:inSubset obo:FOODON_03310156 "subset_siren")
@@ -2904,14 +2855,12 @@ AnnotationAssertion(owl:deprecated obo:FOODON_03310156 "true"^^xsd:boolean)
 
 # Class: obo:FOODON_03310241 (obsolete: wheat bread dough)
 
-AnnotationAssertion(obo:IAO_0000412 obo:FOODON_03310241 "http://langual.org")
 AnnotationAssertion(obo:IAO_0100001 obo:FOODON_03310241 obo:FOODON_03302317)
 AnnotationAssertion(rdfs:label obo:FOODON_03310241 "obsolete: wheat bread dough"@en)
 AnnotationAssertion(owl:deprecated obo:FOODON_03310241 "true"^^xsd:boolean)
 
 # Class: obo:FOODON_03310414 (obsolete: water as food product)
 
-AnnotationAssertion(obo:IAO_0000412 obo:FOODON_03310414 "http://langual.org")
 AnnotationAssertion(obo:IAO_0100001 obo:FOODON_03310414 "http://purl.obolibrary.org/obo/FOODON_00002340"^^xsd:anyURI)
 AnnotationAssertion(rdfs:label obo:FOODON_03310414 "obsolete: water as food product"@en)
 AnnotationAssertion(owl:deprecated obo:FOODON_03310414 "true"^^xsd:boolean)
@@ -2930,7 +2879,6 @@ AnnotationAssertion(owl:deprecated obo:FOODON_03310595 "true"^^xsd:boolean)
 
 # Class: obo:FOODON_03310636 (obsolete: light cream)
 
-AnnotationAssertion(obo:IAO_0000412 obo:FOODON_03310636 "http://langual.org")
 AnnotationAssertion(obo:IAO_0100001 obo:FOODON_03310636 "http://purl.obolibrary.org/obo/FOODON_03301486")
 AnnotationAssertion(oboInOwl:hasDbXref obo:FOODON_03310636 "SUBSET_SIREN:F10636")
 AnnotationAssertion(oboInOwl:inSubset obo:FOODON_03310636 "subset_siren")
@@ -2946,15 +2894,13 @@ AnnotationAssertion(owl:deprecated obo:FOODON_03310636 "true"^^xsd:boolean)
 # Class: obo:FOODON_03310661 (obsolete: beverage alcohol)
 
 AnnotationAssertion(obo:IAO_0000231 obo:FOODON_03310661 "Redundant entry"@en)
-AnnotationAssertion(obo:IAO_0000412 obo:FOODON_03310661 "http://langual.org")
 AnnotationAssertion(obo:IAO_0100001 obo:FOODON_03310661 obo:FOODON_00001817)
 AnnotationAssertion(oboInOwl:hasDbXref obo:FOODON_03310661 "SUBSET_SIREN:F10661")
 AnnotationAssertion(rdfs:label obo:FOODON_03310661 "obsolete: beverage alcohol"@en)
-AnnotationAssertion(owl:deprecated obo:FOODON_03310661 "true"@en)
+AnnotationAssertion(owl:deprecated obo:FOODON_03310661 "true"^^xsd:boolean)
 
 # Class: obo:FOODON_03310715 (obsolete: confectionery, not further specified)
 
-AnnotationAssertion(obo:IAO_0000412 obo:FOODON_03310715 "http://langual.org")
 AnnotationAssertion(obo:IAO_0100001 obo:FOODON_03310715 "http://purl.obolibrary.org/obo/FOODON_00001149"^^xsd:anyURI)
 AnnotationAssertion(oboInOwl:hasDbXref obo:FOODON_03310715 "SUBSET_SIREN:F10715")
 AnnotationAssertion(oboInOwl:inSubset obo:FOODON_03310715 "subset_siren")
@@ -2967,37 +2913,18 @@ AnnotationAssertion(owl:deprecated obo:FOODON_03310715 "true"^^xsd:boolean)
 
 # Class: obo:FOODON_03310754 (obsolete: sausage (cooked))
 
-AnnotationAssertion(obo:IAO_0000412 obo:FOODON_03310754 "http://langual.org")
 AnnotationAssertion(obo:IAO_0100001 obo:FOODON_03310754 "http://purl.obolibrary.org/obo/FOODON_00001224"^^xsd:anyURI)
-AnnotationAssertion(oboInOwl:hasDbXref obo:FOODON_03310754 "SUBSET_SIREN:F10754")
-AnnotationAssertion(oboInOwl:inSubset obo:FOODON_03310754 "subset_siren")
-AnnotationAssertion(rdfs:comment obo:FOODON_03310754 "SIREN DB annotation:
-* has quality 'solid' (http://purl.obolibrary.org/obo/FOODON_03430151)
-* has quality 'fully heat-treated' (http://purl.obolibrary.org/obo/FOODON_03440014)
-* derives from 'skeletal meat part, without bone, without skin' (http://purl.obolibrary.org/obo/FOODON_03420268)
-* has substance added  'flavoring, spice or herb added' (http://purl.obolibrary.org/obo/FOODON_03460227)
-        "@en)
 AnnotationAssertion(rdfs:label obo:FOODON_03310754 "obsolete: sausage (cooked)"@en)
 AnnotationAssertion(owl:deprecated obo:FOODON_03310754 "true"^^xsd:boolean)
 
 # Class: obo:FOODON_03310756 (obsolete: sausage (smoked))
 
-AnnotationAssertion(obo:IAO_0000412 obo:FOODON_03310756 "http://langual.org")
 AnnotationAssertion(obo:IAO_0100001 obo:FOODON_03310756 "http://purl.obolibrary.org/obo/FOODON_00001220"^^xsd:anyURI)
-AnnotationAssertion(oboInOwl:hasDbXref obo:FOODON_03310756 "SUBSET_SIREN:F10756")
-AnnotationAssertion(oboInOwl:inSubset obo:FOODON_03310756 "subset_siren")
-AnnotationAssertion(rdfs:comment obo:FOODON_03310756 "SIREN DB annotation:
-* has quality 'solid' (http://purl.obolibrary.org/obo/FOODON_03430151)
-* derives from 'skeletal meat part, without bone, without skin' (http://purl.obolibrary.org/obo/FOODON_03420268)
-* formed as a result of 'smoked or smoke-flavored' (http://purl.obolibrary.org/obo/FOODON_03460172)
-* has substance added  'flavoring, spice or herb added' (http://purl.obolibrary.org/obo/FOODON_03460227)
-        "@en)
 AnnotationAssertion(rdfs:label obo:FOODON_03310756 "obsolete: sausage (smoked)"@en)
 AnnotationAssertion(owl:deprecated obo:FOODON_03310756 "true"^^xsd:boolean)
 
 # Class: obo:FOODON_03310762 (obsolete: beefburger (shaped))
 
-AnnotationAssertion(obo:IAO_0000412 obo:FOODON_03310762 "http://langual.org")
 AnnotationAssertion(obo:IAO_0100001 obo:FOODON_03310762 obo:FOODON_03317337)
 AnnotationAssertion(oboInOwl:hasDbXref obo:FOODON_03310762 "SUBSET_SIREN:F10762")
 AnnotationAssertion(oboInOwl:inSubset obo:FOODON_03310762 "subset_siren")
@@ -3006,7 +2933,6 @@ AnnotationAssertion(owl:deprecated obo:FOODON_03310762 "true"^^xsd:boolean)
 
 # Class: obo:FOODON_03310764 (obsolete: water ice not further specified)
 
-AnnotationAssertion(obo:IAO_0000412 obo:FOODON_03310764 "http://langual.org")
 AnnotationAssertion(obo:IAO_0100001 obo:FOODON_03310764 "http://purl.obolibrary.org/obo/FOODON_00002341"^^xsd:anyURI)
 AnnotationAssertion(oboInOwl:hasDbXref obo:FOODON_03310764 "SUBSET_SIREN:F10764")
 AnnotationAssertion(oboInOwl:inSubset obo:FOODON_03310764 "subset_siren")
@@ -3028,14 +2954,12 @@ AnnotationAssertion(owl:deprecated obo:FOODON_03310770 "true"^^xsd:boolean)
 
 # Class: obo:FOODON_03310831 (obsolete: blood meal)
 
-AnnotationAssertion(obo:IAO_0000412 obo:FOODON_03310831 "http://langual.org")
 AnnotationAssertion(obo:IAO_0100001 obo:FOODON_03310831 "http://purl.obolibrary.org/obo/FOODON_00001564"^^xsd:anyURI)
 AnnotationAssertion(rdfs:label obo:FOODON_03310831 "obsolete: blood meal"@en)
 AnnotationAssertion(owl:deprecated obo:FOODON_03310831 "true"^^xsd:boolean)
 
 # Class: obo:FOODON_03310834 (obsolete: food, fermented)
 
-AnnotationAssertion(obo:IAO_0000412 obo:FOODON_03310834 "http://langual.org")
 AnnotationAssertion(obo:IAO_0100001 obo:FOODON_03310834 "http://purl.obolibrary.org/obo/FOODON_00001258"^^xsd:anyURI)
 AnnotationAssertion(oboInOwl:hasDbXref obo:FOODON_03310834 "SUBSET_SIREN:F10834")
 AnnotationAssertion(oboInOwl:inSubset obo:FOODON_03310834 "subset_siren")
@@ -3047,7 +2971,6 @@ AnnotationAssertion(owl:deprecated obo:FOODON_03310834 "true"^^xsd:boolean)
 
 # Class: obo:FOODON_03310868 (obsolete: potatoes (scalloped))
 
-AnnotationAssertion(obo:IAO_0000412 obo:FOODON_03310868 "http://langual.org")
 AnnotationAssertion(obo:IAO_0100001 obo:FOODON_03310868 "http://purl.obolibrary.org/obo/FOODON_03311532"^^xsd:anyURI)
 AnnotationAssertion(oboInOwl:hasDbXref obo:FOODON_03310868 "SUBSET_SIREN:F10868")
 AnnotationAssertion(oboInOwl:inSubset obo:FOODON_03310868 "subset_siren")
@@ -3065,14 +2988,12 @@ AnnotationAssertion(owl:deprecated obo:FOODON_03310868 "true"^^xsd:boolean)
 
 # Class: obo:FOODON_03310889 (obsolete: yeast pressed)
 
-AnnotationAssertion(obo:IAO_0000412 obo:FOODON_03310889 "http://langual.org")
 AnnotationAssertion(obo:IAO_0100001 obo:FOODON_03310889 "http://purl.obolibrary.org/obo/FOODON_03311884"@en)
 AnnotationAssertion(rdfs:label obo:FOODON_03310889 "obsolete: yeast pressed"@en)
 AnnotationAssertion(owl:deprecated obo:FOODON_03310889 "true"^^xsd:boolean)
 
 # Class: obo:FOODON_03310907 (obsolete: soup, not further specified)
 
-AnnotationAssertion(obo:IAO_0000412 obo:FOODON_03310907 "http://langual.org")
 AnnotationAssertion(obo:IAO_0100001 obo:FOODON_03310907 "http://purl.obolibrary.org/obo/FOODON_00002257"^^xsd:anyURI)
 AnnotationAssertion(oboInOwl:hasDbXref obo:FOODON_03310907 "SUBSET_SIREN:F10907")
 AnnotationAssertion(oboInOwl:inSubset obo:FOODON_03310907 "subset_siren")
@@ -3092,14 +3013,12 @@ AnnotationAssertion(owl:deprecated obo:FOODON_03311069 "true"^^xsd:boolean)
 
 # Class: obo:FOODON_03311242 (obsolete: food, low calorie)
 
-AnnotationAssertion(obo:IAO_0000412 obo:FOODON_03311242 "http://langual.org")
 AnnotationAssertion(obo:IAO_0100001 obo:FOODON_03311242 obo:FOODON_03315839)
 AnnotationAssertion(rdfs:label obo:FOODON_03311242 "obsolete: food, low calorie"@en)
 AnnotationAssertion(owl:deprecated obo:FOODON_03311242 "true"^^xsd:boolean)
 
 # Class: obo:FOODON_03311253 (obsolete: food, dietetic)
 
-AnnotationAssertion(obo:IAO_0000412 obo:FOODON_03311253 "http://langual.org")
 AnnotationAssertion(obo:IAO_0100001 obo:FOODON_03311253 "http://purl.obolibrary.org/obo/FOODON_03316261"^^xsd:anyURI)
 AnnotationAssertion(oboInOwl:hasDbXref obo:FOODON_03311253 "SUBSET_SIREN:F11253")
 AnnotationAssertion(oboInOwl:inSubset obo:FOODON_03311253 "subset_siren")
@@ -3111,7 +3030,6 @@ AnnotationAssertion(owl:deprecated obo:FOODON_03311253 "true"^^xsd:boolean)
 
 # Class: obo:FOODON_03311310 (obsolete: salmon smoked using hot-smoking nitrite-treated)
 
-AnnotationAssertion(obo:IAO_0000412 obo:FOODON_03311310 "http://langual.org")
 AnnotationAssertion(obo:IAO_0100001 obo:FOODON_03311310 "http://purl.obolibrary.org/obo/FOODON_03311309")
 AnnotationAssertion(oboInOwl:hasDbXref obo:FOODON_03311310 "SUBSET_SIREN:F11310")
 AnnotationAssertion(oboInOwl:inSubset obo:FOODON_03311310 "subset_siren")
@@ -3130,7 +3048,6 @@ AnnotationAssertion(owl:deprecated obo:FOODON_03311310 "true"^^xsd:boolean)
 # Class: obo:FOODON_03311368 (obsolete: cooking powder, not further specified)
 
 AnnotationAssertion(obo:IAO_0000231 obo:FOODON_03311368 "Imported from SIREN, no clear practical usage.")
-AnnotationAssertion(obo:IAO_0000412 obo:FOODON_03311368 "http://langual.org")
 AnnotationAssertion(oboInOwl:hasDbXref obo:FOODON_03311368 "SUBSET_SIREN:F11368")
 AnnotationAssertion(oboInOwl:inSubset obo:FOODON_03311368 "subset_siren")
 AnnotationAssertion(rdfs:comment obo:FOODON_03311368 "SIREN DB annotation:
@@ -3147,7 +3064,6 @@ AnnotationAssertion(owl:deprecated obo:FOODON_03311443 "true"^^xsd:boolean)
 
 # Class: obo:FOODON_03311447 (obsolete: cheese made from cow's milk)
 
-AnnotationAssertion(obo:IAO_0000412 obo:FOODON_03311447 "http://langual.org")
 AnnotationAssertion(obo:IAO_0100001 obo:FOODON_03311447 "http://purl.obolibrary.org/obo/FOODON_00001127"^^xsd:anyURI)
 AnnotationAssertion(oboInOwl:hasDbXref obo:FOODON_03311447 "SUBSET_SIREN:F11447")
 AnnotationAssertion(oboInOwl:inSubset obo:FOODON_03311447 "subset_siren")
@@ -3161,7 +3077,6 @@ AnnotationAssertion(owl:deprecated obo:FOODON_03311447 "true"^^xsd:boolean)
 
 # Class: obo:FOODON_03311490 (obsolete: pork sausage (link, raw))
 
-AnnotationAssertion(obo:IAO_0000412 obo:FOODON_03311490 "http://langual.org")
 AnnotationAssertion(obo:IAO_0100001 obo:FOODON_03311490 "http://purl.obolibrary.org/obo/FOODON_03310623"^^xsd:anyURI)
 AnnotationAssertion(oboInOwl:hasDbXref obo:FOODON_03311490 "SUBSET_SIREN:F11490")
 AnnotationAssertion(oboInOwl:inSubset obo:FOODON_03311490 "subset_siren")
@@ -3176,7 +3091,6 @@ AnnotationAssertion(owl:deprecated obo:FOODON_03311490 "true"^^xsd:boolean)
 
 # Class: obo:FOODON_03311500 (obsolete: fish product marinated not further specified)
 
-AnnotationAssertion(obo:IAO_0000412 obo:FOODON_03311500 "http://langual.org")
 AnnotationAssertion(obo:IAO_0100001 obo:FOODON_03311500 "http://purl.obolibrary.org/obo/FOODON_03316320"^^xsd:anyURI)
 AnnotationAssertion(oboInOwl:hasDbXref obo:FOODON_03311500 "SUBSET_SIREN:F11500")
 AnnotationAssertion(oboInOwl:inSubset obo:FOODON_03311500 "subset_siren")
@@ -3192,7 +3106,6 @@ AnnotationAssertion(owl:deprecated obo:FOODON_03311500 "true"^^xsd:boolean)
 # Class: obo:FOODON_03311544 (obsolete: black tea leaves)
 
 AnnotationAssertion(obo:IAO_0000114 obo:FOODON_03311544 obo:IAO_0000428)
-AnnotationAssertion(obo:IAO_0000412 obo:FOODON_03311544 "http://langual.org")
 AnnotationAssertion(obo:IAO_0100001 obo:FOODON_03311544 "http://purl.obolibrary.org/obo/FOODON_03304640"^^xsd:anyURI)
 AnnotationAssertion(oboInOwl:hasDbXref obo:FOODON_03311544 "SUBSET_SIREN:F11544")
 AnnotationAssertion(oboInOwl:inSubset obo:FOODON_03311544 "subset_siren")
@@ -3215,7 +3128,6 @@ AnnotationAssertion(owl:deprecated obo:FOODON_03311568 "true"^^xsd:boolean)
 
 # Class: obo:FOODON_03311569 (obsolete: red bean (cooked, canned))
 
-AnnotationAssertion(obo:IAO_0000412 obo:FOODON_03311569 "http://langual.org")
 AnnotationAssertion(obo:IAO_0100001 obo:FOODON_03311569 "http://purl.obolibrary.org/obo/FOODON_03301675"^^xsd:anyURI)
 AnnotationAssertion(oboInOwl:hasDbXref obo:FOODON_03311569 "SUBSET_SIREN:F11569")
 AnnotationAssertion(oboInOwl:inSubset obo:FOODON_03311569 "subset_siren")
@@ -3224,7 +3136,6 @@ AnnotationAssertion(owl:deprecated obo:FOODON_03311569 "true"^^xsd:boolean)
 
 # Class: obo:FOODON_03311705 (obsolete: cereal not further specified)
 
-AnnotationAssertion(obo:IAO_0000412 obo:FOODON_03311705 "http://langual.org")
 AnnotationAssertion(obo:IAO_0100001 obo:FOODON_03311705 "http://purl.obolibrary.org/obo/FOODON_00001709"^^xsd:anyURI)
 AnnotationAssertion(rdfs:label obo:FOODON_03311705 "obsolete: cereal not further specified"@en)
 AnnotationAssertion(owl:deprecated obo:FOODON_03311705 "true"^^xsd:boolean)
@@ -3237,7 +3148,6 @@ AnnotationAssertion(owl:deprecated obo:FOODON_03311739 "true"^^xsd:boolean)
 
 # Class: obo:FOODON_03311753 (obsolete: broiler chicken (not further specified))
 
-AnnotationAssertion(obo:IAO_0000412 obo:FOODON_03311753 "http://langual.org")
 AnnotationAssertion(obo:IAO_0100001 obo:FOODON_03311753 "http://purl.obolibrary.org/obo/FOODON_03411198"^^xsd:anyURI)
 AnnotationAssertion(oboInOwl:hasDbXref obo:FOODON_03311753 "SUBSET_SIREN:F11753")
 AnnotationAssertion(oboInOwl:inSubset obo:FOODON_03311753 "subset_siren")
@@ -3252,7 +3162,6 @@ AnnotationAssertion(owl:deprecated obo:FOODON_03311753 "true"^^xsd:boolean)
 # Class: obo:FOODON_03311850 (obsolete: enfamil premature 20 low iron infant formula ready-to-feed)
 
 AnnotationAssertion(obo:IAO_0000231 obo:FOODON_03311850 "Term is specific brand"@en)
-AnnotationAssertion(obo:IAO_0000412 obo:FOODON_03311850 "http://langual.org")
 AnnotationAssertion(oboInOwl:hasDbXref obo:FOODON_03311850 "SUBSET_SIREN:F11850")
 AnnotationAssertion(rdfs:label obo:FOODON_03311850 "obsolete: enfamil premature 20 low iron infant formula ready-to-feed"@en)
 AnnotationAssertion(owl:deprecated obo:FOODON_03311850 "true"^^xsd:boolean)
@@ -3260,7 +3169,6 @@ AnnotationAssertion(owl:deprecated obo:FOODON_03311850 "true"^^xsd:boolean)
 # Class: obo:FOODON_03311851 (obsolete: enfamil premature 24 low iron infant formula ready-to-feed)
 
 AnnotationAssertion(obo:IAO_0000231 obo:FOODON_03311851 "Term is specific brand"@en)
-AnnotationAssertion(obo:IAO_0000412 obo:FOODON_03311851 "http://langual.org")
 AnnotationAssertion(oboInOwl:hasDbXref obo:FOODON_03311851 "SUBSET_SIREN:F11851")
 AnnotationAssertion(rdfs:label obo:FOODON_03311851 "obsolete: enfamil premature 24 low iron infant formula ready-to-feed"@en)
 AnnotationAssertion(owl:deprecated obo:FOODON_03311851 "true"^^xsd:boolean)
@@ -3268,14 +3176,12 @@ AnnotationAssertion(owl:deprecated obo:FOODON_03311851 "true"^^xsd:boolean)
 # Class: obo:FOODON_03311853 (obsolete: enfamil premature 20 iron fortified infant formula ready-to-feed)
 
 AnnotationAssertion(obo:IAO_0000231 obo:FOODON_03311853 "Term is specific brand"@en)
-AnnotationAssertion(obo:IAO_0000412 obo:FOODON_03311853 "http://langual.org")
 AnnotationAssertion(oboInOwl:hasDbXref obo:FOODON_03311853 "SUBSET_SIREN:F11853")
 AnnotationAssertion(rdfs:label obo:FOODON_03311853 "obsolete: enfamil premature 20 iron fortified infant formula ready-to-feed"@en)
 AnnotationAssertion(owl:deprecated obo:FOODON_03311853 "true"^^xsd:boolean)
 
 # Class: obo:FOODON_03315008 (obsolete: fats or oils)
 
-AnnotationAssertion(obo:IAO_0000412 obo:FOODON_03315008 "http://langual.org")
 AnnotationAssertion(obo:IAO_0100001 obo:FOODON_03315008 "http://purl.obolibrary.org/obo/FOODON_03420190"^^xsd:anyURI)
 AnnotationAssertion(oboInOwl:inSubset obo:FOODON_03315008 "subset_siren")
 AnnotationAssertion(rdfs:label obo:FOODON_03315008 "obsolete: fats or oils"@en)
@@ -3283,7 +3189,6 @@ AnnotationAssertion(owl:deprecated obo:FOODON_03315008 "true"^^xsd:boolean)
 
 # Class: obo:FOODON_03315014 (obsolete: spices seasonings and flavorings)
 
-AnnotationAssertion(obo:IAO_0000412 obo:FOODON_03315014 "http://langual.org")
 AnnotationAssertion(obo:IAO_0100001 obo:FOODON_03315014 "http://purl.obolibrary.org/obo/FOODON_00002268"^^xsd:anyURI)
 AnnotationAssertion(oboInOwl:hasDbXref obo:FOODON_03315014 "SUBSET_SIREN:F15014")
 AnnotationAssertion(oboInOwl:inSubset obo:FOODON_03315014 "subset_siren")
@@ -3295,7 +3200,6 @@ AnnotationAssertion(owl:deprecated obo:FOODON_03315014 "true"^^xsd:boolean)
 
 # Class: obo:FOODON_03315088 (obsolete: dessert dairy frozen)
 
-AnnotationAssertion(obo:IAO_0000412 obo:FOODON_03315088 "http://langual.org")
 AnnotationAssertion(obo:IAO_0100001 obo:FOODON_03315088 "http://purl.obolibrary.org/obo/FOODON_00001878"^^xsd:anyURI)
 AnnotationAssertion(oboInOwl:hasDbXref obo:FOODON_03315088 "SUBSET_SIREN:F15088")
 AnnotationAssertion(oboInOwl:inSubset obo:FOODON_03315088 "subset_siren")
@@ -3309,14 +3213,12 @@ AnnotationAssertion(owl:deprecated obo:FOODON_03315088 "true"^^xsd:boolean)
 
 # Class: obo:FOODON_03315111 (obsolete: sugar cane (unrefined))
 
-AnnotationAssertion(obo:IAO_0000412 obo:FOODON_03315111 "http://langual.org")
 AnnotationAssertion(obo:IAO_0100001 obo:FOODON_03315111 obo:FOODON_03301879)
 AnnotationAssertion(rdfs:label obo:FOODON_03315111 "obsolete: sugar cane (unrefined)"@en)
 AnnotationAssertion(owl:deprecated obo:FOODON_03315111 "true"^^xsd:boolean)
 
 # Class: obo:FOODON_03315120 (obsolete: lima beans cooked canned dried)
 
-AnnotationAssertion(obo:IAO_0000412 obo:FOODON_03315120 "http://langual.org")
 AnnotationAssertion(obo:IAO_0100001 obo:FOODON_03315120 "http://purl.obolibrary.org/obo/FOODON_03302054"^^xsd:anyURI)
 AnnotationAssertion(oboInOwl:hasDbXref obo:FOODON_03315120 "SUBSET_SIREN:F15120")
 AnnotationAssertion(oboInOwl:inSubset obo:FOODON_03315120 "subset_siren")
@@ -3341,7 +3243,6 @@ AnnotationAssertion(owl:deprecated obo:FOODON_03315176 "true"^^xsd:boolean)
 # Class: obo:FOODON_03315242 (obsolete: potato (any form excluding frozen, canned, or dehydrated))
 
 AnnotationAssertion(obo:IAO_0000231 obo:FOODON_03315242 "It is unclear what this is supposed to accomplish semantically."@en)
-AnnotationAssertion(obo:IAO_0000412 obo:FOODON_03315242 "http://langual.org")
 AnnotationAssertion(oboInOwl:hasDbXref obo:FOODON_03315242 "SUBSET_SIREN:F15242")
 AnnotationAssertion(oboInOwl:inSubset obo:FOODON_03315242 "subset_siren")
 AnnotationAssertion(rdfs:comment obo:FOODON_03315242 "SIREN DB annotation:
@@ -3352,7 +3253,6 @@ AnnotationAssertion(owl:deprecated obo:FOODON_03315242 "true"^^xsd:boolean)
 
 # Class: obo:FOODON_03315257 (obsolete: filling)
 
-AnnotationAssertion(obo:IAO_0000412 obo:FOODON_03315257 "http://langual.org")
 AnnotationAssertion(obo:IAO_0100001 obo:FOODON_03315257 "http://purl.obolibrary.org/obo/FOODON_00001868")
 AnnotationAssertion(oboInOwl:hasDbXref obo:FOODON_03315257 "SUBSET_SIREN:F15257")
 AnnotationAssertion(oboInOwl:inSubset obo:FOODON_03315257 "subset_siren")
@@ -3361,7 +3261,6 @@ AnnotationAssertion(owl:deprecated obo:FOODON_03315257 "true"^^xsd:boolean)
 
 # Class: obo:FOODON_03315262 (obsolete: cheese product substitute or imitation)
 
-AnnotationAssertion(obo:IAO_0000412 obo:FOODON_03315262 "http://langual.org")
 AnnotationAssertion(obo:IAO_0100001 obo:FOODON_03315262 "http://purl.obolibrary.org/obo/FOODON_00001712"^^xsd:anyURI)
 AnnotationAssertion(oboInOwl:hasDbXref obo:FOODON_03315262 "SUBSET_SIREN:F15262")
 AnnotationAssertion(oboInOwl:inSubset obo:FOODON_03315262 "subset_siren")
@@ -3378,20 +3277,17 @@ AnnotationAssertion(owl:deprecated obo:FOODON_03315262 "true"^^xsd:boolean)
 # Class: obo:FOODON_03315285 (obsolete: nutritional food, special)
 
 AnnotationAssertion(obo:IAO_0000231 obo:FOODON_03315285 "Usefulness not clear.  Term had been imported from LanguaL SIREN database"@en)
-AnnotationAssertion(obo:IAO_0000412 obo:FOODON_03315285 "http://langual.org")
 AnnotationAssertion(oboInOwl:hasDbXref obo:FOODON_03315285 "SUBSET_SIREN:F15285")
 AnnotationAssertion(oboInOwl:inSubset obo:FOODON_03315285 "subset_siren")
 AnnotationAssertion(rdfs:comment obo:FOODON_03315285 "SIREN DB annotation:
 * has consumer 'nutrition-related claim or use' (http://purl.obolibrary.org/obo/FOODON_03510065)
                 "@en)
 AnnotationAssertion(rdfs:label obo:FOODON_03315285 "obsolete: nutritional food, special"@en)
-AnnotationAssertion(owl:deprecated obo:FOODON_03315285 "true"@en)
 AnnotationAssertion(owl:deprecated obo:FOODON_03315285 "true"^^xsd:boolean)
 
 # Class: obo:FOODON_03315289 (obsolete: beverage fruit)
 
 AnnotationAssertion(obo:IAO_0000114 obo:FOODON_03315289 obo:IAO_0000428)
-AnnotationAssertion(obo:IAO_0000412 obo:FOODON_03315289 "http://langual.org")
 AnnotationAssertion(obo:IAO_0100001 obo:FOODON_03315289 "http://purl.obolibrary.org/obo/FOODON_03316006"@en)
 AnnotationAssertion(oboInOwl:hasDbXref obo:FOODON_03315289 "SUBSET_SIREN:F15289")
 AnnotationAssertion(oboInOwl:inSubset obo:FOODON_03315289 "subset_siren")
@@ -3404,7 +3300,6 @@ AnnotationAssertion(owl:deprecated obo:FOODON_03315289 "true"^^xsd:boolean)
 
 # Class: obo:FOODON_03315345 (obsolete: ice cream product)
 
-AnnotationAssertion(obo:IAO_0000412 obo:FOODON_03315345 "http://langual.org")
 AnnotationAssertion(obo:IAO_0100001 obo:FOODON_03315345 "http://purl.obolibrary.org/obo/FOODON_00001045")
 AnnotationAssertion(oboInOwl:hasDbXref obo:FOODON_03315345 "SUBSET_SIREN:F15345")
 AnnotationAssertion(oboInOwl:inSubset obo:FOODON_03315345 "subset_siren")
@@ -3420,7 +3315,6 @@ AnnotationAssertion(owl:deprecated obo:FOODON_03315345 "true"^^xsd:boolean)
 # Class: obo:FOODON_03315371 (obsolete: awpo)
 
 AnnotationAssertion(obo:IAO_0000231 obo:FOODON_03315371 "Unable to locate meaning of term. Not english? It was under 'fish food product'"@en)
-AnnotationAssertion(obo:IAO_0000412 obo:FOODON_03315371 "http://langual.org")
 AnnotationAssertion(oboInOwl:hasDbXref obo:FOODON_03315371 "SUBSET_SIREN:F15371")
 AnnotationAssertion(rdfs:comment obo:FOODON_03315371 "SIREN DB annotation:
 * has quality 'solid' (http://purl.obolibrary.org/obo/FOODON_03430151)
@@ -3434,7 +3328,6 @@ AnnotationAssertion(owl:deprecated obo:FOODON_03315371 "true"^^xsd:boolean)
 
 # Class: obo:FOODON_03315383 (obsolete: spread for food)
 
-AnnotationAssertion(obo:IAO_0000412 obo:FOODON_03315383 "http://langual.org")
 AnnotationAssertion(obo:IAO_0100001 obo:FOODON_03315383 obo:FOODON_00001873)
 AnnotationAssertion(rdfs:label obo:FOODON_03315383 "obsolete: spread for food"@en)
 AnnotationAssertion(owl:deprecated obo:FOODON_03315383 "true"^^xsd:boolean)
@@ -3442,7 +3335,6 @@ AnnotationAssertion(owl:deprecated obo:FOODON_03315383 "true"^^xsd:boolean)
 # Class: obo:FOODON_03315398 (obsolete: beverage coffee-based)
 
 AnnotationAssertion(obo:IAO_0000114 obo:FOODON_03315398 obo:IAO_0000428)
-AnnotationAssertion(obo:IAO_0000412 obo:FOODON_03315398 "http://langual.org")
 AnnotationAssertion(obo:IAO_0100001 obo:FOODON_03315398 "http://purl.obolibrary.org/obo/FOODON_00001139"^^xsd:anyURI)
 AnnotationAssertion(oboInOwl:hasDbXref obo:FOODON_03315398 "SUBSET_SIREN:F15398")
 AnnotationAssertion(oboInOwl:inSubset obo:FOODON_03315398 "subset_siren")
@@ -3456,7 +3348,6 @@ AnnotationAssertion(owl:deprecated obo:FOODON_03315398 "true"^^xsd:boolean)
 
 # Class: obo:FOODON_03315423 (obsolete: fruit wine product)
 
-AnnotationAssertion(obo:IAO_0000412 obo:FOODON_03315423 "http://langual.org")
 AnnotationAssertion(obo:IAO_0100001 obo:FOODON_03315423 "http://purl.obolibrary.org/obo/FOODON_03315334"^^xsd:anyURI)
 AnnotationAssertion(oboInOwl:hasDbXref obo:FOODON_03315423 "SUBSET_SIREN:F15423")
 AnnotationAssertion(oboInOwl:inSubset obo:FOODON_03315423 "subset_siren")
@@ -3473,7 +3364,6 @@ AnnotationAssertion(owl:deprecated obo:FOODON_03315423 "true"^^xsd:boolean)
 # Class: obo:FOODON_03315488 (obsolete: milk beverage)
 
 AnnotationAssertion(obo:IAO_0000114 obo:FOODON_03315488 obo:IAO_0000428)
-AnnotationAssertion(obo:IAO_0000412 obo:FOODON_03315488 "http://langual.org")
 AnnotationAssertion(obo:IAO_0100001 obo:FOODON_03315488 "FOODON_00001217"^^xsd:anyURI)
 AnnotationAssertion(oboInOwl:hasDbXref obo:FOODON_03315488 "SUBSET_SIREN:F15488")
 AnnotationAssertion(oboInOwl:inSubset obo:FOODON_03315488 "subset_siren")
@@ -3486,7 +3376,6 @@ AnnotationAssertion(owl:deprecated obo:FOODON_03315488 "true"^^xsd:boolean)
 
 # Class: obo:FOODON_03315554 (obsolete: fruit pulped)
 
-AnnotationAssertion(obo:IAO_0000412 obo:FOODON_03315554 "http://langual.org")
 AnnotationAssertion(obo:IAO_0100001 obo:FOODON_03315554 "http://purl.obolibrary.org/obo/FOODON_03301109")
 AnnotationAssertion(rdfs:label obo:FOODON_03315554 "obsolete: fruit pulped"@en)
 AnnotationAssertion(owl:deprecated obo:FOODON_03315554 "true"^^xsd:boolean)
@@ -3494,15 +3383,13 @@ AnnotationAssertion(owl:deprecated obo:FOODON_03315554 "true"^^xsd:boolean)
 # Class: obo:FOODON_03315561 (obsolete: spirits)
 
 AnnotationAssertion(obo:IAO_0000231 obo:FOODON_03315561 "Redundant entry")
-AnnotationAssertion(obo:IAO_0000412 obo:FOODON_03315561 "http://langual.org")
 AnnotationAssertion(obo:IAO_0100001 obo:FOODON_03315561 obo:FOODON_00001817)
 AnnotationAssertion(oboInOwl:hasDbXref obo:FOODON_03315561 "SUBSET_SIREN:F15561")
 AnnotationAssertion(rdfs:label obo:FOODON_03315561 "obsolete: spirits"@en)
-AnnotationAssertion(owl:deprecated obo:FOODON_03315561 "true"@en)
+AnnotationAssertion(owl:deprecated obo:FOODON_03315561 "true"^^xsd:boolean)
 
 # Class: obo:FOODON_03315656 (obsolete: brawn)
 
-AnnotationAssertion(obo:IAO_0000412 obo:FOODON_03315656 "http://langual.org")
 AnnotationAssertion(obo:IAO_0100001 obo:FOODON_03315656 "http://purl.obolibrary.org/obo/FOODON_03315658"^^xsd:anyURI)
 AnnotationAssertion(oboInOwl:hasDbXref obo:FOODON_03315656 "SUBSET_SIREN:F15656")
 AnnotationAssertion(oboInOwl:inSubset obo:FOODON_03315656 "subset_siren")
@@ -3515,7 +3402,6 @@ AnnotationAssertion(owl:deprecated obo:FOODON_03315656 "true"^^xsd:boolean)
 
 # Class: obo:FOODON_03315686 (obsolete: cider)
 
-AnnotationAssertion(obo:IAO_0000412 obo:FOODON_03315686 "http://langual.org")
 AnnotationAssertion(obo:IAO_0100001 obo:FOODON_03315686 "http://purl.obolibrary.org/obo/FOODON_00001276"^^xsd:anyURI)
 AnnotationAssertion(oboInOwl:hasDbXref obo:FOODON_03315686 "SUBSET_SIREN:F15686")
 AnnotationAssertion(oboInOwl:inSubset obo:FOODON_03315686 "subset_siren")
@@ -3528,7 +3414,6 @@ AnnotationAssertion(owl:deprecated obo:FOODON_03315686 "true"^^xsd:boolean)
 
 # Class: obo:FOODON_03315919 (obsolete: chocolate product)
 
-AnnotationAssertion(obo:IAO_0000412 obo:FOODON_03315919 "http://langual.org")
 AnnotationAssertion(obo:IAO_0100001 obo:FOODON_03315919 "http://purl.obolibrary.org/obo/FOODON_00001280"@en)
 AnnotationAssertion(oboInOwl:hasDbXref obo:FOODON_03315919 "SUBSET_SIREN:F15919")
 AnnotationAssertion(oboInOwl:inSubset obo:FOODON_03315919 "subset_siren")
@@ -3542,7 +3427,6 @@ AnnotationAssertion(owl:deprecated obo:FOODON_03315919 "true"^^xsd:boolean)
 
 # Class: obo:FOODON_03315941 (obsolete: wine (aromatized))
 
-AnnotationAssertion(obo:IAO_0000412 obo:FOODON_03315941 "http://langual.org")
 AnnotationAssertion(obo:IAO_0100001 obo:FOODON_03315941 "http://purl.obolibrary.org/obo/FOODON_03317551"^^xsd:anyURI)
 AnnotationAssertion(rdfs:label obo:FOODON_03315941 "obsolete: wine (aromatized)"@en)
 AnnotationAssertion(owl:deprecated obo:FOODON_03315941 "true"^^xsd:boolean)
@@ -3550,7 +3434,6 @@ AnnotationAssertion(owl:deprecated obo:FOODON_03315941 "true"^^xsd:boolean)
 # Class: obo:FOODON_03316064 (obsolete: jelly extra)
 
 AnnotationAssertion(obo:IAO_0000114 obo:FOODON_03316064 obo:IAO_0000428)
-AnnotationAssertion(obo:IAO_0000412 obo:FOODON_03316064 "http://langual.org")
 AnnotationAssertion(oboInOwl:hasDbXref obo:FOODON_03316064 "SUBSET_SIREN:F16064")
 AnnotationAssertion(oboInOwl:inSubset obo:FOODON_03316064 "subset_siren")
 AnnotationAssertion(rdfs:comment obo:FOODON_03316064 "SIREN DB annotation:
@@ -3564,7 +3447,6 @@ AnnotationAssertion(owl:deprecated obo:FOODON_03316064 "true"^^xsd:boolean)
 
 # Class: obo:FOODON_03316068 (obsolete: bread wholemeal)
 
-AnnotationAssertion(obo:IAO_0000412 obo:FOODON_03316068 "http://langual.org")
 AnnotationAssertion(obo:IAO_0100001 obo:FOODON_03316068 "http://purl.obolibrary.org/obo/FOODON_03301119"^^xsd:anyURI)
 AnnotationAssertion(oboInOwl:hasDbXref obo:FOODON_03316068 "SUBSET_SIREN:F16068")
 AnnotationAssertion(oboInOwl:inSubset obo:FOODON_03316068 "subset_siren")
@@ -3580,7 +3462,6 @@ AnnotationAssertion(owl:deprecated obo:FOODON_03316068 "true"^^xsd:boolean)
 
 # Class: obo:FOODON_03316217 (obsolete: jelly (marmalade))
 
-AnnotationAssertion(obo:IAO_0000412 obo:FOODON_03316217 "http://langual.org")
 AnnotationAssertion(obo:IAO_0100001 obo:FOODON_03316217 "http://purl.obolibrary.org/obo/FOODON_03306381"^^xsd:anyURI)
 AnnotationAssertion(oboInOwl:hasDbXref obo:FOODON_03316217 "SUBSET_SIREN:F16217")
 AnnotationAssertion(oboInOwl:inSubset obo:FOODON_03316217 "subset_siren")
@@ -3594,7 +3475,6 @@ AnnotationAssertion(owl:deprecated obo:FOODON_03316217 "true"^^xsd:boolean)
 
 # Class: obo:FOODON_03316259 (obsolete: dietetic food used for specific physiological-nutritional and dietetic purposes intended for infants and toddlers)
 
-AnnotationAssertion(obo:IAO_0000412 obo:FOODON_03316259 "http://langual.org")
 AnnotationAssertion(obo:IAO_0100001 obo:FOODON_03316259 "http://purl.obolibrary.org/obo/FOODON_03317185"^^xsd:anyURI)
 AnnotationAssertion(oboInOwl:hasDbXref obo:FOODON_03316259 "SUBSET_SIREN:F16259")
 AnnotationAssertion(oboInOwl:inSubset obo:FOODON_03316259 "subset_siren")
@@ -3613,7 +3493,6 @@ AnnotationAssertion(owl:deprecated obo:FOODON_03316261 "true"^^xsd:boolean)
 
 # Class: obo:FOODON_03316493 (obsolete: jelly fruity)
 
-AnnotationAssertion(obo:IAO_0000412 obo:FOODON_03316493 "http://langual.org")
 AnnotationAssertion(obo:IAO_0100001 obo:FOODON_03316493 "http://purl.obolibrary.org/obo/FOODON_03301811")
 AnnotationAssertion(oboInOwl:hasDbXref obo:FOODON_03316493 "SUBSET_SIREN:F16493")
 AnnotationAssertion(oboInOwl:inSubset obo:FOODON_03316493 "subset_siren")
@@ -3627,7 +3506,6 @@ AnnotationAssertion(owl:deprecated obo:FOODON_03316493 "true"^^xsd:boolean)
 
 # Class: obo:FOODON_03316510 (obsolete: pickled food 2)
 
-AnnotationAssertion(obo:IAO_0000412 obo:FOODON_03316510 "http://langual.org")
 AnnotationAssertion(obo:IAO_0100001 obo:FOODON_03316510 obo:FOODON_00001079)
 AnnotationAssertion(rdfs:label obo:FOODON_03316510 "obsolete: pickled food 2"@en)
 AnnotationAssertion(owl:deprecated obo:FOODON_03316510 "true"^^xsd:boolean)
@@ -3635,7 +3513,6 @@ AnnotationAssertion(owl:deprecated obo:FOODON_03316510 "true"^^xsd:boolean)
 # Class: obo:FOODON_03316538 (obsolete: tomato (tinned))
 
 AnnotationAssertion(obo:IAO_0000114 obo:FOODON_03316538 obo:IAO_0000428)
-AnnotationAssertion(obo:IAO_0000412 obo:FOODON_03316538 "http://langual.org")
 AnnotationAssertion(obo:IAO_0100001 obo:FOODON_03316538 "http://purl.obolibrary.org/obo/FOODON_03301452"@en)
 AnnotationAssertion(oboInOwl:hasDbXref obo:FOODON_03316538 "SUBSET_SIREN:F16538")
 AnnotationAssertion(oboInOwl:inSubset obo:FOODON_03316538 "subset_siren")
@@ -3650,7 +3527,6 @@ AnnotationAssertion(owl:deprecated obo:FOODON_03316538 "true"^^xsd:boolean)
 
 # Class: obo:FOODON_03316591 (obsolete: sausage food product)
 
-AnnotationAssertion(obo:IAO_0000412 obo:FOODON_03316591 "http://langual.org")
 AnnotationAssertion(obo:IAO_0100001 obo:FOODON_03316591 "http://purl.obolibrary.org/obo/FOODON_00001007"^^xsd:anyURI)
 AnnotationAssertion(oboInOwl:hasDbXref obo:FOODON_03316591 "SUBSET_SIREN:F16591")
 AnnotationAssertion(oboInOwl:inSubset obo:FOODON_03316591 "subset_siren")
@@ -3664,7 +3540,6 @@ AnnotationAssertion(owl:deprecated obo:FOODON_03316591 "true"^^xsd:boolean)
 
 # Class: obo:FOODON_03316611 (obsolete: seasoning product, loose, concentrate)
 
-AnnotationAssertion(obo:IAO_0000412 obo:FOODON_03316611 "http://langual.org")
 AnnotationAssertion(obo:IAO_0100001 obo:FOODON_03316611 "http://purl.obolibrary.org/obo/FOODON_03316492")
 AnnotationAssertion(oboInOwl:hasDbXref obo:FOODON_03316611 "SUBSET_SIREN:F16611")
 AnnotationAssertion(oboInOwl:inSubset obo:FOODON_03316611 "subset_siren")
@@ -3678,7 +3553,6 @@ AnnotationAssertion(owl:deprecated obo:FOODON_03316611 "true"^^xsd:boolean)
 
 # Class: obo:FOODON_03316656 (obsolete: cheese)
 
-AnnotationAssertion(obo:IAO_0000412 obo:FOODON_03316656 "http://langual.org")
 AnnotationAssertion(obo:IAO_0100001 obo:FOODON_03316656 "http://purl.obolibrary.org/obo/FOODON_00001013"^^xsd:anyURI)
 AnnotationAssertion(oboInOwl:hasDbXref obo:FOODON_03316656 "SUBSET_SIREN:F16656")
 AnnotationAssertion(oboInOwl:inSubset obo:FOODON_03316656 "subset_siren")
@@ -3698,7 +3572,6 @@ AnnotationAssertion(owl:deprecated obo:FOODON_03316692 "true"^^xsd:boolean)
 
 # Class: obo:FOODON_03316785 (obsolete: orange juice concentrated frozen reduced acid)
 
-AnnotationAssertion(obo:IAO_0000412 obo:FOODON_03316785 "http://langual.org")
 AnnotationAssertion(obo:IAO_0100001 obo:FOODON_03316785 "http://purl.obolibrary.org/obo/FOODON_03307625"^^xsd:anyURI)
 AnnotationAssertion(oboInOwl:hasDbXref obo:FOODON_03316785 "SUBSET_SIREN:F16785")
 AnnotationAssertion(oboInOwl:inSubset obo:FOODON_03316785 "subset_siren")
@@ -3716,7 +3589,6 @@ AnnotationAssertion(owl:deprecated obo:FOODON_03316785 "true"^^xsd:boolean)
 # Class: obo:FOODON_03316938 (obsolete: tea leaf (decaffeinated))
 
 AnnotationAssertion(obo:IAO_0000114 obo:FOODON_03316938 obo:IAO_0000428)
-AnnotationAssertion(obo:IAO_0000412 obo:FOODON_03316938 "http://langual.org")
 AnnotationAssertion(obo:IAO_0100001 obo:FOODON_03316938 "http://purl.obolibrary.org/obo/FOODON_03301059"^^xsd:anyURI)
 AnnotationAssertion(oboInOwl:hasDbXref obo:FOODON_03316938 "SUBSET_SIREN:F16938")
 AnnotationAssertion(oboInOwl:inSubset obo:FOODON_03316938 "subset_siren")
@@ -3739,7 +3611,6 @@ AnnotationAssertion(owl:deprecated obo:FOODON_03316942 "true"^^xsd:boolean)
 # Class: obo:FOODON_03316967 (obsolete: ice milk goat milk)
 
 AnnotationAssertion(obo:IAO_0000114 obo:FOODON_03316967 obo:IAO_0000428)
-AnnotationAssertion(obo:IAO_0000412 obo:FOODON_03316967 "http://langual.org")
 AnnotationAssertion(obo:IAO_0100001 obo:FOODON_03316967 "http://purl.obolibrary.org/obo/FOODON_03305793"^^xsd:anyURI)
 AnnotationAssertion(oboInOwl:hasDbXref obo:FOODON_03316967 "SUBSET_SIREN:F16967")
 AnnotationAssertion(oboInOwl:inSubset obo:FOODON_03316967 "subset_siren")
@@ -3756,33 +3627,24 @@ AnnotationAssertion(owl:deprecated obo:FOODON_03316967 "true"^^xsd:boolean)
 
 # Class: obo:FOODON_03316972 (obsolete: nut food product (unspecified variety))
 
-AnnotationAssertion(obo:IAO_0000412 obo:FOODON_03316972 "http://langual.org")
 AnnotationAssertion(obo:IAO_0100001 obo:FOODON_03316972 obo:FOODON_00001172)
-AnnotationAssertion(oboInOwl:hasDbXref obo:FOODON_03316972 "SUBSET_SIREN:F16972")
-AnnotationAssertion(oboInOwl:inSubset obo:FOODON_03316972 "subset_siren")
-AnnotationAssertion(rdfs:comment obo:FOODON_03316972 "SIREN DB annotation:
-* derives from 'seed (anatomical part)' (http://purl.obolibrary.org/obo/FOODON_03420155)
-        "@en)
 AnnotationAssertion(rdfs:label obo:FOODON_03316972 "obsolete: nut food product (unspecified variety)"@en)
 AnnotationAssertion(owl:deprecated obo:FOODON_03316972 "true"^^xsd:boolean)
 
 # Class: obo:FOODON_03316986 (obsolete: whale meat (not further specified))
 
-AnnotationAssertion(obo:IAO_0000412 obo:FOODON_03316986 "http://langual.org")
 AnnotationAssertion(obo:IAO_0100001 obo:FOODON_03316986 obo:FOODON_03315447)
 AnnotationAssertion(rdfs:label obo:FOODON_03316986 "obsolete: whale meat (not further specified)"@en)
 AnnotationAssertion(owl:deprecated obo:FOODON_03316986 "true"^^xsd:boolean)
 
 # Class: obo:FOODON_03316990 (obsolete: whale meat product)
 
-AnnotationAssertion(obo:IAO_0000412 obo:FOODON_03316990 "http://langual.org")
 AnnotationAssertion(obo:IAO_0100001 obo:FOODON_03316990 "http://purl.obolibrary.org/obo/FOODON_00002346"^^xsd:anyURI)
 AnnotationAssertion(rdfs:label obo:FOODON_03316990 "obsolete: whale meat product"@en)
 AnnotationAssertion(owl:deprecated obo:FOODON_03316990 "true"^^xsd:boolean)
 
 # Class: obo:FOODON_03317079 (obsolete: fruit food product)
 
-AnnotationAssertion(obo:IAO_0000412 obo:FOODON_03317079 "http://langual.org")
 AnnotationAssertion(obo:IAO_0100001 obo:FOODON_03317079 "http://purl.obolibrary.org/obo/FOODON_03315615")
 AnnotationAssertion(oboInOwl:hasDbXref obo:FOODON_03317079 "SUBSET_SIREN:F17079")
 AnnotationAssertion(oboInOwl:inSubset obo:FOODON_03317079 "subset_siren")
@@ -3795,14 +3657,12 @@ AnnotationAssertion(owl:deprecated obo:FOODON_03317079 "true"^^xsd:boolean)
 
 # Class: obo:FOODON_03317125 (obsolete: potato flakes (granulated and powdered))
 
-AnnotationAssertion(obo:IAO_0000412 obo:FOODON_03317125 "http://langual.org")
 AnnotationAssertion(obo:IAO_0100001 obo:FOODON_03317125 "http://purl.obolibrary.org/obo/FOODON_03317126"^^xsd:anyURI)
 AnnotationAssertion(rdfs:label obo:FOODON_03317125 "obsolete: potato flakes (granulated and powdered)"@en)
 AnnotationAssertion(owl:deprecated obo:FOODON_03317125 "true"^^xsd:boolean)
 
 # Class: obo:FOODON_03317130 (obsolete: blood)
 
-AnnotationAssertion(obo:IAO_0000412 obo:FOODON_03317130 "http://langual.org")
 AnnotationAssertion(obo:IAO_0100001 obo:FOODON_03317130 "http://purl.obolibrary.org/obo/UBERON_0000178"^^xsd:anyURI)
 AnnotationAssertion(oboInOwl:inSubset obo:FOODON_03317130 "subset_siren")
 AnnotationAssertion(rdfs:label obo:FOODON_03317130 "obsolete: blood"@en)
@@ -3810,7 +3670,6 @@ AnnotationAssertion(owl:deprecated obo:FOODON_03317130 "true"^^xsd:boolean)
 
 # Class: obo:FOODON_03317239 (obsolete: olive product)
 
-AnnotationAssertion(obo:IAO_0000412 obo:FOODON_03317239 "http://langual.org")
 AnnotationAssertion(obo:IAO_0100001 obo:FOODON_03317239 "http://purl.obolibrary.org/obo/FOODON_00002066"^^xsd:anyURI)
 AnnotationAssertion(oboInOwl:hasDbXref obo:FOODON_03317239 "SUBSET_SIREN:F17239")
 AnnotationAssertion(oboInOwl:inSubset obo:FOODON_03317239 "subset_siren")
@@ -3825,7 +3684,6 @@ AnnotationAssertion(owl:deprecated obo:FOODON_03317239 "true"^^xsd:boolean)
 
 AnnotationAssertion(obo:IAO_0000117 obo:FOODON_03317240 "Damion Dooley"@en)
 AnnotationAssertion(obo:IAO_0000231 obo:FOODON_03317240 "This \"fruit yoghurt\" SIREN item F17240 has a \"partially heat treated\" quality, whereas SIREN [J0135] \"yoghurt with fruit\" is \"pasteurized by heat\". The issue is that both could be refering to the heat treatment of milk or fruit."@en)
-AnnotationAssertion(obo:IAO_0000412 obo:FOODON_03317240 "http://langual.org")
 AnnotationAssertion(oboInOwl:hasDbXref obo:FOODON_03317240 "SUBSET_SIREN:F17240")
 AnnotationAssertion(oboInOwl:inSubset obo:FOODON_03317240 "subset_siren")
 AnnotationAssertion(rdfs:comment obo:FOODON_03317240 "SIREN DB annotation:
@@ -3839,7 +3697,6 @@ AnnotationAssertion(owl:deprecated obo:FOODON_03317240 "true"^^xsd:boolean)
 
 # Class: obo:FOODON_03317291 (obsolete: beef sausage fresh)
 
-AnnotationAssertion(obo:IAO_0000412 obo:FOODON_03317291 "http://langual.org")
 AnnotationAssertion(obo:IAO_0100001 obo:FOODON_03317291 "http://purl.obolibrary.org/obo/FOODON_03317281"@en)
 AnnotationAssertion(oboInOwl:hasDbXref obo:FOODON_03317291 "SUBSET_SIREN:F17291")
 AnnotationAssertion(oboInOwl:inSubset obo:FOODON_03317291 "subset_siren")
@@ -3853,7 +3710,6 @@ AnnotationAssertion(owl:deprecated obo:FOODON_03317291 "true"^^xsd:boolean)
 
 # Class: obo:FOODON_03317296 (obsolete: frank)
 
-AnnotationAssertion(obo:IAO_0000412 obo:FOODON_03317296 "http://langual.org")
 AnnotationAssertion(obo:IAO_0100001 obo:FOODON_03317296 "http://purl.obolibrary.org/obo/FOODON_03302012"@en)
 AnnotationAssertion(oboInOwl:hasDbXref obo:FOODON_03317296 "SUBSET_SIREN:F17296")
 AnnotationAssertion(oboInOwl:inSubset obo:FOODON_03317296 "subset_siren")
@@ -3867,7 +3723,6 @@ AnnotationAssertion(owl:deprecated obo:FOODON_03317296 "true"^^xsd:boolean)
 
 # Class: obo:FOODON_03317332 (obsolete: meat (not further specified))
 
-AnnotationAssertion(obo:IAO_0000412 obo:FOODON_03317332 "http://langual.org")
 AnnotationAssertion(obo:IAO_0100001 obo:FOODON_03317332 obo:FOODON_00001006)
 AnnotationAssertion(rdfs:label obo:FOODON_03317332 "obsolete: meat (not further specified)"@en)
 AnnotationAssertion(owl:deprecated obo:FOODON_03317332 "true"^^xsd:boolean)
@@ -3881,22 +3736,19 @@ AnnotationAssertion(owl:deprecated obo:FOODON_03317336 "true"^^xsd:boolean)
 # Class: obo:FOODON_03317365 (obsolete: beverage (alcoholic, distilled))
 
 AnnotationAssertion(obo:IAO_0000231 obo:FOODON_03317365 "Redundant entry"@en)
-AnnotationAssertion(obo:IAO_0000412 obo:FOODON_03317365 "http://langual.org")
 AnnotationAssertion(obo:IAO_0100001 obo:FOODON_03317365 obo:FOODON_00001817)
 AnnotationAssertion(rdfs:label obo:FOODON_03317365 "obsolete: beverage (alcoholic, distilled)"@en)
-AnnotationAssertion(owl:deprecated obo:FOODON_03317365 "true"@en)
+AnnotationAssertion(owl:deprecated obo:FOODON_03317365 "true"^^xsd:boolean)
 
 # Class: obo:FOODON_03317457 (obsolete: zurra)
 
 AnnotationAssertion(obo:IAO_0000231 obo:FOODON_03317457 "Unable to locate product to match this term to"@en)
-AnnotationAssertion(obo:IAO_0000412 obo:FOODON_03317457 "http://langual.org")
 AnnotationAssertion(oboInOwl:hasDbXref obo:FOODON_03317457 "SUBSET_SIREN:F17457")
 AnnotationAssertion(rdfs:label obo:FOODON_03317457 "obsolete: zurra"@en)
 AnnotationAssertion(owl:deprecated obo:FOODON_03317457 "true"^^xsd:boolean)
 
 # Class: obo:FOODON_03317577 (obsolete: skim milk (sterilized))
 
-AnnotationAssertion(obo:IAO_0000412 obo:FOODON_03317577 "http://langual.org")
 AnnotationAssertion(obo:IAO_0100001 obo:FOODON_03317577 obo:FOODON_03311025)
 AnnotationAssertion(oboInOwl:hasDbXref obo:FOODON_03317577 "SUBSET_SIREN:F17577")
 AnnotationAssertion(oboInOwl:inSubset obo:FOODON_03317577 "subset_siren")
@@ -3919,7 +3771,6 @@ AnnotationAssertion(owl:deprecated obo:FOODON_03317604 "true"^^xsd:boolean)
 
 # Class: obo:FOODON_03317614 (obsolete: cheese product)
 
-AnnotationAssertion(obo:IAO_0000412 obo:FOODON_03317614 "http://langual.org")
 AnnotationAssertion(obo:IAO_0100001 obo:FOODON_03317614 "http://purl.obolibrary.org/obo/FOODON_00001013"^^xsd:anyURI)
 AnnotationAssertion(oboInOwl:hasDbXref obo:FOODON_03317614 "SUBSET_SIREN:F17614")
 AnnotationAssertion(oboInOwl:inSubset obo:FOODON_03317614 "subset_siren")
@@ -3932,7 +3783,6 @@ AnnotationAssertion(owl:deprecated obo:FOODON_03317614 "true"^^xsd:boolean)
 
 # Class: obo:FOODON_03317643 (obsolete: food (solid))
 
-AnnotationAssertion(obo:IAO_0000412 obo:FOODON_03317643 "http://langual.org")
 AnnotationAssertion(obo:IAO_0100001 obo:FOODON_03317643 "http://purl.obolibrary.org/obo/FOODON_03430151"^^xsd:anyURI)
 AnnotationAssertion(oboInOwl:hasDbXref obo:FOODON_03317643 "SUBSET_SIREN:F17643")
 AnnotationAssertion(oboInOwl:inSubset obo:FOODON_03317643 "subset_siren")
@@ -3945,7 +3795,6 @@ AnnotationAssertion(owl:deprecated obo:FOODON_03317643 "true"^^xsd:boolean)
 # Class: obo:FOODON_03400000 (obsolete: langual thesaurus root)
 
 AnnotationAssertion(obo:IAO_0000115 obo:FOODON_03400000 "The root node of the LanguaL 2017 edition and past editions."@en)
-AnnotationAssertion(obo:IAO_0000412 obo:FOODON_03400000 "http://langual.org")
 AnnotationAssertion(oboInOwl:hasDbXref obo:FOODON_03400000 "http://www.langual.org/langual_thesaurus.asp?termid=00000")
 AnnotationAssertion(rdfs:label obo:FOODON_03400000 "obsolete: langual thesaurus root"@en)
 AnnotationAssertion(owl:deprecated obo:FOODON_03400000 "true"^^xsd:boolean)
@@ -3953,7 +3802,6 @@ AnnotationAssertion(owl:deprecated obo:FOODON_03400000 "true"^^xsd:boolean)
 # Class: obo:FOODON_03400001 (obsolete: product type, unknown)
 
 AnnotationAssertion(obo:IAO_0000231 obo:FOODON_03400001 "Damion Dooley's note: this term isn't informative in an ontology paradigm.  To express that a product type is appropriate but not known, reference 'food product type' term itself for a value."@en)
-AnnotationAssertion(obo:IAO_0000412 obo:FOODON_03400001 "http://langual.org")
 AnnotationAssertion(obo:IAO_0100001 obo:FOODON_03400001 obo:FOODON_03400361)
 AnnotationAssertion(oboInOwl:hasDbXref obo:FOODON_03400001 "http://www.langual.org/langual_thesaurus.asp?termid=A0001")
 AnnotationAssertion(rdfs:comment obo:FOODON_03400001 "LanguaL curation note: Used when no product type is evident from the food product name, e.g., 'artificially sweetened food', 'food with herbs added', etc. [FDA CFSAN 1995]"@en)
@@ -3962,7 +3810,6 @@ AnnotationAssertion(owl:deprecated obo:FOODON_03400001 "true"^^xsd:boolean)
 
 # Class: obo:FOODON_03400004 (obsolete: product type, other)
 
-AnnotationAssertion(obo:IAO_0000412 obo:FOODON_03400004 "http://langual.org")
 AnnotationAssertion(obo:IAO_0100001 obo:FOODON_03400004 "http://purl.obolibrary.org/obo/FOODON_00001002"^^xsd:anyURI)
 AnnotationAssertion(oboInOwl:hasDbXref obo:FOODON_03400004 "http://www.langual.org/langual_thesaurus.asp?termid=A0004")
 AnnotationAssertion(rdfs:comment obo:FOODON_03400004 "LanguaL curation note: Used only if the product does not fall under any of the major product types listed. [FDA CFSAN 1995]"@en)
@@ -3972,7 +3819,6 @@ AnnotationAssertion(owl:deprecated obo:FOODON_03400004 "true"^^xsd:boolean)
 # Class: obo:FOODON_03400313 (obsolete: semisoft cheese (codex))
 
 AnnotationAssertion(obo:IAO_0000115 obo:FOODON_03400313 "Cheese having between 61-69% moisture on a fat- free basis (Codex Alimentarius Standard A-6, Volume XVI, Ed. 1)."@en)
-AnnotationAssertion(obo:IAO_0000412 obo:FOODON_03400313 "http://langual.org")
 AnnotationAssertion(oboInOwl:hasDbXref obo:FOODON_03400313 "http://www.langual.org/langual_thesaurus.asp?termid=A0313")
 AnnotationAssertion(rdfs:comment obo:FOODON_03400313 "LanguaL curation note: This term is only kept for backward compatibility. DO NOT USE for new indexing."@en)
 AnnotationAssertion(rdfs:label obo:FOODON_03400313 "obsolete: semisoft cheese (codex)"@en)
@@ -3981,7 +3827,6 @@ AnnotationAssertion(owl:deprecated obo:FOODON_03400313 "true"^^xsd:boolean)
 # Class: obo:FOODON_03400979 (obsolete: 10000046 - chocolate/sugar candy combination - confectionery (gs1 gpc))
 
 AnnotationAssertion(obo:IAO_0000115 obo:FOODON_03400979 "Includes any products that can be described/observed as a specific confectionery item that is covered in chocolate, such as toffee, marshmallow, liquorice and fudge. Excludes products such as pure Chocolate products with a sweet filling such as liqueur or fondant, pure Sugar Candy Products with no chocolate coating."@en)
-AnnotationAssertion(obo:IAO_0000412 obo:FOODON_03400979 "http://langual.org")
 AnnotationAssertion(oboInOwl:hasDbXref obo:FOODON_03400979 "http://www.langual.org/langual_thesaurus.asp?termid=A0979")
 AnnotationAssertion(rdfs:label obo:FOODON_03400979 "obsolete: 10000046 - chocolate/sugar candy combination - confectionery (gs1 gpc)"@en)
 AnnotationAssertion(owl:deprecated obo:FOODON_03400979 "true"^^xsd:boolean)
@@ -3989,7 +3834,6 @@ AnnotationAssertion(owl:deprecated obo:FOODON_03400979 "true"^^xsd:boolean)
 # Class: obo:FOODON_03400998 (obsolete: 10000209 - fruit/nuts/seeds mixes - unprepared/unprocessed (shelf stable) (gs1 gpc))
 
 AnnotationAssertion(obo:IAO_0000115 obo:FOODON_03400998 "Term not in GS1 2017: deprecated."@en)
-AnnotationAssertion(obo:IAO_0000412 obo:FOODON_03400998 "http://langual.org")
 AnnotationAssertion(oboInOwl:hasDbXref obo:FOODON_03400998 "http://www.langual.org/langual_thesaurus.asp?termid=A0998")
 AnnotationAssertion(rdfs:label obo:FOODON_03400998 "obsolete: 10000209 - fruit/nuts/seeds mixes - unprepared/unprocessed (shelf stable) (gs1 gpc)"@en)
 AnnotationAssertion(owl:deprecated obo:FOODON_03400998 "true"^^xsd:boolean)
@@ -3997,7 +3841,6 @@ AnnotationAssertion(owl:deprecated obo:FOODON_03400998 "true"^^xsd:boolean)
 # Class: obo:FOODON_03401017 (obsolete: 10000013 - meat/poultry/game/batrachian - prepared/processed (frozen) (gs1 gpc))
 
 AnnotationAssertion(obo:IAO_0000115 obo:FOODON_03401017 "Term not in GS1 2017: deprecated."@en)
-AnnotationAssertion(obo:IAO_0000412 obo:FOODON_03401017 "http://langual.org")
 AnnotationAssertion(oboInOwl:hasDbXref obo:FOODON_03401017 "http://www.langual.org/langual_thesaurus.asp?termid=A1017")
 AnnotationAssertion(rdfs:label obo:FOODON_03401017 "obsolete: 10000013 - meat/poultry/game/batrachian - prepared/processed (frozen) (gs1 gpc)"@en)
 AnnotationAssertion(owl:deprecated obo:FOODON_03401017 "true"^^xsd:boolean)
@@ -4005,7 +3848,6 @@ AnnotationAssertion(owl:deprecated obo:FOODON_03401017 "true"^^xsd:boolean)
 # Class: obo:FOODON_03401018 (obsolete: 10000012 - meat/poultry/game/batrachian - prepared/processed (perishable) (gs1 gpc))
 
 AnnotationAssertion(obo:IAO_0000115 obo:FOODON_03401018 "Term not in GS1 2017: deprecated."@en)
-AnnotationAssertion(obo:IAO_0000412 obo:FOODON_03401018 "http://langual.org")
 AnnotationAssertion(oboInOwl:hasDbXref obo:FOODON_03401018 "http://www.langual.org/langual_thesaurus.asp?termid=A1018")
 AnnotationAssertion(rdfs:label obo:FOODON_03401018 "obsolete: 10000012 - meat/poultry/game/batrachian - prepared/processed (perishable) (gs1 gpc)"@en)
 AnnotationAssertion(owl:deprecated obo:FOODON_03401018 "true"^^xsd:boolean)
@@ -4013,7 +3855,6 @@ AnnotationAssertion(owl:deprecated obo:FOODON_03401018 "true"^^xsd:boolean)
 # Class: obo:FOODON_03401019 (obsolete: 10000014 - meat/poultry/game/batrachian - prepared/processed (shelf stable) (gs1 gpc))
 
 AnnotationAssertion(obo:IAO_0000115 obo:FOODON_03401019 "Term not in GS1 2017: deprecated."@en)
-AnnotationAssertion(obo:IAO_0000412 obo:FOODON_03401019 "http://langual.org")
 AnnotationAssertion(oboInOwl:hasDbXref obo:FOODON_03401019 "http://www.langual.org/langual_thesaurus.asp?termid=A1019")
 AnnotationAssertion(rdfs:label obo:FOODON_03401019 "obsolete: 10000014 - meat/poultry/game/batrachian - prepared/processed (shelf stable) (gs1 gpc)"@en)
 AnnotationAssertion(owl:deprecated obo:FOODON_03401019 "true"^^xsd:boolean)
@@ -4021,7 +3862,6 @@ AnnotationAssertion(owl:deprecated obo:FOODON_03401019 "true"^^xsd:boolean)
 # Class: obo:FOODON_03401021 (obsolete: 10000010 - meat/poultry/game/batrachian - unprepared/unprocessed (frozen) (gs1 gpc))
 
 AnnotationAssertion(obo:IAO_0000115 obo:FOODON_03401021 "Term not in GS1 2017: deprecated."@en)
-AnnotationAssertion(obo:IAO_0000412 obo:FOODON_03401021 "http://langual.org")
 AnnotationAssertion(oboInOwl:hasDbXref obo:FOODON_03401021 "http://www.langual.org/langual_thesaurus.asp?termid=A1021")
 AnnotationAssertion(rdfs:label obo:FOODON_03401021 "obsolete: 10000010 - meat/poultry/game/batrachian - unprepared/unprocessed (frozen) (gs1 gpc)"@en)
 AnnotationAssertion(owl:deprecated obo:FOODON_03401021 "true"^^xsd:boolean)
@@ -4029,7 +3869,6 @@ AnnotationAssertion(owl:deprecated obo:FOODON_03401021 "true"^^xsd:boolean)
 # Class: obo:FOODON_03401022 (obsolete: 10000009 - meat/poultry/game/batrachian - unprepared/unprocessed (perishable) (gs1 gpc))
 
 AnnotationAssertion(obo:IAO_0000115 obo:FOODON_03401022 "Term not in GS1 2017: deprecated."@en)
-AnnotationAssertion(obo:IAO_0000412 obo:FOODON_03401022 "http://langual.org")
 AnnotationAssertion(oboInOwl:hasDbXref obo:FOODON_03401022 "http://www.langual.org/langual_thesaurus.asp?termid=A1022")
 AnnotationAssertion(rdfs:label obo:FOODON_03401022 "obsolete: 10000009 - meat/poultry/game/batrachian - unprepared/unprocessed (perishable) (gs1 gpc)"@en)
 AnnotationAssertion(owl:deprecated obo:FOODON_03401022 "true"^^xsd:boolean)
@@ -4037,7 +3876,6 @@ AnnotationAssertion(owl:deprecated obo:FOODON_03401022 "true"^^xsd:boolean)
 # Class: obo:FOODON_03401023 (obsolete: 10000011 - meat/poultry/game/batrachian - unprepared/unprocessed (shelf stable) (gs1 gpc))
 
 AnnotationAssertion(obo:IAO_0000115 obo:FOODON_03401023 "Term not in GS1 2017: deprecated."@en)
-AnnotationAssertion(obo:IAO_0000412 obo:FOODON_03401023 "http://langual.org")
 AnnotationAssertion(oboInOwl:hasDbXref obo:FOODON_03401023 "http://www.langual.org/langual_thesaurus.asp?termid=A1023")
 AnnotationAssertion(rdfs:label obo:FOODON_03401023 "obsolete: 10000011 - meat/poultry/game/batrachian - unprepared/unprocessed (shelf stable) (gs1 gpc)"@en)
 AnnotationAssertion(owl:deprecated obo:FOODON_03401023 "true"^^xsd:boolean)
@@ -4045,7 +3883,6 @@ AnnotationAssertion(owl:deprecated obo:FOODON_03401023 "true"^^xsd:boolean)
 # Class: obo:FOODON_03401024 (obsolete: 50112100 - meat/poultry/game/batrachian variety packs (gs1 gpc))
 
 AnnotationAssertion(obo:IAO_0000115 obo:FOODON_03401024 "Term not in GS1 2017: deprecated."@en)
-AnnotationAssertion(obo:IAO_0000412 obo:FOODON_03401024 "http://langual.org")
 AnnotationAssertion(oboInOwl:hasDbXref obo:FOODON_03401024 "http://www.langual.org/langual_thesaurus.asp?termid=A1024")
 AnnotationAssertion(rdfs:label obo:FOODON_03401024 "obsolete: 50112100 - meat/poultry/game/batrachian variety packs (gs1 gpc)"@en)
 AnnotationAssertion(owl:deprecated obo:FOODON_03401024 "true"^^xsd:boolean)
@@ -4053,7 +3890,6 @@ AnnotationAssertion(owl:deprecated obo:FOODON_03401024 "true"^^xsd:boolean)
 # Class: obo:FOODON_03401039 (obsolete: 10000582 - eggs/eggs substitutes (frozen) (gs1 gpc))
 
 AnnotationAssertion(obo:IAO_0000115 obo:FOODON_03401039 "Term not in GS1 2017: deprecated."@en)
-AnnotationAssertion(obo:IAO_0000412 obo:FOODON_03401039 "http://langual.org")
 AnnotationAssertion(oboInOwl:hasDbXref obo:FOODON_03401039 "http://www.langual.org/langual_thesaurus.asp?termid=A1039")
 AnnotationAssertion(rdfs:label obo:FOODON_03401039 "obsolete: 10000582 - eggs/eggs substitutes (frozen) (gs1 gpc)"@en)
 AnnotationAssertion(owl:deprecated obo:FOODON_03401039 "true"^^xsd:boolean)
@@ -4061,7 +3897,6 @@ AnnotationAssertion(owl:deprecated obo:FOODON_03401039 "true"^^xsd:boolean)
 # Class: obo:FOODON_03401040 (obsolete: 10000031 - eggs/eggs substitutes (perishable) (gs1 gpc))
 
 AnnotationAssertion(obo:IAO_0000115 obo:FOODON_03401040 "Term not in GS1 2017: deprecated."@en)
-AnnotationAssertion(obo:IAO_0000412 obo:FOODON_03401040 "http://langual.org")
 AnnotationAssertion(oboInOwl:hasDbXref obo:FOODON_03401040 "http://www.langual.org/langual_thesaurus.asp?termid=A1040")
 AnnotationAssertion(rdfs:label obo:FOODON_03401040 "obsolete: 10000031 - eggs/eggs substitutes (perishable) (gs1 gpc)"@en)
 AnnotationAssertion(owl:deprecated obo:FOODON_03401040 "true"^^xsd:boolean)
@@ -4069,14 +3904,12 @@ AnnotationAssertion(owl:deprecated obo:FOODON_03401040 "true"^^xsd:boolean)
 # Class: obo:FOODON_03401041 (obsolete: 10000032 - eggs/eggs substitutes (shelf stable) (gs1 gpc))
 
 AnnotationAssertion(obo:IAO_0000115 obo:FOODON_03401041 "Term not in GS1 2017: deprecated."@en)
-AnnotationAssertion(obo:IAO_0000412 obo:FOODON_03401041 "http://langual.org")
 AnnotationAssertion(oboInOwl:hasDbXref obo:FOODON_03401041 "http://www.langual.org/langual_thesaurus.asp?termid=A1041")
 AnnotationAssertion(rdfs:label obo:FOODON_03401041 "obsolete: 10000032 - eggs/eggs substitutes (shelf stable) (gs1 gpc)"@en)
 AnnotationAssertion(owl:deprecated obo:FOODON_03401041 "true"^^xsd:boolean)
 
 # Class: obo:FOODON_03401325 (obsolete: dietary supplement, combination, other)
 
-AnnotationAssertion(obo:IAO_0000412 obo:FOODON_03401325 "http://langual.org")
 AnnotationAssertion(obo:IAO_0100001 obo:FOODON_03401325 obo:FOODON_03401313)
 AnnotationAssertion(oboInOwl:hasDbXref obo:FOODON_03401325 "http://www.langual.org/langual_thesaurus.asp?termid=A1325")
 AnnotationAssertion(rdfs:label obo:FOODON_03401325 "obsolete: dietary supplement, combination, other"@en)
@@ -4084,7 +3917,6 @@ AnnotationAssertion(owl:deprecated obo:FOODON_03401325 "true"^^xsd:boolean)
 
 # Class: obo:FOODON_03401326 (obsolete: dietary supplement, other)
 
-AnnotationAssertion(obo:IAO_0000412 obo:FOODON_03401326 "http://langual.org")
 AnnotationAssertion(obo:IAO_0100001 obo:FOODON_03401326 obo:FOODON_03401298)
 AnnotationAssertion(rdfs:label obo:FOODON_03401326 "obsolete: dietary supplement, other"@en)
 AnnotationAssertion(owl:deprecated obo:FOODON_03401326 "true"^^xsd:boolean)
@@ -4092,7 +3924,6 @@ AnnotationAssertion(owl:deprecated obo:FOODON_03401326 "true"^^xsd:boolean)
 # Class: obo:FOODON_03401329 (obsolete: dietary supplement, not specified)
 
 AnnotationAssertion(obo:IAO_0000231 obo:FOODON_03401329 "'dietary supplement' is now appropriate class to reference when particulars are not known.")
-AnnotationAssertion(obo:IAO_0000412 obo:FOODON_03401329 "http://langual.org")
 AnnotationAssertion(obo:IAO_0100001 obo:FOODON_03401329 "http://purl.obolibrary.org/obo/FOODON_03401298")
 AnnotationAssertion(oboInOwl:hasDbXref obo:FOODON_03401329 "http://www.langual.org/langual_thesaurus.asp?termid=A1329")
 AnnotationAssertion(rdfs:comment obo:FOODON_03401329 "LanguaL curation note: Use only when no supplement type is evident from the product name."@en)
@@ -4108,7 +3939,6 @@ AnnotationAssertion(owl:deprecated obo:FOODON_03410001 "true"^^xsd:boolean)
 
 # Class: obo:FOODON_03411000 (obsolete: cattle and swine and calf)
 
-AnnotationAssertion(obo:IAO_0000412 obo:FOODON_03411000 "http://langual.org")
 AnnotationAssertion(oboInOwl:hasDbXref obo:FOODON_03411000 "http://www.langual.org/langual_thesaurus.asp?termid=B1000")
 AnnotationAssertion(rdfs:label obo:FOODON_03411000 "obsolete: cattle and swine and calf"@en)
 AnnotationAssertion(owl:deprecated obo:FOODON_03411000 "true"^^xsd:boolean)
@@ -4133,14 +3963,12 @@ AnnotationAssertion(owl:deprecated obo:FOODON_03411026 "true"^^xsd:boolean)
 
 # Class: obo:FOODON_03411028 (obsolete: grapefruit and orange)
 
-AnnotationAssertion(obo:IAO_0000412 obo:FOODON_03411028 "http://langual.org")
 AnnotationAssertion(oboInOwl:hasDbXref obo:FOODON_03411028 "http://www.langual.org/langual_thesaurus.asp?termid=B1028")
 AnnotationAssertion(rdfs:label obo:FOODON_03411028 "obsolete: grapefruit and orange"@en)
 AnnotationAssertion(owl:deprecated obo:FOODON_03411028 "true"^^xsd:boolean)
 
 # Class: obo:FOODON_03411032 (obsolete: sole, species not known)
 
-AnnotationAssertion(obo:IAO_0000412 obo:FOODON_03411032 "http://langual.org")
 AnnotationAssertion(oboInOwl:hasDbXref obo:FOODON_03411032 "http://www.langual.org/langual_thesaurus.asp?termid=B1032")
 AnnotationAssertion(rdfs:label obo:FOODON_03411032 "obsolete: sole, species not known"@en)
 AnnotationAssertion(owl:deprecated obo:FOODON_03411032 "true"^^xsd:boolean)
@@ -4309,7 +4137,6 @@ AnnotationAssertion(owl:deprecated obo:FOODON_03411104 "true"^^xsd:boolean)
 
 # Class: obo:FOODON_03411105 (obsolete: cattle and swine)
 
-AnnotationAssertion(obo:IAO_0000412 obo:FOODON_03411105 "http://langual.org")
 AnnotationAssertion(oboInOwl:hasDbXref obo:FOODON_03411105 "http://www.langual.org/langual_thesaurus.asp?termid=B1105")
 AnnotationAssertion(rdfs:label obo:FOODON_03411105 "obsolete: cattle and swine"@en)
 AnnotationAssertion(owl:deprecated obo:FOODON_03411105 "true"^^xsd:boolean)
@@ -4532,7 +4359,6 @@ AnnotationAssertion(owl:deprecated obo:FOODON_03411203 "true"^^xsd:boolean)
 
 # Class: obo:FOODON_03411207 (obsolete: prune)
 
-AnnotationAssertion(obo:IAO_0000412 obo:FOODON_03411207 "http://langual.org")
 AnnotationAssertion(oboInOwl:hasDbXref obo:FOODON_03411207 "http://www.langual.org/langual_thesaurus.asp?termid=B1207")
 AnnotationAssertion(rdfs:comment obo:FOODON_03411207 "LanguaL curation note: This term is only kept for backward compatibility. DO NOT USE for new indexing."@en)
 AnnotationAssertion(rdfs:label obo:FOODON_03411207 "obsolete: prune"@en)
@@ -4565,7 +4391,6 @@ AnnotationAssertion(owl:deprecated obo:FOODON_03411214 "true"^^xsd:boolean)
 # Class: obo:FOODON_03411215 (obsolete: algae, bacteria or fungus)
 
 AnnotationAssertion(obo:IAO_0000231 obo:FOODON_03411215 "Disjunction discouraged, use specific item instead."@en)
-AnnotationAssertion(obo:IAO_0000412 obo:FOODON_03411215 "http://langual.org")
 AnnotationAssertion(oboInOwl:hasDbXref obo:FOODON_03411215 "http://www.langual.org/langual_thesaurus.asp?termid=B1215")
 AnnotationAssertion(rdfs:label obo:FOODON_03411215 "obsolete: algae, bacteria or fungus"@en)
 AnnotationAssertion(owl:deprecated obo:FOODON_03411215 "true"^^xsd:boolean)
@@ -4620,7 +4445,6 @@ AnnotationAssertion(owl:deprecated obo:FOODON_03411244 "true"^^xsd:boolean)
 
 # Class: obo:FOODON_03411246 (obsolete: pineapple and grapefruit)
 
-AnnotationAssertion(obo:IAO_0000412 obo:FOODON_03411246 "http://langual.org")
 AnnotationAssertion(oboInOwl:hasDbXref obo:FOODON_03411246 "http://www.langual.org/langual_thesaurus.asp?termid=B1246")
 AnnotationAssertion(oboInOwl:hasSynonym obo:FOODON_03411246 "grapefruit and pineapple"@en)
 AnnotationAssertion(rdfs:label obo:FOODON_03411246 "obsolete: pineapple and grapefruit"@en)
@@ -4712,7 +4536,6 @@ AnnotationAssertion(owl:deprecated obo:FOODON_03411320 "true"^^xsd:boolean)
 
 # Class: obo:FOODON_03411321 (obsolete: mace)
 
-AnnotationAssertion(obo:IAO_0000412 obo:FOODON_03411321 "http://langual.org")
 AnnotationAssertion(obo:IAO_0100001 obo:FOODON_03411321 obo:FOODON_00002014)
 AnnotationAssertion(oboInOwl:hasDbXref obo:FOODON_03411321 "http://www.langual.org/langual_thesaurus.asp?termid=B1321")
 AnnotationAssertion(rdfs:comment obo:FOODON_03411321 "LanguaL curation note: This term is only kept for backward compatibility. DO NOT USE for new indexing."@en)
@@ -4848,7 +4671,6 @@ AnnotationAssertion(owl:deprecated obo:FOODON_03411422 "true"^^xsd:boolean)
 # Class: obo:FOODON_03411424 (obsolete: blue pike)
 
 AnnotationAssertion(obo:IAO_0000115 obo:FOODON_03411424 "Synonym of *WALLEYE PIKE [B1398]*."@en)
-AnnotationAssertion(obo:IAO_0000412 obo:FOODON_03411424 "http://langual.org")
 AnnotationAssertion(oboInOwl:hasDbXref obo:FOODON_03411424 "http://www.langual.org/langual_thesaurus.asp?termid=B1424")
 AnnotationAssertion(rdfs:comment obo:FOODON_03411424 "LanguaL curation note: This term is only kept for backward compatibility. DO NOT USE for new indexing."@en)
 AnnotationAssertion(rdfs:label obo:FOODON_03411424 "obsolete: blue pike"@en)
@@ -4904,7 +4726,6 @@ AnnotationAssertion(owl:deprecated obo:FOODON_03411442 "true"^^xsd:boolean)
 
 # Class: obo:FOODON_03411446 (obsolete: escarole plant)
 
-AnnotationAssertion(obo:IAO_0000412 obo:FOODON_03411446 "http://langual.org")
 AnnotationAssertion(obo:IAO_0100001 obo:FOODON_03411446 obo:FOODON_03411314)
 AnnotationAssertion(oboInOwl:hasDbXref obo:FOODON_03411446 "http://www.langual.org/langual_thesaurus.asp?termid=B1446")
 AnnotationAssertion(rdfs:comment obo:FOODON_03411446 "LanguaL curation note: This term is only kept for backward compatibility. DO NOT USE for new indexing."@en)
@@ -5051,14 +4872,12 @@ AnnotationAssertion(owl:deprecated obo:FOODON_03411523 "true"^^xsd:boolean)
 
 # Class: obo:FOODON_03411525 (obsolete: peanut with other nut or seed)
 
-AnnotationAssertion(obo:IAO_0000412 obo:FOODON_03411525 "http://langual.org")
 AnnotationAssertion(oboInOwl:hasDbXref obo:FOODON_03411525 "http://www.langual.org/langual_thesaurus.asp?termid=B1525")
 AnnotationAssertion(rdfs:label obo:FOODON_03411525 "obsolete: peanut with other nut or seed"@en)
 AnnotationAssertion(owl:deprecated obo:FOODON_03411525 "true"^^xsd:boolean)
 
 # Class: obo:FOODON_03411526 (obsolete: weakfish)
 
-AnnotationAssertion(obo:IAO_0000412 obo:FOODON_03411526 "http://langual.org")
 AnnotationAssertion(obo:IAO_0100001 obo:FOODON_03411526 obo:FOODON_03412375)
 AnnotationAssertion(oboInOwl:hasDbXref obo:FOODON_03411526 "http://www.langual.org/langual_thesaurus.asp?termid=B1526")
 AnnotationAssertion(rdfs:comment obo:FOODON_03411526 "LanguaL curation note: This term is only kept for backward compatibility. DO NOT USE for new indexing."@en)
@@ -5205,7 +5024,6 @@ AnnotationAssertion(owl:deprecated obo:FOODON_03411596 "true"^^xsd:boolean)
 
 # Class: obo:FOODON_03411605 (obsolete: pea and onion)
 
-AnnotationAssertion(obo:IAO_0000412 obo:FOODON_03411605 "http://langual.org")
 AnnotationAssertion(oboInOwl:hasDbXref obo:FOODON_03411605 "http://www.langual.org/langual_thesaurus.asp?termid=B1605")
 AnnotationAssertion(oboInOwl:hasSynonym obo:FOODON_03411605 "onion and pea"@en)
 AnnotationAssertion(rdfs:label obo:FOODON_03411605 "obsolete: pea and onion"@en)
@@ -5225,7 +5043,6 @@ AnnotationAssertion(owl:deprecated obo:FOODON_03411612 "true"^^xsd:boolean)
 
 # Class: obo:FOODON_03411613 (obsolete: pea and carrot)
 
-AnnotationAssertion(obo:IAO_0000412 obo:FOODON_03411613 "http://langual.org")
 AnnotationAssertion(oboInOwl:hasDbXref obo:FOODON_03411613 "http://www.langual.org/langual_thesaurus.asp?termid=B1613")
 AnnotationAssertion(oboInOwl:hasSynonym obo:FOODON_03411613 "carrot and pea"@en)
 AnnotationAssertion(rdfs:label obo:FOODON_03411613 "obsolete: pea and carrot"@en)
@@ -5246,7 +5063,6 @@ AnnotationAssertion(owl:deprecated obo:FOODON_03411618 "true"^^xsd:boolean)
 # Class: obo:FOODON_03411619 (obsolete: reindeer)
 
 AnnotationAssertion(obo:IAO_0000115 obo:FOODON_03411619 "Duplicate entry."@en)
-AnnotationAssertion(obo:IAO_0000412 obo:FOODON_03411619 "http://langual.org")
 AnnotationAssertion(obo:IAO_0100001 obo:FOODON_03411619 obo:FOODON_03411509)
 AnnotationAssertion(oboInOwl:hasDbXref obo:FOODON_03411619 "http://www.langual.org/langual_thesaurus.asp?termid=B1619")
 AnnotationAssertion(rdfs:comment obo:FOODON_03411619 "LanguaL curation note: This term is only kept for backward compatibility. DO NOT USE for new indexing."@en)
@@ -5297,7 +5113,6 @@ AnnotationAssertion(owl:deprecated obo:FOODON_03411630 "true"^^xsd:boolean)
 
 # Class: obo:FOODON_03411631 (obsolete: pineapple and orange)
 
-AnnotationAssertion(obo:IAO_0000412 obo:FOODON_03411631 "http://langual.org")
 AnnotationAssertion(oboInOwl:hasDbXref obo:FOODON_03411631 "http://www.langual.org/langual_thesaurus.asp?termid=B1631")
 AnnotationAssertion(oboInOwl:hasSynonym obo:FOODON_03411631 "orange and pineapple"@en)
 AnnotationAssertion(rdfs:label obo:FOODON_03411631 "obsolete: pineapple and orange"@en)
@@ -5353,7 +5168,6 @@ AnnotationAssertion(owl:deprecated obo:FOODON_03411674 "true"^^xsd:boolean)
 
 # Class: obo:FOODON_03411680 (obsolete: sugar cane and field corn)
 
-AnnotationAssertion(obo:IAO_0000412 obo:FOODON_03411680 "http://langual.org")
 AnnotationAssertion(oboInOwl:hasDbXref obo:FOODON_03411680 "http://www.langual.org/langual_thesaurus.asp?termid=B1680")
 AnnotationAssertion(oboInOwl:hasSynonym obo:FOODON_03411680 "field corn and sugar cane"@en)
 AnnotationAssertion(rdfs:label obo:FOODON_03411680 "obsolete: sugar cane and field corn"@en)
@@ -5469,7 +5283,6 @@ AnnotationAssertion(owl:deprecated obo:FOODON_03411707 "true"^^xsd:boolean)
 
 # Class: obo:FOODON_03411709 (obsolete: orange and apricot)
 
-AnnotationAssertion(obo:IAO_0000412 obo:FOODON_03411709 "http://langual.org")
 AnnotationAssertion(oboInOwl:hasDbXref obo:FOODON_03411709 "http://www.langual.org/langual_thesaurus.asp?termid=B1709")
 AnnotationAssertion(rdfs:label obo:FOODON_03411709 "obsolete: orange and apricot"@en)
 AnnotationAssertion(owl:deprecated obo:FOODON_03411709 "true"^^xsd:boolean)
@@ -5560,7 +5373,6 @@ AnnotationAssertion(owl:deprecated obo:FOODON_03411745 "true"^^xsd:boolean)
 
 # Class: obo:FOODON_03411753 (obsolete: green bean and pinto bean plant)
 
-AnnotationAssertion(obo:IAO_0000412 obo:FOODON_03411753 "http://langual.org")
 AnnotationAssertion(oboInOwl:hasDbXref obo:FOODON_03411753 "http://www.langual.org/langual_thesaurus.asp?termid=B1753")
 AnnotationAssertion(oboInOwl:hasSynonym obo:FOODON_03411753 "shellie bean"@en)
 AnnotationAssertion(rdfs:label obo:FOODON_03411753 "obsolete: green bean and pinto bean plant"@en)
@@ -5712,7 +5524,6 @@ AnnotationAssertion(owl:deprecated obo:FOODON_03411778 "true"^^xsd:boolean)
 
 # Class: obo:FOODON_03411779 (obsolete: california yellowtail)
 
-AnnotationAssertion(obo:IAO_0000412 obo:FOODON_03411779 "http://langual.org")
 AnnotationAssertion(obo:IAO_0100001 obo:FOODON_03411779 obo:FOODON_03411534)
 AnnotationAssertion(oboInOwl:hasDbXref obo:FOODON_03411779 "http://www.langual.org/langual_thesaurus.asp?termid=B1779")
 AnnotationAssertion(rdfs:comment obo:FOODON_03411779 "LanguaL curation note: This term is only kept for backward compatibility. DO NOT USE for new indexing."@en)
@@ -5944,7 +5755,6 @@ AnnotationAssertion(owl:deprecated obo:FOODON_03411842 "true"^^xsd:boolean)
 
 # Class: obo:FOODON_03411847 (obsolete: pacific sardine)
 
-AnnotationAssertion(obo:IAO_0000412 obo:FOODON_03411847 "http://langual.org")
 AnnotationAssertion(obo:IAO_0100001 obo:FOODON_03411847 obo:FOODON_03412192)
 AnnotationAssertion(oboInOwl:hasDbXref obo:FOODON_03411847 "http://www.langual.org/langual_thesaurus.asp?termid=B1847")
 AnnotationAssertion(rdfs:comment obo:FOODON_03411847 "LanguaL curation note: This term is only kept for backward compatibility. DO NOT USE for new indexing."@en)
@@ -6344,7 +6154,6 @@ AnnotationAssertion(owl:deprecated obo:FOODON_03411951 "true"^^xsd:boolean)
 # Class: obo:FOODON_03411953 (obsolete: ocean quahog)
 
 AnnotationAssertion(obo:IAO_0000115 obo:FOODON_03411953 "Descriptor inactivated due to duplication."@en)
-AnnotationAssertion(obo:IAO_0000412 obo:FOODON_03411953 "http://langual.org")
 AnnotationAssertion(obo:IAO_0100001 obo:FOODON_03411953 obo:FOODON_03412193)
 AnnotationAssertion(oboInOwl:hasDbXref obo:FOODON_03411953 "http://www.langual.org/langual_thesaurus.asp?termid=B1953")
 AnnotationAssertion(rdfs:comment obo:FOODON_03411953 "LanguaL curation note: This term is only kept for backward compatibility. DO NOT USE for new indexing."@en)
@@ -6617,7 +6426,6 @@ AnnotationAssertion(owl:deprecated obo:FOODON_03412097 "true"^^xsd:boolean)
 
 # Class: obo:FOODON_03412101 (obsolete: sheep and goat)
 
-AnnotationAssertion(obo:IAO_0000412 obo:FOODON_03412101 "http://langual.org")
 AnnotationAssertion(oboInOwl:hasDbXref obo:FOODON_03412101 "http://www.langual.org/langual_thesaurus.asp?termid=B2101")
 AnnotationAssertion(oboInOwl:hasSynonym obo:FOODON_03412101 "goat and sheep"@en)
 AnnotationAssertion(rdfs:label obo:FOODON_03412101 "obsolete: sheep and goat"@en)
@@ -6667,14 +6475,12 @@ AnnotationAssertion(owl:deprecated obo:FOODON_03412140 "true"^^xsd:boolean)
 
 # Class: obo:FOODON_03412141 (obsolete cape hake)
 
-AnnotationAssertion(obo:IAO_0000412 obo:FOODON_03412141 "http://langual.org")
 AnnotationAssertion(obo:IAO_0100001 obo:FOODON_03412141 obo:FOODON_03413889)
 AnnotationAssertion(rdfs:label obo:FOODON_03412141 "obsolete cape hake"@en)
 AnnotationAssertion(owl:deprecated obo:FOODON_03412141 "true"^^xsd:boolean)
 
 # Class: obo:FOODON_03412142 (obsolete argentine hake)
 
-AnnotationAssertion(obo:IAO_0000412 obo:FOODON_03412142 "http://langual.org")
 AnnotationAssertion(obo:IAO_0100001 obo:FOODON_03412142 obo:FOODON_03413891)
 AnnotationAssertion(rdfs:label obo:FOODON_03412142 "obsolete argentine hake"@en)
 AnnotationAssertion(owl:deprecated obo:FOODON_03412142 "true"^^xsd:boolean)
@@ -6886,7 +6692,6 @@ AnnotationAssertion(owl:deprecated obo:FOODON_03412193 "true"^^xsd:boolean)
 # Class: obo:FOODON_03412201 (obsolete: panulirus rissore)
 
 AnnotationAssertion(obo:IAO_0000115 obo:FOODON_03412201 "Descriptor inactivated."@en)
-AnnotationAssertion(obo:IAO_0000412 obo:FOODON_03412201 "http://langual.org")
 AnnotationAssertion(oboInOwl:hasDbXref obo:FOODON_03412201 "http://www.langual.org/langual_thesaurus.asp?termid=B2201")
 AnnotationAssertion(rdfs:comment obo:FOODON_03412201 "LanguaL curation note: This term is only kept for backward compatibility. DO NOT USE for new indexing."@en)
 AnnotationAssertion(rdfs:label obo:FOODON_03412201 "obsolete: panulirus rissore"@en)
@@ -7014,7 +6819,6 @@ AnnotationAssertion(owl:deprecated obo:FOODON_03412239 "true"^^xsd:boolean)
 
 # Class: obo:FOODON_03412242 (obsolete: swine and calf)
 
-AnnotationAssertion(obo:IAO_0000412 obo:FOODON_03412242 "http://langual.org")
 AnnotationAssertion(oboInOwl:hasDbXref obo:FOODON_03412242 "http://www.langual.org/langual_thesaurus.asp?termid=B2242")
 AnnotationAssertion(oboInOwl:hasSynonym obo:FOODON_03412242 "calf and swine"@en)
 AnnotationAssertion(rdfs:label obo:FOODON_03412242 "obsolete: swine and calf"@en)
@@ -7022,28 +6826,24 @@ AnnotationAssertion(owl:deprecated obo:FOODON_03412242 "true"^^xsd:boolean)
 
 # Class: obo:FOODON_03412243 (obsolete: cattle and swine and sheep)
 
-AnnotationAssertion(obo:IAO_0000412 obo:FOODON_03412243 "http://langual.org")
 AnnotationAssertion(oboInOwl:hasDbXref obo:FOODON_03412243 "http://www.langual.org/langual_thesaurus.asp?termid=B2243")
 AnnotationAssertion(rdfs:label obo:FOODON_03412243 "obsolete: cattle and swine and sheep"@en)
 AnnotationAssertion(owl:deprecated obo:FOODON_03412243 "true"^^xsd:boolean)
 
 # Class: obo:FOODON_03412244 (obsolete: cattle and sheep)
 
-AnnotationAssertion(obo:IAO_0000412 obo:FOODON_03412244 "http://langual.org")
 AnnotationAssertion(oboInOwl:hasDbXref obo:FOODON_03412244 "http://www.langual.org/langual_thesaurus.asp?termid=B2244")
 AnnotationAssertion(rdfs:label obo:FOODON_03412244 "obsolete: cattle and sheep"@en)
 AnnotationAssertion(owl:deprecated obo:FOODON_03412244 "true"^^xsd:boolean)
 
 # Class: obo:FOODON_03412245 (obsolete: cattle and goat)
 
-AnnotationAssertion(obo:IAO_0000412 obo:FOODON_03412245 "http://langual.org")
 AnnotationAssertion(oboInOwl:hasDbXref obo:FOODON_03412245 "http://www.langual.org/langual_thesaurus.asp?termid=B2245")
 AnnotationAssertion(rdfs:label obo:FOODON_03412245 "obsolete: cattle and goat"@en)
 AnnotationAssertion(owl:deprecated obo:FOODON_03412245 "true"^^xsd:boolean)
 
 # Class: obo:FOODON_03412247 (obsolete: cattle and sheep and goat)
 
-AnnotationAssertion(obo:IAO_0000412 obo:FOODON_03412247 "http://langual.org")
 AnnotationAssertion(oboInOwl:hasDbXref obo:FOODON_03412247 "http://www.langual.org/langual_thesaurus.asp?termid=B2247")
 AnnotationAssertion(rdfs:label obo:FOODON_03412247 "obsolete: cattle and sheep and goat"@en)
 AnnotationAssertion(owl:deprecated obo:FOODON_03412247 "true"^^xsd:boolean)
@@ -7117,7 +6917,6 @@ AnnotationAssertion(owl:deprecated obo:FOODON_03412281 "true"^^xsd:boolean)
 # Class: obo:FOODON_03412282 (obsolete: school shark)
 
 AnnotationAssertion(obo:IAO_0000115 obo:FOODON_03412282 "School shark is a synonym of TOPE SHARK [B2525], which should be used instead."@en)
-AnnotationAssertion(obo:IAO_0000412 obo:FOODON_03412282 "http://langual.org")
 AnnotationAssertion(obo:IAO_0100001 obo:FOODON_03412282 obo:FOODON_03412525)
 AnnotationAssertion(oboInOwl:hasDbXref obo:FOODON_03412282 "http://www.langual.org/langual_thesaurus.asp?termid=B2282")
 AnnotationAssertion(rdfs:comment obo:FOODON_03412282 "LanguaL curation note: This term is only kept for backward compatibility. DO NOT USE for new indexing."@en)
@@ -7414,7 +7213,6 @@ AnnotationAssertion(owl:deprecated obo:FOODON_03412360 "true"^^xsd:boolean)
 
 # Class: obo:FOODON_03412365 (obsolete european hake)
 
-AnnotationAssertion(obo:IAO_0000412 obo:FOODON_03412365 "http://langual.org")
 AnnotationAssertion(obo:IAO_0100001 obo:FOODON_03412365 obo:FOODON_03413892)
 AnnotationAssertion(rdfs:label obo:FOODON_03412365 "obsolete european hake"@en)
 AnnotationAssertion(owl:deprecated obo:FOODON_03412365 "true"^^xsd:boolean)
@@ -7451,7 +7249,6 @@ AnnotationAssertion(owl:deprecated obo:FOODON_03412377 "true"^^xsd:boolean)
 
 # Class: obo:FOODON_03412379 (obsolete: carmine cusk-eel)
 
-AnnotationAssertion(obo:IAO_0000412 obo:FOODON_03412379 "http://langual.org")
 AnnotationAssertion(oboInOwl:hasDbXref obo:FOODON_03412379 "http://www.langual.org/langual_thesaurus.asp?termid=B2379")
 AnnotationAssertion(rdfs:comment obo:FOODON_03412379 "LanguaL curation note: This term is only kept for backward compatibility. DO NOT USE for new indexing."@en)
 AnnotationAssertion(rdfs:label obo:FOODON_03412379 "obsolete: carmine cusk-eel"@en)
@@ -7466,7 +7263,6 @@ AnnotationAssertion(owl:deprecated obo:FOODON_03412380 "true"^^xsd:boolean)
 # Class: obo:FOODON_03412381 (obsolete: lutjanus silla)
 
 AnnotationAssertion(obo:IAO_0000115 obo:FOODON_03412381 "Species unknown."@en)
-AnnotationAssertion(obo:IAO_0000412 obo:FOODON_03412381 "http://langual.org")
 AnnotationAssertion(oboInOwl:hasDbXref obo:FOODON_03412381 "http://www.langual.org/langual_thesaurus.asp?termid=B2381")
 AnnotationAssertion(rdfs:comment obo:FOODON_03412381 "LanguaL curation note: This term is only kept for backward compatibility. DO NOT USE for new indexing."@en)
 AnnotationAssertion(rdfs:label obo:FOODON_03412381 "obsolete: lutjanus silla"@en)
@@ -7498,7 +7294,6 @@ AnnotationAssertion(owl:deprecated obo:FOODON_03412385 "true"^^xsd:boolean)
 
 # Class: obo:FOODON_03412387 (obsolete: zander)
 
-AnnotationAssertion(obo:IAO_0000412 obo:FOODON_03412387 "http://langual.org")
 AnnotationAssertion(obo:IAO_0100001 obo:FOODON_03412387 obo:FOODON_03411399)
 AnnotationAssertion(rdfs:label obo:FOODON_03412387 "obsolete: zander"@en)
 AnnotationAssertion(owl:deprecated obo:FOODON_03412387 "true"^^xsd:boolean)
@@ -7529,7 +7324,6 @@ AnnotationAssertion(owl:deprecated obo:FOODON_03412392 "true"^^xsd:boolean)
 
 # Class: obo:FOODON_03412396 (obsolete: cattle and lamb)
 
-AnnotationAssertion(obo:IAO_0000412 obo:FOODON_03412396 "http://langual.org")
 AnnotationAssertion(oboInOwl:hasDbXref obo:FOODON_03412396 "http://www.langual.org/langual_thesaurus.asp?termid=B2396")
 AnnotationAssertion(rdfs:label obo:FOODON_03412396 "obsolete: cattle and lamb"@en)
 AnnotationAssertion(owl:deprecated obo:FOODON_03412396 "true"^^xsd:boolean)
@@ -8034,7 +7828,6 @@ AnnotationAssertion(owl:deprecated obo:FOODON_03412640 "true"^^xsd:boolean)
 
 # Class: obo:FOODON_03412643 (obsolete chilean hake)
 
-AnnotationAssertion(obo:IAO_0000412 obo:FOODON_03412643 "http://langual.org")
 AnnotationAssertion(obo:IAO_0100001 obo:FOODON_03412643 obo:FOODON_03413890)
 AnnotationAssertion(rdfs:label obo:FOODON_03412643 "obsolete chilean hake"@en)
 AnnotationAssertion(owl:deprecated obo:FOODON_03412643 "true"^^xsd:boolean)
@@ -8095,7 +7888,6 @@ AnnotationAssertion(owl:deprecated obo:FOODON_03412662 "true"^^xsd:boolean)
 
 # Class: obo:FOODON_03412664 (obsolete: corvina)
 
-AnnotationAssertion(obo:IAO_0000412 obo:FOODON_03412664 "http://langual.org")
 AnnotationAssertion(obo:IAO_0100001 obo:FOODON_03412664 obo:FOODON_03411814)
 AnnotationAssertion(oboInOwl:hasDbXref obo:FOODON_03412664 "http://www.langual.org/langual_thesaurus.asp?termid=B2664")
 AnnotationAssertion(rdfs:comment obo:FOODON_03412664 "LanguaL curation note: This term is only kept for backward compatibility. DO NOT USE for new indexing."@en)
@@ -8481,7 +8273,6 @@ AnnotationAssertion(owl:deprecated obo:FOODON_03412824 "true"^^xsd:boolean)
 # Class: obo:FOODON_03412826 (obsolete: belwisia)
 
 AnnotationAssertion(obo:IAO_0000115 obo:FOODON_03412826 "Wallia is an evergreen shrub or a low-branching tree with a dense crown growing up to 15 metres tall. The bark is used locally to flavour rice and to chew with cola nuts as a stimulant. The tree is sometimes grown as an ornamental. [http://tropical.theferns.info/viewtropical.php?id=Napoleonaea+vogelii]"@en)
-AnnotationAssertion(obo:IAO_0000412 obo:FOODON_03412826 "http://langual.org")
 AnnotationAssertion(oboInOwl:hasDbXref obo:FOODON_03412826 "http://www.langual.org/langual_thesaurus.asp?termid=B2826")
 AnnotationAssertion(rdfs:comment obo:FOODON_03412826 "LanguaL curation note: This term is only kept for backward compatibility. DO NOT USE for new indexing."@en)
 AnnotationAssertion(rdfs:label obo:FOODON_03412826 "obsolete: belwisia"@en)
@@ -8519,42 +8310,36 @@ AnnotationAssertion(owl:deprecated obo:FOODON_03412846 "true"^^xsd:boolean)
 
 # Class: obo:FOODON_03412847 (obsolete: pseudomonadales)
 
-AnnotationAssertion(obo:IAO_0000412 obo:FOODON_03412847 "http://langual.org")
 AnnotationAssertion(obo:IAO_0100001 obo:FOODON_03412847 obo:NCBITaxon_72274)
 AnnotationAssertion(rdfs:label obo:FOODON_03412847 "obsolete: pseudomonadales"@en)
 AnnotationAssertion(owl:deprecated obo:FOODON_03412847 "true"^^xsd:boolean)
 
 # Class: obo:FOODON_03412849 (obsolete: actinomycetales)
 
-AnnotationAssertion(obo:IAO_0000412 obo:FOODON_03412849 "http://langual.org")
 AnnotationAssertion(obo:IAO_0100001 obo:FOODON_03412849 obo:NCBITaxon_2037)
 AnnotationAssertion(rdfs:label obo:FOODON_03412849 "obsolete: actinomycetales"@en)
 AnnotationAssertion(owl:deprecated obo:FOODON_03412849 "true"^^xsd:boolean)
 
 # Class: obo:FOODON_03412851 (obsolete: cytophagales)
 
-AnnotationAssertion(obo:IAO_0000412 obo:FOODON_03412851 "http://langual.org")
 AnnotationAssertion(obo:IAO_0100001 obo:FOODON_03412851 obo:NCBITaxon_768507)
 AnnotationAssertion(rdfs:label obo:FOODON_03412851 "obsolete: cytophagales"@en)
 AnnotationAssertion(owl:deprecated obo:FOODON_03412851 "true"^^xsd:boolean)
 
 # Class: obo:FOODON_03412852 (obsolete: spirochaetales)
 
-AnnotationAssertion(obo:IAO_0000412 obo:FOODON_03412852 "http://langual.org")
 AnnotationAssertion(obo:IAO_0100001 obo:FOODON_03412852 obo:NCBITaxon_136)
 AnnotationAssertion(rdfs:label obo:FOODON_03412852 "obsolete: spirochaetales"@en)
 AnnotationAssertion(owl:deprecated obo:FOODON_03412852 "true"^^xsd:boolean)
 
 # Class: obo:FOODON_03412853 (obsolete: mycoplasmatales)
 
-AnnotationAssertion(obo:IAO_0000412 obo:FOODON_03412853 "http://langual.org")
 AnnotationAssertion(obo:IAO_0100001 obo:FOODON_03412853 obo:NCBITaxon_2085)
 AnnotationAssertion(rdfs:label obo:FOODON_03412853 "obsolete: mycoplasmatales"@en)
 AnnotationAssertion(owl:deprecated obo:FOODON_03412853 "true"^^xsd:boolean)
 
 # Class: obo:FOODON_03412854 (obsolete: rickettsiales)
 
-AnnotationAssertion(obo:IAO_0000412 obo:FOODON_03412854 "http://langual.org")
 AnnotationAssertion(obo:IAO_0100001 obo:FOODON_03412854 obo:NCBITaxon_766)
 AnnotationAssertion(rdfs:label obo:FOODON_03412854 "obsolete: rickettsiales"@en)
 AnnotationAssertion(owl:deprecated obo:FOODON_03412854 "true"^^xsd:boolean)
@@ -8891,7 +8676,6 @@ AnnotationAssertion(owl:deprecated obo:FOODON_03412970 "true"^^xsd:boolean)
 
 # Class: obo:FOODON_03412973 (obsolete: other chemical food source)
 
-AnnotationAssertion(obo:IAO_0000412 obo:FOODON_03412973 "http://langual.org")
 AnnotationAssertion(obo:IAO_0100001 obo:FOODON_03412973 obo:FOODON_03411041)
 AnnotationAssertion(rdfs:label obo:FOODON_03412973 "obsolete: other chemical food source"@en)
 AnnotationAssertion(owl:deprecated obo:FOODON_03412973 "true"^^xsd:boolean)
@@ -8901,7 +8685,6 @@ AnnotationAssertion(owl:deprecated obo:FOODON_03412973 "true"^^xsd:boolean)
 AnnotationAssertion(obo:IAO_0000119 obo:FOODON_03413066 "If used for food additives, this descriptor refers to the European Commission food additive regulation according to the four Food Additive Directives: the EEC Framework Directive on Food Additives (89/107/EEC), the Directive on colours (94/36/EC), the Directive on sweeteners (94/35/EC) and the 'miscellaneous' Directive (95/2/EC) [http://ec.europa.eu/food/fs/sfp/flav_index_en.html] and/or Codex Alimentarius Commission General Standard for Food Additives (CODEX STAN 192) [http://www.codexalimentarius.net/download/standards/4/CXS_192e.pdf].
 
 If used for food supplement substances, this descriptor refers to the European Commission regulation in general [http://ec.europa.eu/food/food/labellingnutrition/supplements/index_en.htm] and specifically to the EC Directive on the approximation of the laws of the Members States relating to food supplements (2002/46/EC) [http://eur-lex.europa.eu/LexUriServ/LexUriServ.do?uri=OJ:L:2002:183:0051:0057:EN:PDF].")
-AnnotationAssertion(obo:IAO_0000412 obo:FOODON_03413066 "http://langual.org")
 AnnotationAssertion(obo:IAO_0100001 obo:FOODON_03413066 "http://purl.obolibrary.org/obo/CHEBI_30769"^^xsd:anyURI)
 AnnotationAssertion(oboInOwl:hasDbXref obo:FOODON_03413066 "http://www.langual.org/langual_thesaurus.asp?termid=B3066")
 AnnotationAssertion(rdfs:comment obo:FOODON_03413066 "LanguaL curation note: This term is only kept for backward compatibility. DO NOT USE for new indexing."@en)
@@ -8910,7 +8693,6 @@ AnnotationAssertion(owl:deprecated obo:FOODON_03413066 "true"^^xsd:boolean)
 
 # Class: obo:FOODON_03413165 (obsolete: monosodium glutamate)
 
-AnnotationAssertion(obo:IAO_0000412 obo:FOODON_03413165 "http://langual.org")
 AnnotationAssertion(oboInOwl:hasDbXref obo:FOODON_03413165 "http://www.langual.org/langual_thesaurus.asp?termid=B3165")
 AnnotationAssertion(rdfs:comment obo:FOODON_03413165 "LanguaL curation note: This term is only kept for backward compatibility. DO NOT USE for new indexing."@en)
 AnnotationAssertion(rdfs:label obo:FOODON_03413165 "obsolete: monosodium glutamate"@en)
@@ -8918,7 +8700,6 @@ AnnotationAssertion(owl:deprecated obo:FOODON_03413165 "true"^^xsd:boolean)
 
 # Class: obo:FOODON_03413206 (obsolete: potassium chloride)
 
-AnnotationAssertion(obo:IAO_0000412 obo:FOODON_03413206 "http://langual.org")
 AnnotationAssertion(obo:IAO_0100001 obo:FOODON_03413206 obo:CHEBI_32588)
 AnnotationAssertion(oboInOwl:hasDbXref obo:FOODON_03413206 "http://www.langual.org/langual_thesaurus.asp?termid=B3206")
 AnnotationAssertion(rdfs:comment obo:FOODON_03413206 "LanguaL curation note: This term is only kept for backward compatibility. DO NOT USE for new indexing."@en)
@@ -8927,7 +8708,6 @@ AnnotationAssertion(owl:deprecated obo:FOODON_03413206 "true"^^xsd:boolean)
 
 # Class: obo:FOODON_03413256 (obsolete: sodium hydrogen carbonate)
 
-AnnotationAssertion(obo:IAO_0000412 obo:FOODON_03413256 "http://langual.org")
 AnnotationAssertion(oboInOwl:hasDbXref obo:FOODON_03413256 "http://www.langual.org/langual_thesaurus.asp?termid=B3256")
 AnnotationAssertion(rdfs:comment obo:FOODON_03413256 "LanguaL curation note: This term is only kept for backward compatibility. DO NOT USE for new indexing."@en)
 AnnotationAssertion(rdfs:label obo:FOODON_03413256 "obsolete: sodium hydrogen carbonate"@en)
@@ -9211,7 +8991,6 @@ AnnotationAssertion(owl:deprecated obo:FOODON_03413411 "true"^^xsd:boolean)
 
 # Class: obo:FOODON_03413412 (obsolete: japanese-green)
 
-AnnotationAssertion(obo:IAO_0000412 obo:FOODON_03413412 "http://langual.org")
 AnnotationAssertion(oboInOwl:hasDbXref obo:FOODON_03413412 "http://www.langual.org/langual_thesaurus.asp?termid=B3412")
 AnnotationAssertion(rdfs:comment obo:FOODON_03413412 "LanguaL curation note: This term is only kept for backward compatibility. DO NOT USE for new indexing."@en)
 AnnotationAssertion(rdfs:label obo:FOODON_03413412 "obsolete: japanese-green"@en)
@@ -9270,10 +9049,6 @@ AnnotationAssertion(owl:deprecated obo:FOODON_03413437 "true"^^xsd:boolean)
 AnnotationAssertion(obo:IAO_0100001 obo:FOODON_03413440 obo:NCBITaxon_109096)
 AnnotationAssertion(rdfs:label obo:FOODON_03413440 "obsolete: bulbous chervil plant"@en)
 AnnotationAssertion(owl:deprecated obo:FOODON_03413440 "true"^^xsd:boolean)
-
-# Class: obo:FOODON_03413442 (kurrat plant)
-
-AnnotationAssertion(obo:IAO_0000412 obo:FOODON_03413442 "http://langual.org")
 
 # Class: obo:FOODON_03413451 (obsolete: long-finned eel)
 
@@ -12164,10 +11939,6 @@ AnnotationAssertion(obo:IAO_0100001 obo:FOODON_03414300 obo:NCBITaxon_271942)
 AnnotationAssertion(rdfs:label obo:FOODON_03414300 "obsolete: yellowtail horse mackerel"@en)
 AnnotationAssertion(owl:deprecated obo:FOODON_03414300 "true"^^xsd:boolean)
 
-# Class: obo:FOODON_03414301 (mustard and cress)
-
-AnnotationAssertion(obo:IAO_0000412 obo:FOODON_03414301 "http://langual.org")
-
 # Class: obo:FOODON_03414304 (obsolete: australian round lime plant)
 
 AnnotationAssertion(obo:IAO_0100001 obo:FOODON_03414304 obo:NCBITaxon_341934)
@@ -12305,7 +12076,6 @@ AnnotationAssertion(owl:deprecated obo:FOODON_03414350 "true"^^xsd:boolean)
 # Class: obo:FOODON_03414352 (obsolete: grains-of-paradise)
 
 AnnotationAssertion(obo:IAO_0000115 obo:FOODON_03414352 "Grains-of-paradise term obsoleted due to duplication."@en)
-AnnotationAssertion(obo:IAO_0000412 obo:FOODON_03414352 "http://langual.org")
 AnnotationAssertion(obo:IAO_0100001 obo:FOODON_03414352 obo:FOODON_03412061)
 AnnotationAssertion(oboInOwl:hasDbXref obo:FOODON_03414352 "http://www.langual.org/langual_thesaurus.asp?termid=B4352")
 AnnotationAssertion(rdfs:comment obo:FOODON_03414352 "LanguaL curation note: This term is only kept for backward compatibility. DO NOT USE for new indexing."@en)
@@ -12429,7 +12199,6 @@ AnnotationAssertion(owl:deprecated obo:FOODON_03414385 "true"^^xsd:boolean)
 # Class: obo:FOODON_03414416 (obsolete: cellulose)
 
 AnnotationAssertion(obo:IAO_0000115 obo:FOODON_03414416 "Cellulose used as a food additive."@en)
-AnnotationAssertion(obo:IAO_0000412 obo:FOODON_03414416 "http://langual.org")
 AnnotationAssertion(obo:IAO_0100001 obo:FOODON_03414416 obo:FOODON_03301343)
 AnnotationAssertion(rdfs:label obo:FOODON_03414416 "obsolete: cellulose"@en)
 AnnotationAssertion(owl:deprecated obo:FOODON_03414416 "true"^^xsd:boolean)
@@ -12794,14 +12563,12 @@ AnnotationAssertion(owl:deprecated obo:FOODON_03414573 "true"^^xsd:boolean)
 
 # Class: obo:FOODON_03414576 (obsolete: actinobacteria)
 
-AnnotationAssertion(obo:IAO_0000412 obo:FOODON_03414576 "http://langual.org")
 AnnotationAssertion(obo:IAO_0100001 obo:FOODON_03414576 obo:NCBITaxon_1760)
 AnnotationAssertion(rdfs:label obo:FOODON_03414576 "obsolete: actinobacteria"@en)
 AnnotationAssertion(owl:deprecated obo:FOODON_03414576 "true"^^xsd:boolean)
 
 # Class: obo:FOODON_03414578 (obsolete: bifidobacteriales)
 
-AnnotationAssertion(obo:IAO_0000412 obo:FOODON_03414578 "http://langual.org")
 AnnotationAssertion(obo:IAO_0100001 obo:FOODON_03414578 obo:NCBITaxon_85004)
 AnnotationAssertion(rdfs:label obo:FOODON_03414578 "obsolete: bifidobacteriales"@en)
 AnnotationAssertion(owl:deprecated obo:FOODON_03414578 "true"^^xsd:boolean)
@@ -12814,14 +12581,12 @@ AnnotationAssertion(owl:deprecated obo:FOODON_03414579 "true"^^xsd:boolean)
 
 # Class: obo:FOODON_03414582 (obsolete: proteobacteria)
 
-AnnotationAssertion(obo:IAO_0000412 obo:FOODON_03414582 "http://langual.org")
 AnnotationAssertion(obo:IAO_0100001 obo:FOODON_03414582 obo:NCBITaxon_1224)
 AnnotationAssertion(rdfs:label obo:FOODON_03414582 "obsolete: proteobacteria"@en)
 AnnotationAssertion(owl:deprecated obo:FOODON_03414582 "true"^^xsd:boolean)
 
 # Class: obo:FOODON_03414587 (obsolete: unclassified bacteria)
 
-AnnotationAssertion(obo:IAO_0000412 obo:FOODON_03414587 "http://langual.org")
 AnnotationAssertion(oboInOwl:hasDbXref obo:FOODON_03414587 "http://www.langual.org/langual_thesaurus.asp?termid=B4587")
 AnnotationAssertion(rdfs:comment obo:FOODON_03414587 "LanguaL curation note: This term is for CLASSIFICATION ONLY; DO NOT USE term in indexing. Use a more precise narrower term."@en)
 AnnotationAssertion(rdfs:label obo:FOODON_03414587 "obsolete: unclassified bacteria"@en)
@@ -14402,7 +14167,6 @@ AnnotationAssertion(owl:deprecated obo:FOODON_03415180 "true"^^xsd:boolean)
 # Class: obo:FOODON_03420174 (obsolete: part of plant)
 
 AnnotationAssertion(obo:IAO_0000115 obo:FOODON_03420174 "Anatomical part of a plant, such as fruit, seed, pod, leaf, stem or flower as well as the whole plant."@en)
-AnnotationAssertion(obo:IAO_0000412 obo:FOODON_03420174 "http://langual.org")
 AnnotationAssertion(obo:IAO_0100001 obo:FOODON_03420174 obo:PO_0009011)
 AnnotationAssertion(rdfs:label obo:FOODON_03420174 "obsolete: part of plant"@en)
 AnnotationAssertion(owl:deprecated obo:FOODON_03420174 "true"^^xsd:boolean)
@@ -14416,7 +14180,6 @@ AnnotationAssertion(owl:deprecated obo:FOODON_03420198 "true"^^xsd:boolean)
 # Class: obo:FOODON_03420200 (obsolete: leaf)
 
 AnnotationAssertion(obo:IAO_0000115 obo:FOODON_03420200 "The flat or fleshy expanded blade (lamina) including a small and insignificant leafstalk but excluding a large and fleshy leafstalk such as celery stalks or rhubarb stalks."@en)
-AnnotationAssertion(obo:IAO_0000412 obo:FOODON_03420200 "http://langual.org")
 AnnotationAssertion(obo:IAO_0100001 obo:FOODON_03420200 "http://purl.obolibrary.org/obo/PO_0025034"^^xsd:anyURI)
 AnnotationAssertion(oboInOwl:hasDbXref obo:FOODON_03420200 "http://www.langual.org/langual_thesaurus.asp?termid=C0200")
 AnnotationAssertion(rdfs:comment obo:FOODON_03420200 "LanguaL curation note: If the part indexed consists of a large leafstalk and a leaf blade, use *PLANT ABOVE SURFACE, EXCLUDING FRUIT OR SEED*. Compare *STEM, STALK (WITHOUT LEAVES)*."@en)
@@ -14439,7 +14202,6 @@ AnnotationAssertion(owl:deprecated obo:FOODON_03420246 "true"^^xsd:boolean)
 # Class: obo:FOODON_03420247 (obsolete: part of algae or fungus)
 
 AnnotationAssertion(obo:IAO_0000231 obo:FOODON_03420247 "Using other anatomy terms to be more precise."@en)
-AnnotationAssertion(obo:IAO_0000412 obo:FOODON_03420247 "http://langual.org")
 AnnotationAssertion(oboInOwl:hasDbXref obo:FOODON_03420247 "http://www.langual.org/langual_thesaurus.asp?termid=C0247")
 AnnotationAssertion(rdfs:label obo:FOODON_03420247 "obsolete: part of algae or fungus"@en)
 AnnotationAssertion(owl:deprecated obo:FOODON_03420247 "true"^^xsd:boolean)
@@ -14452,7 +14214,6 @@ AnnotationAssertion(owl:deprecated obo:FOODON_03420264 "true"^^xsd:boolean)
 
 # Class: obo:FOODON_03420274 (obsolete: whole egg)
 
-AnnotationAssertion(obo:IAO_0000412 obo:FOODON_03420274 "http://langual.org")
 AnnotationAssertion(obo:IAO_0100001 obo:FOODON_03420274 "http://purl.obolibrary.org/obo/UBERON_0007379"^^xsd:anyURI)
 AnnotationAssertion(rdfs:label obo:FOODON_03420274 "obsolete: whole egg"@en)
 AnnotationAssertion(owl:deprecated obo:FOODON_03420274 "true"^^xsd:boolean)
@@ -14460,7 +14221,6 @@ AnnotationAssertion(owl:deprecated obo:FOODON_03420274 "true"^^xsd:boolean)
 # Class: obo:FOODON_03420280 (obsolete: carbohydrate or related compound)
 
 AnnotationAssertion(obo:IAO_0000231 obo:FOODON_03420280 "Overly broad term."@en)
-AnnotationAssertion(obo:IAO_0000412 obo:FOODON_03420280 "http://langual.org")
 AnnotationAssertion(obo:IAO_0100001 obo:FOODON_03420280 obo:CHEBI_78616)
 AnnotationAssertion(oboInOwl:hasDbXref obo:FOODON_03420280 "http://www.langual.org/langual_thesaurus.asp?termid=C0280")
 AnnotationAssertion(rdfs:label obo:FOODON_03420280 "obsolete: carbohydrate or related compound"@en)
@@ -14469,7 +14229,6 @@ AnnotationAssertion(owl:deprecated obo:FOODON_03420280 "true"^^xsd:boolean)
 # Class: obo:FOODON_03420290 (obsolete: bulb)
 
 AnnotationAssertion(obo:IAO_0000115 obo:FOODON_03420290 "An underground bud that sends down roots and consists of a very short stem covered with leafy scales or layers, as in a lily, onion or hyacinth (Source: Webster's)"@en)
-AnnotationAssertion(obo:IAO_0000412 obo:FOODON_03420290 "http://langual.org")
 AnnotationAssertion(obo:IAO_0100001 obo:FOODON_03420290 "http://purl.obolibrary.org/obo/PO_0025356"^^xsd:anyURI)
 AnnotationAssertion(oboInOwl:hasDbXref obo:FOODON_03420290 "http://www.langual.org/langual_thesaurus.asp?termid=C0290")
 AnnotationAssertion(rdfs:label obo:FOODON_03420290 "obsolete: bulb"@en)
@@ -14478,7 +14237,6 @@ AnnotationAssertion(owl:deprecated obo:FOODON_03420290 "true"^^xsd:boolean)
 # Class: obo:FOODON_03420291 (obsolete: corm)
 
 AnnotationAssertion(obo:IAO_0000115 obo:FOODON_03420291 "A fleshy, thickened, vertical, underground stem, usually having annual segments with a bud at the tip, thin external scale leaves, and roots at the base, as in the gladiolus: corms differ from bulbs in having much more stem tissue and fewer scale leaves (Source: Webster's)"@en)
-AnnotationAssertion(obo:IAO_0000412 obo:FOODON_03420291 "http://langual.org")
 AnnotationAssertion(obo:IAO_0100001 obo:FOODON_03420291 "http://purl.obolibrary.org/obo/PO_0025355"^^xsd:anyURI)
 AnnotationAssertion(oboInOwl:hasDbXref obo:FOODON_03420291 "http://www.langual.org/langual_thesaurus.asp?termid=C0291")
 AnnotationAssertion(rdfs:label obo:FOODON_03420291 "obsolete: corm"@en)
@@ -14487,7 +14245,6 @@ AnnotationAssertion(owl:deprecated obo:FOODON_03420291 "true"^^xsd:boolean)
 # Class: obo:FOODON_03420292 (obsolete: cotyledon)
 
 AnnotationAssertion(obo:IAO_0000115 obo:FOODON_03420292 "The first single leaf or one of the first pair of leaves produced by the embryo of a flowering plant, or any of various similar structures (Source: Webster's)"@en)
-AnnotationAssertion(obo:IAO_0000412 obo:FOODON_03420292 "http://langual.org")
 AnnotationAssertion(obo:IAO_0100001 obo:FOODON_03420292 "http://purl.obolibrary.org/obo/PO_0020030"^^xsd:anyURI)
 AnnotationAssertion(oboInOwl:hasDbXref obo:FOODON_03420292 "http://www.langual.org/langual_thesaurus.asp?termid=C0292")
 AnnotationAssertion(rdfs:label obo:FOODON_03420292 "obsolete: cotyledon"@en)
@@ -14495,7 +14252,6 @@ AnnotationAssertion(owl:deprecated obo:FOODON_03420292 "true"^^xsd:boolean)
 
 # Class: obo:FOODON_03420296 (obsolete: fruiting body)
 
-AnnotationAssertion(obo:IAO_0000412 obo:FOODON_03420296 "http://langual.org")
 AnnotationAssertion(obo:IAO_0100001 obo:FOODON_03420296 obo:FAO_0000007)
 AnnotationAssertion(rdfs:label obo:FOODON_03420296 "obsolete: fruiting body"@en)
 AnnotationAssertion(owl:deprecated obo:FOODON_03420296 "true"^^xsd:boolean)
@@ -14503,7 +14259,6 @@ AnnotationAssertion(owl:deprecated obo:FOODON_03420296 "true"^^xsd:boolean)
 # Class: obo:FOODON_03420299 (obsolete: hypocotyl)
 
 AnnotationAssertion(obo:IAO_0000115 obo:FOODON_03420299 "The part of the axis, or stem, below the cotyledons in the embryo of a plant (Source: Webster's)"@en)
-AnnotationAssertion(obo:IAO_0000412 obo:FOODON_03420299 "http://langual.org")
 AnnotationAssertion(obo:IAO_0100001 obo:FOODON_03420299 "http://purl.obolibrary.org/obo/PO_0020100"^^xsd:anyURI)
 AnnotationAssertion(oboInOwl:hasDbXref obo:FOODON_03420299 "http://www.langual.org/langual_thesaurus.asp?termid=C0299")
 AnnotationAssertion(rdfs:label obo:FOODON_03420299 "obsolete: hypocotyl"@en)
@@ -14512,7 +14267,6 @@ AnnotationAssertion(owl:deprecated obo:FOODON_03420299 "true"^^xsd:boolean)
 # Class: obo:FOODON_03420304 (obsolete: petiole)
 
 AnnotationAssertion(obo:IAO_0000115 obo:FOODON_03420304 "Leafstalk, the slender, usually cylindrical portion of a leaf, which supports the blade and is attached to the stem (Source: Webster's)"@en)
-AnnotationAssertion(obo:IAO_0000412 obo:FOODON_03420304 "http://langual.org")
 AnnotationAssertion(obo:IAO_0100001 obo:FOODON_03420304 "http://purl.obolibrary.org/obo/PO_0020038"^^xsd:anyURI)
 AnnotationAssertion(oboInOwl:hasDbXref obo:FOODON_03420304 "http://www.langual.org/langual_thesaurus.asp?termid=C0304")
 AnnotationAssertion(rdfs:label obo:FOODON_03420304 "obsolete: petiole"@en)
@@ -14521,7 +14275,6 @@ AnnotationAssertion(owl:deprecated obo:FOODON_03420304 "true"^^xsd:boolean)
 # Class: obo:FOODON_03420305 (obsolete: rhizome)
 
 AnnotationAssertion(obo:IAO_0000115 obo:FOODON_03420305 "A creeping stem lying, usually horizontally, at or under the surface of the soil and differing from a root in having scale leaves, bearing leaves or aerial shoots near its tips, and producing roots from its undersurface (Source: Webster's)"@en)
-AnnotationAssertion(obo:IAO_0000412 obo:FOODON_03420305 "http://langual.org")
 AnnotationAssertion(obo:IAO_0100001 obo:FOODON_03420305 "http://purl.obolibrary.org/obo/PO_0004542"^^xsd:anyURI)
 AnnotationAssertion(oboInOwl:hasDbXref obo:FOODON_03420305 "http://www.langual.org/langual_thesaurus.asp?termid=C0305")
 AnnotationAssertion(rdfs:label obo:FOODON_03420305 "obsolete: rhizome"@en)
@@ -14530,7 +14283,6 @@ AnnotationAssertion(owl:deprecated obo:FOODON_03420305 "true"^^xsd:boolean)
 # Class: obo:FOODON_03420306 (obsolete: root)
 
 AnnotationAssertion(obo:IAO_0000115 obo:FOODON_03420306 "The part of a plant, usually below the ground, that lacks nodes, shoots, and leaves, holds the plant in position, draws water and nourishment from the soil, and stores food (Source: Webster's)  <THESAURUS> [An underground portion of a plant] - Syn. radix, rootlet, root hair, tuber, taproot, radicle, rhizome, rootstock; (Source: Webster's Thesaurus)"@en)
-AnnotationAssertion(obo:IAO_0000412 obo:FOODON_03420306 "http://langual.org")
 AnnotationAssertion(obo:IAO_0100001 obo:FOODON_03420306 "http://purl.obolibrary.org/obo/PO_0009005"^^xsd:anyURI)
 AnnotationAssertion(oboInOwl:hasDbXref obo:FOODON_03420306 "http://www.langual.org/langual_thesaurus.asp?termid=C0306")
 AnnotationAssertion(rdfs:label obo:FOODON_03420306 "obsolete: root"@en)
@@ -14539,7 +14291,6 @@ AnnotationAssertion(owl:deprecated obo:FOODON_03420306 "true"^^xsd:boolean)
 # Class: obo:FOODON_03420308 (obsolete: tuber)
 
 AnnotationAssertion(obo:IAO_0000115 obo:FOODON_03420308 "A short, thickened, fleshy part of an underground stem, as a potato: new plants develop from the buds, or eyes, that grow in the axils of the minute scale leaves of a tuber (Source: Webster's)"@en)
-AnnotationAssertion(obo:IAO_0000412 obo:FOODON_03420308 "http://langual.org")
 AnnotationAssertion(obo:IAO_0100001 obo:FOODON_03420308 "http://purl.obolibrary.org/obo/PO_0025522"^^xsd:anyURI)
 AnnotationAssertion(oboInOwl:hasDbXref obo:FOODON_03420308 "http://www.langual.org/langual_thesaurus.asp?termid=C0308")
 AnnotationAssertion(rdfs:label obo:FOODON_03420308 "obsolete: tuber"@en)
@@ -14547,7 +14298,6 @@ AnnotationAssertion(owl:deprecated obo:FOODON_03420308 "true"^^xsd:boolean)
 
 # Class: obo:FOODON_03420309 (obsolete: wood)
 
-AnnotationAssertion(obo:IAO_0000412 obo:FOODON_03420309 "http://langual.org")
 AnnotationAssertion(obo:IAO_0100001 obo:FOODON_03420309 "http://purl.obolibrary.org/obo/ENVO_00002040"^^xsd:anyURI)
 AnnotationAssertion(rdfs:label obo:FOODON_03420309 "obsolete: wood"@en)
 AnnotationAssertion(owl:deprecated obo:FOODON_03420309 "true"^^xsd:boolean)
@@ -14555,7 +14305,6 @@ AnnotationAssertion(owl:deprecated obo:FOODON_03420309 "true"^^xsd:boolean)
 # Class: obo:FOODON_03450042 (obsolete: food scalding or blanching process)
 
 AnnotationAssertion(obo:IAO_0000115 obo:FOODON_03450042 "A method of precooking food where a liquid is heated to just below the boiling point. Often used to retard the spoiling of milk. Also, to plunge food such as fruit or vegetables into boiling water (or to pour boiling water over them) in order to loosen the skin and facilitate peeling."@en)
-AnnotationAssertion(obo:IAO_0000412 obo:FOODON_03450042 "http://langual.org")
 AnnotationAssertion(obo:IAO_0100001 obo:FOODON_03450042 "http://purl.obolibrary.org/obo/FOODON_00002648"^^xsd:anyURI)
 AnnotationAssertion(obo:IAO_0100001 obo:FOODON_03450042 "http://purl.obolibrary.org/obo/FOODON_03470175"^^xsd:anyURI)
 AnnotationAssertion(oboInOwl:hasDbXref obo:FOODON_03450042 "http://www.langual.org/langual_thesaurus.asp?termid=G0042")
@@ -14566,7 +14315,6 @@ AnnotationAssertion(owl:deprecated obo:FOODON_03450042 "true"^^xsd:boolean)
 
 # Class: obo:FOODON_03460105 (obsolete: nutritive sweetener added)
 
-AnnotationAssertion(obo:IAO_0000412 obo:FOODON_03460105 "http://langual.org")
 AnnotationAssertion(obo:IAO_0100001 obo:FOODON_03460105 "http://purl.obolibrary.org/obo/FOODON_03315305"^^xsd:anyURI)
 AnnotationAssertion(oboInOwl:hasDbXref obo:FOODON_03460105 "http://www.langual.org/langual_thesaurus.asp?termid=H0105")
 AnnotationAssertion(rdfs:comment obo:FOODON_03460105 "LanguaL curation note: Used when a nutritive sweetener is the second or third ingredient in order of predominance. If the nutrient content is known, *NUTRITIVE SWEETENER ADDED* should be specified when the nutritive sweetener from all sources amounts to more than 5%."@en)
@@ -14575,7 +14323,6 @@ AnnotationAssertion(owl:deprecated obo:FOODON_03460105 "true"^^xsd:boolean)
 
 # Class: obo:FOODON_03460108 (obsolete: nonnutritive sweetener added)
 
-AnnotationAssertion(obo:IAO_0000412 obo:FOODON_03460108 "http://langual.org")
 AnnotationAssertion(obo:IAO_0100001 obo:FOODON_03460108 "http://purl.obolibrary.org/obo/FOODON_03315027"^^xsd:anyURI)
 AnnotationAssertion(oboInOwl:hasSynonym obo:FOODON_03460108 "artificial sweetener added"@en)
 AnnotationAssertion(rdfs:comment obo:FOODON_03460108 "LanguaL curation note: Used when a nonnutritive sweetener is added at any level."@en)
@@ -14584,7 +14331,6 @@ AnnotationAssertion(owl:deprecated obo:FOODON_03460108 "true"^^xsd:boolean)
 
 # Class: obo:FOODON_03460118 (obsolete: smoked by smoke infiltration)
 
-AnnotationAssertion(obo:IAO_0000412 obo:FOODON_03460118 "http://langual.org")
 AnnotationAssertion(obo:IAO_0100001 obo:FOODON_03460118 "http://purl.obolibrary.org/obo/FOODON_03310311"^^xsd:anyURI)
 AnnotationAssertion(rdfs:comment obo:FOODON_03460118 "LanguaL curation note: Use when food is exposed it for long periods of time to the smoke from a wood fire. Index also *preservation by SMOKING* [J0106]. If smoking also includes heat treatment, index the proper heat treatment under *preservation by HEAT TREATMENT* [J0120]."@en)
 AnnotationAssertion(rdfs:label obo:FOODON_03460118 "obsolete: smoked by smoke infiltration"@en)
@@ -14593,7 +14339,6 @@ AnnotationAssertion(owl:deprecated obo:FOODON_03460118 "true"^^xsd:boolean)
 # Class: obo:FOODON_03460125 (obsolete: hemicellulose added)
 
 AnnotationAssertion(obo:IAO_0000117 obo:FOODON_03460125 "Damion Dooley")
-AnnotationAssertion(obo:IAO_0000412 obo:FOODON_03460125 "http://langual.org")
 AnnotationAssertion(obo:IAO_0100001 obo:FOODON_03460125 "http://purl.obolibrary.org/obo/CHEBI_61266"^^xsd:anyURI)
 AnnotationAssertion(rdfs:label obo:FOODON_03460125 "obsolete: hemicellulose added"@en)
 AnnotationAssertion(owl:deprecated obo:FOODON_03460125 "true"^^xsd:boolean)
@@ -14606,7 +14351,6 @@ AnnotationAssertion(owl:deprecated obo:FOODON_03460131 "true"^^xsd:boolean)
 
 # Class: obo:FOODON_03460136 (obsolete: sugar or sugar syrup added)
 
-AnnotationAssertion(obo:IAO_0000412 obo:FOODON_03460136 "http://langual.org")
 AnnotationAssertion(obo:IAO_0100001 obo:FOODON_03460136 "http://purl.obolibrary.org/obo/FOODON_03420271"@en)
 AnnotationAssertion(obo:IAO_0100001 obo:FOODON_03460136 "http://purl.obolibrary.org/obo/CHEBI_17992"^^xsd:anyURI)
 AnnotationAssertion(oboInOwl:hasDbXref obo:FOODON_03460136 "http://www.langual.org/langual_thesaurus.asp?termid=H0136")
@@ -14625,7 +14369,6 @@ AnnotationAssertion(owl:deprecated obo:FOODON_03460145 "true"^^xsd:boolean)
 
 # Class: obo:FOODON_03460146 (obsolete: starch added)
 
-AnnotationAssertion(obo:IAO_0000412 obo:FOODON_03460146 "http://langual.org")
 AnnotationAssertion(obo:IAO_0100001 obo:FOODON_03460146 "http://purl.obolibrary.org/obo/FOODON_03301000"^^xsd:anyURI)
 AnnotationAssertion(oboInOwl:hasDbXref obo:FOODON_03460146 "http://www.langual.org/langual_thesaurus.asp?termid=H0146")
 AnnotationAssertion(rdfs:comment obo:FOODON_03460146 "LanguaL curation note: Used when starch is the second or third ingredient in order of predominance, excluding water."@en)
@@ -14634,7 +14377,6 @@ AnnotationAssertion(owl:deprecated obo:FOODON_03460146 "true"^^xsd:boolean)
 
 # Class: obo:FOODON_03460149 (obsolete: honey added)
 
-AnnotationAssertion(obo:IAO_0000412 obo:FOODON_03460149 "http://langual.org")
 AnnotationAssertion(obo:IAO_0100001 obo:FOODON_03460149 "http://purl.obolibrary.org/obo/UBERON_0036016"^^xsd:anyURI)
 AnnotationAssertion(oboInOwl:hasDbXref obo:FOODON_03460149 "http://www.langual.org/langual_thesaurus.asp?termid=H0149")
 AnnotationAssertion(rdfs:label obo:FOODON_03460149 "obsolete: honey added"@en)
@@ -14642,7 +14384,6 @@ AnnotationAssertion(owl:deprecated obo:FOODON_03460149 "true"^^xsd:boolean)
 
 # Class: obo:FOODON_03460151 (obsolete: spice or herb added)
 
-AnnotationAssertion(obo:IAO_0000412 obo:FOODON_03460151 "http://langual.org")
 AnnotationAssertion(obo:IAO_0100001 obo:FOODON_03460151 "http://purl.obolibrary.org/obo/FOODON_00001242"^^xsd:anyURI)
 AnnotationAssertion(oboInOwl:hasSynonym obo:FOODON_03460151 "herb added"@en)
 AnnotationAssertion(rdfs:comment obo:FOODON_03460151 "LanguaL curation note: Used when whole or ground spice or herb is added to a food product at any level."@en)
@@ -14651,7 +14392,6 @@ AnnotationAssertion(owl:deprecated obo:FOODON_03460151 "true"^^xsd:boolean)
 
 # Class: obo:FOODON_03460152 (obsolete: grain added)
 
-AnnotationAssertion(obo:IAO_0000412 obo:FOODON_03460152 "http://langual.org")
 AnnotationAssertion(obo:IAO_0100001 obo:FOODON_03460152 "http://purl.obolibrary.org/obo/FOODON_00001056"^^xsd:anyURI)
 AnnotationAssertion(oboInOwl:hasDbXref obo:FOODON_03460152 "http://www.langual.org/langual_thesaurus.asp?termid=H0152")
 AnnotationAssertion(rdfs:label obo:FOODON_03460152 "obsolete: grain added"@en)
@@ -14659,7 +14399,6 @@ AnnotationAssertion(owl:deprecated obo:FOODON_03460152 "true"^^xsd:boolean)
 
 # Class: obo:FOODON_03460154 (obsolete: dextrose added)
 
-AnnotationAssertion(obo:IAO_0000412 obo:FOODON_03460154 "http://langual.org")
 AnnotationAssertion(obo:IAO_0100001 obo:FOODON_03460154 "http://purl.obolibrary.org/obo/FOODON_03315177"^^xsd:anyURI)
 AnnotationAssertion(oboInOwl:hasDbXref obo:FOODON_03460154 "http://www.langual.org/langual_thesaurus.asp?termid=H0154")
 AnnotationAssertion(oboInOwl:hasSynonym obo:FOODON_03460154 "d-glucose added"@en)
@@ -14669,14 +14408,12 @@ AnnotationAssertion(owl:deprecated obo:FOODON_03460154 "true"^^xsd:boolean)
 
 # Class: obo:FOODON_03460156 (obsolete: molasses added)
 
-AnnotationAssertion(obo:IAO_0000412 obo:FOODON_03460156 "http://langual.org")
 AnnotationAssertion(obo:IAO_0100001 obo:FOODON_03460156 "http://purl.obolibrary.org/obo/CHEBI_83163"^^xsd:anyURI)
 AnnotationAssertion(rdfs:label obo:FOODON_03460156 "obsolete: molasses added"@en)
 AnnotationAssertion(owl:deprecated obo:FOODON_03460156 "true"^^xsd:boolean)
 
 # Class: obo:FOODON_03460158 (obsolete: sucrose added)
 
-AnnotationAssertion(obo:IAO_0000412 obo:FOODON_03460158 "http://langual.org")
 AnnotationAssertion(obo:IAO_0100001 obo:FOODON_03460158 "http://purl.obolibrary.org/obo/CHEBI_17992"^^xsd:anyURI)
 AnnotationAssertion(oboInOwl:hasDbXref obo:FOODON_03460158 "http://www.langual.org/langual_thesaurus.asp?termid=H0158")
 AnnotationAssertion(rdfs:comment obo:FOODON_03460158 "LanguaL curation note: Used when sucrose, specifically cane sugar or beet sugar, is the second or third ingredient in order of predominance or if the sucrose content is known to be 5% or more. Note that on a product label or in a recipe, 'sugar' means *SUCROSE*."@en)
@@ -14685,7 +14422,6 @@ AnnotationAssertion(owl:deprecated obo:FOODON_03460158 "true"^^xsd:boolean)
 
 # Class: obo:FOODON_03460164 (obsolete: protein added)
 
-AnnotationAssertion(obo:IAO_0000412 obo:FOODON_03460164 "http://langual.org")
 AnnotationAssertion(obo:IAO_0100001 obo:FOODON_03460164 "http://purl.obolibrary.org/obo/FOODON_03420236"^^xsd:anyURI)
 AnnotationAssertion(rdfs:comment obo:FOODON_03460164 "LanguaL curation note: Used when a protein or high-quality protein source is the second or third ingredient in order of predominance. If the nutrient content is known, *PROTEIN ADDED* should be specified when the added protein amounts to more than 10% of the total protein content."@en)
 AnnotationAssertion(rdfs:label obo:FOODON_03460164 "obsolete: protein added"@en)
@@ -14693,7 +14429,6 @@ AnnotationAssertion(owl:deprecated obo:FOODON_03460164 "true"^^xsd:boolean)
 
 # Class: obo:FOODON_03460165 (obsolete: gelatin added)
 
-AnnotationAssertion(obo:IAO_0000412 obo:FOODON_03460165 "http://langual.org")
 AnnotationAssertion(obo:IAO_0100001 obo:FOODON_03460165 "http://purl.obolibrary.org/obo/FOODON_03315647"^^xsd:anyURI)
 AnnotationAssertion(oboInOwl:hasDbXref obo:FOODON_03460165 "http://www.langual.org/langual_thesaurus.asp?termid=H0165")
 AnnotationAssertion(rdfs:comment obo:FOODON_03460165 "LanguaL curation note: used when gelatin is added at any level."@en)
@@ -14704,7 +14439,6 @@ AnnotationAssertion(owl:deprecated obo:FOODON_03460165 "true"^^xsd:boolean)
 
 AnnotationAssertion(obo:IAO_0000114 obo:FOODON_03460180 obo:IAO_0000428)
 AnnotationAssertion(obo:IAO_0000231 obo:FOODON_03460180 "\"Food added\" and its subclasses referenced existing ingredients / food products.  FoodOn uses relations like \"has ingredient\" to do the same. If needed, these relations can be annotated with proportions."@en)
-AnnotationAssertion(obo:IAO_0000412 obo:FOODON_03460180 "http://langual.org")
 AnnotationAssertion(oboInOwl:hasDbXref obo:FOODON_03460180 "http://www.langual.org/langual_thesaurus.asp?termid=H0180")
 AnnotationAssertion(rdfs:comment obo:FOODON_03460180 "LanguaL curation note: When not otherwise indicated in the scope note, *FOOD ADDED* factor terms are applied when the specified food is the second ingredient in order of predominance, excluding water. Always used for fillings and when the added food is part of the product name (e.g., raisin bread)."@en)
 AnnotationAssertion(rdfs:label obo:FOODON_03460180 "obsolete: food added"@en)
@@ -14712,7 +14446,6 @@ AnnotationAssertion(owl:deprecated obo:FOODON_03460180 "true"^^xsd:boolean)
 
 # Class: obo:FOODON_03460188 (obsolete: breaded or batter-coated)
 
-AnnotationAssertion(obo:IAO_0000412 obo:FOODON_03460188 "http://langual.org")
 AnnotationAssertion(oboInOwl:hasDbXref obo:FOODON_03460188 "http://www.langual.org/langual_thesaurus.asp?termid=H0188")
 AnnotationAssertion(rdfs:comment obo:FOODON_03460188 "LanguaL curation note: Always used regardless of the level at which the coating ingredients are reported."@en)
 AnnotationAssertion(rdfs:label obo:FOODON_03460188 "obsolete: breaded or batter-coated"@en)
@@ -14740,7 +14473,6 @@ AnnotationAssertion(owl:deprecated obo:FOODON_03460212 "true"^^xsd:boolean)
 
 # Class: obo:FOODON_03460218 (obsolete: cellulose added 2)
 
-AnnotationAssertion(obo:IAO_0000412 obo:FOODON_03460218 "http://langual.org")
 AnnotationAssertion(obo:IAO_0100001 obo:FOODON_03460218 obo:FOODON_03301343)
 AnnotationAssertion(oboInOwl:hasDbXref obo:FOODON_03460218 "http://www.langual.org/langual_thesaurus.asp?termid=H0218")
 AnnotationAssertion(rdfs:comment obo:FOODON_03460218 "LanguaL curation note: Used when cellulose is the second to fifth ingredient in order of predominance or when cellulose content is known to be above 5%."@en)
@@ -14749,7 +14481,6 @@ AnnotationAssertion(owl:deprecated obo:FOODON_03460218 "true"^^xsd:boolean)
 
 # Class: obo:FOODON_03460221 (obsolete: fat or oil added)
 
-AnnotationAssertion(obo:IAO_0000412 obo:FOODON_03460221 "http://langual.org")
 AnnotationAssertion(obo:IAO_0100001 obo:FOODON_03460221 "http://purl.obolibrary.org/obo/FOODON_03420190"^^xsd:anyURI)
 AnnotationAssertion(rdfs:comment obo:FOODON_03460221 "LanguaL curation note: Used when a fat or oil, or a fat-containing ingredient, is the second or third ingredient in order of predominance, excluding water."@en)
 AnnotationAssertion(rdfs:label obo:FOODON_03460221 "obsolete: fat or oil added"@en)
@@ -14757,14 +14488,12 @@ AnnotationAssertion(owl:deprecated obo:FOODON_03460221 "true"^^xsd:boolean)
 
 # Class: obo:FOODON_03460222 (obsolete: wheat germ added)
 
-AnnotationAssertion(obo:IAO_0000412 obo:FOODON_03460222 "http://langual.org")
 AnnotationAssertion(obo:IAO_0100001 obo:FOODON_03460222 "http://purl.obolibrary.org/obo/FOODON_03301595"^^xsd:anyURI)
 AnnotationAssertion(rdfs:label obo:FOODON_03460222 "obsolete: wheat germ added"@en)
 AnnotationAssertion(owl:deprecated obo:FOODON_03460222 "true"^^xsd:boolean)
 
 # Class: obo:FOODON_03460224 (obsolete: corn syrup added)
 
-AnnotationAssertion(obo:IAO_0000412 obo:FOODON_03460224 "http://langual.org")
 AnnotationAssertion(obo:IAO_0100001 obo:FOODON_03460224 "http://purl.obolibrary.org/obo/FOODON_03301061"^^xsd:anyURI)
 AnnotationAssertion(oboInOwl:hasDbXref obo:FOODON_03460224 "http://www.langual.org/langual_thesaurus.asp?termid=H0224")
 AnnotationAssertion(oboInOwl:hasSynonym obo:FOODON_03460224 "corn syrup solids added"@en)
@@ -14774,7 +14503,6 @@ AnnotationAssertion(owl:deprecated obo:FOODON_03460224 "true"^^xsd:boolean)
 
 # Class: obo:FOODON_03460242 (obsolete: dairy product added)
 
-AnnotationAssertion(obo:IAO_0000412 obo:FOODON_03460242 "http://langual.org")
 AnnotationAssertion(obo:IAO_0100001 obo:FOODON_03460242 "http://purl.obolibrary.org/obo/FOODON_00001256"^^xsd:anyURI)
 AnnotationAssertion(rdfs:comment obo:FOODON_03460242 "LanguaL curation note: Used when a dairy product is the second, third or fourth ingredient in order of predominance, excluding water."@en)
 AnnotationAssertion(rdfs:label obo:FOODON_03460242 "obsolete: dairy product added"@en)
@@ -14782,7 +14510,6 @@ AnnotationAssertion(owl:deprecated obo:FOODON_03460242 "true"^^xsd:boolean)
 
 # Class: obo:FOODON_03460257 (obsolete: soy protein added)
 
-AnnotationAssertion(obo:IAO_0000412 obo:FOODON_03460257 "http://langual.org")
 AnnotationAssertion(obo:IAO_0100001 obo:FOODON_03460257 "http://purl.obolibrary.org/obo/FOODON_03310368"^^xsd:anyURI)
 AnnotationAssertion(oboInOwl:hasDbXref obo:FOODON_03460257 "http://www.langual.org/langual_thesaurus.asp?termid=H0257")
 AnnotationAssertion(oboInOwl:hasSynonym obo:FOODON_03460257 "soy flour added"@en)
@@ -14797,7 +14524,6 @@ AnnotationAssertion(owl:deprecated obo:FOODON_03460262 "true"^^xsd:boolean)
 
 # Class: obo:FOODON_03460267 (obsolete: carob added)
 
-AnnotationAssertion(obo:IAO_0000412 obo:FOODON_03460267 "http://langual.org")
 AnnotationAssertion(obo:IAO_0100001 obo:FOODON_03460267 "http://purl.obolibrary.org/obo/FOODON_03302170"^^xsd:anyURI)
 AnnotationAssertion(oboInOwl:hasDbXref obo:FOODON_03460267 "http://www.langual.org/langual_thesaurus.asp?termid=H0267")
 AnnotationAssertion(rdfs:comment obo:FOODON_03460267 "LanguaL curation note: Used when carob is added to a food product at any level."@en)
@@ -14807,7 +14533,6 @@ AnnotationAssertion(owl:deprecated obo:FOODON_03460267 "true"^^xsd:boolean)
 # Class: obo:FOODON_03460271 (obsolete: butter added)
 
 AnnotationAssertion(obo:IAO_0000114 obo:FOODON_03460271 obo:IAO_0000428)
-AnnotationAssertion(obo:IAO_0000412 obo:FOODON_03460271 "http://langual.org")
 AnnotationAssertion(obo:IAO_0100001 obo:FOODON_03460271 "http://purl.obolibrary.org/obo/FOODON_03310351"^^xsd:anyURI)
 AnnotationAssertion(oboInOwl:hasDbXref obo:FOODON_03460271 "http://www.langual.org/langual_thesaurus.asp?termid=H0271")
 AnnotationAssertion(rdfs:comment obo:FOODON_03460271 "LanguaL curation note: Used when butter is the second or third ingredient in order of predominance, excluding water."@en)
@@ -14816,7 +14541,6 @@ AnnotationAssertion(owl:deprecated obo:FOODON_03460271 "true"^^xsd:boolean)
 
 # Class: obo:FOODON_03460272 (obsolete: margarine added)
 
-AnnotationAssertion(obo:IAO_0000412 obo:FOODON_03460272 "http://langual.org")
 AnnotationAssertion(obo:IAO_0100001 obo:FOODON_03460272 "http://purl.obolibrary.org/obo/FOODON_03301672"^^xsd:anyURI)
 AnnotationAssertion(oboInOwl:hasDbXref obo:FOODON_03460272 "http://www.langual.org/langual_thesaurus.asp?termid=H0272")
 AnnotationAssertion(rdfs:label obo:FOODON_03460272 "obsolete: margarine added"@en)
@@ -14824,7 +14548,6 @@ AnnotationAssertion(owl:deprecated obo:FOODON_03460272 "true"^^xsd:boolean)
 
 # Class: obo:FOODON_03460280 (obsolete: sugar syrup or sugar syrup solids added)
 
-AnnotationAssertion(obo:IAO_0000412 obo:FOODON_03460280 "http://langual.org")
 AnnotationAssertion(obo:IAO_0100001 obo:FOODON_03460280 "http://purl.obolibrary.org/obo/FOODON_03420271"^^xsd:anyURI)
 AnnotationAssertion(oboInOwl:hasDbXref obo:FOODON_03460280 "http://www.langual.org/langual_thesaurus.asp?termid=H0280")
 AnnotationAssertion(oboInOwl:hasSynonym obo:FOODON_03460280 "sugar syrup added"@en)
@@ -14841,7 +14564,6 @@ AnnotationAssertion(owl:deprecated obo:FOODON_03460356 "true"^^xsd:boolean)
 
 # Class: obo:FOODON_03460367 (obsolete: salt added)
 
-AnnotationAssertion(obo:IAO_0000412 obo:FOODON_03460367 "http://langual.org")
 AnnotationAssertion(obo:IAO_0100001 obo:FOODON_03460367 "http://purl.obolibrary.org/obo/FOODON_00002221"^^xsd:anyURI)
 AnnotationAssertion(rdfs:comment obo:FOODON_03460367 "LanguaL curation note: Use when salt or sodium chloride constitutes a significant ingredient in proportion to other ingredients of the food, for example when salt or sodium chloride is the second, third or fourth ingredient in a multiple-ingredient food product such as dry, packaged soup mix. For food products with a limited number of ingredients and where the salt or sodium chloride constitutes a significant ingredient (e.g., salted peanuts), use the narrower term *SALTED* [H0173]."@en)
 AnnotationAssertion(rdfs:label obo:FOODON_03460367 "obsolete: salt added"@en)
@@ -14849,7 +14571,6 @@ AnnotationAssertion(owl:deprecated obo:FOODON_03460367 "true"^^xsd:boolean)
 
 # Class: obo:FOODON_03460373 (obsolete: microcrystalline cellulose)
 
-AnnotationAssertion(obo:IAO_0000412 obo:FOODON_03460373 "http://langual.org")
 AnnotationAssertion(obo:IAO_0100001 obo:FOODON_03460373 "http://purl.obolibrary.org/obo/FOODON_03413152"^^xsd:anyURI)
 AnnotationAssertion(rdfs:comment obo:FOODON_03460373 "LanguaL curation note: Used when microcrystalline cellulose is added at any level."@en)
 AnnotationAssertion(rdfs:label obo:FOODON_03460373 "obsolete: microcrystalline cellulose"@en)
@@ -14864,7 +14585,6 @@ AnnotationAssertion(owl:deprecated obo:FOODON_03460754 "true"^^xsd:boolean)
 # Class: obo:FOODON_03460757 (obsolete: tree nut added)
 
 AnnotationAssertion(obo:IAO_0000115 obo:FOODON_03460757 "Examples of tree nuts are walnut, cashew, almond, chestnut, coconut."@en)
-AnnotationAssertion(obo:IAO_0000412 obo:FOODON_03460757 "http://langual.org")
 AnnotationAssertion(obo:IAO_0100001 obo:FOODON_03460757 "http://purl.obolibrary.org/obo/FOODON_03301354"^^xsd:anyURI)
 AnnotationAssertion(oboInOwl:hasDbXref obo:FOODON_03460757 "http://www.langual.org/langual_thesaurus.asp?termid=H0757")
 AnnotationAssertion(rdfs:label obo:FOODON_03460757 "obsolete: tree nut added"@en)
@@ -14872,7 +14592,6 @@ AnnotationAssertion(owl:deprecated obo:FOODON_03460757 "true"^^xsd:boolean)
 
 # Class: obo:FOODON_03460758 (obsolete: gluten added)
 
-AnnotationAssertion(obo:IAO_0000412 obo:FOODON_03460758 "http://langual.org")
 AnnotationAssertion(obo:IAO_0100001 obo:FOODON_03460758 "http://purl.obolibrary.org/obo/FOODON_03420177"^^xsd:anyURI)
 AnnotationAssertion(oboInOwl:hasDbXref obo:FOODON_03460758 "http://www.langual.org/langual_thesaurus.asp?termid=H0758")
 AnnotationAssertion(rdfs:label obo:FOODON_03460758 "obsolete: gluten added"@en)
@@ -14880,7 +14599,6 @@ AnnotationAssertion(owl:deprecated obo:FOODON_03460758 "true"^^xsd:boolean)
 
 # Class: obo:FOODON_03460795 (obsolete: cellulose added)
 
-AnnotationAssertion(obo:IAO_0000412 obo:FOODON_03460795 "http://langual.org")
 AnnotationAssertion(obo:IAO_0100001 obo:FOODON_03460795 obo:FOODON_03301343)
 AnnotationAssertion(oboInOwl:hasDbXref obo:FOODON_03460795 "http://www.langual.org/langual_thesaurus.asp?termid=H0795")
 AnnotationAssertion(rdfs:label obo:FOODON_03460795 "obsolete: cellulose added"@en)
@@ -14888,21 +14606,18 @@ AnnotationAssertion(owl:deprecated obo:FOODON_03460795 "true"^^xsd:boolean)
 
 # Class: obo:FOODON_03460849 (obsolete caffeine)
 
-AnnotationAssertion(obo:IAO_0000412 obo:FOODON_03460849 "http://langual.org")
 AnnotationAssertion(obo:IAO_0100001 obo:FOODON_03460849 obo:CHEBI_27732)
 AnnotationAssertion(rdfs:label obo:FOODON_03460849 "obsolete caffeine"@en)
 AnnotationAssertion(owl:deprecated obo:FOODON_03460849 "true"^^xsd:boolean)
 
 # Class: obo:FOODON_03460852 (obsolete: flaxseed oil)
 
-AnnotationAssertion(obo:IAO_0000412 obo:FOODON_03460852 "http://langual.org")
 AnnotationAssertion(obo:IAO_0100001 obo:FOODON_03460852 obo:FOODON_00001088)
 AnnotationAssertion(rdfs:label obo:FOODON_03460852 "obsolete: flaxseed oil"@en)
 AnnotationAssertion(owl:deprecated obo:FOODON_03460852 "true"^^xsd:boolean)
 
 # Class: obo:FOODON_03460853 (obsolete: fish oil added)
 
-AnnotationAssertion(obo:IAO_0000412 obo:FOODON_03460853 "http://langual.org")
 AnnotationAssertion(obo:IAO_0100001 obo:FOODON_03460853 "http://purl.obolibrary.org/obo/FOODON_03306123"^^xsd:anyURI)
 AnnotationAssertion(oboInOwl:hasDbXref obo:FOODON_03460853 "http://www.langual.org/langual_thesaurus.asp?termid=H0853")
 AnnotationAssertion(rdfs:label obo:FOODON_03460853 "obsolete: fish oil added"@en)
@@ -14912,7 +14627,6 @@ AnnotationAssertion(owl:deprecated obo:FOODON_03460853 "true"^^xsd:boolean)
 
 AnnotationAssertion(obo:IAO_0000114 obo:FOODON_03470004 obo:IAO_0000428)
 AnnotationAssertion(obo:IAO_0000117 obo:FOODON_03470004 "Damion Dooley"@en)
-AnnotationAssertion(obo:IAO_0000412 obo:FOODON_03470004 "http://langual.org")
 AnnotationAssertion(obo:IAO_0100001 obo:FOODON_03470004 "http://purl.obolibrary.org/obo/FOODON_03470107"^^xsd:anyURI)
 AnnotationAssertion(oboInOwl:hasDbXref obo:FOODON_03470004 "http://www.langual.org/langual_thesaurus.asp?termid=J0004")
 AnnotationAssertion(rdfs:comment obo:FOODON_03470004 "LanguaL curation note: Used only when the preservation method does not fall under any of the major categories of preservation. Note: wax coating is considered packaging and not preservation."@en)
@@ -14928,7 +14642,6 @@ AnnotationAssertion(owl:deprecated obo:FOODON_03470104 "true"^^xsd:boolean)
 
 # Class: obo:FOODON_03480001 (obsolete: packing medium not known)
 
-AnnotationAssertion(obo:IAO_0000412 obo:FOODON_03480001 "http://langual.org")
 AnnotationAssertion(obo:IAO_0100001 obo:FOODON_03480001 obo:FOODON_03480020)
 AnnotationAssertion(oboInOwl:hasDbXref obo:FOODON_03480001 "http://www.langual.org/langual_thesaurus.asp?termid=K0001")
 AnnotationAssertion(rdfs:comment obo:FOODON_03480001 "LanguaL curation note: Used when nothing is known about the packing medium, if any is present."@en)
@@ -14938,7 +14651,6 @@ AnnotationAssertion(owl:deprecated obo:FOODON_03480001 "true"^^xsd:boolean)
 # Class: obo:FOODON_03480003 (obsolete: no packing medium used)
 
 AnnotationAssertion(obo:IAO_0000231 obo:FOODON_03480003 "Not an ontological category directly."@en)
-AnnotationAssertion(obo:IAO_0000412 obo:FOODON_03480003 "http://langual.org")
 AnnotationAssertion(obo:IAO_0100001 obo:FOODON_03480003 obo:FOODON_03480020)
 AnnotationAssertion(oboInOwl:hasDbXref obo:FOODON_03480003 "http://www.langual.org/langual_thesaurus.asp?termid=K0003")
 AnnotationAssertion(oboInOwl:hasSynonym obo:FOODON_03480003 "packed in air"@en)
@@ -14950,7 +14662,6 @@ AnnotationAssertion(owl:deprecated obo:FOODON_03480003 "true"^^xsd:boolean)
 
 # Class: obo:FOODON_03480004 (obsolete: packing medium, other)
 
-AnnotationAssertion(obo:IAO_0000412 obo:FOODON_03480004 "http://langual.org")
 AnnotationAssertion(obo:IAO_0100001 obo:FOODON_03480004 obo:FOODON_03480020)
 AnnotationAssertion(oboInOwl:hasDbXref obo:FOODON_03480004 "http://www.langual.org/langual_thesaurus.asp?termid=K0004")
 AnnotationAssertion(rdfs:comment obo:FOODON_03480004 "LanguaL curation note: Used when the packing medium does not fall under any of the major categories listed."@en)
@@ -14965,7 +14676,6 @@ AnnotationAssertion(owl:deprecated obo:FOODON_03490004 "true"^^xsd:boolean)
 
 # Class: obo:FOODON_03500001 (obsolete: food contact surface not known)
 
-AnnotationAssertion(obo:IAO_0000412 obo:FOODON_03500001 "http://langual.org")
 AnnotationAssertion(obo:IAO_0100001 obo:FOODON_03500001 obo:FOODON_03500010)
 AnnotationAssertion(oboInOwl:hasDbXref obo:FOODON_03500001 "http://www.langual.org/langual_thesaurus.asp?termid=N0001")
 AnnotationAssertion(rdfs:comment obo:FOODON_03500001 "LanguaL curation note: Used when it is not known what the food contact surface is, if any."@en)
@@ -14974,7 +14684,6 @@ AnnotationAssertion(owl:deprecated obo:FOODON_03500001 "true"^^xsd:boolean)
 
 # Class: obo:FOODON_03500003 (obsolete: no food contact surface present)
 
-AnnotationAssertion(obo:IAO_0000412 obo:FOODON_03500003 "http://langual.org")
 AnnotationAssertion(oboInOwl:hasDbXref obo:FOODON_03500003 "http://www.langual.org/langual_thesaurus.asp?termid=N0003")
 AnnotationAssertion(rdfs:comment obo:FOODON_03500003 "LanguaL curation note: Used when the product is neither packed nor coated with a protective coating."@en)
 AnnotationAssertion(rdfs:label obo:FOODON_03500003 "obsolete: no food contact surface present"@en)
@@ -14982,7 +14691,6 @@ AnnotationAssertion(owl:deprecated obo:FOODON_03500003 "true"^^xsd:boolean)
 
 # Class: obo:FOODON_03500004 (obsolete: food contact surface, other)
 
-AnnotationAssertion(obo:IAO_0000412 obo:FOODON_03500004 "http://langual.org")
 AnnotationAssertion(obo:IAO_0100001 obo:FOODON_03500004 obo:FOODON_03500010)
 AnnotationAssertion(oboInOwl:hasDbXref obo:FOODON_03500004 "http://www.langual.org/langual_thesaurus.asp?termid=N0004")
 AnnotationAssertion(rdfs:comment obo:FOODON_03500004 "LanguaL curation note: Used only if the contact surface does not fall under any of the major types listed."@en)
@@ -14991,14 +14699,12 @@ AnnotationAssertion(owl:deprecated obo:FOODON_03500004 "true"^^xsd:boolean)
 
 # Class: obo:FOODON_03500052 (obsolete: egg shell, food contact surface)
 
-AnnotationAssertion(obo:IAO_0000412 obo:FOODON_03500052 "http://langual.org")
 AnnotationAssertion(obo:IAO_0100001 obo:FOODON_03500052 obo:UBERON_0005079)
 AnnotationAssertion(rdfs:label obo:FOODON_03500052 "obsolete: egg shell, food contact surface"@en)
 AnnotationAssertion(owl:deprecated obo:FOODON_03500052 "true"^^xsd:boolean)
 
 # Class: obo:FOODON_03500053 (obsolete: mollusc shell)
 
-AnnotationAssertion(obo:IAO_0000412 obo:FOODON_03500053 "http://langual.org")
 AnnotationAssertion(obo:IAO_0100001 obo:FOODON_03500053 obo:UBERON_0008270)
 AnnotationAssertion(rdfs:label obo:FOODON_03500053 "obsolete: mollusc shell"@en)
 AnnotationAssertion(owl:deprecated obo:FOODON_03500053 "true"^^xsd:boolean)
@@ -15011,7 +14717,6 @@ AnnotationAssertion(owl:deprecated obo:FOODON_03510276 "true"^^xsd:boolean)
 
 # Class: obo:FOODON_03520001 (obsolete: geographic place or region not known)
 
-AnnotationAssertion(obo:IAO_0000412 obo:FOODON_03520001 "http://langual.org")
 AnnotationAssertion(obo:IAO_0100001 obo:FOODON_03520001 obo:COB_0000032)
 AnnotationAssertion(oboInOwl:hasDbXref obo:FOODON_03520001 "http://www.langual.org/langual_thesaurus.asp?termid=R0001")
 AnnotationAssertion(rdfs:label obo:FOODON_03520001 "obsolete: geographic place or region not known"@en)
@@ -15019,14 +14724,12 @@ AnnotationAssertion(owl:deprecated obo:FOODON_03520001 "true"^^xsd:boolean)
 
 # Class: obo:FOODON_03520010 (obsolete: geographic places and regions)
 
-AnnotationAssertion(obo:IAO_0000412 obo:FOODON_03520010 "http://langual.org")
 AnnotationAssertion(obo:IAO_0100001 obo:FOODON_03520010 obo:COB_0000032)
 AnnotationAssertion(rdfs:label obo:FOODON_03520010 "obsolete: geographic places and regions"@en)
 AnnotationAssertion(owl:deprecated obo:FOODON_03520010 "true"^^xsd:boolean)
 
 # Class: obo:FOODON_03520199 (obsolete: czechoslovakia)
 
-AnnotationAssertion(obo:IAO_0000412 obo:FOODON_03520199 "http://langual.org")
 AnnotationAssertion(oboInOwl:hasDbXref obo:FOODON_03520199 "http://www.langual.org/langual_thesaurus.asp?termid=R0199")
 AnnotationAssertion(rdfs:comment obo:FOODON_03520199 "LanguaL curation note: This term is only kept for backward compatibility. DO NOT USE for new indexing."@en)
 AnnotationAssertion(rdfs:label obo:FOODON_03520199 "obsolete: czechoslovakia"@en)
@@ -15034,7 +14737,6 @@ AnnotationAssertion(owl:deprecated obo:FOODON_03520199 "true"^^xsd:boolean)
 
 # Class: obo:FOODON_03520365 (obsolete: geopolitical designation)
 
-AnnotationAssertion(obo:IAO_0000412 obo:FOODON_03520365 "http://langual.org")
 AnnotationAssertion(obo:IAO_0100001 obo:FOODON_03520365 obo:ENVO_00000123)
 AnnotationAssertion(rdfs:label obo:FOODON_03520365 "obsolete: geopolitical designation"@en)
 AnnotationAssertion(owl:deprecated obo:FOODON_03520365 "true"^^xsd:boolean)
@@ -15053,7 +14755,6 @@ AnnotationAssertion(owl:deprecated obo:FOODON_03530001 "true"^^xsd:boolean)
 
 # Class: obo:FOODON_03530003 (obsolete: meat color, undesignated or unknown)
 
-AnnotationAssertion(obo:IAO_0000412 obo:FOODON_03530003 "http://langual.org")
 AnnotationAssertion(obo:IAO_0100001 obo:FOODON_03530003 obo:FOODON_03530006)
 AnnotationAssertion(oboInOwl:hasDbXref obo:FOODON_03530003 "http://www.langual.org/langual_thesaurus.asp?termid=Z0003")
 AnnotationAssertion(oboInOwl:hasSynonym obo:FOODON_03530003 "back meat, poultry"@en)
@@ -15064,7 +14765,6 @@ AnnotationAssertion(owl:deprecated obo:FOODON_03530003 "true"^^xsd:boolean)
 
 # Class: obo:FOODON_03530018 (obsolete: cut of meat not known)
 
-AnnotationAssertion(obo:IAO_0000412 obo:FOODON_03530018 "http://langual.org")
 AnnotationAssertion(obo:IAO_0100001 obo:FOODON_03530018 obo:FOODON_03530146)
 AnnotationAssertion(oboInOwl:hasDbXref obo:FOODON_03530018 "http://www.langual.org/langual_thesaurus.asp?termid=Z0018")
 AnnotationAssertion(rdfs:label obo:FOODON_03530018 "obsolete: cut of meat not known"@en)
@@ -15072,7 +14772,6 @@ AnnotationAssertion(owl:deprecated obo:FOODON_03530018 "true"^^xsd:boolean)
 
 # Class: obo:FOODON_03530019 (obsolete: grade of meat not known)
 
-AnnotationAssertion(obo:IAO_0000412 obo:FOODON_03530019 "http://langual.org")
 AnnotationAssertion(obo:IAO_0100001 obo:FOODON_03530019 obo:FOODON_03530064)
 AnnotationAssertion(oboInOwl:hasDbXref obo:FOODON_03530019 "http://www.langual.org/langual_thesaurus.asp?termid=Z0019")
 AnnotationAssertion(rdfs:label obo:FOODON_03530019 "obsolete: grade of meat not known"@en)
@@ -15080,7 +14779,6 @@ AnnotationAssertion(owl:deprecated obo:FOODON_03530019 "true"^^xsd:boolean)
 
 # Class: obo:FOODON_03530048 (obsolete: cut of meat, other)
 
-AnnotationAssertion(obo:IAO_0000412 obo:FOODON_03530048 "http://langual.org")
 AnnotationAssertion(obo:IAO_0100001 obo:FOODON_03530048 obo:FOODON_03530146)
 AnnotationAssertion(oboInOwl:hasDbXref obo:FOODON_03530048 "http://www.langual.org/langual_thesaurus.asp?termid=Z0048")
 AnnotationAssertion(rdfs:label obo:FOODON_03530048 "obsolete: cut of meat, other"@en)
@@ -15088,7 +14786,6 @@ AnnotationAssertion(owl:deprecated obo:FOODON_03530048 "true"^^xsd:boolean)
 
 # Class: obo:FOODON_03530061 (obsolete: color of fish flesh not known)
 
-AnnotationAssertion(obo:IAO_0000412 obo:FOODON_03530061 "http://langual.org")
 AnnotationAssertion(obo:IAO_0100001 obo:FOODON_03530061 obo:FOODON_03530055)
 AnnotationAssertion(oboInOwl:hasDbXref obo:FOODON_03530061 "http://www.langual.org/langual_thesaurus.asp?termid=Z0061")
 AnnotationAssertion(rdfs:label obo:FOODON_03530061 "obsolete: color of fish flesh not known"@en)
@@ -15096,7 +14793,6 @@ AnnotationAssertion(owl:deprecated obo:FOODON_03530061 "true"^^xsd:boolean)
 
 # Class: obo:FOODON_03530095 (obsolete: sausage casing not known)
 
-AnnotationAssertion(obo:IAO_0000412 obo:FOODON_03530095 "http://langual.org")
 AnnotationAssertion(obo:IAO_0100001 obo:FOODON_03530095 obo:FOODON_03530092)
 AnnotationAssertion(oboInOwl:hasDbXref obo:FOODON_03530095 "http://www.langual.org/langual_thesaurus.asp?termid=Z0095")
 AnnotationAssertion(rdfs:label obo:FOODON_03530095 "obsolete: sausage casing not known"@en)
@@ -15104,7 +14800,6 @@ AnnotationAssertion(owl:deprecated obo:FOODON_03530095 "true"^^xsd:boolean)
 
 # Class: obo:FOODON_03530205 (obsolete: maturity or ripeness unknown)
 
-AnnotationAssertion(obo:IAO_0000412 obo:FOODON_03530205 "http://langual.org")
 AnnotationAssertion(obo:IAO_0100001 obo:FOODON_03530205 obo:FOODON_03530050)
 AnnotationAssertion(oboInOwl:hasDbXref obo:FOODON_03530205 "http://www.langual.org/langual_thesaurus.asp?termid=Z0205")
 AnnotationAssertion(rdfs:label obo:FOODON_03530205 "obsolete: maturity or ripeness unknown"@en)
@@ -15112,7 +14807,6 @@ AnnotationAssertion(owl:deprecated obo:FOODON_03530205 "true"^^xsd:boolean)
 
 # Class: obo:FOODON_03530215 (obsolete: production environment not known)
 
-AnnotationAssertion(obo:IAO_0000412 obo:FOODON_03530215 "http://langual.org")
 AnnotationAssertion(obo:IAO_0100001 obo:FOODON_03530215 obo:FOODON_03530206)
 AnnotationAssertion(oboInOwl:hasDbXref obo:FOODON_03530215 "http://www.langual.org/langual_thesaurus.asp?termid=Z0215")
 AnnotationAssertion(rdfs:label obo:FOODON_03530215 "obsolete: production environment not known"@en)
@@ -15120,7 +14814,6 @@ AnnotationAssertion(owl:deprecated obo:FOODON_03530215 "true"^^xsd:boolean)
 
 # Class: obo:FOODON_03530216 (obsolete: production environment other)
 
-AnnotationAssertion(obo:IAO_0000412 obo:FOODON_03530216 "http://langual.org")
 AnnotationAssertion(obo:IAO_0100001 obo:FOODON_03530216 obo:FOODON_03530206)
 AnnotationAssertion(oboInOwl:hasDbXref obo:FOODON_03530216 "http://www.langual.org/langual_thesaurus.asp?termid=Z0216")
 AnnotationAssertion(rdfs:label obo:FOODON_03530216 "obsolete: production environment other"@en)
@@ -15128,7 +14821,6 @@ AnnotationAssertion(owl:deprecated obo:FOODON_03530216 "true"^^xsd:boolean)
 
 # Class: obo:FOODON_03530262 (obsolete: food content range, other)
 
-AnnotationAssertion(obo:IAO_0000412 obo:FOODON_03530262 "http://langual.org")
 AnnotationAssertion(oboInOwl:hasDbXref obo:FOODON_03530262 "http://www.langual.org/langual_thesaurus.asp?termid=Z0262")
 AnnotationAssertion(rdfs:comment obo:FOODON_03530262 "LanguaL curation note: This term is for CLASSIFICATION ONLY; DO NOT USE term in indexing. Use a more precise narrower term."@en)
 AnnotationAssertion(rdfs:label obo:FOODON_03530262 "obsolete: food content range, other"@en)
@@ -15172,6 +14864,12 @@ AnnotationAssertion(owl:deprecated obo:hancestro_0034 "true"^^xsd:boolean)
 AnnotationAssertion(obo:IAO_0100001 obo:FOODON_00001155 obo:NCBITaxon_3654)
 AnnotationAssertion(rdfs:label obo:FOODON_00001155 "obsolete: watermelon plant"@en)
 AnnotationAssertion(owl:deprecated obo:FOODON_00001155 "true"^^xsd:boolean)
+AnnotationAssertion(obo:IAO_0100001 obo:FOODON_00001287 obo:NCBITaxon_4751)
+AnnotationAssertion(rdfs:label obo:FOODON_00001287 "obsolete: mushroom (whole organism)"@en)
+AnnotationAssertion(owl:deprecated obo:FOODON_00001287 "true"^^xsd:boolean)
+AnnotationAssertion(obo:IAO_0100001 obo:FOODON_00001303 obo:RO_0002160)
+AnnotationAssertion(rdfs:label obo:FOODON_00001303 "obsolete - has taxonomic identifier"@en)
+AnnotationAssertion(owl:deprecated obo:FOODON_00001303 "true"^^xsd:boolean)
 AnnotationAssertion(obo:IAO_0000231 obo:FOODON_00001689 "Unnecessary intermediate class."@en)
 AnnotationAssertion(obo:IAO_0100001 obo:FOODON_00001689 obo:FOODON_03310125)
 AnnotationAssertion(rdfs:label obo:FOODON_00001689 "obsolete: cassava flour food product"@en)
@@ -15401,11 +15099,13 @@ AnnotationAssertion(owl:deprecated obo:FOODON_03315918 "true"^^xsd:boolean)
 AnnotationAssertion(obo:IAO_0100001 obo:FOODON_03316329 "http://purl.obolibrary.org/obo/FOODON_03306409"^^xsd:anyURI)
 AnnotationAssertion(rdfs:label obo:FOODON_03316329 "obsolete: mayonnaise substitute"@en)
 AnnotationAssertion(owl:deprecated obo:FOODON_03316329 "true"^^xsd:boolean)
+AnnotationAssertion(obo:IAO_0100001 obo:FOODON_03316405 obo:CHEBI_25140)
+AnnotationAssertion(rdfs:label obo:FOODON_03316405 "obsolete: malto dextrin"@en)
+AnnotationAssertion(owl:deprecated obo:FOODON_03316405 "true"^^xsd:boolean)
 AnnotationAssertion(obo:IAO_0100001 obo:FOODON_03317415 obo:FOODON_00000072)
 AnnotationAssertion(rdfs:label obo:FOODON_03317415 "obsolete: gehakt"@en)
 AnnotationAssertion(owl:deprecated obo:FOODON_03317415 "true"^^xsd:boolean)
 AnnotationAssertion(obo:IAO_0000115 obo:FOODON_03401003 "Term not in GS1 2017: deprecated."@en)
-AnnotationAssertion(obo:IAO_0000412 obo:FOODON_03401003 "http://langual.org")
 AnnotationAssertion(oboInOwl:hasDbXref obo:FOODON_03401003 "http://www.langual.org/langual_thesaurus.asp?termid=A1003")
 AnnotationAssertion(rdfs:comment obo:FOODON_03401003 "LanguaL curation note: This term is only kept for backward compatibility. DO NOT USE for new indexing."@en)
 AnnotationAssertion(rdfs:label obo:FOODON_03401003 "obsolete: 50101700 - nuts/seeds - unprepared/unprocessed (gs1 gpc)"@en)
@@ -15427,7 +15127,6 @@ AnnotationAssertion(owl:deprecated obo:FOODON_03411252 "true"^^xsd:boolean)
 AnnotationAssertion(obo:IAO_0100001 obo:FOODON_03411277 obo:NCBITaxon_40922)
 AnnotationAssertion(rdfs:label obo:FOODON_03411277 "obsolete: dill plant"@en)
 AnnotationAssertion(owl:deprecated obo:FOODON_03411277 "true"^^xsd:boolean)
-AnnotationAssertion(obo:IAO_0000412 obo:FOODON_03411282 "http://langual.org")
 AnnotationAssertion(obo:IAO_0100001 obo:FOODON_03411282 obo:NCBITaxon_4045)
 AnnotationAssertion(rdfs:label obo:FOODON_03411282 "obsolete: celery plant"@en)
 AnnotationAssertion(owl:deprecated obo:FOODON_03411282 "true"^^xsd:boolean)
@@ -15500,6 +15199,9 @@ AnnotationAssertion(owl:deprecated obo:FOODON_03412018 "true"^^xsd:boolean)
 AnnotationAssertion(obo:IAO_0100001 obo:FOODON_03412019 obo:NCBITaxon_371859)
 AnnotationAssertion(rdfs:label obo:FOODON_03412019 "obsolete: indian fig plant"@en)
 AnnotationAssertion(owl:deprecated obo:FOODON_03412019 "true"^^xsd:boolean)
+AnnotationAssertion(obo:IAO_0100001 obo:FOODON_03412034 obo:NCBITaxon_4890)
+AnnotationAssertion(rdfs:label obo:FOODON_03412034 "obsolete: ascomycetes"@en)
+AnnotationAssertion(owl:deprecated obo:FOODON_03412034 "true"^^xsd:boolean)
 AnnotationAssertion(obo:IAO_0100001 obo:FOODON_03412035 obo:NCBITaxon_5204)
 AnnotationAssertion(rdfs:label obo:FOODON_03412035 "obsolete: basidiomycetes"@en)
 AnnotationAssertion(owl:deprecated obo:FOODON_03412035 "true"^^xsd:boolean)
@@ -15597,6 +15299,9 @@ AnnotationAssertion(owl:deprecated obo:FOODON_03414949 "true"^^xsd:boolean)
 AnnotationAssertion(obo:IAO_0100001 obo:FOODON_03415146 obo:NCBITaxon_39388)
 AnnotationAssertion(rdfs:label obo:FOODON_03415146 "obsolete: mullein plant"@en)
 AnnotationAssertion(owl:deprecated obo:FOODON_03415146 "true"^^xsd:boolean)
+AnnotationAssertion(obo:IAO_0100001 obo:FOODON_03415178 obo:NCBITaxon_3627)
+AnnotationAssertion(rdfs:label obo:FOODON_03415178 "obsolete: kiwifruit plant (A. deliciosa)"@en)
+AnnotationAssertion(owl:deprecated obo:FOODON_03415178 "true"^^xsd:boolean)
 AnnotationAssertion(obo:IAO_0000114 obo:FOODON_03420103 obo:IAO_0000428)
 AnnotationAssertion(obo:IAO_0000115 obo:FOODON_03420103 "Edible flesh of any type of animal, including poultry and seafood. Excludes parts containing only animal fat, which is indexed under *FAT OR OIL* or under *FAT, TRIM*."@en)
 AnnotationAssertion(obo:IAO_0000412 obo:FOODON_03420103 <http://langual.org>)
@@ -15605,6 +15310,9 @@ AnnotationAssertion(owl:deprecated obo:FOODON_03420103 "true"^^xsd:boolean)
 AnnotationAssertion(oboInOwl:hasDbXref obo:FOODON_03420165 <http://www.langual.org/langual_thesaurus.asp?termid=C0165>)
 AnnotationAssertion(rdfs:label obo:FOODON_03420165 "obsolete: fruit or seed"@en)
 AnnotationAssertion(owl:deprecated obo:FOODON_03420165 "true"^^xsd:boolean)
+AnnotationAssertion(obo:IAO_0100001 obo:FOODON_03420203 obo:CHEBI_28017)
+AnnotationAssertion(rdfs:label obo:FOODON_03420203 "obsolete: starch"@en)
+AnnotationAssertion(owl:deprecated obo:FOODON_03420203 "true"^^xsd:boolean)
 AnnotationAssertion(obo:IAO_0100001 obo:FOODON_03420276 obo:PO_0009060)
 AnnotationAssertion(rdfs:label obo:FOODON_03420276 "obsolete: calyx"@en)
 AnnotationAssertion(owl:deprecated obo:FOODON_03420276 "true"^^xsd:boolean)
