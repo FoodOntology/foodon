@@ -54,7 +54,7 @@ TRUE	mammal	nutria		Myocastor coypus	NCBITaxon:10157	Rodentia
 TRUE	cephalopod	octopus		Octopus	FOODON:03411514	Cephalopoda		NCBI also has 'Octopus' with a broad synonym 'octopus'.	USDA		v2024-03-26
 TRUE	ratite	ostrich		Struthio camelus	NCBITaxon:8801	Aves			USDA		
 TRUE	avian animal	pheasant		Phasianus	NCBITaxon:9053	Aves		FoodOn also has a term 'pheasant', should we deprecate that?	USDA		
-TRUE	swine	pig	pork	Sus scrofa domesticus	NCBITaxon:9823	Suina			USDA		
+TRUE	swine	pig	pork	Sus scrofa domesticus	NCBITaxon:9825	Suina			USDA		
 TRUE	avian animal	pigeon		Columbidae	NCBITaxon:8930	Aves		FoodOn has a term 'pigeon'.	USDA		
 TRUE	porpoise family	porpoise		porpoise family	FOODON:03413364	Cetacea					
 TRUE	avian animal	poultry		poultry	FOODON:00004298	Aves					
