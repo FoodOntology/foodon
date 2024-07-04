@@ -390,6 +390,18 @@ HANCESTRO
 [Low level source term URIs]
 http://purl.obolibrary.org/obo/HANCESTRO_0004 # ancestry category
 includeAllChildren
+
+# Hancestro now imports these as a 2nd ontology
+http://purl.obolibrary.org/obo/AfPO_0000274 # Central African 
+http://purl.obolibrary.org/obo/AfPO_0000188 # Eastern African 
+http://purl.obolibrary.org/obo/AfPO_0000275 # Northern African 
+http://purl.obolibrary.org/obo/AfPO_0000276 # Southern African 
+# Sub-Saharan African 
+http://purl.obolibrary.org/obo/AfPO_0000277 # Western AfricanAFPO 
+
+
+
+
 http://purl.obolibrary.org/obo/HANCESTRO_0308 # HasCountryOfOrigin
 
 [Top level source term URIs and target direct superclass URIs]
