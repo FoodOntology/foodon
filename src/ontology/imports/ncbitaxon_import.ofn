@@ -10,6 +10,7 @@ Prefix(oboInOwl:=<http://www.geneontology.org/formats/oboInOwl#>)
 
 Ontology(<http://purl.obolibrary.org/obo/foodon/imports/ncbitaxon_import.ofn>
 
+Declaration(Class(obo:FOODON_03411458))
 Declaration(Class(obo:NCBITaxon_1000425))
 Declaration(Class(obo:NCBITaxon_1001333))
 Declaration(Class(obo:NCBITaxon_100186))
@@ -5230,7 +5231,7 @@ Declaration(AnnotationProperty(oboInOwl:hasExactSynonym))
 
 AnnotationAssertion(rdfs:label obo:IAO_0000412 "imported from"@en)
 
-# Annotation Property: oboInOwl:hasExactSynonym (has_exact_synonym)
+# Annotation Property: oboInOwl:hasExactSynonym (has exact synonym)
 
 AnnotationAssertion(rdfs:label oboInOwl:hasExactSynonym "has_exact_synonym")
 
@@ -14863,6 +14864,7 @@ AnnotationAssertion(oboInOwl:hasExactSynonym obo:NCBITaxon_223891 "brinjal")
 AnnotationAssertion(oboInOwl:hasExactSynonym obo:NCBITaxon_223891 "eggplant")
 AnnotationAssertion(oboInOwl:hasExactSynonym obo:NCBITaxon_223891 "yellow-fruit nightshade")
 AnnotationAssertion(rdfs:label obo:NCBITaxon_223891 "Solanum virginianum")
+SubClassOf(obo:NCBITaxon_223891 obo:FOODON_03411458)
 SubClassOf(obo:NCBITaxon_223891 obo:NCBITaxon_4107)
 
 # Class: obo:NCBITaxon_224270 (Diplectrum formosum)
