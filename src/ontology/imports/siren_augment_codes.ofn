@@ -12519,7 +12519,7 @@ AnnotationAssertion(rdfs:comment obo:FOODON_03301476 "SIREN DB annotation:
 * acidified FOODON:03460200
 * preservation by dehydration or drying FOODON:03470116"@en)
 
-# Class: obo:FOODON_03301477 (coffee bean (whole or ground))
+# Class: obo:FOODON_03301477 (coffee bean)
 
 AnnotationAssertion(rdfs:comment obo:FOODON_03301477 "SIREN DB annotation:
 * whole, natural shape FOODON:03430150
@@ -19126,7 +19126,7 @@ AnnotationAssertion(rdfs:comment obo:FOODON_03302625 "SIREN DB annotation:
 * fat removal process FOODON:03460161
 * preservation by dehydration or drying FOODON:03470116"@en)
 
-# Class: obo:FOODON_03302626 (yeast food product (dry, active))
+# Class: obo:FOODON_03302626 (yeast (fine, dry, active))
 
 AnnotationAssertion(rdfs:comment obo:FOODON_03302626 "SIREN DB annotation:
 * finely ground FOODON:03430106
@@ -38781,7 +38781,7 @@ AnnotationAssertion(rdfs:comment obo:FOODON_03306040 "SIREN DB annotation:
 * water removal process FOODON:03460138
 * preservation by dehydration or drying FOODON:03470116"@en)
 
-# Class: obo:FOODON_03306041 (yeast food product (dry))
+# Class: obo:FOODON_03306041 (yeast (fine, dry))
 
 AnnotationAssertion(rdfs:comment obo:FOODON_03306041 "SIREN DB annotation:
 * finely ground FOODON:03430106
@@ -49937,7 +49937,7 @@ AnnotationAssertion(rdfs:comment obo:FOODON_03308128 "SIREN DB annotation:
 * not heat-treated FOODON:03440003
 * whole animal or most parts used FOODON:03420173"@en)
 
-# Class: obo:FOODON_03308129 (mussel in shell (raw))
+# Class: obo:FOODON_03308129 (mussel (in shell, raw))
 
 AnnotationAssertion(rdfs:comment obo:FOODON_03308129 "SIREN DB annotation:
 * whole, natural shape FOODON:03430150
@@ -55700,7 +55700,7 @@ AnnotationAssertion(rdfs:comment obo:FOODON_03309388 "SIREN DB annotation:
 * not heat-treated FOODON:03440003
 * root, tuber or bulb FOODON:03420238"@en)
 
-# Class: obo:FOODON_03309389 (carrot root ((whole or pieces), raw))
+# Class: obo:FOODON_03309389 (carrot root (whole or pieces, raw))
 
 AnnotationAssertion(rdfs:comment obo:FOODON_03309389 "Note - curators are implementing  \"whole or pieces\" rather than \"whole and pieces\".
 SIREN DB annotation:
@@ -58631,7 +58631,7 @@ AnnotationAssertion(rdfs:comment obo:FOODON_03309943 "SIREN DB annotation:
 * water removal process FOODON:03460138
 * peservation by heat drying FOODON:03470117"@en)
 
-# Class: obo:FOODON_03309946 (hard red spring kernel)
+# Class: obo:FOODON_03309946 (hard red spring wheat kernel)
 
 AnnotationAssertion(rdfs:comment obo:FOODON_03309946 "SIREN DB annotation:
 * whole, natural shape FOODON:03430150
@@ -63137,7 +63137,7 @@ AnnotationAssertion(rdfs:comment obo:FOODON_03310890 "SIREN DB annotation:
 * fruit part FOODON:03420167
 * ingredient: sweetener added FOODON:03460202"@en)
 
-# Class: obo:FOODON_03310891 (yeast food product (dry, inactive))
+# Class: obo:FOODON_03310891 (yeast (fine, dry, inactive))
 
 AnnotationAssertion(rdfs:comment obo:FOODON_03310891 "SIREN DB annotation:
 * finely ground FOODON:03430106
@@ -68023,7 +68023,7 @@ AnnotationAssertion(rdfs:comment obo:FOODON_03311672 "SIREN DB annotation:
 * solid FOODON:03430151
 * root, tuber or bulb FOODON:03420238"@en)
 
-# Class: obo:FOODON_03311673 (carrot (peeled))
+# Class: obo:FOODON_03311673 (carrot root (peeled))
 
 AnnotationAssertion(rdfs:comment obo:FOODON_03311673 "SIREN DB annotation:
 * solid FOODON:03430151
@@ -69404,7 +69404,7 @@ AnnotationAssertion(rdfs:comment obo:FOODON_03315024 "SIREN DB annotation:
 * water removal process FOODON:03460138
 * preservation by dehydration or drying FOODON:03470116"@en)
 
-# Class: obo:FOODON_03315025 (obsolete: yeast (dry))
+# Class: obo:FOODON_03315025 (yeast (fresh))
 
 AnnotationAssertion(rdfs:comment obo:FOODON_03315025 "SIREN DB annotation:
 * not heat-treated FOODON:03440003
@@ -74037,11 +74037,6 @@ AnnotationAssertion(rdfs:comment obo:FOODON_03316044 "SIREN DB annotation:
 
 AnnotationAssertion(rdfs:comment obo:FOODON_03316045 "SIREN DB annotation:
 * semisolid FOODON:03430144
-* fat or oil FOODON:03420190"@en)
-
-# Class: obo:FOODON_03316046 (poultry fat)
-
-AnnotationAssertion(rdfs:comment obo:FOODON_03316046 "SIREN DB annotation:
 * fat or oil FOODON:03420190"@en)
 
 # Class: obo:FOODON_03316047 (sheep fat)
