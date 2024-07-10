@@ -10,7 +10,6 @@ Prefix(oboInOwl:=<http://www.geneontology.org/formats/oboInOwl#>)
 
 Ontology(<http://purl.obolibrary.org/obo/foodon/imports/ncbitaxon_import.ofn>
 
-Declaration(Class(obo:FOODON_03411458))
 Declaration(Class(obo:NCBITaxon_1000425))
 Declaration(Class(obo:NCBITaxon_1001333))
 Declaration(Class(obo:NCBITaxon_100186))
@@ -500,6 +499,7 @@ Declaration(Class(obo:NCBITaxon_13426))
 Declaration(Class(obo:NCBITaxon_13427))
 Declaration(Class(obo:NCBITaxon_13428))
 Declaration(Class(obo:NCBITaxon_13432))
+Declaration(Class(obo:NCBITaxon_13442))
 Declaration(Class(obo:NCBITaxon_13443))
 Declaration(Class(obo:NCBITaxon_134471))
 Declaration(Class(obo:NCBITaxon_13450))
@@ -543,6 +543,7 @@ Declaration(Class(obo:NCBITaxon_136217))
 Declaration(Class(obo:NCBITaxon_136225))
 Declaration(Class(obo:NCBITaxon_1365671))
 Declaration(Class(obo:NCBITaxon_13662))
+Declaration(Class(obo:NCBITaxon_136672))
 Declaration(Class(obo:NCBITaxon_136690))
 Declaration(Class(obo:NCBITaxon_1367090))
 Declaration(Class(obo:NCBITaxon_13675))
@@ -1217,6 +1218,7 @@ Declaration(Class(obo:NCBITaxon_196075))
 Declaration(Class(obo:NCBITaxon_1963083))
 Declaration(Class(obo:NCBITaxon_196674))
 Declaration(Class(obo:NCBITaxon_196770))
+Declaration(Class(obo:NCBITaxon_1968271))
 Declaration(Class(obo:NCBITaxon_1968429))
 Declaration(Class(obo:NCBITaxon_197206))
 Declaration(Class(obo:NCBITaxon_197265))
@@ -1237,6 +1239,7 @@ Declaration(Class(obo:NCBITaxon_1983395))
 Declaration(Class(obo:NCBITaxon_198537))
 Declaration(Class(obo:NCBITaxon_1986967))
 Declaration(Class(obo:NCBITaxon_198777))
+Declaration(Class(obo:NCBITaxon_199163))
 Declaration(Class(obo:NCBITaxon_19944))
 Declaration(Class(obo:NCBITaxon_19952))
 Declaration(Class(obo:NCBITaxon_19953))
@@ -1863,6 +1866,7 @@ Declaration(Class(obo:NCBITaxon_2870))
 Declaration(Class(obo:NCBITaxon_28700))
 Declaration(Class(obo:NCBITaxon_28701))
 Declaration(Class(obo:NCBITaxon_28702))
+Declaration(Class(obo:NCBITaxon_2870819))
 Declaration(Class(obo:NCBITaxon_28793))
 Declaration(Class(obo:NCBITaxon_28801))
 Declaration(Class(obo:NCBITaxon_28802))
@@ -3013,6 +3017,7 @@ Declaration(Class(obo:NCBITaxon_41768))
 Declaration(Class(obo:NCBITaxon_41773))
 Declaration(Class(obo:NCBITaxon_417944))
 Declaration(Class(obo:NCBITaxon_4180))
+Declaration(Class(obo:NCBITaxon_4182))
 Declaration(Class(obo:NCBITaxon_418454))
 Declaration(Class(obo:NCBITaxon_41871))
 Declaration(Class(obo:NCBITaxon_419338))
@@ -3415,6 +3420,7 @@ Declaration(Class(obo:NCBITaxon_482947))
 Declaration(Class(obo:NCBITaxon_483417))
 Declaration(Class(obo:NCBITaxon_483424))
 Declaration(Class(obo:NCBITaxon_483748))
+Declaration(Class(obo:NCBITaxon_483749))
 Declaration(Class(obo:NCBITaxon_48399))
 Declaration(Class(obo:NCBITaxon_48415))
 Declaration(Class(obo:NCBITaxon_48416))
@@ -3749,6 +3755,7 @@ Declaration(Class(obo:NCBITaxon_57192))
 Declaration(Class(obo:NCBITaxon_57197))
 Declaration(Class(obo:NCBITaxon_57200))
 Declaration(Class(obo:NCBITaxon_57201))
+Declaration(Class(obo:NCBITaxon_57538))
 Declaration(Class(obo:NCBITaxon_57576))
 Declaration(Class(obo:NCBITaxon_57577))
 Declaration(Class(obo:NCBITaxon_576177))
@@ -5231,7 +5238,7 @@ Declaration(AnnotationProperty(oboInOwl:hasExactSynonym))
 
 AnnotationAssertion(rdfs:label obo:IAO_0000412 "imported from"@en)
 
-# Annotation Property: oboInOwl:hasExactSynonym (has exact synonym)
+# Annotation Property: oboInOwl:hasExactSynonym (has_exact_synonym)
 
 AnnotationAssertion(rdfs:label oboInOwl:hasExactSynonym "has_exact_synonym")
 
@@ -8557,13 +8564,20 @@ AnnotationAssertion(obo:IAO_0000412 obo:NCBITaxon_13432 obo:ncbitaxon.owl)
 AnnotationAssertion(rdfs:label obo:NCBITaxon_13432 "Clerodendrum")
 SubClassOf(obo:NCBITaxon_13432 obo:NCBITaxon_4136)
 
+# Class: obo:NCBITaxon_13442 (Coffea)
+
+AnnotationAssertion(obo:IAO_0000412 obo:NCBITaxon_13442 obo:ncbitaxon.owl)
+AnnotationAssertion(oboInOwl:hasExactSynonym obo:NCBITaxon_13442 "coffee")
+AnnotationAssertion(rdfs:label obo:NCBITaxon_13442 "Coffea")
+SubClassOf(obo:NCBITaxon_13442 obo:NCBITaxon_1968429)
+
 # Class: obo:NCBITaxon_13443 (Coffea arabica)
 
 AnnotationAssertion(obo:IAO_0000412 obo:NCBITaxon_13443 obo:ncbitaxon.owl)
 AnnotationAssertion(oboInOwl:hasExactSynonym obo:NCBITaxon_13443 "arabica coffee")
 AnnotationAssertion(oboInOwl:hasExactSynonym obo:NCBITaxon_13443 "coffee")
 AnnotationAssertion(rdfs:label obo:NCBITaxon_13443 "Coffea arabica")
-SubClassOf(obo:NCBITaxon_13443 obo:NCBITaxon_1968429)
+SubClassOf(obo:NCBITaxon_13443 obo:NCBITaxon_13442)
 
 # Class: obo:NCBITaxon_134471 (Stramonita haemastoma)
 
@@ -8856,6 +8870,12 @@ AnnotationAssertion(obo:IAO_0000412 obo:NCBITaxon_13662 obo:ncbitaxon.owl)
 AnnotationAssertion(oboInOwl:hasExactSynonym obo:NCBITaxon_13662 "oilfish")
 AnnotationAssertion(rdfs:label obo:NCBITaxon_13662 "Ruvettus pretiosus")
 SubClassOf(obo:NCBITaxon_13662 obo:NCBITaxon_27767)
+
+# Class: obo:NCBITaxon_136672 (Alibertia patinoi)
+
+AnnotationAssertion(obo:IAO_0000412 obo:NCBITaxon_136672 obo:ncbitaxon.owl)
+AnnotationAssertion(rdfs:label obo:NCBITaxon_136672 "Alibertia patinoi")
+SubClassOf(obo:NCBITaxon_136672 obo:NCBITaxon_1968271)
 
 # Class: obo:NCBITaxon_136690 (Galatheidae)
 
@@ -11346,7 +11366,7 @@ SubClassOf(obo:NCBITaxon_169618 obo:NCBITaxon_24966)
 
 AnnotationAssertion(obo:IAO_0000412 obo:NCBITaxon_169642 obo:ncbitaxon.owl)
 AnnotationAssertion(rdfs:label obo:NCBITaxon_169642 "Gardenieae")
-SubClassOf(obo:NCBITaxon_169642 obo:NCBITaxon_1968429)
+SubClassOf(obo:NCBITaxon_169642 obo:NCBITaxon_1968271)
 
 # Class: obo:NCBITaxon_169655 (Morindeae)
 
@@ -13398,6 +13418,12 @@ AnnotationAssertion(oboInOwl:hasExactSynonym obo:NCBITaxon_196770 "shorthead red
 AnnotationAssertion(rdfs:label obo:NCBITaxon_196770 "Moxostoma macrolepidotum")
 SubClassOf(obo:NCBITaxon_196770 obo:NCBITaxon_7968)
 
+# Class: obo:NCBITaxon_1968271 (Gardenieae - Pavetteae clade)
+
+AnnotationAssertion(obo:IAO_0000412 obo:NCBITaxon_1968271 obo:ncbitaxon.owl)
+AnnotationAssertion(rdfs:label obo:NCBITaxon_1968271 "Gardenieae - Pavetteae clade")
+SubClassOf(obo:NCBITaxon_1968271 obo:NCBITaxon_1968429)
+
 # Class: obo:NCBITaxon_1968429 (Gardenieae complex)
 
 AnnotationAssertion(obo:IAO_0000412 obo:NCBITaxon_1968429 obo:ncbitaxon.owl)
@@ -13526,6 +13552,13 @@ AnnotationAssertion(oboInOwl:hasExactSynonym obo:NCBITaxon_198777 "mamey")
 AnnotationAssertion(oboInOwl:hasExactSynonym obo:NCBITaxon_198777 "mammee-apple")
 AnnotationAssertion(rdfs:label obo:NCBITaxon_198777 "Mammea americana")
 SubClassOf(obo:NCBITaxon_198777 obo:NCBITaxon_180118)
+
+# Class: obo:NCBITaxon_199163 (Inga edulis)
+
+AnnotationAssertion(obo:IAO_0000412 obo:NCBITaxon_199163 obo:ncbitaxon.owl)
+AnnotationAssertion(oboInOwl:hasExactSynonym obo:NCBITaxon_199163 "ice cream bean")
+AnnotationAssertion(rdfs:label obo:NCBITaxon_199163 "Inga edulis")
+SubClassOf(obo:NCBITaxon_199163 obo:NCBITaxon_3807)
 
 # Class: obo:NCBITaxon_19944 (Valerianaceae)
 
@@ -14864,7 +14897,6 @@ AnnotationAssertion(oboInOwl:hasExactSynonym obo:NCBITaxon_223891 "brinjal")
 AnnotationAssertion(oboInOwl:hasExactSynonym obo:NCBITaxon_223891 "eggplant")
 AnnotationAssertion(oboInOwl:hasExactSynonym obo:NCBITaxon_223891 "yellow-fruit nightshade")
 AnnotationAssertion(rdfs:label obo:NCBITaxon_223891 "Solanum virginianum")
-SubClassOf(obo:NCBITaxon_223891 obo:FOODON_03411458)
 SubClassOf(obo:NCBITaxon_223891 obo:NCBITaxon_4107)
 
 # Class: obo:NCBITaxon_224270 (Diplectrum formosum)
@@ -17728,6 +17760,12 @@ SubClassOf(obo:NCBITaxon_28701 obo:NCBITaxon_28700)
 AnnotationAssertion(obo:IAO_0000412 obo:NCBITaxon_28702 obo:ncbitaxon.owl)
 AnnotationAssertion(rdfs:label obo:NCBITaxon_28702 "Fratercula corniculata")
 SubClassOf(obo:NCBITaxon_28702 obo:NCBITaxon_28700)
+
+# Class: obo:NCBITaxon_2870819 (Vaccinium caesariense)
+
+AnnotationAssertion(obo:IAO_0000412 obo:NCBITaxon_2870819 obo:ncbitaxon.owl)
+AnnotationAssertion(rdfs:label obo:NCBITaxon_2870819 "Vaccinium caesariense")
+SubClassOf(obo:NCBITaxon_2870819 obo:NCBITaxon_13749)
 
 # Class: obo:NCBITaxon_28793 (Notropis)
 
@@ -25667,6 +25705,17 @@ AnnotationAssertion(oboInOwl:hasExactSynonym obo:NCBITaxon_4180 "sesame family")
 AnnotationAssertion(rdfs:label obo:NCBITaxon_4180 "Pedaliaceae")
 SubClassOf(obo:NCBITaxon_4180 obo:NCBITaxon_4143)
 
+# Class: obo:NCBITaxon_4182 (Sesamum indicum)
+
+AnnotationAssertion(obo:IAO_0000412 obo:NCBITaxon_4182 obo:ncbitaxon.owl)
+AnnotationAssertion(oboInOwl:hasExactSynonym obo:NCBITaxon_4182 "beniseed")
+AnnotationAssertion(oboInOwl:hasExactSynonym obo:NCBITaxon_4182 "gingelly")
+AnnotationAssertion(oboInOwl:hasExactSynonym obo:NCBITaxon_4182 "hu ma")
+AnnotationAssertion(oboInOwl:hasExactSynonym obo:NCBITaxon_4182 "koba")
+AnnotationAssertion(oboInOwl:hasExactSynonym obo:NCBITaxon_4182 "sesame")
+AnnotationAssertion(rdfs:label obo:NCBITaxon_4182 "Sesamum indicum")
+SubClassOf(obo:NCBITaxon_4182 obo:NCBITaxon_4180)
+
 # Class: obo:NCBITaxon_418454 (Protosalanx hyalocranius)
 
 AnnotationAssertion(obo:IAO_0000412 obo:NCBITaxon_418454 obo:ncbitaxon.owl)
@@ -28455,6 +28504,12 @@ AnnotationAssertion(oboInOwl:hasExactSynonym obo:NCBITaxon_483748 "loganberry")
 AnnotationAssertion(rdfs:label obo:NCBITaxon_483748 "Rubus x loganobaccus")
 SubClassOf(obo:NCBITaxon_483748 obo:NCBITaxon_23216)
 
+# Class: obo:NCBITaxon_483749 (Passiflora tarminiana)
+
+AnnotationAssertion(obo:IAO_0000412 obo:NCBITaxon_483749 obo:ncbitaxon.owl)
+AnnotationAssertion(rdfs:label obo:NCBITaxon_483749 "Passiflora tarminiana")
+SubClassOf(obo:NCBITaxon_483749 obo:NCBITaxon_3684)
+
 # Class: obo:NCBITaxon_48399 (Crocodylus acutus)
 
 AnnotationAssertion(obo:IAO_0000412 obo:NCBITaxon_48399 obo:ncbitaxon.owl)
@@ -30691,6 +30746,12 @@ SubClassOf(obo:NCBITaxon_57200 obo:NCBITaxon_57197)
 AnnotationAssertion(obo:IAO_0000412 obo:NCBITaxon_57201 obo:ncbitaxon.owl)
 AnnotationAssertion(rdfs:label obo:NCBITaxon_57201 "Cantharellaceae")
 SubClassOf(obo:NCBITaxon_57201 obo:NCBITaxon_36064)
+
+# Class: obo:NCBITaxon_57538 (Vaccinium meridionale)
+
+AnnotationAssertion(obo:IAO_0000412 obo:NCBITaxon_57538 obo:ncbitaxon.owl)
+AnnotationAssertion(rdfs:label obo:NCBITaxon_57538 "Vaccinium meridionale")
+SubClassOf(obo:NCBITaxon_57538 obo:NCBITaxon_13749)
 
 # Class: obo:NCBITaxon_57576 (Hedysarum alpinum)
 
