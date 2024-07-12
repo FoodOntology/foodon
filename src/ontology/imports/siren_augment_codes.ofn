@@ -12303,13 +12303,6 @@ AnnotationAssertion(rdfs:comment obo:FOODON_03301438 "SIREN DB annotation:
 * water removal process FOODON:03460138
 * preservation by dehydration or drying FOODON:03470116"@en)
 
-# Class: obo:FOODON_03301439 (chicken egg yolk (raw))
-
-AnnotationAssertion(rdfs:comment obo:FOODON_03301439 "SIREN DB annotation:
-* liquid, high viscosity, with no visible particles FOODON:03430139
-* not heat-treated FOODON:03440003
-* egg yolk UBERON:0007378"@en)
-
 # Class: obo:FOODON_03301440 (mayonnaise)
 
 AnnotationAssertion(rdfs:comment obo:FOODON_03301440 "SIREN DB annotation:
@@ -59483,13 +59476,6 @@ AnnotationAssertion(rdfs:comment obo:FOODON_03310154 "SIREN DB annotation:
 * not heat-treated FOODON:03440003
 * skeletal meat part FOODON:03420175"@en)
 
-# Class: obo:FOODON_03310155 (chicken egg white (raw))
-
-AnnotationAssertion(rdfs:comment obo:FOODON_03310155 "SIREN DB annotation:
-* liquid, high viscosity, with no visible particles FOODON:03430139
-* not heat-treated FOODON:03440003
-* albumen UBERON:0008944"@en)
-
 # Class: obo:FOODON_03310158 (timothy fodder silage)
 
 AnnotationAssertion(rdfs:comment obo:FOODON_03310158 "SIREN DB annotation:
@@ -73597,7 +73583,7 @@ AnnotationAssertion(rdfs:comment obo:FOODON_03315957 "SIREN DB annotation:
 AnnotationAssertion(rdfs:comment obo:FOODON_03315958 "SIREN DB annotation:
 * part of plant FOODON:03420174"@en)
 
-# Class: obo:FOODON_03315959 (egg-based dessert energy reduced)
+# Class: obo:FOODON_03315959 (egg-based dessert (energy reduced))
 
 AnnotationAssertion(rdfs:comment obo:FOODON_03315959 "SIREN DB annotation:
 * egg FOODON:03420194
@@ -79230,7 +79216,7 @@ AnnotationAssertion(rdfs:comment obo:FOODON_03317044 "SIREN DB annotation:
 * part of plant FOODON:03420174
 * no sugars added claim or use FOODON:03510091"@en)
 
-# Class: obo:FOODON_03317045 (egg-based dessert with no added sugar)
+# Class: obo:FOODON_03317045 (egg-based dessert (with no added sugar))
 
 AnnotationAssertion(rdfs:comment obo:FOODON_03317045 "SIREN DB annotation:
 * egg FOODON:03420194
