@@ -1,0 +1,1291 @@
+<?xml version="1.0"?>
+<rdf:RDF xmlns="http://purl.obolibrary.org/obo/foodon/imports/ons_import.ofn#"
+     xml:base="http://purl.obolibrary.org/obo/foodon/imports/ons_import.ofn"
+     xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+     xmlns:owl="http://www.w3.org/2002/07/owl#"
+     xmlns:xsd="http://www.w3.org/2001/XMLSchema#"
+     xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
+     xmlns:obo="http://purl.obolibrary.org/obo/">
+    <owl:Ontology rdf:about="http://purl.obolibrary.org/obo/foodon/imports/ons_import.ofn"/>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Annotation properties
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    <owl:AnnotationProperty rdf:about="http://www.w3.org/2002/07/owl#deprecated"/>
+    <owl:AnnotationProperty rdf:about="http://purl.obolibrary.org/obo/IAO_0000119">
+        <rdfs:label>definition_source</rdfs:label>
+        <rdfs:label>definition source</rdfs:label>
+        <rdfs:label xml:lang="en">definition source</rdfs:label>
+        <obo:IAO_0000119>Discussion on obo-discuss mailing-list, see http://bit.ly/hgm99w</obo:IAO_0000119>
+        <obo:IAO_0000119 xml:lang="en">Discussion on obo-discuss mailing-list, see http://bit.ly/hgm99w</obo:IAO_0000119>
+        <obo:IAO_0000115 xml:lang="en">Formal citation, e.g. identifier in external database to indicate / attribute source(s) for the definition. Free text indicate / attribute source(s) for the definition. EXAMPLE: Author Name, URI, MeSH Term C04, PUBMED ID, Wiki uri on 31.01.2007</obo:IAO_0000115>
+        <obo:IAO_0000119 xml:lang="en">GROUP:OBI:&lt;http://purl.obolibrary.org/obo/obi&gt;</obo:IAO_0000119>
+        <obo:IAO_0000111 xml:lang="en">definition source</obo:IAO_0000111>
+        <obo:IAO_0000115 xml:lang="en">formal citation, e.g. identifier in external database to indicate / attribute source(s) for the definition. Free text indicate / attribute source(s) for the definition. EXAMPLE: Author Name, URI, MeSH Term C04, PUBMED ID, Wiki uri on 31.01.2007</obo:IAO_0000115>
+        <obo:IAO_0000114 rdf:resource="http://purl.obolibrary.org/obo/IAO_0000122"/>
+    </owl:AnnotationProperty>
+    <owl:AnnotationProperty rdf:about="http://purl.obolibrary.org/obo/IAO_0000114">
+        <rdfs:label>has curation status</rdfs:label>
+        <rdfs:label xml:lang="en">has curation status</rdfs:label>
+        <obo:IAO_0000119 xml:lang="en">OBI_0000281</obo:IAO_0000119>
+        <obo:IAO_0000111 xml:lang="en">has curation status</obo:IAO_0000111>
+    </owl:AnnotationProperty>
+    <owl:AnnotationProperty rdf:about="http://purl.obolibrary.org/obo/IAO_0100001">
+        <rdfs:label>term replaced by</rdfs:label>
+        <rdfs:label xml:lang="en">term replaced by</rdfs:label>
+        <obo:IAO_0000119 xml:lang="en">Person:Alan Ruttenberg</obo:IAO_0000119>
+        <obo:IAO_0000115 xml:lang="en">Use on obsolete terms, relating the term to another term that can be used as a substitute</obo:IAO_0000115>
+        <obo:IAO_0000111 xml:lang="en">term replaced by</obo:IAO_0000111>
+        <obo:IAO_0000114 rdf:resource="http://purl.obolibrary.org/obo/IAO_0000125"/>
+    </owl:AnnotationProperty>
+    <owl:AnnotationProperty rdf:about="http://purl.obolibrary.org/obo/IAO_0000412">
+        <rdfs:label xml:lang="en">imported from</rdfs:label>
+    </owl:AnnotationProperty>
+    <owl:AnnotationProperty rdf:about="http://purl.obolibrary.org/obo/IAO_0000115">
+        <rdfs:label>textual definition</rdfs:label>
+        <rdfs:label>definition</rdfs:label>
+        <rdfs:label xml:lang="en">definition</rdfs:label>
+        <obo:IAO_0000115>English language definitions of what NCI means by the concept. These are limited to 1024 characters. They may also include information about the definition&#39;s source and attribution in a form that can easily be interpreted by software.</obo:IAO_0000115>
+        <obo:IAO_0000115>A property representing the English language definitions of what NCI means by the concept. They may also include information about the definition&#39;s source and attribution in a form that can easily be interpreted by software.</obo:IAO_0000115>
+        <obo:IAO_0000111>definition</obo:IAO_0000111>
+        <obo:IAO_0000119 xml:lang="en">GROUP:OBI:&lt;http://purl.obolibrary.org/obo/obi&gt;</obo:IAO_0000119>
+        <obo:IAO_0000115 xml:lang="en">The official OBI definition, explaining the meaning of a class or property. Shall be Aristotelian, formalized and normalized. Can be augmented with colloquial definitions.</obo:IAO_0000115>
+        <obo:IAO_0000111>textual definition</obo:IAO_0000111>
+        <obo:IAO_0000115 xml:lang="en">The official definition, explaining the meaning of a class or property. Shall be Aristotelian, formalized and normalized. Can be augmented with colloquial definitions.</obo:IAO_0000115>
+        <obo:IAO_0000111 xml:lang="en">definition</obo:IAO_0000111>
+        <obo:IAO_0000114 rdf:resource="http://purl.obolibrary.org/obo/IAO_0000122"/>
+    </owl:AnnotationProperty>
+    <owl:AnnotationProperty rdf:about="http://www.w3.org/2000/01/rdf-schema#label">
+        <rdfs:label>label</rdfs:label>
+        <rdfs:label xml:lang="en">label</rdfs:label>
+        <obo:IAO_0000111>label</obo:IAO_0000111>
+        <obo:IAO_0000111 xml:lang="en">label</obo:IAO_0000111>
+    </owl:AnnotationProperty>
+    <owl:AnnotationProperty rdf:about="http://purl.obolibrary.org/obo/IAO_0000111">
+        <rdfs:label>editor preferred label</rdfs:label>
+        <rdfs:label>editor preferred term~editor preferred label</rdfs:label>
+        <rdfs:label>editor preferred term</rdfs:label>
+        <rdfs:label xml:lang="en">editor preferred label</rdfs:label>
+        <rdfs:label xml:lang="en">editor preferred term</rdfs:label>
+        <obo:IAO_0000111>editor preferred term~editor preferred label</obo:IAO_0000111>
+        <obo:IAO_0000111>editor preferred term</obo:IAO_0000111>
+        <obo:IAO_0000111>editor preferred label</obo:IAO_0000111>
+        <obo:IAO_0000119 xml:lang="en">GROUP:OBI:&lt;http://purl.obolibrary.org/obo/obi&gt;</obo:IAO_0000119>
+        <obo:IAO_0000115 xml:lang="en">The concise, meaningful, and human-friendly name for a class or property preferred by the ontology developers. (US-English)</obo:IAO_0000115>
+        <obo:IAO_0000111 xml:lang="en">editor preferred label</obo:IAO_0000111>
+        <obo:IAO_0000111 xml:lang="en">editor preferred term</obo:IAO_0000111>
+        <obo:IAO_0000114 rdf:resource="http://purl.obolibrary.org/obo/IAO_0000122"/>
+    </owl:AnnotationProperty>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Datatypes
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Classes
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/BFO_0000015 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/BFO_0000015">
+        <rdfs:label>process</rdfs:label>
+        <rdfs:label xml:lang="en">process</rdfs:label>
+        <obo:IAO_0000115>p is a process = Def. p is an occurrent that has temporal proper parts and for some time t, p s-depends_on some material entity at t. (axiom label in BFO2 Reference: [083-003])</obo:IAO_0000115>
+        <obo:IAO_0000115>An occurrent that has temporal proper parts and for some time t, p s-depends_on some material entity at t.</obo:IAO_0000115>
+        <obo:IAO_0000115 xml:lang="en">An occurrent that has temporal proper parts and for some time t, p s-depends_on some material entity at t.</obo:IAO_0000115>
+        <obo:IAO_0000115 xml:lang="en">p is a process = Def. p is an occurrent that has temporal proper parts and for some time t, p s-depends_on some material entity at t. (axiom label in BFO2 Reference: [083-003])</obo:IAO_0000115>
+        <obo:IAO_0000412 rdf:resource="http://purl.obolibrary.org/obo/ons.owl"/>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/BFO_0000020 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/BFO_0000020">
+        <rdfs:label>specifically dependent continuant</rdfs:label>
+        <rdfs:label xml:lang="en">characteristic</rdfs:label>
+        <rdfs:label>material property</rdfs:label>
+        <rdfs:label xml:lang="en">specifically dependent continuant</rdfs:label>
+        <obo:IAO_0000115>A continuant that inheres in or is borne by other entities. Every instance of A requires some specific instance of B which must always be the same.</obo:IAO_0000115>
+        <obo:IAO_0000115 xml:lang="en">A continuant that inheres in or is borne by other entities. Every instance of A requires some specific instance of B which must always be the same.</obo:IAO_0000115>
+        <obo:IAO_0000115>b is a relational specifically dependent continuant = Def. b is a specifically dependent continuant and there are n &amp;gt; 1 independent continuants c1, … cn which are not spatial regions are such that for all 1  i &amp;lt; j  n, ci  and cj share no common parts, are such that for each 1  i  n, b s-depends_on ci at every time t during the course of b’s existence (axiom label in BFO2 Reference: [131-004])</obo:IAO_0000115>
+        <obo:IAO_0000115 xml:lang="en">b is a relational specifically dependent continuant = Def. b is a specifically dependent continuant and there are n &amp;gt; 1 independent continuants c1, … cn which are not spatial regions are such that for all 1  i &amp;lt; j  n, ci  and cj share no common parts, are such that for each 1  i  n, b s-depends_on ci at every time t during the course of b’s existence (axiom label in BFO2 Reference: [131-004])</obo:IAO_0000115>
+        <obo:IAO_0000115>b is a specifically dependent continuant = Def. b is a continuant &amp; there is some independent continuant c which is not a spatial region and which is such that b s-depends_on c at every time t during the course of b’s existence. (axiom label in BFO2 Reference: [050-003])</obo:IAO_0000115>
+        <obo:IAO_0000115 xml:lang="en">b is a specifically dependent continuant = Def. b is a continuant &amp; there is some independent continuant c which is not a spatial region and which is such that b s-depends_on c at every time t during the course of b’s existence. (axiom label in BFO2 Reference: [050-003])</obo:IAO_0000115>
+        <obo:IAO_0000111 xml:lang="en">specifically dependent continuant</obo:IAO_0000111>
+        <obo:IAO_0000412 rdf:resource="http://purl.obolibrary.org/obo/ons.owl"/>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/BFO_0000027 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/BFO_0000027">
+        <rdfs:label xml:lang="en">object aggregate</rdfs:label>
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/BFO_0000040"/>
+        <obo:IAO_0000119>ISBN:978-3-938793-98-5pp124-158#Thomas Bittner and Barry Smith, &#39;A Theory of Granular Partitions&#39;, in K. Munn and B. Smith (eds.), Applied Ontology: An Introduction, Frankfurt/Lancaster: ontos, 2008, 125-158.</obo:IAO_0000119>
+        <obo:IAO_0000412 rdf:resource="http://purl.obolibrary.org/obo/ons.owl"/>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/BFO_0000040 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/BFO_0000040">
+        <rdfs:label>material entity</rdfs:label>
+        <rdfs:label xml:lang="en">material entity</rdfs:label>
+        <obo:IAO_0000115>An independent continuant that is spatially extended whose identity is independent of that of other entities and can be maintained through time.</obo:IAO_0000115>
+        <obo:IAO_0000115 xml:lang="en">An independent continuant that is spatially extended whose identity is independent of that of other entities and can be maintained through time.</obo:IAO_0000115>
+        <obo:IAO_0000111 xml:lang="en">material entity</obo:IAO_0000111>
+        <obo:IAO_0000412 rdf:resource="http://purl.obolibrary.org/obo/ons.owl"/>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/BFO_0000141 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/BFO_0000141">
+        <rdfs:label xml:lang="en">immaterial entity</rdfs:label>
+        <obo:IAO_0000412 rdf:resource="http://purl.obolibrary.org/obo/ons.owl"/>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/IAO_0000027 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/IAO_0000027">
+        <rdfs:label xml:lang="en">data item</rdfs:label>
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/IAO_0000030"/>
+        <obo:IAO_0000115 xml:lang="en">An information content entity that is intended to be a truthful statement about something (modulo, e.g., measurement precision or other systematic errors) and is constructed/acquired by a method which reliably tends to produce (approximately) truthful statements.</obo:IAO_0000115>
+        <obo:IAO_0000111 xml:lang="en">data item</obo:IAO_0000111>
+        <obo:IAO_0000114 rdf:resource="http://purl.obolibrary.org/obo/IAO_0000125"/>
+        <obo:IAO_0000412 rdf:resource="http://purl.obolibrary.org/obo/ons.owl"/>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/IAO_0000030 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/IAO_0000030">
+        <rdfs:label>information entity</rdfs:label>
+        <rdfs:label>information</rdfs:label>
+        <rdfs:label xml:lang="en">information content entity</rdfs:label>
+        <obo:IAO_0000115 xml:lang="en">A generically dependent continuant that is about some thing.</obo:IAO_0000115>
+        <obo:IAO_0000119 xml:lang="en">OBI_0000142</obo:IAO_0000119>
+        <obo:IAO_0000111 xml:lang="en">information content entity</obo:IAO_0000111>
+        <obo:IAO_0000114 rdf:resource="http://purl.obolibrary.org/obo/IAO_0000122"/>
+        <obo:IAO_0000412 rdf:resource="http://purl.obolibrary.org/obo/ons.owl"/>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/IAO_0000033 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/IAO_0000033">
+        <rdfs:label>directive information entity</rdfs:label>
+        <rdfs:label xml:lang="en">directive information entity</rdfs:label>
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/IAO_0000030"/>
+        <obo:IAO_0000115 xml:lang="en">An information content entity whose concretizations indicate to their bearer how to realize them in a process.</obo:IAO_0000115>
+        <obo:IAO_0000114 rdf:resource="http://purl.obolibrary.org/obo/IAO_0000122"/>
+        <obo:IAO_0000412 rdf:resource="http://purl.obolibrary.org/obo/ons.owl"/>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/IAO_0000104 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/IAO_0000104">
+        <rdfs:label>plan specification</rdfs:label>
+        <rdfs:label xml:lang="en">plan specification</rdfs:label>
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/IAO_0000033"/>
+        <obo:IAO_0000115 xml:lang="en">A directive information entity with action specifications and objective specifications as parts that, when concretized, is realized in a process in which the bearer tries to achieve the objectives by taking the actions specified.</obo:IAO_0000115>
+        <obo:IAO_0000115 xml:lang="en">A directive information entity with action specifications and objective specifications as parts, and that may be concretized as a realizable entity that, if realized, is realized in a process in which the bearer tries to achieve the objectives by taking the actions specified.</obo:IAO_0000115>
+        <obo:IAO_0000119 xml:lang="en">OBI Plan and Planned Process branch</obo:IAO_0000119>
+        <obo:IAO_0000119 xml:lang="en">OBI_0000344</obo:IAO_0000119>
+        <obo:IAO_0000111 xml:lang="en">plan specification</obo:IAO_0000111>
+        <obo:IAO_0000114 rdf:resource="http://purl.obolibrary.org/obo/IAO_0000122"/>
+        <obo:IAO_0000412 rdf:resource="http://purl.obolibrary.org/obo/ons.owl"/>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/OBI_0000011 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/OBI_0000011">
+        <rdfs:label xml:lang="en">planned process</rdfs:label>
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/BFO_0000015"/>
+        <obo:IAO_0000115 xml:lang="en">A process that realizes a plan which is the concretization of a plan specification.</obo:IAO_0000115>
+        <obo:IAO_0000111>planned process</obo:IAO_0000111>
+        <obo:IAO_0000119>branch derived</obo:IAO_0000119>
+        <obo:IAO_0000115 xml:lang="en">A processual entity that realizes a plan which is the concretization of a plan specification.</obo:IAO_0000115>
+        <obo:IAO_0000111 xml:lang="en">planned process</obo:IAO_0000111>
+        <obo:IAO_0000114 rdf:resource="http://purl.obolibrary.org/obo/IAO_0000122"/>
+        <obo:IAO_0000412 rdf:resource="http://purl.obolibrary.org/obo/ons.owl"/>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/OBI_0000272 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/OBI_0000272">
+        <rdfs:label>protocol</rdfs:label>
+        <rdfs:label xml:lang="en">protocol</rdfs:label>
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/IAO_0000104"/>
+        <obo:IAO_0000115 xml:lang="en">A plan specification which has sufficient level of detail and quantitative information to communicate it between investigation agents, so that different investigation agents will reliably be able to independently reproduce the process.</obo:IAO_0000115>
+        <obo:IAO_0000119 xml:lang="en">OBI branch derived + wikipedia (http://en.wikipedia.org/wiki/Protocol_%28natural_sciences%29)</obo:IAO_0000119>
+        <obo:IAO_0000111 xml:lang="en">protocol</obo:IAO_0000111>
+        <obo:IAO_0000114 rdf:resource="http://purl.obolibrary.org/obo/IAO_0000122"/>
+        <obo:IAO_0000412 rdf:resource="http://purl.obolibrary.org/obo/ons.owl"/>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/ONS_0000080 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/ONS_0000080">
+        <rdfs:label xml:lang="en">individual regular diet</rdfs:label>
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/ONS_1000008"/>
+        <obo:IAO_0000119>https://github.com/enpadasi/Ontology-for-Nutritional-Studies</obo:IAO_0000119>
+        <obo:IAO_0000115 xml:lang="en">A descriptive diet which is the regular course of eating and drinking adopted by an organism.</obo:IAO_0000115>
+        <obo:IAO_0000412 rdf:resource="http://purl.obolibrary.org/obo/ons.owl"/>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/ONS_0000081 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/ONS_0000081">
+        <rdfs:label xml:lang="en">study intervention diet</rdfs:label>
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/ONS_1000045"/>
+        <obo:IAO_0000115 xml:lang="en">A diet administered during an intervention study. It usually comprises the adoption of a certain nutritional intervention, intended as the prescription of consuming or not consuming certain food, and follows a precise study design. Intervention studies usually compare at least two subgroups of a population, one control group receiving a null nutritional intervention, and one or more test groups receiving the intervention</obo:IAO_0000115>
+        <obo:IAO_0000412 rdf:resource="http://purl.obolibrary.org/obo/ons.owl"/>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/ONS_0000082 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/ONS_0000082">
+        <rdfs:label xml:lang="en">clinically prescribed diet</rdfs:label>
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/ONS_1000007"/>
+        <obo:IAO_0000115 xml:lang="en">A diet prescribed by a physician/ nutritionist to meet specific nutritional needs of a person.</obo:IAO_0000115>
+        <obo:IAO_0000412 rdf:resource="http://purl.obolibrary.org/obo/ons.owl"/>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/ONS_0000083 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/ONS_0000083">
+        <rdfs:label xml:lang="en">population regular diet</rdfs:label>
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/ONS_1000008"/>
+        <obo:IAO_0000115 xml:lang="en">A descriptive diet consumed by a population in a certain geographical area, or in a certain cultural setting, or following certain common eating behaviour.</obo:IAO_0000115>
+        <obo:IAO_0000412 rdf:resource="http://purl.obolibrary.org/obo/ons.owl"/>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/ONS_0000085 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/ONS_0000085">
+        <rdfs:label>meal</rdfs:label>
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/OBI_0000011"/>
+        <obo:IAO_0000115 xml:lang="en">A meal is an eating/drinking occasion which usually occurs at certain time during the day.</obo:IAO_0000115>
+        <obo:IAO_0000412 rdf:resource="http://purl.obolibrary.org/obo/ons.owl"/>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/ONS_0000094 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/ONS_0000094">
+        <rdfs:label xml:lang="en">obsolete: individual dietary pattern</rdfs:label>
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/ONS_1000008"/>
+        <owl:deprecated rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">true</owl:deprecated>
+        <obo:IAO_0000115 xml:lang="en">A descriptive diet pertaining to an individual organism.</obo:IAO_0000115>
+        <obo:IAO_0100001 rdf:resource="http://purl.obolibrary.org/obo/ONS_0000080"/>
+        <obo:IAO_0000412 rdf:resource="http://purl.obolibrary.org/obo/ons.owl"/>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/ONS_1000001 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/ONS_1000001">
+        <rdfs:label xml:lang="en">diet</rdfs:label>
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/BFO_0000027"/>
+        <obo:IAO_0000119>https://en.wikipedia.org/wiki/Diet_(nutrition)</obo:IAO_0000119>
+        <obo:IAO_0000115 xml:lang="en">A collection of food types or items which have organoleptic, nutritional, availability, safety, meal time, or socially relevant characteristics with respect to a consuming individual or population.</obo:IAO_0000115>
+        <obo:IAO_0000412 rdf:resource="http://purl.obolibrary.org/obo/ons.owl"/>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/ONS_1000002 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/ONS_1000002">
+        <rdfs:label xml:lang="en">diet by digestive capability</rdfs:label>
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/ONS_1000001"/>
+        <obo:IAO_0000115 xml:lang="en">A diet that is defined by the biological, anatomical, and evolutionistic digestive capabilities of a given organism.</obo:IAO_0000115>
+        <obo:IAO_0000412 rdf:resource="http://purl.obolibrary.org/obo/ons.owl"/>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/ONS_1000003 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/ONS_1000003">
+        <rdfs:label xml:lang="en">diet by type of food</rdfs:label>
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/ONS_1000001"/>
+        <obo:IAO_0000115 xml:lang="en">A diet that is defined by characteristics of ingested food.</obo:IAO_0000115>
+        <obo:IAO_0000412 rdf:resource="http://purl.obolibrary.org/obo/ons.owl"/>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/ONS_1000004 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/ONS_1000004">
+        <rdfs:label xml:lang="en">diet by agricultural treatment</rdfs:label>
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/ONS_1000001"/>
+        <obo:IAO_0000115 xml:lang="en">A diet which involves food produced under certain agricultural conditions.</obo:IAO_0000115>
+        <obo:IAO_0000412 rdf:resource="http://purl.obolibrary.org/obo/ons.owl"/>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/ONS_1000005 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/ONS_1000005">
+        <rdfs:label xml:lang="en">diet by nutritional composition</rdfs:label>
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/ONS_1000001"/>
+        <obo:IAO_0000115 xml:lang="en">A diet defined by the nutritional presence or absence of types of food bioactive compounds.</obo:IAO_0000115>
+        <obo:IAO_0000412 rdf:resource="http://purl.obolibrary.org/obo/ons.owl"/>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/ONS_1000006 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/ONS_1000006">
+        <rdfs:label xml:lang="en">restrictive diet</rdfs:label>
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/ONS_1000007"/>
+        <obo:IAO_0000115 xml:lang="en">An eating pattern that excludes a given diet.</obo:IAO_0000115>
+        <obo:IAO_0000412 rdf:resource="http://purl.obolibrary.org/obo/ons.owl"/>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/ONS_1000007 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/ONS_1000007">
+        <rdfs:label xml:lang="en">prescribed diet</rdfs:label>
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/ONS_1000001"/>
+        <obo:IAO_0000115 xml:lang="en">A diet which is prescribed to meet some dietary pattern objective for an individual organism or group.</obo:IAO_0000115>
+        <obo:IAO_0000412 rdf:resource="http://purl.obolibrary.org/obo/ons.owl"/>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/ONS_1000008 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/ONS_1000008">
+        <rdfs:label xml:lang="en">descriptive diet</rdfs:label>
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/ONS_1000001"/>
+        <obo:IAO_0000115 xml:lang="en">A diet which represents food types or items consumed in the regular course of eating and drinking by an individual or population over some duration of time.</obo:IAO_0000115>
+        <obo:IAO_0000114 rdf:resource="http://purl.obolibrary.org/obo/IAO_0000428"/>
+        <obo:IAO_0000412 rdf:resource="http://purl.obolibrary.org/obo/ons.owl"/>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/ONS_1000010 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/ONS_1000010">
+        <rdfs:label xml:lang="en">recommended diet</rdfs:label>
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/ONS_1000007"/>
+        <obo:IAO_0000115 xml:lang="en">A prescribed diet which pertains to a population or sub-population of organism.</obo:IAO_0000115>
+        <obo:IAO_0000412 rdf:resource="http://purl.obolibrary.org/obo/ons.owl"/>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/ONS_1000016 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/ONS_1000016">
+        <rdfs:label xml:lang="en">carnivorous diet</rdfs:label>
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/ONS_1000002"/>
+        <obo:IAO_0000115 xml:lang="en">A diet of a carnivore, which focuses almost exclusively on the consumption of animal food sources.</obo:IAO_0000115>
+        <obo:IAO_0000412 rdf:resource="http://purl.obolibrary.org/obo/ons.owl"/>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/ONS_1000017 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/ONS_1000017">
+        <rdfs:label xml:lang="en">omnivorous diet</rdfs:label>
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/ONS_1000002"/>
+        <obo:IAO_0000115 xml:lang="en">A diet of an omivore, which includes both plant and animal food sources.</obo:IAO_0000115>
+        <obo:IAO_0000412 rdf:resource="http://purl.obolibrary.org/obo/ons.owl"/>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/ONS_1000018 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/ONS_1000018">
+        <rdfs:label xml:lang="en">herbivorous diet</rdfs:label>
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/ONS_1000002"/>
+        <obo:IAO_0000115 xml:lang="en">A diet of a herbivore, which focuses almost exclusively on the consumption of plants, fungi and/or lichen.</obo:IAO_0000115>
+        <obo:IAO_0000412 rdf:resource="http://purl.obolibrary.org/obo/ons.owl"/>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/ONS_1000019 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/ONS_1000019">
+        <rdfs:label xml:lang="en">diet by food organism</rdfs:label>
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/ONS_1000003"/>
+        <obo:IAO_0000115 xml:lang="en">A diet defined by the food source organisms it allows or excludes.</obo:IAO_0000115>
+        <obo:IAO_0000412 rdf:resource="http://purl.obolibrary.org/obo/ons.owl"/>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/ONS_1000020 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/ONS_1000020">
+        <rdfs:label>vegetarian diet</rdfs:label>
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/ONS_1000019"/>
+        <obo:IAO_0000115 xml:lang="en">A diet which focuses almost exclusively on the consumption of plants, fungi and/or lichen.</obo:IAO_0000115>
+        <obo:IAO_0000412 rdf:resource="http://purl.obolibrary.org/obo/ons.owl"/>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/ONS_1000021 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/ONS_1000021">
+        <rdfs:label xml:lang="en">vegan diet</rdfs:label>
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/ONS_1000020"/>
+        <obo:IAO_0000115 xml:lang="en">A diet that excludes all animal products (including fish and seafood).</obo:IAO_0000115>
+        <obo:IAO_0000119>https://en.wikipedia.org/wiki/Veganism</obo:IAO_0000119>
+        <obo:IAO_0000412 rdf:resource="http://purl.obolibrary.org/obo/ons.owl"/>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/ONS_1000022 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/ONS_1000022">
+        <rdfs:label xml:lang="en">lacto-vegetarian diet</rdfs:label>
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/ONS_1000019"/>
+        <obo:IAO_0000115 xml:lang="en">A diet that includes vegetarian and milk-derived food.</obo:IAO_0000115>
+        <obo:IAO_0000412 rdf:resource="http://purl.obolibrary.org/obo/ons.owl"/>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/ONS_1000023 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/ONS_1000023">
+        <rdfs:label xml:lang="en">ovo-vegetarian diet</rdfs:label>
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/ONS_1000019"/>
+        <obo:IAO_0000115 xml:lang="en">A diet that includes vegetarian and avian egg derived food.</obo:IAO_0000115>
+        <obo:IAO_0000412 rdf:resource="http://purl.obolibrary.org/obo/ons.owl"/>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/ONS_1000024 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/ONS_1000024">
+        <rdfs:label xml:lang="en">lacto-ovo vegetarian diet</rdfs:label>
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/ONS_1000019"/>
+        <obo:IAO_0000115 xml:lang="en">A diet that includes vegetarian, avian egg, and milk derived food.</obo:IAO_0000115>
+        <obo:IAO_0000412 rdf:resource="http://purl.obolibrary.org/obo/ons.owl"/>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/ONS_1000025 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/ONS_1000025">
+        <rdfs:label xml:lang="en">semi-vegetarian diet</rdfs:label>
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/ONS_1000019"/>
+        <obo:IAO_0000115 xml:lang="en">primarily a plant-based diet but includes meat, dairy, eggs, poultry and fish on occasion or in small quantities</obo:IAO_0000115>
+        <obo:IAO_0000412 rdf:resource="http://purl.obolibrary.org/obo/ons.owl"/>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/ONS_1000026 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/ONS_1000026">
+        <rdfs:label xml:lang="en">pescetarian diet</rdfs:label>
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/ONS_1000019"/>
+        <obo:IAO_0000115 xml:lang="en">A diet which includes vegetarian food as well as fish and seafood.</obo:IAO_0000115>
+        <obo:IAO_0000412 rdf:resource="http://purl.obolibrary.org/obo/ons.owl"/>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/ONS_1000027 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/ONS_1000027">
+        <rdfs:label xml:lang="en">non-beef diet</rdfs:label>
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/ONS_1000019"/>
+        <obo:IAO_0000115 xml:lang="en">A diet that excludes food containing beef food products.</obo:IAO_0000115>
+        <obo:IAO_0000412 rdf:resource="http://purl.obolibrary.org/obo/ons.owl"/>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/ONS_1000028 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/ONS_1000028">
+        <rdfs:label xml:lang="en">non-pork diet</rdfs:label>
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/ONS_1000019"/>
+        <obo:IAO_0000115 xml:lang="en">A diet that excludes food containing swine food products.</obo:IAO_0000115>
+        <obo:IAO_0000412 rdf:resource="http://purl.obolibrary.org/obo/ons.owl"/>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/ONS_1000029 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/ONS_1000029">
+        <rdfs:label xml:lang="en">infant breast milk diet</rdfs:label>
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/ONS_1000019"/>
+        <obo:IAO_0000115 xml:lang="en">A diet consisting entirely of breast milk.</obo:IAO_0000115>
+        <obo:IAO_0000412 rdf:resource="http://purl.obolibrary.org/obo/ons.owl"/>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/ONS_1000030 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/ONS_1000030">
+        <rdfs:label xml:lang="en">infant formula milk diet</rdfs:label>
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/ONS_1000003"/>
+        <obo:IAO_0000115 xml:lang="en">A diet involving formula milk.</obo:IAO_0000115>
+        <obo:IAO_0000412 rdf:resource="http://purl.obolibrary.org/obo/ons.owl"/>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/ONS_1000031 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/ONS_1000031">
+        <rdfs:label xml:lang="en">diet by food texture</rdfs:label>
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/ONS_1000003"/>
+        <obo:IAO_0000115 xml:lang="en">A diet defined by the texture of prepared food.</obo:IAO_0000115>
+        <obo:IAO_0000412 rdf:resource="http://purl.obolibrary.org/obo/ons.owl"/>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/ONS_1000032 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/ONS_1000032">
+        <rdfs:label xml:lang="en">texture modified diet</rdfs:label>
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/ONS_1000031"/>
+        <obo:IAO_0000115 xml:lang="en">A diet containing carefully selected foods of an appropriate consistency which can be more easily chewed and managed by a person with dysphagia.</obo:IAO_0000115>
+        <obo:IAO_0000119>https://www.wlmht.nhs.uk/wp-content/uploads/2015/06/High-risk-foods-info-sheet-2pp-A4.pdf</obo:IAO_0000119>
+        <obo:IAO_0000412 rdf:resource="http://purl.obolibrary.org/obo/ons.owl"/>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/ONS_1000033 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/ONS_1000033">
+        <rdfs:label xml:lang="en">liquid diet</rdfs:label>
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/ONS_1000031"/>
+        <obo:IAO_0000119>https://medlineplus.gov/ency/patientinstructions/000206.htm</obo:IAO_0000119>
+        <obo:IAO_0000115 xml:lang="en">A full liquid diet is made up only of fluids and foods that are normally liquid and foods that turn to liquid when they are at room temperature. A full liquid diet excludes solid foods.</obo:IAO_0000115>
+        <obo:IAO_0000412 rdf:resource="http://purl.obolibrary.org/obo/ons.owl"/>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/ONS_1000034 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/ONS_1000034">
+        <rdfs:label xml:lang="en">organic agriculture diet</rdfs:label>
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/ONS_1000004"/>
+        <obo:IAO_0000115 xml:lang="en">A diet consisting of food produced from organic agriculture (food that is grown without the use of synthetic fertilizers, sewage sludge, irradiation, genetic engineering, pesticides, or drugs.)</obo:IAO_0000115>
+        <obo:IAO_0000119>https://extension.arizona.edu/sites/extension.arizona.edu/files/pubs/az1603.pdf </obo:IAO_0000119>
+        <obo:IAO_0000119> http://www.fao.org/organicag/oa-faq/oa-faq1/en/</obo:IAO_0000119>
+        <obo:IAO_0000412 rdf:resource="http://purl.obolibrary.org/obo/ons.owl"/>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/ONS_1000035 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/ONS_1000035">
+        <rdfs:label xml:lang="en">non-organic agriculture diet</rdfs:label>
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/ONS_1000004"/>
+        <obo:IAO_0000119>https://extension.arizona.edu/sites/extension.arizona.edu/files/pubs/az1603.pdf</obo:IAO_0000119>
+        <obo:IAO_0000115 xml:lang="en">A diet consisting of food that may have been reared with the use of pesticides, herbicides or chemical fertilizers.</obo:IAO_0000115>
+        <obo:IAO_0000412 rdf:resource="http://purl.obolibrary.org/obo/ons.owl"/>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/ONS_1000036 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/ONS_1000036">
+        <rdfs:label xml:lang="en">ketogenic diet</rdfs:label>
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/ONS_1000005"/>
+        <obo:IAO_0000119> PMID:28701250 </obo:IAO_0000119>
+        <obo:IAO_0000119> PMID:27759811 </obo:IAO_0000119>
+        <obo:IAO_0000119> https://www.healthdirect.gov.au/ketogenic-diet</obo:IAO_0000119>
+        <obo:IAO_0000115 xml:lang="en">A ketogenic diet is a high-fat, low-carbohydrate, adequate-protein diet that mimics a fasting state, resulting in the substitution of ketone bodies as a source of energy. The ketogenic diet can be used to reduce recurrent epileptic seizures in individuals with intractable epilepsy. Intractable epilepsy is defined as epilepsy that failed to respond to three or more antiepileptic drugs. A high-fat, adequate-protein, low-carbohydrate diet. It is primarily used in medicine to treat difficult-to-control epilepsy in children</obo:IAO_0000115>
+        <obo:IAO_0000119>PMID:23419562 </obo:IAO_0000119>
+        <obo:IAO_0000412 rdf:resource="http://purl.obolibrary.org/obo/ons.owl"/>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/ONS_1000037 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/ONS_1000037">
+        <rdfs:label xml:lang="en">DASH diet</rdfs:label>
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/ONS_1000005"/>
+        <obo:IAO_0000115 xml:lang="en">Dietary Approaches to Stop Hypertension (DASH) trial, which demonstrated that consuming a diet rich in fruits, vegetables, and low-fat dairy products and reduced in saturated fat and cholesterol</obo:IAO_0000115>
+        <obo:IAO_0000119>PMID: 29141784</obo:IAO_0000119>
+        <obo:IAO_0000412 rdf:resource="http://purl.obolibrary.org/obo/ons.owl"/>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/ONS_1000038 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/ONS_1000038">
+        <rdfs:label xml:lang="en">mediterranean diet</rdfs:label>
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/ONS_1000005"/>
+        <obo:IAO_0000115 xml:lang="en">A moderate-fat, restricted-calorie, Mediterranean diet is rich in vegetables and low in red meat, with poultry and fish replacing beef and lamb.</obo:IAO_0000115>
+        <obo:IAO_0000119>PMID:18635428</obo:IAO_0000119>
+        <obo:IAO_0000412 rdf:resource="http://purl.obolibrary.org/obo/ons.owl"/>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/ONS_1000039 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/ONS_1000039">
+        <rdfs:label xml:lang="en">high-carbohydrate diet</rdfs:label>
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/ONS_1000005"/>
+        <obo:IAO_0000115 xml:lang="en">A diet which provides &gt; 60% of total dietary energy from carbohydrates.  It consists predominantly of high glycemic carbohydrates have detrimental metabolic effects</obo:IAO_0000115>
+        <obo:IAO_0000412 rdf:resource="http://purl.obolibrary.org/obo/ons.owl"/>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/ONS_1000040 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/ONS_1000040">
+        <rdfs:label>low-carbohydrate, high-protien, high fat diet</rdfs:label>
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/ONS_1000005"/>
+        <obo:IAO_0000119> https://en.wikipedia.org/wiki/Low-carbohydrate_diet</obo:IAO_0000119>
+        <obo:IAO_0000115 xml:lang="en">Low-carbohydrate diets restrict carbohydrate consumption relative to the average diet. Foods high in carbohydrates (e.g., sugar, bread, pasta) are limited, and replaced with foods containing a higher percentage of fat and protein (e.g., meat, poultry, fish, shellfish, eggs, cheese, nuts, and seeds), as well as low carbohydrate foods (e.g. spinach, kale, chard, collards, and other fibrous vegetables).</obo:IAO_0000115>
+        <obo:IAO_0000119>PMID:18635428 </obo:IAO_0000119>
+        <obo:IAO_0000412 rdf:resource="http://purl.obolibrary.org/obo/ons.owl"/>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/ONS_1000041 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/ONS_1000041">
+        <rdfs:label xml:lang="en">high fat diet</rdfs:label>
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/ONS_1000005"/>
+        <obo:IAO_0000115 xml:lang="en">A diet involving the a larger proportion of fat than normal.</obo:IAO_0000115>
+        <obo:IAO_0000412 rdf:resource="http://purl.obolibrary.org/obo/ons.owl"/>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/ONS_1000042 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/ONS_1000042">
+        <rdfs:label xml:lang="en">low fat diet</rdfs:label>
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/ONS_1000005"/>
+        <obo:IAO_0000119>PMID:23651522</obo:IAO_0000119>
+        <obo:IAO_0000115 xml:lang="en">A restricted-energy diet with less than 30% of energy from fat.</obo:IAO_0000115>
+        <obo:IAO_0000412 rdf:resource="http://purl.obolibrary.org/obo/ons.owl"/>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/ONS_1000043 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/ONS_1000043">
+        <rdfs:label xml:lang="en">gluten free diet</rdfs:label>
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/ONS_1000005"/>
+        <obo:IAO_0000115 xml:lang="en">A diet which minimises or eliminates the consumption of gluten.</obo:IAO_0000115>
+        <obo:IAO_0000412 rdf:resource="http://purl.obolibrary.org/obo/ons.owl"/>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/ONS_1000044 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/ONS_1000044">
+        <rdfs:label xml:lang="en">self-prescribed diet</rdfs:label>
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/ONS_1000007"/>
+        <obo:IAO_0000115 xml:lang="en">A diet that an individual organism has chosen as an objective.</obo:IAO_0000115>
+        <obo:IAO_0000412 rdf:resource="http://purl.obolibrary.org/obo/ons.owl"/>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/ONS_1000045 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/ONS_1000045">
+        <rdfs:label xml:lang="en">research prescribed diet</rdfs:label>
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/ONS_1000007"/>
+        <obo:IAO_0000115 xml:lang="en">A diet prescribed to a group in a research study.</obo:IAO_0000115>
+        <obo:IAO_0000412 rdf:resource="http://purl.obolibrary.org/obo/ons.owl"/>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/ONS_1000046 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/ONS_1000046">
+        <rdfs:label xml:lang="en">study null nutritional diet</rdfs:label>
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/ONS_1000045"/>
+        <obo:IAO_0000115 xml:lang="en">A dietairy pattern adhered to by a study control group. (possibly a placebo).</obo:IAO_0000115>
+        <obo:IAO_0000412 rdf:resource="http://purl.obolibrary.org/obo/ons.owl"/>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/ONS_1000047 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/ONS_1000047">
+        <rdfs:label xml:lang="en">coeliac diet</rdfs:label>
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/ONS_0000082"/>
+        <obo:IAO_0000115 xml:lang="en">A diet designed to reduce the symptoms of Coeliac disease which is caused by a reaction to gliadin (a gluten protein found in wheat) and similar proteins found in other crops.</obo:IAO_0000115>
+        <obo:IAO_0000412 rdf:resource="http://purl.obolibrary.org/obo/ons.owl"/>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/ONS_1000048 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/ONS_1000048">
+        <rdfs:label xml:lang="en">FODMAP diet</rdfs:label>
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/ONS_0000082"/>
+        <obo:IAO_0000115 xml:lang="en">A diet involving the avoidance of Fermentable Oligo-Di-Monosaccharides and Polyols.</obo:IAO_0000115>
+        <obo:IAO_0000119>https://en.wikipedia.org/wiki/FODMAP</obo:IAO_0000119>
+        <obo:IAO_0000412 rdf:resource="http://purl.obolibrary.org/obo/ons.owl"/>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/ONS_1000049 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/ONS_1000049">
+        <rdfs:label xml:lang="en">weight loss diet</rdfs:label>
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/ONS_1000007"/>
+        <obo:IAO_0000115 xml:lang="en">A diet designed to reduce the presence of fat in an organism.</obo:IAO_0000115>
+        <obo:IAO_0000412 rdf:resource="http://purl.obolibrary.org/obo/ons.owl"/>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/ONS_1000050 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/ONS_1000050">
+        <rdfs:label xml:lang="en">performance diet</rdfs:label>
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/ONS_1000007"/>
+        <obo:IAO_0000115 xml:lang="en">A diet which has an athletic performance objective</obo:IAO_0000115>
+        <obo:IAO_0000412 rdf:resource="http://purl.obolibrary.org/obo/ons.owl"/>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/ONS_1000051 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/ONS_1000051">
+        <rdfs:label xml:lang="en">ethnographic diet</rdfs:label>
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/ONS_1000007"/>
+        <obo:IAO_0000115 xml:lang="en">A cultural or religious eating pattern.</obo:IAO_0000115>
+        <obo:IAO_0000412 rdf:resource="http://purl.obolibrary.org/obo/ons.owl"/>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/ONS_1000052 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/ONS_1000052">
+        <rdfs:label xml:lang="en">halal diet</rdfs:label>
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/ONS_1000051"/>
+        <obo:IAO_0000115 xml:lang="en">A diet consisting of halal approved food.</obo:IAO_0000115>
+        <obo:IAO_0000412 rdf:resource="http://purl.obolibrary.org/obo/ons.owl"/>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/ONS_1000053 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/ONS_1000053">
+        <rdfs:label xml:lang="en">kosher diet</rdfs:label>
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/ONS_1000051"/>
+        <obo:IAO_0000115 xml:lang="en">A diet consisting of kosher approved food.</obo:IAO_0000115>
+        <obo:IAO_0000412 rdf:resource="http://purl.obolibrary.org/obo/ons.owl"/>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/ONS_1000054 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/ONS_1000054">
+        <rdfs:label xml:lang="en">self-reported diet</rdfs:label>
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/ONS_1000056"/>
+        <obo:IAO_0000115 xml:lang="en">An ingested food data set which is subjectively recorded or recalled by an individual consuming the food.</obo:IAO_0000115>
+        <obo:IAO_0000412 rdf:resource="http://purl.obolibrary.org/obo/ons.owl"/>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/ONS_1000055 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/ONS_1000055">
+        <rdfs:label xml:lang="en">objectively-reported diet</rdfs:label>
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/ONS_1000008"/>
+        <obo:IAO_0000115 xml:lang="en">A descriptive diet which is observed by a researcher to have been consumed by a subject organism or population of organisms.</obo:IAO_0000115>
+        <obo:IAO_0000412 rdf:resource="http://purl.obolibrary.org/obo/ons.owl"/>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/ONS_1000056 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/ONS_1000056">
+        <rdfs:label xml:lang="en">ingested food data set</rdfs:label>
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/ONS_1000008"/>
+        <obo:IAO_0000115 xml:lang="en">A descriptive diet which contains a list of foods that an individual organism has ingested over some period of time.</obo:IAO_0000115>
+        <obo:IAO_0000412 rdf:resource="http://purl.obolibrary.org/obo/ons.owl"/>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/ONS_1000057 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/ONS_1000057">
+        <rdfs:label xml:lang="en">NCI usual diet</rdfs:label>
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/ONS_0000083"/>
+        <obo:IAO_0000119>https://epi.grants.cancer.gov/diet/usualintakes/</obo:IAO_0000119>
+        <obo:IAO_0000115 xml:lang="en">A population regular diet which is a long-term average daily intake of nutrients and/or foods calculated according to a National Cancer Institute statistical model.</obo:IAO_0000115>
+        <obo:IAO_0000412 rdf:resource="http://purl.obolibrary.org/obo/ons.owl"/>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/ONS_1000058 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/ONS_1000058">
+        <rdfs:label xml:lang="en">ingested food log</rdfs:label>
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/ONS_1000056"/>
+        <obo:IAO_0000115 xml:lang="en">An ingested food data set of food consumption events detailing food ingested and the time of ingestion.</obo:IAO_0000115>
+        <obo:IAO_0000412 rdf:resource="http://purl.obolibrary.org/obo/ons.owl"/>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/ONS_1000059 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/ONS_1000059">
+        <rdfs:label xml:lang="en">daily food intake</rdfs:label>
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/ONS_1000008"/>
+        <obo:IAO_0000115 xml:lang="en">A descriptive diet containing food types or items pertinent to an average day or a given day which are ingested by an individual or organism population. The collection may indicate quantities or counts of food material.</obo:IAO_0000115>
+        <obo:IAO_0000412 rdf:resource="http://purl.obolibrary.org/obo/ons.owl"/>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/ONS_1000060 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/ONS_1000060">
+        <rdfs:label xml:lang="en">daily average nutritional intake</rdfs:label>
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/ONS_1000008"/>
+        <obo:IAO_0000115 xml:lang="en">A descriptive diet containing nutrient classes and their average daily intake quantity for an individual or organism population.</obo:IAO_0000115>
+        <obo:IAO_0000412 rdf:resource="http://purl.obolibrary.org/obo/ons.owl"/>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/ONS_1000062 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/ONS_1000062">
+        <rdfs:label xml:lang="en">dietary regimen</rdfs:label>
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/OBI_0000272"/>
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/ONS_1000007"/>
+        <obo:IAO_0000115 xml:lang="en">A set of restrictions on food type ingestion and/or timing of food ingestion.</obo:IAO_0000115>
+        <obo:IAO_0000412 rdf:resource="http://purl.obolibrary.org/obo/ons.owl"/>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/ONS_1000064 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/ONS_1000064">
+        <rdfs:label xml:lang="en">dietary pattern data item</rdfs:label>
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/IAO_0000027"/>
+        <obo:IAO_0000115 xml:lang="en">A data item recording data about a dietary pattern</obo:IAO_0000115>
+        <obo:IAO_0000412 rdf:resource="http://purl.obolibrary.org/obo/ons.owl"/>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/ONS_1000065 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/ONS_1000065">
+        <rdfs:label xml:lang="en">globalized diet</rdfs:label>
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/ONS_1000005"/>
+        <obo:IAO_0000115 xml:lang="en">the diet resulting from the lifestyle adaptation following the industrial revolution. It is often associated with western countries, but is increasingly becoming adopted also in other geographic areas. It is known to be rich in red and processed meats, sweets, fried foods, and refined grains while being poor in fruits, vegetables, legumes, fish, poultry, and whole grains. In terms of micronutrients, this diet is usually rich in salt, yet poor in other minerals and vitamins, whereas in terms of fats, it is high in saturated and trans-fatty acids, and low in mono- and polyunsaturated fatty acids. Its fibre and complex carbohydrates contents are also very low due to the high consumption of refined sugars instead of whole-grain foods.</obo:IAO_0000115>
+        <obo:IAO_0000412 rdf:resource="http://purl.obolibrary.org/obo/ons.owl"/>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/ONS_1000066 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/ONS_1000066">
+        <rdfs:label xml:lang="en">rural diet</rdfs:label>
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/ONS_1000005"/>
+        <obo:IAO_0000115 xml:lang="en">the diet characteristic of the lifestyle in isolated/rural areas, commonly in developing countries. It is mainly composed of naturally available food products, including fresh animal protein and vegetables while excluding industrially processed foods. Nevertheless, it is common to use traditional food processing methods to improve nutrient availability, digestibility or to increase conservation time to avoid scarcity. These methods include soaking, fermentation, cooking, pounding, and sprouting.</obo:IAO_0000115>
+        <obo:IAO_0000412 rdf:resource="http://purl.obolibrary.org/obo/ons.owl"/>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/ONS_2000002 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/ONS_2000002">
+        <rdfs:label xml:lang="en">obsolete: dietary pattern by digestive capability</rdfs:label>
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/ONS_0000094"/>
+        <owl:deprecated rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">true</owl:deprecated>
+        <obo:IAO_0000115 xml:lang="en">A dietary pattern that define the quantity, variety or combination of different food in a diet by digestive capabilities.</obo:IAO_0000115>
+        <obo:IAO_0000412 rdf:resource="http://purl.obolibrary.org/obo/ons.owl"/>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/ONS_2000003 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/ONS_2000003">
+        <rdfs:label xml:lang="en">obsolete: dietary pattern by type of food</rdfs:label>
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/ONS_0000094"/>
+        <owl:deprecated rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">true</owl:deprecated>
+        <obo:IAO_0000115 xml:lang="en">A dietary pattern that define the quantity, variety or combination of different food in a diet by type of food</obo:IAO_0000115>
+        <obo:IAO_0100001 rdf:resource="http://purl.obolibrary.org/obo/ONS_1000003"/>
+        <obo:IAO_0000412 rdf:resource="http://purl.obolibrary.org/obo/ons.owl"/>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/ONS_2000004 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/ONS_2000004">
+        <rdfs:label xml:lang="en">obsolete: dietary pattern by agriculture treatment</rdfs:label>
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/ONS_0000094"/>
+        <owl:deprecated rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">true</owl:deprecated>
+        <obo:IAO_0000115 xml:lang="en">A dietary pattern that define the quantity, variety or combination of different food in a diet by agriculture treatment</obo:IAO_0000115>
+        <obo:IAO_0000412 rdf:resource="http://purl.obolibrary.org/obo/ons.owl"/>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/ONS_2000005 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/ONS_2000005">
+        <rdfs:label xml:lang="en">obsolete: dietary pattern by nutritional composition</rdfs:label>
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/ONS_0000094"/>
+        <owl:deprecated rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">true</owl:deprecated>
+        <obo:IAO_0000115 xml:lang="en">A dietary pattern that define the quantity, variety or combination of different food in a diet by nutritional composition</obo:IAO_0000115>
+        <obo:IAO_0100001 rdf:resource="http://purl.obolibrary.org/obo/ONS_1000005"/>
+        <obo:IAO_0000412 rdf:resource="http://purl.obolibrary.org/obo/ons.owl"/>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/ONS_2000019 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/ONS_2000019">
+        <rdfs:label xml:lang="en">obsolete: dietary pattern by food organism</rdfs:label>
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/ONS_2000003"/>
+        <owl:deprecated rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">true</owl:deprecated>
+        <obo:IAO_0000115 xml:lang="en">A dietary pattern that define the quantity, variety or combination of different food in a diet by food organism</obo:IAO_0000115>
+        <obo:IAO_0100001 rdf:resource="http://purl.obolibrary.org/obo/ONS_1000019"/>
+        <obo:IAO_0000412 rdf:resource="http://purl.obolibrary.org/obo/ons.owl"/>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/ONS_2000020 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/ONS_2000020">
+        <rdfs:label xml:lang="en">obsolete: vegetarian dietary pattern</rdfs:label>
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/ONS_2000019"/>
+        <owl:deprecated rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">true</owl:deprecated>
+        <obo:IAO_0000115 xml:lang="en">A dietary pattern that define the quantity, variety or combination of different food in a vegetarian diet</obo:IAO_0000115>
+        <obo:IAO_0100001 rdf:resource="http://purl.obolibrary.org/obo/ONS_1000020"/>
+        <obo:IAO_0000412 rdf:resource="http://purl.obolibrary.org/obo/ons.owl"/>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/ONS_2000021 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/ONS_2000021">
+        <rdfs:label xml:lang="en">obsolete: vegan dietary pattern</rdfs:label>
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/ONS_2000019"/>
+        <owl:deprecated rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">true</owl:deprecated>
+        <obo:IAO_0000115 xml:lang="en">A dietary pattern that define the quantity, variety or combination of different food in a vegan diet</obo:IAO_0000115>
+        <obo:IAO_0100001 rdf:resource="http://purl.obolibrary.org/obo/ONS_1000021"/>
+        <obo:IAO_0000412 rdf:resource="http://purl.obolibrary.org/obo/ons.owl"/>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/ONS_2000022 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/ONS_2000022">
+        <rdfs:label xml:lang="en">obsolete: lacto-vegetarian dietary pattern</rdfs:label>
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/ONS_2000019"/>
+        <owl:deprecated rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">true</owl:deprecated>
+        <obo:IAO_0000115 xml:lang="en">A dietary pattern that define the quantity, variety or combination of different food in a lacto-vegetarian diet</obo:IAO_0000115>
+        <obo:IAO_0100001 rdf:resource="http://purl.obolibrary.org/obo/ONS_1000022"/>
+        <obo:IAO_0000412 rdf:resource="http://purl.obolibrary.org/obo/ons.owl"/>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/ONS_2000023 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/ONS_2000023">
+        <rdfs:label xml:lang="en">obsolete: ovo-vegetarian dietary pattern</rdfs:label>
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/ONS_2000019"/>
+        <owl:deprecated rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">true</owl:deprecated>
+        <obo:IAO_0000115 xml:lang="en">A dietary pattern that define the quantity, variety or combination of different food in a ovo-vegetarian diet</obo:IAO_0000115>
+        <obo:IAO_0100001 rdf:resource="http://purl.obolibrary.org/obo/ONS_1000023"/>
+        <obo:IAO_0000412 rdf:resource="http://purl.obolibrary.org/obo/ons.owl"/>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/ONS_2000024 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/ONS_2000024">
+        <rdfs:label xml:lang="en">obsolete: lacto-ovo vegetarian dietary pattern</rdfs:label>
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/ONS_2000019"/>
+        <owl:deprecated rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">true</owl:deprecated>
+        <obo:IAO_0000115 xml:lang="en">A dietary pattern that define the quantity, variety or combination of different food in a lacto-ovo vegetarian diet</obo:IAO_0000115>
+        <obo:IAO_0100001 rdf:resource="http://purl.obolibrary.org/obo/ONS_1000024"/>
+        <obo:IAO_0000412 rdf:resource="http://purl.obolibrary.org/obo/ons.owl"/>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/ONS_2000025 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/ONS_2000025">
+        <rdfs:label xml:lang="en">obsolete: semi-vegetarian dietary pattern</rdfs:label>
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/ONS_2000019"/>
+        <owl:deprecated rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">true</owl:deprecated>
+        <obo:IAO_0000115 xml:lang="en">A dietary pattern that define the quantity, variety or combination of different food in a semi-vegetarian diet</obo:IAO_0000115>
+        <obo:IAO_0100001 rdf:resource="http://purl.obolibrary.org/obo/ONS_1000025"/>
+        <obo:IAO_0000412 rdf:resource="http://purl.obolibrary.org/obo/ons.owl"/>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/ONS_2000026 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/ONS_2000026">
+        <rdfs:label xml:lang="en">obsolete: pescetarian dietary pattern</rdfs:label>
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/ONS_2000019"/>
+        <owl:deprecated rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">true</owl:deprecated>
+        <obo:IAO_0000115 xml:lang="en">A dietary pattern that define the quantity, variety or combination of different food in a pescetarian diet</obo:IAO_0000115>
+        <obo:IAO_0100001 rdf:resource="http://purl.obolibrary.org/obo/ONS_1000026"/>
+        <obo:IAO_0000412 rdf:resource="http://purl.obolibrary.org/obo/ons.owl"/>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/ONS_2000036 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/ONS_2000036">
+        <rdfs:label xml:lang="en">obsolete: ketogenic diet dietary pattern</rdfs:label>
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/ONS_2000005"/>
+        <owl:deprecated rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">true</owl:deprecated>
+        <obo:IAO_0000115 xml:lang="en">A dietary pattern that define the quantity, variety or combination of different food in a ketogenic diet</obo:IAO_0000115>
+        <obo:IAO_0100001 rdf:resource="http://purl.obolibrary.org/obo/ONS_1000036"/>
+        <obo:IAO_0000412 rdf:resource="http://purl.obolibrary.org/obo/ons.owl"/>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/ONS_2000037 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/ONS_2000037">
+        <rdfs:label xml:lang="en">obsolete: DASH diet dietary pattern</rdfs:label>
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/ONS_2000005"/>
+        <owl:deprecated rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">true</owl:deprecated>
+        <obo:IAO_0000115 xml:lang="en">A dietary pattern that define the quantity, variety or combination of different food in a DASH diet</obo:IAO_0000115>
+        <obo:IAO_0100001 rdf:resource="http://purl.obolibrary.org/obo/ONS_1000037"/>
+        <obo:IAO_0000412 rdf:resource="http://purl.obolibrary.org/obo/ons.owl"/>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/ONS_2000038 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/ONS_2000038">
+        <rdfs:label xml:lang="en">obsolete: meditteranean diet dietary pattern</rdfs:label>
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/ONS_2000005"/>
+        <owl:deprecated rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">true</owl:deprecated>
+        <obo:IAO_0000115 xml:lang="en">A dietary pattern that define the quantity, variety or combination of different food in a Mediterranean diet</obo:IAO_0000115>
+        <obo:IAO_0100001 rdf:resource="http://purl.obolibrary.org/obo/ONS_1000038"/>
+        <obo:IAO_0000412 rdf:resource="http://purl.obolibrary.org/obo/ons.owl"/>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/ONS_2000039 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/ONS_2000039">
+        <rdfs:label xml:lang="en">obsolete: high-carbohydrate diet dietary pattern</rdfs:label>
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/ONS_2000005"/>
+        <owl:deprecated rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">true</owl:deprecated>
+        <obo:IAO_0000115 xml:lang="en">A dietary pattern that define the quantity, variety or combination of different food in a high-carbohydrate diet</obo:IAO_0000115>
+        <obo:IAO_0100001 rdf:resource="http://purl.obolibrary.org/obo/ONS_1000039"/>
+        <obo:IAO_0000412 rdf:resource="http://purl.obolibrary.org/obo/ons.owl"/>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/ONS_2000040 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/ONS_2000040">
+        <rdfs:label xml:lang="en">obsolete: low-carbohydrate, high-protien, high fat diet dietary pattern</rdfs:label>
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/ONS_2000005"/>
+        <owl:deprecated rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">true</owl:deprecated>
+        <obo:IAO_0000119>PMID:18635428 </obo:IAO_0000119>
+        <obo:IAO_0000119> https://en.wikipedia.org/wiki/Low-carbohydrate_diet</obo:IAO_0000119>
+        <obo:IAO_0000115 xml:lang="en">A dietary pattern that define the quantity, variety or combination of different food in a  low-carbohydrate, high-protien, high fat diet</obo:IAO_0000115>
+        <obo:IAO_0000412 rdf:resource="http://purl.obolibrary.org/obo/ons.owl"/>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/ONS_2000041 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/ONS_2000041">
+        <rdfs:label xml:lang="en">obsolete: high fat diet dietary pattern</rdfs:label>
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/ONS_2000005"/>
+        <owl:deprecated rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">true</owl:deprecated>
+        <obo:IAO_0000115 xml:lang="en">A dietary pattern that define the quantity, variety or combination of different food in a high fat diet</obo:IAO_0000115>
+        <obo:IAO_0100001 rdf:resource="http://purl.obolibrary.org/obo/ONS_1000041"/>
+        <obo:IAO_0000412 rdf:resource="http://purl.obolibrary.org/obo/ons.owl"/>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/ONS_2000042 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/ONS_2000042">
+        <rdfs:label xml:lang="en">obsolete: low fat diet dietary pattern</rdfs:label>
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/ONS_2000005"/>
+        <owl:deprecated rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">true</owl:deprecated>
+        <obo:IAO_0000115 xml:lang="en">A dietary pattern that define the quantity, variety or combination of different food in a low fat diet</obo:IAO_0000115>
+        <obo:IAO_0100001 rdf:resource="http://purl.obolibrary.org/obo/ONS_1000042"/>
+        <obo:IAO_0000412 rdf:resource="http://purl.obolibrary.org/obo/ons.owl"/>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/ONS_2000043 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/ONS_2000043">
+        <rdfs:label xml:lang="en">obsolete: gluten free dietary pattern</rdfs:label>
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/ONS_2000005"/>
+        <owl:deprecated rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">true</owl:deprecated>
+        <obo:IAO_0000115 xml:lang="en">A dietary pattern that define the quantity, variety or combination of different food in a gluten free diet</obo:IAO_0000115>
+        <obo:IAO_0100001 rdf:resource="http://purl.obolibrary.org/obo/ONS_1000043"/>
+        <obo:IAO_0000412 rdf:resource="http://purl.obolibrary.org/obo/ons.owl"/>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/ONS_2000044 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/ONS_2000044">
+        <rdfs:label xml:lang="en">obsolete: globalized diet dietary pattern</rdfs:label>
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/ONS_2000005"/>
+        <owl:deprecated rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">true</owl:deprecated>
+        <obo:IAO_0000115 xml:lang="en">a dietary pattern that define the quantity, variety or combination of different food in a globalized diet</obo:IAO_0000115>
+        <obo:IAO_0100001 rdf:resource="http://purl.obolibrary.org/obo/ONS_1000065"/>
+        <obo:IAO_0000412 rdf:resource="http://purl.obolibrary.org/obo/ons.owl"/>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/ONS_2000045 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/ONS_2000045">
+        <rdfs:label xml:lang="en">obsolete: rural diet dietary pattern</rdfs:label>
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/ONS_2000005"/>
+        <owl:deprecated rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">true</owl:deprecated>
+        <obo:IAO_0000115 xml:lang="en">a dietary pattern that define the quantity, variety or combination of different food in a rural diet</obo:IAO_0000115>
+        <obo:IAO_0100001 rdf:resource="http://purl.obolibrary.org/obo/ONS_1000066"/>
+        <obo:IAO_0000412 rdf:resource="http://purl.obolibrary.org/obo/ons.owl"/>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/PATO_0000001 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/PATO_0000001">
+        <rdfs:label>quality</rdfs:label>
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/BFO_0000020"/>
+        <obo:IAO_0000115>A dependent entity that inheres in a bearer by virtue of how the bearer is related to other entities</obo:IAO_0000115>
+        <obo:IAO_0000412 rdf:resource="http://purl.obolibrary.org/obo/ons.owl"/>
+    </owl:Class>
+</rdf:RDF>
+
+
+
+<!-- Generated by the OWL API (version 3.2.4.1806) http://owlapi.sourceforge.net -->
+
