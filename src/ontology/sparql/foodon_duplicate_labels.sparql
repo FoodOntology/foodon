@@ -17,4 +17,4 @@ WHERE {
 }
 ORDER BY ?label ?class
 
-# robot query --format TSV --input foodon-merged.ofn -s foodon_duplicate_labels.sparql foodon-duplicate-labels.tsv
+# robot query --format TSV --input ../foodon-merged.ofn -s foodon_duplicate_labels.sparql foodon-duplicate-labels.tsv
