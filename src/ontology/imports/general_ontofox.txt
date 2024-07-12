@@ -458,8 +458,10 @@ http://purl.obolibrary.org/obo/NCIT_C25464 # country
 
 http://purl.obolibrary.org/obo/NCIT_C45305 # Mixture
 http://purl.obolibrary.org/obo/NCIT_C45298 # Liquid
-http://purl.obolibrary.org/obo/NCIT_C80248 # Meal
-includeAllChildren
+# http://purl.obolibrary.org/obo/NCIT_C80248 # Meal
+http://purl.obolibrary.org/obo/NCIT_C80249 # Breakfast
+http://purl.obolibrary.org/obo/NCIT_C80250 # Lunch
+http://purl.obolibrary.org/obo/NCIT_C80251 # Supper
 
 # Accepting these animal terms though they resolve to another ontology?
 http://purl.obolibrary.org/obo/NCIT_C14238 # Mouse
