@@ -8292,6 +8292,7 @@ AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000115> <http://purl.ob
 AnnotationAssertion(<http://purl.org/dc/terms/contributor> <http://purl.obolibrary.org/obo/FOODON_00004386> "https://orcid.org/0000-0002-8844-9165")
 AnnotationAssertion(<http://purl.org/dc/terms/date> <http://purl.obolibrary.org/obo/FOODON_00004386> "2023-07-11T20:36:27Z"^^xsd:dateTime)
 AnnotationAssertion(rdfs:label <http://purl.obolibrary.org/obo/FOODON_00004386> "mandarin orange (raw)"@en)
+EquivalentClasses(<http://purl.obolibrary.org/obo/FOODON_00004386> ObjectIntersectionOf(<http://purl.obolibrary.org/obo/FOODON_00003555> ObjectSomeValuesFrom(<http://purl.obolibrary.org/obo/RO_0000086> <http://purl.obolibrary.org/obo/FOODON_00004348>)))
 SubClassOf(<http://purl.obolibrary.org/obo/FOODON_00004386> <http://purl.obolibrary.org/obo/FOODON_00003555>)
 
 # Class: <http://purl.obolibrary.org/obo/FOODON_00004387> (kiwifruit)
