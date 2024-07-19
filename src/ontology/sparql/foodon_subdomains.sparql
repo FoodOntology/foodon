@@ -1,0 +1,27 @@
+PREFIX owl: <http://www.w3.org/2002/07/owl#>
+PREFIX rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>
+PREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#>
+PREFIX obo:  <http://purl.obolibrary.org/obo/>
+PREFIX foodon:  <http://purl.obolibrary.org/obo/FOODON_>
+
+select
+	?search	
+	(STR(?lable) AS ?name) 
+	(count(?class) as ?total) 
+	WHERE {
+	values ?search {
+		foodon:03411041 # Chemical food component
+		obo:OBI_0100026 # Organism (NCBI taxonomy)
+		foodon:03411564 # Food product organismal source
+		foodon:03420116 # Part of organism (anatomy)
+		foodon:00002381 # Food product by organism (~single component food)
+		foodon:00002501 # Multi-component food product
+		foodon:00002451 # Food transformation process
+		foodon:00003368 # Food contact material
+		foodon:03400361 # Agency food product type
+
+	}
+	{?class rdfs:subClassOf+ ?search}
+	OPTIONAL {?search rdfs:label ?lable.}
+} 
+GROUP BY ?search ?lable

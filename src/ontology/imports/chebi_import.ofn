@@ -191,7 +191,6 @@ Declaration(Class(obo:CHEBI_23403))
 Declaration(Class(obo:CHEBI_23448))
 Declaration(Class(obo:CHEBI_23456))
 Declaration(Class(obo:CHEBI_23509))
-Declaration(Class(obo:CHEBI_23652))
 Declaration(Class(obo:CHEBI_23677))
 Declaration(Class(obo:CHEBI_23818))
 Declaration(Class(obo:CHEBI_23824))
@@ -405,6 +404,7 @@ Declaration(Class(obo:CHEBI_28260))
 Declaration(Class(obo:CHEBI_28383))
 Declaration(Class(obo:CHEBI_28384))
 Declaration(Class(obo:CHEBI_28659))
+Declaration(Class(obo:CHEBI_28675))
 Declaration(Class(obo:CHEBI_28694))
 Declaration(Class(obo:CHEBI_28757))
 Declaration(Class(obo:CHEBI_2877))
@@ -1537,6 +1537,7 @@ AnnotationAssertion(obo:IAO_0000115 obo:CHEBI_17309 "Any mixture of complex, col
 AnnotationAssertion(obo:IAO_0000412 obo:CHEBI_17309 obo:chebi.owl)
 AnnotationAssertion(rdfs:label obo:CHEBI_17309 "pectin")
 SubClassOf(obo:CHEBI_17309 obo:CHEBI_24174)
+SubClassOf(obo:CHEBI_17309 obo:CHEBI_60004)
 
 # Class: obo:CHEBI_17376 (cystine)
 
@@ -2352,13 +2353,6 @@ AnnotationAssertion(obo:IAO_0000412 obo:CHEBI_23509 obo:chebi.owl)
 AnnotationAssertion(rdfs:label obo:CHEBI_23509 "cysteine derivative")
 SubClassOf(obo:CHEBI_23509 obo:CHEBI_83821)
 
-# Class: obo:CHEBI_23652 (dextrins)
-
-AnnotationAssertion(obo:IAO_0000115 obo:CHEBI_23652 "Glucans produced by the hydrolysis of starch or glycogen. They are mixtures of polymers of D-glucose units linked by alpha(1->4) or alpha(1->6) glycosidic bonds.")
-AnnotationAssertion(obo:IAO_0000412 obo:CHEBI_23652 obo:chebi.owl)
-AnnotationAssertion(rdfs:label obo:CHEBI_23652 "dextrins")
-SubClassOf(obo:CHEBI_23652 obo:CHEBI_37163)
-
 # Class: obo:CHEBI_23677 (diazole)
 
 AnnotationAssertion(obo:IAO_0000115 obo:CHEBI_23677 "An azole that is either one of a pair of heterocyclic organic compounds comprising three carbon atoms and two nitrogen atoms arranged in a ring.")
@@ -2848,7 +2842,7 @@ SubClassOf(obo:CHEBI_25111 obo:CHEBI_38251)
 AnnotationAssertion(obo:IAO_0000115 obo:CHEBI_25140 "A dextrin in which the D-glucose units are linked by alpha-(1->4) glycosidic bonds.")
 AnnotationAssertion(obo:IAO_0000412 obo:CHEBI_25140 obo:chebi.owl)
 AnnotationAssertion(rdfs:label obo:CHEBI_25140 "maltodextrin")
-SubClassOf(obo:CHEBI_25140 obo:CHEBI_23652)
+SubClassOf(obo:CHEBI_25140 obo:CHEBI_28675)
 
 # Class: obo:CHEBI_25186 (p-menthane monoterpenoid)
 
@@ -3874,6 +3868,13 @@ AnnotationAssertion(obo:IAO_0000412 obo:CHEBI_28659 obo:chebi.owl)
 AnnotationAssertion(rdfs:label obo:CHEBI_28659 "phosphorus atom")
 SubClassOf(obo:CHEBI_28659 obo:CHEBI_25585)
 SubClassOf(obo:CHEBI_28659 obo:CHEBI_33300)
+
+# Class: obo:CHEBI_28675 (dextrin)
+
+AnnotationAssertion(obo:IAO_0000115 obo:CHEBI_28675 "Glucans produced by the hydrolysis of starch or glycogen. They are mixtures of polymers of D-glucose units linked by alpha(1->4) or alpha(1->6) glycosidic bonds.")
+AnnotationAssertion(obo:IAO_0000412 obo:CHEBI_28675 obo:chebi.owl)
+AnnotationAssertion(rdfs:label obo:CHEBI_28675 "dextrin")
+SubClassOf(obo:CHEBI_28675 obo:CHEBI_37163)
 
 # Class: obo:CHEBI_28694 (copper atom)
 
@@ -7887,8 +7888,7 @@ SubClassOf(obo:CHEBI_83811 obo:CHEBI_83821)
 AnnotationAssertion(obo:IAO_0000115 obo:CHEBI_83813 "Any of the 23 alpha-amino acids that are precursors to proteins, and are incorporated into proteins during translation. The group includes the 20 amino acids encoded by the nuclear genes of eukaryotes together with selenocysteine, pyrrolysine, and N-formylmethionine. Apart from glycine, which is non-chiral, all have L configuration.")
 AnnotationAssertion(obo:IAO_0000412 obo:CHEBI_83813 obo:chebi.owl)
 AnnotationAssertion(rdfs:label obo:CHEBI_83813 "proteinogenic amino acid")
-SubClassOf(obo:CHEBI_83813 obo:CHEBI_33575)
-SubClassOf(obo:CHEBI_83813 obo:CHEBI_35352)
+SubClassOf(obo:CHEBI_83813 obo:CHEBI_33709)
 
 # Class: obo:CHEBI_83821 (amino acid derivative)
 

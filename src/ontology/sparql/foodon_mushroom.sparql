@@ -1,0 +1,13 @@
+PREFIX owl: <http://www.w3.org/2002/07/owl#>
+PREFIX rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>
+PREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#>
+PREFIX obo:  <http://purl.obolibrary.org/obo/>
+
+select ?class ?label where {
+  BIND (obo:FOODON_00001287 as ?search).
+  {?search rdfs:subClassOf+ ?class}
+  UNION
+  {?class rdfs:subClassOf* ?search}
+  OPTIONAL {?class rdfs:label ?label.}
+}
+

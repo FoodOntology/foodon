@@ -9,12 +9,16 @@ Prefix(rdfs:=<http://www.w3.org/2000/01/rdf-schema#>)
 
 Ontology(<http://purl.obolibrary.org/obo/foodon/imports/ons_import.ofn>
 
-Declaration(Class(obo:BFO_0000017))
+Declaration(Class(obo:BFO_0000015))
+Declaration(Class(obo:BFO_0000020))
+Declaration(Class(obo:BFO_0000027))
+Declaration(Class(obo:BFO_0000040))
+Declaration(Class(obo:BFO_0000141))
 Declaration(Class(obo:IAO_0000027))
 Declaration(Class(obo:IAO_0000030))
 Declaration(Class(obo:IAO_0000033))
-Declaration(Class(obo:IAO_0000100))
 Declaration(Class(obo:IAO_0000104))
+Declaration(Class(obo:OBI_0000011))
 Declaration(Class(obo:OBI_0000272))
 Declaration(Class(obo:ONS_0000080))
 Declaration(Class(obo:ONS_0000081))
@@ -30,7 +34,6 @@ Declaration(Class(obo:ONS_1000005))
 Declaration(Class(obo:ONS_1000006))
 Declaration(Class(obo:ONS_1000007))
 Declaration(Class(obo:ONS_1000008))
-Declaration(Class(obo:ONS_1000009))
 Declaration(Class(obo:ONS_1000010))
 Declaration(Class(obo:ONS_1000016))
 Declaration(Class(obo:ONS_1000017))
@@ -81,14 +84,10 @@ Declaration(Class(obo:ONS_1000062))
 Declaration(Class(obo:ONS_1000064))
 Declaration(Class(obo:ONS_1000065))
 Declaration(Class(obo:ONS_1000066))
-Declaration(Class(obo:ONS_2000001))
 Declaration(Class(obo:ONS_2000002))
 Declaration(Class(obo:ONS_2000003))
 Declaration(Class(obo:ONS_2000004))
 Declaration(Class(obo:ONS_2000005))
-Declaration(Class(obo:ONS_2000006))
-Declaration(Class(obo:ONS_2000007))
-Declaration(Class(obo:ONS_2000008))
 Declaration(Class(obo:ONS_2000019))
 Declaration(Class(obo:ONS_2000020))
 Declaration(Class(obo:ONS_2000021))
@@ -107,12 +106,15 @@ Declaration(Class(obo:ONS_2000042))
 Declaration(Class(obo:ONS_2000043))
 Declaration(Class(obo:ONS_2000044))
 Declaration(Class(obo:ONS_2000045))
+Declaration(Class(obo:PATO_0000001))
 Declaration(AnnotationProperty(obo:IAO_0000111))
 Declaration(AnnotationProperty(obo:IAO_0000114))
 Declaration(AnnotationProperty(obo:IAO_0000115))
 Declaration(AnnotationProperty(obo:IAO_0000119))
 Declaration(AnnotationProperty(obo:IAO_0000412))
+Declaration(AnnotationProperty(obo:IAO_0100001))
 Declaration(AnnotationProperty(rdfs:label))
+Declaration(AnnotationProperty(owl:deprecated))
 ############################
 #   Annotation Properties
 ############################
@@ -172,6 +174,15 @@ AnnotationAssertion(rdfs:label obo:IAO_0000119 "definition_source")
 
 AnnotationAssertion(rdfs:label obo:IAO_0000412 "imported from"@en)
 
+# Annotation Property: obo:IAO_0100001 (term replaced by)
+
+AnnotationAssertion(obo:IAO_0000111 obo:IAO_0100001 "term replaced by"@en)
+AnnotationAssertion(obo:IAO_0000114 obo:IAO_0100001 obo:IAO_0000125)
+AnnotationAssertion(obo:IAO_0000115 obo:IAO_0100001 "Use on obsolete terms, relating the term to another term that can be used as a substitute"@en)
+AnnotationAssertion(obo:IAO_0000119 obo:IAO_0100001 "Person:Alan Ruttenberg"@en)
+AnnotationAssertion(rdfs:label obo:IAO_0100001 "term replaced by")
+AnnotationAssertion(rdfs:label obo:IAO_0100001 "term replaced by"@en)
+
 # Annotation Property: rdfs:label (label)
 
 AnnotationAssertion(obo:IAO_0000111 rdfs:label "label")
@@ -185,27 +196,105 @@ AnnotationAssertion(rdfs:label rdfs:label "label"@en)
 #   Classes
 ############################
 
-# Class: obo:IAO_0000100 (data set)
+# Class: obo:BFO_0000015 (process)
 
-AnnotationAssertion(obo:IAO_0000111 obo:IAO_0000100 "data set"@en)
-AnnotationAssertion(obo:IAO_0000114 obo:IAO_0000100 obo:IAO_0000125)
-AnnotationAssertion(obo:IAO_0000115 obo:IAO_0000100 "A data item that is an aggregate of other data items of the same type that have something in common. Averages and distributions can be determined for data sets."@en)
-AnnotationAssertion(obo:IAO_0000119 obo:IAO_0000100 "OBI_0000042"@en)
-AnnotationAssertion(obo:IAO_0000119 obo:IAO_0000100 "group:OBI"@en)
-AnnotationAssertion(obo:IAO_0000412 obo:IAO_0000100 obo:ons.owl)
-AnnotationAssertion(rdfs:label obo:IAO_0000100 "data set"@en)
-SubClassOf(obo:IAO_0000100 obo:IAO_0000027)
+AnnotationAssertion(obo:IAO_0000115 obo:BFO_0000015 "An occurrent that has temporal proper parts and for some time t, p s-depends_on some material entity at t.")
+AnnotationAssertion(obo:IAO_0000115 obo:BFO_0000015 "An occurrent that has temporal proper parts and for some time t, p s-depends_on some material entity at t."@en)
+AnnotationAssertion(obo:IAO_0000115 obo:BFO_0000015 "p is a process = Def. p is an occurrent that has temporal proper parts and for some time t, p s-depends_on some material entity at t. (axiom label in BFO2 Reference: [083-003])")
+AnnotationAssertion(obo:IAO_0000115 obo:BFO_0000015 "p is a process = Def. p is an occurrent that has temporal proper parts and for some time t, p s-depends_on some material entity at t. (axiom label in BFO2 Reference: [083-003])"@en)
+AnnotationAssertion(obo:IAO_0000412 obo:BFO_0000015 obo:ons.owl)
+AnnotationAssertion(rdfs:label obo:BFO_0000015 "process")
+AnnotationAssertion(rdfs:label obo:BFO_0000015 "process"@en)
+
+# Class: obo:BFO_0000020 (specifically dependent continuant)
+
+AnnotationAssertion(obo:IAO_0000111 obo:BFO_0000020 "specifically dependent continuant"@en)
+AnnotationAssertion(obo:IAO_0000115 obo:BFO_0000020 "A continuant that inheres in or is borne by other entities. Every instance of A requires some specific instance of B which must always be the same.")
+AnnotationAssertion(obo:IAO_0000115 obo:BFO_0000020 "A continuant that inheres in or is borne by other entities. Every instance of A requires some specific instance of B which must always be the same."@en)
+AnnotationAssertion(obo:IAO_0000115 obo:BFO_0000020 "b is a relational specifically dependent continuant = Def. b is a specifically dependent continuant and there are n &gt; 1 independent continuants c1, … cn which are not spatial regions are such that for all 1  i &lt; j  n, ci  and cj share no common parts, are such that for each 1  i  n, b s-depends_on ci at every time t during the course of b’s existence (axiom label in BFO2 Reference: [131-004])")
+AnnotationAssertion(obo:IAO_0000115 obo:BFO_0000020 "b is a relational specifically dependent continuant = Def. b is a specifically dependent continuant and there are n &gt; 1 independent continuants c1, … cn which are not spatial regions are such that for all 1  i &lt; j  n, ci  and cj share no common parts, are such that for each 1  i  n, b s-depends_on ci at every time t during the course of b’s existence (axiom label in BFO2 Reference: [131-004])"@en)
+AnnotationAssertion(obo:IAO_0000115 obo:BFO_0000020 "b is a specifically dependent continuant = Def. b is a continuant & there is some independent continuant c which is not a spatial region and which is such that b s-depends_on c at every time t during the course of b’s existence. (axiom label in BFO2 Reference: [050-003])")
+AnnotationAssertion(obo:IAO_0000115 obo:BFO_0000020 "b is a specifically dependent continuant = Def. b is a continuant & there is some independent continuant c which is not a spatial region and which is such that b s-depends_on c at every time t during the course of b’s existence. (axiom label in BFO2 Reference: [050-003])"@en)
+AnnotationAssertion(obo:IAO_0000412 obo:BFO_0000020 obo:ons.owl)
+AnnotationAssertion(rdfs:label obo:BFO_0000020 "characteristic"@en)
+AnnotationAssertion(rdfs:label obo:BFO_0000020 "material property")
+AnnotationAssertion(rdfs:label obo:BFO_0000020 "specifically dependent continuant")
+AnnotationAssertion(rdfs:label obo:BFO_0000020 "specifically dependent continuant"@en)
+
+# Class: obo:BFO_0000027 (object aggregate)
+
+AnnotationAssertion(obo:IAO_0000119 obo:BFO_0000027 "ISBN:978-3-938793-98-5pp124-158#Thomas Bittner and Barry Smith, 'A Theory of Granular Partitions', in K. Munn and B. Smith (eds.), Applied Ontology: An Introduction, Frankfurt/Lancaster: ontos, 2008, 125-158.")
+AnnotationAssertion(obo:IAO_0000412 obo:BFO_0000027 obo:ons.owl)
+AnnotationAssertion(rdfs:label obo:BFO_0000027 "object aggregate"@en)
+SubClassOf(obo:BFO_0000027 obo:BFO_0000040)
+
+# Class: obo:BFO_0000040 (material entity)
+
+AnnotationAssertion(obo:IAO_0000111 obo:BFO_0000040 "material entity"@en)
+AnnotationAssertion(obo:IAO_0000115 obo:BFO_0000040 "An independent continuant that is spatially extended whose identity is independent of that of other entities and can be maintained through time.")
+AnnotationAssertion(obo:IAO_0000115 obo:BFO_0000040 "An independent continuant that is spatially extended whose identity is independent of that of other entities and can be maintained through time."@en)
+AnnotationAssertion(obo:IAO_0000412 obo:BFO_0000040 obo:ons.owl)
+AnnotationAssertion(rdfs:label obo:BFO_0000040 "material entity")
+AnnotationAssertion(rdfs:label obo:BFO_0000040 "material entity"@en)
+
+# Class: obo:BFO_0000141 (immaterial entity)
+
+AnnotationAssertion(obo:IAO_0000412 obo:BFO_0000141 obo:ons.owl)
+AnnotationAssertion(rdfs:label obo:BFO_0000141 "immaterial entity"@en)
+
+# Class: obo:IAO_0000027 (data item)
+
+AnnotationAssertion(obo:IAO_0000111 obo:IAO_0000027 "data item"@en)
+AnnotationAssertion(obo:IAO_0000114 obo:IAO_0000027 obo:IAO_0000125)
+AnnotationAssertion(obo:IAO_0000115 obo:IAO_0000027 "An information content entity that is intended to be a truthful statement about something (modulo, e.g., measurement precision or other systematic errors) and is constructed/acquired by a method which reliably tends to produce (approximately) truthful statements."@en)
+AnnotationAssertion(obo:IAO_0000412 obo:IAO_0000027 obo:ons.owl)
+AnnotationAssertion(rdfs:label obo:IAO_0000027 "data item"@en)
+SubClassOf(obo:IAO_0000027 obo:IAO_0000030)
+
+# Class: obo:IAO_0000030 (information)
+
+AnnotationAssertion(obo:IAO_0000111 obo:IAO_0000030 "information content entity"@en)
+AnnotationAssertion(obo:IAO_0000114 obo:IAO_0000030 obo:IAO_0000122)
+AnnotationAssertion(obo:IAO_0000115 obo:IAO_0000030 "A generically dependent continuant that is about some thing."@en)
+AnnotationAssertion(obo:IAO_0000119 obo:IAO_0000030 "OBI_0000142"@en)
+AnnotationAssertion(obo:IAO_0000412 obo:IAO_0000030 obo:ons.owl)
+AnnotationAssertion(rdfs:label obo:IAO_0000030 "information")
+AnnotationAssertion(rdfs:label obo:IAO_0000030 "information content entity"@en)
+AnnotationAssertion(rdfs:label obo:IAO_0000030 "information entity")
+
+# Class: obo:IAO_0000033 (directive information entity)
+
+AnnotationAssertion(obo:IAO_0000114 obo:IAO_0000033 obo:IAO_0000122)
+AnnotationAssertion(obo:IAO_0000115 obo:IAO_0000033 "An information content entity whose concretizations indicate to their bearer how to realize them in a process."@en)
+AnnotationAssertion(obo:IAO_0000412 obo:IAO_0000033 obo:ons.owl)
+AnnotationAssertion(rdfs:label obo:IAO_0000033 "directive information entity")
+AnnotationAssertion(rdfs:label obo:IAO_0000033 "directive information entity"@en)
+SubClassOf(obo:IAO_0000033 obo:IAO_0000030)
 
 # Class: obo:IAO_0000104 (plan specification)
 
 AnnotationAssertion(obo:IAO_0000111 obo:IAO_0000104 "plan specification"@en)
 AnnotationAssertion(obo:IAO_0000114 obo:IAO_0000104 obo:IAO_0000122)
 AnnotationAssertion(obo:IAO_0000115 obo:IAO_0000104 "A directive information entity with action specifications and objective specifications as parts that, when concretized, is realized in a process in which the bearer tries to achieve the objectives by taking the actions specified."@en)
+AnnotationAssertion(obo:IAO_0000115 obo:IAO_0000104 "A directive information entity with action specifications and objective specifications as parts, and that may be concretized as a realizable entity that, if realized, is realized in a process in which the bearer tries to achieve the objectives by taking the actions specified."@en)
 AnnotationAssertion(obo:IAO_0000119 obo:IAO_0000104 "OBI Plan and Planned Process branch"@en)
 AnnotationAssertion(obo:IAO_0000119 obo:IAO_0000104 "OBI_0000344"@en)
 AnnotationAssertion(obo:IAO_0000412 obo:IAO_0000104 obo:ons.owl)
+AnnotationAssertion(rdfs:label obo:IAO_0000104 "plan specification")
 AnnotationAssertion(rdfs:label obo:IAO_0000104 "plan specification"@en)
 SubClassOf(obo:IAO_0000104 obo:IAO_0000033)
+
+# Class: obo:OBI_0000011 (planned process)
+
+AnnotationAssertion(obo:IAO_0000111 obo:OBI_0000011 "planned process")
+AnnotationAssertion(obo:IAO_0000111 obo:OBI_0000011 "planned process"@en)
+AnnotationAssertion(obo:IAO_0000114 obo:OBI_0000011 obo:IAO_0000122)
+AnnotationAssertion(obo:IAO_0000115 obo:OBI_0000011 "A process that realizes a plan which is the concretization of a plan specification."@en)
+AnnotationAssertion(obo:IAO_0000115 obo:OBI_0000011 "A processual entity that realizes a plan which is the concretization of a plan specification."@en)
+AnnotationAssertion(obo:IAO_0000119 obo:OBI_0000011 "branch derived")
+AnnotationAssertion(obo:IAO_0000412 obo:OBI_0000011 obo:ons.owl)
+AnnotationAssertion(rdfs:label obo:OBI_0000011 "planned process"@en)
+SubClassOf(obo:OBI_0000011 obo:BFO_0000015)
 
 # Class: obo:OBI_0000272 (protocol)
 
@@ -214,16 +303,16 @@ AnnotationAssertion(obo:IAO_0000114 obo:OBI_0000272 obo:IAO_0000122)
 AnnotationAssertion(obo:IAO_0000115 obo:OBI_0000272 "A plan specification which has sufficient level of detail and quantitative information to communicate it between investigation agents, so that different investigation agents will reliably be able to independently reproduce the process."@en)
 AnnotationAssertion(obo:IAO_0000119 obo:OBI_0000272 "OBI branch derived + wikipedia (http://en.wikipedia.org/wiki/Protocol_%28natural_sciences%29)"@en)
 AnnotationAssertion(obo:IAO_0000412 obo:OBI_0000272 obo:ons.owl)
+AnnotationAssertion(rdfs:label obo:OBI_0000272 "protocol")
 AnnotationAssertion(rdfs:label obo:OBI_0000272 "protocol"@en)
 SubClassOf(obo:OBI_0000272 obo:IAO_0000104)
 
 # Class: obo:ONS_0000080 (individual regular diet)
 
-AnnotationAssertion(obo:IAO_0000115 obo:ONS_0000080 "The regular course of eating and drinking adopted by an organism."@en)
+AnnotationAssertion(obo:IAO_0000115 obo:ONS_0000080 "A descriptive diet which is the regular course of eating and drinking adopted by an organism."@en)
 AnnotationAssertion(obo:IAO_0000119 obo:ONS_0000080 "https://github.com/enpadasi/Ontology-for-Nutritional-Studies")
 AnnotationAssertion(obo:IAO_0000412 obo:ONS_0000080 obo:ons.owl)
 AnnotationAssertion(rdfs:label obo:ONS_0000080 "individual regular diet"@en)
-SubClassOf(obo:ONS_0000080 obo:IAO_0000030)
 SubClassOf(obo:ONS_0000080 obo:ONS_1000008)
 
 # Class: obo:ONS_0000081 (study intervention diet)
@@ -231,47 +320,45 @@ SubClassOf(obo:ONS_0000080 obo:ONS_1000008)
 AnnotationAssertion(obo:IAO_0000115 obo:ONS_0000081 "A diet administered during an intervention study. It usually comprises the adoption of a certain nutritional intervention, intended as the prescription of consuming or not consuming certain food, and follows a precise study design. Intervention studies usually compare at least two subgroups of a population, one control group receiving a null nutritional intervention, and one or more test groups receiving the intervention"@en)
 AnnotationAssertion(obo:IAO_0000412 obo:ONS_0000081 obo:ons.owl)
 AnnotationAssertion(rdfs:label obo:ONS_0000081 "study intervention diet"@en)
-SubClassOf(obo:ONS_0000081 obo:ONS_0000080)
 SubClassOf(obo:ONS_0000081 obo:ONS_1000045)
 
 # Class: obo:ONS_0000082 (clinically prescribed diet)
 
-AnnotationAssertion(obo:IAO_0000115 obo:ONS_0000082 "A diet prescribed by a physician/ nutritionist to meet spe-cific nutritional needs of a person")
+AnnotationAssertion(obo:IAO_0000115 obo:ONS_0000082 "A diet prescribed by a physician/ nutritionist to meet specific nutritional needs of a person."@en)
 AnnotationAssertion(obo:IAO_0000412 obo:ONS_0000082 obo:ons.owl)
 AnnotationAssertion(rdfs:label obo:ONS_0000082 "clinically prescribed diet"@en)
-SubClassOf(obo:ONS_0000082 obo:ONS_0000080)
 SubClassOf(obo:ONS_0000082 obo:ONS_1000007)
 
 # Class: obo:ONS_0000083 (population regular diet)
 
-AnnotationAssertion(obo:IAO_0000115 obo:ONS_0000083 "The regular course of eating and drinking adopted by a population in a certain geographical area, or in a certain cultural setting, or following certain common eating behaviour."@en)
+AnnotationAssertion(obo:IAO_0000115 obo:ONS_0000083 "A descriptive diet consumed by a population in a certain geographical area, or in a certain cultural setting, or following certain common eating behaviour."@en)
 AnnotationAssertion(obo:IAO_0000412 obo:ONS_0000083 obo:ons.owl)
 AnnotationAssertion(rdfs:label obo:ONS_0000083 "population regular diet"@en)
-SubClassOf(obo:ONS_0000083 obo:ONS_0000080)
 SubClassOf(obo:ONS_0000083 obo:ONS_1000008)
 
 # Class: obo:ONS_0000085 (meal)
 
-AnnotationAssertion(obo:IAO_0000115 obo:ONS_0000085 "A meal is an eating/drinking occasion which usually accours at certain time during the day. During a meal, through processes of eating and drinking, food are consumed.")
+AnnotationAssertion(obo:IAO_0000115 obo:ONS_0000085 "A meal is an eating/drinking occasion which usually occurs at certain time during the day."@en)
 AnnotationAssertion(obo:IAO_0000412 obo:ONS_0000085 obo:ons.owl)
 AnnotationAssertion(rdfs:label obo:ONS_0000085 "meal")
-SubClassOf(obo:ONS_0000085 obo:BFO_0000017)
+SubClassOf(obo:ONS_0000085 obo:OBI_0000011)
 
-# Class: obo:ONS_0000094 (dietary pattern)
+# Class: obo:ONS_0000094 (obsolete: individual dietary pattern)
 
-AnnotationAssertion(obo:IAO_0000115 obo:ONS_0000094 "Dietary pattern represent the quantity, proportion, variety and combination of different foods and drinks consumed in meals, and the frequency with which they are habitually consumed."@en)
-AnnotationAssertion(obo:IAO_0000119 obo:ONS_0000094 "https://www.sciencedirect.com/topics/medicine-and-dentistry/dietary-pattern")
+AnnotationAssertion(obo:IAO_0000115 obo:ONS_0000094 "A descriptive diet pertaining to an individual organism."@en)
 AnnotationAssertion(obo:IAO_0000412 obo:ONS_0000094 obo:ons.owl)
-AnnotationAssertion(rdfs:label obo:ONS_0000094 "dietary pattern"@en)
-SubClassOf(obo:ONS_0000094 obo:IAO_0000030)
+AnnotationAssertion(obo:IAO_0100001 obo:ONS_0000094 obo:ONS_0000080)
+AnnotationAssertion(rdfs:label obo:ONS_0000094 "obsolete: individual dietary pattern"@en)
+AnnotationAssertion(owl:deprecated obo:ONS_0000094 "true"^^xsd:boolean)
+SubClassOf(obo:ONS_0000094 obo:ONS_1000008)
 
 # Class: obo:ONS_1000001 (diet)
 
-AnnotationAssertion(obo:IAO_0000115 obo:ONS_1000001 "In nutrition, diet is the sum of food consumed by a person or other organism"@en)
+AnnotationAssertion(obo:IAO_0000115 obo:ONS_1000001 "A collection of food types or items which have organoleptic, nutritional, availability, safety, meal time, or socially relevant characteristics with respect to a consuming individual or population."@en)
 AnnotationAssertion(obo:IAO_0000119 obo:ONS_1000001 "https://en.wikipedia.org/wiki/Diet_(nutrition)")
 AnnotationAssertion(obo:IAO_0000412 obo:ONS_1000001 obo:ons.owl)
 AnnotationAssertion(rdfs:label obo:ONS_1000001 "diet"@en)
-SubClassOf(obo:ONS_1000001 obo:IAO_0000030)
+SubClassOf(obo:ONS_1000001 obo:BFO_0000027)
 
 # Class: obo:ONS_1000002 (diet by digestive capability)
 
@@ -287,11 +374,11 @@ AnnotationAssertion(obo:IAO_0000412 obo:ONS_1000003 obo:ons.owl)
 AnnotationAssertion(rdfs:label obo:ONS_1000003 "diet by type of food"@en)
 SubClassOf(obo:ONS_1000003 obo:ONS_1000001)
 
-# Class: obo:ONS_1000004 (diet by agriculture treatment)
+# Class: obo:ONS_1000004 (diet by agricultural treatment)
 
 AnnotationAssertion(obo:IAO_0000115 obo:ONS_1000004 "A diet which involves food produced under certain agricultural conditions."@en)
 AnnotationAssertion(obo:IAO_0000412 obo:ONS_1000004 obo:ons.owl)
-AnnotationAssertion(rdfs:label obo:ONS_1000004 "diet by agriculture treatment"@en)
+AnnotationAssertion(rdfs:label obo:ONS_1000004 "diet by agricultural treatment"@en)
 SubClassOf(obo:ONS_1000004 obo:ONS_1000001)
 
 # Class: obo:ONS_1000005 (diet by nutritional composition)
@@ -301,16 +388,16 @@ AnnotationAssertion(obo:IAO_0000412 obo:ONS_1000005 obo:ons.owl)
 AnnotationAssertion(rdfs:label obo:ONS_1000005 "diet by nutritional composition"@en)
 SubClassOf(obo:ONS_1000005 obo:ONS_1000001)
 
-# Class: obo:ONS_1000006 (proscribed diet)
+# Class: obo:ONS_1000006 (restrictive diet)
 
 AnnotationAssertion(obo:IAO_0000115 obo:ONS_1000006 "An eating pattern that excludes a given diet."@en)
 AnnotationAssertion(obo:IAO_0000412 obo:ONS_1000006 obo:ons.owl)
-AnnotationAssertion(rdfs:label obo:ONS_1000006 "proscribed diet"@en)
-SubClassOf(obo:ONS_1000006 obo:ONS_1000001)
+AnnotationAssertion(rdfs:label obo:ONS_1000006 "restrictive diet"@en)
+SubClassOf(obo:ONS_1000006 obo:ONS_1000007)
 
 # Class: obo:ONS_1000007 (prescribed diet)
 
-AnnotationAssertion(obo:IAO_0000115 obo:ONS_1000007 "A diet assigned as a dietary pattern objective to an individual organism or group."@en)
+AnnotationAssertion(obo:IAO_0000115 obo:ONS_1000007 "A diet which is prescribed to meet some dietary pattern objective for an individual organism or group."@en)
 AnnotationAssertion(obo:IAO_0000412 obo:ONS_1000007 obo:ons.owl)
 AnnotationAssertion(rdfs:label obo:ONS_1000007 "prescribed diet"@en)
 SubClassOf(obo:ONS_1000007 obo:ONS_1000001)
@@ -318,24 +405,17 @@ SubClassOf(obo:ONS_1000007 obo:ONS_1000001)
 # Class: obo:ONS_1000008 (descriptive diet)
 
 AnnotationAssertion(obo:IAO_0000114 obo:ONS_1000008 obo:IAO_0000428)
-AnnotationAssertion(obo:IAO_0000115 obo:ONS_1000008 "A set of classes for the description of diet. A descriptive diet consists of some data set"@en)
+AnnotationAssertion(obo:IAO_0000115 obo:ONS_1000008 "A diet which represents food types or items consumed in the regular course of eating and drinking by an individual or population over some duration of time."@en)
 AnnotationAssertion(obo:IAO_0000412 obo:ONS_1000008 obo:ons.owl)
 AnnotationAssertion(rdfs:label obo:ONS_1000008 "descriptive diet"@en)
 SubClassOf(obo:ONS_1000008 obo:ONS_1000001)
 
-# Class: obo:ONS_1000009 (individual dietary pattern)
+# Class: obo:ONS_1000010 (recommended diet)
 
-AnnotationAssertion(obo:IAO_0000115 obo:ONS_1000009 "An eating pattern pertaining to a single organism (an instance of organism). This can be used descriptively or prescriptively."@en)
-AnnotationAssertion(obo:IAO_0000412 obo:ONS_1000009 obo:ons.owl)
-AnnotationAssertion(rdfs:label obo:ONS_1000009 "individual dietary pattern"@en)
-SubClassOf(obo:ONS_1000009 obo:ONS_0000094)
-
-# Class: obo:ONS_1000010 (population dietary pattern)
-
-AnnotationAssertion(obo:IAO_0000115 obo:ONS_1000010 "An eating pattern pertaining to a population or sub-population of organism.  This can be used descriptively or prescriptively."@en)
+AnnotationAssertion(obo:IAO_0000115 obo:ONS_1000010 "A prescribed diet which pertains to a population or sub-population of organism."@en)
 AnnotationAssertion(obo:IAO_0000412 obo:ONS_1000010 obo:ons.owl)
-AnnotationAssertion(rdfs:label obo:ONS_1000010 "population dietary pattern"@en)
-SubClassOf(obo:ONS_1000010 obo:ONS_0000094)
+AnnotationAssertion(rdfs:label obo:ONS_1000010 "recommended diet"@en)
+SubClassOf(obo:ONS_1000010 obo:ONS_1000007)
 
 # Class: obo:ONS_1000016 (carnivorous diet)
 
@@ -378,7 +458,7 @@ AnnotationAssertion(obo:IAO_0000115 obo:ONS_1000021 "A diet that excludes all an
 AnnotationAssertion(obo:IAO_0000119 obo:ONS_1000021 "https://en.wikipedia.org/wiki/Veganism")
 AnnotationAssertion(obo:IAO_0000412 obo:ONS_1000021 obo:ons.owl)
 AnnotationAssertion(rdfs:label obo:ONS_1000021 "vegan diet"@en)
-SubClassOf(obo:ONS_1000021 obo:ONS_1000019)
+SubClassOf(obo:ONS_1000021 obo:ONS_1000020)
 
 # Class: obo:ONS_1000022 (lacto-vegetarian diet)
 
@@ -438,14 +518,14 @@ SubClassOf(obo:ONS_1000029 obo:ONS_1000019)
 
 # Class: obo:ONS_1000030 (infant formula milk diet)
 
-AnnotationAssertion(obo:IAO_0000115 obo:ONS_1000030 "A diet involving formula milk  breast milk."@en)
+AnnotationAssertion(obo:IAO_0000115 obo:ONS_1000030 "A diet involving formula milk."@en)
 AnnotationAssertion(obo:IAO_0000412 obo:ONS_1000030 obo:ons.owl)
 AnnotationAssertion(rdfs:label obo:ONS_1000030 "infant formula milk diet"@en)
-SubClassOf(obo:ONS_1000030 obo:ONS_1000019)
+SubClassOf(obo:ONS_1000030 obo:ONS_1000003)
 
 # Class: obo:ONS_1000031 (diet by food texture)
 
-AnnotationAssertion(obo:IAO_0000115 obo:ONS_1000031 "A diet defined by the food texture."@en)
+AnnotationAssertion(obo:IAO_0000115 obo:ONS_1000031 "A diet defined by the texture of prepared food."@en)
 AnnotationAssertion(obo:IAO_0000412 obo:ONS_1000031 obo:ons.owl)
 AnnotationAssertion(rdfs:label obo:ONS_1000031 "diet by food texture"@en)
 SubClassOf(obo:ONS_1000031 obo:ONS_1000003)
@@ -460,7 +540,7 @@ SubClassOf(obo:ONS_1000032 obo:ONS_1000031)
 
 # Class: obo:ONS_1000033 (liquid diet)
 
-AnnotationAssertion(obo:IAO_0000115 obo:ONS_1000033 "A full liquid diet is made up only of fluids and foods that are normally liquid and foods that turn to liquid when they are at room temperature. You can not eat solid foods when you are on a full liquid diet."@en)
+AnnotationAssertion(obo:IAO_0000115 obo:ONS_1000033 "A full liquid diet is made up only of fluids and foods that are normally liquid and foods that turn to liquid when they are at room temperature. A full liquid diet excludes solid foods."@en)
 AnnotationAssertion(obo:IAO_0000119 obo:ONS_1000033 "https://medlineplus.gov/ency/patientinstructions/000206.htm")
 AnnotationAssertion(obo:IAO_0000412 obo:ONS_1000033 obo:ons.owl)
 AnnotationAssertion(rdfs:label obo:ONS_1000033 "liquid diet"@en)
@@ -502,12 +582,12 @@ AnnotationAssertion(obo:IAO_0000412 obo:ONS_1000037 obo:ons.owl)
 AnnotationAssertion(rdfs:label obo:ONS_1000037 "DASH diet"@en)
 SubClassOf(obo:ONS_1000037 obo:ONS_1000005)
 
-# Class: obo:ONS_1000038 (meditteranean diet)
+# Class: obo:ONS_1000038 (mediterranean diet)
 
 AnnotationAssertion(obo:IAO_0000115 obo:ONS_1000038 "A moderate-fat, restricted-calorie, Mediterranean diet is rich in vegetables and low in red meat, with poultry and fish replacing beef and lamb."@en)
 AnnotationAssertion(obo:IAO_0000119 obo:ONS_1000038 "PMID:18635428")
 AnnotationAssertion(obo:IAO_0000412 obo:ONS_1000038 obo:ons.owl)
-AnnotationAssertion(rdfs:label obo:ONS_1000038 "meditteranean diet"@en)
+AnnotationAssertion(rdfs:label obo:ONS_1000038 "mediterranean diet"@en)
 SubClassOf(obo:ONS_1000038 obo:ONS_1000005)
 
 # Class: obo:ONS_1000039 (high-carbohydrate diet)
@@ -541,16 +621,16 @@ AnnotationAssertion(obo:IAO_0000412 obo:ONS_1000042 obo:ons.owl)
 AnnotationAssertion(rdfs:label obo:ONS_1000042 "low fat diet"@en)
 SubClassOf(obo:ONS_1000042 obo:ONS_1000005)
 
-# Class: obo:ONS_1000043 (gluten free)
+# Class: obo:ONS_1000043 (gluten free diet)
 
 AnnotationAssertion(obo:IAO_0000115 obo:ONS_1000043 "A diet which minimises or eliminates the consumption of gluten."@en)
 AnnotationAssertion(obo:IAO_0000412 obo:ONS_1000043 obo:ons.owl)
-AnnotationAssertion(rdfs:label obo:ONS_1000043 "gluten free"@en)
+AnnotationAssertion(rdfs:label obo:ONS_1000043 "gluten free diet"@en)
 SubClassOf(obo:ONS_1000043 obo:ONS_1000005)
 
 # Class: obo:ONS_1000044 (self-prescribed diet)
 
-AnnotationAssertion(obo:IAO_0000115 obo:ONS_1000044 "A diet that an individual organism has chosen as a dietary pattern objective."@en)
+AnnotationAssertion(obo:IAO_0000115 obo:ONS_1000044 "A diet that an individual organism has chosen as an objective."@en)
 AnnotationAssertion(obo:IAO_0000412 obo:ONS_1000044 obo:ons.owl)
 AnnotationAssertion(rdfs:label obo:ONS_1000044 "self-prescribed diet"@en)
 SubClassOf(obo:ONS_1000044 obo:ONS_1000007)
@@ -621,32 +701,32 @@ SubClassOf(obo:ONS_1000053 obo:ONS_1000051)
 
 # Class: obo:ONS_1000054 (self-reported diet)
 
-AnnotationAssertion(obo:IAO_0000115 obo:ONS_1000054 "An ingested food data set which is subjectively recorded or recalled by an individual consuming the food"@en)
+AnnotationAssertion(obo:IAO_0000115 obo:ONS_1000054 "An ingested food data set which is subjectively recorded or recalled by an individual consuming the food."@en)
 AnnotationAssertion(obo:IAO_0000412 obo:ONS_1000054 obo:ons.owl)
 AnnotationAssertion(rdfs:label obo:ONS_1000054 "self-reported diet"@en)
-SubClassOf(obo:ONS_1000054 obo:ONS_2000008)
+SubClassOf(obo:ONS_1000054 obo:ONS_1000056)
 
 # Class: obo:ONS_1000055 (objectively-reported diet)
 
-AnnotationAssertion(obo:IAO_0000115 obo:ONS_1000055 "An ingested food data set which is observed by a researcher to have been consumed by a subject organism or population of organisms."@en)
+AnnotationAssertion(obo:IAO_0000115 obo:ONS_1000055 "A descriptive diet which is observed by a researcher to have been consumed by a subject organism or population of organisms."@en)
 AnnotationAssertion(obo:IAO_0000412 obo:ONS_1000055 obo:ons.owl)
 AnnotationAssertion(rdfs:label obo:ONS_1000055 "objectively-reported diet"@en)
-SubClassOf(obo:ONS_1000055 obo:ONS_2000008)
+SubClassOf(obo:ONS_1000055 obo:ONS_1000008)
 
 # Class: obo:ONS_1000056 (ingested food data set)
 
-AnnotationAssertion(obo:IAO_0000115 obo:ONS_1000056 "A dataset which contains a list of foods that an organism has ingested over some period of time."@en)
+AnnotationAssertion(obo:IAO_0000115 obo:ONS_1000056 "A descriptive diet which contains a list of foods that an individual organism has ingested over some period of time."@en)
 AnnotationAssertion(obo:IAO_0000412 obo:ONS_1000056 obo:ons.owl)
 AnnotationAssertion(rdfs:label obo:ONS_1000056 "ingested food data set"@en)
-SubClassOf(obo:ONS_1000056 obo:ONS_2000008)
+SubClassOf(obo:ONS_1000056 obo:ONS_1000008)
 
 # Class: obo:ONS_1000057 (NCI usual diet)
 
-AnnotationAssertion(obo:IAO_0000115 obo:ONS_1000057 "A long-term average daily intake of nutrients and/or foods calculated according to a National Cancer Institute statistical model."@en)
+AnnotationAssertion(obo:IAO_0000115 obo:ONS_1000057 "A population regular diet which is a long-term average daily intake of nutrients and/or foods calculated according to a National Cancer Institute statistical model."@en)
 AnnotationAssertion(obo:IAO_0000119 obo:ONS_1000057 "https://epi.grants.cancer.gov/diet/usualintakes/")
 AnnotationAssertion(obo:IAO_0000412 obo:ONS_1000057 obo:ons.owl)
 AnnotationAssertion(rdfs:label obo:ONS_1000057 "NCI usual diet"@en)
-SubClassOf(obo:ONS_1000057 obo:ONS_1000056)
+SubClassOf(obo:ONS_1000057 obo:ONS_0000083)
 
 # Class: obo:ONS_1000058 (ingested food log)
 
@@ -657,14 +737,14 @@ SubClassOf(obo:ONS_1000058 obo:ONS_1000056)
 
 # Class: obo:ONS_1000059 (daily food intake)
 
-AnnotationAssertion(obo:IAO_0000115 obo:ONS_1000059 "An ingested food data set for a given day."@en)
+AnnotationAssertion(obo:IAO_0000115 obo:ONS_1000059 "A descriptive diet containing food types or items pertinent to an average day or a given day which are ingested by an individual or organism population. The collection may indicate quantities or counts of food material."@en)
 AnnotationAssertion(obo:IAO_0000412 obo:ONS_1000059 obo:ons.owl)
 AnnotationAssertion(rdfs:label obo:ONS_1000059 "daily food intake"@en)
 SubClassOf(obo:ONS_1000059 obo:ONS_1000008)
 
 # Class: obo:ONS_1000060 (daily average nutritional intake)
 
-AnnotationAssertion(obo:IAO_0000115 obo:ONS_1000060 "A dataset containing the averaged daily intake of each of a variety of nutrients for an individual or organism population."@en)
+AnnotationAssertion(obo:IAO_0000115 obo:ONS_1000060 "A descriptive diet containing nutrient classes and their average daily intake quantity for an individual or organism population."@en)
 AnnotationAssertion(obo:IAO_0000412 obo:ONS_1000060 obo:ons.owl)
 AnnotationAssertion(rdfs:label obo:ONS_1000060 "daily average nutritional intake"@en)
 SubClassOf(obo:ONS_1000060 obo:ONS_1000008)
@@ -675,7 +755,7 @@ AnnotationAssertion(obo:IAO_0000115 obo:ONS_1000062 "A set of restrictions on fo
 AnnotationAssertion(obo:IAO_0000412 obo:ONS_1000062 obo:ons.owl)
 AnnotationAssertion(rdfs:label obo:ONS_1000062 "dietary regimen"@en)
 SubClassOf(obo:ONS_1000062 obo:OBI_0000272)
-SubClassOf(obo:ONS_1000062 obo:ONS_0000094)
+SubClassOf(obo:ONS_1000062 obo:ONS_1000007)
 
 # Class: obo:ONS_1000064 (dietary pattern data item)
 
@@ -698,191 +778,209 @@ AnnotationAssertion(obo:IAO_0000412 obo:ONS_1000066 obo:ons.owl)
 AnnotationAssertion(rdfs:label obo:ONS_1000066 "rural diet"@en)
 SubClassOf(obo:ONS_1000066 obo:ONS_1000005)
 
-# Class: obo:ONS_2000001 (timing of food intake)
-
-AnnotationAssertion(obo:IAO_0000115 obo:ONS_2000001 "The temporal aspect of a dietary pattern that details meal frequency or fasting as a daily or episodic activity."@en)
-AnnotationAssertion(obo:IAO_0000412 obo:ONS_2000001 obo:ons.owl)
-AnnotationAssertion(rdfs:label obo:ONS_2000001 "timing of food intake"@en)
-SubClassOf(obo:ONS_2000001 obo:ONS_0000094)
-
-# Class: obo:ONS_2000002 (dietary pattern by digestive capability)
+# Class: obo:ONS_2000002 (obsolete: dietary pattern by digestive capability)
 
 AnnotationAssertion(obo:IAO_0000115 obo:ONS_2000002 "A dietary pattern that define the quantity, variety or combination of different food in a diet by digestive capabilities."@en)
 AnnotationAssertion(obo:IAO_0000412 obo:ONS_2000002 obo:ons.owl)
-AnnotationAssertion(rdfs:label obo:ONS_2000002 "dietary pattern by digestive capability"@en)
+AnnotationAssertion(rdfs:label obo:ONS_2000002 "obsolete: dietary pattern by digestive capability"@en)
+AnnotationAssertion(owl:deprecated obo:ONS_2000002 "true"^^xsd:boolean)
 SubClassOf(obo:ONS_2000002 obo:ONS_0000094)
 
-# Class: obo:ONS_2000003 (dietary pattern by type of food)
+# Class: obo:ONS_2000003 (obsolete: dietary pattern by type of food)
 
 AnnotationAssertion(obo:IAO_0000115 obo:ONS_2000003 "A dietary pattern that define the quantity, variety or combination of different food in a diet by type of food"@en)
 AnnotationAssertion(obo:IAO_0000412 obo:ONS_2000003 obo:ons.owl)
-AnnotationAssertion(rdfs:label obo:ONS_2000003 "dietary pattern by type of food"@en)
+AnnotationAssertion(obo:IAO_0100001 obo:ONS_2000003 obo:ONS_1000003)
+AnnotationAssertion(rdfs:label obo:ONS_2000003 "obsolete: dietary pattern by type of food"@en)
+AnnotationAssertion(owl:deprecated obo:ONS_2000003 "true"^^xsd:boolean)
 SubClassOf(obo:ONS_2000003 obo:ONS_0000094)
 
-# Class: obo:ONS_2000004 (dietary pattern by agriculture treatment)
+# Class: obo:ONS_2000004 (obsolete: dietary pattern by agriculture treatment)
 
 AnnotationAssertion(obo:IAO_0000115 obo:ONS_2000004 "A dietary pattern that define the quantity, variety or combination of different food in a diet by agriculture treatment"@en)
 AnnotationAssertion(obo:IAO_0000412 obo:ONS_2000004 obo:ons.owl)
-AnnotationAssertion(rdfs:label obo:ONS_2000004 "dietary pattern by agriculture treatment"@en)
+AnnotationAssertion(rdfs:label obo:ONS_2000004 "obsolete: dietary pattern by agriculture treatment"@en)
+AnnotationAssertion(owl:deprecated obo:ONS_2000004 "true"^^xsd:boolean)
 SubClassOf(obo:ONS_2000004 obo:ONS_0000094)
 
-# Class: obo:ONS_2000005 (dietary pattern by nutritional composition)
+# Class: obo:ONS_2000005 (obsolete: dietary pattern by nutritional composition)
 
 AnnotationAssertion(obo:IAO_0000115 obo:ONS_2000005 "A dietary pattern that define the quantity, variety or combination of different food in a diet by nutritional composition"@en)
 AnnotationAssertion(obo:IAO_0000412 obo:ONS_2000005 obo:ons.owl)
-AnnotationAssertion(rdfs:label obo:ONS_2000005 "dietary pattern by nutritional composition"@en)
+AnnotationAssertion(obo:IAO_0100001 obo:ONS_2000005 obo:ONS_1000005)
+AnnotationAssertion(rdfs:label obo:ONS_2000005 "obsolete: dietary pattern by nutritional composition"@en)
+AnnotationAssertion(owl:deprecated obo:ONS_2000005 "true"^^xsd:boolean)
 SubClassOf(obo:ONS_2000005 obo:ONS_0000094)
 
-# Class: obo:ONS_2000006 (proscribed dietary pattern)
-
-AnnotationAssertion(obo:IAO_0000115 obo:ONS_2000006 "A dietary pattern that define the quantity, variety or combination of different food in a proscribed diet"@en)
-AnnotationAssertion(obo:IAO_0000412 obo:ONS_2000006 obo:ons.owl)
-AnnotationAssertion(rdfs:label obo:ONS_2000006 "proscribed dietary pattern"@en)
-SubClassOf(obo:ONS_2000006 obo:ONS_0000094)
-
-# Class: obo:ONS_2000007 (prescribed dietary pattern)
-
-AnnotationAssertion(obo:IAO_0000115 obo:ONS_2000007 "A dietary pattern that define the quantity, variety or combination of different food in a prescribed diet"@en)
-AnnotationAssertion(obo:IAO_0000412 obo:ONS_2000007 obo:ons.owl)
-AnnotationAssertion(rdfs:label obo:ONS_2000007 "prescribed dietary pattern"@en)
-SubClassOf(obo:ONS_2000007 obo:ONS_0000094)
-
-# Class: obo:ONS_2000008 (descriptive dietary pattern)
-
-AnnotationAssertion(obo:IAO_0000114 obo:ONS_2000008 obo:IAO_0000428)
-AnnotationAssertion(obo:IAO_0000115 obo:ONS_2000008 "A dietary pattern that define the quantity, variety or combination of different food in descriptive diet"@en)
-AnnotationAssertion(obo:IAO_0000412 obo:ONS_2000008 obo:ons.owl)
-AnnotationAssertion(rdfs:label obo:ONS_2000008 "descriptive dietary pattern"@en)
-SubClassOf(obo:ONS_2000008 obo:IAO_0000100)
-SubClassOf(obo:ONS_2000008 obo:ONS_0000094)
-
-# Class: obo:ONS_2000019 (dietary pattern by food organism)
+# Class: obo:ONS_2000019 (obsolete: dietary pattern by food organism)
 
 AnnotationAssertion(obo:IAO_0000115 obo:ONS_2000019 "A dietary pattern that define the quantity, variety or combination of different food in a diet by food organism"@en)
 AnnotationAssertion(obo:IAO_0000412 obo:ONS_2000019 obo:ons.owl)
-AnnotationAssertion(rdfs:label obo:ONS_2000019 "dietary pattern by food organism"@en)
+AnnotationAssertion(obo:IAO_0100001 obo:ONS_2000019 obo:ONS_1000019)
+AnnotationAssertion(rdfs:label obo:ONS_2000019 "obsolete: dietary pattern by food organism"@en)
+AnnotationAssertion(owl:deprecated obo:ONS_2000019 "true"^^xsd:boolean)
 SubClassOf(obo:ONS_2000019 obo:ONS_2000003)
 
-# Class: obo:ONS_2000020 (vegetarian dietary pattern)
+# Class: obo:ONS_2000020 (obsolete: vegetarian dietary pattern)
 
 AnnotationAssertion(obo:IAO_0000115 obo:ONS_2000020 "A dietary pattern that define the quantity, variety or combination of different food in a vegetarian diet"@en)
 AnnotationAssertion(obo:IAO_0000412 obo:ONS_2000020 obo:ons.owl)
-AnnotationAssertion(rdfs:label obo:ONS_2000020 "vegetarian dietary pattern"@en)
+AnnotationAssertion(obo:IAO_0100001 obo:ONS_2000020 obo:ONS_1000020)
+AnnotationAssertion(rdfs:label obo:ONS_2000020 "obsolete: vegetarian dietary pattern"@en)
+AnnotationAssertion(owl:deprecated obo:ONS_2000020 "true"^^xsd:boolean)
 SubClassOf(obo:ONS_2000020 obo:ONS_2000019)
 
-# Class: obo:ONS_2000021 (vegan dietary pattern)
+# Class: obo:ONS_2000021 (obsolete: vegan dietary pattern)
 
 AnnotationAssertion(obo:IAO_0000115 obo:ONS_2000021 "A dietary pattern that define the quantity, variety or combination of different food in a vegan diet"@en)
 AnnotationAssertion(obo:IAO_0000412 obo:ONS_2000021 obo:ons.owl)
-AnnotationAssertion(rdfs:label obo:ONS_2000021 "vegan dietary pattern"@en)
+AnnotationAssertion(obo:IAO_0100001 obo:ONS_2000021 obo:ONS_1000021)
+AnnotationAssertion(rdfs:label obo:ONS_2000021 "obsolete: vegan dietary pattern"@en)
+AnnotationAssertion(owl:deprecated obo:ONS_2000021 "true"^^xsd:boolean)
 SubClassOf(obo:ONS_2000021 obo:ONS_2000019)
 
-# Class: obo:ONS_2000022 (lacto-vegetarian dietary pattern)
+# Class: obo:ONS_2000022 (obsolete: lacto-vegetarian dietary pattern)
 
 AnnotationAssertion(obo:IAO_0000115 obo:ONS_2000022 "A dietary pattern that define the quantity, variety or combination of different food in a lacto-vegetarian diet"@en)
 AnnotationAssertion(obo:IAO_0000412 obo:ONS_2000022 obo:ons.owl)
-AnnotationAssertion(rdfs:label obo:ONS_2000022 "lacto-vegetarian dietary pattern"@en)
+AnnotationAssertion(obo:IAO_0100001 obo:ONS_2000022 obo:ONS_1000022)
+AnnotationAssertion(rdfs:label obo:ONS_2000022 "obsolete: lacto-vegetarian dietary pattern"@en)
+AnnotationAssertion(owl:deprecated obo:ONS_2000022 "true"^^xsd:boolean)
 SubClassOf(obo:ONS_2000022 obo:ONS_2000019)
 
-# Class: obo:ONS_2000023 (ovo-vegetarian dietary pattern)
+# Class: obo:ONS_2000023 (obsolete: ovo-vegetarian dietary pattern)
 
 AnnotationAssertion(obo:IAO_0000115 obo:ONS_2000023 "A dietary pattern that define the quantity, variety or combination of different food in a ovo-vegetarian diet"@en)
 AnnotationAssertion(obo:IAO_0000412 obo:ONS_2000023 obo:ons.owl)
-AnnotationAssertion(rdfs:label obo:ONS_2000023 "ovo-vegetarian dietary pattern"@en)
+AnnotationAssertion(obo:IAO_0100001 obo:ONS_2000023 obo:ONS_1000023)
+AnnotationAssertion(rdfs:label obo:ONS_2000023 "obsolete: ovo-vegetarian dietary pattern"@en)
+AnnotationAssertion(owl:deprecated obo:ONS_2000023 "true"^^xsd:boolean)
 SubClassOf(obo:ONS_2000023 obo:ONS_2000019)
 
-# Class: obo:ONS_2000024 (lacto-ovo vegetarian dietary pattern)
+# Class: obo:ONS_2000024 (obsolete: lacto-ovo vegetarian dietary pattern)
 
 AnnotationAssertion(obo:IAO_0000115 obo:ONS_2000024 "A dietary pattern that define the quantity, variety or combination of different food in a lacto-ovo vegetarian diet"@en)
 AnnotationAssertion(obo:IAO_0000412 obo:ONS_2000024 obo:ons.owl)
-AnnotationAssertion(rdfs:label obo:ONS_2000024 "lacto-ovo vegetarian dietary pattern"@en)
+AnnotationAssertion(obo:IAO_0100001 obo:ONS_2000024 obo:ONS_1000024)
+AnnotationAssertion(rdfs:label obo:ONS_2000024 "obsolete: lacto-ovo vegetarian dietary pattern"@en)
+AnnotationAssertion(owl:deprecated obo:ONS_2000024 "true"^^xsd:boolean)
 SubClassOf(obo:ONS_2000024 obo:ONS_2000019)
 
-# Class: obo:ONS_2000025 (semi-vegetarian dietary pattern)
+# Class: obo:ONS_2000025 (obsolete: semi-vegetarian dietary pattern)
 
 AnnotationAssertion(obo:IAO_0000115 obo:ONS_2000025 "A dietary pattern that define the quantity, variety or combination of different food in a semi-vegetarian diet"@en)
 AnnotationAssertion(obo:IAO_0000412 obo:ONS_2000025 obo:ons.owl)
-AnnotationAssertion(rdfs:label obo:ONS_2000025 "semi-vegetarian dietary pattern"@en)
+AnnotationAssertion(obo:IAO_0100001 obo:ONS_2000025 obo:ONS_1000025)
+AnnotationAssertion(rdfs:label obo:ONS_2000025 "obsolete: semi-vegetarian dietary pattern"@en)
+AnnotationAssertion(owl:deprecated obo:ONS_2000025 "true"^^xsd:boolean)
 SubClassOf(obo:ONS_2000025 obo:ONS_2000019)
 
-# Class: obo:ONS_2000026 (pescetarian dietary pattern)
+# Class: obo:ONS_2000026 (obsolete: pescetarian dietary pattern)
 
 AnnotationAssertion(obo:IAO_0000115 obo:ONS_2000026 "A dietary pattern that define the quantity, variety or combination of different food in a pescetarian diet"@en)
 AnnotationAssertion(obo:IAO_0000412 obo:ONS_2000026 obo:ons.owl)
-AnnotationAssertion(rdfs:label obo:ONS_2000026 "pescetarian dietary pattern"@en)
+AnnotationAssertion(obo:IAO_0100001 obo:ONS_2000026 obo:ONS_1000026)
+AnnotationAssertion(rdfs:label obo:ONS_2000026 "obsolete: pescetarian dietary pattern"@en)
+AnnotationAssertion(owl:deprecated obo:ONS_2000026 "true"^^xsd:boolean)
 SubClassOf(obo:ONS_2000026 obo:ONS_2000019)
 
-# Class: obo:ONS_2000036 (ketogenic diet dietary pattern)
+# Class: obo:ONS_2000036 (obsolete: ketogenic diet dietary pattern)
 
 AnnotationAssertion(obo:IAO_0000115 obo:ONS_2000036 "A dietary pattern that define the quantity, variety or combination of different food in a ketogenic diet"@en)
 AnnotationAssertion(obo:IAO_0000412 obo:ONS_2000036 obo:ons.owl)
-AnnotationAssertion(rdfs:label obo:ONS_2000036 "ketogenic diet dietary pattern"@en)
+AnnotationAssertion(obo:IAO_0100001 obo:ONS_2000036 obo:ONS_1000036)
+AnnotationAssertion(rdfs:label obo:ONS_2000036 "obsolete: ketogenic diet dietary pattern"@en)
+AnnotationAssertion(owl:deprecated obo:ONS_2000036 "true"^^xsd:boolean)
 SubClassOf(obo:ONS_2000036 obo:ONS_2000005)
 
-# Class: obo:ONS_2000037 (DASH diet dietary pattern)
+# Class: obo:ONS_2000037 (obsolete: DASH diet dietary pattern)
 
 AnnotationAssertion(obo:IAO_0000115 obo:ONS_2000037 "A dietary pattern that define the quantity, variety or combination of different food in a DASH diet"@en)
 AnnotationAssertion(obo:IAO_0000412 obo:ONS_2000037 obo:ons.owl)
-AnnotationAssertion(rdfs:label obo:ONS_2000037 "DASH diet dietary pattern"@en)
+AnnotationAssertion(obo:IAO_0100001 obo:ONS_2000037 obo:ONS_1000037)
+AnnotationAssertion(rdfs:label obo:ONS_2000037 "obsolete: DASH diet dietary pattern"@en)
+AnnotationAssertion(owl:deprecated obo:ONS_2000037 "true"^^xsd:boolean)
 SubClassOf(obo:ONS_2000037 obo:ONS_2000005)
 
-# Class: obo:ONS_2000038 (meditteranean diet dietary pattern)
+# Class: obo:ONS_2000038 (obsolete: meditteranean diet dietary pattern)
 
 AnnotationAssertion(obo:IAO_0000115 obo:ONS_2000038 "A dietary pattern that define the quantity, variety or combination of different food in a Mediterranean diet"@en)
 AnnotationAssertion(obo:IAO_0000412 obo:ONS_2000038 obo:ons.owl)
-AnnotationAssertion(rdfs:label obo:ONS_2000038 "meditteranean diet dietary pattern"@en)
+AnnotationAssertion(obo:IAO_0100001 obo:ONS_2000038 obo:ONS_1000038)
+AnnotationAssertion(rdfs:label obo:ONS_2000038 "obsolete: meditteranean diet dietary pattern"@en)
+AnnotationAssertion(owl:deprecated obo:ONS_2000038 "true"^^xsd:boolean)
 SubClassOf(obo:ONS_2000038 obo:ONS_2000005)
 
-# Class: obo:ONS_2000039 (high-carbohydrate diet dietary pattern)
+# Class: obo:ONS_2000039 (obsolete: high-carbohydrate diet dietary pattern)
 
 AnnotationAssertion(obo:IAO_0000115 obo:ONS_2000039 "A dietary pattern that define the quantity, variety or combination of different food in a high-carbohydrate diet"@en)
 AnnotationAssertion(obo:IAO_0000412 obo:ONS_2000039 obo:ons.owl)
-AnnotationAssertion(rdfs:label obo:ONS_2000039 "high-carbohydrate diet dietary pattern"@en)
+AnnotationAssertion(obo:IAO_0100001 obo:ONS_2000039 obo:ONS_1000039)
+AnnotationAssertion(rdfs:label obo:ONS_2000039 "obsolete: high-carbohydrate diet dietary pattern"@en)
+AnnotationAssertion(owl:deprecated obo:ONS_2000039 "true"^^xsd:boolean)
 SubClassOf(obo:ONS_2000039 obo:ONS_2000005)
 
-# Class: obo:ONS_2000040 (low-carbohydrate, high-protien, high fat diet dietary pattern)
+# Class: obo:ONS_2000040 (obsolete: low-carbohydrate, high-protien, high fat diet dietary pattern)
 
 AnnotationAssertion(obo:IAO_0000115 obo:ONS_2000040 "A dietary pattern that define the quantity, variety or combination of different food in a  low-carbohydrate, high-protien, high fat diet"@en)
 AnnotationAssertion(obo:IAO_0000119 obo:ONS_2000040 " https://en.wikipedia.org/wiki/Low-carbohydrate_diet")
 AnnotationAssertion(obo:IAO_0000119 obo:ONS_2000040 "PMID:18635428 ")
 AnnotationAssertion(obo:IAO_0000412 obo:ONS_2000040 obo:ons.owl)
-AnnotationAssertion(rdfs:label obo:ONS_2000040 "low-carbohydrate, high-protien, high fat diet dietary pattern"@en)
+AnnotationAssertion(rdfs:label obo:ONS_2000040 "obsolete: low-carbohydrate, high-protien, high fat diet dietary pattern"@en)
+AnnotationAssertion(owl:deprecated obo:ONS_2000040 "true"^^xsd:boolean)
 SubClassOf(obo:ONS_2000040 obo:ONS_2000005)
 
-# Class: obo:ONS_2000041 (high fat diet dietary pattern)
+# Class: obo:ONS_2000041 (obsolete: high fat diet dietary pattern)
 
 AnnotationAssertion(obo:IAO_0000115 obo:ONS_2000041 "A dietary pattern that define the quantity, variety or combination of different food in a high fat diet"@en)
 AnnotationAssertion(obo:IAO_0000412 obo:ONS_2000041 obo:ons.owl)
-AnnotationAssertion(rdfs:label obo:ONS_2000041 "high fat diet dietary pattern"@en)
+AnnotationAssertion(obo:IAO_0100001 obo:ONS_2000041 obo:ONS_1000041)
+AnnotationAssertion(rdfs:label obo:ONS_2000041 "obsolete: high fat diet dietary pattern"@en)
+AnnotationAssertion(owl:deprecated obo:ONS_2000041 "true"^^xsd:boolean)
 SubClassOf(obo:ONS_2000041 obo:ONS_2000005)
 
-# Class: obo:ONS_2000042 (low fat diet dietary pattern)
+# Class: obo:ONS_2000042 (obsolete: low fat diet dietary pattern)
 
 AnnotationAssertion(obo:IAO_0000115 obo:ONS_2000042 "A dietary pattern that define the quantity, variety or combination of different food in a low fat diet"@en)
 AnnotationAssertion(obo:IAO_0000412 obo:ONS_2000042 obo:ons.owl)
-AnnotationAssertion(rdfs:label obo:ONS_2000042 "low fat diet dietary pattern"@en)
+AnnotationAssertion(obo:IAO_0100001 obo:ONS_2000042 obo:ONS_1000042)
+AnnotationAssertion(rdfs:label obo:ONS_2000042 "obsolete: low fat diet dietary pattern"@en)
+AnnotationAssertion(owl:deprecated obo:ONS_2000042 "true"^^xsd:boolean)
 SubClassOf(obo:ONS_2000042 obo:ONS_2000005)
 
-# Class: obo:ONS_2000043 (gluten free dietary pattern)
+# Class: obo:ONS_2000043 (obsolete: gluten free dietary pattern)
 
 AnnotationAssertion(obo:IAO_0000115 obo:ONS_2000043 "A dietary pattern that define the quantity, variety or combination of different food in a gluten free diet"@en)
 AnnotationAssertion(obo:IAO_0000412 obo:ONS_2000043 obo:ons.owl)
-AnnotationAssertion(rdfs:label obo:ONS_2000043 "gluten free dietary pattern"@en)
+AnnotationAssertion(obo:IAO_0100001 obo:ONS_2000043 obo:ONS_1000043)
+AnnotationAssertion(rdfs:label obo:ONS_2000043 "obsolete: gluten free dietary pattern"@en)
+AnnotationAssertion(owl:deprecated obo:ONS_2000043 "true"^^xsd:boolean)
 SubClassOf(obo:ONS_2000043 obo:ONS_2000005)
 
-# Class: obo:ONS_2000044 (globalized diet dietary pattern)
+# Class: obo:ONS_2000044 (obsolete: globalized diet dietary pattern)
 
 AnnotationAssertion(obo:IAO_0000115 obo:ONS_2000044 "a dietary pattern that define the quantity, variety or combination of different food in a globalized diet"@en)
 AnnotationAssertion(obo:IAO_0000412 obo:ONS_2000044 obo:ons.owl)
-AnnotationAssertion(rdfs:label obo:ONS_2000044 "globalized diet dietary pattern"@en)
+AnnotationAssertion(obo:IAO_0100001 obo:ONS_2000044 obo:ONS_1000065)
+AnnotationAssertion(rdfs:label obo:ONS_2000044 "obsolete: globalized diet dietary pattern"@en)
+AnnotationAssertion(owl:deprecated obo:ONS_2000044 "true"^^xsd:boolean)
 SubClassOf(obo:ONS_2000044 obo:ONS_2000005)
 
-# Class: obo:ONS_2000045 (rural diet dietary pattern)
+# Class: obo:ONS_2000045 (obsolete: rural diet dietary pattern)
 
 AnnotationAssertion(obo:IAO_0000115 obo:ONS_2000045 "a dietary pattern that define the quantity, variety or combination of different food in a rural diet"@en)
 AnnotationAssertion(obo:IAO_0000412 obo:ONS_2000045 obo:ons.owl)
-AnnotationAssertion(rdfs:label obo:ONS_2000045 "rural diet dietary pattern"@en)
+AnnotationAssertion(obo:IAO_0100001 obo:ONS_2000045 obo:ONS_1000066)
+AnnotationAssertion(rdfs:label obo:ONS_2000045 "obsolete: rural diet dietary pattern"@en)
+AnnotationAssertion(owl:deprecated obo:ONS_2000045 "true"^^xsd:boolean)
 SubClassOf(obo:ONS_2000045 obo:ONS_2000005)
+
+# Class: obo:PATO_0000001 (quality)
+
+AnnotationAssertion(obo:IAO_0000115 obo:PATO_0000001 "A dependent entity that inheres in a bearer by virtue of how the bearer is related to other entities")
+AnnotationAssertion(obo:IAO_0000412 obo:PATO_0000001 obo:ons.owl)
+AnnotationAssertion(rdfs:label obo:PATO_0000001 "quality")
+SubClassOf(obo:PATO_0000001 obo:BFO_0000020)
 
 
 )

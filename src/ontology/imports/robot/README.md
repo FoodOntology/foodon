@@ -58,6 +58,12 @@ robot template --template process.tsv\
   --ontology-iri "http://purl.obolibrary.org/obo/foodon/imports/robot_process.ofn" \
   --output ../robot_process.ofn
 
+robot template --template food_process.tsv\
+  --prefix "dcterms:http://purl.org/dc/terms/" \
+  --input "../../foodon-merged.ofn" \
+  --ontology-iri "http://purl.obolibrary.org/obo/foodon/imports/robot_food_process.ofn" \
+  --output ../robot_food_process.ofn
+
 robot template --template seafood.tsv\
   --prefix "dcterms:http://purl.org/dc/terms/" \
   --input "../../foodon-merged.ofn" \

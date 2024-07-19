@@ -1,0 +1,90 @@
+Compiled	animal_parent	species	Alternative_name	taxon	ID	template	product_category	Curation Notes	Requested by	Date when species was added	Version Tracking
+TRUE	river herring	american shad		Alosa sapidissima	NCBITaxon:34773	Fish		Need this for USDA Mappings.	USDA		v2024-03-26
+TRUE		animal		Metazoa	NCBITaxon:33208	top					
+TRUE	bovid	antelope		Hippotragus	NCBITaxon:37184	Bovidae			USDA		
+TRUE	cod	atlantic cod		Gadus morhua	NCBITaxon:8049	Fish		Requested by PTFI	PTFI		v2024-03-26
+TRUE	salmo	atlantic salmon		Salmo salar	NCBITaxon:8030	Fish		Requested by PTFI	PTFI		v2024-03-26
+TRUE	vertebrate animal	avian animal		Aves	NCBITaxon:8782	Aves					
+TRUE	mammal	bear		Ursidae	NCBITaxon:9632	Ursidae		FoodOn has 'bear'	USDA		
+TRUE	mammal	beaver		Castor	NCBITaxon:10184	Rodentia		FoodOn has 'beaver.	USDA		
+TRUE	bovine	beefalo		Bos taurus x Bison bison	NCBITaxon:297284	Bovidae		Deprecate FoodOn term.	USDA		
+TRUE	bovine	bison		Bison	NCBITaxon:9900	Bovidae			USDA		
+TRUE	swim crab (portunus spp.)	blue swimmer crab		Portunus pelagicus	NCBITaxon:80836	Crustacea		Requested by PTFI	PTFI		v2024-03-26
+TRUE	bovine	buffalo		Bison bison	NCBITaxon:9918	Bovidae			USDA		
+TRUE	chicken	capon		capon	FOODON:03411711	Aves			USDA		
+TRUE	bullhead catfish family	catfish		Siluriformes	NCBITaxon:7995	Fish		Requested by PTFI	PTFI		v2024-03-26
+TRUE	poultry	chicken		Gallus gallus	NCBITaxon:9031	Aves			USDA		
+TRUE	octopus	common octopus		Octopus vulgaris	NCBITaxon:6645	Cephalopoda		Need this for USDA Mappings.	USDA		v2024-03-26
+TRUE	bovine	cow	beef	Bos taurus	NCBITaxon:9913	Bovidae			USDA		
+TRUE	decapod	crab		Brachyura	NCBITaxon:6752	Crustacea		synonym: True crabs, FoodOn also has a term 'crab'			
+TRUE	insect	cricket		Grylloidea	NCBITaxon:70906	Hexapoda		Requested by PTFI	PTFI		v2024-03-26
+TRUE	cephalopod	cuttlefish		Sepiidae	NCBITaxon:6608	Fish		Need this for USDA Mappings.	USDA		v2024-03-26
+TRUE	deer family	deer		Cervidae	NCBITaxon:9850	Cervidae			USDA		
+TRUE	manta family	devilfish		Mobula mobular	NCBITaxon:1579277	Fish		Need this for USDA Mappings.	USDA		v2024-03-26
+TRUE	dolphin family	dolphin		dolphin family	FOODON:03413363	Cetacea					
+TRUE	bovine	domestic yak		Bos grunniens	NCBITaxon:30521	Bovidae					
+TRUE	equine animal	donkey		Equus asinus	NCBITaxon:9793	Perissodactyla					
+TRUE	avian animal	duck		duck	FOODON:03411316	Aves			USDA		
+TRUE	mammal	elephant		Elephantidae	NCBITaxon:9780	Other					
+TRUE	deer family	elk		Cervus canadensis	NCBITaxon:1574408	Cervidae		FoodOn has 'guinea fowl' with a narrow synonym 'guinea hen'	USDA		
+TRUE	ratite	emu		Dromaius novaehollandiae	NCBITaxon:8790	Aves			USDA		
+TRUE	anchovy family	european anchovy		Engraulis encrasicolus	NCBITaxon:184585	Fish		Need this for USDA Mappings.	USDA		v2024-03-26
+TRUE	pompano	florida pompano		Trachinotus carolinus	NCBITaxon:173342	Fish		Need this for USDA Mappings.	USDA		v2024-03-26
+TRUE	amphibian	frog		Anura	NCBITaxon:8342	Amphibian	frog food product	Common name is frog as per NCBI, but genbank name is 'frogs and toads'. Or should we use 'FoodOn' term?			
+TRUE	bovid	gazelle		Gazella	NCBITaxon:9933	Bovidae					
+TRUE	mammal	giraffe		Giraffa	NCBITaxon:9893	Giraffoidea					
+TRUE	mammal	goat		Capra hircus	NCBITaxon:9925	Bovidae			USDA		
+TRUE	avian animal	goose		goose	FOODON:03411253	Aves		NCBI has genera 'Anser' with genbank name as 'geese'  group comprises the genera Anser (the grey geese and white geese) and Branta (the black geese). Either we can use both these NCBItaxons in the EQ, or alternatively, can just go with the FoodOn term?	USDA		
+TRUE	turtle	green sea turtle		Chelonia mydas	NCBITaxon:8469	Reptilia			USDA		
+TRUE	avian animal	guinea fowl		Numididae	NCBITaxon:8990	Aves		Note: guineahen or guinea fowl?	USDA		
+TRUE	mammal	hippopotamus		Hippopotamus	NCBITaxon:9832	Hippopotamidae					
+TRUE	equine animal	horse		Equus caballus	NCBITaxon:9796	Perissodactyla		FoodOn has 'horse'			
+TRUE	cricket	house cricket		Acheta domesticus	NCBITaxon:6997	Hexapoda		Need as a referenced term for curating the food products derived from house cricket. (PTFI)	PTFI		v2024-03-26
+TRUE	cricket	jamaican cricket		Gryllus assimilis	NCBITaxon:128156	Hexapoda		Requested by PTFI	PTFI		v2024-03-26
+TRUE	mammal	kangaroo		kangaroo	FOODON:03412092	Diprotodontia					
+TRUE	sheep	lamb		lamb	FOODON:03411669	Bovidae		young sheep	USDA		
+TRUE	greenling family	lingcod		Ophiodon elongatus	NCBITaxon:225387	Fish		Need this for USDA Mappings.	USDA		v2024-03-26
+TRUE	decapod	lobster		lobster	FOODON:03411505	Crustacea					
+TRUE	fish, lophiiform	monkfish		Lophius	NCBITaxon:8072	Fish		Need this for USDA Mappings.	USDA		v2024-03-26
+TRUE	deer family	moose		Alces alces	NCBITaxon:9852	Cervidae			USDA		
+TRUE	mammal	muskrat		Ondatra zibethicus	NCBITaxon:10060	Rodentia			USDA		
+TRUE	bivalve	mussel		mussel	FOODON:03411223	Bivalvia		In shell, shelled			
+TRUE	cichlid family	nile tilapia		Oreochromis niloticus	NCBITaxon:8128	Fish		Requested by PTFI	PTFI		v2024-03-26
+TRUE	mammal	nutria		Myocastor coypus	NCBITaxon:10157	Rodentia					
+TRUE	cephalopod	octopus		Octopus	FOODON:03411514	Cephalopoda		NCBI also has 'Octopus' with a broad synonym 'octopus'.	USDA		v2024-03-26
+TRUE	ratite	ostrich		Struthio camelus	NCBITaxon:8801	Aves			USDA		
+TRUE	avian animal	pheasant		Phasianus	NCBITaxon:9053	Aves		FoodOn also has a term 'pheasant', should we deprecate that?	USDA		
+TRUE	swine	pig	pork	Sus scrofa domesticus	NCBITaxon:9825	Suina			USDA		
+TRUE	avian animal	pigeon		Columbidae	NCBITaxon:8930	Aves		FoodOn has a term 'pigeon'.	USDA		
+TRUE	porpoise family	porpoise		porpoise family	FOODON:03413364	Cetacea					
+TRUE	avian animal	poultry		poultry	FOODON:00004298	Aves					
+TRUE	common sunfish	pumpkinseed sunfish		Lepomis gibbosus	NCBITaxon:270329	Fish		Need this for USDA Mappings.	USDA		v2024-03-26
+TRUE	avian animal	quail		quail	FOODON:03411346	Aves			USDA		
+TRUE	mammal	rabbit		rabbit	FOODON:03411323	Lagomorpha			USDA		
+TRUE	smelt family	rainbow smelt		Osmerus mordax	NCBITaxon:8014	Fish		Need this for USDA Mappings.	USDA		v2024-03-26
+TRUE	deer family	reindeer		Rangifer tarandus	NCBITaxon:9870	Cervidae			USDA		
+TRUE	bivalve	scallop		Pectinidae	NCBITaxon:6566	Bivalvia		In shell, shelled	USDA		
+TRUE	reptile	sea turtle		Chelonioidea	NCBITaxon:27791	Reptilia		FoodOn has 'sea turtle'	USDA		
+TRUE	pinniped group	seal		Phocidae	NCBITaxon:9709	Pinnipedia		FoodOn has 'seal family'			
+TRUE	bovid	sheep		Ovis aries	NCBITaxon:9940	Bovidae		FoodOn has a term 'sheep' with foodon id.	USDA		
+TRUE	decapod	shrimp		shrimp	FOODON:03411237	Crustacea					
+TRUE	pacific salmon	sockeye salmon		Oncorhynchus nerka	NCBITaxon:8023	Fish		Requested by PTFI	PTFI		v2024-03-26
+TRUE	pigeon	squab		squab	FOODON:03000301	Aves		Its in the 'animal' tab, probably still needs to go in FoodOn.	USDA		
+TRUE	mammal	squirrel		Sciuridae	NCBITaxon:55153	Rodentia			USDA		
+TRUE	swordfish family	swordfish		Xiphias gladius	NCBITaxon:8245	Fish		Need this for USDA Mappings.	USDA		v2024-03-26
+TRUE	tilefish family	tilefish		Malacanthidae	NCBITaxon:30851	Fish		Need this for USDA Mappings.	USDA		v2024-03-26
+TRUE	turkey (bird)	turkey		Meleagris gallopavo	NCBITaxon:9103	Aves			USDA		
+TRUE	reptile	turtle		Testudines	NCBITaxon:8459	Reptilia		FoodOn has 'turtle'			
+TRUE	cow	veal		veal	FOODON:00003083	Bovidae		young cow	USDA		
+TRUE	bovine	water buffalo		Bubalus bubalis	NCBITaxon:89462	Bovidae					
+TRUE	cetacean marine mammal	whale		whale	FOODON:03411343	Cetacea					
+TRUE	neogastropod	whelk		whelk	FOODON:03411633	Gastropoda			USDA		
+TRUE	sucker	white sucker		Catostomus commersonii	NCBITaxon:7971	Fish		Need this for USDA Mappings.	USDA		v2024-03-26
+TRUE	swine	wild boar		wild boar	FOODON:00004286	Suina		boar has a synonym 'wild boar'	USDA		
+TRUE	equine animal	zebra		Equus zebra	NCBITaxon:9791	Perissodactyla		Common name 'Zebra' in ITIS			
+TRUE	eared seal family	steller sea lion		Eumetopias jubatus	NCBITaxon:34886	Pinnipedia			USDA	2024-05-28T20:13:25.525Z	
+TRUE	seal family	bearded seal		Erignathus barbatus	NCBITaxon:39304	Pinnipedia			USDA	2024-05-30T20:11:42.215Z	
+TRUE	pinniped group	walrus		Odobenus rosmarus	NCBITaxon:9707	Pinnipedia			USDA	2024-05-30T20:11:42.215Z	
+TRUE	echinoderm	sea cucumber		Holothuroidea	NCBITaxon:7705	Echinodermata	echinoderm food product				
+TRUE	deer	sitka deer		Odocoileus hemionus sitkensis	NCBITaxon:9878	Cervidae	deer food product				
+TRUE	avian animal	ruffed grouse		Bonasa umbellus	NCBITaxon:9000	Aves					

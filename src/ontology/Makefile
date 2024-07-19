@@ -58,7 +58,7 @@ $(ONT).owl: $(SRC)
 # remove --select "owl:NamedIndividual=obo:BFO_*"
 	$(ROBOT) merge --input $(SRC) --xml-entities reason --reasoner ELK --equivalent-classes-allowed false relax reduce --output $(ONT)-merged.ofn
 	make test
-	python3 foodon-merged-remediation.py
+	python3 scripts/foodon-merged-remediation.py
 
 # Make foodon-base.owl, stripped of food product import tags and files
 # Add GAZ?
@@ -69,7 +69,7 @@ $(ONT).owl: $(SRC)
 #	$(ROBOT) convert --input $(ONT)-merged.ofn --output $(ONT)-merged.owl
 #	$(ROBOT) query --format TSV --input $(ONT)-merged.owl -s foodon_synonyms.sparql foodon-synonyms.tsv
 #	rm $(ONT)-merged.owl
-	$(ROBOT) query --format TSV --input $(ONT)-merged.ofn -s foodon_synonyms.sparql foodon-synonyms.tsv
+	$(ROBOT) query --format TSV --input $(ONT)-merged.ofn -s sparql/foodon_synonyms.sparql foodon-synonyms.tsv
 
 # ALL OntoFox imports: chebi efo envo eo gazetteer ncbitaxon obi ro
 # ISSUE WITH BFO: Ontofox doesn't download disjointWith axioms????
@@ -91,7 +91,8 @@ imports/%_import.ofn: imports/%_ontofox.txt
 	echo "Downloaded *_import.owl"
 
 #	$(ROBOT) reduce --input $@ --reasoner ELK --output $@
-	$(ROBOT) reduce --input $*_import.owl --xml-entities --prefix "obo: http://purl.obolibrary.org/obo/" --reasoner ELK --output imports/$*_import.ofn
+# ISSUE: rdf:type sneaking in as an annotation property which is causing DL validation fail.
+	$(ROBOT) reduce --input $*_import.owl --xml-entities --prefix "obo: http://purl.obolibrary.org/obo/"  --reasoner ELK remove --term rdf:type --select annotation-properties --select self --output imports/$*_import.ofn
 	rm $*_import.owl
 
 #	echo "Entity substitution."
@@ -111,5 +112,3 @@ imports/robot/plant_parts.ofn: imports/robot/plant_parts.tsv
 	$(ROBOT) template --template $< -i foodon-merged.ofn --ontology-iri "http://purl.obolibrary.org/foodon/imports/robot_plant_parts.ofn" -o $@.tmp.owl && mv $@.tmp.owl $@
 
 
-release: $(ONT).owl
-	cp $^ $RELEASEDIR && cp imports/*.owl $RELEASEDIR/imports
