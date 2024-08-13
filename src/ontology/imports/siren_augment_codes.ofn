@@ -11974,7 +11974,7 @@ AnnotationAssertion(rdfs:comment obo:FOODON_03301383 "SIREN DB annotation:
 * water removal process FOODON:03460138
 * preservation by dehydration or drying FOODON:03470116"@en)
 
-# Class: obo:FOODON_03301384 (broccoli (frozen))
+# Class: obo:FOODON_03301384 (piece(s) of broccoli (frozen))
 
 AnnotationAssertion(rdfs:comment obo:FOODON_03301384 "SIREN DB annotation:
 * whole, natural shape FOODON:03430150
@@ -12319,7 +12319,7 @@ AnnotationAssertion(rdfs:comment obo:FOODON_03301441 "SIREN DB annotation:
 * not heat-treated FOODON:03440003
 * fruit, peel present, core, pit or seed present FOODON:03420140"@en)
 
-# Class: obo:FOODON_03301443 (lima bean (fresh, frozen))
+# Class: obo:FOODON_03301443 (lima bean (fresh frozen))
 
 AnnotationAssertion(rdfs:comment obo:FOODON_03301443 "SIREN DB annotation:
 * whole, natural shape FOODON:03430150
@@ -21615,14 +21615,6 @@ AnnotationAssertion(rdfs:comment obo:FOODON_03303032 "SIREN DB annotation:
 * root, tuber or bulb, without peel FOODON:03420240
 * ingredient: flavoring, spice or herb added FOODON:03460227
 * ingredient: dairy product added FOODON:03460242"@en)
-
-# Class: obo:FOODON_03303033 (chicken back (raw))
-
-AnnotationAssertion(rdfs:comment obo:FOODON_03303033 "SIREN DB annotation:
-* whole, natural shape FOODON:03430150
-* not heat-treated FOODON:03440003
-* dark meat FOODON:03530002
-* skeletal meat part, with bone, with skin FOODON:03420265"@en)
 
 # Class: obo:FOODON_03303034 (chicken loaf lunch meat)
 
@@ -68961,13 +68953,6 @@ AnnotationAssertion(rdfs:comment obo:FOODON_03311864 "SIREN DB annotation:
 * meat part of animal FOODON:03420103
 * breaded or batter-coated FOODON:03460188"@en)
 
-# Class: obo:FOODON_03311865 (piece of chicken (raw))
-
-AnnotationAssertion(rdfs:comment obo:FOODON_03311865 "SIREN DB annotation:
-* whole, natural shape FOODON:03430150
-* not heat-treated FOODON:03440003
-* skeletal meat part, with bone, with skin FOODON:03420265"@en)
-
 # Class: obo:FOODON_03311867 (domiati cheese)
 
 AnnotationAssertion(rdfs:comment obo:FOODON_03311867 "SIREN DB annotation:
@@ -80037,7 +80022,7 @@ AnnotationAssertion(rdfs:comment obo:FOODON_03317214 "SIREN DB annotation:
 * curd FOODON:03420245
 * microbial/enzymatic modification process FOODON:03460119"@en)
 
-# Class: obo:FOODON_03317216 (lobster meat (frozen fresh, quick-frozen))
+# Class: obo:FOODON_03317216 (lobster meat (fresh frozen, quick-frozen))
 
 AnnotationAssertion(rdfs:comment obo:FOODON_03317216 "SIREN DB annotation:
 * solid FOODON:03430151
@@ -82266,7 +82251,7 @@ AnnotationAssertion(rdfs:comment obo:FOODON_03317615 "SIREN DB annotation:
 * alcohol fermentation process FOODON:03460232
 * preservation by fermentation FOODON:03470104"@en)
 
-# Class: obo:FOODON_03317617 (crabmeat (frozen fresh))
+# Class: obo:FOODON_03317617 (crabmeat (fresh frozen))
 
 AnnotationAssertion(rdfs:comment obo:FOODON_03317617 "SIREN DB annotation:
 * whole, natural shape FOODON:03430150
