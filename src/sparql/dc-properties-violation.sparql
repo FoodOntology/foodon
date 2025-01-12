@@ -1,0 +1,11 @@
+# The purpose of this violation is to make sure people update
+# from using the deprecated DC Elements 1.1 namespace (http://purl.org/dc/elements/1.1/)
+# to using the recommended DC Terms namespace (http://purl.org/dc/terms/)
+# See also discussion on https://github.com/oborel/obo-relations/pull/692
+
+SELECT ?term ?predicate WHERE {
+  ?term ?predicate ?value .
+  FILTER(STRSTARTS(STR(?predicate), "http://purl.org/dc/elements/1.1/"))
+  FILTER(isIRI(?term) && (STRSTARTS(str(?term), "http://purl.obolibrary.org/obo/FOODON_")))
+}
+

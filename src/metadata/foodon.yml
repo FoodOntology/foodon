@@ -4,8 +4,8 @@ idspace: FOODON
 base_url: /obo/foodon
 
 products:
-- foodon.owl: https://raw.githubusercontent.com/FoodOntology/master/foodon.owl
-- foodon.obo: https://raw.githubusercontent.com/FoodOntology/master/foodon.obo
+- foodon.owl: https://raw.githubusercontent.com/FoodOntology/foodon/master/foodon.owl
+- foodon.obo: https://raw.githubusercontent.com/FoodOntology/foodon/master/foodon.obo
 
 term_browser: ontobee
 example_terms:
@@ -17,14 +17,12 @@ entries:
   replacement: https://raw.githubusercontent.com/FoodOntology/foodon/v
 
 - prefix: /tracker/
-  replacement: https://github.com/FoodOntology/foodon/issues/
-
-- prefix: /diffs/
-  replacement: https://github.com/FoodOntology/foodon/commit/
+  replacement: https://github.com/FoodOntology/foodon/issues
 
 - prefix: /about/
-  replacement: http://www.ontobee.org/browser/rdf.php?o=FOODON&iri=http://purl.obolibrary.org/obo/
+  replacement: http://www.ontobee.org/ontology/FOODON
 
 ## generic fall-through, serve direct from github by default
 - prefix: /
   replacement: https://raw.githubusercontent.com/FoodOntology/foodon/master/
+

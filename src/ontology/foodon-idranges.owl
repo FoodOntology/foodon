@@ -1,5 +1,7 @@
+## ID Ranges File
 Prefix: rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>
 Prefix: idsfor: <http://purl.obolibrary.org/obo/IAO_0000598>
+Prefix: dce: <http://purl.org/dc/elements/1.1/>
 Prefix: xsd: <http://www.w3.org/2001/XMLSchema#>
 Prefix: allocatedto: <http://purl.obolibrary.org/obo/IAO_0000597>
 Prefix: xml: <http://www.w3.org/XML/1998/namespace>
@@ -17,7 +19,7 @@ Ontology: <http://purl.obolibrary.org/obo/foodon/foodon-idranges.owl>
 Annotations: 
     idsfor: "FOODON",
     idprefix: "http://purl.obolibrary.org/obo/FOODON_",
-    iddigits: 7
+    iddigits: 8
 
 AnnotationProperty: idprefix:
 
@@ -136,4 +138,5 @@ Datatype: idrange:8
     EquivalentTo: 
         xsd:integer[> 3603000 , <= 3603999]
     
+Datatype: xsd:integer
 Datatype: rdf:PlainLiteral

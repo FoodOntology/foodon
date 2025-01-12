@@ -1,0 +1,61 @@
+## ontology metadata, see https://oboacademy.github.io/obook/howto/odk-migrate-to-odk/ ##
+id: foodon
+title: FoodOn Food Ontology
+description: "FoodOn, the food ontology, contains vocabulary for naming food materials and their anatomical and taxonomic origins, from raw harvested food to processed food products, for humans and domesticated animals."
+contact:  damion_dooley [at] sfu [.] ca
+license: https://creativecommons.org/licenses/by/4.0/
+
+## general ODK Settings ##
+repo: foodon
+git_main_branch: master
+github_org: FoodOntology
+primary_release: full
+edit_format: ofn
+export_formats:
+  - owl
+ci:
+  - github_actions
+documentation:
+  documentation_system: mkdocs
+reasoner: ELK
+#report_fail_on: ERROR
+report_fail_on: None
+release_artefacts:
+  - base
+  - full
+##   - simple ##
+
+## FoodOn specific Settings ##
+import_group:
+  annotation_properties:
+        - rdfs:label
+        - dc:description
+        - dc:source
+        - IAO:0000115
+        - IAO:0000114
+        - IAO:0000119
+        - OBI:0001886
+        - IAO:0000111
+        - oboInOwl:hasAlternativeId
+  products:
+
+    - id: chebi
+      use_custom_import_module: TRUE
+##      is_large: TRUE ##
+##      use_gzipped: TRUE ##
+      mirror_from: http://ftp.ebi.ac.uk/pub/databases/chebi/ontology/chebi_lite.owl.gz
+      base_iris:
+        - http://purl.obolibrary.org/obo/foodon/imports/chebi_import.owl
+
+    - id: cob
+
+##    - id: general ##
+##      module_type: custom  ##
+##      use_custom_import_module: TRUE ##
+
+##     - id: ncbitaxon
+##       use_custom_import_module: TRUE
+##      is_large: TRUE
+##       use_gzipped: TRUE
+
+robot_java_args: '-Xmx7G --xml-entities'

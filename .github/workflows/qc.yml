@@ -1,10 +1,10 @@
-# Basic Ontology QC for Foodon
+# Basic ODK workflow
 
 name: CI
 
 # Controls when the action will run. 
 on:
-  # Triggers the workflow on push or pull request events but only for the main branch
+  # Triggers the workflow on push or pull request events but only for the master branch
   push:
     branches: [ master ]
   pull_request:
@@ -19,15 +19,15 @@ jobs:
   ontology_qc:
     # The type of runner that the job will run on
     runs-on: ubuntu-latest
-    container: obolibrary/odkfull:v1.4.3
+    container: obolibrary/odkfull:v1.5.4
 
     # Steps represent a sequence of tasks that will be executed as part of the job
     steps:
       # Checks-out your repository under $GITHUB_WORKSPACE, so your job can access it
-      - uses: actions/checkout@v2
+      - uses: actions/checkout@v3
 
       - name: Run ontology QC checks
         env:
           DEFAULT_BRANCH: master
-        run: cd src/ontology && make ROBOT_ENV='ROBOT_JAVA_ARGS=-Xmx6G' foodon.owl IMP=false PAT=true -B
+        run: cd src/ontology && make ROBOT_ENV='ROBOT_JAVA_ARGS=-Xmx6G' test IMP=false PAT=false MIR=false
 
