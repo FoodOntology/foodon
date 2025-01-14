@@ -58,4 +58,4 @@ import_group:
 ##      is_large: TRUE
 ##       use_gzipped: TRUE
 
-robot_java_args: '-Xmx7G --xml-entities'
+robot_java_args: '-Xmx2G'
