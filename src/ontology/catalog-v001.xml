@@ -4,16 +4,16 @@
         <uri name="http://purl.obolibrary.org/obo/foodon-base.owl" uri="foodon-base.owl"/>
         <uri name="http://purl.obolibrary.org/obo/foodon.owl" uri="foodon.owl"/>
         <uri name="http://purl.obolibrary.org/obo/cdno/releases/2022-12-23/cdno.owl" uri="imports/cdno.owl"/>
-        <uri name="http://purl.obolibrary.org/obo/foodon/imports/cob_import.owl" uri="imports/cob_import.ofn"/>
-        <uri name="http://purl.obolibrary.org/obo/foodon/imports/chebi_import.owl" uri="imports/chebi_import.ofn"/>
+        <uri name="http://purl.obolibrary.org/obo/foodon/imports/cob_import.owl" uri="imports/cob_import.owl"/>
+        <uri name="http://purl.obolibrary.org/obo/foodon/imports/chebi_import.owl" uri="imports/chebi_import.owl"/>
         <uri name="http://purl.obolibrary.org/obo/foodon/imports/deprecation_import.ofn" uri="imports/deprecation_import.ofn"/>
         <uri name="http://purl.obolibrary.org/obo/foodon/imports/foodon_product_import.ofn" uri="imports/foodon_product_import.ofn"/>
         <uri name="http://purl.obolibrary.org/obo/foodon/imports/robot_meat_cuts.ofn" uri="imports/robot_meat_cuts.ofn"/>
         <uri name="http://purl.obolibrary.org/obo/foodon/imports/animal/animal_parts.owl" uri="imports/animal/animal_parts.ofn"/>
         <uri name="http://purl.obolibrary.org/obo/foodon/imports/gaz_import.ofn" uri="imports/gaz_import.ofn"/>
-        <uri name="http://purl.obolibrary.org/obo/foodon/imports/general_import.owl" uri="imports/general_import.ofn"/>
-        <uri name="http://purl.obolibrary.org/obo/foodon/imports/ncbitaxon_import.owl" uri="imports/ncbitaxon_import.ofn"/>
-        <uri name="http://purl.obolibrary.org/obo/foodon/imports/ons_import.owl" uri="imports/ons_import.ofn"/>
+        <uri name="http://purl.obolibrary.org/obo/foodon/imports/general_import.owl" uri="imports/general_import.owl"/>
+        <uri name="http://purl.obolibrary.org/obo/foodon/imports/ncbitaxon_import.owl" uri="imports/ncbitaxon_import.owl"/>
+        <uri name="http://purl.obolibrary.org/obo/foodon/imports/ons_import.owl" uri="imports/ons_import.owl"/>
         <uri name="http://purl.obolibrary.org/obo/foodon/imports/product_type_import.ofn" uri="imports/product_type_import.ofn"/>
         <uri name="http://purl.obolibrary.org/obo/foodon/imports/robot_animals.ofn" uri="imports/robot_animals.ofn"/>
         <uri name="http://purl.obolibrary.org/obo/foodon/imports/robot_dietary_supplement.ofn" uri="imports/robot_dietary_supplement.ofn"/>
