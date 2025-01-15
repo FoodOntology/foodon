@@ -10,7 +10,7 @@
 # More information: https://github.com/INCATools/ontology-development-kit/
 
 # Fingerprint of the configuration file when this Makefile was last generated
-CONFIG_HASH=                9d7ab72c039448c9dc6e4e110d32e7187c69eff79bc5cfcdc9cd1dba6a9b6c6a
+CONFIG_HASH=                b562e015bb4a5ad752d3b35f4a67492e42fb176026e73788db41993025dfefbd
 
 
 # ----------------------------------------
@@ -159,7 +159,7 @@ all_main: $(MAIN_FILES)
 # ----------------------------------------
 
 
-IMPORTS =  chebi cob
+IMPORTS =  chebi cob general ncbitaxon
 
 IMPORT_ROOTS = $(patsubst %, $(IMPORTDIR)/%_import, $(IMPORTS))
 IMPORT_OWL_FILES = $(foreach n,$(IMPORT_ROOTS), $(n).owl)
@@ -400,7 +400,8 @@ ifeq ($(strip $(MIR)),true)
 .PHONY: mirror-chebi
 .PRECIOUS: $(MIRRORDIR)/chebi.owl
 mirror-chebi: | $(TMPDIR)
-	$(ROBOT) convert -I http://ftp.ebi.ac.uk/pub/databases/chebi/ontology/chebi_lite.owl.gz -o $(TMPDIR)/$@.owl
+	curl -L $(OBOBASE)/chebi.owl --create-dirs -o $(TMPDIR)/chebi-download.owl --retry 4 --max-time 200 && \
+	$(ROBOT) convert -i $(TMPDIR)/chebi-download.owl -o $(TMPDIR)/$@.owl
 
 
 ## ONTOLOGY: cob
@@ -409,6 +410,22 @@ mirror-chebi: | $(TMPDIR)
 mirror-cob: | $(TMPDIR)
 	curl -L $(OBOBASE)/cob.owl --create-dirs -o $(TMPDIR)/cob-download.owl --retry 4 --max-time 200 && \
 	$(ROBOT) convert -i $(TMPDIR)/cob-download.owl -o $(TMPDIR)/$@.owl
+
+
+## ONTOLOGY: general
+.PHONY: mirror-general
+.PRECIOUS: $(MIRRORDIR)/general.owl
+mirror-general: | $(TMPDIR)
+	curl -L $(OBOBASE)/general.owl --create-dirs -o $(TMPDIR)/general-download.owl --retry 4 --max-time 200 && \
+	$(ROBOT) convert -i $(TMPDIR)/general-download.owl -o $(TMPDIR)/$@.owl
+
+
+## ONTOLOGY: ncbitaxon
+.PHONY: mirror-ncbitaxon
+.PRECIOUS: $(MIRRORDIR)/ncbitaxon.owl
+mirror-ncbitaxon: | $(TMPDIR)
+	curl -L $(OBOBASE)/ncbitaxon.owl --create-dirs -o $(TMPDIR)/ncbitaxon-download.owl --retry 4 --max-time 200 && \
+	$(ROBOT) convert -i $(TMPDIR)/ncbitaxon-download.owl -o $(TMPDIR)/$@.owl
 
 
 $(MIRRORDIR)/%.owl: mirror-% | $(MIRRORDIR)

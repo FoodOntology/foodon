@@ -16,8 +16,10 @@ These are the current imports in FOODON
 
 | Import | URL | Type |
 | ------ | --- | ---- |
-| chebi | http://ftp.ebi.ac.uk/pub/databases/chebi/ontology/chebi_lite.owl.gz | None |
+| chebi | http://purl.obolibrary.org/obo/chebi.owl | None |
 | cob | http://purl.obolibrary.org/obo/cob.owl | None |
+| general | http://purl.obolibrary.org/obo/general.owl | None |
+| ncbitaxon | http://purl.obolibrary.org/obo/ncbitaxon.owl | None |
 
 ## Components
 Components, in contrast to imports, are considered full members of the ontology. This means that any axiom in a component is also included in the ontology base - which means it is considered _native_ to the ontology. While this sounds complicated, consider this: conceptually, no component should be part of more than one ontology. If that seems to be the case, we are most likely talking about an import. Components are often not needed for ontologies, but there are some use cases:

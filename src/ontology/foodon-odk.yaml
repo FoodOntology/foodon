@@ -43,19 +43,18 @@ import_group:
       use_custom_import_module: TRUE
 ##      is_large: TRUE ##
 ##      use_gzipped: TRUE ##
-      mirror_from: http://ftp.ebi.ac.uk/pub/databases/chebi/ontology/chebi_lite.owl.gz
+##      mirror_from: http://ftp.ebi.ac.uk/pub/databases/chebi/ontology/chebi_lite.owl.gz
       base_iris:
         - http://purl.obolibrary.org/obo/foodon/imports/chebi_import.owl
 
     - id: cob
+      use_custom_import_module: TRUE
 
-##    - id: general ##
-##      module_type: custom  ##
-##      use_custom_import_module: TRUE ##
+    - id: general ##
+      use_custom_import_module: TRUE
 
-##     - id: ncbitaxon
-##       use_custom_import_module: TRUE
-##      is_large: TRUE
-##       use_gzipped: TRUE
+    - id: ncbitaxon
+      use_custom_import_module: TRUE
 
-robot_java_args: '-Xmx2G'
+
+robot_java_args: '-Xmx4G'
