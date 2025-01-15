@@ -2343,6 +2343,7 @@ Declaration(Class(obo:NCBITaxon_33550))
 Declaration(Class(obo:NCBITaxon_33554))
 Declaration(Class(obo:NCBITaxon_33556))
 Declaration(Class(obo:NCBITaxon_33574))
+Declaration(Class(obo:NCBITaxon_3358813))
 Declaration(Class(obo:NCBITaxon_3362))
 Declaration(Class(obo:NCBITaxon_336262))
 Declaration(Class(obo:NCBITaxon_3363))
@@ -5172,6 +5173,7 @@ Declaration(Class(obo:NCBITaxon_99038))
 Declaration(Class(obo:NCBITaxon_990595))
 Declaration(Class(obo:NCBITaxon_9906))
 Declaration(Class(obo:NCBITaxon_990634))
+Declaration(Class(obo:NCBITaxon_990996))
 Declaration(Class(obo:NCBITaxon_9913))
 Declaration(Class(obo:NCBITaxon_9918))
 Declaration(Class(obo:NCBITaxon_9922))
@@ -12501,7 +12503,7 @@ SubClassOf(obo:NCBITaxon_182664 obo:NCBITaxon_490321)
 
 AnnotationAssertion(obo:IAO_0000412 obo:NCBITaxon_1828433 obo:ncbitaxon.owl)
 AnnotationAssertion(rdfs:label obo:NCBITaxon_1828433 "Paracaesio kusakarii")
-SubClassOf(obo:NCBITaxon_1828433 obo:NCBITaxon_546538)
+SubClassOf(obo:NCBITaxon_1828433 obo:NCBITaxon_990996)
 
 # Class: obo:NCBITaxon_182852 (Raja asterias)
 
@@ -20997,6 +20999,13 @@ SubClassOf(obo:NCBITaxon_33556 obo:NCBITaxon_9766)
 AnnotationAssertion(obo:IAO_0000412 obo:NCBITaxon_33574 obo:ncbitaxon.owl)
 AnnotationAssertion(rdfs:label obo:NCBITaxon_33574 "Threskiornithidae")
 SubClassOf(obo:NCBITaxon_33574 obo:NCBITaxon_3073812)
+
+# Class: obo:NCBITaxon_3358813 (Paracaesio xanthurus)
+
+AnnotationAssertion(obo:IAO_0000412 obo:NCBITaxon_3358813 obo:ncbitaxon.owl)
+AnnotationAssertion(oboInOwl:hasExactSynonym obo:NCBITaxon_3358813 "yellowtail blue snapper")
+AnnotationAssertion(rdfs:label obo:NCBITaxon_3358813 "Paracaesio xanthurus")
+SubClassOf(obo:NCBITaxon_3358813 obo:NCBITaxon_990996)
 
 # Class: obo:NCBITaxon_3362 (Podocarpaceae)
 
@@ -40547,6 +40556,12 @@ AnnotationAssertion(obo:IAO_0000412 obo:NCBITaxon_990634 obo:ncbitaxon.owl)
 AnnotationAssertion(oboInOwl:hasExactSynonym obo:NCBITaxon_990634 "goldband fusilier")
 AnnotationAssertion(rdfs:label obo:NCBITaxon_990634 "Pterocaesio chrysozona")
 SubClassOf(obo:NCBITaxon_990634 obo:NCBITaxon_119692)
+
+# Class: obo:NCBITaxon_990996 (Paracaesio)
+
+AnnotationAssertion(obo:IAO_0000412 obo:NCBITaxon_990996 obo:ncbitaxon.owl)
+AnnotationAssertion(rdfs:label obo:NCBITaxon_990996 "Paracaesio")
+SubClassOf(obo:NCBITaxon_990996 obo:NCBITaxon_546538)
 
 # Class: obo:NCBITaxon_9913 (Bos taurus)
 
