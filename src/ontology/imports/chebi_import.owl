@@ -1,4 +1,4 @@
-Prefix(:=<http://purl.obolibrary.org/obo/foodon/imports/chebi_import.ofn#>)
+Prefix(:=<http://purl.obolibrary.org/obo/foodon/imports/chebi_import.owl#>)
 Prefix(obo:=<http://purl.obolibrary.org/obo/>)
 Prefix(owl:=<http://www.w3.org/2002/07/owl#>)
 Prefix(rdf:=<http://www.w3.org/1999/02/22-rdf-syntax-ns#>)
@@ -7,7 +7,7 @@ Prefix(xsd:=<http://www.w3.org/2001/XMLSchema#>)
 Prefix(rdfs:=<http://www.w3.org/2000/01/rdf-schema#>)
 
 
-Ontology(<http://purl.obolibrary.org/obo/foodon/imports/chebi_import.ofn>
+Ontology(<http://purl.obolibrary.org/obo/foodon/imports/chebi_import.owl>
 
 Declaration(Class(obo:CHEBI_10607))
 Declaration(Class(obo:CHEBI_113451))
@@ -1218,6 +1218,7 @@ AnnotationAssertion(obo:IAO_0000115 obo:CHEBI_15428 "The simplest (and the only 
 AnnotationAssertion(obo:IAO_0000412 obo:CHEBI_15428 obo:chebi.owl)
 AnnotationAssertion(rdfs:label obo:CHEBI_15428 "glycine")
 SubClassOf(obo:CHEBI_15428 obo:CHEBI_26650)
+SubClassOf(obo:CHEBI_15428 obo:CHEBI_83813)
 
 # Class: obo:CHEBI_15674 (2,3-dihydroxybutanedioic acid)
 
@@ -1585,7 +1586,9 @@ AnnotationAssertion(obo:IAO_0000115 obo:CHEBI_17561 "An optically active form of
 AnnotationAssertion(obo:IAO_0000412 obo:CHEBI_17561 obo:chebi.owl)
 AnnotationAssertion(rdfs:label obo:CHEBI_17561 "L-cysteine")
 SubClassOf(obo:CHEBI_17561 obo:CHEBI_15356)
+SubClassOf(obo:CHEBI_17561 obo:CHEBI_15705)
 SubClassOf(obo:CHEBI_17561 obo:CHEBI_26650)
+SubClassOf(obo:CHEBI_17561 obo:CHEBI_83813)
 
 # Class: obo:CHEBI_17579 (beta-carotene)
 
@@ -3424,11 +3427,10 @@ SubClassOf(obo:CHEBI_26607 obo:CHEBI_35366)
 
 # Class: obo:CHEBI_26650 (serine family amino acid)
 
-AnnotationAssertion(obo:IAO_0000115 obo:CHEBI_26650 "An L-alpha-amino acid which is biosynthesised from 3-phosphoglycerate (i.e. serine, glycine, cysteine and homocysteine). A closed class.")
+AnnotationAssertion(obo:IAO_0000115 obo:CHEBI_26650 "An alpha-amino acid which is biosynthesised from 3-phosphoglycerate (i.e. serine, glycine, cysteine and homocysteine). A closed class.")
 AnnotationAssertion(obo:IAO_0000412 obo:CHEBI_26650 obo:chebi.owl)
 AnnotationAssertion(rdfs:label obo:CHEBI_26650 "serine family amino acid")
-SubClassOf(obo:CHEBI_26650 obo:CHEBI_15705)
-SubClassOf(obo:CHEBI_26650 obo:CHEBI_83813)
+SubClassOf(obo:CHEBI_26650 obo:CHEBI_33704)
 
 # Class: obo:CHEBI_26666 (short-chain fatty acid)
 
@@ -5554,7 +5556,7 @@ SubClassOf(obo:CHEBI_35987 obo:CHEBI_33709)
 
 # Class: obo:CHEBI_35990 (bridged compound)
 
-AnnotationAssertion(obo:IAO_0000115 obo:CHEBI_35990 "A polycyclic compound in which two rings have two or more atoms in common.")
+AnnotationAssertion(obo:IAO_0000115 obo:CHEBI_35990 "A polycyclic compound that contains more than one ring with at least two common atoms (also known as bridgehead carbons) that are not adjacent to each other.")
 AnnotationAssertion(obo:IAO_0000412 obo:CHEBI_35990 obo:chebi.owl)
 AnnotationAssertion(rdfs:label obo:CHEBI_35990 "bridged compound")
 SubClassOf(obo:CHEBI_35990 obo:CHEBI_33635)
@@ -7477,7 +7479,6 @@ AnnotationAssertion(obo:IAO_0000115 obo:CHEBI_6636 "A magnesium salt comprising 
 AnnotationAssertion(obo:IAO_0000412 obo:CHEBI_6636 obo:chebi.owl)
 AnnotationAssertion(rdfs:label obo:CHEBI_6636 "magnesium dichloride")
 SubClassOf(obo:CHEBI_6636 obo:CHEBI_190297)
-SubClassOf(obo:CHEBI_6636 obo:CHEBI_33975)
 SubClassOf(obo:CHEBI_6636 obo:CHEBI_36093)
 SubClassOf(obo:CHEBI_6636 obo:CHEBI_51234)
 
@@ -7890,11 +7891,11 @@ AnnotationAssertion(obo:IAO_0000412 obo:CHEBI_83813 obo:chebi.owl)
 AnnotationAssertion(rdfs:label obo:CHEBI_83813 "proteinogenic amino acid")
 SubClassOf(obo:CHEBI_83813 obo:CHEBI_33709)
 
-# Class: obo:CHEBI_83821 (amino acid derivative)
+# Class: obo:CHEBI_83821 (amino-acid derivative)
 
 AnnotationAssertion(obo:IAO_0000115 obo:CHEBI_83821 "Any derivative of an amino acid resulting from reaction at an amino group, carboxy group, side-chain functional group, or from the replacement of any hydrogen by a heteroatom. The definition normally excludes peptides containing amino acid residues.")
 AnnotationAssertion(obo:IAO_0000412 obo:CHEBI_83821 obo:chebi.owl)
-AnnotationAssertion(rdfs:label obo:CHEBI_83821 "amino acid derivative")
+AnnotationAssertion(rdfs:label obo:CHEBI_83821 "amino-acid derivative")
 SubClassOf(obo:CHEBI_83821 obo:CHEBI_35352)
 
 # Class: obo:CHEBI_83982 (L-glutamic acid derivative)
