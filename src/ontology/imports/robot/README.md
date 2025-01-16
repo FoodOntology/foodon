@@ -18,61 +18,61 @@ wine.tsv
 
 robot template --template animals.tsv\
   --prefix "dcterms:http://purl.org/dc/terms/" \
-  --input "../../foodon-merged.ofn" \
+  --input "../../foodon-full.owl" \
   --ontology-iri "http://purl.obolibrary.org/obo/foodon/imports/robot_animals.ofn" \
   --output ../robot_animals.ofn
 
 robot template --template meat_cuts.tsv\
   --prefix "dcterms:http://purl.org/dc/terms/" \
-  --input "../../foodon-merged.ofn" \
+  --input "../../foodon-full.owl" \
   --ontology-iri "http://purl.obolibrary.org/obo/foodon/imports/robot_meat_cuts.ofn" \
   --output ../robot_meat_cuts.ofn
 
 robot template --template animal_parts.tsv\
   --prefix "dcterms:http://purl.org/dc/terms/" \
-  --input "../../foodon-merged.ofn" \
+  --input "../../foodon-full.owl" \
   --ontology-iri "http://purl.obolibrary.org/obo/foodon/imports/animal_parts.ofn" \
   --output ../robot_animal_parts.ofn
 
 robot template --template dietary_supplement.tsv\
   --prefix "dcterms:http://purl.org/dc/terms/" \
-  --input "../../foodon-merged.ofn" \
+  --input "../../foodon-full.owl" \
   --ontology-iri "http://purl.obolibrary.org/obo/foodon/imports/robot_dietary_supplement.ofn" \
   --output ../robot_dietary_supplement.ofn
 
 robot template --template pasta.tsv \
   --prefix "dcterms:http://purl.org/dc/terms/" \
-  --input "../../foodon-merged.ofn" \
+  --input "../../foodon-full.owl" \
   --ontology-iri "http://purl.obolibrary.org/obo/foodon/imports/robot_pasta.ofn" \
   --output ../robot_pasta.ofn
 
 robot template --template plant_parts.tsv \
   --prefix "dcterms:http://purl.org/dc/terms/" \
-  --input "../../foodon-merged.ofn" \
+  --input "../../foodon-full.owl" \
   --ontology-iri "http://purl.obolibrary.org/obo/foodon/imports/robot_plant_parts.ofn" \
   --output ../robot_plant_parts.ofn
 
 robot template --template process.tsv\
   --prefix "dcterms:http://purl.org/dc/terms/" \
-  --input "../../foodon-merged.ofn" \
+  --input "../../foodon-full.owl" \
   --ontology-iri "http://purl.obolibrary.org/obo/foodon/imports/robot_process.ofn" \
   --output ../robot_process.ofn
 
 robot template --template food_process.tsv\
   --prefix "dcterms:http://purl.org/dc/terms/" \
-  --input "../../foodon-merged.ofn" \
+  --input "../../foodon-full.owl" \
   --ontology-iri "http://purl.obolibrary.org/obo/foodon/imports/robot_food_process.ofn" \
   --output ../robot_food_process.ofn
 
 robot template --template seafood.tsv\
   --prefix "dcterms:http://purl.org/dc/terms/" \
-  --input "../../foodon-merged.ofn" \
+  --input "../../foodon-full.owl" \
   --ontology-iri "http://purl.obolibrary.org/obo/foodon/imports/robot_seafood.ofn" \
   --output ../robot_seafood.ofn
 
 robot template --template wine.tsv \
   --prefix "dcterms:http://purl.org/dc/terms/" \
-  --input "../../foodon-merged.ofn" \
+  --input "../../foodon-full.owl" \
   --ontology-iri "http://purl.obolibrary.org/obo/foodon/imports/robot_wine.ofn" \
   --output ../robot_wine.ofn
 
@@ -92,9 +92,3 @@ The --prefix parameter is used to expand abbreviated namespace URLs.
 All output files get delivered to parent directory.  Manually import them in FoodOn (in Active Ontology -> Ontology Imports section of Protege.
 
 Do this against foodon-edit.owl and all imports/foodon_product_import.ofn etc.    
-
-grep -v '^Declaration' imports/robot_plant_parts.ofn > temp.ofn
-robot unmerge --input foodon-edit.ofn --input temp.ofn --output foodon-edit.ofn
-robot unmerge --input imports/foodon_product_import.ofn --input temp.ofn --output imports/foodon_product_import.ofn
-rm temp.ofn
-
