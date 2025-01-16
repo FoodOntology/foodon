@@ -271,7 +271,7 @@ FOODON:00003568	fruit	mangosteen	'fruit' and 'in taxon' some 'Garcinia mangostan
 FOODON:00003569	fruit	star apple	'fruit' and 'in taxon' some 'Chrysophyllum cainito'		Chrysophyllum cainito	A fruit of a star apple tree (Chrysophyllum cainito).				2020-10-20T06:41:31	https://orcid.org/0000-0001-5275-8866	cainito|caimito|tar apple|purple star apple|golden leaf tree|abiaba|pomme de lait|estrella|milk fruit|aguay									
 FOODON:00003141	fruit	heart of palm		'in taxon' some 'Chamaerops humilis'	Chamaerops humilis	An inner core and growing bud of certain palm trees, including coconut, acai palm, sabal, and juçara	http://sarapiquiecoorganico.com/palm-heart/|https://en.wikipedia.org/wiki/Heart_of_palm			2020-10-21T09:46:16	https://orcid.org/0000-0001-5275-8866	Palmito|Palmetto|Palm Heart									
 FOODON:00003570	tomato	pear tomato				A pear shaped heirloom fruit varietal of a tomato plant (Solanum lycopersicum).				2020-10-20T07:07:27	https://orcid.org/0000-0001-5275-8866	teardrop tomato									
-FOODON:00003571	tuber	water chestnut	'tuber' and 'in taxon' some 'Eleocharis dulcis'		Eleocharis dulcis	A tuber of a water chest nut plant (Eleocharis dulcis).	https://en.wikipedia.org/wiki/Eleocharis_dulcis			2020-10-19T09:18:27	https://orcid.org/0000-0001-5275-8866	Chinese water chestnut									
+FOODON:00003571	seed	water caltrop	'seed' and 'in taxon' some ('Trapa natans' or 'Trapa bicornis')			A seed of a water chestnut plant (Eleocharis dulcis).	https://en.wikipedia.org/wiki/Eleocharis_dulcis			2020-10-19T09:18:27	https://orcid.org/0000-0001-5275-8866	water chestnut|buffalo nut|bat nut|devil pod|ling nut|mustache nut|singhara nut									
 FOODON:00003572	root, tuber or bulb, with peel	root vegetable				An underground plant part eaten as food by humans.				2020-10-23T10:00:00	https://orcid.org/0000-0001-5275-8866	root vegetable									
 FOODON:00003493	flower bud	caper	'flower bud' and 'in taxon' some 'Capparis spinosa'		Capparis spinosa	An edible flower bud of a caper plant (Capparis spinosa).				2020-10-14T07:45:09	https://orcid.org/0000-0001-5275-8866	caper bush|Flinders rose									
 FOODON:00003573	inflorescence	artichoke head	'inflorescence' and 'in taxon' some 'Cynara cardunculus var. scolymus'		Cynara cardunculus var. scolymus	An inflorescence of an artichoke plant (Cynara cardunculus var. scolymus).				2020-10-19T04:14:01	https://orcid.org/0000-0001-5275-8866	french artichoke|green artichoke|globe artichoke									
@@ -1678,12 +1678,15 @@ FOODON:03411001		pea plant edible seed cultivar
 NCBITaxon:260130		Acca sellowiana																			
 NCBITaxon:4216		Arctium																			
 NCBITaxon:330163		Dysphania ambrosioides																			
+FOODON:00002865		mashu root																			
+NCBITaxon:236974		Trapa bicornis																			
+FOODON:03315451		piece of wakame																			
 		USDA Terms	USDA Mappings																		
 FOODON:00005180	leaf	willow leaf	'leaf' and 'in taxon' some 'Salix'			A leaf of a willow plant.				2025-01-15T15:10:50Z	https://orcid.org/0000-0001-5275-8866										
 FOODON:00005366	blackberry	wild blackberry				A blackberry variety which is not cultivated.				2025-01-15T15:10:50Z	https://orcid.org/0000-0002-8844-9165										
 FOODON:00005181	wild blackberry	wild blackberry (raw)	'wild blackberry' and 'has quality' some 'raw'			A raw wild blackberry.				2025-01-15T15:10:50Z	https://orcid.org/0000-0001-5275-8866										
 FOODON:00005182	cloudberry	cloudberry (raw)	'cloudberry' and 'has quality' some 'raw'			A raw cloudberry.				2025-01-15T15:10:50Z	https://orcid.org/0000-0001-5275-8866										
-FOODON:00005183	Mashu root	mashu root (raw)	'Mashu root' and 'has quality' some 'raw'			A raw mashu root.				2025-01-15T15:10:50Z	https://orcid.org/0000-0001-5275-8866										
+FOODON:00005183	mashu root	mashu root (raw)	'Mashu root' and 'has quality' some 'raw'			A raw mashu root.				2025-01-15T15:10:50Z	https://orcid.org/0000-0001-5275-8866										
 FOODON:00005184	grape	fox grape	'grape' and 'in taxon' some 'Vitis labrusca'		Vitis labrusca	A berry fruit of a fox grape plant.				2025-01-15T15:10:50Z	https://orcid.org/0000-0001-5275-8866										
 FOODON:00005185	fox grape	fox grape (raw)	'fox grape' and 'has quality' some 'raw'			A raw fox grape.				2025-01-15T15:10:50Z	https://orcid.org/0000-0001-5275-8866										
 FOODON:00005186	berry fruit	ground cherry	'berry fruit' and 'in taxon' some 'Physalis'			A berry fruit of a ground cherry plant.				2025-01-15T15:10:50Z	https://orcid.org/0000-0001-5275-8866										
@@ -1724,7 +1727,7 @@ FOODON:00005217	brazilnut (shell off)	brazilnut (shell off, dried)	'brazilnut (s
 FOODON:00005218	green plantain	green plantain (raw)	'green plantain' and 'has quality' some 'raw'			A whole raw green plantain.				2025-01-15T15:10:50Z	https://orcid.org/0000-0001-5275-8866										
 FOODON:00005219	coconut meat	coconut meat (dried)	'coconut meat' and 'has quality' some 'dried'			Coconut meat that has been dried.				2025-01-15T15:10:50Z	https://orcid.org/0000-0001-5275-8866										
 FOODON:00005220	european chestnut	european chestnut (dried)	'european chestnut' and 'has quality' some 'dried'			A whole dried european chestnut.				2025-01-15T15:10:50Z	https://orcid.org/0000-0001-5275-8866										
-FOODON:00005221	wakame	piece of wakame (raw)	'wakame' and 'has quality' some 'raw'			A piece of raw raw wakame.				2025-01-15T15:10:50Z	https://orcid.org/0000-0001-5275-8866										
+FOODON:00005221	piece of wakame	piece of wakame (raw)	'wakame' and 'has quality' some 'raw'			A piece of raw raw wakame.				2025-01-15T15:10:50Z	https://orcid.org/0000-0001-5275-8866										
 FOODON:00005222	fennel bulb	fennel bulb (raw)	'fennel bulb' and 'has quality' some 'raw'			A whole raw fennel bulb.				2025-01-15T15:10:50Z	https://orcid.org/0000-0001-5275-8866										
 FOODON:00005223	arugula leaf	arugula leaf (raw)	'arugula leaf' and 'has quality' some 'raw'			A whole raw arugula leaf.				2025-01-15T15:10:50Z	https://orcid.org/0000-0001-5275-8866										
 FOODON:00005224	pepo fruit	winter melon				A pepo fruit of a winter melon plant.				2025-01-15T15:10:50Z	https://orcid.org/0000-0001-5275-8866										
@@ -1735,7 +1738,7 @@ FOODON:00005228	breadfruit seed	breadfruit seed (raw)	'breadfruit seed' and 'has
 FOODON:00005229	lemon peel	lemon peel (raw)	'lemon peel' and 'has quality' some 'raw'			A lemon peel that is raw.				2025-01-15T15:10:50Z	https://orcid.org/0000-0001-5275-8866										
 FOODON:00005230	sour cherry	sour cherry (frozen)	'sour cherry' and 'has quality' some 'frozen'			A frozen sour cherry.				2025-01-15T15:10:50Z	https://orcid.org/0000-0001-5275-8866										
 FOODON:00005231	chinese chestnut	chinese chestnut (dried)	'chinese chestnut' and 'has quality' some 'dried'			A whole dried chinese chestnut.				2025-01-15T15:10:50Z	https://orcid.org/0000-0001-5275-8866										
-FOODON:00005232	european chestnut 	european chestnut (dried)	'european chestnut' and 'has quality' some 'dried'			A whole dried european chestnut.				2025-01-15T15:10:50Z	https://orcid.org/0000-0001-5275-8866										
+	european chestnut 	european chestnut (dried)	'european chestnut' and 'has quality' some 'dried'			A whole dried european chestnut.				2025-01-15T15:10:50Z	https://orcid.org/0000-0001-5275-8866										
 FOODON:00005233	hickory nut	hickory nut (dried)	'sour cherry' and 'has quality' some 'dried'			A whole dried hickory nut.				2025-01-15T15:10:50Z	https://orcid.org/0000-0001-5275-8866										
 FOODON:00005234	black walnut	black walnut (dried)	'black walnut' and 'has quality' some 'dried'			A whole dried black walnut.				2025-01-15T15:10:50Z	https://orcid.org/0000-0001-5275-8866										
 FOODON:00005367	seed	watermelon seed	'seed' and 'in taxon' some 'watermelon'			A whole watermelon seed.				2025-01-15T15:10:50Z	https://orcid.org/0000-0002-8844-9165										
@@ -1748,20 +1751,20 @@ FOODON:00005239	agar food product	agar (raw)				Raw agar.				2025-01-15T15:10:50
 FOODON:00005240	seaweed (dried)	spirulina (dried)				Dried spirulina.				2025-01-15T15:10:50Z	https://orcid.org/0000-0001-5275-8866										
 FOODON:00005241	fig	fig (dried)	'fig' and 'has quality' some 'dried'			A whole dried fig.				2025-01-15T15:10:50Z	https://orcid.org/0000-0001-5275-8866										
 FOODON:00005242	longan	longan (dried)	'longan' and 'has quality' some 'dried'			A whole dried longan.				2025-01-15T15:10:50Z	https://orcid.org/0000-0001-5275-8866										
-FOODON:00005243	sesame seed	sesame seed (dried)	'sesame seed' and 'has quality' some 'dried'			A whole dried sesame seed.				2025-01-15T15:10:50Z	https://orcid.org/0000-0001-5275-8866										
+	sesame seed	sesame seed (dried)	'sesame seed' and 'has quality' some 'dried'			A whole dried sesame seed.				2025-01-15T15:10:50Z	https://orcid.org/0000-0001-5275-8866										
 FOODON:00005244	melon food product	melon ball				A ball-shaped cut of melon, typically using melon baller.				2025-01-15T15:10:50Z	https://orcid.org/0000-0001-5275-8866										
 FOODON:00005245	melon ball	melon ball (frozen)	'melon ball' and 'has quality' some 'frozen'			A frozen melon ball.				2025-01-15T15:10:50Z	https://orcid.org/0000-0001-5275-8866										
 FOODON:00005246	asparagus bean	asparagus bean (mature)	'asparagus bean' and 'has quality' some 'mature'			A whole mature yardlong bean.				2025-01-15T15:10:50Z	https://orcid.org/0000-0001-5275-8866										
 FOODON:00005247	soybean	soybean (mature)	'soybean' and 'has quality' some 'mature'			A whole mature soybean.				2025-01-15T15:10:50Z	https://orcid.org/0000-0001-5275-8866										
 FOODON:00005248	mung bean	mung bean (mature)	'mung bean' and 'has quality' some 'mature'			A whole mature mung bean.				2025-01-15T15:10:50Z	https://orcid.org/0000-0001-5275-8866										
 	lupin bean	lupin bean (mature)	'lupin bean' and 'has quality' some 'mature'			A whole mature lupin bean.				2025-01-15T15:10:50Z	https://orcid.org/0000-0001-5275-8866										
-FOODON:00005250	moth bean	mothbean (mature)	'moth bean' and 'has quality' some 'mature'			A whole mature mothbean.				2025-01-15T15:10:50Z	https://orcid.org/0000-0001-5275-8866										
+	moth bean	mothbean (mature)	'moth bean' and 'has quality' some 'mature'			A whole mature mothbean.				2025-01-15T15:10:50Z	https://orcid.org/0000-0001-5275-8866										
 FOODON:00005251	lentil	lentil (mature)	'lentil' and 'has quality' some 'mature'			A whole mature lentil.				2025-01-15T15:10:50Z	https://orcid.org/0000-0001-5275-8866										
 FOODON:00005252	hyacinth bean	hyacinth bean (mature)	'hyacinth bean' and 'has quality' some 'mature'			A whole mature hyacinth bean.				2025-01-15T15:10:50Z	https://orcid.org/0000-0001-5275-8866										
 FOODON:00005253	navy bean	navy bean (mature)	'navy bean' and 'has quality' some 'mature'			A whole mature navy bean.				2025-01-15T15:10:50Z	https://orcid.org/0000-0001-5275-8866										
 FOODON:00005254	kidney bean	kidney bean (mature)	'kidney bean' and 'has quality' some 'mature'			A whole mature kidney bean.				2025-01-15T15:10:50Z	https://orcid.org/0000-0001-5275-8866										
 FOODON:00005255	pea	pea (mature)	'pea' and 'has quality' some 'mature'			A whole mature pea.				2025-01-15T15:10:50Z	https://orcid.org/0000-0001-5275-8866										
-FOODON:00005256	bean	winged bean	'seed' and 'in taxon' some 'Psophocarpus tetragonolobus'			A seed of a winged bean plant (Psophocarpus tetragonolobus).				2025-01-15T15:10:50Z	https://orcid.org/0000-0001-5275-8866										
+	bean	winged bean	'seed' and 'in taxon' some 'Psophocarpus tetragonolobus'			A seed of a winged bean plant (Psophocarpus tetragonolobus).				2025-01-15T15:10:50Z	https://orcid.org/0000-0001-5275-8866										
 FOODON:00005257	winged bean	winged bean (mature)	'winged bean' and 'has quality' some 'mature'			A whole mature winged pea.				2025-01-15T15:10:50Z	https://orcid.org/0000-0001-5275-8866										
 FOODON:00005258	cowpea	cowpea (mature)	'cowpea' and 'has quality' some 'mature'			A whole mature cowpea.				2025-01-15T15:10:50Z	https://orcid.org/0000-0001-5275-8866										
 FOODON:00005259	cowpea	common cowpea				A seed of a common cowpea plant, a varietal of cowpea.				2025-01-15T15:10:50Z	https://orcid.org/0000-0001-5275-8866										
@@ -1786,7 +1789,7 @@ FOODON:00005277	black turtle bean	black turtle bean (raw, mature)				A raw, matu
 FOODON:00005278	great northern bean	great northern bean (raw, mature)				A raw, mature great northern bean.				2025-01-15T15:10:50Z	https://orcid.org/0000-0001-5275-8866										
 FOODON:00005279	kidney bean 	kidney bean (raw, mature)				A raw mature kidney bean.				2025-01-15T15:10:50Z	https://orcid.org/0000-0001-5275-8866										
 FOODON:00005280	red kidney bean (mature)	red kidney bean (raw, mature)				A raw, mature red kidney bean.				2025-01-15T15:10:50Z	https://orcid.org/0000-0001-5275-8866										
-FOODON:00005281	red kidney bean	red kidney bean (mature)	'red kidney bean' and 'has quality' some 'mature'			A whole mature red kidney bean.				2025-01-15T15:10:50Z	https://orcid.org/0000-0001-5275-8866										
+	red kidney bean	red kidney bean (mature)	'red kidney bean' and 'has quality' some 'mature'			A whole mature red kidney bean.				2025-01-15T15:10:50Z	https://orcid.org/0000-0001-5275-8866										
 FOODON:00005282	catjang pea	catjang pea (mature)	'catjang pea' and 'has quality' some 'mature'			A whole mature catjang pea.				2025-01-15T15:10:50Z	https://orcid.org/0000-0001-5275-8866										
 FOODON:00005283	blackeyed pea	blackeyed pea (mature)	'blackeyed pea' and 'has quality' some 'mature'			A whole mature blackeye pea.				2025-01-15T15:10:50Z	https://orcid.org/0000-0001-5275-8866										
 FOODON:00005284	lima bean	lima bean (mature)	'lima bean' and 'has quality' some 'mature'			A whole mature lima bean.				2025-01-15T15:10:50Z	https://orcid.org/0000-0001-5275-8866										
@@ -1848,7 +1851,7 @@ FOODON:00005337	chinese cabbage head	napa cabbage head				A rosette of a nappa c
 FOODON:00005338	napa cabbage head	napa cabbage head (raw)	'napa cabbage head' and 'has quality' some 'raw'			A raw napa cabbage head.				2025-01-15T15:10:50Z	https://orcid.org/0000-0001-5275-8866										
 FOODON:00005339	rosette leaf	napa cabbage leaf				A rosette leaf of a napa cabbage plant.				2025-01-15T15:10:50Z	https://orcid.org/0000-0001-5275-8866										
 FOODON:00005340	gai lan	gai lan (raw)	'gai lan' and 'has quality' some 'raw'			A raw gai lan.				2025-01-15T15:10:50Z	https://orcid.org/0000-0001-5275-8866										
-FOODON:00005341	leaf	dandelion leaf	'leaf' and 'in taxon' some 'Taraxacum officinale'			A leaf of a dandelion plant.				2025-01-15T15:10:50Z	https://orcid.org/0000-0001-5275-8866										
+	leaf	dandelion leaf	'leaf' and 'in taxon' some 'Taraxacum officinale'			A leaf of a dandelion plant.				2025-01-15T15:10:50Z	https://orcid.org/0000-0001-5275-8866										
 FOODON:00005342	vegetable food product	dandelion food product				A food product that has a defining ingredient some dandelion plant.				2025-01-15T15:10:50Z	https://orcid.org/0000-0001-5275-8866										
 FOODON:00005343	dandelion food product	dandelion greens bunch	'plant leaf bunch' and 'has member' some 'dandelion leaf' and 'has member' only 'dandelion leaf' and 'has quality' some raw			A bunch of raw dandelion leaves.				2025-01-15T15:10:50Z	https://orcid.org/0000-0001-5275-8866										
 FOODON:00005344	amaranth leaf	amaranth leaf (raw)	'amaranth leaf' and 'has quality' some 'raw'			A whole raw amaranth leaf.				2025-01-15T15:10:50Z	https://orcid.org/0000-0001-5275-8866										

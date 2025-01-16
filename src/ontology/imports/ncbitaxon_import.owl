@@ -1464,6 +1464,7 @@ Declaration(Class(obo:NCBITaxon_225485))
 Declaration(Class(obo:NCBITaxon_225760))
 Declaration(Class(obo:NCBITaxon_226089))
 Declaration(Class(obo:NCBITaxon_22663))
+Declaration(Class(obo:NCBITaxon_22665))
 Declaration(Class(obo:NCBITaxon_22666))
 Declaration(Class(obo:NCBITaxon_227725))
 Declaration(Class(obo:NCBITaxon_22774))
@@ -1518,6 +1519,7 @@ Declaration(Class(obo:NCBITaxon_236585))
 Declaration(Class(obo:NCBITaxon_236586))
 Declaration(Class(obo:NCBITaxon_236587))
 Declaration(Class(obo:NCBITaxon_23672))
+Declaration(Class(obo:NCBITaxon_236974))
 Declaration(Class(obo:NCBITaxon_237575))
 Declaration(Class(obo:NCBITaxon_237863))
 Declaration(Class(obo:NCBITaxon_237934))
@@ -1653,6 +1655,7 @@ Declaration(Class(obo:NCBITaxon_25996))
 Declaration(Class(obo:NCBITaxon_259987))
 Declaration(Class(obo:NCBITaxon_26000))
 Declaration(Class(obo:NCBITaxon_26005))
+Declaration(Class(obo:NCBITaxon_260130))
 Declaration(Class(obo:NCBITaxon_260138))
 Declaration(Class(obo:NCBITaxon_260139))
 Declaration(Class(obo:NCBITaxon_260140))
@@ -2273,6 +2276,7 @@ Declaration(Class(obo:NCBITaxon_3296))
 Declaration(Class(obo:NCBITaxon_3297))
 Declaration(Class(obo:NCBITaxon_329779))
 Declaration(Class(obo:NCBITaxon_3298))
+Declaration(Class(obo:NCBITaxon_330163))
 Declaration(Class(obo:NCBITaxon_3309))
 Declaration(Class(obo:NCBITaxon_33090))
 Declaration(Class(obo:NCBITaxon_330902))
@@ -2954,6 +2958,7 @@ Declaration(Class(obo:NCBITaxon_40562))
 Declaration(Class(obo:NCBITaxon_405908))
 Declaration(Class(obo:NCBITaxon_40674))
 Declaration(Class(obo:NCBITaxon_4068))
+Declaration(Class(obo:NCBITaxon_40685))
 Declaration(Class(obo:NCBITaxon_4069))
 Declaration(Class(obo:NCBITaxon_4070))
 Declaration(Class(obo:NCBITaxon_4071))
@@ -3039,6 +3044,7 @@ Declaration(Class(obo:NCBITaxon_420460))
 Declaration(Class(obo:NCBITaxon_4206))
 Declaration(Class(obo:NCBITaxon_4210))
 Declaration(Class(obo:NCBITaxon_42148))
+Declaration(Class(obo:NCBITaxon_4216))
 Declaration(Class(obo:NCBITaxon_4217))
 Declaration(Class(obo:NCBITaxon_4219))
 Declaration(Class(obo:NCBITaxon_4220))
@@ -4348,6 +4354,7 @@ Declaration(Class(obo:NCBITaxon_75026))
 Declaration(Class(obo:NCBITaxon_75041))
 Declaration(Class(obo:NCBITaxon_75042))
 Declaration(Class(obo:NCBITaxon_75045))
+Declaration(Class(obo:NCBITaxon_75062))
 Declaration(Class(obo:NCBITaxon_75065))
 Declaration(Class(obo:NCBITaxon_75067))
 Declaration(Class(obo:NCBITaxon_75079))
@@ -15052,12 +15059,18 @@ AnnotationAssertion(oboInOwl:hasExactSynonym obo:NCBITaxon_22663 "zakuro")
 AnnotationAssertion(rdfs:label obo:NCBITaxon_22663 "Punica granatum")
 SubClassOf(obo:NCBITaxon_22663 obo:NCBITaxon_3928)
 
+# Class: obo:NCBITaxon_22665 (Trapa)
+
+AnnotationAssertion(obo:IAO_0000412 obo:NCBITaxon_22665 obo:ncbitaxon.owl)
+AnnotationAssertion(rdfs:label obo:NCBITaxon_22665 "Trapa")
+SubClassOf(obo:NCBITaxon_22665 obo:NCBITaxon_3928)
+
 # Class: obo:NCBITaxon_22666 (Trapa natans)
 
 AnnotationAssertion(obo:IAO_0000412 obo:NCBITaxon_22666 obo:ncbitaxon.owl)
 AnnotationAssertion(oboInOwl:hasExactSynonym obo:NCBITaxon_22666 "water chestnut")
 AnnotationAssertion(rdfs:label obo:NCBITaxon_22666 "Trapa natans")
-SubClassOf(obo:NCBITaxon_22666 obo:NCBITaxon_3928)
+SubClassOf(obo:NCBITaxon_22666 obo:NCBITaxon_22665)
 
 # Class: obo:NCBITaxon_227725 (Solanum quitoense)
 
@@ -15410,6 +15423,12 @@ AnnotationAssertion(obo:IAO_0000412 obo:NCBITaxon_23672 obo:ncbitaxon.owl)
 AnnotationAssertion(oboInOwl:hasExactSynonym obo:NCBITaxon_23672 "soapberry family")
 AnnotationAssertion(rdfs:label obo:NCBITaxon_23672 "Sapindaceae")
 SubClassOf(obo:NCBITaxon_23672 obo:NCBITaxon_41937)
+
+# Class: obo:NCBITaxon_236974 (Trapa bicornis)
+
+AnnotationAssertion(obo:IAO_0000412 obo:NCBITaxon_236974 obo:ncbitaxon.owl)
+AnnotationAssertion(rdfs:label obo:NCBITaxon_236974 "Trapa bicornis")
+SubClassOf(obo:NCBITaxon_236974 obo:NCBITaxon_22665)
 
 # Class: obo:NCBITaxon_237575 (Citrus tangerina)
 
@@ -16296,6 +16315,14 @@ SubClassOf(obo:NCBITaxon_26000 obo:NCBITaxon_71243)
 AnnotationAssertion(obo:IAO_0000412 obo:NCBITaxon_26005 obo:ncbitaxon.owl)
 AnnotationAssertion(rdfs:label obo:NCBITaxon_26005 "Elaeocarpus")
 SubClassOf(obo:NCBITaxon_26005 obo:NCBITaxon_26000)
+
+# Class: obo:NCBITaxon_260130 (Acca sellowiana)
+
+AnnotationAssertion(obo:IAO_0000412 obo:NCBITaxon_260130 obo:ncbitaxon.owl)
+AnnotationAssertion(oboInOwl:hasExactSynonym obo:NCBITaxon_260130 "guayaba chilena")
+AnnotationAssertion(oboInOwl:hasExactSynonym obo:NCBITaxon_260130 "pineapple-guava")
+AnnotationAssertion(rdfs:label obo:NCBITaxon_260130 "Acca sellowiana")
+SubClassOf(obo:NCBITaxon_260130 obo:NCBITaxon_1705104)
 
 # Class: obo:NCBITaxon_260138 (Pimenta)
 
@@ -20520,6 +20547,15 @@ SubClassOf(obo:NCBITaxon_329779 obo:NCBITaxon_4107)
 AnnotationAssertion(obo:IAO_0000412 obo:NCBITaxon_3298 obo:ncbitaxon.owl)
 AnnotationAssertion(rdfs:label obo:NCBITaxon_3298 "Zamiaceae")
 SubClassOf(obo:NCBITaxon_3298 obo:NCBITaxon_3297)
+
+# Class: obo:NCBITaxon_330163 (Dysphania ambrosioides)
+
+AnnotationAssertion(obo:IAO_0000412 obo:NCBITaxon_330163 obo:ncbitaxon.owl)
+AnnotationAssertion(oboInOwl:hasExactSynonym obo:NCBITaxon_330163 "American wormseed")
+AnnotationAssertion(oboInOwl:hasExactSynonym obo:NCBITaxon_330163 "Jerusalem-tea")
+AnnotationAssertion(oboInOwl:hasExactSynonym obo:NCBITaxon_330163 "epazote")
+AnnotationAssertion(rdfs:label obo:NCBITaxon_330163 "Dysphania ambrosioides")
+SubClassOf(obo:NCBITaxon_330163 obo:NCBITaxon_1307796)
 
 # Class: obo:NCBITaxon_3309 (Ginkgoaceae)
 
@@ -25255,6 +25291,13 @@ AnnotationAssertion(obo:IAO_0000412 obo:NCBITaxon_4068 obo:ncbitaxon.owl)
 AnnotationAssertion(rdfs:label obo:NCBITaxon_4068 "Gymnema sylvestre")
 SubClassOf(obo:NCBITaxon_4068 obo:NCBITaxon_167484)
 
+# Class: obo:NCBITaxon_40685 (Salix)
+
+AnnotationAssertion(obo:IAO_0000412 obo:NCBITaxon_40685 obo:ncbitaxon.owl)
+AnnotationAssertion(oboInOwl:hasExactSynonym obo:NCBITaxon_40685 "willows")
+AnnotationAssertion(rdfs:label obo:NCBITaxon_40685 "Salix")
+SubClassOf(obo:NCBITaxon_40685 obo:NCBITaxon_3688)
+
 # Class: obo:NCBITaxon_4069 (Solanales)
 
 AnnotationAssertion(obo:IAO_0000412 obo:NCBITaxon_4069 obo:ncbitaxon.owl)
@@ -25844,12 +25887,19 @@ AnnotationAssertion(oboInOwl:hasExactSynonym obo:NCBITaxon_42148 "temperate bass
 AnnotationAssertion(rdfs:label obo:NCBITaxon_42148 "Moronidae")
 SubClassOf(obo:NCBITaxon_42148 obo:NCBITaxon_1489923)
 
+# Class: obo:NCBITaxon_4216 (Arctium)
+
+AnnotationAssertion(obo:IAO_0000412 obo:NCBITaxon_4216 obo:ncbitaxon.owl)
+AnnotationAssertion(oboInOwl:hasExactSynonym obo:NCBITaxon_4216 "burdocks")
+AnnotationAssertion(rdfs:label obo:NCBITaxon_4216 "Arctium")
+SubClassOf(obo:NCBITaxon_4216 obo:NCBITaxon_102818)
+
 # Class: obo:NCBITaxon_4217 (Arctium lappa)
 
 AnnotationAssertion(obo:IAO_0000412 obo:NCBITaxon_4217 obo:ncbitaxon.owl)
 AnnotationAssertion(oboInOwl:hasExactSynonym obo:NCBITaxon_4217 "great burdock")
 AnnotationAssertion(rdfs:label obo:NCBITaxon_4217 "Arctium lappa")
-SubClassOf(obo:NCBITaxon_4217 obo:NCBITaxon_102818)
+SubClassOf(obo:NCBITaxon_4217 obo:NCBITaxon_4216)
 
 # Class: obo:NCBITaxon_4219 (Artemisia)
 
@@ -32879,7 +32929,7 @@ SubClassOf(obo:NCBITaxon_6697 obo:NCBITaxon_6696)
 
 AnnotationAssertion(obo:IAO_0000412 obo:NCBITaxon_669814 obo:ncbitaxon.owl)
 AnnotationAssertion(rdfs:label obo:NCBITaxon_669814 "Salix pulchra")
-SubClassOf(obo:NCBITaxon_669814 obo:NCBITaxon_3688)
+SubClassOf(obo:NCBITaxon_669814 obo:NCBITaxon_40685)
 
 # Class: obo:NCBITaxon_669897 (Vanilla x tahitensis)
 
@@ -34766,6 +34816,14 @@ SubClassOf(obo:NCBITaxon_75042 obo:NCBITaxon_75041)
 AnnotationAssertion(obo:IAO_0000412 obo:NCBITaxon_75045 obo:ncbitaxon.owl)
 AnnotationAssertion(rdfs:label obo:NCBITaxon_75045 "Zebrasoma")
 SubClassOf(obo:NCBITaxon_75045 obo:NCBITaxon_145345)
+
+# Class: obo:NCBITaxon_75062 (Rubus allegheniensis)
+
+AnnotationAssertion(obo:IAO_0000412 obo:NCBITaxon_75062 obo:ncbitaxon.owl)
+AnnotationAssertion(oboInOwl:hasExactSynonym obo:NCBITaxon_75062 "Allegheny blackberry")
+AnnotationAssertion(oboInOwl:hasExactSynonym obo:NCBITaxon_75062 "sow-teat blackberry")
+AnnotationAssertion(rdfs:label obo:NCBITaxon_75062 "Rubus allegheniensis")
+SubClassOf(obo:NCBITaxon_75062 obo:NCBITaxon_23216)
 
 # Class: obo:NCBITaxon_75065 (Rubus caesius)
 
