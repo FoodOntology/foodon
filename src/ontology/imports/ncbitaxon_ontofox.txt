@@ -76,14 +76,36 @@ http://purl.obolibrary.org/obo/NCBITaxon_3358813 # Macrostrombus costatus
 # DELETED http://purl.obolibrary.org/obo/NCBITaxon_76929 # Cheilodactylus bergi
 http://purl.obolibrary.org/obo/NCBITaxon_76927 # Nemadactylus bergi
 
+# BRANCHES OF TAXA
+http://purl.obolibrary.org/obo/NCBITaxon_375274 # species:Psidium cattleianum
+includeAllChildren
+http://purl.obolibrary.org/obo/NCBITaxon_412675 # Cucumis melo subsp. melo
+includeAllChildren
+http://purl.obolibrary.org/obo/NCBITaxon_161934 # Beta vulgaris
+includeAllChildren
+http://purl.obolibrary.org/obo/NCBITaxon_3712 # species:Brassica oleracea L.
+includeAllChildren
+http://purl.obolibrary.org/obo/NCBITaxon_3760 # species:Prunus persica
+includeAllChildren
+http://purl.obolibrary.org/obo/NCBITaxon_4236 # species:Lactuca sativa
+includeAllChildren
+http://purl.obolibrary.org/obo/NCBITaxon_36056 # Boletus edulis
+includeAllChildren
+http://purl.obolibrary.org/obo/NCBITaxon_3486 # Humulus lupulus
+includeAllChildren 
+http://purl.obolibrary.org/obo/NCBITaxon_4045 # Apium graveolens
+includeAllChildren
+http://purl.obolibrary.org/obo/NCBITaxon_4043 # Petroselinum crispum
+includeAllChildren
+http://purl.obolibrary.org/obo/NCBITaxon_35925 # Diospyros kaki # Japanese persimmon
+includeAllChildren
+
 http://purl.obolibrary.org/obo/NCBITaxon_40685 # Salix / willow
 http://purl.obolibrary.org/obo/NCBITaxon_75062 # Rubus allegheniensis 
 http://purl.obolibrary.org/obo/NCBITaxon_260130 # Acca sellowiana
 http://purl.obolibrary.org/obo/NCBITaxon_4216 # Arctium
 http://purl.obolibrary.org/obo/NCBITaxon_330163 # Dysphania ambrosioides
 http://purl.obolibrary.org/obo/NCBITaxon_236974 # Trapa bicornis
-
-
 http://purl.obolibrary.org/obo/NCBITaxon_199163 # Inga edulis
 http://purl.obolibrary.org/obo/NCBITaxon_57538 # Vaccinium meridionale
 http://purl.obolibrary.org/obo/NCBITaxon_2870819 # Vaccinium caesariense
@@ -91,7 +113,6 @@ http://purl.obolibrary.org/obo/NCBITaxon_4182 # Sesamum indicum
 http://purl.obolibrary.org/obo/NCBITaxon_136672 # Alibertia patinoi
 http://purl.obolibrary.org/obo/NCBITaxon_483749 # Passiflora tarminiana
 http://purl.obolibrary.org/obo/NCBITaxon_13442 # Coffea
-
 http://purl.obolibrary.org/obo/NCBITaxon_4182 # Sesamum indicum 
 http://purl.obolibrary.org/obo/NCBITaxon_7705 # Holothuroidea / sea cucumber
 http://purl.obolibrary.org/obo/NCBITaxon_9878 # Odocoileus hemionus sitkensis / sitka deer
@@ -111,135 +132,75 @@ http://purl.obolibrary.org/obo/NCBITaxon_69108 # Adansonia
 http://purl.obolibrary.org/obo/NCBITaxon_190531 # Vaccinium deliciosum
 http://purl.obolibrary.org/obo/NCBITaxon_1125938 # Selenicereus costaricensis
 http://purl.obolibrary.org/obo/NCBITaxon_4281 # Cornus
-
-
 http://purl.obolibrary.org/obo/NCBITaxon_37184 # antelope 
-
 http://purl.obolibrary.org/obo/NCBITaxon_10157 # Nutria
 http://purl.obolibrary.org/obo/NCBITaxon_9832 # Hippopotamous
-
 http://purl.obolibrary.org/obo/NCBITaxon_297284 # Beefalo
 http://purl.obolibrary.org/obo/NCBITaxon_9206 # Phalacrocoracidae
 http://purl.obolibrary.org/obo/NCBITaxon_9117 #		Grus americana	Whooping Crane 
 http://purl.obolibrary.org/obo/NCBITaxon_27791 # Chelonioidea sea turtle 
-
 http://purl.obolibrary.org/obo/NCBITaxon_123931 # Lepista saeva
-
 http://purl.obolibrary.org/obo/NCBITaxon_104198 # Cantharellus lutescens
-
 http://purl.obolibrary.org/obo/NCBITaxon_113600 # Tricholoma magnivelare / Armillaria ponderosa
-
 http://purl.obolibrary.org/obo/NCBITaxon_29893 # Auricularia polytricha
-
 http://purl.obolibrary.org/obo/NCBITaxon_179837 # Perilla frutescens var. crispa, aka Shiso
-
 http://purl.obolibrary.org/obo/NCBITaxon_44622 # Gyromitra montana
-
 http://purl.obolibrary.org/obo/NCBITaxon_33161 # Gyromitra esculenta
-
-
 http://purl.obolibrary.org/obo/NCBITaxon_39416 # Tuber melanosporum
-
 http://purl.obolibrary.org/obo/NCBITaxon_364196 # Tuber sinense
-
 http://purl.obolibrary.org/obo/NCBITaxon_59557 # Tuber aestivum
-
 http://purl.obolibrary.org/obo/NCBITaxon_42249 # Tuber magnatum
-
 http://purl.obolibrary.org/obo/NCBITaxon_56646 # Fusarium venenatum
-
-
 http://purl.obolibrary.org/obo/NCBITaxon_8932 # Columba livia (Domestic Pigeon)
-
 http://purl.obolibrary.org/obo/NCBITaxon_33208 # Metazoa
-
 http://purl.obolibrary.org/obo/NCBITaxon_2671080 # white ibis
-
 http://purl.obolibrary.org/obo/NCBITaxon_233734 # Planchonella australis
-
 http://purl.obolibrary.org/obo/NCBITaxon_432663 # Ampelocissus acetosa
-
 http://purl.obolibrary.org/obo/NCBITaxon_165297 # Ampelocissus frutescens
-
 http://purl.obolibrary.org/obo/NCBITaxon_992721 # Lannea edulis
-
 http://purl.obolibrary.org/obo/NCBITaxon_479623 # Vitex doniana
-
 http://purl.obolibrary.org/obo/NCBITaxon_204211 # Callicarpa americana / black beautyberry
 http://purl.obolibrary.org/obo/NCBITaxon_461200 # Callicarpa acuminata
-
 http://purl.obolibrary.org/obo/NCBITaxon_344680 # Brassica rapa var. perviridis
-
 http://purl.obolibrary.org/obo/NCBITaxon_40888 # Anthriscus cerefolium
-
 http://purl.obolibrary.org/obo/NCBITaxon_257612 # Snow Pea / Sugar Pea
-
 http://purl.obolibrary.org/obo/NCBITaxon_1370058 #  Carya laciniosa
 http://purl.obolibrary.org/obo/NCBITaxon_13403 # Carya glabra
 http://purl.obolibrary.org/obo/NCBITaxon_1370061 # Carya texana
 http://purl.obolibrary.org/obo/NCBITaxon_2044477 # Carya palmeri
 http://purl.obolibrary.org/obo/NCBITaxon_2800123 # Carya ovalis
 http://purl.obolibrary.org/obo/NCBITaxon_60418 # Carya ovata
-
 http://purl.obolibrary.org/obo/NCBITaxon_1195127 # Selenicereus megalanthus / yellow pitaya
 http://purl.obolibrary.org/obo/NCBITaxon_1125938 # Selenicereus costaricensis / red dragon fruit
-
 http://purl.obolibrary.org/obo/NCBITaxon_3734 # Moringa
-
 http://purl.obolibrary.org/obo/NCBITaxon_252867 # Lanxangia tsao-ko formerly Amomum tsao-ko 
-
 http://purl.obolibrary.org/obo/NCBITaxon_375272 # Pimenta dioica
-
 http://purl.obolibrary.org/obo/NCBITaxon_43895 # Trichilia emetica
-
 http://purl.obolibrary.org/obo/NCBITaxon_39947 # Oryza sativa Japonica Group
 http://purl.obolibrary.org/obo/NCBITaxon_39946 # Oryza sativa Indica Group
-
 http://purl.obolibrary.org/obo/NCBITaxon_197266 # Hoodia gordonii
-
 http://purl.obolibrary.org/obo/NCBITaxon_29892 #  Auricularia auricula-judae 
-
 http://purl.obolibrary.org/obo/NCBITaxon_272846 # Asparagus racemosus
 http://purl.obolibrary.org/obo/NCBITaxon_48037 # Foeniculum
-
-
 http://purl.obolibrary.org/obo/NCBITaxon_941588 # Apium graveolens Secalinum Group
-
 http://purl.obolibrary.org/obo/NCBITaxon_197265 # Hoodia
-
 http://purl.obolibrary.org/obo/NCBITaxon_112823 # Pangium edule
-
-http://purl.obolibrary.org/obo/NCBITaxon_35925 # Diospyros kaki # Japanese persimmon
-includeAllChildren
-
 http://purl.obolibrary.org/obo/NCBITaxon_371859 # Opuntia ficus-indica
-
 http://purl.obolibrary.org/obo/NCBITaxon_1703 # Brevibacterium linens  (Limburger cheese bacteria)
-
 http://purl.obolibrary.org/obo/NCBITaxon_482947 # Psidium cattleyanum var. littorale
-
 http://purl.obolibrary.org/obo/NCBITaxon_434242 # Chenopodium giganteum
 http://purl.obolibrary.org/obo/NCBITaxon_122298 # Blitum bonus-henricus
-
 http://purl.obolibrary.org/obo/NCBITaxon_106567 # Malus sieversii
-
 http://purl.obolibrary.org/obo/NCBITaxon_1592014 # Mangifera minor
 http://purl.obolibrary.org/obo/NCBITaxon_4683 # Allium tuberosum (chinese chive)
 http://purl.obolibrary.org/obo/NCBITaxon_2838343 # Chaetodipterus zonatus / pacific spadefish
-
 http://purl.obolibrary.org/obo/NCBITaxon_313200 # Claytonia Lanceolata
-
-
 http://purl.obolibrary.org/obo/NCBITaxon_2893490 # Leiognathus equula
-
 http://purl.obolibrary.org/obo/NCBITaxon_4557 # Sorghum
-
 http://purl.obolibrary.org/obo/NCBITaxon_171959 # Sorghum bicolor subsp. drummondii
-
 http://purl.obolibrary.org/obo/NCBITaxon_186965 # Petasites japonicus / Petasites japonica
 http://purl.obolibrary.org/obo/NCBITaxon_2719090 # Rajella lintea # WAS http://purl.obolibrary.org/obo/NCBITaxon_1072472 # species:Dipturus linteus (Fries, 1838)
 http://purl.obolibrary.org/obo/NCBITaxon_2762064 # Leukoma thaca # REPLACES NCBITaxon_549450 # species:Protothaca thaca (Molina, 1782)
-
 http://purl.obolibrary.org/obo/NCBITaxon_516932 # Rhynchocinetes durbanensis
 http://purl.obolibrary.org/obo/NCBITaxon_160428 #Potamidae
 http://purl.obolibrary.org/obo/NCBITaxon_166512 # Potamonautidae
@@ -248,7 +209,6 @@ http://purl.obolibrary.org/obo/NCBITaxon_304467 # Platythelphusa
 http://purl.obolibrary.org/obo/NCBITaxon_168676 # Gecarcinucidae 
 http://purl.obolibrary.org/obo/NCBITaxon_84649 # Pseudothelphusidae
 http://purl.obolibrary.org/obo/NCBITaxon_1124764 # Macrocheira kaempferi
-
 http://purl.obolibrary.org/obo/NCBITaxon_166759
 http://purl.obolibrary.org/obo/NCBITaxon_398647
 http://purl.obolibrary.org/obo/NCBITaxon_190105
@@ -274,12 +234,9 @@ http://purl.obolibrary.org/obo/NCBITaxon_1170845
 http://purl.obolibrary.org/obo/NCBITaxon_6554
 http://purl.obolibrary.org/obo/NCBITaxon_31203
 http://purl.obolibrary.org/obo/NCBITaxon_334938
-
 http://purl.obolibrary.org/obo/NCBITaxon_4235
-
 http://purl.obolibrary.org/obo/NCBITaxon_36065
 http://purl.obolibrary.org/obo/NCBITaxon_1760
-
 http://purl.obolibrary.org/obo/NCBITaxon_9053
 http://purl.obolibrary.org/obo/NCBITaxon_9103
 http://purl.obolibrary.org/obo/NCBITaxon_9397
@@ -312,32 +269,6 @@ http://purl.obolibrary.org/obo/NCBITaxon_9918
 http://purl.obolibrary.org/obo/NCBITaxon_9925
 http://purl.obolibrary.org/obo/NCBITaxon_9933
 http://purl.obolibrary.org/obo/NCBITaxon_9980
-
-# BRANCHES OF TAXA
-
-http://purl.obolibrary.org/obo/NCBITaxon_375274 # species:Psidium cattleianum
-includeAllChildren
-
-http://purl.obolibrary.org/obo/NCBITaxon_412675 # Cucumis melo subsp. melo
-includeAllChildren
-http://purl.obolibrary.org/obo/NCBITaxon_161934 # Beta vulgaris
-includeAllChildren
-http://purl.obolibrary.org/obo/NCBITaxon_3712 # species:Brassica oleracea L.
-includeAllChildren
-http://purl.obolibrary.org/obo/NCBITaxon_3760 # species:Prunus persica
-includeAllChildren
-http://purl.obolibrary.org/obo/NCBITaxon_4236 # species:Lactuca sativa
-includeAllChildren
-http://purl.obolibrary.org/obo/NCBITaxon_36056 # Boletus edulis
-includeAllChildren
-http://purl.obolibrary.org/obo/NCBITaxon_3486 # Humulus lupulus
-includeAllChildren 
-http://purl.obolibrary.org/obo/NCBITaxon_4045 # Apium graveolens
-includeAllChildren
-http://purl.obolibrary.org/obo/NCBITaxon_4043 # Petroselinum crispum
-includeAllChildren
-
-
 http://purl.obolibrary.org/obo/NCBITaxon_1000425 # species:Pimpinella major (L.) Huds.
 http://purl.obolibrary.org/obo/NCBITaxon_1001333 # Lithodes murrayi
 http://purl.obolibrary.org/obo/NCBITaxon_100186 # Amphistichus argenteus
@@ -813,11 +744,7 @@ http://purl.obolibrary.org/obo/NCBITaxon_1419742 # Raja texana
 http://purl.obolibrary.org/obo/NCBITaxon_141999 # genus:Carpobrotus N.E. Br.
 http://purl.obolibrary.org/obo/NCBITaxon_1421200 # Clinocardium californiense
 http://purl.obolibrary.org/obo/NCBITaxon_1423690 # Lolliguncula panamensis
-http://purl.obolibrary.org/obo/NCBITaxon_142487 #    Kinosternon subrubrum
-
-
-
-
+http://purl.obolibrary.org/obo/NCBITaxon_142487 # Kinosternon subrubrum
 http://purl.obolibrary.org/obo/NCBITaxon_1432686 # order:Decapoda Latreille, 1802
 http://purl.obolibrary.org/obo/NCBITaxon_143315 # species:Saurida undosquamis (Richardson, 1848)
 http://purl.obolibrary.org/obo/NCBITaxon_143330 # Crenimugil crenilabis
@@ -1365,8 +1292,6 @@ http://purl.obolibrary.org/obo/NCBITaxon_21819 # Mentha
 http://purl.obolibrary.org/obo/NCBITaxon_218797 # Lutjanus malabaricus
 http://purl.obolibrary.org/obo/NCBITaxon_218798 # Scomberomorus commerson
 http://purl.obolibrary.org/obo/NCBITaxon_218801 # Leiognathus spp.
-
-
 http://purl.obolibrary.org/obo/NCBITaxon_218808 # Leiognathus splendens
 http://purl.obolibrary.org/obo/NCBITaxon_21910 # family:Verbenaceae Adans., nom. cons.
 http://purl.obolibrary.org/obo/NCBITaxon_219135 # Polinices spp.
@@ -1818,7 +1743,6 @@ http://purl.obolibrary.org/obo/NCBITaxon_301703 # species:Annona glabra L.
 http://purl.obolibrary.org/obo/NCBITaxon_301862 # species:Annona reticulata L.
 http://purl.obolibrary.org/obo/NCBITaxon_302047 # Seriola lalandi
 http://purl.obolibrary.org/obo/NCBITaxon_302049 # Carcharhinus longimanus
-
 http://purl.obolibrary.org/obo/NCBITaxon_303001 # Puntius chola
 http://purl.obolibrary.org/obo/NCBITaxon_303685 # Balistes capriscus
 http://purl.obolibrary.org/obo/NCBITaxon_303687 # Balistes vetula
@@ -1847,7 +1771,6 @@ http://purl.obolibrary.org/obo/NCBITaxon_30455 # species:Fulmarus glacialis (Lin
 http://purl.obolibrary.org/obo/NCBITaxon_30458 # order:Strigiformes
 http://purl.obolibrary.org/obo/NCBITaxon_30459 # family:Strigidae
 http://purl.obolibrary.org/obo/NCBITaxon_30475 # family:Rajidae Blainville, 1816
-
 http://purl.obolibrary.org/obo/NCBITaxon_30483 # order:Carcharhiniformes
 http://purl.obolibrary.org/obo/NCBITaxon_304850 # Babylonia areolata
 http://purl.obolibrary.org/obo/NCBITaxon_30493 # species:Triakis semifasciata Girard, 1855
@@ -2005,7 +1928,6 @@ http://purl.obolibrary.org/obo/NCBITaxon_321602 # species:Rubus illecebrosus Foc
 http://purl.obolibrary.org/obo/NCBITaxon_32201 # Carya illinoinensis
 http://purl.obolibrary.org/obo/NCBITaxon_322133 # Botia dario
 http://purl.obolibrary.org/obo/NCBITaxon_32219 # species:Amelanchier alnifolia (Nutt.) Nutt. ex M. Roem.
-
 http://purl.obolibrary.org/obo/NCBITaxon_32244 # species:Quillaja saponaria Molina
 http://purl.obolibrary.org/obo/NCBITaxon_32247 # Rubus idaeus
 http://purl.obolibrary.org/obo/NCBITaxon_32278 # Metapenaeus ensis
@@ -2115,7 +2037,6 @@ http://purl.obolibrary.org/obo/NCBITaxon_338315 # Scomber colias
 http://purl.obolibrary.org/obo/NCBITaxon_338571 # species:Amaranthus blitum L.
 http://purl.obolibrary.org/obo/NCBITaxon_3394 # family:Cycadaceae
 http://purl.obolibrary.org/obo/NCBITaxon_3395 # genus:Cycas L.
-
 http://purl.obolibrary.org/obo/NCBITaxon_341243 # Bathyraja aleutica
 http://purl.obolibrary.org/obo/NCBITaxon_341244 # Bathyraja interrupta
 http://purl.obolibrary.org/obo/NCBITaxon_341249 # Bathyraja parmifera
@@ -2362,7 +2283,6 @@ http://purl.obolibrary.org/obo/NCBITaxon_3747 # species:Fragaria X ananassa Duch
 http://purl.obolibrary.org/obo/NCBITaxon_374709 # species:Euphrasia officinalis L.
 http://purl.obolibrary.org/obo/NCBITaxon_37488 # species:Diospyros texana Scheele
 http://purl.obolibrary.org/obo/NCBITaxon_3750 # Apple - malus domestica 
-
 http://purl.obolibrary.org/obo/NCBITaxon_3754 # genus:Prunus L.
 http://purl.obolibrary.org/obo/NCBITaxon_37540 # Buccinum spp.
 http://purl.obolibrary.org/obo/NCBITaxon_375458 # Callinectes rathbunae
@@ -2606,7 +2526,6 @@ http://purl.obolibrary.org/obo/NCBITaxon_40949 # species:Angelica archangelica L
 http://purl.obolibrary.org/obo/NCBITaxon_40959 # species:Pimpinella saxifraga L.
 http://purl.obolibrary.org/obo/NCBITaxon_410349 # Saxidomus gigantea
 http://purl.obolibrary.org/obo/NCBITaxon_410350 # Clinocardium nuttallii
-
 http://purl.obolibrary.org/obo/NCBITaxon_41117 # Pollicipes pollicipes
 http://purl.obolibrary.org/obo/NCBITaxon_4112 # species:Solanum nigrum L.
 http://purl.obolibrary.org/obo/NCBITaxon_4113 # species:Solanum tuberosum L.
@@ -2725,7 +2644,6 @@ http://purl.obolibrary.org/obo/NCBITaxon_435239 # genus:Valamugil Smith, 1948
 http://purl.obolibrary.org/obo/NCBITaxon_435271 # species:Parastromateus Bleeker, 1865
 http://purl.obolibrary.org/obo/NCBITaxon_435272 # Parastromateus niger
 http://purl.obolibrary.org/obo/NCBITaxon_435999 # Trachinotus blochii
-
 http://purl.obolibrary.org/obo/NCBITaxon_436207 # Arnica montana
 http://purl.obolibrary.org/obo/NCBITaxon_43691 # Canarium ovatum
 http://purl.obolibrary.org/obo/NCBITaxon_43698 # family:Synbranchidae
@@ -2847,7 +2765,6 @@ http://purl.obolibrary.org/obo/NCBITaxon_458613 # Urophycis cirrata
 http://purl.obolibrary.org/obo/NCBITaxon_45918 # genus:Empetrum L.
 http://purl.obolibrary.org/obo/NCBITaxon_459284 # Johnius dussumieri
 http://purl.obolibrary.org/obo/NCBITaxon_459287 # Otolithoides biauritus
-
 http://purl.obolibrary.org/obo/NCBITaxon_45948 # Corbicula spp.
 http://purl.obolibrary.org/obo/NCBITaxon_45949 # species:Corbicula fluminea (O. F. Müller, 1774)
 http://purl.obolibrary.org/obo/NCBITaxon_459635 # Pseudoplatystoma tigrinum
@@ -2948,7 +2865,6 @@ http://purl.obolibrary.org/obo/NCBITaxon_479862 # Aluterus monoceros
 http://purl.obolibrary.org/obo/NCBITaxon_479980 # Anarhichas orientalis
 http://purl.obolibrary.org/obo/NCBITaxon_480040 # Coregonus pidschian
 http://purl.obolibrary.org/obo/NCBITaxon_480368 # species:Borassus aethiopum C. Martius
-
 http://purl.obolibrary.org/obo/NCBITaxon_48042 # species:Levisticum officinale W.D.J. Koch
 http://purl.obolibrary.org/obo/NCBITaxon_480971 # species:Caryocar brasiliense Cambess.
 http://purl.obolibrary.org/obo/NCBITaxon_48106 # species:Centella asiatica (L.) Urban
@@ -3136,7 +3052,6 @@ http://purl.obolibrary.org/obo/NCBITaxon_53845 # genus:Caesalpinia L.
 http://purl.obolibrary.org/obo/NCBITaxon_53852 # species:Cassia fistula L.
 http://purl.obolibrary.org/obo/NCBITaxon_53868 # genus:Dialium L.
 http://purl.obolibrary.org/obo/NCBITaxon_53873 # species:Dipteryx odorata (Aublet) Willd.
-
 http://purl.obolibrary.org/obo/NCBITaxon_540279 # Zapteryx exasperata
 http://purl.obolibrary.org/obo/NCBITaxon_540795 # species:Cestrum laurifolium L'Hér.
 http://purl.obolibrary.org/obo/NCBITaxon_542674 # species:Phyla dulcis (Trevir.) Moldenke
@@ -3164,9 +3079,6 @@ http://purl.obolibrary.org/obo/NCBITaxon_54909 # Albula vulpes
 http://purl.obolibrary.org/obo/NCBITaxon_54918 # Ophichthus rex
 http://purl.obolibrary.org/obo/NCBITaxon_549311 # species:Enteromorpha Link, 1820
 http://purl.obolibrary.org/obo/NCBITaxon_549391 # Loligo media
-
-
-
 http://purl.obolibrary.org/obo/NCBITaxon_549456 # Paphies australis
 http://purl.obolibrary.org/obo/NCBITaxon_549457 # Paphies subtriangulata
 http://purl.obolibrary.org/obo/NCBITaxon_549588 # species:Lophius vomerinus Valenciennes in Cuvier and Valenciennes, 1837
@@ -3327,22 +3239,15 @@ http://purl.obolibrary.org/obo/NCBITaxon_59895 # species:Cynara scolymus L.
 http://purl.obolibrary.org/obo/NCBITaxon_59896 # Ovis vignei
 http://purl.obolibrary.org/obo/NCBITaxon_59899 # Clarias batrachus
 http://purl.obolibrary.org/obo/NCBITaxon_59946 # Rexea solandri
-
-
 http://purl.obolibrary.org/obo/NCBITaxon_904227 #    Staurotypus salvinii
 http://purl.obolibrary.org/obo/NCBITaxon_9053 # species:Phasianus Linnaeus, 1758
 http://purl.obolibrary.org/obo/NCBITaxon_91743 # Cephalopholis boenak
 http://purl.obolibrary.org/obo/NCBITaxon_91896 # family:Orobanchaceae
 http://purl.obolibrary.org/obo/NCBITaxon_92049 # species:Macruronus Günther, 1873
-
 http://purl.obolibrary.org/obo/NCBITaxon_9224 # Parrot 
 http://purl.obolibrary.org/obo/NCBITaxon_9265 # family:Didelphidae Gray, 1821
 http://purl.obolibrary.org/obo/NCBITaxon_9267 #  Didelphis virginiana
-
 http://purl.obolibrary.org/obo/NCBITaxon_925390 # Arachis hypogaea var. vulgaris
-
-
-
 http://purl.obolibrary.org/obo/NCBITaxon_60347 # Morchella angusticeps
 http://purl.obolibrary.org/obo/NCBITaxon_603998 # Plectorhinchus orientalis
 http://purl.obolibrary.org/obo/NCBITaxon_60419 # species:Castanea mollissima Blume
@@ -3793,7 +3698,6 @@ http://purl.obolibrary.org/obo/NCBITaxon_75939 # species:Dallia pectoralis Bean,
 http://purl.obolibrary.org/obo/NCBITaxon_75943 # species:Lactuca serriola L.
 http://purl.obolibrary.org/obo/NCBITaxon_76053 # Fundulus majalis
 http://purl.obolibrary.org/obo/NCBITaxon_76072 # family:Exocoetidae
-
 http://purl.obolibrary.org/obo/NCBITaxon_76074 # Hirundichthys affinis
 http://purl.obolibrary.org/obo/NCBITaxon_76276 # Senecio vulgaris
 http://purl.obolibrary.org/obo/NCBITaxon_762772 # species:Neetroplus nematopus Günther, 1867
@@ -4254,7 +4158,6 @@ http://purl.obolibrary.org/obo/NCBITaxon_89462 # species:Bubalus bubalis (Linnae
 http://purl.obolibrary.org/obo/NCBITaxon_89636 # species:Ipomoea aquatica Forsk.
 http://purl.obolibrary.org/obo/NCBITaxon_8969 #  Haliaeetus albicilla
 http://purl.obolibrary.org/obo/NCBITaxon_8976 # order:Galliformes
-
 http://purl.obolibrary.org/obo/NCBITaxon_89945 # species:Merluccius albidus (Mitchill, 1818)
 http://purl.obolibrary.org/obo/NCBITaxon_89946 # Merluccius australis
 http://purl.obolibrary.org/obo/NCBITaxon_89947 # Merluccius capensis
@@ -4270,8 +4173,6 @@ http://purl.obolibrary.org/obo/NCBITaxon_90071 # Buglossidium luteum
 http://purl.obolibrary.org/obo/NCBITaxon_90074 # Microchirus variegatus
 http://purl.obolibrary.org/obo/NCBITaxon_9014 # species:Colinus virginianus (Linnaeus, 1758)
 http://purl.obolibrary.org/obo/NCBITaxon_9031 # species:Gallus gallus (Linnaeus, 1758)
-
-
 http://purl.obolibrary.org/obo/NCBITaxon_8990 # family:Numididae
 http://purl.obolibrary.org/obo/NCBITaxon_90675 # species:Camelina sativa (L.) Crantz
 http://purl.obolibrary.org/obo/NCBITaxon_90893 # species:Laminaria hyperborea
@@ -4283,14 +4184,8 @@ http://purl.obolibrary.org/obo/NCBITaxon_9119 # family:Rallidae
 http://purl.obolibrary.org/obo/NCBITaxon_91214 # species:Juglans cinerea L.
 http://purl.obolibrary.org/obo/NCBITaxon_91721 # species:Heterotis niloticus (Cuvier, 1829)
 http://purl.obolibrary.org/obo/NCBITaxon_91742 # species:Cephalopholis Bloch and Schneider, 1801
-
 http://purl.obolibrary.org/obo/NCBITaxon_91752 # species:Hericium erinaceus
-
-
 http://purl.obolibrary.org/obo/NCBITaxon_92050 # Macruronus magellanicus
-
-
-
 http://purl.obolibrary.org/obo/NCBITaxon_92921 # species:Silybum marianum
 http://purl.obolibrary.org/obo/NCBITaxon_930263 # Prochilodus reticulatus
 http://purl.obolibrary.org/obo/NCBITaxon_93046 # species:Sinocalamus latiflorus (Munro) McClure
@@ -4452,18 +4347,12 @@ http://purl.obolibrary.org/obo/NCBITaxon_9900 # genus:Bison Hamilton Smith, 1827
 http://purl.obolibrary.org/obo/NCBITaxon_9901 # species:Bison bison (Linnaeus, 1758)
 http://purl.obolibrary.org/obo/NCBITaxon_9902 # species:Bison bonasus (Linnaeus, 1758)
 http://purl.obolibrary.org/obo/NCBITaxon_99038 # species:Glebionis coronarium  (L.) Tzvelev
-
 http://purl.obolibrary.org/obo/NCBITaxon_9906 # species:Bos javanicus d'Alton, 1823
-
 http://purl.obolibrary.org/obo/NCBITaxon_9913 # species:Bos taurus Linnaeus, 1758 / Cattle
-
-
-# MISSING
 http://purl.obolibrary.org/obo/NCBITaxon_990595 # Hyperoglyphe pringlei
 http://purl.obolibrary.org/obo/NCBITaxon_990634 # Pterocaesio chrysozona
 http://purl.obolibrary.org/obo/NCBITaxon_9918 # genus:Bubalus Hamilton Smith, 1827
 http://purl.obolibrary.org/obo/NCBITaxon_9923 # wild goat / Capra aegagrus
-
 http://purl.obolibrary.org/obo/NCBITaxon_9925 # species:Capra hircus Linnaeus, 1758 / goat
 http://purl.obolibrary.org/obo/NCBITaxon_99302 # species:Strychnos spinosa Lam.
 http://purl.obolibrary.org/obo/NCBITaxon_9933 # Gazella
@@ -4473,31 +4362,24 @@ http://purl.obolibrary.org/obo/NCBITaxon_99343 # Scomberomorus guttatus
 http://purl.obolibrary.org/obo/NCBITaxon_99344 # Scomberomorus maculatus
 http://purl.obolibrary.org/obo/NCBITaxon_99345 # Scomberomorus regalis
 http://purl.obolibrary.org/obo/NCBITaxon_99346 # Scomberomorus sierra
-
 http://purl.obolibrary.org/obo/NCBITaxon_9935 # genus:Ovis Linnaeus, 1758
 http://purl.obolibrary.org/obo/NCBITaxon_9938 # Ovis aries musimon (mouflon)
-
 http://purl.obolibrary.org/obo/NCBITaxon_9940 # species:Ovis aries Linnaeus, 1758 / sheep
 http://purl.obolibrary.org/obo/NCBITaxon_9944 # genus:Tragelaphus Blainville, 1816
 http://purl.obolibrary.org/obo/NCBITaxon_9946 # species:Tragelaphus strepsiceros (Pallas, 1766)
 http://purl.obolibrary.org/obo/NCBITaxon_9947 # species:Tragelaphus imberbis (Blyth, 1869)
 http://purl.obolibrary.org/obo/NCBITaxon_99490 # species:Loxodonta cyclotis (Matschie, 1900)
-
 http://purl.obolibrary.org/obo/NCBITaxon_99568 # Curcuma (genus, parent of tumeric)
 http://purl.obolibrary.org/obo/NCBITaxon_99572 # Jasus lalandii
 http://purl.obolibrary.org/obo/NCBITaxon_9963 # subfamily:Caprinae Gray, 1821
 http://purl.obolibrary.org/obo/NCBITaxon_9970 # species:Syncerus caffer (Sparrman, 1779)
 http://purl.obolibrary.org/obo/NCBITaxon_997025 # Nematalosa vlaminghi
-
-
 http://purl.obolibrary.org/obo/NCBITaxon_9979 # family:Leporidae Fischer, 1817
 http://purl.obolibrary.org/obo/NCBITaxon_9980 # genus:Lepus Linnaeus, 1758
 http://purl.obolibrary.org/obo/NCBITaxon_9983 # species:Lepus europaeus Pallas, 1778
 http://purl.obolibrary.org/obo/NCBITaxon_9986 # Oryctolagus cuniculus
 http://purl.obolibrary.org/obo/NCBITaxon_9995 # species:Marmota monax (Linnaeus, 1758)
 http://purl.obolibrary.org/obo/NCBITaxon_999584 # species:Mammea africana Sabine
-
-
 http://purl.obolibrary.org/obo/NCBITaxon_99755 # Cherax tenuimanus 
 http://purl.obolibrary.org/obo/NCBITaxon_99773 # Paranephrops spp.
 http://purl.obolibrary.org/obo/NCBITaxon_997973 # Oxycheilinus arenatus
@@ -4506,7 +4388,6 @@ http://purl.obolibrary.org/obo/NCBITaxon_9952 #  Cephalophinae
 http://purl.obolibrary.org/obo/NCBITaxon_9954 #  Cephalophus
 http://purl.obolibrary.org/obo/NCBITaxon_99391 # Maja squinado
 http://purl.obolibrary.org/obo/NCBITaxon_99347 # Scomberomorus tritor
-
 
 [Top level source term URIs and target direct superclass URIs]
 http://purl.obolibrary.org/obo/NCBITaxon_2 # Bacteria

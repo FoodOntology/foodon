@@ -7,17 +7,17 @@ http://purl.obolibrary.org/obo/foodon/imports/general_import.ofn
 OBI
 
 [Low level source term URIs] 
-http://purl.obolibrary.org/obo/OBI_0100026 # organism
+http://purl.obolibrary.org/obo/OBI_0100026 # organism  DUPLICATE of COB 
 http://purl.obolibrary.org/obo/OBI_0000181 # population
 
 http://purl.obolibrary.org/obo/OBI_0000293 # has specified input
 http://purl.obolibrary.org/obo/OBI_0000299 # has specified output
 http://purl.obolibrary.org/obo/OBI_0000312 # is_specified_output_of
 http://purl.obolibrary.org/obo/OBI_0000295 # is_specified_input_of
-http://purl.obolibrary.org/obo/IAO_0000007 # action specification
 
 http://purl.obolibrary.org/obo/OBI_0001886 # NIAID GSCID-BRC alternative term
 
+http://purl.obolibrary.org/obo/IAO_0000310 # document
 http://purl.obolibrary.org/obo/IAO_0000104 # plan specification
 http://purl.obolibrary.org/obo/OBI_0000658 # data representational model
 
@@ -56,6 +56,7 @@ http://purl.obolibrary.org/obo/IAO_0000125 #    pending final vetting
 
 http://purl.obolibrary.org/obo/OBI_1110108 # material to be added
 http://purl.obolibrary.org/obo/OBI_0000967 # container
+http://purl.obolibrary.org/obo/OBI_0000245 # organization
 
 # INFORMATION CONTENT 
 http://purl.obolibrary.org/obo/OBI_0200000 # data transformation
@@ -891,7 +892,7 @@ STATO
 
 [Low level source term URIs]
 http://purl.obolibrary.org/obo/STATO_0000503 # simple random sampling
-
+http://purl.obolibrary.org/obo/STATO_0000102 # executed by
 [Top level source term URIs and target direct superclass URIs]
 http://purl.obolibrary.org/obo/BFO_0000015 # process
 

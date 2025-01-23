@@ -1308,7 +1308,6 @@ Declaration(Class(obo:HANCESTRO_0843))
 Declaration(Class(obo:HANCESTRO_0844))
 Declaration(Class(obo:HANCESTRO_0845))
 Declaration(Class(obo:IAO_0000005))
-Declaration(Class(obo:IAO_0000007))
 Declaration(Class(obo:IAO_0000027))
 Declaration(Class(obo:IAO_0000028))
 Declaration(Class(obo:IAO_0000030))
@@ -1320,6 +1319,7 @@ Declaration(Class(obo:IAO_0000102))
 Declaration(Class(obo:IAO_0000104))
 Declaration(Class(obo:IAO_0000109))
 Declaration(Class(obo:IAO_0000300))
+Declaration(Class(obo:IAO_0000310))
 Declaration(Class(obo:IAO_0000408))
 Declaration(Class(obo:IAO_0000414))
 Declaration(Class(obo:IAO_0000416))
@@ -2171,6 +2171,7 @@ Declaration(ObjectProperty(obo:RO_0009003))
 Declaration(ObjectProperty(obo:RO_0009004))
 Declaration(ObjectProperty(obo:RO_0009005))
 Declaration(ObjectProperty(obo:RO_HOM0000000))
+Declaration(ObjectProperty(obo:STATO_0000102))
 Declaration(NamedIndividual(obo:IAO_0000002))
 Declaration(NamedIndividual(obo:IAO_0000120))
 Declaration(NamedIndividual(obo:IAO_0000121))
@@ -2436,36 +2437,36 @@ AnnotationAssertion(obo:IAO_0000115 obo:IAO_0000136 "A (currently) primitive rel
 AnnotationAssertion(obo:IAO_0000412 obo:IAO_0000136 obo:obi.owl)
 AnnotationAssertion(rdfs:label obo:IAO_0000136 "is about"@en)
 
-# Object Property: obo:OBI_0000293 (has_specified_input)
+# Object Property: obo:OBI_0000293 (has specified input)
 
 AnnotationAssertion(obo:IAO_0000114 obo:OBI_0000293 obo:IAO_0000122)
-AnnotationAssertion(obo:IAO_0000115 obo:OBI_0000293 "The inverse property of is_specified_input_of"@en)
+AnnotationAssertion(obo:IAO_0000115 obo:OBI_0000293 "The inverse property of is specified input of"@en)
 AnnotationAssertion(obo:IAO_0000412 obo:OBI_0000293 obo:obi.owl)
-AnnotationAssertion(rdfs:label obo:OBI_0000293 "has_specified_input"@en)
+AnnotationAssertion(rdfs:label obo:OBI_0000293 "has specified input"@en)
 SubObjectPropertyOf(obo:OBI_0000293 obo:RO_0000057)
 
-# Object Property: obo:OBI_0000295 (is_specified_input_of)
+# Object Property: obo:OBI_0000295 (is specified input of)
 
 AnnotationAssertion(obo:IAO_0000114 obo:OBI_0000295 obo:IAO_0000122)
 AnnotationAssertion(obo:IAO_0000115 obo:OBI_0000295 "A relation between a planned process and a continuant participating in that process that is not created during  the process. The presence of the continuant during the process is explicitly specified in the plan specification which the process realizes the concretization of."@en)
 AnnotationAssertion(obo:IAO_0000412 obo:OBI_0000295 obo:obi.owl)
-AnnotationAssertion(rdfs:label obo:OBI_0000295 "is_specified_input_of"@en)
+AnnotationAssertion(rdfs:label obo:OBI_0000295 "is specified input of"@en)
 SubObjectPropertyOf(obo:OBI_0000295 obo:RO_0000056)
 
-# Object Property: obo:OBI_0000299 (has_specified_output)
+# Object Property: obo:OBI_0000299 (has specified output)
 
 AnnotationAssertion(obo:IAO_0000114 obo:OBI_0000299 obo:IAO_0000122)
-AnnotationAssertion(obo:IAO_0000115 obo:OBI_0000299 "The inverse property of is_specified_output_of"@en)
+AnnotationAssertion(obo:IAO_0000115 obo:OBI_0000299 "The inverse property of is specified output of"@en)
 AnnotationAssertion(obo:IAO_0000412 obo:OBI_0000299 obo:obi.owl)
-AnnotationAssertion(rdfs:label obo:OBI_0000299 "has_specified_output"@en)
+AnnotationAssertion(rdfs:label obo:OBI_0000299 "has specified output"@en)
 SubObjectPropertyOf(obo:OBI_0000299 obo:RO_0000057)
 
-# Object Property: obo:OBI_0000312 (is_specified_output_of)
+# Object Property: obo:OBI_0000312 (is specified output of)
 
 AnnotationAssertion(obo:IAO_0000114 obo:OBI_0000312 obo:IAO_0000122)
 AnnotationAssertion(obo:IAO_0000115 obo:OBI_0000312 "A relation between a planned process and a continuant participating in that process. The presence of the continuant at the end of the process is explicitly specified in the objective specification which the process realizes the concretization of."@en)
 AnnotationAssertion(obo:IAO_0000412 obo:OBI_0000312 obo:obi.owl)
-AnnotationAssertion(rdfs:label obo:OBI_0000312 "is_specified_output_of"@en)
+AnnotationAssertion(rdfs:label obo:OBI_0000312 "is specified output of"@en)
 SubObjectPropertyOf(obo:OBI_0000312 obo:RO_0000056)
 
 # Object Property: obo:OBI_0001927 (specifies value of)
@@ -2493,7 +2494,7 @@ AnnotationAssertion(obo:IAO_0000412 obo:RO_0000053 obo:ro.owl)
 AnnotationAssertion(rdfs:label obo:RO_0000053 "has characteristic"@en)
 InverseFunctionalObjectProperty(obo:RO_0000053)
 
-# Object Property: obo:RO_0000056 (participates in)
+# Object Property: obo:RO_0000056 (participates_in)
 
 AnnotationAssertion(obo:IAO_0000115 obo:RO_0000056 "a relation between a continuant and a process, in which the continuant is somehow involved in the process"@en)
 AnnotationAssertion(obo:IAO_0000118 obo:RO_0000056 "participates_in"@en)
@@ -2807,6 +2808,13 @@ AnnotationAssertion(obo:IAO_0000115 obo:RO_HOM0000000 "Relation between biologic
 AnnotationAssertion(obo:IAO_0000412 obo:RO_HOM0000000 obo:ro.owl)
 AnnotationAssertion(rdfs:label obo:RO_HOM0000000 "in similarity relationship with")
 SymmetricObjectProperty(obo:RO_HOM0000000)
+
+# Object Property: obo:STATO_0000102 (executes)
+
+AnnotationAssertion(obo:IAO_0000115 obo:STATO_0000102 "relationship between a planned process and the plan specification that it carries out; it is defined as equivalent to the composed relationship (realizes o concretizes)"@en)
+AnnotationAssertion(obo:IAO_0000119 obo:STATO_0000102 "AGB")
+AnnotationAssertion(obo:IAO_0000412 obo:STATO_0000102 obo:stato.owl)
+AnnotationAssertion(rdfs:label obo:STATO_0000102 "executes")
 
 
 
@@ -11807,13 +11815,6 @@ AnnotationAssertion(obo:IAO_0000412 obo:IAO_0000005 obo:obi.owl)
 AnnotationAssertion(rdfs:label obo:IAO_0000005 "objective specification"@en)
 SubClassOf(obo:IAO_0000005 obo:IAO_0000033)
 
-# Class: obo:IAO_0000007 (action specification)
-
-AnnotationAssertion(obo:IAO_0000115 obo:IAO_0000007 "A directive information entity that describes an action the bearer will take."@en)
-AnnotationAssertion(obo:IAO_0000412 obo:IAO_0000007 obo:obi.owl)
-AnnotationAssertion(rdfs:label obo:IAO_0000007 "action specification"@en)
-SubClassOf(obo:IAO_0000007 obo:IAO_0000033)
-
 # Class: obo:IAO_0000027 (data item)
 
 AnnotationAssertion(obo:IAO_0000115 obo:IAO_0000027 "An information content entity that is intended to be a truthful statement about something (modulo, e.g., measurement precision or other systematic errors) and is constructed/acquired by a method which reliably tends to produce (approximately) truthful statements."@en)
@@ -11896,6 +11897,13 @@ AnnotationAssertion(obo:IAO_0000115 obo:IAO_0000300 "A textual entity is a part 
 AnnotationAssertion(obo:IAO_0000412 obo:IAO_0000300 obo:obi.owl)
 AnnotationAssertion(rdfs:label obo:IAO_0000300 "textual entity"@en)
 SubClassOf(obo:IAO_0000300 obo:IAO_0000030)
+
+# Class: obo:IAO_0000310 (document)
+
+AnnotationAssertion(obo:IAO_0000115 obo:IAO_0000310 "A collection of information content entities intended to be understood together as a whole"@en)
+AnnotationAssertion(obo:IAO_0000412 obo:IAO_0000310 obo:obi.owl)
+AnnotationAssertion(rdfs:label obo:IAO_0000310 "document"@en)
+SubClassOf(obo:IAO_0000310 obo:IAO_0000030)
 
 # Class: obo:IAO_0000408 (length measurement datum)
 
@@ -19929,13 +19937,13 @@ AnnotationAssertion(rdfs:label obo:IAO_0000428 "requires discussion"@en)
 ClassAssertion(obo:IAO_0000078 obo:IAO_0000428)
 
 
-AnnotationAssertion(obo:IAO_0000412 _:genid2147483785 obo:po.owl)
-AnnotationAssertion(obo:IAO_0000412 _:genid2147483786 obo:obi.owl)
+AnnotationAssertion(obo:IAO_0000412 _:genid2147483785 obo:obi.owl)
+AnnotationAssertion(obo:IAO_0000412 _:genid2147483786 obo:po.owl)
 AnnotationAssertion(obo:IAO_0000412 _:genid2147483787 obo:po.owl)
-AnnotationAssertion(obo:IAO_0000412 _:genid2147483788 obo:po.owl)
-AnnotationAssertion(obo:IAO_0000412 _:genid2147483789 obo:obi.owl)
+AnnotationAssertion(obo:IAO_0000412 _:genid2147483788 obo:obi.owl)
+AnnotationAssertion(obo:IAO_0000412 _:genid2147483789 obo:po.owl)
 AnnotationAssertion(obo:IAO_0000412 _:genid2147483790 obo:obi.owl)
-AnnotationAssertion(obo:IAO_0000412 _:genid2147483791 obo:obi.owl)
+AnnotationAssertion(obo:IAO_0000412 _:genid2147483791 obo:po.owl)
 AnnotationAssertion(obo:IAO_0000412 _:genid2147483792 obo:po.owl)
-AnnotationAssertion(obo:IAO_0000412 _:genid2147483793 obo:po.owl)
+AnnotationAssertion(obo:IAO_0000412 _:genid2147483793 obo:obi.owl)
 )

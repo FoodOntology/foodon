@@ -6,20 +6,22 @@ COB
 
 [Low level source term URIs]
 http://purl.obolibrary.org/obo/IAO_0000030 # information
-http://purl.obolibrary.org/obo/IAO:0000027 #	data item ()
-http://purl.obolibrary.org/obo/COB:0000121 #		measurement datum
-http://purl.obolibrary.org/obo/IAO:0000033 #	directive information entity
-http://purl.obolibrary.org/obo/COB:0000077 #		action specification
-http://purl.obolibrary.org/obo/IAO:0000005 #		objective specification
-http://purl.obolibrary.org/obo/IAO:0000104 #		plan specification 
-http://purl.obolibrary.org/obo/IAO:0000310 #	document
+http://purl.obolibrary.org/obo/IAO_0000027 #	data item ()           
+http://purl.obolibrary.org/obo/IAO_0000109 #		measurement datum  
+http://purl.obolibrary.org/obo/IAO_0000033 #	directive information entity
+http://purl.obolibrary.org/obo/COB_0000077 #		action specification
+http://purl.obolibrary.org/obo/IAO_0000007 # action specification
+http://purl.obolibrary.org/obo/IAO_0000005 #		objective specification
+http://purl.obolibrary.org/obo/IAO_0000104 #		plan specification 
+# http://purl.obolibrary.org/obo/IAO_0000310 #	document NOT IN COB
 
-http://purl.obolibrary.org/obo/BFO_0000020 # characteristic
+http://purl.obolibrary.org/obo/COB_0000502 # characteristic
+# http://purl.obolibrary.org/obo/BFO_0000020 # characteristic NOT IN COB
 http://purl.obolibrary.org/obo/PATO_0000125 # mass
 http://purl.obolibrary.org/obo/BFO_0000017 # realizable
 includeAllChildren
 
-http://purl.obolibrary.org/obo/BFO_0000041 # immaterial entity
+http://purl.obolibrary.org/obo/BFO_0000141 # immaterial entity
 includeAllChildren
 http://purl.obolibrary.org/obo/COB_0000032 # geographical location
 
@@ -30,16 +32,17 @@ http://purl.obolibrary.org/obo/CL_0000000  # cell
 http://purl.obolibrary.org/obo/PCO_0000000 # collection of organisms
 http://purl.obolibrary.org/obo/ENVO_01000813 # geophysical entity (astronomical body part)
 
-http://purl.obolibrary.org/obo/CARO_0001008 # gross anatomical part
+http://purl.obolibrary.org/obo/COB_0000021 # gross anatomical part
 http://purl.obolibrary.org/obo/COB_0000011 # atom
 http://purl.obolibrary.org/obo/CHEBI_33252 # atomic nucleus
 http://purl.obolibrary.org/obo/COB_0000013 # molecular entity
 includeAllChildren
 
-http://purl.obolibrary.org/obo/OBI_0100026 # organism
+#http://purl.obolibrary.org/obo/OBI_0100026 # organism
+http://purl.obolibrary.org/obo/COB_0000022 # organism
 includeAllChildren
 
-http://purl.obolibrary.org/obo/OBI_0000245 # organization
+#http://purl.obolibrary.org/obo/OBI_0000245 # organization NOT IN COB AT MOMENT
 # http://purl.obolibrary.org/obo/OBI_0000047 # processed material entity # label different from OBI issue
 
 http://purl.obolibrary.org/obo/BFO_0000015 # process
@@ -47,7 +50,7 @@ http://purl.obolibrary.org/obo/COB_0000083 # failed process
 
 # OBJECT AND DATA PROPERTIES.  Some are only in COB, not in RO.
 
-http://purl.obolibrary.org/obo/STATO_0000102 # executes
+# http://purl.obolibrary.org/obo/STATO_0000102 # executes NOT IN COB
 http://purl.obolibrary.org/obo/COB_0000511 # has quantity
 
 [Top level source term URIs and target direct superclass URIs]
