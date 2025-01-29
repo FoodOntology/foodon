@@ -2,6 +2,10 @@
 ## 
 ## If you need to customize your Makefile, make
 ## changes here rather than in the main Makefile
+##
+## To run a specific import (rather than all updateable ones via make), type:
+## > sh run.sh make refresh-general
+##
 
 #imports/%_import.owl: imports/%_ontofox.txt
 #	if [ $(IMP) = true ]; then curl -s -F file=@imports/$*_ontofox.txt -o $@ https://ontofox.hegroup.org/service.php; \
