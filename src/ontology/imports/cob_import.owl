@@ -26,7 +26,6 @@ Declaration(Class(obo:COB_0000011))
 Declaration(Class(obo:COB_0000013))
 Declaration(Class(obo:COB_0000021))
 Declaration(Class(obo:COB_0000022))
-Declaration(Class(obo:COB_0000032))
 Declaration(Class(obo:COB_0000049))
 Declaration(Class(obo:COB_0000077))
 Declaration(Class(obo:COB_0000080))
@@ -230,13 +229,6 @@ AnnotationAssertion(obo:IAO_0000116 obo:COB_0000022 "Includes virus - we will la
 AnnotationAssertion(obo:IAO_0000412 obo:COB_0000022 obo:cob.owl)
 AnnotationAssertion(rdfs:label obo:COB_0000022 "organism")
 SubClassOf(obo:COB_0000022 obo:UBERON_0000465)
-
-# Class: obo:COB_0000032 (obsolete geographical location)
-
-AnnotationAssertion(obo:IAO_0000412 obo:COB_0000032 obo:cob.owl)
-AnnotationAssertion(rdfs:label obo:COB_0000032 "obsolete geographical location")
-AnnotationAssertion(owl:deprecated obo:COB_0000032 "true"^^xsd:boolean)
-SubClassOf(obo:COB_0000032 owl:Thing)
 
 # Class: obo:COB_0000049 (nucleic acid chain)
 
