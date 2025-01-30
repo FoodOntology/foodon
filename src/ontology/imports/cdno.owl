@@ -31161,32 +31161,6 @@ For example, A and B may be gene products and binding of B by A positively regul
     
 
 
-    <!-- http://purl.obolibrary.org/obo/CDNO_0200561 -->
-
-    <owl:Class rdf:about="http://purl.obolibrary.org/obo/CDNO_0200561">
-        <obo:IAO_0000115>OBSOLETE. The concentration of sodium chloride when measured in some material entity.</obo:IAO_0000115>
-        <obo:IAO_0000231>The equivalency statement has been duplicated</obo:IAO_0000231>
-        <obo:IAO_0100001 rdf:resource="http://purl.obolibrary.org/obo/CDNO_0200176"/>
-        <oboInOwl:hasExactSynonym>material entity sodium chloride concentration</oboInOwl:hasExactSynonym>
-        <rdfs:label>obsolete concentration of sodium chloride in material entity</rdfs:label>
-        <owl:deprecated rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">true</owl:deprecated>
-    </owl:Class>
-    
-
-
-    <!-- http://purl.obolibrary.org/obo/CDNO_0200562 -->
-
-    <owl:Class rdf:about="http://purl.obolibrary.org/obo/CDNO_0200562">
-        <obo:IAO_0000115>OBSOLETE. The concentration of calcium dichloride when measured in some material entity.</obo:IAO_0000115>
-        <obo:IAO_0000231>The equivalency statement has been duplicated</obo:IAO_0000231>
-        <obo:IAO_0100001 rdf:resource="http://purl.obolibrary.org/obo/CDNO_0200546"/>
-        <oboInOwl:hasExactSynonym>material entity calcium dichloride concentration</oboInOwl:hasExactSynonym>
-        <rdfs:label>obsolete concentration of calcium dichloride in material entity</rdfs:label>
-        <owl:deprecated rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">true</owl:deprecated>
-    </owl:Class>
-    
-
-
     <!-- http://purl.obolibrary.org/obo/CDNO_0200563 -->
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/CDNO_0200563">
@@ -31617,19 +31591,6 @@ For example, A and B may be gene products and binding of B by A positively regul
         <obo:IAO_0000115>The concentration of inorganic magnesium salt when measured in some material entity.</obo:IAO_0000115>
         <oboInOwl:hasExactSynonym>material entity inorganic magnesium salt concentration</oboInOwl:hasExactSynonym>
         <rdfs:label>concentration of inorganic magnesium salt in material entity</rdfs:label>
-    </owl:Class>
-    
-
-
-    <!-- http://purl.obolibrary.org/obo/CDNO_0200572 -->
-
-    <owl:Class rdf:about="http://purl.obolibrary.org/obo/CDNO_0200572">
-        <obo:IAO_0000115>OBSOLETE. The concentration of magnesium dichloride when measured in some material entity.</obo:IAO_0000115>
-        <obo:IAO_0000231>The equivalency statement has been duplicated</obo:IAO_0000231>
-        <obo:IAO_0100001 rdf:resource="http://purl.obolibrary.org/obo/CDNO_0200563"/>
-        <oboInOwl:hasExactSynonym>material entity magnesium dichloride concentration</oboInOwl:hasExactSynonym>
-        <rdfs:label>obsolete concentration of magnesium dichloride in material entity</rdfs:label>
-        <owl:deprecated rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">true</owl:deprecated>
     </owl:Class>
     
 
@@ -32262,58 +32223,6 @@ For example, A and B may be gene products and binding of B by A positively regul
     
 
 
-    <!-- http://purl.obolibrary.org/obo/CDNO_0200586 -->
-
-    <owl:Class rdf:about="http://purl.obolibrary.org/obo/CDNO_0200586">
-        <obo:IAO_0000115>OBSOLETE. The concentration of lysophosphatidylcholine when measured in some material entity.</obo:IAO_0000115>
-        <obo:IAO_0000231>The equivalency statement has been duplicated</obo:IAO_0000231>
-        <obo:IAO_0100001 rdf:resource="http://purl.obolibrary.org/obo/CDNO_0200118"/>
-        <oboInOwl:hasExactSynonym>material entity lysophosphatidylcholine concentration</oboInOwl:hasExactSynonym>
-        <rdfs:label>obsolete concentration of lysophosphatidylcholine in material entity</rdfs:label>
-        <owl:deprecated rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">true</owl:deprecated>
-    </owl:Class>
-    
-
-
-    <!-- http://purl.obolibrary.org/obo/CDNO_0200587 -->
-
-    <owl:Class rdf:about="http://purl.obolibrary.org/obo/CDNO_0200587">
-        <obo:IAO_0000115>OBSOLETE. The concentration of phosphatidylcholine when measured in some material entity.</obo:IAO_0000115>
-        <obo:IAO_0000231 rdf:resource="http://purl.obolibrary.org/obo/CDNO_0200114"/>
-        <obo:IAO_0000231>The equivalency statement has been duplicated</obo:IAO_0000231>
-        <oboInOwl:hasExactSynonym>material entity phosphatidylcholine concentration</oboInOwl:hasExactSynonym>
-        <rdfs:label>obsolete concentration of phosphatidylcholine in material entity</rdfs:label>
-        <owl:deprecated rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">true</owl:deprecated>
-    </owl:Class>
-    
-
-
-    <!-- http://purl.obolibrary.org/obo/CDNO_0200588 -->
-
-    <owl:Class rdf:about="http://purl.obolibrary.org/obo/CDNO_0200588">
-        <obo:IAO_0000115>OBSOLETE. The concentration of phosphatidylethanolamine when measured in some material entity.</obo:IAO_0000115>
-        <obo:IAO_0000231>The equivalency statement has been duplicated</obo:IAO_0000231>
-        <obo:IAO_0100001 rdf:resource="http://purl.obolibrary.org/obo/CDNO_0200115"/>
-        <oboInOwl:hasExactSynonym>material entity phosphatidylethanolamine concentration</oboInOwl:hasExactSynonym>
-        <rdfs:label>obsolete concentration of phosphatidylethanolamine in material entity</rdfs:label>
-        <owl:deprecated rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">true</owl:deprecated>
-    </owl:Class>
-    
-
-
-    <!-- http://purl.obolibrary.org/obo/CDNO_0200589 -->
-
-    <owl:Class rdf:about="http://purl.obolibrary.org/obo/CDNO_0200589">
-        <obo:IAO_0000115>OBSOLETE. The concentration of phosphatidylinositol when measured in some material entity.</obo:IAO_0000115>
-        <obo:IAO_0000231>The equivalency statement has been duplicated</obo:IAO_0000231>
-        <obo:IAO_0100001 rdf:resource="http://purl.obolibrary.org/obo/CDNO_0200117"/>
-        <oboInOwl:hasExactSynonym>material entity phosphatidylinositol concentration</oboInOwl:hasExactSynonym>
-        <rdfs:label>obsolete concentration of phosphatidylinositol in material entity</rdfs:label>
-        <owl:deprecated rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">true</owl:deprecated>
-    </owl:Class>
-    
-
-
     <!-- http://purl.obolibrary.org/obo/CDNO_0200590 -->
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/CDNO_0200590">
@@ -32358,19 +32267,6 @@ For example, A and B may be gene products and binding of B by A positively regul
         <obo:IAO_0000115>The concentration of 3-sn-phosphatidyl-L-serine when measured in some material entity.</obo:IAO_0000115>
         <oboInOwl:hasExactSynonym>material entity 3-sn-phosphatidyl-L-serine concentration</oboInOwl:hasExactSynonym>
         <rdfs:label>concentration of 3-sn-phosphatidyl-L-serine in material entity</rdfs:label>
-    </owl:Class>
-    
-
-
-    <!-- http://purl.obolibrary.org/obo/CDNO_0200591 -->
-
-    <owl:Class rdf:about="http://purl.obolibrary.org/obo/CDNO_0200591">
-        <obo:IAO_0000115>OBSOLETE. The concentration of myo-inositol hexakisphosphate when measured in some material entity.</obo:IAO_0000115>
-        <obo:IAO_0000231>The equivalency statement has been duplicated</obo:IAO_0000231>
-        <obo:IAO_0100001 rdf:resource="http://purl.obolibrary.org/obo/CDNO_0200433"/>
-        <oboInOwl:hasExactSynonym>material entity myo-inositol hexakisphosphate concentration</oboInOwl:hasExactSynonym>
-        <rdfs:label>obsolete concentration of myo-inositol hexakisphosphate in material entity</rdfs:label>
-        <owl:deprecated rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">true</owl:deprecated>
     </owl:Class>
     
 
@@ -32756,19 +32652,6 @@ For example, A and B may be gene products and binding of B by A positively regul
         <obo:IAO_0000115>The concentration of inorganic sodium salt when measured in some material entity.</obo:IAO_0000115>
         <oboInOwl:hasExactSynonym>material entity inorganic sodium salt concentration</oboInOwl:hasExactSynonym>
         <rdfs:label>concentration of inorganic sodium salt in material entity</rdfs:label>
-    </owl:Class>
-    
-
-
-    <!-- http://purl.obolibrary.org/obo/CDNO_0200601 -->
-
-    <owl:Class rdf:about="http://purl.obolibrary.org/obo/CDNO_0200601">
-        <obo:IAO_0000115>OBSOLETE. The concentration of sodium chloride when measured in some material entity.</obo:IAO_0000115>
-        <obo:IAO_0000231>The equivalency statement has been duplicated</obo:IAO_0000231>
-        <obo:IAO_0100001 rdf:resource="http://purl.obolibrary.org/obo/CDNO_0200176"/>
-        <oboInOwl:hasExactSynonym>material entity sodium chloride concentration</oboInOwl:hasExactSynonym>
-        <rdfs:label>obsolete concentration of sodium chloride in material entity</rdfs:label>
-        <owl:deprecated rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">true</owl:deprecated>
     </owl:Class>
     
 
@@ -33831,19 +33714,6 @@ For example, A and B may be gene products and binding of B by A positively regul
     
 
 
-    <!-- http://purl.obolibrary.org/obo/CDNO_0200624 -->
-
-    <owl:Class rdf:about="http://purl.obolibrary.org/obo/CDNO_0200624">
-        <obo:IAO_0000115>OBSOLETE. The concentration of sodium hydrogensulfite when measured in some material entity.</obo:IAO_0000115>
-        <obo:IAO_0000231>The equivalency statement has been duplicated</obo:IAO_0000231>
-        <obo:IAO_0100001 rdf:resource="http://purl.obolibrary.org/obo/CDNO_0200604"/>
-        <oboInOwl:hasExactSynonym>material entity sodium hydrogensulfite concentration</oboInOwl:hasExactSynonym>
-        <rdfs:label>obsolete concentration of sodium hydrogensulfite in material entity</rdfs:label>
-        <owl:deprecated rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">true</owl:deprecated>
-    </owl:Class>
-    
-
-
     <!-- http://purl.obolibrary.org/obo/CDNO_0200625 -->
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/CDNO_0200625">
@@ -34177,32 +34047,6 @@ For example, A and B may be gene products and binding of B by A positively regul
         <obo:IAO_0000115>The concentration of dimethyl sulfoxide when measured in some material entity.</obo:IAO_0000115>
         <oboInOwl:hasExactSynonym>material entity dimethyl sulfoxide concentration</oboInOwl:hasExactSynonym>
         <rdfs:label>concentration of dimethyl sulfoxide in material entity</rdfs:label>
-    </owl:Class>
-    
-
-
-    <!-- http://purl.obolibrary.org/obo/CDNO_0200632 -->
-
-    <owl:Class rdf:about="http://purl.obolibrary.org/obo/CDNO_0200632">
-        <obo:IAO_0000115>OBSOLETE. The concentration of cysteine when measured in some material entity.</obo:IAO_0000115>
-        <obo:IAO_0000231>The equivalency statement has been duplicated</obo:IAO_0000231>
-        <obo:IAO_0100001 rdf:resource="http://purl.obolibrary.org/obo/CDNO_0200051"/>
-        <oboInOwl:hasExactSynonym>material entity cysteine concentration</oboInOwl:hasExactSynonym>
-        <rdfs:label>obsolete concentration of cysteine in material entity</rdfs:label>
-        <owl:deprecated rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">true</owl:deprecated>
-    </owl:Class>
-    
-
-
-    <!-- http://purl.obolibrary.org/obo/CDNO_0200633 -->
-
-    <owl:Class rdf:about="http://purl.obolibrary.org/obo/CDNO_0200633">
-        <obo:IAO_0000115>OBSOLETE. The concentration of methionine when measured in some material entity.</obo:IAO_0000115>
-        <obo:IAO_0000231>The equivalency statement has been duplicated</obo:IAO_0000231>
-        <obo:IAO_0100001 rdf:resource="http://purl.obolibrary.org/obo/CDNO_0200060"/>
-        <oboInOwl:hasExactSynonym>material entity methionine concentration</oboInOwl:hasExactSynonym>
-        <rdfs:label>obsolete concentration of methionine in material entity</rdfs:label>
-        <owl:deprecated rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">true</owl:deprecated>
     </owl:Class>
     
 
@@ -35115,19 +34959,6 @@ For example, A and B may be gene products and binding of B by A positively regul
         <obo:IAO_0000115>The concentration of inorganic iron salt when measured in some material entity.</obo:IAO_0000115>
         <oboInOwl:hasExactSynonym>material entity inorganic iron salt concentration</oboInOwl:hasExactSynonym>
         <rdfs:label>concentration of inorganic iron salt in material entity</rdfs:label>
-    </owl:Class>
-    
-
-
-    <!-- http://purl.obolibrary.org/obo/CDNO_0200653 -->
-
-    <owl:Class rdf:about="http://purl.obolibrary.org/obo/CDNO_0200653">
-        <obo:IAO_0000115>OBSOLETE. The concentration of iron(2+) sulfate (anhydrous) when measured in some material entity.</obo:IAO_0000115>
-        <obo:IAO_0000231>The equivalency statement has been duplicated</obo:IAO_0000231>
-        <obo:IAO_0100001 rdf:resource="http://purl.obolibrary.org/obo/CDNO_0200451"/>
-        <oboInOwl:hasExactSynonym>material entity iron(2+) sulfate (anhydrous) concentration</oboInOwl:hasExactSynonym>
-        <rdfs:label>obsolete concentration of iron(2+) sulfate (anhydrous) in material entity</rdfs:label>
-        <owl:deprecated rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">true</owl:deprecated>
     </owl:Class>
     
 
@@ -37581,19 +37412,6 @@ For example, A and B may be gene products and binding of B by A positively regul
     
 
 
-    <!-- http://purl.obolibrary.org/obo/CDNO_0200705 -->
-
-    <owl:Class rdf:about="http://purl.obolibrary.org/obo/CDNO_0200705">
-        <obo:IAO_0000115>OBSOLETE. The concentration of polyol when measured in some material entity.</obo:IAO_0000115>
-        <obo:IAO_0000231>The equivalency statement has been duplicated</obo:IAO_0000231>
-        <obo:IAO_0100001 rdf:resource="http://purl.obolibrary.org/obo/CDNO_0200444"/>
-        <oboInOwl:hasExactSynonym>material entity polyol concentration</oboInOwl:hasExactSynonym>
-        <rdfs:label>obsolete concentration of polyol in material entity</rdfs:label>
-        <owl:deprecated rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">true</owl:deprecated>
-    </owl:Class>
-    
-
-
     <!-- http://purl.obolibrary.org/obo/CDNO_0200706 -->
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/CDNO_0200706">
@@ -37638,58 +37456,6 @@ For example, A and B may be gene products and binding of B by A positively regul
         <obo:IAO_0000115>The concentration of maltitol when measured in some material entity.</obo:IAO_0000115>
         <oboInOwl:hasExactSynonym>material entity maltitol concentration</oboInOwl:hasExactSynonym>
         <rdfs:label>concentration of maltitol in material entity</rdfs:label>
-    </owl:Class>
-    
-
-
-    <!-- http://purl.obolibrary.org/obo/CDNO_0200707 -->
-
-    <owl:Class rdf:about="http://purl.obolibrary.org/obo/CDNO_0200707">
-        <obo:IAO_0000115>OBSOLETE. The concentration of mannitol when measured in some material entity.</obo:IAO_0000115>
-        <obo:IAO_0000231>The equivalency statement has been duplicated</obo:IAO_0000231>
-        <obo:IAO_0100001 rdf:resource="http://purl.obolibrary.org/obo/CDNO_0200445"/>
-        <oboInOwl:hasExactSynonym>material entity mannitol concentration</oboInOwl:hasExactSynonym>
-        <rdfs:label>obsolete concentration of mannitol in material entity</rdfs:label>
-        <owl:deprecated rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">true</owl:deprecated>
-    </owl:Class>
-    
-
-
-    <!-- http://purl.obolibrary.org/obo/CDNO_0200708 -->
-
-    <owl:Class rdf:about="http://purl.obolibrary.org/obo/CDNO_0200708">
-        <obo:IAO_0000115>OBSOLETE. The concentration of glycerol when measured in some material entity.</obo:IAO_0000115>
-        <obo:IAO_0000231>The equivalency statement has been duplicated</obo:IAO_0000231>
-        <obo:IAO_0100001 rdf:resource="http://purl.obolibrary.org/obo/CDNO_0200451"/>
-        <oboInOwl:hasExactSynonym>material entity glycerol concentration</oboInOwl:hasExactSynonym>
-        <rdfs:label>obsolete concentration of glycerol in material entity</rdfs:label>
-        <owl:deprecated rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">true</owl:deprecated>
-    </owl:Class>
-    
-
-
-    <!-- http://purl.obolibrary.org/obo/CDNO_0200709 -->
-
-    <owl:Class rdf:about="http://purl.obolibrary.org/obo/CDNO_0200709">
-        <obo:IAO_0000115>OBSOLETE. The concentration of glucitol when measured in some material entity.</obo:IAO_0000115>
-        <obo:IAO_0000231>The equivalency statement has been duplicated</obo:IAO_0000231>
-        <obo:IAO_0100001 rdf:resource="http://purl.obolibrary.org/obo/CDNO_0200447"/>
-        <oboInOwl:hasExactSynonym>material entity glucitol concentration</oboInOwl:hasExactSynonym>
-        <rdfs:label>obsolete concentration of glucitol in material entity</rdfs:label>
-        <owl:deprecated rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">true</owl:deprecated>
-    </owl:Class>
-    
-
-
-    <!-- http://purl.obolibrary.org/obo/CDNO_0200710 -->
-
-    <owl:Class rdf:about="http://purl.obolibrary.org/obo/CDNO_0200710">
-        <obo:IAO_0000115>OBSOLETE. The concentration of xylitol when measured in some material entity.</obo:IAO_0000115>
-        <obo:IAO_0000231>The equivalency statement has been duplicated</obo:IAO_0000231>
-        <obo:IAO_0100001 rdf:resource="http://purl.obolibrary.org/obo/CDNO_0200446"/>
-        <oboInOwl:hasExactSynonym>material entity xylitol concentration</oboInOwl:hasExactSynonym>
-        <rdfs:label>obsolete concentration of xylitol in material entity</rdfs:label>
-        <owl:deprecated rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">true</owl:deprecated>
     </owl:Class>
     
 
