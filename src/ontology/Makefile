@@ -10,7 +10,7 @@
 # More information: https://github.com/INCATools/ontology-development-kit/
 
 # Fingerprint of the configuration file when this Makefile was last generated
-CONFIG_HASH=                b562e015bb4a5ad752d3b35f4a67492e42fb176026e73788db41993025dfefbd
+CONFIG_HASH=                25a5e46c9bc717e7e164042d8b77a35811676a190a9f7ec05e3ae66c3fa8c4a4
 
 
 # ----------------------------------------
@@ -44,7 +44,7 @@ REPORT_FAIL_ON =            None
 REPORT_LABEL =              -l true
 REPORT_PROFILE_OPTS =       
 OBO_FORMAT_OPTIONS =        
-SPARQL_VALIDATION_CHECKS =  owldef-self-reference iri-range label-with-iri multiple-replaced_by dc-properties 
+SPARQL_VALIDATION_CHECKS =  owldef-self-reference iri-range label-with-iri multiple-replaced_by 
 SPARQL_EXPORTS =            basic-report class-count-by-prefix edges xrefs obsoletes synonyms 
 ODK_VERSION_MAKEFILE =      v1.5.4
 
@@ -199,7 +199,7 @@ all_mappings: $(MAPPING_FILES)
 # QC Reports & Utilities
 # ----------------------------------------
 
-OBO_REPORT =  $(SRC)-obo-report
+OBO_REPORT =  foodon-base.owl-obo-report
 REPORTS = $(OBO_REPORT)
 REPORT_FILES = $(patsubst %, $(REPORTDIR)/%.tsv, $(REPORTS))
 
@@ -242,10 +242,10 @@ endif
 # ----------------------------------------
 
 $(REPORTDIR)/$(SRC)-obo-report.tsv: $(SRCMERGED) | $(REPORTDIR)
-	$(ROBOT) report -i $< $(REPORT_LABEL) $(REPORT_PROFILE_OPTS) --fail-on $(REPORT_FAIL_ON) --base-iri $(URIBASE)/FOODON_ --base-iri $(URIBASE)/foodon --print 5 -o $@
+	$(ROBOT) report -i $< $(REPORT_LABEL) $(REPORT_PROFILE_OPTS) --fail-on $(REPORT_FAIL_ON) --print 5 -o $@
 
 $(REPORTDIR)/%-obo-report.tsv: % | $(REPORTDIR)
-	$(ROBOT) report -i $< $(REPORT_LABEL) $(REPORT_PROFILE_OPTS) --fail-on $(REPORT_FAIL_ON) --base-iri $(URIBASE)/FOODON_ --base-iri $(URIBASE)/foodon --print 5 -o $@
+	$(ROBOT) report -i $< $(REPORT_LABEL) $(REPORT_PROFILE_OPTS) --fail-on $(REPORT_FAIL_ON) --print 5 -o $@
 
 check_for_robot_updates:
 	echo "You are not using a custom profile, so you are getting the joy of the latest ROBOT report!"

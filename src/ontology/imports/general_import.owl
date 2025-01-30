@@ -2220,15 +2220,24 @@ Declaration(NamedIndividual(obo:UO_0010034))
 Declaration(NamedIndividual(obo:UO_0010040))
 Declaration(NamedIndividual(obo:UO_0010051))
 Declaration(AnnotationProperty(obo:IAO_0000111))
+Declaration(AnnotationProperty(obo:IAO_0000112))
 Declaration(AnnotationProperty(obo:IAO_0000114))
 Declaration(AnnotationProperty(obo:IAO_0000115))
+Declaration(AnnotationProperty(obo:IAO_0000117))
 Declaration(AnnotationProperty(obo:IAO_0000118))
 Declaration(AnnotationProperty(obo:IAO_0000119))
 Declaration(AnnotationProperty(obo:IAO_0000231))
+Declaration(AnnotationProperty(obo:IAO_0000233))
 Declaration(AnnotationProperty(obo:IAO_0000412))
+Declaration(AnnotationProperty(obo:IAO_0000424))
+Declaration(AnnotationProperty(obo:IAO_0010000))
 Declaration(AnnotationProperty(obo:IAO_0100001))
 Declaration(AnnotationProperty(obo:OBI_0001886))
 Declaration(AnnotationProperty(obo:RO_0001900))
+Declaration(AnnotationProperty(obo:RO_0002575))
+Declaration(AnnotationProperty(obo:RO_0002579))
+Declaration(AnnotationProperty(obo:RO_0004049))
+Declaration(AnnotationProperty(obo:RO_0004050))
 Declaration(AnnotationProperty(oboInOwl:created_by))
 Declaration(AnnotationProperty(oboInOwl:creation_date))
 Declaration(AnnotationProperty(oboInOwl:hasAlternativeId))
@@ -2254,6 +2263,13 @@ AnnotationAssertion(obo:IAO_0000115 obo:IAO_0000111 "The concise, meaningful, an
 AnnotationAssertion(obo:IAO_0000119 obo:IAO_0000111 "GROUP:OBI:<http://purl.obolibrary.org/obo/obi>"@en)
 AnnotationAssertion(rdfs:label obo:IAO_0000111 "editor preferred term"@en)
 
+# Annotation Property: obo:IAO_0000112 (example of usage)
+
+AnnotationAssertion(obo:IAO_0000114 obo:IAO_0000112 obo:IAO_0000122)
+AnnotationAssertion(obo:IAO_0000115 obo:IAO_0000112 "A phrase describing how a term should be used and/or a citation to a work which uses it. May also include other kinds of examples that facilitate immediate understanding, such as widely know prototypes or instances of a class, or cases where a relation is said to hold."@en)
+AnnotationAssertion(obo:IAO_0000119 obo:IAO_0000112 "GROUP:OBI:<http://purl.obolibrary.org/obo/obi>"@en)
+AnnotationAssertion(rdfs:label obo:IAO_0000112 "example of usage"@en)
+
 # Annotation Property: obo:IAO_0000114 (has curation status)
 
 AnnotationAssertion(obo:IAO_0000119 obo:IAO_0000114 "OBI_0000281"@en)
@@ -2270,6 +2286,13 @@ AnnotationAssertion(obo:IAO_0000119 obo:IAO_0000115 "GROUP:OBI:<http://purl.obol
 AnnotationAssertion(rdfs:label obo:IAO_0000115 "definition"@en)
 AnnotationAssertion(rdfs:label obo:IAO_0000115 "textual definition")
 AnnotationAssertion(rdfs:label obo:IAO_0000115 "definition")
+
+# Annotation Property: obo:IAO_0000117 (term editor)
+
+AnnotationAssertion(obo:IAO_0000114 obo:IAO_0000117 obo:IAO_0000122)
+AnnotationAssertion(obo:IAO_0000115 obo:IAO_0000117 "Name of editor entering the term in the file. The term editor is a point of contact for information regarding the term. The term editor may be, but is not always, the author of the definition, which may have been worked upon by several people"@en)
+AnnotationAssertion(obo:IAO_0000119 obo:IAO_0000117 "GROUP:OBI:<http://purl.obolibrary.org/obo/obi>"@en)
+AnnotationAssertion(rdfs:label obo:IAO_0000117 "term editor"@en)
 
 # Annotation Property: obo:IAO_0000118 (alternative_term)
 
@@ -2298,12 +2321,29 @@ AnnotationAssertion(rdfs:label obo:IAO_0000119 "definition_source")
 AnnotationAssertion(obo:IAO_0000115 obo:IAO_0000231 "Relates an annotation property to an obsolescence reason. The values of obsolescence reasons come from a list of predefined terms, instances of the class obsolescence reason specification."@en)
 AnnotationAssertion(rdfs:label obo:IAO_0000231 "has obsolescence reason"@en)
 
+# Annotation Property: obo:IAO_0000233 (term tracker item)
+
+AnnotationAssertion(obo:IAO_0000114 obo:IAO_0000233 obo:IAO_0000125)
+AnnotationAssertion(obo:IAO_0000115 obo:IAO_0000233 "An IRI or similar locator for a request or discussion of an ontology term."@en)
+AnnotationAssertion(obo:IAO_0000119 obo:IAO_0000233 "Person: Jie Zheng, Chris Stoeckert, Alan Ruttenberg"@en)
+AnnotationAssertion(rdfs:label obo:IAO_0000233 "term tracker item"@en)
+
 # Annotation Property: obo:IAO_0000412 (imported from)
 
 AnnotationAssertion(obo:IAO_0000114 obo:IAO_0000412 obo:IAO_0000125)
 AnnotationAssertion(obo:IAO_0000115 obo:IAO_0000412 "For external terms/classes, the ontology from which the term was imported"@en)
 AnnotationAssertion(obo:IAO_0000119 obo:IAO_0000412 "GROUP:OBI:<http://purl.obolibrary.org/obo/obi>"@en)
 AnnotationAssertion(rdfs:label obo:IAO_0000412 "imported from"@en)
+
+# Annotation Property: obo:IAO_0000424 (expand expression to)
+
+AnnotationAssertion(obo:IAO_0000115 obo:IAO_0000424 "A macro expansion tag applied to an object property (or possibly a data property)  which can be used by a macro-expansion engine to generate more complex expressions from simpler ones"@en)
+AnnotationAssertion(rdfs:label obo:IAO_0000424 "expand expression to"@en)
+
+# Annotation Property: obo:IAO_0010000 (has axiom label)
+
+AnnotationAssertion(obo:IAO_0000119 obo:IAO_0010000 "Person:Alan Ruttenberg"@en)
+AnnotationAssertion(rdfs:label obo:IAO_0010000 "has axiom label"@en)
 
 # Annotation Property: obo:IAO_0100001 (term replaced by)
 
@@ -2325,6 +2365,24 @@ SubAnnotationPropertyOf(obo:OBI_0001886 obo:IAO_0000118)
 
 AnnotationAssertion(obo:IAO_0000115 obo:RO_0001900 "An assertion that holds between an OWL Object Property and a temporal interpretation that elucidates how OWL Class Axioms that use this property are to be interpreted in a temporal context.")
 AnnotationAssertion(rdfs:label obo:RO_0001900 "temporal interpretation")
+
+# Annotation Property: obo:RO_0002575 (is direct form of)
+
+AnnotationAssertion(obo:IAO_0000115 obo:RO_0002575 "relation p is the direct form of relation q iff p is a subPropertyOf q, p does not have the Transitive characteristic, q does have the Transitive characteristic, and for all x, y: x q y -> exists z1, z2, ..., zn such that x p z1 ... z2n y")
+AnnotationAssertion(rdfs:label obo:RO_0002575 "is direct form of")
+
+# Annotation Property: obo:RO_0002579 (is indirect form of)
+
+AnnotationAssertion(obo:IAO_0000115 obo:RO_0002579 "relation p is the indirect form of relation q iff p is a subPropertyOf q, and there exists some p' such that p' is the direct form of q, p' o p' -> p, and forall x,y : x q y -> either (1) x p y or (2) x p' y")
+AnnotationAssertion(rdfs:label obo:RO_0002579 "is indirect form of")
+
+# Annotation Property: obo:RO_0004049 (is positive form of)
+
+AnnotationAssertion(rdfs:label obo:RO_0004049 "is positive form of")
+
+# Annotation Property: obo:RO_0004050 (is negative form of)
+
+AnnotationAssertion(rdfs:label obo:RO_0004050 "is negative form of")
 
 # Annotation Property: oboInOwl:hasAlternativeId (has_alternative_id)
 
@@ -2494,7 +2552,7 @@ AnnotationAssertion(obo:IAO_0000412 obo:RO_0000053 obo:ro.owl)
 AnnotationAssertion(rdfs:label obo:RO_0000053 "has characteristic"@en)
 InverseFunctionalObjectProperty(obo:RO_0000053)
 
-# Object Property: obo:RO_0000056 (participates_in)
+# Object Property: obo:RO_0000056 (participates in)
 
 AnnotationAssertion(obo:IAO_0000115 obo:RO_0000056 "a relation between a continuant and a process, in which the continuant is somehow involved in the process"@en)
 AnnotationAssertion(obo:IAO_0000118 obo:RO_0000056 "participates_in"@en)
@@ -2610,7 +2668,7 @@ AnnotationAssertion(rdfs:label obo:RO_0001025 "located in"@en)
 AnnotationAssertion(rdfs:label obo:RO_0001025 "located_in")
 TransitiveObjectProperty(obo:RO_0001025)
 
-# Object Property: obo:RO_0002160 (only in taxon)
+# Object Property: obo:RO_0002160 (only_in_taxon)
 
 AnnotationAssertion(rdfs:label obo:RO_0002160 "only in taxon")
 AnnotationAssertion(rdfs:label obo:RO_0002160 "only_in_taxon")
@@ -19938,12 +19996,12 @@ ClassAssertion(obo:IAO_0000078 obo:IAO_0000428)
 
 
 AnnotationAssertion(obo:IAO_0000412 _:genid2147483785 obo:obi.owl)
-AnnotationAssertion(obo:IAO_0000412 _:genid2147483786 obo:po.owl)
+AnnotationAssertion(obo:IAO_0000412 _:genid2147483786 obo:obi.owl)
 AnnotationAssertion(obo:IAO_0000412 _:genid2147483787 obo:po.owl)
 AnnotationAssertion(obo:IAO_0000412 _:genid2147483788 obo:obi.owl)
-AnnotationAssertion(obo:IAO_0000412 _:genid2147483789 obo:po.owl)
-AnnotationAssertion(obo:IAO_0000412 _:genid2147483790 obo:obi.owl)
+AnnotationAssertion(obo:IAO_0000412 _:genid2147483789 obo:obi.owl)
+AnnotationAssertion(obo:IAO_0000412 _:genid2147483790 obo:po.owl)
 AnnotationAssertion(obo:IAO_0000412 _:genid2147483791 obo:po.owl)
 AnnotationAssertion(obo:IAO_0000412 _:genid2147483792 obo:po.owl)
-AnnotationAssertion(obo:IAO_0000412 _:genid2147483793 obo:obi.owl)
+AnnotationAssertion(obo:IAO_0000412 _:genid2147483793 obo:po.owl)
 )

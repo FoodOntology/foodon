@@ -133,7 +133,7 @@ SubClassOf(<http://purl.obolibrary.org/obo/FOODON_03000441> <http://purl.obolibr
 # Class: <http://purl.obolibrary.org/obo/FOODON_03000442> (liver powder supplement (desiccated))
 
 AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000115> <http://purl.obolibrary.org/obo/FOODON_03000442> "A dietary supplement made from an animal liver that has been dried and ground into powder."@en)
-AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000119> <http://purl.obolibrary.org/obo/FOODON_03000442> "https://www.consumerlab.com/answers/desiccated-beef-liver/beef-liver/ ")
+AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000119> <http://purl.obolibrary.org/obo/FOODON_03000442> "https://www.consumerlab.com/answers/desiccated-beef-liver/beef-liver/")
 AnnotationAssertion(<http://purl.org/dc/terms/contributor> <http://purl.obolibrary.org/obo/FOODON_03000442> "https://orcid.org/0000-0001-5275-8866")
 AnnotationAssertion(<http://purl.org/dc/terms/date> <http://purl.obolibrary.org/obo/FOODON_03000442> "2021-12-22T14:09:44Z"^^xsd:dateTime)
 AnnotationAssertion(<http://www.geneontology.org/formats/oboInOwl#hasExactSynonym> <http://purl.obolibrary.org/obo/FOODON_03000442> "desiccated liver powder"@en)
