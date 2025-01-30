@@ -19,7 +19,12 @@ documentation:
   documentation_system: mkdocs
 reasoner: ELK
 #report_fail_on: ERROR
-report_fail_on: None
+#report_fail_on: None
+robot_report:
+  fail_on: None
+#  custom_profile: TRUE
+  report_on:
+    - foodon-base.owl
 release_artefacts:
   - base
   - full
