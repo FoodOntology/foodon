@@ -34,7 +34,7 @@ if [ $MODE = 'test' ]; then
    if [ ! -d "$TEST_DIR" ] ; then mkdir "$TEST_DIR" ; fi
    cp $RESOURCES_DIR/id_integer.txt $TEST_DIR/id_integer.txt
    python3 organism_parts.py -t $MODULE_DIR/${MODULE}_parts.tsv -i $RESOURCES_DIR/species_list.tsv -o $TEST_DIR/test_${MODULE}_template.tsv -m $RESOURCES_DIR/id_mapping_table.tsv -n $TEST_DIR/mapping_table_output.tsv -org $MODULE -id $TEST_DIR/id_integer.txt $TC
-   robot template --template $TEST_DIR/test_${MODULE}_template.tsv -i ../foodon-merged.ofn --ontology-iri "http://purl.obolibrary.org/test_${MODULE}_template.owl" -o $TEST_DIR/test_${MODULE}_module.ofn
+   robot template --template $TEST_DIR/test_${MODULE}_template.tsv -i ../foodon-full.owl --ontology-iri "http://purl.obolibrary.org/test_${MODULE}_template.owl" -o $TEST_DIR/test_${MODULE}_module.ofn
    echo ""
    echo "Test $MODULE module run successful!"
    echo "Check the files in '$TEST_DIR' to make sure everything is as expected."
@@ -56,7 +56,7 @@ elif [ $MODE = 'run' ]; then
             if [ ! -d "$INTERMEDIATE_DIR" ] ; then mkdir "$INTERMEDIATE_DIR" ; fi
             python3 organism_parts.py -t $MODULE_DIR/${MODULE}_parts.tsv -i $RESOURCES_DIR/species_list.tsv -o $INTERMEDIATE_DIR/${MODULE}_template.tsv -m $RESOURCES_DIR/id_mapping_table.tsv -n $INTERMEDIATE_DIR/mapping_table_output.tsv -org $MODULE -id $RESOURCES_DIR/id_integer.txt $TC
             echo "Success running organism_parts.py with $MODULE module!"
-            robot template --template $INTERMEDIATE_DIR/${MODULE}_template.tsv -i ../foodon-merged.ofn --ontology-iri "http://purl.obolibrary.org/obo/foodon/imports/${MODULE}/${MODULE}_parts.owl" -o $MODULE_DIR/${MODULE}_parts.ofn
+            robot template --template $INTERMEDIATE_DIR/${MODULE}_template.tsv -i ../foodon-full.owl --ontology-iri "http://purl.obolibrary.org/obo/foodon/imports/${MODULE}/${MODULE}_parts.owl" -o $MODULE_DIR/${MODULE}_parts.ofn
             echo "Success running generated $MODULE robot template!"
             
             if [ -f $INTERMEDIATE_DIR/mapping_table_output.tsv ] ; then cat $INTERMEDIATE_DIR/mapping_table_output.tsv >> $RESOURCES_DIR/id_mapping_table.tsv ; fi
