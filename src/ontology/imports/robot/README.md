@@ -82,12 +82,12 @@ robot template --template wine.tsv \
 An experimental USDA FDC robot managed ontology: fdc.tsv
 
 robot template --template fdc.tsv \
-  --input "../../foodon-merged.ofn" \
+  --input "../../foodon-full.owl" \
   --ontology-iri "http://purl.obolibrary.org/obo/foodon/imports/robot_fdc.owl" \
   --output ../robot_fdc.owl
 
 
-The --input "../../foodon-merged.ofn" parameter brings in entities that are referenced in axioms.
+The --input "../../foodon-full.owl" parameter brings in entities that are referenced in axioms.
 The --prefix parameter is used to expand abbreviated namespace URLs.
 All output files get delivered to parent directory.  Manually import them in FoodOn (in Active Ontology -> Ontology Imports section of Protege.
 
