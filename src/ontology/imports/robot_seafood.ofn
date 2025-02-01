@@ -98,7 +98,6 @@ Declaration(Class(<http://purl.obolibrary.org/obo/NCBITaxon_100192>))
 Declaration(Class(<http://purl.obolibrary.org/obo/NCBITaxon_100202>))
 Declaration(Class(<http://purl.obolibrary.org/obo/NCBITaxon_1003157>))
 Declaration(Class(<http://purl.obolibrary.org/obo/NCBITaxon_1003729>))
-Declaration(Class(<http://purl.obolibrary.org/obo/NCBITaxon_1003771>))
 Declaration(Class(<http://purl.obolibrary.org/obo/NCBITaxon_1003779>))
 Declaration(Class(<http://purl.obolibrary.org/obo/NCBITaxon_1003939>))
 Declaration(Class(<http://purl.obolibrary.org/obo/NCBITaxon_100774>))
@@ -631,7 +630,6 @@ Declaration(Class(<http://purl.obolibrary.org/obo/NCBITaxon_2034847>))
 Declaration(Class(<http://purl.obolibrary.org/obo/NCBITaxon_2039245>))
 Declaration(Class(<http://purl.obolibrary.org/obo/NCBITaxon_204813>))
 Declaration(Class(<http://purl.obolibrary.org/obo/NCBITaxon_204814>))
-Declaration(Class(<http://purl.obolibrary.org/obo/NCBITaxon_205127>))
 Declaration(Class(<http://purl.obolibrary.org/obo/NCBITaxon_205130>))
 Declaration(Class(<http://purl.obolibrary.org/obo/NCBITaxon_205134>))
 Declaration(Class(<http://purl.obolibrary.org/obo/NCBITaxon_2057075>))
@@ -919,7 +917,6 @@ Declaration(Class(<http://purl.obolibrary.org/obo/NCBITaxon_303687>))
 Declaration(Class(<http://purl.obolibrary.org/obo/NCBITaxon_303691>))
 Declaration(Class(<http://purl.obolibrary.org/obo/NCBITaxon_303703>))
 Declaration(Class(<http://purl.obolibrary.org/obo/NCBITaxon_303715>))
-Declaration(Class(<http://purl.obolibrary.org/obo/NCBITaxon_303721>))
 Declaration(Class(<http://purl.obolibrary.org/obo/NCBITaxon_303729>))
 Declaration(Class(<http://purl.obolibrary.org/obo/NCBITaxon_303741>))
 Declaration(Class(<http://purl.obolibrary.org/obo/NCBITaxon_303932>))
@@ -933,6 +930,7 @@ Declaration(Class(<http://purl.obolibrary.org/obo/NCBITaxon_304456>))
 Declaration(Class(<http://purl.obolibrary.org/obo/NCBITaxon_304467>))
 Declaration(Class(<http://purl.obolibrary.org/obo/NCBITaxon_304850>))
 Declaration(Class(<http://purl.obolibrary.org/obo/NCBITaxon_30493>))
+Declaration(Class(<http://purl.obolibrary.org/obo/NCBITaxon_3052985>))
 Declaration(Class(<http://purl.obolibrary.org/obo/NCBITaxon_306053>))
 Declaration(Class(<http://purl.obolibrary.org/obo/NCBITaxon_306578>))
 Declaration(Class(<http://purl.obolibrary.org/obo/NCBITaxon_306579>))
@@ -1065,8 +1063,11 @@ Declaration(Class(<http://purl.obolibrary.org/obo/NCBITaxon_334988>))
 Declaration(Class(<http://purl.obolibrary.org/obo/NCBITaxon_335027>))
 Declaration(Class(<http://purl.obolibrary.org/obo/NCBITaxon_335034>))
 Declaration(Class(<http://purl.obolibrary.org/obo/NCBITaxon_335060>))
-Declaration(Class(<http://purl.obolibrary.org/obo/NCBITaxon_33514>))
+Declaration(Class(<http://purl.obolibrary.org/obo/NCBITaxon_3352506>))
+Declaration(Class(<http://purl.obolibrary.org/obo/NCBITaxon_3352919>))
 Declaration(Class(<http://purl.obolibrary.org/obo/NCBITaxon_335480>))
+Declaration(Class(<http://purl.obolibrary.org/obo/NCBITaxon_3358813>))
+Declaration(Class(<http://purl.obolibrary.org/obo/NCBITaxon_3360502>))
 Declaration(Class(<http://purl.obolibrary.org/obo/NCBITaxon_336262>))
 Declaration(Class(<http://purl.obolibrary.org/obo/NCBITaxon_337539>))
 Declaration(Class(<http://purl.obolibrary.org/obo/NCBITaxon_337629>))
@@ -1490,7 +1491,6 @@ Declaration(Class(<http://purl.obolibrary.org/obo/NCBITaxon_55533>))
 Declaration(Class(<http://purl.obolibrary.org/obo/NCBITaxon_555484>))
 Declaration(Class(<http://purl.obolibrary.org/obo/NCBITaxon_555485>))
 Declaration(Class(<http://purl.obolibrary.org/obo/NCBITaxon_555487>))
-Declaration(Class(<http://purl.obolibrary.org/obo/NCBITaxon_555488>))
 Declaration(Class(<http://purl.obolibrary.org/obo/NCBITaxon_555490>))
 Declaration(Class(<http://purl.obolibrary.org/obo/NCBITaxon_555492>))
 Declaration(Class(<http://purl.obolibrary.org/obo/NCBITaxon_555495>))
@@ -1801,10 +1801,8 @@ Declaration(Class(<http://purl.obolibrary.org/obo/NCBITaxon_768495>))
 Declaration(Class(<http://purl.obolibrary.org/obo/NCBITaxon_7685>))
 Declaration(Class(<http://purl.obolibrary.org/obo/NCBITaxon_7688>))
 Declaration(Class(<http://purl.obolibrary.org/obo/NCBITaxon_7691>))
-Declaration(Class(<http://purl.obolibrary.org/obo/NCBITaxon_76921>))
 Declaration(Class(<http://purl.obolibrary.org/obo/NCBITaxon_76926>))
 Declaration(Class(<http://purl.obolibrary.org/obo/NCBITaxon_76927>))
-Declaration(Class(<http://purl.obolibrary.org/obo/NCBITaxon_76929>))
 Declaration(Class(<http://purl.obolibrary.org/obo/NCBITaxon_76930>))
 Declaration(Class(<http://purl.obolibrary.org/obo/NCBITaxon_76931>))
 Declaration(Class(<http://purl.obolibrary.org/obo/NCBITaxon_7725>))
@@ -2118,7 +2116,6 @@ AnnotationAssertion(Annotation(<http://purl.obolibrary.org/obo/IAO_0000412> "FDA
 AnnotationAssertion(rdfs:label <http://purl.obolibrary.org/obo/FOODON_00003958> "Meuschenia galii"@en)
 AnnotationAssertion(rdfs:seeAlso <http://purl.obolibrary.org/obo/FOODON_00003958> "https://www.fishbase.ca/summary/14545")
 AnnotationAssertion(rdfs:seeAlso <http://purl.obolibrary.org/obo/FOODON_00003958> "https://www.gbif.org/species/2406855")
-SubClassOf(<http://purl.obolibrary.org/obo/FOODON_00003958> <http://purl.obolibrary.org/obo/NCBITaxon_303721>)
 
 # Class: <http://purl.obolibrary.org/obo/FOODON_00003959> (Mactrotoma californica)
 
@@ -2981,14 +2978,6 @@ AnnotationAssertion(Annotation(<http://purl.obolibrary.org/obo/IAO_0000412> "FDA
 AnnotationAssertion(<http://www.geneontology.org/formats/oboInOwl#hasDbXref> <http://purl.obolibrary.org/obo/NCBITaxon_1003729> "itis:168905")
 AnnotationAssertion(Annotation(<http://purl.obolibrary.org/obo/IAO_0000412> "FDA SFL Common Name") <http://www.geneontology.org/formats/oboInOwl#hasExactSynonym> <http://purl.obolibrary.org/obo/NCBITaxon_1003729> "yellowstripe snapper"@en)
 
-# Class: <http://purl.obolibrary.org/obo/NCBITaxon_1003771> (Paracaesio xanthura)
-
-AnnotationAssertion(<http://purl.org/dc/terms/contributor> <http://purl.obolibrary.org/obo/NCBITaxon_1003771> "https://orcid.org/0000-0001-5275-8866")
-AnnotationAssertion(Annotation(<http://purl.obolibrary.org/obo/IAO_0000412> "FDA SFL Acceptable Market Name") <http://www.geneontology.org/formats/oboInOwl#hasBroadSynonym> <http://purl.obolibrary.org/obo/NCBITaxon_1003771> "snapper"@en)
-AnnotationAssertion(<http://www.geneontology.org/formats/oboInOwl#hasDbXref> <http://purl.obolibrary.org/obo/NCBITaxon_1003771> "itis:643080")
-AnnotationAssertion(Annotation(<http://purl.obolibrary.org/obo/IAO_0000412> "FDA SFL Common Name") <http://www.geneontology.org/formats/oboInOwl#hasExactSynonym> <http://purl.obolibrary.org/obo/NCBITaxon_1003771> "yellowtail blue snapper"@en)
-AnnotationAssertion(rdfs:seeAlso <http://purl.obolibrary.org/obo/NCBITaxon_1003771> "https://en.wikipedia.org/wiki/Paracaesio_xanthura")
-
 # Class: <http://purl.obolibrary.org/obo/NCBITaxon_1003779> (Plagiogeneion rubiginosum)
 
 AnnotationAssertion(<http://purl.org/dc/terms/contributor> <http://purl.obolibrary.org/obo/NCBITaxon_1003779> "https://orcid.org/0000-0001-5275-8866")
@@ -3133,7 +3122,7 @@ AnnotationAssertion(<http://www.geneontology.org/formats/oboInOwl#hasDbXref> <ht
 AnnotationAssertion(Annotation(<http://purl.obolibrary.org/obo/IAO_0000412> "FDA SFL Common Name") <http://www.geneontology.org/formats/oboInOwl#hasExactSynonym> <http://purl.obolibrary.org/obo/NCBITaxon_1042646> "walleye pollock"@en)
 AnnotationAssertion(rdfs:seeAlso <http://purl.obolibrary.org/obo/NCBITaxon_1042646> "https://en.wikipedia.org/wiki/Alaska_pollock")
 
-# Class: <http://purl.obolibrary.org/obo/NCBITaxon_1042794> (Mytilus edulis X Mytilus galloprovincialis)
+# Class: <http://purl.obolibrary.org/obo/NCBITaxon_1042794> (Mytilus edulis x Mytilus galloprovincialis)
 
 AnnotationAssertion(<http://purl.org/dc/terms/contributor> <http://purl.obolibrary.org/obo/NCBITaxon_1042794> "https://orcid.org/0000-0001-5275-8866")
 AnnotationAssertion(Annotation(<http://purl.obolibrary.org/obo/IAO_0000412> "FDA SFL Acceptable Market Name") <http://www.geneontology.org/formats/oboInOwl#hasBroadSynonym> <http://purl.obolibrary.org/obo/NCBITaxon_1042794> "mussel"@en)
@@ -5504,7 +5493,7 @@ AnnotationAssertion(Annotation(<http://purl.obolibrary.org/obo/IAO_0000412> "FDA
 AnnotationAssertion(<http://www.geneontology.org/formats/oboInOwl#hasDbXref> <http://purl.obolibrary.org/obo/NCBITaxon_163121> "itis:167712")
 AnnotationAssertion(Annotation(<http://purl.obolibrary.org/obo/IAO_0000412> "FDA SFL Common Name") <http://www.geneontology.org/formats/oboInOwl#hasExactSynonym> <http://purl.obolibrary.org/obo/NCBITaxon_163121> "starspotted grouper"@en)
 
-# Class: <http://purl.obolibrary.org/obo/NCBITaxon_163129> (Arripis georgianus)
+# Class: <http://purl.obolibrary.org/obo/NCBITaxon_163129> (<http://purl.obolibrary.org/obo/NCBITaxon_163129>)
 
 AnnotationAssertion(<http://purl.org/dc/terms/contributor> <http://purl.obolibrary.org/obo/NCBITaxon_163129> "https://orcid.org/0000-0001-5275-8866")
 AnnotationAssertion(Annotation(<http://purl.obolibrary.org/obo/IAO_0000412> "FDA SFL Acceptable Market Name") <http://www.geneontology.org/formats/oboInOwl#hasBroadSynonym> <http://purl.obolibrary.org/obo/NCBITaxon_163129> "kahawai"@en)
@@ -7006,15 +6995,6 @@ AnnotationAssertion(Annotation(<http://purl.obolibrary.org/obo/IAO_0000412> "FDA
 AnnotationAssertion(<http://www.geneontology.org/formats/oboInOwl#hasDbXref> <http://purl.obolibrary.org/obo/NCBITaxon_204814> "itis:646293")
 AnnotationAssertion(Annotation(<http://purl.obolibrary.org/obo/IAO_0000412> "FDA SFL Common Name") <http://www.geneontology.org/formats/oboInOwl#hasExactSynonym> <http://purl.obolibrary.org/obo/NCBITaxon_204814> "moontail blassop"@en)
 AnnotationAssertion(rdfs:seeAlso <http://purl.obolibrary.org/obo/NCBITaxon_204814> "https://en.wikipedia.org/wiki/Lunartail_puffer")
-
-# Class: <http://purl.obolibrary.org/obo/NCBITaxon_205127> (Glossogobius giuris)
-
-AnnotationAssertion(<http://purl.org/dc/terms/contributor> <http://purl.obolibrary.org/obo/NCBITaxon_205127> "https://orcid.org/0000-0001-5275-8866")
-AnnotationAssertion(Annotation(<http://purl.obolibrary.org/obo/IAO_0000412> "FDA SFL Acceptable Market Name") <http://www.geneontology.org/formats/oboInOwl#hasBroadSynonym> <http://purl.obolibrary.org/obo/NCBITaxon_205127> "goby"@en)
-AnnotationAssertion(<http://www.geneontology.org/formats/oboInOwl#hasDbXref> <http://purl.obolibrary.org/obo/NCBITaxon_205127> "itis:637376")
-AnnotationAssertion(<http://www.geneontology.org/formats/oboInOwl#hasExactSynonym> <http://purl.obolibrary.org/obo/NCBITaxon_205127> "baila"@en)
-AnnotationAssertion(Annotation(<http://purl.obolibrary.org/obo/IAO_0000412> "FDA SFL Common Name") <http://www.geneontology.org/formats/oboInOwl#hasExactSynonym> <http://purl.obolibrary.org/obo/NCBITaxon_205127> "tank goby"@en)
-AnnotationAssertion(rdfs:seeAlso <http://purl.obolibrary.org/obo/NCBITaxon_205127> "https://en.wikipedia.org/wiki/Tank_goby")
 
 # Class: <http://purl.obolibrary.org/obo/NCBITaxon_205130> (Mastacembelus armatus)
 
@@ -8999,7 +8979,7 @@ AnnotationAssertion(<http://www.geneontology.org/formats/oboInOwl#hasDbXref> <ht
 AnnotationAssertion(Annotation(<http://purl.obolibrary.org/obo/IAO_0000412> "FDA SFL Common Name") <http://www.geneontology.org/formats/oboInOwl#hasExactSynonym> <http://purl.obolibrary.org/obo/NCBITaxon_29158> "mediterranean mussel"@en)
 AnnotationAssertion(rdfs:seeAlso <http://purl.obolibrary.org/obo/NCBITaxon_29158> "https://en.wikipedia.org/wiki/Mediterranean_mussel")
 
-# Class: <http://purl.obolibrary.org/obo/NCBITaxon_29159> (Crassostrea gigas)
+# Class: <http://purl.obolibrary.org/obo/NCBITaxon_29159> (Magallana gigas)
 
 AnnotationAssertion(<http://purl.org/dc/terms/contributor> <http://purl.obolibrary.org/obo/NCBITaxon_29159> "https://orcid.org/0000-0001-5275-8866")
 AnnotationAssertion(Annotation(<http://purl.obolibrary.org/obo/IAO_0000412> "FDA SFL Acceptable Market Name") <http://www.geneontology.org/formats/oboInOwl#hasBroadSynonym> <http://purl.obolibrary.org/obo/NCBITaxon_29159> "oyster"@en)
@@ -9332,6 +9312,14 @@ AnnotationAssertion(Annotation(<http://purl.obolibrary.org/obo/IAO_0000412> "FDA
 AnnotationAssertion(<http://www.geneontology.org/formats/oboInOwl#hasDbXref> <http://purl.obolibrary.org/obo/NCBITaxon_30493> "itis:160448")
 AnnotationAssertion(Annotation(<http://purl.obolibrary.org/obo/IAO_0000412> "FDA SFL Common Name") <http://www.geneontology.org/formats/oboInOwl#hasExactSynonym> <http://purl.obolibrary.org/obo/NCBITaxon_30493> "leopard shark"@en)
 AnnotationAssertion(rdfs:seeAlso <http://purl.obolibrary.org/obo/NCBITaxon_30493> "https://en.wikipedia.org/wiki/Leopard_shark")
+
+# Class: <http://purl.obolibrary.org/obo/NCBITaxon_3052985> (<http://purl.obolibrary.org/obo/NCBITaxon_3052985>)
+
+AnnotationAssertion(<http://purl.org/dc/terms/contributor> <http://purl.obolibrary.org/obo/NCBITaxon_3052985> "https://orcid.org/0000-0001-5275-8866")
+AnnotationAssertion(Annotation(<http://purl.obolibrary.org/obo/IAO_0000412> "FDA SFL Acceptable Market Name") <http://www.geneontology.org/formats/oboInOwl#hasBroadSynonym> <http://purl.obolibrary.org/obo/NCBITaxon_3052985> "morwong"@en)
+AnnotationAssertion(<http://www.geneontology.org/formats/oboInOwl#hasDbXref> <http://purl.obolibrary.org/obo/NCBITaxon_3052985> "itis:645512")
+AnnotationAssertion(Annotation(<http://purl.obolibrary.org/obo/IAO_0000412> "FDA SFL Common Name") <http://www.geneontology.org/formats/oboInOwl#hasExactSynonym> <http://purl.obolibrary.org/obo/NCBITaxon_3052985> "magpie morwong"@en)
+AnnotationAssertion(rdfs:seeAlso <http://purl.obolibrary.org/obo/NCBITaxon_3052985> "https://www.gbif.org/species/2392121")
 
 # Class: <http://purl.obolibrary.org/obo/NCBITaxon_306053> (Grimothea gregaria)
 
@@ -10322,13 +10310,22 @@ AnnotationAssertion(<http://www.geneontology.org/formats/oboInOwl#hasDbXref> <ht
 AnnotationAssertion(Annotation(<http://purl.obolibrary.org/obo/IAO_0000412> "FDA SFL Common Name") <http://www.geneontology.org/formats/oboInOwl#hasExactSynonym> <http://purl.obolibrary.org/obo/NCBITaxon_335060> "blackspotted croaker"@en)
 AnnotationAssertion(rdfs:seeAlso <http://purl.obolibrary.org/obo/NCBITaxon_335060> "https://en.wikipedia.org/wiki/Protonibea_diacanthus")
 
-# Class: <http://purl.obolibrary.org/obo/NCBITaxon_33514> (Raja eglanteria)
+# Class: <http://purl.obolibrary.org/obo/NCBITaxon_3352506> (<http://purl.obolibrary.org/obo/NCBITaxon_3352506>)
 
-AnnotationAssertion(<http://purl.org/dc/terms/contributor> <http://purl.obolibrary.org/obo/NCBITaxon_33514> "https://orcid.org/0000-0001-5275-8866")
-AnnotationAssertion(Annotation(<http://purl.obolibrary.org/obo/IAO_0000412> "FDA SFL Acceptable Market Name") <http://www.geneontology.org/formats/oboInOwl#hasBroadSynonym> <http://purl.obolibrary.org/obo/NCBITaxon_33514> "skate"@en)
-AnnotationAssertion(<http://www.geneontology.org/formats/oboInOwl#hasDbXref> <http://purl.obolibrary.org/obo/NCBITaxon_33514> "itis:160855")
-AnnotationAssertion(Annotation(<http://purl.obolibrary.org/obo/IAO_0000412> "FDA SFL Common Name") <http://www.geneontology.org/formats/oboInOwl#hasExactSynonym> <http://purl.obolibrary.org/obo/NCBITaxon_33514> "clearnose skate"@en)
-AnnotationAssertion(rdfs:seeAlso <http://purl.obolibrary.org/obo/NCBITaxon_33514> "https://en.wikipedia.org/wiki/Clearnose_skate")
+AnnotationAssertion(<http://purl.org/dc/terms/contributor> <http://purl.obolibrary.org/obo/NCBITaxon_3352506> "https://orcid.org/0000-0001-5275-8866")
+AnnotationAssertion(Annotation(<http://purl.obolibrary.org/obo/IAO_0000412> "FDA SFL Acceptable Market Name") <http://www.geneontology.org/formats/oboInOwl#hasBroadSynonym> <http://purl.obolibrary.org/obo/NCBITaxon_3352506> "goby"@en)
+AnnotationAssertion(<http://www.geneontology.org/formats/oboInOwl#hasDbXref> <http://purl.obolibrary.org/obo/NCBITaxon_3352506> "itis:637376")
+AnnotationAssertion(<http://www.geneontology.org/formats/oboInOwl#hasExactSynonym> <http://purl.obolibrary.org/obo/NCBITaxon_3352506> "baila"@en)
+AnnotationAssertion(Annotation(<http://purl.obolibrary.org/obo/IAO_0000412> "FDA SFL Common Name") <http://www.geneontology.org/formats/oboInOwl#hasExactSynonym> <http://purl.obolibrary.org/obo/NCBITaxon_3352506> "tank goby"@en)
+AnnotationAssertion(rdfs:seeAlso <http://purl.obolibrary.org/obo/NCBITaxon_3352506> "https://en.wikipedia.org/wiki/Tank_goby")
+
+# Class: <http://purl.obolibrary.org/obo/NCBITaxon_3352919> (<http://purl.obolibrary.org/obo/NCBITaxon_3352919>)
+
+AnnotationAssertion(<http://purl.org/dc/terms/contributor> <http://purl.obolibrary.org/obo/NCBITaxon_3352919> "https://orcid.org/0000-0001-5275-8866")
+AnnotationAssertion(Annotation(<http://purl.obolibrary.org/obo/IAO_0000412> "FDA SFL Acceptable Market Name") <http://www.geneontology.org/formats/oboInOwl#hasBroadSynonym> <http://purl.obolibrary.org/obo/NCBITaxon_3352919> "grunt"@en)
+AnnotationAssertion(<http://www.geneontology.org/formats/oboInOwl#hasDbXref> <http://purl.obolibrary.org/obo/NCBITaxon_3352919> "itis:169064")
+AnnotationAssertion(Annotation(<http://purl.obolibrary.org/obo/IAO_0000412> "FDA SFL Common Name") <http://www.geneontology.org/formats/oboInOwl#hasExactSynonym> <http://purl.obolibrary.org/obo/NCBITaxon_3352919> "smallmouth grunt"@en)
+AnnotationAssertion(rdfs:seeAlso <http://purl.obolibrary.org/obo/NCBITaxon_3352919> "https://en.wikipedia.org/wiki/Haemulon_chrysargyreum")
 
 # Class: <http://purl.obolibrary.org/obo/NCBITaxon_335480> (Chlamys albidus)
 
@@ -10337,6 +10334,22 @@ AnnotationAssertion(Annotation(<http://purl.obolibrary.org/obo/IAO_0000412> "FDA
 AnnotationAssertion(<http://www.geneontology.org/formats/oboInOwl#hasDbXref> <http://purl.obolibrary.org/obo/NCBITaxon_335480> "itis:79649")
 AnnotationAssertion(Annotation(<http://purl.obolibrary.org/obo/IAO_0000412> "FDA SFL Common Name") <http://www.geneontology.org/formats/oboInOwl#hasExactSynonym> <http://purl.obolibrary.org/obo/NCBITaxon_335480> "white scallop"@en)
 AnnotationAssertion(rdfs:seeAlso <http://purl.obolibrary.org/obo/NCBITaxon_335480> "https://www.gbif.org/species/5188906")
+
+# Class: <http://purl.obolibrary.org/obo/NCBITaxon_3358813> (Paracaesio xanthurus)
+
+AnnotationAssertion(<http://purl.org/dc/terms/contributor> <http://purl.obolibrary.org/obo/NCBITaxon_3358813> "https://orcid.org/0000-0001-5275-8866")
+AnnotationAssertion(Annotation(<http://purl.obolibrary.org/obo/IAO_0000412> "FDA SFL Acceptable Market Name") <http://www.geneontology.org/formats/oboInOwl#hasBroadSynonym> <http://purl.obolibrary.org/obo/NCBITaxon_3358813> "snapper"@en)
+AnnotationAssertion(<http://www.geneontology.org/formats/oboInOwl#hasDbXref> <http://purl.obolibrary.org/obo/NCBITaxon_3358813> "itis:643080")
+AnnotationAssertion(Annotation(<http://purl.obolibrary.org/obo/IAO_0000412> "FDA SFL Common Name") <http://www.geneontology.org/formats/oboInOwl#hasExactSynonym> <http://purl.obolibrary.org/obo/NCBITaxon_3358813> "yellowtail blue snapper"@en)
+AnnotationAssertion(rdfs:seeAlso <http://purl.obolibrary.org/obo/NCBITaxon_3358813> "https://en.wikipedia.org/wiki/Paracaesio_xanthura")
+
+# Class: <http://purl.obolibrary.org/obo/NCBITaxon_3360502> (<http://purl.obolibrary.org/obo/NCBITaxon_3360502>)
+
+AnnotationAssertion(<http://purl.org/dc/terms/contributor> <http://purl.obolibrary.org/obo/NCBITaxon_3360502> "https://orcid.org/0000-0001-5275-8866")
+AnnotationAssertion(Annotation(<http://purl.obolibrary.org/obo/IAO_0000412> "FDA SFL Acceptable Market Name") <http://www.geneontology.org/formats/oboInOwl#hasBroadSynonym> <http://purl.obolibrary.org/obo/NCBITaxon_3360502> "skate"@en)
+AnnotationAssertion(<http://www.geneontology.org/formats/oboInOwl#hasDbXref> <http://purl.obolibrary.org/obo/NCBITaxon_3360502> "itis:160855")
+AnnotationAssertion(Annotation(<http://purl.obolibrary.org/obo/IAO_0000412> "FDA SFL Common Name") <http://www.geneontology.org/formats/oboInOwl#hasExactSynonym> <http://purl.obolibrary.org/obo/NCBITaxon_3360502> "clearnose skate"@en)
+AnnotationAssertion(rdfs:seeAlso <http://purl.obolibrary.org/obo/NCBITaxon_3360502> "https://en.wikipedia.org/wiki/Clearnose_skate")
 
 # Class: <http://purl.obolibrary.org/obo/NCBITaxon_336262> (Dorosoma cepedianum)
 
@@ -11223,7 +11236,7 @@ AnnotationAssertion(<http://www.geneontology.org/formats/oboInOwl#hasDbXref> <ht
 AnnotationAssertion(Annotation(<http://purl.obolibrary.org/obo/IAO_0000412> "FDA SFL Common Name") <http://www.geneontology.org/formats/oboInOwl#hasExactSynonym> <http://purl.obolibrary.org/obo/NCBITaxon_387448> "florida fighting conch"@en)
 AnnotationAssertion(rdfs:seeAlso <http://purl.obolibrary.org/obo/NCBITaxon_387448> "https://en.wikipedia.org/wiki/Strombus_alatus")
 
-# Class: <http://purl.obolibrary.org/obo/NCBITaxon_387452> (Macrostrombus costatus)
+# Class: <http://purl.obolibrary.org/obo/NCBITaxon_387452> (<http://purl.obolibrary.org/obo/NCBITaxon_387452>)
 
 AnnotationAssertion(<http://purl.org/dc/terms/contributor> <http://purl.obolibrary.org/obo/NCBITaxon_387452> "https://orcid.org/0000-0001-5275-8866")
 AnnotationAssertion(Annotation(<http://purl.obolibrary.org/obo/IAO_0000412> "FDA SFL Acceptable Market Name") <http://www.geneontology.org/formats/oboInOwl#hasBroadSynonym> <http://purl.obolibrary.org/obo/NCBITaxon_387452> "conch"@en)
@@ -11858,7 +11871,7 @@ AnnotationAssertion(<http://www.geneontology.org/formats/oboInOwl#hasDbXref> <ht
 AnnotationAssertion(Annotation(<http://purl.obolibrary.org/obo/IAO_0000412> "FDA SFL Common Name") <http://www.geneontology.org/formats/oboInOwl#hasExactSynonym> <http://purl.obolibrary.org/obo/NCBITaxon_41447> "greater amberjack"@en)
 AnnotationAssertion(rdfs:seeAlso <http://purl.obolibrary.org/obo/NCBITaxon_41447> "https://en.wikipedia.org/wiki/Greater_amberjack")
 
-# Class: <http://purl.obolibrary.org/obo/NCBITaxon_41697> (Sardinops melanostictus)
+# Class: <http://purl.obolibrary.org/obo/NCBITaxon_41697> (Sardinops melanosticta)
 
 AnnotationAssertion(<http://purl.org/dc/terms/contributor> <http://purl.obolibrary.org/obo/NCBITaxon_41697> "https://orcid.org/0000-0001-5275-8866")
 AnnotationAssertion(Annotation(<http://purl.obolibrary.org/obo/IAO_0000412> "FDA SFL Acceptable Market Name") <http://www.geneontology.org/formats/oboInOwl#hasBroadSynonym> <http://purl.obolibrary.org/obo/NCBITaxon_41697> "pilchard"@en)
@@ -13473,7 +13486,7 @@ AnnotationAssertion(Annotation(<http://purl.obolibrary.org/obo/IAO_0000412> "FDA
 AnnotationAssertion(rdfs:seeAlso <http://purl.obolibrary.org/obo/NCBITaxon_548162> "https://www.fishbase.ca/summary/14540")
 AnnotationAssertion(rdfs:seeAlso <http://purl.obolibrary.org/obo/NCBITaxon_548162> "https://www.gbif.org/species/2406854")
 
-# Class: <http://purl.obolibrary.org/obo/NCBITaxon_548163> (Meuschenia scaber)
+# Class: <http://purl.obolibrary.org/obo/NCBITaxon_548163> (<http://purl.obolibrary.org/obo/NCBITaxon_548163>)
 
 AnnotationAssertion(<http://purl.org/dc/terms/contributor> <http://purl.obolibrary.org/obo/NCBITaxon_548163> "https://orcid.org/0000-0001-5275-8866")
 AnnotationAssertion(Annotation(<http://purl.obolibrary.org/obo/IAO_0000412> "FDA SFL Acceptable Market Name") <http://www.geneontology.org/formats/oboInOwl#hasBroadSynonym> <http://purl.obolibrary.org/obo/NCBITaxon_548163> "triggerfish"@en)
@@ -13623,14 +13636,6 @@ AnnotationAssertion(<http://www.geneontology.org/formats/oboInOwl#hasDbXref> <ht
 AnnotationAssertion(Annotation(<http://purl.obolibrary.org/obo/IAO_0000412> "FDA SFL Common Name") <http://www.geneontology.org/formats/oboInOwl#hasExactSynonym> <http://purl.obolibrary.org/obo/NCBITaxon_555487> "caesar grunt"@en)
 AnnotationAssertion(rdfs:seeAlso <http://purl.obolibrary.org/obo/NCBITaxon_555487> "https://en.wikipedia.org/wiki/Caesar_grunt")
 
-# Class: <http://purl.obolibrary.org/obo/NCBITaxon_555488> (Brachygenys chrysargyreum)
-
-AnnotationAssertion(<http://purl.org/dc/terms/contributor> <http://purl.obolibrary.org/obo/NCBITaxon_555488> "https://orcid.org/0000-0001-5275-8866")
-AnnotationAssertion(Annotation(<http://purl.obolibrary.org/obo/IAO_0000412> "FDA SFL Acceptable Market Name") <http://www.geneontology.org/formats/oboInOwl#hasBroadSynonym> <http://purl.obolibrary.org/obo/NCBITaxon_555488> "grunt"@en)
-AnnotationAssertion(<http://www.geneontology.org/formats/oboInOwl#hasDbXref> <http://purl.obolibrary.org/obo/NCBITaxon_555488> "itis:169064")
-AnnotationAssertion(Annotation(<http://purl.obolibrary.org/obo/IAO_0000412> "FDA SFL Common Name") <http://www.geneontology.org/formats/oboInOwl#hasExactSynonym> <http://purl.obolibrary.org/obo/NCBITaxon_555488> "smallmouth grunt"@en)
-AnnotationAssertion(rdfs:seeAlso <http://purl.obolibrary.org/obo/NCBITaxon_555488> "https://en.wikipedia.org/wiki/Haemulon_chrysargyreum")
-
 # Class: <http://purl.obolibrary.org/obo/NCBITaxon_555490> (Haemulon macrostomum)
 
 AnnotationAssertion(<http://purl.org/dc/terms/contributor> <http://purl.obolibrary.org/obo/NCBITaxon_555490> "https://orcid.org/0000-0001-5275-8866")
@@ -13684,7 +13689,7 @@ AnnotationAssertion(Annotation(<http://purl.obolibrary.org/obo/IAO_0000412> "FDA
 AnnotationAssertion(rdfs:seeAlso <http://purl.obolibrary.org/obo/NCBITaxon_557337> "https://en.wikipedia.org/wiki/Bathyraja")
 AnnotationAssertion(rdfs:seeAlso <http://purl.obolibrary.org/obo/NCBITaxon_557337> "https://www.fishbase.se/summary/Bathyraja-spinicauda.html")
 
-# Class: <http://purl.obolibrary.org/obo/NCBITaxon_558553> (Crassostrea angulata)
+# Class: <http://purl.obolibrary.org/obo/NCBITaxon_558553> (<http://purl.obolibrary.org/obo/NCBITaxon_558553>)
 
 AnnotationAssertion(<http://purl.org/dc/terms/contributor> <http://purl.obolibrary.org/obo/NCBITaxon_558553> "https://orcid.org/0000-0001-5275-8866")
 AnnotationAssertion(Annotation(<http://purl.obolibrary.org/obo/IAO_0000412> "FDA SFL Acceptable Market Name") <http://www.geneontology.org/formats/oboInOwl#hasBroadSynonym> <http://purl.obolibrary.org/obo/NCBITaxon_558553> "oyster"@en)
@@ -14737,7 +14742,7 @@ AnnotationAssertion(Annotation(<http://purl.obolibrary.org/obo/IAO_0000412> "FDA
 AnnotationAssertion(<http://www.geneontology.org/formats/oboInOwl#hasDbXref> <http://purl.obolibrary.org/obo/NCBITaxon_666537> "itis:169356")
 AnnotationAssertion(Annotation(<http://purl.obolibrary.org/obo/IAO_0000412> "FDA SFL Common Name") <http://www.geneontology.org/formats/oboInOwl#hasExactSynonym> <http://purl.obolibrary.org/obo/NCBITaxon_666537> "shortfin weakfish"@en)
 
-# Class: <http://purl.obolibrary.org/obo/NCBITaxon_66703> (Barbatia cancellaria)
+# Class: <http://purl.obolibrary.org/obo/NCBITaxon_66703> (<http://purl.obolibrary.org/obo/NCBITaxon_66703>)
 
 AnnotationAssertion(<http://purl.org/dc/terms/contributor> <http://purl.obolibrary.org/obo/NCBITaxon_66703> "https://orcid.org/0000-0001-5275-8866")
 AnnotationAssertion(Annotation(<http://purl.obolibrary.org/obo/IAO_0000412> "FDA SFL Acceptable Market Name") <http://www.geneontology.org/formats/oboInOwl#hasBroadSynonym> <http://purl.obolibrary.org/obo/NCBITaxon_66703> "arkshell"@en)
@@ -15821,7 +15826,7 @@ AnnotationAssertion(<http://www.geneontology.org/formats/oboInOwl#hasDbXref> <ht
 AnnotationAssertion(Annotation(<http://purl.obolibrary.org/obo/IAO_0000412> "FDA SFL Common Name") <http://www.geneontology.org/formats/oboInOwl#hasExactSynonym> <http://purl.obolibrary.org/obo/NCBITaxon_75026> "louvar"@en)
 AnnotationAssertion(rdfs:seeAlso <http://purl.obolibrary.org/obo/NCBITaxon_75026> "https://en.wikipedia.org/wiki/Louvar")
 
-# Class: <http://purl.obolibrary.org/obo/NCBITaxon_75034> (Pomatomus saltatrix)
+# Class: <http://purl.obolibrary.org/obo/NCBITaxon_75034> (<http://purl.obolibrary.org/obo/NCBITaxon_75034>)
 
 AnnotationAssertion(<http://purl.org/dc/terms/contributor> <http://purl.obolibrary.org/obo/NCBITaxon_75034> "https://orcid.org/0000-0001-5275-8866")
 AnnotationAssertion(Annotation(<http://purl.obolibrary.org/obo/IAO_0000412> "FDA SFL Acceptable Market Name") <http://www.geneontology.org/formats/oboInOwl#hasBroadSynonym> <http://purl.obolibrary.org/obo/NCBITaxon_75034> "bluefish"@en)
@@ -15998,31 +16003,18 @@ AnnotationAssertion(<http://purl.org/dc/terms/contributor> <http://purl.obolibra
 AnnotationAssertion(Annotation(<http://purl.obolibrary.org/obo/IAO_0000412> "FDA SFL Acceptable Market Name") <http://www.geneontology.org/formats/oboInOwl#hasBroadSynonym> <http://purl.obolibrary.org/obo/NCBITaxon_7691> "sea cucumber"@en)
 AnnotationAssertion(rdfs:seeAlso <http://purl.obolibrary.org/obo/NCBITaxon_7691> "https://en.wikipedia.org/wiki/Stichopus")
 
-# Class: <http://purl.obolibrary.org/obo/NCBITaxon_76921> (Cheilodactylus gibbosus)
-
-AnnotationAssertion(<http://purl.org/dc/terms/contributor> <http://purl.obolibrary.org/obo/NCBITaxon_76921> "https://orcid.org/0000-0001-5275-8866")
-AnnotationAssertion(Annotation(<http://purl.obolibrary.org/obo/IAO_0000412> "FDA SFL Acceptable Market Name") <http://www.geneontology.org/formats/oboInOwl#hasBroadSynonym> <http://purl.obolibrary.org/obo/NCBITaxon_76921> "morwong"@en)
-AnnotationAssertion(<http://www.geneontology.org/formats/oboInOwl#hasDbXref> <http://purl.obolibrary.org/obo/NCBITaxon_76921> "itis:645512")
-AnnotationAssertion(Annotation(<http://purl.obolibrary.org/obo/IAO_0000412> "FDA SFL Common Name") <http://www.geneontology.org/formats/oboInOwl#hasExactSynonym> <http://purl.obolibrary.org/obo/NCBITaxon_76921> "magpie morwong"@en)
-AnnotationAssertion(rdfs:seeAlso <http://purl.obolibrary.org/obo/NCBITaxon_76921> "https://www.gbif.org/species/2392121")
-
 # Class: <http://purl.obolibrary.org/obo/NCBITaxon_76927> (Nemadactylus bergi)
 
 AnnotationAssertion(<http://purl.org/dc/terms/contributor> <http://purl.obolibrary.org/obo/NCBITaxon_76927> "https://orcid.org/0000-0001-5275-8866")
+AnnotationAssertion(Annotation(<http://purl.obolibrary.org/obo/IAO_0000412> "FDA SFL Acceptable Market Name") <http://www.geneontology.org/formats/oboInOwl#hasBroadSynonym> <http://purl.obolibrary.org/obo/NCBITaxon_76927> "moki"@en)
 AnnotationAssertion(Annotation(<http://purl.obolibrary.org/obo/IAO_0000412> "FDA SFL Acceptable Market Name") <http://www.geneontology.org/formats/oboInOwl#hasBroadSynonym> <http://purl.obolibrary.org/obo/NCBITaxon_76927> "morwong"@en)
+AnnotationAssertion(<http://www.geneontology.org/formats/oboInOwl#hasDbXref> <http://purl.obolibrary.org/obo/NCBITaxon_76927> "itis:170254")
 AnnotationAssertion(<http://www.geneontology.org/formats/oboInOwl#hasDbXref> <http://purl.obolibrary.org/obo/NCBITaxon_76927> "itis:645813")
+AnnotationAssertion(Annotation(<http://purl.obolibrary.org/obo/IAO_0000412> "FDA SFL Common Name") <http://www.geneontology.org/formats/oboInOwl#hasExactSynonym> <http://purl.obolibrary.org/obo/NCBITaxon_76927> "brownband morwong"@en)
 AnnotationAssertion(Annotation(<http://purl.obolibrary.org/obo/IAO_0000412> "FDA SFL Common Name") <http://www.geneontology.org/formats/oboInOwl#hasExactSynonym> <http://purl.obolibrary.org/obo/NCBITaxon_76927> "morwong"@en)
-
-# Class: <http://purl.obolibrary.org/obo/NCBITaxon_76929> (Cheilodactylus spectabilis)
-
-AnnotationAssertion(<http://purl.org/dc/terms/contributor> <http://purl.obolibrary.org/obo/NCBITaxon_76929> "https://orcid.org/0000-0001-5275-8866")
-AnnotationAssertion(Annotation(<http://purl.obolibrary.org/obo/IAO_0000412> "FDA SFL Acceptable Market Name") <http://www.geneontology.org/formats/oboInOwl#hasBroadSynonym> <http://purl.obolibrary.org/obo/NCBITaxon_76929> "moki"@en)
-AnnotationAssertion(Annotation(<http://purl.obolibrary.org/obo/IAO_0000412> "FDA SFL Acceptable Market Name") <http://www.geneontology.org/formats/oboInOwl#hasBroadSynonym> <http://purl.obolibrary.org/obo/NCBITaxon_76929> "morwong"@en)
-AnnotationAssertion(<http://www.geneontology.org/formats/oboInOwl#hasDbXref> <http://purl.obolibrary.org/obo/NCBITaxon_76929> "itis:170254")
-AnnotationAssertion(Annotation(<http://purl.obolibrary.org/obo/IAO_0000412> "FDA SFL Common Name") <http://www.geneontology.org/formats/oboInOwl#hasExactSynonym> <http://purl.obolibrary.org/obo/NCBITaxon_76929> "brownband morwong"@en)
-AnnotationAssertion(Annotation(<http://purl.obolibrary.org/obo/IAO_0000412> "FDA SFL Common Name") <http://www.geneontology.org/formats/oboInOwl#hasExactSynonym> <http://purl.obolibrary.org/obo/NCBITaxon_76929> "red moki"@en)
-AnnotationAssertion(rdfs:seeAlso <http://purl.obolibrary.org/obo/NCBITaxon_76929> "https://en.wikipedia.org/wiki/Red_moki")
-AnnotationAssertion(rdfs:seeAlso <http://purl.obolibrary.org/obo/NCBITaxon_76929> "https://www.gbif.org/species/2392173")
+AnnotationAssertion(Annotation(<http://purl.obolibrary.org/obo/IAO_0000412> "FDA SFL Common Name") <http://www.geneontology.org/formats/oboInOwl#hasExactSynonym> <http://purl.obolibrary.org/obo/NCBITaxon_76927> "red moki"@en)
+AnnotationAssertion(rdfs:seeAlso <http://purl.obolibrary.org/obo/NCBITaxon_76927> "https://en.wikipedia.org/wiki/Red_moki")
+AnnotationAssertion(rdfs:seeAlso <http://purl.obolibrary.org/obo/NCBITaxon_76927> "https://www.gbif.org/species/2392173")
 
 # Class: <http://purl.obolibrary.org/obo/NCBITaxon_76930> (Nemadactylus douglasii)
 
@@ -16080,7 +16072,7 @@ AnnotationAssertion(Annotation(<http://purl.obolibrary.org/obo/IAO_0000412> "FDA
 AnnotationAssertion(Annotation(<http://purl.obolibrary.org/obo/IAO_0000412> "FDA SFL Common Name") <http://www.geneontology.org/formats/oboInOwl#hasExactSynonym> <http://purl.obolibrary.org/obo/NCBITaxon_7780> "ocellate skates"@en)
 AnnotationAssertion(rdfs:seeAlso <http://purl.obolibrary.org/obo/NCBITaxon_7780> "https://en.wikipedia.org/wiki/Raja_(fish)")
 
-# Class: <http://purl.obolibrary.org/obo/NCBITaxon_7782> (Leucoraja erinacea)
+# Class: <http://purl.obolibrary.org/obo/NCBITaxon_7782> (Leucoraja erinaceus)
 
 AnnotationAssertion(<http://purl.org/dc/terms/contributor> <http://purl.obolibrary.org/obo/NCBITaxon_7782> "https://orcid.org/0000-0001-5275-8866")
 AnnotationAssertion(Annotation(<http://purl.obolibrary.org/obo/IAO_0000412> "FDA SFL Acceptable Market Name") <http://www.geneontology.org/formats/oboInOwl#hasBroadSynonym> <http://purl.obolibrary.org/obo/NCBITaxon_7782> "skate"@en)

@@ -394,6 +394,7 @@ Declaration(Class(obo:NCBITaxon_125897))
 Declaration(Class(obo:NCBITaxon_1260532))
 Declaration(Class(obo:NCBITaxon_1262608))
 Declaration(Class(obo:NCBITaxon_1262610))
+Declaration(Class(obo:NCBITaxon_126287))
 Declaration(Class(obo:NCBITaxon_126670))
 Declaration(Class(obo:NCBITaxon_1266862))
 Declaration(Class(obo:NCBITaxon_1266863))
@@ -5085,6 +5086,7 @@ Declaration(Class(obo:NCBITaxon_9644))
 Declaration(Class(obo:NCBITaxon_9647))
 Declaration(Class(obo:NCBITaxon_96479))
 Declaration(Class(obo:NCBITaxon_9653))
+Declaration(Class(obo:NCBITaxon_9654))
 Declaration(Class(obo:NCBITaxon_9655))
 Declaration(Class(obo:NCBITaxon_96776))
 Declaration(Class(obo:NCBITaxon_96777))
@@ -7866,6 +7868,12 @@ AnnotationAssertion(obo:IAO_0000412 obo:NCBITaxon_1262610 obo:ncbitaxon.owl)
 AnnotationAssertion(oboInOwl:hasExactSynonym obo:NCBITaxon_1262610 "Gulf butterfish")
 AnnotationAssertion(rdfs:label obo:NCBITaxon_1262610 "Peprilus burti")
 SubClassOf(obo:NCBITaxon_1262610 obo:NCBITaxon_183652)
+
+# Class: obo:NCBITaxon_126287 (Didelphinae)
+
+AnnotationAssertion(obo:IAO_0000412 obo:NCBITaxon_126287 obo:ncbitaxon.owl)
+AnnotationAssertion(rdfs:label obo:NCBITaxon_126287 "Didelphinae")
+SubClassOf(obo:NCBITaxon_126287 obo:NCBITaxon_9265)
 
 # Class: obo:NCBITaxon_126670 (Chlorurus)
 
@@ -39316,7 +39324,7 @@ AnnotationAssertion(obo:IAO_0000412 obo:NCBITaxon_9267 obo:ncbitaxon.owl)
 AnnotationAssertion(oboInOwl:hasExactSynonym obo:NCBITaxon_9267 "North American opossum")
 AnnotationAssertion(oboInOwl:hasExactSynonym obo:NCBITaxon_9267 "Virginia opossum")
 AnnotationAssertion(rdfs:label obo:NCBITaxon_9267 "Didelphis virginiana")
-SubClassOf(obo:NCBITaxon_9267 obo:NCBITaxon_9265)
+SubClassOf(obo:NCBITaxon_9267 obo:NCBITaxon_126287)
 
 # Class: obo:NCBITaxon_92921 (Silybum marianum)
 
@@ -39955,6 +39963,14 @@ SubClassOf(obo:NCBITaxon_96479 obo:NCBITaxon_214907)
 AnnotationAssertion(obo:IAO_0000412 obo:NCBITaxon_9653 obo:ncbitaxon.owl)
 AnnotationAssertion(rdfs:label obo:NCBITaxon_9653 "Procyon")
 SubClassOf(obo:NCBITaxon_9653 obo:NCBITaxon_9647)
+
+# Class: obo:NCBITaxon_9654 (Procyon lotor)
+
+AnnotationAssertion(obo:IAO_0000412 obo:NCBITaxon_9654 obo:ncbitaxon.owl)
+AnnotationAssertion(oboInOwl:hasExactSynonym obo:NCBITaxon_9654 "northern raccoon")
+AnnotationAssertion(oboInOwl:hasExactSynonym obo:NCBITaxon_9654 "raccoon")
+AnnotationAssertion(rdfs:label obo:NCBITaxon_9654 "Procyon lotor")
+SubClassOf(obo:NCBITaxon_9654 obo:NCBITaxon_9653)
 
 # Class: obo:NCBITaxon_9655 (Mustelidae)
 
