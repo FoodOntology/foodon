@@ -6008,7 +6008,6 @@ Declaration(Class(obo:FOODON_03310181))
 Declaration(Class(obo:FOODON_03310182))
 Declaration(Class(obo:FOODON_03310183))
 Declaration(Class(obo:FOODON_03310184))
-Declaration(Class(obo:FOODON_03310185))
 Declaration(Class(obo:FOODON_03310186))
 Declaration(Class(obo:FOODON_03310187))
 Declaration(Class(obo:FOODON_03310188))
@@ -58643,15 +58642,6 @@ AnnotationAssertion(rdfs:comment obo:FOODON_03310184 "SIREN DB annotation:
 * pasteurization by heating FOODON:03470135
 * reduced fat food FOODON:03510040"@en)
 
-# Class: obo:FOODON_03310185 (ghee)
-
-AnnotationAssertion(rdfs:comment obo:FOODON_03310185 "SIREN DB annotation:
-* semiliquid with smooth consistency FOODON:03430135
-* fully heat-treated FOODON:03440014
-* butter FOODON:00001023
-* water removal process FOODON:03460138
-* preservation by reducing water activity FOODON:03470145"@en)
-
 # Class: obo:FOODON_03310186 (spinach powder)
 
 AnnotationAssertion(rdfs:comment obo:FOODON_03310186 "SIREN DB annotation:
@@ -71526,16 +71516,6 @@ AnnotationAssertion(rdfs:comment obo:FOODON_03315780 "SIREN DB annotation:
 AnnotationAssertion(rdfs:comment obo:FOODON_03315781 "SIREN DB annotation:
 * liquid FOODON:03430130"@en)
 
-# Class: obo:FOODON_03315782 (lima bean (ripe, canned))
-
-AnnotationAssertion(rdfs:comment obo:FOODON_03315782 "SIREN DB annotation:
-* surrounded by 'can' FOODON:03490204
-* whole, natural shape FOODON:03430150
-* fully heat-treated FOODON:03440014
-* ripe or mature FOODON:03530052
-* seed, skin present, germ present FOODON:03420133
-* sterilization by heating FOODON:03470123"@en)
-
 # Class: obo:FOODON_03315783 (pinto bean (canned))
 
 AnnotationAssertion(rdfs:comment obo:FOODON_03315783 "SIREN DB annotation:
@@ -79365,7 +79345,7 @@ AnnotationAssertion(rdfs:comment obo:FOODON_03317328 "SIREN DB annotation:
 * divided into pieces FOODON:03430152
 * skeletal meat part FOODON:03420175"@en)
 
-# Class: obo:FOODON_03317330 (pork (carcass, previously frozen cut))
+# Class: obo:FOODON_03317330 (pig carcass (previously frozen cut))
 
 AnnotationAssertion(rdfs:comment obo:FOODON_03317330 "SIREN DB annotation:
 * divided into pieces FOODON:03430152
