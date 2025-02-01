@@ -8,26 +8,81 @@ Prefix(rdfs:=<http://www.w3.org/2000/01/rdf-schema#>)
 
 Ontology(<http://purl.obolibrary.org/obo/foodon/imports/robot_food_process.ofn>
 
+Declaration(Class(<http://purl.obolibrary.org/obo/FOODON_00001001>))
 Declaration(Class(<http://purl.obolibrary.org/obo/FOODON_00001013>))
+Declaration(Class(<http://purl.obolibrary.org/obo/FOODON_00001038>))
+Declaration(Class(<http://purl.obolibrary.org/obo/FOODON_00001041>))
 Declaration(Class(<http://purl.obolibrary.org/obo/FOODON_00001056>))
+Declaration(Class(<http://purl.obolibrary.org/obo/FOODON_00001059>))
+Declaration(Class(<http://purl.obolibrary.org/obo/FOODON_00001073>))
+Declaration(Class(<http://purl.obolibrary.org/obo/FOODON_00001093>))
 Declaration(Class(<http://purl.obolibrary.org/obo/FOODON_00001141>))
-Declaration(Class(<http://purl.obolibrary.org/obo/FOODON_00001177>))
+Declaration(Class(<http://purl.obolibrary.org/obo/FOODON_00001170>))
 Declaration(Class(<http://purl.obolibrary.org/obo/FOODON_00001183>))
+Declaration(Class(<http://purl.obolibrary.org/obo/FOODON_00001211>))
+Declaration(Class(<http://purl.obolibrary.org/obo/FOODON_00001241>))
+Declaration(Class(<http://purl.obolibrary.org/obo/FOODON_00001244>))
+Declaration(Class(<http://purl.obolibrary.org/obo/FOODON_00001277>))
+Declaration(Class(<http://purl.obolibrary.org/obo/FOODON_00001286>))
+Declaration(Class(<http://purl.obolibrary.org/obo/FOODON_00001291>))
+Declaration(Class(<http://purl.obolibrary.org/obo/FOODON_00001578>))
 Declaration(Class(<http://purl.obolibrary.org/obo/FOODON_00001598>))
+Declaration(Class(<http://purl.obolibrary.org/obo/FOODON_00001628>))
+Declaration(Class(<http://purl.obolibrary.org/obo/FOODON_00001638>))
+Declaration(Class(<http://purl.obolibrary.org/obo/FOODON_00001641>))
+Declaration(Class(<http://purl.obolibrary.org/obo/FOODON_00001687>))
+Declaration(Class(<http://purl.obolibrary.org/obo/FOODON_00001759>))
 Declaration(Class(<http://purl.obolibrary.org/obo/FOODON_00001769>))
+Declaration(Class(<http://purl.obolibrary.org/obo/FOODON_00001823>))
 Declaration(Class(<http://purl.obolibrary.org/obo/FOODON_00001911>))
+Declaration(Class(<http://purl.obolibrary.org/obo/FOODON_00001915>))
+Declaration(Class(<http://purl.obolibrary.org/obo/FOODON_00001934>))
 Declaration(Class(<http://purl.obolibrary.org/obo/FOODON_00001946>))
+Declaration(Class(<http://purl.obolibrary.org/obo/FOODON_00002013>))
 Declaration(Class(<http://purl.obolibrary.org/obo/FOODON_00002022>))
+Declaration(Class(<http://purl.obolibrary.org/obo/FOODON_00002051>))
+Declaration(Class(<http://purl.obolibrary.org/obo/FOODON_00002099>))
+Declaration(Class(<http://purl.obolibrary.org/obo/FOODON_00002119>))
+Declaration(Class(<http://purl.obolibrary.org/obo/FOODON_00002176>))
+Declaration(Class(<http://purl.obolibrary.org/obo/FOODON_00002205>))
+Declaration(Class(<http://purl.obolibrary.org/obo/FOODON_00002220>))
+Declaration(Class(<http://purl.obolibrary.org/obo/FOODON_00002232>))
+Declaration(Class(<http://purl.obolibrary.org/obo/FOODON_00002239>))
 Declaration(Class(<http://purl.obolibrary.org/obo/FOODON_00002265>))
 Declaration(Class(<http://purl.obolibrary.org/obo/FOODON_00002266>))
+Declaration(Class(<http://purl.obolibrary.org/obo/FOODON_00002271>))
+Declaration(Class(<http://purl.obolibrary.org/obo/FOODON_00002297>))
+Declaration(Class(<http://purl.obolibrary.org/obo/FOODON_00002301>))
+Declaration(Class(<http://purl.obolibrary.org/obo/FOODON_00002309>))
+Declaration(Class(<http://purl.obolibrary.org/obo/FOODON_00002345>))
+Declaration(Class(<http://purl.obolibrary.org/obo/FOODON_00002352>))
+Declaration(Class(<http://purl.obolibrary.org/obo/FOODON_00002354>))
+Declaration(Class(<http://purl.obolibrary.org/obo/FOODON_00002400>))
+Declaration(Class(<http://purl.obolibrary.org/obo/FOODON_00002418>))
+Declaration(Class(<http://purl.obolibrary.org/obo/FOODON_00002502>))
+Declaration(Class(<http://purl.obolibrary.org/obo/FOODON_00002689>))
+Declaration(Class(<http://purl.obolibrary.org/obo/FOODON_00002729>))
 Declaration(Class(<http://purl.obolibrary.org/obo/FOODON_00002815>))
+Declaration(Class(<http://purl.obolibrary.org/obo/FOODON_00002819>))
+Declaration(Class(<http://purl.obolibrary.org/obo/FOODON_00002911>))
+Declaration(Class(<http://purl.obolibrary.org/obo/FOODON_00002951>))
+Declaration(Class(<http://purl.obolibrary.org/obo/FOODON_00002958>))
 Declaration(Class(<http://purl.obolibrary.org/obo/FOODON_00003000>))
+Declaration(Class(<http://purl.obolibrary.org/obo/FOODON_00003065>))
+Declaration(Class(<http://purl.obolibrary.org/obo/FOODON_00003140>))
+Declaration(Class(<http://purl.obolibrary.org/obo/FOODON_00003156>))
 Declaration(Class(<http://purl.obolibrary.org/obo/FOODON_00003237>))
+Declaration(Class(<http://purl.obolibrary.org/obo/FOODON_00003297>))
 Declaration(Class(<http://purl.obolibrary.org/obo/FOODON_00003314>))
-Declaration(Class(<http://purl.obolibrary.org/obo/FOODON_00003394>))
+Declaration(Class(<http://purl.obolibrary.org/obo/FOODON_00003426>))
+Declaration(Class(<http://purl.obolibrary.org/obo/FOODON_00003459>))
+Declaration(Class(<http://purl.obolibrary.org/obo/FOODON_00003473>))
+Declaration(Class(<http://purl.obolibrary.org/obo/FOODON_00003789>))
+Declaration(Class(<http://purl.obolibrary.org/obo/FOODON_00003884>))
 Declaration(Class(<http://purl.obolibrary.org/obo/FOODON_00003950>))
 Declaration(Class(<http://purl.obolibrary.org/obo/FOODON_00004235>))
-Declaration(Class(<http://purl.obolibrary.org/obo/FOODON_00004639>))
+Declaration(Class(<http://purl.obolibrary.org/obo/FOODON_00004348>))
+Declaration(Class(<http://purl.obolibrary.org/obo/FOODON_00004510>))
 Declaration(Class(<http://purl.obolibrary.org/obo/FOODON_00004695>))
 Declaration(Class(<http://purl.obolibrary.org/obo/FOODON_00004696>))
 Declaration(Class(<http://purl.obolibrary.org/obo/FOODON_00004697>))
@@ -44,8 +99,159 @@ Declaration(Class(<http://purl.obolibrary.org/obo/FOODON_00004708>))
 Declaration(Class(<http://purl.obolibrary.org/obo/FOODON_00004711>))
 Declaration(Class(<http://purl.obolibrary.org/obo/FOODON_00004712>))
 Declaration(Class(<http://purl.obolibrary.org/obo/FOODON_00004713>))
+Declaration(Class(<http://purl.obolibrary.org/obo/FOODON_00005243>))
+Declaration(Class(<http://purl.obolibrary.org/obo/FOODON_00005281>))
+Declaration(Class(<http://purl.obolibrary.org/obo/FOODON_00005438>))
+Declaration(Class(<http://purl.obolibrary.org/obo/FOODON_00005439>))
+Declaration(Class(<http://purl.obolibrary.org/obo/FOODON_00005440>))
+Declaration(Class(<http://purl.obolibrary.org/obo/FOODON_00005441>))
+Declaration(Class(<http://purl.obolibrary.org/obo/FOODON_00005443>))
+Declaration(Class(<http://purl.obolibrary.org/obo/FOODON_00005444>))
+Declaration(Class(<http://purl.obolibrary.org/obo/FOODON_00005445>))
+Declaration(Class(<http://purl.obolibrary.org/obo/FOODON_00005446>))
+Declaration(Class(<http://purl.obolibrary.org/obo/FOODON_00005447>))
+Declaration(Class(<http://purl.obolibrary.org/obo/FOODON_00005448>))
+Declaration(Class(<http://purl.obolibrary.org/obo/FOODON_00005449>))
+Declaration(Class(<http://purl.obolibrary.org/obo/FOODON_00005454>))
+Declaration(Class(<http://purl.obolibrary.org/obo/FOODON_00005455>))
+Declaration(Class(<http://purl.obolibrary.org/obo/FOODON_00005456>))
+Declaration(Class(<http://purl.obolibrary.org/obo/FOODON_00005457>))
+Declaration(Class(<http://purl.obolibrary.org/obo/FOODON_00005458>))
+Declaration(Class(<http://purl.obolibrary.org/obo/FOODON_00005459>))
+Declaration(Class(<http://purl.obolibrary.org/obo/FOODON_00005460>))
+Declaration(Class(<http://purl.obolibrary.org/obo/FOODON_00005461>))
+Declaration(Class(<http://purl.obolibrary.org/obo/FOODON_00005462>))
+Declaration(Class(<http://purl.obolibrary.org/obo/FOODON_00005463>))
+Declaration(Class(<http://purl.obolibrary.org/obo/FOODON_00005464>))
+Declaration(Class(<http://purl.obolibrary.org/obo/FOODON_00005465>))
+Declaration(Class(<http://purl.obolibrary.org/obo/FOODON_00005467>))
+Declaration(Class(<http://purl.obolibrary.org/obo/FOODON_00005468>))
+Declaration(Class(<http://purl.obolibrary.org/obo/FOODON_00005469>))
+Declaration(Class(<http://purl.obolibrary.org/obo/FOODON_00005470>))
+Declaration(Class(<http://purl.obolibrary.org/obo/FOODON_00005471>))
+Declaration(Class(<http://purl.obolibrary.org/obo/FOODON_00005472>))
+Declaration(Class(<http://purl.obolibrary.org/obo/FOODON_00005473>))
+Declaration(Class(<http://purl.obolibrary.org/obo/FOODON_00005474>))
+Declaration(Class(<http://purl.obolibrary.org/obo/FOODON_00005475>))
+Declaration(Class(<http://purl.obolibrary.org/obo/FOODON_00005476>))
+Declaration(Class(<http://purl.obolibrary.org/obo/FOODON_00005477>))
+Declaration(Class(<http://purl.obolibrary.org/obo/FOODON_00005478>))
+Declaration(Class(<http://purl.obolibrary.org/obo/FOODON_00005479>))
+Declaration(Class(<http://purl.obolibrary.org/obo/FOODON_00005480>))
+Declaration(Class(<http://purl.obolibrary.org/obo/FOODON_00005481>))
+Declaration(Class(<http://purl.obolibrary.org/obo/FOODON_00005482>))
+Declaration(Class(<http://purl.obolibrary.org/obo/FOODON_00005483>))
+Declaration(Class(<http://purl.obolibrary.org/obo/FOODON_00005484>))
+Declaration(Class(<http://purl.obolibrary.org/obo/FOODON_00005485>))
+Declaration(Class(<http://purl.obolibrary.org/obo/FOODON_00005486>))
+Declaration(Class(<http://purl.obolibrary.org/obo/FOODON_00005487>))
+Declaration(Class(<http://purl.obolibrary.org/obo/FOODON_00005488>))
+Declaration(Class(<http://purl.obolibrary.org/obo/FOODON_00005489>))
+Declaration(Class(<http://purl.obolibrary.org/obo/FOODON_00005490>))
+Declaration(Class(<http://purl.obolibrary.org/obo/FOODON_00005491>))
+Declaration(Class(<http://purl.obolibrary.org/obo/FOODON_00005492>))
+Declaration(Class(<http://purl.obolibrary.org/obo/FOODON_00005493>))
+Declaration(Class(<http://purl.obolibrary.org/obo/FOODON_00005494>))
+Declaration(Class(<http://purl.obolibrary.org/obo/FOODON_00005495>))
+Declaration(Class(<http://purl.obolibrary.org/obo/FOODON_00005496>))
+Declaration(Class(<http://purl.obolibrary.org/obo/FOODON_00005497>))
+Declaration(Class(<http://purl.obolibrary.org/obo/FOODON_00005498>))
+Declaration(Class(<http://purl.obolibrary.org/obo/FOODON_00005500>))
+Declaration(Class(<http://purl.obolibrary.org/obo/FOODON_00005503>))
+Declaration(Class(<http://purl.obolibrary.org/obo/FOODON_00005504>))
+Declaration(Class(<http://purl.obolibrary.org/obo/FOODON_00005505>))
+Declaration(Class(<http://purl.obolibrary.org/obo/FOODON_00005506>))
+Declaration(Class(<http://purl.obolibrary.org/obo/FOODON_00005507>))
+Declaration(Class(<http://purl.obolibrary.org/obo/FOODON_00005508>))
+Declaration(Class(<http://purl.obolibrary.org/obo/FOODON_00005509>))
+Declaration(Class(<http://purl.obolibrary.org/obo/FOODON_00005510>))
+Declaration(Class(<http://purl.obolibrary.org/obo/FOODON_00005511>))
+Declaration(Class(<http://purl.obolibrary.org/obo/FOODON_00005512>))
+Declaration(Class(<http://purl.obolibrary.org/obo/FOODON_00005513>))
+Declaration(Class(<http://purl.obolibrary.org/obo/FOODON_00005514>))
+Declaration(Class(<http://purl.obolibrary.org/obo/FOODON_00005515>))
+Declaration(Class(<http://purl.obolibrary.org/obo/FOODON_00005516>))
+Declaration(Class(<http://purl.obolibrary.org/obo/FOODON_00005517>))
+Declaration(Class(<http://purl.obolibrary.org/obo/FOODON_00005518>))
+Declaration(Class(<http://purl.obolibrary.org/obo/FOODON_00005519>))
+Declaration(Class(<http://purl.obolibrary.org/obo/FOODON_00005520>))
+Declaration(Class(<http://purl.obolibrary.org/obo/FOODON_00005521>))
+Declaration(Class(<http://purl.obolibrary.org/obo/FOODON_00005523>))
+Declaration(Class(<http://purl.obolibrary.org/obo/FOODON_00005524>))
+Declaration(Class(<http://purl.obolibrary.org/obo/FOODON_00005525>))
+Declaration(Class(<http://purl.obolibrary.org/obo/FOODON_00005526>))
+Declaration(Class(<http://purl.obolibrary.org/obo/FOODON_00005527>))
+Declaration(Class(<http://purl.obolibrary.org/obo/FOODON_00005528>))
+Declaration(Class(<http://purl.obolibrary.org/obo/FOODON_00005529>))
+Declaration(Class(<http://purl.obolibrary.org/obo/FOODON_00005530>))
+Declaration(Class(<http://purl.obolibrary.org/obo/FOODON_00005531>))
+Declaration(Class(<http://purl.obolibrary.org/obo/FOODON_00005532>))
+Declaration(Class(<http://purl.obolibrary.org/obo/FOODON_00005533>))
+Declaration(Class(<http://purl.obolibrary.org/obo/FOODON_00005534>))
+Declaration(Class(<http://purl.obolibrary.org/obo/FOODON_00005535>))
+Declaration(Class(<http://purl.obolibrary.org/obo/FOODON_00005536>))
+Declaration(Class(<http://purl.obolibrary.org/obo/FOODON_00005537>))
+Declaration(Class(<http://purl.obolibrary.org/obo/FOODON_00005538>))
+Declaration(Class(<http://purl.obolibrary.org/obo/FOODON_00005539>))
+Declaration(Class(<http://purl.obolibrary.org/obo/FOODON_00005540>))
+Declaration(Class(<http://purl.obolibrary.org/obo/FOODON_00005541>))
+Declaration(Class(<http://purl.obolibrary.org/obo/FOODON_00005542>))
+Declaration(Class(<http://purl.obolibrary.org/obo/FOODON_00005543>))
+Declaration(Class(<http://purl.obolibrary.org/obo/FOODON_00005544>))
+Declaration(Class(<http://purl.obolibrary.org/obo/FOODON_00005545>))
+Declaration(Class(<http://purl.obolibrary.org/obo/FOODON_00005546>))
+Declaration(Class(<http://purl.obolibrary.org/obo/FOODON_00005547>))
+Declaration(Class(<http://purl.obolibrary.org/obo/FOODON_00005548>))
+Declaration(Class(<http://purl.obolibrary.org/obo/FOODON_00005549>))
+Declaration(Class(<http://purl.obolibrary.org/obo/FOODON_00005550>))
+Declaration(Class(<http://purl.obolibrary.org/obo/FOODON_00005552>))
+Declaration(Class(<http://purl.obolibrary.org/obo/FOODON_00005553>))
+Declaration(Class(<http://purl.obolibrary.org/obo/FOODON_00005554>))
+Declaration(Class(<http://purl.obolibrary.org/obo/FOODON_00005555>))
+Declaration(Class(<http://purl.obolibrary.org/obo/FOODON_00005556>))
+Declaration(Class(<http://purl.obolibrary.org/obo/FOODON_00005557>))
+Declaration(Class(<http://purl.obolibrary.org/obo/FOODON_00005558>))
+Declaration(Class(<http://purl.obolibrary.org/obo/FOODON_00005559>))
+Declaration(Class(<http://purl.obolibrary.org/obo/FOODON_00005560>))
+Declaration(Class(<http://purl.obolibrary.org/obo/FOODON_00005561>))
+Declaration(Class(<http://purl.obolibrary.org/obo/FOODON_00005562>))
+Declaration(Class(<http://purl.obolibrary.org/obo/FOODON_00005563>))
+Declaration(Class(<http://purl.obolibrary.org/obo/FOODON_00005564>))
+Declaration(Class(<http://purl.obolibrary.org/obo/FOODON_00005565>))
+Declaration(Class(<http://purl.obolibrary.org/obo/FOODON_00005567>))
+Declaration(Class(<http://purl.obolibrary.org/obo/FOODON_00005568>))
+Declaration(Class(<http://purl.obolibrary.org/obo/FOODON_00005569>))
+Declaration(Class(<http://purl.obolibrary.org/obo/FOODON_00005570>))
+Declaration(Class(<http://purl.obolibrary.org/obo/FOODON_00005571>))
+Declaration(Class(<http://purl.obolibrary.org/obo/FOODON_00005572>))
+Declaration(Class(<http://purl.obolibrary.org/obo/FOODON_00005573>))
+Declaration(Class(<http://purl.obolibrary.org/obo/FOODON_00005574>))
+Declaration(Class(<http://purl.obolibrary.org/obo/FOODON_00005575>))
+Declaration(Class(<http://purl.obolibrary.org/obo/FOODON_00005576>))
+Declaration(Class(<http://purl.obolibrary.org/obo/FOODON_00005577>))
+Declaration(Class(<http://purl.obolibrary.org/obo/FOODON_00005578>))
+Declaration(Class(<http://purl.obolibrary.org/obo/FOODON_00005579>))
+Declaration(Class(<http://purl.obolibrary.org/obo/FOODON_00005580>))
+Declaration(Class(<http://purl.obolibrary.org/obo/FOODON_00005581>))
+Declaration(Class(<http://purl.obolibrary.org/obo/FOODON_00005582>))
+Declaration(Class(<http://purl.obolibrary.org/obo/FOODON_00005583>))
+Declaration(Class(<http://purl.obolibrary.org/obo/FOODON_00005584>))
+Declaration(Class(<http://purl.obolibrary.org/obo/FOODON_00005585>))
+Declaration(Class(<http://purl.obolibrary.org/obo/FOODON_00005586>))
+Declaration(Class(<http://purl.obolibrary.org/obo/FOODON_00005587>))
+Declaration(Class(<http://purl.obolibrary.org/obo/FOODON_00005588>))
+Declaration(Class(<http://purl.obolibrary.org/obo/FOODON_00005589>))
+Declaration(Class(<http://purl.obolibrary.org/obo/FOODON_00005590>))
+Declaration(Class(<http://purl.obolibrary.org/obo/FOODON_00005591>))
+Declaration(Class(<http://purl.obolibrary.org/obo/FOODON_00005592>))
+Declaration(Class(<http://purl.obolibrary.org/obo/FOODON_00005593>))
+Declaration(Class(<http://purl.obolibrary.org/obo/FOODON_00005594>))
+Declaration(Class(<http://purl.obolibrary.org/obo/FOODON_00005595>))
+Declaration(Class(<http://purl.obolibrary.org/obo/FOODON_00005596>))
+Declaration(Class(<http://purl.obolibrary.org/obo/FOODON_02010310>))
 Declaration(Class(<http://purl.obolibrary.org/obo/FOODON_02020120>))
 Declaration(Class(<http://purl.obolibrary.org/obo/FOODON_02020121>))
+Declaration(Class(<http://purl.obolibrary.org/obo/FOODON_02021563>))
 Declaration(Class(<http://purl.obolibrary.org/obo/FOODON_03000280>))
 Declaration(Class(<http://purl.obolibrary.org/obo/FOODON_03000281>))
 Declaration(Class(<http://purl.obolibrary.org/obo/FOODON_03000282>))
@@ -63,6 +269,7 @@ Declaration(Class(<http://purl.obolibrary.org/obo/FOODON_03000293>))
 Declaration(Class(<http://purl.obolibrary.org/obo/FOODON_03000294>))
 Declaration(Class(<http://purl.obolibrary.org/obo/FOODON_03000295>))
 Declaration(Class(<http://purl.obolibrary.org/obo/FOODON_03000296>))
+Declaration(Class(<http://purl.obolibrary.org/obo/FOODON_03000438>))
 Declaration(Class(<http://purl.obolibrary.org/obo/FOODON_03000463>))
 Declaration(Class(<http://purl.obolibrary.org/obo/FOODON_03000464>))
 Declaration(Class(<http://purl.obolibrary.org/obo/FOODON_03000465>))
@@ -92,51 +299,110 @@ Declaration(Class(<http://purl.obolibrary.org/obo/FOODON_03000488>))
 Declaration(Class(<http://purl.obolibrary.org/obo/FOODON_03000489>))
 Declaration(Class(<http://purl.obolibrary.org/obo/FOODON_03000490>))
 Declaration(Class(<http://purl.obolibrary.org/obo/FOODON_03000491>))
+Declaration(Class(<http://purl.obolibrary.org/obo/FOODON_03301003>))
+Declaration(Class(<http://purl.obolibrary.org/obo/FOODON_03301085>))
+Declaration(Class(<http://purl.obolibrary.org/obo/FOODON_03301087>))
+Declaration(Class(<http://purl.obolibrary.org/obo/FOODON_03301127>))
+Declaration(Class(<http://purl.obolibrary.org/obo/FOODON_03301151>))
+Declaration(Class(<http://purl.obolibrary.org/obo/FOODON_03301155>))
+Declaration(Class(<http://purl.obolibrary.org/obo/FOODON_03301165>))
 Declaration(Class(<http://purl.obolibrary.org/obo/FOODON_03301186>))
+Declaration(Class(<http://purl.obolibrary.org/obo/FOODON_03301258>))
+Declaration(Class(<http://purl.obolibrary.org/obo/FOODON_03301296>))
+Declaration(Class(<http://purl.obolibrary.org/obo/FOODON_03301300>))
 Declaration(Class(<http://purl.obolibrary.org/obo/FOODON_03301314>))
+Declaration(Class(<http://purl.obolibrary.org/obo/FOODON_03301505>))
 Declaration(Class(<http://purl.obolibrary.org/obo/FOODON_03301605>))
+Declaration(Class(<http://purl.obolibrary.org/obo/FOODON_03301657>))
 Declaration(Class(<http://purl.obolibrary.org/obo/FOODON_03302116>))
+Declaration(Class(<http://purl.obolibrary.org/obo/FOODON_03302142>))
+Declaration(Class(<http://purl.obolibrary.org/obo/FOODON_03302179>))
 Declaration(Class(<http://purl.obolibrary.org/obo/FOODON_03302502>))
 Declaration(Class(<http://purl.obolibrary.org/obo/FOODON_03302508>))
 Declaration(Class(<http://purl.obolibrary.org/obo/FOODON_03302515>))
+Declaration(Class(<http://purl.obolibrary.org/obo/FOODON_03302841>))
+Declaration(Class(<http://purl.obolibrary.org/obo/FOODON_03302842>))
+Declaration(Class(<http://purl.obolibrary.org/obo/FOODON_03302906>))
 Declaration(Class(<http://purl.obolibrary.org/obo/FOODON_03302908>))
 Declaration(Class(<http://purl.obolibrary.org/obo/FOODON_03303047>))
+Declaration(Class(<http://purl.obolibrary.org/obo/FOODON_03303084>))
+Declaration(Class(<http://purl.obolibrary.org/obo/FOODON_03303088>))
+Declaration(Class(<http://purl.obolibrary.org/obo/FOODON_03303225>))
 Declaration(Class(<http://purl.obolibrary.org/obo/FOODON_03303517>))
 Declaration(Class(<http://purl.obolibrary.org/obo/FOODON_03303578>))
+Declaration(Class(<http://purl.obolibrary.org/obo/FOODON_03304038>))
 Declaration(Class(<http://purl.obolibrary.org/obo/FOODON_03304793>))
+Declaration(Class(<http://purl.obolibrary.org/obo/FOODON_03305064>))
 Declaration(Class(<http://purl.obolibrary.org/obo/FOODON_03305252>))
+Declaration(Class(<http://purl.obolibrary.org/obo/FOODON_03305428>))
 Declaration(Class(<http://purl.obolibrary.org/obo/FOODON_03305509>))
+Declaration(Class(<http://purl.obolibrary.org/obo/FOODON_03305642>))
+Declaration(Class(<http://purl.obolibrary.org/obo/FOODON_03305751>))
+Declaration(Class(<http://purl.obolibrary.org/obo/FOODON_03305754>))
 Declaration(Class(<http://purl.obolibrary.org/obo/FOODON_03306123>))
+Declaration(Class(<http://purl.obolibrary.org/obo/FOODON_03306160>))
+Declaration(Class(<http://purl.obolibrary.org/obo/FOODON_03306503>))
+Declaration(Class(<http://purl.obolibrary.org/obo/FOODON_03306944>))
+Declaration(Class(<http://purl.obolibrary.org/obo/FOODON_03307345>))
+Declaration(Class(<http://purl.obolibrary.org/obo/FOODON_03309540>))
 Declaration(Class(<http://purl.obolibrary.org/obo/FOODON_03309664>))
+Declaration(Class(<http://purl.obolibrary.org/obo/FOODON_03309762>))
+Declaration(Class(<http://purl.obolibrary.org/obo/FOODON_03309766>))
+Declaration(Class(<http://purl.obolibrary.org/obo/FOODON_03310185>))
+Declaration(Class(<http://purl.obolibrary.org/obo/FOODON_03310257>))
+Declaration(Class(<http://purl.obolibrary.org/obo/FOODON_03310351>))
+Declaration(Class(<http://purl.obolibrary.org/obo/FOODON_03310368>))
+Declaration(Class(<http://purl.obolibrary.org/obo/FOODON_03310387>))
+Declaration(Class(<http://purl.obolibrary.org/obo/FOODON_03310478>))
+Declaration(Class(<http://purl.obolibrary.org/obo/FOODON_03310546>))
+Declaration(Class(<http://purl.obolibrary.org/obo/FOODON_03310553>))
+Declaration(Class(<http://purl.obolibrary.org/obo/FOODON_03310609>))
+Declaration(Class(<http://purl.obolibrary.org/obo/FOODON_03310649>))
 Declaration(Class(<http://purl.obolibrary.org/obo/FOODON_03310780>))
+Declaration(Class(<http://purl.obolibrary.org/obo/FOODON_03310833>))
 Declaration(Class(<http://purl.obolibrary.org/obo/FOODON_03311533>))
+Declaration(Class(<http://purl.obolibrary.org/obo/FOODON_03312031>))
+Declaration(Class(<http://purl.obolibrary.org/obo/FOODON_03312067>))
+Declaration(Class(<http://purl.obolibrary.org/obo/FOODON_03312068>))
+Declaration(Class(<http://purl.obolibrary.org/obo/FOODON_03315157>))
+Declaration(Class(<http://purl.obolibrary.org/obo/FOODON_03315302>))
 Declaration(Class(<http://purl.obolibrary.org/obo/FOODON_03315521>))
+Declaration(Class(<http://purl.obolibrary.org/obo/FOODON_03315658>))
+Declaration(Class(<http://purl.obolibrary.org/obo/FOODON_03316462>))
+Declaration(Class(<http://purl.obolibrary.org/obo/FOODON_03316908>))
+Declaration(Class(<http://purl.obolibrary.org/obo/FOODON_03317331>))
+Declaration(Class(<http://purl.obolibrary.org/obo/FOODON_03401305>))
+Declaration(Class(<http://purl.obolibrary.org/obo/FOODON_03411223>))
+Declaration(Class(<http://purl.obolibrary.org/obo/FOODON_03411237>))
+Declaration(Class(<http://purl.obolibrary.org/obo/FOODON_03411331>))
+Declaration(Class(<http://purl.obolibrary.org/obo/FOODON_03411506>))
 Declaration(Class(<http://purl.obolibrary.org/obo/PO_0030104>))
+Declaration(ObjectProperty(<http://purl.obolibrary.org/obo/RO_0000086>))
+Declaration(ObjectProperty(<http://purl.obolibrary.org/obo/RO_0001000>))
 Declaration(AnnotationProperty(<http://purl.obolibrary.org/obo/IAO_0000115>))
 Declaration(AnnotationProperty(<http://purl.obolibrary.org/obo/IAO_0000119>))
 Declaration(AnnotationProperty(<http://purl.org/dc/terms/contributor>))
 Declaration(AnnotationProperty(<http://purl.org/dc/terms/date>))
+Declaration(AnnotationProperty(<http://www.geneontology.org/formats/oboInOwl#hasDbXref>))
 Declaration(AnnotationProperty(<http://www.geneontology.org/formats/oboInOwl#hasExactSynonym>))
+
 
 
 ############################
 #   Classes
 ############################
 
-# Class: <http://purl.obolibrary.org/obo/FOODON_00004639> (barley seed (cooked))
+# Class: <http://purl.obolibrary.org/obo/FOODON_00001277> (orange juice (unpasteurized))
 
-AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000115> <http://purl.obolibrary.org/obo/FOODON_00004639> "A barley seed which is cooked."@en)
-AnnotationAssertion(<http://purl.org/dc/terms/contributor> <http://purl.obolibrary.org/obo/FOODON_00004639> " https://orcid.org/0000-0002-0995-02788 ")
-AnnotationAssertion(<http://purl.org/dc/terms/contributor> <http://purl.obolibrary.org/obo/FOODON_00004639> " https://orcid.org/0000-0002-8461-9745 ")
-AnnotationAssertion(<http://purl.org/dc/terms/contributor> <http://purl.obolibrary.org/obo/FOODON_00004639> " https://orcid.org/0000-0002-8844-9165 ")
-AnnotationAssertion(<http://purl.org/dc/terms/contributor> <http://purl.obolibrary.org/obo/FOODON_00004639> " https://orcid.org/0000-0003-3653-3805 ")
-AnnotationAssertion(<http://purl.org/dc/terms/contributor> <http://purl.obolibrary.org/obo/FOODON_00004639> "https://orcid.org/0000-0001-5275-8866 ")
-AnnotationAssertion(rdfs:label <http://purl.obolibrary.org/obo/FOODON_00004639> "barley seed (cooked)"@en)
-SubClassOf(<http://purl.obolibrary.org/obo/FOODON_00004639> <http://purl.obolibrary.org/obo/FOODON_00003394>)
+AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000115> <http://purl.obolibrary.org/obo/FOODON_00001277> "Orange juice that has not undergone pasteurization."@en)
+AnnotationAssertion(<http://purl.org/dc/terms/contributor> <http://purl.obolibrary.org/obo/FOODON_00001277> "https://orcid.org/0000-0001-5275-8866")
+AnnotationAssertion(rdfs:label <http://purl.obolibrary.org/obo/FOODON_00001277> "orange juice (unpasteurized)"@en)
+SubClassOf(<http://purl.obolibrary.org/obo/FOODON_00001277> <http://purl.obolibrary.org/obo/FOODON_00001001>)
 
 # Class: <http://purl.obolibrary.org/obo/FOODON_00004695> (white bean flatbread)
 
 AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000115> <http://purl.obolibrary.org/obo/FOODON_00004695> "A flatbread made with dried white beans."@en)
+AnnotationAssertion(<http://purl.org/dc/terms/contributor> <http://purl.obolibrary.org/obo/FOODON_00004695> "https://orcid.org/0000-0001-5275-8866")
 AnnotationAssertion(rdfs:label <http://purl.obolibrary.org/obo/FOODON_00004695> "white bean flatbread"@en)
 SubClassOf(<http://purl.obolibrary.org/obo/FOODON_00004695> <http://purl.obolibrary.org/obo/FOODON_00003000>)
 SubClassOf(<http://purl.obolibrary.org/obo/FOODON_00004695> <http://purl.obolibrary.org/obo/FOODON_00003314>)
@@ -144,6 +410,7 @@ SubClassOf(<http://purl.obolibrary.org/obo/FOODON_00004695> <http://purl.obolibr
 # Class: <http://purl.obolibrary.org/obo/FOODON_00004696> (elk stew meat)
 
 AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000115> <http://purl.obolibrary.org/obo/FOODON_00004696> "Chopped elk meat suitable for cooking into a stew."@en)
+AnnotationAssertion(<http://purl.org/dc/terms/contributor> <http://purl.obolibrary.org/obo/FOODON_00004696> "https://orcid.org/0000-0001-5275-8866")
 AnnotationAssertion(rdfs:label <http://purl.obolibrary.org/obo/FOODON_00004696> "elk stew meat"@en)
 SubClassOf(<http://purl.obolibrary.org/obo/FOODON_00004696> <http://purl.obolibrary.org/obo/FOODON_00001598>)
 
@@ -151,6 +418,7 @@ SubClassOf(<http://purl.obolibrary.org/obo/FOODON_00004696> <http://purl.obolibr
 
 AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000115> <http://purl.obolibrary.org/obo/FOODON_00004697> "A food product that is prepared by coagulating soy milk and then pressing the resulting curds into solid white blocks of varying softness: silken, soft, firm, extra firm."@en)
 AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000119> <http://purl.obolibrary.org/obo/FOODON_00004697> "https://en.wikipedia.org/wiki/Tofu")
+AnnotationAssertion(<http://purl.org/dc/terms/contributor> <http://purl.obolibrary.org/obo/FOODON_00004697> "https://orcid.org/0000-0001-5275-8866")
 AnnotationAssertion(<http://www.geneontology.org/formats/oboInOwl#hasExactSynonym> <http://purl.obolibrary.org/obo/FOODON_00004697> "bean curd"@en)
 AnnotationAssertion(rdfs:label <http://purl.obolibrary.org/obo/FOODON_00004697> "tofu"@en)
 SubClassOf(<http://purl.obolibrary.org/obo/FOODON_00004697> <http://purl.obolibrary.org/obo/FOODON_03309664>)
@@ -159,6 +427,7 @@ SubClassOf(<http://purl.obolibrary.org/obo/FOODON_00004697> <http://purl.obolibr
 
 AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000115> <http://purl.obolibrary.org/obo/FOODON_00004698> "A tofu that has less water than firm tofu."@en)
 AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000119> <http://purl.obolibrary.org/obo/FOODON_00004698> "https://en.wikipedia.org/wiki/Tofu")
+AnnotationAssertion(<http://purl.org/dc/terms/contributor> <http://purl.obolibrary.org/obo/FOODON_00004698> "https://orcid.org/0000-0001-5275-8866")
 AnnotationAssertion(rdfs:label <http://purl.obolibrary.org/obo/FOODON_00004698> "extra firm tofu"@en)
 SubClassOf(<http://purl.obolibrary.org/obo/FOODON_00004698> <http://purl.obolibrary.org/obo/FOODON_00004697>)
 
@@ -166,6 +435,7 @@ SubClassOf(<http://purl.obolibrary.org/obo/FOODON_00004698> <http://purl.obolibr
 
 AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000115> <http://purl.obolibrary.org/obo/FOODON_00004699> "An extra firm tofu that is raw."@en)
 AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000119> <http://purl.obolibrary.org/obo/FOODON_00004699> "https://en.wikipedia.org/wiki/Tofu")
+AnnotationAssertion(<http://purl.org/dc/terms/contributor> <http://purl.obolibrary.org/obo/FOODON_00004699> "https://orcid.org/0000-0001-5275-8866")
 AnnotationAssertion(rdfs:label <http://purl.obolibrary.org/obo/FOODON_00004699> "extra firm tofu (raw)"@en)
 SubClassOf(<http://purl.obolibrary.org/obo/FOODON_00004699> <http://purl.obolibrary.org/obo/FOODON_00004698>)
 
@@ -173,73 +443,1044 @@ SubClassOf(<http://purl.obolibrary.org/obo/FOODON_00004699> <http://purl.obolibr
 
 AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000115> <http://purl.obolibrary.org/obo/FOODON_00004700> "An extra firm tofu which has been sauteed."@en)
 AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000119> <http://purl.obolibrary.org/obo/FOODON_00004700> "https://en.wikipedia.org/wiki/Tofu")
+AnnotationAssertion(<http://purl.org/dc/terms/contributor> <http://purl.obolibrary.org/obo/FOODON_00004700> "https://orcid.org/0000-0001-5275-8866")
 AnnotationAssertion(rdfs:label <http://purl.obolibrary.org/obo/FOODON_00004700> "extra firm tofu (sauteed)"@en)
 SubClassOf(<http://purl.obolibrary.org/obo/FOODON_00004700> <http://purl.obolibrary.org/obo/FOODON_00004698>)
 
 # Class: <http://purl.obolibrary.org/obo/FOODON_00004701> (farro food product)
 
 AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000115> <http://purl.obolibrary.org/obo/FOODON_00004701> "A food product that has farro as a defining ingredient."@en)
+AnnotationAssertion(<http://purl.org/dc/terms/contributor> <http://purl.obolibrary.org/obo/FOODON_00004701> "https://orcid.org/0000-0001-5275-8866")
 AnnotationAssertion(rdfs:label <http://purl.obolibrary.org/obo/FOODON_00004701> "farro food product"@en)
 SubClassOf(<http://purl.obolibrary.org/obo/FOODON_00004701> <http://purl.obolibrary.org/obo/FOODON_00001141>)
 
 # Class: <http://purl.obolibrary.org/obo/FOODON_00004702> (farro kernel)
 
 AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000115> <http://purl.obolibrary.org/obo/FOODON_00004702> "A caryopsis fruit of any of three hulled wheat species: spelt (Triticum spelta), emmer (Triticum dicoccum), and einkorn (Triticum monococcum)."@en)
-AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000115> <http://purl.obolibrary.org/obo/FOODON_00004702> "A farro kernel which is raw (not dried)."@en)
-AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000119> <http://purl.obolibrary.org/obo/FOODON_00004702> " https://www.wheatfoods.org/resources/wheat-facts/ancient-wheat-and-pseudo-grains/")
-AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000119> <http://purl.obolibrary.org/obo/FOODON_00004702> "https://en.wikipedia.org/wiki/Farro ")
+AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000119> <http://purl.obolibrary.org/obo/FOODON_00004702> "https://en.wikipedia.org/wiki/Farro")
+AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000119> <http://purl.obolibrary.org/obo/FOODON_00004702> "https://www.wheatfoods.org/resources/wheat-facts/ancient-wheat-and-pseudo-grains/")
+AnnotationAssertion(<http://purl.org/dc/terms/contributor> <http://purl.obolibrary.org/obo/FOODON_00004702> "https://orcid.org/0000-0001-5275-8866")
 AnnotationAssertion(rdfs:label <http://purl.obolibrary.org/obo/FOODON_00004702> "farro kernel"@en)
-AnnotationAssertion(rdfs:label <http://purl.obolibrary.org/obo/FOODON_00004702> "farro kernel (raw)"@en)
 SubClassOf(<http://purl.obolibrary.org/obo/FOODON_00004702> <http://purl.obolibrary.org/obo/FOODON_00003950>)
 SubClassOf(<http://purl.obolibrary.org/obo/FOODON_00004702> <http://purl.obolibrary.org/obo/FOODON_00004701>)
-SubClassOf(<http://purl.obolibrary.org/obo/FOODON_00004702> <http://purl.obolibrary.org/obo/FOODON_00004702>)
 SubClassOf(<http://purl.obolibrary.org/obo/FOODON_00004702> <http://purl.obolibrary.org/obo/PO_0030104>)
 
 # Class: <http://purl.obolibrary.org/obo/FOODON_00004703> (farro kernel (cooked))
 
 AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000115> <http://purl.obolibrary.org/obo/FOODON_00004703> "A farro kernel which is cooked."@en)
+AnnotationAssertion(<http://purl.org/dc/terms/contributor> <http://purl.obolibrary.org/obo/FOODON_00004703> "https://orcid.org/0000-0001-5275-8866")
 AnnotationAssertion(rdfs:label <http://purl.obolibrary.org/obo/FOODON_00004703> "farro kernel (cooked)"@en)
 SubClassOf(<http://purl.obolibrary.org/obo/FOODON_00004703> <http://purl.obolibrary.org/obo/FOODON_00004702>)
 
 # Class: <http://purl.obolibrary.org/obo/FOODON_00004704> (duck egg white (boiled))
 
 AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000115> <http://purl.obolibrary.org/obo/FOODON_00004704> "A duck egg white that has been boiled."@en)
+AnnotationAssertion(<http://purl.org/dc/terms/contributor> <http://purl.obolibrary.org/obo/FOODON_00004704> "https://orcid.org/0000-0001-5275-8866")
 AnnotationAssertion(rdfs:label <http://purl.obolibrary.org/obo/FOODON_00004704> "duck egg white (boiled)"@en)
 SubClassOf(<http://purl.obolibrary.org/obo/FOODON_00004704> <http://purl.obolibrary.org/obo/FOODON_02020120>)
 
 # Class: <http://purl.obolibrary.org/obo/FOODON_00004705> (duck egg yolk (boiled))
 
 AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000115> <http://purl.obolibrary.org/obo/FOODON_00004705> "A duck egg yolk that has been boiled."@en)
+AnnotationAssertion(<http://purl.org/dc/terms/contributor> <http://purl.obolibrary.org/obo/FOODON_00004705> "https://orcid.org/0000-0001-5275-8866")
 AnnotationAssertion(rdfs:label <http://purl.obolibrary.org/obo/FOODON_00004705> "duck egg yolk (boiled)"@en)
 SubClassOf(<http://purl.obolibrary.org/obo/FOODON_00004705> <http://purl.obolibrary.org/obo/FOODON_02020121>)
 
 # Class: <http://purl.obolibrary.org/obo/FOODON_00004706> (Monterey Jack cheese flavoured with chili flakes)
 
 AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000115> <http://purl.obolibrary.org/obo/FOODON_00004706> "A variant of monterey jack cheese that is flavoured with chili flakes."@en)
+AnnotationAssertion(<http://purl.org/dc/terms/contributor> <http://purl.obolibrary.org/obo/FOODON_00004706> "https://orcid.org/0000-0001-5275-8866")
 AnnotationAssertion(rdfs:label <http://purl.obolibrary.org/obo/FOODON_00004706> "Monterey Jack cheese flavoured with chili flakes"@en)
 SubClassOf(<http://purl.obolibrary.org/obo/FOODON_00004706> <http://purl.obolibrary.org/obo/FOODON_00004235>)
 
 # Class: <http://purl.obolibrary.org/obo/FOODON_00004708> (house cricket powder)
 
 AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000115> <http://purl.obolibrary.org/obo/FOODON_00004708> "A powder that is made from a house cricket."@en)
+AnnotationAssertion(<http://purl.org/dc/terms/contributor> <http://purl.obolibrary.org/obo/FOODON_00004708> "https://orcid.org/0000-0001-5275-8866")
 AnnotationAssertion(rdfs:label <http://purl.obolibrary.org/obo/FOODON_00004708> "house cricket powder"@en)
 SubClassOf(<http://purl.obolibrary.org/obo/FOODON_00004708> <http://purl.obolibrary.org/obo/FOODON_00004711>)
 
 # Class: <http://purl.obolibrary.org/obo/FOODON_00004711> (cricket powder)
 
 AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000115> <http://purl.obolibrary.org/obo/FOODON_00004711> "A powder that is made from a cricket."@en)
+AnnotationAssertion(<http://purl.org/dc/terms/contributor> <http://purl.obolibrary.org/obo/FOODON_00004711> "https://orcid.org/0000-0001-5275-8866")
 AnnotationAssertion(rdfs:label <http://purl.obolibrary.org/obo/FOODON_00004711> "cricket powder"@en)
 SubClassOf(<http://purl.obolibrary.org/obo/FOODON_00004711> <http://purl.obolibrary.org/obo/FOODON_00004713>)
 
 # Class: <http://purl.obolibrary.org/obo/FOODON_00004712> (jamaican cricket powder)
 
 AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000115> <http://purl.obolibrary.org/obo/FOODON_00004712> "A powder that is made from a jamaican cricket."@en)
+AnnotationAssertion(<http://purl.org/dc/terms/contributor> <http://purl.obolibrary.org/obo/FOODON_00004712> "https://orcid.org/0000-0001-5275-8866")
 AnnotationAssertion(rdfs:label <http://purl.obolibrary.org/obo/FOODON_00004712> "jamaican cricket powder"@en)
 SubClassOf(<http://purl.obolibrary.org/obo/FOODON_00004712> <http://purl.obolibrary.org/obo/FOODON_00004711>)
 
-# Class: <http://purl.obolibrary.org/obo/FOODON_00004713> (cricket food product)
+# Class: <http://purl.obolibrary.org/obo/FOODON_00005243> (black tea (steeped))
 
-SubClassOf(<http://purl.obolibrary.org/obo/FOODON_00004713> <http://purl.obolibrary.org/obo/FOODON_00001177>)
+AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000115> <http://purl.obolibrary.org/obo/FOODON_00005243> "Steeped tea made from fully oxidized black tea leaves (Camellia sinensis)"@en)
+AnnotationAssertion(<http://purl.org/dc/terms/contributor> <http://purl.obolibrary.org/obo/FOODON_00005243> "https://orcid.org/0000-0001-5275-8866")
+AnnotationAssertion(rdfs:label <http://purl.obolibrary.org/obo/FOODON_00005243> "black tea (steeped)"@en)
+SubClassOf(<http://purl.obolibrary.org/obo/FOODON_00005243> <http://purl.obolibrary.org/obo/FOODON_03310546>)
+
+# Class: <http://purl.obolibrary.org/obo/FOODON_00005281> (farro kernel (raw))
+
+AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000115> <http://purl.obolibrary.org/obo/FOODON_00005281> "A farro kernel which is raw (not dried)."@en)
+AnnotationAssertion(<http://purl.org/dc/terms/contributor> <http://purl.obolibrary.org/obo/FOODON_00005281> "https://orcid.org/0000-0001-5275-8866")
+AnnotationAssertion(rdfs:label <http://purl.obolibrary.org/obo/FOODON_00005281> "farro kernel (raw)"@en)
+SubClassOf(<http://purl.obolibrary.org/obo/FOODON_00005281> <http://purl.obolibrary.org/obo/FOODON_00004702>)
+
+# Class: <http://purl.obolibrary.org/obo/FOODON_00005438> (tofu (raw))
+
+AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000115> <http://purl.obolibrary.org/obo/FOODON_00005438> "A raw tofu"@en)
+AnnotationAssertion(rdfs:label <http://purl.obolibrary.org/obo/FOODON_00005438> "tofu (raw)"@en)
+EquivalentClasses(<http://purl.obolibrary.org/obo/FOODON_00005438> ObjectIntersectionOf(<http://purl.obolibrary.org/obo/FOODON_00004697> ObjectSomeValuesFrom(<http://purl.obolibrary.org/obo/RO_0000086> <http://purl.obolibrary.org/obo/FOODON_00004348>)))
+SubClassOf(<http://purl.obolibrary.org/obo/FOODON_00005438> <http://purl.obolibrary.org/obo/FOODON_00004697>)
+
+# Class: <http://purl.obolibrary.org/obo/FOODON_00005439> (acerola juice (unpasteurized))
+
+AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000115> <http://purl.obolibrary.org/obo/FOODON_00005439> "Acerola juice that has not undergone pasteurization."@en)
+AnnotationAssertion(rdfs:label <http://purl.obolibrary.org/obo/FOODON_00005439> "acerola juice (unpasteurized)"@en)
+SubClassOf(<http://purl.obolibrary.org/obo/FOODON_00005439> <http://purl.obolibrary.org/obo/FOODON_03305754>)
+
+# Class: <http://purl.obolibrary.org/obo/FOODON_00005440> (purple passion fruit juice (unpasteurized))
+
+AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000115> <http://purl.obolibrary.org/obo/FOODON_00005440> "Purple passion fruit juice that is raw."@en)
+AnnotationAssertion(<http://purl.org/dc/terms/contributor> <http://purl.obolibrary.org/obo/FOODON_00005440> "https://orcid.org/0000-0001-5275-8866")
+AnnotationAssertion(rdfs:label <http://purl.obolibrary.org/obo/FOODON_00005440> "purple passion fruit juice (unpasteurized)"@en)
+SubClassOf(<http://purl.obolibrary.org/obo/FOODON_00005440> <http://purl.obolibrary.org/obo/FOODON_00005467>)
+
+# Class: <http://purl.obolibrary.org/obo/FOODON_00005441> (pomegranate juice)
+
+AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000115> <http://purl.obolibrary.org/obo/FOODON_00005441> "A fruit juice made from pomegranate."@en)
+AnnotationAssertion(rdfs:label <http://purl.obolibrary.org/obo/FOODON_00005441> "pomegranate juice"@en)
+SubClassOf(<http://purl.obolibrary.org/obo/FOODON_00005441> <http://purl.obolibrary.org/obo/FOODON_00003065>)
+SubClassOf(<http://purl.obolibrary.org/obo/FOODON_00005441> <http://purl.obolibrary.org/obo/FOODON_03301296>)
+
+# Class: <http://purl.obolibrary.org/obo/FOODON_00005443> (green bean puree)
+
+AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000115> <http://purl.obolibrary.org/obo/FOODON_00005443> "Puree made from cooked green beans, that is blended to a smooth consistency."@en)
+AnnotationAssertion(rdfs:label <http://purl.obolibrary.org/obo/FOODON_00005443> "green bean puree"@en)
+SubClassOf(<http://purl.obolibrary.org/obo/FOODON_00005443> <http://purl.obolibrary.org/obo/FOODON_00001934>)
+
+# Class: <http://purl.obolibrary.org/obo/FOODON_00005444> (green tea (decaffeinated))
+
+AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000115> <http://purl.obolibrary.org/obo/FOODON_00005444> "Green tea that has most of its caffeine removed through a decaffeination process, while preserving its flavor, aroma, and other characteristic properties."@en)
+AnnotationAssertion(rdfs:label <http://purl.obolibrary.org/obo/FOODON_00005444> "green tea (decaffeinated)"@en)
+SubClassOf(<http://purl.obolibrary.org/obo/FOODON_00005444> <http://purl.obolibrary.org/obo/FOODON_03312068>)
+
+# Class: <http://purl.obolibrary.org/obo/FOODON_00005445> (moose stew)
+
+AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000115> <http://purl.obolibrary.org/obo/FOODON_00005445> "A stew made from moose meat."@en)
+AnnotationAssertion(rdfs:label <http://purl.obolibrary.org/obo/FOODON_00005445> "moose stew"@en)
+SubClassOf(<http://purl.obolibrary.org/obo/FOODON_00005445> <http://purl.obolibrary.org/obo/FOODON_00003140>)
+
+# Class: <http://purl.obolibrary.org/obo/FOODON_00005446> (acorn stew)
+
+AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000115> <http://purl.obolibrary.org/obo/FOODON_00005446> "A stew made from acorn."@en)
+AnnotationAssertion(rdfs:label <http://purl.obolibrary.org/obo/FOODON_00005446> "acorn stew"@en)
+SubClassOf(<http://purl.obolibrary.org/obo/FOODON_00005446> <http://purl.obolibrary.org/obo/FOODON_00003140>)
+
+# Class: <http://purl.obolibrary.org/obo/FOODON_00005447> (corn stew)
+
+AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000115> <http://purl.obolibrary.org/obo/FOODON_00005447> "A stew made from corn."@en)
+AnnotationAssertion(rdfs:label <http://purl.obolibrary.org/obo/FOODON_00005447> "corn stew"@en)
+SubClassOf(<http://purl.obolibrary.org/obo/FOODON_00005447> <http://purl.obolibrary.org/obo/FOODON_00003140>)
+
+# Class: <http://purl.obolibrary.org/obo/FOODON_00005448> (tennis bread)
+
+AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000115> <http://purl.obolibrary.org/obo/FOODON_00005448> "A type of bread that is often sweetened with ingredients like sugar, butter, and cinnamon, and may include additional flavorings such as dried fruit or nuts."@en)
+AnnotationAssertion(rdfs:label <http://purl.obolibrary.org/obo/FOODON_00005448> "tennis bread"@en)
+SubClassOf(<http://purl.obolibrary.org/obo/FOODON_00005448> <http://purl.obolibrary.org/obo/FOODON_03000288>)
+
+# Class: <http://purl.obolibrary.org/obo/FOODON_00005449> (coconut water)
+
+AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000115> <http://purl.obolibrary.org/obo/FOODON_00005449> "The naturally occurring liquid extracted from a young, green coconut."@en)
+AnnotationAssertion(rdfs:label <http://purl.obolibrary.org/obo/FOODON_00005449> "coconut water"@en)
+SubClassOf(<http://purl.obolibrary.org/obo/FOODON_00005449> <http://purl.obolibrary.org/obo/FOODON_03316908>)
+
+# Class: <http://purl.obolibrary.org/obo/FOODON_00005454> (beluga oil)
+
+AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000115> <http://purl.obolibrary.org/obo/FOODON_00005454> "Oil that is derived from beluga whale."@en)
+AnnotationAssertion(rdfs:label <http://purl.obolibrary.org/obo/FOODON_00005454> "beluga oil"@en)
+SubClassOf(<http://purl.obolibrary.org/obo/FOODON_00005454> <http://purl.obolibrary.org/obo/FOODON_00002345>)
+SubClassOf(<http://purl.obolibrary.org/obo/FOODON_00005454> <http://purl.obolibrary.org/obo/FOODON_03310387>)
+
+# Class: <http://purl.obolibrary.org/obo/FOODON_00005455> (passion fruit food product)
+
+AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000115> <http://purl.obolibrary.org/obo/FOODON_00005455> "A food product which derives from passion fruit"@en)
+AnnotationAssertion(rdfs:label <http://purl.obolibrary.org/obo/FOODON_00005455> "passion fruit food product"@en)
+SubClassOf(<http://purl.obolibrary.org/obo/FOODON_00005455> <http://purl.obolibrary.org/obo/FOODON_00002689>)
+
+# Class: <http://purl.obolibrary.org/obo/FOODON_00005456> (bearded seal oil)
+
+AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000115> <http://purl.obolibrary.org/obo/FOODON_00005456> "Oil that is derived from blubber of a bearded seal."@en)
+AnnotationAssertion(<http://purl.org/dc/terms/contributor> <http://purl.obolibrary.org/obo/FOODON_00005456> "https://orcid.org/0000-0001-5275-8866")
+AnnotationAssertion(rdfs:label <http://purl.obolibrary.org/obo/FOODON_00005456> "bearded seal oil"@en)
+SubClassOf(<http://purl.obolibrary.org/obo/FOODON_00005456> <http://purl.obolibrary.org/obo/FOODON_02021563>)
+SubClassOf(<http://purl.obolibrary.org/obo/FOODON_00005456> <http://purl.obolibrary.org/obo/FOODON_03310387>)
+
+# Class: <http://purl.obolibrary.org/obo/FOODON_00005457> (spotted seal oil)
+
+AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000115> <http://purl.obolibrary.org/obo/FOODON_00005457> "Oil that is derived from the blubber of a spotted seal."@en)
+AnnotationAssertion(<http://purl.org/dc/terms/contributor> <http://purl.obolibrary.org/obo/FOODON_00005457> "https://orcid.org/0000-0001-5275-8866")
+AnnotationAssertion(rdfs:label <http://purl.obolibrary.org/obo/FOODON_00005457> "spotted seal oil"@en)
+SubClassOf(<http://purl.obolibrary.org/obo/FOODON_00005457> <http://purl.obolibrary.org/obo/FOODON_02021563>)
+SubClassOf(<http://purl.obolibrary.org/obo/FOODON_00005457> <http://purl.obolibrary.org/obo/FOODON_03310387>)
+
+# Class: <http://purl.obolibrary.org/obo/FOODON_00005458> (walrus oil)
+
+AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000115> <http://purl.obolibrary.org/obo/FOODON_00005458> "Oil that is derived from the blubber of a walrus."@en)
+AnnotationAssertion(<http://purl.org/dc/terms/contributor> <http://purl.obolibrary.org/obo/FOODON_00005458> "https://orcid.org/0000-0001-5275-8866")
+AnnotationAssertion(rdfs:label <http://purl.obolibrary.org/obo/FOODON_00005458> "walrus oil"@en)
+SubClassOf(<http://purl.obolibrary.org/obo/FOODON_00005458> <http://purl.obolibrary.org/obo/FOODON_03310387>)
+
+# Class: <http://purl.obolibrary.org/obo/FOODON_00005459> (bowhead whale oil)
+
+AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000115> <http://purl.obolibrary.org/obo/FOODON_00005459> "Oil that is derived from the blubber of a bowhead whale."@en)
+AnnotationAssertion(<http://purl.org/dc/terms/contributor> <http://purl.obolibrary.org/obo/FOODON_00005459> "https://orcid.org/0000-0001-5275-8866")
+AnnotationAssertion(rdfs:label <http://purl.obolibrary.org/obo/FOODON_00005459> "bowhead whale oil"@en)
+SubClassOf(<http://purl.obolibrary.org/obo/FOODON_00005459> <http://purl.obolibrary.org/obo/FOODON_00002345>)
+SubClassOf(<http://purl.obolibrary.org/obo/FOODON_00005459> <http://purl.obolibrary.org/obo/FOODON_03310387>)
+
+# Class: <http://purl.obolibrary.org/obo/FOODON_00005460> (herring oil)
+
+AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000115> <http://purl.obolibrary.org/obo/FOODON_00005460> "Oil that is derived from herring."@en)
+AnnotationAssertion(<http://purl.org/dc/terms/contributor> <http://purl.obolibrary.org/obo/FOODON_00005460> "https://orcid.org/0000-0001-5275-8866")
+AnnotationAssertion(rdfs:label <http://purl.obolibrary.org/obo/FOODON_00005460> "herring oil"@en)
+SubClassOf(<http://purl.obolibrary.org/obo/FOODON_00005460> <http://purl.obolibrary.org/obo/FOODON_03306123>)
+
+# Class: <http://purl.obolibrary.org/obo/FOODON_00005461> (cocoa butter oil)
+
+AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000115> <http://purl.obolibrary.org/obo/FOODON_00005461> "Oil that is derived from the fat extracted from cocoa beans."@en)
+AnnotationAssertion(<http://purl.org/dc/terms/contributor> <http://purl.obolibrary.org/obo/FOODON_00005461> "https://orcid.org/0000-0001-5275-8866")
+AnnotationAssertion(rdfs:label <http://purl.obolibrary.org/obo/FOODON_00005461> "cocoa butter oil"@en)
+SubClassOf(<http://purl.obolibrary.org/obo/FOODON_00005461> <http://purl.obolibrary.org/obo/FOODON_03310387>)
+SubClassOf(<http://purl.obolibrary.org/obo/FOODON_00005461> <http://purl.obolibrary.org/obo/FOODON_03315302>)
+
+# Class: <http://purl.obolibrary.org/obo/FOODON_00005462> (tangerine juice (unpasteurized))
+
+AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000115> <http://purl.obolibrary.org/obo/FOODON_00005462> "Juice extracted from tangerines that has not undergone pasteurization."@en)
+AnnotationAssertion(<http://purl.org/dc/terms/contributor> <http://purl.obolibrary.org/obo/FOODON_00005462> "https://orcid.org/0000-0001-5275-8866")
+AnnotationAssertion(rdfs:label <http://purl.obolibrary.org/obo/FOODON_00005462> "tangerine juice (unpasteurized)"@en)
+SubClassOf(<http://purl.obolibrary.org/obo/FOODON_00005462> <http://purl.obolibrary.org/obo/FOODON_03305751>)
+
+# Class: <http://purl.obolibrary.org/obo/FOODON_00005463> (apple juice (unpasteurized))
+
+AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000115> <http://purl.obolibrary.org/obo/FOODON_00005463> "Apple juice that has not undergone pasteurization."@en)
+AnnotationAssertion(<http://purl.org/dc/terms/contributor> <http://purl.obolibrary.org/obo/FOODON_00005463> "https://orcid.org/0000-0001-5275-8866")
+AnnotationAssertion(rdfs:label <http://purl.obolibrary.org/obo/FOODON_00005463> "apple juice (unpasteurized)"@en)
+SubClassOf(<http://purl.obolibrary.org/obo/FOODON_00005463> <http://purl.obolibrary.org/obo/FOODON_00001059>)
+
+# Class: <http://purl.obolibrary.org/obo/FOODON_00005464> (lemon juice (unpasteurized))
+
+AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000115> <http://purl.obolibrary.org/obo/FOODON_00005464> "Lemon juice that has not undergone pasteurization."@en)
+AnnotationAssertion(<http://purl.org/dc/terms/contributor> <http://purl.obolibrary.org/obo/FOODON_00005464> "https://orcid.org/0000-0001-5275-8866")
+AnnotationAssertion(rdfs:label <http://purl.obolibrary.org/obo/FOODON_00005464> "lemon juice (unpasteurized)"@en)
+SubClassOf(<http://purl.obolibrary.org/obo/FOODON_00005464> <http://purl.obolibrary.org/obo/FOODON_03305428>)
+
+# Class: <http://purl.obolibrary.org/obo/FOODON_00005465> (lime juice (unpasteurized))
+
+AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000115> <http://purl.obolibrary.org/obo/FOODON_00005465> "Lime juice that has not undergone pasteurization."@en)
+AnnotationAssertion(<http://purl.org/dc/terms/contributor> <http://purl.obolibrary.org/obo/FOODON_00005465> "https://orcid.org/0000-0001-5275-8866")
+AnnotationAssertion(rdfs:label <http://purl.obolibrary.org/obo/FOODON_00005465> "lime juice (unpasteurized)"@en)
+SubClassOf(<http://purl.obolibrary.org/obo/FOODON_00005465> <http://purl.obolibrary.org/obo/FOODON_03306160>)
+
+# Class: <http://purl.obolibrary.org/obo/FOODON_00005467> (purple passion fruit juice)
+
+AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000115> <http://purl.obolibrary.org/obo/FOODON_00005467> "Fruit juice which derives from purple passion fruit."@en)
+AnnotationAssertion(rdfs:label <http://purl.obolibrary.org/obo/FOODON_00005467> "purple passion fruit juice"@en)
+SubClassOf(<http://purl.obolibrary.org/obo/FOODON_00005467> <http://purl.obolibrary.org/obo/FOODON_00005455>)
+SubClassOf(<http://purl.obolibrary.org/obo/FOODON_00005467> <http://purl.obolibrary.org/obo/FOODON_03301296>)
+
+# Class: <http://purl.obolibrary.org/obo/FOODON_00005468> (pink grapefruit juice (unpasteurized))
+
+AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000115> <http://purl.obolibrary.org/obo/FOODON_00005468> "Pink grapefruit juice that is raw."@en)
+AnnotationAssertion(<http://purl.org/dc/terms/contributor> <http://purl.obolibrary.org/obo/FOODON_00005468> "https://orcid.org/0000-0001-5275-8866")
+AnnotationAssertion(rdfs:label <http://purl.obolibrary.org/obo/FOODON_00005468> "pink grapefruit juice (unpasteurized)"@en)
+SubClassOf(<http://purl.obolibrary.org/obo/FOODON_00005468> <http://purl.obolibrary.org/obo/FOODON_03309762>)
+
+# Class: <http://purl.obolibrary.org/obo/FOODON_00005469> (yellow passion fruit juice (unpasterized))
+
+AnnotationAssertion(rdfs:label <http://purl.obolibrary.org/obo/FOODON_00005469> "yellow passion fruit juice (unpasterized)"@en)
+SubClassOf(<http://purl.obolibrary.org/obo/FOODON_00005469> <http://purl.obolibrary.org/obo/FOODON_00005596>)
+
+# Class: <http://purl.obolibrary.org/obo/FOODON_00005470> (coconut milk (unpasteurized))
+
+AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000115> <http://purl.obolibrary.org/obo/FOODON_00005470> "Coconut milk that has not undergone pasteurization."@en)
+AnnotationAssertion(rdfs:label <http://purl.obolibrary.org/obo/FOODON_00005470> "coconut milk (unpasteurized)"@en)
+SubClassOf(<http://purl.obolibrary.org/obo/FOODON_00005470> <http://purl.obolibrary.org/obo/FOODON_03303084>)
+
+# Class: <http://purl.obolibrary.org/obo/FOODON_00005471> (coconut cream (unpasteurized))
+
+AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000115> <http://purl.obolibrary.org/obo/FOODON_00005471> "Coconut cream that has not undergone pasteurization."@en)
+AnnotationAssertion(rdfs:label <http://purl.obolibrary.org/obo/FOODON_00005471> "coconut cream (unpasteurized)"@en)
+SubClassOf(<http://purl.obolibrary.org/obo/FOODON_00005471> <http://purl.obolibrary.org/obo/FOODON_03303088>)
+
+# Class: <http://purl.obolibrary.org/obo/FOODON_00005472> (guanabana nectar)
+
+AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000115> <http://purl.obolibrary.org/obo/FOODON_00005472> "Nectar derived from the pulp of the guanabana fruit."@en)
+AnnotationAssertion(<http://purl.org/dc/terms/contributor> <http://purl.obolibrary.org/obo/FOODON_00005472> "https://orcid.org/0000-0001-5275-8866")
+AnnotationAssertion(rdfs:label <http://purl.obolibrary.org/obo/FOODON_00005472> "guanabana nectar"@en)
+SubClassOf(<http://purl.obolibrary.org/obo/FOODON_00005472> <http://purl.obolibrary.org/obo/FOODON_00003789>)
+
+# Class: <http://purl.obolibrary.org/obo/FOODON_00005473> (tamarind nectar)
+
+AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000115> <http://purl.obolibrary.org/obo/FOODON_00005473> "Nectar derived from the pulp of the tamarind fruit."@en)
+AnnotationAssertion(<http://purl.org/dc/terms/contributor> <http://purl.obolibrary.org/obo/FOODON_00005473> "https://orcid.org/0000-0001-5275-8866")
+AnnotationAssertion(rdfs:label <http://purl.obolibrary.org/obo/FOODON_00005473> "tamarind nectar"@en)
+SubClassOf(<http://purl.obolibrary.org/obo/FOODON_00005473> <http://purl.obolibrary.org/obo/FOODON_00002309>)
+
+# Class: <http://purl.obolibrary.org/obo/FOODON_00005474> (skim milk (without added vitamin a and d))
+
+AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000115> <http://purl.obolibrary.org/obo/FOODON_00005474> "Skim milk without the addition of vitamins A and D."@en)
+AnnotationAssertion(<http://purl.org/dc/terms/contributor> <http://purl.obolibrary.org/obo/FOODON_00005474> "https://orcid.org/0000-0001-5275-8866")
+AnnotationAssertion(rdfs:label <http://purl.obolibrary.org/obo/FOODON_00005474> "skim milk (without added vitamin a and d)"@en)
+SubClassOf(<http://purl.obolibrary.org/obo/FOODON_00005474> <http://purl.obolibrary.org/obo/FOODON_00003237>)
+
+# Class: <http://purl.obolibrary.org/obo/FOODON_00005475> (nonfat dry milk (instant, without added vitamin A and D))
+
+AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000115> <http://purl.obolibrary.org/obo/FOODON_00005475> "Instant nonfat dry milk without the addition of vitamins A and D."@en)
+AnnotationAssertion(<http://purl.org/dc/terms/contributor> <http://purl.obolibrary.org/obo/FOODON_00005475> "https://orcid.org/0000-0001-5275-8866")
+AnnotationAssertion(rdfs:label <http://purl.obolibrary.org/obo/FOODON_00005475> "nonfat dry milk (instant, without added vitamin A and D)"@en)
+SubClassOf(<http://purl.obolibrary.org/obo/FOODON_00005475> <http://purl.obolibrary.org/obo/FOODON_03301657>)
+
+# Class: <http://purl.obolibrary.org/obo/FOODON_00005476> (cow milk (reduced fat, without added Vitamin A and Vitamin D))
+
+AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000115> <http://purl.obolibrary.org/obo/FOODON_00005476> "Reduced-fat cow milk, which has not been fortified with vitamins A and D"@en)
+AnnotationAssertion(<http://purl.org/dc/terms/contributor> <http://purl.obolibrary.org/obo/FOODON_00005476> "https://orcid.org/0000-0001-5275-8866")
+AnnotationAssertion(rdfs:label <http://purl.obolibrary.org/obo/FOODON_00005476> "cow milk (reduced fat, without added Vitamin A and Vitamin D)"@en)
+SubClassOf(<http://purl.obolibrary.org/obo/FOODON_00005476> <http://purl.obolibrary.org/obo/FOODON_03000292>)
+
+# Class: <http://purl.obolibrary.org/obo/FOODON_00005477> (lowfat cow milk (1% fat,  without added Vitamin A and Vitamin D))
+
+AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000115> <http://purl.obolibrary.org/obo/FOODON_00005477> "Low-fat cow milk containing 1% fat, without the addition of vitamins A and D"@en)
+AnnotationAssertion(<http://purl.org/dc/terms/contributor> <http://purl.obolibrary.org/obo/FOODON_00005477> "https://orcid.org/0000-0001-5275-8866")
+AnnotationAssertion(rdfs:label <http://purl.obolibrary.org/obo/FOODON_00005477> "lowfat cow milk (1% fat,  without added Vitamin A and Vitamin D)"@en)
+SubClassOf(<http://purl.obolibrary.org/obo/FOODON_00005477> <http://purl.obolibrary.org/obo/FOODON_00002815>)
+
+# Class: <http://purl.obolibrary.org/obo/FOODON_00005478> (cow whole milk)
+
+AnnotationAssertion(rdfs:label <http://purl.obolibrary.org/obo/FOODON_00005478> "cow whole milk"@en)
+SubClassOf(<http://purl.obolibrary.org/obo/FOODON_00005478> <http://purl.obolibrary.org/obo/FOODON_03302116>)
+
+# Class: <http://purl.obolibrary.org/obo/FOODON_00005479> (cow whole milk (without additives))
+
+AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000115> <http://purl.obolibrary.org/obo/FOODON_00005479> "Cow whole milk without the addition of vitamins A and D."@en)
+AnnotationAssertion(rdfs:label <http://purl.obolibrary.org/obo/FOODON_00005479> "cow whole milk (without additives)"@en)
+SubClassOf(<http://purl.obolibrary.org/obo/FOODON_00005479> <http://purl.obolibrary.org/obo/FOODON_00005478>)
+
+# Class: <http://purl.obolibrary.org/obo/FOODON_00005480> (cow whole milk (without Vitamin D))
+
+AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000115> <http://purl.obolibrary.org/obo/FOODON_00005480> "Cow whole milk without the addition of vitamins D."@en)
+AnnotationAssertion(rdfs:label <http://purl.obolibrary.org/obo/FOODON_00005480> "cow whole milk (without Vitamin D)"@en)
+SubClassOf(<http://purl.obolibrary.org/obo/FOODON_00005480> <http://purl.obolibrary.org/obo/FOODON_00005478>)
+
+# Class: <http://purl.obolibrary.org/obo/FOODON_00005481> (cow whole milk 3.5% fat (without added Vitamin A and Vitamin D))
+
+AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000115> <http://purl.obolibrary.org/obo/FOODON_00005481> "Whole cow milk with 3.5% fat content and without the addition of vitamins A and D."@en)
+AnnotationAssertion(<http://purl.org/dc/terms/contributor> <http://purl.obolibrary.org/obo/FOODON_00005481> "https://orcid.org/0000-0001-5275-8866")
+AnnotationAssertion(rdfs:label <http://purl.obolibrary.org/obo/FOODON_00005481> "cow whole milk 3.5% fat (without added Vitamin A and Vitamin D)"@en)
+SubClassOf(<http://purl.obolibrary.org/obo/FOODON_00005481> <http://purl.obolibrary.org/obo/FOODON_03310780>)
+
+# Class: <http://purl.obolibrary.org/obo/FOODON_00005482> (evaporated milk (reduced fat, Vitamin A and Vitamin D fortified))
+
+AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000115> <http://purl.obolibrary.org/obo/FOODON_00005482> "Evaporated milk with 2% fat content, fortified with vitamins A and D."@en)
+AnnotationAssertion(<http://purl.org/dc/terms/contributor> <http://purl.obolibrary.org/obo/FOODON_00005482> "https://orcid.org/0000-0001-5275-8866")
+AnnotationAssertion(rdfs:label <http://purl.obolibrary.org/obo/FOODON_00005482> "evaporated milk (reduced fat, Vitamin A and Vitamin D fortified)"@en)
+SubClassOf(<http://purl.obolibrary.org/obo/FOODON_00005482> <http://purl.obolibrary.org/obo/FOODON_03301505>)
+
+# Class: <http://purl.obolibrary.org/obo/FOODON_00005483> (cow milk (reduced fat, Without added Vitamin A, nonfat milk solids added))
+
+AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000115> <http://purl.obolibrary.org/obo/FOODON_00005483> "Evaporated milk that is fortified with vitamins A."@en)
+AnnotationAssertion(rdfs:label <http://purl.obolibrary.org/obo/FOODON_00005483> "cow milk (reduced fat, Without added Vitamin A, nonfat milk solids added)"@en)
+SubClassOf(<http://purl.obolibrary.org/obo/FOODON_00005483> <http://purl.obolibrary.org/obo/FOODON_03000292>)
+
+# Class: <http://purl.obolibrary.org/obo/FOODON_00005484> (skim milk (calcium-fortified))
+
+AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000115> <http://purl.obolibrary.org/obo/FOODON_00005484> "Skim milk with added calcium."@en)
+AnnotationAssertion(<http://purl.org/dc/terms/contributor> <http://purl.obolibrary.org/obo/FOODON_00005484> "https://orcid.org/0000-0001-5275-8866")
+AnnotationAssertion(rdfs:label <http://purl.obolibrary.org/obo/FOODON_00005484> "skim milk (calcium-fortified)"@en)
+SubClassOf(<http://purl.obolibrary.org/obo/FOODON_00005484> <http://purl.obolibrary.org/obo/FOODON_00003237>)
+
+# Class: <http://purl.obolibrary.org/obo/FOODON_00005485> (evaporated milk (with added vitamin A))
+
+AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000115> <http://purl.obolibrary.org/obo/FOODON_00005485> "Evaporated milk that is fortified with vitamin A."@en)
+AnnotationAssertion(rdfs:label <http://purl.obolibrary.org/obo/FOODON_00005485> "evaporated milk (with added vitamin A)"@en)
+SubClassOf(<http://purl.obolibrary.org/obo/FOODON_00005485> <http://purl.obolibrary.org/obo/FOODON_03309540>)
+
+# Class: <http://purl.obolibrary.org/obo/FOODON_00005486> (tofu (fermented))
+
+AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000115> <http://purl.obolibrary.org/obo/FOODON_00005486> "Tofu that has undergone a fermentation process."@en)
+AnnotationAssertion(<http://purl.org/dc/terms/contributor> <http://purl.obolibrary.org/obo/FOODON_00005486> "https://orcid.org/0000-0001-5275-8866")
+AnnotationAssertion(rdfs:label <http://purl.obolibrary.org/obo/FOODON_00005486> "tofu (fermented)"@en)
+SubClassOf(<http://purl.obolibrary.org/obo/FOODON_00005486> <http://purl.obolibrary.org/obo/FOODON_03309664>)
+
+# Class: <http://purl.obolibrary.org/obo/FOODON_00005487> (beef tallow)
+
+AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000115> <http://purl.obolibrary.org/obo/FOODON_00005487> "A fat rendered from beef, typically from the fat surrounding organs and muscles."@en)
+AnnotationAssertion(<http://purl.org/dc/terms/contributor> <http://purl.obolibrary.org/obo/FOODON_00005487> "https://orcid.org/0000-0001-5275-8866")
+AnnotationAssertion(rdfs:label <http://purl.obolibrary.org/obo/FOODON_00005487> "beef tallow"@en)
+SubClassOf(<http://purl.obolibrary.org/obo/FOODON_00005487> <http://purl.obolibrary.org/obo/FOODON_03315521>)
+
+# Class: <http://purl.obolibrary.org/obo/FOODON_00005488> (pea (mashed))
+
+AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000115> <http://purl.obolibrary.org/obo/FOODON_00005488> "Cooked green peas that are smashed to create a creamy texture."@en)
+AnnotationAssertion(<http://purl.org/dc/terms/contributor> <http://purl.obolibrary.org/obo/FOODON_00005488> "https://orcid.org/0000-0001-5275-8866")
+AnnotationAssertion(rdfs:label <http://purl.obolibrary.org/obo/FOODON_00005488> "pea (mashed)"@en)
+SubClassOf(<http://purl.obolibrary.org/obo/FOODON_00005488> <http://purl.obolibrary.org/obo/FOODON_03301300>)
+
+# Class: <http://purl.obolibrary.org/obo/FOODON_00005489> (prune puree)
+
+AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000115> <http://purl.obolibrary.org/obo/FOODON_00005489> "A semiliquid, smooth mixture made from cooked prunes (dried plums)."@en)
+AnnotationAssertion(<http://purl.org/dc/terms/contributor> <http://purl.obolibrary.org/obo/FOODON_00005489> "https://orcid.org/0000-0001-5275-8866")
+AnnotationAssertion(rdfs:label <http://purl.obolibrary.org/obo/FOODON_00005489> "prune puree"@en)
+SubClassOf(<http://purl.obolibrary.org/obo/FOODON_00005489> <http://purl.obolibrary.org/obo/FOODON_00002176>)
+SubClassOf(<http://purl.obolibrary.org/obo/FOODON_00005489> <http://purl.obolibrary.org/obo/FOODON_03310649>)
+
+# Class: <http://purl.obolibrary.org/obo/FOODON_00005490> (carrot puree)
+
+AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000115> <http://purl.obolibrary.org/obo/FOODON_00005490> "A semiliquid, smooth mixture made from cooked carrots."@en)
+AnnotationAssertion(<http://purl.org/dc/terms/contributor> <http://purl.obolibrary.org/obo/FOODON_00005490> "https://orcid.org/0000-0001-5275-8866")
+AnnotationAssertion(rdfs:label <http://purl.obolibrary.org/obo/FOODON_00005490> "carrot puree"@en)
+SubClassOf(<http://purl.obolibrary.org/obo/FOODON_00005490> <http://purl.obolibrary.org/obo/FOODON_00001687>)
+
+# Class: <http://purl.obolibrary.org/obo/FOODON_00005491> (banana puree)
+
+AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000115> <http://purl.obolibrary.org/obo/FOODON_00005491> "A semiliquid, smooth mixture made from ripe bananas."@en)
+AnnotationAssertion(<http://purl.org/dc/terms/contributor> <http://purl.obolibrary.org/obo/FOODON_00005491> "https://orcid.org/0000-0001-5275-8866")
+AnnotationAssertion(rdfs:label <http://purl.obolibrary.org/obo/FOODON_00005491> "banana puree"@en)
+SubClassOf(<http://purl.obolibrary.org/obo/FOODON_00005491> <http://purl.obolibrary.org/obo/FOODON_00001628>)
+SubClassOf(<http://purl.obolibrary.org/obo/FOODON_00005491> <http://purl.obolibrary.org/obo/FOODON_03310649>)
+
+# Class: <http://purl.obolibrary.org/obo/FOODON_00005492> (squash puree)
+
+AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000115> <http://purl.obolibrary.org/obo/FOODON_00005492> "Puree made from cooked squash, that is blended to a smooth consistency."@en)
+AnnotationAssertion(<http://purl.org/dc/terms/contributor> <http://purl.obolibrary.org/obo/FOODON_00005492> "https://orcid.org/0000-0001-5275-8866")
+AnnotationAssertion(rdfs:label <http://purl.obolibrary.org/obo/FOODON_00005492> "squash puree"@en)
+SubClassOf(<http://purl.obolibrary.org/obo/FOODON_00005492> <http://purl.obolibrary.org/obo/FOODON_00002271>)
+
+# Class: <http://purl.obolibrary.org/obo/FOODON_00005493> (sweet potato puree)
+
+AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000115> <http://purl.obolibrary.org/obo/FOODON_00005493> "Puree made from cooked sweet potato, that is blended to a smooth consistency."@en)
+AnnotationAssertion(<http://purl.org/dc/terms/contributor> <http://purl.obolibrary.org/obo/FOODON_00005493> "https://orcid.org/0000-0001-5275-8866")
+AnnotationAssertion(rdfs:label <http://purl.obolibrary.org/obo/FOODON_00005493> "sweet potato puree"@en)
+SubClassOf(<http://purl.obolibrary.org/obo/FOODON_00005493> <http://purl.obolibrary.org/obo/FOODON_00002297>)
+
+# Class: <http://purl.obolibrary.org/obo/FOODON_00005494> (beet puree)
+
+AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000115> <http://purl.obolibrary.org/obo/FOODON_00005494> "Puree made from cooked beet root, that is blended to a smooth consistency."@en)
+AnnotationAssertion(rdfs:label <http://purl.obolibrary.org/obo/FOODON_00005494> "beet puree"@en)
+SubClassOf(<http://purl.obolibrary.org/obo/FOODON_00005494> <http://purl.obolibrary.org/obo/FOODON_00001638>)
+
+# Class: <http://purl.obolibrary.org/obo/FOODON_00005495> (clarified butter)
+
+AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000115> <http://purl.obolibrary.org/obo/FOODON_00005495> "Butter from which all milk solids have been removed."@en)
+AnnotationAssertion(<http://purl.org/dc/terms/contributor> <http://purl.obolibrary.org/obo/FOODON_00005495> "https://orcid.org/0000-0001-5275-8866")
+AnnotationAssertion(rdfs:label <http://purl.obolibrary.org/obo/FOODON_00005495> "clarified butter"@en)
+SubClassOf(<http://purl.obolibrary.org/obo/FOODON_00005495> <http://purl.obolibrary.org/obo/FOODON_03310351>)
+
+# Class: <http://purl.obolibrary.org/obo/FOODON_00005496> (apple juice (calcium-fortified))
+
+AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000115> <http://purl.obolibrary.org/obo/FOODON_00005496> "Apple juice with added calcium."@en)
+AnnotationAssertion(<http://purl.org/dc/terms/contributor> <http://purl.obolibrary.org/obo/FOODON_00005496> "https://orcid.org/0000-0001-5275-8866")
+AnnotationAssertion(rdfs:label <http://purl.obolibrary.org/obo/FOODON_00005496> "apple juice (calcium-fortified)"@en)
+SubClassOf(<http://purl.obolibrary.org/obo/FOODON_00005496> <http://purl.obolibrary.org/obo/FOODON_00001059>)
+
+# Class: <http://purl.obolibrary.org/obo/FOODON_00005497> (orange juice (without pulp))
+
+AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000115> <http://purl.obolibrary.org/obo/FOODON_00005497> "Orange juice that has been strained to remove the pulp."@en)
+AnnotationAssertion(<http://purl.org/dc/terms/contributor> <http://purl.obolibrary.org/obo/FOODON_00005497> "https://orcid.org/0000-0001-5275-8866")
+AnnotationAssertion(rdfs:label <http://purl.obolibrary.org/obo/FOODON_00005497> "orange juice (without pulp)"@en)
+SubClassOf(<http://purl.obolibrary.org/obo/FOODON_00005497> <http://purl.obolibrary.org/obo/FOODON_00001001>)
+
+# Class: <http://purl.obolibrary.org/obo/FOODON_00005498> (corn pasta)
+
+AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000115> <http://purl.obolibrary.org/obo/FOODON_00005498> "Pasta that is made from corn flour."@en)
+AnnotationAssertion(<http://purl.org/dc/terms/contributor> <http://purl.obolibrary.org/obo/FOODON_00005498> "https://orcid.org/0000-0001-5275-8866")
+AnnotationAssertion(rdfs:label <http://purl.obolibrary.org/obo/FOODON_00005498> "corn pasta"@en)
+SubClassOf(<http://purl.obolibrary.org/obo/FOODON_00005498> <http://purl.obolibrary.org/obo/FOODON_00001211>)
+
+# Class: <http://purl.obolibrary.org/obo/FOODON_00005500> (sesame flour)
+
+AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000115> <http://purl.obolibrary.org/obo/FOODON_00005500> "A flour that is made by grinding defatted sesame seeds."@en)
+AnnotationAssertion(<http://purl.org/dc/terms/contributor> <http://purl.obolibrary.org/obo/FOODON_00005500> "https://orcid.org/0000-0001-5275-8866")
+AnnotationAssertion(rdfs:label <http://purl.obolibrary.org/obo/FOODON_00005500> "sesame flour"@en)
+SubClassOf(<http://purl.obolibrary.org/obo/FOODON_00005500> <http://purl.obolibrary.org/obo/FOODON_00002232>)
+SubClassOf(<http://purl.obolibrary.org/obo/FOODON_00005500> <http://purl.obolibrary.org/obo/FOODON_00004510>)
+
+# Class: <http://purl.obolibrary.org/obo/FOODON_00005503> (balsamic vinegar)
+
+AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000115> <http://purl.obolibrary.org/obo/FOODON_00005503> "A traditional Italian vinegar made wholly or partially from grape must, which is freshly crushed grape juice containing all the skins, seeds, and stems"@en)
+AnnotationAssertion(<http://purl.org/dc/terms/contributor> <http://purl.obolibrary.org/obo/FOODON_00005503> "https://orcid.org/0000-0001-5275-8866")
+AnnotationAssertion(rdfs:label <http://purl.obolibrary.org/obo/FOODON_00005503> "balsamic vinegar"@en)
+SubClassOf(<http://purl.obolibrary.org/obo/FOODON_00005503> <http://purl.obolibrary.org/obo/FOODON_00001073>)
+
+# Class: <http://purl.obolibrary.org/obo/FOODON_00005504> (popcorn (air-popped))
+
+AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000115> <http://purl.obolibrary.org/obo/FOODON_00005504> "Popcorn that is popped using hot air."@en)
+AnnotationAssertion(<http://purl.org/dc/terms/contributor> <http://purl.obolibrary.org/obo/FOODON_00005504> "https://orcid.org/0000-0001-5275-8866")
+AnnotationAssertion(rdfs:label <http://purl.obolibrary.org/obo/FOODON_00005504> "popcorn (air-popped)"@en)
+SubClassOf(<http://purl.obolibrary.org/obo/FOODON_00005504> <http://purl.obolibrary.org/obo/FOODON_03302179>)
+
+# Class: <http://purl.obolibrary.org/obo/FOODON_00005505> (brown rice cereal)
+
+AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000115> <http://purl.obolibrary.org/obo/FOODON_00005505> "Cereal made from whole brown rice kernels, often processed for easier consumption."@en)
+AnnotationAssertion(<http://purl.org/dc/terms/contributor> <http://purl.obolibrary.org/obo/FOODON_00005505> "https://orcid.org/0000-0001-5275-8866")
+AnnotationAssertion(rdfs:label <http://purl.obolibrary.org/obo/FOODON_00005505> "brown rice cereal"@en)
+SubClassOf(<http://purl.obolibrary.org/obo/FOODON_00005505> <http://purl.obolibrary.org/obo/FOODON_03310609>)
+
+# Class: <http://purl.obolibrary.org/obo/FOODON_00005506> (brown rice cereal (dry, instant))
+
+AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000115> <http://purl.obolibrary.org/obo/FOODON_00005506> "Brown rice cereal that is dried and is meant to be prepared instantly."@en)
+AnnotationAssertion(<http://purl.org/dc/terms/contributor> <http://purl.obolibrary.org/obo/FOODON_00005506> "https://orcid.org/0000-0001-5275-8866")
+AnnotationAssertion(rdfs:label <http://purl.obolibrary.org/obo/FOODON_00005506> "brown rice cereal (dry, instant)"@en)
+SubClassOf(<http://purl.obolibrary.org/obo/FOODON_00005506> <http://purl.obolibrary.org/obo/FOODON_00005505>)
+
+# Class: <http://purl.obolibrary.org/obo/FOODON_00005507> (corned beef)
+
+AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000115> <http://purl.obolibrary.org/obo/FOODON_00005507> "Beef that has been cured with salt and spices, typically from the brisket cut."@en)
+AnnotationAssertion(<http://purl.org/dc/terms/contributor> <http://purl.obolibrary.org/obo/FOODON_00005507> "https://orcid.org/0000-0001-5275-8866")
+AnnotationAssertion(rdfs:label <http://purl.obolibrary.org/obo/FOODON_00005507> "corned beef"@en)
+SubClassOf(<http://purl.obolibrary.org/obo/FOODON_00005507> <http://purl.obolibrary.org/obo/FOODON_00001041>)
+
+# Class: <http://purl.obolibrary.org/obo/FOODON_00005508> (beef bologna)
+
+AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000115> <http://purl.obolibrary.org/obo/FOODON_00005508> "Bologna that is made from beef."@en)
+AnnotationAssertion(<http://purl.org/dc/terms/contributor> <http://purl.obolibrary.org/obo/FOODON_00005508> "https://orcid.org/0000-0001-5275-8866")
+AnnotationAssertion(rdfs:label <http://purl.obolibrary.org/obo/FOODON_00005508> "beef bologna"@en)
+SubClassOf(<http://purl.obolibrary.org/obo/FOODON_00005508> <http://purl.obolibrary.org/obo/FOODON_03306503>)
+
+# Class: <http://purl.obolibrary.org/obo/FOODON_00005509> (chicken bologna)
+
+AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000115> <http://purl.obolibrary.org/obo/FOODON_00005509> "Bologna that is made from chicken meat."@en)
+AnnotationAssertion(rdfs:label <http://purl.obolibrary.org/obo/FOODON_00005509> "chicken bologna"@en)
+SubClassOf(<http://purl.obolibrary.org/obo/FOODON_00005509> <http://purl.obolibrary.org/obo/FOODON_03306503>)
+
+# Class: <http://purl.obolibrary.org/obo/FOODON_00005510> (pork bologna)
+
+AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000115> <http://purl.obolibrary.org/obo/FOODON_00005510> "Bologna that is made from pork."@en)
+AnnotationAssertion(rdfs:label <http://purl.obolibrary.org/obo/FOODON_00005510> "pork bologna"@en)
+SubClassOf(<http://purl.obolibrary.org/obo/FOODON_00005510> <http://purl.obolibrary.org/obo/FOODON_03306503>)
+
+# Class: <http://purl.obolibrary.org/obo/FOODON_00005511> (turkey bologna)
+
+AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000115> <http://purl.obolibrary.org/obo/FOODON_00005511> "Bologna that is made from turkey meat."@en)
+AnnotationAssertion(rdfs:label <http://purl.obolibrary.org/obo/FOODON_00005511> "turkey bologna"@en)
+SubClassOf(<http://purl.obolibrary.org/obo/FOODON_00005511> <http://purl.obolibrary.org/obo/FOODON_03306503>)
+
+# Class: <http://purl.obolibrary.org/obo/FOODON_00005512> (beef macaroni)
+
+AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000115> <http://purl.obolibrary.org/obo/FOODON_00005512> "Macaroni that is made from beef."@en)
+AnnotationAssertion(<http://purl.org/dc/terms/contributor> <http://purl.obolibrary.org/obo/FOODON_00005512> "https://orcid.org/0000-0001-5275-8866")
+AnnotationAssertion(rdfs:label <http://purl.obolibrary.org/obo/FOODON_00005512> "beef macaroni"@en)
+SubClassOf(<http://purl.obolibrary.org/obo/FOODON_00005512> <http://purl.obolibrary.org/obo/FOODON_00002013>)
+
+# Class: <http://purl.obolibrary.org/obo/FOODON_00005513> (guava sauce)
+
+AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000115> <http://purl.obolibrary.org/obo/FOODON_00005513> "A fruit sauce made from guava."@en)
+AnnotationAssertion(<http://purl.org/dc/terms/contributor> <http://purl.obolibrary.org/obo/FOODON_00005513> "https://orcid.org/0000-0001-5275-8866")
+AnnotationAssertion(rdfs:label <http://purl.obolibrary.org/obo/FOODON_00005513> "guava sauce"@en)
+SubClassOf(<http://purl.obolibrary.org/obo/FOODON_00005513> <http://purl.obolibrary.org/obo/FOODON_03304038>)
+
+# Class: <http://purl.obolibrary.org/obo/FOODON_00005514> (sugar (powdered))
+
+AnnotationAssertion(<http://purl.org/dc/terms/contributor> <http://purl.obolibrary.org/obo/FOODON_00005514> "https://orcid.org/0000-0001-5275-8866")
+AnnotationAssertion(rdfs:label <http://purl.obolibrary.org/obo/FOODON_00005514> "sugar (powdered)"@en)
+SubClassOf(<http://purl.obolibrary.org/obo/FOODON_00005514> <http://purl.obolibrary.org/obo/FOODON_03307345>)
+
+# Class: <http://purl.obolibrary.org/obo/FOODON_00005515> (green tea (steeped))
+
+AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000115> <http://purl.obolibrary.org/obo/FOODON_00005515> "Steeped tea made from green tea leaves (Camellia sinensis)."@en)
+AnnotationAssertion(<http://purl.org/dc/terms/contributor> <http://purl.obolibrary.org/obo/FOODON_00005515> "https://orcid.org/0000-0001-5275-8866")
+AnnotationAssertion(rdfs:label <http://purl.obolibrary.org/obo/FOODON_00005515> "green tea (steeped)"@en)
+SubClassOf(<http://purl.obolibrary.org/obo/FOODON_00005515> <http://purl.obolibrary.org/obo/FOODON_03310546>)
+
+# Class: <http://purl.obolibrary.org/obo/FOODON_00005516> (hibiscus tea (steeped))
+
+AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000115> <http://purl.obolibrary.org/obo/FOODON_00005516> "Steeped tea made from dried hibiscus flowers (Hibiscus sabdariffa)."@en)
+AnnotationAssertion(<http://purl.org/dc/terms/contributor> <http://purl.obolibrary.org/obo/FOODON_00005516> "https://orcid.org/0000-0001-5275-8866")
+AnnotationAssertion(rdfs:label <http://purl.obolibrary.org/obo/FOODON_00005516> "hibiscus tea (steeped)"@en)
+SubClassOf(<http://purl.obolibrary.org/obo/FOODON_00005516> <http://purl.obolibrary.org/obo/FOODON_03310546>)
+
+# Class: <http://purl.obolibrary.org/obo/FOODON_00005517> (oolong tea (steeped))
+
+AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000115> <http://purl.obolibrary.org/obo/FOODON_00005517> "Steeped tea made from partially oxidized tea leaves (Camellia sinensis)."@en)
+AnnotationAssertion(<http://purl.org/dc/terms/contributor> <http://purl.obolibrary.org/obo/FOODON_00005517> "https://orcid.org/0000-0001-5275-8866")
+AnnotationAssertion(rdfs:label <http://purl.obolibrary.org/obo/FOODON_00005517> "oolong tea (steeped)"@en)
+SubClassOf(<http://purl.obolibrary.org/obo/FOODON_00005517> <http://purl.obolibrary.org/obo/FOODON_03310546>)
+
+# Class: <http://purl.obolibrary.org/obo/FOODON_00005518> (black tea (decaffeinated))
+
+AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000115> <http://purl.obolibrary.org/obo/FOODON_00005518> "Black tea that has most of its caffeine removed through a decaffeination process, while preserving its flavor, aroma, and other characteristic properties."@en)
+AnnotationAssertion(rdfs:label <http://purl.obolibrary.org/obo/FOODON_00005518> "black tea (decaffeinated)"@en)
+SubClassOf(<http://purl.obolibrary.org/obo/FOODON_00005518> <http://purl.obolibrary.org/obo/FOODON_03312068>)
+
+# Class: <http://purl.obolibrary.org/obo/FOODON_00005519> (lemon tea (dry, instant))
+
+AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000115> <http://purl.obolibrary.org/obo/FOODON_00005519> "A beverage mix that quickly dissolves in hot or cold water to create a lemon-flavoured tea.
+OR 
+A beverage prepared by dissolving an instant mix in hot or cold water to create a lemon-flavored drink."@en)
+AnnotationAssertion(rdfs:label <http://purl.obolibrary.org/obo/FOODON_00005519> "lemon tea (dry, instant)"@en)
+SubClassOf(<http://purl.obolibrary.org/obo/FOODON_00005519> <http://purl.obolibrary.org/obo/FOODON_03315157>)
+
+# Class: <http://purl.obolibrary.org/obo/FOODON_00005520> (soybean flour (full fat))
+
+AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000115> <http://purl.obolibrary.org/obo/FOODON_00005520> "A soybean flour that is made from whole soybeans, retaining all of the natural oils, which gives it a higher fat content."@en)
+AnnotationAssertion(rdfs:label <http://purl.obolibrary.org/obo/FOODON_00005520> "soybean flour (full fat)"@en)
+SubClassOf(<http://purl.obolibrary.org/obo/FOODON_00005520> <http://purl.obolibrary.org/obo/FOODON_03302142>)
+
+# Class: <http://purl.obolibrary.org/obo/FOODON_00005521> (soybean flour (low fat))
+
+AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000115> <http://purl.obolibrary.org/obo/FOODON_00005521> "A soybean flour made from whole soybeans that has been processed to reduce its natural oil content."@en)
+AnnotationAssertion(rdfs:label <http://purl.obolibrary.org/obo/FOODON_00005521> "soybean flour (low fat)"@en)
+SubClassOf(<http://purl.obolibrary.org/obo/FOODON_00005521> <http://purl.obolibrary.org/obo/FOODON_03302142>)
+
+# Class: <http://purl.obolibrary.org/obo/FOODON_00005523> (acorn flour)
+
+AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000115> <http://purl.obolibrary.org/obo/FOODON_00005523> "A flour that is made by grinding acorns, the nuts of oak trees, after they have been properly processed to remove tannin."@en)
+AnnotationAssertion(rdfs:label <http://purl.obolibrary.org/obo/FOODON_00005523> "acorn flour"@en)
+SubClassOf(<http://purl.obolibrary.org/obo/FOODON_00005523> <http://purl.obolibrary.org/obo/FOODON_00004510>)
+
+# Class: <http://purl.obolibrary.org/obo/FOODON_00005524> (whey protein isolate)
+
+AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000115> <http://purl.obolibrary.org/obo/FOODON_00005524> "A refined form of whey protein, processed to remove most of the fat and lactose, resulting in a higher protein content."@en)
+AnnotationAssertion(rdfs:label <http://purl.obolibrary.org/obo/FOODON_00005524> "whey protein isolate"@en)
+SubClassOf(<http://purl.obolibrary.org/obo/FOODON_00005524> <http://purl.obolibrary.org/obo/FOODON_03000438>)
+
+# Class: <http://purl.obolibrary.org/obo/FOODON_00005525> (chicken bratwurst)
+
+AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000115> <http://purl.obolibrary.org/obo/FOODON_00005525> "Bratwurst that is made from chicken meat."@en)
+AnnotationAssertion(rdfs:label <http://purl.obolibrary.org/obo/FOODON_00005525> "chicken bratwurst"@en)
+SubClassOf(<http://purl.obolibrary.org/obo/FOODON_00005525> <http://purl.obolibrary.org/obo/FOODON_00002911>)
+
+# Class: <http://purl.obolibrary.org/obo/FOODON_00005526> (pork bratwurst)
+
+AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000115> <http://purl.obolibrary.org/obo/FOODON_00005526> "Bratwurst that is made from pork."@en)
+AnnotationAssertion(rdfs:label <http://purl.obolibrary.org/obo/FOODON_00005526> "pork bratwurst"@en)
+SubClassOf(<http://purl.obolibrary.org/obo/FOODON_00005526> <http://purl.obolibrary.org/obo/FOODON_00002911>)
+
+# Class: <http://purl.obolibrary.org/obo/FOODON_00005527> (veal bratwurst)
+
+AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000115> <http://purl.obolibrary.org/obo/FOODON_00005527> "Bratwurst that is made from veal."@en)
+AnnotationAssertion(rdfs:label <http://purl.obolibrary.org/obo/FOODON_00005527> "veal bratwurst"@en)
+SubClassOf(<http://purl.obolibrary.org/obo/FOODON_00005527> <http://purl.obolibrary.org/obo/FOODON_00002911>)
+
+# Class: <http://purl.obolibrary.org/obo/FOODON_00005528> (whole wheat pasta)
+
+AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000115> <http://purl.obolibrary.org/obo/FOODON_00005528> "Pasta made from whole wheat flour that retains the bran, germ, and endosperm of the wheat grain."@en)
+AnnotationAssertion(rdfs:label <http://purl.obolibrary.org/obo/FOODON_00005528> "whole wheat pasta"@en)
+SubClassOf(<http://purl.obolibrary.org/obo/FOODON_00005528> <http://purl.obolibrary.org/obo/FOODON_00002354>)
+
+# Class: <http://purl.obolibrary.org/obo/FOODON_00005529> (whole grain white corn flour)
+
+AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000115> <http://purl.obolibrary.org/obo/FOODON_00005529> "Flour made from the whole kernels of white corn (Zea mays), which includes the bran, germ, and endosperm."@en)
+AnnotationAssertion(rdfs:label <http://purl.obolibrary.org/obo/FOODON_00005529> "whole grain white corn flour"@en)
+SubClassOf(<http://purl.obolibrary.org/obo/FOODON_00005529> <http://purl.obolibrary.org/obo/FOODON_03310833>)
+
+# Class: <http://purl.obolibrary.org/obo/FOODON_00005530> (whole grain white cornmeal)
+
+AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000115> <http://purl.obolibrary.org/obo/FOODON_00005530> "Cornmeal made from whole white corn kernels (Zea mays), which includes the bran, germ, and endosperm"@en)
+AnnotationAssertion(rdfs:label <http://purl.obolibrary.org/obo/FOODON_00005530> "whole grain white cornmeal"@en)
+SubClassOf(<http://purl.obolibrary.org/obo/FOODON_00005530> <http://purl.obolibrary.org/obo/FOODON_03309766>)
+
+# Class: <http://purl.obolibrary.org/obo/FOODON_00005531> (turkey bacon)
+
+AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000115> <http://purl.obolibrary.org/obo/FOODON_00005531> "A bacon made from turkey meat."@en)
+AnnotationAssertion(rdfs:label <http://purl.obolibrary.org/obo/FOODON_00005531> "turkey bacon"@en)
+SubClassOf(<http://purl.obolibrary.org/obo/FOODON_00005531> <http://purl.obolibrary.org/obo/FOODON_00001286>)
+SubClassOf(<http://purl.obolibrary.org/obo/FOODON_00005531> <http://purl.obolibrary.org/obo/FOODON_03317331>)
+
+# Class: <http://purl.obolibrary.org/obo/FOODON_00005532> (couscous)
+
+AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000115> <http://purl.obolibrary.org/obo/FOODON_00005532> "A dish made from durum wheat semolina, which is moistened and rolled into small granules, then steamed or boiled."@en)
+AnnotationAssertion(rdfs:label <http://purl.obolibrary.org/obo/FOODON_00005532> "couscous"@en)
+SubClassOf(<http://purl.obolibrary.org/obo/FOODON_00005532> <http://purl.obolibrary.org/obo/FOODON_00001823>)
+
+# Class: <http://purl.obolibrary.org/obo/FOODON_00005533> (turkey sausage (raw))
+
+AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000115> <http://purl.obolibrary.org/obo/FOODON_00005533> "A turkey sausage that is raw."@en)
+AnnotationAssertion(rdfs:label <http://purl.obolibrary.org/obo/FOODON_00005533> "turkey sausage (raw)"@en)
+SubClassOf(<http://purl.obolibrary.org/obo/FOODON_00005533> <http://purl.obolibrary.org/obo/FOODON_00003297>)
+
+# Class: <http://purl.obolibrary.org/obo/FOODON_00005534> (beef salami)
+
+AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000115> <http://purl.obolibrary.org/obo/FOODON_00005534> "Salami made from beef."@en)
+AnnotationAssertion(rdfs:label <http://purl.obolibrary.org/obo/FOODON_00005534> "beef salami"@en)
+SubClassOf(<http://purl.obolibrary.org/obo/FOODON_00005534> <http://purl.obolibrary.org/obo/FOODON_03312067>)
+
+# Class: <http://purl.obolibrary.org/obo/FOODON_00005535> (turkey salami)
+
+AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000115> <http://purl.obolibrary.org/obo/FOODON_00005535> "Salami made from turkey meat."@en)
+AnnotationAssertion(rdfs:label <http://purl.obolibrary.org/obo/FOODON_00005535> "turkey salami"@en)
+SubClassOf(<http://purl.obolibrary.org/obo/FOODON_00005535> <http://purl.obolibrary.org/obo/FOODON_03312067>)
+
+# Class: <http://purl.obolibrary.org/obo/FOODON_00005536> (pork salami)
+
+AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000115> <http://purl.obolibrary.org/obo/FOODON_00005536> "Salami made from pork meat."@en)
+AnnotationAssertion(rdfs:label <http://purl.obolibrary.org/obo/FOODON_00005536> "pork salami"@en)
+SubClassOf(<http://purl.obolibrary.org/obo/FOODON_00005536> <http://purl.obolibrary.org/obo/FOODON_03312067>)
+
+# Class: <http://purl.obolibrary.org/obo/FOODON_00005537> (chicken patty)
+
+AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000115> <http://purl.obolibrary.org/obo/FOODON_00005537> "A patty made from chicken meat."@en)
+AnnotationAssertion(rdfs:label <http://purl.obolibrary.org/obo/FOODON_00005537> "chicken patty"@en)
+SubClassOf(<http://purl.obolibrary.org/obo/FOODON_00005537> <http://purl.obolibrary.org/obo/FOODON_00002951>)
+
+# Class: <http://purl.obolibrary.org/obo/FOODON_00005538> (salmon nugget)
+
+AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000115> <http://purl.obolibrary.org/obo/FOODON_00005538> "A nugget made from salmon meat that is often breaded or battered and typically fried or baked."@en)
+AnnotationAssertion(rdfs:label <http://purl.obolibrary.org/obo/FOODON_00005538> "salmon nugget"@en)
+SubClassOf(<http://purl.obolibrary.org/obo/FOODON_00005538> <http://purl.obolibrary.org/obo/FOODON_00002220>)
+
+# Class: <http://purl.obolibrary.org/obo/FOODON_00005539> (soft tofu)
+
+AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000115> <http://purl.obolibrary.org/obo/FOODON_00005539> "A tofu that has a smooth, delicate texture and high moisture content"@en)
+AnnotationAssertion(rdfs:label <http://purl.obolibrary.org/obo/FOODON_00005539> "soft tofu"@en)
+SubClassOf(<http://purl.obolibrary.org/obo/FOODON_00005539> <http://purl.obolibrary.org/obo/FOODON_00004697>)
+
+# Class: <http://purl.obolibrary.org/obo/FOODON_00005540> (firm tofu)
+
+AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000115> <http://purl.obolibrary.org/obo/FOODON_00005540> "A tofu that has a denser texture with lower moisture content, allowing it to hold its shape well during cooking."@en)
+AnnotationAssertion(rdfs:label <http://purl.obolibrary.org/obo/FOODON_00005540> "firm tofu"@en)
+SubClassOf(<http://purl.obolibrary.org/obo/FOODON_00005540> <http://purl.obolibrary.org/obo/FOODON_00004697>)
+
+# Class: <http://purl.obolibrary.org/obo/FOODON_00005541> (silken tofu)
+
+AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000115> <http://purl.obolibrary.org/obo/FOODON_00005541> "A tofu that has a creamy, smooth texture and high moisture content."@en)
+AnnotationAssertion(rdfs:label <http://purl.obolibrary.org/obo/FOODON_00005541> "silken tofu"@en)
+SubClassOf(<http://purl.obolibrary.org/obo/FOODON_00005541> <http://purl.obolibrary.org/obo/FOODON_00004697>)
+
+# Class: <http://purl.obolibrary.org/obo/FOODON_00005542> (silken soft tofu)
+
+AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000115> <http://purl.obolibrary.org/obo/FOODON_00005542> "A tofu that has an ultra-creamy texture and high moisture content."@en)
+AnnotationAssertion(rdfs:label <http://purl.obolibrary.org/obo/FOODON_00005542> "silken soft tofu"@en)
+SubClassOf(<http://purl.obolibrary.org/obo/FOODON_00005542> <http://purl.obolibrary.org/obo/FOODON_00005541>)
+
+# Class: <http://purl.obolibrary.org/obo/FOODON_00005543> (silken firm tofu)
+
+AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000115> <http://purl.obolibrary.org/obo/FOODON_00005543> "A tofu that has a creamy texture while being slightly firmer, making it versatile for both savory and sweet dishes that require shape retention."@en)
+AnnotationAssertion(rdfs:label <http://purl.obolibrary.org/obo/FOODON_00005543> "silken firm tofu"@en)
+SubClassOf(<http://purl.obolibrary.org/obo/FOODON_00005543> <http://purl.obolibrary.org/obo/FOODON_00005541>)
+
+# Class: <http://purl.obolibrary.org/obo/FOODON_00005544> (super firm tofu)
+
+AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000115> <http://purl.obolibrary.org/obo/FOODON_00005544> "A tofu that has minimal moisture and an extremely dense texture, ideal for grilling, frying, or baking while maintaining its shape."@en)
+AnnotationAssertion(rdfs:label <http://purl.obolibrary.org/obo/FOODON_00005544> "super firm tofu"@en)
+SubClassOf(<http://purl.obolibrary.org/obo/FOODON_00005544> <http://purl.obolibrary.org/obo/FOODON_00005541>)
+
+# Class: <http://purl.obolibrary.org/obo/FOODON_00005545> (silken extra firm tofu)
+
+AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000115> <http://purl.obolibrary.org/obo/FOODON_00005545> "A tofu that has a denser texture while retaining some creaminess."@en)
+AnnotationAssertion(rdfs:label <http://purl.obolibrary.org/obo/FOODON_00005545> "silken extra firm tofu"@en)
+SubClassOf(<http://purl.obolibrary.org/obo/FOODON_00005545> <http://purl.obolibrary.org/obo/FOODON_00005541>)
+
+# Class: <http://purl.obolibrary.org/obo/FOODON_00005546> (silken lite firm tofu)
+
+AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000115> <http://purl.obolibrary.org/obo/FOODON_00005546> "A tofu that has a lighter texture with reduced fat content, providing a balance of creaminess and firmness"@en)
+AnnotationAssertion(rdfs:label <http://purl.obolibrary.org/obo/FOODON_00005546> "silken lite firm tofu"@en)
+SubClassOf(<http://purl.obolibrary.org/obo/FOODON_00005546> <http://purl.obolibrary.org/obo/FOODON_00005541>)
+
+# Class: <http://purl.obolibrary.org/obo/FOODON_00005547> (silken lite extra firm tofu)
+
+AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000115> <http://purl.obolibrary.org/obo/FOODON_00005547> "A tofu that has the densest texture with reduced fat."@en)
+AnnotationAssertion(rdfs:label <http://purl.obolibrary.org/obo/FOODON_00005547> "silken lite extra firm tofu"@en)
+SubClassOf(<http://purl.obolibrary.org/obo/FOODON_00005547> <http://purl.obolibrary.org/obo/FOODON_00005541>)
+
+# Class: <http://purl.obolibrary.org/obo/FOODON_00005548> (Carob flour)
+
+AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000115> <http://purl.obolibrary.org/obo/FOODON_00005548> "A flour made from ground carob pod, which is the dried fruit of the carob tree (Ceratonia siliqua)."@en)
+AnnotationAssertion(rdfs:label <http://purl.obolibrary.org/obo/FOODON_00005548> "Carob flour"@en)
+SubClassOf(<http://purl.obolibrary.org/obo/FOODON_00005548> <http://purl.obolibrary.org/obo/FOODON_00002400>)
+
+# Class: <http://purl.obolibrary.org/obo/FOODON_00005549> (baobab powder)
+
+AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000115> <http://purl.obolibrary.org/obo/FOODON_00005549> "A powder made from the dried fruit pulp of the baobab tree (Adansonia spp)."@en)
+AnnotationAssertion(rdfs:label <http://purl.obolibrary.org/obo/FOODON_00005549> "baobab powder"@en)
+SubClassOf(<http://purl.obolibrary.org/obo/FOODON_00005549> <http://purl.obolibrary.org/obo/FOODON_03316462>)
+
+# Class: <http://purl.obolibrary.org/obo/FOODON_00005550> (tart cherry juice)
+
+AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000115> <http://purl.obolibrary.org/obo/FOODON_00005550> "A fruit juice made from tart cherry."@en)
+AnnotationAssertion(rdfs:label <http://purl.obolibrary.org/obo/FOODON_00005550> "tart cherry juice"@en)
+SubClassOf(<http://purl.obolibrary.org/obo/FOODON_00005550> <http://purl.obolibrary.org/obo/FOODON_03301296>)
+
+# Class: <http://purl.obolibrary.org/obo/FOODON_00005552> (raspberry puree)
+
+AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000115> <http://purl.obolibrary.org/obo/FOODON_00005552> "A puree made from raspberry."@en)
+AnnotationAssertion(rdfs:label <http://purl.obolibrary.org/obo/FOODON_00005552> "raspberry puree"@en)
+SubClassOf(<http://purl.obolibrary.org/obo/FOODON_00005552> <http://purl.obolibrary.org/obo/FOODON_03310649>)
+
+# Class: <http://purl.obolibrary.org/obo/FOODON_00005553> (oat bran cereal)
+
+AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000115> <http://purl.obolibrary.org/obo/FOODON_00005553> "A cereal that is made from the outer layer of the oat grain (the bran), which is separated from the endosperm and germ."@en)
+AnnotationAssertion(rdfs:label <http://purl.obolibrary.org/obo/FOODON_00005553> "oat bran cereal"@en)
+SubClassOf(<http://purl.obolibrary.org/obo/FOODON_00005553> <http://purl.obolibrary.org/obo/FOODON_03302906>)
+
+# Class: <http://purl.obolibrary.org/obo/FOODON_00005554> (turkey pastrami)
+
+AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000115> <http://purl.obolibrary.org/obo/FOODON_00005554> "Pastrami that is made from turkey meat"@en)
+AnnotationAssertion(rdfs:label <http://purl.obolibrary.org/obo/FOODON_00005554> "turkey pastrami"@en)
+SubClassOf(<http://purl.obolibrary.org/obo/FOODON_00005554> <http://purl.obolibrary.org/obo/FOODON_00003884>)
+
+# Class: <http://purl.obolibrary.org/obo/FOODON_00005555> (rice noodle)
+
+AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000115> <http://purl.obolibrary.org/obo/FOODON_00005555> "Noodles that are made from rice."@en)
+AnnotationAssertion(rdfs:label <http://purl.obolibrary.org/obo/FOODON_00005555> "rice noodle"@en)
+SubClassOf(<http://purl.obolibrary.org/obo/FOODON_00005555> <http://purl.obolibrary.org/obo/FOODON_03306944>)
+
+# Class: <http://purl.obolibrary.org/obo/FOODON_00005556> (whole grain cornmeal)
+
+AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000115> <http://purl.obolibrary.org/obo/FOODON_00005556> "Cornmeal that is made by grinding the whole corn kernel, including the bran, germ, and endosperm."@en)
+AnnotationAssertion(rdfs:label <http://purl.obolibrary.org/obo/FOODON_00005556> "whole grain cornmeal"@en)
+SubClassOf(<http://purl.obolibrary.org/obo/FOODON_00005556> <http://purl.obolibrary.org/obo/FOODON_03310257>)
+
+# Class: <http://purl.obolibrary.org/obo/FOODON_00005557> (whole grain yellow cornmeal)
+
+AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000115> <http://purl.obolibrary.org/obo/FOODON_00005557> "Cornmeal that is made by grinding the whole yellow corn kernel, including the bran, germ, and endosperm."@en)
+AnnotationAssertion(rdfs:label <http://purl.obolibrary.org/obo/FOODON_00005557> "whole grain yellow cornmeal"@en)
+SubClassOf(<http://purl.obolibrary.org/obo/FOODON_00005557> <http://purl.obolibrary.org/obo/FOODON_00005556>)
+SubClassOf(<http://purl.obolibrary.org/obo/FOODON_00005557> <http://purl.obolibrary.org/obo/FOODON_03305642>)
+
+# Class: <http://purl.obolibrary.org/obo/FOODON_00005558> (wheat germ cereal)
+
+AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000115> <http://purl.obolibrary.org/obo/FOODON_00005558> "Wheat cereal made from the germ of the wheat kernel, which is the part of the grain that can sprout into a new wheat plant."@en)
+AnnotationAssertion(rdfs:label <http://purl.obolibrary.org/obo/FOODON_00005558> "wheat germ cereal"@en)
+SubClassOf(<http://purl.obolibrary.org/obo/FOODON_00005558> <http://purl.obolibrary.org/obo/FOODON_03312031>)
+
+# Class: <http://purl.obolibrary.org/obo/FOODON_00005559> (whole wheat cereal)
+
+AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000115> <http://purl.obolibrary.org/obo/FOODON_00005559> "Breakfast cereal that is made from whole wheat grains that include all parts of the grain—the bran, germ, and endosperm."@en)
+AnnotationAssertion(rdfs:label <http://purl.obolibrary.org/obo/FOODON_00005559> "whole wheat cereal"@en)
+SubClassOf(<http://purl.obolibrary.org/obo/FOODON_00005559> <http://purl.obolibrary.org/obo/FOODON_03310478>)
+SubClassOf(<http://purl.obolibrary.org/obo/FOODON_00005559> <http://purl.obolibrary.org/obo/FOODON_03312031>)
+
+# Class: <http://purl.obolibrary.org/obo/FOODON_00005560> (pork sausage link)
+
+AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000115> <http://purl.obolibrary.org/obo/FOODON_00005560> "A pork sausage made from ground pork mixed with spices and seasonings, encased in a natural or synthetic casing to form individual cylindrical links."@en)
+AnnotationAssertion(rdfs:label <http://purl.obolibrary.org/obo/FOODON_00005560> "pork sausage link"@en)
+SubClassOf(<http://purl.obolibrary.org/obo/FOODON_00005560> <http://purl.obolibrary.org/obo/FOODON_00002729>)
+
+# Class: <http://purl.obolibrary.org/obo/FOODON_00005561> (pork sausage patty)
+
+AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000115> <http://purl.obolibrary.org/obo/FOODON_00005561> "A pork sausage made from ground pork mixed with spices and seasonings, formed into a flat, round disc shape without the use of a casing."@en)
+AnnotationAssertion(rdfs:label <http://purl.obolibrary.org/obo/FOODON_00005561> "pork sausage patty"@en)
+SubClassOf(<http://purl.obolibrary.org/obo/FOODON_00005561> <http://purl.obolibrary.org/obo/FOODON_00002729>)
+
+# Class: <http://purl.obolibrary.org/obo/FOODON_00005562> (cream of rice)
+
+AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000115> <http://purl.obolibrary.org/obo/FOODON_00005562> "A finely ground rice cereal food product, that can be cooked with water or milk to form a smooth, creamy cereal."@en)
+AnnotationAssertion(rdfs:label <http://purl.obolibrary.org/obo/FOODON_00005562> "cream of rice"@en)
+SubClassOf(<http://purl.obolibrary.org/obo/FOODON_00005562> <http://purl.obolibrary.org/obo/FOODON_00002205>)
+
+# Class: <http://purl.obolibrary.org/obo/FOODON_00005563> (cream of wheat)
+
+AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000115> <http://purl.obolibrary.org/obo/FOODON_00005563> "A finely ground wheat cereal food product, specifically farina, that is cooked with water or milk to create a smooth and creamy porridge."@en)
+AnnotationAssertion(rdfs:label <http://purl.obolibrary.org/obo/FOODON_00005563> "cream of wheat"@en)
+SubClassOf(<http://purl.obolibrary.org/obo/FOODON_00005563> <http://purl.obolibrary.org/obo/FOODON_00002352>)
+
+# Class: <http://purl.obolibrary.org/obo/FOODON_00005564> (puffed rice cereal (fortified))
+
+AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000115> <http://purl.obolibrary.org/obo/FOODON_00005564> "Puffed rice cereal that has been fortified to enhance its nutritional value."@en)
+AnnotationAssertion(rdfs:label <http://purl.obolibrary.org/obo/FOODON_00005564> "puffed rice cereal (fortified)"@en)
+SubClassOf(<http://purl.obolibrary.org/obo/FOODON_00005564> <http://purl.obolibrary.org/obo/FOODON_03302841>)
+
+# Class: <http://purl.obolibrary.org/obo/FOODON_00005565> (puffed wheat cereal (fortified))
+
+AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000115> <http://purl.obolibrary.org/obo/FOODON_00005565> "Puffed wheat cereal that has been fortified to enhance its nutritional value."@en)
+AnnotationAssertion(rdfs:label <http://purl.obolibrary.org/obo/FOODON_00005565> "puffed wheat cereal (fortified)"@en)
+SubClassOf(<http://purl.obolibrary.org/obo/FOODON_00005565> <http://purl.obolibrary.org/obo/FOODON_03302842>)
+
+# Class: <http://purl.obolibrary.org/obo/FOODON_00005567> (cellophane noodle)
+
+AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000115> <http://purl.obolibrary.org/obo/FOODON_00005567> "Noodle that is made from starch, typically mung bean or sweet potato starch, that becomes soft and transparent when cooked."@en)
+AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000119> <http://purl.obolibrary.org/obo/FOODON_00005567> "https://en.wikipedia.org/wiki/Cellophane_noodles")
+AnnotationAssertion(<http://www.geneontology.org/formats/oboInOwl#hasExactSynonym> <http://purl.obolibrary.org/obo/FOODON_00005567> "chinese cellophane noodle"@en)
+AnnotationAssertion(<http://www.geneontology.org/formats/oboInOwl#hasExactSynonym> <http://purl.obolibrary.org/obo/FOODON_00005567> "fensi"@en)
+AnnotationAssertion(<http://www.geneontology.org/formats/oboInOwl#hasExactSynonym> <http://purl.obolibrary.org/obo/FOODON_00005567> "glass noodle"@en)
+AnnotationAssertion(rdfs:comment <http://purl.obolibrary.org/obo/FOODON_00005567> "They are called \"cellophane noodles\" or \"glass noodles\" due to their transparent, glass-like appearance."@en)
+AnnotationAssertion(rdfs:label <http://purl.obolibrary.org/obo/FOODON_00005567> "cellophane noodle"@en)
+SubClassOf(<http://purl.obolibrary.org/obo/FOODON_00005567> <http://purl.obolibrary.org/obo/FOODON_03306944>)
+
+# Class: <http://purl.obolibrary.org/obo/FOODON_00005568> (quick oats)
+
+AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000115> <http://purl.obolibrary.org/obo/FOODON_00005568> "Whole oat groats that are pre-cooked, dried, and then rolled into thinner flakes to reduce cooking time"@en)
+AnnotationAssertion(rdfs:label <http://purl.obolibrary.org/obo/FOODON_00005568> "quick oats"@en)
+SubClassOf(<http://purl.obolibrary.org/obo/FOODON_00005568> <http://purl.obolibrary.org/obo/FOODON_00001759>)
+
+# Class: <http://purl.obolibrary.org/obo/FOODON_00005569> (quick oats (with iron))
+
+AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000115> <http://purl.obolibrary.org/obo/FOODON_00005569> "Quick oats that have been fortified with added iron."@en)
+AnnotationAssertion(rdfs:label <http://purl.obolibrary.org/obo/FOODON_00005569> "quick oats (with iron)"@en)
+SubClassOf(<http://purl.obolibrary.org/obo/FOODON_00005569> <http://purl.obolibrary.org/obo/FOODON_00005568>)
+
+# Class: <http://purl.obolibrary.org/obo/FOODON_00005570> (lebanon bologna)
+
+AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000115> <http://purl.obolibrary.org/obo/FOODON_00005570> "A type of beef sausage that is cured, smoked, and fermented semi dry, originating from Lebanon County, Pennsylvania."@en)
+AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000119> <http://purl.obolibrary.org/obo/FOODON_00005570> "https://en.wikipedia.org/wiki/Lebanon_bologna")
+AnnotationAssertion(rdfs:label <http://purl.obolibrary.org/obo/FOODON_00005570> "lebanon bologna"@en)
+SubClassOf(<http://purl.obolibrary.org/obo/FOODON_00005570> <http://purl.obolibrary.org/obo/FOODON_00002958>)
+
+# Class: <http://purl.obolibrary.org/obo/FOODON_00005571> (white hominy grits)
+
+AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000115> <http://purl.obolibrary.org/obo/FOODON_00005571> "Hominy grits made from white corn that has undergone nixtamalization, a process involving soaking and cooking the corn in an alkaline solution to remove the hull and soften the kernels."@en)
+AnnotationAssertion(rdfs:label <http://purl.obolibrary.org/obo/FOODON_00005571> "white hominy grits"@en)
+SubClassOf(<http://purl.obolibrary.org/obo/FOODON_00005571> <http://purl.obolibrary.org/obo/FOODON_00003426>)
+
+# Class: <http://purl.obolibrary.org/obo/FOODON_00005572> (pork liver cheese)
+
+AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000115> <http://purl.obolibrary.org/obo/FOODON_00005572> "Liver cheese that is made primarily from ground pork liver."@en)
+AnnotationAssertion(rdfs:label <http://purl.obolibrary.org/obo/FOODON_00005572> "pork liver cheese"@en)
+SubClassOf(<http://purl.obolibrary.org/obo/FOODON_00005572> <http://purl.obolibrary.org/obo/FOODON_00001241>)
+
+# Class: <http://purl.obolibrary.org/obo/FOODON_00005573> (cereal grain beverage)
+
+AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000115> <http://purl.obolibrary.org/obo/FOODON_00005573> "A drink made from processed cereal grains, such as wheat, rice, barley, or oats, often combined with water, flavorings, and sweeteners."@en)
+AnnotationAssertion(rdfs:label <http://purl.obolibrary.org/obo/FOODON_00005573> "cereal grain beverage"@en)
+SubClassOf(<http://purl.obolibrary.org/obo/FOODON_00005573> <http://purl.obolibrary.org/obo/FOODON_00001093>)
+
+# Class: <http://purl.obolibrary.org/obo/FOODON_00005574> (cereal grain-based coffee substitute)
+
+AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000115> <http://purl.obolibrary.org/obo/FOODON_00005574> "A beverage made from roasted cereal grains that is intended to be used as an alternative to coffee."@en)
+AnnotationAssertion(rdfs:label <http://purl.obolibrary.org/obo/FOODON_00005574> "cereal grain-based coffee substitute"@en)
+SubClassOf(<http://purl.obolibrary.org/obo/FOODON_00005574> <http://purl.obolibrary.org/obo/FOODON_00005573>)
+
+# Class: <http://purl.obolibrary.org/obo/FOODON_00005575> (espresso)
+
+AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000115> <http://purl.obolibrary.org/obo/FOODON_00005575> "A coffee beverage brewed by forcing hot water under high pressure through finely-ground coffee beans."@en)
+AnnotationAssertion(rdfs:label <http://purl.obolibrary.org/obo/FOODON_00005575> "espresso"@en)
+SubClassOf(<http://purl.obolibrary.org/obo/FOODON_00005575> <http://purl.obolibrary.org/obo/FOODON_00001244>)
+
+# Class: <http://purl.obolibrary.org/obo/FOODON_00005576> (espresso (decaffeinated))
+
+AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000115> <http://purl.obolibrary.org/obo/FOODON_00005576> "An espresso coffee made using coffee beans from which most of the caffeine has been removed."@en)
+AnnotationAssertion(rdfs:label <http://purl.obolibrary.org/obo/FOODON_00005576> "espresso (decaffeinated)"@en)
+SubClassOf(<http://purl.obolibrary.org/obo/FOODON_00005576> <http://purl.obolibrary.org/obo/FOODON_00005575>)
+
+# Class: <http://purl.obolibrary.org/obo/FOODON_00005577> (soy protein isolate (potassium fortified))
+
+AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000115> <http://purl.obolibrary.org/obo/FOODON_00005577> "A soy protein isolate that has been fortified with potassium, to enhance its mineral content while providing a high concentration of protein."@en)
+AnnotationAssertion(rdfs:label <http://purl.obolibrary.org/obo/FOODON_00005577> "soy protein isolate (potassium fortified)"@en)
+SubClassOf(<http://purl.obolibrary.org/obo/FOODON_00005577> <http://purl.obolibrary.org/obo/FOODON_03310553>)
+
+# Class: <http://purl.obolibrary.org/obo/FOODON_00005578> (soy protein concentrate)
+
+AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000115> <http://purl.obolibrary.org/obo/FOODON_00005578> "A concentrated soy protein product derived from whole soybeans, containing approximately 70% protein. It is produced by partially removing fats and carbohydrates while retaining some natural nutrients and fiber, making it suitable for various food applications."@en)
+AnnotationAssertion(rdfs:label <http://purl.obolibrary.org/obo/FOODON_00005578> "soy protein concentrate"@en)
+SubClassOf(<http://purl.obolibrary.org/obo/FOODON_00005578> <http://purl.obolibrary.org/obo/FOODON_03310368>)
+
+# Class: <http://purl.obolibrary.org/obo/FOODON_00005579> (acid whey)
+
+AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000115> <http://purl.obolibrary.org/obo/FOODON_00005579> "A byproduct of cheese production, specifically from the manufacturing of soft cheeses, such as cottage cheese or cream cheese. It is characterized by a lower pH and higher acidity."@en)
+AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000119> <http://purl.obolibrary.org/obo/FOODON_00005579> "https://en.wikipedia.org/wiki/Whey")
+AnnotationAssertion(<http://www.geneontology.org/formats/oboInOwl#hasExactSynonym> <http://purl.obolibrary.org/obo/FOODON_00005579> "sour whey"@en)
+AnnotationAssertion(rdfs:label <http://purl.obolibrary.org/obo/FOODON_00005579> "acid whey"@en)
+SubClassOf(<http://purl.obolibrary.org/obo/FOODON_00005579> <http://purl.obolibrary.org/obo/FOODON_03305064>)
+
+# Class: <http://purl.obolibrary.org/obo/FOODON_00005580> (sweet whey)
+
+AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000115> <http://purl.obolibrary.org/obo/FOODON_00005580> "A byproduct of cheese production, primarily from the manufacturing of hard cheeses, such as cheddar or gouda."@en)
+AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000119> <http://purl.obolibrary.org/obo/FOODON_00005580> "https://en.wikipedia.org/wiki/Whey")
+AnnotationAssertion(rdfs:label <http://purl.obolibrary.org/obo/FOODON_00005580> "sweet whey"@en)
+SubClassOf(<http://purl.obolibrary.org/obo/FOODON_00005580> <http://purl.obolibrary.org/obo/FOODON_03305064>)
+
+# Class: <http://purl.obolibrary.org/obo/FOODON_00005581> (non-carbonated water (bottled))
+
+AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000115> <http://purl.obolibrary.org/obo/FOODON_00005581> "Water that is bottled without the addition of carbon dioxide, making it still and free of bubbles or fizz"@en)
+AnnotationAssertion(rdfs:label <http://purl.obolibrary.org/obo/FOODON_00005581> "non-carbonated water (bottled)"@en)
+SubClassOf(<http://purl.obolibrary.org/obo/FOODON_00005581> <http://purl.obolibrary.org/obo/FOODON_03301258>)
+
+# Class: <http://purl.obolibrary.org/obo/FOODON_00005582> (butter (light))
+
+AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000115> <http://purl.obolibrary.org/obo/FOODON_00005582> "A butter with reduced fat content, made by adding water, air, or non-fat milk solids."@en)
+AnnotationAssertion(rdfs:label <http://purl.obolibrary.org/obo/FOODON_00005582> "butter (light)"@en)
+SubClassOf(<http://purl.obolibrary.org/obo/FOODON_00005582> <http://purl.obolibrary.org/obo/FOODON_03310351>)
+
+# Class: <http://purl.obolibrary.org/obo/FOODON_00005583> (Kanpyo)
+
+AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000115> <http://purl.obolibrary.org/obo/FOODON_00005583> "The dried shavings of Lagenaria siceraria var. hispida, a variety of calabash gourd."@en)
+AnnotationAssertion(rdfs:label <http://purl.obolibrary.org/obo/FOODON_00005583> "Kanpyo"@en)
+SubClassOf(<http://purl.obolibrary.org/obo/FOODON_00005583> <http://purl.obolibrary.org/obo/FOODON_00001915>)
+
+# Class: <http://purl.obolibrary.org/obo/FOODON_00005584> (pork head cheese)
+
+AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000115> <http://purl.obolibrary.org/obo/FOODON_00005584> "Headcheese made from pork."@en)
+AnnotationAssertion(rdfs:label <http://purl.obolibrary.org/obo/FOODON_00005584> "pork head cheese"@en)
+SubClassOf(<http://purl.obolibrary.org/obo/FOODON_00005584> <http://purl.obolibrary.org/obo/FOODON_03315658>)
+
+# Class: <http://purl.obolibrary.org/obo/FOODON_00005585> (liverwurst spread)
+
+AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000115> <http://purl.obolibrary.org/obo/FOODON_00005585> "A meat spread made from liver, typically from pork or beef, combined with fat, spices, and other seasonings to create a smooth, spreadable product."@en)
+AnnotationAssertion(rdfs:label <http://purl.obolibrary.org/obo/FOODON_00005585> "liverwurst spread"@en)
+SubClassOf(<http://purl.obolibrary.org/obo/FOODON_00005585> <http://purl.obolibrary.org/obo/FOODON_00002819>)
+SubClassOf(<http://purl.obolibrary.org/obo/FOODON_00005585> <http://purl.obolibrary.org/obo/FOODON_00003156>)
+
+# Class: <http://purl.obolibrary.org/obo/FOODON_00005586> (peanut flour)
+
+AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000115> <http://purl.obolibrary.org/obo/FOODON_00005586> "A flour made from crushed, fully or partly defatted peanuts."@en)
+AnnotationAssertion(rdfs:label <http://purl.obolibrary.org/obo/FOODON_00005586> "peanut flour"@en)
+SubClassOf(<http://purl.obolibrary.org/obo/FOODON_00005586> <http://purl.obolibrary.org/obo/FOODON_00002099>)
+SubClassOf(<http://purl.obolibrary.org/obo/FOODON_00005586> <http://purl.obolibrary.org/obo/FOODON_00004510>)
+
+# Class: <http://purl.obolibrary.org/obo/FOODON_00005587> (malt syrup)
+
+AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000115> <http://purl.obolibrary.org/obo/FOODON_00005587> "A syrup made from malted barley or grains."@en)
+AnnotationAssertion(rdfs:label <http://purl.obolibrary.org/obo/FOODON_00005587> "malt syrup"@en)
+SubClassOf(<http://purl.obolibrary.org/obo/FOODON_00005587> <http://purl.obolibrary.org/obo/FOODON_03303225>)
+
+# Class: <http://purl.obolibrary.org/obo/FOODON_00005588> (pork loaf)
+
+AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000115> <http://purl.obolibrary.org/obo/FOODON_00005588> "A blend of pork, fat, and spices, pressed into a loaf shape."@en)
+AnnotationAssertion(rdfs:label <http://purl.obolibrary.org/obo/FOODON_00005588> "pork loaf"@en)
+SubClassOf(<http://purl.obolibrary.org/obo/FOODON_00005588> <http://purl.obolibrary.org/obo/FOODON_00001038>)
+
+# Class: <http://purl.obolibrary.org/obo/FOODON_00005589> (soy-based protein powder)
+
+AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000115> <http://purl.obolibrary.org/obo/FOODON_00005589> "A plant-based protein supplement what is derived from soybeans."@en)
+AnnotationAssertion(rdfs:label <http://purl.obolibrary.org/obo/FOODON_00005589> "soy-based protein powder"@en)
+SubClassOf(<http://purl.obolibrary.org/obo/FOODON_00005589> <http://purl.obolibrary.org/obo/FOODON_03401305>)
+
+# Class: <http://purl.obolibrary.org/obo/FOODON_00005590> (whey-based protein powder)
+
+AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000115> <http://purl.obolibrary.org/obo/FOODON_00005590> "A protein supplement made from whey, the liquid byproduct that is separated during the process of making cheese from milk."@en)
+AnnotationAssertion(rdfs:label <http://purl.obolibrary.org/obo/FOODON_00005590> "whey-based protein powder"@en)
+SubClassOf(<http://purl.obolibrary.org/obo/FOODON_00005590> <http://purl.obolibrary.org/obo/FOODON_03401305>)
+
+# Class: <http://purl.obolibrary.org/obo/FOODON_00005591> (ham)
+
+AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000115> <http://purl.obolibrary.org/obo/FOODON_00005591> "Pork hind leg, cured, smoked or cooked."@en)
+AnnotationAssertion(rdfs:label <http://purl.obolibrary.org/obo/FOODON_00005591> "ham"@en)
+SubClassOf(<http://purl.obolibrary.org/obo/FOODON_00005591> <http://purl.obolibrary.org/obo/FOODON_00002502>)
+
+# Class: <http://purl.obolibrary.org/obo/FOODON_00005592> (ham patty)
+
+AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000115> <http://purl.obolibrary.org/obo/FOODON_00005592> "A patty made from ground or finely chopped ham."@en)
+AnnotationAssertion(rdfs:label <http://purl.obolibrary.org/obo/FOODON_00005592> "ham patty"@en)
+SubClassOf(<http://purl.obolibrary.org/obo/FOODON_00005592> <http://purl.obolibrary.org/obo/FOODON_00002502>)
+SubClassOf(<http://purl.obolibrary.org/obo/FOODON_00005592> <http://purl.obolibrary.org/obo/FOODON_00005591>)
+
+# Class: <http://purl.obolibrary.org/obo/FOODON_00005593> (ham steak)
+
+AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000115> <http://purl.obolibrary.org/obo/FOODON_00005593> "An animal steak that comes from the hind leg of the pig (the ham)."@en)
+AnnotationAssertion(rdfs:label <http://purl.obolibrary.org/obo/FOODON_00005593> "ham steak"@en)
+SubClassOf(<http://purl.obolibrary.org/obo/FOODON_00005593> <http://purl.obolibrary.org/obo/FOODON_00002502>)
+SubClassOf(<http://purl.obolibrary.org/obo/FOODON_00005593> <http://purl.obolibrary.org/obo/FOODON_02010310>)
+
+# Class: <http://purl.obolibrary.org/obo/FOODON_00005594> (pork breakfast strip)
+
+AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000115> <http://purl.obolibrary.org/obo/FOODON_00005594> "A thin slice of pork that is specifically prepared for breakfast."@en)
+AnnotationAssertion(rdfs:label <http://purl.obolibrary.org/obo/FOODON_00005594> "pork breakfast strip"@en)
+SubClassOf(<http://purl.obolibrary.org/obo/FOODON_00005594> <http://purl.obolibrary.org/obo/FOODON_00002301>)
+
+# Class: <http://purl.obolibrary.org/obo/FOODON_00005595> (chilchen)
+
+AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000115> <http://purl.obolibrary.org/obo/FOODON_00005595> "A beverage that is made from red berries."@en)
+AnnotationAssertion(rdfs:label <http://purl.obolibrary.org/obo/FOODON_00005595> "chilchen"@en)
+SubClassOf(<http://purl.obolibrary.org/obo/FOODON_00005595> <http://purl.obolibrary.org/obo/FOODON_00001641>)
+
+# Class: <http://purl.obolibrary.org/obo/FOODON_00005596> (yellow passion fruit juice)
+
+AnnotationAssertion(rdfs:label <http://purl.obolibrary.org/obo/FOODON_00005596> "yellow passion fruit juice"@en)
+SubClassOf(<http://purl.obolibrary.org/obo/FOODON_00005596> <http://purl.obolibrary.org/obo/FOODON_00005455>)
+SubClassOf(<http://purl.obolibrary.org/obo/FOODON_00005596> <http://purl.obolibrary.org/obo/FOODON_03301296>)
 
 # Class: <http://purl.obolibrary.org/obo/FOODON_03000280> (soybean meal (defatted))
 
@@ -420,7 +1661,7 @@ SubClassOf(<http://purl.obolibrary.org/obo/FOODON_03000466> <http://purl.obolibr
 
 # Class: <http://purl.obolibrary.org/obo/FOODON_03000467> (cow whole milk 3.5% fat (vitamin D fortified))
 
-AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000115> <http://purl.obolibrary.org/obo/FOODON_03000467> "Cow whole milk that is Vitamin A andVitamin D fortified."@en)
+AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000115> <http://purl.obolibrary.org/obo/FOODON_03000467> "Cow whole milk that is Vitamin D fortified."@en)
 AnnotationAssertion(<http://purl.org/dc/terms/contributor> <http://purl.obolibrary.org/obo/FOODON_03000467> "https://orcid.org/0000-0001-5275-8866")
 AnnotationAssertion(<http://purl.org/dc/terms/date> <http://purl.obolibrary.org/obo/FOODON_03000467> "2023-10-13T19:38:15Z"^^xsd:dateTime)
 AnnotationAssertion(rdfs:label <http://purl.obolibrary.org/obo/FOODON_03000467> "cow whole milk 3.5% fat (vitamin D fortified)"@en)
@@ -544,29 +1785,30 @@ AnnotationAssertion(<http://purl.org/dc/terms/date> <http://purl.obolibrary.org/
 AnnotationAssertion(rdfs:label <http://purl.obolibrary.org/obo/FOODON_03000481> "american cheese (fat free)"@en)
 SubClassOf(<http://purl.obolibrary.org/obo/FOODON_03000481> <http://purl.obolibrary.org/obo/FOODON_03000480>)
 
-# Class: <http://purl.obolibrary.org/obo/FOODON_03000482> (american cheese (processed, pasteurized))
+# Class: <http://purl.obolibrary.org/obo/FOODON_03000482> (pasteurized process american cheese)
 
 AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000115> <http://purl.obolibrary.org/obo/FOODON_03000482> "American cheese that is made from combining more than one cheese."@en)
 AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000119> <http://purl.obolibrary.org/obo/FOODON_03000482> "https://en.wikipedia.org/wiki/American_cheese")
 AnnotationAssertion(<http://purl.org/dc/terms/contributor> <http://purl.obolibrary.org/obo/FOODON_03000482> "https://orcid.org/0000-0001-5275-8866")
 AnnotationAssertion(<http://purl.org/dc/terms/date> <http://purl.obolibrary.org/obo/FOODON_03000482> "2023-10-13T19:38:15Z"^^xsd:dateTime)
-AnnotationAssertion(rdfs:label <http://purl.obolibrary.org/obo/FOODON_03000482> "american cheese (processed, pasteurized)"@en)
+AnnotationAssertion(rdfs:label <http://purl.obolibrary.org/obo/FOODON_03000482> "pasteurized process american cheese"@en)
 SubClassOf(<http://purl.obolibrary.org/obo/FOODON_03000482> <http://purl.obolibrary.org/obo/FOODON_03000480>)
 
-# Class: <http://purl.obolibrary.org/obo/FOODON_03000483> (american cheese (processed, pasteurized, vitamin D fortified))
+# Class: <http://purl.obolibrary.org/obo/FOODON_03000483> (pasteurized process american cheese (vitamin D fortified))
 
 AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000115> <http://purl.obolibrary.org/obo/FOODON_03000483> "A pasteurized process american cheese that is vitamin D fortified."@en)
 AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000119> <http://purl.obolibrary.org/obo/FOODON_03000483> "https://en.wikipedia.org/wiki/American_cheese")
 AnnotationAssertion(<http://purl.org/dc/terms/contributor> <http://purl.obolibrary.org/obo/FOODON_03000483> "https://orcid.org/0000-0001-5275-8866")
 AnnotationAssertion(<http://purl.org/dc/terms/date> <http://purl.obolibrary.org/obo/FOODON_03000483> "2023-10-13T19:38:15Z"^^xsd:dateTime)
-AnnotationAssertion(rdfs:label <http://purl.obolibrary.org/obo/FOODON_03000483> "american cheese (processed, pasteurized, vitamin D fortified)"@en)
+AnnotationAssertion(rdfs:label <http://purl.obolibrary.org/obo/FOODON_03000483> "pasteurized process american cheese (vitamin D fortified)"@en)
 SubClassOf(<http://purl.obolibrary.org/obo/FOODON_03000483> <http://purl.obolibrary.org/obo/FOODON_03000482>)
 
 # Class: <http://purl.obolibrary.org/obo/FOODON_03000484> (pasteurized process american cheese food)
 
 AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000115> <http://purl.obolibrary.org/obo/FOODON_03000484> "American cheese that contains at least 51% cheese but other specific dairy ingredients such as cream, milk, skim milk, buttermilk, cheese whey, or albumin from cheese whey are added."@en)
+AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000119> <http://purl.obolibrary.org/obo/FOODON_03000484> <https://www.ams.usda.gov/sites/default/files/media/FINALDPPC5PasteurizedProcessAmericanCheeseSpec092019.pdf>)
 AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000119> <http://purl.obolibrary.org/obo/FOODON_03000484> "https://en.wikipedia.org/wiki/American_cheese")
-AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000119> <http://purl.obolibrary.org/obo/FOODON_03000484> "https://www.ams.usda.gov/sites/default/files/media/FINALDPPC5PasteurizedProcessAmericanCheeseSpec092019.pdf ")
+AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000119> <http://purl.obolibrary.org/obo/FOODON_03000484> "https://www.ams.usda.gov/sites/default/files/media/FINALDPPC5PasteurizedProcessAmericanCheeseSpec092019.pdf")
 AnnotationAssertion(<http://purl.org/dc/terms/contributor> <http://purl.obolibrary.org/obo/FOODON_03000484> "https://orcid.org/0000-0001-5275-8866")
 AnnotationAssertion(<http://purl.org/dc/terms/date> <http://purl.obolibrary.org/obo/FOODON_03000484> "2023-10-13T19:38:15Z"^^xsd:dateTime)
 AnnotationAssertion(rdfs:label <http://purl.obolibrary.org/obo/FOODON_03000484> "pasteurized process american cheese food"@en)
@@ -629,6 +1871,57 @@ AnnotationAssertion(<http://purl.org/dc/terms/contributor> <http://purl.obolibra
 AnnotationAssertion(<http://purl.org/dc/terms/date> <http://purl.obolibrary.org/obo/FOODON_03000491> "2023-10-13T19:38:15Z"^^xsd:dateTime)
 AnnotationAssertion(rdfs:label <http://purl.obolibrary.org/obo/FOODON_03000491> "arrowroot flour food product"@en)
 SubClassOf(<http://purl.obolibrary.org/obo/FOODON_03000491> <http://purl.obolibrary.org/obo/FOODON_00001056>)
+
+# Class: <http://purl.obolibrary.org/obo/FOODON_03301003> (pineapple (canned))
+
+AnnotationAssertion(rdfs:label <http://purl.obolibrary.org/obo/FOODON_03301003> "pineapple (canned)"@en)
+EquivalentClasses(<http://purl.obolibrary.org/obo/FOODON_03301003> ObjectIntersectionOf(<http://purl.obolibrary.org/obo/FOODON_00002418> ObjectSomeValuesFrom(<http://purl.obolibrary.org/obo/RO_0001000> <http://purl.obolibrary.org/obo/FOODON_00003459>)))
+SubClassOf(<http://purl.obolibrary.org/obo/FOODON_03301003> <http://purl.obolibrary.org/obo/FOODON_00002119>)
+
+# Class: <http://purl.obolibrary.org/obo/FOODON_03301085> (shrimp (canned))
+
+AnnotationAssertion(rdfs:label <http://purl.obolibrary.org/obo/FOODON_03301085> "shrimp (canned)"@en)
+EquivalentClasses(<http://purl.obolibrary.org/obo/FOODON_03301085> ObjectIntersectionOf(<http://purl.obolibrary.org/obo/FOODON_00002418> ObjectSomeValuesFrom(<http://purl.obolibrary.org/obo/RO_0001000> <http://purl.obolibrary.org/obo/FOODON_03411237>)))
+SubClassOf(<http://purl.obolibrary.org/obo/FOODON_03301085> <http://purl.obolibrary.org/obo/FOODON_00002239>)
+
+# Class: <http://purl.obolibrary.org/obo/FOODON_03301087> (salmon (canned))
+
+AnnotationAssertion(rdfs:label <http://purl.obolibrary.org/obo/FOODON_03301087> "salmon (canned)"@en)
+EquivalentClasses(<http://purl.obolibrary.org/obo/FOODON_03301087> ObjectIntersectionOf(<http://purl.obolibrary.org/obo/FOODON_00002418> ObjectSomeValuesFrom(<http://purl.obolibrary.org/obo/RO_0001000> <http://purl.obolibrary.org/obo/FOODON_00003473>)))
+SubClassOf(<http://purl.obolibrary.org/obo/FOODON_03301087> <http://purl.obolibrary.org/obo/FOODON_00002220>)
+
+# Class: <http://purl.obolibrary.org/obo/FOODON_03301127> (grape juice)
+
+AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000115> <http://purl.obolibrary.org/obo/FOODON_03301127> "A fruit juice made from grapes."@en)
+AnnotationAssertion(rdfs:label <http://purl.obolibrary.org/obo/FOODON_03301127> "grape juice"@en)
+SubClassOf(<http://purl.obolibrary.org/obo/FOODON_03301127> <http://purl.obolibrary.org/obo/FOODON_00001170>)
+SubClassOf(<http://purl.obolibrary.org/obo/FOODON_03301127> <http://purl.obolibrary.org/obo/FOODON_03301296>)
+
+# Class: <http://purl.obolibrary.org/obo/FOODON_03301151> (mussel (canned))
+
+AnnotationAssertion(rdfs:label <http://purl.obolibrary.org/obo/FOODON_03301151> "mussel (canned)"@en)
+EquivalentClasses(<http://purl.obolibrary.org/obo/FOODON_03301151> ObjectIntersectionOf(<http://purl.obolibrary.org/obo/FOODON_00002418> ObjectSomeValuesFrom(<http://purl.obolibrary.org/obo/RO_0001000> <http://purl.obolibrary.org/obo/FOODON_03411223>)))
+SubClassOf(<http://purl.obolibrary.org/obo/FOODON_03301151> <http://purl.obolibrary.org/obo/FOODON_00002051>)
+
+# Class: <http://purl.obolibrary.org/obo/FOODON_03301155> (clam (canned))
+
+AnnotationAssertion(rdfs:label <http://purl.obolibrary.org/obo/FOODON_03301155> "clam (canned)"@en)
+EquivalentClasses(<http://purl.obolibrary.org/obo/FOODON_03301155> ObjectIntersectionOf(<http://purl.obolibrary.org/obo/FOODON_00002418> ObjectSomeValuesFrom(<http://purl.obolibrary.org/obo/RO_0001000> <http://purl.obolibrary.org/obo/FOODON_03411331>)))
+SubClassOf(<http://purl.obolibrary.org/obo/FOODON_03301155> <http://purl.obolibrary.org/obo/FOODON_00001291>)
+
+# Class: <http://purl.obolibrary.org/obo/FOODON_03301165> (albacore (canned))
+
+AnnotationAssertion(rdfs:label <http://purl.obolibrary.org/obo/FOODON_03301165> "albacore (canned)"@en)
+EquivalentClasses(<http://purl.obolibrary.org/obo/FOODON_03301165> ObjectIntersectionOf(<http://purl.obolibrary.org/obo/FOODON_00002418> ObjectSomeValuesFrom(<http://purl.obolibrary.org/obo/RO_0001000> <http://purl.obolibrary.org/obo/FOODON_03411506>)))
+SubClassOf(<http://purl.obolibrary.org/obo/FOODON_03301165> <http://purl.obolibrary.org/obo/FOODON_00001578>)
+
+# Class: <http://purl.obolibrary.org/obo/FOODON_03310185> (ghee)
+
+AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000115> <http://purl.obolibrary.org/obo/FOODON_03310185> "A type of clarified butter originating from the Indian subcontinent."@en)
+AnnotationAssertion(<http://purl.org/dc/terms/contributor> <http://purl.obolibrary.org/obo/FOODON_03310185> "https://orcid.org/0000-0001-5275-8866")
+AnnotationAssertion(<http://www.geneontology.org/formats/oboInOwl#hasDbXref> <http://purl.obolibrary.org/obo/FOODON_03310185> "https://bioregistry.io/reference/siren:F10185")
+AnnotationAssertion(rdfs:label <http://purl.obolibrary.org/obo/FOODON_03310185> "ghee"@en)
+SubClassOf(<http://purl.obolibrary.org/obo/FOODON_03310185> <http://purl.obolibrary.org/obo/FOODON_00005495>)
 
 
 )

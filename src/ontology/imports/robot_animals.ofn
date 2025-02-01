@@ -31,7 +31,6 @@ Declaration(Class(<http://purl.obolibrary.org/obo/NCBITaxon_34899>))
 Declaration(Class(<http://purl.obolibrary.org/obo/NCBITaxon_365635>))
 Declaration(Class(<http://purl.obolibrary.org/obo/NCBITaxon_37171>))
 Declaration(Class(<http://purl.obolibrary.org/obo/NCBITaxon_371913>))
-Declaration(Class(<http://purl.obolibrary.org/obo/NCBITaxon_381874>))
 Declaration(Class(<http://purl.obolibrary.org/obo/NCBITaxon_390684>))
 Declaration(Class(<http://purl.obolibrary.org/obo/NCBITaxon_52644>))
 Declaration(Class(<http://purl.obolibrary.org/obo/NCBITaxon_55048>))
@@ -55,6 +54,7 @@ Declaration(Class(<http://purl.obolibrary.org/obo/NCBITaxon_8839>))
 Declaration(Class(<http://purl.obolibrary.org/obo/NCBITaxon_8930>))
 Declaration(Class(<http://purl.obolibrary.org/obo/NCBITaxon_8969>))
 Declaration(Class(<http://purl.obolibrary.org/obo/NCBITaxon_904227>))
+Declaration(Class(<http://purl.obolibrary.org/obo/NCBITaxon_91763>))
 Declaration(Class(<http://purl.obolibrary.org/obo/NCBITaxon_9267>))
 Declaration(Class(<http://purl.obolibrary.org/obo/NCBITaxon_9397>))
 Declaration(Class(<http://purl.obolibrary.org/obo/NCBITaxon_9438>))
@@ -137,11 +137,6 @@ SubClassOf(<http://purl.obolibrary.org/obo/FOODON_03000300> <http://purl.obolibr
 
 # Class: <http://purl.obolibrary.org/obo/FOODON_03000301> (squab)
 
-AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000115> <http://purl.obolibrary.org/obo/FOODON_03000301> "An immature domestic pigeon, typically under four weeks old."@en)
-AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000119> <http://purl.obolibrary.org/obo/FOODON_03000301> "https://en.wikipedia.org/wiki/Squab")
-AnnotationAssertion(<http://purl.org/dc/terms/contributor> <http://purl.obolibrary.org/obo/FOODON_03000301> "https://orcid.org/0000-0001-5275-8866")
-AnnotationAssertion(<http://purl.org/dc/terms/date> <http://purl.obolibrary.org/obo/FOODON_03000301> "2022-10-20T12:36:43Z"^^xsd:dateTime)
-AnnotationAssertion(rdfs:label <http://purl.obolibrary.org/obo/FOODON_03000301> "squab"@en)
 SubClassOf(<http://purl.obolibrary.org/obo/FOODON_03000301> <http://purl.obolibrary.org/obo/NCBITaxon_8930>)
 
 # Class: <http://purl.obolibrary.org/obo/NCBITaxon_100937> (Papio papio)
@@ -228,13 +223,6 @@ AnnotationAssertion(<http://www.geneontology.org/formats/oboInOwl#hasExactSynony
 AnnotationAssertion(<http://purl.org/dc/terms/contributor> <http://purl.obolibrary.org/obo/NCBITaxon_371913> "https://orcid.org/0000-0001-5275-8866")
 AnnotationAssertion(<http://www.geneontology.org/formats/oboInOwl#hasDbXref> <http://purl.obolibrary.org/obo/NCBITaxon_371913> "itis:174930")
 AnnotationAssertion(rdfs:seeAlso <http://purl.obolibrary.org/obo/NCBITaxon_371913> "https://en.wikipedia.org/wiki/American_white_ibis")
-
-# Class: <http://purl.obolibrary.org/obo/NCBITaxon_381874> (Pteroglossus bailloni)
-
-AnnotationAssertion(<http://purl.org/dc/terms/contributor> <http://purl.obolibrary.org/obo/NCBITaxon_381874> "https://orcid.org/0000-0001-5275-8866")
-AnnotationAssertion(<http://www.geneontology.org/formats/oboInOwl#hasDbXref> <http://purl.obolibrary.org/obo/NCBITaxon_381874> "itis:1145221")
-AnnotationAssertion(<http://www.geneontology.org/formats/oboInOwl#hasExactSynonym> <http://purl.obolibrary.org/obo/NCBITaxon_381874> "Saffron toucanet"@en)
-AnnotationAssertion(rdfs:seeAlso <http://purl.obolibrary.org/obo/NCBITaxon_381874> "https://en.wikipedia.org/wiki/Saffron_toucanet")
 
 # Class: <http://purl.obolibrary.org/obo/NCBITaxon_390684> (Aulotrachichthys prosthemius)
 
@@ -387,6 +375,13 @@ AnnotationAssertion(rdfs:seeAlso <http://purl.obolibrary.org/obo/NCBITaxon_8969>
 AnnotationAssertion(<http://purl.org/dc/terms/contributor> <http://purl.obolibrary.org/obo/NCBITaxon_904227> "https://orcid.org/0000-0001-5275-8866")
 AnnotationAssertion(<http://www.geneontology.org/formats/oboInOwl#hasDbXref> <http://purl.obolibrary.org/obo/NCBITaxon_904227> "itis:551863")
 AnnotationAssertion(rdfs:seeAlso <http://purl.obolibrary.org/obo/NCBITaxon_904227> "https://en.wikipedia.org/wiki/Giant_musk_turtle")
+
+# Class: <http://purl.obolibrary.org/obo/NCBITaxon_91763> (Baillonius bailloni)
+
+AnnotationAssertion(<http://purl.org/dc/terms/contributor> <http://purl.obolibrary.org/obo/NCBITaxon_91763> "https://orcid.org/0000-0001-5275-8866")
+AnnotationAssertion(<http://www.geneontology.org/formats/oboInOwl#hasDbXref> <http://purl.obolibrary.org/obo/NCBITaxon_91763> "itis:1145221")
+AnnotationAssertion(<http://www.geneontology.org/formats/oboInOwl#hasExactSynonym> <http://purl.obolibrary.org/obo/NCBITaxon_91763> "Saffron toucanet"@en)
+AnnotationAssertion(rdfs:seeAlso <http://purl.obolibrary.org/obo/NCBITaxon_91763> "https://en.wikipedia.org/wiki/Saffron_toucanet")
 
 # Class: <http://purl.obolibrary.org/obo/NCBITaxon_9267> (Didelphis virginiana)
 
