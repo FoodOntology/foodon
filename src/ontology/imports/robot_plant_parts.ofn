@@ -1404,6 +1404,7 @@ Declaration(Class(<http://purl.obolibrary.org/obo/FOODON_00005228>))
 Declaration(Class(<http://purl.obolibrary.org/obo/FOODON_00005229>))
 Declaration(Class(<http://purl.obolibrary.org/obo/FOODON_00005230>))
 Declaration(Class(<http://purl.obolibrary.org/obo/FOODON_00005231>))
+Declaration(Class(<http://purl.obolibrary.org/obo/FOODON_00005232>))
 Declaration(Class(<http://purl.obolibrary.org/obo/FOODON_00005233>))
 Declaration(Class(<http://purl.obolibrary.org/obo/FOODON_00005234>))
 Declaration(Class(<http://purl.obolibrary.org/obo/FOODON_00005235>))
@@ -1412,7 +1413,6 @@ Declaration(Class(<http://purl.obolibrary.org/obo/FOODON_00005237>))
 Declaration(Class(<http://purl.obolibrary.org/obo/FOODON_00005238>))
 Declaration(Class(<http://purl.obolibrary.org/obo/FOODON_00005239>))
 Declaration(Class(<http://purl.obolibrary.org/obo/FOODON_00005240>))
-Declaration(Class(<http://purl.obolibrary.org/obo/FOODON_00005241>))
 Declaration(Class(<http://purl.obolibrary.org/obo/FOODON_00005242>))
 Declaration(Class(<http://purl.obolibrary.org/obo/FOODON_00005244>))
 Declaration(Class(<http://purl.obolibrary.org/obo/FOODON_00005245>))
@@ -1420,6 +1420,7 @@ Declaration(Class(<http://purl.obolibrary.org/obo/FOODON_00005246>))
 Declaration(Class(<http://purl.obolibrary.org/obo/FOODON_00005247>))
 Declaration(Class(<http://purl.obolibrary.org/obo/FOODON_00005248>))
 Declaration(Class(<http://purl.obolibrary.org/obo/FOODON_00005249>))
+Declaration(Class(<http://purl.obolibrary.org/obo/FOODON_00005250>))
 Declaration(Class(<http://purl.obolibrary.org/obo/FOODON_00005251>))
 Declaration(Class(<http://purl.obolibrary.org/obo/FOODON_00005252>))
 Declaration(Class(<http://purl.obolibrary.org/obo/FOODON_00005253>))
@@ -1536,6 +1537,7 @@ Declaration(Class(<http://purl.obolibrary.org/obo/FOODON_00005366>))
 Declaration(Class(<http://purl.obolibrary.org/obo/FOODON_00005367>))
 Declaration(Class(<http://purl.obolibrary.org/obo/FOODON_00005368>))
 Declaration(Class(<http://purl.obolibrary.org/obo/FOODON_00005369>))
+Declaration(Class(<http://purl.obolibrary.org/obo/FOODON_00005453>))
 Declaration(Class(<http://purl.obolibrary.org/obo/FOODON_03000006>))
 Declaration(Class(<http://purl.obolibrary.org/obo/FOODON_03000007>))
 Declaration(Class(<http://purl.obolibrary.org/obo/FOODON_03000008>))
@@ -1873,6 +1875,7 @@ Declaration(Class(<http://purl.obolibrary.org/obo/FOODON_03304644>))
 Declaration(Class(<http://purl.obolibrary.org/obo/FOODON_03304817>))
 Declaration(Class(<http://purl.obolibrary.org/obo/FOODON_03304818>))
 Declaration(Class(<http://purl.obolibrary.org/obo/FOODON_03304996>))
+Declaration(Class(<http://purl.obolibrary.org/obo/FOODON_03305104>))
 Declaration(Class(<http://purl.obolibrary.org/obo/FOODON_03305165>))
 Declaration(Class(<http://purl.obolibrary.org/obo/FOODON_03305367>))
 Declaration(Class(<http://purl.obolibrary.org/obo/FOODON_03305806>))
@@ -8934,7 +8937,6 @@ SubClassOf(<http://purl.obolibrary.org/obo/FOODON_00004581> <http://purl.obolibr
 
 # Class: <http://purl.obolibrary.org/obo/FOODON_00004582> (chokeberry food product)
 
-AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000115> <http://purl.obolibrary.org/obo/FOODON_00004582> "A berry fruit of a chokeberry plant."@en)
 AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000115> <http://purl.obolibrary.org/obo/FOODON_00004582> "A food product that has defining ingredient a chokeberry part."@en)
 AnnotationAssertion(<http://purl.org/dc/terms/contributor> <http://purl.obolibrary.org/obo/FOODON_00004582> "https://orcid.org/0000-0001-5275-8866")
 AnnotationAssertion(<http://purl.org/dc/terms/contributor> <http://purl.obolibrary.org/obo/FOODON_00004582> "https://orcid.org/0000-0002-0995-02788")
@@ -8942,11 +8944,8 @@ AnnotationAssertion(<http://purl.org/dc/terms/contributor> <http://purl.obolibra
 AnnotationAssertion(<http://purl.org/dc/terms/contributor> <http://purl.obolibrary.org/obo/FOODON_00004582> "https://orcid.org/0000-0002-8844-9165")
 AnnotationAssertion(<http://purl.org/dc/terms/contributor> <http://purl.obolibrary.org/obo/FOODON_00004582> "https://orcid.org/0000-0003-3653-3805")
 AnnotationAssertion(<http://purl.org/dc/terms/date> <http://purl.obolibrary.org/obo/FOODON_00004582> "2024-03-06T10:00:11Z"^^xsd:dateTime)
-AnnotationAssertion(rdfs:label <http://purl.obolibrary.org/obo/FOODON_00004582> "chokeberry"@en)
 AnnotationAssertion(rdfs:label <http://purl.obolibrary.org/obo/FOODON_00004582> "chokeberry food product"@en)
-EquivalentClasses(<http://purl.obolibrary.org/obo/FOODON_00004582> ObjectIntersectionOf(<http://purl.obolibrary.org/obo/PO_0030108> ObjectSomeValuesFrom(<http://purl.obolibrary.org/obo/RO_0002162> <http://purl.obolibrary.org/obo/NCBITaxon_193297>)))
 SubClassOf(<http://purl.obolibrary.org/obo/FOODON_00004582> <http://purl.obolibrary.org/obo/FOODON_00001640>)
-SubClassOf(<http://purl.obolibrary.org/obo/FOODON_00004582> <http://purl.obolibrary.org/obo/FOODON_00004582>)
 
 # Class: <http://purl.obolibrary.org/obo/FOODON_00004583> (chokeberry (raw))
 
@@ -8958,8 +8957,8 @@ AnnotationAssertion(<http://purl.org/dc/terms/contributor> <http://purl.obolibra
 AnnotationAssertion(<http://purl.org/dc/terms/contributor> <http://purl.obolibrary.org/obo/FOODON_00004583> "https://orcid.org/0000-0003-3653-3805")
 AnnotationAssertion(<http://purl.org/dc/terms/date> <http://purl.obolibrary.org/obo/FOODON_00004583> "2024-03-06T10:00:11Z"^^xsd:dateTime)
 AnnotationAssertion(rdfs:label <http://purl.obolibrary.org/obo/FOODON_00004583> "chokeberry (raw)"@en)
-EquivalentClasses(<http://purl.obolibrary.org/obo/FOODON_00004583> ObjectIntersectionOf(<http://purl.obolibrary.org/obo/FOODON_00004582> ObjectSomeValuesFrom(<http://purl.obolibrary.org/obo/RO_0000086> <http://purl.obolibrary.org/obo/FOODON_00004348>)))
-SubClassOf(<http://purl.obolibrary.org/obo/FOODON_00004583> <http://purl.obolibrary.org/obo/FOODON_00004582>)
+EquivalentClasses(<http://purl.obolibrary.org/obo/FOODON_00004583> ObjectIntersectionOf(<http://purl.obolibrary.org/obo/FOODON_00005232> ObjectSomeValuesFrom(<http://purl.obolibrary.org/obo/RO_0000086> <http://purl.obolibrary.org/obo/FOODON_00004348>)))
+SubClassOf(<http://purl.obolibrary.org/obo/FOODON_00004583> <http://purl.obolibrary.org/obo/FOODON_00005232>)
 
 # Class: <http://purl.obolibrary.org/obo/FOODON_00004584> (chokeberry (frozen))
 
@@ -8971,8 +8970,8 @@ AnnotationAssertion(<http://purl.org/dc/terms/contributor> <http://purl.obolibra
 AnnotationAssertion(<http://purl.org/dc/terms/contributor> <http://purl.obolibrary.org/obo/FOODON_00004584> "https://orcid.org/0000-0003-3653-3805")
 AnnotationAssertion(<http://purl.org/dc/terms/date> <http://purl.obolibrary.org/obo/FOODON_00004584> "2024-03-06T10:00:11Z"^^xsd:dateTime)
 AnnotationAssertion(rdfs:label <http://purl.obolibrary.org/obo/FOODON_00004584> "chokeberry (frozen)"@en)
-EquivalentClasses(<http://purl.obolibrary.org/obo/FOODON_00004584> ObjectIntersectionOf(<http://purl.obolibrary.org/obo/FOODON_00004582> ObjectSomeValuesFrom(<http://purl.obolibrary.org/obo/RO_0000086> <http://purl.obolibrary.org/obo/PATO_0001985>)))
-SubClassOf(<http://purl.obolibrary.org/obo/FOODON_00004584> <http://purl.obolibrary.org/obo/FOODON_00004582>)
+EquivalentClasses(<http://purl.obolibrary.org/obo/FOODON_00004584> ObjectIntersectionOf(<http://purl.obolibrary.org/obo/FOODON_00005232> ObjectSomeValuesFrom(<http://purl.obolibrary.org/obo/RO_0000086> <http://purl.obolibrary.org/obo/PATO_0001985>)))
+SubClassOf(<http://purl.obolibrary.org/obo/FOODON_00004584> <http://purl.obolibrary.org/obo/FOODON_00005232>)
 
 # Class: <http://purl.obolibrary.org/obo/FOODON_00004585> (black chokeberry)
 
@@ -8985,7 +8984,7 @@ AnnotationAssertion(<http://purl.org/dc/terms/contributor> <http://purl.obolibra
 AnnotationAssertion(<http://purl.org/dc/terms/date> <http://purl.obolibrary.org/obo/FOODON_00004585> "2024-03-06T10:00:11Z"^^xsd:dateTime)
 AnnotationAssertion(rdfs:label <http://purl.obolibrary.org/obo/FOODON_00004585> "black chokeberry"@en)
 EquivalentClasses(<http://purl.obolibrary.org/obo/FOODON_00004585> ObjectIntersectionOf(<http://purl.obolibrary.org/obo/PO_0030108> ObjectSomeValuesFrom(<http://purl.obolibrary.org/obo/RO_0002162> <http://purl.obolibrary.org/obo/NCBITaxon_661339>)))
-SubClassOf(<http://purl.obolibrary.org/obo/FOODON_00004585> <http://purl.obolibrary.org/obo/FOODON_00004582>)
+SubClassOf(<http://purl.obolibrary.org/obo/FOODON_00004585> <http://purl.obolibrary.org/obo/FOODON_00005232>)
 
 # Class: <http://purl.obolibrary.org/obo/FOODON_00004586> (black chokeberry (raw))
 
@@ -9233,10 +9232,9 @@ AnnotationAssertion(rdfs:label <http://purl.obolibrary.org/obo/FOODON_00004604> 
 EquivalentClasses(<http://purl.obolibrary.org/obo/FOODON_00004604> ObjectIntersectionOf(<http://purl.obolibrary.org/obo/FOODON_03307022> ObjectSomeValuesFrom(<http://purl.obolibrary.org/obo/RO_0000086> <http://purl.obolibrary.org/obo/FOODON_00004348>)))
 SubClassOf(<http://purl.obolibrary.org/obo/FOODON_00004604> <http://purl.obolibrary.org/obo/FOODON_03307022>)
 
-# Class: <http://purl.obolibrary.org/obo/FOODON_00004605> (purple passion fruit pulp)
+# Class: <http://purl.obolibrary.org/obo/FOODON_00004605> (purple passion fruit)
 
 AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000115> <http://purl.obolibrary.org/obo/FOODON_00004605> "A pepo fruit of a purple passion fruit plant."@en)
-AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000115> <http://purl.obolibrary.org/obo/FOODON_00004605> "The pulp of a purple passion fruit."@en)
 AnnotationAssertion(<http://purl.org/dc/terms/contributor> <http://purl.obolibrary.org/obo/FOODON_00004605> "https://orcid.org/0000-0001-5275-8866")
 AnnotationAssertion(<http://purl.org/dc/terms/contributor> <http://purl.obolibrary.org/obo/FOODON_00004605> "https://orcid.org/0000-0002-0995-02788")
 AnnotationAssertion(<http://purl.org/dc/terms/contributor> <http://purl.obolibrary.org/obo/FOODON_00004605> "https://orcid.org/0000-0002-8461-9745")
@@ -9244,10 +9242,8 @@ AnnotationAssertion(<http://purl.org/dc/terms/contributor> <http://purl.obolibra
 AnnotationAssertion(<http://purl.org/dc/terms/contributor> <http://purl.obolibrary.org/obo/FOODON_00004605> "https://orcid.org/0000-0003-3653-3805")
 AnnotationAssertion(<http://purl.org/dc/terms/date> <http://purl.obolibrary.org/obo/FOODON_00004605> "2024-03-06T10:00:11Z"^^xsd:dateTime)
 AnnotationAssertion(rdfs:label <http://purl.obolibrary.org/obo/FOODON_00004605> "purple passion fruit"@en)
-AnnotationAssertion(rdfs:label <http://purl.obolibrary.org/obo/FOODON_00004605> "purple passion fruit pulp"@en)
 EquivalentClasses(<http://purl.obolibrary.org/obo/FOODON_00004605> ObjectIntersectionOf(<http://purl.obolibrary.org/obo/PO_0030111> ObjectSomeValuesFrom(<http://purl.obolibrary.org/obo/RO_0002162> <http://purl.obolibrary.org/obo/NCBITaxon_3031349>)))
 SubClassOf(<http://purl.obolibrary.org/obo/FOODON_00004605> <http://purl.obolibrary.org/obo/FOODON_00003675>)
-SubClassOf(<http://purl.obolibrary.org/obo/FOODON_00004605> <http://purl.obolibrary.org/obo/FOODON_00004605>)
 
 # Class: <http://purl.obolibrary.org/obo/FOODON_00004606> (purple passion fruit pulp (raw))
 
@@ -9259,8 +9255,8 @@ AnnotationAssertion(<http://purl.org/dc/terms/contributor> <http://purl.obolibra
 AnnotationAssertion(<http://purl.org/dc/terms/contributor> <http://purl.obolibrary.org/obo/FOODON_00004606> "https://orcid.org/0000-0003-3653-3805")
 AnnotationAssertion(<http://purl.org/dc/terms/date> <http://purl.obolibrary.org/obo/FOODON_00004606> "2024-03-06T10:00:11Z"^^xsd:dateTime)
 AnnotationAssertion(rdfs:label <http://purl.obolibrary.org/obo/FOODON_00004606> "purple passion fruit pulp (raw)"@en)
-EquivalentClasses(<http://purl.obolibrary.org/obo/FOODON_00004606> ObjectIntersectionOf(<http://purl.obolibrary.org/obo/FOODON_00004605> ObjectSomeValuesFrom(<http://purl.obolibrary.org/obo/RO_0000086> <http://purl.obolibrary.org/obo/FOODON_00004348>)))
-SubClassOf(<http://purl.obolibrary.org/obo/FOODON_00004606> <http://purl.obolibrary.org/obo/FOODON_00004605>)
+EquivalentClasses(<http://purl.obolibrary.org/obo/FOODON_00004606> ObjectIntersectionOf(<http://purl.obolibrary.org/obo/FOODON_00005453> ObjectSomeValuesFrom(<http://purl.obolibrary.org/obo/RO_0000086> <http://purl.obolibrary.org/obo/FOODON_00004348>)))
+SubClassOf(<http://purl.obolibrary.org/obo/FOODON_00004606> <http://purl.obolibrary.org/obo/FOODON_00005453>)
 
 # Class: <http://purl.obolibrary.org/obo/FOODON_00004607> (Honeycrisp apple (raw))
 
@@ -14671,9 +14667,8 @@ AnnotationAssertion(rdfs:label <http://purl.obolibrary.org/obo/FOODON_00005059> 
 SubClassOf(<http://purl.obolibrary.org/obo/FOODON_00005059> <http://purl.obolibrary.org/obo/FOODON_03309946>)
 SubClassOf(<http://purl.obolibrary.org/obo/FOODON_00005059> ObjectSomeValuesFrom(<http://purl.obolibrary.org/obo/RO_0002162> <http://purl.obolibrary.org/obo/FOODON_00005047>))
 
-# Class: <http://purl.obolibrary.org/obo/FOODON_00005060> (Sy McCloud hard red spring wheat kernel (dried raw))
+# Class: <http://purl.obolibrary.org/obo/FOODON_00005060> (Sy McCloud hard red spring wheat kernel (raw))
 
-AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000115> <http://purl.obolibrary.org/obo/FOODON_00005060> "A raw sy McCloud hard red spring kernel that has been dried."@en)
 AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000115> <http://purl.obolibrary.org/obo/FOODON_00005060> "A raw sy McCloud hard red spring kernel."@en)
 AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000119> <http://purl.obolibrary.org/obo/FOODON_00005060> "https://birdsallgrainandseed.com/wp-content/uploads/2021/11/SY-McCloud-2021-Tech-Sheet-AgriPro.pdf")
 AnnotationAssertion(<http://purl.org/dc/terms/contributor> <http://purl.obolibrary.org/obo/FOODON_00005060> "https://orcid.org/0000-0001-5275-8866")
@@ -14682,7 +14677,6 @@ AnnotationAssertion(<http://purl.org/dc/terms/contributor> <http://purl.obolibra
 AnnotationAssertion(<http://purl.org/dc/terms/contributor> <http://purl.obolibrary.org/obo/FOODON_00005060> "https://orcid.org/0000-0002-8844-9165")
 AnnotationAssertion(<http://purl.org/dc/terms/contributor> <http://purl.obolibrary.org/obo/FOODON_00005060> "https://orcid.org/0000-0003-3653-3805")
 AnnotationAssertion(<http://purl.org/dc/terms/date> <http://purl.obolibrary.org/obo/FOODON_00005060> "2024-06-12T11:26:02Z"^^xsd:dateTime)
-AnnotationAssertion(rdfs:label <http://purl.obolibrary.org/obo/FOODON_00005060> "Sy McCloud hard red spring wheat kernel (dried raw)"@en)
 AnnotationAssertion(rdfs:label <http://purl.obolibrary.org/obo/FOODON_00005060> "Sy McCloud hard red spring wheat kernel (raw)"@en)
 EquivalentClasses(<http://purl.obolibrary.org/obo/FOODON_00005060> ObjectIntersectionOf(<http://purl.obolibrary.org/obo/FOODON_00005059> ObjectSomeValuesFrom(<http://purl.obolibrary.org/obo/RO_0000086> <http://purl.obolibrary.org/obo/FOODON_00004348>)))
 SubClassOf(<http://purl.obolibrary.org/obo/FOODON_00005060> <http://purl.obolibrary.org/obo/FOODON_00005059>)
@@ -15058,7 +15052,7 @@ SubClassOf(<http://purl.obolibrary.org/obo/FOODON_00005087> <http://purl.obolibr
 
 # Class: <http://purl.obolibrary.org/obo/FOODON_00005088> (winter wheat plant)
 
-AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000115> <http://purl.obolibrary.org/obo/FOODON_00005088> "A caryopsis fruit of a winter wheat plant."@en)
+AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000115> <http://purl.obolibrary.org/obo/FOODON_00005088> "A winter wheat plant."@en)
 AnnotationAssertion(<http://purl.org/dc/terms/contributor> <http://purl.obolibrary.org/obo/FOODON_00005088> "https://orcid.org/0000-0001-5275-8866")
 AnnotationAssertion(<http://purl.org/dc/terms/contributor> <http://purl.obolibrary.org/obo/FOODON_00005088> "https://orcid.org/0000-0002-0995-02788")
 AnnotationAssertion(<http://purl.org/dc/terms/contributor> <http://purl.obolibrary.org/obo/FOODON_00005088> "https://orcid.org/0000-0002-8461-9745")
@@ -16374,6 +16368,19 @@ AnnotationAssertion(rdfs:label <http://purl.obolibrary.org/obo/FOODON_00005231> 
 EquivalentClasses(<http://purl.obolibrary.org/obo/FOODON_00005231> ObjectIntersectionOf(<http://purl.obolibrary.org/obo/FOODON_00004260> ObjectSomeValuesFrom(<http://purl.obolibrary.org/obo/RO_0000086> <http://purl.obolibrary.org/obo/FOODON_00004723>)))
 SubClassOf(<http://purl.obolibrary.org/obo/FOODON_00005231> <http://purl.obolibrary.org/obo/FOODON_00004260>)
 
+# Class: <http://purl.obolibrary.org/obo/FOODON_00005232> (chokeberry)
+
+AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000115> <http://purl.obolibrary.org/obo/FOODON_00005232> "A berry fruit of a chokeberry plant."@en)
+AnnotationAssertion(<http://purl.org/dc/terms/contributor> <http://purl.obolibrary.org/obo/FOODON_00005232> "https://orcid.org/0000-0001-5275-8866")
+AnnotationAssertion(<http://purl.org/dc/terms/contributor> <http://purl.obolibrary.org/obo/FOODON_00005232> "https://orcid.org/0000-0002-0995-02788")
+AnnotationAssertion(<http://purl.org/dc/terms/contributor> <http://purl.obolibrary.org/obo/FOODON_00005232> "https://orcid.org/0000-0002-8461-9745")
+AnnotationAssertion(<http://purl.org/dc/terms/contributor> <http://purl.obolibrary.org/obo/FOODON_00005232> "https://orcid.org/0000-0002-8844-9165")
+AnnotationAssertion(<http://purl.org/dc/terms/contributor> <http://purl.obolibrary.org/obo/FOODON_00005232> "https://orcid.org/0000-0003-3653-3805")
+AnnotationAssertion(<http://purl.org/dc/terms/date> <http://purl.obolibrary.org/obo/FOODON_00005232> "2024-03-06T10:00:11Z"^^xsd:dateTime)
+AnnotationAssertion(rdfs:label <http://purl.obolibrary.org/obo/FOODON_00005232> "chokeberry"@en)
+EquivalentClasses(<http://purl.obolibrary.org/obo/FOODON_00005232> ObjectIntersectionOf(<http://purl.obolibrary.org/obo/PO_0030108> ObjectSomeValuesFrom(<http://purl.obolibrary.org/obo/RO_0002162> <http://purl.obolibrary.org/obo/NCBITaxon_193297>)))
+SubClassOf(<http://purl.obolibrary.org/obo/FOODON_00005232> <http://purl.obolibrary.org/obo/FOODON_00004582>)
+
 # Class: <http://purl.obolibrary.org/obo/FOODON_00005233> (hickory nut (dried))
 
 AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000115> <http://purl.obolibrary.org/obo/FOODON_00005233> "A whole dried hickory nut."@en)
@@ -16444,15 +16451,6 @@ AnnotationAssertion(<http://purl.org/dc/terms/date> <http://purl.obolibrary.org/
 AnnotationAssertion(rdfs:label <http://purl.obolibrary.org/obo/FOODON_00005240> "spirulina (dried)"@en)
 SubClassOf(<http://purl.obolibrary.org/obo/FOODON_00005240> <http://purl.obolibrary.org/obo/FOODON_03304817>)
 
-# Class: <http://purl.obolibrary.org/obo/FOODON_00005241> (fig (dried))
-
-AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000115> <http://purl.obolibrary.org/obo/FOODON_00005241> "A whole dried fig."@en)
-AnnotationAssertion(<http://purl.org/dc/terms/contributor> <http://purl.obolibrary.org/obo/FOODON_00005241> "https://orcid.org/0000-0001-5275-8866")
-AnnotationAssertion(<http://purl.org/dc/terms/date> <http://purl.obolibrary.org/obo/FOODON_00005241> "2025-01-15T15:10:50Z"^^xsd:dateTime)
-AnnotationAssertion(rdfs:label <http://purl.obolibrary.org/obo/FOODON_00005241> "fig (dried)"@en)
-EquivalentClasses(<http://purl.obolibrary.org/obo/FOODON_00005241> ObjectIntersectionOf(<http://purl.obolibrary.org/obo/FOODON_00003266> ObjectSomeValuesFrom(<http://purl.obolibrary.org/obo/RO_0000086> <http://purl.obolibrary.org/obo/FOODON_00004723>)))
-SubClassOf(<http://purl.obolibrary.org/obo/FOODON_00005241> <http://purl.obolibrary.org/obo/FOODON_00003266>)
-
 # Class: <http://purl.obolibrary.org/obo/FOODON_00005242> (longan (dried))
 
 AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000115> <http://purl.obolibrary.org/obo/FOODON_00005242> "A whole dried longan."@en)
@@ -16511,6 +16509,19 @@ SubClassOf(<http://purl.obolibrary.org/obo/FOODON_00005248> <http://purl.obolibr
 AnnotationAssertion(rdfs:label <http://purl.obolibrary.org/obo/FOODON_00005249> "white currant"@en)
 EquivalentClasses(<http://purl.obolibrary.org/obo/FOODON_00005249> ObjectIntersectionOf(<http://purl.obolibrary.org/obo/PO_0030108> ObjectSomeValuesFrom(<http://purl.obolibrary.org/obo/RO_0002162> <http://purl.obolibrary.org/obo/FOODON_03412752>)))
 SubClassOf(<http://purl.obolibrary.org/obo/FOODON_00005249> <http://purl.obolibrary.org/obo/PO_0030108>)
+
+# Class: <http://purl.obolibrary.org/obo/FOODON_00005250> (Sy McCloud hard red spring wheat kernel (dried raw))
+
+AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000115> <http://purl.obolibrary.org/obo/FOODON_00005250> "A raw sy McCloud hard red spring kernel that has been dried."@en)
+AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000119> <http://purl.obolibrary.org/obo/FOODON_00005250> "https://birdsallgrainandseed.com/wp-content/uploads/2021/11/SY-McCloud-2021-Tech-Sheet-AgriPro.pdf")
+AnnotationAssertion(<http://purl.org/dc/terms/contributor> <http://purl.obolibrary.org/obo/FOODON_00005250> "https://orcid.org/0000-0001-5275-8866")
+AnnotationAssertion(<http://purl.org/dc/terms/contributor> <http://purl.obolibrary.org/obo/FOODON_00005250> "https://orcid.org/0000-0002-0995-02788")
+AnnotationAssertion(<http://purl.org/dc/terms/contributor> <http://purl.obolibrary.org/obo/FOODON_00005250> "https://orcid.org/0000-0002-8461-9745")
+AnnotationAssertion(<http://purl.org/dc/terms/contributor> <http://purl.obolibrary.org/obo/FOODON_00005250> "https://orcid.org/0000-0002-8844-9165")
+AnnotationAssertion(<http://purl.org/dc/terms/contributor> <http://purl.obolibrary.org/obo/FOODON_00005250> "https://orcid.org/0000-0003-3653-3805")
+AnnotationAssertion(<http://purl.org/dc/terms/date> <http://purl.obolibrary.org/obo/FOODON_00005250> "2024-06-12T11:26:02Z"^^xsd:dateTime)
+AnnotationAssertion(rdfs:label <http://purl.obolibrary.org/obo/FOODON_00005250> "Sy McCloud hard red spring wheat kernel (dried raw)"@en)
+SubClassOf(<http://purl.obolibrary.org/obo/FOODON_00005250> <http://purl.obolibrary.org/obo/FOODON_00005059>)
 
 # Class: <http://purl.obolibrary.org/obo/FOODON_00005251> (lentil (mature))
 
@@ -16725,7 +16736,7 @@ SubClassOf(<http://purl.obolibrary.org/obo/FOODON_00005274> <http://purl.obolibr
 
 # Class: <http://purl.obolibrary.org/obo/FOODON_00005275> (pigeon pea (mature))
 
-AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000115> <http://purl.obolibrary.org/obo/FOODON_00005275> "A whole mature adzuki bean."@en)
+AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000115> <http://purl.obolibrary.org/obo/FOODON_00005275> "A whole mature pigeon pea."@en)
 AnnotationAssertion(<http://purl.org/dc/terms/contributor> <http://purl.obolibrary.org/obo/FOODON_00005275> "https://orcid.org/0000-0001-5275-8866")
 AnnotationAssertion(<http://purl.org/dc/terms/date> <http://purl.obolibrary.org/obo/FOODON_00005275> "2025-01-15T15:10:50Z"^^xsd:dateTime)
 AnnotationAssertion(rdfs:label <http://purl.obolibrary.org/obo/FOODON_00005275> "pigeon pea (mature)"@en)
@@ -17534,6 +17545,18 @@ AnnotationAssertion(<http://purl.org/dc/terms/contributor> <http://purl.obolibra
 AnnotationAssertion(<http://purl.org/dc/terms/date> <http://purl.obolibrary.org/obo/FOODON_00005369> "2025-01-22T13:06:36Z"^^xsd:dateTime)
 AnnotationAssertion(rdfs:label <http://purl.obolibrary.org/obo/FOODON_00005369> "common cottongrass seed"@en)
 SubClassOf(<http://purl.obolibrary.org/obo/FOODON_00005369> <http://purl.obolibrary.org/obo/PO_0009010>)
+
+# Class: <http://purl.obolibrary.org/obo/FOODON_00005453> (purple passion fruit pulp)
+
+AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000115> <http://purl.obolibrary.org/obo/FOODON_00005453> "The pulp of a purple passion fruit."@en)
+AnnotationAssertion(<http://purl.org/dc/terms/contributor> <http://purl.obolibrary.org/obo/FOODON_00005453> "https://orcid.org/0000-0001-5275-8866")
+AnnotationAssertion(<http://purl.org/dc/terms/contributor> <http://purl.obolibrary.org/obo/FOODON_00005453> "https://orcid.org/0000-0002-0995-02788")
+AnnotationAssertion(<http://purl.org/dc/terms/contributor> <http://purl.obolibrary.org/obo/FOODON_00005453> "https://orcid.org/0000-0002-8461-9745")
+AnnotationAssertion(<http://purl.org/dc/terms/contributor> <http://purl.obolibrary.org/obo/FOODON_00005453> "https://orcid.org/0000-0002-8844-9165")
+AnnotationAssertion(<http://purl.org/dc/terms/contributor> <http://purl.obolibrary.org/obo/FOODON_00005453> "https://orcid.org/0000-0003-3653-3805")
+AnnotationAssertion(<http://purl.org/dc/terms/date> <http://purl.obolibrary.org/obo/FOODON_00005453> "2024-03-06T10:00:11Z"^^xsd:dateTime)
+AnnotationAssertion(rdfs:label <http://purl.obolibrary.org/obo/FOODON_00005453> "purple passion fruit pulp"@en)
+SubClassOf(<http://purl.obolibrary.org/obo/FOODON_00005453> <http://purl.obolibrary.org/obo/FOODON_00004605>)
 
 # Class: <http://purl.obolibrary.org/obo/FOODON_03000006> (fenugreek seed)
 
@@ -20480,6 +20503,15 @@ AnnotationAssertion(<http://www.geneontology.org/formats/oboInOwl#hasExactSynony
 AnnotationAssertion(rdfs:label <http://purl.obolibrary.org/obo/FOODON_03304996> "soybean (whole or pieces)"@en)
 SubClassOf(<http://purl.obolibrary.org/obo/FOODON_03304996> <http://purl.obolibrary.org/obo/FOODON_00002266>)
 SubClassOf(<http://purl.obolibrary.org/obo/FOODON_03304996> ObjectUnionOf(<http://purl.obolibrary.org/obo/FOODON_03301415> ObjectSomeValuesFrom(<http://purl.obolibrary.org/obo/RO_0001000> <http://purl.obolibrary.org/obo/FOODON_03301415>)))
+
+# Class: <http://purl.obolibrary.org/obo/FOODON_03305104> (fig (dried))
+
+AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000115> <http://purl.obolibrary.org/obo/FOODON_03305104> "A whole dried fig."@en)
+AnnotationAssertion(<http://purl.org/dc/terms/contributor> <http://purl.obolibrary.org/obo/FOODON_03305104> "https://orcid.org/0000-0001-5275-8866")
+AnnotationAssertion(<http://purl.org/dc/terms/date> <http://purl.obolibrary.org/obo/FOODON_03305104> "2025-01-15T15:10:50Z"^^xsd:dateTime)
+AnnotationAssertion(rdfs:label <http://purl.obolibrary.org/obo/FOODON_03305104> "fig (dried)"@en)
+EquivalentClasses(<http://purl.obolibrary.org/obo/FOODON_03305104> ObjectIntersectionOf(<http://purl.obolibrary.org/obo/FOODON_00003266> ObjectSomeValuesFrom(<http://purl.obolibrary.org/obo/RO_0000086> <http://purl.obolibrary.org/obo/FOODON_00004723>)))
+SubClassOf(<http://purl.obolibrary.org/obo/FOODON_03305104> <http://purl.obolibrary.org/obo/FOODON_00003266>)
 
 # Class: <http://purl.obolibrary.org/obo/FOODON_03305165> (breadnut seed)
 
