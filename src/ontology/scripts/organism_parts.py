@@ -291,15 +291,16 @@ def main():
                             else:
                                 comment = item['comment'].format(organism=species_label, organism_base=s['species'], n=article)
 
+
                             if item['Exact Synonym'] is None:
                                 exact_synonym = ''
                             else:
-                                exact_synonym = item['Exact Synonym'].format(organism=species_label)
+                                exact_synonym = item['Exact Synonym'].format(organism=species_label, organism_base=s['species']);
 
                             if item['Broad Synonym'] is None:
                                 broad_synonym = ''
                             else:
-                                broad_synonym = item['Broad Synonym'].format(organism=species_label)
+                                broad_synonym = item['Broad Synonym'].format(organism=species_label, organism_base=s['species'])
 
                             if ID_res.created != '':
                                 created = ID_res.created
