@@ -1148,7 +1148,7 @@ SubClassOf(<http://purl.obolibrary.org/obo/FOODON_00005419> <http://purl.obolibr
 
 # Class: <http://purl.obolibrary.org/obo/FOODON_00005420> (ostrich top loin (raw))
 
-AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000115> <http://purl.obolibrary.org/obo/FOODON_00005420> "A raw ostrich tenderloin."@en)
+AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000115> <http://purl.obolibrary.org/obo/FOODON_00005420> "A raw ostrich top loin cut."@en)
 AnnotationAssertion(<http://purl.org/dc/terms/date> <http://purl.obolibrary.org/obo/FOODON_00005420> "2025-01-30T11:48:21Z"^^xsd:dateTime)
 AnnotationAssertion(rdfs:label <http://purl.obolibrary.org/obo/FOODON_00005420> "ostrich top loin (raw)"@en)
 EquivalentClasses(<http://purl.obolibrary.org/obo/FOODON_00005420> ObjectIntersectionOf(<http://purl.obolibrary.org/obo/FOODON_00005419> ObjectSomeValuesFrom(<http://purl.obolibrary.org/obo/RO_0000086> <http://purl.obolibrary.org/obo/FOODON_00004348>)))
@@ -2809,7 +2809,7 @@ SubClassOf(<http://purl.obolibrary.org/obo/FOODON_02000136> <http://purl.obolibr
 # Class: <http://purl.obolibrary.org/obo/FOODON_02000137> (beef tenderloin steak (bone-in))
 
 AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000114> <http://purl.obolibrary.org/obo/FOODON_02000137> <http://purl.obolibrary.org/obo/IAO_0000122>)
-AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000115> <http://purl.obolibrary.org/obo/FOODON_02000137> "A raw beef tenderloin steak."@en)
+AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000115> <http://purl.obolibrary.org/obo/FOODON_02000137> "A beef tenderloin steak with bone."@en)
 AnnotationAssertion(<http://purl.org/dc/terms/contributor> <http://purl.obolibrary.org/obo/FOODON_02000137> "https://orcid.org/0000-0001-5275-8866")
 AnnotationAssertion(<http://purl.org/dc/terms/date> <http://purl.obolibrary.org/obo/FOODON_02000137> "2023-08-01T21:30:23Z"^^xsd:dateTime)
 AnnotationAssertion(rdfs:label <http://purl.obolibrary.org/obo/FOODON_02000137> "beef tenderloin steak (bone-in)"@en)
@@ -2819,7 +2819,7 @@ SubClassOf(<http://purl.obolibrary.org/obo/FOODON_02000137> <http://purl.obolibr
 # Class: <http://purl.obolibrary.org/obo/FOODON_02000138> (beef tenderloin steak (bone-in, raw))
 
 AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000114> <http://purl.obolibrary.org/obo/FOODON_02000138> <http://purl.obolibrary.org/obo/IAO_0000122>)
-AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000115> <http://purl.obolibrary.org/obo/FOODON_02000138> "A raw beef tenderloin steak."@en)
+AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000115> <http://purl.obolibrary.org/obo/FOODON_02000138> "A raw beef tenderloin steak with bone."@en)
 AnnotationAssertion(<http://purl.org/dc/terms/contributor> <http://purl.obolibrary.org/obo/FOODON_02000138> "https://orcid.org/0000-0001-5275-8866")
 AnnotationAssertion(<http://purl.org/dc/terms/date> <http://purl.obolibrary.org/obo/FOODON_02000138> "2023-08-01T21:30:23Z"^^xsd:dateTime)
 AnnotationAssertion(rdfs:label <http://purl.obolibrary.org/obo/FOODON_02000138> "beef tenderloin steak (bone-in, raw)"@en)
@@ -3171,7 +3171,7 @@ SubClassOf(<http://purl.obolibrary.org/obo/FOODON_02000167> ObjectSomeValuesFrom
 # Class: <http://purl.obolibrary.org/obo/FOODON_02000168> (beef petite sirloin steak (raw))
 
 AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000114> <http://purl.obolibrary.org/obo/FOODON_02000168> <http://purl.obolibrary.org/obo/IAO_0000122>)
-AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000115> <http://purl.obolibrary.org/obo/FOODON_02000168> "A raw beef petite sirloin roast."@en)
+AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000115> <http://purl.obolibrary.org/obo/FOODON_02000168> "A raw beef petite sirloin steak."@en)
 AnnotationAssertion(<http://purl.org/dc/terms/contributor> <http://purl.obolibrary.org/obo/FOODON_02000168> "https://orcid.org/0000-0001-5275-8866")
 AnnotationAssertion(<http://purl.org/dc/terms/date> <http://purl.obolibrary.org/obo/FOODON_02000168> "2023-08-01T21:30:23Z"^^xsd:dateTime)
 AnnotationAssertion(rdfs:label <http://purl.obolibrary.org/obo/FOODON_02000168> "beef petite sirloin steak (raw)"@en)
@@ -3324,7 +3324,7 @@ SubClassOf(<http://purl.obolibrary.org/obo/FOODON_02000180> <http://purl.obolibr
 # Class: <http://purl.obolibrary.org/obo/FOODON_02000181> (beef inside skirt steak)
 
 AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000114> <http://purl.obolibrary.org/obo/FOODON_02000181> <http://purl.obolibrary.org/obo/IAO_0000122>)
-AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000115> <http://purl.obolibrary.org/obo/FOODON_02000181> "A beef steak that is a trimmed, boneless portion of the diaphragm muscle attached to the 6th through 12th rib on the underside of the short plate."@en)
+AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000115> <http://purl.obolibrary.org/obo/FOODON_02000181> "A beef steak that is a trimmed, boneless portion of the diaphragm muscle which is thicker and more tender than the inside skirt steak cut."@en)
 AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000119> <http://purl.obolibrary.org/obo/FOODON_02000181> "https://www.beefitswhatsfordinner.com/cuts/cut/2848/inside-skirt")
 AnnotationAssertion(<http://purl.org/dc/terms/contributor> <http://purl.obolibrary.org/obo/FOODON_02000181> "https://orcid.org/0000-0001-5275-8866")
 AnnotationAssertion(<http://purl.org/dc/terms/date> <http://purl.obolibrary.org/obo/FOODON_02000181> "2023-08-01T21:30:23Z"^^xsd:dateTime)
@@ -3336,7 +3336,7 @@ SubClassOf(<http://purl.obolibrary.org/obo/FOODON_02000181> ObjectSomeValuesFrom
 # Class: <http://purl.obolibrary.org/obo/FOODON_02000182> (beef inside skirt steak (raw))
 
 AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000114> <http://purl.obolibrary.org/obo/FOODON_02000182> <http://purl.obolibrary.org/obo/IAO_0000122>)
-AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000115> <http://purl.obolibrary.org/obo/FOODON_02000182> "A raw beef outside skirt steak."@en)
+AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000115> <http://purl.obolibrary.org/obo/FOODON_02000182> "A raw beef inside skirt steak."@en)
 AnnotationAssertion(<http://purl.org/dc/terms/contributor> <http://purl.obolibrary.org/obo/FOODON_02000182> "https://orcid.org/0000-0001-5275-8866")
 AnnotationAssertion(<http://purl.org/dc/terms/date> <http://purl.obolibrary.org/obo/FOODON_02000182> "2023-08-01T21:30:23Z"^^xsd:dateTime)
 AnnotationAssertion(rdfs:label <http://purl.obolibrary.org/obo/FOODON_02000182> "beef inside skirt steak (raw)"@en)
@@ -3607,7 +3607,7 @@ SubClassOf(<http://purl.obolibrary.org/obo/FOODON_02000205> ObjectSomeValuesFrom
 # Class: <http://purl.obolibrary.org/obo/FOODON_02000206> (beef ribeye roll (lip on, raw))
 
 AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000114> <http://purl.obolibrary.org/obo/FOODON_02000206> <http://purl.obolibrary.org/obo/IAO_0000122>)
-AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000115> <http://purl.obolibrary.org/obo/FOODON_02000206> "A raw beef ribeye roll cut."@en)
+AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000115> <http://purl.obolibrary.org/obo/FOODON_02000206> "A raw beef ribeye roll cut with attached \"lip\" muscle."@en)
 AnnotationAssertion(<http://purl.org/dc/terms/contributor> <http://purl.obolibrary.org/obo/FOODON_02000206> "https://orcid.org/0000-0001-5275-8866")
 AnnotationAssertion(<http://purl.org/dc/terms/date> <http://purl.obolibrary.org/obo/FOODON_02000206> "2023-08-01T21:30:23Z"^^xsd:dateTime)
 AnnotationAssertion(rdfs:label <http://purl.obolibrary.org/obo/FOODON_02000206> "beef ribeye roll (lip on, raw)"@en)
@@ -5256,7 +5256,7 @@ SubClassOf(<http://purl.obolibrary.org/obo/FOODON_02000356> ObjectSomeValuesFrom
 # Class: <http://purl.obolibrary.org/obo/FOODON_02000357> (veal rib roast (raw))
 
 AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000114> <http://purl.obolibrary.org/obo/FOODON_02000357> <http://purl.obolibrary.org/obo/IAO_0000122>)
-AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000115> <http://purl.obolibrary.org/obo/FOODON_02000357> "A raw veal roast."@en)
+AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000115> <http://purl.obolibrary.org/obo/FOODON_02000357> "A raw veal rib roast."@en)
 AnnotationAssertion(<http://purl.org/dc/terms/contributor> <http://purl.obolibrary.org/obo/FOODON_02000357> "https://orcid.org/0000-0001-5275-8866")
 AnnotationAssertion(<http://purl.org/dc/terms/date> <http://purl.obolibrary.org/obo/FOODON_02000357> "2023-08-01T21:30:23Z"^^xsd:dateTime)
 AnnotationAssertion(rdfs:label <http://purl.obolibrary.org/obo/FOODON_02000357> "veal rib roast (raw)"@en)
@@ -5453,7 +5453,7 @@ SubClassOf(<http://purl.obolibrary.org/obo/FOODON_02000375> <http://purl.obolibr
 # Class: <http://purl.obolibrary.org/obo/FOODON_02000376> (emu full rump)
 
 AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000114> <http://purl.obolibrary.org/obo/FOODON_02000376> <http://purl.obolibrary.org/obo/IAO_0000122>)
-AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000115> <http://purl.obolibrary.org/obo/FOODON_02000376> "A butchery cut from emu."@en)
+AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000115> <http://purl.obolibrary.org/obo/FOODON_02000376> "A butchery cut from emu consisting of a large thigh muscle."@en)
 AnnotationAssertion(<http://purl.org/dc/terms/contributor> <http://purl.obolibrary.org/obo/FOODON_02000376> "https://orcid.org/0000-0001-5275-8866")
 AnnotationAssertion(<http://purl.org/dc/terms/date> <http://purl.obolibrary.org/obo/FOODON_02000376> "2023-08-01T21:30:23Z"^^xsd:dateTime)
 AnnotationAssertion(rdfs:label <http://purl.obolibrary.org/obo/FOODON_02000376> "emu full rump"@en)
@@ -5462,7 +5462,7 @@ SubClassOf(<http://purl.obolibrary.org/obo/FOODON_02000376> <http://purl.obolibr
 # Class: <http://purl.obolibrary.org/obo/FOODON_02000377> (emu inside drum)
 
 AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000114> <http://purl.obolibrary.org/obo/FOODON_02000377> <http://purl.obolibrary.org/obo/IAO_0000122>)
-AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000115> <http://purl.obolibrary.org/obo/FOODON_02000377> "A butchery cut from emu."@en)
+AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000115> <http://purl.obolibrary.org/obo/FOODON_02000377> "A butchery cut from emu taken from a leg."@en)
 AnnotationAssertion(<http://purl.org/dc/terms/contributor> <http://purl.obolibrary.org/obo/FOODON_02000377> "https://orcid.org/0000-0001-5275-8866")
 AnnotationAssertion(<http://purl.org/dc/terms/date> <http://purl.obolibrary.org/obo/FOODON_02000377> "2023-08-01T21:30:23Z"^^xsd:dateTime)
 AnnotationAssertion(rdfs:label <http://purl.obolibrary.org/obo/FOODON_02000377> "emu inside drum"@en)
@@ -5471,7 +5471,7 @@ SubClassOf(<http://purl.obolibrary.org/obo/FOODON_02000377> <http://purl.obolibr
 # Class: <http://purl.obolibrary.org/obo/FOODON_02000378> (emu outside drum)
 
 AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000114> <http://purl.obolibrary.org/obo/FOODON_02000378> <http://purl.obolibrary.org/obo/IAO_0000122>)
-AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000115> <http://purl.obolibrary.org/obo/FOODON_02000378> "A butchery cut from emu."@en)
+AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000115> <http://purl.obolibrary.org/obo/FOODON_02000378> "A lean butchery cut from emu taken from a leg."@en)
 AnnotationAssertion(<http://purl.org/dc/terms/contributor> <http://purl.obolibrary.org/obo/FOODON_02000378> "https://orcid.org/0000-0001-5275-8866")
 AnnotationAssertion(<http://purl.org/dc/terms/date> <http://purl.obolibrary.org/obo/FOODON_02000378> "2023-08-01T21:30:23Z"^^xsd:dateTime)
 AnnotationAssertion(rdfs:label <http://purl.obolibrary.org/obo/FOODON_02000378> "emu outside drum"@en)
@@ -6080,7 +6080,7 @@ SubClassOf(<http://purl.obolibrary.org/obo/FOODON_02000454> <http://purl.obolibr
 # Class: <http://purl.obolibrary.org/obo/FOODON_02000455> (bison shoulder clod)
 
 AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000114> <http://purl.obolibrary.org/obo/FOODON_02000455> <http://purl.obolibrary.org/obo/IAO_0000122>)
-AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000115> <http://purl.obolibrary.org/obo/FOODON_02000455> "A large muscle system which lies dorsal and posterior to the elbow joint, ventral and posterior to the ridge of the scapula (blade bone) and is anterior to the 6th rib."@en)
+AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000115> <http://purl.obolibrary.org/obo/FOODON_02000455> "A bison sub-primal cut which is  large muscle system which lies dorsal and posterior to the elbow joint, ventral and posterior to the ridge of the scapula (blade bone) and is anterior to the 6th rib."@en)
 AnnotationAssertion(<http://purl.org/dc/terms/contributor> <http://purl.obolibrary.org/obo/FOODON_02000455> "https://orcid.org/0000-0001-5275-8866")
 AnnotationAssertion(<http://purl.org/dc/terms/date> <http://purl.obolibrary.org/obo/FOODON_02000455> "2023-10-10T15:20:43Z"^^xsd:dateTime)
 AnnotationAssertion(rdfs:comment <http://purl.obolibrary.org/obo/FOODON_02000455> "Centred around the scapula or blade bone in the Chuck. Scapula is removed to make this a boneless subprimal."@en)
