@@ -687,7 +687,7 @@ SubClassOf(<http://purl.obolibrary.org/obo/FOODON_00004550> ObjectSomeValuesFrom
 
 # Class: <http://purl.obolibrary.org/obo/FOODON_03000001> (food peeling)
 
-AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000115> <http://purl.obolibrary.org/obo/FOODON_03000001> "peeling\" is the process of removing the outer covering, layer or skin from a fruit, vegetable, or plant or animal (such as a shrimp)."@en)
+AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000115> <http://purl.obolibrary.org/obo/FOODON_03000001> "The process of removing the outer covering, layer or skin from a fruit, vegetable, or plant or animal (such as a shrimp)."@en)
 AnnotationAssertion(<http://purl.org/dc/terms/contributor> <http://purl.obolibrary.org/obo/FOODON_03000001> "Damion Dooley")
 AnnotationAssertion(rdfs:label <http://purl.obolibrary.org/obo/FOODON_03000001> "food peeling"@en)
 SubClassOf(<http://purl.obolibrary.org/obo/FOODON_03000001> <http://purl.obolibrary.org/obo/FOODON_03460130>)
