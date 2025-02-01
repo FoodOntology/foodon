@@ -4805,12 +4805,6 @@ AnnotationAssertion(obo:IAO_0100001 obo:FOODON_03411504 obo:NCBITaxon_194251)
 AnnotationAssertion(rdfs:label obo:FOODON_03411504 "obsolete: breadfruit plant"@en)
 AnnotationAssertion(owl:deprecated obo:FOODON_03411504 "true"^^xsd:boolean)
 
-# Class: obo:FOODON_03411506 (obsolete: albacore)
-
-AnnotationAssertion(obo:IAO_0100001 obo:FOODON_03411506 obo:NCBITaxon_8235)
-AnnotationAssertion(rdfs:label obo:FOODON_03411506 "obsolete: albacore"@en)
-AnnotationAssertion(owl:deprecated obo:FOODON_03411506 "true"^^xsd:boolean)
-
 # Class: obo:FOODON_03411508 (obsolete: american cranberry plant)
 
 AnnotationAssertion(obo:IAO_0100001 obo:FOODON_03411508 obo:NCBITaxon_13750)
