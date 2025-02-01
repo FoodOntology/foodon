@@ -125,6 +125,8 @@ Declaration(Class(<http://purl.obolibrary.org/obo/FOODON_00005434>))
 Declaration(Class(<http://purl.obolibrary.org/obo/FOODON_00005435>))
 Declaration(Class(<http://purl.obolibrary.org/obo/FOODON_00005436>))
 Declaration(Class(<http://purl.obolibrary.org/obo/FOODON_00005450>))
+Declaration(Class(<http://purl.obolibrary.org/obo/FOODON_00005451>))
+Declaration(Class(<http://purl.obolibrary.org/obo/FOODON_00005452>))
 Declaration(Class(<http://purl.obolibrary.org/obo/FOODON_02000000>))
 Declaration(Class(<http://purl.obolibrary.org/obo/FOODON_02000001>))
 Declaration(Class(<http://purl.obolibrary.org/obo/FOODON_02000002>))
@@ -2043,7 +2045,7 @@ SubClassOf(<http://purl.obolibrary.org/obo/FOODON_02000068> <http://purl.obolibr
 # Class: <http://purl.obolibrary.org/obo/FOODON_02000069> (beef shoulder clod)
 
 AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000114> <http://purl.obolibrary.org/obo/FOODON_02000069> <http://purl.obolibrary.org/obo/IAO_0000122>)
-AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000115> <http://purl.obolibrary.org/obo/FOODON_02000069> "A large muscle system which lies dorsal and posterior to the elbow joint, ventral and posterior to the ridge of the scapula (blade bone) and is anterior to the 6th rib."@en)
+AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000115> <http://purl.obolibrary.org/obo/FOODON_02000069> "A beef sub-primal cut consisting of a large, muscle-rich cut of beef from the shoulder region of a cow. It's made up of several muscles, including the top blade, shoulder tender, and clod heart."@en)
 AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000119> <http://purl.obolibrary.org/obo/FOODON_02000069> "https://www.beefitswhatsfordinner.com/cuts/cut/2755/shoulder-clod")
 AnnotationAssertion(<http://purl.org/dc/terms/contributor> <http://purl.obolibrary.org/obo/FOODON_02000069> "https://orcid.org/0000-0001-5275-8866")
 AnnotationAssertion(<http://www.geneontology.org/formats/oboInOwl#hasExactSynonym> <http://purl.obolibrary.org/obo/FOODON_02000069> "chuck shoulder clod"@en)
@@ -2883,7 +2885,7 @@ SubClassOf(<http://purl.obolibrary.org/obo/FOODON_02000143> <http://purl.obolibr
 # Class: <http://purl.obolibrary.org/obo/FOODON_02000144> (beef tenderloin steak (raw))
 
 AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000114> <http://purl.obolibrary.org/obo/FOODON_02000144> <http://purl.obolibrary.org/obo/IAO_0000122>)
-AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000115> <http://purl.obolibrary.org/obo/FOODON_02000144> "A raw beef tenderloin steak."@en)
+AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000115> <http://purl.obolibrary.org/obo/FOODON_02000144> "A raw beef tenderloin steak that may contain bone."@en)
 AnnotationAssertion(<http://purl.org/dc/terms/contributor> <http://purl.obolibrary.org/obo/FOODON_02000144> "https://orcid.org/0000-0001-5275-8866")
 AnnotationAssertion(<http://purl.org/dc/terms/date> <http://purl.obolibrary.org/obo/FOODON_02000144> "2023-08-01T21:30:23Z"^^xsd:dateTime)
 AnnotationAssertion(rdfs:label <http://purl.obolibrary.org/obo/FOODON_02000144> "beef tenderloin steak (raw)"@en)
@@ -5905,7 +5907,7 @@ SubClassOf(<http://purl.obolibrary.org/obo/FOODON_02000433> <http://purl.obolibr
 
 # Class: <http://purl.obolibrary.org/obo/FOODON_02000434> (ostrich tenderloin (raw))
 
-AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000115> <http://purl.obolibrary.org/obo/FOODON_02000434> "A raw ostrich tenderloin."@en)
+AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000115> <http://purl.obolibrary.org/obo/FOODON_02000434> "A raw ostrich tenderloin cut."@en)
 AnnotationAssertion(<http://purl.org/dc/terms/date> <http://purl.obolibrary.org/obo/FOODON_02000434> "2025-01-30T11:48:21Z"^^xsd:dateTime)
 AnnotationAssertion(rdfs:label <http://purl.obolibrary.org/obo/FOODON_02000434> "ostrich tenderloin (raw)"@en)
 EquivalentClasses(<http://purl.obolibrary.org/obo/FOODON_02000434> ObjectIntersectionOf(<http://purl.obolibrary.org/obo/FOODON_02000433> ObjectSomeValuesFrom(<http://purl.obolibrary.org/obo/RO_0000086> <http://purl.obolibrary.org/obo/FOODON_00004348>)))
