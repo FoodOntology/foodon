@@ -1,0 +1,18 @@
+ SELECT DISTINCT ?id ?idLabel ?country
+    WHERE {
+       # classification of human settlements: kinds of city, town
+      VALUES ?type {wd:Q515 wd:Q129676344 wd:Q1549591 wd:Q1637706 wd:Q18466176 wd:Q896881 wd:Q3957} .
+      ?id wdt:P31 ?type .
+      FILTER NOT EXISTS {
+        # Former town, deserted medieval village,  lost city,  former settlement, abandoned village, destroyed city  field name   
+        VALUES ?type2 {wd:Q106071744 wd:Q21751582 wd:Q2974842 wd:Q22674925 wd:Q350895 wd:Q14616455 wd:Q1434274}
+        ?id wdt:P31 ?type2
+      } .           
+    OPTIONAL {?id wdt:P17 ?country} .             # country  ~= located in.
+    SERVICE wikibase:label {                     # If available, get the "en" label of above items
+      bd:serviceParam wikibase:language "en" .
+    }   
+
+}
+ORDER BY ?id
+LIMIT 30000 # Currently about 26797 results as of Feb 7, 2025

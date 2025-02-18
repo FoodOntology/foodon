@@ -1,0 +1,34 @@
+## SELECT ALL KINDS OF COUNTRY BUT NOT HISTORICAL ONES. Makes the table ROBOT ready with first line.
+SELECT * WHERE {
+  {SELECT ('ID' AS ?id) ('AL rdfs:label@en' AS ?idLabel) ('A oboInOwl:hasDbXref' AS ?geonames_id) ('A oboInOwl:hasDbXref' AS ?iso_code_id) {} }
+  UNION
+  {SELECT DISTINCT ?id ?idLabel ?geonames_id ?administered ?iso_code_id
+    WHERE {
+      VALUES ?entity {wd:Q6256 wd:Q161243} # country or dependent territory
+      ?id wdt:P31 ?entity .                # find instance of (subclass of) country
+      FILTER NOT EXISTS {
+        VALUES ?archaic { wd:Q3024240 wd:Q1620908 wd:Q19953632 wd:Q41710 wd:Q11514315}  # ethnic group , historical period (Q11514315)
+        ?id wdt:P31 ?archaic .
+      } .
+      FILTER NOT EXISTS {
+        ?id wdt:P1366|wdt:P576|wdt:P2348 ?x . #  replaced by (P1366) | dissolved, abolished or demolished date (P576) time period (P2348)
+      } . 
+      
+      ?id wdt:P297 ?iso_code . # ISO_3166_1_alpha_2_code
+      BIND(concat('ISO3166:', ?iso_code ) as ?iso_code_id) .
+          
+ #     OPTIONAL {?id wdt:P297 ?ISO_code} . # Making this optional enables some odd-ball entries
+      OPTIONAL {
+        ?id wdt:P1566 ?geonames .
+        BIND(concat('geonames:', str(?geonames) ) as ?geonames_id)
+      } .
+      OPTIONAL {?id wdt:P131 ?administered} .             # wdt:P131 located in [administrative|state ...]
+          
+      SERVICE wikibase:label {                     # If available, get the "en" label of above items
+        bd:serviceParam wikibase:language "en" .
+      }   
+    }
+  ORDER BY ?idLabel
+  }
+  
+}

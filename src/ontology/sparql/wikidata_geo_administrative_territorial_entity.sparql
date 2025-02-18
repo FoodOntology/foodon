@@ -1,0 +1,16 @@
+# administrative territorial entity of a specific level (Q1799794)
+SELECT * WHERE {
+  {SELECT DISTINCT ?id ?idLabel
+    WHERE {
+      ?id wdt:P279* wd:Q1799794 .                # administrative territorial entity of a specific level (Q1799794)
+    }
+  }
+  SERVICE wikibase:label {                     # If available, get the "en" label of above items
+    bd:serviceParam wikibase:language "en" .
+  }   
+  OPTIONAL {?id wdt:P17 ?country} .             # country  ~= located in.
+  OPTIONAL {?id wdt:P361 ?part_of . }                 #  wdt:P361 part of [...]
+}
+
+ORDER BY ?id
+LIMIT 2000
