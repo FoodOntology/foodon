@@ -21,7 +21,7 @@ Prefix(indexfungorum:=<http://www.indexfungorum.org/names/NamesRecord.asp?Record
 
 Ontology(<http://purl.obolibrary.org/obo/foodon.owl>
 <https://github.com/FoodOntology/foodon/releases/download/2025-07-31/foodon.owl>
-Import(<http://purl.obolibrary.org/obo/cdno/releases/2022-12-23/cdno.owl>)
+Import(<http://purl.obolibrary.org/obo/foodon/imports/cdno_import.ofn>)
 Import(<http://purl.obolibrary.org/obo/foodon/imports/chebi_import.owl>)
 Import(<http://purl.obolibrary.org/obo/foodon/imports/cob_import.owl>)
 Import(<http://purl.obolibrary.org/obo/foodon/imports/deprecation_import.ofn>)
@@ -4210,7 +4210,7 @@ AnnotationAssertion(go:hasSynonym obo:CHEBI_18422 "sulfur dioxide"@en)
 AnnotationAssertion(rdfs:comment obo:CHEBI_18422 "LanguaL term definition: Food additive; technological purpose(s): antioxidant, preservative."@en)
 SubClassOf(obo:CHEBI_18422 obo:FOODON_03412972)
 
-# Class: obo:CHEBI_22470 (alpha-tocopherol)
+# Class: obo:CHEBI_22470 (α-tocopherol)
 
 AnnotationAssertion(obo:IAO_0000118 obo:CHEBI_22470 "alpha-tocopherol"@en)
 AnnotationAssertion(obo:IAO_0000412 obo:CHEBI_22470 <http://langual.org>)
@@ -7449,7 +7449,7 @@ SubClassOf(obo:FOODON_00003002 obo:FOODON_03411295)
 # Class: obo:FOODON_00003004 (animal)
 
 AnnotationAssertion(obo:IAO_0000600 obo:FOODON_00003004 "A multicellular eukaryotic heterotrophic organism within the kingdom Animalia."@en)
-SubClassOf(obo:FOODON_00003004 obo:FOODON_03411564)
+SubClassOf(obo:FOODON_00003004 obo:FOODON_03420116)
 
 # Class: obo:FOODON_00003009 (kabocha squash plant)
 
@@ -22503,7 +22503,7 @@ AnnotationAssertion(Annotation(dcterms:license <https://creativecommons.org/lice
 AnnotationAssertion(go:hasDbXref obo:FOODON_03411261 langual:B1261)
 AnnotationAssertion(go:hasExactSynonym obo:FOODON_03411261 "fungi"@en)
 AnnotationAssertion(rdfs:label obo:FOODON_03411261 "fungus"@en)
-SubClassOf(obo:FOODON_03411261 obo:FOODON_03411564)
+SubClassOf(obo:FOODON_03411261 obo:FOODON_00004336)
 
 # Class: obo:FOODON_03411262 (fennel plant)
 
@@ -22908,7 +22908,7 @@ AnnotationAssertion(dcterms:contributor obo:FOODON_03411301 <http://orcid.org/00
 AnnotationAssertion(Annotation(dcterms:license <https://creativecommons.org/licenses/by-sa/3.0>) Annotation(dcterms:rightsHolder "Toby Hudson") <http://schema.org/image> obo:FOODON_03411301 <https://upload.wikimedia.org/wikipedia/commons/thumb/0/03/NSW_seabed_1.JPG/640px-NSW_seabed_1.JPG>)
 AnnotationAssertion(go:hasDbXref obo:FOODON_03411301 langual:B1301)
 AnnotationAssertion(rdfs:label obo:FOODON_03411301 "algae"@en)
-SubClassOf(obo:FOODON_03411301 obo:FOODON_03411564)
+SubClassOf(obo:FOODON_03411301 obo:FOODON_00001184)
 
 # Class: obo:FOODON_03411303 (sage plant)
 
@@ -25050,7 +25050,7 @@ AnnotationAssertion(go:hasDbXref obo:FOODON_03411564 langual:B0001)
 AnnotationAssertion(go:hasDbXref obo:FOODON_03411564 langual:B1564)
 AnnotationAssertion(rdfs:comment obo:FOODON_03411564 "This was LanguaL definition: Individual plant or animal from which the food product or its major ingredient is derived; also a chemical food source [FDA CFSAN 1995]."@en)
 AnnotationAssertion(rdfs:label obo:FOODON_03411564 "organism by alternate grouping"@en)
-SubClassOf(obo:FOODON_03411564 obo:OBI_0100026)
+SubClassOf(obo:FOODON_03411564 obo:FOODON_03420116)
 
 # Class: obo:FOODON_03411565 (whitefish or cisco)
 
@@ -28898,7 +28898,7 @@ AnnotationAssertion(dcterms:contributor obo:FOODON_03412345 <http://orcid.org/00
 AnnotationAssertion(Annotation(dcterms:license <https://creativecommons.org/licenses/by-sa/3.0>) Annotation(dcterms:rightsHolder <https://commons.wikimedia.org/wiki/User:MichaelMaggs>) <http://schema.org/image> obo:FOODON_03412345 <https://upload.wikimedia.org/wikipedia/commons/thumb/4/4a/Lichen-covered_tree%2C_Tresco.jpg/391px-Lichen-covered_tree%2C_Tresco.jpg>)
 AnnotationAssertion(go:hasDbXref obo:FOODON_03412345 langual:B2345)
 AnnotationAssertion(rdfs:label obo:FOODON_03412345 "lichen"@en)
-SubClassOf(obo:FOODON_03412345 obo:FOODON_03411564)
+SubClassOf(obo:FOODON_03412345 obo:FOODON_03420116)
 
 # Class: obo:FOODON_03412351 (rock crab family)
 
@@ -81002,7 +81002,7 @@ SubClassOf(obo:PATO_0000918 obo:PATO_0000117)
 # Class: obo:PO_0000003 (whole plant)
 
 AnnotationAssertion(go:hasDbXref obo:PO_0000003 langual:B1347)
-SubClassOf(obo:PO_0000003 obo:FOODON_03411564)
+SubClassOf(obo:PO_0000003 obo:FOODON_00004331)
 
 # Class: obo:PO_0008037 (seedling)
 

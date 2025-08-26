@@ -1,9 +1,10 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
 <catalog prefer="public" xmlns="urn:oasis:names:tc:entity:xmlns:xml:catalog">
+
     <group id="Folder Repository, directory=, recursive=false, Auto-Update=false, version=2" prefer="public" xml:base="">
         <uri name="http://purl.obolibrary.org/obo/foodon-base.owl" uri="foodon-base.owl"/>
         <uri name="http://purl.obolibrary.org/obo/foodon.owl" uri="foodon.owl"/>
-        <uri id="Imports Wizard Entry" name="http://purl.obolibrary.org/obo/foodon/imports/cdno_import.owl" uri="imports/cdno_import.owl"/>
+        <uri name="http://purl.obolibrary.org/obo/foodon/imports/cdno_import.ofn" uri="imports/cdno_import.ofn"/>
         <uri name="http://purl.obolibrary.org/obo/foodon/imports/cob_import.owl" uri="imports/cob_import.owl"/>
         <uri name="http://purl.obolibrary.org/obo/foodon/imports/chebi_import.owl" uri="imports/chebi_import.owl"/>
         <uri name="http://purl.obolibrary.org/obo/foodon/imports/deprecation_import.ofn" uri="imports/deprecation_import.ofn"/>
