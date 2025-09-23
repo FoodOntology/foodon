@@ -477,7 +477,18 @@ Declaration(Class(obo:FOODON_00005451))
 Declaration(Class(obo:FOODON_00005452))
 Declaration(Class(obo:FOODON_00005466))
 Declaration(Class(obo:FOODON_00005499))
+Declaration(Class(obo:FOODON_00005501))
+Declaration(Class(obo:FOODON_00005502))
+Declaration(Class(obo:FOODON_00005522))
+Declaration(Class(obo:FOODON_00005551))
+Declaration(Class(obo:FOODON_00005566))
+Declaration(Class(obo:FOODON_00005615))
+Declaration(Class(obo:FOODON_00005621))
+Declaration(Class(obo:FOODON_00005669))
 Declaration(Class(obo:FOODON_00005670))
+Declaration(Class(obo:FOODON_00005671))
+Declaration(Class(obo:FOODON_00005672))
+Declaration(Class(obo:FOODON_00005673))
 Declaration(Class(obo:FOODON_0002899))
 Declaration(Class(obo:FOODON_02010336))
 Declaration(Class(obo:FOODON_02010338))
@@ -9789,17 +9800,6 @@ AnnotationAssertion(go:hasExactSynonym obo:FOODON_00003854 "soynut butter"@en)
 AnnotationAssertion(rdfs:label obo:FOODON_00003854 "soy nut butter"@en)
 SubClassOf(obo:FOODON_00003854 obo:FOODON_00002266)
 
-# Class: obo:FOODON_00003855 (tahini)
-
-AnnotationAssertion(obo:IAO_0000114 obo:FOODON_00003855 obo:IAO_0000122)
-AnnotationAssertion(obo:IAO_0000115 obo:FOODON_00003855 "A condiment made from toasted ground hulled sesame."@en)
-AnnotationAssertion(obo:IAO_0000117 obo:FOODON_00003855 <https://orcid.org/0000-0001-5275-8866>)
-AnnotationAssertion(obo:IAO_0000119 obo:FOODON_00003855 "https://en.wikipedia.org/wiki/Tahini"@en)
-AnnotationAssertion(dcterms:date obo:FOODON_00003855 "2021-05-19T13:26:12"^^xsd:dateTime)
-AnnotationAssertion(go:hasExactSynonym obo:FOODON_00003855 "tahina"@en)
-AnnotationAssertion(rdfs:label obo:FOODON_00003855 "tahini"@en)
-SubClassOf(obo:FOODON_00003855 obo:FOODON_00001133)
-
 # Class: obo:FOODON_00003857 (coconut meat (frozen))
 
 AnnotationAssertion(obo:IAO_0000114 obo:FOODON_00003857 obo:IAO_0000122)
@@ -11193,10 +11193,6 @@ SubClassOf(obo:FOODON_00004336 obo:FOODON_03420116)
 
 # Class: obo:FOODON_00004339 (ostrich food product)
 
-AnnotationAssertion(obo:IAO_0000117 obo:FOODON_00004339 <https://orcid.org/0000-0002-8844-9165>)
-AnnotationAssertion(dcterms:date obo:FOODON_00004339 "2023-03-04T04:59:22Z"^^xsd:dateTime)
-AnnotationAssertion(rdfs:label obo:FOODON_00004339 "ostrich food product"@en)
-AnnotationAssertion(rdfs:seeAlso obo:FOODON_00004339 <https://inspection.canada.ca/food-labels/labelling/industry/meat-and-poultry-products/ostrich/eng/1331671248457/1331671319522>)
 SubClassOf(obo:FOODON_00004339 obo:FOODON_00001251)
 
 # Class: obo:FOODON_00004340 (guar plant food product)
@@ -12156,6 +12152,76 @@ AnnotationAssertion(rdfs:seeAlso obo:FOODON_00005499 <https://www.canada.ca/en/h
 AnnotationAssertion(rdfs:seeAlso obo:FOODON_00005499 <https://www.foodsafety.gov/food-safety-charts/cold-food-storage-charts>)
 SubClassOf(obo:FOODON_00005499 obo:PATO_0000146)
 
+# Class: obo:FOODON_00005501 (mammalian material)
+
+AnnotationAssertion(obo:IAO_0000115 obo:FOODON_00005501 "Material which derives from one or more mammals."@en)
+AnnotationAssertion(dcterms:contributor obo:FOODON_00005501 <https://orcid.org/0000-0002-8844-9165>)
+AnnotationAssertion(dcterms:date obo:FOODON_00005501 "2025-08-26T00:35:09Z"^^xsd:dateTime)
+AnnotationAssertion(rdfs:label obo:FOODON_00005501 "mammalian material"@en)
+SubClassOf(obo:FOODON_00005501 obo:FOODON_00005502)
+
+# Class: obo:FOODON_00005502 (vertebrate material)
+
+AnnotationAssertion(obo:IAO_0000115 obo:FOODON_00005502 "Material which derives from one or more vertebrate animals."@en)
+AnnotationAssertion(dcterms:contributor obo:FOODON_00005502 <https://orcid.org/0000-0002-8844-9165>)
+AnnotationAssertion(dcterms:date obo:FOODON_00005502 "2025-08-26T00:38:18Z"^^xsd:dateTime)
+AnnotationAssertion(rdfs:label obo:FOODON_00005502 "vertebrate material"@en)
+SubClassOf(obo:FOODON_00005502 obo:FOODON_03420164)
+
+# Class: obo:FOODON_00005522 (invertebrate material)
+
+AnnotationAssertion(dcterms:contributor obo:FOODON_00005522 <https://orcid.org/0000-0002-8844-9165>)
+AnnotationAssertion(dcterms:date obo:FOODON_00005522 "2025-08-26T00:44:21Z"^^xsd:dateTime)
+AnnotationAssertion(rdfs:label obo:FOODON_00005522 "invertebrate material"@en)
+SubClassOf(obo:FOODON_00005522 obo:FOODON_03420164)
+
+# Class: obo:FOODON_00005551 (obsolete: avian material)
+
+AnnotationAssertion(obo:IAO_0100001 obo:FOODON_00005551 obo:FOODON_02020050)
+AnnotationAssertion(dcterms:contributor obo:FOODON_00005551 <https://orcid.org/0000-0002-8844-9165>)
+AnnotationAssertion(dcterms:date obo:FOODON_00005551 "2025-08-26T00:45:40Z"^^xsd:dateTime)
+AnnotationAssertion(rdfs:label obo:FOODON_00005551 "obsolete: avian material"@en)
+AnnotationAssertion(owl:deprecated obo:FOODON_00005551 "true"^^xsd:boolean)
+SubClassOf(obo:FOODON_00005551 obo:FOODON_03420164)
+
+# Class: obo:FOODON_00005566 (meat doneness)
+
+AnnotationAssertion(obo:IAO_0000114 obo:FOODON_00005566 obo:IAO_0000122)
+AnnotationAssertion(obo:IAO_0000115 obo:FOODON_00005566 "A quality grading of how thoroughly cooked a butchery cut of meat is."@en)
+AnnotationAssertion(obo:IAO_0000119 obo:FOODON_00005566 wikipedia:Doneness)
+AnnotationAssertion(dcterms:contributor obo:FOODON_00005566 <https://orcid.org/0000-0002-8844-9165>)
+AnnotationAssertion(dcterms:date obo:FOODON_00005566 "2025-09-22T17:34:40Z"^^xsd:dateTime)
+AnnotationAssertion(rdfs:label obo:FOODON_00005566 "meat doneness"@en)
+AnnotationAssertion(rdfs:seeAlso obo:FOODON_00005566 <https://archive.org/details/fieldguidetomeat0000gree_n1b1/page/294/mode/2up?view=theater>)
+SubClassOf(obo:FOODON_00005566 obo:PATO_0001018)
+
+# Class: obo:FOODON_00005615 (well done meat)
+
+AnnotationAssertion(obo:IAO_0000114 obo:FOODON_00005615 obo:IAO_0000122)
+AnnotationAssertion(obo:IAO_0000115 obo:FOODON_00005615 "A meat doneness characteristic in which meat appears gray-brown throughout and has a firm pliability."@en)
+AnnotationAssertion(dcterms:contributor obo:FOODON_00005615 <https://orcid.org/0000-0002-8844-9165>)
+AnnotationAssertion(dcterms:date obo:FOODON_00005615 "2025-09-22T17:36:44Z"^^xsd:dateTime)
+AnnotationAssertion(rdfs:label obo:FOODON_00005615 "well done meat"@en)
+SubClassOf(obo:FOODON_00005615 obo:FOODON_00005566)
+
+# Class: obo:FOODON_00005621 (rare meat)
+
+AnnotationAssertion(obo:IAO_0000114 obo:FOODON_00005621 obo:IAO_0000122)
+AnnotationAssertion(obo:IAO_0000115 obo:FOODON_00005621 "A meat doneness characteristic in which meat appears red in the centre of cut and has a soft pliability."@en)
+AnnotationAssertion(dcterms:contributor obo:FOODON_00005621 <https://orcid.org/0000-0002-8844-9165>)
+AnnotationAssertion(dcterms:date obo:FOODON_00005621 "2025-09-22T17:39:19Z"^^xsd:dateTime)
+AnnotationAssertion(rdfs:label obo:FOODON_00005621 "rare meat"@en)
+SubClassOf(obo:FOODON_00005621 obo:FOODON_00005566)
+
+# Class: obo:FOODON_00005669 (medium-rare meat)
+
+AnnotationAssertion(obo:IAO_0000114 obo:FOODON_00005669 obo:IAO_0000122)
+AnnotationAssertion(obo:IAO_0000115 obo:FOODON_00005669 "A meat doneness characteristic in which meat appears red in the centre of cut, is warm there, and has a firmer pliability."@en)
+AnnotationAssertion(dcterms:contributor obo:FOODON_00005669 <https://orcid.org/0000-0002-8844-9165>)
+AnnotationAssertion(dcterms:date obo:FOODON_00005669 "2025-09-22T17:41:10Z"^^xsd:dateTime)
+AnnotationAssertion(rdfs:label obo:FOODON_00005669 "medium-rare meat"@en)
+SubClassOf(obo:FOODON_00005669 obo:FOODON_00005566)
+
 # Class: obo:FOODON_00005670 (shrimp species)
 
 AnnotationAssertion(obo:IAO_0000115 obo:FOODON_00005670 "A grouping of shrimp species."@en)
@@ -12163,6 +12229,33 @@ AnnotationAssertion(dcterms:contributor obo:FOODON_00005670 <https://orcid.org/0
 AnnotationAssertion(dcterms:date obo:FOODON_00005670 "2025-07-30T12:05:36"^^xsd:dateTime)
 AnnotationAssertion(rdfs:label obo:FOODON_00005670 "shrimp species")
 SubClassOf(obo:FOODON_00005670 obo:FOODON_03411998)
+
+# Class: obo:FOODON_00005671 (medium done meat)
+
+AnnotationAssertion(obo:IAO_0000114 obo:FOODON_00005671 obo:IAO_0000122)
+AnnotationAssertion(obo:IAO_0000115 obo:FOODON_00005671 "A meat doneness characteristic in which meat appears pink in the centre of cut and has a firm pliability."@en)
+AnnotationAssertion(dcterms:contributor obo:FOODON_00005671 <https://orcid.org/0000-0002-8844-9165>)
+AnnotationAssertion(dcterms:date obo:FOODON_00005671 "2025-09-22T17:42:55Z"^^xsd:dateTime)
+AnnotationAssertion(rdfs:label obo:FOODON_00005671 "medium done meat"@en)
+SubClassOf(obo:FOODON_00005671 obo:FOODON_00005566)
+
+# Class: obo:FOODON_00005672 (extra rare meat)
+
+AnnotationAssertion(obo:IAO_0000114 obo:FOODON_00005672 obo:IAO_0000122)
+AnnotationAssertion(obo:IAO_0000115 obo:FOODON_00005672 "A meat doneness characteristic in which meat appears very red in the centre of cut and has a soft pliability."@en)
+AnnotationAssertion(dcterms:contributor obo:FOODON_00005672 <https://orcid.org/0000-0002-8844-9165>)
+AnnotationAssertion(dcterms:date obo:FOODON_00005672 "2025-09-22T17:45:45Z"^^xsd:dateTime)
+AnnotationAssertion(rdfs:label obo:FOODON_00005672 "extra rare meat"@en)
+SubClassOf(obo:FOODON_00005672 obo:FOODON_00005566)
+
+# Class: obo:FOODON_00005673 (medium well done)
+
+AnnotationAssertion(obo:IAO_0000114 obo:FOODON_00005673 obo:IAO_0000122)
+AnnotationAssertion(obo:IAO_0000115 obo:FOODON_00005673 "A meat doneness characteristic in which meat appears pink in a thin line at centre of cut and has a very firm pliability."@en)
+AnnotationAssertion(dcterms:contributor obo:FOODON_00005673 <https://orcid.org/0000-0002-8844-9165>)
+AnnotationAssertion(dcterms:date obo:FOODON_00005673 "2025-09-22T19:11:54Z"^^xsd:dateTime)
+AnnotationAssertion(rdfs:label obo:FOODON_00005673 "medium well done"@en)
+SubClassOf(obo:FOODON_00005673 obo:FOODON_00005566)
 
 # Class: obo:FOODON_02010014 (animal blood)
 
@@ -12300,13 +12393,9 @@ AnnotationAssertion(go:hasNarrowSynonym obo:FOODON_02020038 "salientia"@en)
 AnnotationAssertion(go:hasNarrowSynonym obo:FOODON_02020038 "toad"@en)
 SubClassOf(obo:FOODON_02020038 obo:FOODON_03411624)
 
-# Class: obo:FOODON_02020095 (emu material)
+# Class: obo:FOODON_02020094 (emu food product)
 
-SubClassOf(obo:FOODON_02020095 obo:FOODON_02020094)
-
-# Class: obo:FOODON_02020116 (duck substance)
-
-SubClassOf(obo:FOODON_02020116 obo:FOODON_02020114)
+SubClassOf(obo:FOODON_02020094 obo:FOODON_02020095)
 
 # Class: obo:FOODON_02020149 (chicken food product)
 
@@ -12470,10 +12559,6 @@ SubClassOf(obo:FOODON_03301108 ObjectSomeValuesFrom(obo:RO_0001000 obo:FOODON_03
 
 SubClassOf(obo:FOODON_03301111 ObjectSomeValuesFrom(obo:RO_0001000 obo:FOODON_03411312))
 
-# Class: obo:FOODON_03301115 (soy sauce)
-
-SubClassOf(obo:FOODON_03301115 ObjectSomeValuesFrom(obo:RO_0001000 obo:FOODON_03411047))
-
 # Class: obo:FOODON_03301119 (whole wheat bread)
 
 SubClassOf(obo:FOODON_03301119 ObjectSomeValuesFrom(obo:RO_0001000 obo:FOODON_03411312))
@@ -12569,10 +12654,6 @@ SubClassOf(obo:FOODON_03301410 ObjectSomeValuesFrom(obo:RO_0001000 obo:FOODON_03
 # Class: obo:FOODON_03301424 (bee pollen)
 
 SubClassOf(obo:FOODON_03301424 obo:FOODON_00001218)
-
-# Class: obo:FOODON_03301440 (mayonnaise)
-
-SubClassOf(obo:FOODON_03301440 ObjectSomeValuesFrom(obo:RO_0001000 obo:FOODON_03411017))
 
 # Class: obo:FOODON_03301496 (milk (vitamin d added))
 
@@ -14162,10 +14243,6 @@ SubClassOf(obo:FOODON_03304104 ObjectSomeValuesFrom(obo:RO_0001000 obo:NCBITaxon
 
 SubClassOf(obo:FOODON_03304105 ObjectSomeValuesFrom(obo:RO_0001000 obo:FOODON_03411237))
 
-# Class: obo:FOODON_03304111 (shoyu chicken sauce)
-
-SubClassOf(obo:FOODON_03304111 ObjectSomeValuesFrom(obo:RO_0001000 obo:NCBITaxon_3847))
-
 # Class: obo:FOODON_03304117 (barbeque sauce (western-style))
 
 SubClassOf(obo:FOODON_03304117 ObjectSomeValuesFrom(obo:RO_0001000 obo:FOODON_03411012))
@@ -14326,11 +14403,6 @@ SubClassOf(obo:FOODON_03304417 ObjectSomeValuesFrom(obo:RO_0001000 obo:FOODON_03
 
 SubClassOf(obo:FOODON_03304423 ObjectSomeValuesFrom(obo:RO_0001000 obo:FOODON_03411017))
 
-# Class: obo:FOODON_03304425 (mayonnaise (low sodium))
-
-SubClassOf(obo:FOODON_03304425 obo:FOODON_00001234)
-SubClassOf(obo:FOODON_03304425 ObjectSomeValuesFrom(obo:RO_0001000 obo:FOODON_03411017))
-
 # Class: obo:FOODON_03304426 (vanilla filled wafer (artificially sweetened))
 
 SubClassOf(obo:FOODON_03304426 ObjectSomeValuesFrom(obo:RO_0001000 obo:FOODON_03411312))
@@ -14414,11 +14486,6 @@ SubClassOf(obo:FOODON_03304579 ObjectSomeValuesFrom(obo:RO_0001000 obo:FOODON_03
 # Class: obo:FOODON_03304580 (salad sauce)
 
 SubClassOf(obo:FOODON_03304580 ObjectSomeValuesFrom(obo:RO_0001000 obo:FOODON_03411017))
-
-# Class: obo:FOODON_03304581 (mayonnaise (low calorie))
-
-SubClassOf(obo:FOODON_03304581 obo:FOODON_00001234)
-SubClassOf(obo:FOODON_03304581 ObjectSomeValuesFrom(obo:RO_0001000 obo:FOODON_03411017))
 
 # Class: obo:FOODON_03304582 (french dressing (low calorie))
 
@@ -14699,10 +14766,6 @@ SubClassOf(obo:FOODON_03304985 ObjectSomeValuesFrom(obo:RO_0001000 obo:FOODON_03
 # Class: obo:FOODON_03304986 (imitation jelly sweetened with sorbitol)
 
 SubClassOf(obo:FOODON_03304986 ObjectSomeValuesFrom(obo:RO_0001000 obo:FOODON_03411140))
-
-# Class: obo:FOODON_03304988 (shoyu sauce)
-
-SubClassOf(obo:FOODON_03304988 ObjectSomeValuesFrom(obo:RO_0001000 obo:NCBITaxon_3847))
 
 # Class: obo:FOODON_03305003 (worcestershire sauce)
 
@@ -15612,11 +15675,6 @@ SubClassOf(obo:FOODON_03306123 ObjectSomeValuesFrom(obo:RO_0001000 obo:FOODON_03
 
 SubClassOf(obo:FOODON_03306131 ObjectSomeValuesFrom(obo:RO_0001000 obo:FOODON_03411231))
 
-# Class: obo:FOODON_03306136 (mayonnaise with smoked salmon)
-
-SubClassOf(obo:FOODON_03306136 obo:FOODON_00001234)
-SubClassOf(obo:FOODON_03306136 ObjectSomeValuesFrom(obo:RO_0001000 obo:FOODON_03411017))
-
 # Class: obo:FOODON_03306148 (black currant juice)
 
 EquivalentClasses(obo:FOODON_03306148 ObjectIntersectionOf(obo:FOODON_00001641 ObjectSomeValuesFrom(obo:RO_0001000 obo:NCBITaxon_78511)))
@@ -15712,11 +15770,6 @@ SubClassOf(obo:FOODON_03306401 ObjectSomeValuesFrom(obo:RO_0001000 obo:FOODON_03
 # Class: obo:FOODON_03306402 (imitation lemon marmalade)
 
 SubClassOf(obo:FOODON_03306402 ObjectSomeValuesFrom(obo:RO_0001000 obo:FOODON_03411012))
-
-# Class: obo:FOODON_03306410 (mayonnaise (extra-heavy))
-
-SubClassOf(obo:FOODON_03306410 obo:FOODON_00001234)
-SubClassOf(obo:FOODON_03306410 ObjectSomeValuesFrom(obo:RO_0001000 obo:FOODON_03411017))
 
 # Class: obo:FOODON_03306411 (ova (hen))
 
@@ -18482,10 +18535,6 @@ SubClassOf(obo:FOODON_03309530 ObjectSomeValuesFrom(obo:RO_0001000 obo:FOODON_03
 
 SubClassOf(obo:FOODON_03309553 ObjectSomeValuesFrom(obo:RO_0001000 obo:FOODON_03411251))
 
-# Class: obo:FOODON_03309556 (tamari sauce)
-
-SubClassOf(obo:FOODON_03309556 ObjectSomeValuesFrom(obo:RO_0001000 obo:NCBITaxon_3847))
-
 # Class: obo:FOODON_03309558 (egg dressing)
 
 SubClassOf(obo:FOODON_03309558 ObjectSomeValuesFrom(obo:RO_0001000 obo:FOODON_03411017))
@@ -18852,10 +18901,6 @@ SubClassOf(obo:FOODON_03310242 ObjectSomeValuesFrom(obo:RO_0001000 obo:FOODON_03
 # Class: obo:FOODON_03310252 (prickly poppy seed)
 
 SubClassOf(obo:FOODON_03310252 ObjectSomeValuesFrom(obo:RO_0001000 obo:FOODON_03412156))
-
-# Class: obo:FOODON_03310255 (soybean sauce fermented)
-
-SubClassOf(obo:FOODON_03310255 ObjectSomeValuesFrom(obo:RO_0001000 obo:NCBITaxon_3847))
 
 # Class: obo:FOODON_03310267 (oilseed meal)
 
@@ -19337,10 +19382,6 @@ SubClassOf(obo:FOODON_03311449 ObjectSomeValuesFrom(obo:RO_0001000 obo:FOODON_03
 
 SubClassOf(obo:FOODON_03311450 ObjectSomeValuesFrom(obo:RO_0001000 obo:FOODON_03411312))
 
-# Class: obo:FOODON_03311463 (soy sauce acid hydrolyzed)
-
-SubClassOf(obo:FOODON_03311463 ObjectSomeValuesFrom(obo:RO_0001000 obo:NCBITaxon_3847))
-
 # Class: obo:FOODON_03311464 (imitation soy sauce from rapeseed meal)
 
 SubClassOf(obo:FOODON_03311464 ObjectSomeValuesFrom(obo:RO_0001000 obo:FOODON_03411248))
@@ -19520,16 +19561,6 @@ SubClassOf(obo:FOODON_03311821 ObjectSomeValuesFrom(obo:RO_0001000 obo:FOODON_03
 # Class: obo:FOODON_03311839 (lamb sausage (cooked))
 
 SubClassOf(obo:FOODON_03311839 ObjectSomeValuesFrom(obo:RO_0001000 obo:FOODON_03411669))
-
-# Class: obo:FOODON_03311842 (mayonnaise (reduced calorie, reduced fat))
-
-SubClassOf(obo:FOODON_03311842 obo:FOODON_00001234)
-SubClassOf(obo:FOODON_03311842 ObjectSomeValuesFrom(obo:RO_0001000 obo:FOODON_03411017))
-
-# Class: obo:FOODON_03311843 (mayonnaise (homemade))
-
-SubClassOf(obo:FOODON_03311843 obo:FOODON_00001234)
-SubClassOf(obo:FOODON_03311843 ObjectSomeValuesFrom(obo:RO_0001000 obo:FOODON_03411017))
 
 # Class: obo:FOODON_03311848 (malt beverage (fruit flavored))
 
@@ -21456,7 +21487,7 @@ AnnotationAssertion(obo:IAO_0000117 obo:FOODON_03411134 "Damion Dooley"@en)
 AnnotationAssertion(obo:IAO_0000119 obo:FOODON_03411134 "https://en.wikipedia.org/wiki/Mammal"^^xsd:anyURI)
 AnnotationAssertion(go:hasDbXref obo:FOODON_03411134 langual:B1134)
 AnnotationAssertion(rdfs:label obo:FOODON_03411134 "mammal"@en)
-SubClassOf(obo:FOODON_03411134 obo:FOODON_03411297)
+SubClassOf(obo:FOODON_03411134 obo:FOODON_00005501)
 
 # Class: obo:FOODON_03411135 (water snail)
 
@@ -22869,6 +22900,7 @@ AnnotationAssertion(go:hasDbXref obo:FOODON_03411297 langual:B1297)
 AnnotationAssertion(rdfs:comment obo:FOODON_03411297 "LanguaL curation note: For a unicellular animal, use *ALGAE OR FUNGUS USED AS FOOD SOURCE*."@en)
 AnnotationAssertion(rdfs:label obo:FOODON_03411297 "vertebrate animal"@en)
 SubClassOf(obo:FOODON_03411297 obo:FOODON_00003004)
+SubClassOf(obo:FOODON_03411297 ObjectSomeValuesFrom(obo:RO_0002162 obo:NCBITaxon_7742))
 
 # Class: obo:FOODON_03411298 (quince plant)
 
@@ -25041,14 +25073,15 @@ AnnotationAssertion(rdfs:label obo:FOODON_03411563 "poultry or game bird"@en)
 EquivalentClasses(obo:FOODON_03411563 ObjectUnionOf(obo:FOODON_00004298 obo:FOODON_03602002))
 SubClassOf(obo:FOODON_03411563 obo:FOODON_00002616)
 
-# Class: obo:FOODON_03411564 (organism by alternate grouping)
+# Class: obo:FOODON_03411564 (obsolete: organism by alternate grouping)
 
-AnnotationAssertion(obo:IAO_0000114 obo:FOODON_03411564 obo:IAO_0000428)
 AnnotationAssertion(obo:IAO_0000115 obo:FOODON_03411564 "This is a hierarchy of organisms, grouped minimally in a combination of taxonomy and consumer-oriented food groups."@en)
+AnnotationAssertion(obo:IAO_0100001 obo:FOODON_03411564 obo:FOODON_03420116)
 AnnotationAssertion(go:hasDbXref obo:FOODON_03411564 langual:B0001)
 AnnotationAssertion(go:hasDbXref obo:FOODON_03411564 langual:B1564)
 AnnotationAssertion(rdfs:comment obo:FOODON_03411564 "This was LanguaL definition: Individual plant or animal from which the food product or its major ingredient is derived; also a chemical food source [FDA CFSAN 1995]."@en)
-AnnotationAssertion(rdfs:label obo:FOODON_03411564 "organism by alternate grouping"@en)
+AnnotationAssertion(rdfs:label obo:FOODON_03411564 "obsolete: organism by alternate grouping"@en)
+AnnotationAssertion(owl:deprecated obo:FOODON_03411564 "true"^^xsd:boolean)
 SubClassOf(obo:FOODON_03411564 obo:FOODON_03420116)
 
 # Class: obo:FOODON_03411565 (whitefish or cisco)
@@ -44312,6 +44345,8 @@ SubClassOf(obo:FOODON_03420114 obo:FOODON_03420178)
 AnnotationAssertion(obo:IAO_0000114 obo:FOODON_03420116 obo:IAO_0000428)
 AnnotationAssertion(obo:IAO_0000115 obo:FOODON_03420116 "Food material which is distinguished primarily by the organism(s) it derives from."@en)
 AnnotationAssertion(obo:IAO_0000116 obo:FOODON_03420116 "This was renamed from \"part of organism\" (and from LanguaL's original \"part of plant or animal\") to encompass organism material that is produced by an animal or plant rather than \"part of\" it, such as an egg, and might not be countable per se, such as milk. Additionally the existing definition's \"from which a food product or its major ingredient is derived.\" was removed as an unnecessary constraint. [2023/03/02]"@en)
+AnnotationAssertion(go:hasDbXref obo:FOODON_03420116 langual:B0001)
+AnnotationAssertion(go:hasDbXref obo:FOODON_03420116 langual:B1564)
 AnnotationAssertion(go:hasDbXref obo:FOODON_03420116 langual:C0116)
 AnnotationAssertion(rdfs:comment obo:FOODON_03420116 "LanguaL curation note: \"e.g. *LEAF*, *ROOT OR TUBER*, *ORGAN MEAT*, *MILK* OR *EGG*; it also includes components of parts, such as *CREAM*, and extracts, concentrates or isolates, such as *PROTEIN EXTRACT* or *SUGAR*.\""@en)
 AnnotationAssertion(rdfs:comment obo:FOODON_03420116 "Old definition as of Feb 25, 2025: Anatomical or other part(s) or substances derived from plant or animal or fungal organisms."@en)
@@ -81019,10 +81054,6 @@ SubClassOf(obo:UBERON_0000178 obo:UBERON_0006314)
 # Class: obo:UBERON_0000463 (organism substance)
 
 SubClassOf(obo:UBERON_0000463 ObjectSomeValuesFrom(obo:RO_0003001 obo:OBI_0100026))
-
-# Class: obo:UBERON_0000468 (multicellular organism)
-
-SubClassOf(obo:UBERON_0000468 obo:BFO_0000040)
 
 # Class: obo:UBERON_0000945 (stomach)
 

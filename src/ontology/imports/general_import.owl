@@ -2174,7 +2174,6 @@ Declaration(ObjectProperty(obo:RO_0002233))
 Declaration(ObjectProperty(obo:RO_0002234))
 Declaration(ObjectProperty(obo:RO_0002350))
 Declaration(ObjectProperty(obo:RO_0002351))
-Declaration(ObjectProperty(obo:RO_0002352))
 Declaration(ObjectProperty(obo:RO_0002353))
 Declaration(ObjectProperty(obo:RO_0002354))
 Declaration(ObjectProperty(obo:RO_0002371))
@@ -2295,13 +2294,13 @@ AnnotationAssertion(rdfs:label obo:IAO_0000114 "has curation status"@en)
 # Annotation Property: obo:IAO_0000115 (definition)
 
 AnnotationAssertion(obo:IAO_0000114 obo:IAO_0000115 obo:IAO_0000122)
+AnnotationAssertion(obo:IAO_0000115 obo:IAO_0000115 "A property representing the English language definitions of what NCI means by the concept. They may also include information about the definition's source and attribution in a form that can easily be interpreted by software.")
 AnnotationAssertion(obo:IAO_0000115 obo:IAO_0000115 "The official OBI definition, explaining the meaning of a class or property. Shall be Aristotelian, formalized and normalized. Can be augmented with colloquial definitions."@en)
 AnnotationAssertion(obo:IAO_0000115 obo:IAO_0000115 "The official definition, explaining the meaning of a class or property. Shall be Aristotelian, formalized and normalized. Can be augmented with colloquial definitions."@en)
-AnnotationAssertion(obo:IAO_0000115 obo:IAO_0000115 "A property representing the English language definitions of what NCI means by the concept. They may also include information about the definition's source and attribution in a form that can easily be interpreted by software.")
 AnnotationAssertion(obo:IAO_0000119 obo:IAO_0000115 "GROUP:OBI:<http://purl.obolibrary.org/obo/obi>"@en)
+AnnotationAssertion(rdfs:label obo:IAO_0000115 "definition")
 AnnotationAssertion(rdfs:label obo:IAO_0000115 "definition"@en)
 AnnotationAssertion(rdfs:label obo:IAO_0000115 "textual definition")
-AnnotationAssertion(rdfs:label obo:IAO_0000115 "definition")
 
 # Annotation Property: obo:IAO_0000117 (term editor)
 
@@ -2325,9 +2324,9 @@ AnnotationAssertion(rdfs:label obo:IAO_0000118 "alternative_term")
 AnnotationAssertion(obo:IAO_0000114 obo:IAO_0000119 obo:IAO_0000122)
 AnnotationAssertion(obo:IAO_0000115 obo:IAO_0000119 "Formal citation, e.g. identifier in external database to indicate / attribute source(s) for the definition. Free text indicate / attribute source(s) for the definition. EXAMPLE: Author Name, URI, MeSH Term C04, PUBMED ID, Wiki uri on 31.01.2007"@en)
 AnnotationAssertion(obo:IAO_0000115 obo:IAO_0000119 "formal citation, e.g. identifier in external database to indicate / attribute source(s) for the definition. Free text indicate / attribute source(s) for the definition. EXAMPLE: Author Name, URI, MeSH Term C04, PUBMED ID, Wiki uri on 31.01.2007"@en)
+AnnotationAssertion(obo:IAO_0000119 obo:IAO_0000119 "Discussion on obo-discuss mailing-list, see http://bit.ly/hgm99w")
 AnnotationAssertion(obo:IAO_0000119 obo:IAO_0000119 "Discussion on obo-discuss mailing-list, see http://bit.ly/hgm99w"@en)
 AnnotationAssertion(obo:IAO_0000119 obo:IAO_0000119 "GROUP:OBI:<http://purl.obolibrary.org/obo/obi>"@en)
-AnnotationAssertion(obo:IAO_0000119 obo:IAO_0000119 "Discussion on obo-discuss mailing-list, see http://bit.ly/hgm99w")
 AnnotationAssertion(rdfs:label obo:IAO_0000119 "definition source")
 AnnotationAssertion(rdfs:label obo:IAO_0000119 "definition source"@en)
 AnnotationAssertion(rdfs:label obo:IAO_0000119 "definition_source")
@@ -2446,15 +2445,15 @@ AnnotationAssertion(rdfs:label oboInOwl:inSubset "in_subset")
 
 # Annotation Property: rdfs:label (label)
 
-AnnotationAssertion(rdfs:label rdfs:label "label"@en)
 AnnotationAssertion(rdfs:label rdfs:label "label")
+AnnotationAssertion(rdfs:label rdfs:label "label"@en)
 
 
 ############################
 #   Object Properties
 ############################
 
-# Object Property: obo:BFO_0000050 (part of)
+# Object Property: obo:BFO_0000050 (part_of)
 
 AnnotationAssertion(obo:IAO_0000115 obo:BFO_0000050 "a core relation that holds between a part and its whole"@en)
 AnnotationAssertion(obo:IAO_0000118 obo:BFO_0000050 "part_of"@en)
@@ -2488,7 +2487,7 @@ AnnotationAssertion(obo:IAO_0000115 obo:BFO_0000055 "Paraphrase of elucidation: 
 AnnotationAssertion(obo:IAO_0000412 obo:BFO_0000055 obo:ro.owl)
 AnnotationAssertion(rdfs:label obo:BFO_0000055 "realizes"@en)
 
-# Object Property: obo:BFO_0000062 (preceded_by)
+# Object Property: obo:BFO_0000062 (preceded by)
 
 AnnotationAssertion(rdfs:label obo:BFO_0000062 "preceded by"@en)
 AnnotationAssertion(rdfs:label obo:BFO_0000062 "preceded_by")
@@ -2558,7 +2557,7 @@ AnnotationAssertion(obo:IAO_0000412 obo:OBI_0001927 obo:obi.owl)
 AnnotationAssertion(rdfs:label obo:OBI_0001927 "specifies value of")
 SubObjectPropertyOf(obo:OBI_0001927 obo:IAO_0000136)
 
-# Object Property: obo:RO_0000052 (characteristic of)
+# Object Property: obo:RO_0000052 (inheres in)
 
 AnnotationAssertion(obo:IAO_0000115 obo:RO_0000052 "a relation between a specifically dependent continuant (the characteristic) and any other entity (the bearer), in which the characteristic depends on the bearer for its existence."@en)
 AnnotationAssertion(obo:IAO_0000118 obo:RO_0000052 "inheres_in"@en)
@@ -2566,7 +2565,7 @@ AnnotationAssertion(obo:IAO_0000412 obo:RO_0000052 obo:ro.owl)
 AnnotationAssertion(rdfs:label obo:RO_0000052 "characteristic of"@en)
 FunctionalObjectProperty(obo:RO_0000052)
 
-# Object Property: obo:RO_0000053 (has characteristic)
+# Object Property: obo:RO_0000053 (bearer of)
 
 AnnotationAssertion(obo:IAO_0000115 obo:RO_0000053 "Inverse of characteristic_of"@en)
 AnnotationAssertion(obo:IAO_0000118 obo:RO_0000053 "bearer_of"@en)
@@ -2584,7 +2583,7 @@ AnnotationAssertion(obo:IAO_0000412 obo:RO_0000056 obo:ro.owl)
 AnnotationAssertion(rdfs:label obo:RO_0000056 "participates in"@en)
 AnnotationAssertion(rdfs:label obo:RO_0000056 "participates_in")
 
-# Object Property: obo:RO_0000057 (has_participant)
+# Object Property: obo:RO_0000057 (has participant)
 
 AnnotationAssertion(obo:IAO_0000115 obo:RO_0000057 "a relation between a process and a continuant, in which the continuant is somehow involved in the process"@en)
 AnnotationAssertion(obo:IAO_0000118 obo:RO_0000057 "has_participant"@en)
@@ -2799,16 +2798,12 @@ AnnotationAssertion(obo:IAO_0000412 obo:RO_0002351 obo:ro.owl)
 AnnotationAssertion(rdfs:label obo:RO_0002351 "has member"@en)
 IrreflexiveObjectProperty(obo:RO_0002351)
 
-# Object Property: obo:RO_0002352 (input of)
-
-AnnotationAssertion(obo:IAO_0000115 obo:RO_0002352 "inverse of has input")
-AnnotationAssertion(obo:IAO_0000412 obo:RO_0002352 obo:ro.owl)
-AnnotationAssertion(rdfs:label obo:RO_0002352 "input of"@en)
-
 # Object Property: obo:RO_0002353 (output of)
 
+AnnotationAssertion(obo:IAO_0000115 obo:RO_0002353 "inverse of has input")
 AnnotationAssertion(obo:IAO_0000115 obo:RO_0002353 "inverse of has output")
 AnnotationAssertion(obo:IAO_0000412 obo:RO_0002353 obo:ro.owl)
+AnnotationAssertion(rdfs:label obo:RO_0002353 "input of"@en)
 AnnotationAssertion(rdfs:label obo:RO_0002353 "output of"@en)
 
 # Object Property: obo:RO_0002354 (formed as result of)
@@ -5737,10 +5732,10 @@ SubClassOf(obo:AfPO_0000580 obo:AfPO_0000205)
 
 # Class: obo:BFO_0000015 (process)
 
-AnnotationAssertion(obo:IAO_0000115 obo:BFO_0000015 "An occurrent that has temporal proper parts and for some time t, p s-depends_on some material entity at t."@en)
-AnnotationAssertion(obo:IAO_0000115 obo:BFO_0000015 "p is a process = Def. p is an occurrent that has temporal proper parts and for some time t, p s-depends_on some material entity at t. (axiom label in BFO2 Reference: [083-003])"@en)
 AnnotationAssertion(obo:IAO_0000115 obo:BFO_0000015 "An occurrent that has temporal proper parts and for some time t, p s-depends_on some material entity at t.")
+AnnotationAssertion(obo:IAO_0000115 obo:BFO_0000015 "An occurrent that has temporal proper parts and for some time t, p s-depends_on some material entity at t."@en)
 AnnotationAssertion(obo:IAO_0000115 obo:BFO_0000015 "p is a process = Def. p is an occurrent that has temporal proper parts and for some time t, p s-depends_on some material entity at t. (axiom label in BFO2 Reference: [083-003])")
+AnnotationAssertion(obo:IAO_0000115 obo:BFO_0000015 "p is a process = Def. p is an occurrent that has temporal proper parts and for some time t, p s-depends_on some material entity at t. (axiom label in BFO2 Reference: [083-003])"@en)
 AnnotationAssertion(obo:IAO_0000412 obo:BFO_0000015 obo:agro.owl)
 AnnotationAssertion(obo:IAO_0000412 obo:BFO_0000015 obo:ecocore.owl)
 AnnotationAssertion(obo:IAO_0000412 obo:BFO_0000015 obo:envo.owl)
@@ -5765,18 +5760,18 @@ SubClassOf(obo:BFO_0000017 obo:BFO_0000020)
 
 # Class: obo:BFO_0000020 (specifically dependent continuant)
 
-AnnotationAssertion(obo:IAO_0000115 obo:BFO_0000020 "A continuant that inheres in or is borne by other entities. Every instance of A requires some specific instance of B which must always be the same."@en)
-AnnotationAssertion(obo:IAO_0000115 obo:BFO_0000020 "b is a relational specifically dependent continuant = Def. b is a specifically dependent continuant and there are n &gt; 1 independent continuants c1, … cn which are not spatial regions are such that for all 1  i &lt; j  n, ci  and cj share no common parts, are such that for each 1  i  n, b s-depends_on ci at every time t during the course of b’s existence (axiom label in BFO2 Reference: [131-004])"@en)
-AnnotationAssertion(obo:IAO_0000115 obo:BFO_0000020 "b is a specifically dependent continuant = Def. b is a continuant & there is some independent continuant c which is not a spatial region and which is such that b s-depends_on c at every time t during the course of b’s existence. (axiom label in BFO2 Reference: [050-003])"@en)
 AnnotationAssertion(obo:IAO_0000115 obo:BFO_0000020 "A continuant that inheres in or is borne by other entities. Every instance of A requires some specific instance of B which must always be the same.")
+AnnotationAssertion(obo:IAO_0000115 obo:BFO_0000020 "A continuant that inheres in or is borne by other entities. Every instance of A requires some specific instance of B which must always be the same."@en)
 AnnotationAssertion(obo:IAO_0000115 obo:BFO_0000020 "b is a relational specifically dependent continuant = Def. b is a specifically dependent continuant and there are n &gt; 1 independent continuants c1, … cn which are not spatial regions are such that for all 1  i &lt; j  n, ci  and cj share no common parts, are such that for each 1  i  n, b s-depends_on ci at every time t during the course of b’s existence (axiom label in BFO2 Reference: [131-004])")
+AnnotationAssertion(obo:IAO_0000115 obo:BFO_0000020 "b is a relational specifically dependent continuant = Def. b is a specifically dependent continuant and there are n &gt; 1 independent continuants c1, … cn which are not spatial regions are such that for all 1  i &lt; j  n, ci  and cj share no common parts, are such that for each 1  i  n, b s-depends_on ci at every time t during the course of b’s existence (axiom label in BFO2 Reference: [131-004])"@en)
 AnnotationAssertion(obo:IAO_0000115 obo:BFO_0000020 "b is a specifically dependent continuant = Def. b is a continuant & there is some independent continuant c which is not a spatial region and which is such that b s-depends_on c at every time t during the course of b’s existence. (axiom label in BFO2 Reference: [050-003])")
+AnnotationAssertion(obo:IAO_0000115 obo:BFO_0000020 "b is a specifically dependent continuant = Def. b is a continuant & there is some independent continuant c which is not a spatial region and which is such that b s-depends_on c at every time t during the course of b’s existence. (axiom label in BFO2 Reference: [050-003])"@en)
 AnnotationAssertion(obo:IAO_0000412 obo:BFO_0000020 obo:agro.owl)
 AnnotationAssertion(obo:IAO_0000412 obo:BFO_0000020 obo:envo.owl)
 AnnotationAssertion(obo:IAO_0000412 obo:BFO_0000020 obo:obi.owl)
 AnnotationAssertion(obo:IAO_0000412 obo:BFO_0000020 obo:uberon.owl)
-AnnotationAssertion(rdfs:label obo:BFO_0000020 "specifically dependent continuant"@en)
 AnnotationAssertion(rdfs:label obo:BFO_0000020 "specifically dependent continuant")
+AnnotationAssertion(rdfs:label obo:BFO_0000020 "specifically dependent continuant"@en)
 
 # Class: obo:BFO_0000024 (fiat object part)
 
@@ -5793,8 +5788,8 @@ SubClassOf(obo:BFO_0000029 obo:BFO_0000141)
 
 # Class: obo:BFO_0000040 (material entity)
 
-AnnotationAssertion(obo:IAO_0000115 obo:BFO_0000040 "An independent continuant that is spatially extended whose identity is independent of that of other entities and can be maintained through time."@en)
 AnnotationAssertion(obo:IAO_0000115 obo:BFO_0000040 "An independent continuant that is spatially extended whose identity is independent of that of other entities and can be maintained through time.")
+AnnotationAssertion(obo:IAO_0000115 obo:BFO_0000040 "An independent continuant that is spatially extended whose identity is independent of that of other entities and can be maintained through time."@en)
 AnnotationAssertion(obo:IAO_0000412 obo:BFO_0000040 obo:agro.owl)
 AnnotationAssertion(obo:IAO_0000412 obo:BFO_0000040 obo:dron.owl)
 AnnotationAssertion(obo:IAO_0000412 obo:BFO_0000040 obo:envo.owl)
@@ -7013,7 +7008,7 @@ AnnotationAssertion(obo:IAO_0000412 obo:ENVO_01000752 obo:envo.owl)
 AnnotationAssertion(rdfs:label obo:ENVO_01000752 "area of barren land"@en)
 SubClassOf(obo:ENVO_01000752 obo:ENVO_01001199)
 
-# Class: obo:ENVO_01000813 (astronomical body part)
+# Class: obo:ENVO_01000813 (geophysical entity)
 
 AnnotationAssertion(obo:IAO_0000115 obo:ENVO_01000813 "A material part of an astronomical body.")
 AnnotationAssertion(obo:IAO_0000412 obo:ENVO_01000813 obo:envo.owl)
@@ -20133,13 +20128,13 @@ AnnotationAssertion(rdfs:label obo:IAO_0000428 "requires discussion"@en)
 ClassAssertion(obo:IAO_0000078 obo:IAO_0000428)
 
 
-AnnotationAssertion(obo:IAO_0000412 _:genid2147483785 obo:obi.owl)
-AnnotationAssertion(obo:IAO_0000412 _:genid2147483786 obo:obi.owl)
-AnnotationAssertion(obo:IAO_0000412 _:genid2147483787 obo:po.owl)
-AnnotationAssertion(obo:IAO_0000412 _:genid2147483788 obo:obi.owl)
-AnnotationAssertion(obo:IAO_0000412 _:genid2147483789 obo:po.owl)
-AnnotationAssertion(obo:IAO_0000412 _:genid2147483790 obo:po.owl)
-AnnotationAssertion(obo:IAO_0000412 _:genid2147483791 obo:po.owl)
-AnnotationAssertion(obo:IAO_0000412 _:genid2147483792 obo:po.owl)
-AnnotationAssertion(obo:IAO_0000412 _:genid2147483793 obo:obi.owl)
+AnnotationAssertion(obo:IAO_0000412 _:genid2147509253 obo:obi.owl)
+AnnotationAssertion(obo:IAO_0000412 _:genid2147509254 obo:po.owl)
+AnnotationAssertion(obo:IAO_0000412 _:genid2147509255 obo:po.owl)
+AnnotationAssertion(obo:IAO_0000412 _:genid2147509256 obo:obi.owl)
+AnnotationAssertion(obo:IAO_0000412 _:genid2147509257 obo:obi.owl)
+AnnotationAssertion(obo:IAO_0000412 _:genid2147509258 obo:po.owl)
+AnnotationAssertion(obo:IAO_0000412 _:genid2147509259 obo:po.owl)
+AnnotationAssertion(obo:IAO_0000412 _:genid2147509260 obo:po.owl)
+AnnotationAssertion(obo:IAO_0000412 _:genid2147509261 obo:obi.owl)
 )

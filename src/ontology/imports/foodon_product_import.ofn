@@ -2207,6 +2207,7 @@ Declaration(Class(obo:FOODON_00003849))
 Declaration(Class(obo:FOODON_00003850))
 Declaration(Class(obo:FOODON_00003851))
 Declaration(Class(obo:FOODON_00003852))
+Declaration(Class(obo:FOODON_00003855))
 Declaration(Class(obo:FOODON_00003874))
 Declaration(Class(obo:FOODON_00003877))
 Declaration(Class(obo:FOODON_00003880))
@@ -2428,6 +2429,7 @@ Declaration(Class(obo:FOODON_02010036))
 Declaration(Class(obo:FOODON_02010107))
 Declaration(Class(obo:FOODON_02010113))
 Declaration(Class(obo:FOODON_02010223))
+Declaration(Class(obo:FOODON_02020050))
 Declaration(Class(obo:FOODON_02020081))
 Declaration(Class(obo:FOODON_02020114))
 Declaration(Class(obo:FOODON_02020149))
@@ -2446,6 +2448,7 @@ Declaration(Class(obo:FOODON_02021535))
 Declaration(Class(obo:FOODON_02021548))
 Declaration(Class(obo:FOODON_02021629))
 Declaration(Class(obo:FOODON_02021654))
+Declaration(Class(obo:FOODON_02022068))
 Declaration(Class(obo:FOODON_03000000))
 Declaration(Class(obo:FOODON_03000001))
 Declaration(Class(obo:FOODON_03000092))
@@ -12835,6 +12838,7 @@ Declaration(ObjectProperty(obo:RO_0003001))
 Declaration(ObjectProperty(obo:RO_0009001))
 Declaration(ObjectProperty(obo:RO_0009003))
 Declaration(ObjectProperty(obo:RO_0009004))
+Declaration(AnnotationProperty(obo:IAO_0000111))
 Declaration(AnnotationProperty(obo:IAO_0000112))
 Declaration(AnnotationProperty(obo:IAO_0000114))
 Declaration(AnnotationProperty(obo:IAO_0000115))
@@ -14545,14 +14549,16 @@ SubClassOf(obo:FOODON_00001233 obo:FOODON_00001087)
 
 # Class: obo:FOODON_00001234 (mayonnaise food product)
 
-AnnotationAssertion(Annotation(oboInOwl:hasDbXref "http://en.wikipedia.org/wiki/Mayonnaise") obo:IAO_0000115 obo:FOODON_00001234 "A stable emulsion of oil, and vinegar or lemon juice, with many options for embellishment with other herbs and spices. Egg yolk is the traditional emulsifier.")
+AnnotationAssertion(obo:IAO_0000114 obo:FOODON_00001234 obo:IAO_0000122)
+AnnotationAssertion(obo:IAO_0000115 obo:FOODON_00001234 "A food product made with mayonnaise as a defining ingredient."@en)
+AnnotationAssertion(obo:IAO_0000119 obo:FOODON_00001234 <http://en.wikipedia.org/wiki/Mayonnaise>)
 AnnotationAssertion(rdfs:label obo:FOODON_00001234 "mayonnaise food product"@en)
 SubClassOf(obo:FOODON_00001234 obo:FOODON_00001231)
 SubClassOf(obo:FOODON_00001234 ObjectSomeValuesFrom(obo:FOODON_00001301 obo:FOODON_03306409))
 
 # Class: obo:FOODON_00001235 (soy sauce food product)
 
-AnnotationAssertion(Annotation(oboInOwl:hasDbXref "http://en.wikipedia.org/wiki/Soy_sauce") obo:IAO_0000115 obo:FOODON_00001235 "A condiment produced by fermenting soybeans with Aspergillus oryzae and Aspergillus soyae molds  along with roasted grain, water, and salt.")
+AnnotationAssertion(Annotation(oboInOwl:hasDbXref "http://en.wikipedia.org/wiki/Soy_sauce") obo:IAO_0000115 obo:FOODON_00001235 "A condiment produced by fermenting soybeans with Aspergillus oryzae or Aspergillus soyae molds along with roasted grain, water, and salt."@en)
 AnnotationAssertion(rdfs:label obo:FOODON_00001235 "soy sauce food product"@en)
 SubClassOf(obo:FOODON_00001235 obo:FOODON_00001078)
 SubClassOf(obo:FOODON_00001235 obo:FOODON_00002262)
@@ -14672,6 +14678,7 @@ SubClassOf(obo:FOODON_00001250 obo:FOODON_03315173)
 # Class: obo:FOODON_00001251 (avian animal food product)
 
 SubClassOf(obo:FOODON_00001251 obo:FOODON_00001092)
+SubClassOf(obo:FOODON_00001251 obo:FOODON_02020050)
 
 # Class: obo:FOODON_00001252 (animal derived beverage)
 
@@ -15645,6 +15652,7 @@ SubClassOf(obo:FOODON_00001622 obo:FOODON_00001950)
 
 AnnotationAssertion(rdfs:label obo:FOODON_00001623 "atlantic salmon and trout food product"@en)
 SubClassOf(obo:FOODON_00001623 obo:FOODON_00002220)
+SubClassOf(obo:FOODON_00001623 obo:FOODON_02022068)
 SubClassOf(obo:FOODON_00001623 ObjectSomeValuesFrom(obo:RO_0001000 obo:FOODON_03412250))
 
 # Class: obo:FOODON_00001625 (avocado food product)
@@ -16443,6 +16451,7 @@ SubClassOf(obo:FOODON_00001759 obo:FOODON_00001709)
 AnnotationAssertion(rdfs:label obo:FOODON_00001761 "condiment sauce"@en)
 SubClassOf(obo:FOODON_00001761 obo:FOODON_00001133)
 SubClassOf(obo:FOODON_00001761 obo:FOODON_00001931)
+SubClassOf(obo:FOODON_00001761 ObjectSomeValuesFrom(obo:RO_0002350 obo:FOODON_03400263))
 
 # Class: obo:FOODON_00001762 (cookie food product)
 
@@ -19361,7 +19370,8 @@ SubClassOf(obo:FOODON_00002261 obo:FOODON_03302389)
 # Class: obo:FOODON_00002262 (soybean condiment)
 
 AnnotationAssertion(rdfs:label obo:FOODON_00002262 "soybean condiment"@en)
-SubClassOf(obo:FOODON_00002262 obo:FOODON_00001133)
+SubClassOf(obo:FOODON_00002262 obo:FOODON_00001761)
+SubClassOf(obo:FOODON_00002262 ObjectSomeValuesFrom(obo:FOODON_00001563 obo:FOODON_03301415))
 
 # Class: obo:FOODON_00002263 (soybean dressing food product)
 
@@ -27446,6 +27456,17 @@ AnnotationAssertion(oboInOwl:hasExactSynonym obo:FOODON_00003852 "blend for dog"
 AnnotationAssertion(rdfs:label obo:FOODON_00003852 "multi-component dog food product"@en)
 SubClassOf(obo:FOODON_00003852 obo:FOODON_00003850)
 
+# Class: obo:FOODON_00003855 (tahini)
+
+AnnotationAssertion(obo:IAO_0000114 obo:FOODON_00003855 obo:IAO_0000122)
+AnnotationAssertion(obo:IAO_0000115 obo:FOODON_00003855 "A condiment made from toasted ground hulled sesame."@en)
+AnnotationAssertion(obo:IAO_0000117 obo:FOODON_00003855 <https://orcid.org/0000-0001-5275-8866>)
+AnnotationAssertion(obo:IAO_0000119 obo:FOODON_00003855 "https://en.wikipedia.org/wiki/Tahini"@en)
+AnnotationAssertion(dcterms:date obo:FOODON_00003855 "2021-05-19T13:26:12"^^xsd:dateTime)
+AnnotationAssertion(oboInOwl:hasExactSynonym obo:FOODON_00003855 "tahina"@en)
+AnnotationAssertion(rdfs:label obo:FOODON_00003855 "tahini"@en)
+SubClassOf(obo:FOODON_00003855 obo:FOODON_00001133)
+
 # Class: obo:FOODON_00003874 (corn on-the-cob (raw))
 
 AnnotationAssertion(obo:IAO_0000115 obo:FOODON_00003874 "A raw corn cob containing kernels."@en)
@@ -29618,13 +29639,13 @@ AnnotationAssertion(rdfs:label obo:FOODON_03301114 "ham (cured)"@en)
 SubClassOf(obo:FOODON_03301114 obo:FOODON_00002301)
 SubClassOf(obo:FOODON_03301114 obo:FOODON_00002502)
 
-# Class: obo:FOODON_03301115 (soy sauce)
+# Class: obo:FOODON_03301115 (soy sauce (proteolytic fermentation))
 
-AnnotationAssertion(obo:IAO_0000114 obo:FOODON_03301115 obo:IAO_0000428)
+AnnotationAssertion(obo:IAO_0000114 obo:FOODON_03301115 obo:IAO_0000122)
+AnnotationAssertion(obo:IAO_0000115 obo:FOODON_03301115 "Soy sauce which has been fermented using Aspergillus oryzae or Aspergillus sojae strains."@en)
 AnnotationAssertion(oboInOwl:hasDbXref obo:FOODON_03301115 siren:F1115)
-AnnotationAssertion(rdfs:label obo:FOODON_03301115 "soy sauce"@en)
-SubClassOf(obo:FOODON_03301115 obo:FOODON_00001761)
-SubClassOf(obo:FOODON_03301115 ObjectSomeValuesFrom(obo:RO_0002350 obo:FOODON_03400263))
+AnnotationAssertion(rdfs:label obo:FOODON_03301115 "soy sauce (proteolytic fermentation)"@en)
+SubClassOf(obo:FOODON_03301115 obo:FOODON_00001235)
 
 # Class: obo:FOODON_03301116 (white wheat flour (not heat treated))
 
@@ -31517,7 +31538,9 @@ SubClassOf(obo:FOODON_03301438 obo:FOODON_03316425)
 
 # Class: obo:FOODON_03301440 (mayonnaise)
 
-AnnotationAssertion(obo:IAO_0000114 obo:FOODON_03301440 obo:IAO_0000428)
+AnnotationAssertion(obo:IAO_0000111 obo:FOODON_03301440 "A stable emulsion of a vegetable and or seed oil, and an acid, either vinegar or lemon juice, and often egg yolk.  Many mayonnaise variants include additional flavouring ingredients."@en)
+AnnotationAssertion(obo:IAO_0000114 obo:FOODON_03301440 obo:IAO_0000122)
+AnnotationAssertion(obo:IAO_0000119 obo:FOODON_03301440 <http://en.wikipedia.org/wiki/Mayonnaise>)
 AnnotationAssertion(oboInOwl:hasDbXref obo:FOODON_03301440 siren:F1440)
 AnnotationAssertion(rdfs:label obo:FOODON_03301440 "mayonnaise"@en)
 SubClassOf(obo:FOODON_03301440 obo:FOODON_00001234)
@@ -34655,7 +34678,6 @@ AnnotationAssertion(obo:IAO_0000114 obo:FOODON_03302032 obo:IAO_0000428)
 AnnotationAssertion(oboInOwl:hasDbXref obo:FOODON_03302032 siren:F2032)
 AnnotationAssertion(rdfs:label obo:FOODON_03302032 "taco sauce"@en)
 SubClassOf(obo:FOODON_03302032 obo:FOODON_00001761)
-SubClassOf(obo:FOODON_03302032 ObjectSomeValuesFrom(obo:RO_0002350 obo:FOODON_03400263))
 
 # Class: obo:FOODON_03302033 (chili pepper (raw))
 
@@ -44196,7 +44218,6 @@ AnnotationAssertion(obo:IAO_0000114 obo:FOODON_03303914 obo:IAO_0000428)
 AnnotationAssertion(oboInOwl:hasDbXref obo:FOODON_03303914 siren:F3914)
 AnnotationAssertion(rdfs:label obo:FOODON_03303914 "salsa casera"@en)
 SubClassOf(obo:FOODON_03303914 obo:FOODON_00001761)
-SubClassOf(obo:FOODON_03303914 ObjectSomeValuesFrom(obo:RO_0002350 obo:FOODON_03400263))
 
 # Class: obo:FOODON_03303915 (chestnut (glazed))
 
@@ -44438,7 +44459,6 @@ AnnotationAssertion(obo:IAO_0000114 obo:FOODON_03304007 obo:IAO_0000428)
 AnnotationAssertion(oboInOwl:hasDbXref obo:FOODON_03304007 siren:F4007)
 AnnotationAssertion(rdfs:label obo:FOODON_03304007 "enchilada sauce"@en)
 SubClassOf(obo:FOODON_03304007 obo:FOODON_00001761)
-SubClassOf(obo:FOODON_03304007 ObjectSomeValuesFrom(obo:RO_0002350 obo:FOODON_03400263))
 
 # Class: obo:FOODON_03304008 (barbeque sauce (bottled))
 
@@ -44446,7 +44466,6 @@ AnnotationAssertion(obo:IAO_0000114 obo:FOODON_03304008 obo:IAO_0000428)
 AnnotationAssertion(oboInOwl:hasDbXref obo:FOODON_03304008 siren:F4008)
 AnnotationAssertion(rdfs:label obo:FOODON_03304008 "barbeque sauce (bottled)"@en)
 SubClassOf(obo:FOODON_03304008 obo:FOODON_00001761)
-SubClassOf(obo:FOODON_03304008 ObjectSomeValuesFrom(obo:RO_0002350 obo:FOODON_03400263))
 
 # Class: obo:FOODON_03304009 (barbeque sauce (canned))
 
@@ -44454,7 +44473,6 @@ AnnotationAssertion(obo:IAO_0000114 obo:FOODON_03304009 obo:IAO_0000428)
 AnnotationAssertion(oboInOwl:hasDbXref obo:FOODON_03304009 siren:F4009)
 AnnotationAssertion(rdfs:label obo:FOODON_03304009 "barbeque sauce (canned)"@en)
 SubClassOf(obo:FOODON_03304009 obo:FOODON_00001761)
-SubClassOf(obo:FOODON_03304009 ObjectSomeValuesFrom(obo:RO_0002350 obo:FOODON_03400263))
 
 # Class: obo:FOODON_03304010 (pinto refried beans)
 
@@ -44742,7 +44760,6 @@ AnnotationAssertion(obo:IAO_0000114 obo:FOODON_03304054 obo:IAO_0000428)
 AnnotationAssertion(oboInOwl:hasDbXref obo:FOODON_03304054 siren:F4054)
 AnnotationAssertion(rdfs:label obo:FOODON_03304054 "tomato-based hot sauce"@en)
 SubClassOf(obo:FOODON_03304054 obo:FOODON_00001761)
-SubClassOf(obo:FOODON_03304054 ObjectSomeValuesFrom(obo:RO_0002350 obo:FOODON_03400263))
 
 # Class: obo:FOODON_03304057 (soup mix (dry))
 
@@ -45045,7 +45062,6 @@ AnnotationAssertion(obo:IAO_0000114 obo:FOODON_03304117 obo:IAO_0000428)
 AnnotationAssertion(oboInOwl:hasDbXref obo:FOODON_03304117 siren:F4117)
 AnnotationAssertion(rdfs:label obo:FOODON_03304117 "barbeque sauce (western-style)"@en)
 SubClassOf(obo:FOODON_03304117 obo:FOODON_00001761)
-SubClassOf(obo:FOODON_03304117 ObjectSomeValuesFrom(obo:RO_0002350 obo:FOODON_03400263))
 
 # Class: obo:FOODON_03304118 (onion (grilled))
 
@@ -46646,6 +46662,7 @@ SubClassOf(obo:FOODON_03304424 obo:FOODON_03301460)
 AnnotationAssertion(obo:IAO_0000114 obo:FOODON_03304425 obo:IAO_0000428)
 AnnotationAssertion(oboInOwl:hasDbXref obo:FOODON_03304425 siren:F4425)
 AnnotationAssertion(rdfs:label obo:FOODON_03304425 "mayonnaise (low sodium)"@en)
+SubClassOf(obo:FOODON_03304425 obo:FOODON_03301440)
 SubClassOf(obo:FOODON_03304425 ObjectSomeValuesFrom(obo:RO_0002350 obo:FOODON_03400292))
 
 # Class: obo:FOODON_03304426 (vanilla filled wafer (artificially sweetened))
@@ -47596,6 +47613,7 @@ SubClassOf(obo:FOODON_03304580 ObjectSomeValuesFrom(obo:RO_0002350 obo:FOODON_03
 AnnotationAssertion(obo:IAO_0000114 obo:FOODON_03304581 obo:IAO_0000428)
 AnnotationAssertion(oboInOwl:hasDbXref obo:FOODON_03304581 siren:F4581)
 AnnotationAssertion(rdfs:label obo:FOODON_03304581 "mayonnaise (low calorie)"@en)
+SubClassOf(obo:FOODON_03304581 obo:FOODON_03301440)
 SubClassOf(obo:FOODON_03304581 ObjectSomeValuesFrom(obo:RO_0002350 obo:FOODON_03400136))
 
 # Class: obo:FOODON_03304582 (french dressing (low calorie))
@@ -50181,7 +50199,6 @@ AnnotationAssertion(obo:IAO_0000114 obo:FOODON_03305003 obo:IAO_0000428)
 AnnotationAssertion(oboInOwl:hasDbXref obo:FOODON_03305003 siren:F5003)
 AnnotationAssertion(rdfs:label obo:FOODON_03305003 "worcestershire sauce"@en)
 SubClassOf(obo:FOODON_03305003 obo:FOODON_00001761)
-SubClassOf(obo:FOODON_03305003 ObjectSomeValuesFrom(obo:RO_0002350 obo:FOODON_03400263))
 
 # Class: obo:FOODON_03305005 (tomato pulp)
 
@@ -56079,6 +56096,8 @@ SubClassOf(obo:FOODON_03306135 ObjectSomeValuesFrom(obo:RO_0002350 obo:FOODON_03
 AnnotationAssertion(obo:IAO_0000114 obo:FOODON_03306136 obo:IAO_0000428)
 AnnotationAssertion(oboInOwl:hasDbXref obo:FOODON_03306136 siren:F6136)
 AnnotationAssertion(rdfs:label obo:FOODON_03306136 "mayonnaise with smoked salmon"@en)
+SubClassOf(obo:FOODON_03306136 obo:FOODON_00001234)
+SubClassOf(obo:FOODON_03306136 ObjectSomeValuesFrom(obo:FOODON_00001563 obo:FOODON_03301440))
 SubClassOf(obo:FOODON_03306136 ObjectSomeValuesFrom(obo:RO_0002350 obo:FOODON_03400292))
 
 # Class: obo:FOODON_03306137 (lasagna casserole (frozen))
@@ -57555,6 +57574,7 @@ SubClassOf(obo:FOODON_03306409 ObjectSomeValuesFrom(obo:RO_0002350 obo:FOODON_03
 AnnotationAssertion(obo:IAO_0000114 obo:FOODON_03306410 obo:IAO_0000428)
 AnnotationAssertion(oboInOwl:hasDbXref obo:FOODON_03306410 siren:F6410)
 AnnotationAssertion(rdfs:label obo:FOODON_03306410 "mayonnaise (extra-heavy)"@en)
+SubClassOf(obo:FOODON_03306410 obo:FOODON_03301440)
 SubClassOf(obo:FOODON_03306410 ObjectSomeValuesFrom(obo:RO_0002350 obo:FOODON_03400292))
 
 # Class: obo:FOODON_03306411 (ova (hen))
@@ -62551,7 +62571,6 @@ AnnotationAssertion(obo:IAO_0000114 obo:FOODON_03307333 obo:IAO_0000428)
 AnnotationAssertion(oboInOwl:hasDbXref obo:FOODON_03307333 siren:F7333)
 AnnotationAssertion(rdfs:label obo:FOODON_03307333 "cocktail sauce"@en)
 SubClassOf(obo:FOODON_03307333 obo:FOODON_00001761)
-SubClassOf(obo:FOODON_03307333 ObjectSomeValuesFrom(obo:RO_0002350 obo:FOODON_03400263))
 
 # Class: obo:FOODON_03307335 (blueberry conserve)
 
@@ -64200,7 +64219,6 @@ AnnotationAssertion(obo:IAO_0000114 obo:FOODON_03307704 obo:IAO_0000428)
 AnnotationAssertion(oboInOwl:hasDbXref obo:FOODON_03307704 siren:F7704)
 AnnotationAssertion(rdfs:label obo:FOODON_03307704 "shrimp cocktail sauce"@en)
 SubClassOf(obo:FOODON_03307704 obo:FOODON_00001761)
-SubClassOf(obo:FOODON_03307704 ObjectSomeValuesFrom(obo:RO_0002350 obo:FOODON_03400263))
 
 # Class: obo:FOODON_03307706 (german hot slaw dressing)
 
@@ -72597,8 +72615,7 @@ SubClassOf(obo:FOODON_03309555 obo:FOODON_00002050)
 AnnotationAssertion(obo:IAO_0000114 obo:FOODON_03309556 obo:IAO_0000428)
 AnnotationAssertion(oboInOwl:hasDbXref obo:FOODON_03309556 siren:F9556)
 AnnotationAssertion(rdfs:label obo:FOODON_03309556 "tamari sauce"@en)
-SubClassOf(obo:FOODON_03309556 obo:FOODON_00001761)
-SubClassOf(obo:FOODON_03309556 ObjectSomeValuesFrom(obo:RO_0002350 obo:FOODON_03400263))
+SubClassOf(obo:FOODON_03309556 obo:FOODON_00002262)
 
 # Class: obo:FOODON_03309557 (cabbage (pickled))
 
@@ -75210,7 +75227,6 @@ AnnotationAssertion(obo:IAO_0000114 obo:FOODON_03310086 obo:IAO_0000428)
 AnnotationAssertion(oboInOwl:hasDbXref obo:FOODON_03310086 siren:F10086)
 AnnotationAssertion(rdfs:label obo:FOODON_03310086 "salsa"@en)
 SubClassOf(obo:FOODON_03310086 obo:FOODON_00001761)
-SubClassOf(obo:FOODON_03310086 ObjectSomeValuesFrom(obo:RO_0002350 obo:FOODON_03400263))
 
 # Class: obo:FOODON_03310088 (refried beans (dish))
 
@@ -82508,13 +82524,14 @@ AnnotationAssertion(oboInOwl:hasDbXref obo:FOODON_03311462 siren:F11462)
 AnnotationAssertion(rdfs:label obo:FOODON_03311462 "tomato paste (powdered, dehydrated, canned)"@en)
 SubClassOf(obo:FOODON_03311462 obo:FOODON_03301455)
 
-# Class: obo:FOODON_03311463 (soy sauce acid hydrolyzed)
+# Class: obo:FOODON_03311463 (soy sauce (acid-hydrolyzed))
 
-AnnotationAssertion(obo:IAO_0000114 obo:FOODON_03311463 obo:IAO_0000428)
+AnnotationAssertion(obo:IAO_0000114 obo:FOODON_03311463 obo:IAO_0000122)
+AnnotationAssertion(obo:IAO_0000115 obo:FOODON_03311463 "Soy sauce which is made from acid-hydrolyzed soy protein instead of brewed with a traditional culture."@en)
+AnnotationAssertion(obo:IAO_0000119 obo:FOODON_03311463 wikipedia:Soy_sauce)
 AnnotationAssertion(oboInOwl:hasDbXref obo:FOODON_03311463 siren:F11463)
-AnnotationAssertion(rdfs:label obo:FOODON_03311463 "soy sauce acid hydrolyzed"@en)
-SubClassOf(obo:FOODON_03311463 obo:FOODON_00001761)
-SubClassOf(obo:FOODON_03311463 ObjectSomeValuesFrom(obo:RO_0002350 obo:FOODON_03400263))
+AnnotationAssertion(rdfs:label obo:FOODON_03311463 "soy sauce (acid-hydrolyzed)"@en)
+SubClassOf(obo:FOODON_03311463 obo:FOODON_00001235)
 
 # Class: obo:FOODON_03311464 (imitation soy sauce from rapeseed meal)
 
@@ -83864,7 +83881,6 @@ AnnotationAssertion(obo:IAO_0000114 obo:FOODON_03311704 obo:IAO_0000428)
 AnnotationAssertion(oboInOwl:hasDbXref obo:FOODON_03311704 siren:F11704)
 AnnotationAssertion(rdfs:label obo:FOODON_03311704 "oriental sauce"@en)
 SubClassOf(obo:FOODON_03311704 obo:FOODON_00001761)
-SubClassOf(obo:FOODON_03311704 ObjectSomeValuesFrom(obo:RO_0002350 obo:FOODON_03400263))
 
 # Class: obo:FOODON_03311707 (corn bran cereal)
 
@@ -84551,6 +84567,7 @@ SubClassOf(obo:FOODON_03311841 ObjectSomeValuesFrom(obo:RO_0002350 obo:FOODON_03
 AnnotationAssertion(obo:IAO_0000114 obo:FOODON_03311842 obo:IAO_0000428)
 AnnotationAssertion(oboInOwl:hasDbXref obo:FOODON_03311842 siren:F11842)
 AnnotationAssertion(rdfs:label obo:FOODON_03311842 "mayonnaise (reduced calorie, reduced fat)"@en)
+SubClassOf(obo:FOODON_03311842 obo:FOODON_03301440)
 SubClassOf(obo:FOODON_03311842 ObjectSomeValuesFrom(obo:RO_0002350 obo:FOODON_03400136))
 
 # Class: obo:FOODON_03311843 (mayonnaise (homemade))
@@ -84558,6 +84575,7 @@ SubClassOf(obo:FOODON_03311842 ObjectSomeValuesFrom(obo:RO_0002350 obo:FOODON_03
 AnnotationAssertion(obo:IAO_0000114 obo:FOODON_03311843 obo:IAO_0000428)
 AnnotationAssertion(oboInOwl:hasDbXref obo:FOODON_03311843 siren:F11843)
 AnnotationAssertion(rdfs:label obo:FOODON_03311843 "mayonnaise (homemade)"@en)
+SubClassOf(obo:FOODON_03311843 obo:FOODON_03301440)
 SubClassOf(obo:FOODON_03311843 ObjectSomeValuesFrom(obo:RO_0002350 obo:FOODON_03400136))
 
 # Class: obo:FOODON_03311844 (buttermilk ranch salad dressing)
@@ -87344,7 +87362,6 @@ AnnotationAssertion(obo:IAO_0000114 obo:FOODON_03315454 obo:IAO_0000428)
 AnnotationAssertion(oboInOwl:hasDbXref obo:FOODON_03315454 siren:F15454)
 AnnotationAssertion(rdfs:label obo:FOODON_03315454 "tonkatsu sauce"@en)
 SubClassOf(obo:FOODON_03315454 obo:FOODON_00001761)
-SubClassOf(obo:FOODON_03315454 ObjectSomeValuesFrom(obo:RO_0002350 obo:FOODON_03400263))
 
 # Class: obo:FOODON_03315455 (potato (peeled, boiled, mashed, dried))
 
