@@ -88,8 +88,6 @@ Declaration(Class(<http://purl.obolibrary.org/obo/FOODON_00004059>))
 Declaration(Class(<http://purl.obolibrary.org/obo/FOODON_00004060>))
 Declaration(Class(<http://purl.obolibrary.org/obo/FOODON_00004061>))
 Declaration(Class(<http://purl.obolibrary.org/obo/FOODON_00004062>))
-Declaration(Class(<http://purl.obolibrary.org/obo/FOODON_00004063>))
-Declaration(Class(<http://purl.obolibrary.org/obo/FOODON_00004064>))
 Declaration(Class(<http://purl.obolibrary.org/obo/FOODON_00004065>))
 Declaration(Class(<http://purl.obolibrary.org/obo/FOODON_00004067>))
 Declaration(Class(<http://purl.obolibrary.org/obo/FOODON_00004072>))
@@ -108,7 +106,6 @@ Declaration(Class(<http://purl.obolibrary.org/obo/FOODON_03310734>))
 Declaration(Class(<http://purl.obolibrary.org/obo/FOODON_03311123>))
 Declaration(Class(<http://purl.obolibrary.org/obo/FOODON_03311270>))
 Declaration(Class(<http://purl.obolibrary.org/obo/FOODON_03317393>))
-Declaration(Class(<http://purl.obolibrary.org/obo/FOODON_03411329>))
 Declaration(Class(<http://purl.obolibrary.org/obo/FOODON_03530086>))
 Declaration(Class(<http://purl.obolibrary.org/obo/FOODON_03530087>))
 Declaration(Class(<http://purl.obolibrary.org/obo/FOODON_03530254>))
@@ -144,6 +141,7 @@ SubClassOf(<http://purl.obolibrary.org/obo/FOODON_00001071> <http://purl.obolibr
 
 # Class: <http://purl.obolibrary.org/obo/FOODON_00002577> (wine by region)
 
+AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000115> <http://purl.obolibrary.org/obo/FOODON_00002577> "A grape wine distinguished by the region its grapes were grown in."@en)
 AnnotationAssertion(rdfs:label <http://purl.obolibrary.org/obo/FOODON_00002577> "wine by region"@en)
 SubClassOf(<http://purl.obolibrary.org/obo/FOODON_00002577> <http://purl.obolibrary.org/obo/FOODON_03301014>)
 
@@ -825,10 +823,11 @@ SubClassOf(<http://purl.obolibrary.org/obo/FOODON_00004054> <http://purl.obolibr
 
 # Class: <http://purl.obolibrary.org/obo/FOODON_00004055> (Denominación de origen)
 
-AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000115> <http://purl.obolibrary.org/obo/FOODON_00004055> "Is part of a regulatory geographical indication system used primarily for foodstuffs such as cheeses, condiments, honey, and meats, among others."@en)
+AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000115> <http://purl.obolibrary.org/obo/FOODON_00004055> "A food product appellation framework which is a regulatory geographical indication system used primarily for foodstuffs such as cheeses, condiments, honey, and meats, among others."@en)
 AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000119> <http://purl.obolibrary.org/obo/FOODON_00004055> "https://en.wikipedia.org/wiki/Denominaci%C3%B3n_de_origen")
 AnnotationAssertion(rdfs:comment <http://purl.obolibrary.org/obo/FOODON_00004055> "In wines, it parallels the hierarchical systems of France (1935) and Italy (1963), although Rioja (1925) and Jerez (1933) preceded the full system.[https://en.wikipedia.org/wiki/Denominaci%C3%B3n_de_origen]"@en)
 AnnotationAssertion(rdfs:label <http://purl.obolibrary.org/obo/FOODON_00004055> "Denominación de origen"@en)
+SubClassOf(<http://purl.obolibrary.org/obo/FOODON_00004055> <http://purl.obolibrary.org/obo/FOODON_03530087>)
 
 # Class: <http://purl.obolibrary.org/obo/FOODON_00004056> (Spanish wine production framework)
 
@@ -901,18 +900,6 @@ AnnotationAssertion(rdfs:comment <http://purl.obolibrary.org/obo/FOODON_00004062
 AnnotationAssertion(rdfs:label <http://purl.obolibrary.org/obo/FOODON_00004062> "Vino de Mesa"@en)
 SubClassOf(<http://purl.obolibrary.org/obo/FOODON_00004062> <http://purl.obolibrary.org/obo/FOODON_00004056>)
 
-# Class: <http://purl.obolibrary.org/obo/FOODON_00004063> (red grape cultivar)
-
-AnnotationAssertion(rdfs:label <http://purl.obolibrary.org/obo/FOODON_00004063> "red grape cultivar"@en)
-SubClassOf(<http://purl.obolibrary.org/obo/FOODON_00004063> <http://purl.obolibrary.org/obo/FOODON_03411329>)
-SubClassOf(<http://purl.obolibrary.org/obo/FOODON_00004063> <http://purl.obolibrary.org/obo/NCBITaxon_29760>)
-
-# Class: <http://purl.obolibrary.org/obo/FOODON_00004064> (white grape cultivar)
-
-AnnotationAssertion(rdfs:label <http://purl.obolibrary.org/obo/FOODON_00004064> "white grape cultivar"@en)
-SubClassOf(<http://purl.obolibrary.org/obo/FOODON_00004064> <http://purl.obolibrary.org/obo/FOODON_03411329>)
-SubClassOf(<http://purl.obolibrary.org/obo/FOODON_00004064> <http://purl.obolibrary.org/obo/NCBITaxon_29760>)
-
 # Class: <http://purl.obolibrary.org/obo/FOODON_00004065> (Table Wine (deprecated EU standard))
 
 AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000115> <http://purl.obolibrary.org/obo/FOODON_00004065> "A European Union wine category replaced by the Protected Geographical Indication in 2011."@en)
@@ -942,7 +929,7 @@ SubClassOf(<http://purl.obolibrary.org/obo/FOODON_00005371> <http://purl.obolibr
 # Class: <http://purl.obolibrary.org/obo/FOODON_00005372> (Muller Thurgau)
 
 AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000115> <http://purl.obolibrary.org/obo/FOODON_00005372> "A white wine varietal that originated in Germany, created by crossing Riesling and Madeleine Royale."@en)
-AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000119> <http://purl.obolibrary.org/obo/FOODON_00005372> <https://en.wikipedia.org/wiki/Müller-Thurgau>)
+AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000119> <http://purl.obolibrary.org/obo/FOODON_00005372> "https://en.wikipedia.org/wiki/Müller-Thurgau")
 AnnotationAssertion(<http://purl.org/dc/terms/contributor> <http://purl.obolibrary.org/obo/FOODON_00005372> "https://orcid.org/0000-0001-5275-8866")
 AnnotationAssertion(rdfs:label <http://purl.obolibrary.org/obo/FOODON_00005372> "Muller Thurgau"@en)
 SubClassOf(<http://purl.obolibrary.org/obo/FOODON_00005372> <http://purl.obolibrary.org/obo/FOODON_03310273>)
@@ -1049,40 +1036,39 @@ AnnotationAssertion(<http://www.geneontology.org/formats/oboInOwl#hasDbXref> <ht
 AnnotationAssertion(rdfs:label <http://purl.obolibrary.org/obo/FOODON_03317393> "still wine"@en)
 SubClassOf(<http://purl.obolibrary.org/obo/FOODON_03317393> <http://purl.obolibrary.org/obo/FOODON_03301014>)
 
-# Class: <http://purl.obolibrary.org/obo/FOODON_03411329> (grape cultivar)
-
-AnnotationAssertion(rdfs:label <http://purl.obolibrary.org/obo/FOODON_03411329> "grape cultivar"@en)
-
 # Class: <http://purl.obolibrary.org/obo/FOODON_03530086> (Appellation d'origine contrôlée)
 
+AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000115> <http://purl.obolibrary.org/obo/FOODON_03530086> "A food product appellation framework authorized for certain French geographical indications for wines, cheeses, butters, and other agricultural products, all under the auspices of the government bureau Institut National des Appellations d'Origine (INAO). [Wikipedia]"@en)
 AnnotationAssertion(<http://www.geneontology.org/formats/oboInOwl#hasExactSynonym> <http://purl.obolibrary.org/obo/FOODON_03530086> "AOC"@fr)
 AnnotationAssertion(<http://www.geneontology.org/formats/oboInOwl#hasExactSynonym> <http://purl.obolibrary.org/obo/FOODON_03530086> "Appellation d'origine contrôlée"@fr)
 AnnotationAssertion(<http://www.geneontology.org/formats/oboInOwl#hasExactSynonym> <http://purl.obolibrary.org/obo/FOODON_03530086> "controlled designation of origin"@en)
 AnnotationAssertion(rdfs:label <http://purl.obolibrary.org/obo/FOODON_03530086> "Appellation d'origine contrôlée"@en)
-
-# Class: <http://purl.obolibrary.org/obo/FOODON_03530087> (food product appellation framework)
-
-AnnotationAssertion(rdfs:label <http://purl.obolibrary.org/obo/FOODON_03530087> "food product appellation framework"@en)
+SubClassOf(<http://purl.obolibrary.org/obo/FOODON_03530086> <http://purl.obolibrary.org/obo/FOODON_03530087>)
 
 # Class: <http://purl.obolibrary.org/obo/FOODON_03530254> (Protected Geographical Status)
 
-AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000115> <http://purl.obolibrary.org/obo/FOODON_03530254> "A legal framework defined in European Union law to protect the names of regional foods."@en)
+AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000115> <http://purl.obolibrary.org/obo/FOODON_03530254> "A food product appellation framework defined in European Union law to protect the names of regional foods."@en)
+AnnotationAssertion(rdfs:comment <http://purl.obolibrary.org/obo/FOODON_03530254> "Protected Designation of Origin (PDO), Protected Geographical Indication (PGI) and Traditional Speciality Guaranteed (TSG) are geographical indications, or more precisely regimes, within the framework. The law (enforced within the EU and being gradually expanded internationally via bilateral agreements of the EU with non-EU countries) ensures that only products genuinely originating in that region are allowed in commerce as such. The legislation came into force in 1992. The purpose of the law is to protect the reputation of the regional foods and eliminate the unfair competition and misleading of consumers by non-genuine products, which may be of inferior quality or of different flavour. [https://en.wikipedia.org/wiki/Geographical_indications_and_traditional_specialities_in_the_European_Union#Protected_geographical_indication_(PGI)]"@en)
 AnnotationAssertion(rdfs:label <http://purl.obolibrary.org/obo/FOODON_03530254> "Protected Geographical Status"@en)
+SubClassOf(<http://purl.obolibrary.org/obo/FOODON_03530254> <http://purl.obolibrary.org/obo/FOODON_03530087>)
 
 # Class: <http://purl.obolibrary.org/obo/FOODON_03530255> (Protected Designation of Origin)
 
 AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000115> <http://purl.obolibrary.org/obo/FOODON_03530255> "A Protected Geographical Status which covers agricultural products and foodstuffs which are produced, processed and prepared in a given geographical area using recognised know-how."@en)
 AnnotationAssertion(rdfs:label <http://purl.obolibrary.org/obo/FOODON_03530255> "Protected Designation of Origin"@en)
+SubClassOf(<http://purl.obolibrary.org/obo/FOODON_03530255> <http://purl.obolibrary.org/obo/FOODON_03530254>)
 
 # Class: <http://purl.obolibrary.org/obo/FOODON_03530256> (Protected Geographical Indication)
 
-AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000115> <http://purl.obolibrary.org/obo/FOODON_03530256> "A Protected Geographical Status which covers agricultural products and foodstuffs closely linked to the geographical area."@en)
+AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000115> <http://purl.obolibrary.org/obo/FOODON_03530256> "A Protected Geographical Status covering agricultural products and foodstuffs closely linked to the geographical area."@en)
 AnnotationAssertion(rdfs:label <http://purl.obolibrary.org/obo/FOODON_03530256> "Protected Geographical Indication"@en)
+SubClassOf(<http://purl.obolibrary.org/obo/FOODON_03530256> <http://purl.obolibrary.org/obo/FOODON_03530254>)
 
 # Class: <http://purl.obolibrary.org/obo/FOODON_03530257> (Traditional Speciality Guaranteed)
 
 AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000115> <http://purl.obolibrary.org/obo/FOODON_03530257> "A Protected Geographical Status which highlights traditional character, either in the composition or means of production."@en)
 AnnotationAssertion(rdfs:label <http://purl.obolibrary.org/obo/FOODON_03530257> "Traditional Speciality Guaranteed"@en)
+SubClassOf(<http://purl.obolibrary.org/obo/FOODON_03530257> <http://purl.obolibrary.org/obo/FOODON_03530254>)
 
 # Class: <http://purl.obolibrary.org/obo/FOODON_03530258> (Denominazione di origine controllata)
 
