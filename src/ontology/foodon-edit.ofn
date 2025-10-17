@@ -6097,8 +6097,8 @@ AnnotationAssertion(obo:IAO_0000115 obo:FOODON_00002403 "Any substance that can 
 AnnotationAssertion(obo:IAO_0000119 obo:FOODON_00002403 wikipedia:Food)
 AnnotationAssertion(go:hasExactSynonym obo:FOODON_00002403 "food"@en)
 AnnotationAssertion(go:hasExactSynonym obo:FOODON_00002403 "foodstuff"@en)
-AnnotationAssertion(go:hasExactSynonym obo:FOODON_00002403 "nourishment"@en)
-AnnotationAssertion(go:hasExactSynonym obo:FOODON_00002403 "sustenance"@en)
+AnnotationAssertion(go:hasNarrowSynonym obo:FOODON_00002403 "nourishment"@en)
+AnnotationAssertion(go:hasNarrowSynonym obo:FOODON_00002403 "sustenance"@en)
 AnnotationAssertion(rdfs:comment obo:FOODON_00002403 "This class is the top of FOODON's main food product hierarchy which is described in the https://www.foodon.org website, and can be searched in lookup services like https://www.ebi.ac.uk/ols/"@en)
 AnnotationAssertion(rdfs:label obo:FOODON_00002403 "food material"@en)
 SubClassOf(obo:FOODON_00002403 obo:BFO_0000040)
@@ -14599,10 +14599,6 @@ SubClassOf(obo:FOODON_03304716 ObjectSomeValuesFrom(obo:RO_0001000 obo:FOODON_03
 
 SubClassOf(obo:FOODON_03304717 ObjectSomeValuesFrom(obo:RO_0001000 obo:FOODON_03411017))
 
-# Class: obo:FOODON_03304718 (vegetable salad mix (pre-cut, raw))
-
-SubClassOf(obo:FOODON_03304718 ObjectSomeValuesFrom(obo:RO_0001000 obo:FOODON_03411579))
-
 # Class: obo:FOODON_03304720 (french dressing (italian-style))
 
 SubClassOf(obo:FOODON_03304720 ObjectSomeValuesFrom(obo:RO_0001000 obo:FOODON_03411017))
@@ -16362,11 +16358,6 @@ SubClassOf(obo:FOODON_03307673 ObjectSomeValuesFrom(obo:RO_0001000 obo:FOODON_03
 # Class: obo:FOODON_03307688 (imitation hollandaise sauce)
 
 SubClassOf(obo:FOODON_03307688 ObjectSomeValuesFrom(obo:RO_0001000 obo:FOODON_03411017))
-
-# Class: obo:FOODON_03307695 (vegetable salad)
-
-AnnotationAssertion(obo:IAO_0000115 obo:FOODON_03307695 "A salad which contains one or more vegetables as a defining ingredient."@en)
-SubClassOf(obo:FOODON_03307695 ObjectSomeValuesFrom(obo:RO_0001000 obo:FOODON_03411579))
 
 # Class: obo:FOODON_03307697 (sweet and sour dressing)
 
@@ -52422,6 +52413,10 @@ AnnotationAssertion(go:hasDbXref obo:FOODON_03530145 langual:Z0145)
 AnnotationAssertion(rdfs:comment obo:FOODON_03530145 "LanguaL curation note: Examples include aiguillette rumsteck and aiguillette baronne."@en)
 AnnotationAssertion(rdfs:label obo:FOODON_03530145 "rumsteck"@en)
 SubClassOf(obo:FOODON_03530145 obo:FOODON_03530141)
+
+# Class: obo:FOODON_03530146 (butchery cut of animal)
+
+AnnotationAssertion(rdfs:seeAlso obo:FOODON_03530146 <https://openlibrary.org/books/OL8878912M/Field_Guide_to_Meat>)
 
 # Class: obo:FOODON_03530147 (cheese rind (natural))
 
