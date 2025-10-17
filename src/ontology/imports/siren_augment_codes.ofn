@@ -10157,7 +10157,7 @@ AnnotationAssertion(rdfs:comment obo:FOODON_03301114 "SIREN DB annotation:
 * curing or aging process FOODON:03460253
 * preservation by brining FOODON:03470137"@en)
 
-# Class: obo:FOODON_03301115 (soy sauce)
+# Class: obo:FOODON_03301115 (soy sauce (proteolytic fermentation))
 
 AnnotationAssertion(rdfs:comment obo:FOODON_03301115 "SIREN DB annotation:
 * liquid, low viscosity, with no visible particles FOODON:03430123
@@ -14105,7 +14105,7 @@ AnnotationAssertion(rdfs:comment obo:FOODON_03301906 "SIREN DB annotation:
 * carbohydrate fermentation process FOODON:03460256
 * ingredient: grain added FOODON:03460152"@en)
 
-# Class: obo:FOODON_03301907 (wheat bread crumbs)
+# Class: obo:FOODON_03301907 (wheat breadcrumbs)
 
 AnnotationAssertion(rdfs:comment obo:FOODON_03301907 "SIREN DB annotation:
 * divided or disintegrated FOODON:03430122
@@ -15529,7 +15529,7 @@ AnnotationAssertion(rdfs:comment obo:FOODON_03302187 "SIREN DB annotation:
 * flavoring added, artificial FOODON:03460228
 * ingredient: color added FOODON:03460150"@en)
 
-# Class: obo:FOODON_03302190 (meal replacement (weight-reducing))
+# Class: obo:FOODON_03302190 (single meal replacement for weight reduction)
 
 AnnotationAssertion(rdfs:comment obo:FOODON_03302190 "SIREN DB annotation:
 * fully heat-treated FOODON:03440014
@@ -19770,7 +19770,7 @@ AnnotationAssertion(rdfs:comment obo:FOODON_03302847 "SIREN DB annotation:
 * ingredient: nonnutritive sweetener added FOODON:03460108
 * energy special claim or use FOODON:03510045"@en)
 
-# Class: obo:FOODON_03302848 (food bar (confectionery-type))
+# Class: obo:FOODON_03302848 (meal replacement food bar (confectionery-type))
 
 AnnotationAssertion(rdfs:comment obo:FOODON_03302848 "SIREN DB annotation:
 * whole, shape achieved by forming, thickness 1.5-7 cm. FOODON:03430105
@@ -19936,7 +19936,7 @@ AnnotationAssertion(rdfs:comment obo:FOODON_03302871 "SIREN DB annotation:
 * food baking process FOODON:03450005
 * ingredient: fat or oil added FOODON:03460221"@en)
 
-# Class: obo:FOODON_03302872 (diet meal (liquid))
+# Class: obo:FOODON_03302872 (meal replacement liquid)
 
 AnnotationAssertion(rdfs:comment obo:FOODON_03302872 "SIREN DB annotation:
 * liquid FOODON:03430130
@@ -32071,7 +32071,7 @@ AnnotationAssertion(rdfs:comment obo:FOODON_03305020 "SIREN DB annotation:
 * low fat food FOODON:03510039
 * energy special claim or use FOODON:03510045"@en)
 
-# Class: obo:FOODON_03305021 (breakfast beverage (artificially sweetened))
+# Class: obo:FOODON_03305021 (meal replacement breakfast beverage (artificially sweetened))
 
 AnnotationAssertion(rdfs:comment obo:FOODON_03305021 "SIREN DB annotation:
 * liquid FOODON:03430130
@@ -32278,7 +32278,7 @@ AnnotationAssertion(rdfs:comment obo:FOODON_03305072 "SIREN DB annotation:
 * fat or oil FOODON:03420190
 * ingredient: flavoring, spice or herb added FOODON:03460227"@en)
 
-# Class: obo:FOODON_03305073 (food bar)
+# Class: obo:FOODON_03305073 (meal replacement food bar)
 
 AnnotationAssertion(rdfs:comment obo:FOODON_03305073 "SIREN DB annotation:
 * whole, shape achieved by forming, thickness 1.5-7 cm. FOODON:03430105
@@ -32424,7 +32424,7 @@ AnnotationAssertion(rdfs:comment obo:FOODON_03305088 "SIREN DB annotation:
 * acidified FOODON:03460200
 * ingredient: flavoring, spice or herb added FOODON:03460227"@en)
 
-# Class: obo:FOODON_03305089 (food bar (caffeine added))
+# Class: obo:FOODON_03305089 (meal replacement food bar (caffeine added))
 
 AnnotationAssertion(rdfs:comment obo:FOODON_03305089 "SIREN DB annotation:
 * whole, shape achieved by forming FOODON:03430147
@@ -34228,7 +34228,7 @@ AnnotationAssertion(rdfs:comment obo:FOODON_03305376 "SIREN DB annotation:
 * preservation by dehydration or drying FOODON:03470116
 * ingredient: fat or oil added FOODON:03460221"@en)
 
-# Class: obo:FOODON_03305377 (wheat bread crumbs (enriched))
+# Class: obo:FOODON_03305377 (wheat breadcrumbs (enriched))
 
 AnnotationAssertion(rdfs:comment obo:FOODON_03305377 "SIREN DB annotation:
 * divided into pieces, thickness <0.3 cm. FOODON:03430100
@@ -61726,7 +61726,7 @@ AnnotationAssertion(rdfs:comment obo:FOODON_03310843 "SIREN DB annotation:
 * food thawing process FOODON:03460241
 * carbohydrate fermentation process FOODON:03460256"@en)
 
-# Class: obo:FOODON_03310844 (breakfast beverage)
+# Class: obo:FOODON_03310844 (meal replacement breakfast beverage)
 
 AnnotationAssertion(rdfs:comment obo:FOODON_03310844 "SIREN DB annotation:
 * ingredient: flavoring or taste ingredient added FOODON:03460117
@@ -65617,7 +65617,7 @@ AnnotationAssertion(rdfs:comment obo:FOODON_03311462 "SIREN DB annotation:
 * water removal process FOODON:03460138
 * preservation by dehydration or drying FOODON:03470116"@en)
 
-# Class: obo:FOODON_03311463 (soy sauce acid hydrolyzed)
+# Class: obo:FOODON_03311463 (soy sauce (acid-hydrolyzed))
 
 AnnotationAssertion(rdfs:comment obo:FOODON_03311463 "SIREN DB annotation:
 * liquid FOODON:03430130
@@ -70231,13 +70231,6 @@ AnnotationAssertion(rdfs:comment obo:FOODON_03315505 "SIREN DB annotation:
 * ovary, roe FOODON:03420202
 * ingredient: salt added FOODON:03460367"@en)
 
-# Class: obo:FOODON_03315506 (Cavendish banana flesh)
-
-AnnotationAssertion(rdfs:comment obo:FOODON_03315506 "SIREN DB annotation:
-* solid FOODON:03430151
-* not heat-treated FOODON:03440003
-* fruit, peel removed, core, pit or seed present FOODON:03420230"@en)
-
 # Class: obo:FOODON_03315508 (gruel or porridge for infants and young children)
 
 AnnotationAssertion(rdfs:comment obo:FOODON_03315508 "SIREN DB annotation:
@@ -71642,7 +71635,7 @@ AnnotationAssertion(rdfs:comment obo:FOODON_03315811 "SIREN DB annotation:
 * beverage base FOODON:03530088
 * ingredient: flavoring, spice or herb added FOODON:03460227"@en)
 
-# Class: obo:FOODON_03315813 (instant breakfast)
+# Class: obo:FOODON_03315813 (meal replacement instant breakfast)
 
 AnnotationAssertion(rdfs:comment obo:FOODON_03315813 "SIREN DB annotation:
 * fully heat-treated FOODON:03440014

@@ -14558,7 +14558,9 @@ SubClassOf(obo:FOODON_00001234 ObjectSomeValuesFrom(obo:FOODON_00001301 obo:FOOD
 
 # Class: obo:FOODON_00001235 (soy sauce food product)
 
-AnnotationAssertion(Annotation(oboInOwl:hasDbXref "http://en.wikipedia.org/wiki/Soy_sauce") obo:IAO_0000115 obo:FOODON_00001235 "A condiment produced by fermenting soybeans with Aspergillus oryzae or Aspergillus soyae molds along with roasted grain, water, and salt."@en)
+AnnotationAssertion(obo:IAO_0000114 obo:FOODON_00001235 obo:IAO_0000122)
+AnnotationAssertion(obo:IAO_0000115 obo:FOODON_00001235 "A condiment with soy sauce as a defining ingredient."@en)
+AnnotationAssertion(obo:IAO_0000119 obo:FOODON_00001235 <http://en.wikipedia.org/wiki/Soy_sauce>)
 AnnotationAssertion(rdfs:label obo:FOODON_00001235 "soy sauce food product"@en)
 SubClassOf(obo:FOODON_00001235 obo:FOODON_00001078)
 SubClassOf(obo:FOODON_00001235 obo:FOODON_00002262)
@@ -17215,6 +17217,7 @@ AnnotationAssertion(obo:IAO_0000115 obo:FOODON_00001891 "A salad food product wh
 AnnotationAssertion(rdfs:label obo:FOODON_00001891 "fruit salad food product"@en)
 EquivalentClasses(obo:FOODON_00001891 ObjectIntersectionOf(obo:FOODON_00001057 obo:FOODON_00002132))
 SubClassOf(obo:FOODON_00001891 obo:FOODON_00002132)
+SubClassOf(obo:FOODON_00001891 ObjectSomeValuesFrom(obo:FOODON_00001563 obo:FOODON_00002472))
 
 # Class: obo:FOODON_00001892 (fruit spread or sauce)
 
@@ -18598,7 +18601,9 @@ SubClassOf(obo:FOODON_00002131 ObjectSomeValuesFrom(obo:RO_0002350 obo:FOODON_03
 
 # Class: obo:FOODON_00002132 (plant based salad food product)
 
-AnnotationAssertion(obo:IAO_0000115 obo:FOODON_00002132 "A salad food product with one or more plant-based ingredients."@en)
+AnnotationAssertion(obo:IAO_0000114 obo:FOODON_00002132 obo:IAO_0000122)
+AnnotationAssertion(obo:IAO_0000115 obo:FOODON_00002132 "A salad food product with one or more plant-based defining ingredients."@en)
+AnnotationAssertion(dcterms:contributor obo:FOODON_00002132 <https://orcid.org/0009-0003-2086-0905>)
 AnnotationAssertion(rdfs:label obo:FOODON_00002132 "plant based salad food product"@en)
 SubClassOf(obo:FOODON_00002132 obo:FOODON_00002219)
 SubClassOf(obo:FOODON_00002132 obo:FOODON_03316579)
@@ -19101,7 +19106,7 @@ SubClassOf(obo:FOODON_00002218 obo:FOODON_00001750)
 
 AnnotationAssertion(obo:IAO_0000115 obo:FOODON_00002219 "A prepared food product consisting of either a salad or a salad ingredient mixture to which a salad dressing is added."@en)
 AnnotationAssertion(obo:IAO_0000119 obo:FOODON_00002219 wikipedia:Salad)
-AnnotationAssertion(dcterms:contributor obo:FOODON_00002219 <https://orcid.org/0000-0003-3480-8238>)
+AnnotationAssertion(dcterms:contributor obo:FOODON_00002219 <https://orcid.org/0009-0003-2086-0905>)
 AnnotationAssertion(dcterms:date obo:FOODON_00002219 "2025-07-31"^^xsd:date)
 AnnotationAssertion(rdfs:label obo:FOODON_00002219 "salad food product"@en)
 AnnotationAssertion(rdfs:seeAlso obo:FOODON_00002219 obo:FOODON_00001290)
@@ -19798,9 +19803,12 @@ SubClassOf(obo:FOODON_00002333 ObjectSomeValuesFrom(obo:RO_0002350 obo:FOODON_03
 
 # Class: obo:FOODON_00002334 (vegetable salad food product)
 
+AnnotationAssertion(obo:IAO_0000114 obo:FOODON_00002334 obo:IAO_0000122)
 AnnotationAssertion(obo:IAO_0000115 obo:FOODON_00002334 "A salad food product which contains one or more vegetable ingredients."@en)
+AnnotationAssertion(dcterms:contributor obo:FOODON_00002334 <https://orcid.org/0009-0003-2086-0905>)
 AnnotationAssertion(rdfs:label obo:FOODON_00002334 "vegetable salad food product"@en)
 SubClassOf(obo:FOODON_00002334 obo:FOODON_00002132)
+SubClassOf(obo:FOODON_00002334 ObjectSomeValuesFrom(obo:FOODON_00001563 obo:FOODON_00003816))
 
 # Class: obo:FOODON_00002335 (vegetable soup food product)
 
@@ -29642,7 +29650,7 @@ SubClassOf(obo:FOODON_03301114 obo:FOODON_00002502)
 # Class: obo:FOODON_03301115 (soy sauce (proteolytic fermentation))
 
 AnnotationAssertion(obo:IAO_0000114 obo:FOODON_03301115 obo:IAO_0000122)
-AnnotationAssertion(obo:IAO_0000115 obo:FOODON_03301115 "Soy sauce which has been fermented using Aspergillus oryzae or Aspergillus sojae strains."@en)
+AnnotationAssertion(obo:IAO_0000115 obo:FOODON_03301115 "A soybean condiment which is a sauce that has been fermented using Aspergillus oryzae or Aspergillus sojae strains."@en)
 AnnotationAssertion(oboInOwl:hasDbXref obo:FOODON_03301115 siren:F1115)
 AnnotationAssertion(rdfs:label obo:FOODON_03301115 "soy sauce (proteolytic fermentation)"@en)
 SubClassOf(obo:FOODON_03301115 obo:FOODON_00001235)
@@ -34441,8 +34449,10 @@ SubClassOf(obo:FOODON_03301964 obo:FOODON_03315786)
 
 # Class: obo:FOODON_03301967 (Cavendish banana pulp)
 
-AnnotationAssertion(obo:IAO_0000114 obo:FOODON_03301967 obo:IAO_0000428)
+AnnotationAssertion(obo:IAO_0000114 obo:FOODON_03301967 obo:IAO_0000122)
+AnnotationAssertion(oboInOwl:hasDbXref obo:FOODON_03301967 siren:F15506)
 AnnotationAssertion(oboInOwl:hasDbXref obo:FOODON_03301967 siren:F1967)
+AnnotationAssertion(oboInOwl:hasExactSynonym obo:FOODON_03301967 "Cavendish banana flesh"@en)
 AnnotationAssertion(rdfs:label obo:FOODON_03301967 "Cavendish banana pulp"@en)
 SubClassOf(obo:FOODON_03301967 obo:FOODON_00001756)
 
@@ -64153,7 +64163,9 @@ SubClassOf(obo:FOODON_03307693 obo:FOODON_03302985)
 
 # Class: obo:FOODON_03307695 (vegetable salad)
 
-AnnotationAssertion(obo:IAO_0000114 obo:FOODON_03307695 obo:IAO_0000428)
+AnnotationAssertion(obo:IAO_0000114 obo:FOODON_03307695 obo:IAO_0000122)
+AnnotationAssertion(obo:IAO_0000115 obo:FOODON_03307695 "A salad which contains one or more vegetable defining ingredients."@en)
+AnnotationAssertion(dcterms:contributor obo:FOODON_03307695 <https://orcid.org/0009-0003-2086-0905>)
 AnnotationAssertion(oboInOwl:hasDbXref obo:FOODON_03307695 siren:F7695)
 AnnotationAssertion(rdfs:label obo:FOODON_03307695 "vegetable salad"@en)
 SubClassOf(obo:FOODON_03307695 obo:FOODON_00002334)
@@ -87628,12 +87640,11 @@ AnnotationAssertion(oboInOwl:hasDbXref obo:FOODON_03315505 siren:F15505)
 AnnotationAssertion(rdfs:label obo:FOODON_03315505 "sujiko"@en)
 SubClassOf(obo:FOODON_03315505 obo:FOODON_00002075)
 
-# Class: obo:FOODON_03315506 (Cavendish banana flesh)
+# Class: obo:FOODON_03315506 (obsolete: Cavendish banana flesh)
 
-AnnotationAssertion(obo:IAO_0000114 obo:FOODON_03315506 obo:IAO_0000428)
-AnnotationAssertion(oboInOwl:hasDbXref obo:FOODON_03315506 siren:F15506)
-AnnotationAssertion(rdfs:label obo:FOODON_03315506 "Cavendish banana flesh"@en)
-SubClassOf(obo:FOODON_03315506 obo:FOODON_00001756)
+AnnotationAssertion(obo:IAO_0100001 obo:FOODON_03315506 obo:FOODON_03301967)
+AnnotationAssertion(rdfs:label obo:FOODON_03315506 "obsolete: Cavendish banana flesh"@en)
+AnnotationAssertion(owl:deprecated obo:FOODON_03315506 "true"^^xsd:boolean)
 
 # Class: obo:FOODON_03315508 (gruel or porridge for infants and young children)
 
