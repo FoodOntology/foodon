@@ -10426,6 +10426,22 @@ SubClassOf(obo:FOODON_00004059 obo:FOODON_00004056)
 
 SubClassOf(obo:FOODON_00004060 obo:FOODON_00004056)
 
+# Class: obo:FOODON_00004063 (red grape cultivar)
+
+AnnotationAssertion(obo:IAO_0000114 obo:FOODON_00004063 obo:IAO_0000428)
+AnnotationAssertion(obo:IAO_0000115 obo:FOODON_00004063 "A grape plant which has a genetically determined reddish skin color on its berries."@en)
+AnnotationAssertion(rdfs:label obo:FOODON_00004063 "red grape cultivar"@en)
+AnnotationAssertion(rdfs:seeAlso obo:FOODON_00004063 <https://en.wikipedia.org/wiki/List_of_grape_varieties#Red_grapes>)
+SubClassOf(obo:FOODON_00004063 obo:FOODON_03411329)
+
+# Class: obo:FOODON_00004064 (white grape cultivar)
+
+AnnotationAssertion(obo:IAO_0000114 obo:FOODON_00004064 obo:IAO_0000428)
+AnnotationAssertion(obo:IAO_0000115 obo:FOODON_00004064 "A grape plant which has a genetically determined light skin color on its berries, ranging from clear to light green, to tan or amber in aging berries."@en)
+AnnotationAssertion(rdfs:label obo:FOODON_00004064 "white grape cultivar"@en)
+AnnotationAssertion(rdfs:seeAlso obo:FOODON_00004064 <https://en.wikipedia.org/wiki/List_of_grape_varieties#White_grapes>)
+SubClassOf(obo:FOODON_00004064 obo:FOODON_03411329)
+
 # Class: obo:FOODON_00004065 (Table Wine (deprecated EU standard))
 
 SubClassOf(obo:FOODON_00004065 ObjectSomeValuesFrom(obo:IAO_0000136 obo:FOODON_03301014))
@@ -12182,7 +12198,6 @@ AnnotationAssertion(dcterms:contributor obo:FOODON_00005551 <https://orcid.org/0
 AnnotationAssertion(dcterms:date obo:FOODON_00005551 "2025-08-26T00:45:40Z"^^xsd:dateTime)
 AnnotationAssertion(rdfs:label obo:FOODON_00005551 "obsolete: avian material"@en)
 AnnotationAssertion(owl:deprecated obo:FOODON_00005551 "true"^^xsd:boolean)
-SubClassOf(obo:FOODON_00005551 obo:FOODON_03420164)
 
 # Class: obo:FOODON_00005566 (meat doneness)
 
@@ -12477,10 +12492,6 @@ AnnotationAssertion(go:hasDbXref obo:FOODON_02022011 <http://eol.org/pages/25099
 AnnotationAssertion(go:hasDbXref obo:FOODON_02022011 langual:B1520)
 AnnotationAssertion(go:hasExactSynonym obo:FOODON_02022011 "caulolatilus spp.")
 SubClassOf(obo:FOODON_02022011 obo:FOODON_03411923)
-
-# Class: obo:FOODON_02022068 (atlantic salmon material)
-
-SubClassOf(obo:FOODON_02022068 obo:FOODON_00001623)
 
 # Class: obo:FOODON_03000268 (long grain brown rice kernel (uncooked))
 
@@ -23194,8 +23205,10 @@ AnnotationAssertion(go:hasDbXref obo:FOODON_03411329 <http://eol.org/pages/38383
 AnnotationAssertion(go:hasDbXref obo:FOODON_03411329 langual:B1329)
 AnnotationAssertion(go:hasNarrowSynonym obo:FOODON_03411329 "Vitis")
 AnnotationAssertion(go:hasSynonym obo:FOODON_03411329 "vitis spp."@en)
+AnnotationAssertion(rdfs:label obo:FOODON_03411329 "grape cultivar"@en)
 SubClassOf(obo:FOODON_03411329 obo:FOODON_03411017)
 SubClassOf(obo:FOODON_03411329 obo:FOODON_03411231)
+SubClassOf(obo:FOODON_03411329 obo:NCBITaxon_3603)
 
 # Class: obo:FOODON_03411331 (clam species)
 
@@ -25063,17 +25076,6 @@ AnnotationAssertion(go:hasSynonym obo:FOODON_03411563 "game birds"@en)
 AnnotationAssertion(rdfs:label obo:FOODON_03411563 "poultry or game bird"@en)
 EquivalentClasses(obo:FOODON_03411563 ObjectUnionOf(obo:FOODON_00004298 obo:FOODON_03602002))
 SubClassOf(obo:FOODON_03411563 obo:FOODON_00002616)
-
-# Class: obo:FOODON_03411564 (obsolete: organism by alternate grouping)
-
-AnnotationAssertion(obo:IAO_0000115 obo:FOODON_03411564 "This is a hierarchy of organisms, grouped minimally in a combination of taxonomy and consumer-oriented food groups."@en)
-AnnotationAssertion(obo:IAO_0100001 obo:FOODON_03411564 obo:FOODON_03420116)
-AnnotationAssertion(go:hasDbXref obo:FOODON_03411564 langual:B0001)
-AnnotationAssertion(go:hasDbXref obo:FOODON_03411564 langual:B1564)
-AnnotationAssertion(rdfs:comment obo:FOODON_03411564 "This was LanguaL definition: Individual plant or animal from which the food product or its major ingredient is derived; also a chemical food source [FDA CFSAN 1995]."@en)
-AnnotationAssertion(rdfs:label obo:FOODON_03411564 "obsolete: organism by alternate grouping"@en)
-AnnotationAssertion(owl:deprecated obo:FOODON_03411564 "true"^^xsd:boolean)
-SubClassOf(obo:FOODON_03411564 obo:FOODON_03420116)
 
 # Class: obo:FOODON_03411565 (whitefish or cisco)
 
@@ -52047,7 +52049,6 @@ SubClassOf(obo:FOODON_03530085 obo:FOODON_03530077)
 # Class: obo:FOODON_03530086 (Appellation d'origine contrôlée)
 
 AnnotationAssertion(obo:IAO_0000114 obo:FOODON_03530086 obo:IAO_0000428)
-AnnotationAssertion(obo:IAO_0000115 obo:FOODON_03530086 "The French certification granted to certain French geographical indications for wines, cheeses, butters, and other agricultural products, all under the auspices of the government bureau Institut National des Appellations d'Origine (INAO). [Wikipedia]"@en)
 AnnotationAssertion(obo:IAO_0000119 obo:FOODON_03530086 wikipedia:Controlled_designation_of_origin)
 AnnotationAssertion(go:hasDbXref obo:FOODON_03530086 langual:Z0086)
 AnnotationAssertion(go:hasSynonym obo:FOODON_03530086 "controlled name"@en)
@@ -52059,6 +52060,7 @@ SubClassOf(obo:FOODON_03530086 obo:FOODON_03530087)
 AnnotationAssertion(obo:IAO_0000114 obo:FOODON_03530087 obo:IAO_0000122)
 AnnotationAssertion(obo:IAO_0000115 obo:FOODON_03530087 "A datum indicating that use of a food product name is regulated within some legal framework."@en)
 AnnotationAssertion(go:hasDbXref obo:FOODON_03530087 langual:Z0087)
+AnnotationAssertion(rdfs:label obo:FOODON_03530087 "food product appellation framework"@en)
 SubClassOf(obo:FOODON_03530087 obo:FOODON_03530005)
 
 # Class: obo:FOODON_03530088 (beverage base)
@@ -81691,12 +81693,6 @@ AnnotationAssertion(obo:IAO_0000117 obo:FOODON_00004038 <http://orcid.org/0000-0
 AnnotationAssertion(dcterms:date obo:FOODON_00004038 "2021-11-10T20:58:56Z"^^xsd:dateTime)
 AnnotationAssertion(obo:IAO_0000117 obo:FOODON_00004049 <http://orcid.org/0000-0002-8844-9165>)
 AnnotationAssertion(dcterms:date obo:FOODON_00004049 "2021-11-11T09:56:27Z"^^xsd:dateTime)
-AnnotationAssertion(obo:IAO_0000114 obo:FOODON_00004063 obo:IAO_0000428)
-AnnotationAssertion(obo:IAO_0000115 obo:FOODON_00004063 "A grape plant which has a genetically determined reddish skin color on its berries."@en)
-AnnotationAssertion(rdfs:seeAlso obo:FOODON_00004063 <https://en.wikipedia.org/wiki/List_of_grape_varieties#Red_grapes>)
-AnnotationAssertion(obo:IAO_0000114 obo:FOODON_00004064 obo:IAO_0000428)
-AnnotationAssertion(obo:IAO_0000115 obo:FOODON_00004064 "A grape plant which has a genetically determined light skin color on its berries, ranging from clear to light green, to tan or amber in aging berries."@en)
-AnnotationAssertion(rdfs:seeAlso obo:FOODON_00004064 <https://en.wikipedia.org/wiki/List_of_grape_varieties#White_grapes>)
 AnnotationAssertion(obo:IAO_0000117 obo:FOODON_00004078 <http://orcid.org/0000-0002-8844-9165>)
 AnnotationAssertion(dcterms:date obo:FOODON_00004078 "2021-11-28T06:01:02Z"^^xsd:dateTime)
 AnnotationAssertion(obo:IAO_0000117 obo:FOODON_00004079 <http://orcid.org/0000-0002-8844-9165>)
@@ -81913,6 +81909,11 @@ SIREN DB annotation:
 AnnotationAssertion(go:hasExactSynonym obo:FOODON_03401328 "fiber"@en-us)
 AnnotationAssertion(go:hasExactSynonym obo:FOODON_03401328 "fiber supplement"@en-us)
 AnnotationAssertion(go:hasExactSynonym obo:FOODON_03401328 "fibre"@en)
+AnnotationAssertion(obo:IAO_0000115 obo:FOODON_03411564 "This is a hierarchy of organisms, grouped minimally in a combination of taxonomy and consumer-oriented food groups."@en)
+AnnotationAssertion(obo:IAO_0100001 obo:FOODON_03411564 obo:FOODON_03420116)
+AnnotationAssertion(rdfs:comment obo:FOODON_03411564 "This was LanguaL definition: Individual plant or animal from which the food product or its major ingredient is derived; also a chemical food source [FDA CFSAN 1995]."@en)
+AnnotationAssertion(rdfs:label obo:FOODON_03411564 "obsolete: organism by alternate grouping"@en)
+AnnotationAssertion(owl:deprecated obo:FOODON_03411564 "true"^^xsd:boolean)
 AnnotationAssertion(obo:IAO_0000114 obo:FOODON_03411569 obo:IAO_0000122)
 AnnotationAssertion(go:hasDbXref obo:FOODON_03411569 <http://www.indexfungorum.org/names/NamesRecord.asp?RecordID=200345>)
 AnnotationAssertion(go:hasDbXref obo:FOODON_03411569 langual:B1569)
