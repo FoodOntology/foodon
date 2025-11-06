@@ -9487,6 +9487,7 @@ SubClassOf(obo:FOODON_00003757 obo:FOODON_00003737)
 
 AnnotationAssertion(obo:IAO_0000117 obo:FOODON_00003762 <http://orcid.org/0000-0002-8844-9165>)
 SubClassOf(obo:FOODON_00003762 obo:FOODON_00002361)
+SubClassOf(obo:FOODON_00003762 obo:FOODON_03310070)
 
 # Class: obo:FOODON_00003763 (yellow nutsedge tuber)
 
@@ -9610,6 +9611,7 @@ SubClassOf(obo:FOODON_00003809 obo:FOODON_00002212)
 
 AnnotationAssertion(obo:IAO_0000117 obo:FOODON_00003810 <http://orcid.org/0000-0002-8844-9165>)
 SubClassOf(obo:FOODON_00003810 obo:FOODON_00003287)
+SubClassOf(obo:FOODON_00003810 obo:FOODON_03310070)
 
 # Class: obo:FOODON_00003811 (spanish thyme leaf)
 
@@ -11201,7 +11203,7 @@ SubClassOf(obo:FOODON_00004334 ObjectSomeValuesFrom(obo:RO_0002351 obo:FOODON_00
 # Class: obo:FOODON_00004336 (fungus material)
 
 AnnotationAssertion(obo:IAO_0000114 obo:FOODON_00004336 obo:IAO_0000122)
-AnnotationAssertion(obo:IAO_0000115 obo:FOODON_00004336 "A piece or pieces or amount of substance derived from one or more fungai."@en)
+AnnotationAssertion(obo:IAO_0000115 obo:FOODON_00004336 "Material which derives from one or more fungai."@en)
 AnnotationAssertion(obo:IAO_0000117 obo:FOODON_00004336 <https://orcid.org/0000-0002-8844-9165>)
 AnnotationAssertion(dcterms:date obo:FOODON_00004336 "2023-03-02T22:41:19Z"^^xsd:dateTime)
 AnnotationAssertion(rdfs:label obo:FOODON_00004336 "fungus material"@en)
@@ -18801,6 +18803,10 @@ SubClassOf(obo:FOODON_03310036 ObjectSomeValuesFrom(obo:RO_0001000 obo:FOODON_03
 # Class: obo:FOODON_03310037 (plaa tuu)
 
 SubClassOf(obo:FOODON_03310037 ObjectSomeValuesFrom(obo:RO_0001000 obo:FOODON_03411222))
+
+# Class: obo:FOODON_03310070 (peppercorn)
+
+SubClassOf(obo:FOODON_03310070 obo:PO_0030108)
 
 # Class: obo:FOODON_03310075 (wheat starch)
 
@@ -44333,7 +44339,7 @@ AnnotationAssertion(rdfs:comment obo:FOODON_03420114 "LanguaL curation note: Ren
 AnnotationAssertion(rdfs:label obo:FOODON_03420114 "seed, skin undetermined, germ removed"@en)
 SubClassOf(obo:FOODON_03420114 obo:FOODON_03420178)
 
-# Class: obo:FOODON_03420116 (food material by organism)
+# Class: obo:FOODON_03420116 (organism material)
 
 AnnotationAssertion(obo:IAO_0000114 obo:FOODON_03420116 obo:IAO_0000428)
 AnnotationAssertion(obo:IAO_0000115 obo:FOODON_03420116 "Food material which is distinguished primarily by the organism(s) it derives from."@en)
@@ -44343,7 +44349,7 @@ AnnotationAssertion(go:hasDbXref obo:FOODON_03420116 langual:B1564)
 AnnotationAssertion(go:hasDbXref obo:FOODON_03420116 langual:C0116)
 AnnotationAssertion(rdfs:comment obo:FOODON_03420116 "LanguaL curation note: \"e.g. *LEAF*, *ROOT OR TUBER*, *ORGAN MEAT*, *MILK* OR *EGG*; it also includes components of parts, such as *CREAM*, and extracts, concentrates or isolates, such as *PROTEIN EXTRACT* or *SUGAR*.\""@en)
 AnnotationAssertion(rdfs:comment obo:FOODON_03420116 "Old definition as of Feb 25, 2025: Anatomical or other part(s) or substances derived from plant or animal or fungal organisms."@en)
-AnnotationAssertion(rdfs:label obo:FOODON_03420116 "food material by organism"@en)
+AnnotationAssertion(rdfs:label obo:FOODON_03420116 "organism material"@en)
 SubClassOf(obo:FOODON_03420116 obo:FOODON_00002403)
 
 # Class: obo:FOODON_03420117 (pod and full-size seed, mixture)
