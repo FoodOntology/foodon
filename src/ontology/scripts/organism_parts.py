@@ -126,22 +126,24 @@ def assign_ID(input_mapping_list, Sheet_ID,id_int):
         image_license = res['image_license']
 
     else:
-        if id_int < 10:
-            FOODON_ID = 'FOODON:0000000{}'.format(id_int)
-        elif id_int < 100:
-            FOODON_ID = 'FOODON:000000{}'.format(id_int)
-        elif id_int < 1000:
-            FOODON_ID = 'FOODON:00000{}'.format(id_int)
-        elif id_int < 10000:
-            FOODON_ID = 'FOODON:0000{}'.format(id_int)
-        elif id_int < 100000:
-            FOODON_ID = 'FOODON:000{}'.format(id_int)
-        elif id_int < 1000000:
-            FOODON_ID = 'FOODON:00{}'.format(id_int)
-        elif id_int < 10000000:
-            FOODON_ID = 'FOODON:0{}'.format(id_int)
-        elif id_int < 100000000:
-            FOODON_ID = 'FOODON:{}'.format(id_int)
+        FOODON_ID = f'{id_int:08d}'
+
+#        if id_int < 10:
+#            FOODON_ID = 'FOODON:0000000{}'.format(id_int)
+#        elif id_int < 100:
+#            FOODON_ID = 'FOODON:000000{}'.format(id_int)
+#        elif id_int < 1000:
+#            FOODON_ID = 'FOODON:00000{}'.format(id_int)
+#        elif id_int < 10000:
+#            FOODON_ID = 'FOODON:0000{}'.format(id_int)
+#        elif id_int < 100000:
+#            FOODON_ID = 'FOODON:000{}'.format(id_int)
+#        elif id_int < 1000000:
+#            FOODON_ID = 'FOODON:00{}'.format(id_int)
+#        elif id_int < 10000000:
+#            FOODON_ID = 'FOODON:0{}'.format(id_int)
+#        elif id_int < 100000000:
+#            FOODON_ID = 'FOODON:{}'.format(id_int)
         id_int += 1
         created = ''
         contributor = ''
