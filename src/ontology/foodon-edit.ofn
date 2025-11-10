@@ -489,6 +489,19 @@ Declaration(Class(obo:FOODON_00005670))
 Declaration(Class(obo:FOODON_00005671))
 Declaration(Class(obo:FOODON_00005672))
 Declaration(Class(obo:FOODON_00005673))
+Declaration(Class(obo:FOODON_00005674))
+Declaration(Class(obo:FOODON_00005675))
+Declaration(Class(obo:FOODON_00005676))
+Declaration(Class(obo:FOODON_00005677))
+Declaration(Class(obo:FOODON_00005678))
+Declaration(Class(obo:FOODON_00005679))
+Declaration(Class(obo:FOODON_00005680))
+Declaration(Class(obo:FOODON_00005681))
+Declaration(Class(obo:FOODON_00005682))
+Declaration(Class(obo:FOODON_00005683))
+Declaration(Class(obo:FOODON_00005684))
+Declaration(Class(obo:FOODON_00005685))
+Declaration(Class(obo:FOODON_00005686))
 Declaration(Class(obo:FOODON_0002899))
 Declaration(Class(obo:FOODON_02010336))
 Declaration(Class(obo:FOODON_02010338))
@@ -508,6 +521,7 @@ Declaration(Class(obo:FOODON_02020051))
 Declaration(Class(obo:FOODON_02021629))
 Declaration(Class(obo:FOODON_03000039))
 Declaration(Class(obo:FOODON_03000095))
+Declaration(Class(obo:FOODON_03000165))
 Declaration(Class(obo:FOODON_03000385))
 Declaration(Class(obo:FOODON_03000386))
 Declaration(Class(obo:FOODON_03000392))
@@ -5894,8 +5908,9 @@ SubClassOf(obo:FOODON_00001002 obo:FOODON_00002403)
 
 # Class: obo:FOODON_00001015 (plant food product)
 
-AnnotationAssertion(obo:IAO_0000114 obo:FOODON_00001015 obo:IAO_0000428)
-AnnotationAssertion(obo:IAO_0000115 obo:FOODON_00001015 "This class includes food products which are derived from or produced by a plant."@en)
+AnnotationAssertion(obo:IAO_0000114 obo:FOODON_00001015 obo:IAO_0000122)
+AnnotationAssertion(obo:IAO_0000115 obo:FOODON_00001015 "A food product which has as a defining ingredient some plant material."@en)
+AnnotationAssertion(dce:contributor obo:FOODON_00001015 <https://orcid.org/0000-0002-8844-9165>)
 AnnotationAssertion(rdfs:label obo:FOODON_00001015 "plant food product"@en)
 EquivalentClasses(obo:FOODON_00001015 ObjectIntersectionOf(obo:FOODON_00004331 ObjectSomeValuesFrom(obo:RO_0001000 obo:PO_0000003)))
 
@@ -5931,6 +5946,15 @@ AnnotationAssertion(dcterms:contributor obo:FOODON_00001181 <https://orcid.org/0
 AnnotationAssertion(go:hasExactSynonym obo:FOODON_00001181 "cooked"@en)
 AnnotationAssertion(rdfs:label obo:FOODON_00001181 "food (cooked)"@en)
 SubClassOf(obo:FOODON_00001181 obo:FOODON_00002645)
+
+# Class: obo:FOODON_00001184 (algal food material)
+
+AnnotationAssertion(obo:IAO_0000115 obo:FOODON_00001184 "Material which derives from algae (including single-celled microalgae and  multicellular macroalgae)."@en)
+AnnotationAssertion(go:hasDbXref obo:FOODON_00001184 siren:F10419)
+AnnotationAssertion(rdfs:label obo:FOODON_00001184 "algal food material"@en)
+AnnotationAssertion(rdfs:seeAlso obo:FOODON_00001184 <https://ungc-communications-assets.s3.amazonaws.com/docs/publications/The-Seaweed-Manifesto.pdf>)
+EquivalentClasses(obo:FOODON_00001184 ObjectIntersectionOf(obo:FOODON_03420116 ObjectSomeValuesFrom(obo:RO_0001000 obo:FOODON_03411301)))
+SubClassOf(obo:FOODON_00001184 obo:FOODON_03420116)
 
 # Class: obo:FOODON_00001309 (Miang)
 
@@ -7148,7 +7172,7 @@ AnnotationAssertion(obo:IAO_0000119 obo:FOODON_00002908 <https://www.seafoodsour
 AnnotationAssertion(dcterms:date obo:FOODON_00002908 "2019-08-09T18:54:07Z"^^xsd:dateTime)
 AnnotationAssertion(go:hasExactSynonym obo:FOODON_00002908 "yellowtail"@en)
 AnnotationAssertion(rdfs:label obo:FOODON_00002908 "yellowtail fish"@en)
-SubClassOf(obo:FOODON_00002908 obo:FOODON_03411222)
+SubClassOf(obo:FOODON_00002908 obo:FOODON_03411365)
 
 # Class: obo:FOODON_00002909 (yellow hito)
 
@@ -10870,7 +10894,7 @@ AnnotationAssertion(obo:IAO_0000119 obo:FOODON_00004283 "https://en.wikipedia.or
 AnnotationAssertion(dcterms:contributor obo:FOODON_00004283 <https://orcid.org/0000-0001-5275-8866>)
 AnnotationAssertion(dcterms:date obo:FOODON_00004283 "2022-06-14T16:18:23Z"^^xsd:dateTime)
 AnnotationAssertion(rdfs:label obo:FOODON_00004283 "tropical fish"@en)
-SubClassOf(obo:FOODON_00004283 obo:FOODON_03411222)
+SubClassOf(obo:FOODON_00004283 obo:FOODON_00005677)
 
 # Class: obo:FOODON_00004285 (meat strip)
 
@@ -11115,7 +11139,7 @@ AnnotationAssertion(obo:IAO_0000119 obo:FOODON_00004317 "https://en.wikipedia.or
 AnnotationAssertion(dcterms:contributor obo:FOODON_00004317 <https://orcid.org/0000-0001-5275-8866>)
 AnnotationAssertion(dcterms:date obo:FOODON_00004317 "2022-10-28T11:21:32Z"^^xsd:dateTime)
 AnnotationAssertion(rdfs:label obo:FOODON_00004317 "juvenile fish")
-SubClassOf(obo:FOODON_00004317 obo:FOODON_03411222)
+SubClassOf(obo:FOODON_00004317 obo:FOODON_00005678)
 
 # Class: obo:FOODON_00004318 (fry (fish))
 
@@ -11124,7 +11148,7 @@ AnnotationAssertion(obo:IAO_0000119 obo:FOODON_00004318 "https://en.wikipedia.or
 AnnotationAssertion(dcterms:contributor obo:FOODON_00004318 <https://orcid.org/0000-0001-5275-8866>)
 AnnotationAssertion(dcterms:date obo:FOODON_00004318 "2022-10-28T11:24:42Z"^^xsd:dateTime)
 AnnotationAssertion(rdfs:label obo:FOODON_00004318 "fry (fish)")
-SubClassOf(obo:FOODON_00004318 obo:FOODON_03411222)
+SubClassOf(obo:FOODON_00004318 obo:FOODON_00005678)
 
 # Class: obo:FOODON_00004319 (fish egg)
 
@@ -11133,7 +11157,7 @@ AnnotationAssertion(obo:IAO_0000119 obo:FOODON_00004319 "https://en.wikipedia.or
 AnnotationAssertion(dcterms:contributor obo:FOODON_00004319 <https://orcid.org/0000-0001-5275-8866>)
 AnnotationAssertion(dcterms:date obo:FOODON_00004319 "2022-10-28T11:36:35Z"^^xsd:dateTime)
 AnnotationAssertion(rdfs:label obo:FOODON_00004319 "fish egg")
-SubClassOf(obo:FOODON_00004319 obo:FOODON_03411222)
+SubClassOf(obo:FOODON_00004319 obo:FOODON_00005678)
 
 # Class: obo:FOODON_00004320 (rice (cooked))
 
@@ -12274,6 +12298,97 @@ AnnotationAssertion(dcterms:date obo:FOODON_00005673 "2025-09-22T19:11:54Z"^^xsd
 AnnotationAssertion(rdfs:label obo:FOODON_00005673 "medium well done"@en)
 SubClassOf(obo:FOODON_00005673 obo:FOODON_00005566)
 
+# Class: obo:FOODON_00005674 (bony fish material)
+
+AnnotationAssertion(dcterms:contributor obo:FOODON_00005674 <https://orcid.org/0000-0002-8844-9165>)
+AnnotationAssertion(dcterms:date obo:FOODON_00005674 "2025-11-07T01:30:31Z"^^xsd:dateTime)
+AnnotationAssertion(rdfs:label obo:FOODON_00005674 "bony fish material"@en)
+SubClassOf(obo:FOODON_00005674 obo:FOODON_03000165)
+
+# Class: obo:FOODON_00005675 (cartilaginous fish material)
+
+AnnotationAssertion(dcterms:contributor obo:FOODON_00005675 <https://orcid.org/0000-0002-8844-9165>)
+AnnotationAssertion(dcterms:date obo:FOODON_00005675 "2025-11-07T01:31:01Z"^^xsd:dateTime)
+AnnotationAssertion(rdfs:label obo:FOODON_00005675 "cartilaginous fish material"@en)
+SubClassOf(obo:FOODON_00005675 obo:FOODON_03000165)
+
+# Class: obo:FOODON_00005676 (jawless fish material)
+
+AnnotationAssertion(dcterms:contributor obo:FOODON_00005676 <https://orcid.org/0000-0002-8844-9165>)
+AnnotationAssertion(dcterms:date obo:FOODON_00005676 "2025-11-07T01:31:21Z"^^xsd:dateTime)
+AnnotationAssertion(rdfs:label obo:FOODON_00005676 "jawless fish material"@en)
+SubClassOf(obo:FOODON_00005676 obo:FOODON_03000165)
+
+# Class: obo:FOODON_00005677 (fish by aquatic environment)
+
+AnnotationAssertion(dcterms:contributor obo:FOODON_00005677 <https://orcid.org/0000-0002-8844-9165>)
+AnnotationAssertion(dcterms:date obo:FOODON_00005677 "2025-11-07T01:37:09Z"^^xsd:dateTime)
+AnnotationAssertion(rdfs:label obo:FOODON_00005677 "fish by aquatic environment"@en)
+SubClassOf(obo:FOODON_00005677 obo:FOODON_03411222)
+
+# Class: obo:FOODON_00005678 (fish by age characteristic)
+
+AnnotationAssertion(dcterms:contributor obo:FOODON_00005678 <https://orcid.org/0000-0002-8844-9165>)
+AnnotationAssertion(dcterms:date obo:FOODON_00005678 "2025-11-07T01:41:14Z"^^xsd:dateTime)
+AnnotationAssertion(rdfs:label obo:FOODON_00005678 "fish by age characteristic"@en)
+SubClassOf(obo:FOODON_00005678 obo:FOODON_03411222)
+
+# Class: obo:FOODON_00005679 (perciform fish material)
+
+AnnotationAssertion(dcterms:contributor obo:FOODON_00005679 <https://orcid.org/0000-0002-8844-9165>)
+AnnotationAssertion(dcterms:date obo:FOODON_00005679 "2025-11-07T17:25:26Z"^^xsd:dateTime)
+AnnotationAssertion(rdfs:label obo:FOODON_00005679 "perciform fish material"@en)
+SubClassOf(obo:FOODON_00005679 obo:FOODON_00005674)
+
+# Class: obo:FOODON_00005680 (bovid material)
+
+AnnotationAssertion(dcterms:contributor obo:FOODON_00005680 <https://orcid.org/0000-0002-8844-9165>)
+AnnotationAssertion(dcterms:date obo:FOODON_00005680 "2025-11-07T17:38:08Z"^^xsd:dateTime)
+AnnotationAssertion(rdfs:label obo:FOODON_00005680 "bovid material"@en)
+SubClassOf(obo:FOODON_00005680 obo:FOODON_00005501)
+
+# Class: obo:FOODON_00005681 (marine mammal material)
+
+AnnotationAssertion(dcterms:contributor obo:FOODON_00005681 <https://orcid.org/0000-0002-8844-9165>)
+AnnotationAssertion(dcterms:date obo:FOODON_00005681 "2025-11-07T17:49:13Z"^^xsd:dateTime)
+AnnotationAssertion(rdfs:label obo:FOODON_00005681 "marine mammal material"@en)
+SubClassOf(obo:FOODON_00005681 obo:FOODON_00005501)
+
+# Class: obo:FOODON_00005682 (terrestrial invertebrate material)
+
+AnnotationAssertion(dcterms:contributor obo:FOODON_00005682 <https://orcid.org/0000-0002-8844-9165>)
+AnnotationAssertion(dcterms:date obo:FOODON_00005682 "2025-11-07T22:07:55Z"^^xsd:dateTime)
+AnnotationAssertion(rdfs:label obo:FOODON_00005682 "terrestrial invertebrate material"@en)
+SubClassOf(obo:FOODON_00005682 obo:FOODON_00005522)
+
+# Class: obo:FOODON_00005683 (aquatic invertebrate material)
+
+AnnotationAssertion(dcterms:contributor obo:FOODON_00005683 <https://orcid.org/0000-0002-8844-9165>)
+AnnotationAssertion(dcterms:date obo:FOODON_00005683 "2025-11-07T22:08:12Z"^^xsd:dateTime)
+AnnotationAssertion(rdfs:label obo:FOODON_00005683 "aquatic invertebrate material"@en)
+SubClassOf(obo:FOODON_00005683 obo:FOODON_00005522)
+
+# Class: obo:FOODON_00005684 (deer family material)
+
+AnnotationAssertion(dcterms:contributor obo:FOODON_00005684 <https://orcid.org/0000-0002-8844-9165>)
+AnnotationAssertion(dcterms:date obo:FOODON_00005684 "2025-11-07T22:11:01Z"^^xsd:dateTime)
+AnnotationAssertion(rdfs:label obo:FOODON_00005684 "deer family material"@en)
+SubClassOf(obo:FOODON_00005684 obo:FOODON_00005501)
+
+# Class: obo:FOODON_00005685 (equine animal material)
+
+AnnotationAssertion(dcterms:contributor obo:FOODON_00005685 <https://orcid.org/0000-0002-8844-9165>)
+AnnotationAssertion(dcterms:date obo:FOODON_00005685 "2025-11-07T22:14:06Z"^^xsd:dateTime)
+AnnotationAssertion(rdfs:label obo:FOODON_00005685 "equine animal material"@en)
+SubClassOf(obo:FOODON_00005685 obo:FOODON_00005501)
+
+# Class: obo:FOODON_00005686 (amphibian material)
+
+AnnotationAssertion(dcterms:contributor obo:FOODON_00005686 <https://orcid.org/0000-0002-8844-9165>)
+AnnotationAssertion(dcterms:date obo:FOODON_00005686 "2025-11-10T01:21:40Z"^^xsd:dateTime)
+AnnotationAssertion(rdfs:label obo:FOODON_00005686 "amphibian material"@en)
+SubClassOf(obo:FOODON_00005686 obo:FOODON_00005502)
+
 # Class: obo:FOODON_02010014 (animal blood)
 
 SubClassOf(obo:FOODON_02010014 obo:FOODON_03302001)
@@ -12448,7 +12563,6 @@ AnnotationAssertion(go:hasNarrowSynonym obo:FOODON_02021535 "Equus asinus Linnae
 AnnotationAssertion(go:hasSynonym obo:FOODON_02021535 "ass"@en)
 AnnotationAssertion(go:hasSynonym obo:FOODON_02021535 "burro"@en)
 AnnotationAssertion(go:hasSynonym obo:FOODON_02021535 "equus asinus"@en)
-SubClassOf(obo:FOODON_02021535 obo:FOODON_03414849)
 
 # Class: obo:FOODON_02021548 (horse)
 
@@ -12494,6 +12608,13 @@ AnnotationAssertion(go:hasDbXref obo:FOODON_02022011 <http://eol.org/pages/25099
 AnnotationAssertion(go:hasDbXref obo:FOODON_02022011 langual:B1520)
 AnnotationAssertion(go:hasExactSynonym obo:FOODON_02022011 "caulolatilus spp.")
 SubClassOf(obo:FOODON_02022011 obo:FOODON_03411923)
+
+# Class: obo:FOODON_03000165 (fish material)
+
+AnnotationAssertion(dcterms:contributor obo:FOODON_03000165 <https://orcid.org/0000-0002-8844-9165>)
+AnnotationAssertion(dcterms:date obo:FOODON_03000165 "2025-11-07T00:57:03Z"^^xsd:dateTime)
+AnnotationAssertion(rdfs:label obo:FOODON_03000165 "fish material"@en)
+SubClassOf(obo:FOODON_03000165 obo:FOODON_00005502)
 
 # Class: obo:FOODON_03000268 (long grain brown rice kernel (uncooked))
 
@@ -20690,14 +20811,15 @@ AnnotationAssertion(go:hasDbXref obo:FOODON_03411006 langual:B1006)
 AnnotationAssertion(rdfs:label obo:FOODON_03411006 "fruit plant used as vegetable"@en)
 SubClassOf(obo:FOODON_03411006 obo:FOODON_03411057)
 
-# Class: obo:FOODON_03411007 (fish, cartilaginous)
+# Class: obo:FOODON_03411007 (cartilaginous fish)
 
 AnnotationAssertion(obo:IAO_0000114 obo:FOODON_03411007 obo:IAO_0000428)
 AnnotationAssertion(obo:IAO_0000115 obo:FOODON_03411007 "Having a skeleton made up mainly of cartilage, as any of a class (Chondrichthyes) of fishes (cartilaginous fish), including sharks, rays, and skates (Source: Webster's)."@en)
 AnnotationAssertion(go:hasDbXref obo:FOODON_03411007 <http://eol.org/pages/2774522>)
 AnnotationAssertion(go:hasDbXref obo:FOODON_03411007 langual:B1007)
+AnnotationAssertion(go:hasExactSynonym obo:FOODON_03411007 "fish, cartilaginous"@en)
 AnnotationAssertion(go:hasSynonym obo:FOODON_03411007 "chondrichthyes"@en)
-AnnotationAssertion(rdfs:label obo:FOODON_03411007 "fish, cartilaginous"@en)
+AnnotationAssertion(rdfs:label obo:FOODON_03411007 "cartilaginous fish"@en)
 SubClassOf(obo:FOODON_03411007 obo:FOODON_03411222)
 
 # Class: obo:FOODON_03411008 (mesogastropod)
@@ -21718,12 +21840,13 @@ AnnotationAssertion(go:hasSynonym obo:FOODON_03411163 "palaemonidae"@en)
 AnnotationAssertion(rdfs:label obo:FOODON_03411163 "palaemonid shrimp family"@en)
 SubClassOf(obo:FOODON_03411163 obo:FOODON_03411237)
 
-# Class: obo:FOODON_03411164 (fish, jawless)
+# Class: obo:FOODON_03411164 (jawless fish)
 
 AnnotationAssertion(obo:IAO_0000114 obo:FOODON_03411164 obo:IAO_0000428)
 AnnotationAssertion(go:hasDbXref obo:FOODON_03411164 langual:B1164)
+AnnotationAssertion(go:hasExactSynonym obo:FOODON_03411164 "fish, jawless"@en)
 AnnotationAssertion(go:hasSynonym obo:FOODON_03411164 "agnatha"@en)
-AnnotationAssertion(rdfs:label obo:FOODON_03411164 "fish, jawless"@en)
+AnnotationAssertion(rdfs:label obo:FOODON_03411164 "jawless fish"@en)
 SubClassOf(obo:FOODON_03411164 obo:FOODON_03411222)
 
 # Class: obo:FOODON_03411166 (atlantic horse mackerel)
@@ -22491,7 +22614,6 @@ AnnotationAssertion(obo:IAO_0000600 obo:FOODON_03411253 "Geese are waterfowl bel
 AnnotationAssertion(go:hasSynonym obo:FOODON_03411253 "anser spp."@en)
 AnnotationAssertion(go:hasSynonym obo:FOODON_03411253 "branta spp."@en)
 AnnotationAssertion(go:hasSynonym obo:FOODON_03411253 "chen spp."@en)
-SubClassOf(obo:FOODON_03411253 obo:FOODON_00002616)
 
 # Class: obo:FOODON_03411254 (clover plant)
 
@@ -23500,12 +23622,13 @@ AnnotationAssertion(go:hasSynonym obo:FOODON_03411364 "rheum spp."@en)
 AnnotationAssertion(rdfs:label obo:FOODON_03411364 "rhubarb plant"@en)
 SubClassOf(obo:FOODON_03411364 obo:FOODON_03414494)
 
-# Class: obo:FOODON_03411365 (fish, bony)
+# Class: obo:FOODON_03411365 (bony fish)
 
 AnnotationAssertion(obo:IAO_0000114 obo:FOODON_03411365 obo:IAO_0000428)
 AnnotationAssertion(go:hasDbXref obo:FOODON_03411365 langual:B1365)
+AnnotationAssertion(go:hasExactSynonym obo:FOODON_03411365 "fish, bony"@en)
 AnnotationAssertion(go:hasSynonym obo:FOODON_03411365 "osteichthyes"@en)
-AnnotationAssertion(rdfs:label obo:FOODON_03411365 "fish, bony"@en)
+AnnotationAssertion(rdfs:label obo:FOODON_03411365 "bony fish"@en)
 SubClassOf(obo:FOODON_03411365 obo:FOODON_03411222)
 
 # Class: obo:FOODON_03411366 (carob bean plant)
@@ -29147,7 +29270,6 @@ SubClassOf(obo:FOODON_03412405 obo:FOODON_03412404)
 # Class: obo:FOODON_03412406 (bear)
 
 AnnotationAssertion(go:hasSynonym obo:FOODON_03412406 "ursidae"@en)
-SubClassOf(obo:FOODON_03412406 obo:FOODON_03411134)
 
 # Class: obo:FOODON_03412407 (beefalo)
 
@@ -34483,7 +34605,7 @@ AnnotationAssertion(obo:IAO_0000115 obo:FOODON_03413360 "Diadromous fish travel 
 AnnotationAssertion(obo:IAO_0000119 obo:FOODON_03413360 "WIKIPEDIA:Diadromous_fish")
 AnnotationAssertion(go:hasDbXref obo:FOODON_03413360 langual:B3360)
 AnnotationAssertion(rdfs:label obo:FOODON_03413360 "diadromous fish"@en)
-SubClassOf(obo:FOODON_03413360 obo:FOODON_03411222)
+SubClassOf(obo:FOODON_03413360 obo:FOODON_00005677)
 
 # Class: obo:FOODON_03413361 (freshwater fish)
 
@@ -34493,7 +34615,7 @@ AnnotationAssertion(obo:IAO_0000119 obo:FOODON_03413361 "WIKIPEDIA:Potamodromous
 AnnotationAssertion(go:hasDbXref obo:FOODON_03413361 langual:B3361)
 AnnotationAssertion(go:hasSynonym obo:FOODON_03413361 "potamodromous fish"@en)
 AnnotationAssertion(rdfs:label obo:FOODON_03413361 "freshwater fish"@en)
-SubClassOf(obo:FOODON_03413361 obo:FOODON_03411222)
+SubClassOf(obo:FOODON_03413361 obo:FOODON_00005677)
 
 # Class: obo:FOODON_03413362 (marine fish)
 
@@ -34503,7 +34625,7 @@ AnnotationAssertion(obo:IAO_0000119 obo:FOODON_03413362 "WIKIPEDIA:Oceanodromous
 AnnotationAssertion(go:hasDbXref obo:FOODON_03413362 langual:B3362)
 AnnotationAssertion(go:hasSynonym obo:FOODON_03413362 "oceanodromous fish"@en)
 AnnotationAssertion(rdfs:label obo:FOODON_03413362 "marine fish"@en)
-SubClassOf(obo:FOODON_03413362 obo:FOODON_03411222)
+SubClassOf(obo:FOODON_03413362 obo:FOODON_00005677)
 
 # Class: obo:FOODON_03413363 (dolphin family)
 
@@ -44342,7 +44464,7 @@ SubClassOf(obo:FOODON_03420114 obo:FOODON_03420178)
 # Class: obo:FOODON_03420116 (organism material)
 
 AnnotationAssertion(obo:IAO_0000114 obo:FOODON_03420116 obo:IAO_0000428)
-AnnotationAssertion(obo:IAO_0000115 obo:FOODON_03420116 "Food material which is distinguished primarily by the organism(s) it derives from."@en)
+AnnotationAssertion(obo:IAO_0000115 obo:FOODON_03420116 "Material which is distinguished primarily by the organism(s) it derives from."@en)
 AnnotationAssertion(obo:IAO_0000116 obo:FOODON_03420116 "This was renamed from \"part of organism\" (and from LanguaL's original \"part of plant or animal\") to encompass organism material that is produced by an animal or plant rather than \"part of\" it, such as an egg, and might not be countable per se, such as milk. Additionally the existing definition's \"from which a food product or its major ingredient is derived.\" was removed as an unnecessary constraint. [2023/03/02]"@en)
 AnnotationAssertion(go:hasDbXref obo:FOODON_03420116 langual:B0001)
 AnnotationAssertion(go:hasDbXref obo:FOODON_03420116 langual:B1564)
@@ -65594,21 +65716,6 @@ AnnotationAssertion(go:hasNarrowSynonym obo:NCBITaxon_30520 "Bos frontalis Lambe
 AnnotationAssertion(go:hasSynonym obo:NCBITaxon_30520 "mithan"@en)
 SubClassOf(obo:NCBITaxon_30520 obo:FOODON_03414374)
 
-# Class: obo:NCBITaxon_30521 (Bos grunniens)
-
-AnnotationAssertion(obo:IAO_0000114 obo:NCBITaxon_30521 obo:IAO_0000428)
-AnnotationAssertion(obo:IAO_0000115 obo:NCBITaxon_30521 "The yak (Bos grunniens) is a long-haired humped domestic bovine found in Tibet and throughout the Himalayan region of south central Asia. In Tibetan, the word yak refers only to the male of the species; a female is a dri or nak. In English, however, yak is usually used for both sexes. Wild yaks (Bos mutus) stand about two meters tall at the shoulder. Domestic yaks are about half that height. Both types have long shaggy hair to insulate them from the cold. Wild yaks can be either brown or black. Domesticated ones can also be white. Both males and females have horns. The word Yak is also used to describe an irritating or disagreeable individual."@en)
-AnnotationAssertion(obo:IAO_0000118 obo:NCBITaxon_30521 "yak"@en)
-AnnotationAssertion(obo:IAO_0000119 obo:NCBITaxon_30521 "WIKIPEDIA:Yak")
-AnnotationAssertion(go:hasDbXref obo:NCBITaxon_30521 <http://eol.org/pages/328700>)
-AnnotationAssertion(go:hasDbXref obo:NCBITaxon_30521 <http://www.itis.gov/servlet/SingleRpt/SingleRpt?search_topic=TSN&search_value=183840>)
-AnnotationAssertion(go:hasDbXref obo:NCBITaxon_30521 langual:B3365)
-AnnotationAssertion(go:hasDbXref obo:NCBITaxon_30521 "MSW3:14200680")
-AnnotationAssertion(go:hasNarrowSynonym obo:NCBITaxon_30521 "Bos grunniens Linnaeus, 1766")
-AnnotationAssertion(go:hasSynonym obo:NCBITaxon_30521 "bos grunniens"@en)
-AnnotationAssertion(go:hasSynonym obo:NCBITaxon_30521 "grunting ox"@en)
-SubClassOf(obo:NCBITaxon_30521 obo:FOODON_03414374)
-
 # Class: obo:NCBITaxon_30532 (Dama dama)
 
 AnnotationAssertion(obo:IAO_0000114 obo:NCBITaxon_30532 obo:IAO_0000428)
@@ -80615,13 +80722,6 @@ AnnotationAssertion(obo:IAO_0000118 obo:NCBITaxon_9893 "giraffe"@en)
 AnnotationAssertion(dcterms:date obo:NCBITaxon_9893 "2019-12-03T19:09:20Z"^^xsd:dateTime)
 SubClassOf(obo:NCBITaxon_9893 obo:FOODON_03411134)
 
-# Class: obo:NCBITaxon_9900 (Bison)
-
-AnnotationAssertion(obo:IAO_0000115 obo:NCBITaxon_9900 "Members of the genus *Bison* are large, even-toed ungulates within the subfamily *Bovinae*. Two extant and four extinct species are recognized. The surviving species are the American bison, also known as the American buffalo (although it is only distantly related to the true buffalo), *Bison bison*, found in North America, and the European bison, or wisent (*Bison bonasus*), found in Europe and the Caucasus. The North American species is composed of two subspecies, the plains bison, *Bison bison bison*, and the wood bison, *Bison bison athabascae*. While all bison species are usually grouped into their own genus, they are sometimes included in the closely related genus *Bos*, together with cattle, gaur, kouprey and yaks, with which bison have a limited ability to interbreed."@en)
-AnnotationAssertion(obo:IAO_0000119 obo:NCBITaxon_9900 "WIKIPEDIA:Bison")
-AnnotationAssertion(go:hasSynonym obo:NCBITaxon_9900 "bison spp."@en)
-SubClassOf(obo:NCBITaxon_9900 obo:FOODON_03414374)
-
 # Class: obo:NCBITaxon_99038 (Glebionis coronaria)
 
 AnnotationAssertion(obo:IAO_0000114 obo:NCBITaxon_99038 obo:IAO_0000428)
@@ -80674,7 +80774,6 @@ AnnotationAssertion(go:hasDbXref obo:NCBITaxon_9913 <https://eol.org/pages/32869
 AnnotationAssertion(go:hasDbXref obo:NCBITaxon_9913 "MSW3:14200687"@en)
 AnnotationAssertion(go:hasExactSynonym obo:NCBITaxon_9913 "Bos taurus Linnaeus, 1758"@en)
 AnnotationAssertion(rdfs:seeAlso obo:NCBITaxon_9913 wikipedia:List_of_cattle_breeds)
-SubClassOf(obo:NCBITaxon_9913 obo:FOODON_03414374)
 
 # Class: obo:NCBITaxon_9925 (Capra hircus)
 
@@ -82455,6 +82554,17 @@ AnnotationAssertion(go:hasExactSynonym obo:NCBITaxon_29892 "jelly ear"@en)
 AnnotationAssertion(go:hasExactSynonym obo:NCBITaxon_29892 "jew ear"@en)
 AnnotationAssertion(go:hasExactSynonym obo:NCBITaxon_29892 "judas' ear fungus"@en)
 AnnotationAssertion(go:hasNarrowSynonym obo:NCBITaxon_29892 "Auricularia auricula-judae (Bull.) Quél., 1886")
+AnnotationAssertion(obo:IAO_0000114 obo:NCBITaxon_30521 obo:IAO_0000428)
+AnnotationAssertion(obo:IAO_0000115 obo:NCBITaxon_30521 "The yak (Bos grunniens) is a long-haired humped domestic bovine found in Tibet and throughout the Himalayan region of south central Asia. In Tibetan, the word yak refers only to the male of the species; a female is a dri or nak. In English, however, yak is usually used for both sexes. Wild yaks (Bos mutus) stand about two meters tall at the shoulder. Domestic yaks are about half that height. Both types have long shaggy hair to insulate them from the cold. Wild yaks can be either brown or black. Domesticated ones can also be white. Both males and females have horns. The word Yak is also used to describe an irritating or disagreeable individual."@en)
+AnnotationAssertion(obo:IAO_0000118 obo:NCBITaxon_30521 "yak"@en)
+AnnotationAssertion(obo:IAO_0000119 obo:NCBITaxon_30521 "WIKIPEDIA:Yak")
+AnnotationAssertion(go:hasDbXref obo:NCBITaxon_30521 <http://eol.org/pages/328700>)
+AnnotationAssertion(go:hasDbXref obo:NCBITaxon_30521 <http://www.itis.gov/servlet/SingleRpt/SingleRpt?search_topic=TSN&search_value=183840>)
+AnnotationAssertion(go:hasDbXref obo:NCBITaxon_30521 langual:B3365)
+AnnotationAssertion(go:hasDbXref obo:NCBITaxon_30521 "MSW3:14200680")
+AnnotationAssertion(go:hasNarrowSynonym obo:NCBITaxon_30521 "Bos grunniens Linnaeus, 1766")
+AnnotationAssertion(go:hasSynonym obo:NCBITaxon_30521 "bos grunniens"@en)
+AnnotationAssertion(go:hasSynonym obo:NCBITaxon_30521 "grunting ox"@en)
 AnnotationAssertion(obo:IAO_0000114 obo:NCBITaxon_307728 obo:IAO_0000122)
 AnnotationAssertion(obo:IAO_0000115 obo:NCBITaxon_307728 "*Opuntia polyacantha* is a common species of cactus known by the common names plains pricklypear, hairspine cactus, panhandle pricklypear, and starvation pricklypear. It is native to North America, where it is widespread in western Canada, the central and western United States, and northern Mexico."@en)
 AnnotationAssertion(obo:IAO_0000118 obo:NCBITaxon_307728 "plains pricklypear plant"@en)
@@ -82676,6 +82786,9 @@ AnnotationAssertion(go:hasDbXref obo:NCBITaxon_9870 "MSW3:14200328")
 AnnotationAssertion(go:hasNarrowSynonym obo:NCBITaxon_9870 "Rangifer tarandus (Linnaeus, 1758)")
 AnnotationAssertion(go:hasSynonym obo:NCBITaxon_9870 "caribou"@en)
 AnnotationAssertion(go:hasSynonym obo:NCBITaxon_9870 "rangifer tarandus"@en)
+AnnotationAssertion(obo:IAO_0000115 obo:NCBITaxon_9900 "Members of the genus *Bison* are large, even-toed ungulates within the subfamily *Bovinae*. Two extant and four extinct species are recognized. The surviving species are the American bison, also known as the American buffalo (although it is only distantly related to the true buffalo), *Bison bison*, found in North America, and the European bison, or wisent (*Bison bonasus*), found in Europe and the Caucasus. The North American species is composed of two subspecies, the plains bison, *Bison bison bison*, and the wood bison, *Bison bison athabascae*. While all bison species are usually grouped into their own genus, they are sometimes included in the closely related genus *Bos*, together with cattle, gaur, kouprey and yaks, with which bison have a limited ability to interbreed."@en)
+AnnotationAssertion(obo:IAO_0000119 obo:NCBITaxon_9900 "WIKIPEDIA:Bison")
+AnnotationAssertion(go:hasSynonym obo:NCBITaxon_9900 "bison spp."@en)
 AnnotationAssertion(obo:IAO_0000114 obo:NCBITaxon_9901 obo:IAO_0000428)
 AnnotationAssertion(obo:IAO_0000118 obo:NCBITaxon_9901 "american bison"@en)
 AnnotationAssertion(go:hasDbXref obo:NCBITaxon_9901 <http://eol.org/pages/328109>)
