@@ -6324,12 +6324,6 @@ AnnotationAssertion(oboInOwl:hasSynonym obo:FOODON_03412101 "goat and sheep"@en)
 AnnotationAssertion(rdfs:label obo:FOODON_03412101 "obsolete: sheep and goat"@en)
 AnnotationAssertion(owl:deprecated obo:FOODON_03412101 "true"^^xsd:boolean)
 
-# Class: obo:FOODON_03412107 (obsolete: sea urchin)
-
-AnnotationAssertion(obo:IAO_0100001 obo:FOODON_03412107 obo:NCBITaxon_7648)
-AnnotationAssertion(rdfs:label obo:FOODON_03412107 "obsolete: sea urchin"@en)
-AnnotationAssertion(owl:deprecated obo:FOODON_03412107 "true"^^xsd:boolean)
-
 # Class: obo:FOODON_03412118 (obsolete: ostrich)
 
 AnnotationAssertion(obo:IAO_0100001 obo:FOODON_03412118 obo:NCBITaxon_8801)
@@ -7221,12 +7215,6 @@ AnnotationAssertion(obo:IAO_0100001 obo:FOODON_03412411 obo:NCBITaxon_2822)
 AnnotationAssertion(rdfs:label obo:FOODON_03412411 "obsolete: dulse"@en)
 AnnotationAssertion(owl:deprecated obo:FOODON_03412411 "true"^^xsd:boolean)
 
-# Class: obo:FOODON_03412412 (obsolete: green turtle)
-
-AnnotationAssertion(obo:IAO_0100001 obo:FOODON_03412412 obo:NCBITaxon_8469)
-AnnotationAssertion(rdfs:label obo:FOODON_03412412 "obsolete: green turtle"@en)
-AnnotationAssertion(owl:deprecated obo:FOODON_03412412 "true"^^xsd:boolean)
-
 # Class: obo:FOODON_03412416 (obsolete: chinese chestnut tree)
 
 AnnotationAssertion(obo:IAO_0100001 obo:FOODON_03412416 obo:NCBITaxon_60419)
@@ -7268,12 +7256,6 @@ AnnotationAssertion(owl:deprecated obo:FOODON_03412427 "true"^^xsd:boolean)
 AnnotationAssertion(obo:IAO_0100001 obo:FOODON_03412431 obo:NCBITaxon_94993)
 AnnotationAssertion(rdfs:label obo:FOODON_03412431 "obsolete: wels catfish"@en)
 AnnotationAssertion(owl:deprecated obo:FOODON_03412431 "true"^^xsd:boolean)
-
-# Class: obo:FOODON_03412433 (obsolete: california sea cucumber)
-
-AnnotationAssertion(obo:IAO_0100001 obo:FOODON_03412433 obo:NCBITaxon_2032702)
-AnnotationAssertion(rdfs:label obo:FOODON_03412433 "obsolete: california sea cucumber"@en)
-AnnotationAssertion(owl:deprecated obo:FOODON_03412433 "true"^^xsd:boolean)
 
 # Class: obo:FOODON_03412436 (obsolete: bowfin)
 
@@ -7322,12 +7304,6 @@ AnnotationAssertion(owl:deprecated obo:FOODON_03412460 "true"^^xsd:boolean)
 AnnotationAssertion(obo:IAO_0100001 obo:FOODON_03412462 obo:NCBITaxon_89636)
 AnnotationAssertion(rdfs:label obo:FOODON_03412462 "obsolete: chinese swamp cabbage plant"@en)
 AnnotationAssertion(owl:deprecated obo:FOODON_03412462 "true"^^xsd:boolean)
-
-# Class: obo:FOODON_03412464 (obsolete: brine shrimp)
-
-AnnotationAssertion(obo:IAO_0100001 obo:FOODON_03412464 obo:NCBITaxon_85549)
-AnnotationAssertion(rdfs:label obo:FOODON_03412464 "obsolete: brine shrimp"@en)
-AnnotationAssertion(owl:deprecated obo:FOODON_03412464 "true"^^xsd:boolean)
 
 # Class: obo:FOODON_03412471 (obsolete: shortfin mako shark)
 
@@ -8944,18 +8920,6 @@ AnnotationAssertion(owl:deprecated obo:FOODON_03413464 "true"^^xsd:boolean)
 AnnotationAssertion(obo:IAO_0100001 obo:FOODON_03413465 obo:NCBITaxon_45623)
 AnnotationAssertion(rdfs:label obo:FOODON_03413465 "obsolete: pool frog"@en)
 AnnotationAssertion(owl:deprecated obo:FOODON_03413465 "true"^^xsd:boolean)
-
-# Class: obo:FOODON_03413466 (obsolete: hawksbill turtle)
-
-AnnotationAssertion(obo:IAO_0100001 obo:FOODON_03413466 obo:NCBITaxon_27787)
-AnnotationAssertion(rdfs:label obo:FOODON_03413466 "obsolete: hawksbill turtle"@en)
-AnnotationAssertion(owl:deprecated obo:FOODON_03413466 "true"^^xsd:boolean)
-
-# Class: obo:FOODON_03413467 (obsolete: loggerhead turtle)
-
-AnnotationAssertion(obo:IAO_0100001 obo:FOODON_03413467 obo:NCBITaxon_8467)
-AnnotationAssertion(rdfs:label obo:FOODON_03413467 "obsolete: loggerhead turtle"@en)
-AnnotationAssertion(owl:deprecated obo:FOODON_03413467 "true"^^xsd:boolean)
 
 # Class: obo:FOODON_03413468 (obsolete: amphibian or reptile as food source)
 
@@ -11929,24 +11893,6 @@ AnnotationAssertion(obo:IAO_0100001 obo:FOODON_03414358 obo:NCBITaxon_1465300)
 AnnotationAssertion(rdfs:label obo:FOODON_03414358 "obsolete: chinese persimmon plant"@en)
 AnnotationAssertion(owl:deprecated obo:FOODON_03414358 "true"^^xsd:boolean)
 
-# Class: obo:FOODON_03414359 (obsolete: bactrian camel)
-
-AnnotationAssertion(obo:IAO_0100001 obo:FOODON_03414359 obo:NCBITaxon_9837)
-AnnotationAssertion(rdfs:label obo:FOODON_03414359 "obsolete: bactrian camel"@en)
-AnnotationAssertion(owl:deprecated obo:FOODON_03414359 "true"^^xsd:boolean)
-
-# Class: obo:FOODON_03414360 (obsolete: dromedary camel)
-
-AnnotationAssertion(obo:IAO_0100001 obo:FOODON_03414360 obo:NCBITaxon_9838)
-AnnotationAssertion(rdfs:label obo:FOODON_03414360 "obsolete: dromedary camel"@en)
-AnnotationAssertion(owl:deprecated obo:FOODON_03414360 "true"^^xsd:boolean)
-
-# Class: obo:FOODON_03414361 (obsolete: mouflon)
-
-AnnotationAssertion(obo:IAO_0100001 obo:FOODON_03414361 obo:NCBITaxon_9938)
-AnnotationAssertion(rdfs:label obo:FOODON_03414361 "obsolete: mouflon"@en)
-AnnotationAssertion(owl:deprecated obo:FOODON_03414361 "true"^^xsd:boolean)
-
 # Class: obo:FOODON_03414364 (obsolete: northern bobwhite)
 
 AnnotationAssertion(obo:IAO_0100001 obo:FOODON_03414364 obo:NCBITaxon_9014)
@@ -12031,11 +11977,9 @@ AnnotationAssertion(obo:IAO_0100001 obo:FOODON_03414384 obo:NCBITaxon_294744)
 AnnotationAssertion(rdfs:label obo:FOODON_03414384 "obsolete: weathervane scallop"@en)
 AnnotationAssertion(owl:deprecated obo:FOODON_03414384 "true"^^xsd:boolean)
 
-# Class: obo:FOODON_03414385 (obsolete: snapping turtle)
+# Class: obo:FOODON_03414385 (snapping turtle)
 
 AnnotationAssertion(obo:IAO_0100001 obo:FOODON_03414385 obo:NCBITaxon_8475)
-AnnotationAssertion(rdfs:label obo:FOODON_03414385 "obsolete: snapping turtle"@en)
-AnnotationAssertion(owl:deprecated obo:FOODON_03414385 "true"^^xsd:boolean)
 
 # Class: obo:FOODON_03414416 (obsolete: cellulose)
 
@@ -12463,12 +12407,6 @@ AnnotationAssertion(obo:IAO_0100001 obo:FOODON_03414593 obo:NCBITaxon_8853)
 AnnotationAssertion(rdfs:label obo:FOODON_03414593 "obsolete: canada goose"@en)
 AnnotationAssertion(owl:deprecated obo:FOODON_03414593 "true"^^xsd:boolean)
 
-# Class: obo:FOODON_03414594 (obsolete: greylag goose)
-
-AnnotationAssertion(obo:IAO_0100001 obo:FOODON_03414594 obo:NCBITaxon_8843)
-AnnotationAssertion(rdfs:label obo:FOODON_03414594 "obsolete: greylag goose"@en)
-AnnotationAssertion(owl:deprecated obo:FOODON_03414594 "true"^^xsd:boolean)
-
 # Class: obo:FOODON_03414596 (obsolete: north atlantic rockweed)
 
 AnnotationAssertion(obo:IAO_0100001 obo:FOODON_03414596 obo:NCBITaxon_52969)
@@ -12709,12 +12647,6 @@ AnnotationAssertion(obo:IAO_0100001 obo:FOODON_03414798 obo:NCBITaxon_8671)
 AnnotationAssertion(rdfs:label obo:FOODON_03414798 "obsolete: redbellied black snake"@en)
 AnnotationAssertion(owl:deprecated obo:FOODON_03414798 "true"^^xsd:boolean)
 
-# Class: obo:FOODON_03414800 (obsolete: northern australian snapping turtle)
-
-AnnotationAssertion(obo:IAO_0100001 obo:FOODON_03414800 obo:NCBITaxon_44497)
-AnnotationAssertion(rdfs:label obo:FOODON_03414800 "obsolete: northern australian snapping turtle"@en)
-AnnotationAssertion(owl:deprecated obo:FOODON_03414800 "true"^^xsd:boolean)
-
 # Class: obo:FOODON_03414818 (obsolete: spanish cherry plant)
 
 AnnotationAssertion(obo:IAO_0100001 obo:FOODON_03414818 obo:NCBITaxon_233715)
@@ -12744,12 +12676,6 @@ AnnotationAssertion(owl:deprecated obo:FOODON_03414842 "true"^^xsd:boolean)
 AnnotationAssertion(obo:IAO_0100001 obo:FOODON_03414846 obo:NCBITaxon_64478)
 AnnotationAssertion(rdfs:label obo:FOODON_03414846 "obsolete: kiwiberry"@en)
 AnnotationAssertion(owl:deprecated obo:FOODON_03414846 "true"^^xsd:boolean)
-
-# Class: obo:FOODON_03414847 (obsolete: dog)
-
-AnnotationAssertion(obo:IAO_0100001 obo:FOODON_03414847 obo:NCBITaxon_9615)
-AnnotationAssertion(rdfs:label obo:FOODON_03414847 "obsolete: dog"@en)
-AnnotationAssertion(owl:deprecated obo:FOODON_03414847 "true"^^xsd:boolean)
 
 # Class: obo:FOODON_03414850 (obsolete: banteng)
 
@@ -14191,8 +14117,8 @@ AnnotationAssertion(owl:deprecated obo:FOODON_03460131 "true"^^xsd:boolean)
 
 # Class: obo:FOODON_03460136 (obsolete: sugar or sugar syrup added)
 
-AnnotationAssertion(obo:IAO_0100001 obo:FOODON_03460136 "http://purl.obolibrary.org/obo/CHEBI_17992"^^xsd:anyURI)
 AnnotationAssertion(obo:IAO_0100001 obo:FOODON_03460136 "http://purl.obolibrary.org/obo/FOODON_03420271"@en)
+AnnotationAssertion(obo:IAO_0100001 obo:FOODON_03460136 "http://purl.obolibrary.org/obo/CHEBI_17992"^^xsd:anyURI)
 AnnotationAssertion(oboInOwl:hasDbXref obo:FOODON_03460136 langual:H0136)
 AnnotationAssertion(oboInOwl:hasSynonym obo:FOODON_03460136 "disaccharide added"@en)
 AnnotationAssertion(oboInOwl:hasSynonym obo:FOODON_03460136 "monosaccharide added"@en)

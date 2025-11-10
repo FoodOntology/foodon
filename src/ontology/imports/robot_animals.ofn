@@ -244,12 +244,11 @@ AnnotationAssertion(<http://purl.org/dc/terms/contributor> <http://purl.obolibra
 AnnotationAssertion(<http://www.geneontology.org/formats/oboInOwl#hasExactSynonym> <http://purl.obolibrary.org/obo/NCBITaxon_52644> "bald eagle"@en)
 AnnotationAssertion(rdfs:seeAlso <http://purl.obolibrary.org/obo/NCBITaxon_52644> "https://en.wikipedia.org/wiki/Bald_eagle")
 
-# Class: <http://purl.obolibrary.org/obo/NCBITaxon_555253> (Focha andina)
+# Class: <http://purl.obolibrary.org/obo/NCBITaxon_555253> (Fulica ardesiaca)
 
 AnnotationAssertion(<http://purl.org/dc/terms/contributor> <http://purl.obolibrary.org/obo/NCBITaxon_555253> "https://orcid.org/0000-0001-5275-8866")
 AnnotationAssertion(<http://www.geneontology.org/formats/oboInOwl#hasDbXref> <http://purl.obolibrary.org/obo/NCBITaxon_555253> "itis:560122")
 AnnotationAssertion(<http://www.geneontology.org/formats/oboInOwl#hasExactSynonym> <http://purl.obolibrary.org/obo/NCBITaxon_555253> "andean coot"@en)
-AnnotationAssertion(rdfs:label <http://purl.obolibrary.org/obo/NCBITaxon_555253> "Focha andina"@en)
 AnnotationAssertion(rdfs:seeAlso <http://purl.obolibrary.org/obo/NCBITaxon_555253> "https://en.wikipedia.org/wiki/Andean_coot")
 
 # Class: <http://purl.obolibrary.org/obo/NCBITaxon_55550> (Dermatemys mawii)

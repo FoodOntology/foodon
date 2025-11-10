@@ -5256,7 +5256,7 @@ Declaration(AnnotationProperty(oboInOwl:hasExactSynonym))
 
 AnnotationAssertion(rdfs:label obo:IAO_0000412 "imported from"@en)
 
-# Annotation Property: oboInOwl:hasExactSynonym (has_exact_synonym)
+# Annotation Property: oboInOwl:hasExactSynonym (has exact synonym)
 
 AnnotationAssertion(rdfs:label oboInOwl:hasExactSynonym "has_exact_synonym")
 
@@ -18856,7 +18856,7 @@ AnnotationAssertion(obo:IAO_0000412 obo:NCBITaxon_30496 obo:ncbitaxon.owl)
 AnnotationAssertion(rdfs:label obo:NCBITaxon_30496 "Lamniformes")
 SubClassOf(obo:NCBITaxon_30496 obo:NCBITaxon_119195)
 
-# Class: obo:NCBITaxon_3049887 (Colistium guentheri)
+# Class: obo:NCBITaxon_3049887 (Colistium guntheri)
 
 AnnotationAssertion(obo:IAO_0000412 obo:NCBITaxon_3049887 obo:ncbitaxon.owl)
 AnnotationAssertion(rdfs:label obo:NCBITaxon_3049887 "Colistium guentheri")
@@ -30535,7 +30535,7 @@ AnnotationAssertion(oboInOwl:hasExactSynonym obo:NCBITaxon_55521 "veined rapa wh
 AnnotationAssertion(rdfs:label obo:NCBITaxon_55521 "Rapana venosa")
 SubClassOf(obo:NCBITaxon_55521 obo:NCBITaxon_39476)
 
-# Class: obo:NCBITaxon_555253 (Fulica ardesiaca)
+# Class: obo:NCBITaxon_555253 (Focha andina)
 
 AnnotationAssertion(obo:IAO_0000412 obo:NCBITaxon_555253 obo:ncbitaxon.owl)
 AnnotationAssertion(rdfs:label obo:NCBITaxon_555253 "Fulica ardesiaca")

@@ -502,6 +502,22 @@ Declaration(Class(obo:FOODON_00005683))
 Declaration(Class(obo:FOODON_00005684))
 Declaration(Class(obo:FOODON_00005685))
 Declaration(Class(obo:FOODON_00005686))
+Declaration(Class(obo:FOODON_00005687))
+Declaration(Class(obo:FOODON_00005688))
+Declaration(Class(obo:FOODON_00005689))
+Declaration(Class(obo:FOODON_00005702))
+Declaration(Class(obo:FOODON_00005703))
+Declaration(Class(obo:FOODON_00005704))
+Declaration(Class(obo:FOODON_00005705))
+Declaration(Class(obo:FOODON_00005706))
+Declaration(Class(obo:FOODON_00005707))
+Declaration(Class(obo:FOODON_00005708))
+Declaration(Class(obo:FOODON_00005710))
+Declaration(Class(obo:FOODON_00005711))
+Declaration(Class(obo:FOODON_00005712))
+Declaration(Class(obo:FOODON_00005713))
+Declaration(Class(obo:FOODON_00005714))
+Declaration(Class(obo:FOODON_00005715))
 Declaration(Class(obo:FOODON_0002899))
 Declaration(Class(obo:FOODON_02010336))
 Declaration(Class(obo:FOODON_02010338))
@@ -5947,11 +5963,11 @@ AnnotationAssertion(go:hasExactSynonym obo:FOODON_00001181 "cooked"@en)
 AnnotationAssertion(rdfs:label obo:FOODON_00001181 "food (cooked)"@en)
 SubClassOf(obo:FOODON_00001181 obo:FOODON_00002645)
 
-# Class: obo:FOODON_00001184 (algal food material)
+# Class: obo:FOODON_00001184 (algal material)
 
 AnnotationAssertion(obo:IAO_0000115 obo:FOODON_00001184 "Material which derives from algae (including single-celled microalgae and  multicellular macroalgae)."@en)
 AnnotationAssertion(go:hasDbXref obo:FOODON_00001184 siren:F10419)
-AnnotationAssertion(rdfs:label obo:FOODON_00001184 "algal food material"@en)
+AnnotationAssertion(rdfs:label obo:FOODON_00001184 "algal material"@en)
 AnnotationAssertion(rdfs:seeAlso obo:FOODON_00001184 <https://ungc-communications-assets.s3.amazonaws.com/docs/publications/The-Seaweed-Manifesto.pdf>)
 EquivalentClasses(obo:FOODON_00001184 ObjectIntersectionOf(obo:FOODON_03420116 ObjectSomeValuesFrom(obo:RO_0001000 obo:FOODON_03411301)))
 SubClassOf(obo:FOODON_00001184 obo:FOODON_03420116)
@@ -6195,6 +6211,7 @@ AnnotationAssertion(obo:IAO_0000117 obo:FOODON_00002452 "Damion Dooley"@en)
 AnnotationAssertion(obo:IAO_0000119 obo:FOODON_00002452 "https://en.wikipedia.org/wiki/Invertebrate"^^xsd:anyURI)
 AnnotationAssertion(rdfs:label obo:FOODON_00002452 "invertebrate animal"@en)
 SubClassOf(obo:FOODON_00002452 obo:FOODON_00003004)
+SubClassOf(obo:FOODON_00002452 obo:FOODON_00005522)
 
 # Class: obo:FOODON_00002454 (food material by characteristic)
 
@@ -6459,6 +6476,7 @@ AnnotationAssertion(obo:IAO_0000119 obo:FOODON_00002581 "https://nature.mdc.mo.g
 AnnotationAssertion(dcterms:date obo:FOODON_00002581 "2019-04-29T19:23:38Z"^^xsd:dateTime)
 AnnotationAssertion(rdfs:label obo:FOODON_00002581 "aquatic invertebrate"@en)
 SubClassOf(obo:FOODON_00002581 obo:FOODON_00002452)
+SubClassOf(obo:FOODON_00002581 obo:FOODON_00005683)
 
 # Class: obo:FOODON_00002582 (giant water bug)
 
@@ -12375,11 +12393,11 @@ AnnotationAssertion(dcterms:date obo:FOODON_00005684 "2025-11-07T22:11:01Z"^^xsd
 AnnotationAssertion(rdfs:label obo:FOODON_00005684 "deer family material"@en)
 SubClassOf(obo:FOODON_00005684 obo:FOODON_00005501)
 
-# Class: obo:FOODON_00005685 (equine animal material)
+# Class: obo:FOODON_00005685 (equine material)
 
 AnnotationAssertion(dcterms:contributor obo:FOODON_00005685 <https://orcid.org/0000-0002-8844-9165>)
 AnnotationAssertion(dcterms:date obo:FOODON_00005685 "2025-11-07T22:14:06Z"^^xsd:dateTime)
-AnnotationAssertion(rdfs:label obo:FOODON_00005685 "equine animal material"@en)
+AnnotationAssertion(rdfs:label obo:FOODON_00005685 "equine material"@en)
 SubClassOf(obo:FOODON_00005685 obo:FOODON_00005501)
 
 # Class: obo:FOODON_00005686 (amphibian material)
@@ -12388,6 +12406,118 @@ AnnotationAssertion(dcterms:contributor obo:FOODON_00005686 <https://orcid.org/0
 AnnotationAssertion(dcterms:date obo:FOODON_00005686 "2025-11-10T01:21:40Z"^^xsd:dateTime)
 AnnotationAssertion(rdfs:label obo:FOODON_00005686 "amphibian material"@en)
 SubClassOf(obo:FOODON_00005686 obo:FOODON_00005502)
+
+# Class: obo:FOODON_00005687 (reptilian material)
+
+AnnotationAssertion(dcterms:contributor obo:FOODON_00005687 <https://orcid.org/0000-0002-8844-9165>)
+AnnotationAssertion(dcterms:date obo:FOODON_00005687 "2025-11-10T01:49:12Z"^^xsd:dateTime)
+AnnotationAssertion(rdfs:label obo:FOODON_00005687 "reptilian material"@en)
+SubClassOf(obo:FOODON_00005687 obo:FOODON_00005502)
+
+# Class: obo:FOODON_00005688 (duck family)
+
+AnnotationAssertion(dcterms:contributor obo:FOODON_00005688 <https://orcid.org/0000-0002-8844-9165>)
+AnnotationAssertion(dcterms:date obo:FOODON_00005688 "2025-11-10T19:01:23Z"^^xsd:dateTime)
+AnnotationAssertion(rdfs:label obo:FOODON_00005688 "duck family"@en)
+SubClassOf(obo:FOODON_00005688 obo:FOODON_00002616)
+
+# Class: obo:FOODON_00005689 (swine material)
+
+AnnotationAssertion(dcterms:contributor obo:FOODON_00005689 <https://orcid.org/0000-0002-8844-9165>)
+AnnotationAssertion(dcterms:date obo:FOODON_00005689 "2025-11-10T19:46:00Z"^^xsd:dateTime)
+AnnotationAssertion(rdfs:label obo:FOODON_00005689 "swine material"@en)
+SubClassOf(obo:FOODON_00005689 obo:FOODON_00005501)
+
+# Class: obo:FOODON_00005702 (mollusk material)
+
+AnnotationAssertion(dcterms:contributor obo:FOODON_00005702 <https://orcid.org/0000-0002-8844-9165>)
+AnnotationAssertion(dcterms:date obo:FOODON_00005702 "2025-11-10T19:56:28Z"^^xsd:dateTime)
+AnnotationAssertion(rdfs:label obo:FOODON_00005702 "mollusk material"@en)
+SubClassOf(obo:FOODON_00005702 obo:FOODON_00005683)
+
+# Class: obo:FOODON_00005703 (echinoderm material)
+
+AnnotationAssertion(dcterms:contributor obo:FOODON_00005703 <https://orcid.org/0000-0002-8844-9165>)
+AnnotationAssertion(dcterms:date obo:FOODON_00005703 "2025-11-10T19:56:39Z"^^xsd:dateTime)
+AnnotationAssertion(rdfs:label obo:FOODON_00005703 "echinoderm material"@en)
+SubClassOf(obo:FOODON_00005703 obo:FOODON_00005683)
+
+# Class: obo:FOODON_00005704 (crustacean material)
+
+AnnotationAssertion(dcterms:contributor obo:FOODON_00005704 <https://orcid.org/0000-0002-8844-9165>)
+AnnotationAssertion(dcterms:date obo:FOODON_00005704 "2025-11-10T19:57:37Z"^^xsd:dateTime)
+AnnotationAssertion(rdfs:label obo:FOODON_00005704 "crustacean material"@en)
+SubClassOf(obo:FOODON_00005704 obo:FOODON_00005683)
+
+# Class: obo:FOODON_00005705 (bivalve material)
+
+AnnotationAssertion(dcterms:contributor obo:FOODON_00005705 <https://orcid.org/0000-0002-8844-9165>)
+AnnotationAssertion(dcterms:date obo:FOODON_00005705 "2025-11-10T20:09:51Z"^^xsd:dateTime)
+AnnotationAssertion(rdfs:label obo:FOODON_00005705 "bivalve material"@en)
+SubClassOf(obo:FOODON_00005705 obo:FOODON_00005702)
+
+# Class: obo:FOODON_00005706 (gastropod material)
+
+AnnotationAssertion(dcterms:contributor obo:FOODON_00005706 <https://orcid.org/0000-0002-8844-9165>)
+AnnotationAssertion(dcterms:date obo:FOODON_00005706 "2025-11-10T20:10:01Z"^^xsd:dateTime)
+AnnotationAssertion(rdfs:label obo:FOODON_00005706 "gastropod material"@en)
+SubClassOf(obo:FOODON_00005706 obo:FOODON_00005702)
+
+# Class: obo:FOODON_00005707 (cephalopod material)
+
+AnnotationAssertion(dcterms:contributor obo:FOODON_00005707 <https://orcid.org/0000-0002-8844-9165>)
+AnnotationAssertion(dcterms:date obo:FOODON_00005707 "2025-11-10T20:10:08Z"^^xsd:dateTime)
+AnnotationAssertion(rdfs:label obo:FOODON_00005707 "cephalopod material"@en)
+SubClassOf(obo:FOODON_00005707 obo:FOODON_00005702)
+
+# Class: obo:FOODON_00005708 (decapod material)
+
+AnnotationAssertion(dcterms:contributor obo:FOODON_00005708 <https://orcid.org/0000-0002-8844-9165>)
+AnnotationAssertion(dcterms:date obo:FOODON_00005708 "2025-11-10T20:23:56Z"^^xsd:dateTime)
+AnnotationAssertion(rdfs:label obo:FOODON_00005708 "decapod material"@en)
+SubClassOf(obo:FOODON_00005708 obo:FOODON_00005704)
+
+# Class: obo:FOODON_00005710 (clam material)
+
+AnnotationAssertion(dcterms:contributor obo:FOODON_00005710 <https://orcid.org/0000-0002-8844-9165>)
+AnnotationAssertion(dcterms:date obo:FOODON_00005710 "2025-11-10T20:36:02Z"^^xsd:dateTime)
+AnnotationAssertion(rdfs:label obo:FOODON_00005710 "clam material"@en)
+SubClassOf(obo:FOODON_00005710 obo:FOODON_00005705)
+
+# Class: obo:FOODON_00005711 (oyster material)
+
+AnnotationAssertion(dcterms:contributor obo:FOODON_00005711 <https://orcid.org/0000-0002-8844-9165>)
+AnnotationAssertion(dcterms:date obo:FOODON_00005711 "2025-11-10T20:36:21Z"^^xsd:dateTime)
+AnnotationAssertion(rdfs:label obo:FOODON_00005711 "oyster material"@en)
+SubClassOf(obo:FOODON_00005711 obo:FOODON_00005705)
+
+# Class: obo:FOODON_00005712 (scallop material)
+
+AnnotationAssertion(dcterms:contributor obo:FOODON_00005712 <https://orcid.org/0000-0002-8844-9165>)
+AnnotationAssertion(dcterms:date obo:FOODON_00005712 "2025-11-10T20:36:29Z"^^xsd:dateTime)
+AnnotationAssertion(rdfs:label obo:FOODON_00005712 "scallop material"@en)
+SubClassOf(obo:FOODON_00005712 obo:FOODON_00005705)
+
+# Class: obo:FOODON_00005713 (archaeogastropod material)
+
+AnnotationAssertion(dcterms:contributor obo:FOODON_00005713 <https://orcid.org/0000-0002-8844-9165>)
+AnnotationAssertion(dcterms:date obo:FOODON_00005713 "2025-11-10T22:40:14Z"^^xsd:dateTime)
+AnnotationAssertion(rdfs:label obo:FOODON_00005713 "archaeogastropod material"@en)
+SubClassOf(obo:FOODON_00005713 obo:FOODON_00005706)
+
+# Class: obo:FOODON_00005714 (mesogastropod material)
+
+AnnotationAssertion(dcterms:contributor obo:FOODON_00005714 <https://orcid.org/0000-0002-8844-9165>)
+AnnotationAssertion(dcterms:date obo:FOODON_00005714 "2025-11-10T22:40:29Z"^^xsd:dateTime)
+AnnotationAssertion(rdfs:label obo:FOODON_00005714 "mesogastropod material"@en)
+SubClassOf(obo:FOODON_00005714 obo:FOODON_00005706)
+
+# Class: obo:FOODON_00005715 (neogastropod material)
+
+AnnotationAssertion(dcterms:contributor obo:FOODON_00005715 <https://orcid.org/0000-0002-8844-9165>)
+AnnotationAssertion(dcterms:date obo:FOODON_00005715 "2025-11-10T22:40:40Z"^^xsd:dateTime)
+AnnotationAssertion(rdfs:label obo:FOODON_00005715 "neogastropod material"@en)
+SubClassOf(obo:FOODON_00005715 obo:FOODON_00005706)
 
 # Class: obo:FOODON_02010014 (animal blood)
 
@@ -12400,6 +12530,55 @@ SubClassOf(obo:FOODON_02010026 obo:FOODON_00002708)
 # Class: obo:FOODON_02010033 (animal fat)
 
 SubClassOf(obo:FOODON_02010033 obo:FOODON_03310719)
+
+# Class: obo:FOODON_02010042 (animal heart)
+
+SubClassOf(obo:FOODON_02010042 obo:FOODON_03420129)
+
+# Class: obo:FOODON_02010044 (animal kidney)
+
+SubClassOf(obo:FOODON_02010044 obo:FOODON_03420145)
+
+# Class: obo:FOODON_02010045 (animal liver)
+
+SubClassOf(obo:FOODON_02010045 obo:FOODON_03420106)
+
+# Class: obo:FOODON_02010046 (animal spleen)
+
+SubClassOf(obo:FOODON_02010046 obo:FOODON_03420129)
+
+# Class: obo:FOODON_02010048 (animal gizzard)
+
+SubClassOf(obo:FOODON_02010048 obo:FOODON_03420106)
+
+# Class: obo:FOODON_02010049 (animal tongue)
+
+SubClassOf(obo:FOODON_02010049 obo:FOODON_03420106)
+
+# Class: obo:FOODON_02010051 (animal thymus)
+
+SubClassOf(obo:FOODON_02010051 obo:FOODON_03420109)
+
+# Class: obo:FOODON_02010052 (animal pancreas)
+
+SubClassOf(obo:FOODON_02010052 obo:FOODON_03420106)
+SubClassOf(obo:FOODON_02010052 obo:FOODON_03420109)
+
+# Class: obo:FOODON_02010053 (animal ovary)
+
+SubClassOf(obo:FOODON_02010053 obo:FOODON_03420145)
+
+# Class: obo:FOODON_02010054 (animal testicle)
+
+SubClassOf(obo:FOODON_02010054 obo:FOODON_03420234)
+
+# Class: obo:FOODON_02010055 (animal stomach)
+
+SubClassOf(obo:FOODON_02010055 obo:FOODON_03420106)
+
+# Class: obo:FOODON_02010057 (animal small intestine)
+
+SubClassOf(obo:FOODON_02010057 obo:FOODON_03420106)
 
 # Class: obo:FOODON_02010336 (animal tentacle)
 
@@ -12523,7 +12702,6 @@ AnnotationAssertion(go:hasNarrowSynonym obo:FOODON_02020038 "rana sylvatica"@en)
 AnnotationAssertion(go:hasNarrowSynonym obo:FOODON_02020038 "ranidae"@en)
 AnnotationAssertion(go:hasNarrowSynonym obo:FOODON_02020038 "salientia"@en)
 AnnotationAssertion(go:hasNarrowSynonym obo:FOODON_02020038 "toad"@en)
-SubClassOf(obo:FOODON_02020038 obo:FOODON_03411624)
 
 # Class: obo:FOODON_02020094 (emu food product)
 
@@ -12544,10 +12722,6 @@ SubClassOf(obo:FOODON_02020805 obo:FOODON_03412113)
 # Class: obo:FOODON_02020814 (antelope food product)
 
 SubClassOf(obo:FOODON_02020814 obo:FOODON_02020815)
-
-# Class: obo:FOODON_02021126 (lamb material)
-
-SubClassOf(obo:FOODON_02021126 obo:FOODON_02021125)
 
 # Class: obo:FOODON_02021409 (deer food product)
 
@@ -12579,10 +12753,6 @@ AnnotationAssertion(go:hasNarrowSynonym obo:FOODON_02021629 "Myocastor coypus (M
 AnnotationAssertion(go:hasSynonym obo:FOODON_02021629 "coypu"@en)
 AnnotationAssertion(go:hasSynonym obo:FOODON_02021629 "myocastor coypus"@en)
 AnnotationAssertion(go:hasSynonym obo:FOODON_02021629 "river rat"@en)
-
-# Class: obo:FOODON_02021649 (pig material)
-
-SubClassOf(obo:FOODON_02021649 obo:FOODON_00002663)
 
 # Class: obo:FOODON_02021757 (pork steak)
 
@@ -21618,6 +21788,7 @@ AnnotationAssertion(obo:IAO_0000119 obo:FOODON_03411134 "https://en.wikipedia.or
 AnnotationAssertion(go:hasDbXref obo:FOODON_03411134 langual:B1134)
 AnnotationAssertion(rdfs:label obo:FOODON_03411134 "mammal"@en)
 SubClassOf(obo:FOODON_03411134 obo:FOODON_00005501)
+SubClassOf(obo:FOODON_03411134 obo:FOODON_03411297)
 
 # Class: obo:FOODON_03411135 (water snail)
 
@@ -22004,8 +22175,6 @@ SubClassOf(obo:FOODON_03411179 obo:PO_0000003)
 AnnotationAssertion(<http://schema.org/image> obo:FOODON_03411183 "https://upload.wikimedia.org/wikipedia/commons/thumb/2/2c/Flock_of_sheep.jpg/316px-Flock_of_sheep.jpg"^^xsd:anyURI)
 AnnotationAssertion(go:hasSynonym obo:FOODON_03411183 "mutton (meat)"@en)
 AnnotationAssertion(go:hasSynonym obo:FOODON_03411183 "ovis spp."@en)
-SubClassOf(obo:FOODON_03411183 obo:FOODON_03411134)
-SubClassOf(obo:FOODON_03411183 ObjectSomeValuesFrom(obo:RO_0002162 obo:NCBITaxon_9940))
 
 # Class: obo:FOODON_03411184 (temperate bass families)
 
@@ -22503,7 +22672,6 @@ AnnotationAssertion(go:hasSynonym obo:FOODON_03411237 "crangonidae"@en)
 AnnotationAssertion(go:hasSynonym obo:FOODON_03411237 "palaemondidae"@en)
 AnnotationAssertion(go:hasSynonym obo:FOODON_03411237 "penaeidae"@en)
 AnnotationAssertion(go:hasSynonym obo:FOODON_03411237 "prawn"@en)
-SubClassOf(obo:FOODON_03411237 obo:FOODON_03411998)
 
 # Class: obo:FOODON_03411238 (turnip plant)
 
@@ -23323,7 +23491,6 @@ SubClassOf(obo:FOODON_03411327 obo:FOODON_03411014)
 
 AnnotationAssertion(go:hasDbXref obo:FOODON_03411328 "MSW3:14200776")
 AnnotationAssertion(go:hasSynonym obo:FOODON_03411328 "capra hircus"@en)
-SubClassOf(obo:FOODON_03411328 obo:FOODON_03411134)
 
 # Class: obo:FOODON_03411329 (grape cultivar)
 
@@ -23707,14 +23874,14 @@ AnnotationAssertion(go:hasSynonym obo:FOODON_03411372 "phaseolus lunatus"@en)
 AnnotationAssertion(rdfs:label obo:FOODON_03411372 "sieva bean plant"@en)
 SubClassOf(obo:FOODON_03411372 obo:FOODON_03411397)
 
-# Class: obo:FOODON_03411374 (crustacean species)
+# Class: obo:FOODON_03411374 (crustacean)
 
 AnnotationAssertion(obo:IAO_0000114 obo:FOODON_03411374 obo:IAO_0000428)
 AnnotationAssertion(obo:IAO_0000115 obo:FOODON_03411374 "Crustaceans form a large, diverse arthropod taxon which includes such familiar animals as crabs, lobsters, crayfish, shrimp, krill, woodlice, and barnacles. [https://en.wikipedia.org/wiki/Crustacean]"@en)
 AnnotationAssertion(go:hasDbXref obo:FOODON_03411374 <http://eol.org/pages/2598871>)
 AnnotationAssertion(go:hasDbXref obo:FOODON_03411374 langual:B1374)
 AnnotationAssertion(go:hasSynonym obo:FOODON_03411374 "crustacea"@en)
-AnnotationAssertion(rdfs:label obo:FOODON_03411374 "crustacean species"@en)
+AnnotationAssertion(rdfs:label obo:FOODON_03411374 "crustacean"@en)
 SubClassOf(obo:FOODON_03411374 obo:FOODON_03411433)
 
 # Class: obo:FOODON_03411375 (wild rice plant)
@@ -25588,7 +25755,6 @@ AnnotationAssertion(obo:IAO_0000600 obo:FOODON_03411633 "Whelk is a common name 
 AnnotationAssertion(go:hasSynonym obo:FOODON_03411633 "buccinum spp."@en)
 AnnotationAssertion(go:hasSynonym obo:FOODON_03411633 "busycon spp."@en)
 AnnotationAssertion(go:hasSynonym obo:FOODON_03411633 "neptunea spp."@en)
-SubClassOf(obo:FOODON_03411633 obo:FOODON_03411010)
 
 # Class: obo:FOODON_03411636 (taro plant)
 
@@ -25785,7 +25951,6 @@ SubClassOf(obo:FOODON_03411667 obo:FOODON_03411017)
 # Class: obo:FOODON_03411669 (lamb)
 
 AnnotationAssertion(obo:IAO_0000600 obo:FOODON_03411669 "In general, a sheep in its first year is called a lamb and its meat is also called lamb."@en)
-SubClassOf(obo:FOODON_03411669 obo:FOODON_03411183)
 
 # Class: obo:FOODON_03411673 (ginseng plant)
 
@@ -27876,6 +28041,13 @@ AnnotationAssertion(go:hasSynonym obo:FOODON_03412106 "portunus spp."@en)
 AnnotationAssertion(rdfs:label obo:FOODON_03412106 "swim crab (portunus spp.)"@en)
 SubClassOf(obo:FOODON_03412106 obo:FOODON_03412212)
 
+# Class: obo:FOODON_03412107 (sea urchin)
+
+AnnotationAssertion(rdfs:label obo:FOODON_03412107 "sea urchin"@en)
+EquivalentClasses(obo:FOODON_03412107 ObjectIntersectionOf(obo:FOODON_03412115 ObjectSomeValuesFrom(obo:RO_0002162 obo:NCBITaxon_7648)))
+SubClassOf(obo:FOODON_03412107 obo:FOODON_00005703)
+SubClassOf(obo:FOODON_03412107 obo:FOODON_03412115)
+
 # Class: obo:FOODON_03412108 (starfish)
 
 AnnotationAssertion(obo:IAO_0000114 obo:FOODON_03412108 obo:IAO_0000428)
@@ -29307,6 +29479,13 @@ AnnotationAssertion(go:hasNarrowSynonym obo:FOODON_03412410 "Rhodymenia")
 AnnotationAssertion(rdfs:label obo:FOODON_03412410 "rhodymenia"@en)
 SubClassOf(obo:FOODON_03412410 obo:FOODON_03411743)
 
+# Class: obo:FOODON_03412412 (green turtle)
+
+AnnotationAssertion(rdfs:label obo:FOODON_03412412 "green turtle"@en)
+EquivalentClasses(obo:FOODON_03412412 ObjectIntersectionOf(obo:FOODON_03411242 ObjectSomeValuesFrom(obo:RO_0002162 obo:NCBITaxon_8469)))
+SubClassOf(obo:FOODON_03412412 obo:FOODON_02021591)
+SubClassOf(obo:FOODON_03412412 obo:FOODON_03411242)
+
 # Class: obo:FOODON_03412413 (diamondback terrapin)
 
 AnnotationAssertion(obo:IAO_0000114 obo:FOODON_03412413 obo:IAO_0000428)
@@ -29416,6 +29595,12 @@ AnnotationAssertion(go:hasSynonym obo:FOODON_03412432 "arcidae"@en)
 AnnotationAssertion(go:hasSynonym obo:FOODON_03412432 "barbatia spp."@en)
 AnnotationAssertion(rdfs:label obo:FOODON_03412432 "arkshells"@en)
 SubClassOf(obo:FOODON_03412432 obo:FOODON_03412113)
+
+# Class: obo:FOODON_03412433 (california sea cucumber)
+
+AnnotationAssertion(rdfs:label obo:FOODON_03412433 "california sea cucumber"@en)
+EquivalentClasses(obo:FOODON_03412433 ObjectIntersectionOf(obo:FOODON_03412115 ObjectSomeValuesFrom(obo:RO_0002162 obo:NCBITaxon_2032702)))
+SubClassOf(obo:FOODON_03412433 obo:FOODON_03412115)
 
 # Class: obo:FOODON_03412434 (tilapia)
 
@@ -29611,6 +29796,12 @@ AnnotationAssertion(go:hasDbXref obo:FOODON_03412463 langual:B2463)
 AnnotationAssertion(go:hasSynonym obo:FOODON_03412463 "Macrotyloma uniflorum"@en)
 AnnotationAssertion(rdfs:label obo:FOODON_03412463 "horse gram bean plant"@en)
 SubClassOf(obo:FOODON_03412463 obo:FOODON_03412330)
+
+# Class: obo:FOODON_03412464 (brine shrimp)
+
+AnnotationAssertion(rdfs:label obo:FOODON_03412464 "brine shrimp"@en)
+EquivalentClasses(obo:FOODON_03412464 ObjectIntersectionOf(obo:FOODON_03412465 ObjectSomeValuesFrom(obo:RO_0002162 obo:NCBITaxon_85549)))
+SubClassOf(obo:FOODON_03412464 obo:FOODON_03412465)
 
 # Class: obo:FOODON_03412465 (artemiidae shrimp family)
 
@@ -35333,6 +35524,18 @@ AnnotationAssertion(rdfs:label obo:FOODON_03413463 "edible frog"@en)
 SubClassOf(obo:FOODON_03413463 obo:FOODON_02020038)
 SubClassOf(obo:FOODON_03413463 ObjectSomeValuesFrom(obo:RO_0002162 ObjectUnionOf(obo:NCBITaxon_45623 obo:NCBITaxon_8406)))
 
+# Class: obo:FOODON_03413466 (hawksbill turtle)
+
+AnnotationAssertion(rdfs:label obo:FOODON_03413466 "hawksbill turtle"@en)
+EquivalentClasses(obo:FOODON_03413466 ObjectIntersectionOf(obo:FOODON_03411242 ObjectSomeValuesFrom(obo:RO_0002162 obo:NCBITaxon_27787)))
+SubClassOf(obo:FOODON_03413466 obo:FOODON_03411242)
+
+# Class: obo:FOODON_03413467 (loggerhead turtle)
+
+AnnotationAssertion(rdfs:label obo:FOODON_03413467 "loggerhead turtle"@en)
+EquivalentClasses(obo:FOODON_03413467 ObjectIntersectionOf(obo:FOODON_03411242 ObjectSomeValuesFrom(obo:RO_0002162 obo:NCBITaxon_8467)))
+SubClassOf(obo:FOODON_03413467 obo:FOODON_03411242)
+
 # Class: obo:FOODON_03413471 (black fonio plant)
 
 AnnotationAssertion(obo:IAO_0000114 obo:FOODON_03413471 obo:IAO_0000428)
@@ -39177,6 +39380,24 @@ AnnotationAssertion(go:hasSynonym obo:FOODON_03414357 "sorbus spp."@en)
 AnnotationAssertion(rdfs:label obo:FOODON_03414357 "sorbus plant"@en)
 SubClassOf(obo:FOODON_03414357 obo:FOODON_03411599)
 
+# Class: obo:FOODON_03414359 (bactrian camel)
+
+AnnotationAssertion(rdfs:label obo:FOODON_03414359 "bactrian camel"@en)
+EquivalentClasses(obo:FOODON_03414359 ObjectIntersectionOf(obo:FOODON_03412103 ObjectSomeValuesFrom(obo:RO_0002162 obo:NCBITaxon_9837)))
+SubClassOf(obo:FOODON_03414359 obo:FOODON_03412103)
+
+# Class: obo:FOODON_03414360 (dromedary camel)
+
+AnnotationAssertion(rdfs:label obo:FOODON_03414360 "dromedary camel"@en)
+EquivalentClasses(obo:FOODON_03414360 ObjectIntersectionOf(obo:FOODON_03412103 ObjectSomeValuesFrom(obo:RO_0002162 obo:NCBITaxon_9838)))
+SubClassOf(obo:FOODON_03414360 obo:FOODON_03412103)
+
+# Class: obo:FOODON_03414361 (mouflon)
+
+AnnotationAssertion(rdfs:label obo:FOODON_03414361 "mouflon"@en)
+EquivalentClasses(obo:FOODON_03414361 ObjectIntersectionOf(obo:FOODON_03411183 ObjectSomeValuesFrom(obo:RO_0002162 obo:NCBITaxon_9938)))
+SubClassOf(obo:FOODON_03414361 obo:FOODON_03411183)
+
 # Class: obo:FOODON_03414362 (ratite)
 
 AnnotationAssertion(obo:IAO_0000114 obo:FOODON_03414362 obo:IAO_0000428)
@@ -39279,6 +39500,13 @@ AnnotationAssertion(go:hasDbXref obo:FOODON_03414382 langual:B4382)
 AnnotationAssertion(go:hasSynonym obo:FOODON_03414382 "cirrhinus chinensis"@en)
 AnnotationAssertion(rdfs:label obo:FOODON_03414382 "chinese mud carp"@en)
 SubClassOf(obo:FOODON_03414382 obo:FOODON_03412617)
+
+# Class: obo:FOODON_03414385 (snapping turtle)
+
+AnnotationAssertion(rdfs:label obo:FOODON_03414385 "snapping turtle"@en)
+EquivalentClasses(obo:FOODON_03414385 ObjectIntersectionOf(obo:FOODON_03411242 ObjectSomeValuesFrom(obo:RO_0002162 obo:NCBITaxon_8475)))
+SubClassOf(obo:FOODON_03414385 obo:FOODON_02021591)
+SubClassOf(obo:FOODON_03414385 obo:FOODON_03411242)
 
 # Class: obo:FOODON_03414386 (giant snail)
 
@@ -40339,6 +40567,12 @@ AnnotationAssertion(go:hasDbXref obo:FOODON_03414589 langual:B4589)
 AnnotationAssertion(go:hasSynonym obo:FOODON_03414589 "loxodonta spp."@en)
 AnnotationAssertion(rdfs:label obo:FOODON_03414589 "african elephant"@en)
 SubClassOf(obo:FOODON_03414589 obo:FOODON_02021525)
+
+# Class: obo:FOODON_03414594 (greylag goose)
+
+AnnotationAssertion(rdfs:label obo:FOODON_03414594 "greylag goose"@en)
+EquivalentClasses(obo:FOODON_03414594 ObjectIntersectionOf(obo:FOODON_03411253 ObjectSomeValuesFrom(obo:RO_0002162 obo:NCBITaxon_8843)))
+SubClassOf(obo:FOODON_03414594 obo:FOODON_03411253)
 
 # Class: obo:FOODON_03414595 (argan plant)
 
@@ -42321,6 +42555,12 @@ AnnotationAssertion(go:hasSynonym obo:FOODON_03414799 "chelodina rugosa"@en)
 AnnotationAssertion(rdfs:label obo:FOODON_03414799 "northern snake-necked turtle"@en)
 SubClassOf(obo:FOODON_03414799 obo:FOODON_03414623)
 
+# Class: obo:FOODON_03414800 (northern australian snapping turtle)
+
+AnnotationAssertion(rdfs:label obo:FOODON_03414800 "northern australian snapping turtle"@en)
+EquivalentClasses(obo:FOODON_03414800 ObjectIntersectionOf(obo:FOODON_03411242 ObjectSomeValuesFrom(obo:RO_0002162 obo:NCBITaxon_44497)))
+SubClassOf(obo:FOODON_03414800 obo:FOODON_03411242)
+
 # Class: obo:FOODON_03414801 (yabby)
 
 AnnotationAssertion(obo:IAO_0000114 obo:FOODON_03414801 obo:IAO_0000428)
@@ -42809,6 +43049,13 @@ AnnotationAssertion(obo:IAO_0000115 obo:FOODON_03414845 "Citrofortunella accordi
 AnnotationAssertion(go:hasDbXref obo:FOODON_03414845 langual:B4845)
 AnnotationAssertion(rdfs:label obo:FOODON_03414845 "citrofortunella hybrids plant"@en)
 SubClassOf(obo:FOODON_03414845 obo:FOODON_03411139)
+
+# Class: obo:FOODON_03414847 (dog)
+
+AnnotationAssertion(obo:IAO_0100001 obo:FOODON_03414847 obo:NCBITaxon_9615)
+AnnotationAssertion(rdfs:label obo:FOODON_03414847 "dog"@en)
+EquivalentClasses(obo:FOODON_03414847 ObjectIntersectionOf(obo:FOODON_03411134 ObjectSomeValuesFrom(obo:RO_0002162 obo:NCBITaxon_9615)))
+SubClassOf(obo:FOODON_03414847 obo:FOODON_03411134)
 
 # Class: obo:FOODON_03414848 (rat)
 
@@ -44392,19 +44639,20 @@ AnnotationAssertion(rdfs:label obo:FOODON_03420102 "germinated or sprouted seed"
 SubClassOf(obo:FOODON_03420102 obo:FOODON_03304313)
 SubClassOf(obo:FOODON_03420102 obo:FOODON_03420133)
 
-# Class: obo:FOODON_03420105 (whole animal, with skin, feathers or scales, eviscerated)
+# Class: obo:FOODON_03420105 (animal carcass (with skin, feathers or scales, eviscerated))
 
 AnnotationAssertion(obo:IAO_0000114 obo:FOODON_03420105 obo:IAO_0000428)
 AnnotationAssertion(obo:IAO_0000115 obo:FOODON_03420105 "Animal body with skin, feathers or scales from which the internal organs have been removed and the internal cavity cleaned. Some or all of the organs are sold with the carcass."@en)
 AnnotationAssertion(go:hasDbXref obo:FOODON_03420105 langual:C0105)
-AnnotationAssertion(rdfs:label obo:FOODON_03420105 "whole animal, with skin, feathers or scales, eviscerated"@en)
+AnnotationAssertion(rdfs:label obo:FOODON_03420105 "animal carcass (with skin, feathers or scales, eviscerated)"@en)
+SubClassOf(obo:FOODON_03420105 obo:FOODON_02010020)
 SubClassOf(obo:FOODON_03420105 obo:FOODON_03420173)
 
-# Class: obo:FOODON_03420106 (organ meat, digestive system)
+# Class: obo:FOODON_03420106 (digestive system organ)
 
 AnnotationAssertion(obo:IAO_0000114 obo:FOODON_03420106 obo:IAO_0000428)
 AnnotationAssertion(go:hasDbXref obo:FOODON_03420106 langual:C0106)
-AnnotationAssertion(rdfs:label obo:FOODON_03420106 "organ meat, digestive system"@en)
+AnnotationAssertion(rdfs:label obo:FOODON_03420106 "digestive system organ"@en)
 SubClassOf(obo:FOODON_03420106 obo:FOODON_03420218)
 
 # Class: obo:FOODON_03420108 (sugar)
@@ -44493,21 +44741,22 @@ AnnotationAssertion(rdfs:comment obo:FOODON_03420119 "LanguaL curation note: Ren
 AnnotationAssertion(rdfs:label obo:FOODON_03420119 "seed, skin present, germ removed"@en)
 SubClassOf(obo:FOODON_03420119 obo:FOODON_03420178)
 
-# Class: obo:FOODON_03420120 (whole animal, skinned, defeathered or scaled, eviscerated)
+# Class: obo:FOODON_03420120 (animal carcass (skinned, defeathered or scaled, eviscerated))
 
 AnnotationAssertion(obo:IAO_0000114 obo:FOODON_03420120 obo:IAO_0000428)
 AnnotationAssertion(go:hasDbXref obo:FOODON_03420120 langual:C0120)
-AnnotationAssertion(rdfs:label obo:FOODON_03420120 "whole animal, skinned, defeathered or scaled, eviscerated"@en)
+AnnotationAssertion(rdfs:label obo:FOODON_03420120 "animal carcass (skinned, defeathered or scaled, eviscerated)"@en)
+SubClassOf(obo:FOODON_03420120 obo:FOODON_02010020)
 SubClassOf(obo:FOODON_03420120 obo:FOODON_03420173)
 
 # Class: obo:FOODON_03420122 (nonmeat part of animal)
 
 AnnotationAssertion(obo:IAO_0000114 obo:FOODON_03420122 obo:IAO_0000428)
-AnnotationAssertion(obo:IAO_0000115 obo:FOODON_03420122 "Bone, feathers, shell, skin or trim fat."@en)
+AnnotationAssertion(obo:IAO_0000115 obo:FOODON_03420122 "A piece of an animal which is not meat, namely a bone, feather, shell, skin or trim fat."@en)
 AnnotationAssertion(go:hasDbXref obo:FOODON_03420122 langual:C0122)
 AnnotationAssertion(rdfs:comment obo:FOODON_03420122 "LanguaL curation note: *BLOOD* AND *INK, AQUATIC ANIMAL* are now listed under organism substance."@en)
 AnnotationAssertion(rdfs:label obo:FOODON_03420122 "nonmeat part of animal"@en)
-SubClassOf(obo:FOODON_03420122 obo:FOODON_03420127)
+SubClassOf(obo:FOODON_03420122 obo:FOODON_00004332)
 
 # Class: obo:FOODON_03420125 (skeletal meat part, without bone or shell)
 
@@ -44519,20 +44768,20 @@ AnnotationAssertion(rdfs:label obo:FOODON_03420125 "skeletal meat part, without 
 SubClassOf(obo:FOODON_03420125 obo:FOODON_03420175)
 DisjointClasses(obo:FOODON_03420125 obo:FOODON_03420243)
 
-# Class: obo:FOODON_03420127 (animal (whole or parts))
+# Class: obo:FOODON_03420127 (animal (whole or piece(s)))
 
 AnnotationAssertion(go:hasDbXref obo:FOODON_03420127 langual:C0127)
-AnnotationAssertion(rdfs:comment obo:FOODON_03420127 "This class and its subclasses can be used if it is ambiguous whether the reference is being made to a whole animal or some part of it, including parts of organs rather than whole organs.
+AnnotationAssertion(rdfs:comment obo:FOODON_03420127 "This is from a LanguaL \"ANIMAL BODY OR BODY PART\" class. Its subclasses can be used if it is ambiguous what animal is being referred to, and whether the reference is being made to a whole animal or some part of it, including parts of organs.  However, see if a more precise term is available under either the \"animal carcass\" branch or the \"piece of animal\" branch.
 
 LanguaL curation note: Includes carcass meat, organ meat, and nonmeat parts of animals, as well as the whole animal."@en)
-AnnotationAssertion(rdfs:label obo:FOODON_03420127 "animal (whole or parts)"@en)
+AnnotationAssertion(rdfs:label obo:FOODON_03420127 "animal (whole or piece(s))"@en)
 SubClassOf(obo:FOODON_03420127 obo:FOODON_03420164)
 
-# Class: obo:FOODON_03420129 (organ meat, cardiovascular system)
+# Class: obo:FOODON_03420129 (cardiovascular system organ)
 
 AnnotationAssertion(obo:IAO_0000114 obo:FOODON_03420129 obo:IAO_0000428)
 AnnotationAssertion(go:hasDbXref obo:FOODON_03420129 langual:C0129)
-AnnotationAssertion(rdfs:label obo:FOODON_03420129 "organ meat, cardiovascular system"@en)
+AnnotationAssertion(rdfs:label obo:FOODON_03420129 "cardiovascular system organ"@en)
 SubClassOf(obo:FOODON_03420129 obo:FOODON_03420218)
 
 # Class: obo:FOODON_03420132 (seed, skin removed, germ present)
@@ -44632,18 +44881,19 @@ AnnotationAssertion(rdfs:comment obo:FOODON_03420144 "LanguaL curation note: Thi
 AnnotationAssertion(rdfs:label obo:FOODON_03420144 "plant above surface, excluding fruit and seed"@en)
 SubClassOf(obo:FOODON_03420144 obo:FOODON_03420148)
 
-# Class: obo:FOODON_03420145 (organ meat, urogenital system)
+# Class: obo:FOODON_03420145 (urogenital system organ)
 
 AnnotationAssertion(obo:IAO_0000114 obo:FOODON_03420145 obo:IAO_0000428)
 AnnotationAssertion(go:hasDbXref obo:FOODON_03420145 langual:C0145)
-AnnotationAssertion(rdfs:label obo:FOODON_03420145 "organ meat, urogenital system"@en)
+AnnotationAssertion(rdfs:label obo:FOODON_03420145 "urogenital system organ"@en)
 SubClassOf(obo:FOODON_03420145 obo:FOODON_03420218)
 
-# Class: obo:FOODON_03420147 (whole animal, skinned, defeathered or scaled, not eviscerated)
+# Class: obo:FOODON_03420147 (animal carcass (skinned, defeathered or scaled, not eviscerated))
 
 AnnotationAssertion(obo:IAO_0000114 obo:FOODON_03420147 obo:IAO_0000428)
 AnnotationAssertion(go:hasDbXref obo:FOODON_03420147 langual:C0147)
-AnnotationAssertion(rdfs:label obo:FOODON_03420147 "whole animal, skinned, defeathered or scaled, not eviscerated"@en)
+AnnotationAssertion(rdfs:label obo:FOODON_03420147 "animal carcass (skinned, defeathered or scaled, not eviscerated)"@en)
+SubClassOf(obo:FOODON_03420147 obo:FOODON_02010020)
 SubClassOf(obo:FOODON_03420147 obo:FOODON_03420173)
 
 # Class: obo:FOODON_03420148 (root, stem, leaf or flower)
@@ -44657,12 +44907,12 @@ AnnotationAssertion(go:hasSynonym obo:FOODON_03420148 "stem, leaf, flower or roo
 AnnotationAssertion(rdfs:label obo:FOODON_03420148 "root, stem, leaf or flower"@en)
 SubClassOf(obo:FOODON_03420148 obo:FOODON_00004333)
 
-# Class: obo:FOODON_03420150 (plant (whole or pieces))
+# Class: obo:FOODON_03420150 (plant (whole or piece(s)))
 
 AnnotationAssertion(obo:IAO_0000114 obo:FOODON_03420150 obo:IAO_0000122)
 AnnotationAssertion(obo:IAO_0000115 obo:FOODON_03420150 "A whole plant or one or more pieces from one or more plants."@en)
 AnnotationAssertion(go:hasDbXref obo:FOODON_03420150 langual:C0150)
-AnnotationAssertion(rdfs:label obo:FOODON_03420150 "plant (whole or pieces)"@en)
+AnnotationAssertion(rdfs:label obo:FOODON_03420150 "plant (whole or piece(s))"@en)
 SubClassOf(obo:FOODON_03420150 obo:FOODON_00004331)
 
 # Class: obo:FOODON_03420151 (head (plant))
@@ -44856,14 +45106,14 @@ AnnotationAssertion(rdfs:comment obo:FOODON_03420213 "LanguaL curation note: Ren
 AnnotationAssertion(rdfs:label obo:FOODON_03420213 "fruit, peel undetermined, core, pit or seed removed"@en)
 SubClassOf(obo:FOODON_03420213 obo:FOODON_03420167)
 
-# Class: obo:FOODON_03420218 (organ meat)
+# Class: obo:FOODON_03420218 (animal organ by physiological system)
 
 AnnotationAssertion(obo:IAO_0000114 obo:FOODON_03420218 obo:IAO_0000428)
 AnnotationAssertion(obo:IAO_0000115 obo:FOODON_03420218 "Edible organ meat, including blood and bone marrow."@en)
 AnnotationAssertion(go:hasDbXref obo:FOODON_03420218 langual:C0218)
 AnnotationAssertion(go:hasSynonym obo:FOODON_03420218 "variety meat"@en)
-AnnotationAssertion(rdfs:label obo:FOODON_03420218 "organ meat"@en)
-SubClassOf(obo:FOODON_03420218 obo:FOODON_03420127)
+AnnotationAssertion(rdfs:label obo:FOODON_03420218 "animal organ by physiological system"@en)
+SubClassOf(obo:FOODON_03420218 obo:FOODON_00004436)
 
 # Class: obo:FOODON_03420225 (egg (without shell))
 
@@ -44976,13 +45226,14 @@ AnnotationAssertion(rdfs:comment obo:FOODON_03420253 "LanguaL curation note: Use
 AnnotationAssertion(rdfs:label obo:FOODON_03420253 "fat trimmings"@en)
 SubClassOf(obo:FOODON_03420253 obo:FOODON_03420122)
 
-# Class: obo:FOODON_03420255 (organ meat, other systems)
+# Class: obo:FOODON_03420255 (obsolete: organ, other systems)
 
-AnnotationAssertion(obo:IAO_0000114 obo:FOODON_03420255 obo:IAO_0000428)
 AnnotationAssertion(obo:IAO_0000115 obo:FOODON_03420255 "Meat from organs that do not belong to the cardiovascular, digestive or urogenital system."@en)
+AnnotationAssertion(obo:IAO_0000231 obo:FOODON_03420255 "Eliminating use of \"Other\" categories."@en)
+AnnotationAssertion(obo:IAO_0100001 obo:FOODON_03420255 obo:FOODON_00004436)
 AnnotationAssertion(go:hasDbXref obo:FOODON_03420255 langual:C0255)
-AnnotationAssertion(rdfs:label obo:FOODON_03420255 "organ meat, other systems"@en)
-SubClassOf(obo:FOODON_03420255 obo:FOODON_03420218)
+AnnotationAssertion(rdfs:label obo:FOODON_03420255 "obsolete: organ, other systems"@en)
+AnnotationAssertion(owl:deprecated obo:FOODON_03420255 "true"^^xsd:boolean)
 
 # Class: obo:FOODON_03420258 (cap, button)
 
@@ -45082,11 +45333,12 @@ AnnotationAssertion(go:hasDbXref obo:FOODON_03420272 langual:C0272)
 AnnotationAssertion(rdfs:label obo:FOODON_03420272 "high fructose syrup"@en)
 SubClassOf(obo:FOODON_03420272 obo:FOODON_03420271)
 
-# Class: obo:FOODON_03420275 (whole animal, with skin, feathers or scales, not eviscerated)
+# Class: obo:FOODON_03420275 (animal carcass (with skin, feathers or scales, not eviscerated))
 
 AnnotationAssertion(obo:IAO_0000114 obo:FOODON_03420275 obo:IAO_0000428)
 AnnotationAssertion(go:hasDbXref obo:FOODON_03420275 langual:C0275)
-AnnotationAssertion(rdfs:label obo:FOODON_03420275 "whole animal, with skin, feathers or scales, not eviscerated"@en)
+AnnotationAssertion(rdfs:label obo:FOODON_03420275 "animal carcass (with skin, feathers or scales, not eviscerated)"@en)
+SubClassOf(obo:FOODON_03420275 obo:FOODON_02010020)
 SubClassOf(obo:FOODON_03420275 obo:FOODON_03420173)
 
 # Class: obo:FOODON_03420285 (skeletal meat part, with bone, without skin, with separable fat)
@@ -62516,7 +62768,6 @@ AnnotationAssertion(go:hasNarrowSynonym obo:NCBITaxon_2032702 "Parastichopus cal
 AnnotationAssertion(go:hasSynonym obo:NCBITaxon_2032702 "cucumaria spp."@en)
 AnnotationAssertion(go:hasSynonym obo:NCBITaxon_2032702 "parastichopus californicus"@en)
 AnnotationAssertion(go:hasSynonym obo:NCBITaxon_2032702 "sea slug"@en)
-SubClassOf(obo:NCBITaxon_2032702 obo:FOODON_03412115)
 
 # Class: obo:NCBITaxon_203582 (Sisymbrium officinale)
 
@@ -64594,7 +64845,6 @@ AnnotationAssertion(go:hasSynonym obo:NCBITaxon_27787 "carey"@en)
 AnnotationAssertion(go:hasSynonym obo:NCBITaxon_27787 "eretmochelys imbricata"@en)
 AnnotationAssertion(go:hasSynonym obo:NCBITaxon_27787 "eretmochelys imbricate"@en)
 AnnotationAssertion(go:hasSynonym obo:NCBITaxon_27787 "hawksbill"@en)
-SubClassOf(obo:NCBITaxon_27787 obo:FOODON_03411242)
 
 # Class: obo:NCBITaxon_27808 (Chlamys islandica)
 
@@ -65037,21 +65287,6 @@ AnnotationAssertion(go:hasDbXref obo:NCBITaxon_290332 "CEC1993:1239")
 AnnotationAssertion(go:hasNarrowSynonym obo:NCBITaxon_290332 "Sicyonia brevirostris")
 AnnotationAssertion(go:hasSynonym obo:NCBITaxon_290332 "sicyonia brevirostris"@en)
 SubClassOf(obo:NCBITaxon_290332 obo:FOODON_03411086)
-
-# Class: obo:NCBITaxon_29073 (Ursus maritimus)
-
-AnnotationAssertion(obo:IAO_0000114 obo:NCBITaxon_29073 obo:IAO_0000428)
-AnnotationAssertion(obo:IAO_0000115 obo:NCBITaxon_29073 "The polar bear (*Ursus maritimus*) is a bear native largely within the Arctic Circle encompassing the Arctic Ocean, its surrounding seas and surrounding land masses. It is the world's largest land carnivore and also the largest bear, together with the omnivorous Kodiak Bear, which is approximately the same size. Although it is closely related to the brown bear, it has evolved to occupy a narrower ecological niche, with many body characteristics adapted for cold temperatures, for moving across snow, ice, and open water, and for hunting the seals which make up most of its diet."@en)
-AnnotationAssertion(obo:IAO_0000118 obo:NCBITaxon_29073 "polar bear"@en)
-AnnotationAssertion(obo:IAO_0000119 obo:NCBITaxon_29073 "WIKIPEDIA:Ursus_maritimus")
-AnnotationAssertion(go:hasDbXref obo:NCBITaxon_29073 <http://eol.org/pages/328580>)
-AnnotationAssertion(go:hasDbXref obo:NCBITaxon_29073 <http://www.itis.gov/servlet/SingleRpt/SingleRpt?search_topic=TSN&search_value=180542>)
-AnnotationAssertion(go:hasDbXref obo:NCBITaxon_29073 langual:B4469)
-AnnotationAssertion(go:hasDbXref obo:NCBITaxon_29073 asfis:bpl)
-AnnotationAssertion(go:hasDbXref obo:NCBITaxon_29073 "MSW3:14000987")
-AnnotationAssertion(go:hasNarrowSynonym obo:NCBITaxon_29073 "Ursus maritimus Phipps, 1774")
-AnnotationAssertion(go:hasSynonym obo:NCBITaxon_29073 "ursus maritimus"@en)
-SubClassOf(obo:NCBITaxon_29073 obo:FOODON_03412406)
 
 # Class: obo:NCBITaxon_290888 (Metapenaeus joyneri)
 
@@ -70982,7 +71217,6 @@ AnnotationAssertion(go:hasDbXref obo:NCBITaxon_44497 <http://www.itis.gov/servle
 AnnotationAssertion(go:hasDbXref obo:NCBITaxon_44497 langual:B4800)
 AnnotationAssertion(go:hasNarrowSynonym obo:NCBITaxon_44497 "Elseya dentata (Gray, 1863)")
 AnnotationAssertion(go:hasSynonym obo:NCBITaxon_44497 "elseya dentata"@en)
-SubClassOf(obo:NCBITaxon_44497 obo:FOODON_03414625)
 
 # Class: obo:NCBITaxon_445213 (Pleoticus muelleri)
 
@@ -77091,7 +77325,6 @@ AnnotationAssertion(go:hasSynonym obo:NCBITaxon_7648 "loxechimus spp."@en)
 AnnotationAssertion(go:hasSynonym obo:NCBITaxon_7648 "paracentrotus lividus"@en)
 AnnotationAssertion(go:hasSynonym obo:NCBITaxon_7648 "pseudocentrotus spp."@en)
 AnnotationAssertion(go:hasSynonym obo:NCBITaxon_7648 "strongylocentrotus spp."@en)
-SubClassOf(obo:NCBITaxon_7648 obo:FOODON_03412115)
 
 # Class: obo:NCBITaxon_768495 (Genypterus maculatus)
 
@@ -78968,7 +79201,6 @@ AnnotationAssertion(go:hasDbXref obo:NCBITaxon_8467 "CEC1993:1476")
 AnnotationAssertion(go:hasNarrowSynonym obo:NCBITaxon_8467 "Caretta caretta (Linnaeus, 1758)")
 AnnotationAssertion(go:hasSynonym obo:NCBITaxon_8467 "caretta caretta"@en)
 AnnotationAssertion(go:hasSynonym obo:NCBITaxon_8467 "thalasochelys caretta"@en)
-SubClassOf(obo:NCBITaxon_8467 obo:FOODON_03411242)
 
 # Class: obo:NCBITaxon_8469 (Chelonia mydas)
 
@@ -78980,7 +79212,6 @@ AnnotationAssertion(go:hasDbXref obo:NCBITaxon_8469 asfis:tug)
 AnnotationAssertion(go:hasDbXref obo:NCBITaxon_8469 "CEC1993:1477")
 AnnotationAssertion(go:hasNarrowSynonym obo:NCBITaxon_8469 "Chelonia mydas (Linnaeus, 1758)")
 AnnotationAssertion(go:hasSynonym obo:NCBITaxon_8469 "chelonia mydas"@en)
-SubClassOf(obo:NCBITaxon_8469 obo:FOODON_03411242)
 
 # Class: obo:NCBITaxon_8475 (Chelydra serpentina)
 
@@ -78993,7 +79224,6 @@ AnnotationAssertion(go:hasDbXref obo:NCBITaxon_8475 <http://www.itis.gov/servlet
 AnnotationAssertion(go:hasDbXref obo:NCBITaxon_8475 langual:B4385)
 AnnotationAssertion(go:hasNarrowSynonym obo:NCBITaxon_8475 "Chelydra serpentina (Linnaeus, 1758)")
 AnnotationAssertion(go:hasSynonym obo:NCBITaxon_8475 "chelydra serpentina"@en)
-SubClassOf(obo:NCBITaxon_8475 obo:FOODON_03411242)
 
 # Class: obo:NCBITaxon_8496 (Alligator mississippiensis)
 
@@ -79167,7 +79397,6 @@ AnnotationAssertion(go:hasDbXref obo:NCBITaxon_85549 langual:B2464)
 AnnotationAssertion(go:hasDbXref obo:NCBITaxon_85549 asfis:ams)
 AnnotationAssertion(go:hasNarrowSynonym obo:NCBITaxon_85549 "Artemia salina (Linnaeus, 1758)")
 AnnotationAssertion(go:hasSynonym obo:NCBITaxon_85549 "artemia salina"@en)
-SubClassOf(obo:NCBITaxon_85549 obo:FOODON_03412465)
 
 # Class: obo:NCBITaxon_85552 (Scylla paramamosain)
 
@@ -79550,7 +79779,6 @@ AnnotationAssertion(go:hasDbXref obo:NCBITaxon_8843 langual:B4594)
 AnnotationAssertion(go:hasDbXref obo:NCBITaxon_8843 asfis:ghd)
 AnnotationAssertion(go:hasExactSynonym obo:NCBITaxon_8843 "anser anser"@en)
 AnnotationAssertion(go:hasNarrowSynonym obo:NCBITaxon_8843 "Anser anser (Linnaeus, 1758)")
-SubClassOf(obo:NCBITaxon_8843 obo:FOODON_03411253)
 
 # Class: obo:NCBITaxon_8851 (Anseranas semipalmata)
 
@@ -79563,20 +79791,6 @@ AnnotationAssertion(go:hasDbXref obo:NCBITaxon_8851 langual:B4618)
 AnnotationAssertion(go:hasNarrowSynonym obo:NCBITaxon_8851 "Anseranas semipalmata (Latham, 1798)")
 AnnotationAssertion(go:hasSynonym obo:NCBITaxon_8851 "anseranas semipalmata"@en)
 SubClassOf(obo:NCBITaxon_8851 obo:FOODON_00002616)
-
-# Class: obo:NCBITaxon_8853 (Branta canadensis)
-
-AnnotationAssertion(obo:IAO_0000114 obo:NCBITaxon_8853 obo:IAO_0000122)
-AnnotationAssertion(obo:IAO_0000115 obo:NCBITaxon_8853 "The Canada goose (*Branta canadensis*) is a large wild goose species with a black head and neck, white patches on the face, and a brown body. Native to arctic and temperate regions of North America, its migration occasionally reaches northern Europe."@en)
-AnnotationAssertion(obo:IAO_0000118 obo:NCBITaxon_8853 "canada goose"@en)
-AnnotationAssertion(obo:IAO_0000119 obo:NCBITaxon_8853 wikipedia:Canada_goose)
-AnnotationAssertion(go:hasDbXref obo:NCBITaxon_8853 <http://eol.org/pages/913235>)
-AnnotationAssertion(go:hasDbXref obo:NCBITaxon_8853 <http://www.itis.gov/servlet/SingleRpt/SingleRpt?search_topic=TSN&search_value=174999>)
-AnnotationAssertion(go:hasDbXref obo:NCBITaxon_8853 langual:B4593)
-AnnotationAssertion(go:hasDbXref obo:NCBITaxon_8853 asfis:bqv)
-AnnotationAssertion(go:hasExactSynonym obo:NCBITaxon_8853 "branta canadensis"@en)
-AnnotationAssertion(go:hasNarrowSynonym obo:NCBITaxon_8853 "Branta canadensis (Linnaeus, 1758)")
-SubClassOf(obo:NCBITaxon_8853 obo:FOODON_03411253)
 
 # Class: obo:NCBITaxon_8855 (Cairina moschata)
 
@@ -80281,22 +80495,6 @@ AnnotationAssertion(go:hasExactSynonym obo:NCBITaxon_9615 "canis lupus familiari
 AnnotationAssertion(go:hasNarrowSynonym obo:NCBITaxon_9615 "Canis lupus familiaris Linnaeus, 1758")
 AnnotationAssertion(rdfs:comment obo:NCBITaxon_9615 "Dog meat is consumed in some East Asian countries, including Korea, China and Vietnam, a practice that dates back to antiquity."@en)
 AnnotationAssertion(rdfs:seeAlso obo:NCBITaxon_9615 obo:NCIT_C14201)
-SubClassOf(obo:NCBITaxon_9615 obo:FOODON_03411134)
-
-# Class: obo:NCBITaxon_9643 (Ursus americanus)
-
-AnnotationAssertion(obo:IAO_0000114 obo:NCBITaxon_9643 obo:IAO_0000428)
-AnnotationAssertion(obo:IAO_0000115 obo:NCBITaxon_9643 "The (North) American black bear (*Ursus americanus*) is a medium-sized bear native to North America. It is the continent's smallest and most common bear species. Although they all live in North America, American black bears are not closely related to brown bears and polar bears; genetic studies reveal that they split from a common ancestor 5.05 million years ago. Both American and Asiatic black bears are considered sister taxa, and are more closely related to each other than to other species of bear"@en)
-AnnotationAssertion(obo:IAO_0000118 obo:NCBITaxon_9643 "american black bear"@en)
-AnnotationAssertion(obo:IAO_0000119 obo:NCBITaxon_9643 "WIKIPEDIA:Ursus_americanus")
-AnnotationAssertion(go:hasDbXref obo:NCBITaxon_9643 <http://eol.org/pages/328582>)
-AnnotationAssertion(go:hasDbXref obo:NCBITaxon_9643 <http://www.itis.gov/servlet/SingleRpt/SingleRpt?search_topic=TSN&search_value=180544>)
-AnnotationAssertion(go:hasDbXref obo:NCBITaxon_9643 langual:B4468)
-AnnotationAssertion(go:hasDbXref obo:NCBITaxon_9643 "MSW3:14000953")
-AnnotationAssertion(go:hasNarrowSynonym obo:NCBITaxon_9643 "Ursus americanus Pallas, 1780")
-AnnotationAssertion(go:hasSynonym obo:NCBITaxon_9643 "baribal"@en)
-AnnotationAssertion(go:hasSynonym obo:NCBITaxon_9643 "ursus americanus"@en)
-SubClassOf(obo:NCBITaxon_9643 obo:FOODON_03412406)
 
 # Class: obo:NCBITaxon_96778 (Hoplostethus atlanticus)
 
@@ -80536,7 +80734,6 @@ AnnotationAssertion(go:hasDbXref obo:NCBITaxon_9837 langual:B4359)
 AnnotationAssertion(go:hasDbXref obo:NCBITaxon_9837 "MSW3:14200112")
 AnnotationAssertion(go:hasNarrowSynonym obo:NCBITaxon_9837 "Camelus bactrianus Linnaeus, 1758")
 AnnotationAssertion(go:hasSynonym obo:NCBITaxon_9837 "camelus bactrianus"@en)
-SubClassOf(obo:NCBITaxon_9837 obo:FOODON_03412103)
 
 # Class: obo:NCBITaxon_9838 (Camelus dromedarius)
 
@@ -80551,7 +80748,6 @@ AnnotationAssertion(go:hasDbXref obo:NCBITaxon_9838 "MSW3:14200115")
 AnnotationAssertion(go:hasNarrowSynonym obo:NCBITaxon_9838 "Camelus dromedarius Linnaeus, 1758")
 AnnotationAssertion(go:hasSynonym obo:NCBITaxon_9838 "arabian camel"@en)
 AnnotationAssertion(go:hasSynonym obo:NCBITaxon_9838 "camelus dromedarius"@en)
-SubClassOf(obo:NCBITaxon_9838 obo:FOODON_03412103)
 
 # Class: obo:NCBITaxon_9844 (Lama glama)
 
@@ -80713,15 +80909,6 @@ AnnotationAssertion(go:hasSynonym obo:NCBITaxon_98819 "pagellus bogaraveo"@en)
 AnnotationAssertion(go:hasSynonym obo:NCBITaxon_98819 "red seabream"@en)
 SubClassOf(obo:NCBITaxon_98819 obo:FOODON_03411808)
 
-# Class: obo:NCBITaxon_9893 (Giraffa)
-
-AnnotationAssertion(obo:IAO_0000114 obo:NCBITaxon_9893 obo:IAO_0000122)
-AnnotationAssertion(obo:IAO_0000115 obo:NCBITaxon_9893 "An African artiodactyl mammal of Genus Giraffa, and the tallest living terrestrial animal and the largest ruminant."@en)
-AnnotationAssertion(obo:IAO_0000117 obo:NCBITaxon_9893 <http://orcid.org/0000-0002-8844-9165>)
-AnnotationAssertion(obo:IAO_0000118 obo:NCBITaxon_9893 "giraffe"@en)
-AnnotationAssertion(dcterms:date obo:NCBITaxon_9893 "2019-12-03T19:09:20Z"^^xsd:dateTime)
-SubClassOf(obo:NCBITaxon_9893 obo:FOODON_03411134)
-
 # Class: obo:NCBITaxon_99038 (Glebionis coronaria)
 
 AnnotationAssertion(obo:IAO_0000114 obo:NCBITaxon_99038 obo:IAO_0000428)
@@ -80783,7 +80970,6 @@ AnnotationAssertion(go:hasDbXref obo:NCBITaxon_9925 <http://www.itis.gov/servlet
 AnnotationAssertion(go:hasDbXref obo:NCBITaxon_9925 "MSW3:14200776")
 AnnotationAssertion(go:hasNarrowSynonym obo:NCBITaxon_9925 "Capra hircus Linnaeus, 1758")
 AnnotationAssertion(go:hasSynonym obo:NCBITaxon_9925 "capra hircus"@en)
-SubClassOf(obo:NCBITaxon_9925 obo:FOODON_03411328)
 
 # Class: obo:NCBITaxon_992721 (Lannea edulis)
 
@@ -80895,7 +81081,6 @@ AnnotationAssertion(go:hasNarrowSynonym obo:NCBITaxon_9938 "Ovis aries Linnaeus,
 AnnotationAssertion(go:hasNarrowSynonym obo:NCBITaxon_9938 "Ovis aries orientalis Gmelin, 1774")
 AnnotationAssertion(go:hasSynonym obo:NCBITaxon_9938 "moufflon"@en)
 AnnotationAssertion(go:hasSynonym obo:NCBITaxon_9938 "ovis aries orientalis"@en)
-SubClassOf(obo:NCBITaxon_9938 obo:FOODON_03411183)
 
 # Class: obo:NCBITaxon_9946 (Tragelaphus strepsiceros)
 
@@ -81138,12 +81323,6 @@ SubClassOf(obo:UBERON_0000022 obo:FOODON_03420122)
 
 SubClassOf(obo:UBERON_0000104 obo:BFO_0000015)
 
-# Class: obo:UBERON_0000160 (intestine)
-
-AnnotationAssertion(obo:IAO_0000412 obo:UBERON_0000160 <http://langual.org>)
-AnnotationAssertion(go:hasDbXref obo:UBERON_0000160 langual:C0212)
-SubClassOf(obo:UBERON_0000160 obo:FOODON_03420106)
-
 # Class: obo:UBERON_0000178 (blood)
 
 AnnotationAssertion(obo:IAO_0000117 obo:UBERON_0000178 "Damion Dooley")
@@ -81157,52 +81336,14 @@ SubClassOf(obo:UBERON_0000178 obo:UBERON_0006314)
 
 SubClassOf(obo:UBERON_0000463 ObjectSomeValuesFrom(obo:RO_0003001 obo:OBI_0100026))
 
-# Class: obo:UBERON_0000945 (stomach)
-
-AnnotationAssertion(obo:IAO_0000412 obo:UBERON_0000945 <http://langual.org>)
-AnnotationAssertion(go:hasDbXref obo:UBERON_0000945 langual:C0211)
-AnnotationAssertion(go:hasSynonym obo:UBERON_0000945 "maw (mammal)"@en)
-SubClassOf(obo:UBERON_0000945 obo:FOODON_03420106)
-
-# Class: obo:UBERON_0000948 (heart)
-
-AnnotationAssertion(obo:IAO_0000118 obo:UBERON_0000948 "heart (animal)"@en)
-AnnotationAssertion(obo:IAO_0000412 obo:UBERON_0000948 <http://langual.org>)
-AnnotationAssertion(go:hasDbXref obo:UBERON_0000948 langual:C0201)
-SubClassOf(obo:UBERON_0000948 obo:FOODON_03420129)
-
-# Class: obo:UBERON_0000955 (brain)
-
-AnnotationAssertion(obo:IAO_0000412 obo:UBERON_0000955 <http://langual.org>)
-AnnotationAssertion(go:hasDbXref obo:UBERON_0000955 langual:C0199)
-SubClassOf(obo:UBERON_0000955 obo:FOODON_03420255)
-
-# Class: obo:UBERON_0000970 (eye)
-
-AnnotationAssertion(obo:IAO_0000412 obo:UBERON_0000970 <http://langual.org>)
-AnnotationAssertion(go:hasDbXref obo:UBERON_0000970 langual:C0256)
-SubClassOf(obo:UBERON_0000970 obo:FOODON_03420255)
-
 # Class: obo:UBERON_0001013 (adipose tissue)
 
 SubClassOf(obo:UBERON_0001013 obo:FOODON_03420122)
-
-# Class: obo:UBERON_0001264 (pancreas)
-
-AnnotationAssertion(obo:IAO_0000412 obo:UBERON_0001264 <http://langual.org>)
-AnnotationAssertion(go:hasDbXref obo:UBERON_0001264 langual:C0204)
-SubClassOf(obo:UBERON_0001264 obo:FOODON_03420106)
 
 # Class: obo:UBERON_0001474 (bone element)
 
 AnnotationAssertion(go:hasExactSynonym obo:UBERON_0001474 "bone"@en)
 SubClassOf(obo:UBERON_0001474 obo:FOODON_03420122)
-
-# Class: obo:UBERON_0001723 (tongue)
-
-AnnotationAssertion(obo:IAO_0000412 obo:UBERON_0001723 <http://langual.org>)
-AnnotationAssertion(go:hasDbXref obo:UBERON_0001723 langual:C0189)
-SubClassOf(obo:UBERON_0001723 obo:FOODON_03420255)
 
 # Class: obo:UBERON_0001913 (milk)
 
@@ -81216,43 +81357,12 @@ SubClassOf(obo:UBERON_0001913 ObjectSomeValuesFrom(obo:RO_0003001 obo:UBERON_000
 
 SubClassOf(obo:UBERON_0001988 obo:UBERON_0000463)
 
-# Class: obo:UBERON_0002048 (lung)
-
-AnnotationAssertion(obo:IAO_0000118 obo:UBERON_0002048 "lung"@en)
-AnnotationAssertion(obo:IAO_0000412 obo:UBERON_0002048 <http://langual.org>)
-AnnotationAssertion(go:hasDbXref obo:UBERON_0002048 langual:C0187)
-SubClassOf(obo:UBERON_0002048 obo:FOODON_03420255)
-
 # Class: obo:UBERON_0002097 (skin of body)
 
 AnnotationAssertion(obo:IAO_0000412 obo:UBERON_0002097 <http://langual.org>)
 AnnotationAssertion(go:hasDbXref obo:UBERON_0002097 langual:C0193)
 AnnotationAssertion(go:hasSynonym obo:UBERON_0002097 "animal skin"@en)
 SubClassOf(obo:UBERON_0002097 obo:FOODON_03420122)
-
-# Class: obo:UBERON_0002106 (spleen)
-
-AnnotationAssertion(obo:IAO_0000412 obo:UBERON_0002106 <http://langual.org>)
-AnnotationAssertion(go:hasDbXref obo:UBERON_0002106 langual:C0191)
-SubClassOf(obo:UBERON_0002106 obo:FOODON_03420129)
-
-# Class: obo:UBERON_0002107 (liver)
-
-AnnotationAssertion(obo:IAO_0000412 obo:UBERON_0002107 <http://langual.org>)
-AnnotationAssertion(go:hasDbXref obo:UBERON_0002107 langual:C0176)
-SubClassOf(obo:UBERON_0002107 obo:FOODON_03420106)
-
-# Class: obo:UBERON_0002113 (kidney)
-
-AnnotationAssertion(obo:IAO_0000412 obo:UBERON_0002113 <http://langual.org>)
-AnnotationAssertion(go:hasDbXref obo:UBERON_0002113 langual:C0196)
-SubClassOf(obo:UBERON_0002113 obo:FOODON_03420145)
-
-# Class: obo:UBERON_0002370 (thymus)
-
-AnnotationAssertion(obo:IAO_0000412 obo:UBERON_0002370 <http://langual.org>)
-AnnotationAssertion(go:hasDbXref obo:UBERON_0002370 langual:C0273)
-SubClassOf(obo:UBERON_0002370 obo:FOODON_03420255)
 
 # Class: obo:UBERON_0002371 (bone marrow)
 
@@ -81279,14 +81389,6 @@ AnnotationAssertion(go:hasBroadSynonym obo:UBERON_0006314 "fluid"@en)
 # Class: obo:UBERON_0006611 (exoskeleton)
 
 SubClassOf(obo:UBERON_0006611 obo:FOODON_03420122)
-
-# Class: obo:UBERON_0006860 (swim bladder)
-
-AnnotationAssertion(obo:IAO_0000118 obo:UBERON_0006860 "air bladder"@en)
-AnnotationAssertion(obo:IAO_0000412 obo:UBERON_0006860 <http://langual.org>)
-AnnotationAssertion(go:hasDbXref obo:UBERON_0006860 langual:C0284)
-AnnotationAssertion(go:hasSynonym obo:UBERON_0006860 "fish maw"@en)
-SubClassOf(obo:UBERON_0006860 obo:FOODON_03420255)
 
 # Class: obo:UBERON_0007366 (ruminant stomach)
 
@@ -82546,6 +82648,17 @@ AnnotationAssertion(rdfs:seeAlso obo:NCBITaxon_2037 "The Prokaryotes, 2d ed., 19
 AnnotationAssertion(go:hasDbXref obo:NCBITaxon_2085 langual:B2853)
 AnnotationAssertion(rdfs:seeAlso obo:NCBITaxon_2085 "The Prokaryotes, 2d ed., 1992, v. II, p.1938."@en)
 AnnotationAssertion(rdfs:label obo:NCBITaxon_2838343 "Chaetodipterus zonatus"@en)
+AnnotationAssertion(obo:IAO_0000114 obo:NCBITaxon_29073 obo:IAO_0000428)
+AnnotationAssertion(obo:IAO_0000115 obo:NCBITaxon_29073 "The polar bear (*Ursus maritimus*) is a bear native largely within the Arctic Circle encompassing the Arctic Ocean, its surrounding seas and surrounding land masses. It is the world's largest land carnivore and also the largest bear, together with the omnivorous Kodiak Bear, which is approximately the same size. Although it is closely related to the brown bear, it has evolved to occupy a narrower ecological niche, with many body characteristics adapted for cold temperatures, for moving across snow, ice, and open water, and for hunting the seals which make up most of its diet."@en)
+AnnotationAssertion(obo:IAO_0000118 obo:NCBITaxon_29073 "polar bear"@en)
+AnnotationAssertion(obo:IAO_0000119 obo:NCBITaxon_29073 "WIKIPEDIA:Ursus_maritimus")
+AnnotationAssertion(go:hasDbXref obo:NCBITaxon_29073 <http://eol.org/pages/328580>)
+AnnotationAssertion(go:hasDbXref obo:NCBITaxon_29073 <http://www.itis.gov/servlet/SingleRpt/SingleRpt?search_topic=TSN&search_value=180542>)
+AnnotationAssertion(go:hasDbXref obo:NCBITaxon_29073 langual:B4469)
+AnnotationAssertion(go:hasDbXref obo:NCBITaxon_29073 asfis:bpl)
+AnnotationAssertion(go:hasDbXref obo:NCBITaxon_29073 "MSW3:14000987")
+AnnotationAssertion(go:hasNarrowSynonym obo:NCBITaxon_29073 "Ursus maritimus Phipps, 1774")
+AnnotationAssertion(go:hasSynonym obo:NCBITaxon_29073 "ursus maritimus"@en)
 AnnotationAssertion(obo:IAO_0000117 obo:NCBITaxon_29892 <http://orcid.org/0000-0002-8844-9165>)
 AnnotationAssertion(dcterms:date obo:NCBITaxon_29892 "2022-09-18T14:13:58Z"^^xsd:dateTime)
 AnnotationAssertion(go:hasDbXref obo:NCBITaxon_29892 <http://www.indexfungorum.org/names/NamesRecord.asp?RecordID=102281>)
@@ -82736,6 +82849,16 @@ AnnotationAssertion(go:hasExactSynonym obo:NCBITaxon_768507 "myxobacteriales")
 AnnotationAssertion(rdfs:seeAlso obo:NCBITaxon_768507 "The Prokaryotes, 2d Ed., 1992, v.IV, p.3631.")
 AnnotationAssertion(go:hasDbXref obo:NCBITaxon_7934 langual:B2700)
 AnnotationAssertion(go:hasDbXref obo:NCBITaxon_85004 langual:B4578)
+AnnotationAssertion(obo:IAO_0000114 obo:NCBITaxon_8853 obo:IAO_0000122)
+AnnotationAssertion(obo:IAO_0000115 obo:NCBITaxon_8853 "The Canada goose (*Branta canadensis*) is a large wild goose species with a black head and neck, white patches on the face, and a brown body. Native to arctic and temperate regions of North America, its migration occasionally reaches northern Europe."@en)
+AnnotationAssertion(obo:IAO_0000118 obo:NCBITaxon_8853 "canada goose"@en)
+AnnotationAssertion(obo:IAO_0000119 obo:NCBITaxon_8853 wikipedia:Canada_goose)
+AnnotationAssertion(go:hasDbXref obo:NCBITaxon_8853 <http://eol.org/pages/913235>)
+AnnotationAssertion(go:hasDbXref obo:NCBITaxon_8853 <http://www.itis.gov/servlet/SingleRpt/SingleRpt?search_topic=TSN&search_value=174999>)
+AnnotationAssertion(go:hasDbXref obo:NCBITaxon_8853 langual:B4593)
+AnnotationAssertion(go:hasDbXref obo:NCBITaxon_8853 asfis:bqv)
+AnnotationAssertion(go:hasExactSynonym obo:NCBITaxon_8853 "branta canadensis"@en)
+AnnotationAssertion(go:hasNarrowSynonym obo:NCBITaxon_8853 "Branta canadensis (Linnaeus, 1758)")
 AnnotationAssertion(go:hasDbXref obo:NCBITaxon_8930 langual:B1304)
 AnnotationAssertion(go:hasDbXref obo:NCBITaxon_8930 <https://eol.org/pages/7978>)
 AnnotationAssertion(go:hasExactSynonym obo:NCBITaxon_9031 "gallus gallus domesticus"@en)
@@ -82759,6 +82882,17 @@ AnnotationAssertion(go:hasDbXref obo:NCBITaxon_941588 "MANSFELD:1235")
 AnnotationAssertion(go:hasNarrowSynonym obo:NCBITaxon_941588 "Apium graveolens var. secalinum (Alef.) Mansf.")
 AnnotationAssertion(go:hasNarrowSynonym obo:NCBITaxon_941588 "Apium graveolens var. secalinum Alef.")
 AnnotationAssertion(go:hasSynonym obo:NCBITaxon_941588 "apium graveolens var. secalinum"@en)
+AnnotationAssertion(obo:IAO_0000114 obo:NCBITaxon_9643 obo:IAO_0000428)
+AnnotationAssertion(obo:IAO_0000115 obo:NCBITaxon_9643 "The (North) American black bear (*Ursus americanus*) is a medium-sized bear native to North America. It is the continent's smallest and most common bear species. Although they all live in North America, American black bears are not closely related to brown bears and polar bears; genetic studies reveal that they split from a common ancestor 5.05 million years ago. Both American and Asiatic black bears are considered sister taxa, and are more closely related to each other than to other species of bear"@en)
+AnnotationAssertion(obo:IAO_0000118 obo:NCBITaxon_9643 "american black bear"@en)
+AnnotationAssertion(obo:IAO_0000119 obo:NCBITaxon_9643 "WIKIPEDIA:Ursus_americanus")
+AnnotationAssertion(go:hasDbXref obo:NCBITaxon_9643 <http://eol.org/pages/328582>)
+AnnotationAssertion(go:hasDbXref obo:NCBITaxon_9643 <http://www.itis.gov/servlet/SingleRpt/SingleRpt?search_topic=TSN&search_value=180544>)
+AnnotationAssertion(go:hasDbXref obo:NCBITaxon_9643 langual:B4468)
+AnnotationAssertion(go:hasDbXref obo:NCBITaxon_9643 "MSW3:14000953")
+AnnotationAssertion(go:hasNarrowSynonym obo:NCBITaxon_9643 "Ursus americanus Pallas, 1780")
+AnnotationAssertion(go:hasSynonym obo:NCBITaxon_9643 "baribal"@en)
+AnnotationAssertion(go:hasSynonym obo:NCBITaxon_9643 "ursus americanus"@en)
 AnnotationAssertion(obo:IAO_0000114 obo:NCBITaxon_9833 obo:IAO_0000428)
 AnnotationAssertion(obo:IAO_0000118 obo:NCBITaxon_9833 "hippopotamus"@en)
 AnnotationAssertion(go:hasDbXref obo:NCBITaxon_9833 <http://eol.org/pages/311532>)
@@ -82786,6 +82920,11 @@ AnnotationAssertion(go:hasDbXref obo:NCBITaxon_9870 "MSW3:14200328")
 AnnotationAssertion(go:hasNarrowSynonym obo:NCBITaxon_9870 "Rangifer tarandus (Linnaeus, 1758)")
 AnnotationAssertion(go:hasSynonym obo:NCBITaxon_9870 "caribou"@en)
 AnnotationAssertion(go:hasSynonym obo:NCBITaxon_9870 "rangifer tarandus"@en)
+AnnotationAssertion(obo:IAO_0000114 obo:NCBITaxon_9893 obo:IAO_0000122)
+AnnotationAssertion(obo:IAO_0000115 obo:NCBITaxon_9893 "An African artiodactyl mammal of Genus Giraffa, and the tallest living terrestrial animal and the largest ruminant."@en)
+AnnotationAssertion(obo:IAO_0000117 obo:NCBITaxon_9893 <http://orcid.org/0000-0002-8844-9165>)
+AnnotationAssertion(obo:IAO_0000118 obo:NCBITaxon_9893 "giraffe"@en)
+AnnotationAssertion(dcterms:date obo:NCBITaxon_9893 "2019-12-03T19:09:20Z"^^xsd:dateTime)
 AnnotationAssertion(obo:IAO_0000115 obo:NCBITaxon_9900 "Members of the genus *Bison* are large, even-toed ungulates within the subfamily *Bovinae*. Two extant and four extinct species are recognized. The surviving species are the American bison, also known as the American buffalo (although it is only distantly related to the true buffalo), *Bison bison*, found in North America, and the European bison, or wisent (*Bison bonasus*), found in Europe and the Caucasus. The North American species is composed of two subspecies, the plains bison, *Bison bison bison*, and the wood bison, *Bison bison athabascae*. While all bison species are usually grouped into their own genus, they are sometimes included in the closely related genus *Bos*, together with cattle, gaur, kouprey and yaks, with which bison have a limited ability to interbreed."@en)
 AnnotationAssertion(obo:IAO_0000119 obo:NCBITaxon_9900 "WIKIPEDIA:Bison")
 AnnotationAssertion(go:hasSynonym obo:NCBITaxon_9900 "bison spp."@en)
@@ -82831,10 +82970,41 @@ AnnotationAssertion(rdfs:label obo:RO_0002214 "has prototype")
 AnnotationAssertion(rdfs:label obo:RO_0002254 "has developmental contribution from")
 AnnotationAssertion(obo:IAO_0000112 obo:RO_0009002 "'egg white' 'has substance removed' some 'egg yolk'"@en)
 AnnotationAssertion(obo:IAO_0000117 obo:RO_0009002 "Damion Dooley"@en)
+AnnotationAssertion(obo:IAO_0000412 obo:UBERON_0000160 <http://langual.org>)
+AnnotationAssertion(go:hasDbXref obo:UBERON_0000160 langual:C0212)
+AnnotationAssertion(obo:IAO_0000412 obo:UBERON_0000945 <http://langual.org>)
+AnnotationAssertion(go:hasDbXref obo:UBERON_0000945 langual:C0211)
+AnnotationAssertion(go:hasSynonym obo:UBERON_0000945 "maw (mammal)"@en)
+AnnotationAssertion(obo:IAO_0000118 obo:UBERON_0000948 "heart (animal)"@en)
+AnnotationAssertion(obo:IAO_0000412 obo:UBERON_0000948 <http://langual.org>)
+AnnotationAssertion(go:hasDbXref obo:UBERON_0000948 langual:C0201)
+AnnotationAssertion(obo:IAO_0000412 obo:UBERON_0000955 <http://langual.org>)
+AnnotationAssertion(go:hasDbXref obo:UBERON_0000955 langual:C0199)
+AnnotationAssertion(obo:IAO_0000412 obo:UBERON_0000970 <http://langual.org>)
+AnnotationAssertion(go:hasDbXref obo:UBERON_0000970 langual:C0256)
+AnnotationAssertion(obo:IAO_0000412 obo:UBERON_0001264 <http://langual.org>)
+AnnotationAssertion(go:hasDbXref obo:UBERON_0001264 langual:C0204)
 AnnotationAssertion(obo:IAO_0000412 obo:UBERON_0001690 <http://langual.org>)
 AnnotationAssertion(go:hasDbXref obo:UBERON_0001690 langual:C0311)
+AnnotationAssertion(obo:IAO_0000412 obo:UBERON_0001723 <http://langual.org>)
+AnnotationAssertion(go:hasDbXref obo:UBERON_0001723 langual:C0189)
+AnnotationAssertion(obo:IAO_0000118 obo:UBERON_0002048 "lung"@en)
+AnnotationAssertion(obo:IAO_0000412 obo:UBERON_0002048 <http://langual.org>)
+AnnotationAssertion(go:hasDbXref obo:UBERON_0002048 langual:C0187)
+AnnotationAssertion(obo:IAO_0000412 obo:UBERON_0002106 <http://langual.org>)
+AnnotationAssertion(go:hasDbXref obo:UBERON_0002106 langual:C0191)
+AnnotationAssertion(obo:IAO_0000412 obo:UBERON_0002107 <http://langual.org>)
+AnnotationAssertion(go:hasDbXref obo:UBERON_0002107 langual:C0176)
+AnnotationAssertion(obo:IAO_0000412 obo:UBERON_0002113 <http://langual.org>)
+AnnotationAssertion(go:hasDbXref obo:UBERON_0002113 langual:C0196)
+AnnotationAssertion(obo:IAO_0000412 obo:UBERON_0002370 <http://langual.org>)
+AnnotationAssertion(go:hasDbXref obo:UBERON_0002370 langual:C0273)
 AnnotationAssertion(obo:IAO_0000412 obo:UBERON_0005052 <http://langual.org>)
 AnnotationAssertion(go:hasDbXref obo:UBERON_0005052 langual:C0124)
+AnnotationAssertion(obo:IAO_0000118 obo:UBERON_0006860 "air bladder"@en)
+AnnotationAssertion(obo:IAO_0000412 obo:UBERON_0006860 <http://langual.org>)
+AnnotationAssertion(go:hasDbXref obo:UBERON_0006860 langual:C0284)
+AnnotationAssertion(go:hasSynonym obo:UBERON_0006860 "fish maw"@en)
 AnnotationAssertion(obo:IAO_0000412 obo:UBERON_0008897 <http://langual.org>)
 AnnotationAssertion(go:hasDbXref obo:UBERON_0008897 langual:C0283)
 AnnotationAssertion(obo:IAO_0000117 obo:UBERON_0008979 "Gregory Harhay"@en)
