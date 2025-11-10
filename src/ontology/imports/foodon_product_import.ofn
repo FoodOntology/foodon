@@ -2416,6 +2416,8 @@ Declaration(Class(obo:FOODON_00004560))
 Declaration(Class(obo:FOODON_00004886))
 Declaration(Class(obo:FOODON_00005342))
 Declaration(Class(obo:FOODON_00005442))
+Declaration(Class(obo:FOODON_00005501))
+Declaration(Class(obo:FOODON_00005502))
 Declaration(Class(obo:FOODON_0002000))
 Declaration(Class(obo:FOODON_02000403))
 Declaration(Class(obo:FOODON_02000405))
@@ -12982,6 +12984,7 @@ AnnotationAssertion(obo:IAO_0000119 obo:FOODON_00001006 wikipedia:Meat)
 AnnotationAssertion(oboInOwl:hasDbXref obo:FOODON_00001006 siren:F17332)
 AnnotationAssertion(rdfs:label obo:FOODON_00001006 "mammalian meat food product"@en)
 SubClassOf(obo:FOODON_00001006 obo:FOODON_00001092)
+SubClassOf(obo:FOODON_00001006 obo:FOODON_00005501)
 SubClassOf(obo:FOODON_00001006 ObjectSomeValuesFrom(obo:RO_0001000 obo:FOODON_03411134))
 SubClassOf(obo:FOODON_00001006 ObjectSomeValuesFrom(obo:RO_0002350 obo:FOODON_03400150))
 
@@ -13567,6 +13570,7 @@ AnnotationAssertion(dcterms:contributor obo:FOODON_00001092 "Damion Dooley")
 AnnotationAssertion(rdfs:label obo:FOODON_00001092 "vertebrate animal food product"@en)
 EquivalentClasses(obo:FOODON_00001092 ObjectIntersectionOf(obo:FOODON_00004242 ObjectSomeValuesFrom(obo:RO_0001000 obo:FOODON_03411297)))
 SubClassOf(obo:FOODON_00001092 obo:FOODON_00004242)
+SubClassOf(obo:FOODON_00001092 obo:FOODON_00005502)
 
 # Class: obo:FOODON_00001093 (cereal grain food product)
 
@@ -13918,7 +13922,7 @@ SubClassOf(obo:FOODON_00001144 ObjectSomeValuesFrom(obo:FOODON_00001563 obo:FOOD
 # Class: obo:FOODON_00001145 (microbial food material)
 
 AnnotationAssertion(obo:IAO_0000114 obo:FOODON_00001145 obo:IAO_0000428)
-AnnotationAssertion(obo:IAO_0000115 obo:FOODON_00001145 "A food product derived from one or more microorganisms including bacteria, mold, and yeast."@en)
+AnnotationAssertion(obo:IAO_0000115 obo:FOODON_00001145 "Microbial material derived from one or more microorganisms including bacteria, mold, and yeast."@en)
 AnnotationAssertion(dcterms:contributor obo:FOODON_00001145 "Damion Dooley"@en)
 AnnotationAssertion(rdfs:label obo:FOODON_00001145 "microbial food material"@en)
 SubClassOf(obo:FOODON_00001145 obo:FOODON_03420116)
@@ -14161,15 +14165,6 @@ AnnotationAssertion(obo:IAO_0000119 obo:FOODON_00001183 wikipedia:Bread)
 AnnotationAssertion(rdfs:label obo:FOODON_00001183 "bread food product"@en)
 SubClassOf(obo:FOODON_00001183 obo:FOODON_00002456)
 SubClassOf(obo:FOODON_00001183 ObjectSomeValuesFrom(obo:RO_0002350 obo:FOODON_03400178))
-
-# Class: obo:FOODON_00001184 (algal food material)
-
-AnnotationAssertion(obo:IAO_0000115 obo:FOODON_00001184 "This food product type includes food products which are derived from a large, diverse group of photosynthetic organisms."@en)
-AnnotationAssertion(oboInOwl:hasDbXref obo:FOODON_00001184 siren:F10419)
-AnnotationAssertion(rdfs:label obo:FOODON_00001184 "algal food material"@en)
-AnnotationAssertion(rdfs:seeAlso obo:FOODON_00001184 <https://ungc-communications-assets.s3.amazonaws.com/docs/publications/The-Seaweed-Manifesto.pdf>)
-EquivalentClasses(obo:FOODON_00001184 ObjectIntersectionOf(obo:FOODON_03420116 ObjectSomeValuesFrom(obo:RO_0001000 obo:FOODON_03411301)))
-SubClassOf(obo:FOODON_00001184 obo:FOODON_03420116)
 
 # Class: obo:FOODON_00001185 (rice food product)
 
@@ -15810,6 +15805,7 @@ SubClassOf(obo:FOODON_00001649 obo:FOODON_00003287)
 
 AnnotationAssertion(rdfs:label obo:FOODON_00001650 "black pepper food product"@en)
 SubClassOf(obo:FOODON_00001650 obo:FOODON_00003287)
+SubClassOf(obo:FOODON_00001650 obo:FOODON_03310070)
 SubClassOf(obo:FOODON_00001650 ObjectSomeValuesFrom(obo:RO_0001000 obo:FOODON_03411191))
 
 # Class: obo:FOODON_00001651 (black raspberry food product)
@@ -71670,7 +71666,7 @@ AnnotationAssertion(obo:IAO_0000114 obo:FOODON_03309388 obo:IAO_0000428)
 AnnotationAssertion(oboInOwl:hasDbXref obo:FOODON_03309388 siren:F9388)
 AnnotationAssertion(oboInOwl:hasExactSynonym obo:FOODON_03309388 "baby carrot"@en)
 AnnotationAssertion(rdfs:label obo:FOODON_03309388 "baby carrot root (raw)"@en)
-SubClassOf(obo:FOODON_03309388 obo:FOODON_00001687)
+SubClassOf(obo:FOODON_03309388 obo:FOODON_3000001)
 
 # Class: obo:FOODON_03309389 (carrot root (whole or pieces, raw))
 
@@ -72767,11 +72763,11 @@ AnnotationAssertion(rdfs:label obo:FOODON_03309579 "imitation wine vinegar"@en)
 SubClassOf(obo:FOODON_03309579 obo:FOODON_00001971)
 SubClassOf(obo:FOODON_03309579 ObjectSomeValuesFrom(obo:RO_0002350 obo:FOODON_03400302))
 
-# Class: obo:FOODON_03309580 (vinegar blend)
+# Class: obo:FOODON_03309580 (apple vinegar blend)
 
 AnnotationAssertion(obo:IAO_0000114 obo:FOODON_03309580 obo:IAO_0000428)
 AnnotationAssertion(oboInOwl:hasDbXref obo:FOODON_03309580 siren:F9580)
-AnnotationAssertion(rdfs:label obo:FOODON_03309580 "vinegar blend"@en)
+AnnotationAssertion(rdfs:label obo:FOODON_03309580 "apple vinegar blend"@en)
 SubClassOf(obo:FOODON_03309580 obo:FOODON_00001613)
 
 # Class: obo:FOODON_03309581 (smoked meat)
@@ -75146,8 +75142,7 @@ SubClassOf(obo:FOODON_03310069 ObjectSomeValuesFrom(obo:RO_0002350 obo:FOODON_03
 AnnotationAssertion(obo:IAO_0000114 obo:FOODON_03310070 obo:IAO_0000428)
 AnnotationAssertion(oboInOwl:hasDbXref obo:FOODON_03310070 siren:F10070)
 AnnotationAssertion(rdfs:label obo:FOODON_03310070 "peppercorn"@en)
-SubClassOf(obo:FOODON_03310070 obo:FOODON_00001649)
-SubClassOf(obo:FOODON_03310070 ObjectSomeValuesFrom(obo:RO_0001000 obo:FOODON_03412255))
+SubClassOf(obo:FOODON_03310070 obo:FOODON_00003287)
 
 # Class: obo:FOODON_03310073 (rice starch)
 
@@ -79340,6 +79335,7 @@ AnnotationAssertion(obo:IAO_0000114 obo:FOODON_03310917 obo:IAO_0000428)
 AnnotationAssertion(oboInOwl:hasDbXref obo:FOODON_03310917 siren:F10917)
 AnnotationAssertion(rdfs:label obo:FOODON_03310917 "black peppercorn"@en)
 SubClassOf(obo:FOODON_03310917 obo:FOODON_00001650)
+SubClassOf(obo:FOODON_03310917 obo:FOODON_03310070)
 
 # Class: obo:FOODON_03310918 (infant food (canned))
 
