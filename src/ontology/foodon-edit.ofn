@@ -5929,6 +5929,7 @@ AnnotationAssertion(obo:IAO_0000115 obo:FOODON_00001015 "A food product which ha
 AnnotationAssertion(dce:contributor obo:FOODON_00001015 <https://orcid.org/0000-0002-8844-9165>)
 AnnotationAssertion(rdfs:label obo:FOODON_00001015 "plant food product"@en)
 EquivalentClasses(obo:FOODON_00001015 ObjectIntersectionOf(obo:FOODON_00004331 ObjectSomeValuesFrom(obo:RO_0001000 obo:PO_0000003)))
+SubClassOf(obo:FOODON_00001015 obo:FOODON_00001002)
 
 # Class: obo:FOODON_00001051 (fermented rice beverage)
 
@@ -6505,7 +6506,6 @@ SubClassOf(obo:FOODON_00002582 obo:FOODON_00002581)
 AnnotationAssertion(go:hasExactSynonym obo:FOODON_00002616 "Aves"@en)
 AnnotationAssertion(go:hasExactSynonym obo:FOODON_00002616 "avian"@en)
 AnnotationAssertion(go:hasExactSynonym obo:FOODON_00002616 "bird"@en)
-SubClassOf(obo:FOODON_00002616 obo:FOODON_03411297)
 
 # Class: obo:FOODON_00002642 (food (chilled))
 
@@ -10804,6 +10804,7 @@ SubClassOf(obo:FOODON_00004229 obo:FOODON_00002872)
 
 # Class: obo:FOODON_00004242 (animal food product)
 
+SubClassOf(obo:FOODON_00004242 obo:FOODON_00001002)
 SubClassOf(obo:FOODON_00004242 obo:FOODON_03420164)
 
 # Class: obo:FOODON_00004243 (roselle calyx)
@@ -12408,11 +12409,11 @@ AnnotationAssertion(dcterms:date obo:FOODON_00005686 "2025-11-10T01:21:40Z"^^xsd
 AnnotationAssertion(rdfs:label obo:FOODON_00005686 "amphibian material"@en)
 SubClassOf(obo:FOODON_00005686 obo:FOODON_00005502)
 
-# Class: obo:FOODON_00005687 (reptilian material)
+# Class: obo:FOODON_00005687 (reptile material)
 
 AnnotationAssertion(dcterms:contributor obo:FOODON_00005687 <https://orcid.org/0000-0002-8844-9165>)
 AnnotationAssertion(dcterms:date obo:FOODON_00005687 "2025-11-10T01:49:12Z"^^xsd:dateTime)
-AnnotationAssertion(rdfs:label obo:FOODON_00005687 "reptilian material"@en)
+AnnotationAssertion(rdfs:label obo:FOODON_00005687 "reptile material"@en)
 SubClassOf(obo:FOODON_00005687 obo:FOODON_00005502)
 
 # Class: obo:FOODON_00005688 (duck family)
@@ -12580,6 +12581,10 @@ SubClassOf(obo:FOODON_02010055 obo:FOODON_03420106)
 # Class: obo:FOODON_02010057 (animal small intestine)
 
 SubClassOf(obo:FOODON_02010057 obo:FOODON_03420106)
+
+# Class: obo:FOODON_02010107 (piece of animal meat)
+
+AnnotationAssertion(rdfs:comment obo:FOODON_02010107 "LanguaL curation note: Edible flesh of any type of animal, including poultry and seafood. Excludes parts containing only animal fat, which is indexed under *FAT OR OIL* or under *FAT, TRIM*."@en)
 
 # Class: obo:FOODON_02010336 (animal tentacle)
 
@@ -45014,6 +45019,7 @@ AnnotationAssertion(obo:IAO_0000114 obo:FOODON_03420175 obo:IAO_0000428)
 AnnotationAssertion(obo:IAO_0000115 obo:FOODON_03420175 "Carcass meat from any type of animal including poultry and seafood. Includes retail and wholesale cuts other than organ meat. Refers to the whole carcass or parts."@en)
 AnnotationAssertion(go:hasDbXref obo:FOODON_03420175 langual:C0175)
 AnnotationAssertion(rdfs:label obo:FOODON_03420175 "skeletal meat part"@en)
+SubClassOf(obo:FOODON_03420175 obo:FOODON_02010107)
 SubClassOf(obo:FOODON_03420175 obo:FOODON_03420127)
 DisjointClasses(obo:FOODON_03420175 obo:FOODON_03420218)
 
@@ -81620,7 +81626,6 @@ AnnotationAssertion(dcterms:contributor obo:FOODON_00001040 <https://orcid.org/0
 AnnotationAssertion(dcterms:date obo:FOODON_00001040 "2025-06-06T13:59:11Z"^^xsd:dateTime)
 AnnotationAssertion(obo:IAO_0000114 obo:FOODON_00001258 obo:IAO_0000428)
 AnnotationAssertion(obo:IAO_0000115 obo:FOODON_00001258 "Food material which has been fermented."@en)
-AnnotationAssertion(obo:IAO_0000116 obo:FOODON_00001258 "Are all fermented foods considered preserved to some extent?"@en)
 AnnotationAssertion(obo:IAO_0000117 obo:FOODON_00001258 "Damion Dooley"@en)
 AnnotationAssertion(rdfs:label obo:FOODON_00001258 "food (fermented)"@en)
 AnnotationAssertion(go:hasDbXref obo:FOODON_00001304 langual:J0104)
@@ -82035,7 +82040,7 @@ AnnotationAssertion(dcterms:date obo:FOODON_00004557 "2024-02-02T00:38:45Z"^^xsd
 AnnotationAssertion(dcterms:contributor obo:FOODON_00004558 <https://orcid.org/0000-0002-8844-9165>)
 AnnotationAssertion(dcterms:date obo:FOODON_00004558 "2024-02-02T00:39:09Z"^^xsd:dateTime)
 AnnotationAssertion(dcterms:contributor obo:FOODON_00005164 <https://orcid.org/0000-0002-8844-9165>)
-AnnotationAssertion(rdfs:comment obo:FOODON_02010107 "LanguaL curation note: Edible flesh of any type of animal, including poultry and seafood. Excludes parts containing only animal fat, which is indexed under *FAT OR OIL* or under *FAT, TRIM*."@en)
+AnnotationAssertion(go:hasDbXref obo:FOODON_02010217 siren:F17328)
 AnnotationAssertion(go:hasDbXref obo:FOODON_02020219 siren:F10168)
 AnnotationAssertion(go:hasDbXref obo:FOODON_02020900 siren:F9737)
 AnnotationAssertion(go:hasDbXref obo:FOODON_02021822 langual:B2620)

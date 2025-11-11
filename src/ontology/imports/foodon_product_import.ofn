@@ -2418,6 +2418,7 @@ Declaration(Class(obo:FOODON_00005342))
 Declaration(Class(obo:FOODON_00005442))
 Declaration(Class(obo:FOODON_00005501))
 Declaration(Class(obo:FOODON_00005502))
+Declaration(Class(obo:FOODON_00005522))
 Declaration(Class(obo:FOODON_0002000))
 Declaration(Class(obo:FOODON_02000403))
 Declaration(Class(obo:FOODON_02000405))
@@ -14112,11 +14113,12 @@ SubClassOf(obo:FOODON_00001174 obo:FOODON_00002664)
 AnnotationAssertion(rdfs:label obo:FOODON_00001175 "plant stem food product"@en)
 SubClassOf(obo:FOODON_00001175 obo:FOODON_00001015)
 
-# Class: obo:FOODON_00001176 (invertebrate animal food product)
+# Class: obo:FOODON_00001176 (invertebrate food product)
 
-AnnotationAssertion(rdfs:label obo:FOODON_00001176 "invertebrate animal food product"@en)
+AnnotationAssertion(rdfs:label obo:FOODON_00001176 "invertebrate food product"@en)
 EquivalentClasses(obo:FOODON_00001176 ObjectIntersectionOf(obo:FOODON_00004242 ObjectSomeValuesFrom(obo:RO_0001000 obo:FOODON_00002452)))
 SubClassOf(obo:FOODON_00001176 obo:FOODON_00004242)
+SubClassOf(obo:FOODON_00001176 obo:FOODON_00005522)
 
 # Class: obo:FOODON_00001177 (insect food product)
 
@@ -88854,14 +88856,6 @@ AnnotationAssertion(oboInOwl:hasDbXref obo:FOODON_03315720 siren:F15720)
 AnnotationAssertion(rdfs:label obo:FOODON_03315720 "vegetable protein, hydrolyzed"@en)
 SubClassOf(obo:FOODON_03315720 obo:FOODON_03316074)
 
-# Class: obo:FOODON_03315721 (meat pieces)
-
-AnnotationAssertion(obo:IAO_0000114 obo:FOODON_03315721 obo:IAO_0000428)
-AnnotationAssertion(obo:IAO_0000115 obo:FOODON_03315721 "A collection of two or more animal meat pieces."@en)
-AnnotationAssertion(oboInOwl:hasDbXref obo:FOODON_03315721 siren:F15721)
-AnnotationAssertion(rdfs:label obo:FOODON_03315721 "meat pieces"@en)
-SubClassOf(obo:FOODON_03315721 obo:FOODON_00004335)
-
 # Class: obo:FOODON_03315723 (sugar wafer)
 
 AnnotationAssertion(obo:IAO_0000114 obo:FOODON_03315723 obo:IAO_0000428)
@@ -97604,14 +97598,6 @@ SubClassOf(obo:FOODON_03317327 obo:FOODON_00001626)
 SubClassOf(obo:FOODON_03317327 obo:FOODON_03310775)
 SubClassOf(obo:FOODON_03317327 ObjectSomeValuesFrom(obo:RO_0001000 obo:FOODON_03411324))
 SubClassOf(obo:FOODON_03317327 ObjectSomeValuesFrom(obo:RO_0002350 obo:FOODON_03400167))
-
-# Class: obo:FOODON_03317328 (meat pieces (raw))
-
-AnnotationAssertion(obo:IAO_0000114 obo:FOODON_03317328 obo:IAO_0000428)
-AnnotationAssertion(oboInOwl:hasDbXref obo:FOODON_03317328 siren:F17328)
-AnnotationAssertion(rdfs:label obo:FOODON_03317328 "meat pieces (raw)"@en)
-AnnotationAssertion(rdfs:seeAlso obo:FOODON_03317328 "Meat pieces which are raw."@en)
-SubClassOf(obo:FOODON_03317328 obo:FOODON_03315721)
 
 # Class: obo:FOODON_03317329 (pig carcass)
 

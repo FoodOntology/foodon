@@ -55889,7 +55889,7 @@ AnnotationAssertion(rdfs:comment obo:FOODON_03309579 "SIREN DB annotation:
 * flavoring added, artificial FOODON:03460228
 * ingredient: color added FOODON:03460150"@en)
 
-# Class: obo:FOODON_03309580 (vinegar blend)
+# Class: obo:FOODON_03309580 (apple vinegar blend)
 
 AnnotationAssertion(rdfs:comment obo:FOODON_03309580 "SIREN DB annotation:
 * liquid, low viscosity, with no visible particles FOODON:03430123
@@ -71229,12 +71229,6 @@ AnnotationAssertion(rdfs:comment obo:FOODON_03315720 "SIREN DB annotation:
 * protein extract, concentrate or isolate FOODON:03420236
 * food hydrolyzation process FOODON:03460277"@en)
 
-# Class: obo:FOODON_03315721 (meat pieces)
-
-AnnotationAssertion(rdfs:comment obo:FOODON_03315721 "SIREN DB annotation:
-* divided into pieces FOODON:03430152
-* skeletal meat part FOODON:03420175"@en)
-
 # Class: obo:FOODON_03315723 (sugar wafer)
 
 AnnotationAssertion(rdfs:comment obo:FOODON_03315723 "SIREN DB annotation:
@@ -79308,12 +79302,6 @@ AnnotationAssertion(rdfs:comment obo:FOODON_03317325 "SIREN DB annotation:
 AnnotationAssertion(rdfs:comment obo:FOODON_03317327 "SIREN DB annotation:
 * semisolid with smooth consistency FOODON:03430119
 * seed (anatomical part) FOODON:03420155"@en)
-
-# Class: obo:FOODON_03317328 (meat pieces (raw))
-
-AnnotationAssertion(rdfs:comment obo:FOODON_03317328 "SIREN DB annotation:
-* divided into pieces FOODON:03430152
-* skeletal meat part FOODON:03420175"@en)
 
 # Class: obo:FOODON_03317330 (pig carcass (previously frozen cut))
 
