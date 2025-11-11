@@ -125,6 +125,7 @@ Declaration(Class(<http://purl.obolibrary.org/obo/FOODON_00004713>))
 Declaration(Class(<http://purl.obolibrary.org/obo/FOODON_00005450>))
 Declaration(Class(<http://purl.obolibrary.org/obo/FOODON_00005501>))
 Declaration(Class(<http://purl.obolibrary.org/obo/FOODON_00005502>))
+Declaration(Class(<http://purl.obolibrary.org/obo/FOODON_00005679>))
 Declaration(Class(<http://purl.obolibrary.org/obo/FOODON_00005680>))
 Declaration(Class(<http://purl.obolibrary.org/obo/FOODON_00005681>))
 Declaration(Class(<http://purl.obolibrary.org/obo/FOODON_00005682>))
@@ -134,6 +135,7 @@ Declaration(Class(<http://purl.obolibrary.org/obo/FOODON_00005686>))
 Declaration(Class(<http://purl.obolibrary.org/obo/FOODON_00005687>))
 Declaration(Class(<http://purl.obolibrary.org/obo/FOODON_00005688>))
 Declaration(Class(<http://purl.obolibrary.org/obo/FOODON_00005689>))
+Declaration(Class(<http://purl.obolibrary.org/obo/FOODON_00005703>))
 Declaration(Class(<http://purl.obolibrary.org/obo/FOODON_00005705>))
 Declaration(Class(<http://purl.obolibrary.org/obo/FOODON_00005707>))
 Declaration(Class(<http://purl.obolibrary.org/obo/FOODON_00005708>))
@@ -3147,13 +3149,13 @@ AnnotationAssertion(<http://purl.org/dc/terms/date> <http://purl.obolibrary.org/
 AnnotationAssertion(rdfs:label <http://purl.obolibrary.org/obo/FOODON_00001041> "cow food product"@en)
 SubClassOf(<http://purl.obolibrary.org/obo/FOODON_00001041> <http://purl.obolibrary.org/obo/FOODON_00004242>)
 
-# Class: <http://purl.obolibrary.org/obo/FOODON_00001251> (avian animal food product)
+# Class: <http://purl.obolibrary.org/obo/FOODON_00001251> (avian food product)
 
 AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000114> <http://purl.obolibrary.org/obo/FOODON_00001251> <http://purl.obolibrary.org/obo/IAO_0000122>)
 AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000115> <http://purl.obolibrary.org/obo/FOODON_00001251> "A food product that is derived from some avian animal."@en)
 AnnotationAssertion(<http://purl.org/dc/terms/contributor> <http://purl.obolibrary.org/obo/FOODON_00001251> "https://orcid.org/0000-0001-5275-8866")
 AnnotationAssertion(<http://purl.org/dc/terms/date> <http://purl.obolibrary.org/obo/FOODON_00001251> "2025-02-01T09:59:11Z"^^xsd:dateTime)
-AnnotationAssertion(rdfs:label <http://purl.obolibrary.org/obo/FOODON_00001251> "avian animal food product"@en)
+AnnotationAssertion(rdfs:label <http://purl.obolibrary.org/obo/FOODON_00001251> "avian food product"@en)
 SubClassOf(<http://purl.obolibrary.org/obo/FOODON_00001251> <http://purl.obolibrary.org/obo/FOODON_00004242>)
 
 # Class: <http://purl.obolibrary.org/obo/FOODON_00001283> (poultry food product)
@@ -3711,7 +3713,6 @@ AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000115> <http://purl.ob
 AnnotationAssertion(<http://purl.org/dc/terms/contributor> <http://purl.obolibrary.org/obo/FOODON_00004280> "http://orcid.org/0000-0002-8844-9165")
 AnnotationAssertion(<http://purl.org/dc/terms/date> <http://purl.obolibrary.org/obo/FOODON_00004280> "2022-09-01T16:54:18Z"^^xsd:dateTime)
 AnnotationAssertion(rdfs:label <http://purl.obolibrary.org/obo/FOODON_00004280> "turtle food product"@en)
-SubClassOf(<http://purl.obolibrary.org/obo/FOODON_00004280> <http://purl.obolibrary.org/obo/FOODON_00004242>)
 
 # Class: <http://purl.obolibrary.org/obo/FOODON_00004286> (wild boar)
 
@@ -29614,8 +29615,8 @@ AnnotationAssertion(<http://purl.org/dc/terms/contributor> <http://purl.obolibra
 AnnotationAssertion(<http://purl.org/dc/terms/date> <http://purl.obolibrary.org/obo/FOODON_02021834> "2024-03-26T00:13:55Z"^^xsd:dateTime)
 AnnotationAssertion(rdfs:comment <http://purl.obolibrary.org/obo/FOODON_02021834> "This branch isn't necessarily food material"@en)
 AnnotationAssertion(rdfs:label <http://purl.obolibrary.org/obo/FOODON_02021834> "nile tilapia material"@en)
-EquivalentClasses(<http://purl.obolibrary.org/obo/FOODON_02021834> ObjectIntersectionOf(<http://purl.obolibrary.org/obo/FOODON_03420164> ObjectSomeValuesFrom(<http://purl.obolibrary.org/obo/RO_0002162> <http://purl.obolibrary.org/obo/NCBITaxon_8128>)))
-SubClassOf(<http://purl.obolibrary.org/obo/FOODON_02021834> <http://purl.obolibrary.org/obo/FOODON_03420164>)
+EquivalentClasses(<http://purl.obolibrary.org/obo/FOODON_02021834> ObjectIntersectionOf(<http://purl.obolibrary.org/obo/FOODON_00005679> ObjectSomeValuesFrom(<http://purl.obolibrary.org/obo/RO_0002162> <http://purl.obolibrary.org/obo/NCBITaxon_8128>)))
+SubClassOf(<http://purl.obolibrary.org/obo/FOODON_02021834> <http://purl.obolibrary.org/obo/FOODON_00005679>)
 
 # Class: <http://purl.obolibrary.org/obo/FOODON_02021835> (nile tilapia)
 
@@ -32685,8 +32686,8 @@ AnnotationAssertion(<http://purl.org/dc/terms/contributor> <http://purl.obolibra
 AnnotationAssertion(<http://purl.org/dc/terms/date> <http://purl.obolibrary.org/obo/FOODON_02022153> "2024-06-13T02:39:09Z"^^xsd:dateTime)
 AnnotationAssertion(rdfs:comment <http://purl.obolibrary.org/obo/FOODON_02022153> "This branch isn't necessarily food material"@en)
 AnnotationAssertion(rdfs:label <http://purl.obolibrary.org/obo/FOODON_02022153> "sea cucumber material"@en)
-EquivalentClasses(<http://purl.obolibrary.org/obo/FOODON_02022153> ObjectIntersectionOf(<http://purl.obolibrary.org/obo/FOODON_03420164> ObjectSomeValuesFrom(<http://purl.obolibrary.org/obo/RO_0002162> <http://purl.obolibrary.org/obo/NCBITaxon_7705>)))
-SubClassOf(<http://purl.obolibrary.org/obo/FOODON_02022153> <http://purl.obolibrary.org/obo/FOODON_03420164>)
+EquivalentClasses(<http://purl.obolibrary.org/obo/FOODON_02022153> ObjectIntersectionOf(<http://purl.obolibrary.org/obo/FOODON_00005703> ObjectSomeValuesFrom(<http://purl.obolibrary.org/obo/RO_0002162> <http://purl.obolibrary.org/obo/NCBITaxon_7705>)))
+SubClassOf(<http://purl.obolibrary.org/obo/FOODON_02022153> <http://purl.obolibrary.org/obo/FOODON_00005703>)
 
 # Class: <http://purl.obolibrary.org/obo/FOODON_02022154> (sea cucumber)
 
@@ -32697,6 +32698,7 @@ AnnotationAssertion(<http://purl.org/dc/terms/date> <http://purl.obolibrary.org/
 AnnotationAssertion(rdfs:comment <http://purl.obolibrary.org/obo/FOODON_02022154> "A sea cucumber which is dead or alive and has a relatively intact body."@en)
 AnnotationAssertion(rdfs:label <http://purl.obolibrary.org/obo/FOODON_02022154> "sea cucumber"@en)
 EquivalentClasses(<http://purl.obolibrary.org/obo/FOODON_02022154> ObjectIntersectionOf(<http://purl.obolibrary.org/obo/FOODON_03412115> ObjectSomeValuesFrom(<http://purl.obolibrary.org/obo/RO_0002162> <http://purl.obolibrary.org/obo/NCBITaxon_7705>)))
+SubClassOf(<http://purl.obolibrary.org/obo/FOODON_02022154> <http://purl.obolibrary.org/obo/FOODON_00005703>)
 SubClassOf(<http://purl.obolibrary.org/obo/FOODON_02022154> <http://purl.obolibrary.org/obo/FOODON_03412115>)
 
 # Class: <http://purl.obolibrary.org/obo/FOODON_02022155> (sitka deer food product)

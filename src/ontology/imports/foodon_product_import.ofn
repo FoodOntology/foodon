@@ -2448,6 +2448,7 @@ Declaration(Class(obo:FOODON_02021444))
 Declaration(Class(obo:FOODON_02021446))
 Declaration(Class(obo:FOODON_02021535))
 Declaration(Class(obo:FOODON_02021548))
+Declaration(Class(obo:FOODON_02021591))
 Declaration(Class(obo:FOODON_02021629))
 Declaration(Class(obo:FOODON_02021654))
 Declaration(Class(obo:FOODON_02022068))
@@ -13562,12 +13563,12 @@ AnnotationAssertion(rdfs:label obo:FOODON_00001091 "dried milk food product"@en)
 EquivalentClasses(obo:FOODON_00001091 ObjectIntersectionOf(obo:FOODON_00001257 obo:FOODON_03307539))
 SubClassOf(obo:FOODON_00001091 obo:FOODON_00001257)
 
-# Class: obo:FOODON_00001092 (vertebrate animal food product)
+# Class: obo:FOODON_00001092 (vertebrate food product)
 
 AnnotationAssertion(obo:IAO_0000114 obo:FOODON_00001092 obo:IAO_0000122)
 AnnotationAssertion(obo:IAO_0000115 obo:FOODON_00001092 "A food product which is derived from or produced by an animal that has a vertibrae."@en)
 AnnotationAssertion(dcterms:contributor obo:FOODON_00001092 "Damion Dooley")
-AnnotationAssertion(rdfs:label obo:FOODON_00001092 "vertebrate animal food product"@en)
+AnnotationAssertion(rdfs:label obo:FOODON_00001092 "vertebrate food product"@en)
 EquivalentClasses(obo:FOODON_00001092 ObjectIntersectionOf(obo:FOODON_00004242 ObjectSomeValuesFrom(obo:RO_0001000 obo:FOODON_03411297)))
 SubClassOf(obo:FOODON_00001092 obo:FOODON_00004242)
 SubClassOf(obo:FOODON_00001092 obo:FOODON_00005502)
@@ -14672,7 +14673,7 @@ EquivalentClasses(obo:FOODON_00001250 ObjectIntersectionOf(obo:FOODON_00001274 O
 SubClassOf(obo:FOODON_00001250 obo:FOODON_00001274)
 SubClassOf(obo:FOODON_00001250 obo:FOODON_03315173)
 
-# Class: obo:FOODON_00001251 (avian animal food product)
+# Class: obo:FOODON_00001251 (avian food product)
 
 SubClassOf(obo:FOODON_00001251 obo:FOODON_00001092)
 SubClassOf(obo:FOODON_00001251 obo:FOODON_02020050)
@@ -14711,6 +14712,7 @@ AnnotationAssertion(oboInOwl:hasExactSynonym obo:FOODON_00001256 "dairy product"
 AnnotationAssertion(oboInOwl:hasExactSynonym obo:FOODON_00001256 "milk product"@en)
 AnnotationAssertion(rdfs:label obo:FOODON_00001256 "dairy food product"@en)
 SubClassOf(obo:FOODON_00001256 obo:FOODON_00001092)
+SubClassOf(obo:FOODON_00001256 obo:FOODON_00005501)
 SubClassOf(obo:FOODON_00001256 ObjectSomeValuesFrom(obo:RO_0001000 obo:UBERON_0001913))
 SubClassOf(obo:FOODON_00001256 ObjectSomeValuesFrom(obo:RO_0002350 obo:FOODON_03400148))
 SubClassOf(obo:FOODON_00001256 ObjectSomeValuesFrom(obo:RO_0002350 obo:FOODON_03400164))
@@ -25209,7 +25211,7 @@ SubClassOf(obo:FOODON_00003155 obo:FOODON_00002165)
 AnnotationAssertion(dcterms:contributor obo:FOODON_00003156 <https://orcid.org/0000-0002-8844-9165>)
 AnnotationAssertion(dcterms:date obo:FOODON_00003156 "2019-08-26T17:15:39Z"^^xsd:dateTime)
 AnnotationAssertion(rdfs:label obo:FOODON_00003156 "meat spread"@en)
-SubClassOf(obo:FOODON_00003156 obo:FOODON_00001006)
+SubClassOf(obo:FOODON_00003156 obo:FOODON_00001010)
 SubClassOf(obo:FOODON_00003156 obo:FOODON_00001873)
 
 # Class: obo:FOODON_00003157 (almond milk)
@@ -28379,7 +28381,7 @@ SubClassOf(obo:FOODON_00004279 obo:FOODON_03317170)
 # Class: obo:FOODON_00004280 (turtle food product)
 
 SubClassOf(obo:FOODON_00004280 obo:FOODON_00004282)
-SubClassOf(obo:FOODON_00004280 ObjectSomeValuesFrom(obo:RO_0001000 obo:FOODON_03411242))
+SubClassOf(obo:FOODON_00004280 obo:FOODON_02021591)
 
 # Class: obo:FOODON_00004307 (dill spice)
 
@@ -88504,7 +88506,7 @@ AnnotationAssertion(rdfs:comment obo:FOODON_03315658 "SIREN DB annotation:
 * curing or aging process FOODON:03460253
 * ingredient: flavoring, spice or herb added FOODON:03460227"@en)
 AnnotationAssertion(rdfs:label obo:FOODON_03315658 "head cheese"@en)
-SubClassOf(obo:FOODON_03315658 obo:FOODON_00001006)
+SubClassOf(obo:FOODON_03315658 obo:FOODON_00001010)
 
 # Class: obo:FOODON_03315659 (fruit jelly with pectin)
 
@@ -91013,7 +91015,7 @@ SubClassOf(obo:FOODON_03316154 obo:FOODON_00000072)
 AnnotationAssertion(obo:IAO_0000114 obo:FOODON_03316155 obo:IAO_0000428)
 AnnotationAssertion(oboInOwl:hasDbXref obo:FOODON_03316155 siren:F16155)
 AnnotationAssertion(rdfs:label obo:FOODON_03316155 "breakfast sausage (minimum cereal content of 6%)"@en)
-SubClassOf(obo:FOODON_03316155 obo:FOODON_00001006)
+SubClassOf(obo:FOODON_03316155 obo:FOODON_00003288)
 
 # Class: obo:FOODON_03316156 (longaniza fresca)
 

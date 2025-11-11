@@ -10904,6 +10904,7 @@ AnnotationAssertion(dcterms:date obo:FOODON_00004282 "2022-09-01T17:47:06Z"^^xsd
 AnnotationAssertion(rdfs:label obo:FOODON_00004282 "reptile food product"@en)
 EquivalentClasses(obo:FOODON_00004282 ObjectIntersectionOf(obo:FOODON_00001092 ObjectSomeValuesFrom(obo:RO_0001000 obo:FOODON_03411625)))
 SubClassOf(obo:FOODON_00004282 obo:FOODON_00001092)
+SubClassOf(obo:FOODON_00004282 obo:FOODON_00005687)
 
 # Class: obo:FOODON_00004283 (tropical fish)
 
