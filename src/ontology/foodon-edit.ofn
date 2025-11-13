@@ -522,6 +522,9 @@ Declaration(Class(obo:FOODON_00005716))
 Declaration(Class(obo:FOODON_00005717))
 Declaration(Class(obo:FOODON_00005719))
 Declaration(Class(obo:FOODON_00005720))
+Declaration(Class(obo:FOODON_00005721))
+Declaration(Class(obo:FOODON_00005722))
+Declaration(Class(obo:FOODON_00005723))
 Declaration(Class(obo:FOODON_0002899))
 Declaration(Class(obo:FOODON_02010336))
 Declaration(Class(obo:FOODON_02010338))
@@ -11997,11 +12000,14 @@ AnnotationAssertion(dcterms:date obo:FOODON_00005146 "2024-07-10T21:59:54Z"^^xsd
 AnnotationAssertion(rdfs:label obo:FOODON_00005146 "hazardous food material"@en)
 SubClassOf(obo:FOODON_00005146 obo:FOODON_00002454)
 
-# Class: obo:FOODON_00005147 (digestible food material)
+# Class: obo:FOODON_00005147 (edible food)
 
+AnnotationAssertion(obo:IAO_0000112 obo:FOODON_00005147 "Cassava is not edible until it is peeled, soaked, and cooked."@en)
+AnnotationAssertion(obo:IAO_0000115 obo:FOODON_00005147 "Food which is safe to ingest."@en)
+AnnotationAssertion(obo:IAO_0000119 obo:FOODON_00005147 <https://en.wiktionary.org/wiki/edible>)
 AnnotationAssertion(dcterms:contributor obo:FOODON_00005147 <https://orcid.org/0000-0002-8844-9165>)
 AnnotationAssertion(dcterms:date obo:FOODON_00005147 "2024-07-10T22:01:55Z"^^xsd:dateTime)
-AnnotationAssertion(rdfs:label obo:FOODON_00005147 "digestible food material"@en)
+AnnotationAssertion(rdfs:label obo:FOODON_00005147 "edible food"@en)
 SubClassOf(obo:FOODON_00005147 obo:FOODON_00002454)
 
 # Class: obo:FOODON_00005148 (physically hazardous food material)
@@ -12096,6 +12102,8 @@ SubClassOf(obo:FOODON_00005159 obo:FOODON_00005146)
 
 # Class: obo:FOODON_00005160 (palatable food)
 
+AnnotationAssertion(obo:IAO_0000115 obo:FOODON_00005160 "Food which is tasty."@en)
+AnnotationAssertion(obo:IAO_0000119 obo:FOODON_00005160 <https://en.wiktionary.org/wiki/palatable>)
 AnnotationAssertion(dcterms:contributor obo:FOODON_00005160 <https://orcid.org/0000-0002-8844-9165>)
 AnnotationAssertion(dcterms:date obo:FOODON_00005160 "2024-07-10T22:35:31Z"^^xsd:dateTime)
 AnnotationAssertion(rdfs:label obo:FOODON_00005160 "palatable food"@en)
@@ -12103,6 +12111,8 @@ SubClassOf(obo:FOODON_00005160 obo:FOODON_00005147)
 
 # Class: obo:FOODON_00005161 (unpalatable food)
 
+AnnotationAssertion(obo:IAO_0000115 obo:FOODON_00005161 <https://en.wiktionary.org/wiki/unpalatable>)
+AnnotationAssertion(obo:IAO_0000115 obo:FOODON_00005161 "Food which is unpleasant to taste."@en)
 AnnotationAssertion(dcterms:contributor obo:FOODON_00005161 <https://orcid.org/0000-0002-8844-9165>)
 AnnotationAssertion(dcterms:date obo:FOODON_00005161 "2024-07-10T22:36:00Z"^^xsd:dateTime)
 AnnotationAssertion(rdfs:label obo:FOODON_00005161 "unpalatable food"@en)
@@ -12557,6 +12567,29 @@ AnnotationAssertion(dcterms:contributor obo:FOODON_00005720 <https://orcid.org/0
 AnnotationAssertion(dcterms:date obo:FOODON_00005720 "2025-11-13T00:38:00Z"^^xsd:dateTime)
 AnnotationAssertion(rdfs:label obo:FOODON_00005720 "food grading"@en)
 SubClassOf(obo:FOODON_00005720 obo:FOODON_03530206)
+
+# Class: obo:FOODON_00005721 (food storage)
+
+AnnotationAssertion(obo:IAO_0000115 obo:FOODON_00005721 "A storage process involving conditions (temperature, humidity) appropriate for food."@en)
+AnnotationAssertion(dcterms:contributor obo:FOODON_00005721 <https://orcid.org/0000-0002-8844-9165>)
+AnnotationAssertion(dcterms:date obo:FOODON_00005721 "2025-11-13T08:02:49Z"^^xsd:dateTime)
+AnnotationAssertion(rdfs:label obo:FOODON_00005721 "food storage"@en)
+SubClassOf(obo:FOODON_00005721 obo:OBI_0000011)
+
+# Class: obo:FOODON_00005722 (food aquisition)
+
+AnnotationAssertion(obo:IAO_0000115 obo:FOODON_00005722 "A planned process in which an individual or organization gains possession of food material."@en)
+AnnotationAssertion(dcterms:contributor obo:FOODON_00005722 <https://orcid.org/0000-0002-8844-9165>)
+AnnotationAssertion(dcterms:date obo:FOODON_00005722 "2025-11-13T08:04:33Z"^^xsd:dateTime)
+AnnotationAssertion(rdfs:label obo:FOODON_00005722 "food aquisition"@en)
+SubClassOf(obo:FOODON_00005722 obo:OBI_0000011)
+
+# Class: obo:FOODON_00005723 (food distribution)
+
+AnnotationAssertion(dcterms:contributor obo:FOODON_00005723 <https://orcid.org/0000-0002-8844-9165>)
+AnnotationAssertion(dcterms:date obo:FOODON_00005723 "2025-11-13T08:07:27Z"^^xsd:dateTime)
+AnnotationAssertion(rdfs:label obo:FOODON_00005723 "food distribution"@en)
+SubClassOf(obo:FOODON_00005723 obo:OBI_0000011)
 
 # Class: obo:FOODON_02010014 (animal blood)
 

@@ -43,20 +43,10 @@ http://purl.obolibrary.org/obo/IAO_0000414 #          mass measurement datum
 http://purl.obolibrary.org/obo/IAO_0000416 #          time measurement datum
 http://purl.obolibrary.org/obo/OBI_0001619 #             specimen collection time measurement datum
 
-http://purl.obolibrary.org/obo/IAO_0000078 # curation status specification
-http://purl.obolibrary.org/obo/IAO_0000428 #    requires discussion
-http://purl.obolibrary.org/obo/IAO_0000120 #    metadata complete
-http://purl.obolibrary.org/obo/IAO_0000122 #    ready for release
-http://purl.obolibrary.org/obo/IAO_0000124 #    uncurated
-http://purl.obolibrary.org/obo/IAO_0000002 #    example to be eventually removed
-http://purl.obolibrary.org/obo/IAO_0000121 #    organizational term
-http://purl.obolibrary.org/obo/IAO_0000423 #    to be replaced with external ontology term
-http://purl.obolibrary.org/obo/IAO_0000123 #    metadata incomplete
-http://purl.obolibrary.org/obo/IAO_0000125 #    pending final vetting
-
 http://purl.obolibrary.org/obo/OBI_1110108 # material to be added
 http://purl.obolibrary.org/obo/OBI_0000967 # container
 http://purl.obolibrary.org/obo/OBI_0000245 # organization
+http://purl.obolibrary.org/obo/OBI_0302893 # storage
 
 # INFORMATION CONTENT 
 http://purl.obolibrary.org/obo/OBI_0200000 # data transformation
@@ -86,6 +76,17 @@ http://purl.obolibrary.org/obo/IAO_0000233 # term tracker item
 http://purl.obolibrary.org/obo/IAO_0000424 # expand expression to 
 http://purl.obolibrary.org/obo/IAO_0010000 # has axiom label
 http://purl.obolibrary.org/obo/IAO_0000112 # example of usage
+
+http://purl.obolibrary.org/obo/IAO_0000078 # curation status specification
+http://purl.obolibrary.org/obo/IAO_0000428 #    requires discussion
+http://purl.obolibrary.org/obo/IAO_0000120 #    metadata complete
+http://purl.obolibrary.org/obo/IAO_0000122 #    ready for release
+http://purl.obolibrary.org/obo/IAO_0000124 #    uncurated
+http://purl.obolibrary.org/obo/IAO_0000002 #    example to be eventually removed
+http://purl.obolibrary.org/obo/IAO_0000121 #    organizational term
+http://purl.obolibrary.org/obo/IAO_0000423 #    to be replaced with external ontology term
+http://purl.obolibrary.org/obo/IAO_0000123 #    metadata incomplete
+http://purl.obolibrary.org/obo/IAO_0000125 #    pending final vetting
 
 [Top level source term URIs and target direct superclass URIs]
 http://purl.obolibrary.org/obo/IAO_0000030 # information
