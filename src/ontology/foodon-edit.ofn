@@ -518,6 +518,10 @@ Declaration(Class(obo:FOODON_00005712))
 Declaration(Class(obo:FOODON_00005713))
 Declaration(Class(obo:FOODON_00005714))
 Declaration(Class(obo:FOODON_00005715))
+Declaration(Class(obo:FOODON_00005716))
+Declaration(Class(obo:FOODON_00005717))
+Declaration(Class(obo:FOODON_00005719))
+Declaration(Class(obo:FOODON_00005720))
 Declaration(Class(obo:FOODON_0002899))
 Declaration(Class(obo:FOODON_02010336))
 Declaration(Class(obo:FOODON_02010338))
@@ -12026,23 +12030,24 @@ SubClassOf(obo:FOODON_00005150 obo:FOODON_00005148)
 
 # Class: obo:FOODON_00005151 (tissue freezing food material)
 
+AnnotationAssertion(obo:IAO_0000115 obo:FOODON_00005151 "Frozen food material which may trigger frostbite when handled without protective gloves."@en)
 AnnotationAssertion(dcterms:contributor obo:FOODON_00005151 <https://orcid.org/0000-0002-8844-9165>)
 AnnotationAssertion(dcterms:date obo:FOODON_00005151 "2024-07-10T22:14:14Z"^^xsd:dateTime)
 AnnotationAssertion(rdfs:label obo:FOODON_00005151 "tissue freezing food material"@en)
 SubClassOf(obo:FOODON_00005151 obo:FOODON_00005150)
 
-# Class: obo:FOODON_00005152 (scalding food material)
+# Class: obo:FOODON_00005152 (Hot food material which may trigger skin burns when handled without protective gloves.)
 
 AnnotationAssertion(dcterms:contributor obo:FOODON_00005152 <https://orcid.org/0000-0002-8844-9165>)
 AnnotationAssertion(dcterms:date obo:FOODON_00005152 "2024-07-10T22:14:45Z"^^xsd:dateTime)
-AnnotationAssertion(rdfs:label obo:FOODON_00005152 "scalding food material"@en)
+AnnotationAssertion(rdfs:label obo:FOODON_00005152 "Hot food material which may trigger skin burns when handled without protective gloves."@en)
 SubClassOf(obo:FOODON_00005152 obo:FOODON_00005150)
 
-# Class: obo:FOODON_00005153 (acid burn hazardous food material)
+# Class: obo:FOODON_00005153 (acid burn hazard food material)
 
 AnnotationAssertion(dcterms:contributor obo:FOODON_00005153 <https://orcid.org/0000-0002-8844-9165>)
 AnnotationAssertion(dcterms:date obo:FOODON_00005153 "2024-07-10T22:16:21Z"^^xsd:dateTime)
-AnnotationAssertion(rdfs:label obo:FOODON_00005153 "acid burn hazardous food material"@en)
+AnnotationAssertion(rdfs:label obo:FOODON_00005153 "acid burn hazard food material"@en)
 SubClassOf(obo:FOODON_00005153 obo:FOODON_00005148)
 SubClassOf(obo:FOODON_00005153 obo:FOODON_00005156)
 
@@ -12214,12 +12219,12 @@ AnnotationAssertion(rdfs:seeAlso obo:FOODON_00005499 <https://www.canada.ca/en/h
 AnnotationAssertion(rdfs:seeAlso obo:FOODON_00005499 <https://www.foodsafety.gov/food-safety-charts/cold-food-storage-charts>)
 SubClassOf(obo:FOODON_00005499 obo:PATO_0000146)
 
-# Class: obo:FOODON_00005501 (mammalian material)
+# Class: obo:FOODON_00005501 (mammal material)
 
 AnnotationAssertion(obo:IAO_0000115 obo:FOODON_00005501 "Material which derives from one or more mammals."@en)
 AnnotationAssertion(dcterms:contributor obo:FOODON_00005501 <https://orcid.org/0000-0002-8844-9165>)
 AnnotationAssertion(dcterms:date obo:FOODON_00005501 "2025-08-26T00:35:09Z"^^xsd:dateTime)
-AnnotationAssertion(rdfs:label obo:FOODON_00005501 "mammalian material"@en)
+AnnotationAssertion(rdfs:label obo:FOODON_00005501 "mammal material"@en)
 SubClassOf(obo:FOODON_00005501 obo:FOODON_00005502)
 
 # Class: obo:FOODON_00005502 (vertebrate material)
@@ -12520,6 +12525,38 @@ AnnotationAssertion(dcterms:contributor obo:FOODON_00005715 <https://orcid.org/0
 AnnotationAssertion(dcterms:date obo:FOODON_00005715 "2025-11-10T22:40:40Z"^^xsd:dateTime)
 AnnotationAssertion(rdfs:label obo:FOODON_00005715 "neogastropod material"@en)
 SubClassOf(obo:FOODON_00005715 obo:FOODON_00005706)
+
+# Class: obo:FOODON_00005716 (wholesale food)
+
+AnnotationAssertion(obo:IAO_0000115 obo:FOODON_00005716 "A food product which is available for aquisition by wholesale supply operators and retailers."@en)
+AnnotationAssertion(dcterms:contributor obo:FOODON_00005716 <https://orcid.org/0000-0002-8844-9165>)
+AnnotationAssertion(dcterms:date obo:FOODON_00005716 "2025-11-11T22:11:56Z"^^xsd:dateTime)
+AnnotationAssertion(rdfs:label obo:FOODON_00005716 "wholesale food"@en)
+SubClassOf(obo:FOODON_00005716 obo:FOODON_00001002)
+
+# Class: obo:FOODON_00005717 (retail food)
+
+AnnotationAssertion(obo:IAO_0000115 obo:FOODON_00005717 "A food product which is available for aquisition by consumers."@en)
+AnnotationAssertion(dcterms:contributor obo:FOODON_00005717 <https://orcid.org/0000-0002-8844-9165>)
+AnnotationAssertion(dcterms:date obo:FOODON_00005717 "2025-11-11T22:20:32Z"^^xsd:dateTime)
+AnnotationAssertion(rdfs:label obo:FOODON_00005717 "retail food"@en)
+SubClassOf(obo:FOODON_00005717 obo:FOODON_00001002)
+
+# Class: obo:FOODON_00005719 (animal harvesting)
+
+AnnotationAssertion(obo:IAO_0000115 obo:FOODON_00005719 "Food harvesting involving domestic or wild animals"@en)
+AnnotationAssertion(dcterms:contributor obo:FOODON_00005719 <https://orcid.org/0000-0002-8844-9165>)
+AnnotationAssertion(dcterms:date obo:FOODON_00005719 "2025-11-12T23:39:37Z"^^xsd:dateTime)
+AnnotationAssertion(rdfs:label obo:FOODON_00005719 "animal harvesting"@en)
+SubClassOf(obo:FOODON_00005719 obo:FOODON_00003203)
+
+# Class: obo:FOODON_00005720 (food grading)
+
+AnnotationAssertion(obo:IAO_0000115 obo:FOODON_00005720 "A food production process in which a food item is categorized into an ordinal rank according to some standard."@en)
+AnnotationAssertion(dcterms:contributor obo:FOODON_00005720 <https://orcid.org/0000-0002-8844-9165>)
+AnnotationAssertion(dcterms:date obo:FOODON_00005720 "2025-11-13T00:38:00Z"^^xsd:dateTime)
+AnnotationAssertion(rdfs:label obo:FOODON_00005720 "food grading"@en)
+SubClassOf(obo:FOODON_00005720 obo:FOODON_03530206)
 
 # Class: obo:FOODON_02010014 (animal blood)
 
@@ -52541,12 +52578,13 @@ AnnotationAssertion(go:hasDbXref obo:FOODON_03530107 langual:Z0107)
 AnnotationAssertion(rdfs:label obo:FOODON_03530107 "extent of fat trim"@en)
 SubClassOf(obo:FOODON_03530107 obo:FOODON_03530049)
 
-# Class: obo:FOODON_03530108 (food facility preparation process)
+# Class: obo:FOODON_03530108 (food preperation)
 
 AnnotationAssertion(obo:IAO_0000114 obo:FOODON_03530108 obo:IAO_0000122)
-AnnotationAssertion(obo:IAO_0000115 obo:FOODON_03530108 "The process of producing and/or retailing post-harvest food in a consumer or industrial context."@en)
+AnnotationAssertion(obo:IAO_0000115 obo:FOODON_03530108 "A food production process which involves post-harvest processes such as cleaning, sorting, cutting, mixing, shaping, cooking and packaging."@en)
 AnnotationAssertion(go:hasDbXref obo:FOODON_03530108 langual:Z0108)
-AnnotationAssertion(rdfs:label obo:FOODON_03530108 "food facility preparation process"@en)
+AnnotationAssertion(rdfs:comment obo:FOODON_03530108 "Food preparation can be distinguished by its household, commercial or institutional context."@en)
+AnnotationAssertion(rdfs:label obo:FOODON_03530108 "food preperation"@en)
 SubClassOf(obo:FOODON_03530108 obo:FOODON_03530206)
 
 # Class: obo:FOODON_03530109 (home food preparation process)
@@ -52858,7 +52896,7 @@ AnnotationAssertion(obo:IAO_0000115 obo:FOODON_03530153 "The hunting or foraging
 AnnotationAssertion(obo:IAO_0000117 obo:FOODON_03530153 "Damion Dooley"@en)
 AnnotationAssertion(go:hasDbXref obo:FOODON_03530153 langual:Z0153)
 AnnotationAssertion(rdfs:label obo:FOODON_03530153 "wild food harvesting"@en)
-SubClassOf(obo:FOODON_03530153 obo:FOODON_03530152)
+SubClassOf(obo:FOODON_03530153 obo:FOODON_00003203)
 
 # Class: obo:FOODON_03530154 (domestic or cultivated food production)
 
