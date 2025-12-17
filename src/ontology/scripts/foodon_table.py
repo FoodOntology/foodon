@@ -64,6 +64,12 @@
 # If user doesn’t select the generation of an {organism} material parent, then template needs to know what parent material class to reference.  Ideally this is calculated dynamically – by looking for nearest [parent] material where parent is a parent of [organism]; but compilation script doesn’t know this unless it has tool to look it up.
 #
 # This reads in foodon-edit.owl, merges all imports, then performs a query to fetch the whole organism hierarchy for lookup purposes and to distinguish , and then one to retrieve ALL organism material hierarchy.
+#
+# EXAMPLES
+#
+# Retrieve up to depth 4, excluding terms with characteristics alive, raw, dead.
+# python3 foodon_table.py -d 4 -e "alive;raw;dead" 
+#
 # PARAMETERS
 # 
 # Author: Damion Dooley Nov 2025
@@ -116,6 +122,7 @@ def init_parser():
 		"-e",
 		"--exclude",
 		dest="exclude",
+		default='',
 		help='A vertical bar "|" separated list of term labels or identifiers which are either food material or characteristic classes, like "--exclude "invertebrate animal|live|dead|raw|frozen|cooked", etc. If a food material is or has one of these terms, it will be EXCLUDED from report. \n\nWhen a term is excluded, such as "animal carcass", then all its children are too.\n\nSome names are predefined bundles of characteristics: "lifecycle" means include food sources which have a "dead" (carcass) or "alive" characteristic.  ',
 	);
 
@@ -136,6 +143,14 @@ def init_parser():
 		action="store_true",
 		help='Include "[x] material" in report as parent of given term.',
 	);
+
+
+	parser.add_argument(
+		"-x",
+		"--dbxref",
+		dest="dbxref",
+		help="A list of cross-references to include, by prefix (e.g. asfis,eolife,grin,itis,langual,wd(wikidata),wikipedia).",
+	)
 
 	parser.add_argument(
 		"-f",
@@ -177,13 +192,16 @@ def getEnglishLabel(onto_class):
 	english_label = '';
 
 	for label in onto_class.label:
-
-		if hasattr(label, 'en'): #  and label.locale.en What about British english etc?
-			english_label = str(label);
+		# What about British english etc?
+		if hasattr(label, 'lang') and label.lang:
+			if (label.lang == 'en'):
+				return str(label);
+			else: # some other language
+				pass
 		elif isinstance(label, str) and english_label == '': #
 			english_label = label;
 		else:
-			print("LABEL",label)
+			print("PROBLEM CASE LABEL:",label)
 
 	return english_label;
 
@@ -204,6 +222,13 @@ def fixDatatype():
 	def my_parser(s): return MyDataType(s)
 	def my_unparser(x): return str(x.value)
 	owlready2.declare_datatype(MyDataType, 'http://www.w3.org/XML/1998/namespacestring', my_parser, my_unparser)
+
+def findClassByName(text):
+	found_classes = list(default_world.search(label = text));
+	if found_classes:
+		return found_classes[0];
+
+	return False;
 
 if __name__ == "__main__":
 
@@ -254,7 +279,7 @@ if __name__ == "__main__":
 		subprocess.check_output(["robot", "merge", "--input", "../foodon-edit.ofn", 'reason', '--reasoner','ELK','--exclude-duplicate-axioms', "relax","--output", INPUT_FOODON_ONTOLOGY]);
 
 
-	# THIS SECTION IS TO FIX WIERD CDNO ONTOLOGY PROBLEM where wrong 
+	# FIX WIERD CDNO ONTOLOGY PROBLEM where wrong label datatype exists
 	fixDatatype();
 
 	onto = get_ontology('file://./' + INPUT_FOODON_ONTOLOGY).load();
@@ -262,7 +287,8 @@ if __name__ == "__main__":
 
 	# The bracketed expressions for characteristics need to be detected so that
 	# they can be filtered out if desired.
-	standard_characteristics = "raw|frozen|cooked|precooked|dried|freeze-dried";
+	standard_characteristics = "raw;frozen;cooked;precooked;dried;freeze-dried";
+
 
 	stack = [];
 	for root_uri in options.root.split(','):
@@ -272,7 +298,10 @@ if __name__ == "__main__":
 		else:
 			print ('WARNING: ', onto_uri, ' was not found in ontology');
 
+	filter = set(options.exclude.split(';'))
+	print("FILTER:", filter)
 	missing_material_links = [];
+	missing_product_links = [];
 
 	# Fetch hierarchies of animal / plant by taxonomy / algae / fungus for hierarchic lookup.
 	while len(stack):
@@ -293,14 +322,24 @@ if __name__ == "__main__":
 			'taxon': '',
 			'product': '',
 			'material': '',
-			'characteristics': ''
+			'characteristics': set(),
+			'dbxrefs': ''
 		}
 
 		term['label'] = getEnglishLabel(onto_class);
 
-		found_classes = list(default_world.search(label = term['label'] + ' material'))
-		if found_classes:
-			found_material = found_classes[0];
+		found_material = findClassByName(term['label'] + ' material');
+		if not found_material:
+			# look for ancestor 
+			#update_term_suffix_test(term['material'], label, ' material');
+			pass
+
+		found_product = findClassByName(term['label'] + ' food product');
+		if not found_material:
+			#update_term_suffix_test(term['product'], label, ' food product');
+			pass
+
+		if found_material:
 			term['material'] = 'm';
 			# If a [x] material class is found, and this is a subclass of it, 
 			if found_material in onto_class.is_a:
@@ -310,22 +349,22 @@ if __name__ == "__main__":
 				# Bump depth since we now have a material
 				item_depth += 1;
 				next_depth = item_depth+1;
-				# Add found_material's children to stack (and take out this child from that list)
-				# ...
+				# Here we can add found_material's OTHER children to stack.
+				# - and take out this child from that list.
+				# Other children include "piece of [x]" and "piece(s) of [x]"
+				# as well as other hierarchies ...
+
+
+
+
+
 			else:
 				missing_material_links.append(str(term['label']));
 
-		else:
-			# look for ancestor 
-			#update_term_suffix_test(term['material'], label, ' material');
-			pass
-
-		found_classes = list(default_world.search(label = term['label'] + ' food product'))
-		if found_classes:
+		if found_product:
 			term['product'] = 'p';
-		else:
-			#update_term_suffix_test(term['product'], label, ' food product');
-			pass
+			if found_material and not (found_product in found_material.is_a):
+				missing_product_links.append(getEnglishLabel(found_material) + "/" + getEnglishLabel(found_product));
 
 		# Note special case for "edible frog" FOODON_03413463 where divider 
 		# line signals "or" condition
@@ -345,6 +384,7 @@ if __name__ == "__main__":
 		# .IAO_0000114 has curation status; .image ;.hasDbXref .label 
 		# .IAO_0000119 definition source .IAO_0000115 definition .contributor
 		# .comment; .hasExactSynonym .date
+
 		for prop in onto_class.get_class_properties(): 
 			for value in prop[onto_class]: # value in an array.
 				match prop.python_name:
@@ -352,39 +392,44 @@ if __name__ == "__main__":
 					#case 'RO_0002162': # in taxon
 
 					case 'RO_0000086' | 'RO_0000053':
-						if term['characteristics'] == '':
-							term['characteristics'] = {};
-						text = str(value).replace('.',':'); # value is 
+						#text = str(value).replace('.',':'); # value is 
 						char_label = getEnglishLabel(value);
-						term['characteristics'][char_label] = text;
-
+						term['characteristics'].add(char_label); # Could add uri too?
 					case _:
-						#print("ONE", prop.python_name)
+						#print("UNRECOGNIZED", prop.python_name)
 						pass
 
 		if term['characteristics']:
 			# apply filter to characteristics if any
 			# if text == 'PATO_0001421' or text == 'PATO_0001422': # LIVE or DEAD
-			characteristics = ';'.join(term['characteristics'].keys());
+			characteristics = ';'.join(term['characteristics']);
 		else:
 			characteristics = '';
 
+		# Set intersection: this class is a filtered item, or has a filtered
+		# characteristic so ignore it.
+		if (term['label'] in filter) or (term['characteristics'] & filter):
+			#print ("FILTERING", term['label'], term['characteristics'] & filter)
+			continue;
+
 		#if (not lifecycle) or options.lifecycle:
 		# Usually only 1 taxon term but some terms like "edible frog" have 2+
-		print (term['uri'].replace('.',':'), term['material'] + term['product'], item_depth, "  " * item_depth + term['label'], ';'.join(term['taxon']), characteristics, sep='\t')
+		print (term['uri'].replace('.',':'), term['material'] + term['product'], item_depth, "  " * item_depth + term['label'], ';'.join(term['taxon']), characteristics, sep='\t');
 
-		# NEED TO SORT ALPHABETICALLY
-		for subclass in onto_class.subclasses():
+		# Sort children alphabetically
+		children = sorted(onto_class.subclasses(), key=lambda term: getEnglishLabel(term), reverse=True);
+		for subclass in children:
 			stack.append({'term': subclass, 'depth': next_depth});
 
 	# 1-to-many lookup of term to children and visa vesa.
 	#item_children = df.groupby('parent_id')['id'].apply(list).to_dict();
 	#item_parents = df.groupby('id')['parent_id'].apply(list).to_dict();
 	if missing_material_links:
-		print("MATERIAL CLASS Link MISSING FOR ", missing_material_links , '\n')
+		print("\nMATERIAL CLASS link to whole organism MISSING for:\n ", missing_material_links);
 
-	# A term/item may have multiple labels, some with or without language modifier
-	term_id_to_labels = {};
-	# Label to item lookup, understanding that there may be duplicate labels.
-	term_label_to_ids = {}; 
+	if missing_product_links:
+		print("\nMATERIAL CLASS link to product MISSING for:\n ", missing_product_links , '\n');
 
+# 2nd pass could create lookup function for material and product hierarchy for each term in table.
+# add info to each row for material and product hierarchy if not yet ascertained.
+# 
