@@ -68,7 +68,7 @@
 # 
 # Author: Damion Dooley Nov 2025
 
-import optparse
+import argparse
 import csv
 import re
 import pandas as pd
@@ -89,12 +89,14 @@ SEARCH_ROOT = 'obo:FOODON_03411301,obo:FOODON_00003004,obo:FOODON_03413357,obo:F
 
 INPUT_FOODON_ONTOLOGY = 'cache-foodon-merged.owl';
 OBO = "<http://purl.obolibrary.org/obo/";
-RE_LOCALE = r'(?P<label>[^@]+)(?P<locale>\@[a-zA-Z-]*)?';
 
 def init_parser():
-	parser = optparse.OptionParser();
 
-	parser.add_option(
+	parser = argparse.ArgumentParser(
+	    description='This script extracts a table format report of the FoodOn organism, food material and food product hierarchies, with various filters to enable customization towards particular application or database use.',
+	    formatter_class=argparse.RawDescriptionHelpFormatter
+	)
+	parser.add_argument(
 		"-r",
 		"--root",
 		dest="root",
@@ -102,15 +104,7 @@ def init_parser():
 		help="The whole organism node at root of hierarchic query for returning whole organism, material, food product and taxonomy table rows.",
 	);
 
-	parser.add_option(
-		"-l",
-		"--lifecycle",
-		dest="lifecycle",
-		action="store_true",
-		help="Include live organism and organism carcass terms",
-	);
-
-	parser.add_option(
+	parser.add_argument(
 		"-d",
 		"--depth",
 		dest="depth",
@@ -118,29 +112,41 @@ def init_parser():
 		help="Include a depth filter to limit hierarchy from given root terms down to this depth.",
 	);
 
-	parser.add_option(
-		"-c",
-		"--characteristic",
-		dest="characteristic",
-		help='A vertical bar | separated list of characteristics like "-c raw|frozen|cooked|shell on", etc. If a food material has one, it will be included in report.',
+	parser.add_argument(
+		"-e",
+		"--exclude",
+		dest="exclude",
+		help='A vertical bar "|" separated list of term labels or identifiers which are either food material or characteristic classes, like "--exclude "invertebrate animal|live|dead|raw|frozen|cooked", etc. If a food material is or has one of these terms, it will be EXCLUDED from report. \n\nWhen a term is excluded, such as "animal carcass", then all its children are too.\n\nSome names are predefined bundles of characteristics: "lifecycle" means include food sources which have a "dead" (carcass) or "alive" characteristic.  ',
 	);
 
-	parser.add_option(
+	parser.add_argument(
 		"-p",
 		"--product",
 		dest="product",
-		help='include in report.',
+		default=True,
+		action="store_true",
+		help='Include "[x] food product" category in report as child of "[x] material" or nearest ancestor.',
 	);
 
+	parser.add_argument(
+		"-m",
+		"--material",
+		dest="material",
+		default=True,
+		action="store_true",
+		help='Include "[x] material" in report as parent of given term.',
+	);
 
-	parser.add_option(
+	parser.add_argument(
 		"-f",
 		"--fresh",
 		dest="fresh",
 		default=False,
 		action="store_true",
-		help="A flag which indicates whether to regenerate the merged reasoned FoodOn ontology on which this report is based.",
+		help="A flag which indicates whether to regenerate the merged reasoned FoodOn ontology (from src/ontology/foodon-edit.ofn) on which this report is based.",
 	)
+
+	parser.add_argument('--version', action='version', version='1.0.0');
 
 	return parser.parse_args();
 
@@ -165,6 +171,22 @@ def get_food_product(focus_id):
 			return 'p	';
 	return '	'; # tab
 
+
+def getEnglishLabel(onto_class):
+
+	english_label = '';
+
+	for label in onto_class.label:
+
+		if hasattr(label, 'en'): #  and label.locale.en What about British english etc?
+			english_label = str(label);
+		elif isinstance(label, str) and english_label == '': #
+			english_label = label;
+		else:
+			print("LABEL",label)
+
+	return english_label;
+
 def update_term_suffix_test(term_attr, label, match_string):
 	print("LABEL", label)
 	if hasattr(label, 'locale') and label.locale.en and str(label).endswith(match_string):
@@ -173,9 +195,19 @@ def update_term_suffix_test(term_attr, label, match_string):
 		term_attr = label;
 	sys.exit(0)
 
+def fixDatatype():
+	# "namespacestring" datatype used on labels.
+	class MyDataType(object):
+	    def __init__(self, value): self.value = value
+	    def __repr__(self): return f"MyDataType({self.value})"
+	# Define the parser and unparser functions
+	def my_parser(s): return MyDataType(s)
+	def my_unparser(x): return str(x.value)
+	owlready2.declare_datatype(MyDataType, 'http://www.w3.org/XML/1998/namespacestring', my_parser, my_unparser)
+
 if __name__ == "__main__":
 
-	options, args = init_parser();
+	options = init_parser();
 
 	# Build organism hierarchy:
 	# Note: wheras animal has "live animal", "animal carcass", plants are
@@ -219,23 +251,18 @@ if __name__ == "__main__":
 		print("Freshening"); # Ensure latest report is available
 		# "robot merge --input ../foodon-edit.ofn reason --reasoner ELK --create-new-ontology true --exclude-duplicate-axioms true relax reduce --output ../foodon-merged.ofn"
 		# Note, all boolean switches require a true or false parameter.
-		subprocess.check_output(["robot", "merge", "--input", "../foodon-edit.ofn", 'reason', '--reasoner','ELK','--exclude-duplicate-axioms', "relax", "reduce","--output", INPUT_FOODON_ONTOLOGY]);
+		subprocess.check_output(["robot", "merge", "--input", "../foodon-edit.ofn", 'reason', '--reasoner','ELK','--exclude-duplicate-axioms', "relax","--output", INPUT_FOODON_ONTOLOGY]);
+
 
 	# THIS SECTION IS TO FIX WIERD CDNO ONTOLOGY PROBLEM where wrong 
-	# "namespacestring" datatype used on labels.
-	class MyDataType(object):
-	    def __init__(self, value): self.value = value
-	    def __repr__(self): return f"MyDataType({self.value})"
-	# Define the parser and unparser functions
-	def my_parser(s): return MyDataType(s)
-	def my_unparser(x): return str(x.value)
-	owlready2.declare_datatype(MyDataType, 'http://www.w3.org/XML/1998/namespacestring', my_parser, my_unparser)
+	fixDatatype();
 
 	onto = get_ontology('file://./' + INPUT_FOODON_ONTOLOGY).load();
 	obo = get_namespace("http://purl.obolibrary.org/obo/");
 
-	# The bracketed expressions for characteristics need to be deteted so that they can be filtered out if desired.
-	standard_characteristics = "raw|frozen|cooked|precooked|dried|freeze-dried|shell on|shell off";
+	# The bracketed expressions for characteristics need to be detected so that
+	# they can be filtered out if desired.
+	standard_characteristics = "raw|frozen|cooked|precooked|dried|freeze-dried";
 
 	stack = [];
 	for root_uri in options.root.split(','):
@@ -249,11 +276,13 @@ if __name__ == "__main__":
 	while len(stack):
 		# Depth-first search: pops object off of end of stack; for breadth use .pop(0)
 		obj = stack.pop();
-		depth = obj['depth'];
+		parent_depth = obj['depth'];
+		item_depth = obj['depth'];
+		next_depth = obj['depth']+1;
 		onto_class = obj['term'];
 
 		# Limit depth search by given option
-		if options.depth and depth > options.depth:
+		if options.depth and item_depth > options.depth:
 			continue;
 
 		term = {
@@ -265,15 +294,23 @@ if __name__ == "__main__":
 			'characteristics': ''
 		}
 
-		for label in onto_class.label:
-			if hasattr(label, 'locale') and label.locale.en:
-				term['label'] = str(label);
-			elif isinstance(label, str) and term['label'] == '':
-				term['label'] = label;
+		term['label'] = getEnglishLabel(onto_class);
 
 		found_classes = list(default_world.search(label = term['label'] + ' material'))
 		if found_classes:
+			found_material = found_classes[0];
 			term['material'] = 'm';
+			# If a [x] material class is found, and this is a subclass of it, 
+			if found_material in onto_class.is_a:
+				#link = found_material.iri.split('/')[-1];
+				link = str(found_material.iri).replace('http://purl.obolibrary.org/obo/','obo:');
+				print (link, '', parent_depth, "  " * (parent_depth) + getEnglishLabel(found_material), '', '', sep='\t');
+				# Bump depth since we now have a material
+				item_depth += 1;
+				next_depth = item_depth+1;
+				# Add found_material's children to stack (and take out this child from that list)
+				# ...
+
 		else:
 			# look for ancestor 
 			#update_term_suffix_test(term['material'], label, ' material');
@@ -286,19 +323,18 @@ if __name__ == "__main__":
 			#update_term_suffix_test(term['product'], label, ' food product');
 			pass
 
+		# Note special case for "edible frog" FOODON_03413463 where divider 
+		# line signals "or" condition
+		#    str(taxon) = 'obo:NCBITaxon_45623 | obo:NCBITaxon_8406'
 		for taxon in onto_class.RO_0002162:
-			term['taxon'] = str(taxon).split('.')[1];
-
-		lifecycle = False;
+			if term['taxon'] == '':
+				term['taxon'] = [];
+			term['taxon'].append(str(taxon).replace('.',':') );
 
 		for parent in onto_class.is_a:  # An array.	
 			if hasattr(parent, 'label'):			
 				for label in parent.label: # an array
 					pass
-
-		for subclass in onto_class.subclasses():
-			stack.append({'term': subclass, 'depth': depth + 1});
-
 
 		# Each prop is an object with [onto_class] as a key pointing to an
 		# array of values (for >1 prop relation)
@@ -311,33 +347,30 @@ if __name__ == "__main__":
 					#case 'label': # With locale?
 					#case 'RO_0002162': # in taxon
 
-					case 'RO_0000086':
+					case 'RO_0000086' | 'RO_0000053':
 						if term['characteristics'] == '':
 							term['characteristics'] = {};
-						text = str(value).split('.')[1];
+						text = str(value).split('.')[1]; # get rid of leading "obo."
 						term['characteristics'][text] = True;
-						if text == 'PATO_0001421' or text == 'PATO_0001422': # LIVE or DEAD
-							lifecycle = True;
-
-					case 'RO_0000053': # has quality
-						if term['characteristics'] == '':
-							term['characteristics'] = {};
-						text = str(value).split('.')[1];
-						term['characteristics'][text] = True;
-						if text == 'PATO_0001421' or text == 'PATO_0001422': # LIVE or DEAD
-							lifecycle = True;
 
 					case _:
 						#print("ONE", prop.python_name)
 						pass
 
 		if term['characteristics']:
+			# apply filter to characteristics if any
+			# if text == 'PATO_0001421' or text == 'PATO_0001422': # LIVE or DEAD
+
 			characteristics = '(' + ','.join(term['characteristics']) + ')';
 		else:
 			characteristics = '';
 
-		if (not lifecycle) or options.lifecycle:
-			print (term['uri'].split('.')[1], term['material'], term['product'], "  " * depth + term['label'], term['taxon'], characteristics, sep='\t')
+		#if (not lifecycle) or options.lifecycle:
+		print (term['uri'].replace('.',':'), term['material'] + term['product'], item_depth, "  " * item_depth + term['label'], term['taxon'], characteristics, sep='\t')
+
+		# NEED TO SORT ALPHABETICALLY
+		for subclass in onto_class.subclasses():
+			stack.append({'term': subclass, 'depth': next_depth});
 
 	# 1-to-many lookup of term to children and visa vesa.
 	#item_children = df.groupby('parent_id')['id'].apply(list).to_dict();
