@@ -272,6 +272,8 @@ if __name__ == "__main__":
 		else:
 			print ('WARNING: ', onto_uri, ' was not found in ontology');
 
+	missing_material_links = [];
+
 	# Fetch hierarchies of animal / plant by taxonomy / algae / fungus for hierarchic lookup.
 	while len(stack):
 		# Depth-first search: pops object off of end of stack; for breadth use .pop(0)
@@ -310,6 +312,8 @@ if __name__ == "__main__":
 				next_depth = item_depth+1;
 				# Add found_material's children to stack (and take out this child from that list)
 				# ...
+			else:
+				missing_material_links.append(str(term['label']));
 
 		else:
 			# look for ancestor 
@@ -350,8 +354,9 @@ if __name__ == "__main__":
 					case 'RO_0000086' | 'RO_0000053':
 						if term['characteristics'] == '':
 							term['characteristics'] = {};
-						text = str(value).split('.')[1]; # get rid of leading "obo."
-						term['characteristics'][text] = True;
+						text = str(value).replace('.',':'); # value is 
+						char_label = getEnglishLabel(value);
+						term['characteristics'][char_label] = text;
 
 					case _:
 						#print("ONE", prop.python_name)
@@ -360,13 +365,13 @@ if __name__ == "__main__":
 		if term['characteristics']:
 			# apply filter to characteristics if any
 			# if text == 'PATO_0001421' or text == 'PATO_0001422': # LIVE or DEAD
-
-			characteristics = '(' + ','.join(term['characteristics']) + ')';
+			characteristics = ';'.join(term['characteristics'].keys());
 		else:
 			characteristics = '';
 
 		#if (not lifecycle) or options.lifecycle:
-		print (term['uri'].replace('.',':'), term['material'] + term['product'], item_depth, "  " * item_depth + term['label'], term['taxon'], characteristics, sep='\t')
+		# Usually only 1 taxon term but some terms like "edible frog" have 2+
+		print (term['uri'].replace('.',':'), term['material'] + term['product'], item_depth, "  " * item_depth + term['label'], ';'.join(term['taxon']), characteristics, sep='\t')
 
 		# NEED TO SORT ALPHABETICALLY
 		for subclass in onto_class.subclasses():
@@ -375,6 +380,8 @@ if __name__ == "__main__":
 	# 1-to-many lookup of term to children and visa vesa.
 	#item_children = df.groupby('parent_id')['id'].apply(list).to_dict();
 	#item_parents = df.groupby('id')['parent_id'].apply(list).to_dict();
+	if missing_material_links:
+		print("MATERIAL CLASS Link MISSING FOR ", missing_material_links , '\n')
 
 	# A term/item may have multiple labels, some with or without language modifier
 	term_id_to_labels = {};
