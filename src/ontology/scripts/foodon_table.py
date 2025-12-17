@@ -12,6 +12,8 @@
 # Note whole organism may have plain language taxa qualifiers, e.g. "lake trout
 # (brown trout variety)"
 #
+# NEED separate animal / plant/ algae / fungus hierarchy in order to trace animal parenthood clearly.
+#
 # 	- "animal" FOODON_00003004 (whole organism, common name)
 #       We actually just want the following, as categories like "companion animal"
 #       are not directly relevant to whole organism food source.
@@ -26,9 +28,9 @@
 #
 #      - Issue: cow food product vs beef food product
 #	
-#   - "plant by taxonomy" FOODON_03413357 (common name)
-#		- Issue: we don't want ""
-#		- handle "brassica species" etc.
+#	- "whole plant"
+#	   - "plant by taxonomy" FOODON_03413357 (common name)
+#		 	- handle "brassica species" etc.
 #
 # 	- "algae" FOODON_03411301
 #
@@ -70,8 +72,22 @@ import optparse
 import csv
 import re
 import pandas as pd
+import io
+import subprocess
+import sys
+# Also relies on command line robot tool: https://robot.obolibrary.org/
 
-TABLE_FILE = 'foodon_table.tsv';
+# For owlready2 to not complain: "Warning: SQLite3 version 3.40.0 and 3.41.2 
+# have huge performance regressions", Mac users may need to run 
+# "> conda install libsqlite --force-reinstall -y"
+from owlready2 import * 
+import owlready2.sparql.parser
+owlready2.sparql.parser._DATA_PROPS = set()
+#                      animal              plant by taxonomy   lichen              fungus
+SEARCH_ROOT = 'obo:FOODON_03411301,obo:FOODON_00003004,obo:FOODON_03413357,obo:FOODON_03411261'; 
+# 00001002: Food product; 03420116: Organism material
+
+INPUT_FOODON_ONTOLOGY = 'cache-foodon-merged.owl';
 OBO = "<http://purl.obolibrary.org/obo/";
 RE_LOCALE = r'(?P<label>[^@]+)(?P<locale>\@[a-zA-Z-]*)?';
 
@@ -82,7 +98,7 @@ def init_parser():
 		"-r",
 		"--root",
 		dest="root",
-		default="FOODON_00003004",
+		default=SEARCH_ROOT,
 		help="The whole organism node at root of hierarchic query for returning whole organism, material, food product and taxonomy table rows.",
 	);
 
@@ -99,7 +115,7 @@ def init_parser():
 		"--depth",
 		dest="depth",
 		type=int,
-		help="Include a depth filter to limit hierarchy down to this depth.",
+		help="Include a depth filter to limit hierarchy from given root terms down to this depth.",
 	);
 
 	parser.add_option(
@@ -108,6 +124,23 @@ def init_parser():
 		dest="characteristic",
 		help='A vertical bar | separated list of characteristics like "-c raw|frozen|cooked|shell on", etc. If a food material has one, it will be included in report.',
 	);
+
+	parser.add_option(
+		"-p",
+		"--product",
+		dest="product",
+		help='include in report.',
+	);
+
+
+	parser.add_option(
+		"-f",
+		"--fresh",
+		dest="fresh",
+		default=False,
+		action="store_true",
+		help="A flag which indicates whether to regenerate the merged reasoned FoodOn ontology on which this report is based.",
+	)
 
 	return parser.parse_args();
 
@@ -132,6 +165,13 @@ def get_food_product(focus_id):
 			return 'p	';
 	return '	'; # tab
 
+def update_term_suffix_test(term_attr, label, match_string):
+	print("LABEL", label)
+	if hasattr(label, 'locale') and label.locale.en and str(label).endswith(match_string):
+		term_attr = str(label);
+	elif isinstance(label, str) and label.endswith(match_string):
+		term_attr = label;
+	sys.exit(0)
 
 if __name__ == "__main__":
 
@@ -174,136 +214,137 @@ if __name__ == "__main__":
     #
     #
 	# Read the TSV file with headers: ?id	?parent_id	?type	?label
-	df = pd.read_csv(TABLE_FILE, sep='\t');
 
-	# Simplify label names
-	df.rename(columns={'?id': 'id', '?parent_id': 'parent_id', '?type': 'type', '?label': 'label'}, inplace=True)
+	if options.fresh:
+		print("Freshening"); # Ensure latest report is available
+		# "robot merge --input ../foodon-edit.ofn reason --reasoner ELK --create-new-ontology true --exclude-duplicate-axioms true relax reduce --output ../foodon-merged.ofn"
+		# Note, all boolean switches require a true or false parameter.
+		subprocess.check_output(["robot", "merge", "--input", "../foodon-edit.ofn", 'reason', '--reasoner','ELK','--exclude-duplicate-axioms', "relax", "reduce","--output", INPUT_FOODON_ONTOLOGY]);
 
-	# Remove the OBO URI from id and parent_id columns
-	df['id'] = df['id'].str.removeprefix(OBO).str.removesuffix('>');
-	df['parent_id'] = df['parent_id'].str.removeprefix(OBO).str.removesuffix('>');
+	# THIS SECTION IS TO FIX WIERD CDNO ONTOLOGY PROBLEM where wrong 
+	# "namespacestring" datatype used on labels.
+	class MyDataType(object):
+	    def __init__(self, value): self.value = value
+	    def __repr__(self): return f"MyDataType({self.value})"
+	# Define the parser and unparser functions
+	def my_parser(s): return MyDataType(s)
+	def my_unparser(x): return str(x.value)
+	owlready2.declare_datatype(MyDataType, 'http://www.w3.org/XML/1998/namespacestring', my_parser, my_unparser)
+
+	onto = get_ontology('file://./' + INPUT_FOODON_ONTOLOGY).load();
+	obo = get_namespace("http://purl.obolibrary.org/obo/");
+
+	# The bracketed expressions for characteristics need to be deteted so that they can be filtered out if desired.
+	standard_characteristics = "raw|frozen|cooked|precooked|dried|freeze-dried|shell on|shell off";
+
+	stack = [];
+	for root_uri in options.root.split(','):
+		onto_uri = root_uri.split(':')[1]; # dropping obo: prefix.
+		if obo[onto_uri]:
+			stack.append({'term': obo[onto_uri], 'depth':0});
+		else:
+			print ('WARNING: ', onto_uri, ' was not found in ontology');
+
+	# Fetch hierarchies of animal / plant by taxonomy / algae / fungus for hierarchic lookup.
+	while len(stack):
+		# Depth-first search: pops object off of end of stack; for breadth use .pop(0)
+		obj = stack.pop();
+		depth = obj['depth'];
+		onto_class = obj['term'];
+
+		# Limit depth search by given option
+		if options.depth and depth > options.depth:
+			continue;
+
+		term = {
+			'uri': str(onto_class),
+			'label': '',
+			'taxon': '',
+			'product': '',
+			'material': '',
+			'characteristics': ''
+		}
+
+		for label in onto_class.label:
+			if hasattr(label, 'locale') and label.locale.en:
+				term['label'] = str(label);
+			elif isinstance(label, str) and term['label'] == '':
+				term['label'] = label;
+
+		found_classes = list(default_world.search(label = term['label'] + ' material'))
+		if found_classes:
+			term['material'] = 'm';
+		else:
+			# look for ancestor 
+			#update_term_suffix_test(term['material'], label, ' material');
+			pass
+
+		found_classes = list(default_world.search(label = term['label'] + ' food product'))
+		if found_classes:
+			term['product'] = 'p';
+		else:
+			#update_term_suffix_test(term['product'], label, ' food product');
+			pass
+
+		for taxon in onto_class.RO_0002162:
+			term['taxon'] = str(taxon).split('.')[1];
+
+		lifecycle = False;
+
+		for parent in onto_class.is_a:  # An array.	
+			if hasattr(parent, 'label'):			
+				for label in parent.label: # an array
+					pass
+
+		for subclass in onto_class.subclasses():
+			stack.append({'term': subclass, 'depth': depth + 1});
+
+
+		# Each prop is an object with [onto_class] as a key pointing to an
+		# array of values (for >1 prop relation)
+		# .IAO_0000114 has curation status; .image ;.hasDbXref .label 
+		# .IAO_0000119 definition source .IAO_0000115 definition .contributor
+		# .comment; .hasExactSynonym .date
+		for prop in onto_class.get_class_properties(): 
+			for value in prop[onto_class]: # value in an array.
+				match prop.python_name:
+					#case 'label': # With locale?
+					#case 'RO_0002162': # in taxon
+
+					case 'RO_0000086':
+						if term['characteristics'] == '':
+							term['characteristics'] = {};
+						text = str(value).split('.')[1];
+						term['characteristics'][text] = True;
+						if text == 'PATO_0001421' or text == 'PATO_0001422': # LIVE or DEAD
+							lifecycle = True;
+
+					case 'RO_0000053': # has quality
+						if term['characteristics'] == '':
+							term['characteristics'] = {};
+						text = str(value).split('.')[1];
+						term['characteristics'][text] = True;
+						if text == 'PATO_0001421' or text == 'PATO_0001422': # LIVE or DEAD
+							lifecycle = True;
+
+					case _:
+						#print("ONE", prop.python_name)
+						pass
+
+		if term['characteristics']:
+			characteristics = '(' + ','.join(term['characteristics']) + ')';
+		else:
+			characteristics = '';
+
+		if (not lifecycle) or options.lifecycle:
+			print (term['uri'].split('.')[1], term['material'], term['product'], "  " * depth + term['label'], term['taxon'], characteristics, sep='\t')
 
 	# 1-to-many lookup of term to children and visa vesa.
-	item_children = df.groupby('parent_id')['id'].apply(list).to_dict();
-	item_parents = df.groupby('id')['parent_id'].apply(list).to_dict();
+	#item_children = df.groupby('parent_id')['id'].apply(list).to_dict();
+	#item_parents = df.groupby('id')['parent_id'].apply(list).to_dict();
 
 	# A term/item may have multiple labels, some with or without language modifier
 	term_id_to_labels = {};
 	# Label to item lookup, understanding that there may be duplicate labels.
 	term_label_to_ids = {}; 
 
-	# Get previous template names and versions:
-	# The type and label columns go together 
-	for index, row in df.iterrows():
-		id = row['id'];
-		if id.startswith('FOODON_'): # Also NCBITaxon
-			match row['type']:
-				case 'label':
-					# We favour the @en lable, and the shortest label.
-					match = re.search(RE_LOCALE, row['label']);
-					if match:
-						new_label = match.group('label');
-						if not id in term_id_to_labels:
-							term_id_to_labels[id] = new_label;
-
-						locale = match.group('locale') or '';
-						# Ensure there is a locale-coded lookup
-						if locale:
-							term_id_to_labels[id + locale] = new_label; #
-
-						# If new label is shorter than existing label, and locale is present
-						if (len(term_id_to_labels[id]) > len(new_label)) and locale and locale == '@en':
-							term_id_to_labels[id] = new_label;
-
-
-						if new_label in term_label_to_ids:
-							term_label_to_ids[new_label].append(id);
-						else:
-							term_label_to_ids[new_label] = [id]; # dictionary with id as key
-
-				case 'synonym':
-					# Nothing to do here currently.
-					pass
-
-				case 'taxon':
-					# An item should have an 'in taxon' link at "x material" level if possible.
-					pass
-
-	# Now for each animal find "x food product ", or nearest animal parent y's "y food product"
-	stack = [{options.root:0}];
-
-	# The bracketed expressions for characteristics need to be deteted so that they can be filtered out if desired.
-	#standard_characteristics = "raw|frozen|cooked|precooked|dried|freeze-dried|shell on|shell off";
-
-	if (options.characteristic):
-		re_characteristic = "(\(| )({})(\)|,)".format(options.characteristic); # the {} gets substituted.
-
-	print ("REGEX", re_characteristic, options.characteristic);
-
-	while len(stack):
-		# Depth-first search: pops object off of end of stack; for breadth use .pop(0)
-		binding = stack.pop();
-		focus_id, depth = next(iter(binding.items())); 
-
-		# Limit depth search by given option
-		if options.depth and depth > options.depth:
-			continue;
-
-		if not focus_id.startswith('FOODON_'):
-			continue;
-
-		label = term_id_to_labels[focus_id];
-
-		lifecycle = label.startswith('live') or label.endswith('carcass') or label.endswith('carcass (raw)');
-		# characteristics = 
-
-		if (not lifecycle) or options.lifecycle:
-			# Can only do this by first accepting "[organism] (taxon qualifier)" parenthetical expressions.
-			# if options.characteristic:
-
-			#	print ("CHARS", options.characteristic, label, re.search(re_characteristic, label))
-
-			# Include characteristics in parentheses like "raw", "cooked", "frozen", "shell on",
-			#if (not options.characteristic) or re.search(re_characteristic, label):
-
-			if focus_id in item_children:
-				children = item_children[focus_id];
-				if children:
-					merged = [{key: value} for key, value in zip(children, [depth+1] * len(children))]
-					stack.extend(merged);
-
-			if focus_id in term_id_to_labels:
-				# label = term_id_to_labels[focus_id];
-				print(focus_id, get_material(focus_id), get_food_product(focus_id), depth, "  " * depth + label);
-
-
-			# NCBITaxon:
-			#else:
-			#	print(focus_id, (" " * depth) + 'n/a');
-
-			# Add label and parenthood options.  
-			# Some items have two labels - e.g. BFO_0000024 "fiat object" "fiat object part"
-			# 
-			
-
-
-	"""
-	if os.path.isfile(DH_TEMPLATES_FILENAME):
-		# create a Pandas "df" dataframe
-		df = pd.read_excel(
-			DH_TEMPLATES_FILENAME, 
-			sheet_name = DH_TEMPLATES_TAB_RELEASES # Load by sheet name
-		) 
-		# Note: if a column is blank or not a number, pandas by default returns
-		# it as nan.
-		# Set all the columns from this Releases tab as datatype (id) str
-		# might help in some cases but we seemed to have to detect nan anyways
-		# so not implementing the parameter below
-		#dtype = dict.fromkeys(DH_TEMPLATE_VERSION_CONTROL_FIELDS, str)
-
-		#print("Loaded file", df);
-		process_release(df);
-
-	else:
-		print(f"Please generate the {DH_TEMPLATES_FILENAME} filename by including the --download parameter.");
-	"""
