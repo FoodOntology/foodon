@@ -82,6 +82,7 @@ import io
 import subprocess
 import sys
 # Also relies on command line robot tool: https://robot.obolibrary.org/
+import pygtrie # pip install pygtrie
 
 # For owlready2 to not complain: "Warning: SQLite3 version 3.40.0 and 3.41.2 
 # have huge performance regressions", Mac users may need to run 
@@ -89,6 +90,7 @@ import sys
 from owlready2 import * 
 import owlready2.sparql.parser
 owlready2.sparql.parser._DATA_PROPS = set()
+
 #                      animal              plant by taxonomy   lichen              fungus
 SEARCH_ROOT = 'obo:FOODON_03411301,obo:FOODON_00003004,obo:FOODON_03413357,obo:FOODON_03411261'; 
 # 00001002: Food product; 03420116: Organism material
@@ -123,7 +125,7 @@ def init_parser():
 		"--exclude",
 		dest="exclude",
 		default='',
-		help='A vertical bar "|" separated list of term labels or identifiers which are either food material or characteristic classes, like "--exclude "invertebrate animal|live|dead|raw|frozen|cooked", etc. If a food material is or has one of these terms, it will be EXCLUDED from report. \n\nWhen a term is excluded, such as "animal carcass", then all its children are too.\n\nSome names are predefined bundles of characteristics: "lifecycle" means include food sources which have a "dead" (carcass) or "alive" characteristic.  ',
+		help='A comma separated list of term labels or identifiers which are either food material or characteristic classes, like "--exclude "invertebrate animal|live|dead|raw|frozen|cooked", etc. If a food material is or has one of these terms, it will be EXCLUDED from report. \n\nWhen a term is excluded, such as "animal carcass", then all its children are too.\n\nSome names are predefined bundles of characteristics: "lifecycle" means include food sources which have a "dead" (carcass) or "alive" characteristic.  ',
 	);
 
 	parser.add_argument(
@@ -147,8 +149,9 @@ def init_parser():
 
 	parser.add_argument(
 		"-x",
-		"--dbxref",
-		dest="dbxref",
+		"--dbxrefs",
+		dest="dbxrefs",
+		default='',
 		help="A list of cross-references to include, by prefix (e.g. asfis,eolife,grin,itis,langual,wd(wikidata),wikipedia).",
 	)
 
@@ -230,6 +233,35 @@ def findClassByName(text):
 
 	return False;
 
+
+def parse_owl_namespaces(file_path, lines_number):
+	"""
+	Reads an OWL ontology file (RDF/XML format) and extracts the 
+	namespace prefixes and URIs from the <rdf:RDF> root tag.
+
+	Args:
+	    file_path (str): The path to the OWL file.
+
+	Returns:
+	    dict: A dictionary where keys are namespace prefixes (or None for 
+	          default namespace) and values are URIs.
+	"""
+	# Read the first 100 lines to ensure we capture the root element
+	with open(file_path) as input_file:
+		head = [next(input_file) for _ in range(lines_number)]
+
+	namespaces = {};
+	for line in head:
+		# Match to e.g. xmlns:swrl="http://www.w3.org/2003/11/swrl#"
+		stripped = line.strip();
+		if stripped.startswith("xmlns:"):
+			prefix, uri = stripped[6:].replace('"','').split('=',1);
+			namespaces[uri] = prefix;
+
+	return namespaces
+
+
+###############################################################################
 if __name__ == "__main__":
 
 	options = init_parser();
@@ -283,13 +315,22 @@ if __name__ == "__main__":
 	fixDatatype();
 
 	onto = get_ontology('file://./' + INPUT_FOODON_ONTOLOGY).load();
+	# Generated just to get namespaces:
+
 	obo = get_namespace("http://purl.obolibrary.org/obo/");
 
-	# The bracketed expressions for characteristics need to be detected so that
-	# they can be filtered out if desired.
-	standard_characteristics = "raw;frozen;cooked;precooked;dried;freeze-dried";
+	# AS of 2025: Owlready2 can't generate the RDF document's xmlns namespace
+	# prefixes and uris. Workaround, read the first 100 lines of 
+	# INPUT_FOODON_ONTOLOGY directly and parse 
+	# xmlns:go="http://www.geneontology.org/formats/oboInOwl#" etc.
+	reverse_namespace_dict = parse_owl_namespaces(INPUT_FOODON_ONTOLOGY, 100);
+	# Create a Trie instance
+	namespace_trie = pygtrie.CharTrie(**reverse_namespace_dict);
 
+	# 
+	#standard_characteristics = "raw;frozen;cooked;precooked;dried;freeze-dried";
 
+	# Prime stack with given ontology term iris.
 	stack = [];
 	for root_uri in options.root.split(','):
 		onto_uri = root_uri.split(':')[1]; # dropping obo: prefix.
@@ -298,8 +339,9 @@ if __name__ == "__main__":
 		else:
 			print ('WARNING: ', onto_uri, ' was not found in ontology');
 
-	filter = set(options.exclude.split(';'))
-	print("FILTER:", filter)
+	filter = set(options.exclude.split(','));
+	#print("FILTER:", filter)
+	dbxref_set = set(options.dbxrefs.split(','));
 	missing_material_links = [];
 	missing_product_links = [];
 
@@ -323,7 +365,7 @@ if __name__ == "__main__":
 			'product': '',
 			'material': '',
 			'characteristics': set(),
-			'dbxrefs': ''
+			'dbxrefs': set()
 		}
 
 		term['label'] = getEnglishLabel(onto_class);
@@ -345,7 +387,7 @@ if __name__ == "__main__":
 			if found_material in onto_class.is_a:
 				#link = found_material.iri.split('/')[-1];
 				link = str(found_material.iri).replace('http://purl.obolibrary.org/obo/','obo:');
-				print (link, '', parent_depth, "  " * (parent_depth) + getEnglishLabel(found_material), '', '', sep='\t');
+				print (link, '', parent_depth, "  " * (parent_depth) + getEnglishLabel(found_material), '', '', '', sep='\t');
 				# Bump depth since we now have a material
 				item_depth += 1;
 				next_depth = item_depth+1;
@@ -390,6 +432,23 @@ if __name__ == "__main__":
 				match prop.python_name:
 					#case 'label': # With locale?
 					#case 'RO_0002162': # in taxon
+					# Echo selected dbxrefs out into a column dedicated to that
+					case 'hasDbXref':
+
+						if options.dbxrefs:
+							value = str(value);
+							found = '*' in dbxref_set;
+							# The .longest_prefix() method returns a tuple of (key, value)
+							match = namespace_trie.longest_prefix(value); 
+							if match:
+								code, prefix = match
+								if prefix in dbxref_set:
+									found = True;
+								value = prefix + ':' + value[len(code):];
+							elif not found and value.partition(':')[0] in dbxref_set:
+								found = True;
+							if found:
+								term['dbxrefs'].add(value);
 
 					case 'RO_0000086' | 'RO_0000053':
 						#text = str(value).replace('.',':'); # value is 
@@ -401,11 +460,15 @@ if __name__ == "__main__":
 
 		if term['characteristics']:
 			# apply filter to characteristics if any
-			# if text == 'PATO_0001421' or text == 'PATO_0001422': # LIVE or DEAD
 			characteristics = ';'.join(term['characteristics']);
 		else:
 			characteristics = '';
 
+		if term['dbxrefs']:
+			dbxrefs = ';'.join(term['dbxrefs']);
+		else:
+			dbxrefs = '';
+				
 		# Set intersection: this class is a filtered item, or has a filtered
 		# characteristic so ignore it.
 		if (term['label'] in filter) or (term['characteristics'] & filter):
@@ -414,7 +477,7 @@ if __name__ == "__main__":
 
 		#if (not lifecycle) or options.lifecycle:
 		# Usually only 1 taxon term but some terms like "edible frog" have 2+
-		print (term['uri'].replace('.',':'), term['material'] + term['product'], item_depth, "  " * item_depth + term['label'], ';'.join(term['taxon']), characteristics, sep='\t');
+		print (term['uri'].replace('.',':'), term['material'] + term['product'], item_depth, "  " * item_depth + term['label'], ';'.join(term['taxon']), characteristics, dbxrefs, sep='\t');
 
 		# Sort children alphabetically
 		children = sorted(onto_class.subclasses(), key=lambda term: getEnglishLabel(term), reverse=True);
