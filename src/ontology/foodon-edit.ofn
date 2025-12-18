@@ -514,7 +514,6 @@ Declaration(Class(obo:FOODON_00005707))
 Declaration(Class(obo:FOODON_00005708))
 Declaration(Class(obo:FOODON_00005710))
 Declaration(Class(obo:FOODON_00005711))
-Declaration(Class(obo:FOODON_00005712))
 Declaration(Class(obo:FOODON_00005713))
 Declaration(Class(obo:FOODON_00005714))
 Declaration(Class(obo:FOODON_00005715))
@@ -525,6 +524,11 @@ Declaration(Class(obo:FOODON_00005720))
 Declaration(Class(obo:FOODON_00005721))
 Declaration(Class(obo:FOODON_00005722))
 Declaration(Class(obo:FOODON_00005723))
+Declaration(Class(obo:FOODON_00005724))
+Declaration(Class(obo:FOODON_00005725))
+Declaration(Class(obo:FOODON_00005726))
+Declaration(Class(obo:FOODON_00005727))
+Declaration(Class(obo:FOODON_00005728))
 Declaration(Class(obo:FOODON_0002899))
 Declaration(Class(obo:FOODON_02010336))
 Declaration(Class(obo:FOODON_02010338))
@@ -3655,15 +3659,22 @@ Declaration(Class(obo:NCBITaxon_1072472))
 Declaration(Class(obo:NCBITaxon_110569))
 Declaration(Class(obo:NCBITaxon_1170837))
 Declaration(Class(obo:NCBITaxon_128156))
+Declaration(Class(obo:NCBITaxon_208194))
 Declaration(Class(obo:NCBITaxon_3049903))
 Declaration(Class(obo:NCBITaxon_48038))
 Declaration(Class(obo:NCBITaxon_549450))
 Declaration(Class(obo:NCBITaxon_687680))
 Declaration(Class(obo:NCIT_C37984))
+Declaration(Class(obo:PO_0008037))
+Declaration(Class(obo:PO_0009011))
+Declaration(Class(obo:PO_0009012))
+Declaration(Class(obo:PO_0009085))
+Declaration(Class(obo:PO_0009086))
+Declaration(Class(obo:PO_0009087))
+Declaration(Class(obo:PO_0020006))
 Declaration(Class(obo:hancestro_0003))
 Declaration(Class(obo:hancestro_0015))
 Declaration(Class(<http://purl.obolibrary.org/obo/FOODON:03415183>))
-Declaration(Class(<http://purl.obolibrary.org/obo/NCBITaxon:4281>))
 Declaration(Class(<https://www.w3.org/TR/owl-time/#time:Duration>))
 Declaration(Class(<https://www.w3.org/TR/owl-time/#time:Instant>))
 Declaration(Class(<https://www.w3.org/TR/owl-time/#time:Interval>))
@@ -3689,6 +3700,8 @@ Declaration(AnnotationProperty(<http://purl.obolibrary.org/obo/chebi/inchikey>))
 Declaration(AnnotationProperty(<http://purl.obolibrary.org/obo/chebi/mass>))
 Declaration(AnnotationProperty(<http://purl.obolibrary.org/obo/chebi/monoisotopicmass>))
 Declaration(AnnotationProperty(<http://purl.obolibrary.org/obo/chebi/smiles>))
+Declaration(AnnotationProperty(dcterms:description))
+Declaration(AnnotationProperty(dcterms:title))
 Declaration(AnnotationProperty(<http://www.ebi.ac.uk/efo/MSH_definition_citation>))
 Declaration(AnnotationProperty(go:default-namespace))
 Declaration(AnnotationProperty(<http://xmlns.com/foaf/0.1/mbox>))
@@ -3782,6 +3795,10 @@ DataPropertyRange(<https://www.w3.org/TR/owl-time/#time:numericDuration> xsd:dec
 ############################
 #   Classes
 ############################
+
+# Class: obo:AGRO_00002071 (agricultural process)
+
+SubClassOf(obo:AGRO_00002071 obo:COB_0000035)
 
 # Class: obo:AfPO_0000188 (Eastern African)
 
@@ -5875,7 +5892,7 @@ SubClassOf(obo:ENVO_00010483 obo:BFO_0000024)
 
 # Class: obo:ENVO_03501267 (peeler)
 
-SubClassOf(obo:ENVO_03501267 obo:OBI_0000968)
+SubClassOf(obo:ENVO_03501267 obo:COB_0001300)
 
 # Class: obo:FAO_0000001 (fungal structure)
 
@@ -5929,15 +5946,6 @@ AnnotationAssertion(rdfs:comment obo:FOODON_00001002 "The FoodOn \"food product\
 AnnotationAssertion(rdfs:label obo:FOODON_00001002 "food product"@en)
 SubClassOf(obo:FOODON_00001002 obo:FOODON_00002403)
 
-# Class: obo:FOODON_00001015 (plant food product)
-
-AnnotationAssertion(obo:IAO_0000114 obo:FOODON_00001015 obo:IAO_0000122)
-AnnotationAssertion(obo:IAO_0000115 obo:FOODON_00001015 "A food product which has as a defining ingredient some plant material."@en)
-AnnotationAssertion(dce:contributor obo:FOODON_00001015 <https://orcid.org/0000-0002-8844-9165>)
-AnnotationAssertion(rdfs:label obo:FOODON_00001015 "plant food product"@en)
-EquivalentClasses(obo:FOODON_00001015 ObjectIntersectionOf(obo:FOODON_00004331 ObjectSomeValuesFrom(obo:RO_0001000 obo:PO_0000003)))
-SubClassOf(obo:FOODON_00001015 obo:FOODON_00001002)
-
 # Class: obo:FOODON_00001051 (fermented rice beverage)
 
 SubClassOf(obo:FOODON_00001051 ObjectSomeValuesFrom(obo:RO_0001000 obo:FOODON_03411322))
@@ -5960,6 +5968,11 @@ AnnotationAssertion(obo:IAO_0000114 obo:FOODON_00001087 obo:IAO_0000122)
 AnnotationAssertion(obo:IAO_0000117 obo:FOODON_00001087 "Damion Dooley"@en)
 SubClassOf(obo:FOODON_00001087 obo:FOODON_03310387)
 
+# Class: obo:FOODON_00001144 (yeast material)
+
+AnnotationAssertion(obo:IAO_0000115 obo:FOODON_00001144 "Fungus material which is composed of yeast."@en)
+AnnotationAssertion(rdfs:label obo:FOODON_00001144 "yeast material"@en)
+
 # Class: obo:FOODON_00001181 (food (cooked))
 
 AnnotationAssertion(obo:IAO_0000114 obo:FOODON_00001181 obo:IAO_0000428)
@@ -5971,11 +5984,11 @@ AnnotationAssertion(go:hasExactSynonym obo:FOODON_00001181 "cooked"@en)
 AnnotationAssertion(rdfs:label obo:FOODON_00001181 "food (cooked)"@en)
 SubClassOf(obo:FOODON_00001181 obo:FOODON_00002645)
 
-# Class: obo:FOODON_00001184 (algal material)
+# Class: obo:FOODON_00001184 (algae material)
 
 AnnotationAssertion(obo:IAO_0000115 obo:FOODON_00001184 "Material which derives from algae (including single-celled microalgae and  multicellular macroalgae)."@en)
 AnnotationAssertion(go:hasDbXref obo:FOODON_00001184 siren:F10419)
-AnnotationAssertion(rdfs:label obo:FOODON_00001184 "algal material"@en)
+AnnotationAssertion(rdfs:label obo:FOODON_00001184 "algae material"@en)
 AnnotationAssertion(rdfs:seeAlso obo:FOODON_00001184 <https://ungc-communications-assets.s3.amazonaws.com/docs/publications/The-Seaweed-Manifesto.pdf>)
 EquivalentClasses(obo:FOODON_00001184 ObjectIntersectionOf(obo:FOODON_03420116 ObjectSomeValuesFrom(obo:RO_0001000 obo:FOODON_03411301)))
 SubClassOf(obo:FOODON_00001184 obo:FOODON_03420116)
@@ -6114,6 +6127,11 @@ EquivalentClasses(obo:FOODON_00002287 ObjectIntersectionOf(obo:FOODON_00001073 O
 
 SubClassOf(obo:FOODON_00002322 ObjectSomeValuesFrom(obo:RO_0001000 obo:FOODON_03411236))
 
+# Class: obo:FOODON_00002369 (yeast food product)
+
+AnnotationAssertion(obo:IAO_0000115 obo:FOODON_00002369 "A food product which has yeast as a defining ingredient."@en)
+SubClassOf(obo:FOODON_00002369 obo:FOODON_00001144)
+
 # Class: obo:FOODON_00002371 (yellowfin tuna food product)
 
 SubClassOf(obo:FOODON_00002371 obo:FOODON_00002320)
@@ -6209,6 +6227,10 @@ SubClassOf(obo:FOODON_00002418 ObjectSomeValuesFrom(obo:RO_0002353 obo:FOODON_00
 # Class: obo:FOODON_00002445 (needlefish food product)
 
 SubClassOf(obo:FOODON_00002445 ObjectSomeValuesFrom(obo:RO_0001000 obo:FOODON_03411887))
+
+# Class: obo:FOODON_00002451 (food transformation process)
+
+SubClassOf(obo:FOODON_00002451 obo:COB_0000035)
 
 # Class: obo:FOODON_00002452 (invertebrate animal)
 
@@ -7221,13 +7243,13 @@ AnnotationAssertion(go:hasExactSynonym obo:FOODON_00002910 "wild caught organism
 AnnotationAssertion(rdfs:label obo:FOODON_00002910 "wild harvested animal"@en)
 SubClassOf(obo:FOODON_00002910 obo:FOODON_00003374)
 
-# Class: obo:FOODON_00002914 (fish, spariform)
+# Class: obo:FOODON_00002914 (spariform fish)
 
 AnnotationAssertion(obo:IAO_0000117 obo:FOODON_00002914 <http://orcid.org/0000-0002-8844-9165>)
 AnnotationAssertion(dcterms:date obo:FOODON_00002914 "2019-08-09T21:00:41Z"^^xsd:dateTime)
 AnnotationAssertion(go:hasDbXref obo:FOODON_00002914 obo:NCBITaxon_1489931)
 AnnotationAssertion(go:hasExactSynonym obo:FOODON_00002914 "Spariformes"@swg)
-AnnotationAssertion(rdfs:label obo:FOODON_00002914 "fish, spariform"@en)
+AnnotationAssertion(rdfs:label obo:FOODON_00002914 "spariform fish"@en)
 SubClassOf(obo:FOODON_00002914 obo:FOODON_03411365)
 
 # Class: obo:FOODON_00002915 (threadfin bream family)
@@ -7509,6 +7531,7 @@ SubClassOf(obo:FOODON_00003002 obo:FOODON_03411295)
 # Class: obo:FOODON_00003004 (animal)
 
 AnnotationAssertion(obo:IAO_0000600 obo:FOODON_00003004 "A multicellular eukaryotic heterotrophic organism within the kingdom Animalia."@en)
+SubClassOf(obo:FOODON_00003004 obo:COB_0000022)
 SubClassOf(obo:FOODON_00003004 obo:FOODON_03420164)
 
 # Class: obo:FOODON_00003009 (kabocha squash plant)
@@ -8295,7 +8318,7 @@ AnnotationAssertion(obo:IAO_0000117 obo:FOODON_00003369 <http://orcid.org/0000-0
 AnnotationAssertion(obo:IAO_0000119 obo:FOODON_00003369 <https://animals.mom.me/what-is-a-gilt-pig-6245962.html>)
 AnnotationAssertion(dcterms:date obo:FOODON_00003369 "2020-07-31T19:33:04Z"^^xsd:dateTime)
 AnnotationAssertion(rdfs:label obo:FOODON_00003369 "gilt"@en)
-SubClassOf(obo:FOODON_00003369 obo:FOODON_03411136)
+SubClassOf(obo:FOODON_00003369 obo:FOODON_02021651)
 
 # Class: obo:FOODON_00003370 (grower pig)
 
@@ -8306,7 +8329,7 @@ AnnotationAssertion(obo:IAO_0000119 obo:FOODON_00003370 <https://en.wikipedia.or
 AnnotationAssertion(dcterms:date obo:FOODON_00003370 "2020-07-31T19:33:31Z"^^xsd:dateTime)
 AnnotationAssertion(go:hasBroadSynonym obo:FOODON_00003370 "grower"@en)
 AnnotationAssertion(rdfs:label obo:FOODON_00003370 "grower pig"@en)
-SubClassOf(obo:FOODON_00003370 obo:FOODON_03411136)
+SubClassOf(obo:FOODON_00003370 obo:FOODON_02021651)
 
 # Class: obo:FOODON_00003371 (finisher pig)
 
@@ -8317,7 +8340,7 @@ AnnotationAssertion(obo:IAO_0000119 obo:FOODON_00003371 <https://en.wikipedia.or
 AnnotationAssertion(dcterms:date obo:FOODON_00003371 "2020-07-31T19:33:46Z"^^xsd:dateTime)
 AnnotationAssertion(go:hasBroadSynonym obo:FOODON_00003371 "finisher"@en)
 AnnotationAssertion(rdfs:label obo:FOODON_00003371 "finisher pig"@en)
-SubClassOf(obo:FOODON_00003371 obo:FOODON_03411136)
+SubClassOf(obo:FOODON_00003371 obo:FOODON_00003370)
 
 # Class: obo:FOODON_00003372 (suckler pig)
 
@@ -8329,7 +8352,7 @@ AnnotationAssertion(dcterms:date obo:FOODON_00003372 "2020-07-31T19:34:01Z"^^xsd
 AnnotationAssertion(go:hasBroadSynonym obo:FOODON_00003372 "suckler"@en)
 AnnotationAssertion(go:hasExactSynonym obo:FOODON_00003372 "suckling pig"@en)
 AnnotationAssertion(rdfs:label obo:FOODON_00003372 "suckler pig"@en)
-SubClassOf(obo:FOODON_00003372 obo:FOODON_03411136)
+SubClassOf(obo:FOODON_00003372 obo:FOODON_02021651)
 
 # Class: obo:FOODON_00003373 (weaner pig)
 
@@ -8340,7 +8363,7 @@ AnnotationAssertion(obo:IAO_0000119 obo:FOODON_00003373 <https://en.wikipedia.or
 AnnotationAssertion(dcterms:date obo:FOODON_00003373 "2020-07-31T19:34:28Z"^^xsd:dateTime)
 AnnotationAssertion(go:hasBroadSynonym obo:FOODON_00003373 "weaner"@en)
 AnnotationAssertion(rdfs:label obo:FOODON_00003373 "weaner pig"@en)
-SubClassOf(obo:FOODON_00003373 obo:FOODON_03411136)
+SubClassOf(obo:FOODON_00003373 obo:FOODON_02021651)
 
 # Class: obo:FOODON_00003374 (harvested food material)
 
@@ -9443,11 +9466,6 @@ SubClassOf(obo:FOODON_00003727 obo:FOODON_00002492)
 
 AnnotationAssertion(obo:IAO_0000117 obo:FOODON_00003730 <http://orcid.org/0000-0002-8844-9165>)
 SubClassOf(obo:FOODON_00003730 obo:FOODON_00003291)
-
-# Class: obo:FOODON_00003732 (yuzu)
-
-AnnotationAssertion(obo:IAO_0000117 obo:FOODON_00003732 <http://orcid.org/0000-0002-8844-9165>)
-SubClassOf(obo:FOODON_00003732 obo:FOODON_03301337)
 
 # Class: obo:FOODON_00003734 (rye kernel)
 
@@ -10809,11 +10827,6 @@ AnnotationAssertion(dcterms:date obo:FOODON_00004229 "2022-02-19T06:30:13Z"^^xsd
 AnnotationAssertion(rdfs:label obo:FOODON_00004229 "oheloberry (raw)"@en)
 SubClassOf(obo:FOODON_00004229 obo:FOODON_00002872)
 
-# Class: obo:FOODON_00004242 (animal food product)
-
-SubClassOf(obo:FOODON_00004242 obo:FOODON_00001002)
-SubClassOf(obo:FOODON_00004242 obo:FOODON_03420164)
-
 # Class: obo:FOODON_00004243 (roselle calyx)
 
 AnnotationAssertion(obo:IAO_0000117 obo:FOODON_00004243 <http://orcid.org/0000-0002-8844-9165>)
@@ -10841,7 +10854,7 @@ AnnotationAssertion(obo:IAO_0000117 obo:FOODON_00004272 <http://orcid.org/0000-0
 AnnotationAssertion(dcterms:date obo:FOODON_00004272 "2022-08-12T04:23:10Z"^^xsd:dateTime)
 AnnotationAssertion(rdfs:label obo:FOODON_00004272 "ingredient"@en)
 AnnotationAssertion(rdfs:seeAlso obo:FOODON_00004272 <https://github.com/FoodOntology/foodon/issues/57>)
-SubClassOf(obo:FOODON_00004272 obo:OBI_0000047)
+SubClassOf(obo:FOODON_00004272 obo:COB_0000026)
 
 # Class: obo:FOODON_00004273 (cow teat skin)
 
@@ -11028,12 +11041,11 @@ AnnotationAssertion(obo:IAO_0000115 obo:FOODON_00004297 "A lactating sow that fe
 AnnotationAssertion(dcterms:contributor obo:FOODON_00004297 <https://orcid.org/0000-0002-1107-9135>)
 AnnotationAssertion(dcterms:date obo:FOODON_00004297 "2022-08-24T14:38:32Z"^^xsd:dateTime)
 AnnotationAssertion(rdfs:label obo:FOODON_00004297 "nursing pig"@en)
-SubClassOf(obo:FOODON_00004297 obo:FOODON_03411136)
+SubClassOf(obo:FOODON_00004297 obo:FOODON_02021651)
 
 # Class: obo:FOODON_00004298 (poultry)
 
 AnnotationAssertion(obo:IAO_0000600 obo:FOODON_00004298 "A domesticated bird that is kept by humans for its eggs, meat or feathers. Chickens, turkeys, quail, ducks, and geese are only called poultry if they aren't reared in the wild."@en)
-SubClassOf(obo:FOODON_00004298 obo:FOODON_00002616)
 
 # Class: obo:FOODON_00004299 (chick)
 
@@ -11139,7 +11151,7 @@ AnnotationAssertion(obo:IAO_0000115 obo:FOODON_00004314 "A material processing i
 AnnotationAssertion(obo:IAO_0000117 obo:FOODON_00004314 <http://orcid.org/0000-0002-8844-9165>)
 AnnotationAssertion(dcterms:date obo:FOODON_00004314 "2022-10-22T23:19:14Z"^^xsd:dateTime)
 AnnotationAssertion(rdfs:label obo:FOODON_00004314 "heating liquid"@en)
-SubClassOf(obo:FOODON_00004314 obo:OBI_0000094)
+SubClassOf(obo:FOODON_00004314 obo:COB_0000110)
 
 # Class: obo:FOODON_00004315 (heating liquid to boiling point)
 
@@ -12111,8 +12123,8 @@ SubClassOf(obo:FOODON_00005160 obo:FOODON_00005147)
 
 # Class: obo:FOODON_00005161 (unpalatable food)
 
-AnnotationAssertion(obo:IAO_0000115 obo:FOODON_00005161 <https://en.wiktionary.org/wiki/unpalatable>)
 AnnotationAssertion(obo:IAO_0000115 obo:FOODON_00005161 "Food which is unpleasant to taste."@en)
+AnnotationAssertion(obo:IAO_0000119 obo:FOODON_00005161 <https://en.wiktionary.org/wiki/unpalatable>)
 AnnotationAssertion(dcterms:contributor obo:FOODON_00005161 <https://orcid.org/0000-0002-8844-9165>)
 AnnotationAssertion(dcterms:date obo:FOODON_00005161 "2024-07-10T22:36:00Z"^^xsd:dateTime)
 AnnotationAssertion(rdfs:label obo:FOODON_00005161 "unpalatable food"@en)
@@ -12508,13 +12520,6 @@ AnnotationAssertion(dcterms:date obo:FOODON_00005711 "2025-11-10T20:36:21Z"^^xsd
 AnnotationAssertion(rdfs:label obo:FOODON_00005711 "oyster material"@en)
 SubClassOf(obo:FOODON_00005711 obo:FOODON_00005705)
 
-# Class: obo:FOODON_00005712 (scallop material)
-
-AnnotationAssertion(dcterms:contributor obo:FOODON_00005712 <https://orcid.org/0000-0002-8844-9165>)
-AnnotationAssertion(dcterms:date obo:FOODON_00005712 "2025-11-10T20:36:29Z"^^xsd:dateTime)
-AnnotationAssertion(rdfs:label obo:FOODON_00005712 "scallop material"@en)
-SubClassOf(obo:FOODON_00005712 obo:FOODON_00005705)
-
 # Class: obo:FOODON_00005713 (archaeogastropod material)
 
 AnnotationAssertion(dcterms:contributor obo:FOODON_00005713 <https://orcid.org/0000-0002-8844-9165>)
@@ -12535,22 +12540,6 @@ AnnotationAssertion(dcterms:contributor obo:FOODON_00005715 <https://orcid.org/0
 AnnotationAssertion(dcterms:date obo:FOODON_00005715 "2025-11-10T22:40:40Z"^^xsd:dateTime)
 AnnotationAssertion(rdfs:label obo:FOODON_00005715 "neogastropod material"@en)
 SubClassOf(obo:FOODON_00005715 obo:FOODON_00005706)
-
-# Class: obo:FOODON_00005716 (wholesale food)
-
-AnnotationAssertion(obo:IAO_0000115 obo:FOODON_00005716 "A food product which is available for aquisition by wholesale supply operators and retailers."@en)
-AnnotationAssertion(dcterms:contributor obo:FOODON_00005716 <https://orcid.org/0000-0002-8844-9165>)
-AnnotationAssertion(dcterms:date obo:FOODON_00005716 "2025-11-11T22:11:56Z"^^xsd:dateTime)
-AnnotationAssertion(rdfs:label obo:FOODON_00005716 "wholesale food"@en)
-SubClassOf(obo:FOODON_00005716 obo:FOODON_00001002)
-
-# Class: obo:FOODON_00005717 (retail food)
-
-AnnotationAssertion(obo:IAO_0000115 obo:FOODON_00005717 "A food product which is available for aquisition by consumers."@en)
-AnnotationAssertion(dcterms:contributor obo:FOODON_00005717 <https://orcid.org/0000-0002-8844-9165>)
-AnnotationAssertion(dcterms:date obo:FOODON_00005717 "2025-11-11T22:20:32Z"^^xsd:dateTime)
-AnnotationAssertion(rdfs:label obo:FOODON_00005717 "retail food"@en)
-SubClassOf(obo:FOODON_00005717 obo:FOODON_00001002)
 
 # Class: obo:FOODON_00005719 (animal harvesting)
 
@@ -12574,7 +12563,7 @@ AnnotationAssertion(obo:IAO_0000115 obo:FOODON_00005721 "A storage process invol
 AnnotationAssertion(dcterms:contributor obo:FOODON_00005721 <https://orcid.org/0000-0002-8844-9165>)
 AnnotationAssertion(dcterms:date obo:FOODON_00005721 "2025-11-13T08:02:49Z"^^xsd:dateTime)
 AnnotationAssertion(rdfs:label obo:FOODON_00005721 "food storage"@en)
-SubClassOf(obo:FOODON_00005721 obo:OBI_0000011)
+SubClassOf(obo:FOODON_00005721 obo:COB_0000035)
 
 # Class: obo:FOODON_00005722 (food aquisition)
 
@@ -12582,14 +12571,53 @@ AnnotationAssertion(obo:IAO_0000115 obo:FOODON_00005722 "A planned process in wh
 AnnotationAssertion(dcterms:contributor obo:FOODON_00005722 <https://orcid.org/0000-0002-8844-9165>)
 AnnotationAssertion(dcterms:date obo:FOODON_00005722 "2025-11-13T08:04:33Z"^^xsd:dateTime)
 AnnotationAssertion(rdfs:label obo:FOODON_00005722 "food aquisition"@en)
-SubClassOf(obo:FOODON_00005722 obo:OBI_0000011)
+SubClassOf(obo:FOODON_00005722 obo:COB_0000035)
 
 # Class: obo:FOODON_00005723 (food distribution)
 
 AnnotationAssertion(dcterms:contributor obo:FOODON_00005723 <https://orcid.org/0000-0002-8844-9165>)
 AnnotationAssertion(dcterms:date obo:FOODON_00005723 "2025-11-13T08:07:27Z"^^xsd:dateTime)
 AnnotationAssertion(rdfs:label obo:FOODON_00005723 "food distribution"@en)
-SubClassOf(obo:FOODON_00005723 obo:OBI_0000011)
+SubClassOf(obo:FOODON_00005723 obo:COB_0000035)
+
+# Class: obo:FOODON_00005724 (salmoniform fish material)
+
+AnnotationAssertion(dcterms:contributor obo:FOODON_00005724 <https://orcid.org/0000-0002-8844-9165>)
+AnnotationAssertion(dcterms:date obo:FOODON_00005724 "2025-11-14T07:06:50Z"^^xsd:dateTime)
+AnnotationAssertion(rdfs:label obo:FOODON_00005724 "salmoniform fish material"@en)
+SubClassOf(obo:FOODON_00005724 obo:FOODON_00005674)
+
+# Class: obo:FOODON_00005725 (osmeriform fish material)
+
+AnnotationAssertion(dcterms:contributor obo:FOODON_00005725 <https://orcid.org/0000-0002-8844-9165>)
+AnnotationAssertion(dcterms:date obo:FOODON_00005725 "2025-11-14T07:08:47Z"^^xsd:dateTime)
+AnnotationAssertion(rdfs:label obo:FOODON_00005725 "osmeriform fish material"@en)
+SubClassOf(obo:FOODON_00005725 obo:FOODON_00005674)
+
+# Class: obo:FOODON_00005726 (gadiform fish material)
+
+AnnotationAssertion(dcterms:contributor obo:FOODON_00005726 <https://orcid.org/0000-0002-8844-9165>)
+AnnotationAssertion(dcterms:date obo:FOODON_00005726 "2025-11-14T07:28:25Z"^^xsd:dateTime)
+AnnotationAssertion(rdfs:label obo:FOODON_00005726 "gadiform fish material"@en)
+SubClassOf(obo:FOODON_00005726 obo:FOODON_00005674)
+
+# Class: obo:FOODON_00005727 (clupeiform fish material)
+
+AnnotationAssertion(dcterms:contributor obo:FOODON_00005727 <https://orcid.org/0000-0002-8844-9165>)
+AnnotationAssertion(dcterms:date obo:FOODON_00005727 "2025-11-14T07:32:49Z"^^xsd:dateTime)
+AnnotationAssertion(rdfs:label obo:FOODON_00005727 "clupeiform fish material"@en)
+SubClassOf(obo:FOODON_00005727 obo:FOODON_00005674)
+
+# Class: obo:FOODON_00005728 (appropriate food role)
+
+AnnotationAssertion(obo:IAO_0000115 obo:FOODON_00005728 "A role of a material entity of a type that is generally considered by some agent as appropriate for consumption by ingestion in order to fulfill nutritional needs or to provide organoleptic experiences."@en)
+AnnotationAssertion(obo:IAO_0000119 obo:FOODON_00005728 <https://ceur-ws.org/Vol-3882/ifow-1.pdf>)
+AnnotationAssertion(dcterms:contributor obo:FOODON_00005728 <https://orcid.org/0000-0001-5500-6539>)
+AnnotationAssertion(dcterms:contributor obo:FOODON_00005728 <https://orcid.org/0000-0002-4690-1221>)
+AnnotationAssertion(dcterms:contributor obo:FOODON_00005728 <https://orcid.org/0000-0002-8844-9165>)
+AnnotationAssertion(dcterms:date obo:FOODON_00005728 "2025-11-14T09:02:14Z"^^xsd:dateTime)
+AnnotationAssertion(rdfs:label obo:FOODON_00005728 "appropriate food role"@en)
+SubClassOf(obo:FOODON_00005728 obo:BFO_0000023)
 
 # Class: obo:FOODON_02010014 (animal blood)
 
@@ -12791,10 +12819,6 @@ SubClassOf(obo:FOODON_02020149 obo:FOODON_02020150)
 
 SubClassOf(obo:FOODON_02020315 obo:FOODON_02020314)
 
-# Class: obo:FOODON_02020805 (scallop)
-
-SubClassOf(obo:FOODON_02020805 obo:FOODON_03412113)
-
 # Class: obo:FOODON_02020814 (antelope food product)
 
 SubClassOf(obo:FOODON_02020814 obo:FOODON_02020815)
@@ -12802,17 +12826,6 @@ SubClassOf(obo:FOODON_02020814 obo:FOODON_02020815)
 # Class: obo:FOODON_02021409 (deer food product)
 
 SubClassOf(obo:FOODON_02021409 obo:FOODON_02021410)
-
-# Class: obo:FOODON_02021535 (donkey)
-
-AnnotationAssertion(go:hasDbXref obo:FOODON_02021535 <http://eol.org/pages/328647>)
-AnnotationAssertion(go:hasDbXref obo:FOODON_02021535 <http://www.itis.gov/servlet/SingleRpt/SingleRpt?search_topic=TSN&search_value=180690>)
-AnnotationAssertion(go:hasDbXref obo:FOODON_02021535 langual:B2096)
-AnnotationAssertion(go:hasDbXref obo:FOODON_02021535 "MSW3:14100004")
-AnnotationAssertion(go:hasNarrowSynonym obo:FOODON_02021535 "Equus asinus Linnaeus, 1758")
-AnnotationAssertion(go:hasSynonym obo:FOODON_02021535 "ass"@en)
-AnnotationAssertion(go:hasSynonym obo:FOODON_02021535 "burro"@en)
-AnnotationAssertion(go:hasSynonym obo:FOODON_02021535 "equus asinus"@en)
 
 # Class: obo:FOODON_02021548 (horse)
 
@@ -12839,10 +12852,6 @@ SubClassOf(obo:FOODON_02021757 obo:FOODON_00001038)
 # Class: obo:FOODON_02021765 (bear food product)
 
 SubClassOf(obo:FOODON_02021765 obo:FOODON_02021766)
-
-# Class: obo:FOODON_02021821 (catfish material)
-
-SubClassOf(obo:FOODON_02021821 obo:FOODON_00002240)
 
 # Class: obo:FOODON_02021834 (nile tilapia material)
 
@@ -19559,7 +19568,7 @@ AnnotationAssertion(rdfs:comment obo:FOODON_03311126 "SIREN DB annotation:
 AnnotationAssertion(rdfs:label obo:FOODON_03311126 "food (raw)"@en)
 EquivalentClasses(obo:FOODON_03311126 ObjectIntersectionOf(obo:FOODON_00002454 ObjectSomeValuesFrom(obo:RO_0000053 obo:FOODON_00004348)))
 SubClassOf(obo:FOODON_03311126 obo:FOODON_00002454)
-SubClassOf(obo:FOODON_03311126 ObjectSomeValuesFrom(obo:RO_0002162 obo:OBI_0100026))
+SubClassOf(obo:FOODON_03311126 ObjectSomeValuesFrom(obo:RO_0002162 obo:COB_0000022))
 
 # Class: obo:FOODON_03311154 (chocolate icing aspartame sweetened)
 
@@ -21162,7 +21171,7 @@ AnnotationAssertion(go:hasSynonym obo:FOODON_03411019 "vaccinium vitis-idaea"@en
 AnnotationAssertion(rdfs:label obo:FOODON_03411019 "lingonberry plant"@en)
 SubClassOf(obo:FOODON_03411019 obo:FOODON_03411614)
 
-# Class: obo:FOODON_03411020 (fish, acipenseriform)
+# Class: obo:FOODON_03411020 (acipenseriform fish)
 
 AnnotationAssertion(obo:IAO_0000114 obo:FOODON_03411020 obo:IAO_0000428)
 AnnotationAssertion(obo:IAO_0000115 obo:FOODON_03411020 "Acipenseriformes is an order of basal ray-finned fishes that includes the sturgeons and paddlefishes, as well as some extinct families. [https://en.wikipedia.org/wiki/Acipenseriformes]"@en)
@@ -21170,7 +21179,7 @@ AnnotationAssertion(go:hasDbXref obo:FOODON_03411020 <http://eol.org/pages/8300>
 AnnotationAssertion(go:hasDbXref obo:FOODON_03411020 langual:B1020)
 AnnotationAssertion(go:hasSynonym obo:FOODON_03411020 "acipenseriformes"@en)
 AnnotationAssertion(go:hasSynonym obo:FOODON_03411020 "aciperseriformes"@en)
-AnnotationAssertion(rdfs:label obo:FOODON_03411020 "fish, acipenseriform"@en)
+AnnotationAssertion(rdfs:label obo:FOODON_03411020 "acipenseriform fish"@en)
 SubClassOf(obo:FOODON_03411020 obo:FOODON_03411365)
 
 # Class: obo:FOODON_03411021 (fish or lower water animal)
@@ -21194,7 +21203,7 @@ AnnotationAssertion(go:hasDbXref obo:FOODON_03411022 langual:B1022)
 AnnotationAssertion(rdfs:label obo:FOODON_03411022 "tropical or subtropical nut producing plant"@en)
 SubClassOf(obo:FOODON_03411022 obo:FOODON_03411213)
 
-# Class: obo:FOODON_03411023 (fish, pleuronectiform)
+# Class: obo:FOODON_03411023 (pleuronectiform fish)
 
 AnnotationAssertion(obo:IAO_0000114 obo:FOODON_03411023 obo:IAO_0000428)
 AnnotationAssertion(obo:IAO_0000115 obo:FOODON_03411023 "A flatfish is a member of the order Pleuronectiformes of ray-finned demersal fishes, also called the Heterosomata, sometimes classified as a suborder of Perciformes. In many species, both eyes lie on one side of the head, one or the other migrating through or around the head during development. Some species face their left sides upward, some face their right sides upward, and others face either side upward. [https://en.wikipedia.org/wiki/Flatfish]"@en)
@@ -21206,7 +21215,7 @@ AnnotationAssertion(go:hasSynonym obo:FOODON_03411023 "flatfish"@en)
 AnnotationAssertion(go:hasSynonym obo:FOODON_03411023 "flatfish, flounder"@en)
 AnnotationAssertion(go:hasSynonym obo:FOODON_03411023 "flounders"@en)
 AnnotationAssertion(go:hasSynonym obo:FOODON_03411023 "pleuronectiformes"@en)
-AnnotationAssertion(rdfs:label obo:FOODON_03411023 "fish, pleuronectiform"@en)
+AnnotationAssertion(rdfs:label obo:FOODON_03411023 "pleuronectiform fish"@en)
 SubClassOf(obo:FOODON_03411023 obo:FOODON_03411365)
 
 # Class: obo:FOODON_03411024 (tropical or subtropical fruit producing plant)
@@ -21954,8 +21963,8 @@ AnnotationAssertion(obo:IAO_0000114 obo:FOODON_03411142 obo:IAO_0000428)
 AnnotationAssertion(obo:IAO_0000115 obo:FOODON_03411142 "Aquatic animals other than fish and shellfish"@en)
 AnnotationAssertion(go:hasDbXref obo:FOODON_03411142 langual:B1142)
 AnnotationAssertion(rdfs:label obo:FOODON_03411142 "aquatic invertebrate animal (excluding shellfish)"@en)
-EquivalentClasses(obo:FOODON_03411142 ObjectUnionOf(obo:FOODON_03412115 obo:FOODON_03412409 obo:FOODON_03414466))
 SubClassOf(obo:FOODON_03411142 obo:FOODON_00002581)
+SubClassOf(obo:FOODON_03411142 ObjectUnionOf(obo:FOODON_03412115 obo:FOODON_03412409 obo:FOODON_03414466))
 
 # Class: obo:FOODON_03411144 (flyingfish)
 
@@ -22051,14 +22060,14 @@ AnnotationAssertion(go:hasSynonym obo:FOODON_03411156 "fabaceae"@en)
 AnnotationAssertion(rdfs:label obo:FOODON_03411156 "pod or seed vegetable plant"@en)
 SubClassOf(obo:FOODON_03411156 obo:FOODON_03411057)
 
-# Class: obo:FOODON_03411157 (fish, gadiform)
+# Class: obo:FOODON_03411157 (gadiform fish)
 
 AnnotationAssertion(obo:IAO_0000114 obo:FOODON_03411157 obo:IAO_0000428)
 AnnotationAssertion(obo:IAO_0000115 obo:FOODON_03411157 "Gadiformes are an order of ray-finned fish, also called the Anacanthini, that includes the cod and its allies. Many major food fish are in this order. They are found in marine waters throughout the world and the vast majority of the species are found in temperate or colder regions (tropical species are typically deep-water). A few species may enter estuaries but only one, the burbot (*Lota lota*), is a freshwater fish. [https://en.wikipedia.org/wiki/Gadiformes]"@en)
 AnnotationAssertion(go:hasDbXref obo:FOODON_03411157 <http://eol.org/pages/5496>)
 AnnotationAssertion(go:hasDbXref obo:FOODON_03411157 langual:B1157)
 AnnotationAssertion(go:hasSynonym obo:FOODON_03411157 "gadiformes"@en)
-AnnotationAssertion(rdfs:label obo:FOODON_03411157 "fish, gadiform"@en)
+AnnotationAssertion(rdfs:label obo:FOODON_03411157 "gadiform fish"@en)
 SubClassOf(obo:FOODON_03411157 obo:FOODON_03411365)
 
 # Class: obo:FOODON_03411159 (ribes berry plant)
@@ -23710,6 +23719,7 @@ AnnotationAssertion(obo:IAO_0000115 obo:FOODON_03411345 "Yeasts are eukaryotic m
 AnnotationAssertion(obo:IAO_0000119 obo:FOODON_03411345 "WIKIPEDIA:Yeast")
 AnnotationAssertion(go:hasDbXref obo:FOODON_03411345 langual:B1345)
 AnnotationAssertion(rdfs:label obo:FOODON_03411345 "yeast"@en)
+SubClassOf(obo:FOODON_03411345 obo:FOODON_00001144)
 SubClassOf(obo:FOODON_03411345 obo:FOODON_03411261)
 
 # Class: obo:FOODON_03411346 (quail)
@@ -23872,6 +23882,7 @@ AnnotationAssertion(go:hasDbXref obo:FOODON_03411365 langual:B1365)
 AnnotationAssertion(go:hasExactSynonym obo:FOODON_03411365 "fish, bony"@en)
 AnnotationAssertion(go:hasSynonym obo:FOODON_03411365 "osteichthyes"@en)
 AnnotationAssertion(rdfs:label obo:FOODON_03411365 "bony fish"@en)
+SubClassOf(obo:FOODON_03411365 obo:FOODON_00005674)
 SubClassOf(obo:FOODON_03411365 obo:FOODON_03411222)
 
 # Class: obo:FOODON_03411366 (carob bean plant)
@@ -23958,6 +23969,7 @@ AnnotationAssertion(go:hasDbXref obo:FOODON_03411374 <http://eol.org/pages/25988
 AnnotationAssertion(go:hasDbXref obo:FOODON_03411374 langual:B1374)
 AnnotationAssertion(go:hasSynonym obo:FOODON_03411374 "crustacea"@en)
 AnnotationAssertion(rdfs:label obo:FOODON_03411374 "crustacean"@en)
+SubClassOf(obo:FOODON_03411374 obo:FOODON_00005704)
 SubClassOf(obo:FOODON_03411374 obo:FOODON_03411433)
 
 # Class: obo:FOODON_03411375 (wild rice plant)
@@ -25052,7 +25064,6 @@ SubClassOf(obo:FOODON_03411502 obo:FOODON_00004371)
 
 AnnotationAssertion(go:hasSynonym obo:FOODON_03411505 "homarus spp."@en)
 AnnotationAssertion(go:hasSynonym obo:FOODON_03411505 "panulirus spp."@en)
-SubClassOf(obo:FOODON_03411505 obo:FOODON_03411998)
 
 # Class: obo:FOODON_03411506 (albacore)
 
@@ -25490,24 +25501,24 @@ AnnotationAssertion(go:hasDbXref obo:FOODON_03411568 langual:B1568)
 AnnotationAssertion(rdfs:label obo:FOODON_03411568 "apple banana plant"@en)
 SubClassOf(obo:FOODON_03411568 obo:NCBITaxon_4640)
 
-# Class: obo:FOODON_03411573 (fish, atheriniform)
+# Class: obo:FOODON_03411573 (atheriniform fish)
 
 AnnotationAssertion(obo:IAO_0000114 obo:FOODON_03411573 obo:IAO_0000428)
 AnnotationAssertion(obo:IAO_0000115 obo:FOODON_03411573 "The Atheriniformes, also known as the silversides, are an order of ray-finned fishes that includes the Old World silversides and several less-familiar families, including the unusual *Phallostethidae*. The order includes at least 354 species. They are found worldwide in tropical and temperate marine and freshwater environments. [https://en.wikipedia.org/wiki/Atheriniformes]"@en)
 AnnotationAssertion(go:hasDbXref obo:FOODON_03411573 <http://eol.org/pages/8268>)
 AnnotationAssertion(go:hasDbXref obo:FOODON_03411573 langual:B1573)
 AnnotationAssertion(go:hasSynonym obo:FOODON_03411573 "atheriniformes"@en)
-AnnotationAssertion(rdfs:label obo:FOODON_03411573 "fish, atheriniform"@en)
+AnnotationAssertion(rdfs:label obo:FOODON_03411573 "atheriniform fish"@en)
 SubClassOf(obo:FOODON_03411573 obo:FOODON_03411365)
 
-# Class: obo:FOODON_03411574 (fish, anguilliform)
+# Class: obo:FOODON_03411574 (anguilliform fish)
 
 AnnotationAssertion(obo:IAO_0000114 obo:FOODON_03411574 obo:IAO_0000428)
 AnnotationAssertion(obo:IAO_0000115 obo:FOODON_03411574 "An eel is any fish belonging to the order Anguilliformes, which consists of four suborders, 20 families, 111 genera and about 800 species. Most eels are predators. The term \"eel\" (originally referring to the European eel) is also used for some other similarly shaped fish, such as electric eels and spiny eels, but these are not members of the Anguilliformes order. [https://en.wikipedia.org/wiki/Eel]"@en)
 AnnotationAssertion(go:hasDbXref obo:FOODON_03411574 <http://eol.org/pages/8280>)
 AnnotationAssertion(go:hasDbXref obo:FOODON_03411574 langual:B1574)
 AnnotationAssertion(go:hasSynonym obo:FOODON_03411574 "anguilliformes"@en)
-AnnotationAssertion(rdfs:label obo:FOODON_03411574 "fish, anguilliform"@en)
+AnnotationAssertion(rdfs:label obo:FOODON_03411574 "anguilliform fish"@en)
 SubClassOf(obo:FOODON_03411574 obo:FOODON_03411365)
 
 # Class: obo:FOODON_03411575 (pacific herring)
@@ -25561,14 +25572,14 @@ AnnotationAssertion(go:hasDbXref obo:FOODON_03411580 langual:B1580)
 AnnotationAssertion(rdfs:label obo:FOODON_03411580 "yellow field corn plant"@en)
 SubClassOf(obo:FOODON_03411580 obo:FOODON_03411379)
 
-# Class: obo:FOODON_03411581 (fish, perciform)
+# Class: obo:FOODON_03411581 (perciform fish)
 
 AnnotationAssertion(obo:IAO_0000114 obo:FOODON_03411581 obo:IAO_0000428)
 AnnotationAssertion(obo:IAO_0000115 obo:FOODON_03411581 "Perciformes, also called the Percomorpha or Acanthopteri, are the most numerous order of vertebrates, containing about 41% of all bony fish. Perciformes means \"perch-like\". They belong to the class of ray-finned fish, and comprise over 10,000 species found in almost all aquatic ecosystems. The order contains about 160 families, which is the most of any order within the vertebrates. [https://en.wikipedia.org/wiki/Perciformes]"@en)
 AnnotationAssertion(go:hasDbXref obo:FOODON_03411581 <http://eol.org/pages/5184>)
 AnnotationAssertion(go:hasDbXref obo:FOODON_03411581 langual:B1581)
 AnnotationAssertion(go:hasSynonym obo:FOODON_03411581 "perciformes"@en)
-AnnotationAssertion(rdfs:label obo:FOODON_03411581 "fish, perciform"@en)
+AnnotationAssertion(rdfs:label obo:FOODON_03411581 "perciform fish"@en)
 SubClassOf(obo:FOODON_03411581 obo:FOODON_03411365)
 
 # Class: obo:FOODON_03411582 (honeydew melon plant)
@@ -25626,16 +25637,16 @@ AnnotationAssertion(rdfs:comment obo:FOODON_03411591 "In the past Rock Cornish g
 AnnotationAssertion(rdfs:label obo:FOODON_03411591 "Rock Cornish game hen"@en)
 SubClassOf(obo:FOODON_03411591 obo:FOODON_03411457)
 
-# Class: obo:FOODON_03411592 (fish, salmoniform)
+# Class: obo:FOODON_03411592 (salmoniform fish)
 
 AnnotationAssertion(obo:IAO_0000114 obo:FOODON_03411592 obo:IAO_0000428)
 AnnotationAssertion(go:hasDbXref obo:FOODON_03411592 <http://eol.org/pages/5157>)
 AnnotationAssertion(go:hasDbXref obo:FOODON_03411592 langual:B1592)
 AnnotationAssertion(go:hasSynonym obo:FOODON_03411592 "salmoniformes"@en)
-AnnotationAssertion(rdfs:label obo:FOODON_03411592 "fish, salmoniform"@en)
+AnnotationAssertion(rdfs:label obo:FOODON_03411592 "salmoniform fish"@en)
 SubClassOf(obo:FOODON_03411592 obo:FOODON_03411365)
 
-# Class: obo:FOODON_03411594 (fish, cypriniform)
+# Class: obo:FOODON_03411594 (cypriniform fish)
 
 AnnotationAssertion(obo:IAO_0000114 obo:FOODON_03411594 obo:IAO_0000428)
 AnnotationAssertion(obo:IAO_0000115 obo:FOODON_03411594 "Cypriniformes is an order of ray-finned fish, including the carps, minnows, loaches and relatives. This order contains 11-12 families, over 400 genera, and more than 4,250 species, with new species being described every few months or so, and new genera being recognized frequently. They are most diverse in southeastern Asia, and are entirely absent from Australia and South America. [https://en.wikipedia.org/wiki/Cypriniformes]"@en)
@@ -25644,7 +25655,7 @@ AnnotationAssertion(go:hasDbXref obo:FOODON_03411594 langual:B1594)
 AnnotationAssertion(go:hasSynonym obo:FOODON_03411594 "cypriniformes"@en)
 AnnotationAssertion(go:hasSynonym obo:FOODON_03411594 "minnow"@en)
 AnnotationAssertion(go:hasSynonym obo:FOODON_03411594 "sucker"@en)
-AnnotationAssertion(rdfs:label obo:FOODON_03411594 "fish, cypriniform"@en)
+AnnotationAssertion(rdfs:label obo:FOODON_03411594 "cypriniform fish"@en)
 SubClassOf(obo:FOODON_03411594 obo:FOODON_03411365)
 
 # Class: obo:FOODON_03411595 (yellow sweet corn plant)
@@ -25663,7 +25674,7 @@ AnnotationAssertion(go:hasSynonym obo:FOODON_03411597 "sweet corn, white"@en)
 AnnotationAssertion(rdfs:label obo:FOODON_03411597 "white sweet corn plant"@en)
 SubClassOf(obo:FOODON_03411597 obo:FOODON_03411380)
 
-# Class: obo:FOODON_03411598 (fish, siluriform)
+# Class: obo:FOODON_03411598 (siluriform fish)
 
 AnnotationAssertion(obo:IAO_0000114 obo:FOODON_03411598 obo:IAO_0000428)
 AnnotationAssertion(obo:IAO_0000115 obo:FOODON_03411598 "Catfish (or catfishes; order Siluriformes or Nematognathi) are a diverse group of ray-finned fish. Despite their name, not all catfish have prominent barbel. Members of the Siluriformes order are defined by features of the skull and swimbladder. Catfish are of considerable commercial importance; many of the larger species are farmed or fished for food. [https://en.wikipedia.org/wiki/Catfish]"@en)
@@ -25671,7 +25682,7 @@ AnnotationAssertion(go:hasDbXref obo:FOODON_03411598 <http://eol.org/pages/5083>
 AnnotationAssertion(go:hasDbXref obo:FOODON_03411598 langual:B1598)
 AnnotationAssertion(go:hasSynonym obo:FOODON_03411598 "catfishes"@en)
 AnnotationAssertion(go:hasSynonym obo:FOODON_03411598 "silures"@en)
-AnnotationAssertion(rdfs:label obo:FOODON_03411598 "fish, siluriform"@en)
+AnnotationAssertion(rdfs:label obo:FOODON_03411598 "siluriform fish"@en)
 SubClassOf(obo:FOODON_03411598 obo:FOODON_03411365)
 
 # Class: obo:FOODON_03411599 (pome fruit plant)
@@ -25685,14 +25696,14 @@ AnnotationAssertion(go:hasSynonym obo:FOODON_03411599 "maloideae"@en)
 AnnotationAssertion(rdfs:label obo:FOODON_03411599 "pome fruit plant"@en)
 SubClassOf(obo:FOODON_03411599 obo:FOODON_03411140)
 
-# Class: obo:FOODON_03411601 (fish, clupeiform)
+# Class: obo:FOODON_03411601 (clupeiform fish)
 
 AnnotationAssertion(obo:IAO_0000114 obo:FOODON_03411601 obo:IAO_0000428)
 AnnotationAssertion(obo:IAO_0000115 obo:FOODON_03411601 "Clupeiformes is the order of ray-finned fish that includes the herring family, *Clupeidae*, and the anchovy family, *Engraulidae*. The group includes many of the most important forage and food fish. [https://en.wikipedia.org/wiki/Clupeiformes]"@en)
 AnnotationAssertion(go:hasDbXref obo:FOODON_03411601 <http://eol.org/pages/3190>)
 AnnotationAssertion(go:hasDbXref obo:FOODON_03411601 langual:B1601)
 AnnotationAssertion(go:hasSynonym obo:FOODON_03411601 "clupeiformes"@en)
-AnnotationAssertion(rdfs:label obo:FOODON_03411601 "fish, clupeiform"@en)
+AnnotationAssertion(rdfs:label obo:FOODON_03411601 "clupeiform fish"@en)
 SubClassOf(obo:FOODON_03411601 obo:FOODON_03411365)
 
 # Class: obo:FOODON_03411603 (white asparagus plant)
@@ -26864,7 +26875,7 @@ AnnotationAssertion(go:hasSynonym obo:FOODON_03411893 "lepisosteidae"@en)
 AnnotationAssertion(rdfs:label obo:FOODON_03411893 "gar family"@en)
 SubClassOf(obo:FOODON_03411893 obo:FOODON_03411894)
 
-# Class: obo:FOODON_03411894 (fish, semionotiformes)
+# Class: obo:FOODON_03411894 (semionotiformes fish)
 
 AnnotationAssertion(obo:IAO_0000114 obo:FOODON_03411894 obo:IAO_0000428)
 AnnotationAssertion(obo:IAO_0000115 obo:FOODON_03411894 "Semionotiformes (\"flag-back form\") is an order of primitive, ray-finned, primarily freshwater fish from the Triassic to the Cretaceous. The best-known genus is *Semionotus* of Europe and North America. [https://en.wikipedia.org/wiki/Semionotiformes]"@en)
@@ -26873,10 +26884,10 @@ AnnotationAssertion(go:hasDbXref obo:FOODON_03411894 langual:B1894)
 AnnotationAssertion(go:hasSynonym obo:FOODON_03411894 "gars"@en)
 AnnotationAssertion(go:hasSynonym obo:FOODON_03411894 "lepisosteiformes"@en)
 AnnotationAssertion(go:hasSynonym obo:FOODON_03411894 "semionotiformes"@en)
-AnnotationAssertion(rdfs:label obo:FOODON_03411894 "fish, semionotiformes"@en)
+AnnotationAssertion(rdfs:label obo:FOODON_03411894 "semionotiformes fish"@en)
 SubClassOf(obo:FOODON_03411894 obo:FOODON_03411365)
 
-# Class: obo:FOODON_03411895 (fish, zeiform)
+# Class: obo:FOODON_03411895 (zeiform fish)
 
 AnnotationAssertion(obo:IAO_0000114 obo:FOODON_03411895 obo:IAO_0000428)
 AnnotationAssertion(obo:IAO_0000115 obo:FOODON_03411895 "The Zeiformes are a small order of marine ray-finned fishes most notable for the dories, a group of common food fish. The order consists of about 33 species in seven families, mostly deep-sea types. [https://en.wikipedia.org/wiki/Zeiformes]"@en)
@@ -26884,7 +26895,7 @@ AnnotationAssertion(go:hasDbXref obo:FOODON_03411895 <http://eol.org/pages/1906>
 AnnotationAssertion(go:hasDbXref obo:FOODON_03411895 langual:B1895)
 AnnotationAssertion(go:hasSynonym obo:FOODON_03411895 "john dory"@en)
 AnnotationAssertion(go:hasSynonym obo:FOODON_03411895 "zeiformes"@en)
-AnnotationAssertion(rdfs:label obo:FOODON_03411895 "fish, zeiform"@en)
+AnnotationAssertion(rdfs:label obo:FOODON_03411895 "zeiform fish"@en)
 SubClassOf(obo:FOODON_03411895 obo:FOODON_03411365)
 
 # Class: obo:FOODON_03411896 (paddlefish family)
@@ -27130,6 +27141,12 @@ AnnotationAssertion(go:hasSynonym obo:FOODON_03411942 "trachichthyidae"@en)
 AnnotationAssertion(rdfs:label obo:FOODON_03411942 "slimehead family"@en)
 SubClassOf(obo:FOODON_03411942 obo:FOODON_03411983)
 
+# Class: obo:FOODON_03411944 (florida stone crab)
+
+AnnotationAssertion(rdfs:label obo:FOODON_03411944 "florida stone crab"@en)
+SubClassOf(obo:FOODON_03411944 obo:FOODON_02021446)
+SubClassOf(obo:FOODON_03411944 ObjectSomeValuesFrom(obo:RO_0002162 obo:NCBITaxon_6781))
+
 # Class: obo:FOODON_03411946 (new zealand commercial scallop)
 
 AnnotationAssertion(obo:IAO_0000114 obo:FOODON_03411946 obo:IAO_0000428)
@@ -27230,16 +27247,16 @@ AnnotationAssertion(go:hasSynonym obo:FOODON_03411976 "rajidae"@en)
 AnnotationAssertion(rdfs:label obo:FOODON_03411976 "skate family"@en)
 SubClassOf(obo:FOODON_03411976 obo:FOODON_03411968)
 
-# Class: obo:FOODON_03411977 (fish, tetraodontiform)
+# Class: obo:FOODON_03411977 (tetraodontiform fish)
 
 AnnotationAssertion(obo:IAO_0000114 obo:FOODON_03411977 obo:IAO_0000428)
 AnnotationAssertion(obo:IAO_0000115 obo:FOODON_03411977 "The Tetraodontiformes are an order of highly derived ray-finned fish, also called the Plectognathi. Sometimes these are classified as a suborder of the order Perciformes. The Tetraodontiformes are represented by 10 extant families and at least 349 species overall; most are marine and dwell in and around tropical coral reefs, but a few species are found in freshwater streams and estuaries. [https://en.wikipedia.org/wiki/Tetraodontiformes]"@en)
 AnnotationAssertion(go:hasDbXref obo:FOODON_03411977 <http://eol.org/pages/5052>)
 AnnotationAssertion(go:hasDbXref obo:FOODON_03411977 langual:B1977)
-AnnotationAssertion(rdfs:label obo:FOODON_03411977 "fish, tetraodontiform"@en)
+AnnotationAssertion(rdfs:label obo:FOODON_03411977 "tetraodontiform fish"@en)
 SubClassOf(obo:FOODON_03411977 obo:FOODON_03411365)
 
-# Class: obo:FOODON_03411983 (fish, beryciform)
+# Class: obo:FOODON_03411983 (beryciform fish)
 
 AnnotationAssertion(obo:IAO_0000114 obo:FOODON_03411983 obo:IAO_0000428)
 AnnotationAssertion(obo:IAO_0000115 obo:FOODON_03411983 "The Beryciformes are a poorly-understood order of carnivorous ray-finned fishes consisting of 7 families, 30 genera, and 161 species. Member genera include the alfonsinos, squirrelfishes, flashlight fishes, fangtooth fishes, spinyfins, pineconefishes, redfishes, roughies, and slimeheads. 
@@ -27247,7 +27264,7 @@ AnnotationAssertion(obo:IAO_0000115 obo:FOODON_03411983 "The Beryciformes are a 
 AnnotationAssertion(go:hasDbXref obo:FOODON_03411983 <http://eol.org/pages/8234>)
 AnnotationAssertion(go:hasDbXref obo:FOODON_03411983 langual:B1983)
 AnnotationAssertion(go:hasSynonym obo:FOODON_03411983 "beryciformes"@en)
-AnnotationAssertion(rdfs:label obo:FOODON_03411983 "fish, beryciform"@en)
+AnnotationAssertion(rdfs:label obo:FOODON_03411983 "beryciform fish"@en)
 SubClassOf(obo:FOODON_03411983 obo:FOODON_03411365)
 
 # Class: obo:FOODON_03411984 (south african pilchard)
@@ -27296,14 +27313,14 @@ AnnotationAssertion(go:hasSynonym obo:FOODON_03411993 "protopteridae"@en)
 AnnotationAssertion(rdfs:label obo:FOODON_03411993 "african lungfish family"@en)
 SubClassOf(obo:FOODON_03411993 obo:FOODON_03411994)
 
-# Class: obo:FOODON_03411994 (fish, lepidosireniform)
+# Class: obo:FOODON_03411994 (lepidosireniform fish)
 
 AnnotationAssertion(obo:IAO_0000114 obo:FOODON_03411994 obo:IAO_0000428)
 AnnotationAssertion(obo:IAO_0000115 obo:FOODON_03411994 "Lepidosireniformes are an order of lungfish containing the families *Lepidosirenidae* (the South American lungfish) and *Protopteridae* (the African lungfish). [https://en.wikipedia.org/wiki/Lepidosireniformes]"@en)
 AnnotationAssertion(go:hasDbXref obo:FOODON_03411994 <http://eol.org/pages/8914>)
 AnnotationAssertion(go:hasDbXref obo:FOODON_03411994 langual:B1994)
 AnnotationAssertion(go:hasSynonym obo:FOODON_03411994 "lepidosireniformes"@en)
-AnnotationAssertion(rdfs:label obo:FOODON_03411994 "fish, lepidosireniform"@en)
+AnnotationAssertion(rdfs:label obo:FOODON_03411994 "lepidosireniform fish"@en)
 SubClassOf(obo:FOODON_03411994 obo:FOODON_03411365)
 
 # Class: obo:FOODON_03411996 (moonfish family)
@@ -28077,8 +28094,7 @@ AnnotationAssertion(obo:IAO_0000119 obo:FOODON_03412093 "WIKIPEDIA:Mule")
 AnnotationAssertion(go:hasDbXref obo:FOODON_03412093 langual:B2093)
 AnnotationAssertion(go:hasSynonym obo:FOODON_03412093 "equus asinus x equus caballus"@en)
 AnnotationAssertion(rdfs:label obo:FOODON_03412093 "mule"@en)
-SubClassOf(obo:FOODON_03412093 obo:FOODON_02021535)
-SubClassOf(obo:FOODON_03412093 obo:FOODON_02021548)
+SubClassOf(obo:FOODON_03412093 obo:FOODON_03414849)
 
 # Class: obo:FOODON_03412103 (camel)
 
@@ -28576,13 +28592,13 @@ AnnotationAssertion(go:hasSynonym obo:FOODON_03412198 "weakfish"@en)
 AnnotationAssertion(rdfs:label obo:FOODON_03412198 "kingfish"@en)
 SubClassOf(obo:FOODON_03412198 obo:FOODON_03412005)
 
-# Class: obo:FOODON_03412200 (fish, batrachoidiform)
+# Class: obo:FOODON_03412200 (batrachoidiform fish)
 
 AnnotationAssertion(obo:IAO_0000114 obo:FOODON_03412200 obo:IAO_0000428)
 AnnotationAssertion(go:hasDbXref obo:FOODON_03412200 <http://eol.org/pages/8248>)
 AnnotationAssertion(go:hasDbXref obo:FOODON_03412200 langual:B2200)
 AnnotationAssertion(go:hasSynonym obo:FOODON_03412200 "batrachoidiformes"@en)
-AnnotationAssertion(rdfs:label obo:FOODON_03412200 "fish, batrachoidiform"@en)
+AnnotationAssertion(rdfs:label obo:FOODON_03412200 "batrachoidiform fish"@en)
 SubClassOf(obo:FOODON_03412200 obo:FOODON_03411365)
 
 # Class: obo:FOODON_03412205 (langostino colorado)
@@ -28914,14 +28930,14 @@ AnnotationAssertion(go:hasSynonym obo:FOODON_03412264 "batrachoididae"@en)
 AnnotationAssertion(rdfs:label obo:FOODON_03412264 "toadfish family"@en)
 SubClassOf(obo:FOODON_03412264 obo:FOODON_03412200)
 
-# Class: obo:FOODON_03412265 (fish, scorpaeniform)
+# Class: obo:FOODON_03412265 (scorpaeniform fish)
 
 AnnotationAssertion(obo:IAO_0000114 obo:FOODON_03412265 obo:IAO_0000428)
 AnnotationAssertion(obo:IAO_0000115 obo:FOODON_03412265 "The Scorpaeniformes are a diverse order of ray-finned fish, including the well-known lionfish, but have also been called the Scleroparei. It is one of the five largest orders of bony fishes by number of species with over 1,320. [https://en.wikipedia.org/wiki/Scorpaeniformes]"@en)
 AnnotationAssertion(go:hasDbXref obo:FOODON_03412265 <http://eol.org/pages/5120>)
 AnnotationAssertion(go:hasDbXref obo:FOODON_03412265 langual:B2265)
 AnnotationAssertion(go:hasSynonym obo:FOODON_03412265 "scorpaeniformes"@en)
-AnnotationAssertion(rdfs:label obo:FOODON_03412265 "fish, scorpaeniform"@en)
+AnnotationAssertion(rdfs:label obo:FOODON_03412265 "scorpaeniform fish"@en)
 SubClassOf(obo:FOODON_03412265 obo:FOODON_03411365)
 
 # Class: obo:FOODON_03412266 (seaweed)
@@ -29494,13 +29510,13 @@ AnnotationAssertion(go:hasSynonym obo:FOODON_03412403 "lepomis gibbosus"@en)
 AnnotationAssertion(rdfs:label obo:FOODON_03412403 "pumpkinseed"@en)
 SubClassOf(obo:FOODON_03412403 obo:FOODON_03411419)
 
-# Class: obo:FOODON_03412404 (fish, lophiiform)
+# Class: obo:FOODON_03412404 (lophiiform fish)
 
 AnnotationAssertion(obo:IAO_0000114 obo:FOODON_03412404 obo:IAO_0000428)
 AnnotationAssertion(go:hasDbXref obo:FOODON_03412404 <http://eol.org/pages/5448>)
 AnnotationAssertion(go:hasDbXref obo:FOODON_03412404 langual:B2404)
 AnnotationAssertion(go:hasSynonym obo:FOODON_03412404 "lophiiformes"@en)
-AnnotationAssertion(rdfs:label obo:FOODON_03412404 "fish, lophiiform"@en)
+AnnotationAssertion(rdfs:label obo:FOODON_03412404 "lophiiform fish"@en)
 SubClassOf(obo:FOODON_03412404 obo:FOODON_03411365)
 
 # Class: obo:FOODON_03412405 (goosefish family)
@@ -29554,13 +29570,6 @@ AnnotationAssertion(go:hasDbXref obo:FOODON_03412410 langual:B2410)
 AnnotationAssertion(go:hasNarrowSynonym obo:FOODON_03412410 "Rhodymenia")
 AnnotationAssertion(rdfs:label obo:FOODON_03412410 "rhodymenia"@en)
 SubClassOf(obo:FOODON_03412410 obo:FOODON_03411743)
-
-# Class: obo:FOODON_03412412 (green turtle)
-
-AnnotationAssertion(rdfs:label obo:FOODON_03412412 "green turtle"@en)
-EquivalentClasses(obo:FOODON_03412412 ObjectIntersectionOf(obo:FOODON_03411242 ObjectSomeValuesFrom(obo:RO_0002162 obo:NCBITaxon_8469)))
-SubClassOf(obo:FOODON_03412412 obo:FOODON_02021591)
-SubClassOf(obo:FOODON_03412412 obo:FOODON_03411242)
 
 # Class: obo:FOODON_03412413 (diamondback terrapin)
 
@@ -29635,14 +29644,14 @@ AnnotationAssertion(go:hasSynonym obo:FOODON_03412424 "selar spp."@en)
 AnnotationAssertion(rdfs:label obo:FOODON_03412424 "bigeye scads (Selar spp)"@en)
 SubClassOf(obo:FOODON_03412424 obo:FOODON_00002900)
 
-# Class: obo:FOODON_03412425 (fish, amiiform)
+# Class: obo:FOODON_03412425 (amiiform fish)
 
 AnnotationAssertion(obo:IAO_0000114 obo:FOODON_03412425 obo:IAO_0000428)
 AnnotationAssertion(obo:IAO_0000115 obo:FOODON_03412425 "The Amiiformes order of fish has only one extant species, the bowfin (*Amia calva*). [https://en.wikipedia.org/wiki/Amiiformes]"@en)
 AnnotationAssertion(go:hasDbXref obo:FOODON_03412425 <http://eol.org/pages/8296>)
 AnnotationAssertion(go:hasDbXref obo:FOODON_03412425 langual:B2425)
 AnnotationAssertion(go:hasSynonym obo:FOODON_03412425 "amiiformes"@en)
-AnnotationAssertion(rdfs:label obo:FOODON_03412425 "fish, amiiform"@en)
+AnnotationAssertion(rdfs:label obo:FOODON_03412425 "amiiform fish"@en)
 SubClassOf(obo:FOODON_03412425 obo:FOODON_03411365)
 
 # Class: obo:FOODON_03412426 (freshwater bass)
@@ -29899,7 +29908,7 @@ AnnotationAssertion(obo:IAO_0000119 obo:FOODON_03412466 "https://en.wikipedia.or
 AnnotationAssertion(go:hasDbXref obo:FOODON_03412466 langual:B2466)
 AnnotationAssertion(rdfs:label obo:FOODON_03412466 "snow pea plant"@en)
 SubClassOf(obo:FOODON_03412466 obo:FOODON_03411031)
-SubClassOf(obo:FOODON_03412466 ObjectSomeValuesFrom(obo:RO_0002162 obo:NCBITaxon_257612))
+SubClassOf(obo:FOODON_03412466 ObjectSomeValuesFrom(obo:RO_0002162 obo:NCBITaxon_208194))
 
 # Class: obo:FOODON_03412467 (sugar snap pea plant)
 
@@ -29913,7 +29922,7 @@ AnnotationAssertion(go:hasExactSynonym obo:FOODON_03412467 "Pisum sativum var. m
 AnnotationAssertion(go:hasExactSynonym obo:FOODON_03412467 "snap pea plant"@en)
 AnnotationAssertion(rdfs:label obo:FOODON_03412467 "sugar snap pea plant"@en)
 SubClassOf(obo:FOODON_03412467 obo:FOODON_03411031)
-SubClassOf(obo:FOODON_03412467 ObjectSomeValuesFrom(obo:RO_0002162 obo:NCBITaxon_257612))
+SubClassOf(obo:FOODON_03412467 ObjectSomeValuesFrom(obo:RO_0002162 obo:NCBITaxon_208194))
 
 # Class: obo:FOODON_03412468 (king orange plant)
 
@@ -29983,7 +29992,7 @@ AnnotationAssertion(go:hasSynonym obo:FOODON_03412476 "ulva spp."@en)
 AnnotationAssertion(rdfs:label obo:FOODON_03412476 "sea lettuce"@en)
 SubClassOf(obo:FOODON_03412476 obo:FOODON_03412502)
 
-# Class: obo:FOODON_03412478 (fish, gasterosteiform)
+# Class: obo:FOODON_03412478 (gasterosteiform fish)
 
 AnnotationAssertion(obo:IAO_0000114 obo:FOODON_03412478 obo:IAO_0000428)
 AnnotationAssertion(obo:IAO_0000115 obo:FOODON_03412478 "Gasterosteiformes is an order of ray-finned fishes that includes the sticklebacks and relatives."@en)
@@ -29991,7 +30000,7 @@ AnnotationAssertion(obo:IAO_0000119 obo:FOODON_03412478 wikipedia:Gasterosteifor
 AnnotationAssertion(go:hasDbXref obo:FOODON_03412478 <http://eol.org/pages/5490>)
 AnnotationAssertion(go:hasDbXref obo:FOODON_03412478 langual:B2478)
 AnnotationAssertion(go:hasSynonym obo:FOODON_03412478 "gasterosteiformes"@en)
-AnnotationAssertion(rdfs:label obo:FOODON_03412478 "fish, gasterosteiform"@en)
+AnnotationAssertion(rdfs:label obo:FOODON_03412478 "gasterosteiform fish"@en)
 SubClassOf(obo:FOODON_03412478 obo:FOODON_03411365)
 
 # Class: obo:FOODON_03412483 (stickleback family)
@@ -30060,14 +30069,14 @@ AnnotationAssertion(go:hasSynonym obo:FOODON_03412496 "caelifera"@en)
 AnnotationAssertion(rdfs:label obo:FOODON_03412496 "grasshopper"@en)
 SubClassOf(obo:FOODON_03412496 obo:FOODON_03411220)
 
-# Class: obo:FOODON_03412497 (fish, aulopiform)
+# Class: obo:FOODON_03412497 (aulopiform fish)
 
 AnnotationAssertion(obo:IAO_0000114 obo:FOODON_03412497 obo:IAO_0000428)
 AnnotationAssertion(obo:IAO_0000115 obo:FOODON_03412497 "Aulopiformes is a diverse order of marine ray-finned fish consisting of some 15 extant and several prehistoric families with about 45 genera and over 230 species. The common names grinners, lizardfishes and allies or aulopiforms are sometimes used for this group. [https://en.wikipedia.org/wiki/Aulopiformes]"@en)
 AnnotationAssertion(go:hasDbXref obo:FOODON_03412497 <http://eol.org/pages/8250>)
 AnnotationAssertion(go:hasDbXref obo:FOODON_03412497 langual:B2497)
 AnnotationAssertion(go:hasSynonym obo:FOODON_03412497 "aulopiformes"@en)
-AnnotationAssertion(rdfs:label obo:FOODON_03412497 "fish, aulopiform"@en)
+AnnotationAssertion(rdfs:label obo:FOODON_03412497 "aulopiform fish"@en)
 SubClassOf(obo:FOODON_03412497 obo:FOODON_03411365)
 
 # Class: obo:FOODON_03412498 (lizardfish family)
@@ -30307,7 +30316,7 @@ AnnotationAssertion(go:hasSynonym obo:FOODON_03412542 "gobiidae"@en)
 AnnotationAssertion(rdfs:label obo:FOODON_03412542 "true goby"@en)
 SubClassOf(obo:FOODON_03412542 obo:FOODON_00002899)
 
-# Class: obo:FOODON_03412543 (fish, gonorynchiform)
+# Class: obo:FOODON_03412543 (gonorynchiform fish)
 
 AnnotationAssertion(obo:IAO_0000114 obo:FOODON_03412543 obo:IAO_0000428)
 AnnotationAssertion(obo:IAO_0000115 obo:FOODON_03412543 "The Gonorynchiformes are an order of ray-finned fish that includes the important food source, the milkfish (*Chanos chanos*, family *Chanidae*), and a number of lesser-known types, both marine and freshwater.
@@ -30315,10 +30324,10 @@ The alternate spelling \"Gonorhynchiformes\", with an \"h\", is frequently seen 
 AnnotationAssertion(go:hasDbXref obo:FOODON_03412543 <http://eol.org/pages/5483>)
 AnnotationAssertion(go:hasDbXref obo:FOODON_03412543 langual:B2543)
 AnnotationAssertion(go:hasSynonym obo:FOODON_03412543 "gonorynchiformes"@en)
-AnnotationAssertion(rdfs:label obo:FOODON_03412543 "fish, gonorynchiform"@en)
+AnnotationAssertion(rdfs:label obo:FOODON_03412543 "gonorynchiform fish"@en)
 SubClassOf(obo:FOODON_03412543 obo:FOODON_03411365)
 
-# Class: obo:FOODON_03412544 (fish, albuliform)
+# Class: obo:FOODON_03412544 (albuliform fish)
 
 AnnotationAssertion(obo:IAO_0000114 obo:FOODON_03412544 obo:IAO_0000428)
 AnnotationAssertion(obo:IAO_0000115 obo:FOODON_03412544 "Albulidae is a family of fish, commonly known as the bonefishes, that are popular as game fish in Florida, select locations in the South Pacific and the Bahamas and elsewhere. The family is small, with 11 species in 3 genera. Presently, the bonefishes are in their own order: Albuliformes. [https://en.wikipedia.org/wiki/Bonefishes]"@en)
@@ -30327,7 +30336,7 @@ AnnotationAssertion(obo:IAO_0000119 obo:FOODON_03412544 "American Fisheries Soci
 AnnotationAssertion(go:hasDbXref obo:FOODON_03412544 <http://eol.org/pages/8298>)
 AnnotationAssertion(go:hasDbXref obo:FOODON_03412544 langual:B2544)
 AnnotationAssertion(go:hasSynonym obo:FOODON_03412544 "albuliformes"@en)
-AnnotationAssertion(rdfs:label obo:FOODON_03412544 "fish, albuliform"@en)
+AnnotationAssertion(rdfs:label obo:FOODON_03412544 "albuliform fish"@en)
 SubClassOf(obo:FOODON_03412544 obo:FOODON_03411365)
 
 # Class: obo:FOODON_03412545 (freshwater eel family)
@@ -34838,12 +34847,12 @@ AnnotationAssertion(go:hasExactSynonym obo:FOODON_03413355 "brassica oleracea co
 AnnotationAssertion(rdfs:label obo:FOODON_03413355 "sugar loaf cabbage plant"@en)
 SubClassOf(obo:FOODON_03413355 obo:NCBITaxon_3716)
 
-# Class: obo:FOODON_03413357 (plant by general taxa)
+# Class: obo:FOODON_03413357 (plant by taxonomy)
 
 AnnotationAssertion(obo:IAO_0000114 obo:FOODON_03413357 obo:IAO_0000428)
 AnnotationAssertion(go:hasDbXref obo:FOODON_03413357 langual:B3357)
 AnnotationAssertion(rdfs:comment obo:FOODON_03413357 "LanguaL curation note: This term is for CLASSIFICATION ONLY; DO NOT USE term in indexing. Use a more precise narrower term."@en)
-AnnotationAssertion(rdfs:label obo:FOODON_03413357 "plant by general taxa"@en)
+AnnotationAssertion(rdfs:label obo:FOODON_03413357 "plant by taxonomy"@en)
 SubClassOf(obo:FOODON_03413357 obo:PO_0000003)
 
 # Class: obo:FOODON_03413358 (plant used as fodder)
@@ -36880,7 +36889,7 @@ AnnotationAssertion(rdfs:label obo:FOODON_03413807 "salmonins"@en)
 SubClassOf(obo:FOODON_03413807 obo:FOODON_03411129)
 SubClassOf(obo:FOODON_03413807 obo:FOODON_03413448)
 
-# Class: obo:FOODON_03413808 (fish, esociform)
+# Class: obo:FOODON_03413808 (esociform fish)
 
 AnnotationAssertion(obo:IAO_0000114 obo:FOODON_03413808 obo:IAO_0000428)
 AnnotationAssertion(obo:IAO_0000115 obo:FOODON_03413808 "Esociformes are a small order of ray-finned fish, with two families, the *Umbridae* (mudminnows) and the *Esocidae* (pikes). The pikes of genus *Esox* give the order its name."@en)
@@ -36888,10 +36897,10 @@ AnnotationAssertion(obo:IAO_0000119 obo:FOODON_03413808 "WIKIPEDIA:Esociformes")
 AnnotationAssertion(go:hasDbXref obo:FOODON_03413808 langual:B3808)
 AnnotationAssertion(go:hasNarrowSynonym obo:FOODON_03413808 "Esociformes")
 AnnotationAssertion(go:hasSynonym obo:FOODON_03413808 "esciformes"@en)
-AnnotationAssertion(rdfs:label obo:FOODON_03413808 "fish, esociform"@en)
+AnnotationAssertion(rdfs:label obo:FOODON_03413808 "esociform fish"@en)
 SubClassOf(obo:FOODON_03413808 obo:FOODON_03411365)
 
-# Class: obo:FOODON_03413809 (fish, osmeriform)
+# Class: obo:FOODON_03413809 (osmeriform fish)
 
 AnnotationAssertion(obo:IAO_0000114 obo:FOODON_03413809 obo:IAO_0000428)
 AnnotationAssertion(obo:IAO_0000115 obo:FOODON_03413809 "The Osmeriformes comprise an order of ray-finned fish that includes the true or freshwater smelts and allies, such as the galaxiids and noodlefishes; they are also collectively called osmeriforms. [https://en.wikipedia.org/wiki/Osmeriformes]"@en)
@@ -36899,7 +36908,7 @@ AnnotationAssertion(go:hasDbXref obo:FOODON_03413809 <http://eol.org/pages/5394>
 AnnotationAssertion(go:hasDbXref obo:FOODON_03413809 langual:B3809)
 AnnotationAssertion(go:hasNarrowSynonym obo:FOODON_03413809 "Osmeriformes")
 AnnotationAssertion(go:hasSynonym obo:FOODON_03413809 "osmeriformes"@en)
-AnnotationAssertion(rdfs:label obo:FOODON_03413809 "fish, osmeriform"@en)
+AnnotationAssertion(rdfs:label obo:FOODON_03413809 "osmeriform fish"@en)
 SubClassOf(obo:FOODON_03413809 obo:FOODON_03411365)
 
 # Class: obo:FOODON_03413810 (african mudfish family)
@@ -39581,7 +39590,6 @@ SubClassOf(obo:FOODON_03414382 obo:FOODON_03412617)
 
 AnnotationAssertion(rdfs:label obo:FOODON_03414385 "snapping turtle"@en)
 EquivalentClasses(obo:FOODON_03414385 ObjectIntersectionOf(obo:FOODON_03411242 ObjectSomeValuesFrom(obo:RO_0002162 obo:NCBITaxon_8475)))
-SubClassOf(obo:FOODON_03414385 obo:FOODON_02021591)
 SubClassOf(obo:FOODON_03414385 obo:FOODON_03411242)
 
 # Class: obo:FOODON_03414386 (giant snail)
@@ -40525,7 +40533,7 @@ AnnotationAssertion(go:hasSynonym obo:FOODON_03414556 "rheidae"@en)
 AnnotationAssertion(rdfs:label obo:FOODON_03414556 "rhea"@en)
 SubClassOf(obo:FOODON_03414556 obo:FOODON_03414362)
 
-# Class: obo:FOODON_03414559 (fish, osteoglossiform)
+# Class: obo:FOODON_03414559 (osteoglossiform fish)
 
 AnnotationAssertion(obo:IAO_0000114 obo:FOODON_03414559 obo:IAO_0000428)
 AnnotationAssertion(obo:IAO_0000115 obo:FOODON_03414559 "Osteoglossiformes (Greek: \"bony tongues\") is a relatively primitive order of ray-finned fish that contains two sub-orders, the *Osteoglossoidei* and the *Notopteroidei*. All of at least 245 living species inhabit freshwater. They are found in South America, Africa, Australia and southern Asia, having first evolved in Gondwana before that continent broke up. [https://en.wikipedia.org/wiki/Osteoglossiformes]"@en)
@@ -40533,7 +40541,7 @@ AnnotationAssertion(go:hasDbXref obo:FOODON_03414559 <http://eol.org/pages/5386>
 AnnotationAssertion(go:hasDbXref obo:FOODON_03414559 langual:B4559)
 AnnotationAssertion(go:hasSynonym obo:FOODON_03414559 "bonytongues"@en)
 AnnotationAssertion(go:hasSynonym obo:FOODON_03414559 "osteoglossiformes"@en)
-AnnotationAssertion(rdfs:label obo:FOODON_03414559 "fish, osteoglossiform"@en)
+AnnotationAssertion(rdfs:label obo:FOODON_03414559 "osteoglossiform fish"@en)
 SubClassOf(obo:FOODON_03414559 obo:FOODON_03411365)
 
 # Class: obo:FOODON_03414560 (mooneye family)
@@ -43128,7 +43136,6 @@ SubClassOf(obo:FOODON_03414845 obo:FOODON_03411139)
 
 # Class: obo:FOODON_03414847 (dog)
 
-AnnotationAssertion(obo:IAO_0100001 obo:FOODON_03414847 obo:NCBITaxon_9615)
 AnnotationAssertion(rdfs:label obo:FOODON_03414847 "dog"@en)
 EquivalentClasses(obo:FOODON_03414847 ObjectIntersectionOf(obo:FOODON_03411134 ObjectSomeValuesFrom(obo:RO_0002162 obo:NCBITaxon_9615)))
 SubClassOf(obo:FOODON_03414847 obo:FOODON_03411134)
@@ -43234,7 +43241,7 @@ AnnotationAssertion(go:hasNarrowSynonym obo:FOODON_03414867 "Pseudoplatystoma Bl
 AnnotationAssertion(rdfs:label obo:FOODON_03414867 "sorubim catfish"@en)
 SubClassOf(obo:FOODON_03414867 obo:FOODON_03411969)
 
-# Class: obo:FOODON_03414872 (fish, synbranchiform)
+# Class: obo:FOODON_03414872 (synbranchiform fish)
 
 AnnotationAssertion(obo:IAO_0000114 obo:FOODON_03414872 obo:IAO_0000428)
 AnnotationAssertion(obo:IAO_0000115 obo:FOODON_03414872 "Synbranchiformes is an order of ray-finned fishes that are eel-like but have spiny rays, indicating that they belong to the superorder *Acanthopterygii*. There are two suborders: *Synbranchoidei* and *Mastacembeloidei*, or *Opisthomi*. The *Synbranchoidei* has one family, the *Synbranchidae*, four genera, and 17 species. The *Mastacembeloidei* has two families: *Chaudhuriidae*, with four genera and five species, and *Mastacembelidae*, with three genera and about 26 species."@en)
@@ -43245,10 +43252,10 @@ AnnotationAssertion(go:hasExactSynonym obo:FOODON_03414872 "swamp eel"@en)
 AnnotationAssertion(go:hasSynonym obo:FOODON_03414872 "chaudhuriidae"@en)
 AnnotationAssertion(go:hasSynonym obo:FOODON_03414872 "mastacembelidae"@en)
 AnnotationAssertion(go:hasSynonym obo:FOODON_03414872 "synbranchidae"@en)
-AnnotationAssertion(rdfs:label obo:FOODON_03414872 "fish, synbranchiform"@en)
+AnnotationAssertion(rdfs:label obo:FOODON_03414872 "synbranchiform fish"@en)
 SubClassOf(obo:FOODON_03414872 obo:FOODON_03411365)
 
-# Class: obo:FOODON_03414874 (fish, characiform)
+# Class: obo:FOODON_03414874 (characiform fish)
 
 AnnotationAssertion(obo:IAO_0000114 obo:FOODON_03414874 obo:IAO_0000428)
 AnnotationAssertion(obo:IAO_0000115 obo:FOODON_03414874 "An order of ray-finned fish, comprising the characins and their allies. Grouped in 18 recognized families, there are more than two thousand different species, including the well-known piranha and tetras."@en)
@@ -43256,7 +43263,7 @@ AnnotationAssertion(obo:IAO_0000119 obo:FOODON_03414874 wikipedia:Characiformes)
 AnnotationAssertion(go:hasDbXref obo:FOODON_03414874 <http://eol.org/pages/6896>)
 AnnotationAssertion(go:hasDbXref obo:FOODON_03414874 langual:B4874)
 AnnotationAssertion(go:hasExactSynonym obo:FOODON_03414874 "Characiformes"@en)
-AnnotationAssertion(rdfs:label obo:FOODON_03414874 "fish, characiform"@en)
+AnnotationAssertion(rdfs:label obo:FOODON_03414874 "characiform fish"@en)
 SubClassOf(obo:FOODON_03414874 obo:FOODON_03411365)
 
 # Class: obo:FOODON_03414875 (characin)
@@ -53283,7 +53290,7 @@ AnnotationAssertion(obo:IAO_0000117 obo:FOODON_03530206 "Damion Dooley")
 AnnotationAssertion(go:hasDbXref obo:FOODON_03530206 langual:Z0206)
 AnnotationAssertion(go:hasExactSynonym obo:FOODON_03530206 "production area"@en)
 AnnotationAssertion(rdfs:label obo:FOODON_03530206 "food production"@en)
-SubClassOf(obo:FOODON_03530206 obo:OBI_0000011)
+SubClassOf(obo:FOODON_03530206 obo:COB_0000035)
 
 # Class: obo:FOODON_03530207 (food plant cultivation)
 
@@ -58835,7 +58842,6 @@ SubClassOf(obo:NCBITaxon_128017 obo:FOODON_03413391)
 # Class: obo:NCBITaxon_128156 (Gryllus assimilis)
 
 AnnotationAssertion(rdfs:label obo:NCBITaxon_128156 "Gryllus assimilis"@en)
-SubClassOf(obo:NCBITaxon_128156 obo:OBI_0100026)
 
 # Class: obo:NCBITaxon_128608 (Cinnamomum verum)
 
@@ -60175,7 +60181,7 @@ AnnotationAssertion(go:hasExactSynonym obo:NCBITaxon_151071 "rhambustan tree"@en
 AnnotationAssertion(go:hasNarrowSynonym obo:NCBITaxon_151071 "Nephelium lappaceum L.")
 SubClassOf(obo:NCBITaxon_151071 obo:FOODON_03413391)
 
-# Class: obo:NCBITaxon_151250 (Kali turgidum)
+# Class: obo:NCBITaxon_151250 (Salsola kali)
 
 AnnotationAssertion(obo:IAO_0000114 obo:NCBITaxon_151250 obo:IAO_0000428)
 AnnotationAssertion(obo:IAO_0000115 obo:NCBITaxon_151250 "*Kali turgida* (Synonym *Salsola kali* subsp. *kali*), commonly known as prickly saltwort, or prickly glasswort, is an annual plant that grows in salty sandy coastal soils.
@@ -61226,19 +61232,6 @@ AnnotationAssertion(go:hasSynonym obo:NCBITaxon_173333 "glaucus"@en)
 AnnotationAssertion(go:hasSynonym obo:NCBITaxon_173333 "great pompano"@en)
 AnnotationAssertion(go:hasSynonym obo:NCBITaxon_173333 "trachinotus glaucus"@en)
 SubClassOf(obo:NCBITaxon_173333 obo:FOODON_03411475)
-
-# Class: obo:NCBITaxon_173342 (Trachinotus carolinus)
-
-AnnotationAssertion(obo:IAO_0000114 obo:NCBITaxon_173342 obo:IAO_0000428)
-AnnotationAssertion(obo:IAO_0000118 obo:NCBITaxon_173342 "florida pompano"@en)
-AnnotationAssertion(go:hasDbXref obo:NCBITaxon_173342 <http://eol.org/pages/210301>)
-AnnotationAssertion(go:hasDbXref obo:NCBITaxon_173342 langual:B1780)
-AnnotationAssertion(go:hasDbXref obo:NCBITaxon_173342 asfis:pom)
-AnnotationAssertion(go:hasDbXref obo:NCBITaxon_173342 "CEC1993:654")
-AnnotationAssertion(go:hasNarrowSynonym obo:NCBITaxon_173342 "Trachinotus carolinus")
-AnnotationAssertion(go:hasSynonym obo:NCBITaxon_173342 "common pompano"@en)
-AnnotationAssertion(go:hasSynonym obo:NCBITaxon_173342 "trachinotus carolinus"@en)
-SubClassOf(obo:NCBITaxon_173342 obo:FOODON_03411475)
 
 # Class: obo:NCBITaxon_173344 (Oligoplites saurus)
 
@@ -62617,7 +62610,7 @@ SubClassOf(obo:NCBITaxon_199623 obo:FOODON_03412971)
 # Class: obo:NCBITaxon_2 (Bacteria)
 
 AnnotationAssertion(go:hasDbXref obo:NCBITaxon_2 langual:B2846)
-SubClassOf(obo:NCBITaxon_2 obo:OBI_0100026)
+SubClassOf(obo:NCBITaxon_2 obo:NCBITaxon_131567)
 
 # Class: obo:NCBITaxon_200939 (Todarodes sagittatus)
 
@@ -64426,7 +64419,7 @@ AnnotationAssertion(go:hasSynonym obo:NCBITaxon_260508 "osmerus thaleichthys"@en
 AnnotationAssertion(go:hasSynonym obo:NCBITaxon_260508 "spirinchus thaleichthys"@en)
 SubClassOf(obo:NCBITaxon_260508 obo:FOODON_03411904)
 
-# Class: obo:NCBITaxon_260718 (Cicca acida)
+# Class: obo:NCBITaxon_260718 (Phyllanthus acidus)
 
 AnnotationAssertion(obo:IAO_0000114 obo:NCBITaxon_260718 obo:IAO_0000428)
 AnnotationAssertion(obo:IAO_0000118 obo:NCBITaxon_260718 "otaheite gooseberry plant"@en)
@@ -64783,7 +64776,7 @@ SubClassOf(obo:NCBITaxon_27588 obo:FOODON_03411340)
 
 # Class: obo:NCBITaxon_2759 (Eukaryota)
 
-SubClassOf(obo:NCBITaxon_2759 obo:OBI_0100026)
+SubClassOf(obo:NCBITaxon_2759 obo:NCBITaxon_131567)
 
 # Class: obo:NCBITaxon_27602 (Balaena mysticetus)
 
@@ -69411,7 +69404,7 @@ AnnotationAssertion(go:hasSynonym obo:NCBITaxon_38874 "flowering ash"@en)
 AnnotationAssertion(go:hasSynonym obo:NCBITaxon_38874 "fraxinus ornus"@en)
 SubClassOf(obo:NCBITaxon_38874 obo:FOODON_03411012)
 
-# Class: obo:NCBITaxon_3888 (Pisum sativum)
+# Class: obo:NCBITaxon_3888 (Lathyrus oleraceus)
 
 AnnotationAssertion(obo:IAO_0000114 obo:NCBITaxon_3888 obo:IAO_0000428)
 AnnotationAssertion(obo:IAO_0000115 obo:NCBITaxon_3888 "The pea is most commonly the small spherical seed or the seed-pod of the pod fruit *Pisum sativum*."@en)
@@ -76524,11 +76517,6 @@ AnnotationAssertion(go:hasDbXref obo:NCBITaxon_70446 "CEC1993:965")
 AnnotationAssertion(go:hasNarrowSynonym obo:NCBITaxon_70446 "Rastrelliger kanagurta")
 SubClassOf(obo:NCBITaxon_70446 obo:FOODON_03413974)
 
-# Class: obo:NCBITaxon_70906 (Grylloidea)
-
-AnnotationAssertion(rdfs:label obo:NCBITaxon_70906 "Grylloidea"@en)
-SubClassOf(obo:NCBITaxon_70906 obo:OBI_0100026)
-
 # Class: obo:NCBITaxon_7091 (Bombyx mori)
 
 AnnotationAssertion(obo:IAO_0000114 obo:NCBITaxon_7091 obo:IAO_0000428)
@@ -79280,17 +79268,6 @@ AnnotationAssertion(go:hasNarrowSynonym obo:NCBITaxon_8467 "Caretta caretta (Lin
 AnnotationAssertion(go:hasSynonym obo:NCBITaxon_8467 "caretta caretta"@en)
 AnnotationAssertion(go:hasSynonym obo:NCBITaxon_8467 "thalasochelys caretta"@en)
 
-# Class: obo:NCBITaxon_8469 (Chelonia mydas)
-
-AnnotationAssertion(obo:IAO_0000114 obo:NCBITaxon_8469 obo:IAO_0000428)
-AnnotationAssertion(obo:IAO_0000118 obo:NCBITaxon_8469 "green turtle"@en)
-AnnotationAssertion(go:hasDbXref obo:NCBITaxon_8469 <http://eol.org/pages/454546>)
-AnnotationAssertion(go:hasDbXref obo:NCBITaxon_8469 langual:B2412)
-AnnotationAssertion(go:hasDbXref obo:NCBITaxon_8469 asfis:tug)
-AnnotationAssertion(go:hasDbXref obo:NCBITaxon_8469 "CEC1993:1477")
-AnnotationAssertion(go:hasNarrowSynonym obo:NCBITaxon_8469 "Chelonia mydas (Linnaeus, 1758)")
-AnnotationAssertion(go:hasSynonym obo:NCBITaxon_8469 "chelonia mydas"@en)
-
 # Class: obo:NCBITaxon_8475 (Chelydra serpentina)
 
 AnnotationAssertion(obo:IAO_0000114 obo:NCBITaxon_8475 obo:IAO_0000428)
@@ -81308,7 +81285,7 @@ SubClassOf(obo:NCIT_C45298 obo:BFO_0000040)
 
 # Class: obo:NCIT_C54021 (Knife Device)
 
-SubClassOf(obo:NCIT_C54021 obo:OBI_0000968)
+SubClassOf(obo:NCIT_C54021 obo:COB_0001300)
 
 # Class: obo:NCIT_C80249 (Breakfast)
 
@@ -81325,6 +81302,26 @@ SubClassOf(obo:NCIT_C80251 obo:ONS_0000085)
 # Class: obo:NCIT_C94729 (Season)
 
 SubClassOf(obo:NCIT_C94729 <https://www.w3.org/TR/owl-time/#time:Interval>)
+
+# Class: obo:OBI_0000070 (assay)
+
+SubClassOf(obo:OBI_0000070 obo:COB_0000035)
+
+# Class: obo:OBI_0000838 (material maintenance)
+
+SubClassOf(obo:OBI_0000838 obo:COB_0000035)
+
+# Class: obo:OBI_0000967 (container)
+
+SubClassOf(obo:OBI_0000967 obo:COB_0001300)
+
+# Class: obo:OBI_0200000 (data transformation)
+
+SubClassOf(obo:OBI_0200000 obo:COB_0000035)
+
+# Class: obo:ONS_0000085 (meal)
+
+SubClassOf(obo:ONS_0000085 obo:COB_0000035)
 
 # Class: obo:PATO_0000915 (thickness)
 
@@ -81412,7 +81409,7 @@ SubClassOf(obo:UBERON_0000178 obo:UBERON_0006314)
 
 # Class: obo:UBERON_0000463 (organism substance)
 
-SubClassOf(obo:UBERON_0000463 ObjectSomeValuesFrom(obo:RO_0003001 obo:OBI_0100026))
+SubClassOf(obo:UBERON_0000463 ObjectSomeValuesFrom(obo:RO_0003001 obo:COB_0000022))
 
 # Class: obo:UBERON_0001013 (adipose tissue)
 
@@ -81527,11 +81524,6 @@ AnnotationAssertion(dcterms:contributor <http://purl.obolibrary.org/obo/FOODON:0
 AnnotationAssertion(dcterms:date <http://purl.obolibrary.org/obo/FOODON:03415183> "2025-01-30T11:55:10Z"^^xsd:dateTime)
 AnnotationAssertion(rdfs:label <http://purl.obolibrary.org/obo/FOODON:03415183> "Golden Delicious apple tree"@en)
 SubClassOf(<http://purl.obolibrary.org/obo/FOODON:03415183> obo:FOODON_03411245)
-
-# Class: <http://purl.obolibrary.org/obo/NCBITaxon:4281> (Cornus)
-
-AnnotationAssertion(rdfs:label <http://purl.obolibrary.org/obo/NCBITaxon:4281> "Cornus"@en)
-SubClassOf(<http://purl.obolibrary.org/obo/NCBITaxon:4281> obo:OBI_0100026)
 
 # Class: <https://www.w3.org/TR/owl-time/#time:Duration> (Duration)
 
@@ -81898,6 +81890,7 @@ AnnotationAssertion(dcterms:date obo:FOODON_00003719 "2021-02-11T17:40:11Z"^^xsd
 AnnotationAssertion(obo:IAO_0000117 obo:FOODON_00003728 <http://orcid.org/0000-0002-8844-9165>)
 AnnotationAssertion(obo:IAO_0000117 obo:FOODON_00003729 <http://orcid.org/0000-0002-8844-9165>)
 AnnotationAssertion(dcterms:date obo:FOODON_00003729 "2021-02-11T18:19:26Z"^^xsd:dateTime)
+AnnotationAssertion(obo:IAO_0000117 obo:FOODON_00003732 <http://orcid.org/0000-0002-8844-9165>)
 AnnotationAssertion(obo:IAO_0000117 obo:FOODON_00003740 <http://orcid.org/0000-0002-8844-9165>)
 AnnotationAssertion(obo:IAO_0000117 obo:FOODON_00003747 <http://orcid.org/0000-0002-8844-9165>)
 AnnotationAssertion(obo:IAO_0000117 obo:FOODON_00003749 <http://orcid.org/0000-0002-8844-9165>)
@@ -82114,6 +82107,14 @@ AnnotationAssertion(dcterms:contributor obo:FOODON_00005164 <https://orcid.org/0
 AnnotationAssertion(go:hasDbXref obo:FOODON_02010217 siren:F17328)
 AnnotationAssertion(go:hasDbXref obo:FOODON_02020219 siren:F10168)
 AnnotationAssertion(go:hasDbXref obo:FOODON_02020900 siren:F9737)
+AnnotationAssertion(go:hasDbXref obo:FOODON_02021535 <http://eol.org/pages/328647>)
+AnnotationAssertion(go:hasDbXref obo:FOODON_02021535 <http://www.itis.gov/servlet/SingleRpt/SingleRpt?search_topic=TSN&search_value=180690>)
+AnnotationAssertion(go:hasDbXref obo:FOODON_02021535 langual:B2096)
+AnnotationAssertion(go:hasDbXref obo:FOODON_02021535 "MSW3:14100004")
+AnnotationAssertion(go:hasNarrowSynonym obo:FOODON_02021535 "Equus asinus Linnaeus, 1758")
+AnnotationAssertion(go:hasSynonym obo:FOODON_02021535 "ass"@en)
+AnnotationAssertion(go:hasSynonym obo:FOODON_02021535 "burro"@en)
+AnnotationAssertion(go:hasSynonym obo:FOODON_02021535 "equus asinus"@en)
 AnnotationAssertion(go:hasDbXref obo:FOODON_02021822 langual:B2620)
 AnnotationAssertion(go:hasDbXref obo:FOODON_02021829 siren:F11711)
 AnnotationAssertion(go:hasDbXref obo:FOODON_03000040 siren:F3168)
@@ -82714,6 +82715,15 @@ AnnotationAssertion(go:hasNarrowSynonym obo:NCBITaxon_171959 "Sorghum X drummond
 AnnotationAssertion(go:hasSynonym obo:NCBITaxon_171959 "sorghum x drummondii"@en)
 AnnotationAssertion(rdfs:comment obo:NCBITaxon_171959 "*Sorghum × drummondii* (Sudangrass), is a hybrid-derived species of grass raised for forage and grain, native to tropical and subtropical regions of Eastern Africa. The plant is cultivated in Southern Europe, South America, Central America, North America and Southern Asia, for forage or as a cover crop. It is distinguished from the grain sorghum (*Sorghum bicolor*) by the grain (caryopsis) not being exposed at maturity."@en)
 AnnotationAssertion(rdfs:seeAlso obo:NCBITaxon_171959 <https://en.wikipedia.org/wiki/Sorghum_%C3%97_drummondii>)
+AnnotationAssertion(obo:IAO_0000114 obo:NCBITaxon_173342 obo:IAO_0000428)
+AnnotationAssertion(obo:IAO_0000118 obo:NCBITaxon_173342 "florida pompano"@en)
+AnnotationAssertion(go:hasDbXref obo:NCBITaxon_173342 <http://eol.org/pages/210301>)
+AnnotationAssertion(go:hasDbXref obo:NCBITaxon_173342 langual:B1780)
+AnnotationAssertion(go:hasDbXref obo:NCBITaxon_173342 asfis:pom)
+AnnotationAssertion(go:hasDbXref obo:NCBITaxon_173342 "CEC1993:654")
+AnnotationAssertion(go:hasNarrowSynonym obo:NCBITaxon_173342 "Trachinotus carolinus")
+AnnotationAssertion(go:hasSynonym obo:NCBITaxon_173342 "common pompano"@en)
+AnnotationAssertion(go:hasSynonym obo:NCBITaxon_173342 "trachinotus carolinus"@en)
 AnnotationAssertion(obo:IAO_0000118 obo:NCBITaxon_178615 "marrow-stem kale plant"@en)
 AnnotationAssertion(go:hasDbXref obo:NCBITaxon_178615 langual:B3375)
 AnnotationAssertion(go:hasExactSynonym obo:NCBITaxon_178615 "Brassica oleracea L. var. medullosa Thell.")
@@ -82916,6 +82926,7 @@ AnnotationAssertion(go:hasDbXref obo:NCBITaxon_663597 langual:B3706)
 AnnotationAssertion(go:hasNarrowSynonym obo:NCBITaxon_663597 "Petroselinum crispum (Mill.) Nyman ex A. W. Hill var. neapolitanum Danert")
 AnnotationAssertion(go:hasSynonym obo:NCBITaxon_663597 "broadleaved parsley"@en)
 AnnotationAssertion(go:hasSynonym obo:NCBITaxon_663597 "petrosellinum crispum var. neapolitanum"@en)
+AnnotationAssertion(rdfs:label obo:NCBITaxon_70906 "Grylloidea"@en)
 AnnotationAssertion(go:hasDbXref obo:NCBITaxon_72274 langual:B2847)
 AnnotationAssertion(rdfs:seeAlso obo:NCBITaxon_72274 "The Prokaryotes, 2d ed., 1992, v.III, p.2940.")
 AnnotationAssertion(go:hasExactSynonym obo:NCBITaxon_732957 "root parsley"@en)
@@ -82925,6 +82936,14 @@ AnnotationAssertion(go:hasDbXref obo:NCBITaxon_768507 langual:B2851)
 AnnotationAssertion(go:hasExactSynonym obo:NCBITaxon_768507 "myxobacteriales")
 AnnotationAssertion(rdfs:seeAlso obo:NCBITaxon_768507 "The Prokaryotes, 2d Ed., 1992, v.IV, p.3631.")
 AnnotationAssertion(go:hasDbXref obo:NCBITaxon_7934 langual:B2700)
+AnnotationAssertion(obo:IAO_0000114 obo:NCBITaxon_8469 obo:IAO_0000428)
+AnnotationAssertion(obo:IAO_0000118 obo:NCBITaxon_8469 "green turtle"@en)
+AnnotationAssertion(go:hasDbXref obo:NCBITaxon_8469 <http://eol.org/pages/454546>)
+AnnotationAssertion(go:hasDbXref obo:NCBITaxon_8469 langual:B2412)
+AnnotationAssertion(go:hasDbXref obo:NCBITaxon_8469 asfis:tug)
+AnnotationAssertion(go:hasDbXref obo:NCBITaxon_8469 "CEC1993:1477")
+AnnotationAssertion(go:hasNarrowSynonym obo:NCBITaxon_8469 "Chelonia mydas (Linnaeus, 1758)")
+AnnotationAssertion(go:hasSynonym obo:NCBITaxon_8469 "chelonia mydas"@en)
 AnnotationAssertion(go:hasDbXref obo:NCBITaxon_85004 langual:B4578)
 AnnotationAssertion(obo:IAO_0000114 obo:NCBITaxon_8853 obo:IAO_0000122)
 AnnotationAssertion(obo:IAO_0000115 obo:NCBITaxon_8853 "The Canada goose (*Branta canadensis*) is a large wild goose species with a black head and neck, white patches on the face, and a brown body. Native to arctic and temperate regions of North America, its migration occasionally reaches northern Europe."@en)
