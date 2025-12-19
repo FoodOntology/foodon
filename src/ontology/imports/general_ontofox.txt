@@ -7,7 +7,7 @@ http://purl.obolibrary.org/obo/foodon/imports/general_import.ofn
 OBI
 
 [Low level source term URIs] 
-http://purl.obolibrary.org/obo/OBI_0100026 # organism  DUPLICATE of COB 
+#http://purl.obolibrary.org/obo/OBI_0100026 # organism  DUPLICATE of COB 
 http://purl.obolibrary.org/obo/OBI_0000181 # population
 
 http://purl.obolibrary.org/obo/OBI_0000293 # has specified input
@@ -62,9 +62,9 @@ http://purl.obolibrary.org/obo/IAO_0000039 # has measurement unit label
 http://purl.obolibrary.org/obo/IAO_0000577 # centrally registered identifier symbol
 
 # PROCESSES
-http://purl.obolibrary.org/obo/OBI_0000659 # specimen collection process
+#http://purl.obolibrary.org/obo/OBI_0000659 # specimen collection process
 http://purl.obolibrary.org/obo/OBI_0000443 # analyte assay
-http://purl.obolibrary.org/obo/OBI_0000094 # material processing
+# http://purl.obolibrary.org/obo/OBI_0000094 # material processing
 
 # RELATIONS
 http://purl.obolibrary.org/obo/IAO_0000136 # is about
@@ -96,6 +96,17 @@ subClassOf http://purl.obolibrary.org/obo/BFO_0000020
 http://purl.obolibrary.org/obo/BFO_0000141 # immaterial entity
 http://purl.obolibrary.org/obo/BFO_0000040 # material entity
 http://purl.obolibrary.org/obo/BFO_0000015 # process
+#http://purl.obolibrary.org/obo/OBI_0000011 # planned process
+http://purl.obolibrary.org/obo/COB_0000035 # completely executed planned process
+
+#http://purl.obolibrary.org/obo/OBI_0000047 # processed material
+http://purl.obolibrary.org/obo/COB_0000026 # processed material entity
+
+#http://purl.obolibrary.org/obo/OBI_0000968 # device
+http://purl.obolibrary.org/obo/COB_0001300 # device
+
+#http://purl.obolibrary.org/obo/OBI_0000094 # material processing
+http://purl.obolibrary.org/obo/COB_0000110 # material processing
 
 [Source term retrieval setting]
 includeAllIntermediates
@@ -789,8 +800,8 @@ http://purl.obolibrary.org/obo/PO_0006342 # infructescence
 
 [Top level source term URIs and target direct superclass URIs]
 http://purl.obolibrary.org/obo/PO_0009012 # plant structure development stage
-# MUST IMPORT THIS BUT NO PARENT CONTINUANT
-# http://purl.obolibrary.org/obo/UBERON_0001062 # anatomical entity
+# MUST IMPORT THIS to block PARENT CONTINUANT
+http://purl.obolibrary.org/obo/UBERON_0001062 # anatomical entity
 
 http://purl.obolibrary.org/obo/BFO_0000040 # material entity
 
@@ -906,9 +917,9 @@ STATO
 
 [Low level source term URIs]
 http://purl.obolibrary.org/obo/STATO_0000503 # simple random sampling
-http://purl.obolibrary.org/obo/STATO_0000102 # executed by
+
 [Top level source term URIs and target direct superclass URIs]
-http://purl.obolibrary.org/obo/BFO_0000015 # process
+http://purl.obolibrary.org/obo/STATO_0000502 # statistical sampling
 
 [Source term retrieval setting]
 includeAllIntermediates
@@ -1032,8 +1043,8 @@ http://purl.obolibrary.org/obo/UBERON_0001988 # feces
 [Top level source term URIs and target direct superclass URIs]
 http://purl.obolibrary.org/obo/UBERON_0000104 # life cycle
 
-# MUST IMPORT THIS BUT NO PARENT. DL problem shows up with continuant ???
-# http://purl.obolibrary.org/obo/UBERON_0001062 # anatomical entity
+# MUST IMPORT THIS to block PARENT. DL problem shows up with continuant ???
+http://purl.obolibrary.org/obo/UBERON_0001062 # anatomical entity
 
 #http://purl.obolibrary.org/obo/UBERON_0000466 # immaterial anatomical entity UNUSED
 http://purl.obolibrary.org/obo/UBERON_0000465 # material anatomical entity

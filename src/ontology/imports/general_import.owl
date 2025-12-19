@@ -471,7 +471,6 @@ Declaration(Class(obo:ENVO_00000027))
 Declaration(Class(obo:ENVO_00000029))
 Declaration(Class(obo:ENVO_00000033))
 Declaration(Class(obo:ENVO_00000043))
-Declaration(Class(obo:ENVO_00000057))
 Declaration(Class(obo:ENVO_00000063))
 Declaration(Class(obo:ENVO_00000070))
 Declaration(Class(obo:ENVO_00000073))
@@ -487,7 +486,6 @@ Declaration(Class(obo:ENVO_00000112))
 Declaration(Class(obo:ENVO_00000114))
 Declaration(Class(obo:ENVO_00000117))
 Declaration(Class(obo:ENVO_00000191))
-Declaration(Class(obo:ENVO_00000230))
 Declaration(Class(obo:ENVO_00000266))
 Declaration(Class(obo:ENVO_00000292))
 Declaration(Class(obo:ENVO_00000294))
@@ -501,6 +499,7 @@ Declaration(Class(obo:ENVO_00000519))
 Declaration(Class(obo:ENVO_00000856))
 Declaration(Class(obo:ENVO_00000873))
 Declaration(Class(obo:ENVO_00001998))
+Declaration(Class(obo:ENVO_00001999))
 Declaration(Class(obo:ENVO_00002000))
 Declaration(Class(obo:ENVO_00002001))
 Declaration(Class(obo:ENVO_00002006))
@@ -608,11 +607,9 @@ Declaration(Class(obo:ENVO_01001119))
 Declaration(Class(obo:ENVO_01001125))
 Declaration(Class(obo:ENVO_01001199))
 Declaration(Class(obo:ENVO_01001206))
-Declaration(Class(obo:ENVO_01001209))
 Declaration(Class(obo:ENVO_01001222))
 Declaration(Class(obo:ENVO_01001243))
 Declaration(Class(obo:ENVO_01001244))
-Declaration(Class(obo:ENVO_01001245))
 Declaration(Class(obo:ENVO_01001305))
 Declaration(Class(obo:ENVO_01001319))
 Declaration(Class(obo:ENVO_01001370))
@@ -631,9 +628,6 @@ Declaration(Class(obo:ENVO_01001829))
 Declaration(Class(obo:ENVO_01001873))
 Declaration(Class(obo:ENVO_01001884))
 Declaration(Class(obo:ENVO_01001886))
-Declaration(Class(obo:ENVO_01001907))
-Declaration(Class(obo:ENVO_01001910))
-Declaration(Class(obo:ENVO_01001930))
 Declaration(Class(obo:ENVO_02000001))
 Declaration(Class(obo:ENVO_02000048))
 Declaration(Class(obo:ENVO_02000054))
@@ -651,8 +645,6 @@ Declaration(Class(obo:ENVO_03501287))
 Declaration(Class(obo:ENVO_03501300))
 Declaration(Class(obo:ENVO_03501352))
 Declaration(Class(obo:ENVO_03600081))
-Declaration(Class(obo:ENVO_03605008))
-Declaration(Class(obo:ENVO_03605009))
 Declaration(Class(obo:ENVO_2000015))
 Declaration(Class(obo:ENVO_2000017))
 Declaration(Class(obo:ENVO_2000032))
@@ -773,6 +765,7 @@ Declaration(Class(obo:FLOPO_0012953))
 Declaration(Class(obo:FLOPO_0014628))
 Declaration(Class(obo:FOODON_00002403))
 Declaration(Class(obo:FOODON_00004325))
+Declaration(Class(obo:FOODON_03309997))
 Declaration(Class(obo:FOODON_03420178))
 Declaration(Class(obo:GO_0001878))
 Declaration(Class(obo:GO_0007610))
@@ -1324,6 +1317,32 @@ Declaration(Class(obo:HANCESTRO_0865))
 Declaration(Class(obo:HANCESTRO_0866))
 Declaration(Class(obo:HANCESTRO_0867))
 Declaration(Class(obo:HANCESTRO_0868))
+Declaration(Class(obo:HANCESTRO_0870))
+Declaration(Class(obo:HANCESTRO_0871))
+Declaration(Class(obo:HANCESTRO_0872))
+Declaration(Class(obo:HANCESTRO_0873))
+Declaration(Class(obo:HANCESTRO_0874))
+Declaration(Class(obo:HANCESTRO_0875))
+Declaration(Class(obo:HANCESTRO_0876))
+Declaration(Class(obo:HANCESTRO_0877))
+Declaration(Class(obo:HANCESTRO_2000))
+Declaration(Class(obo:HANCESTRO_2001))
+Declaration(Class(obo:HANCESTRO_2002))
+Declaration(Class(obo:HANCESTRO_2003))
+Declaration(Class(obo:HANCESTRO_2004))
+Declaration(Class(obo:HANCESTRO_2005))
+Declaration(Class(obo:HANCESTRO_2006))
+Declaration(Class(obo:HANCESTRO_2007))
+Declaration(Class(obo:HANCESTRO_2008))
+Declaration(Class(obo:HANCESTRO_2009))
+Declaration(Class(obo:HANCESTRO_2010))
+Declaration(Class(obo:HANCESTRO_2011))
+Declaration(Class(obo:HANCESTRO_2012))
+Declaration(Class(obo:HANCESTRO_2013))
+Declaration(Class(obo:HANCESTRO_2014))
+Declaration(Class(obo:HANCESTRO_2015))
+Declaration(Class(obo:HANCESTRO_2016))
+Declaration(Class(obo:HANCESTRO_2017))
 Declaration(Class(obo:IAO_0000005))
 Declaration(Class(obo:IAO_0000027))
 Declaration(Class(obo:IAO_0000028))
@@ -1367,8 +1386,8 @@ Declaration(Class(obo:OBI_0000437))
 Declaration(Class(obo:OBI_0000441))
 Declaration(Class(obo:OBI_0000443))
 Declaration(Class(obo:OBI_0000658))
-Declaration(Class(obo:OBI_0000659))
 Declaration(Class(obo:OBI_0000679))
+Declaration(Class(obo:OBI_0000838))
 Declaration(Class(obo:OBI_0000938))
 Declaration(Class(obo:OBI_0000967))
 Declaration(Class(obo:OBI_0000968))
@@ -1381,12 +1400,12 @@ Declaration(Class(obo:OBI_0001931))
 Declaration(Class(obo:OBI_0001933))
 Declaration(Class(obo:OBI_0002138))
 Declaration(Class(obo:OBI_0002139))
-Declaration(Class(obo:OBI_0100026))
 Declaration(Class(obo:OBI_0200000))
 Declaration(Class(obo:OBI_0200079))
 Declaration(Class(obo:OBI_0200170))
 Declaration(Class(obo:OBI_0200181))
 Declaration(Class(obo:OBI_0200184))
+Declaration(Class(obo:OBI_0302893))
 Declaration(Class(obo:OBI_1110108))
 Declaration(Class(obo:PATO_0000001))
 Declaration(Class(obo:PATO_0000011))
@@ -1877,6 +1896,7 @@ Declaration(Class(obo:UBERON_0000993))
 Declaration(Class(obo:UBERON_0001013))
 Declaration(Class(obo:UBERON_0001044))
 Declaration(Class(obo:UBERON_0001052))
+Declaration(Class(obo:UBERON_0001062))
 Declaration(Class(obo:UBERON_0001137))
 Declaration(Class(obo:UBERON_0001155))
 Declaration(Class(obo:UBERON_0001264))
@@ -2174,6 +2194,7 @@ Declaration(ObjectProperty(obo:RO_0002233))
 Declaration(ObjectProperty(obo:RO_0002234))
 Declaration(ObjectProperty(obo:RO_0002350))
 Declaration(ObjectProperty(obo:RO_0002351))
+Declaration(ObjectProperty(obo:RO_0002352))
 Declaration(ObjectProperty(obo:RO_0002353))
 Declaration(ObjectProperty(obo:RO_0002354))
 Declaration(ObjectProperty(obo:RO_0002371))
@@ -2186,7 +2207,6 @@ Declaration(ObjectProperty(obo:RO_0009003))
 Declaration(ObjectProperty(obo:RO_0009004))
 Declaration(ObjectProperty(obo:RO_0009005))
 Declaration(ObjectProperty(obo:RO_HOM0000000))
-Declaration(ObjectProperty(obo:STATO_0000102))
 Declaration(NamedIndividual(obo:IAO_0000002))
 Declaration(NamedIndividual(obo:IAO_0000120))
 Declaration(NamedIndividual(obo:IAO_0000121))
@@ -2453,7 +2473,7 @@ AnnotationAssertion(rdfs:label rdfs:label "label"@en)
 #   Object Properties
 ############################
 
-# Object Property: obo:BFO_0000050 (part_of)
+# Object Property: obo:BFO_0000050 (part of)
 
 AnnotationAssertion(obo:IAO_0000115 obo:BFO_0000050 "a core relation that holds between a part and its whole"@en)
 AnnotationAssertion(obo:IAO_0000118 obo:BFO_0000050 "part_of"@en)
@@ -2487,7 +2507,7 @@ AnnotationAssertion(obo:IAO_0000115 obo:BFO_0000055 "Paraphrase of elucidation: 
 AnnotationAssertion(obo:IAO_0000412 obo:BFO_0000055 obo:ro.owl)
 AnnotationAssertion(rdfs:label obo:BFO_0000055 "realizes"@en)
 
-# Object Property: obo:BFO_0000062 (preceded by)
+# Object Property: obo:BFO_0000062 (preceded_by)
 
 AnnotationAssertion(rdfs:label obo:BFO_0000062 "preceded by"@en)
 AnnotationAssertion(rdfs:label obo:BFO_0000062 "preceded_by")
@@ -2557,7 +2577,7 @@ AnnotationAssertion(obo:IAO_0000412 obo:OBI_0001927 obo:obi.owl)
 AnnotationAssertion(rdfs:label obo:OBI_0001927 "specifies value of")
 SubObjectPropertyOf(obo:OBI_0001927 obo:IAO_0000136)
 
-# Object Property: obo:RO_0000052 (inheres in)
+# Object Property: obo:RO_0000052 (characteristic of)
 
 AnnotationAssertion(obo:IAO_0000115 obo:RO_0000052 "a relation between a specifically dependent continuant (the characteristic) and any other entity (the bearer), in which the characteristic depends on the bearer for its existence."@en)
 AnnotationAssertion(obo:IAO_0000118 obo:RO_0000052 "inheres_in"@en)
@@ -2565,7 +2585,7 @@ AnnotationAssertion(obo:IAO_0000412 obo:RO_0000052 obo:ro.owl)
 AnnotationAssertion(rdfs:label obo:RO_0000052 "characteristic of"@en)
 FunctionalObjectProperty(obo:RO_0000052)
 
-# Object Property: obo:RO_0000053 (bearer of)
+# Object Property: obo:RO_0000053 (has characteristic)
 
 AnnotationAssertion(obo:IAO_0000115 obo:RO_0000053 "Inverse of characteristic_of"@en)
 AnnotationAssertion(obo:IAO_0000118 obo:RO_0000053 "bearer_of"@en)
@@ -2583,7 +2603,7 @@ AnnotationAssertion(obo:IAO_0000412 obo:RO_0000056 obo:ro.owl)
 AnnotationAssertion(rdfs:label obo:RO_0000056 "participates in"@en)
 AnnotationAssertion(rdfs:label obo:RO_0000056 "participates_in")
 
-# Object Property: obo:RO_0000057 (has participant)
+# Object Property: obo:RO_0000057 (has_participant)
 
 AnnotationAssertion(obo:IAO_0000115 obo:RO_0000057 "a relation between a process and a continuant, in which the continuant is somehow involved in the process"@en)
 AnnotationAssertion(obo:IAO_0000118 obo:RO_0000057 "has_participant"@en)
@@ -2690,7 +2710,7 @@ AnnotationAssertion(rdfs:label obo:RO_0001025 "located in"@en)
 AnnotationAssertion(rdfs:label obo:RO_0001025 "located_in")
 TransitiveObjectProperty(obo:RO_0001025)
 
-# Object Property: obo:RO_0002160 (only in taxon)
+# Object Property: obo:RO_0002160 (only_in_taxon)
 
 AnnotationAssertion(rdfs:label obo:RO_0002160 "only in taxon")
 AnnotationAssertion(rdfs:label obo:RO_0002160 "only_in_taxon")
@@ -2798,12 +2818,16 @@ AnnotationAssertion(obo:IAO_0000412 obo:RO_0002351 obo:ro.owl)
 AnnotationAssertion(rdfs:label obo:RO_0002351 "has member"@en)
 IrreflexiveObjectProperty(obo:RO_0002351)
 
+# Object Property: obo:RO_0002352 (input of)
+
+AnnotationAssertion(obo:IAO_0000115 obo:RO_0002352 "inverse of has input")
+AnnotationAssertion(obo:IAO_0000412 obo:RO_0002352 obo:ro.owl)
+AnnotationAssertion(rdfs:label obo:RO_0002352 "input of"@en)
+
 # Object Property: obo:RO_0002353 (output of)
 
-AnnotationAssertion(obo:IAO_0000115 obo:RO_0002353 "inverse of has input")
 AnnotationAssertion(obo:IAO_0000115 obo:RO_0002353 "inverse of has output")
 AnnotationAssertion(obo:IAO_0000412 obo:RO_0002353 obo:ro.owl)
-AnnotationAssertion(rdfs:label obo:RO_0002353 "input of"@en)
 AnnotationAssertion(rdfs:label obo:RO_0002353 "output of"@en)
 
 # Object Property: obo:RO_0002354 (formed as result of)
@@ -2884,13 +2908,6 @@ AnnotationAssertion(obo:IAO_0000115 obo:RO_HOM0000000 "Relation between biologic
 AnnotationAssertion(obo:IAO_0000412 obo:RO_HOM0000000 obo:ro.owl)
 AnnotationAssertion(rdfs:label obo:RO_HOM0000000 "in similarity relationship with")
 SymmetricObjectProperty(obo:RO_HOM0000000)
-
-# Object Property: obo:STATO_0000102 (executes)
-
-AnnotationAssertion(obo:IAO_0000115 obo:STATO_0000102 "relationship between a planned process and the plan specification that it carries out; it is defined as equivalent to the composed relationship (realizes o concretizes)"@en)
-AnnotationAssertion(obo:IAO_0000119 obo:STATO_0000102 "AGB")
-AnnotationAssertion(obo:IAO_0000412 obo:STATO_0000102 obo:stato.owl)
-AnnotationAssertion(rdfs:label obo:STATO_0000102 "executes")
 
 
 
@@ -5740,7 +5757,6 @@ AnnotationAssertion(obo:IAO_0000412 obo:BFO_0000015 obo:agro.owl)
 AnnotationAssertion(obo:IAO_0000412 obo:BFO_0000015 obo:ecocore.owl)
 AnnotationAssertion(obo:IAO_0000412 obo:BFO_0000015 obo:envo.owl)
 AnnotationAssertion(obo:IAO_0000412 obo:BFO_0000015 obo:obi.owl)
-AnnotationAssertion(obo:IAO_0000412 obo:BFO_0000015 obo:stato.owl)
 AnnotationAssertion(obo:IAO_0000412 obo:BFO_0000015 obo:uberon.owl)
 AnnotationAssertion(rdfs:label obo:BFO_0000015 "process")
 AnnotationAssertion(rdfs:label obo:BFO_0000015 "process"@en)
@@ -6132,18 +6148,18 @@ SubClassOf(obo:ENVO_00000002 obo:ENVO_00000000)
 
 # Class: obo:ENVO_00000015 (ocean)
 
-AnnotationAssertion(obo:IAO_0000115 obo:ENVO_00000015 "A lentic water body which has been formed as a result of oceanogenesis and constitutes the majority of an astronomical body's hydrosphere.")
+AnnotationAssertion(obo:IAO_0000115 obo:ENVO_00000015 "A marine water body which is constitutes the majority of an astronomical body's hydrosphere.")
 AnnotationAssertion(obo:IAO_0000412 obo:ENVO_00000015 obo:envo.owl)
 AnnotationAssertion(rdfs:label obo:ENVO_00000015 "ocean")
-SubClassOf(obo:ENVO_00000015 obo:ENVO_01000617)
+SubClassOf(obo:ENVO_00000015 obo:ENVO_00001999)
 SubClassOf(obo:ENVO_00000015 obo:ENVO_01001319)
 
 # Class: obo:ENVO_00000016 (sea)
 
-AnnotationAssertion(obo:IAO_0000115 obo:ENVO_00000016 "A lentic water body which is wholly or partly surrounded by land and either connected to or derived from a part of an ocean.")
+AnnotationAssertion(obo:IAO_0000115 obo:ENVO_00000016 "A large expanse of saline water usually connected with an ocean.")
 AnnotationAssertion(obo:IAO_0000412 obo:ENVO_00000016 obo:envo.owl)
 AnnotationAssertion(rdfs:label obo:ENVO_00000016 "sea")
-SubClassOf(obo:ENVO_00000016 obo:ENVO_01000617)
+SubClassOf(obo:ENVO_00000016 obo:ENVO_00001999)
 SubClassOf(obo:ENVO_00000016 obo:ENVO_01001319)
 
 # Class: obo:ENVO_00000020 (lake)
@@ -6202,13 +6218,6 @@ AnnotationAssertion(obo:IAO_0000412 obo:ENVO_00000043 obo:envo.owl)
 AnnotationAssertion(rdfs:label obo:ENVO_00000043 "wetland area")
 SubClassOf(obo:ENVO_00000043 obo:ENVO_01001305)
 
-# Class: obo:ENVO_00000057 (mangrove swamp)
-
-AnnotationAssertion(obo:IAO_0000115 obo:ENVO_00000057 "A swamp which is located in tropical or subtropical environments and is determined by communities of trees and shrubs growing saline coastal environments.")
-AnnotationAssertion(obo:IAO_0000412 obo:ENVO_00000057 obo:envo.owl)
-AnnotationAssertion(rdfs:label obo:ENVO_00000057 "mangrove swamp")
-SubClassOf(obo:ENVO_00000057 obo:ENVO_00000230)
-
 # Class: obo:ENVO_00000063 (water body)
 
 AnnotationAssertion(obo:IAO_0000115 obo:ENVO_00000063 "An accumulation of water of varying size.")
@@ -6221,6 +6230,7 @@ SubClassOf(obo:ENVO_00000063 obo:ENVO_01000685)
 AnnotationAssertion(obo:IAO_0000115 obo:ENVO_00000070 "A construction that has been assembled by deliberate human effort.")
 AnnotationAssertion(obo:IAO_0000412 obo:ENVO_00000070 obo:envo.owl)
 AnnotationAssertion(rdfs:label obo:ENVO_00000070 "human construction")
+SubClassOf(obo:ENVO_00000070 obo:ENVO_01000813)
 SubClassOf(obo:ENVO_00000070 obo:ENVO_01001813)
 
 # Class: obo:ENVO_00000073 (building)
@@ -6232,7 +6242,6 @@ SubClassOf(obo:ENVO_00000073 obo:ENVO_00000070)
 
 # Class: obo:ENVO_00000077 (agricultural ecosystem)
 
-AnnotationAssertion(obo:IAO_0000115 obo:ENVO_00000077 "An ecosystem which either 1) has its functions and composition determined by agricultural processes or entities or 2) is formed as the result of an agricultural land conversion process.")
 AnnotationAssertion(obo:IAO_0000412 obo:ENVO_00000077 obo:envo.owl)
 AnnotationAssertion(rdfs:label obo:ENVO_00000077 "agricultural ecosystem")
 SubClassOf(obo:ENVO_00000077 obo:ENVO_01001828)
@@ -6315,13 +6324,6 @@ AnnotationAssertion(obo:IAO_0000412 obo:ENVO_00000191 obo:envo.owl)
 AnnotationAssertion(rdfs:label obo:ENVO_00000191 "solid astronomical body part")
 SubClassOf(obo:ENVO_00000191 obo:ENVO_01001784)
 
-# Class: obo:ENVO_00000230 (coastal wetland ecosystem)
-
-AnnotationAssertion(obo:IAO_0000115 obo:ENVO_00000230 "A wetland ecosystem which overlaps both terrestrial and marine ecosystems.")
-AnnotationAssertion(obo:IAO_0000412 obo:ENVO_00000230 obo:envo.owl)
-AnnotationAssertion(rdfs:label obo:ENVO_00000230 "coastal wetland ecosystem")
-SubClassOf(obo:ENVO_00000230 obo:ENVO_01001209)
-
 # Class: obo:ENVO_00000266 (pasture)
 
 AnnotationAssertion(obo:IAO_0000115 obo:ENVO_00000266 "A grassland ecosystem which is used for grazing of ungulate livestock as part of a farm or ranch.")
@@ -6368,7 +6370,7 @@ SubClassOf(obo:ENVO_00000428 obo:ENVO_01001110)
 
 # Class: obo:ENVO_00000446 (terrestrial biome)
 
-AnnotationAssertion(obo:IAO_0000115 obo:ENVO_00000446 "A terrestrial ecosystem which is in its climactic successional state.")
+AnnotationAssertion(obo:IAO_0000115 obo:ENVO_00000446 "A biome which is  primarily or completely situated on a landmass.")
 AnnotationAssertion(obo:IAO_0000412 obo:ENVO_00000446 obo:envo.owl)
 AnnotationAssertion(rdfs:label obo:ENVO_00000446 "terrestrial biome")
 SubClassOf(obo:ENVO_00000446 obo:ENVO_00000428)
@@ -6376,7 +6378,7 @@ SubClassOf(obo:ENVO_00000446 obo:ENVO_01001790)
 
 # Class: obo:ENVO_00000447 (marine biome)
 
-AnnotationAssertion(obo:IAO_0000115 obo:ENVO_00000447 "A marine ecosystem which is in its climactic successional state.")
+AnnotationAssertion(obo:IAO_0000115 obo:ENVO_00000447 "An aquatic biome which is determined by a marine water body.")
 AnnotationAssertion(obo:IAO_0000412 obo:ENVO_00000447 obo:envo.owl)
 AnnotationAssertion(rdfs:label obo:ENVO_00000447 "marine biome")
 SubClassOf(obo:ENVO_00000447 obo:ENVO_00002030)
@@ -6406,7 +6408,7 @@ SubClassOf(obo:ENVO_00000856 obo:ENVO_01000658)
 
 # Class: obo:ENVO_00000873 (freshwater biome)
 
-AnnotationAssertion(obo:IAO_0000115 obo:ENVO_00000873 "An freshwater ecosystem which is in its climactic successional state.")
+AnnotationAssertion(obo:IAO_0000115 obo:ENVO_00000873 "An aquatic biome which is determined by a body of freshwater.")
 AnnotationAssertion(obo:IAO_0000412 obo:ENVO_00000873 obo:envo.owl)
 AnnotationAssertion(rdfs:label obo:ENVO_00000873 "freshwater biome")
 SubClassOf(obo:ENVO_00000873 obo:ENVO_00002030)
@@ -6419,6 +6421,13 @@ AnnotationAssertion(obo:IAO_0000412 obo:ENVO_00001998 obo:envo.owl)
 AnnotationAssertion(rdfs:label obo:ENVO_00001998 "soil")
 SubClassOf(obo:ENVO_00001998 obo:ENVO_00010483)
 SubClassOf(obo:ENVO_00001998 obo:ENVO_01000813)
+
+# Class: obo:ENVO_00001999 (marine water body)
+
+AnnotationAssertion(obo:IAO_0000115 obo:ENVO_00001999 "A lentic water body which is composed primarily of marine water."@en)
+AnnotationAssertion(obo:IAO_0000412 obo:ENVO_00001999 obo:envo.owl)
+AnnotationAssertion(rdfs:label obo:ENVO_00001999 "marine water body")
+SubClassOf(obo:ENVO_00001999 obo:ENVO_01000617)
 
 # Class: obo:ENVO_00002000 (slope)
 
@@ -6478,11 +6487,11 @@ AnnotationAssertion(rdfs:label obo:ENVO_00002040 "wood")
 SubClassOf(obo:ENVO_00002040 obo:ENVO_01000155)
 SubClassOf(obo:ENVO_00002040 obo:ENVO_01000814)
 
-# Class: obo:ENVO_00002149 (ocean water)
+# Class: obo:ENVO_00002149 (sea water)
 
-AnnotationAssertion(obo:IAO_0000115 obo:ENVO_00002149 "Saline water which has has been formed as a result of oceanogenesis and which has its composition and properties maintained through processes including hydrological cycling, continental weathering, porewater burial, mineral deposition, ion exchange reactions, and ecological processes.")
+AnnotationAssertion(obo:IAO_0000115 obo:ENVO_00002149 "Water which has physicochemical properties that have been determined by the processes occuring in a sea or ocean.")
 AnnotationAssertion(obo:IAO_0000412 obo:ENVO_00002149 obo:envo.owl)
-AnnotationAssertion(rdfs:label obo:ENVO_00002149 "ocean water")
+AnnotationAssertion(rdfs:label obo:ENVO_00002149 "sea water")
 SubClassOf(obo:ENVO_00002149 obo:ENVO_00002010)
 
 # Class: obo:ENVO_00002158 (ditch water)
@@ -6778,7 +6787,7 @@ SubClassOf(obo:ENVO_01000155 obo:ENVO_00010483)
 
 # Class: obo:ENVO_01000174 (forest biome)
 
-AnnotationAssertion(obo:IAO_0000115 obo:ENVO_01000174 "A forest ecosystem which is in its climactic successional state."@en)
+AnnotationAssertion(obo:IAO_0000115 obo:ENVO_01000174 "A forest ecosystem which is undergoing climactic ecological succession."@en)
 AnnotationAssertion(obo:IAO_0000412 obo:ENVO_01000174 obo:envo.owl)
 AnnotationAssertion(rdfs:label obo:ENVO_01000174 "forest biome")
 SubClassOf(obo:ENVO_01000174 obo:ENVO_00000446)
@@ -6786,11 +6795,10 @@ SubClassOf(obo:ENVO_01000174 obo:ENVO_01001243)
 
 # Class: obo:ENVO_01000175 (woodland biome)
 
-AnnotationAssertion(obo:IAO_0000115 obo:ENVO_01000175 "A woodland ecosystem which is in its climactic successional state.")
+AnnotationAssertion(obo:IAO_0000115 obo:ENVO_01000175 "A woodland biome is a terrestrial biome which includes, across its entire spatial extent, woody plants spaced sufficiently far apart to allow light penetration to support communities of herbaceous plants or shrubs living closer to the woodland floor.")
 AnnotationAssertion(obo:IAO_0000412 obo:ENVO_01000175 obo:envo.owl)
 AnnotationAssertion(rdfs:label obo:ENVO_01000175 "woodland biome")
 SubClassOf(obo:ENVO_01000175 obo:ENVO_00000446)
-SubClassOf(obo:ENVO_01000175 obo:ENVO_01001245)
 
 # Class: obo:ENVO_01000176 (shrubland biome)
 
@@ -6801,7 +6809,7 @@ SubClassOf(obo:ENVO_01000176 obo:ENVO_00000446)
 
 # Class: obo:ENVO_01000177 (grassland biome)
 
-AnnotationAssertion(obo:IAO_0000115 obo:ENVO_01000177 "A grassland ecosystem which is in its climactic successional state.")
+AnnotationAssertion(obo:IAO_0000115 obo:ENVO_01000177 "A grassland ecosystem in which dominant ecological communities have reached their climax successional state.")
 AnnotationAssertion(obo:IAO_0000412 obo:ENVO_01000177 obo:envo.owl)
 AnnotationAssertion(rdfs:label obo:ENVO_01000177 "grassland biome")
 SubClassOf(obo:ENVO_01000177 obo:ENVO_00000446)
@@ -6809,7 +6817,7 @@ SubClassOf(obo:ENVO_01000177 obo:ENVO_01001206)
 
 # Class: obo:ENVO_01000179 (desert biome)
 
-AnnotationAssertion(obo:IAO_0000115 obo:ENVO_01000179 "A desert ecosystem which is in its climactic successional state."@en)
+AnnotationAssertion(obo:IAO_0000115 obo:ENVO_01000179 "A desert ecosystem which is undergoing climactic ecological succession."@en)
 AnnotationAssertion(obo:IAO_0000412 obo:ENVO_01000179 obo:envo.owl)
 AnnotationAssertion(rdfs:label obo:ENVO_01000179 "desert biome")
 SubClassOf(obo:ENVO_01000179 obo:ENVO_00000428)
@@ -6817,7 +6825,7 @@ SubClassOf(obo:ENVO_01000179 obo:ENVO_01001780)
 
 # Class: obo:ENVO_01000180 (tundra biome)
 
-AnnotationAssertion(obo:IAO_0000115 obo:ENVO_01000180 "A tundra ecosystem which is in its climactic successional state."@en)
+AnnotationAssertion(obo:IAO_0000115 obo:ENVO_01000180 "A tundra ecosystem which is undergoing climactic ecological succession."@en)
 AnnotationAssertion(obo:IAO_0000412 obo:ENVO_01000180 obo:envo.owl)
 AnnotationAssertion(rdfs:label obo:ENVO_01000180 "tundra biome")
 SubClassOf(obo:ENVO_01000180 obo:ENVO_00000446)
@@ -6825,11 +6833,10 @@ SubClassOf(obo:ENVO_01000180 obo:ENVO_01001370)
 
 # Class: obo:ENVO_01000181 (mangrove biome)
 
-AnnotationAssertion(obo:IAO_0000115 obo:ENVO_01000181 "A mangrove ecosystem which is in its climactic successional state.")
+AnnotationAssertion(obo:IAO_0000115 obo:ENVO_01000181 "A mangrove biome is a terrestrial biome which includes, across its spatial extent, mangrove plants (Rhizophoraceae). Mangrove plants are able to withstand high levels of salinity as well as regions of anoxia and frequent tidal inundation. Mangrove biomes often occur near tropical and sub-tropical estuaries and depositional marine coastal environments where fine sediments (often with high organic content) collect in areas protected from high energy wave action.")
 AnnotationAssertion(obo:IAO_0000412 obo:ENVO_01000181 obo:envo.owl)
 AnnotationAssertion(rdfs:label obo:ENVO_01000181 "mangrove biome")
-SubClassOf(obo:ENVO_01000181 obo:ENVO_00000057)
-SubClassOf(obo:ENVO_01000181 obo:ENVO_00000428)
+SubClassOf(obo:ENVO_01000181 obo:ENVO_00000446)
 
 # Class: obo:ENVO_01000219 (anthropogenic terrestrial biome)
 
@@ -6841,7 +6848,7 @@ SubClassOf(obo:ENVO_01000219 obo:ENVO_01001828)
 
 # Class: obo:ENVO_01000245 (cropland biome)
 
-AnnotationAssertion(obo:IAO_0000115 obo:ENVO_01000245 "A cropland ecosystem which is in its climactic successional state."@en)
+AnnotationAssertion(obo:IAO_0000115 obo:ENVO_01000245 "A cropland ecosystem which is undergoing climactic ecological succession."@en)
 AnnotationAssertion(obo:IAO_0000412 obo:ENVO_01000245 obo:envo.owl)
 AnnotationAssertion(rdfs:label obo:ENVO_01000245 "cropland biome")
 SubClassOf(obo:ENVO_01000245 obo:ENVO_01000219)
@@ -6849,27 +6856,24 @@ SubClassOf(obo:ENVO_01000245 obo:ENVO_01001244)
 
 # Class: obo:ENVO_01000247 (rangeland biome)
 
-AnnotationAssertion(obo:IAO_0000115 obo:ENVO_01000247 "A rangeland ecosystem which has reached its climactic successional state.")
+AnnotationAssertion(obo:IAO_0000115 obo:ENVO_01000247 "A rangeland biome is an anthropogenic terrestrial biome which is primarily used for the rearing and grazing of livestock.")
 AnnotationAssertion(obo:IAO_0000412 obo:ENVO_01000247 obo:envo.owl)
 AnnotationAssertion(rdfs:label obo:ENVO_01000247 "rangeland biome")
-SubClassOf(obo:ENVO_01000247 obo:ENVO_00000446)
-SubClassOf(obo:ENVO_01000247 obo:ENVO_01001930)
+SubClassOf(obo:ENVO_01000247 obo:ENVO_01000219)
 
 # Class: obo:ENVO_01000252 (freshwater lake biome)
 
-AnnotationAssertion(obo:IAO_0000115 obo:ENVO_01000252 "A freshwater lake ecosystem which is in its climactic successional state.")
+AnnotationAssertion(obo:IAO_0000115 obo:ENVO_01000252 "A biome which is determined by a freshwater lake.")
 AnnotationAssertion(obo:IAO_0000412 obo:ENVO_01000252 obo:envo.owl)
 AnnotationAssertion(rdfs:label obo:ENVO_01000252 "freshwater lake biome")
 SubClassOf(obo:ENVO_01000252 obo:ENVO_00000873)
-SubClassOf(obo:ENVO_01000252 obo:ENVO_01001907)
 
 # Class: obo:ENVO_01000253 (freshwater river biome)
 
-AnnotationAssertion(obo:IAO_0000115 obo:ENVO_01000253 "A freshwater river ecosystem which is in its climactic successional state."@en)
+AnnotationAssertion(obo:IAO_0000115 obo:ENVO_01000253 "A freshwater biome which is determined by a freshwater river."@en)
 AnnotationAssertion(obo:IAO_0000412 obo:ENVO_01000253 obo:envo.owl)
 AnnotationAssertion(rdfs:label obo:ENVO_01000253 "freshwater river biome")
-SubClassOf(obo:ENVO_01000253 obo:ENVO_01001910)
-SubClassOf(obo:ENVO_01000253 obo:ENVO_03605008)
+SubClassOf(obo:ENVO_01000253 obo:ENVO_00000873)
 
 # Class: obo:ENVO_01000254 (environmental system)
 
@@ -6894,10 +6898,11 @@ SubClassOf(obo:ENVO_01000313 obo:ENVO_01000254)
 
 # Class: obo:ENVO_01000320 (marine environment)
 
-AnnotationAssertion(obo:IAO_0000115 obo:ENVO_01000320 "An enviroment system which is determined by an ocean or sea.")
+AnnotationAssertion(obo:IAO_0000115 obo:ENVO_01000320 "A marine environment and enviroment which is determined by a marine water body.")
 AnnotationAssertion(obo:IAO_0000412 obo:ENVO_01000320 obo:envo.owl)
 AnnotationAssertion(rdfs:label obo:ENVO_01000320 "marine environment")
 SubClassOf(obo:ENVO_01000320 obo:ENVO_01000254)
+SubClassOf(obo:ENVO_01000320 obo:ENVO_01000813)
 
 # Class: obo:ENVO_01000352 (field)
 
@@ -7179,13 +7184,6 @@ AnnotationAssertion(obo:IAO_0000412 obo:ENVO_01001206 obo:envo.owl)
 AnnotationAssertion(rdfs:label obo:ENVO_01001206 "grassland ecosystem"@en)
 SubClassOf(obo:ENVO_01001206 obo:ENVO_01001790)
 
-# Class: obo:ENVO_01001209 (wetland ecosystem)
-
-AnnotationAssertion(obo:IAO_0000115 obo:ENVO_01001209 "A terrestrial ecosystem which is inundated or saturated by surface or ground water at a frequency and duration sufficient to support, and that under normal circumstances does support, a prevalence of vegetation typically adapted for life in saturated soil conditions.")
-AnnotationAssertion(obo:IAO_0000412 obo:ENVO_01001209 obo:envo.owl)
-AnnotationAssertion(rdfs:label obo:ENVO_01001209 "wetland ecosystem"@en)
-SubClassOf(obo:ENVO_01001209 obo:ENVO_01001110)
-
 # Class: obo:ENVO_01001222 (commercial building)
 
 AnnotationAssertion(obo:IAO_0000115 obo:ENVO_01001222 "A building which is primarily used to facilitate the buying or selling of goods or services.")
@@ -7193,11 +7191,11 @@ AnnotationAssertion(obo:IAO_0000412 obo:ENVO_01001222 obo:envo.owl)
 AnnotationAssertion(rdfs:label obo:ENVO_01001222 "commercial building"@en)
 SubClassOf(obo:ENVO_01001222 obo:ENVO_00000073)
 
-# Class: obo:ENVO_01001243 (forest)
+# Class: obo:ENVO_01001243 (forest ecosystem)
 
 AnnotationAssertion(obo:IAO_0000115 obo:ENVO_01001243 "An ecosystem which is determined by communities of plants with a tree growth form and in which members of those communities form continuous or discontinuous regions of canopy cover.")
 AnnotationAssertion(obo:IAO_0000412 obo:ENVO_01001243 obo:envo.owl)
-AnnotationAssertion(rdfs:label obo:ENVO_01001243 "forest"@en)
+AnnotationAssertion(rdfs:label obo:ENVO_01001243 "forest ecosystem"@en)
 SubClassOf(obo:ENVO_01001243 obo:ENVO_01001790)
 
 # Class: obo:ENVO_01001244 (cropland ecosystem)
@@ -7207,13 +7205,6 @@ AnnotationAssertion(obo:IAO_0000412 obo:ENVO_01001244 obo:envo.owl)
 AnnotationAssertion(rdfs:label obo:ENVO_01001244 "cropland ecosystem"@en)
 SubClassOf(obo:ENVO_01001244 obo:ENVO_01001790)
 SubClassOf(obo:ENVO_01001244 obo:ENVO_01001828)
-
-# Class: obo:ENVO_01001245 (woodland ecosystem)
-
-AnnotationAssertion(obo:IAO_0000115 obo:ENVO_01001245 "An ecosystem which is determined by communities of plants with a tree growth form and in which members of those communities are spaced sufficiently far apart to allow sunlight to illuminate the understory.")
-AnnotationAssertion(obo:IAO_0000412 obo:ENVO_01001245 obo:envo.owl)
-AnnotationAssertion(rdfs:label obo:ENVO_01001245 "woodland ecosystem"@en)
-SubClassOf(obo:ENVO_01001245 obo:ENVO_01001790)
 
 # Class: obo:ENVO_01001305 (vegetated area)
 
@@ -7275,7 +7266,6 @@ SubClassOf(obo:ENVO_01001784 obo:ENVO_01000813)
 
 # Class: obo:ENVO_01001787 (aquatic ecosystem)
 
-AnnotationAssertion(obo:IAO_0000115 obo:ENVO_01001787 "An ecosystem which has its functions and composition determined by a water body.")
 AnnotationAssertion(obo:IAO_0000412 obo:ENVO_01001787 obo:envo.owl)
 AnnotationAssertion(rdfs:label obo:ENVO_01001787 "aquatic ecosystem"@en)
 SubClassOf(obo:ENVO_01001787 obo:ENVO_01000813)
@@ -7290,7 +7280,6 @@ SubClassOf(obo:ENVO_01001788 obo:ENVO_01001787)
 
 # Class: obo:ENVO_01001789 (freshwater ecosystem)
 
-AnnotationAssertion(obo:IAO_0000115 obo:ENVO_01001789 "An aquatic ecosystem which has its functions and composition determined by a body of fresh water.")
 AnnotationAssertion(obo:IAO_0000412 obo:ENVO_01001789 obo:envo.owl)
 AnnotationAssertion(rdfs:label obo:ENVO_01001789 "freshwater ecosystem"@en)
 SubClassOf(obo:ENVO_01001789 obo:ENVO_01001787)
@@ -7324,6 +7313,7 @@ SubClassOf(obo:ENVO_01001828 obo:ENVO_01001110)
 AnnotationAssertion(obo:IAO_0000115 obo:ENVO_01001829 "An anthropised ecosystem which is determined by the presence of humans and their constructions."@en)
 AnnotationAssertion(obo:IAO_0000412 obo:ENVO_01001829 obo:envo.owl)
 AnnotationAssertion(rdfs:label obo:ENVO_01001829 "human settlement"@en)
+SubClassOf(obo:ENVO_01001829 obo:ENVO_01000813)
 SubClassOf(obo:ENVO_01001829 obo:ENVO_01001002)
 SubClassOf(obo:ENVO_01001829 obo:ENVO_01001055)
 SubClassOf(obo:ENVO_01001829 obo:ENVO_01001828)
@@ -7349,28 +7339,6 @@ AnnotationAssertion(obo:IAO_0000412 obo:ENVO_01001886 obo:envo.owl)
 AnnotationAssertion(rdfs:label obo:ENVO_01001886 "landform"@en)
 SubClassOf(obo:ENVO_01001886 obo:ENVO_00000191)
 
-# Class: obo:ENVO_01001907 (freshwater lake ecosystem)
-
-AnnotationAssertion(obo:IAO_0000115 obo:ENVO_01001907 "A freshwater ecosystem which has its functions and composition determined by a freshwater lake.")
-AnnotationAssertion(obo:IAO_0000412 obo:ENVO_01001907 obo:envo.owl)
-AnnotationAssertion(rdfs:label obo:ENVO_01001907 "freshwater lake ecosystem"@en)
-SubClassOf(obo:ENVO_01001907 obo:ENVO_01001789)
-
-# Class: obo:ENVO_01001910 (freshwater river ecosystem)
-
-AnnotationAssertion(obo:IAO_0000115 obo:ENVO_01001910 "A freshwater stream ecosystem which has its functions and composition determined by a freshwater river.")
-AnnotationAssertion(obo:IAO_0000412 obo:ENVO_01001910 obo:envo.owl)
-AnnotationAssertion(rdfs:label obo:ENVO_01001910 "freshwater river ecosystem"@en)
-SubClassOf(obo:ENVO_01001910 obo:ENVO_01000997)
-SubClassOf(obo:ENVO_01001910 obo:ENVO_03605009)
-
-# Class: obo:ENVO_01001930 (rangeland ecosystem)
-
-AnnotationAssertion(obo:IAO_0000115 obo:ENVO_01001930 "An terrestrial ecosystem which is primarily used for the rearing and grazing of livestock.")
-AnnotationAssertion(obo:IAO_0000412 obo:ENVO_01001930 obo:envo.owl)
-AnnotationAssertion(rdfs:label obo:ENVO_01001930 "rangeland ecosystem"@en)
-SubClassOf(obo:ENVO_01001930 obo:ENVO_01001790)
-
 # Class: obo:ENVO_02000001 (textile)
 
 AnnotationAssertion(obo:IAO_0000115 obo:ENVO_02000001 "A textile is a manufactured product comprised of a network of natural or artificial fibers (often referred to as thread or yarn).")
@@ -7383,7 +7351,7 @@ SubClassOf(obo:ENVO_02000001 obo:ENVO_00003074)
 AnnotationAssertion(obo:IAO_0000115 obo:ENVO_02000048 "Contaminated animal feed is an animal feed that has become contaminated with or come contact with microorganisms or toxic chemicals.")
 AnnotationAssertion(obo:IAO_0000412 obo:ENVO_02000048 obo:envo.owl)
 AnnotationAssertion(rdfs:label obo:ENVO_02000048 "contaminated animal feed")
-SubClassOf(obo:ENVO_02000048 obo:FOODON_00004325)
+SubClassOf(obo:ENVO_02000048 obo:FOODON_03309997)
 
 # Class: obo:ENVO_02000054 (bone meal)
 
@@ -7488,21 +7456,6 @@ AnnotationAssertion(obo:IAO_0000115 obo:ENVO_03600081 "Fresh water which is harv
 AnnotationAssertion(obo:IAO_0000412 obo:ENVO_03600081 obo:envo.owl)
 AnnotationAssertion(rdfs:label obo:ENVO_03600081 "cloud water"@en)
 SubClassOf(obo:ENVO_03600081 obo:ENVO_00002011)
-
-# Class: obo:ENVO_03605008 (freshwater stream biome)
-
-AnnotationAssertion(obo:IAO_0000115 obo:ENVO_03605008 "A freshwater stream ecosystem which is in its climactic successional state.")
-AnnotationAssertion(obo:IAO_0000412 obo:ENVO_03605008 obo:envo.owl)
-AnnotationAssertion(rdfs:label obo:ENVO_03605008 "freshwater stream biome"@en)
-SubClassOf(obo:ENVO_03605008 obo:ENVO_00000873)
-SubClassOf(obo:ENVO_03605008 obo:ENVO_03605009)
-
-# Class: obo:ENVO_03605009 (freshwater stream ecosystem)
-
-AnnotationAssertion(obo:IAO_0000115 obo:ENVO_03605009 "An ecosystem which has its functions and composition determined by a freshwater stream.")
-AnnotationAssertion(obo:IAO_0000412 obo:ENVO_03605009 obo:envo.owl)
-AnnotationAssertion(rdfs:label obo:ENVO_03605009 "freshwater stream ecosystem"@en)
-SubClassOf(obo:ENVO_03605009 obo:ENVO_01001789)
 
 # Class: obo:ENVO_2000015 (energy)
 
@@ -10434,473 +10387,473 @@ SubClassOf(obo:HANCESTRO_0631 obo:HANCESTRO_0611)
 AnnotationAssertion(obo:IAO_0000115 obo:HANCESTRO_0633 "A population made up of 10 samples from Bantu individuals recruited in Kenya as part of the Human Genome Diversity Project. The population was assigned by the collecting project to the superpopulation African.")
 AnnotationAssertion(obo:IAO_0000412 obo:HANCESTRO_0633 obo:hancestro.owl)
 AnnotationAssertion(rdfs:label obo:HANCESTRO_0633 "Bantu in Kenya (HGDP)")
-SubClassOf(obo:HANCESTRO_0633 obo:HANCESTRO_0010)
+SubClassOf(obo:HANCESTRO_0633 obo:HANCESTRO_2005)
 
 # Class: obo:HANCESTRO_0634 (Bantu in South Africa (HGDP))
 
 AnnotationAssertion(obo:IAO_0000115 obo:HANCESTRO_0634 "A population made up of 4 samples from Bantu individuals recruited in South Africa as part of the Human Genome Diversity Project. The population was assigned by the collecting project to the superpopulation African.")
 AnnotationAssertion(obo:IAO_0000412 obo:HANCESTRO_0634 obo:hancestro.owl)
 AnnotationAssertion(rdfs:label obo:HANCESTRO_0634 "Bantu in South Africa (HGDP)")
-SubClassOf(obo:HANCESTRO_0634 obo:HANCESTRO_0010)
+SubClassOf(obo:HANCESTRO_0634 obo:HANCESTRO_2005)
 
 # Class: obo:HANCESTRO_0635 (Biaka in Central African Republic (HGDP))
 
 AnnotationAssertion(obo:IAO_0000115 obo:HANCESTRO_0635 "A population made up of 24 samples from Biaka individuals recruited in Central African Republic as part of the Human Genome Diversity Project. The population was assigned by the collecting project to the superpopulation African.")
 AnnotationAssertion(obo:IAO_0000412 obo:HANCESTRO_0635 obo:hancestro.owl)
 AnnotationAssertion(rdfs:label obo:HANCESTRO_0635 "Biaka in Central African Republic (HGDP)")
-SubClassOf(obo:HANCESTRO_0635 obo:HANCESTRO_0010)
+SubClassOf(obo:HANCESTRO_0635 obo:HANCESTRO_2005)
 
 # Class: obo:HANCESTRO_0636 (Mandenka in Senegal (HGDP))
 
 AnnotationAssertion(obo:IAO_0000115 obo:HANCESTRO_0636 "A population made up of 20 samples from Mandenka individuals recruited in Senegal as part of the Human Genome Diversity Project. The population was assigned by the collecting project to the superpopulation African.")
 AnnotationAssertion(obo:IAO_0000412 obo:HANCESTRO_0636 obo:hancestro.owl)
 AnnotationAssertion(rdfs:label obo:HANCESTRO_0636 "Mandenka in Senegal (HGDP)")
-SubClassOf(obo:HANCESTRO_0636 obo:HANCESTRO_0010)
+SubClassOf(obo:HANCESTRO_0636 obo:HANCESTRO_2005)
 
 # Class: obo:HANCESTRO_0637 (Mbuti in Democratic Republic of Congo (HGDP))
 
 AnnotationAssertion(obo:IAO_0000115 obo:HANCESTRO_0637 "A population made up of 13 samples from Mbuti individuals recruited in Democratic Republic of Congo as part of the Human Genome Diversity Project. The population was assigned by the collecting project to the superpopulation African. Samples from this population were used in data collections  for HGDP Transcriptome.")
 AnnotationAssertion(obo:IAO_0000412 obo:HANCESTRO_0637 obo:hancestro.owl)
 AnnotationAssertion(rdfs:label obo:HANCESTRO_0637 "Mbuti in Democratic Republic of Congo (HGDP)")
-SubClassOf(obo:HANCESTRO_0637 obo:HANCESTRO_0010)
+SubClassOf(obo:HANCESTRO_0637 obo:HANCESTRO_2005)
 
 # Class: obo:HANCESTRO_0638 (San in Namibia (HGDP))
 
 AnnotationAssertion(obo:IAO_0000115 obo:HANCESTRO_0638 "A population made up of 4 samples from San individuals recruited in Namibia as part of the Human Genome Diversity Project. The population was assigned by the collecting project to the superpopulation African.")
 AnnotationAssertion(obo:IAO_0000412 obo:HANCESTRO_0638 obo:hancestro.owl)
 AnnotationAssertion(rdfs:label obo:HANCESTRO_0638 "San in Namibia (HGDP)")
-SubClassOf(obo:HANCESTRO_0638 obo:HANCESTRO_0010)
+SubClassOf(obo:HANCESTRO_0638 obo:HANCESTRO_2005)
 
 # Class: obo:HANCESTRO_0639 (Yoruba in Nigeria (HGDP))
 
 AnnotationAssertion(obo:IAO_0000115 obo:HANCESTRO_0639 "A population made up of 18 samples from Yoruba individuals recruited in Nigeria as part of the Human Genome Diversity Project. The population was assigned by the collecting project to the superpopulation African.")
 AnnotationAssertion(obo:IAO_0000412 obo:HANCESTRO_0639 obo:hancestro.owl)
 AnnotationAssertion(rdfs:label obo:HANCESTRO_0639 "Yoruba in Nigeria (HGDP)")
-SubClassOf(obo:HANCESTRO_0639 obo:HANCESTRO_0010)
+SubClassOf(obo:HANCESTRO_0639 obo:HANCESTRO_2005)
 
 # Class: obo:HANCESTRO_0640 (Bantu Herero in Botswana Or Namibia (SGDP))
 
 AnnotationAssertion(obo:IAO_0000115 obo:HANCESTRO_0640 "A population made up of 2 samples from Bantu Herero individuals recruited in Botswana Or Namibia as part of the Simons Genome Diversity Project. The population was assigned by the collecting project to the superpopulation African.")
 AnnotationAssertion(obo:IAO_0000412 obo:HANCESTRO_0640 obo:hancestro.owl)
 AnnotationAssertion(rdfs:label obo:HANCESTRO_0640 "Bantu Herero in Botswana Or Namibia (SGDP)")
-SubClassOf(obo:HANCESTRO_0640 obo:HANCESTRO_0010)
+SubClassOf(obo:HANCESTRO_0640 obo:HANCESTRO_2012)
 
 # Class: obo:HANCESTRO_0641 (Bantu Kenya in Kenya (SGDP))
 
 AnnotationAssertion(obo:IAO_0000115 obo:HANCESTRO_0641 "A population made up of 2 samples from Bantu Kenya individuals recruited in Kenya as part of the Simons Genome Diversity Project. The population was assigned by the collecting project to the superpopulation African.")
 AnnotationAssertion(obo:IAO_0000412 obo:HANCESTRO_0641 obo:hancestro.owl)
 AnnotationAssertion(rdfs:label obo:HANCESTRO_0641 "Bantu Kenya in Kenya (SGDP)")
-SubClassOf(obo:HANCESTRO_0641 obo:HANCESTRO_0010)
+SubClassOf(obo:HANCESTRO_0641 obo:HANCESTRO_2012)
 
 # Class: obo:HANCESTRO_0642 (Bantu Tswana in Botswana Or Namibia (SGDP))
 
 AnnotationAssertion(obo:IAO_0000115 obo:HANCESTRO_0642 "A population made up of 2 samples from Bantu Tswana individuals recruited in Botswana Or Namibia as part of the Simons Genome Diversity Project. The population was assigned by the collecting project to the superpopulation African.")
 AnnotationAssertion(obo:IAO_0000412 obo:HANCESTRO_0642 obo:hancestro.owl)
 AnnotationAssertion(rdfs:label obo:HANCESTRO_0642 "Bantu Tswana in Botswana Or Namibia (SGDP)")
-SubClassOf(obo:HANCESTRO_0642 obo:HANCESTRO_0010)
+SubClassOf(obo:HANCESTRO_0642 obo:HANCESTRO_2012)
 
 # Class: obo:HANCESTRO_0643 (Biaka in Central African Republic (SGDP))
 
 AnnotationAssertion(obo:IAO_0000115 obo:HANCESTRO_0643 "A population made up of 2 samples from Biaka individuals recruited in Central African Republic as part of the Simons Genome Diversity Project. The population was assigned by the collecting project to the superpopulation African.")
 AnnotationAssertion(obo:IAO_0000412 obo:HANCESTRO_0643 obo:hancestro.owl)
 AnnotationAssertion(rdfs:label obo:HANCESTRO_0643 "Biaka in Central African Republic (SGDP)")
-SubClassOf(obo:HANCESTRO_0643 obo:HANCESTRO_0010)
+SubClassOf(obo:HANCESTRO_0643 obo:HANCESTRO_2012)
 
 # Class: obo:HANCESTRO_0644 (Dinka in Sudan (SGDP))
 
 AnnotationAssertion(obo:IAO_0000115 obo:HANCESTRO_0644 "A population made up of 3 samples from Dinka individuals recruited in Sudan as part of the Simons Genome Diversity Project. The population was assigned by the collecting project to the superpopulation African.")
 AnnotationAssertion(obo:IAO_0000412 obo:HANCESTRO_0644 obo:hancestro.owl)
 AnnotationAssertion(rdfs:label obo:HANCESTRO_0644 "Dinka in Sudan (SGDP)")
-SubClassOf(obo:HANCESTRO_0644 obo:HANCESTRO_0010)
+SubClassOf(obo:HANCESTRO_0644 obo:HANCESTRO_2012)
 
 # Class: obo:HANCESTRO_0645 (Esan in Nigeria (SGDP))
 
 AnnotationAssertion(obo:IAO_0000115 obo:HANCESTRO_0645 "A population made up of 2 samples from Esan individuals recruited in Nigeria as part of the Simons Genome Diversity Project. The population was assigned by the collecting project to the superpopulation African.")
 AnnotationAssertion(obo:IAO_0000412 obo:HANCESTRO_0645 obo:hancestro.owl)
 AnnotationAssertion(rdfs:label obo:HANCESTRO_0645 "Esan in Nigeria (SGDP)")
-SubClassOf(obo:HANCESTRO_0645 obo:HANCESTRO_0010)
+SubClassOf(obo:HANCESTRO_0645 obo:HANCESTRO_2012)
 
 # Class: obo:HANCESTRO_0646 (Gambian in Gambia (SGDP))
 
 AnnotationAssertion(obo:IAO_0000115 obo:HANCESTRO_0646 "A population made up of 2 samples from Gambian individuals recruited in Gambia as part of the Simons Genome Diversity Project. The population was assigned by the collecting project to the superpopulation African.")
 AnnotationAssertion(obo:IAO_0000412 obo:HANCESTRO_0646 obo:hancestro.owl)
 AnnotationAssertion(rdfs:label obo:HANCESTRO_0646 "Gambian in Gambia (SGDP)")
-SubClassOf(obo:HANCESTRO_0646 obo:HANCESTRO_0010)
+SubClassOf(obo:HANCESTRO_0646 obo:HANCESTRO_2012)
 
 # Class: obo:HANCESTRO_0647 (Ju|'hoan North in Namibia (SGDP))
 
 AnnotationAssertion(obo:IAO_0000115 obo:HANCESTRO_0647 "A population made up of 4 samples from Ju|'hoan North individuals recruited in Namibia as part of the Simons Genome Diversity Project. The population was assigned by the collecting project to the superpopulation African.")
 AnnotationAssertion(obo:IAO_0000412 obo:HANCESTRO_0647 obo:hancestro.owl)
 AnnotationAssertion(rdfs:label obo:HANCESTRO_0647 "Ju|'hoan North in Namibia (SGDP)")
-SubClassOf(obo:HANCESTRO_0647 obo:HANCESTRO_0010)
+SubClassOf(obo:HANCESTRO_0647 obo:HANCESTRO_2012)
 
 # Class: obo:HANCESTRO_0648 (Khomani San in South Africa (SGDP))
 
 AnnotationAssertion(obo:IAO_0000115 obo:HANCESTRO_0648 "A population made up of 2 samples from Khomani San individuals recruited in South Africa as part of the Simons Genome Diversity Project. The population was assigned by the collecting project to the superpopulation African.")
 AnnotationAssertion(obo:IAO_0000412 obo:HANCESTRO_0648 obo:hancestro.owl)
 AnnotationAssertion(rdfs:label obo:HANCESTRO_0648 "Khomani San in South Africa (SGDP)")
-SubClassOf(obo:HANCESTRO_0648 obo:HANCESTRO_0010)
+SubClassOf(obo:HANCESTRO_0648 obo:HANCESTRO_2012)
 
 # Class: obo:HANCESTRO_0649 (Luhya in Kenya (SGDP))
 
 AnnotationAssertion(obo:IAO_0000115 obo:HANCESTRO_0649 "A population made up of 2 samples from Luhya individuals recruited in Kenya as part of the Simons Genome Diversity Project. The population was assigned by the collecting project to the superpopulation African.")
 AnnotationAssertion(obo:IAO_0000412 obo:HANCESTRO_0649 obo:hancestro.owl)
 AnnotationAssertion(rdfs:label obo:HANCESTRO_0649 "Luhya in Kenya (SGDP)")
-SubClassOf(obo:HANCESTRO_0649 obo:HANCESTRO_0010)
+SubClassOf(obo:HANCESTRO_0649 obo:HANCESTRO_2012)
 
 # Class: obo:HANCESTRO_0650 (Luo in Kenya (SGDP))
 
 AnnotationAssertion(obo:IAO_0000115 obo:HANCESTRO_0650 "A population made up of 2 samples from Luo individuals recruited in Kenya as part of the Simons Genome Diversity Project. The population was assigned by the collecting project to the superpopulation African.")
 AnnotationAssertion(obo:IAO_0000412 obo:HANCESTRO_0650 obo:hancestro.owl)
 AnnotationAssertion(rdfs:label obo:HANCESTRO_0650 "Luo in Kenya (SGDP)")
-SubClassOf(obo:HANCESTRO_0650 obo:HANCESTRO_0010)
+SubClassOf(obo:HANCESTRO_0650 obo:HANCESTRO_2012)
 
 # Class: obo:HANCESTRO_0651 (Mandenka in Senegal (SGDP))
 
 AnnotationAssertion(obo:IAO_0000115 obo:HANCESTRO_0651 "A population made up of 3 samples from Mandenka individuals recruited in Senegal as part of the Simons Genome Diversity Project. The population was assigned by the collecting project to the superpopulation African.")
 AnnotationAssertion(obo:IAO_0000412 obo:HANCESTRO_0651 obo:hancestro.owl)
 AnnotationAssertion(rdfs:label obo:HANCESTRO_0651 "Mandenka in Senegal (SGDP)")
-SubClassOf(obo:HANCESTRO_0651 obo:HANCESTRO_0010)
+SubClassOf(obo:HANCESTRO_0651 obo:HANCESTRO_2012)
 
-# Class: obo:HANCESTRO_0652 (Masai in Kenya (1KGP))
+# Class: obo:HANCESTRO_0652 (Masai in Kenya (SGDP))
 
 AnnotationAssertion(obo:IAO_0000115 obo:HANCESTRO_0652 "A population made up of 3 samples from Masai individuals recruited in Kenya as part of the Simons Genome Diversity Project. The population was assigned by the collecting project to the superpopulation African.")
 AnnotationAssertion(obo:IAO_0000412 obo:HANCESTRO_0652 obo:hancestro.owl)
-AnnotationAssertion(rdfs:label obo:HANCESTRO_0652 "Masai in Kenya (1KGP)")
-SubClassOf(obo:HANCESTRO_0652 obo:HANCESTRO_0010)
+AnnotationAssertion(rdfs:label obo:HANCESTRO_0652 "Masai in Kenya (SGDP)")
+SubClassOf(obo:HANCESTRO_0652 obo:HANCESTRO_2012)
 
 # Class: obo:HANCESTRO_0653 (Mbuti in Congo (SGDP))
 
 AnnotationAssertion(obo:IAO_0000115 obo:HANCESTRO_0653 "A population made up of 4 samples from Mbuti individuals recruited in Congo as part of the Simons Genome Diversity Project. The population was assigned by the collecting project to the superpopulation African.")
 AnnotationAssertion(obo:IAO_0000412 obo:HANCESTRO_0653 obo:hancestro.owl)
 AnnotationAssertion(rdfs:label obo:HANCESTRO_0653 "Mbuti in Congo (SGDP)")
-SubClassOf(obo:HANCESTRO_0653 obo:HANCESTRO_0010)
+SubClassOf(obo:HANCESTRO_0653 obo:HANCESTRO_2012)
 
 # Class: obo:HANCESTRO_0654 (Mende in Sierra Leone (SGDP))
 
 AnnotationAssertion(obo:IAO_0000115 obo:HANCESTRO_0654 "A population made up of 2 samples from Mende individuals recruited in Sierra Leone as part of the Simons Genome Diversity Project. The population was assigned by the collecting project to the superpopulation African.")
 AnnotationAssertion(obo:IAO_0000412 obo:HANCESTRO_0654 obo:hancestro.owl)
 AnnotationAssertion(rdfs:label obo:HANCESTRO_0654 "Mende in Sierra Leone (SGDP)")
-SubClassOf(obo:HANCESTRO_0654 obo:HANCESTRO_0010)
+SubClassOf(obo:HANCESTRO_0654 obo:HANCESTRO_2012)
 
 # Class: obo:HANCESTRO_0655 (Mozabite in Algeria (SGDP))
 
 AnnotationAssertion(obo:IAO_0000115 obo:HANCESTRO_0655 "A population made up of 2 samples from Mozabite individuals recruited in Algeria as part of the Simons Genome Diversity Project. The population was assigned by the collecting project to the superpopulation African.")
 AnnotationAssertion(obo:IAO_0000412 obo:HANCESTRO_0655 obo:hancestro.owl)
 AnnotationAssertion(rdfs:label obo:HANCESTRO_0655 "Mozabite in Algeria (SGDP)")
-SubClassOf(obo:HANCESTRO_0655 obo:HANCESTRO_0010)
 SubClassOf(obo:HANCESTRO_0655 obo:HANCESTRO_0015)
+SubClassOf(obo:HANCESTRO_0655 obo:HANCESTRO_2012)
 
 # Class: obo:HANCESTRO_0656 (Saharawi in Western Sahara (Morocco) (SGDP))
 
 AnnotationAssertion(obo:IAO_0000115 obo:HANCESTRO_0656 "A population made up of 2 samples from Saharawi individuals recruited in Western Sahara (Morocco) as part of the Simons Genome Diversity Project. The population was assigned by the collecting project to the superpopulation African.")
 AnnotationAssertion(obo:IAO_0000412 obo:HANCESTRO_0656 obo:hancestro.owl)
 AnnotationAssertion(rdfs:label obo:HANCESTRO_0656 "Saharawi in Western Sahara (Morocco) (SGDP)")
-SubClassOf(obo:HANCESTRO_0656 obo:HANCESTRO_0010)
 SubClassOf(obo:HANCESTRO_0656 obo:HANCESTRO_0015)
+SubClassOf(obo:HANCESTRO_0656 obo:HANCESTRO_2012)
 
 # Class: obo:HANCESTRO_0657 (Somali in Kenya (SGDP))
 
 AnnotationAssertion(obo:IAO_0000115 obo:HANCESTRO_0657 "A population made up of 1 samples from Somali individuals recruited in Kenya as part of the Simons Genome Diversity Project. The population was assigned by the collecting project to the superpopulation African.")
 AnnotationAssertion(obo:IAO_0000412 obo:HANCESTRO_0657 obo:hancestro.owl)
 AnnotationAssertion(rdfs:label obo:HANCESTRO_0657 "Somali in Kenya (SGDP)")
-SubClassOf(obo:HANCESTRO_0657 obo:HANCESTRO_0010)
+SubClassOf(obo:HANCESTRO_0657 obo:HANCESTRO_2012)
 
 # Class: obo:HANCESTRO_0658 (Yoruba in Nigeria (SGDP))
 
 AnnotationAssertion(obo:IAO_0000115 obo:HANCESTRO_0658 "A population made up of 3 samples from Yoruba individuals recruited in Nigeria as part of the Simons Genome Diversity Project. The population was assigned by the collecting project to the superpopulation African.")
 AnnotationAssertion(obo:IAO_0000412 obo:HANCESTRO_0658 obo:hancestro.owl)
 AnnotationAssertion(rdfs:label obo:HANCESTRO_0658 "Yoruba in Nigeria (SGDP)")
-SubClassOf(obo:HANCESTRO_0658 obo:HANCESTRO_0010)
+SubClassOf(obo:HANCESTRO_0658 obo:HANCESTRO_2012)
 
 # Class: obo:HANCESTRO_0659 (African Ancestry in Southwest US (1KGP))
 
 AnnotationAssertion(obo:IAO_0000115 obo:HANCESTRO_0659 "A population made up of 113 samples from African Ancestry individuals recruited in Southwest US as part of the 1000 Genomes Project. The population was assigned by the collecting project to the superpopulation African.")
 AnnotationAssertion(obo:IAO_0000412 obo:HANCESTRO_0659 obo:hancestro.owl)
 AnnotationAssertion(rdfs:label obo:HANCESTRO_0659 "African Ancestry in Southwest US (1KGP)")
-SubClassOf(obo:HANCESTRO_0659 obo:HANCESTRO_0010)
 SubClassOf(obo:HANCESTRO_0659 obo:HANCESTRO_0016)
+SubClassOf(obo:HANCESTRO_0659 obo:HANCESTRO_2000)
 
 # Class: obo:HANCESTRO_0660 (African Caribbean in Barbados (1KGP))
 
 AnnotationAssertion(obo:IAO_0000115 obo:HANCESTRO_0660 "A population made up of 123 samples from African Caribbean individuals recruited in Barbados as part of the 1000 Genomes Project. The population was assigned by the collecting project to the superpopulation African.")
 AnnotationAssertion(obo:IAO_0000412 obo:HANCESTRO_0660 obo:hancestro.owl)
 AnnotationAssertion(rdfs:label obo:HANCESTRO_0660 "African Caribbean in Barbados (1KGP)")
-SubClassOf(obo:HANCESTRO_0660 obo:HANCESTRO_0010)
 SubClassOf(obo:HANCESTRO_0660 obo:HANCESTRO_0016)
+SubClassOf(obo:HANCESTRO_0660 obo:HANCESTRO_2000)
 
 # Class: obo:HANCESTRO_0661 (Esan in Nigeria (1KGP))
 
 AnnotationAssertion(obo:IAO_0000115 obo:HANCESTRO_0661 "A population made up of 173 samples from Esan individuals recruited in Nigeria as part of the 1000 Genomes Project. The population was assigned by the collecting project to the superpopulation African.")
 AnnotationAssertion(obo:IAO_0000412 obo:HANCESTRO_0661 obo:hancestro.owl)
 AnnotationAssertion(rdfs:label obo:HANCESTRO_0661 "Esan in Nigeria (1KGP)")
-SubClassOf(obo:HANCESTRO_0661 obo:HANCESTRO_0010)
+SubClassOf(obo:HANCESTRO_0661 obo:HANCESTRO_2000)
 
 # Class: obo:HANCESTRO_0662 (Gambian in Western Division, The Gambia - Fula (GGVP))
 
 AnnotationAssertion(obo:IAO_0000115 obo:HANCESTRO_0662 "A population made up of 100 samples from Fula individuals recruited in Western Division, The Gambia as part of the Gambian Genome Variation Project. The population was assigned by the collecting project to the superpopulation African.")
 AnnotationAssertion(obo:IAO_0000412 obo:HANCESTRO_0662 obo:hancestro.owl)
 AnnotationAssertion(rdfs:label obo:HANCESTRO_0662 "Gambian in Western Division, The Gambia - Fula (GGVP)")
-SubClassOf(obo:HANCESTRO_0662 obo:HANCESTRO_0010)
+SubClassOf(obo:HANCESTRO_0662 obo:HANCESTRO_2000)
 
 # Class: obo:HANCESTRO_0663 (Gambian in Western Division, The Gambia - Jola (GGVP))
 
 AnnotationAssertion(obo:IAO_0000115 obo:HANCESTRO_0663 "A population made up of 100 samples from Jola individuals recruited in Western Division, The Gambia as part of the Gambian Genome Variation Project. The population was assigned by the collecting project to the superpopulation African.")
 AnnotationAssertion(obo:IAO_0000412 obo:HANCESTRO_0663 obo:hancestro.owl)
 AnnotationAssertion(rdfs:label obo:HANCESTRO_0663 "Gambian in Western Division, The Gambia - Jola (GGVP)")
-SubClassOf(obo:HANCESTRO_0663 obo:HANCESTRO_0010)
+SubClassOf(obo:HANCESTRO_0663 obo:HANCESTRO_2000)
 
 # Class: obo:HANCESTRO_0664 (Gambian in Western Division, The Gambia - Mandinka (GGVP))
 
 AnnotationAssertion(obo:IAO_0000115 obo:HANCESTRO_0664 "A population made up of 280 samples from Mandinka individuals recruited in Western Division, The Gambia as part of the 1000 Genomes Project. The population was assigned by the collecting project to the superpopulation African.")
 AnnotationAssertion(obo:IAO_0000412 obo:HANCESTRO_0664 obo:hancestro.owl)
 AnnotationAssertion(rdfs:label obo:HANCESTRO_0664 "Gambian in Western Division, The Gambia - Mandinka (GGVP)")
-SubClassOf(obo:HANCESTRO_0664 obo:HANCESTRO_0010)
+SubClassOf(obo:HANCESTRO_0664 obo:HANCESTRO_2000)
 
 # Class: obo:HANCESTRO_0665 (Gambian in Western Division, The Gambia - Wolof (GGVP))
 
 AnnotationAssertion(obo:IAO_0000115 obo:HANCESTRO_0665 "A population made up of 100 samples from Wolof individuals recruited in Western Division, The Gambia as part of the Gambian Genome Variation Project. The population was assigned by the collecting project to the superpopulation African.")
 AnnotationAssertion(obo:IAO_0000412 obo:HANCESTRO_0665 obo:hancestro.owl)
 AnnotationAssertion(rdfs:label obo:HANCESTRO_0665 "Gambian in Western Division, The Gambia - Wolof (GGVP)")
-SubClassOf(obo:HANCESTRO_0665 obo:HANCESTRO_0010)
+SubClassOf(obo:HANCESTRO_0665 obo:HANCESTRO_2000)
 
 # Class: obo:HANCESTRO_0666 (Luhya in Webuye, Kenya (1KGP))
 
 AnnotationAssertion(obo:IAO_0000115 obo:HANCESTRO_0666 "A population made up of 117 samples from Luhya individuals recruited in Webuye, Kenya as part of the 1000 Genomes Project. The population was assigned by the collecting project to the superpopulation African.")
 AnnotationAssertion(obo:IAO_0000412 obo:HANCESTRO_0666 obo:hancestro.owl)
 AnnotationAssertion(rdfs:label obo:HANCESTRO_0666 "Luhya in Webuye, Kenya (1KGP)")
-SubClassOf(obo:HANCESTRO_0666 obo:HANCESTRO_0010)
+SubClassOf(obo:HANCESTRO_0666 obo:HANCESTRO_2000)
 
 # Class: obo:HANCESTRO_0667 (Mende in Sierra Leone (1KGP))
 
 AnnotationAssertion(obo:IAO_0000115 obo:HANCESTRO_0667 "A population made up of 129 samples from Mende individuals recruited in Sierra Leone as part of the 1000 Genomes Project. The population was assigned by the collecting project to the superpopulation African.")
 AnnotationAssertion(obo:IAO_0000412 obo:HANCESTRO_0667 obo:hancestro.owl)
 AnnotationAssertion(rdfs:label obo:HANCESTRO_0667 "Mende in Sierra Leone (1KGP)")
-SubClassOf(obo:HANCESTRO_0667 obo:HANCESTRO_0010)
+SubClassOf(obo:HANCESTRO_0667 obo:HANCESTRO_2000)
 
 # Class: obo:HANCESTRO_0668 (Yoruba in Ibadan, Nigeria  (1KGP))
 
 AnnotationAssertion(obo:IAO_0000115 obo:HANCESTRO_0668 "A population made up of 187 samples from Yoruba individuals recruited in Ibadan, Nigeria as part of the 1000 Genomes Project. The population was assigned by the collecting project to the superpopulation African.")
 AnnotationAssertion(obo:IAO_0000412 obo:HANCESTRO_0668 obo:hancestro.owl)
 AnnotationAssertion(rdfs:label obo:HANCESTRO_0668 "Yoruba in Ibadan, Nigeria  (1KGP)")
-SubClassOf(obo:HANCESTRO_0668 obo:HANCESTRO_0010)
+SubClassOf(obo:HANCESTRO_0668 obo:HANCESTRO_2000)
 
 # Class: obo:HANCESTRO_0669 (Colombian in Colombia (HGDP))
 
 AnnotationAssertion(obo:IAO_0000115 obo:HANCESTRO_0669 "A population made up of 5 samples from Colombian individuals recruited in Colombia as part of the Human Genome Diversity Project. The population was assigned by the collecting project to the superpopulation Latin or Admixed American.")
 AnnotationAssertion(obo:IAO_0000412 obo:HANCESTRO_0669 obo:hancestro.owl)
 AnnotationAssertion(rdfs:label obo:HANCESTRO_0669 "Colombian in Colombia (HGDP)")
-SubClassOf(obo:HANCESTRO_0669 obo:HANCESTRO_0014)
+SubClassOf(obo:HANCESTRO_0669 obo:HANCESTRO_2006)
 
 # Class: obo:HANCESTRO_0670 (Karitiana in Brazil (HGDP))
 
 AnnotationAssertion(obo:IAO_0000115 obo:HANCESTRO_0670 "A population made up of 9 samples from Karitiana individuals recruited in Brazil as part of the Human Genome Diversity Project. The population was assigned by the collecting project to the superpopulation Latin or Admixed American.")
 AnnotationAssertion(obo:IAO_0000412 obo:HANCESTRO_0670 obo:hancestro.owl)
 AnnotationAssertion(rdfs:label obo:HANCESTRO_0670 "Karitiana in Brazil (HGDP)")
-SubClassOf(obo:HANCESTRO_0670 obo:HANCESTRO_0014)
 SubClassOf(obo:HANCESTRO_0670 obo:HANCESTRO_0611)
+SubClassOf(obo:HANCESTRO_0670 obo:HANCESTRO_2006)
 
 # Class: obo:HANCESTRO_0671 (Maya in Mexico (HGDP))
 
 AnnotationAssertion(obo:IAO_0000115 obo:HANCESTRO_0671 "A population made up of 21 samples from Maya individuals recruited in Mexico as part of the Human Genome Diversity Project. The population was assigned by the collecting project to the superpopulation Latin or Admixed American.")
 AnnotationAssertion(obo:IAO_0000412 obo:HANCESTRO_0671 obo:hancestro.owl)
 AnnotationAssertion(rdfs:label obo:HANCESTRO_0671 "Maya in Mexico (HGDP)")
-SubClassOf(obo:HANCESTRO_0671 obo:HANCESTRO_0014)
 SubClassOf(obo:HANCESTRO_0671 obo:HANCESTRO_0610)
+SubClassOf(obo:HANCESTRO_0671 obo:HANCESTRO_2006)
 
 # Class: obo:HANCESTRO_0672 (Pima in Mexico (HGDP))
 
 AnnotationAssertion(obo:IAO_0000115 obo:HANCESTRO_0672 "A population made up of 12 samples from Pima individuals recruited in Mexico as part of the Human Genome Diversity Project. The population was assigned by the collecting project to the superpopulation Latin or Admixed American.")
 AnnotationAssertion(obo:IAO_0000412 obo:HANCESTRO_0672 obo:hancestro.owl)
 AnnotationAssertion(rdfs:label obo:HANCESTRO_0672 "Pima in Mexico (HGDP)")
-SubClassOf(obo:HANCESTRO_0672 obo:HANCESTRO_0014)
 SubClassOf(obo:HANCESTRO_0672 obo:HANCESTRO_0610)
+SubClassOf(obo:HANCESTRO_0672 obo:HANCESTRO_2006)
 
 # Class: obo:HANCESTRO_0673 (Surui in Brazil (HGDP))
 
 AnnotationAssertion(obo:IAO_0000115 obo:HANCESTRO_0673 "A population made up of 6 samples from Surui individuals recruited in Brazil as part of the Human Genome Diversity Project. The population was assigned by the collecting project to the superpopulation Latin or Admixed American.")
 AnnotationAssertion(obo:IAO_0000412 obo:HANCESTRO_0673 obo:hancestro.owl)
 AnnotationAssertion(rdfs:label obo:HANCESTRO_0673 "Surui in Brazil (HGDP)")
-SubClassOf(obo:HANCESTRO_0673 obo:HANCESTRO_0014)
 SubClassOf(obo:HANCESTRO_0673 obo:HANCESTRO_0611)
+SubClassOf(obo:HANCESTRO_0673 obo:HANCESTRO_2006)
 
 # Class: obo:HANCESTRO_0674 (Chane in Argentina (SGDP))
 
 AnnotationAssertion(obo:IAO_0000115 obo:HANCESTRO_0674 "A population made up of 1 samples from Chane individuals recruited in Argentina as part of the Simons Genome Diversity Project. The population was assigned by the collecting project to the superpopulation Latin or Admixed American.")
 AnnotationAssertion(obo:IAO_0000412 obo:HANCESTRO_0674 obo:hancestro.owl)
 AnnotationAssertion(rdfs:label obo:HANCESTRO_0674 "Chane in Argentina (SGDP)")
-SubClassOf(obo:HANCESTRO_0674 obo:HANCESTRO_0014)
 SubClassOf(obo:HANCESTRO_0674 obo:HANCESTRO_0611)
+SubClassOf(obo:HANCESTRO_0674 obo:HANCESTRO_2013)
 
 # Class: obo:HANCESTRO_0675 (Karitiana in Brazil (SGDP))
 
 AnnotationAssertion(obo:IAO_0000115 obo:HANCESTRO_0675 "A population made up of 3 samples from Karitiana individuals recruited in Brazil as part of the Simons Genome Diversity Project. The population was assigned by the collecting project to the superpopulation Latin or Admixed American.")
 AnnotationAssertion(obo:IAO_0000412 obo:HANCESTRO_0675 obo:hancestro.owl)
 AnnotationAssertion(rdfs:label obo:HANCESTRO_0675 "Karitiana in Brazil (SGDP)")
-SubClassOf(obo:HANCESTRO_0675 obo:HANCESTRO_0014)
 SubClassOf(obo:HANCESTRO_0675 obo:HANCESTRO_0611)
+SubClassOf(obo:HANCESTRO_0675 obo:HANCESTRO_2013)
 
 # Class: obo:HANCESTRO_0676 (Mayan in Mexico (SGDP))
 
 AnnotationAssertion(obo:IAO_0000115 obo:HANCESTRO_0676 "A population made up of 2 samples from Mayan individuals recruited in Mexico as part of the Simons Genome Diversity Project. The population was assigned by the collecting project to the superpopulation Latin or Admixed American.")
 AnnotationAssertion(obo:IAO_0000412 obo:HANCESTRO_0676 obo:hancestro.owl)
 AnnotationAssertion(rdfs:label obo:HANCESTRO_0676 "Mayan in Mexico (SGDP)")
-SubClassOf(obo:HANCESTRO_0676 obo:HANCESTRO_0014)
 SubClassOf(obo:HANCESTRO_0676 obo:HANCESTRO_0610)
+SubClassOf(obo:HANCESTRO_0676 obo:HANCESTRO_2013)
 
 # Class: obo:HANCESTRO_0677 (Mixe in Mexico (SGDP))
 
 AnnotationAssertion(obo:IAO_0000115 obo:HANCESTRO_0677 "A population made up of 3 samples from Mixe individuals recruited in Mexico as part of the Simons Genome Diversity Project. The population was assigned by the collecting project to the superpopulation Latin or Admixed American.")
 AnnotationAssertion(obo:IAO_0000412 obo:HANCESTRO_0677 obo:hancestro.owl)
 AnnotationAssertion(rdfs:label obo:HANCESTRO_0677 "Mixe in Mexico (SGDP)")
-SubClassOf(obo:HANCESTRO_0677 obo:HANCESTRO_0014)
 SubClassOf(obo:HANCESTRO_0677 obo:HANCESTRO_0610)
+SubClassOf(obo:HANCESTRO_0677 obo:HANCESTRO_2013)
 
 # Class: obo:HANCESTRO_0678 (Mixtec in Mexico (SGDP))
 
 AnnotationAssertion(obo:IAO_0000115 obo:HANCESTRO_0678 "A population made up of 2 samples from Mixtec individuals recruited in Mexico as part of the Simons Genome Diversity Project. The population was assigned by the collecting project to the superpopulation Latin or Admixed American.")
 AnnotationAssertion(obo:IAO_0000412 obo:HANCESTRO_0678 obo:hancestro.owl)
 AnnotationAssertion(rdfs:label obo:HANCESTRO_0678 "Mixtec in Mexico (SGDP)")
-SubClassOf(obo:HANCESTRO_0678 obo:HANCESTRO_0014)
 SubClassOf(obo:HANCESTRO_0678 obo:HANCESTRO_0610)
+SubClassOf(obo:HANCESTRO_0678 obo:HANCESTRO_2013)
 
 # Class: obo:HANCESTRO_0679 (Piapoco in Colombia (SGDP))
 
 AnnotationAssertion(obo:IAO_0000115 obo:HANCESTRO_0679 "A population made up of 2 samples from Piapoco individuals recruited in Colombia as part of the Simons Genome Diversity Project. The population was assigned by the collecting project to the superpopulation Latin or Admixed American.")
 AnnotationAssertion(obo:IAO_0000412 obo:HANCESTRO_0679 obo:hancestro.owl)
 AnnotationAssertion(rdfs:label obo:HANCESTRO_0679 "Piapoco in Colombia (SGDP)")
-SubClassOf(obo:HANCESTRO_0679 obo:HANCESTRO_0014)
 SubClassOf(obo:HANCESTRO_0679 obo:HANCESTRO_0611)
+SubClassOf(obo:HANCESTRO_0679 obo:HANCESTRO_2013)
 
 # Class: obo:HANCESTRO_0680 (Pima in Mexico (SGDP))
 
 AnnotationAssertion(obo:IAO_0000115 obo:HANCESTRO_0680 "A population made up of 2 samples from Pima individuals recruited in Mexico as part of the Simons Genome Diversity Project. The population was assigned by the collecting project to the superpopulation Latin or Admixed American.")
 AnnotationAssertion(obo:IAO_0000412 obo:HANCESTRO_0680 obo:hancestro.owl)
 AnnotationAssertion(rdfs:label obo:HANCESTRO_0680 "Pima in Mexico (SGDP)")
-SubClassOf(obo:HANCESTRO_0680 obo:HANCESTRO_0014)
 SubClassOf(obo:HANCESTRO_0680 obo:HANCESTRO_0610)
+SubClassOf(obo:HANCESTRO_0680 obo:HANCESTRO_2013)
 
 # Class: obo:HANCESTRO_0681 (Quechua in Peru (SGDP))
 
 AnnotationAssertion(obo:IAO_0000115 obo:HANCESTRO_0681 "A population made up of 3 samples from Quechua individuals recruited in Peru as part of the Simons Genome Diversity Project. The population was assigned by the collecting project to the superpopulation Latin or Admixed American.")
 AnnotationAssertion(obo:IAO_0000412 obo:HANCESTRO_0681 obo:hancestro.owl)
 AnnotationAssertion(rdfs:label obo:HANCESTRO_0681 "Quechua in Peru (SGDP)")
-SubClassOf(obo:HANCESTRO_0681 obo:HANCESTRO_0014)
 SubClassOf(obo:HANCESTRO_0681 obo:HANCESTRO_0611)
+SubClassOf(obo:HANCESTRO_0681 obo:HANCESTRO_2013)
 
 # Class: obo:HANCESTRO_0682 (Surui in Brazil (SGDP))
 
 AnnotationAssertion(obo:IAO_0000115 obo:HANCESTRO_0682 "A population made up of 2 samples from Surui individuals recruited in Brazil as part of the Simons Genome Diversity Project. The population was assigned by the collecting project to the superpopulation Latin or Admixed American.")
 AnnotationAssertion(obo:IAO_0000412 obo:HANCESTRO_0682 obo:hancestro.owl)
 AnnotationAssertion(rdfs:label obo:HANCESTRO_0682 "Surui in Brazil (SGDP)")
-SubClassOf(obo:HANCESTRO_0682 obo:HANCESTRO_0014)
 SubClassOf(obo:HANCESTRO_0682 obo:HANCESTRO_0611)
+SubClassOf(obo:HANCESTRO_0682 obo:HANCESTRO_2013)
 
 # Class: obo:HANCESTRO_0683 (Zapotec in Mexico (SGDP))
 
 AnnotationAssertion(obo:IAO_0000115 obo:HANCESTRO_0683 "A population made up of 2 samples from Zapotec individuals recruited in Mexico as part of the Simons Genome Diversity Project. The population was assigned by the collecting project to the superpopulation Latin or Admixed American.")
 AnnotationAssertion(obo:IAO_0000412 obo:HANCESTRO_0683 obo:hancestro.owl)
 AnnotationAssertion(rdfs:label obo:HANCESTRO_0683 "Zapotec in Mexico (SGDP)")
-SubClassOf(obo:HANCESTRO_0683 obo:HANCESTRO_0014)
 SubClassOf(obo:HANCESTRO_0683 obo:HANCESTRO_0610)
+SubClassOf(obo:HANCESTRO_0683 obo:HANCESTRO_2013)
 
 # Class: obo:HANCESTRO_0684 (Colombian in Medellin, Colombia (1KGP))
 
 AnnotationAssertion(obo:IAO_0000115 obo:HANCESTRO_0684 "A population made up of 148 samples from Colombian individuals recruited in Medellin, Colombia as part of the 1000 Genomes Project. The population was assigned by the collecting project to the superpopulation Latin or Admixed American.")
 AnnotationAssertion(obo:IAO_0000412 obo:HANCESTRO_0684 obo:hancestro.owl)
 AnnotationAssertion(rdfs:label obo:HANCESTRO_0684 "Colombian in Medellin, Colombia (1KGP)")
-SubClassOf(obo:HANCESTRO_0684 obo:HANCESTRO_0014)
+SubClassOf(obo:HANCESTRO_0684 obo:HANCESTRO_2001)
 
 # Class: obo:HANCESTRO_0685 (Mexican Ancestry in Los Angeles, California (1KGP))
 
 AnnotationAssertion(obo:IAO_0000115 obo:HANCESTRO_0685 "A population made up of 107 samples from Mexican Ancestry individuals recruited in Los Angeles, California as part of the 1000 Genomes Project. The population was assigned by the collecting project to the superpopulation Latin or Admixed American.")
 AnnotationAssertion(obo:IAO_0000412 obo:HANCESTRO_0685 obo:hancestro.owl)
 AnnotationAssertion(rdfs:label obo:HANCESTRO_0685 "Mexican Ancestry in Los Angeles, California (1KGP)")
-SubClassOf(obo:HANCESTRO_0685 obo:HANCESTRO_0014)
+SubClassOf(obo:HANCESTRO_0685 obo:HANCESTRO_2001)
 
 # Class: obo:HANCESTRO_0686 (Peruvian in Lima, Peru (1KGP))
 
 AnnotationAssertion(obo:IAO_0000115 obo:HANCESTRO_0686 "A population made up of 130 samples from Peruvian individuals recruited in Lima, Peru as part of the 1000 Genomes Project. The population was assigned by the collecting project to the superpopulation Latin or Admixed American.")
 AnnotationAssertion(obo:IAO_0000412 obo:HANCESTRO_0686 obo:hancestro.owl)
 AnnotationAssertion(rdfs:label obo:HANCESTRO_0686 "Peruvian in Lima, Peru (1KGP)")
-SubClassOf(obo:HANCESTRO_0686 obo:HANCESTRO_0014)
+SubClassOf(obo:HANCESTRO_0686 obo:HANCESTRO_2001)
 
 # Class: obo:HANCESTRO_0687 (Puerto Rican in Puerto Rico (1KGP))
 
 AnnotationAssertion(obo:IAO_0000115 obo:HANCESTRO_0687 "A population made up of 150 samples from Puerto Rican individuals recruited in Puerto Rico as part of the 1000 Genomes Project. The population was assigned by the collecting project to the superpopulation Latin or Admixed American.")
 AnnotationAssertion(obo:IAO_0000412 obo:HANCESTRO_0687 obo:hancestro.owl)
 AnnotationAssertion(rdfs:label obo:HANCESTRO_0687 "Puerto Rican in Puerto Rico (1KGP)")
-SubClassOf(obo:HANCESTRO_0687 obo:HANCESTRO_0014)
+SubClassOf(obo:HANCESTRO_0687 obo:HANCESTRO_2001)
 
 # Class: obo:HANCESTRO_0688 (Aleut in Russia (SGDP))
 
 AnnotationAssertion(obo:IAO_0000115 obo:HANCESTRO_0688 "A population made up of 2 samples from Aleut individuals recruited in Russia as part of the Simons Genome Diversity Project. The population was assigned by the collecting project to the superpopulation Central Asian and Siberian.")
 AnnotationAssertion(obo:IAO_0000412 obo:HANCESTRO_0688 obo:hancestro.owl)
 AnnotationAssertion(rdfs:label obo:HANCESTRO_0688 "Aleut in Russia (SGDP)")
-SubClassOf(obo:HANCESTRO_0688 obo:HANCESTRO_0845)
+SubClassOf(obo:HANCESTRO_0688 obo:HANCESTRO_2014)
 
 # Class: obo:HANCESTRO_0689 (Altaian in Russia (SGDP))
 
 AnnotationAssertion(obo:IAO_0000115 obo:HANCESTRO_0689 "A population made up of 1 samples from Altaian individuals recruited in Russia as part of the Simons Genome Diversity Project. The population was assigned by the collecting project to the superpopulation Central Asian and Siberian.")
 AnnotationAssertion(obo:IAO_0000412 obo:HANCESTRO_0689 obo:hancestro.owl)
 AnnotationAssertion(rdfs:label obo:HANCESTRO_0689 "Altaian in Russia (SGDP)")
-SubClassOf(obo:HANCESTRO_0689 obo:HANCESTRO_0845)
+SubClassOf(obo:HANCESTRO_0689 obo:HANCESTRO_2014)
 
 # Class: obo:HANCESTRO_0690 (Chukchi in Russia (SGDP))
 
 AnnotationAssertion(obo:IAO_0000115 obo:HANCESTRO_0690 "A population made up of 1 samples from Chukchi individuals recruited in Russia as part of the Simons Genome Diversity Project. The population was assigned by the collecting project to the superpopulation Central Asian and Siberian.")
 AnnotationAssertion(obo:IAO_0000412 obo:HANCESTRO_0690 obo:hancestro.owl)
 AnnotationAssertion(rdfs:label obo:HANCESTRO_0690 "Chukchi in Russia (SGDP)")
-SubClassOf(obo:HANCESTRO_0690 obo:HANCESTRO_0845)
+SubClassOf(obo:HANCESTRO_0690 obo:HANCESTRO_2014)
 
 # Class: obo:HANCESTRO_0691 (Eskimo Chaplin in Russia (SGDP))
 
 AnnotationAssertion(obo:IAO_0000115 obo:HANCESTRO_0691 "A population made up of 1 samples from Eskimo Chaplin individuals recruited in Russia as part of the Simons Genome Diversity Project. The population was assigned by the collecting project to the superpopulation Central Asian and Siberian.")
 AnnotationAssertion(obo:IAO_0000412 obo:HANCESTRO_0691 obo:hancestro.owl)
 AnnotationAssertion(rdfs:label obo:HANCESTRO_0691 "Eskimo Chaplin in Russia (SGDP)")
-SubClassOf(obo:HANCESTRO_0691 obo:HANCESTRO_0845)
+SubClassOf(obo:HANCESTRO_0691 obo:HANCESTRO_2014)
 
 # Class: obo:HANCESTRO_0692 (Eskimo Naukan in Russia (SGDP))
 
 AnnotationAssertion(obo:IAO_0000115 obo:HANCESTRO_0692 "A population made up of 2 samples from Eskimo Naukan individuals recruited in Russia as part of the Simons Genome Diversity Project. The population was assigned by the collecting project to the superpopulation Central Asian and Siberian.")
 AnnotationAssertion(obo:IAO_0000412 obo:HANCESTRO_0692 obo:hancestro.owl)
 AnnotationAssertion(rdfs:label obo:HANCESTRO_0692 "Eskimo Naukan in Russia (SGDP)")
-SubClassOf(obo:HANCESTRO_0692 obo:HANCESTRO_0845)
+SubClassOf(obo:HANCESTRO_0692 obo:HANCESTRO_2014)
 
 # Class: obo:HANCESTRO_0693 (Eskimo Sireniki in Russia (SGDP))
 
 AnnotationAssertion(obo:IAO_0000115 obo:HANCESTRO_0693 "A population made up of 2 samples from Eskimo Sireniki individuals recruited in Russia as part of the Simons Genome Diversity Project. The population was assigned by the collecting project to the superpopulation Central Asian and Siberian.")
 AnnotationAssertion(obo:IAO_0000412 obo:HANCESTRO_0693 obo:hancestro.owl)
 AnnotationAssertion(rdfs:label obo:HANCESTRO_0693 "Eskimo Sireniki in Russia (SGDP)")
-SubClassOf(obo:HANCESTRO_0693 obo:HANCESTRO_0845)
+SubClassOf(obo:HANCESTRO_0693 obo:HANCESTRO_2014)
 
 # Class: obo:HANCESTRO_0694 (Even in Russia (SGDP))
 
 AnnotationAssertion(obo:IAO_0000115 obo:HANCESTRO_0694 "A population made up of 3 samples from Even individuals recruited in Russia as part of the Simons Genome Diversity Project. The population was assigned by the collecting project to the superpopulation Central Asian and Siberian.")
 AnnotationAssertion(obo:IAO_0000412 obo:HANCESTRO_0694 obo:hancestro.owl)
 AnnotationAssertion(rdfs:label obo:HANCESTRO_0694 "Even in Russia (SGDP)")
-SubClassOf(obo:HANCESTRO_0694 obo:HANCESTRO_0845)
+SubClassOf(obo:HANCESTRO_0694 obo:HANCESTRO_2014)
 
 # Class: obo:HANCESTRO_0695 (Itelman in Russia (SGDP))
 
 AnnotationAssertion(obo:IAO_0000115 obo:HANCESTRO_0695 "A population made up of 1 samples from Itelman individuals recruited in Russia as part of the Simons Genome Diversity Project. The population was assigned by the collecting project to the superpopulation Central Asian and Siberian.")
 AnnotationAssertion(obo:IAO_0000412 obo:HANCESTRO_0695 obo:hancestro.owl)
 AnnotationAssertion(rdfs:label obo:HANCESTRO_0695 "Itelman in Russia (SGDP)")
-SubClassOf(obo:HANCESTRO_0695 obo:HANCESTRO_0845)
+SubClassOf(obo:HANCESTRO_0695 obo:HANCESTRO_2014)
 
 # Class: obo:HANCESTRO_0696 (Kyrgyz in Kyrgyzystan (SGDP))
 
 AnnotationAssertion(obo:IAO_0000115 obo:HANCESTRO_0696 "A population made up of 2 samples from Kyrgyz individuals recruited in Kyrgyzystan as part of the Simons Genome Diversity Project. The population was assigned by the collecting project to the superpopulation Central Asian and Siberian.")
 AnnotationAssertion(obo:IAO_0000412 obo:HANCESTRO_0696 obo:hancestro.owl)
 AnnotationAssertion(rdfs:label obo:HANCESTRO_0696 "Kyrgyz in Kyrgyzystan (SGDP)")
-SubClassOf(obo:HANCESTRO_0696 obo:HANCESTRO_0845)
+SubClassOf(obo:HANCESTRO_0696 obo:HANCESTRO_2014)
 
 # Class: obo:HANCESTRO_0697 (Mansi in Russia (SGDP))
 
 AnnotationAssertion(obo:IAO_0000115 obo:HANCESTRO_0697 "A population made up of 2 samples from Mansi individuals recruited in Russia as part of the Simons Genome Diversity Project. The population was assigned by the collecting project to the superpopulation Central Asian and Siberian.")
 AnnotationAssertion(obo:IAO_0000412 obo:HANCESTRO_0697 obo:hancestro.owl)
 AnnotationAssertion(rdfs:label obo:HANCESTRO_0697 "Mansi in Russia (SGDP)")
-SubClassOf(obo:HANCESTRO_0697 obo:HANCESTRO_0845)
+SubClassOf(obo:HANCESTRO_0697 obo:HANCESTRO_2014)
 
 # Class: obo:HANCESTRO_0698 (Mongola in China (SGDP))
 
@@ -10908,99 +10861,99 @@ AnnotationAssertion(obo:IAO_0000115 obo:HANCESTRO_0698 "A population made up of 
 AnnotationAssertion(obo:IAO_0000412 obo:HANCESTRO_0698 obo:hancestro.owl)
 AnnotationAssertion(rdfs:label obo:HANCESTRO_0698 "Mongola in China (SGDP)")
 SubClassOf(obo:HANCESTRO_0698 obo:HANCESTRO_0009)
-SubClassOf(obo:HANCESTRO_0698 obo:HANCESTRO_0845)
+SubClassOf(obo:HANCESTRO_0698 obo:HANCESTRO_2014)
 
 # Class: obo:HANCESTRO_0699 (Tlingit in Russia (SGDP))
 
 AnnotationAssertion(obo:IAO_0000115 obo:HANCESTRO_0699 "A population made up of 2 samples from Tlingit individuals recruited in Russia as part of the Simons Genome Diversity Project. The population was assigned by the collecting project to the superpopulation Central Asian and Siberian.")
 AnnotationAssertion(obo:IAO_0000412 obo:HANCESTRO_0699 obo:hancestro.owl)
 AnnotationAssertion(rdfs:label obo:HANCESTRO_0699 "Tlingit in Russia (SGDP)")
-SubClassOf(obo:HANCESTRO_0699 obo:HANCESTRO_0845)
+SubClassOf(obo:HANCESTRO_0699 obo:HANCESTRO_2014)
 
 # Class: obo:HANCESTRO_0700 (Tubalar in Russia (SGDP))
 
 AnnotationAssertion(obo:IAO_0000115 obo:HANCESTRO_0700 "A population made up of 2 samples from Tubalar individuals recruited in Russia as part of the Simons Genome Diversity Project. The population was assigned by the collecting project to the superpopulation Central Asian and Siberian.")
 AnnotationAssertion(obo:IAO_0000412 obo:HANCESTRO_0700 obo:hancestro.owl)
 AnnotationAssertion(rdfs:label obo:HANCESTRO_0700 "Tubalar in Russia (SGDP)")
-SubClassOf(obo:HANCESTRO_0700 obo:HANCESTRO_0845)
+SubClassOf(obo:HANCESTRO_0700 obo:HANCESTRO_2014)
 
 # Class: obo:HANCESTRO_0701 (Ulchi in Russia (SGDP))
 
 AnnotationAssertion(obo:IAO_0000115 obo:HANCESTRO_0701 "A population made up of 2 samples from Ulchi individuals recruited in Russia as part of the Simons Genome Diversity Project. The population was assigned by the collecting project to the superpopulation Central Asian and Siberian.")
 AnnotationAssertion(obo:IAO_0000412 obo:HANCESTRO_0701 obo:hancestro.owl)
 AnnotationAssertion(rdfs:label obo:HANCESTRO_0701 "Ulchi in Russia (SGDP)")
-SubClassOf(obo:HANCESTRO_0701 obo:HANCESTRO_0845)
+SubClassOf(obo:HANCESTRO_0701 obo:HANCESTRO_2014)
 
 # Class: obo:HANCESTRO_0702 (Yakut in Russia (SGDP))
 
 AnnotationAssertion(obo:IAO_0000115 obo:HANCESTRO_0702 "A population made up of 2 samples from Yakut individuals recruited in Russia as part of the Simons Genome Diversity Project. The population was assigned by the collecting project to the superpopulation Central Asian and Siberian.")
 AnnotationAssertion(obo:IAO_0000412 obo:HANCESTRO_0702 obo:hancestro.owl)
 AnnotationAssertion(rdfs:label obo:HANCESTRO_0702 "Yakut in Russia (SGDP)")
-SubClassOf(obo:HANCESTRO_0702 obo:HANCESTRO_0845)
+SubClassOf(obo:HANCESTRO_0702 obo:HANCESTRO_2014)
 
 # Class: obo:HANCESTRO_0703 (Balochi in Pakistan (HGDP))
 
 AnnotationAssertion(obo:IAO_0000115 obo:HANCESTRO_0703 "A population made up of 22 samples from Balochi individuals recruited in Pakistan as part of the Human Genome Diversity Project. The population was assigned by the collecting project to the superpopulation Central South Asian.")
 AnnotationAssertion(obo:IAO_0000412 obo:HANCESTRO_0703 obo:hancestro.owl)
 AnnotationAssertion(rdfs:label obo:HANCESTRO_0703 "Balochi in Pakistan (HGDP)")
-SubClassOf(obo:HANCESTRO_0703 obo:HANCESTRO_0006)
+SubClassOf(obo:HANCESTRO_0703 obo:HANCESTRO_2007)
 
 # Class: obo:HANCESTRO_0704 (Brahui in Pakistan (HGDP))
 
 AnnotationAssertion(obo:IAO_0000115 obo:HANCESTRO_0704 "A population made up of 23 samples from Brahui individuals recruited in Pakistan as part of the Human Genome Diversity Project. The population was assigned by the collecting project to the superpopulation Central South Asian.")
 AnnotationAssertion(obo:IAO_0000412 obo:HANCESTRO_0704 obo:hancestro.owl)
 AnnotationAssertion(rdfs:label obo:HANCESTRO_0704 "Brahui in Pakistan (HGDP)")
-SubClassOf(obo:HANCESTRO_0704 obo:HANCESTRO_0006)
+SubClassOf(obo:HANCESTRO_0704 obo:HANCESTRO_2007)
 
 # Class: obo:HANCESTRO_0705 (Burusho in Pakistan (HGDP))
 
 AnnotationAssertion(obo:IAO_0000115 obo:HANCESTRO_0705 "A population made up of 22 samples from Burusho individuals recruited in Pakistan as part of the Human Genome Diversity Project. The population was assigned by the collecting project to the superpopulation Central South Asian.")
 AnnotationAssertion(obo:IAO_0000412 obo:HANCESTRO_0705 obo:hancestro.owl)
 AnnotationAssertion(rdfs:label obo:HANCESTRO_0705 "Burusho in Pakistan (HGDP)")
-SubClassOf(obo:HANCESTRO_0705 obo:HANCESTRO_0006)
+SubClassOf(obo:HANCESTRO_0705 obo:HANCESTRO_2007)
 
 # Class: obo:HANCESTRO_0706 (Hazara in Pakistan (HGDP))
 
 AnnotationAssertion(obo:IAO_0000115 obo:HANCESTRO_0706 "A population made up of 18 samples from Hazara individuals recruited in Pakistan as part of the Human Genome Diversity Project. The population was assigned by the collecting project to the superpopulation Central South Asian.")
 AnnotationAssertion(obo:IAO_0000412 obo:HANCESTRO_0706 obo:hancestro.owl)
 AnnotationAssertion(rdfs:label obo:HANCESTRO_0706 "Hazara in Pakistan (HGDP)")
-SubClassOf(obo:HANCESTRO_0706 obo:HANCESTRO_0006)
+SubClassOf(obo:HANCESTRO_0706 obo:HANCESTRO_2007)
 
 # Class: obo:HANCESTRO_0707 (Kalash in Pakistan (HGDP))
 
 AnnotationAssertion(obo:IAO_0000115 obo:HANCESTRO_0707 "A population made up of 21 samples from Kalash individuals recruited in Pakistan as part of the Human Genome Diversity Project. The population was assigned by the collecting project to the superpopulation Central South Asian.")
 AnnotationAssertion(obo:IAO_0000412 obo:HANCESTRO_0707 obo:hancestro.owl)
 AnnotationAssertion(rdfs:label obo:HANCESTRO_0707 "Kalash in Pakistan (HGDP)")
-SubClassOf(obo:HANCESTRO_0707 obo:HANCESTRO_0006)
+SubClassOf(obo:HANCESTRO_0707 obo:HANCESTRO_2007)
 
 # Class: obo:HANCESTRO_0708 (Makrani in Pakistan (HGDP))
 
 AnnotationAssertion(obo:IAO_0000115 obo:HANCESTRO_0708 "A population made up of 23 samples from Makrani individuals recruited in Pakistan as part of the Human Genome Diversity Project. The population was assigned by the collecting project to the superpopulation Central South Asian.")
 AnnotationAssertion(obo:IAO_0000412 obo:HANCESTRO_0708 obo:hancestro.owl)
 AnnotationAssertion(rdfs:label obo:HANCESTRO_0708 "Makrani in Pakistan (HGDP)")
-SubClassOf(obo:HANCESTRO_0708 obo:HANCESTRO_0006)
+SubClassOf(obo:HANCESTRO_0708 obo:HANCESTRO_2007)
 
 # Class: obo:HANCESTRO_0709 (Pathan in Pakistan (HGDP))
 
 AnnotationAssertion(obo:IAO_0000115 obo:HANCESTRO_0709 "A population made up of 23 samples from Pathan individuals recruited in Pakistan as part of the Human Genome Diversity Project. The population was assigned by the collecting project to the superpopulation Central South Asian.")
 AnnotationAssertion(obo:IAO_0000412 obo:HANCESTRO_0709 obo:hancestro.owl)
 AnnotationAssertion(rdfs:label obo:HANCESTRO_0709 "Pathan in Pakistan (HGDP)")
-SubClassOf(obo:HANCESTRO_0709 obo:HANCESTRO_0006)
+SubClassOf(obo:HANCESTRO_0709 obo:HANCESTRO_2007)
 
 # Class: obo:HANCESTRO_0710 (Sindhi in Pakistan (HGDP))
 
 AnnotationAssertion(obo:IAO_0000115 obo:HANCESTRO_0710 "A population made up of 22 samples from Sindhi individuals recruited in Pakistan as part of the Human Genome Diversity Project. The population was assigned by the collecting project to the superpopulation Central South Asian.")
 AnnotationAssertion(obo:IAO_0000412 obo:HANCESTRO_0710 obo:hancestro.owl)
 AnnotationAssertion(rdfs:label obo:HANCESTRO_0710 "Sindhi in Pakistan (HGDP)")
-SubClassOf(obo:HANCESTRO_0710 obo:HANCESTRO_0006)
+SubClassOf(obo:HANCESTRO_0710 obo:HANCESTRO_2007)
 
 # Class: obo:HANCESTRO_0711 (Uygur in China (HGDP))
 
 AnnotationAssertion(obo:IAO_0000115 obo:HANCESTRO_0711 "A population made up of 8 samples from Uygur individuals recruited in China as part of the Human Genome Diversity Project. The population was assigned by the collecting project to the superpopulation Central South Asian.")
 AnnotationAssertion(obo:IAO_0000412 obo:HANCESTRO_0711 obo:hancestro.owl)
 AnnotationAssertion(rdfs:label obo:HANCESTRO_0711 "Uygur in China (HGDP)")
-SubClassOf(obo:HANCESTRO_0711 obo:HANCESTRO_0006)
 SubClassOf(obo:HANCESTRO_0711 obo:HANCESTRO_0009)
+SubClassOf(obo:HANCESTRO_0711 obo:HANCESTRO_2007)
 
 # Class: obo:HANCESTRO_0712 (Cambodian in Cambodia (HGDP))
 
@@ -11008,140 +10961,140 @@ AnnotationAssertion(obo:IAO_0000115 obo:HANCESTRO_0712 "A population made up of 
 AnnotationAssertion(obo:IAO_0000412 obo:HANCESTRO_0712 obo:hancestro.owl)
 AnnotationAssertion(rdfs:label obo:HANCESTRO_0712 "Cambodian in Cambodia (HGDP)")
 SubClassOf(obo:HANCESTRO_0712 obo:HANCESTRO_0007)
-SubClassOf(obo:HANCESTRO_0712 obo:HANCESTRO_0009)
+SubClassOf(obo:HANCESTRO_0712 obo:HANCESTRO_2008)
 
 # Class: obo:HANCESTRO_0713 (Dai in China (HGDP))
 
 AnnotationAssertion(obo:IAO_0000115 obo:HANCESTRO_0713 "A population made up of 5 samples from Dai individuals recruited in China as part of the Human Genome Diversity Project. The population was assigned by the collecting project to the superpopulation East Asian.")
 AnnotationAssertion(obo:IAO_0000412 obo:HANCESTRO_0713 obo:hancestro.owl)
 AnnotationAssertion(rdfs:label obo:HANCESTRO_0713 "Dai in China (HGDP)")
-SubClassOf(obo:HANCESTRO_0713 obo:HANCESTRO_0009)
+SubClassOf(obo:HANCESTRO_0713 obo:HANCESTRO_2008)
 
 # Class: obo:HANCESTRO_0714 (Daur in China (HGDP))
 
 AnnotationAssertion(obo:IAO_0000115 obo:HANCESTRO_0714 "A population made up of 9 samples from Daur individuals recruited in China as part of the Human Genome Diversity Project. The population was assigned by the collecting project to the superpopulation East Asian.")
 AnnotationAssertion(obo:IAO_0000412 obo:HANCESTRO_0714 obo:hancestro.owl)
 AnnotationAssertion(rdfs:label obo:HANCESTRO_0714 "Daur in China (HGDP)")
-SubClassOf(obo:HANCESTRO_0714 obo:HANCESTRO_0009)
+SubClassOf(obo:HANCESTRO_0714 obo:HANCESTRO_2008)
 
 # Class: obo:HANCESTRO_0715 (Han in China (HGDP))
 
 AnnotationAssertion(obo:IAO_0000115 obo:HANCESTRO_0715 "A population made up of 30 samples from Han individuals recruited in China as part of the Human Genome Diversity Project. The population was assigned by the collecting project to the superpopulation East Asian.")
 AnnotationAssertion(obo:IAO_0000412 obo:HANCESTRO_0715 obo:hancestro.owl)
 AnnotationAssertion(rdfs:label obo:HANCESTRO_0715 "Han in China (HGDP)")
-SubClassOf(obo:HANCESTRO_0715 obo:HANCESTRO_0009)
+SubClassOf(obo:HANCESTRO_0715 obo:HANCESTRO_2008)
 
 # Class: obo:HANCESTRO_0716 (Hezhen in China (HGDP))
 
 AnnotationAssertion(obo:IAO_0000115 obo:HANCESTRO_0716 "A population made up of 7 samples from Hezhen individuals recruited in China as part of the Human Genome Diversity Project. The population was assigned by the collecting project to the superpopulation East Asian.")
 AnnotationAssertion(obo:IAO_0000412 obo:HANCESTRO_0716 obo:hancestro.owl)
 AnnotationAssertion(rdfs:label obo:HANCESTRO_0716 "Hezhen in China (HGDP)")
-SubClassOf(obo:HANCESTRO_0716 obo:HANCESTRO_0009)
+SubClassOf(obo:HANCESTRO_0716 obo:HANCESTRO_2008)
 
 # Class: obo:HANCESTRO_0717 (Japanese in Japan (HGDP))
 
 AnnotationAssertion(obo:IAO_0000115 obo:HANCESTRO_0717 "A population made up of 27 samples from Japanese individuals recruited in Japan as part of the Human Genome Diversity Project. The population was assigned by the collecting project to the superpopulation East Asian.")
 AnnotationAssertion(obo:IAO_0000412 obo:HANCESTRO_0717 obo:hancestro.owl)
 AnnotationAssertion(rdfs:label obo:HANCESTRO_0717 "Japanese in Japan (HGDP)")
-SubClassOf(obo:HANCESTRO_0717 obo:HANCESTRO_0009)
+SubClassOf(obo:HANCESTRO_0717 obo:HANCESTRO_2008)
 
 # Class: obo:HANCESTRO_0718 (Lahu in China (HGDP))
 
 AnnotationAssertion(obo:IAO_0000115 obo:HANCESTRO_0718 "A population made up of 6 samples from Lahu individuals recruited in China as part of the Human Genome Diversity Project. The population was assigned by the collecting project to the superpopulation East Asian.")
 AnnotationAssertion(obo:IAO_0000412 obo:HANCESTRO_0718 obo:hancestro.owl)
 AnnotationAssertion(rdfs:label obo:HANCESTRO_0718 "Lahu in China (HGDP)")
-SubClassOf(obo:HANCESTRO_0718 obo:HANCESTRO_0009)
+SubClassOf(obo:HANCESTRO_0718 obo:HANCESTRO_2008)
 
 # Class: obo:HANCESTRO_0719 (Miao in China (HGDP))
 
 AnnotationAssertion(obo:IAO_0000115 obo:HANCESTRO_0719 "A population made up of 8 samples from Miao individuals recruited in China as part of the Human Genome Diversity Project. The population was assigned by the collecting project to the superpopulation East Asian.")
 AnnotationAssertion(obo:IAO_0000412 obo:HANCESTRO_0719 obo:hancestro.owl)
 AnnotationAssertion(rdfs:label obo:HANCESTRO_0719 "Miao in China (HGDP)")
-SubClassOf(obo:HANCESTRO_0719 obo:HANCESTRO_0009)
+SubClassOf(obo:HANCESTRO_0719 obo:HANCESTRO_2008)
 
 # Class: obo:HANCESTRO_0720 (Mongolian in China (HGDP))
 
 AnnotationAssertion(obo:IAO_0000115 obo:HANCESTRO_0720 "A population made up of 8 samples from Mongolian individuals recruited in China as part of the Human Genome Diversity Project. The population was assigned by the collecting project to the superpopulation East Asian.")
 AnnotationAssertion(obo:IAO_0000412 obo:HANCESTRO_0720 obo:hancestro.owl)
 AnnotationAssertion(rdfs:label obo:HANCESTRO_0720 "Mongolian in China (HGDP)")
-SubClassOf(obo:HANCESTRO_0720 obo:HANCESTRO_0009)
+SubClassOf(obo:HANCESTRO_0720 obo:HANCESTRO_2008)
 
 # Class: obo:HANCESTRO_0721 (Naxi in China (HGDP))
 
 AnnotationAssertion(obo:IAO_0000115 obo:HANCESTRO_0721 "A population made up of 6 samples from Naxi individuals recruited in China as part of the Human Genome Diversity Project. The population was assigned by the collecting project to the superpopulation East Asian.")
 AnnotationAssertion(obo:IAO_0000412 obo:HANCESTRO_0721 obo:hancestro.owl)
 AnnotationAssertion(rdfs:label obo:HANCESTRO_0721 "Naxi in China (HGDP)")
-SubClassOf(obo:HANCESTRO_0721 obo:HANCESTRO_0009)
+SubClassOf(obo:HANCESTRO_0721 obo:HANCESTRO_2008)
 
 # Class: obo:HANCESTRO_0722 (Northern Han in China (HGDP))
 
 AnnotationAssertion(obo:IAO_0000115 obo:HANCESTRO_0722 "A population made up of 10 samples from Northern Han individuals recruited in China as part of the Human Genome Diversity Project. The population was assigned by the collecting project to the superpopulation East Asian.")
 AnnotationAssertion(obo:IAO_0000412 obo:HANCESTRO_0722 obo:hancestro.owl)
 AnnotationAssertion(rdfs:label obo:HANCESTRO_0722 "Northern Han in China (HGDP)")
-SubClassOf(obo:HANCESTRO_0722 obo:HANCESTRO_0009)
+SubClassOf(obo:HANCESTRO_0722 obo:HANCESTRO_2008)
 
 # Class: obo:HANCESTRO_0723 (Oroqen in China (HGDP))
 
 AnnotationAssertion(obo:IAO_0000115 obo:HANCESTRO_0723 "A population made up of 7 samples from Oroqen individuals recruited in China as part of the Human Genome Diversity Project. The population was assigned by the collecting project to the superpopulation East Asian.")
 AnnotationAssertion(obo:IAO_0000412 obo:HANCESTRO_0723 obo:hancestro.owl)
 AnnotationAssertion(rdfs:label obo:HANCESTRO_0723 "Oroqen in China (HGDP)")
-SubClassOf(obo:HANCESTRO_0723 obo:HANCESTRO_0009)
+SubClassOf(obo:HANCESTRO_0723 obo:HANCESTRO_2008)
 
 # Class: obo:HANCESTRO_0724 (She in China (HGDP))
 
 AnnotationAssertion(obo:IAO_0000115 obo:HANCESTRO_0724 "A population made up of 8 samples from She individuals recruited in China as part of the Human Genome Diversity Project. The population was assigned by the collecting project to the superpopulation East Asian.")
 AnnotationAssertion(obo:IAO_0000412 obo:HANCESTRO_0724 obo:hancestro.owl)
 AnnotationAssertion(rdfs:label obo:HANCESTRO_0724 "She in China (HGDP)")
-SubClassOf(obo:HANCESTRO_0724 obo:HANCESTRO_0009)
+SubClassOf(obo:HANCESTRO_0724 obo:HANCESTRO_2008)
 
 # Class: obo:HANCESTRO_0725 (Tu in China (HGDP))
 
 AnnotationAssertion(obo:IAO_0000115 obo:HANCESTRO_0725 "A population made up of 8 samples from Tu individuals recruited in China as part of the Human Genome Diversity Project. The population was assigned by the collecting project to the superpopulation East Asian.")
 AnnotationAssertion(obo:IAO_0000412 obo:HANCESTRO_0725 obo:hancestro.owl)
 AnnotationAssertion(rdfs:label obo:HANCESTRO_0725 "Tu in China (HGDP)")
-SubClassOf(obo:HANCESTRO_0725 obo:HANCESTRO_0009)
+SubClassOf(obo:HANCESTRO_0725 obo:HANCESTRO_2008)
 
 # Class: obo:HANCESTRO_0726 (Tujia in China (HGDP))
 
 AnnotationAssertion(obo:IAO_0000115 obo:HANCESTRO_0726 "A population made up of 8 samples from Tujia individuals recruited in China as part of the Human Genome Diversity Project. The population was assigned by the collecting project to the superpopulation East Asian.")
 AnnotationAssertion(obo:IAO_0000412 obo:HANCESTRO_0726 obo:hancestro.owl)
 AnnotationAssertion(rdfs:label obo:HANCESTRO_0726 "Tujia in China (HGDP)")
-SubClassOf(obo:HANCESTRO_0726 obo:HANCESTRO_0009)
+SubClassOf(obo:HANCESTRO_0726 obo:HANCESTRO_2008)
 
 # Class: obo:HANCESTRO_0727 (Xibo in China (HGDP))
 
 AnnotationAssertion(obo:IAO_0000115 obo:HANCESTRO_0727 "A population made up of 7 samples from Xibo individuals recruited in China as part of the Human Genome Diversity Project. The population was assigned by the collecting project to the superpopulation East Asian.")
 AnnotationAssertion(obo:IAO_0000412 obo:HANCESTRO_0727 obo:hancestro.owl)
 AnnotationAssertion(rdfs:label obo:HANCESTRO_0727 "Xibo in China (HGDP)")
-SubClassOf(obo:HANCESTRO_0727 obo:HANCESTRO_0009)
+SubClassOf(obo:HANCESTRO_0727 obo:HANCESTRO_2008)
 
 # Class: obo:HANCESTRO_0728 (Yakut in Siberia (HGDP))
 
 AnnotationAssertion(obo:IAO_0000115 obo:HANCESTRO_0728 "A population made up of 23 samples from Yakut individuals recruited in Siberia as part of the Human Genome Diversity Project. The population was assigned by the collecting project to the superpopulation East Asian.")
 AnnotationAssertion(obo:IAO_0000412 obo:HANCESTRO_0728 obo:hancestro.owl)
 AnnotationAssertion(rdfs:label obo:HANCESTRO_0728 "Yakut in Siberia (HGDP)")
-SubClassOf(obo:HANCESTRO_0728 obo:HANCESTRO_0009)
+SubClassOf(obo:HANCESTRO_0728 obo:HANCESTRO_2008)
 
 # Class: obo:HANCESTRO_0729 (Yi in China (HGDP))
 
 AnnotationAssertion(obo:IAO_0000115 obo:HANCESTRO_0729 "A population made up of 8 samples from Yi individuals recruited in China as part of the Human Genome Diversity Project. The population was assigned by the collecting project to the superpopulation East Asian.")
 AnnotationAssertion(obo:IAO_0000412 obo:HANCESTRO_0729 obo:hancestro.owl)
 AnnotationAssertion(rdfs:label obo:HANCESTRO_0729 "Yi in China (HGDP)")
-SubClassOf(obo:HANCESTRO_0729 obo:HANCESTRO_0009)
+SubClassOf(obo:HANCESTRO_0729 obo:HANCESTRO_2008)
 
 # Class: obo:HANCESTRO_0730 (Ami in Taiwan (SGDP))
 
 AnnotationAssertion(obo:IAO_0000115 obo:HANCESTRO_0730 "A population made up of 2 samples from Ami individuals recruited in Taiwan as part of the Simons Genome Diversity Project. The population was assigned by the collecting project to the superpopulation East Asian.")
 AnnotationAssertion(obo:IAO_0000412 obo:HANCESTRO_0730 obo:hancestro.owl)
 AnnotationAssertion(rdfs:label obo:HANCESTRO_0730 "Ami in Taiwan (SGDP)")
-SubClassOf(obo:HANCESTRO_0730 obo:HANCESTRO_0009)
+SubClassOf(obo:HANCESTRO_0730 obo:HANCESTRO_2015)
 
 # Class: obo:HANCESTRO_0731 (Atayal in Taiwan (SGDP))
 
 AnnotationAssertion(obo:IAO_0000115 obo:HANCESTRO_0731 "A population made up of 1 samples from Atayal individuals recruited in Taiwan as part of the Simons Genome Diversity Project. The population was assigned by the collecting project to the superpopulation East Asian.")
 AnnotationAssertion(obo:IAO_0000412 obo:HANCESTRO_0731 obo:hancestro.owl)
 AnnotationAssertion(rdfs:label obo:HANCESTRO_0731 "Atayal in Taiwan (SGDP)")
-SubClassOf(obo:HANCESTRO_0731 obo:HANCESTRO_0009)
+SubClassOf(obo:HANCESTRO_0731 obo:HANCESTRO_2015)
 
 # Class: obo:HANCESTRO_0732 (Burmese in Myanmar (SGDP))
 
@@ -11149,7 +11102,7 @@ AnnotationAssertion(obo:IAO_0000115 obo:HANCESTRO_0732 "A population made up of 
 AnnotationAssertion(obo:IAO_0000412 obo:HANCESTRO_0732 obo:hancestro.owl)
 AnnotationAssertion(rdfs:label obo:HANCESTRO_0732 "Burmese in Myanmar (SGDP)")
 SubClassOf(obo:HANCESTRO_0732 obo:HANCESTRO_0007)
-SubClassOf(obo:HANCESTRO_0732 obo:HANCESTRO_0009)
+SubClassOf(obo:HANCESTRO_0732 obo:HANCESTRO_2015)
 
 # Class: obo:HANCESTRO_0733 (Cambodian in Cambodia (SGDP))
 
@@ -11157,42 +11110,42 @@ AnnotationAssertion(obo:IAO_0000115 obo:HANCESTRO_0733 "A population made up of 
 AnnotationAssertion(obo:IAO_0000412 obo:HANCESTRO_0733 obo:hancestro.owl)
 AnnotationAssertion(rdfs:label obo:HANCESTRO_0733 "Cambodian in Cambodia (SGDP)")
 SubClassOf(obo:HANCESTRO_0733 obo:HANCESTRO_0007)
-SubClassOf(obo:HANCESTRO_0733 obo:HANCESTRO_0009)
+SubClassOf(obo:HANCESTRO_0733 obo:HANCESTRO_2015)
 
 # Class: obo:HANCESTRO_0734 (Dai in China (SGDP))
 
 AnnotationAssertion(obo:IAO_0000115 obo:HANCESTRO_0734 "A population made up of 4 samples from Dai individuals recruited in China as part of the Simons Genome Diversity Project. The population was assigned by the collecting project to the superpopulation East Asian.")
 AnnotationAssertion(obo:IAO_0000412 obo:HANCESTRO_0734 obo:hancestro.owl)
 AnnotationAssertion(rdfs:label obo:HANCESTRO_0734 "Dai in China (SGDP)")
-SubClassOf(obo:HANCESTRO_0734 obo:HANCESTRO_0009)
+SubClassOf(obo:HANCESTRO_0734 obo:HANCESTRO_2015)
 
 # Class: obo:HANCESTRO_0735 (Daur in China (SGDP))
 
 AnnotationAssertion(obo:IAO_0000115 obo:HANCESTRO_0735 "A population made up of 1 samples from Daur individuals recruited in China as part of the Simons Genome Diversity Project. The population was assigned by the collecting project to the superpopulation East Asian.")
 AnnotationAssertion(obo:IAO_0000412 obo:HANCESTRO_0735 obo:hancestro.owl)
 AnnotationAssertion(rdfs:label obo:HANCESTRO_0735 "Daur in China (SGDP)")
-SubClassOf(obo:HANCESTRO_0735 obo:HANCESTRO_0009)
+SubClassOf(obo:HANCESTRO_0735 obo:HANCESTRO_2015)
 
 # Class: obo:HANCESTRO_0736 (Han in China (SGDP))
 
 AnnotationAssertion(obo:IAO_0000115 obo:HANCESTRO_0736 "A population made up of 3 samples from Han individuals recruited in China as part of the Simons Genome Diversity Project. The population was assigned by the collecting project to the superpopulation East Asian.")
 AnnotationAssertion(obo:IAO_0000412 obo:HANCESTRO_0736 obo:hancestro.owl)
 AnnotationAssertion(rdfs:label obo:HANCESTRO_0736 "Han in China (SGDP)")
-SubClassOf(obo:HANCESTRO_0736 obo:HANCESTRO_0009)
+SubClassOf(obo:HANCESTRO_0736 obo:HANCESTRO_2015)
 
 # Class: obo:HANCESTRO_0737 (Hezhen in China (SGDP))
 
 AnnotationAssertion(obo:IAO_0000115 obo:HANCESTRO_0737 "A population made up of 2 samples from Hezhen individuals recruited in China as part of the Simons Genome Diversity Project. The population was assigned by the collecting project to the superpopulation East Asian.")
 AnnotationAssertion(obo:IAO_0000412 obo:HANCESTRO_0737 obo:hancestro.owl)
 AnnotationAssertion(rdfs:label obo:HANCESTRO_0737 "Hezhen in China (SGDP)")
-SubClassOf(obo:HANCESTRO_0737 obo:HANCESTRO_0009)
+SubClassOf(obo:HANCESTRO_0737 obo:HANCESTRO_2015)
 
 # Class: obo:HANCESTRO_0738 (Japanese in Japan (SGDP))
 
 AnnotationAssertion(obo:IAO_0000115 obo:HANCESTRO_0738 "A population made up of 3 samples from Japanese individuals recruited in Japan as part of the Simons Genome Diversity Project. The population was assigned by the collecting project to the superpopulation East Asian.")
 AnnotationAssertion(obo:IAO_0000412 obo:HANCESTRO_0738 obo:hancestro.owl)
 AnnotationAssertion(rdfs:label obo:HANCESTRO_0738 "Japanese in Japan (SGDP)")
-SubClassOf(obo:HANCESTRO_0738 obo:HANCESTRO_0009)
+SubClassOf(obo:HANCESTRO_0738 obo:HANCESTRO_2015)
 
 # Class: obo:HANCESTRO_0739 (Kinh in Vietnam (SGDP))
 
@@ -11200,49 +11153,49 @@ AnnotationAssertion(obo:IAO_0000115 obo:HANCESTRO_0739 "A population made up of 
 AnnotationAssertion(obo:IAO_0000412 obo:HANCESTRO_0739 obo:hancestro.owl)
 AnnotationAssertion(rdfs:label obo:HANCESTRO_0739 "Kinh in Vietnam (SGDP)")
 SubClassOf(obo:HANCESTRO_0739 obo:HANCESTRO_0007)
-SubClassOf(obo:HANCESTRO_0739 obo:HANCESTRO_0009)
+SubClassOf(obo:HANCESTRO_0739 obo:HANCESTRO_2015)
 
 # Class: obo:HANCESTRO_0740 (Korean in Korea (SGDP))
 
 AnnotationAssertion(obo:IAO_0000115 obo:HANCESTRO_0740 "A population made up of 2 samples from Korean individuals recruited in Korea as part of the Simons Genome Diversity Project. The population was assigned by the collecting project to the superpopulation East Asian.")
 AnnotationAssertion(obo:IAO_0000412 obo:HANCESTRO_0740 obo:hancestro.owl)
 AnnotationAssertion(rdfs:label obo:HANCESTRO_0740 "Korean in Korea (SGDP)")
-SubClassOf(obo:HANCESTRO_0740 obo:HANCESTRO_0009)
+SubClassOf(obo:HANCESTRO_0740 obo:HANCESTRO_2015)
 
 # Class: obo:HANCESTRO_0741 (Lahu in China (SGDP))
 
 AnnotationAssertion(obo:IAO_0000115 obo:HANCESTRO_0741 "A population made up of 2 samples from Lahu individuals recruited in China as part of the Simons Genome Diversity Project. The population was assigned by the collecting project to the superpopulation East Asian.")
 AnnotationAssertion(obo:IAO_0000412 obo:HANCESTRO_0741 obo:hancestro.owl)
 AnnotationAssertion(rdfs:label obo:HANCESTRO_0741 "Lahu in China (SGDP)")
-SubClassOf(obo:HANCESTRO_0741 obo:HANCESTRO_0009)
+SubClassOf(obo:HANCESTRO_0741 obo:HANCESTRO_2015)
 
 # Class: obo:HANCESTRO_0742 (Miao in China (SGDP))
 
 AnnotationAssertion(obo:IAO_0000115 obo:HANCESTRO_0742 "A population made up of 2 samples from Miao individuals recruited in China as part of the Simons Genome Diversity Project. The population was assigned by the collecting project to the superpopulation East Asian.")
 AnnotationAssertion(obo:IAO_0000412 obo:HANCESTRO_0742 obo:hancestro.owl)
 AnnotationAssertion(rdfs:label obo:HANCESTRO_0742 "Miao in China (SGDP)")
-SubClassOf(obo:HANCESTRO_0742 obo:HANCESTRO_0009)
+SubClassOf(obo:HANCESTRO_0742 obo:HANCESTRO_2015)
 
 # Class: obo:HANCESTRO_0743 (Naxi in China (SGDP))
 
 AnnotationAssertion(obo:IAO_0000115 obo:HANCESTRO_0743 "A population made up of 3 samples from Naxi individuals recruited in China as part of the Simons Genome Diversity Project. The population was assigned by the collecting project to the superpopulation East Asian.")
 AnnotationAssertion(obo:IAO_0000412 obo:HANCESTRO_0743 obo:hancestro.owl)
 AnnotationAssertion(rdfs:label obo:HANCESTRO_0743 "Naxi in China (SGDP)")
-SubClassOf(obo:HANCESTRO_0743 obo:HANCESTRO_0009)
+SubClassOf(obo:HANCESTRO_0743 obo:HANCESTRO_2015)
 
 # Class: obo:HANCESTRO_0744 (Oroqen in China (SGDP))
 
 AnnotationAssertion(obo:IAO_0000115 obo:HANCESTRO_0744 "A population made up of 2 samples from Oroqen individuals recruited in China as part of the Simons Genome Diversity Project. The population was assigned by the collecting project to the superpopulation East Asian.")
 AnnotationAssertion(obo:IAO_0000412 obo:HANCESTRO_0744 obo:hancestro.owl)
 AnnotationAssertion(rdfs:label obo:HANCESTRO_0744 "Oroqen in China (SGDP)")
-SubClassOf(obo:HANCESTRO_0744 obo:HANCESTRO_0009)
+SubClassOf(obo:HANCESTRO_0744 obo:HANCESTRO_2015)
 
 # Class: obo:HANCESTRO_0745 (She in China (SGDP))
 
 AnnotationAssertion(obo:IAO_0000115 obo:HANCESTRO_0745 "A population made up of 2 samples from She individuals recruited in China as part of the Simons Genome Diversity Project. The population was assigned by the collecting project to the superpopulation East Asian.")
 AnnotationAssertion(obo:IAO_0000412 obo:HANCESTRO_0745 obo:hancestro.owl)
 AnnotationAssertion(rdfs:label obo:HANCESTRO_0745 "She in China (SGDP)")
-SubClassOf(obo:HANCESTRO_0745 obo:HANCESTRO_0009)
+SubClassOf(obo:HANCESTRO_0745 obo:HANCESTRO_2015)
 
 # Class: obo:HANCESTRO_0746 (Thai in Thailand (SGDP))
 
@@ -11250,63 +11203,63 @@ AnnotationAssertion(obo:IAO_0000115 obo:HANCESTRO_0746 "A population made up of 
 AnnotationAssertion(obo:IAO_0000412 obo:HANCESTRO_0746 obo:hancestro.owl)
 AnnotationAssertion(rdfs:label obo:HANCESTRO_0746 "Thai in Thailand (SGDP)")
 SubClassOf(obo:HANCESTRO_0746 obo:HANCESTRO_0007)
-SubClassOf(obo:HANCESTRO_0746 obo:HANCESTRO_0009)
+SubClassOf(obo:HANCESTRO_0746 obo:HANCESTRO_2015)
 
 # Class: obo:HANCESTRO_0747 (Tu in China (SGDP))
 
 AnnotationAssertion(obo:IAO_0000115 obo:HANCESTRO_0747 "A population made up of 2 samples from Tu individuals recruited in China as part of the Simons Genome Diversity Project. The population was assigned by the collecting project to the superpopulation East Asian.")
 AnnotationAssertion(obo:IAO_0000412 obo:HANCESTRO_0747 obo:hancestro.owl)
 AnnotationAssertion(rdfs:label obo:HANCESTRO_0747 "Tu in China (SGDP)")
-SubClassOf(obo:HANCESTRO_0747 obo:HANCESTRO_0009)
+SubClassOf(obo:HANCESTRO_0747 obo:HANCESTRO_2015)
 
 # Class: obo:HANCESTRO_0748 (Tujia in China (SGDP))
 
 AnnotationAssertion(obo:IAO_0000115 obo:HANCESTRO_0748 "A population made up of 2 samples from Tujia individuals recruited in China as part of the Simons Genome Diversity Project. The population was assigned by the collecting project to the superpopulation East Asian.")
 AnnotationAssertion(obo:IAO_0000412 obo:HANCESTRO_0748 obo:hancestro.owl)
 AnnotationAssertion(rdfs:label obo:HANCESTRO_0748 "Tujia in China (SGDP)")
-SubClassOf(obo:HANCESTRO_0748 obo:HANCESTRO_0009)
+SubClassOf(obo:HANCESTRO_0748 obo:HANCESTRO_2015)
 
 # Class: obo:HANCESTRO_0749 (Uygur in China (SGDP))
 
 AnnotationAssertion(obo:IAO_0000115 obo:HANCESTRO_0749 "A population made up of 2 samples from Uygur individuals recruited in China as part of the Simons Genome Diversity Project. The population was assigned by the collecting project to the superpopulation East Asian.")
 AnnotationAssertion(obo:IAO_0000412 obo:HANCESTRO_0749 obo:hancestro.owl)
 AnnotationAssertion(rdfs:label obo:HANCESTRO_0749 "Uygur in China (SGDP)")
-SubClassOf(obo:HANCESTRO_0749 obo:HANCESTRO_0009)
+SubClassOf(obo:HANCESTRO_0749 obo:HANCESTRO_2015)
 
 # Class: obo:HANCESTRO_0750 (Xibo in China (SGDP))
 
 AnnotationAssertion(obo:IAO_0000115 obo:HANCESTRO_0750 "A population made up of 2 samples from Xibo individuals recruited in China as part of the Simons Genome Diversity Project. The population was assigned by the collecting project to the superpopulation East Asian.")
 AnnotationAssertion(obo:IAO_0000412 obo:HANCESTRO_0750 obo:hancestro.owl)
 AnnotationAssertion(rdfs:label obo:HANCESTRO_0750 "Xibo in China (SGDP)")
-SubClassOf(obo:HANCESTRO_0750 obo:HANCESTRO_0009)
+SubClassOf(obo:HANCESTRO_0750 obo:HANCESTRO_2015)
 
 # Class: obo:HANCESTRO_0751 (Yi in China (SGDP))
 
 AnnotationAssertion(obo:IAO_0000115 obo:HANCESTRO_0751 "A population made up of 2 samples from Yi individuals recruited in China as part of the Simons Genome Diversity Project. The population was assigned by the collecting project to the superpopulation East Asian.")
 AnnotationAssertion(obo:IAO_0000412 obo:HANCESTRO_0751 obo:hancestro.owl)
 AnnotationAssertion(rdfs:label obo:HANCESTRO_0751 "Yi in China (SGDP)")
-SubClassOf(obo:HANCESTRO_0751 obo:HANCESTRO_0009)
+SubClassOf(obo:HANCESTRO_0751 obo:HANCESTRO_2015)
 
 # Class: obo:HANCESTRO_0752 (Chinese Dai in Xishuangbanna, China (1KGP))
 
 AnnotationAssertion(obo:IAO_0000115 obo:HANCESTRO_0752 "A population made up of 109 samples from Chinese Dai individuals recruited in Xishuangbanna, China as part of the 1000 Genomes Project. The population was assigned by the collecting project to the superpopulation East Asian.")
 AnnotationAssertion(obo:IAO_0000412 obo:HANCESTRO_0752 obo:hancestro.owl)
 AnnotationAssertion(rdfs:label obo:HANCESTRO_0752 "Chinese Dai in Xishuangbanna, China (1KGP)")
-SubClassOf(obo:HANCESTRO_0752 obo:HANCESTRO_0009)
+SubClassOf(obo:HANCESTRO_0752 obo:HANCESTRO_2002)
 
 # Class: obo:HANCESTRO_0753 (Han Chinese in Beijing, China (1KGP))
 
 AnnotationAssertion(obo:IAO_0000115 obo:HANCESTRO_0753 "A population made up of 112 samples from Han Chinese individuals recruited in Beijing, China as part of the 1000 Genomes Project. The population was assigned by the collecting project to the superpopulation East Asian.")
 AnnotationAssertion(obo:IAO_0000412 obo:HANCESTRO_0753 obo:hancestro.owl)
 AnnotationAssertion(rdfs:label obo:HANCESTRO_0753 "Han Chinese in Beijing, China (1KGP)")
-SubClassOf(obo:HANCESTRO_0753 obo:HANCESTRO_0009)
+SubClassOf(obo:HANCESTRO_0753 obo:HANCESTRO_2002)
 
 # Class: obo:HANCESTRO_0754 (Japanese in Tokyo, Japan (1KGP))
 
 AnnotationAssertion(obo:IAO_0000115 obo:HANCESTRO_0754 "A population made up of 105 samples from Japanese individuals recruited in Tokyo, Japan as part of the 1000 Genomes Project. The population was assigned by the collecting project to the superpopulation East Asian.")
 AnnotationAssertion(obo:IAO_0000412 obo:HANCESTRO_0754 obo:hancestro.owl)
 AnnotationAssertion(rdfs:label obo:HANCESTRO_0754 "Japanese in Tokyo, Japan (1KGP)")
-SubClassOf(obo:HANCESTRO_0754 obo:HANCESTRO_0009)
+SubClassOf(obo:HANCESTRO_0754 obo:HANCESTRO_2002)
 
 # Class: obo:HANCESTRO_0755 (Kinh in Ho Chi Minh City, Vietnam (1KGP))
 
@@ -11314,365 +11267,365 @@ AnnotationAssertion(obo:IAO_0000115 obo:HANCESTRO_0755 "A population made up of 
 AnnotationAssertion(obo:IAO_0000412 obo:HANCESTRO_0755 obo:hancestro.owl)
 AnnotationAssertion(rdfs:label obo:HANCESTRO_0755 "Kinh in Ho Chi Minh City, Vietnam (1KGP)")
 SubClassOf(obo:HANCESTRO_0755 obo:HANCESTRO_0007)
-SubClassOf(obo:HANCESTRO_0755 obo:HANCESTRO_0009)
+SubClassOf(obo:HANCESTRO_0755 obo:HANCESTRO_2002)
 
 # Class: obo:HANCESTRO_0756 (Han Chinese South (1KGP))
 
 AnnotationAssertion(obo:IAO_0000115 obo:HANCESTRO_0756 "A population made up of 171 samples from Han Chinese South individuals recruited in China as part of the 1000 Genomes Project. The population was assigned by the collecting project to the superpopulation East Asian.")
 AnnotationAssertion(obo:IAO_0000412 obo:HANCESTRO_0756 obo:hancestro.owl)
 AnnotationAssertion(rdfs:label obo:HANCESTRO_0756 "Han Chinese South (1KGP)")
-SubClassOf(obo:HANCESTRO_0756 obo:HANCESTRO_0009)
+SubClassOf(obo:HANCESTRO_0756 obo:HANCESTRO_2002)
 
 # Class: obo:HANCESTRO_0757 (Adygei in Caucasus, Russia (HGDP))
 
 AnnotationAssertion(obo:IAO_0000115 obo:HANCESTRO_0757 "A population made up of 15 samples from Adygei individuals recruited in Caucasus, Russia as part of the Human Genome Diversity Project. The population was assigned by the collecting project to the superpopulation European.")
 AnnotationAssertion(obo:IAO_0000412 obo:HANCESTRO_0757 obo:hancestro.owl)
 AnnotationAssertion(rdfs:label obo:HANCESTRO_0757 "Adygei in Caucasus, Russia (HGDP)")
-SubClassOf(obo:HANCESTRO_0757 obo:HANCESTRO_0005)
+SubClassOf(obo:HANCESTRO_0757 obo:HANCESTRO_2009)
 
 # Class: obo:HANCESTRO_0758 (Basque in France (HGDP))
 
 AnnotationAssertion(obo:IAO_0000115 obo:HANCESTRO_0758 "A population made up of 22 samples from Basque individuals recruited in France as part of the Human Genome Diversity Project. The population was assigned by the collecting project to the superpopulation European.")
 AnnotationAssertion(obo:IAO_0000412 obo:HANCESTRO_0758 obo:hancestro.owl)
 AnnotationAssertion(rdfs:label obo:HANCESTRO_0758 "Basque in France (HGDP)")
-SubClassOf(obo:HANCESTRO_0758 obo:HANCESTRO_0005)
+SubClassOf(obo:HANCESTRO_0758 obo:HANCESTRO_2009)
 
 # Class: obo:HANCESTRO_0759 (Bergamo Italian in Bergamo, Italy (HGDP))
 
 AnnotationAssertion(obo:IAO_0000115 obo:HANCESTRO_0759 "A population made up of 10 samples from Bergamo Italian individuals recruited in Bergamo, Italy as part of the Human Genome Diversity Project. The population was assigned by the collecting project to the superpopulation European.")
 AnnotationAssertion(obo:IAO_0000412 obo:HANCESTRO_0759 obo:hancestro.owl)
 AnnotationAssertion(rdfs:label obo:HANCESTRO_0759 "Bergamo Italian in Bergamo, Italy (HGDP)")
-SubClassOf(obo:HANCESTRO_0759 obo:HANCESTRO_0005)
+SubClassOf(obo:HANCESTRO_0759 obo:HANCESTRO_2009)
 
 # Class: obo:HANCESTRO_0760 (French in France (HGDP))
 
 AnnotationAssertion(obo:IAO_0000115 obo:HANCESTRO_0760 "A population made up of 24 samples from French individuals recruited in France as part of the Human Genome Diversity Project. The population was assigned by the collecting project to the superpopulation European.")
 AnnotationAssertion(obo:IAO_0000412 obo:HANCESTRO_0760 obo:hancestro.owl)
 AnnotationAssertion(rdfs:label obo:HANCESTRO_0760 "French in France (HGDP)")
-SubClassOf(obo:HANCESTRO_0760 obo:HANCESTRO_0005)
+SubClassOf(obo:HANCESTRO_0760 obo:HANCESTRO_2009)
 
 # Class: obo:HANCESTRO_0761 (Orcadian in Orkney (HGDP))
 
 AnnotationAssertion(obo:IAO_0000115 obo:HANCESTRO_0761 "A population made up of 13 samples from Orcadian individuals recruited in Orkney as part of the Human Genome Diversity Project. The population was assigned by the collecting project to the superpopulation European.")
 AnnotationAssertion(obo:IAO_0000412 obo:HANCESTRO_0761 obo:hancestro.owl)
 AnnotationAssertion(rdfs:label obo:HANCESTRO_0761 "Orcadian in Orkney (HGDP)")
-SubClassOf(obo:HANCESTRO_0761 obo:HANCESTRO_0005)
+SubClassOf(obo:HANCESTRO_0761 obo:HANCESTRO_2009)
 
 # Class: obo:HANCESTRO_0762 (Russian in Russia (HGDP))
 
 AnnotationAssertion(obo:IAO_0000115 obo:HANCESTRO_0762 "A population made up of 23 samples from Russian individuals recruited in Russia as part of the Human Genome Diversity Project. The population was assigned by the collecting project to the superpopulation European.")
 AnnotationAssertion(obo:IAO_0000412 obo:HANCESTRO_0762 obo:hancestro.owl)
 AnnotationAssertion(rdfs:label obo:HANCESTRO_0762 "Russian in Russia (HGDP)")
-SubClassOf(obo:HANCESTRO_0762 obo:HANCESTRO_0005)
+SubClassOf(obo:HANCESTRO_0762 obo:HANCESTRO_2009)
 
 # Class: obo:HANCESTRO_0763 (Sardinian in Italy (HGDP))
 
 AnnotationAssertion(obo:IAO_0000115 obo:HANCESTRO_0763 "A population made up of 24 samples from Sardinian individuals recruited in Italy as part of the Human Genome Diversity Project. The population was assigned by the collecting project to the superpopulation European.")
 AnnotationAssertion(obo:IAO_0000412 obo:HANCESTRO_0763 obo:hancestro.owl)
 AnnotationAssertion(rdfs:label obo:HANCESTRO_0763 "Sardinian in Italy (HGDP)")
-SubClassOf(obo:HANCESTRO_0763 obo:HANCESTRO_0005)
+SubClassOf(obo:HANCESTRO_0763 obo:HANCESTRO_2009)
 
 # Class: obo:HANCESTRO_0764 (Tuscan in Italy (HGDP))
 
 AnnotationAssertion(obo:IAO_0000115 obo:HANCESTRO_0764 "A population made up of 6 samples from Tuscan individuals recruited in Italy as part of the Human Genome Diversity Project. The population was assigned by the collecting project to the superpopulation European.")
 AnnotationAssertion(obo:IAO_0000412 obo:HANCESTRO_0764 obo:hancestro.owl)
 AnnotationAssertion(rdfs:label obo:HANCESTRO_0764 "Tuscan in Italy (HGDP)")
-SubClassOf(obo:HANCESTRO_0764 obo:HANCESTRO_0005)
+SubClassOf(obo:HANCESTRO_0764 obo:HANCESTRO_2009)
 
 # Class: obo:HANCESTRO_0765 (British in England and Scotland (1KGP))
 
 AnnotationAssertion(obo:IAO_0000115 obo:HANCESTRO_0765 "A population made up of 107 samples from British individuals recruited in England and Scotland as part of the 1000 Genomes Project. The population was assigned by the collecting project to the superpopulation European.")
 AnnotationAssertion(obo:IAO_0000412 obo:HANCESTRO_0765 obo:hancestro.owl)
 AnnotationAssertion(rdfs:label obo:HANCESTRO_0765 "British in England and Scotland (1KGP)")
-SubClassOf(obo:HANCESTRO_0765 obo:HANCESTRO_0005)
+SubClassOf(obo:HANCESTRO_0765 obo:HANCESTRO_2003)
 
 # Class: obo:HANCESTRO_0766 (Utah residents (CEPH) with Northern and Western European ancestry  (1KGP))
 
 AnnotationAssertion(obo:IAO_0000115 obo:HANCESTRO_0766 "A population made up of 184 samples from individuals resident in Utah (CEPH) with Northern and Western European ancestry recruited in Utah, USA as part of the 1000 Genomes Project. The population was assigned by the collecting project to the superpopulation European.")
 AnnotationAssertion(obo:IAO_0000412 obo:HANCESTRO_0766 obo:hancestro.owl)
 AnnotationAssertion(rdfs:label obo:HANCESTRO_0766 "Utah residents (CEPH) with Northern and Western European ancestry  (1KGP)")
-SubClassOf(obo:HANCESTRO_0766 obo:HANCESTRO_0005)
+SubClassOf(obo:HANCESTRO_0766 obo:HANCESTRO_2003)
 
 # Class: obo:HANCESTRO_0767 (Finnish in Finland (1KGP))
 
 AnnotationAssertion(obo:IAO_0000115 obo:HANCESTRO_0767 "A population made up of 105 samples from Finnish individuals recruited in Finland as part of the 1000 Genomes Project. The population was assigned by the collecting project to the superpopulation European.")
 AnnotationAssertion(obo:IAO_0000412 obo:HANCESTRO_0767 obo:hancestro.owl)
 AnnotationAssertion(rdfs:label obo:HANCESTRO_0767 "Finnish in Finland (1KGP)")
-SubClassOf(obo:HANCESTRO_0767 obo:HANCESTRO_0005)
+SubClassOf(obo:HANCESTRO_0767 obo:HANCESTRO_2003)
 
 # Class: obo:HANCESTRO_0768 (Iberian populations in Spain (1KGP))
 
 AnnotationAssertion(obo:IAO_0000115 obo:HANCESTRO_0768 "A population made up of 162 samples from Iberian populations individuals recruited in Spain as part of the 1000 Genomes Project. The population was assigned by the collecting project to the superpopulation European.")
 AnnotationAssertion(obo:IAO_0000412 obo:HANCESTRO_0768 obo:hancestro.owl)
 AnnotationAssertion(rdfs:label obo:HANCESTRO_0768 "Iberian populations in Spain (1KGP)")
-SubClassOf(obo:HANCESTRO_0768 obo:HANCESTRO_0005)
+SubClassOf(obo:HANCESTRO_0768 obo:HANCESTRO_2003)
 
 # Class: obo:HANCESTRO_0769 (Toscani in Italy (1KGP))
 
 AnnotationAssertion(obo:IAO_0000115 obo:HANCESTRO_0769 "A population made up of 112 samples from Toscani individuals recruited in Italy as part of the 1000 Genomes Project. The population was assigned by the collecting project to the superpopulation European.")
 AnnotationAssertion(obo:IAO_0000412 obo:HANCESTRO_0769 obo:hancestro.owl)
 AnnotationAssertion(rdfs:label obo:HANCESTRO_0769 "Toscani in Italy (1KGP)")
-SubClassOf(obo:HANCESTRO_0769 obo:HANCESTRO_0005)
+SubClassOf(obo:HANCESTRO_0769 obo:HANCESTRO_2003)
 
 # Class: obo:HANCESTRO_0770 (Bedouin in Negev, Israel (HGDP))
 
 AnnotationAssertion(obo:IAO_0000115 obo:HANCESTRO_0770 "A population made up of 44 samples from Bedouin individuals recruited in Negev, Israel as part of the Human Genome Diversity Project. The population was assigned by the collecting project to the superpopulation Greater Middle Eastern  (Middle Eastern or North African or Persian).")
 AnnotationAssertion(obo:IAO_0000412 obo:HANCESTRO_0770 obo:hancestro.owl)
 AnnotationAssertion(rdfs:label obo:HANCESTRO_0770 "Bedouin in Negev, Israel (HGDP)")
-SubClassOf(obo:HANCESTRO_0770 obo:HANCESTRO_0015)
+SubClassOf(obo:HANCESTRO_0770 obo:HANCESTRO_2010)
 
 # Class: obo:HANCESTRO_0771 (Druze in Carmel, Israel (HGDP))
 
 AnnotationAssertion(obo:IAO_0000115 obo:HANCESTRO_0771 "A population made up of 40 samples from Druze individuals recruited in Carmel, Israel as part of the Human Genome Diversity Project. The population was assigned by the collecting project to the superpopulation Greater Middle Eastern  (Middle Eastern or North African or Persian).")
 AnnotationAssertion(obo:IAO_0000412 obo:HANCESTRO_0771 obo:hancestro.owl)
 AnnotationAssertion(rdfs:label obo:HANCESTRO_0771 "Druze in Carmel, Israel (HGDP)")
-SubClassOf(obo:HANCESTRO_0771 obo:HANCESTRO_0015)
+SubClassOf(obo:HANCESTRO_0771 obo:HANCESTRO_2010)
 
 # Class: obo:HANCESTRO_0772 (Mozabite in Mzab, Algeria (HGDP))
 
 AnnotationAssertion(obo:IAO_0000115 obo:HANCESTRO_0772 "A population made up of 27 samples from Mozabite individuals recruited in Mzab, Algeria as part of the Human Genome Diversity Project. The population was assigned by the collecting project to the superpopulation Greater Middle Eastern  (Middle Eastern or North African or Persian).")
 AnnotationAssertion(obo:IAO_0000412 obo:HANCESTRO_0772 obo:hancestro.owl)
 AnnotationAssertion(rdfs:label obo:HANCESTRO_0772 "Mozabite in Mzab, Algeria (HGDP)")
-SubClassOf(obo:HANCESTRO_0772 obo:HANCESTRO_0015)
+SubClassOf(obo:HANCESTRO_0772 obo:HANCESTRO_2010)
 
 # Class: obo:HANCESTRO_0773 (Palestinian in Central, Israel (HGDP))
 
 AnnotationAssertion(obo:IAO_0000115 obo:HANCESTRO_0773 "A population made up of 43 samples from Palestinian individuals recruited in Central, Israel as part of the Human Genome Diversity Project. The population was assigned by the collecting project to the superpopulation Greater Middle Eastern  (Middle Eastern or North African or Persian).")
 AnnotationAssertion(obo:IAO_0000412 obo:HANCESTRO_0773 obo:hancestro.owl)
 AnnotationAssertion(rdfs:label obo:HANCESTRO_0773 "Palestinian in Central, Israel (HGDP)")
-SubClassOf(obo:HANCESTRO_0773 obo:HANCESTRO_0015)
+SubClassOf(obo:HANCESTRO_0773 obo:HANCESTRO_2010)
 
 # Class: obo:HANCESTRO_0774 (Bougainville in Bougainville (HGDP))
 
 AnnotationAssertion(obo:IAO_0000115 obo:HANCESTRO_0774 "A population made up of 11 samples from Bougainville individuals recruited in Bougainville as part of the Human Genome Diversity Project. The population was assigned by the collecting project to the superpopulation Oceanian.")
 AnnotationAssertion(obo:IAO_0000412 obo:HANCESTRO_0774 obo:hancestro.owl)
 AnnotationAssertion(rdfs:label obo:HANCESTRO_0774 "Bougainville in Bougainville (HGDP)")
-SubClassOf(obo:HANCESTRO_0774 obo:HANCESTRO_0017)
+SubClassOf(obo:HANCESTRO_0774 obo:HANCESTRO_2011)
 
 # Class: obo:HANCESTRO_0775 (Papuan Highlands in New Guinea (HGDP))
 
 AnnotationAssertion(obo:IAO_0000115 obo:HANCESTRO_0775 "A population made up of 6 samples from Papuan Highlands individuals recruited in New Guinea as part of the Human Genome Diversity Project. The population was assigned by the collecting project to the superpopulation Oceanian.")
 AnnotationAssertion(obo:IAO_0000412 obo:HANCESTRO_0775 obo:hancestro.owl)
 AnnotationAssertion(rdfs:label obo:HANCESTRO_0775 "Papuan Highlands in New Guinea (HGDP)")
-SubClassOf(obo:HANCESTRO_0775 obo:HANCESTRO_0017)
+SubClassOf(obo:HANCESTRO_0775 obo:HANCESTRO_2011)
 
 # Class: obo:HANCESTRO_0776 (Papuan Sepik in New Guinea (HGDP))
 
 AnnotationAssertion(obo:IAO_0000115 obo:HANCESTRO_0776 "A population made up of 8 samples from Papuan Sepik individuals recruited in New Guinea as part of the Human Genome Diversity Project. The population was assigned by the collecting project to the superpopulation Oceanian.")
 AnnotationAssertion(obo:IAO_0000412 obo:HANCESTRO_0776 obo:hancestro.owl)
 AnnotationAssertion(rdfs:label obo:HANCESTRO_0776 "Papuan Sepik in New Guinea (HGDP)")
-SubClassOf(obo:HANCESTRO_0776 obo:HANCESTRO_0017)
+SubClassOf(obo:HANCESTRO_0776 obo:HANCESTRO_2011)
 
 # Class: obo:HANCESTRO_0777 (Australian in Australia (SGDP))
 
 AnnotationAssertion(obo:IAO_0000115 obo:HANCESTRO_0777 "A population made up of 2 samples from Australian individuals recruited in Australia as part of the Simons Genome Diversity Project. The population was assigned by the collecting project to the superpopulation Oceanian.")
 AnnotationAssertion(obo:IAO_0000412 obo:HANCESTRO_0777 obo:hancestro.owl)
 AnnotationAssertion(rdfs:label obo:HANCESTRO_0777 "Australian in Australia (SGDP)")
-SubClassOf(obo:HANCESTRO_0777 obo:HANCESTRO_0017)
 SubClassOf(obo:HANCESTRO_0777 obo:HANCESTRO_0552)
+SubClassOf(obo:HANCESTRO_0777 obo:HANCESTRO_2016)
 
 # Class: obo:HANCESTRO_0778 (Bougainville in Papua New Guinea (SGDP))
 
 AnnotationAssertion(obo:IAO_0000115 obo:HANCESTRO_0778 "A population made up of 2 samples from Bougainville individuals recruited in Papua New Guinea as part of the Simons Genome Diversity Project. The population was assigned by the collecting project to the superpopulation Oceanian.")
 AnnotationAssertion(obo:IAO_0000412 obo:HANCESTRO_0778 obo:hancestro.owl)
 AnnotationAssertion(rdfs:label obo:HANCESTRO_0778 "Bougainville in Papua New Guinea (SGDP)")
-SubClassOf(obo:HANCESTRO_0778 obo:HANCESTRO_0017)
+SubClassOf(obo:HANCESTRO_0778 obo:HANCESTRO_2016)
 
 # Class: obo:HANCESTRO_0779 (Dusun in Brunei (SGDP))
 
 AnnotationAssertion(obo:IAO_0000115 obo:HANCESTRO_0779 "A population made up of 2 samples from Dusun individuals recruited in Brunei as part of the Simons Genome Diversity Project. The population was assigned by the collecting project to the superpopulation Oceanian.")
 AnnotationAssertion(obo:IAO_0000412 obo:HANCESTRO_0779 obo:hancestro.owl)
 AnnotationAssertion(rdfs:label obo:HANCESTRO_0779 "Dusun in Brunei (SGDP)")
-SubClassOf(obo:HANCESTRO_0779 obo:HANCESTRO_0017)
+SubClassOf(obo:HANCESTRO_0779 obo:HANCESTRO_2016)
 
 # Class: obo:HANCESTRO_0780 (Hawaiian in USA (SGDP))
 
 AnnotationAssertion(obo:IAO_0000115 obo:HANCESTRO_0780 "A population made up of 1 samples from Hawaiian individuals recruited in USA as part of the Simons Genome Diversity Project. The population was assigned by the collecting project to the superpopulation Oceanian.")
 AnnotationAssertion(obo:IAO_0000412 obo:HANCESTRO_0780 obo:hancestro.owl)
 AnnotationAssertion(rdfs:label obo:HANCESTRO_0780 "Hawaiian in USA (SGDP)")
-SubClassOf(obo:HANCESTRO_0780 obo:HANCESTRO_0017)
+SubClassOf(obo:HANCESTRO_0780 obo:HANCESTRO_2016)
 
 # Class: obo:HANCESTRO_0781 (Igorot in Philippines (SGDP))
 
 AnnotationAssertion(obo:IAO_0000115 obo:HANCESTRO_0781 "A population made up of 2 samples from Igorot individuals recruited in Philippines as part of the Simons Genome Diversity Project. The population was assigned by the collecting project to the superpopulation Oceanian.")
 AnnotationAssertion(obo:IAO_0000412 obo:HANCESTRO_0781 obo:hancestro.owl)
 AnnotationAssertion(rdfs:label obo:HANCESTRO_0781 "Igorot in Philippines (SGDP)")
-SubClassOf(obo:HANCESTRO_0781 obo:HANCESTRO_0017)
+SubClassOf(obo:HANCESTRO_0781 obo:HANCESTRO_2016)
 
 # Class: obo:HANCESTRO_0782 (Maori in New Zealand (SGDP))
 
 AnnotationAssertion(obo:IAO_0000115 obo:HANCESTRO_0782 "A population made up of 1 samples from Maori individuals recruited in New Zealand as part of the Simons Genome Diversity Project. The population was assigned by the collecting project to the superpopulation Oceanian.")
 AnnotationAssertion(obo:IAO_0000412 obo:HANCESTRO_0782 obo:hancestro.owl)
 AnnotationAssertion(rdfs:label obo:HANCESTRO_0782 "Maori in New Zealand (SGDP)")
-SubClassOf(obo:HANCESTRO_0782 obo:HANCESTRO_0017)
+SubClassOf(obo:HANCESTRO_0782 obo:HANCESTRO_2016)
 
 # Class: obo:HANCESTRO_0783 (Papuan in Papua New Guinea (SGDP))
 
 AnnotationAssertion(obo:IAO_0000115 obo:HANCESTRO_0783 "A population made up of 15 samples from Papuan individuals recruited in Papua New Guinea as part of the Simons Genome Diversity Project. The population was assigned by the collecting project to the superpopulation Oceanian.")
 AnnotationAssertion(obo:IAO_0000412 obo:HANCESTRO_0783 obo:hancestro.owl)
 AnnotationAssertion(rdfs:label obo:HANCESTRO_0783 "Papuan in Papua New Guinea (SGDP)")
-SubClassOf(obo:HANCESTRO_0783 obo:HANCESTRO_0017)
+SubClassOf(obo:HANCESTRO_0783 obo:HANCESTRO_2016)
 
 # Class: obo:HANCESTRO_0784 (Balochi in Pakistan (SGDP))
 
 AnnotationAssertion(obo:IAO_0000115 obo:HANCESTRO_0784 "A population made up of 2 samples from Balochi individuals recruited in Pakistan as part of the Simons Genome Diversity Project. The population was assigned by the collecting project to the superpopulation South Asian.")
 AnnotationAssertion(obo:IAO_0000412 obo:HANCESTRO_0784 obo:hancestro.owl)
 AnnotationAssertion(rdfs:label obo:HANCESTRO_0784 "Balochi in Pakistan (SGDP)")
-SubClassOf(obo:HANCESTRO_0784 obo:HANCESTRO_0006)
+SubClassOf(obo:HANCESTRO_0784 obo:HANCESTRO_2017)
 
 # Class: obo:HANCESTRO_0785 (Bengali in Bangladesh (SGDP))
 
 AnnotationAssertion(obo:IAO_0000115 obo:HANCESTRO_0785 "A population made up of 2 samples from Bengali individuals recruited in Bangladesh as part of the Simons Genome Diversity Project. The population was assigned by the collecting project to the superpopulation South Asian.")
 AnnotationAssertion(obo:IAO_0000412 obo:HANCESTRO_0785 obo:hancestro.owl)
 AnnotationAssertion(rdfs:label obo:HANCESTRO_0785 "Bengali in Bangladesh (SGDP)")
-SubClassOf(obo:HANCESTRO_0785 obo:HANCESTRO_0006)
+SubClassOf(obo:HANCESTRO_0785 obo:HANCESTRO_2017)
 
 # Class: obo:HANCESTRO_0786 (Brahmin in India (SGDP))
 
 AnnotationAssertion(obo:IAO_0000115 obo:HANCESTRO_0786 "A population made up of 2 samples from Brahmin individuals recruited in India as part of the Simons Genome Diversity Project. The population was assigned by the collecting project to the superpopulation South Asian.")
 AnnotationAssertion(obo:IAO_0000412 obo:HANCESTRO_0786 obo:hancestro.owl)
 AnnotationAssertion(rdfs:label obo:HANCESTRO_0786 "Brahmin in India (SGDP)")
-SubClassOf(obo:HANCESTRO_0786 obo:HANCESTRO_0006)
+SubClassOf(obo:HANCESTRO_0786 obo:HANCESTRO_2017)
 
 # Class: obo:HANCESTRO_0787 (Brahui in Pakistan (SGDP))
 
 AnnotationAssertion(obo:IAO_0000115 obo:HANCESTRO_0787 "A population made up of 2 samples from Brahui individuals recruited in Pakistan as part of the Simons Genome Diversity Project. The population was assigned by the collecting project to the superpopulation South Asian.")
 AnnotationAssertion(obo:IAO_0000412 obo:HANCESTRO_0787 obo:hancestro.owl)
 AnnotationAssertion(rdfs:label obo:HANCESTRO_0787 "Brahui in Pakistan (SGDP)")
-SubClassOf(obo:HANCESTRO_0787 obo:HANCESTRO_0006)
+SubClassOf(obo:HANCESTRO_0787 obo:HANCESTRO_2017)
 
 # Class: obo:HANCESTRO_0788 (Burusho in Pakistan (SGDP))
 
 AnnotationAssertion(obo:IAO_0000115 obo:HANCESTRO_0788 "A population made up of 2 samples from Burusho individuals recruited in Pakistan as part of the Simons Genome Diversity Project. The population was assigned by the collecting project to the superpopulation South Asian.")
 AnnotationAssertion(obo:IAO_0000412 obo:HANCESTRO_0788 obo:hancestro.owl)
 AnnotationAssertion(rdfs:label obo:HANCESTRO_0788 "Burusho in Pakistan (SGDP)")
-SubClassOf(obo:HANCESTRO_0788 obo:HANCESTRO_0006)
+SubClassOf(obo:HANCESTRO_0788 obo:HANCESTRO_2017)
 
 # Class: obo:HANCESTRO_0789 (Hazara in Pakistan (SGDP))
 
 AnnotationAssertion(obo:IAO_0000115 obo:HANCESTRO_0789 "A population made up of 2 samples from Hazara individuals recruited in Pakistan as part of the Simons Genome Diversity Project. The population was assigned by the collecting project to the superpopulation South Asian.")
 AnnotationAssertion(obo:IAO_0000412 obo:HANCESTRO_0789 obo:hancestro.owl)
 AnnotationAssertion(rdfs:label obo:HANCESTRO_0789 "Hazara in Pakistan (SGDP)")
-SubClassOf(obo:HANCESTRO_0789 obo:HANCESTRO_0006)
+SubClassOf(obo:HANCESTRO_0789 obo:HANCESTRO_2017)
 
 # Class: obo:HANCESTRO_0790 (Irula in India (SGDP))
 
 AnnotationAssertion(obo:IAO_0000115 obo:HANCESTRO_0790 "A population made up of 2 samples from Irula individuals recruited in India as part of the Simons Genome Diversity Project. The population was assigned by the collecting project to the superpopulation South Asian.")
 AnnotationAssertion(obo:IAO_0000412 obo:HANCESTRO_0790 obo:hancestro.owl)
 AnnotationAssertion(rdfs:label obo:HANCESTRO_0790 "Irula in India (SGDP)")
-SubClassOf(obo:HANCESTRO_0790 obo:HANCESTRO_0006)
+SubClassOf(obo:HANCESTRO_0790 obo:HANCESTRO_2017)
 
 # Class: obo:HANCESTRO_0791 (Kalash in Pakistan (SGDP))
 
 AnnotationAssertion(obo:IAO_0000115 obo:HANCESTRO_0791 "A population made up of 2 samples from Kalash individuals recruited in Pakistan as part of the Simons Genome Diversity Project. The population was assigned by the collecting project to the superpopulation South Asian.")
 AnnotationAssertion(obo:IAO_0000412 obo:HANCESTRO_0791 obo:hancestro.owl)
 AnnotationAssertion(rdfs:label obo:HANCESTRO_0791 "Kalash in Pakistan (SGDP)")
-SubClassOf(obo:HANCESTRO_0791 obo:HANCESTRO_0006)
+SubClassOf(obo:HANCESTRO_0791 obo:HANCESTRO_2017)
 
 # Class: obo:HANCESTRO_0792 (Kapu in India (SGDP))
 
 AnnotationAssertion(obo:IAO_0000115 obo:HANCESTRO_0792 "A population made up of 2 samples from Kapu individuals recruited in India as part of the Simons Genome Diversity Project. The population was assigned by the collecting project to the superpopulation South Asian.")
 AnnotationAssertion(obo:IAO_0000412 obo:HANCESTRO_0792 obo:hancestro.owl)
 AnnotationAssertion(rdfs:label obo:HANCESTRO_0792 "Kapu in India (SGDP)")
-SubClassOf(obo:HANCESTRO_0792 obo:HANCESTRO_0006)
+SubClassOf(obo:HANCESTRO_0792 obo:HANCESTRO_2017)
 
 # Class: obo:HANCESTRO_0793 (Khonda Dora in India (SGDP))
 
 AnnotationAssertion(obo:IAO_0000115 obo:HANCESTRO_0793 "A population made up of 1 samples from Khonda Dora individuals recruited in India as part of the Simons Genome Diversity Project. The population was assigned by the collecting project to the superpopulation South Asian.")
 AnnotationAssertion(obo:IAO_0000412 obo:HANCESTRO_0793 obo:hancestro.owl)
 AnnotationAssertion(rdfs:label obo:HANCESTRO_0793 "Khonda Dora in India (SGDP)")
-SubClassOf(obo:HANCESTRO_0793 obo:HANCESTRO_0006)
+SubClassOf(obo:HANCESTRO_0793 obo:HANCESTRO_2017)
 
 # Class: obo:HANCESTRO_0794 (Kusunda in Nepal (SGDP))
 
 AnnotationAssertion(obo:IAO_0000115 obo:HANCESTRO_0794 "A population made up of 2 samples from Kusunda individuals recruited in Nepal as part of the Simons Genome Diversity Project. The population was assigned by the collecting project to the superpopulation South Asian.")
 AnnotationAssertion(obo:IAO_0000412 obo:HANCESTRO_0794 obo:hancestro.owl)
 AnnotationAssertion(rdfs:label obo:HANCESTRO_0794 "Kusunda in Nepal (SGDP)")
-SubClassOf(obo:HANCESTRO_0794 obo:HANCESTRO_0006)
+SubClassOf(obo:HANCESTRO_0794 obo:HANCESTRO_2017)
 
 # Class: obo:HANCESTRO_0795 (Madiga in India (SGDP))
 
 AnnotationAssertion(obo:IAO_0000115 obo:HANCESTRO_0795 "A population made up of 1 samples from Madiga individuals recruited in India as part of the Simons Genome Diversity Project. The population was assigned by the collecting project to the superpopulation South Asian.")
 AnnotationAssertion(obo:IAO_0000412 obo:HANCESTRO_0795 obo:hancestro.owl)
 AnnotationAssertion(rdfs:label obo:HANCESTRO_0795 "Madiga in India (SGDP)")
-SubClassOf(obo:HANCESTRO_0795 obo:HANCESTRO_0006)
+SubClassOf(obo:HANCESTRO_0795 obo:HANCESTRO_2017)
 
 # Class: obo:HANCESTRO_0796 (Makrani in Pakistan (SGDP))
 
 AnnotationAssertion(obo:IAO_0000115 obo:HANCESTRO_0796 "A population made up of 2 samples from Makrani individuals recruited in Pakistan as part of the Simons Genome Diversity Project. The population was assigned by the collecting project to the superpopulation South Asian.")
 AnnotationAssertion(obo:IAO_0000412 obo:HANCESTRO_0796 obo:hancestro.owl)
 AnnotationAssertion(rdfs:label obo:HANCESTRO_0796 "Makrani in Pakistan (SGDP)")
-SubClassOf(obo:HANCESTRO_0796 obo:HANCESTRO_0006)
+SubClassOf(obo:HANCESTRO_0796 obo:HANCESTRO_2017)
 
 # Class: obo:HANCESTRO_0797 (Pathan in Pakistan (SGDP))
 
 AnnotationAssertion(obo:IAO_0000115 obo:HANCESTRO_0797 "A population made up of 2 samples from Pathan individuals recruited in Pakistan as part of the Simons Genome Diversity Project. The population was assigned by the collecting project to the superpopulation South Asian.")
 AnnotationAssertion(obo:IAO_0000412 obo:HANCESTRO_0797 obo:hancestro.owl)
 AnnotationAssertion(rdfs:label obo:HANCESTRO_0797 "Pathan in Pakistan (SGDP)")
-SubClassOf(obo:HANCESTRO_0797 obo:HANCESTRO_0006)
+SubClassOf(obo:HANCESTRO_0797 obo:HANCESTRO_2017)
 
 # Class: obo:HANCESTRO_0798 (Punjabi in Pakistan (SGDP))
 
 AnnotationAssertion(obo:IAO_0000115 obo:HANCESTRO_0798 "A population made up of 4 samples from Punjabi individuals recruited in Pakistan as part of the Simons Genome Diversity Project. The population was assigned by the collecting project to the superpopulation South Asian.")
 AnnotationAssertion(obo:IAO_0000412 obo:HANCESTRO_0798 obo:hancestro.owl)
 AnnotationAssertion(rdfs:label obo:HANCESTRO_0798 "Punjabi in Pakistan (SGDP)")
-SubClassOf(obo:HANCESTRO_0798 obo:HANCESTRO_0006)
+SubClassOf(obo:HANCESTRO_0798 obo:HANCESTRO_2017)
 
 # Class: obo:HANCESTRO_0799 (Relli in India (SGDP))
 
 AnnotationAssertion(obo:IAO_0000115 obo:HANCESTRO_0799 "A population made up of 2 samples from Relli individuals recruited in India as part of the Simons Genome Diversity Project. The population was assigned by the collecting project to the superpopulation South Asian.")
 AnnotationAssertion(obo:IAO_0000412 obo:HANCESTRO_0799 obo:hancestro.owl)
 AnnotationAssertion(rdfs:label obo:HANCESTRO_0799 "Relli in India (SGDP)")
-SubClassOf(obo:HANCESTRO_0799 obo:HANCESTRO_0006)
+SubClassOf(obo:HANCESTRO_0799 obo:HANCESTRO_2017)
 
 # Class: obo:HANCESTRO_0800 (Sindhi in Pakistan (SGDP))
 
 AnnotationAssertion(obo:IAO_0000115 obo:HANCESTRO_0800 "A population made up of 2 samples from Sindhi individuals recruited in Pakistan as part of the Simons Genome Diversity Project. The population was assigned by the collecting project to the superpopulation South Asian.")
 AnnotationAssertion(obo:IAO_0000412 obo:HANCESTRO_0800 obo:hancestro.owl)
 AnnotationAssertion(rdfs:label obo:HANCESTRO_0800 "Sindhi in Pakistan (SGDP)")
-SubClassOf(obo:HANCESTRO_0800 obo:HANCESTRO_0006)
+SubClassOf(obo:HANCESTRO_0800 obo:HANCESTRO_2017)
 
 # Class: obo:HANCESTRO_0801 (Yadava in India (SGDP))
 
 AnnotationAssertion(obo:IAO_0000115 obo:HANCESTRO_0801 "A population made up of 2 samples from Yadava individuals recruited in India as part of the Simons Genome Diversity Project. The population was assigned by the collecting project to the superpopulation South Asian.")
 AnnotationAssertion(obo:IAO_0000412 obo:HANCESTRO_0801 obo:hancestro.owl)
 AnnotationAssertion(rdfs:label obo:HANCESTRO_0801 "Yadava in India (SGDP)")
-SubClassOf(obo:HANCESTRO_0801 obo:HANCESTRO_0006)
+SubClassOf(obo:HANCESTRO_0801 obo:HANCESTRO_2017)
 
 # Class: obo:HANCESTRO_0802 (Bengali in Bangladesh (1KGP))
 
 AnnotationAssertion(obo:IAO_0000115 obo:HANCESTRO_0802 "A population made up of 144 samples from Bengali individuals recruited in Bangladesh as part of the 1000 Genomes Project. The population was assigned by the collecting project to the superpopulation South Asian.")
 AnnotationAssertion(obo:IAO_0000412 obo:HANCESTRO_0802 obo:hancestro.owl)
 AnnotationAssertion(rdfs:label obo:HANCESTRO_0802 "Bengali in Bangladesh (1KGP)")
-SubClassOf(obo:HANCESTRO_0802 obo:HANCESTRO_0006)
+SubClassOf(obo:HANCESTRO_0802 obo:HANCESTRO_2004)
 
 # Class: obo:HANCESTRO_0803 (Gujarati Indians in Houston, TX (1KGP))
 
 AnnotationAssertion(obo:IAO_0000115 obo:HANCESTRO_0803 "A population made up of 113 samples from Gujarati Indians individuals recruited in Houston, TX as part of the 1000 Genomes Project. The population was assigned by the collecting project to the superpopulation South Asian.")
 AnnotationAssertion(obo:IAO_0000412 obo:HANCESTRO_0803 obo:hancestro.owl)
 AnnotationAssertion(rdfs:label obo:HANCESTRO_0803 "Gujarati Indians in Houston, TX (1KGP)")
-SubClassOf(obo:HANCESTRO_0803 obo:HANCESTRO_0006)
+SubClassOf(obo:HANCESTRO_0803 obo:HANCESTRO_2004)
 
 # Class: obo:HANCESTRO_0804 (Punjabi in Lahore, Pakistan (1KGP))
 
 AnnotationAssertion(obo:IAO_0000115 obo:HANCESTRO_0804 "A population made up of 158 samples from Punjabi individuals recruited in Lahore, Pakistan as part of the 1000 Genomes Project. The population was assigned by the collecting project to the superpopulation South Asian.")
 AnnotationAssertion(obo:IAO_0000412 obo:HANCESTRO_0804 obo:hancestro.owl)
 AnnotationAssertion(rdfs:label obo:HANCESTRO_0804 "Punjabi in Lahore, Pakistan (1KGP)")
-SubClassOf(obo:HANCESTRO_0804 obo:HANCESTRO_0006)
+SubClassOf(obo:HANCESTRO_0804 obo:HANCESTRO_2004)
 
 # Class: obo:HANCESTRO_0805 (Sri Lankan Tamil in the UK (1KGP))
 
 AnnotationAssertion(obo:IAO_0000115 obo:HANCESTRO_0805 "A population made up of 128 samples from Sri Lankan Tamil individuals recruited in the UK as part of the 1000 Genomes Project. The population was assigned by the collecting project to the superpopulation South Asian.")
 AnnotationAssertion(obo:IAO_0000412 obo:HANCESTRO_0805 obo:hancestro.owl)
 AnnotationAssertion(rdfs:label obo:HANCESTRO_0805 "Sri Lankan Tamil in the UK (1KGP)")
-SubClassOf(obo:HANCESTRO_0805 obo:HANCESTRO_0006)
+SubClassOf(obo:HANCESTRO_0805 obo:HANCESTRO_2004)
 
 # Class: obo:HANCESTRO_0806 (Indian Telugu in the UK (1KGP))
 
 AnnotationAssertion(obo:IAO_0000115 obo:HANCESTRO_0806 "A population made up of 118 samples from Indian Telugu individuals recruited in the UK as part of the 1000 Genomes Project. The population was assigned by the collecting project to the superpopulation South Asian.")
 AnnotationAssertion(obo:IAO_0000412 obo:HANCESTRO_0806 obo:hancestro.owl)
 AnnotationAssertion(rdfs:label obo:HANCESTRO_0806 "Indian Telugu in the UK (1KGP)")
-SubClassOf(obo:HANCESTRO_0806 obo:HANCESTRO_0006)
+SubClassOf(obo:HANCESTRO_0806 obo:HANCESTRO_2004)
 
 # Class: obo:HANCESTRO_0807 (Abkhasian in Abkhazia or Russia (SGDP))
 
@@ -12019,6 +11972,208 @@ AnnotationAssertion(obo:IAO_0000412 obo:HANCESTRO_0868 obo:hancestro.owl)
 AnnotationAssertion(rdfs:label obo:HANCESTRO_0868 "Northern Irish")
 SubClassOf(obo:HANCESTRO_0868 obo:HANCESTRO_0005)
 
+# Class: obo:HANCESTRO_0870 (Papuan)
+
+AnnotationAssertion(obo:IAO_0000115 obo:HANCESTRO_0870 "Individuals who either self-report or have been described by authors as Papuan.")
+AnnotationAssertion(obo:IAO_0000119 obo:HANCESTRO_0870 "PMID:32483274")
+AnnotationAssertion(obo:IAO_0000119 obo:HANCESTRO_0870 "PMID:34202821")
+AnnotationAssertion(obo:IAO_0000412 obo:HANCESTRO_0870 obo:hancestro.owl)
+AnnotationAssertion(rdfs:label obo:HANCESTRO_0870 "Papuan")
+SubClassOf(obo:HANCESTRO_0870 obo:HANCESTRO_0017)
+
+# Class: obo:HANCESTRO_0871 (Balinese)
+
+AnnotationAssertion(obo:IAO_0000115 obo:HANCESTRO_0871 "Individuals who either self-report or have been described by authors as Balinese.")
+AnnotationAssertion(obo:IAO_0000119 obo:HANCESTRO_0871 "PMID:16114819")
+AnnotationAssertion(obo:IAO_0000119 obo:HANCESTRO_0871 "PMID:35341056")
+AnnotationAssertion(obo:IAO_0000412 obo:HANCESTRO_0871 obo:hancestro.owl)
+AnnotationAssertion(rdfs:label obo:HANCESTRO_0871 "Balinese")
+SubClassOf(obo:HANCESTRO_0871 obo:HANCESTRO_0007)
+
+# Class: obo:HANCESTRO_0872 (Bora)
+
+AnnotationAssertion(obo:IAO_0000115 obo:HANCESTRO_0872 "Individuals who self-identify or are reported by authors as belonging to the Bora indigenous populations in Peru and Colombia.")
+AnnotationAssertion(obo:IAO_0000119 obo:HANCESTRO_0872 "PMID:22911594")
+AnnotationAssertion(obo:IAO_0000119 obo:HANCESTRO_0872 "PMID:29765620")
+AnnotationAssertion(obo:IAO_0000119 obo:HANCESTRO_0872 "http://www.amazon-indians.org/page12.html")
+AnnotationAssertion(obo:IAO_0000412 obo:HANCESTRO_0872 obo:hancestro.owl)
+AnnotationAssertion(rdfs:label obo:HANCESTRO_0872 "Bora"@en)
+SubClassOf(obo:HANCESTRO_0872 obo:HANCESTRO_0611)
+
+# Class: obo:HANCESTRO_0873 (Yagua)
+
+AnnotationAssertion(obo:IAO_0000115 obo:HANCESTRO_0873 "Individuals who self-identify or are reported by authors as belonging to the Yagua indigenous population that inhabits the Peruvian Amazon. The Yagua language is the only surviving language of the Peba-Yagua linguistic family.")
+AnnotationAssertion(obo:IAO_0000119 obo:HANCESTRO_0873 "PMID:25522106")
+AnnotationAssertion(obo:IAO_0000119 obo:HANCESTRO_0873 "PMID:36429736")
+AnnotationAssertion(obo:IAO_0000119 obo:HANCESTRO_0873 "PMID:38076857")
+AnnotationAssertion(obo:IAO_0000119 obo:HANCESTRO_0873 "http://www.amazon-indians.org/page17.html")
+AnnotationAssertion(obo:IAO_0000412 obo:HANCESTRO_0873 obo:hancestro.owl)
+AnnotationAssertion(rdfs:label obo:HANCESTRO_0873 "Yagua"@en)
+SubClassOf(obo:HANCESTRO_0873 obo:HANCESTRO_0611)
+
+# Class: obo:HANCESTRO_0874 (Kukama Kukamiria)
+
+AnnotationAssertion(obo:IAO_0000115 obo:HANCESTRO_0874 "Individuals who self-identify or are reported by authors as belonging to the Kukama Kukamiria indigenous population in the Peruvian Amazon. Their language, also called Kukama-Kukamiria, is a Tupi-Guarani language.")
+AnnotationAssertion(obo:IAO_0000119 obo:HANCESTRO_0874 "PMID:29407757")
+AnnotationAssertion(obo:IAO_0000119 obo:HANCESTRO_0874 "PMID:33945560")
+AnnotationAssertion(obo:IAO_0000119 obo:HANCESTRO_0874 "https://www.wwf.org.ec/?389371/The-Kukama-Kukamiria-an-invisible-indigenous-people-that-emerges-revaluing-their-culture")
+AnnotationAssertion(obo:IAO_0000412 obo:HANCESTRO_0874 obo:hancestro.owl)
+AnnotationAssertion(rdfs:label obo:HANCESTRO_0874 "Kukama Kukamiria"@en)
+SubClassOf(obo:HANCESTRO_0874 obo:HANCESTRO_0611)
+
+# Class: obo:HANCESTRO_0875 (Shipibo-Conibo)
+
+AnnotationAssertion(obo:IAO_0000115 obo:HANCESTRO_0875 "Individuals who self-identify or are reported by authors as belonging to the Shipibo-Conibo indigenous population along the Ucayali River in the Amazon rainforest in Peru. Formerly two groups, they eventually became one tribe through intermarriage and communal rituals and are currently known as the Shipibo-Conibo people.")
+AnnotationAssertion(obo:IAO_0000119 obo:HANCESTRO_0875 "PMID:15798863")
+AnnotationAssertion(obo:IAO_0000119 obo:HANCESTRO_0875 "PMID:22515992")
+AnnotationAssertion(obo:IAO_0000119 obo:HANCESTRO_0875 "PMID:2705014")
+AnnotationAssertion(obo:IAO_0000412 obo:HANCESTRO_0875 obo:hancestro.owl)
+AnnotationAssertion(rdfs:label obo:HANCESTRO_0875 "Shipibo-Conibo"@en)
+SubClassOf(obo:HANCESTRO_0875 obo:HANCESTRO_0611)
+
+# Class: obo:HANCESTRO_0876 (Yine)
+
+AnnotationAssertion(obo:IAO_0000115 obo:HANCESTRO_0876 "Individuals who self-identify or are reported by authors as belonging to the Yine indigenous population in the Peruvian Amazon.")
+AnnotationAssertion(obo:IAO_0000119 obo:HANCESTRO_0876 "PMID:25123856")
+AnnotationAssertion(obo:IAO_0000119 obo:HANCESTRO_0876 "PMID:39360514")
+AnnotationAssertion(obo:IAO_0000412 obo:HANCESTRO_0876 obo:hancestro.owl)
+AnnotationAssertion(rdfs:label obo:HANCESTRO_0876 "Yine"@en)
+SubClassOf(obo:HANCESTRO_0876 obo:HANCESTRO_0611)
+
+# Class: obo:HANCESTRO_0877 (Moche Chimu)
+
+AnnotationAssertion(obo:IAO_0000115 obo:HANCESTRO_0877 "Individuals who self-identify or are reported by authors as belonging to the Moche Chimu indigenous population in the Peruvian Amazon. The Chimu culture succeeded the Moche culture in the same region of Peru.")
+AnnotationAssertion(obo:IAO_0000119 obo:HANCESTRO_0877 "https://www.ebsco.com/research-starters/social-sciences-and-humanities/chimu-culture")
+AnnotationAssertion(obo:IAO_0000412 obo:HANCESTRO_0877 obo:hancestro.owl)
+AnnotationAssertion(rdfs:label obo:HANCESTRO_0877 "Moche Chimu"@en)
+SubClassOf(obo:HANCESTRO_0877 obo:HANCESTRO_0611)
+
+# Class: obo:HANCESTRO_2000 (African (AFR) reference superpopulation (1KGP))
+
+AnnotationAssertion(obo:IAO_0000115 obo:HANCESTRO_2000 "A reference population made up of samples from individuals with an African Ancestry as part of the 1000 Genomes Project and Gambian Genome Variation Project (GGVP).")
+AnnotationAssertion(obo:IAO_0000412 obo:HANCESTRO_2000 obo:hancestro.owl)
+AnnotationAssertion(rdfs:label obo:HANCESTRO_2000 "African (AFR) reference superpopulation (1KGP)")
+SubClassOf(obo:HANCESTRO_2000 obo:HANCESTRO_0010)
+
+# Class: obo:HANCESTRO_2001 (American (AMR) reference superpopulation (1KGP))
+
+AnnotationAssertion(obo:IAO_0000115 obo:HANCESTRO_2001 "A reference population made up of samples from individuals with an American Ancestry as part of the 1000 Genomes Project.")
+AnnotationAssertion(obo:IAO_0000412 obo:HANCESTRO_2001 obo:hancestro.owl)
+AnnotationAssertion(rdfs:label obo:HANCESTRO_2001 "American (AMR) reference superpopulation (1KGP)")
+SubClassOf(obo:HANCESTRO_2001 obo:HANCESTRO_0014)
+
+# Class: obo:HANCESTRO_2002 (East Asian (EAS) reference superpopulation (1KGP))
+
+AnnotationAssertion(obo:IAO_0000115 obo:HANCESTRO_2002 "A reference population made up of samples from individuals with an East Asian Ancestry as part of the 1000 Genomes Project.")
+AnnotationAssertion(obo:IAO_0000412 obo:HANCESTRO_2002 obo:hancestro.owl)
+AnnotationAssertion(rdfs:label obo:HANCESTRO_2002 "East Asian (EAS) reference superpopulation (1KGP)")
+SubClassOf(obo:HANCESTRO_2002 obo:HANCESTRO_0009)
+
+# Class: obo:HANCESTRO_2003 (European (EUR) reference superpopulation (1KGP))
+
+AnnotationAssertion(obo:IAO_0000115 obo:HANCESTRO_2003 "A reference population made up of samples from individuals with a European Ancestry as part of the 1000 Genomes Project.")
+AnnotationAssertion(obo:IAO_0000412 obo:HANCESTRO_2003 obo:hancestro.owl)
+AnnotationAssertion(rdfs:label obo:HANCESTRO_2003 "European (EUR) reference superpopulation (1KGP)")
+SubClassOf(obo:HANCESTRO_2003 obo:HANCESTRO_0005)
+
+# Class: obo:HANCESTRO_2004 (South Asian (SAS) reference superpopulation (1KGP))
+
+AnnotationAssertion(obo:IAO_0000115 obo:HANCESTRO_2004 "A reference population made up of samples from individuals with a South Asian Ancestry as part of the 1000 Genomes Project.")
+AnnotationAssertion(obo:IAO_0000412 obo:HANCESTRO_2004 obo:hancestro.owl)
+AnnotationAssertion(rdfs:label obo:HANCESTRO_2004 "South Asian (SAS) reference superpopulation (1KGP)")
+SubClassOf(obo:HANCESTRO_2004 obo:HANCESTRO_0006)
+
+# Class: obo:HANCESTRO_2005 (African reference superpopulation (HGDP))
+
+AnnotationAssertion(obo:IAO_0000115 obo:HANCESTRO_2005 "A reference population made up of samples from individuals with an African Ancestry as part of the Human Genome Diversity Project.")
+AnnotationAssertion(obo:IAO_0000412 obo:HANCESTRO_2005 obo:hancestro.owl)
+AnnotationAssertion(rdfs:label obo:HANCESTRO_2005 "African reference superpopulation (HGDP)")
+SubClassOf(obo:HANCESTRO_2005 obo:HANCESTRO_0010)
+
+# Class: obo:HANCESTRO_2006 (American reference superpopulation (HGDP))
+
+AnnotationAssertion(obo:IAO_0000115 obo:HANCESTRO_2006 "A reference population made up of samples from individuals with an American Ancestry as part of the Human Genome Diversity Project.")
+AnnotationAssertion(obo:IAO_0000412 obo:HANCESTRO_2006 obo:hancestro.owl)
+AnnotationAssertion(rdfs:label obo:HANCESTRO_2006 "American reference superpopulation (HGDP)")
+SubClassOf(obo:HANCESTRO_2006 obo:HANCESTRO_0014)
+
+# Class: obo:HANCESTRO_2007 (Central South Asian reference superpopulation (HGDP))
+
+AnnotationAssertion(obo:IAO_0000115 obo:HANCESTRO_2007 "A reference population made up of samples from individuals with a Central South Asian Ancestry as part of the Human Genome Diversity Project.")
+AnnotationAssertion(obo:IAO_0000412 obo:HANCESTRO_2007 obo:hancestro.owl)
+AnnotationAssertion(rdfs:label obo:HANCESTRO_2007 "Central South Asian reference superpopulation (HGDP)")
+SubClassOf(obo:HANCESTRO_2007 obo:HANCESTRO_0006)
+
+# Class: obo:HANCESTRO_2008 (East Asian reference superpopulation (HGDP))
+
+AnnotationAssertion(obo:IAO_0000115 obo:HANCESTRO_2008 "A reference population made up of samples from individuals with an East Asian Ancestry as part of the Human Genome Diversity Project.")
+AnnotationAssertion(obo:IAO_0000412 obo:HANCESTRO_2008 obo:hancestro.owl)
+AnnotationAssertion(rdfs:label obo:HANCESTRO_2008 "East Asian reference superpopulation (HGDP)")
+SubClassOf(obo:HANCESTRO_2008 obo:HANCESTRO_0009)
+
+# Class: obo:HANCESTRO_2009 (European reference superpopulation (HGDP))
+
+AnnotationAssertion(obo:IAO_0000115 obo:HANCESTRO_2009 "A reference population made up of samples from individuals with a European Ancestry as part of the Human Genome Diversity Project.")
+AnnotationAssertion(obo:IAO_0000412 obo:HANCESTRO_2009 obo:hancestro.owl)
+AnnotationAssertion(rdfs:label obo:HANCESTRO_2009 "European reference superpopulation (HGDP)")
+SubClassOf(obo:HANCESTRO_2009 obo:HANCESTRO_0005)
+
+# Class: obo:HANCESTRO_2010 (Middle East reference superpopulation (HGDP))
+
+AnnotationAssertion(obo:IAO_0000115 obo:HANCESTRO_2010 "A reference population made up of samples from individuals with a Middle East Ancestry as part of the Human Genome Diversity Project.")
+AnnotationAssertion(obo:IAO_0000412 obo:HANCESTRO_2010 obo:hancestro.owl)
+AnnotationAssertion(rdfs:label obo:HANCESTRO_2010 "Middle East reference superpopulation (HGDP)")
+SubClassOf(obo:HANCESTRO_2010 obo:HANCESTRO_0015)
+
+# Class: obo:HANCESTRO_2011 (Oceanian reference superpopulation (HGDP))
+
+AnnotationAssertion(obo:IAO_0000115 obo:HANCESTRO_2011 "A reference population made up of samples from individuals with an Oceanian Ancestry as part of the Human Genome Diversity Project.")
+AnnotationAssertion(obo:IAO_0000412 obo:HANCESTRO_2011 obo:hancestro.owl)
+AnnotationAssertion(rdfs:label obo:HANCESTRO_2011 "Oceanian reference superpopulation (HGDP)")
+SubClassOf(obo:HANCESTRO_2011 obo:HANCESTRO_0017)
+
+# Class: obo:HANCESTRO_2012 (African reference superpopulation (SGDP))
+
+AnnotationAssertion(obo:IAO_0000115 obo:HANCESTRO_2012 "A reference population made up of samples from individuals with an African Ancestry as part of the Simons Genome Diversity Project.")
+AnnotationAssertion(obo:IAO_0000412 obo:HANCESTRO_2012 obo:hancestro.owl)
+AnnotationAssertion(rdfs:label obo:HANCESTRO_2012 "African reference superpopulation (SGDP)")
+SubClassOf(obo:HANCESTRO_2012 obo:HANCESTRO_0010)
+
+# Class: obo:HANCESTRO_2013 (American reference superpopulation (SGDP))
+
+AnnotationAssertion(obo:IAO_0000115 obo:HANCESTRO_2013 "A reference population made up of samples from individuals with an American Ancestry as part of the Simons Genome Diversity Project.")
+AnnotationAssertion(obo:IAO_0000412 obo:HANCESTRO_2013 obo:hancestro.owl)
+AnnotationAssertion(rdfs:label obo:HANCESTRO_2013 "American reference superpopulation (SGDP)")
+SubClassOf(obo:HANCESTRO_2013 obo:HANCESTRO_0014)
+
+# Class: obo:HANCESTRO_2014 (Central Asian and Siberia reference superpopulation (SGDP))
+
+AnnotationAssertion(obo:IAO_0000115 obo:HANCESTRO_2014 "A reference population made up of samples from individuals with a Central Asian and Siberia Ancestry as part of the Simons Genome Diversity Project.")
+AnnotationAssertion(obo:IAO_0000412 obo:HANCESTRO_2014 obo:hancestro.owl)
+AnnotationAssertion(rdfs:label obo:HANCESTRO_2014 "Central Asian and Siberia reference superpopulation (SGDP)")
+SubClassOf(obo:HANCESTRO_2014 obo:HANCESTRO_0845)
+
+# Class: obo:HANCESTRO_2015 (East Asian reference superpopulation (SGDP))
+
+AnnotationAssertion(obo:IAO_0000115 obo:HANCESTRO_2015 "A reference population made up of samples from individuals with an East Asian Ancestry as part of the Simons Genome Diversity Project.")
+AnnotationAssertion(obo:IAO_0000412 obo:HANCESTRO_2015 obo:hancestro.owl)
+AnnotationAssertion(rdfs:label obo:HANCESTRO_2015 "East Asian reference superpopulation (SGDP)")
+SubClassOf(obo:HANCESTRO_2015 obo:HANCESTRO_0009)
+
+# Class: obo:HANCESTRO_2016 (Oceanian reference superpopulation (SGDP))
+
+AnnotationAssertion(obo:IAO_0000115 obo:HANCESTRO_2016 "A reference population made up of samples from individuals with an Oceanian Ancestry as part of the Simons Genome Diversity Project.")
+AnnotationAssertion(obo:IAO_0000412 obo:HANCESTRO_2016 obo:hancestro.owl)
+AnnotationAssertion(rdfs:label obo:HANCESTRO_2016 "Oceanian reference superpopulation (SGDP)")
+SubClassOf(obo:HANCESTRO_2016 obo:HANCESTRO_0017)
+
+# Class: obo:HANCESTRO_2017 (South Asian reference superpopulation (SGDP))
+
+AnnotationAssertion(obo:IAO_0000115 obo:HANCESTRO_2017 "A reference population made up of samples from individuals with a South Asian Ancestry as part of the Simons Genome Diversity Project.")
+AnnotationAssertion(obo:IAO_0000412 obo:HANCESTRO_2017 obo:hancestro.owl)
+AnnotationAssertion(rdfs:label obo:HANCESTRO_2017 "South Asian reference superpopulation (SGDP)")
+SubClassOf(obo:HANCESTRO_2017 obo:HANCESTRO_0006)
+
 # Class: obo:IAO_0000005 (objective specification)
 
 AnnotationAssertion(obo:IAO_0000115 obo:IAO_0000005 "A directive information entity that describes an intended process endpoint. When part of a plan specification the concretization is realized in a planned process in which the bearer tries to effect the world so that the process endpoint is achieved."@en)
@@ -12244,11 +12399,9 @@ SubClassOf(obo:NCIT_C94733 obo:NCIT_C94729)
 
 AnnotationAssertion(obo:IAO_0000114 obo:OBI_0000011 obo:IAO_0000122)
 AnnotationAssertion(obo:IAO_0000115 obo:OBI_0000011 "A process that realizes a plan which is the concretization of a plan specification."@en)
-AnnotationAssertion(obo:IAO_0000115 obo:OBI_0000011 "A processual entity that realizes a plan which is the concretization of a plan specification."@en)
 AnnotationAssertion(obo:IAO_0000119 obo:OBI_0000011 "branch derived")
 AnnotationAssertion(obo:IAO_0000412 obo:OBI_0000011 obo:agro.owl)
 AnnotationAssertion(obo:IAO_0000412 obo:OBI_0000011 obo:obi.owl)
-AnnotationAssertion(obo:IAO_0000412 obo:OBI_0000011 obo:stato.owl)
 AnnotationAssertion(rdfs:label obo:OBI_0000011 "planned process"@en)
 SubClassOf(obo:OBI_0000011 obo:BFO_0000015)
 
@@ -12342,15 +12495,6 @@ AnnotationAssertion(obo:IAO_0000412 obo:OBI_0000658 obo:obi.owl)
 AnnotationAssertion(rdfs:label obo:OBI_0000658 "data representational model")
 SubClassOf(obo:OBI_0000658 obo:IAO_0000033)
 
-# Class: obo:OBI_0000659 (specimen collection process)
-
-AnnotationAssertion(obo:IAO_0000114 obo:OBI_0000659 obo:IAO_0000122)
-AnnotationAssertion(obo:IAO_0000115 obo:OBI_0000659 "A planned process with the objective to obtain a material entity for potential use as an input upon which measurements or observations are performed."@en)
-AnnotationAssertion(obo:IAO_0000118 obo:OBI_0000659 "specimen collection")
-AnnotationAssertion(obo:IAO_0000412 obo:OBI_0000659 obo:obi.owl)
-AnnotationAssertion(rdfs:label obo:OBI_0000659 "specimen collection process")
-SubClassOf(obo:OBI_0000659 obo:OBI_0000011)
-
 # Class: obo:OBI_0000679 (average value)
 
 AnnotationAssertion(obo:IAO_0000114 obo:OBI_0000679 obo:IAO_0000125)
@@ -12359,6 +12503,14 @@ AnnotationAssertion(obo:IAO_0000118 obo:OBI_0000679 "arithmetic mean")
 AnnotationAssertion(obo:IAO_0000412 obo:OBI_0000679 obo:obi.owl)
 AnnotationAssertion(rdfs:label obo:OBI_0000679 "average value"@en)
 SubClassOf(obo:OBI_0000679 obo:IAO_0000027)
+
+# Class: obo:OBI_0000838 (material maintenance)
+
+AnnotationAssertion(obo:IAO_0000114 obo:OBI_0000838 obo:IAO_0000123)
+AnnotationAssertion(obo:IAO_0000115 obo:OBI_0000838 "A planned process with the objective to maintain some or all of the characteristics of an input material over time."@en)
+AnnotationAssertion(obo:IAO_0000412 obo:OBI_0000838 obo:obi.owl)
+AnnotationAssertion(rdfs:label obo:OBI_0000838 "material maintenance")
+SubClassOf(obo:OBI_0000838 obo:OBI_0000011)
 
 # Class: obo:OBI_0000938 (categorical measurement datum)
 
@@ -12467,15 +12619,6 @@ AnnotationAssertion(obo:IAO_0000412 obo:OBI_0002139 obo:obi.owl)
 AnnotationAssertion(rdfs:label obo:OBI_0002139 "volume value specification"@en)
 SubClassOf(obo:OBI_0002139 obo:OBI_0001933)
 
-# Class: obo:OBI_0100026 (organism)
-
-AnnotationAssertion(obo:IAO_0000114 obo:OBI_0100026 obo:IAO_0000122)
-AnnotationAssertion(obo:IAO_0000115 obo:OBI_0100026 "A material entity that is an individual living system, such as animal, plant, bacteria or virus, that is capable of replicating or reproducing, growth and maintenance in the right environment. An organism may be unicellular or made up, like humans, of many billions of cells divided into specialized tissues and organs."@en)
-AnnotationAssertion(obo:IAO_0000119 obo:OBI_0100026 "WEB: http://en.wikipedia.org/wiki/Organism"@en)
-AnnotationAssertion(obo:IAO_0000412 obo:OBI_0100026 obo:obi.owl)
-AnnotationAssertion(rdfs:label obo:OBI_0100026 "organism"@en)
-SubClassOf(obo:OBI_0100026 obo:BFO_0000040)
-
 # Class: obo:OBI_0200000 (data transformation)
 
 AnnotationAssertion(obo:IAO_0000114 obo:OBI_0200000 obo:IAO_0000122)
@@ -12525,6 +12668,15 @@ AnnotationAssertion(obo:IAO_0000119 obo:OBI_0200184 "PERSON: James Malone"@en)
 AnnotationAssertion(obo:IAO_0000412 obo:OBI_0200184 obo:obi.owl)
 AnnotationAssertion(rdfs:label obo:OBI_0200184 "descriptive statistical calculation data transformation"@en)
 SubClassOf(obo:OBI_0200184 obo:OBI_0200000)
+
+# Class: obo:OBI_0302893 (storage)
+
+AnnotationAssertion(obo:IAO_0000114 obo:OBI_0302893 obo:IAO_0000120)
+AnnotationAssertion(obo:IAO_0000115 obo:OBI_0302893 "A planned process with the objective to preserve and protect material entities by placing them in an identified location which may have a controlled environment."@en)
+AnnotationAssertion(obo:IAO_0000119 obo:OBI_0302893 "OBI-Branch")
+AnnotationAssertion(obo:IAO_0000412 obo:OBI_0302893 obo:obi.owl)
+AnnotationAssertion(rdfs:label obo:OBI_0302893 "storage"@en)
+SubClassOf(obo:OBI_0302893 obo:OBI_0000838)
 
 # Class: obo:OBI_1110108 (material to be added)
 
@@ -14508,6 +14660,7 @@ AnnotationAssertion(oboInOwl:id obo:PO_0004518 "PO:0004518")
 AnnotationAssertion(oboInOwl:inSubset obo:PO_0004518 <http://purl.oboInOwllibrary.org/oboInOwl/po#TraitNet>)
 AnnotationAssertion(rdfs:label obo:PO_0004518 "bark")
 SubClassOf(obo:PO_0004518 obo:PO_0009007)
+SubClassOf(obo:PO_0004518 obo:UBERON_0001062)
 SubClassOf(obo:PO_0004518 ObjectSomeValuesFrom(obo:RO_0002202 obo:PO_0005043))
 
 # Class: obo:PO_0004542 (rhizome)
@@ -14546,6 +14699,7 @@ AnnotationAssertion(rdfs:comment obo:PO_0004543 "Functions in storage of photosy
 AnnotationAssertion(rdfs:label obo:PO_0004543 "shoot axis tuber")
 SubClassOf(obo:PO_0004543 obo:PO_0025029)
 SubClassOf(obo:PO_0004543 obo:PO_0025522)
+SubClassOf(obo:PO_0004543 obo:UBERON_0001062)
 SubClassOf(obo:PO_0004543 ObjectSomeValuesFrom(obo:RO_0002202 obo:PO_0025073))
 
 # Class: obo:PO_0004547 (subterranean shoot axis tuber)
@@ -14639,6 +14793,7 @@ AnnotationAssertion(oboInOwl:id obo:PO_0005029 "PO:0005029")
 AnnotationAssertion(rdfs:comment obo:PO_0005029 "A root primordium may arise from cells of a pericycle (PO:0006203) in a root in most seed plant (pericyclic lateral root primordium; PO:0025492), from cells of an endodermis (PO:0000252) in ferns and some seed plants (non-pericyclic lateral root primordium: PO:0025493), or from cells of a shoot axis (PO:0025029), in the case of a basal root primordium (PO:0025479) or shoot-borne root primordium (PO:0025480). Transition from root primordium to root occurs with the formation of a root cap (PO:0020123), shortly after the development of a root apical meristem (PO:0020147).")
 AnnotationAssertion(rdfs:label obo:PO_0005029 "root primordium")
 SubClassOf(obo:PO_0005029 obo:PO_0025127)
+SubClassOf(obo:PO_0005029 obo:UBERON_0001062)
 SubClassOf(obo:PO_0005029 ObjectSomeValuesFrom(obo:RO_0002202 obo:PO_0025433))
 
 # Class: obo:PO_0005043 (secondary phloem)
@@ -14712,6 +14867,7 @@ AnnotationAssertion(oboInOwl:inSubset obo:PO_0006001 <http://purl.oboInOwllibrar
 AnnotationAssertion(oboInOwl:inSubset obo:PO_0006001 <http://purl.oboInOwllibrary.org/oboInOwl/po#reference>)
 AnnotationAssertion(rdfs:label obo:PO_0006001 "phyllome")
 SubClassOf(obo:PO_0006001 obo:PO_0009008)
+SubClassOf(obo:PO_0006001 obo:UBERON_0001062)
 SubClassOf(obo:PO_0006001 ObjectSomeValuesFrom(obo:BFO_0000050 obo:PO_0009006))
 SubClassOf(obo:PO_0006001 ObjectSomeValuesFrom(obo:RO_0002202 obo:PO_0025128))
 
@@ -15037,6 +15193,7 @@ AnnotationAssertion(oboInOwl:inSubset obo:PO_0009001 <http://purl.oboInOwllibrar
 AnnotationAssertion(rdfs:comment obo:PO_0009001 "A fruit (PO:0009001) may contain additional plant structures (PO:0009011) that were part of a flower (PO:0009046) and mature along with the gynoecium, such as a receptacle (PO:0009064). A fruit may develop without fertilization in cases of parthenocarpy, apomixis, or other hormone-induced conditions and may not always contain seeds (PO:0009010). When annotating to fruit (PO:0009001) that are referred to as ‘aggregate’, ‘multiple’, or ‘compound’, please annotate directly to the appropriate plant structure, such as receptacle, hypanthium (PO:0009065) or infructescence (PO:0006342). Fruits only occur in angiosperms.")
 AnnotationAssertion(rdfs:label obo:PO_0009001 "fruit")
 SubClassOf(obo:PO_0009001 obo:PO_0025496)
+SubClassOf(obo:PO_0009001 obo:UBERON_0001062)
 SubClassOf(obo:PO_0009001 ObjectSomeValuesFrom(obo:RO_0002202 obo:PO_0009062))
 
 # Class: obo:PO_0009002 (plant cell)
@@ -15084,6 +15241,7 @@ AnnotationAssertion(oboInOwl:inSubset obo:PO_0009005 <http://purl.oboInOwllibrar
 AnnotationAssertion(rdfs:comment obo:PO_0009005 "Roots function in the absorption of water and inorganic nutrients, anchoring the plant body to the substrate and supporting it, storage of food and nutrients, and vegetative reproduction. The roots of most vascular plant species enter into symbiosis with soil-borne microorganisms. Roots are usually positively geotropic and found underground, although there are many exceptions such as the aerial roots of orchids. Roots often form secondary thickening from the root lateral meristem (PO:0006308). Commonly thought of as one of the three basic parts of the plant body, along with the shoot axis (PO:0025029) and leaves (PO:0025034).")
 AnnotationAssertion(rdfs:label obo:PO_0009005 "root")
 SubClassOf(obo:PO_0009005 obo:PO_0025004)
+SubClassOf(obo:PO_0009005 obo:UBERON_0001062)
 SubClassOf(obo:PO_0009005 ObjectSomeValuesFrom(obo:BFO_0000050 obo:PO_0025025))
 SubClassOf(obo:PO_0009005 ObjectSomeValuesFrom(obo:RO_0002202 obo:PO_0005029))
 
@@ -15184,6 +15342,7 @@ AnnotationAssertion(oboInOwl:inSubset obo:PO_0009010 <http://purl.oboInOwllibrar
 AnnotationAssertion(rdfs:comment obo:PO_0009010 "A seed generally develops from an ovule (PO:0020003) after fertilization, but may develop without fertilization in the case of apogamy (e.g., adventitious embryos or somatic embryos). A seed is a reproductive unit of seed plants (gymnosperms, angiosperms, and fossil pteridosperms).")
 AnnotationAssertion(rdfs:label obo:PO_0009010 "seed")
 SubClassOf(obo:PO_0009010 obo:PO_0025496)
+SubClassOf(obo:PO_0009010 obo:UBERON_0001062)
 SubClassOf(obo:PO_0009010 ObjectSomeValuesFrom(obo:BFO_0000051 obo:PO_0009009))
 SubClassOf(obo:PO_0009010 ObjectSomeValuesFrom(obo:RO_0002202 obo:PO_0020003))
 
@@ -15436,6 +15595,7 @@ AnnotationAssertion(oboInOwl:inSubset obo:PO_0009046 <http://purl.oboInOwllibrar
 AnnotationAssertion(rdfs:comment obo:PO_0009046 "The characteristic reproductive structure of angiosperms. May have as part one or more petals, sepals or tepals. May contain one or more pistillode (PO:0009078), staminode (PO:0009077) or other aborted organs that don't show up in mature form.")
 AnnotationAssertion(rdfs:label obo:PO_0009046 "flower")
 SubClassOf(obo:PO_0009046 obo:PO_0025082)
+SubClassOf(obo:PO_0009046 obo:UBERON_0001062)
 SubClassOf(obo:PO_0009046 ObjectSomeValuesFrom(obo:RO_0002202 obo:PO_0000229))
 
 # Class: obo:PO_0009047 (stem)
@@ -15642,6 +15802,7 @@ AnnotationAssertion(oboInOwl:inSubset obo:PO_0009061 <http://purl.oboInOwllibrar
 AnnotationAssertion(rdfs:comment obo:PO_0009061 "The androecium also has as parts any staminodes (PO:0009077) that may be present in a flower. If annotating gene expression to an androecium with a single stamen (PO:0009029), the annotation should go on stamen. If you are annotating to this structure for Zea mays, please also add an annotation to the corresponding floret type. Choose the most specific term possible from: spikelet floret (PO:0009082), ear floret (PO:0006354), lower floret of pedicellate spikelet of ear (PO:0006353), lower floret of sessile spikelet of ear (PO:0006351), upper floret of pedicellate spikelet of ear (PO:0006350), upper floret of sessile spikelet of ear (PO:0006352), tassel floret (PO:0006310), lower floret of pedicellate spikelet of tassel (PO:0006313), lower floret of sessile spikelet of tassel (PO:0006315), upper floret of pedicellate spikelet of tassel (PO:0006314), upper floret of sessile spikelet of tassel (PO:0006316). The development of an androecium in an ear floret of a normal maize plant is aborted and is present in a rudimentary state, while the development of an androecium in a tassel floret leads to a functional androecium.")
 AnnotationAssertion(rdfs:label obo:PO_0009061 "androecium")
 SubClassOf(obo:PO_0009061 obo:PO_0025023)
+SubClassOf(obo:PO_0009061 obo:UBERON_0001062)
 SubClassOf(obo:PO_0009061 ObjectSomeValuesFrom(obo:BFO_0000050 obo:PO_0009046))
 SubClassOf(obo:PO_0009061 ObjectSomeValuesFrom(obo:RO_0002202 obo:PO_0025478))
 
@@ -15691,6 +15852,7 @@ AnnotationAssertion(oboInOwl:inSubset obo:PO_0009062 <http://purl.oboInOwllibrar
 AnnotationAssertion(rdfs:comment obo:PO_0009062 "If annotating gene expression to a gynoecium with a single carpel (PO:0009030), the annotation should go on carpel. A gynoecium with two or more carpels may be either syncarpous (carpels fused) or apopcarpous (carpels free) or the carpels may be partially fused. The word pistil is used synonymously with gynoecium for a synocarpous gynoecium, and synonymously with carpel for an apocarpous gynoecium, whether it has one or more carpels. In Zea mays, gynoecia of tassel florets and of the lower florets of ear spikelets usually do not develop fully, and they are present in a rudimentary state. If you are annotating to this structure for Zea mays or other grasses, please also add an annotation to the corresponding floret type. Choose the most specific term possible from: spikelet floret (PO:0009082), ear floret (PO:0006354), lower floret of pedicellate spikelet of ear (PO:0006353), lower floret of sessile spikelet of ear (PO:0006351), upper floret of pedicellate spikelet of ear (PO:0006350), upper floret of sessile spikelet of ear (PO:0006352), tassel floret (PO:0006310), lower floret of pedicellate spikelet of tassel (PO:0006313), lower floret of sessile spikelet of tassel (PO:0006315), upper floret of pedicellate spikelet of tassel (PO:0006314), upper floret of sessile spikelet of tassel (PO:0006316).")
 AnnotationAssertion(rdfs:label obo:PO_0009062 "gynoecium")
 SubClassOf(obo:PO_0009062 obo:PO_0025023)
+SubClassOf(obo:PO_0009062 obo:UBERON_0001062)
 SubClassOf(obo:PO_0009062 ObjectSomeValuesFrom(obo:BFO_0000050 obo:PO_0009046))
 SubClassOf(obo:PO_0009062 ObjectSomeValuesFrom(obo:RO_0002202 obo:PO_0000019))
 
@@ -15751,6 +15913,7 @@ AnnotationAssertion(oboInOwl:inSubset obo:PO_0009066 <http://purl.oboInOwllibrar
 AnnotationAssertion(rdfs:comment obo:PO_0009066 "Generally consists of four pollen sacs (microsporangia) in two anther thecas. If you are annotating to anther or one of its parts for Zea mays or other grasses, please also add an annotation to the corresponding floret type. Choose the most specific term possible from: spikelet floret (PO:0009082), tassel floret (PO:0006310), lower floret of pedicellate spikelet of tassel (PO:0006313), lower floret of sessile spikelet of tassel (PO:0006315), upper floret of pedicellate spikelet of tassel (PO:0006314), upper floret of sessile spikelet of tassel (PO:0006316).")
 AnnotationAssertion(rdfs:label obo:PO_0009066 "anther")
 SubClassOf(obo:PO_0009066 obo:PO_0025007)
+SubClassOf(obo:PO_0009066 obo:UBERON_0001062)
 SubClassOf(obo:PO_0009066 ObjectSomeValuesFrom(obo:BFO_0000050 obo:PO_0009029))
 SubClassOf(obo:PO_0009066 ObjectSomeValuesFrom(obo:BFO_0000051 obo:PO_0025277))
 SubClassOf(obo:PO_0009066 ObjectSomeValuesFrom(obo:RO_0002202 obo:PO_0006089))
@@ -15923,6 +16086,7 @@ AnnotationAssertion(oboInOwl:inSubset obo:PO_0009090 <http://purl.oboInOwllibrar
 AnnotationAssertion(rdfs:comment obo:PO_0009090 "Usually envelopes most of the seed and is fleshy. If the ovule is pressed against the funicle to form a raphe, it may appear that the aril is growing from the raphe.")
 AnnotationAssertion(rdfs:label obo:PO_0009090 "aril")
 SubClassOf(obo:PO_0009090 obo:PO_0019022)
+SubClassOf(obo:PO_0009090 obo:UBERON_0001062)
 SubClassOf(obo:PO_0009090 ObjectSomeValuesFrom(obo:RO_0002202 obo:PO_0020006))
 
 # Class: obo:PO_0019022 (arilloid)
@@ -15963,6 +16127,7 @@ AnnotationAssertion(oboInOwl:inSubset obo:PO_0020003 <http://purl.oboInOwllibrar
 AnnotationAssertion(rdfs:comment obo:PO_0020003 "A seed (PO:0009010) develops from a plant ovule. In angiosperms, a plant ovule is part of a plant ovary (PO:0009072). In conifers, a plant ovule is part of an ovuliferous scale (add term). If you are annotating to this structure for Zea mays or other grasses, please also add an annotation to the corresponding floret type. Choose the most specific term possible from: spikelet floret (PO:0009082), ear floret (PO:0006354), upper floret of pedicellate spikelet of ear (PO:0006350), upper floret of sessile spikelet of ear (PO:0006352).")
 AnnotationAssertion(rdfs:label obo:PO_0020003 "plant ovule")
 SubClassOf(obo:PO_0020003 obo:PO_0009008)
+SubClassOf(obo:PO_0020003 obo:UBERON_0001062)
 SubClassOf(obo:PO_0020003 ObjectSomeValuesFrom(obo:RO_0002202 obo:PO_0000018))
 
 # Class: obo:PO_0020006 (funicle)
@@ -16632,6 +16797,7 @@ AnnotationAssertion(oboInOwl:id obo:PO_0025128 "PO:0025128")
 AnnotationAssertion(rdfs:comment obo:PO_0025128 "The transition from phyllome primordium to phyllome occurs when the first non-meristematic tissue develops begins to develop.")
 AnnotationAssertion(rdfs:label obo:PO_0025128 "phyllome primordium")
 SubClassOf(obo:PO_0025128 obo:PO_0025127)
+SubClassOf(obo:PO_0025128 obo:UBERON_0001062)
 SubClassOf(obo:PO_0025128 ObjectSomeValuesFrom(obo:BFO_0000050 obo:PO_0000037))
 SubClassOf(obo:PO_0025128 ObjectSomeValuesFrom(obo:RO_0002202 obo:PO_0025430))
 
@@ -16835,6 +17001,7 @@ AnnotationAssertion(oboInOwl:inSubset obo:PO_0025281 <http://purl.oboInOwllibrar
 AnnotationAssertion(oboInOwl:inSubset obo:PO_0025281 <http://purl.oboInOwllibrary.org/oboInOwl/po#Gymnosperms>)
 AnnotationAssertion(rdfs:label obo:PO_0025281 "pollen")
 SubClassOf(obo:PO_0025281 obo:PO_0025280)
+SubClassOf(obo:PO_0025281 obo:UBERON_0001062)
 SubClassOf(obo:PO_0025281 ObjectSomeValuesFrom(obo:RO_0001025 obo:PO_0025277))
 SubClassOf(obo:PO_0025281 ObjectSomeValuesFrom(obo:RO_0002202 obo:PO_0020048))
 
@@ -17089,6 +17256,7 @@ AnnotationAssertion(rdfs:comment obo:PO_0025409 "Forms as part of secondary grow
 AnnotationAssertion(rdfs:label obo:PO_0025409 "secondary vascular tissue")
 EquivalentClasses(obo:PO_0025409 ObjectIntersectionOf(obo:PO_0009015 ObjectSomeValuesFrom(obo:RO_0002202 obo:PO_0005598)))
 SubClassOf(obo:PO_0025409 obo:PO_0009015)
+SubClassOf(obo:PO_0025409 obo:UBERON_0001062)
 SubClassOf(obo:PO_0025409 ObjectSomeValuesFrom(obo:RO_0002202 obo:PO_0005598))
 
 # Class: obo:PO_0025430 (phyllome anlagen)
@@ -17545,6 +17713,7 @@ AnnotationAssertion(oboInOwl:inSubset obo:PO_0030018 <http://purl.oboInOwllibrar
 AnnotationAssertion(rdfs:comment obo:PO_0030018 "A gametophore is the leafy part of the gametophyte of mosses and leafy liverworts, excluding the protonema. Develop from buds that form on the protonema. Antheridia and archegonia arise on the gametophore.")
 AnnotationAssertion(rdfs:label obo:PO_0030018 "gametophore")
 SubClassOf(obo:PO_0030018 obo:PO_0009006)
+SubClassOf(obo:PO_0030018 obo:UBERON_0001062)
 SubClassOf(obo:PO_0030018 ObjectSomeValuesFrom(obo:RO_0000056 obo:PO_0028003))
 SubClassOf(obo:PO_0030018 ObjectSomeValuesFrom(obo:RO_0002202 obo:PO_0030026))
 
@@ -17564,6 +17733,7 @@ AnnotationAssertion(oboInOwl:inSubset obo:PO_0030026 <http://purl.oboInOwllibrar
 AnnotationAssertion(rdfs:comment obo:PO_0030026 "Occurs in mosses and leafy liverworts. Develops from a caulonema cell in mosses.")
 AnnotationAssertion(rdfs:label obo:PO_0030026 "gametophore bud")
 SubClassOf(obo:PO_0030026 obo:PO_0000058)
+SubClassOf(obo:PO_0030026 obo:UBERON_0001062)
 SubClassOf(obo:PO_0030026 ObjectSomeValuesFrom(obo:RO_0000056 obo:PO_0028003))
 SubClassOf(obo:PO_0030026 ObjectSomeValuesFrom(obo:RO_0002202 obo:PO_0030083))
 
@@ -18014,7 +18184,6 @@ AnnotationAssertion(obo:IAO_0000115 obo:STATO_0000502 "statistical sampling is a
 AnnotationAssertion(obo:IAO_0000119 obo:STATO_0000502 "STATO")
 AnnotationAssertion(obo:IAO_0000412 obo:STATO_0000502 obo:stato.owl)
 AnnotationAssertion(rdfs:label obo:STATO_0000502 "statistical sampling")
-SubClassOf(obo:STATO_0000502 obo:OBI_0000011)
 
 # Class: obo:STATO_0000503 (simple random sampling)
 
@@ -18349,6 +18518,13 @@ AnnotationAssertion(obo:IAO_0000115 obo:UBERON_0001052 "The terminal portion of 
 AnnotationAssertion(obo:IAO_0000412 obo:UBERON_0001052 obo:uberon.owl)
 AnnotationAssertion(rdfs:label obo:UBERON_0001052 "rectum")
 SubClassOf(obo:UBERON_0001052 obo:UBERON_0004921)
+
+# Class: obo:UBERON_0001062 (anatomical entity)
+
+AnnotationAssertion(obo:IAO_0000115 obo:UBERON_0001062 "Biological entity that is either an individual member of a biological species or constitutes the structural organization of an individual member of a biological species.")
+AnnotationAssertion(obo:IAO_0000412 obo:UBERON_0001062 obo:po.owl)
+AnnotationAssertion(obo:IAO_0000412 obo:UBERON_0001062 obo:uberon.owl)
+AnnotationAssertion(rdfs:label obo:UBERON_0001062 "anatomical entity")
 
 # Class: obo:UBERON_0001137 (dorsum)
 
@@ -19128,6 +19304,7 @@ AnnotationAssertion(obo:IAO_0000115 obo:UBERON_0008979 "A body of a multi-cellul
 AnnotationAssertion(obo:IAO_0000412 obo:UBERON_0008979 obo:uberon.owl)
 AnnotationAssertion(rdfs:label obo:UBERON_0008979 "carcass")
 SubClassOf(obo:UBERON_0008979 obo:UBERON_0000468)
+SubClassOf(obo:UBERON_0008979 ObjectSomeValuesFrom(obo:RO_0000053 obo:PATO_0001422))
 
 # Class: obo:UBERON_0009097 (gravid organism)
 
@@ -20128,13 +20305,13 @@ AnnotationAssertion(rdfs:label obo:IAO_0000428 "requires discussion"@en)
 ClassAssertion(obo:IAO_0000078 obo:IAO_0000428)
 
 
-AnnotationAssertion(obo:IAO_0000412 _:genid2147509253 obo:obi.owl)
-AnnotationAssertion(obo:IAO_0000412 _:genid2147509254 obo:po.owl)
-AnnotationAssertion(obo:IAO_0000412 _:genid2147509255 obo:po.owl)
-AnnotationAssertion(obo:IAO_0000412 _:genid2147509256 obo:obi.owl)
-AnnotationAssertion(obo:IAO_0000412 _:genid2147509257 obo:obi.owl)
-AnnotationAssertion(obo:IAO_0000412 _:genid2147509258 obo:po.owl)
-AnnotationAssertion(obo:IAO_0000412 _:genid2147509259 obo:po.owl)
-AnnotationAssertion(obo:IAO_0000412 _:genid2147509260 obo:po.owl)
-AnnotationAssertion(obo:IAO_0000412 _:genid2147509261 obo:obi.owl)
+AnnotationAssertion(obo:IAO_0000412 _:genid2147483649 obo:obi.owl)
+AnnotationAssertion(obo:IAO_0000412 _:genid2147483650 obo:obi.owl)
+AnnotationAssertion(obo:IAO_0000412 _:genid2147483651 obo:po.owl)
+AnnotationAssertion(obo:IAO_0000412 _:genid2147483652 obo:po.owl)
+AnnotationAssertion(obo:IAO_0000412 _:genid2147483653 obo:obi.owl)
+AnnotationAssertion(obo:IAO_0000412 _:genid2147483654 obo:obi.owl)
+AnnotationAssertion(obo:IAO_0000412 _:genid2147483655 obo:po.owl)
+AnnotationAssertion(obo:IAO_0000412 _:genid2147483656 obo:po.owl)
+AnnotationAssertion(obo:IAO_0000412 _:genid2147483657 obo:po.owl)
 )
