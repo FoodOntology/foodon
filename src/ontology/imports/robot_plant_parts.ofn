@@ -2064,6 +2064,7 @@ Declaration(Class(<http://purl.obolibrary.org/obo/FOODON_03411375>))
 Declaration(Class(<http://purl.obolibrary.org/obo/FOODON_03411379>))
 Declaration(Class(<http://purl.obolibrary.org/obo/FOODON_03411380>))
 Declaration(Class(<http://purl.obolibrary.org/obo/FOODON_03411388>))
+Declaration(Class(<http://purl.obolibrary.org/obo/FOODON_03411393>))
 Declaration(Class(<http://purl.obolibrary.org/obo/FOODON_03411418>))
 Declaration(Class(<http://purl.obolibrary.org/obo/FOODON_03411421>))
 Declaration(Class(<http://purl.obolibrary.org/obo/FOODON_03411456>))
@@ -2149,6 +2150,7 @@ Declaration(Class(<http://purl.obolibrary.org/obo/FOODON_03414184>))
 Declaration(Class(<http://purl.obolibrary.org/obo/FOODON_03414185>))
 Declaration(Class(<http://purl.obolibrary.org/obo/FOODON_03414186>))
 Declaration(Class(<http://purl.obolibrary.org/obo/FOODON_03414187>))
+Declaration(Class(<http://purl.obolibrary.org/obo/FOODON_03414206>))
 Declaration(Class(<http://purl.obolibrary.org/obo/FOODON_03414253>))
 Declaration(Class(<http://purl.obolibrary.org/obo/FOODON_03414314>))
 Declaration(Class(<http://purl.obolibrary.org/obo/FOODON_03414325>))
@@ -9559,8 +9561,8 @@ AnnotationAssertion(<http://purl.org/dc/terms/contributor> <http://purl.obolibra
 AnnotationAssertion(<http://purl.org/dc/terms/contributor> <http://purl.obolibrary.org/obo/FOODON_00004622> "https://orcid.org/0000-0003-3653-3805")
 AnnotationAssertion(<http://purl.org/dc/terms/date> <http://purl.obolibrary.org/obo/FOODON_00004622> "2024-03-06T10:00:11Z"^^xsd:dateTime)
 AnnotationAssertion(rdfs:label <http://purl.obolibrary.org/obo/FOODON_00004622> "royal royce strawberry plant"@en)
+SubClassOf(<http://purl.obolibrary.org/obo/FOODON_00004622> <http://purl.obolibrary.org/obo/FOODON_03411393>)
 SubClassOf(<http://purl.obolibrary.org/obo/FOODON_00004622> <http://purl.obolibrary.org/obo/NCBITaxon_3747>)
-SubClassOf(<http://purl.obolibrary.org/obo/FOODON_00004622> <http://purl.obolibrary.org/obo/PO_0000003>)
 
 # Class: <http://purl.obolibrary.org/obo/FOODON_00004623> (royal royce strawberry)
 
@@ -9600,7 +9602,7 @@ AnnotationAssertion(<http://purl.org/dc/terms/contributor> <http://purl.obolibra
 AnnotationAssertion(<http://purl.org/dc/terms/contributor> <http://purl.obolibrary.org/obo/FOODON_00004625> "https://orcid.org/0000-0003-3653-3805")
 AnnotationAssertion(<http://purl.org/dc/terms/date> <http://purl.obolibrary.org/obo/FOODON_00004625> "2024-03-06T10:00:11Z"^^xsd:dateTime)
 AnnotationAssertion(rdfs:label <http://purl.obolibrary.org/obo/FOODON_00004625> "valiant strawberry plant"@en)
-SubClassOf(<http://purl.obolibrary.org/obo/FOODON_00004625> <http://purl.obolibrary.org/obo/PO_0000003>)
+SubClassOf(<http://purl.obolibrary.org/obo/FOODON_00004625> <http://purl.obolibrary.org/obo/FOODON_03411393>)
 
 # Class: <http://purl.obolibrary.org/obo/FOODON_00004626> (valiant strawberry)
 
@@ -9641,7 +9643,7 @@ AnnotationAssertion(<http://purl.org/dc/terms/contributor> <http://purl.obolibra
 AnnotationAssertion(<http://purl.org/dc/terms/contributor> <http://purl.obolibrary.org/obo/FOODON_00004628> "https://orcid.org/0000-0003-3653-3805")
 AnnotationAssertion(<http://purl.org/dc/terms/date> <http://purl.obolibrary.org/obo/FOODON_00004628> "2024-03-06T10:00:11Z"^^xsd:dateTime)
 AnnotationAssertion(rdfs:label <http://purl.obolibrary.org/obo/FOODON_00004628> "marionberry plant"@en)
-SubClassOf(<http://purl.obolibrary.org/obo/FOODON_00004628> <http://purl.obolibrary.org/obo/PO_0000003>)
+SubClassOf(<http://purl.obolibrary.org/obo/FOODON_00004628> <http://purl.obolibrary.org/obo/FOODON_03414206>)
 
 # Class: <http://purl.obolibrary.org/obo/FOODON_00004629> (marionberry)
 
