@@ -2293,12 +2293,6 @@ AnnotationAssertion(obo:IAO_0100001 obo:FOODON_00002332 "http://purl.obolibrary.
 AnnotationAssertion(rdfs:label obo:FOODON_00002332 "obsolete: vegetable juice"@en)
 AnnotationAssertion(owl:deprecated obo:FOODON_00002332 "true"^^xsd:boolean)
 
-# Class: obo:FOODON_00002369 (obsolete: yeast refined food product)
-
-AnnotationAssertion(obo:IAO_0100001 obo:FOODON_00002369 "http://purl.obolibrary.org/obo/FOODON_00001144")
-AnnotationAssertion(rdfs:label obo:FOODON_00002369 "obsolete: yeast refined food product"@en)
-AnnotationAssertion(owl:deprecated obo:FOODON_00002369 "true"^^xsd:boolean)
-
 # Class: obo:FOODON_00002430 (obsolete: convenience food)
 
 AnnotationAssertion(obo:IAO_0000117 obo:FOODON_00002430 "Damion Dooley"@en)
@@ -6002,12 +5996,6 @@ AnnotationAssertion(obo:IAO_0100001 obo:FOODON_03411943 obo:NCBITaxon_198537)
 AnnotationAssertion(rdfs:label obo:FOODON_03411943 "obsolete: red deepsea crab"@en)
 AnnotationAssertion(owl:deprecated obo:FOODON_03411943 "true"^^xsd:boolean)
 
-# Class: obo:FOODON_03411944 (obsolete: florida stone crab)
-
-AnnotationAssertion(obo:IAO_0100001 obo:FOODON_03411944 obo:NCBITaxon_6781)
-AnnotationAssertion(rdfs:label obo:FOODON_03411944 "obsolete: florida stone crab"@en)
-AnnotationAssertion(owl:deprecated obo:FOODON_03411944 "true"^^xsd:boolean)
-
 # Class: obo:FOODON_03411945 (obsolete: atlantic calico scallop)
 
 AnnotationAssertion(obo:IAO_0100001 obo:FOODON_03411945 obo:NCBITaxon_78525)
@@ -7214,6 +7202,12 @@ AnnotationAssertion(owl:deprecated obo:FOODON_03412402 "true"^^xsd:boolean)
 AnnotationAssertion(obo:IAO_0100001 obo:FOODON_03412411 obo:NCBITaxon_2822)
 AnnotationAssertion(rdfs:label obo:FOODON_03412411 "obsolete: dulse"@en)
 AnnotationAssertion(owl:deprecated obo:FOODON_03412411 "true"^^xsd:boolean)
+
+# Class: obo:FOODON_03412412 (obsolete: green turtle)
+
+AnnotationAssertion(obo:IAO_0100001 obo:FOODON_03412412 obo:FOODON_02021572)
+AnnotationAssertion(rdfs:label obo:FOODON_03412412 "obsolete: green turtle"@en)
+AnnotationAssertion(owl:deprecated obo:FOODON_03412412 "true"^^xsd:boolean)
 
 # Class: obo:FOODON_03412416 (obsolete: chinese chestnut tree)
 
@@ -11977,10 +11971,6 @@ AnnotationAssertion(obo:IAO_0100001 obo:FOODON_03414384 obo:NCBITaxon_294744)
 AnnotationAssertion(rdfs:label obo:FOODON_03414384 "obsolete: weathervane scallop"@en)
 AnnotationAssertion(owl:deprecated obo:FOODON_03414384 "true"^^xsd:boolean)
 
-# Class: obo:FOODON_03414385 (snapping turtle)
-
-AnnotationAssertion(obo:IAO_0100001 obo:FOODON_03414385 obo:NCBITaxon_8475)
-
 # Class: obo:FOODON_03414416 (obsolete: cellulose)
 
 AnnotationAssertion(obo:IAO_0000115 obo:FOODON_03414416 "Cellulose used as a food additive."@en)
@@ -14653,6 +14643,12 @@ AnnotationAssertion(owl:deprecated obo:FOODON_00002144 "true"^^xsd:boolean)
 AnnotationAssertion(obo:IAO_0100001 obo:FOODON_00002426 obo:FOODON_00003643)
 AnnotationAssertion(rdfs:label obo:FOODON_00002426 "obsolete: arugula greens (raw)"@en)
 AnnotationAssertion(owl:deprecated obo:FOODON_00002426 "true"^^xsd:boolean)
+AnnotationAssertion(obo:IAO_0100001 obo:FOODON_00002468 obo:FOODON_03411505)
+AnnotationAssertion(rdfs:label obo:FOODON_00002468 "obsolete: lobster"@en)
+AnnotationAssertion(owl:deprecated obo:FOODON_00002468 "true"^^xsd:boolean)
+AnnotationAssertion(obo:IAO_0100001 obo:FOODON_00002469 obo:FOODON_02021453)
+AnnotationAssertion(rdfs:label obo:FOODON_00002469 "obsolete: lobster (whole or pieces)"@en)
+AnnotationAssertion(owl:deprecated obo:FOODON_00002469 "true"^^xsd:boolean)
 AnnotationAssertion(obo:IAO_0100001 obo:FOODON_00002704 obo:FOODON_03411457)
 AnnotationAssertion(rdfs:label obo:FOODON_00002704 "obsolete: chicken"@en)
 AnnotationAssertion(owl:deprecated obo:FOODON_00002704 "true"^^xsd:boolean)
