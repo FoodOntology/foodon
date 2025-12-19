@@ -50,3 +50,7 @@ To run ontofetch.py on local foodon-merged.owl and get a json or tsv output of a
 python ../../../ontofetch/ontofetch.py foodon-full.owl -r http://purl.obolibrary.org/obo/BFO_0000001 -o test/
 
 Ontofetch is available at: https://github.com/cidgoh/ontofetch .  It requires python 3, and the python rdflib module.
+
+## Generating foodon-synonyms.tsv
+
+See notes in sparql/foodon_labels.sparql query.
