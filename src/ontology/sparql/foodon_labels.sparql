@@ -1,3 +1,9 @@
+# To execute this sparql query which by default outputs a "temp.tsv" tab-
+# delimited fileview of the ontology, go to the /src/ontology/ folder, and run
+# the robot command line tool:
+#
+# > robot query --input foodon-full.owl --query sparql/foodon_labels.sparql temp.tsv --format TSV
+
 PREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#>
 PREFIX obo: <http://purl.obolibrary.org/obo/>
 
