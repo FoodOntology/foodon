@@ -697,7 +697,7 @@ SubClassOf(<http://purl.obolibrary.org/obo/FOODON_03000001> ObjectSomeValuesFrom
 
 AnnotationAssertion(<http://www.geneontology.org/formats/oboInOwl#hasDbXref> <http://purl.obolibrary.org/obo/FOODON_03450002> "http://www.langual.org/langual_thesaurus.asp?termid=G0002")
 AnnotationAssertion(rdfs:label <http://purl.obolibrary.org/obo/FOODON_03450002> "food cooking"@en)
-SubClassOf(<http://purl.obolibrary.org/obo/FOODON_03450002> <http://purl.obolibrary.org/obo/FOODON_00002451>)
+SubClassOf(<http://purl.obolibrary.org/obo/FOODON_03450002> <http://purl.obolibrary.org/obo/FOODON_03460111>)
 
 # Class: <http://purl.obolibrary.org/obo/FOODON_03450004> (cooking by dry heat)
 

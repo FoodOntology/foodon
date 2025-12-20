@@ -2426,6 +2426,7 @@ Declaration(Class(obo:FOODON_00005442))
 Declaration(Class(obo:FOODON_00005501))
 Declaration(Class(obo:FOODON_00005502))
 Declaration(Class(obo:FOODON_00005522))
+Declaration(Class(obo:FOODON_00005674))
 Declaration(Class(obo:FOODON_00005716))
 Declaration(Class(obo:FOODON_00005717))
 Declaration(Class(obo:FOODON_0002000))
@@ -14123,7 +14124,6 @@ SubClassOf(obo:FOODON_00001172 ObjectSomeValuesFrom(obo:RO_0002350 obo:FOODON_03
 AnnotationAssertion(rdfs:label obo:FOODON_00001173 "plant seed food product"@en)
 EquivalentClasses(obo:FOODON_00001173 ObjectIntersectionOf(obo:FOODON_00001015 ObjectSomeValuesFrom(obo:RO_0001000 obo:PO_0009010)))
 SubClassOf(obo:FOODON_00001173 obo:FOODON_00001015)
-SubClassOf(obo:FOODON_00001173 ObjectSomeValuesFrom(obo:RO_0001000 obo:FOODON_03411174))
 
 # Class: obo:FOODON_00001174 (plant lipid food product)
 
@@ -15899,6 +15899,7 @@ SubClassOf(obo:FOODON_00001660 obo:FOODON_00001248)
 
 AnnotationAssertion(rdfs:label obo:FOODON_00001661 "bony fish food product"@en)
 SubClassOf(obo:FOODON_00001661 obo:FOODON_00001248)
+SubClassOf(obo:FOODON_00001661 obo:FOODON_00005674)
 
 # Class: obo:FOODON_00001662 (boysenberry food product)
 

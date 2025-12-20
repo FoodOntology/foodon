@@ -10881,6 +10881,7 @@ AnnotationAssertion(<http://purl.org/dc/terms/date> <http://purl.obolibrary.org/
 AnnotationAssertion(rdfs:label <http://purl.obolibrary.org/obo/FOODON_00004281> "amphibian food product"@en)
 EquivalentClasses(<http://purl.obolibrary.org/obo/FOODON_00004281> ObjectIntersectionOf(<http://purl.obolibrary.org/obo/FOODON_00001092> ObjectSomeValuesFrom(<http://purl.obolibrary.org/obo/RO_0001000> <http://purl.obolibrary.org/obo/FOODON_03411624>)))
 SubClassOf(<http://purl.obolibrary.org/obo/FOODON_00004281> <http://purl.obolibrary.org/obo/FOODON_00001092>)
+SubClassOf(<http://purl.obolibrary.org/obo/FOODON_00004281> <http://purl.obolibrary.org/obo/FOODON_00005686>)
 
 # Class: <http://purl.obolibrary.org/obo/FOODON_00004282> (reptile food product)
 
@@ -11401,7 +11402,7 @@ SubClassOf(<http://purl.obolibrary.org/obo/FOODON_00004456> <http://purl.obolibr
 
 # Class: <http://purl.obolibrary.org/obo/FOODON_00004457> (food recipe process)
 
-AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000115> <http://purl.obolibrary.org/obo/FOODON_00004457> "A planned process that executes a food recipe specification."@en)
+AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000115> <http://purl.obolibrary.org/obo/FOODON_00004457> "A food treatment process that executes a food recipe specification."@en)
 AnnotationAssertion(<http://purl.org/dc/terms/contributor> <http://purl.obolibrary.org/obo/FOODON_00004457> <https://orcid.org/0000-0002-8844-9165>)
 AnnotationAssertion(<http://purl.org/dc/terms/date> <http://purl.obolibrary.org/obo/FOODON_00004457> "2023-07-16T15:15:17Z"^^xsd:dateTime)
 AnnotationAssertion(rdfs:label <http://purl.obolibrary.org/obo/FOODON_00004457> "food recipe process"@en)
