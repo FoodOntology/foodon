@@ -437,7 +437,7 @@ if __name__ == "__main__":
 				term['material'] = 'm';
 				# If a [x] material class is found, and this is a subclass of it, 
 				if found_material in onto_class.is_a:
-					#link = found_material.iri.split('/')[-1];
+					# Print out material_entity line
 					link = str(found_material.iri).replace('http://purl.obolibrary.org/obo/','obo:');
 					print (link, '', parent_depth, "  " * (parent_depth) + getEnglishLabel(found_material), '', '', '', sep='\t');
 					# Bump depth since we now have a material
@@ -450,14 +450,13 @@ if __name__ == "__main__":
 
 
 
-
-
 				else:
 					missing_material_links.append(str(term['label']));
 
 			if found_product:
 				term['product'] = 'p';
-				if found_material and not (found_product in found_material.is_a):
+				if found_material and not (found_material in found_product.is_a):
+
 					missing_product_links.append(getEnglishLabel(found_material) + "/" + getEnglishLabel(found_product));
 
 			# Note special case for "edible frog" FOODON_03413463 where divider 
