@@ -2425,6 +2425,7 @@ Declaration(Class(obo:FOODON_00005342))
 Declaration(Class(obo:FOODON_00005442))
 Declaration(Class(obo:FOODON_00005501))
 Declaration(Class(obo:FOODON_00005502))
+Declaration(Class(obo:FOODON_00005507))
 Declaration(Class(obo:FOODON_00005522))
 Declaration(Class(obo:FOODON_00005674))
 Declaration(Class(obo:FOODON_00005716))
@@ -2456,6 +2457,8 @@ Declaration(Class(obo:FOODON_02020318))
 Declaration(Class(obo:FOODON_02020585))
 Declaration(Class(obo:FOODON_02020656))
 Declaration(Class(obo:FOODON_02020805))
+Declaration(Class(obo:FOODON_02020895))
+Declaration(Class(obo:FOODON_02020913))
 Declaration(Class(obo:FOODON_02021444))
 Declaration(Class(obo:FOODON_02021446))
 Declaration(Class(obo:FOODON_02021453))
@@ -15324,7 +15327,7 @@ AnnotationAssertion(obo:IAO_0000115 obo:FOODON_00001565 "A pre-evisceration carc
 AnnotationAssertion(dcterms:contributor obo:FOODON_00001565 "Gregory Harhay"@en)
 AnnotationAssertion(rdfs:label obo:FOODON_00001565 "pre-evisceration carcass"@en)
 AnnotationAssertion(rdfs:seeAlso obo:FOODON_00001565 "https://www.ars.usda.gov/ARSUserFiles/30400510/protocols/USMARC%20Carcass%20Sampling%20Protocol.pdf"^^xsd:anyURI)
-SubClassOf(obo:FOODON_00001565 obo:FOODON_00001006)
+SubClassOf(obo:FOODON_00001565 obo:FOODON_02020895)
 SubClassOf(obo:FOODON_00001565 ObjectSomeValuesFrom(obo:RO_0001000 obo:UBERON_0008979))
 
 # Class: obo:FOODON_00001566 (post-evisceration carcass)
@@ -15333,7 +15336,7 @@ AnnotationAssertion(obo:IAO_0000114 obo:FOODON_00001566 obo:IAO_0000122)
 AnnotationAssertion(obo:IAO_0000115 obo:FOODON_00001566 "A post-intervention carcass is a carcass that has had all antimicrobial intervention applied, been split in half along the backbone, and placed in a cooler, often referred to as the \"hot box\" cooler."@en)
 AnnotationAssertion(dcterms:contributor obo:FOODON_00001566 "Gregory Harhay"@en)
 AnnotationAssertion(rdfs:label obo:FOODON_00001566 "post-evisceration carcass"@en)
-SubClassOf(obo:FOODON_00001566 obo:FOODON_00001006)
+SubClassOf(obo:FOODON_00001566 obo:FOODON_02020895)
 SubClassOf(obo:FOODON_00001566 ObjectSomeValuesFrom(obo:RO_0001000 obo:UBERON_0008979))
 
 # Class: obo:FOODON_00001568 (food trimming)
@@ -16100,7 +16103,6 @@ SubClassOf(obo:FOODON_00001695 ObjectSomeValuesFrom(obo:RO_0001000 obo:NCBITaxon
 AnnotationAssertion(rdfs:label obo:FOODON_00001696 "cattle cured meat food product"@en)
 EquivalentClasses(obo:FOODON_00001696 ObjectIntersectionOf(obo:FOODON_00001039 obo:FOODON_00001041))
 SubClassOf(obo:FOODON_00001696 obo:FOODON_00001041)
-SubClassOf(obo:FOODON_00001696 ObjectSomeValuesFrom(obo:RO_0001000 obo:NCBITaxon_9913))
 
 # Class: obo:FOODON_00001697 (cattle product based flavoring or seasoning)
 
@@ -20514,12 +20516,6 @@ AnnotationAssertion(rdfs:label obo:FOODON_00002450 "multi-component honey produc
 EquivalentClasses(obo:FOODON_00002450 ObjectIntersectionOf(obo:FOODON_00001178 obo:FOODON_00002501))
 SubClassOf(obo:FOODON_00002450 obo:FOODON_00001178)
 
-# Class: obo:FOODON_00002453 (obsolete: apple (raw))
-
-AnnotationAssertion(obo:IAO_0100001 obo:FOODON_00002453 obo:FOODON_03301710)
-AnnotationAssertion(rdfs:label obo:FOODON_00002453 "obsolete: apple (raw)"@en)
-AnnotationAssertion(owl:deprecated obo:FOODON_00002453 "true"^^xsd:boolean)
-
 # Class: obo:FOODON_00002458 (black currant food product)
 
 AnnotationAssertion(rdfs:label obo:FOODON_00002458 "black currant food product"@en)
@@ -21838,12 +21834,6 @@ AnnotationAssertion(dcterms:date obo:FOODON_00002715 "2019-06-28T04:47:07Z"^^xsd
 AnnotationAssertion(rdfs:label obo:FOODON_00002715 "herring fillet"@en)
 EquivalentClasses(obo:FOODON_00002715 ObjectIntersectionOf(obo:FOODON_00002679 ObjectSomeValuesFrom(obo:RO_0001000 obo:FOODON_03411414)))
 SubClassOf(obo:FOODON_00002715 obo:FOODON_00001950)
-
-# Class: obo:FOODON_00002718 (obsolete: ginger root)
-
-AnnotationAssertion(obo:IAO_0100001 obo:FOODON_00002718 obo:FOODON_00003717)
-AnnotationAssertion(rdfs:label obo:FOODON_00002718 "obsolete: ginger root"@en)
-AnnotationAssertion(owl:deprecated obo:FOODON_00002718 "true"^^xsd:boolean)
 
 # Class: obo:FOODON_00002724 (nutritional powder)
 
@@ -24207,7 +24197,6 @@ SubClassOf(obo:FOODON_00003028 obo:FOODON_00001640)
 # Class: obo:FOODON_00003029 (beef steak)
 
 AnnotationAssertion(dcterms:contributor obo:FOODON_00003029 <https://orcid.org/0000-0002-8844-9165>)
-SubClassOf(obo:FOODON_00003029 obo:FOODON_00001041)
 
 # Class: obo:FOODON_00003030 (angelica food product)
 
@@ -26452,7 +26441,6 @@ SubClassOf(obo:FOODON_00003300 ObjectSomeValuesFrom(obo:FOODON_00001563 obo:FOOD
 # Class: obo:FOODON_00003301 (beef loin)
 
 AnnotationAssertion(obo:IAO_0000114 obo:FOODON_00003301 obo:IAO_0000428)
-SubClassOf(obo:FOODON_00003301 obo:FOODON_00001041)
 
 # Class: obo:FOODON_00003302 (beef tenderloin)
 
@@ -28984,6 +28972,13 @@ AnnotationAssertion(dcterms:contributor obo:FOODON_00004560 <https://orcid.org/0
 AnnotationAssertion(dcterms:date obo:FOODON_00004560 "2024-02-07T12:02:35Z"^^xsd:dateTime)
 AnnotationAssertion(rdfs:label obo:FOODON_00004560 "canola seed")
 SubClassOf(obo:FOODON_00004560 obo:FOODON_00002700)
+
+# Class: obo:FOODON_00005507 (corned beef)
+
+AnnotationAssertion(obo:IAO_0000115 obo:FOODON_00005507 "Beef that has been cured with salt and spices, typically from the brisket cut."@en)
+AnnotationAssertion(dcterms:contributor obo:FOODON_00005507 "https://orcid.org/0000-0001-5275-8866")
+AnnotationAssertion(rdfs:label obo:FOODON_00005507 "corned beef"@en)
+SubClassOf(obo:FOODON_00005507 obo:FOODON_00001696)
 
 # Class: obo:FOODON_00005716 (wholesale food)
 
@@ -33182,6 +33177,8 @@ SubClassOf(obo:FOODON_03301705 obo:FOODON_00001073)
 
 AnnotationAssertion(obo:IAO_0000114 obo:FOODON_03301706 obo:IAO_0000428)
 AnnotationAssertion(oboInOwl:hasDbXref obo:FOODON_03301706 siren:F1706)
+AnnotationAssertion(oboInOwl:hasDbXref obo:FOODON_03301706 siren:F8932)
+AnnotationAssertion(oboInOwl:hasDbXref obo:FOODON_03301706 siren:F9688)
 AnnotationAssertion(rdfs:label obo:FOODON_03301706 "mussel (raw)"@en)
 SubClassOf(obo:FOODON_03301706 obo:FOODON_00002051)
 SubClassOf(obo:FOODON_03301706 ObjectSomeValuesFrom(obo:RO_0001000 obo:FOODON_03411223))
@@ -38702,11 +38699,11 @@ AnnotationAssertion(rdfs:label obo:FOODON_03302715 "brine"@en)
 SubClassOf(obo:FOODON_03302715 obo:FOODON_00002250)
 SubClassOf(obo:FOODON_03302715 ObjectSomeValuesFrom(obo:FOODON_00002420 obo:CHEBI_26710))
 
-# Class: obo:FOODON_03302716 (imitation hamburger pattie)
+# Class: obo:FOODON_03302716 (imitation hamburger patty)
 
 AnnotationAssertion(obo:IAO_0000114 obo:FOODON_03302716 obo:IAO_0000428)
 AnnotationAssertion(oboInOwl:hasDbXref obo:FOODON_03302716 siren:F2716)
-AnnotationAssertion(rdfs:label obo:FOODON_03302716 "imitation hamburger pattie"@en)
+AnnotationAssertion(rdfs:label obo:FOODON_03302716 "imitation hamburger patty"@en)
 SubClassOf(obo:FOODON_03302716 obo:FOODON_00002027)
 SubClassOf(obo:FOODON_03302716 ObjectSomeValuesFrom(obo:RO_0001000 obo:FOODON_03411049))
 
@@ -38785,10 +38782,6 @@ AnnotationAssertion(rdfs:label obo:FOODON_03302733 "corn (ammoniated)"@en)
 SubClassOf(obo:FOODON_03302733 obo:FOODON_00001142)
 SubClassOf(obo:FOODON_03302733 ObjectSomeValuesFrom(obo:RO_0001000 obo:FOODON_03411232))
 SubClassOf(obo:FOODON_03302733 ObjectSomeValuesFrom(obo:RO_0002350 obo:FOODON_03400152))
-
-# Class: obo:FOODON_03302734 (beef liver (raw))
-
-SubClassOf(obo:FOODON_03302734 obo:FOODON_00001041)
 
 # Class: obo:FOODON_03302735 (pork meat (raw))
 
@@ -45687,7 +45680,6 @@ SubClassOf(obo:FOODON_03304221 obo:FOODON_03315786)
 AnnotationAssertion(obo:IAO_0000114 obo:FOODON_03304222 obo:IAO_0000428)
 AnnotationAssertion(oboInOwl:hasDbXref obo:FOODON_03304222 siren:F4222)
 AnnotationAssertion(rdfs:label obo:FOODON_03304222 "infant food (meat)"@en)
-EquivalentClasses(obo:FOODON_03304222 ObjectIntersectionOf(obo:FOODON_00001006 obo:FOODON_03306448))
 SubClassOf(obo:FOODON_03304222 obo:FOODON_00001006)
 SubClassOf(obo:FOODON_03304222 obo:FOODON_03306448)
 
@@ -46270,11 +46262,11 @@ AnnotationAssertion(oboInOwl:hasDbXref obo:FOODON_03304337 siren:F4337)
 AnnotationAssertion(rdfs:label obo:FOODON_03304337 "cheese (processed)"@en)
 SubClassOf(obo:FOODON_03304337 obo:FOODON_00001784)
 
-# Class: obo:FOODON_03304338 (alaskan sea lion (raw))
+# Class: obo:FOODON_03304338 (alaskan sea lion meat (raw))
 
 AnnotationAssertion(obo:IAO_0000114 obo:FOODON_03304338 obo:IAO_0000428)
 AnnotationAssertion(oboInOwl:hasDbXref obo:FOODON_03304338 siren:F4338)
-AnnotationAssertion(rdfs:label obo:FOODON_03304338 "alaskan sea lion (raw)"@en)
+AnnotationAssertion(rdfs:label obo:FOODON_03304338 "alaskan sea lion meat (raw)"@en)
 SubClassOf(obo:FOODON_03304338 obo:FOODON_00001006)
 SubClassOf(obo:FOODON_03304338 ObjectSomeValuesFrom(obo:RO_0001000 obo:FOODON_03411341))
 SubClassOf(obo:FOODON_03304338 ObjectSomeValuesFrom(obo:RO_0002350 obo:FOODON_03400267))
@@ -46788,7 +46780,7 @@ SubClassOf(obo:FOODON_03304434 ObjectSomeValuesFrom(obo:RO_0002350 obo:FOODON_03
 AnnotationAssertion(obo:IAO_0000114 obo:FOODON_03304435 obo:IAO_0000428)
 AnnotationAssertion(oboInOwl:hasDbXref obo:FOODON_03304435 siren:F4435)
 AnnotationAssertion(rdfs:label obo:FOODON_03304435 "beef (steak, freeze-dried)"@en)
-SubClassOf(obo:FOODON_03304435 obo:FOODON_00001041)
+SubClassOf(obo:FOODON_03304435 obo:FOODON_00003029)
 
 # Class: obo:FOODON_03304436 (gravy mix (freeze-dried))
 
@@ -47455,7 +47447,7 @@ SubClassOf(obo:FOODON_03304540 obo:FOODON_00002351)
 AnnotationAssertion(obo:IAO_0000114 obo:FOODON_03304541 obo:IAO_0000428)
 AnnotationAssertion(oboInOwl:hasDbXref obo:FOODON_03304541 siren:F4541)
 AnnotationAssertion(rdfs:label obo:FOODON_03304541 "corned beef (raw)"@en)
-SubClassOf(obo:FOODON_03304541 obo:FOODON_00001041)
+SubClassOf(obo:FOODON_03304541 obo:FOODON_00005507)
 
 # Class: obo:FOODON_03304544 (chicken (frozen))
 
@@ -48203,12 +48195,12 @@ AnnotationAssertion(oboInOwl:hasExactSynonym obo:FOODON_03304663 "raw beef patty
 AnnotationAssertion(rdfs:label obo:FOODON_03304663 "ground beef patty (raw)"@en)
 SubClassOf(obo:FOODON_03304663 obo:FOODON_03317337)
 
-# Class: obo:FOODON_03304664 (chopped beef pattie (raw))
+# Class: obo:FOODON_03304664 (chopped beef patty (raw))
 
 AnnotationAssertion(obo:IAO_0000114 obo:FOODON_03304664 obo:IAO_0000428)
 AnnotationAssertion(oboInOwl:hasDbXref obo:FOODON_03304664 siren:F4664)
-AnnotationAssertion(rdfs:label obo:FOODON_03304664 "chopped beef pattie (raw)"@en)
-SubClassOf(obo:FOODON_03304664 obo:FOODON_00001041)
+AnnotationAssertion(rdfs:label obo:FOODON_03304664 "chopped beef patty (raw)"@en)
+SubClassOf(obo:FOODON_03304664 obo:FOODON_03317337)
 
 # Class: obo:FOODON_03304667 (sausage and biscuit sandwich)
 
@@ -48765,11 +48757,11 @@ AnnotationAssertion(oboInOwl:hasDbXref obo:FOODON_03304761 siren:F4761)
 AnnotationAssertion(rdfs:label obo:FOODON_03304761 "meat sandwich"@en)
 SubClassOf(obo:FOODON_03304761 obo:FOODON_00001604)
 
-# Class: obo:FOODON_03304762 (beef pattie sandwich (cooked, frozen))
+# Class: obo:FOODON_03304762 (beef patty sandwich (cooked, frozen))
 
 AnnotationAssertion(obo:IAO_0000114 obo:FOODON_03304762 obo:IAO_0000428)
 AnnotationAssertion(oboInOwl:hasDbXref obo:FOODON_03304762 siren:F4762)
-AnnotationAssertion(rdfs:label obo:FOODON_03304762 "beef pattie sandwich (cooked, frozen)"@en)
+AnnotationAssertion(rdfs:label obo:FOODON_03304762 "beef patty sandwich (cooked, frozen)"@en)
 SubClassOf(obo:FOODON_03304762 obo:FOODON_00001699)
 
 # Class: obo:FOODON_03304763 (maritza wafer)
@@ -52184,7 +52176,7 @@ SubClassOf(obo:FOODON_03305349 obo:FOODON_00002052)
 AnnotationAssertion(obo:IAO_0000114 obo:FOODON_03305350 obo:IAO_0000428)
 AnnotationAssertion(oboInOwl:hasDbXref obo:FOODON_03305350 siren:F5350)
 AnnotationAssertion(rdfs:label obo:FOODON_03305350 "beef bone"@en)
-SubClassOf(obo:FOODON_03305350 obo:FOODON_00001041)
+SubClassOf(obo:FOODON_03305350 obo:FOODON_02000403)
 
 # Class: obo:FOODON_03305353 (chicken soup concentrate)
 
@@ -53368,12 +53360,13 @@ AnnotationAssertion(rdfs:label obo:FOODON_03305565 "ham soup base"@en)
 SubClassOf(obo:FOODON_03305565 obo:FOODON_00002256)
 SubClassOf(obo:FOODON_03305565 ObjectSomeValuesFrom(obo:RO_0002350 obo:FOODON_03400198))
 
-# Class: obo:FOODON_03305567 (hamburger pattie (precooked, in a roll, frozen))
+# Class: obo:FOODON_03305567 (hamburger patty (precooked, in a roll, frozen))
 
 AnnotationAssertion(obo:IAO_0000114 obo:FOODON_03305567 obo:IAO_0000428)
 AnnotationAssertion(oboInOwl:hasDbXref obo:FOODON_03305567 siren:F5567)
-AnnotationAssertion(rdfs:label obo:FOODON_03305567 "hamburger pattie (precooked, in a roll, frozen)"@en)
+AnnotationAssertion(rdfs:label obo:FOODON_03305567 "hamburger patty (precooked, in a roll, frozen)"@en)
 SubClassOf(obo:FOODON_03305567 obo:FOODON_00001699)
+SubClassOf(obo:FOODON_03305567 obo:FOODON_03317337)
 
 # Class: obo:FOODON_03305568 (bean (ham-flavored, dried))
 
@@ -54759,7 +54752,7 @@ SubClassOf(obo:FOODON_03305824 obo:FOODON_00001890)
 AnnotationAssertion(obo:IAO_0000114 obo:FOODON_03305825 obo:IAO_0000428)
 AnnotationAssertion(oboInOwl:hasDbXref obo:FOODON_03305825 siren:F5825)
 AnnotationAssertion(rdfs:label obo:FOODON_03305825 "corned beef (canned)"@en)
-SubClassOf(obo:FOODON_03305825 obo:FOODON_00001041)
+SubClassOf(obo:FOODON_03305825 obo:FOODON_00005507)
 
 # Class: obo:FOODON_03305826 (beef suet (raw))
 
@@ -64859,11 +64852,11 @@ AnnotationAssertion(rdfs:label obo:FOODON_03307843 "tomato (sliced, frozen)"@en)
 SubClassOf(obo:FOODON_03307843 obo:FOODON_00002318)
 SubClassOf(obo:FOODON_03307843 ObjectSomeValuesFrom(obo:RO_0002350 obo:FOODON_03400152))
 
-# Class: obo:FOODON_03307844 (hamburger pattie (raw, with cheese spread on bun, frozen))
+# Class: obo:FOODON_03307844 (hamburger patty (raw, with cheese spread on bun, frozen))
 
 AnnotationAssertion(obo:IAO_0000114 obo:FOODON_03307844 obo:IAO_0000428)
 AnnotationAssertion(oboInOwl:hasDbXref obo:FOODON_03307844 siren:F7844)
-AnnotationAssertion(rdfs:label obo:FOODON_03307844 "hamburger pattie (raw, with cheese spread on bun, frozen)"@en)
+AnnotationAssertion(rdfs:label obo:FOODON_03307844 "hamburger patty (raw, with cheese spread on bun, frozen)"@en)
 SubClassOf(obo:FOODON_03307844 obo:FOODON_00001699)
 
 # Class: obo:FOODON_03307845 (spiced cheese (part-skim))
@@ -66904,11 +66897,11 @@ AnnotationAssertion(oboInOwl:hasDbXref obo:FOODON_03308304 siren:F8304)
 AnnotationAssertion(rdfs:label obo:FOODON_03308304 "white king salmon (smoked)"@en)
 SubClassOf(obo:FOODON_03308304 obo:FOODON_00001731)
 
-# Class: obo:FOODON_03308305 (salmon pattie)
+# Class: obo:FOODON_03308305 (salmon patty)
 
 AnnotationAssertion(obo:IAO_0000114 obo:FOODON_03308305 obo:IAO_0000428)
 AnnotationAssertion(oboInOwl:hasDbXref obo:FOODON_03308305 siren:F8305)
-AnnotationAssertion(rdfs:label obo:FOODON_03308305 "salmon pattie"@en)
+AnnotationAssertion(rdfs:label obo:FOODON_03308305 "salmon patty"@en)
 SubClassOf(obo:FOODON_03308305 obo:FOODON_00002075)
 
 # Class: obo:FOODON_03308306 (salmon croquette)
@@ -72243,11 +72236,11 @@ AnnotationAssertion(oboInOwl:hasDbXref obo:FOODON_03309481 siren:F9481)
 AnnotationAssertion(rdfs:label obo:FOODON_03309481 "rattlesnake meat (smoked, canned)"@en)
 SubClassOf(obo:FOODON_03309481 obo:FOODON_00002245)
 
-# Class: obo:FOODON_03309482 (water buffalo (ground, pattie))
+# Class: obo:FOODON_03309482 (water buffalo patty (ground))
 
 AnnotationAssertion(obo:IAO_0000114 obo:FOODON_03309482 obo:IAO_0000428)
 AnnotationAssertion(oboInOwl:hasDbXref obo:FOODON_03309482 siren:F9482)
-AnnotationAssertion(rdfs:label obo:FOODON_03309482 "water buffalo (ground, pattie)"@en)
+AnnotationAssertion(rdfs:label obo:FOODON_03309482 "water buffalo patty (ground)"@en)
 SubClassOf(obo:FOODON_03309482 obo:FOODON_00001619)
 
 # Class: obo:FOODON_03309483 (water buffalo jerky)
@@ -77550,10 +77543,6 @@ SubClassOf(obo:FOODON_03310589 obo:FOODON_00001040)
 SubClassOf(obo:FOODON_03310589 ObjectSomeValuesFrom(obo:FOODON_00001563 obo:FOODON_00002702))
 SubClassOf(obo:FOODON_03310589 ObjectSomeValuesFrom(obo:RO_0002350 obo:FOODON_03400131))
 
-# Class: obo:FOODON_03310590 (beef kidney (raw))
-
-SubClassOf(obo:FOODON_03310590 obo:FOODON_00001041)
-
 # Class: obo:FOODON_03310591 (beef round steak (raw))
 
 AnnotationAssertion(obo:IAO_0000114 obo:FOODON_03310591 obo:IAO_0000428)
@@ -79428,14 +79417,14 @@ SubClassOf(obo:FOODON_03310919 obo:FOODON_03309738)
 AnnotationAssertion(obo:IAO_0000114 obo:FOODON_03310920 obo:IAO_0000428)
 AnnotationAssertion(oboInOwl:hasDbXref obo:FOODON_03310920 siren:F10920)
 AnnotationAssertion(rdfs:label obo:FOODON_03310920 "beef ground round (cooked, freeze-dried)"@en)
-SubClassOf(obo:FOODON_03310920 obo:FOODON_00001041)
+SubClassOf(obo:FOODON_03310920 obo:FOODON_00002930)
 
 # Class: obo:FOODON_03310921 (beef ground round (cooked, frozen))
 
 AnnotationAssertion(obo:IAO_0000114 obo:FOODON_03310921 obo:IAO_0000428)
 AnnotationAssertion(oboInOwl:hasDbXref obo:FOODON_03310921 siren:F10921)
 AnnotationAssertion(rdfs:label obo:FOODON_03310921 "beef ground round (cooked, frozen)"@en)
-SubClassOf(obo:FOODON_03310921 obo:FOODON_00001041)
+SubClassOf(obo:FOODON_03310921 obo:FOODON_00002930)
 
 # Class: obo:FOODON_03310923 (tea (ready to drink, artificially sweetened))
 
@@ -79508,7 +79497,6 @@ SubClassOf(obo:FOODON_03310935 obo:FOODON_00002252)
 # Class: obo:FOODON_03310938 (beef tongue (raw))
 
 AnnotationAssertion(obo:IAO_0000114 obo:FOODON_03310938 obo:IAO_0000428)
-SubClassOf(obo:FOODON_03310938 obo:FOODON_00001041)
 
 # Class: obo:FOODON_03310939 (beef chuck (raw))
 
@@ -80381,7 +80369,7 @@ SubClassOf(obo:FOODON_03311086 obo:FOODON_03301483)
 AnnotationAssertion(obo:IAO_0000114 obo:FOODON_03311087 obo:IAO_0000428)
 AnnotationAssertion(oboInOwl:hasDbXref obo:FOODON_03311087 siren:F11087)
 AnnotationAssertion(rdfs:label obo:FOODON_03311087 "beef liver (frozen)"@en)
-SubClassOf(obo:FOODON_03311087 obo:FOODON_00001041)
+SubClassOf(obo:FOODON_03311087 obo:FOODON_02020913)
 
 # Class: obo:FOODON_03311088 (poultry meat (ground, raw))
 
@@ -82273,7 +82261,7 @@ SubClassOf(obo:FOODON_03311407 obo:FOODON_03303514)
 AnnotationAssertion(obo:IAO_0000114 obo:FOODON_03311408 obo:IAO_0000428)
 AnnotationAssertion(oboInOwl:hasDbXref obo:FOODON_03311408 siren:F11408)
 AnnotationAssertion(rdfs:label obo:FOODON_03311408 "chipped beef (smoked)"@en)
-SubClassOf(obo:FOODON_03311408 obo:FOODON_00001041)
+SubClassOf(obo:FOODON_03311408 obo:FOODON_03303097)
 
 # Class: obo:FOODON_03311411 (english walnut meat)
 
@@ -87704,12 +87692,6 @@ AnnotationAssertion(oboInOwl:hasDbXref obo:FOODON_03315505 siren:F15505)
 AnnotationAssertion(rdfs:label obo:FOODON_03315505 "sujiko"@en)
 SubClassOf(obo:FOODON_03315505 obo:FOODON_00002075)
 
-# Class: obo:FOODON_03315506 (obsolete: Cavendish banana flesh)
-
-AnnotationAssertion(obo:IAO_0100001 obo:FOODON_03315506 obo:FOODON_03301967)
-AnnotationAssertion(rdfs:label obo:FOODON_03315506 "obsolete: Cavendish banana flesh"@en)
-AnnotationAssertion(owl:deprecated obo:FOODON_03315506 "true"^^xsd:boolean)
-
 # Class: obo:FOODON_03315508 (gruel or porridge for infants and young children)
 
 AnnotationAssertion(obo:IAO_0000114 obo:FOODON_03315508 obo:IAO_0000428)
@@ -89189,10 +89171,6 @@ AnnotationAssertion(oboInOwl:hasDbXref obo:FOODON_03315768 siren:F15768)
 AnnotationAssertion(rdfs:label obo:FOODON_03315768 "cereal product (solid, infant)"@en)
 EquivalentClasses(obo:FOODON_03315768 ObjectIntersectionOf(obo:FOODON_03315324 ObjectSomeValuesFrom(obo:RO_0009004 obo:FOODON_03317423)))
 SubClassOf(obo:FOODON_03315768 obo:FOODON_03315324)
-
-# Class: obo:FOODON_03315769 (cow blood (raw))
-
-SubClassOf(obo:FOODON_03315769 obo:FOODON_00001041)
 
 # Class: obo:FOODON_03315770 (onion (canned))
 
@@ -97715,6 +97693,7 @@ AnnotationAssertion(dcterms:date obo:FOODON_03317337 "2019-08-26T14:16:46Z"^^xsd
 AnnotationAssertion(oboInOwl:hasDbXref obo:FOODON_03317337 siren:F10762)
 AnnotationAssertion(oboInOwl:hasDbXref obo:FOODON_03317337 siren:F17336)
 AnnotationAssertion(oboInOwl:hasDbXref obo:FOODON_03317337 siren:F17337)
+AnnotationAssertion(oboInOwl:hasExactSynonym obo:FOODON_03317337 "'ground beef pattie'"@en)
 AnnotationAssertion(oboInOwl:hasExactSynonym obo:FOODON_03317337 "beef hamburger patty"@en)
 AnnotationAssertion(oboInOwl:hasExactSynonym obo:FOODON_03317337 "beef patty"@en)
 AnnotationAssertion(oboInOwl:hasExactSynonym obo:FOODON_03317337 "beefburger"@en)
@@ -100897,7 +100876,6 @@ AnnotationAssertion(obo:IAO_0000114 obo:FOODON_03305090 obo:IAO_0000428)
 AnnotationAssertion(obo:IAO_0000114 obo:FOODON_03305168 obo:IAO_0000428)
 AnnotationAssertion(obo:IAO_0000114 obo:FOODON_03307812 obo:IAO_0000428)
 AnnotationAssertion(oboInOwl:hasDbXref obo:FOODON_03307812 siren:F7812)
-AnnotationAssertion(obo:IAO_0000114 obo:FOODON_03308932 obo:IAO_0000428)
 AnnotationAssertion(obo:IAO_0000231 obo:FOODON_03308932 "Term label indicates location of organism, not organism type."@en)
 AnnotationAssertion(obo:IAO_0100001 obo:FOODON_03308932 obo:FOODON_03301706)
 AnnotationAssertion(oboInOwl:hasDbXref obo:FOODON_03308932 siren:F8932)
@@ -100928,21 +100906,10 @@ AnnotationAssertion(obo:IAO_0000114 obo:FOODON_03311875 obo:IAO_0000428)
 AnnotationAssertion(oboInOwl:hasDbXref obo:FOODON_03311875 siren:F11875)
 AnnotationAssertion(oboInOwl:hasDbXref obo:FOODON_03311875 siren:F4550)
 AnnotationAssertion(obo:IAO_0000119 obo:FOODON_03400642 "http://www.ianunwin.demon.co.uk/eurocode/docmn/ec99/ecmgintr.htm"^^xsd:anyURI)
-AnnotationAssertion(obo:IAO_0000115 obo:FOODON_03400992 "Term not in GS1 2017: deprecated."@en)
-AnnotationAssertion(oboInOwl:hasDbXref obo:FOODON_03400992 "langual:A0992")
-AnnotationAssertion(rdfs:comment obo:FOODON_03400992 "LanguaL curation note: This term is only kept for backward compatibility. DO NOT USE for new indexing."@en)
-AnnotationAssertion(rdfs:label obo:FOODON_03400992 "obsolete: 50101600 - fruit - unprepared/unprocessed (gs1 gpc)"@en)
-AnnotationAssertion(owl:deprecated obo:FOODON_03400992 "true"^^xsd:boolean)
 AnnotationAssertion(obo:IAO_0000114 obo:FOODON_03401270 obo:IAO_0000428)
 AnnotationAssertion(obo:IAO_0000115 obo:FOODON_03401270 "Food and Drugs, title 21, Code of Federal Regulations. Original food classification in LanguaL."@en)
 AnnotationAssertion(oboInOwl:hasDbXref obo:FOODON_03401270 "langual:A1270")
 AnnotationAssertion(rdfs:comment obo:FOODON_03401270 "LanguaL curation note: This term is for CLASSIFICATION ONLY; DO NOT USE term in indexing. Use a more precise narrower term."@en)
 AnnotationAssertion(rdfs:label obo:FOODON_03401270 "U.S. code of federal regulations, title 21 food product type"@en)
 AnnotationAssertion(rdfs:seeAlso obo:FOODON_03401270 "https://www.ecfr.gov/cgi-bin/text-idx?SID=87f720ce0d0b6c4548f4bbfd1f8e4c3d&mc=true&tpl=/ecfrbrowse/Title21/21chapterI.tpl"^^xsd:anyURI)
-AnnotationAssertion(obo:IAO_0100001 obo:FOODON_03412937 obo:NCBITaxon_5341)
-AnnotationAssertion(rdfs:label obo:FOODON_03412937 "obsolete: cultivated mushroom (organism)"@en)
-AnnotationAssertion(owl:deprecated obo:FOODON_03412937 "true"^^xsd:boolean)
-AnnotationAssertion(obo:IAO_0100001 obo:FOODON_03414943 obo:NCBITaxon_56646)
-AnnotationAssertion(rdfs:label obo:FOODON_03414943 "obsolete: fusarium venenatum"@en)
-AnnotationAssertion(owl:deprecated obo:FOODON_03414943 "true"^^xsd:boolean)
 )
