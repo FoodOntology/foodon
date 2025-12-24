@@ -910,30 +910,6 @@ http://www.geneontology.org/formats/oboInOwl#oboInOwl:hasExactSynonym
 http://www.w3.org/2002/07/owl#deprecated
 http://purl.obolibrary.org/obo/IAO_0100001 # replaced by
 
-###########################################
-
-[Source ontology]
-STATO
-
-[Low level source term URIs]
-http://purl.obolibrary.org/obo/STATO_0000503 # simple random sampling
-
-[Top level source term URIs and target direct superclass URIs]
-http://purl.obolibrary.org/obo/STATO_0000502 # statistical sampling
-
-[Source term retrieval setting]
-includeAllIntermediates
-
-[Source annotation URIs]
-http://www.w3.org/2000/01/rdf-schema#label
-http://purl.obolibrary.org/obo/IAO_0000115 
-http://purl.obolibrary.org/obo/IAO_0000114
-http://purl.obolibrary.org/obo/IAO_0000118
-http://purl.obolibrary.org/obo/IAO_0000119
-http://www.geneontology.org/formats/oboInOwl#oboInOwl:hasExactSynonym
-http://www.w3.org/2002/07/owl#deprecated
-http://purl.obolibrary.org/obo/IAO_0100001 # replaced by
-
 
 ###########################################
 

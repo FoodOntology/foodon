@@ -8802,6 +8802,10 @@ AnnotationAssertion(rdfs:comment obo:FOODON_00001002 "The FoodOn \"food product\
 AnnotationAssertion(rdfs:label obo:FOODON_00001002 "food product"@en)
 SubClassOf(obo:FOODON_00001002 obo:FOODON_00002403)
 
+# Class: obo:FOODON_00001041 (cow food product)
+
+SubClassOf(obo:FOODON_00001041 obo:FOODON_02020889)
+
 # Class: obo:FOODON_00001051 (fermented rice beverage)
 
 SubClassOf(obo:FOODON_00001051 ObjectSomeValuesFrom(obo:RO_0001000 obo:FOODON_03411322))
@@ -8823,6 +8827,10 @@ SubClassOf(obo:FOODON_00001079 obo:FOODON_00002158)
 AnnotationAssertion(obo:IAO_0000114 obo:FOODON_00001087 obo:IAO_0000122)
 AnnotationAssertion(obo:IAO_0000117 obo:FOODON_00001087 "Damion Dooley"@en)
 SubClassOf(obo:FOODON_00001087 obo:FOODON_03310387)
+
+# Class: obo:FOODON_00001132 (swine food product)
+
+SubClassOf(obo:FOODON_00001132 obo:FOODON_00005689)
 
 # Class: obo:FOODON_00001144 (yeast material)
 
@@ -8892,6 +8900,14 @@ AnnotationAssertion(rdfs:label obo:FOODON_00001273 "spinach plant"@en)
 SubClassOf(obo:FOODON_00001273 obo:FOODON_03411566)
 SubClassOf(obo:FOODON_00001273 ObjectSomeValuesFrom(obo:RO_0002162 obo:NCBITaxon_3562))
 
+# Class: obo:FOODON_00001283 (poultry food product)
+
+SubClassOf(obo:FOODON_00001283 obo:FOODON_02020686)
+
+# Class: obo:FOODON_00001292 (oyster food product)
+
+SubClassOf(obo:FOODON_00001292 obo:FOODON_00005711)
+
 # Class: obo:FOODON_00001309 (Miang)
 
 AnnotationAssertion(rdfs:label obo:FOODON_00001309 "Miang"@en)
@@ -8900,6 +8916,10 @@ SubClassOf(obo:FOODON_00001309 ObjectSomeValuesFrom(obo:RO_0002353 obo:FOODON_03
 # Class: obo:FOODON_00001568 (food trimming)
 
 EquivalentClasses(obo:FOODON_00001568 ObjectIntersectionOf(obo:FOODON_00001714 ObjectSomeValuesFrom(obo:BFO_0000051 obo:FOODON_03420116) ObjectSomeValuesFrom(obo:RO_0002353 obo:FOODON_00000071)))
+
+# Class: obo:FOODON_00001578 (albacore food product)
+
+SubClassOf(obo:FOODON_00001578 obo:FOODON_02022610)
 
 # Class: obo:FOODON_00001626 (bakery food product)
 
@@ -8911,11 +8931,31 @@ SubClassOf(obo:FOODON_00001626 obo:FOODON_00002645)
 
 EquivalentClasses(obo:FOODON_00001702 ObjectIntersectionOf(obo:FOODON_00001182 ObjectSomeValuesFrom(obo:RO_0001000 obo:FOODON_03411094)))
 
+# Class: obo:FOODON_00001707 (cephalopod food product)
+
+SubClassOf(obo:FOODON_00001707 obo:FOODON_00005707)
+
 # Class: obo:FOODON_00001714 (food material component)
 
 AnnotationAssertion(obo:IAO_0000115 obo:FOODON_00001714 "Food material which normally exists as an ingredient to another food material, rather than eaten on its own.  This includes chemical food components."@en)
 AnnotationAssertion(rdfs:comment obo:FOODON_00001714 "On Feb 25th 2025 the definition was loosened to include the subclass \"chemical food component\"."@en)
 AnnotationAssertion(rdfs:label obo:FOODON_00001714 "food material component"@en)
+
+# Class: obo:FOODON_00001746 (cockle food product)
+
+SubClassOf(obo:FOODON_00001746 obo:FOODON_02022659)
+
+# Class: obo:FOODON_00001792 (crustacean food product)
+
+SubClassOf(obo:FOODON_00001792 obo:FOODON_00005704)
+
+# Class: obo:FOODON_00001799 (cuttlefish food product)
+
+SubClassOf(obo:FOODON_00001799 obo:FOODON_02022023)
+
+# Class: obo:FOODON_00001807 (devilfish food product)
+
+SubClassOf(obo:FOODON_00001807 obo:FOODON_02021906)
 
 # Class: obo:FOODON_00001817 (alcoholic beverage (distilled))
 
@@ -8993,6 +9033,10 @@ SubClassOf(obo:FOODON_00001988 ObjectSomeValuesFrom(obo:RO_0001000 obo:FOODON_03
 
 SubClassOf(obo:FOODON_00002005 obo:FOODON_00001817)
 
+# Class: obo:FOODON_00002051 (mussel food product)
+
+SubClassOf(obo:FOODON_00002051 obo:FOODON_02020797)
+
 # Class: obo:FOODON_00002074 (oriental blue crab food product)
 
 EquivalentClasses(obo:FOODON_00002074 ObjectIntersectionOf(obo:FOODON_02021444 ObjectSomeValuesFrom(obo:RO_0001000 obo:FOODON_03412214)))
@@ -9010,6 +9054,14 @@ SubClassOf(obo:FOODON_00002158 obo:FOODON_00002645)
 
 EquivalentClasses(obo:FOODON_00002203 ObjectIntersectionOf(obo:FOODON_00001916 ObjectSomeValuesFrom(obo:RO_0001000 obo:FOODON_03411322)))
 
+# Class: obo:FOODON_00002227 (scallop food product)
+
+SubClassOf(obo:FOODON_00002227 obo:FOODON_02020804)
+
+# Class: obo:FOODON_00002239 (shrimp food product)
+
+SubClassOf(obo:FOODON_00002239 obo:FOODON_02021462)
+
 # Class: obo:FOODON_00002245 (snake meat food product)
 
 SubClassOf(obo:FOODON_00002245 ObjectSomeValuesFrom(obo:RO_0001000 obo:FOODON_03411295))
@@ -9018,9 +9070,17 @@ SubClassOf(obo:FOODON_00002245 ObjectSomeValuesFrom(obo:RO_0001000 obo:FOODON_03
 
 SubClassOf(obo:FOODON_00002246 ObjectSomeValuesFrom(obo:RO_0001000 obo:FOODON_03411510))
 
+# Class: obo:FOODON_00002248 (sockeye salmon food product)
+
+SubClassOf(obo:FOODON_00002248 obo:FOODON_02021847)
+
 # Class: obo:FOODON_00002287 (sugar based vinegar food product)
 
 EquivalentClasses(obo:FOODON_00002287 ObjectIntersectionOf(obo:FOODON_00001073 ObjectSomeValuesFrom(obo:RO_0001000 obo:FOODON_03411012)))
+
+# Class: obo:FOODON_00002307 (swordfish food product)
+
+SubClassOf(obo:FOODON_00002307 obo:FOODON_02021997)
 
 # Class: obo:FOODON_00002322 (turkey pie food product)
 
@@ -9123,9 +9183,25 @@ AnnotationAssertion(rdfs:label obo:FOODON_00002418 "food (canned)"@en)
 SubClassOf(obo:FOODON_00002418 obo:FOODON_00002158)
 SubClassOf(obo:FOODON_00002418 ObjectSomeValuesFrom(obo:RO_0002353 obo:FOODON_00002416))
 
+# Class: obo:FOODON_00002438 (elk food product)
+
+SubClassOf(obo:FOODON_00002438 obo:FOODON_02021418)
+
+# Class: obo:FOODON_00002443 (frog food product)
+
+SubClassOf(obo:FOODON_00002443 obo:FOODON_02020037)
+
 # Class: obo:FOODON_00002445 (needlefish food product)
 
 SubClassOf(obo:FOODON_00002445 ObjectSomeValuesFrom(obo:RO_0001000 obo:FOODON_03411887))
+
+# Class: obo:FOODON_00002446 (donkey food product)
+
+SubClassOf(obo:FOODON_00002446 obo:FOODON_02021531)
+
+# Class: obo:FOODON_00002449 (zebra food product)
+
+SubClassOf(obo:FOODON_00002449 obo:FOODON_02021555)
 
 # Class: obo:FOODON_00002451 (food transformation process)
 
@@ -10658,6 +10734,10 @@ AnnotationAssertion(oboInOwl:hasExactSynonym obo:FOODON_00003080 "yamaimo"@en)
 AnnotationAssertion(rdfs:label obo:FOODON_00003080 "Dioscorea japonica"@en)
 SubClassOf(obo:FOODON_00003080 obo:FOODON_03413396)
 
+# Class: obo:FOODON_00003083 (veal)
+
+SubClassOf(obo:FOODON_00003083 obo:FOODON_02021289)
+
 # Class: obo:FOODON_00003084 (Chenopodium berlandieri)
 
 AnnotationAssertion(obo:IAO_0000114 obo:FOODON_00003084 obo:IAO_0000122)
@@ -11129,6 +11209,10 @@ AnnotationAssertion(obo:IAO_0000117 obo:FOODON_00003315 <http://orcid.org/0000-0
 AnnotationAssertion(dcterms:date obo:FOODON_00003315 "2019-11-22T07:22:30Z"^^xsd:dateTime)
 AnnotationAssertion(rdfs:label obo:FOODON_00003315 "green field pea plant"@en)
 SubClassOf(obo:FOODON_00003315 obo:FOODON_03411486)
+
+# Class: obo:FOODON_00003318 (echinoderm food product)
+
+SubClassOf(obo:FOODON_00003318 obo:FOODON_00005703)
 
 # Class: obo:FOODON_00003321 (yuzu tree)
 
@@ -13921,6 +14005,7 @@ SubClassOf(obo:FOODON_00004285 obo:FOODON_03530146)
 
 # Class: obo:FOODON_00004286 (wild boar)
 
+SubClassOf(obo:FOODON_00004286 obo:FOODON_02021636)
 SubClassOf(obo:FOODON_00004286 obo:NCBITaxon_9823)
 
 # Class: obo:FOODON_00004287 (food (unseasoned))
@@ -14021,6 +14106,7 @@ SubClassOf(obo:FOODON_00004297 obo:FOODON_02021651)
 # Class: obo:FOODON_00004298 (poultry)
 
 AnnotationAssertion(obo:IAO_0000600 obo:FOODON_00004298 "A domesticated bird that is kept by humans for its eggs, meat or feathers. Chickens, turkeys, quail, ducks, and geese are only called poultry if they aren't reared in the wild."@en)
+SubClassOf(obo:FOODON_00004298 obo:FOODON_02020686)
 
 # Class: obo:FOODON_00004299 (chick)
 
@@ -14261,6 +14347,7 @@ SubClassOf(obo:FOODON_00004336 obo:FOODON_03420116)
 # Class: obo:FOODON_00004339 (ostrich food product)
 
 SubClassOf(obo:FOODON_00004339 obo:FOODON_00001251)
+SubClassOf(obo:FOODON_00004339 obo:FOODON_02020774)
 
 # Class: obo:FOODON_00004340 (guar plant food product)
 
@@ -14395,6 +14482,14 @@ AnnotationAssertion(obo:IAO_0000117 obo:FOODON_00004419 <https://orcid.org/0000-
 AnnotationAssertion(dcterms:date obo:FOODON_00004419 "2023-06-20T06:37:10Z"^^xsd:dateTime)
 AnnotationAssertion(rdfs:label obo:FOODON_00004419 "pink shrimp (raw)"@en)
 SubClassOf(obo:FOODON_00004419 obo:FOODON_03301837)
+
+# Class: obo:FOODON_00004420 (goat food product)
+
+SubClassOf(obo:FOODON_00004420 obo:FOODON_02021055)
+
+# Class: obo:FOODON_00004423 (wild boar food product)
+
+SubClassOf(obo:FOODON_00004423 obo:FOODON_02021636)
 
 # Class: obo:FOODON_00004428 (duck egg)
 
@@ -14813,6 +14908,10 @@ AnnotationAssertion(dcterms:date obo:FOODON_00004710 "2024-03-28T23:11:45Z"^^xsd
 AnnotationAssertion(rdfs:label obo:FOODON_00004710 "biofortified food"@en)
 AnnotationAssertion(rdfs:seeAlso obo:FOODON_00004710 <https://www.ncbi.nlm.nih.gov/pmc/articles/PMC5817065/>)
 SubClassOf(obo:FOODON_00004710 obo:FOODON_00004331)
+
+# Class: obo:FOODON_00004713 (cricket food product)
+
+SubClassOf(obo:FOODON_00004713 obo:FOODON_02022049)
 
 # Class: obo:FOODON_00004716 (golden rice kernel)
 
@@ -15780,9 +15879,29 @@ AnnotationAssertion(oboInOwl:hasNarrowSynonym obo:FOODON_02020038 "ranidae"@en)
 AnnotationAssertion(oboInOwl:hasNarrowSynonym obo:FOODON_02020038 "salientia"@en)
 AnnotationAssertion(oboInOwl:hasNarrowSynonym obo:FOODON_02020038 "toad"@en)
 
+# Class: obo:FOODON_02020065 (capon food product)
+
+SubClassOf(obo:FOODON_02020065 obo:FOODON_02020066)
+
+# Class: obo:FOODON_02020079 (pigeon food product)
+
+SubClassOf(obo:FOODON_02020079 obo:FOODON_02020080)
+
+# Class: obo:FOODON_02020081 (pigeon)
+
+SubClassOf(obo:FOODON_02020081 obo:FOODON_02020080)
+
 # Class: obo:FOODON_02020094 (emu food product)
 
 SubClassOf(obo:FOODON_02020094 obo:FOODON_02020095)
+
+# Class: obo:FOODON_02020096 (emu)
+
+SubClassOf(obo:FOODON_02020096 obo:FOODON_02020095)
+
+# Class: obo:FOODON_02020114 (duck food product)
+
+SubClassOf(obo:FOODON_02020114 obo:FOODON_02020115)
 
 # Class: obo:FOODON_02020149 (chicken food product)
 
@@ -15792,13 +15911,157 @@ SubClassOf(obo:FOODON_02020149 obo:FOODON_02020150)
 
 SubClassOf(obo:FOODON_02020315 obo:FOODON_02020314)
 
+# Class: obo:FOODON_02020373 (goose food product)
+
+SubClassOf(obo:FOODON_02020373 obo:FOODON_02020374)
+
+# Class: obo:FOODON_02020403 (turkey food product)
+
+SubClassOf(obo:FOODON_02020403 obo:FOODON_02020404)
+
+# Class: obo:FOODON_02020637 (guinea fowl food product)
+
+SubClassOf(obo:FOODON_02020637 obo:FOODON_02020638)
+
+# Class: obo:FOODON_02020656 (pheasant food product)
+
+SubClassOf(obo:FOODON_02020656 obo:FOODON_02020657)
+
+# Class: obo:FOODON_02020719 (quail food product)
+
+SubClassOf(obo:FOODON_02020719 obo:FOODON_02020720)
+
+# Class: obo:FOODON_02020751 (squab food product)
+
+SubClassOf(obo:FOODON_02020751 obo:FOODON_02020752)
+
+# Class: obo:FOODON_02020785 (ostrich)
+
+SubClassOf(obo:FOODON_02020785 obo:FOODON_02020774)
+
 # Class: obo:FOODON_02020814 (antelope food product)
 
 SubClassOf(obo:FOODON_02020814 obo:FOODON_02020815)
 
+# Class: obo:FOODON_02020838 (bison food product)
+
+SubClassOf(obo:FOODON_02020838 obo:FOODON_02020839)
+
+# Class: obo:FOODON_02020840 (bison)
+
+SubClassOf(obo:FOODON_02020840 obo:FOODON_02020839)
+
+# Class: obo:FOODON_02020872 (domestic yak food product)
+
+SubClassOf(obo:FOODON_02020872 obo:FOODON_02020873)
+
+# Class: obo:FOODON_02020875 (domestic yak)
+
+SubClassOf(obo:FOODON_02020875 obo:FOODON_02020873)
+
+# Class: obo:FOODON_02020892 (cow)
+
+SubClassOf(obo:FOODON_02020892 obo:FOODON_02020889)
+
+# Class: obo:FOODON_02020983 (beefalo food product)
+
+SubClassOf(obo:FOODON_02020983 obo:FOODON_02020984)
+
+# Class: obo:FOODON_02021000 (buffalo food product)
+
+SubClassOf(obo:FOODON_02021000 obo:FOODON_02021001)
+
+# Class: obo:FOODON_02021040 (water buffalo food product)
+
+SubClassOf(obo:FOODON_02021040 obo:FOODON_02021041)
+
+# Class: obo:FOODON_02021042 (water buffalo)
+
+SubClassOf(obo:FOODON_02021042 obo:FOODON_02021041)
+
+# Class: obo:FOODON_02021109 (gazelle food product)
+
+SubClassOf(obo:FOODON_02021109 obo:FOODON_02021110)
+
+# Class: obo:FOODON_02021111 (gazelle)
+
+SubClassOf(obo:FOODON_02021111 obo:FOODON_02021110)
+
+# Class: obo:FOODON_02021251 (sheep food product)
+
+SubClassOf(obo:FOODON_02021251 obo:FOODON_02021252)
+
+# Class: obo:FOODON_02021288 (veal food product)
+
+SubClassOf(obo:FOODON_02021288 obo:FOODON_02021289)
+
+# Class: obo:FOODON_02021397 (moose food product)
+
+SubClassOf(obo:FOODON_02021397 obo:FOODON_02021398)
+
 # Class: obo:FOODON_02021409 (deer food product)
 
 SubClassOf(obo:FOODON_02021409 obo:FOODON_02021410)
+
+# Class: obo:FOODON_02021419 (elk)
+
+SubClassOf(obo:FOODON_02021419 obo:FOODON_02021418)
+
+# Class: obo:FOODON_02021433 (reindeer food product)
+
+SubClassOf(obo:FOODON_02021433 obo:FOODON_02021434)
+
+# Class: obo:FOODON_02021436 (reindeer)
+
+SubClassOf(obo:FOODON_02021436 obo:FOODON_02021434)
+
+# Class: obo:FOODON_02021444 (crab food product)
+
+SubClassOf(obo:FOODON_02021444 obo:FOODON_02021445)
+
+# Class: obo:FOODON_02021446 (crab)
+
+SubClassOf(obo:FOODON_02021446 obo:FOODON_02021445)
+
+# Class: obo:FOODON_02021468 (kangaroo food product)
+
+SubClassOf(obo:FOODON_02021468 obo:FOODON_02021469)
+
+# Class: obo:FOODON_02021476 (whelk food product)
+
+SubClassOf(obo:FOODON_02021476 obo:FOODON_02021477)
+
+# Class: obo:FOODON_02021484 (giraffe food product)
+
+SubClassOf(obo:FOODON_02021484 obo:FOODON_02021485)
+
+# Class: obo:FOODON_02021502 (hippopotamus food product)
+
+SubClassOf(obo:FOODON_02021502 obo:FOODON_02021503)
+
+# Class: obo:FOODON_02021510 (rabbit food product)
+
+SubClassOf(obo:FOODON_02021510 obo:FOODON_02021511)
+
+# Class: obo:FOODON_02021523 (elephant food product)
+
+SubClassOf(obo:FOODON_02021523 obo:FOODON_02021524)
+
+# Class: obo:FOODON_02021535 (donkey)
+
+AnnotationAssertion(oboInOwl:hasDbXref obo:FOODON_02021535 <http://eol.org/pages/328647>)
+AnnotationAssertion(oboInOwl:hasDbXref obo:FOODON_02021535 <http://www.itis.gov/servlet/SingleRpt/SingleRpt?search_topic=TSN&search_value=180690>)
+AnnotationAssertion(oboInOwl:hasDbXref obo:FOODON_02021535 langual:B2096)
+AnnotationAssertion(oboInOwl:hasDbXref obo:FOODON_02021535 "MSW3:14100004")
+AnnotationAssertion(oboInOwl:hasNarrowSynonym obo:FOODON_02021535 "Equus asinus Linnaeus, 1758")
+AnnotationAssertion(oboInOwl:hasSynonym obo:FOODON_02021535 "ass"@en)
+AnnotationAssertion(oboInOwl:hasSynonym obo:FOODON_02021535 "burro"@en)
+AnnotationAssertion(oboInOwl:hasSynonym obo:FOODON_02021535 "equus asinus"@en)
+SubClassOf(obo:FOODON_02021535 obo:FOODON_02021531)
+
+# Class: obo:FOODON_02021543 (horse food product)
+
+SubClassOf(obo:FOODON_02021543 obo:FOODON_02021544)
 
 # Class: obo:FOODON_02021548 (horse)
 
@@ -15806,7 +16069,44 @@ AnnotationAssertion(oboInOwl:hasDbXref obo:FOODON_02021548 <http://eol.org/pages
 AnnotationAssertion(oboInOwl:hasDbXref obo:FOODON_02021548 <http://www.itis.gov/servlet/SingleRpt/SingleRpt?search_topic=TSN&search_value=180691>)
 AnnotationAssertion(oboInOwl:hasDbXref obo:FOODON_02021548 langual:B1229)
 AnnotationAssertion(oboInOwl:hasDbXref obo:FOODON_02021548 "MSW3:14100015")
+SubClassOf(obo:FOODON_02021548 obo:FOODON_02021544)
 SubClassOf(obo:FOODON_02021548 obo:FOODON_03414849)
+
+# Class: obo:FOODON_02021556 (zebra)
+
+SubClassOf(obo:FOODON_02021556 obo:FOODON_02021555)
+
+# Class: obo:FOODON_02021563 (seal food product)
+
+SubClassOf(obo:FOODON_02021563 obo:FOODON_02021564)
+
+# Class: obo:FOODON_02021565 (seal)
+
+SubClassOf(obo:FOODON_02021565 obo:FOODON_02021564)
+
+# Class: obo:FOODON_02021570 (green sea turtle food product)
+
+SubClassOf(obo:FOODON_02021570 obo:FOODON_02021571)
+
+# Class: obo:FOODON_02021581 (sea turtle food product)
+
+SubClassOf(obo:FOODON_02021581 obo:FOODON_02021582)
+
+# Class: obo:FOODON_02021599 (beaver food product)
+
+SubClassOf(obo:FOODON_02021599 obo:FOODON_02021600)
+
+# Class: obo:FOODON_02021608 (muskrat food product)
+
+SubClassOf(obo:FOODON_02021608 obo:FOODON_02021609)
+
+# Class: obo:FOODON_02021618 (squirrel food product)
+
+SubClassOf(obo:FOODON_02021618 obo:FOODON_02021619)
+
+# Class: obo:FOODON_02021627 (nutria food product)
+
+SubClassOf(obo:FOODON_02021627 obo:FOODON_02021628)
 
 # Class: obo:FOODON_02021629 (nutria)
 
@@ -15815,6 +16115,10 @@ AnnotationAssertion(oboInOwl:hasNarrowSynonym obo:FOODON_02021629 "Myocastor coy
 AnnotationAssertion(oboInOwl:hasSynonym obo:FOODON_02021629 "coypu"@en)
 AnnotationAssertion(oboInOwl:hasSynonym obo:FOODON_02021629 "myocastor coypus"@en)
 AnnotationAssertion(oboInOwl:hasSynonym obo:FOODON_02021629 "river rat"@en)
+
+# Class: obo:FOODON_02021651 (pig)
+
+SubClassOf(obo:FOODON_02021651 obo:FOODON_02021649)
 
 # Class: obo:FOODON_02021757 (pork steak)
 
@@ -15826,16 +16130,129 @@ SubClassOf(obo:FOODON_02021757 obo:FOODON_00001038)
 
 SubClassOf(obo:FOODON_02021765 obo:FOODON_02021766)
 
+# Class: obo:FOODON_02021809 (atlantic cod)
+
+SubClassOf(obo:FOODON_02021809 obo:FOODON_02021808)
+
 # Class: obo:FOODON_02021834 (nile tilapia material)
 
 SubClassOf(obo:FOODON_02021834 obo:FOODON_00001737)
+
+# Class: obo:FOODON_02021835 (nile tilapia)
+
+SubClassOf(obo:FOODON_02021835 obo:FOODON_02021834)
+
+# Class: obo:FOODON_02021861 (blue swimmer crab)
+
+SubClassOf(obo:FOODON_02021861 obo:FOODON_02021860)
+
+# Class: obo:FOODON_02021907 (devilfish)
+
+SubClassOf(obo:FOODON_02021907 obo:FOODON_02021906)
+
+# Class: obo:FOODON_02021933 (florida pompano)
+
+SubClassOf(obo:FOODON_02021933 obo:FOODON_02021932)
+
+# Class: obo:FOODON_02021946 (american shad)
+
+SubClassOf(obo:FOODON_02021946 obo:FOODON_02021945)
+
+# Class: obo:FOODON_02021985 (pumpkinseed sunfish)
+
+SubClassOf(obo:FOODON_02021985 obo:FOODON_02021984)
+
+# Class: obo:FOODON_02021998 (swordfish)
+
+SubClassOf(obo:FOODON_02021998 obo:FOODON_02021997)
 
 # Class: obo:FOODON_02022011 (tilefish)
 
 AnnotationAssertion(oboInOwl:hasDbXref obo:FOODON_02022011 <http://eol.org/pages/25099>)
 AnnotationAssertion(oboInOwl:hasDbXref obo:FOODON_02022011 langual:B1520)
 AnnotationAssertion(oboInOwl:hasExactSynonym obo:FOODON_02022011 "caulolatilus spp.")
+SubClassOf(obo:FOODON_02022011 obo:FOODON_02022010)
 SubClassOf(obo:FOODON_02022011 obo:FOODON_03411923)
+
+# Class: obo:FOODON_02022054 (common octopus)
+
+SubClassOf(obo:FOODON_02022054 obo:FOODON_02022053)
+
+# Class: obo:FOODON_02022069 (atlantic salmon)
+
+SubClassOf(obo:FOODON_02022069 obo:FOODON_02022068)
+
+# Class: obo:FOODON_02022108 (steller sea lion food product)
+
+SubClassOf(obo:FOODON_02022108 obo:FOODON_02022109)
+
+# Class: obo:FOODON_02022110 (steller sea lion)
+
+SubClassOf(obo:FOODON_02022110 obo:FOODON_02022109)
+
+# Class: obo:FOODON_02022128 (bearded seal food product)
+
+SubClassOf(obo:FOODON_02022128 obo:FOODON_02022129)
+
+# Class: obo:FOODON_02022130 (bearded seal)
+
+SubClassOf(obo:FOODON_02022130 obo:FOODON_02022129)
+
+# Class: obo:FOODON_02022137 (walrus food product)
+
+SubClassOf(obo:FOODON_02022137 obo:FOODON_02022138)
+
+# Class: obo:FOODON_02022139 (walrus)
+
+SubClassOf(obo:FOODON_02022139 obo:FOODON_02022138)
+
+# Class: obo:FOODON_02022155 (sitka deer food product)
+
+SubClassOf(obo:FOODON_02022155 obo:FOODON_02022156)
+
+# Class: obo:FOODON_02022157 (sitka deer)
+
+SubClassOf(obo:FOODON_02022157 obo:FOODON_02022156)
+
+# Class: obo:FOODON_02022168 (ruffed grouse)
+
+SubClassOf(obo:FOODON_02022168 obo:FOODON_02022167)
+
+# Class: obo:FOODON_02022494 (owl food product)
+
+SubClassOf(obo:FOODON_02022494 obo:FOODON_02022495)
+
+# Class: obo:FOODON_02022515 (white-winged scoter duck food product)
+
+SubClassOf(obo:FOODON_02022515 obo:FOODON_02022516)
+
+# Class: obo:FOODON_02022531 (black bear food product)
+
+SubClassOf(obo:FOODON_02022531 obo:FOODON_02022532)
+
+# Class: obo:FOODON_02022541 (polar bear food product)
+
+SubClassOf(obo:FOODON_02022541 obo:FOODON_02022542)
+
+# Class: obo:FOODON_02022551 (ringed seal food product)
+
+SubClassOf(obo:FOODON_02022551 obo:FOODON_02022552)
+
+# Class: obo:FOODON_02022553 (ringed seal)
+
+SubClassOf(obo:FOODON_02022553 obo:FOODON_02022552)
+
+# Class: obo:FOODON_02022562 (opossum food product)
+
+SubClassOf(obo:FOODON_02022562 obo:FOODON_02022563)
+
+# Class: obo:FOODON_02022572 (Canada goose food product)
+
+SubClassOf(obo:FOODON_02022572 obo:FOODON_02022573)
+
+# Class: obo:FOODON_02022574 (Canada goose)
+
+SubClassOf(obo:FOODON_02022574 obo:FOODON_02022573)
 
 # Class: obo:FOODON_03000002 (zebrafish)
 
@@ -15890,6 +16307,10 @@ SubClassOf(obo:FOODON_03000165 obo:FOODON_00005502)
 # Class: obo:FOODON_03000268 (long grain brown rice kernel (uncooked))
 
 SubClassOf(obo:FOODON_03000268 obo:FOODON_03301136)
+
+# Class: obo:FOODON_03000301 (squab)
+
+SubClassOf(obo:FOODON_03000301 obo:FOODON_02020752)
 
 # Class: obo:FOODON_03000385 (chicken breast (bone-in))
 
@@ -16043,6 +16464,11 @@ SubClassOf(obo:FOODON_03301343 obo:FOODON_03412972)
 # Class: obo:FOODON_03301345 (gefilte fish)
 
 SubClassOf(obo:FOODON_03301345 ObjectSomeValuesFrom(obo:RO_0001000 obo:NCBITaxon_59291))
+
+# Class: obo:FOODON_03301393 (mycelium food material)
+
+SubClassOf(obo:FOODON_03301393 obo:FOODON_00004336)
+SubClassOf(obo:FOODON_03301393 ObjectSomeValuesFrom(obo:RO_0001000 obo:FAO_0000011))
 
 # Class: obo:FOODON_03301405 (herring (pickled))
 
@@ -20391,7 +20817,8 @@ SubClassOf(obo:FOODON_03308413 ObjectSomeValuesFrom(obo:RO_0001000 obo:FOODON_03
 
 # Class: obo:FOODON_03308428 (atlantic menhaden (raw))
 
-SubClassOf(obo:FOODON_03308428 ObjectSomeValuesFrom(obo:RO_0001000 obo:NCBITaxon_224708))
+SubClassOf(obo:FOODON_03308428 obo:FOODON_03411396)
+SubClassOf(obo:FOODON_03308428 ObjectSomeValuesFrom(obo:RO_0002162 obo:NCBITaxon_224708))
 
 # Class: obo:FOODON_03308429 (gulf menhaden (raw))
 
@@ -20403,7 +20830,8 @@ SubClassOf(obo:FOODON_03308430 ObjectSomeValuesFrom(obo:RO_0001000 obo:FOODON_03
 
 # Class: obo:FOODON_03308431 (atlantic thread herring (raw))
 
-SubClassOf(obo:FOODON_03308431 ObjectSomeValuesFrom(obo:RO_0001000 obo:NCBITaxon_224711))
+SubClassOf(obo:FOODON_03308431 obo:FOODON_03411239)
+SubClassOf(obo:FOODON_03308431 ObjectSomeValuesFrom(obo:RO_0002162 obo:NCBITaxon_224711))
 
 # Class: obo:FOODON_03308432 (sardine (scaled))
 
@@ -20411,7 +20839,9 @@ SubClassOf(obo:FOODON_03308432 ObjectSomeValuesFrom(obo:RO_0001000 obo:FOODON_03
 
 # Class: obo:FOODON_03308433 (flatiron herring (raw))
 
-EquivalentClasses(obo:FOODON_03308433 ObjectIntersectionOf(obo:FOODON_03301193 ObjectSomeValuesFrom(obo:RO_0001000 obo:NCBITaxon_875777)))
+EquivalentClasses(obo:FOODON_03308433 ObjectIntersectionOf(obo:FOODON_03301193 ObjectSomeValuesFrom(obo:RO_0002162 obo:NCBITaxon_875777)))
+SubClassOf(obo:FOODON_03308433 obo:FOODON_03413856)
+SubClassOf(obo:FOODON_03308433 ObjectSomeValuesFrom(obo:RO_0002162 obo:NCBITaxon_875777))
 
 # Class: obo:FOODON_03308434 (european pilchard (raw))
 
@@ -20431,7 +20861,8 @@ SubClassOf(obo:FOODON_03308441 ObjectSomeValuesFrom(obo:RO_0001000 obo:FOODON_03
 
 # Class: obo:FOODON_03308442 (african pompano (raw))
 
-SubClassOf(obo:FOODON_03308442 ObjectSomeValuesFrom(obo:RO_0001000 obo:NCBITaxon_179359))
+SubClassOf(obo:FOODON_03308442 obo:FOODON_03413967)
+SubClassOf(obo:FOODON_03308442 ObjectSomeValuesFrom(obo:RO_0002162 obo:NCBITaxon_179359))
 
 # Class: obo:FOODON_03308451 (little tunny tuna (raw))
 
@@ -23663,6 +24094,10 @@ SubClassOf(obo:FOODON_03316982 obo:FOODON_00001260)
 
 SubClassOf(obo:FOODON_03316983 ObjectSomeValuesFrom(obo:RO_0001000 obo:FOODON_03411235))
 
+# Class: obo:FOODON_03316989 (octopus food product)
+
+SubClassOf(obo:FOODON_03316989 obo:FOODON_02021390)
+
 # Class: obo:FOODON_03316998 (mitsumame (packed in can))
 
 SubClassOf(obo:FOODON_03316998 ObjectSomeValuesFrom(obo:RO_0001000 obo:FOODON_03411012))
@@ -23912,6 +24347,7 @@ AnnotationAssertion(obo:IAO_0000115 obo:FOODON_03411002 "Archaeogastropoda (also
 AnnotationAssertion(oboInOwl:hasDbXref obo:FOODON_03411002 langual:B1002)
 AnnotationAssertion(oboInOwl:hasSynonym obo:FOODON_03411002 "aspidobranchia"@en)
 AnnotationAssertion(rdfs:label obo:FOODON_03411002 "archaeogastropod"@en)
+SubClassOf(obo:FOODON_03411002 obo:FOODON_00005713)
 SubClassOf(obo:FOODON_03411002 obo:FOODON_03412111)
 
 # Class: obo:FOODON_03411003 (southern bluefin tuna)
@@ -23976,6 +24412,7 @@ AnnotationAssertion(oboInOwl:hasDbXref obo:FOODON_03411007 langual:B1007)
 AnnotationAssertion(oboInOwl:hasExactSynonym obo:FOODON_03411007 "fish, cartilaginous"@en)
 AnnotationAssertion(oboInOwl:hasSynonym obo:FOODON_03411007 "chondrichthyes"@en)
 AnnotationAssertion(rdfs:label obo:FOODON_03411007 "cartilaginous fish"@en)
+SubClassOf(obo:FOODON_03411007 obo:FOODON_00005675)
 SubClassOf(obo:FOODON_03411007 obo:FOODON_03411222)
 
 # Class: obo:FOODON_03411008 (mesogastropod)
@@ -23985,6 +24422,7 @@ AnnotationAssertion(obo:IAO_0000115 obo:FOODON_03411008 "Mesogastropoda was for 
 AnnotationAssertion(oboInOwl:hasDbXref obo:FOODON_03411008 <http://eol.org/pages/2441>)
 AnnotationAssertion(oboInOwl:hasDbXref obo:FOODON_03411008 langual:B1008)
 AnnotationAssertion(rdfs:label obo:FOODON_03411008 "mesogastropod"@en)
+SubClassOf(obo:FOODON_03411008 obo:FOODON_00005714)
 SubClassOf(obo:FOODON_03411008 obo:FOODON_03412111)
 
 # Class: obo:FOODON_03411009 (polysaccharide-producing plant)
@@ -24001,6 +24439,7 @@ AnnotationAssertion(obo:IAO_0000115 obo:FOODON_03411010 "Neogastropoda is a taxo
 AnnotationAssertion(oboInOwl:hasDbXref obo:FOODON_03411010 langual:B1010)
 AnnotationAssertion(oboInOwl:hasSynonym obo:FOODON_03411010 "neogastropoda"@en)
 AnnotationAssertion(rdfs:label obo:FOODON_03411010 "neogastropod"@en)
+SubClassOf(obo:FOODON_03411010 obo:FOODON_00005715)
 SubClassOf(obo:FOODON_03411010 obo:FOODON_03412111)
 
 # Class: obo:FOODON_03411011 (pectin-producing plant)
@@ -25397,6 +25836,7 @@ AnnotationAssertion(obo:IAO_0000600 obo:FOODON_03411122 "Mammals originally evol
 AnnotationAssertion(oboInOwl:hasDbXref obo:FOODON_03411122 langual:B1122)
 AnnotationAssertion(oboInOwl:hasSynonym obo:FOODON_03411122 "cetacea"@en)
 AnnotationAssertion(rdfs:label obo:FOODON_03411122 "marine mammal"@en)
+SubClassOf(obo:FOODON_03411122 obo:FOODON_00005681)
 SubClassOf(obo:FOODON_03411122 obo:FOODON_03411134)
 
 # Class: obo:FOODON_03411123 (summer savory plant)
@@ -25426,6 +25866,7 @@ SubClassOf(obo:FOODON_03411124 obo:FOODON_03411601)
 AnnotationAssertion(obo:IAO_0000600 obo:FOODON_03411125 "Guineafowl are birds of the family Numididae in the order Galliformes. They are endemic to Africa and rank among the oldest of the gallinaceous birds."@en)
 AnnotationAssertion(oboInOwl:hasSynonym obo:FOODON_03411125 "numididae"@en)
 SubClassOf(obo:FOODON_03411125 obo:FOODON_00002616)
+SubClassOf(obo:FOODON_03411125 obo:FOODON_02020638)
 
 # Class: obo:FOODON_03411126 (pacific salmon)
 
@@ -25470,6 +25911,7 @@ AnnotationAssertion(oboInOwl:hasSynonym obo:FOODON_03411128 "red salmon"@en)
 AnnotationAssertion(oboInOwl:hasSynonym obo:FOODON_03411128 "redfish, little"@en)
 AnnotationAssertion(oboInOwl:hasSynonym obo:FOODON_03411128 "salmon, sockeye"@en)
 AnnotationAssertion(rdfs:label obo:FOODON_03411128 "sockeye salmon"@en)
+SubClassOf(obo:FOODON_03411128 obo:FOODON_02021847)
 SubClassOf(obo:FOODON_03411128 obo:FOODON_03411126)
 SubClassOf(obo:FOODON_03411128 ObjectSomeValuesFrom(obo:RO_0002162 obo:NCBITaxon_8023))
 
@@ -25571,6 +26013,7 @@ AnnotationAssertion(oboInOwl:hasNarrowSynonym obo:FOODON_03411136 "Sus scrofa Li
 AnnotationAssertion(oboInOwl:hasNarrowSynonym obo:FOODON_03411136 "hog"@en)
 AnnotationAssertion(oboInOwl:hasNarrowSynonym obo:FOODON_03411136 "pig"@en)
 AnnotationAssertion(rdfs:label obo:FOODON_03411136 "swine"@en)
+SubClassOf(obo:FOODON_03411136 obo:FOODON_00005689)
 SubClassOf(obo:FOODON_03411136 obo:FOODON_03411134)
 SubClassOf(obo:FOODON_03411136 ObjectSomeValuesFrom(obo:RO_0002162 obo:NCBITaxon_9823))
 
@@ -25696,6 +26139,7 @@ AnnotationAssertion(oboInOwl:hasDbXref obo:FOODON_03411147 "itis:161702")
 AnnotationAssertion(oboInOwl:hasExactSynonym obo:FOODON_03411147 "American shad")
 AnnotationAssertion(oboInOwl:hasExactSynonym obo:FOODON_03411147 "american shad"@en)
 AnnotationAssertion(rdfs:label obo:FOODON_03411147 "american shad"@en)
+SubClassOf(obo:FOODON_03411147 obo:FOODON_02021945)
 SubClassOf(obo:FOODON_03411147 obo:FOODON_03411348)
 SubClassOf(obo:FOODON_03411147 ObjectSomeValuesFrom(obo:RO_0002162 obo:NCBITaxon_34773))
 
@@ -25844,6 +26288,7 @@ AnnotationAssertion(oboInOwl:hasDbXref obo:FOODON_03411157 <http://eol.org/pages
 AnnotationAssertion(oboInOwl:hasDbXref obo:FOODON_03411157 langual:B1157)
 AnnotationAssertion(oboInOwl:hasSynonym obo:FOODON_03411157 "gadiformes"@en)
 AnnotationAssertion(rdfs:label obo:FOODON_03411157 "gadiform fish"@en)
+SubClassOf(obo:FOODON_03411157 obo:FOODON_00005726)
 SubClassOf(obo:FOODON_03411157 obo:FOODON_03411365)
 
 # Class: obo:FOODON_03411158 (sweet basil plant)
@@ -25922,6 +26367,7 @@ AnnotationAssertion(oboInOwl:hasDbXref obo:FOODON_03411164 langual:B1164)
 AnnotationAssertion(oboInOwl:hasExactSynonym obo:FOODON_03411164 "fish, jawless"@en)
 AnnotationAssertion(oboInOwl:hasSynonym obo:FOODON_03411164 "agnatha"@en)
 AnnotationAssertion(rdfs:label obo:FOODON_03411164 "jawless fish"@en)
+SubClassOf(obo:FOODON_03411164 obo:FOODON_00005676)
 SubClassOf(obo:FOODON_03411164 obo:FOODON_03411222)
 
 # Class: obo:FOODON_03411165 (muskellunge)
@@ -26723,10 +27169,12 @@ SubClassOf(obo:FOODON_03411222 obo:FOODON_03411297)
 # Class: obo:FOODON_03411223 (mussel)
 
 AnnotationAssertion(obo:IAO_0000600 obo:FOODON_03411223 "Mussel is the common name used for members of several families of bivalve molluscs, from saltwater and freshwater habitats. These groups have in common a shell whose outline is elongated and asymmetrical compared with other edible clams, which are often more or less rounded or oval."@en)
+SubClassOf(obo:FOODON_03411223 obo:FOODON_02020797)
 SubClassOf(obo:FOODON_03411223 obo:FOODON_03412113)
 
 # Class: obo:FOODON_03411224 (oyster)
 
+SubClassOf(obo:FOODON_03411224 obo:FOODON_00005711)
 SubClassOf(obo:FOODON_03411224 obo:FOODON_03412113)
 
 # Class: obo:FOODON_03411225 (rose plant)
@@ -26929,6 +27377,7 @@ AnnotationAssertion(oboInOwl:hasSynonym obo:FOODON_03411237 "crangonidae"@en)
 AnnotationAssertion(oboInOwl:hasSynonym obo:FOODON_03411237 "palaemondidae"@en)
 AnnotationAssertion(oboInOwl:hasSynonym obo:FOODON_03411237 "penaeidae"@en)
 AnnotationAssertion(oboInOwl:hasSynonym obo:FOODON_03411237 "prawn"@en)
+SubClassOf(obo:FOODON_03411237 obo:FOODON_02021462)
 
 # Class: obo:FOODON_03411238 (turnip plant)
 
@@ -27121,6 +27570,7 @@ AnnotationAssertion(obo:IAO_0000600 obo:FOODON_03411253 "Geese are waterfowl bel
 AnnotationAssertion(oboInOwl:hasSynonym obo:FOODON_03411253 "anser spp."@en)
 AnnotationAssertion(oboInOwl:hasSynonym obo:FOODON_03411253 "branta spp."@en)
 AnnotationAssertion(oboInOwl:hasSynonym obo:FOODON_03411253 "chen spp."@en)
+SubClassOf(obo:FOODON_03411253 obo:FOODON_02020374)
 
 # Class: obo:FOODON_03411254 (clover plant)
 
@@ -27426,6 +27876,7 @@ AnnotationAssertion(oboInOwl:hasSynonym obo:FOODON_03411276 "solanum lycopersicu
 AnnotationAssertion(rdfs:label obo:FOODON_03411276 "tomato plant"@en)
 SubClassOf(obo:FOODON_03411276 obo:FOODON_03411006)
 SubClassOf(obo:FOODON_03411276 obo:FOODON_03415104)
+SubClassOf(obo:FOODON_03411276 ObjectSomeValuesFrom(obo:RO_0002162 obo:NCBITaxon_4081))
 
 # Class: obo:FOODON_03411277 (dill plant)
 
@@ -27496,6 +27947,7 @@ AnnotationAssertion(oboInOwl:hasSynonym obo:FOODON_03411281 "cole"@en)
 AnnotationAssertion(rdfs:label obo:FOODON_03411281 "kale plant"@en)
 SubClassOf(obo:FOODON_03411281 obo:FOODON_03411566)
 SubClassOf(obo:FOODON_03411281 obo:FOODON_03413372)
+SubClassOf(obo:FOODON_03411281 ObjectSomeValuesFrom(obo:RO_0002162 obo:NCBITaxon_3712))
 
 # Class: obo:FOODON_03411282 (celery plant)
 
@@ -27637,6 +28089,7 @@ AnnotationAssertion(oboInOwl:hasDbXref obo:FOODON_03411292 langual:B4371)
 AnnotationAssertion(oboInOwl:hasDbXref obo:FOODON_03411292 "MSW3:14200352")
 AnnotationAssertion(oboInOwl:hasExactSynonym obo:FOODON_03411292 "red deer")
 AnnotationAssertion(rdfs:label obo:FOODON_03411292 "elk"@en)
+SubClassOf(obo:FOODON_03411292 obo:FOODON_02021418)
 SubClassOf(obo:FOODON_03411292 obo:FOODON_03411583)
 SubClassOf(obo:FOODON_03411292 ObjectSomeValuesFrom(obo:RO_0002162 obo:NCBITaxon_9860))
 
@@ -27984,6 +28437,7 @@ AnnotationAssertion(oboInOwl:hasDbXref obo:FOODON_03411317 <http://eol.org/pages
 AnnotationAssertion(oboInOwl:hasDbXref obo:FOODON_03411317 langual:B1317)
 AnnotationAssertion(oboInOwl:hasSynonym obo:FOODON_03411317 "cardiidae"@en)
 AnnotationAssertion(rdfs:label obo:FOODON_03411317 "cockle"@en)
+SubClassOf(obo:FOODON_03411317 obo:FOODON_02022659)
 SubClassOf(obo:FOODON_03411317 obo:FOODON_03412113)
 
 # Class: obo:FOODON_03411318 (cacao plant)
@@ -28030,7 +28484,6 @@ SubClassOf(obo:FOODON_03411322 ObjectSomeValuesFrom(obo:RO_0002162 obo:NCBITaxon
 AnnotationAssertion(oboInOwl:hasSynonym obo:FOODON_03411323 "leporidae"@en)
 AnnotationAssertion(oboInOwl:hasSynonym obo:FOODON_03411323 "oryctolagus spp."@en)
 AnnotationAssertion(oboInOwl:hasSynonym obo:FOODON_03411323 "sylvilagus spp."@en)
-SubClassOf(obo:FOODON_03411323 obo:FOODON_03411134)
 
 # Class: obo:FOODON_03411324 (grain plant)
 
@@ -28286,6 +28739,7 @@ AnnotationAssertion(oboInOwl:hasSynonym obo:FOODON_03411346 "galliformes"@en)
 AnnotationAssertion(oboInOwl:hasSynonym obo:FOODON_03411346 "odontophoridae"@en)
 AnnotationAssertion(oboInOwl:hasSynonym obo:FOODON_03411346 "phasianidae"@en)
 SubClassOf(obo:FOODON_03411346 obo:FOODON_00002616)
+SubClassOf(obo:FOODON_03411346 obo:FOODON_02020720)
 
 # Class: obo:FOODON_03411348 (river herring)
 
@@ -28757,6 +29211,7 @@ AnnotationAssertion(oboInOwl:hasDbXref obo:FOODON_03411384 "itis:167116")
 AnnotationAssertion(oboInOwl:hasExactSynonym obo:FOODON_03411384 "lingcod"@en)
 AnnotationAssertion(oboInOwl:hasSynonym obo:FOODON_03411384 "ophiodon elongatus"@en)
 AnnotationAssertion(rdfs:label obo:FOODON_03411384 "lingcod"@en)
+SubClassOf(obo:FOODON_03411384 obo:FOODON_02021893)
 SubClassOf(obo:FOODON_03411384 obo:FOODON_03411811)
 SubClassOf(obo:FOODON_03411384 ObjectSomeValuesFrom(obo:RO_0002162 obo:NCBITaxon_225387))
 
@@ -28811,7 +29266,6 @@ SubClassOf(obo:FOODON_03411388 obo:FOODON_03414206)
 
 AnnotationAssertion(obo:IAO_0000600 obo:FOODON_03411389 "Squirrels belong to a large family of small or medium-sized rodents called the *Sciuridae*. The family includes tree squirrels, ground squirrels, chipmunks, marmots (including woodchucks), flying squirrels, and prairie dogs. Squirrels are indigenous to the Americas, Eurasia, and Africa and have been introduced to Australia."@en)
 AnnotationAssertion(oboInOwl:hasSynonym obo:FOODON_03411389 "sciuridae"@en)
-SubClassOf(obo:FOODON_03411389 obo:FOODON_03411134)
 
 # Class: obo:FOODON_03411390 (lettuce plant)
 
@@ -29080,6 +29534,7 @@ AnnotationAssertion(oboInOwl:hasSynonym obo:FOODON_03411406 "brassica oleracea v
 AnnotationAssertion(rdfs:label obo:FOODON_03411406 "cabbage plant"@en)
 SubClassOf(obo:FOODON_03411406 obo:FOODON_03411194)
 SubClassOf(obo:FOODON_03411406 obo:FOODON_03413372)
+SubClassOf(obo:FOODON_03411406 ObjectSomeValuesFrom(obo:RO_0002162 obo:NCBITaxon_3712))
 
 # Class: obo:FOODON_03411407 (european blackberry plant)
 
@@ -29332,6 +29787,7 @@ AnnotationAssertion(oboInOwl:hasExactSynonym obo:FOODON_03411427 "swordfish")
 AnnotationAssertion(oboInOwl:hasExactSynonym obo:FOODON_03411427 "swordfish"@en)
 AnnotationAssertion(oboInOwl:hasSynonym obo:FOODON_03411427 "xiphias gladius"@en)
 AnnotationAssertion(rdfs:label obo:FOODON_03411427 "swordfish"@en)
+SubClassOf(obo:FOODON_03411427 obo:FOODON_02021997)
 SubClassOf(obo:FOODON_03411427 obo:FOODON_03411383)
 SubClassOf(obo:FOODON_03411427 ObjectSomeValuesFrom(obo:RO_0002162 obo:NCBITaxon_8245))
 
@@ -29681,7 +30137,6 @@ AnnotationAssertion(oboInOwl:hasDbXref obo:FOODON_03411450 <http://eol.org/pages
 AnnotationAssertion(oboInOwl:hasDbXref obo:FOODON_03411450 langual:B1450)
 AnnotationAssertion(oboInOwl:hasSynonym obo:FOODON_03411450 "didelphidae"@en)
 AnnotationAssertion(rdfs:label obo:FOODON_03411450 "opossum"@en)
-SubClassOf(obo:FOODON_03411450 obo:FOODON_03411134)
 
 # Class: obo:FOODON_03411451 (macadamia plant)
 
@@ -29786,6 +30241,7 @@ SubClassOf(obo:FOODON_03411459 ObjectSomeValuesFrom(obo:RO_0002162 obo:NCBITaxon
 
 AnnotationAssertion(oboInOwl:hasSynonym obo:FOODON_03411460 "phasianus spp."@en)
 SubClassOf(obo:FOODON_03411460 obo:FOODON_00002616)
+SubClassOf(obo:FOODON_03411460 obo:FOODON_02020657)
 
 # Class: obo:FOODON_03411461 (raccoon)
 
@@ -29794,7 +30250,6 @@ AnnotationAssertion(oboInOwl:hasDbXref obo:FOODON_03411461 <http://eol.org/pages
 AnnotationAssertion(oboInOwl:hasDbXref obo:FOODON_03411461 langual:B1461)
 AnnotationAssertion(oboInOwl:hasSynonym obo:FOODON_03411461 "procyon spp."@en)
 AnnotationAssertion(rdfs:label obo:FOODON_03411461 "raccoon"@en)
-SubClassOf(obo:FOODON_03411461 obo:FOODON_03411134)
 
 # Class: obo:FOODON_03411462 (zucchini plant)
 
@@ -29998,6 +30453,7 @@ SubClassOf(obo:FOODON_03411475 obo:FOODON_03411755)
 # Class: obo:FOODON_03411476 (buffalo)
 
 AnnotationAssertion(oboInOwl:hasSynonym obo:FOODON_03411476 "bubalus"@en)
+SubClassOf(obo:FOODON_03411476 obo:FOODON_02021001)
 SubClassOf(obo:FOODON_03411476 obo:FOODON_03414374)
 
 # Class: obo:FOODON_03411477 (sweetsop plant)
@@ -30092,6 +30548,7 @@ SubClassOf(obo:FOODON_03411480 ObjectSomeValuesFrom(obo:RO_0002162 obo:NCBITaxon
 AnnotationAssertion(oboInOwl:hasSynonym obo:FOODON_03411481 "hippotragus spp."@en)
 AnnotationAssertion(oboInOwl:hasSynonym obo:FOODON_03411481 "neotragus spp."@en)
 AnnotationAssertion(oboInOwl:hasSynonym obo:FOODON_03411481 "tetracerus spp."@en)
+SubClassOf(obo:FOODON_03411481 obo:FOODON_02020815)
 SubClassOf(obo:FOODON_03411481 obo:FOODON_03414381)
 
 # Class: obo:FOODON_03411482 (natal plum plant)
@@ -30361,6 +30818,7 @@ AnnotationAssertion(oboInOwl:hasDbXref obo:FOODON_03411500 langual:B1500)
 AnnotationAssertion(oboInOwl:hasExactSynonym obo:FOODON_03411500 "cervid"@en)
 AnnotationAssertion(oboInOwl:hasSynonym obo:FOODON_03411500 "cervidae"@en)
 AnnotationAssertion(rdfs:label obo:FOODON_03411500 "deer family"@en)
+SubClassOf(obo:FOODON_03411500 obo:FOODON_00005684)
 SubClassOf(obo:FOODON_03411500 obo:FOODON_03411134)
 
 # Class: obo:FOODON_03411501 (mulberry plant)
@@ -30420,9 +30878,11 @@ SubClassOf(obo:FOODON_03411504 ObjectSomeValuesFrom(obo:RO_0002162 obo:NCBITaxon
 
 AnnotationAssertion(oboInOwl:hasSynonym obo:FOODON_03411505 "homarus spp."@en)
 AnnotationAssertion(oboInOwl:hasSynonym obo:FOODON_03411505 "panulirus spp."@en)
+SubClassOf(obo:FOODON_03411505 obo:FOODON_02021453)
 
 # Class: obo:FOODON_03411506 (albacore)
 
+SubClassOf(obo:FOODON_03411506 obo:FOODON_02022610)
 SubClassOf(obo:FOODON_03411506 obo:NCBITaxon_8235)
 
 # Class: obo:FOODON_03411507 (grapefruit plant)
@@ -30508,6 +30968,7 @@ SubClassOf(obo:FOODON_03411513 obo:FOODON_03411315)
 
 AnnotationAssertion(oboInOwl:hasSynonym obo:FOODON_03411514 "octopodidae"@en)
 AnnotationAssertion(oboInOwl:hasSynonym obo:FOODON_03411514 "polypus"@en)
+SubClassOf(obo:FOODON_03411514 obo:FOODON_02021390)
 SubClassOf(obo:FOODON_03411514 obo:FOODON_03412116)
 
 # Class: obo:FOODON_03411515 (poppy plant)
@@ -31320,6 +31781,7 @@ AnnotationAssertion(oboInOwl:hasDbXref obo:FOODON_03411581 <http://eol.org/pages
 AnnotationAssertion(oboInOwl:hasDbXref obo:FOODON_03411581 langual:B1581)
 AnnotationAssertion(oboInOwl:hasSynonym obo:FOODON_03411581 "perciformes"@en)
 AnnotationAssertion(rdfs:label obo:FOODON_03411581 "perciform fish"@en)
+SubClassOf(obo:FOODON_03411581 obo:FOODON_00005679)
 SubClassOf(obo:FOODON_03411581 obo:FOODON_03411365)
 
 # Class: obo:FOODON_03411582 (honeydew melon plant)
@@ -31334,6 +31796,7 @@ SubClassOf(obo:FOODON_03411582 obo:NCBITaxon_357961)
 # Class: obo:FOODON_03411583 (deer)
 
 AnnotationAssertion(oboInOwl:hasSynonym obo:FOODON_03411583 "cervus spp."@en)
+SubClassOf(obo:FOODON_03411583 obo:FOODON_02021410)
 
 # Class: obo:FOODON_03411584 (european chestnut tree)
 
@@ -31384,6 +31847,7 @@ AnnotationAssertion(oboInOwl:hasExactSynonym obo:FOODON_03411587 "Atlantic salmo
 AnnotationAssertion(oboInOwl:hasExactSynonym obo:FOODON_03411587 "atlantic salmon"@en)
 AnnotationAssertion(oboInOwl:hasSynonym obo:FOODON_03411587 "salmo salar"@en)
 AnnotationAssertion(rdfs:label obo:FOODON_03411587 "atlantic salmon"@en)
+SubClassOf(obo:FOODON_03411587 obo:FOODON_02022068)
 SubClassOf(obo:FOODON_03411587 obo:FOODON_03412250)
 SubClassOf(obo:FOODON_03411587 ObjectSomeValuesFrom(obo:RO_0002162 obo:NCBITaxon_8030))
 
@@ -31471,6 +31935,7 @@ AnnotationAssertion(oboInOwl:hasDbXref obo:FOODON_03411592 <http://eol.org/pages
 AnnotationAssertion(oboInOwl:hasDbXref obo:FOODON_03411592 langual:B1592)
 AnnotationAssertion(oboInOwl:hasSynonym obo:FOODON_03411592 "salmoniformes"@en)
 AnnotationAssertion(rdfs:label obo:FOODON_03411592 "salmoniform fish"@en)
+SubClassOf(obo:FOODON_03411592 obo:FOODON_00005724)
 SubClassOf(obo:FOODON_03411592 obo:FOODON_03411365)
 
 # Class: obo:FOODON_03411594 (cypriniform fish)
@@ -31557,6 +32022,7 @@ AnnotationAssertion(oboInOwl:hasDbXref obo:FOODON_03411601 <http://eol.org/pages
 AnnotationAssertion(oboInOwl:hasDbXref obo:FOODON_03411601 langual:B1601)
 AnnotationAssertion(oboInOwl:hasSynonym obo:FOODON_03411601 "clupeiformes"@en)
 AnnotationAssertion(rdfs:label obo:FOODON_03411601 "clupeiform fish"@en)
+SubClassOf(obo:FOODON_03411601 obo:FOODON_00005727)
 SubClassOf(obo:FOODON_03411601 obo:FOODON_03411365)
 
 # Class: obo:FOODON_03411603 (white asparagus plant)
@@ -31884,6 +32350,7 @@ AnnotationAssertion(obo:IAO_0000600 obo:FOODON_03411633 "Whelk is a common name 
 AnnotationAssertion(oboInOwl:hasSynonym obo:FOODON_03411633 "buccinum spp."@en)
 AnnotationAssertion(oboInOwl:hasSynonym obo:FOODON_03411633 "busycon spp."@en)
 AnnotationAssertion(oboInOwl:hasSynonym obo:FOODON_03411633 "neptunea spp."@en)
+SubClassOf(obo:FOODON_03411633 obo:FOODON_02021477)
 
 # Class: obo:FOODON_03411634 (passion fruit)
 
@@ -31981,6 +32448,7 @@ SubClassOf(obo:FOODON_03411643 obo:FOODON_03412633)
 AnnotationAssertion(oboInOwl:hasDbXref obo:FOODON_03411644 <http://eol.org/pages/2330>)
 AnnotationAssertion(oboInOwl:hasDbXref obo:FOODON_03411644 langual:B1644)
 AnnotationAssertion(oboInOwl:hasSynonym obo:FOODON_03411644 "sepiidae"@en)
+SubClassOf(obo:FOODON_03411644 obo:FOODON_02022023)
 SubClassOf(obo:FOODON_03411644 obo:FOODON_03412116)
 
 # Class: obo:FOODON_03411646 (lappa plant)
@@ -32209,6 +32677,7 @@ SubClassOf(obo:FOODON_03411667 obo:FOODON_03411017)
 # Class: obo:FOODON_03411669 (lamb)
 
 AnnotationAssertion(obo:IAO_0000600 obo:FOODON_03411669 "In general, a sheep in its first year is called a lamb and its meat is also called lamb."@en)
+SubClassOf(obo:FOODON_03411669 obo:FOODON_02021126)
 
 # Class: obo:FOODON_03411670 (sauger)
 
@@ -32762,6 +33231,7 @@ AnnotationAssertion(obo:IAO_0000114 obo:FOODON_03411711 obo:IAO_0000122)
 AnnotationAssertion(obo:IAO_0000119 obo:FOODON_03411711 "https://www.usda.gov/media/blog/2011/11/17/poultry-classifications-get-21st-century-upgrade"^^xsd:anyURI)
 AnnotationAssertion(obo:IAO_0000600 obo:FOODON_03411711 "A surgically neutered male chicken younger than four months old (previously younger than eight months) that is tender-meated with soft, pliable, smooth-textured skin."@en)
 AnnotationAssertion(oboInOwl:hasDbXref obo:FOODON_03411711 langual:B1711)
+SubClassOf(obo:FOODON_03411711 obo:FOODON_02020066)
 SubClassOf(obo:FOODON_03411711 obo:FOODON_03411457)
 
 # Class: obo:FOODON_03411712 (stag chicken)
@@ -34441,6 +34911,7 @@ AnnotationAssertion(oboInOwl:hasSynonym obo:FOODON_03411834 "oreochromis nilotic
 AnnotationAssertion(oboInOwl:hasSynonym obo:FOODON_03411834 "tilapia nilotica"@en)
 AnnotationAssertion(oboInOwl:hasSynonym obo:FOODON_03411834 "tilapia, nile"@en)
 AnnotationAssertion(rdfs:label obo:FOODON_03411834 "nile tilapia"@en)
+SubClassOf(obo:FOODON_03411834 obo:FOODON_02021834)
 SubClassOf(obo:FOODON_03411834 obo:FOODON_03411831)
 SubClassOf(obo:FOODON_03411834 ObjectSomeValuesFrom(obo:RO_0002162 obo:NCBITaxon_8128))
 
@@ -34554,6 +35025,7 @@ AnnotationAssertion(oboInOwl:hasExactSynonym obo:FOODON_03411842 "atlantic cod"@
 AnnotationAssertion(oboInOwl:hasSynonym obo:FOODON_03411842 "cod, atlantic"@en)
 AnnotationAssertion(oboInOwl:hasSynonym obo:FOODON_03411842 "gadus morhua"@en)
 AnnotationAssertion(rdfs:label obo:FOODON_03411842 "atlantic cod"@en)
+SubClassOf(obo:FOODON_03411842 obo:FOODON_02021808)
 SubClassOf(obo:FOODON_03411842 obo:FOODON_03411423)
 SubClassOf(obo:FOODON_03411842 ObjectSomeValuesFrom(obo:RO_0002162 obo:NCBITaxon_8049))
 
@@ -35898,13 +36370,11 @@ SubClassOf(obo:FOODON_03411944 ObjectSomeValuesFrom(obo:RO_0002162 obo:NCBITaxon
 # Class: obo:FOODON_03411945 (atlantic calico scallop)
 
 AnnotationAssertion(obo:IAO_0000114 obo:FOODON_03411945 obo:IAO_0000428)
-AnnotationAssertion(obo:IAO_0000118 obo:FOODON_03411945 "atlantic calico scallop"@en)
 AnnotationAssertion(oboInOwl:hasDbXref obo:FOODON_03411945 <http://eol.org/pages/448753>)
 AnnotationAssertion(oboInOwl:hasDbXref obo:FOODON_03411945 langual:B1945)
 AnnotationAssertion(oboInOwl:hasDbXref obo:FOODON_03411945 asfis:scc)
 AnnotationAssertion(oboInOwl:hasDbXref obo:FOODON_03411945 "CEC1993:1343")
 AnnotationAssertion(oboInOwl:hasDbXref obo:FOODON_03411945 "itis:79734")
-AnnotationAssertion(oboInOwl:hasExactSynonym obo:FOODON_03411945 "atlantic calico scallop"@en)
 AnnotationAssertion(oboInOwl:hasSynonym obo:FOODON_03411945 "aequipecten gibbus"@en)
 AnnotationAssertion(oboInOwl:hasSynonym obo:FOODON_03411945 "argopecten gibbus"@en)
 AnnotationAssertion(oboInOwl:hasSynonym obo:FOODON_03411945 "calico scallop"@en)
@@ -36014,6 +36484,7 @@ AnnotationAssertion(oboInOwl:hasSynonym obo:FOODON_03411951 "american oyster"@en
 AnnotationAssertion(oboInOwl:hasSynonym obo:FOODON_03411951 "blue point oyster"@en)
 AnnotationAssertion(oboInOwl:hasSynonym obo:FOODON_03411951 "crassostrea virginica"@en)
 AnnotationAssertion(rdfs:label obo:FOODON_03411951 "eastern oyster"@en)
+SubClassOf(obo:FOODON_03411951 obo:FOODON_02022510)
 SubClassOf(obo:FOODON_03411951 obo:FOODON_03411224)
 SubClassOf(obo:FOODON_03411951 ObjectSomeValuesFrom(obo:RO_0002162 obo:NCBITaxon_6565))
 
@@ -36559,6 +37030,7 @@ AnnotationAssertion(obo:IAO_0000115 obo:FOODON_03411998 "The Decapoda or decapod
 AnnotationAssertion(oboInOwl:hasDbXref obo:FOODON_03411998 langual:B1998)
 AnnotationAssertion(oboInOwl:hasSynonym obo:FOODON_03411998 "decapoda"@en)
 AnnotationAssertion(rdfs:label obo:FOODON_03411998 "decapod"@en)
+SubClassOf(obo:FOODON_03411998 obo:FOODON_00005708)
 SubClassOf(obo:FOODON_03411998 obo:FOODON_03411374)
 
 # Class: obo:FOODON_03411999 (common bean plant)
@@ -37504,7 +37976,7 @@ AnnotationAssertion(oboInOwl:hasExactSynonym obo:FOODON_03412068 "broccoli raab"
 AnnotationAssertion(oboInOwl:hasExactSynonym obo:FOODON_03412068 "field mustard"@en)
 AnnotationAssertion(oboInOwl:hasExactSynonym obo:FOODON_03412068 "rapini"@en)
 AnnotationAssertion(rdfs:label obo:FOODON_03412068 "field mustard plant"@en)
-SubClassOf(obo:FOODON_03412068 obo:NCBITaxon_3711)
+SubClassOf(obo:FOODON_03412068 obo:FOODON_03412069)
 
 # Class: obo:FOODON_03412069 (mustard plant)
 
@@ -37711,16 +38183,15 @@ SubClassOf(obo:FOODON_03412089 obo:FOODON_03411390)
 # Class: obo:FOODON_03412090 (walrus)
 
 AnnotationAssertion(obo:IAO_0000114 obo:FOODON_03412090 obo:IAO_0000428)
-AnnotationAssertion(obo:IAO_0000118 obo:FOODON_03412090 "walrus"@en)
 AnnotationAssertion(oboInOwl:hasDbXref obo:FOODON_03412090 <http://eol.org/pages/328627>)
 AnnotationAssertion(oboInOwl:hasDbXref obo:FOODON_03412090 <http://www.itis.gov/servlet/SingleRpt/SingleRpt?search_topic=TSN&search_value=180639>)
 AnnotationAssertion(oboInOwl:hasDbXref obo:FOODON_03412090 langual:B2090)
 AnnotationAssertion(oboInOwl:hasDbXref obo:FOODON_03412090 asfis:wal)
 AnnotationAssertion(oboInOwl:hasDbXref obo:FOODON_03412090 "CEC1993:1427")
 AnnotationAssertion(oboInOwl:hasDbXref obo:FOODON_03412090 "MSW3:14001024")
-AnnotationAssertion(oboInOwl:hasExactSynonym obo:FOODON_03412090 "walrus")
 AnnotationAssertion(oboInOwl:hasSynonym obo:FOODON_03412090 "odobenus rosmarus"@en)
 AnnotationAssertion(rdfs:label obo:FOODON_03412090 "walrus"@en)
+SubClassOf(obo:FOODON_03412090 obo:FOODON_02022138)
 SubClassOf(obo:FOODON_03412090 obo:FOODON_03414165)
 SubClassOf(obo:FOODON_03412090 ObjectSomeValuesFrom(obo:RO_0002162 obo:NCBITaxon_9707))
 
@@ -37745,7 +38216,6 @@ SubClassOf(obo:FOODON_03412091 ObjectSomeValuesFrom(obo:RO_0002162 obo:NCBITaxon
 
 AnnotationAssertion(oboInOwl:hasSynonym obo:FOODON_03412092 "macropodidae"@en)
 AnnotationAssertion(oboInOwl:hasSynonym obo:FOODON_03412092 "macropus spp."@en)
-SubClassOf(obo:FOODON_03412092 obo:FOODON_03411134)
 
 # Class: obo:FOODON_03412093 (mule)
 
@@ -37785,6 +38255,7 @@ AnnotationAssertion(oboInOwl:hasDbXref obo:FOODON_03412097 "MSW3:14100033")
 AnnotationAssertion(oboInOwl:hasExactSynonym obo:FOODON_03412097 "mountain zebra")
 AnnotationAssertion(oboInOwl:hasSynonym obo:FOODON_03412097 "equus zebra"@en)
 AnnotationAssertion(rdfs:label obo:FOODON_03412097 "zebra"@en)
+SubClassOf(obo:FOODON_03412097 obo:FOODON_02021555)
 SubClassOf(obo:FOODON_03412097 obo:FOODON_03414849)
 SubClassOf(obo:FOODON_03412097 ObjectSomeValuesFrom(obo:RO_0002162 obo:NCBITaxon_9791))
 
@@ -37870,6 +38341,7 @@ AnnotationAssertion(oboInOwl:hasDbXref obo:FOODON_03412111 <http://eol.org/pages
 AnnotationAssertion(oboInOwl:hasDbXref obo:FOODON_03412111 langual:B2111)
 AnnotationAssertion(oboInOwl:hasSynonym obo:FOODON_03412111 "gastropoda"@en)
 AnnotationAssertion(rdfs:label obo:FOODON_03412111 "gastropod"@en)
+SubClassOf(obo:FOODON_03412111 obo:FOODON_00005706)
 SubClassOf(obo:FOODON_03412111 obo:FOODON_03412112)
 
 # Class: obo:FOODON_03412112 (mollusc)
@@ -37896,6 +38368,7 @@ AnnotationAssertion(oboInOwl:hasSynonym obo:FOODON_03412113 "lamellibranchiata"@
 AnnotationAssertion(oboInOwl:hasSynonym obo:FOODON_03412113 "pelecypod"@en)
 AnnotationAssertion(oboInOwl:hasSynonym obo:FOODON_03412113 "pelecypoda"@en)
 AnnotationAssertion(rdfs:label obo:FOODON_03412113 "bivalve"@en)
+SubClassOf(obo:FOODON_03412113 obo:FOODON_00005705)
 SubClassOf(obo:FOODON_03412113 obo:FOODON_03412112)
 
 # Class: obo:FOODON_03412114 (snail)
@@ -37915,6 +38388,7 @@ AnnotationAssertion(oboInOwl:hasNarrowSynonym obo:FOODON_03412115 "Echinodermata
 AnnotationAssertion(oboInOwl:hasNarrowSynonym obo:FOODON_03412115 "Echinodermata Klein, 1734")
 AnnotationAssertion(oboInOwl:hasSynonym obo:FOODON_03412115 "echinodermata"@en)
 AnnotationAssertion(rdfs:label obo:FOODON_03412115 "echinoderm"@en)
+SubClassOf(obo:FOODON_03412115 obo:FOODON_00005703)
 SubClassOf(obo:FOODON_03412115 obo:FOODON_03411433)
 
 # Class: obo:FOODON_03412116 (cephalopod)
@@ -37925,6 +38399,7 @@ AnnotationAssertion(oboInOwl:hasDbXref obo:FOODON_03412116 <http://eol.org/pages
 AnnotationAssertion(oboInOwl:hasDbXref obo:FOODON_03412116 langual:B2116)
 AnnotationAssertion(oboInOwl:hasSynonym obo:FOODON_03412116 "cephalopoda"@en)
 AnnotationAssertion(rdfs:label obo:FOODON_03412116 "cephalopod"@en)
+SubClassOf(obo:FOODON_03412116 obo:FOODON_00005707)
 SubClassOf(obo:FOODON_03412116 obo:FOODON_03412112)
 
 # Class: obo:FOODON_03412118 (ostrich)
@@ -37940,6 +38415,7 @@ AnnotationAssertion(oboInOwl:hasExactSynonym obo:FOODON_03412118 "ostrich")
 AnnotationAssertion(oboInOwl:hasSynonym obo:FOODON_03412118 "common ostrich"@en)
 AnnotationAssertion(oboInOwl:hasSynonym obo:FOODON_03412118 "struthio camelus"@en)
 AnnotationAssertion(rdfs:label obo:FOODON_03412118 "ostrich"@en)
+SubClassOf(obo:FOODON_03412118 obo:FOODON_02020774)
 SubClassOf(obo:FOODON_03412118 obo:FOODON_03414362)
 SubClassOf(obo:FOODON_03412118 ObjectSomeValuesFrom(obo:RO_0002162 obo:NCBITaxon_8801))
 
@@ -40094,6 +40570,7 @@ AnnotationAssertion(oboInOwl:hasDbXref obo:FOODON_03412297 "CEC1993:112")
 AnnotationAssertion(oboInOwl:hasExactSynonym obo:FOODON_03412297 "devil fish")
 AnnotationAssertion(oboInOwl:hasSynonym obo:FOODON_03412297 "mobula mobular"@en)
 AnnotationAssertion(rdfs:label obo:FOODON_03412297 "devilfish"@en)
+SubClassOf(obo:FOODON_03412297 obo:FOODON_02021906)
 SubClassOf(obo:FOODON_03412297 obo:FOODON_03412298)
 SubClassOf(obo:FOODON_03412297 ObjectSomeValuesFrom(obo:RO_0002162 obo:NCBITaxon_1579277))
 
@@ -41395,6 +41872,7 @@ AnnotationAssertion(oboInOwl:hasSynonym obo:FOODON_03412401 "anglerfish"@en)
 AnnotationAssertion(oboInOwl:hasSynonym obo:FOODON_03412401 "frogfish"@en)
 AnnotationAssertion(oboInOwl:hasSynonym obo:FOODON_03412401 "lophius piscatorius"@en)
 AnnotationAssertion(rdfs:label obo:FOODON_03412401 "monkfish"@en)
+SubClassOf(obo:FOODON_03412401 obo:FOODON_02021919)
 SubClassOf(obo:FOODON_03412401 obo:FOODON_03412405)
 SubClassOf(obo:FOODON_03412401 ObjectSomeValuesFrom(obo:RO_0002162 obo:NCBITaxon_8074))
 
@@ -41411,6 +41889,7 @@ AnnotationAssertion(oboInOwl:hasExactSynonym obo:FOODON_03412402 "white sucker"@
 AnnotationAssertion(oboInOwl:hasSynonym obo:FOODON_03412402 "buffalo fish (catostomus)"@en)
 AnnotationAssertion(oboInOwl:hasSynonym obo:FOODON_03412402 "catostomus commersoni"@en)
 AnnotationAssertion(rdfs:label obo:FOODON_03412402 "white sucker"@en)
+SubClassOf(obo:FOODON_03412402 obo:FOODON_02021971)
 SubClassOf(obo:FOODON_03412402 obo:FOODON_03411319)
 SubClassOf(obo:FOODON_03412402 ObjectSomeValuesFrom(obo:RO_0002162 obo:NCBITaxon_7971))
 
@@ -41453,6 +41932,7 @@ AnnotationAssertion(oboInOwl:hasSynonym obo:FOODON_03412406 "ursidae"@en)
 
 AnnotationAssertion(obo:IAO_0000600 obo:FOODON_03412407 "Beefalo are a fertile hybrid offspring of domestic cattle, *Bos taurus*, and the American bison, *Bison bison* (generally called buffalo in the US). The breed was created to combine the characteristics of both animals with a view towards beef production."@en)
 AnnotationAssertion(oboInOwl:hasSynonym obo:FOODON_03412407 "bos taurus x bison bison"@en)
+SubClassOf(obo:FOODON_03412407 obo:FOODON_02020984)
 SubClassOf(obo:FOODON_03412407 obo:FOODON_03414374)
 
 # Class: obo:FOODON_03412408 (jellyfish)
@@ -45108,6 +45588,7 @@ AnnotationAssertion(oboInOwl:hasDbXref obo:FOODON_03412719 langual:B2719)
 AnnotationAssertion(oboInOwl:hasExactSynonym obo:FOODON_03412719 "emu")
 AnnotationAssertion(oboInOwl:hasSynonym obo:FOODON_03412719 "dromaius novaehollandiae"@en)
 AnnotationAssertion(rdfs:label obo:FOODON_03412719 "emu"@en)
+SubClassOf(obo:FOODON_03412719 obo:FOODON_02020095)
 SubClassOf(obo:FOODON_03412719 obo:FOODON_03414362)
 SubClassOf(obo:FOODON_03412719 ObjectSomeValuesFrom(obo:RO_0002162 obo:NCBITaxon_8790))
 
@@ -52608,6 +53089,7 @@ AnnotationAssertion(oboInOwl:hasNarrowSynonym obo:FOODON_03413499 "Osmerus morda
 AnnotationAssertion(oboInOwl:hasNarrowSynonym obo:FOODON_03413499 "Osmerus mordax mordax (Mitchill, 1814)")
 AnnotationAssertion(rdfs:comment obo:FOODON_03413499 "LanguaL curation note: According to FISHBASE, the taxonomic status of the scientific name is not valid. Valid entry is *ATLANTIC RAINBOW SMELT [B1905]*  (Osmerus mordax mordax (Mitchill, 1814)).
 Status of scientific name in ITIS is valid, in which , Osmerus mordax mordax (Mitchill, 1814) is a subspecies."@en)
+SubClassOf(obo:FOODON_03413499 obo:FOODON_02021958)
 
 # Class: obo:FOODON_03413500 (amur pike)
 
@@ -53281,16 +53763,14 @@ AnnotationAssertion(rdfs:label obo:FOODON_03413546 "red-brown ark"@en)
 SubClassOf(obo:FOODON_03413546 obo:FOODON_03412432)
 SubClassOf(obo:FOODON_03413546 ObjectSomeValuesFrom(obo:RO_0002162 obo:NCBITaxon_121031))
 
-# Class: obo:FOODON_03413547 (turkey wing)
+# Class: obo:FOODON_03413547 (turkey wing (arkshell))
 
 AnnotationAssertion(obo:IAO_0000114 obo:FOODON_03413547 obo:IAO_0000428)
-AnnotationAssertion(obo:IAO_0000118 obo:FOODON_03413547 "turkey wing"@en)
 AnnotationAssertion(oboInOwl:hasDbXref obo:FOODON_03413547 <http://eol.org/pages/452127>)
 AnnotationAssertion(oboInOwl:hasDbXref obo:FOODON_03413547 langual:B3547)
 AnnotationAssertion(oboInOwl:hasDbXref obo:FOODON_03413547 asfis:rqz)
 AnnotationAssertion(oboInOwl:hasDbXref obo:FOODON_03413547 "itis:79368")
-AnnotationAssertion(oboInOwl:hasExactSynonym obo:FOODON_03413547 "turkey wing"@en)
-AnnotationAssertion(rdfs:label obo:FOODON_03413547 "turkey wing"@en)
+AnnotationAssertion(rdfs:label obo:FOODON_03413547 "turkey wing (arkshell)"@en)
 SubClassOf(obo:FOODON_03413547 obo:FOODON_03412432)
 SubClassOf(obo:FOODON_03413547 ObjectSomeValuesFrom(obo:RO_0002162 obo:NCBITaxon_173078))
 
@@ -53304,6 +53784,12 @@ AnnotationAssertion(oboInOwl:hasNarrowSynonym obo:FOODON_03413548 "Arca noae Lin
 AnnotationAssertion(oboInOwl:hasSynonym obo:FOODON_03413548 "arca noae"@en)
 AnnotationAssertion(rdfs:label obo:FOODON_03413548 "noahs ark"@en)
 SubClassOf(obo:FOODON_03413548 obo:FOODON_03412432)
+
+# Class: obo:FOODON_03413549 (mossy ark)
+
+AnnotationAssertion(rdfs:label obo:FOODON_03413549 "mossy ark"@en)
+SubClassOf(obo:FOODON_03413549 obo:FOODON_03412432)
+SubClassOf(obo:FOODON_03413549 ObjectSomeValuesFrom(obo:RO_0002162 obo:NCBITaxon_3244320))
 
 # Class: obo:FOODON_03413550 (mogai clam)
 
@@ -53320,7 +53806,6 @@ AnnotationAssertion(obo:IAO_0000114 obo:FOODON_03413551 obo:IAO_0000428)
 AnnotationAssertion(oboInOwl:hasDbXref obo:FOODON_03413551 <http://eol.org/pages/2217>)
 AnnotationAssertion(oboInOwl:hasDbXref obo:FOODON_03413551 <http://www.itis.gov/servlet/SingleRpt/SingleRpt?search_topic=TSN&search_value=79351>)
 AnnotationAssertion(oboInOwl:hasDbXref obo:FOODON_03413551 langual:B3551)
-AnnotationAssertion(oboInOwl:hasNarrowSynonym obo:FOODON_03413551 "Anadara baughmani")
 AnnotationAssertion(oboInOwl:hasNarrowSynonym obo:FOODON_03413551 "Anadara baughmani Hertlein, 1951")
 AnnotationAssertion(oboInOwl:hasSynonym obo:FOODON_03413551 "anadara baughmani"@en)
 AnnotationAssertion(oboInOwl:hasSynonym obo:FOODON_03413551 "skewed ark"@en)
@@ -55110,6 +55595,7 @@ AnnotationAssertion(oboInOwl:hasExactSynonym obo:FOODON_03413680 "common octopus
 AnnotationAssertion(oboInOwl:hasExactSynonym obo:FOODON_03413680 "common octopus"@en)
 AnnotationAssertion(oboInOwl:hasSynonym obo:FOODON_03413680 "octopus vulgaris"@en)
 AnnotationAssertion(rdfs:label obo:FOODON_03413680 "common octopus"@en)
+SubClassOf(obo:FOODON_03413680 obo:FOODON_02022053)
 SubClassOf(obo:FOODON_03413680 obo:FOODON_03411514)
 SubClassOf(obo:FOODON_03413680 ObjectSomeValuesFrom(obo:RO_0002162 obo:NCBITaxon_6645))
 
@@ -55708,6 +56194,13 @@ AnnotationAssertion(rdfs:label obo:FOODON_03413719 "waterchestnut plant"@en)
 SubClassOf(obo:FOODON_03413719 obo:FOODON_03411018)
 SubClassOf(obo:FOODON_03413719 ObjectSomeValuesFrom(obo:RO_0002162 obo:NCBITaxon_22666))
 
+# Class: obo:FOODON_03413720 (ruvo kale plant)
+
+AnnotationAssertion(obo:IAO_0000115 obo:FOODON_03413720 "A common vegetable in the cuisines of southern Italy (in particular Basilicata, Puglia, and Sicily), Galicia (northwestern Spain), Portugal, the Netherlands and China. The plant is a member of the tribe *Brassiceae* of the *Brassicaceae* (mustard family)."@en)
+AnnotationAssertion(rdfs:label obo:FOODON_03413720 "ruvo kale plant"@en)
+SubClassOf(obo:FOODON_03413720 obo:FOODON_03412069)
+SubClassOf(obo:FOODON_03413720 ObjectSomeValuesFrom(obo:RO_0002162 obo:NCBITaxon_1204434))
+
 # Class: obo:FOODON_03413721 (sweet onion plant)
 
 AnnotationAssertion(obo:IAO_0000115 obo:FOODON_03413721 "Sweet onion is a variety of onion that is not pungent. There are several varieties of sweet onion. The term sweet onion comes from the perceived sweetness of the onion compared to other varieties. This perceived sweetness is derived from a low sulfur content and and high water content when compared to other onion varieties."@en)
@@ -56034,7 +56527,7 @@ AnnotationAssertion(oboInOwl:hasExactSynonym obo:FOODON_03413747 "spider mustard
 AnnotationAssertion(oboInOwl:hasExactSynonym obo:FOODON_03413747 "water greens"@en)
 AnnotationAssertion(oboInOwl:hasExactSynonym obo:FOODON_03413747 "xiu cai"@en)
 AnnotationAssertion(rdfs:label obo:FOODON_03413747 "japanese mustard plant"@en)
-SubClassOf(obo:FOODON_03413747 obo:NCBITaxon_3711)
+SubClassOf(obo:FOODON_03413747 obo:FOODON_03412069)
 
 # Class: obo:FOODON_03413748 (red onion plant)
 
@@ -56424,6 +56917,7 @@ AnnotationAssertion(oboInOwl:hasDbXref obo:FOODON_03413809 langual:B3809)
 AnnotationAssertion(oboInOwl:hasNarrowSynonym obo:FOODON_03413809 "Osmeriformes")
 AnnotationAssertion(oboInOwl:hasSynonym obo:FOODON_03413809 "osmeriformes"@en)
 AnnotationAssertion(rdfs:label obo:FOODON_03413809 "osmeriform fish"@en)
+SubClassOf(obo:FOODON_03413809 obo:FOODON_00005725)
 SubClassOf(obo:FOODON_03413809 obo:FOODON_03411365)
 
 # Class: obo:FOODON_03413810 (african mudfish family)
@@ -56851,6 +57345,7 @@ AnnotationAssertion(oboInOwl:hasExactSynonym obo:FOODON_03413837 "european ancho
 AnnotationAssertion(oboInOwl:hasSynonym obo:FOODON_03413837 "anchovy"@en)
 AnnotationAssertion(oboInOwl:hasSynonym obo:FOODON_03413837 "engraulis encrasiolus"@en)
 AnnotationAssertion(rdfs:label obo:FOODON_03413837 "european anchovy"@en)
+SubClassOf(obo:FOODON_03413837 obo:FOODON_02021880)
 SubClassOf(obo:FOODON_03413837 obo:FOODON_03411854)
 SubClassOf(obo:FOODON_03413837 ObjectSomeValuesFrom(obo:RO_0002162 obo:NCBITaxon_184585))
 
@@ -60966,6 +61461,7 @@ AnnotationAssertion(oboInOwl:hasSynonym obo:FOODON_03414146 "great mediterranean
 AnnotationAssertion(oboInOwl:hasSynonym obo:FOODON_03414146 "pecten jacobaeus"@en)
 AnnotationAssertion(rdfs:label obo:FOODON_03414146 "great scallop"@en)
 SubClassOf(obo:FOODON_03414146 obo:FOODON_02020805)
+SubClassOf(obo:FOODON_03414146 ObjectSomeValuesFrom(obo:RO_0002162 obo:NCBITaxon_100774))
 
 # Class: obo:FOODON_03414147 (variegated scallop)
 
@@ -60987,7 +61483,6 @@ AnnotationAssertion(obo:IAO_0000114 obo:FOODON_03414148 obo:IAO_0000428)
 AnnotationAssertion(oboInOwl:hasDbXref obo:FOODON_03414148 <http://eol.org/pages/2249>)
 AnnotationAssertion(oboInOwl:hasDbXref obo:FOODON_03414148 langual:B4148)
 AnnotationAssertion(oboInOwl:hasDbXref obo:FOODON_03414148 "CEC1993:1349")
-AnnotationAssertion(oboInOwl:hasNarrowSynonym obo:FOODON_03414148 "Pecten meridionalis")
 AnnotationAssertion(oboInOwl:hasNarrowSynonym obo:FOODON_03414148 "Pecten meridionalis Tate, 1887")
 AnnotationAssertion(oboInOwl:hasSynonym obo:FOODON_03414148 "pecten meridionalis"@en)
 AnnotationAssertion(rdfs:label obo:FOODON_03414148 "australian scallop"@en)
@@ -64047,6 +64542,7 @@ AnnotationAssertion(oboInOwl:hasDbXref obo:FOODON_03414381 <http://eol.org/pages
 AnnotationAssertion(oboInOwl:hasDbXref obo:FOODON_03414381 langual:B4381)
 AnnotationAssertion(oboInOwl:hasSynonym obo:FOODON_03414381 "bovidae"@en)
 AnnotationAssertion(rdfs:label obo:FOODON_03414381 "bovid"@en)
+SubClassOf(obo:FOODON_03414381 obo:FOODON_00005680)
 SubClassOf(obo:FOODON_03414381 obo:FOODON_03411134)
 
 # Class: obo:FOODON_03414382 (chinese mud carp)
@@ -65028,6 +65524,7 @@ AnnotationAssertion(oboInOwl:hasSynonym obo:FOODON_03414485 "square flipper seal
 AnnotationAssertion(oboInOwl:hasSynonym obo:FOODON_03414485 "squareflipper"@en)
 AnnotationAssertion(oboInOwl:hasSynonym obo:FOODON_03414485 "ugruk"@en)
 AnnotationAssertion(rdfs:label obo:FOODON_03414485 "bearded seal"@en)
+SubClassOf(obo:FOODON_03414485 obo:FOODON_02022129)
 SubClassOf(obo:FOODON_03414485 obo:FOODON_03411341)
 SubClassOf(obo:FOODON_03414485 ObjectSomeValuesFrom(obo:RO_0002162 obo:NCBITaxon_39304))
 
@@ -65101,6 +65598,7 @@ AnnotationAssertion(oboInOwl:hasDbXref obo:FOODON_03414489 <http://eol.org/pages
 AnnotationAssertion(oboInOwl:hasDbXref obo:FOODON_03414489 langual:B4489)
 AnnotationAssertion(oboInOwl:hasSynonym obo:FOODON_03414489 "strigiformes"@en)
 AnnotationAssertion(rdfs:comment obo:FOODON_03414489 "Owls are a group of birds that belong to the order *Strigiformes*, constituting 200 extant bird of prey species. Most are solitary and nocturnal, with some exceptions (e.g., the Northern Hawk Owl). Owls hunt mostly small mammals, insects, and other birds, although a few species specialize in hunting fish. They are found in all regions of the Earth except Antarctica, most of Greenland and some remote islands. Though owls are typically solitary, the literary collective noun for a group of owls is a parliament. Owls are characterized by their small beaks and wide faces, and are divided into two families: the typical owls, *Strigidae*; and the barn-owls, *Tytonidae*."@en)
+SubClassOf(obo:FOODON_03414489 obo:FOODON_02022495)
 
 # Class: obo:FOODON_03414490 (typical owl family)
 
@@ -65191,6 +65689,7 @@ AnnotationAssertion(oboInOwl:hasExactSynonym obo:FOODON_03414497 "northern sea l
 AnnotationAssertion(oboInOwl:hasSynonym obo:FOODON_03414497 "eumetopias jubatus"@en)
 AnnotationAssertion(oboInOwl:hasSynonym obo:FOODON_03414497 "northern sea lion"@en)
 AnnotationAssertion(rdfs:label obo:FOODON_03414497 "steller sea lion"@en)
+SubClassOf(obo:FOODON_03414497 obo:FOODON_02022109)
 SubClassOf(obo:FOODON_03414497 obo:FOODON_03414163)
 SubClassOf(obo:FOODON_03414497 ObjectSomeValuesFrom(obo:RO_0002162 obo:NCBITaxon_34886))
 
@@ -65206,6 +65705,7 @@ AnnotationAssertion(oboInOwl:hasExactSynonym obo:FOODON_03414498 "ringed seal")
 AnnotationAssertion(oboInOwl:hasSynonym obo:FOODON_03414498 "jar seal"@en)
 AnnotationAssertion(oboInOwl:hasSynonym obo:FOODON_03414498 "pusa hispida"@en)
 AnnotationAssertion(rdfs:label obo:FOODON_03414498 "ringed seal"@en)
+SubClassOf(obo:FOODON_03414498 obo:FOODON_02022552)
 SubClassOf(obo:FOODON_03414498 obo:FOODON_03411341)
 SubClassOf(obo:FOODON_03414498 ObjectSomeValuesFrom(obo:RO_0002162 obo:NCBITaxon_9718))
 
@@ -87385,7 +87885,6 @@ AnnotationAssertion(oboInOwl:hasNarrowSynonym obo:NCBITaxon_1204434 "Brassica ru
 AnnotationAssertion(oboInOwl:hasNarrowSynonym obo:NCBITaxon_1204434 "Brassica ruvo L.H. Bailey")
 AnnotationAssertion(oboInOwl:hasNarrowSynonym obo:NCBITaxon_1204434 "Brassica ruvo L.H.Bailey")
 AnnotationAssertion(oboInOwl:hasSynonym obo:NCBITaxon_1204434 "rape"@en)
-SubClassOf(obo:NCBITaxon_1204434 obo:FOODON_03412069)
 
 # Class: obo:NCBITaxon_1206913 (Bembrops anatirostris)
 
@@ -87939,18 +88438,6 @@ AnnotationAssertion(oboInOwl:hasNarrowSynonym obo:NCBITaxon_16752 "Houttuynia co
 AnnotationAssertion(oboInOwl:hasNarrowSynonym obo:NCBITaxon_169191 "Schinus terebinthifolia Raddi")
 AnnotationAssertion(oboInOwl:hasNarrowSynonym obo:NCBITaxon_169191 "Schinus terebinthifolius Raddi")
 
-# Class: obo:NCBITaxon_169291 (Phractolaemus ansorgii)
-
-AnnotationAssertion(obo:IAO_0000114 obo:NCBITaxon_169291 obo:IAO_0000428)
-AnnotationAssertion(obo:IAO_0000118 obo:NCBITaxon_169291 "african mudfish"@en)
-AnnotationAssertion(oboInOwl:hasDbXref obo:NCBITaxon_169291 <http://eol.org/pages/211788>)
-AnnotationAssertion(oboInOwl:hasDbXref obo:NCBITaxon_169291 <http://www.itis.gov/servlet/SingleRpt/SingleRpt?search_topic=TSN&search_value=162844>)
-AnnotationAssertion(oboInOwl:hasDbXref obo:NCBITaxon_169291 langual:B2317)
-AnnotationAssertion(oboInOwl:hasDbXref obo:NCBITaxon_169291 asfis:gph)
-AnnotationAssertion(oboInOwl:hasNarrowSynonym obo:NCBITaxon_169291 "Phractolaemus ansorgii Boulenger 1901")
-AnnotationAssertion(oboInOwl:hasNarrowSynonym obo:NCBITaxon_169291 "Phractolaemus ansorgii Boulenger, 1901")
-SubClassOf(obo:NCBITaxon_169291 obo:FOODON_03413810)
-
 # Class: obo:NCBITaxon_169607 (Tagetes minuta)
 
 AnnotationAssertion(oboInOwl:hasNarrowSynonym obo:NCBITaxon_169607 "Tagetes minuta L.")
@@ -88084,7 +88571,6 @@ AnnotationAssertion(oboInOwl:hasDbXref obo:NCBITaxon_179359 <http://eol.org/page
 AnnotationAssertion(oboInOwl:hasDbXref obo:NCBITaxon_179359 langual:B2147)
 AnnotationAssertion(oboInOwl:hasDbXref obo:NCBITaxon_179359 asfis:lij)
 AnnotationAssertion(oboInOwl:hasSynonym obo:NCBITaxon_179359 "threadfish"@en)
-SubClassOf(obo:NCBITaxon_179359 obo:FOODON_03413967)
 
 # Class: obo:NCBITaxon_179534 (Epinephelus caninus)
 
@@ -88555,7 +89041,6 @@ AnnotationAssertion(oboInOwl:hasDbXref obo:NCBITaxon_224708 langual:B1849)
 AnnotationAssertion(oboInOwl:hasDbXref obo:NCBITaxon_224708 asfis:mha)
 AnnotationAssertion(oboInOwl:hasDbXref obo:NCBITaxon_224708 "CEC1993:164")
 AnnotationAssertion(oboInOwl:hasSynonym obo:NCBITaxon_224708 "menhaden, atlantic"@en)
-SubClassOf(obo:NCBITaxon_224708 obo:FOODON_03411396)
 
 # Class: obo:NCBITaxon_224711 (Opisthonema oglinum)
 
@@ -88566,7 +89051,6 @@ AnnotationAssertion(oboInOwl:hasDbXref obo:NCBITaxon_224711 langual:B1851)
 AnnotationAssertion(oboInOwl:hasDbXref obo:NCBITaxon_224711 asfis:tha)
 AnnotationAssertion(oboInOwl:hasDbXref obo:NCBITaxon_224711 "CEC1993:184")
 AnnotationAssertion(oboInOwl:hasSynonym obo:NCBITaxon_224711 "thread herring, atlantic"@en)
-SubClassOf(obo:NCBITaxon_224711 obo:FOODON_03411239)
 
 # Class: obo:NCBITaxon_22663 (Punica granatum)
 
@@ -89129,7 +89613,6 @@ AnnotationAssertion(oboInOwl:hasDbXref obo:NCBITaxon_3049903 asfis:ala)
 AnnotationAssertion(oboInOwl:hasDbXref obo:NCBITaxon_3049903 "CEC1993:624")
 AnnotationAssertion(oboInOwl:hasNarrowSynonym obo:NCBITaxon_3049903 "Alectis alexandrinus (Geoffroy Saint-Hilaire, 1817)")
 AnnotationAssertion(oboInOwl:hasSynonym obo:NCBITaxon_3049903 "alectis alexandrinus"@en)
-AnnotationAssertion(rdfs:label obo:NCBITaxon_3049903 "Scyris alexandrina")
 SubClassOf(obo:NCBITaxon_3049903 obo:FOODON_03413967)
 
 # Class: obo:NCBITaxon_30501 (Carcharias taurus)
@@ -89197,16 +89680,6 @@ AnnotationAssertion(oboInOwl:hasNarrowSynonym obo:NCBITaxon_310915 "Pangasius hy
 
 AnnotationAssertion(oboInOwl:hasNarrowSynonym obo:NCBITaxon_3117 "Enteromorpha prolifera (O. F. Mueller) J. Agardh")
 AnnotationAssertion(oboInOwl:hasNarrowSynonym obo:NCBITaxon_3117 "Enteromorpha prolifera (O.F. Müller) J. Agardh 1883")
-
-# Class: obo:NCBITaxon_31199 (Argopecten irradians)
-
-AnnotationAssertion(obo:IAO_0000114 obo:NCBITaxon_31199 obo:IAO_0000428)
-AnnotationAssertion(obo:IAO_0000118 obo:NCBITaxon_31199 "bay scallop"@en)
-AnnotationAssertion(oboInOwl:hasDbXref obo:NCBITaxon_31199 <http://eol.org/pages/451516>)
-AnnotationAssertion(oboInOwl:hasDbXref obo:NCBITaxon_31199 langual:B2459)
-AnnotationAssertion(oboInOwl:hasDbXref obo:NCBITaxon_31199 asfis:scb)
-AnnotationAssertion(oboInOwl:hasDbXref obo:NCBITaxon_31199 "CEC1993:1344")
-SubClassOf(obo:NCBITaxon_31199 obo:FOODON_02020805)
 
 # Class: obo:NCBITaxon_316130 (Centrolophus niger)
 
@@ -89297,7 +89770,6 @@ AnnotationAssertion(obo:IAO_0000118 obo:NCBITaxon_3244320 "mossy ark"@en)
 AnnotationAssertion(oboInOwl:hasDbXref obo:NCBITaxon_3244320 <http://eol.org/pages/452058>)
 AnnotationAssertion(oboInOwl:hasDbXref obo:NCBITaxon_3244320 langual:B3549)
 AnnotationAssertion(oboInOwl:hasDbXref obo:NCBITaxon_3244320 asfis:rkm)
-SubClassOf(obo:NCBITaxon_3244320 obo:FOODON_03412432)
 
 # Class: obo:NCBITaxon_3258 (Equisetum arvense)
 
@@ -89780,7 +90252,6 @@ AnnotationAssertion(oboInOwl:hasNarrowSynonym obo:NCBITaxon_3710 "Brassica nigra
 
 AnnotationAssertion(obo:IAO_0000114 obo:NCBITaxon_3711 obo:IAO_0000428)
 AnnotationAssertion(oboInOwl:hasNarrowSynonym obo:NCBITaxon_3711 "Brassica rapa L.")
-SubClassOf(obo:NCBITaxon_3711 obo:FOODON_03412069)
 
 # Class: obo:NCBITaxon_3712 (Brassica oleracea)
 
@@ -89801,10 +90272,6 @@ AnnotationAssertion(oboInOwl:hasNarrowSynonym obo:NCBITaxon_3712 "Brassica olera
 AnnotationAssertion(oboInOwl:hasSynonym obo:NCBITaxon_3712 "borecole"@en)
 AnnotationAssertion(oboInOwl:hasSynonym obo:NCBITaxon_3712 "brassica oleracea convar. capitate  var. conica"@en)
 AnnotationAssertion(rdfs:comment obo:NCBITaxon_3712 "\"It is considered to be closer to wild cabbage than most domesticated forms. The species *Brassica oleracea* contains a wide array of vegetables including broccoli, cauliflower, collard greens, and brussels sprouts. The cultivar group Acephala also includes spring greens and collard greens, which are extremely similar genetically.\" - Wikipedia"@en)
-SubClassOf(obo:NCBITaxon_3712 obo:FOODON_03411179)
-SubClassOf(obo:NCBITaxon_3712 obo:FOODON_03411281)
-SubClassOf(obo:NCBITaxon_3712 obo:FOODON_03411406)
-SubClassOf(obo:NCBITaxon_3712 obo:FOODON_03413358)
 
 # Class: obo:NCBITaxon_3716 (Brassica oleracea var. capitata)
 
@@ -90278,7 +90745,6 @@ AnnotationAssertion(oboInOwl:hasNarrowSynonym obo:NCBITaxon_4081 "Lycopersicon e
 AnnotationAssertion(oboInOwl:hasNarrowSynonym obo:NCBITaxon_4081 "Lycopersicon esculentum var. esculentum P. Mill.")
 AnnotationAssertion(oboInOwl:hasNarrowSynonym obo:NCBITaxon_4081 "Solanum lycopersicum L.")
 AnnotationAssertion(oboInOwl:hasSynonym obo:NCBITaxon_4081 "lycopersicon esculentum"@en)
-SubClassOf(obo:NCBITaxon_4081 obo:FOODON_03411276)
 
 # Class: obo:NCBITaxon_40830 (Barbus barbus)
 
@@ -92475,7 +92941,6 @@ AnnotationAssertion(obo:IAO_0000118 obo:NCBITaxon_875777 "flatiron herring"@en)
 AnnotationAssertion(oboInOwl:hasDbXref obo:NCBITaxon_875777 <http://eol.org/pages/206574>)
 AnnotationAssertion(oboInOwl:hasDbXref obo:NCBITaxon_875777 langual:B2152)
 AnnotationAssertion(oboInOwl:hasDbXref obo:NCBITaxon_875777 asfis:hct)
-SubClassOf(obo:NCBITaxon_875777 obo:FOODON_03413856)
 
 # Class: obo:NCBITaxon_87759 (Sarpa salpa)
 
@@ -93820,14 +94285,6 @@ AnnotationAssertion(dcterms:contributor obo:FOODON_00005164 <https://orcid.org/0
 AnnotationAssertion(oboInOwl:hasDbXref obo:FOODON_02010217 siren:F17328)
 AnnotationAssertion(oboInOwl:hasDbXref obo:FOODON_02020219 siren:F10168)
 AnnotationAssertion(oboInOwl:hasDbXref obo:FOODON_02020900 siren:F9737)
-AnnotationAssertion(oboInOwl:hasDbXref obo:FOODON_02021535 <http://eol.org/pages/328647>)
-AnnotationAssertion(oboInOwl:hasDbXref obo:FOODON_02021535 <http://www.itis.gov/servlet/SingleRpt/SingleRpt?search_topic=TSN&search_value=180690>)
-AnnotationAssertion(oboInOwl:hasDbXref obo:FOODON_02021535 langual:B2096)
-AnnotationAssertion(oboInOwl:hasDbXref obo:FOODON_02021535 "MSW3:14100004")
-AnnotationAssertion(oboInOwl:hasNarrowSynonym obo:FOODON_02021535 "Equus asinus Linnaeus, 1758")
-AnnotationAssertion(oboInOwl:hasSynonym obo:FOODON_02021535 "ass"@en)
-AnnotationAssertion(oboInOwl:hasSynonym obo:FOODON_02021535 "burro"@en)
-AnnotationAssertion(oboInOwl:hasSynonym obo:FOODON_02021535 "equus asinus"@en)
 AnnotationAssertion(oboInOwl:hasDbXref obo:FOODON_02021822 langual:B2620)
 AnnotationAssertion(oboInOwl:hasDbXref obo:FOODON_02021829 siren:F11711)
 AnnotationAssertion(oboInOwl:hasDbXref obo:FOODON_03000040 siren:F3168)
@@ -94399,6 +94856,14 @@ AnnotationAssertion(oboInOwl:hasDbXref obo:NCBITaxon_16719 langual:B1071)
 AnnotationAssertion(oboInOwl:hasDbXref obo:NCBITaxon_16719 "PLANTS:JUNI")
 AnnotationAssertion(oboInOwl:hasNarrowSynonym obo:NCBITaxon_16719 "Juglans nigra L.")
 AnnotationAssertion(rdfs:comment obo:NCBITaxon_16719 "LanguaL curation note: When indexing the black walnut (drupe, seed) index both *BLACK WALNUT [B1533]* and *FRUIT [C0167]* (or its more precise narrower terms)."@en)
+AnnotationAssertion(obo:IAO_0000114 obo:NCBITaxon_169291 obo:IAO_0000428)
+AnnotationAssertion(obo:IAO_0000118 obo:NCBITaxon_169291 "african mudfish"@en)
+AnnotationAssertion(oboInOwl:hasDbXref obo:NCBITaxon_169291 <http://eol.org/pages/211788>)
+AnnotationAssertion(oboInOwl:hasDbXref obo:NCBITaxon_169291 <http://www.itis.gov/servlet/SingleRpt/SingleRpt?search_topic=TSN&search_value=162844>)
+AnnotationAssertion(oboInOwl:hasDbXref obo:NCBITaxon_169291 langual:B2317)
+AnnotationAssertion(oboInOwl:hasDbXref obo:NCBITaxon_169291 asfis:gph)
+AnnotationAssertion(oboInOwl:hasNarrowSynonym obo:NCBITaxon_169291 "Phractolaemus ansorgii Boulenger 1901")
+AnnotationAssertion(oboInOwl:hasNarrowSynonym obo:NCBITaxon_169291 "Phractolaemus ansorgii Boulenger, 1901")
 AnnotationAssertion(obo:IAO_0000114 obo:NCBITaxon_171959 obo:IAO_0000122)
 AnnotationAssertion(obo:IAO_0000118 obo:NCBITaxon_171959 "sudangrass plant"@en)
 AnnotationAssertion(oboInOwl:hasDbXref obo:NCBITaxon_171959 <http://eol.org/pages/1115576>)
@@ -94470,6 +94935,11 @@ AnnotationAssertion(oboInOwl:hasExactSynonym obo:NCBITaxon_307728 "plains prickl
 AnnotationAssertion(oboInOwl:hasExactSynonym obo:NCBITaxon_307728 "starvation prickle"@en)
 AnnotationAssertion(oboInOwl:hasExactSynonym obo:NCBITaxon_307728 "starvation pricklypear"@en)
 AnnotationAssertion(oboInOwl:hasNarrowSynonym obo:NCBITaxon_307728 "Opuntia polyacantha Haw.")
+AnnotationAssertion(obo:IAO_0000114 obo:NCBITaxon_31199 obo:IAO_0000428)
+AnnotationAssertion(oboInOwl:hasDbXref obo:NCBITaxon_31199 <http://eol.org/pages/451516>)
+AnnotationAssertion(oboInOwl:hasDbXref obo:NCBITaxon_31199 langual:B2459)
+AnnotationAssertion(oboInOwl:hasDbXref obo:NCBITaxon_31199 asfis:scb)
+AnnotationAssertion(oboInOwl:hasDbXref obo:NCBITaxon_31199 "CEC1993:1344")
 AnnotationAssertion(obo:IAO_0000114 obo:NCBITaxon_32201 obo:IAO_0000122)
 AnnotationAssertion(obo:IAO_0000115 obo:NCBITaxon_32201 "The pecan, *Carya illinoinensis*, is a species of hickory, native to south-central North America, in Mexico from Coahuila south to Jalisco and Veracruz, in the United States from southern Iowa, Illinois, Missouri, and Indiana east to western Kentucky, southwestern Ohio, North Carolina, South Carolina, and western Tennessee, south through Georgia, Alabama, Mississippi, Louisiana, Texas, Oklahoma, Arkansas, and Florida, and west into New Mexico."@en)
 AnnotationAssertion(obo:IAO_0000118 obo:NCBITaxon_32201 "pecan tree"@en)

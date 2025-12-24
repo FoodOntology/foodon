@@ -2756,6 +2756,7 @@ AnnotationAssertion(owl:deprecated obo:FOODON_03413340 "true"^^xsd:boolean)
 
 # Class: obo:FOODON_03413365 (obsolete: yak)
 
+AnnotationAssertion(obo:IAO_0100001 obo:FOODON_03413365 obo:FOODON_02020875)
 AnnotationAssertion(obo:IAO_0100001 obo:FOODON_03413365 obo:NCBITaxon_30521)
 AnnotationAssertion(rdfs:label obo:FOODON_03413365 "obsolete: yak"@en)
 AnnotationAssertion(owl:deprecated obo:FOODON_03413365 "true"^^xsd:boolean)
@@ -2803,18 +2804,6 @@ AnnotationAssertion(owl:deprecated obo:FOODON_03413468 "true"^^xsd:boolean)
 AnnotationAssertion(obo:IAO_0100001 obo:FOODON_03413482 obo:NCBITaxon_111974)
 AnnotationAssertion(rdfs:label obo:FOODON_03413482 "obsolete: common ground dove"@en)
 AnnotationAssertion(owl:deprecated obo:FOODON_03413482 "true"^^xsd:boolean)
-
-# Class: obo:FOODON_03413549 (obsolete: mossy ark)
-
-AnnotationAssertion(obo:IAO_0100001 obo:FOODON_03413549 obo:NCBITaxon_121025)
-AnnotationAssertion(rdfs:label obo:FOODON_03413549 "obsolete: mossy ark"@en)
-AnnotationAssertion(owl:deprecated obo:FOODON_03413549 "true"^^xsd:boolean)
-
-# Class: obo:FOODON_03413720 (obsolete: ruvo kale plant)
-
-AnnotationAssertion(obo:IAO_0100001 obo:FOODON_03413720 obo:NCBITaxon_1204434)
-AnnotationAssertion(rdfs:label obo:FOODON_03413720 "obsolete: ruvo kale plant"@en)
-AnnotationAssertion(owl:deprecated obo:FOODON_03413720 "true"^^xsd:boolean)
 
 # Class: obo:FOODON_03413721 (sweet onion plant)
 

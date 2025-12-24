@@ -1,3 +1,7 @@
+# OUTDATED. A better approach is to:
+# - string ROBOT commands, demonstrated in robot_maintenance.py
+# - or to use OWLReady2, demonstrated in foodon_table.py
+
 import json
 import sys
 import os
