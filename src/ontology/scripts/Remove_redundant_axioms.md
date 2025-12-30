@@ -2,6 +2,7 @@
 # axioms in manually curated files.  Run in /src/ontology/
 
 BEWARE: inclusion of foodon_edit.ofn below BRINGS IN ITS IMPORTS TOO!!!!!
+# FIRST foodon-edit.ofn is the one that axioms are removed from.
 
 robot unmerge --input foodon-edit.ofn\
  --input imports/chebi_import.owl\

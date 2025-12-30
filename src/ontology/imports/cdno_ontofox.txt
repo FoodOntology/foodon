@@ -1,5 +1,5 @@
 [URI of the OWL(RDF/XML) output file]
-http://purl.obolibrary.org/obo/foodon/imports/cdno_import.owl
+http://purl.obolibrary.org/obo/foodon/imports/cdno_import.ofn
 
 [Source ontology]
 CDNO
@@ -33,12 +33,10 @@ http://purl.obolibrary.org/obo/BFO_0000040 # material entity
 includeAllIntermediates
 
 [Source annotation URIs]
-includeAllAxioms
-
-#http://www.w3.org/2000/01/rdf-schema#label
-#http://purl.obolibrary.org/obo/IAO_0000115 
-#http://purl.obolibrary.org/obo/IAO_0000114
-#http://purl.obolibrary.org/obo/IAO_0000118
-#http://purl.obolibrary.org/obo/IAO_0000119
-#http://www.w3.org/2002/07/owl#deprecated
-#http://purl.obolibrary.org/obo/IAO_0100001 # replaced by
+http://www.w3.org/2000/01/rdf-schema#label
+http://purl.obolibrary.org/obo/IAO_0000115 
+http://purl.obolibrary.org/obo/IAO_0000114
+http://purl.obolibrary.org/obo/IAO_0000118
+http://purl.obolibrary.org/obo/IAO_0000119
+http://www.w3.org/2002/07/owl#deprecated
+http://purl.obolibrary.org/obo/IAO_0100001 # replaced by

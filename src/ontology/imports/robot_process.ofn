@@ -403,7 +403,6 @@ AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000114> <http://purl.ob
 AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000115> <http://purl.obolibrary.org/obo/FOODON_00002451> "A process involving the physical transformation of a food source or food product into some derived organic material or food product"@en)
 AnnotationAssertion(<http://purl.org/dc/terms/contributor> <http://purl.obolibrary.org/obo/FOODON_00002451> "https://orcid.org/0000-0002-8844-9165")
 AnnotationAssertion(rdfs:label <http://purl.obolibrary.org/obo/FOODON_00002451> "food transformation process"@en)
-SubClassOf(<http://purl.obolibrary.org/obo/FOODON_00002451> <http://purl.obolibrary.org/obo/OBI_0000011>)
 SubClassOf(<http://purl.obolibrary.org/obo/FOODON_00002451> ObjectSomeValuesFrom(<http://purl.obolibrary.org/obo/OBI_0000299> <http://purl.obolibrary.org/obo/FOODON_00002403>))
 
 # Class: <http://purl.obolibrary.org/obo/FOODON_00002462> (shallow frying)
@@ -698,7 +697,7 @@ SubClassOf(<http://purl.obolibrary.org/obo/FOODON_03000001> ObjectSomeValuesFrom
 
 AnnotationAssertion(<http://www.geneontology.org/formats/oboInOwl#hasDbXref> <http://purl.obolibrary.org/obo/FOODON_03450002> "http://www.langual.org/langual_thesaurus.asp?termid=G0002")
 AnnotationAssertion(rdfs:label <http://purl.obolibrary.org/obo/FOODON_03450002> "food cooking"@en)
-SubClassOf(<http://purl.obolibrary.org/obo/FOODON_03450002> <http://purl.obolibrary.org/obo/FOODON_00002451>)
+SubClassOf(<http://purl.obolibrary.org/obo/FOODON_03450002> <http://purl.obolibrary.org/obo/FOODON_03460111>)
 
 # Class: <http://purl.obolibrary.org/obo/FOODON_03450004> (cooking by dry heat)
 

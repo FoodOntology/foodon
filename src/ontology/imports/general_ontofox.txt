@@ -7,7 +7,7 @@ http://purl.obolibrary.org/obo/foodon/imports/general_import.ofn
 OBI
 
 [Low level source term URIs] 
-http://purl.obolibrary.org/obo/OBI_0100026 # organism  DUPLICATE of COB 
+#http://purl.obolibrary.org/obo/OBI_0100026 # organism  DUPLICATE of COB 
 http://purl.obolibrary.org/obo/OBI_0000181 # population
 
 http://purl.obolibrary.org/obo/OBI_0000293 # has specified input
@@ -43,20 +43,10 @@ http://purl.obolibrary.org/obo/IAO_0000414 #          mass measurement datum
 http://purl.obolibrary.org/obo/IAO_0000416 #          time measurement datum
 http://purl.obolibrary.org/obo/OBI_0001619 #             specimen collection time measurement datum
 
-http://purl.obolibrary.org/obo/IAO_0000078 # curation status specification
-http://purl.obolibrary.org/obo/IAO_0000428 #    requires discussion
-http://purl.obolibrary.org/obo/IAO_0000120 #    metadata complete
-http://purl.obolibrary.org/obo/IAO_0000122 #    ready for release
-http://purl.obolibrary.org/obo/IAO_0000124 #    uncurated
-http://purl.obolibrary.org/obo/IAO_0000002 #    example to be eventually removed
-http://purl.obolibrary.org/obo/IAO_0000121 #    organizational term
-http://purl.obolibrary.org/obo/IAO_0000423 #    to be replaced with external ontology term
-http://purl.obolibrary.org/obo/IAO_0000123 #    metadata incomplete
-http://purl.obolibrary.org/obo/IAO_0000125 #    pending final vetting
-
 http://purl.obolibrary.org/obo/OBI_1110108 # material to be added
 http://purl.obolibrary.org/obo/OBI_0000967 # container
 http://purl.obolibrary.org/obo/OBI_0000245 # organization
+http://purl.obolibrary.org/obo/OBI_0302893 # storage
 
 # INFORMATION CONTENT 
 http://purl.obolibrary.org/obo/OBI_0200000 # data transformation
@@ -72,9 +62,9 @@ http://purl.obolibrary.org/obo/IAO_0000039 # has measurement unit label
 http://purl.obolibrary.org/obo/IAO_0000577 # centrally registered identifier symbol
 
 # PROCESSES
-http://purl.obolibrary.org/obo/OBI_0000659 # specimen collection process
+#http://purl.obolibrary.org/obo/OBI_0000659 # specimen collection process
 http://purl.obolibrary.org/obo/OBI_0000443 # analyte assay
-http://purl.obolibrary.org/obo/OBI_0000094 # material processing
+# http://purl.obolibrary.org/obo/OBI_0000094 # material processing
 
 # RELATIONS
 http://purl.obolibrary.org/obo/IAO_0000136 # is about
@@ -87,6 +77,17 @@ http://purl.obolibrary.org/obo/IAO_0000424 # expand expression to
 http://purl.obolibrary.org/obo/IAO_0010000 # has axiom label
 http://purl.obolibrary.org/obo/IAO_0000112 # example of usage
 
+http://purl.obolibrary.org/obo/IAO_0000078 # curation status specification
+http://purl.obolibrary.org/obo/IAO_0000428 #    requires discussion
+http://purl.obolibrary.org/obo/IAO_0000120 #    metadata complete
+http://purl.obolibrary.org/obo/IAO_0000122 #    ready for release
+http://purl.obolibrary.org/obo/IAO_0000124 #    uncurated
+http://purl.obolibrary.org/obo/IAO_0000002 #    example to be eventually removed
+http://purl.obolibrary.org/obo/IAO_0000121 #    organizational term
+http://purl.obolibrary.org/obo/IAO_0000423 #    to be replaced with external ontology term
+http://purl.obolibrary.org/obo/IAO_0000123 #    metadata incomplete
+http://purl.obolibrary.org/obo/IAO_0000125 #    pending final vetting
+
 [Top level source term URIs and target direct superclass URIs]
 http://purl.obolibrary.org/obo/IAO_0000030 # information
 http://purl.obolibrary.org/obo/BFO_0000020 # characteristic
@@ -95,6 +96,17 @@ subClassOf http://purl.obolibrary.org/obo/BFO_0000020
 http://purl.obolibrary.org/obo/BFO_0000141 # immaterial entity
 http://purl.obolibrary.org/obo/BFO_0000040 # material entity
 http://purl.obolibrary.org/obo/BFO_0000015 # process
+#http://purl.obolibrary.org/obo/OBI_0000011 # planned process
+http://purl.obolibrary.org/obo/COB_0000035 # completely executed planned process
+
+#http://purl.obolibrary.org/obo/OBI_0000047 # processed material
+http://purl.obolibrary.org/obo/COB_0000026 # processed material entity
+
+#http://purl.obolibrary.org/obo/OBI_0000968 # device
+http://purl.obolibrary.org/obo/COB_0001300 # device
+
+#http://purl.obolibrary.org/obo/OBI_0000094 # material processing
+http://purl.obolibrary.org/obo/COB_0000110 # material processing
 
 [Source term retrieval setting]
 includeAllIntermediates
@@ -788,8 +800,8 @@ http://purl.obolibrary.org/obo/PO_0006342 # infructescence
 
 [Top level source term URIs and target direct superclass URIs]
 http://purl.obolibrary.org/obo/PO_0009012 # plant structure development stage
-# MUST IMPORT THIS BUT NO PARENT CONTINUANT
-# http://purl.obolibrary.org/obo/UBERON_0001062 # anatomical entity
+# MUST IMPORT THIS to block PARENT CONTINUANT
+http://purl.obolibrary.org/obo/UBERON_0001062 # anatomical entity
 
 http://purl.obolibrary.org/obo/BFO_0000040 # material entity
 
@@ -889,30 +901,6 @@ includeAllIntermediates
 
 [Source annotation URIs]
 #includeAllAxioms # CANT DO THIS UNTIL COB FULLY INTEGRATED WITH RO
-http://www.w3.org/2000/01/rdf-schema#label
-http://purl.obolibrary.org/obo/IAO_0000115 
-http://purl.obolibrary.org/obo/IAO_0000114
-http://purl.obolibrary.org/obo/IAO_0000118
-http://purl.obolibrary.org/obo/IAO_0000119
-http://www.geneontology.org/formats/oboInOwl#oboInOwl:hasExactSynonym
-http://www.w3.org/2002/07/owl#deprecated
-http://purl.obolibrary.org/obo/IAO_0100001 # replaced by
-
-###########################################
-
-[Source ontology]
-STATO
-
-[Low level source term URIs]
-http://purl.obolibrary.org/obo/STATO_0000503 # simple random sampling
-http://purl.obolibrary.org/obo/STATO_0000102 # executed by
-[Top level source term URIs and target direct superclass URIs]
-http://purl.obolibrary.org/obo/BFO_0000015 # process
-
-[Source term retrieval setting]
-includeAllIntermediates
-
-[Source annotation URIs]
 http://www.w3.org/2000/01/rdf-schema#label
 http://purl.obolibrary.org/obo/IAO_0000115 
 http://purl.obolibrary.org/obo/IAO_0000114
@@ -1031,8 +1019,8 @@ http://purl.obolibrary.org/obo/UBERON_0001988 # feces
 [Top level source term URIs and target direct superclass URIs]
 http://purl.obolibrary.org/obo/UBERON_0000104 # life cycle
 
-# MUST IMPORT THIS BUT NO PARENT. DL problem shows up with continuant ???
-# http://purl.obolibrary.org/obo/UBERON_0001062 # anatomical entity
+# MUST IMPORT THIS to block PARENT. DL problem shows up with continuant ???
+http://purl.obolibrary.org/obo/UBERON_0001062 # anatomical entity
 
 #http://purl.obolibrary.org/obo/UBERON_0000466 # immaterial anatomical entity UNUSED
 http://purl.obolibrary.org/obo/UBERON_0000465 # material anatomical entity

@@ -126,22 +126,24 @@ def assign_ID(input_mapping_list, Sheet_ID,id_int):
         image_license = res['image_license']
 
     else:
-        if id_int < 10:
-            FOODON_ID = 'FOODON:0000000{}'.format(id_int)
-        elif id_int < 100:
-            FOODON_ID = 'FOODON:000000{}'.format(id_int)
-        elif id_int < 1000:
-            FOODON_ID = 'FOODON:00000{}'.format(id_int)
-        elif id_int < 10000:
-            FOODON_ID = 'FOODON:0000{}'.format(id_int)
-        elif id_int < 100000:
-            FOODON_ID = 'FOODON:000{}'.format(id_int)
-        elif id_int < 1000000:
-            FOODON_ID = 'FOODON:00{}'.format(id_int)
-        elif id_int < 10000000:
-            FOODON_ID = 'FOODON:0{}'.format(id_int)
-        elif id_int < 100000000:
-            FOODON_ID = 'FOODON:{}'.format(id_int)
+        FOODON_ID = f'{id_int:08d}'
+
+#        if id_int < 10:
+#            FOODON_ID = 'FOODON:0000000{}'.format(id_int)
+#        elif id_int < 100:
+#            FOODON_ID = 'FOODON:000000{}'.format(id_int)
+#        elif id_int < 1000:
+#            FOODON_ID = 'FOODON:00000{}'.format(id_int)
+#        elif id_int < 10000:
+#            FOODON_ID = 'FOODON:0000{}'.format(id_int)
+#        elif id_int < 100000:
+#            FOODON_ID = 'FOODON:000{}'.format(id_int)
+#        elif id_int < 1000000:
+#            FOODON_ID = 'FOODON:00{}'.format(id_int)
+#        elif id_int < 10000000:
+#            FOODON_ID = 'FOODON:0{}'.format(id_int)
+#        elif id_int < 100000000:
+#            FOODON_ID = 'FOODON:{}'.format(id_int)
         id_int += 1
         created = ''
         contributor = ''
@@ -228,9 +230,9 @@ def main():
 
                             if item['parent class'] is None:
                                 parent_class = ''
-                            # Special case for row with FOODON:00003004 set parent class to be 'animal_parent' from species list
-                            elif s['animal_parent'] and item['ID'] == 'FOODON:00003004':
-                                parent_class = s['animal_parent']
+                            # Special case for row with FOODON:00003004 set parent class to be 'organism_parent' from species list
+                            elif s['organism_parent'] and item['ID'] == 'FOODON:00003004':
+                                parent_class = s['organism_parent']
                             else:
                                 parent_class = item['parent class'].format(organism=species_label, organism_base=s['species'])
 
@@ -266,9 +268,9 @@ def main():
                                 if item['Equivalence axiom'] is None:
                                     equivalence = ''
                                 # Special case for row with FOODON:00003004 and row has an Equivalence axiom
-                                elif s['animal_parent'] and item['ID'] == 'FOODON:00003004':
+                                elif s['organism_parent'] and item['ID'] == 'FOODON:00003004':
                                     equivalence = item['Equivalence axiom'].format(organism=s['species'], organism_base=s['species'], taxon=s['ID'])
-                                    equivalence = equivalence.replace("animal", s['animal_parent'])
+                                    equivalence = equivalence.replace("animal", s['organism_parent'])
                                 else:
                                     equivalence = item['Equivalence axiom'].format(organism=species_label, organism_base=s['species'], taxon=s['ID'])
 

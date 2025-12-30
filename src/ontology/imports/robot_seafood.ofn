@@ -9291,13 +9291,12 @@ AnnotationAssertion(<http://www.geneontology.org/formats/oboInOwl#hasDbXref> <ht
 AnnotationAssertion(Annotation(<http://purl.obolibrary.org/obo/IAO_0000412> "FDA SFL Common Name") <http://www.geneontology.org/formats/oboInOwl#hasExactSynonym> <http://purl.obolibrary.org/obo/NCBITaxon_30493> "leopard shark"@en)
 AnnotationAssertion(rdfs:seeAlso <http://purl.obolibrary.org/obo/NCBITaxon_30493> "https://en.wikipedia.org/wiki/Leopard_shark")
 
-# Class: <http://purl.obolibrary.org/obo/NCBITaxon_3049887> (Colistium guntheri)
+# Class: <http://purl.obolibrary.org/obo/NCBITaxon_3049887> (Colistium guentheri)
 
 AnnotationAssertion(<http://purl.org/dc/terms/contributor> <http://purl.obolibrary.org/obo/NCBITaxon_3049887> "https://orcid.org/0000-0001-5275-8866")
 AnnotationAssertion(Annotation(<http://purl.obolibrary.org/obo/IAO_0000412> "FDA SFL Acceptable Market Name") <http://www.geneontology.org/formats/oboInOwl#hasBroadSynonym> <http://purl.obolibrary.org/obo/NCBITaxon_3049887> "flounder"@en)
 AnnotationAssertion(<http://www.geneontology.org/formats/oboInOwl#hasDbXref> <http://purl.obolibrary.org/obo/NCBITaxon_3049887> "itis:172975")
 AnnotationAssertion(Annotation(<http://purl.obolibrary.org/obo/IAO_0000412> "FDA SFL Common Name") <http://www.geneontology.org/formats/oboInOwl#hasExactSynonym> <http://purl.obolibrary.org/obo/NCBITaxon_3049887> "new zealand brill"@en)
-AnnotationAssertion(rdfs:label <http://purl.obolibrary.org/obo/NCBITaxon_3049887> "Colistium guntheri"@en)
 AnnotationAssertion(rdfs:seeAlso <http://purl.obolibrary.org/obo/NCBITaxon_3049887> "https://en.wikipedia.org/wiki/New_Zealand_brill")
 
 # Class: <http://purl.obolibrary.org/obo/NCBITaxon_3052985> (Goniistius gibbosus)

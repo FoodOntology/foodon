@@ -119,7 +119,7 @@ Declaration(AnnotationProperty(owl:deprecated))
 #   Annotation Properties
 ############################
 
-# Annotation Property: obo:IAO_0000111 (editor preferred label)
+# Annotation Property: obo:IAO_0000111 (editor preferred term)
 
 AnnotationAssertion(obo:IAO_0000111 obo:IAO_0000111 "editor preferred label")
 AnnotationAssertion(obo:IAO_0000111 obo:IAO_0000111 "editor preferred label"@en)
@@ -251,7 +251,7 @@ AnnotationAssertion(obo:IAO_0000412 obo:IAO_0000027 obo:ons.owl)
 AnnotationAssertion(rdfs:label obo:IAO_0000027 "data item"@en)
 SubClassOf(obo:IAO_0000027 obo:IAO_0000030)
 
-# Class: obo:IAO_0000030 (information)
+# Class: obo:IAO_0000030 (information content entity)
 
 AnnotationAssertion(obo:IAO_0000111 obo:IAO_0000030 "information content entity"@en)
 AnnotationAssertion(obo:IAO_0000114 obo:IAO_0000030 obo:IAO_0000122)
@@ -341,7 +341,6 @@ SubClassOf(obo:ONS_0000083 obo:ONS_1000008)
 AnnotationAssertion(obo:IAO_0000115 obo:ONS_0000085 "A meal is an eating/drinking occasion which usually occurs at certain time during the day."@en)
 AnnotationAssertion(obo:IAO_0000412 obo:ONS_0000085 obo:ons.owl)
 AnnotationAssertion(rdfs:label obo:ONS_0000085 "meal")
-SubClassOf(obo:ONS_0000085 obo:OBI_0000011)
 
 # Class: obo:ONS_0000094 (obsolete: individual dietary pattern)
 
