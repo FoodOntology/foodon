@@ -31,6 +31,7 @@ Declaration(Class(<http://purl.obolibrary.org/obo/FOODON_00001628>))
 Declaration(Class(<http://purl.obolibrary.org/obo/FOODON_00001638>))
 Declaration(Class(<http://purl.obolibrary.org/obo/FOODON_00001641>))
 Declaration(Class(<http://purl.obolibrary.org/obo/FOODON_00001687>))
+Declaration(Class(<http://purl.obolibrary.org/obo/FOODON_00001696>))
 Declaration(Class(<http://purl.obolibrary.org/obo/FOODON_00001759>))
 Declaration(Class(<http://purl.obolibrary.org/obo/FOODON_00001769>))
 Declaration(Class(<http://purl.obolibrary.org/obo/FOODON_00001823>))
@@ -936,13 +937,6 @@ AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000115> <http://purl.ob
 AnnotationAssertion(<http://purl.org/dc/terms/contributor> <http://purl.obolibrary.org/obo/FOODON_00005506> "https://orcid.org/0000-0001-5275-8866")
 AnnotationAssertion(rdfs:label <http://purl.obolibrary.org/obo/FOODON_00005506> "brown rice cereal (dry, instant)"@en)
 SubClassOf(<http://purl.obolibrary.org/obo/FOODON_00005506> <http://purl.obolibrary.org/obo/FOODON_00005505>)
-
-# Class: <http://purl.obolibrary.org/obo/FOODON_00005507> (corned beef)
-
-AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000115> <http://purl.obolibrary.org/obo/FOODON_00005507> "Beef that has been cured with salt and spices, typically from the brisket cut."@en)
-AnnotationAssertion(<http://purl.org/dc/terms/contributor> <http://purl.obolibrary.org/obo/FOODON_00005507> "https://orcid.org/0000-0001-5275-8866")
-AnnotationAssertion(rdfs:label <http://purl.obolibrary.org/obo/FOODON_00005507> "corned beef"@en)
-SubClassOf(<http://purl.obolibrary.org/obo/FOODON_00005507> <http://purl.obolibrary.org/obo/FOODON_00001041>)
 
 # Class: <http://purl.obolibrary.org/obo/FOODON_00005508> (beef bologna)
 

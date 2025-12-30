@@ -12397,6 +12397,7 @@ Declaration(Class(obo:FOODON_03413484))
 Declaration(Class(obo:FOODON_03413721))
 Declaration(Class(obo:FOODON_03413747))
 Declaration(Class(obo:FOODON_03413798))
+Declaration(Class(obo:FOODON_03413810))
 Declaration(Class(obo:FOODON_03413889))
 Declaration(Class(obo:FOODON_03413891))
 Declaration(Class(obo:FOODON_03414166))
@@ -12675,6 +12676,7 @@ Declaration(Class(obo:NCBITaxon_29719))
 Declaration(Class(obo:NCBITaxon_29760))
 Declaration(Class(obo:NCBITaxon_304130))
 Declaration(Class(obo:NCBITaxon_3117))
+Declaration(Class(obo:NCBITaxon_31199))
 Declaration(Class(obo:NCBITaxon_320396))
 Declaration(Class(obo:NCBITaxon_32201))
 Declaration(Class(obo:NCBITaxon_32219))
@@ -13953,6 +13955,7 @@ AnnotationAssertion(obo:IAO_0000114 obo:FOODON_00001145 obo:IAO_0000428)
 AnnotationAssertion(obo:IAO_0000115 obo:FOODON_00001145 "Microbial material derived from one or more microorganisms including bacteria, mold, and yeast."@en)
 AnnotationAssertion(dcterms:contributor obo:FOODON_00001145 "Damion Dooley"@en)
 AnnotationAssertion(rdfs:label obo:FOODON_00001145 "microbial food material"@en)
+SubClassOf(obo:FOODON_00001145 obo:FOODON_00001002)
 SubClassOf(obo:FOODON_00001145 obo:FOODON_03420116)
 
 # Class: obo:FOODON_00001146 (solanaceous root food product)
@@ -14872,6 +14875,7 @@ AnnotationAssertion(oboInOwl:hasDbXref obo:FOODON_00001275 siren:F1074)
 AnnotationAssertion(rdfs:label obo:FOODON_00001275 "chicken egg food product"@en)
 EquivalentClasses(obo:FOODON_00001275 ObjectIntersectionOf(obo:FOODON_00001105 ObjectSomeValuesFrom(obo:RO_0001000 obo:FOODON_03304616)))
 SubClassOf(obo:FOODON_00001275 obo:FOODON_00001105)
+SubClassOf(obo:FOODON_00001275 obo:FOODON_03315102)
 
 # Class: obo:FOODON_00001276 (apple cider (alcoholic))
 
@@ -31328,8 +31332,6 @@ AnnotationAssertion(obo:IAO_0000115 obo:FOODON_03301393 "Food material made from
 AnnotationAssertion(obo:IAO_0000119 obo:FOODON_03301393 wikipedia:Mycelium)
 AnnotationAssertion(oboInOwl:hasDbXref obo:FOODON_03301393 siren:F1393)
 AnnotationAssertion(rdfs:label obo:FOODON_03301393 "mycelium food material"@en)
-SubClassOf(obo:FOODON_03301393 obo:FOODON_00001143)
-SubClassOf(obo:FOODON_03301393 ObjectSomeValuesFrom(obo:RO_0001000 obo:FAO_0000011))
 
 # Class: obo:FOODON_03301394 (cauliflower (pickled, canned))
 
@@ -68058,7 +68060,7 @@ AnnotationAssertion(obo:IAO_0000114 obo:FOODON_03308540 obo:IAO_0000428)
 AnnotationAssertion(oboInOwl:hasDbXref obo:FOODON_03308540 siren:F8540)
 AnnotationAssertion(rdfs:label obo:FOODON_03308540 "calico scallop (raw)"@en)
 SubClassOf(obo:FOODON_03308540 obo:FOODON_02020805)
-SubClassOf(obo:FOODON_03308540 ObjectSomeValuesFrom(obo:RO_0001000 obo:NCBITaxon_78525))
+SubClassOf(obo:FOODON_03308540 ObjectSomeValuesFrom(obo:RO_0002162 obo:NCBITaxon_78525))
 
 # Class: obo:FOODON_03308542 (scallop (sea, raw))
 
@@ -68242,7 +68244,7 @@ AnnotationAssertion(obo:IAO_0000114 obo:FOODON_03308575 obo:IAO_0000428)
 AnnotationAssertion(oboInOwl:hasDbXref obo:FOODON_03308575 siren:F8575)
 AnnotationAssertion(rdfs:label obo:FOODON_03308575 "iceland scallop (raw)"@en)
 SubClassOf(obo:FOODON_03308575 obo:FOODON_02020805)
-SubClassOf(obo:FOODON_03308575 ObjectSomeValuesFrom(obo:RO_0001000 obo:NCBITaxon_27808))
+SubClassOf(obo:FOODON_03308575 ObjectSomeValuesFrom(obo:RO_0002162 obo:NCBITaxon_27808))
 
 # Class: obo:FOODON_03308576 (japanese snow crab meat)
 
@@ -68608,12 +68610,13 @@ AnnotationAssertion(oboInOwl:hasDbXref obo:FOODON_03308646 siren:F8646)
 AnnotationAssertion(rdfs:label obo:FOODON_03308646 "sardine larva (semidried, boiled)"@en)
 SubClassOf(obo:FOODON_03308646 obo:FOODON_00002223)
 
-# Class: obo:FOODON_03308647 (scallop (bay, raw))
+# Class: obo:FOODON_03308647 (bay scallop (raw))
 
 AnnotationAssertion(obo:IAO_0000114 obo:FOODON_03308647 obo:IAO_0000428)
 AnnotationAssertion(oboInOwl:hasDbXref obo:FOODON_03308647 siren:F8647)
-AnnotationAssertion(rdfs:label obo:FOODON_03308647 "scallop (bay, raw)"@en)
-SubClassOf(obo:FOODON_03308647 obo:FOODON_00002227)
+AnnotationAssertion(rdfs:label obo:FOODON_03308647 "bay scallop (raw)"@en)
+SubClassOf(obo:FOODON_03308647 obo:FOODON_02020805)
+SubClassOf(obo:FOODON_03308647 ObjectSomeValuesFrom(obo:RO_0002162 obo:NCBITaxon_31199))
 
 # Class: obo:FOODON_03308649 (ling (raw))
 
@@ -74500,8 +74503,10 @@ SubClassOf(obo:FOODON_03309910 ObjectSomeValuesFrom(obo:RO_0001000 obo:NCBITaxon
 AnnotationAssertion(obo:IAO_0000114 obo:FOODON_03309911 obo:IAO_0000428)
 AnnotationAssertion(oboInOwl:hasDbXref obo:FOODON_03309911 siren:F9911)
 AnnotationAssertion(rdfs:label obo:FOODON_03309911 "african mudfish (raw)"@en)
-EquivalentClasses(obo:FOODON_03309911 ObjectIntersectionOf(obo:FOODON_03301193 ObjectSomeValuesFrom(obo:RO_0001000 obo:NCBITaxon_169291)))
+EquivalentClasses(obo:FOODON_03309911 ObjectIntersectionOf(obo:FOODON_03301193 ObjectSomeValuesFrom(obo:RO_0002162 obo:NCBITaxon_169291)))
 SubClassOf(obo:FOODON_03309911 obo:FOODON_03301193)
+SubClassOf(obo:FOODON_03309911 obo:FOODON_03413810)
+SubClassOf(obo:FOODON_03309911 ObjectSomeValuesFrom(obo:RO_0002162 obo:NCBITaxon_169291))
 
 # Class: obo:FOODON_03309912 (moonfish (raw))
 
@@ -85629,7 +85634,6 @@ AnnotationAssertion(oboInOwl:hasDbXref obo:FOODON_03315102 siren:F15102)
 AnnotationAssertion(rdfs:comment obo:FOODON_03315102 "SIREN DB annotation:
 * egg FOODON:03420194"@en)
 AnnotationAssertion(rdfs:label obo:FOODON_03315102 "chicken egg material"@en)
-SubClassOf(obo:FOODON_03315102 obo:FOODON_00001275)
 SubClassOf(obo:FOODON_03315102 ObjectSomeValuesFrom(obo:RO_0001000 obo:FOODON_03316061))
 
 # Class: obo:FOODON_03315104 (lemon)
@@ -90645,10 +90649,6 @@ AnnotationAssertion(obo:IAO_0000114 obo:FOODON_03316058 obo:IAO_0000428)
 AnnotationAssertion(oboInOwl:hasDbXref obo:FOODON_03316058 siren:F16058)
 AnnotationAssertion(rdfs:label obo:FOODON_03316058 "mammalian milk (preserved)"@en)
 SubClassOf(obo:FOODON_03316058 obo:FOODON_03315150)
-
-# Class: obo:FOODON_03316061 (chicken egg)
-
-SubClassOf(obo:FOODON_03316061 obo:FOODON_00001275)
 
 # Class: obo:FOODON_03316063 (jam extra)
 
@@ -97359,6 +97359,7 @@ SubClassOf(obo:FOODON_03317280 obo:FOODON_03302101)
 
 AnnotationAssertion(obo:IAO_0000114 obo:FOODON_03317281 obo:IAO_0000428)
 AnnotationAssertion(oboInOwl:hasDbXref obo:FOODON_03317281 siren:F17281)
+AnnotationAssertion(oboInOwl:hasDbXref obo:FOODON_03317281 "SUBSET_SIREN:F17291")
 AnnotationAssertion(rdfs:label obo:FOODON_03317281 "beef sausage (raw)"@en)
 EquivalentClasses(obo:FOODON_03317281 ObjectIntersectionOf(obo:FOODON_00001222 obo:FOODON_00002958))
 SubClassOf(obo:FOODON_03317281 obo:FOODON_00002958)
@@ -99518,7 +99519,6 @@ SubClassOf(obo:FOODON_03411075 obo:FOODON_03412163)
 # Class: obo:FOODON_03411223 (mussel)
 
 AnnotationAssertion(schema:image obo:FOODON_03411223 "https://upload.wikimedia.org/wikipedia/commons/thumb/4/45/CornishMussels.JPG/640px-CornishMussels.JPG"^^xsd:anyURI)
-SubClassOf(obo:FOODON_03411223 obo:FOODON_00002051)
 
 # Class: obo:FOODON_03411224 (oyster)
 
@@ -99534,7 +99534,6 @@ AnnotationAssertion(oboInOwl:hasNarrowSynonym obo:FOODON_03411224 "crassostrea s
 AnnotationAssertion(oboInOwl:hasNarrowSynonym obo:FOODON_03411224 "ostrea spp."@en)
 AnnotationAssertion(oboInOwl:hasNarrowSynonym obo:FOODON_03411224 "pteriidae"@en)
 AnnotationAssertion(rdfs:label obo:FOODON_03411224 "oyster"@en)
-SubClassOf(obo:FOODON_03411224 obo:FOODON_00001292)
 
 # Class: obo:FOODON_03411242 (turtle)
 

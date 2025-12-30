@@ -128,10 +128,13 @@ http://purl.obolibrary.org/obo/NCBITaxon_3352506 # Awaous gutum
 http://purl.obolibrary.org/obo/NCBITaxon_3049903 # Scyris alexandrina / Alectis alexandrina / African threadfish
 
 # REPLACED NCBITaxon_163129 # Arripis georgianus
-http://purl.obolibrary.org/obo/NCBITaxon_3352246 # Arripis georgiana
+http://purl.obolibrary.org/obo/NCBITaxon_3352246 # Arripis georgiana  / Australian ruff
 
-# REPLACED NCBITaxon_387452 # Macrostrombus costatus / milk conch
+# REPLACED NCBITaxon_387452 # Macrostrombus costatus /Strombus costatus  / milk conch
 http://purl.obolibrary.org/obo/NCBITaxon_3241545 # Aliger costatus
+
+# REPLACED NCBITaxon_436001 # Indian threadfin
+http://purl.obolibrary.org/obo/NCBITaxon_445390 # Leptomelanosoma indicum
 
 # REPLACED NCBITaxon_1003771 # Paracaesio xanthura
 http://purl.obolibrary.org/obo/NCBITaxon_3358813 # Paracaesio xanthurus \ yellowtail blue snapper
@@ -149,6 +152,26 @@ http://purl.obolibrary.org/obo/NCBITaxon_3369737 # Budorcas tibetana
 # REPLACED NCBITaxon_257612 Pisum sativum var. macrocarpum
 http://purl.obolibrary.org/obo/NCBITaxon_208194 # Lathyrus oleraceus subsp. oleraceus
 
+# REPLACED NCBITaxon_121025 # Arca imbricata
+http://purl.obolibrary.org/obo/NCBITaxon_3244320 # Lamarcka imbricata
+
+# REPLACED NCBITaxon_1072472 # species:Dipturus linteus (Fries, 1838)
+http://purl.obolibrary.org/obo/NCBITaxon_2719090 # Rajella lintea 
+
+# REPLACED NCBITaxon_548163 Meuschenia scaber / velvet leatherjacket
+http://purl.obolibrary.org/obo/NCBITaxon_3357553 # Meuschenia scabra
+
+# REPLACED NCBITaxon_549450 Protothaca thaca
+http://purl.obolibrary.org/obo/NCBITaxon_2762064 #Leukoma thaca
+
+# REPLACED NCBITaxon_75034
+http://purl.obolibrary.org/obo/NCBITaxon_94948 # Pomatomus saltator
+
+http://purl.obolibrary.org/obo/NCBITaxon_427764 # Anethum foeniculum Sweet Fennel Group
+
+http://purl.obolibrary.org/obo/NCBITaxon_225040 # Sterculia quadrifida /Peanut
+
+http://purl.obolibrary.org/obo/NCBITaxon_195802 # java Almond
 http://purl.obolibrary.org/obo/NCBITaxon_70906 # Grylloidea
 http://purl.obolibrary.org/obo/NCBITaxon_128156 # Gryllus assimilis
 
@@ -1512,7 +1535,7 @@ http://purl.obolibrary.org/obo/NCBITaxon_2708 # Citrus x limon
 http://purl.obolibrary.org/obo/NCBITaxon_2711 # Citrus sinensis  
 http://purl.obolibrary.org/obo/NCBITaxon_271192 # Pimpinella anisum
 http://purl.obolibrary.org/obo/NCBITaxon_271697 # Melothria sphaerocarpa
-http://purl.obolibrary.org/obo/NCBITaxon_2719090 # Rajella lintea # WAS http://purl.obolibrary.org/obo/NCBITaxon_1072472 # species:Dipturus linteus (Fries, 1838)
+
 http://purl.obolibrary.org/obo/NCBITaxon_271940 # species:Trachurus symmetricus (Ayres, 1855)
 http://purl.obolibrary.org/obo/NCBITaxon_271941 # species:Trachurus declivis (Jenyns, 1841)
 http://purl.obolibrary.org/obo/NCBITaxon_271942 # species:Trachurus novaezelandiae Richardson, 1843
@@ -2705,7 +2728,6 @@ http://purl.obolibrary.org/obo/NCBITaxon_445359 # Nemipterus mesoprion
 http://purl.obolibrary.org/obo/NCBITaxon_445360 # Pellona ditchela
 http://purl.obolibrary.org/obo/NCBITaxon_445361 # Saurida tumbil
 http://purl.obolibrary.org/obo/NCBITaxon_445362 # species:Sphyraena jello Cuvier in Cuvier and Valenciennes, 1829
-http://purl.obolibrary.org/obo/NCBITaxon_445390 # Leptomelanosoma indicum
 http://purl.obolibrary.org/obo/NCBITaxon_4454 # family:Araceae
 http://purl.obolibrary.org/obo/NCBITaxon_44588 # species:Panax quinquefolius
 http://purl.obolibrary.org/obo/NCBITaxon_44597 # Arca noae
@@ -3444,7 +3466,7 @@ http://purl.obolibrary.org/obo/NCBITaxon_66672 # species:Bixa orellana L.
 http://purl.obolibrary.org/obo/NCBITaxon_66674 # genus:Cochlospermum Kunth
 http://purl.obolibrary.org/obo/NCBITaxon_66687 # family:Krameriaceae
 http://purl.obolibrary.org/obo/NCBITaxon_66688 # genus:Krameria L.
-http://purl.obolibrary.org/obo/NCBITaxon_66703 # Barbatia cancellaria
+
 http://purl.obolibrary.org/obo/NCBITaxon_66718 # Paralichthys dentatus
 http://purl.obolibrary.org/obo/NCBITaxon_6675 # infraclass:Cirripedia Burmeister, 1834
 http://purl.obolibrary.org/obo/NCBITaxon_6677 # Balanus spp.
