@@ -73,8 +73,9 @@
 #
 # EXAMPLES
 #
-# Retrieve up to depth 4, excluding terms with characteristics alive, raw, dead.
-# python3 foodon_table.py -d 4 -e "alive;raw;dead" 
+# Retrieve up to depth 4, excluding terms with characteristics alive, raw, dead; include langual mapping
+# NOTE exclusion delimiter is SEMICOLON.
+# python3 foodon_table.py -d 4 -e "alive;raw;dead" -x langual
 #
 # PARAMETERS
 # 
@@ -98,9 +99,11 @@ from owlready2 import *
 import owlready2.sparql.parser
 owlready2.sparql.parser._DATA_PROPS = set()
 
-#                      animal              plant by taxonomy   lichen              fungus      C.E.planned process
+# food product: 00001002; organism material: 03420116
+# completely executed planned process: COB_0000035
+# animal:FOODON_03411301, plant by taxonomy:FOODON_00003004, 
+# lichen:FOODON_03413357, fungus:FOODON_03411261
 SEARCH_ROOT = 'obo:FOODON_03411301,obo:FOODON_00003004,obo:FOODON_03413357,obo:FOODON_03411261,obo:COB_0000035'; 
-# 00001002: Food product; 03420116: Organism material
 
 INPUT_FOODON_ONTOLOGY = 'cache-foodon-merged.owl';
 OBO = "<http://purl.obolibrary.org/obo/";
@@ -120,15 +123,15 @@ def init_parser():
 		help="The whole organism node at root of hierarchic query for returning whole organism, material, food product and taxonomy table rows.",
 	);
 
-	parser.add_argument(
-		"-c",
-		"--cooking",
-		dest="process",
-		default=True,
-		action="store_true",
-		help='Include cooking process terms. Formally, this includes all FoodOn processes under the "Completely executed planned process" branch. (So named to convey that each term\'s parts and axioms are guaranteed to hold, unlike a failed process where any number of properties may be missing.)'
-		#http://purl.obolibrary.org/obo/COB_0000035 "completely executed planned process"
-	);
+
+	#parser.add_argument(
+	#	"-P",
+	#	"--process",
+	#	dest="process",
+	#	default=True,
+	#	action="store_true",
+	#	help='Include process terms. Formally, this includes all FoodOn processes under the "Completely executed planned process" branch. (So named to convey that each term\'s parts and axioms are guaranteed to hold, unlike a failed process where any number of properties may be missing.)'
+	#);
 
 	parser.add_argument(
 		"-d",
@@ -173,6 +176,16 @@ def init_parser():
 		help="A list of cross-references to include, by prefix (e.g. asfis,eolife,grin,itis,langual,wd,wikipedia). wd=wikidata for cultivar names."
 	);
 
+
+	parser.add_argument(
+		"-s",
+		"--synonyms",
+		dest="synonyms",
+		default=False,
+		action="store_true",
+		help="Include a column for a list of synonyms (hasSynonym and hasExactSynonym). This is helpful for text-mining applications."
+	);
+
 	parser.add_argument(
 		"-f",
 		"--fresh",
@@ -211,6 +224,8 @@ def get_food_product(focus_id):
 def getEnglishLabel(onto_class):
 
 	english_label = '';
+	#if not 'label' in onto_class:
+	#	return "NO LABEL";
 
 	for label in onto_class.label:
 		# What about British english etc?
@@ -257,9 +272,10 @@ def setProperties(term, onto_class):
 	for prop in onto_class.get_class_properties(): 
 		for value in prop[onto_class]: # value in an array.
 			match prop.python_name:
-				#case 'label': # With locale?
+				#case 'label': # handled separately
 				#case 'RO_0002162': # in taxon
 				# Echo dbxrefs out by selected prefix or *=all
+				# DBXREFS
 				case 'hasDbXref':
 					if options.dbxrefs:
 						value = str(value);
@@ -275,11 +291,13 @@ def setProperties(term, onto_class):
 							found = True;
 						if found:
 							term['dbxrefs'].add(value);
-
+				# CHARACTERISTICS
 				case 'RO_0000086' | 'RO_0000053':
 					#text = str(value).replace('.',':'); # value is 
 					char_label = getEnglishLabel(value);
 					term['characteristics'].add(char_label); # Could add uri too?
+				case '':
+					pass
 				case _:
 					#print("UNRECOGNIZED", prop.python_name)
 					pass
@@ -311,6 +329,8 @@ def parse_owl_namespaces(file_path, lines_number):
 
 	return namespaces
 
+def display(link, depth, term, mat_prod_code ='', taxonomy='', characteristics='', dbxrefs='', synonyms=''):
+	print (link, mat_prod_code, depth, "  " * (depth) + getEnglishLabel(term), taxonomy, characteristics, dbxrefs, synonyms, sep='\t');
 
 ###############################################################################
 if __name__ == "__main__":
@@ -359,8 +379,10 @@ if __name__ == "__main__":
 		print("Freshening"); # Ensure latest report is available
 		# "robot merge --input ../foodon-edit.ofn reason --reasoner ELK --create-new-ontology true --exclude-duplicate-axioms true relax reduce --output ../foodon-merged.ofn"
 		# Note, all boolean switches require a true or false parameter.
+		# NOTE: Using .owl output format because due to robot issue, only this
+		# preserves xmlns: prefixes.
 		subprocess.check_output(["robot", "merge", "--input", "../foodon-edit.ofn", 'reason', '--reasoner','ELK','--exclude-duplicate-axioms', "relax","--output", INPUT_FOODON_ONTOLOGY]);
-
+		#subprocess.check_output(["robot", "merge", "--input", "../foodon-edit.ofn", "--output", INPUT_FOODON_ONTOLOGY]);
 
 	# FIX WIERD CDNO ONTOLOGY PROBLEM where wrong label datatype exists
 	fixDatatype();
@@ -387,7 +409,9 @@ if __name__ == "__main__":
 		else:
 			print ('WARNING: root parameter ', onto_uri, ' was not found in ontology');
 
-	term_filter = set(options.exclude.split(','));
+	# TERM DELIMITER IS SEMICOLON TO AVOID CONFUSION WITH TEXT THAT HAS COMMAS IN IT
+	term_filter = set(options.exclude.split(';')); 
+	#print("FILTER", term_filter)
 
 	dbxref_filter = set(options.dbxrefs.split(','));
 	missing_material_links = [];
@@ -400,120 +424,164 @@ if __name__ == "__main__":
 		# Depth-first search:
 		obj = stack.popleft();
 		onto_class = obj['term'];
-		if not onto_class in processed: # prevent a term from being processed twice.
-			processed.add(onto_class);
-			parent_depth = obj['depth'];
-			item_depth = obj['depth'];
-			next_depth = obj['depth']+1;
+		if onto_class in processed: # prevent a term from being processed twice.
+			continue;
 
-			# Limit depth search by given option
-			if options.depth and item_depth > options.depth:
-				continue;
+		processed.add(onto_class);
+		parent_depth = obj['depth'];
+		item_depth = obj['depth'];
+		next_depth = obj['depth']+1;
 
-			term = {
-				'uri': str(onto_class),
-				'label': '',
-				'taxon': '',
-				'product': '',
-				'material': '',
-				'characteristics': set(),
-				'dbxrefs': set()
-			}
+		# Limit depth search by given option
+		if options.depth and item_depth > options.depth:
+			continue;
 
-			term['label'] = getEnglishLabel(onto_class);
+		term = {
+			'uri': str(onto_class),
+			'label': '',
+			'taxon': '',
+			'product': '',
+			'material': '',
+			'characteristics': set(),
+			'dbxrefs': set(),
+			'synonyms': set()
+		}
 
-			found_material = findClassByName(term['label'] + ' material');
-			if not found_material:
-				# look for ancestor 
-				#update_term_suffix_test(term['material'], label, ' material');
-				pass
+		term['label'] = getEnglishLabel(onto_class);
 
-			found_product = findClassByName(term['label'] + ' food product');
-			if not found_material:
-				#update_term_suffix_test(term['product'], label, ' food product');
-				pass
+		found_material = findClassByName(term['label'] + ' material');
+		if not found_material:
+			# look for ancestor material (ultimately, its already under this)
+			#update_term_suffix_test(term['material'], label, ' material');
+			pass
 
-			if found_material:
-				term['material'] = 'm';
-				# If a [x] material class is found, and this is a subclass of it, 
-				if found_material in onto_class.is_a:
-					# Print out material_entity line
-					link = str(found_material.iri).replace('http://purl.obolibrary.org/obo/','obo:');
-					print (link, '', parent_depth, "  " * (parent_depth) + getEnglishLabel(found_material), '', '', '', sep='\t');
-					# Bump depth since we now have a material
-					item_depth += 1;
-					next_depth = item_depth+1;
-					# Here we can add found_material's OTHER children to stack.
-					# - and take out this child from that list.
-					# Other children include "piece of [x]" and "piece(s) of [x]"
-					# as well as other hierarchies ...
+		found_product = findClassByName(term['label'] + ' food product');
+		if not found_material:
+			#update_term_suffix_test(term['product'], label, ' food product');
+			pass
+
+		if found_material:
+			term['material'] = 'm';
+			# If a [x] material class is found, and this is a subclass of it, display it
+			# onto_class.is_a provides INFERRED parentood. .get_parents_of is immediate parent(s)
+			if found_material in onto.get_parents_of(onto_class):
+				# Print out material_entity line
+				link = str(found_material.iri).replace('http://purl.obolibrary.org/obo/','obo:');
+				display (link, parent_depth, found_material);
+
+				# Bump depth since we now have a material
+				item_depth += 1;
+				next_depth = item_depth+1;
+				# Here we can add found_material's OTHER children to stack.
+				# - and take out this child from that list.
+				# Other children include "piece of [x]" and "piece(s) of [x]"
+				# as well as other hierarchies ...
 
 
 
-				else:
-					missing_material_links.append(str(term['label']));
-
-			if found_product:
-				term['product'] = 'p';
-				if found_material and not (found_material in found_product.is_a):
-
-					missing_product_links.append(getEnglishLabel(found_material) + "/" + getEnglishLabel(found_product));
-
-			# Note special case for "edible frog" FOODON_03413463 where divider 
-			# line signals "or" condition
-			#    str(taxon) = 'obo:NCBITaxon_45623 | obo:NCBITaxon_8406'
-			for taxon in onto_class.RO_0002162:
-				if term['taxon'] == '':
-					term['taxon'] = [];
-				term['taxon'].append(str(taxon).replace('.',':') );
-
-			for parent in onto_class.is_a:  # An array.	
-				if hasattr(parent, 'label'):			
-					for label in parent.label: # an array
-						pass
-
-			# Each prop is an object with [onto_class] as a key pointing to an
-			# array of values (for >1 prop relation)
-			# .IAO_0000114 has curation status; .image ;.hasDbXref .label 
-			# .IAO_0000119 definition source .IAO_0000115 definition .contributor
-			# .comment; .hasExactSynonym .date
-
-			setProperties(term, onto_class);
-
-			if term['characteristics']:
-				# apply filter to characteristics if any
-				characteristics = ';'.join(term['characteristics']);
 			else:
-				characteristics = '';
+				missing_material_links.append([onto_class, found_material]);
 
-			if term['dbxrefs']:
-				dbxrefs = ';'.join(term['dbxrefs']);
-			else:
-				dbxrefs = '';
-					
-			# Set intersection: this class is a filtered item, or has a filtered
-			# characteristic so ignore it.
-			if (term['label'] in term_filter) or (term['characteristics'] & term_filter):
-				#print ("FILTERING", term['label'], term['characteristics'] & filter)
-				continue;
+		if found_product:
+			term['product'] = 'p';
+			if found_material and not (found_material in onto.get_parents_of(found_product)):
 
-			#if (not lifecycle) or options.lifecycle:
-			# Usually only 1 taxon term but some terms like "edible frog" have 2+
-			print (term['uri'].replace('.',':'), term['material'] + term['product'], item_depth, "  " * item_depth + term['label'], ';'.join(term['taxon']), characteristics, dbxrefs, sep='\t');
+				missing_product_links.append([found_product, found_material]);
 
-			# Sort children alphabetically
-			children = sorted(onto_class.subclasses(), key=lambda term: getEnglishLabel(term));
-			for subclass in children:
-				stack.appendleft({'term': subclass, 'depth': next_depth});
+		# Note special case for "edible frog" FOODON_03413463 where divider 
+		# line signals "or" condition
+		#    str(taxon) = 'obo:NCBITaxon_45623 | obo:NCBITaxon_8406'
+		for taxon in onto_class.RO_0002162:
+			if term['taxon'] == '':
+				term['taxon'] = [];
+			term['taxon'].append(str(taxon).replace('.',':') );
+
+		if options.synonyms:
+			for synonym in onto_class.hasSynonym:
+				term['synonyms'].add(synonym);
+				pass
+			for synonym in onto_class.hasExactSynonym:
+				term['synonyms'].add(synonym);
+
+		for parent in onto_class.is_a:  # An array.	
+			if hasattr(parent, 'label'):			
+				for label in parent.label: # an array
+					pass
+
+		# Each prop is an object with [onto_class] as a key pointing to an
+		# array of values (for >1 prop relation)
+		# .IAO_0000114 has curation status; .image ;.hasDbXref .label 
+		# .IAO_0000119 definition source .IAO_0000115 definition .contributor
+		# .comment; .hasExactSynonym .date
+
+		setProperties(term, onto_class);
+				
+		# Set intersection: this class is a filtered item, or has a filtered
+		# characteristic so ignore it.
+		if (term['label'] in term_filter) or (term['characteristics'] & term_filter):
+			#print ("FILTERING", term['label'], term['characteristics'] & term_filter)
+			continue;
+
+		characteristics = ';'.join(term['characteristics']);
+		dbxrefs = ';'.join(term['dbxrefs']);
+		synonyms = ';'.join(term['synonyms']);
+
+		# Product class is at same level as whole organism.
+		if options.product and found_product and not found_product in processed:
+			#display (link, item_depth, found_product);
+			product_children = sorted(found_product.subclasses(), key=lambda term: getEnglishLabel(term));
+			for child in product_children:
+				if not (child in processed): # This includes current onto_class
+					stack.appendleft({'term': child, 'depth': item_depth});
+		
+		# If found_material and options.material, then include material's
+		# children except for onto_class itself and children which are food
+		# products
+		if options.material and found_material:
+			material_children = sorted(found_material.subclasses(), key=lambda term: getEnglishLabel(term));
+			for child in material_children:
+				# processed includes current onto_class;ALSO BLOCK X food product,
+				# which is added if options.product is true below.
+				if not child in processed and not (getEnglishLabel(child).endswith(' food_product')): 
+					stack.appendleft({'term': child, 'depth': item_depth});
+
+		# Sort children alphabetically
+		children = sorted(onto_class.subclasses(), key=lambda term: getEnglishLabel(term));
+
+		for subclass in children: # These get done before any material or food product siblings. parents.
+			# If already somehow processed, do we just print a "see also" link?
+			stack.appendleft({'term': subclass, 'depth': next_depth});
+
+		# If found_product and options.product, then include product
+		# children (product already done above). By doing these separate
+		# from food material, they can be a stand-alone option
+
+		# Usually only 1 taxon term but some terms like "edible frog" have 2+
+		display (
+			term['uri'].replace('.',':'), 
+			item_depth, 
+			onto_class, 
+			term['material'] + term['product'], 
+			';'.join(term['taxon']), 
+			characteristics, 
+			dbxrefs, 
+			synonyms
+		);
+
 
 	# 1-to-many lookup of term to children and visa vesa.
 	#item_children = df.groupby('parent_id')['id'].apply(list).to_dict();
 	#item_parents = df.groupby('id')['parent_id'].apply(list).to_dict();
 	if missing_material_links:
-		print("\nMATERIAL CLASS link to whole organism MISSING for:\n ", missing_material_links);
+		print("\n [x] whole organism to [x] material parent MISSING:", len(missing_material_links), '\n');
+		# e.g. SubClassOf(obo:AGRO_00002071 obo:COB_0000035)
+		for binding in missing_material_links:
+			print ("SubClassOf(",str(binding[0]).replace('.',':'), str(binding[1]).replace('.',':'),")");
 
 	if missing_product_links:
-		print("\nMATERIAL CLASS link to product MISSING for:\n ", missing_product_links , '\n');
+		print("\n [x] food product to [x] material parent MISSING:", len(missing_product_links), '\n');
+		for binding in missing_product_links:
+			print ("SubClassOf(",str(binding[0]).replace('.',':'), str(binding[1]).replace('.',':'),")");
 
 # 2nd pass could create lookup function for material and product hierarchy for each term in table.
 # add info to each row for material and product hierarchy if not yet ascertained.

@@ -1,3 +1,17 @@
+
+# If term replaced by obo:IAO_0100001 some other term, 
+# In foodon-edit.ofn:
+
+#   ADD: ?replacement oboInOwl:hasSynonym, oboInOwl:hasExactSynonym, obo:IAO_0000118 alternative label, oboInOwl:hasDbXref, obo:IAO_0000115 definition,
+#   DROP ?x everything about it from foodon-edit.ofn (incl. obo:IAO_0000114 curation status)
+#
+# In ../imports/foodon-deprecate.ofn add:
+#   ?x rdfs:label as "obsolete: " + label, 
+#	?x obo:IAO_0100001 ?replacement # replaced by
+#   ?x owl:deprecated true
+#
+# ASSUMES INPUT ONTOLOGY DOESN'T INCLUDE deprecation_import.ofn:
+
 import subprocess
 import tempfile
 
@@ -10,131 +24,66 @@ PREFIXES = """
 	PREFIX xsd: <http://www.w3.org/2001/XMLSchema#>
 """;
 
-# Tricky: When queries are made on foodon-edit.ofn all by itself, without 
-# imports then there may not be enough information for rdflib to determine
-# if an object is a class, in which case it assumes its an instance, and
-# perhaps puns an instance into a class, or visa versa.  So must establish
-# the classes of things up front, stand-alone. 
-# This query guarantees a deprecated item connected to an NCBITaxon which
-# has one or more parents on the FOODON side.
-BASE_NCBITAXON = """
+# Spotting entries that have replacement from a FOODON term to another where
+# neither term has been marked owl:deprecated yet. 
+BASE_DEPRECATE = """
 WHERE {
-		{?x owl:deprecated true}.
-		# {?x rdf:type owl:Class}.
 		{?x obo:IAO_0100001 ?replacement}. # replaced by
-		# {?replacement rdf:type owl:Class}.
-		FILTER (STRSTARTS(STR(?replacement), "http://purl.obolibrary.org/obo/NCBITaxon_")).
-		{?replacement rdfs:subClassOf ?animal_parent}.
-		FILTER (STRSTARTS(STR(?animal_parent), "http://purl.obolibrary.org/obo/FOODON_")).
+		FILTER (NOT EXISTS {?x owl:deprecated true})
+		FILTER (NOT EXISTS {?replacement owl:deprecated true})
+		FILTER (STRSTARTS(STR(?x), "http://purl.obolibrary.org/obo/FOODON_")).
+		{?x rdfs:label ?label} 
+
 """
 
-# Kill all oboInOwl:hasSynonym, oboInOwl:hasExactSynonym, alt label obo:IAO_0000118 which textually match label
-# If term replaced by obo:IAO_0100001 some other term, 
-#   MOVE its oboInOwl:hasSynonym, oboInOwl:hasExactSynonym, obo:IAO_0000118, oboInOwl:hasDbXref, obo:IAO_0000115, 
-#        to target term ID.
-#   DROP everything about it from foodon-edit.ofn (incl. obo:IAO_0000114 curation status)
-#   MOVE its rdfs:label as "obsolete: " + label, obo:IAO_0100001
-#   MARK it as owl:deprecated
-#   
-
-
-# Alternative label: http://purl.obolibrary.org/obo/IAO_0000118
 QUERIES = { # Sparql 1.1 (which Protege snap sparql doesn't quite support )
 
-	'attach_animal_parent': {
+	'add_deprecation_label': {
 		'active': True,
 		'type': 'INSERT',
-		'target': '../foodon-edit.ofn',
-		'query': "SELECT DISTINCT ?x (rdfs:subClassOf as ?predicate) ?animal_parent" + BASE_NCBITAXON + "}"
-	},
-	
-	# This is wrong for classes. It creates instances instead of both subject and object.
-	# Instead Need to add equivalent of this to foodon-edit.ofn :
-	# SubClassOf(obo:FOODON_00001155 ObjectSomeValuesFrom(obo:RO_0002162 obo:NCBITaxon_3654))
-	'add_in_taxon': { # RO_0002162 
-		'active': False,
-		'type': 'INSERT',
-		'target': '../foodon-edit.ofn',
-		'query': "SELECT DISTINCT ?x (obo:RO_0002162 as ?predicate) ?replacement" + BASE_NCBITAXON + "}"
+		'target': '../imports/deprecation_import.ofn',
+		'query': "SELECT DISTINCT ?x (rdfs:label as ?predicate) (CONCAT('obsolete: ', ?label) as ?new_label)" + BASE_DEPRECATE + "}"
 	},
 
-	'add_shorter_label': { # RO_0002162 ; takes off "obsolete: " prefix
+	'add_replaced_by': { # Annotation
 		'active': True,
 		'type': 'INSERT',
+		'target': '../imports/deprecation_import.ofn',
+		'query': "SELECT DISTINCT ?x (obo:IAO_0100001 as ?predicate) ?replacement" + BASE_DEPRECATE + "}"
+	},
+
+	'add_deprecated': { # Annotation
+		'active': True,
+		'type': 'INSERT',
+		'target': '../imports/deprecation_import.ofn',
+		'query': "SELECT DISTINCT ?x (owl:deprecated as ?predicate) ('true'^^xsd:boolean as ?true)" + BASE_DEPRECATE + "}"
+	}, # ('true'^^xsd:boolean as ?true)
+
+	# Done on separate file - this clears out ALL predicates of subject ?x
+	# EXCEPTION: "in taxon some ..." leads to blank node, so drop that.
+	# WHY DIDN'T THIS delete owl:subClassOf ???
+	'delete_from_foodon-edit': {
+		'active': True,
+		'type':'DELETE',
 		'target': '../foodon-edit.ofn',
-		'query': "SELECT DISTINCT ?x (rdfs:label as ?predicate) (SUBSTR(?label, 11) as ?new_label)" + BASE_NCBITAXON + """
-		?x rdfs:label ?label
+		'query': "SELECT DISTINCT ?x ?predicate ?object " + BASE_DEPRECATE + """
+		{?x ?predicate ?object}.
+		FILTER (!isBlank(?object))
 	}"""},
 
+	# ?replacement oboInOwl:hasSynonym, oboInOwl:hasExactSynonym, obo:IAO_0000118 alternative label, oboInOwl:hasDbXref, obo:IAO_0000115 definition, IAO_0000114 has curation status
 	'add_annotations': { # oboInOwl#hasDbXref
 		'active': True,
 		'type': 'INSERT',
 		'target': '../foodon-edit.ofn',# curation status, alternative label, definition
-		'query': "SELECT DISTINCT ?x ?predicate ?text" + BASE_NCBITAXON + """
-		VALUES ?predicate { obo:IAO_0000114 obo:IAO_0000118 obo:IAO_0000115 oboInOwl:hasDbXref oboInOwl:hasSynonym oboInOwl:hasExactSynonym}
-		?replacement ?predicate ?text
+		'query': "SELECT DISTINCT ?replacement ?predicate ?text" + BASE_DEPRECATE + """
+		VALUES ?predicate { oboInOwl:hasSynonym oboInOwl:hasExactSynonym obo:IAO_0000118 oboInOwl:hasDbXref obo:IAO_0000115}.
+		{?x ?predicate ?text}.
 	}"""},
-	# MOVE taxa Definition and alternative label and curation status: DELETE / INSERT
-
-	'drop_annotations': {
-		'active': True,
-		'type': 'DELETE',
-		'target': '../foodon-edit.ofn', 
-		'query': "SELECT DISTINCT ?replacement ?predicate ?text" + BASE_NCBITAXON + """
-		VALUES ?predicate { obo:IAO_0000114 obo:IAO_0000118 obo:IAO_0000115 oboInOwl:hasDbXref oboInOwl:hasSynonym oboInOwl:hasExactSynonym}
-		?replacement ?predicate ?text
-	}"""},
-
-	'undo_tax_animal_parent': {
-		'active': True,
-		'type': 'DELETE',
-		'target': '../foodon-edit.ofn',
-		'query': "SELECT DISTINCT ?replacement (rdfs:subClassOf as ?predicate) ?animal_parent" + BASE_NCBITAXON + "}"
-	},
-
-	# Done on separate file - this clears out ALL predicates of subject ?x
-	'delete_deprecation': {
-		'active': True,
-		'type':'DELETE',
-		'target': '../imports/deprecation_import.ofn',
-		'query': "SELECT DISTINCT ?x ?predicate ?object " + BASE_NCBITAXON + """
-		{?x ?predicate ?object}
-		}"""},# OPTIONAL {?child rdfs:subClassOf ?replacement}. FILTER (!bound(?child)).
-
-
-	'delete_taxa_individual': { # RO_0002162 
-		'active': True,
-		'type': 'DELETE',
-		'target': '../foodon-edit.ofn',
-		'query': "SELECT DISTINCT ?replacement (rdf:type as ?predicate) (owl:NamedIndividual as ?object)" + BASE_NCBITAXON + "}"
-	},
-	# NOT WORKING.
-	'assert_taxa_class': { # RO_0002162 
-		'active': True,
-		'type': 'INSERT',
-		'target': '../foodon-edit.ofn',
-		'query': "SELECT DISTINCT ?replacement (rdf:type as ?predicate) (owl:Class as ?object)" + BASE_NCBITAXON + "}"
-	},
-
-	'duplicate_synonym': {
-		'active': True,
-		'type': 'DELETE',
-		'target': '../foodon-edit.ofn',
-		'query': """
-		SELECT DISTINCT ?x ?predicate ?string
-		WHERE {
-			VALUES ?predicate { oboInOwl:hasSynonym oboInOwl:hasExactSynonym oboInOwl:hasNarrowSynonym oboInOwl:hasBroadSynonym obo:IAO_0000118}
-			{?x rdfs:label ?label}.
-			{?x ?predicate ?string}.
-			FILTER (LCASE(STR(?label)) = LCASE(STR(?string)) ).
-		}"""},
-
-
 
 }
 
 TEST = {
-
 
 
 }
@@ -142,7 +91,11 @@ TEST = {
 ###############################################################################
 if __name__ == "__main__":
 
+
 	CACHED_ONTOLOGY = "cache-foodon-merged.owl"; # has merged version of FoodOn.
+
+	print("Freshening", CACHED_ONTOLOGY); # Ensure latest report is available
+	subprocess.check_output(["robot", "merge", "--input", "../foodon-edit.ofn", 'reason', '--reasoner','ELK','--exclude-duplicate-axioms', "relax","--output", CACHED_ONTOLOGY]);
 
 	# Creates a temporary file in /var/folders/73/
 	# PROBLEM, CAN't read it as well as write to it.  Subprocess.run doesn't see file with content.
