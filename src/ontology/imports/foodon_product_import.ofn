@@ -13269,7 +13269,6 @@ SubClassOf(obo:FOODON_00001040 obo:FOODON_02020149)
 
 EquivalentClasses(obo:FOODON_00001041 ObjectIntersectionOf(obo:FOODON_00001134 ObjectSomeValuesFrom(obo:RO_0001000 obo:NCBITaxon_9913)))
 SubClassOf(obo:FOODON_00001041 obo:FOODON_00001134)
-SubClassOf(obo:FOODON_00001041 ObjectSomeValuesFrom(obo:RO_0001000 obo:NCBITaxon_9913))
 
 # Class: obo:FOODON_00001042 (bovine milk beverage)
 
