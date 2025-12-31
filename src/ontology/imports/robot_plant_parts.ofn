@@ -1918,6 +1918,7 @@ Declaration(Class(<http://purl.obolibrary.org/obo/FOODON_03301415>))
 Declaration(Class(<http://purl.obolibrary.org/obo/FOODON_03301421>))
 Declaration(Class(<http://purl.obolibrary.org/obo/FOODON_03301446>))
 Declaration(Class(<http://purl.obolibrary.org/obo/FOODON_03301453>))
+Declaration(Class(<http://purl.obolibrary.org/obo/FOODON_03301467>))
 Declaration(Class(<http://purl.obolibrary.org/obo/FOODON_03301477>))
 Declaration(Class(<http://purl.obolibrary.org/obo/FOODON_03301524>))
 Declaration(Class(<http://purl.obolibrary.org/obo/FOODON_03301542>))
@@ -21488,14 +21489,13 @@ AnnotationAssertion(rdfs:label <http://purl.obolibrary.org/obo/FOODON_03303921> 
 EquivalentClasses(<http://purl.obolibrary.org/obo/FOODON_03303921> ObjectIntersectionOf(<http://purl.obolibrary.org/obo/PO_0025034> ObjectSomeValuesFrom(<http://purl.obolibrary.org/obo/RO_0002162> <http://purl.obolibrary.org/obo/NCBITaxon_29719>)))
 SubClassOf(<http://purl.obolibrary.org/obo/FOODON_03303921> <http://purl.obolibrary.org/obo/PO_0025034>)
 
-# Class: <http://purl.obolibrary.org/obo/FOODON_03304996> (soybean (whole or pieces))
+# Class: <http://purl.obolibrary.org/obo/FOODON_03304996> (soybean material)
 
 AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000115> <http://purl.obolibrary.org/obo/FOODON_03304996> "A whole soybean or some substance made from a processed soybean."@en)
 AnnotationAssertion(<http://purl.org/dc/terms/contributor> <http://purl.obolibrary.org/obo/FOODON_03304996> "https://orcid.org/0000-0001-5275-8866")
 AnnotationAssertion(<http://www.geneontology.org/formats/oboInOwl#hasExactSynonym> <http://purl.obolibrary.org/obo/FOODON_03304996> "soybean"@en)
-AnnotationAssertion(rdfs:label <http://purl.obolibrary.org/obo/FOODON_03304996> "soybean (whole or pieces)"@en)
-SubClassOf(<http://purl.obolibrary.org/obo/FOODON_03304996> <http://purl.obolibrary.org/obo/FOODON_00002266>)
-SubClassOf(<http://purl.obolibrary.org/obo/FOODON_03304996> ObjectUnionOf(<http://purl.obolibrary.org/obo/FOODON_03301415> ObjectSomeValuesFrom(<http://purl.obolibrary.org/obo/RO_0001000> <http://purl.obolibrary.org/obo/FOODON_03301415>)))
+AnnotationAssertion(rdfs:label <http://purl.obolibrary.org/obo/FOODON_03304996> "soybean material"@en)
+SubClassOf(<http://purl.obolibrary.org/obo/FOODON_03304996> <http://purl.obolibrary.org/obo/FOODON_03301467>)
 
 # Class: <http://purl.obolibrary.org/obo/FOODON_03305104> (fig (dried))
 
@@ -22671,7 +22671,7 @@ SubClassOf(<http://purl.obolibrary.org/obo/FOODON_03414944> <http://purl.obolibr
 
 AnnotationAssertion(rdfs:label <http://purl.obolibrary.org/obo/NCBITaxon_236974> "Trapa bicornis"@en)
 
-# Class: <http://purl.obolibrary.org/obo/NCBITaxon_260130> (Acca sellowiana)
+# Class: <http://purl.obolibrary.org/obo/NCBITaxon_260130> (Feijoa sellowiana)
 
 AnnotationAssertion(rdfs:label <http://purl.obolibrary.org/obo/NCBITaxon_260130> "Acca sellowiana"@en)
 
