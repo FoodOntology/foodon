@@ -48,6 +48,11 @@ http://purl.obolibrary.org/obo/OBI_0000967 # container
 http://purl.obolibrary.org/obo/OBI_0000245 # organization
 http://purl.obolibrary.org/obo/OBI_0302893 # storage
 
+http://purl.obolibrary.org/obo/OBI_0001135 # balance
+http://purl.obolibrary.org/obo/OBI_0002444 # measurand role
+http://purl.obolibrary.org/obo/OBI_0000445 # mass measurement assay
+http://purl.obolibrary.org/obo/OBI_0002141 # volume measurement assay
+
 # INFORMATION CONTENT 
 http://purl.obolibrary.org/obo/OBI_0200000 # data transformation
 http://purl.obolibrary.org/obo/OBI_0200170 #    averaging data transformation
@@ -63,8 +68,14 @@ http://purl.obolibrary.org/obo/IAO_0000577 # centrally registered identifier sym
 
 # PROCESSES
 #http://purl.obolibrary.org/obo/OBI_0000659 # specimen collection process
-http://purl.obolibrary.org/obo/OBI_0000443 # analyte assay
-# http://purl.obolibrary.org/obo/OBI_0000094 # material processing
+#http://purl.obolibrary.org/obo/OBI_0000443 # analyte assay
+http://purl.obolibrary.org/obo/OBI_0000094 # material processing
+http://purl.obolibrary.org/obo/OBI_0000838 # material maintenance
+http://purl.obolibrary.org/obo/OBI_0302893 #    storage
+http://purl.obolibrary.org/obo/OBI_0600014 # material (component) separation
+http://purl.obolibrary.org/obo/OBI_0600018 #    material portioning
+http://purl.obolibrary.org/obo/OBI_0000274 # material addition / adding a material to a target
+http://purl.obolibrary.org/obo/OBI_0000426 #    injection
 
 # RELATIONS
 http://purl.obolibrary.org/obo/IAO_0000136 # is about
@@ -302,6 +313,7 @@ http://purl.obolibrary.org/obo/ENVO_00003863 #    food processing building
 http://purl.obolibrary.org/obo/ENVO_00002222 #    food shop
 http://purl.obolibrary.org/obo/ENVO_01000934 #    restaurant
 
+http://purl.obolibrary.org/obo/ENVO_00003064 # drinking water
 http://purl.obolibrary.org/obo/ENVO_01000277 # water ice
 http://purl.obolibrary.org/obo/ENVO_00002006 #    liquid water
 http://purl.obolibrary.org/obo/ENVO_00002149 # 	    sea water
@@ -420,15 +432,38 @@ http://purl.obolibrary.org/obo/AfPO_0000276 # Southern African
 # Sub-Saharan African 
 http://purl.obolibrary.org/obo/AfPO_0000277 # Western AfricanAFPO 
 
-
-
-
 http://purl.obolibrary.org/obo/HANCESTRO_0308 # HasCountryOfOrigin
 
 [Top level source term URIs and target direct superclass URIs]
 
 [Source term retrieval setting]
 includeNoIntermediates
+
+[Source annotation URIs]
+http://www.w3.org/2000/01/rdf-schema#label
+http://purl.obolibrary.org/obo/IAO_0000115 
+http://purl.obolibrary.org/obo/IAO_0000114
+http://purl.obolibrary.org/obo/IAO_0000118
+http://purl.obolibrary.org/obo/IAO_0000119
+http://www.geneontology.org/formats/oboInOwl#oboInOwl:hasExactSynonym
+http://www.w3.org/2002/07/owl#deprecated
+http://purl.obolibrary.org/obo/IAO_0100001 # replaced by
+
+[Source annotation URIs to be excluded]
+
+###########################################
+
+[Source ontology]
+IAO
+
+[Low level source term URIs]
+http://purl.obolibrary.org/obo/IAO_0000140 # setting datum
+
+[Top level source term URIs and target direct superclass URIs]
+http://purl.obolibrary.org/obo/IAO_0000030 # information
+
+[Source term retrieval setting]
+includeAllIntermediates
 
 [Source annotation URIs]
 http://www.w3.org/2000/01/rdf-schema#label
