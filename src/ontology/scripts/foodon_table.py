@@ -48,6 +48,13 @@
 # 	1) every template reference to "{organism} material" should instead point
 #      to "{parent organism} material"
 # 
+# Note: wheras animal has "live animal", "animal carcass", plants are
+# rarely categorized that way - the plant doesn't have a heart that "dies".
+# And while a whole animal is "slaughtered", a plant or mushroom is 
+# "harvested" and that often means severing it from some or all of its
+# root systems, or harvesting parts of a perennial plant. Most often we are
+# dealing with a harvested "piece of plant", or plant substance like sap.
+#	
 # If user doesn’t select the generation of an {organism} material parent, then
 # template needs to know what parent material class to reference.  Ideally this
 # is calculated dynamically – by looking for nearest [parent] material where
@@ -112,7 +119,7 @@ def init_parser():
 		help="The whole organism node at root of hierarchic query for returning whole organism, material, food product and taxonomy table rows.",
 	);
 
-
+	# Obsolete.  To omit processes, just run with "-r [onto_id,...] where only organisms supplied.
 	#parser.add_argument(
 	#	"-P",
 	#	"--process",
@@ -327,12 +334,6 @@ if __name__ == "__main__":
 	options = init_parser();
 
 	# Build organism hierarchy:
-	# Note: wheras animal has "live animal", "animal carcass", plants are
-	# rarely categorized that way - the plant doesn't have a heart that "dies".
-	# And while a whole animal is "slaughtered", a plant or mushroom is 
-	# "harvested" and that often means severing it from some or all of its
-	# root systems, or harvesting parts of a perennial plant. Most often we are
-	# dealing with a harvested "piece of plant", or plant substance like sap.
 	# 
 	# When we say "x material", we mean x is (rather ambiguously) material from
 	# an organism having some taxonomy (spelled out in an equivalence axiom).
@@ -362,7 +363,6 @@ if __name__ == "__main__":
     #				yeast
     #
     #
-	# Read the TSV file with headers: ?id	?parent_id	?type	?label
 
 	if options.fresh:
 		print("Freshening"); # Ensure latest report is available
@@ -373,15 +373,19 @@ if __name__ == "__main__":
 		subprocess.check_output(["robot", "merge", "--input", "../foodon-edit.ofn", 'reason', '--reasoner','ELK','--exclude-duplicate-axioms', "relax","--output", INPUT_FOODON_ONTOLOGY]);
 		#subprocess.check_output(["robot", "merge", "--input", "../foodon-edit.ofn", "--output", INPUT_FOODON_ONTOLOGY]);
 
-	# FIX WIERD CDNO ONTOLOGY PROBLEM where wrong label datatype exists
+	# FIX CDNO ONTOLOGY PROBLEM where wrong label datatype exists
 	fixDatatype();
 
-	onto = get_ontology('file://./' + INPUT_FOODON_ONTOLOGY).load();
-	# Generated just to get namespaces:
+	try:
+		onto = get_ontology('file://./' + INPUT_FOODON_ONTOLOGY).load();
+	except Exception:
+		print (f'Unable to load "{INPUT_FOODON_ONTOLOGY}"". To generate this cached file in the /scripts/ folder, add the -f --freshen parameter, which will read foodon-edit.ofn and generate a compiled, reasoned version.');
+		sys.exit(1);
 
+	# Generated just to get obo. prefixed namespaces:
 	obo = get_namespace("http://purl.obolibrary.org/obo/");
 
-	# AS of 2025: Owlready2 can't generate the RDF document's xmlns namespace
+	# AS of Nov 2025: Owlready2 can't generate the RDF document's xmlns namespace
 	# prefixes and uris. Workaround, read the first 100 lines of 
 	# INPUT_FOODON_ONTOLOGY directly and parse 
 	# xmlns:go="http://www.geneontology.org/formats/oboInOwl#" etc.
