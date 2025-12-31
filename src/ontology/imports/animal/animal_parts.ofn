@@ -140,7 +140,6 @@ Declaration(Class(<http://purl.obolibrary.org/obo/FOODON_00005705>))
 Declaration(Class(<http://purl.obolibrary.org/obo/FOODON_00005707>))
 Declaration(Class(<http://purl.obolibrary.org/obo/FOODON_00005708>))
 Declaration(Class(<http://purl.obolibrary.org/obo/FOODON_00005711>))
-Declaration(Class(<http://purl.obolibrary.org/obo/FOODON_00005712>))
 Declaration(Class(<http://purl.obolibrary.org/obo/FOODON_00005715>))
 Declaration(Class(<http://purl.obolibrary.org/obo/FOODON_02000423>))
 Declaration(Class(<http://purl.obolibrary.org/obo/FOODON_02000424>))
@@ -3205,7 +3204,6 @@ AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000115> <http://purl.ob
 AnnotationAssertion(<http://purl.org/dc/terms/contributor> <http://purl.obolibrary.org/obo/FOODON_00002227> "https://orcid.org/0000-0001-5275-8866")
 AnnotationAssertion(<http://purl.org/dc/terms/date> <http://purl.obolibrary.org/obo/FOODON_00002227> "2025-02-01T09:59:11Z"^^xsd:dateTime)
 AnnotationAssertion(rdfs:label <http://purl.obolibrary.org/obo/FOODON_00002227> "scallop food product"@en)
-SubClassOf(<http://purl.obolibrary.org/obo/FOODON_00002227> <http://purl.obolibrary.org/obo/FOODON_00004242>)
 
 # Class: <http://purl.obolibrary.org/obo/FOODON_00002239> (shrimp food product)
 
@@ -3286,6 +3284,7 @@ AnnotationAssertion(<http://purl.org/dc/terms/date> <http://purl.obolibrary.org/
 AnnotationAssertion(rdfs:comment <http://purl.obolibrary.org/obo/FOODON_00002616> "An avian animal which is dead or alive and has a relatively intact body."@en)
 AnnotationAssertion(rdfs:label <http://purl.obolibrary.org/obo/FOODON_00002616> "avian animal"@en)
 EquivalentClasses(<http://purl.obolibrary.org/obo/FOODON_00002616> ObjectIntersectionOf(<http://purl.obolibrary.org/obo/FOODON_03411297> ObjectSomeValuesFrom(<http://purl.obolibrary.org/obo/RO_0002162> <http://purl.obolibrary.org/obo/NCBITaxon_8782>)))
+SubClassOf(<http://purl.obolibrary.org/obo/FOODON_00002616> <http://purl.obolibrary.org/obo/FOODON_02020050>)
 SubClassOf(<http://purl.obolibrary.org/obo/FOODON_00002616> <http://purl.obolibrary.org/obo/FOODON_03411297>)
 
 # Class: <http://purl.obolibrary.org/obo/FOODON_00002663> (pig food product)
@@ -8018,7 +8017,7 @@ AnnotationAssertion(rdfs:label <http://purl.obolibrary.org/obo/FOODON_02020049> 
 EquivalentClasses(<http://purl.obolibrary.org/obo/FOODON_02020049> ObjectIntersectionOf(<http://purl.obolibrary.org/obo/FOODON_02020048> ObjectSomeValuesFrom(<http://purl.obolibrary.org/obo/RO_0000086> <http://purl.obolibrary.org/obo/FOODON_00004348>)))
 SubClassOf(<http://purl.obolibrary.org/obo/FOODON_02020049> <http://purl.obolibrary.org/obo/FOODON_02020048>)
 
-# Class: <http://purl.obolibrary.org/obo/FOODON_02020050> (avian animal material)
+# Class: <http://purl.obolibrary.org/obo/FOODON_02020050> (avian material)
 
 AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000114> <http://purl.obolibrary.org/obo/FOODON_02020050> <http://purl.obolibrary.org/obo/IAO_0000122>)
 AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000115> <http://purl.obolibrary.org/obo/FOODON_02020050> "Material that derives from some avian animal."@en)
@@ -8027,7 +8026,7 @@ AnnotationAssertion(<http://purl.org/dc/terms/contributor> <http://purl.obolibra
 AnnotationAssertion(<http://purl.org/dc/terms/contributor> <http://purl.obolibrary.org/obo/FOODON_02020050> "https://orcid.org/0000-0002-8844-9165")
 AnnotationAssertion(<http://purl.org/dc/terms/date> <http://purl.obolibrary.org/obo/FOODON_02020050> "2024-02-12T14:11:19Z"^^xsd:dateTime)
 AnnotationAssertion(rdfs:comment <http://purl.obolibrary.org/obo/FOODON_02020050> "This branch isn't necessarily food material"@en)
-AnnotationAssertion(rdfs:label <http://purl.obolibrary.org/obo/FOODON_02020050> "avian animal material"@en)
+AnnotationAssertion(rdfs:label <http://purl.obolibrary.org/obo/FOODON_02020050> "avian material"@en)
 EquivalentClasses(<http://purl.obolibrary.org/obo/FOODON_02020050> ObjectIntersectionOf(<http://purl.obolibrary.org/obo/FOODON_00005502> ObjectSomeValuesFrom(<http://purl.obolibrary.org/obo/RO_0002162> <http://purl.obolibrary.org/obo/NCBITaxon_8782>)))
 SubClassOf(<http://purl.obolibrary.org/obo/FOODON_02020050> <http://purl.obolibrary.org/obo/FOODON_00005502>)
 
@@ -17078,8 +17077,8 @@ AnnotationAssertion(<http://purl.org/dc/terms/contributor> <http://purl.obolibra
 AnnotationAssertion(<http://purl.org/dc/terms/date> <http://purl.obolibrary.org/obo/FOODON_02020804> "2024-02-12T14:11:19Z"^^xsd:dateTime)
 AnnotationAssertion(rdfs:comment <http://purl.obolibrary.org/obo/FOODON_02020804> "This branch isn't necessarily food material"@en)
 AnnotationAssertion(rdfs:label <http://purl.obolibrary.org/obo/FOODON_02020804> "scallop material"@en)
-EquivalentClasses(<http://purl.obolibrary.org/obo/FOODON_02020804> ObjectIntersectionOf(<http://purl.obolibrary.org/obo/FOODON_00005712> ObjectSomeValuesFrom(<http://purl.obolibrary.org/obo/RO_0002162> <http://purl.obolibrary.org/obo/NCBITaxon_6566>)))
-SubClassOf(<http://purl.obolibrary.org/obo/FOODON_02020804> <http://purl.obolibrary.org/obo/FOODON_00005712>)
+EquivalentClasses(<http://purl.obolibrary.org/obo/FOODON_02020804> ObjectIntersectionOf(<http://purl.obolibrary.org/obo/FOODON_00005705> ObjectSomeValuesFrom(<http://purl.obolibrary.org/obo/RO_0002162> <http://purl.obolibrary.org/obo/NCBITaxon_6566>)))
+SubClassOf(<http://purl.obolibrary.org/obo/FOODON_02020804> <http://purl.obolibrary.org/obo/FOODON_00005705>)
 
 # Class: <http://purl.obolibrary.org/obo/FOODON_02020805> (scallop)
 
@@ -32826,7 +32825,8 @@ AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000115> <http://purl.ob
 AnnotationAssertion(<http://purl.org/dc/terms/contributor> <http://purl.obolibrary.org/obo/FOODON_02022166> "https://orcid.org/0000-0001-5275-8866")
 AnnotationAssertion(<http://purl.org/dc/terms/date> <http://purl.obolibrary.org/obo/FOODON_02022166> "2024-06-13T02:39:09Z"^^xsd:dateTime)
 AnnotationAssertion(rdfs:label <http://purl.obolibrary.org/obo/FOODON_02022166> "ruffed grouse food product"@en)
-SubClassOf(<http://purl.obolibrary.org/obo/FOODON_02022166> <http://purl.obolibrary.org/obo/FOODON_00004242>)
+SubClassOf(<http://purl.obolibrary.org/obo/FOODON_02022166> <http://purl.obolibrary.org/obo/FOODON_00001251>)
+SubClassOf(<http://purl.obolibrary.org/obo/FOODON_02022166> <http://purl.obolibrary.org/obo/FOODON_02022167>)
 
 # Class: <http://purl.obolibrary.org/obo/FOODON_02022167> (ruffed grouse material)
 
