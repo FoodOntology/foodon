@@ -149,7 +149,7 @@ def init_parser():
 		"-p",
 		"--product",
 		dest="product",
-		default=True,
+		default=False,
 		action="store_true",
 		help='Include food product hierarchy. This displays a "[x] food product" category in report as child of "[x] material" or nearest ancestor.'
 	);
@@ -158,7 +158,7 @@ def init_parser():
 		"-m",
 		"--material",
 		dest="material",
-		default=True,
+		default=False,
 		action="store_true",
 		help='Include "[x] material" in report as parent of given term.'
 	);
@@ -457,7 +457,7 @@ if __name__ == "__main__":
 			term['material'] = 'm';
 			# If a [x] material class is found, and this is a subclass of it, display it
 			# onto_class.is_a provides INFERRED parentood. .get_parents_of is immediate parent(s)
-			if found_material in onto.get_parents_of(onto_class):
+			if options.material and found_material in onto.get_parents_of(onto_class):
 				# Print out material_entity line
 				link = str(found_material.iri).replace('http://purl.obolibrary.org/obo/','obo:');
 				display (link, parent_depth, found_material);
@@ -520,7 +520,7 @@ if __name__ == "__main__":
 		synonyms = ';'.join(term['synonyms']);
 
 		# Product class is at same level as whole organism.
-		if options.product and found_product and not found_product in processed:
+		if options.product == True and found_product and not found_product in processed:
 			#display (link, item_depth, found_product);
 			product_children = sorted(found_product.subclasses(), key=lambda term: getEnglishLabel(term));
 			for child in product_children:
@@ -530,12 +530,12 @@ if __name__ == "__main__":
 		# If found_material and options.material, then include material's
 		# children except for onto_class itself and children which are food
 		# products
-		if options.material and found_material:
+		if options.material == True and found_material and not found_material in processed:
 			material_children = sorted(found_material.subclasses(), key=lambda term: getEnglishLabel(term));
 			for child in material_children:
 				# processed includes current onto_class;ALSO BLOCK X food product,
 				# which is added if options.product is true below.
-				if not child in processed and not (getEnglishLabel(child).endswith(' food_product')): 
+				if not child in processed and not (getEnglishLabel(child).endswith(' food product')): 
 					stack.appendleft({'term': child, 'depth': item_depth});
 
 		# Sort children alphabetically
@@ -565,13 +565,13 @@ if __name__ == "__main__":
 	# 1-to-many lookup of term to children and visa vesa.
 	#item_children = df.groupby('parent_id')['id'].apply(list).to_dict();
 	#item_parents = df.groupby('id')['parent_id'].apply(list).to_dict();
-	if missing_material_links:
+	if options.material and missing_material_links:
 		print("\n [x] whole organism to [x] material parent MISSING:", len(missing_material_links), '\n');
 		# e.g. SubClassOf(obo:AGRO_00002071 obo:COB_0000035)
 		for binding in missing_material_links:
 			print ("SubClassOf(",str(binding[0]).replace('.',':'), str(binding[1]).replace('.',':'),")");
 
-	if missing_product_links:
+	if options.product and missing_product_links:
 		print("\n [x] food product to [x] material parent MISSING:", len(missing_product_links), '\n');
 		for binding in missing_product_links:
 			print ("SubClassOf(",str(binding[0]).replace('.',':'), str(binding[1]).replace('.',':'),")");
