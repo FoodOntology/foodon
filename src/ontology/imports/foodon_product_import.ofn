@@ -2428,6 +2428,7 @@ Declaration(Class(obo:FOODON_00005502))
 Declaration(Class(obo:FOODON_00005507))
 Declaration(Class(obo:FOODON_00005522))
 Declaration(Class(obo:FOODON_00005674))
+Declaration(Class(obo:FOODON_00005702))
 Declaration(Class(obo:FOODON_00005716))
 Declaration(Class(obo:FOODON_00005717))
 Declaration(Class(obo:FOODON_0002000))
@@ -18125,6 +18126,7 @@ AnnotationAssertion(oboInOwl:hasExactSynonym obo:FOODON_00002044 "mollusk food p
 AnnotationAssertion(rdfs:label obo:FOODON_00002044 "mollusc food product"@en)
 EquivalentClasses(obo:FOODON_00002044 ObjectIntersectionOf(obo:FOODON_00001293 ObjectSomeValuesFrom(obo:RO_0001000 obo:FOODON_03412112)))
 SubClassOf(obo:FOODON_00002044 obo:FOODON_00001293)
+SubClassOf(obo:FOODON_00002044 obo:FOODON_00005702)
 
 # Class: obo:FOODON_00002045 (moreton bay chestnut food product)
 
