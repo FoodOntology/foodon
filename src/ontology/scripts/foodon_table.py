@@ -2,50 +2,33 @@
 #
 # This script generates a user-defined table report of FoodOn contents which is
 # oriented to providing clear menus for whole organism, organism material,
-# food product and food process branches of the ontology.  The script defaults
-# to providing. The whole organism
-# branch is a mono-hierarchy and so it is used as the core upon which to build
-# the other 
-# hierar"organismanimal, plant, fungi templates by creating a robot
-# file containing the following links for each {organism} in template 
-# specification (it also has a menu hierarchy "parent" specified in its 
-# template table row). 
-#
-# STEP 1:
-# Extract one hierarchy which is recognized as whole animal or plant or fungi
-# references. This is used to lookup nearest parent neighbour for a given
-# organism to its [organism] material or [organism] food product parent.
-# Note whole organism may have plain language taxa qualifiers, e.g. "lake trout
-# (brown trout variety)"
-#
-# NEED separate animal / plant/ algae / fungus hierarchy in order to trace animal parenthood clearly.
+# food product and food process branches of the ontology.  It uses the 
+# Owlready2 python library for reading and querying the structure of an OWL RDF
+# graph.
+# 
+# By default the script will base its hierarchic tree on what we usually want:
+# Extract one mono-hierarchy of whole animal or plant or fungi references, (as 
+# well as a hierarchy of Foodon's food processes which are used in recipes). 
+# This structure enables nearest parent/ neighbour lookup for each organism to
+# its "[organism] material" or "[organism] food product" parent. We need 
+# separate animal / plant/ algae / fungus hierarchy in order to trace animal
+# parenthood clearly.
 #
 # 	- "animal" FOODON_00003004 (whole organism, common name)
-#       We actually just want the following, as categories like "companion animal"
-#       are not directly relevant to whole organism food source.
-#
-# 		- "vertebrate animal" FOODON_03411297 
-#		- "invertebrate animal" FOODON_00002452
-#       - "animal (shell on)" FOODON_02022094
-#
-#      Don't want this - people should manually construct the merger if they
+#      Don't want this: - people should manually construct the merger if they
 #	   need it - but currently it has hardcoded children to move:
 #	    - "fish or lower water animal" FOODON_03411021
 #
-#      - Issue: cow food product vs beef food product
+#      - Issue: cow food product vs beef food product?
 #	
 #	- "whole plant"
 #	   - "plant by taxonomy" FOODON_03413357 (common name)
 #		 	- handle "brassica species" etc.
-#
 # 	- "algae" FOODON_03411301
-#
 #	- "fungus" FOODON_03411261
 #
-# STEP 2:
-#
-# If it has a corresponding "[organism] food product" class (which can be
-# created by the organism template menu):
+# If a whole organism class has a corresponding "[organism] food product" class
+# (which can be created by curators using the organism template menu):
 #
 #   1) We need to link this to nearest "{organism parent} food product".
 #      consequently must search through parents to find first one with 
@@ -64,20 +47,26 @@
 # selected:
 # 	1) every template reference to "{organism} material" should instead point
 #      to "{parent organism} material"
-# should be 
-# 	- It is linked and optionally
 # 
-# If user doesn’t select the generation of an {organism} material parent, then template needs to know what parent material class to reference.  Ideally this is calculated dynamically – by looking for nearest [parent] material where parent is a parent of [organism]; but compilation script doesn’t know this unless it has tool to look it up.
+# If user doesn’t select the generation of an {organism} material parent, then
+# template needs to know what parent material class to reference.  Ideally this
+# is calculated dynamically – by looking for nearest [parent] material where
+# parent is a parent of [organism]; but compilation script doesn’t know this
+# unless it has tool to look it up.
 #
-# This reads in foodon-edit.owl, merges all imports, then performs a query to fetch the whole organism hierarchy for lookup purposes and to distinguish , and then one to retrieve ALL organism material hierarchy.
+# This script operates in /src/ontology/scripts/ folder, and usese a 
+# cache-foodon-merged.owl file which is the merger of foodon-edit.ofn and all
+# its imports.  To regenerate this cacehd file, add the -f --freshen parameter
+# to foodon_table.py. The script performs a query to fetch the organisms or
+# other branches given on command line using the -r --root parameter.
 #
 # EXAMPLES
 #
-# Retrieve up to depth 4, excluding terms with characteristics alive, raw, dead; include langual mapping
-# NOTE exclusion delimiter is SEMICOLON.
-# python3 foodon_table.py -d 4 -e "alive;raw;dead" -x langual
+# Retrieve up to depth 4, excluding terms with characteristics alive, raw, dead
+# and include langual mapping.  NOTE exclusion delimiter is SEMICOLON since 
+# some characteristics might have commas in them
 #
-# PARAMETERS
+# python3 foodon_table.py -d 4 -e "alive;raw;dead" -x langual
 # 
 # Author: Damion Dooley Nov 2025
 
