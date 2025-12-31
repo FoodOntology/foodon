@@ -18122,6 +18122,7 @@ SubClassOf(obo:FOODON_00002043 obo:FOODON_00001140)
 
 # Class: obo:FOODON_00002044 (mollusc food product)
 
+AnnotationAssertion(obo:IAO_0000115 obo:FOODON_00002044 "A food product with one or more molluscs as a defining ingredient."@en)
 AnnotationAssertion(oboInOwl:hasExactSynonym obo:FOODON_00002044 "mollusk food product"@en-us)
 AnnotationAssertion(rdfs:label obo:FOODON_00002044 "mollusc food product"@en)
 EquivalentClasses(obo:FOODON_00002044 ObjectIntersectionOf(obo:FOODON_00001293 ObjectSomeValuesFrom(obo:RO_0001000 obo:FOODON_03412112)))
