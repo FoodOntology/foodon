@@ -15514,11 +15514,12 @@ AnnotationAssertion(dcterms:date obo:FOODON_00005689 "2025-11-10T19:46:00Z"^^xsd
 AnnotationAssertion(rdfs:label obo:FOODON_00005689 "swine material"@en)
 SubClassOf(obo:FOODON_00005689 obo:FOODON_00005501)
 
-# Class: obo:FOODON_00005702 (mollusk material)
+# Class: obo:FOODON_00005702 (mollusc material)
 
 AnnotationAssertion(dcterms:contributor obo:FOODON_00005702 <https://orcid.org/0000-0002-8844-9165>)
 AnnotationAssertion(dcterms:date obo:FOODON_00005702 "2025-11-10T19:56:28Z"^^xsd:dateTime)
-AnnotationAssertion(rdfs:label obo:FOODON_00005702 "mollusk material"@en)
+AnnotationAssertion(oboInOwl:hasExactSynonym obo:FOODON_00005702 "mollusk material"@en)
+AnnotationAssertion(rdfs:label obo:FOODON_00005702 "mollusc material"@en)
 SubClassOf(obo:FOODON_00005702 obo:FOODON_00005683)
 
 # Class: obo:FOODON_00005703 (echinoderm material)
