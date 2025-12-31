@@ -10013,7 +10013,7 @@ AnnotationAssertion(oboInOwl:hasExactSynonym obo:FOODON_00002873 "kongbiji"@ko)
 AnnotationAssertion(oboInOwl:hasExactSynonym obo:FOODON_00002873 "soy pulp"@en)
 AnnotationAssertion(oboInOwl:hasExactSynonym obo:FOODON_00002873 "tofu dregs"@en)
 AnnotationAssertion(rdfs:label obo:FOODON_00002873 "okara"@en)
-SubClassOf(obo:FOODON_00002873 obo:FOODON_03304996)
+SubClassOf(obo:FOODON_00002873 obo:FOODON_00002266)
 
 # Class: obo:FOODON_00002878 (Sōmen)
 
@@ -35419,13 +35419,13 @@ AnnotationAssertion(rdfs:label obo:FOODON_03411910 "tarakihi"@en)
 SubClassOf(obo:FOODON_03411910 obo:FOODON_03412546)
 SubClassOf(obo:FOODON_03411910 ObjectSomeValuesFrom(obo:RO_0002162 obo:NCBITaxon_76931))
 
-# Class: obo:FOODON_03411911 (fish, squaliform)
+# Class: obo:FOODON_03411911 (squaliform fish)
 
 AnnotationAssertion(obo:IAO_0000114 obo:FOODON_03411911 obo:IAO_0000428)
 AnnotationAssertion(oboInOwl:hasDbXref obo:FOODON_03411911 <http://eol.org/pages/8888>)
 AnnotationAssertion(oboInOwl:hasDbXref obo:FOODON_03411911 langual:B1911)
 AnnotationAssertion(oboInOwl:hasSynonym obo:FOODON_03411911 "squaliformes"@en)
-AnnotationAssertion(rdfs:label obo:FOODON_03411911 "fish, squaliform"@en)
+AnnotationAssertion(rdfs:label obo:FOODON_03411911 "squaliform fish"@en)
 SubClassOf(obo:FOODON_03411911 obo:FOODON_03411007)
 
 # Class: obo:FOODON_03411912 (dogfish shark family)
@@ -36082,13 +36082,13 @@ AnnotationAssertion(rdfs:label obo:FOODON_03411966 "oil sardine"@en)
 SubClassOf(obo:FOODON_03411966 obo:FOODON_03411392)
 SubClassOf(obo:FOODON_03411966 ObjectSomeValuesFrom(obo:RO_0002162 obo:NCBITaxon_96888))
 
-# Class: obo:FOODON_03411968 (fish, rajiform)
+# Class: obo:FOODON_03411968 (rajiform fish)
 
 AnnotationAssertion(obo:IAO_0000114 obo:FOODON_03411968 obo:IAO_0000428)
 AnnotationAssertion(oboInOwl:hasDbXref obo:FOODON_03411968 <http://eol.org/pages/1858>)
 AnnotationAssertion(oboInOwl:hasDbXref obo:FOODON_03411968 langual:B1968)
 AnnotationAssertion(oboInOwl:hasSynonym obo:FOODON_03411968 "rajiformes"@en)
-AnnotationAssertion(rdfs:label obo:FOODON_03411968 "fish, rajiform"@en)
+AnnotationAssertion(rdfs:label obo:FOODON_03411968 "rajiform fish"@en)
 SubClassOf(obo:FOODON_03411968 obo:FOODON_03411007)
 
 # Class: obo:FOODON_03411969 (long whiskered catfish family)
@@ -39306,13 +39306,13 @@ AnnotationAssertion(oboInOwl:hasExactSynonym obo:FOODON_03412266 "macroalgae"@en
 AnnotationAssertion(rdfs:label obo:FOODON_03412266 "seaweed"@en)
 SubClassOf(obo:FOODON_03412266 obo:FOODON_03411301)
 
-# Class: obo:FOODON_03412267 (fish, chimaeriform)
+# Class: obo:FOODON_03412267 (chimaeriform fish)
 
 AnnotationAssertion(obo:IAO_0000114 obo:FOODON_03412267 obo:IAO_0000428)
 AnnotationAssertion(oboInOwl:hasDbXref obo:FOODON_03412267 <http://eol.org/pages/8902>)
 AnnotationAssertion(oboInOwl:hasDbXref obo:FOODON_03412267 langual:B2267)
 AnnotationAssertion(oboInOwl:hasSynonym obo:FOODON_03412267 "chimaeriformes"@en)
-AnnotationAssertion(rdfs:label obo:FOODON_03412267 "fish, chimaeriform"@en)
+AnnotationAssertion(rdfs:label obo:FOODON_03412267 "chimaeriform fish"@en)
 SubClassOf(obo:FOODON_03412267 obo:FOODON_03411007)
 
 # Class: obo:FOODON_03412268 (plownose chimera family)
@@ -42529,7 +42529,7 @@ AnnotationAssertion(oboInOwl:hasSynonym obo:FOODON_03412552 "sleigh bell pepper"
 AnnotationAssertion(rdfs:label obo:FOODON_03412552 "cascabel pepper plant"@en)
 SubClassOf(obo:FOODON_03412552 obo:FOODON_03411643)
 
-# Class: obo:FOODON_03412553 (fish, lamniform)
+# Class: obo:FOODON_03412553 (lamniform fish)
 
 AnnotationAssertion(obo:IAO_0000114 obo:FOODON_03412553 obo:IAO_0000428)
 AnnotationAssertion(obo:IAO_0000115 obo:FOODON_03412553 "The Lamniformes are an order of sharks commonly known as mackerel sharks (which may also refer specifically to the family *Lamnidae*). It includes some of the most familiar species of sharks, such as the great white and extinct megalodon, as well as more unusual representatives, such as the goblin shark and megamouth shark. [https://en.wikipedia.org/wiki/Lamniformes]"@en)
@@ -42537,7 +42537,7 @@ AnnotationAssertion(oboInOwl:hasDbXref obo:FOODON_03412553 <http://eol.org/pages
 AnnotationAssertion(oboInOwl:hasDbXref obo:FOODON_03412553 langual:B2553)
 AnnotationAssertion(oboInOwl:hasSynonym obo:FOODON_03412553 "lamniformes"@en)
 AnnotationAssertion(oboInOwl:hasSynonym obo:FOODON_03412553 "mackerel shark"@en)
-AnnotationAssertion(rdfs:label obo:FOODON_03412553 "fish, lamniform"@en)
+AnnotationAssertion(rdfs:label obo:FOODON_03412553 "lamniform fish"@en)
 SubClassOf(obo:FOODON_03412553 obo:FOODON_03411007)
 
 # Class: obo:FOODON_03412554 (guajillo pepper plant)
@@ -44484,13 +44484,13 @@ AnnotationAssertion(oboInOwl:hasDbXref obo:FOODON_03412752 langual:B2752)
 AnnotationAssertion(rdfs:label obo:FOODON_03412752 "white currant plant"@en)
 SubClassOf(obo:FOODON_03412752 obo:NCBITaxon_175228)
 
-# Class: obo:FOODON_03412753 (fish, petromyzontiform)
+# Class: obo:FOODON_03412753 (petromyzontiform fish)
 
 AnnotationAssertion(obo:IAO_0000114 obo:FOODON_03412753 obo:IAO_0000428)
 AnnotationAssertion(oboInOwl:hasDbXref obo:FOODON_03412753 <http://eol.org/pages/1903>)
 AnnotationAssertion(oboInOwl:hasDbXref obo:FOODON_03412753 langual:B2753)
 AnnotationAssertion(oboInOwl:hasSynonym obo:FOODON_03412753 "petromyzontiformes"@en)
-AnnotationAssertion(rdfs:label obo:FOODON_03412753 "fish, petromyzontiform"@en)
+AnnotationAssertion(rdfs:label obo:FOODON_03412753 "petromyzontiform fish"@en)
 SubClassOf(obo:FOODON_03412753 obo:FOODON_03411164)
 
 # Class: obo:FOODON_03412754 (sand tiger family)
@@ -51706,14 +51706,14 @@ AnnotationAssertion(rdfs:label obo:FOODON_03413514 "longnose spurdog"@en)
 SubClassOf(obo:FOODON_03413514 obo:FOODON_03411195)
 SubClassOf(obo:FOODON_03413514 ObjectSomeValuesFrom(obo:RO_0002162 obo:NCBITaxon_934694))
 
-# Class: obo:FOODON_03413515 (fish, carcharhiniform)
+# Class: obo:FOODON_03413515 (carcharhiniform fish)
 
 AnnotationAssertion(obo:IAO_0000114 obo:FOODON_03413515 obo:IAO_0000428)
 AnnotationAssertion(oboInOwl:hasDbXref obo:FOODON_03413515 <http://eol.org/pages/1887>)
 AnnotationAssertion(oboInOwl:hasDbXref obo:FOODON_03413515 langual:B3515)
 AnnotationAssertion(oboInOwl:hasSynonym obo:FOODON_03413515 "carcharhiniformes"@en)
 AnnotationAssertion(oboInOwl:hasSynonym obo:FOODON_03413515 "ground sharks"@en)
-AnnotationAssertion(rdfs:label obo:FOODON_03413515 "fish, carcharhiniform"@en)
+AnnotationAssertion(rdfs:label obo:FOODON_03413515 "carcharhiniform fish"@en)
 SubClassOf(obo:FOODON_03413515 obo:FOODON_03411007)
 
 # Class: obo:FOODON_03413516 (cat shark family)
@@ -51763,12 +51763,12 @@ AnnotationAssertion(rdfs:label obo:FOODON_03413518 "small-spotted catshark"@en)
 SubClassOf(obo:FOODON_03413518 obo:FOODON_03413516)
 SubClassOf(obo:FOODON_03413518 ObjectSomeValuesFrom(obo:RO_0002162 obo:NCBITaxon_7830))
 
-# Class: obo:FOODON_03413519 (fish, squantiniform)
+# Class: obo:FOODON_03413519 (squantiniform fish)
 
 AnnotationAssertion(obo:IAO_0000114 obo:FOODON_03413519 obo:IAO_0000428)
 AnnotationAssertion(oboInOwl:hasDbXref obo:FOODON_03413519 langual:B3519)
 AnnotationAssertion(oboInOwl:hasSynonym obo:FOODON_03413519 "squatiniformes"@en)
-AnnotationAssertion(rdfs:label obo:FOODON_03413519 "fish, squantiniform"@en)
+AnnotationAssertion(rdfs:label obo:FOODON_03413519 "squantiniform fish"@en)
 SubClassOf(obo:FOODON_03413519 obo:FOODON_03411007)
 
 # Class: obo:FOODON_03413520 (atlantic angel shark)
@@ -58899,13 +58899,13 @@ AnnotationAssertion(rdfs:label obo:FOODON_03414123 "bramble shark"@en)
 SubClassOf(obo:FOODON_03414123 obo:FOODON_03414122)
 SubClassOf(obo:FOODON_03414123 ObjectSomeValuesFrom(obo:RO_0002162 obo:NCBITaxon_862826))
 
-# Class: obo:FOODON_03414124 (fish, rhinobatiform)
+# Class: obo:FOODON_03414124 (rhinobatiform fish)
 
 AnnotationAssertion(obo:IAO_0000114 obo:FOODON_03414124 obo:IAO_0000428)
 AnnotationAssertion(oboInOwl:hasDbXref obo:FOODON_03414124 langual:B4124)
 AnnotationAssertion(oboInOwl:hasSynonym obo:FOODON_03414124 "guitarfishes"@en)
 AnnotationAssertion(oboInOwl:hasSynonym obo:FOODON_03414124 "rhinobatiformes"@en)
-AnnotationAssertion(rdfs:label obo:FOODON_03414124 "fish, rhinobatiform"@en)
+AnnotationAssertion(rdfs:label obo:FOODON_03414124 "rhinobatiform fish"@en)
 SubClassOf(obo:FOODON_03414124 obo:FOODON_03411007)
 
 # Class: obo:FOODON_03414125 (guitarfish family)
@@ -86836,7 +86836,7 @@ SubClassOf(obo:NCBITaxon_323665 obo:FOODON_03413396)
 
 AnnotationAssertion(oboInOwl:hasNarrowSynonym obo:NCBITaxon_3241545 "Strombus costatus")
 
-# Class: obo:NCBITaxon_3244320 (Arca imbricata)
+# Class: obo:NCBITaxon_3244320 (Lamarcka imbricata)
 
 AnnotationAssertion(obo:IAO_0000114 obo:NCBITaxon_3244320 obo:IAO_0000428)
 AnnotationAssertion(obo:IAO_0000118 obo:NCBITaxon_3244320 "mossy ark"@en)
