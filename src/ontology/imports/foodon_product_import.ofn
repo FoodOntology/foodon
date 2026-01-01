@@ -47,6 +47,7 @@ Declaration(Class(obo:CHEBI_5291))
 Declaration(Class(obo:CHEBI_60004))
 Declaration(Class(obo:CHEBI_61995))
 Declaration(Class(obo:CHEBI_83163))
+Declaration(Class(obo:DRON_00012339))
 Declaration(Class(obo:ENVO_00002006))
 Declaration(Class(obo:ENVO_00002011))
 Declaration(Class(obo:ENVO_00003030))
@@ -12946,6 +12947,10 @@ AnnotationAssertion(oboInOwl:hasDbXref obo:CHEBI_83163 langual:C0207)
 AnnotationAssertion(rdfs:comment obo:CHEBI_83163 "LanguaL term definition: Liquid product remaining after crystallization of sugar from sugar syrup; most molasses is made from sugar cane."@en)
 EquivalentClasses(obo:CHEBI_83163 ObjectIntersectionOf(obo:CHEBI_60004 obo:FOODON_00002291))
 
+# Class: obo:DRON_00012339 (propolis)
+
+SubClassOf(obo:DRON_00012339 obo:FOODON_00001974)
+
 # Class: obo:FOODON_00000070 (lobster tail food product)
 
 AnnotationAssertion(rdfs:label obo:FOODON_00000070 "lobster tail food product"@en)
@@ -13057,7 +13062,6 @@ AnnotationAssertion(obo:IAO_0000115 obo:FOODON_00001010 "A processed food produc
 AnnotationAssertion(obo:IAO_0000119 obo:FOODON_00001010 wikipedia:Processed_meat)
 AnnotationAssertion(rdfs:label obo:FOODON_00001010 "processed meat food product"@en)
 SubClassOf(obo:FOODON_00001010 obo:FOODON_00001006)
-SubClassOf(obo:FOODON_00001010 obo:FOODON_03311737)
 SubClassOf(obo:FOODON_00001010 ObjectSomeValuesFrom(obo:FOODON_00001563 obo:FOODON_02010113))
 
 # Class: obo:FOODON_00001011 (milk formula food product)
@@ -14177,7 +14181,7 @@ AnnotationAssertion(obo:IAO_0000119 obo:FOODON_00001180 langual:A0172)
 AnnotationAssertion(oboInOwl:hasBroadSynonym obo:FOODON_00001180 "prepared"@en)
 AnnotationAssertion(rdfs:label obo:FOODON_00001180 "prepared food product"@en)
 AnnotationAssertion(rdfs:seeAlso obo:FOODON_00001180 <https://www.fns.usda.gov/snap/retailer-eligibility-prepared-foods-and-heated-foods>)
-SubClassOf(obo:FOODON_00001180 obo:FOODON_03311737)
+SubClassOf(obo:FOODON_00001180 obo:FOODON_00001002)
 SubClassOf(obo:FOODON_00001180 ObjectSomeValuesFrom(obo:RO_0002350 obo:FOODON_03400172))
 SubClassOf(obo:FOODON_00001180 ObjectSomeValuesFrom(obo:RO_0002350 obo:FOODON_03400212))
 
@@ -14413,7 +14417,7 @@ SubClassOf(obo:FOODON_00001210 obo:FOODON_00001141)
 
 AnnotationAssertion(obo:IAO_0000115 obo:FOODON_00001211 "A food made from an unleavened dough of wheat or buckwheat  flour and water, sometimes with other ingredients such as eggs and vegetable  extracts.")
 AnnotationAssertion(obo:IAO_0000119 obo:FOODON_00001211 wikipedia:Pasta)
-SubClassOf(obo:FOODON_00001211 obo:FOODON_03311737)
+SubClassOf(obo:FOODON_00001211 obo:FOODON_00001002)
 
 # Class: obo:FOODON_00001212 (pastry food product)
 
@@ -14547,7 +14551,6 @@ AnnotationAssertion(obo:IAO_0000115 obo:FOODON_00001229 "A cheese product made f
 AnnotationAssertion(obo:IAO_0000119 obo:FOODON_00001229 wikipedia:Cheese)
 AnnotationAssertion(rdfs:label obo:FOODON_00001229 "processed cheese food product"@en)
 SubClassOf(obo:FOODON_00001229 obo:FOODON_00001013)
-SubClassOf(obo:FOODON_00001229 obo:FOODON_03311737)
 SubClassOf(obo:FOODON_00001229 ObjectSomeValuesFrom(obo:RO_0002350 obo:FOODON_03400282))
 
 # Class: obo:FOODON_00001230 (mustard seed food product)
@@ -16909,6 +16912,7 @@ SubClassOf(obo:FOODON_00001831 obo:FOODON_00001229)
 
 AnnotationAssertion(obo:IAO_0000115 obo:FOODON_00001832 "A processed food product which is an emulsified mixture."@en)
 AnnotationAssertion(rdfs:label obo:FOODON_00001832 "emulsified food product"@en)
+SubClassOf(obo:FOODON_00001832 obo:FOODON_00001002)
 SubClassOf(obo:FOODON_00001832 obo:FOODON_03311737)
 
 # Class: obo:FOODON_00001833 (english walnut food product)
@@ -17688,6 +17692,7 @@ SubClassOf(obo:FOODON_00001972 obo:FOODON_00001248)
 # Class: obo:FOODON_00001974 (insect refined food product)
 
 AnnotationAssertion(rdfs:label obo:FOODON_00001974 "insect refined food product"@en)
+SubClassOf(obo:FOODON_00001974 obo:FOODON_00001177)
 SubClassOf(obo:FOODON_00001974 obo:FOODON_00001595)
 
 # Class: obo:FOODON_00001975 (jack family (or carangidae) food product)
@@ -19006,6 +19011,7 @@ SubClassOf(obo:FOODON_00002195 obo:FOODON_00002113)
 # Class: obo:FOODON_00002196 (refined or partially-refined food product)
 
 AnnotationAssertion(rdfs:label obo:FOODON_00002196 "refined or partially-refined food product"@en)
+SubClassOf(obo:FOODON_00002196 obo:FOODON_00001002)
 SubClassOf(obo:FOODON_00002196 obo:FOODON_03311737)
 
 # Class: obo:FOODON_00002197 (reindeer meat food product)
@@ -48100,6 +48106,7 @@ AnnotationAssertion(oboInOwl:hasDbXref obo:FOODON_03304644 siren:F4644)
 AnnotationAssertion(oboInOwl:hasExactSynonym obo:FOODON_03304644 "fruit"@en)
 AnnotationAssertion(rdfs:label obo:FOODON_03304644 "fruit (raw)"@en)
 EquivalentClasses(obo:FOODON_03304644 ObjectIntersectionOf(obo:PO_0009001 ObjectSomeValuesFrom(obo:RO_0000053 obo:FOODON_00004348)))
+SubClassOf(obo:FOODON_03304644 obo:FOODON_00002454)
 
 # Class: obo:FOODON_03304645 (chocolate bar (rum- and butter-filled))
 
@@ -53933,6 +53940,7 @@ SubClassOf(obo:FOODON_03305686 obo:FOODON_03316908)
 AnnotationAssertion(obo:IAO_0000114 obo:FOODON_03305691 obo:IAO_0000428)
 AnnotationAssertion(oboInOwl:hasDbXref obo:FOODON_03305691 siren:F5691)
 AnnotationAssertion(rdfs:label obo:FOODON_03305691 "synthetic food"@en)
+SubClassOf(obo:FOODON_03305691 obo:FOODON_00001002)
 SubClassOf(obo:FOODON_03305691 obo:FOODON_00002645)
 SubClassOf(obo:FOODON_03305691 ObjectSomeValuesFrom(obo:RO_0001000 obo:FOODON_03411041))
 
