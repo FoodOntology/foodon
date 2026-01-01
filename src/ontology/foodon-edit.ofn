@@ -8914,7 +8914,7 @@ SubClassOf(obo:FOODON_00001578 obo:FOODON_02022610)
 
 AnnotationAssertion(obo:IAO_0000115 obo:FOODON_00001626 "Food material which is output of or is part of a home or commercial bakery process."@en)
 AnnotationAssertion(rdfs:label obo:FOODON_00001626 "bakery food product"@en)
-SubClassOf(obo:FOODON_00001626 obo:FOODON_00002645)
+SubClassOf(obo:FOODON_00001626 obo:FOODON_00001002)
 
 # Class: obo:FOODON_00001702 (cauliflower (pickled) food product)
 
@@ -11434,6 +11434,7 @@ AnnotationAssertion(obo:IAO_0000115 obo:FOODON_00003375 "Food material produced 
 AnnotationAssertion(obo:IAO_0000117 obo:FOODON_00003375 <http://orcid.org/0000-0002-8844-9165>)
 AnnotationAssertion(dcterms:date obo:FOODON_00003375 "2020-08-04T06:09:04Z"^^xsd:dateTime)
 AnnotationAssertion(rdfs:label obo:FOODON_00003375 "sustainable agriculture food product"@en)
+SubClassOf(obo:FOODON_00003375 obo:FOODON_00001002)
 SubClassOf(obo:FOODON_00003375 obo:FOODON_00002645)
 
 # Class: obo:FOODON_00003376 (cell-based technology food)
@@ -23408,7 +23409,9 @@ SubClassOf(obo:FOODON_03311723 ObjectSomeValuesFrom(obo:RO_0001000 obo:NCBITaxon
 # Class: obo:FOODON_03311737 (processed food)
 
 AnnotationAssertion(obo:IAO_0000114 obo:FOODON_03311737 obo:IAO_0000428)
+AnnotationAssertion(obo:IAO_0000115 obo:FOODON_03311737 "A food entity which has some level of food processing applied to it."@en)
 AnnotationAssertion(oboInOwl:hasDbXref obo:FOODON_03311737 siren:F11737)
+AnnotationAssertion(rdfs:comment obo:FOODON_03311737 "This is meant to be a term which can be referenced in the context of food nutrition and processing research, for example with respect to the NOVA classification system [https://en.wikipedia.org/wiki/Nova_classification]."@en)
 AnnotationAssertion(rdfs:label obo:FOODON_03311737 "processed food"@en)
 SubClassOf(obo:FOODON_03311737 obo:FOODON_00002645)
 
