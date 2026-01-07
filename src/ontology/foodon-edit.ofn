@@ -70,6 +70,7 @@ Annotation(dcterms:description "FoodOn is a consortium-driven project to build a
 Annotation(dcterms:license <https://creativecommons.org/licenses/by/4.0/>)
 Annotation(dcterms:title "FoodOn Food Ontology"@en)
 Annotation(oboInOwl:default-namespace "FOODON")
+Annotation(owl:versionInfo "2025-12-30")
 
 Declaration(Class(obo:CDNO_0200014))
 Declaration(Class(obo:CDNO_0200035))
@@ -28209,6 +28210,7 @@ AnnotationAssertion(oboInOwl:hasSynonym obo:FOODON_03411300 "garden onion"@en)
 AnnotationAssertion(rdfs:label obo:FOODON_03411300 "onion plant"@en)
 SubClassOf(obo:FOODON_03411300 obo:FOODON_03411018)
 SubClassOf(obo:FOODON_03411300 obo:FOODON_03414302)
+SubClassOf(obo:FOODON_03411300 ObjectSomeValuesFrom(obo:RO_0002162 obo:NCBITaxon_4679))
 
 # Class: obo:FOODON_03411301 (algae)
 
@@ -54341,7 +54343,7 @@ AnnotationAssertion(obo:IAO_0000115 obo:FOODON_03413721 "Sweet onion is a variet
 AnnotationAssertion(obo:IAO_0000119 obo:FOODON_03413721 wikipedia:Sweet_onion)
 AnnotationAssertion(oboInOwl:hasDbXref obo:FOODON_03413721 langual:B3721)
 AnnotationAssertion(oboInOwl:hasExactSynonym obo:FOODON_03413721 "white onion"@en)
-SubClassOf(obo:FOODON_03413721 obo:NCBITaxon_4679)
+SubClassOf(obo:FOODON_03413721 obo:FOODON_03411300)
 
 # Class: obo:FOODON_03413722 (banana pepper plant)
 
@@ -54661,7 +54663,7 @@ SubClassOf(obo:FOODON_03413747 obo:FOODON_03412069)
 AnnotationAssertion(obo:IAO_0000115 obo:FOODON_03413748 "Red onions, are cultivars of the onion (*Allium cepa*) with purplish red skin and white flesh tinged with red. These onions tend to be medium to large in size and have a mild, to sweet flavor."@en)
 AnnotationAssertion(obo:IAO_0000119 obo:FOODON_03413748 wikipedia:Red_onion)
 AnnotationAssertion(oboInOwl:hasDbXref obo:FOODON_03413748 langual:B3748)
-SubClassOf(obo:FOODON_03413748 obo:NCBITaxon_4679)
+SubClassOf(obo:FOODON_03413748 obo:FOODON_03411300)
 
 # Class: obo:FOODON_03413749 (food supplements, vitamin and mineral substances (ec))
 
@@ -61242,7 +61244,7 @@ SubClassOf(obo:FOODON_03414313 obo:FOODON_03411339)
 AnnotationAssertion(obo:IAO_0000115 obo:FOODON_03414314 "The brown onion or yellow onion (*Allium cepa *L.) is a variety of dry onion with a strong flavour. They have a greenish-white, light yellow, or white inside, its layers of papery skin have a yellow-brown or pale golden colour. It is higher in sulphur content than the white onion, which gives it a stronger, more complex flavour."@en)
 AnnotationAssertion(obo:IAO_0000119 obo:FOODON_03414314 wikipedia:Yellow_onion)
 AnnotationAssertion(oboInOwl:hasDbXref obo:FOODON_03414314 langual:B4314)
-SubClassOf(obo:FOODON_03414314 obo:NCBITaxon_4679)
+SubClassOf(obo:FOODON_03414314 obo:FOODON_03411300)
 
 # Class: obo:FOODON_03414315 (red oat plant)
 
@@ -61338,7 +61340,7 @@ SubClassOf(obo:FOODON_03414322 obo:FOODON_03413372)
 
 AnnotationAssertion(obo:IAO_0000115 obo:FOODON_03414323 "The silverskin onion is a small variety of the onion, *Allium cepa* L."@en)
 AnnotationAssertion(oboInOwl:hasDbXref obo:FOODON_03414323 langual:B4323)
-SubClassOf(obo:FOODON_03414323 obo:NCBITaxon_4679)
+SubClassOf(obo:FOODON_03414323 obo:FOODON_03411300)
 
 # Class: obo:FOODON_03414324 (canadian onion plant)
 
@@ -88357,7 +88359,6 @@ AnnotationAssertion(oboInOwl:hasDbXref obo:NCBITaxon_4679 <http://www.itis.gov/s
 AnnotationAssertion(oboInOwl:hasDbXref obo:NCBITaxon_4679 "PLANTS:ALCE")
 AnnotationAssertion(oboInOwl:hasNarrowSynonym obo:NCBITaxon_4679 "Allium cepa L.")
 AnnotationAssertion(oboInOwl:hasNarrowSynonym obo:NCBITaxon_4679 "pickling onion"@en)
-SubClassOf(obo:NCBITaxon_4679 obo:FOODON_03411300)
 
 # Class: obo:NCBITaxon_4681 (Allium ampeloprasum)
 
