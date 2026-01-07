@@ -13267,7 +13267,7 @@ SubClassOf(obo:FOODON_00001039 ObjectSomeValuesFrom(obo:RO_0002350 obo:FOODON_03
 # Class: obo:FOODON_00001040 (chicken meat food product)
 
 AnnotationAssertion(rdfs:label obo:FOODON_00001040 "chicken meat food product"@en)
-EquivalentClasses(obo:FOODON_00001040 ObjectIntersectionOf(obo:FOODON_00001131 ObjectUnionOf(obo:FOODON_03411457 ObjectSomeValuesFrom(obo:RO_0001000 obo:FOODON_03411457))))
+EquivalentClasses(obo:FOODON_00001040 ObjectIntersectionOf(obo:FOODON_02020149 ObjectSomeValuesFrom(obo:FOODON_00001563 obo:FOODON_02020205)))
 SubClassOf(obo:FOODON_00001040 obo:FOODON_00001131)
 SubClassOf(obo:FOODON_00001040 obo:FOODON_02020149)
 
