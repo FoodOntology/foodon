@@ -2449,6 +2449,7 @@ Declaration(Class(obo:FOODON_02020050))
 Declaration(Class(obo:FOODON_02020081))
 Declaration(Class(obo:FOODON_02020114))
 Declaration(Class(obo:FOODON_02020149))
+Declaration(Class(obo:FOODON_02020150))
 Declaration(Class(obo:FOODON_02020155))
 Declaration(Class(obo:FOODON_02020156))
 Declaration(Class(obo:FOODON_02020157))
@@ -17418,6 +17419,7 @@ SubClassOf(obo:FOODON_00001921 obo:FOODON_00001580)
 
 AnnotationAssertion(rdfs:label obo:FOODON_00001922 "grape based alcoholic beverage"@en)
 SubClassOf(obo:FOODON_00001922 obo:FOODON_00001882)
+SubClassOf(obo:FOODON_00001922 ObjectSomeValuesFrom(obo:FOODON_00001563 obo:FOODON_00003417))
 
 # Class: obo:FOODON_00001923 (grape based distilled spirit)
 
@@ -17435,7 +17437,6 @@ SubClassOf(obo:FOODON_00001924 obo:FOODON_00002010)
 AnnotationAssertion(rdfs:label obo:FOODON_00001925 "grape based wine or wine-like food product"@en)
 SubClassOf(obo:FOODON_00001925 obo:FOODON_00001922)
 SubClassOf(obo:FOODON_00001925 obo:FOODON_00002364)
-SubClassOf(obo:FOODON_00001925 ObjectSomeValuesFrom(obo:RO_0001000 obo:FOODON_03301123))
 
 # Class: obo:FOODON_00001926 (grape juice food product)
 
@@ -22054,8 +22055,8 @@ AnnotationAssertion(oboInOwl:hasExactSynonym obo:FOODON_00002750 "romano bean"@e
 AnnotationAssertion(oboInOwl:hasExactSynonym obo:FOODON_00002750 "rosecoco bean"@en)
 AnnotationAssertion(oboInOwl:hasExactSynonym obo:FOODON_00002750 "saluggia bean"@en)
 AnnotationAssertion(rdfs:label obo:FOODON_00002750 "cranberry bean material"@en)
-EquivalentClasses(obo:FOODON_00002750 ObjectIntersectionOf(obo:FOODON_03301467 ObjectSomeValuesFrom(obo:RO_0001000 obo:FOODON_03411186)))
-SubClassOf(obo:FOODON_00002750 obo:FOODON_00002772)
+EquivalentClasses(obo:FOODON_00002750 ObjectIntersectionOf(obo:FOODON_03301467 ObjectSomeValuesFrom(obo:RO_0001000 obo:FOODON_03302067)))
+SubClassOf(obo:FOODON_00002750 obo:FOODON_00002750)
 
 # Class: obo:FOODON_00002751 (cranberry bean (dried))
 
@@ -31779,7 +31780,7 @@ AnnotationAssertion(oboInOwl:hasDbXref obo:FOODON_03301467 siren:F1467)
 AnnotationAssertion(rdfs:comment obo:FOODON_03301467 "SIREN DB annotation:
 * seed (anatomical part) FOODON:03420155"@en)
 AnnotationAssertion(rdfs:label obo:FOODON_03301467 "bean material"@en)
-EquivalentClasses(obo:FOODON_03301467 ObjectIntersectionOf(obo:FOODON_00001635 ObjectSomeValuesFrom(obo:RO_0001000 obo:FOODON_00002753)))
+EquivalentClasses(obo:FOODON_03301467 ObjectIntersectionOf(obo:FOODON_00004331 ObjectSomeValuesFrom(obo:RO_0001000 obo:FOODON_00002753)))
 SubClassOf(obo:FOODON_03301467 obo:FOODON_00004331)
 
 # Class: obo:FOODON_03301468 (bouillon (liquid))
@@ -85652,6 +85653,7 @@ AnnotationAssertion(oboInOwl:hasDbXref obo:FOODON_03315102 siren:F15102)
 AnnotationAssertion(rdfs:comment obo:FOODON_03315102 "SIREN DB annotation:
 * egg FOODON:03420194"@en)
 AnnotationAssertion(rdfs:label obo:FOODON_03315102 "chicken egg material"@en)
+SubClassOf(obo:FOODON_03315102 obo:FOODON_02020150)
 SubClassOf(obo:FOODON_03315102 ObjectSomeValuesFrom(obo:RO_0001000 obo:FOODON_03316061))
 
 # Class: obo:FOODON_03315104 (lemon)

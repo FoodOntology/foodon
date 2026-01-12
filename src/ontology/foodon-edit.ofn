@@ -39,7 +39,7 @@ Import(<http://purl.obolibrary.org/obo/foodon/imports/foodon_product_import.ofn>
 Import(<http://purl.obolibrary.org/obo/foodon/imports/gaz_import.ofn>)
 Import(<http://purl.obolibrary.org/obo/foodon/imports/general_import.owl>)
 Import(<http://purl.obolibrary.org/obo/foodon/imports/ncbitaxon_import.owl>)
-Import(<http://purl.obolibrary.org/obo/foodon/imports/ons_import.owl>)
+Import(<http://purl.obolibrary.org/obo/foodon/imports/ons_import.ofn>)
 Import(<http://purl.obolibrary.org/obo/foodon/imports/product_type_import.ofn>)
 Import(<http://purl.obolibrary.org/obo/foodon/imports/robot_animals.ofn>)
 Import(<http://purl.obolibrary.org/obo/foodon/imports/robot_dietary_supplement.ofn>)
@@ -16695,10 +16695,6 @@ SubClassOf(obo:FOODON_03301524 ObjectSomeValuesFrom(obo:RO_0001000 obo:FOODON_03
 
 SubClassOf(obo:FOODON_03301527 ObjectSomeValuesFrom(obo:RO_0001000 obo:FOODON_03411312))
 
-# Class: obo:FOODON_03301567 (wine cooler)
-
-SubClassOf(obo:FOODON_03301567 ObjectSomeValuesFrom(obo:RO_0001000 obo:FOODON_03411329))
-
 # Class: obo:FOODON_03301592 (smoked tuna (frozen))
 
 SubClassOf(obo:FOODON_03301592 ObjectSomeValuesFrom(obo:RO_0001000 obo:FOODON_03411269))
@@ -17626,10 +17622,6 @@ SubClassOf(obo:FOODON_03303047 ObjectSomeValuesFrom(obo:RO_0001000 obo:FOODON_03
 # Class: obo:FOODON_03303067 (hard cider (sugar added))
 
 SubClassOf(obo:FOODON_03303067 ObjectSomeValuesFrom(obo:RO_0001000 obo:FOODON_03411245))
-
-# Class: obo:FOODON_03303123 (grape marc)
-
-SubClassOf(obo:FOODON_03303123 ObjectSomeValuesFrom(obo:RO_0001000 obo:FOODON_03411329))
 
 # Class: obo:FOODON_03303134 (cream cookie)
 
@@ -19010,10 +19002,6 @@ SubClassOf(obo:FOODON_03305327 ObjectSomeValuesFrom(obo:RO_0001000 obo:FOODON_03
 
 SubClassOf(obo:FOODON_03305328 ObjectSomeValuesFrom(obo:RO_0001000 obo:FOODON_03411210))
 
-# Class: obo:FOODON_03305330 (cognac)
-
-SubClassOf(obo:FOODON_03305330 ObjectSomeValuesFrom(obo:RO_0001000 obo:FOODON_03411329))
-
 # Class: obo:FOODON_03305332 (consomme)
 
 SubClassOf(obo:FOODON_03305332 ObjectSomeValuesFrom(obo:RO_0001000 obo:FOODON_03411297))
@@ -19118,10 +19106,6 @@ SubClassOf(obo:FOODON_03305459 ObjectSomeValuesFrom(obo:RO_0001000 obo:NCBITaxon
 # Class: obo:FOODON_03305460 (halibut steak (raw))
 
 SubClassOf(obo:FOODON_03305460 ObjectSomeValuesFrom(obo:RO_0001000 obo:FOODON_03411532))
-
-# Class: obo:FOODON_03305467 (grape beverage (fermented))
-
-SubClassOf(obo:FOODON_03305467 ObjectSomeValuesFrom(obo:RO_0001000 obo:FOODON_03411329))
 
 # Class: obo:FOODON_03305481 (grape beverage (less than 0.5% alcohol))
 
@@ -20126,10 +20110,6 @@ SubClassOf(obo:FOODON_03307305 ObjectSomeValuesFrom(obo:RO_0001000 obo:FOODON_03
 # Class: obo:FOODON_03307307 (wine (nonalcoholic))
 
 SubClassOf(obo:FOODON_03307307 ObjectSomeValuesFrom(obo:RO_0001000 obo:FOODON_03411329))
-
-# Class: obo:FOODON_03307310 (wine cooler (margarita-flavored))
-
-SubClassOf(obo:FOODON_03307310 ObjectSomeValuesFrom(obo:RO_0001000 obo:FOODON_03411329))
 
 # Class: obo:FOODON_03307318 (haddock fillet (skinless, frozen))
 
@@ -22814,10 +22794,6 @@ SubClassOf(obo:FOODON_03310203 ObjectSomeValuesFrom(obo:RO_0001000 obo:FOODON_03
 
 SubClassOf(obo:FOODON_03310237 ObjectSomeValuesFrom(obo:RO_0001000 obo:FOODON_03411245))
 
-# Class: obo:FOODON_03310238 (armagnac)
-
-SubClassOf(obo:FOODON_03310238 ObjectSomeValuesFrom(obo:RO_0001000 obo:FOODON_03411329))
-
 # Class: obo:FOODON_03310242 (parsnip (microwaved))
 
 SubClassOf(obo:FOODON_03310242 ObjectSomeValuesFrom(obo:RO_0001000 obo:FOODON_03411483))
@@ -23318,10 +23294,6 @@ SubClassOf(obo:FOODON_03311486 ObjectSomeValuesFrom(obo:RO_0001000 obo:FOODON_03
 
 SubClassOf(obo:FOODON_03311492 ObjectSomeValuesFrom(obo:RO_0001000 obo:NCBITaxon_36180))
 
-# Class: obo:FOODON_03311499 (lemon breezer wine-based beverage)
-
-SubClassOf(obo:FOODON_03311499 ObjectSomeValuesFrom(obo:RO_0001000 obo:FOODON_03411329))
-
 # Class: obo:FOODON_03311503 (iguana egg (raw))
 
 SubClassOf(obo:FOODON_03311503 ObjectSomeValuesFrom(obo:RO_0001000 obo:FOODON_03412701))
@@ -23341,10 +23313,6 @@ SubClassOf(obo:FOODON_03311559 ObjectSomeValuesFrom(obo:RO_0001000 obo:FOODON_03
 # Class: obo:FOODON_03311575 (flounder (stuffed))
 
 SubClassOf(obo:FOODON_03311575 ObjectSomeValuesFrom(obo:RO_0001000 obo:FOODON_03411023))
-
-# Class: obo:FOODON_03311581 (grape brandy)
-
-SubClassOf(obo:FOODON_03311581 ObjectSomeValuesFrom(obo:RO_0001000 obo:FOODON_03411329))
 
 # Class: obo:FOODON_03311590 (lemon cake)
 
@@ -23684,10 +23652,6 @@ SubClassOf(obo:FOODON_03315533 ObjectSomeValuesFrom(obo:RO_0001000 obo:FOODON_03
 # Class: obo:FOODON_03315535 (fish product (alkali-treated))
 
 SubClassOf(obo:FOODON_03315535 ObjectSomeValuesFrom(obo:RO_0001000 obo:FOODON_03411222))
-
-# Class: obo:FOODON_03315563 (wine (spiced, fortified, extract for preparation of))
-
-SubClassOf(obo:FOODON_03315563 ObjectSomeValuesFrom(obo:RO_0001000 obo:FOODON_03411329))
 
 # Class: obo:FOODON_03315590 (lumpfish roe)
 
@@ -24421,14 +24385,6 @@ EquivalentClasses(obo:FOODON_03317314 ObjectIntersectionOf(obo:FOODON_03310820 O
 
 SubClassOf(obo:FOODON_03317396 ObjectSomeValuesFrom(obo:RO_0001000 obo:FOODON_03411669))
 
-# Class: obo:FOODON_03317455 (sangria)
-
-SubClassOf(obo:FOODON_03317455 ObjectSomeValuesFrom(obo:RO_0001000 obo:FOODON_03411329))
-
-# Class: obo:FOODON_03317461 (grape marc spirits)
-
-SubClassOf(obo:FOODON_03317461 ObjectSomeValuesFrom(obo:RO_0001000 obo:FOODON_03411329))
-
 # Class: obo:FOODON_03317462 (fruit spirit drink)
 
 SubClassOf(obo:FOODON_03317462 obo:FOODON_00001579)
@@ -24480,19 +24436,6 @@ SubClassOf(obo:FOODON_03317550 ObjectSomeValuesFrom(obo:RO_0001000 obo:FOODON_03
 # Class: obo:FOODON_03317553 (perry (aromatized))
 
 SubClassOf(obo:FOODON_03317553 ObjectSomeValuesFrom(obo:RO_0001000 obo:FOODON_03411344))
-
-# Class: obo:FOODON_03317560 (americano)
-
-AnnotationAssertion(obo:IAO_0000116 obo:FOODON_03317560 "Not sure what this product is.  There is reference to \"americano\"grapes here: https://justhungry.com/2006/09/produce_grapes.html"@en)
-SubClassOf(obo:FOODON_03317560 ObjectSomeValuesFrom(obo:RO_0001000 obo:FOODON_03411329))
-
-# Class: obo:FOODON_03317571 (grappa invecchiata)
-
-SubClassOf(obo:FOODON_03317571 ObjectSomeValuesFrom(obo:RO_0001000 obo:FOODON_03411329))
-
-# Class: obo:FOODON_03317572 (bagaceira velha)
-
-SubClassOf(obo:FOODON_03317572 ObjectSomeValuesFrom(obo:RO_0001000 obo:FOODON_03411329))
 
 # Class: obo:FOODON_03317597 (vegetable stew with poultry meat)
 
@@ -91457,6 +91400,7 @@ AnnotationAssertion(rdfs:comment obo:FOODON_03317265 "Genoa salami is a variety 
 SIREN DB annotation:
 * whole, shape achieved by forming FOODON:03430147
 * meat part of animal FOODON:03420103"@en)
+AnnotationAssertion(obo:IAO_0000116 obo:FOODON_03317560 "Not sure what this product is.  There is reference to \"americano\"grapes here: https://justhungry.com/2006/09/produce_grapes.html"@en)
 AnnotationAssertion(oboInOwl:hasExactSynonym obo:FOODON_03401328 "fiber"@en-us)
 AnnotationAssertion(oboInOwl:hasExactSynonym obo:FOODON_03401328 "fiber supplement"@en-us)
 AnnotationAssertion(oboInOwl:hasExactSynonym obo:FOODON_03401328 "fibre"@en)
