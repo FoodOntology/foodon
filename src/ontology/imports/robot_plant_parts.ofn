@@ -2896,7 +2896,7 @@ AnnotationAssertion(<http://purl.org/dc/terms/contributor> <http://purl.obolibra
 AnnotationAssertion(<http://purl.org/dc/terms/date> <http://purl.obolibrary.org/obo/FOODON_00002753> "2020-10-14T07:28:59"^^xsd:dateTime)
 AnnotationAssertion(rdfs:label <http://purl.obolibrary.org/obo/FOODON_00002753> "bean"@en)
 EquivalentClasses(<http://purl.obolibrary.org/obo/FOODON_00002753> ObjectIntersectionOf(<http://purl.obolibrary.org/obo/PO_0009010> ObjectSomeValuesFrom(<http://purl.obolibrary.org/obo/RO_0002162> <http://purl.obolibrary.org/obo/FOODON_03411567>)))
-SubClassOf(<http://purl.obolibrary.org/obo/FOODON_00002753> <http://purl.obolibrary.org/obo/FOODON_00001635>)
+SubClassOf(<http://purl.obolibrary.org/obo/FOODON_00002753> <http://purl.obolibrary.org/obo/FOODON_03301467>)
 SubClassOf(<http://purl.obolibrary.org/obo/FOODON_00002753> ObjectSomeValuesFrom(<http://purl.obolibrary.org/obo/RO_0002162> <http://purl.obolibrary.org/obo/NCBITaxon_3803>))
 
 # Class: <http://purl.obolibrary.org/obo/FOODON_00002761> (kidney bean)
