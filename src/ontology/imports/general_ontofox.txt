@@ -74,7 +74,7 @@ http://purl.obolibrary.org/obo/IAO_0000577 # centrally registered identifier sym
 # PROCESSES
 #http://purl.obolibrary.org/obo/OBI_0000659 # specimen collection process
 #http://purl.obolibrary.org/obo/OBI_0000443 # analyte assay
-http://purl.obolibrary.org/obo/OBI_0000094 # material processing
+#http://purl.obolibrary.org/obo/OBI_0000094 # material processing / replaced by COB_0000110
 http://purl.obolibrary.org/obo/OBI_0000838 # material maintenance
 http://purl.obolibrary.org/obo/OBI_0302893 #    storage
 http://purl.obolibrary.org/obo/OBI_0600014 # material (component) separation
@@ -151,12 +151,6 @@ http://purl.obolibrary.org/obo/AGRO_00000322 #      treatment
 http://purl.obolibrary.org/obo/AGRO_00000363 # greenhouse
 
 [Top level source term URIs and target direct superclass URIs]
-http://purl.obolibrary.org/obo/IAO_0000030 # information
-http://purl.obolibrary.org/obo/BFO_0000020 # characteristic
-http://purl.obolibrary.org/obo/PATO_0000001 # characteristic
-subClassOf http://purl.obolibrary.org/obo/BFO_0000020
-
-http://purl.obolibrary.org/obo/BFO_0000141 # immaterial entity
 http://purl.obolibrary.org/obo/BFO_0000040 # material entity
 http://purl.obolibrary.org/obo/BFO_0000015 # process
 
