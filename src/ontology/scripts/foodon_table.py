@@ -457,23 +457,23 @@ if __name__ == "__main__":
 			term['material'] = 'm';
 			# If a [x] material class is found, and this is a subclass of it, display it
 			# onto_class.is_a provides INFERRED parentood. .get_parents_of is immediate parent(s)
-			if options.material and found_material in onto.get_parents_of(onto_class):
-				# Print out material_entity line
-				link = str(found_material.iri).replace('http://purl.obolibrary.org/obo/','obo:');
-				display (link, parent_depth, found_material);
+			if not (found_material in processed):
+				if found_material in onto.get_parents_of(onto_class):
+					if options.material:
+						# Print out material_entity line
+						link = str(found_material.iri).replace('http://purl.obolibrary.org/obo/','obo:');
+						display (link, parent_depth, found_material);
 
-				# Bump depth since we now have a material
-				item_depth += 1;
-				next_depth = item_depth+1;
-				# Here we can add found_material's OTHER children to stack.
-				# - and take out this child from that list.
-				# Other children include "piece of [x]" and "piece(s) of [x]"
-				# as well as other hierarchies ...
+						# Bump depth since we now have a material
+						item_depth += 1;
+						next_depth = item_depth+1;
+						# Here we can add found_material's OTHER children to stack.
+						# - and take out this child from that list.
+						# Other children include "piece of [x]" and "piece(s) of [x]"
+						# as well as other hierarchies ...
 
-
-
-			else:
-				missing_material_links.append([onto_class, found_material]);
+				else:
+					missing_material_links.append([onto_class, found_material]);
 
 		if found_product:
 			term['product'] = 'p';
@@ -522,7 +522,7 @@ if __name__ == "__main__":
 		# Product class is at same level as whole organism.
 		if options.product == True and found_product and not found_product in processed:
 			#display (link, item_depth, found_product);
-			product_children = sorted(found_product.subclasses(), key=lambda term: getEnglishLabel(term));
+			product_children = sorted(found_product.subclasses(), key=lambda term: getEnglishLabel(term),reverse=True);
 			for child in product_children:
 				if not (child in processed): # This includes current onto_class
 					stack.appendleft({'term': child, 'depth': item_depth});
@@ -531,7 +531,7 @@ if __name__ == "__main__":
 		# children except for onto_class itself and children which are food
 		# products
 		if options.material == True and found_material and not found_material in processed:
-			material_children = sorted(found_material.subclasses(), key=lambda term: getEnglishLabel(term));
+			material_children = sorted(found_material.subclasses(), key=lambda term: getEnglishLabel(term),reverse=True);
 			for child in material_children:
 				# processed includes current onto_class;ALSO BLOCK X food product,
 				# which is added if options.product is true below.
@@ -539,7 +539,7 @@ if __name__ == "__main__":
 					stack.appendleft({'term': child, 'depth': item_depth});
 
 		# Sort children alphabetically
-		children = sorted(onto_class.subclasses(), key=lambda term: getEnglishLabel(term));
+		children = sorted(onto_class.subclasses(), key=lambda term: getEnglishLabel(term),reverse=True);
 
 		for subclass in children: # These get done before any material or food product siblings. parents.
 			# If already somehow processed, do we just print a "see also" link?
