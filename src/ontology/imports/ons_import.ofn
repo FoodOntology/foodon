@@ -1,4 +1,4 @@
-Prefix(:=<http://purl.obolibrary.org/obo/foodon/imports/ons_import.owl#>)
+Prefix(:=<http://purl.obolibrary.org/obo/foodon/imports/ons_import.ofn#>)
 Prefix(obo:=<http://purl.obolibrary.org/obo/>)
 Prefix(owl:=<http://www.w3.org/2002/07/owl#>)
 Prefix(rdf:=<http://www.w3.org/1999/02/22-rdf-syntax-ns#>)
@@ -7,13 +7,11 @@ Prefix(xsd:=<http://www.w3.org/2001/XMLSchema#>)
 Prefix(rdfs:=<http://www.w3.org/2000/01/rdf-schema#>)
 
 
-Ontology(<http://purl.obolibrary.org/obo/foodon/imports/ons_import.owl>
+Ontology(<http://purl.obolibrary.org/obo/foodon/imports/ons_import.ofn>
 
 Declaration(Class(obo:BFO_0000015))
-Declaration(Class(obo:BFO_0000020))
 Declaration(Class(obo:BFO_0000027))
 Declaration(Class(obo:BFO_0000040))
-Declaration(Class(obo:BFO_0000141))
 Declaration(Class(obo:IAO_0000027))
 Declaration(Class(obo:IAO_0000030))
 Declaration(Class(obo:IAO_0000033))
@@ -106,7 +104,7 @@ Declaration(Class(obo:ONS_2000042))
 Declaration(Class(obo:ONS_2000043))
 Declaration(Class(obo:ONS_2000044))
 Declaration(Class(obo:ONS_2000045))
-Declaration(Class(obo:PATO_0000001))
+Declaration(Class(owl:Thing))
 Declaration(AnnotationProperty(obo:IAO_0000111))
 Declaration(AnnotationProperty(obo:IAO_0000114))
 Declaration(AnnotationProperty(obo:IAO_0000115))
@@ -119,7 +117,7 @@ Declaration(AnnotationProperty(owl:deprecated))
 #   Annotation Properties
 ############################
 
-# Annotation Property: obo:IAO_0000111 (editor preferred term)
+# Annotation Property: obo:IAO_0000111 (editor preferred label)
 
 AnnotationAssertion(obo:IAO_0000111 obo:IAO_0000111 "editor preferred label")
 AnnotationAssertion(obo:IAO_0000111 obo:IAO_0000111 "editor preferred label"@en)
@@ -206,21 +204,6 @@ AnnotationAssertion(obo:IAO_0000412 obo:BFO_0000015 obo:ons.owl)
 AnnotationAssertion(rdfs:label obo:BFO_0000015 "process")
 AnnotationAssertion(rdfs:label obo:BFO_0000015 "process"@en)
 
-# Class: obo:BFO_0000020 (specifically dependent continuant)
-
-AnnotationAssertion(obo:IAO_0000111 obo:BFO_0000020 "specifically dependent continuant"@en)
-AnnotationAssertion(obo:IAO_0000115 obo:BFO_0000020 "A continuant that inheres in or is borne by other entities. Every instance of A requires some specific instance of B which must always be the same.")
-AnnotationAssertion(obo:IAO_0000115 obo:BFO_0000020 "A continuant that inheres in or is borne by other entities. Every instance of A requires some specific instance of B which must always be the same."@en)
-AnnotationAssertion(obo:IAO_0000115 obo:BFO_0000020 "b is a relational specifically dependent continuant = Def. b is a specifically dependent continuant and there are n &gt; 1 independent continuants c1, … cn which are not spatial regions are such that for all 1  i &lt; j  n, ci  and cj share no common parts, are such that for each 1  i  n, b s-depends_on ci at every time t during the course of b’s existence (axiom label in BFO2 Reference: [131-004])")
-AnnotationAssertion(obo:IAO_0000115 obo:BFO_0000020 "b is a relational specifically dependent continuant = Def. b is a specifically dependent continuant and there are n &gt; 1 independent continuants c1, … cn which are not spatial regions are such that for all 1  i &lt; j  n, ci  and cj share no common parts, are such that for each 1  i  n, b s-depends_on ci at every time t during the course of b’s existence (axiom label in BFO2 Reference: [131-004])"@en)
-AnnotationAssertion(obo:IAO_0000115 obo:BFO_0000020 "b is a specifically dependent continuant = Def. b is a continuant & there is some independent continuant c which is not a spatial region and which is such that b s-depends_on c at every time t during the course of b’s existence. (axiom label in BFO2 Reference: [050-003])")
-AnnotationAssertion(obo:IAO_0000115 obo:BFO_0000020 "b is a specifically dependent continuant = Def. b is a continuant & there is some independent continuant c which is not a spatial region and which is such that b s-depends_on c at every time t during the course of b’s existence. (axiom label in BFO2 Reference: [050-003])"@en)
-AnnotationAssertion(obo:IAO_0000412 obo:BFO_0000020 obo:ons.owl)
-AnnotationAssertion(rdfs:label obo:BFO_0000020 "characteristic"@en)
-AnnotationAssertion(rdfs:label obo:BFO_0000020 "material property")
-AnnotationAssertion(rdfs:label obo:BFO_0000020 "specifically dependent continuant")
-AnnotationAssertion(rdfs:label obo:BFO_0000020 "specifically dependent continuant"@en)
-
 # Class: obo:BFO_0000027 (object aggregate)
 
 AnnotationAssertion(obo:IAO_0000119 obo:BFO_0000027 "ISBN:978-3-938793-98-5pp124-158#Thomas Bittner and Barry Smith, 'A Theory of Granular Partitions', in K. Munn and B. Smith (eds.), Applied Ontology: An Introduction, Frankfurt/Lancaster: ontos, 2008, 125-158.")
@@ -236,11 +219,7 @@ AnnotationAssertion(obo:IAO_0000115 obo:BFO_0000040 "An independent continuant t
 AnnotationAssertion(obo:IAO_0000412 obo:BFO_0000040 obo:ons.owl)
 AnnotationAssertion(rdfs:label obo:BFO_0000040 "material entity")
 AnnotationAssertion(rdfs:label obo:BFO_0000040 "material entity"@en)
-
-# Class: obo:BFO_0000141 (immaterial entity)
-
-AnnotationAssertion(obo:IAO_0000412 obo:BFO_0000141 obo:ons.owl)
-AnnotationAssertion(rdfs:label obo:BFO_0000141 "immaterial entity"@en)
+SubClassOf(obo:BFO_0000040 owl:Thing)
 
 # Class: obo:IAO_0000027 (data item)
 
@@ -251,7 +230,7 @@ AnnotationAssertion(obo:IAO_0000412 obo:IAO_0000027 obo:ons.owl)
 AnnotationAssertion(rdfs:label obo:IAO_0000027 "data item"@en)
 SubClassOf(obo:IAO_0000027 obo:IAO_0000030)
 
-# Class: obo:IAO_0000030 (information content entity)
+# Class: obo:IAO_0000030 (information)
 
 AnnotationAssertion(obo:IAO_0000111 obo:IAO_0000030 "information content entity"@en)
 AnnotationAssertion(obo:IAO_0000114 obo:IAO_0000030 obo:IAO_0000122)
@@ -341,6 +320,7 @@ SubClassOf(obo:ONS_0000083 obo:ONS_1000008)
 AnnotationAssertion(obo:IAO_0000115 obo:ONS_0000085 "A meal is an eating/drinking occasion which usually occurs at certain time during the day."@en)
 AnnotationAssertion(obo:IAO_0000412 obo:ONS_0000085 obo:ons.owl)
 AnnotationAssertion(rdfs:label obo:ONS_0000085 "meal")
+SubClassOf(obo:ONS_0000085 obo:OBI_0000011)
 
 # Class: obo:ONS_0000094 (obsolete: individual dietary pattern)
 
@@ -974,12 +954,9 @@ AnnotationAssertion(rdfs:label obo:ONS_2000045 "obsolete: rural diet dietary pat
 AnnotationAssertion(owl:deprecated obo:ONS_2000045 "true"^^xsd:boolean)
 SubClassOf(obo:ONS_2000045 obo:ONS_2000005)
 
-# Class: obo:PATO_0000001 (quality)
+# Class: owl:Thing (owl:Thing)
 
-AnnotationAssertion(obo:IAO_0000115 obo:PATO_0000001 "A dependent entity that inheres in a bearer by virtue of how the bearer is related to other entities")
-AnnotationAssertion(obo:IAO_0000412 obo:PATO_0000001 obo:ons.owl)
-AnnotationAssertion(rdfs:label obo:PATO_0000001 "quality")
-SubClassOf(obo:PATO_0000001 obo:BFO_0000020)
+AnnotationAssertion(obo:IAO_0000412 owl:Thing obo:ons.owl)
 
 
 )
