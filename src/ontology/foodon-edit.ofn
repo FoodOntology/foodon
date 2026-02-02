@@ -65,12 +65,12 @@ Annotation(dcterms:contributor "Hande Küçük McGinty")
 Annotation(dcterms:contributor "Lauren Chen")
 Annotation(dcterms:contributor "Magalie Weber")
 Annotation(dcterms:contributor "Rhiannon Cameron")
-Annotation(dcterms:date "2025-05-21"^^xsd:date)
+Annotation(dcterms:date "2026-02-02")
 Annotation(dcterms:description "FoodOn is a consortium-driven project to build a comprehensive and easily accessible global farm-to-fork ontology about food, that accurately and consistently describes foods commonly known in cultures from around the world. See https://foodon.org for more details."@en)
 Annotation(dcterms:license <https://creativecommons.org/licenses/by/4.0/>)
 Annotation(dcterms:title "FoodOn Food Ontology"@en)
 Annotation(oboInOwl:default-namespace "FOODON")
-Annotation(owl:versionInfo "2025-12-30")
+Annotation(owl:versionInfo "2026-02-02")
 
 Declaration(Class(obo:CDNO_0200014))
 Declaration(Class(obo:CDNO_0200035))
@@ -6710,7 +6710,7 @@ AnnotationAssertion(obo:IAO_0000117 obo:FOODON_00001563 "Damion Dooley"@en)
 AnnotationAssertion(obo:IAO_0000119 obo:FOODON_00001563 "FoodOn"@en)
 AnnotationAssertion(obo:IAO_0000600 obo:FOODON_00001563 "For example, 'bean soup' has a defining ingredient of some 'bean'.  Similarly, spicy chicken wings require a defining ingredient of (usually minute) amounts of chilli. 
 
-A soup may 'has ingredient' some bean, but that doesn't make it a 'bean soup', i.e. there should be no inference to that category. However, some classes may have that simple ingredient \"necessary and sufficient\"equivalency."@en)
+A soup may 'has ingredient' some bean, but that doesn't make it a 'bean soup', i.e. there should be no inference to that category. However, some classes may have that simple ingredient \"necessary and sufficient\" equivalency."@en)
 AnnotationAssertion(rdfs:label obo:FOODON_00001563 "has defining ingredient"@en)
 SubObjectPropertyOf(obo:FOODON_00001563 obo:FOODON_00002420)
 
@@ -8790,7 +8790,7 @@ AnnotationAssertion(obo:IAO_0000115 obo:FOODON_00001002 "Food material for human
 AnnotationAssertion(obo:IAO_0000117 obo:FOODON_00001002 "Damion Dooley"@en)
 AnnotationAssertion(obo:IAO_0000118 obo:FOODON_00001002 "Foodon product type"@en)
 AnnotationAssertion(obo:IAO_0000119 obo:FOODON_00001002 "https://en.wikipedia.org/wiki/Food"^^xsd:anyURI)
-AnnotationAssertion(rdfs:comment obo:FOODON_00001002 "The FoodOn \"food product\"class is provided as a branch under which new food product categories and food products themselves can be placed. Here classes are provided to differentiate a food product by its food composition, processing and/or consumption characteristics. This avoids brand name products but it may include generic food dish categories. It has a much greater depth and polyhierarchy than other agency product type schemes have in an effort to group related products together.  The upper level basis of this tree originated in the environment ontology (ENVO) and from the US Code of Federal Regulations."@en)
+AnnotationAssertion(rdfs:comment obo:FOODON_00001002 "The FoodOn \"food product\" class is provided as a branch under which new food product categories and food products themselves can be placed. Here classes are provided to differentiate a food product by its food composition, processing and/or consumption characteristics. This avoids brand name products but it may include generic food dish categories. It has a much greater depth and polyhierarchy than other agency product type schemes have in an effort to group related products together.  The upper level basis of this tree originated in the environment ontology (ENVO) and from the US Code of Federal Regulations."@en)
 AnnotationAssertion(rdfs:label obo:FOODON_00001002 "food product"@en)
 SubClassOf(obo:FOODON_00001002 obo:FOODON_00002403)
 
@@ -9943,7 +9943,7 @@ SubClassOf(obo:FOODON_00002793 obo:FOODON_03414271)
 # Class: obo:FOODON_00002838 (mountain papaya plant)
 
 AnnotationAssertion(obo:IAO_0000114 obo:FOODON_00002838 obo:IAO_0000122)
-AnnotationAssertion(obo:IAO_0000115 obo:FOODON_00002838 "The mountain papaya (Vasconcellea pubescens) also known as mountain pawpaw, papayuelo, chamburo, or simply \"papaya\"is a species of the genus Vasconcellea, native to the Andes of northwestern South America from Colombia south to central Chile, typically growing at altitudes of 1,500–3,000 metres (4,900–9,800 ft) m."@en)
+AnnotationAssertion(obo:IAO_0000115 obo:FOODON_00002838 "The mountain papaya (Vasconcellea pubescens) also known as mountain pawpaw, papayuelo, chamburo, or simply \"papaya\" is a species of the genus Vasconcellea, native to the Andes of northwestern South America from Colombia south to central Chile, typically growing at altitudes of 1,500–3,000 metres (4,900–9,800 ft) m."@en)
 AnnotationAssertion(obo:IAO_0000117 obo:FOODON_00002838 <http://orcid.org/0000-0002-8844-9165>)
 AnnotationAssertion(obo:IAO_0000119 obo:FOODON_00002838 "https://en.wikipedia.org/wiki/Mountain_papaya"^^xsd:anyURI)
 AnnotationAssertion(dcterms:date obo:FOODON_00002838 "2019-08-06T19:40:26Z"^^xsd:dateTime)
@@ -10118,7 +10118,7 @@ SubClassOf(obo:FOODON_00002898 obo:FOODON_00001987)
 
 # Class: obo:FOODON_00002899 (goby)
 
-AnnotationAssertion(obo:IAO_0000115 obo:FOODON_00002899 "Goby is a common name for many species of small to medium sized ray-finned fish, normally with large heads and tapered bodies, which are found in marine, brackish and freshwater environments. Traditionally most of the species called gobies have been classified in the order Perciformes as the suborder Gobioidei but in the 5th Edition of Fishes of the World this suborder is elevated to an order Gobiiformes within the clade Percomorpha.[1] Not all the species in the Gobiiformes are referred to as gobies and the \"true gobies\"are placed in the family Gobiidae, while other species referred to as gobies have been placed in the Oxudercidae."@en)
+AnnotationAssertion(obo:IAO_0000115 obo:FOODON_00002899 "Goby is a common name for many species of small to medium sized ray-finned fish, normally with large heads and tapered bodies, which are found in marine, brackish and freshwater environments. Traditionally most of the species called gobies have been classified in the order Perciformes as the suborder Gobioidei but in the 5th Edition of Fishes of the World this suborder is elevated to an order Gobiiformes within the clade Percomorpha.[1] Not all the species in the Gobiiformes are referred to as gobies and the \"true gobies\" are placed in the family Gobiidae, while other species referred to as gobies have been placed in the Oxudercidae."@en)
 AnnotationAssertion(obo:IAO_0000117 obo:FOODON_00002899 <http://orcid.org/0000-0002-8844-9165>)
 AnnotationAssertion(obo:IAO_0000117 obo:FOODON_00002899 "Emma Griffiths"@en)
 AnnotationAssertion(obo:IAO_0000119 obo:FOODON_00002899 wikipedia:Goby)
@@ -10199,7 +10199,7 @@ SubClassOf(obo:FOODON_00002906 obo:FOODON_03412547)
 # Class: obo:FOODON_00002907 (walking catfish)
 
 AnnotationAssertion(obo:IAO_0000114 obo:FOODON_00002907 obo:IAO_0000122)
-AnnotationAssertion(obo:IAO_0000115 obo:FOODON_00002907 "The walking catfish (Clarias batrachus) is a species of freshwater airbreathing catfish native to Southeast Asia. It is named for its ability to \"walk\"and wiggle across dry land, to find food or suitable environments."@en)
+AnnotationAssertion(obo:IAO_0000115 obo:FOODON_00002907 "The walking catfish (Clarias batrachus) is a species of freshwater airbreathing catfish native to Southeast Asia. It is named for its ability to \"walk\" and wiggle across dry land, to find food or suitable environments."@en)
 AnnotationAssertion(obo:IAO_0000117 obo:FOODON_00002907 <http://orcid.org/0000-0002-8844-9165>)
 AnnotationAssertion(obo:IAO_0000117 obo:FOODON_00002907 "Emma Griffiths"@en)
 AnnotationAssertion(obo:IAO_0000119 obo:FOODON_00002907 wikipedia:Walking_catfish)
@@ -10226,7 +10226,7 @@ SubClassOf(obo:FOODON_00002908 obo:FOODON_03411365)
 # Class: obo:FOODON_00002909 (yellow hito)
 
 AnnotationAssertion(obo:IAO_0000114 obo:FOODON_00002909 obo:IAO_0000428)
-AnnotationAssertion(obo:IAO_0000115 obo:FOODON_00002909 "Yellow hito is a type of freshwater \"walking catfish\"common in the Philippines."@en)
+AnnotationAssertion(obo:IAO_0000115 obo:FOODON_00002909 "Yellow hito is a type of freshwater \"walking catfish\" common in the Philippines."@en)
 AnnotationAssertion(obo:IAO_0000117 obo:FOODON_00002909 <http://orcid.org/0000-0002-8844-9165>)
 AnnotationAssertion(obo:IAO_0000117 obo:FOODON_00002909 "Emma Griffiths"@en)
 AnnotationAssertion(dcterms:date obo:FOODON_00002909 "2019-08-09T19:27:25Z"^^xsd:dateTime)
@@ -10551,7 +10551,7 @@ SubClassOf(obo:FOODON_00003004 obo:FOODON_03420164)
 # Class: obo:FOODON_00003009 (kabocha squash plant)
 
 AnnotationAssertion(obo:IAO_0000114 obo:FOODON_00003009 obo:IAO_0000428)
-AnnotationAssertion(obo:IAO_0000115 obo:FOODON_00003009 "Kabocha is a type of winter squash, a Japanese variety of the species Cucurbita maxima. It is also called kabocha squash or Japanese pumpkin in North America. In Japan, \"kabocha\"may refer to either this squash, to the Western pumpkin, or indeed to other squashes."@en)
+AnnotationAssertion(obo:IAO_0000115 obo:FOODON_00003009 "Kabocha is a type of winter squash, a Japanese variety of the species Cucurbita maxima. It is also called kabocha squash or Japanese pumpkin in North America. In Japan, \"kabocha\" may refer to either this squash, to the Western pumpkin, or indeed to other squashes."@en)
 AnnotationAssertion(obo:IAO_0000117 obo:FOODON_00003009 <http://orcid.org/0000-0002-8844-9165>)
 AnnotationAssertion(obo:IAO_0000119 obo:FOODON_00003009 wikipedia:Kabocha)
 AnnotationAssertion(dcterms:date obo:FOODON_00003009 "2019-08-22T15:40:57Z"^^xsd:dateTime)
@@ -14283,7 +14283,7 @@ SubClassOf(obo:FOODON_00004326 obo:FOODON_00004327)
 # Class: obo:FOODON_00004328 (organism piece)
 
 AnnotationAssertion(obo:IAO_0000114 obo:FOODON_00004328 obo:IAO_0000122)
-AnnotationAssertion(obo:IAO_0000115 obo:FOODON_00004328 "A piece or pieces or amount of substance derived from one or more organisms."@en)
+AnnotationAssertion(obo:IAO_0000115 obo:FOODON_00004328 "A severed part of an organism."@en)
 AnnotationAssertion(obo:IAO_0000117 obo:FOODON_00004328 <https://orcid.org/0000-0002-8844-9165>)
 AnnotationAssertion(dcterms:date obo:FOODON_00004328 "2023-03-02T22:30:19Z"^^xsd:dateTime)
 AnnotationAssertion(rdfs:label obo:FOODON_00004328 "organism piece"@en)
@@ -15852,7 +15852,7 @@ SubClassOf(obo:FOODON_02010351 obo:FOODON_02010348)
 
 # Class: obo:FOODON_02020038 (frog)
 
-AnnotationAssertion(obo:IAO_0000600 obo:FOODON_02020038 "A frog is any member of a diverse and largely carnivorous group of short-bodied, tailless amphibians composing the order *Anura*. The use of the common names \"frog\" and \"toad\" has no taxonomic justification. From a classification perspective, all members of the order *Anura* are frogs, but only members of the family *Bufonidae* are considered \"true toads\". The use of the term \"frog\" in common names usually refers to species that are aquatic or semi-aquatic and have smooth, moist skins; the term \"toad\"generally refers to species that are terrestrial with dry, warty skins. [https://en.wikipedia.org/wiki/Frog]"@en)
+AnnotationAssertion(obo:IAO_0000600 obo:FOODON_02020038 "A frog is any member of a diverse and largely carnivorous group of short-bodied, tailless amphibians composing the order *Anura*. The use of the common names \"frog\" and \"toad\" has no taxonomic justification. From a classification perspective, all members of the order *Anura* are frogs, but only members of the family *Bufonidae* are considered \"true toads\". The use of the term \"frog\" in common names usually refers to species that are aquatic or semi-aquatic and have smooth, moist skins; the term \"toad\" generally refers to species that are terrestrial with dry, warty skins. [https://en.wikipedia.org/wiki/Frog]"@en)
 AnnotationAssertion(dcterms:date obo:FOODON_02020038 "2024-03-25T01:09:56Z"^^xsd:dateTime)
 AnnotationAssertion(oboInOwl:hasDbXref obo:FOODON_02020038 <http://eol.org/pages/1553>)
 AnnotationAssertion(oboInOwl:hasDbXref obo:FOODON_02020038 langual:B1252)
@@ -20477,7 +20477,7 @@ SubClassOf(obo:FOODON_03308024 ObjectSomeValuesFrom(obo:RO_0001000 obo:NCBITaxon
 
 # Class: obo:FOODON_03308025 (sea trout (raw))
 
-AnnotationAssertion(obo:IAO_0000116 obo:FOODON_03308025 "Must determine if \"sea trout\" and \"brown trout\"are truely synonymous, and if so, to make some sea trout entries deprecated."@en)
+AnnotationAssertion(obo:IAO_0000116 obo:FOODON_03308025 "Must determine if \"sea trout\" and \"brown trout\" are truely synonymous, and if so, to make some sea trout entries deprecated."@en)
 SubClassOf(obo:FOODON_03308025 ObjectSomeValuesFrom(obo:RO_0001000 obo:FOODON_03411479))
 
 # Class: obo:FOODON_03308027 (grouper (raw))
@@ -25179,7 +25179,7 @@ SubClassOf(obo:FOODON_03411065 ObjectSomeValuesFrom(obo:RO_0002162 obo:NCBITaxon
 # Class: obo:FOODON_03411067 (lime (citrus) plant)
 
 AnnotationAssertion(obo:IAO_0000114 obo:FOODON_03411067 obo:IAO_0000428)
-AnnotationAssertion(obo:IAO_0000115 obo:FOODON_03411067 "A lime  is a hybrid citrus fruit, which is typically round, lime green, 3-6 centimetres (1.2-2.4 in) in diameter, and contains acidic juice vesicles. There are several species of citrus trees whose fruits are called limes, including the Key lime (*Citrus aurantifolia*), Persian lime, kaffir lime, and desert lime. Limes are a rich source of vitamin C, sour and are often used to accent the flavours of foods and beverages. They are grown year-round. Plants with fruit called \"limes\"have diverse genetic origins; limes do not form a monophyletic group. [https://en.wikipedia.org/wiki/Lime_(fruit)]"@en)
+AnnotationAssertion(obo:IAO_0000115 obo:FOODON_03411067 "A lime  is a hybrid citrus fruit, which is typically round, lime green, 3-6 centimetres (1.2-2.4 in) in diameter, and contains acidic juice vesicles. There are several species of citrus trees whose fruits are called limes, including the Key lime (*Citrus aurantifolia*), Persian lime, kaffir lime, and desert lime. Limes are a rich source of vitamin C, sour and are often used to accent the flavours of foods and beverages. They are grown year-round. Plants with fruit called \"limes\" have diverse genetic origins; limes do not form a monophyletic group. [https://en.wikipedia.org/wiki/Lime_(fruit)]"@en)
 AnnotationAssertion(oboInOwl:hasDbXref obo:FOODON_03411067 <http://eol.org/pages/4414>)
 AnnotationAssertion(oboInOwl:hasDbXref obo:FOODON_03411067 <http://www.ars-grin.gov/cgi-bin/npgs/html/taxon.pl?10683>)
 AnnotationAssertion(oboInOwl:hasDbXref obo:FOODON_03411067 <http://www.itis.gov/servlet/SingleRpt/SingleRpt?search_topic=TSN&search_value=506403>)
@@ -25315,7 +25315,7 @@ SubClassOf(obo:FOODON_03411077 ObjectSomeValuesFrom(obo:RO_0002162 obo:NCBITaxon
 
 # Class: obo:FOODON_03411078 (globe tomato plant)
 
-AnnotationAssertion(obo:IAO_0000115 obo:FOODON_03411078 "Slicing or \"globe\"tomatoes are the usual tomatoes of commerce, used for a wide variety of processing and fresh eating."@en)
+AnnotationAssertion(obo:IAO_0000115 obo:FOODON_03411078 "Slicing or \"globe\" tomatoes are the usual tomatoes of commerce, used for a wide variety of processing and fresh eating."@en)
 AnnotationAssertion(oboInOwl:hasDbXref obo:FOODON_03411078 langual:B1078)
 AnnotationAssertion(oboInOwl:hasDbXref obo:FOODON_03411078 "PLANTS:SOLY2")
 AnnotationAssertion(rdfs:label obo:FOODON_03411078 "globe tomato plant"@en)
@@ -27038,7 +27038,7 @@ SubClassOf(obo:FOODON_03411213 obo:FOODON_03411607)
 # Class: obo:FOODON_03411214 (nutmeg plant)
 
 AnnotationAssertion(obo:IAO_0000114 obo:FOODON_03411214 obo:IAO_0000428)
-AnnotationAssertion(obo:IAO_0000115 obo:FOODON_03411214 "The nutmeg tree is any of several species of trees in genus *Myristica*. The most important commercial species is *Myristica fragrans*, an evergreen tree indigenous to the Banda Islands in the Moluccas (or Spice Islands) of Indonesia. The nutmeg tree is important for two spices derived from the fruit: nutmeg and mace. Nutmeg is the actual seed of the tree, while mace is the dried \"lacy\"reddish covering or aril of the seed."@en)
+AnnotationAssertion(obo:IAO_0000115 obo:FOODON_03411214 "The nutmeg tree is any of several species of trees in genus *Myristica*. The most important commercial species is *Myristica fragrans*, an evergreen tree indigenous to the Banda Islands in the Moluccas (or Spice Islands) of Indonesia. The nutmeg tree is important for two spices derived from the fruit: nutmeg and mace. Nutmeg is the actual seed of the tree, while mace is the dried \"lacy\" reddish covering or aril of the seed."@en)
 AnnotationAssertion(oboInOwl:hasDbXref obo:FOODON_03411214 <http://eol.org/pages/596922>)
 AnnotationAssertion(oboInOwl:hasDbXref obo:FOODON_03411214 <http://www.ars-grin.gov/cgi-bin/npgs/html/taxon.pl?24855>)
 AnnotationAssertion(oboInOwl:hasDbXref obo:FOODON_03411214 <http://www.itis.gov/servlet/SingleRpt/SingleRpt?search_topic=TSN&search_value=18125>)
@@ -27125,7 +27125,7 @@ SubClassOf(obo:FOODON_03411220 obo:FOODON_03414899)
 
 AnnotationAssertion(obo:IAO_0000114 obo:FOODON_03411221 obo:IAO_0000428)
 AnnotationAssertion(obo:IAO_0000115 obo:FOODON_03411221 "The cashew is a tree in the family *Anacardiaceae*. Its English name derives from the Portuguese name for the fruit of the cashew tree, caju, which in turn derives from the indigenous Tupi name, acajú. It is now widely grown in tropical climates for its cashew nuts and cashew apples. 
-The fruit of the cashew tree is an accessory fruit (sometimes called a pseudocarp or false fruit). What appears to be the fruit is an oval or pear-shaped structure that develops from the pedicel and the receptacle of the cashew flower. Called the cashew apple, better known in Central America as \"marañón\", it ripens into a yellow and/or red structure about 5 to 11 cm long. It is edible, and has a strong \"sweet\"smell and a sweet taste. The pulp of the cashew apple is very juicy, but the skin is fragile, making it unsuitable for transport. In Latin America, a fruit drink is made from the cashew apple pulp which has a very refreshing taste and tropical flavor that can be described as having notes of mango, raw green pepper, and just a little hint of grapefruit-like citrus. The true fruit of the cashew tree is a kidney or boxing-glove shaped drupe that grows at the end of the cashew apple. The drupe develops first on the tree, and then the pedicel expands into the cashew apple. Within the true fruit is a single seed, the cashew nut. Although a nut in the culinary sense, in the botanical sense the nut of the cashew is a seed. The seed is surrounded by a double shell containing an allergenic phenolic resin, anacardic acid, a potent skin irritant chemically related to the more well known allergenic oil urushiol which is also a toxin found in the related poison ivy. Properly roasting cashews destroys the toxin, but it must be done outdoors as the smoke (not unlike that from burning poison ivy) contains urushiol droplets which can cause severe, sometimes life-threatening, reactions by irritating the lungs."@en)
+The fruit of the cashew tree is an accessory fruit (sometimes called a pseudocarp or false fruit). What appears to be the fruit is an oval or pear-shaped structure that develops from the pedicel and the receptacle of the cashew flower. Called the cashew apple, better known in Central America as \"marañón\", it ripens into a yellow and/or red structure about 5 to 11 cm long. It is edible, and has a strong \"sweet\" smell and a sweet taste. The pulp of the cashew apple is very juicy, but the skin is fragile, making it unsuitable for transport. In Latin America, a fruit drink is made from the cashew apple pulp which has a very refreshing taste and tropical flavor that can be described as having notes of mango, raw green pepper, and just a little hint of grapefruit-like citrus. The true fruit of the cashew tree is a kidney or boxing-glove shaped drupe that grows at the end of the cashew apple. The drupe develops first on the tree, and then the pedicel expands into the cashew apple. Within the true fruit is a single seed, the cashew nut. Although a nut in the culinary sense, in the botanical sense the nut of the cashew is a seed. The seed is surrounded by a double shell containing an allergenic phenolic resin, anacardic acid, a potent skin irritant chemically related to the more well known allergenic oil urushiol which is also a toxin found in the related poison ivy. Properly roasting cashews destroys the toxin, but it must be done outdoors as the smoke (not unlike that from burning poison ivy) contains urushiol droplets which can cause severe, sometimes life-threatening, reactions by irritating the lungs."@en)
 AnnotationAssertion(oboInOwl:hasDbXref obo:FOODON_03411221 <http://eol.org/pages/582263>)
 AnnotationAssertion(oboInOwl:hasDbXref obo:FOODON_03411221 <http://www.ars-grin.gov/cgi-bin/npgs/html/taxon.pl?3060>)
 AnnotationAssertion(oboInOwl:hasDbXref obo:FOODON_03411221 <http://www.itis.gov/servlet/SingleRpt/SingleRpt?search_topic=TSN&search_value=28793>)
@@ -27267,7 +27267,7 @@ SubClassOf(obo:FOODON_03411230 ObjectSomeValuesFrom(obo:RO_0002162 obo:NCBITaxon
 
 AnnotationAssertion(obo:IAO_0000114 obo:FOODON_03411231 obo:IAO_0000428)
 AnnotationAssertion(obo:IAO_0000115 obo:FOODON_03411231 "A berry is a small, pulpy, and often edible fruit. Berries are typically juicy, rounded, brightly colored, sweet or sour, and do not have a stone or pit, although many pips or seeds may be present. Common examples are strawberries, raspberries, blueberries, red currants, and blackcurrants. 
- The scientific usage of the term \"berry\"differs from common usage. In scientific terminology, a berry is a fruit produced from the ovary of a single flower in which the outer layer of the ovary wall develops into an edible fleshy portion (pericarp). The definition includes many fruits that are not commonly known as berries, such as grapes, tomatoes, cucumbers, eggplants (aubergines) and bananas. Fruits excluded by the botanical definition include strawberries, raspberries, and blackberries, which are aggregate fruits, and mulberries, which are multiple fruits. [https://en.wikipedia.org/wiki/Berry]"@en)
+ The scientific usage of the term \"berry\" differs from common usage. In scientific terminology, a berry is a fruit produced from the ovary of a single flower in which the outer layer of the ovary wall develops into an edible fleshy portion (pericarp). The definition includes many fruits that are not commonly known as berries, such as grapes, tomatoes, cucumbers, eggplants (aubergines) and bananas. Fruits excluded by the botanical definition include strawberries, raspberries, and blackberries, which are aggregate fruits, and mulberries, which are multiple fruits. [https://en.wikipedia.org/wiki/Berry]"@en)
 AnnotationAssertion(oboInOwl:hasDbXref obo:FOODON_03411231 langual:B1231)
 AnnotationAssertion(rdfs:label obo:FOODON_03411231 "berry plant"@en)
 SubClassOf(obo:FOODON_03411231 obo:FOODON_03411140)
@@ -27541,7 +27541,7 @@ SubClassOf(obo:FOODON_03411251 obo:FOODON_00002616)
 
 # Class: obo:FOODON_03411253 (goose)
 
-AnnotationAssertion(obo:IAO_0000600 obo:FOODON_03411253 "Geese are waterfowl belonging to the tribe Anserini of the family *Anatidae*. This tribe comprises the genera *Anser* (the grey geese), *Branta* (the black geese) and *Chen* (the white geese). Some other birds, mostly related to the shelducks, have \"goose\"as part of their names. More distantly related members of the family *Anatidae* are swans, most of which are larger than true geese, and ducks, which are smaller.[https://en.wikipedia.org/wiki/Goose]"@en)
+AnnotationAssertion(obo:IAO_0000600 obo:FOODON_03411253 "Geese are waterfowl belonging to the tribe Anserini of the family *Anatidae*. This tribe comprises the genera *Anser* (the grey geese), *Branta* (the black geese) and *Chen* (the white geese). Some other birds, mostly related to the shelducks, have \"goose\" as part of their names. More distantly related members of the family *Anatidae* are swans, most of which are larger than true geese, and ducks, which are smaller.[https://en.wikipedia.org/wiki/Goose]"@en)
 AnnotationAssertion(oboInOwl:hasSynonym obo:FOODON_03411253 "anser spp."@en)
 AnnotationAssertion(oboInOwl:hasSynonym obo:FOODON_03411253 "branta spp."@en)
 AnnotationAssertion(oboInOwl:hasSynonym obo:FOODON_03411253 "chen spp."@en)
@@ -27628,6 +27628,7 @@ AnnotationAssertion(oboInOwl:hasDbXref obo:FOODON_03411261 langual:B1261)
 AnnotationAssertion(oboInOwl:hasExactSynonym obo:FOODON_03411261 "fungi"@en)
 AnnotationAssertion(rdfs:label obo:FOODON_03411261 "fungus"@en)
 SubClassOf(obo:FOODON_03411261 obo:FOODON_00004336)
+SubClassOf(obo:FOODON_03411261 ObjectSomeValuesFrom(obo:RO_0002162 obo:NCBITaxon_4751))
 
 # Class: obo:FOODON_03411262 (fennel plant)
 
@@ -27823,7 +27824,7 @@ SubClassOf(obo:FOODON_03411275 obo:FOODON_03414168)
 # Class: obo:FOODON_03411276 (tomato plant)
 
 AnnotationAssertion(obo:IAO_0000114 obo:FOODON_03411276 obo:IAO_0000428)
-AnnotationAssertion(obo:IAO_0000115 obo:FOODON_03411276 "The word \"tomato\"may refer to the plant (*Solanum lycopersicum*) or the edible, typically red, fruit that it bears. Originating in South America, the tomato was spread around the world following the Spanish colonization of the Americas, and its many varieties are now widely grown, often in greenhouses in cooler climates.See also the list of tomato cultivars"@en)
+AnnotationAssertion(obo:IAO_0000115 obo:FOODON_03411276 "The word \"tomato\" may refer to the plant (*Solanum lycopersicum*) or the edible, typically red, fruit that it bears. Originating in South America, the tomato was spread around the world following the Spanish colonization of the Americas, and its many varieties are now widely grown, often in greenhouses in cooler climates.See also the list of tomato cultivars"@en)
 AnnotationAssertion(obo:IAO_0000119 obo:FOODON_03411276 "WIKIPEDIA:List_of_tomato_cultivars")
 AnnotationAssertion(oboInOwl:hasDbXref obo:FOODON_03411276 <http://eol.org/pages/392557>)
 AnnotationAssertion(oboInOwl:hasDbXref obo:FOODON_03411276 obo:NCBITaxon_4081)
@@ -28138,7 +28139,7 @@ SubClassOf(obo:FOODON_03411299 ObjectSomeValuesFrom(obo:RO_0002162 obo:NCBITaxon
 
 AnnotationAssertion(obo:IAO_0000114 obo:FOODON_03411300 obo:IAO_0000428)
 AnnotationAssertion(obo:IAO_0000115 obo:FOODON_03411300 "The onion (*Allium cepa *L), also known as the bulb onion or common onion, is a vegetable that is the most widely cultivated species of the genus *Allium*. Its close relatives include the garlic, shallot, leek, chive,[2] and Chinese onion. 
- This genus also contains several other species variously referred to as onions and cultivated for food, such as the Japanese bunching onion (*Allium fistulosum*), the tree onion (*A. ×proliferum*), and the Canada onion (*Allium canadense*). The name \"wild onion\"is applied to a number of *Allium* species, but *A. cepa* is exclusively known from cultivation. [https://en.wikipedia.org/wiki/Onion]"@en)
+ This genus also contains several other species variously referred to as onions and cultivated for food, such as the Japanese bunching onion (*Allium fistulosum*), the tree onion (*A. ×proliferum*), and the Canada onion (*Allium canadense*). The name \"wild onion\" is applied to a number of *Allium* species, but *A. cepa* is exclusively known from cultivation. [https://en.wikipedia.org/wiki/Onion]"@en)
 AnnotationAssertion(oboInOwl:hasDbXref obo:FOODON_03411300 <http://eol.org/pages/8187>)
 AnnotationAssertion(oboInOwl:hasDbXref obo:FOODON_03411300 <http://www.ars-grin.gov/cgi-bin/npgs/html/taxon.pl?300022>)
 AnnotationAssertion(oboInOwl:hasDbXref obo:FOODON_03411300 langual:B1300)
@@ -30353,7 +30354,7 @@ AnnotationAssertion(oboInOwl:hasNarrowSynonym obo:FOODON_03411478 "precious onio
 AnnotationAssertion(oboInOwl:hasNarrowSynonym obo:FOODON_03411478 "spring onion"@en)
 AnnotationAssertion(oboInOwl:hasNarrowSynonym obo:FOODON_03411478 "syboe"@en)
 AnnotationAssertion(oboInOwl:hasNarrowSynonym obo:FOODON_03411478 "yard onion"@en)
-AnnotationAssertion(rdfs:comment obo:FOODON_03411478 "Scallions are also known as green onions, spring onions, salad onions, green shallots, onion sticks, long onions, baby onions, precious onions, yard onions, gibbons, or syboes.  The Welsh onion (*Allium fistulosum*) does not form bulbs even when mature, and is grown in the West almost exclusively as a scallion or salad onion, although in Asia this species is of primary importance and used both fresh and in cooking. \"Scallion\"is also used for young plants of the common onion (*Allium cepa* var. *cepa*) and shallot (*Allium cepa* var. *aggregatum*, formerly *Allium ascalonicum*), harvested before bulbs form, or sometimes when slight bulbing has occurred. Most of the cultivars grown in the West primarily as salad onions or scallions belong to *Allium cepa* var. *cepa*. Other species sometimes used as scallions include *Allium ×proliferum* and *Allium ×wakegi*."@en)
+AnnotationAssertion(rdfs:comment obo:FOODON_03411478 "Scallions are also known as green onions, spring onions, salad onions, green shallots, onion sticks, long onions, baby onions, precious onions, yard onions, gibbons, or syboes.  The Welsh onion (*Allium fistulosum*) does not form bulbs even when mature, and is grown in the West almost exclusively as a scallion or salad onion, although in Asia this species is of primary importance and used both fresh and in cooking. \"Scallion\" is also used for young plants of the common onion (*Allium cepa* var. *cepa*) and shallot (*Allium cepa* var. *aggregatum*, formerly *Allium ascalonicum*), harvested before bulbs form, or sometimes when slight bulbing has occurred. Most of the cultivars grown in the West primarily as salad onions or scallions belong to *Allium cepa* var. *cepa*. Other species sometimes used as scallions include *Allium ×proliferum* and *Allium ×wakegi*."@en)
 AnnotationAssertion(rdfs:label obo:FOODON_03411478 "scallion plant"@en)
 AnnotationAssertion(rdfs:seeAlso obo:FOODON_03411478 <https://www.soscuisine.com/blog/knowing-the-difference-between-shallots-and-scallions/>)
 SubClassOf(obo:FOODON_03411478 obo:FOODON_03411058)
@@ -30520,7 +30521,7 @@ SubClassOf(obo:FOODON_03411490 ObjectSomeValuesFrom(obo:RO_0002162 obo:NCBITaxon
 # Class: obo:FOODON_03411491 (blueberry plant)
 
 AnnotationAssertion(obo:IAO_0000114 obo:FOODON_03411491 obo:IAO_0000428)
-AnnotationAssertion(obo:IAO_0000115 obo:FOODON_03411491 "Blueberries are flowering plants of the genus *Vaccinium* (a genus which also includes cranberries and bilberries) with dark-blue berries and are perennial. Species in the section Cyanococcus are the most common fruits sold as \"blueberries\"and are native to North America (they were not introduced into Europe until the 1930s)."@en)
+AnnotationAssertion(obo:IAO_0000115 obo:FOODON_03411491 "Blueberries are flowering plants of the genus *Vaccinium* (a genus which also includes cranberries and bilberries) with dark-blue berries and are perennial. Species in the section Cyanococcus are the most common fruits sold as \"blueberries\" and are native to North America (they were not introduced into Europe until the 1930s)."@en)
 AnnotationAssertion(obo:IAO_0000119 obo:FOODON_03411491 "WIKIPEDIA:Blueberry")
 AnnotationAssertion(oboInOwl:hasDbXref obo:FOODON_03411491 <http://eol.org/pages/4267>)
 AnnotationAssertion(oboInOwl:hasDbXref obo:FOODON_03411491 langual:B1491)
@@ -31261,7 +31262,7 @@ SubClassOf(obo:FOODON_03411551 obo:FOODON_03411018)
 AnnotationAssertion(obo:IAO_0000114 obo:FOODON_03411552 obo:IAO_0000428)
 AnnotationAssertion(obo:IAO_0000115 obo:FOODON_03411552 "Common chicory, *Cichorium intybus*, is a somewhat woody, perennial herbaceous plant usually with bright blue flowers, rarely white or pink. Various varieties are cultivated for salad leaves, chicons (blanched buds), or for roots (var. *sativum*), which are baked, ground, and used as a coffee substitute and additive. It is also grown as a forage crop for livestock. It lives as a wild plant on roadsides in its native Europe, and in North America and Australia, where it has become naturalized. 
 
-\"Chicory\"is also the common name in the United States for curly endive (*Cichorium endivia*); these two closely related species are often confused."@en)
+\"Chicory\" is also the common name in the United States for curly endive (*Cichorium endivia*); these two closely related species are often confused."@en)
 AnnotationAssertion(obo:IAO_0000119 obo:FOODON_03411552 "WIKIPEDIA:Chicory")
 AnnotationAssertion(oboInOwl:hasDbXref obo:FOODON_03411552 <http://eol.org/pages/467862>)
 AnnotationAssertion(oboInOwl:hasDbXref obo:FOODON_03411552 obo:NCBITaxon_13427)
@@ -31281,7 +31282,7 @@ SubClassOf(obo:FOODON_03411552 ObjectSomeValuesFrom(obo:RO_0002162 obo:NCBITaxon
 
 # Class: obo:FOODON_03411553 (hickory tree)
 
-AnnotationAssertion(obo:IAO_0000115 obo:FOODON_03411553 "Trees in the genus *Carya* are commonly known as hickory, derived from the Powhatan language of Virginia.Hickory nuts (*Carya*) and walnuts (*Juglans*) in the *Juglandaceae* family grow within an outer husk; these fruits are technically drupes or drupaceous nuts, and thus not true botanical nuts. \"Tryma\"is a specialized term for such nut-like drupes."@en)
+AnnotationAssertion(obo:IAO_0000115 obo:FOODON_03411553 "Trees in the genus *Carya* are commonly known as hickory, derived from the Powhatan language of Virginia.Hickory nuts (*Carya*) and walnuts (*Juglans*) in the *Juglandaceae* family grow within an outer husk; these fruits are technically drupes or drupaceous nuts, and thus not true botanical nuts. \"Tryma\" is a specialized term for such nut-like drupes."@en)
 AnnotationAssertion(oboInOwl:hasSynonym obo:FOODON_03411553 "carya spp."@en)
 AnnotationAssertion(rdfs:label obo:FOODON_03411553 "hickory tree"@en)
 SubClassOf(obo:FOODON_03411553 obo:FOODON_03411062)
@@ -31411,7 +31412,7 @@ SubClassOf(obo:FOODON_03411562 obo:FOODON_03411397)
 # Class: obo:FOODON_03411563 (poultry or game bird)
 
 AnnotationAssertion(obo:IAO_0000114 obo:FOODON_03411563 obo:IAO_0000428)
-AnnotationAssertion(obo:IAO_0000116 obo:FOODON_03411563 "This \"or\"class is just to represent an equivalency with a commonly used classification outside of FoodOn. It should not have subclasses under it. (2022-11-30)"@en)
+AnnotationAssertion(obo:IAO_0000116 obo:FOODON_03411563 "This \"or\" class is just to represent an equivalency with a commonly used classification outside of FoodOn. It should not have subclasses under it. (2022-11-30)"@en)
 AnnotationAssertion(dcterms:contributor obo:FOODON_03411563 <https://orcid.org/0000-0002-9578-0788>)
 AnnotationAssertion(oboInOwl:hasDbXref obo:FOODON_03411563 langual:B1563)
 AnnotationAssertion(oboInOwl:hasNarrowSynonym obo:FOODON_03411563 "fjerkrae"@da)
@@ -32336,7 +32337,7 @@ SubClassOf(obo:FOODON_03411661 obo:FOODON_03414225)
 # Class: obo:FOODON_03411662 (damson plum plant)
 
 AnnotationAssertion(obo:IAO_0000114 obo:FOODON_03411662 obo:IAO_0000428)
-AnnotationAssertion(obo:IAO_0000115 obo:FOODON_03411662 "The damson plum (*Prunus domestica* subsp. *insititia*, or sometimes *Prunus insititia*), also archaically called the \"damascene\"is an edible drupaceous fruit, a subspecies of the plum tree.  Damsons are relatively small plum-like fruit with a distinctive, somewhat astringent taste, and are widely used for culinary purposes, particularly in fruit preserves or jam. [https://en.wikipedia.org/wiki/Damson]"@en)
+AnnotationAssertion(obo:IAO_0000115 obo:FOODON_03411662 "The damson plum (*Prunus domestica* subsp. *insititia*, or sometimes *Prunus insititia*), also archaically called the \"damascene\" is an edible drupaceous fruit, a subspecies of the plum tree.  Damsons are relatively small plum-like fruit with a distinctive, somewhat astringent taste, and are widely used for culinary purposes, particularly in fruit preserves or jam. [https://en.wikipedia.org/wiki/Damson]"@en)
 AnnotationAssertion(oboInOwl:hasDbXref obo:FOODON_03411662 <http://eol.org/pages/8097>)
 AnnotationAssertion(oboInOwl:hasDbXref obo:FOODON_03411662 <http://www.ars-grin.gov/cgi-bin/npgs/html/taxon.pl?29889>)
 AnnotationAssertion(oboInOwl:hasDbXref obo:FOODON_03411662 langual:B1662)
@@ -33348,7 +33349,7 @@ SubClassOf(obo:FOODON_03411737 ObjectSomeValuesFrom(obo:RO_0002162 obo:NCBITaxon
 # Class: obo:FOODON_03411738 (jicama plant)
 
 AnnotationAssertion(obo:IAO_0000114 obo:FOODON_03411738 obo:IAO_0000428)
-AnnotationAssertion(obo:IAO_0000115 obo:FOODON_03411738 "Pachyrhizus erosus, commonly known as Jícama, Yam, and Mexican Turnip, is the name of a native Mexican vine, although the name most commonly refers to the plant's edible tuberous root. Jícama is one species in the genus Pachyrhizus. Plants in this genus are commonly referred to as yam bean, although the term \"yam bean\"can be another name for jícama. The other major species of yam beans are also indigenous within the Americas."@en)
+AnnotationAssertion(obo:IAO_0000115 obo:FOODON_03411738 "Pachyrhizus erosus, commonly known as Jícama, Yam, and Mexican Turnip, is the name of a native Mexican vine, although the name most commonly refers to the plant's edible tuberous root. Jícama is one species in the genus Pachyrhizus. Plants in this genus are commonly referred to as yam bean, although the term \"yam bean\" can be another name for jícama. The other major species of yam beans are also indigenous within the Americas."@en)
 AnnotationAssertion(oboInOwl:hasDbXref obo:FOODON_03411738 <http://eol.org/pages/4277>)
 AnnotationAssertion(oboInOwl:hasDbXref obo:FOODON_03411738 <http://www.ars-grin.gov/cgi-bin/npgs/html/taxon.pl?26286>)
 AnnotationAssertion(oboInOwl:hasDbXref obo:FOODON_03411738 <http://www.itis.gov/servlet/SingleRpt/SingleRpt?search_topic=TSN&search_value=26824>)
@@ -37329,7 +37330,7 @@ SubClassOf(obo:FOODON_03412072 obo:NCBITaxon_3716)
 # Class: obo:FOODON_03412077 (bok choy plant)
 
 AnnotationAssertion(obo:IAO_0000114 obo:FOODON_03412077 obo:IAO_0000122)
-AnnotationAssertion(obo:IAO_0000115 obo:FOODON_03412077 "Chinese cabbage (*Brassica rapa*, subspecies *pekinensis* and *chinensis*) can refer to two distinct varieties (see below) of Chinese leaf vegetables used often in Chinese cuisine. These vegetables are both related to the Western cabbage, and are of the same species as the common turnip. Both have many variations in name, spelling and scientific classification, especially the \"bok choy\"or chinensis variety."@en)
+AnnotationAssertion(obo:IAO_0000115 obo:FOODON_03412077 "Chinese cabbage (*Brassica rapa*, subspecies *pekinensis* and *chinensis*) can refer to two distinct varieties (see below) of Chinese leaf vegetables used often in Chinese cuisine. These vegetables are both related to the Western cabbage, and are of the same species as the common turnip. Both have many variations in name, spelling and scientific classification, especially the \"bok choy\" or chinensis variety."@en)
 AnnotationAssertion(obo:IAO_0000117 obo:FOODON_03412077 "Damion Dooley"@en)
 AnnotationAssertion(obo:IAO_0000119 obo:FOODON_03412077 wikipedia:Bok_choy)
 AnnotationAssertion(oboInOwl:hasDbXref obo:FOODON_03412077 <http://eol.org/pages/4219>)
@@ -39764,7 +39765,7 @@ SubClassOf(obo:FOODON_03412309 obo:FOODON_03411581)
 # Class: obo:FOODON_03412310 (betel plant)
 
 AnnotationAssertion(obo:IAO_0000114 obo:FOODON_03412310 obo:IAO_0000428)
-AnnotationAssertion(obo:IAO_0000115 obo:FOODON_03412310 "The Betel (*Piper betle*) is a spice whose leaves have medicinal properties. The plant is evergreen and perennial, with glossy heart-shaped leaves and white catkins, and grows to a height of about 1 metre. The Betel plant originated in Malaysia and now grows in India, Indonesia and Sri Lanka. The best Betel leaf is the \"Magahi\"variety (literally from the Magadha region) grown near Patna in Bihar, India. The plant is known by a series of different names in the regions in which it is consumed - among these are Vetrilai (Tamil)"@en)
+AnnotationAssertion(obo:IAO_0000115 obo:FOODON_03412310 "The Betel (*Piper betle*) is a spice whose leaves have medicinal properties. The plant is evergreen and perennial, with glossy heart-shaped leaves and white catkins, and grows to a height of about 1 metre. The Betel plant originated in Malaysia and now grows in India, Indonesia and Sri Lanka. The best Betel leaf is the \"Magahi\" variety (literally from the Magadha region) grown near Patna in Bihar, India. The plant is known by a series of different names in the regions in which it is consumed - among these are Vetrilai (Tamil)"@en)
 AnnotationAssertion(obo:IAO_0000119 obo:FOODON_03412310 "WIKIPEDIA:Betel).")
 AnnotationAssertion(oboInOwl:hasDbXref obo:FOODON_03412310 langual:B2310)
 AnnotationAssertion(oboInOwl:hasSynonym obo:FOODON_03412310 "betle pepper"@en)
@@ -41603,7 +41604,7 @@ SubClassOf(obo:FOODON_03412475 ObjectSomeValuesFrom(obo:RO_0002162 obo:NCBITaxon
 # Class: obo:FOODON_03412476 (sea lettuce)
 
 AnnotationAssertion(obo:IAO_0000114 obo:FOODON_03412476 obo:IAO_0000428)
-AnnotationAssertion(obo:IAO_0000115 obo:FOODON_03412476 "The sea lettuces comprise the genus *Ulva*, a group of edible green algae that is widely distributed along the coasts of the world's oceans. The type species within the genus *Ulva* is *Ulva lactuca* Linnaeus, \"lactuca\"meaning lettuce. Additionally, some species in the algae genus *Monostroma* are known as slender sea lettuces.  *Ulva lactuca* [EU Regulation, see http://eunis.eea.europa.eu/species/65984]"@en)
+AnnotationAssertion(obo:IAO_0000115 obo:FOODON_03412476 "The sea lettuces comprise the genus *Ulva*, a group of edible green algae that is widely distributed along the coasts of the world's oceans. The type species within the genus *Ulva* is *Ulva lactuca* Linnaeus, \"lactuca\" meaning lettuce. Additionally, some species in the algae genus *Monostroma* are known as slender sea lettuces.  *Ulva lactuca* [EU Regulation, see http://eunis.eea.europa.eu/species/65984]"@en)
 AnnotationAssertion(obo:IAO_0000119 obo:FOODON_03412476 "WIKIPEDIA:Sea_lettuce")
 AnnotationAssertion(oboInOwl:hasDbXref obo:FOODON_03412476 langual:B2476)
 AnnotationAssertion(oboInOwl:hasNarrowSynonym obo:FOODON_03412476 "Ulva Linnaeus, 1753")
@@ -42087,7 +42088,7 @@ SubClassOf(obo:FOODON_03412516 ObjectSomeValuesFrom(obo:RO_0002162 obo:NCBITaxon
 # Class: obo:FOODON_03412517 (oriental cashew plant)
 
 AnnotationAssertion(obo:IAO_0000114 obo:FOODON_03412517 obo:IAO_0000428)
-AnnotationAssertion(obo:IAO_0000115 obo:FOODON_03412517 "Semecarpus anacardium is a native of India, found in the outer Himalayas to Coromandel Coast. It is closely related to the cashew.It is known as bhallatak in India and was called \"marking nut\"by Europeans, because it was used by washermen to mark cloth and clothing before washing, as it imparted a water insoluble mark to the cloth. It is also known as ker beeja in Kannada and bibba in Marathi."@en)
+AnnotationAssertion(obo:IAO_0000115 obo:FOODON_03412517 "Semecarpus anacardium is a native of India, found in the outer Himalayas to Coromandel Coast. It is closely related to the cashew.It is known as bhallatak in India and was called \"marking nut\" by Europeans, because it was used by washermen to mark cloth and clothing before washing, as it imparted a water insoluble mark to the cloth. It is also known as ker beeja in Kannada and bibba in Marathi."@en)
 AnnotationAssertion(oboInOwl:hasDbXref obo:FOODON_03412517 <http://eol.org/pages/483492>)
 AnnotationAssertion(oboInOwl:hasDbXref obo:FOODON_03412517 <http://www.ars-grin.gov/cgi-bin/npgs/html/taxon.pl?33598>)
 AnnotationAssertion(oboInOwl:hasDbXref obo:FOODON_03412517 <http://www.itis.gov/servlet/SingleRpt/SingleRpt?search_topic=TSN&search_value=506459>)
@@ -42560,7 +42561,7 @@ SubClassOf(obo:FOODON_03412559 obo:FOODON_03411643)
 # Class: obo:FOODON_03412560 (pasilla pepper plant)
 
 AnnotationAssertion(obo:IAO_0000114 obo:FOODON_03412560 obo:IAO_0000428)
-AnnotationAssertion(obo:IAO_0000115 obo:FOODON_03412560 "The pasilla chile or chile negro is the dried form of the chilaca chili pepper, a long and narrow member of species *Capsicum annuum*. In the United States, producers and grocers often incorrectly use \"pasilla\"to describe the poblano, a different, wider variety of pepper, the dried form of which is called an ancho. [https://en.wikipedia.org/wiki/Pasilla]"@en)
+AnnotationAssertion(obo:IAO_0000115 obo:FOODON_03412560 "The pasilla chile or chile negro is the dried form of the chilaca chili pepper, a long and narrow member of species *Capsicum annuum*. In the United States, producers and grocers often incorrectly use \"pasilla\" to describe the poblano, a different, wider variety of pepper, the dried form of which is called an ancho. [https://en.wikipedia.org/wiki/Pasilla]"@en)
 AnnotationAssertion(oboInOwl:hasDbXref obo:FOODON_03412560 langual:B2560)
 AnnotationAssertion(oboInOwl:hasSynonym obo:FOODON_03412560 "chilaca chili pepper"@en)
 AnnotationAssertion(oboInOwl:hasSynonym obo:FOODON_03412560 "pepper, pasilla"@en)
@@ -49605,6 +49606,7 @@ AnnotationAssertion(oboInOwl:hasDbXref obo:FOODON_03413357 langual:B3357)
 AnnotationAssertion(rdfs:comment obo:FOODON_03413357 "LanguaL curation note: This term is for CLASSIFICATION ONLY; DO NOT USE term in indexing. Use a more precise narrower term."@en)
 AnnotationAssertion(rdfs:label obo:FOODON_03413357 "plant by taxonomy"@en)
 SubClassOf(obo:FOODON_03413357 obo:PO_0000003)
+SubClassOf(obo:FOODON_03413357 ObjectSomeValuesFrom(obo:RO_0002162 obo:NCBITaxon_33090))
 
 # Class: obo:FOODON_03413358 (plant used as fodder)
 
@@ -49672,7 +49674,7 @@ SubClassOf(obo:FOODON_03413363 obo:FOODON_03414164)
 # Class: obo:FOODON_03413364 (porpoise family)
 
 AnnotationAssertion(obo:IAO_0000114 obo:FOODON_03413364 obo:IAO_0000428)
-AnnotationAssertion(obo:IAO_0000115 obo:FOODON_03413364 "The porpoises are small cetaceans of the family *Phocoenidae*; they are related to whales and dolphins. They are however distinct from dolphins, although the word \"porpoise\"is often used to refer to any small dolphin, especially in North America. A key difference is the shape of the teeth and of the head. Porpoises, divided into six species, live in all oceans, mostly near the shore. Probably best known is the Harbour Porpoise, which can be found across the Northern Hemisphere. ("@en)
+AnnotationAssertion(obo:IAO_0000115 obo:FOODON_03413364 "The porpoises are small cetaceans of the family *Phocoenidae*; they are related to whales and dolphins. They are however distinct from dolphins, although the word \"porpoise\" is often used to refer to any small dolphin, especially in North America. A key difference is the shape of the teeth and of the head. Porpoises, divided into six species, live in all oceans, mostly near the shore. Probably best known is the Harbour Porpoise, which can be found across the Northern Hemisphere. ("@en)
 AnnotationAssertion(obo:IAO_0000119 obo:FOODON_03413364 "WIKIPEDIA:Porpoise)")
 AnnotationAssertion(oboInOwl:hasDbXref obo:FOODON_03413364 <http://eol.org/pages/7653>)
 AnnotationAssertion(oboInOwl:hasDbXref obo:FOODON_03413364 langual:B3364)
@@ -50060,7 +50062,7 @@ SubClassOf(obo:FOODON_03413395 ObjectSomeValuesFrom(obo:RO_0002162 obo:NCBITaxon
 AnnotationAssertion(obo:IAO_0000114 obo:FOODON_03413396 obo:IAO_0000428)
 AnnotationAssertion(obo:IAO_0000115 obo:FOODON_03413396 "Yam is the common name for some plant species in the genus *Dioscorea* (family *Dioscoreaceae*) that form edible tubers. Yams are perennial herbaceous vines cultivated for the consumption of their starchy tubers in many temperate and subtropical world regions. The tubers themselves are also called \"yams\", having numerous cultivars.
 
-In parts of the United States and Canada, \"yam\"is sometimes used to refer to varieties of the completely unrelated sweet potato (*Ipomoea batatas*).[https://en.wikipedia.org/wiki/Yam_(vegetable)]"@en)
+In parts of the United States and Canada, \"yam\" is sometimes used to refer to varieties of the completely unrelated sweet potato (*Ipomoea batatas*).[https://en.wikipedia.org/wiki/Yam_(vegetable)]"@en)
 AnnotationAssertion(oboInOwl:hasDbXref obo:FOODON_03413396 <http://eol.org/pages/8214>)
 AnnotationAssertion(oboInOwl:hasDbXref obo:FOODON_03413396 <http://www.ars-grin.gov/cgi-bin/npgs/html/taxon.pl?300191>)
 AnnotationAssertion(oboInOwl:hasDbXref obo:FOODON_03413396 langual:B3396)
@@ -50784,7 +50786,7 @@ SubClassOf(obo:FOODON_03413452 obo:FOODON_00003528)
 
 AnnotationAssertion(obo:IAO_0000114 obo:FOODON_03413453 obo:IAO_0000428)
 AnnotationAssertion(obo:IAO_0000115 obo:FOODON_03413453 "Astacus astacus, the European crayfish, noble crayfish or broad-fingered crayfish, is the most common species of crayfish in Europe. Like other crayfish, The European crayfish is restricted to freshwater, living only in unpolluted streams, rivers and lakes. It is found from France throughout central Europe, to the Balkan peninsula, and north as far as parts of the British Isles, Scandinavia, and the western parts of the former Soviet Union. 
-*Astacus astacus* is susceptible to the crayfish plague carried by the invasive American species *Pacifastacus leniusculus*, and is therefore listed as \"vulnerable\"by the IUCN Red List of Threatened Species. Citation: Sket, B. 1996. Astacus astacus. 
+*Astacus astacus* is susceptible to the crayfish plague carried by the invasive American species *Pacifastacus leniusculus*, and is therefore listed as \"vulnerable\" by the IUCN Red List of Threatened Species. Citation: Sket, B. 1996. Astacus astacus. 
 In: IUCN 2006. 2006 IUCN Red List of Threatened Species. <www.iucnredlist.org>. Downloaded on 26 January 2007."@en)
 AnnotationAssertion(oboInOwl:hasDbXref obo:FOODON_03413453 <http://eol.org/pages/1021866>)
 AnnotationAssertion(oboInOwl:hasDbXref obo:FOODON_03413453 <http://www.itis.gov/servlet/SingleRpt/SingleRpt?search_topic=TSN&search_value=97333>)
@@ -50802,7 +50804,7 @@ SubClassOf(obo:FOODON_03413453 ObjectSomeValuesFrom(obo:RO_0002162 obo:NCBITaxon
 # Class: obo:FOODON_03413454 (danube crayfish)
 
 AnnotationAssertion(obo:IAO_0000114 obo:FOODON_03413454 obo:IAO_0000428)
-AnnotationAssertion(obo:IAO_0000115 obo:FOODON_03413454 "Astacus leptodactylus, the Danube crayfish or Galician crayfish, is a species of crayfish native to eastern Europe. It can be distinguished most easily from the commoner European or broad-fingered crayfish (*Astacus astacus*) by the relatively thinner \"fingers\"of the claws."@en)
+AnnotationAssertion(obo:IAO_0000115 obo:FOODON_03413454 "Astacus leptodactylus, the Danube crayfish or Galician crayfish, is a species of crayfish native to eastern Europe. It can be distinguished most easily from the commoner European or broad-fingered crayfish (*Astacus astacus*) by the relatively thinner \"fingers\" of the claws."@en)
 AnnotationAssertion(obo:IAO_0000119 obo:FOODON_03413454 "WIKIPEDIA:Astacus_leptodactylus")
 AnnotationAssertion(oboInOwl:hasDbXref obo:FOODON_03413454 langual:B3454)
 AnnotationAssertion(oboInOwl:hasDbXref obo:FOODON_03413454 asfis:crd)
@@ -59430,7 +59432,7 @@ SubClassOf(obo:FOODON_03414189 ObjectSomeValuesFrom(obo:RO_0002162 obo:NCBITaxon
 
 AnnotationAssertion(obo:IAO_0000114 obo:FOODON_03414190 obo:IAO_0000428)
 AnnotationAssertion(obo:IAO_0000115 obo:FOODON_03414190 "Senna obtusifolia (Chinese senna, American sicklepod or sicklepod) is a legume in the genus Senna, sometimes separated in the monotypic genus Diallobus. It grows wild in North, Central, and South America, Asia, Africa, and Oceania, and is considered a particularly serious weed in many places. 
- The green leaves of the plant are fermented to produce a high-protein food product called \"kawal\"which is eaten by many people in Sudan as a meat substitute. 
+ The green leaves of the plant are fermented to produce a high-protein food product called \"kawal\" which is eaten by many people in Sudan as a meat substitute. 
  The plant's seeds are a commercial source of cassia gum, a food additive usually used as a thickener and named for the Chinese Senna's former placement in the genus Cassia. Roasted and ground, the seeds have also been used as a substitute for coffee. [https://en.wikipedia.org/wiki/Senna_obtusifolia]"@en)
 AnnotationAssertion(oboInOwl:hasDbXref obo:FOODON_03414190 <http://eol.org/pages/4277>)
 AnnotationAssertion(oboInOwl:hasDbXref obo:FOODON_03414190 <http://www.ars-grin.gov/cgi-bin/npgs/html/taxon.pl?100044>)
@@ -60633,7 +60635,7 @@ SubClassOf(obo:FOODON_03414277 obo:FOODON_02020805)
 
 AnnotationAssertion(obo:IAO_0000114 obo:FOODON_03414278 obo:IAO_0000428)
 AnnotationAssertion(obo:IAO_0000115 obo:FOODON_03414278 "Iaraj (*Cyrtosperma chamissonis - Araceae*). This large, cultivated \"hard\" or \"swamp\" taro has been a very important starchy, staple food source. It reaches heights up to 4-6 m (15-20 ft) and produces huge green to yellowish-green, heart-shaped leaves with tips that point upward.
- Iaraj is an aroid \"root crop\"species probably native to Southeast Asia or wetern Melanesia. Early settlers brought it by canoe to many islands of the tropical Pacific, including the Marshall Islands, in prehistoric times.[http://www.hawaii.edu/cpis/MI/plants/iaraj.html]"@en)
+ Iaraj is an aroid \"root crop\" species probably native to Southeast Asia or wetern Melanesia. Early settlers brought it by canoe to many islands of the tropical Pacific, including the Marshall Islands, in prehistoric times.[http://www.hawaii.edu/cpis/MI/plants/iaraj.html]"@en)
 AnnotationAssertion(oboInOwl:hasDbXref obo:FOODON_03414278 <http://eol.org/pages/8191>)
 AnnotationAssertion(oboInOwl:hasDbXref obo:FOODON_03414278 <http://www.itis.gov/servlet/SingleRpt/SingleRpt?search_topic=TSN&search_value=506753>)
 AnnotationAssertion(oboInOwl:hasDbXref obo:FOODON_03414278 langual:B4278)
@@ -60646,7 +60648,7 @@ SubClassOf(obo:FOODON_03414278 obo:FOODON_03411018)
 # Class: obo:FOODON_03414279 (pulaka plant)
 
 AnnotationAssertion(obo:IAO_0000114 obo:FOODON_03414279 obo:IAO_0000428)
-AnnotationAssertion(obo:IAO_0000115 obo:FOODON_03414279 "Pulaka (*Cyrtosperma merkusii*), or swamp taro, is a crop grown in Oceania (especially Tuvalu) and an important source of carbohydrates for the area's inhabitants. It is a \"swamp crop\" similar to taro, but \"with bigger leaves and larger, coarser roots.\"Pulaka roots need to be cooked for hours to reduce toxicity in the corms, but are rich in nutrients, especially calcium. Pulaka is an important part of Tuvalu cultural and culinary tradition, now under threat from rising sea level and displacement from the growing use of imported food products."@en)
+AnnotationAssertion(obo:IAO_0000115 obo:FOODON_03414279 "Pulaka (*Cyrtosperma merkusii*), or swamp taro, is a crop grown in Oceania (especially Tuvalu) and an important source of carbohydrates for the area's inhabitants. It is a \"swamp crop\" similar to taro, but \"with bigger leaves and larger, coarser roots.\" Pulaka roots need to be cooked for hours to reduce toxicity in the corms, but are rich in nutrients, especially calcium. Pulaka is an important part of Tuvalu cultural and culinary tradition, now under threat from rising sea level and displacement from the growing use of imported food products."@en)
 AnnotationAssertion(oboInOwl:hasDbXref obo:FOODON_03414279 <http://eol.org/pages/1094951>)
 AnnotationAssertion(oboInOwl:hasDbXref obo:FOODON_03414279 <http://www.ars-grin.gov/cgi-bin/npgs/html/taxon.pl?12943>)
 AnnotationAssertion(oboInOwl:hasDbXref obo:FOODON_03414279 <http://www.itis.gov/servlet/SingleRpt/SingleRpt?search_topic=TSN&search_value=506754>)
@@ -61059,7 +61061,7 @@ The Australian Sunrise lime is a seedling of a Faustrimedin (originally bred in 
 The cream-coloured flowers occur in spring to early summer. Fruits ripen in winter, are pearshaped and usually 30 to 45 mm long by 20 to 40 mm wide. Seeds are small and plump.
 
 
-Juice squeezed from the fruit has a sharp, clean flavour and a light \"floral\"aroma. The fruit may be eaten whole and like a kumquat, have a sharpish flesh and a sweet albedo and skin. They can be used in products such as in cordials, beverages, conserves, puree, pastes, sauces, marmalade, syrups and garnishes.[http://users.kymp.net/citruspages/australian.html#sunrise]"@en)
+Juice squeezed from the fruit has a sharp, clean flavour and a light \"floral\" aroma. The fruit may be eaten whole and like a kumquat, have a sharpish flesh and a sweet albedo and skin. They can be used in products such as in cordials, beverages, conserves, puree, pastes, sauces, marmalade, syrups and garnishes.[http://users.kymp.net/citruspages/australian.html#sunrise]"@en)
 AnnotationAssertion(obo:IAO_0000119 obo:FOODON_03414306 "WIKIPEDIA:Australian_lime")
 AnnotationAssertion(oboInOwl:hasDbXref obo:FOODON_03414306 <http://eol.org/pages/4414>)
 AnnotationAssertion(oboInOwl:hasDbXref obo:FOODON_03414306 langual:B4306)
@@ -61652,7 +61654,7 @@ SubClassOf(obo:FOODON_03414347 obo:FOODON_03411179)
 # Class: obo:FOODON_03414348 (peruvian peppertree)
 
 AnnotationAssertion(obo:IAO_0000114 obo:FOODON_03414348 obo:IAO_0000428)
-AnnotationAssertion(obo:IAO_0000115 obo:FOODON_03414348 "Peruvian Pepper (*Schinus molle*, also known as American pepper, Peruvian peppertree, escobilla, false pepper, molle del Peru, pepper tree, peppercorn tree, Californian pepper tree, pirul and Peruvian mastic) is an evergreen tree that grows to 15 meters (50 feet). It is native to the Peruvian Andes. The bright pink fruits of Schinus molle are often sold as \"pink peppercorns\"although S. molle is unrelated to true pepper (Piper nigrum).
+AnnotationAssertion(obo:IAO_0000115 obo:FOODON_03414348 "Peruvian Pepper (*Schinus molle*, also known as American pepper, Peruvian peppertree, escobilla, false pepper, molle del Peru, pepper tree, peppercorn tree, Californian pepper tree, pirul and Peruvian mastic) is an evergreen tree that grows to 15 meters (50 feet). It is native to the Peruvian Andes. The bright pink fruits of Schinus molle are often sold as \"pink peppercorns\" although S. molle is unrelated to true pepper (Piper nigrum).
 
 Although not related to commercial pepper (*Piper nigrum*) the pink/red berries, like the berries of its close relative the Brazilian pepper (*Schinus terebinthifolius*), are sold as pink peppercorns and often blended with commercial pepper."@en)
 AnnotationAssertion(oboInOwl:hasDbXref obo:FOODON_03414348 <http://eol.org/pages/582275>)
@@ -61841,7 +61843,7 @@ SubClassOf(obo:FOODON_03414363 obo:FOODON_03414362)
 # Class: obo:FOODON_03414364 (northern bobwhite)
 
 AnnotationAssertion(obo:IAO_0000114 obo:FOODON_03414364 obo:IAO_0000428)
-AnnotationAssertion(obo:IAO_0000115 obo:FOODON_03414364 "The Northern Bobwhite, Virginia Quail or (in its home range) Bobwhite Quail (*Colinus virginianus*) is a ground-dwelling bird native to the United States, Mexico, and the Caribbean. It is a member of the group of species known as New World quails (*Odontophoridae*). They were initially placed with the Old World quails in the pheasant family (*Phasianidae*), but are not particularly closely related. The name \"bobwhite\"derives from its characteristic whistling call."@en)
+AnnotationAssertion(obo:IAO_0000115 obo:FOODON_03414364 "The Northern Bobwhite, Virginia Quail or (in its home range) Bobwhite Quail (*Colinus virginianus*) is a ground-dwelling bird native to the United States, Mexico, and the Caribbean. It is a member of the group of species known as New World quails (*Odontophoridae*). They were initially placed with the Old World quails in the pheasant family (*Phasianidae*), but are not particularly closely related. The name \"bobwhite\" derives from its characteristic whistling call."@en)
 AnnotationAssertion(oboInOwl:hasDbXref obo:FOODON_03414364 <http://eol.org/pages/1049187>)
 AnnotationAssertion(oboInOwl:hasDbXref obo:FOODON_03414364 <http://www.itis.gov/servlet/SingleRpt/SingleRpt?search_topic=TSN&search_value=175863>)
 AnnotationAssertion(oboInOwl:hasDbXref obo:FOODON_03414364 langual:B4364)
@@ -61949,7 +61951,7 @@ SubClassOf(obo:FOODON_03414371 ObjectSomeValuesFrom(obo:RO_0002162 obo:NCBITaxon
 # Class: obo:FOODON_03414372 (japanese horse-chestnut tree)
 
 AnnotationAssertion(obo:IAO_0000114 obo:FOODON_03414372 obo:IAO_0000428)
-AnnotationAssertion(obo:IAO_0000115 obo:FOODON_03414372 "Aesculus turbinata, common name \"Japanese horse-chestnut\"is native to Japan but cultivated elsewhere. It is a tree up to 30 m tall. Flowers are white to pale yellowish with red spots. Capsules are dark brown, obovoid to pyriform. The seeds were traditionally eaten, after leaching, by the Jomon people of Japan over about four millennia, until 300 AD."@en)
+AnnotationAssertion(obo:IAO_0000115 obo:FOODON_03414372 "Aesculus turbinata, common name \"Japanese horse-chestnut\" is native to Japan but cultivated elsewhere. It is a tree up to 30 m tall. Flowers are white to pale yellowish with red spots. Capsules are dark brown, obovoid to pyriform. The seeds were traditionally eaten, after leaching, by the Jomon people of Japan over about four millennia, until 300 AD."@en)
 AnnotationAssertion(oboInOwl:hasDbXref obo:FOODON_03414372 <http://eol.org/pages/483851>)
 AnnotationAssertion(oboInOwl:hasDbXref obo:FOODON_03414372 <http://www.ars-grin.gov/cgi-bin/npgs/html/taxon.pl?1637>)
 AnnotationAssertion(oboInOwl:hasDbXref obo:FOODON_03414372 <http://www.itis.gov/servlet/SingleRpt/SingleRpt?search_topic=TSN&search_value=506070>)
@@ -62765,7 +62767,7 @@ SubClassOf(obo:FOODON_03414466 obo:FOODON_00002581)
 # Class: obo:FOODON_03414467 (ascidian)
 
 AnnotationAssertion(obo:IAO_0000114 obo:FOODON_03414467 obo:IAO_0000428)
-AnnotationAssertion(obo:IAO_0000115 obo:FOODON_03414467 "Ascidiacea (commonly known as the ascidians or sea squirts) is a class in the Tunicata subphylum of sac-like marine invertebrate filter feeders. Ascidians are characterized by a tough outer \"tunic\"made of the polysaccharide tunicin, as compared to other tunicates which are less rigid."@en)
+AnnotationAssertion(obo:IAO_0000115 obo:FOODON_03414467 "Ascidiacea (commonly known as the ascidians or sea squirts) is a class in the Tunicata subphylum of sac-like marine invertebrate filter feeders. Ascidians are characterized by a tough outer \"tunic\" made of the polysaccharide tunicin, as compared to other tunicates which are less rigid."@en)
 AnnotationAssertion(obo:IAO_0000119 obo:FOODON_03414467 "WIKIPEDIA:Ascidiacea")
 AnnotationAssertion(oboInOwl:hasDbXref obo:FOODON_03414467 <http://eol.org/pages/1486>)
 AnnotationAssertion(oboInOwl:hasDbXref obo:FOODON_03414467 langual:B4467)
@@ -62858,7 +62860,7 @@ SubClassOf(obo:FOODON_03414474 ObjectSomeValuesFrom(obo:RO_0002162 obo:NCBITaxon
 # Class: obo:FOODON_03414475 (narrowleaf cattail plant)
 
 AnnotationAssertion(obo:IAO_0000114 obo:FOODON_03414475 obo:IAO_0000428)
-AnnotationAssertion(obo:IAO_0000115 obo:FOODON_03414475 "Typha angustifolia L., ( also Lesser Bulrush or Narrowleaf Cattail or Lesser Reedmace), is a perennial herbaceous plant of genus *Typha*. This cattail is an \"obligate wetland\"species that is commonly found in the northern hemisphere in brackish locations. Several parts of the plant are edible, including during various seasons the dormant sprouts on roots and bases of leaves, the inner core of the stalk, green bloom spikes, ripe pollen, and starchy roots. The edible stem is called bòn bòn in Vietnam."@en)
+AnnotationAssertion(obo:IAO_0000115 obo:FOODON_03414475 "Typha angustifolia L., ( also Lesser Bulrush or Narrowleaf Cattail or Lesser Reedmace), is a perennial herbaceous plant of genus *Typha*. This cattail is an \"obligate wetland\" species that is commonly found in the northern hemisphere in brackish locations. Several parts of the plant are edible, including during various seasons the dormant sprouts on roots and bases of leaves, the inner core of the stalk, green bloom spikes, ripe pollen, and starchy roots. The edible stem is called bòn bòn in Vietnam."@en)
 AnnotationAssertion(oboInOwl:hasDbXref obo:FOODON_03414475 <http://eol.org/pages/526430>)
 AnnotationAssertion(oboInOwl:hasDbXref obo:FOODON_03414475 <http://www.ars-grin.gov/cgi-bin/npgs/html/taxon.pl?40799>)
 AnnotationAssertion(oboInOwl:hasDbXref obo:FOODON_03414475 <http://www.itis.gov/servlet/SingleRpt/SingleRpt?search_topic=TSN&search_value=42325>)
@@ -63017,7 +63019,7 @@ SubClassOf(obo:FOODON_03414484 ObjectSomeValuesFrom(obo:RO_0002162 obo:NCBITaxon
 # Class: obo:FOODON_03414486 (beluga whale)
 
 AnnotationAssertion(obo:IAO_0000114 obo:FOODON_03414486 obo:IAO_0000428)
-AnnotationAssertion(obo:IAO_0000115 obo:FOODON_03414486 "The beluga or white whale, *Delphinapterus leucas*, is an Arctic and sub-Arctic cetacean. It is one of two members of the family *Monodontidae*, along with the narwhal, and the only member of the genus *Delphinapterus*. This marine mammal is commonly referred to simply as the beluga or sea canary due to its high-pitched twitter. Using the term \"white whale\" to refer to belugas is, in the strictest sense, erroneous, as the term \"whale\"is usually applied to the *Mysticeti* (baleen whales) and not to toothed cetaceans which belong to the suborder *Odontoceti*, which also includes dolphins and porpoises. ]"@en)
+AnnotationAssertion(obo:IAO_0000115 obo:FOODON_03414486 "The beluga or white whale, *Delphinapterus leucas*, is an Arctic and sub-Arctic cetacean. It is one of two members of the family *Monodontidae*, along with the narwhal, and the only member of the genus *Delphinapterus*. This marine mammal is commonly referred to simply as the beluga or sea canary due to its high-pitched twitter. Using the term \"white whale\" to refer to belugas is, in the strictest sense, erroneous, as the term \"whale\" is usually applied to the *Mysticeti* (baleen whales) and not to toothed cetaceans which belong to the suborder *Odontoceti*, which also includes dolphins and porpoises. ]"@en)
 AnnotationAssertion(oboInOwl:hasDbXref obo:FOODON_03414486 <http://eol.org/pages/328541>)
 AnnotationAssertion(oboInOwl:hasDbXref obo:FOODON_03414486 <http://www.itis.gov/servlet/SingleRpt/SingleRpt?search_topic=TSN&search_value=180483>)
 AnnotationAssertion(oboInOwl:hasDbXref obo:FOODON_03414486 langual:B4486)
@@ -63801,7 +63803,7 @@ SubClassOf(obo:FOODON_03414562 ObjectSomeValuesFrom(obo:RO_0002162 obo:NCBITaxon
 # Class: obo:FOODON_03414563 (narwhal)
 
 AnnotationAssertion(obo:IAO_0000114 obo:FOODON_03414563 obo:IAO_0000428)
-AnnotationAssertion(obo:IAO_0000115 obo:FOODON_03414563 "The narwhal, or narwhale (*Monodon monoceros*), is a medium-sized toothed whale and possesses a large \"tusk\"from a protruding canine tooth. It lives year-round in the Arctic waters around Greenland, Canada, and Russia. It is one of two living species of whale in the *Monodontidae* family, along with the beluga whale. The narwhal males are distinguished by a long, straight, helical tusk, which is an elongated upper left canine."@en)
+AnnotationAssertion(obo:IAO_0000115 obo:FOODON_03414563 "The narwhal, or narwhale (*Monodon monoceros*), is a medium-sized toothed whale and possesses a large \"tusk\" from a protruding canine tooth. It lives year-round in the Arctic waters around Greenland, Canada, and Russia. It is one of two living species of whale in the *Monodontidae* family, along with the beluga whale. The narwhal males are distinguished by a long, straight, helical tusk, which is an elongated upper left canine."@en)
 AnnotationAssertion(oboInOwl:hasDbXref obo:FOODON_03414563 <http://eol.org/pages/328542>)
 AnnotationAssertion(oboInOwl:hasDbXref obo:FOODON_03414563 <http://www.itis.gov/servlet/SingleRpt/SingleRpt?search_topic=TSN&search_value=180485>)
 AnnotationAssertion(oboInOwl:hasDbXref obo:FOODON_03414563 langual:B4563)
@@ -64364,7 +64366,7 @@ SubClassOf(obo:FOODON_03414611 ObjectSomeValuesFrom(obo:RO_0002162 obo:NCBITaxon
 AnnotationAssertion(obo:IAO_0000114 obo:FOODON_03414612 obo:IAO_0000428)
 AnnotationAssertion(obo:IAO_0000115 obo:FOODON_03414612 "Phalangeriformes, or possums, any of a number of arboreal marsupial species native to Australia, New Guinea, and Sulawesi:
  
-- Phalangeridae (possums and cuscuses), a family of mammals native to Australia and New Guinea containing most of the species referred to as \"possums\"in Australia
+- Phalangeridae (possums and cuscuses), a family of mammals native to Australia and New Guinea containing most of the species referred to as \"possums\" in Australia
 
 - Common brushtail possum (Trichosurus vulpecula), a common possum in Australian urban areas, invasive in New Zealand
 
@@ -65644,7 +65646,7 @@ SubClassOf(obo:FOODON_03414706 ObjectSomeValuesFrom(obo:RO_0002162 obo:NCBITaxon
 # Class: obo:FOODON_03414707 (sedge plant)
 
 AnnotationAssertion(obo:IAO_0000114 obo:FOODON_03414707 obo:IAO_0000428)
-AnnotationAssertion(obo:IAO_0000115 obo:FOODON_03414707 "The *Cyperaceae* are a family of monocotyledonous graminoid flowering plants known as sedges, which superficially resemble grasses and rushes. The family is large, with some 5,500 known species described in about 90 genera, the largest being the Carex genus of \"true sedges\"with over 2,000 species. [https://en.wikipedia.org/wiki/Cyperaceae]"@en)
+AnnotationAssertion(obo:IAO_0000115 obo:FOODON_03414707 "The *Cyperaceae* are a family of monocotyledonous graminoid flowering plants known as sedges, which superficially resemble grasses and rushes. The family is large, with some 5,500 known species described in about 90 genera, the largest being the Carex genus of \"true sedges\" with over 2,000 species. [https://en.wikipedia.org/wiki/Cyperaceae]"@en)
 AnnotationAssertion(oboInOwl:hasDbXref obo:FOODON_03414707 <http://eol.org/pages/8211>)
 AnnotationAssertion(oboInOwl:hasDbXref obo:FOODON_03414707 langual:B4707)
 AnnotationAssertion(rdfs:label obo:FOODON_03414707 "sedge plant"@en)
@@ -67174,7 +67176,7 @@ SubClassOf(obo:FOODON_03414836 obo:FOODON_03414835)
 # Class: obo:FOODON_03414837 (lillipilly plant)
 
 AnnotationAssertion(obo:IAO_0000114 obo:FOODON_03414837 obo:IAO_0000428)
-AnnotationAssertion(obo:IAO_0000115 obo:FOODON_03414837 "Syzygium smithii (formerly *Acmena smithii*) is a summer-flowering, winter-fruiting evergreen tree, belonging to the myrtle family *Myrtaceae*. It shares the common name \"lilly pilly\"with several other plants, however in New Zealand, it is commonly known as 'monkey apple'. It is planted as shrubs or hedgerows, and features: rough, woody bark; cream and green smooth, waxy leaves; flushes of pink new growth; and white to maroon edible berries. []"@en)
+AnnotationAssertion(obo:IAO_0000115 obo:FOODON_03414837 "Syzygium smithii (formerly *Acmena smithii*) is a summer-flowering, winter-fruiting evergreen tree, belonging to the myrtle family *Myrtaceae*. It shares the common name \"lilly pilly\" with several other plants, however in New Zealand, it is commonly known as 'monkey apple'. It is planted as shrubs or hedgerows, and features: rough, woody bark; cream and green smooth, waxy leaves; flushes of pink new growth; and white to maroon edible berries. []"@en)
 AnnotationAssertion(oboInOwl:hasDbXref obo:FOODON_03414837 <http://eol.org/pages/8095>)
 AnnotationAssertion(oboInOwl:hasDbXref obo:FOODON_03414837 <http://www.ars-grin.gov/cgi-bin/npgs/html/taxon.pl?36135>)
 AnnotationAssertion(oboInOwl:hasDbXref obo:FOODON_03414837 langual:B4837)
@@ -67240,7 +67242,7 @@ SubClassOf(obo:FOODON_03414840 ObjectSomeValuesFrom(obo:RO_0002162 obo:NCBITaxon
 # Class: obo:FOODON_03414841 (desert caper plant)
 
 AnnotationAssertion(obo:IAO_0000114 obo:FOODON_03414841 obo:IAO_0000428)
-AnnotationAssertion(obo:IAO_0000115 obo:FOODON_03414841 "The wild orange is an Australian native plant throughout Australia. Its scientific name is *Capparis mitchellii*. It was named by botanist John Lindley. It is also known as the native orange. Its name in the Arrernte language of Central Australia is merne atwakeye. It is not related to oranges and neither to the Osage-orange which is known as \"wild orange\"in North America, but to capers.[https://en.wikipedia.org/wiki/Capparis_mitchellii]"@en)
+AnnotationAssertion(obo:IAO_0000115 obo:FOODON_03414841 "The wild orange is an Australian native plant throughout Australia. Its scientific name is *Capparis mitchellii*. It was named by botanist John Lindley. It is also known as the native orange. Its name in the Arrernte language of Central Australia is merne atwakeye. It is not related to oranges and neither to the Osage-orange which is known as \"wild orange\" in North America, but to capers.[https://en.wikipedia.org/wiki/Capparis_mitchellii]"@en)
 AnnotationAssertion(oboInOwl:hasDbXref obo:FOODON_03414841 <http://eol.org/pages/4220>)
 AnnotationAssertion(oboInOwl:hasDbXref obo:FOODON_03414841 <http://www.ars-grin.gov/cgi-bin/npgs/html/taxon.pl?414316>)
 AnnotationAssertion(oboInOwl:hasDbXref obo:FOODON_03414841 langual:B4841)
@@ -67335,7 +67337,7 @@ SubClassOf(obo:FOODON_03414847 obo:FOODON_03411134)
 # Class: obo:FOODON_03414848 (rat)
 
 AnnotationAssertion(obo:IAO_0000114 obo:FOODON_03414848 obo:IAO_0000428)
-AnnotationAssertion(obo:IAO_0000115 obo:FOODON_03414848 "Rats are various medium-sized, long-tailed rodents of the superfamily *Muroidea*. \"True rats\"are members of the genus Rattus, the most important of which to humans are the black rat, Rattus rattus, and the brown rat, Rattus norvegicus. Many members of other rodent genera and families are also referred to as rats, and share many characteristics with true rats."@en)
+AnnotationAssertion(obo:IAO_0000115 obo:FOODON_03414848 "Rats are various medium-sized, long-tailed rodents of the superfamily *Muroidea*. \"True rats\" are members of the genus Rattus, the most important of which to humans are the black rat, Rattus rattus, and the brown rat, Rattus norvegicus. Many members of other rodent genera and families are also referred to as rats, and share many characteristics with true rats."@en)
 AnnotationAssertion(obo:IAO_0000119 obo:FOODON_03414848 wikipedia:Rat)
 AnnotationAssertion(oboInOwl:hasDbXref obo:FOODON_03414848 <http://eol.org/pages/8698>)
 AnnotationAssertion(oboInOwl:hasDbXref obo:FOODON_03414848 langual:B4848)
@@ -68867,7 +68869,7 @@ SubClassOf(obo:FOODON_03414959 ObjectSomeValuesFrom(obo:RO_0002162 obo:NCBITaxon
 # Class: obo:FOODON_03414960 (partridge berry plant)
 
 AnnotationAssertion(obo:IAO_0000114 obo:FOODON_03414960 obo:IAO_0000428)
-AnnotationAssertion(obo:IAO_0000115 obo:FOODON_03414960 "Mitchella repens (partridge berry or squaw vine) is the best known plant in the genus *Mitchella*. It is a creeping prostrate herbaceous woody shrub occurring in North America belonging to the madder family (Rubiaceae). The scarlet berries are edible but rather tasteless, with a faint flavour of wintergreen, resembling cranberries (to which they are not closely related). They are often confused with the Newfoundland \"partridgeberry\"which is actually a relative of the lingonberry. [https://en.wikipedia.org/wiki/Mitchella_repens]"@en)
+AnnotationAssertion(obo:IAO_0000115 obo:FOODON_03414960 "Mitchella repens (partridge berry or squaw vine) is the best known plant in the genus *Mitchella*. It is a creeping prostrate herbaceous woody shrub occurring in North America belonging to the madder family (Rubiaceae). The scarlet berries are edible but rather tasteless, with a faint flavour of wintergreen, resembling cranberries (to which they are not closely related). They are often confused with the Newfoundland \"partridgeberry\" which is actually a relative of the lingonberry. [https://en.wikipedia.org/wiki/Mitchella_repens]"@en)
 AnnotationAssertion(oboInOwl:hasDbXref obo:FOODON_03414960 <http://eol.org/pages/1107478>)
 AnnotationAssertion(oboInOwl:hasDbXref obo:FOODON_03414960 <http://www.ars-grin.gov/cgi-bin/npgs/html/taxon.pl?402637>)
 AnnotationAssertion(oboInOwl:hasDbXref obo:FOODON_03414960 <http://www.itis.gov/servlet/SingleRpt/SingleRpt?search_topic=TSN&search_value=35063>)
@@ -68948,7 +68950,7 @@ SubClassOf(obo:FOODON_03414964 obo:FOODON_03411231)
 # Class: obo:FOODON_03414965 (plumcot plant)
 
 AnnotationAssertion(obo:IAO_0000114 obo:FOODON_03414965 obo:IAO_0000428)
-AnnotationAssertion(obo:IAO_0000115 obo:FOODON_03414965 "Pluots, apriums, apriplums, or plumcots, are some of the hybrids between different *Prunus* species that are also called interspecific plums. Whereas plumcots and apriplums are first-generation hybrids between a plum parent (*P. salicina* or *P. cerasifera* or their hybrids), and an apricot (*P. armeniaca*), pluots and apriums are later-generations. Both names \"plumcot\" and \"apriplum\"have been used for trees derived from a plum seed parent, and are therefore equivalent. [https://en.wikipedia.org/wiki/Pluot]"@en)
+AnnotationAssertion(obo:IAO_0000115 obo:FOODON_03414965 "Pluots, apriums, apriplums, or plumcots, are some of the hybrids between different *Prunus* species that are also called interspecific plums. Whereas plumcots and apriplums are first-generation hybrids between a plum parent (*P. salicina* or *P. cerasifera* or their hybrids), and an apricot (*P. armeniaca*), pluots and apriums are later-generations. Both names \"plumcot\" and \"apriplum\" have been used for trees derived from a plum seed parent, and are therefore equivalent. [https://en.wikipedia.org/wiki/Pluot]"@en)
 AnnotationAssertion(oboInOwl:hasDbXref obo:FOODON_03414965 langual:B4965)
 AnnotationAssertion(oboInOwl:hasSynonym obo:FOODON_03414965 "apriplum"@en)
 AnnotationAssertion(oboInOwl:hasSynonym obo:FOODON_03414965 "aprium"@en)
@@ -69355,7 +69357,7 @@ SubClassOf(obo:FOODON_03414991 obo:FOODON_03411641)
 # Class: obo:FOODON_03414992 (kitchen sage plant)
 
 AnnotationAssertion(obo:IAO_0000114 obo:FOODON_03414992 obo:IAO_0000428)
-AnnotationAssertion(obo:IAO_0000115 obo:FOODON_03414992 "Salvia officinalis (sage, also called garden sage, common sage, or culinary sage) is a perennial, evergreen subshrub, with woody stems, grayish leaves, and blue to purplish flowers. It is a member of the mint family *Lamiaceae* and native to the Mediterranean region, though it has naturalized in many places throughout the world. It has a long history of medicinal and culinary use, and in modern times as an ornamental garden plant. The common name \"sage\"is also used for a number of related and unrelated species. [https://en.wikipedia.org/wiki/Salvia_officinalis]"@en)
+AnnotationAssertion(obo:IAO_0000115 obo:FOODON_03414992 "Salvia officinalis (sage, also called garden sage, common sage, or culinary sage) is a perennial, evergreen subshrub, with woody stems, grayish leaves, and blue to purplish flowers. It is a member of the mint family *Lamiaceae* and native to the Mediterranean region, though it has naturalized in many places throughout the world. It has a long history of medicinal and culinary use, and in modern times as an ornamental garden plant. The common name \"sage\" is also used for a number of related and unrelated species. [https://en.wikipedia.org/wiki/Salvia_officinalis]"@en)
 AnnotationAssertion(oboInOwl:hasDbXref obo:FOODON_03414992 <http://eol.org/pages/578478>)
 AnnotationAssertion(oboInOwl:hasDbXref obo:FOODON_03414992 <http://www.ars-grin.gov/cgi-bin/npgs/html/taxon.pl?32950>)
 AnnotationAssertion(oboInOwl:hasDbXref obo:FOODON_03414992 <http://www.itis.gov/servlet/SingleRpt/SingleRpt?search_topic=TSN&search_value=32729>)
@@ -70359,7 +70361,7 @@ SubClassOf(obo:FOODON_03415054 ObjectSomeValuesFrom(obo:RO_0002162 obo:NCBITaxon
 # Class: obo:FOODON_03415055 (schisandra plant)
 
 AnnotationAssertion(obo:IAO_0000114 obo:FOODON_03415055 obo:IAO_0000428)
-AnnotationAssertion(obo:IAO_0000115 obo:FOODON_03415055 "Schisandra (magnolia vine) is a genus of twining shrubnative to East Asia, and its dried fruit is sometimes used medicinally. The berries of *S. chinensis* are given the name wu wei zi in Chinese, which translates as \"five flavor fruit\"because they possess all five basic flavors in Chinese herbal medicine: salty, sweet, sour, pungent (spicy), and bitter.  [https://en.wikipedia.org/wiki/Schisandra]"@en)
+AnnotationAssertion(obo:IAO_0000115 obo:FOODON_03415055 "Schisandra (magnolia vine) is a genus of twining shrubnative to East Asia, and its dried fruit is sometimes used medicinally. The berries of *S. chinensis* are given the name wu wei zi in Chinese, which translates as \"five flavor fruit\" because they possess all five basic flavors in Chinese herbal medicine: salty, sweet, sour, pungent (spicy), and bitter.  [https://en.wikipedia.org/wiki/Schisandra]"@en)
 AnnotationAssertion(oboInOwl:hasDbXref obo:FOODON_03415055 <http://eol.org/pages/4297>)
 AnnotationAssertion(oboInOwl:hasDbXref obo:FOODON_03415055 <http://www.ars-grin.gov/cgi-bin/npgs/html/taxon.pl?413956>)
 AnnotationAssertion(oboInOwl:hasDbXref obo:FOODON_03415055 langual:B5055)
@@ -70444,7 +70446,7 @@ SubClassOf(obo:FOODON_03415060 ObjectSomeValuesFrom(obo:RO_0002162 obo:NCBITaxon
 # Class: obo:FOODON_03415061 (chilean guava plant)
 
 AnnotationAssertion(obo:IAO_0000114 obo:FOODON_03415061 obo:IAO_0000428)
-AnnotationAssertion(obo:IAO_0000115 obo:FOODON_03415061 "Ugni molinae, commonly known as Chilean guava, or strawberry myrtle, is a shrub native to Chile and adjacent regions of southern Argentina. The fruit is sometimes marketed as \"Ugniberry\", as \"New Zealand cranberry\" in New Zealand, and the name \"Tazziberry\"has been trademarked in Australia, but it is not a native plant to these countries. [https://en.wikipedia.org/wiki/Ugni_molinae]"@en)
+AnnotationAssertion(obo:IAO_0000115 obo:FOODON_03415061 "Ugni molinae, commonly known as Chilean guava, or strawberry myrtle, is a shrub native to Chile and adjacent regions of southern Argentina. The fruit is sometimes marketed as \"Ugniberry\", as \"New Zealand cranberry\" in New Zealand, and the name \"Tazziberry\" has been trademarked in Australia, but it is not a native plant to these countries. [https://en.wikipedia.org/wiki/Ugni_molinae]"@en)
 AnnotationAssertion(oboInOwl:hasDbXref obo:FOODON_03415061 <http://eol.org/pages/5461137>)
 AnnotationAssertion(oboInOwl:hasDbXref obo:FOODON_03415061 <http://www.ars-grin.gov/cgi-bin/npgs/html/taxon.pl?40809>)
 AnnotationAssertion(oboInOwl:hasDbXref obo:FOODON_03415061 <http://www.itis.gov/servlet/SingleRpt/SingleRpt?search_topic=TSN&search_value=834895>)
@@ -71706,7 +71708,7 @@ SubClassOf(obo:FOODON_03415142 obo:FOODON_03413359)
 # Class: obo:FOODON_03415144 (lady's mantle plant)
 
 AnnotationAssertion(obo:IAO_0000114 obo:FOODON_03415144 obo:IAO_0000428)
-AnnotationAssertion(obo:IAO_0000115 obo:FOODON_03415144 "Alchemilla is a genus of herbaceous perennial plants in the family *Rosaceae*, with the common name \"lady's mantle\"applied generically as well as specifically to *Alchemilla mollis* when referred to as garden plant, the plant used as herbal tea or for medicinal usage such as gynaecological disorders is *Alchemilla xanthochlora* or in Middle Europe the so-called common lady's mantle *Alchemilla vulgaris*. [https://en.wikipedia.org/wiki/Alchemilla]"@en)
+AnnotationAssertion(obo:IAO_0000115 obo:FOODON_03415144 "Alchemilla is a genus of herbaceous perennial plants in the family *Rosaceae*, with the common name \"lady's mantle\" applied generically as well as specifically to *Alchemilla mollis* when referred to as garden plant, the plant used as herbal tea or for medicinal usage such as gynaecological disorders is *Alchemilla xanthochlora* or in Middle Europe the so-called common lady's mantle *Alchemilla vulgaris*. [https://en.wikipedia.org/wiki/Alchemilla]"@en)
 AnnotationAssertion(oboInOwl:hasDbXref obo:FOODON_03415144 <http://eol.org/pages/29928>)
 AnnotationAssertion(oboInOwl:hasDbXref obo:FOODON_03415144 langual:B5144)
 AnnotationAssertion(oboInOwl:hasSynonym obo:FOODON_03415144 "alchemilla"@en)
@@ -71729,7 +71731,7 @@ SubClassOf(obo:FOODON_03415145 ObjectSomeValuesFrom(obo:RO_0002162 obo:NCBITaxon
 
 # Class: obo:FOODON_03415146 (mullein plant)
 
-AnnotationAssertion(obo:IAO_0000115 obo:FOODON_03415146 "Verbascum, common name mullein (also known as velvet plant), is a genus of about 250 species of flowering plants in the figwort family *Scrophulariaceae*. They are native to Europe and Asia, with the highest species diversity in the Mediterranean. Mullein or \"mullein leaf\"often refers to the leaves of *Verbascum thapsus*, the great or common mullein, which is frequently used in herbal medicine.[https://en.wikipedia.org/wiki/Verbascum]"@en)
+AnnotationAssertion(obo:IAO_0000115 obo:FOODON_03415146 "Verbascum, common name mullein (also known as velvet plant), is a genus of about 250 species of flowering plants in the figwort family *Scrophulariaceae*. They are native to Europe and Asia, with the highest species diversity in the Mediterranean. Mullein or \"mullein leaf\" often refers to the leaves of *Verbascum thapsus*, the great or common mullein, which is frequently used in herbal medicine.[https://en.wikipedia.org/wiki/Verbascum]"@en)
 AnnotationAssertion(oboInOwl:hasDbXref obo:FOODON_03415146 <http://eol.org/pages/60976>)
 AnnotationAssertion(oboInOwl:hasDbXref obo:FOODON_03415146 langual:B5146)
 AnnotationAssertion(oboInOwl:hasExactSynonym obo:FOODON_03415146 "Aaron's-rod")
@@ -72386,7 +72388,7 @@ SubClassOf(obo:FOODON_03420114 obo:FOODON_03420178)
 
 AnnotationAssertion(obo:IAO_0000114 obo:FOODON_03420116 obo:IAO_0000428)
 AnnotationAssertion(obo:IAO_0000115 obo:FOODON_03420116 "Material which is distinguished primarily by the organism(s) it derives from."@en)
-AnnotationAssertion(obo:IAO_0000116 obo:FOODON_03420116 "This was renamed from \"part of organism\" (and from LanguaL's original \"part of plant or animal\") to encompass organism material that is produced by an animal or plant rather than \"part of\" it, such as an egg, and might not be countable per se, such as milk. Additionally the existing definition's \"from which a food product or its major ingredient is derived.\"was removed as an unnecessary constraint. [2023/03/02]"@en)
+AnnotationAssertion(obo:IAO_0000116 obo:FOODON_03420116 "This was renamed from \"part of organism\" (and from LanguaL's original \"part of plant or animal\") to encompass organism material that is produced by an animal or plant rather than \"part of\" it, such as an egg, and might not be countable per se, such as milk. Additionally the existing definition's \"from which a food product or its major ingredient is derived.\" was removed as an unnecessary constraint. [2023/03/02]"@en)
 AnnotationAssertion(oboInOwl:hasDbXref obo:FOODON_03420116 langual:B0001)
 AnnotationAssertion(oboInOwl:hasDbXref obo:FOODON_03420116 langual:B1564)
 AnnotationAssertion(oboInOwl:hasDbXref obo:FOODON_03420116 langual:C0116)
@@ -72444,7 +72446,7 @@ DisjointClasses(obo:FOODON_03420125 obo:FOODON_03420243)
 # Class: obo:FOODON_03420127 (animal (whole or piece(s)))
 
 AnnotationAssertion(oboInOwl:hasDbXref obo:FOODON_03420127 langual:C0127)
-AnnotationAssertion(rdfs:comment obo:FOODON_03420127 "This is from a LanguaL \"ANIMAL BODY OR BODY PART\" class. Its subclasses can be used if it is ambiguous what animal is being referred to, and whether the reference is being made to a whole animal or some part of it, including parts of organs.  However, see if a more precise term is available under either the \"animal carcass\" branch or the \"piece of animal\"branch.
+AnnotationAssertion(rdfs:comment obo:FOODON_03420127 "This is from a LanguaL \"ANIMAL BODY OR BODY PART\" class. Its subclasses can be used if it is ambiguous what animal is being referred to, and whether the reference is being made to a whole animal or some part of it, including parts of organs.  However, see if a more precise term is available under either the \"animal carcass\" branch or the \"piece of animal\" branch.
 
 LanguaL curation note: Includes carcass meat, organ meat, and nonmeat parts of animals, as well as the whole animal."@en)
 AnnotationAssertion(rdfs:label obo:FOODON_03420127 "animal (whole or piece(s))"@en)
@@ -77206,7 +77208,7 @@ SubClassOf(obo:FOODON_03510049 obo:FOODON_03510065)
 # Class: obo:FOODON_03510054 (fat free food)
 
 AnnotationAssertion(obo:IAO_0000114 obo:FOODON_03510054 obo:IAO_0000428)
-AnnotationAssertion(obo:IAO_0000115 obo:FOODON_03510054 "A claim that a food is fat-free, and any claim likely to have the same meaning for the consumer, may only be made where the product contains no more than 0,5 g of fat per 100 g or 100 ml. However, claims expressed as \"X % fat-free\"shall be prohibited [REGULATION (EC) No 1924/2006 Corrigendum].
+AnnotationAssertion(obo:IAO_0000115 obo:FOODON_03510054 "A claim that a food is fat-free, and any claim likely to have the same meaning for the consumer, may only be made where the product contains no more than 0,5 g of fat per 100 g or 100 ml. However, claims expressed as \"X % fat-free\" shall be prohibited [REGULATION (EC) No 1924/2006 Corrigendum].
 
 Food having less than 0.5 grams fat per amount customarily consumed. Meals and main dishes have less than 0.5 grams fat per labeled serving. Such foods must contain no ingredient that is fat or understood to contain fat except when the ingredient listed has been footnoted '*adds a trivial amount of fat'."@en)
 AnnotationAssertion(oboInOwl:hasDbXref obo:FOODON_03510054 langual:P0054)
@@ -77299,7 +77301,7 @@ SubClassOf(obo:FOODON_03510063 obo:FOODON_03510049)
 
 AnnotationAssertion(obo:IAO_0000114 obo:FOODON_03510065 obo:IAO_0000428)
 AnnotationAssertion(obo:IAO_0000115 obo:FOODON_03510065 "As defined in Corrigendum to Regulation (EC) No 1924/2006 of the European Parliament and of the Council of 20 December 2006 on nutrition and health claims made on foods, \"claim\" means any message or representation, which is not
-mandatory under Community or national legislation, including pictorial, graphic or symbolic representation, in any form, which states, suggests or implies that a food has particular characteristics; specificly, \"nutrition claim\"means any claim which states, suggests or implies that a food has particular beneficial nutritional properties
+mandatory under Community or national legislation, including pictorial, graphic or symbolic representation, in any form, which states, suggests or implies that a food has particular characteristics; specificly, \"nutrition claim\" means any claim which states, suggests or implies that a food has particular beneficial nutritional properties
 due to:
 
 (a) the energy (calorific value) it (i) provides; (ii) provides at a reduced or increased rate; or (iii) does not provide;
@@ -77661,7 +77663,7 @@ AnnotationAssertion(obo:IAO_0000114 obo:FOODON_03510120 obo:IAO_0000428)
 AnnotationAssertion(obo:IAO_0000115 obo:FOODON_03510120 "A raw food that has not been frozen, heat processed or otherwise preserved."@en)
 AnnotationAssertion(oboInOwl:hasDbXref obo:FOODON_03510120 langual:P0120)
 AnnotationAssertion(oboInOwl:hasSynonym obo:FOODON_03510120 "fresh, label claim"@en)
-AnnotationAssertion(rdfs:label obo:FOODON_03510120 "\"fresh\"label claim"@en)
+AnnotationAssertion(rdfs:label obo:FOODON_03510120 "\"fresh\" label claim"@en)
 SubClassOf(obo:FOODON_03510120 obo:FOODON_03510059)
 
 # Class: obo:FOODON_03510121 (not pasteurized claim)
@@ -77694,7 +77696,7 @@ AnnotationAssertion(obo:IAO_0000115 obo:FOODON_03510124 "Health claim means any 
 A claim is a health claim if in the naming of the substance or category of substances, there is a description or indication of a functionality or an implied effect on health; examples: \"contains antioxidants\" (the function is an antioxidant effect); \"containsprobiotics/prebiotics\" (the reference to probiotic/prebiotic implies a health benefit). Equally, claims which refer to an indication of a functionality in the description of a nutrient or a substance (for instance as an adjective to the substance) should also beclassified as a health claim; examples: \"with prebiotic fibres\" or \"contains prebiotic fibres\".
 
 In Europe, a health claim is any statement about a relationship between food and health [http://ec.europa.eu/food/food/labellingnutrition/claims/health_claims_en.htm], and only authorized health claims are legal [see http://ec.europa.eu/food/food/labellingnutrition/claims/community_register/health_claims_en.htm].
-COMMISSION REGULATION (EU) No 432/2012 of 16 May 2012 establishes a list of permitted health claims made on foods, other than those referring to the reduction of disease risk and to children\"s development and health [http://eur-lex.europa.eu/LexUriServ/LexUriServ.do?uri=OJ:L:2012:136:0001:0040:en:PDF]"@en)
+COMMISSION REGULATION (EU) No 432/2012 of 16 May 2012 establishes a list of permitted health claims made on foods, other than those referring to the reduction of disease risk and to children's development and health [http://eur-lex.europa.eu/LexUriServ/LexUriServ.do?uri=OJ:L:2012:136:0001:0040:en:PDF]"@en)
 AnnotationAssertion(oboInOwl:hasDbXref obo:FOODON_03510124 langual:P0124)
 AnnotationAssertion(rdfs:comment obo:FOODON_03510124 "LanguaL curation note: Used for any claim that states, suggests or implies that a relationship exists between a food category, a food or one of its components and health."@en)
 AnnotationAssertion(rdfs:label obo:FOODON_03510124 "health-related claim"@en)
@@ -77744,7 +77746,7 @@ AnnotationAssertion(obo:IAO_0000114 obo:FOODON_03510129 obo:IAO_0000428)
 AnnotationAssertion(obo:IAO_0000115 obo:FOODON_03510129 "Considerations include amounts that are 'nutritionally trivial' and amounts that can be declared as zero on the nutrition label. An additional criterion based on amount per weight (e.g., per 100 grams) is not considered necessary because the amount of nutrient in a 'free' food is so low that even frequent and repeated consumption is unlikely to have physiological consequences. (U.S. proposed)"@en)
 AnnotationAssertion(oboInOwl:hasDbXref obo:FOODON_03510129 langual:P0129)
 AnnotationAssertion(oboInOwl:hasSynonym obo:FOODON_03510129 "free, label claim"@en)
-AnnotationAssertion(rdfs:label obo:FOODON_03510129 "\"free\"label claim"@en)
+AnnotationAssertion(rdfs:label obo:FOODON_03510129 "\"free\" label claim"@en)
 SubClassOf(obo:FOODON_03510129 obo:FOODON_03510059)
 
 # Class: obo:FOODON_03510130 ("high"label claim)
@@ -77755,7 +77757,7 @@ AnnotationAssertion(oboInOwl:hasDbXref obo:FOODON_03510130 langual:P0130)
 AnnotationAssertion(oboInOwl:hasSynonym obo:FOODON_03510130 "excellent source of label claim"@en)
 AnnotationAssertion(oboInOwl:hasSynonym obo:FOODON_03510130 "high, label claim"@en)
 AnnotationAssertion(oboInOwl:hasSynonym obo:FOODON_03510130 "rich in label claim"@en)
-AnnotationAssertion(rdfs:label obo:FOODON_03510130 "\"high\"label claim"@en)
+AnnotationAssertion(rdfs:label obo:FOODON_03510130 "\"high\" label claim"@en)
 SubClassOf(obo:FOODON_03510130 obo:FOODON_03510059)
 
 # Class: obo:FOODON_03510131 ("less"label claim)
@@ -77764,7 +77766,7 @@ AnnotationAssertion(obo:IAO_0000114 obo:FOODON_03510131 obo:IAO_0000428)
 AnnotationAssertion(oboInOwl:hasDbXref obo:FOODON_03510131 langual:P0131)
 AnnotationAssertion(oboInOwl:hasSynonym obo:FOODON_03510131 "less, label claim"@en)
 AnnotationAssertion(rdfs:comment obo:FOODON_03510131 "LanguaL curation note: Used on label comparison statements to describe foods having 25% or greater reductions in a nutrient. (U.S. proposed)"@en)
-AnnotationAssertion(rdfs:label obo:FOODON_03510131 "\"less\"label claim"@en)
+AnnotationAssertion(rdfs:label obo:FOODON_03510131 "\"less\" label claim"@en)
 SubClassOf(obo:FOODON_03510131 obo:FOODON_03510059)
 
 # Class: obo:FOODON_03510132 ("light"label claim)
@@ -77775,7 +77777,7 @@ AnnotationAssertion(obo:IAO_0000115 obo:FOODON_03510132 "A claim stating that a 
 Used for foods that have 33.3% fewer calories than a comparable product and a minimum reduction of more than 40 calories per serving. Any other use of 'light' must specify whether it refers to the look, taste or smell; for example, 'light in color'. (U.S. FDA proposed)"@en)
 AnnotationAssertion(oboInOwl:hasDbXref obo:FOODON_03510132 langual:P0132)
 AnnotationAssertion(oboInOwl:hasSynonym obo:FOODON_03510132 "light, label claim"@en)
-AnnotationAssertion(rdfs:label obo:FOODON_03510132 "\"light\"label claim"@en)
+AnnotationAssertion(rdfs:label obo:FOODON_03510132 "\"light\" label claim"@en)
 SubClassOf(obo:FOODON_03510132 obo:FOODON_03510059)
 
 # Class: obo:FOODON_03510133 ("more"label claim)
@@ -77784,7 +77786,7 @@ AnnotationAssertion(obo:IAO_0000114 obo:FOODON_03510133 obo:IAO_0000428)
 AnnotationAssertion(oboInOwl:hasDbXref obo:FOODON_03510133 langual:P0133)
 AnnotationAssertion(oboInOwl:hasSynonym obo:FOODON_03510133 "more, label claim"@en)
 AnnotationAssertion(rdfs:comment obo:FOODON_03510133 "LanguaL curation note: Used in label comparison statement when a food contains at least 10% more of the daily nutritional value per amount customarily consumed."@en)
-AnnotationAssertion(rdfs:label obo:FOODON_03510133 "\"more\"label claim"@en)
+AnnotationAssertion(rdfs:label obo:FOODON_03510133 "\"more\" label claim"@en)
 SubClassOf(obo:FOODON_03510133 obo:FOODON_03510059)
 
 # Class: obo:FOODON_03510134 ("source of"label claim)
@@ -77799,7 +77801,7 @@ AnnotationAssertion(oboInOwl:hasSynonym obo:FOODON_03510134 "provides label clai
 AnnotationAssertion(oboInOwl:hasSynonym obo:FOODON_03510134 "provides, label claim"@en)
 AnnotationAssertion(oboInOwl:hasSynonym obo:FOODON_03510134 "source of, label claim"@en)
 AnnotationAssertion(rdfs:comment obo:FOODON_03510134 "LanguaL curation note: The amount customarily consumed contains 10% to 19% of the daily nutritional value. May be used on meals or main dishes to indicate that product contains a food that meets the definition."@en)
-AnnotationAssertion(rdfs:label obo:FOODON_03510134 "\"source of\"label claim"@en)
+AnnotationAssertion(rdfs:label obo:FOODON_03510134 "\"source of\" label claim"@en)
 SubClassOf(obo:FOODON_03510134 obo:FOODON_03510059)
 
 # Class: obo:FOODON_03510135 (kosher for passover claim)
@@ -77985,7 +77987,7 @@ AnnotationAssertion(obo:IAO_0000114 obo:FOODON_03510178 obo:IAO_0000428)
 AnnotationAssertion(obo:IAO_0000115 obo:FOODON_03510178 "The food was quickly frozen while still fresh."@en)
 AnnotationAssertion(oboInOwl:hasDbXref obo:FOODON_03510178 langual:P0178)
 AnnotationAssertion(oboInOwl:hasSynonym obo:FOODON_03510178 "fresh frozen, label claim"@en)
-AnnotationAssertion(rdfs:label obo:FOODON_03510178 "\"fresh frozen\"label claim"@en)
+AnnotationAssertion(rdfs:label obo:FOODON_03510178 "\"fresh frozen\" label claim"@en)
 SubClassOf(obo:FOODON_03510178 obo:FOODON_03510059)
 
 # Class: obo:FOODON_03510179 (saturated fat free food)
@@ -78218,7 +78220,7 @@ SubClassOf(obo:FOODON_03510206 obo:FOODON_03510202)
 # Class: obo:FOODON_03510207 (contains {name of the nutrient or other substance} nutrition claim)
 
 AnnotationAssertion(obo:IAO_0000114 obo:FOODON_03510207 obo:IAO_0000428)
-AnnotationAssertion(obo:IAO_0000115 obo:FOODON_03510207 "A claim that a food contains a nutrient or another substance, for which specific conditions are not laid down in this Regulation, or any claim likely to have the same meaning for the consumer, may only be made where the product complies with all the applicable provisions of this Regulation, and in particular Article 5. For vitamins and minerals the conditions of the claim \"source of\"shall apply. [REGULATION (EC) No 1924/2006 Corrigendum 2007-01-18]."@en)
+AnnotationAssertion(obo:IAO_0000115 obo:FOODON_03510207 "A claim that a food contains a nutrient or another substance, for which specific conditions are not laid down in this Regulation, or any claim likely to have the same meaning for the consumer, may only be made where the product complies with all the applicable provisions of this Regulation, and in particular Article 5. For vitamins and minerals the conditions of the claim \"source of\" shall apply. [REGULATION (EC) No 1924/2006 Corrigendum 2007-01-18]."@en)
 AnnotationAssertion(oboInOwl:hasDbXref obo:FOODON_03510207 langual:P0207)
 AnnotationAssertion(rdfs:comment obo:FOODON_03510207 "LanguaL curation note: Used for claims like \"contains [name of the nutrient or other substance]\"."@en)
 AnnotationAssertion(rdfs:label obo:FOODON_03510207 "contains {name of the nutrient or other substance} nutrition claim"@en)
@@ -78227,7 +78229,7 @@ SubClassOf(obo:FOODON_03510207 obo:FOODON_03510095)
 # Class: obo:FOODON_03510208 (increased {name of nutrient} nutrition claim)
 
 AnnotationAssertion(obo:IAO_0000114 obo:FOODON_03510208 obo:IAO_0000428)
-AnnotationAssertion(obo:IAO_0000115 obo:FOODON_03510208 "A claim stating that the content in one or more nutrients, other than vitamins and minerals, has been increased, and any claim likely to have the same meaning for the consumer, may only be made where the product meets the conditions for the claim \"source of\"and the increase in content is at least 30 % compared to a similar product. [Forordning (EF) nr. 1924/2006 Berigtigelse 2007-01-18]."@en)
+AnnotationAssertion(obo:IAO_0000115 obo:FOODON_03510208 "A claim stating that the content in one or more nutrients, other than vitamins and minerals, has been increased, and any claim likely to have the same meaning for the consumer, may only be made where the product meets the conditions for the claim \"source of\" and the increase in content is at least 30 % compared to a similar product. [Forordning (EF) nr. 1924/2006 Berigtigelse 2007-01-18]."@en)
 AnnotationAssertion(oboInOwl:hasDbXref obo:FOODON_03510208 langual:P0208)
 AnnotationAssertion(rdfs:label obo:FOODON_03510208 "increased {name of nutrient} nutrition claim"@en)
 SubClassOf(obo:FOODON_03510208 obo:FOODON_03510095)
@@ -78235,9 +78237,9 @@ SubClassOf(obo:FOODON_03510208 obo:FOODON_03510095)
 # Class: obo:FOODON_03510209 ("naturally/natural"label claim)
 
 AnnotationAssertion(obo:IAO_0000114 obo:FOODON_03510209 obo:IAO_0000428)
-AnnotationAssertion(obo:IAO_0000115 obo:FOODON_03510209 "Where a food naturally meets the condition(s) laid down in this Annex for the use of a nutritional claim, the term \"naturally/natural\"may be used as a prefix to the claim [REGULATION (EC) No 1924/2006 Corrigendum2007-01-18]."@en)
+AnnotationAssertion(obo:IAO_0000115 obo:FOODON_03510209 "Where a food naturally meets the condition(s) laid down in this Annex for the use of a nutritional claim, the term \"naturally/natural\" may be used as a prefix to the claim [REGULATION (EC) No 1924/2006 Corrigendum2007-01-18]."@en)
 AnnotationAssertion(oboInOwl:hasDbXref obo:FOODON_03510209 langual:P0209)
-AnnotationAssertion(rdfs:label obo:FOODON_03510209 "\"naturally/natural\"label claim"@en)
+AnnotationAssertion(rdfs:label obo:FOODON_03510209 "\"naturally/natural\" label claim"@en)
 SubClassOf(obo:FOODON_03510209 obo:FOODON_03510059)
 
 # Class: obo:FOODON_03510210 (source of {name of vitamin/s}  and/or {name of mineral/s} nutrition claim)
@@ -78443,7 +78445,7 @@ AnnotationAssertion(obo:IAO_0000114 obo:FOODON_03510233 obo:IAO_0000428)
 AnnotationAssertion(oboInOwl:hasDbXref obo:FOODON_03510233 langual:P0233)
 AnnotationAssertion(rdfs:comment obo:FOODON_03510233 "LanguaL curation note: Under the new FDA regulations, by Jan. 1, 2006, consumers will be able to find trans fat listed on food nutrition labels directly under the line for saturated fat. The new information is the first significant change on the Nutrition Facts panel since it was established in 1993. 
 Source: http://www.fda.gov/oc/initiatives/transfat/."@en)
-AnnotationAssertion(rdfs:label obo:FOODON_03510233 "\"no trans fat\"claim"@en)
+AnnotationAssertion(rdfs:label obo:FOODON_03510233 "\"no trans fat\" claim"@en)
 SubClassOf(obo:FOODON_03510233 obo:FOODON_03510196)
 
 # Class: obo:FOODON_03510234 (traditional food claim)
@@ -78452,7 +78454,7 @@ AnnotationAssertion(obo:IAO_0000114 obo:FOODON_03510234 obo:IAO_0000428)
 AnnotationAssertion(obo:IAO_0000115 obo:FOODON_03510234 "A food claim indicating that the product is frequently consumed or associated to specific celebrations and/or seasons, normally transmitted from one generation to another, made with care in a specific way according to the gastronomic heritage, with little or no processing/manipulation, that is distinguished and known because of its sensory properties and associated to a certain local area, region or country."@en)
 AnnotationAssertion(obo:IAO_0000119 obo:FOODON_03510234 <http://www.truefood.eu/>)
 AnnotationAssertion(oboInOwl:hasDbXref obo:FOODON_03510234 langual:P0234)
-AnnotationAssertion(rdfs:comment obo:FOODON_03510234 "\"Traditional\"means proven usage on the Community market for a time period showing transmission between generations; this time period should be the one generally ascribed to one human generation, at least 25 years [COUNCIL REGULATION (EC) No 509/2006 of 20 March 2006 on agricultural products and foodstuffs as traditional specialities guaranteed].
+AnnotationAssertion(rdfs:comment obo:FOODON_03510234 "\"Traditional\" means proven usage on the Community market for a time period showing transmission between generations; this time period should be the one generally ascribed to one human generation, at least 25 years [COUNCIL REGULATION (EC) No 509/2006 of 20 March 2006 on agricultural products and foodstuffs as traditional specialities guaranteed].
 
 Traditional means conforming to established practice or specifications prior to the Second World War. Traditional food is a food of a specific feature or features, which distinguish it clearly from other similar products of the same category in terms of the use of traditional ingredients (raw materials or primary products), traditional composition or traditional type of production and/or processing method. [Traditional Foods in Europe, EuroFIR Synthesis report No 6, 2009]"@en)
 AnnotationAssertion(rdfs:label obo:FOODON_03510234 "traditional food claim"@en)
@@ -78463,7 +78465,7 @@ SubClassOf(obo:FOODON_03510234 obo:FOODON_03510126)
 AnnotationAssertion(obo:IAO_0000114 obo:FOODON_03510235 obo:IAO_0000428)
 AnnotationAssertion(obo:IAO_0000115 obo:FOODON_03510235 "Ethnic food is food from countries other than the home market contributing to a different food culture than the traditional cuisine of the host country. [Ethnic Groups and Foods in Europe, EuroFIR Synthesis report No 3, 2005]
 
-\"Ethnic food\"has been used colloquially for a wide variety of foodstuffs, virtually any that can be identified in the public mind with a foreign source or an ethnic minority group. In the narrower ethnographic meaning, it pertains only to food prepared or consumed by members of an ethnic group as a manifestation of its ethnicity. In the end ethnic food is food that members of an ethnic group consider their own and that others attribute to them. [http://www.answers.com/topic/ethnic-cuisines]"@en)
+\"Ethnic food\" has been used colloquially for a wide variety of foodstuffs, virtually any that can be identified in the public mind with a foreign source or an ethnic minority group. In the narrower ethnographic meaning, it pertains only to food prepared or consumed by members of an ethnic group as a manifestation of its ethnicity. In the end ethnic food is food that members of an ethnic group consider their own and that others attribute to them. [http://www.answers.com/topic/ethnic-cuisines]"@en)
 AnnotationAssertion(oboInOwl:hasDbXref obo:FOODON_03510235 langual:P0235)
 AnnotationAssertion(rdfs:label obo:FOODON_03510235 "ethnic food claim"@en)
 SubClassOf(obo:FOODON_03510235 obo:FOODON_03510126)
@@ -78473,7 +78475,7 @@ SubClassOf(obo:FOODON_03510235 obo:FOODON_03510126)
 AnnotationAssertion(obo:IAO_0000114 obo:FOODON_03510236 obo:IAO_0000428)
 AnnotationAssertion(obo:IAO_0000115 obo:FOODON_03510236 "Raw material (species and/or varieties) or primary product either alone or as an ingredient that has been used in identifiable geographical areas and remains in use today (taking into account cases where use was abandoned for a time and then reinstated) and its characteristics are in accordance with current specifications of national and EU legislation. [Traditional Foods in Europe, EuroFIR Synthesis report No 6, 2009]"@en)
 AnnotationAssertion(oboInOwl:hasDbXref obo:FOODON_03510236 langual:P0236)
-AnnotationAssertion(rdfs:comment obo:FOODON_03510236 "LanguaL curation note: Use when \"Traditional ingredients\"is claimed."@en)
+AnnotationAssertion(rdfs:comment obo:FOODON_03510236 "LanguaL curation note: Use when \"Traditional ingredients\" is claimed."@en)
 AnnotationAssertion(rdfs:label obo:FOODON_03510236 "traditional ingredient claim"@en)
 SubClassOf(obo:FOODON_03510236 obo:FOODON_03510234)
 
@@ -78482,16 +78484,16 @@ SubClassOf(obo:FOODON_03510236 obo:FOODON_03510234)
 AnnotationAssertion(obo:IAO_0000114 obo:FOODON_03510237 obo:IAO_0000428)
 AnnotationAssertion(obo:IAO_0000115 obo:FOODON_03510237 "The uniquely identifiable composition (in terms of ingredients) that was first established prior to the Second World War and passed down through generations by oral or other means (taking into account cases where composition was abandoned for a time and then reinstated) and when necessary is differentiated from the composition defined by the generally recognized characteristics of the wider food group to which the product belongs. [Traditional Foods in Europe, EuroFIR Synthesis report No 6, 2009]"@en)
 AnnotationAssertion(oboInOwl:hasDbXref obo:FOODON_03510237 langual:P0237)
-AnnotationAssertion(rdfs:comment obo:FOODON_03510237 "LanguaL curation note: Use when \"Traditional composition\"is claimed."@en)
+AnnotationAssertion(rdfs:comment obo:FOODON_03510237 "LanguaL curation note: Use when \"Traditional composition\" is claimed."@en)
 AnnotationAssertion(rdfs:label obo:FOODON_03510237 "traditional composition claim"@en)
 SubClassOf(obo:FOODON_03510237 obo:FOODON_03510234)
 
 # Class: obo:FOODON_03510238 (traditional type of production and/or processing claim)
 
 AnnotationAssertion(obo:IAO_0000114 obo:FOODON_03510238 obo:IAO_0000428)
-AnnotationAssertion(obo:IAO_0000115 obo:FOODON_03510238 "The production and/or processing of a food that has been transmitted from generation to generation through oral tradition or other means and has been applied prior to the Second World War and remains in use (taking into account cases where composition was abandoned for a time and then reinstated) despite its adjustment to binding rules from national or EU food hygiene regulations or the incorporation of technological progress, under the condition that production and/or processing remains in line with methods used originally and that the food\"s intrinsic features such as its physical, chemical, microbiological or organoleptic features are maintained. [Traditional Foods in Europe, EuroFIR Synthesis report No 6, 2009]"@en)
+AnnotationAssertion(obo:IAO_0000115 obo:FOODON_03510238 "The production and/or processing of a food that has been transmitted from generation to generation through oral tradition or other means and has been applied prior to the Second World War and remains in use (taking into account cases where composition was abandoned for a time and then reinstated) despite its adjustment to binding rules from national or EU food hygiene regulations or the incorporation of technological progress, under the condition that production and/or processing remains in line with methods used originally and that the food's intrinsic features such as its physical, chemical, microbiological or organoleptic features are maintained. [Traditional Foods in Europe, EuroFIR Synthesis report No 6, 2009]"@en)
 AnnotationAssertion(oboInOwl:hasDbXref obo:FOODON_03510238 langual:P0238)
-AnnotationAssertion(rdfs:comment obo:FOODON_03510238 "LanguaL curation note: Use when \"Traditional type of production and/or processing\"is claimed."@en)
+AnnotationAssertion(rdfs:comment obo:FOODON_03510238 "LanguaL curation note: Use when \"Traditional type of production and/or processing\" is claimed."@en)
 AnnotationAssertion(rdfs:label obo:FOODON_03510238 "traditional type of production and/or processing claim"@en)
 SubClassOf(obo:FOODON_03510238 obo:FOODON_03510234)
 
@@ -79847,7 +79849,7 @@ AnnotationAssertion(obo:IAO_0000115 obo:FOODON_03530050 "A food plant physical c
 AnnotationAssertion(oboInOwl:hasDbXref obo:FOODON_03530050 langual:Z0050)
 AnnotationAssertion(rdfs:comment obo:FOODON_03530050 "Ripeness entails safety, nutrient composition and consumption characteristics.
 
-This term was revised (Aug 4, 2022) from LanguaL's original \"degree of plant maturity\" label and its \"plant or plant part\"scope, which leaned heavily toward a fruit-oriented sense.  (LanguaL curation note: Use the appropriate narrower term only if ripeness is stated in the food name or label.)  FoodOn now has a separate class for plant maturity."@en)
+This term was revised (Aug 4, 2022) from LanguaL's original \"degree of plant maturity\" label and its \"plant or plant part\" scope, which leaned heavily toward a fruit-oriented sense.  (LanguaL curation note: Use the appropriate narrower term only if ripeness is stated in the food name or label.)  FoodOn now has a separate class for plant maturity."@en)
 AnnotationAssertion(rdfs:label obo:FOODON_03530050 "fruit ripeness"@en)
 SubClassOf(obo:FOODON_03530050 obo:FOODON_03530268)
 
@@ -81531,7 +81533,7 @@ AnnotationAssertion(obo:IAO_0000115 obo:FOODON_03530291 "An agricultural product
 AnnotationAssertion(obo:IAO_0000117 obo:FOODON_03530291 "Damion Dooley"@en)
 AnnotationAssertion(obo:IAO_0000119 obo:FOODON_03530291 <https://assets.publishing.service.gov.uk/government/uploads/system/uploads/attachment_data/file/288329/11-546-future-of-food-and-farming-report.pdf%20(Box%204.1%20Food%20security%20and%20organic%20agriculture)>)
 AnnotationAssertion(oboInOwl:hasDbXref obo:FOODON_03530291 langual:Z0291)
-AnnotationAssertion(rdfs:comment obo:FOODON_03530291 "In Europe, \"organic production\"means the use of the production method compliant with the rules established in Council Regulation (EC) No 834/2007 of 28 June 2007 on organic production and labelling of organic products and repealing Regulation (EEC) No 2092/91, at all stages of production, preparation and distribution.[http://eur-lex.europa.eu/LexUriServ/LexUriServ.do?uri=OJ:L:2007:189:0001:0023:EN:PDF]"@en)
+AnnotationAssertion(rdfs:comment obo:FOODON_03530291 "In Europe, \"organic production\" means the use of the production method compliant with the rules established in Council Regulation (EC) No 834/2007 of 28 June 2007 on organic production and labelling of organic products and repealing Regulation (EEC) No 2092/91, at all stages of production, preparation and distribution.[http://eur-lex.europa.eu/LexUriServ/LexUriServ.do?uri=OJ:L:2007:189:0001:0023:EN:PDF]"@en)
 AnnotationAssertion(rdfs:label obo:FOODON_03530291 "organic food production"@en)
 AnnotationAssertion(rdfs:seeAlso obo:FOODON_03530291 <http://www.fao.org/organicag/oa-faq/oa-faq6/en/>)
 AnnotationAssertion(rdfs:seeAlso obo:FOODON_03530291 <https://ec.europa.eu/info/food-farming-fisheries/farming/organic-farming>)
@@ -87572,7 +87574,7 @@ AnnotationAssertion(oboInOwl:hasNarrowSynonym obo:NCBITaxon_38874 "Fraxinus ornu
 
 AnnotationAssertion(obo:IAO_0000119 obo:NCBITaxon_3888 "WIKIPEDIA:Pisum_sativum")
 AnnotationAssertion(oboInOwl:hasNarrowSynonym obo:NCBITaxon_3888 "Pisum sativum L.")
-AnnotationAssertion(rdfs:comment obo:NCBITaxon_3888 "Green \"garden\" peas, eaten immature and fresh, were an innovative luxury of Early Modern Europe. In England, the distinction between \"field peas\" and \"garden peas\"dates from the early 17th century."@en)
+AnnotationAssertion(rdfs:comment obo:NCBITaxon_3888 "Green \"garden\" peas, eaten immature and fresh, were an innovative luxury of Early Modern Europe. In England, the distinction between \"field peas\" and \"garden peas\" dates from the early 17th century."@en)
 AnnotationAssertion(rdfs:seeAlso obo:NCBITaxon_3888 <https://hort.purdue.edu/newcrop/CropFactSheets/pea.html>)
 
 # Class: obo:NCBITaxon_3891 (Psophocarpus tetragonolobus)
@@ -90470,7 +90472,7 @@ SubClassOf(obo:NCIT_C14238 obo:FOODON_03411134)
 
 # Class: obo:NCIT_C25464 (Country)
 
-AnnotationAssertion(rdfs:comment obo:NCIT_C25464 "Damion's note: countries are considered material entities, but at moment ENVO \"national geopolitical entity\" is a site. It will need to be moved to a material entity in order for countries to be placed under it. For now, we use NCIT's \"Country\"term."@en)
+AnnotationAssertion(rdfs:comment obo:NCIT_C25464 "Damion's note: countries are considered material entities, but at moment ENVO \"national geopolitical entity\" is a site. It will need to be moved to a material entity in order for countries to be placed under it. For now, we use NCIT's \"Country\" term."@en)
 SubClassOf(obo:NCIT_C25464 obo:ENVO_01000813)
 
 # Class: obo:NCIT_C37984 (obo:NCIT_C37984)
@@ -90833,7 +90835,7 @@ AnnotationAssertion(obo:IAO_0000412 obo:CHEBI_30961 <http://langual.org>)
 AnnotationAssertion(oboInOwl:hasDbXref obo:CHEBI_30961 langual:B3781)
 AnnotationAssertion(obo:IAO_0000600 obo:CHEBI_31206 "It is used as food additive under the E number E510, working as a yeast nutrient in breadmaking and as an acidifier. It is a feed supplement for cattle and an ingredient in nutritive media for yeasts and many microorganisms.
 
-Ammonium chloride is used to spice up dark sweets called salmiak (popular in Nordic and other nearby countries),[18] in baking to give cookies a very crisp texture, and in the liquor Salmiakki Koskenkorva for flavouring. In Iran, Tajikistan, India, Pakistan and Arab countries it is called \"Noshader\"and is used to improve the crispness of snacks such as samosas and jalebi. [https://en.wikipedia.org/wiki/Ammonium_chloride]"@en)
+Ammonium chloride is used to spice up dark sweets called salmiak (popular in Nordic and other nearby countries),[18] in baking to give cookies a very crisp texture, and in the liquor Salmiakki Koskenkorva for flavouring. In Iran, Tajikistan, India, Pakistan and Arab countries it is called \"Noshader\" and is used to improve the crispness of snacks such as samosas and jalebi. [https://en.wikipedia.org/wiki/Ammonium_chloride]"@en)
 AnnotationAssertion(obo:IAO_0000118 obo:CHEBI_49105 "thiamin hydrochloride"@en)
 AnnotationAssertion(obo:IAO_0000412 obo:CHEBI_49105 <http://langual.org>)
 AnnotationAssertion(oboInOwl:hasDbXref obo:CHEBI_49105 langual:B3777)
@@ -91400,7 +91402,7 @@ AnnotationAssertion(rdfs:comment obo:FOODON_03317265 "Genoa salami is a variety 
 SIREN DB annotation:
 * whole, shape achieved by forming FOODON:03430147
 * meat part of animal FOODON:03420103"@en)
-AnnotationAssertion(obo:IAO_0000116 obo:FOODON_03317560 "Not sure what this product is.  There is reference to \"americano\"grapes here: https://justhungry.com/2006/09/produce_grapes.html"@en)
+AnnotationAssertion(obo:IAO_0000116 obo:FOODON_03317560 "Not sure what this product is.  There is reference to \"americano\" grapes here: https://justhungry.com/2006/09/produce_grapes.html"@en)
 AnnotationAssertion(oboInOwl:hasExactSynonym obo:FOODON_03401328 "fiber"@en-us)
 AnnotationAssertion(oboInOwl:hasExactSynonym obo:FOODON_03401328 "fiber supplement"@en-us)
 AnnotationAssertion(oboInOwl:hasExactSynonym obo:FOODON_03401328 "fibre"@en)
@@ -91585,7 +91587,7 @@ AnnotationAssertion(oboInOwl:hasExactSynonym obo:FOODON_03414178 "wood witch"@en
 AnnotationAssertion(oboInOwl:hasNarrowSynonym obo:FOODON_03414178 "Phallus duplicatus Bosc, 1811")
 AnnotationAssertion(rdfs:comment obo:FOODON_03414178 "A species of fungus in the stinkhorn family. The bell-shaped to oval cap is green-brown, the cylindrical stalk is white.
 
-When mature the cap becomes sticky with a slimy green coating that attracts flies that disperse its spores, and it has a distinct, \"netted\" universal veil. The fungus is edible when still in the \"egg\"stage, before the fruit body has expanded. It grows often in public lawns, and can also be found in meadows. [Wikipedia]"@en)
+When mature the cap becomes sticky with a slimy green coating that attracts flies that disperse its spores, and it has a distinct, \"netted\" universal veil. The fungus is edible when still in the \"egg\" stage, before the fruit body has expanded. It grows often in public lawns, and can also be found in meadows. [Wikipedia]"@en)
 AnnotationAssertion(obo:IAO_0000114 obo:FOODON_03414179 obo:IAO_0000122)
 AnnotationAssertion(obo:IAO_0000119 obo:FOODON_03414179 wikipedia:Xerula_radicata)
 AnnotationAssertion(oboInOwl:hasDbXref obo:FOODON_03414179 <http://www.indexfungorum.org/names/NamesRecord.asp?RecordID=325611>)
@@ -91716,7 +91718,7 @@ AnnotationAssertion(obo:IAO_0000114 obo:FOODON_03414540 obo:IAO_0000122)
 AnnotationAssertion(oboInOwl:hasDbXref obo:FOODON_03414540 <http://www.indexfungorum.org/names/NamesRecord.asp?RecordID=327488>)
 AnnotationAssertion(oboInOwl:hasDbXref obo:FOODON_03414540 langual:B4540)
 AnnotationAssertion(oboInOwl:hasNarrowSynonym obo:FOODON_03414540 "Cantharellus pallens Pilát 1959")
-AnnotationAssertion(rdfs:comment obo:FOODON_03414540 "A fungus often taken to be just a variety of Cantharellus cibarius var. pallens, but unlike \"true\"Cantharellus cibarius it yellows and then reddens when touched and has a weaker smell. Eyssartier and Roux classify it as a separate species but say that 90% of the chanterelles sold in French markets are this, not *Cantharellus cibarius*."@en)
+AnnotationAssertion(rdfs:comment obo:FOODON_03414540 "A fungus often taken to be just a variety of Cantharellus cibarius var. pallens, but unlike \"true\" Cantharellus cibarius it yellows and then reddens when touched and has a weaker smell. Eyssartier and Roux classify it as a separate species but say that 90% of the chanterelles sold in French markets are this, not *Cantharellus cibarius*."@en)
 AnnotationAssertion(obo:IAO_0000114 obo:FOODON_03414541 obo:IAO_0000122)
 AnnotationAssertion(oboInOwl:hasDbXref obo:FOODON_03414541 <http://www.indexfungorum.org/names/NamesRecord.asp?RecordID=153130>)
 AnnotationAssertion(oboInOwl:hasDbXref obo:FOODON_03414541 langual:B4541)
@@ -91993,7 +91995,7 @@ AnnotationAssertion(oboInOwl:hasDbXref obo:NCBITaxon_32201 "PLANTS:CAIL2")
 AnnotationAssertion(oboInOwl:hasNarrowSynonym obo:NCBITaxon_32201 "Carya illinoinensis (Wangenh.) K. Koch")
 AnnotationAssertion(oboInOwl:hasSynonym obo:NCBITaxon_32201 "carya pecan"@en)
 AnnotationAssertion(oboInOwl:hasSynonym obo:NCBITaxon_32201 "pecan nut"@en)
-AnnotationAssertion(rdfs:comment obo:NCBITaxon_32201 "\"Pecan\"is from an Algonquian word, meaning a nut requiring a stone to crack. In Mexico, pecans and walnuts share the same Spanish name, nuez, which is a cognate of the English word nut.
+AnnotationAssertion(rdfs:comment obo:NCBITaxon_32201 "\"Pecan\" is from an Algonquian word, meaning a nut requiring a stone to crack. In Mexico, pecans and walnuts share the same Spanish name, nuez, which is a cognate of the English word nut.
 
 LanguaL curation note: When indexing the pecan fruit (drupaceous nut) index both *PECAN [B1320]* and *FRUIT [C0167]* (or its more precidese narrower terms)."@en)
 AnnotationAssertion(obo:IAO_0000117 obo:NCBITaxon_3714 <http://orcid.org/0000-0002-8844-9165>)
