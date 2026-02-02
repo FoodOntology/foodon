@@ -95,11 +95,13 @@ from owlready2 import *
 import owlready2.sparql.parser
 owlready2.sparql.parser._DATA_PROPS = set()
 
-# food product: 00001002; organism material: 03420116
+# organism material: FOODON_03420116
+
+# animal:FOODON_00003004, plant by taxonomy:FOODON_03413357
+# algae: FOODON_03411301, fungus:FOODON_03411261, lichen:FOODON_03412345
+# food product: 00001002; 
 # completely executed planned process: COB_0000035
-# animal:FOODON_03411301, plant by taxonomy:FOODON_00003004, 
-# lichen:FOODON_03413357, fungus:FOODON_03411261
-SEARCH_ROOT = 'obo:FOODON_03411301,obo:FOODON_00003004,obo:FOODON_03413357,obo:FOODON_03411261,obo:COB_0000035'; 
+SEARCH_ROOT = 'obo:FOODON_00003004,obo:FOODON_03413357,obo:FOODON_03411301,obo:FOODON_03411261,lichen:FOODON_03412345,obo:COB_0000035';
 
 INPUT_FOODON_ONTOLOGY = 'cache-foodon-merged.owl';
 OBO = "<http://purl.obolibrary.org/obo/";
@@ -412,6 +414,8 @@ if __name__ == "__main__":
 
 	processed = set();
 
+	print ('id	flags	depth	label	taxonomy	characteristics	dbxrefs	synonyms');
+
 	# Fetch hierarchies of animal / plant by taxonomy / algae / fungus for hierarchic lookup.
 	while len(stack):
 		# Depth-first search:
@@ -426,7 +430,7 @@ if __name__ == "__main__":
 		next_depth = obj['depth']+1;
 
 		# Limit depth search by given option
-		if options.depth and item_depth > options.depth:
+		if options.depth >= 0 and item_depth > options.depth:
 			continue;
 
 		term = {
@@ -535,12 +539,11 @@ if __name__ == "__main__":
 			for child in material_children:
 				# processed includes current onto_class;ALSO BLOCK X food product,
 				# which is added if options.product is true below.
-				if not child in processed and not (getEnglishLabel(child).endswith(' food product')): 
+				if not child in processed and (not (getEnglishLabel(child).endswith(' food product')) or options.product == True): 
 					stack.appendleft({'term': child, 'depth': item_depth});
 
-		# Sort children alphabetically
+		# Sort this item's children alphabetically
 		children = sorted(onto_class.subclasses(), key=lambda term: getEnglishLabel(term),reverse=True);
-
 		for subclass in children: # These get done before any material or food product siblings. parents.
 			# If already somehow processed, do we just print a "see also" link?
 			stack.appendleft({'term': subclass, 'depth': next_depth});
