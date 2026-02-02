@@ -13955,12 +13955,12 @@ SubClassOf(obo:FOODON_00001143 obo:FOODON_00004336)
 SubClassOf(obo:FOODON_00001144 obo:FOODON_00004336)
 SubClassOf(obo:FOODON_00001144 ObjectSomeValuesFrom(obo:FOODON_00001563 obo:FOODON_03411345))
 
-# Class: obo:FOODON_00001145 (microbial food material)
+# Class: obo:FOODON_00001145 (microbial material)
 
 AnnotationAssertion(obo:IAO_0000114 obo:FOODON_00001145 obo:IAO_0000428)
 AnnotationAssertion(obo:IAO_0000115 obo:FOODON_00001145 "Microbial material derived from one or more microorganisms including bacteria, mold, and yeast."@en)
 AnnotationAssertion(dcterms:contributor obo:FOODON_00001145 "Damion Dooley"@en)
-AnnotationAssertion(rdfs:label obo:FOODON_00001145 "microbial food material"@en)
+AnnotationAssertion(rdfs:label obo:FOODON_00001145 "microbial material"@en)
 SubClassOf(obo:FOODON_00001145 obo:FOODON_00001002)
 SubClassOf(obo:FOODON_00001145 obo:FOODON_03420116)
 
@@ -29028,10 +29028,6 @@ AnnotationAssertion(oboInOwl:hasDbXref obo:FOODON_02020156 siren:F10155)
 # Class: obo:FOODON_02020157 (chicken egg yolk)
 
 SubClassOf(obo:FOODON_02020157 obo:FOODON_03315772)
-
-# Class: obo:FOODON_02020205 (piece of chicken meat)
-
-SubClassOf(obo:FOODON_02020205 obo:FOODON_00001040)
 
 # Class: obo:FOODON_02020805 (scallop)
 
