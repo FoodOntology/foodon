@@ -533,8 +533,10 @@ Declaration(Class(obo:FOODON_00005705))
 Declaration(Class(obo:FOODON_00005706))
 Declaration(Class(obo:FOODON_00005707))
 Declaration(Class(obo:FOODON_00005708))
+Declaration(Class(obo:FOODON_00005709))
 Declaration(Class(obo:FOODON_00005710))
 Declaration(Class(obo:FOODON_00005711))
+Declaration(Class(obo:FOODON_00005712))
 Declaration(Class(obo:FOODON_00005713))
 Declaration(Class(obo:FOODON_00005714))
 Declaration(Class(obo:FOODON_00005715))
@@ -8870,6 +8872,7 @@ AnnotationAssertion(obo:IAO_0000115 obo:FOODON_00001184 "Material which derives 
 AnnotationAssertion(oboInOwl:hasDbXref obo:FOODON_00001184 siren:F10419)
 AnnotationAssertion(rdfs:label obo:FOODON_00001184 "algae material"@en)
 AnnotationAssertion(rdfs:seeAlso obo:FOODON_00001184 <https://ungc-communications-assets.s3.amazonaws.com/docs/publications/The-Seaweed-Manifesto.pdf>)
+AnnotationAssertion(rdfs:seeAlso obo:FOODON_00001184 "[algal material](http://purl.obolibrary.org/obo/ENVO_01001189)")
 EquivalentClasses(obo:FOODON_00001184 ObjectIntersectionOf(obo:FOODON_03420116 ObjectSomeValuesFrom(obo:RO_0001000 obo:FOODON_03411301)))
 SubClassOf(obo:FOODON_00001184 obo:FOODON_03420116)
 
@@ -14381,7 +14384,7 @@ AnnotationAssertion(obo:IAO_0000115 obo:FOODON_00004348 "A characteristic of org
 AnnotationAssertion(obo:IAO_0000117 obo:FOODON_00004348 <https://orcid.org/0000-0002-8844-9165>)
 AnnotationAssertion(dcterms:date obo:FOODON_00004348 "2023-06-18T09:30:05Z"^^xsd:dateTime)
 AnnotationAssertion(rdfs:label obo:FOODON_00004348 "raw"@en)
-SubClassOf(obo:FOODON_00004348 obo:PATO_0001018)
+SubClassOf(obo:FOODON_00004348 obo:PATO_0001995)
 
 # Class: obo:FOODON_00004351 (asparagus bean (raw, mature))
 
@@ -14929,7 +14932,7 @@ SubClassOf(obo:FOODON_00004721 obo:FOODON_00004434)
 # Class: obo:FOODON_00004722 (fresh)
 
 AnnotationAssertion(obo:IAO_0000114 obo:FOODON_00004722 obo:IAO_0000428)
-AnnotationAssertion(obo:IAO_0000115 obo:FOODON_00004722 "A raw characteristic of organism(s) or organism pieces(s) which show little or no sign of decay, and which have not been subjected to rehydration or thawing."@en)
+AnnotationAssertion(obo:IAO_0000115 obo:FOODON_00004722 "A raw characteristic of organism material which shows little or no sign of decay, and which has not been subjected to dehydration, rehydration or thawing."@en)
 AnnotationAssertion(dcterms:contributor obo:FOODON_00004722 <https://orcid.org/0000-0002-8844-9165>)
 AnnotationAssertion(dcterms:date obo:FOODON_00004722 "2024-04-19T21:25:52Z"^^xsd:dateTime)
 AnnotationAssertion(rdfs:label obo:FOODON_00004722 "fresh"@en)
@@ -15566,6 +15569,13 @@ AnnotationAssertion(dcterms:date obo:FOODON_00005708 "2025-11-10T20:23:56Z"^^xsd
 AnnotationAssertion(rdfs:label obo:FOODON_00005708 "decapod material"@en)
 SubClassOf(obo:FOODON_00005708 obo:FOODON_00005704)
 
+# Class: obo:FOODON_00005709 (food heating)
+
+AnnotationAssertion(dcterms:contributor obo:FOODON_00005709 <https://orcid.org/0000-0002-8844-9165>)
+AnnotationAssertion(dcterms:date obo:FOODON_00005709 "2026-03-25T14:33:59Z"^^xsd:dateTime)
+AnnotationAssertion(rdfs:label obo:FOODON_00005709 "food heating"@en)
+SubClassOf(obo:FOODON_00005709 obo:FOODON_03460111)
+
 # Class: obo:FOODON_00005710 (clam material)
 
 AnnotationAssertion(dcterms:contributor obo:FOODON_00005710 <https://orcid.org/0000-0002-8844-9165>)
@@ -15579,6 +15589,14 @@ AnnotationAssertion(dcterms:contributor obo:FOODON_00005711 <https://orcid.org/0
 AnnotationAssertion(dcterms:date obo:FOODON_00005711 "2025-11-10T20:36:21Z"^^xsd:dateTime)
 AnnotationAssertion(rdfs:label obo:FOODON_00005711 "oyster material"@en)
 SubClassOf(obo:FOODON_00005711 obo:FOODON_00005705)
+
+# Class: obo:FOODON_00005712 (solid form (sensu food))
+
+AnnotationAssertion(obo:IAO_0000115 obo:FOODON_00005712 "A physical form characteristic indicating that food material is in a solid state."@en)
+AnnotationAssertion(dcterms:contributor obo:FOODON_00005712 <https://orcid.org/0000-0002-8844-9165>)
+AnnotationAssertion(dcterms:date obo:FOODON_00005712 "2026-04-08T20:03:20Z"^^xsd:dateTime)
+AnnotationAssertion(rdfs:label obo:FOODON_00005712 "solid form (sensu food)"@en)
+SubClassOf(obo:FOODON_00005712 obo:FOODON_03430113)
 
 # Class: obo:FOODON_00005713 (archaeogastropod material)
 
@@ -32033,6 +32051,8 @@ DisjointClasses(obo:FOODON_03411624 obo:FOODON_03411625)
 # Class: obo:FOODON_03411625 (reptile)
 
 AnnotationAssertion(obo:IAO_0000114 obo:FOODON_03411625 obo:IAO_0000428)
+AnnotationAssertion(obo:IAO_0000115 obo:FOODON_03411625 "Reptiles, as commonly defined, are tetrapod vertebrate animals with an ectothermic metabolism and amniotic development."@en)
+AnnotationAssertion(obo:IAO_0000119 obo:FOODON_03411625 wikipedia:Reptile)
 AnnotationAssertion(oboInOwl:hasDbXref obo:FOODON_03411625 <http://eol.org/pages/1703>)
 AnnotationAssertion(oboInOwl:hasDbXref obo:FOODON_03411625 langual:B1625)
 AnnotationAssertion(oboInOwl:hasSynonym obo:FOODON_03411625 "reptilia"@en)
@@ -73098,9 +73118,10 @@ AnnotationAssertion(oboInOwl:hasDbXref obo:FOODON_03420307 langual:C0307)
 AnnotationAssertion(rdfs:label obo:FOODON_03420307 "seed oil"@en)
 SubClassOf(obo:FOODON_03420307 obo:FOODON_00001087)
 
-# Class: obo:FOODON_03430100 (divided into pieces, thickness <0.3 cm.)
+# Class: obo:FOODON_03430100 (divided into piece(s), thickness <0.3 cm.)
 
 AnnotationAssertion(obo:IAO_0000114 obo:FOODON_03430100 obo:IAO_0000428)
+AnnotationAssertion(obo:IAO_0000115 obo:FOODON_03430100 "Divided into piece(s) each of which has a thickness less than 0.3 cm."@en)
 AnnotationAssertion(oboInOwl:hasDbXref obo:FOODON_03430100 langual:E0100)
 AnnotationAssertion(oboInOwl:hasNarrowSynonym obo:FOODON_03430100 "coarsely grated"@en)
 AnnotationAssertion(oboInOwl:hasNarrowSynonym obo:FOODON_03430100 "coarsely ground"@en)
@@ -73110,17 +73131,19 @@ AnnotationAssertion(oboInOwl:hasNarrowSynonym obo:FOODON_03430100 "flaked (physi
 AnnotationAssertion(oboInOwl:hasNarrowSynonym obo:FOODON_03430100 "grated coarsely"@en)
 AnnotationAssertion(oboInOwl:hasNarrowSynonym obo:FOODON_03430100 "minced"@en)
 AnnotationAssertion(oboInOwl:hasNarrowSynonym obo:FOODON_03430100 "shredded"@en)
-AnnotationAssertion(rdfs:label obo:FOODON_03430100 "divided into pieces, thickness <0.3 cm."@en)
+AnnotationAssertion(rdfs:label obo:FOODON_03430100 "divided into piece(s), thickness <0.3 cm."@en)
 EquivalentClasses(obo:FOODON_03430100 ObjectIntersectionOf(obo:FOODON_03430152 ObjectSomeValuesFrom(obo:RO_0000086 obo:FOODON_00002406)))
 SubClassOf(obo:FOODON_03430100 obo:FOODON_03430152)
 
-# Class: obo:FOODON_03430101 (medium ground and sifted (bolted))
+# Class: obo:FOODON_03430101 (medium ground and sifted form (sensu food))
 
 AnnotationAssertion(obo:IAO_0000114 obo:FOODON_03430101 obo:IAO_0000428)
+AnnotationAssertion(obo:IAO_0000115 obo:FOODON_03430101 "A characteristic of ground food material which is larger than finely ground material but has been sifted to remove larger parts, specifically portions of germ or bran."@en)
 AnnotationAssertion(oboInOwl:hasDbXref obo:FOODON_03430101 langual:E0101)
 AnnotationAssertion(oboInOwl:hasSynonym obo:FOODON_03430101 "bolted"@en)
 AnnotationAssertion(oboInOwl:hasSynonym obo:FOODON_03430101 "sifted (bolted)"@en)
-AnnotationAssertion(rdfs:label obo:FOODON_03430101 "medium ground and sifted (bolted)"@en)
+AnnotationAssertion(rdfs:comment obo:FOODON_03430101 "Traditionally in flour milling a mesh of \"bolting cloth\" was used to filter out larger bran and germ components. [https://en.wiktionary.org/wiki/bolting_cloth]"@en)
+AnnotationAssertion(rdfs:label obo:FOODON_03430101 "medium ground and sifted form (sensu food)"@en)
 SubClassOf(obo:FOODON_03430101 obo:FOODON_03430117)
 
 # Class: obo:FOODON_03430102 (food (liquid, high viscosity))
@@ -73145,46 +73168,49 @@ AnnotationAssertion(rdfs:comment obo:FOODON_03430103 "LanguaL curation note: Use
 AnnotationAssertion(rdfs:label obo:FOODON_03430103 "food (semiliquid)"@en)
 SubClassOf(obo:FOODON_03430103 obo:FOODON_00002454)
 
-# Class: obo:FOODON_03430104 (whole and pieces)
+# Class: obo:FOODON_03430104 (whole and pieces (sensu food))
 
 AnnotationAssertion(obo:IAO_0000114 obo:FOODON_03430104 obo:IAO_0000428)
+AnnotationAssertion(obo:IAO_0000115 obo:FOODON_03430104 "A food material characteristic which indicates a collection of both wholely formed food items as well as severed pieces."@en)
 AnnotationAssertion(oboInOwl:hasDbXref obo:FOODON_03430104 langual:E0104)
-AnnotationAssertion(rdfs:label obo:FOODON_03430104 "whole and pieces"@en)
+AnnotationAssertion(rdfs:label obo:FOODON_03430104 "whole and pieces (sensu food)"@en)
+SubClassOf(obo:FOODON_03430104 obo:FOODON_00005712)
 SubClassOf(obo:FOODON_03430104 obo:FOODON_03430108)
 
-# Class: obo:FOODON_03430105 (whole, shape achieved by forming, thickness 1.5-7 cm.)
+# Class: obo:FOODON_03430105 (whole form, shape achieved by forming, thickness 1.5-7 cm.)
 
 AnnotationAssertion(obo:IAO_0000114 obo:FOODON_03430105 obo:IAO_0000428)
 AnnotationAssertion(oboInOwl:hasDbXref obo:FOODON_03430105 langual:E0105)
-AnnotationAssertion(rdfs:label obo:FOODON_03430105 "whole, shape achieved by forming, thickness 1.5-7 cm."@en)
+AnnotationAssertion(rdfs:label obo:FOODON_03430105 "whole form, shape achieved by forming, thickness 1.5-7 cm."@en)
 EquivalentClasses(obo:FOODON_03430105 ObjectIntersectionOf(obo:FOODON_03430147 ObjectSomeValuesFrom(obo:RO_0000086 obo:FOODON_00002407)))
 SubClassOf(obo:FOODON_03430105 obo:FOODON_03430147)
 
-# Class: obo:FOODON_03430106 (finely ground)
+# Class: obo:FOODON_03430106 (finely ground form (sensu food))
 
 AnnotationAssertion(obo:IAO_0000114 obo:FOODON_03430106 obo:IAO_0000428)
 AnnotationAssertion(oboInOwl:hasDbXref obo:FOODON_03430106 langual:E0106)
 AnnotationAssertion(oboInOwl:hasSynonym obo:FOODON_03430106 "flour (physical state)"@en)
 AnnotationAssertion(oboInOwl:hasSynonym obo:FOODON_03430106 "powdered"@en)
 AnnotationAssertion(oboInOwl:hasSynonym obo:FOODON_03430106 "pulverized"@en)
-AnnotationAssertion(rdfs:label obo:FOODON_03430106 "finely ground"@en)
+AnnotationAssertion(rdfs:label obo:FOODON_03430106 "finely ground form (sensu food)"@en)
 SubClassOf(obo:FOODON_03430106 obo:FOODON_03430136)
 
-# Class: obo:FOODON_03430107 (divided into segments or wedges)
+# Class: obo:FOODON_03430107 (divided into one or more segments or wedges)
 
 AnnotationAssertion(obo:IAO_0000114 obo:FOODON_03430107 obo:IAO_0000428)
 AnnotationAssertion(oboInOwl:hasDbXref obo:FOODON_03430107 langual:E0107)
 AnnotationAssertion(oboInOwl:hasSynonym obo:FOODON_03430107 "segmented"@en)
 AnnotationAssertion(oboInOwl:hasSynonym obo:FOODON_03430107 "wedge-shaped"@en)
 AnnotationAssertion(rdfs:comment obo:FOODON_03430107 "LanguaL curation note: Used for solid products that are divided into more than four pieces each of which is the same shape (e.g., wedge of cheese)."@en)
-AnnotationAssertion(rdfs:label obo:FOODON_03430107 "divided into segments or wedges"@en)
+AnnotationAssertion(rdfs:label obo:FOODON_03430107 "divided into one or more segments or wedges"@en)
 SubClassOf(obo:FOODON_03430107 obo:FOODON_03430133)
 
-# Class: obo:FOODON_03430108 (physical state, shape or form, multiple)
+# Class: obo:FOODON_03430108 (heterogeneous form (sensu food))
 
 AnnotationAssertion(obo:IAO_0000114 obo:FOODON_03430108 obo:IAO_0000428)
+AnnotationAssertion(obo:IAO_0000115 obo:FOODON_03430108 "Food material as a collection of several food material parts and/or phases - liquid, semiliquid, semisolid, or solid."@en)
 AnnotationAssertion(oboInOwl:hasDbXref obo:FOODON_03430108 langual:E0108)
-AnnotationAssertion(rdfs:label obo:FOODON_03430108 "physical state, shape or form, multiple"@en)
+AnnotationAssertion(rdfs:label obo:FOODON_03430108 "heterogeneous form (sensu food)"@en)
 SubClassOf(obo:FOODON_03430108 obo:FOODON_03430113)
 
 # Class: obo:FOODON_03430109 (food (liquid, low viscosity))
@@ -73214,13 +73240,13 @@ AnnotationAssertion(rdfs:label obo:FOODON_03430111 "cut into short pieces"@en)
 SubClassOf(obo:FOODON_03430111 obo:FOODON_03430115)
 SubClassOf(obo:FOODON_03430111 ObjectSomeValuesFrom(obo:RO_0002353 obo:FOODON_00000071))
 
-# Class: obo:FOODON_03430113 (food physical quality)
+# Class: obo:FOODON_03430113 (physical form (sensu food))
 
 AnnotationAssertion(obo:IAO_0000114 obo:FOODON_03430113 obo:IAO_0000428)
-AnnotationAssertion(obo:IAO_0000115 obo:FOODON_03430113 "The physical state of the food product (liquid, semiliquid, semisolid, or solid). Solid food products are further subdivided by shape or form. Terms are provided for products that have both liquid and solid components or that incorporate air or other gases. [FDA CFSAN 1995]"@en)
+AnnotationAssertion(obo:IAO_0000115 obo:FOODON_03430113 "A food material characteristic which describes the material's physical form."@en)
 AnnotationAssertion(oboInOwl:hasDbXref obo:FOODON_03430113 langual:E0113)
-AnnotationAssertion(rdfs:comment obo:FOODON_03430113 "Damion Dooley's note: these categories need to be mapped over to PATO phenotypic categories, with a suitable treatment of mixtures of solids that are divided into parts."@en)
-AnnotationAssertion(rdfs:label obo:FOODON_03430113 "food physical quality"@en)
+AnnotationAssertion(rdfs:comment obo:FOODON_03430113 "LanguaL note: \"The physical state of the food product (liquid, semiliquid, semisolid, or solid). Solid food products are further subdivided by shape or form. Terms are provided for products that have both liquid and solid components or that incorporate air or other gases. [FDA CFSAN 1995]\""@en)
+AnnotationAssertion(rdfs:label obo:FOODON_03430113 "physical form (sensu food)"@en)
 SubClassOf(obo:FOODON_03430113 obo:FOODON_00002470)
 
 # Class: obo:FOODON_03430114 (food (liquid, low viscosity, with small particles))
@@ -73230,32 +73256,33 @@ AnnotationAssertion(oboInOwl:hasDbXref obo:FOODON_03430114 langual:E0114)
 AnnotationAssertion(rdfs:label obo:FOODON_03430114 "food (liquid, low viscosity, with small particles)"@en)
 SubClassOf(obo:FOODON_03430114 obo:FOODON_03430109)
 
-# Class: obo:FOODON_03430115 (divided into pieces, thickness 0.3-1.5 cm.)
+# Class: obo:FOODON_03430115 (divided into piece(s), thickness 0.3-1.5 cm.)
 
 AnnotationAssertion(obo:IAO_0000114 obo:FOODON_03430115 obo:IAO_0000428)
+AnnotationAssertion(obo:IAO_0000115 obo:FOODON_03430115 "Divided into piece(s) each of which has a thickness ranging from 0.3 to 1.5 cm."@en)
 AnnotationAssertion(oboInOwl:hasDbXref obo:FOODON_03430115 langual:E0115)
 AnnotationAssertion(oboInOwl:hasExactSynonym obo:FOODON_03430115 "chopped"@en)
 AnnotationAssertion(oboInOwl:hasExactSynonym obo:FOODON_03430115 "diced"@en)
 AnnotationAssertion(oboInOwl:hasSynonym obo:FOODON_03430115 "cracked into medium size pieces"@en)
-AnnotationAssertion(rdfs:label obo:FOODON_03430115 "divided into pieces, thickness 0.3-1.5 cm."@en)
+AnnotationAssertion(rdfs:label obo:FOODON_03430115 "divided into piece(s), thickness 0.3-1.5 cm."@en)
 EquivalentClasses(obo:FOODON_03430115 ObjectIntersectionOf(obo:FOODON_03430152 ObjectSomeValuesFrom(obo:RO_0000086 obo:FOODON_00002405)))
 SubClassOf(obo:FOODON_03430115 obo:FOODON_03430152)
 
-# Class: obo:FOODON_03430116 (divided into halves)
+# Class: obo:FOODON_03430116 (divided into one or more halves)
 
 AnnotationAssertion(obo:IAO_0000114 obo:FOODON_03430116 obo:IAO_0000428)
 AnnotationAssertion(oboInOwl:hasDbXref obo:FOODON_03430116 langual:E0116)
 AnnotationAssertion(oboInOwl:hasSynonym obo:FOODON_03430116 "halved"@en)
 AnnotationAssertion(rdfs:comment obo:FOODON_03430116 "LanguaL curation note: Used for solid products that are divided into two identical pieces (e.g., peach halves)."@en)
-AnnotationAssertion(rdfs:label obo:FOODON_03430116 "divided into halves"@en)
+AnnotationAssertion(rdfs:label obo:FOODON_03430116 "divided into one or more halves"@en)
 SubClassOf(obo:FOODON_03430116 obo:FOODON_03430133)
 
-# Class: obo:FOODON_03430117 (medium ground)
+# Class: obo:FOODON_03430117 (medium ground form (sensu food))
 
 AnnotationAssertion(obo:IAO_0000114 obo:FOODON_03430117 obo:IAO_0000428)
 AnnotationAssertion(oboInOwl:hasDbXref obo:FOODON_03430117 langual:E0117)
 AnnotationAssertion(oboInOwl:hasSynonym obo:FOODON_03430117 "meal"@en)
-AnnotationAssertion(rdfs:label obo:FOODON_03430117 "medium ground"@en)
+AnnotationAssertion(rdfs:label obo:FOODON_03430117 "medium ground form (sensu food)"@en)
 SubClassOf(obo:FOODON_03430117 obo:FOODON_03430136)
 
 # Class: obo:FOODON_03430119 (semisolid with smooth consistency)
@@ -73274,13 +73301,15 @@ AnnotationAssertion(oboInOwl:hasDbXref obo:FOODON_03430121 langual:E0121)
 AnnotationAssertion(rdfs:label obo:FOODON_03430121 "food (liquid, high viscosity, with small particles)"@en)
 SubClassOf(obo:FOODON_03430121 obo:FOODON_03430102)
 
-# Class: obo:FOODON_03430122 (divided or disintegrated)
+# Class: obo:FOODON_03430122 (divided or ground form (sensu food))
 
 AnnotationAssertion(obo:IAO_0000114 obo:FOODON_03430122 obo:IAO_0000428)
+AnnotationAssertion(obo:IAO_0000115 obo:FOODON_03430122 "A solid form characteristic which covers both \"divided into piece(s)\" and \"ground form\" classes of food material."@en)
 AnnotationAssertion(oboInOwl:hasDbXref obo:FOODON_03430122 langual:E0122)
 AnnotationAssertion(rdfs:comment obo:FOODON_03430122 "LanguaL curation note: The distinctions in this category are based on size characteristics, primarily thickness, which are important for heat transfer and for diffusion of chemicals in processing. *DIVIDED INTO HALVES, QUARTERS OR SEGMENTS* should be examined first and if one of the descriptors listed applies it should be used regardless of the size of the pieces. If none of these are applicable, other *DIVIDED OR DISINTEGRATED* descriptors should be examined. Do not use any of these descriptors if dividing or disintegrating results in a semiliquid or semisolid product."@en)
-AnnotationAssertion(rdfs:label obo:FOODON_03430122 "divided or disintegrated"@en)
-SubClassOf(obo:FOODON_03430122 obo:FOODON_03430113)
+AnnotationAssertion(rdfs:label obo:FOODON_03430122 "divided or ground form (sensu food)"@en)
+EquivalentClasses(obo:FOODON_03430122 ObjectUnionOf(obo:FOODON_03430136 obo:FOODON_03430152))
+SubClassOf(obo:FOODON_03430122 obo:FOODON_00005712)
 
 # Class: obo:FOODON_03430123 (food (liquid, low viscosity, with no visible particles))
 
@@ -73296,14 +73325,15 @@ AnnotationAssertion(oboInOwl:hasDbXref obo:FOODON_03430124 langual:E0124)
 AnnotationAssertion(rdfs:label obo:FOODON_03430124 "sliced, thick, between 0.5 and 1.5 cm."@en)
 SubClassOf(obo:FOODON_03430124 obo:FOODON_03430137)
 
-# Class: obo:FOODON_03430125 (divided into pieces, thickness more than 1.5 cm.)
+# Class: obo:FOODON_03430125 (divided into piece(s), thickness more than 1.5 cm.)
 
 AnnotationAssertion(obo:IAO_0000114 obo:FOODON_03430125 obo:IAO_0000428)
+AnnotationAssertion(obo:IAO_0000115 obo:FOODON_03430125 "Divided into piece(s) each of which has a thickness greater than 1.5 cm."@en)
 AnnotationAssertion(oboInOwl:hasDbXref obo:FOODON_03430125 langual:E0125)
 AnnotationAssertion(oboInOwl:hasExactSynonym obo:FOODON_03430125 "chopped"@en)
 AnnotationAssertion(oboInOwl:hasSynonym obo:FOODON_03430125 "broken into large pieces"@en)
 AnnotationAssertion(oboInOwl:hasSynonym obo:FOODON_03430125 "cut into large pieces"@en)
-AnnotationAssertion(rdfs:label obo:FOODON_03430125 "divided into pieces, thickness more than 1.5 cm."@en)
+AnnotationAssertion(rdfs:label obo:FOODON_03430125 "divided into piece(s), thickness more than 1.5 cm."@en)
 EquivalentClasses(obo:FOODON_03430125 ObjectIntersectionOf(obo:FOODON_03430152 ObjectSomeValuesFrom(obo:RO_0000086 obo:FOODON_00002410)))
 SubClassOf(obo:FOODON_03430125 obo:FOODON_03430152)
 
@@ -73318,21 +73348,23 @@ AnnotationAssertion(rdfs:label obo:FOODON_03430130 "food (liquid)"@en)
 EquivalentClasses(obo:FOODON_03430130 ObjectIntersectionOf(obo:FOODON_00002454 ObjectSomeValuesFrom(obo:RO_0000086 obo:PATO_0001548)))
 SubClassOf(obo:FOODON_03430130 obo:FOODON_00002454)
 
-# Class: obo:FOODON_03430131 (whole)
+# Class: obo:FOODON_03430131 (whole form (sensu food))
 
 AnnotationAssertion(obo:IAO_0000114 obo:FOODON_03430131 obo:IAO_0000428)
-AnnotationAssertion(obo:IAO_0000115 obo:FOODON_03430131 "Refers to natural or formed shape as appropriate, regardless of size, which may vary from very large (e.g., beef carcass) to very small (e.g., poppy seed, yeast cell)."@en)
+AnnotationAssertion(obo:IAO_0000115 obo:FOODON_03430131 "A solid form characteristic of food material which refers to a naturally shaped organism or organism part, or a fabrication of the same shape."@en)
 AnnotationAssertion(oboInOwl:hasDbXref obo:FOODON_03430131 langual:E0131)
-AnnotationAssertion(rdfs:label obo:FOODON_03430131 "whole"@en)
-SubClassOf(obo:FOODON_03430131 obo:FOODON_03430113)
+AnnotationAssertion(rdfs:comment obo:FOODON_03430131 "LanguaL note: \"Refers to natural or formed shape as appropriate, regardless of size, which may vary from very large (e.g., beef carcass) to very small (e.g., poppy seed, yeast cell).\""@en)
+AnnotationAssertion(rdfs:label obo:FOODON_03430131 "whole form (sensu food)"@en)
+SubClassOf(obo:FOODON_03430131 obo:FOODON_00005712)
 
-# Class: obo:FOODON_03430133 (divided into halves, quarters or segments)
+# Class: obo:FOODON_03430133 (divided into one or more wedges or segments)
 
 AnnotationAssertion(obo:IAO_0000114 obo:FOODON_03430133 obo:IAO_0000428)
-AnnotationAssertion(obo:IAO_0000115 obo:FOODON_03430133 "Divided into pieces whose shape is defined in relation to the shape of the whole, i.e., halves, quarters, or segments. It is used regardless of the size of the whole."@en)
+AnnotationAssertion(obo:IAO_0000115 obo:FOODON_03430133 "Divided into piece(s) whose shape is defined in relation to the shape of some whole food material form, i.e., halves, quarters, wedges or segments."@en)
 AnnotationAssertion(oboInOwl:hasDbXref obo:FOODON_03430133 langual:E0133)
-AnnotationAssertion(rdfs:label obo:FOODON_03430133 "divided into halves, quarters or segments"@en)
-SubClassOf(obo:FOODON_03430133 obo:FOODON_03430122)
+AnnotationAssertion(rdfs:comment obo:FOODON_03430133 "LanguaL note:  It is used regardless of the size of the whole."@en)
+AnnotationAssertion(rdfs:label obo:FOODON_03430133 "divided into one or more wedges or segments"@en)
+SubClassOf(obo:FOODON_03430133 obo:FOODON_03430152)
 
 # Class: obo:FOODON_03430134 (semisolid with solid pieces)
 
@@ -73349,13 +73381,14 @@ AnnotationAssertion(oboInOwl:hasDbXref obo:FOODON_03430135 langual:E0135)
 AnnotationAssertion(rdfs:label obo:FOODON_03430135 "semiliquid with smooth consistency"@en)
 SubClassOf(obo:FOODON_03430135 obo:FOODON_03430103)
 
-# Class: obo:FOODON_03430136 (disintegrated or ground)
+# Class: obo:FOODON_03430136 (ground form (sensu food))
 
 AnnotationAssertion(obo:IAO_0000114 obo:FOODON_03430136 obo:IAO_0000428)
+AnnotationAssertion(obo:IAO_0000115 obo:FOODON_03430136 "A solid food material form characteristic in which food material has undergone a food grinding (North American usage) or mincing (UK usage) process."@en)
 AnnotationAssertion(oboInOwl:hasDbXref obo:FOODON_03430136 langual:E0136)
 AnnotationAssertion(rdfs:comment obo:FOODON_03430136 "LanguaL curation note: Used when particle size is below 0.2 cm."@en)
-AnnotationAssertion(rdfs:label obo:FOODON_03430136 "disintegrated or ground"@en)
-SubClassOf(obo:FOODON_03430136 obo:FOODON_03430122)
+AnnotationAssertion(rdfs:label obo:FOODON_03430136 "ground form (sensu food)"@en)
+SubClassOf(obo:FOODON_03430136 obo:FOODON_00005712)
 
 # Class: obo:FOODON_03430137 (sliced)
 
@@ -73380,7 +73413,7 @@ AnnotationAssertion(oboInOwl:hasDbXref obo:FOODON_03430139 langual:E0139)
 AnnotationAssertion(rdfs:label obo:FOODON_03430139 "food (liquid, high viscosity, with no visible particles)"@en)
 SubClassOf(obo:FOODON_03430139 obo:FOODON_03430102)
 
-# Class: obo:FOODON_03430140 (whole, shape achieved by forming, thickness 0.3-1.5 cm.)
+# Class: obo:FOODON_03430140 (whole form, shape achieved by forming, thickness 0.3-1.5 cm.)
 
 AnnotationAssertion(obo:IAO_0000114 obo:FOODON_03430140 obo:IAO_0000428)
 AnnotationAssertion(oboInOwl:hasDbXref obo:FOODON_03430140 langual:E0140)
@@ -73388,7 +73421,7 @@ AnnotationAssertion(oboInOwl:hasSynonym obo:FOODON_03430140 "crumbs achieved by 
 AnnotationAssertion(oboInOwl:hasSynonym obo:FOODON_03430140 "granule, food"@en)
 AnnotationAssertion(oboInOwl:hasSynonym obo:FOODON_03430140 "pellet, food"@en)
 AnnotationAssertion(oboInOwl:hasSynonym obo:FOODON_03430140 "tablet, food"@en)
-AnnotationAssertion(rdfs:label obo:FOODON_03430140 "whole, shape achieved by forming, thickness 0.3-1.5 cm."@en)
+AnnotationAssertion(rdfs:label obo:FOODON_03430140 "whole form, shape achieved by forming, thickness 0.3-1.5 cm."@en)
 EquivalentClasses(obo:FOODON_03430140 ObjectIntersectionOf(obo:FOODON_03430147 ObjectSomeValuesFrom(obo:RO_0000086 obo:FOODON_00002405)))
 SubClassOf(obo:FOODON_03430140 obo:FOODON_03430147)
 
@@ -73425,31 +73458,30 @@ AnnotationAssertion(oboInOwl:hasSynonym obo:FOODON_03430145 "shoestring"@en)
 AnnotationAssertion(rdfs:label obo:FOODON_03430145 "sliced, thin, below 0.5 cm."@en)
 SubClassOf(obo:FOODON_03430145 obo:FOODON_03430137)
 
-# Class: obo:FOODON_03430146 (whole, shape achieved by forming, thickness bigger than 7 cm.)
+# Class: obo:FOODON_03430146 (whole form, shape achieved by forming, thickness bigger than 7 cm.)
 
 AnnotationAssertion(obo:IAO_0000114 obo:FOODON_03430146 obo:IAO_0000428)
 AnnotationAssertion(oboInOwl:hasDbXref obo:FOODON_03430146 langual:E0146)
-AnnotationAssertion(rdfs:label obo:FOODON_03430146 "whole, shape achieved by forming, thickness bigger than 7 cm."@en)
+AnnotationAssertion(rdfs:label obo:FOODON_03430146 "whole form, shape achieved by forming, thickness bigger than 7 cm."@en)
 EquivalentClasses(obo:FOODON_03430146 ObjectIntersectionOf(obo:FOODON_03430147 ObjectSomeValuesFrom(obo:RO_0000086 obo:FOODON_00002408)))
 SubClassOf(obo:FOODON_03430146 obo:FOODON_03430147)
 
-# Class: obo:FOODON_03430147 (whole, shape achieved by forming)
+# Class: obo:FOODON_03430147 (fabricated whole form (sensu food))
 
 AnnotationAssertion(obo:IAO_0000114 obo:FOODON_03430147 obo:IAO_0000428)
 AnnotationAssertion(oboInOwl:hasDbXref obo:FOODON_03430147 langual:E0147)
 AnnotationAssertion(oboInOwl:hasSynonym obo:FOODON_03430147 "stick, formed"@en)
 AnnotationAssertion(rdfs:comment obo:FOODON_03430147 "LanguaL curation note: Used only for solid food products, i.e. hard or soft products capable of retaining a definite shape at room temperature (20 degrees C.). Examples of whole formed products are: whole cheese, apple pie, loaf of unsliced bread, noodle, yeast tablet and cornflake."@en)
-AnnotationAssertion(rdfs:label obo:FOODON_03430147 "whole, shape achieved by forming"@en)
-EquivalentClasses(obo:FOODON_03430147 ObjectIntersectionOf(obo:FOODON_03430131 ObjectSomeValuesFrom(obo:RO_0002353 obo:FOODON_00002409)))
+AnnotationAssertion(rdfs:label obo:FOODON_03430147 "fabricated whole form (sensu food)"@en)
 SubClassOf(obo:FOODON_03430147 obo:FOODON_03430131)
 
-# Class: obo:FOODON_03430148 (divided into quarters)
+# Class: obo:FOODON_03430148 (divided into one or more quarters)
 
 AnnotationAssertion(obo:IAO_0000114 obo:FOODON_03430148 obo:IAO_0000428)
 AnnotationAssertion(oboInOwl:hasDbXref obo:FOODON_03430148 langual:E0148)
 AnnotationAssertion(oboInOwl:hasSynonym obo:FOODON_03430148 "quartered"@en)
 AnnotationAssertion(rdfs:comment obo:FOODON_03430148 "LanguaL curation note: Used for solid products that are divided into four identical pieces (e.g., quartered artichoke heart)."@en)
-AnnotationAssertion(rdfs:label obo:FOODON_03430148 "divided into quarters"@en)
+AnnotationAssertion(rdfs:label obo:FOODON_03430148 "divided into one or more quarters"@en)
 SubClassOf(obo:FOODON_03430148 obo:FOODON_03430133)
 
 # Class: obo:FOODON_03430149 (food (liquid, low viscosity, with solid pieces))
@@ -73459,12 +73491,13 @@ AnnotationAssertion(oboInOwl:hasDbXref obo:FOODON_03430149 langual:E0149)
 AnnotationAssertion(rdfs:label obo:FOODON_03430149 "food (liquid, low viscosity, with solid pieces)"@en)
 SubClassOf(obo:FOODON_03430149 obo:FOODON_03430109)
 
-# Class: obo:FOODON_03430150 (whole, natural shape)
+# Class: obo:FOODON_03430150 (naturally shaped whole form (sensu food))
 
 AnnotationAssertion(obo:IAO_0000114 obo:FOODON_03430150 obo:IAO_0000428)
+AnnotationAssertion(obo:IAO_0000115 obo:FOODON_03430150 "A whole form characteristic which is the shape of food material consisting of an organism or organism part."@en)
 AnnotationAssertion(oboInOwl:hasDbXref obo:FOODON_03430150 langual:E0150)
 AnnotationAssertion(rdfs:comment obo:FOODON_03430150 "LanguaL curation note: Whole refers not only to a whole plant or animal but also to a whole part as indexed in C. PART OF PLANT OR ANIMAL; examples of whole natural products are: an apple, rice in grain form, an asparagus spear, a spinach leaf, a beef carcass, a dressed chicken, a chicken drumstick, a calf liver. Products may have been slightly modified during processing and preservation (e.g., raisins or a pear that has been peeled and cored)."@en)
-AnnotationAssertion(rdfs:label obo:FOODON_03430150 "whole, natural shape"@en)
+AnnotationAssertion(rdfs:label obo:FOODON_03430150 "naturally shaped whole form (sensu food)"@en)
 SubClassOf(obo:FOODON_03430150 obo:FOODON_03430131)
 
 # Class: obo:FOODON_03430151 (food (solid))
@@ -73478,19 +73511,20 @@ AnnotationAssertion(rdfs:label obo:FOODON_03430151 "food (solid)"@en)
 EquivalentClasses(obo:FOODON_03430151 ObjectIntersectionOf(obo:FOODON_00002454 ObjectSomeValuesFrom(obo:RO_0000086 obo:PATO_0001546)))
 SubClassOf(obo:FOODON_03430151 obo:FOODON_00002454)
 
-# Class: obo:FOODON_03430152 (divided into pieces)
+# Class: obo:FOODON_03430152 (divided into pieces (sensu food))
 
 AnnotationAssertion(obo:IAO_0000114 obo:FOODON_03430152 obo:IAO_0000428)
-AnnotationAssertion(obo:IAO_0000115 obo:FOODON_03430152 "Divided into pieces whose shape bears little or no relation to the shape of the whole. If all dimensions are below 0.2 cm., use *DISINTEGRATED OR GROUND*. Examples are: bread slice, cubed beef, sliced carrot, cut green beans, apple ring, shredded cabbage or cheese."@en)
+AnnotationAssertion(obo:IAO_0000115 obo:FOODON_03430152 "A characteristic of a collection of one or more pieces of a solid food material class, each of which have little or no relation to the shape of the whole."@en)
 AnnotationAssertion(oboInOwl:hasDbXref obo:FOODON_03430152 langual:E0152)
-AnnotationAssertion(rdfs:label obo:FOODON_03430152 "divided into pieces"@en)
-SubClassOf(obo:FOODON_03430152 obo:FOODON_03430122)
+AnnotationAssertion(rdfs:comment obo:FOODON_03430152 "LanguaL note: \"If all dimensions are below 0.2 cm., use *DISINTEGRATED OR GROUND*. Examples are: bread slice, cubed beef, sliced carrot, cut green beans, apple ring, shredded cabbage or cheese.\""@en)
+AnnotationAssertion(rdfs:label obo:FOODON_03430152 "divided into pieces (sensu food)"@en)
+SubClassOf(obo:FOODON_03430152 obo:FOODON_00005712)
 
-# Class: obo:FOODON_03430153 (whole, shape achieved by forming, thickness <0.3 cm.)
+# Class: obo:FOODON_03430153 (whole form, shape achieved by forming, thickness <0.3 cm.)
 
 AnnotationAssertion(obo:IAO_0000114 obo:FOODON_03430153 obo:IAO_0000428)
 AnnotationAssertion(oboInOwl:hasDbXref obo:FOODON_03430153 langual:E0153)
-AnnotationAssertion(rdfs:label obo:FOODON_03430153 "whole, shape achieved by forming, thickness <0.3 cm."@en)
+AnnotationAssertion(rdfs:label obo:FOODON_03430153 "whole form, shape achieved by forming, thickness <0.3 cm."@en)
 EquivalentClasses(obo:FOODON_03430153 ObjectIntersectionOf(obo:FOODON_03430147 ObjectSomeValuesFrom(obo:RO_0000086 obo:FOODON_00002406)))
 SubClassOf(obo:FOODON_03430153 obo:FOODON_03430147)
 
@@ -77657,7 +77691,7 @@ AnnotationAssertion(oboInOwl:hasDbXref obo:FOODON_03510119 langual:P0119)
 AnnotationAssertion(rdfs:label obo:FOODON_03510119 "processing-related claim"@en)
 SubClassOf(obo:FOODON_03510119 obo:FOODON_03602001)
 
-# Class: obo:FOODON_03510120 ("fresh"label claim)
+# Class: obo:FOODON_03510120 ("fresh" label claim)
 
 AnnotationAssertion(obo:IAO_0000114 obo:FOODON_03510120 obo:IAO_0000428)
 AnnotationAssertion(obo:IAO_0000115 obo:FOODON_03510120 "A raw food that has not been frozen, heat processed or otherwise preserved."@en)
@@ -77740,7 +77774,7 @@ AnnotationAssertion(oboInOwl:hasSynonym obo:FOODON_03510128 "organically grown l
 AnnotationAssertion(rdfs:label obo:FOODON_03510128 "organic food claim"@en)
 SubClassOf(obo:FOODON_03510128 obo:FOODON_03510023)
 
-# Class: obo:FOODON_03510129 ("free"label claim)
+# Class: obo:FOODON_03510129 ("free" label claim)
 
 AnnotationAssertion(obo:IAO_0000114 obo:FOODON_03510129 obo:IAO_0000428)
 AnnotationAssertion(obo:IAO_0000115 obo:FOODON_03510129 "Considerations include amounts that are 'nutritionally trivial' and amounts that can be declared as zero on the nutrition label. An additional criterion based on amount per weight (e.g., per 100 grams) is not considered necessary because the amount of nutrient in a 'free' food is so low that even frequent and repeated consumption is unlikely to have physiological consequences. (U.S. proposed)"@en)
@@ -77749,7 +77783,7 @@ AnnotationAssertion(oboInOwl:hasSynonym obo:FOODON_03510129 "free, label claim"@
 AnnotationAssertion(rdfs:label obo:FOODON_03510129 "\"free\" label claim"@en)
 SubClassOf(obo:FOODON_03510129 obo:FOODON_03510059)
 
-# Class: obo:FOODON_03510130 ("high"label claim)
+# Class: obo:FOODON_03510130 ("high" label claim)
 
 AnnotationAssertion(obo:IAO_0000114 obo:FOODON_03510130 obo:IAO_0000428)
 AnnotationAssertion(obo:IAO_0000115 obo:FOODON_03510130 "An amount customarily consumed contains 20% or more of the daily nutritional value to describe protein, vitamins, minerals, dietary fiber, or potassium. May be used on meals or main dishes to indicate that product contains a food that meets the definition."@en)
@@ -77760,7 +77794,7 @@ AnnotationAssertion(oboInOwl:hasSynonym obo:FOODON_03510130 "rich in label claim
 AnnotationAssertion(rdfs:label obo:FOODON_03510130 "\"high\" label claim"@en)
 SubClassOf(obo:FOODON_03510130 obo:FOODON_03510059)
 
-# Class: obo:FOODON_03510131 ("less"label claim)
+# Class: obo:FOODON_03510131 ("less" label claim)
 
 AnnotationAssertion(obo:IAO_0000114 obo:FOODON_03510131 obo:IAO_0000428)
 AnnotationAssertion(oboInOwl:hasDbXref obo:FOODON_03510131 langual:P0131)
@@ -77769,7 +77803,7 @@ AnnotationAssertion(rdfs:comment obo:FOODON_03510131 "LanguaL curation note: Use
 AnnotationAssertion(rdfs:label obo:FOODON_03510131 "\"less\" label claim"@en)
 SubClassOf(obo:FOODON_03510131 obo:FOODON_03510059)
 
-# Class: obo:FOODON_03510132 ("light"label claim)
+# Class: obo:FOODON_03510132 ("light" label claim)
 
 AnnotationAssertion(obo:IAO_0000114 obo:FOODON_03510132 obo:IAO_0000428)
 AnnotationAssertion(obo:IAO_0000115 obo:FOODON_03510132 "A claim stating that a product is \"light\" or \"lite\", and any claim likely to have the same meaning for the consumer, shall follow the same conditions as those set for the term \"reduced\", see *REDUCED {NAME OF NUTRIENT} NUTRITION CLAIM [P0132]*; the claim shall also be accompanied by an indication of the characteristic(s) which make(s) the food \"light\" or \"lite\" [REGULATION (EC) No 1924/2006 Corrigendum 2007-01-18].
@@ -77780,7 +77814,7 @@ AnnotationAssertion(oboInOwl:hasSynonym obo:FOODON_03510132 "light, label claim"
 AnnotationAssertion(rdfs:label obo:FOODON_03510132 "\"light\" label claim"@en)
 SubClassOf(obo:FOODON_03510132 obo:FOODON_03510059)
 
-# Class: obo:FOODON_03510133 ("more"label claim)
+# Class: obo:FOODON_03510133 ("more" label claim)
 
 AnnotationAssertion(obo:IAO_0000114 obo:FOODON_03510133 obo:IAO_0000428)
 AnnotationAssertion(oboInOwl:hasDbXref obo:FOODON_03510133 langual:P0133)
@@ -77789,7 +77823,7 @@ AnnotationAssertion(rdfs:comment obo:FOODON_03510133 "LanguaL curation note: Use
 AnnotationAssertion(rdfs:label obo:FOODON_03510133 "\"more\" label claim"@en)
 SubClassOf(obo:FOODON_03510133 obo:FOODON_03510059)
 
-# Class: obo:FOODON_03510134 ("source of"label claim)
+# Class: obo:FOODON_03510134 ("source of" label claim)
 
 AnnotationAssertion(obo:IAO_0000114 obo:FOODON_03510134 obo:IAO_0000428)
 AnnotationAssertion(oboInOwl:hasDbXref obo:FOODON_03510134 langual:P0134)
@@ -77981,7 +78015,7 @@ AnnotationAssertion(rdfs:comment obo:FOODON_03510177 "LanguaL curation note: Use
 AnnotationAssertion(rdfs:label obo:FOODON_03510177 "kosher milchlig claim"@en)
 SubClassOf(obo:FOODON_03510177 obo:FOODON_03510127)
 
-# Class: obo:FOODON_03510178 ("fresh frozen"label claim)
+# Class: obo:FOODON_03510178 ("fresh frozen" label claim)
 
 AnnotationAssertion(obo:IAO_0000114 obo:FOODON_03510178 obo:IAO_0000428)
 AnnotationAssertion(obo:IAO_0000115 obo:FOODON_03510178 "The food was quickly frozen while still fresh."@en)
@@ -78234,7 +78268,7 @@ AnnotationAssertion(oboInOwl:hasDbXref obo:FOODON_03510208 langual:P0208)
 AnnotationAssertion(rdfs:label obo:FOODON_03510208 "increased {name of nutrient} nutrition claim"@en)
 SubClassOf(obo:FOODON_03510208 obo:FOODON_03510095)
 
-# Class: obo:FOODON_03510209 ("naturally/natural"label claim)
+# Class: obo:FOODON_03510209 ("naturally/natural" label claim)
 
 AnnotationAssertion(obo:IAO_0000114 obo:FOODON_03510209 obo:IAO_0000428)
 AnnotationAssertion(obo:IAO_0000115 obo:FOODON_03510209 "Where a food naturally meets the condition(s) laid down in this Annex for the use of a nutritional claim, the term \"naturally/natural\" may be used as a prefix to the claim [REGULATION (EC) No 1924/2006 Corrigendum2007-01-18]."@en)
@@ -78439,7 +78473,7 @@ AnnotationAssertion(rdfs:comment obo:FOODON_03510232 "Contained in GS1 Code List
 AnnotationAssertion(rdfs:label obo:FOODON_03510232 "food allergen labelling about molluscs and products thereof"@en)
 SubClassOf(obo:FOODON_03510232 obo:FOODON_03510213)
 
-# Class: obo:FOODON_03510233 ("no trans fat"claim)
+# Class: obo:FOODON_03510233 ("no trans fat" claim)
 
 AnnotationAssertion(obo:IAO_0000114 obo:FOODON_03510233 obo:IAO_0000428)
 AnnotationAssertion(oboInOwl:hasDbXref obo:FOODON_03510233 langual:P0233)
