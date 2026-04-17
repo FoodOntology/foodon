@@ -8,7 +8,6 @@ Prefix(rdfs:=<http://www.w3.org/2000/01/rdf-schema#>)
 
 Ontology(<http://purl.obolibrary.org/obo/foodon/imports/robot_meat_cuts.ofn>
 
-Declaration(Class(<http://purl.obolibrary.org/obo/FOODON_00001132>))
 Declaration(Class(<http://purl.obolibrary.org/obo/FOODON_00001282>))
 Declaration(Class(<http://purl.obolibrary.org/obo/FOODON_00002570>))
 Declaration(Class(<http://purl.obolibrary.org/obo/FOODON_00002574>))
@@ -44,6 +43,7 @@ Declaration(Class(<http://purl.obolibrary.org/obo/FOODON_00004489>))
 Declaration(Class(<http://purl.obolibrary.org/obo/FOODON_00004490>))
 Declaration(Class(<http://purl.obolibrary.org/obo/FOODON_00004491>))
 Declaration(Class(<http://purl.obolibrary.org/obo/FOODON_00004492>))
+Declaration(Class(<http://purl.obolibrary.org/obo/FOODON_00004493>))
 Declaration(Class(<http://purl.obolibrary.org/obo/FOODON_00004494>))
 Declaration(Class(<http://purl.obolibrary.org/obo/FOODON_00004530>))
 Declaration(Class(<http://purl.obolibrary.org/obo/FOODON_00004531>))
@@ -586,6 +586,9 @@ Declaration(Class(<http://purl.obolibrary.org/obo/FOODON_02000462>))
 Declaration(Class(<http://purl.obolibrary.org/obo/FOODON_02000463>))
 Declaration(Class(<http://purl.obolibrary.org/obo/FOODON_02000464>))
 Declaration(Class(<http://purl.obolibrary.org/obo/FOODON_02000465>))
+Declaration(Class(<http://purl.obolibrary.org/obo/FOODON_02000466>))
+Declaration(Class(<http://purl.obolibrary.org/obo/FOODON_02000467>))
+Declaration(Class(<http://purl.obolibrary.org/obo/FOODON_02000468>))
 Declaration(Class(<http://purl.obolibrary.org/obo/FOODON_02010032>))
 Declaration(Class(<http://purl.obolibrary.org/obo/FOODON_02010127>))
 Declaration(Class(<http://purl.obolibrary.org/obo/FOODON_02020892>))
@@ -766,7 +769,7 @@ SubClassOf(<http://purl.obolibrary.org/obo/FOODON_00004556> <http://purl.obolibr
 AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000115> <http://purl.obolibrary.org/obo/FOODON_00004557> "A whole foot that derives from a pig."@en)
 AnnotationAssertion(rdfs:label <http://purl.obolibrary.org/obo/FOODON_00004557> "pig foot"@en)
 EquivalentClasses(<http://purl.obolibrary.org/obo/FOODON_00004557> ObjectIntersectionOf(<http://purl.obolibrary.org/obo/FOODON_02010127> ObjectSomeValuesFrom(<http://purl.obolibrary.org/obo/RO_0001000> <http://purl.obolibrary.org/obo/FOODON_02021651>)))
-SubClassOf(<http://purl.obolibrary.org/obo/FOODON_00004557> <http://purl.obolibrary.org/obo/FOODON_00001132>)
+SubClassOf(<http://purl.obolibrary.org/obo/FOODON_00004557> <http://purl.obolibrary.org/obo/FOODON_00004493>)
 
 # Class: <http://purl.obolibrary.org/obo/FOODON_00004558> (pig foot (raw))
 
@@ -6183,6 +6186,43 @@ AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000115> <http://purl.ob
 AnnotationAssertion(rdfs:label <http://purl.obolibrary.org/obo/FOODON_02000465> "beef retail cut (raw)"@en)
 EquivalentClasses(<http://purl.obolibrary.org/obo/FOODON_02000465> ObjectIntersectionOf(<http://purl.obolibrary.org/obo/FOODON_00004478> ObjectSomeValuesFrom(<http://purl.obolibrary.org/obo/RO_0000086> <http://purl.obolibrary.org/obo/FOODON_00004348>)))
 SubClassOf(<http://purl.obolibrary.org/obo/FOODON_02000465> <http://purl.obolibrary.org/obo/FOODON_00004478>)
+
+# Class: <http://purl.obolibrary.org/obo/FOODON_02000466> (beef stew meat)
+
+AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000114> <http://purl.obolibrary.org/obo/FOODON_02000466> <http://purl.obolibrary.org/obo/IAO_0000122>)
+AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000115> <http://purl.obolibrary.org/obo/FOODON_02000466> "A piece of boneless beef derived from any primal cut intended for stewing. Stew is typically uniform in shape and no more than ½-inch in diameter."@en)
+AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000119> <http://purl.obolibrary.org/obo/FOODON_02000466> "https://www.meattrack.com/app/beef-cuts/#453")
+AnnotationAssertion(<http://purl.org/dc/terms/contributor> <http://purl.obolibrary.org/obo/FOODON_02000466> "https://orcid.org/0000-0001-5275-8866")
+AnnotationAssertion(<http://purl.org/dc/terms/date> <http://purl.obolibrary.org/obo/FOODON_02000466> "2026-04-18T11:31:46Z"^^xsd:dateTime)
+AnnotationAssertion(<http://www.geneontology.org/formats/oboInOwl#hasExactSynonym> <http://purl.obolibrary.org/obo/FOODON_02000466> "beef stew chunk"@en)
+AnnotationAssertion(rdfs:comment <http://purl.obolibrary.org/obo/FOODON_02000466> "The name “Stew” originates from a method of cooking where small pieces of meat are simmered in water or other liquid until its tender. Stew Meat must be free from bones, cartilages, lymph glands, and connective tissue. In dimensions, Stew is smaller than Cubes and Kabobs. Stew should be uniform in shape and no more than a ½-inch in diameter."@en)
+AnnotationAssertion(rdfs:label <http://purl.obolibrary.org/obo/FOODON_02000466> "beef stew meat"@en)
+SubClassOf(<http://purl.obolibrary.org/obo/FOODON_02000466> <http://purl.obolibrary.org/obo/FOODON_02000405>)
+
+# Class: <http://purl.obolibrary.org/obo/FOODON_02000467> (beef sirloin steak)
+
+AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000114> <http://purl.obolibrary.org/obo/FOODON_02000467> <http://purl.obolibrary.org/obo/IAO_0000122>)
+AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000115> <http://purl.obolibrary.org/obo/FOODON_02000467> "A steak derived from the sirloin."@en)
+AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000119> <http://purl.obolibrary.org/obo/FOODON_02000467> "https://www.meattrack.com/app/beef-cuts/#368")
+AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000119> <http://purl.obolibrary.org/obo/FOODON_02000467> "https://www.meattrack.com/app/beef-cuts/#371")
+AnnotationAssertion(<http://purl.org/dc/terms/contributor> <http://purl.obolibrary.org/obo/FOODON_02000467> "https://orcid.org/0000-0001-5275-8866")
+AnnotationAssertion(<http://purl.org/dc/terms/date> <http://purl.obolibrary.org/obo/FOODON_02000467> "2026-04-18T11:31:46Z"^^xsd:dateTime)
+AnnotationAssertion(rdfs:comment <http://purl.obolibrary.org/obo/FOODON_02000467> "The name originates from its anatomical location in the Hip, also known as the Sirloin located between the Shortloin and the anterior part of the Round."@en)
+AnnotationAssertion(rdfs:label <http://purl.obolibrary.org/obo/FOODON_02000467> "beef sirloin steak"@en)
+SubClassOf(<http://purl.obolibrary.org/obo/FOODON_02000467> <http://purl.obolibrary.org/obo/FOODON_00003029>)
+SubClassOf(<http://purl.obolibrary.org/obo/FOODON_02000467> ObjectSomeValuesFrom(<http://purl.obolibrary.org/obo/RO_0001000> <http://purl.obolibrary.org/obo/FOODON_02000145>))
+
+# Class: <http://purl.obolibrary.org/obo/FOODON_02000468> (beef sirloin steak (raw))
+
+AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000114> <http://purl.obolibrary.org/obo/FOODON_02000468> <http://purl.obolibrary.org/obo/IAO_0000122>)
+AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000115> <http://purl.obolibrary.org/obo/FOODON_02000468> "A raw beef sirloin steak."@en)
+AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000119> <http://purl.obolibrary.org/obo/FOODON_02000468> "https://www.meattrack.com/app/beef-cuts/#368")
+AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000119> <http://purl.obolibrary.org/obo/FOODON_02000468> "https://www.meattrack.com/app/beef-cuts/#371")
+AnnotationAssertion(<http://purl.org/dc/terms/contributor> <http://purl.obolibrary.org/obo/FOODON_02000468> "https://orcid.org/0000-0001-5275-8866")
+AnnotationAssertion(<http://purl.org/dc/terms/date> <http://purl.obolibrary.org/obo/FOODON_02000468> "2026-04-18T11:31:46Z"^^xsd:dateTime)
+AnnotationAssertion(rdfs:label <http://purl.obolibrary.org/obo/FOODON_02000468> "beef sirloin steak (raw)"@en)
+EquivalentClasses(<http://purl.obolibrary.org/obo/FOODON_02000468> ObjectIntersectionOf(<http://purl.obolibrary.org/obo/FOODON_02000467> ObjectSomeValuesFrom(<http://purl.obolibrary.org/obo/RO_0000086> <http://purl.obolibrary.org/obo/FOODON_00004348>)))
+SubClassOf(<http://purl.obolibrary.org/obo/FOODON_02000468> <http://purl.obolibrary.org/obo/FOODON_02000467>)
 
 # Class: <http://purl.obolibrary.org/obo/FOODON_03301886> (beef (ground, raw))
 
