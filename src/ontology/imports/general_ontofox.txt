@@ -106,9 +106,8 @@ http://purl.obolibrary.org/obo/IAO_0000125 #    pending final vetting
 
 [Top level source term URIs and target direct superclass URIs]
 http://purl.obolibrary.org/obo/IAO_0000030 # information
-http://purl.obolibrary.org/obo/BFO_0000020 # characteristic
 http://purl.obolibrary.org/obo/PATO_0000001 # characteristic
-subClassOf http://purl.obolibrary.org/obo/BFO_0000020
+subClassOf http://purl.obolibrary.org/obo/COB_0000502
 http://purl.obolibrary.org/obo/BFO_0000141 # immaterial entity
 http://purl.obolibrary.org/obo/BFO_0000040 # material entity
 http://purl.obolibrary.org/obo/BFO_0000015 # process
@@ -144,15 +143,17 @@ AGRO
 
 [Low level source term URIs]
 http://purl.obolibrary.org/obo/AGRO_00002071 # agricultural process
-http://purl.obolibrary.org/obo/AGRO_00000025 #      plant harvesting process
-http://purl.obolibrary.org/obo/AGRO_01000020 #      crop cultivation process
-http://purl.obolibrary.org/obo/AGRO_00000322 #      treatment
+http://purl.obolibrary.org/obo/AGRO_00000025 #   plant harvesting process
+http://purl.obolibrary.org/obo/AGRO_01000020 #   crop cultivation process
+http://purl.obolibrary.org/obo/AGRO_00000322 #   treatment
 
 http://purl.obolibrary.org/obo/AGRO_00000363 # greenhouse
 
 [Top level source term URIs and target direct superclass URIs]
 http://purl.obolibrary.org/obo/BFO_0000040 # material entity
 http://purl.obolibrary.org/obo/BFO_0000015 # process
+http://purl.obolibrary.org/obo/PATO_0000001 # quality
+subClassOf http://purl.obolibrary.org/obo/COB_0000502 # characteristic
 
 [Source term retrieval setting]
 includeAllIntermediates
@@ -338,6 +339,10 @@ http://purl.obolibrary.org/obo/ENVO_01000575 # wax
 http://purl.obolibrary.org/obo/ENVO_02000090 # ash
 http://purl.obolibrary.org/obo/ENVO_01000480 # glass
 
+
+http://purl.obolibrary.org/obo/ENVO_03501329 # spoon
+http://purl.obolibrary.org/obo/ENVO_03501328 # fork
+
 http://purl.obolibrary.org/obo/ENVO_02000055 # plant feed
 http://purl.obolibrary.org/obo/ENVO_02000054 #     bone meal
 http://purl.obolibrary.org/obo/ENVO_02000048 # contaminated animal feed
@@ -363,7 +368,7 @@ http://purl.obolibrary.org/obo/ENVO_00002258 #    soil - loam
 http://purl.obolibrary.org/obo/ENVO_01000254 # environmental system
 
 # PHYSIOGRAPHIC FEATURE
-http://purl.obolibrary.org/obo/ENVO_00000191 # physiographic feature   #Environmental terrain 
+http://purl.obolibrary.org/obo/ENVO_00000191 # solid astronomical body part 
 http://purl.obolibrary.org/obo/ENVO_00000091 #    terrain - beach
 http://purl.obolibrary.org/obo/ENVO_00000097 #    terrain - desert
 http://purl.obolibrary.org/obo/ENVO_00000114 #    terrain - field / agricultural field
@@ -386,9 +391,8 @@ http://purl.obolibrary.org/obo/ENVO_01000990 # sink fixture
 
 [Top level source term URIs and target direct superclass URIs]
 http://purl.obolibrary.org/obo/IAO_0000030 # information
-http://purl.obolibrary.org/obo/BFO_0000020 # characteristic
 http://purl.obolibrary.org/obo/PATO_0000001 # characteristic
-subClassOf http://purl.obolibrary.org/obo/BFO_0000020
+subClassOf http://purl.obolibrary.org/obo/COB_0000502
 http://purl.obolibrary.org/obo/BFO_0000141 # immaterial entity
 http://purl.obolibrary.org/obo/BFO_0000040 # material entity
 http://purl.obolibrary.org/obo/BFO_0000015 # process
@@ -592,7 +596,7 @@ http://purl.obolibrary.org/obo/PATO_0000308 # old
 
 [Top level source term URIs and target direct superclass URIs]
 http://purl.obolibrary.org/obo/PATO_0000001
-subClassOf http://purl.obolibrary.org/obo/BFO_0000020 # characteristic
+subClassOf http://purl.obolibrary.org/obo/COB_0000502 # characteristic
 
 [Source term retrieval setting]
 includeAllIntermediates
@@ -1063,9 +1067,8 @@ subClassOf http://purl.obolibrary.org/obo/BFO_0000040 # material entity
 # CRITICAL or DL error from continuant / independent continuant shows up:
 http://purl.obolibrary.org/obo/BFO_0000040 # material entity
 
-http://purl.obolibrary.org/obo/BFO_0000020 # characteristic
 http://purl.obolibrary.org/obo/PATO_0000001 # characteristic
-subClassOf http://purl.obolibrary.org/obo/BFO_0000020
+subClassOf http://purl.obolibrary.org/obo/COB_0000502
 http://purl.obolibrary.org/obo/BFO_0000015 # process
 
 [Source term retrieval setting]

@@ -407,6 +407,9 @@ Declaration(Class(obo:AfPO_0000577))
 Declaration(Class(obo:AfPO_0000578))
 Declaration(Class(obo:AfPO_0000579))
 Declaration(Class(obo:AfPO_0000580))
+Declaration(Class(obo:BFO_0000001))
+Declaration(Class(obo:BFO_0000002))
+Declaration(Class(obo:BFO_0000004))
 Declaration(Class(obo:BFO_0000015))
 Declaration(Class(obo:BFO_0000016))
 Declaration(Class(obo:BFO_0000017))
@@ -1385,7 +1388,6 @@ Declaration(Class(obo:NCIT_C94733))
 Declaration(Class(obo:OBI_0000011))
 Declaration(Class(obo:OBI_0000047))
 Declaration(Class(obo:OBI_0000070))
-Declaration(Class(obo:OBI_0000094))
 Declaration(Class(obo:OBI_0000181))
 Declaration(Class(obo:OBI_0000245))
 Declaration(Class(obo:OBI_0000274))
@@ -1832,6 +1834,7 @@ Declaration(Class(obo:PO_0025598))
 Declaration(Class(obo:PO_0025599))
 Declaration(Class(obo:PO_0025606))
 Declaration(Class(obo:PO_0025615))
+Declaration(Class(obo:PO_0025628))
 Declaration(Class(obo:PO_0028002))
 Declaration(Class(obo:PO_0028003))
 Declaration(Class(obo:PO_0030018))
@@ -2331,9 +2334,9 @@ AnnotationAssertion(obo:IAO_0000115 obo:IAO_0000115 "A property representing the
 AnnotationAssertion(obo:IAO_0000115 obo:IAO_0000115 "The official OBI definition, explaining the meaning of a class or property. Shall be Aristotelian, formalized and normalized. Can be augmented with colloquial definitions."@en)
 AnnotationAssertion(obo:IAO_0000115 obo:IAO_0000115 "The official definition, explaining the meaning of a class or property. Shall be Aristotelian, formalized and normalized. Can be augmented with colloquial definitions."@en)
 AnnotationAssertion(obo:IAO_0000119 obo:IAO_0000115 "GROUP:OBI:<http://purl.obolibrary.org/obo/obi>"@en)
-AnnotationAssertion(rdfs:label obo:IAO_0000115 "definition")
 AnnotationAssertion(rdfs:label obo:IAO_0000115 "definition"@en)
 AnnotationAssertion(rdfs:label obo:IAO_0000115 "textual definition")
+AnnotationAssertion(rdfs:label obo:IAO_0000115 "definition")
 
 # Annotation Property: obo:IAO_0000117 (term editor)
 
@@ -2605,7 +2608,7 @@ AnnotationAssertion(obo:IAO_0000412 obo:RO_0000053 obo:ro.owl)
 AnnotationAssertion(rdfs:label obo:RO_0000053 "has characteristic"@en)
 InverseFunctionalObjectProperty(obo:RO_0000053)
 
-# Object Property: obo:RO_0000056 (participates in)
+# Object Property: obo:RO_0000056 (participates_in)
 
 AnnotationAssertion(obo:IAO_0000115 obo:RO_0000056 "a relation between a continuant and a process, in which the continuant is somehow involved in the process"@en)
 AnnotationAssertion(obo:IAO_0000118 obo:RO_0000056 "participates_in"@en)
@@ -2720,7 +2723,7 @@ AnnotationAssertion(rdfs:label obo:RO_0001025 "located in"@en)
 AnnotationAssertion(rdfs:label obo:RO_0001025 "located_in")
 TransitiveObjectProperty(obo:RO_0001025)
 
-# Object Property: obo:RO_0002160 (only_in_taxon)
+# Object Property: obo:RO_0002160 (only in taxon)
 
 AnnotationAssertion(rdfs:label obo:RO_0002160 "only in taxon")
 AnnotationAssertion(rdfs:label obo:RO_0002160 "only_in_taxon")
@@ -5757,12 +5760,41 @@ AnnotationAssertion(obo:IAO_0000412 obo:AfPO_0000580 obo:hancestro.owl)
 AnnotationAssertion(rdfs:label obo:AfPO_0000580 "Karonica")
 SubClassOf(obo:AfPO_0000580 obo:AfPO_0000205)
 
+# Class: obo:BFO_0000001 (entity)
+
+AnnotationAssertion(obo:IAO_0000412 obo:BFO_0000001 obo:agro.owl)
+AnnotationAssertion(obo:IAO_0000412 obo:BFO_0000001 obo:envo.owl)
+AnnotationAssertion(rdfs:label obo:BFO_0000001 "entity")
+AnnotationAssertion(rdfs:label obo:BFO_0000001 "entity"@en)
+SubClassOf(obo:BFO_0000001 owl:Thing)
+
+# Class: obo:BFO_0000002 (continuant)
+
+AnnotationAssertion(obo:IAO_0000115 obo:BFO_0000002 "An entity that exists in full at any time in which it exists at all, persists through time while maintaining its identity and has no temporal parts."@en)
+AnnotationAssertion(obo:IAO_0000115 obo:BFO_0000002 "An entity that exists in full at any time in which it exists at all, persists through time while maintaining its identity and has no temporal parts.")
+AnnotationAssertion(obo:IAO_0000412 obo:BFO_0000002 obo:agro.owl)
+AnnotationAssertion(obo:IAO_0000412 obo:BFO_0000002 obo:envo.owl)
+AnnotationAssertion(rdfs:label obo:BFO_0000002 "continuant")
+AnnotationAssertion(rdfs:label obo:BFO_0000002 "continuant"@en)
+SubClassOf(obo:BFO_0000002 obo:BFO_0000001)
+
+# Class: obo:BFO_0000004 (independent continuant)
+
+AnnotationAssertion(obo:IAO_0000115 obo:BFO_0000004 "A continuant that is a bearer of quality and realizable entity entities, in which other entities inhere and which itself cannot inhere in anything."@en)
+AnnotationAssertion(obo:IAO_0000115 obo:BFO_0000004 "b is an independent continuant = Def. b is a continuant which is such that there is no c and no t such that b s-depends_on c at t. (axiom label in BFO2 Reference: [017-002])"@en)
+AnnotationAssertion(obo:IAO_0000115 obo:BFO_0000004 "A continuant that is a bearer of quality and realizable entity entities, in which other entities inhere and which itself cannot inhere in anything.")
+AnnotationAssertion(obo:IAO_0000115 obo:BFO_0000004 "b is an independent continuant = Def. b is a continuant which is such that there is no c and no t such that b s-depends_on c at t. (axiom label in BFO2 Reference: [017-002])")
+AnnotationAssertion(obo:IAO_0000412 obo:BFO_0000004 obo:agro.owl)
+AnnotationAssertion(rdfs:label obo:BFO_0000004 "independent continuant"@en)
+AnnotationAssertion(rdfs:label obo:BFO_0000004 "independent continuant")
+SubClassOf(obo:BFO_0000004 obo:BFO_0000002)
+
 # Class: obo:BFO_0000015 (process)
 
-AnnotationAssertion(obo:IAO_0000115 obo:BFO_0000015 "An occurrent that has temporal proper parts and for some time t, p s-depends_on some material entity at t.")
 AnnotationAssertion(obo:IAO_0000115 obo:BFO_0000015 "An occurrent that has temporal proper parts and for some time t, p s-depends_on some material entity at t."@en)
-AnnotationAssertion(obo:IAO_0000115 obo:BFO_0000015 "p is a process = Def. p is an occurrent that has temporal proper parts and for some time t, p s-depends_on some material entity at t. (axiom label in BFO2 Reference: [083-003])")
 AnnotationAssertion(obo:IAO_0000115 obo:BFO_0000015 "p is a process = Def. p is an occurrent that has temporal proper parts and for some time t, p s-depends_on some material entity at t. (axiom label in BFO2 Reference: [083-003])"@en)
+AnnotationAssertion(obo:IAO_0000115 obo:BFO_0000015 "An occurrent that has temporal proper parts and for some time t, p s-depends_on some material entity at t.")
+AnnotationAssertion(obo:IAO_0000115 obo:BFO_0000015 "p is a process = Def. p is an occurrent that has temporal proper parts and for some time t, p s-depends_on some material entity at t. (axiom label in BFO2 Reference: [083-003])")
 AnnotationAssertion(obo:IAO_0000412 obo:BFO_0000015 obo:agro.owl)
 AnnotationAssertion(obo:IAO_0000412 obo:BFO_0000015 obo:ecocore.owl)
 AnnotationAssertion(obo:IAO_0000412 obo:BFO_0000015 obo:envo.owl)
@@ -5788,17 +5820,11 @@ SubClassOf(obo:BFO_0000017 obo:COB_0000502)
 
 # Class: obo:BFO_0000020 (specifically dependent continuant)
 
-AnnotationAssertion(obo:IAO_0000115 obo:BFO_0000020 "A continuant that inheres in or is borne by other entities. Every instance of A requires some specific instance of B which must always be the same.")
-AnnotationAssertion(obo:IAO_0000115 obo:BFO_0000020 "A continuant that inheres in or is borne by other entities. Every instance of A requires some specific instance of B which must always be the same."@en)
-AnnotationAssertion(obo:IAO_0000115 obo:BFO_0000020 "b is a relational specifically dependent continuant = Def. b is a specifically dependent continuant and there are n &gt; 1 independent continuants c1, … cn which are not spatial regions are such that for all 1  i &lt; j  n, ci  and cj share no common parts, are such that for each 1  i  n, b s-depends_on ci at every time t during the course of b’s existence (axiom label in BFO2 Reference: [131-004])")
 AnnotationAssertion(obo:IAO_0000115 obo:BFO_0000020 "b is a relational specifically dependent continuant = Def. b is a specifically dependent continuant and there are n &gt; 1 independent continuants c1, … cn which are not spatial regions are such that for all 1  i &lt; j  n, ci  and cj share no common parts, are such that for each 1  i  n, b s-depends_on ci at every time t during the course of b’s existence (axiom label in BFO2 Reference: [131-004])"@en)
-AnnotationAssertion(obo:IAO_0000115 obo:BFO_0000020 "b is a specifically dependent continuant = Def. b is a continuant & there is some independent continuant c which is not a spatial region and which is such that b s-depends_on c at every time t during the course of b’s existence. (axiom label in BFO2 Reference: [050-003])")
 AnnotationAssertion(obo:IAO_0000115 obo:BFO_0000020 "b is a specifically dependent continuant = Def. b is a continuant & there is some independent continuant c which is not a spatial region and which is such that b s-depends_on c at every time t during the course of b’s existence. (axiom label in BFO2 Reference: [050-003])"@en)
-AnnotationAssertion(obo:IAO_0000412 obo:BFO_0000020 obo:agro.owl)
 AnnotationAssertion(obo:IAO_0000412 obo:BFO_0000020 obo:envo.owl)
-AnnotationAssertion(obo:IAO_0000412 obo:BFO_0000020 obo:uberon.owl)
-AnnotationAssertion(rdfs:label obo:BFO_0000020 "specifically dependent continuant")
 AnnotationAssertion(rdfs:label obo:BFO_0000020 "specifically dependent continuant"@en)
+SubClassOf(obo:BFO_0000020 obo:BFO_0000002)
 
 # Class: obo:BFO_0000023 (role)
 
@@ -5821,8 +5847,8 @@ SubClassOf(obo:BFO_0000029 obo:BFO_0000141)
 
 # Class: obo:BFO_0000040 (material entity)
 
-AnnotationAssertion(obo:IAO_0000115 obo:BFO_0000040 "An independent continuant that is spatially extended whose identity is independent of that of other entities and can be maintained through time.")
 AnnotationAssertion(obo:IAO_0000115 obo:BFO_0000040 "An independent continuant that is spatially extended whose identity is independent of that of other entities and can be maintained through time."@en)
+AnnotationAssertion(obo:IAO_0000115 obo:BFO_0000040 "An independent continuant that is spatially extended whose identity is independent of that of other entities and can be maintained through time.")
 AnnotationAssertion(obo:IAO_0000412 obo:BFO_0000040 obo:agro.owl)
 AnnotationAssertion(obo:IAO_0000412 obo:BFO_0000040 obo:dron.owl)
 AnnotationAssertion(obo:IAO_0000412 obo:BFO_0000040 obo:envo.owl)
@@ -5838,6 +5864,7 @@ AnnotationAssertion(obo:IAO_0000412 obo:BFO_0000141 obo:agro.owl)
 AnnotationAssertion(obo:IAO_0000412 obo:BFO_0000141 obo:envo.owl)
 AnnotationAssertion(obo:IAO_0000412 obo:BFO_0000141 obo:obi.owl)
 AnnotationAssertion(rdfs:label obo:BFO_0000141 "immaterial entity"@en)
+SubClassOf(obo:BFO_0000141 obo:BFO_0000004)
 
 # Class: obo:BTO_0000262 (clove)
 
@@ -7059,7 +7086,7 @@ AnnotationAssertion(obo:IAO_0000412 obo:ENVO_01000752 obo:envo.owl)
 AnnotationAssertion(rdfs:label obo:ENVO_01000752 "area of barren land"@en)
 SubClassOf(obo:ENVO_01000752 obo:ENVO_01001199)
 
-# Class: obo:ENVO_01000813 (geophysical entity)
+# Class: obo:ENVO_01000813 (astronomical body part)
 
 AnnotationAssertion(obo:IAO_0000115 obo:ENVO_01000813 "A material part of an astronomical body.")
 AnnotationAssertion(obo:IAO_0000412 obo:ENVO_01000813 obo:envo.owl)
@@ -12249,7 +12276,6 @@ SubClassOf(obo:IAO_0000028 obo:IAO_0000030)
 AnnotationAssertion(obo:IAO_0000114 obo:IAO_0000030 obo:IAO_0000122)
 AnnotationAssertion(obo:IAO_0000115 obo:IAO_0000030 "A generically dependent continuant that is about some thing."@en)
 AnnotationAssertion(obo:IAO_0000119 obo:IAO_0000030 "OBI_0000142"@en)
-AnnotationAssertion(obo:IAO_0000412 obo:IAO_0000030 obo:agro.owl)
 AnnotationAssertion(obo:IAO_0000412 obo:IAO_0000030 obo:envo.owl)
 AnnotationAssertion(obo:IAO_0000412 obo:IAO_0000030 obo:iao.owl)
 AnnotationAssertion(obo:IAO_0000412 obo:IAO_0000030 obo:obi.owl)
@@ -12809,7 +12835,7 @@ AnnotationAssertion(obo:IAO_0000412 obo:PATO_0000001 obo:obi.owl)
 AnnotationAssertion(obo:IAO_0000412 obo:PATO_0000001 obo:pato.owl)
 AnnotationAssertion(obo:IAO_0000412 obo:PATO_0000001 obo:uberon.owl)
 AnnotationAssertion(rdfs:label obo:PATO_0000001 "quality")
-SubClassOf(obo:PATO_0000001 obo:BFO_0000020)
+SubClassOf(obo:PATO_0000001 obo:COB_0000502)
 
 # Class: obo:PATO_0000011 (age)
 
@@ -15303,7 +15329,7 @@ AnnotationAssertion(oboInOwl:inSubset obo:PO_0009001 <http://purl.oboInOwllibrar
 AnnotationAssertion(oboInOwl:inSubset obo:PO_0009001 <http://purl.oboInOwllibrary.org/oboInOwl/po#Poaceae>)
 AnnotationAssertion(oboInOwl:inSubset obo:PO_0009001 <http://purl.oboInOwllibrary.org/oboInOwl/po#Rice>)
 AnnotationAssertion(oboInOwl:inSubset obo:PO_0009001 <http://purl.oboInOwllibrary.org/oboInOwl/po#TraitNet>)
-AnnotationAssertion(rdfs:comment obo:PO_0009001 "A fruit (PO:0009001) may contain additional plant structures (PO:0009011) that were part of a flower (PO:0009046) and mature along with the gynoecium, such as a receptacle (PO:0009064). A fruit may develop without fertilization in cases of parthenocarpy, apomixis, or other hormone-induced conditions and may not always contain seeds (PO:0009010). When annotating to fruit (PO:0009001) that are referred to as ‘aggregate’, ‘multiple’, or ‘compound’, please annotate directly to the appropriate plant structure, such as receptacle, hypanthium (PO:0009065) or infructescence (PO:0006342). Fruits only occur in angiosperms.")
+AnnotationAssertion(rdfs:comment obo:PO_0009001 "A fruit (PO:0009001) may contain additional plant structures (PO:0009011) that were part of a flower (PO:0009046) and mature along with the gynoecium, such as a receptacle (PO:0009064). A fruit may develop without fertilization in cases of parthenocarpy, apomixis, or other hormone-induced conditions and may not always contain seeds (PO:0009010). When annotating to fruit (PO:0009001) that are referred to as ‘multiple’, or ‘compound’, please annotate directly to the appropriate plant structure, such as receptacle, hypanthium (PO:0009065) or infructescence (PO:0006342). Fruits only occur in angiosperms.")
 AnnotationAssertion(rdfs:label obo:PO_0009001 "fruit")
 SubClassOf(obo:PO_0009001 obo:PO_0025496)
 SubClassOf(obo:PO_0009001 obo:UBERON_0001062)
@@ -15314,7 +15340,6 @@ SubClassOf(obo:PO_0009001 ObjectSomeValuesFrom(obo:RO_0002202 obo:PO_0009062))
 AnnotationAssertion(obo:IAO_0000115 obo:PO_0009002 "A cell which is a plant structure (PO:0009011).")
 AnnotationAssertion(obo:IAO_0000412 obo:PO_0009002 obo:po.owl)
 AnnotationAssertion(oboInOwl:hasBroadSynonym obo:PO_0009002 "cell (broad)")
-AnnotationAssertion(oboInOwl:hasDbXref obo:PO_0009002 "GO:0005623")
 AnnotationAssertion(oboInOwl:hasDbXref obo:PO_0009002 "PO_GIT:56")
 AnnotationAssertion(oboInOwl:hasExactSynonym obo:PO_0009002 "c&#233lula vegetal (Spanish, exact)")
 AnnotationAssertion(oboInOwl:hasExactSynonym obo:PO_0009002 "植物細胞 (Japanese, exact)")
@@ -15323,7 +15348,7 @@ AnnotationAssertion(oboInOwl:id obo:PO_0009002 "PO:0009002")
 AnnotationAssertion(oboInOwl:inSubset obo:PO_0009002 <http://purl.oboInOwllibrary.org/oboInOwl/po#CL>)
 AnnotationAssertion(oboInOwl:inSubset obo:PO_0009002 <http://purl.oboInOwllibrary.org/oboInOwl/po#TraitNet>)
 AnnotationAssertion(oboInOwl:inSubset obo:PO_0009002 <http://purl.oboInOwllibrary.org/oboInOwl/po#reference>)
-AnnotationAssertion(rdfs:comment obo:PO_0009002 "Applies to cells that are living or dead at maturity (e.g., fiber cell or tracheid) and includes any external encapsulating structures (if present) such as the plasma membrane and the plant-type cell wall. Definition of cell GO:0005623: \"The basic structural and functional unit of all organisms. Includes the plasma membrane and any external encapsulating structures such as the cell wall and cell envelope\". GO:0009505. Definition of plant-type cell wall (GO:0009505): A more or less rigid structure lying outside the cell membrane of a cell and composed of cellulose and pectin and other organic and inorganic substances, synonym; exact: cellulose and pectin-containing cell wall.")
+AnnotationAssertion(rdfs:comment obo:PO_0009002 "Applies to cells that are living or dead at maturity (e.g., fiber cell or tracheid) and includes any external encapsulating structures (if present) such as the plasma membrane and the plant-type cell wall.  Definition of cell CL:0000000: \"A material entity of anatomical origin (part of or deriving from an organism) that has as its parts a maximally connected cell compartment surrounded by a plasma membrane. The definition of cell is intended to represent all cells, and thus a cell is defined as a material entity and not an anatomical structure, which implies that it is part of an organism (or the entirety of one)\". Definition of plant-type cell wall (GO:0009505): \"A more or less rigid structure lying outside the cell membrane of a cell and composed of cellulose and pectin and other organic and inorganic substances.\"  Exact synonym: cellulose and pectin-containing cell wall.")
 AnnotationAssertion(rdfs:label obo:PO_0009002 "plant cell")
 SubClassOf(obo:PO_0009002 obo:PO_0009011)
 
@@ -17769,6 +17794,20 @@ AnnotationAssertion(oboInOwl:id obo:PO_0025615 "PO:0025615")
 AnnotationAssertion(rdfs:label obo:PO_0025615 "rosette")
 SubClassOf(obo:PO_0025615 obo:PO_0025022)
 
+# Class: obo:PO_0025628 (aggregate fruit)
+
+AnnotationAssertion(obo:IAO_0000115 obo:PO_0025628 "A fruit (PO:0009001) that develops from the merger of several plant ovaries (PO:0009072) that were separated in a single flower (PO:0009046).")
+AnnotationAssertion(obo:IAO_0000412 obo:PO_0025628 obo:po.owl)
+AnnotationAssertion(oboInOwl:created_by obo:PO_0025628 "https://orcid.org/0000-0002-6379-8932")
+AnnotationAssertion(oboInOwl:creation_date obo:PO_0025628 "2026-01-09T18:24:21Z")
+AnnotationAssertion(oboInOwl:hasDbXref obo:PO_0025628 "PO_GIT:702")
+AnnotationAssertion(oboInOwl:hasExactSynonym obo:PO_0025628 "aggregate of fruit (exact)")
+AnnotationAssertion(oboInOwl:hasOBONamespace obo:PO_0025628 "plant_ontology")
+AnnotationAssertion(oboInOwl:id obo:PO_0025628 "PO:0025628")
+AnnotationAssertion(rdfs:comment obo:PO_0025628 "Examples of aggregate fruits include the raspberry (Rubus spp.), which is a collection drupelets.")
+AnnotationAssertion(rdfs:label obo:PO_0025628 "aggregate fruit")
+SubClassOf(obo:PO_0025628 obo:PO_0009001)
+
 # Class: obo:PO_0028002 (sporophyte development stage)
 
 AnnotationAssertion(obo:IAO_0000115 obo:PO_0028002 "A whole plant development stage (PO:0007033) that has as primary participant a whole plant (PO:0000003) during the interval between fertilization (or apogamy) and death.")
@@ -19751,35 +19790,41 @@ SubClassOf(obo:UBERON_6006011 obo:UBERON_0000468)
 
 # Class: obo:UO_0000000 (unit)
 
+AnnotationAssertion(obo:IAO_0000115 obo:UO_0000000 "A unit of measurement is a standardized quantity of a physical quality.")
 AnnotationAssertion(obo:IAO_0000412 obo:UO_0000000 obo:uo.owl)
 AnnotationAssertion(rdfs:label obo:UO_0000000 "unit")
 
 # Class: obo:UO_0000001 (length unit)
 
+AnnotationAssertion(obo:IAO_0000115 obo:UO_0000001 "A unit which is a standard measure of the distance between two points.")
 AnnotationAssertion(obo:IAO_0000412 obo:UO_0000001 obo:uo.owl)
 AnnotationAssertion(rdfs:label obo:UO_0000001 "length unit")
 SubClassOf(obo:UO_0000001 obo:UO_0000000)
 
 # Class: obo:UO_0000002 (mass unit)
 
+AnnotationAssertion(obo:IAO_0000115 obo:UO_0000002 "A unit which is a standard measure of the amount of matter/energy of a physical object.")
 AnnotationAssertion(obo:IAO_0000412 obo:UO_0000002 obo:uo.owl)
 AnnotationAssertion(rdfs:label obo:UO_0000002 "mass unit")
 SubClassOf(obo:UO_0000002 obo:UO_0000000)
 
 # Class: obo:UO_0000003 (time unit)
 
+AnnotationAssertion(obo:IAO_0000115 obo:UO_0000003 "A unit which is a standard measure of the dimension in which events occur in sequence.")
 AnnotationAssertion(obo:IAO_0000412 obo:UO_0000003 obo:uo.owl)
 AnnotationAssertion(rdfs:label obo:UO_0000003 "time unit")
 SubClassOf(obo:UO_0000003 obo:UO_0000000)
 
 # Class: obo:UO_0000005 (temperature unit)
 
+AnnotationAssertion(obo:IAO_0000115 obo:UO_0000005 "A unit which is a standard measure of the average kinetic energy of the particles in a sample of matter.")
 AnnotationAssertion(obo:IAO_0000412 obo:UO_0000005 obo:uo.owl)
 AnnotationAssertion(rdfs:label obo:UO_0000005 "temperature unit")
 SubClassOf(obo:UO_0000005 obo:UO_0000000)
 
 # Class: obo:UO_0000008 (meter)
 
+AnnotationAssertion(obo:IAO_0000115 obo:UO_0000008 "A length unit which is equal to the length of the path traveled by light in vacuum during a time interval of 1/299 792 458 of a second.")
 AnnotationAssertion(obo:IAO_0000412 obo:UO_0000008 obo:uo.owl)
 AnnotationAssertion(rdfs:label obo:UO_0000008 "meter")
 SubClassOf(obo:UO_0000008 obo:UO_0000045)
@@ -19787,6 +19832,7 @@ SubClassOf(obo:UO_0000008 obo:UO_1000008)
 
 # Class: obo:UO_0000009 (kilogram)
 
+AnnotationAssertion(obo:IAO_0000115 obo:UO_0000009 "A mass unit which is equal to the mass of the International Prototype Kilogram kept by the BIPM at Svres, France.")
 AnnotationAssertion(obo:IAO_0000412 obo:UO_0000009 obo:uo.owl)
 AnnotationAssertion(rdfs:label obo:UO_0000009 "kilogram")
 SubClassOf(obo:UO_0000009 obo:UO_0000045)
@@ -19794,6 +19840,7 @@ SubClassOf(obo:UO_0000009 obo:UO_1000021)
 
 # Class: obo:UO_0000010 (second)
 
+AnnotationAssertion(obo:IAO_0000115 obo:UO_0000010 "A time unit which is equal to the duration of 9 192 631 770 periods of the radiation corresponding to the transition between the two hyperfine levels of the ground state of the caesium 133 atom.")
 AnnotationAssertion(obo:IAO_0000412 obo:UO_0000010 obo:uo.owl)
 AnnotationAssertion(rdfs:label obo:UO_0000010 "second")
 SubClassOf(obo:UO_0000010 obo:UO_0000045)
@@ -19801,228 +19848,266 @@ SubClassOf(obo:UO_0000010 obo:UO_1000010)
 
 # Class: obo:UO_0000015 (centimeter)
 
+AnnotationAssertion(obo:IAO_0000115 obo:UO_0000015 "A length unit which is equal to one hundredth of a meter or 10^[-2] m.")
 AnnotationAssertion(obo:IAO_0000412 obo:UO_0000015 obo:uo.owl)
 AnnotationAssertion(rdfs:label obo:UO_0000015 "centimeter")
 SubClassOf(obo:UO_0000015 obo:UO_1000008)
 
 # Class: obo:UO_0000016 (millimeter)
 
+AnnotationAssertion(obo:IAO_0000115 obo:UO_0000016 "A length unit which is equal to one thousandth of a meter or 10^[-3] m.")
 AnnotationAssertion(obo:IAO_0000412 obo:UO_0000016 obo:uo.owl)
 AnnotationAssertion(rdfs:label obo:UO_0000016 "millimeter")
 SubClassOf(obo:UO_0000016 obo:UO_1000008)
 
 # Class: obo:UO_0000021 (gram)
 
+AnnotationAssertion(obo:IAO_0000115 obo:UO_0000021 "A mass unit which is equal to one thousandth of a kilogram or 10^[-3] kg.")
 AnnotationAssertion(obo:IAO_0000412 obo:UO_0000021 obo:uo.owl)
 AnnotationAssertion(rdfs:label obo:UO_0000021 "gram")
 SubClassOf(obo:UO_0000021 obo:UO_1000021)
 
 # Class: obo:UO_0000022 (milligram)
 
+AnnotationAssertion(obo:IAO_0000115 obo:UO_0000022 "A mass unit which is equal to one thousandth of a gram or 10^[-3] g.")
 AnnotationAssertion(obo:IAO_0000412 obo:UO_0000022 obo:uo.owl)
 AnnotationAssertion(rdfs:label obo:UO_0000022 "milligram")
 SubClassOf(obo:UO_0000022 obo:UO_1000021)
 
 # Class: obo:UO_0000027 (degree Celsius)
 
+AnnotationAssertion(obo:IAO_0000115 obo:UO_0000027 "A temperature unit which is equal to one kelvin degree. However, they have their zeros at different points. The centigrade scale has its zero at 273.15 K.")
 AnnotationAssertion(obo:IAO_0000412 obo:UO_0000027 obo:uo.owl)
 AnnotationAssertion(rdfs:label obo:UO_0000027 "degree Celsius")
 SubClassOf(obo:UO_0000027 obo:UO_1000027)
 
 # Class: obo:UO_0000031 (minute)
 
+AnnotationAssertion(obo:IAO_0000115 obo:UO_0000031 "A time unit which is equal to 60 seconds.")
 AnnotationAssertion(obo:IAO_0000412 obo:UO_0000031 obo:uo.owl)
 AnnotationAssertion(rdfs:label obo:UO_0000031 "minute")
 SubClassOf(obo:UO_0000031 obo:UO_1000031)
 
 # Class: obo:UO_0000032 (hour)
 
+AnnotationAssertion(obo:IAO_0000115 obo:UO_0000032 "A time unit which is equal to 3600 seconds or 60 minutes.")
 AnnotationAssertion(obo:IAO_0000412 obo:UO_0000032 obo:uo.owl)
 AnnotationAssertion(rdfs:label obo:UO_0000032 "hour")
 SubClassOf(obo:UO_0000032 obo:UO_1000032)
 
 # Class: obo:UO_0000033 (day)
 
+AnnotationAssertion(obo:IAO_0000115 obo:UO_0000033 "A time unit which is equal to 24 hours.")
 AnnotationAssertion(obo:IAO_0000412 obo:UO_0000033 obo:uo.owl)
 AnnotationAssertion(rdfs:label obo:UO_0000033 "day")
 SubClassOf(obo:UO_0000033 obo:UO_1000033)
 
 # Class: obo:UO_0000034 (week)
 
+AnnotationAssertion(obo:IAO_0000115 obo:UO_0000034 "A time unit which is equal to 7 days.")
 AnnotationAssertion(obo:IAO_0000412 obo:UO_0000034 obo:uo.owl)
 AnnotationAssertion(rdfs:label obo:UO_0000034 "week")
 SubClassOf(obo:UO_0000034 obo:UO_1000034)
 
 # Class: obo:UO_0000035 (month)
 
+AnnotationAssertion(obo:IAO_0000115 obo:UO_0000035 "A time unit which is approximately equal to the length of time of one of cycle of the moon's phases which in science is taken to be equal to 30 days.")
 AnnotationAssertion(obo:IAO_0000412 obo:UO_0000035 obo:uo.owl)
 AnnotationAssertion(rdfs:label obo:UO_0000035 "month")
 SubClassOf(obo:UO_0000035 obo:UO_1000035)
 
 # Class: obo:UO_0000036 (year)
 
+AnnotationAssertion(obo:IAO_0000115 obo:UO_0000036 "A time unit which is equal to 12 months which in science is taken to be equal to 365.25 days.")
 AnnotationAssertion(obo:IAO_0000412 obo:UO_0000036 obo:uo.owl)
 AnnotationAssertion(rdfs:label obo:UO_0000036 "year")
 SubClassOf(obo:UO_0000036 obo:UO_1000036)
 
 # Class: obo:UO_0000045 (base unit)
 
+AnnotationAssertion(obo:IAO_0000115 obo:UO_0000045 "A unit which is one of a particular measure to which all measures of that type can be related.")
 AnnotationAssertion(obo:IAO_0000412 obo:UO_0000045 obo:uo.owl)
 AnnotationAssertion(rdfs:label obo:UO_0000045 "base unit")
 SubClassOf(obo:UO_0000045 obo:UO_0000000)
 
 # Class: obo:UO_0000051 (concentration unit)
 
+AnnotationAssertion(obo:IAO_0000115 obo:UO_0000051 "A unit which represents a standard measurement of how much of a given substance there is mixed with another substance.")
 AnnotationAssertion(obo:IAO_0000412 obo:UO_0000051 obo:uo.owl)
 AnnotationAssertion(rdfs:label obo:UO_0000051 "concentration unit")
 SubClassOf(obo:UO_0000051 obo:UO_0000000)
 
 # Class: obo:UO_0000052 (mass density unit)
 
+AnnotationAssertion(obo:IAO_0000115 obo:UO_0000052 "A density unit which is a standard measure of the mass of a substance in a given volume.")
 AnnotationAssertion(obo:IAO_0000412 obo:UO_0000052 obo:uo.owl)
 AnnotationAssertion(rdfs:label obo:UO_0000052 "mass density unit")
 SubClassOf(obo:UO_0000052 obo:UO_0000182)
 
 # Class: obo:UO_0000095 (volume unit)
 
+AnnotationAssertion(obo:IAO_0000115 obo:UO_0000095 "A unit which is a standard measure of the amount of space occupied by any substance, whether solid, liquid, or gas.")
 AnnotationAssertion(obo:IAO_0000412 obo:UO_0000095 obo:uo.owl)
 AnnotationAssertion(rdfs:label obo:UO_0000095 "volume unit")
 SubClassOf(obo:UO_0000095 obo:UO_0000000)
 
 # Class: obo:UO_0000098 (milliliter)
 
+AnnotationAssertion(obo:IAO_0000115 obo:UO_0000098 "A volume unit which is equal to one thousandth of a liter or 10^[-3] L, or to 1 cubic centimeter.")
 AnnotationAssertion(obo:IAO_0000412 obo:UO_0000098 obo:uo.owl)
 AnnotationAssertion(rdfs:label obo:UO_0000098 "milliliter")
 SubClassOf(obo:UO_0000098 obo:UO_1000099)
 
 # Class: obo:UO_0000099 (liter)
 
+AnnotationAssertion(obo:IAO_0000115 obo:UO_0000099 "A volume unit which is equal to one thousandth of a cubic meter or 10^[-3] m^[3], or to 1 decimeter.")
 AnnotationAssertion(obo:IAO_0000412 obo:UO_0000099 obo:uo.owl)
 AnnotationAssertion(rdfs:label obo:UO_0000099 "liter")
 SubClassOf(obo:UO_0000099 obo:UO_1000099)
 
 # Class: obo:UO_0000109 (pressure unit)
 
+AnnotationAssertion(obo:IAO_0000115 obo:UO_0000109 "A unit which is a standard measure of the force applied to a given area.")
 AnnotationAssertion(obo:IAO_0000412 obo:UO_0000109 obo:uo.owl)
 AnnotationAssertion(rdfs:label obo:UO_0000109 "pressure unit")
 SubClassOf(obo:UO_0000109 obo:UO_0000000)
 
 # Class: obo:UO_0000110 (pascal)
 
+AnnotationAssertion(obo:IAO_0000115 obo:UO_0000110 "A pressure unit which is equal to the pressure or stress on a surface caused by a force of 1 newton spread over a surface of 1 m^[2].")
 AnnotationAssertion(obo:IAO_0000412 obo:UO_0000110 obo:uo.owl)
 AnnotationAssertion(rdfs:label obo:UO_0000110 "pascal")
 SubClassOf(obo:UO_0000110 obo:UO_1000110)
 
 # Class: obo:UO_0000111 (energy unit)
 
+AnnotationAssertion(obo:IAO_0000115 obo:UO_0000111 "A unit which is a standard measure of the work done by a certain force (gravitational, electric, magnetic, force of inertia, etc).")
 AnnotationAssertion(obo:IAO_0000412 obo:UO_0000111 obo:uo.owl)
 AnnotationAssertion(rdfs:label obo:UO_0000111 "energy unit")
 SubClassOf(obo:UO_0000111 obo:UO_0000000)
 
 # Class: obo:UO_0000112 (joule)
 
+AnnotationAssertion(obo:IAO_0000115 obo:UO_0000112 "An energy unit which is equal to the energy required when a force of 1 newton moves an object 1 meter in the direction of the force.")
 AnnotationAssertion(obo:IAO_0000412 obo:UO_0000112 obo:uo.owl)
 AnnotationAssertion(rdfs:label obo:UO_0000112 "joule")
 SubClassOf(obo:UO_0000112 obo:UO_1000112)
 
 # Class: obo:UO_0000113 (power unit)
 
+AnnotationAssertion(obo:IAO_0000115 obo:UO_0000113 "A unit which is a standard measure power or the rate of doing work.")
 AnnotationAssertion(obo:IAO_0000412 obo:UO_0000113 obo:uo.owl)
 AnnotationAssertion(rdfs:label obo:UO_0000113 "power unit")
 SubClassOf(obo:UO_0000113 obo:UO_0000000)
 
 # Class: obo:UO_0000114 (watt)
 
+AnnotationAssertion(obo:IAO_0000115 obo:UO_0000114 "A power unit which is equal to the power used when work is done at the rate of 1 joule per second.")
 AnnotationAssertion(obo:IAO_0000412 obo:UO_0000114 obo:uo.owl)
 AnnotationAssertion(rdfs:label obo:UO_0000114 "watt")
 SubClassOf(obo:UO_0000114 obo:UO_1000114)
 
 # Class: obo:UO_0000163 (mass percentage)
 
+AnnotationAssertion(obo:IAO_0000115 obo:UO_0000163 "A dimensionless concentration unit which denotes the mass of a substance in a mixture as a percentage of the mass of the entire mixture.")
 AnnotationAssertion(obo:IAO_0000412 obo:UO_0000163 obo:uo.owl)
 AnnotationAssertion(rdfs:label obo:UO_0000163 "mass percentage")
 SubClassOf(obo:UO_0000163 obo:UO_1000163)
 
 # Class: obo:UO_0000164 (mass volume percentage)
 
+AnnotationAssertion(obo:IAO_0000115 obo:UO_0000164 "A dimensionless concentration unit which denotes the mass of the substance in a mixture as a percentage of the volume of the entire mixture.")
 AnnotationAssertion(obo:IAO_0000412 obo:UO_0000164 obo:uo.owl)
 AnnotationAssertion(rdfs:label obo:UO_0000164 "mass volume percentage")
 SubClassOf(obo:UO_0000164 obo:UO_1000164)
 
 # Class: obo:UO_0000165 (volume percentage)
 
+AnnotationAssertion(obo:IAO_0000115 obo:UO_0000165 "A dimensionless concentration unit which denotes the volume of the solute in mL per 100 mL of the resulting solution.")
 AnnotationAssertion(obo:IAO_0000412 obo:UO_0000165 obo:uo.owl)
 AnnotationAssertion(rdfs:label obo:UO_0000165 "volume percentage")
 SubClassOf(obo:UO_0000165 obo:UO_1000165)
 
 # Class: obo:UO_0000173 (gram per milliliter)
 
+AnnotationAssertion(obo:IAO_0000115 obo:UO_0000173 "A mass unit density which is equal to mass of an object in grams divided by the volume in milliliter.")
 AnnotationAssertion(obo:IAO_0000412 obo:UO_0000173 obo:uo.owl)
 AnnotationAssertion(rdfs:label obo:UO_0000173 "gram per milliliter")
 SubClassOf(obo:UO_0000173 obo:UO_1000173)
 
 # Class: obo:UO_0000182 (density unit)
 
+AnnotationAssertion(obo:IAO_0000115 obo:UO_0000182 "A unit which is a standard measure of the influence exerted by some mass.")
 AnnotationAssertion(obo:IAO_0000412 obo:UO_0000182 obo:uo.owl)
 AnnotationAssertion(rdfs:label obo:UO_0000182 "density unit")
 SubClassOf(obo:UO_0000182 obo:UO_0000000)
 
 # Class: obo:UO_0000186 (dimensionless unit)
 
+AnnotationAssertion(obo:IAO_0000115 obo:UO_0000186 "A unit which is a standard measure of physical quantity consisting of only a numerical number without any units.")
 AnnotationAssertion(obo:IAO_0000412 obo:UO_0000186 obo:uo.owl)
 AnnotationAssertion(rdfs:label obo:UO_0000186 "dimensionless unit")
 SubClassOf(obo:UO_0000186 obo:UO_0000000)
 
 # Class: obo:UO_0000187 (percent)
 
+AnnotationAssertion(obo:IAO_0000115 obo:UO_0000187 "A dimensionless ratio unit which denotes numbers as fractions of 100.")
 AnnotationAssertion(obo:IAO_0000412 obo:UO_0000187 obo:uo.owl)
 AnnotationAssertion(rdfs:label obo:UO_0000187 "percent")
 SubClassOf(obo:UO_0000187 obo:UO_0000190)
 
 # Class: obo:UO_0000190 (ratio unit)
 
+AnnotationAssertion(obo:IAO_0000115 obo:UO_0000190 "A dimensionless unit which denotes an amount or magnitude of one quantity relative to another.")
 AnnotationAssertion(obo:IAO_0000412 obo:UO_0000190 obo:uo.owl)
 AnnotationAssertion(rdfs:label obo:UO_0000190 "ratio unit")
 SubClassOf(obo:UO_0000190 obo:UO_0000186)
 
 # Class: obo:UO_0000191 (fraction)
 
+AnnotationAssertion(obo:IAO_0000115 obo:UO_0000191 "A dimensionless ratio unit which relates the part (the numerator) to the whole (the denominator).")
 AnnotationAssertion(obo:IAO_0000412 obo:UO_0000191 obo:uo.owl)
 AnnotationAssertion(rdfs:label obo:UO_0000191 "fraction")
 SubClassOf(obo:UO_0000191 obo:UO_0000190)
 
 # Class: obo:UO_0000193 (purity percentage)
 
+AnnotationAssertion(obo:IAO_0000115 obo:UO_0000193 "A dimensionless percent unit which denotes the homogeneity of a biomaterial.")
 AnnotationAssertion(obo:IAO_0000412 obo:UO_0000193 obo:uo.owl)
 AnnotationAssertion(rdfs:label obo:UO_0000193 "purity percentage")
 SubClassOf(obo:UO_0000193 obo:UO_1000193)
 
 # Class: obo:UO_0000194 (confluence percentage)
 
+AnnotationAssertion(obo:IAO_0000115 obo:UO_0000194 "A dimensionless percent unit which denotes the density of an attached or monolayer culture (e.g., cell culture).")
 AnnotationAssertion(obo:IAO_0000412 obo:UO_0000194 obo:uo.owl)
 AnnotationAssertion(rdfs:label obo:UO_0000194 "confluence percentage")
 SubClassOf(obo:UO_0000194 obo:UO_1000194)
 
 # Class: obo:UO_0000195 (degree Fahrenheit)
 
+AnnotationAssertion(obo:IAO_0000115 obo:UO_0000195 "A temperature unit which is equal to 5/9ths of a kelvin. Negative 40 degrees Fahrenheit is equal to negative 40 degrees Celsius.")
 AnnotationAssertion(obo:IAO_0000412 obo:UO_0000195 obo:uo.owl)
 AnnotationAssertion(rdfs:label obo:UO_0000195 "degree Fahrenheit")
 SubClassOf(obo:UO_0000195 obo:UO_1000195)
 
 # Class: obo:UO_0000196 (pH)
 
+AnnotationAssertion(obo:IAO_0000115 obo:UO_0000196 "A dimensionless concentration notation which denotes the acidity of a solution in terms of activity of hydrogen ions (H+).")
 AnnotationAssertion(obo:IAO_0000412 obo:UO_0000196 obo:uo.owl)
 AnnotationAssertion(rdfs:label obo:UO_0000196 "pH")
 SubClassOf(obo:UO_0000196 obo:UO_1000196)
 
 # Class: obo:UO_0000205 (volume per unit volume)
 
+AnnotationAssertion(obo:IAO_0000115 obo:UO_0000205 "A dimensionless concentration unit which denotes the given volume of the solute in the total volume of the resulting solution.")
 AnnotationAssertion(obo:IAO_0000412 obo:UO_0000205 obo:uo.owl)
 AnnotationAssertion(rdfs:label obo:UO_0000205 "volume per unit volume")
 SubClassOf(obo:UO_0000205 obo:UO_0000051)
 
 # Class: obo:UO_0010011 (inch)
 
+AnnotationAssertion(obo:IAO_0000115 obo:UO_0010011 "A length unit which is equal to 0.0254 metres.")
 AnnotationAssertion(obo:IAO_0000412 obo:UO_0010011 obo:uo.owl)
 AnnotationAssertion(rdfs:label obo:UO_0010011 "inch")
 SubClassOf(obo:UO_0010011 obo:UO_0000045)
@@ -20030,6 +20115,7 @@ SubClassOf(obo:UO_0010011 obo:UO_1010011)
 
 # Class: obo:UO_0010013 (foot)
 
+AnnotationAssertion(obo:IAO_0000115 obo:UO_0010013 "A length unit which is equal to 0.3048 metres, or 12 inches.")
 AnnotationAssertion(obo:IAO_0000412 obo:UO_0010013 obo:uo.owl)
 AnnotationAssertion(rdfs:label obo:UO_0010013 "foot")
 SubClassOf(obo:UO_0010013 obo:UO_0000045)
@@ -20037,96 +20123,112 @@ SubClassOf(obo:UO_0010013 obo:UO_1010013)
 
 # Class: obo:UO_0010026 (fluid ounce)
 
+AnnotationAssertion(obo:IAO_0000115 obo:UO_0010026 "An imperial volume unit which is equivalent to 28.413,0625 millilitres.")
 AnnotationAssertion(obo:IAO_0000412 obo:UO_0010026 obo:uo.owl)
 AnnotationAssertion(rdfs:label obo:UO_0010026 "fluid ounce")
 SubClassOf(obo:UO_0010026 obo:UO_1010026)
 
 # Class: obo:UO_0010027 (gill)
 
+AnnotationAssertion(obo:IAO_0000115 obo:UO_0010027 "An imperial volume unit which is equivalent to 142.065,3125 millilitres.")
 AnnotationAssertion(obo:IAO_0000412 obo:UO_0010027 obo:uo.owl)
 AnnotationAssertion(rdfs:label obo:UO_0010027 "gill")
 SubClassOf(obo:UO_0010027 obo:UO_1010027)
 
 # Class: obo:UO_0010028 (pint)
 
+AnnotationAssertion(obo:IAO_0000115 obo:UO_0010028 "An imperial volume unit which is equivalent to 568.261,25 millilitres.")
 AnnotationAssertion(obo:IAO_0000412 obo:UO_0010028 obo:uo.owl)
 AnnotationAssertion(rdfs:label obo:UO_0010028 "pint")
 SubClassOf(obo:UO_0010028 obo:UO_1010028)
 
 # Class: obo:UO_0010029 (quart)
 
+AnnotationAssertion(obo:IAO_0000115 obo:UO_0010029 "An imperial volume unit which is equivalent to 1,136.5225 millilitres, or two pints.")
 AnnotationAssertion(obo:IAO_0000412 obo:UO_0010029 obo:uo.owl)
 AnnotationAssertion(rdfs:label obo:UO_0010029 "quart")
 SubClassOf(obo:UO_0010029 obo:UO_1010029)
 
 # Class: obo:UO_0010030 (gallon)
 
+AnnotationAssertion(obo:IAO_0000115 obo:UO_0010030 "An imperial volume unit which is equivalent to 4,546.09 millilitres, or 8 pints.")
 AnnotationAssertion(obo:IAO_0000412 obo:UO_0010030 obo:uo.owl)
 AnnotationAssertion(rdfs:label obo:UO_0010030 "gallon")
 SubClassOf(obo:UO_0010030 obo:UO_1010030)
 
 # Class: obo:UO_0010033 (ounce)
 
+AnnotationAssertion(obo:IAO_0000115 obo:UO_0010033 "An imperial mass unit which is equivalent to 28.349,523,125 grams, or 1/16 of 1 pound.")
 AnnotationAssertion(obo:IAO_0000412 obo:UO_0010033 obo:uo.owl)
 AnnotationAssertion(rdfs:label obo:UO_0010033 "ounce")
 SubClassOf(obo:UO_0010033 obo:UO_1010033)
 
 # Class: obo:UO_0010034 (pound)
 
+AnnotationAssertion(obo:IAO_0000115 obo:UO_0010034 "An imperial mass unit which is equivalent to 453.592,37 grams.")
 AnnotationAssertion(obo:IAO_0000412 obo:UO_0010034 obo:uo.owl)
 AnnotationAssertion(rdfs:label obo:UO_0010034 "pound")
 SubClassOf(obo:UO_0010034 obo:UO_1010034)
 
 # Class: obo:UO_0010040 (teaspoon)
 
+AnnotationAssertion(obo:IAO_0000115 obo:UO_0010040 "A metric teaspoon is a unit of measurement of volume widely used in cooking recipes and pharmaceutic prescriptions. It equals a 5mL volume.")
 AnnotationAssertion(obo:IAO_0000412 obo:UO_0010040 obo:uo.owl)
 AnnotationAssertion(rdfs:label obo:UO_0010040 "teaspoon")
 SubClassOf(obo:UO_0010040 obo:UO_1010040)
 
 # Class: obo:UO_0010041 (united states customary teaspoon)
 
+AnnotationAssertion(obo:IAO_0000115 obo:UO_0010041 "A United States customary units teaspoon is a unit of measurement of volume widely used in cooking recipes and pharmaceutic prescriptions in America. It equals a 4.93 mL volume.")
 AnnotationAssertion(obo:IAO_0000412 obo:UO_0010041 obo:uo.owl)
 AnnotationAssertion(rdfs:label obo:UO_0010041 "united states customary teaspoon")
 SubClassOf(obo:UO_0010041 obo:UO_0000095)
 
 # Class: obo:UO_0010042 (tablespoon)
 
+AnnotationAssertion(obo:IAO_0000115 obo:UO_0010042 "A metric tablespoon is a unit of measurement of volume widely used in cooking recipes and pharmaceutic prescriptions. It equals a 15mL volume.")
 AnnotationAssertion(obo:IAO_0000412 obo:UO_0010042 obo:uo.owl)
 AnnotationAssertion(rdfs:label obo:UO_0010042 "tablespoon")
 SubClassOf(obo:UO_0010042 obo:UO_0000095)
 
 # Class: obo:UO_0010043 (australian metric tablespoon)
 
+AnnotationAssertion(obo:IAO_0000115 obo:UO_0010043 "An Australian metric tablespoon is a unit of measurement of volume used in Australia for cooking recipes and pharmaceutic prescriptions. It equals a 20mL volume.")
 AnnotationAssertion(obo:IAO_0000412 obo:UO_0010043 obo:uo.owl)
 AnnotationAssertion(rdfs:label obo:UO_0010043 "australian metric tablespoon")
 SubClassOf(obo:UO_0010043 obo:UO_0000095)
 
 # Class: obo:UO_0010044 (united states customary tablespoon)
 
+AnnotationAssertion(obo:IAO_0000115 obo:UO_0010044 "A United States customary units tablespoon is a unit of measurement of volume widely used in cooking recipes and pharmaceutic prescriptions in America. It equals a 14.79 mL volume.")
 AnnotationAssertion(obo:IAO_0000412 obo:UO_0010044 obo:uo.owl)
 AnnotationAssertion(rdfs:label obo:UO_0010044 "united states customary tablespoon")
 SubClassOf(obo:UO_0010044 obo:UO_0000095)
 
 # Class: obo:UO_0010045 (metric cup)
 
+AnnotationAssertion(obo:IAO_0000115 obo:UO_0010045 "A metric cup is a unit of measurement of volume widely used in cooking recipes and pharmaceutic prescriptions. It equals a 250mL volume.")
 AnnotationAssertion(obo:IAO_0000412 obo:UO_0010045 obo:uo.owl)
 AnnotationAssertion(rdfs:label obo:UO_0010045 "metric cup")
 SubClassOf(obo:UO_0010045 obo:UO_0000095)
 
 # Class: obo:UO_0010046 (united states customary cup)
 
+AnnotationAssertion(obo:IAO_0000115 obo:UO_0010046 "A United States customary units cup is a unit of measurement of volume widely used in cooking recipes and pharmaceutic prescriptions in America. It equals a 236.59 mL volume.")
 AnnotationAssertion(obo:IAO_0000412 obo:UO_0010046 obo:uo.owl)
 AnnotationAssertion(rdfs:label obo:UO_0010046 "united states customary cup")
 SubClassOf(obo:UO_0010046 obo:UO_0000095)
 
 # Class: obo:UO_0010047 (united states fda cup)
 
+AnnotationAssertion(obo:IAO_0000115 obo:UO_0010047 "A United States FDA cup is a unit of measurement of volume used by the US Federal Department of Agriculture as a nutritional serving measure. It equals a 240 mL volume.")
 AnnotationAssertion(obo:IAO_0000412 obo:UO_0010047 obo:uo.owl)
 AnnotationAssertion(rdfs:label obo:UO_0010047 "united states fda cup")
 SubClassOf(obo:UO_0010047 obo:UO_0000095)
 
 # Class: obo:UO_0010051 (large calorie)
 
+AnnotationAssertion(obo:IAO_0000115 obo:UO_0010051 "A unit of energy widely used in nutrition, equivalent to the amount of heat needed to cause one kilogram of water to rise in temperature by one degree Celsius.")
 AnnotationAssertion(obo:IAO_0000412 obo:UO_0010051 obo:uo.owl)
 AnnotationAssertion(rdfs:label obo:UO_0010051 "large calorie")
 SubClassOf(obo:UO_0010051 obo:UO_1010051)
@@ -20335,6 +20437,7 @@ SubClassOf(obo:UO_1010051 obo:UO_0000111)
 
 # Class: owl:Thing (owl:Thing)
 
+AnnotationAssertion(obo:IAO_0000412 owl:Thing obo:agro.owl)
 AnnotationAssertion(obo:IAO_0000412 owl:Thing obo:obi.owl)
 
 
@@ -20404,16 +20507,16 @@ AnnotationAssertion(rdfs:label obo:IAO_0000428 "requires discussion"@en)
 ClassAssertion(obo:IAO_0000078 obo:IAO_0000428)
 
 
-AnnotationAssertion(obo:IAO_0000412 _:genid2147483649 obo:po.owl)
-AnnotationAssertion(obo:IAO_0000412 _:genid2147483650 obo:po.owl)
-AnnotationAssertion(obo:IAO_0000412 _:genid2147483651 obo:obi.owl)
-AnnotationAssertion(obo:IAO_0000412 _:genid2147483652 obo:obi.owl)
-AnnotationAssertion(obo:IAO_0000412 _:genid2147483653 obo:po.owl)
-AnnotationAssertion(obo:IAO_0000412 _:genid2147483654 obo:po.owl)
-AnnotationAssertion(obo:IAO_0000412 _:genid2147483655 obo:po.owl)
-AnnotationAssertion(obo:IAO_0000412 _:genid2147483656 obo:obi.owl)
-AnnotationAssertion(obo:IAO_0000412 _:genid2147483657 obo:obi.owl)
-AnnotationAssertion(obo:IAO_0000412 _:genid2147483658 obo:obi.owl)
-AnnotationAssertion(obo:IAO_0000412 _:genid2147483659 obo:obi.owl)
-AnnotationAssertion(obo:IAO_0000412 _:genid2147483660 obo:obi.owl)
+AnnotationAssertion(obo:IAO_0000412 _:genid2147483788 obo:po.owl)
+AnnotationAssertion(obo:IAO_0000412 _:genid2147483789 obo:po.owl)
+AnnotationAssertion(obo:IAO_0000412 _:genid2147483790 obo:obi.owl)
+AnnotationAssertion(obo:IAO_0000412 _:genid2147483791 obo:obi.owl)
+AnnotationAssertion(obo:IAO_0000412 _:genid2147483792 obo:po.owl)
+AnnotationAssertion(obo:IAO_0000412 _:genid2147483793 obo:po.owl)
+AnnotationAssertion(obo:IAO_0000412 _:genid2147483794 obo:po.owl)
+AnnotationAssertion(obo:IAO_0000412 _:genid2147483795 obo:obi.owl)
+AnnotationAssertion(obo:IAO_0000412 _:genid2147483796 obo:obi.owl)
+AnnotationAssertion(obo:IAO_0000412 _:genid2147483797 obo:obi.owl)
+AnnotationAssertion(obo:IAO_0000412 _:genid2147483798 obo:obi.owl)
+AnnotationAssertion(obo:IAO_0000412 _:genid2147483799 obo:obi.owl)
 )
