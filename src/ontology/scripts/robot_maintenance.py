@@ -28,6 +28,38 @@ QUERIES = { # Sparql 1.1 (which Protege snap sparql doesn't quite support )
 			FILTER (LCASE(STR(?label)) = LCASE(STR(?string)) ).
 		}"""},
 
+	'whole_organism_under_product': {
+		'active': False,
+		'type': 'DELETE',
+		'target': '../foodon-edit.ofn',
+		'query': """
+			SELECT DISTINCT ?whole_label ?parent_label
+			WHERE {
+				?whole rdfs:label ?whole_label .
+				?whole rdfs:subClassOf ?parent .
+				BIND (CONCAT(STR(?whole_label), " food product") as ?fp_label) .
+				BIND (CONCAT(STR(?whole_label), " material") as ?material_label) .
+
+				?parent rdfs:label ?parent_label .
+				FILTER(?parent_label = ?fp_label) .
+				FILTER(?)
+				?material rdfs:type owl:Class .
+				?material rdfs:label ?material_label .
+
+				FILTER(STR(?material_label) = CONCAT(STR(?whole_label), " material") )
+				FILTER(STR(?parent_label) = CONCAT(STR(?whole_label), " food product") )
+			  	FILTER(STR(?parent_label) = CONCAT(STR(?whole_label), " food product") )
+
+			  	# FILTER (?parent_label = ?test)
+			}
+			ORDER BY ?whole_label
+			LIMIT 10
+		"""},
+
+		# Add characteristics: 
+		# "raw" for any product that has raw in its name.
+		# "dried" for any product that has dried in its name.
+
 }
 
 
@@ -137,7 +169,7 @@ if __name__ == "__main__":
 	updates = {};
 	for query_name, query_obj in QUERIES.items():
 
-		if not query_obj['active']:
+		if not query_obj['active'] or query_obj['active'] == False:
 			continue
 
 		target_ontology_file = query_obj['target'];
