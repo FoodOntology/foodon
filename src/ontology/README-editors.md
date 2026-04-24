@@ -17,7 +17,7 @@ documentation:
 to your Makefile and running:
 
 ```
-sh run.sh make update_repo
+sh run.sh update_repo
 ```
 (Unix)
 

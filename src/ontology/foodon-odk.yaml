@@ -9,15 +9,22 @@ license: https://creativecommons.org/licenses/by/4.0/
 repo: foodon
 git_main_branch: master
 github_org: FoodOntology
-primary_release: full
 edit_format: ofn
-export_formats:
-  - owl
 ci:
   - github_actions
 documentation:
   documentation_system: mkdocs
+export_formats:
+  - owl
 reasoner: ELK
+release_artefacts:
+  - base
+  - full
+##   - simple ##
+primary_release: full
+edit_format: ofn
+use_templates: TRUE
+
 #report_fail_on: ERROR
 #report_fail_on: None
 robot_report:
@@ -25,10 +32,6 @@ robot_report:
 #  custom_profile: TRUE
   report_on:
     - foodon-base.owl
-release_artefacts:
-  - base
-  - full
-##   - simple ##
 
 ## FoodOn specific Settings ##
 import_group:
@@ -36,12 +39,15 @@ import_group:
         - rdfs:label
         - dc:description
         - dc:source
+        - OBI:0001886
+        - oboInOwl:hasAlternativeId
+        - owl:deprecated
         - IAO:0000115
         - IAO:0000114
         - IAO:0000119
-        - OBI:0001886
         - IAO:0000111
-        - oboInOwl:hasAlternativeId
+        - IAO:0100001 # replaced by
+        
   products:
 
     - id: chebi
