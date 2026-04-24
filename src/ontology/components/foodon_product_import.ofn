@@ -2005,6 +2005,7 @@ Declaration(Class(obo:FOODON_00003540))
 Declaration(Class(obo:FOODON_00003541))
 Declaration(Class(obo:FOODON_00003542))
 Declaration(Class(obo:FOODON_00003544))
+Declaration(Class(obo:FOODON_00003545))
 Declaration(Class(obo:FOODON_00003546))
 Declaration(Class(obo:FOODON_00003547))
 Declaration(Class(obo:FOODON_00003548))
@@ -2213,6 +2214,7 @@ Declaration(Class(obo:FOODON_00003851))
 Declaration(Class(obo:FOODON_00003852))
 Declaration(Class(obo:FOODON_00003853))
 Declaration(Class(obo:FOODON_00003855))
+Declaration(Class(obo:FOODON_00003864))
 Declaration(Class(obo:FOODON_00003874))
 Declaration(Class(obo:FOODON_00003877))
 Declaration(Class(obo:FOODON_00003880))
@@ -2422,6 +2424,7 @@ Declaration(Class(obo:FOODON_00004559))
 Declaration(Class(obo:FOODON_00004560))
 Declaration(Class(obo:FOODON_00004723))
 Declaration(Class(obo:FOODON_00004886))
+Declaration(Class(obo:FOODON_00005092))
 Declaration(Class(obo:FOODON_00005342))
 Declaration(Class(obo:FOODON_00005442))
 Declaration(Class(obo:FOODON_00005501))
@@ -2430,8 +2433,16 @@ Declaration(Class(obo:FOODON_00005507))
 Declaration(Class(obo:FOODON_00005522))
 Declaration(Class(obo:FOODON_00005674))
 Declaration(Class(obo:FOODON_00005702))
+Declaration(Class(obo:FOODON_00005710))
 Declaration(Class(obo:FOODON_00005716))
 Declaration(Class(obo:FOODON_00005717))
+Declaration(Class(obo:FOODON_00005718))
+Declaration(Class(obo:FOODON_00005732))
+Declaration(Class(obo:FOODON_00005733))
+Declaration(Class(obo:FOODON_00005734))
+Declaration(Class(obo:FOODON_00005736))
+Declaration(Class(obo:FOODON_00005737))
+Declaration(Class(obo:FOODON_00005738))
 Declaration(Class(obo:FOODON_0002000))
 Declaration(Class(obo:FOODON_02000403))
 Declaration(Class(obo:FOODON_02000405))
@@ -2442,6 +2453,7 @@ Declaration(Class(obo:FOODON_02010020))
 Declaration(Class(obo:FOODON_02010026))
 Declaration(Class(obo:FOODON_02010033))
 Declaration(Class(obo:FOODON_02010036))
+Declaration(Class(obo:FOODON_02010045))
 Declaration(Class(obo:FOODON_02010107))
 Declaration(Class(obo:FOODON_02010113))
 Declaration(Class(obo:FOODON_02010223))
@@ -12098,6 +12110,7 @@ Declaration(Class(obo:FOODON_03411509))
 Declaration(Class(obo:FOODON_03411513))
 Declaration(Class(obo:FOODON_03411515))
 Declaration(Class(obo:FOODON_03411523))
+Declaration(Class(obo:FOODON_03411524))
 Declaration(Class(obo:FOODON_03411528))
 Declaration(Class(obo:FOODON_03411529))
 Declaration(Class(obo:FOODON_03411530))
@@ -12753,6 +12766,7 @@ Declaration(Class(obo:NCBITaxon_48168))
 Declaration(Class(obo:NCBITaxon_48169))
 Declaration(Class(obo:NCBITaxon_48193))
 Declaration(Class(obo:NCBITaxon_499858))
+Declaration(Class(obo:NCBITaxon_49986))
 Declaration(Class(obo:NCBITaxon_50458))
 Declaration(Class(obo:NCBITaxon_51089))
 Declaration(Class(obo:NCBITaxon_51240))
@@ -14993,6 +15007,7 @@ SubClassOf(obo:FOODON_00001290 ObjectSomeValuesFrom(obo:RO_0002350 obo:FOODON_03
 AnnotationAssertion(rdfs:label obo:FOODON_00001291 "clam food product"@en)
 EquivalentClasses(obo:FOODON_00001291 ObjectIntersectionOf(obo:FOODON_00002044 ObjectSomeValuesFrom(obo:RO_0001000 obo:FOODON_03411331)))
 SubClassOf(obo:FOODON_00001291 obo:FOODON_00002044)
+SubClassOf(obo:FOODON_00001291 obo:FOODON_00005710)
 
 # Class: obo:FOODON_00001292 (oyster food product)
 
@@ -15746,10 +15761,11 @@ AnnotationAssertion(rdfs:label obo:FOODON_00001633 "barley vegetable food produc
 EquivalentClasses(obo:FOODON_00001633 ObjectIntersectionOf(obo:FOODON_00001261 ObjectSomeValuesFrom(obo:RO_0001000 obo:FOODON_03411230)))
 SubClassOf(obo:FOODON_00001633 obo:FOODON_00001261)
 
-# Class: obo:FOODON_00001634 (bass food product)
+# Class: obo:FOODON_00001634 (sea bass food product)
 
-AnnotationAssertion(rdfs:label obo:FOODON_00001634 "bass food product"@en)
+AnnotationAssertion(rdfs:label obo:FOODON_00001634 "sea bass food product"@en)
 SubClassOf(obo:FOODON_00001634 obo:FOODON_00001248)
+SubClassOf(obo:FOODON_00001634 ObjectSomeValuesFrom(obo:RO_0001000 obo:FOODON_03411524))
 
 # Class: obo:FOODON_00001635 (bean food product)
 
@@ -18285,6 +18301,8 @@ SubClassOf(obo:FOODON_00002068 obo:FOODON_00002335)
 
 # Class: obo:FOODON_00002069 (onion food product)
 
+AnnotationAssertion(obo:IAO_0000114 obo:FOODON_00002069 obo:IAO_0000122)
+AnnotationAssertion(obo:IAO_0000115 obo:FOODON_00002069 "A food product made with onion as a defining ingredient."@en)
 AnnotationAssertion(rdfs:label obo:FOODON_00002069 "onion food product"@en)
 EquivalentClasses(obo:FOODON_00002069 ObjectIntersectionOf(obo:FOODON_00002150 ObjectSomeValuesFrom(obo:RO_0001000 obo:FOODON_03411300)))
 SubClassOf(obo:FOODON_00002069 obo:FOODON_00002150)
@@ -18534,7 +18552,6 @@ SubClassOf(obo:FOODON_00002110 obo:FOODON_00002333)
 AnnotationAssertion(obo:IAO_0000115 obo:FOODON_00002111 "A food product deriving from one or more sweet or hot peppers."@en)
 AnnotationAssertion(rdfs:label obo:FOODON_00002111 "pepper vegetable food product"@en)
 SubClassOf(obo:FOODON_00002111 obo:FOODON_00002141)
-SubClassOf(obo:FOODON_00002111 ObjectSomeValuesFrom(obo:RO_0001000 obo:FOODON_00003520))
 
 # Class: obo:FOODON_00002112 (peppermint food product)
 
@@ -19270,7 +19287,7 @@ AnnotationAssertion(obo:IAO_0000115 obo:FOODON_00002238 "Products that uses frui
 AnnotationAssertion(dcterms:contributor obo:FOODON_00002238 "https://orcid.org/0000-0002-1816-4260"^^xsd:anyURI)
 AnnotationAssertion(dcterms:contributor obo:FOODON_00002238 "https://orcid.org/0000-0002-4366-3088"^^xsd:anyURI)
 AnnotationAssertion(rdfs:label obo:FOODON_00002238 "cocos fruit product"@en)
-SubClassOf(obo:FOODON_00002238 obo:FOODON_03309861)
+SubClassOf(obo:FOODON_00002238 obo:FOODON_03316908)
 
 # Class: obo:FOODON_00002239 (shrimp food product)
 
@@ -19297,12 +19314,13 @@ SubClassOf(obo:FOODON_00002242 obo:FOODON_00001248)
 # Class: obo:FOODON_00002243 (nata de coco)
 
 AnnotationAssertion(obo:IAO_0000114 obo:FOODON_00002243 obo:IAO_0000122)
-AnnotationAssertion(Annotation(obo:IAO_0000119 "https://en.wikipedia.org/wiki/Nata_de_coco"^^xsd:anyURI) obo:IAO_0000115 obo:FOODON_00002243 "Nata de coco is a chewy, translucent, jelly-like food produced by the fermentation of coconut water."@en)
+AnnotationAssertion(obo:IAO_0000115 obo:FOODON_00002243 "Nata de coco is a chewy, translucent, jelly-like food produced by the fermentation of coconut water."@en)
+AnnotationAssertion(obo:IAO_0000119 obo:FOODON_00002243 wikipedia:Nata_de_coco)
 AnnotationAssertion(dcterms:contributor obo:FOODON_00002243 "https://orcid.org/0000-0002-1816-4260"^^xsd:anyURI)
 AnnotationAssertion(dcterms:contributor obo:FOODON_00002243 "https://orcid.org/0000-0002-4366-3088"^^xsd:anyURI)
 AnnotationAssertion(oboInOwl:hasDbXref obo:FOODON_00002243 siren:F11568)
 AnnotationAssertion(rdfs:label obo:FOODON_00002243 "nata de coco"@en)
-SubClassOf(obo:FOODON_00002243 obo:FOODON_03309861)
+SubClassOf(obo:FOODON_00002243 obo:FOODON_03316908)
 
 # Class: obo:FOODON_00002244 (snail food product)
 
@@ -23939,7 +23957,7 @@ AnnotationAssertion(oboInOwl:hasExactSynonym obo:FOODON_00002994 "ancho pepper"@
 AnnotationAssertion(oboInOwl:hasExactSynonym obo:FOODON_00002994 "chile ancho"@en)
 AnnotationAssertion(oboInOwl:hasExactSynonym obo:FOODON_00002994 "poblano"@en)
 AnnotationAssertion(rdfs:label obo:FOODON_00002994 "ancho pepper"@en)
-SubClassOf(obo:FOODON_00002994 obo:FOODON_00001956)
+SubClassOf(obo:FOODON_00002994 obo:FOODON_00003545)
 
 # Class: obo:FOODON_00002995 (ancho powder)
 
@@ -26780,7 +26798,7 @@ AnnotationAssertion(obo:IAO_0000115 obo:FOODON_00003356 "A pet food that has not
 AnnotationAssertion(dcterms:contributor obo:FOODON_00003356 <https://orcid.org/0000-0002-8844-9165>)
 AnnotationAssertion(dcterms:date obo:FOODON_00003356 "2020-06-09T21:38:19Z"^^xsd:dateTime)
 AnnotationAssertion(rdfs:label obo:FOODON_00003356 "pet food (raw)"@en)
-EquivalentClasses(obo:FOODON_00003356 ObjectIntersectionOf(obo:FOODON_00002682 obo:FOODON_03311126))
+EquivalentClasses(obo:FOODON_00003356 ObjectIntersectionOf(obo:FOODON_00002682 ObjectSomeValuesFrom(obo:RO_0000086 obo:FOODON_00004348)))
 SubClassOf(obo:FOODON_00003356 obo:FOODON_00002682)
 
 # Class: obo:FOODON_00003357 (pet treat)
@@ -27071,7 +27089,7 @@ SubClassOf(obo:FOODON_00003448 obo:FOODON_00002368)
 
 # Class: obo:FOODON_00003449 (coconut)
 
-SubClassOf(obo:FOODON_00003449 obo:FOODON_03309861)
+SubClassOf(obo:FOODON_00003449 obo:FOODON_00005733)
 
 # Class: obo:FOODON_00003458 (asparagus spear)
 
@@ -27327,6 +27345,7 @@ SubClassOf(obo:FOODON_00003573 obo:FOODON_00001617)
 
 # Class: obo:FOODON_00003574 (waterfly egg)
 
+AnnotationAssertion(obo:IAO_0000115 obo:FOODON_00003574 "An egg of a water fly species belonging to the Notonectidae or Corixidae family."@en)
 AnnotationAssertion(dcterms:contributor obo:FOODON_00003574 <https://orcid.org/0000-0002-8844-9165>)
 AnnotationAssertion(dcterms:date obo:FOODON_00003574 "2020-11-19T03:05:42Z"^^xsd:dateTime)
 AnnotationAssertion(rdfs:label obo:FOODON_00003574 "waterfly egg"@en)
@@ -27511,6 +27530,17 @@ AnnotationAssertion(dcterms:date obo:FOODON_00003855 "2021-05-19T13:26:12"^^xsd:
 AnnotationAssertion(oboInOwl:hasExactSynonym obo:FOODON_00003855 "tahina"@en)
 AnnotationAssertion(rdfs:label obo:FOODON_00003855 "tahini"@en)
 SubClassOf(obo:FOODON_00003855 obo:FOODON_00001133)
+
+# Class: obo:FOODON_00003864 (coconut flakes)
+
+AnnotationAssertion(obo:IAO_0000114 obo:FOODON_00003864 obo:IAO_0000122)
+AnnotationAssertion(obo:IAO_0000115 obo:FOODON_00003864 "Coconut meat which has been cut into long, wide flakes that are then dried."@en)
+AnnotationAssertion(obo:IAO_0000117 obo:FOODON_00003864 <https://orcid.org/0000-0001-5275-8866>)
+AnnotationAssertion(obo:IAO_0000119 obo:FOODON_00003864 "https://en.wikipedia.org/wiki/Coconut"^^xsd:anyURI)
+AnnotationAssertion(dcterms:date obo:FOODON_00003864 "2021-05-20T15:17:20Z"^^xsd:dateTime)
+AnnotationAssertion(oboInOwl:hasExactSynonym obo:FOODON_00003864 "flaked coconut"@en)
+AnnotationAssertion(rdfs:label obo:FOODON_00003864 "coconut flakes"@en)
+SubClassOf(obo:FOODON_00003864 obo:FOODON_03316908)
 
 # Class: obo:FOODON_00003874 (corn on-the-cob (raw))
 
@@ -29017,6 +29047,31 @@ AnnotationAssertion(dcterms:date obo:FOODON_00005717 "2025-11-11T22:20:32Z"^^xsd
 AnnotationAssertion(rdfs:label obo:FOODON_00005717 "retail food"@en)
 SubClassOf(obo:FOODON_00005717 obo:FOODON_00001002)
 
+# Class: obo:FOODON_00005718 (piece of pineapple)
+
+AnnotationAssertion(obo:IAO_0000115 obo:FOODON_00005718 "A piece of a pineapple."@en)
+AnnotationAssertion(dcterms:contributor obo:FOODON_00005718 <https://orcid.org/0000-0002-8844-9165>)
+AnnotationAssertion(dcterms:date obo:FOODON_00005718 "2026-04-10T21:35:20Z"^^xsd:dateTime)
+AnnotationAssertion(rdfs:label obo:FOODON_00005718 "piece of pineapple"@en)
+SubClassOf(obo:FOODON_00005718 obo:FOODON_00002119)
+
+# Class: obo:FOODON_00005732 (sunflower seed butter)
+
+AnnotationAssertion(obo:IAO_0000115 obo:FOODON_00005732 "Nut butter made from sunflower seeds."@en)
+AnnotationAssertion(dcterms:contributor obo:FOODON_00005732 <https://orcid.org/0000-0002-8844-9165>)
+AnnotationAssertion(dcterms:date obo:FOODON_00005732 "2026-04-12T00:52:17Z"^^xsd:dateTime)
+AnnotationAssertion(rdfs:label obo:FOODON_00005732 "sunflower seed butter"@en)
+SubClassOf(obo:FOODON_00005732 obo:FOODON_00002294)
+SubClassOf(obo:FOODON_00005732 obo:FOODON_03302438)
+
+# Class: obo:FOODON_00005734 (piece(s) of coconut meat)
+
+AnnotationAssertion(obo:IAO_0000115 obo:FOODON_00005734 "One or more pieces of coconut meat."@en)
+AnnotationAssertion(dcterms:contributor obo:FOODON_00005734 <https://orcid.org/0000-0002-8844-9165>)
+AnnotationAssertion(dcterms:date obo:FOODON_00005734 "2026-04-12T02:37:19Z"^^xsd:dateTime)
+AnnotationAssertion(rdfs:label obo:FOODON_00005734 "piece(s) of coconut meat"@en)
+SubClassOf(obo:FOODON_00005734 obo:FOODON_00005733)
+
 # Class: obo:FOODON_02020155 (chicken egg white)
 
 SubClassOf(obo:FOODON_02020155 obo:FOODON_03304840)
@@ -29217,7 +29272,7 @@ SubClassOf(obo:FOODON_03301023 obo:FOODON_00001178)
 AnnotationAssertion(obo:IAO_0000114 obo:FOODON_03301024 obo:IAO_0000428)
 AnnotationAssertion(oboInOwl:hasDbXref obo:FOODON_03301024 siren:F1024)
 AnnotationAssertion(rdfs:label obo:FOODON_03301024 "honey (raw)"@en)
-SubClassOf(obo:FOODON_03301024 obo:FOODON_00001178)
+SubClassOf(obo:FOODON_03301024 obo:UBERON_0036016)
 SubClassOf(obo:FOODON_03301024 ObjectSomeValuesFrom(obo:FOODON_00001301 obo:FOODON_03304509))
 
 # Class: obo:FOODON_03301026 (honey (flavored))
@@ -29934,7 +29989,6 @@ SubClassOf(obo:FOODON_03301154 obo:FOODON_03310606)
 
 AnnotationAssertion(obo:IAO_0000115 obo:FOODON_03301155 siren:F15117)
 AnnotationAssertion(oboInOwl:hasDbXref obo:FOODON_03301155 siren:F1155)
-SubClassOf(obo:FOODON_03301155 obo:FOODON_03310606)
 
 # Class: obo:FOODON_03301156 (fish (freshwater, raw))
 
@@ -30249,12 +30303,13 @@ AnnotationAssertion(oboInOwl:hasDbXref obo:FOODON_03301211 siren:F1211)
 AnnotationAssertion(rdfs:label obo:FOODON_03301211 "sage (dried)"@en)
 SubClassOf(obo:FOODON_03301211 obo:FOODON_00002217)
 
-# Class: obo:FOODON_03301212 (savory (ground, dried))
+# Class: obo:FOODON_03301212 (savory leaf (dried, ground))
 
 AnnotationAssertion(obo:IAO_0000114 obo:FOODON_03301212 obo:IAO_0000428)
 AnnotationAssertion(oboInOwl:hasDbXref obo:FOODON_03301212 siren:F1212)
-AnnotationAssertion(rdfs:label obo:FOODON_03301212 "savory (ground, dried)"@en)
+AnnotationAssertion(rdfs:label obo:FOODON_03301212 "savory leaf (dried, ground)"@en)
 SubClassOf(obo:FOODON_03301212 obo:FOODON_00002143)
+SubClassOf(obo:FOODON_03301212 ObjectSomeValuesFrom(obo:RO_0002162 obo:NCBITaxon_49986))
 SubClassOf(obo:FOODON_03301212 ObjectSomeValuesFrom(obo:RO_0002350 obo:FOODON_03400113))
 
 # Class: obo:FOODON_03301213 (star anise seed (dried))
@@ -30797,6 +30852,7 @@ SubClassOf(obo:FOODON_03301296 obo:FOODON_00001140)
 AnnotationAssertion(obo:IAO_0000114 obo:FOODON_03301297 obo:IAO_0000428)
 AnnotationAssertion(oboInOwl:hasDbXref obo:FOODON_03301297 siren:F1297)
 AnnotationAssertion(rdfs:label obo:FOODON_03301297 "red meat (raw)"@en)
+SubClassOf(obo:FOODON_03301297 obo:FOODON_00005738)
 SubClassOf(obo:FOODON_03301297 obo:FOODON_03306429)
 
 # Class: obo:FOODON_03301298 (jordan almond)
@@ -33050,7 +33106,7 @@ SubClassOf(obo:FOODON_03301677 obo:FOODON_03301081)
 AnnotationAssertion(obo:IAO_0000114 obo:FOODON_03301678 obo:IAO_0000428)
 AnnotationAssertion(oboInOwl:hasDbXref obo:FOODON_03301678 siren:F1678)
 AnnotationAssertion(rdfs:label obo:FOODON_03301678 "tomato juice (canned)"@en)
-SubClassOf(obo:FOODON_03301678 obo:FOODON_00002316)
+SubClassOf(obo:FOODON_03301678 obo:FOODON_03301454)
 
 # Class: obo:FOODON_03301679 (youngberry (raw))
 
@@ -33071,7 +33127,7 @@ SubClassOf(obo:FOODON_03301681 obo:FOODON_00002080)
 AnnotationAssertion(obo:IAO_0000114 obo:FOODON_03301685 obo:IAO_0000428)
 AnnotationAssertion(oboInOwl:hasDbXref obo:FOODON_03301685 siren:F1685)
 AnnotationAssertion(rdfs:label obo:FOODON_03301685 "vegetable juice (diluted)"@en)
-SubClassOf(obo:FOODON_03301685 obo:FOODON_03301444)
+SubClassOf(obo:FOODON_03301685 obo:FOODON_03315148)
 
 # Class: obo:FOODON_03301686 (spice (dried))
 
@@ -33488,7 +33544,7 @@ SubClassOf(obo:FOODON_03301758 ObjectSomeValuesFrom(obo:RO_0002350 obo:FOODON_03
 AnnotationAssertion(obo:IAO_0000114 obo:FOODON_03301759 obo:IAO_0000428)
 AnnotationAssertion(oboInOwl:hasDbXref obo:FOODON_03301759 siren:F1759)
 AnnotationAssertion(rdfs:label obo:FOODON_03301759 "tomato juice made from concentrate"@en)
-SubClassOf(obo:FOODON_03301759 obo:FOODON_00002316)
+SubClassOf(obo:FOODON_03301759 obo:FOODON_03301454)
 
 # Class: obo:FOODON_03301760 (cereal grain (unprocessed))
 
@@ -33571,7 +33627,6 @@ SubClassOf(obo:FOODON_03301772 ObjectSomeValuesFrom(obo:RO_0002350 obo:FOODON_03
 AnnotationAssertion(obo:IAO_0000114 obo:FOODON_03301774 obo:IAO_0000428)
 AnnotationAssertion(oboInOwl:hasDbXref obo:FOODON_03301774 siren:F1774)
 AnnotationAssertion(rdfs:label obo:FOODON_03301774 "asparagus bundle (raw)"@en)
-EquivalentClasses(obo:FOODON_03301774 ObjectIntersectionOf(obo:FOODON_03311126 ObjectSomeValuesFrom(obo:RO_0001000 obo:FOODON_00003458)))
 SubClassOf(obo:FOODON_03301774 obo:FOODON_00001620)
 
 # Class: obo:FOODON_03301775 (mung bean (dried))
@@ -40650,7 +40705,7 @@ SubClassOf(obo:FOODON_03303083 ObjectSomeValuesFrom(obo:FOODON_00001563 obo:FOOD
 AnnotationAssertion(obo:IAO_0000114 obo:FOODON_03303084 obo:IAO_0000428)
 AnnotationAssertion(oboInOwl:hasDbXref obo:FOODON_03303084 siren:F3084)
 AnnotationAssertion(rdfs:label obo:FOODON_03303084 "coconut milk"@en)
-SubClassOf(obo:FOODON_03303084 obo:FOODON_03309861)
+SubClassOf(obo:FOODON_03303084 obo:FOODON_03316908)
 
 # Class: obo:FOODON_03303085 (coconut (raw))
 
@@ -40665,21 +40720,21 @@ SubClassOf(obo:FOODON_03303085 obo:FOODON_00003449)
 AnnotationAssertion(obo:IAO_0000114 obo:FOODON_03303087 obo:IAO_0000428)
 AnnotationAssertion(oboInOwl:hasDbXref obo:FOODON_03303087 siren:F3087)
 AnnotationAssertion(rdfs:label obo:FOODON_03303087 "coconut (sweetened, dried)"@en)
-SubClassOf(obo:FOODON_03303087 obo:FOODON_03309861)
+SubClassOf(obo:FOODON_03303087 obo:FOODON_03316908)
 
 # Class: obo:FOODON_03303088 (coconut cream)
 
 AnnotationAssertion(obo:IAO_0000114 obo:FOODON_03303088 obo:IAO_0000428)
 AnnotationAssertion(oboInOwl:hasDbXref obo:FOODON_03303088 siren:F3088)
 AnnotationAssertion(rdfs:label obo:FOODON_03303088 "coconut cream"@en)
-SubClassOf(obo:FOODON_03303088 obo:FOODON_03309861)
+SubClassOf(obo:FOODON_03303088 obo:FOODON_03316908)
 
 # Class: obo:FOODON_03303089 (coconut milk (frozen))
 
 AnnotationAssertion(obo:IAO_0000114 obo:FOODON_03303089 obo:IAO_0000428)
 AnnotationAssertion(oboInOwl:hasDbXref obo:FOODON_03303089 siren:F3089)
 AnnotationAssertion(rdfs:label obo:FOODON_03303089 "coconut milk (frozen)"@en)
-SubClassOf(obo:FOODON_03303089 obo:FOODON_03309861)
+SubClassOf(obo:FOODON_03303089 obo:FOODON_03316908)
 
 # Class: obo:FOODON_03303092 (salt substitute)
 
@@ -40834,8 +40889,7 @@ AnnotationAssertion(obo:IAO_0000114 obo:FOODON_03303116 obo:IAO_0000428)
 AnnotationAssertion(oboInOwl:hasDbXref obo:FOODON_03303116 siren:F3116)
 AnnotationAssertion(oboInOwl:hasDbXref obo:FOODON_03303116 siren:F3954)
 AnnotationAssertion(rdfs:label obo:FOODON_03303116 "orange peel (raw)"@en)
-EquivalentClasses(obo:FOODON_03303116 ObjectIntersectionOf(obo:FOODON_00002479 obo:FOODON_03315837))
-SubClassOf(obo:FOODON_03303116 obo:FOODON_00002479)
+SubClassOf(obo:FOODON_03303116 obo:FOODON_00005736)
 
 # Class: obo:FOODON_03303117 (cherry glace)
 
@@ -42825,7 +42879,7 @@ SubClassOf(obo:FOODON_03303629 ObjectSomeValuesFrom(obo:RO_0002350 obo:FOODON_03
 AnnotationAssertion(obo:IAO_0000114 obo:FOODON_03303630 obo:IAO_0000428)
 AnnotationAssertion(oboInOwl:hasDbXref obo:FOODON_03303630 siren:F3630)
 AnnotationAssertion(rdfs:label obo:FOODON_03303630 "vegetable juice cocktail"@en)
-SubClassOf(obo:FOODON_03303630 obo:FOODON_00002316)
+SubClassOf(obo:FOODON_03303630 obo:FOODON_03301444)
 
 # Class: obo:FOODON_03303631 (fruit juice cocktail)
 
@@ -42838,6 +42892,7 @@ SubClassOf(obo:FOODON_03303631 ObjectSomeValuesFrom(obo:RO_0002350 obo:FOODON_03
 # Class: obo:FOODON_03303632 (prune juice)
 
 AnnotationAssertion(obo:IAO_0000114 obo:FOODON_03303632 obo:IAO_0000428)
+AnnotationAssertion(obo:IAO_0000115 obo:FOODON_03303632 "Prune juice in liquid form which has been filtered from reydrated dried prunes."@en)
 AnnotationAssertion(oboInOwl:hasDbXref obo:FOODON_03303632 siren:F3632)
 AnnotationAssertion(rdfs:label obo:FOODON_03303632 "prune juice"@en)
 SubClassOf(obo:FOODON_03303632 obo:FOODON_00002177)
@@ -47970,13 +48025,13 @@ SubClassOf(obo:FOODON_03304624 obo:FOODON_03316061)
 # Class: obo:FOODON_03304625 (waterfly egg (canned))
 
 AnnotationAssertion(obo:IAO_0000114 obo:FOODON_03304625 obo:IAO_0000428)
-AnnotationAssertion(obo:IAO_0000115 obo:FOODON_03304625 "A canned food product consisting of eggs of a water fly species belonging to the Notonectidae or Corixidae family."@en)
+AnnotationAssertion(obo:IAO_0000115 obo:FOODON_03304625 "A waterfly egg which has been canned."@en)
 AnnotationAssertion(obo:IAO_0000119 obo:FOODON_03304625 <https://en.wikipedia.org/wiki/Axayacatl_(insect)>)
 AnnotationAssertion(oboInOwl:hasDbXref obo:FOODON_03304625 siren:F4625)
 AnnotationAssertion(oboInOwl:hasExactSynonym obo:FOODON_03304625 "ahuautle"@en)
 AnnotationAssertion(rdfs:label obo:FOODON_03304625 "waterfly egg (canned)"@en)
 AnnotationAssertion(rdfs:seeAlso obo:FOODON_03304625 <http://www.bbc.com/travel/story/20190910-mexicos-ancient-caviar>)
-SubClassOf(obo:FOODON_03304625 obo:FOODON_00001177)
+SubClassOf(obo:FOODON_03304625 obo:FOODON_00003574)
 
 # Class: obo:FOODON_03304626 (chicken egg yolk (frozen))
 
@@ -49088,7 +49143,7 @@ SubClassOf(obo:FOODON_03304808 obo:FOODON_00001847)
 AnnotationAssertion(obo:IAO_0000114 obo:FOODON_03304809 obo:IAO_0000428)
 AnnotationAssertion(oboInOwl:hasDbXref obo:FOODON_03304809 siren:F4809)
 AnnotationAssertion(rdfs:label obo:FOODON_03304809 "prune juice (unsweetened)"@en)
-SubClassOf(obo:FOODON_03304809 obo:FOODON_00002177)
+SubClassOf(obo:FOODON_03304809 obo:FOODON_03303632)
 
 # Class: obo:FOODON_03304810 (oyster (smoked))
 
@@ -53605,14 +53660,14 @@ SubClassOf(obo:FOODON_03305626 obo:FOODON_00001178)
 AnnotationAssertion(obo:IAO_0000114 obo:FOODON_03305627 obo:IAO_0000428)
 AnnotationAssertion(oboInOwl:hasDbXref obo:FOODON_03305627 siren:F5627)
 AnnotationAssertion(rdfs:label obo:FOODON_03305627 "coconut (flaked)"@en)
-SubClassOf(obo:FOODON_03305627 obo:FOODON_03309861)
+SubClassOf(obo:FOODON_03305627 obo:FOODON_03316908)
 
-# Class: obo:FOODON_03305628 (coconut (dried))
+# Class: obo:FOODON_03305628 (piece(s) of coconut meat (dried))
 
 AnnotationAssertion(obo:IAO_0000114 obo:FOODON_03305628 obo:IAO_0000428)
 AnnotationAssertion(oboInOwl:hasDbXref obo:FOODON_03305628 siren:F5628)
-AnnotationAssertion(rdfs:label obo:FOODON_03305628 "coconut (dried)"@en)
-SubClassOf(obo:FOODON_03305628 obo:FOODON_03309861)
+AnnotationAssertion(rdfs:label obo:FOODON_03305628 "piece(s) of coconut meat (dried)"@en)
+SubClassOf(obo:FOODON_03305628 obo:FOODON_00005734)
 
 # Class: obo:FOODON_03305629 (honey glaze for candy)
 
@@ -53635,7 +53690,7 @@ SubClassOf(obo:FOODON_03305631 obo:FOODON_00001178)
 AnnotationAssertion(obo:IAO_0000114 obo:FOODON_03305632 obo:IAO_0000428)
 AnnotationAssertion(oboInOwl:hasDbXref obo:FOODON_03305632 siren:F5632)
 AnnotationAssertion(rdfs:label obo:FOODON_03305632 "water extract of coconut meat"@en)
-SubClassOf(obo:FOODON_03305632 obo:FOODON_03309861)
+SubClassOf(obo:FOODON_03305632 obo:FOODON_03316908)
 
 # Class: obo:FOODON_03305633 (infant cereal (instant, honey added))
 
@@ -53930,7 +53985,7 @@ AnnotationAssertion(rdfs:comment obo:FOODON_03305686 "SIREN DB annotation:
 * seed, skin removed, germ present FOODON:03420132
 * immersed in  'packed in vegetable oil' FOODON:03480021"@en)
 AnnotationAssertion(rdfs:label obo:FOODON_03305686 "coconut (grated, in coconut oil)"@en)
-SubClassOf(obo:FOODON_03305686 obo:FOODON_03316908)
+SubClassOf(obo:FOODON_03305686 obo:FOODON_03309798)
 
 # Class: obo:FOODON_03305691 (synthetic food)
 
@@ -54241,12 +54296,11 @@ AnnotationAssertion(oboInOwl:hasDbXref obo:FOODON_03305740 siren:F5740)
 AnnotationAssertion(rdfs:label obo:FOODON_03305740 "tomato juice concentrate"@en)
 SubClassOf(obo:FOODON_03305740 obo:FOODON_00002316)
 
-# Class: obo:FOODON_03305741 (prune juice (made from dried prunes))
+# Class: obo:FOODON_03305741 (deprecated: prune juice (made from dried prunes))
 
-AnnotationAssertion(obo:IAO_0000114 obo:FOODON_03305741 obo:IAO_0000428)
-AnnotationAssertion(oboInOwl:hasDbXref obo:FOODON_03305741 siren:F5741)
-AnnotationAssertion(rdfs:label obo:FOODON_03305741 "prune juice (made from dried prunes)"@en)
-SubClassOf(obo:FOODON_03305741 obo:FOODON_00002177)
+AnnotationAssertion(obo:IAO_0100001 obo:FOODON_03305741 obo:FOODON_03305756)
+AnnotationAssertion(rdfs:label obo:FOODON_03305741 "deprecated: prune juice (made from dried prunes)"@en)
+AnnotationAssertion(owl:deprecated obo:FOODON_03305741 "true"^^xsd:boolean)
 
 # Class: obo:FOODON_03305742 (citrus juice)
 
@@ -54349,9 +54403,10 @@ SubClassOf(obo:FOODON_03305755 obo:FOODON_00002316)
 # Class: obo:FOODON_03305756 (prune juice (fresh))
 
 AnnotationAssertion(obo:IAO_0000114 obo:FOODON_03305756 obo:IAO_0000428)
+AnnotationAssertion(oboInOwl:hasDbXref obo:FOODON_03305756 siren:F5741)
 AnnotationAssertion(oboInOwl:hasDbXref obo:FOODON_03305756 siren:F5756)
 AnnotationAssertion(rdfs:label obo:FOODON_03305756 "prune juice (fresh)"@en)
-SubClassOf(obo:FOODON_03305756 obo:FOODON_00002177)
+SubClassOf(obo:FOODON_03305756 obo:FOODON_03303632)
 
 # Class: obo:FOODON_03305757 (raspberry juice)
 
@@ -55775,7 +55830,7 @@ AnnotationAssertion(rdfs:comment obo:FOODON_03306051 "SIREN DB annotation:
 * water removal process FOODON:03460138
 * preservation by dehydration or drying FOODON:03470116"@en)
 AnnotationAssertion(rdfs:label obo:FOODON_03306051 "copra"@en)
-SubClassOf(obo:FOODON_03306051 obo:FOODON_03309861)
+SubClassOf(obo:FOODON_03306051 obo:FOODON_03316908)
 
 # Class: obo:FOODON_03306052 (spice)
 
@@ -56377,7 +56432,7 @@ SubClassOf(obo:FOODON_03306163 ObjectSomeValuesFrom(obo:RO_0002350 obo:FOODON_03
 AnnotationAssertion(obo:IAO_0000114 obo:FOODON_03306164 obo:IAO_0000428)
 AnnotationAssertion(oboInOwl:hasDbXref obo:FOODON_03306164 siren:F6164)
 AnnotationAssertion(rdfs:label obo:FOODON_03306164 "prune juice (date concentrate added)"@en)
-SubClassOf(obo:FOODON_03306164 obo:FOODON_00002177)
+SubClassOf(obo:FOODON_03306164 obo:FOODON_03303632)
 
 # Class: obo:FOODON_03306165 (apple and carrot juice)
 
@@ -56471,7 +56526,7 @@ SubClassOf(obo:FOODON_03306179 ObjectSomeValuesFrom(obo:RO_0002350 obo:FOODON_03
 AnnotationAssertion(obo:IAO_0000114 obo:FOODON_03306180 obo:IAO_0000428)
 AnnotationAssertion(oboInOwl:hasDbXref obo:FOODON_03306180 siren:F6180)
 AnnotationAssertion(rdfs:label obo:FOODON_03306180 "coconut milk (concentrated)"@en)
-SubClassOf(obo:FOODON_03306180 obo:FOODON_03309861)
+SubClassOf(obo:FOODON_03306180 obo:FOODON_03316908)
 
 # Class: obo:FOODON_03306181 (pear and apple juice (reconstituted))
 
@@ -56723,11 +56778,11 @@ AnnotationAssertion(rdfs:label obo:FOODON_03306225 "paraguay tea (dry)"@en)
 SubClassOf(obo:FOODON_03306225 obo:FOODON_00002025)
 SubClassOf(obo:FOODON_03306225 ObjectSomeValuesFrom(obo:RO_0002350 obo:FOODON_03400268))
 
-# Class: obo:FOODON_03306227 (maraschino-flavored pineapple pieces)
+# Class: obo:FOODON_03306227 (maraschino-flavored pineapple piece(s))
 
 AnnotationAssertion(obo:IAO_0000114 obo:FOODON_03306227 obo:IAO_0000428)
 AnnotationAssertion(oboInOwl:hasDbXref obo:FOODON_03306227 siren:F6227)
-AnnotationAssertion(rdfs:label obo:FOODON_03306227 "maraschino-flavored pineapple pieces"@en)
+AnnotationAssertion(rdfs:label obo:FOODON_03306227 "maraschino-flavored pineapple piece(s)"@en)
 SubClassOf(obo:FOODON_03306227 obo:FOODON_00002119)
 
 # Class: obo:FOODON_03306231 (marzipan cookie)
@@ -56930,12 +56985,12 @@ AnnotationAssertion(oboInOwl:hasDbXref obo:FOODON_03306267 siren:F6267)
 AnnotationAssertion(rdfs:label obo:FOODON_03306267 "soybean powder"@en)
 SubClassOf(obo:FOODON_03306267 obo:FOODON_00002266)
 
-# Class: obo:FOODON_03306271 (coconut piece (raw))
+# Class: obo:FOODON_03306271 (piece(s) of coconut meat (raw))
 
 AnnotationAssertion(obo:IAO_0000114 obo:FOODON_03306271 obo:IAO_0000428)
 AnnotationAssertion(oboInOwl:hasDbXref obo:FOODON_03306271 siren:F6271)
-AnnotationAssertion(rdfs:label obo:FOODON_03306271 "coconut piece (raw)"@en)
-SubClassOf(obo:FOODON_03306271 obo:FOODON_03309861)
+AnnotationAssertion(rdfs:label obo:FOODON_03306271 "piece(s) of coconut meat (raw)"@en)
+SubClassOf(obo:FOODON_03306271 obo:FOODON_00005734)
 
 # Class: obo:FOODON_03306272 (oat flakes)
 
@@ -59080,7 +59135,7 @@ SubClassOf(obo:FOODON_03306685 ObjectSomeValuesFrom(obo:RO_0002350 obo:FOODON_03
 AnnotationAssertion(obo:IAO_0000114 obo:FOODON_03306686 obo:IAO_0000428)
 AnnotationAssertion(oboInOwl:hasDbXref obo:FOODON_03306686 siren:F6686)
 AnnotationAssertion(rdfs:label obo:FOODON_03306686 "summer orange sections (canned)"@en)
-SubClassOf(obo:FOODON_03306686 obo:FOODON_00001151)
+SubClassOf(obo:FOODON_03306686 obo:FOODON_00002071)
 SubClassOf(obo:FOODON_03306686 ObjectSomeValuesFrom(obo:RO_0001000 obo:FOODON_03412315))
 SubClassOf(obo:FOODON_03306686 ObjectSomeValuesFrom(obo:RO_0002350 obo:FOODON_03400143))
 
@@ -59302,20 +59357,20 @@ AnnotationAssertion(rdfs:label obo:FOODON_03306724 "sweet pepper (peeled, canned
 SubClassOf(obo:FOODON_03306724 obo:FOODON_00002111)
 SubClassOf(obo:FOODON_03306724 ObjectSomeValuesFrom(obo:RO_0002350 obo:FOODON_03400152))
 
-# Class: obo:FOODON_03306726 (sweet green pepper (raw))
+# Class: obo:FOODON_03306726 (sweet green bell pepper (raw))
 
 AnnotationAssertion(obo:IAO_0000114 obo:FOODON_03306726 obo:IAO_0000428)
 AnnotationAssertion(oboInOwl:hasDbXref obo:FOODON_03306726 siren:F6726)
 AnnotationAssertion(oboInOwl:hasExactSynonym obo:FOODON_03306726 "green bell pepper"@en)
 AnnotationAssertion(oboInOwl:hasExactSynonym obo:FOODON_03306726 "green pepper"@en)
-AnnotationAssertion(rdfs:label obo:FOODON_03306726 "sweet green pepper (raw)"@en)
+AnnotationAssertion(rdfs:label obo:FOODON_03306726 "sweet green bell pepper (raw)"@en)
 SubClassOf(obo:FOODON_03306726 obo:FOODON_00003547)
 
-# Class: obo:FOODON_03306727 (pepper (sweet, pickled))
+# Class: obo:FOODON_03306727 (sweet pepper (pickled))
 
 AnnotationAssertion(obo:IAO_0000114 obo:FOODON_03306727 obo:IAO_0000428)
 AnnotationAssertion(oboInOwl:hasDbXref obo:FOODON_03306727 siren:F6727)
-AnnotationAssertion(rdfs:label obo:FOODON_03306727 "pepper (sweet, pickled)"@en)
+AnnotationAssertion(rdfs:label obo:FOODON_03306727 "sweet pepper (pickled)"@en)
 SubClassOf(obo:FOODON_03306727 obo:FOODON_00002110)
 
 # Class: obo:FOODON_03306728 (hot pepper (pulverized, juiced))
@@ -61219,13 +61274,6 @@ AnnotationAssertion(oboInOwl:hasDbXref obo:FOODON_03307064 siren:F7064)
 AnnotationAssertion(rdfs:label obo:FOODON_03307064 "poultry (raw)"@en)
 SubClassOf(obo:FOODON_03307064 obo:FOODON_03310611)
 
-# Class: obo:FOODON_03307065 (poultry pieces (raw))
-
-AnnotationAssertion(obo:IAO_0000114 obo:FOODON_03307065 obo:IAO_0000428)
-AnnotationAssertion(oboInOwl:hasDbXref obo:FOODON_03307065 siren:F7065)
-AnnotationAssertion(rdfs:label obo:FOODON_03307065 "poultry pieces (raw)"@en)
-SubClassOf(obo:FOODON_03307065 obo:FOODON_03310611)
-
 # Class: obo:FOODON_03307066 (cornish cross chicken (raw))
 
 AnnotationAssertion(obo:IAO_0000114 obo:FOODON_03307066 obo:IAO_0000428)
@@ -62011,7 +62059,7 @@ SubClassOf(obo:FOODON_03307189 obo:FOODON_00001227)
 AnnotationAssertion(obo:IAO_0000114 obo:FOODON_03307191 obo:IAO_0000428)
 AnnotationAssertion(oboInOwl:hasDbXref obo:FOODON_03307191 siren:F7191)
 AnnotationAssertion(rdfs:label obo:FOODON_03307191 "carrot juice (canned)"@en)
-SubClassOf(obo:FOODON_03307191 obo:FOODON_00001686)
+SubClassOf(obo:FOODON_03307191 obo:FOODON_03302213)
 
 # Class: obo:FOODON_03307193 (sugar stick)
 
@@ -63134,7 +63182,7 @@ SubClassOf(obo:FOODON_03307427 ObjectSomeValuesFrom(obo:RO_0002350 obo:FOODON_03
 AnnotationAssertion(obo:IAO_0000114 obo:FOODON_03307428 obo:IAO_0000428)
 AnnotationAssertion(oboInOwl:hasDbXref obo:FOODON_03307428 siren:F7428)
 AnnotationAssertion(rdfs:label obo:FOODON_03307428 "vegetable juice (canned)"@en)
-SubClassOf(obo:FOODON_03307428 obo:FOODON_03301444)
+SubClassOf(obo:FOODON_03307428 obo:FOODON_03315148)
 
 # Class: obo:FOODON_03307431 (fruit pie)
 
@@ -65155,12 +65203,13 @@ AnnotationAssertion(rdfs:label obo:FOODON_03307926 "apple wine vinegar"@en)
 EquivalentClasses(obo:FOODON_03307926 ObjectIntersectionOf(obo:FOODON_00001613 obo:FOODON_03301228))
 SubClassOf(obo:FOODON_03307926 obo:FOODON_00001613)
 
-# Class: obo:FOODON_03307928 (puerto rican yam (raw))
+# Class: obo:FOODON_03307928 (Puerto Rican yam (raw))
 
 AnnotationAssertion(obo:IAO_0000114 obo:FOODON_03307928 obo:IAO_0000428)
-AnnotationAssertion(obo:IAO_0000116 obo:FOODON_03307928 "Damion says: This is likely not a food product by sub-species. Suggest deprecating."@en)
+AnnotationAssertion(obo:IAO_0000116 obo:FOODON_03307928 "Damion says: This is likely not a clearly defined cultivar. See https://bsapubs.onlinelibrary.wiley.com/doi/10.3732/ajb.1300287"@en)
+AnnotationAssertion(oboInOwl:hasBroadSynonym obo:FOODON_03307928 "Puerto Rican ñame")
 AnnotationAssertion(oboInOwl:hasDbXref obo:FOODON_03307928 siren:F7928)
-AnnotationAssertion(rdfs:label obo:FOODON_03307928 "puerto rican yam (raw)"@en)
+AnnotationAssertion(rdfs:label obo:FOODON_03307928 "Puerto Rican yam (raw)"@en)
 SubClassOf(obo:FOODON_03307928 obo:FOODON_00002368)
 
 # Class: obo:FOODON_03307929 (yam (precooked, frozen))
@@ -65272,7 +65321,7 @@ SubClassOf(obo:FOODON_03307954 obo:FOODON_03301153)
 AnnotationAssertion(obo:IAO_0000114 obo:FOODON_03307955 obo:IAO_0000428)
 AnnotationAssertion(oboInOwl:hasDbXref obo:FOODON_03307955 siren:F7955)
 AnnotationAssertion(rdfs:label obo:FOODON_03307955 "clam (fried)"@en)
-SubClassOf(obo:FOODON_03307955 obo:FOODON_03310606)
+SubClassOf(obo:FOODON_03307955 obo:FOODON_00001291)
 
 # Class: obo:FOODON_03307956 (seaworm (fried))
 
@@ -68448,6 +68497,7 @@ SubClassOf(obo:FOODON_03308611 obo:FOODON_03301081)
 # Class: obo:FOODON_03308612 (crabmeat (canned, frozen))
 
 AnnotationAssertion(obo:IAO_0000114 obo:FOODON_03308612 obo:IAO_0000428)
+AnnotationAssertion(obo:IAO_0000115 obo:FOODON_03308612 "Crabmeat which has been canned, then removed from canning container and then frozen."@en)
 AnnotationAssertion(oboInOwl:hasDbXref obo:FOODON_03308612 siren:F8612)
 AnnotationAssertion(rdfs:label obo:FOODON_03308612 "crabmeat (canned, frozen)"@en)
 SubClassOf(obo:FOODON_03308612 obo:FOODON_03301081)
@@ -68690,11 +68740,11 @@ AnnotationAssertion(oboInOwl:hasDbXref obo:FOODON_03308663 siren:F8663)
 AnnotationAssertion(rdfs:label obo:FOODON_03308663 "scampi (raw)"@en)
 SubClassOf(obo:FOODON_03308663 obo:FOODON_00002059)
 
-# Class: obo:FOODON_03308665 (shrimp (japanese, deveined, canned))
+# Class: obo:FOODON_03308665 (japanese shrimp (deveined, canned))
 
 AnnotationAssertion(obo:IAO_0000114 obo:FOODON_03308665 obo:IAO_0000428)
 AnnotationAssertion(oboInOwl:hasDbXref obo:FOODON_03308665 siren:F8665)
-AnnotationAssertion(rdfs:label obo:FOODON_03308665 "shrimp (japanese, deveined, canned)"@en)
+AnnotationAssertion(rdfs:label obo:FOODON_03308665 "japanese shrimp (deveined, canned)"@en)
 SubClassOf(obo:FOODON_03308665 obo:FOODON_03301085)
 
 # Class: obo:FOODON_03308666 (shrimp (wet-pack, canned))
@@ -69050,11 +69100,12 @@ AnnotationAssertion(rdfs:label obo:FOODON_03308749 "mussel (on half shell, froze
 SubClassOf(obo:FOODON_03308749 obo:FOODON_00002051)
 SubClassOf(obo:FOODON_03308749 ObjectSomeValuesFrom(obo:RO_0001000 obo:FOODON_03411223))
 
-# Class: obo:FOODON_03308753 (select oyster (raw))
+# Class: obo:FOODON_03308753 (select grade oyster (raw))
 
 AnnotationAssertion(obo:IAO_0000114 obo:FOODON_03308753 obo:IAO_0000428)
 AnnotationAssertion(oboInOwl:hasDbXref obo:FOODON_03308753 siren:F8753)
-AnnotationAssertion(rdfs:label obo:FOODON_03308753 "select oyster (raw)"@en)
+AnnotationAssertion(oboInOwl:hasExactSynonym obo:FOODON_03308753 "A raw oyster which has a \"choice\" or \"select\" quality grade."@en)
+AnnotationAssertion(rdfs:label obo:FOODON_03308753 "select grade oyster (raw)"@en)
 SubClassOf(obo:FOODON_03308753 obo:FOODON_03301703)
 
 # Class: obo:FOODON_03308755 (oyster (standard, raw))
@@ -69242,7 +69293,7 @@ SubClassOf(obo:FOODON_03308790 obo:FOODON_00001634)
 AnnotationAssertion(obo:IAO_0000114 obo:FOODON_03308791 obo:IAO_0000428)
 AnnotationAssertion(oboInOwl:hasDbXref obo:FOODON_03308791 siren:F8791)
 AnnotationAssertion(rdfs:label obo:FOODON_03308791 "sea bass fillet (raw)"@en)
-SubClassOf(obo:FOODON_03308791 obo:FOODON_00001634)
+SubClassOf(obo:FOODON_03308791 obo:FOODON_00005737)
 
 # Class: obo:FOODON_03308792 (red grouper (raw))
 
@@ -70296,13 +70347,6 @@ AnnotationAssertion(obo:IAO_0000114 obo:FOODON_03309036 obo:IAO_0000428)
 AnnotationAssertion(oboInOwl:hasDbXref obo:FOODON_03309036 siren:F9036)
 AnnotationAssertion(rdfs:label obo:FOODON_03309036 "stockfish (soaked)"@en)
 SubClassOf(obo:FOODON_03309036 obo:FOODON_00001679)
-
-# Class: obo:FOODON_03309037 (ocean fillet (raw))
-
-AnnotationAssertion(obo:IAO_0000114 obo:FOODON_03309037 obo:IAO_0000428)
-AnnotationAssertion(oboInOwl:hasDbXref obo:FOODON_03309037 siren:F9037)
-AnnotationAssertion(rdfs:label obo:FOODON_03309037 "ocean fillet (raw)"@en)
-SubClassOf(obo:FOODON_03309037 obo:FOODON_00001634)
 
 # Class: obo:FOODON_03309043 (delta crayfish (raw))
 
@@ -72162,7 +72206,6 @@ SubClassOf(obo:FOODON_03309470 obo:FOODON_00002197)
 # Class: obo:FOODON_03309471 (piece of ostrich meat (raw))
 
 AnnotationAssertion(obo:IAO_0000114 obo:FOODON_03309471 obo:IAO_0000428)
-SubClassOf(obo:FOODON_03309471 obo:FOODON_00004339)
 SubClassOf(obo:FOODON_03309471 ObjectSomeValuesFrom(obo:RO_0001000 obo:NCBITaxon_8801))
 SubClassOf(obo:FOODON_03309471 ObjectSomeValuesFrom(obo:RO_0002350 obo:FOODON_03400273))
 
@@ -73153,11 +73196,11 @@ AnnotationAssertion(oboInOwl:hasDbXref obo:FOODON_03309636 siren:F9636)
 AnnotationAssertion(rdfs:label obo:FOODON_03309636 "mouthbrooder fish (raw)"@en)
 SubClassOf(obo:FOODON_03309636 obo:FOODON_00001737)
 
-# Class: obo:FOODON_03309638 (shrimp (pacific, canned))
+# Class: obo:FOODON_03309638 (pacific shrimp (canned))
 
 AnnotationAssertion(obo:IAO_0000114 obo:FOODON_03309638 obo:IAO_0000428)
 AnnotationAssertion(oboInOwl:hasDbXref obo:FOODON_03309638 siren:F9638)
-AnnotationAssertion(rdfs:label obo:FOODON_03309638 "shrimp (pacific, canned)"@en)
+AnnotationAssertion(rdfs:label obo:FOODON_03309638 "pacific shrimp (canned)"@en)
 SubClassOf(obo:FOODON_03309638 obo:FOODON_03301085)
 
 # Class: obo:FOODON_03309639 (king crab (frozen))
@@ -73902,8 +73945,8 @@ AnnotationAssertion(rdfs:comment obo:FOODON_03309772 "SIREN DB annotation:
 * not heat-treated FOODON:03440003
 * liver UBERON:0002107"@en)
 AnnotationAssertion(rdfs:label obo:FOODON_03309772 "liver (raw)"@en)
-EquivalentClasses(obo:FOODON_03309772 ObjectIntersectionOf(obo:FOODON_00002819 obo:FOODON_03306429 obo:UBERON_0002107 ObjectSomeValuesFrom(obo:RO_0000086 obo:FOODON_03430150)))
 SubClassOf(obo:FOODON_03309772 obo:FOODON_00002819)
+SubClassOf(obo:FOODON_03309772 obo:FOODON_02010045)
 
 # Class: obo:FOODON_03309775 (white corn grits)
 
@@ -73991,7 +74034,7 @@ AnnotationAssertion(obo:IAO_0000114 obo:FOODON_03309798 obo:IAO_0000428)
 AnnotationAssertion(oboInOwl:hasDbXref obo:FOODON_03309798 siren:F9798)
 AnnotationAssertion(rdfs:label obo:FOODON_03309798 "coconut (grated)"@en)
 SubClassOf(obo:FOODON_03309798 obo:FOODON_00004552)
-SubClassOf(obo:FOODON_03309798 obo:FOODON_03309861)
+SubClassOf(obo:FOODON_03309798 obo:FOODON_03316908)
 
 # Class: obo:FOODON_03309799 (cowpea for animal feed)
 
@@ -74023,7 +74066,7 @@ AnnotationAssertion(obo:IAO_0000114 obo:FOODON_03309818 obo:IAO_0000428)
 AnnotationAssertion(oboInOwl:hasDbXref obo:FOODON_03309818 siren:F9818)
 AnnotationAssertion(rdfs:label obo:FOODON_03309818 "coconut (dried, grated, smoked)"@en)
 SubClassOf(obo:FOODON_03309818 obo:FOODON_00004552)
-SubClassOf(obo:FOODON_03309818 obo:FOODON_03309861)
+SubClassOf(obo:FOODON_03309818 obo:FOODON_03316908)
 
 # Class: obo:FOODON_03309819 (green bean (strained))
 
@@ -74578,7 +74621,7 @@ SubClassOf(obo:FOODON_03309919 ObjectSomeValuesFrom(obo:RO_0001000 obo:FOODON_03
 AnnotationAssertion(obo:IAO_0000114 obo:FOODON_03309920 obo:IAO_0000428)
 AnnotationAssertion(oboInOwl:hasDbXref obo:FOODON_03309920 siren:F9920)
 AnnotationAssertion(rdfs:label obo:FOODON_03309920 "copra meal"@en)
-SubClassOf(obo:FOODON_03309920 obo:FOODON_03309861)
+SubClassOf(obo:FOODON_03309920 obo:FOODON_03316908)
 SubClassOf(obo:FOODON_03309920 ObjectSomeValuesFrom(obo:RO_0001000 obo:FOODON_03306051))
 
 # Class: obo:FOODON_03309921 (peanut (press cake))
@@ -74620,7 +74663,7 @@ AnnotationAssertion(rdfs:comment obo:FOODON_03309928 "SIREN DB annotation:
 * not heat-treated FOODON:03440003
 * pod or seed FOODON:03420158"@en)
 AnnotationAssertion(rdfs:label obo:FOODON_03309928 "pepper (raw)"@en)
-SubClassOf(obo:FOODON_03309928 obo:FOODON_00002111)
+SubClassOf(obo:FOODON_03309928 obo:FOODON_00003520)
 SubClassOf(obo:FOODON_03309928 ObjectSomeValuesFrom(obo:RO_0001000 obo:FOODON_03411250))
 
 # Class: obo:FOODON_03309929 (country ham)
@@ -74632,10 +74675,11 @@ SubClassOf(obo:FOODON_03309929 obo:FOODON_00002301)
 
 # Class: obo:FOODON_03309930 (polkudu)
 
-AnnotationAssertion(obo:IAO_0000114 obo:FOODON_03309930 obo:IAO_0000428)
+AnnotationAssertion(obo:IAO_0000115 obo:FOODON_03309930 "The coconut residue (pulp) left over after extracting coconut milk, often used as animal feed or fiber."@en)
 AnnotationAssertion(oboInOwl:hasDbXref obo:FOODON_03309930 siren:F9930)
 AnnotationAssertion(rdfs:label obo:FOODON_03309930 "polkudu"@en)
-SubClassOf(obo:FOODON_03309930 obo:FOODON_03309861)
+AnnotationAssertion(rdfs:seeAlso obo:FOODON_03309930 <https://www.sundaytimes.lk/210314/plus/coconut-as-food-grade-fibre-what-the-rats-tell-us-435843.html>)
+SubClassOf(obo:FOODON_03309930 obo:FOODON_03316908)
 
 # Class: obo:FOODON_03309932 (tamarind pod (raw))
 
@@ -75124,7 +75168,7 @@ SubClassOf(obo:FOODON_03310046 ObjectSomeValuesFrom(obo:RO_0002350 obo:FOODON_03
 AnnotationAssertion(obo:IAO_0000114 obo:FOODON_03310047 obo:IAO_0000428)
 AnnotationAssertion(oboInOwl:hasDbXref obo:FOODON_03310047 siren:F10047)
 AnnotationAssertion(rdfs:label obo:FOODON_03310047 "coconut meal"@en)
-SubClassOf(obo:FOODON_03310047 obo:FOODON_03309861)
+SubClassOf(obo:FOODON_03310047 obo:FOODON_03316908)
 
 # Class: obo:FOODON_03310048 (pea meal)
 
@@ -79121,12 +79165,13 @@ AnnotationAssertion(oboInOwl:hasDbXref obo:FOODON_03310856 siren:F10856)
 AnnotationAssertion(rdfs:label obo:FOODON_03310856 "mustard seed (raw)"@en)
 SubClassOf(obo:FOODON_03310856 obo:FOODON_00003420)
 
-# Class: obo:FOODON_03310860 (tender wheat (raw))
+# Class: obo:FOODON_03310860 (soft wheat kernel (raw))
 
 AnnotationAssertion(obo:IAO_0000114 obo:FOODON_03310860 obo:IAO_0000428)
 AnnotationAssertion(oboInOwl:hasDbXref obo:FOODON_03310860 siren:F10860)
-AnnotationAssertion(rdfs:label obo:FOODON_03310860 "tender wheat (raw)"@en)
-SubClassOf(obo:FOODON_03310860 obo:FOODON_00001141)
+AnnotationAssertion(oboInOwl:hasExactSynonym obo:FOODON_03310860 "tender wheat kernel (raw)"@en)
+AnnotationAssertion(rdfs:label obo:FOODON_03310860 "soft wheat kernel (raw)"@en)
+SubClassOf(obo:FOODON_03310860 obo:FOODON_00005092)
 SubClassOf(obo:FOODON_03310860 ObjectSomeValuesFrom(obo:RO_0002350 obo:FOODON_03400125))
 
 # Class: obo:FOODON_03310861 (finettes cheese)
@@ -80912,11 +80957,11 @@ AnnotationAssertion(oboInOwl:hasDbXref obo:FOODON_03311168 siren:F11168)
 AnnotationAssertion(rdfs:label obo:FOODON_03311168 "clove ground"@en)
 SubClassOf(obo:FOODON_03311168 obo:FOODON_00001745)
 
-# Class: obo:FOODON_03311170 (rosemary (ground, dried))
+# Class: obo:FOODON_03311170 (rosemary (dried, ground))
 
 AnnotationAssertion(obo:IAO_0000114 obo:FOODON_03311170 obo:IAO_0000428)
 AnnotationAssertion(oboInOwl:hasDbXref obo:FOODON_03311170 siren:F11170)
-AnnotationAssertion(rdfs:label obo:FOODON_03311170 "rosemary (ground, dried)"@en)
+AnnotationAssertion(rdfs:label obo:FOODON_03311170 "rosemary (dried, ground)"@en)
 SubClassOf(obo:FOODON_03311170 obo:FOODON_00002212)
 
 # Class: obo:FOODON_03311171 (vegetable (flakes))
@@ -83331,12 +83376,12 @@ AnnotationAssertion(rdfs:label obo:FOODON_03311577 "soup (japanese style)"@en)
 SubClassOf(obo:FOODON_03311577 obo:FOODON_00003280)
 SubClassOf(obo:FOODON_03311577 ObjectSomeValuesFrom(obo:RO_0001000 obo:FOODON_03412638))
 
-# Class: obo:FOODON_03311578 (celery (dried))
+# Class: obo:FOODON_03311578 (celery stalk (dried))
 
 AnnotationAssertion(obo:IAO_0000114 obo:FOODON_03311578 obo:IAO_0000428)
 AnnotationAssertion(oboInOwl:hasDbXref obo:FOODON_03311578 siren:F11578)
-AnnotationAssertion(rdfs:label obo:FOODON_03311578 "celery (dried)"@en)
-SubClassOf(obo:FOODON_03311578 obo:FOODON_00004123)
+AnnotationAssertion(rdfs:label obo:FOODON_03311578 "celery stalk (dried)"@en)
+SubClassOf(obo:FOODON_03311578 obo:FOODON_00003411)
 
 # Class: obo:FOODON_03311579 (yogurt mix)
 
@@ -85658,7 +85703,7 @@ AnnotationAssertion(obo:IAO_0000114 obo:FOODON_03315104 obo:IAO_0000428)
 AnnotationAssertion(oboInOwl:hasDbXref obo:FOODON_03315104 siren:F15104)
 SubClassOf(obo:FOODON_03315104 obo:FOODON_00003320)
 
-# Class: obo:FOODON_03315106 (orange)
+# Class: obo:FOODON_03315106 (orange (fruit))
 
 AnnotationAssertion(oboInOwl:hasDbXref obo:FOODON_03315106 siren:F15106)
 AnnotationAssertion(rdfs:comment obo:FOODON_03315106 "The rind is considered part of the orange."@en)
@@ -85876,11 +85921,11 @@ AnnotationAssertion(rdfs:label obo:FOODON_03315146 "glaze"@en)
 SubClassOf(obo:FOODON_03315146 obo:FOODON_00001865)
 SubClassOf(obo:FOODON_03315146 ObjectSomeValuesFrom(obo:RO_0002350 obo:FOODON_03400214))
 
-# Class: obo:FOODON_03315148 (vegetable juice (processed))
+# Class: obo:FOODON_03315148 (vegetable juice)
 
 AnnotationAssertion(obo:IAO_0000114 obo:FOODON_03315148 obo:IAO_0000428)
 AnnotationAssertion(oboInOwl:hasDbXref obo:FOODON_03315148 siren:F15148)
-AnnotationAssertion(rdfs:label obo:FOODON_03315148 "vegetable juice (processed)"@en)
+AnnotationAssertion(rdfs:label obo:FOODON_03315148 "vegetable juice"@en)
 SubClassOf(obo:FOODON_03315148 obo:FOODON_03301444)
 
 # Class: obo:FOODON_03315149 (corn syrup (high fructose))
@@ -86455,11 +86500,11 @@ AnnotationAssertion(oboInOwl:hasDbXref obo:FOODON_03315288 siren:F15288)
 AnnotationAssertion(rdfs:label obo:FOODON_03315288 "beverage, lactobacillus"@en)
 SubClassOf(obo:FOODON_03315288 obo:FOODON_03301977)
 
-# Class: obo:FOODON_03315290 (beverage vegetable)
+# Class: obo:FOODON_03315290 (vegetable beverage)
 
 AnnotationAssertion(obo:IAO_0000114 obo:FOODON_03315290 obo:IAO_0000428)
 AnnotationAssertion(oboInOwl:hasDbXref obo:FOODON_03315290 siren:F15290)
-AnnotationAssertion(rdfs:label obo:FOODON_03315290 "beverage vegetable"@en)
+AnnotationAssertion(rdfs:label obo:FOODON_03315290 "vegetable beverage"@en)
 SubClassOf(obo:FOODON_03315290 obo:FOODON_03301444)
 
 # Class: obo:FOODON_03315291 (ginseng product)
@@ -87740,8 +87785,8 @@ SubClassOf(obo:FOODON_03315511 obo:FOODON_03316006)
 AnnotationAssertion(obo:IAO_0000114 obo:FOODON_03315512 obo:IAO_0000428)
 AnnotationAssertion(oboInOwl:hasDbXref obo:FOODON_03315512 siren:F15512)
 AnnotationAssertion(rdfs:label obo:FOODON_03315512 "beverage (vegetable base, preserved, for infants and young children)"@en)
-EquivalentClasses(obo:FOODON_03315512 ObjectIntersectionOf(obo:FOODON_03301444 obo:FOODON_03306448))
-SubClassOf(obo:FOODON_03315512 obo:FOODON_03301444)
+SubClassOf(obo:FOODON_03315512 obo:FOODON_03306448)
+SubClassOf(obo:FOODON_03315512 obo:FOODON_03316050)
 
 # Class: obo:FOODON_03315513 (milk product (fermented))
 
@@ -88674,7 +88719,7 @@ SubClassOf(obo:FOODON_03315677 obo:FOODON_03315173)
 AnnotationAssertion(obo:IAO_0000114 obo:FOODON_03315678 obo:IAO_0000428)
 AnnotationAssertion(oboInOwl:hasDbXref obo:FOODON_03315678 siren:F15678)
 AnnotationAssertion(rdfs:label obo:FOODON_03315678 "meat (marinated or similar, cold-processed, packaged)"@en)
-SubClassOf(obo:FOODON_03315678 obo:FOODON_03317170)
+SubClassOf(obo:FOODON_03315678 obo:FOODON_03315649)
 
 # Class: obo:FOODON_03315679 (cream cheese with added ingredients)
 
@@ -89257,7 +89302,7 @@ SubClassOf(obo:FOODON_03315779 obo:FOODON_00002170)
 AnnotationAssertion(obo:IAO_0000114 obo:FOODON_03315780 obo:IAO_0000428)
 AnnotationAssertion(oboInOwl:hasDbXref obo:FOODON_03315780 siren:F15780)
 AnnotationAssertion(rdfs:label obo:FOODON_03315780 "coconut (shredded)"@en)
-SubClassOf(obo:FOODON_03315780 obo:FOODON_03309861)
+SubClassOf(obo:FOODON_03315780 obo:FOODON_03316908)
 
 # Class: obo:FOODON_03315781 (sauce (unstandardized))
 
@@ -90643,11 +90688,11 @@ AnnotationAssertion(oboInOwl:hasDbXref obo:FOODON_03316049 siren:F16049)
 AnnotationAssertion(rdfs:label obo:FOODON_03316049 "nut (processed)"@en)
 SubClassOf(obo:FOODON_03316049 obo:FOODON_03306632)
 
-# Class: obo:FOODON_03316050 (beverage vegetable based)
+# Class: obo:FOODON_03316050 (beverage (vegetable based))
 
 AnnotationAssertion(obo:IAO_0000114 obo:FOODON_03316050 obo:IAO_0000428)
 AnnotationAssertion(oboInOwl:hasDbXref obo:FOODON_03316050 siren:F16050)
-AnnotationAssertion(rdfs:label obo:FOODON_03316050 "beverage vegetable based"@en)
+AnnotationAssertion(rdfs:label obo:FOODON_03316050 "beverage (vegetable based)"@en)
 SubClassOf(obo:FOODON_03316050 obo:FOODON_03301444)
 
 # Class: obo:FOODON_03316055 (cereal based food containing fat)
@@ -92134,8 +92179,7 @@ SubClassOf(obo:FOODON_03316372 obo:FOODON_03302549)
 AnnotationAssertion(obo:IAO_0000114 obo:FOODON_03316373 obo:IAO_0000428)
 AnnotationAssertion(oboInOwl:hasDbXref obo:FOODON_03316373 siren:F16373)
 AnnotationAssertion(rdfs:label obo:FOODON_03316373 "quince (dried)"@en)
-EquivalentClasses(obo:FOODON_03316373 ObjectIntersectionOf(obo:FOODON_00002182 obo:FOODON_03305656))
-SubClassOf(obo:FOODON_03316373 obo:FOODON_00002182)
+SubClassOf(obo:FOODON_03316373 obo:FOODON_00003724)
 
 # Class: obo:FOODON_03316374 (star fruit (dried))
 
@@ -92152,12 +92196,12 @@ AnnotationAssertion(oboInOwl:hasDbXref obo:FOODON_03316375 siren:F16375)
 AnnotationAssertion(rdfs:label obo:FOODON_03316375 "guava (dried)"@en)
 SubClassOf(obo:FOODON_03316375 obo:FOODON_00001940)
 
-# Class: obo:FOODON_03316376 (kumquat dried)
+# Class: obo:FOODON_03316376 (kumquat (dried))
 
 AnnotationAssertion(obo:IAO_0000114 obo:FOODON_03316376 obo:IAO_0000428)
 AnnotationAssertion(oboInOwl:hasDbXref obo:FOODON_03316376 siren:F16376)
-AnnotationAssertion(rdfs:label obo:FOODON_03316376 "kumquat dried"@en)
-SubClassOf(obo:FOODON_03316376 obo:FOODON_00001990)
+AnnotationAssertion(rdfs:label obo:FOODON_03316376 "kumquat (dried)"@en)
+SubClassOf(obo:FOODON_03316376 obo:FOODON_00003686)
 
 # Class: obo:FOODON_03316377 (mango (dried))
 
@@ -92448,12 +92492,12 @@ SubClassOf(obo:FOODON_03316423 obo:FOODON_00001829)
 SubClassOf(obo:FOODON_03316423 ObjectSomeValuesFrom(obo:RO_0001000 obo:FOODON_03420180))
 SubClassOf(obo:FOODON_03316423 ObjectSomeValuesFrom(obo:RO_0002350 obo:FOODON_03400254))
 
-# Class: obo:FOODON_03316424 (cod dried)
+# Class: obo:FOODON_03316424 (cod fillet (dried))
 
 AnnotationAssertion(obo:IAO_0000114 obo:FOODON_03316424 obo:IAO_0000428)
 AnnotationAssertion(oboInOwl:hasDbXref obo:FOODON_03316424 siren:F16424)
-AnnotationAssertion(rdfs:label obo:FOODON_03316424 "cod dried"@en)
-SubClassOf(obo:FOODON_03316424 obo:FOODON_00001750)
+AnnotationAssertion(rdfs:label obo:FOODON_03316424 "cod fillet (dried)"@en)
+SubClassOf(obo:FOODON_03316424 obo:FOODON_00002709)
 
 # Class: obo:FOODON_03316425 (chicken egg (preserved))
 
@@ -93106,7 +93150,7 @@ SubClassOf(obo:FOODON_03316547 obo:FOODON_03305284)
 AnnotationAssertion(obo:IAO_0000114 obo:FOODON_03316550 obo:IAO_0000428)
 AnnotationAssertion(oboInOwl:hasDbXref obo:FOODON_03316550 siren:F16550)
 AnnotationAssertion(rdfs:label obo:FOODON_03316550 "vegetable juice (gassed)"@en)
-SubClassOf(obo:FOODON_03316550 obo:FOODON_03301444)
+SubClassOf(obo:FOODON_03316550 obo:FOODON_03315148)
 
 # Class: obo:FOODON_03316551 (confectionery product (long-life, made from pectins))
 
@@ -93327,8 +93371,9 @@ SubClassOf(obo:FOODON_03316589 obo:FOODON_03315904)
 
 AnnotationAssertion(obo:IAO_0000114 obo:FOODON_03316590 obo:IAO_0000428)
 AnnotationAssertion(oboInOwl:hasDbXref obo:FOODON_03316590 siren:F16590)
+AnnotationAssertion(rdfs:comment obo:FOODON_03316590 "D. Dooley note: not sure how this differs from \"meat (canned)\"."@en)
 AnnotationAssertion(rdfs:label obo:FOODON_03316590 "meat (tinned)"@en)
-SubClassOf(obo:FOODON_03316590 obo:FOODON_03315649)
+SubClassOf(obo:FOODON_03316590 obo:FOODON_03306545)
 
 # Class: obo:FOODON_03316592 (gelatin for making artificial guts)
 
@@ -94597,7 +94642,7 @@ SubClassOf(obo:FOODON_03316788 obo:FOODON_03311343)
 AnnotationAssertion(obo:IAO_0000114 obo:FOODON_03316789 obo:IAO_0000428)
 AnnotationAssertion(oboInOwl:hasDbXref obo:FOODON_03316789 siren:F16789)
 AnnotationAssertion(rdfs:label obo:FOODON_03316789 "prune juice (canned)"@en)
-SubClassOf(obo:FOODON_03316789 obo:FOODON_00002177)
+SubClassOf(obo:FOODON_03316789 obo:FOODON_03303632)
 
 # Class: obo:FOODON_03316790 (boysenberry (canned))
 
@@ -95317,6 +95362,7 @@ AnnotationAssertion(oboInOwl:hasDbXref obo:FOODON_03316908 siren:F16908)
 AnnotationAssertion(rdfs:label obo:FOODON_03316908 "coconut food product"@en)
 EquivalentClasses(obo:FOODON_03316908 ObjectIntersectionOf(obo:FOODON_00001172 ObjectSomeValuesFrom(obo:RO_0001000 obo:NCBITaxon_13894)))
 SubClassOf(obo:FOODON_03316908 obo:FOODON_00001172)
+SubClassOf(obo:FOODON_03316908 obo:FOODON_00005733)
 
 # Class: obo:FOODON_03316909 (waffle dough)
 
@@ -97959,11 +98005,11 @@ AnnotationAssertion(oboInOwl:hasDbXref obo:FOODON_03317381 siren:F17381)
 AnnotationAssertion(rdfs:label obo:FOODON_03317381 "cream (pasteurized, fresh)"@en)
 SubClassOf(obo:FOODON_03317381 obo:FOODON_03302330)
 
-# Class: obo:FOODON_03317382 (mammalian milk (pastuerized, fresh))
+# Class: obo:FOODON_03317382 (mammalian milk (pasteurized, fresh))
 
 AnnotationAssertion(obo:IAO_0000114 obo:FOODON_03317382 obo:IAO_0000428)
 AnnotationAssertion(oboInOwl:hasDbXref obo:FOODON_03317382 siren:F17382)
-AnnotationAssertion(rdfs:label obo:FOODON_03317382 "mammalian milk (pastuerized, fresh)"@en)
+AnnotationAssertion(rdfs:label obo:FOODON_03317382 "mammalian milk (pasteurized, fresh)"@en)
 SubClassOf(obo:FOODON_03317382 obo:FOODON_03315150)
 
 # Class: obo:FOODON_03317383 (meat (quick-frozen))
@@ -99471,7 +99517,7 @@ SubClassOf(obo:FOODON_03317669 obo:FOODON_03301000)
 AnnotationAssertion(obo:IAO_0000114 obo:FOODON_03317671 obo:IAO_0000428)
 AnnotationAssertion(oboInOwl:hasDbXref obo:FOODON_03317671 siren:F17671)
 AnnotationAssertion(rdfs:label obo:FOODON_03317671 "coconut (desiccated)"@en)
-SubClassOf(obo:FOODON_03317671 obo:FOODON_03309861)
+SubClassOf(obo:FOODON_03317671 obo:FOODON_03316908)
 
 # Class: obo:FOODON_03317673 (starch syrup (hydrolyzed))
 

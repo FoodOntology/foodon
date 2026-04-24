@@ -10638,7 +10638,7 @@ AnnotationAssertion(rdfs:comment obo:FOODON_03301211 "SIREN DB annotation:
 * water removal process FOODON:03460138
 * preservation by dehydration or drying FOODON:03470116"@en)
 
-# Class: obo:FOODON_03301212 (savory (ground, dried))
+# Class: obo:FOODON_03301212 (savory leaf (dried, ground))
 
 AnnotationAssertion(rdfs:comment obo:FOODON_03301212 "SIREN DB annotation:
 * finely ground FOODON:03430106
@@ -35589,7 +35589,7 @@ AnnotationAssertion(rdfs:comment obo:FOODON_03305627 "SIREN DB annotation:
 * divided into pieces, thickness <0.3 cm. FOODON:03430100
 * seed, skin removed, germ present FOODON:03420132"@en)
 
-# Class: obo:FOODON_03305628 (coconut (dried))
+# Class: obo:FOODON_03305628 (piece(s) of coconut meat (dried))
 
 AnnotationAssertion(rdfs:comment obo:FOODON_03305628 "SIREN DB annotation:
 * divided into pieces FOODON:03430152
@@ -36304,14 +36304,6 @@ AnnotationAssertion(rdfs:comment obo:FOODON_03305740 "SIREN DB annotation:
 * semiliquid with smooth consistency FOODON:03430135
 * fruit, peel present, core, pit or seed present FOODON:03420140
 * water removal process FOODON:03460138"@en)
-
-# Class: obo:FOODON_03305741 (prune juice (made from dried prunes))
-
-AnnotationAssertion(rdfs:comment obo:FOODON_03305741 "SIREN DB annotation:
-* liquid, low viscosity, with small particles FOODON:03430114
-* fully heat-treated FOODON:03440014
-* fruit, peel present, core, pit or seed removed FOODON:03420139
-* rehydration process FOODON:03460259"@en)
 
 # Class: obo:FOODON_03305742 (citrus juice)
 
@@ -38928,7 +38920,7 @@ AnnotationAssertion(rdfs:comment obo:FOODON_03306225 "SIREN DB annotation:
 * water removal process FOODON:03460138
 * preservation by dehydration or drying FOODON:03470116"@en)
 
-# Class: obo:FOODON_03306227 (maraschino-flavored pineapple pieces)
+# Class: obo:FOODON_03306227 (maraschino-flavored pineapple piece(s))
 
 AnnotationAssertion(rdfs:comment obo:FOODON_03306227 "SIREN DB annotation:
 * divided into pieces FOODON:03430152
@@ -39106,7 +39098,7 @@ AnnotationAssertion(rdfs:comment obo:FOODON_03306267 "SIREN DB annotation:
 * water removal process FOODON:03460138
 * preservation by dehydration or drying FOODON:03470116"@en)
 
-# Class: obo:FOODON_03306271 (coconut piece (raw))
+# Class: obo:FOODON_03306271 (piece(s) of coconut meat (raw))
 
 AnnotationAssertion(rdfs:comment obo:FOODON_03306271 "SIREN DB annotation:
 * divided into pieces FOODON:03430152
@@ -41528,7 +41520,7 @@ AnnotationAssertion(rdfs:comment obo:FOODON_03306724 "SIREN DB annotation:
 * sterilization by heating FOODON:03470123
 * packed in water FOODON:03480017"@en)
 
-# Class: obo:FOODON_03306726 (sweet green pepper (raw))
+# Class: obo:FOODON_03306726 (sweet green bell pepper (raw))
 
 AnnotationAssertion(rdfs:comment obo:FOODON_03306726 "SIREN DB annotation:
 * whole, natural shape FOODON:03430150
@@ -41536,7 +41528,7 @@ AnnotationAssertion(rdfs:comment obo:FOODON_03306726 "SIREN DB annotation:
 * unripe or immature FOODON:03530051
 * pod containing small, immature seed FOODON:03420169"@en)
 
-# Class: obo:FOODON_03306727 (pepper (sweet, pickled))
+# Class: obo:FOODON_03306727 (sweet pepper (pickled))
 
 AnnotationAssertion(rdfs:comment obo:FOODON_03306727 "SIREN DB annotation:
 * solid FOODON:03430151
@@ -43540,12 +43532,6 @@ AnnotationAssertion(rdfs:comment obo:FOODON_03307064 "SIREN DB annotation:
 * whole, natural shape FOODON:03430150
 * not heat-treated FOODON:03440003
 * skeletal meat part, with bone, with skin FOODON:03420265"@en)
-
-# Class: obo:FOODON_03307065 (poultry pieces (raw))
-
-AnnotationAssertion(rdfs:comment obo:FOODON_03307065 "SIREN DB annotation:
-* whole, natural shape FOODON:03430150
-* not heat-treated FOODON:03440003"@en)
 
 # Class: obo:FOODON_03307066 (cornish cross chicken (raw))
 
@@ -47922,7 +47908,7 @@ AnnotationAssertion(rdfs:comment obo:FOODON_03307926 "SIREN DB annotation:
 * curing or aging process FOODON:03460253
 * preservation by heat treatment FOODON:03470120"@en)
 
-# Class: obo:FOODON_03307928 (puerto rican yam (raw))
+# Class: obo:FOODON_03307928 (Puerto Rican yam (raw))
 
 AnnotationAssertion(rdfs:comment obo:FOODON_03307928 "SIREN DB annotation:
 * whole, natural shape FOODON:03430150
@@ -51482,7 +51468,7 @@ AnnotationAssertion(rdfs:comment obo:FOODON_03308646 "SIREN DB annotation:
 * boiling FOODON:03450014
 * water removal process FOODON:03460138"@en)
 
-# Class: obo:FOODON_03308647 (scallop (bay, raw))
+# Class: obo:FOODON_03308647 (bay scallop (raw))
 
 AnnotationAssertion(rdfs:comment obo:FOODON_03308647 "SIREN DB annotation:
 * whole, natural shape FOODON:03430150
@@ -51546,7 +51532,7 @@ AnnotationAssertion(rdfs:comment obo:FOODON_03308663 "SIREN DB annotation:
 * not heat-treated FOODON:03440003
 * whole animal or most parts used FOODON:03420173"@en)
 
-# Class: obo:FOODON_03308665 (shrimp (japanese, deveined, canned))
+# Class: obo:FOODON_03308665 (japanese shrimp (deveined, canned))
 
 AnnotationAssertion(rdfs:comment obo:FOODON_03308665 "SIREN DB annotation:
 * surrounded by 'can, bottle or jar' FOODON:03490194
@@ -51944,7 +51930,7 @@ AnnotationAssertion(rdfs:comment obo:FOODON_03308749 "SIREN DB annotation:
 * skeletal meat part, with bone or shell FOODON:03420243
 * preservation by freezing FOODON:03470136"@en)
 
-# Class: obo:FOODON_03308753 (select oyster (raw))
+# Class: obo:FOODON_03308753 (select grade oyster (raw))
 
 AnnotationAssertion(rdfs:comment obo:FOODON_03308753 "SIREN DB annotation:
 * whole, natural shape FOODON:03430150
@@ -53222,13 +53208,6 @@ AnnotationAssertion(rdfs:comment obo:FOODON_03309036 "SIREN DB annotation:
 * solid FOODON:03430151
 * skeletal meat part FOODON:03420175
 * food alkalization process FOODON:03460206"@en)
-
-# Class: obo:FOODON_03309037 (ocean fillet (raw))
-
-AnnotationAssertion(rdfs:comment obo:FOODON_03309037 "SIREN DB annotation:
-* whole, natural shape FOODON:03430150
-* not heat-treated FOODON:03440003
-* skeletal meat part, without bone or shell FOODON:03420125"@en)
 
 # Class: obo:FOODON_03309043 (delta crayfish (raw))
 
@@ -56211,7 +56190,7 @@ AnnotationAssertion(rdfs:comment obo:FOODON_03309636 "SIREN DB annotation:
 * not heat-treated FOODON:03440003
 * skeletal meat part FOODON:03420175"@en)
 
-# Class: obo:FOODON_03309638 (shrimp (pacific, canned))
+# Class: obo:FOODON_03309638 (pacific shrimp (canned))
 
 AnnotationAssertion(rdfs:comment obo:FOODON_03309638 "SIREN DB annotation:
 * surrounded by 'can, bottle or jar' FOODON:03490194
@@ -61807,7 +61786,7 @@ AnnotationAssertion(rdfs:comment obo:FOODON_03310856 "SIREN DB annotation:
 * not heat-treated FOODON:03440003
 * seed, skin present, germ present FOODON:03420133"@en)
 
-# Class: obo:FOODON_03310860 (tender wheat (raw))
+# Class: obo:FOODON_03310860 (soft wheat kernel (raw))
 
 AnnotationAssertion(rdfs:comment obo:FOODON_03310860 "SIREN DB annotation:
 * solid FOODON:03430151
@@ -63797,7 +63776,7 @@ AnnotationAssertion(rdfs:comment obo:FOODON_03311168 "SIREN DB annotation:
 * water removal process FOODON:03460138
 * natural heat drying FOODON:03470141"@en)
 
-# Class: obo:FOODON_03311170 (rosemary (ground, dried))
+# Class: obo:FOODON_03311170 (rosemary (dried, ground))
 
 AnnotationAssertion(rdfs:comment obo:FOODON_03311170 "SIREN DB annotation:
 * finely ground FOODON:03430106
@@ -66289,7 +66268,7 @@ AnnotationAssertion(rdfs:comment obo:FOODON_03311577 "SIREN DB annotation:
 * ingredient: water addition process FOODON:03460148
 * ingredient: flavoring, spice or herb added FOODON:03460227"@en)
 
-# Class: obo:FOODON_03311578 (celery (dried))
+# Class: obo:FOODON_03311578 (celery stalk (dried))
 
 AnnotationAssertion(rdfs:comment obo:FOODON_03311578 "SIREN DB annotation:
 * solid FOODON:03430151
@@ -68652,7 +68631,7 @@ AnnotationAssertion(rdfs:comment obo:FOODON_03315145 "SIREN DB annotation:
 * fruit, peel present FOODON:03420137
 * curing or aging process FOODON:03460253"@en)
 
-# Class: obo:FOODON_03315148 (vegetable juice (processed))
+# Class: obo:FOODON_03315148 (vegetable juice)
 
 AnnotationAssertion(rdfs:comment obo:FOODON_03315148 "SIREN DB annotation:
 * liquid FOODON:03430130
@@ -69121,7 +69100,7 @@ AnnotationAssertion(rdfs:comment obo:FOODON_03315288 "SIREN DB annotation:
 * liquid FOODON:03430130
 * microbial/enzymatic modification process FOODON:03460119"@en)
 
-# Class: obo:FOODON_03315290 (beverage vegetable)
+# Class: obo:FOODON_03315290 (vegetable beverage)
 
 AnnotationAssertion(rdfs:comment obo:FOODON_03315290 "SIREN DB annotation:
 * liquid FOODON:03430130
@@ -72665,7 +72644,7 @@ AnnotationAssertion(rdfs:comment obo:FOODON_03316047 "SIREN DB annotation:
 AnnotationAssertion(rdfs:comment obo:FOODON_03316049 "SIREN DB annotation:
 * seed, skin removed, germ present FOODON:03420132"@en)
 
-# Class: obo:FOODON_03316050 (beverage vegetable based)
+# Class: obo:FOODON_03316050 (beverage (vegetable based))
 
 AnnotationAssertion(rdfs:comment obo:FOODON_03316050 "SIREN DB annotation:
 * liquid FOODON:03430130
@@ -73975,7 +73954,7 @@ AnnotationAssertion(rdfs:comment obo:FOODON_03316375 "SIREN DB annotation:
 * water removal process FOODON:03460138
 * preservation by dehydration or drying FOODON:03470116"@en)
 
-# Class: obo:FOODON_03316376 (kumquat dried)
+# Class: obo:FOODON_03316376 (kumquat (dried))
 
 AnnotationAssertion(rdfs:comment obo:FOODON_03316376 "SIREN DB annotation:
 * solid FOODON:03430151
@@ -74246,7 +74225,7 @@ AnnotationAssertion(rdfs:comment obo:FOODON_03316422 "SIREN DB annotation:
 AnnotationAssertion(rdfs:comment obo:FOODON_03316423 "SIREN DB annotation:
 * casein FOODON:03420180"@en)
 
-# Class: obo:FOODON_03316424 (cod dried)
+# Class: obo:FOODON_03316424 (cod fillet (dried))
 
 AnnotationAssertion(rdfs:comment obo:FOODON_03316424 "SIREN DB annotation:
 * solid FOODON:03430151
@@ -79542,7 +79521,7 @@ AnnotationAssertion(rdfs:comment obo:FOODON_03317381 "SIREN DB annotation:
 * cream food product FOODON:00001216
 * pasteurization by heating FOODON:03470135"@en)
 
-# Class: obo:FOODON_03317382 (mammalian milk (pastuerized, fresh))
+# Class: obo:FOODON_03317382 (mammalian milk (pasteurized, fresh))
 
 AnnotationAssertion(rdfs:comment obo:FOODON_03317382 "SIREN DB annotation:
 * partially heat-treated FOODON:03440018

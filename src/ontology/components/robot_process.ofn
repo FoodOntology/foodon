@@ -78,6 +78,7 @@ Declaration(Class(<http://purl.obolibrary.org/obo/FOODON_00004531>))
 Declaration(Class(<http://purl.obolibrary.org/obo/FOODON_00004533>))
 Declaration(Class(<http://purl.obolibrary.org/obo/FOODON_00004534>))
 Declaration(Class(<http://purl.obolibrary.org/obo/FOODON_00004550>))
+Declaration(Class(<http://purl.obolibrary.org/obo/FOODON_00005709>))
 Declaration(Class(<http://purl.obolibrary.org/obo/FOODON_03000001>))
 Declaration(Class(<http://purl.obolibrary.org/obo/FOODON_03307052>))
 Declaration(Class(<http://purl.obolibrary.org/obo/FOODON_03307539>))
@@ -314,7 +315,9 @@ Declaration(Class(<http://purl.obolibrary.org/obo/FOODON_03470180>))
 Declaration(Class(<http://purl.obolibrary.org/obo/FOODON_03470181>))
 Declaration(Class(<http://purl.obolibrary.org/obo/FOODON_03470182>))
 Declaration(Class(<http://purl.obolibrary.org/obo/OBI_0000011>))
+Declaration(Class(<http://purl.obolibrary.org/obo/OBI_0000652>))
 Declaration(Class(<http://purl.obolibrary.org/obo/OBI_0000967>))
+Declaration(Class(<http://purl.obolibrary.org/obo/OBI_0600014>))
 Declaration(Class(<http://purl.obolibrary.org/obo/PO_0009053>))
 Declaration(Class(<http://purl.obolibrary.org/obo/PO_0020055>))
 Declaration(Class(<http://purl.obolibrary.org/obo/PO_0030112>))
@@ -693,11 +696,12 @@ AnnotationAssertion(rdfs:label <http://purl.obolibrary.org/obo/FOODON_03000001> 
 SubClassOf(<http://purl.obolibrary.org/obo/FOODON_03000001> <http://purl.obolibrary.org/obo/FOODON_03460130>)
 SubClassOf(<http://purl.obolibrary.org/obo/FOODON_03000001> ObjectSomeValuesFrom(<http://purl.obolibrary.org/obo/OBI_0000299> <http://purl.obolibrary.org/obo/FOODON_00002655>))
 
-# Class: <http://purl.obolibrary.org/obo/FOODON_03450002> (food cooking)
+# Class: <http://purl.obolibrary.org/obo/FOODON_03450002> (food cooking by heating)
 
 AnnotationAssertion(<http://www.geneontology.org/formats/oboInOwl#hasDbXref> <http://purl.obolibrary.org/obo/FOODON_03450002> "http://www.langual.org/langual_thesaurus.asp?termid=G0002")
-AnnotationAssertion(rdfs:label <http://purl.obolibrary.org/obo/FOODON_03450002> "food cooking"@en)
-SubClassOf(<http://purl.obolibrary.org/obo/FOODON_03450002> <http://purl.obolibrary.org/obo/FOODON_03460111>)
+AnnotationAssertion(rdfs:comment <http://purl.obolibrary.org/obo/FOODON_03450002> "A food may be cooked to varying degrees, for example where its inner temperature is deliberately or accidentally different from its outer temperature."@en)
+AnnotationAssertion(rdfs:label <http://purl.obolibrary.org/obo/FOODON_03450002> "food cooking by heating"@en)
+SubClassOf(<http://purl.obolibrary.org/obo/FOODON_03450002> <http://purl.obolibrary.org/obo/FOODON_00005709>)
 
 # Class: <http://purl.obolibrary.org/obo/FOODON_03450004> (cooking by dry heat)
 
@@ -1045,11 +1049,11 @@ AnnotationAssertion(<http://www.geneontology.org/formats/oboInOwl#hasDbXref> <ht
 AnnotationAssertion(rdfs:label <http://purl.obolibrary.org/obo/FOODON_03460102> "proteolytic fermentation"@en)
 SubClassOf(<http://purl.obolibrary.org/obo/FOODON_03460102> <http://purl.obolibrary.org/obo/FOODON_03460230>)
 
-# Class: <http://purl.obolibrary.org/obo/FOODON_03460103> (component substitution process)
+# Class: <http://purl.obolibrary.org/obo/FOODON_03460103> (component substitution)
 
 AnnotationAssertion(<http://www.geneontology.org/formats/oboInOwl#hasDbXref> <http://purl.obolibrary.org/obo/FOODON_03460103> "http://www.langual.org/langual_thesaurus.asp?termid=H0103")
 AnnotationAssertion(rdfs:comment <http://purl.obolibrary.org/obo/FOODON_03460103> "LanguaL curation note: Use the appropriate narrower term for a food product that was prepared from a natural food product by removing an endogeneous component and adding a component of the same class. Index the specific component added under *INGREDIENT ADDED*, regardless of its level."@en)
-AnnotationAssertion(rdfs:label <http://purl.obolibrary.org/obo/FOODON_03460103> "component substitution process"@en)
+AnnotationAssertion(rdfs:label <http://purl.obolibrary.org/obo/FOODON_03460103> "component substitution"@en)
 SubClassOf(<http://purl.obolibrary.org/obo/FOODON_03460103> <http://purl.obolibrary.org/obo/FOODON_03460111>)
 
 # Class: <http://purl.obolibrary.org/obo/FOODON_03460106> (food noncertified color addition process)
@@ -1110,12 +1114,12 @@ AnnotationAssertion(rdfs:comment <http://purl.obolibrary.org/obo/FOODON_03460119
 AnnotationAssertion(rdfs:label <http://purl.obolibrary.org/obo/FOODON_03460119> "microbial/enzymatic modification process"@en)
 SubClassOf(<http://purl.obolibrary.org/obo/FOODON_03460119> <http://purl.obolibrary.org/obo/FOODON_03460141>)
 
-# Class: <http://purl.obolibrary.org/obo/FOODON_03460121> (food irradiation process)
+# Class: <http://purl.obolibrary.org/obo/FOODON_03460121> (food irradiation)
 
-AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000115> <http://purl.obolibrary.org/obo/FOODON_03460121> "A physical/chemical modification process in which a food product or component is irradiated for any purpose."@en)
+AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000115> <http://purl.obolibrary.org/obo/FOODON_03460121> "A physical/chemical modification process in which a food material or component is irradiated for any purpose."@en)
 AnnotationAssertion(<http://www.geneontology.org/formats/oboInOwl#hasDbXref> <http://purl.obolibrary.org/obo/FOODON_03460121> "http://www.langual.org/langual_thesaurus.asp?termid=H0121")
 AnnotationAssertion(<http://www.geneontology.org/formats/oboInOwl#hasSynonym> <http://purl.obolibrary.org/obo/FOODON_03460121> "picowaved"@en)
-AnnotationAssertion(rdfs:label <http://purl.obolibrary.org/obo/FOODON_03460121> "food irradiation process"@en)
+AnnotationAssertion(rdfs:label <http://purl.obolibrary.org/obo/FOODON_03460121> "food irradiation"@en)
 SubClassOf(<http://purl.obolibrary.org/obo/FOODON_03460121> <http://purl.obolibrary.org/obo/FOODON_03460130>)
 
 # Class: <http://purl.obolibrary.org/obo/FOODON_03460123> (alcohol-acetic acid fermentation)
@@ -1259,17 +1263,19 @@ AnnotationAssertion(rdfs:comment <http://purl.obolibrary.org/obo/FOODON_03460178
 AnnotationAssertion(rdfs:label <http://purl.obolibrary.org/obo/FOODON_03460178> "food aeration process"@en)
 SubClassOf(<http://purl.obolibrary.org/obo/FOODON_03460178> <http://purl.obolibrary.org/obo/FOODON_03460130>)
 
-# Class: <http://purl.obolibrary.org/obo/FOODON_03460179> (food ionizing irradiation process)
+# Class: <http://purl.obolibrary.org/obo/FOODON_03460179> (food ionizing irradiation)
 
 AnnotationAssertion(<http://www.geneontology.org/formats/oboInOwl#hasDbXref> <http://purl.obolibrary.org/obo/FOODON_03460179> "http://www.langual.org/langual_thesaurus.asp?termid=H0179")
-AnnotationAssertion(rdfs:label <http://purl.obolibrary.org/obo/FOODON_03460179> "food ionizing irradiation process"@en)
+AnnotationAssertion(rdfs:label <http://purl.obolibrary.org/obo/FOODON_03460179> "food ionizing irradiation"@en)
 SubClassOf(<http://purl.obolibrary.org/obo/FOODON_03460179> <http://purl.obolibrary.org/obo/FOODON_03460121>)
 
 # Class: <http://purl.obolibrary.org/obo/FOODON_03460182> (candying process)
 
+AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000115> <http://purl.obolibrary.org/obo/FOODON_03460182> "A chemical modification process where water within a fruit or vegetable is slowly replaced by sugar molecules through a process of osmosis from immersion in sugar syrup."@en)
 AnnotationAssertion(<http://www.geneontology.org/formats/oboInOwl#hasDbXref> <http://purl.obolibrary.org/obo/FOODON_03460182> "http://www.langual.org/langual_thesaurus.asp?termid=H0182")
 AnnotationAssertion(rdfs:comment <http://purl.obolibrary.org/obo/FOODON_03460182> "LanguaL curation note: Used for whole fruit or pieces of fruit are permeated by sugar to result in a product with sugar solids over 70% (e.g., candied citrus peel or candied cherry). Not used for sugar-coated products or for such products as candied sweet potatoes or glazed carrots, which are merely sweetened by cooking in syrup."@en)
 AnnotationAssertion(rdfs:label <http://purl.obolibrary.org/obo/FOODON_03460182> "candying process"@en)
+AnnotationAssertion(rdfs:seeAlso <http://purl.obolibrary.org/obo/FOODON_03460182> <https://agriculture.institute/food-processing-and-engineering-i/art-of-candying-fruits-vegetables-guide/#what-exactly-is-candying>)
 SubClassOf(<http://purl.obolibrary.org/obo/FOODON_03460182> <http://purl.obolibrary.org/obo/FOODON_03460130>)
 
 # Class: <http://purl.obolibrary.org/obo/FOODON_03460190> (pickling)
@@ -1347,11 +1353,11 @@ AnnotationAssertion(rdfs:label <http://purl.obolibrary.org/obo/FOODON_03460207> 
 SubClassOf(<http://purl.obolibrary.org/obo/FOODON_03460207> <http://purl.obolibrary.org/obo/FOODON_03460130>)
 SubClassOf(<http://purl.obolibrary.org/obo/FOODON_03460207> ObjectSomeValuesFrom(<http://purl.obolibrary.org/obo/OBI_0000293> <http://purl.obolibrary.org/obo/FOODON_00001868>))
 
-# Class: <http://purl.obolibrary.org/obo/FOODON_03460208> (fat substitution process)
+# Class: <http://purl.obolibrary.org/obo/FOODON_03460208> (fat substitution)
 
 AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000115> <http://purl.obolibrary.org/obo/FOODON_03460208> "Food product prepared from a natural food product by removing endogenous fat and adding fat from a different source, e.g., egg substitute, in which egg fat is replaced by vegetable oil."@en)
 AnnotationAssertion(<http://www.geneontology.org/formats/oboInOwl#hasDbXref> <http://purl.obolibrary.org/obo/FOODON_03460208> "http://www.langual.org/langual_thesaurus.asp?termid=H0208")
-AnnotationAssertion(rdfs:label <http://purl.obolibrary.org/obo/FOODON_03460208> "fat substitution process"@en)
+AnnotationAssertion(rdfs:label <http://purl.obolibrary.org/obo/FOODON_03460208> "fat substitution"@en)
 SubClassOf(<http://purl.obolibrary.org/obo/FOODON_03460208> <http://purl.obolibrary.org/obo/FOODON_03460103>)
 
 # Class: <http://purl.obolibrary.org/obo/FOODON_03460220> (food parboiling process (grain))
@@ -1363,13 +1369,15 @@ AnnotationAssertion(rdfs:label <http://purl.obolibrary.org/obo/FOODON_03460220> 
 SubClassOf(<http://purl.obolibrary.org/obo/FOODON_03460220> <http://purl.obolibrary.org/obo/FOODON_03450012>)
 SubClassOf(<http://purl.obolibrary.org/obo/FOODON_03460220> <http://purl.obolibrary.org/obo/FOODON_03460130>)
 
-# Class: <http://purl.obolibrary.org/obo/FOODON_03460225> (food component addition process)
+# Class: <http://purl.obolibrary.org/obo/FOODON_03460225> (food component addition)
 
+AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000115> <http://purl.obolibrary.org/obo/FOODON_03460225> "A material combination process involving two or more food materials."@en)
 AnnotationAssertion(<http://purl.org/dc/terms/contributor> <http://purl.obolibrary.org/obo/FOODON_03460225> "Damion Dooley")
 AnnotationAssertion(<http://www.geneontology.org/formats/oboInOwl#hasDbXref> <http://purl.obolibrary.org/obo/FOODON_03460225> "http://www.langual.org/langual_thesaurus.asp?termid=H0225")
 AnnotationAssertion(rdfs:comment <http://purl.obolibrary.org/obo/FOODON_03460225> "LanguaL curation note: A food product is characterized by its main ingredient (food source and part); the addition of secondary ingredients is considered a treatment applied to the product. Secondary ingredients are indexed according to rules that are based on the order of predominance by weight (not counting water) as seen from the label statement, formulation or recipe and/or from the amount of the ingredient as percentage of total product weight. The general rule is:  an ingredient is always indexed if it is the second ingredient in order of predominance, if it is used as a filling, or if it is part of the product name(e.g., raisin bread). Specific rules are given in the scope note for the individual ingredient added; these rules specify more exhaustive indexing. For example, *MUSHROOM ADDED* is indexed regardless of ingredient position. another specific rule is given in the scope note for *SALTED*:  Use if the level of salt is more than 4%. Such a rule is used only when the percentage level can be inferred from the list of ingredients."@en)
-AnnotationAssertion(rdfs:label <http://purl.obolibrary.org/obo/FOODON_03460225> "food component addition process"@en)
+AnnotationAssertion(rdfs:label <http://purl.obolibrary.org/obo/FOODON_03460225> "food component addition"@en)
 SubClassOf(<http://purl.obolibrary.org/obo/FOODON_03460225> <http://purl.obolibrary.org/obo/FOODON_03460111>)
+SubClassOf(<http://purl.obolibrary.org/obo/FOODON_03460225> <http://purl.obolibrary.org/obo/OBI_0000652>)
 
 # Class: <http://purl.obolibrary.org/obo/FOODON_03460230> (single component food fermentation)
 
@@ -1403,14 +1411,15 @@ AnnotationAssertion(<http://www.geneontology.org/formats/oboInOwl#hasDbXref> <ht
 AnnotationAssertion(rdfs:label <http://purl.obolibrary.org/obo/FOODON_03460237> "dilution process to 50-99% of single strength"@en)
 SubClassOf(<http://purl.obolibrary.org/obo/FOODON_03460237> <http://purl.obolibrary.org/obo/FOODON_03460148>)
 
-# Class: <http://purl.obolibrary.org/obo/FOODON_03460238> (food component separation process)
+# Class: <http://purl.obolibrary.org/obo/FOODON_03460238> (food component separation)
 
 AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000115> <http://purl.obolibrary.org/obo/FOODON_03460238> "A component separation process at the very least removes one component from an initial entity.  The removed component may be captured as a process output for reuse if not destroyed in the process of removal."@en)
 AnnotationAssertion(<http://purl.org/dc/terms/contributor> <http://purl.obolibrary.org/obo/FOODON_03460238> "Damion Dooley")
 AnnotationAssertion(<http://www.geneontology.org/formats/oboInOwl#hasDbXref> <http://purl.obolibrary.org/obo/FOODON_03460238> "http://www.langual.org/langual_thesaurus.asp?termid=H0238")
 AnnotationAssertion(rdfs:comment <http://purl.obolibrary.org/obo/FOODON_03460238> "LanguaL curation note: Use the appropriate term under *COMPONENT REMOVED* to indicate the permanent full or partial removal of a nutritional/chemical component naturally present in the part of plant or animal used."@en)
-AnnotationAssertion(rdfs:label <http://purl.obolibrary.org/obo/FOODON_03460238> "food component separation process"@en)
+AnnotationAssertion(rdfs:label <http://purl.obolibrary.org/obo/FOODON_03460238> "food component separation"@en)
 SubClassOf(<http://purl.obolibrary.org/obo/FOODON_03460238> <http://purl.obolibrary.org/obo/FOODON_03460111>)
+SubClassOf(<http://purl.obolibrary.org/obo/FOODON_03460238> <http://purl.obolibrary.org/obo/OBI_0600014>)
 
 # Class: <http://purl.obolibrary.org/obo/FOODON_03460239> (food rolling process)
 
@@ -1449,10 +1458,10 @@ AnnotationAssertion(rdfs:comment <http://purl.obolibrary.org/obo/FOODON_03460248
 AnnotationAssertion(rdfs:label <http://purl.obolibrary.org/obo/FOODON_03460248> "full fat removal process"@en)
 SubClassOf(<http://purl.obolibrary.org/obo/FOODON_03460248> <http://purl.obolibrary.org/obo/FOODON_03460161>)
 
-# Class: <http://purl.obolibrary.org/obo/FOODON_03460250> (protein substitution process)
+# Class: <http://purl.obolibrary.org/obo/FOODON_03460250> (protein substitution)
 
 AnnotationAssertion(<http://www.geneontology.org/formats/oboInOwl#hasDbXref> <http://purl.obolibrary.org/obo/FOODON_03460250> "http://www.langual.org/langual_thesaurus.asp?termid=H0250")
-AnnotationAssertion(rdfs:label <http://purl.obolibrary.org/obo/FOODON_03460250> "protein substitution process"@en)
+AnnotationAssertion(rdfs:label <http://purl.obolibrary.org/obo/FOODON_03460250> "protein substitution"@en)
 SubClassOf(<http://purl.obolibrary.org/obo/FOODON_03460250> <http://purl.obolibrary.org/obo/FOODON_03460103>)
 
 # Class: <http://purl.obolibrary.org/obo/FOODON_03460252> (enzymatic modification process)
@@ -1641,13 +1650,13 @@ AnnotationAssertion(<http://www.geneontology.org/formats/oboInOwl#hasDbXref> <ht
 AnnotationAssertion(rdfs:label <http://purl.obolibrary.org/obo/FOODON_03460300> "acetic acid fermentation"@en)
 SubClassOf(<http://purl.obolibrary.org/obo/FOODON_03460300> <http://purl.obolibrary.org/obo/FOODON_03460256>)
 
-# Class: <http://purl.obolibrary.org/obo/FOODON_03460306> (food homogenization or emulsification process)
+# Class: <http://purl.obolibrary.org/obo/FOODON_03460306> (food emulsification)
 
 AnnotationAssertion(<http://www.geneontology.org/formats/oboInOwl#hasDbXref> <http://purl.obolibrary.org/obo/FOODON_03460306> "http://www.langual.org/langual_thesaurus.asp?termid=H0306")
 AnnotationAssertion(<http://www.geneontology.org/formats/oboInOwl#hasExactSynonym> <http://purl.obolibrary.org/obo/FOODON_03460306> "emulsification"@en)
-AnnotationAssertion(<http://www.geneontology.org/formats/oboInOwl#hasExactSynonym> <http://purl.obolibrary.org/obo/FOODON_03460306> "homogenization"@en)
 AnnotationAssertion(rdfs:comment <http://purl.obolibrary.org/obo/FOODON_03460306> "LanguaL curation note: Used for products in which two or more phases are mixed very finely but not at the molecular level. A very fine dispersion of a solid in a liquid is called a suspension. A very fine dispersion of one liquid in another immiscible liquid is called an emulsion."@en)
-AnnotationAssertion(rdfs:label <http://purl.obolibrary.org/obo/FOODON_03460306> "food homogenization or emulsification process"@en)
+AnnotationAssertion(rdfs:comment <http://purl.obolibrary.org/obo/FOODON_03460306> "Renamed from \"food homogenization or emulsification process\" in order to move homogenization into a subclass."@en)
+AnnotationAssertion(rdfs:label <http://purl.obolibrary.org/obo/FOODON_03460306> "food emulsification"@en)
 SubClassOf(<http://purl.obolibrary.org/obo/FOODON_03460306> <http://purl.obolibrary.org/obo/FOODON_03460130>)
 
 # Class: <http://purl.obolibrary.org/obo/FOODON_03460324> (partial fat removal process, 50% or more remaining)
@@ -2071,6 +2080,7 @@ SubClassOf(<http://purl.obolibrary.org/obo/FOODON_03470134> <http://purl.obolibr
 AnnotationAssertion(<http://www.geneontology.org/formats/oboInOwl#hasDbXref> <http://purl.obolibrary.org/obo/FOODON_03470135> "http://www.langual.org/langual_thesaurus.asp?termid=J0135")
 AnnotationAssertion(rdfs:comment <http://purl.obolibrary.org/obo/FOODON_03470135> "LanguaL curation note: Used when the product is held at a temperature of 60-150 °C (140-300 °F) for a time sufficient to destroy most pathogenic and food spoilage organisms. When followed by refrigeration, also index *preservation by CHILLING*."@en)
 AnnotationAssertion(rdfs:label <http://purl.obolibrary.org/obo/FOODON_03470135> "pasteurization by heating"@en)
+AnnotationAssertion(rdfs:seeAlso <http://purl.obolibrary.org/obo/FOODON_03470135> <https://www.fao.org/fao-who-codexalimentarius/sh-proxy/en/?lnk=1&url=https%253A%252F%252Fworkspace.fao.org%252Fsites%252Fcodex%252FShared%2BDocuments%252FArchive%252FMeetings%252FCCMMP%252Fccmmp4%252Fmm00_15e.pdf>)
 SubClassOf(<http://purl.obolibrary.org/obo/FOODON_03470135> <http://purl.obolibrary.org/obo/FOODON_03470120>)
 
 # Class: <http://purl.obolibrary.org/obo/FOODON_03470136> (food freezing)
@@ -2083,7 +2093,7 @@ SubClassOf(<http://purl.obolibrary.org/obo/FOODON_03470136> <http://purl.obolibr
 
 # Class: <http://purl.obolibrary.org/obo/FOODON_03470137> (food brining)
 
-AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000115> <http://purl.obolibrary.org/obo/FOODON_03470137> "Immersed in a salt brine strong enough to suppress enzyme activity and growth of undesirable organisms."@en)
+AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000115> <http://purl.obolibrary.org/obo/FOODON_03470137> "Immersion of food material in a salt brine strong enough to suppress enzyme activity and growth of undesirable organisms."@en)
 AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000119> <http://purl.obolibrary.org/obo/FOODON_03470137> "https://en.wikipedia.org/wiki/Brining")
 AnnotationAssertion(<http://www.geneontology.org/formats/oboInOwl#hasDbXref> <http://purl.obolibrary.org/obo/FOODON_03470137> "http://www.langual.org/langual_thesaurus.asp?termid=J0137")
 AnnotationAssertion(<http://www.geneontology.org/formats/oboInOwl#hasExactSynonym> <http://purl.obolibrary.org/obo/FOODON_03470137> "brining"@en)
@@ -2114,10 +2124,11 @@ SubClassOf(<http://purl.obolibrary.org/obo/FOODON_03470140> <http://purl.obolibr
 
 # Class: <http://purl.obolibrary.org/obo/FOODON_03470141> (natural heat drying)
 
-AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000115> <http://purl.obolibrary.org/obo/FOODON_03470141> "Dried by natural heat, usually through exposure to the sun. Includes field-dried products such as grains and dry beans. These products are included also if they have been artificially dried to return them to normal dry state, e.g. grain that has been artificially dried after harvest."@en)
+AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000115> <http://purl.obolibrary.org/obo/FOODON_03470141> "Dried by natural heat, usually through exposure to the sun. Includes field-dried products such as grains and dry beans."@en)
 AnnotationAssertion(<http://www.geneontology.org/formats/oboInOwl#hasDbXref> <http://purl.obolibrary.org/obo/FOODON_03470141> "http://www.langual.org/langual_thesaurus.asp?termid=J0141")
 AnnotationAssertion(<http://www.geneontology.org/formats/oboInOwl#hasExactSynonym> <http://purl.obolibrary.org/obo/FOODON_03470141> "field drying"@en)
 AnnotationAssertion(<http://www.geneontology.org/formats/oboInOwl#hasExactSynonym> <http://purl.obolibrary.org/obo/FOODON_03470141> "sun drying"@en)
+AnnotationAssertion(rdfs:comment <http://purl.obolibrary.org/obo/FOODON_03470141> "LanguaL note: \"These products are included also if they have been artificially dried to return them to normal dry state, e.g. grain that has been artificially dried after harvest.\"")
 AnnotationAssertion(rdfs:label <http://purl.obolibrary.org/obo/FOODON_03470141> "natural heat drying"@en)
 SubClassOf(<http://purl.obolibrary.org/obo/FOODON_03470141> <http://purl.obolibrary.org/obo/FOODON_03470117>)
 

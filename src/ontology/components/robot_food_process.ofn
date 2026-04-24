@@ -1736,7 +1736,6 @@ SubClassOf(<http://purl.obolibrary.org/obo/FOODON_03000475> <http://purl.obolibr
 AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000115> <http://purl.obolibrary.org/obo/FOODON_03000476> "Whipped butter that contains salt."@en)
 AnnotationAssertion(<http://purl.org/dc/terms/contributor> <http://purl.obolibrary.org/obo/FOODON_03000476> "https://orcid.org/0000-0001-5275-8866")
 AnnotationAssertion(<http://purl.org/dc/terms/date> <http://purl.obolibrary.org/obo/FOODON_03000476> "2023-10-13T19:38:15Z"^^xsd:dateTime)
-AnnotationAssertion(<http://www.geneontology.org/formats/oboInOwl#hasExactSynonym> <http://purl.obolibrary.org/obo/FOODON_03000476> "sour cream (reduced fat)"@en)
 AnnotationAssertion(rdfs:label <http://purl.obolibrary.org/obo/FOODON_03000476> "butter (whipped, salted)"@en)
 SubClassOf(<http://purl.obolibrary.org/obo/FOODON_03000476> <http://purl.obolibrary.org/obo/FOODON_03302502>)
 
@@ -1745,6 +1744,7 @@ SubClassOf(<http://purl.obolibrary.org/obo/FOODON_03000476> <http://purl.obolibr
 AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000115> <http://purl.obolibrary.org/obo/FOODON_03000477> "Sour cream that is made from half-and-half and has around 40 percent less fat."@en)
 AnnotationAssertion(<http://purl.org/dc/terms/contributor> <http://purl.obolibrary.org/obo/FOODON_03000477> "https://orcid.org/0000-0001-5275-8866")
 AnnotationAssertion(<http://purl.org/dc/terms/date> <http://purl.obolibrary.org/obo/FOODON_03000477> "2023-10-13T19:38:15Z"^^xsd:dateTime)
+AnnotationAssertion(<http://www.geneontology.org/formats/oboInOwl#hasExactSynonym> <http://purl.obolibrary.org/obo/FOODON_03000477> "sour cream (reduced fat)"@en)
 AnnotationAssertion(rdfs:label <http://purl.obolibrary.org/obo/FOODON_03000477> "light sour cream"@en)
 SubClassOf(<http://purl.obolibrary.org/obo/FOODON_03000477> <http://purl.obolibrary.org/obo/FOODON_03302515>)
 

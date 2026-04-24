@@ -224,7 +224,6 @@ Declaration(Class(<http://purl.obolibrary.org/obo/NCBITaxon_119742>))
 Declaration(Class(<http://purl.obolibrary.org/obo/NCBITaxon_1203427>))
 Declaration(Class(<http://purl.obolibrary.org/obo/NCBITaxon_1203428>))
 Declaration(Class(<http://purl.obolibrary.org/obo/NCBITaxon_120427>))
-Declaration(Class(<http://purl.obolibrary.org/obo/NCBITaxon_121025>))
 Declaration(Class(<http://purl.obolibrary.org/obo/NCBITaxon_121031>))
 Declaration(Class(<http://purl.obolibrary.org/obo/NCBITaxon_1211424>))
 Declaration(Class(<http://purl.obolibrary.org/obo/NCBITaxon_121281>))
@@ -1012,6 +1011,7 @@ Declaration(Class(<http://purl.obolibrary.org/obo/NCBITaxon_322133>))
 Declaration(Class(<http://purl.obolibrary.org/obo/NCBITaxon_32278>))
 Declaration(Class(<http://purl.obolibrary.org/obo/NCBITaxon_323803>))
 Declaration(Class(<http://purl.obolibrary.org/obo/NCBITaxon_3241545>))
+Declaration(Class(<http://purl.obolibrary.org/obo/NCBITaxon_3244320>))
 Declaration(Class(<http://purl.obolibrary.org/obo/NCBITaxon_326724>))
 Declaration(Class(<http://purl.obolibrary.org/obo/NCBITaxon_327776>))
 Declaration(Class(<http://purl.obolibrary.org/obo/NCBITaxon_327785>))
@@ -3908,15 +3908,6 @@ AnnotationAssertion(Annotation(<http://purl.obolibrary.org/obo/IAO_0000412> "FDA
 AnnotationAssertion(<http://www.geneontology.org/formats/oboInOwl#hasDbXref> <http://purl.obolibrary.org/obo/NCBITaxon_120427> "itis:81024")
 AnnotationAssertion(Annotation(<http://purl.obolibrary.org/obo/IAO_0000412> "FDA SFL Common Name") <http://www.geneontology.org/formats/oboInOwl#hasExactSynonym> <http://purl.obolibrary.org/obo/NCBITaxon_120427> "pod razor"@en)
 AnnotationAssertion(rdfs:seeAlso <http://purl.obolibrary.org/obo/NCBITaxon_120427> "https://en.wikipedia.org/wiki/Ensis_ensis")
-
-# Class: <http://purl.obolibrary.org/obo/NCBITaxon_121025> (Arca imbricata)
-
-AnnotationAssertion(<http://purl.org/dc/terms/contributor> <http://purl.obolibrary.org/obo/NCBITaxon_121025> "https://orcid.org/0000-0001-5275-8866")
-AnnotationAssertion(Annotation(<http://purl.obolibrary.org/obo/IAO_0000412> "FDA SFL Acceptable Market Name") <http://www.geneontology.org/formats/oboInOwl#hasBroadSynonym> <http://purl.obolibrary.org/obo/NCBITaxon_121025> "arkshell"@en)
-AnnotationAssertion(<http://www.geneontology.org/formats/oboInOwl#hasDbXref> <http://purl.obolibrary.org/obo/NCBITaxon_121025> "itis:79370")
-AnnotationAssertion(Annotation(<http://purl.obolibrary.org/obo/IAO_0000412> "FDA SFL Common Name") <http://www.geneontology.org/formats/oboInOwl#hasExactSynonym> <http://purl.obolibrary.org/obo/NCBITaxon_121025> "mossy ark"@en)
-AnnotationAssertion(rdfs:label <http://purl.obolibrary.org/obo/NCBITaxon_121025> "Arca imbricata"@en)
-AnnotationAssertion(rdfs:seeAlso <http://purl.obolibrary.org/obo/NCBITaxon_121025> "https://en.wikipedia.org/wiki/Arca_imbricata")
 
 # Class: <http://purl.obolibrary.org/obo/NCBITaxon_121031> (Barbatia domingensis)
 
@@ -9938,6 +9929,14 @@ AnnotationAssertion(Annotation(<http://purl.obolibrary.org/obo/IAO_0000412> "FDA
 AnnotationAssertion(<http://www.geneontology.org/formats/oboInOwl#hasDbXref> <http://purl.obolibrary.org/obo/NCBITaxon_3241545> "itis:72557")
 AnnotationAssertion(Annotation(<http://purl.obolibrary.org/obo/IAO_0000412> "FDA SFL Common Name") <http://www.geneontology.org/formats/oboInOwl#hasExactSynonym> <http://purl.obolibrary.org/obo/NCBITaxon_3241545> "milk conch"@en)
 AnnotationAssertion(rdfs:seeAlso <http://purl.obolibrary.org/obo/NCBITaxon_3241545> "https://en.wikipedia.org/wiki/Lobatus_costatus")
+
+# Class: <http://purl.obolibrary.org/obo/NCBITaxon_3244320> (Lamarcka imbricata)
+
+AnnotationAssertion(<http://purl.org/dc/terms/contributor> <http://purl.obolibrary.org/obo/NCBITaxon_3244320> "https://orcid.org/0000-0001-5275-8866")
+AnnotationAssertion(Annotation(<http://purl.obolibrary.org/obo/IAO_0000412> "FDA SFL Acceptable Market Name") <http://www.geneontology.org/formats/oboInOwl#hasBroadSynonym> <http://purl.obolibrary.org/obo/NCBITaxon_3244320> "arkshell"@en)
+AnnotationAssertion(<http://www.geneontology.org/formats/oboInOwl#hasDbXref> <http://purl.obolibrary.org/obo/NCBITaxon_3244320> "itis:79370")
+AnnotationAssertion(Annotation(<http://purl.obolibrary.org/obo/IAO_0000412> "FDA SFL Common Name") <http://www.geneontology.org/formats/oboInOwl#hasExactSynonym> <http://purl.obolibrary.org/obo/NCBITaxon_3244320> "mossy ark"@en)
+AnnotationAssertion(rdfs:seeAlso <http://purl.obolibrary.org/obo/NCBITaxon_3244320> "https://en.wikipedia.org/wiki/Arca_imbricata")
 
 # Class: <http://purl.obolibrary.org/obo/NCBITaxon_326724> (Gnathanodon speciosus)
 
