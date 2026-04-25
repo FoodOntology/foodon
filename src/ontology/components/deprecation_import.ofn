@@ -795,7 +795,6 @@ AnnotationAssertion(owl:deprecated obo:FOODON_03301302 "true"^^xsd:boolean)
 
 AnnotationAssertion(obo:IAO_0100001 obo:FOODON_03301316 "http://purl.obolibrary.org/obo/FOODON_03316937"^^xsd:anyURI)
 AnnotationAssertion(oboInOwl:hasDbXref obo:FOODON_03301316 "SUBSET_SIREN:F1316")
-AnnotationAssertion(oboInOwl:inSubset obo:FOODON_03301316 "subset_siren")
 AnnotationAssertion(rdfs:comment obo:FOODON_03301316 "SIREN DB annotation:
 * has quality 'medium ground' (http://purl.obolibrary.org/obo/FOODON_03430117)
 * has quality 'fully heat-treated' (http://purl.obolibrary.org/obo/FOODON_03440014)
@@ -811,7 +810,6 @@ AnnotationAssertion(owl:deprecated obo:FOODON_03301316 "true"^^xsd:boolean)
 
 AnnotationAssertion(obo:IAO_0100001 obo:FOODON_03301349 "http://purl.obolibrary.org/obo/CHEBI_83163"@en)
 AnnotationAssertion(oboInOwl:hasDbXref obo:FOODON_03301349 "SUBSET_SIREN:F1349")
-AnnotationAssertion(oboInOwl:inSubset obo:FOODON_03301349 "subset_siren")
 AnnotationAssertion(rdfs:comment obo:FOODON_03301349 "SIREN DB annotation:
 * has quality 'liquid, high viscosity, with no visible particles' (http://purl.obolibrary.org/obo/FOODON_03430139)
 * derives from 'molasses' (http://purl.obolibrary.org/obo/CHEBI_83163)
@@ -823,7 +821,6 @@ AnnotationAssertion(owl:deprecated obo:FOODON_03301349 "true"^^xsd:boolean)
 # Class: obo:FOODON_03301350 (obsolete: peanut product)
 
 AnnotationAssertion(obo:IAO_0100001 obo:FOODON_03301350 "http://purl.obolibrary.org/obo/FOODON_00002099"^^xsd:anyURI)
-AnnotationAssertion(oboInOwl:inSubset obo:FOODON_03301350 "subset_siren")
 AnnotationAssertion(rdfs:label obo:FOODON_03301350 "obsolete: peanut product"@en)
 AnnotationAssertion(owl:deprecated obo:FOODON_03301350 "true"^^xsd:boolean)
 
@@ -831,7 +828,6 @@ AnnotationAssertion(owl:deprecated obo:FOODON_03301350 "true"^^xsd:boolean)
 
 AnnotationAssertion(obo:IAO_0000114 obo:FOODON_03301404 obo:IAO_0000428)
 AnnotationAssertion(oboInOwl:hasDbXref obo:FOODON_03301404 "SUBSET_SIREN:F1404")
-AnnotationAssertion(oboInOwl:inSubset obo:FOODON_03301404 "subset_siren")
 AnnotationAssertion(rdfs:comment obo:FOODON_03301404 "SIREN DB annotation:
 * has quality 'whole, natural shape' (http://purl.obolibrary.org/obo/FOODON_03430150)
 * derives from 'fruit, peel present, core, pit or seed present' (http://purl.obolibrary.org/obo/FOODON_03420140)
@@ -855,7 +851,6 @@ AnnotationAssertion(owl:deprecated obo:FOODON_03301419 "true"^^xsd:boolean)
 # Class: obo:FOODON_03301442 (obsolete: dairy product analog (not further specified))
 
 AnnotationAssertion(obo:IAO_0100001 obo:FOODON_03301442 obo:FOODON_00001801)
-AnnotationAssertion(oboInOwl:inSubset obo:FOODON_03301442 "subset_siren")
 AnnotationAssertion(rdfs:label obo:FOODON_03301442 "obsolete: dairy product analog (not further specified)"@en)
 AnnotationAssertion(owl:deprecated obo:FOODON_03301442 "true"^^xsd:boolean)
 
@@ -863,7 +858,6 @@ AnnotationAssertion(owl:deprecated obo:FOODON_03301442 "true"^^xsd:boolean)
 
 AnnotationAssertion(obo:IAO_0100001 obo:FOODON_03301711 "http://purl.obolibrary.org/obo/FOODON_00001256")
 AnnotationAssertion(oboInOwl:hasDbXref obo:FOODON_03301711 "SUBSET_SIREN:F1711")
-AnnotationAssertion(oboInOwl:inSubset obo:FOODON_03301711 "subset_siren")
 AnnotationAssertion(rdfs:comment obo:FOODON_03301711 "SIREN DB annotation:
 * derives from 'milk or milk component' (http://purl.obolibrary.org/obo/FOODON_03420113)
         "@en)
@@ -874,7 +868,6 @@ AnnotationAssertion(owl:deprecated obo:FOODON_03301711 "true"^^xsd:boolean)
 
 AnnotationAssertion(obo:IAO_0100001 obo:FOODON_03301888 "http://purl.obolibrary.org/obo/FOODON_03420177"^^xsd:anyURI)
 AnnotationAssertion(oboInOwl:hasDbXref obo:FOODON_03301888 "SUBSET_SIREN:F1888")
-AnnotationAssertion(oboInOwl:inSubset obo:FOODON_03301888 "subset_siren")
 AnnotationAssertion(rdfs:comment obo:FOODON_03301888 "SIREN DB annotation:
 * derives from 'gluten' (http://purl.obolibrary.org/obo/FOODON_03420177)
         "@en)
@@ -885,14 +878,12 @@ AnnotationAssertion(owl:deprecated obo:FOODON_03301888 "true"^^xsd:boolean)
 
 AnnotationAssertion(obo:IAO_0100001 obo:FOODON_03301971 "http://purl.obolibrary.org/obo/FOODON_00001070"^^xsd:anyURI)
 AnnotationAssertion(oboInOwl:hasDbXref obo:FOODON_03301971 "SUBSET_SIREN:F1971")
-AnnotationAssertion(oboInOwl:inSubset obo:FOODON_03301971 "subset_siren")
 AnnotationAssertion(rdfs:label obo:FOODON_03301971 "obsolete: miso (food product)"@en)
 AnnotationAssertion(owl:deprecated obo:FOODON_03301971 "true"^^xsd:boolean)
 
 # Class: obo:FOODON_03302385 (obsolete: orange beverage)
 
 AnnotationAssertion(obo:IAO_0100001 obo:FOODON_03302385 "http://purl.obolibrary.org/obo/FOODON_00001100"^^xsd:anyURI)
-AnnotationAssertion(oboInOwl:inSubset obo:FOODON_03302385 "subset_siren")
 AnnotationAssertion(rdfs:label obo:FOODON_03302385 "obsolete: orange beverage"@en)
 AnnotationAssertion(owl:deprecated obo:FOODON_03302385 "true"^^xsd:boolean)
 
@@ -907,7 +898,6 @@ AnnotationAssertion(owl:deprecated obo:FOODON_03302410 "true"^^xsd:boolean)
 
 AnnotationAssertion(obo:IAO_0100001 obo:FOODON_03302833 "http://purl.obolibrary.org/obo/FOODON_03420156"^^xsd:anyURI)
 AnnotationAssertion(oboInOwl:hasDbXref obo:FOODON_03302833 "SUBSET_SIREN:F2833")
-AnnotationAssertion(oboInOwl:inSubset obo:FOODON_03302833 "subset_siren")
 AnnotationAssertion(rdfs:comment obo:FOODON_03302833 "SIREN DB annotation:
 * has quality 'crystal' (http://purl.obolibrary.org/obo/FOODON_03430143)
 * has quality 'fully heat-treated' (http://purl.obolibrary.org/obo/FOODON_03440014)
@@ -930,7 +920,6 @@ AnnotationAssertion(owl:deprecated obo:FOODON_03303954 "true"^^xsd:boolean)
 
 AnnotationAssertion(obo:IAO_0100001 obo:FOODON_03304196 obo:FOODON_03301469)
 AnnotationAssertion(oboInOwl:hasDbXref obo:FOODON_03304196 "SUBSET_SIREN:F4196")
-AnnotationAssertion(oboInOwl:inSubset obo:FOODON_03304196 "subset_siren")
 AnnotationAssertion(rdfs:label obo:FOODON_03304196 "obsolete: soup cube"@en)
 AnnotationAssertion(owl:deprecated obo:FOODON_03304196 "true"^^xsd:boolean)
 
@@ -938,7 +927,6 @@ AnnotationAssertion(owl:deprecated obo:FOODON_03304196 "true"^^xsd:boolean)
 
 AnnotationAssertion(obo:IAO_0100001 obo:FOODON_03304288 "http://purl.obolibrary.org/obo/FOODON_03304292"^^xsd:anyURI)
 AnnotationAssertion(oboInOwl:hasDbXref obo:FOODON_03304288 "SUBSET_SIREN:F4288")
-AnnotationAssertion(oboInOwl:inSubset obo:FOODON_03304288 "subset_siren")
 AnnotationAssertion(rdfs:comment obo:FOODON_03304288 "SIREN DB annotation:
 * has quality 'not heat-treated' (http://purl.obolibrary.org/obo/FOODON_03440003)
 * formed as a result of 'water removal process' (http://purl.obolibrary.org/obo/FOODON_03460138)
@@ -957,14 +945,12 @@ AnnotationAssertion(owl:deprecated obo:FOODON_03304298 "true"^^xsd:boolean)
 # Class: obo:FOODON_03304467 (obsolete: cow milk (sterilized))
 
 AnnotationAssertion(obo:IAO_0100001 obo:FOODON_03304467 "http://purl.obolibrary.org/obo/FOODON_03304396"^^xsd:anyURI)
-AnnotationAssertion(oboInOwl:inSubset obo:FOODON_03304467 "subset_siren")
 AnnotationAssertion(rdfs:label obo:FOODON_03304467 "obsolete: cow milk (sterilized)"@en)
 AnnotationAssertion(owl:deprecated obo:FOODON_03304467 "true"^^xsd:boolean)
 
 # Class: obo:FOODON_03305038 (obsolete: infant formula (liquid, milk-based, canned))
 
 AnnotationAssertion(obo:IAO_0100001 obo:FOODON_03305038 obo:FOODON_03304216)
-AnnotationAssertion(oboInOwl:inSubset obo:FOODON_03305038 "subset_siren")
 AnnotationAssertion(rdfs:label obo:FOODON_03305038 "obsolete: infant formula (liquid, milk-based, canned)"@en)
 AnnotationAssertion(owl:deprecated obo:FOODON_03305038 "true"^^xsd:boolean)
 
@@ -973,7 +959,6 @@ AnnotationAssertion(owl:deprecated obo:FOODON_03305038 "true"^^xsd:boolean)
 AnnotationAssertion(obo:IAO_0000114 obo:FOODON_03305105 obo:IAO_0000428)
 AnnotationAssertion(obo:IAO_0100001 obo:FOODON_03305105 "http://purl.obolibrary.org/obo/FOODON_03430130"^^xsd:anyURI)
 AnnotationAssertion(oboInOwl:hasDbXref obo:FOODON_03305105 "SUBSET_SIREN:F5105")
-AnnotationAssertion(oboInOwl:inSubset obo:FOODON_03305105 "subset_siren")
 AnnotationAssertion(rdfs:comment obo:FOODON_03305105 "SIREN DB annotation:
 * has quality 'liquid' (http://purl.obolibrary.org/obo/FOODON_03430130)
                 "@en)
@@ -984,7 +969,6 @@ AnnotationAssertion(owl:deprecated obo:FOODON_03305105 "true"^^xsd:boolean)
 
 AnnotationAssertion(obo:IAO_0100001 obo:FOODON_03305224 "http://purl.obolibrary.org/obo/FOODON_03305040"^^xsd:anyURI)
 AnnotationAssertion(oboInOwl:hasDbXref obo:FOODON_03305224 "SUBSET_SIREN:F5224")
-AnnotationAssertion(oboInOwl:inSubset obo:FOODON_03305224 "subset_siren")
 AnnotationAssertion(rdfs:comment obo:FOODON_03305224 "SIREN DB annotation:
 * has quality 'solid' (http://purl.obolibrary.org/obo/FOODON_03430151)
 * derives from 'fruit part' (http://purl.obolibrary.org/obo/FOODON_03420167)
@@ -1009,7 +993,6 @@ AnnotationAssertion(owl:deprecated obo:FOODON_03305644 "true"^^xsd:boolean)
 
 AnnotationAssertion(obo:IAO_0100001 obo:FOODON_03305676 "http://purl.obolibrary.org/obo/FOODON_00001618")
 AnnotationAssertion(oboInOwl:hasDbXref obo:FOODON_03305676 "SUBSET_SIREN:F5676")
-AnnotationAssertion(oboInOwl:inSubset obo:FOODON_03305676 "subset_siren")
 AnnotationAssertion(rdfs:label obo:FOODON_03305676 "obsolete: sweetener (artificial)"@en)
 AnnotationAssertion(owl:deprecated obo:FOODON_03305676 "true"^^xsd:boolean)
 
@@ -1017,7 +1000,6 @@ AnnotationAssertion(owl:deprecated obo:FOODON_03305676 "true"^^xsd:boolean)
 
 AnnotationAssertion(obo:IAO_0100001 obo:FOODON_03305955 "http://purl.obolibrary.org/obo/FOODON_03301811"@en)
 AnnotationAssertion(oboInOwl:hasDbXref obo:FOODON_03305955 "SUBSET_SIREN:F5955")
-AnnotationAssertion(oboInOwl:inSubset obo:FOODON_03305955 "subset_siren")
 AnnotationAssertion(rdfs:comment obo:FOODON_03305955 "SIREN DB annotation:
 * has quality 'semisolid with smooth consistency' (http://purl.obolibrary.org/obo/FOODON_03430119)
 * has quality 'fully heat-treated' (http://purl.obolibrary.org/obo/FOODON_03440014)
@@ -1032,7 +1014,6 @@ AnnotationAssertion(owl:deprecated obo:FOODON_03305955 "true"^^xsd:boolean)
 
 AnnotationAssertion(obo:IAO_0100001 obo:FOODON_03306009 "http://purl.obolibrary.org/obo/FOODON_03306173"@en)
 AnnotationAssertion(oboInOwl:hasDbXref obo:FOODON_03306009 "SUBSET_SIREN:F6009")
-AnnotationAssertion(oboInOwl:inSubset obo:FOODON_03306009 "subset_siren")
 AnnotationAssertion(rdfs:comment obo:FOODON_03306009 "SIREN DB annotation:
 * has quality 'liquid, low viscosity' (http://purl.obolibrary.org/obo/FOODON_03430109)
 * derives from 'fruit part' (http://purl.obolibrary.org/obo/FOODON_03420167)
@@ -1064,7 +1045,6 @@ AnnotationAssertion(owl:deprecated obo:FOODON_03306496 "true"^^xsd:boolean)
 
 AnnotationAssertion(obo:IAO_0000231 obo:FOODON_03306675 "Unable to find a product to match this to."@en)
 AnnotationAssertion(oboInOwl:hasDbXref obo:FOODON_03306675 "SUBSET_SIREN:F6675")
-AnnotationAssertion(oboInOwl:inSubset obo:FOODON_03306675 "subset_siren")
 AnnotationAssertion(rdfs:comment obo:FOODON_03306675 "SIREN DB annotation:
 * surrounded by 'can, bottle or jar' (http://purl.obolibrary.org/obo/FOODON_03490194)
 * has quality 'semisolid with solid pieces' (http://purl.obolibrary.org/obo/FOODON_03430134)
@@ -1083,14 +1063,12 @@ AnnotationAssertion(owl:deprecated obo:FOODON_03306675 "true"^^xsd:boolean)
 
 AnnotationAssertion(obo:IAO_0100001 obo:FOODON_03306744 "http://purl.obolibrary.org/obo/FOODON_03305609"^^xsd:anyURI)
 AnnotationAssertion(oboInOwl:hasDbXref obo:FOODON_03306744 "SUBSET_SIREN:F6744")
-AnnotationAssertion(oboInOwl:inSubset obo:FOODON_03306744 "subset_siren")
 AnnotationAssertion(rdfs:label obo:FOODON_03306744 "obsolete: liquid cow milk"@en)
 AnnotationAssertion(owl:deprecated obo:FOODON_03306744 "true"^^xsd:boolean)
 
 # Class: obo:FOODON_03307070 (obsolete: rock cornish game hen (stuffed with wild rice and mushrooms))
 
 AnnotationAssertion(oboInOwl:hasDbXref obo:FOODON_03307070 "SUBSET_SIREN:F7070")
-AnnotationAssertion(oboInOwl:inSubset obo:FOODON_03307070 "subset_siren")
 AnnotationAssertion(rdfs:comment obo:FOODON_03307070 "SIREN DB annotation:
 * has quality 'whole, natural shape' (http://purl.obolibrary.org/obo/FOODON_03430150)
 * derives from 'skeletal meat part, with bone, with skin' (http://purl.obolibrary.org/obo/FOODON_03420265)
@@ -1111,7 +1089,6 @@ AnnotationAssertion(owl:deprecated obo:FOODON_03307286 "true"^^xsd:boolean)
 
 AnnotationAssertion(obo:IAO_0100001 obo:FOODON_03308169 "http://purl.obolibrary.org/obo/FOODON_03308351"@en)
 AnnotationAssertion(oboInOwl:hasDbXref obo:FOODON_03308169 "SUBSET_SIREN:F8169")
-AnnotationAssertion(oboInOwl:inSubset obo:FOODON_03308169 "subset_siren")
 AnnotationAssertion(rdfs:comment obo:FOODON_03308169 "SIREN DB annotation:
 * has quality 'whole, natural shape' (http://purl.obolibrary.org/obo/FOODON_03430150)
 * has quality 'not heat-treated' (http://purl.obolibrary.org/obo/FOODON_03440003)
@@ -1150,7 +1127,6 @@ AnnotationAssertion(owl:deprecated obo:FOODON_03308248 "true"^^xsd:boolean)
 
 AnnotationAssertion(obo:IAO_0100001 obo:FOODON_03309665 obo:FOODON_03308394)
 AnnotationAssertion(oboInOwl:hasDbXref obo:FOODON_03309665 "SUBSET_SIREN:F9665")
-AnnotationAssertion(oboInOwl:inSubset obo:FOODON_03309665 "subset_siren")
 AnnotationAssertion(rdfs:label obo:FOODON_03309665 "obsolete: fish cutlet (raw)"@en)
 AnnotationAssertion(owl:deprecated obo:FOODON_03309665 "true"^^xsd:boolean)
 
@@ -1158,7 +1134,6 @@ AnnotationAssertion(owl:deprecated obo:FOODON_03309665 "true"^^xsd:boolean)
 
 AnnotationAssertion(obo:IAO_0000231 obo:FOODON_03309761 "Product is too specific.")
 AnnotationAssertion(oboInOwl:hasDbXref obo:FOODON_03309761 "SUBSET_SIREN:F9761")
-AnnotationAssertion(oboInOwl:inSubset obo:FOODON_03309761 "subset_siren")
 AnnotationAssertion(rdfs:comment obo:FOODON_03309761 "SIREN DB annotation:
 * has quality 'liquid, low viscosity, with no visible particles' (http://purl.obolibrary.org/obo/FOODON_03430123)
 * has substance added  'alcohol' (http://purl.obolibrary.org/obo/CHEBI_30879)
@@ -1182,7 +1157,6 @@ AnnotationAssertion(owl:deprecated obo:FOODON_03309864 "true"^^xsd:boolean)
 
 AnnotationAssertion(obo:IAO_0100001 obo:FOODON_03309988 "http://purl.obolibrary.org/obo/FOODON_03411232"^^xsd:anyURI)
 AnnotationAssertion(oboInOwl:hasDbXref obo:FOODON_03309988 "SUBSET_SIREN:F9988")
-AnnotationAssertion(oboInOwl:inSubset obo:FOODON_03309988 "subset_siren")
 AnnotationAssertion(rdfs:label obo:FOODON_03309988 "obsolete: food made from maize (food product)"@en)
 AnnotationAssertion(owl:deprecated obo:FOODON_03309988 "true"^^xsd:boolean)
 
@@ -1196,7 +1170,6 @@ AnnotationAssertion(owl:deprecated obo:FOODON_03310155 "true"^^xsd:boolean)
 
 AnnotationAssertion(obo:IAO_0100001 obo:FOODON_03310156 "http://purl.obolibrary.org/obo/FOODON_03306424"^^xsd:anyURI)
 AnnotationAssertion(oboInOwl:hasDbXref obo:FOODON_03310156 "SUBSET_SIREN:F10156")
-AnnotationAssertion(oboInOwl:inSubset obo:FOODON_03310156 "subset_siren")
 AnnotationAssertion(rdfs:comment obo:FOODON_03310156 "SIREN DB annotation:
 * has quality 'medium ground' (http://purl.obolibrary.org/obo/FOODON_03430117)
 * derives from 'seed, skin present, germ present' (http://purl.obolibrary.org/obo/FOODON_03420133)
@@ -1235,7 +1208,6 @@ AnnotationAssertion(owl:deprecated obo:FOODON_03310595 "true"^^xsd:boolean)
 
 AnnotationAssertion(obo:IAO_0100001 obo:FOODON_03310636 "http://purl.obolibrary.org/obo/FOODON_03301486")
 AnnotationAssertion(oboInOwl:hasDbXref obo:FOODON_03310636 "SUBSET_SIREN:F10636")
-AnnotationAssertion(oboInOwl:inSubset obo:FOODON_03310636 "subset_siren")
 AnnotationAssertion(rdfs:comment obo:FOODON_03310636 "SIREN DB annotation:
 * has quality 'liquid, low viscosity, with no visible particles' (http://purl.obolibrary.org/obo/FOODON_03430123)
 * has quality 'partially heat-treated' (http://purl.obolibrary.org/obo/FOODON_03440018)
@@ -1257,7 +1229,6 @@ AnnotationAssertion(owl:deprecated obo:FOODON_03310661 "true"^^xsd:boolean)
 
 AnnotationAssertion(obo:IAO_0100001 obo:FOODON_03310715 "http://purl.obolibrary.org/obo/FOODON_00001149"^^xsd:anyURI)
 AnnotationAssertion(oboInOwl:hasDbXref obo:FOODON_03310715 "SUBSET_SIREN:F10715")
-AnnotationAssertion(oboInOwl:inSubset obo:FOODON_03310715 "subset_siren")
 AnnotationAssertion(rdfs:comment obo:FOODON_03310715 "SIREN DB annotation:
 * has substance added  'sucrose added' (http://purl.obolibrary.org/obo/FOODON_03460158)
 * has substance added  'flavoring, spice or herb added' (http://purl.obolibrary.org/obo/FOODON_03460227)
@@ -1281,7 +1252,6 @@ AnnotationAssertion(owl:deprecated obo:FOODON_03310756 "true"^^xsd:boolean)
 
 AnnotationAssertion(obo:IAO_0100001 obo:FOODON_03310762 obo:FOODON_03317337)
 AnnotationAssertion(oboInOwl:hasDbXref obo:FOODON_03310762 "SUBSET_SIREN:F10762")
-AnnotationAssertion(oboInOwl:inSubset obo:FOODON_03310762 "subset_siren")
 AnnotationAssertion(rdfs:label obo:FOODON_03310762 "obsolete: beefburger (shaped)"@en)
 AnnotationAssertion(owl:deprecated obo:FOODON_03310762 "true"^^xsd:boolean)
 
@@ -1289,7 +1259,6 @@ AnnotationAssertion(owl:deprecated obo:FOODON_03310762 "true"^^xsd:boolean)
 
 AnnotationAssertion(obo:IAO_0100001 obo:FOODON_03310764 obo:FOODON_00002341)
 AnnotationAssertion(oboInOwl:hasDbXref obo:FOODON_03310764 "SUBSET_SIREN:F10764")
-AnnotationAssertion(oboInOwl:inSubset obo:FOODON_03310764 "subset_siren")
 AnnotationAssertion(rdfs:comment obo:FOODON_03310764 "SIREN DB annotation:
 * has quality 'liquid, high viscosity, with no visible particles' (http://purl.obolibrary.org/obo/FOODON_03430139)
 * derives from 'sugar' (http://purl.obolibrary.org/obo/FOODON_03420108)
@@ -1316,7 +1285,6 @@ AnnotationAssertion(owl:deprecated obo:FOODON_03310831 "true"^^xsd:boolean)
 
 AnnotationAssertion(obo:IAO_0100001 obo:FOODON_03310834 "http://purl.obolibrary.org/obo/FOODON_00001258"^^xsd:anyURI)
 AnnotationAssertion(oboInOwl:hasDbXref obo:FOODON_03310834 "SUBSET_SIREN:F10834")
-AnnotationAssertion(oboInOwl:inSubset obo:FOODON_03310834 "subset_siren")
 AnnotationAssertion(rdfs:comment obo:FOODON_03310834 "SIREN DB annotation:
 * formed as a result of 'microbial/enzymatic modification process' (http://purl.obolibrary.org/obo/FOODON_03460119)
                 "@en)
@@ -1327,7 +1295,6 @@ AnnotationAssertion(owl:deprecated obo:FOODON_03310834 "true"^^xsd:boolean)
 
 AnnotationAssertion(obo:IAO_0100001 obo:FOODON_03310868 "http://purl.obolibrary.org/obo/FOODON_03311532"^^xsd:anyURI)
 AnnotationAssertion(oboInOwl:hasDbXref obo:FOODON_03310868 "SUBSET_SIREN:F10868")
-AnnotationAssertion(oboInOwl:inSubset obo:FOODON_03310868 "subset_siren")
 AnnotationAssertion(rdfs:comment obo:FOODON_03310868 "SIREN DB annotation:
 * has quality 'semisolid with solid pieces' (http://purl.obolibrary.org/obo/FOODON_03430134)
 * has quality 'fully heat-treated' (http://purl.obolibrary.org/obo/FOODON_03440014)
@@ -1368,7 +1335,6 @@ AnnotationAssertion(owl:deprecated obo:FOODON_03311242 "true"^^xsd:boolean)
 
 AnnotationAssertion(obo:IAO_0100001 obo:FOODON_03311253 "http://purl.obolibrary.org/obo/FOODON_03316261"^^xsd:anyURI)
 AnnotationAssertion(oboInOwl:hasDbXref obo:FOODON_03311253 "SUBSET_SIREN:F11253")
-AnnotationAssertion(oboInOwl:inSubset obo:FOODON_03311253 "subset_siren")
 AnnotationAssertion(rdfs:comment obo:FOODON_03311253 "SIREN DB annotation:
 * has consumer 'energy special claim or use' (http://purl.obolibrary.org/obo/FOODON_03510045)
                 "@en)
@@ -1379,7 +1345,6 @@ AnnotationAssertion(owl:deprecated obo:FOODON_03311253 "true"^^xsd:boolean)
 
 AnnotationAssertion(obo:IAO_0100001 obo:FOODON_03311310 "http://purl.obolibrary.org/obo/FOODON_03311309")
 AnnotationAssertion(oboInOwl:hasDbXref obo:FOODON_03311310 "SUBSET_SIREN:F11310")
-AnnotationAssertion(oboInOwl:inSubset obo:FOODON_03311310 "subset_siren")
 AnnotationAssertion(rdfs:comment obo:FOODON_03311310 "SIREN DB annotation:
 * has quality 'solid' (http://purl.obolibrary.org/obo/FOODON_03430151)
 * has quality 'fully heat-treated' (http://purl.obolibrary.org/obo/FOODON_03440014)
@@ -1396,7 +1361,6 @@ AnnotationAssertion(owl:deprecated obo:FOODON_03311310 "true"^^xsd:boolean)
 
 AnnotationAssertion(obo:IAO_0000231 obo:FOODON_03311368 "Imported from SIREN, no clear practical usage.")
 AnnotationAssertion(oboInOwl:hasDbXref obo:FOODON_03311368 "SUBSET_SIREN:F11368")
-AnnotationAssertion(oboInOwl:inSubset obo:FOODON_03311368 "subset_siren")
 AnnotationAssertion(rdfs:comment obo:FOODON_03311368 "SIREN DB annotation:
 * has quality 'finely ground' (http://purl.obolibrary.org/obo/FOODON_03430106)
                 "@en)
@@ -1413,7 +1377,6 @@ AnnotationAssertion(owl:deprecated obo:FOODON_03311443 "true"^^xsd:boolean)
 
 AnnotationAssertion(obo:IAO_0100001 obo:FOODON_03311447 "http://purl.obolibrary.org/obo/FOODON_00001127"^^xsd:anyURI)
 AnnotationAssertion(oboInOwl:hasDbXref obo:FOODON_03311447 "SUBSET_SIREN:F11447")
-AnnotationAssertion(oboInOwl:inSubset obo:FOODON_03311447 "subset_siren")
 AnnotationAssertion(rdfs:comment obo:FOODON_03311447 "SIREN DB annotation:
 * has quality 'solid' (http://purl.obolibrary.org/obo/FOODON_03430151)
 * derives from 'curd' (http://purl.obolibrary.org/obo/FOODON_03420245)
@@ -1426,7 +1389,6 @@ AnnotationAssertion(owl:deprecated obo:FOODON_03311447 "true"^^xsd:boolean)
 
 AnnotationAssertion(obo:IAO_0100001 obo:FOODON_03311490 "http://purl.obolibrary.org/obo/FOODON_03310623"^^xsd:anyURI)
 AnnotationAssertion(oboInOwl:hasDbXref obo:FOODON_03311490 "SUBSET_SIREN:F11490")
-AnnotationAssertion(oboInOwl:inSubset obo:FOODON_03311490 "subset_siren")
 AnnotationAssertion(rdfs:comment obo:FOODON_03311490 "SIREN DB annotation:
 * has quality 'whole, shape achieved by forming' (http://purl.obolibrary.org/obo/FOODON_03430147)
 * has quality 'not heat-treated' (http://purl.obolibrary.org/obo/FOODON_03440003)
@@ -1440,7 +1402,6 @@ AnnotationAssertion(owl:deprecated obo:FOODON_03311490 "true"^^xsd:boolean)
 
 AnnotationAssertion(obo:IAO_0100001 obo:FOODON_03311500 "http://purl.obolibrary.org/obo/FOODON_03316320"^^xsd:anyURI)
 AnnotationAssertion(oboInOwl:hasDbXref obo:FOODON_03311500 "SUBSET_SIREN:F11500")
-AnnotationAssertion(oboInOwl:inSubset obo:FOODON_03311500 "subset_siren")
 AnnotationAssertion(rdfs:comment obo:FOODON_03311500 "SIREN DB annotation:
 * has quality 'solid' (http://purl.obolibrary.org/obo/FOODON_03430151)
 * derives from 'animal body or body part' (http://purl.obolibrary.org/obo/FOODON_03420127)
@@ -1455,7 +1416,6 @@ AnnotationAssertion(owl:deprecated obo:FOODON_03311500 "true"^^xsd:boolean)
 AnnotationAssertion(obo:IAO_0000114 obo:FOODON_03311544 obo:IAO_0000428)
 AnnotationAssertion(obo:IAO_0100001 obo:FOODON_03311544 "http://purl.obolibrary.org/obo/FOODON_03304640"^^xsd:anyURI)
 AnnotationAssertion(oboInOwl:hasDbXref obo:FOODON_03311544 "SUBSET_SIREN:F11544")
-AnnotationAssertion(oboInOwl:inSubset obo:FOODON_03311544 "subset_siren")
 AnnotationAssertion(rdfs:comment obo:FOODON_03311544 "SIREN DB annotation:
 * has quality 'divided into pieces, thickness <0.3 cm.' (http://purl.obolibrary.org/obo/FOODON_03430100)
 * has quality 'not heat-treated' (http://purl.obolibrary.org/obo/FOODON_03440003)
@@ -1477,7 +1437,6 @@ AnnotationAssertion(owl:deprecated obo:FOODON_03311568 "true"^^xsd:boolean)
 
 AnnotationAssertion(obo:IAO_0100001 obo:FOODON_03311569 "http://purl.obolibrary.org/obo/FOODON_03301675"^^xsd:anyURI)
 AnnotationAssertion(oboInOwl:hasDbXref obo:FOODON_03311569 "SUBSET_SIREN:F11569")
-AnnotationAssertion(oboInOwl:inSubset obo:FOODON_03311569 "subset_siren")
 AnnotationAssertion(rdfs:label obo:FOODON_03311569 "obsolete: red bean (cooked, canned)"@en)
 AnnotationAssertion(owl:deprecated obo:FOODON_03311569 "true"^^xsd:boolean)
 
@@ -1497,7 +1456,6 @@ AnnotationAssertion(owl:deprecated obo:FOODON_03311739 "true"^^xsd:boolean)
 
 AnnotationAssertion(obo:IAO_0100001 obo:FOODON_03311753 "http://purl.obolibrary.org/obo/FOODON_03411198"^^xsd:anyURI)
 AnnotationAssertion(oboInOwl:hasDbXref obo:FOODON_03311753 "SUBSET_SIREN:F11753")
-AnnotationAssertion(oboInOwl:inSubset obo:FOODON_03311753 "subset_siren")
 AnnotationAssertion(rdfs:comment obo:FOODON_03311753 "SIREN DB annotation:
 * has quality 'solid' (http://purl.obolibrary.org/obo/FOODON_03430151)
 * has quality 'meat color, undesignated or unknown (deprecated)' (http://purl.obolibrary.org/obo/FOODON_03530003)
@@ -1530,7 +1488,6 @@ AnnotationAssertion(owl:deprecated obo:FOODON_03311853 "true"^^xsd:boolean)
 # Class: obo:FOODON_03315008 (obsolete: fats or oils)
 
 AnnotationAssertion(obo:IAO_0100001 obo:FOODON_03315008 "http://purl.obolibrary.org/obo/FOODON_03420190"^^xsd:anyURI)
-AnnotationAssertion(oboInOwl:inSubset obo:FOODON_03315008 "subset_siren")
 AnnotationAssertion(rdfs:label obo:FOODON_03315008 "obsolete: fats or oils"@en)
 AnnotationAssertion(owl:deprecated obo:FOODON_03315008 "true"^^xsd:boolean)
 
@@ -1538,7 +1495,6 @@ AnnotationAssertion(owl:deprecated obo:FOODON_03315008 "true"^^xsd:boolean)
 
 AnnotationAssertion(obo:IAO_0100001 obo:FOODON_03315014 "http://purl.obolibrary.org/obo/FOODON_00002268"^^xsd:anyURI)
 AnnotationAssertion(oboInOwl:hasDbXref obo:FOODON_03315014 "SUBSET_SIREN:F15014")
-AnnotationAssertion(oboInOwl:inSubset obo:FOODON_03315014 "subset_siren")
 AnnotationAssertion(rdfs:comment obo:FOODON_03315014 "SIREN DB annotation:
 * derives from 'part of plant' (http://purl.obolibrary.org/obo/FOODON_03420174)
         "@en)
@@ -1549,7 +1505,6 @@ AnnotationAssertion(owl:deprecated obo:FOODON_03315014 "true"^^xsd:boolean)
 
 AnnotationAssertion(obo:IAO_0100001 obo:FOODON_03315088 "http://purl.obolibrary.org/obo/FOODON_00001878"^^xsd:anyURI)
 AnnotationAssertion(oboInOwl:hasDbXref obo:FOODON_03315088 "SUBSET_SIREN:F15088")
-AnnotationAssertion(oboInOwl:inSubset obo:FOODON_03315088 "subset_siren")
 AnnotationAssertion(rdfs:comment obo:FOODON_03315088 "SIREN DB annotation:
 * derives from 'milk or milk component' (http://purl.obolibrary.org/obo/FOODON_03420113)
 * formed as a result of 'food aeration process' (http://purl.obolibrary.org/obo/FOODON_03460178)
@@ -1568,7 +1523,6 @@ AnnotationAssertion(owl:deprecated obo:FOODON_03315111 "true"^^xsd:boolean)
 
 AnnotationAssertion(obo:IAO_0100001 obo:FOODON_03315120 "http://purl.obolibrary.org/obo/FOODON_03302054"^^xsd:anyURI)
 AnnotationAssertion(oboInOwl:hasDbXref obo:FOODON_03315120 "SUBSET_SIREN:F15120")
-AnnotationAssertion(oboInOwl:inSubset obo:FOODON_03315120 "subset_siren")
 AnnotationAssertion(rdfs:comment obo:FOODON_03315120 "SIREN DB annotation:
 * surrounded by 'can, bottle or jar' (http://purl.obolibrary.org/obo/FOODON_03490194)
 * has quality 'whole, natural shape' (http://purl.obolibrary.org/obo/FOODON_03430150)
@@ -1583,7 +1537,6 @@ AnnotationAssertion(owl:deprecated obo:FOODON_03315120 "true"^^xsd:boolean)
 # Class: obo:FOODON_03315176 (obsolete: sucrose foodon)
 
 AnnotationAssertion(obo:IAO_0100001 obo:FOODON_03315176 "http://purl.obolibrary.org/obo/CHEBI_17992"^^xsd:anyURI)
-AnnotationAssertion(oboInOwl:inSubset obo:FOODON_03315176 "subset_siren")
 AnnotationAssertion(rdfs:label obo:FOODON_03315176 "obsolete: sucrose foodon"@en)
 AnnotationAssertion(owl:deprecated obo:FOODON_03315176 "true"^^xsd:boolean)
 
@@ -1591,7 +1544,6 @@ AnnotationAssertion(owl:deprecated obo:FOODON_03315176 "true"^^xsd:boolean)
 
 AnnotationAssertion(obo:IAO_0000231 obo:FOODON_03315242 "It is unclear what this is supposed to accomplish semantically."@en)
 AnnotationAssertion(oboInOwl:hasDbXref obo:FOODON_03315242 "SUBSET_SIREN:F15242")
-AnnotationAssertion(oboInOwl:inSubset obo:FOODON_03315242 "subset_siren")
 AnnotationAssertion(rdfs:comment obo:FOODON_03315242 "SIREN DB annotation:
 * derives from 'root, tuber or bulb' (http://purl.obolibrary.org/obo/FOODON_03420238)
         "@en)
@@ -1602,7 +1554,6 @@ AnnotationAssertion(owl:deprecated obo:FOODON_03315242 "true"^^xsd:boolean)
 
 AnnotationAssertion(obo:IAO_0100001 obo:FOODON_03315257 "http://purl.obolibrary.org/obo/FOODON_00001868")
 AnnotationAssertion(oboInOwl:hasDbXref obo:FOODON_03315257 "SUBSET_SIREN:F15257")
-AnnotationAssertion(oboInOwl:inSubset obo:FOODON_03315257 "subset_siren")
 AnnotationAssertion(rdfs:label obo:FOODON_03315257 "obsolete: filling"@en)
 AnnotationAssertion(owl:deprecated obo:FOODON_03315257 "true"^^xsd:boolean)
 
@@ -1610,7 +1561,6 @@ AnnotationAssertion(owl:deprecated obo:FOODON_03315257 "true"^^xsd:boolean)
 
 AnnotationAssertion(obo:IAO_0100001 obo:FOODON_03315262 "http://purl.obolibrary.org/obo/FOODON_00001712"^^xsd:anyURI)
 AnnotationAssertion(oboInOwl:hasDbXref obo:FOODON_03315262 "SUBSET_SIREN:F15262")
-AnnotationAssertion(oboInOwl:inSubset obo:FOODON_03315262 "subset_siren")
 AnnotationAssertion(rdfs:comment obo:FOODON_03315262 "SIREN DB annotation:
 * has quality 'solid' (http://purl.obolibrary.org/obo/FOODON_03430151)
 * derives from 'milk or milk component' (http://purl.obolibrary.org/obo/FOODON_03420113)
@@ -1625,7 +1575,6 @@ AnnotationAssertion(owl:deprecated obo:FOODON_03315262 "true"^^xsd:boolean)
 
 AnnotationAssertion(obo:IAO_0000231 obo:FOODON_03315285 "Usefulness not clear.  Term had been imported from LanguaL SIREN database"@en)
 AnnotationAssertion(oboInOwl:hasDbXref obo:FOODON_03315285 "SUBSET_SIREN:F15285")
-AnnotationAssertion(oboInOwl:inSubset obo:FOODON_03315285 "subset_siren")
 AnnotationAssertion(rdfs:comment obo:FOODON_03315285 "SIREN DB annotation:
 * has consumer 'nutrition-related claim or use' (http://purl.obolibrary.org/obo/FOODON_03510065)
                 "@en)
@@ -1637,7 +1586,6 @@ AnnotationAssertion(owl:deprecated obo:FOODON_03315285 "true"^^xsd:boolean)
 AnnotationAssertion(obo:IAO_0000114 obo:FOODON_03315289 obo:IAO_0000428)
 AnnotationAssertion(obo:IAO_0100001 obo:FOODON_03315289 "http://purl.obolibrary.org/obo/FOODON_03316006"@en)
 AnnotationAssertion(oboInOwl:hasDbXref obo:FOODON_03315289 "SUBSET_SIREN:F15289")
-AnnotationAssertion(oboInOwl:inSubset obo:FOODON_03315289 "subset_siren")
 AnnotationAssertion(rdfs:comment obo:FOODON_03315289 "SIREN DB annotation:
 * has quality 'liquid' (http://purl.obolibrary.org/obo/FOODON_03430130)
 * derives from 'fruit part' (http://purl.obolibrary.org/obo/FOODON_03420167)
@@ -1649,7 +1597,6 @@ AnnotationAssertion(owl:deprecated obo:FOODON_03315289 "true"^^xsd:boolean)
 
 AnnotationAssertion(obo:IAO_0100001 obo:FOODON_03315345 "http://purl.obolibrary.org/obo/FOODON_00001045")
 AnnotationAssertion(oboInOwl:hasDbXref obo:FOODON_03315345 "SUBSET_SIREN:F15345")
-AnnotationAssertion(oboInOwl:inSubset obo:FOODON_03315345 "subset_siren")
 AnnotationAssertion(rdfs:comment obo:FOODON_03315345 "SIREN DB annotation:
 * has quality 'liquid, high viscosity' (http://purl.obolibrary.org/obo/FOODON_03430102)
 * has quality 'partially heat-treated' (http://purl.obolibrary.org/obo/FOODON_03440018)
@@ -1684,7 +1631,6 @@ AnnotationAssertion(owl:deprecated obo:FOODON_03315383 "true"^^xsd:boolean)
 AnnotationAssertion(obo:IAO_0000114 obo:FOODON_03315398 obo:IAO_0000428)
 AnnotationAssertion(obo:IAO_0100001 obo:FOODON_03315398 "http://purl.obolibrary.org/obo/FOODON_00001139"^^xsd:anyURI)
 AnnotationAssertion(oboInOwl:hasDbXref obo:FOODON_03315398 "SUBSET_SIREN:F15398")
-AnnotationAssertion(oboInOwl:inSubset obo:FOODON_03315398 "subset_siren")
 AnnotationAssertion(rdfs:comment obo:FOODON_03315398 "SIREN DB annotation:
 * has quality 'liquid' (http://purl.obolibrary.org/obo/FOODON_03430130)
 * derives from 'seed, skin removed, germ present' (http://purl.obolibrary.org/obo/FOODON_03420132)
@@ -1697,7 +1643,6 @@ AnnotationAssertion(owl:deprecated obo:FOODON_03315398 "true"^^xsd:boolean)
 
 AnnotationAssertion(obo:IAO_0100001 obo:FOODON_03315423 "http://purl.obolibrary.org/obo/FOODON_03315334"^^xsd:anyURI)
 AnnotationAssertion(oboInOwl:hasDbXref obo:FOODON_03315423 "SUBSET_SIREN:F15423")
-AnnotationAssertion(oboInOwl:inSubset obo:FOODON_03315423 "subset_siren")
 AnnotationAssertion(rdfs:comment obo:FOODON_03315423 "SIREN DB annotation:
 * has quality 'liquid, low viscosity, with no visible particles' (http://purl.obolibrary.org/obo/FOODON_03430123)
 * has quality 'not heat-treated' (http://purl.obolibrary.org/obo/FOODON_03440003)
@@ -1713,7 +1658,6 @@ AnnotationAssertion(owl:deprecated obo:FOODON_03315423 "true"^^xsd:boolean)
 AnnotationAssertion(obo:IAO_0000114 obo:FOODON_03315488 obo:IAO_0000428)
 AnnotationAssertion(obo:IAO_0100001 obo:FOODON_03315488 "FOODON_00001217"^^xsd:anyURI)
 AnnotationAssertion(oboInOwl:hasDbXref obo:FOODON_03315488 "SUBSET_SIREN:F15488")
-AnnotationAssertion(oboInOwl:inSubset obo:FOODON_03315488 "subset_siren")
 AnnotationAssertion(rdfs:comment obo:FOODON_03315488 "SIREN DB annotation:
 * has quality 'liquid, low viscosity, with no visible particles' (http://purl.obolibrary.org/obo/FOODON_03430123)
 * derives from 'milk (mammary secretion)' (http://purl.obolibrary.org/obo/UBERON_0001913)
@@ -1739,7 +1683,6 @@ AnnotationAssertion(owl:deprecated obo:FOODON_03315561 "true"^^xsd:boolean)
 
 AnnotationAssertion(obo:IAO_0100001 obo:FOODON_03315656 "http://purl.obolibrary.org/obo/FOODON_03315658"^^xsd:anyURI)
 AnnotationAssertion(oboInOwl:hasDbXref obo:FOODON_03315656 "SUBSET_SIREN:F15656")
-AnnotationAssertion(oboInOwl:inSubset obo:FOODON_03315656 "subset_siren")
 AnnotationAssertion(rdfs:comment obo:FOODON_03315656 "SIREN DB annotation:
 * has quality 'solid' (http://purl.obolibrary.org/obo/FOODON_03430151)
 * derives from 'skeletal meat part' (http://purl.obolibrary.org/obo/FOODON_03420175)
@@ -1751,7 +1694,6 @@ AnnotationAssertion(owl:deprecated obo:FOODON_03315656 "true"^^xsd:boolean)
 
 AnnotationAssertion(obo:IAO_0100001 obo:FOODON_03315686 "http://purl.obolibrary.org/obo/FOODON_00001276"^^xsd:anyURI)
 AnnotationAssertion(oboInOwl:hasDbXref obo:FOODON_03315686 "SUBSET_SIREN:F15686")
-AnnotationAssertion(oboInOwl:inSubset obo:FOODON_03315686 "subset_siren")
 AnnotationAssertion(rdfs:comment obo:FOODON_03315686 "SIREN DB annotation:
 * has quality 'liquid, low viscosity' (http://purl.obolibrary.org/obo/FOODON_03430109)
 * derives from 'fruit part' (http://purl.obolibrary.org/obo/FOODON_03420167)
@@ -1763,7 +1705,6 @@ AnnotationAssertion(owl:deprecated obo:FOODON_03315686 "true"^^xsd:boolean)
 
 AnnotationAssertion(obo:IAO_0100001 obo:FOODON_03315919 "http://purl.obolibrary.org/obo/FOODON_00001280"@en)
 AnnotationAssertion(oboInOwl:hasDbXref obo:FOODON_03315919 "SUBSET_SIREN:F15919")
-AnnotationAssertion(oboInOwl:inSubset obo:FOODON_03315919 "subset_siren")
 AnnotationAssertion(rdfs:comment obo:FOODON_03315919 "SIREN DB annotation:
 * formed as a result of 'microbial/enzymatic modification process' (http://purl.obolibrary.org/obo/FOODON_03460119)
 * formed as a result of 'curing or aging process' (http://purl.obolibrary.org/obo/FOODON_03460253)
@@ -1782,7 +1723,6 @@ AnnotationAssertion(owl:deprecated obo:FOODON_03315941 "true"^^xsd:boolean)
 
 AnnotationAssertion(obo:IAO_0000114 obo:FOODON_03316064 obo:IAO_0000428)
 AnnotationAssertion(oboInOwl:hasDbXref obo:FOODON_03316064 "SUBSET_SIREN:F16064")
-AnnotationAssertion(oboInOwl:inSubset obo:FOODON_03316064 "subset_siren")
 AnnotationAssertion(rdfs:comment obo:FOODON_03316064 "SIREN DB annotation:
 * has quality 'semisolid with smooth consistency' (http://purl.obolibrary.org/obo/FOODON_03430119)
 * has quality 'fully heat-treated' (http://purl.obolibrary.org/obo/FOODON_03440014)
@@ -1796,7 +1736,6 @@ AnnotationAssertion(owl:deprecated obo:FOODON_03316064 "true"^^xsd:boolean)
 
 AnnotationAssertion(obo:IAO_0100001 obo:FOODON_03316068 obo:FOODON_03301119)
 AnnotationAssertion(oboInOwl:hasDbXref obo:FOODON_03316068 "SUBSET_SIREN:F16068")
-AnnotationAssertion(oboInOwl:inSubset obo:FOODON_03316068 "subset_siren")
 AnnotationAssertion(rdfs:comment obo:FOODON_03316068 "SIREN DB annotation:
 * has quality 'solid' (http://purl.obolibrary.org/obo/FOODON_03430151)
 * has quality 'fully heat-treated' (http://purl.obolibrary.org/obo/FOODON_03440014)
@@ -1811,7 +1750,6 @@ AnnotationAssertion(owl:deprecated obo:FOODON_03316068 "true"^^xsd:boolean)
 
 AnnotationAssertion(obo:IAO_0100001 obo:FOODON_03316217 "http://purl.obolibrary.org/obo/FOODON_03306381"^^xsd:anyURI)
 AnnotationAssertion(oboInOwl:hasDbXref obo:FOODON_03316217 "SUBSET_SIREN:F16217")
-AnnotationAssertion(oboInOwl:inSubset obo:FOODON_03316217 "subset_siren")
 AnnotationAssertion(rdfs:comment obo:FOODON_03316217 "SIREN DB annotation:
 * has quality 'semisolid with solid pieces' (http://purl.obolibrary.org/obo/FOODON_03430134)
 * has quality 'fully heat-treated' (http://purl.obolibrary.org/obo/FOODON_03440014)
@@ -1824,7 +1762,6 @@ AnnotationAssertion(owl:deprecated obo:FOODON_03316217 "true"^^xsd:boolean)
 
 AnnotationAssertion(obo:IAO_0100001 obo:FOODON_03316259 "http://purl.obolibrary.org/obo/FOODON_03317185"^^xsd:anyURI)
 AnnotationAssertion(oboInOwl:hasDbXref obo:FOODON_03316259 "SUBSET_SIREN:F16259")
-AnnotationAssertion(oboInOwl:inSubset obo:FOODON_03316259 "subset_siren")
 AnnotationAssertion(rdfs:comment obo:FOODON_03316259 "SIREN DB annotation:
 * has consumer 'infant or toddler consumer' (http://purl.obolibrary.org/obo/FOODON_03510020)
 * has consumer 'dietary claim or use' (http://purl.obolibrary.org/obo/FOODON_03510023)
@@ -1842,7 +1779,6 @@ AnnotationAssertion(owl:deprecated obo:FOODON_03316261 "true"^^xsd:boolean)
 
 AnnotationAssertion(obo:IAO_0100001 obo:FOODON_03316493 "http://purl.obolibrary.org/obo/FOODON_03301811")
 AnnotationAssertion(oboInOwl:hasDbXref obo:FOODON_03316493 "SUBSET_SIREN:F16493")
-AnnotationAssertion(oboInOwl:inSubset obo:FOODON_03316493 "subset_siren")
 AnnotationAssertion(rdfs:comment obo:FOODON_03316493 "SIREN DB annotation:
 * has quality 'semisolid with smooth consistency' (http://purl.obolibrary.org/obo/FOODON_03430119)
 * has quality 'fully heat-treated' (http://purl.obolibrary.org/obo/FOODON_03440014)
@@ -1862,7 +1798,6 @@ AnnotationAssertion(owl:deprecated obo:FOODON_03316510 "true"^^xsd:boolean)
 AnnotationAssertion(obo:IAO_0000114 obo:FOODON_03316538 obo:IAO_0000428)
 AnnotationAssertion(obo:IAO_0100001 obo:FOODON_03316538 "http://purl.obolibrary.org/obo/FOODON_03301452"@en)
 AnnotationAssertion(oboInOwl:hasDbXref obo:FOODON_03316538 "SUBSET_SIREN:F16538")
-AnnotationAssertion(oboInOwl:inSubset obo:FOODON_03316538 "subset_siren")
 AnnotationAssertion(rdfs:comment obo:FOODON_03316538 "SIREN DB annotation:
 * has quality 'fully heat-treated' (http://purl.obolibrary.org/obo/FOODON_03440014)
 * derives from 'fruit, peel undetermined, core, pit or seed present' (http://purl.obolibrary.org/obo/FOODON_03420163)
@@ -1876,7 +1811,6 @@ AnnotationAssertion(owl:deprecated obo:FOODON_03316538 "true"^^xsd:boolean)
 
 AnnotationAssertion(obo:IAO_0100001 obo:FOODON_03316591 "http://purl.obolibrary.org/obo/FOODON_00001007"^^xsd:anyURI)
 AnnotationAssertion(oboInOwl:hasDbXref obo:FOODON_03316591 "SUBSET_SIREN:F16591")
-AnnotationAssertion(oboInOwl:inSubset obo:FOODON_03316591 "subset_siren")
 AnnotationAssertion(rdfs:comment obo:FOODON_03316591 "SIREN DB annotation:
 * has quality 'solid' (http://purl.obolibrary.org/obo/FOODON_03430151)
 * derives from 'meat part of animal' (http://purl.obolibrary.org/obo/FOODON_03420103)
@@ -1895,7 +1829,6 @@ AnnotationAssertion(owl:deprecated obo:FOODON_03316611 "true"^^xsd:boolean)
 
 AnnotationAssertion(obo:IAO_0100001 obo:FOODON_03316656 "http://purl.obolibrary.org/obo/FOODON_00001013"^^xsd:anyURI)
 AnnotationAssertion(oboInOwl:hasDbXref obo:FOODON_03316656 "SUBSET_SIREN:F16656")
-AnnotationAssertion(oboInOwl:inSubset obo:FOODON_03316656 "subset_siren")
 AnnotationAssertion(rdfs:comment obo:FOODON_03316656 "SIREN DB annotation:
 * has quality 'solid' (http://purl.obolibrary.org/obo/FOODON_03430151)
 * derives from 'curd' (http://purl.obolibrary.org/obo/FOODON_03420245)
@@ -1914,7 +1847,6 @@ AnnotationAssertion(owl:deprecated obo:FOODON_03316692 "true"^^xsd:boolean)
 
 AnnotationAssertion(obo:IAO_0100001 obo:FOODON_03316785 "http://purl.obolibrary.org/obo/FOODON_03307625"^^xsd:anyURI)
 AnnotationAssertion(oboInOwl:hasDbXref obo:FOODON_03316785 "SUBSET_SIREN:F16785")
-AnnotationAssertion(oboInOwl:inSubset obo:FOODON_03316785 "subset_siren")
 AnnotationAssertion(rdfs:comment obo:FOODON_03316785 "SIREN DB annotation:
 * has quality 'liquid, low viscosity' (http://purl.obolibrary.org/obo/FOODON_03430109)
 * has quality 'partially heat-treated' (http://purl.obolibrary.org/obo/FOODON_03440018)
@@ -1931,7 +1863,6 @@ AnnotationAssertion(owl:deprecated obo:FOODON_03316785 "true"^^xsd:boolean)
 AnnotationAssertion(obo:IAO_0000114 obo:FOODON_03316938 obo:IAO_0000428)
 AnnotationAssertion(obo:IAO_0100001 obo:FOODON_03316938 "http://purl.obolibrary.org/obo/FOODON_03301059"^^xsd:anyURI)
 AnnotationAssertion(oboInOwl:hasDbXref obo:FOODON_03316938 "SUBSET_SIREN:F16938")
-AnnotationAssertion(oboInOwl:inSubset obo:FOODON_03316938 "subset_siren")
 AnnotationAssertion(rdfs:comment obo:FOODON_03316938 "SIREN DB annotation:
 * has quality 'divided into pieces, thickness <0.3 cm.' (http://purl.obolibrary.org/obo/FOODON_03430100)
 * derives from 'leaf' (http://purl.obolibrary.org/obo/FOODON_03420200)
@@ -1953,7 +1884,6 @@ AnnotationAssertion(owl:deprecated obo:FOODON_03316942 "true"^^xsd:boolean)
 AnnotationAssertion(obo:IAO_0000114 obo:FOODON_03316967 obo:IAO_0000428)
 AnnotationAssertion(obo:IAO_0100001 obo:FOODON_03316967 obo:FOODON_03305793)
 AnnotationAssertion(oboInOwl:hasDbXref obo:FOODON_03316967 "SUBSET_SIREN:F16967")
-AnnotationAssertion(oboInOwl:inSubset obo:FOODON_03316967 "subset_siren")
 AnnotationAssertion(rdfs:comment obo:FOODON_03316967 "SIREN DB annotation:
 * has quality 'liquid, high viscosity, with no visible particles' (http://purl.obolibrary.org/obo/FOODON_03430139)
 * has quality 'partially heat-treated' (http://purl.obolibrary.org/obo/FOODON_03440018)
@@ -1987,7 +1917,6 @@ AnnotationAssertion(owl:deprecated obo:FOODON_03316990 "true"^^xsd:boolean)
 
 AnnotationAssertion(obo:IAO_0100001 obo:FOODON_03317079 "http://purl.obolibrary.org/obo/FOODON_03315615")
 AnnotationAssertion(oboInOwl:hasDbXref obo:FOODON_03317079 "SUBSET_SIREN:F17079")
-AnnotationAssertion(oboInOwl:inSubset obo:FOODON_03317079 "subset_siren")
 AnnotationAssertion(rdfs:comment obo:FOODON_03317079 "SIREN DB annotation:
 * has quality 'solid' (http://purl.obolibrary.org/obo/FOODON_03430151)
 * derives from 'fruit part' (http://purl.obolibrary.org/obo/FOODON_03420167)
@@ -2004,7 +1933,6 @@ AnnotationAssertion(owl:deprecated obo:FOODON_03317125 "true"^^xsd:boolean)
 # Class: obo:FOODON_03317130 (obsolete: blood)
 
 AnnotationAssertion(obo:IAO_0100001 obo:FOODON_03317130 "http://purl.obolibrary.org/obo/UBERON_0000178"^^xsd:anyURI)
-AnnotationAssertion(oboInOwl:inSubset obo:FOODON_03317130 "subset_siren")
 AnnotationAssertion(rdfs:label obo:FOODON_03317130 "obsolete: blood"@en)
 AnnotationAssertion(owl:deprecated obo:FOODON_03317130 "true"^^xsd:boolean)
 
@@ -2012,7 +1940,6 @@ AnnotationAssertion(owl:deprecated obo:FOODON_03317130 "true"^^xsd:boolean)
 
 AnnotationAssertion(obo:IAO_0100001 obo:FOODON_03317239 "http://purl.obolibrary.org/obo/FOODON_00002066"^^xsd:anyURI)
 AnnotationAssertion(oboInOwl:hasDbXref obo:FOODON_03317239 "SUBSET_SIREN:F17239")
-AnnotationAssertion(oboInOwl:inSubset obo:FOODON_03317239 "subset_siren")
 AnnotationAssertion(rdfs:comment obo:FOODON_03317239 "SIREN DB annotation:
 * has quality 'solid' (http://purl.obolibrary.org/obo/FOODON_03430151)
 * derives from 'fruit part' (http://purl.obolibrary.org/obo/FOODON_03420167)
@@ -2025,7 +1952,6 @@ AnnotationAssertion(owl:deprecated obo:FOODON_03317239 "true"^^xsd:boolean)
 AnnotationAssertion(obo:IAO_0000117 obo:FOODON_03317240 "Damion Dooley"@en)
 AnnotationAssertion(obo:IAO_0000231 obo:FOODON_03317240 "This \"fruit yoghurt\" SIREN item F17240 has a \"partially heat treated\" quality, whereas SIREN [J0135] \"yoghurt with fruit\" is \"pasteurized by heat\". The issue is that both could be refering to the heat treatment of milk or fruit."@en)
 AnnotationAssertion(oboInOwl:hasDbXref obo:FOODON_03317240 "SUBSET_SIREN:F17240")
-AnnotationAssertion(oboInOwl:inSubset obo:FOODON_03317240 "subset_siren")
 AnnotationAssertion(rdfs:comment obo:FOODON_03317240 "SIREN DB annotation:
 * has quality 'semisolid with solid pieces' (http://purl.obolibrary.org/obo/FOODON_03430134)
 * derives from 'milk (mammary secretion)' (http://purl.obolibrary.org/obo/UBERON_0001913)
@@ -2038,7 +1964,6 @@ AnnotationAssertion(owl:deprecated obo:FOODON_03317240 "true"^^xsd:boolean)
 # Class: obo:FOODON_03317291 (obsolete: beef sausage fresh)
 
 AnnotationAssertion(obo:IAO_0100001 obo:FOODON_03317291 "http://purl.obolibrary.org/obo/FOODON_03317281"@en)
-AnnotationAssertion(oboInOwl:inSubset obo:FOODON_03317291 "subset_siren")
 AnnotationAssertion(rdfs:comment obo:FOODON_03317291 "SIREN DB annotation:
 * has quality 'solid' (http://purl.obolibrary.org/obo/FOODON_03430151)
 * derives from 'skeletal meat part, without bone or shell' (http://purl.obolibrary.org/obo/FOODON_03420125)
@@ -2051,7 +1976,6 @@ AnnotationAssertion(owl:deprecated obo:FOODON_03317291 "true"^^xsd:boolean)
 
 AnnotationAssertion(obo:IAO_0100001 obo:FOODON_03317296 "http://purl.obolibrary.org/obo/FOODON_03302012"@en)
 AnnotationAssertion(oboInOwl:hasDbXref obo:FOODON_03317296 "SUBSET_SIREN:F17296")
-AnnotationAssertion(oboInOwl:inSubset obo:FOODON_03317296 "subset_siren")
 AnnotationAssertion(rdfs:comment obo:FOODON_03317296 "SIREN DB annotation:
 * has quality 'whole, shape achieved by forming' (http://purl.obolibrary.org/obo/FOODON_03430147)
 * derives from 'meat part of animal' (http://purl.obolibrary.org/obo/FOODON_03420103)
@@ -2102,7 +2026,6 @@ AnnotationAssertion(owl:deprecated obo:FOODON_03317604 "true"^^xsd:boolean)
 
 AnnotationAssertion(obo:IAO_0100001 obo:FOODON_03317614 "http://purl.obolibrary.org/obo/FOODON_00001013"^^xsd:anyURI)
 AnnotationAssertion(oboInOwl:hasDbXref obo:FOODON_03317614 "SUBSET_SIREN:F17614")
-AnnotationAssertion(oboInOwl:inSubset obo:FOODON_03317614 "subset_siren")
 AnnotationAssertion(rdfs:comment obo:FOODON_03317614 "SIREN DB annotation:
 * derives from 'curd' (http://purl.obolibrary.org/obo/FOODON_03420245)
 * formed as a result of 'microbial/enzymatic modification process' (http://purl.obolibrary.org/obo/FOODON_03460119)
@@ -2114,7 +2037,6 @@ AnnotationAssertion(owl:deprecated obo:FOODON_03317614 "true"^^xsd:boolean)
 
 AnnotationAssertion(obo:IAO_0100001 obo:FOODON_03317643 "http://purl.obolibrary.org/obo/FOODON_03430151"^^xsd:anyURI)
 AnnotationAssertion(oboInOwl:hasDbXref obo:FOODON_03317643 "SUBSET_SIREN:F17643")
-AnnotationAssertion(oboInOwl:inSubset obo:FOODON_03317643 "subset_siren")
 AnnotationAssertion(rdfs:comment obo:FOODON_03317643 "SIREN DB annotation:
 * has quality 'solid' (http://purl.obolibrary.org/obo/FOODON_03430151)
                 "@en)
