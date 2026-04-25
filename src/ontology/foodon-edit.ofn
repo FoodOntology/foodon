@@ -15790,6 +15790,10 @@ SubClassOf(obo:FOODON_00005741 obo:FOODON_00003560)
 
 SubClassOf(obo:FOODON_02010014 obo:FOODON_03302001)
 
+# Class: obo:FOODON_02010020 (animal carcass)
+
+SubClassOf(obo:FOODON_02010020 ObjectSomeValuesFrom(obo:RO_0000053 obo:PATO_0001422))
+
 # Class: obo:FOODON_02010026 (animal carcass (gutted))
 
 SubClassOf(obo:FOODON_02010026 obo:FOODON_00002708)
