@@ -6,4 +6,3 @@ SELECT ?term ?term_tracker ?term_tracker_type WHERE {
   FILTER(DATATYPE(?term_tracker) != xsd:anyURI)
   BIND(DATATYPE(?term_tracker) as ?term_tracker_type) 
 }
-

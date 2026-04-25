@@ -1,4 +1,4 @@
-Prefix(:=<http://purl.obolibrary.org/obo/foodon/imports/foodon_product_import.ofn#>)
+Prefix(:=<http://purl.obolibrary.org/obo/foodon/components/foodon_product_import.ofn#>)
 Prefix(obo:=<http://purl.obolibrary.org/obo/>)
 Prefix(owl:=<http://www.w3.org/2002/07/owl#>)
 Prefix(rdf:=<http://www.w3.org/1999/02/22-rdf-syntax-ns#>)
@@ -18,7 +18,7 @@ Prefix(wikipedia:=<https://en.wikipedia.org/wiki/>)
 Prefix(indexfungorum:=<http://www.indexfungorum.org/names/NamesRecord.asp?RecordID=>)
 
 
-Ontology(<http://purl.obolibrary.org/obo/foodon/imports/foodon_product_import.ofn>
+Ontology(<http://purl.obolibrary.org/obo/foodon/components/foodon_product_import.ofn>
 Annotation(dcterms:contributor "Damion Dooley"@en)
 Annotation(rdfs:comment "Food terms previously in ENVO are here.  This is also the home of all new foods that have component pieces or processes.  Raw ingredients and additives remain in the \"food source\" hierarchy.")
 

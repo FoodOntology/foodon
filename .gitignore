@@ -1,3 +1,6 @@
+# ODK-managed rules, do not modify
+# If you need to add your own ignore rules, you may do so below
+# the "End ODK-managed rules" marker at the end of this file.
 .DS_Store
 semantic.cache
 bin/
@@ -6,8 +9,24 @@ bin/
 *.tmp.obo
 *.tmp.owl
 *.tmp.json
+*-relation-graph.tsv.gz
+.template.db
 
 .github/token.txt
+
+/foodon.owl
+/foodon.obo
+/foodon.json
+/foodon.db
+/foodon-base.*
+/foodon-basic.*
+/foodon-full.*
+/foodon-simple.*
+/foodon-simple-non-classified.*
+/mappings/
+/patterns/
+/reports/
+/subsets/
 
 src/ontology/mirror
 src/ontology/mirror/*
@@ -16,6 +35,7 @@ src/ontology/reports/*
 src/ontology/foodon.owl
 src/ontology/foodon.obo
 src/ontology/foodon.json
+src/ontology/foodon.db
 src/ontology/foodon-base.*
 src/ontology/foodon-basic.*
 src/ontology/foodon-full.*
@@ -29,6 +49,7 @@ src/ontology/ontologyterms.txt
 src/ontology/simple_seed.txt
 src/ontology/patterns
 src/ontology/merged-foodon-edit.owl
+src/ontology/foodon-edit.properties
 
 src/ontology/target/
 src/ontology/tmp/*
@@ -44,6 +65,16 @@ src/patterns/data/**/*.ofn
 src/patterns/data/**/*.txt
 src/patterns/pattern_owl_seed.txt
 src/patterns/all_pattern_terms.txt
+
+# End of ODK-managed rules
+
+
+
+
+
+
+
+
 
 catalog-v001.xml
 src/ontology/catalog-v001.xml

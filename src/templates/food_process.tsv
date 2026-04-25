@@ -72,8 +72,7 @@ FOODON:00005459	FOODON:00005188	whale food product|oil	bowhead whale oil			Oil t
 FOODON:00005460	FOODON:00005189	fish oil	herring oil			Oil that is derived from herring.															https://orcid.org/0000-0001-5275-8866	USDA
 FOODON:00005454		whale food product|oil	beluga oil			Oil that is derived from beluga whale.																
 FOODON:00005461	FOODON:00005190	oil|cocoa food product	cocoa butter oil			Oil that is derived from the fat extracted from cocoa beans.															https://orcid.org/0000-0001-5275-8866	USDA
-FOODON:00005462	FOODON:00005191	tangerine juice	"tangerine juice (unpasteurized)
-"			Juice extracted from tangerines that has not undergone pasteurization.															https://orcid.org/0000-0001-5275-8866	USDA
+FOODON:00005462	FOODON:00005191	tangerine juice	"tangerine juice (unpasteurized)"			Juice extracted from tangerines that has not undergone pasteurization.															https://orcid.org/0000-0001-5275-8866	USDA
 FOODON:00005463	FOODON:00005192	apple juice	apple juice (unpasteurized)			Apple juice that has not undergone pasteurization.															https://orcid.org/0000-0001-5275-8866	USDA
 FOODON:00005464	FOODON:00005193	lemon juice	lemon juice (unpasteurized)			Lemon juice that has not undergone pasteurization.															https://orcid.org/0000-0001-5275-8866	USDA
 FOODON:00005465	FOODON:00005194	lime juice	lime juice (unpasteurized)			Lime juice that has not undergone pasteurization.															https://orcid.org/0000-0001-5275-8866	USDA
@@ -119,8 +118,7 @@ FOODON:00005497	FOODON:00005221	orange juice (liquid)	orange juice (without pulp
 FOODON:00005498	FOODON:00005222	pasta food product	corn pasta			Pasta that is made from corn flour.															https://orcid.org/0000-0001-5275-8866	USDA
 FOODON:03310185	FOODON:00005223	clarified butter	ghee			A type of clarified butter originating from the Indian subcontinent.					https://bioregistry.io/reference/siren:F10185										https://orcid.org/0000-0001-5275-8866	USDA
 FOODON:00005500	FOODON:00005224	flour | sesame food product	sesame flour			A flour that is made by grinding defatted sesame seeds.															https://orcid.org/0000-0001-5275-8866	USDA
-	FOODON:00005225	sunflower food product	sunflower seed butter			A seed butter that is made from ground sunflower seeds.						sunflower seed butter									https://orcid.org/0000-0001-5275-8866	USDA
-	FOODON:00005226  AND THIS HAS AN EXISTING PLANT_PARTS ID FOODON_00005219	coconut meat	coconut meat (dried)			Coconut meat that has been dried.															https://orcid.org/0000-0001-5275-8866	USDA
+FOODON:00005732	FOODON:00005225	sunflower food product	sunflower seed butter			A seed butter that is made from ground sunflower seeds.						sunflower seed butter									https://orcid.org/0000-0001-5275-8866	USDA
 FOODON:00005503	FOODON:00005227	vinegar food product	balsamic vinegar			A traditional Italian vinegar made wholly or partially from grape must, which is freshly crushed grape juice containing all the skins, seeds, and stems															https://orcid.org/0000-0001-5275-8866	USDA
 FOODON:00005504	FOODON:00005228	popcorn (popped)	popcorn (air-popped)			Popcorn that is popped using hot air.															https://orcid.org/0000-0001-5275-8866	USDA
 FOODON:00005505	FOODON:00005232	rice cereal	brown rice cereal			Cereal made from whole brown rice kernels, often processed for easier consumption.															https://orcid.org/0000-0001-5275-8866	USDA
@@ -139,9 +137,7 @@ FOODON:00005516	FOODON:00005244	tea (steeped)	hibiscus tea (steeped)			Steeped t
 FOODON:00005517	FOODON:00005245	tea (steeped)	oolong tea (steeped)			Steeped tea made from partially oxidized tea leaves (Camellia sinensis). 															https://orcid.org/0000-0001-5275-8866	USDA
 FOODON:00005518	FOODON:00005246	tea (decaffeinated) 	black tea (decaffeinated)			Black tea that has most of its caffeine removed through a decaffeination process, while preserving its flavor, aroma, and other characteristic properties.																USDA
 FOODON:00005444		tea (decaffeinated) 	green tea (decaffeinated)			Green tea that has most of its caffeine removed through a decaffeination process, while preserving its flavor, aroma, and other characteristic properties.																
-FOODON:00005519	FOODON:00005247	tea (dry, instant)	lemon tea (dry, instant)			"A beverage mix that quickly dissolves in hot or cold water to create a lemon-flavoured tea.
-OR 
-A beverage prepared by dissolving an instant mix in hot or cold water to create a lemon-flavored drink."																USDA
+FOODON:00005519	FOODON:00005247	tea (dry, instant)	lemon tea (dry, instant)			"A beverage mix that quickly dissolves in hot or cold water to create a lemon-flavoured tea."																USDA
 FOODON:00005520	FOODON:00005248	soybean flour	soybean flour (full fat)			A soybean flour that is made from whole soybeans, retaining all of the natural oils, which gives it a higher fat content.																USDA
 FOODON:00005521	FOODON:00005249	soybean flour	soybean flour (low fat)			A soybean flour made from whole soybeans that has been processed to reduce its natural oil content.																USDA
 	FOODON:00005250	flour| sesame food product	sesame flour DUPLICATE			A flour that is made by grinding defatted sesame seeds after oil extraction.																USDA
@@ -150,11 +146,10 @@ FOODON:00005524	FOODON:00005252	animal protein supplement	whey protein isolate		
 FOODON:00005525	FOODON:00005253	bratwurst	chicken bratwurst			Bratwurst that is made from chicken meat.																USDA
 FOODON:00005526	FOODON:00005254	bratwurst	pork bratwurst			Bratwurst that is made from pork.																USDA
 FOODON:00005527	FOODON:00005255	bratwurst	veal bratwurst			Bratwurst that is made from veal.																USDA
-FOODON:00005528	FOODON:00005256	wheat pasta food product	whole wheat pasta			Pasta made from whole wheat flour that retains the bran, germ, and endosperm of the wheat grain.																USDA
+FOODON:00005528	FOODON:00005256	wheat pasta	whole wheat pasta			Pasta made from whole wheat flour that retains the bran, germ, and endosperm of the wheat grain.																USDA
 FOODON:00005529	FOODON:00005257	white corn flour	whole grain white corn flour			Flour made from the whole kernels of white corn (Zea mays), which includes the bran, germ, and endosperm.																USDA
 FOODON:00005530	FOODON:00005258	white cornmeal	whole grain white cornmeal			Cornmeal made from whole white corn kernels (Zea mays), which includes the bran, germ, and endosperm																USDA
-FOODON:00005531	FOODON:00005259	"bacon (whole cut or pieces)|turkey meat food product
-"	turkey bacon			A bacon made from turkey meat.																USDA
+FOODON:00005531	FOODON:00005259	"bacon (whole cut or pieces)|turkey meat food product"	turkey bacon			A bacon made from turkey meat.																USDA
 FOODON:00005532	FOODON:00005260	milled durum wheat 	couscous			A dish made from durum wheat semolina, which is moistened and rolled into small granules, then steamed or boiled. 																USDA
 FOODON:00005533	FOODON:00005261	turkey sausage	turkey sausage (raw)			A turkey sausage that is raw.																USDA
 FOODON:00005534	FOODON:00005262	salami	beef salami			Salami made from beef.																USDA
@@ -199,8 +194,7 @@ FOODON:00005572	FOODON:00005300	processed pork meat food product	pork liver chee
 FOODON:00005573	FOODON:00005301	cereal grain food product	cereal grain beverage			A drink made from processed cereal grains, such as wheat, rice, barley, or oats, often combined with water, flavorings, and sweeteners.																USDA
 FOODON:00005574	FOODON:00005302	cereal grain beverage	cereal grain-based coffee substitute			A beverage made from roasted cereal grains that is intended to be used as an alternative to coffee.																USDA
 FOODON:00005575	FOODON:00005303	coffee beverage	espresso			A coffee beverage brewed by forcing hot water under high pressure through finely-ground coffee beans.																USDA
-FOODON:00005576	FOODON:00005304	espresso	"espresso (decaffeinated)
-"			An espresso coffee made using coffee beans from which most of the caffeine has been removed. 																
+FOODON:00005576	FOODON:00005304	espresso	"espresso (decaffeinated)"			An espresso coffee made using coffee beans from which most of the caffeine has been removed. 																
 FOODON:00005577	FOODON:00005305	soy protein isolate	soy protein isolate (potassium fortified)			A soy protein isolate that has been fortified with potassium, to enhance its mineral content while providing a high concentration of protein.																USDA
 FOODON:00005578	FOODON:00005306	soy protein	soy protein concentrate			A concentrated soy protein product derived from whole soybeans, containing approximately 70% protein. It is produced by partially removing fats and carbohydrates while retaining some natural nutrients and fiber, making it suitable for various food applications.																USDA
 FOODON:00005579	FOODON:00005307	cow whey	acid whey			A byproduct of cheese production, specifically from the manufacturing of soft cheeses, such as cottage cheese or cream cheese. It is characterized by a lower pH and higher acidity.	https://en.wikipedia.org/wiki/Whey					sour whey										USDA
@@ -228,7 +222,7 @@ FOODON:00005595		berry juice	chilchen			A beverage that is made from red berries
 				food (canned)' and 'derives from' some [part of plant or animal]																		
 FOODON:03301003		pineapple food product	pineapple (canned)	'food (canned)' and 'derives from' some pineapple						pineapple												
 FOODON:03301085		shrimp food product	shrimp (canned)	'food (canned)' and 'derives from' some shrimp				shrimp														
-FOODON:03301087		salmon food product	salmon (canned)	food (canned)' and 'derives from' some salmon				salmon														
-FOODON:03301151		mussel food product	mussel (canned)	food (canned)' and 'derives from' some mussel				mussel														
-FOODON:03301155		clam food product	clam (canned)	food (canned)' and 'derives from' some clam				clam														
-FOODON:03301165		albacore food product	albacore (canned)	food (canned)' and 'derives from' some albacore				albacore														
+FOODON:03301087		salmon food product	salmon (canned)	'food (canned)' and 'derives from' some salmon				salmon														
+FOODON:03301151		mussel food product	mussel (canned)	'food (canned)' and 'derives from' some mussel				mussel														
+FOODON:03301155		clam food product	clam (canned)	'food (canned)' and 'derives from' some 'clam (raw)'				clam (raw)														
+FOODON:03301165		albacore food product	albacore (canned)	'food (canned)' and 'derives from' some albacore				albacore														

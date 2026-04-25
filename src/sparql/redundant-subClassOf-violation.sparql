@@ -12,4 +12,3 @@ SELECT ?term ?xl ?y ?yl ?z ?zl WHERE {
   
   FILTER(isIRI(?term) && (STRSTARTS(str(?term), "http://purl.obolibrary.org/obo/FOODON_")))
 }
-

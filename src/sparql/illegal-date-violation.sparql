@@ -9,4 +9,3 @@ SELECT DISTINCT ?term ?property ?value WHERE
   FILTER (datatype(?value) != xsd:date || !regex(str(?value), '^\\d{4}-\\d\\d-\\d\\d$'))
   FILTER (datatype(?value) != xsd:dateTime || !regex(str(?value), '^\\d{4}-\\d{2}-\\d{2}T\\d{2}:\\d{2}:\\d{2}Z'))
 }
-

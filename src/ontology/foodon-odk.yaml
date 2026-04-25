@@ -24,6 +24,7 @@ release_artefacts:
 primary_release: full
 edit_format: ofn
 use_templates: TRUE
+use_context: TRUE # Enables standard prefixes.
 
 #report_fail_on: ERROR
 #report_fail_on: None
@@ -32,6 +33,43 @@ robot_report:
 #  custom_profile: TRUE
   report_on:
     - foodon-base.owl
+
+components:
+  products:
+# Note that for some products, if they have makefile template processing then only use .owl suffix for them
+    - filename: product_type_import.ofn
+    - filename: siren_augment_codes.ofn
+    - filename: robot_sssom_taxonomy.ofn
+    - filename: deprecation_import.ofn
+    - filename: gaz_import.ofn
+    - filename: cdno_import.ofn
+    - filename: animal_parts.ofn # A copy of imports/animal/animal_parts.ofn
+#    - filename: ons_import.ofn    
+
+    - filename: food_products.owl
+      use_template: TRUE
+      template_options: --input foodon-edit.ofn --xml-entities --ontology-iri "http://purl.obolibrary.org/obo/foodon/components/food_products.owl"
+      templates: 
+        - robot_pasta.tsv
+        - robot_wine.tsv
+        - robot_dietary_supplement.tsv
+        - food_process.tsv
+
+    - filename: food_materials.owl
+      use_template: TRUE
+      template_options: --input foodon-edit.ofn --xml-entities --ontology-iri "http://purl.obolibrary.org/obo/foodon/components/food_materials.owl"
+      templates: 
+        - robot_animal_parts.tsv
+        - robot_animals.tsv
+        - robot_meat_cuts.tsv
+        - robot_plant_parts.tsv
+        - robot_seafood.tsv # Remove when seafood template working
+
+    - filename: food_process.owl
+      use_template: TRUE
+      template_options: '--prefix "dcterms: http://purl.org/dc/terms/" --input foodon-merged.ofn --xml-entities --ontology-iri "http://purl.obolibrary.org/obo/foodon/components/food_process.owl"'
+      templates: 
+        - robot_process.tsv
 
 ## FoodOn specific Settings ##
 import_group:

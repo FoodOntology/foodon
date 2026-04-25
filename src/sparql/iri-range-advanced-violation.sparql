@@ -18,4 +18,3 @@ WHERE {
   FILTER(isIRI(?term) && (STRSTARTS(str(?term), "http://purl.obolibrary.org/obo/FOODON_")))
   FILTER (!isIRI(?value))
 }
-

@@ -1,4 +1,4 @@
-Prefix(:=<http://purl.obolibrary.org/obo/foodon/imports/robot_process.ofn#>)
+Prefix(:=<http://purl.obolibrary.org/obo/foodon/components/robot_process.ofn#>)
 Prefix(owl:=<http://www.w3.org/2002/07/owl#>)
 Prefix(rdf:=<http://www.w3.org/1999/02/22-rdf-syntax-ns#>)
 Prefix(xml:=<http://www.w3.org/XML/1998/namespace>)
@@ -6,7 +6,7 @@ Prefix(xsd:=<http://www.w3.org/2001/XMLSchema#>)
 Prefix(rdfs:=<http://www.w3.org/2000/01/rdf-schema#>)
 
 
-Ontology(<http://purl.obolibrary.org/obo/foodon/imports/robot_process.ofn>
+Ontology(<http://purl.obolibrary.org/obo/foodon/components/robot_process.ofn>
 
 Declaration(Class(<http://purl.obolibrary.org/obo/BFO_0000015>))
 Declaration(Class(<http://purl.obolibrary.org/obo/FOODON_00000071>))
@@ -1797,11 +1797,11 @@ AnnotationAssertion(rdfs:comment <http://purl.obolibrary.org/obo/FOODON_03460393
 AnnotationAssertion(rdfs:label <http://purl.obolibrary.org/obo/FOODON_03460393> "acid reduction process"@en)
 SubClassOf(<http://purl.obolibrary.org/obo/FOODON_03460393> <http://purl.obolibrary.org/obo/FOODON_03460238>)
 
-# Class: <http://purl.obolibrary.org/obo/FOODON_03460396> (marinading)
+# Class: <http://purl.obolibrary.org/obo/FOODON_03460396> (marination with acid)
 
 AnnotationAssertion(<http://www.geneontology.org/formats/oboInOwl#hasDbXref> <http://purl.obolibrary.org/obo/FOODON_03460396> "http://www.langual.org/langual_thesaurus.asp?termid=H0396")
 AnnotationAssertion(rdfs:comment <http://purl.obolibrary.org/obo/FOODON_03460396> "LanguaL curation note: Used when a food such as meat, fish or vegetables are soaked in a seasoned liquid in order to absorb flavor and, in some instances, to be tenderized. Most marinades contain an acid (lemon juice, vinegar, wine) and herbs or spices; the acid ingredient serves as the tenderizer."@en)
-AnnotationAssertion(rdfs:label <http://purl.obolibrary.org/obo/FOODON_03460396> "marinading"@en)
+AnnotationAssertion(rdfs:label <http://purl.obolibrary.org/obo/FOODON_03460396> "marination with acid"@en)
 SubClassOf(<http://purl.obolibrary.org/obo/FOODON_03460396> <http://purl.obolibrary.org/obo/FOODON_03460123>)
 SubClassOf(<http://purl.obolibrary.org/obo/FOODON_03460396> <http://purl.obolibrary.org/obo/FOODON_03460200>)
 

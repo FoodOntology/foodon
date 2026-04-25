@@ -1,4 +1,4 @@
-Prefix(:=<http://purl.obolibrary.org/obo/foodon/imports/gaz_import.ofn#>)
+Prefix(:=<http://purl.obolibrary.org/obo/foodon/components/gaz_import.ofn#>)
 Prefix(obo:=<http://purl.obolibrary.org/obo/>)
 Prefix(owl:=<http://www.w3.org/2002/07/owl#>)
 Prefix(rdf:=<http://www.w3.org/1999/02/22-rdf-syntax-ns#>)
@@ -7,7 +7,7 @@ Prefix(xsd:=<http://www.w3.org/2001/XMLSchema#>)
 Prefix(rdfs:=<http://www.w3.org/2000/01/rdf-schema#>)
 
 
-Ontology(<http://purl.obolibrary.org/obo/foodon/imports/gaz_import.ofn>
+Ontology(<http://purl.obolibrary.org/obo/foodon/components/gaz_import.ofn>
 
 Declaration(Class(obo:GAZ_00000013))
 Declaration(Class(obo:GAZ_00000457))

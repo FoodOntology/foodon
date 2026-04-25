@@ -1,4 +1,4 @@
-Prefix(:=<http://purl.obolibrary.org/obo/foodon/imports/deprecation_import.ofn#>)
+Prefix(:=<http://purl.obolibrary.org/obo/foodon/components/deprecation_import.ofn#>)
 Prefix(cc:=<http://creativecommons.org/ns#>)
 Prefix(dc:=<http://purl.org/dc/terms/>)
 Prefix(go:=<http://www.geneontology.org/formats/oboInOwl#>)
@@ -29,7 +29,7 @@ Prefix(wikipedia:=<https://en.wikipedia.org/wiki/>)
 Prefix(indexfungorum:=<http://www.indexfungorum.org/names/NamesRecord.asp?RecordID=>)
 
 
-Ontology(<http://purl.obolibrary.org/obo/foodon/imports/deprecation_import.ofn>
+Ontology(<http://purl.obolibrary.org/obo/foodon/components/deprecation_import.ofn>
 Annotation(dcterms:contributor "Damion Dooley"@en)
 
 Declaration(Class(obo:FOODON_00000000))

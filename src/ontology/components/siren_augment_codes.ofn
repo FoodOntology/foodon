@@ -1,4 +1,4 @@
-Prefix(:=<http://purl.obolibrary.org/obo/foodon/imports/siren_augment_codes.ofn#>)
+Prefix(:=<http://purl.obolibrary.org/obo/foodon/components/siren_augment_codes.ofn#>)
 Prefix(obo:=<http://purl.obolibrary.org/obo/>)
 Prefix(owl:=<http://www.w3.org/2002/07/owl#>)
 Prefix(rdf:=<http://www.w3.org/1999/02/22-rdf-syntax-ns#>)
@@ -9,7 +9,7 @@ Prefix(dcterms:=<http://purl.org/dc/terms/>)
 Prefix(oboInOwl:=<http://www.geneontology.org/formats/oboInOwl#>)
 
 
-Ontology(<http://purl.obolibrary.org/obo/foodon/imports/siren_augment_codes.ofn>
+Ontology(<http://purl.obolibrary.org/obo/foodon/components/siren_augment_codes.ofn>
 Annotation(dcterms:contributor "Damion Dooley"@en)
 
 Declaration(Class(obo:CHEBI_12777))
