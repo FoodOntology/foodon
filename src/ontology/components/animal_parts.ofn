@@ -3476,7 +3476,7 @@ SubClassOf(<http://purl.obolibrary.org/obo/FOODON_00002827> <http://purl.obolibr
 AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000114> <http://purl.obolibrary.org/obo/FOODON_00002836> <http://purl.obolibrary.org/obo/IAO_0000122>)
 AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000115> <http://purl.obolibrary.org/obo/FOODON_00002836> "A whole neck that is obtained from a lamb."@en)
 AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000119> <http://purl.obolibrary.org/obo/FOODON_00002836> <https://www.lambandbeef.com/cuts/lamb/neck>)
-AnnotationAssertion(<http://purl.org/dc/terms/contributor> <http://purl.obolibrary.org/obo/FOODON_00002836> "http://orcid.org/0000-0002-8844-9165")
+AnnotationAssertion(<http://purl.org/dc/terms/contributor> <http://purl.obolibrary.org/obo/FOODON_00002836> <http://orcid.org/0000-0002-8844-9165>)
 AnnotationAssertion(<http://purl.org/dc/terms/date> <http://purl.obolibrary.org/obo/FOODON_00002836> "2019-08-06T17:34:19Z"^^xsd:dateTime)
 AnnotationAssertion(<http://www.geneontology.org/formats/oboInOwl#hasBroadSynonym> <http://purl.obolibrary.org/obo/FOODON_00002836> "neck chop"@en)
 AnnotationAssertion(<http://www.geneontology.org/formats/oboInOwl#hasExactSynonym> <http://purl.obolibrary.org/obo/FOODON_00002836> "neck of lamb"@en)
@@ -3490,7 +3490,7 @@ SubClassOf(<http://purl.obolibrary.org/obo/FOODON_00002836> <http://purl.obolibr
 AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000114> <http://purl.obolibrary.org/obo/FOODON_00003004> <http://purl.obolibrary.org/obo/IAO_0000122>)
 AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000115> <http://purl.obolibrary.org/obo/FOODON_00003004> "A whole animal."@en)
 AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000119> <http://purl.obolibrary.org/obo/FOODON_00003004> <https://en.wikipedia.org/wiki/Animal>)
-AnnotationAssertion(<http://purl.org/dc/terms/contributor> <http://purl.obolibrary.org/obo/FOODON_00003004> "http://orcid.org/0000-0002-8844-9165")
+AnnotationAssertion(<http://purl.org/dc/terms/contributor> <http://purl.obolibrary.org/obo/FOODON_00003004> <http://orcid.org/0000-0002-8844-9165>)
 AnnotationAssertion(<http://purl.org/dc/terms/date> <http://purl.obolibrary.org/obo/FOODON_00003004> "2019-08-14T18:02:36Z"^^xsd:dateTime)
 AnnotationAssertion(<http://www.geneontology.org/formats/oboInOwl#hasDbXref> <http://purl.obolibrary.org/obo/FOODON_00003004> <http://www.langual.org/langual_thesaurus.asp?termid=B1297>)
 AnnotationAssertion(rdfs:comment <http://purl.obolibrary.org/obo/FOODON_00003004> "A whole animal can be dead or alive, but its body must be relatively intact."@en)
@@ -3502,7 +3502,7 @@ EquivalentClasses(<http://purl.obolibrary.org/obo/FOODON_00003004> ObjectInterse
 
 AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000114> <http://purl.obolibrary.org/obo/FOODON_00003029> <http://purl.obolibrary.org/obo/IAO_0000122>)
 AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000115> <http://purl.obolibrary.org/obo/FOODON_00003029> "A beef meat cut that has a flat-cut appearance."@en)
-AnnotationAssertion(<http://purl.org/dc/terms/contributor> <http://purl.obolibrary.org/obo/FOODON_00003029> "http://orcid.org/0000-0002-8844-9165")
+AnnotationAssertion(<http://purl.org/dc/terms/contributor> <http://purl.obolibrary.org/obo/FOODON_00003029> <http://orcid.org/0000-0002-8844-9165>)
 AnnotationAssertion(<http://purl.org/dc/terms/date> <http://purl.obolibrary.org/obo/FOODON_00003029> "2019-08-23T07:21:07Z"^^xsd:dateTime)
 AnnotationAssertion(<http://www.geneontology.org/formats/oboInOwl#hasBroadSynonym> <http://purl.obolibrary.org/obo/FOODON_00003029> "steak"@en)
 AnnotationAssertion(<http://www.geneontology.org/formats/oboInOwl#hasExactSynonym> <http://purl.obolibrary.org/obo/FOODON_00003029> "cow steak"@en)
@@ -3514,7 +3514,7 @@ SubClassOf(<http://purl.obolibrary.org/obo/FOODON_00003029> <http://purl.obolibr
 AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000114> <http://purl.obolibrary.org/obo/FOODON_00003083> <http://purl.obolibrary.org/obo/IAO_0000122>)
 AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000115> <http://purl.obolibrary.org/obo/FOODON_00003083> "A whole veal."@en)
 AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000119> <http://purl.obolibrary.org/obo/FOODON_00003083> <https://en.wikipedia.org/wiki/Veal>)
-AnnotationAssertion(<http://purl.org/dc/terms/contributor> <http://purl.obolibrary.org/obo/FOODON_00003083> "http://orcid.org/0000-0002-8844-9165")
+AnnotationAssertion(<http://purl.org/dc/terms/contributor> <http://purl.obolibrary.org/obo/FOODON_00003083> <http://orcid.org/0000-0002-8844-9165>)
 AnnotationAssertion(<http://purl.org/dc/terms/date> <http://purl.obolibrary.org/obo/FOODON_00003083> "2019-08-26T15:25:51Z"^^xsd:dateTime)
 AnnotationAssertion(rdfs:comment <http://purl.obolibrary.org/obo/FOODON_00003083> "A veal which is dead or alive and has a relatively intact body."@en)
 AnnotationAssertion(rdfs:label <http://purl.obolibrary.org/obo/FOODON_00003083> "veal"@en)
@@ -3524,7 +3524,7 @@ SubClassOf(<http://purl.obolibrary.org/obo/FOODON_00003083> <http://purl.obolibr
 
 AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000114> <http://purl.obolibrary.org/obo/FOODON_00003163> <http://purl.obolibrary.org/obo/IAO_0000122>)
 AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000115> <http://purl.obolibrary.org/obo/FOODON_00003163> "One or more pieces of chickens."@en)
-AnnotationAssertion(<http://purl.org/dc/terms/contributor> <http://purl.obolibrary.org/obo/FOODON_00003163> "http://orcid.org/0000-0002-8844-9165")
+AnnotationAssertion(<http://purl.org/dc/terms/contributor> <http://purl.obolibrary.org/obo/FOODON_00003163> <http://orcid.org/0000-0002-8844-9165>)
 AnnotationAssertion(<http://purl.org/dc/terms/date> <http://purl.obolibrary.org/obo/FOODON_00003163> "2019-08-26T20:50:24Z"^^xsd:dateTime)
 AnnotationAssertion(rdfs:label <http://purl.obolibrary.org/obo/FOODON_00003163> "piece(s) of chicken"@en)
 EquivalentClasses(<http://purl.obolibrary.org/obo/FOODON_00003163> ObjectIntersectionOf(<http://purl.obolibrary.org/obo/BFO_0000027> ObjectSomeValuesFrom(<http://purl.obolibrary.org/obo/RO_0002351> <http://purl.obolibrary.org/obo/FOODON_02020171>)))
@@ -3534,7 +3534,7 @@ SubClassOf(<http://purl.obolibrary.org/obo/FOODON_00003163> <http://purl.obolibr
 
 AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000114> <http://purl.obolibrary.org/obo/FOODON_00003325> <http://purl.obolibrary.org/obo/IAO_0000122>)
 AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000115> <http://purl.obolibrary.org/obo/FOODON_00003325> "A whole thigh that is obtained from a turkey."@en)
-AnnotationAssertion(<http://purl.org/dc/terms/contributor> <http://purl.obolibrary.org/obo/FOODON_00003325> "http://orcid.org/0000-0002-8844-9165")
+AnnotationAssertion(<http://purl.org/dc/terms/contributor> <http://purl.obolibrary.org/obo/FOODON_00003325> <http://orcid.org/0000-0002-8844-9165>)
 AnnotationAssertion(<http://purl.org/dc/terms/date> <http://purl.obolibrary.org/obo/FOODON_00003325> "2020-03-30T19:09:34Z"^^xsd:dateTime)
 AnnotationAssertion(rdfs:label <http://purl.obolibrary.org/obo/FOODON_00003325> "turkey thigh"@en)
 EquivalentClasses(<http://purl.obolibrary.org/obo/FOODON_00003325> ObjectIntersectionOf(<http://purl.obolibrary.org/obo/FOODON_02010123> ObjectSomeValuesFrom(<http://purl.obolibrary.org/obo/RO_0002162> <http://purl.obolibrary.org/obo/NCBITaxon_9103>)))
@@ -3584,7 +3584,7 @@ SubClassOf(<http://purl.obolibrary.org/obo/FOODON_00003330> <http://purl.obolibr
 
 AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000114> <http://purl.obolibrary.org/obo/FOODON_00003331> <http://purl.obolibrary.org/obo/IAO_0000122>)
 AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000115> <http://purl.obolibrary.org/obo/FOODON_00003331> "A skinless chicken thigh."@en)
-AnnotationAssertion(<http://purl.org/dc/terms/contributor> <http://purl.obolibrary.org/obo/FOODON_00003331> "http://orcid.org/0000-0002-8844-9165")
+AnnotationAssertion(<http://purl.org/dc/terms/contributor> <http://purl.obolibrary.org/obo/FOODON_00003331> <http://orcid.org/0000-0002-8844-9165>)
 AnnotationAssertion(<http://purl.org/dc/terms/date> <http://purl.obolibrary.org/obo/FOODON_00003331> "2020-04-01T06:52:04Z"^^xsd:dateTime)
 AnnotationAssertion(rdfs:label <http://purl.obolibrary.org/obo/FOODON_00003331> "chicken thigh (skinless)"@en)
 EquivalentClasses(<http://purl.obolibrary.org/obo/FOODON_00003331> ObjectIntersectionOf(<http://purl.obolibrary.org/obo/FOODON_02020219> ObjectComplementOf(ObjectSomeValuesFrom(<http://purl.obolibrary.org/obo/BFO_0000051> ObjectSomeValuesFrom(<http://purl.obolibrary.org/obo/RO_0001000> <http://purl.obolibrary.org/obo/UBERON_0002097>)))))
@@ -3595,7 +3595,7 @@ SubClassOf(<http://purl.obolibrary.org/obo/FOODON_00003331> <http://purl.obolibr
 AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000114> <http://purl.obolibrary.org/obo/FOODON_00003344> <http://purl.obolibrary.org/obo/IAO_0000122>)
 AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000115> <http://purl.obolibrary.org/obo/FOODON_00003344> "A butchery cut of chicken that is typically boneless."@en)
 AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000119> <http://purl.obolibrary.org/obo/FOODON_00003344> <https://en.wikipedia.org/wiki/Fillet_(cut)#Chicken>)
-AnnotationAssertion(<http://purl.org/dc/terms/contributor> <http://purl.obolibrary.org/obo/FOODON_00003344> "http://orcid.org/0000-0002-8844-9165")
+AnnotationAssertion(<http://purl.org/dc/terms/contributor> <http://purl.obolibrary.org/obo/FOODON_00003344> <http://orcid.org/0000-0002-8844-9165>)
 AnnotationAssertion(<http://purl.org/dc/terms/date> <http://purl.obolibrary.org/obo/FOODON_00003344> "2020-06-05T00:44:24Z"^^xsd:dateTime)
 AnnotationAssertion(Annotation(<http://purl.org/dc/terms/license> "Dnor") Annotation(<http://purl.org/dc/terms/rightsHolder> "Public domain") <http://schema.org/image> <http://purl.obolibrary.org/obo/FOODON_00003344> <https://upload.wikimedia.org/wikipedia/commons/thumb/1/1e/Kycklingfil%C3%A9.jpg/640px-Kycklingfil%C3%A9.jpg>)
 AnnotationAssertion(<http://www.geneontology.org/formats/oboInOwl#hasExactSynonym> <http://purl.obolibrary.org/obo/FOODON_00003344> "fillet of chicken"@en)
@@ -3606,7 +3606,7 @@ SubClassOf(<http://purl.obolibrary.org/obo/FOODON_00003344> <http://purl.obolibr
 
 AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000114> <http://purl.obolibrary.org/obo/FOODON_00003360> <http://purl.obolibrary.org/obo/IAO_0000122>)
 AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000115> <http://purl.obolibrary.org/obo/FOODON_00003360> "A carcass of a chicken that includes all anatomical parts."@en)
-AnnotationAssertion(<http://purl.org/dc/terms/contributor> <http://purl.obolibrary.org/obo/FOODON_00003360> "http://orcid.org/0000-0002-8844-9165")
+AnnotationAssertion(<http://purl.org/dc/terms/contributor> <http://purl.obolibrary.org/obo/FOODON_00003360> <http://orcid.org/0000-0002-8844-9165>)
 AnnotationAssertion(<http://purl.org/dc/terms/date> <http://purl.obolibrary.org/obo/FOODON_00003360> "2020-06-18T20:58:20Z"^^xsd:dateTime)
 AnnotationAssertion(<http://www.geneontology.org/formats/oboInOwl#hasExactSynonym> <http://purl.obolibrary.org/obo/FOODON_00003360> "dead chicken"@en)
 AnnotationAssertion(rdfs:comment <http://purl.obolibrary.org/obo/FOODON_00003360> "This is an Uberon 'carcass' that  'has quality' some 'dead"@en)
@@ -3618,7 +3618,7 @@ SubClassOf(<http://purl.obolibrary.org/obo/FOODON_00003360> <http://purl.obolibr
 
 AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000114> <http://purl.obolibrary.org/obo/FOODON_00003363> <http://purl.obolibrary.org/obo/IAO_0000122>)
 AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000115> <http://purl.obolibrary.org/obo/FOODON_00003363> "A chicken thigh that contains skin and bone material."@en)
-AnnotationAssertion(<http://purl.org/dc/terms/contributor> <http://purl.obolibrary.org/obo/FOODON_00003363> "http://orcid.org/0000-0002-8844-9165")
+AnnotationAssertion(<http://purl.org/dc/terms/contributor> <http://purl.obolibrary.org/obo/FOODON_00003363> <http://orcid.org/0000-0002-8844-9165>)
 AnnotationAssertion(<http://purl.org/dc/terms/date> <http://purl.obolibrary.org/obo/FOODON_00003363> "2020-06-19T14:23:32Z"^^xsd:dateTime)
 AnnotationAssertion(rdfs:label <http://purl.obolibrary.org/obo/FOODON_00003363> "chicken thigh (with skin, with bone)"@en)
 EquivalentClasses(<http://purl.obolibrary.org/obo/FOODON_00003363> ObjectIntersectionOf(<http://purl.obolibrary.org/obo/FOODON_00003330> ObjectSomeValuesFrom(<http://purl.obolibrary.org/obo/BFO_0000051> ObjectSomeValuesFrom(<http://purl.obolibrary.org/obo/RO_0001000> <http://purl.obolibrary.org/obo/UBERON_0001474>))))
@@ -3629,7 +3629,7 @@ SubClassOf(<http://purl.obolibrary.org/obo/FOODON_00003363> <http://purl.obolibr
 AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000114> <http://purl.obolibrary.org/obo/FOODON_00003469> <http://purl.obolibrary.org/obo/IAO_0000122>)
 AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000115> <http://purl.obolibrary.org/obo/FOODON_00003469> "A whole drumstick that is obtained from a poultry."@en)
 AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000119> <http://purl.obolibrary.org/obo/FOODON_00003469> <https://en.wikipedia.org/wiki/Poultry#Cuts_of_poultry>)
-AnnotationAssertion(<http://purl.org/dc/terms/contributor> <http://purl.obolibrary.org/obo/FOODON_00003469> "http://orcid.org/0000-0002-8844-9165")
+AnnotationAssertion(<http://purl.org/dc/terms/contributor> <http://purl.obolibrary.org/obo/FOODON_00003469> <http://orcid.org/0000-0002-8844-9165>)
 AnnotationAssertion(<http://purl.org/dc/terms/date> <http://purl.obolibrary.org/obo/FOODON_00003469> "2020-10-15T19:48:20Z"^^xsd:dateTime)
 AnnotationAssertion(<http://www.geneontology.org/formats/oboInOwl#hasExactSynonym> <http://purl.obolibrary.org/obo/FOODON_00003469> "drumstick"@en)
 AnnotationAssertion(rdfs:label <http://purl.obolibrary.org/obo/FOODON_00003469> "poultry drumstick"@en)
@@ -3691,7 +3691,7 @@ SubClassOf(<http://purl.obolibrary.org/obo/FOODON_00004160> <http://purl.obolibr
 
 AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000114> <http://purl.obolibrary.org/obo/FOODON_00004239> <http://purl.obolibrary.org/obo/IAO_0000122>)
 AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000115> <http://purl.obolibrary.org/obo/FOODON_00004239> "One or more raw pieces of chicken meat."@en)
-AnnotationAssertion(<http://purl.org/dc/terms/contributor> <http://purl.obolibrary.org/obo/FOODON_00004239> "http://orcid.org/0000-0002-8844-9165")
+AnnotationAssertion(<http://purl.org/dc/terms/contributor> <http://purl.obolibrary.org/obo/FOODON_00004239> <http://orcid.org/0000-0002-8844-9165>)
 AnnotationAssertion(<http://purl.org/dc/terms/date> <http://purl.obolibrary.org/obo/FOODON_00004239> "2022-06-23T19:35:14Z"^^xsd:dateTime)
 AnnotationAssertion(rdfs:label <http://purl.obolibrary.org/obo/FOODON_00004239> "piece(s) of chicken meat (raw)"@en)
 EquivalentClasses(<http://purl.obolibrary.org/obo/FOODON_00004239> ObjectIntersectionOf(<http://purl.obolibrary.org/obo/FOODON_02020305> ObjectSomeValuesFrom(<http://purl.obolibrary.org/obo/RO_0000086> <http://purl.obolibrary.org/obo/FOODON_00004348>)))
@@ -3701,7 +3701,7 @@ SubClassOf(<http://purl.obolibrary.org/obo/FOODON_00004239> <http://purl.obolibr
 
 AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000114> <http://purl.obolibrary.org/obo/FOODON_00004242> <http://purl.obolibrary.org/obo/IAO_0000122>)
 AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000115> <http://purl.obolibrary.org/obo/FOODON_00004242> "A food product that is derived from some animal."@en)
-AnnotationAssertion(<http://purl.org/dc/terms/contributor> <http://purl.obolibrary.org/obo/FOODON_00004242> "http://orcid.org/0000-0002-8844-9165")
+AnnotationAssertion(<http://purl.org/dc/terms/contributor> <http://purl.obolibrary.org/obo/FOODON_00004242> <http://orcid.org/0000-0002-8844-9165>)
 AnnotationAssertion(<http://purl.org/dc/terms/date> <http://purl.obolibrary.org/obo/FOODON_00004242> "2023-08-01T21:25:29Z"^^xsd:dateTime)
 AnnotationAssertion(rdfs:label <http://purl.obolibrary.org/obo/FOODON_00004242> "animal food product"@en)
 
@@ -3709,7 +3709,7 @@ AnnotationAssertion(rdfs:label <http://purl.obolibrary.org/obo/FOODON_00004242> 
 
 AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000114> <http://purl.obolibrary.org/obo/FOODON_00004280> <http://purl.obolibrary.org/obo/IAO_0000122>)
 AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000115> <http://purl.obolibrary.org/obo/FOODON_00004280> "A food product that is derived from some turtle."@en)
-AnnotationAssertion(<http://purl.org/dc/terms/contributor> <http://purl.obolibrary.org/obo/FOODON_00004280> "http://orcid.org/0000-0002-8844-9165")
+AnnotationAssertion(<http://purl.org/dc/terms/contributor> <http://purl.obolibrary.org/obo/FOODON_00004280> <http://orcid.org/0000-0002-8844-9165>)
 AnnotationAssertion(<http://purl.org/dc/terms/date> <http://purl.obolibrary.org/obo/FOODON_00004280> "2022-09-01T16:54:18Z"^^xsd:dateTime)
 AnnotationAssertion(rdfs:label <http://purl.obolibrary.org/obo/FOODON_00004280> "turtle food product"@en)
 
@@ -3717,7 +3717,7 @@ AnnotationAssertion(rdfs:label <http://purl.obolibrary.org/obo/FOODON_00004280> 
 
 AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000114> <http://purl.obolibrary.org/obo/FOODON_00004286> <http://purl.obolibrary.org/obo/IAO_0000122>)
 AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000115> <http://purl.obolibrary.org/obo/FOODON_00004286> "A whole wild boar."@en)
-AnnotationAssertion(<http://purl.org/dc/terms/contributor> <http://purl.obolibrary.org/obo/FOODON_00004286> "http://orcid.org/0000-0002-8844-9165")
+AnnotationAssertion(<http://purl.org/dc/terms/contributor> <http://purl.obolibrary.org/obo/FOODON_00004286> <http://orcid.org/0000-0002-8844-9165>)
 AnnotationAssertion(<http://purl.org/dc/terms/date> <http://purl.obolibrary.org/obo/FOODON_00004286> "2022-09-01T18:47:59Z"^^xsd:dateTime)
 AnnotationAssertion(<http://www.geneontology.org/formats/oboInOwl#hasExactSynonym> <http://purl.obolibrary.org/obo/FOODON_00004286> "common wild pig"@en)
 AnnotationAssertion(<http://www.geneontology.org/formats/oboInOwl#hasExactSynonym> <http://purl.obolibrary.org/obo/FOODON_00004286> "wild pig"@en)

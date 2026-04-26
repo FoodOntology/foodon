@@ -1,6 +1,4 @@
-Prefix(:=<http://purl.obolibrary.org/obo/foodon/imports/product_type_import.owl#>)
-Prefix(Gt:=<http://purl.obolibrary.org/obo/foodon/imports/product_type_import.owl#&gt;>)
-Prefix(Lt:=<http://purl.obolibrary.org/obo/foodon/imports/product_type_import.owl#&lt;>)
+Prefix(:=<http://purl.obolibrary.org/obo/foodon/components/product_type_import.ofn#>)
 Prefix(obo:=<http://purl.obolibrary.org/obo/>)
 Prefix(owl:=<http://www.w3.org/2002/07/owl#>)
 Prefix(rdf:=<http://www.w3.org/1999/02/22-rdf-syntax-ns#>)
@@ -14,7 +12,7 @@ Prefix(langual:=<http://www.langual.org/langual_thesaurus.asp?termid=>)
 Prefix(oboInOwl:=<http://www.geneontology.org/formats/oboInOwl#>)
 
 
-Ontology(<http://purl.obolibrary.org/obo/foodon/imports/product_type_import.ofn>
+Ontology(<http://purl.obolibrary.org/obo/foodon/components/product_type_import.ofn>
 Annotation(dcterms:contributor "Damion Dooley"@en)
 
 Declaration(Class(obo:FOODON_00001002))
