@@ -32334,7 +32334,6 @@ SubClassOf(obo:FOODON_03411342 obo:FOODON_03411911)
 # Class: obo:FOODON_03411343 (whale)
 
 AnnotationAssertion(oboInOwl:hasDbXref obo:FOODON_03411343 langual:B1343)
-SubClassOf(obo:FOODON_03411343 obo:FOODON_03414164)
 
 # Class: obo:FOODON_03411344 (pear plant)
 
@@ -36637,12 +36636,8 @@ SubClassOf(obo:FOODON_03411710 obo:FOODON_03411457)
 
 # Class: obo:FOODON_03411711 (capon)
 
-AnnotationAssertion(obo:IAO_0000114 obo:FOODON_03411711 obo:IAO_0000122)
-AnnotationAssertion(obo:IAO_0000119 obo:FOODON_03411711 "https://www.usda.gov/media/blog/2011/11/17/poultry-classifications-get-21st-century-upgrade"^^xsd:anyURI)
 AnnotationAssertion(obo:IAO_0000600 obo:FOODON_03411711 "A surgically neutered male chicken younger than four months old (previously younger than eight months) that is tender-meated with soft, pliable, smooth-textured skin."@en)
-AnnotationAssertion(oboInOwl:hasDbXref obo:FOODON_03411711 langual:B1711)
 SubClassOf(obo:FOODON_03411711 obo:FOODON_02020066)
-SubClassOf(obo:FOODON_03411711 obo:FOODON_03411457)
 
 # Class: obo:FOODON_03411712 (stag chicken)
 
