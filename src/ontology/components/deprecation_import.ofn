@@ -2335,7 +2335,6 @@ AnnotationAssertion(owl:deprecated obo:FOODON_03413340 "true"^^xsd:boolean)
 # Class: obo:FOODON_03413365 (obsolete: yak)
 
 AnnotationAssertion(obo:IAO_0100001 obo:FOODON_03413365 obo:FOODON_02020875)
-AnnotationAssertion(obo:IAO_0100001 obo:FOODON_03413365 obo:NCBITaxon_30521)
 AnnotationAssertion(rdfs:label obo:FOODON_03413365 "obsolete: yak"@en)
 AnnotationAssertion(owl:deprecated obo:FOODON_03413365 "true"^^xsd:boolean)
 
@@ -2709,7 +2708,6 @@ AnnotationAssertion(owl:deprecated obo:FOODON_03460131 "true"^^xsd:boolean)
 # Class: obo:FOODON_03460136 (obsolete: sugar or sugar syrup added)
 
 AnnotationAssertion(obo:IAO_0100001 obo:FOODON_03460136 "http://purl.obolibrary.org/obo/FOODON_03420271"@en)
-AnnotationAssertion(obo:IAO_0100001 obo:FOODON_03460136 "http://purl.obolibrary.org/obo/CHEBI_17992"^^xsd:anyURI)
 AnnotationAssertion(oboInOwl:hasDbXref obo:FOODON_03460136 langual:H0136)
 AnnotationAssertion(oboInOwl:hasSynonym obo:FOODON_03460136 "disaccharide added"@en)
 AnnotationAssertion(oboInOwl:hasSynonym obo:FOODON_03460136 "monosaccharide added"@en)
