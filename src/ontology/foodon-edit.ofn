@@ -8851,6 +8851,7 @@ Declaration(Class(obo:NCBITaxon_156092))
 Declaration(Class(obo:NCBITaxon_157791))
 Declaration(Class(obo:NCBITaxon_157914))
 Declaration(Class(obo:NCBITaxon_1579277))
+Declaration(Class(obo:NCBITaxon_158449))
 Declaration(Class(obo:NCBITaxon_1586296))
 Declaration(Class(obo:NCBITaxon_159053))
 Declaration(Class(obo:NCBITaxon_159421))
@@ -89062,6 +89063,13 @@ AnnotationAssertion(oboInOwl:hasNarrowSynonym obo:NCBITaxon_157914 "Ziziphus mau
 # Class: obo:NCBITaxon_1579277 (Mobula mobular)
 
 AnnotationAssertion(oboInOwl:hasNarrowSynonym obo:NCBITaxon_1579277 "Mobula mobular (Bonnaterre, 1788)")
+
+# Class: obo:NCBITaxon_158449 (Macropodinae)
+
+AnnotationAssertion(dcterms:contributor obo:NCBITaxon_158449 <https://orcid.org/0000-0002-8844-9165>)
+AnnotationAssertion(dcterms:date obo:NCBITaxon_158449 "2026-04-27T15:05:30Z"^^xsd:dateTime)
+AnnotationAssertion(rdfs:label obo:NCBITaxon_158449 "Macropodinae"@en)
+SubClassOf(obo:NCBITaxon_158449 obo:UBERON_0000465)
 
 # Class: obo:NCBITaxon_1586296 (Sciaena umbra)
 
