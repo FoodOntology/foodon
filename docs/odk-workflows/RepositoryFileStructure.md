@@ -38,6 +38,6 @@ These are the components in FOODON
 | gaz_import.ofn | None |
 | cdno_import.ofn | None |
 | animal_parts.ofn | None |
-| food_products.owl | None |
 | food_materials.owl | None |
+| food_products.owl | None |
 | food_process.owl | None |
