@@ -34,6 +34,7 @@ robot_report:
   report_on:
     - foodon-base.owl
 
+# To refresh a particular robot template: > sh run.sh make components/food_materials.owl
 components:
   products:
 # Note that for some products, if they have makefile template processing then only use .owl suffix for them
@@ -44,7 +45,16 @@ components:
     - filename: gaz_import.ofn
     - filename: cdno_import.ofn
     - filename: animal_parts.ofn # A copy of imports/animal/animal_parts.ofn
-#    - filename: ons_import.ofn    
+
+    - filename: food_materials.owl
+      use_template: TRUE
+      template_options: --input foodon-edit.ofn --xml-entities --ontology-iri "http://purl.obolibrary.org/obo/foodon/components/food_materials.owl"
+      templates: 
+#        - robot_animal_parts.tsv  Not used in 
+        - robot_animals.tsv
+        - robot_meat_cuts.tsv
+        - robot_plant_parts.tsv
+        - robot_seafood.tsv # Remove when seafood template working
 
     - filename: food_products.owl
       use_template: TRUE
@@ -55,19 +65,9 @@ components:
         - robot_dietary_supplement.tsv
         - food_process.tsv
 
-    - filename: food_materials.owl
-      use_template: TRUE
-      template_options: --input foodon-edit.ofn --xml-entities --ontology-iri "http://purl.obolibrary.org/obo/foodon/components/food_materials.owl"
-      templates: 
-        - robot_animal_parts.tsv
-        - robot_animals.tsv
-        - robot_meat_cuts.tsv
-        - robot_plant_parts.tsv
-        - robot_seafood.tsv # Remove when seafood template working
-
     - filename: food_process.owl
       use_template: TRUE
-      template_options: '--prefix "dcterms: http://purl.org/dc/terms/" --input foodon-merged.ofn --xml-entities --ontology-iri "http://purl.obolibrary.org/obo/foodon/components/food_process.owl"'
+      template_options: --input foodon-edit.ofn --xml-entities --ontology-iri "http://purl.obolibrary.org/obo/foodon/components/food_process.owl"
       templates: 
         - robot_process.tsv
 

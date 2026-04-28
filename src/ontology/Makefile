@@ -10,7 +10,7 @@
 # More information: https://github.com/INCATools/ontology-development-kit/
 
 # Fingerprint of the configuration file when this Makefile was last generated
-CONFIG_HASH=                140e05aa70c4a9756bb8d621dcf13abccde71b3805fd5aece92001691df22a2b
+CONFIG_HASH=                3c9a9af3e43667dc939fa23b1d534e5ad233ac081ed96a5231c80a2a9be39128
 
 
 # ----------------------------------------
@@ -58,7 +58,7 @@ OBODATE ?=                  $(shell date +'%d:%m:%Y %H:%M')
 VERSION=                    $(TODAY)
 ANNOTATE_ONTOLOGY_VERSION = annotate -V $(ONTBASE)/releases/$(VERSION)/$@ --annotation owl:versionInfo $(VERSION)
 ANNOTATE_CONVERT_FILE =     annotate --ontology-iri $(ONTBASE)/$@ $(ANNOTATE_ONTOLOGY_VERSION) convert -f ofn --output $@.tmp.owl && mv $@.tmp.owl $@
-OTHER_SRC =                 $(COMPONENTSDIR)/product_type_import.ofn $(COMPONENTSDIR)/siren_augment_codes.ofn $(COMPONENTSDIR)/robot_sssom_taxonomy.ofn $(COMPONENTSDIR)/deprecation_import.ofn $(COMPONENTSDIR)/gaz_import.ofn $(COMPONENTSDIR)/cdno_import.ofn $(COMPONENTSDIR)/animal_parts.ofn $(COMPONENTSDIR)/food_products.owl $(COMPONENTSDIR)/food_materials.owl $(COMPONENTSDIR)/food_process.owl 
+OTHER_SRC =                 $(COMPONENTSDIR)/product_type_import.ofn $(COMPONENTSDIR)/siren_augment_codes.ofn $(COMPONENTSDIR)/robot_sssom_taxonomy.ofn $(COMPONENTSDIR)/deprecation_import.ofn $(COMPONENTSDIR)/gaz_import.ofn $(COMPONENTSDIR)/cdno_import.ofn $(COMPONENTSDIR)/animal_parts.ofn $(COMPONENTSDIR)/food_materials.owl $(COMPONENTSDIR)/food_products.owl $(COMPONENTSDIR)/food_process.owl 
 ONTOLOGYTERMS =             $(TMPDIR)/ontologyterms.txt
 EDIT_PREPROCESSED =         $(TMPDIR)/$(ONT)-preprocess.owl
 
@@ -454,8 +454,8 @@ recreate-components:
 		--assume-new=$(TMPDIR)/stamp-component-gaz_import.ofn \
 		--assume-new=$(TMPDIR)/stamp-component-cdno_import.ofn \
 		--assume-new=$(TMPDIR)/stamp-component-animal_parts.ofn \
-		--assume-new=$(TMPDIR)/stamp-component-food_products.owl \
 		--assume-new=$(TMPDIR)/stamp-component-food_materials.owl \
+		--assume-new=$(TMPDIR)/stamp-component-food_products.owl \
 		--assume-new=$(TMPDIR)/stamp-component-food_process.owl \
 		COMP=true IMP=false MIR=true PAT=true all_components
 
@@ -468,8 +468,8 @@ no-mirror-recreate-components:
 		--assume-new=$(TMPDIR)/stamp-component-gaz_import.ofn \
 		--assume-new=$(TMPDIR)/stamp-component-cdno_import.ofn \
 		--assume-new=$(TMPDIR)/stamp-component-animal_parts.ofn \
-		--assume-new=$(TMPDIR)/stamp-component-food_products.owl \
 		--assume-new=$(TMPDIR)/stamp-component-food_materials.owl \
+		--assume-new=$(TMPDIR)/stamp-component-food_products.owl \
 		--assume-new=$(TMPDIR)/stamp-component-food_process.owl \
 		COMP=true IMP=false MIR=false PAT=true all_components
 
@@ -491,6 +491,15 @@ $(TMPDIR)/stamp-component-%.owl: | $(TMPDIR)
 	touch $@
 .PRECIOUS: $(TMPDIR)/stamp-component-%.owl
 
+$(COMPONENTSDIR)/food_materials.owl: $(TEMPLATEDIR)/robot_animals.tsv $(TEMPLATEDIR)/robot_meat_cuts.tsv $(TEMPLATEDIR)/robot_plant_parts.tsv $(TEMPLATEDIR)/robot_seafood.tsv $(TMPDIR)/stamp-component-food_materials.owl
+	$(ROBOT) template --input foodon-edit.ofn --xml-entities --ontology-iri "http://purl.obolibrary.org/obo/foodon/components/food_materials.owl" \
+		 --template $(TEMPLATEDIR)/robot_animals.tsv \
+		 --template $(TEMPLATEDIR)/robot_meat_cuts.tsv \
+		 --template $(TEMPLATEDIR)/robot_plant_parts.tsv \
+		 --template $(TEMPLATEDIR)/robot_seafood.tsv \
+		 $(ANNOTATE_CONVERT_FILE)
+.PRECIOUS: $(COMPONENTSDIR)/food_materials.owl
+
 $(COMPONENTSDIR)/food_products.owl: $(TEMPLATEDIR)/robot_pasta.tsv $(TEMPLATEDIR)/robot_wine.tsv $(TEMPLATEDIR)/robot_dietary_supplement.tsv $(TEMPLATEDIR)/food_process.tsv $(TMPDIR)/stamp-component-food_products.owl
 	$(ROBOT) template --input foodon-edit.ofn --xml-entities --ontology-iri "http://purl.obolibrary.org/obo/foodon/components/food_products.owl" \
 		 --template $(TEMPLATEDIR)/robot_pasta.tsv \
@@ -500,18 +509,8 @@ $(COMPONENTSDIR)/food_products.owl: $(TEMPLATEDIR)/robot_pasta.tsv $(TEMPLATEDIR
 		 $(ANNOTATE_CONVERT_FILE)
 .PRECIOUS: $(COMPONENTSDIR)/food_products.owl
 
-$(COMPONENTSDIR)/food_materials.owl: $(TEMPLATEDIR)/robot_animal_parts.tsv $(TEMPLATEDIR)/robot_animals.tsv $(TEMPLATEDIR)/robot_meat_cuts.tsv $(TEMPLATEDIR)/robot_plant_parts.tsv $(TEMPLATEDIR)/robot_seafood.tsv $(TMPDIR)/stamp-component-food_materials.owl
-	$(ROBOT) template --input foodon-edit.ofn --xml-entities --ontology-iri "http://purl.obolibrary.org/obo/foodon/components/food_materials.owl" \
-		 --template $(TEMPLATEDIR)/robot_animal_parts.tsv \
-		 --template $(TEMPLATEDIR)/robot_animals.tsv \
-		 --template $(TEMPLATEDIR)/robot_meat_cuts.tsv \
-		 --template $(TEMPLATEDIR)/robot_plant_parts.tsv \
-		 --template $(TEMPLATEDIR)/robot_seafood.tsv \
-		 $(ANNOTATE_CONVERT_FILE)
-.PRECIOUS: $(COMPONENTSDIR)/food_materials.owl
-
 $(COMPONENTSDIR)/food_process.owl: $(TEMPLATEDIR)/robot_process.tsv $(TMPDIR)/stamp-component-food_process.owl
-	$(ROBOT) template --prefix "dcterms: http://purl.org/dc/terms/" --input foodon-merged.ofn --xml-entities --ontology-iri "http://purl.obolibrary.org/obo/foodon/components/food_process.owl" \
+	$(ROBOT) template --input foodon-edit.ofn --xml-entities --ontology-iri "http://purl.obolibrary.org/obo/foodon/components/food_process.owl" \
 		 --template $(TEMPLATEDIR)/robot_process.tsv \
 		 $(ANNOTATE_CONVERT_FILE)
 .PRECIOUS: $(COMPONENTSDIR)/food_process.owl
