@@ -12804,7 +12804,7 @@ SubClassOf(obo:FOODON_00002446 obo:FOODON_02021531)
 
 SubClassOf(obo:FOODON_00002449 obo:FOODON_02021555)
 
-# Class: obo:FOODON_00002451 (obo:FOODON_00002451)
+# Class: obo:FOODON_00002451 (food transformation process)
 
 SubClassOf(obo:FOODON_00002451 obo:COB_0000035)
 
@@ -13054,7 +13054,7 @@ SubClassOf(obo:FOODON_00002559 obo:FOODON_03411245)
 
 SubClassOf(obo:FOODON_00002572 obo:FOODON_00002574)
 
-# Class: obo:FOODON_00002574 (obo:FOODON_00002574)
+# Class: obo:FOODON_00002574 (butchery cut of beef)
 
 AnnotationAssertion(obo:IAO_0000119 obo:FOODON_00002574 obo:IAO_0000122)
 AnnotationAssertion(obo:IAO_0000119 obo:FOODON_00002574 "https://en.wikipedia.org/wiki/Cut_of_beef#British_cuts"^^xsd:anyURI)
@@ -15336,7 +15336,7 @@ AnnotationAssertion(rdfs:label obo:FOODON_00003456 "jackfruit food product"@en)
 EquivalentClasses(obo:FOODON_00003456 ObjectIntersectionOf(obo:FOODON_00002689 ObjectSomeValuesFrom(obo:RO_0001000 obo:FOODON_00003457)))
 SubClassOf(obo:FOODON_00003456 obo:FOODON_00002689)
 
-# Class: obo:FOODON_00003457 (obo:FOODON_00003457)
+# Class: obo:FOODON_00003457 (jackfruit)
 
 AnnotationAssertion(obo:IAO_0000117 obo:FOODON_00003457 <http://orcid.org/0000-0002-8844-9165>)
 AnnotationAssertion(obo:IAO_0000119 obo:FOODON_00003457 wikipedia:Jackfruit)
@@ -15393,23 +15393,23 @@ AnnotationAssertion(oboInOwl:hasDbXref obo:FOODON_00003475 langual:B1585)
 AnnotationAssertion(rdfs:label obo:FOODON_00003475 "freestone peach tree"@en)
 SubClassOf(obo:FOODON_00003475 obo:NCBITaxon_3760)
 
-# Class: obo:FOODON_00003481 (obo:FOODON_00003481)
+# Class: obo:FOODON_00003481 (clingstone peach)
 
 AnnotationAssertion(obo:IAO_0000117 obo:FOODON_00003481 <http://orcid.org/0000-0002-8844-9165>)
 SubClassOf(obo:FOODON_00003481 obo:FOODON_00001743)
 
-# Class: obo:FOODON_00003482 (obo:FOODON_00003482)
+# Class: obo:FOODON_00003482 (freestone peach)
 
 AnnotationAssertion(obo:IAO_0000117 obo:FOODON_00003482 <http://orcid.org/0000-0002-8844-9165>)
 SubClassOf(obo:FOODON_00003482 obo:FOODON_00002095)
 SubClassOf(obo:FOODON_00003482 ObjectSomeValuesFrom(obo:RO_0001000 obo:NCBITaxon_3760))
 
-# Class: obo:FOODON_00003486 (obo:FOODON_00003486)
+# Class: obo:FOODON_00003486 (pumpkin)
 
 AnnotationAssertion(obo:IAO_0000117 obo:FOODON_00003486 <http://orcid.org/0000-0002-8844-9165>)
 SubClassOf(obo:FOODON_00003486 obo:FOODON_00002180)
 
-# Class: obo:FOODON_00003490 (obo:FOODON_00003490)
+# Class: obo:FOODON_00003490 (black raspberry)
 
 AnnotationAssertion(obo:IAO_0000117 obo:FOODON_00003490 <http://orcid.org/0000-0002-8844-9165>)
 SubClassOf(obo:FOODON_00003490 obo:FOODON_00001651)
@@ -15450,14 +15450,14 @@ AnnotationAssertion(oboInOwl:hasExactSynonym obo:FOODON_00003512 <http://purl.ob
 AnnotationAssertion(rdfs:label obo:FOODON_00003512 "lollo bionda"@en)
 SubClassOf(obo:FOODON_00003512 obo:FOODON_03412087)
 
-# Class: obo:FOODON_00003513 (obo:FOODON_00003513)
+# Class: obo:FOODON_00003513 (living lettuce)
 
 AnnotationAssertion(obo:IAO_0000117 obo:FOODON_00003513 <http://orcid.org/0000-0002-8844-9165>)
 AnnotationAssertion(dcterms:date obo:FOODON_00003513 "2020-10-30T06:30:03Z"^^xsd:dateTime)
 AnnotationAssertion(rdfs:comment obo:FOODON_00003513 "Lettuce provided as a consumer product with a root ball attached to provide longevity."@en)
 SubClassOf(obo:FOODON_00003513 obo:FOODON_00001998)
 
-# Class: obo:FOODON_00003514 (obo:FOODON_00003514)
+# Class: obo:FOODON_00003514 (cabbage leaf)
 
 AnnotationAssertion(obo:IAO_0000117 obo:FOODON_00003514 <http://orcid.org/0000-0002-8844-9165>)
 SubClassOf(obo:FOODON_00003514 obo:FOODON_00001677)
@@ -15477,11 +15477,11 @@ AnnotationAssertion(dcterms:date obo:FOODON_00003519 "2020-11-10T06:04:20Z"^^xsd
 AnnotationAssertion(rdfs:label obo:FOODON_00003519 "Honeycrisp apple"@en)
 SubClassOf(obo:FOODON_00003519 obo:FOODON_00002473)
 
-# Class: obo:FOODON_00003520 (obo:FOODON_00003520)
+# Class: obo:FOODON_00003520 (pepper)
 
 AnnotationAssertion(obo:IAO_0000117 obo:FOODON_00003520 <http://orcid.org/0000-0002-8844-9165>)
 
-# Class: obo:FOODON_00003521 (obo:FOODON_00003521)
+# Class: obo:FOODON_00003521 (berry)
 
 AnnotationAssertion(obo:IAO_0000117 obo:FOODON_00003521 <http://orcid.org/0000-0002-8844-9165>)
 AnnotationAssertion(oboInOwl:hasExactSynonym obo:FOODON_00003521 "common berry"@en)
@@ -15499,7 +15499,7 @@ AnnotationAssertion(oboInOwl:hasExactSynonym obo:FOODON_00003522 "usuhiratake"@e
 AnnotationAssertion(rdfs:label obo:FOODON_00003522 "lung oyster"@en)
 SubClassOf(obo:FOODON_00003522 obo:FOODON_03411632)
 
-# Class: obo:FOODON_00003524 (obo:FOODON_00003524)
+# Class: obo:FOODON_00003524 (land cress leaf)
 
 AnnotationAssertion(obo:IAO_0000117 obo:FOODON_00003524 <http://orcid.org/0000-0002-8844-9165>)
 AnnotationAssertion(dcterms:date obo:FOODON_00003524 "2020-11-18T21:32:17Z"^^xsd:dateTime)
@@ -15519,16 +15519,16 @@ AnnotationAssertion(dcterms:date obo:FOODON_00003527 "2020-11-17T23:51:38Z"^^xsd
 AnnotationAssertion(rdfs:label obo:FOODON_00003527 "sugarloaf cabbage plant"@en)
 SubClassOf(obo:FOODON_00003527 obo:NCBITaxon_3716)
 
-# Class: obo:FOODON_00003528 (obo:FOODON_00003528)
+# Class: obo:FOODON_00003528 (mushroom fruitbody)
 
 SubClassOf(obo:FOODON_00003528 obo:FOODON_02010348)
 
-# Class: obo:FOODON_00003530 (obo:FOODON_00003530)
+# Class: obo:FOODON_00003530 (chard leaf)
 
 AnnotationAssertion(obo:IAO_0000117 obo:FOODON_00003530 <http://orcid.org/0000-0002-8844-9165>)
 SubClassOf(obo:FOODON_00003530 obo:FOODON_00002498)
 
-# Class: obo:FOODON_00003533 (obo:FOODON_00003533)
+# Class: obo:FOODON_00003533 (turnip leaf)
 
 AnnotationAssertion(obo:IAO_0000117 obo:FOODON_00003533 <http://orcid.org/0000-0002-8844-9165>)
 SubClassOf(obo:FOODON_00003533 obo:FOODON_00002324)
@@ -15541,17 +15541,17 @@ AnnotationAssertion(dcterms:date obo:FOODON_00003537 "2020-11-18T22:17:04Z"^^xsd
 AnnotationAssertion(rdfs:label obo:FOODON_00003537 "prune"@en)
 SubClassOf(obo:FOODON_00003537 obo:FOODON_03316905)
 
-# Class: obo:FOODON_00003539 (obo:FOODON_00003539)
+# Class: obo:FOODON_00003539 (squash)
 
 AnnotationAssertion(obo:IAO_0000117 obo:FOODON_00003539 <http://orcid.org/0000-0002-8844-9165>)
 SubClassOf(obo:FOODON_00003539 obo:FOODON_00002271)
 
-# Class: obo:FOODON_00003540 (obo:FOODON_00003540)
+# Class: obo:FOODON_00003540 (papaya)
 
 AnnotationAssertion(obo:IAO_0000117 obo:FOODON_00003540 <http://orcid.org/0000-0002-8844-9165>)
 SubClassOf(obo:FOODON_00003540 obo:FOODON_00002081)
 
-# Class: obo:FOODON_00003545 (obo:FOODON_00003545)
+# Class: obo:FOODON_00003545 (hot pepper)
 
 AnnotationAssertion(obo:IAO_0000117 obo:FOODON_00003545 <http://orcid.org/0000-0002-8844-9165>)
 AnnotationAssertion(dcterms:date obo:FOODON_00003545 "2020-11-19T01:03:37Z"^^xsd:dateTime)
@@ -15564,17 +15564,17 @@ AnnotationAssertion(dcterms:date obo:FOODON_00003549 "2020-11-19T01:34:36Z"^^xsd
 AnnotationAssertion(rdfs:label obo:FOODON_00003549 "orange bell pepper plant"@en)
 SubClassOf(obo:FOODON_00003549 obo:FOODON_03412628)
 
-# Class: obo:FOODON_00003554 (obo:FOODON_00003554)
+# Class: obo:FOODON_00003554 (grapefruit)
 
 AnnotationAssertion(obo:IAO_0000117 obo:FOODON_00003554 <http://orcid.org/0000-0002-8844-9165>)
 SubClassOf(obo:FOODON_00003554 obo:FOODON_00001929)
 
-# Class: obo:FOODON_00003555 (obo:FOODON_00003555)
+# Class: obo:FOODON_00003555 (mandarin orange)
 
 AnnotationAssertion(obo:IAO_0000117 obo:FOODON_00003555 <http://orcid.org/0000-0002-8844-9165>)
 SubClassOf(obo:FOODON_00003555 obo:FOODON_00002018)
 
-# Class: obo:FOODON_00003562 (obo:FOODON_00003562)
+# Class: obo:FOODON_00003562 (field corn kernel)
 
 AnnotationAssertion(obo:IAO_0000117 obo:FOODON_00003562 <http://orcid.org/0000-0002-8844-9165>)
 SubClassOf(obo:FOODON_00003562 ObjectSomeValuesFrom(obo:RO_0002350 obo:FOODON_03400125))
@@ -15594,38 +15594,38 @@ AnnotationAssertion(rdfs:label obo:FOODON_00003565 "seed (raw)"@en)
 SubClassOf(obo:FOODON_00003565 obo:FOODON_03311126)
 SubClassOf(obo:FOODON_00003565 obo:PO_0009010)
 
-# Class: obo:FOODON_00003577 (obo:FOODON_00003577)
+# Class: obo:FOODON_00003577 (cantaloupe)
 
 AnnotationAssertion(obo:IAO_0000117 obo:FOODON_00003577 <http://orcid.org/0000-0002-8844-9165>)
 SubClassOf(obo:FOODON_00003577 obo:FOODON_00001288)
 SubClassOf(obo:FOODON_00003577 obo:FOODON_00003597)
 
-# Class: obo:FOODON_00003581 (obo:FOODON_00003581)
+# Class: obo:FOODON_00003581 (sunflower seed (whole kernel))
 
 AnnotationAssertion(obo:IAO_0000117 obo:FOODON_00003581 <http://orcid.org/0000-0002-8844-9165>)
 SubClassOf(obo:FOODON_00003581 obo:FOODON_00002294)
 
-# Class: obo:FOODON_00003582 (obo:FOODON_00003582)
+# Class: obo:FOODON_00003582 (garlic bulb)
 
 AnnotationAssertion(obo:IAO_0000117 obo:FOODON_00003582 <http://orcid.org/0000-0002-8844-9165>)
 SubClassOf(obo:FOODON_00003582 obo:FOODON_00001895)
 
-# Class: obo:FOODON_00003583 (obo:FOODON_00003583)
+# Class: obo:FOODON_00003583 (garlic clove)
 
 AnnotationAssertion(obo:IAO_0000117 obo:FOODON_00003583 <http://orcid.org/0000-0002-8844-9165>)
 SubClassOf(obo:FOODON_00003583 obo:FOODON_00001895)
 
-# Class: obo:FOODON_00003584 (obo:FOODON_00003584)
+# Class: obo:FOODON_00003584 (garlic scape)
 
 AnnotationAssertion(obo:IAO_0000117 obo:FOODON_00003584 <http://orcid.org/0000-0002-8844-9165>)
 SubClassOf(obo:FOODON_00003584 obo:FOODON_00001895)
 
-# Class: obo:FOODON_00003585 (obo:FOODON_00003585)
+# Class: obo:FOODON_00003585 (nectarine)
 
 AnnotationAssertion(obo:IAO_0000117 obo:FOODON_00003585 <http://orcid.org/0000-0002-8844-9165>)
 SubClassOf(obo:FOODON_00003585 obo:FOODON_00002277)
 
-# Class: obo:FOODON_00003588 (obo:FOODON_00003588)
+# Class: obo:FOODON_00003588 (Bosc pear)
 
 AnnotationAssertion(obo:IAO_0000117 obo:FOODON_00003588 <http://orcid.org/0000-0002-8844-9165>)
 SubClassOf(obo:FOODON_00003588 obo:FOODON_00003041)
@@ -15640,38 +15640,38 @@ AnnotationAssertion(oboInOwl:hasExactSynonym obo:FOODON_00003592 "etaerio"@en)
 AnnotationAssertion(rdfs:label obo:FOODON_00003592 "aggregate fruit"@en)
 SubClassOf(obo:FOODON_00003592 obo:PO_0009001)
 
-# Class: obo:FOODON_00003593 (obo:FOODON_00003593)
+# Class: obo:FOODON_00003593 (acerola)
 
 AnnotationAssertion(obo:IAO_0000117 obo:FOODON_00003593 <http://orcid.org/0000-0002-8844-9165>)
 SubClassOf(obo:FOODON_00003593 obo:FOODON_00002001)
 
-# Class: obo:FOODON_00003596 (obo:FOODON_00003596)
+# Class: obo:FOODON_00003596 (muskmelon)
 
 AnnotationAssertion(obo:IAO_0000117 obo:FOODON_00003596 <http://orcid.org/0000-0002-8844-9165>)
 AnnotationAssertion(dcterms:date obo:FOODON_00003596 "2021-02-10T22:30:53Z"^^xsd:dateTime)
 SubClassOf(obo:FOODON_00003596 obo:FOODON_00001153)
 
-# Class: obo:FOODON_00003597 (obo:FOODON_00003597)
+# Class: obo:FOODON_00003597 (melon)
 
 AnnotationAssertion(obo:IAO_0000117 obo:FOODON_00003597 <http://orcid.org/0000-0002-8844-9165>)
 SubClassOf(obo:FOODON_00003597 obo:FOODON_00001152)
 
-# Class: obo:FOODON_00003598 (obo:FOODON_00003598)
+# Class: obo:FOODON_00003598 (honeydew melon)
 
 AnnotationAssertion(obo:IAO_0000117 obo:FOODON_00003598 <http://orcid.org/0000-0002-8844-9165>)
 SubClassOf(obo:FOODON_00003598 obo:FOODON_00003597)
 
-# Class: obo:FOODON_00003600 (obo:FOODON_00003600)
+# Class: obo:FOODON_00003600 (avocado)
 
 AnnotationAssertion(obo:IAO_0000117 obo:FOODON_00003600 <http://orcid.org/0000-0002-8844-9165>)
 SubClassOf(obo:FOODON_00003600 obo:FOODON_00001625)
 
-# Class: obo:FOODON_00003601 (obo:FOODON_00003601)
+# Class: obo:FOODON_00003601 (amaranth seed)
 
 AnnotationAssertion(obo:IAO_0000117 obo:FOODON_00003601 <http://orcid.org/0000-0002-8844-9165>)
 SubClassOf(obo:FOODON_00003601 obo:FOODON_00001179)
 
-# Class: obo:FOODON_00003602 (obo:FOODON_00003602)
+# Class: obo:FOODON_00003602 (arrowroot)
 
 AnnotationAssertion(obo:IAO_0000117 obo:FOODON_00003602 <http://orcid.org/0000-0002-8844-9165>)
 SubClassOf(obo:FOODON_00003602 obo:FOODON_00001147)
@@ -15684,195 +15684,195 @@ AnnotationAssertion(rdfs:label obo:FOODON_00003603 "arugula food product"@en)
 SubClassOf(obo:FOODON_00003603 obo:FOODON_00002143)
 SubClassOf(obo:FOODON_00003603 ObjectSomeValuesFrom(obo:RO_0001000 obo:NCBITaxon_29727))
 
-# Class: obo:FOODON_00003604 (obo:FOODON_00003604)
+# Class: obo:FOODON_00003604 (arugula leaf)
 
 AnnotationAssertion(obo:IAO_0000117 obo:FOODON_00003604 <http://orcid.org/0000-0002-8844-9165>)
 AnnotationAssertion(dcterms:date obo:FOODON_00003604 "2021-02-10T23:05:58Z"^^xsd:dateTime)
 SubClassOf(obo:FOODON_00003604 obo:FOODON_00003603)
 
-# Class: obo:FOODON_00003606 (obo:FOODON_00003606)
+# Class: obo:FOODON_00003606 (black currant)
 
 AnnotationAssertion(obo:IAO_0000117 obo:FOODON_00003606 <http://orcid.org/0000-0002-8844-9165>)
 SubClassOf(obo:FOODON_00003606 obo:FOODON_00002458)
 
-# Class: obo:FOODON_00003607 (obo:FOODON_00003607)
+# Class: obo:FOODON_00003607 (asian pear)
 
 AnnotationAssertion(obo:IAO_0000117 obo:FOODON_00003607 <http://orcid.org/0000-0002-8844-9165>)
 SubClassOf(obo:FOODON_00003607 obo:PO_0030110)
 
-# Class: obo:FOODON_00003608 (obo:FOODON_00003608)
+# Class: obo:FOODON_00003608 (banana passionfruit)
 
 AnnotationAssertion(obo:IAO_0000117 obo:FOODON_00003608 <http://orcid.org/0000-0002-8844-9165>)
 SubClassOf(obo:FOODON_00003608 obo:FOODON_00001629)
 
-# Class: obo:FOODON_00003609 (obo:FOODON_00003609)
+# Class: obo:FOODON_00003609 (bayberry)
 
 AnnotationAssertion(obo:IAO_0000117 obo:FOODON_00003609 <http://orcid.org/0000-0002-8844-9165>)
 AnnotationAssertion(dcterms:date obo:FOODON_00003609 "2021-02-10T23:24:28Z"^^xsd:dateTime)
 SubClassOf(obo:FOODON_00003609 obo:FOODON_00001640)
 
-# Class: obo:FOODON_00003612 (obo:FOODON_00003612)
+# Class: obo:FOODON_00003612 (black radish)
 
 AnnotationAssertion(obo:IAO_0000117 obo:FOODON_00003612 <http://orcid.org/0000-0002-8844-9165>)
 AnnotationAssertion(dcterms:date obo:FOODON_00003612 "2021-02-11T00:51:26Z"^^xsd:dateTime)
 SubClassOf(obo:FOODON_00003612 obo:FOODON_00003431)
 
-# Class: obo:FOODON_00003613 (obo:FOODON_00003613)
+# Class: obo:FOODON_00003613 (cocoa bean)
 
 AnnotationAssertion(obo:IAO_0000117 obo:FOODON_00003613 <http://orcid.org/0000-0002-8844-9165>)
 AnnotationAssertion(dcterms:date obo:FOODON_00003613 "2021-02-11T00:54:15Z"^^xsd:dateTime)
 SubClassOf(obo:FOODON_00003613 obo:FOODON_00001215)
 
-# Class: obo:FOODON_00003614 (obo:FOODON_00003614)
+# Class: obo:FOODON_00003614 (areca nut)
 
 AnnotationAssertion(obo:IAO_0000117 obo:FOODON_00003614 <http://orcid.org/0000-0002-8844-9165>)
 AnnotationAssertion(dcterms:date obo:FOODON_00003614 "2021-02-11T00:55:00Z"^^xsd:dateTime)
 SubClassOf(obo:FOODON_00003614 obo:FOODON_00001642)
 
-# Class: obo:FOODON_00003615 (obo:FOODON_00003615)
+# Class: obo:FOODON_00003615 (cashew nut)
 
 AnnotationAssertion(obo:IAO_0000117 obo:FOODON_00003615 <http://orcid.org/0000-0002-8844-9165>)
 AnnotationAssertion(dcterms:date obo:FOODON_00003615 "2021-02-11T00:56:37Z"^^xsd:dateTime)
 SubClassOf(obo:FOODON_00003615 obo:FOODON_00001688)
 
-# Class: obo:FOODON_00003618 (obo:FOODON_00003618)
+# Class: obo:FOODON_00003618 (eggplant)
 
 AnnotationAssertion(obo:IAO_0000117 obo:FOODON_00003618 <http://orcid.org/0000-0002-8844-9165>)
 SubClassOf(obo:FOODON_00003618 obo:FOODON_00001830)
 
-# Class: obo:FOODON_00003622 (obo:FOODON_00003622)
+# Class: obo:FOODON_00003622 (guava)
 
 AnnotationAssertion(obo:IAO_0000117 obo:FOODON_00003622 <http://orcid.org/0000-0002-8844-9165>)
 SubClassOf(obo:FOODON_00003622 obo:FOODON_00001940)
 
-# Class: obo:FOODON_00003623 (obo:FOODON_00003623)
+# Class: obo:FOODON_00003623 (chicory leaf)
 
 AnnotationAssertion(obo:IAO_0000117 obo:FOODON_00003623 <http://orcid.org/0000-0002-8844-9165>)
 SubClassOf(obo:FOODON_00003623 obo:FOODON_00001730)
 
-# Class: obo:FOODON_00003624 (obo:FOODON_00003624)
+# Class: obo:FOODON_00003624 (chicory head)
 
 AnnotationAssertion(obo:IAO_0000117 obo:FOODON_00003624 <http://orcid.org/0000-0002-8844-9165>)
 SubClassOf(obo:FOODON_00003624 obo:FOODON_00001730)
 
-# Class: obo:FOODON_00003628 (obo:FOODON_00003628)
+# Class: obo:FOODON_00003628 (breadfruit)
 
 AnnotationAssertion(obo:IAO_0000117 obo:FOODON_00003628 <http://orcid.org/0000-0002-8844-9165>)
 SubClassOf(obo:FOODON_00003628 obo:FOODON_00001057)
 
-# Class: obo:FOODON_00003630 (obo:FOODON_00003630)
+# Class: obo:FOODON_00003630 (bean leaf)
 
 AnnotationAssertion(obo:IAO_0000117 obo:FOODON_00003630 <http://orcid.org/0000-0002-8844-9165>)
 SubClassOf(obo:FOODON_00003630 obo:FOODON_00002143)
 
-# Class: obo:FOODON_00003633 (obo:FOODON_00003633)
+# Class: obo:FOODON_00003633 (beet leaf)
 
 AnnotationAssertion(obo:IAO_0000117 obo:FOODON_00003633 <http://orcid.org/0000-0002-8844-9165>)
 SubClassOf(obo:FOODON_00003633 obo:FOODON_00001638)
 
-# Class: obo:FOODON_00003634 (obo:FOODON_00003634)
+# Class: obo:FOODON_00003634 (cauliflower leaf)
 
 AnnotationAssertion(obo:IAO_0000117 obo:FOODON_00003634 <http://orcid.org/0000-0002-8844-9165>)
 SubClassOf(obo:FOODON_00003634 obo:FOODON_00001703)
 
-# Class: obo:FOODON_00003635 (obo:FOODON_00003635)
+# Class: obo:FOODON_00003635 (celery leaf)
 
 AnnotationAssertion(obo:IAO_0000117 obo:FOODON_00003635 <http://orcid.org/0000-0002-8844-9165>)
 SubClassOf(obo:FOODON_00003635 obo:FOODON_00004123)
 
-# Class: obo:FOODON_00003637 (obo:FOODON_00003637)
+# Class: obo:FOODON_00003637 (grape leaf)
 
 AnnotationAssertion(obo:IAO_0000117 obo:FOODON_00003637 <http://orcid.org/0000-0002-8844-9165>)
 SubClassOf(obo:FOODON_00003637 obo:FOODON_00001170)
 
-# Class: obo:FOODON_00003639 (obo:FOODON_00003639)
+# Class: obo:FOODON_00003639 (groundsel leaf)
 
 AnnotationAssertion(obo:IAO_0000117 obo:FOODON_00003639 <http://orcid.org/0000-0002-8844-9165>)
 SubClassOf(obo:FOODON_00003639 obo:FOODON_00002143)
 
-# Class: obo:FOODON_00003640 (obo:FOODON_00003640)
+# Class: obo:FOODON_00003640 (loose leaf lettuce plant leaf)
 
 AnnotationAssertion(obo:IAO_0000117 obo:FOODON_00003640 <http://orcid.org/0000-0002-8844-9165>)
 AnnotationAssertion(dcterms:date obo:FOODON_00003640 "2021-02-11T02:05:17Z"^^xsd:dateTime)
 SubClassOf(obo:FOODON_00003640 obo:FOODON_00001998)
 
-# Class: obo:FOODON_00003641 (obo:FOODON_00003641)
+# Class: obo:FOODON_00003641 (mizuna leaf)
 
 AnnotationAssertion(obo:IAO_0000117 obo:FOODON_00003641 <http://orcid.org/0000-0002-8844-9165>)
 SubClassOf(obo:FOODON_00003641 obo:FOODON_03310789)
 
-# Class: obo:FOODON_00003642 (obo:FOODON_00003642)
+# Class: obo:FOODON_00003642 (papaya leaf)
 
 AnnotationAssertion(obo:IAO_0000117 obo:FOODON_00003642 <http://orcid.org/0000-0002-8844-9165>)
 SubClassOf(obo:FOODON_00003642 obo:FOODON_00002082)
 
-# Class: obo:FOODON_00003645 (obo:FOODON_00003645)
+# Class: obo:FOODON_00003645 (pumpkin leaf)
 
 AnnotationAssertion(obo:IAO_0000117 obo:FOODON_00003645 <http://orcid.org/0000-0002-8844-9165>)
 SubClassOf(obo:FOODON_00003645 obo:FOODON_00002180)
 
-# Class: obo:FOODON_00003646 (obo:FOODON_00003646)
+# Class: obo:FOODON_00003646 (radish leaf)
 
 AnnotationAssertion(obo:IAO_0000117 obo:FOODON_00003646 <http://orcid.org/0000-0002-8844-9165>)
 SubClassOf(obo:FOODON_00003646 obo:FOODON_00002184)
 
-# Class: obo:FOODON_00003647 (obo:FOODON_00003647)
+# Class: obo:FOODON_00003647 (sorrel leaf)
 
 AnnotationAssertion(obo:IAO_0000117 obo:FOODON_00003647 <http://orcid.org/0000-0002-8844-9165>)
 SubClassOf(obo:FOODON_00003647 obo:FOODON_00003093)
 
-# Class: obo:FOODON_00003649 (obo:FOODON_00003649)
+# Class: obo:FOODON_00003649 (taro leaf)
 
 AnnotationAssertion(obo:IAO_0000117 obo:FOODON_00003649 <http://orcid.org/0000-0002-8844-9165>)
 SubClassOf(obo:FOODON_00003649 obo:FOODON_00002310)
 
-# Class: obo:FOODON_00003650 (obo:FOODON_00003650)
+# Class: obo:FOODON_00003650 (vegetable leaf)
 
 AnnotationAssertion(obo:IAO_0000117 obo:FOODON_00003650 <http://orcid.org/0000-0002-8844-9165>)
 SubClassOf(obo:FOODON_00003650 obo:FOODON_03315308)
 
-# Class: obo:FOODON_00003652 (obo:FOODON_00003652)
+# Class: obo:FOODON_00003652 (jujube fruit)
 
 AnnotationAssertion(obo:IAO_0000117 obo:FOODON_00003652 <http://orcid.org/0000-0002-8844-9165>)
 SubClassOf(obo:FOODON_00003652 obo:FOODON_00001057)
 
-# Class: obo:FOODON_00003653 (obo:FOODON_00003653)
+# Class: obo:FOODON_00003653 (chayote)
 
 AnnotationAssertion(obo:IAO_0000117 obo:FOODON_00003653 <http://orcid.org/0000-0002-8844-9165>)
 SubClassOf(obo:FOODON_00003653 obo:FOODON_00001915)
 
-# Class: obo:FOODON_00003654 (obo:FOODON_00003654)
+# Class: obo:FOODON_00003654 (japanese chestnut)
 
 AnnotationAssertion(obo:IAO_0000117 obo:FOODON_00003654 <http://orcid.org/0000-0002-8844-9165>)
 SubClassOf(obo:FOODON_00003654 ObjectSomeValuesFrom(obo:RO_0001000 obo:NCBITaxon_103480))
 
-# Class: obo:FOODON_00003655 (obo:FOODON_00003655)
+# Class: obo:FOODON_00003655 (european chestnut)
 
 AnnotationAssertion(obo:IAO_0000117 obo:FOODON_00003655 <http://orcid.org/0000-0002-8844-9165>)
 SubClassOf(obo:FOODON_00003655 ObjectSomeValuesFrom(obo:RO_0001000 obo:FOODON_03411584))
 
-# Class: obo:FOODON_00003657 (obo:FOODON_00003657)
+# Class: obo:FOODON_00003657 (cranberry)
 
 AnnotationAssertion(obo:IAO_0000117 obo:FOODON_00003657 <http://orcid.org/0000-0002-8844-9165>)
 SubClassOf(obo:FOODON_00003657 obo:FOODON_00001786)
 
-# Class: obo:FOODON_00003658 (obo:FOODON_00003658)
+# Class: obo:FOODON_00003658 (horned melon)
 
 AnnotationAssertion(obo:IAO_0000117 obo:FOODON_00003658 <http://orcid.org/0000-0002-8844-9165>)
 SubClassOf(obo:FOODON_00003658 obo:FOODON_00001057)
 
-# Class: obo:FOODON_00003660 (obo:FOODON_00003660)
+# Class: obo:FOODON_00003660 (custard apple fruit)
 
 AnnotationAssertion(obo:IAO_0000117 obo:FOODON_00003660 <http://orcid.org/0000-0002-8844-9165>)
 AnnotationAssertion(dcterms:date obo:FOODON_00003660 "2021-02-11T02:55:52Z"^^xsd:dateTime)
 SubClassOf(obo:FOODON_00003660 obo:FOODON_00001057)
 
-# Class: obo:FOODON_00003661 (obo:FOODON_00003661)
+# Class: obo:FOODON_00003661 (lime)
 
 AnnotationAssertion(obo:IAO_0000117 obo:FOODON_00003661 <http://orcid.org/0000-0002-8844-9165>)
 SubClassOf(obo:FOODON_00003661 obo:FOODON_00002460)
 
-# Class: obo:FOODON_00003662 (obo:FOODON_00003662)
+# Class: obo:FOODON_00003662 (chinese cabbage head)
 
 AnnotationAssertion(obo:IAO_0000117 obo:FOODON_00003662 <http://orcid.org/0000-0002-8844-9165>)
 SubClassOf(obo:FOODON_00003662 obo:FOODON_00003663)
@@ -15885,53 +15885,53 @@ AnnotationAssertion(dcterms:date obo:FOODON_00003663 "2021-02-11T03:01:38Z"^^xsd
 AnnotationAssertion(rdfs:label obo:FOODON_00003663 "chinese cabbage food product"@en)
 SubClassOf(obo:FOODON_00003663 obo:FOODON_00003341)
 
-# Class: obo:FOODON_00003664 (obo:FOODON_00003664)
+# Class: obo:FOODON_00003664 (chinese cabbage leaf)
 
 AnnotationAssertion(obo:IAO_0000117 obo:FOODON_00003664 <http://orcid.org/0000-0002-8844-9165>)
 SubClassOf(obo:FOODON_00003664 obo:FOODON_00003663)
 
-# Class: obo:FOODON_00003665 (obo:FOODON_00003665)
+# Class: obo:FOODON_00003665 (durian)
 
 AnnotationAssertion(obo:IAO_0000117 obo:FOODON_00003665 <http://orcid.org/0000-0002-8844-9165>)
 SubClassOf(obo:FOODON_00003665 obo:FOODON_00001057)
 SubClassOf(obo:FOODON_00003665 ObjectSomeValuesFrom(obo:RO_0001000 obo:FOODON_00003120))
 
-# Class: obo:FOODON_00003667 (obo:FOODON_00003667)
+# Class: obo:FOODON_00003667 (kola nut)
 
 AnnotationAssertion(obo:IAO_0000117 obo:FOODON_00003667 <http://orcid.org/0000-0002-8844-9165>)
 SubClassOf(obo:FOODON_00003667 obo:FOODON_00001753)
 
-# Class: obo:FOODON_00003668 (obo:FOODON_00003668)
+# Class: obo:FOODON_00003668 (kola nut pod)
 
 AnnotationAssertion(obo:IAO_0000117 obo:FOODON_00003668 <http://orcid.org/0000-0002-8844-9165>)
 SubClassOf(obo:FOODON_00003668 obo:FOODON_00001753)
 
-# Class: obo:FOODON_00003669 (obo:FOODON_00003669)
+# Class: obo:FOODON_00003669 (filbert nut)
 
 AnnotationAssertion(obo:IAO_0000117 obo:FOODON_00003669 <http://orcid.org/0000-0002-8844-9165>)
 SubClassOf(obo:FOODON_00003669 obo:FOODON_00001836)
 
-# Class: obo:FOODON_00003670 (obo:FOODON_00003670)
+# Class: obo:FOODON_00003670 (leek)
 
 AnnotationAssertion(obo:IAO_0000117 obo:FOODON_00003670 <http://orcid.org/0000-0002-8844-9165>)
 SubClassOf(obo:FOODON_00003670 obo:FOODON_00002150)
 
-# Class: obo:FOODON_00003671 (obo:FOODON_00003671)
+# Class: obo:FOODON_00003671 (miracle berry)
 
 AnnotationAssertion(obo:IAO_0000117 obo:FOODON_00003671 <http://orcid.org/0000-0002-8844-9165>)
 SubClassOf(obo:FOODON_00003671 obo:FOODON_00002042)
 
-# Class: obo:FOODON_00003673 (obo:FOODON_00003673)
+# Class: obo:FOODON_00003673 (watermelon)
 
 AnnotationAssertion(obo:IAO_0000117 obo:FOODON_00003673 <http://orcid.org/0000-0002-8844-9165>)
 SubClassOf(obo:FOODON_00003673 obo:FOODON_00002343)
 
-# Class: obo:FOODON_00003674 (obo:FOODON_00003674)
+# Class: obo:FOODON_00003674 (tamarind pod)
 
 AnnotationAssertion(obo:IAO_0000117 obo:FOODON_00003674 <http://orcid.org/0000-0002-8844-9165>)
 SubClassOf(obo:FOODON_00003674 obo:FOODON_00002309)
 
-# Class: obo:FOODON_00003675 (obo:FOODON_00003675)
+# Class: obo:FOODON_00003675 (passion fruit)
 
 AnnotationAssertion(obo:IAO_0000117 obo:FOODON_00003675 <http://orcid.org/0000-0002-8844-9165>)
 AnnotationAssertion(oboInOwl:hasDbXref obo:FOODON_00003675 <http://eol.org/pages/584518>)
@@ -15944,12 +15944,12 @@ AnnotationAssertion(oboInOwl:hasSynonym obo:FOODON_00003675 "passiflora edulis"@
 AnnotationAssertion(oboInOwl:hasSynonym obo:FOODON_00003675 "purple granadilla"@en)
 SubClassOf(obo:FOODON_00003675 obo:FOODON_00002086)
 
-# Class: obo:FOODON_00003676 (obo:FOODON_00003676)
+# Class: obo:FOODON_00003676 (mulberry)
 
 AnnotationAssertion(obo:IAO_0000117 obo:FOODON_00003676 <http://orcid.org/0000-0002-8844-9165>)
 SubClassOf(obo:FOODON_00003676 obo:FOODON_00003134)
 
-# Class: obo:FOODON_00003677 (obo:FOODON_00003677)
+# Class: obo:FOODON_00003677 (longan)
 
 AnnotationAssertion(obo:IAO_0000117 obo:FOODON_00003677 <http://orcid.org/0000-0002-8844-9165>)
 AnnotationAssertion(dcterms:date obo:FOODON_00003677 "2021-02-11T03:29:40Z"^^xsd:dateTime)
@@ -15957,59 +15957,59 @@ SubClassOf(obo:FOODON_00003677 obo:FOODON_00003180)
 SubClassOf(obo:FOODON_00003677 obo:FOODON_03302007)
 SubClassOf(obo:FOODON_00003677 ObjectSomeValuesFrom(obo:RO_0001000 obo:NCBITaxon_128017))
 
-# Class: obo:FOODON_00003678 (obo:FOODON_00003678)
+# Class: obo:FOODON_00003678 (elderberry)
 
 AnnotationAssertion(obo:IAO_0000117 obo:FOODON_00003678 <http://orcid.org/0000-0002-8844-9165>)
 SubClassOf(obo:FOODON_00003678 obo:FOODON_00002437)
 
-# Class: obo:FOODON_00003679 (obo:FOODON_00003679)
+# Class: obo:FOODON_00003679 (pomegranate)
 
 AnnotationAssertion(obo:IAO_0000117 obo:FOODON_00003679 <http://orcid.org/0000-0002-8844-9165>)
 SubClassOf(obo:FOODON_00003679 obo:FOODON_00003065)
 
-# Class: obo:FOODON_00003680 (obo:FOODON_00003680)
+# Class: obo:FOODON_00003680 (natal plum)
 
 AnnotationAssertion(obo:IAO_0000117 obo:FOODON_00003680 <http://orcid.org/0000-0002-8844-9165>)
 SubClassOf(obo:FOODON_00003680 obo:FOODON_00001057)
 
-# Class: obo:FOODON_00003681 (obo:FOODON_00003681)
+# Class: obo:FOODON_00003681 (okra pod)
 
 AnnotationAssertion(obo:IAO_0000117 obo:FOODON_00003681 <http://orcid.org/0000-0002-8844-9165>)
 SubClassOf(obo:FOODON_00003681 obo:FOODON_00002064)
 
-# Class: obo:FOODON_00003682 (obo:FOODON_00003682)
+# Class: obo:FOODON_00003682 (okra seed)
 
 AnnotationAssertion(obo:IAO_0000117 obo:FOODON_00003682 <http://orcid.org/0000-0002-8844-9165>)
 SubClassOf(obo:FOODON_00003682 obo:FOODON_00002064)
 
-# Class: obo:FOODON_00003683 (obo:FOODON_00003683)
+# Class: obo:FOODON_00003683 (flaxseed)
 
 AnnotationAssertion(obo:IAO_0000117 obo:FOODON_00003683 <http://orcid.org/0000-0002-8844-9165>)
 SubClassOf(obo:FOODON_00003683 obo:FOODON_00001859)
 
-# Class: obo:FOODON_00003685 (obo:FOODON_00003685)
+# Class: obo:FOODON_00003685 (tronchuda cabbage leaf)
 
 AnnotationAssertion(obo:IAO_0000117 obo:FOODON_00003685 <http://orcid.org/0000-0002-8844-9165>)
 SubClassOf(obo:FOODON_00003685 obo:FOODON_00001677)
 
-# Class: obo:FOODON_00003686 (obo:FOODON_00003686)
+# Class: obo:FOODON_00003686 (kumquat)
 
 AnnotationAssertion(obo:IAO_0000117 obo:FOODON_00003686 <http://orcid.org/0000-0002-8844-9165>)
 AnnotationAssertion(dcterms:date obo:FOODON_00003686 "2021-02-11T05:55:37Z"^^xsd:dateTime)
 SubClassOf(obo:FOODON_00003686 obo:FOODON_00001990)
 SubClassOf(obo:FOODON_00003686 obo:PO_0030109)
 
-# Class: obo:FOODON_00003687 (obo:FOODON_00003687)
+# Class: obo:FOODON_00003687 (sacred pear)
 
 AnnotationAssertion(obo:IAO_0000117 obo:FOODON_00003687 <http://orcid.org/0000-0002-8844-9165>)
 SubClassOf(obo:FOODON_00003687 obo:FOODON_00001057)
 
-# Class: obo:FOODON_00003688 (obo:FOODON_00003688)
+# Class: obo:FOODON_00003688 (naranjilla)
 
 AnnotationAssertion(obo:IAO_0000117 obo:FOODON_00003688 <http://orcid.org/0000-0002-8844-9165>)
 SubClassOf(obo:FOODON_00003688 obo:FOODON_00002494)
 
-# Class: obo:FOODON_00003689 (obo:FOODON_00003689)
+# Class: obo:FOODON_00003689 (salmonberry)
 
 AnnotationAssertion(obo:IAO_0000117 obo:FOODON_00003689 <http://orcid.org/0000-0002-8844-9165>)
 SubClassOf(obo:FOODON_00003689 obo:FOODON_00003028)
@@ -16021,18 +16021,18 @@ AnnotationAssertion(dcterms:date obo:FOODON_00003690 "2021-02-11T06:04:29Z"^^xsd
 AnnotationAssertion(rdfs:label obo:FOODON_00003690 "pistachio nut food product"@en)
 SubClassOf(obo:FOODON_00003690 obo:FOODON_00001172)
 
-# Class: obo:FOODON_00003691 (obo:FOODON_00003691)
+# Class: obo:FOODON_00003691 (pistachio nut)
 
 AnnotationAssertion(obo:IAO_0000117 obo:FOODON_00003691 <http://orcid.org/0000-0002-8844-9165>)
 SubClassOf(obo:FOODON_00003691 obo:FOODON_00003690)
 
-# Class: obo:FOODON_00003692 (obo:FOODON_00003692)
+# Class: obo:FOODON_00003692 (shea fruit)
 
 AnnotationAssertion(obo:IAO_0000117 obo:FOODON_00003692 <http://orcid.org/0000-0002-8844-9165>)
 SubClassOf(obo:FOODON_00003692 obo:PO_0009001)
 SubClassOf(obo:FOODON_00003692 ObjectSomeValuesFrom(obo:RO_0001000 obo:FOODON_03411667))
 
-# Class: obo:FOODON_00003693 (obo:FOODON_00003693)
+# Class: obo:FOODON_00003693 (parsnip)
 
 AnnotationAssertion(obo:IAO_0000117 obo:FOODON_00003693 <http://orcid.org/0000-0002-8844-9165>)
 SubClassOf(obo:FOODON_00003693 obo:FOODON_00002085)
@@ -16044,39 +16044,39 @@ AnnotationAssertion(dcterms:date obo:FOODON_00003694 "2021-02-11T06:16:39Z"^^xsd
 AnnotationAssertion(rdfs:label obo:FOODON_00003694 "black fonio seed (raw)"@en)
 SubClassOf(obo:FOODON_00003694 obo:FOODON_00001193)
 
-# Class: obo:FOODON_00003695 (obo:FOODON_00003695)
+# Class: obo:FOODON_00003695 (finger millet seed)
 
 AnnotationAssertion(obo:IAO_0000117 obo:FOODON_00003695 <http://orcid.org/0000-0002-8844-9165>)
 AnnotationAssertion(dcterms:date obo:FOODON_00003695 "2021-02-11T06:17:41Z"^^xsd:dateTime)
 SubClassOf(obo:FOODON_00003695 obo:FOODON_00002038)
 
-# Class: obo:FOODON_00003697 (obo:FOODON_00003697)
+# Class: obo:FOODON_00003697 (scallion)
 
 AnnotationAssertion(obo:IAO_0000117 obo:FOODON_00003697 <http://orcid.org/0000-0002-8844-9165>)
 SubClassOf(obo:FOODON_00003697 obo:FOODON_00002695)
 SubClassOf(obo:FOODON_00003697 obo:FOODON_03302008)
 
-# Class: obo:FOODON_00003698 (obo:FOODON_00003698)
+# Class: obo:FOODON_00003698 (horseradish root)
 
 AnnotationAssertion(obo:IAO_0000117 obo:FOODON_00003698 <http://orcid.org/0000-0002-8844-9165>)
 SubClassOf(obo:FOODON_00003698 obo:FOODON_03316911)
 
-# Class: obo:FOODON_00003705 (obo:FOODON_00003705)
+# Class: obo:FOODON_00003705 (moreton bay chestnut black bean)
 
 AnnotationAssertion(obo:IAO_0000117 obo:FOODON_00003705 <http://orcid.org/0000-0002-8844-9165>)
 SubClassOf(obo:FOODON_00003705 obo:FOODON_00002045)
 
-# Class: obo:FOODON_00003706 (obo:FOODON_00003706)
+# Class: obo:FOODON_00003706 (jerusalem artichoke)
 
 AnnotationAssertion(obo:IAO_0000117 obo:FOODON_00003706 <http://orcid.org/0000-0002-8844-9165>)
 SubClassOf(obo:FOODON_00003706 obo:FOODON_00001979)
 
-# Class: obo:FOODON_00003710 (obo:FOODON_00003710)
+# Class: obo:FOODON_00003710 (pawpaw)
 
 AnnotationAssertion(obo:IAO_0000117 obo:FOODON_00003710 <http://orcid.org/0000-0002-8844-9165>)
 SubClassOf(obo:FOODON_00003710 obo:FOODON_00002277)
 
-# Class: obo:FOODON_00003711 (obo:FOODON_00003711)
+# Class: obo:FOODON_00003711 (purslane leaf)
 
 AnnotationAssertion(obo:IAO_0000117 obo:FOODON_00003711 <http://orcid.org/0000-0002-8844-9165>)
 SubClassOf(obo:FOODON_00003711 obo:FOODON_00002143)
@@ -16091,37 +16091,37 @@ AnnotationAssertion(rdfs:label obo:FOODON_00003712 "pine nut (shell on)"@en)
 AnnotationAssertion(rdfs:seeAlso obo:FOODON_00003712 <https://www.shellingmachine.com/application/pinenuts-shelling-overview.html>)
 SubClassOf(obo:FOODON_00003712 obo:FOODON_00002280)
 
-# Class: obo:FOODON_00003713 (obo:FOODON_00003713)
+# Class: obo:FOODON_00003713 (ridge gourd)
 
 AnnotationAssertion(obo:IAO_0000117 obo:FOODON_00003713 <http://orcid.org/0000-0002-8844-9165>)
 SubClassOf(obo:FOODON_00003713 obo:FOODON_00001915)
 
-# Class: obo:FOODON_00003717 (obo:FOODON_00003717)
+# Class: obo:FOODON_00003717 (ginger root)
 
 AnnotationAssertion(obo:IAO_0000117 obo:FOODON_00003717 <http://orcid.org/0000-0002-8844-9165>)
 SubClassOf(obo:FOODON_00003717 obo:FOODON_00001901)
 
-# Class: obo:FOODON_00003718 (obo:FOODON_00003718)
+# Class: obo:FOODON_00003718 (ginseng root)
 
 AnnotationAssertion(obo:IAO_0000117 obo:FOODON_00003718 <http://orcid.org/0000-0002-8844-9165>)
 SubClassOf(obo:FOODON_00003718 obo:FOODON_00001905)
 
-# Class: obo:FOODON_00003720 (obo:FOODON_00003720)
+# Class: obo:FOODON_00003720 (rambutan)
 
 AnnotationAssertion(obo:IAO_0000117 obo:FOODON_00003720 <http://orcid.org/0000-0002-8844-9165>)
 SubClassOf(obo:FOODON_00003720 obo:FOODON_00002689)
 
-# Class: obo:FOODON_00003721 (obo:FOODON_00003721)
+# Class: obo:FOODON_00003721 (otaheite gooseberry)
 
 AnnotationAssertion(obo:IAO_0000117 obo:FOODON_00003721 <http://orcid.org/0000-0002-8844-9165>)
 SubClassOf(obo:FOODON_00003721 obo:FOODON_00002689)
 
-# Class: obo:FOODON_00003722 (obo:FOODON_00003722)
+# Class: obo:FOODON_00003722 (pili nut)
 
 AnnotationAssertion(obo:IAO_0000117 obo:FOODON_00003722 <http://orcid.org/0000-0002-8844-9165>)
 SubClassOf(obo:FOODON_00003722 obo:FOODON_00001172)
 
-# Class: obo:FOODON_00003724 (obo:FOODON_00003724)
+# Class: obo:FOODON_00003724 (quince)
 
 AnnotationAssertion(obo:IAO_0000117 obo:FOODON_00003724 <http://orcid.org/0000-0002-8844-9165>)
 SubClassOf(obo:FOODON_00003724 obo:FOODON_00002182)
@@ -16134,146 +16134,146 @@ AnnotationAssertion(dcterms:date obo:FOODON_00003725 "2021-02-11T17:50:15Z"^^xsd
 AnnotationAssertion(rdfs:label obo:FOODON_00003725 "lemon balm food product"@en)
 SubClassOf(obo:FOODON_00003725 obo:FOODON_00002143)
 
-# Class: obo:FOODON_00003726 (obo:FOODON_00003726)
+# Class: obo:FOODON_00003726 (lemon balm leaf)
 
 AnnotationAssertion(obo:IAO_0000117 obo:FOODON_00003726 <http://orcid.org/0000-0002-8844-9165>)
 SubClassOf(obo:FOODON_00003726 obo:FOODON_00003725)
 
-# Class: obo:FOODON_00003727 (obo:FOODON_00003727)
+# Class: obo:FOODON_00003727 (sarsaparilla root (Smilax aristolochiifolia))
 
 AnnotationAssertion(obo:IAO_0000117 obo:FOODON_00003727 <http://orcid.org/0000-0002-8844-9165>)
 AnnotationAssertion(dcterms:date obo:FOODON_00003727 "2021-02-11T17:57:24Z"^^xsd:dateTime)
 SubClassOf(obo:FOODON_00003727 obo:FOODON_00002492)
 
-# Class: obo:FOODON_00003730 (obo:FOODON_00003730)
+# Class: obo:FOODON_00003730 (tamarillo)
 
 AnnotationAssertion(obo:IAO_0000117 obo:FOODON_00003730 <http://orcid.org/0000-0002-8844-9165>)
 SubClassOf(obo:FOODON_00003730 obo:FOODON_00003291)
 
-# Class: obo:FOODON_00003734 (obo:FOODON_00003734)
+# Class: obo:FOODON_00003734 (rye kernel)
 
 AnnotationAssertion(obo:IAO_0000117 obo:FOODON_00003734 <http://orcid.org/0000-0002-8844-9165>)
 SubClassOf(obo:FOODON_00003734 ObjectSomeValuesFrom(obo:RO_0002350 obo:FOODON_03400125))
 
-# Class: obo:FOODON_00003735 (obo:FOODON_00003735)
+# Class: obo:FOODON_00003735 (lathyrus pea)
 
 AnnotationAssertion(obo:IAO_0000117 obo:FOODON_00003735 <http://orcid.org/0000-0002-8844-9165>)
 SubClassOf(obo:FOODON_00003735 obo:FOODON_03301300)
 
-# Class: obo:FOODON_00003736 (obo:FOODON_00003736)
+# Class: obo:FOODON_00003736 (shea nut)
 
 AnnotationAssertion(obo:IAO_0000117 obo:FOODON_00003736 <http://orcid.org/0000-0002-8844-9165>)
 AnnotationAssertion(dcterms:date obo:FOODON_00003736 "2021-02-11T18:53:47Z"^^xsd:dateTime)
 SubClassOf(obo:FOODON_00003736 ObjectSomeValuesFrom(obo:RO_0001000 obo:FOODON_03411667))
 
-# Class: obo:FOODON_00003737 (obo:FOODON_00003737)
+# Class: obo:FOODON_00003737 (lupine bean)
 
 AnnotationAssertion(obo:IAO_0000117 obo:FOODON_00003737 <http://orcid.org/0000-0002-8844-9165>)
 SubClassOf(obo:FOODON_00003737 obo:FOODON_00002012)
 
-# Class: obo:FOODON_00003738 (obo:FOODON_00003738)
+# Class: obo:FOODON_00003738 (vanilla bean)
 
 AnnotationAssertion(obo:IAO_0000117 obo:FOODON_00003738 <http://orcid.org/0000-0002-8844-9165>)
 SubClassOf(obo:FOODON_00003738 obo:FOODON_00002328)
 
-# Class: obo:FOODON_00003739 (obo:FOODON_00003739)
+# Class: obo:FOODON_00003739 (jicama tuber)
 
 AnnotationAssertion(obo:IAO_0000117 obo:FOODON_00003739 <http://orcid.org/0000-0002-8844-9165>)
 SubClassOf(obo:FOODON_00003739 obo:FOODON_00002150)
 
-# Class: obo:FOODON_00003741 (obo:FOODON_00003741)
+# Class: obo:FOODON_00003741 (kava root)
 
 AnnotationAssertion(obo:IAO_0000117 obo:FOODON_00003741 <http://orcid.org/0000-0002-8844-9165>)
 SubClassOf(obo:FOODON_00003741 obo:FOODON_00002580)
 
-# Class: obo:FOODON_00003743 (obo:FOODON_00003743)
+# Class: obo:FOODON_00003743 (safflower seed)
 
 AnnotationAssertion(obo:IAO_0000117 obo:FOODON_00003743 <http://orcid.org/0000-0002-8844-9165>)
 SubClassOf(obo:FOODON_00003743 obo:FOODON_00002499)
 
-# Class: obo:FOODON_00003745 (obo:FOODON_00003745)
+# Class: obo:FOODON_00003745 (tomatillo)
 
 AnnotationAssertion(obo:IAO_0000117 obo:FOODON_00003745 <http://orcid.org/0000-0002-8844-9165>)
 SubClassOf(obo:FOODON_00003745 obo:FOODON_00001163)
 
-# Class: obo:FOODON_00003746 (obo:FOODON_00003746)
+# Class: obo:FOODON_00003746 (rose hip)
 
 AnnotationAssertion(obo:IAO_0000117 obo:FOODON_00003746 <http://orcid.org/0000-0002-8844-9165>)
 SubClassOf(obo:FOODON_00003746 obo:FOODON_00002211)
 
-# Class: obo:FOODON_00003748 (obo:FOODON_00003748)
+# Class: obo:FOODON_00003748 (shallot)
 
 AnnotationAssertion(obo:IAO_0000117 obo:FOODON_00003748 <http://orcid.org/0000-0002-8844-9165>)
 SubClassOf(obo:FOODON_00003748 obo:FOODON_00002234)
 
-# Class: obo:FOODON_00003750 (obo:FOODON_00003750)
+# Class: obo:FOODON_00003750 (wood apple)
 
 AnnotationAssertion(obo:IAO_0000117 obo:FOODON_00003750 <http://orcid.org/0000-0002-8844-9165>)
 SubClassOf(obo:FOODON_00003750 obo:FOODON_00002367)
 
-# Class: obo:FOODON_00003752 (obo:FOODON_00003752)
+# Class: obo:FOODON_00003752 (taro root)
 
 AnnotationAssertion(obo:IAO_0000117 obo:FOODON_00003752 <http://orcid.org/0000-0002-8844-9165>)
 SubClassOf(obo:FOODON_00003752 obo:FOODON_00002310)
 
-# Class: obo:FOODON_00003753 (obo:FOODON_00003753)
+# Class: obo:FOODON_00003753 (turmeric root)
 
 AnnotationAssertion(obo:IAO_0000117 obo:FOODON_00003753 <http://orcid.org/0000-0002-8844-9165>)
 SubClassOf(obo:FOODON_00003753 obo:FOODON_00002323)
 
-# Class: obo:FOODON_00003757 (obo:FOODON_00003757)
+# Class: obo:FOODON_00003757 (white lupine bean)
 
 AnnotationAssertion(obo:IAO_0000117 obo:FOODON_00003757 <http://orcid.org/0000-0002-8844-9165>)
 SubClassOf(obo:FOODON_00003757 obo:FOODON_00003737)
 
-# Class: obo:FOODON_00003762 (obo:FOODON_00003762)
+# Class: obo:FOODON_00003762 (white peppercorn)
 
 AnnotationAssertion(obo:IAO_0000117 obo:FOODON_00003762 <http://orcid.org/0000-0002-8844-9165>)
 SubClassOf(obo:FOODON_00003762 obo:FOODON_00002361)
 SubClassOf(obo:FOODON_00003762 obo:FOODON_03310070)
 
-# Class: obo:FOODON_00003763 (obo:FOODON_00003763)
+# Class: obo:FOODON_00003763 (yellow nutsedge tuber)
 
 AnnotationAssertion(obo:IAO_0000117 obo:FOODON_00003763 <http://orcid.org/0000-0002-8844-9165>)
 SubClassOf(obo:FOODON_00003763 obo:FOODON_00002447)
 
-# Class: obo:FOODON_00003766 (obo:FOODON_00003766)
+# Class: obo:FOODON_00003766 (red currant)
 
 AnnotationAssertion(obo:IAO_0000117 obo:FOODON_00003766 <http://orcid.org/0000-0002-8844-9165>)
 SubClassOf(obo:FOODON_00003766 obo:FOODON_00002459)
 
-# Class: obo:FOODON_00003768 (obo:FOODON_00003768)
+# Class: obo:FOODON_00003768 (field cress leaf)
 
 AnnotationAssertion(obo:IAO_0000117 obo:FOODON_00003768 <http://orcid.org/0000-0002-8844-9165>)
 SubClassOf(obo:FOODON_00003768 obo:FOODON_00003042)
 
-# Class: obo:FOODON_00003771 (obo:FOODON_00003771)
+# Class: obo:FOODON_00003771 (red Abyssinian banana corm)
 
 AnnotationAssertion(obo:IAO_0000117 obo:FOODON_00003771 <http://orcid.org/0000-0002-8844-9165>)
 SubClassOf(obo:FOODON_00003771 ObjectSomeValuesFrom(obo:RO_0001000 obo:NCBITaxon_4639))
 
-# Class: obo:FOODON_00003774 (obo:FOODON_00003774)
+# Class: obo:FOODON_00003774 (oat bran)
 
 AnnotationAssertion(obo:IAO_0000117 obo:FOODON_00003774 <http://orcid.org/0000-0002-8844-9165>)
 SubClassOf(obo:FOODON_00003774 obo:FOODON_00001189)
 
-# Class: obo:FOODON_00003775 (obo:FOODON_00003775)
+# Class: obo:FOODON_00003775 (bramble berry)
 
 AnnotationAssertion(obo:IAO_0000117 obo:FOODON_00003775 <http://orcid.org/0000-0002-8844-9165>)
 SubClassOf(obo:FOODON_00003775 obo:FOODON_00003028)
 
-# Class: obo:FOODON_00003779 (obo:FOODON_00003779)
+# Class: obo:FOODON_00003779 (catjang pea)
 
 AnnotationAssertion(obo:IAO_0000117 obo:FOODON_00003779 <http://orcid.org/0000-0002-8844-9165>)
 SubClassOf(obo:FOODON_00003779 obo:FOODON_00001783)
 SubClassOf(obo:FOODON_00003779 ObjectSomeValuesFrom(obo:RO_0001000 obo:FOODON_00003129))
 
-# Class: obo:FOODON_00003784 (obo:FOODON_00003784)
+# Class: obo:FOODON_00003784 (plantain)
 
 AnnotationAssertion(obo:IAO_0000117 obo:FOODON_00003784 <http://orcid.org/0000-0002-8844-9165>)
 SubClassOf(obo:FOODON_00003784 obo:FOODON_00002159)
 
-# Class: obo:FOODON_00003788 (obo:FOODON_00003788)
+# Class: obo:FOODON_00003788 (chive leaf)
 
 AnnotationAssertion(obo:IAO_0000117 obo:FOODON_00003788 <http://orcid.org/0000-0002-8844-9165>)
 SubClassOf(obo:FOODON_00003788 obo:FOODON_00001732)
@@ -16285,44 +16285,44 @@ AnnotationAssertion(dcterms:date obo:FOODON_00003789 "2021-03-29T05:25:16Z"^^xsd
 AnnotationAssertion(rdfs:label obo:FOODON_00003789 "soursop food product"@en)
 SubClassOf(obo:FOODON_00003789 obo:FOODON_00001057)
 
-# Class: obo:FOODON_00003790 (obo:FOODON_00003790)
+# Class: obo:FOODON_00003790 (alaska pea)
 
 AnnotationAssertion(obo:IAO_0000117 obo:FOODON_00003790 <http://orcid.org/0000-0002-8844-9165>)
 SubClassOf(obo:FOODON_00003790 ObjectSomeValuesFrom(obo:RO_0001000 obo:FOODON_03411326))
 
-# Class: obo:FOODON_00003791 (obo:FOODON_00003791)
+# Class: obo:FOODON_00003791 (anise seed)
 
 AnnotationAssertion(obo:IAO_0000117 obo:FOODON_00003791 <http://orcid.org/0000-0002-8844-9165>)
 AnnotationAssertion(rdfs:comment obo:FOODON_00003791 "\"The flavor and aroma of its seeds have similarities with some other spices and herbs, such as star anise,[4] fennel, licorice, and tarragon. It is widely cultivated and used to flavor food, candy, and alcoholic drinks, especially around the Mediterranean.\" [https://en.wikipedia.org/wiki/Anise]"@en)
 SubClassOf(obo:FOODON_00003791 obo:FOODON_03303380)
 
-# Class: obo:FOODON_00003793 (obo:FOODON_00003793)
+# Class: obo:FOODON_00003793 (clove (spice))
 
 AnnotationAssertion(obo:IAO_0000117 obo:FOODON_00003793 <http://orcid.org/0000-0002-8844-9165>)
 SubClassOf(obo:FOODON_00003793 obo:FOODON_00001745)
 
-# Class: obo:FOODON_00003794 (obo:FOODON_00003794)
+# Class: obo:FOODON_00003794 (dill seed)
 
 AnnotationAssertion(obo:IAO_0000117 obo:FOODON_00003794 <http://orcid.org/0000-0002-8844-9165>)
 SubClassOf(obo:FOODON_00003794 obo:FOODON_00001811)
 
-# Class: obo:FOODON_00003795 (obo:FOODON_00003795)
+# Class: obo:FOODON_00003795 (jojoba bean)
 
 AnnotationAssertion(obo:IAO_0000117 obo:FOODON_00003795 <http://orcid.org/0000-0002-8844-9165>)
 AnnotationAssertion(dcterms:date obo:FOODON_00003795 "2021-02-12T17:30:18Z"^^xsd:dateTime)
 SubClassOf(obo:FOODON_00003795 obo:FOODON_00003182)
 
-# Class: obo:FOODON_00003796 (obo:FOODON_00003796)
+# Class: obo:FOODON_00003796 (lotus seed)
 
 AnnotationAssertion(obo:IAO_0000117 obo:FOODON_00003796 <http://orcid.org/0000-0002-8844-9165>)
 SubClassOf(obo:FOODON_00003796 obo:FOODON_00003113)
 
-# Class: obo:FOODON_00003797 (obo:FOODON_00003797)
+# Class: obo:FOODON_00003797 (juniper berry)
 
 AnnotationAssertion(obo:IAO_0000117 obo:FOODON_00003797 <http://orcid.org/0000-0002-8844-9165>)
 SubClassOf(obo:FOODON_00003797 obo:FOODON_00001173)
 
-# Class: obo:FOODON_00003798 (obo:FOODON_00003798)
+# Class: obo:FOODON_00003798 (cayenne pepper)
 
 AnnotationAssertion(obo:IAO_0000117 obo:FOODON_00003798 <http://orcid.org/0000-0002-8844-9165>)
 SubClassOf(obo:FOODON_00003798 obo:FOODON_00001955)
@@ -16334,145 +16334,145 @@ AnnotationAssertion(dcterms:date obo:FOODON_00003799 "2021-02-12T17:52:35Z"^^xsd
 AnnotationAssertion(rdfs:label obo:FOODON_00003799 "cayenne pepper (dried)"@en)
 SubClassOf(obo:FOODON_00003799 obo:FOODON_00003798)
 
-# Class: obo:FOODON_00003800 (obo:FOODON_00003800)
+# Class: obo:FOODON_00003800 (hops)
 
 AnnotationAssertion(obo:IAO_0000117 obo:FOODON_00003800 <http://orcid.org/0000-0002-8844-9165>)
 SubClassOf(obo:FOODON_00003800 obo:FOODON_00001951)
 
-# Class: obo:FOODON_00003801 (obo:FOODON_00003801)
+# Class: obo:FOODON_00003801 (konbu blade)
 
 AnnotationAssertion(obo:IAO_0000117 obo:FOODON_00003801 <http://orcid.org/0000-0002-8844-9165>)
 AnnotationAssertion(dcterms:date obo:FOODON_00003801 "2021-02-12T17:56:35Z"^^xsd:dateTime)
 SubClassOf(obo:FOODON_00003801 obo:FOODON_03311105)
 
-# Class: obo:FOODON_00003809 (obo:FOODON_00003809)
+# Class: obo:FOODON_00003809 (rosemary leaf)
 
 AnnotationAssertion(obo:IAO_0000117 obo:FOODON_00003809 <http://orcid.org/0000-0002-8844-9165>)
 SubClassOf(obo:FOODON_00003809 obo:FOODON_00002212)
 
-# Class: obo:FOODON_00003810 (obo:FOODON_00003810)
+# Class: obo:FOODON_00003810 (pink peppercorn)
 
 AnnotationAssertion(obo:IAO_0000117 obo:FOODON_00003810 <http://orcid.org/0000-0002-8844-9165>)
 SubClassOf(obo:FOODON_00003810 obo:FOODON_00003287)
 SubClassOf(obo:FOODON_00003810 obo:FOODON_03310070)
 
-# Class: obo:FOODON_00003811 (obo:FOODON_00003811)
+# Class: obo:FOODON_00003811 (spanish thyme leaf)
 
 SubClassOf(obo:FOODON_00003811 obo:FOODON_00003042)
 
-# Class: obo:FOODON_00003812 (obo:FOODON_00003812)
+# Class: obo:FOODON_00003812 (tarragon leaf)
 
 AnnotationAssertion(obo:IAO_0000117 obo:FOODON_00003812 <http://orcid.org/0000-0002-8844-9165>)
 SubClassOf(obo:FOODON_00003812 obo:FOODON_00002311)
 
-# Class: obo:FOODON_00003813 (obo:FOODON_00003813)
+# Class: obo:FOODON_00003813 (italian prune plum)
 
 AnnotationAssertion(obo:IAO_0000117 obo:FOODON_00003813 <http://orcid.org/0000-0002-8844-9165>)
 SubClassOf(obo:FOODON_00003813 obo:FOODON_00002161)
 
-# Class: obo:FOODON_00003815 (obo:FOODON_00003815)
+# Class: obo:FOODON_00003815 (kelp blade)
 
 AnnotationAssertion(obo:IAO_0000117 obo:FOODON_00003815 <http://orcid.org/0000-0002-8844-9165>)
 SubClassOf(obo:FOODON_00003815 obo:FOODON_03301195)
 
-# Class: obo:FOODON_00003816 (obo:FOODON_00003816)
+# Class: obo:FOODON_00003816 (vegetable)
 
 AnnotationAssertion(obo:IAO_0000117 obo:FOODON_00003816 <http://orcid.org/0000-0002-8844-9165>)
 SubClassOf(obo:FOODON_00003816 obo:FOODON_03315308)
 
-# Class: obo:FOODON_00003817 (obo:FOODON_00003817)
+# Class: obo:FOODON_00003817 (neem leaf)
 
 AnnotationAssertion(obo:IAO_0000117 obo:FOODON_00003817 <http://orcid.org/0000-0002-8844-9165>)
 SubClassOf(obo:FOODON_00003817 obo:FOODON_00002143)
 
-# Class: obo:FOODON_00003818 (obo:FOODON_00003818)
+# Class: obo:FOODON_00003818 (pandan leaf)
 
 AnnotationAssertion(obo:IAO_0000117 obo:FOODON_00003818 <http://orcid.org/0000-0002-8844-9165>)
 SubClassOf(obo:FOODON_00003818 obo:FOODON_00002143)
 
-# Class: obo:FOODON_00003819 (obo:FOODON_00003819)
+# Class: obo:FOODON_00003819 (chaparral leaf)
 
 AnnotationAssertion(obo:IAO_0000117 obo:FOODON_00003819 <http://orcid.org/0000-0002-8844-9165>)
 SubClassOf(obo:FOODON_00003819 obo:FOODON_00002143)
 
-# Class: obo:FOODON_00003820 (obo:FOODON_00003820)
+# Class: obo:FOODON_00003820 (stevia leaf)
 
 AnnotationAssertion(obo:IAO_0000117 obo:FOODON_00003820 <http://orcid.org/0000-0002-8844-9165>)
 SubClassOf(obo:FOODON_00003820 obo:FOODON_00002143)
 
-# Class: obo:FOODON_00003821 (obo:FOODON_00003821)
+# Class: obo:FOODON_00003821 (mountain arnica leaf)
 
 AnnotationAssertion(obo:IAO_0000117 obo:FOODON_00003821 <http://orcid.org/0000-0002-8844-9165>)
 SubClassOf(obo:FOODON_00003821 obo:FOODON_00002143)
 
-# Class: obo:FOODON_00003822 (obo:FOODON_00003822)
+# Class: obo:FOODON_00003822 (arnica leaf)
 
 AnnotationAssertion(obo:IAO_0000117 obo:FOODON_00003822 <http://orcid.org/0000-0002-8844-9165>)
 SubClassOf(obo:FOODON_00003822 obo:FOODON_00002143)
 
-# Class: obo:FOODON_00003823 (obo:FOODON_00003823)
+# Class: obo:FOODON_00003823 (bitter leaf)
 
 AnnotationAssertion(obo:IAO_0000117 obo:FOODON_00003823 <http://orcid.org/0000-0002-8844-9165>)
 SubClassOf(obo:FOODON_00003823 obo:FOODON_00002143)
 
-# Class: obo:FOODON_00003824 (obo:FOODON_00003824)
+# Class: obo:FOODON_00003824 (chamomile leaf)
 
 AnnotationAssertion(obo:IAO_0000117 obo:FOODON_00003824 <http://orcid.org/0000-0002-8844-9165>)
 SubClassOf(obo:FOODON_00003824 obo:FOODON_00002143)
 SubClassOf(obo:FOODON_00003824 obo:FOODON_00002701)
 
-# Class: obo:FOODON_00003825 (obo:FOODON_00003825)
+# Class: obo:FOODON_00003825 (bitter gourd leaf)
 
 AnnotationAssertion(obo:IAO_0000117 obo:FOODON_00003825 <http://orcid.org/0000-0002-8844-9165>)
 SubClassOf(obo:FOODON_00003825 obo:FOODON_00002143)
 
-# Class: obo:FOODON_00003826 (obo:FOODON_00003826)
+# Class: obo:FOODON_00003826 (savory leaf)
 
 AnnotationAssertion(obo:IAO_0000117 obo:FOODON_00003826 <http://orcid.org/0000-0002-8844-9165>)
 SubClassOf(obo:FOODON_00003826 obo:FOODON_00002143)
 
-# Class: obo:FOODON_00003829 (obo:FOODON_00003829)
+# Class: obo:FOODON_00003829 (barberry bark)
 
 AnnotationAssertion(obo:IAO_0000117 obo:FOODON_00003829 <http://orcid.org/0000-0002-8844-9165>)
 SubClassOf(obo:FOODON_00003829 obo:FOODON_00001015)
 
-# Class: obo:FOODON_00003830 (obo:FOODON_00003830)
+# Class: obo:FOODON_00003830 (estafiate wormwood leaf)
 
 AnnotationAssertion(obo:IAO_0000117 obo:FOODON_00003830 <http://orcid.org/0000-0002-8844-9165>)
 SubClassOf(obo:FOODON_00003830 obo:FOODON_00002143)
 
-# Class: obo:FOODON_00003832 (obo:FOODON_00003832)
+# Class: obo:FOODON_00003832 (charoli seed)
 
 AnnotationAssertion(obo:IAO_0000117 obo:FOODON_00003832 <http://orcid.org/0000-0002-8844-9165>)
 SubClassOf(obo:FOODON_00003832 obo:FOODON_00002153)
 
-# Class: obo:FOODON_00003833 (obo:FOODON_00003833)
+# Class: obo:FOODON_00003833 (river tamarind seed)
 
 AnnotationAssertion(obo:IAO_0000117 obo:FOODON_00003833 <http://orcid.org/0000-0002-8844-9165>)
 SubClassOf(obo:FOODON_00003833 obo:FOODON_00001057)
 
-# Class: obo:FOODON_00003835 (obo:FOODON_00003835)
+# Class: obo:FOODON_00003835 (acacia leaf)
 
 AnnotationAssertion(obo:IAO_0000117 obo:FOODON_00003835 <http://orcid.org/0000-0002-8844-9165>)
 AnnotationAssertion(oboInOwl:hasExactSynonym obo:FOODON_00003835 "cha-om leaf"@en)
 SubClassOf(obo:FOODON_00003835 obo:FOODON_00003834)
 
-# Class: obo:FOODON_00003836 (obo:FOODON_00003836)
+# Class: obo:FOODON_00003836 (acacia seed)
 
 AnnotationAssertion(obo:IAO_0000117 obo:FOODON_00003836 <http://orcid.org/0000-0002-8844-9165>)
 SubClassOf(obo:FOODON_00003836 obo:FOODON_00003834)
 
-# Class: obo:FOODON_00003838 (obo:FOODON_00003838)
+# Class: obo:FOODON_00003838 (kra thom na leaf)
 
 AnnotationAssertion(obo:IAO_0000117 obo:FOODON_00003838 <http://orcid.org/0000-0002-8844-9165>)
 SubClassOf(obo:FOODON_00003838 obo:FOODON_00002143)
 
-# Class: obo:FOODON_00003839 (obo:FOODON_00003839)
+# Class: obo:FOODON_00003839 (kaim leaf)
 
 AnnotationAssertion(obo:IAO_0000117 obo:FOODON_00003839 <http://orcid.org/0000-0002-8844-9165>)
 SubClassOf(obo:FOODON_00003839 obo:FOODON_00002143)
 
-# Class: obo:FOODON_00003840 (obo:FOODON_00003840)
+# Class: obo:FOODON_00003840 (romaine lettuce heart)
 
 AnnotationAssertion(obo:IAO_0000117 obo:FOODON_00003840 <http://orcid.org/0000-0002-8844-9165>)
 SubClassOf(obo:FOODON_00003840 obo:FOODON_00001998)
@@ -16857,7 +16857,7 @@ AnnotationAssertion(dcterms:date obo:FOODON_00003892 "2021-05-18T11:37:40Z"^^xsd
 AnnotationAssertion(rdfs:label obo:FOODON_00003892 "puppy food"@en)
 SubClassOf(obo:FOODON_00003892 obo:FOODON_03302645)
 
-# Class: obo:FOODON_00003899 (obo:FOODON_00003899)
+# Class: obo:FOODON_00003899 (egusi seed)
 
 AnnotationAssertion(obo:IAO_0000117 obo:FOODON_00003899 <http://orcid.org/0000-0002-8844-9165>)
 AnnotationAssertion(dcterms:date obo:FOODON_00003899 "2021-08-18T18:21:02Z"^^xsd:dateTime)
@@ -17107,11 +17107,11 @@ AnnotationAssertion(oboInOwl:hasExactSynonym obo:FOODON_00003937 "bbq chicken pi
 AnnotationAssertion(rdfs:label obo:FOODON_00003937 "barbecue chicken pizza"@en)
 SubClassOf(obo:FOODON_00003937 obo:FOODON_00003931)
 
-# Class: obo:FOODON_00003958 (obo:FOODON_00003958)
+# Class: obo:FOODON_00003958 (Meuschenia galii)
 
 SubClassOf(obo:FOODON_00003958 obo:NCBITaxon_303721)
 
-# Class: obo:FOODON_00004020 (obo:FOODON_00004020)
+# Class: obo:FOODON_00004020 (Ailichthys punctatus)
 
 SubClassOf(obo:FOODON_00004020 obo:FOODON_03411021)
 
@@ -17120,20 +17120,20 @@ SubClassOf(obo:FOODON_00004020 obo:FOODON_03411021)
 AnnotationAssertion(rdfs:label obo:FOODON_00004047 "sweet wine"@en)
 SubClassOf(obo:FOODON_00004047 obo:FOODON_03301014)
 
-# Class: obo:FOODON_00004055 (obo:FOODON_00004055)
+# Class: obo:FOODON_00004055 (Denominación de origen)
 
 AnnotationAssertion(obo:IAO_0000114 obo:FOODON_00004055 obo:IAO_0000122)
 SubClassOf(obo:FOODON_00004055 obo:FOODON_03530087)
 
-# Class: obo:FOODON_00004058 (obo:FOODON_00004058)
+# Class: obo:FOODON_00004058 (Denominación de Origen Calificada)
 
 SubClassOf(obo:FOODON_00004058 obo:FOODON_00004056)
 
-# Class: obo:FOODON_00004059 (obo:FOODON_00004059)
+# Class: obo:FOODON_00004059 (Vino de Pago)
 
 SubClassOf(obo:FOODON_00004059 obo:FOODON_00004056)
 
-# Class: obo:FOODON_00004060 (obo:FOODON_00004060)
+# Class: obo:FOODON_00004060 (Vino de Calidad con indicación geográfica)
 
 SubClassOf(obo:FOODON_00004060 obo:FOODON_00004056)
 
@@ -17153,7 +17153,7 @@ AnnotationAssertion(rdfs:label obo:FOODON_00004064 "white grape cultivar"@en)
 AnnotationAssertion(rdfs:seeAlso obo:FOODON_00004064 <https://en.wikipedia.org/wiki/List_of_grape_varieties#White_grapes>)
 SubClassOf(obo:FOODON_00004064 obo:FOODON_03411329)
 
-# Class: obo:FOODON_00004065 (obo:FOODON_00004065)
+# Class: obo:FOODON_00004065 (Table Wine (deprecated EU standard))
 
 SubClassOf(obo:FOODON_00004065 ObjectSomeValuesFrom(obo:IAO_0000136 obo:FOODON_03301014))
 
@@ -17327,7 +17327,7 @@ AnnotationAssertion(dcterms:date obo:FOODON_00004147 "2022-02-01T07:02:21Z"^^xsd
 AnnotationAssertion(rdfs:label obo:FOODON_00004147 "Mangifera minor fruit"@en)
 SubClassOf(obo:FOODON_00004147 obo:FOODON_00002689)
 
-# Class: obo:FOODON_00004149 (obo:FOODON_00004149)
+# Class: obo:FOODON_00004149 (European plum)
 
 SubClassOf(obo:FOODON_00004149 obo:FOODON_00003483)
 
@@ -17346,7 +17346,7 @@ AnnotationAssertion(dcterms:date obo:FOODON_00004151 "2022-02-01T04:49:03Z"^^xsd
 AnnotationAssertion(rdfs:label obo:FOODON_00004151 "common pear (raw)"@en)
 SubClassOf(obo:FOODON_00004151 obo:FOODON_00003576)
 
-# Class: obo:FOODON_00004152 (obo:FOODON_00004152)
+# Class: obo:FOODON_00004152 (Manchurian pear)
 
 AnnotationAssertion(obo:IAO_0000117 obo:FOODON_00004152 <http://orcid.org/0000-0002-8844-9165>)
 AnnotationAssertion(dcterms:date obo:FOODON_00004152 "2022-02-01T04:56:27Z"^^xsd:dateTime)
@@ -17389,7 +17389,7 @@ AnnotationAssertion(dcterms:date obo:FOODON_00004184 "2022-02-01T08:02:16Z"^^xsd
 AnnotationAssertion(rdfs:label obo:FOODON_00004184 "banana (raw)"@en)
 SubClassOf(obo:FOODON_00004184 obo:FOODON_00004183)
 
-# Class: obo:FOODON_00004185 (obo:FOODON_00004185)
+# Class: obo:FOODON_00004185 (Malus sieversii apple)
 
 AnnotationAssertion(obo:IAO_0000117 obo:FOODON_00004185 <http://orcid.org/0000-0002-8844-9165>)
 AnnotationAssertion(dcterms:date obo:FOODON_00004185 "2022-02-01T08:09:39Z"^^xsd:dateTime)
@@ -17417,13 +17417,13 @@ AnnotationAssertion(dcterms:date obo:FOODON_00004207 "2022-02-19T20:18:06Z"^^xsd
 AnnotationAssertion(rdfs:label obo:FOODON_00004207 "cumin (powdered)"@en)
 SubClassOf(obo:FOODON_00004207 obo:FOODON_03311872)
 
-# Class: obo:FOODON_00004208 (obo:FOODON_00004208)
+# Class: obo:FOODON_00004208 (Alaska blueberry)
 
 AnnotationAssertion(obo:IAO_0000117 obo:FOODON_00004208 <http://orcid.org/0000-0002-8844-9165>)
 AnnotationAssertion(dcterms:date obo:FOODON_00004208 "2022-02-17T23:10:32Z"^^xsd:dateTime)
 SubClassOf(obo:FOODON_00004208 obo:FOODON_00001640)
 
-# Class: obo:FOODON_00004210 (obo:FOODON_00004210)
+# Class: obo:FOODON_00004210 (casaba melon)
 
 AnnotationAssertion(obo:IAO_0000117 obo:FOODON_00004210 <http://orcid.org/0000-0002-8844-9165>)
 AnnotationAssertion(dcterms:date obo:FOODON_00004210 "2022-02-17T23:35:05Z"^^xsd:dateTime)
@@ -17436,19 +17436,19 @@ AnnotationAssertion(dcterms:date obo:FOODON_00004217 "2022-02-17T23:58:07Z"^^xsd
 AnnotationAssertion(rdfs:label obo:FOODON_00004217 "Amarelle cherry plant"@en)
 SubClassOf(obo:FOODON_00004217 obo:NCBITaxon_140311)
 
-# Class: obo:FOODON_00004218 (obo:FOODON_00004218)
+# Class: obo:FOODON_00004218 (sour cherry (raw))
 
 AnnotationAssertion(obo:IAO_0000117 obo:FOODON_00004218 <http://orcid.org/0000-0002-8844-9165>)
 AnnotationAssertion(dcterms:date obo:FOODON_00004218 "2022-02-18T00:10:43Z"^^xsd:dateTime)
 SubClassOf(obo:FOODON_00004218 obo:FOODON_03301240)
 
-# Class: obo:FOODON_00004222 (obo:FOODON_00004222)
+# Class: obo:FOODON_00004222 (chokecherry)
 
 AnnotationAssertion(obo:IAO_0000117 obo:FOODON_00004222 <http://orcid.org/0000-0002-8844-9165>)
 AnnotationAssertion(dcterms:date obo:FOODON_00004222 "2022-02-19T03:48:35Z"^^xsd:dateTime)
 SubClassOf(obo:FOODON_00004222 obo:FOODON_00004221)
 
-# Class: obo:FOODON_00004224 (obo:FOODON_00004224)
+# Class: obo:FOODON_00004224 (strawberry guava)
 
 AnnotationAssertion(obo:IAO_0000117 obo:FOODON_00004224 <http://orcid.org/0000-0002-8844-9165>)
 AnnotationAssertion(dcterms:date obo:FOODON_00004224 "2022-02-19T04:36:01Z"^^xsd:dateTime)
@@ -17469,19 +17469,19 @@ AnnotationAssertion(dcterms:date obo:FOODON_00004229 "2022-02-19T06:30:13Z"^^xsd
 AnnotationAssertion(rdfs:label obo:FOODON_00004229 "oheloberry (raw)"@en)
 SubClassOf(obo:FOODON_00004229 obo:FOODON_00002872)
 
-# Class: obo:FOODON_00004243 (obo:FOODON_00004243)
+# Class: obo:FOODON_00004243 (roselle calyx)
 
 AnnotationAssertion(obo:IAO_0000117 obo:FOODON_00004243 <http://orcid.org/0000-0002-8844-9165>)
 AnnotationAssertion(dcterms:date obo:FOODON_00004243 "2022-02-20T06:55:12Z"^^xsd:dateTime)
 SubClassOf(obo:FOODON_00004243 obo:FOODON_00003092)
 
-# Class: obo:FOODON_00004261 (obo:FOODON_00004261)
+# Class: obo:FOODON_00004261 (chinese chestnut (raw))
 
 AnnotationAssertion(obo:IAO_0000117 obo:FOODON_00004261 <http://orcid.org/0000-0002-8844-9165>)
 AnnotationAssertion(dcterms:date obo:FOODON_00004261 "2022-02-20T08:09:40Z"^^xsd:dateTime)
 SubClassOf(obo:FOODON_00004261 obo:FOODON_00004260)
 
-# Class: obo:FOODON_00004265 (obo:FOODON_00004265)
+# Class: obo:FOODON_00004265 (fennel food product)
 
 AnnotationAssertion(obo:IAO_0000117 obo:FOODON_00004265 <http://orcid.org/0000-0002-8844-9165>)
 AnnotationAssertion(dcterms:date obo:FOODON_00004265 "2022-02-20T10:05:28Z"^^xsd:dateTime)
@@ -17981,11 +17981,11 @@ AnnotationAssertion(rdfs:comment obo:FOODON_00004348 "The definition allows for 
 AnnotationAssertion(rdfs:label obo:FOODON_00004348 "raw"@en)
 SubClassOf(obo:FOODON_00004348 obo:PATO_0001995)
 
-# Class: obo:FOODON_00004351 (obo:FOODON_00004351)
+# Class: obo:FOODON_00004351 (asparagus bean (raw, mature))
 
 SubClassOf(obo:FOODON_00004351 obo:FOODON_00001172)
 
-# Class: obo:FOODON_00004352 (obo:FOODON_00004352)
+# Class: obo:FOODON_00004352 (pigeon pea (immature, raw))
 
 SubClassOf(obo:FOODON_00004352 obo:FOODON_00001141)
 
@@ -18074,13 +18074,13 @@ SubClassOf(obo:FOODON_00004423 obo:FOODON_02021636)
 
 SubClassOf(obo:FOODON_00004428 obo:FOODON_00001822)
 
-# Class: obo:FOODON_00004445 (obo:FOODON_00004445)
+# Class: obo:FOODON_00004445 (golden acorn squash (raw))
 
 AnnotationAssertion(obo:IAO_0000117 obo:FOODON_00004445 <https://orcid.org/0000-0002-8844-9165>)
 AnnotationAssertion(dcterms:date obo:FOODON_00004445 "2023-06-20T21:48:22Z"^^xsd:dateTime)
 SubClassOf(obo:FOODON_00004445 obo:FOODON_00004444)
 
-# Class: obo:FOODON_00004446 (obo:FOODON_00004446)
+# Class: obo:FOODON_00004446 (Mexican grey squash)
 
 SubClassOf(obo:FOODON_00004446 obo:FOODON_00003708)
 
@@ -18185,7 +18185,7 @@ AnnotationAssertion(rdfs:comment obo:FOODON_00004469 "This characteristic includ
 AnnotationAssertion(rdfs:label obo:FOODON_00004469 "fresh frozen"@en)
 SubClassOf(obo:FOODON_00004469 obo:PATO_0001985)
 
-# Class: obo:FOODON_00004470 (obo:FOODON_00004470)
+# Class: obo:FOODON_00004470 (beef primal cut)
 
 AnnotationAssertion(dcterms:contributor obo:FOODON_00004470 <https://orcid.org/0000-0002-8844-9165>)
 AnnotationAssertion(dcterms:date obo:FOODON_00004470 "2023-08-01T19:21:33Z"^^xsd:dateTime)
@@ -18221,13 +18221,13 @@ AnnotationAssertion(oboInOwl:hasExactSynonym obo:FOODON_00004475 "spotted knifef
 AnnotationAssertion(rdfs:label obo:FOODON_00004475 "clown featherback"@en)
 SubClassOf(obo:FOODON_00004475 obo:FOODON_03414559)
 
-# Class: obo:FOODON_00004476 (obo:FOODON_00004476)
+# Class: obo:FOODON_00004476 (beef sub-primal cut)
 
 AnnotationAssertion(dcterms:contributor obo:FOODON_00004476 <https://orcid.org/0000-0002-8844-9165>)
 AnnotationAssertion(dcterms:date obo:FOODON_00004476 "2023-08-02T15:48:39Z"^^xsd:dateTime)
 SubClassOf(obo:FOODON_00004476 obo:FOODON_00004337)
 
-# Class: obo:FOODON_00004478 (obo:FOODON_00004478)
+# Class: obo:FOODON_00004478 (beef retail cut)
 
 AnnotationAssertion(dcterms:date obo:FOODON_00004478 "2023-08-02T16:14:49Z"^^xsd:dateTime)
 SubClassOf(obo:FOODON_00004478 obo:FOODON_00004338)
@@ -18827,7 +18827,7 @@ AnnotationAssertion(rdfs:label obo:FOODON_00005179 "thawed (from frozen raw)"@en
 SubClassOf(obo:FOODON_00005179 obo:FOODON_00004348)
 SubClassOf(obo:FOODON_00005179 obo:FOODON_00004727)
 
-# Class: obo:FOODON_00005329 (obo:FOODON_00005329)
+# Class: obo:FOODON_00005329 (piece(s) of mushroom fruitbody)
 
 SubClassOf(obo:FOODON_00005329 obo:FOODON_02010346)
 SubClassOf(obo:FOODON_00005329 obo:FOODON_02010348)
@@ -19378,6 +19378,10 @@ AnnotationAssertion(dcterms:contributor obo:FOODON_00005741 <https://orcid.org/0
 AnnotationAssertion(dcterms:date obo:FOODON_00005741 "2026-04-12T05:54:58Z"^^xsd:dateTime)
 AnnotationAssertion(rdfs:label obo:FOODON_00005741 "field pea (dried)"@en)
 SubClassOf(obo:FOODON_00005741 obo:FOODON_00003560)
+
+# Class: obo:FOODON_02010002 (animal egg)
+
+SubClassOf(obo:FOODON_02010002 obo:FOODON_02010001)
 
 # Class: obo:FOODON_02010014 (animal blood)
 
@@ -20205,7 +20209,7 @@ AnnotationAssertion(dcterms:date obo:FOODON_03000165 "2025-11-07T00:57:03Z"^^xsd
 AnnotationAssertion(rdfs:label obo:FOODON_03000165 "fish material"@en)
 SubClassOf(obo:FOODON_03000165 obo:FOODON_00005502)
 
-# Class: obo:FOODON_03000268 (obo:FOODON_03000268)
+# Class: obo:FOODON_03000268 (long grain brown rice kernel (uncooked))
 
 SubClassOf(obo:FOODON_03000268 obo:FOODON_03301136)
 
@@ -26655,7 +26659,7 @@ SubClassOf(obo:FOODON_03310882 ObjectSomeValuesFrom(obo:RO_0001000 obo:FOODON_03
 
 SubClassOf(obo:FOODON_03310884 ObjectSomeValuesFrom(obo:RO_0001000 obo:FOODON_03411392))
 
-# Class: obo:FOODON_03310893 (obo:FOODON_03310893)
+# Class: obo:FOODON_03310893 (brown durra sorghum kernel)
 
 SubClassOf(obo:FOODON_03310893 ObjectSomeValuesFrom(obo:RO_0001000 obo:NCBITaxon_4558))
 
@@ -34370,7 +34374,7 @@ AnnotationAssertion(oboInOwl:hasSynonym obo:FOODON_03411501 "morus spp."@en)
 AnnotationAssertion(rdfs:label obo:FOODON_03411501 "mulberry plant"@en)
 SubClassOf(obo:FOODON_03411501 obo:FOODON_03411231)
 
-# Class: obo:FOODON_03411502 (obo:FOODON_03411502)
+# Class: obo:FOODON_03411502 (Jamaican tangelo)
 
 AnnotationAssertion(oboInOwl:hasDbXref obo:FOODON_03411502 <http://eol.org/pages/4414>)
 AnnotationAssertion(oboInOwl:hasDbXref obo:FOODON_03411502 langual:B1502)
@@ -58236,7 +58240,7 @@ AnnotationAssertion(oboInOwl:hasExactSynonym obo:FOODON_03413742 "roma tomato pl
 AnnotationAssertion(rdfs:label obo:FOODON_03413742 "plum tomato plant"@en)
 SubClassOf(obo:FOODON_03413742 obo:NCBITaxon_4081)
 
-# Class: obo:FOODON_03413743 (obo:FOODON_03413743)
+# Class: obo:FOODON_03413743 (king oyster mushroom)
 
 AnnotationAssertion(obo:IAO_0000114 obo:FOODON_03413743 obo:IAO_0000122)
 AnnotationAssertion(oboInOwl:hasDbXref obo:FOODON_03413743 <http://www.indexfungorum.org/names/NamesRecord.asp?RecordID=170772>)
@@ -58469,7 +58473,7 @@ AnnotationAssertion(oboInOwl:hasSynonym obo:FOODON_03413795 "tuber uncinatum"@en
 AnnotationAssertion(rdfs:label obo:FOODON_03413795 "summer truffle"@en)
 SubClassOf(obo:FOODON_03413795 obo:FOODON_03411387)
 
-# Class: obo:FOODON_03413796 (obo:FOODON_03413796)
+# Class: obo:FOODON_03413796 (pearl oyster mushroom)
 
 AnnotationAssertion(obo:IAO_0000114 obo:FOODON_03413796 obo:IAO_0000428)
 AnnotationAssertion(oboInOwl:hasDbXref obo:FOODON_03413796 <http://www.indexfungorum.org/names/NamesRecord.asp?RecordID=174220>)
@@ -63067,7 +63071,7 @@ AnnotationAssertion(rdfs:label obo:FOODON_03414169 "cape aloe plant"@en)
 SubClassOf(obo:FOODON_03414169 obo:FOODON_03414168)
 SubClassOf(obo:FOODON_03414169 ObjectSomeValuesFrom(obo:RO_0002162 obo:NCBITaxon_117798))
 
-# Class: obo:FOODON_03414171 (obo:FOODON_03414171)
+# Class: obo:FOODON_03414171 (south polar fungus)
 
 AnnotationAssertion(obo:IAO_0000114 obo:FOODON_03414171 obo:IAO_0000122)
 AnnotationAssertion(oboInOwl:hasDbXref obo:FOODON_03414171 <http://www.indexfungorum.org/names/NamesRecord.asp?RecordID=439297>)
@@ -83795,7 +83799,7 @@ AnnotationAssertion(oboInOwl:hasDbXref obo:FOODON_03530085 langual:Z0085)
 AnnotationAssertion(rdfs:label obo:FOODON_03530085 "processed in wood container"@en)
 SubClassOf(obo:FOODON_03530085 obo:FOODON_03530077)
 
-# Class: obo:FOODON_03530086 (obo:FOODON_03530086)
+# Class: obo:FOODON_03530086 (Appellation d'origine contrôlée)
 
 AnnotationAssertion(obo:IAO_0000114 obo:FOODON_03530086 obo:IAO_0000428)
 AnnotationAssertion(obo:IAO_0000119 obo:FOODON_03530086 wikipedia:Controlled_designation_of_origin)
@@ -84963,7 +84967,7 @@ AnnotationAssertion(rdfs:seeAlso obo:FOODON_03530253 <http://eur-lex.europa.eu/L
 SubClassOf(obo:FOODON_03530253 obo:FOODON_03530207)
 SubClassOf(obo:FOODON_03530253 obo:FOODON_03530291)
 
-# Class: obo:FOODON_03530254 (obo:FOODON_03530254)
+# Class: obo:FOODON_03530254 (Protected Geographical Status)
 
 AnnotationAssertion(obo:IAO_0000114 obo:FOODON_03530254 obo:IAO_0000428)
 AnnotationAssertion(obo:IAO_0000119 obo:FOODON_03530254 wikipedia:Geographical_indications_and_traditional_specialities_in_the_European_Union)
@@ -84972,7 +84976,7 @@ AnnotationAssertion(oboInOwl:hasExactSynonym obo:FOODON_03530254 "PGS"@en)
 AnnotationAssertion(rdfs:seeAlso obo:FOODON_03530254 <http://ec.europa.eu/agriculture/quality/index_en.htm>)
 SubClassOf(obo:FOODON_03530254 obo:FOODON_03530087)
 
-# Class: obo:FOODON_03530255 (obo:FOODON_03530255)
+# Class: obo:FOODON_03530255 (Protected Designation of Origin)
 
 AnnotationAssertion(obo:IAO_0000114 obo:FOODON_03530255 obo:IAO_0000428)
 AnnotationAssertion(obo:IAO_0000119 obo:FOODON_03530255 <http://ec.europa.eu/agriculture/quality/schemes/index_en.htm>)
@@ -84980,7 +84984,7 @@ AnnotationAssertion(oboInOwl:hasDbXref obo:FOODON_03530255 langual:Z0255)
 AnnotationAssertion(oboInOwl:hasExactSynonym obo:FOODON_03530255 "PDO"@en)
 SubClassOf(obo:FOODON_03530255 obo:FOODON_03530254)
 
-# Class: obo:FOODON_03530256 (obo:FOODON_03530256)
+# Class: obo:FOODON_03530256 (Protected Geographical Indication)
 
 AnnotationAssertion(obo:IAO_0000114 obo:FOODON_03530256 obo:IAO_0000122)
 AnnotationAssertion(obo:IAO_0000119 obo:FOODON_03530256 <http://ec.europa.eu/agriculture/quality/schemes/index_en.htm>)
@@ -84989,7 +84993,7 @@ AnnotationAssertion(oboInOwl:hasExactSynonym obo:FOODON_03530256 "PGI"@en)
 AnnotationAssertion(rdfs:comment obo:FOODON_03530256 "\"At least one of the stages of production, processing or preparation takes place in the area.\" [http://ec.europa.eu/agriculture/quality/schemes/index_en.htm]."@en)
 SubClassOf(obo:FOODON_03530256 obo:FOODON_03530254)
 
-# Class: obo:FOODON_03530257 (obo:FOODON_03530257)
+# Class: obo:FOODON_03530257 (Traditional Speciality Guaranteed)
 
 AnnotationAssertion(obo:IAO_0000114 obo:FOODON_03530257 obo:IAO_0000122)
 AnnotationAssertion(obo:IAO_0000119 obo:FOODON_03530257 <http://ec.europa.eu/agriculture/quality/schemes/index_en.htm>)
@@ -94227,7 +94231,7 @@ SubClassOf(obo:OBI_0000967 obo:COB_0001300)
 
 SubClassOf(obo:OBI_0200000 obo:COB_0000035)
 
-# Class: obo:ONS_0000085 (obo:ONS_0000085)
+# Class: obo:ONS_0000085 (meal)
 
 SubClassOf(obo:ONS_0000085 obo:COB_0000035)
 
@@ -94393,8 +94397,10 @@ AnnotationAssertion(oboInOwl:hasDbXref obo:UBERON_0007379 langual:C0274)
 AnnotationAssertion(oboInOwl:hasExactSynonym obo:UBERON_0007379 "egg with shell"@en)
 AnnotationAssertion(oboInOwl:hasExactSynonym obo:UBERON_0007379 "whole egg in shell"@en)
 AnnotationAssertion(rdfs:comment obo:UBERON_0007379 "LanguaL curation note: The egg shell functions as a container. Therefore, the physical state of a raw egg in the shell is *LIQUID, HIGH VISCOSITY, WITH NO VISIBLE PARTICLES*."@en)
-EquivalentClasses(obo:UBERON_0007379 ObjectIntersectionOf(obo:FOODON_03420194 ObjectSomeValuesFrom(obo:BFO_0000051 obo:UBERON_0005079) ObjectSomeValuesFrom(obo:BFO_0000051 obo:UBERON_0007378) ObjectSomeValuesFrom(obo:BFO_0000051 obo:UBERON_0008944)))
 SubClassOf(obo:UBERON_0007379 obo:FOODON_03420194)
+SubClassOf(obo:UBERON_0007379 ObjectSomeValuesFrom(obo:BFO_0000051 obo:UBERON_0005079))
+SubClassOf(obo:UBERON_0007379 ObjectSomeValuesFrom(obo:BFO_0000051 obo:UBERON_0007378))
+SubClassOf(obo:UBERON_0007379 ObjectSomeValuesFrom(obo:BFO_0000051 obo:UBERON_0008944))
 
 # Class: obo:UBERON_0008270 (mollusc shell)
 
