@@ -16,8 +16,8 @@ Prefix(oboInOwl:=<http://www.geneontology.org/formats/oboInOwl#>)
 
 
 Ontology(<http://purl.obolibrary.org/obo/foodon/components/food_process.owl>
-<http://purl.obolibrary.org/obo/foodon/releases/2026-04-27/components/food_process.owl>
-Annotation(owl:versionInfo "2026-04-27")
+<http://purl.obolibrary.org/obo/foodon/releases/2026-04-28/components/food_process.owl>
+Annotation(owl:versionInfo "2026-04-28")
 
 Declaration(Class(obo:BFO_0000015))
 Declaration(Class(obo:FOODON_00000071))
@@ -699,7 +699,7 @@ SubClassOf(obo:FOODON_00004550 ObjectSomeValuesFrom(obo:OBI_0000299 obo:FOODON_0
 # Class: obo:FOODON_03000001 (food peeling)
 
 AnnotationAssertion(obo:IAO_0000115 obo:FOODON_03000001 "peeling\" is the process of removing the outer covering, layer or skin from a fruit, vegetable, or plant or animal (such as a shrimp)."@en)
-AnnotationAssertion(dcterms:contributor obo:FOODON_03000001 <Damion Dooley>)
+AnnotationAssertion(dcterms:contributor obo:FOODON_03000001 <https://orcid.org/0000-0002-8844-9165>)
 AnnotationAssertion(rdfs:label obo:FOODON_03000001 "food peeling"@en)
 SubClassOf(obo:FOODON_03000001 obo:FOODON_03460130)
 SubClassOf(obo:FOODON_03000001 ObjectSomeValuesFrom(obo:OBI_0000299 obo:FOODON_00002655))
@@ -722,7 +722,7 @@ SubClassOf(obo:FOODON_03450004 obo:FOODON_03450002)
 # Class: obo:FOODON_03450005 (food baking)
 
 AnnotationAssertion(obo:IAO_0000115 obo:FOODON_03450005 "Cooked without moisture, covered or uncovered, in an oven."@en)
-AnnotationAssertion(dcterms:contributor obo:FOODON_03450005 <Damion Dooley>)
+AnnotationAssertion(dcterms:contributor obo:FOODON_03450005 <https://orcid.org/0000-0002-8844-9165>)
 AnnotationAssertion(oboInOwl:hasDbXref obo:FOODON_03450005 "http://www.langual.org/langual_thesaurus.asp?termid=G0005")
 AnnotationAssertion(oboInOwl:hasSynonym obo:FOODON_03450005 "roasting"@en)
 AnnotationAssertion(rdfs:label obo:FOODON_03450005 "food baking"@en)
@@ -1079,7 +1079,7 @@ SubClassOf(obo:FOODON_03460107 obo:FOODON_03460128)
 # Class: obo:FOODON_03460109 (artificial carbonation process)
 
 AnnotationAssertion(oboInOwl:hasDbXref obo:FOODON_03460109 "http://www.langual.org/langual_thesaurus.asp?termid=H0109")
-AnnotationAssertion(rdfs:comment obo:FOODON_03460109 "LanguaL curation note: Used when carbon dioxide has been added to a food product at any level. Damion Dooley's note: converted to a process"@en)
+AnnotationAssertion(rdfs:comment obo:FOODON_03460109 "LanguaL curation note: Used when carbon dioxide has been added to a food product at any level. https://orcid.org/0000-0002-8844-9165's note: converted to a process"@en)
 AnnotationAssertion(rdfs:label obo:FOODON_03460109 "artificial carbonation process"@en)
 SubClassOf(obo:FOODON_03460109 obo:FOODON_03460175)
 
@@ -1259,7 +1259,7 @@ SubClassOf(obo:FOODON_03460174 obo:FOODON_03460130)
 
 AnnotationAssertion(oboInOwl:hasDbXref obo:FOODON_03460175 "http://www.langual.org/langual_thesaurus.asp?termid=H0175")
 AnnotationAssertion(oboInOwl:hasSynonym obo:FOODON_03460175 "carbon dioxide added"@en)
-AnnotationAssertion(rdfs:comment obo:FOODON_03460175 "LanguaL curation note: Used when carbon dioxide is added or introduced by processing. Excludes naturally carbonated water, which is indexed under food source *MINERAL WATER*.  Damion Dooley's note: converted to a process"@en)
+AnnotationAssertion(rdfs:comment obo:FOODON_03460175 "LanguaL curation note: Used when carbon dioxide is added or introduced by processing. Excludes naturally carbonated water, which is indexed under food source *MINERAL WATER*.  https://orcid.org/0000-0002-8844-9165's note: converted to a process"@en)
 AnnotationAssertion(rdfs:label obo:FOODON_03460175 "carbonation process"@en)
 SubClassOf(obo:FOODON_03460175 obo:FOODON_03460225)
 
@@ -1288,7 +1288,7 @@ SubClassOf(obo:FOODON_03460182 obo:FOODON_03460130)
 AnnotationAssertion(obo:IAO_0000115 obo:FOODON_03460190 "A process of preserving or extending the shelf life of food by either anaerobic fermentation in brine or immersion in vinegar."@en)
 AnnotationAssertion(obo:IAO_0000119 obo:FOODON_03460190 "https://en.wikipedia.org/wiki/Pickling")
 AnnotationAssertion(oboInOwl:hasDbXref obo:FOODON_03460190 "http://www.langual.org/langual_thesaurus.asp?termid=H0190")
-AnnotationAssertion(rdfs:comment obo:FOODON_03460190 "LanguaL curation note: Also index by other applicable terms from *MICROBIALLY/ ENZYMATICALLY MODIFIED*.  LanguaL definition: \"Treated with acid that may be produced by fermentation or added and/or with salt brine, often in the presence of spices or herbs, producing changes in flavor and texture.\""@en)
+AnnotationAssertion(rdfs:comment obo:FOODON_03460190 "LanguaL curation note: Also index by other applicable terms from *MICROBIALLY/ ENZYMATICALLY MODIFIED*.  LanguaL definition: \"Treated with acid that may be produced by fermentation or added and/or with salt brine, often in the presence of spices or herbs, producing changes in flavor and texture."@en)
 AnnotationAssertion(rdfs:label obo:FOODON_03460190 "pickling"@en)
 SubClassOf(obo:FOODON_03460190 obo:FOODON_03460119)
 
@@ -1376,7 +1376,7 @@ SubClassOf(obo:FOODON_03460220 obo:FOODON_03460130)
 
 # Class: obo:FOODON_03460225 (food component addition process)
 
-AnnotationAssertion(dcterms:contributor obo:FOODON_03460225 <Damion Dooley>)
+AnnotationAssertion(dcterms:contributor obo:FOODON_03460225 <https://orcid.org/0000-0002-8844-9165>)
 AnnotationAssertion(oboInOwl:hasDbXref obo:FOODON_03460225 "http://www.langual.org/langual_thesaurus.asp?termid=H0225")
 AnnotationAssertion(rdfs:comment obo:FOODON_03460225 "LanguaL curation note: A food product is characterized by its main ingredient (food source and part); the addition of secondary ingredients is considered a treatment applied to the product. Secondary ingredients are indexed according to rules that are based on the order of predominance by weight (not counting water) as seen from the label statement, formulation or recipe and/or from the amount of the ingredient as percentage of total product weight. The general rule is:  an ingredient is always indexed if it is the second ingredient in order of predominance, if it is used as a filling, or if it is part of the product name(e.g., raisin bread). Specific rules are given in the scope note for the individual ingredient added; these rules specify more exhaustive indexing. For example, *MUSHROOM ADDED* is indexed regardless of ingredient position. another specific rule is given in the scope note for *SALTED*:  Use if the level of salt is more than 4%. Such a rule is used only when the percentage level can be inferred from the list of ingredients."@en)
 AnnotationAssertion(rdfs:label obo:FOODON_03460225 "food component addition process"@en)
@@ -1417,7 +1417,7 @@ SubClassOf(obo:FOODON_03460237 obo:FOODON_03460148)
 # Class: obo:FOODON_03460238 (food component separation process)
 
 AnnotationAssertion(obo:IAO_0000115 obo:FOODON_03460238 "A component separation process at the very least removes one component from an initial entity.  The removed component may be captured as a process output for reuse if not destroyed in the process of removal."@en)
-AnnotationAssertion(dcterms:contributor obo:FOODON_03460238 <Damion Dooley>)
+AnnotationAssertion(dcterms:contributor obo:FOODON_03460238 <https://orcid.org/0000-0002-8844-9165>)
 AnnotationAssertion(oboInOwl:hasDbXref obo:FOODON_03460238 "http://www.langual.org/langual_thesaurus.asp?termid=H0238")
 AnnotationAssertion(rdfs:comment obo:FOODON_03460238 "LanguaL curation note: Use the appropriate term under *COMPONENT REMOVED* to indicate the permanent full or partial removal of a nutritional/chemical component naturally present in the part of plant or animal used."@en)
 AnnotationAssertion(rdfs:label obo:FOODON_03460238 "food component separation process"@en)
@@ -1441,7 +1441,7 @@ SubClassOf(obo:FOODON_03460241 obo:FOODON_03460130)
 # Class: obo:FOODON_03460246 (carbonation by fermentation)
 
 AnnotationAssertion(oboInOwl:hasDbXref obo:FOODON_03460246 "http://www.langual.org/langual_thesaurus.asp?termid=H0246")
-AnnotationAssertion(rdfs:comment obo:FOODON_03460246 "LanguaL curation note: Used when carbon dioxide produced by fermentation remains noticeable in the food product. Damion Dooley's note: converted to a process"@en)
+AnnotationAssertion(rdfs:comment obo:FOODON_03460246 "LanguaL curation note: Used when carbon dioxide produced by fermentation remains noticeable in the food product. https://orcid.org/0000-0002-8844-9165's note: converted to a process"@en)
 AnnotationAssertion(rdfs:label obo:FOODON_03460246 "carbonation by fermentation"@en)
 SubClassOf(obo:FOODON_03460246 obo:FOODON_03460175)
 
@@ -1883,7 +1883,7 @@ SubClassOf(obo:FOODON_03470103 obo:FOODON_03470154)
 # Class: obo:FOODON_03470106 (food smoking)
 
 AnnotationAssertion(obo:IAO_0000115 obo:FOODON_03470106 "Smoking is the process of flavoring, browning, cooking, or preserving food by exposing it to smoke from burning or smoldering material, most often wood."@en)
-AnnotationAssertion(dcterms:contributor obo:FOODON_03470106 <Damion Dooley>)
+AnnotationAssertion(dcterms:contributor obo:FOODON_03470106 <https://orcid.org/0000-0002-8844-9165>)
 AnnotationAssertion(oboInOwl:hasDbXref obo:FOODON_03470106 "http://www.langual.org/langual_thesaurus.asp?termid=J0106")
 AnnotationAssertion(rdfs:comment obo:FOODON_03470106 "In the past, smoking was a useful preservation tool, in combination with other techniques, most commonly salt-curing or drying. For some long-smoked foods, the smoking time also served to dry the food. Drying, curing, or other techniques can render the interior of foods inhospitable to bacterial life, while the smoking gives the vulnerable exterior surfaces an extra layer of protection. [Wikipedia]|LanguaL curation note: Used when smoking is used for preservation."@en)
 AnnotationAssertion(rdfs:label obo:FOODON_03470106 "food smoking"@en)
@@ -2262,7 +2262,7 @@ SubClassOf(obo:FOODON_03470159 obo:FOODON_03470181)
 # Class: obo:FOODON_03470160 (ultra high pressure sterilization)
 
 AnnotationAssertion(obo:IAO_0000115 obo:FOODON_03470160 "The process of holding food at a high pressure, normally greater than 1000 bar, which leads to sterilization. Example: Fruit juice, jam."@en)
-AnnotationAssertion(dcterms:contributor obo:FOODON_03470160 <Damion Dooley>)
+AnnotationAssertion(dcterms:contributor obo:FOODON_03470160 <https://orcid.org/0000-0002-8844-9165>)
 AnnotationAssertion(oboInOwl:hasDbXref obo:FOODON_03470160 "http://www.langual.org/langual_thesaurus.asp?termid=J0160")
 AnnotationAssertion(rdfs:label obo:FOODON_03470160 "ultra high pressure sterilization"@en)
 SubClassOf(obo:FOODON_03470160 obo:FOODON_03470107)
@@ -2334,7 +2334,7 @@ SubClassOf(obo:FOODON_03470171 obo:FOODON_03470132)
 # Class: obo:FOODON_03470172 (food storage with refrigerating agent process)
 
 AnnotationAssertion(obo:IAO_0000115 obo:FOODON_03470172 "The process of food storage involving an accompanying refrigerating agent."@en)
-AnnotationAssertion(dcterms:contributor obo:FOODON_03470172 <Damion Dooley>)
+AnnotationAssertion(dcterms:contributor obo:FOODON_03470172 <https://orcid.org/0000-0002-8844-9165>)
 AnnotationAssertion(oboInOwl:hasDbXref obo:FOODON_03470172 "http://www.langual.org/langual_thesaurus.asp?termid=J0172")
 AnnotationAssertion(rdfs:label obo:FOODON_03470172 "food storage with refrigerating agent process"@en)
 SubClassOf(obo:FOODON_03470172 obo:FOODON_03470131)
@@ -2356,7 +2356,7 @@ SubClassOf(obo:FOODON_03470174 obo:FOODON_03470111)
 # Class: obo:FOODON_03470175 (food blanching)
 
 AnnotationAssertion(obo:IAO_0000115 obo:FOODON_03470175 "Blanching is a cooking process wherein a food, usually a vegetable or fruit, is scalded in boiling water, removed after a brief, timed interval, and finally plunged into iced water or placed under cold running water (shocking or refreshing) to halt the cooking process. Blanching foods helps reduce quality loss over time. People often use blanching as a pre-treatment prior to freezing, drying, or canning—heating vegetables or fruits to inactivate enzymes, modify texture, remove the peel, and wilt tissue. Blanching is also utilized to preserve color, flavor, and nutritional value. The process has three stages: preheating, blanching, and cooling. The most common blanching methods for vegetables/fruits are hot water and steam, while cooling is either done using cold water or cool air."@en)
-AnnotationAssertion(dcterms:contributor obo:FOODON_03470175 <Damion Dooley>)
+AnnotationAssertion(dcterms:contributor obo:FOODON_03470175 <https://orcid.org/0000-0002-8844-9165>)
 AnnotationAssertion(oboInOwl:hasDbXref obo:FOODON_03470175 "http://www.langual.org/langual_thesaurus.asp?termid=J0175")
 AnnotationAssertion(oboInOwl:hasExactSynonym obo:FOODON_03470175 "blanching"@en)
 AnnotationAssertion(rdfs:comment obo:FOODON_03470175 "LanguaL definition: \"Short time scalding; this can be used to stop emzymatic activity for vegetables being prepared for freezing."@en)

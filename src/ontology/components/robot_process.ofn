@@ -691,7 +691,7 @@ SubClassOf(<http://purl.obolibrary.org/obo/FOODON_00004550> ObjectSomeValuesFrom
 # Class: <http://purl.obolibrary.org/obo/FOODON_03000001> (food peeling)
 
 AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000115> <http://purl.obolibrary.org/obo/FOODON_03000001> "The process of removing the outer covering, layer or skin from a fruit, vegetable, or plant or animal (such as a shrimp)."@en)
-AnnotationAssertion(<http://purl.org/dc/terms/contributor> <http://purl.obolibrary.org/obo/FOODON_03000001> "Damion Dooley")
+AnnotationAssertion(<http://purl.org/dc/terms/contributor> <http://purl.obolibrary.org/obo/FOODON_03000001> <https://orcid.org/0000-0002-8844-9165>)
 AnnotationAssertion(rdfs:label <http://purl.obolibrary.org/obo/FOODON_03000001> "food peeling"@en)
 SubClassOf(<http://purl.obolibrary.org/obo/FOODON_03000001> <http://purl.obolibrary.org/obo/FOODON_03460130>)
 SubClassOf(<http://purl.obolibrary.org/obo/FOODON_03000001> ObjectSomeValuesFrom(<http://purl.obolibrary.org/obo/OBI_0000299> <http://purl.obolibrary.org/obo/FOODON_00002655>))
@@ -715,7 +715,7 @@ SubClassOf(<http://purl.obolibrary.org/obo/FOODON_03450004> <http://purl.obolibr
 # Class: <http://purl.obolibrary.org/obo/FOODON_03450005> (food baking)
 
 AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000115> <http://purl.obolibrary.org/obo/FOODON_03450005> "Cooked without moisture, covered or uncovered, in an oven."@en)
-AnnotationAssertion(<http://purl.org/dc/terms/contributor> <http://purl.obolibrary.org/obo/FOODON_03450005> "Damion Dooley")
+AnnotationAssertion(<http://purl.org/dc/terms/contributor> <http://purl.obolibrary.org/obo/FOODON_03450005> <https://orcid.org/0000-0002-8844-9165>)
 AnnotationAssertion(<http://www.geneontology.org/formats/oboInOwl#hasDbXref> <http://purl.obolibrary.org/obo/FOODON_03450005> "http://www.langual.org/langual_thesaurus.asp?termid=G0005")
 AnnotationAssertion(<http://www.geneontology.org/formats/oboInOwl#hasSynonym> <http://purl.obolibrary.org/obo/FOODON_03450005> "roasting"@en)
 AnnotationAssertion(rdfs:label <http://purl.obolibrary.org/obo/FOODON_03450005> "food baking"@en)
@@ -1372,7 +1372,7 @@ SubClassOf(<http://purl.obolibrary.org/obo/FOODON_03460220> <http://purl.obolibr
 # Class: <http://purl.obolibrary.org/obo/FOODON_03460225> (food component addition)
 
 AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000115> <http://purl.obolibrary.org/obo/FOODON_03460225> "A material combination process involving two or more food materials."@en)
-AnnotationAssertion(<http://purl.org/dc/terms/contributor> <http://purl.obolibrary.org/obo/FOODON_03460225> "Damion Dooley")
+AnnotationAssertion(<http://purl.org/dc/terms/contributor> <http://purl.obolibrary.org/obo/FOODON_03460225> <https://orcid.org/0000-0002-8844-9165>)
 AnnotationAssertion(<http://www.geneontology.org/formats/oboInOwl#hasDbXref> <http://purl.obolibrary.org/obo/FOODON_03460225> "http://www.langual.org/langual_thesaurus.asp?termid=H0225")
 AnnotationAssertion(rdfs:comment <http://purl.obolibrary.org/obo/FOODON_03460225> "LanguaL curation note: A food product is characterized by its main ingredient (food source and part); the addition of secondary ingredients is considered a treatment applied to the product. Secondary ingredients are indexed according to rules that are based on the order of predominance by weight (not counting water) as seen from the label statement, formulation or recipe and/or from the amount of the ingredient as percentage of total product weight. The general rule is:  an ingredient is always indexed if it is the second ingredient in order of predominance, if it is used as a filling, or if it is part of the product name(e.g., raisin bread). Specific rules are given in the scope note for the individual ingredient added; these rules specify more exhaustive indexing. For example, *MUSHROOM ADDED* is indexed regardless of ingredient position. another specific rule is given in the scope note for *SALTED*:  Use if the level of salt is more than 4%. Such a rule is used only when the percentage level can be inferred from the list of ingredients."@en)
 AnnotationAssertion(rdfs:label <http://purl.obolibrary.org/obo/FOODON_03460225> "food component addition"@en)
@@ -1414,7 +1414,7 @@ SubClassOf(<http://purl.obolibrary.org/obo/FOODON_03460237> <http://purl.obolibr
 # Class: <http://purl.obolibrary.org/obo/FOODON_03460238> (food component separation)
 
 AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000115> <http://purl.obolibrary.org/obo/FOODON_03460238> "A component separation process at the very least removes one component from an initial entity.  The removed component may be captured as a process output for reuse if not destroyed in the process of removal."@en)
-AnnotationAssertion(<http://purl.org/dc/terms/contributor> <http://purl.obolibrary.org/obo/FOODON_03460238> "Damion Dooley")
+AnnotationAssertion(<http://purl.org/dc/terms/contributor> <http://purl.obolibrary.org/obo/FOODON_03460238> <https://orcid.org/0000-0002-8844-9165>)
 AnnotationAssertion(<http://www.geneontology.org/formats/oboInOwl#hasDbXref> <http://purl.obolibrary.org/obo/FOODON_03460238> "http://www.langual.org/langual_thesaurus.asp?termid=H0238")
 AnnotationAssertion(rdfs:comment <http://purl.obolibrary.org/obo/FOODON_03460238> "LanguaL curation note: Use the appropriate term under *COMPONENT REMOVED* to indicate the permanent full or partial removal of a nutritional/chemical component naturally present in the part of plant or animal used."@en)
 AnnotationAssertion(rdfs:label <http://purl.obolibrary.org/obo/FOODON_03460238> "food component separation"@en)
@@ -1881,7 +1881,7 @@ SubClassOf(<http://purl.obolibrary.org/obo/FOODON_03470103> <http://purl.obolibr
 # Class: <http://purl.obolibrary.org/obo/FOODON_03470106> (food smoking)
 
 AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000115> <http://purl.obolibrary.org/obo/FOODON_03470106> "Smoking is the process of flavoring, browning, cooking, or preserving food by exposing it to smoke from burning or smoldering material, most often wood."@en)
-AnnotationAssertion(<http://purl.org/dc/terms/contributor> <http://purl.obolibrary.org/obo/FOODON_03470106> "Damion Dooley")
+AnnotationAssertion(<http://purl.org/dc/terms/contributor> <http://purl.obolibrary.org/obo/FOODON_03470106> <https://orcid.org/0000-0002-8844-9165>)
 AnnotationAssertion(<http://www.geneontology.org/formats/oboInOwl#hasDbXref> <http://purl.obolibrary.org/obo/FOODON_03470106> "http://www.langual.org/langual_thesaurus.asp?termid=J0106")
 AnnotationAssertion(rdfs:comment <http://purl.obolibrary.org/obo/FOODON_03470106> "In the past, smoking was a useful preservation tool, in combination with other techniques, most commonly salt-curing or drying. For some long-smoked foods, the smoking time also served to dry the food. Drying, curing, or other techniques can render the interior of foods inhospitable to bacterial life, while the smoking gives the vulnerable exterior surfaces an extra layer of protection. [Wikipedia]|LanguaL curation note: Used when smoking is used for preservation."@en)
 AnnotationAssertion(rdfs:label <http://purl.obolibrary.org/obo/FOODON_03470106> "food smoking"@en)
@@ -2262,7 +2262,7 @@ SubClassOf(<http://purl.obolibrary.org/obo/FOODON_03470159> <http://purl.obolibr
 # Class: <http://purl.obolibrary.org/obo/FOODON_03470160> (ultra high pressure sterilization)
 
 AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000115> <http://purl.obolibrary.org/obo/FOODON_03470160> "The process of holding food at a high pressure, normally greater than 1000 bar, which leads to sterilization. Example: Fruit juice, jam."@en)
-AnnotationAssertion(<http://purl.org/dc/terms/contributor> <http://purl.obolibrary.org/obo/FOODON_03470160> "Damion Dooley")
+AnnotationAssertion(<http://purl.org/dc/terms/contributor> <http://purl.obolibrary.org/obo/FOODON_03470160> <https://orcid.org/0000-0002-8844-9165>)
 AnnotationAssertion(<http://www.geneontology.org/formats/oboInOwl#hasDbXref> <http://purl.obolibrary.org/obo/FOODON_03470160> "http://www.langual.org/langual_thesaurus.asp?termid=J0160")
 AnnotationAssertion(rdfs:label <http://purl.obolibrary.org/obo/FOODON_03470160> "ultra high pressure sterilization"@en)
 SubClassOf(<http://purl.obolibrary.org/obo/FOODON_03470160> <http://purl.obolibrary.org/obo/FOODON_03470107>)
@@ -2334,7 +2334,7 @@ SubClassOf(<http://purl.obolibrary.org/obo/FOODON_03470171> <http://purl.obolibr
 # Class: <http://purl.obolibrary.org/obo/FOODON_03470172> (food storage with refrigerating agent process)
 
 AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000115> <http://purl.obolibrary.org/obo/FOODON_03470172> "The process of food storage involving an accompanying refrigerating agent."@en)
-AnnotationAssertion(<http://purl.org/dc/terms/contributor> <http://purl.obolibrary.org/obo/FOODON_03470172> "Damion Dooley")
+AnnotationAssertion(<http://purl.org/dc/terms/contributor> <http://purl.obolibrary.org/obo/FOODON_03470172> <https://orcid.org/0000-0002-8844-9165>)
 AnnotationAssertion(<http://www.geneontology.org/formats/oboInOwl#hasDbXref> <http://purl.obolibrary.org/obo/FOODON_03470172> "http://www.langual.org/langual_thesaurus.asp?termid=J0172")
 AnnotationAssertion(rdfs:label <http://purl.obolibrary.org/obo/FOODON_03470172> "food storage with refrigerating agent process"@en)
 SubClassOf(<http://purl.obolibrary.org/obo/FOODON_03470172> <http://purl.obolibrary.org/obo/FOODON_03470131>)
@@ -2356,7 +2356,7 @@ SubClassOf(<http://purl.obolibrary.org/obo/FOODON_03470174> <http://purl.obolibr
 # Class: <http://purl.obolibrary.org/obo/FOODON_03470175> (food blanching)
 
 AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000115> <http://purl.obolibrary.org/obo/FOODON_03470175> "Blanching is a cooking process wherein a food, usually a vegetable or fruit, is scalded in boiling water, removed after a brief, timed interval, and finally plunged into iced water or placed under cold running water (shocking or refreshing) to halt the cooking process. Blanching foods helps reduce quality loss over time. People often use blanching as a pre-treatment prior to freezing, drying, or canning—heating vegetables or fruits to inactivate enzymes, modify texture, remove the peel, and wilt tissue. Blanching is also utilized to preserve color, flavor, and nutritional value. The process has three stages: preheating, blanching, and cooling. The most common blanching methods for vegetables/fruits are hot water and steam, while cooling is either done using cold water or cool air."@en)
-AnnotationAssertion(<http://purl.org/dc/terms/contributor> <http://purl.obolibrary.org/obo/FOODON_03470175> "Damion Dooley")
+AnnotationAssertion(<http://purl.org/dc/terms/contributor> <http://purl.obolibrary.org/obo/FOODON_03470175> <https://orcid.org/0000-0002-8844-9165>)
 AnnotationAssertion(<http://www.geneontology.org/formats/oboInOwl#hasDbXref> <http://purl.obolibrary.org/obo/FOODON_03470175> "http://www.langual.org/langual_thesaurus.asp?termid=J0175")
 AnnotationAssertion(<http://www.geneontology.org/formats/oboInOwl#hasExactSynonym> <http://purl.obolibrary.org/obo/FOODON_03470175> "blanching"@en)
 AnnotationAssertion(rdfs:comment <http://purl.obolibrary.org/obo/FOODON_03470175> "LanguaL definition: \"Short time scalding; this can be used to stop emzymatic activity for vegetables being prepared for freezing."@en)

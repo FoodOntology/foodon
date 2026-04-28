@@ -16,8 +16,8 @@ Prefix(oboInOwl:=<http://www.geneontology.org/formats/oboInOwl#>)
 
 
 Ontology(<http://purl.obolibrary.org/obo/foodon/components/food_materials.owl>
-<http://purl.obolibrary.org/obo/foodon/releases/2026-04-27/components/food_materials.owl>
-Annotation(owl:versionInfo "2026-04-27")
+<http://purl.obolibrary.org/obo/foodon/releases/2026-04-28/components/food_materials.owl>
+Annotation(owl:versionInfo "2026-04-28")
 
 Declaration(Class(obo:BTO_0000262))
 Declaration(Class(obo:BTO_0001217))
@@ -2303,7 +2303,6 @@ Declaration(Class(obo:FOODON_02000467))
 Declaration(Class(obo:FOODON_02000468))
 Declaration(Class(obo:FOODON_02010032))
 Declaration(Class(obo:FOODON_02010127))
-Declaration(Class(obo:FOODON_02020081))
 Declaration(Class(obo:FOODON_02020892))
 Declaration(Class(obo:FOODON_02020895))
 Declaration(Class(obo:FOODON_02021241))
@@ -2588,7 +2587,6 @@ Declaration(Class(obo:FOODON_03000277))
 Declaration(Class(obo:FOODON_03000278))
 Declaration(Class(obo:FOODON_03000279))
 Declaration(Class(obo:FOODON_03000300))
-Declaration(Class(obo:FOODON_03000301))
 Declaration(Class(obo:FOODON_03000430))
 Declaration(Class(obo:FOODON_03000431))
 Declaration(Class(obo:FOODON_03000432))
@@ -10646,7 +10644,7 @@ AnnotationAssertion(Annotation(obo:IAO_0000412 "FDA SFL Acceptable Market Name")
 AnnotationAssertion(oboInOwl:hasDbXref obo:FOODON_00003991 <itis:161329>)
 AnnotationAssertion(Annotation(obo:IAO_0000412 "FDA SFL Common Name") oboInOwl:hasExactSynonym obo:FOODON_00003991 "white eel"@en)
 AnnotationAssertion(rdfs:label obo:FOODON_00003991 "Conger cinereus marginatus"@en)
-AnnotationAssertion(rdfs:seeAlso obo:FOODON_00003991 <https://www.fishbase.ca/summary/12966 >)
+AnnotationAssertion(rdfs:seeAlso obo:FOODON_00003991 <https://www.fishbase.ca/summary/12966>)
 AnnotationAssertion(rdfs:seeAlso obo:FOODON_00003991 <https://www.gbif.org/species/5207947>)
 SubClassOf(obo:FOODON_00003991 obo:NCBITaxon_1146962)
 
@@ -30342,15 +30340,6 @@ AnnotationAssertion(oboInOwl:hasExactSynonym obo:FOODON_03000300 "pet"@en)
 AnnotationAssertion(rdfs:label obo:FOODON_03000300 "companion animal"@en)
 SubClassOf(obo:FOODON_03000300 obo:FOODON_00003004)
 
-# Class: obo:FOODON_03000301 (squab)
-
-AnnotationAssertion(obo:IAO_0000115 obo:FOODON_03000301 "An immature domestic pigeon, typically under four weeks old."@en)
-AnnotationAssertion(obo:IAO_0000119 obo:FOODON_03000301 "https://en.wikipedia.org/wiki/Squab")
-AnnotationAssertion(dcterms:contributor obo:FOODON_03000301 <https://orcid.org/0000-0001-5275-8866>)
-AnnotationAssertion(dcterms:date obo:FOODON_03000301 "2022-10-20T12:36:43Z"^^xsd:dateTime)
-AnnotationAssertion(rdfs:label obo:FOODON_03000301 "squab"@en)
-SubClassOf(obo:FOODON_03000301 obo:FOODON_02020081)
-
 # Class: obo:FOODON_03000430 (Boletus mushroom)
 
 AnnotationAssertion(obo:IAO_0000115 obo:FOODON_03000430 "A fruitbody of Boletus."@en)
@@ -39728,7 +39717,7 @@ AnnotationAssertion(rdfs:seeAlso obo:NCBITaxon_348696 <https://en.wikipedia.org/
 # Class: obo:NCBITaxon_34899 (obo:NCBITaxon_34899)
 
 AnnotationAssertion(dcterms:contributor obo:NCBITaxon_34899 <https://orcid.org/0000-0001-5275-8866>)
-AnnotationAssertion(oboInOwl:hasDbXref obo:NCBITaxon_34899 <itis:609841 >)
+AnnotationAssertion(oboInOwl:hasDbXref obo:NCBITaxon_34899 <itis:609841>)
 AnnotationAssertion(oboInOwl:hasExactSynonym obo:NCBITaxon_34899 "sugar glider"@en)
 AnnotationAssertion(rdfs:seeAlso obo:NCBITaxon_34899 "https://en.wikipedia.org/wiki/Sugar_glider")
 
@@ -42614,7 +42603,7 @@ AnnotationAssertion(rdfs:seeAlso obo:NCBITaxon_546540 <https://en.wikipedia.org/
 
 AnnotationAssertion(dcterms:contributor obo:NCBITaxon_548162 <https://orcid.org/0000-0001-5275-8866>)
 AnnotationAssertion(Annotation(obo:IAO_0000412 "FDA SFL Acceptable Market Name") oboInOwl:hasBroadSynonym obo:NCBITaxon_548162 "triggerfish"@en)
-AnnotationAssertion(oboInOwl:hasDbXref obo:NCBITaxon_548162 <itis:  646209>)
+AnnotationAssertion(oboInOwl:hasDbXref obo:NCBITaxon_548162 <itis:646209>)
 AnnotationAssertion(Annotation(obo:IAO_0000412 "FDA SFL Common Name") oboInOwl:hasExactSynonym obo:NCBITaxon_548162 "triggerfish"@en)
 AnnotationAssertion(rdfs:seeAlso obo:NCBITaxon_548162 <https://www.fishbase.ca/summary/14540>)
 AnnotationAssertion(rdfs:seeAlso obo:NCBITaxon_548162 <https://www.gbif.org/species/2406854>)
@@ -45213,7 +45202,7 @@ AnnotationAssertion(rdfs:seeAlso obo:NCBITaxon_7664 <https://en.wikipedia.org/wi
 # Class: obo:NCBITaxon_76717 (obo:NCBITaxon_76717)
 
 AnnotationAssertion(dcterms:contributor obo:NCBITaxon_76717 <https://orcid.org/0000-0001-5275-8866>)
-AnnotationAssertion(oboInOwl:hasDbXref obo:NCBITaxon_76717 <itis:180549 >)
+AnnotationAssertion(oboInOwl:hasDbXref obo:NCBITaxon_76717 <itis:180549>)
 AnnotationAssertion(oboInOwl:hasExactSynonym obo:NCBITaxon_76717 "Northern American river otter"@en)
 AnnotationAssertion(oboInOwl:hasExactSynonym obo:NCBITaxon_76717 "common otter"@en)
 AnnotationAssertion(oboInOwl:hasExactSynonym obo:NCBITaxon_76717 "northern river otter"@en)
@@ -46509,7 +46498,7 @@ AnnotationAssertion(rdfs:seeAlso obo:NCBITaxon_8496 <https://en.wikipedia.org/wi
 # Class: obo:NCBITaxon_8497 (obo:NCBITaxon_8497)
 
 AnnotationAssertion(dcterms:contributor obo:NCBITaxon_8497 <https://orcid.org/0000-0001-5275-8866>)
-AnnotationAssertion(oboInOwl:hasDbXref obo:NCBITaxon_8497 <itis: 174369>)
+AnnotationAssertion(oboInOwl:hasDbXref obo:NCBITaxon_8497 <itis:174369>)
 AnnotationAssertion(rdfs:seeAlso obo:NCBITaxon_8497 <https://en.wikipedia.org/wiki/Caiman>)
 
 # Class: obo:NCBITaxon_8500 (obo:NCBITaxon_8500)
