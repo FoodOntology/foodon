@@ -3648,7 +3648,6 @@ AnnotationAssertion(<http://purl.org/dc/terms/contributor> <http://purl.obolibra
 AnnotationAssertion(<http://purl.org/dc/terms/date> <http://purl.obolibrary.org/obo/FOODON_00003595> "2024-02-12T14:11:19Z"^^xsd:dateTime)
 AnnotationAssertion(rdfs:label <http://purl.obolibrary.org/obo/FOODON_00003595> "chicken egg (shell on)"@en)
 EquivalentClasses(<http://purl.obolibrary.org/obo/FOODON_00003595> ObjectIntersectionOf(<http://purl.obolibrary.org/obo/FOODON_02010005> ObjectSomeValuesFrom(<http://purl.obolibrary.org/obo/RO_0002162> <http://purl.obolibrary.org/obo/NCBITaxon_9031>)))
-SubClassOf(<http://purl.obolibrary.org/obo/FOODON_00003595> <http://purl.obolibrary.org/obo/FOODON_02010005>)
 SubClassOf(<http://purl.obolibrary.org/obo/FOODON_00003595> <http://purl.obolibrary.org/obo/FOODON_03316061>)
 
 # Class: <http://purl.obolibrary.org/obo/FOODON_00003845> (pork ear)
@@ -3902,8 +3901,6 @@ AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000115> <http://purl.ob
 AnnotationAssertion(<http://purl.org/dc/terms/contributor> <http://purl.obolibrary.org/obo/FOODON_00004428> <https://orcid.org/0000-0002-8844-9165>)
 AnnotationAssertion(<http://purl.org/dc/terms/date> <http://purl.obolibrary.org/obo/FOODON_00004428> "2023-06-20T06:59:07Z"^^xsd:dateTime)
 AnnotationAssertion(rdfs:label <http://purl.obolibrary.org/obo/FOODON_00004428> "duck egg"@en)
-EquivalentClasses(<http://purl.obolibrary.org/obo/FOODON_00004428> ObjectIntersectionOf(<http://purl.obolibrary.org/obo/FOODON_02010002> ObjectSomeValuesFrom(<http://purl.obolibrary.org/obo/RO_0002162> <http://purl.obolibrary.org/obo/FOODON_03411316>)))
-SubClassOf(<http://purl.obolibrary.org/obo/FOODON_00004428> <http://purl.obolibrary.org/obo/UBERON_0002050>)
 
 # Class: <http://purl.obolibrary.org/obo/FOODON_00004436> (animal organ)
 
@@ -4333,8 +4330,6 @@ AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000115> <http://purl.ob
 AnnotationAssertion(<http://purl.org/dc/terms/contributor> <http://purl.obolibrary.org/obo/FOODON_02010002> <https://orcid.org/0000-0001-5275-8866>)
 AnnotationAssertion(<http://purl.org/dc/terms/date> <http://purl.obolibrary.org/obo/FOODON_02010002> "2023-08-01T21:25:29Z"^^xsd:dateTime)
 AnnotationAssertion(rdfs:label <http://purl.obolibrary.org/obo/FOODON_02010002> "animal egg"@en)
-EquivalentClasses(<http://purl.obolibrary.org/obo/FOODON_02010002> ObjectUnionOf(<http://purl.obolibrary.org/obo/UBERON_0000922> <http://purl.obolibrary.org/obo/UBERON_0007379>))
-SubClassOf(<http://purl.obolibrary.org/obo/FOODON_02010002> <http://purl.obolibrary.org/obo/UBERON_0002050>)
 
 # Class: <http://purl.obolibrary.org/obo/FOODON_02010003> (animal roe)
 
@@ -4367,9 +4362,8 @@ AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000119> <http://purl.ob
 AnnotationAssertion(<http://purl.org/dc/terms/contributor> <http://purl.obolibrary.org/obo/FOODON_02010005> <https://orcid.org/0000-0001-5275-8866>)
 AnnotationAssertion(<http://purl.org/dc/terms/date> <http://purl.obolibrary.org/obo/FOODON_02010005> "2023-08-01T21:25:29Z"^^xsd:dateTime)
 AnnotationAssertion(rdfs:label <http://purl.obolibrary.org/obo/FOODON_02010005> "animal egg (shell on)"@en)
-EquivalentClasses(<http://purl.obolibrary.org/obo/FOODON_02010005> ObjectIntersectionOf(<http://purl.obolibrary.org/obo/UBERON_0007379> ObjectSomeValuesFrom(<http://purl.obolibrary.org/obo/RO_0002162> <http://purl.obolibrary.org/obo/NCBITaxon_32524>)))
+EquivalentClasses(<http://purl.obolibrary.org/obo/FOODON_02010005> ObjectIntersectionOf(<http://purl.obolibrary.org/obo/FOODON_02010002> ObjectSomeValuesFrom(<http://purl.obolibrary.org/obo/BFO_0000051> <http://purl.obolibrary.org/obo/UBERON_0005079>)))
 SubClassOf(<http://purl.obolibrary.org/obo/FOODON_02010005> <http://purl.obolibrary.org/obo/FOODON_02010002>)
-SubClassOf(<http://purl.obolibrary.org/obo/FOODON_02010005> <http://purl.obolibrary.org/obo/FOODON_02010005>)
 
 # Class: <http://purl.obolibrary.org/obo/FOODON_02010006> (animal egg (shell on, raw))
 
@@ -8855,7 +8849,6 @@ AnnotationAssertion(<http://purl.org/dc/terms/contributor> <http://purl.obolibra
 AnnotationAssertion(<http://purl.org/dc/terms/contributor> <http://purl.obolibrary.org/obo/FOODON_02020118> <https://orcid.org/0000-0002-8844-9165>)
 AnnotationAssertion(<http://purl.org/dc/terms/date> <http://purl.obolibrary.org/obo/FOODON_02020118> "2024-02-12T14:11:19Z"^^xsd:dateTime)
 AnnotationAssertion(rdfs:label <http://purl.obolibrary.org/obo/FOODON_02020118> "duck egg (shell on)"@en)
-EquivalentClasses(<http://purl.obolibrary.org/obo/FOODON_02020118> ObjectIntersectionOf(<http://purl.obolibrary.org/obo/FOODON_02010005> ObjectSomeValuesFrom(<http://purl.obolibrary.org/obo/RO_0002162> <http://purl.obolibrary.org/obo/FOODON_03411316>)))
 SubClassOf(<http://purl.obolibrary.org/obo/FOODON_02020118> <http://purl.obolibrary.org/obo/FOODON_00004428>)
 SubClassOf(<http://purl.obolibrary.org/obo/FOODON_02020118> <http://purl.obolibrary.org/obo/FOODON_02010005>)
 
@@ -11956,7 +11949,6 @@ AnnotationAssertion(<http://purl.org/dc/terms/contributor> <http://purl.obolibra
 AnnotationAssertion(<http://purl.org/dc/terms/date> <http://purl.obolibrary.org/obo/FOODON_02020376> "2024-02-12T14:11:19Z"^^xsd:dateTime)
 AnnotationAssertion(rdfs:label <http://purl.obolibrary.org/obo/FOODON_02020376> "goose egg"@en)
 EquivalentClasses(<http://purl.obolibrary.org/obo/FOODON_02020376> ObjectIntersectionOf(<http://purl.obolibrary.org/obo/FOODON_02010002> ObjectSomeValuesFrom(<http://purl.obolibrary.org/obo/RO_0002162> <http://purl.obolibrary.org/obo/FOODON_03411253>)))
-SubClassOf(<http://purl.obolibrary.org/obo/FOODON_02020376> <http://purl.obolibrary.org/obo/UBERON_0002050>)
 
 # Class: <http://purl.obolibrary.org/obo/FOODON_02020377> (goose egg (raw))
 
@@ -12324,7 +12316,6 @@ AnnotationAssertion(<http://purl.org/dc/terms/contributor> <http://purl.obolibra
 AnnotationAssertion(<http://purl.org/dc/terms/date> <http://purl.obolibrary.org/obo/FOODON_02020406> "2024-02-12T14:11:19Z"^^xsd:dateTime)
 AnnotationAssertion(rdfs:label <http://purl.obolibrary.org/obo/FOODON_02020406> "turkey egg"@en)
 EquivalentClasses(<http://purl.obolibrary.org/obo/FOODON_02020406> ObjectIntersectionOf(<http://purl.obolibrary.org/obo/FOODON_02010002> ObjectSomeValuesFrom(<http://purl.obolibrary.org/obo/RO_0002162> <http://purl.obolibrary.org/obo/NCBITaxon_9103>)))
-SubClassOf(<http://purl.obolibrary.org/obo/FOODON_02020406> <http://purl.obolibrary.org/obo/UBERON_0002050>)
 
 # Class: <http://purl.obolibrary.org/obo/FOODON_02020407> (turkey egg (raw))
 
@@ -16147,7 +16138,6 @@ AnnotationAssertion(<http://purl.org/dc/terms/contributor> <http://purl.obolibra
 AnnotationAssertion(<http://purl.org/dc/terms/date> <http://purl.obolibrary.org/obo/FOODON_02020722> "2024-02-12T14:11:19Z"^^xsd:dateTime)
 AnnotationAssertion(rdfs:label <http://purl.obolibrary.org/obo/FOODON_02020722> "quail egg"@en)
 EquivalentClasses(<http://purl.obolibrary.org/obo/FOODON_02020722> ObjectIntersectionOf(<http://purl.obolibrary.org/obo/FOODON_02010002> ObjectSomeValuesFrom(<http://purl.obolibrary.org/obo/RO_0002162> <http://purl.obolibrary.org/obo/FOODON_03411346>)))
-SubClassOf(<http://purl.obolibrary.org/obo/FOODON_02020722> <http://purl.obolibrary.org/obo/UBERON_0002050>)
 
 # Class: <http://purl.obolibrary.org/obo/FOODON_02020723> (quail egg (raw))
 
@@ -16808,7 +16798,6 @@ AnnotationAssertion(<http://purl.org/dc/terms/contributor> <http://purl.obolibra
 AnnotationAssertion(<http://purl.org/dc/terms/date> <http://purl.obolibrary.org/obo/FOODON_02020776> "2024-02-12T14:11:19Z"^^xsd:dateTime)
 AnnotationAssertion(rdfs:label <http://purl.obolibrary.org/obo/FOODON_02020776> "ostrich egg"@en)
 EquivalentClasses(<http://purl.obolibrary.org/obo/FOODON_02020776> ObjectIntersectionOf(<http://purl.obolibrary.org/obo/FOODON_02010002> ObjectSomeValuesFrom(<http://purl.obolibrary.org/obo/RO_0002162> <http://purl.obolibrary.org/obo/NCBITaxon_8801>)))
-SubClassOf(<http://purl.obolibrary.org/obo/FOODON_02020776> <http://purl.obolibrary.org/obo/UBERON_0002050>)
 
 # Class: <http://purl.obolibrary.org/obo/FOODON_02020777> (ostrich egg (raw))
 
@@ -26618,7 +26607,6 @@ AnnotationAssertion(<http://purl.org/dc/terms/contributor> <http://purl.obolibra
 AnnotationAssertion(<http://purl.org/dc/terms/date> <http://purl.obolibrary.org/obo/FOODON_02021584> "2024-02-12T14:11:19Z"^^xsd:dateTime)
 AnnotationAssertion(rdfs:label <http://purl.obolibrary.org/obo/FOODON_02021584> "sea turtle egg"@en)
 EquivalentClasses(<http://purl.obolibrary.org/obo/FOODON_02021584> ObjectIntersectionOf(<http://purl.obolibrary.org/obo/FOODON_02010002> ObjectSomeValuesFrom(<http://purl.obolibrary.org/obo/RO_0002162> <http://purl.obolibrary.org/obo/NCBITaxon_27791>)))
-SubClassOf(<http://purl.obolibrary.org/obo/FOODON_02021584> <http://purl.obolibrary.org/obo/UBERON_0002050>)
 
 # Class: <http://purl.obolibrary.org/obo/FOODON_02021585> (sea turtle)
 
@@ -26733,7 +26721,6 @@ AnnotationAssertion(<http://purl.org/dc/terms/contributor> <http://purl.obolibra
 AnnotationAssertion(<http://purl.org/dc/terms/date> <http://purl.obolibrary.org/obo/FOODON_02021593> "2024-02-12T14:11:19Z"^^xsd:dateTime)
 AnnotationAssertion(rdfs:label <http://purl.obolibrary.org/obo/FOODON_02021593> "turtle egg"@en)
 EquivalentClasses(<http://purl.obolibrary.org/obo/FOODON_02021593> ObjectIntersectionOf(<http://purl.obolibrary.org/obo/FOODON_02010002> ObjectSomeValuesFrom(<http://purl.obolibrary.org/obo/RO_0002162> <http://purl.obolibrary.org/obo/NCBITaxon_8459>)))
-SubClassOf(<http://purl.obolibrary.org/obo/FOODON_02021593> <http://purl.obolibrary.org/obo/UBERON_0002050>)
 
 # Class: <http://purl.obolibrary.org/obo/FOODON_02021594> (turtle carcass)
 
@@ -35357,7 +35344,6 @@ AnnotationAssertion(<http://purl.org/dc/terms/contributor> <http://purl.obolibra
 AnnotationAssertion(<http://purl.org/dc/terms/date> <http://purl.obolibrary.org/obo/FOODON_03000414> "2024-06-19T10:31:26Z"^^xsd:dateTime)
 AnnotationAssertion(rdfs:label <http://purl.obolibrary.org/obo/FOODON_03000414> "poultry egg"@en)
 EquivalentClasses(<http://purl.obolibrary.org/obo/FOODON_03000414> ObjectIntersectionOf(<http://purl.obolibrary.org/obo/FOODON_02010002> ObjectSomeValuesFrom(<http://purl.obolibrary.org/obo/RO_0002162> <http://purl.obolibrary.org/obo/FOODON_00004298>)))
-SubClassOf(<http://purl.obolibrary.org/obo/FOODON_03000414> <http://purl.obolibrary.org/obo/UBERON_0002050>)
 
 # Class: <http://purl.obolibrary.org/obo/FOODON_03000415> (poultry egg (shell on))
 
@@ -36026,7 +36012,7 @@ SubClassOf(<http://purl.obolibrary.org/obo/FOODON_03307670> ObjectSomeValuesFrom
 AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000114> <http://purl.obolibrary.org/obo/FOODON_03307996> <http://purl.obolibrary.org/obo/IAO_0000122>)
 AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000115> <http://purl.obolibrary.org/obo/FOODON_03307996> "A raw piece of atlantic salmon meat."@en)
 AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000116> <http://purl.obolibrary.org/obo/FOODON_03307996> "https://orcid.org/0000-0001-5275-8866"@en)
-AnnotationAssertion(<http://purl.org/dc/terms/contributor> <http://purl.obolibrary.org/obo/FOODON_03307996> <https://orcid.org/0000-0001-5275-8866FOODON:02010108-atlantic cod>)
+AnnotationAssertion(<http://purl.org/dc/terms/contributor> <http://purl.obolibrary.org/obo/FOODON_03307996> <https://orcid.org/0000-0001-5275-8866>)
 AnnotationAssertion(<http://purl.org/dc/terms/date> <http://purl.obolibrary.org/obo/FOODON_03307996> "2024-03-26T03:51:25Z"^^xsd:dateTime)
 AnnotationAssertion(<http://www.geneontology.org/formats/oboInOwl#hasBroadSynonym> <http://purl.obolibrary.org/obo/FOODON_03307996> "piece of atlantic cod meat (raw)"@en)
 AnnotationAssertion(<http://www.geneontology.org/formats/oboInOwl#hasBroadSynonym> <http://purl.obolibrary.org/obo/FOODON_03307996> "raw atlantic salmon meat"@en)
@@ -36443,7 +36429,6 @@ SIREN DB annotation:
 * whole egg FOODON:03420274"@en)
 AnnotationAssertion(rdfs:label <http://purl.obolibrary.org/obo/FOODON_03316061> "chicken egg"@en)
 EquivalentClasses(<http://purl.obolibrary.org/obo/FOODON_03316061> ObjectIntersectionOf(<http://purl.obolibrary.org/obo/FOODON_02010002> ObjectSomeValuesFrom(<http://purl.obolibrary.org/obo/RO_0002162> <http://purl.obolibrary.org/obo/NCBITaxon_9031>)))
-SubClassOf(<http://purl.obolibrary.org/obo/FOODON_03316061> <http://purl.obolibrary.org/obo/UBERON_0002050>)
 
 # Class: <http://purl.obolibrary.org/obo/FOODON_03316989> (octopus food product)
 
