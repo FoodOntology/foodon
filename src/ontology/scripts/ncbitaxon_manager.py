@@ -1,12 +1,11 @@
 #!/usr/bin/env python3
 """
-Check NCBITaxon IDs against the NCBI Taxonomy API to identify terms whose
-IDs have been superseded by a new primary identifier, and optionally update
-the source file with the replacements found.
+Manage NCBITaxon IDs in FoodOn source files: detect replaced IDs, update files,
+ensure OntoFox import lists are complete, look up taxa, and check for import gaps.
 
 A replacement is detected when a queried ID appears in the 'secondary_tax_ids'
-list of an API response entry — meaning that ID is now a deprecated alias for
-a different primary tax_id.
+list of an NCBI API response entry — meaning that ID is now a deprecated alias
+for a different primary tax_id.
 
 Supported input file formats (auto-detected by extension):
   .owl / .ofn   OWL ontology file — scans every line for 'NCBITaxon_<digits>'
@@ -15,34 +14,40 @@ Supported input file formats (auto-detected by extension):
   .tsv          ROBOT template — reads 'NCBITaxon:<digits>' from column 0
 
 Usage:
-    python check_ncbitaxon_replacements.py [options] [input_file]
+    python ncbitaxon_manager.py [options] [input_file]
 
     input_file defaults to: imports/ncbitaxon_import.owl
 
 Examples:
     # Check the default OWL import (report only):
-    python scripts/check_ncbitaxon_replacements.py
+    python scripts/ncbitaxon_manager.py
 
     # Check an OntoFox source list and prompt to update each finding:
-    python scripts/check_ncbitaxon_replacements.py --update imports/ncbitaxon_ontofox.txt
+    python scripts/ncbitaxon_manager.py --update imports/ncbitaxon_ontofox.txt
 
     # Check a ROBOT template and apply all replacements automatically:
-    python scripts/check_ncbitaxon_replacements.py --update-auto ../templates/robot_seafood.tsv
+    python scripts/ncbitaxon_manager.py --update-auto ../templates/robot_seafood.tsv
 
     # TSV output (clean for piping or saving):
-    python scripts/check_ncbitaxon_replacements.py --tsv imports/ncbitaxon_import.owl
+    python scripts/ncbitaxon_manager.py --tsv imports/ncbitaxon_import.owl
 
     # Use an NCBI API key (10 req/s instead of 3 req/s):
-    python scripts/check_ncbitaxon_replacements.py --api-key YOUR_KEY_HERE
+    python scripts/ncbitaxon_manager.py --api-key YOUR_KEY_HERE
 
     # Check specific IDs only:
-    python scripts/check_ncbitaxon_replacements.py --ids 1913631,121025,492052
+    python scripts/ncbitaxon_manager.py --ids 1913631,121025,492052
 
     # Check a TSV template and ensure all its IDs are in the OntoFox import list:
-    python scripts/check_ncbitaxon_replacements.py -i ../templates/robot_seafood.tsv
+    python scripts/ncbitaxon_manager.py -i ../templates/robot_seafood.tsv
 
     # Combine: update replacements AND import missing IDs into ontofox:
-    python scripts/check_ncbitaxon_replacements.py --update -i ../templates/robot_seafood.tsv
+    python scripts/ncbitaxon_manager.py --update -i ../templates/robot_seafood.tsv
+
+    # Look up one or more taxon IDs and print a markdown comparison table:
+    python scripts/ncbitaxon_manager.py -l 1913631,3049887 --api-key YOUR_KEY_HERE
+
+    # Check for IDs present in ncbitaxon_ontofox.txt but absent from ncbitaxon_import.owl:
+    python scripts/ncbitaxon_manager.py --check-missing
 """
 
 import argparse
@@ -72,6 +77,9 @@ DELAY_WITH_KEY = 0.12    # seconds between requests with API key
 
 MAX_RETRIES   = 3
 RETRY_BACKOFF = 2.0      # multiply delay by this factor on each retry
+
+# Display order for classification ranks (broad → specific)
+_RANK_ORDER = ['domain', 'kingdom', 'phylum', 'class', 'order', 'family', 'genus', 'species']
 
 
 # ---------------------------------------------------------------------------
@@ -154,7 +162,7 @@ def parse_explicit_ids(id_string: str) -> list[int]:
 
 
 # ---------------------------------------------------------------------------
-# NCBI API
+# NCBI API — replacement detection
 # ---------------------------------------------------------------------------
 
 def _build_url(taxon_ids: list[int], page_size: int, api_key: str | None,
@@ -220,10 +228,6 @@ def query_batch(taxon_ids: list[int], api_key: str | None,
     return results
 
 
-# ---------------------------------------------------------------------------
-# Replacement detection
-# ---------------------------------------------------------------------------
-
 def find_replacements(taxon_ids: list[int], api_key: str | None,
                       batch_size: int, verbose: bool) -> list[tuple[int, int, str]]:
     """
@@ -285,7 +289,173 @@ def find_replacements(taxon_ids: list[int], api_key: str | None,
 
 
 # ---------------------------------------------------------------------------
-# Output
+# NCBI API — lookup table
+# ---------------------------------------------------------------------------
+
+def _fetch_reports(taxon_ids: list[int], api_key: str | None) -> list[dict]:
+    """
+    Fetch full dataset_report records for a small list of IDs (no pagination
+    needed for lookups of 1–2 taxa).  Uses table_format=SUMMARY to get the
+    classification and basionym fields not returned by the batch replacement
+    endpoint.
+    """
+    id_str = ','.join(str(i) for i in taxon_ids)
+    url = (
+        f"{NCBI_API_BASE}/{urllib.parse.quote(id_str, safe=',')}/dataset_report"
+        f"?table_format=SUMMARY"
+    )
+    if api_key:
+        url += f"&api_key={urllib.parse.quote(api_key)}"
+    req = urllib.request.Request(url, headers={'accept': 'application/json'})
+    with urllib.request.urlopen(req, timeout=30) as resp:
+        return json.loads(resp.read()).get('reports', [])
+
+
+def _fmt_name_auth(name_obj: dict | None, wrap_parens: bool = False) -> str:
+    """
+    Combine a {name, authority} dict into a display string.
+    If wrap_parens is True, parentheses are added around the authority
+    when not already present.
+    """
+    if not name_obj:
+        return ''
+    name = name_obj.get('name', '') or ''
+    auth = name_obj.get('authority', '') or ''
+    if auth and wrap_parens and not auth.startswith('('):
+        auth = f"({auth})"
+    return f"{name} {auth}".strip() if auth else name
+
+
+def _taxon_link(cls_entry: dict | None) -> str:
+    """Return a markdown [name](OBO_URI) link for a classification rank entry."""
+    if not cls_entry:
+        return ''
+    name = cls_entry.get('name', '')
+    tid  = cls_entry.get('id')
+    if not name or not tid:
+        return ''
+    return f"[{name}]({OBO_URI_BASE}{tid})"
+
+
+def _print_lookup_table(queried_ids: list[int], api_key: str | None) -> None:
+    """
+    Fetch and print a space-padded markdown table for the given taxon IDs.
+    One data column per ID; rows cover taxon id, rank, scientific name,
+    basionym, group, formal status, secondary tax ids, and classification.
+    Best-effort: errors are reported to stderr and the function returns quietly.
+    """
+    try:
+        reports = _fetch_reports(queried_ids, api_key)
+    except Exception as exc:
+        print(f"  (lookup table unavailable: {exc})", file=sys.stderr)
+        return
+
+    # Map each queried ID → its taxonomy dict (first match per query value)
+    tax_by_query: dict[int, dict] = {}
+    for report in reports:
+        tax = report.get('taxonomy', {})
+        for q in report.get('query', []):
+            try:
+                qid = int(q)
+                if qid not in tax_by_query:
+                    tax_by_query[qid] = tax
+            except (ValueError, TypeError):
+                pass
+
+    def tax(qid: int) -> dict:
+        return tax_by_query.get(qid, {})
+
+    def cell(qid: int, *keys: str) -> str:
+        v: object = tax(qid)
+        for k in keys:
+            if not isinstance(v, dict):
+                return ''
+            v = v.get(k)
+            if v is None:
+                return ''
+        return str(v) if v is not None else ''
+
+    present_ranks = [
+        r for r in _RANK_ORDER
+        if any(r in (tax(qid).get('classification') or {}) for qid in queried_ids)
+    ]
+
+    rows: list[tuple[str, list[str]]] = []
+    rows.append(('taxon id', [cell(qid, 'tax_id') for qid in queried_ids]))
+    rows.append(('rank',     [cell(qid, 'rank')    for qid in queried_ids]))
+    rows.append(('scientific name', [
+        _fmt_name_auth(tax(qid).get('current_scientific_name'))
+        for qid in queried_ids
+    ]))
+    rows.append(('basionym', [
+        _fmt_name_auth(
+            (tax(qid).get('current_scientific_name') or {}).get('basionym'),
+            wrap_parens=True,
+        )
+        for qid in queried_ids
+    ]))
+    rows.append(('group',  [cell(qid, 'group_name') for qid in queried_ids]))
+    rows.append(('formal', [
+        'yes' if tax(qid).get('current_scientific_name_is_formal') else 'no'
+        for qid in queried_ids
+    ]))
+    rows.append(('secondary tax ids', [
+        ', '.join(str(i) for i in (tax(qid).get('secondary_tax_ids') or []))
+        for qid in queried_ids
+    ]))
+    rows.append(('**classification**', ['' for _ in queried_ids]))
+    for rank in present_ranks:
+        rows.append((rank, [
+            _taxon_link((tax(qid).get('classification') or {}).get(rank))
+            for qid in queried_ids
+        ]))
+
+    headers = ['Field'] + [f"NCBITaxon:{qid}" for qid in queried_ids]
+    widths  = [len(h) for h in headers]
+    for label, cells in rows:
+        widths[0] = max(widths[0], len(label))
+        for i, c in enumerate(cells):
+            widths[i + 1] = max(widths[i + 1], len(c))
+
+    def fmt_row(cells: list[str]) -> str:
+        return '| ' + ' | '.join(c.ljust(widths[i]) for i, c in enumerate(cells)) + ' |'
+
+    sep = '| ' + ' | '.join('-' * w for w in widths) + ' |'
+
+    print()
+    print(fmt_row(headers))
+    print(sep)
+    for label, cells in rows:
+        print(fmt_row([label] + cells))
+    print()
+
+
+def lookup_taxon(id_string: str, api_key: str | None) -> None:
+    """Parse a comma-delimited ID string and print the lookup table, then exit."""
+    queried_ids: list[int] = []
+    for part in id_string.split(','):
+        part = part.strip()
+        if part.isdigit():
+            queried_ids.append(int(part))
+        elif part:
+            print(f"Warning: skipping non-numeric token: {part!r}", file=sys.stderr)
+
+    if not queried_ids:
+        print("Error: no valid numeric IDs provided.", file=sys.stderr)
+        sys.exit(1)
+
+    if not api_key:
+        print(
+            "Warning: --api-key not provided. NCBI rate limit is ~3 req/s without a key.\n"
+            "A free key is available at https://www.ncbi.nlm.nih.gov/account/",
+            file=sys.stderr,
+        )
+
+    _print_lookup_table(queried_ids, api_key)
+
+
+# ---------------------------------------------------------------------------
+# Output — replacement report
 # ---------------------------------------------------------------------------
 
 def report_human(replacements: list[tuple[int, int, str]]) -> None:
@@ -337,9 +507,11 @@ def _read_tty(prompt: str) -> str:
         return sys.stdin.readline().strip().lower()
 
 
-def prompt_approvals(replacements: list[tuple[int, int, str]]) -> list[tuple[int, int, str]]:
+def prompt_approvals(replacements: list[tuple[int, int, str]],
+                     api_key: str | None) -> list[tuple[int, int, str]]:
     """
-    For each replacement, show details and ask the user to approve or skip.
+    For each replacement, display a lookup table comparing the old and new
+    taxon IDs, then ask the user to approve or skip the substitution.
     Returns the subset the user approved.  Pressing 'q' stops prompting and
     returns whatever has been approved so far.
     """
@@ -348,12 +520,13 @@ def prompt_approvals(replacements: list[tuple[int, int, str]]) -> list[tuple[int
     print(file=sys.stderr)
 
     for n, (old_id, new_id, name) in enumerate(replacements, 1):
-        new_uri = f"{OBO_URI_BASE}{new_id}"
         print(
             f"[{n}/{total}]  NCBITaxon_{old_id}  →  NCBITaxon_{new_id}  ({name})",
             file=sys.stderr,
         )
-        print(f"         {new_uri}", file=sys.stderr)
+
+        # Show lookup table for old and new IDs side-by-side
+        _print_lookup_table([old_id, new_id], api_key)
 
         answer = _read_tty("  Update? [y/n/q] (n): ")
 
@@ -549,15 +722,54 @@ def insert_into_ontofox(ontofox_path: Path, missing_ids: list[int],
 
 
 # ---------------------------------------------------------------------------
+# Missing-ID check (from ncbitaxon_check.py)
+# ---------------------------------------------------------------------------
+
+def run_missing_check() -> None:
+    """
+    Check whether every NCBITaxon ID listed in ncbitaxon_ontofox.txt is
+    actually present in ncbitaxon_import.owl (and ncbitaxon2_import.owl if it
+    exists).  Prints bracketed IDs for any that are absent.
+    """
+    content_dict: set[str] = set()
+
+    for file_name in ['imports/ncbitaxon', 'imports/ncbitaxon2']:
+        owl_path = file_name + '_import.owl'
+        print()
+        print("Checking for missing ids in", owl_path)
+        try:
+            with open(owl_path, 'r') as owl_handler:
+                for term in owl_handler.read().splitlines():
+                    term = term.strip()
+                    if term.split('_')[0] == '<owl:Class rdf:about="http://purl.obolibrary.org/obo/NCBITaxon':
+                        id = term.split('_')[1].split('"')[0]
+                        content_dict.add(id)
+        except FileNotFoundError:
+            print(f"  (file not found — skipping)", file=sys.stderr)
+            continue
+
+        ontofox_path = file_name + '_ontofox.txt'
+        try:
+            with open(ontofox_path, 'r') as lookup_handler:
+                for term in lookup_handler.read().splitlines():
+                    if term.split('_')[0] == 'http://purl.obolibrary.org/obo/NCBITaxon':
+                        id = term.split('_')[1].split(' ')[0].split('\t')[0]
+                        if id not in content_dict:
+                            print('[' + id + ']')
+        except FileNotFoundError:
+            print(f"  (ontofox file {ontofox_path} not found — skipping)", file=sys.stderr)
+
+
+# ---------------------------------------------------------------------------
 # CLI
 # ---------------------------------------------------------------------------
 
 def main() -> None:
     parser = argparse.ArgumentParser(
         description=(
-            "Check NCBITaxon IDs in an ontology file against the NCBI Taxonomy "
-            "API and report any that have been replaced by a new primary identifier. "
-            "Optionally update the source file with the replacements found."
+            "Manage NCBITaxon IDs in FoodOn source files: detect replaced IDs, "
+            "update files, ensure OntoFox import lists are complete, look up taxa, "
+            "and check for import gaps."
         ),
         formatter_class=argparse.RawDescriptionHelpFormatter,
         epilog=__doc__.split("Usage:")[1] if "Usage:" in __doc__ else "",
@@ -577,12 +789,27 @@ def main() -> None:
         metavar="ID1,ID2,...",
         help="Check only these comma-separated numeric taxon IDs (skips file parsing)",
     )
+
+    # -l is mutually exclusive with --update, --update-auto, and -i
+    parser.add_argument(
+        "-l", "--lookup",
+        metavar="IDs",
+        help=(
+            "Comma-delimited numeric NCBITaxon IDs to look up. "
+            "Prints a markdown comparison table and exits. "
+            "Cannot be combined with --update, --update-auto, or -i."
+        ),
+    )
+
     update_group = parser.add_mutually_exclusive_group()
     update_group.add_argument(
         "--update",
         action="store_true",
         default=False,
-        help="Update the input file, prompting to approve each replacement one at a time.",
+        help=(
+            "Update the input file, prompting to approve each replacement one at a time. "
+            "A lookup table is displayed for each candidate before prompting."
+        ),
     )
     update_group.add_argument(
         "--update-auto",
@@ -623,11 +850,44 @@ def main() -> None:
         ),
     )
     parser.add_argument(
+        "--check-missing",
+        action="store_true",
+        default=False,
+        help=(
+            "Check whether every ID in ncbitaxon_ontofox.txt is present in "
+            "ncbitaxon_import.owl and print any that are absent. "
+            "Runs instead of the normal replacement check."
+        ),
+    )
+    parser.add_argument(
         "-v", "--verbose",
         action="store_true",
         help="Print per-batch progress details",
     )
     args = parser.parse_args()
+
+    # --- -l/--lookup: show table and exit (incompatible with update/import) ---
+    if args.lookup:
+        blocked = [
+            opt for opt, flag in [
+                ('--update',      args.update),
+                ('--update-auto', args.update_auto),
+                ('-i/--import',   args.add_to_ontofox),
+            ] if flag
+        ]
+        if blocked:
+            parser.error(
+                f"-l/--lookup cannot be combined with: {', '.join(blocked)}"
+            )
+        lookup_taxon(args.lookup, args.api_key)
+        sys.exit(0)
+
+    # --- --check-missing: legacy import-gap check ---
+    if args.check_missing:
+        run_missing_check()
+        sys.exit(0)
+
+    # --- Normal replacement-detection flow ---
 
     # Determine update mode
     if args.update:
@@ -642,7 +902,7 @@ def main() -> None:
               file=sys.stderr)
         update_mode = None
 
-    # --- Collect IDs ---
+    # Collect IDs
     fmt = None
     input_path = None
 
@@ -666,7 +926,7 @@ def main() -> None:
         print("No NCBITaxon IDs found — nothing to check.", file=sys.stderr)
         sys.exit(0)
 
-    # --- Query NCBI ---
+    # Query NCBI
     print(
         f"Querying NCBI API in batches of {args.batch_size} "
         f"({'with' if args.api_key else 'without'} API key) ...",
@@ -679,18 +939,18 @@ def main() -> None:
         verbose=args.verbose,
     )
 
-    # --- Report ---
+    # Report
     if args.tsv:
         report_tsv(replacements)
     else:
         report_human(replacements)
 
-    # --- Update file ---
+    # Update file
     approved: list[tuple[int, int, str]] = []
 
     if replacements and update_mode and input_path is not None:
         if update_mode == 'interactive':
-            approved = prompt_approvals(replacements)
+            approved = prompt_approvals(replacements, args.api_key)
         else:  # auto
             approved = replacements
             print(
@@ -708,7 +968,7 @@ def main() -> None:
                 file=sys.stderr,
             )
 
-    # --- Import missing IDs into ontofox ---
+    # Import missing IDs into ontofox
     if args.add_to_ontofox and input_path is not None:
         if fmt == 'OntoFox':
             print(
@@ -719,7 +979,6 @@ def main() -> None:
         elif not ONTOFOX_PATH.exists():
             print(f"Error: OntoFox file not found at {ONTOFOX_PATH}", file=sys.stderr)
         else:
-            # Compute effective IDs: use replacement ID where approved, else original
             approved_map = {old: new for old, new, _ in approved}
             effective_ids = {approved_map.get(id_, id_) for id_ in taxon_ids}
 
@@ -736,9 +995,7 @@ def main() -> None:
                     f"{len(missing)} ID(s) not in {ONTOFOX_PATH}; fetching names ...",
                     file=sys.stderr,
                 )
-                # Seed name cache from already-known replacement names
                 names = {new: name for _, new, name in replacements}
-                # Fetch names for any IDs not already in the cache
                 unknown = [id_ for id_ in missing if id_ not in names]
                 if unknown:
                     names.update(
