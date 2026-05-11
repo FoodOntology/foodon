@@ -1415,6 +1415,8 @@ Declaration(Class(obo:FOODON_03000268))
 Declaration(Class(obo:FOODON_03000301))
 Declaration(Class(obo:FOODON_03000385))
 Declaration(Class(obo:FOODON_03000386))
+Declaration(Class(obo:FOODON_03000387))
+Declaration(Class(obo:FOODON_03000389))
 Declaration(Class(obo:FOODON_03000392))
 Declaration(Class(obo:FOODON_03000393))
 Declaration(Class(obo:FOODON_03000395))
@@ -1427,6 +1429,8 @@ Declaration(Class(obo:FOODON_03000404))
 Declaration(Class(obo:FOODON_03000405))
 Declaration(Class(obo:FOODON_03000407))
 Declaration(Class(obo:FOODON_03000409))
+Declaration(Class(obo:FOODON_03000411))
+Declaration(Class(obo:FOODON_03000413))
 Declaration(Class(obo:FOODON_03000414))
 Declaration(Class(obo:FOODON_03000415))
 Declaration(Class(obo:FOODON_03301007))
@@ -20220,6 +20224,22 @@ SubClassOf(obo:FOODON_03000301 obo:FOODON_02020752)
 # Class: obo:FOODON_03000385 (chicken breast (bone-in))
 
 AnnotationAssertion(dcterms:contributor obo:FOODON_03000385 <https://orcid.org/0000-0002-8844-9165>)
+
+# Class: obo:FOODON_03000387 (obsolete: beef shoulder chop)
+
+SubClassOf(obo:FOODON_03000387 obo:FOODON_02020979)
+
+# Class: obo:FOODON_03000389 (obsolete: beef sirloin chop)
+
+SubClassOf(obo:FOODON_03000389 obo:FOODON_02020979)
+
+# Class: obo:FOODON_03000411 (obsolete: turkey meat (ground or minced, boneless))
+
+SubClassOf(obo:FOODON_03000411 obo:FOODON_02020570)
+
+# Class: obo:FOODON_03000413 (pork meat (ground or minced, boneless))
+
+SubClassOf(obo:FOODON_03000413 obo:FOODON_02021717)
 
 # Class: obo:FOODON_03301007 (chocolate candy)
 
