@@ -105,6 +105,38 @@ SEARCH_ROOT = 'obo:FOODON_00003004,obo:FOODON_03413357,obo:FOODON_03411301,obo:F
 
 INPUT_FOODON_ONTOLOGY = 'cache-foodon-merged.owl';
 OBO = "<http://purl.obolibrary.org/obo/";
+OBO_URI_BASE = 'http://purl.obolibrary.org/obo/';
+
+DBXREF_URL_TEMPLATES = {
+	'langual':   'http://www.langual.org/langual_thesaurus.asp?termID={}',
+	'wd':        'https://www.wikidata.org/wiki/{}',
+	'wikipedia': 'https://en.wikipedia.org/wiki/{}',
+	'itis':      'https://www.itis.gov/servlet/SingleRpt/SingleRpt?search_topic=TSN&search_value={}',
+	'grin':      'https://npgsweb.ars-grin.gov/gringlobal/taxonomydetail.aspx?id={}',
+	'eolife':    'https://eol.org/pages/{}',
+};
+
+def md_linkify(cell):
+	"""Convert semicolon-separated obo: URIs or known dbxref values to markdown links."""
+	if not cell:
+		return cell;
+	result = [];
+	for part in cell.split(';'):
+		part = part.strip();
+		if part.startswith('obo:'):
+			local = part[4:];
+			result.append(f'[{local}]({OBO_URI_BASE}{local})');
+		else:
+			sep = part.find(':');
+			if sep > 0:
+				prefix, value = part[:sep], part[sep+1:];
+				if prefix in DBXREF_URL_TEMPLATES:
+					result.append(f'[{part}]({DBXREF_URL_TEMPLATES[prefix].format(value)})');
+				else:
+					result.append(part);
+			else:
+				result.append(part);
+	return '; '.join(result);
 
 def init_parser():
 
@@ -144,7 +176,7 @@ def init_parser():
 		"--exclude",
 		dest="exclude",
 		default='',
-		help='A comma separated list of term labels or identifiers which are either food material or characteristic classes, like "--exclude "invertebrate animal|live|dead|raw|frozen|cooked|dried", etc. If a food material is or has one of these terms, it will be EXCLUDED from report. \n\nWhen a term is excluded, such as "animal carcass", then all its children are too.\n\nSome names are predefined bundles of characteristics: "lifecycle" means include food sources which have a "dead" (carcass) or "alive" characteristic.  '
+		help='A semicolon-separated list of term labels or characteristic labels to exclude. Multiple values must be quoted on the command line, e.g. -e "alive;raw;dead". If a term\'s label matches, or if the term has a matching characteristic, it and all its children are excluded from the report.'
 	);
 
 	parser.add_argument(
@@ -174,6 +206,24 @@ def init_parser():
 		help="A list of cross-references to include, by prefix (e.g. asfis,eolife,grin,itis,langual,wd,wikipedia). wd=wikidata for cultivar names."
 	);
 
+	parser.add_argument(
+		"-M",
+		"--markdown",
+		dest="markdown",
+		default=False,
+		action="store_true",
+		help="Output a markdown table instead of tab-delimited text."
+	);
+
+
+	parser.add_argument(
+		"-D",
+		"--definition",
+		dest="definition",
+		default=False,
+		action="store_true",
+		help="Include a definition column populated from the IAO:0000115 annotation."
+	);
 
 	parser.add_argument(
 		"-s",
@@ -289,6 +339,10 @@ def setProperties(term, onto_class):
 							found = True;
 						if found:
 							term['dbxrefs'].add(value);
+				# DEFINITION
+				case 'IAO_0000115':
+					if options.definition and not term['definition']:
+						term['definition'] = str(value);
 				# CHARACTERISTICS
 				case 'RO_0000086' | 'RO_0000053':
 					#text = str(value).replace('.',':'); # value is 
@@ -327,8 +381,18 @@ def parse_owl_namespaces(file_path, lines_number):
 
 	return namespaces
 
-def display(link, depth, term, mat_prod_code ='', taxonomy='', characteristics='', dbxrefs='', synonyms=''):
-	print (link, mat_prod_code, depth, "  " * (depth) + getEnglishLabel(term), taxonomy, characteristics, dbxrefs, synonyms, sep='\t');
+def display(link, depth, term, mat_prod_code='', taxonomy='', characteristics='', dbxrefs='', synonyms='', definition=''):
+	output_buffer.append({
+		'id':              link,
+		'flags':           mat_prod_code,
+		'depth':           depth,
+		'label':           getEnglishLabel(term),
+		'taxonomy':        taxonomy,
+		'characteristics': characteristics,
+		'dbxrefs':         dbxrefs,
+		'synonyms':        synonyms,
+		'definition':      definition,
+	})
 
 ###############################################################################
 if __name__ == "__main__":
@@ -404,8 +468,7 @@ if __name__ == "__main__":
 		else:
 			print ('WARNING: root parameter ', onto_uri, ' was not found in ontology');
 
-	# TERM DELIMITER IS SEMICOLON TO AVOID CONFUSION WITH TEXT THAT HAS COMMAS IN IT
-	term_filter = set(options.exclude.split(';')); 
+	term_filter = set(filter(None, options.exclude.split(';')));
 	#print("FILTER", term_filter)
 
 	dbxref_filter = set(options.dbxrefs.split(','));
@@ -414,7 +477,7 @@ if __name__ == "__main__":
 
 	processed = set();
 
-	print ('id	flags	depth	label	taxonomy	characteristics	dbxrefs	synonyms');
+	output_buffer = []
 
 	# Fetch hierarchies of animal / plant by taxonomy / algae / fungus for hierarchic lookup.
 	while len(stack):
@@ -430,7 +493,7 @@ if __name__ == "__main__":
 		next_depth = obj['depth']+1;
 
 		# Limit depth search by given option
-		if options.depth >= 0 and item_depth > options.depth:
+		if options.depth is not None and item_depth > options.depth:
 			continue;
 
 		term = {
@@ -441,7 +504,8 @@ if __name__ == "__main__":
 			'material': '',
 			'characteristics': set(),
 			'dbxrefs': set(),
-			'synonyms': set()
+			'synonyms': set(),
+			'definition': ''
 		}
 
 		term['label'] = getEnglishLabel(onto_class);
@@ -554,16 +618,54 @@ if __name__ == "__main__":
 
 		# Usually only 1 taxon term but some terms like "edible frog" have 2+
 		display (
-			term['uri'].replace('.',':'), 
-			item_depth, 
-			onto_class, 
-			term['material'] + term['product'], 
-			';'.join(term['taxon']), 
-			characteristics, 
-			dbxrefs, 
-			synonyms
+			term['uri'].replace('.',':'),
+			item_depth,
+			onto_class,
+			term['material'] + term['product'],
+			';'.join(term['taxon']),
+			characteristics,
+			dbxrefs,
+			synonyms,
+			term['definition']
 		);
 
+
+	COLUMNS = ['id', 'flags', 'depth', 'label', 'taxonomy', 'characteristics', 'dbxrefs', 'synonyms', 'definition']
+	ALWAYS_SHOW = {'id', 'depth', 'label'}
+	active_cols = [c for c in COLUMNS if c in ALWAYS_SHOW or any(row[c] for row in output_buffer)]
+
+	if options.markdown:
+		max_label_width = max((row['depth'] * 2 + len(row['label']) for row in output_buffer), default=5)
+		max_label_width = max(max_label_width, 5)
+		def esc(s): return str(s).replace('|', '\\|')
+		header_cells = ['label' + '&nbsp;' * (max_label_width - 5) if c == 'label' else c for c in active_cols]
+		sep_cells    = ['-' * (max_label_width + 2) if c == 'label' else '-' * (len(c) + 2) for c in active_cols]
+		print('| ' + ' | '.join(header_cells) + ' |')
+		print('|' + '|'.join(sep_cells) + '|')
+		for row in output_buffer:
+			cells = []
+			for col in active_cols:
+				if col == 'id':
+					cells.append(md_linkify(row['id']))
+				elif col == 'depth':
+					cells.append(str(row['depth']))
+				elif col == 'label':
+					cells.append(esc('&nbsp;' * (row['depth'] * 2) + row['label']))
+				elif col in ('taxonomy', 'dbxrefs'):
+					cells.append(md_linkify(row[col]))
+				else:
+					cells.append(esc(row[col]))
+			print('| ' + ' | '.join(cells) + ' |')
+	else:
+		print('\t'.join(active_cols))
+		for row in output_buffer:
+			cells = []
+			for col in active_cols:
+				if col == 'label':
+					cells.append('  ' * row['depth'] + row['label'])
+				else:
+					cells.append(str(row[col]))
+			print('\t'.join(cells))
 
 	# 1-to-many lookup of term to children and visa vesa.
 	#item_children = df.groupby('parent_id')['id'].apply(list).to_dict();
