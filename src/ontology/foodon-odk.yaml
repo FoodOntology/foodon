@@ -39,6 +39,7 @@ components:
   products:
 # Note that for some products, if they have makefile template processing then only use .owl suffix for them
     - filename: product_type_import.ofn
+#    - filename: sssom_mappings.ofn
     - filename: siren_augment_codes.ofn
     - filename: robot_sssom_taxonomy.ofn
     - filename: deprecation_import.ofn
@@ -50,7 +51,7 @@ components:
       use_template: TRUE
       template_options: --input foodon-edit.ofn --xml-entities --ontology-iri "http://purl.obolibrary.org/obo/foodon/components/food_materials.owl"
       templates: 
-#        - robot_animal_parts.tsv  Not used in 
+#        - food_materials.tsv
         - robot_animals.tsv
         - robot_meat_cuts.tsv
         - robot_plant_parts.tsv
@@ -60,6 +61,7 @@ components:
       use_template: TRUE
       template_options: --input foodon-edit.ofn --xml-entities --ontology-iri "http://purl.obolibrary.org/obo/foodon/components/food_products.owl"
       templates: 
+
         - robot_pasta.tsv
         - robot_wine.tsv
         - robot_dietary_supplement.tsv
