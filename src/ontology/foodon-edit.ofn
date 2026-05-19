@@ -10308,7 +10308,7 @@ AnnotationAssertion(rdfs:label oboInOwl:hasSynonym "has synonym"@en)
 #   Object Properties
 ############################
 
-# Object Property: obo:FOODON_00001301 (has food substance analog)
+# Object Property: obo:FOODON_00001301 (has food material analog)
 
 SymmetricObjectProperty(obo:FOODON_00001301)
 
@@ -12853,7 +12853,7 @@ SubClassOf(obo:FOODON_00002456 obo:FOODON_00001181)
 # Class: obo:FOODON_00002457 (food (fresh))
 
 AnnotationAssertion(obo:IAO_0000114 obo:FOODON_00002457 obo:IAO_0000122)
-AnnotationAssertion(obo:IAO_0000115 obo:FOODON_00002457 "Fresh food is food that has not been subjected to food preservation processes (including freezing) that alter its harvested state significantly."@en)
+AnnotationAssertion(obo:IAO_0000115 obo:FOODON_00002457 "Raw food which is fresh."@en)
 AnnotationAssertion(obo:IAO_0000117 obo:FOODON_00002457 "Damion Dooley"@en)
 AnnotationAssertion(obo:IAO_0000119 obo:FOODON_00002457 "https://en.wikipedia.org/wiki/Fresh_food"^^xsd:anyURI)
 AnnotationAssertion(obo:IAO_0000600 obo:FOODON_00002457 "Wikipedia defines fresh food as:\"food which has not been preserved and has not spoiled yet. For vegetables and fruits, this means that they have been recently harvested and treated properly postharvest; for meat, it has recently been slaughtered and butchered; for fish, it has been recently caught or harvested and kept cold.\""@en)
@@ -15300,6 +15300,7 @@ AnnotationAssertion(obo:IAO_0000117 obo:FOODON_00003453 <http://orcid.org/0000-0
 AnnotationAssertion(obo:IAO_0000119 obo:FOODON_00003453 <https://www.fsis.usda.gov/wps/portal/fsis/topics/food-safety-education/get-answers/food-safety-fact-sheets/food-labeling/food-product-dating/food-product-dating>)
 AnnotationAssertion(dcterms:date obo:FOODON_00003453 "2020-09-22T15:09:40Z"^^xsd:dateTime)
 AnnotationAssertion(oboInOwl:hasDbXref obo:FOODON_00003453 <https://www.gs1.org/voc/bestBeforeDate>)
+AnnotationAssertion(oboInOwl:hasExactSynonym obo:FOODON_00003453 "best before date"@en)
 AnnotationAssertion(oboInOwl:hasExactSynonym obo:FOODON_00003453 "best if used by"@en)
 AnnotationAssertion(oboInOwl:hasExactSynonym obo:FOODON_00003453 "use-by date"@en)
 AnnotationAssertion(rdfs:comment obo:FOODON_00003453 "This is also a safety date when used on infant formula regulated by the U.S. Food and Drug Administration (FDA)."@en)
@@ -18533,7 +18534,7 @@ AnnotationAssertion(obo:IAO_0000115 obo:FOODON_00004723 "A physical quality of m
 AnnotationAssertion(dcterms:contributor obo:FOODON_00004723 <https://orcid.org/0000-0002-8844-9165>)
 AnnotationAssertion(dcterms:date obo:FOODON_00004723 "2024-04-19T22:08:41Z"^^xsd:dateTime)
 AnnotationAssertion(rdfs:label obo:FOODON_00004723 "dried"@en)
-SubClassOf(obo:FOODON_00004723 obo:PATO_0001018)
+SubClassOf(obo:FOODON_00004723 obo:PATO_0001241)
 
 # Class: obo:FOODON_00004724 (dried raw)
 
@@ -18565,7 +18566,7 @@ AnnotationAssertion(obo:IAO_0000115 obo:FOODON_00004727 "A characteristic of mat
 AnnotationAssertion(dcterms:contributor obo:FOODON_00004727 <https://orcid.org/0000-0002-8844-9165>)
 AnnotationAssertion(dcterms:date obo:FOODON_00004727 "2024-04-20T04:37:02Z"^^xsd:dateTime)
 AnnotationAssertion(rdfs:label obo:FOODON_00004727 "thawed"@en)
-SubClassOf(obo:FOODON_00004727 obo:PATO_0001018)
+SubClassOf(obo:FOODON_00004727 obo:PATO_0001241)
 
 # Class: obo:FOODON_00004728 (flash frozen)
 
@@ -18861,7 +18862,7 @@ SubClassOf(obo:FOODON_00005442 obo:FOODON_00001183)
 
 # Class: obo:FOODON_00005451 (room temperature)
 
-AnnotationAssertion(obo:IAO_0000115 obo:FOODON_00005451 "A temperature characteristic which encompasses the range of air temperatures most people find comfortable indoors while dressed in typical clothing."@en)
+AnnotationAssertion(obo:IAO_0000115 obo:FOODON_00005451 "A temperature which encompasses the range of air temperatures most people find comfortable indoors while dressed in typical clothing."@en)
 AnnotationAssertion(obo:IAO_0000116 obo:FOODON_00005451 "This should probably be a NTR for PATO."@en)
 AnnotationAssertion(obo:IAO_0000119 obo:FOODON_00005451 wikipedia:Room_temperature)
 AnnotationAssertion(dcterms:contributor obo:FOODON_00005451 <https://orcid.org/0000-0002-8844-9165>)
@@ -18932,7 +18933,7 @@ AnnotationAssertion(dcterms:contributor obo:FOODON_00005566 <https://orcid.org/0
 AnnotationAssertion(dcterms:date obo:FOODON_00005566 "2025-09-22T17:34:40Z"^^xsd:dateTime)
 AnnotationAssertion(rdfs:label obo:FOODON_00005566 "meat doneness"@en)
 AnnotationAssertion(rdfs:seeAlso obo:FOODON_00005566 <https://archive.org/details/fieldguidetomeat0000gree_n1b1/page/294/mode/2up?view=theater>)
-SubClassOf(obo:FOODON_00005566 obo:PATO_0001018)
+SubClassOf(obo:FOODON_00005566 obo:PATO_0001241)
 
 # Class: obo:FOODON_00005615 (well done meat)
 
