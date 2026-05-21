@@ -160,17 +160,21 @@ def extract_ids_from_file(path: Path) -> tuple[list[int], str]:
     return extract_ids_from_owl(path), 'unknown (treated as OWL)'
 
 
-def parse_explicit_ids(id_string: str) -> list[int]:
-    """Parse a comma-separated string of numeric taxon IDs."""
-    ids = []
+def parse_explicit_ids(id_string: str) -> tuple[list[int], list[str]]:
+    """
+    Parse a comma-separated string of numeric taxon IDs and/or scientific names.
+    Returns ``(sorted_numeric_ids, name_tokens)``; callers are responsible for
+    resolving name tokens to IDs via :func:`lookup_names_via_ncbi`.
+    """
+    ids: list[int] = []
+    names: list[str] = []
     for part in id_string.split(','):
         part = part.strip()
         if part.isdigit():
             ids.append(int(part))
         elif part:
-            print(f"Warning: ignoring non-numeric ID token: {part!r}",
-                  file=sys.stderr)
-    return sorted(set(ids))
+            names.append(part)
+    return sorted(set(ids)), names
 
 
 # ---------------------------------------------------------------------------
@@ -1146,8 +1150,12 @@ def main() -> None:
     )
     parser.add_argument(
         "--ids",
-        metavar="ID1,ID2,...",
-        help="Check only these comma-separated numeric taxon IDs (skips file parsing)",
+        metavar="ID_OR_NAME,...",
+        help=(
+            "Check only these comma-separated taxon IDs or scientific names "
+            "(skips file parsing). Scientific names are resolved to NCBITaxon IDs "
+            "via the NCBI API before the report is run."
+        ),
     )
 
     # -l is mutually exclusive with --update, --update-auto, -i, and --sync-names
@@ -1284,8 +1292,28 @@ def main() -> None:
     input_path = None
 
     if args.ids:
-        taxon_ids = parse_explicit_ids(args.ids)
-        print(f"Checking {len(taxon_ids)} explicitly specified IDs ...",
+        numeric_ids, name_tokens = parse_explicit_ids(args.ids)
+        if name_tokens:
+            print(
+                f"Resolving {len(name_tokens)} scientific name(s) to NCBITaxon IDs ...",
+                file=sys.stderr,
+            )
+            name_results = lookup_names_via_ncbi(
+                name_tokens, api_key=args.api_key, batch_size=args.batch_size,
+            )
+            print(file=sys.stderr)
+            for name, tid in name_results.items():
+                if tid is not None:
+                    print(f"  {name!r}  →  NCBITaxon_{tid}", file=sys.stderr)
+                    numeric_ids.append(tid)
+                else:
+                    print(
+                        f"  Warning: could not resolve {name!r} to a NCBITaxon ID",
+                        file=sys.stderr,
+                    )
+            numeric_ids = sorted(set(numeric_ids))
+        taxon_ids = numeric_ids
+        print(f"Checking {len(taxon_ids)} explicitly specified ID(s) ...",
               file=sys.stderr)
     else:
         input_path = Path(args.input_file)
