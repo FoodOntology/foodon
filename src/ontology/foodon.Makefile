@@ -46,6 +46,10 @@ imports/ncbitaxon_import.owl: imports/ncbitaxon_ontofox.txt
 
 .PRECIOUS: imports/ncbitaxon_import.owl
 
+# food_materials.owl uses NCBITaxon terms via its templates, so ensure the
+# import is up to date before the component is (re)built.
+components/food_materials.owl: imports/ncbitaxon_import.owl
+
 
 # General
 mirror/general.owl:
