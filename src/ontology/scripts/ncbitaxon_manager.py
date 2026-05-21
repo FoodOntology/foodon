@@ -11,7 +11,11 @@ Supported input file formats (auto-detected by extension):
   .owl / .ofn   OWL ontology file — scans every line for 'NCBITaxon_<digits>'
   .txt          OntoFox input file — reads lines whose first token is a URL
                   containing 'NCBITaxon_<digits>' (comment lines skipped)
-  .tsv          ROBOT template — reads 'NCBITaxon:<digits>' from column 0
+                  Name comments on URI lines use the format: # "Scientific Name"
+  .tsv          ROBOT template — reads 'NCBITaxon:<digits>' from column 0.
+                  If a 'taxon' column is present, its scientific names are also
+                  checked against the OntoFox file; missing names are looked up
+                  via the NCBI API and added when --update/--update-auto is active.
 
 Usage:
     python ncbitaxon_manager.py [options] [input_file]
@@ -48,6 +52,12 @@ Examples:
 
     # Check for IDs present in ncbitaxon_ontofox.txt but absent from ncbitaxon_import.owl:
     python scripts/ncbitaxon_manager.py --check-missing
+
+    # Sync/fix # "Scientific Name" comments in an OntoFox file:
+    python scripts/ncbitaxon_manager.py --sync-names imports/ncbitaxon_ontofox.txt
+
+    # Combine replacement-check and name-sync in one pass:
+    python scripts/ncbitaxon_manager.py --update --sync-names imports/ncbitaxon_ontofox.txt
 """
 
 import argparse
@@ -78,6 +88,7 @@ DELAY_WITH_KEY = 0.12    # seconds between requests with API key
 MAX_RETRIES   = 3
 RETRY_BACKOFF = 2.0      # multiply delay by this factor on each retry
 
+
 # Display order for classification ranks (broad → specific)
 _RANK_ORDER = ['domain', 'kingdom', 'phylum', 'class', 'order', 'family', 'genus', 'species']
 
@@ -86,9 +97,10 @@ _RANK_ORDER = ['domain', 'kingdom', 'phylum', 'class', 'order', 'family', 'genus
 # ID extraction — one parser per file format
 # ---------------------------------------------------------------------------
 
-_OWL_PATTERN = re.compile(r'NCBITaxon_(\d+)')
-_TSV_COL0    = re.compile(r'^NCBITaxon:(\d+)')
-_ONTOFOX_URL = re.compile(r'^https?://\S*NCBITaxon_(\d+)')
+_OWL_PATTERN  = re.compile(r'NCBITaxon_(\d+)')
+_TSV_COL0     = re.compile(r'^NCBITaxon:(\d+)')
+_ONTOFOX_URL  = re.compile(r'^https?://\S*NCBITaxon_(\d+)')
+_QUOTED_NAME  = re.compile(r'^"([^"]*)"(.*)')   # "name"[optional trailing notes]
 
 
 def extract_ids_from_owl(path: Path) -> list[int]:
@@ -590,7 +602,7 @@ def _update_ontofox(path: Path, approved: dict[int, tuple[int, str]]) -> int:
                     old_label = (' # ' + content[hash_pos + 3:]) if hash_pos != -1 else ''
                     new_lines.append(f'# REPLACED NCBITaxon_{old_id}{old_label}{eol}')
                     new_lines.append(
-                        f'{OBO_URI_BASE}{new_id} # {new_name}{eol}'
+                        f'{OBO_URI_BASE}{new_id} # "{new_name}"{eol}'
                     )
                     count += 1
                     continue
@@ -703,7 +715,7 @@ def insert_into_ontofox(ontofox_path: Path, missing_ids: list[int],
     for id_ in sorted(missing_ids):
         url  = f'{OBO_URI_BASE}{id_}'
         name = names.get(id_, '')
-        new_block.append(f'{url} # {name}\n' if name else f'{url}\n')
+        new_block.append(f'{url} # "{name}"\n' if name else f'{url}\n')
     new_block.append('\n')   # blank separator line
 
     if insert_at is not None:
@@ -719,6 +731,354 @@ def insert_into_ontofox(ontofox_path: Path, missing_ids: list[int],
 
     ontofox_path.write_text(''.join(lines), encoding='utf-8')
     return len(missing_ids)
+
+
+# ---------------------------------------------------------------------------
+# Name-comment sync
+# ---------------------------------------------------------------------------
+
+def sync_names_in_ontofox(path: Path, names: dict[int, str]) -> list[tuple[int, str, str]]:
+    """
+    Ensure every NCBITaxon URI line in an OntoFox file has a ``# "Current Scientific Name"``
+    comment with the name in double quotes.
+
+    Rules applied to each taxon URI line:
+    - Quoted name present and correct:       no change.
+    - Quoted name present but wrong:         replace quoted name, preserve any trailing text.
+    - Unquoted comment or no comment:        replace entire comment with quoted NCBI name.
+
+    Returns a list of ``(tax_id, old_comment_repr, new_comment_repr)`` for every changed
+    line.  The file is written only if at least one line changes.
+    """
+    lines = path.read_text(encoding='utf-8').splitlines(keepends=True)
+    new_lines: list[str] = []
+    changes: list[tuple[int, str, str]] = []
+
+    for line in lines:
+        content = line.strip()
+        # Preserve blank lines and comment-only lines unchanged
+        if not content or content.startswith('#'):
+            new_lines.append(line)
+            continue
+
+        m = _ONTOFOX_URL.match(content)
+        if not m:
+            new_lines.append(line)
+            continue
+
+        tax_id    = int(m.group(1))
+        ncbi_name = names.get(tax_id)
+        if ncbi_name is None:
+            # ID not returned by NCBI (possibly invalid); leave unchanged
+            new_lines.append(line)
+            continue
+
+        url_str   = m.group(0)                    # full URL text
+        after_url = content[m.end():].strip()      # everything after the URL
+
+        # Extract the comment text (strip the leading '# ')
+        comment = after_url[1:].lstrip() if after_url.startswith('#') else ''
+
+        # Determine whether the comment already starts with a quoted name
+        qm = _QUOTED_NAME.match(comment)
+        if qm:
+            existing_name = qm.group(1)
+            trailing      = qm.group(2).strip()
+            if existing_name == ncbi_name:
+                new_lines.append(line)
+                continue
+            # Quoted name is stale — update it, keep any trailing notes
+            old_repr = f'"{existing_name}"' + (f' {trailing}' if trailing else '')
+            new_repr = f'"{ncbi_name}"'     + (f' {trailing}' if trailing else '')
+        else:
+            # Unquoted comment (or no comment): replace entirely with quoted NCBI name
+            old_repr = comment    # empty string when there was no comment
+            new_repr = f'"{ncbi_name}"'
+
+        eol = '\n' if line.endswith('\n') else ''
+        new_lines.append(f'{url_str} # {new_repr}{eol}')
+        changes.append((tax_id, old_repr, new_repr))
+
+    if changes:
+        path.write_text(''.join(new_lines), encoding='utf-8')
+
+    return changes
+
+
+# ---------------------------------------------------------------------------
+# Taxon-column check (TSV 'taxon' heading → NCBI name lookup → ontofox update)
+# ---------------------------------------------------------------------------
+
+def extract_taxon_column_names(path: Path) -> list[str]:
+    """
+    Read a ROBOT template TSV and return sorted unique non-empty values from the
+    column whose row-0 header is 'taxon' (case-insensitive).
+    Row 1 (ROBOT directives) is skipped.  Returns [] if no 'taxon' column exists.
+    """
+    taxon_col: int | None = None
+    names: set[str] = set()
+
+    with path.open('r', encoding='utf-8') as fh:
+        for row_idx, line in enumerate(fh):
+            cols = line.rstrip('\n\r').split('\t')
+            if row_idx == 0:
+                for j, header in enumerate(cols):
+                    if header.strip().lower() == 'taxon':
+                        taxon_col = j
+                        break
+                if taxon_col is None:
+                    return []
+            elif row_idx == 1:
+                continue  # ROBOT directive row
+            else:
+                if taxon_col < len(cols):
+                    val = cols[taxon_col].strip()
+                    # Strip OWL single-quote wrapping ('Name') if present
+                    if val.startswith("'") and val.endswith("'") and len(val) > 2:
+                        val = val[1:-1].strip()
+                    # Split compound entries (e.g. "Taxon A|Taxon B" or "A;B")
+                    for part in re.split(r'[;|]', val):
+                        part = part.strip()
+                        # Skip FoodOn plant-product names (not NCBITaxon entries)
+                        if part and not part.lower().endswith(' plant'):
+                            names.add(part)
+
+    return sorted(names)
+
+
+def build_ontofox_name_index(path: Path) -> dict[str, int]:
+    """
+    Build a ``{scientific_name: tax_id}`` index from an OntoFox file.
+    Only lines with a ``# "quoted name"`` comment are indexed.
+    """
+    index: dict[str, int] = {}
+    with path.open('r', encoding='utf-8') as fh:
+        for line in fh:
+            content = line.strip()
+            if not content or content.startswith('#'):
+                continue
+            m = _ONTOFOX_URL.match(content)
+            if not m:
+                continue
+            tax_id    = int(m.group(1))
+            after_url = content[m.end():].strip()
+            comment   = after_url[1:].lstrip() if after_url.startswith('#') else ''
+            qm        = _QUOTED_NAME.match(comment)
+            if qm:
+                index[qm.group(1)] = tax_id
+    return index
+
+
+def _score_qualifier(qualifier: str, taxonomy: dict) -> int:
+    """
+    Count how many words from *qualifier* appear in the taxonomy's group name
+    or classification rank names.  Used to pick the best match when NCBI
+    returns multiple taxa with the same scientific name (homonyms).
+
+    Example: qualifier ``"basidiomycete fungi"`` scores higher for a Fungi/
+    Basidiomycota entry than for a Streptophyta entry.
+    """
+    qual_words = set(re.findall(r'[a-z]+', qualifier.lower()))
+    parts: list[str] = [taxonomy.get('group_name', '') or '']
+    for rank_data in (taxonomy.get('classification') or {}).values():
+        if isinstance(rank_data, dict):
+            parts.append(rank_data.get('name', '') or '')
+    all_text = ' '.join(parts).lower()
+    return sum(1 for w in qual_words if w in all_text)
+
+
+def lookup_names_via_ncbi(
+    names: list[str], api_key: str | None,
+    batch_size: int = 100,
+) -> dict[str, int | None]:
+    """
+    Query the NCBI datasets API for NCBITaxon IDs matching a list of scientific
+    names, using the same ``/taxonomy/taxon/`` endpoint as the ID lookup (it
+    accepts comma-separated scientific names as well as IDs).
+
+    Names are sent in batches; each name is URL-encoded individually and joined
+    with commas.  The ``query`` field in each response report maps results back
+    to the original input name.
+
+    NCBI disambiguation qualifiers of the form ``<qualifier>`` (e.g.
+    ``Lactarius <basidiomycete fungi>``) are stripped before querying — NCBI
+    uses these only in its web UI to distinguish homonymous names.  The result
+    is mapped back to the original unstripped name.
+
+    Returns ``{name: tax_id}`` for hits and ``{name: None}`` for names not
+    found in NCBI or that caused an error.
+    """
+    results: dict[str, int | None] = {name: None for name in names}
+    delay = DELAY_WITH_KEY if api_key else DELAY_NO_KEY
+
+    # Strip "<qualifier>" disambiguation suffixes (NCBI web-UI only) and build
+    # a map from the stripped search name back to original name(s).
+    search_to_originals: dict[str, list[str]] = {}
+    for name in names:
+        search_name = re.sub(r'\s*<[^>]*>', '', name).strip()
+        search_to_originals.setdefault(search_name, []).append(name)
+
+    search_names = list(search_to_originals.keys())
+    total     = len(search_names)
+    n_batches = (total + batch_size - 1) // batch_size
+
+    for batch_num, start in enumerate(range(0, total, batch_size), 1):
+        batch = search_names[start:start + batch_size]
+        pct   = 100 * batch_num // n_batches
+        print(
+            f"\r  NCBI name lookup [{pct:3d}%] batch {batch_num}/{n_batches} ...",
+            end='', flush=True, file=sys.stderr,
+        )
+        # Encode each name individually (spaces → %20), keep commas as separators
+        name_str = ','.join(urllib.parse.quote(n, safe='') for n in batch)
+        url = f"{NCBI_API_BASE}/{name_str}/dataset_report?returned_content=METADATA"
+        if api_key:
+            url += f"&api_key={urllib.parse.quote(api_key)}"
+        try:
+            req = urllib.request.Request(url, headers={'accept': 'application/json'})
+            with urllib.request.urlopen(req, timeout=30) as resp:
+                data = json.loads(resp.read())
+
+            # Collect all (tax_id, taxonomy) candidates per query name first,
+            # so homonyms can be disambiguated together.
+            query_candidates: dict[str, list[tuple[int, dict]]] = {}
+            for report in data.get('reports', []):
+                taxonomy = report.get('taxonomy') or {}
+                tax_id   = taxonomy.get('tax_id')
+                if tax_id is None:
+                    continue
+                for query_name in report.get('query', []):
+                    query_candidates.setdefault(query_name, []).append(
+                        (tax_id, taxonomy)
+                    )
+
+            # Assign results to original names, using qualifier scoring when
+            # NCBI returned multiple taxa for the same name (homonyms).
+            for search_name, candidates in query_candidates.items():
+                for orig_name in search_to_originals.get(search_name, []):
+                    qual_m    = re.search(r'<([^>]*)>', orig_name)
+                    qualifier = qual_m.group(1) if qual_m else None
+
+                    if len(candidates) == 1 or qualifier is None:
+                        results[orig_name] = candidates[0][0]
+                    else:
+                        # Score each candidate against the qualifier text and
+                        # pick the best match.
+                        best = max(
+                            candidates,
+                            key=lambda c: _score_qualifier(qualifier, c[1]),
+                        )
+                        results[orig_name] = best[0]
+        except Exception as exc:
+            print(
+                f"\n  NCBI name lookup error (batch {batch_num}): {exc}",
+                file=sys.stderr,
+            )
+        if batch_num < n_batches:
+            time.sleep(delay)
+
+    print(file=sys.stderr)  # newline after progress line
+    return results
+
+
+def check_taxon_column(
+    tsv_path:     Path,
+    ontofox_path: Path,
+    update_mode:  str | None,
+    api_key:      str | None,
+) -> None:
+    """
+    If *tsv_path* has a 'taxon' column, verify that every unique scientific name in
+    that column appears as a ``# "name"`` comment in *ontofox_path*.
+
+    Missing names are reported.  When *update_mode* is active they are looked up in
+    NCBI and, if found, added to *ontofox_path*:
+    - ``'interactive'``: prompt [y/n] per entry.
+    - ``'auto'``:        add all found entries without prompting.
+    """
+    taxon_names = extract_taxon_column_names(tsv_path)
+    if not taxon_names:
+        return
+
+    print(
+        f"\nChecking 'taxon' column: {len(taxon_names)} unique name(s) "
+        f"against {ontofox_path} ...",
+        file=sys.stderr,
+    )
+
+    if not ontofox_path.exists():
+        print(
+            f"  Warning: {ontofox_path} not found; skipping taxon-column check.",
+            file=sys.stderr,
+        )
+        return
+
+    name_index = build_ontofox_name_index(ontofox_path)
+    missing    = [n for n in taxon_names if n not in name_index]
+
+    if not missing:
+        print(
+            f"  All {len(taxon_names)} taxon name(s) are present in {ontofox_path}.",
+            file=sys.stderr,
+        )
+        return
+
+    print(f"  {len(missing)} taxon name(s) not found in {ontofox_path}:")
+    for name in missing:
+        print(f"    '{name}'")
+
+    if update_mode is None:
+        print(
+            "\n  (Use --update or --update-auto to look up and add missing entries via NCBI.)",
+            file=sys.stderr,
+        )
+        return
+
+    # --- NCBI name lookup for missing entries ---
+    print(
+        f"\n  Looking up {len(missing)} name(s) via NCBI ...",
+        file=sys.stderr,
+    )
+    ncbi_results = lookup_names_via_ncbi(missing, api_key)
+
+    found   = {name: tid for name, tid in ncbi_results.items() if tid is not None}
+    unfound = [name for name, tid in ncbi_results.items() if tid is None]
+
+    if unfound:
+        print(f"\n  Warning: {len(unfound)} name(s) not found in NCBI NCBITaxon:")
+        for name in unfound:
+            print(f"    '{name}'")
+
+    if not found:
+        return
+
+    # --- Prompt or auto-approve ---
+    if update_mode == 'interactive':
+        approved: dict[str, int] = {}
+        for name, tid in sorted(found.items()):
+            answer = _read_tty(
+                f"\n  Add NCBITaxon_{tid}  # \"{name}\"  to {ontofox_path}? [y/n] (y): "
+            )
+            if answer != 'n':
+                approved[name] = tid
+    else:  # auto
+        approved = dict(found)
+        print(
+            f"  Auto-adding all {len(approved)} NCBI-found entry/entries ...",
+            file=sys.stderr,
+        )
+
+    if not approved:
+        print("  No entries added.", file=sys.stderr)
+        return
+
+    names_map = {tid: name for name, tid in approved.items()}
+    n_added   = insert_into_ontofox(
+        ontofox_path, sorted(names_map.keys()), names_map, tsv_path.name
+    )
+    print(f"\n  Added {n_added} entry/entries to {ontofox_path}:")
+    for name, tid in sorted(approved.items()):
+        print(f"    NCBITaxon_{tid}  # \"{name}\"")
 
 
 # ---------------------------------------------------------------------------
@@ -790,14 +1150,14 @@ def main() -> None:
         help="Check only these comma-separated numeric taxon IDs (skips file parsing)",
     )
 
-    # -l is mutually exclusive with --update, --update-auto, and -i
+    # -l is mutually exclusive with --update, --update-auto, -i, and --sync-names
     parser.add_argument(
         "-l", "--lookup",
         metavar="IDs",
         help=(
             "Comma-delimited numeric NCBITaxon IDs to look up. "
             "Prints a markdown comparison table and exits. "
-            "Cannot be combined with --update, --update-auto, or -i."
+            "Cannot be combined with --update, --update-auto, -i, or --sync-names."
         ),
     )
 
@@ -816,6 +1176,18 @@ def main() -> None:
         action="store_true",
         default=False,
         help="Update the input file, applying all replacements without prompting.",
+    )
+    parser.add_argument(
+        "--sync-names",
+        action="store_true",
+        default=False,
+        help=(
+            "For OntoFox (.txt) input files: ensure every taxon URI line carries a "
+            '# "Current Scientific Name" comment with the name in double quotes. '
+            "Corrects stale quoted names and adds missing ones. "
+            "Any text after the quoted name is preserved. "
+            "Can be combined with --update."
+        ),
     )
     parser.add_argument(
         "--api-key",
@@ -873,6 +1245,7 @@ def main() -> None:
                 ('--update',      args.update),
                 ('--update-auto', args.update_auto),
                 ('-i/--import',   args.add_to_ontofox),
+                ('--sync-names',  args.sync_names),
             ] if flag
         ]
         if blocked:
@@ -901,6 +1274,10 @@ def main() -> None:
         print("Warning: --update/--update-auto has no effect when --ids is used (no file to update).",
               file=sys.stderr)
         update_mode = None
+
+    if args.sync_names and args.ids:
+        print("Warning: --sync-names has no effect when --ids is used (no file to update).",
+              file=sys.stderr)
 
     # Collect IDs
     fmt = None
@@ -1009,6 +1386,44 @@ def main() -> None:
                     f"Added {n_added} term(s) to {ONTOFOX_PATH}.",
                     file=sys.stderr,
                 )
+
+    # --- Sync # "Scientific Name" comments in OntoFox file ---
+    if args.sync_names and input_path is not None and not args.ids:
+        if fmt != 'OntoFox':
+            print(
+                f"Warning: --sync-names only applies to OntoFox (.txt) files "
+                f"(input is {fmt!r}); skipping.",
+                file=sys.stderr,
+            )
+        else:
+            print(
+                f"\nFetching current scientific names for {len(taxon_ids)} ID(s) "
+                f"to sync name comments ...",
+                file=sys.stderr,
+            )
+            name_map = fetch_names(
+                taxon_ids, api_key=args.api_key, batch_size=args.batch_size
+            )
+            name_changes = sync_names_in_ontofox(input_path, name_map)
+            if name_changes:
+                c_label = max(len(f'NCBITaxon_{t}') for t, _, _ in name_changes)
+                print(
+                    f"\nSynced name comments in {input_path}: "
+                    f"{len(name_changes)} line(s) updated."
+                )
+                for tax_id, old_repr, new_repr in name_changes:
+                    label    = f'NCBITaxon_{tax_id}'
+                    old_disp = repr(old_repr) if old_repr else '(none)'
+                    print(f"  {label:<{c_label}}  {old_disp}  →  {new_repr!r}")
+            else:
+                print(
+                    f"All name comments in {input_path} are current.",
+                    file=sys.stderr,
+                )
+
+    # --- Taxon-column check (TSV 'taxon' heading) ---
+    if fmt == 'TSV' and input_path is not None and not args.ids:
+        check_taxon_column(input_path, ONTOFOX_PATH, update_mode, args.api_key)
 
 
 if __name__ == "__main__":
