@@ -103,7 +103,7 @@ import_group:
     - id: general ##
       use_custom_import_module: TRUE
 
-    # To run thi specifically: sh run.sh make imports/ncbitaxon_import.owl
+    # To run this specifically: sh run.sh make imports/ncbitaxon_import.owl
     - id: ncbitaxon
       use_custom_import_module: TRUE
 
