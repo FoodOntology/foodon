@@ -16,8 +16,8 @@ Prefix(oboInOwl:=<http://www.geneontology.org/formats/oboInOwl#>)
 
 
 Ontology(<http://purl.obolibrary.org/obo/foodon/components/food_materials.owl>
-<http://purl.obolibrary.org/obo/foodon/releases/2026-04-28/components/food_materials.owl>
-Annotation(owl:versionInfo "2026-04-28")
+<http://purl.obolibrary.org/obo/foodon/releases/2026-05-21/components/food_materials.owl>
+Annotation(owl:versionInfo "2026-05-21")
 
 Declaration(Class(obo:BTO_0000262))
 Declaration(Class(obo:BTO_0001217))
@@ -3279,7 +3279,6 @@ Declaration(Class(obo:NCBITaxon_154811))
 Declaration(Class(obo:NCBITaxon_154813))
 Declaration(Class(obo:NCBITaxon_1548725))
 Declaration(Class(obo:NCBITaxon_154953))
-Declaration(Class(obo:NCBITaxon_3369737))
 Declaration(Class(obo:NCBITaxon_156228))
 Declaration(Class(obo:NCBITaxon_157585))
 Declaration(Class(obo:NCBITaxon_157652))
@@ -3727,7 +3726,7 @@ Declaration(Class(obo:NCBITaxon_2494522))
 Declaration(Class(obo:NCBITaxon_24962))
 Declaration(Class(obo:NCBITaxon_251531))
 Declaration(Class(obo:NCBITaxon_251532))
-Declaration(Class(obo:NCBITaxon_102210))
+Declaration(Class(obo:NCBITaxon_252558))
 Declaration(Class(obo:NCBITaxon_252599))
 Declaration(Class(obo:NCBITaxon_252929))
 Declaration(Class(obo:NCBITaxon_252938))
@@ -4093,6 +4092,8 @@ Declaration(Class(obo:NCBITaxon_3363545))
 Declaration(Class(obo:NCBITaxon_3363546))
 Declaration(Class(obo:NCBITaxon_3363547))
 Declaration(Class(obo:NCBITaxon_33636))
+Declaration(Class(obo:NCBITaxon_3369737))
+Declaration(Class(obo:NCBITaxon_3370370))
 Declaration(Class(obo:NCBITaxon_337539))
 Declaration(Class(obo:NCBITaxon_337629))
 Declaration(Class(obo:NCBITaxon_337641))
@@ -4277,7 +4278,6 @@ Declaration(Class(obo:NCBITaxon_38149))
 Declaration(Class(obo:NCBITaxon_381606))
 Declaration(Class(obo:NCBITaxon_381635))
 Declaration(Class(obo:NCBITaxon_3818))
-Declaration(Class(obo:NCBITaxon_91763))
 Declaration(Class(obo:NCBITaxon_3821))
 Declaration(Class(obo:NCBITaxon_3823))
 Declaration(Class(obo:NCBITaxon_382523))
@@ -4735,7 +4735,6 @@ Declaration(Class(obo:NCBITaxon_549391))
 Declaration(Class(obo:NCBITaxon_549456))
 Declaration(Class(obo:NCBITaxon_549457))
 Declaration(Class(obo:NCBITaxon_54989))
-Declaration(Class(obo:NCBITaxon_3370370))
 Declaration(Class(obo:NCBITaxon_55125))
 Declaration(Class(obo:NCBITaxon_55283))
 Declaration(Class(obo:NCBITaxon_55290))
@@ -5339,6 +5338,7 @@ Declaration(Class(obo:NCBITaxon_904227))
 Declaration(Class(obo:NCBITaxon_91214))
 Declaration(Class(obo:NCBITaxon_91743))
 Declaration(Class(obo:NCBITaxon_91752))
+Declaration(Class(obo:NCBITaxon_91763))
 Declaration(Class(obo:NCBITaxon_92050))
 Declaration(Class(obo:NCBITaxon_925390))
 Declaration(Class(obo:NCBITaxon_9267))
@@ -20064,12 +20064,12 @@ AnnotationAssertion(rdfs:label obo:FOODON_00005212 "safflower seed (dried)"@en)
 EquivalentClasses(obo:FOODON_00005212 ObjectIntersectionOf(obo:FOODON_00003743 ObjectSomeValuesFrom(obo:RO_0000086 obo:FOODON_00004723)))
 SubClassOf(obo:FOODON_00005212 obo:FOODON_00003743)
 
-# Class: obo:FOODON_00005213 (pumpkin seed (dried))
+# Class: obo:FOODON_00005213 (A frozen new jersey blueberry.)
 
 AnnotationAssertion(obo:IAO_0000115 obo:FOODON_00005213 "A whole dried pumpkin seed."@en)
 AnnotationAssertion(dcterms:contributor obo:FOODON_00005213 <https://orcid.org/0000-0001-5275-8866>)
 AnnotationAssertion(dcterms:date obo:FOODON_00005213 "2025-01-15T15:10:50Z"^^xsd:dateTime)
-AnnotationAssertion(rdfs:label obo:FOODON_00005213 "pumpkin seed (dried)"@en)
+AnnotationAssertion(rdfs:label obo:FOODON_00005213 "A frozen new jersey blueberry."@en)
 EquivalentClasses(obo:FOODON_00005213 ObjectIntersectionOf(obo:FOODON_00004886 ObjectSomeValuesFrom(obo:RO_0000086 obo:FOODON_00004723)))
 SubClassOf(obo:FOODON_00005213 obo:FOODON_00004886)
 
@@ -29277,7 +29277,7 @@ SubClassOf(obo:FOODON_03000160 obo:FOODON_03000159)
 
 # Class: obo:FOODON_03000161 (tinda)
 
-AnnotationAssertion(obo:IAO_0000115 obo:FOODON_03000161 "An immature fruit of a tinda plant (Praecitrullus fistulosus)."@en)
+AnnotationAssertion(obo:IAO_0000115 obo:FOODON_03000161 "An immature fruit of a tinda plant (Benincasa fistulosa)."@en)
 AnnotationAssertion(obo:IAO_0000119 obo:FOODON_03000161 "https://en.wikipedia.org/wiki/Tinda")
 AnnotationAssertion(dcterms:contributor obo:FOODON_03000161 <https://orcid.org/0000-0001-5275-8866>)
 AnnotationAssertion(dcterms:date obo:FOODON_03000161 "2022-04-11T11:11:23Z"^^xsd:dateTime)
@@ -29285,7 +29285,7 @@ AnnotationAssertion(oboInOwl:hasExactSynonym obo:FOODON_03000161 "Indian squash"
 AnnotationAssertion(oboInOwl:hasExactSynonym obo:FOODON_03000161 "apple gourd"@en)
 AnnotationAssertion(oboInOwl:hasExactSynonym obo:FOODON_03000161 "round melon"@en)
 AnnotationAssertion(rdfs:label obo:FOODON_03000161 "tinda"@en)
-EquivalentClasses(obo:FOODON_03000161 ObjectIntersectionOf(obo:PO_0009001 ObjectSomeValuesFrom(obo:RO_0002162 obo:NCBITaxon_102210)))
+EquivalentClasses(obo:FOODON_03000161 ObjectIntersectionOf(obo:PO_0009001 ObjectSomeValuesFrom(obo:RO_0002162 obo:NCBITaxon_252558)))
 SubClassOf(obo:FOODON_03000161 obo:PO_0009001)
 
 # Class: obo:FOODON_03000162 (tinda (raw))
@@ -34196,13 +34196,6 @@ AnnotationAssertion(rdfs:seeAlso obo:NCBITaxon_1548725 <https://en.wikipedia.org
 AnnotationAssertion(dcterms:contributor obo:NCBITaxon_154953 <https://orcid.org/0000-0001-5275-8866>)
 AnnotationAssertion(Annotation(obo:IAO_0000412 "FDA SFL Acceptable Market Name") oboInOwl:hasBroadSynonym obo:NCBITaxon_154953 "kingklip"@en)
 AnnotationAssertion(rdfs:seeAlso obo:NCBITaxon_154953 <https://en.wikipedia.org/wiki/Genypterus>)
-
-# Class: obo:NCBITaxon_3369737 (obo:NCBITaxon_3369737)
-
-AnnotationAssertion(dcterms:contributor obo:NCBITaxon_3369737 <https://orcid.org/0000-0001-5275-8866>)
-AnnotationAssertion(oboInOwl:hasDbXref obo:NCBITaxon_3369737 <itis:898765>)
-AnnotationAssertion(oboInOwl:hasExactSynonym obo:NCBITaxon_3369737 "Sichuan takin"@en)
-AnnotationAssertion(rdfs:seeAlso obo:NCBITaxon_3369737 "https://en.wikipedia.org/wiki/Sichuan_takin")
 
 # Class: obo:NCBITaxon_156228 (obo:NCBITaxon_156228)
 
@@ -39499,6 +39492,20 @@ AnnotationAssertion(oboInOwl:hasDbXref obo:NCBITaxon_3363547 <itis:160854>)
 AnnotationAssertion(Annotation(obo:IAO_0000412 "FDA SFL Common Name") oboInOwl:hasExactSynonym obo:NCBITaxon_3363547 "starry skate"@en)
 AnnotationAssertion(rdfs:seeAlso obo:NCBITaxon_3363547 <https://en.wikipedia.org/wiki/Raja_stellulata>)
 
+# Class: obo:NCBITaxon_3369737 (obo:NCBITaxon_3369737)
+
+AnnotationAssertion(dcterms:contributor obo:NCBITaxon_3369737 <https://orcid.org/0000-0001-5275-8866>)
+AnnotationAssertion(oboInOwl:hasDbXref obo:NCBITaxon_3369737 <itis:898765>)
+AnnotationAssertion(oboInOwl:hasExactSynonym obo:NCBITaxon_3369737 "Sichuan takin"@en)
+AnnotationAssertion(rdfs:seeAlso obo:NCBITaxon_3369737 "https://en.wikipedia.org/wiki/Sichuan_takin")
+
+# Class: obo:NCBITaxon_3370370 (obo:NCBITaxon_3370370)
+
+AnnotationAssertion(dcterms:contributor obo:NCBITaxon_3370370 <https://orcid.org/0000-0001-5275-8866>)
+AnnotationAssertion(oboInOwl:hasDbXref obo:NCBITaxon_3370370 <itis:180556>)
+AnnotationAssertion(oboInOwl:hasExactSynonym obo:NCBITaxon_3370370 "long-tailed weasel"@en)
+AnnotationAssertion(rdfs:seeAlso obo:NCBITaxon_3370370 "https://en.wikipedia.org/wiki/Long-tailed_weasel")
+
 # Class: obo:NCBITaxon_337539 (obo:NCBITaxon_337539)
 
 AnnotationAssertion(dcterms:contributor obo:NCBITaxon_337539 <https://orcid.org/0000-0001-5275-8866>)
@@ -40328,13 +40335,6 @@ AnnotationAssertion(Annotation(obo:IAO_0000412 "FDA SFL Acceptable Market Name")
 AnnotationAssertion(Annotation(obo:IAO_0000412 "FDA SFL Common Name") oboInOwl:hasExactSynonym obo:NCBITaxon_381635 "mrigal"@en)
 AnnotationAssertion(rdfs:seeAlso obo:NCBITaxon_381635 <https://www.fishbase.ca/summary/4494>)
 AnnotationAssertion(rdfs:seeAlso obo:NCBITaxon_381635 <https://www.gbif.org/species/5206441>)
-
-# Class: obo:NCBITaxon_91763 (obo:NCBITaxon_91763)
-
-AnnotationAssertion(dcterms:contributor obo:NCBITaxon_91763 <https://orcid.org/0000-0001-5275-8866>)
-AnnotationAssertion(oboInOwl:hasDbXref obo:NCBITaxon_91763 <itis:1145221>)
-AnnotationAssertion(oboInOwl:hasExactSynonym obo:NCBITaxon_91763 "Saffron toucanet"@en)
-AnnotationAssertion(rdfs:seeAlso obo:NCBITaxon_91763 "https://en.wikipedia.org/wiki/Saffron_toucanet")
 
 # Class: obo:NCBITaxon_382523 (obo:NCBITaxon_382523)
 
@@ -42737,13 +42737,6 @@ AnnotationAssertion(Annotation(obo:IAO_0000412 "FDA SFL Acceptable Market Name")
 AnnotationAssertion(oboInOwl:hasDbXref obo:NCBITaxon_54989 <itis:69549>)
 AnnotationAssertion(Annotation(obo:IAO_0000412 "FDA SFL Common Name") oboInOwl:hasExactSynonym obo:NCBITaxon_54989 "rough keyhole limpet"@en)
 AnnotationAssertion(rdfs:seeAlso obo:NCBITaxon_54989 <https://en.wikipedia.org/wiki/Diodora_aspera>)
-
-# Class: obo:NCBITaxon_3370370 (obo:NCBITaxon_3370370)
-
-AnnotationAssertion(dcterms:contributor obo:NCBITaxon_3370370 <https://orcid.org/0000-0001-5275-8866>)
-AnnotationAssertion(oboInOwl:hasDbXref obo:NCBITaxon_3370370 <itis:180556>)
-AnnotationAssertion(oboInOwl:hasExactSynonym obo:NCBITaxon_3370370 "long-tailed weasel"@en)
-AnnotationAssertion(rdfs:seeAlso obo:NCBITaxon_3370370 "https://en.wikipedia.org/wiki/Long-tailed_weasel")
 
 # Class: obo:NCBITaxon_55125 (obo:NCBITaxon_55125)
 
@@ -46813,6 +46806,13 @@ AnnotationAssertion(Annotation(obo:IAO_0000412 "FDA SFL Acceptable Market Name")
 AnnotationAssertion(oboInOwl:hasDbXref obo:NCBITaxon_91743 <itis:643426>)
 AnnotationAssertion(Annotation(obo:IAO_0000412 "FDA SFL Common Name") oboInOwl:hasExactSynonym obo:NCBITaxon_91743 "chocolate hind"@en)
 AnnotationAssertion(rdfs:seeAlso obo:NCBITaxon_91743 <https://en.wikipedia.org/wiki/Cephalopholis_boenak>)
+
+# Class: obo:NCBITaxon_91763 (obo:NCBITaxon_91763)
+
+AnnotationAssertion(dcterms:contributor obo:NCBITaxon_91763 <https://orcid.org/0000-0001-5275-8866>)
+AnnotationAssertion(oboInOwl:hasDbXref obo:NCBITaxon_91763 <itis:1145221>)
+AnnotationAssertion(oboInOwl:hasExactSynonym obo:NCBITaxon_91763 "Saffron toucanet"@en)
+AnnotationAssertion(rdfs:seeAlso obo:NCBITaxon_91763 "https://en.wikipedia.org/wiki/Saffron_toucanet")
 
 # Class: obo:NCBITaxon_92050 (obo:NCBITaxon_92050)
 
