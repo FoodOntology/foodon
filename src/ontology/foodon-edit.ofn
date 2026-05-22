@@ -18538,7 +18538,7 @@ SubClassOf(obo:FOODON_00004723 obo:PATO_0001241)
 
 # Class: obo:FOODON_00004724 (dried raw)
 
-AnnotationAssertion(obo:IAO_0000115 obo:FOODON_00004724 "A dried characteristic which is characteristic of food material that was raw when subjected to a drying process."@en)
+AnnotationAssertion(obo:IAO_0000115 obo:FOODON_00004724 "A dried characteristic of food material which was raw when subjected to a drying process."@en)
 AnnotationAssertion(dcterms:contributor obo:FOODON_00004724 <https://orcid.org/0000-0002-8844-9165>)
 AnnotationAssertion(dcterms:date obo:FOODON_00004724 "2024-04-19T22:08:48Z"^^xsd:dateTime)
 AnnotationAssertion(rdfs:label obo:FOODON_00004724 "dried raw"@en)
@@ -19243,6 +19243,7 @@ SubClassOf(obo:FOODON_00005722 obo:COB_0000035)
 
 # Class: obo:FOODON_00005723 (food distribution)
 
+AnnotationAssertion(obo:IAO_0000115 obo:FOODON_00005723 "A planned process in which food material is transferred from one food production or processing entity to another food processing, retail or group (non-retail) consumption entity."@en)
 AnnotationAssertion(dcterms:contributor obo:FOODON_00005723 <https://orcid.org/0000-0002-8844-9165>)
 AnnotationAssertion(dcterms:date obo:FOODON_00005723 "2025-11-13T08:07:27Z"^^xsd:dateTime)
 AnnotationAssertion(rdfs:label obo:FOODON_00005723 "food distribution"@en)
