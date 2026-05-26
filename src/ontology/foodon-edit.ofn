@@ -10312,7 +10312,7 @@ AnnotationAssertion(rdfs:label oboInOwl:hasSynonym "has synonym"@en)
 #   Object Properties
 ############################
 
-# Object Property: obo:FOODON_00001301 (has food material analog)
+# Object Property: obo:FOODON_00001301 (has food substance analog)
 
 SymmetricObjectProperty(obo:FOODON_00001301)
 
@@ -20226,22 +20226,6 @@ SubClassOf(obo:FOODON_03000301 obo:FOODON_02020752)
 # Class: obo:FOODON_03000385 (chicken breast (bone-in))
 
 AnnotationAssertion(dcterms:contributor obo:FOODON_03000385 <https://orcid.org/0000-0002-8844-9165>)
-
-# Class: obo:FOODON_03000387 (obsolete: beef shoulder chop)
-
-SubClassOf(obo:FOODON_03000387 obo:FOODON_02020979)
-
-# Class: obo:FOODON_03000389 (obsolete: beef sirloin chop)
-
-SubClassOf(obo:FOODON_03000389 obo:FOODON_02020979)
-
-# Class: obo:FOODON_03000411 (obsolete: turkey meat (ground or minced, boneless))
-
-SubClassOf(obo:FOODON_03000411 obo:FOODON_02020570)
-
-# Class: obo:FOODON_03000413 (pork meat (ground or minced, boneless))
-
-SubClassOf(obo:FOODON_03000413 obo:FOODON_02021717)
 
 # Class: obo:FOODON_03301007 (chocolate candy)
 
@@ -89924,7 +89908,7 @@ AnnotationAssertion(oboInOwl:hasNarrowSynonym obo:NCBITaxon_245700 "Allocyttus v
 
 AnnotationAssertion(oboInOwl:hasNarrowSynonym obo:NCBITaxon_245824 "Valerianella eriocarpa Desv.")
 
-# Class: obo:NCBITaxon_246365 (Dacryodes edulis)
+# Class: obo:NCBITaxon_246365 (Pachylobus edulis)
 
 AnnotationAssertion(oboInOwl:hasNarrowSynonym obo:NCBITaxon_246365 "Dacryodes edulis (G. Don) H. J. Lam")
 AnnotationAssertion(oboInOwl:hasNarrowSynonym obo:NCBITaxon_246365 "Dacryodes edulis (G. Don) H.J. Lam")
