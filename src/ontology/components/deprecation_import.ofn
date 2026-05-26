@@ -759,14 +759,12 @@ AnnotationAssertion(owl:deprecated obo:FOODON_00003316 "true"^^xsd:boolean)
 AnnotationAssertion(obo:IAO_0100001 obo:FOODON_03000387 obo:FOODON_02000073)
 AnnotationAssertion(rdfs:label obo:FOODON_03000387 "obsolete: beef shoulder chop"@en)
 AnnotationAssertion(owl:deprecated obo:FOODON_03000387 "true"^^xsd:boolean)
-SubClassOf(obo:FOODON_03000387 obo:FOODON_02020979)
 
 # Class: obo:FOODON_03000389 (obsolete: beef sirloin chop)
 
 AnnotationAssertion(obo:IAO_0100001 obo:FOODON_03000389 obo:FOODON_02000467)
 AnnotationAssertion(rdfs:label obo:FOODON_03000389 "obsolete: beef sirloin chop"@en)
 AnnotationAssertion(owl:deprecated obo:FOODON_03000389 "true"@en)
-SubClassOf(obo:FOODON_03000389 obo:FOODON_02020979)
 
 # Class: obo:FOODON_03000411 (obsolete: turkey meat (ground or minced, boneless))
 
