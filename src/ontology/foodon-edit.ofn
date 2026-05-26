@@ -1415,6 +1415,8 @@ Declaration(Class(obo:FOODON_03000268))
 Declaration(Class(obo:FOODON_03000301))
 Declaration(Class(obo:FOODON_03000385))
 Declaration(Class(obo:FOODON_03000386))
+Declaration(Class(obo:FOODON_03000387))
+Declaration(Class(obo:FOODON_03000389))
 Declaration(Class(obo:FOODON_03000392))
 Declaration(Class(obo:FOODON_03000393))
 Declaration(Class(obo:FOODON_03000395))
@@ -1427,6 +1429,8 @@ Declaration(Class(obo:FOODON_03000404))
 Declaration(Class(obo:FOODON_03000405))
 Declaration(Class(obo:FOODON_03000407))
 Declaration(Class(obo:FOODON_03000409))
+Declaration(Class(obo:FOODON_03000411))
+Declaration(Class(obo:FOODON_03000413))
 Declaration(Class(obo:FOODON_03000414))
 Declaration(Class(obo:FOODON_03000415))
 Declaration(Class(obo:FOODON_03301007))
@@ -10308,7 +10312,7 @@ AnnotationAssertion(rdfs:label oboInOwl:hasSynonym "has synonym"@en)
 #   Object Properties
 ############################
 
-# Object Property: obo:FOODON_00001301 (has food material analog)
+# Object Property: obo:FOODON_00001301 (has food substance analog)
 
 SymmetricObjectProperty(obo:FOODON_00001301)
 
@@ -89904,7 +89908,7 @@ AnnotationAssertion(oboInOwl:hasNarrowSynonym obo:NCBITaxon_245700 "Allocyttus v
 
 AnnotationAssertion(oboInOwl:hasNarrowSynonym obo:NCBITaxon_245824 "Valerianella eriocarpa Desv.")
 
-# Class: obo:NCBITaxon_246365 (Dacryodes edulis)
+# Class: obo:NCBITaxon_246365 (Pachylobus edulis)
 
 AnnotationAssertion(oboInOwl:hasNarrowSynonym obo:NCBITaxon_246365 "Dacryodes edulis (G. Don) H. J. Lam")
 AnnotationAssertion(oboInOwl:hasNarrowSynonym obo:NCBITaxon_246365 "Dacryodes edulis (G. Don) H.J. Lam")
