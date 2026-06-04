@@ -764,21 +764,19 @@ AnnotationAssertion(owl:deprecated obo:FOODON_03000387 "true"^^xsd:boolean)
 
 AnnotationAssertion(obo:IAO_0100001 obo:FOODON_03000389 obo:FOODON_02000467)
 AnnotationAssertion(rdfs:label obo:FOODON_03000389 "obsolete: beef sirloin chop"@en)
-AnnotationAssertion(owl:deprecated obo:FOODON_03000389 "true"@en)
+AnnotationAssertion(owl:deprecated obo:FOODON_03000389 "true"^^xsd:boolean)
 
 # Class: obo:FOODON_03000411 (obsolete: turkey meat (ground or minced, boneless))
 
 AnnotationAssertion(obo:IAO_0100001 obo:FOODON_03000411 obo:FOODON_02020577)
 AnnotationAssertion(rdfs:label obo:FOODON_03000411 "obsolete: turkey meat (ground or minced, boneless)"@en)
 AnnotationAssertion(owl:deprecated obo:FOODON_03000411 "true"^^xsd:boolean)
-SubClassOf(obo:FOODON_03000411 obo:FOODON_02020570)
 
 # Class: obo:FOODON_03000413 (obsolete: pork meat (ground or minced, boneless))
 
 AnnotationAssertion(obo:IAO_0100001 obo:FOODON_03000413 obo:FOODON_02021718)
 AnnotationAssertion(rdfs:label obo:FOODON_03000413 "obsolete: pork meat (ground or minced, boneless)"@en)
 AnnotationAssertion(owl:deprecated obo:FOODON_03000413 "true"^^xsd:boolean)
-SubClassOf(obo:FOODON_03000413 obo:FOODON_02021717)
 
 # Class: obo:FOODON_03301074 (obsolete: hen egg product (not further specified))
 
