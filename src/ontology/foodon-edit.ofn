@@ -1168,6 +1168,46 @@ Declaration(Class(obo:FOODON_00005738))
 Declaration(Class(obo:FOODON_00005739))
 Declaration(Class(obo:FOODON_00005740))
 Declaration(Class(obo:FOODON_00005741))
+Declaration(Class(obo:FOODON_00005748))
+Declaration(Class(obo:FOODON_00005749))
+Declaration(Class(obo:FOODON_00005750))
+Declaration(Class(obo:FOODON_00005751))
+Declaration(Class(obo:FOODON_00005752))
+Declaration(Class(obo:FOODON_00005753))
+Declaration(Class(obo:FOODON_00005754))
+Declaration(Class(obo:FOODON_00005755))
+Declaration(Class(obo:FOODON_00005756))
+Declaration(Class(obo:FOODON_00005757))
+Declaration(Class(obo:FOODON_00005758))
+Declaration(Class(obo:FOODON_00005759))
+Declaration(Class(obo:FOODON_00005760))
+Declaration(Class(obo:FOODON_00005761))
+Declaration(Class(obo:FOODON_00005762))
+Declaration(Class(obo:FOODON_00005763))
+Declaration(Class(obo:FOODON_00005764))
+Declaration(Class(obo:FOODON_00005765))
+Declaration(Class(obo:FOODON_00005766))
+Declaration(Class(obo:FOODON_00005767))
+Declaration(Class(obo:FOODON_00005768))
+Declaration(Class(obo:FOODON_00005769))
+Declaration(Class(obo:FOODON_00005770))
+Declaration(Class(obo:FOODON_00005771))
+Declaration(Class(obo:FOODON_00005772))
+Declaration(Class(obo:FOODON_00005773))
+Declaration(Class(obo:FOODON_00005774))
+Declaration(Class(obo:FOODON_00005775))
+Declaration(Class(obo:FOODON_00005776))
+Declaration(Class(obo:FOODON_00005777))
+Declaration(Class(obo:FOODON_00005778))
+Declaration(Class(obo:FOODON_00005779))
+Declaration(Class(obo:FOODON_00005780))
+Declaration(Class(obo:FOODON_00005781))
+Declaration(Class(obo:FOODON_00005782))
+Declaration(Class(obo:FOODON_00005783))
+Declaration(Class(obo:FOODON_00005784))
+Declaration(Class(obo:FOODON_00005785))
+Declaration(Class(obo:FOODON_00005786))
+Declaration(Class(obo:FOODON_00005787))
 Declaration(Class(obo:FOODON_0002899))
 Declaration(Class(obo:FOODON_02010001))
 Declaration(Class(obo:FOODON_02010014))
@@ -17947,31 +17987,33 @@ AnnotationAssertion(obo:IAO_0000115 obo:FOODON_00004331 "Anatomical or other pie
 AnnotationAssertion(obo:IAO_0000117 obo:FOODON_00004331 <https://orcid.org/0000-0002-8844-9165>)
 AnnotationAssertion(dcterms:date obo:FOODON_00004331 "2023-03-02T22:31:04Z"^^xsd:dateTime)
 AnnotationAssertion(rdfs:label obo:FOODON_00004331 "plant material"@en)
+EquivalentClasses(obo:FOODON_00004331 ObjectIntersectionOf(obo:FOODON_03420116 ObjectSomeValuesFrom(obo:RO_0002162 obo:NCBITaxon_33090)))
 SubClassOf(obo:FOODON_00004331 obo:FOODON_03420116)
 
 # Class: obo:FOODON_00004332 (piece of animal)
 
 SubClassOf(obo:FOODON_00004332 obo:FOODON_00004328)
 
-# Class: obo:FOODON_00004333 (plant piece)
+# Class: obo:FOODON_00004333 (piece of plant)
 
 AnnotationAssertion(obo:IAO_0000114 obo:FOODON_00004333 obo:IAO_0000122)
-AnnotationAssertion(obo:IAO_0000115 obo:FOODON_00004333 "An anatomical or other piece derived from a plant."@en)
+AnnotationAssertion(obo:IAO_0000115 obo:FOODON_00004333 "A severed part of a plant."@en)
 AnnotationAssertion(obo:IAO_0000117 obo:FOODON_00004333 <https://orcid.org/0000-0002-8844-9165>)
 AnnotationAssertion(dcterms:date obo:FOODON_00004333 "2023-03-02T22:34:32Z"^^xsd:dateTime)
-AnnotationAssertion(rdfs:label obo:FOODON_00004333 "plant piece"@en)
+AnnotationAssertion(rdfs:label obo:FOODON_00004333 "piece of plant"@en)
+EquivalentClasses(obo:FOODON_00004333 ObjectIntersectionOf(obo:FOODON_00004328 ObjectSomeValuesFrom(obo:RO_0002162 obo:NCBITaxon_33090)))
 SubClassOf(obo:FOODON_00004333 obo:FOODON_00004328)
 SubClassOf(obo:FOODON_00004333 obo:FOODON_00004331)
 
-# Class: obo:FOODON_00004334 (plant piece(s))
+# Class: obo:FOODON_00004334 (piece(s) of plant)
 
 AnnotationAssertion(obo:IAO_0000114 obo:FOODON_00004334 obo:IAO_0000122)
-AnnotationAssertion(obo:IAO_0000114 obo:FOODON_00004334 "A collection of one or more anatomical or other pieces derived from plant(s)."@en)
+AnnotationAssertion(obo:IAO_0000114 obo:FOODON_00004334 "One or more pieces of plant."@en)
 AnnotationAssertion(obo:IAO_0000117 obo:FOODON_00004334 <https://orcid.org/0000-0002-8844-9165>)
 AnnotationAssertion(dcterms:date obo:FOODON_00004334 "2023-03-02T22:35:32Z"^^xsd:dateTime)
-AnnotationAssertion(rdfs:label obo:FOODON_00004334 "plant piece(s)"@en)
+AnnotationAssertion(rdfs:label obo:FOODON_00004334 "piece(s) of plant"@en)
+EquivalentClasses(obo:FOODON_00004334 ObjectIntersectionOf(ObjectSomeValuesFrom(obo:RO_0002351 obo:FOODON_00004333) ObjectAllValuesFrom(obo:RO_0002351 obo:FOODON_00004333)))
 SubClassOf(obo:FOODON_00004334 obo:FOODON_00004331)
-SubClassOf(obo:FOODON_00004334 ObjectSomeValuesFrom(obo:RO_0002351 obo:FOODON_00004333))
 
 # Class: obo:FOODON_00004336 (fungus material)
 
@@ -18426,6 +18468,11 @@ AnnotationAssertion(rdfs:label obo:FOODON_00004505 "wild bird")
 SubClassOf(obo:FOODON_00004505 obo:FOODON_00002616)
 SubClassOf(obo:FOODON_00004505 obo:FOODON_00004503)
 
+# Class: obo:FOODON_00004533 (food grinding)
+
+AnnotationAssertion(dcterms:contributor obo:FOODON_00004533 <https://orcid.org/0000-0002-8844-9165>)
+AnnotationAssertion(dcterms:date obo:FOODON_00004533 "2023-12-15T23:17:00Z"^^xsd:dateTime)
+
 # Class: obo:FOODON_00004535 (lamb carcass)
 
 AnnotationAssertion(dcterms:contributor obo:FOODON_00004535 <https://orcid.org/0000-0002-8844-9165>)
@@ -18658,11 +18705,12 @@ SubClassOf(obo:FOODON_00004731 obo:FOODON_03302148)
 
 # Class: obo:FOODON_00004800 (plant leaf bunch)
 
+AnnotationAssertion(obo:IAO_0000115 obo:FOODON_00004800 "A bunch of raw plant leaves."@en)
 AnnotationAssertion(dcterms:contributor obo:FOODON_00004800 <https://orcid.org/0000-0002-8844-9165>)
 AnnotationAssertion(dcterms:date obo:FOODON_00004800 "2024-07-12T17:06:17Z"^^xsd:dateTime)
 AnnotationAssertion(rdfs:label obo:FOODON_00004800 "plant leaf bunch"@en)
 EquivalentClasses(obo:FOODON_00004800 ObjectIntersectionOf(obo:BFO_0000027 ObjectSomeValuesFrom(obo:RO_0000086 obo:FOODON_00004348) ObjectSomeValuesFrom(obo:RO_0002351 obo:PO_0025034) ObjectAllValuesFrom(obo:RO_0002351 obo:PO_0025034)))
-SubClassOf(obo:FOODON_00004800 obo:BFO_0000027)
+SubClassOf(obo:FOODON_00004800 obo:FOODON_00005753)
 
 # Class: obo:FOODON_00005045 (dark green leafy vegetable food material)
 
@@ -19435,6 +19483,361 @@ AnnotationAssertion(dcterms:contributor obo:FOODON_00005741 <https://orcid.org/0
 AnnotationAssertion(dcterms:date obo:FOODON_00005741 "2026-04-12T05:54:58Z"^^xsd:dateTime)
 AnnotationAssertion(rdfs:label obo:FOODON_00005741 "field pea (dried)"@en)
 SubClassOf(obo:FOODON_00005741 obo:FOODON_00003560)
+
+# Class: obo:FOODON_00005748 (plant substance)
+
+AnnotationAssertion(obo:IAO_0000115 obo:FOODON_00005748 "An organism substance which derives from part of one or more plant."@en)
+AnnotationAssertion(dc11:contributor obo:FOODON_00005748 <https://orcid.org/0000-0001-5275-8866>)
+AnnotationAssertion(rdfs:comment obo:FOODON_00005748 "Include substances like latex, xylem sap, phloem sap, resin, mucilage, oil, cuticle, cutin, and sporopollenin."@en)
+AnnotationAssertion(rdfs:label obo:FOODON_00005748 "plant substance")
+SubClassOf(obo:FOODON_00005748 obo:FOODON_00004331)
+
+# Class: obo:FOODON_00005749 (plant)
+
+AnnotationAssertion(obo:IAO_0000115 obo:FOODON_00005749 "A whole plant."@en)
+AnnotationAssertion(dcterms:contributor obo:FOODON_00005749 <https://orcid.org/0000-0001-5275-8866>)
+AnnotationAssertion(dcterms:date obo:FOODON_00005749 "2026-05-26T02:56:42Z"^^xsd:dateTime)
+AnnotationAssertion(rdfs:label obo:FOODON_00005749 "plant")
+SubClassOf(obo:FOODON_00005749 obo:FOODON_00004331)
+
+# Class: obo:FOODON_00005750 (plant (raw))
+
+AnnotationAssertion(obo:IAO_0000115 obo:FOODON_00005750 "A whole raw plant."@en)
+AnnotationAssertion(dcterms:contributor obo:FOODON_00005750 <https://orcid.org/0000-0001-5275-8866>)
+AnnotationAssertion(dcterms:date obo:FOODON_00005750 "2026-05-26T02:56:42Z"^^xsd:dateTime)
+AnnotationAssertion(rdfs:label obo:FOODON_00005750 "plant (raw)")
+EquivalentClasses(obo:FOODON_00005750 ObjectIntersectionOf(obo:FOODON_00005749 ObjectSomeValuesFrom(obo:RO_0000086 obo:FOODON_00004348)))
+SubClassOf(obo:FOODON_00005750 obo:FOODON_00005749)
+
+# Class: obo:FOODON_00005751 (piece of plant (raw))
+
+AnnotationAssertion(obo:IAO_0000115 obo:FOODON_00005751 "A raw piece of a plant."@en)
+AnnotationAssertion(dcterms:contributor obo:FOODON_00005751 <https://orcid.org/0000-0001-5275-8866>)
+AnnotationAssertion(dcterms:date obo:FOODON_00005751 "2026-05-26T02:56:42Z"^^xsd:dateTime)
+AnnotationAssertion(rdfs:label obo:FOODON_00005751 "piece of plant (raw)")
+EquivalentClasses(obo:FOODON_00005751 ObjectIntersectionOf(obo:FOODON_00004333 ObjectSomeValuesFrom(obo:RO_0000086 obo:FOODON_00004348)))
+SubClassOf(obo:FOODON_00005751 obo:FOODON_00004333)
+
+# Class: obo:FOODON_00005752 (piece(s) of plant (raw))
+
+AnnotationAssertion(obo:IAO_0000115 obo:FOODON_00005752 "One or more raw pieces of plant."@en)
+AnnotationAssertion(dcterms:contributor obo:FOODON_00005752 <https://orcid.org/0000-0001-5275-8866>)
+AnnotationAssertion(dcterms:date obo:FOODON_00005752 "2026-05-26T15:12:34Z"^^xsd:dateTime)
+AnnotationAssertion(rdfs:label obo:FOODON_00005752 "piece(s) of plant (raw)")
+EquivalentClasses(obo:FOODON_00005752 ObjectIntersectionOf(obo:FOODON_00004334 ObjectSomeValuesFrom(obo:RO_0000086 obo:FOODON_00004348)))
+SubClassOf(obo:FOODON_00005752 obo:FOODON_00004334)
+
+# Class: obo:FOODON_00005753 (piece(s) of plant leaf)
+
+AnnotationAssertion(obo:IAO_0000115 obo:FOODON_00005753 "One or more pieces of a plant leaf."@en)
+AnnotationAssertion(dcterms:contributor obo:FOODON_00005753 <https://orcid.org/0000-0001-5275-8866>)
+AnnotationAssertion(dcterms:date obo:FOODON_00005753 "2026-05-27T15:12:34Z"^^xsd:dateTime)
+AnnotationAssertion(rdfs:label obo:FOODON_00005753 "piece(s) of plant leaf")
+SubClassOf(obo:FOODON_00005753 obo:FOODON_00004334)
+
+# Class: obo:FOODON_00005754 (piece of plant leaf)
+
+AnnotationAssertion(obo:IAO_0000115 obo:FOODON_00005754 "A piece of a leaf that derives from a plant leaf."@en)
+AnnotationAssertion(dcterms:contributor obo:FOODON_00005754 <https://orcid.org/0000-0001-5275-8866>)
+AnnotationAssertion(dcterms:date obo:FOODON_00005754 "2026-05-27T02:38:25Z"^^xsd:dateTime)
+AnnotationAssertion(rdfs:label obo:FOODON_00005754 "piece of plant leaf")
+EquivalentClasses(obo:FOODON_00005754 ObjectIntersectionOf(obo:FOODON_00004333 ObjectSomeValuesFrom(obo:RO_0001000 obo:FOODON_00005757)))
+SubClassOf(obo:FOODON_00005754 obo:FOODON_00004333)
+
+# Class: obo:FOODON_00005755 (piece of plant leaf (raw))
+
+AnnotationAssertion(obo:IAO_0000115 obo:FOODON_00005755 "A raw piece of a plant leaf."@en)
+AnnotationAssertion(dcterms:contributor obo:FOODON_00005755 <https://orcid.org/0000-0001-5275-8866>)
+AnnotationAssertion(dcterms:date obo:FOODON_00005755 "2026-05-27T02:38:25Z"^^xsd:dateTime)
+AnnotationAssertion(rdfs:label obo:FOODON_00005755 "piece of plant leaf (raw)")
+EquivalentClasses(obo:FOODON_00005755 ObjectIntersectionOf(obo:FOODON_00005754 ObjectSomeValuesFrom(obo:RO_0000086 obo:FOODON_00004348)))
+SubClassOf(obo:FOODON_00005755 obo:FOODON_00005754)
+
+# Class: obo:FOODON_00005756 (piece(s) of plant leaf (raw))
+
+AnnotationAssertion(obo:IAO_0000115 obo:FOODON_00005756 "One or more raw pieces of plant leaf."@en)
+AnnotationAssertion(dcterms:contributor obo:FOODON_00005756 <https://orcid.org/0000-0001-5275-8866>)
+AnnotationAssertion(dcterms:date obo:FOODON_00005756 "2026-05-27T15:12:34Z"^^xsd:dateTime)
+AnnotationAssertion(rdfs:label obo:FOODON_00005756 "piece(s) of plant leaf (raw)")
+EquivalentClasses(obo:FOODON_00005756 ObjectIntersectionOf(obo:FOODON_00005753 ObjectSomeValuesFrom(obo:RO_0000086 obo:FOODON_00004348)))
+SubClassOf(obo:FOODON_00005756 obo:FOODON_00005753)
+
+# Class: obo:FOODON_00005757 (plant leaf)
+
+AnnotationAssertion(obo:IAO_0000115 obo:FOODON_00005757 "A whole leaf of a plant."@en)
+AnnotationAssertion(dcterms:contributor obo:FOODON_00005757 <https://orcid.org/0000-0001-5275-8866>)
+AnnotationAssertion(dcterms:date obo:FOODON_00005757 "2026-05-28T09:06:32Z"^^xsd:dateTime)
+AnnotationAssertion(rdfs:label obo:FOODON_00005757 "plant leaf")
+EquivalentClasses(obo:FOODON_00005757 ObjectIntersectionOf(obo:FOODON_00004333 ObjectSomeValuesFrom(obo:RO_0001000 obo:PO_0025034)))
+SubClassOf(obo:FOODON_00005757 obo:FOODON_00004333)
+
+# Class: obo:FOODON_00005758 (plant leaf (raw))
+
+AnnotationAssertion(obo:IAO_0000115 obo:FOODON_00005758 "A raw plant leaf."@en)
+AnnotationAssertion(dcterms:contributor obo:FOODON_00005758 <https://orcid.org/0000-0001-5275-8866>)
+AnnotationAssertion(dcterms:date obo:FOODON_00005758 "2026-05-26T02:56:42Z"^^xsd:dateTime)
+AnnotationAssertion(rdfs:label obo:FOODON_00005758 "plant leaf (raw)")
+EquivalentClasses(obo:FOODON_00005758 ObjectIntersectionOf(obo:FOODON_00005757 ObjectSomeValuesFrom(obo:RO_0000086 obo:FOODON_00004348)))
+SubClassOf(obo:FOODON_00005758 obo:FOODON_00005757)
+
+# Class: obo:FOODON_00005759 (plant leaf (fresh))
+
+AnnotationAssertion(obo:IAO_0000115 obo:FOODON_00005759 "A fresh plant leaf."@en)
+AnnotationAssertion(dcterms:contributor obo:FOODON_00005759 <https://orcid.org/0000-0001-5275-8866>)
+AnnotationAssertion(dcterms:date obo:FOODON_00005759 "2026-05-28T09:06:32Z"^^xsd:dateTime)
+AnnotationAssertion(rdfs:label obo:FOODON_00005759 "plant leaf (fresh)")
+EquivalentClasses(obo:FOODON_00005759 ObjectIntersectionOf(obo:FOODON_00005757 ObjectSomeValuesFrom(obo:RO_0000086 obo:FOODON_00004722)))
+SubClassOf(obo:FOODON_00005759 obo:FOODON_00005757)
+
+# Class: obo:FOODON_00005760 (plant leaf (dried))
+
+AnnotationAssertion(obo:IAO_0000115 obo:FOODON_00005760 "A dried plant leaf."@en)
+AnnotationAssertion(dcterms:contributor obo:FOODON_00005760 <https://orcid.org/0000-0001-5275-8866>)
+AnnotationAssertion(dcterms:date obo:FOODON_00005760 "2026-05-28T09:06:32Z"^^xsd:dateTime)
+AnnotationAssertion(rdfs:label obo:FOODON_00005760 "plant leaf (dried)")
+EquivalentClasses(obo:FOODON_00005760 ObjectIntersectionOf(obo:FOODON_00005757 ObjectSomeValuesFrom(obo:RO_0000086 obo:FOODON_00004723)))
+SubClassOf(obo:FOODON_00005760 obo:FOODON_00005757)
+
+# Class: obo:FOODON_00005761 (plant leaf (ground))
+
+AnnotationAssertion(obo:IAO_0000115 obo:FOODON_00005761 "A plant leaf that has been ground."@en)
+AnnotationAssertion(dcterms:contributor obo:FOODON_00005761 <https://orcid.org/0000-0001-5275-8866>)
+AnnotationAssertion(dcterms:date obo:FOODON_00005761 "2026-05-27T15:12:34Z"^^xsd:dateTime)
+AnnotationAssertion(rdfs:label obo:FOODON_00005761 "plant leaf (ground)")
+EquivalentClasses(obo:FOODON_00005761 ObjectIntersectionOf(ObjectSomeValuesFrom(obo:OBI_0000312 obo:FOODON_00004533) ObjectSomeValuesFrom(obo:RO_0002233 obo:FOODON_00005757)))
+SubClassOf(obo:FOODON_00005761 obo:FOODON_00005753)
+
+# Class: obo:FOODON_00005762 (plant seed)
+
+AnnotationAssertion(obo:IAO_0000115 obo:FOODON_00005762 "A whole seed of a plant."@en)
+AnnotationAssertion(dcterms:contributor obo:FOODON_00005762 <https://orcid.org/0000-0001-5275-8866>)
+AnnotationAssertion(dcterms:date obo:FOODON_00005762 "2026-05-28T09:06:32Z"^^xsd:dateTime)
+AnnotationAssertion(rdfs:label obo:FOODON_00005762 "plant seed")
+EquivalentClasses(obo:FOODON_00005762 ObjectIntersectionOf(obo:FOODON_00004333 ObjectSomeValuesFrom(obo:RO_0001000 obo:PO_0009010)))
+SubClassOf(obo:FOODON_00005762 obo:FOODON_00004333)
+
+# Class: obo:FOODON_00005763 (plant seed (raw))
+
+AnnotationAssertion(obo:IAO_0000115 obo:FOODON_00005763 "A raw plant seed."@en)
+AnnotationAssertion(dcterms:contributor obo:FOODON_00005763 <https://orcid.org/0000-0001-5275-8866>)
+AnnotationAssertion(dcterms:date obo:FOODON_00005763 "2026-05-28T09:06:32Z"^^xsd:dateTime)
+AnnotationAssertion(rdfs:label obo:FOODON_00005763 "plant seed (raw)")
+EquivalentClasses(obo:FOODON_00005763 ObjectIntersectionOf(obo:FOODON_00005762 ObjectSomeValuesFrom(obo:RO_0000086 obo:FOODON_00004348)))
+SubClassOf(obo:FOODON_00005763 obo:FOODON_00005762)
+
+# Class: obo:FOODON_00005764 (plant grain)
+
+AnnotationAssertion(obo:IAO_0000115 obo:FOODON_00005764 "A grain of a plant."@en)
+AnnotationAssertion(dcterms:contributor obo:FOODON_00005764 <https://orcid.org/0000-0001-5275-8866>)
+AnnotationAssertion(dcterms:date obo:FOODON_00005764 "2026-05-28T23:45:07Z"^^xsd:dateTime)
+AnnotationAssertion(rdfs:label obo:FOODON_00005764 "plant grain")
+SubClassOf(obo:FOODON_00005764 obo:FOODON_00005762)
+
+# Class: obo:FOODON_00005765 (plant grain (raw))
+
+AnnotationAssertion(obo:IAO_0000115 obo:FOODON_00005765 "A raw plant grain."@en)
+AnnotationAssertion(dcterms:contributor obo:FOODON_00005765 <https://orcid.org/0000-0001-5275-8866>)
+AnnotationAssertion(dcterms:date obo:FOODON_00005765 "2026-05-28T23:45:07Z"^^xsd:dateTime)
+AnnotationAssertion(rdfs:label obo:FOODON_00005765 "plant grain (raw)")
+EquivalentClasses(obo:FOODON_00005765 ObjectIntersectionOf(obo:FOODON_00005764 ObjectSomeValuesFrom(obo:RO_0000086 obo:FOODON_00004348)))
+SubClassOf(obo:FOODON_00005765 obo:FOODON_00005764)
+
+# Class: obo:FOODON_00005766 (piece of plant seed)
+
+AnnotationAssertion(obo:IAO_0000115 obo:FOODON_00005766 "A piece of a plant seed."@en)
+AnnotationAssertion(dcterms:contributor obo:FOODON_00005766 <https://orcid.org/0000-0001-5275-8866>)
+AnnotationAssertion(dcterms:date obo:FOODON_00005766 "2026-05-28T23:45:07Z"^^xsd:dateTime)
+AnnotationAssertion(rdfs:label obo:FOODON_00005766 "piece of plant seed"@en)
+EquivalentClasses(obo:FOODON_00005766 ObjectIntersectionOf(obo:FOODON_00004333 ObjectSomeValuesFrom(obo:RO_0001000 obo:FOODON_00005762)))
+SubClassOf(obo:FOODON_00005766 obo:FOODON_00004333)
+
+# Class: obo:FOODON_00005767 (piece of plant seed (raw))
+
+AnnotationAssertion(obo:IAO_0000115 obo:FOODON_00005767 "A raw piece of plant seed."@en)
+AnnotationAssertion(dcterms:contributor obo:FOODON_00005767 <https://orcid.org/0000-0001-5275-8866>)
+AnnotationAssertion(dcterms:date obo:FOODON_00005767 "2026-05-28T23:45:07Z"^^xsd:dateTime)
+AnnotationAssertion(rdfs:label obo:FOODON_00005767 "piece of plant seed (raw)"@en)
+EquivalentClasses(obo:FOODON_00005767 ObjectIntersectionOf(obo:FOODON_00005766 ObjectSomeValuesFrom(obo:RO_0000086 obo:FOODON_00004348)))
+SubClassOf(obo:FOODON_00005767 obo:FOODON_00005766)
+
+# Class: obo:FOODON_00005768 (piece of plant grain)
+
+AnnotationAssertion(obo:IAO_0000115 obo:FOODON_00005768 "A piece of a plant grain."@en)
+AnnotationAssertion(dcterms:contributor obo:FOODON_00005768 <https://orcid.org/0000-0001-5275-8866>)
+AnnotationAssertion(dcterms:date obo:FOODON_00005768 "2026-05-29T09:10:24Z"^^xsd:dateTime)
+AnnotationAssertion(rdfs:label obo:FOODON_00005768 "piece of plant grain")
+EquivalentClasses(obo:FOODON_00005768 ObjectIntersectionOf(obo:FOODON_00005766 ObjectSomeValuesFrom(obo:RO_0001000 obo:FOODON_00005764)))
+SubClassOf(obo:FOODON_00005768 obo:FOODON_00005766)
+
+# Class: obo:FOODON_00005769 (piece of plant grain (raw))
+
+AnnotationAssertion(obo:IAO_0000115 obo:FOODON_00005769 "A raw piece of plant grain."@en)
+AnnotationAssertion(dcterms:contributor obo:FOODON_00005769 <https://orcid.org/0000-0001-5275-8866>)
+AnnotationAssertion(dcterms:date obo:FOODON_00005769 "2026-05-29T09:10:24Z"^^xsd:dateTime)
+AnnotationAssertion(rdfs:label obo:FOODON_00005769 "piece of plant grain (raw)")
+EquivalentClasses(obo:FOODON_00005769 ObjectIntersectionOf(obo:FOODON_00005768 ObjectSomeValuesFrom(obo:RO_0000086 obo:FOODON_00004348)))
+SubClassOf(obo:FOODON_00005769 obo:FOODON_00005768)
+
+# Class: obo:FOODON_00005770 (plant grain husk)
+
+AnnotationAssertion(obo:IAO_0000115 obo:FOODON_00005770 "A husk of a plant grain."@en)
+AnnotationAssertion(dcterms:contributor obo:FOODON_00005770 <https://orcid.org/0000-0001-5275-8866>)
+AnnotationAssertion(dcterms:date obo:FOODON_00005770 "2026-05-29T09:10:24Z"^^xsd:dateTime)
+AnnotationAssertion(rdfs:label obo:FOODON_00005770 "plant grain husk")
+EquivalentClasses(obo:FOODON_00005770 ObjectIntersectionOf(obo:FOODON_03420181 ObjectSomeValuesFrom(obo:BFO_0000050 obo:FOODON_00005764)))
+SubClassOf(obo:FOODON_00005770 obo:FOODON_00005768)
+
+# Class: obo:FOODON_00005771 (plant grain husk (raw))
+
+AnnotationAssertion(obo:IAO_0000115 obo:FOODON_00005771 "A raw plant grain husk."@en)
+AnnotationAssertion(dcterms:contributor obo:FOODON_00005771 <https://orcid.org/0000-0001-5275-8866>)
+AnnotationAssertion(dcterms:date obo:FOODON_00005771 "2026-05-29T09:10:24Z"^^xsd:dateTime)
+AnnotationAssertion(rdfs:label obo:FOODON_00005771 "plant grain husk (raw)")
+EquivalentClasses(obo:FOODON_00005771 ObjectIntersectionOf(obo:FOODON_00005770 ObjectSomeValuesFrom(obo:RO_0000086 obo:FOODON_00004348)))
+SubClassOf(obo:FOODON_00005771 obo:FOODON_00005770)
+
+# Class: obo:FOODON_00005772 (plant stem)
+
+AnnotationAssertion(obo:IAO_0000115 obo:FOODON_00005772 "A whole stem of a plant."@en)
+AnnotationAssertion(dcterms:contributor obo:FOODON_00005772 <https://orcid.org/0000-0001-5275-8866>)
+AnnotationAssertion(dcterms:date obo:FOODON_00005772 "2026-05-29T10:02:23Z"^^xsd:dateTime)
+AnnotationAssertion(rdfs:label obo:FOODON_00005772 "plant stem")
+EquivalentClasses(obo:FOODON_00005772 ObjectIntersectionOf(obo:FOODON_00004333 ObjectSomeValuesFrom(obo:RO_0001000 obo:PO_0009047)))
+SubClassOf(obo:FOODON_00005772 obo:FOODON_00004333)
+
+# Class: obo:FOODON_00005773 (plant stem (raw))
+
+AnnotationAssertion(obo:IAO_0000115 obo:FOODON_00005773 "A raw plant stem."@en)
+AnnotationAssertion(dcterms:contributor obo:FOODON_00005773 <https://orcid.org/0000-0001-5275-8866>)
+AnnotationAssertion(dcterms:date obo:FOODON_00005773 "2026-05-29T09:48:24Z"^^xsd:dateTime)
+AnnotationAssertion(rdfs:label obo:FOODON_00005773 "plant stem (raw)")
+EquivalentClasses(obo:FOODON_00005773 ObjectIntersectionOf(obo:FOODON_00005772 ObjectSomeValuesFrom(obo:RO_0000086 obo:FOODON_00004348)))
+SubClassOf(obo:FOODON_00005773 obo:FOODON_00005772)
+
+# Class: obo:FOODON_00005774 (plant root)
+
+AnnotationAssertion(obo:IAO_0000115 obo:FOODON_00005774 "A whole root of a plant."@en)
+AnnotationAssertion(dcterms:contributor obo:FOODON_00005774 <https://orcid.org/0000-0001-5275-8866>)
+AnnotationAssertion(dcterms:date obo:FOODON_00005774 "2026-05-29T10:24:07Z"^^xsd:dateTime)
+AnnotationAssertion(rdfs:label obo:FOODON_00005774 "plant root")
+EquivalentClasses(obo:FOODON_00005774 ObjectIntersectionOf(obo:FOODON_00004333 ObjectSomeValuesFrom(obo:RO_0001000 obo:PO_0009005)))
+SubClassOf(obo:FOODON_00005774 obo:FOODON_00004333)
+
+# Class: obo:FOODON_00005775 (plant root (raw))
+
+AnnotationAssertion(obo:IAO_0000115 obo:FOODON_00005775 "A raw plant root."@en)
+AnnotationAssertion(dcterms:contributor obo:FOODON_00005775 <https://orcid.org/0000-0001-5275-8866>)
+AnnotationAssertion(dcterms:date obo:FOODON_00005775 "2026-05-29T10:24:07Z"^^xsd:dateTime)
+AnnotationAssertion(rdfs:label obo:FOODON_00005775 "plant root (raw)")
+EquivalentClasses(obo:FOODON_00005775 ObjectIntersectionOf(obo:FOODON_00005774 ObjectSomeValuesFrom(obo:RO_0000086 obo:FOODON_00004348)))
+SubClassOf(obo:FOODON_00005775 obo:FOODON_00005774)
+
+# Class: obo:FOODON_00005776 (plant tuber)
+
+AnnotationAssertion(obo:IAO_0000115 obo:FOODON_00005776 "A whole tuber of a plant."@en)
+AnnotationAssertion(dcterms:contributor obo:FOODON_00005776 <https://orcid.org/0000-0001-5275-8866>)
+AnnotationAssertion(dcterms:date obo:FOODON_00005776 "2026-05-29T10:24:07Z"^^xsd:dateTime)
+AnnotationAssertion(rdfs:label obo:FOODON_00005776 "plant tuber")
+EquivalentClasses(obo:FOODON_00005776 ObjectIntersectionOf(obo:FOODON_00004333 ObjectSomeValuesFrom(obo:RO_0001000 obo:PO_0025522)))
+SubClassOf(obo:FOODON_00005776 obo:FOODON_00004333)
+
+# Class: obo:FOODON_00005777 (plant tuber (raw))
+
+AnnotationAssertion(obo:IAO_0000115 obo:FOODON_00005777 "A raw plant tuber."@en)
+AnnotationAssertion(dcterms:contributor obo:FOODON_00005777 <https://orcid.org/0000-0001-5275-8866>)
+AnnotationAssertion(dcterms:date obo:FOODON_00005777 "2026-05-29T11:04:07Z"^^xsd:dateTime)
+AnnotationAssertion(rdfs:label obo:FOODON_00005777 "plant tuber (raw)")
+EquivalentClasses(obo:FOODON_00005777 ObjectIntersectionOf(obo:FOODON_00005776 ObjectSomeValuesFrom(obo:RO_0000086 obo:FOODON_00004348)))
+SubClassOf(obo:FOODON_00005777 obo:FOODON_00005776)
+
+# Class: obo:FOODON_00005778 (plant stalk)
+
+AnnotationAssertion(obo:IAO_0000115 obo:FOODON_00005778 "A whole stalk of a plant."@en)
+AnnotationAssertion(dcterms:contributor obo:FOODON_00005778 <https://orcid.org/0000-0001-5275-8866>)
+AnnotationAssertion(dcterms:date obo:FOODON_00005778 "2026-05-29T11:06:07Z"^^xsd:dateTime)
+AnnotationAssertion(rdfs:label obo:FOODON_00005778 "plant stalk")
+EquivalentClasses(obo:FOODON_00005778 ObjectIntersectionOf(obo:FOODON_00004333 ObjectSomeValuesFrom(obo:RO_0001000 obo:PO_0025066)))
+SubClassOf(obo:FOODON_00005778 obo:FOODON_00004333)
+
+# Class: obo:FOODON_00005779 (plant stalk (raw))
+
+AnnotationAssertion(obo:IAO_0000115 obo:FOODON_00005779 "A raw plant stalk."@en)
+AnnotationAssertion(dcterms:contributor obo:FOODON_00005779 <https://orcid.org/0000-0001-5275-8866>)
+AnnotationAssertion(dcterms:date obo:FOODON_00005779 "2026-05-29T11:05:07Z"^^xsd:dateTime)
+AnnotationAssertion(rdfs:label obo:FOODON_00005779 "plant stalk (raw)")
+EquivalentClasses(obo:FOODON_00005779 ObjectIntersectionOf(obo:FOODON_00005778 ObjectSomeValuesFrom(obo:RO_0000086 obo:FOODON_00004348)))
+SubClassOf(obo:FOODON_00005779 obo:FOODON_00005778)
+
+# Class: obo:FOODON_00005780 (plant scape)
+
+AnnotationAssertion(obo:IAO_0000115 obo:FOODON_00005780 "A whole leafless basal flowering stalk arising from a plant."@en)
+AnnotationAssertion(dcterms:contributor obo:FOODON_00005780 <https://orcid.org/0000-0001-5275-8866>)
+AnnotationAssertion(dcterms:date obo:FOODON_00005780 "2026-05-29T11:37:45Z"^^xsd:dateTime)
+AnnotationAssertion(rdfs:label obo:FOODON_00005780 "plant scape")
+SubClassOf(obo:FOODON_00005780 obo:FOODON_00004333)
+
+# Class: obo:FOODON_00005781 (plant scape (raw))
+
+AnnotationAssertion(obo:IAO_0000115 obo:FOODON_00005781 "A raw plant scape."@en)
+AnnotationAssertion(dcterms:contributor obo:FOODON_00005781 <https://orcid.org/0000-0001-5275-8866>)
+AnnotationAssertion(dcterms:date obo:FOODON_00005781 "2026-05-29T11:37:45Z"^^xsd:dateTime)
+AnnotationAssertion(rdfs:label obo:FOODON_00005781 "plant scape (raw)")
+EquivalentClasses(obo:FOODON_00005781 ObjectIntersectionOf(obo:FOODON_00005780 ObjectSomeValuesFrom(obo:RO_0000086 obo:FOODON_00004348)))
+SubClassOf(obo:FOODON_00005781 obo:FOODON_00005780)
+
+# Class: obo:FOODON_00005782 (plant head)
+
+AnnotationAssertion(obo:IAO_0000115 obo:FOODON_00005782 "A rosette of a plant."@en)
+AnnotationAssertion(dcterms:contributor obo:FOODON_00005782 <https://orcid.org/0000-0001-5275-8866>)
+AnnotationAssertion(dcterms:date obo:FOODON_00005782 "2026-05-29T11:57:45Z"^^xsd:dateTime)
+AnnotationAssertion(rdfs:label obo:FOODON_00005782 "plant head")
+EquivalentClasses(obo:FOODON_00005782 ObjectIntersectionOf(obo:FOODON_00004333 ObjectSomeValuesFrom(obo:RO_0001000 obo:PO_0025615)))
+SubClassOf(obo:FOODON_00005782 obo:FOODON_00004333)
+
+# Class: obo:FOODON_00005783 (plant head (raw))
+
+AnnotationAssertion(obo:IAO_0000115 obo:FOODON_00005783 "A raw plant head"@en)
+AnnotationAssertion(dcterms:contributor obo:FOODON_00005783 <https://orcid.org/0000-0001-5275-8866>)
+AnnotationAssertion(dcterms:date obo:FOODON_00005783 "2026-05-29T11:57:45Z"^^xsd:dateTime)
+AnnotationAssertion(rdfs:label obo:FOODON_00005783 "plant head (raw)")
+EquivalentClasses(obo:FOODON_00005783 ObjectIntersectionOf(obo:FOODON_00005782 ObjectSomeValuesFrom(obo:RO_0000086 obo:FOODON_00004348)))
+SubClassOf(obo:FOODON_00005783 obo:FOODON_00005782)
+
+# Class: obo:FOODON_00005784 (plant bulb)
+
+AnnotationAssertion(obo:IAO_0000115 obo:FOODON_00005784 "A bulb of a plant."@en)
+AnnotationAssertion(dcterms:contributor obo:FOODON_00005784 <https://orcid.org/0000-0001-5275-8866>)
+AnnotationAssertion(dcterms:date obo:FOODON_00005784 "2026-05-29T11:37:45Z"^^xsd:dateTime)
+AnnotationAssertion(rdfs:label obo:FOODON_00005784 "plant bulb")
+EquivalentClasses(obo:FOODON_00005784 ObjectIntersectionOf(obo:FOODON_00004333 ObjectSomeValuesFrom(obo:RO_0001000 obo:PO_0025356)))
+SubClassOf(obo:FOODON_00005784 obo:FOODON_00004333)
+
+# Class: obo:FOODON_00005785 (plant bulb (raw))
+
+AnnotationAssertion(obo:IAO_0000115 obo:FOODON_00005785 "A raw plant bulb."@en)
+AnnotationAssertion(dcterms:contributor obo:FOODON_00005785 <https://orcid.org/0000-0001-5275-8866>)
+AnnotationAssertion(dcterms:date obo:FOODON_00005785 "2026-05-29T11:37:45Z"^^xsd:dateTime)
+AnnotationAssertion(rdfs:label obo:FOODON_00005785 "plant bulb (raw)")
+EquivalentClasses(obo:FOODON_00005785 ObjectIntersectionOf(obo:FOODON_00005784 ObjectSomeValuesFrom(obo:RO_0000086 obo:FOODON_00004348)))
+SubClassOf(obo:FOODON_00005785 obo:FOODON_00005784)
+
+# Class: obo:FOODON_00005786 (plant flower)
+
+AnnotationAssertion(obo:IAO_0000115 obo:FOODON_00005786 "A flower of a plant."@en)
+AnnotationAssertion(dcterms:contributor obo:FOODON_00005786 <https://orcid.org/0000-0001-5275-8866>)
+AnnotationAssertion(dcterms:date obo:FOODON_00005786 "2026-05-29T13:12:56Z"^^xsd:dateTime)
+AnnotationAssertion(rdfs:label obo:FOODON_00005786 "plant flower")
+EquivalentClasses(obo:FOODON_00005786 ObjectIntersectionOf(obo:FOODON_00004333 ObjectSomeValuesFrom(obo:RO_0001000 obo:PO_0009046)))
+SubClassOf(obo:FOODON_00005786 obo:FOODON_00004333)
+
+# Class: obo:FOODON_00005787 (plant flower (raw))
+
+AnnotationAssertion(obo:IAO_0000115 obo:FOODON_00005787 "A raw plant flower."@en)
+AnnotationAssertion(dcterms:contributor obo:FOODON_00005787 <https://orcid.org/0000-0001-5275-8866>)
+AnnotationAssertion(dcterms:date obo:FOODON_00005787 "2026-05-29T11:37:45Z"^^xsd:dateTime)
+AnnotationAssertion(rdfs:label obo:FOODON_00005787 "plant flower (raw)")
+EquivalentClasses(obo:FOODON_00005787 ObjectIntersectionOf(obo:FOODON_00005786 ObjectSomeValuesFrom(obo:RO_0000086 obo:FOODON_00004348)))
+SubClassOf(obo:FOODON_00005787 obo:FOODON_00005786)
 
 # Class: obo:FOODON_02010002 (animal egg)
 
@@ -95066,7 +95469,6 @@ AnnotationAssertion(dcterms:date obo:FOODON_00004468 "2023-07-30T22:24:56Z"^^xsd
 AnnotationAssertion(dcterms:date obo:FOODON_00004529 "2023-11-16T05:19:25Z"^^xsd:dateTime)
 AnnotationAssertion(dcterms:contributor obo:FOODON_00004532 <https://orcid.org/0000-0002-8844-9165>)
 AnnotationAssertion(dcterms:date obo:FOODON_00004532 "2023-12-15T22:55:22Z"^^xsd:dateTime)
-AnnotationAssertion(dcterms:date obo:FOODON_00004533 "2023-12-15T23:17:00Z"^^xsd:dateTime)
 AnnotationAssertion(dcterms:contributor obo:FOODON_00004534 <https://orcid.org/0000-0002-8844-9165>)
 AnnotationAssertion(dcterms:date obo:FOODON_00004534 "2023-12-15T23:26:58Z"^^xsd:dateTime)
 AnnotationAssertion(dcterms:contributor obo:FOODON_00004544 <https://orcid.org/0000-0002-8844-9165>)
