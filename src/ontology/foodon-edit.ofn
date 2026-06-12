@@ -10312,7 +10312,7 @@ AnnotationAssertion(rdfs:label oboInOwl:hasSynonym "has synonym"@en)
 #   Object Properties
 ############################
 
-# Object Property: obo:FOODON_00001301 (has food substance analog)
+# Object Property: obo:FOODON_00001301 (has food material analog)
 
 SymmetricObjectProperty(obo:FOODON_00001301)
 
@@ -12810,7 +12810,7 @@ SubClassOf(obo:FOODON_00002449 obo:FOODON_02021555)
 
 # Class: obo:FOODON_00002451 (food transformation process)
 
-SubClassOf(obo:FOODON_00002451 obo:COB_0000035)
+SubClassOf(obo:FOODON_00002451 obo:FOODON_03530206)
 
 # Class: obo:FOODON_00002452 (invertebrate animal)
 
@@ -17116,9 +17116,58 @@ SubClassOf(obo:FOODON_00003937 obo:FOODON_00003931)
 
 SubClassOf(obo:FOODON_00003958 obo:NCBITaxon_303721)
 
+# Class: obo:FOODON_00003967 (guinean threadfin)
+
+AnnotationAssertion(dcterms:contributor obo:FOODON_00003967 <https://orcid.org/0000-0001-5275-8866>)
+AnnotationAssertion(rdfs:label obo:FOODON_00003967 "guinean threadfin"@en)
+SubClassOf(obo:FOODON_00003967 obo:FOODON_03411021)
+
+# Class: obo:FOODON_00003975 (pacific sandperch)
+
+AnnotationAssertion(dcterms:contributor obo:FOODON_00003975 <https://orcid.org/0000-0001-5275-8866>)
+AnnotationAssertion(rdfs:label obo:FOODON_00003975 "pacific sandperch"@en)
+SubClassOf(obo:FOODON_00003975 obo:FOODON_03411021)
+
+# Class: obo:FOODON_00003981 (sabah grouper)
+
+AnnotationAssertion(dcterms:contributor obo:FOODON_00003981 <https://orcid.org/0000-0001-5275-8866>)
+AnnotationAssertion(rdfs:label obo:FOODON_00003981 "sabah grouper"@en)
+SubClassOf(obo:FOODON_00003981 obo:FOODON_03411021)
+
+# Class: obo:FOODON_00003992 (white saddle goatfish)
+
+AnnotationAssertion(dcterms:contributor obo:FOODON_00003992 <https://orcid.org/0000-0001-5275-8866>)
+AnnotationAssertion(rdfs:label obo:FOODON_00003992 "white saddle goatfish"@en)
+SubClassOf(obo:FOODON_00003992 obo:FOODON_03411021)
+
+# Class: obo:FOODON_00003993 (white snake mackerel)
+
+AnnotationAssertion(dcterms:contributor obo:FOODON_00003993 <https://orcid.org/0000-0001-5275-8866>)
+AnnotationAssertion(rdfs:label obo:FOODON_00003993 "white snake mackerel"@en)
+SubClassOf(obo:FOODON_00003993 obo:FOODON_03411021)
+
+# Class: obo:FOODON_00004000 (obsolete: peruvian calico scallop)
+
+AnnotationAssertion(obo:IAO_0100001 obo:FOODON_00004000 obo:FOODON_03414603)
+AnnotationAssertion(rdfs:label obo:FOODON_00004000 "obsolete: peruvian calico scallop"@en)
+SubClassOf(obo:FOODON_00004000 obo:FOODON_03411021)
+SubClassOf(obo:FOODON_00004000 ObjectSomeValuesFrom(obo:RO_0002162 obo:NCBITaxon_228297))
+
+# Class: obo:FOODON_00004008 (dot-dash grouper)
+
+AnnotationAssertion(dcterms:contributor obo:FOODON_00004008 <https://orcid.org/0000-0001-5275-8866>)
+AnnotationAssertion(rdfs:label obo:FOODON_00004008 "dot-dash grouper"@en)
+SubClassOf(obo:FOODON_00004008 obo:FOODON_03411021)
+
 # Class: obo:FOODON_00004020 (Ailichthys punctatus)
 
 SubClassOf(obo:FOODON_00004020 obo:FOODON_03411021)
+
+# Class: obo:FOODON_00004027 (pico)
+
+AnnotationAssertion(dcterms:contributor obo:FOODON_00004027 <https://orcid.org/0000-0001-5275-8866>)
+AnnotationAssertion(rdfs:label obo:FOODON_00004027 "pico"@en)
+SubClassOf(obo:FOODON_00004027 obo:FOODON_03411021)
 
 # Class: obo:FOODON_00004047 (sweet wine)
 
@@ -19245,12 +19294,14 @@ AnnotationAssertion(dcterms:date obo:FOODON_00005722 "2025-11-13T08:04:33Z"^^xsd
 AnnotationAssertion(rdfs:label obo:FOODON_00005722 "food aquisition"@en)
 SubClassOf(obo:FOODON_00005722 obo:COB_0000035)
 
-# Class: obo:FOODON_00005723 (food distribution)
+# Class: obo:FOODON_00005723 (food transportation)
 
 AnnotationAssertion(obo:IAO_0000115 obo:FOODON_00005723 "A planned process in which food material is transferred from one food production or processing entity to another food processing, retail or group (non-retail) consumption entity."@en)
 AnnotationAssertion(dcterms:contributor obo:FOODON_00005723 <https://orcid.org/0000-0002-8844-9165>)
 AnnotationAssertion(dcterms:date obo:FOODON_00005723 "2025-11-13T08:07:27Z"^^xsd:dateTime)
-AnnotationAssertion(rdfs:label obo:FOODON_00005723 "food distribution"@en)
+AnnotationAssertion(oboInOwl:hasExactSynonym obo:FOODON_00005723 "food distribution"@en)
+AnnotationAssertion(rdfs:comment obo:FOODON_00005723 "This encompasses all food transportation processes."@en)
+AnnotationAssertion(rdfs:label obo:FOODON_00005723 "food transportation"@en)
 SubClassOf(obo:FOODON_00005723 obo:COB_0000035)
 
 # Class: obo:FOODON_00005724 (salmoniform fish material)
@@ -76823,14 +76874,14 @@ AnnotationAssertion(rdfs:comment obo:FOODON_03430101 "Traditionally in flour mil
 AnnotationAssertion(rdfs:label obo:FOODON_03430101 "medium ground and sifted form (sensu food)"@en)
 SubClassOf(obo:FOODON_03430101 obo:FOODON_03430117)
 
-# Class: obo:FOODON_03430102 (food (liquid, high viscosity))
+# Class: obo:FOODON_03430102 (liquid (higher viscosity))
 
 AnnotationAssertion(obo:IAO_0000114 obo:FOODON_03430102 obo:IAO_0000428)
 AnnotationAssertion(obo:IAO_0000115 obo:FOODON_03430102 "A liquid that flows slowly at room temperature."@en)
 AnnotationAssertion(oboInOwl:hasDbXref obo:FOODON_03430102 langual:E0102)
 AnnotationAssertion(oboInOwl:hasSynonym obo:FOODON_03430102 "thick liquid"@en)
 AnnotationAssertion(rdfs:comment obo:FOODON_03430102 "Examples are: some heavy liqueurs, evaporated milk, vegetable oil, molasses and honey. The range of high viscosity liquids spans sucrose solutions between 45 and 70% solids (viscosity range from 10 to 500 centipoise). Prefer 'solid pieces' factor term to 'small particles' if both appear in the food."@en)
-AnnotationAssertion(rdfs:label obo:FOODON_03430102 "food (liquid, high viscosity)"@en)
+AnnotationAssertion(rdfs:label obo:FOODON_03430102 "liquid (higher viscosity)"@en)
 EquivalentClasses(obo:FOODON_03430102 ObjectIntersectionOf(obo:FOODON_03430130 ObjectSomeValuesFrom(obo:RO_0000086 obo:PATO_0001693)))
 SubClassOf(obo:FOODON_03430102 obo:FOODON_03430130)
 DisjointClasses(obo:FOODON_03430102 obo:FOODON_03430109)
@@ -76890,14 +76941,14 @@ AnnotationAssertion(oboInOwl:hasDbXref obo:FOODON_03430108 langual:E0108)
 AnnotationAssertion(rdfs:label obo:FOODON_03430108 "heterogeneous form (sensu food)"@en)
 SubClassOf(obo:FOODON_03430108 obo:FOODON_03430113)
 
-# Class: obo:FOODON_03430109 (food (liquid, low viscosity))
+# Class: obo:FOODON_03430109 (liquid (lower viscosity))
 
 AnnotationAssertion(obo:IAO_0000114 obo:FOODON_03430109 obo:IAO_0000428)
-AnnotationAssertion(obo:IAO_0000115 obo:FOODON_03430109 "A liquid that flows very easily at room temperature."@en)
+AnnotationAssertion(obo:IAO_0000115 obo:FOODON_03430109 "A food material liquid that flows very easily at room temperature."@en)
 AnnotationAssertion(oboInOwl:hasDbXref obo:FOODON_03430109 langual:E0109)
 AnnotationAssertion(oboInOwl:hasSynonym obo:FOODON_03430109 "thin liquid"@en)
 AnnotationAssertion(rdfs:comment obo:FOODON_03430109 "Examples are: water, apple juice, sherry, acidophilus milk, whipping cream and some heavy liqueurs. The range of low viscosity liquid spans sucrose solutions between 0 and 45% solids (viscosity range from 1 to 10 centipoise). Prefer 'solid pieces' factor term to 'small particles' if both appear in the food."@en)
-AnnotationAssertion(rdfs:label obo:FOODON_03430109 "food (liquid, low viscosity)"@en)
+AnnotationAssertion(rdfs:label obo:FOODON_03430109 "liquid (lower viscosity)"@en)
 EquivalentClasses(obo:FOODON_03430109 ObjectIntersectionOf(obo:FOODON_03430130 ObjectSomeValuesFrom(obo:RO_0000086 obo:PATO_0001694)))
 SubClassOf(obo:FOODON_03430109 obo:FOODON_03430130)
 
@@ -76926,11 +76977,11 @@ AnnotationAssertion(rdfs:comment obo:FOODON_03430113 "LanguaL note: \"The physic
 AnnotationAssertion(rdfs:label obo:FOODON_03430113 "physical form (sensu food)"@en)
 SubClassOf(obo:FOODON_03430113 obo:FOODON_00002470)
 
-# Class: obo:FOODON_03430114 (food (liquid, low viscosity, with small particles))
+# Class: obo:FOODON_03430114 (liquid, low viscosity, with small particles)
 
 AnnotationAssertion(obo:IAO_0000114 obo:FOODON_03430114 obo:IAO_0000428)
 AnnotationAssertion(oboInOwl:hasDbXref obo:FOODON_03430114 langual:E0114)
-AnnotationAssertion(rdfs:label obo:FOODON_03430114 "food (liquid, low viscosity, with small particles)"@en)
+AnnotationAssertion(rdfs:label obo:FOODON_03430114 "liquid, low viscosity, with small particles"@en)
 SubClassOf(obo:FOODON_03430114 obo:FOODON_03430109)
 
 # Class: obo:FOODON_03430115 (divided into piece(s), thickness 0.3-1.5 cm.)
@@ -76988,11 +77039,11 @@ AnnotationAssertion(rdfs:label obo:FOODON_03430122 "divided or ground form (sens
 EquivalentClasses(obo:FOODON_03430122 ObjectUnionOf(obo:FOODON_03430136 obo:FOODON_03430152))
 SubClassOf(obo:FOODON_03430122 obo:FOODON_00005712)
 
-# Class: obo:FOODON_03430123 (food (liquid, low viscosity, with no visible particles))
+# Class: obo:FOODON_03430123 (liquid, low viscosity, with no visible particles)
 
 AnnotationAssertion(obo:IAO_0000114 obo:FOODON_03430123 obo:IAO_0000428)
 AnnotationAssertion(oboInOwl:hasDbXref obo:FOODON_03430123 langual:E0123)
-AnnotationAssertion(rdfs:label obo:FOODON_03430123 "food (liquid, low viscosity, with no visible particles)"@en)
+AnnotationAssertion(rdfs:label obo:FOODON_03430123 "liquid, low viscosity, with no visible particles"@en)
 SubClassOf(obo:FOODON_03430123 obo:FOODON_03430109)
 
 # Class: obo:FOODON_03430124 (sliced, thick, between 0.5 and 1.5 cm.)
@@ -77161,11 +77212,11 @@ AnnotationAssertion(rdfs:comment obo:FOODON_03430148 "LanguaL curation note: Use
 AnnotationAssertion(rdfs:label obo:FOODON_03430148 "divided into one or more quarters"@en)
 SubClassOf(obo:FOODON_03430148 obo:FOODON_03430133)
 
-# Class: obo:FOODON_03430149 (food (liquid, low viscosity, with solid pieces))
+# Class: obo:FOODON_03430149 (liquid, low viscosity, with solid pieces)
 
 AnnotationAssertion(obo:IAO_0000114 obo:FOODON_03430149 obo:IAO_0000428)
 AnnotationAssertion(oboInOwl:hasDbXref obo:FOODON_03430149 langual:E0149)
-AnnotationAssertion(rdfs:label obo:FOODON_03430149 "food (liquid, low viscosity, with solid pieces)"@en)
+AnnotationAssertion(rdfs:label obo:FOODON_03430149 "liquid, low viscosity, with solid pieces"@en)
 SubClassOf(obo:FOODON_03430149 obo:FOODON_03430109)
 
 # Class: obo:FOODON_03430150 (naturally shaped whole form (sensu food))
@@ -83913,13 +83964,13 @@ AnnotationAssertion(oboInOwl:hasDbXref obo:FOODON_03530107 langual:Z0107)
 AnnotationAssertion(rdfs:label obo:FOODON_03530107 "extent of fat trim"@en)
 SubClassOf(obo:FOODON_03530107 obo:FOODON_03530049)
 
-# Class: obo:FOODON_03530108 (food preperation)
+# Class: obo:FOODON_03530108 (food preparation)
 
 AnnotationAssertion(obo:IAO_0000114 obo:FOODON_03530108 obo:IAO_0000122)
 AnnotationAssertion(obo:IAO_0000115 obo:FOODON_03530108 "A food production process which involves post-harvest processes such as cleaning, sorting, cutting, mixing, shaping, cooking and packaging."@en)
 AnnotationAssertion(oboInOwl:hasDbXref obo:FOODON_03530108 langual:Z0108)
 AnnotationAssertion(rdfs:comment obo:FOODON_03530108 "Food preparation can be distinguished by its household, commercial or institutional context."@en)
-AnnotationAssertion(rdfs:label obo:FOODON_03530108 "food preperation"@en)
+AnnotationAssertion(rdfs:label obo:FOODON_03530108 "food preparation"@en)
 SubClassOf(obo:FOODON_03530108 obo:FOODON_03530206)
 
 # Class: obo:FOODON_03530109 (home food preparation process)
@@ -84580,7 +84631,7 @@ SubClassOf(obo:FOODON_03530204 obo:FOODON_03530152)
 # Class: obo:FOODON_03530206 (food production)
 
 AnnotationAssertion(obo:IAO_0000114 obo:FOODON_03530206 obo:IAO_0000428)
-AnnotationAssertion(obo:IAO_0000115 obo:FOODON_03530206 "A planned process involving the rearing, manufacture or distribution of food material."@en)
+AnnotationAssertion(obo:IAO_0000115 obo:FOODON_03530206 "A planned process involving the conversion of food material into another form."@en)
 AnnotationAssertion(obo:IAO_0000117 obo:FOODON_03530206 <https://orcid.org/0000-0002-8844-9165>)
 AnnotationAssertion(oboInOwl:hasDbXref obo:FOODON_03530206 langual:Z0206)
 AnnotationAssertion(oboInOwl:hasExactSynonym obo:FOODON_03530206 "production area"@en)
@@ -94877,6 +94928,16 @@ AnnotationAssertion(obo:IAO_0000117 obo:FOODON_00003952 <http://orcid.org/0000-0
 AnnotationAssertion(dcterms:date obo:FOODON_00003952 "2021-09-06T20:39:00Z"^^xsd:dateTime)
 AnnotationAssertion(obo:IAO_0000117 obo:FOODON_00003953 <http://orcid.org/0000-0002-8844-9165>)
 AnnotationAssertion(dcterms:date obo:FOODON_00003953 "2021-09-06T21:02:39Z"^^xsd:dateTime)
+AnnotationAssertion(rdfs:comment obo:FOODON_00003954 "Currently absent in NCBITaxon"@en)
+AnnotationAssertion(rdfs:comment obo:FOODON_00003965 "Currently absent in NCBITaxon"@en)
+AnnotationAssertion(rdfs:comment obo:FOODON_00003968 "Currently absent in NCBITaxon"@en)
+AnnotationAssertion(rdfs:comment obo:FOODON_00003970 "Currently absent in NCBITaxon"@en)
+AnnotationAssertion(rdfs:comment obo:FOODON_00003978 "Currently absent in NCBITaxon"@en)
+AnnotationAssertion(rdfs:comment obo:FOODON_00003980 "Currently absent in NCBITaxon"@en)
+AnnotationAssertion(rdfs:comment obo:FOODON_00003990 "Currently absent in NCBITaxon"@en)
+AnnotationAssertion(rdfs:comment obo:FOODON_00003997 "Absent in NCBITaxon"@en)
+AnnotationAssertion(rdfs:comment obo:FOODON_00003999 "Currently absent in NCBITaxon"@en)
+AnnotationAssertion(rdfs:comment obo:FOODON_00004028 "Currently absent in NCBITaxon"@en)
 AnnotationAssertion(obo:IAO_0000117 obo:FOODON_00004037 <http://orcid.org/0000-0002-8844-9165>)
 AnnotationAssertion(dcterms:date obo:FOODON_00004037 "2021-11-10T20:58:31Z"^^xsd:dateTime)
 AnnotationAssertion(obo:IAO_0000117 obo:FOODON_00004038 <http://orcid.org/0000-0002-8844-9165>)
@@ -95005,7 +95066,6 @@ AnnotationAssertion(dcterms:date obo:FOODON_00004468 "2023-07-30T22:24:56Z"^^xsd
 AnnotationAssertion(dcterms:date obo:FOODON_00004529 "2023-11-16T05:19:25Z"^^xsd:dateTime)
 AnnotationAssertion(dcterms:contributor obo:FOODON_00004532 <https://orcid.org/0000-0002-8844-9165>)
 AnnotationAssertion(dcterms:date obo:FOODON_00004532 "2023-12-15T22:55:22Z"^^xsd:dateTime)
-AnnotationAssertion(dcterms:contributor obo:FOODON_00004533 <https://orcid.org/0000-0002-8844-9165>)
 AnnotationAssertion(dcterms:date obo:FOODON_00004533 "2023-12-15T23:17:00Z"^^xsd:dateTime)
 AnnotationAssertion(dcterms:contributor obo:FOODON_00004534 <https://orcid.org/0000-0002-8844-9165>)
 AnnotationAssertion(dcterms:date obo:FOODON_00004534 "2023-12-15T23:26:58Z"^^xsd:dateTime)
