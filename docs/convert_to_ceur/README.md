@@ -180,21 +180,21 @@ The script handles this automatically:
 
 Valid use-case keys for `genai_uses` (drawn from the CEUR-WS taxonomy):
 
-| Key | Label | Source |
-|-----|-------|--------|
-| `text_creation` | Drafting Content | Policy |
-| `image_creation` | Generate Images | Policy |
-| `translation` | Text Translation | Policy |
-| `literature_review` | Generate Literature Review | Taxonomy |
-| `rephrasing` | Paraphrase and Reword | Policy |
-| `improve_style` | Improve Writing Style | Taxonomy |
-| `abstract_drafting` | Abstract Drafting | Taxonomy |
-| `grammar` | Grammar and Spelling Check | Policy |
-| `plagiarism_detection` | Plagiarism Detection | Taxonomy |
-| `citation_management` | Citation Management | Taxonomy |
-| `formatting` | Formatting Assistance | Taxonomy |
-| `peer_review` | Peer Review Simulation | Taxonomy |
-| `content_enhancement` | Content Enhancement | Taxonomy |
+| Key | Label |
+|-----|-------|
+| `text_creation` | Drafting Content |
+| `image_creation` | Generate Images |
+| `translation` | Text Translation |
+| `literature_review` | Generate Literature Review |
+| `rephrasing` | Paraphrase and Reword |
+| `improve_style` | Improve Writing Style |
+| `abstract_drafting` | Abstract Drafting |
+| `grammar` | Grammar and Spelling Check |
+| `plagiarism_detection` | Plagiarism Detection |
+| `citation_management` | Citation Management |
+| `formatting` | Formatting Assistance |
+| `peer_review` | Peer Review Simulation |
+| `content_enhancement` | Content Enhancement |
 
 ## Command-Line Options
 
