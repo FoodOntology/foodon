@@ -34,12 +34,19 @@ python3 convert_to_ceur.py -i "https://docs.google.com/document/d/<DOC_ID>"
 # Subsequent runs: re-download and regenerate PDF with saved settings
 python3 convert_to_ceur.py
 
+# After editing authors, affiliations, ORCIDs, title or keywords in the doc:
+python3 convert_to_ceur.py --extract   # or -e
+
 # Or force the LibreOffice fallback (already installed on Mac)
 python3 convert_to_ceur.py --engine lo
 ```
 
 Everything goes in the `temp/` subfolder by default (`paper_config.json`, output PDF,
 optional `paper.tex`). Use `-f <name>` to use a different folder.
+
+> **Note:** a plain re-run only re-fetches the document body and abstract.
+> Authors, affiliations, ORCIDs, title, and keywords are read from
+> `paper_config.json` and **will not update** unless you pass `--extract` (`-e`).
 
 ## Google Doc Layout
 
