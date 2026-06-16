@@ -41,6 +41,125 @@ python3 convert_to_ceur.py --engine lo
 Everything goes in the `temp/` subfolder by default (`paper_config.json`, output PDF,
 optional `paper.tex`). Use `-f <name>` to use a different folder.
 
+## Google Doc Layout
+
+For the converter to auto-extract metadata, the document must open with a
+specific front-matter block **before the first section heading**. The simplest
+way to set this up once, then leave it — subsequent runs re-extract
+automatically.
+
+### Minimal front-matter template
+
+How it looks in Google Docs (and how it renders as markdown):
+
+> The Full Paper Title Goes Here
+>
+> Authors: Jane Smith<sup>1,\*</sup>, John Doe<sup>2</sup>, Alice Brown<sup>1,3</sup>
+>
+> <sup>1</sup> First University, City, Country  
+> <sup>2</sup> Second Institution, City, Country  
+> <sup>3</sup> Third Institution, City, Country
+>
+> \* Corresponding author jane.smith@example.com
+>
+> **ORCIDS:**  
+> JS: https://orcid.org/0000-0000-0000-0001  
+> JD: https://orcid.org/0000-0000-0000-0002  
+> AB: https://orcid.org/0000-0000-0000-0003
+>
+> **Keywords:** food systems, ontology, processing
+>
+> *— `# Abstract` heading (Heading 1 style in Google Docs) —*
+>
+> Your abstract text goes here.
+>
+> *— `# Introduction` heading (Heading 1 style in Google Docs) —*
+>
+> Body text begins here …
+
+The equivalent raw markdown syntax (what the converter sees after export):
+
+```markdown
+The Full Paper Title Goes Here
+
+Authors: Jane Smith^1,*^, John Doe^2^, Alice Brown^1,3^
+
+^1^ First University, City, Country
+^2^ Second Institution, City, Country
+^3^ Third Institution, City, Country
+
+* Corresponding author jane.smith@example.com
+
+**ORCIDS:**
+JS: https://orcid.org/0000-0000-0000-0001
+JD: https://orcid.org/0000-0000-0000-0002
+AB: https://orcid.org/0000-0000-0000-0003
+
+**Keywords:** food systems, ontology, processing
+
+# Abstract
+
+Your abstract text goes here.
+
+# Introduction
+
+Body text begins here ...
+```
+
+### Field-by-field rules
+
+**Title** — the first non-blank paragraph that does not start with "Authors:".
+Plain text or Google Docs "Title" style both work.
+
+**Authors line** — must start with `Authors:` (case-insensitive). List authors
+separated by commas. Each name is followed immediately by a superscript
+affiliation number (use Google Docs Insert → Special characters → Superscript,
+or type `^n^` notation). Mark the corresponding author with an additional `*`
+in the superscript, e.g. `^1,*^`. Authors with multiple affiliations use
+comma-separated numbers: `^1,3^`.
+
+**Affiliations** — one per paragraph, in the form `^N^ Institution, City, Country`
+where `N` matches the number used in the Authors line. Unicode superscript
+digits (¹ ² ³) are also recognised.
+
+**Corresponding author email** — a paragraph containing the words
+"Corresponding author" followed by the email address (plain text or as a
+mailto: link).
+
+**ORCIDs** — under a `**ORCIDS:**` bold heading (or any heading named
+"ORCIDs"), one line per author in the form `XX: https://orcid.org/XXXX-...`
+where `XX` is the author's initials. The converter matches initials to the
+author list; if two authors share initials, add an extra letter (e.g. `JAS`
+vs `JAD`).
+
+**Keywords** — a bold inline label: `**Keywords:** word, phrase, word`
+(semicolons also work as separators). Place this anywhere in the front-matter
+block, typically after affiliations.
+
+**Abstract** — a section headed `# Abstract` (any heading level, or a
+standalone `**Abstract**` bold paragraph). The converter strips this section
+from the body and places it in the formatted front matter automatically.
+
+**Section headings** — use Google Docs "Heading 1" / "Heading 2" / "Heading 3"
+paragraph styles for `\section` / `\subsection` / `\subsubsection` in the
+output. Do not type heading numbers manually — `ceurart.cls` numbers sections
+automatically. Heading 4 is also supported (renders as `\paragraph`).
+
+### Tips
+
+- Everything before the first `# Heading` is treated as front-matter; the
+  converter ignores it in the body and extracts fields from it instead.
+- Run `python3 convert_to_ceur.py --extract` after restructuring the
+  front-matter to force a re-parse and update `paper_config.json`.
+- After the initial extraction you can hand-edit `paper_config.json` to
+  correct anything (e.g. a misspelled affiliation) without touching the doc.
+- The document sharing must be set to **"Anyone with the link can view"** in
+  Google Docs — the converter accesses the export URL directly without signing in.
+- **Markdown as input:** the converter currently only accepts Google Docs URLs.
+  If your paper is already in a markdown file that follows the same front-matter
+  conventions above, the conversion pipeline from the markdown step onward would
+  work unchanged — local file input is a planned addition.
+
 ## Re-running After Doc Changes
 
 Just re-run the script — it always re-downloads the Google Doc from the live URL:
@@ -49,9 +168,17 @@ Just re-run the script — it always re-downloads the Google Doc from the live U
 python3 convert_to_ceur.py
 ```
 
+With no `-f` flag the script looks for `paper_config.json` in the `temp/`
+subfolder (relative to the script). Use `-f <name>` to point at a different
+folder, e.g. `python3 convert_to_ceur.py -f mypaper`.
+
 The abstract is re-extracted from the document on every run. Everything else
 (authors, affiliations, keywords, conference) comes from `paper_config.json`
 and stays stable between runs.
+
+**Note:** Google's export endpoint can take up to ~5 minutes to reflect a
+recent edit. If your changes aren't showing up in the output, wait a few
+minutes and re-run.
 
 To refresh all metadata from the current document (e.g., after adding authors or
 changing the title), use the `--extract` flag:
@@ -152,13 +279,6 @@ Things stored in `paper_config.json` (set once, reused on every run):
 Currently the script accepts **Google Docs URLs** (exported as DOCX via the
 Google Docs API). Support for additional document types (e.g. local DOCX/ODT
 files, Overleaf exports, Markdown) is planned for a future version.
-
-## Google Doc Requirements
-
-- Sharing must be set to **"Anyone with the link can view"**
-- The abstract should be under a heading named `Abstract` (any heading level)
-- The script strips the Abstract and Keywords sections from the body so they
-  appear only in the formatted front matter
 
 ## GenAI Declaration
 

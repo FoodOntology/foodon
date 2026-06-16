@@ -26,6 +26,7 @@ import shutil
 import subprocess
 import sys
 import tempfile
+import time
 import textwrap
 import argparse
 from pathlib import Path
@@ -95,9 +96,23 @@ def extract_doc_id(url: str) -> str:
 
 def download_doc(url: str, fmt: str, dest: Path) -> Path:
     doc_id = extract_doc_id(url)
-    export_url = f"https://docs.google.com/document/d/{doc_id}/export?format={fmt}"
+    # Cache-bust: Google's export endpoint (and any proxy in between) can
+    # otherwise serve a stale copy briefly after an edit. Even with this,
+    # Google may take up to ~5 minutes to propagate a recent edit to the
+    # export endpoint, so a stale fetch shortly after editing is expected —
+    # wait and re-run rather than assuming a bug.
+    cache_bust = int(time.time() * 1000)
+    export_url = (
+        f"https://docs.google.com/document/d/{doc_id}/export"
+        f"?format={fmt}&_cb={cache_bust}"
+    )
     print(f"  Fetching Google Doc as {fmt} ...")
-    resp = requests.get(export_url, allow_redirects=True, timeout=60)
+    resp = requests.get(
+        export_url,
+        allow_redirects=True,
+        timeout=60,
+        headers={'Cache-Control': 'no-cache', 'Pragma': 'no-cache'},
+    )
     if resp.status_code in (401, 403) or 'accounts.google.com' in resp.url:
         sys.exit(
             "Error: document requires authentication.\n"
@@ -852,13 +867,17 @@ def build_tex(settings: dict, latex_body: str, images_dir: Path | None) -> str:
         r'\lstset{breaklines=true}',
         r'\usepackage{graphicx}',
         r'\usepackage{longtable}',  # pandoc uses longtable for all tables
+        # longtable's default \LTpre is \bigskipamount (~12pt) of automatic space
+        # before the table — much more than ceurart's own caption-to-table gap
+        # (4pt, see \__make_tbl_caption:nn). Tighten it to match.
+        r'\setlength{\LTpre}{4pt}',
         r'\providecommand{\tightlist}{\setlength{\itemsep}{0pt}\setlength{\parskip}{0pt}}',
         # Mirror ceurart's \__make_tbl_caption:nn / \__make_fig_caption:nn styling
         # for captions on longtable/includegraphics, which never enter ceurart's
         # own table/figure float environments (see style_captions()).
-        r'\newcommand{\doctablecaption}[2]{\par\noindent'
+        r'\newcommand{\doctablecaption}[2]{\par\vskip8pt\noindent'
         r'\parbox{\linewidth}{\rightskip=0pt\sffamily\small\textbf{\color{scolor}#1}\par#2\par}'
-        r'\par\vskip4pt}',
+        r'\par}',
         r'\newcommand{\docfigcaption}[2]{\par\noindent'
         r'\parbox{\linewidth}{\rightskip=0pt\sffamily\small\textbf{\color{scolor}#1:}~#2\par}'
         r'\par\vskip6pt}',
