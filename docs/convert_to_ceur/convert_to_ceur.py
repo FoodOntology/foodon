@@ -148,6 +148,227 @@ def clean_markdown(text: str) -> str:
     return text
 
 
+# ---------------------------------------------------------------------------
+# OBO PURL -> CURIE  (e.g. http://purl.obolibrary.org/obo/FOODON_00004348 -> FOODON:00004348)
+# ---------------------------------------------------------------------------
+
+_OBO_PURL_RE = re.compile(
+    r'^https?://purl\.obolibrary\.org/obo/([A-Za-z]+)_([A-Za-z0-9]+)$'
+)
+
+# Pandoc renders a hyperlink whose visible text equals its URL as an autolink
+# <url>; any other visible text produces an explicit link [text](url).
+_AUTOLINK_RE = re.compile(
+    r'<(https?://purl\.obolibrary\.org/obo/[A-Za-z]+_[A-Za-z0-9]+)>'
+)
+_MDLINK_RE = re.compile(
+    r'\[([^\[\]]*)\]\((https?://purl\.obolibrary\.org/obo/[A-Za-z]+_[A-Za-z0-9]+)\)'
+)
+
+
+def curie_for_url(url: str) -> str | None:
+    """Return a CURIE (e.g. FOODON:00004348) for a recognized OBO PURL, else None."""
+    m = _OBO_PURL_RE.match(url.strip())
+    return f'{m.group(1)}:{m.group(2)}' if m else None
+
+
+def _looks_like_same_id(text: str, curie: str) -> bool:
+    """True if text is just a different spelling of the same id (e.g. FOODON_00004348)."""
+    prefix, local_id = curie.split(':', 1)
+    normalized = re.sub(r'[_:\s]', '', text).upper()
+    return normalized == (prefix + local_id).upper()
+
+
+def linkify_curies(markdown: str) -> str:
+    """Replace hyperlinks to OBO PURLs with the same link shown as a CURIE.
+
+    Works anywhere in the markdown, including table cells (pipe/grid tables
+    are just inline markdown content), e.g.:
+      <http://purl.obolibrary.org/obo/FOODON_00004348>
+        -> [FOODON:00004348](http://purl.obolibrary.org/obo/FOODON_00004348)
+      [FOODON_00004722](http://purl.obolibrary.org/obo/FOODON_00004722)
+        -> [FOODON:00004722](http://purl.obolibrary.org/obo/FOODON_00004722)
+
+    Explicit links are only rewritten when their visible text is already just
+    the id (under_score or colon form) — links with descriptive text (e.g.
+    "[the raw food term](...)") are left untouched so prose isn't clobbered.
+    """
+    def repl_autolink(m):
+        url = m.group(1)
+        curie = curie_for_url(url)
+        return f'[{curie}]({url})' if curie else m.group(0)
+
+    def repl_mdlink(m):
+        text, url = m.group(1), m.group(2)
+        curie = curie_for_url(url)
+        if curie and _looks_like_same_id(text, curie):
+            return f'[{curie}]({url})'
+        return m.group(0)
+
+    markdown = _AUTOLINK_RE.sub(repl_autolink, markdown)
+    markdown = _MDLINK_RE.sub(repl_mdlink, markdown)
+    return markdown
+
+
+# ---------------------------------------------------------------------------
+# Adjacent table merging
+# ---------------------------------------------------------------------------
+# Word/Google Docs sometimes splits one logical table into several table
+# objects (e.g. when the author copy-pasted in sections, or it got split
+# across a page break without "repeat header row" carrying real header text
+# into the new table object). Pandoc always treats a table's first row as
+# its header, so the second fragment's first row — actually a normal data
+# row — gets silently turned into a bold heading and visually detached from
+# its table.
+#
+# Policy: a table is only "new" if a "Table N: ..." caption sits directly
+# above it. Any table that follows another with nothing (no caption, no
+# prose) in between is assumed to be a continuation of the same table, and
+# is merged into it, recovering its first row as ordinary data.
+
+_LONGTABLE_DETAIL_RE = re.compile(
+    r'\\begin\{longtable\}\[\]\{@\{\}\n'
+    r'(?P<colspec>.*?)'
+    r'@\{\}\}\n'
+    r'\\toprule\\noalign\{\}\n'
+    r'(?P<header>.*?)\n'
+    r'\\midrule\\noalign\{\}\n'
+    r'\\endhead\n'
+    r'\\bottomrule\\noalign\{\}\n'
+    r'\\endlastfoot\n'
+    r'(?P<body>.*?)\n'
+    r'\\end\{longtable\}',
+    re.DOTALL
+)
+_MINIPAGE_CELL_RE = re.compile(
+    # An empty cell is rendered as "\raggedright\n\end{minipage}" — only one
+    # newline, not two — so the trailing newline must be part of the lazy
+    # capture (stripped off after matching) rather than a separate required token.
+    r'\\begin\{minipage\}\[b\]\{\\linewidth\}\\raggedright\n(.*?)\\end\{minipage\}',
+    re.DOTALL
+)
+def _header_row_as_data(header: str) -> str:
+    cells = [c.rstrip('\n') for c in _MINIPAGE_CELL_RE.findall(header)]
+    return ' & '.join(cells) + r' \\'
+
+
+def merge_adjacent_tables(latex_body: str) -> str:
+    """Merge consecutive longtables with nothing between them into one."""
+    while True:
+        tables = list(_LONGTABLE_DETAIL_RE.finditer(latex_body))
+        for first, second in zip(tables, tables[1:]):
+            gap = latex_body[first.end():second.start()]
+            if gap.strip():
+                continue  # caption or prose sits between them — leave separate
+
+            recovered_row = _header_row_as_data(second.group('header'))
+            new_body = first.group('body') + '\n' + recovered_row
+            if second.group('body').strip():
+                new_body += '\n' + second.group('body')
+
+            merged_table = (
+                '\\begin{longtable}[]{@{}\n' + first.group('colspec') + '@{}}\n'
+                r'\toprule\noalign{}' + '\n' + first.group('header') + '\n'
+                r'\midrule\noalign{}' + '\n'
+                r'\endhead' + '\n'
+                r'\bottomrule\noalign{}' + '\n'
+                r'\endlastfoot' + '\n'
+                + new_body + '\n'
+                r'\end{longtable}'
+            )
+            latex_body = latex_body[:first.start()] + merged_table + latex_body[second.end():]
+            break
+        else:
+            return latex_body
+
+
+# ---------------------------------------------------------------------------
+# Table/figure caption styling
+# ---------------------------------------------------------------------------
+# Caption paragraphs come in two flavors depending on how the author typed
+# them in the Google Doc: a single typed line ("Table 1: some text"), or
+# Google Docs' native auto-numbered caption field, which pandoc renders as
+# two separate paragraphs ("Table 1" alone, then "some text" alone, no
+# colon). Either form may sit directly above or directly below its
+# table/figure. ceurart's own \caption styling (bold sans-serif label, no
+# paragraph indent, table captions above the table) is only wired up inside
+# its custom table/figure float environments, which pandoc's longtable/
+# includegraphics output never enters — so we detect these caption
+# paragraphs after the markdown to LaTeX conversion and re-style/reposition
+# them to match.
+
+_SPLIT_CAPTION_RE = re.compile(
+    r'^(Table|Figure)\s+([^\s:\n]+)\n\n(?!(?:Table|Figure)\s)([^\n]+)$',
+    re.MULTILINE
+)
+_LONGTABLE_RE = re.compile(r'\\begin\{longtable\}[\s\S]*?\\end\{longtable\}')
+_TABLE_CAPTION_LINE_RE = re.compile(r'Table\s+([^\s:]+):[ \t]*([^\n]+)')
+_FIGURE_CAPTION_RE = re.compile(
+    r'^Figure\s+([^\s:]+):\s*(.+)$', re.MULTILINE
+)
+
+
+def style_captions(latex_body: str) -> str:
+    """Style 'Table N: ...' / 'Figure N: ...' caption paragraphs to match
+    ceurart's caption look, moving table captions above their table when
+    they aren't already (figure captions are left wherever they are,
+    typically already below their figure). Relies on
+    \\doctablecaption/\\docfigcaption being defined in the document
+    preamble (see build_tex).
+    """
+    # Normalize Google Docs' native auto-numbered caption field, which
+    # pandoc splits into two bare paragraphs, into a single "Label: text" line.
+    latex_body = _SPLIT_CAPTION_RE.sub(
+        lambda m: f'{m.group(1)} {m.group(2)}: {m.group(3)}', latex_body
+    )
+
+    pieces = []
+    pos = 0
+    for m in _LONGTABLE_RE.finditer(latex_body):
+        gap = latex_body[pos:m.start()]
+        table_block = m.group(0)
+
+        # Caption directly above the table already?
+        gap_stripped = gap.rstrip('\n')
+        split_idx = gap_stripped.rfind('\n\n')
+        last_para = gap_stripped[split_idx + 2:] if split_idx != -1 else gap_stripped
+        before = _TABLE_CAPTION_LINE_RE.fullmatch(last_para)
+        if before:
+            prefix = gap_stripped[:split_idx + 2] if split_idx != -1 else ''
+            pieces.append(prefix)
+            pieces.append(f'\\doctablecaption{{Table {before.group(1)}}}{{{before.group(2)}}}\n\n')
+            pieces.append(table_block)
+            pos = m.end()
+            continue
+
+        # Caption directly below the table — move it above.
+        tail = latex_body[m.end():]
+        tail_trimmed = tail.lstrip('\n')
+        leading_ws = len(tail) - len(tail_trimmed)
+        split_idx2 = tail_trimmed.find('\n\n')
+        first_para = tail_trimmed[:split_idx2] if split_idx2 != -1 else tail_trimmed
+        after = _TABLE_CAPTION_LINE_RE.fullmatch(first_para)
+        if after:
+            consumed = leading_ws + len(first_para) + (2 if split_idx2 != -1 else 0)
+            pieces.append(gap)
+            pieces.append(f'\\doctablecaption{{Table {after.group(1)}}}{{{after.group(2)}}}\n\n')
+            pieces.append(table_block)
+            pos = m.end() + consumed
+            continue
+
+        pieces.append(gap)
+        pieces.append(table_block)
+        pos = m.end()
+    pieces.append(latex_body[pos:])
+    latex_body = ''.join(pieces)
+
+    def repl_figure(m):
+        label, text = m.group(1), m.group(2)
+        return f'\\docfigcaption{{Figure {label}}}{{{text}}}'
+
+    return _FIGURE_CAPTION_RE.sub(repl_figure, latex_body)
+
+
 _SUPER_TRANS = str.maketrans('⁰¹²³⁴⁵⁶⁷⁸⁹', '0123456789')
 
 
@@ -632,6 +853,15 @@ def build_tex(settings: dict, latex_body: str, images_dir: Path | None) -> str:
         r'\usepackage{graphicx}',
         r'\usepackage{longtable}',  # pandoc uses longtable for all tables
         r'\providecommand{\tightlist}{\setlength{\itemsep}{0pt}\setlength{\parskip}{0pt}}',
+        # Mirror ceurart's \__make_tbl_caption:nn / \__make_fig_caption:nn styling
+        # for captions on longtable/includegraphics, which never enter ceurart's
+        # own table/figure float environments (see style_captions()).
+        r'\newcommand{\doctablecaption}[2]{\par\noindent'
+        r'\parbox{\linewidth}{\rightskip=0pt\sffamily\small\textbf{\color{scolor}#1}\par#2\par}'
+        r'\par\vskip4pt}',
+        r'\newcommand{\docfigcaption}[2]{\par\noindent'
+        r'\parbox{\linewidth}{\rightskip=0pt\sffamily\small\textbf{\color{scolor}#1:}~#2\par}'
+        r'\par\vskip6pt}',
     ]
     if images_dir and images_dir.exists():
         # LaTeX wants paths with forward slashes and trailing slash
@@ -1018,11 +1248,16 @@ def main():
         extra = settings.get('pandoc_extra_args', [])
         # --extract-media must be on the DOCX→markdown step so pandoc can pull
         # images out of the DOCX zip; passing it on a markdown stdin step does nothing.
+        # Force pipe tables: multiline/grid tables encode column boundaries as fixed
+        # character positions, which desync (bleeding text into the wrong column)
+        # once clean_markdown() shortens cell text by stripping {.underline} spans.
         md_text = run_pandoc(
-            [str(docx_file), '-t', 'markdown', '--wrap=none',
-             f'--extract-media={tmpdir}'] + extra
+            [str(docx_file),
+             '-t', 'markdown-grid_tables-multiline_tables-simple_tables+pipe_tables',
+             '--wrap=none', f'--extract-media={tmpdir}'] + extra
         )
         md_text = clean_markdown(md_text)
+        md_text = linkify_curies(md_text)
 
         abstract_md = ''
         if settings.get('abstract_from_doc', True):
@@ -1082,6 +1317,8 @@ def main():
                 ['-f', 'markdown', '-t', 'latex', '--wrap=none'],
                 input_text=md_text
             )
+            latex_body = merge_adjacent_tables(latex_body)
+            latex_body = style_captions(latex_body)
 
             # Build full .tex
             tex_content = build_tex(settings, latex_body, images_dir)
