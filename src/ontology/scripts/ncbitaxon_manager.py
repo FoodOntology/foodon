@@ -15,7 +15,7 @@ Supported input file formats (auto-detected by extension):
   .tsv          ROBOT template — reads 'NCBITaxon:<digits>' from column 0.
                   If a 'taxon' column is present, its scientific names are also
                   checked against the OntoFox file; missing names are looked up
-                  via the NCBI API and added when --update/--update-auto is active.
+                  via the NCBI API and added when --review/--review-auto is active.
 
 Usage:
     python ncbitaxon_manager.py [options] [input_file]
@@ -27,10 +27,10 @@ Examples:
     python scripts/ncbitaxon_manager.py
 
     # Check an OntoFox source list and prompt to update each finding:
-    python scripts/ncbitaxon_manager.py --update imports/ncbitaxon_ontofox.txt
+    python scripts/ncbitaxon_manager.py --review imports/ncbitaxon_ontofox.txt
 
     # Check a ROBOT template and apply all replacements automatically:
-    python scripts/ncbitaxon_manager.py --update-auto ../templates/robot_seafood.tsv
+    python scripts/ncbitaxon_manager.py --review-auto ../templates/robot_seafood.tsv
 
     # TSV output (clean for piping or saving):
     python scripts/ncbitaxon_manager.py --tsv imports/ncbitaxon_import.owl
@@ -45,10 +45,20 @@ Examples:
     python scripts/ncbitaxon_manager.py -i ../templates/robot_seafood.tsv
 
     # Combine: update replacements AND import missing IDs into ontofox:
-    python scripts/ncbitaxon_manager.py --update -i ../templates/robot_seafood.tsv
+    python scripts/ncbitaxon_manager.py --review -i ../templates/robot_seafood.tsv
 
-    # Look up one or more taxon IDs and print a markdown comparison table:
-    python scripts/ncbitaxon_manager.py -l 1913631,3049887 --api-key YOUR_KEY_HERE
+    # Look up names/IDs — prints a simple name → URI list in input order:
+    python scripts/ncbitaxon_manager.py -l "Salmo salar,Gadus morhua"
+    python scripts/ncbitaxon_manager.py -l "1913631,Gadus morhua"
+
+    # Full markdown comparison table (one column per taxon):
+    python scripts/ncbitaxon_manager.py -l 1913631,3049887 --markdown --api-key YOUR_KEY_HERE
+
+    # Resolve names and add all resolved IDs to ncbitaxon_ontofox.txt automatically:
+    python scripts/ncbitaxon_manager.py -l "Salmo salar,Gadus morhua" -i
+
+    # Same but prompt before each insertion:
+    python scripts/ncbitaxon_manager.py -l "Salmo salar,Gadus morhua" -i --review
 
     # Check for IDs present in ncbitaxon_ontofox.txt but absent from ncbitaxon_import.owl:
     python scripts/ncbitaxon_manager.py --check-missing
@@ -57,7 +67,7 @@ Examples:
     python scripts/ncbitaxon_manager.py --sync-names imports/ncbitaxon_ontofox.txt
 
     # Combine replacement-check and name-sync in one pass:
-    python scripts/ncbitaxon_manager.py --update --sync-names imports/ncbitaxon_ontofox.txt
+    python scripts/ncbitaxon_manager.py --review --sync-names imports/ncbitaxon_ontofox.txt
 """
 
 import argparse
@@ -446,18 +456,78 @@ def _print_lookup_table(queried_ids: list[int], api_key: str | None) -> None:
     print()
 
 
-def lookup_taxon(id_string: str, api_key: str | None) -> None:
-    """Parse a comma-delimited ID string and print the lookup table, then exit."""
-    queried_ids: list[int] = []
-    for part in id_string.split(','):
-        part = part.strip()
-        if part.isdigit():
-            queried_ids.append(int(part))
-        elif part:
-            print(f"Warning: skipping non-numeric token: {part!r}", file=sys.stderr)
+def _print_simple_report(
+    tokens: list[str],
+    name_to_id: dict[str, int | None],
+) -> None:
+    """
+    Print a simple aligned text list to stdout in original input order.
+    Each line is:  <scientific name or NCBITaxon:ID>  <OBO URI>
+    Names that could not be resolved show '(not found in NCBI)' instead of a URI.
+    """
+    rows: list[tuple[str, str]] = []
+    for token in tokens:
+        if token.isdigit():
+            label = f"NCBITaxon:{token}"
+            uri   = f"{OBO_URI_BASE}{token}"
+        else:
+            tid   = name_to_id.get(token)
+            label = token
+            uri   = f"{OBO_URI_BASE}{tid}" if tid is not None else "(not found in NCBI)"
+        rows.append((label, uri))
 
-    if not queried_ids:
-        print("Error: no valid numeric IDs provided.", file=sys.stderr)
+    if not rows:
+        return
+
+    w = max(len(label) for label, _ in rows)
+    print()
+    for label, uri in rows:
+        print(f"  {label:<{w}}  {uri}")
+    print()
+
+
+def lookup_taxon(
+    id_string: str, api_key: str | None, batch_size: int, markdown: bool,
+) -> tuple[list[int], dict[int, str]]:
+    """
+    Parse a comma-delimited string of taxon IDs and/or scientific names,
+    resolve any names to NCBITaxon IDs via the NCBI API, display results,
+    and return ``(resolved_ids, id_to_name)`` where:
+
+    - ``resolved_ids`` preserves the original input order (duplicates removed).
+    - ``id_to_name`` maps each successfully resolved ID back to the input name.
+
+    Output is a simple aligned text list by default; pass ``markdown=True``
+    for the full comparison table.
+    """
+    # Tokenise preserving original order
+    tokens     = [t.strip() for t in id_string.split(',') if t.strip()]
+    name_tokens = [t for t in tokens if not t.isdigit()]
+
+    name_to_id: dict[str, int | None] = {}
+    id_to_name: dict[int, str]         = {}
+
+    if name_tokens:
+        print(
+            f"Resolving {len(name_tokens)} scientific name(s) to NCBITaxon IDs ...",
+            file=sys.stderr,
+        )
+        name_to_id = lookup_names_via_ncbi(name_tokens, api_key, batch_size)
+        for name, tid in name_to_id.items():
+            if tid is not None:
+                id_to_name[tid] = name
+
+    # Build resolved ID list in original input order, deduplicating
+    seen: set[int]    = set()
+    resolved_ids: list[int] = []
+    for token in tokens:
+        tid = int(token) if token.isdigit() else name_to_id.get(token)
+        if tid is not None and tid not in seen:
+            resolved_ids.append(tid)
+            seen.add(tid)
+
+    if not resolved_ids:
+        print("Error: no valid taxon IDs or resolvable names provided.", file=sys.stderr)
         sys.exit(1)
 
     if not api_key:
@@ -467,7 +537,12 @@ def lookup_taxon(id_string: str, api_key: str | None) -> None:
             file=sys.stderr,
         )
 
-    _print_lookup_table(queried_ids, api_key)
+    if markdown:
+        _print_lookup_table(resolved_ids, api_key)
+    else:
+        _print_simple_report(tokens, name_to_id)
+
+    return resolved_ids, id_to_name
 
 
 # ---------------------------------------------------------------------------
@@ -1033,7 +1108,7 @@ def check_taxon_column(
 
     if update_mode is None:
         print(
-            "\n  (Use --update or --update-auto to look up and add missing entries via NCBI.)",
+            "\n  (Use --review or --review-auto to look up and add missing entries via NCBI.)",
             file=sys.stderr,
         )
         return
@@ -1158,32 +1233,47 @@ def main() -> None:
         ),
     )
 
-    # -l is mutually exclusive with --update, --update-auto, -i, and --sync-names
+    # -l is mutually exclusive with --review, --review-auto, -i, and --sync-names
     parser.add_argument(
         "-l", "--lookup",
-        metavar="IDs",
+        metavar="ID_OR_NAME,...",
         help=(
-            "Comma-delimited numeric NCBITaxon IDs to look up. "
-            "Prints a markdown comparison table and exits. "
-            "Cannot be combined with --update, --update-auto, -i, or --sync-names."
+            "Comma-delimited NCBITaxon IDs and/or scientific names to look up. "
+            "Scientific names are resolved to IDs via the NCBI API. "
+            "Prints a simple name → URI list in input order by default; "
+            "use --markdown for a full comparison table. "
+            "Combine with -i to also insert resolved IDs into ncbitaxon_ontofox.txt; "
+            "add --review to prompt before each insertion. "
+            "Cannot be combined with --sync-names, or with --review/--review-auto "
+            "unless -i is also present."
+        ),
+    )
+    parser.add_argument(
+        "--markdown",
+        action="store_true",
+        default=False,
+        help=(
+            "With -l/--lookup: display a full markdown comparison table instead of "
+            "the default simple name → URI list."
         ),
     )
 
-    update_group = parser.add_mutually_exclusive_group()
-    update_group.add_argument(
-        "--update",
+    review_group = parser.add_mutually_exclusive_group()
+    review_group.add_argument(
+        "--review",
         action="store_true",
         default=False,
         help=(
-            "Update the input file, prompting to approve each replacement one at a time. "
+            "Review and apply replacements to the input file interactively, "
+            "prompting to approve each one. "
             "A lookup table is displayed for each candidate before prompting."
         ),
     )
-    update_group.add_argument(
-        "--update-auto",
+    review_group.add_argument(
+        "--review-auto",
         action="store_true",
         default=False,
-        help="Update the input file, applying all replacements without prompting.",
+        help="Apply all replacements to the input file automatically without prompting.",
     )
     parser.add_argument(
         "--sync-names",
@@ -1194,7 +1284,7 @@ def main() -> None:
             '# "Current Scientific Name" comment with the name in double quotes. '
             "Corrects stale quoted names and adds missing ones. "
             "Any text after the quoted name is preserved. "
-            "Can be combined with --update."
+            "Can be combined with --review."
         ),
     )
     parser.add_argument(
@@ -1246,21 +1336,102 @@ def main() -> None:
     )
     args = parser.parse_args()
 
-    # --- -l/--lookup: show table and exit (incompatible with update/import) ---
+    # --- -l/--lookup: show table, optionally insert into ontofox, then exit ---
     if args.lookup:
+        # --review/--review-auto are allowed only when -i is also set (they
+        # control prompting for ontofox insertion, not file replacement).
         blocked = [
             opt for opt, flag in [
-                ('--update',      args.update),
-                ('--update-auto', args.update_auto),
-                ('-i/--import',   args.add_to_ontofox),
-                ('--sync-names',  args.sync_names),
+                ('--review',     args.review     and not args.add_to_ontofox),
+                ('--review-auto', args.review_auto and not args.add_to_ontofox),
+                ('--sync-names', args.sync_names),
             ] if flag
         ]
         if blocked:
             parser.error(
                 f"-l/--lookup cannot be combined with: {', '.join(blocked)}"
             )
-        lookup_taxon(args.lookup, args.api_key)
+
+        resolved_ids, id_to_name = lookup_taxon(
+            args.lookup, args.api_key, args.batch_size, markdown=args.markdown
+        )
+
+        if args.add_to_ontofox:
+            if not ONTOFOX_PATH.exists():
+                print(f"Error: OntoFox file not found at {ONTOFOX_PATH}", file=sys.stderr)
+            else:
+                ontofox_ids = set(extract_ids_from_ontofox(ONTOFOX_PATH))
+                candidates  = [id_ for id_ in resolved_ids if id_ not in ontofox_ids]
+
+                if not candidates:
+                    print(
+                        f"\nAll {len(resolved_ids)} resolved ID(s) already present "
+                        f"in {ONTOFOX_PATH}.",
+                        file=sys.stderr,
+                    )
+                else:
+                    # Validate candidates against NCBI and collect names in one
+                    # call — IDs that NCBI returns no data for are silently absent
+                    # from the result and must not be counted or prompted.
+                    print(
+                        f"\nValidating {len(candidates)} candidate ID(s) against NCBI ...",
+                        file=sys.stderr,
+                    )
+                    ncbi_names = fetch_names(candidates, args.api_key, args.batch_size)
+                    # Prefer names already known from the lookup resolution step
+                    for id_, name in id_to_name.items():
+                        ncbi_names.setdefault(id_, name)
+
+                    missing  = [id_ for id_ in candidates if id_ in ncbi_names]
+                    n_skip   = len(candidates) - len(missing)
+                    skip_note = f" ({n_skip} skipped — no NCBI data)" if n_skip else ""
+
+                    if not missing:
+                        print(
+                            f"\nNo valid NCBI ID(s) to add to {ONTOFOX_PATH}{skip_note}.",
+                            file=sys.stderr,
+                        )
+                    else:
+                        print(
+                            f"\n{len(missing)} ID(s) to add to {ONTOFOX_PATH}{skip_note}.",
+                            file=sys.stderr,
+                        )
+                        if args.review:
+                            ids_to_add: list[int] = []
+                            for id_ in missing:
+                                name_label = ncbi_names.get(id_)
+                                display = (
+                                    f"NCBITaxon_{id_}  ({name_label})"
+                                    if name_label else f"NCBITaxon_{id_}"
+                                )
+                                answer = _read_tty(
+                                    f"  Add {display} to {ONTOFOX_PATH}? [y/n] (y): "
+                                )
+                                if answer != 'n':
+                                    ids_to_add.append(id_)
+                        else:  # --review-auto or plain -i: add all
+                            ids_to_add = missing
+                            print(
+                                f"  Auto-adding all {len(ids_to_add)} ID(s) ...",
+                                file=sys.stderr,
+                            )
+
+                        if ids_to_add:
+                            n_added = insert_into_ontofox(
+                                ONTOFOX_PATH, ids_to_add, ncbi_names, 'lookup'
+                            )
+                            print(
+                                f"  Added {n_added} term(s) to {ONTOFOX_PATH}.",
+                                file=sys.stderr,
+                            )
+                            print(
+                                f"\n  Note: run 'sh run.sh make refresh-ncbitaxon' to "
+                                f"regenerate ncbitaxon_import.owl from the updated list.",
+                                file=sys.stderr,
+                            )
+                        else:
+                            print("  No entries added.", file=sys.stderr)
+
         sys.exit(0)
 
     # --- --check-missing: legacy import-gap check ---
@@ -1271,15 +1442,15 @@ def main() -> None:
     # --- Normal replacement-detection flow ---
 
     # Determine update mode
-    if args.update:
+    if args.review:
         update_mode = 'interactive'
-    elif args.update_auto:
+    elif args.review_auto:
         update_mode = 'auto'
     else:
         update_mode = None
 
     if update_mode and args.ids:
-        print("Warning: --update/--update-auto has no effect when --ids is used (no file to update).",
+        print("Warning: --review/--review-auto has no effect when --ids is used (no file to update).",
               file=sys.stderr)
         update_mode = None
 
