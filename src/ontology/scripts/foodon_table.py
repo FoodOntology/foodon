@@ -125,7 +125,7 @@ def md_linkify(cell):
 		part = part.strip();
 		if part.startswith('obo:'):
 			local = part[4:];
-			result.append(f'[{local}]({OBO_URI_BASE}{local})');
+			result.append(f'[{local.replace("_", ":", 1)}]({OBO_URI_BASE}{local})');
 		else:
 			sep = part.find(':');
 			if sep > 0:
