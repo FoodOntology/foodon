@@ -324,6 +324,7 @@ Declaration(Class(obo:FOODON_03470179))
 Declaration(Class(obo:FOODON_03470180))
 Declaration(Class(obo:FOODON_03470181))
 Declaration(Class(obo:FOODON_03470182))
+Declaration(Class(obo:FOODON_03530206))
 Declaration(Class(obo:OBI_0000967))
 Declaration(Class(obo:PO_0009053))
 Declaration(Class(obo:PO_0020055))
@@ -413,7 +414,6 @@ AnnotationAssertion(obo:IAO_0000114 obo:FOODON_00002451 "requires discussion")
 AnnotationAssertion(obo:IAO_0000115 obo:FOODON_00002451 "A process involving the physical transformation of a food source or food product into some derived organic material or food product"@en)
 AnnotationAssertion(dcterms:contributor obo:FOODON_00002451 <https://orcid.org/0000-0002-8844-9165>)
 AnnotationAssertion(rdfs:label obo:FOODON_00002451 "food transformation process"@en)
-SubClassOf(obo:FOODON_00002451 obo:BFO_0000015)
 SubClassOf(obo:FOODON_00002451 ObjectSomeValuesFrom(obo:OBI_0000299 obo:FOODON_00002403))
 
 # Class: obo:FOODON_00002462 (shallow frying)
@@ -471,7 +471,7 @@ SubClassOf(obo:FOODON_00002732 ObjectSomeValuesFrom(obo:OBI_0000299 obo:FOODON_0
 AnnotationAssertion(obo:IAO_0000115 obo:FOODON_00002740 "A process that applies packaging material to a food product for preservation, shipping and/or presentation purposes."@en)
 AnnotationAssertion(dcterms:contributor obo:FOODON_00002740 <https://orcid.org/0000-0002-8844-9165>)
 AnnotationAssertion(rdfs:label obo:FOODON_00002740 "food packaging process"@en)
-SubClassOf(obo:FOODON_00002740 obo:FOODON_00002451)
+SubClassOf(obo:FOODON_00002740 obo:FOODON_03530206)
 SubClassOf(obo:FOODON_00002740 ObjectSomeValuesFrom(obo:OBI_0000299 obo:FOODON_00002739))
 
 # Class: obo:FOODON_00002814 (ikajime)
@@ -903,12 +903,12 @@ AnnotationAssertion(oboInOwl:hasDbXref obo:FOODON_03450028 "http://www.langual.o
 AnnotationAssertion(rdfs:label obo:FOODON_03450028 "stir-frying"@en)
 SubClassOf(obo:FOODON_03450028 obo:FOODON_03450026)
 
-# Class: obo:FOODON_03450029 (deep-frying process)
+# Class: obo:FOODON_03450029 (deep-frying)
 
 AnnotationAssertion(obo:IAO_0000115 obo:FOODON_03450029 "Cooked in hot fat or oil deep enough to immerse the food entirely."@en)
 AnnotationAssertion(oboInOwl:hasDbXref obo:FOODON_03450029 "http://www.langual.org/langual_thesaurus.asp?termid=G0029")
 AnnotationAssertion(oboInOwl:hasExactSynonym obo:FOODON_03450029 "deep-frying"@en)
-AnnotationAssertion(rdfs:label obo:FOODON_03450029 "deep-frying process"@en)
+AnnotationAssertion(rdfs:label obo:FOODON_03450029 "deep-frying"@en)
 SubClassOf(obo:FOODON_03450029 obo:FOODON_03450025)
 SubClassOf(obo:FOODON_03450029 ObjectSomeValuesFrom(obo:OBI_0000299 obo:FOODON_03307052))
 
@@ -952,13 +952,13 @@ AnnotationAssertion(rdfs:label obo:FOODON_03450034 "heating container by water b
 AnnotationAssertion(rdfs:seeAlso obo:FOODON_03450034 "http://purl.obolibrary.org/obo/FOODON_03450033")
 SubClassOf(obo:FOODON_03450034 obo:FOODON_03450032)
 
-# Class: obo:FOODON_03450035 (shallow frying process)
+# Class: obo:FOODON_03450035 (shallow frying (sensu chinese cooking))
 
 AnnotationAssertion(obo:IAO_0000115 obo:FOODON_03450035 "A chinese cooking technique similar to sauteing in which thick slices or chunks of floured or battered ingredients are slow seared over moderate to low heat."@en)
 AnnotationAssertion(obo:IAO_0000119 obo:FOODON_03450035 "Kuo, The key to chinese cooking, Knopf, 1977, p.87")
 AnnotationAssertion(oboInOwl:hasDbXref obo:FOODON_03450035 "http://www.langual.org/langual_thesaurus.asp?termid=G0035")
 AnnotationAssertion(oboInOwl:hasExactSynonym obo:FOODON_03450035 "shallow frying"@en)
-AnnotationAssertion(rdfs:label obo:FOODON_03450035 "shallow frying process"@en)
+AnnotationAssertion(rdfs:label obo:FOODON_03450035 "shallow frying (sensu chinese cooking)"@en)
 SubClassOf(obo:FOODON_03450035 obo:FOODON_03450025)
 
 # Class: obo:FOODON_03450036 (steeping)
@@ -1034,12 +1034,12 @@ AnnotationAssertion(rdfs:comment obo:FOODON_03450046 "LanguaL curation note: Use
 AnnotationAssertion(rdfs:label obo:FOODON_03450046 "blind baking"@en)
 SubClassOf(obo:FOODON_03450046 obo:FOODON_03450005)
 
-# Class: obo:FOODON_03450047 (pressure frying process)
+# Class: obo:FOODON_03450047 (pressure frying)
 
 AnnotationAssertion(oboInOwl:hasDbXref obo:FOODON_03450047 "http://www.langual.org/langual_thesaurus.asp?termid=G0047")
 AnnotationAssertion(oboInOwl:hasExactSynonym obo:FOODON_03450047 "pressure frying"@en)
 AnnotationAssertion(rdfs:comment obo:FOODON_03450047 "LanguaL curation note: Use when e.g. meat and cooking oil are brought to high temperatures while pressure is held high enough that the water within is prevented from boiling off."@en)
-AnnotationAssertion(rdfs:label obo:FOODON_03450047 "pressure frying process"@en)
+AnnotationAssertion(rdfs:label obo:FOODON_03450047 "pressure frying"@en)
 SubClassOf(obo:FOODON_03450047 obo:FOODON_03450025)
 
 # Class: obo:FOODON_03460101 (lactic acid fermentation)

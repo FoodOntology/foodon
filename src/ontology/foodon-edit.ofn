@@ -73,10 +73,7 @@ Declaration(Class(obo:CEPH_0000256))
 Declaration(Class(obo:CEPH_0000285))
 Declaration(Class(obo:CHEBI_12777))
 Declaration(Class(obo:CHEBI_17754))
-Declaration(Class(obo:CHEBI_33973))
-Declaration(Class(obo:CHEBI_35155))
 Declaration(Class(obo:CHEBI_7916))
-Declaration(Class(obo:CHEBI_82663))
 Declaration(Class(obo:FLOPO_0016496))
 Declaration(Class(obo:FOODON_00000000))
 Declaration(Class(obo:FOODON_00000015))
@@ -1168,6 +1165,8 @@ Declaration(Class(obo:FOODON_00005738))
 Declaration(Class(obo:FOODON_00005739))
 Declaration(Class(obo:FOODON_00005740))
 Declaration(Class(obo:FOODON_00005741))
+Declaration(Class(obo:FOODON_00005742))
+Declaration(Class(obo:FOODON_00005743))
 Declaration(Class(obo:FOODON_00005748))
 Declaration(Class(obo:FOODON_00005749))
 Declaration(Class(obo:FOODON_00005750))
@@ -11070,10 +11069,12 @@ SubClassOf(obo:CHEBI_28972 obo:FOODON_03412972)
 # Class: obo:CHEBI_29377 (sodium carbonate)
 
 AnnotationAssertion(obo:IAO_0000412 obo:CHEBI_29377 <http://langual.org>)
+AnnotationAssertion(obo:IAO_0100001 obo:CHEBI_29377 obo:CHEBI_29377)
 AnnotationAssertion(oboInOwl:hasDbXref obo:CHEBI_29377 langual:B3247)
 AnnotationAssertion(oboInOwl:hasDbXref obo:CHEBI_29377 "Codex::500(i)")
 AnnotationAssertion(oboInOwl:hasDbXref obo:CHEBI_29377 "Europe::500")
 AnnotationAssertion(rdfs:comment obo:CHEBI_29377 "LanguaL term definition: Food additive; technological purpose(s): acidity regulator, anticaking agent, raising agent."@en)
+AnnotationAssertion(owl:deprecated obo:CHEBI_29377 "true"^^xsd:boolean)
 SubClassOf(obo:CHEBI_29377 obo:FOODON_03412972)
 
 # Class: obo:CHEBI_29864 (mannitol)
@@ -11574,10 +11575,6 @@ AnnotationAssertion(oboInOwl:hasSynonym obo:CHEBI_33969 "gold, metallic"@en)
 AnnotationAssertion(rdfs:comment obo:CHEBI_33969 "LanguaL term definition: Food additive; technological purpose(s): colour."@en)
 SubClassOf(obo:CHEBI_33969 obo:FOODON_03412972)
 
-# Class: obo:CHEBI_33973 (obo:CHEBI_33973)
-
-SubClassOf(obo:CHEBI_33973 obo:CHEBI_33259)
-
 # Class: obo:CHEBI_34247 (2,6-di-tert-butyl-4-methylphenol)
 
 AnnotationAssertion(obo:IAO_0000118 obo:CHEBI_34247 "butylated hydroxytoluene (bht)"@en)
@@ -11635,10 +11632,6 @@ AnnotationAssertion(oboInOwl:hasDbXref obo:CHEBI_35150 "Codex::526")
 AnnotationAssertion(oboInOwl:hasDbXref obo:CHEBI_35150 "Europe::526")
 AnnotationAssertion(rdfs:comment obo:CHEBI_35150 "LanguaL term definition: Food additive; technological purpose(s): acidity regulator, firming agent."@en)
 SubClassOf(obo:CHEBI_35150 obo:FOODON_03412972)
-
-# Class: obo:CHEBI_35155 (obo:CHEBI_35155)
-
-SubClassOf(obo:CHEBI_35155 obo:CHEBI_33259)
 
 # Class: obo:CHEBI_35366 (fatty acid)
 
@@ -12256,10 +12249,6 @@ AnnotationAssertion(oboInOwl:hasDbXref obo:CHEBI_82431 "Codex::952(iv)")
 AnnotationAssertion(oboInOwl:hasDbXref obo:CHEBI_82431 "Europe::952")
 AnnotationAssertion(rdfs:comment obo:CHEBI_82431 "LanguaL term definition: Food additive; technological purpose(s): sweetener."@en)
 SubClassOf(obo:CHEBI_82431 obo:FOODON_03412972)
-
-# Class: obo:CHEBI_82663 (obo:CHEBI_82663)
-
-SubClassOf(obo:CHEBI_82663 obo:CHEBI_33259)
 
 # Class: obo:CHEBI_83501 (acesulfame)
 
@@ -14315,11 +14304,11 @@ SubClassOf(obo:FOODON_00003061 obo:FOODON_03412126)
 # Class: obo:FOODON_00003071 (skunk currant)
 
 AnnotationAssertion(obo:IAO_0000114 obo:FOODON_00003071 obo:IAO_0000122)
-AnnotationAssertion(obo:IAO_0000115 obo:FOODON_00003071 "One or more whole skunk current berries"@en)
+AnnotationAssertion(obo:IAO_0000115 obo:FOODON_00003071 "A whole skunk current berry."@en)
 AnnotationAssertion(obo:IAO_0000117 obo:FOODON_00003071 <http://orcid.org/0000-0002-8844-9165>)
 AnnotationAssertion(dcterms:date obo:FOODON_00003071 "2019-08-24T21:23:06Z"^^xsd:dateTime)
 AnnotationAssertion(rdfs:label obo:FOODON_00003071 "skunk currant"@en)
-SubClassOf(obo:FOODON_00003071 obo:FOODON_03303397)
+SubClassOf(obo:FOODON_00003071 obo:FOODON_00005742)
 
 # Class: obo:FOODON_00003072 (Salvia elegans plant)
 
@@ -15182,12 +15171,12 @@ AnnotationAssertion(rdfs:seeAlso obo:FOODON_00003385 wikipedia:The_100-Mile_Diet
 SubClassOf(obo:FOODON_00003385 obo:FOODON_00002454)
 SubClassOf(obo:FOODON_00003385 obo:FOODON_00003384)
 
-# Class: obo:FOODON_00003386 (wild harvested plant)
+# Class: obo:FOODON_00003386 (wild harvested plant material)
 
 AnnotationAssertion(obo:IAO_0000115 obo:FOODON_00003386 "A plant or plant part that is obtained by foraging the natural environment."@en)
 AnnotationAssertion(obo:IAO_0000117 obo:FOODON_00003386 <http://orcid.org/0000-0002-8844-9165>)
 AnnotationAssertion(dcterms:date obo:FOODON_00003386 "2020-09-01T05:24:09Z"^^xsd:dateTime)
-AnnotationAssertion(rdfs:label obo:FOODON_00003386 "wild harvested plant"@en)
+AnnotationAssertion(rdfs:label obo:FOODON_00003386 "wild harvested plant material"@en)
 SubClassOf(obo:FOODON_00003386 obo:FOODON_00003378)
 
 # Class: obo:FOODON_00003387 (tunnel farming)
@@ -15526,7 +15515,7 @@ SubClassOf(obo:FOODON_00003519 obo:FOODON_00002473)
 
 AnnotationAssertion(obo:IAO_0000117 obo:FOODON_00003520 <http://orcid.org/0000-0002-8844-9165>)
 
-# Class: obo:FOODON_00003521 (berry)
+# Class: obo:FOODON_00003521 (culinary berry)
 
 AnnotationAssertion(obo:IAO_0000117 obo:FOODON_00003521 <http://orcid.org/0000-0002-8844-9165>)
 AnnotationAssertion(oboInOwl:hasExactSynonym obo:FOODON_00003521 "common berry"@en)
@@ -15674,16 +15663,6 @@ SubClassOf(obo:FOODON_00003585 obo:FOODON_00002277)
 
 AnnotationAssertion(obo:IAO_0000117 obo:FOODON_00003588 <http://orcid.org/0000-0002-8844-9165>)
 SubClassOf(obo:FOODON_00003588 obo:FOODON_00003041)
-
-# Class: obo:FOODON_00003592 (aggregate fruit)
-
-AnnotationAssertion(obo:IAO_0000115 obo:FOODON_00003592 "A fruit that develops from the merger of several ovaries that were separated in a single flower."@en)
-AnnotationAssertion(obo:IAO_0000117 obo:FOODON_00003592 <http://orcid.org/0000-0002-8844-9165>)
-AnnotationAssertion(obo:IAO_0000119 obo:FOODON_00003592 wikipedia:Aggregate_fruit)
-AnnotationAssertion(dcterms:date obo:FOODON_00003592 "2020-12-17T03:02:14Z"^^xsd:dateTime)
-AnnotationAssertion(oboInOwl:hasExactSynonym obo:FOODON_00003592 "etaerio"@en)
-AnnotationAssertion(rdfs:label obo:FOODON_00003592 "aggregate fruit"@en)
-SubClassOf(obo:FOODON_00003592 obo:PO_0009001)
 
 # Class: obo:FOODON_00003593 (acerola)
 
@@ -19483,6 +19462,21 @@ AnnotationAssertion(dcterms:contributor obo:FOODON_00005741 <https://orcid.org/0
 AnnotationAssertion(dcterms:date obo:FOODON_00005741 "2026-04-12T05:54:58Z"^^xsd:dateTime)
 AnnotationAssertion(rdfs:label obo:FOODON_00005741 "field pea (dried)"@en)
 SubClassOf(obo:FOODON_00005741 obo:FOODON_00003560)
+
+# Class: obo:FOODON_00005742 (currant)
+
+AnnotationAssertion(dcterms:contributor obo:FOODON_00005742 <https://orcid.org/0000-0002-8844-9165>)
+AnnotationAssertion(dcterms:date obo:FOODON_00005742 "2026-06-26T08:44:10Z"^^xsd:dateTime)
+AnnotationAssertion(rdfs:label obo:FOODON_00005742 "currant"@en)
+SubClassOf(obo:FOODON_00005742 obo:PO_0030108)
+
+# Class: obo:FOODON_00005743 (wild harvested organism material)
+
+AnnotationAssertion(obo:IAO_0100001 obo:FOODON_00005743 "A characteristic which indicates that an organism or organism part was harvested from a natural environment."@en)
+AnnotationAssertion(dcterms:contributor obo:FOODON_00005743 <https://orcid.org/0000-0002-8844-9165>)
+AnnotationAssertion(dcterms:date obo:FOODON_00005743 "2026-06-26T19:28:44Z"^^xsd:dateTime)
+AnnotationAssertion(rdfs:label obo:FOODON_00005743 "wild harvested organism material"@en)
+SubClassOf(obo:FOODON_00005743 obo:FOODON_00002470)
 
 # Class: obo:FOODON_00005748 (plant substance)
 
@@ -51740,14 +51734,15 @@ AnnotationAssertion(rdfs:comment obo:FOODON_03413049 "Food additive; technologic
 AnnotationAssertion(rdfs:label obo:FOODON_03413049 "calcium saccharin"@en)
 SubClassOf(obo:FOODON_03413049 obo:FOODON_03412972)
 
-# Class: obo:FOODON_03413050 (calcium silicate)
+# Class: obo:FOODON_03413050 (obsolete: calcium silicate)
 
-AnnotationAssertion(obo:IAO_0000114 obo:FOODON_03413050 obo:IAO_0000428)
+AnnotationAssertion(obo:IAO_0100001 obo:FOODON_03413050 obo:CHEBI_190294)
 AnnotationAssertion(oboInOwl:hasDbXref obo:FOODON_03413050 langual:B3050)
 AnnotationAssertion(oboInOwl:hasDbXref obo:FOODON_03413050 "Codex::552")
 AnnotationAssertion(oboInOwl:hasDbXref obo:FOODON_03413050 "Europe::552")
 AnnotationAssertion(rdfs:comment obo:FOODON_03413050 "Food additive; technological purpose(s): anticaking agent."@en)
-AnnotationAssertion(rdfs:label obo:FOODON_03413050 "calcium silicate"@en)
+AnnotationAssertion(rdfs:label obo:FOODON_03413050 "obsolete: calcium silicate"@en)
+AnnotationAssertion(owl:deprecated obo:FOODON_03413050 "true"^^xsd:boolean)
 SubClassOf(obo:FOODON_03413050 obo:FOODON_03412972)
 
 # Class: obo:FOODON_03413051 (calcium sorbate)
@@ -52978,6 +52973,7 @@ SubClassOf(obo:FOODON_03413259 obo:FOODON_03412972)
 # Class: obo:FOODON_03413262 (sodium malate)
 
 AnnotationAssertion(obo:IAO_0000114 obo:FOODON_03413262 obo:IAO_0000428)
+AnnotationAssertion(obo:IAO_0100001 obo:FOODON_03413262 obo:FOODON_03413262)
 AnnotationAssertion(oboInOwl:hasDbXref obo:FOODON_03413262 langual:B3262)
 AnnotationAssertion(oboInOwl:hasDbXref obo:FOODON_03413262 "Codex::350(ii)")
 AnnotationAssertion(oboInOwl:hasDbXref obo:FOODON_03413262 "Europe::350")
@@ -66410,21 +66406,25 @@ SubClassOf(obo:FOODON_03414402 obo:FOODON_03412972)
 # Class: obo:FOODON_03414403 (calcium malates)
 
 AnnotationAssertion(obo:IAO_0000114 obo:FOODON_03414403 obo:IAO_0000428)
+AnnotationAssertion(obo:IAO_0100001 obo:FOODON_03414403 obo:FOODON_03413045)
 AnnotationAssertion(oboInOwl:hasDbXref obo:FOODON_03414403 langual:B4403)
 AnnotationAssertion(oboInOwl:hasDbXref obo:FOODON_03414403 "Codex::352")
 AnnotationAssertion(oboInOwl:hasDbXref obo:FOODON_03414403 "Europe::352")
 AnnotationAssertion(rdfs:comment obo:FOODON_03414403 "Food additive."@en)
 AnnotationAssertion(rdfs:label obo:FOODON_03414403 "calcium malates"@en)
+AnnotationAssertion(owl:deprecated obo:FOODON_03414403 "true"^^xsd:boolean)
 SubClassOf(obo:FOODON_03414403 obo:FOODON_03412972)
 
 # Class: obo:FOODON_03414405 (ammonium carbonates)
 
 AnnotationAssertion(obo:IAO_0000114 obo:FOODON_03414405 obo:IAO_0000428)
+AnnotationAssertion(obo:IAO_0100001 obo:FOODON_03414405 obo:FOODON_03412997)
 AnnotationAssertion(oboInOwl:hasDbXref obo:FOODON_03414405 langual:B4405)
 AnnotationAssertion(oboInOwl:hasDbXref obo:FOODON_03414405 "Codex::503")
 AnnotationAssertion(oboInOwl:hasDbXref obo:FOODON_03414405 "Europe::503")
 AnnotationAssertion(rdfs:comment obo:FOODON_03414405 "Food additive."@en)
 AnnotationAssertion(rdfs:label obo:FOODON_03414405 "ammonium carbonates"@en)
+AnnotationAssertion(owl:deprecated obo:FOODON_03414405 "true"^^xsd:boolean)
 SubClassOf(obo:FOODON_03414405 obo:FOODON_03412972)
 
 # Class: obo:FOODON_03414406 (basic methacrylate copolymer)
@@ -66468,14 +66468,16 @@ AnnotationAssertion(rdfs:comment obo:FOODON_03414412 "Food additive; technologic
 AnnotationAssertion(rdfs:label obo:FOODON_03414412 "cross-linked sodium carboxy methyl cellulose, cross linked cellulose gum"@en)
 SubClassOf(obo:FOODON_03414412 obo:FOODON_03412972)
 
-# Class: obo:FOODON_03414413 (calcium phosphates)
+# Class: obo:FOODON_03414413 (obsolete: calcium phosphates)
 
 AnnotationAssertion(obo:IAO_0000114 obo:FOODON_03414413 obo:IAO_0000428)
+AnnotationAssertion(obo:IAO_0100001 obo:FOODON_03414413 obo:CHEBI_77635)
 AnnotationAssertion(oboInOwl:hasDbXref obo:FOODON_03414413 langual:B4413)
 AnnotationAssertion(oboInOwl:hasDbXref obo:FOODON_03414413 "Codex::341")
 AnnotationAssertion(oboInOwl:hasDbXref obo:FOODON_03414413 "Europe::341")
 AnnotationAssertion(rdfs:comment obo:FOODON_03414413 "Food additive."@en)
-AnnotationAssertion(rdfs:label obo:FOODON_03414413 "calcium phosphates"@en)
+AnnotationAssertion(rdfs:label obo:FOODON_03414413 "obsolete: calcium phosphates"@en)
+AnnotationAssertion(owl:deprecated obo:FOODON_03414413 "true"^^xsd:boolean)
 SubClassOf(obo:FOODON_03414413 obo:FOODON_03412972)
 
 # Class: obo:FOODON_03414415 (cassia gum)
@@ -66502,11 +66504,13 @@ SubClassOf(obo:FOODON_03414417 obo:FOODON_03412972)
 # Class: obo:FOODON_03414418 (magnesium phosphates)
 
 AnnotationAssertion(obo:IAO_0000114 obo:FOODON_03414418 obo:IAO_0000428)
+AnnotationAssertion(obo:IAO_0100001 obo:FOODON_03414418 obo:CHEBI_190298)
 AnnotationAssertion(oboInOwl:hasDbXref obo:FOODON_03414418 langual:B4418)
 AnnotationAssertion(oboInOwl:hasDbXref obo:FOODON_03414418 "Codex::343")
 AnnotationAssertion(oboInOwl:hasDbXref obo:FOODON_03414418 "Europe::343")
 AnnotationAssertion(rdfs:comment obo:FOODON_03414418 "Food additive."@en)
 AnnotationAssertion(rdfs:label obo:FOODON_03414418 "magnesium phosphates"@en)
+AnnotationAssertion(owl:deprecated obo:FOODON_03414418 "true"^^xsd:boolean)
 SubClassOf(obo:FOODON_03414418 obo:FOODON_03412972)
 
 # Class: obo:FOODON_03414420 (soybean hemicellulose)
@@ -66532,11 +66536,13 @@ SubClassOf(obo:FOODON_03414421 obo:FOODON_03412972)
 # Class: obo:FOODON_03414422 (sodium citrates)
 
 AnnotationAssertion(obo:IAO_0000114 obo:FOODON_03414422 obo:IAO_0000428)
+AnnotationAssertion(obo:IAO_0100001 obo:FOODON_03414422 obo:CHEBI_53258)
 AnnotationAssertion(oboInOwl:hasDbXref obo:FOODON_03414422 langual:B4422)
 AnnotationAssertion(oboInOwl:hasDbXref obo:FOODON_03414422 "Codex::331")
 AnnotationAssertion(oboInOwl:hasDbXref obo:FOODON_03414422 "Europe::331")
 AnnotationAssertion(rdfs:comment obo:FOODON_03414422 "Food additive."@en)
 AnnotationAssertion(rdfs:label obo:FOODON_03414422 "sodium citrates"@en)
+AnnotationAssertion(owl:deprecated obo:FOODON_03414422 "true"^^xsd:boolean)
 SubClassOf(obo:FOODON_03414422 obo:FOODON_03412972)
 
 # Class: obo:FOODON_03414423 (sodium malates)
@@ -66547,17 +66553,20 @@ AnnotationAssertion(oboInOwl:hasDbXref obo:FOODON_03414423 "Codex::350")
 AnnotationAssertion(oboInOwl:hasDbXref obo:FOODON_03414423 "Europe::350")
 AnnotationAssertion(rdfs:comment obo:FOODON_03414423 "Food additive."@en)
 AnnotationAssertion(rdfs:label obo:FOODON_03414423 "sodium malates"@en)
+AnnotationAssertion(owl:deprecated obo:FOODON_03414423 "true"^^xsd:boolean)
 SubClassOf(obo:FOODON_03414423 obo:FOODON_03412972)
 
 # Class: obo:FOODON_03414425 (sodium sulphates)
 
 AnnotationAssertion(obo:IAO_0000114 obo:FOODON_03414425 obo:IAO_0000428)
+AnnotationAssertion(obo:IAO_0100001 obo:FOODON_03414425 obo:CHEBI_32149)
 AnnotationAssertion(oboInOwl:hasDbXref obo:FOODON_03414425 langual:B4425)
 AnnotationAssertion(oboInOwl:hasDbXref obo:FOODON_03414425 "Codex::514")
 AnnotationAssertion(oboInOwl:hasDbXref obo:FOODON_03414425 "Europe::514")
 AnnotationAssertion(oboInOwl:hasSynonym obo:FOODON_03414425 "sodium sulfates"@en)
 AnnotationAssertion(rdfs:comment obo:FOODON_03414425 "Food additive."@en)
 AnnotationAssertion(rdfs:label obo:FOODON_03414425 "sodium sulphates"@en)
+AnnotationAssertion(owl:deprecated obo:FOODON_03414425 "true"^^xsd:boolean)
 SubClassOf(obo:FOODON_03414425 obo:FOODON_03412972)
 
 # Class: obo:FOODON_03414428 (salt of aspartame-acesulfame)
@@ -66667,22 +66676,26 @@ SubClassOf(obo:FOODON_03414442 obo:FOODON_03412972)
 # Class: obo:FOODON_03414443 (potassium sulphates)
 
 AnnotationAssertion(obo:IAO_0000114 obo:FOODON_03414443 obo:IAO_0000428)
+AnnotationAssertion(obo:IAO_0100001 obo:FOODON_03414443 obo:CHEBI_32036)
 AnnotationAssertion(oboInOwl:hasDbXref obo:FOODON_03414443 langual:B4443)
 AnnotationAssertion(oboInOwl:hasDbXref obo:FOODON_03414443 "Codex::515")
 AnnotationAssertion(oboInOwl:hasDbXref obo:FOODON_03414443 "Europe::515")
 AnnotationAssertion(oboInOwl:hasSynonym obo:FOODON_03414443 "potassium sulfates"@en)
 AnnotationAssertion(rdfs:comment obo:FOODON_03414443 "Food additive."@en)
 AnnotationAssertion(rdfs:label obo:FOODON_03414443 "potassium sulphates"@en)
+AnnotationAssertion(owl:deprecated obo:FOODON_03414443 "true"^^xsd:boolean)
 SubClassOf(obo:FOODON_03414443 obo:FOODON_03412972)
 
 # Class: obo:FOODON_03414444 (sodium acetates)
 
 AnnotationAssertion(obo:IAO_0000114 obo:FOODON_03414444 obo:IAO_0000428)
+AnnotationAssertion(obo:IAO_0100001 obo:FOODON_03414444 obo:CHEBI_32954)
 AnnotationAssertion(oboInOwl:hasDbXref obo:FOODON_03414444 langual:B4444)
 AnnotationAssertion(oboInOwl:hasDbXref obo:FOODON_03414444 "Codex::262")
 AnnotationAssertion(oboInOwl:hasDbXref obo:FOODON_03414444 "Europe::262")
 AnnotationAssertion(rdfs:comment obo:FOODON_03414444 "Food additive."@en)
 AnnotationAssertion(rdfs:label obo:FOODON_03414444 "sodium acetates"@en)
+AnnotationAssertion(owl:deprecated obo:FOODON_03414444 "true"^^xsd:boolean)
 SubClassOf(obo:FOODON_03414444 obo:FOODON_03412972)
 
 # Class: obo:FOODON_03414445 (processed euchema seaweed)
@@ -66699,11 +66712,13 @@ SubClassOf(obo:FOODON_03414445 obo:FOODON_03412972)
 # Class: obo:FOODON_03414448 (riboflavins)
 
 AnnotationAssertion(obo:IAO_0000114 obo:FOODON_03414448 obo:IAO_0000428)
+AnnotationAssertion(obo:IAO_0100001 obo:FOODON_03414448 obo:CHEBI_17015)
 AnnotationAssertion(oboInOwl:hasDbXref obo:FOODON_03414448 langual:B4448)
 AnnotationAssertion(oboInOwl:hasDbXref obo:FOODON_03414448 "Codex::101")
 AnnotationAssertion(oboInOwl:hasDbXref obo:FOODON_03414448 "Europe::101")
 AnnotationAssertion(rdfs:comment obo:FOODON_03414448 "Food additive."@en)
 AnnotationAssertion(rdfs:label obo:FOODON_03414448 "riboflavins"@en)
+AnnotationAssertion(owl:deprecated obo:FOODON_03414448 "true"^^xsd:boolean)
 SubClassOf(obo:FOODON_03414448 obo:FOODON_03412972)
 
 # Class: obo:FOODON_03414449 (saccharins)
@@ -96433,6 +96448,8 @@ AnnotationAssertion(oboInOwl:hasDbXref obo:PO_0009060 langual:C0276)
 AnnotationAssertion(oboInOwl:hasDbXref obo:PO_0009073 langual:C0277)
 AnnotationAssertion(oboInOwl:hasDbXref obo:PO_0020038 langual:C0304)
 AnnotationAssertion(rdfs:comment obo:PO_0020038 "LanguaL definition: Leafstalk, the slender, usually cylindrical portion of a leaf, which supports the blade and is attached to the stem (Source: Webster's)"@en)
+AnnotationAssertion(oboInOwl:hasExactSynonym obo:PO_0025628 "etaerio"@en)
+AnnotationAssertion(rdfs:seeAlso obo:PO_0025628 wikipedia:Aggregate_fruit)
 AnnotationAssertion(oboInOwl:hasExactSynonym obo:PO_0030103 "whole pit fruit"@en)
 AnnotationAssertion(rdfs:label obo:RO_0002206 "expressed in")
 AnnotationAssertion(rdfs:label obo:RO_0002207 "directly develops from")
