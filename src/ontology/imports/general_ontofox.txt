@@ -340,7 +340,7 @@ http://purl.obolibrary.org/obo/ENVO_01000404 # manufactured plastic
 http://purl.obolibrary.org/obo/ENVO_01000575 # wax
 http://purl.obolibrary.org/obo/ENVO_02000090 # ash
 http://purl.obolibrary.org/obo/ENVO_01000480 # glass
-
+http://purl.obolibrary.org/obo/ENVO_00010506 # emulsion
 
 http://purl.obolibrary.org/obo/ENVO_03501329 # spoon
 http://purl.obolibrary.org/obo/ENVO_03501328 # fork
@@ -608,6 +608,8 @@ includeAllChildren
 http://purl.obolibrary.org/obo/PATO_0001547 # quality of a gas 
 http://purl.obolibrary.org/obo/PATO_0001548 # quality of a liquid 
 includeAllChildren
+http://purl.obolibrary.org/obo/PATO_0001985 # frozen
+
 http://purl.obolibrary.org/obo/PATO_0000586 # increased size
 http://purl.obolibrary.org/obo/PATO_0000587 # decreased size
 http://purl.obolibrary.org/obo/PATO_0001708 # 1-D extent
@@ -625,6 +627,8 @@ http://purl.obolibrary.org/obo/PATO_0001421 # alive
 http://purl.obolibrary.org/obo/PATO_0001422 # dead
 http://purl.obolibrary.org/obo/PATO_0000309 # young
 http://purl.obolibrary.org/obo/PATO_0000308 # old
+http://purl.obolibrary.org/obo/PATO_0000956 # sterile
+http://purl.obolibrary.org/obo/PATO_ 
 
 [Top level source term URIs and target direct superclass URIs]
 http://purl.obolibrary.org/obo/PATO_0000001
