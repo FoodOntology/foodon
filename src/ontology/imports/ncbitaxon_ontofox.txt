@@ -4517,6 +4517,28 @@ http://purl.obolibrary.org/obo/NCBITaxon_3242070 # "Passiflora popenovii"
 http://purl.obolibrary.org/obo/NCBITaxon_3497 # "Morus <eudicots>"
 http://purl.obolibrary.org/obo/NCBITaxon_34444 # "Lactarius <basidiomycete fungi>"
 
+# Added 2026-05-31 — matched from supplied scientific name list
+# (original names in parentheses where spelling or genus differs)
+http://purl.obolibrary.org/obo/NCBITaxon_261882 # "Austromegabalanus psittacus" (Megabalanus psittacus)
+http://purl.obolibrary.org/obo/NCBITaxon_626242 # "Epinephelus poecilonotus" (Epinephalus poecitonotus)
+http://purl.obolibrary.org/obo/NCBITaxon_1074816 # "Epinephelus fuscoguttatus x Epinephelus lanceolatus" (Epinephelus fucoglottus x Epinephelus lanceolatus)
+http://purl.obolibrary.org/obo/NCBITaxon_3000363 # "Polynemus decadactylus" (Galeoides decadactylus)
+http://purl.obolibrary.org/obo/NCBITaxon_435217 # "Parupeneus ciliatus" (Parupenaeus cilatus)
+http://purl.obolibrary.org/obo/NCBITaxon_1572340 # "Prolatilus jugularis"
+http://purl.obolibrary.org/obo/NCBITaxon_3127375 # "Thyrsites lepidopodea" (Thyrsitops lepidopoides)
+
+# Added from lookup
+http://purl.obolibrary.org/obo/NCBITaxon_1308 # "Streptococcus thermophilus"
+http://purl.obolibrary.org/obo/NCBITaxon_1358 # "Lactococcus lactis"
+http://purl.obolibrary.org/obo/NCBITaxon_1579 # "Lactobacillus acidophilus"
+http://purl.obolibrary.org/obo/NCBITaxon_1582 # "Lacticaseibacillus casei"
+http://purl.obolibrary.org/obo/NCBITaxon_1585 # "Lactobacillus delbrueckii subsp. bulgaricus"
+http://purl.obolibrary.org/obo/NCBITaxon_1597 # "Lacticaseibacillus paracasei"
+http://purl.obolibrary.org/obo/NCBITaxon_1752 # "Propionibacterium freudenreichii subsp. shermanii"
+http://purl.obolibrary.org/obo/NCBITaxon_28025 # "Bifidobacterium animalis"
+http://purl.obolibrary.org/obo/NCBITaxon_41200 # "Bifidobacterium sp."
+http://purl.obolibrary.org/obo/NCBITaxon_47715 # "Lacticaseibacillus rhamnosus"
+
 [Top level source term URIs and target direct superclass URIs]
 http://purl.obolibrary.org/obo/NCBITaxon_2 # "Bacteria"
 http://purl.obolibrary.org/obo/NCBITaxon_2759 # "Eukaryota"
