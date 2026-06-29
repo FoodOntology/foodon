@@ -22521,11 +22521,11 @@ SubClassOf(obo:FOODON_00002807 obo:FOODON_03309936)
 
 # Class: obo:FOODON_00002808 (olive oil (extra-virgin))
 
+AnnotationAssertion(obo:IAO_0000114 obo:FOODON_00002808 obo:IAO_0000122)
 AnnotationAssertion(obo:IAO_0000115 obo:FOODON_00002808 "Extra virgin olive oil is a virgin olive oil which has a free acidity, expressed as oleic acid, of not more than 0.8 grams per 100 grams."@en)
 AnnotationAssertion(obo:IAO_0000119 obo:FOODON_00002808 "https://static.oliveoiltimes.com/library/ioc-olive-oil-standard.pdf"^^xsd:anyURI)
 AnnotationAssertion(dcterms:contributor obo:FOODON_00002808 <https://orcid.org/0000-0002-8844-9165>)
 AnnotationAssertion(dcterms:date obo:FOODON_00002808 "2019-07-10T22:48:47Z"^^xsd:dateTime)
-AnnotationAssertion(oboInOwl:hasExactSynonym obo:FOODON_00002808 obo:IAO_0000122)
 AnnotationAssertion(oboInOwl:hasExactSynonym obo:FOODON_00002808 "extra virgin olive oil"@en)
 AnnotationAssertion(rdfs:label obo:FOODON_00002808 "olive oil (extra-virgin)"@en)
 SubClassOf(obo:FOODON_00002808 obo:FOODON_03306633)
