@@ -436,7 +436,7 @@ if __name__ == "__main__":
 		# Note, all boolean switches require a true or false parameter.
 		# NOTE: Using .owl output format because due to robot issue, only this
 		# preserves xmlns: prefixes.
-		subprocess.check_output(["robot", "merge", "--input", "../foodon-edit.ofn", 'reason', '--reasoner','ELK','--exclude-duplicate-axioms', "relax","--output", INPUT_FOODON_ONTOLOGY]);
+		subprocess.check_output(["robot", "merge", "--input", "../foodon-edit.ofn", 'reason', '--reasoner','ELK','--exclude-duplicate-axioms','true', "relax","--include-subclass-of","true","--output", INPUT_FOODON_ONTOLOGY]);
 		#subprocess.check_output(["robot", "merge", "--input", "../foodon-edit.ofn", "--output", INPUT_FOODON_ONTOLOGY]);
 
 	# FIX CDNO ONTOLOGY PROBLEM where wrong label datatype exists
