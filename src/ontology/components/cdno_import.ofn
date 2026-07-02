@@ -14548,7 +14548,7 @@ AnnotationAssertion(obo:IAO_0000412 obo:CHEBI_38021 obo:cdno.owl)
 AnnotationAssertion(rdfs:label obo:CHEBI_38021 "cyanin chloride")
 SubClassOf(obo:CHEBI_38021 obo:CHEBI_38698)
 
-# Class: obo:CHEBI_3815 (collagen)
+# Class: obo:CHEBI_3815 (Collagen)
 
 AnnotationAssertion(obo:IAO_0000412 obo:CHEBI_3815 obo:cdno.owl)
 AnnotationAssertion(rdfs:label obo:CHEBI_3815 "Collagen")
@@ -15332,7 +15332,7 @@ AnnotationAssertion(obo:IAO_0000412 obo:CHEBI_5985 obo:cdno.owl)
 AnnotationAssertion(rdfs:label obo:CHEBI_5985 "Isobetanin")
 SubClassOf(obo:CHEBI_5985 obo:CHEBI_22315)
 
-# Class: obo:CHEBI_5993 (Isocaryophyllene )
+# Class: obo:CHEBI_5993 (Isocaryophyllene)
 
 AnnotationAssertion(obo:IAO_0000412 obo:CHEBI_5993 obo:cdno.owl)
 AnnotationAssertion(rdfs:label obo:CHEBI_5993 "Isocaryophyllene")
@@ -16498,7 +16498,7 @@ SubClassOf(obo:CHEBI_90 obo:CHEBI_23053)
 AnnotationAssertion(obo:IAO_0000412 obo:CHEBI_90236 obo:cdno.owl)
 SubClassOf(obo:CHEBI_90236 obo:CHEBI_26873)
 
-# Class: obo:CHEBI_90275 (lactucopicrin )
+# Class: obo:CHEBI_90275 (lactucopicrin)
 
 AnnotationAssertion(obo:IAO_0000412 obo:CHEBI_90275 obo:cdno.owl)
 AnnotationAssertion(rdfs:label obo:CHEBI_90275 "lactucopicrin")
@@ -16685,8 +16685,8 @@ SubClassOf(obo:CHEBI_9908 obo:CHEBI_36615)
 
 AnnotationAssertion(obo:IAO_0000115 obo:ENVO_02000090 "An environmental material that is the non-aqueous, non-gaseous residues that remain after something is burned.")
 AnnotationAssertion(obo:IAO_0000412 obo:ENVO_02000090 obo:cdno.owl)
-AnnotationAssertion(rdfs:label obo:ENVO_02000090 "ash"@en)
 AnnotationAssertion(rdfs:label obo:ENVO_02000090 "ash")
+AnnotationAssertion(rdfs:label obo:ENVO_02000090 "ash"@en)
 SubClassOf(obo:ENVO_02000090 obo:CDNO_0000001)
 
 # Class: obo:PATO_0000001 (quality)
