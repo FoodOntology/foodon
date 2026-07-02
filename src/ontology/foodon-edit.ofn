@@ -1212,6 +1212,13 @@ Declaration(Class(obo:FOODON_00005785))
 Declaration(Class(obo:FOODON_00005786))
 Declaration(Class(obo:FOODON_00005787))
 Declaration(Class(obo:FOODON_00005788))
+Declaration(Class(obo:FOODON_00005789))
+Declaration(Class(obo:FOODON_00005790))
+Declaration(Class(obo:FOODON_00005791))
+Declaration(Class(obo:FOODON_00005793))
+Declaration(Class(obo:FOODON_00005795))
+Declaration(Class(obo:FOODON_00005796))
+Declaration(Class(obo:FOODON_00005797))
 Declaration(Class(obo:FOODON_0002899))
 Declaration(Class(obo:FOODON_02010001))
 Declaration(Class(obo:FOODON_02010014))
@@ -2243,6 +2250,7 @@ Declaration(Class(obo:FOODON_03306005))
 Declaration(Class(obo:FOODON_03306037))
 Declaration(Class(obo:FOODON_03306038))
 Declaration(Class(obo:FOODON_03306039))
+Declaration(Class(obo:FOODON_03306040))
 Declaration(Class(obo:FOODON_03306043))
 Declaration(Class(obo:FOODON_03306046))
 Declaration(Class(obo:FOODON_03306047))
@@ -3018,6 +3026,7 @@ Declaration(Class(obo:FOODON_03309763))
 Declaration(Class(obo:FOODON_03309766))
 Declaration(Class(obo:FOODON_03309771))
 Declaration(Class(obo:FOODON_03309830))
+Declaration(Class(obo:FOODON_03309831))
 Declaration(Class(obo:FOODON_03309851))
 Declaration(Class(obo:FOODON_03309886))
 Declaration(Class(obo:FOODON_03309901))
@@ -3459,6 +3468,7 @@ Declaration(Class(obo:FOODON_03317258))
 Declaration(Class(obo:FOODON_03317305))
 Declaration(Class(obo:FOODON_03317314))
 Declaration(Class(obo:FOODON_03317339))
+Declaration(Class(obo:FOODON_03317386))
 Declaration(Class(obo:FOODON_03317396))
 Declaration(Class(obo:FOODON_03317462))
 Declaration(Class(obo:FOODON_03317463))
@@ -7354,6 +7364,7 @@ Declaration(Class(obo:FOODON_03460383))
 Declaration(Class(obo:FOODON_03460387))
 Declaration(Class(obo:FOODON_03460394))
 Declaration(Class(obo:FOODON_03460395))
+Declaration(Class(obo:FOODON_03460755))
 Declaration(Class(obo:FOODON_03460756))
 Declaration(Class(obo:FOODON_03460774))
 Declaration(Class(obo:FOODON_03460775))
@@ -19500,6 +19511,8 @@ AnnotationAssertion(obo:IAO_0000115 obo:FOODON_00005747 "Cow milk cream in liqui
 AnnotationAssertion(dcterms:contributor obo:FOODON_00005747 <https://orcid.org/0000-0002-8844-9165>)
 AnnotationAssertion(dcterms:date obo:FOODON_00005747 "2026-07-02T13:22:00Z"^^xsd:dateTime)
 AnnotationAssertion(oboInOwl:hasExactSynonym obo:FOODON_00005747 "cream"@en)
+AnnotationAssertion(oboInOwl:hasExactSynonym obo:FOODON_00005747 "creme"@en)
+AnnotationAssertion(oboInOwl:hasExactSynonym obo:FOODON_00005747 "crème"@fr)
 AnnotationAssertion(rdfs:label obo:FOODON_00005747 "cream (liquid)"@en)
 SubClassOf(obo:FOODON_00005747 obo:FOODON_00001775)
 
@@ -19858,13 +19871,14 @@ AnnotationAssertion(rdfs:label obo:FOODON_00005787 "plant flower (raw)")
 EquivalentClasses(obo:FOODON_00005787 ObjectIntersectionOf(obo:FOODON_00005786 ObjectSomeValuesFrom(obo:RO_0000086 obo:FOODON_00004348)))
 SubClassOf(obo:FOODON_00005787 obo:FOODON_00005786)
 
-# Class: obo:FOODON_00005788 (malt)
+# Class: obo:FOODON_00005789 (vanilla seed)
 
-AnnotationAssertion(obo:IAO_0000115 obo:FOODON_00005788 "Any germinated and dried cereal grain."@en)
-AnnotationAssertion(dcterms:contributor obo:FOODON_00005788 <https://orcid.org/0000-0002-8844-9165>)
-AnnotationAssertion(dcterms:date obo:FOODON_00005788 "2026-07-02T13:50:59Z"^^xsd:dateTime)
-AnnotationAssertion(rdfs:label obo:FOODON_00005788 "malt"@en)
-SubClassOf(obo:FOODON_00005788 obo:FOODON_00001093)
+AnnotationAssertion(dcterms:contributor obo:FOODON_00005789 <https://orcid.org/0000-0002-8844-9165>)
+AnnotationAssertion(dcterms:date obo:FOODON_00005789 "2026-07-02T14:55:29Z"^^xsd:dateTime)
+AnnotationAssertion(rdfs:comment obo:FOODON_00005789 "A seed from a vanilla bean."@en)
+AnnotationAssertion(rdfs:label obo:FOODON_00005789 "vanilla seed"@en)
+SubClassOf(obo:FOODON_00005789 obo:FOODON_00002328)
+SubClassOf(obo:FOODON_00005789 obo:PO_0009010)
 
 # Class: obo:FOODON_02010002 (animal egg)
 
@@ -20845,10 +20859,6 @@ SubClassOf(obo:FOODON_03301329 ObjectSomeValuesFrom(obo:RO_0001000 obo:FOODON_03
 
 SubClassOf(obo:FOODON_03301333 ObjectSomeValuesFrom(obo:RO_0001000 obo:FOODON_03411012))
 
-# Class: obo:FOODON_03301343 (cellulose product)
-
-SubClassOf(obo:FOODON_03301343 obo:FOODON_03412972)
-
 # Class: obo:FOODON_03301345 (gefilte fish)
 
 SubClassOf(obo:FOODON_03301345 ObjectSomeValuesFrom(obo:RO_0001000 obo:NCBITaxon_59291))
@@ -21380,10 +21390,6 @@ SubClassOf(obo:FOODON_03302479 ObjectSomeValuesFrom(obo:RO_0001000 obo:FOODON_03
 AnnotationAssertion(oboInOwl:hasExactSynonym obo:FOODON_03302481 "sourdough"@en)
 SubClassOf(obo:FOODON_03302481 ObjectSomeValuesFrom(obo:RO_0001000 obo:FOODON_03411312))
 
-# Class: obo:FOODON_03302492 (rye flour)
-
-SubClassOf(obo:FOODON_03302492 ObjectSomeValuesFrom(obo:RO_0001000 obo:FOODON_03411313))
-
 # Class: obo:FOODON_03302496 (bread (country-style))
 
 SubClassOf(obo:FOODON_03302496 ObjectSomeValuesFrom(obo:RO_0001000 obo:FOODON_03411312))
@@ -21588,10 +21594,6 @@ SubClassOf(obo:FOODON_03302749 ObjectSomeValuesFrom(obo:RO_0001000 obo:FOODON_03
 # Class: obo:FOODON_03302777 (irish whiskey cake)
 
 SubClassOf(obo:FOODON_03302777 ObjectSomeValuesFrom(obo:RO_0001000 obo:FOODON_03411012))
-
-# Class: obo:FOODON_03302788 (glucose syrup (liquid))
-
-SubClassOf(obo:FOODON_03302788 ObjectSomeValuesFrom(obo:RO_0001000 obo:FOODON_03411016))
 
 # Class: obo:FOODON_03302795 (cookie (artificially sweetened))
 
@@ -26922,10 +26924,6 @@ SubClassOf(obo:FOODON_03310086 ObjectSomeValuesFrom(obo:RO_0001000 obo:FOODON_03
 
 SubClassOf(obo:FOODON_03310095 ObjectSomeValuesFrom(obo:RO_0001000 obo:FOODON_03412306))
 
-# Class: obo:FOODON_03310113 (ryegrass)
-
-SubClassOf(obo:FOODON_03310113 ObjectSomeValuesFrom(obo:RO_0001000 obo:FOODON_03411313))
-
 # Class: obo:FOODON_03310119 (lamb's quarter leaf (raw))
 
 SubClassOf(obo:FOODON_03310119 ObjectSomeValuesFrom(obo:RO_0001000 obo:NCBITaxon_3559))
@@ -26949,10 +26947,6 @@ SubClassOf(obo:FOODON_03310174 ObjectSomeValuesFrom(obo:RO_0001000 obo:FOODON_03
 # Class: obo:FOODON_03310175 (goat cheese sauce)
 
 SubClassOf(obo:FOODON_03310175 ObjectSomeValuesFrom(obo:RO_0001000 obo:NCBITaxon_9925))
-
-# Class: obo:FOODON_03310177 (glucose syrup (hydrogenated))
-
-SubClassOf(obo:FOODON_03310177 ObjectSomeValuesFrom(obo:RO_0001000 obo:FOODON_03411016))
 
 # Class: obo:FOODON_03310190 (pine nut extract)
 
@@ -27070,10 +27064,6 @@ SubClassOf(obo:FOODON_03310494 ObjectSomeValuesFrom(obo:RO_0001000 obo:FOODON_03
 
 SubClassOf(obo:FOODON_03310545 ObjectSomeValuesFrom(obo:RO_0001000 obo:FOODON_03411426))
 
-# Class: obo:FOODON_03310565 (rye hay (raw))
-
-SubClassOf(obo:FOODON_03310565 ObjectSomeValuesFrom(obo:RO_0001000 obo:FOODON_03411313))
-
 # Class: obo:FOODON_03310622 (minnow (raw))
 
 SubClassOf(obo:FOODON_03310622 ObjectSomeValuesFrom(obo:RO_0001000 obo:FOODON_03411922))
@@ -27181,10 +27171,6 @@ SubClassOf(obo:FOODON_03310983 ObjectSomeValuesFrom(obo:RO_0001000 obo:FOODON_03
 # Class: obo:FOODON_03311002 (shad raw)
 
 SubClassOf(obo:FOODON_03311002 ObjectSomeValuesFrom(obo:RO_0001000 obo:FOODON_03411348))
-
-# Class: obo:FOODON_03311016 (glucose syrup (dried))
-
-SubClassOf(obo:FOODON_03311016 ObjectSomeValuesFrom(obo:RO_0001000 obo:FOODON_03411016))
 
 # Class: obo:FOODON_03311018 (chocolate bar (artificially sweetened))
 
@@ -27554,15 +27540,6 @@ SubClassOf(obo:FOODON_03311704 ObjectSomeValuesFrom(obo:RO_0001000 obo:FOODON_03
 # Class: obo:FOODON_03311723 (milkfish in oil canned)
 
 SubClassOf(obo:FOODON_03311723 ObjectSomeValuesFrom(obo:RO_0001000 obo:NCBITaxon_29144))
-
-# Class: obo:FOODON_03311737 (processed food)
-
-AnnotationAssertion(obo:IAO_0000114 obo:FOODON_03311737 obo:IAO_0000428)
-AnnotationAssertion(obo:IAO_0000115 obo:FOODON_03311737 "A food entity which has some level of food processing applied to it."@en)
-AnnotationAssertion(oboInOwl:hasDbXref obo:FOODON_03311737 siren:F11737)
-AnnotationAssertion(rdfs:comment obo:FOODON_03311737 "This is meant to be a term which can be referenced in the context of food nutrition and processing research, for example with respect to the NOVA classification system [https://en.wikipedia.org/wiki/Nova_classification]."@en)
-AnnotationAssertion(rdfs:label obo:FOODON_03311737 "processed food"@en)
-SubClassOf(obo:FOODON_03311737 obo:FOODON_00002645)
 
 # Class: obo:FOODON_03311743 (rainbow trout baked)
 
@@ -28171,14 +28148,6 @@ SubClassOf(obo:FOODON_03316372 ObjectSomeValuesFrom(obo:RO_0001000 obo:FOODON_03
 # Class: obo:FOODON_03316389 (fruit-based jellying agent (liquid))
 
 SubClassOf(obo:FOODON_03316389 ObjectSomeValuesFrom(obo:RO_0001000 obo:FOODON_03411011))
-
-# Class: obo:FOODON_03316413 (glucose syrup (exclusively for commercial production of sweets and candies))
-
-SubClassOf(obo:FOODON_03316413 ObjectSomeValuesFrom(obo:RO_0001000 obo:FOODON_03411016))
-
-# Class: obo:FOODON_03316414 (glucose syrup (dried, exclusively for commercial production of sweets and candies))
-
-SubClassOf(obo:FOODON_03316414 ObjectSomeValuesFrom(obo:RO_0001000 obo:FOODON_03411016))
 
 # Class: obo:FOODON_03316415 (taffy hard)
 
@@ -78246,14 +78215,6 @@ AnnotationAssertion(oboInOwl:hasDbXref obo:FOODON_03460395 langual:H0395)
 AnnotationAssertion(rdfs:label obo:FOODON_03460395 "artificial fruit flavoring added"@en)
 SubClassOf(obo:FOODON_03460395 obo:FOODON_03460228)
 
-# Class: obo:FOODON_03460756 (rye malt)
-
-AnnotationAssertion(obo:IAO_0000114 obo:FOODON_03460756 obo:IAO_0000428)
-AnnotationAssertion(obo:IAO_0000118 obo:FOODON_03460756 "rye malt added"@en)
-AnnotationAssertion(oboInOwl:hasDbXref obo:FOODON_03460756 langual:H0756)
-AnnotationAssertion(rdfs:label obo:FOODON_03460756 "rye malt"@en)
-SubClassOf(obo:FOODON_03460756 obo:FOODON_00001190)
-
 # Class: obo:FOODON_03460774 (magnesium added claim)
 
 AnnotationAssertion(obo:IAO_0000114 obo:FOODON_03460774 obo:IAO_0000428)
@@ -95068,6 +95029,7 @@ AnnotationAssertion(rdfs:comment obo:CHEBI_50699 "LanguaL term definition: Compl
 AnnotationAssertion(obo:IAO_0000412 obo:CHEBI_5291 <http://langual.org>)
 AnnotationAssertion(oboInOwl:hasDbXref obo:CHEBI_5291 langual:C0219)
 AnnotationAssertion(rdfs:comment obo:CHEBI_5291 "LanguaL term definition: A protein extract or concentrate derived from collagen."@en)
+AnnotationAssertion(oboInOwl:hasExactSynonym obo:CHEBI_73558 "vitamin D3"@en)
 AnnotationAssertion(oboInOwl:hasExactSynonym obo:CHEBI_78295 "food component role"@en)
 AnnotationAssertion(oboInOwl:hasDbXref obo:CHEBI_83163 langual:H0156)
 AnnotationAssertion(oboInOwl:hasDbXref obo:COB_0000032 langual:R0010)
