@@ -6,22 +6,42 @@ ontology terms using a pipeline of specialist recognisers followed by a
 Claude-AI-assisted OWL search.
 
 Pipeline (applied in order, first match wins):
-  1. nutrient       – vitamins, minerals, macronutrients, fatty acids, bioactives
-  2. sweetener      – sugars, sugar alcohols, syrups, natural sweeteners
-  3. fruit          – fresh, dried, and processed fruit forms
-  4. root_vegetable – taproots, bulbs, corms, rhizomes, tubers
-  5. dairy          – milk, cream, butter, cheese, yogurt, and other dairy
-  6. spice          – spice food products (FOODON:03303380)
-  7. herb           – herb food products (FOODON:00003042)
-  8. seed           – plant seed food products (FOODON:00001173)
-  9. grain          – cereal grain food products (FOODON:00001093)
-  10. lipid         – cooking oils and animal fats (FOODON:03420190)
-  11. chemical      – food additives (FOODON:03412972) and mixtures (CHEBI:60004)
-  12. fermentation  – fermented foods (FOODON:00001258) and bacteria (NCBITaxon:2)
-  13. characteristic – quality/state terms (COB:0000502) with material retry
-  14. Claude AI parse → FoodOn OWL search  (general fallback, not yet implemented)
+  1. Assumption rules    – e.g. "egg" → "chicken egg"; retry global exact match
+  2. Global exact match  – food_form + alias lookup across all ingredient types
+  3. Component search    – plant prefixes, parenthetical qualifier stripping,
+                           adjective stripping, characteristic stripping loop,
+                           trailing-form stripping, anatomy lookup
 
-Coverage for each type is defined in ingredients.yaml configuration.
+Type classification (fruit, grain, dairy, etc.) and subtype are read from each
+matched entry's YAML 'type'/'subtype' fields, populated by --rebuild TYPE.
+Per-type recognisers are available via --type TYPE for single-category testing.
+
+Type classifications and OWL roots
+───────────────────────────────────
+  fruit          PO:0009001, FOODON:00001057        fruit food products
+  nut            FOODON:00005735                    nut food products
+  legume         FOODON:00001264, FOODON:03301467   pulse/bean/lentil/soy products
+  grain          FOODON:00001093                    cereal grain food products
+  seed           FOODON:00001173                    plant seed food products
+  root_vegetable (manual entries)                   taproots, bulbs, tubers, rhizomes
+  spice          FOODON:03303380                    spice food products
+  herb           FOODON:00003042                    herb food products
+  dairy          FOODON:00001256                    dairy food products
+  animal         FOODON:03420164                    animal material food products
+  lipid          FOODON:00002664                    cooking oils and animal fats
+  fermentation   FOODON:00001258                    fermented food products
+  sweetener      (manual entries)                   sugars, sugar alcohols, syrups
+  chemical       FOODON:03412972, CHEBI:60004       food additives and mixtures
+  nutrient       CHEBI:33229, CDNO:0000001          vitamins, minerals, macronutrients
+  taxonomy       NCBITaxon:2                        organism/taxon annotation terms
+  anatomy        UBERON:0000061, PO:0025131,        anatomical structure annotation terms
+                 FAO:0000001, FOODON:03530146
+  characteristic COB:0000502                        food quality/state terms
+
+Rebuild a single type from OWL (dry-run first to preview changes):
+  python3 ingredients.py --rebuild grain --owl cache-foodon-merged.owl --dry-run
+  python3 ingredients.py --rebuild grain --owl cache-foodon-merged.owl
+  python3 ingredients.py --rebuild all   --owl cache-foodon-merged.owl
 
 Output formats
 ──────────────
@@ -333,16 +353,19 @@ def build_lookups(db: dict) -> tuple[dict, dict, dict]:
     food_form_lookup: dict[str, tuple] = {}
     title_lookup:     dict[str, str]   = {}
 
-    # Pre-pass: anatomy-typed entries (e.g. type:[grain,anatomy]) win over
-    # pure food-product entries for the same synonym key.  This lets
+    # Pre-pass: entries where anatomy is a SECONDARY type (e.g. type:[grain,anatomy])
+    # win over pure food-product entries for the same synonym key.  This lets
     # "buckwheat seed" (type=[grain,anatomy]) claim "buckwheat" before
     # "buckwheat food product" (type=grain) can claim it via its title field.
+    # Pure anatomy entries (primary type == 'anatomy') are excluded here so they
+    # do not override food-ingredient entries in the global lookup.
     for db_key, entry in db.items():
         if entry.get('parent'):
             continue
         et = entry.get('type', '')
         tl = et if isinstance(et, list) else [et]
-        if 'anatomy' not in tl:
+        # Only apply pre-pass when anatomy is a secondary type (first type is not anatomy)
+        if 'anatomy' not in tl or tl[0] == 'anatomy':
             continue
         alias_lookup[entry['label'].lower()] = db_key
         t = entry.get('title', '')
@@ -445,6 +468,64 @@ class IngredientMatch:
 
 _LOOKUP_CACHE: dict[str, tuple] = {}
 _DB_CACHE:     dict[str, dict]  = {}
+
+# ── Global lookups (all entries combined) ─────────────────────────────────────
+#
+# Built once at module load from the full _DB; refreshed by _apply_synonyms_mode().
+# _global_exact_match() uses these for single-pass matching across all types so
+# that type order no longer determines which entry wins for a given label/synonym.
+
+_GLOBAL_ALIAS_LOOKUP:     dict[str, str]   = {}
+_GLOBAL_FOOD_FORM_LOOKUP: dict[str, tuple] = {}
+
+_GLOBAL_ADJECTIVES: frozenset = frozenset(
+    adj
+    for cfg in _CONFIG.values()
+    for adj in (cfg.get('adjectives') or [])
+)
+
+
+def _build_global_lookups() -> None:
+    """Rebuild global alias and food-form lookups from all entries in _DB."""
+    global _GLOBAL_ALIAS_LOOKUP, _GLOBAL_FOOD_FORM_LOOKUP
+    al, ffl, _ = build_lookups(_DB)
+    _GLOBAL_ALIAS_LOOKUP.clear()
+    _GLOBAL_ALIAS_LOOKUP.update(al)
+    _GLOBAL_FOOD_FORM_LOOKUP.clear()
+    _GLOBAL_FOOD_FORM_LOOKUP.update(ffl)
+
+
+_build_global_lookups()
+
+
+# ── OWL anatomy helpers (shared by build functions) ───────────────────────────
+# IRI prefixes for external anatomy ontologies (UBERON, PO, FAO)
+_EXT_IRI_PREFIXES = (
+    'http://purl.obolibrary.org/obo/UBERON_',
+    'http://purl.obolibrary.org/obo/PO_',
+    'http://purl.obolibrary.org/obo/FAO_',
+)
+
+
+def _nearest_ext_ancestor(g, start_iri: str) -> str:
+    """BFS up rdfs:subClassOf from *start_iri*; return first UBERON/PO/FAO IRI, or ''."""
+    try:
+        from rdflib import URIRef, RDFS
+    except ImportError:
+        return ''
+    visited: set[str] = {start_iri}
+    queue: list[str]  = [start_iri]
+    while queue:
+        node_iri = queue.pop(0)
+        for parent in g.objects(URIRef(node_iri), RDFS.subClassOf):
+            ps = str(parent)
+            if ps in visited or not ps.startswith('http'):
+                continue
+            visited.add(ps)
+            if any(ps.startswith(p) for p in _EXT_IRI_PREFIXES):
+                return ps
+            queue.append(ps)
+    return ''
 
 
 def _get_lookups(type_name: str) -> tuple[dict, dict, dict]:
@@ -664,14 +745,18 @@ VitaminMatch = NutrientMatch
 # ── Nutrient sub-databases ─────────────────────────────────────────────────────
 
 _ALL_NUTRIENTS   = get_entries_by_type('nutrient')
+_NUTRIENT_SUBTYPES = ('vitamin', 'mineral', 'macronutrient', 'fatty_acid', 'bioactive')
 VITAMIN_DB       = {k: v for k, v in _ALL_NUTRIENTS.items() if v.get('subtype') == 'vitamin'}
 MINERAL_DB       = {k: v for k, v in _ALL_NUTRIENTS.items() if v.get('subtype') == 'mineral'}
 MACRONUTRIENT_DB = {k: v for k, v in _ALL_NUTRIENTS.items() if v.get('subtype') == 'macronutrient'}
 FATTY_ACID_DB    = {k: v for k, v in _ALL_NUTRIENTS.items() if v.get('subtype') == 'fatty_acid'}
 BIOACTIVE_DB     = {k: v for k, v in _ALL_NUTRIENTS.items() if v.get('subtype') == 'bioactive'}
+_NUTRIENT_DBS: dict[str, dict] = {
+    'vitamin': VITAMIN_DB, 'mineral': MINERAL_DB, 'macronutrient': MACRONUTRIENT_DB,
+    'fatty_acid': FATTY_ACID_DB, 'bioactive': BIOACTIVE_DB,
+}
 
-
-# ── Vitamin lookup tables ──────────────────────────────────────────────────────
+# ── Nutrient lookup tables ─────────────────────────────────────────────────────
 #
 # CDNO class hierarchy for minerals:
 #   macro elements (CDNO:0000011): Ca, Cl, Mg, P, K, Na, S
@@ -684,11 +769,22 @@ BIOACTIVE_DB     = {k: v for k, v in _ALL_NUTRIENTS.items() if v.get('subtype') 
 #   CHEBI:36006 = icosapentaenoic acid (EPA) CHEBI:25413 = monounsaturated fatty acid
 #   CHEBI:26208 = polyunsaturated fatty acid CHEBI:166968= trans-fatty acid
 
-_VIT_ALIAS_LOOKUP, _VIT_FORM_LOOKUP, _VIT_TITLE_TO_CURIE = build_lookups(VITAMIN_DB)
-_MIN_ALIAS, _MIN_FORM, _ = build_lookups(MINERAL_DB)
-_MAC_ALIAS, _MAC_FORM, _ = build_lookups(MACRONUTRIENT_DB)
-_FA_ALIAS,  _FA_FORM,  _ = build_lookups(FATTY_ACID_DB)
-_BIO_ALIAS, _BIO_FORM, _ = build_lookups(BIOACTIVE_DB)
+# Mutable caches refreshed by _build_nutrient_lookups() and _apply_synonyms_mode()
+_NUTRIENT_LOOKUPS: dict[str, tuple] = {}   # subtype → (alias, form, title/discard)
+_VIT_ALIAS_LOOKUP: dict = {}
+_VIT_FORM_LOOKUP:  dict = {}
+_VIT_TITLE_TO_CURIE: dict = {}
+
+
+def _build_nutrient_lookups() -> None:
+    """Build or rebuild lookup caches for all nutrient subtypes."""
+    global _VIT_ALIAS_LOOKUP, _VIT_FORM_LOOKUP, _VIT_TITLE_TO_CURIE
+    for st in _NUTRIENT_SUBTYPES:
+        _NUTRIENT_LOOKUPS[st] = build_lookups(_NUTRIENT_DBS[st])
+    _VIT_ALIAS_LOOKUP, _VIT_FORM_LOOKUP, _VIT_TITLE_TO_CURIE = _NUTRIENT_LOOKUPS['vitamin']
+
+
+_build_nutrient_lookups()
 
 
 def _apply_synonyms_mode(mode: str) -> None:
@@ -698,20 +794,14 @@ def _apply_synonyms_mode(mode: str) -> None:
     mode='proposed' — ai_synonyms with status='ok' or status='proposed' are indexed
     """
     global _AI_SYN_STATUSES
-    global _VIT_ALIAS_LOOKUP, _VIT_FORM_LOOKUP, _VIT_TITLE_TO_CURIE
-    global _MIN_ALIAS, _MIN_FORM, _MAC_ALIAS, _MAC_FORM
-    global _FA_ALIAS, _FA_FORM, _BIO_ALIAS, _BIO_FORM
     statuses: set[str] = {'ok'}
     if mode == 'proposed':
         statuses.add('proposed')
     _AI_SYN_STATUSES = frozenset(statuses)
     _LOOKUP_CACHE.clear()
     _DB_CACHE.clear()
-    _VIT_ALIAS_LOOKUP, _VIT_FORM_LOOKUP, _VIT_TITLE_TO_CURIE = build_lookups(VITAMIN_DB)
-    _MIN_ALIAS, _MIN_FORM, _ = build_lookups(MINERAL_DB)
-    _MAC_ALIAS, _MAC_FORM, _ = build_lookups(MACRONUTRIENT_DB)
-    _FA_ALIAS,  _FA_FORM,  _ = build_lookups(FATTY_ACID_DB)
-    _BIO_ALIAS, _BIO_FORM, _ = build_lookups(BIOACTIVE_DB)
+    _build_nutrient_lookups()
+    _build_global_lookups()
 
 # ── Vitamin patterns ───────────────────────────────────────────────────────────
 
@@ -890,28 +980,17 @@ def _recognize_from_db(text, db, alias_lookup, form_lookup, category):
     return None
 
 
-def recognize_mineral(text):
-    return _recognize_from_db(text, MINERAL_DB, _MIN_ALIAS, _MIN_FORM, 'mineral')
-
-def recognize_macronutrient(text):
-    return _recognize_from_db(text, MACRONUTRIENT_DB, _MAC_ALIAS, _MAC_FORM, 'macronutrient')
-
-def recognize_fatty_acid(text):
-    return _recognize_from_db(text, FATTY_ACID_DB, _FA_ALIAS, _FA_FORM, 'fatty_acid')
-
-def recognize_bioactive(text):
-    return _recognize_from_db(text, BIOACTIVE_DB, _BIO_ALIAS, _BIO_FORM, 'bioactive')
-
-
 def recognize_nutrient(text: str) -> Optional[NutrientMatch]:
     """Unified nutrient recognizer — try all categories in priority order."""
-    return (
-        recognize_vitamin(text)
-        or recognize_mineral(text)
-        or recognize_macronutrient(text)
-        or recognize_fatty_acid(text)
-        or recognize_bioactive(text)
-    )
+    m = recognize_vitamin(text)
+    if m:
+        return m
+    for st in ('mineral', 'macronutrient', 'fatty_acid', 'bioactive'):
+        al, fl, _ = _NUTRIENT_LOOKUPS[st]
+        m = _recognize_from_db(text, _NUTRIENT_DBS[st], al, fl, st)
+        if m:
+            return m
+    return None
 
 
 def describe_match(m: NutrientMatch) -> str:
@@ -1745,26 +1824,271 @@ def _run_match(ingredient: str, options: argparse.Namespace) -> MatchResult:
     )
 
 
+def _global_exact_match(text: str, options: argparse.Namespace) -> Optional[MatchResult]:
+    """
+    Single-pass exact match across all ingredient types.
+
+    Tier A: longest whole-word food-form match in _GLOBAL_FOOD_FORM_LOOKUP.
+    Tier B: exact alias / canonical-name match in _GLOBAL_ALIAS_LOOKUP (+ -s deplural).
+
+    Type and subtype are read from the matched YAML entry so per-type classifier
+    output (fruit, grain, dairy, etc.) is preserved exactly as before.
+    Returns None if no match is found.
+    """
+    normed = normalize(text)
+    if not normed:
+        return None
+
+    # Tier A: food_form lookup (longest whole-word key wins)
+    m = _try_food_form(normed, text, _DB, _GLOBAL_FOOD_FORM_LOOKUP, 'food')
+    if m:
+        entry = _DB.get(m.id, {})
+        m.type    = _primary_type(entry) or 'food'
+        m.subtype = entry.get('subtype', '') or m.subtype
+        return match_to_result(text, m, category=m.type, source_module='global_exact')
+
+    # Tier B: alias lookup (exact + simple -s deplural)
+    m = _try_alias(normed, text, _DB, _GLOBAL_ALIAS_LOOKUP, 'food')
+    if m:
+        entry = _DB.get(m.id, {})
+        m.type    = _primary_type(entry) or 'food'
+        m.subtype = entry.get('subtype', '') or m.subtype
+        return match_to_result(text, m, category=m.type, source_module='global_exact')
+
+    return None
+
+
+def _try_trailing_forms(text: str, options: argparse.Namespace,
+                        base: Optional[str] = None) -> Optional[MatchResult]:
+    """Strip a configured trailing form from *text* and exact-match the core.
+
+    Iterates all trailing_forms configs (longest key first per type).  Returns a
+    MatchResult with the form appended as a component term, or None if no match.
+
+    *base* is the normalized form to match against (defaults to normalize(text)).
+    Pass the adjective-stripped form when adjectives have already been removed.
+    """
+    if base is None:
+        base = normalize(text)
+    for _type_name, cfg in _CONFIG.items():
+        trailing_raw = cfg.get('trailing_forms') or []
+        trailing_map: dict[str, str] = (
+            trailing_raw if isinstance(trailing_raw, dict)
+            else {w: '' for w in trailing_raw}
+        )
+        for form_word, form_curie in sorted(trailing_map.items(), key=lambda x: -len(x[0])):
+            if base.endswith(' ' + form_word):
+                core = base[:-(len(form_word) + 1)]
+                if core:
+                    result = _global_exact_match(core, options)
+                    if result:
+                        if form_curie:
+                            form_entry = _DB.get(form_curie, {})
+                            result.component_terms.append(ComponentTerm(
+                                category='food',
+                                label=form_entry.get('label', form_curie),
+                                id=form_curie,
+                                iri=curie_to_iri(form_curie),
+                            ))
+                            result.match_status = 'composite'
+                        else:
+                            result.unmatched_terms.append(
+                                UnmatchedTerm('unresolved', form_word)
+                            )
+                            result.match_status = 'partial'
+                        return result
+    return None
+
+
+def _component_search(ingredient: str, options: argparse.Namespace) -> MatchResult:
+    """
+    Component-based matching after global exact match and assumptions have failed.
+
+    Steps applied in order:
+      3a  strip 'wild'/'whole' plant prefixes → retry global exact match
+      3b  strip known adjectives (all types combined) → retry global exact match
+      3c  iteratively strip characteristic terms → retry global exact match on residual
+      3d  type-specific fallback suffixes and trailing-form stripping
+      3e  anatomy standalone match
+      fallback: no_match
+    """
+    normed = normalize(ingredient)
+
+    # 3a: plant prefix stripping
+    has_wild, has_whole, plant_text = _strip_plant_prefixes(ingredient)
+    if plant_text != ingredient:
+        result = _global_exact_match(plant_text, options)
+        if result:
+            result = _resolve_residuals(result)
+            if has_wild:
+                result.component_terms.insert(0, _WILD_HARVESTED_COMPONENT)
+            if has_whole:
+                result.component_terms.insert(0, _WHOLE_FORM_COMPONENT)
+            return result
+
+    # 3b: global adjective stripping
+    remaining, stripped = strip_adjectives(normed, _GLOBAL_ADJECTIVES)
+    if stripped:
+        # Try parenthetical reconstruction first: "fresh apple" → "apple (fresh)"
+        paren = remaining + ' (' + stripped.replace(' ', ', ') + ')'
+        result = _global_exact_match(paren, options)
+        if result:
+            return _resolve_residuals(result)
+        # Then try core text without adjectives
+        result = _global_exact_match(remaining, options)
+        if result:
+            result.unmatched_terms = list(result.unmatched_terms) + [
+                UnmatchedTerm('adjective', stripped)
+            ]
+            if result.match_status == 'exact':
+                result.match_status = 'partial'
+            return _resolve_residuals(result)
+
+    # 3b.5: strip trailing parenthetical annotation → match base + resolve annotation
+    # Handles "bacterial culture (lactobacillus acidophilus)" and
+    # "yogurt (L. acidophilus, S. thermophilus)" patterns.
+    pm = _PAREN_PAT.match(normed)
+    if pm:
+        paren_base = pm.group(1).strip()
+        paren_ann  = pm.group(2).strip()
+        result = _global_exact_match(paren_base, options)
+        if result:
+            ann_parts = [p.strip() for p in paren_ann.split(',') if p.strip()]
+            result.unmatched_terms = [UnmatchedTerm('unresolved', p) for p in ann_parts]
+            if ann_parts:
+                result.match_status = 'partial'
+            return _resolve_residuals(result)
+
+    # 3c: characteristic stripping loop
+    cm = recognize_characteristic(ingredient)
+    if cm:
+        collected_chars: list[ComponentTerm] = []
+        current_cm = cm
+
+        while True:
+            collected_chars.append(ComponentTerm(
+                category='characteristic',
+                label=current_cm.matched_label,
+                id=current_cm.matched_id,
+                iri=curie_to_iri(current_cm.matched_id),
+            ))
+            residual = current_cm.residual_text
+
+            if not residual:
+                break
+
+            retry = _global_exact_match(residual, options) or _try_trailing_forms(residual, options)
+            if retry:
+                retry.ingredient = ingredient
+                for ct in reversed(collected_chars):
+                    retry.component_terms.insert(0, ct)
+                retry.match_status = 'composite' if not retry.unmatched_terms else 'partial'
+                return _resolve_residuals(retry)
+
+            next_cm = recognize_characteristic(residual)
+            if not next_cm or next_cm.residual_text == residual:
+                break
+            current_cm = next_cm
+
+        return MatchResult(
+            ingredient=ingredient,
+            match_status='exact' if not current_cm.residual_text else 'partial',
+            matched_id=collected_chars[0].id,
+            matched_label=collected_chars[0].label,
+            matched_iri=collected_chars[0].iri,
+            component_terms=collected_chars,
+            unmatched_terms=(
+                [UnmatchedTerm('unresolved', current_cm.residual_text)]
+                if current_cm.residual_text else []
+            ),
+            source_module='characteristic_recognizer',
+            type='characteristic',
+            subtype='',
+        )
+
+    # 3d: type-specific fallback suffixes and trailing-form stripping
+    base = remaining if stripped else normed
+    for _type_name, cfg in _CONFIG.items():
+        # Fallback suffix: append each configured word and search within the
+        # type-specific DB only.  Global search must NOT be used here because
+        # a generic suffix (e.g. "nut") could accidentally match unrelated
+        # entries in other types that happen to contain that word as a synonym.
+        fallbacks = cfg.get('fallbacks') or []
+        if fallbacks:
+            db_t, al_t, ffl_t = _get_lookups(_type_name)
+            tier_t = cfg.get('tier_order', 'food_form_first')
+            for fallback in fallbacks:
+                normed_fb = normed + ' ' + fallback
+                text_fb   = ingredient + ' ' + fallback
+                m_fb = _match_tiers(normed_fb, text_fb, db_t, al_t, ffl_t, _type_name, tier_t)
+                if m_fb:
+                    result = match_to_result(
+                        text_fb, m_fb,
+                        category=_primary_type(_DB.get(m_fb.id, {})) or _type_name,
+                        source_module=_type_name,
+                    )
+                    result.match_status = 'parent'
+                    return result
+    # Trailing-form strip (all types): delegate to shared helper,
+    # using the adjective-stripped base so "active L. acidophilus culture"
+    # strips "active" before matching the trailing form.
+    result = _try_trailing_forms(ingredient, options, base=base)
+    if result:
+        return result
+
+    # 3e: anatomy standalone match
+    anat_curie = _anatomy_standalone_match(ingredient)
+    if anat_curie:
+        return _make_anatomy_result(ingredient, anat_curie)
+
+    # No match
+    return MatchResult(
+        ingredient=ingredient,
+        match_status='no_match',
+        matched_id='',
+        matched_label='',
+        matched_iri='',
+        component_terms=[],
+        unmatched_terms=[UnmatchedTerm('unresolved', ingredient)],
+        source_module='none',
+        type='',
+        subtype='',
+    )
+
+
 def match_ingredient(ingredient: str, options: argparse.Namespace) -> MatchResult:
     """Run the recogniser pipeline for one ingredient string.
 
-    Applies assumption rewriting (e.g. "egg" → "chicken egg") before matching,
-    then restores the original ingredient text in the result so that reports
-    show exactly what the caller supplied.
+    Step 1: assumption rules — applied first for terms explicitly listed in the
+            assumptions config (e.g. "milk" → "cow milk", "kiwi" → "kiwifruit").
+            Allows assumptions to override a direct-label match for a broader/wrong entry.
+    Step 2: global exact match across all ingredient types (food_form + alias).
+    Step 3: component search (plant prefixes, adjectives, characteristics, fallbacks).
+
+    The original ingredient text is always restored in the result so reports show
+    exactly what the caller supplied.
     """
     original = ingredient
-    ingredient = apply_assumptions(ingredient)
 
-    result = _run_match(ingredient, options)
+    # Step 1: assumption rules (only fires when text is an exact assumptions-dict key)
+    assumed = apply_assumptions(ingredient)
+    if assumed != ingredient:
+        result = _global_exact_match(assumed, options)
+        if result:
+            result = _resolve_residuals(result)
+            result.ingredient = original
+            return result
 
-    # Restore the original (pre-assumption) ingredient text for reporting.
+    # Step 2: global exact match
+    result = _global_exact_match(ingredient, options)
+    if result:
+        result = _resolve_residuals(result)
+        result.ingredient = original
+        return result
+
+    # Step 3: component search variations
+    result = _component_search(ingredient, options)
     result.ingredient = original
-    # Also fix any unmatched term that carries the rewritten text.
-    if ingredient != original:
-        result.unmatched_terms = [
-            UnmatchedTerm(ut.category, original if ut.text == ingredient else ut.text)
-            for ut in result.unmatched_terms
-        ]
     return result
 
 
@@ -2389,16 +2713,19 @@ def main() -> None:
     elif options.input:
         run_pipeline(options)
     elif options.rebuild:
-        types = (list(_RAW['configuration'].keys())
-                 if options.rebuild == 'all'
-                 else [options.rebuild])
-        for t in types:
-            if t == 'taxonomy':
-                build_taxonomy(options.owl, dry_run=options.dry_run)
-            elif t == 'anatomy':
-                build_anatomy(options.owl, dry_run=options.dry_run)
-            else:
+        if options.rebuild == 'all':
+            # Phase 1–5: broad OWL roots + characteristic/anatomy/taxonomy builders
+            build_refresh_all(options.owl, dry_run=options.dry_run)
+            # Classification pass: set type/subtype on each entry via per-type builders
+            skip = {'anatomy', 'taxonomy', 'characteristic'}
+            for t in [k for k in _CONFIG if k not in skip]:
                 build_refresh(t, options.owl, dry_run=options.dry_run)
+        elif options.rebuild == 'taxonomy':
+            build_taxonomy(options.owl, dry_run=options.dry_run)
+        elif options.rebuild == 'anatomy':
+            build_anatomy(options.owl, dry_run=options.dry_run)
+        else:
+            build_refresh(options.rebuild, options.owl, dry_run=options.dry_run)
     else:
         print(
             'ERROR: either -i/--input (pipeline mode), --type TYPE (type-test mode), '
@@ -2411,6 +2738,165 @@ def main() -> None:
 # ══════════════════════════════════════════════════════════════════════════════
 # § 8  Build / refresh
 # ══════════════════════════════════════════════════════════════════════════════
+
+_REBUILD_ALL_ROOTS = [
+    'FOODON:00001714',   # food material by component
+    'FOODON:00001002',   # food product
+    'FOODON:03420116',   # organism material
+    'FOODON:00002373',   # food by meal type
+]
+
+
+def build_refresh_all(owl_path: str, dry_run: bool = False) -> None:
+    """
+    Collect all food material entries from broad OWL roots and update ingredients.yaml.
+
+    Phase 1: collect terms from _REBUILD_ALL_ROOTS (food material by component,
+             food product, organism material) and all their OWL descendants.
+    Phase 2: write/update YAML — new entries get label + synonyms (no type yet;
+             type is assigned by the per-type build_refresh() calls that follow);
+             existing entries have label/synonyms refreshed, other attributes preserved.
+    Phase 3: build_refresh('characteristic', ...) — quality/state terms.
+    Phase 4: build_anatomy(...)                   — anatomy branch + annotation.
+    Phase 5: build_taxonomy(...)                  — taxonomy branch + annotation.
+
+    This function is called first in --rebuild all; per-type build_refresh() calls
+    follow to set type/subtype on each entry based on type-specific OWL roots.
+    """
+    owl_basename = os.path.basename(owl_path)
+    print(f'=== Build/Refresh ALL | OWL: {owl_basename} ===\n')
+    print(f'Roots: {_REBUILD_ALL_ROOTS}\n')
+
+    if not os.path.exists(owl_path):
+        print(f'ERROR: OWL file not found: {owl_path}', file=sys.stderr)
+        return
+
+    owl_terms = _collect_owl_terms(_REBUILD_ALL_ROOTS, {}, owl_path)
+    print(f'Collected {len(owl_terms)} terms from broad roots.\n')
+
+    yaml_all        = _DB
+    owl_keys        = set(owl_terms.keys())
+    yaml_keys       = set(yaml_all.keys())
+    new_curies      = sorted(owl_keys - yaml_keys)
+    existing_curies = sorted(owl_keys & yaml_keys)
+
+    # Compute label and synonym updates for existing entries
+    label_updates: dict[str, str]      = {}
+    updates:       dict[str, list[str]] = {}
+    migrates:      dict[str, list[str]] = {}
+
+    for curie in existing_curies:
+        owl_info   = owl_terms[curie]
+        yaml_entry = yaml_all[curie]
+
+        old_label = yaml_entry.get('label', '')
+        new_label = owl_info['label']
+        if old_label != new_label:
+            label_updates[curie] = new_label
+
+        yaml_syns      = list(yaml_entry.get('synonyms') or [])
+        owl_syns       = list(owl_info['synonyms'])
+        yaml_syns_norm = {s.lower() for s in yaml_syns}
+        owl_syns_norm  = {s.lower() for s in owl_syns}
+        existing_ai    = {s.lower() for s in (yaml_entry.get('ai_synonyms') or {})}
+
+        orphaned = [s for s in yaml_syns
+                    if s.lower() not in owl_syns_norm
+                    and s.lower() not in existing_ai]
+        if orphaned:
+            migrates[curie] = orphaned
+
+        if owl_syns_norm != yaml_syns_norm:
+            updates[curie] = owl_syns
+
+    in_sync = len(existing_curies) - len(set(updates) | set(migrates) | set(label_updates))
+
+    # ── Report ───────────────────────────────────────────────────────────────
+    _SHOW_LIMIT = 20
+    print(f'[NEW - in OWL, not in ingredients.yaml]  ({len(new_curies)} terms)')
+    for curie in new_curies[:_SHOW_LIMIT]:
+        info = owl_terms[curie]
+        print(f'  + {curie}  {info["label"]}')
+    if len(new_curies) > _SHOW_LIMIT:
+        print(f'  ... and {len(new_curies) - _SHOW_LIMIT} more')
+
+    print(f'\n[LABEL UPDATES]  ({len(label_updates)} terms)')
+    for curie in sorted(label_updates):
+        old = yaml_all[curie].get('label', '')
+        print(f'  ~ {curie}: {old!r} → {label_updates[curie]!r}')
+
+    print(f'\n[OWL SYNONYM UPDATES]  ({len(updates)} terms)')
+    for curie in sorted(updates)[:_SHOW_LIMIT]:
+        print(f'  ~ {curie}  {yaml_all[curie].get("label", "")}')
+    if len(updates) > _SHOW_LIMIT:
+        print(f'  ... and {len(updates) - _SHOW_LIMIT} more')
+
+    print(f'\n[MIGRATE to ai_synonyms]  ({len(migrates)} terms)')
+    for curie in sorted(migrates)[:_SHOW_LIMIT]:
+        label = yaml_all[curie].get('label', '')
+        print(f'  >> {curie}  {label}: {migrates[curie]}')
+    if len(migrates) > _SHOW_LIMIT:
+        print(f'  ... and {len(migrates) - _SHOW_LIMIT} more')
+
+    print(f'\n[IN SYNC]  {in_sync} entries match\n')
+
+    if dry_run:
+        print('Dry-run mode — no files written.')
+    else:
+        try:
+            from ruamel.yaml import YAML as RuamelYAML
+        except ImportError:
+            print('\nERROR: ruamel.yaml is required. '
+                  'Install with: pip install ruamel.yaml', file=sys.stderr)
+            return
+
+        ry = RuamelYAML()
+        ry.preserve_quotes = True
+        with open(_YAML, encoding='utf-8') as fh:
+            doc = ry.load(fh)
+
+        ingredient_section = doc['ingredient']
+
+        # Add new entries — no type set (assigned later by per-type build_refresh())
+        for curie in new_curies:
+            info           = owl_terms[curie]
+            existing_entry = ingredient_section.get(curie) or {}
+            new_entry: dict = {
+                'label':    info['label'],
+                'synonyms': list(info['synonyms']),
+            }
+            if existing_entry.get('ai_synonyms'):
+                new_entry['ai_synonyms'] = existing_entry['ai_synonyms']
+            ingredient_section[curie] = new_entry
+
+        # Update labels for existing entries
+        for curie, new_label in label_updates.items():
+            ingredient_section[curie]['label'] = new_label
+
+        # Update synonyms for existing entries
+        for curie, owl_syns in updates.items():
+            ingredient_section[curie]['synonyms'] = owl_syns
+
+        # Migrate orphaned synonyms to ai_synonyms[status=proposed]
+        for curie, orphaned in migrates.items():
+            entry      = ingredient_section[curie]
+            ai_section = dict(entry.get('ai_synonyms') or {})
+            ai_lower   = {k.lower() for k in ai_section}
+            for syn in orphaned:
+                if syn.lower() not in ai_lower:
+                    ai_section[syn] = {'status': 'proposed'}
+            entry['ai_synonyms'] = ai_section
+
+        with open(_YAML, 'w', encoding='utf-8') as fh:
+            ry.dump(doc, fh)
+        print(f'Updated {_YAML}\n')
+
+    # Phase 3: characteristic terms
+    build_refresh('characteristic', owl_path, dry_run=dry_run)
+    # Phase 4: anatomy branch + annotation
+    build_anatomy(owl_path, dry_run=dry_run)
+    # Phase 5: taxonomy branch + annotation
+    build_taxonomy(owl_path, dry_run=dry_run)
 
 
 def _collect_owl_terms(roots: list, exclude_curies: dict, owl_path: str) -> dict:
@@ -2478,7 +2964,7 @@ def _collect_owl_terms(roots: list, exclude_curies: dict, owl_path: str) -> dict
         node_iri = queue.popleft()
         if dep(node_iri):
             continue
-        label = str(next(g.objects(URIRef(node_iri), RDFS.label), ''))
+        label = ' '.join(str(next(g.objects(URIRef(node_iri), RDFS.label), '')).split())
         if label:
             curie = _char_short(node_iri)
             node_ref = URIRef(node_iri)
@@ -2486,8 +2972,8 @@ def _collect_owl_terms(roots: list, exclude_curies: dict, owl_path: str) -> dict
             syns: list[str] = []
             for prop in (EXACT_SYN, HAS_SYN):
                 for s in g.objects(node_ref, prop):
-                    v = str(s)
-                    if v not in seen_syns:
+                    v = ' '.join(str(s).split())
+                    if v and v not in seen_syns:
                         seen_syns.add(v)
                         syns.append(v)
             result[curie] = {'label': label, 'synonyms': syns, 'iri': node_iri}
@@ -2689,15 +3175,10 @@ def build_refresh(type_name: str, owl_path: str, dry_run: bool = False) -> None:
             # Already owned by another primary type — extend the type list.
             # Food material types (fruit, dairy, grain …) always win primary position
             # over annotation types (anatomy, taxonomy).
-            _FOOD_TYPES = {
-                'chemical', 'nutrient', 'sweetener', 'fruit', 'dairy', 'spice',
-                'herb', 'seed', 'nut', 'legume', 'grain', 'root_vegetable', 'lipid', 'fermentation',
-                'animal',
-            }
             existing_prim = (existing_type[0]
                              if isinstance(existing_type, list) else existing_type)
             # Decide type order: food type goes first; anatomy/taxonomy go second.
-            if type_name in _FOOD_TYPES and existing_prim not in _FOOD_TYPES:
+            if type_name in _FOOD_PRIMARY_TYPES and existing_prim not in _FOOD_PRIMARY_TYPES:
                 # New type is food; existing primary is annotation → food takes primary.
                 all_types = ([type_name] + (list(existing_type)
                              if isinstance(existing_type, list) else [existing_type]))
@@ -2781,14 +3262,17 @@ def build_refresh(type_name: str, owl_path: str, dry_run: bool = False) -> None:
     print(f'\nUpdated {_YAML}')
 
 
+# Food material types that receive anatomy/taxonomy annotations during build.
+# Also used in build_refresh() to determine type priority (food > annotation).
 _TAXONOMY_FOOD_TYPES = frozenset([
     'fruit', 'sweetener', 'dairy', 'spice', 'herb', 'seed',
     'nut', 'legume', 'grain', 'root_vegetable', 'lipid', 'fermentation', 'animal',
 ])
 
-_ANATOMY_FOOD_TYPES = frozenset([
-    'fruit', 'sweetener', 'dairy', 'spice', 'herb', 'seed',
-    'nut', 'legume', 'grain', 'root_vegetable', 'lipid', 'fermentation', 'animal',
+# Primary food material types (includes chemical/nutrient; used for type-priority logic).
+_FOOD_PRIMARY_TYPES = frozenset([
+    'chemical', 'nutrient',
+    *_TAXONOMY_FOOD_TYPES,
 ])
 
 
@@ -3040,7 +3524,7 @@ def _annotate_food_anatomy(owl_path: str, dry_run: bool = False) -> None:
     """
     Annotate food material entries in ingredients.yaml with 'anatomy' CURIEs.
 
-    For each entry whose type is in _ANATOMY_FOOD_TYPES (and has no 'parent' field),
+    For each entry whose type is in _TAXONOMY_FOOD_TYPES (and has no 'parent' field),
     traverses rdfs:subClassOf upward from the food material's IRI until the first
     named UBERON, PO, or FAO class is encountered.  That class becomes the 'anatomy'
     value for the entry.  Writes the discovered CURIE as an 'anatomy' attribute on
@@ -3052,31 +3536,9 @@ def _annotate_food_anatomy(owl_path: str, dry_run: bool = False) -> None:
         print('ERROR: rdflib is required. Install with: pip install rdflib', file=sys.stderr)
         return
 
-    _EXT_IRI_PREFIXES = (
-        'http://purl.obolibrary.org/obo/UBERON_',
-        'http://purl.obolibrary.org/obo/PO_',
-        'http://purl.obolibrary.org/obo/FAO_',
-    )
-
-    def _nearest_ext_ancestor(start_iri: str) -> str:
-        """BFS up rdfs:subClassOf; return first UBERON/PO/FAO named class IRI."""
-        visited: set[str] = {start_iri}
-        queue: list[str]  = [start_iri]
-        while queue:
-            node_iri = queue.pop(0)
-            for parent in g.objects(URIRef(node_iri), RDFS.subClassOf):
-                ps = str(parent)
-                if ps in visited or not ps.startswith('http'):
-                    continue
-                visited.add(ps)
-                if any(ps.startswith(p) for p in _EXT_IRI_PREFIXES):
-                    return ps
-                queue.append(ps)
-        return ''
-
     owl_basename = os.path.basename(owl_path)
     print(f'\n=== Anatomy Annotation | OWL: {owl_basename} ===\n')
-    print(f'  Food types scanned: {", ".join(sorted(_ANATOMY_FOOD_TYPES))}\n')
+    print(f'  Food types scanned: {", ".join(sorted(_TAXONOMY_FOOD_TYPES))}\n')
 
     if not os.path.exists(owl_path):
         print(f'ERROR: OWL file not found: {owl_path}', file=sys.stderr)
@@ -3095,7 +3557,7 @@ def _annotate_food_anatomy(owl_path: str, dry_run: bool = False) -> None:
     food_entries = {
         curie: entry
         for curie, entry in _DB.items()
-        if _primary_type(entry) in _ANATOMY_FOOD_TYPES
+        if _primary_type(entry) in _TAXONOMY_FOOD_TYPES
         and not entry.get('parent')
     }
 
@@ -3109,7 +3571,7 @@ def _annotate_food_anatomy(owl_path: str, dry_run: bool = False) -> None:
         if any(iri.startswith(p) for p in _EXT_IRI_PREFIXES):
             anat_iri = iri
         else:
-            anat_iri = _nearest_ext_ancestor(iri)
+            anat_iri = _nearest_ext_ancestor(g, iri)
 
         if not anat_iri:
             existing = entry.get('anatomy', '')
@@ -3198,29 +3660,6 @@ def _annotate_anatomy_refs(owl_path: str, dry_run: bool = False) -> None:
     finally:
         _log.setLevel(_prev)
 
-    # OBO IRI prefixes for the target external ontologies
-    _EXT_IRI_PREFIXES = (
-        'http://purl.obolibrary.org/obo/UBERON_',
-        'http://purl.obolibrary.org/obo/PO_',
-        'http://purl.obolibrary.org/obo/FAO_',
-    )
-
-    def _nearest_ext_ancestor(start_iri: str) -> str:
-        """BFS up rdfs:subClassOf; return first UBERON/PO/FAO IRI (excl. start)."""
-        visited: set[str] = {start_iri}
-        queue: list[str]  = [start_iri]
-        while queue:
-            node_iri = queue.pop(0)
-            for parent in g.objects(URIRef(node_iri), RDFS.subClassOf):
-                ps = str(parent)
-                if ps in visited or not ps.startswith('http'):
-                    continue
-                visited.add(ps)
-                if any(ps.startswith(p) for p in _EXT_IRI_PREFIXES):
-                    return ps
-                queue.append(ps)
-        return ''
-
     anatomy_entries = {
         curie: entry
         for curie, entry in _DB.items()
@@ -3234,7 +3673,7 @@ def _annotate_anatomy_refs(owl_path: str, dry_run: bool = False) -> None:
 
     for curie, entry in sorted(anatomy_entries.items()):
         iri     = curie_to_iri(curie)
-        ref_iri = _nearest_ext_ancestor(iri)
+        ref_iri = _nearest_ext_ancestor(g, iri)
         if not ref_iri:
             no_ref.append(curie)
             continue
