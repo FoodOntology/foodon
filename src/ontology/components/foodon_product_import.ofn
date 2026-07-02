@@ -2441,6 +2441,10 @@ Declaration(Class(obo:FOODON_00005734))
 Declaration(Class(obo:FOODON_00005736))
 Declaration(Class(obo:FOODON_00005737))
 Declaration(Class(obo:FOODON_00005738))
+Declaration(Class(obo:FOODON_00005744))
+Declaration(Class(obo:FOODON_00005745))
+Declaration(Class(obo:FOODON_00005747))
+Declaration(Class(obo:FOODON_00005788))
 Declaration(Class(obo:FOODON_0002000))
 Declaration(Class(obo:FOODON_02000403))
 Declaration(Class(obo:FOODON_02000405))
@@ -13105,6 +13109,7 @@ AnnotationAssertion(dcterms:contributor obo:FOODON_00001014 "Damion Dooley"@en)
 AnnotationAssertion(schema:image obo:FOODON_00001014 "https://upload.wikimedia.org/wikipedia/commons/thumb/2/23/Cacik-1.jpg/549px-Cacik-1.jpg"^^xsd:anyURI)
 AnnotationAssertion(oboInOwl:hasExactSynonym obo:FOODON_00001014 "yoghourt"@en)
 AnnotationAssertion(oboInOwl:hasExactSynonym obo:FOODON_00001014 "yoghurt"@en-br)
+AnnotationAssertion(oboInOwl:hasExactSynonym obo:FOODON_00001014 "yogurt"@en)
 AnnotationAssertion(oboInOwl:hasExactSynonym obo:FOODON_00001014 "yougert"@en)
 AnnotationAssertion(rdfs:comment obo:FOODON_00001014 "The bacteria used to make yogurt are known as yogurt cultures. The fermentation of lactose by these bacteria produces lactic acid, which acts on milk protein to give yogurt its texture and characteristic tart flavor."@en)
 AnnotationAssertion(rdfs:label obo:FOODON_00001014 "yogurt food product"@en)
@@ -13503,7 +13508,7 @@ SubClassOf(obo:FOODON_00001073 ObjectSomeValuesFrom(obo:RO_0002350 obo:FOODON_03
 
 AnnotationAssertion(Annotation(oboInOwl:hasDbXref "Wikipedia:Malt_vinegar#Malt") obo:IAO_0000115 obo:FOODON_00001074 "Vinegar is made by malting barley, causing the starch in the grain to turn to maltose.")
 AnnotationAssertion(rdfs:label obo:FOODON_00001074 "barley malt vinegar"@en)
-EquivalentClasses(obo:FOODON_00001074 ObjectIntersectionOf(obo:FOODON_00001073 obo:FOODON_00001191))
+EquivalentClasses(obo:FOODON_00001074 ObjectIntersectionOf(obo:FOODON_00001073 obo:FOODON_03317458))
 SubClassOf(obo:FOODON_00001074 obo:FOODON_00001073)
 
 # Class: obo:FOODON_00001075 (mammalian milk (nonfat, dry))
@@ -29060,6 +29065,22 @@ AnnotationAssertion(dcterms:date obo:FOODON_00005734 "2026-04-12T02:37:19Z"^^xsd
 AnnotationAssertion(rdfs:label obo:FOODON_00005734 "piece(s) of coconut meat"@en)
 SubClassOf(obo:FOODON_00005734 obo:FOODON_00005733)
 
+# Class: obo:FOODON_00005744 (microbial food culture)
+
+AnnotationAssertion(obo:IAO_0000115 obo:FOODON_00005744 "live bacteria, yeasts or moulds used in a food production fermentation process."@en)
+AnnotationAssertion(dcterms:contributor obo:FOODON_00005744 <https://orcid.org/0000-0002-8844-9165>)
+AnnotationAssertion(dcterms:date obo:FOODON_00005744 "2026-06-29T16:09:48Z"^^xsd:dateTime)
+AnnotationAssertion(rdfs:label obo:FOODON_00005744 "microbial food culture"@en)
+
+# Class: obo:FOODON_00005745 (bacterial food culture)
+
+AnnotationAssertion(obo:IAO_0000115 obo:FOODON_00005745 "A microbial food culture consisting primarily of bacteria"@en)
+AnnotationAssertion(dcterms:contributor obo:FOODON_00005745 <https://orcid.org/0000-0002-8844-9165>)
+AnnotationAssertion(dcterms:date obo:FOODON_00005745 "2026-06-29T16:13:03Z"^^xsd:dateTime)
+AnnotationAssertion(oboInOwl:hasExactSynonym obo:FOODON_00005745 "bacterial culture"@en)
+AnnotationAssertion(rdfs:label obo:FOODON_00005745 "bacterial food culture"@en)
+SubClassOf(obo:FOODON_00005745 obo:FOODON_00005744)
+
 # Class: obo:FOODON_02020155 (chicken egg white)
 
 SubClassOf(obo:FOODON_02020155 obo:FOODON_03304840)
@@ -29223,7 +29244,7 @@ SubClassOf(obo:FOODON_03301017 ObjectSomeValuesFrom(obo:RO_0002350 obo:FOODON_03
 AnnotationAssertion(obo:IAO_0000114 obo:FOODON_03301018 obo:IAO_0000428)
 AnnotationAssertion(oboInOwl:hasDbXref obo:FOODON_03301018 siren:F1018)
 AnnotationAssertion(rdfs:label obo:FOODON_03301018 "barley malt powder"@en)
-SubClassOf(obo:FOODON_03301018 obo:FOODON_00001191)
+SubClassOf(obo:FOODON_03301018 obo:FOODON_03317458)
 SubClassOf(obo:FOODON_03301018 ObjectSomeValuesFrom(obo:RO_0002350 obo:FOODON_03400149))
 
 # Class: obo:FOODON_03301019 (honey (jellied))
@@ -34576,6 +34597,7 @@ AnnotationAssertion(obo:IAO_0000114 obo:FOODON_03301968 obo:IAO_0000428)
 AnnotationAssertion(oboInOwl:hasDbXref obo:FOODON_03301968 siren:F1968)
 AnnotationAssertion(rdfs:label obo:FOODON_03301968 "barley malt flour"@en)
 SubClassOf(obo:FOODON_03301968 obo:FOODON_00001632)
+SubClassOf(obo:FOODON_03301968 obo:FOODON_03317458)
 SubClassOf(obo:FOODON_03301968 ObjectSomeValuesFrom(obo:RO_0002350 obo:FOODON_03400149))
 
 # Class: obo:FOODON_03301969 (white wheat flour (unbleached, enriched))
@@ -36647,7 +36669,7 @@ SubClassOf(obo:FOODON_03302329 obo:FOODON_00002119)
 AnnotationAssertion(obo:IAO_0000114 obo:FOODON_03302330 obo:IAO_0000428)
 AnnotationAssertion(oboInOwl:hasDbXref obo:FOODON_03302330 siren:F2330)
 AnnotationAssertion(rdfs:label obo:FOODON_03302330 "cream (pasteurized)"@en)
-SubClassOf(obo:FOODON_03302330 obo:FOODON_00001775)
+SubClassOf(obo:FOODON_03302330 obo:FOODON_00005747)
 
 # Class: obo:FOODON_03302331 (butter roll)
 
@@ -39076,6 +39098,7 @@ SubClassOf(obo:FOODON_03302775 ObjectSomeValuesFrom(obo:RO_0002350 obo:FOODON_03
 
 AnnotationAssertion(obo:IAO_0000114 obo:FOODON_03302776 obo:IAO_0000428)
 AnnotationAssertion(oboInOwl:hasDbXref obo:FOODON_03302776 siren:F2776)
+AnnotationAssertion(oboInOwl:hasExactSynonym obo:FOODON_03302776 "soy oil"@en)
 AnnotationAssertion(rdfs:label obo:FOODON_03302776 "soybean oil"@en)
 SubClassOf(obo:FOODON_03302776 obo:FOODON_00002264)
 SubClassOf(obo:FOODON_03302776 obo:FOODON_03420307)
@@ -51752,7 +51775,7 @@ SubClassOf(obo:FOODON_03305263 obo:FOODON_00002139)
 AnnotationAssertion(obo:IAO_0000114 obo:FOODON_03305264 obo:IAO_0000428)
 AnnotationAssertion(oboInOwl:hasDbXref obo:FOODON_03305264 siren:F5264)
 AnnotationAssertion(rdfs:label obo:FOODON_03305264 "coffee creamer"@en)
-SubClassOf(obo:FOODON_03305264 obo:FOODON_00001775)
+SubClassOf(obo:FOODON_03305264 obo:FOODON_00005747)
 
 # Class: obo:FOODON_03305265 (cream dressing)
 
@@ -55749,9 +55772,11 @@ SubClassOf(obo:FOODON_03306039 obo:FOODON_00001989)
 # Class: obo:FOODON_03306040 (barley malt)
 
 AnnotationAssertion(obo:IAO_0000114 obo:FOODON_03306040 obo:IAO_0000428)
+AnnotationAssertion(oboInOwl:hasDbXref obo:FOODON_03306040 langual:H0754)
 AnnotationAssertion(oboInOwl:hasDbXref obo:FOODON_03306040 siren:F6040)
 AnnotationAssertion(rdfs:label obo:FOODON_03306040 "barley malt"@en)
-SubClassOf(obo:FOODON_03306040 obo:FOODON_00001191)
+SubClassOf(obo:FOODON_03306040 obo:FOODON_00005788)
+SubClassOf(obo:FOODON_03306040 obo:FOODON_03317458)
 SubClassOf(obo:FOODON_03306040 ObjectSomeValuesFrom(obo:RO_0002350 obo:FOODON_03400125))
 
 # Class: obo:FOODON_03306041 (yeast (fine, dry))
@@ -76102,6 +76127,8 @@ SubClassOf(obo:FOODON_03310229 obo:FOODON_03301648)
 # Class: obo:FOODON_03310232 (palm oil)
 
 AnnotationAssertion(obo:IAO_0000114 obo:FOODON_03310232 obo:IAO_0000428)
+AnnotationAssertion(obo:IAO_0000115 obo:FOODON_03310232 "An edible vegetable oil that comes from the fruit of oil palm trees, the scientific name is Elaeis guineensis."@en)
+AnnotationAssertion(obo:IAO_0000119 obo:FOODON_03310232 <https://www.wwf.org.uk/updates/8-things-know-about-palm-oil>)
 AnnotationAssertion(oboInOwl:hasDbXref obo:FOODON_03310232 siren:F10232)
 AnnotationAssertion(rdfs:label obo:FOODON_03310232 "palm oil"@en)
 SubClassOf(obo:FOODON_03310232 obo:FOODON_00002078)
@@ -77422,7 +77449,7 @@ AnnotationAssertion(rdfs:label obo:FOODON_03310562 "sardo cheese"@en)
 SubClassOf(obo:FOODON_03310562 obo:FOODON_00001130)
 SubClassOf(obo:FOODON_03310562 ObjectSomeValuesFrom(obo:RO_0002350 obo:FOODON_03400168))
 
-# Class: obo:FOODON_03310563 (sheep liver (whole or pieces, raw))
+# Class: obo:FOODON_03310563 (sheep liver piece(s) (raw))
 
 AnnotationAssertion(obo:IAO_0000114 obo:FOODON_03310563 obo:IAO_0000428)
 AnnotationAssertion(oboInOwl:hasDbXref obo:FOODON_03310563 siren:F10563)
@@ -77431,7 +77458,7 @@ AnnotationAssertion(rdfs:comment obo:FOODON_03310563 "SIREN DB annotation:
 * solid FOODON:03430151
 * not heat-treated FOODON:03440003
 * liver UBERON:0002107"@en)
-AnnotationAssertion(rdfs:label obo:FOODON_03310563 "sheep liver (whole or pieces, raw)"@en)
+AnnotationAssertion(rdfs:label obo:FOODON_03310563 "sheep liver piece(s) (raw)"@en)
 SubClassOf(obo:FOODON_03310563 obo:FOODON_00002236)
 SubClassOf(obo:FOODON_03310563 obo:FOODON_00002819)
 
@@ -79413,7 +79440,7 @@ SubClassOf(obo:FOODON_03310906 obo:FOODON_03311884)
 AnnotationAssertion(obo:IAO_0000114 obo:FOODON_03310908 obo:IAO_0000428)
 AnnotationAssertion(oboInOwl:hasDbXref obo:FOODON_03310908 siren:F10908)
 AnnotationAssertion(rdfs:label obo:FOODON_03310908 "cream (raw)"@en)
-SubClassOf(obo:FOODON_03310908 obo:FOODON_00001775)
+SubClassOf(obo:FOODON_03310908 obo:FOODON_00005747)
 
 # Class: obo:FOODON_03310909 (cream (reactivated))
 
@@ -82479,7 +82506,6 @@ SubClassOf(obo:FOODON_03311435 ObjectSomeValuesFrom(obo:RO_0002350 obo:FOODON_03
 
 AnnotationAssertion(obo:IAO_0000114 obo:FOODON_03311437 obo:IAO_0000428)
 AnnotationAssertion(oboInOwl:hasDbXref obo:FOODON_03311437 siren:F11437)
-AnnotationAssertion(oboInOwl:hasExactSynonym obo:FOODON_03311437 "almond oil"@en)
 AnnotationAssertion(rdfs:comment obo:FOODON_03311437 "SIREN DB annotation:
 * liquid, high viscosity, with no visible particles FOODON:03430139
 * fully heat-treated FOODON:03440014
@@ -87797,7 +87823,7 @@ SubClassOf(obo:FOODON_03315513 obo:FOODON_00001875)
 AnnotationAssertion(obo:IAO_0000114 obo:FOODON_03315514 obo:IAO_0000428)
 AnnotationAssertion(oboInOwl:hasDbXref obo:FOODON_03315514 siren:F15514)
 AnnotationAssertion(rdfs:label obo:FOODON_03315514 "cream (uht-treated)"@en)
-SubClassOf(obo:FOODON_03315514 obo:FOODON_00001775)
+SubClassOf(obo:FOODON_03315514 obo:FOODON_00005747)
 
 # Class: obo:FOODON_03315516 (cow milk (fruit-flavored))
 
@@ -93140,6 +93166,7 @@ SubClassOf(obo:FOODON_03316546 obo:FOODON_03315150)
 AnnotationAssertion(obo:IAO_0000114 obo:FOODON_03316547 obo:IAO_0000428)
 AnnotationAssertion(oboInOwl:hasDbXref obo:FOODON_03316547 siren:F16547)
 AnnotationAssertion(rdfs:label obo:FOODON_03316547 "cream (sterilized, soft)"@en)
+SubClassOf(obo:FOODON_03316547 obo:FOODON_00005747)
 SubClassOf(obo:FOODON_03316547 obo:FOODON_03305284)
 
 # Class: obo:FOODON_03316550 (vegetable juice (gassed))
@@ -95175,7 +95202,7 @@ SubClassOf(obo:FOODON_03316874 obo:FOODON_03303659)
 AnnotationAssertion(obo:IAO_0000114 obo:FOODON_03316875 obo:IAO_0000428)
 AnnotationAssertion(oboInOwl:hasDbXref obo:FOODON_03316875 siren:F16875)
 AnnotationAssertion(rdfs:label obo:FOODON_03316875 "cream (ultrapasteurized)"@en)
-SubClassOf(obo:FOODON_03316875 obo:FOODON_00001775)
+SubClassOf(obo:FOODON_03316875 obo:FOODON_00005747)
 
 # Class: obo:FOODON_03316877 (mammalian milk (sour, flavored))
 
@@ -98038,6 +98065,7 @@ AnnotationAssertion(obo:IAO_0000114 obo:FOODON_03317386 obo:IAO_0000428)
 AnnotationAssertion(oboInOwl:hasDbXref obo:FOODON_03317386 siren:F17386)
 AnnotationAssertion(rdfs:label obo:FOODON_03317386 "corn malt"@en)
 SubClassOf(obo:FOODON_03317386 obo:FOODON_00001845)
+SubClassOf(obo:FOODON_03317386 obo:FOODON_00005788)
 SubClassOf(obo:FOODON_03317386 ObjectSomeValuesFrom(obo:RO_0002350 obo:FOODON_03400125))
 
 # Class: obo:FOODON_03317387 (corn kernel)
@@ -98525,7 +98553,7 @@ SubClassOf(obo:FOODON_03317489 obo:FOODON_03315157)
 AnnotationAssertion(obo:IAO_0000114 obo:FOODON_03317490 obo:IAO_0000428)
 AnnotationAssertion(oboInOwl:hasDbXref obo:FOODON_03317490 siren:F17490)
 AnnotationAssertion(rdfs:label obo:FOODON_03317490 "clotted cream"@en)
-SubClassOf(obo:FOODON_03317490 obo:FOODON_00001775)
+SubClassOf(obo:FOODON_03317490 obo:FOODON_00005747)
 
 # Class: obo:FOODON_03317491 (meat product (canned))
 
@@ -99965,6 +99993,7 @@ AnnotationAssertion(schema:image obo:FOODON_03460755 "https://upload.wikimedia.o
 AnnotationAssertion(oboInOwl:hasDbXref obo:FOODON_03460755 "langual:H0755")
 AnnotationAssertion(rdfs:label obo:FOODON_03460755 "wheat malt"@en)
 SubClassOf(obo:FOODON_03460755 obo:FOODON_00001141)
+SubClassOf(obo:FOODON_03460755 obo:FOODON_00005788)
 
 # Class: obo:FOODON_03460848 (guarana seed)
 
