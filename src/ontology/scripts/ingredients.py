@@ -16,27 +16,45 @@ Type classification (fruit, grain, dairy, etc.) and subtype are read from each
 matched entry's YAML 'type'/'subtype' fields, populated by --rebuild TYPE.
 Per-type recognisers are available via --type TYPE for single-category testing.
 
+Initial setup — --rebuild all
+──────────────────────────────
+  The first step when setting up ingredients.yaml from scratch is:
+    python3 ingredients.py --rebuild all --owl cache-foodon-merged.owl
+
+  This performs a BFS traversal of the following top-level OWL roots and
+  writes every discovered term into ingredients.yaml, then runs per-type
+  classification, anatomy annotation, and taxonomy annotation:
+
+    FOODON:00001714   food material by component
+    FOODON:00001002   food product
+    FOODON:03420116   organism material
+    FOODON:00002373   food by meal type
+    CDNO:0000001      dietary chemical component (nutrients, vitamins, minerals)
+
+  After the initial population, individual types can be refreshed with:
+    python3 ingredients.py --rebuild TYPE --owl cache-foodon-merged.owl
+
 Type classifications and OWL roots
 ───────────────────────────────────
-  fruit          PO:0009001, FOODON:00001057        fruit food products
-  nut            FOODON:00005735                    nut food products
-  legume         FOODON:00001264, FOODON:03301467   pulse/bean/lentil/soy products
-  grain          FOODON:00001093                    cereal grain food products
-  seed           FOODON:00001173                    plant seed food products
-  root_vegetable (manual entries)                   taproots, bulbs, tubers, rhizomes
-  spice          FOODON:03303380                    spice food products
-  herb           FOODON:00003042                    herb food products
-  dairy          FOODON:00001256                    dairy food products
-  animal         FOODON:03420164                    animal material food products
-  lipid          FOODON:00002664                    cooking oils and animal fats
-  fermentation   FOODON:00001258                    fermented food products
-  sweetener      (manual entries)                   sugars, sugar alcohols, syrups
-  chemical       FOODON:03412972, CHEBI:60004       food additives and mixtures
-  nutrient       CHEBI:33229, CDNO:0000001          vitamins, minerals, macronutrients
-  taxonomy       NCBITaxon:2                        organism/taxon annotation terms
-  anatomy        UBERON:0000061, PO:0025131,        anatomical structure annotation terms
+  fruit          PO:0009001, FOODON:00001057              fruit food products
+  nut            FOODON:00005735                          nut food products
+  legume         FOODON:00001264, FOODON:03301467         pulse/bean/lentil/soy products
+  grain          FOODON:00001093                          cereal grain food products
+  seed           FOODON:00001173                          plant seed food products
+  root_vegetable FOODON:00002150, PO:0009005              taproots, bulbs, tubers, rhizomes
+  spice          FOODON:03303380                          spice food products
+  herb           FOODON:00003042                          herb food products
+  dairy          FOODON:00001256                          dairy food products
+  animal         FOODON:03420164                          animal material food products
+  lipid          FOODON:00002664                          cooking oils and animal fats
+  fermentation   FOODON:00001258                          fermented food products
+  sweetener      FOODON:00002300                          sugars, sugar alcohols, syrups
+  chemical       FOODON:03412972, CHEBI:60004             food additives and mixtures
+  nutrient       CHEBI:33229, CDNO:0000001                vitamins, minerals, macronutrients
+  taxonomy       NCBITaxon:2                              organism/taxon annotation terms
+  anatomy        UBERON:0000061, PO:0025131,              anatomical structure annotation terms
                  FAO:0000001, FOODON:03530146
-  characteristic COB:0000502                        food quality/state terms
+  characteristic COB:0000502                              food quality/state terms
 
 Rebuild a single type from OWL (dry-run first to preview changes):
   python3 ingredients.py --rebuild grain --owl cache-foodon-merged.owl --dry-run
@@ -1959,6 +1977,31 @@ def _component_search(ingredient: str, options: argparse.Namespace) -> MatchResu
                 result.match_status = 'partial'
             return _resolve_residuals(result)
 
+    # 3b.7: leading taxonomy token stripping
+    # Handles "goat cream", "sheep yogurt", "buffalo mozzarella", etc.
+    # Split off 1-2 leading words that resolve as a taxonomy entry; match the
+    # remainder as food.  _resolve_residuals then promotes the unmatched prefix
+    # to result.taxonomy (Capra hircus, Ovis aries, …).
+    words = normed.split()
+    if len(words) >= 2:
+        for prefix_len in range(1, min(3, len(words))):
+            prefix = ' '.join(words[:prefix_len])
+            remainder = ' '.join(words[prefix_len:])
+            if not remainder:
+                continue
+            prefix_curie = _TAXONOMY_LOOKUP.get(prefix) or (
+                _TAXONOMY_LOOKUP.get(prefix[:-1]) if prefix.endswith('s') else None
+            )
+            if prefix_curie:
+                result = _global_exact_match(remainder, options)
+                if result:
+                    result.unmatched_terms = (
+                        [UnmatchedTerm('unresolved', prefix)] + list(result.unmatched_terms)
+                    )
+                    if result.match_status == 'exact':
+                        result.match_status = 'partial'
+                    return _resolve_residuals(result)
+
     # 3c: characteristic stripping loop
     cm = recognize_characteristic(ingredient)
     if cm:
@@ -2040,6 +2083,23 @@ def _component_search(ingredient: str, options: argparse.Namespace) -> MatchResu
     anat_curie = _anatomy_standalone_match(ingredient)
     if anat_curie:
         return _make_anatomy_result(ingredient, anat_curie)
+
+    # 3f: longest-prefix food match with trailing unmatched modifier
+    # Last resort: match the longest prefix of the string as a food entity and
+    # report the remainder as unresolved.  Handles "vitamin d3 strawberry" →
+    # partial on "vitamin d3"; fires only after all earlier steps have failed.
+    if len(words) >= 2:
+        for prefix_len in range(min(4, len(words) - 1), 0, -1):
+            prefix = ' '.join(words[:prefix_len])
+            remainder_str = ' '.join(words[prefix_len:])
+            result = _global_exact_match(prefix, options)
+            if result:
+                result.unmatched_terms = list(result.unmatched_terms) + [
+                    UnmatchedTerm('unresolved', remainder_str)
+                ]
+                if result.match_status == 'exact':
+                    result.match_status = 'partial'
+                return _resolve_residuals(result)
 
     # No match
     return MatchResult(
@@ -2696,6 +2756,17 @@ def run_type_test(options: argparse.Namespace) -> None:
 
 def main() -> None:
     options = init_parser()
+
+    # Validate --rebuild TYPE early, before any OWL loading or synonym setup.
+    _valid_rebuild = {'all', 'taxonomy', 'anatomy'} | set(_CONFIG.keys())
+    if options.rebuild and options.rebuild not in _valid_rebuild:
+        print(
+            f'ERROR: unknown type {options.rebuild!r}. '
+            f'Known types: {list(_CONFIG.keys())}',
+            file=sys.stderr,
+        )
+        sys.exit(1)
+
     if options.fresh:
         print('Freshening')
         # Note: all ROBOT boolean flags require an explicit true/false argument.
@@ -2744,6 +2815,7 @@ _REBUILD_ALL_ROOTS = [
     'FOODON:00001002',   # food product
     'FOODON:03420116',   # organism material
     'FOODON:00002373',   # food by meal type
+    'CDNO:0000001',      # dietary chemical component (nutrients, vitamins, minerals)
 ]
 
 
@@ -2752,7 +2824,8 @@ def build_refresh_all(owl_path: str, dry_run: bool = False) -> None:
     Collect all food material entries from broad OWL roots and update ingredients.yaml.
 
     Phase 1: collect terms from _REBUILD_ALL_ROOTS (food material by component,
-             food product, organism material) and all their OWL descendants.
+             food product, organism material, food by meal type, dietary chemical
+             component) and all their OWL descendants.
     Phase 2: write/update YAML — new entries get label + synonyms (no type yet;
              type is assigned by the per-type build_refresh() calls that follow);
              existing entries have label/synonyms refreshed, other attributes preserved.
@@ -2998,13 +3071,8 @@ def build_refresh(type_name: str, owl_path: str, dry_run: bool = False) -> None:
     With dry_run=False, writes additions/updates back to ingredients.yaml using
     ruamel.yaml to preserve existing formatting.
     """
-    cfg = _CONFIG.get(type_name)
-    if cfg is None:
-        print(f'ERROR: unknown type {type_name!r}. '
-              f'Known types: {list(_CONFIG.keys())}', file=sys.stderr)
-        return
-
-    roots        = cfg.get('roots') or []
+    cfg   = _CONFIG[type_name]   # validated by main() before this is called
+    roots = cfg.get('roots') or []
     owl_basename = os.path.basename(owl_path)
     print(f'=== Build/Refresh: {type_name} | OWL: {owl_basename} ===\n')
 
