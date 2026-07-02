@@ -29774,7 +29774,6 @@ SubClassOf(obo:FOODON_03000221 ObjectSomeValuesFrom(obo:RO_0002162 obo:NCBITaxon
 
 AnnotationAssertion(obo:IAO_0000115 obo:FOODON_03000222 "Whole coriander or some substance made from processed coriander."@en)
 AnnotationAssertion(obo:IAO_0000119 obo:FOODON_03000222 "https://en.wikipedia.org/wiki/Coriander")
-AnnotationAssertion(oboInOwl:hasExactSynonym obo:FOODON_03000222 "corinader"@en)
 AnnotationAssertion(rdfs:label obo:FOODON_03000222 "coriander (whole or pieces)"@en)
 SubClassOf(obo:FOODON_03000222 obo:FOODON_00001763)
 SubClassOf(obo:FOODON_03000222 ObjectSomeValuesFrom(obo:RO_0002162 obo:NCBITaxon_4047))
