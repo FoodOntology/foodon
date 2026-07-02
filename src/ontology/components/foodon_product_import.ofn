@@ -2314,6 +2314,7 @@ Declaration(Class(obo:FOODON_00004194))
 Declaration(Class(obo:FOODON_00004195))
 Declaration(Class(obo:FOODON_00004196))
 Declaration(Class(obo:FOODON_00004197))
+Declaration(Class(obo:FOODON_00004216))
 Declaration(Class(obo:FOODON_00004219))
 Declaration(Class(obo:FOODON_00004235))
 Declaration(Class(obo:FOODON_00004237))
@@ -2445,6 +2446,12 @@ Declaration(Class(obo:FOODON_00005744))
 Declaration(Class(obo:FOODON_00005745))
 Declaration(Class(obo:FOODON_00005747))
 Declaration(Class(obo:FOODON_00005788))
+Declaration(Class(obo:FOODON_00005790))
+Declaration(Class(obo:FOODON_00005791))
+Declaration(Class(obo:FOODON_00005793))
+Declaration(Class(obo:FOODON_00005795))
+Declaration(Class(obo:FOODON_00005796))
+Declaration(Class(obo:FOODON_00005797))
 Declaration(Class(obo:FOODON_0002000))
 Declaration(Class(obo:FOODON_02000403))
 Declaration(Class(obo:FOODON_02000405))
@@ -12511,6 +12518,7 @@ Declaration(Class(obo:FOODON_03460364))
 Declaration(Class(obo:FOODON_03460391))
 Declaration(Class(obo:FOODON_03460748))
 Declaration(Class(obo:FOODON_03460755))
+Declaration(Class(obo:FOODON_03460756))
 Declaration(Class(obo:FOODON_03460848))
 Declaration(Class(obo:FOODON_03460851))
 Declaration(Class(obo:FOODON_03470106))
@@ -12752,12 +12760,15 @@ Declaration(Class(obo:NCBITaxon_43691))
 Declaration(Class(obo:NCBITaxon_4432))
 Declaration(Class(obo:NCBITaxon_4442))
 Declaration(Class(obo:NCBITaxon_4498))
+Declaration(Class(obo:NCBITaxon_4530))
 Declaration(Class(obo:NCBITaxon_4540))
 Declaration(Class(obo:NCBITaxon_4543))
 Declaration(Class(obo:NCBITaxon_455045))
 Declaration(Class(obo:NCBITaxon_455479))
 Declaration(Class(obo:NCBITaxon_4558))
+Declaration(Class(obo:NCBITaxon_4565))
 Declaration(Class(obo:NCBITaxon_4567))
+Declaration(Class(obo:NCBITaxon_4577))
 Declaration(Class(obo:NCBITaxon_45949))
 Declaration(Class(obo:NCBITaxon_4640))
 Declaration(Class(obo:NCBITaxon_4672))
@@ -13623,6 +13634,7 @@ SubClassOf(obo:FOODON_00001092 obo:FOODON_00005502)
 # Class: obo:FOODON_00001093 (cereal grain food product)
 
 AnnotationAssertion(rdfs:label obo:FOODON_00001093 "cereal grain food product"@en)
+EquivalentClasses(obo:FOODON_00001093 obo:FOODON_00005788)
 EquivalentClasses(obo:FOODON_00001093 ObjectIntersectionOf(obo:FOODON_00001173 ObjectSomeValuesFrom(obo:RO_0001000 obo:FOODON_03411324)))
 SubClassOf(obo:FOODON_00001093 obo:FOODON_00001173)
 
@@ -14246,6 +14258,7 @@ SubClassOf(obo:FOODON_00001189 ObjectSomeValuesFrom(obo:RO_0002350 obo:FOODON_03
 
 AnnotationAssertion(rdfs:label obo:FOODON_00001190 "rye food product"@en)
 SubClassOf(obo:FOODON_00001190 obo:FOODON_00001093)
+SubClassOf(obo:FOODON_00001190 ObjectSomeValuesFrom(obo:RO_0001000 obo:FOODON_03411313))
 
 # Class: obo:FOODON_00001191 (barley food product)
 
@@ -17020,8 +17033,7 @@ SubClassOf(obo:FOODON_00001845 obo:FOODON_00001765)
 # Class: obo:FOODON_00001846 (field corn refined food product)
 
 AnnotationAssertion(rdfs:label obo:FOODON_00001846 "field corn refined food product"@en)
-SubClassOf(obo:FOODON_00001846 obo:FOODON_00002274)
-SubClassOf(obo:FOODON_00001846 ObjectSomeValuesFrom(obo:RO_0001000 obo:FOODON_03411379))
+SubClassOf(obo:FOODON_00001846 obo:FOODON_00001845)
 
 # Class: obo:FOODON_00001847 (field corn snack food product)
 
@@ -19026,7 +19038,6 @@ SubClassOf(obo:FOODON_00002195 obo:FOODON_00002113)
 # Class: obo:FOODON_00002196 (refined or partially-refined food product)
 
 AnnotationAssertion(rdfs:label obo:FOODON_00002196 "refined or partially-refined food product"@en)
-SubClassOf(obo:FOODON_00002196 obo:FOODON_00001002)
 SubClassOf(obo:FOODON_00002196 obo:FOODON_03311737)
 
 # Class: obo:FOODON_00002197 (reindeer meat food product)
@@ -19515,10 +19526,10 @@ SubClassOf(obo:FOODON_00002272 ObjectSomeValuesFrom(obo:RO_0001000 obo:FOODON_03
 AnnotationAssertion(rdfs:label obo:FOODON_00002273 "squid food product"@en)
 SubClassOf(obo:FOODON_00002273 obo:FOODON_00001707)
 
-# Class: obo:FOODON_00002274 (starch refined food product)
+# Class: obo:FOODON_00002274 (refined starch food product)
 
-AnnotationAssertion(rdfs:label obo:FOODON_00002274 "starch refined food product"@en)
-SubClassOf(obo:FOODON_00002274 obo:FOODON_00002131)
+AnnotationAssertion(rdfs:label obo:FOODON_00002274 "refined starch food product"@en)
+SubClassOf(obo:FOODON_00002274 obo:FOODON_03301000)
 SubClassOf(obo:FOODON_00002274 ObjectSomeValuesFrom(obo:RO_0001000 obo:FOODON_03411016))
 
 # Class: obo:FOODON_00002275 (steeped beverage product)
@@ -29081,6 +29092,80 @@ AnnotationAssertion(oboInOwl:hasExactSynonym obo:FOODON_00005745 "bacterial cult
 AnnotationAssertion(rdfs:label obo:FOODON_00005745 "bacterial food culture"@en)
 SubClassOf(obo:FOODON_00005745 obo:FOODON_00005744)
 
+# Class: obo:FOODON_00005788 (malt)
+
+AnnotationAssertion(obo:IAO_0000115 obo:FOODON_00005788 "A germinated and dried cereal grain."@en)
+AnnotationAssertion(dcterms:contributor obo:FOODON_00005788 <https://orcid.org/0000-0002-8844-9165>)
+AnnotationAssertion(dcterms:date obo:FOODON_00005788 "2026-07-02T13:50:59Z"^^xsd:dateTime)
+AnnotationAssertion(rdfs:comment obo:FOODON_00005788 "The grain is made to germinate by soaking in water and is then halted from germinating further by drying with hot air."@en)
+AnnotationAssertion(rdfs:comment obo:FOODON_00005788 "SIREN DB annotation:
+* whole, natural shape FOODON:03430150
+* partially heat-treated FOODON:03440018
+* germinated or sprouted seed FOODON:03420102
+* microbial/enzymatic modification process FOODON:03460119
+* water removal process FOODON:03460138
+* preservation by dehydration or drying FOODON:03470116")
+AnnotationAssertion(rdfs:label obo:FOODON_00005788 "malt"@en)
+
+# Class: obo:FOODON_00005790 (glucose syrup)
+
+AnnotationAssertion(obo:IAO_0000115 obo:FOODON_00005790 "A syrup which is composed of glucose."@en)
+AnnotationAssertion(dcterms:contributor obo:FOODON_00005790 <https://orcid.org/0000-0002-8844-9165>)
+AnnotationAssertion(dcterms:date obo:FOODON_00005790 "2026-07-02T15:19:34Z"^^xsd:dateTime)
+AnnotationAssertion(oboInOwl:hasExactSynonym obo:FOODON_00005790 "confectioner's glucose"@en)
+AnnotationAssertion(rdfs:label obo:FOODON_00005790 "glucose syrup"@en)
+SubClassOf(obo:FOODON_00005790 obo:FOODON_00002157)
+SubClassOf(obo:FOODON_00005790 ObjectSomeValuesFrom(obo:RO_0001000 obo:FOODON_03411016))
+SubClassOf(obo:FOODON_00005790 ObjectSomeValuesFrom(obo:RO_0002350 obo:FOODON_03400118))
+
+# Class: obo:FOODON_00005791 (corn starch)
+
+AnnotationAssertion(obo:IAO_0000115 obo:FOODON_00005791 "A starch powder derived from corn (maize) grain."@en)
+AnnotationAssertion(obo:IAO_0000119 obo:FOODON_00005791 wikipedia:Corn_starch)
+AnnotationAssertion(dcterms:contributor obo:FOODON_00005791 <https://orcid.org/0000-0002-8844-9165>)
+AnnotationAssertion(dcterms:date obo:FOODON_00005791 "2026-07-02T16:05:55Z"^^xsd:dateTime)
+AnnotationAssertion(oboInOwl:hasExactSynonym obo:FOODON_00005791 "cornflour"@en-gb)
+AnnotationAssertion(oboInOwl:hasExactSynonym obo:FOODON_00005791 "cornstarch"@en-us)
+AnnotationAssertion(oboInOwl:hasExactSynonym obo:FOODON_00005791 "maize starch"@en)
+AnnotationAssertion(rdfs:label obo:FOODON_00005791 "corn starch"@en)
+SubClassOf(obo:FOODON_00005791 obo:FOODON_00002274)
+
+# Class: obo:FOODON_00005793 (oat malt)
+
+AnnotationAssertion(obo:IAO_0000115 obo:FOODON_00005793 "A malt that is from oat grain (Avena sativa)."@en)
+AnnotationAssertion(dcterms:contributor obo:FOODON_00005793 <https://orcid.org/0000-0002-8844-9165>)
+AnnotationAssertion(dcterms:date obo:FOODON_00005793 "2026-07-02T13:50:59Z"^^xsd:dateTime)
+AnnotationAssertion(rdfs:label obo:FOODON_00005793 "oat malt"@en)
+SubClassOf(obo:FOODON_00005793 obo:FOODON_00005788)
+SubClassOf(obo:FOODON_00005793 ObjectSomeValuesFrom(obo:RO_0001000 obo:FOODON_00004219))
+
+# Class: obo:FOODON_00005795 (millet malt)
+
+AnnotationAssertion(obo:IAO_0000115 obo:FOODON_00005795 "A malt that is from millet grain (Panicum miliaceum)."@en)
+AnnotationAssertion(dcterms:contributor obo:FOODON_00005795 <https://orcid.org/0000-0002-8844-9165>)
+AnnotationAssertion(dcterms:date obo:FOODON_00005795 "2026-07-02T13:50:59Z"^^xsd:dateTime)
+AnnotationAssertion(rdfs:label obo:FOODON_00005795 "millet malt"@en)
+SubClassOf(obo:FOODON_00005795 obo:FOODON_00005788)
+SubClassOf(obo:FOODON_00005795 ObjectSomeValuesFrom(obo:RO_0001000 obo:FOODON_03309702))
+
+# Class: obo:FOODON_00005796 (rice malt)
+
+AnnotationAssertion(obo:IAO_0000115 obo:FOODON_00005796 "A malt that is from rice grain (Oryza sativa)."@en)
+AnnotationAssertion(dcterms:contributor obo:FOODON_00005796 <https://orcid.org/0000-0002-8844-9165>)
+AnnotationAssertion(dcterms:date obo:FOODON_00005796 "2026-07-02T13:50:59Z"^^xsd:dateTime)
+AnnotationAssertion(rdfs:label obo:FOODON_00005796 "rice malt"@en)
+SubClassOf(obo:FOODON_00005796 obo:FOODON_00005788)
+SubClassOf(obo:FOODON_00005796 ObjectSomeValuesFrom(obo:RO_0001000 ObjectIntersectionOf(obo:PO_0009010 ObjectSomeValuesFrom(obo:RO_0002162 obo:NCBITaxon_4530))))
+
+# Class: obo:FOODON_00005797 (spelt malt)
+
+AnnotationAssertion(obo:IAO_0000115 obo:FOODON_00005797 "A malt that is from spelt grain (Triticum spelta)."@en)
+AnnotationAssertion(dcterms:contributor obo:FOODON_00005797 <https://orcid.org/0000-0002-8844-9165>)
+AnnotationAssertion(dcterms:date obo:FOODON_00005797 "2026-07-02T13:50:59Z"^^xsd:dateTime)
+AnnotationAssertion(rdfs:label obo:FOODON_00005797 "spelt malt"@en)
+SubClassOf(obo:FOODON_00005797 obo:FOODON_00005788)
+SubClassOf(obo:FOODON_00005797 ObjectSomeValuesFrom(obo:RO_0001000 obo:FOODON_00003154))
+
 # Class: obo:FOODON_02020155 (chicken egg white)
 
 SubClassOf(obo:FOODON_02020155 obo:FOODON_03304840)
@@ -29125,8 +29210,9 @@ SubClassOf(obo:FOODON_03000000 obo:FOODON_00001015)
 
 AnnotationAssertion(obo:IAO_0000114 obo:FOODON_03301000 obo:IAO_0000428)
 AnnotationAssertion(oboInOwl:hasDbXref obo:FOODON_03301000 siren:F1000)
+AnnotationAssertion(oboInOwl:hasExactSynonym obo:FOODON_03301000 "food starch"@en)
 AnnotationAssertion(rdfs:label obo:FOODON_03301000 "starch food product"@en)
-SubClassOf(obo:FOODON_03301000 obo:FOODON_00002274)
+SubClassOf(obo:FOODON_03301000 obo:FOODON_00002131)
 
 # Class: obo:FOODON_03301002 (whole wheat kernel (raw, dried))
 
@@ -31141,6 +31227,7 @@ AnnotationAssertion(rdfs:comment obo:FOODON_03301343 "SIREN DB annotation:
 * food hydrolyzation process FOODON:03460277"@en)
 AnnotationAssertion(rdfs:label obo:FOODON_03301343 "cellulose product"@en)
 SubClassOf(obo:FOODON_03301343 obo:FOODON_00002131)
+SubClassOf(obo:FOODON_03301343 obo:FOODON_03412972)
 SubClassOf(obo:FOODON_03301343 ObjectSomeValuesFrom(obo:RO_0001000 obo:FOODON_03411015))
 
 # Class: obo:FOODON_03301344 (arak)
@@ -31876,12 +31963,14 @@ AnnotationAssertion(oboInOwl:hasDbXref obo:FOODON_03301470 siren:F1470)
 AnnotationAssertion(rdfs:label obo:FOODON_03301470 "bouillon (granulated)"@en)
 SubClassOf(obo:FOODON_03301470 obo:FOODON_03315572)
 
-# Class: obo:FOODON_03301472 (starch (thin boiling))
+# Class: obo:FOODON_03301472 (corn starch (thin boiling))
 
 AnnotationAssertion(obo:IAO_0000114 obo:FOODON_03301472 obo:IAO_0000428)
 AnnotationAssertion(oboInOwl:hasDbXref obo:FOODON_03301472 siren:F1472)
-AnnotationAssertion(rdfs:label obo:FOODON_03301472 "starch (thin boiling)"@en)
+AnnotationAssertion(oboInOwl:hasExactSynonym obo:FOODON_03301472 "cornstarch (thin boiling)"@en-us)
+AnnotationAssertion(rdfs:label obo:FOODON_03301472 "corn starch (thin boiling)"@en)
 SubClassOf(obo:FOODON_03301472 obo:FOODON_00001846)
+SubClassOf(obo:FOODON_03301472 obo:FOODON_00005791)
 
 # Class: obo:FOODON_03301474 (corn oil)
 
@@ -37558,6 +37647,7 @@ AnnotationAssertion(obo:IAO_0000114 obo:FOODON_03302492 obo:IAO_0000428)
 AnnotationAssertion(oboInOwl:hasDbXref obo:FOODON_03302492 siren:F2492)
 AnnotationAssertion(rdfs:label obo:FOODON_03302492 "rye flour"@en)
 SubClassOf(obo:FOODON_03302492 obo:FOODON_00001190)
+SubClassOf(obo:FOODON_03302492 ObjectSomeValuesFrom(obo:RO_0001000 obo:FOODON_00004216))
 SubClassOf(obo:FOODON_03302492 ObjectSomeValuesFrom(obo:RO_0002350 obo:FOODON_03400149))
 
 # Class: obo:FOODON_03302493 (bread stuffing (unprepared, seasoned with herbs))
@@ -39163,7 +39253,7 @@ SubClassOf(obo:FOODON_03302787 ObjectSomeValuesFrom(obo:RO_0002350 obo:FOODON_03
 AnnotationAssertion(obo:IAO_0000114 obo:FOODON_03302788 obo:IAO_0000428)
 AnnotationAssertion(oboInOwl:hasDbXref obo:FOODON_03302788 siren:F2788)
 AnnotationAssertion(rdfs:label obo:FOODON_03302788 "glucose syrup (liquid)"@en)
-SubClassOf(obo:FOODON_03302788 obo:FOODON_00002157)
+SubClassOf(obo:FOODON_03302788 obo:FOODON_00005790)
 SubClassOf(obo:FOODON_03302788 ObjectSomeValuesFrom(obo:RO_0002350 obo:FOODON_03400118))
 
 # Class: obo:FOODON_03302789 (tomato ketchup (homogenized))
@@ -54729,12 +54819,14 @@ AnnotationAssertion(rdfs:label obo:FOODON_03305804 "dessert powder"@en)
 SubClassOf(obo:FOODON_03305804 obo:FOODON_03316555)
 SubClassOf(obo:FOODON_03305804 ObjectSomeValuesFrom(obo:RO_0002350 obo:FOODON_03400192))
 
-# Class: obo:FOODON_03305805 (cornstarch (artificially flavored and colored))
+# Class: obo:FOODON_03305805 (corn starch (artificially flavored and colored))
 
 AnnotationAssertion(obo:IAO_0000114 obo:FOODON_03305805 obo:IAO_0000428)
 AnnotationAssertion(oboInOwl:hasDbXref obo:FOODON_03305805 siren:F5805)
-AnnotationAssertion(rdfs:label obo:FOODON_03305805 "cornstarch (artificially flavored and colored)"@en)
+AnnotationAssertion(oboInOwl:hasExactSynonym obo:FOODON_03305805 "cornstarch (artificially flavored and colored)"@en-us)
+AnnotationAssertion(rdfs:label obo:FOODON_03305805 "corn starch (artificially flavored and colored)"@en)
 SubClassOf(obo:FOODON_03305805 obo:FOODON_00001846)
+SubClassOf(obo:FOODON_03305805 obo:FOODON_00005791)
 
 # Class: obo:FOODON_03305806 (green bean pod)
 
@@ -55772,11 +55864,22 @@ SubClassOf(obo:FOODON_03306039 obo:FOODON_00001989)
 # Class: obo:FOODON_03306040 (barley malt)
 
 AnnotationAssertion(obo:IAO_0000114 obo:FOODON_03306040 obo:IAO_0000428)
+AnnotationAssertion(obo:IAO_0000115 obo:FOODON_03306040 "A malt that is from barley grain (Hordeum vulgare subsp. vulgare)."@en)
+AnnotationAssertion(dcterms:contributor obo:FOODON_03306040 <https://orcid.org/0000-0002-8844-9165>)
+AnnotationAssertion(dcterms:date obo:FOODON_03306040 "2026-07-02T13:50:59Z"^^xsd:dateTime)
 AnnotationAssertion(oboInOwl:hasDbXref obo:FOODON_03306040 langual:H0754)
 AnnotationAssertion(oboInOwl:hasDbXref obo:FOODON_03306040 siren:F6040)
+AnnotationAssertion(rdfs:comment obo:FOODON_03306040 "SIREN DB annotation:
+* whole, natural shape FOODON:03430150
+* partially heat-treated FOODON:03440018
+* germinated or sprouted seed FOODON:03420102
+* microbial/enzymatic modification process FOODON:03460119
+* water removal process FOODON:03460138
+* preservation by dehydration or drying FOODON:03470116"@en)
 AnnotationAssertion(rdfs:label obo:FOODON_03306040 "barley malt"@en)
 SubClassOf(obo:FOODON_03306040 obo:FOODON_00005788)
 SubClassOf(obo:FOODON_03306040 obo:FOODON_03317458)
+SubClassOf(obo:FOODON_03306040 ObjectSomeValuesFrom(obo:RO_0001000 obo:FOODON_00003394))
 SubClassOf(obo:FOODON_03306040 ObjectSomeValuesFrom(obo:RO_0002350 obo:FOODON_03400125))
 
 # Class: obo:FOODON_03306041 (yeast (fine, dry))
@@ -74203,9 +74306,14 @@ SubClassOf(obo:FOODON_03309830 ObjectSomeValuesFrom(obo:RO_0002350 obo:FOODON_03
 # Class: obo:FOODON_03309831 (sorghum malt)
 
 AnnotationAssertion(obo:IAO_0000114 obo:FOODON_03309831 obo:IAO_0000428)
+AnnotationAssertion(obo:IAO_0000115 obo:FOODON_03309831 "A malt that is from sorghum grain (Sorghum bicolor)."@en)
+AnnotationAssertion(dcterms:contributor obo:FOODON_03309831 <https://orcid.org/0000-0002-8844-9165>)
+AnnotationAssertion(dcterms:date obo:FOODON_03309831 "2026-07-02T13:50:59Z"^^xsd:dateTime)
 AnnotationAssertion(oboInOwl:hasDbXref obo:FOODON_03309831 siren:F9831)
 AnnotationAssertion(rdfs:label obo:FOODON_03309831 "sorghum malt"@en)
 SubClassOf(obo:FOODON_03309831 obo:FOODON_00001187)
+SubClassOf(obo:FOODON_03309831 obo:FOODON_00005788)
+SubClassOf(obo:FOODON_03309831 ObjectSomeValuesFrom(obo:RO_0001000 obo:FOODON_03309906))
 SubClassOf(obo:FOODON_03309831 ObjectSomeValuesFrom(obo:RO_0002350 obo:FOODON_03400125))
 
 # Class: obo:FOODON_03309832 (orange (raw))
@@ -75826,7 +75934,7 @@ SubClassOf(obo:FOODON_03310176 obo:FOODON_03317385)
 AnnotationAssertion(obo:IAO_0000114 obo:FOODON_03310177 obo:IAO_0000428)
 AnnotationAssertion(oboInOwl:hasDbXref obo:FOODON_03310177 siren:F10177)
 AnnotationAssertion(rdfs:label obo:FOODON_03310177 "glucose syrup (hydrogenated)"@en)
-SubClassOf(obo:FOODON_03310177 obo:FOODON_00002157)
+SubClassOf(obo:FOODON_03310177 obo:FOODON_00005790)
 SubClassOf(obo:FOODON_03310177 ObjectSomeValuesFrom(obo:RO_0002350 obo:FOODON_03400118))
 
 # Class: obo:FOODON_03310180 (cream of broccoli soup)
@@ -80028,7 +80136,7 @@ SubClassOf(obo:FOODON_03311014 obo:FOODON_00001041)
 AnnotationAssertion(obo:IAO_0000114 obo:FOODON_03311016 obo:IAO_0000428)
 AnnotationAssertion(oboInOwl:hasDbXref obo:FOODON_03311016 siren:F11016)
 AnnotationAssertion(rdfs:label obo:FOODON_03311016 "glucose syrup (dried)"@en)
-SubClassOf(obo:FOODON_03311016 obo:FOODON_00002157)
+SubClassOf(obo:FOODON_03311016 obo:FOODON_00005790)
 SubClassOf(obo:FOODON_03311016 ObjectSomeValuesFrom(obo:RO_0002350 obo:FOODON_03400118))
 
 # Class: obo:FOODON_03311018 (chocolate bar (artificially sweetened))
@@ -83435,7 +83543,7 @@ AnnotationAssertion(obo:IAO_0000114 obo:FOODON_03311582 obo:IAO_0000428)
 AnnotationAssertion(oboInOwl:hasDbXref obo:FOODON_03311582 siren:F11582)
 AnnotationAssertion(rdfs:label obo:FOODON_03311582 "rye bran"@en)
 SubClassOf(obo:FOODON_03311582 obo:FOODON_00001190)
-SubClassOf(obo:FOODON_03311582 ObjectSomeValuesFrom(obo:RO_0001000 obo:FOODON_03411313))
+SubClassOf(obo:FOODON_03311582 ObjectSomeValuesFrom(obo:RO_0001000 obo:FOODON_00004216))
 SubClassOf(obo:FOODON_03311582 ObjectSomeValuesFrom(obo:RO_0002350 obo:FOODON_03400149))
 
 # Class: obo:FOODON_03311583 (mate (liquid))
@@ -84179,6 +84287,16 @@ AnnotationAssertion(obo:IAO_0000114 obo:FOODON_03311736 obo:IAO_0000428)
 AnnotationAssertion(oboInOwl:hasDbXref obo:FOODON_03311736 siren:F11736)
 AnnotationAssertion(rdfs:label obo:FOODON_03311736 "turkey meat (smoked)"@en)
 SubClassOf(obo:FOODON_03311736 obo:FOODON_00001286)
+
+# Class: obo:FOODON_03311737 (processed food)
+
+AnnotationAssertion(obo:IAO_0000114 obo:FOODON_03311737 obo:IAO_0000428)
+AnnotationAssertion(obo:IAO_0000115 obo:FOODON_03311737 "A food entity which has some level of food processing applied to it."@en)
+AnnotationAssertion(oboInOwl:hasDbXref obo:FOODON_03311737 siren:F11737)
+AnnotationAssertion(rdfs:comment obo:FOODON_03311737 "This is meant to be a term which can be referenced in the context of food nutrition and processing research, for example with respect to the NOVA classification system [https://en.wikipedia.org/wiki/Nova_classification]."@en)
+AnnotationAssertion(rdfs:label obo:FOODON_03311737 "processed food"@en)
+SubClassOf(obo:FOODON_03311737 obo:FOODON_00001002)
+SubClassOf(obo:FOODON_03311737 obo:FOODON_00002645)
 
 # Class: obo:FOODON_03311738 (chicken egg yolk (low cholesterol, low fat))
 
@@ -92443,7 +92561,7 @@ SubClassOf(obo:FOODON_03316410 ObjectSomeValuesFrom(obo:RO_0002350 obo:FOODON_03
 AnnotationAssertion(obo:IAO_0000114 obo:FOODON_03316413 obo:IAO_0000428)
 AnnotationAssertion(oboInOwl:hasDbXref obo:FOODON_03316413 siren:F16413)
 AnnotationAssertion(rdfs:label obo:FOODON_03316413 "glucose syrup (exclusively for commercial production of sweets and candies)"@en)
-SubClassOf(obo:FOODON_03316413 obo:FOODON_00002157)
+SubClassOf(obo:FOODON_03316413 obo:FOODON_00005790)
 SubClassOf(obo:FOODON_03316413 ObjectSomeValuesFrom(obo:RO_0002350 obo:FOODON_03400118))
 
 # Class: obo:FOODON_03316414 (glucose syrup (dried, exclusively for commercial production of sweets and candies))
@@ -97968,8 +98086,10 @@ SubClassOf(obo:FOODON_03317363 obo:FOODON_00002291)
 
 AnnotationAssertion(obo:IAO_0000114 obo:FOODON_03317364 obo:IAO_0000428)
 AnnotationAssertion(oboInOwl:hasDbXref obo:FOODON_03317364 siren:F17364)
+AnnotationAssertion(oboInOwl:hasExactSynonym obo:FOODON_03317364 "cornstarch hydrolyzate"@en)
 AnnotationAssertion(rdfs:label obo:FOODON_03317364 "corn starch hydrolyzate"@en)
 SubClassOf(obo:FOODON_03317364 obo:FOODON_00001846)
+SubClassOf(obo:FOODON_03317364 obo:FOODON_00005791)
 
 # Class: obo:FOODON_03317366 (whey (partially delactosed))
 
@@ -98062,10 +98182,14 @@ SubClassOf(obo:FOODON_03317385 ObjectSomeValuesFrom(obo:RO_0002350 obo:FOODON_03
 # Class: obo:FOODON_03317386 (corn malt)
 
 AnnotationAssertion(obo:IAO_0000114 obo:FOODON_03317386 obo:IAO_0000428)
+AnnotationAssertion(obo:IAO_0000115 obo:FOODON_03317386 "A malt that is from corn grain (Zea mays)."@en)
+AnnotationAssertion(dcterms:contributor obo:FOODON_03317386 <https://orcid.org/0000-0002-8844-9165>)
+AnnotationAssertion(dcterms:date obo:FOODON_03317386 "2026-07-02T13:50:59Z"^^xsd:dateTime)
 AnnotationAssertion(oboInOwl:hasDbXref obo:FOODON_03317386 siren:F17386)
 AnnotationAssertion(rdfs:label obo:FOODON_03317386 "corn malt"@en)
 SubClassOf(obo:FOODON_03317386 obo:FOODON_00001845)
 SubClassOf(obo:FOODON_03317386 obo:FOODON_00005788)
+SubClassOf(obo:FOODON_03317386 ObjectSomeValuesFrom(obo:RO_0001000 ObjectIntersectionOf(obo:PO_0009010 ObjectSomeValuesFrom(obo:RO_0002162 obo:NCBITaxon_4577))))
 SubClassOf(obo:FOODON_03317386 ObjectSomeValuesFrom(obo:RO_0002350 obo:FOODON_03400125))
 
 # Class: obo:FOODON_03317387 (corn kernel)
@@ -98588,11 +98712,12 @@ AnnotationAssertion(rdfs:label obo:FOODON_03317495 "coconut beverage (non-alcoho
 SubClassOf(obo:FOODON_03317495 obo:FOODON_00001748)
 SubClassOf(obo:FOODON_03317495 ObjectSomeValuesFrom(obo:RO_0002350 obo:FOODON_03400112))
 
-# Class: obo:FOODON_03317496 (breakfast cereal (granola-type))
+# Class: obo:FOODON_03317496 (oat granola)
 
 AnnotationAssertion(obo:IAO_0000114 obo:FOODON_03317496 obo:IAO_0000428)
 AnnotationAssertion(oboInOwl:hasDbXref obo:FOODON_03317496 siren:F17496)
-AnnotationAssertion(rdfs:label obo:FOODON_03317496 "breakfast cereal (granola-type)"@en)
+AnnotationAssertion(oboInOwl:hasExactSynonym obo:FOODON_03317496 "granola"@en)
+AnnotationAssertion(rdfs:label obo:FOODON_03317496 "oat granola"@en)
 SubClassOf(obo:FOODON_03317496 obo:FOODON_00001759)
 SubClassOf(obo:FOODON_03317496 ObjectSomeValuesFrom(obo:RO_0002350 obo:FOODON_03400258))
 
@@ -99985,15 +100110,29 @@ SubClassOf(obo:FOODON_03460748 obo:FOODON_03315150)
 # Class: obo:FOODON_03460755 (wheat malt)
 
 AnnotationAssertion(obo:IAO_0000114 obo:FOODON_03460755 obo:IAO_0000122)
-AnnotationAssertion(obo:IAO_0000115 obo:FOODON_03460755 "Wheat malt is malted grain made of wheat. Malt is germinated cereal grain that has been dried in a process known as \"malting\". The grain is made to germinate by soaking in water and is then halted from germinating further by drying with hot air."@en)
+AnnotationAssertion(obo:IAO_0000115 obo:FOODON_03460755 "A malt that is from wheat grain (Triticum aestivum)."@en)
 AnnotationAssertion(obo:IAO_0000118 obo:FOODON_03460755 "wheat malt added"@en)
 AnnotationAssertion(obo:IAO_0000119 obo:FOODON_03460755 "https://en.wikipedia.org/wiki/Malt"^^xsd:anyURI)
 AnnotationAssertion(dcterms:contributor obo:FOODON_03460755 <https://orcid.org/0000-0002-8844-9165>)
-AnnotationAssertion(schema:image obo:FOODON_03460755 "https://upload.wikimedia.org/wikipedia/commons/thumb/9/98/Gr%C3%BCnmalz.jpg/640px-Gr%C3%BCnmalz.jpg"^^xsd:anyURI)
+AnnotationAssertion(dcterms:date obo:FOODON_03460755 "2026-07-02T13:50:59Z"^^xsd:dateTime)
 AnnotationAssertion(oboInOwl:hasDbXref obo:FOODON_03460755 "langual:H0755")
 AnnotationAssertion(rdfs:label obo:FOODON_03460755 "wheat malt"@en)
 SubClassOf(obo:FOODON_03460755 obo:FOODON_00001141)
 SubClassOf(obo:FOODON_03460755 obo:FOODON_00005788)
+SubClassOf(obo:FOODON_03460755 ObjectSomeValuesFrom(obo:RO_0001000 ObjectIntersectionOf(obo:PO_0009010 ObjectSomeValuesFrom(obo:RO_0002162 obo:NCBITaxon_4565))))
+
+# Class: obo:FOODON_03460756 (rye malt)
+
+AnnotationAssertion(obo:IAO_0000114 obo:FOODON_03460756 obo:IAO_0000428)
+AnnotationAssertion(obo:IAO_0000115 obo:FOODON_03460756 "A malt that is from rye grain (Secale cereale)."@en)
+AnnotationAssertion(obo:IAO_0000118 obo:FOODON_03460756 "rye malt added"@en)
+AnnotationAssertion(dcterms:contributor obo:FOODON_03460756 <https://orcid.org/0000-0002-8844-9165>)
+AnnotationAssertion(dcterms:date obo:FOODON_03460756 "2026-07-02T13:50:59Z"^^xsd:dateTime)
+AnnotationAssertion(oboInOwl:hasDbXref obo:FOODON_03460756 langual:H0756)
+AnnotationAssertion(rdfs:label obo:FOODON_03460756 "rye malt"@en)
+SubClassOf(obo:FOODON_03460756 obo:FOODON_00001190)
+SubClassOf(obo:FOODON_03460756 obo:FOODON_00005788)
+SubClassOf(obo:FOODON_03460756 ObjectSomeValuesFrom(obo:RO_0001000 obo:FOODON_00004216))
 
 # Class: obo:FOODON_03460848 (guarana seed)
 

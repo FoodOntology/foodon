@@ -37911,16 +37911,6 @@ AnnotationAssertion(rdfs:comment obo:FOODON_03306039 "SIREN DB annotation:
 * whole, natural shape FOODON:03430150
 * whole animal or most parts used FOODON:03420173"@en)
 
-# Class: obo:FOODON_03306040 (barley malt)
-
-AnnotationAssertion(rdfs:comment obo:FOODON_03306040 "SIREN DB annotation:
-* whole, natural shape FOODON:03430150
-* partially heat-treated FOODON:03440018
-* germinated or sprouted seed FOODON:03420102
-* microbial/enzymatic modification process FOODON:03460119
-* water removal process FOODON:03460138
-* preservation by dehydration or drying FOODON:03470116"@en)
-
 # Class: obo:FOODON_03306041 (yeast (fine, dry))
 
 AnnotationAssertion(rdfs:comment obo:FOODON_03306041 "SIREN DB annotation:
@@ -57110,16 +57100,6 @@ AnnotationAssertion(rdfs:comment obo:FOODON_03309830 "SIREN DB annotation:
 * sugar FOODON:03420108
 * preservation by freezing FOODON:03470136"@en)
 
-# Class: obo:FOODON_03309831 (sorghum malt)
-
-AnnotationAssertion(rdfs:comment obo:FOODON_03309831 "SIREN DB annotation:
-* whole, natural shape FOODON:03430150
-* partially heat-treated FOODON:03440018
-* germinated or sprouted seed FOODON:03420102
-* microbial/enzymatic modification process FOODON:03460119
-* water removal process FOODON:03460138
-* preservation by dehydration or drying FOODON:03470116"@en)
-
 # Class: obo:FOODON_03309832 (orange (raw))
 
 AnnotationAssertion(rdfs:comment obo:FOODON_03309832 "SIREN DB annotation:
@@ -59486,7 +59466,7 @@ AnnotationAssertion(rdfs:comment obo:FOODON_03310386 "SIREN DB annotation:
 * alcohol fermentation process FOODON:03460232
 * preservation by fermentation FOODON:03470104"@en)
 
-# Class: obo:FOODON_03310387 (oil)
+# Class: obo:FOODON_03310387 (edible oil)
 
 AnnotationAssertion(rdfs:comment obo:FOODON_03310387 "SIREN DB annotation:
 * liquid, high viscosity, with no visible particles FOODON:03430139
@@ -79548,12 +79528,6 @@ AnnotationAssertion(rdfs:comment obo:FOODON_03317384 "SIREN DB annotation:
 
 AnnotationAssertion(rdfs:comment obo:FOODON_03317385 "SIREN DB annotation:
 * seed germ FOODON:03420182"@en)
-
-# Class: obo:FOODON_03317386 (corn malt)
-
-AnnotationAssertion(rdfs:comment obo:FOODON_03317386 "SIREN DB annotation:
-* whole, natural shape FOODON:03430150
-* germinated or sprouted seed FOODON:03420102"@en)
 
 # Class: obo:FOODON_03317387 (corn kernel)
 
