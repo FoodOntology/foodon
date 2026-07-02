@@ -69,7 +69,7 @@ Output formats
 
 TSV columns:
   ingredient      – original input string
-  match_status    – exact | parent | partial | no_match
+  match_status    – exact | parent | partial | fuzzy | no_match
   food_id         – semicolon-separated ontology IDs for matched food material terms
   food_material   – semicolon-separated labels for matched food material terms
   taxonomy        – organism CURIE for the matched food term (e.g. NCBITaxon:3750)
@@ -88,6 +88,7 @@ Status meanings:
               a narrower child not yet named in the ontology
   composite – full string accounted for by material + characteristic term(s)
   partial   – one or more component terms matched, not the full ingredient
+  fuzzy     – approximate (rapidfuzz WRatio) match on a normalised alias key
   no_match  – nothing matched
 
 Usage:
@@ -114,6 +115,19 @@ import yaml
 from dataclasses import dataclass, field
 from datetime import date
 from typing import Optional
+
+try:
+    from rapidfuzz import process as _rf_process, fuzz as _rf_fuzz
+    _RAPIDFUZZ_AVAILABLE = True
+except ImportError:
+    _RAPIDFUZZ_AVAILABLE = False
+
+# Minimum normalised-string length for fuzzy matching; short strings produce
+# too many false positives (e.g. "oi" → "tortoise").
+_FUZZY_MIN_LEN    = 5
+# WRatio score threshold (0–100).  85 catches one-char typos and common
+# misspellings without pulling in unrelated terms.
+_FUZZY_SCORE_CUTOFF = 85
 
 OBO   = 'http://purl.obolibrary.org/obo/'
 _HERE = os.path.dirname(os.path.abspath(__file__))
@@ -514,6 +528,10 @@ def _build_global_lookups() -> None:
 
 
 _build_global_lookups()
+
+# Flat list of all alias-lookup keys, used by the rapidfuzz fallback step.
+# Populated once here so process.extractOne() can use its C-level index.
+_FUZZY_KEYS: list[str] = list(_GLOBAL_ALIAS_LOOKUP.keys())
 
 
 # ── OWL anatomy helpers (shared by build functions) ───────────────────────────
@@ -2101,6 +2119,25 @@ def _component_search(ingredient: str, options: argparse.Namespace) -> MatchResu
                     result.match_status = 'partial'
                 return _resolve_residuals(result)
 
+    # 3g: rapidfuzz approximate match
+    # Fires only when all exact/prefix steps have failed and the string is long
+    # enough to avoid short-string false positives.  Searches the full alias
+    # index for the closest entry above _FUZZY_SCORE_CUTOFF using WRatio, which
+    # combines token-sort, partial-ratio, and simple ratio for best recall.
+    if _RAPIDFUZZ_AVAILABLE and len(normed) >= _FUZZY_MIN_LEN:
+        hit = _rf_process.extractOne(
+            normed, _FUZZY_KEYS,
+            scorer=_rf_fuzz.WRatio,
+            score_cutoff=_FUZZY_SCORE_CUTOFF,
+        )
+        if hit:
+            matched_key, score, _idx = hit
+            result = _global_exact_match(matched_key, options)
+            if result:
+                result.match_status = 'fuzzy'
+                result.notes = [f'fuzzy match: "{matched_key}" (score {score:.0f})']
+                return _resolve_residuals(result)
+
     # No match
     return MatchResult(
         ingredient=ingredient,
@@ -2221,7 +2258,8 @@ _STATUS_ORDER: dict[str, int] = {
     'composite': 1,
     'parent':    2,
     'partial':   3,
-    'no_match':  4,
+    'fuzzy':     4,
+    'no_match':  5,
 }
 
 
@@ -2317,7 +2355,7 @@ def _md_food_label(terms: list) -> str:
 
 
 def write_report_md(results: list, options: argparse.Namespace, out_fh) -> None:
-    counts: dict[str, int] = {'exact': 0, 'parent': 0, 'composite': 0, 'partial': 0, 'no_match': 0}
+    counts: dict[str, int] = {'exact': 0, 'parent': 0, 'composite': 0, 'partial': 0, 'fuzzy': 0, 'no_match': 0}
     for r in results:
         counts[r.match_status] = counts.get(r.match_status, 0) + 1
     total = len(results)
@@ -2331,7 +2369,7 @@ def write_report_md(results: list, options: argparse.Namespace, out_fh) -> None:
     )
     out_fh.write('---\n\n')
     summary_parts = [f'**{total} ingredient{"s" if total != 1 else ""}**']
-    for status in ('exact', 'parent', 'composite', 'partial', 'no_match'):
+    for status in ('exact', 'parent', 'composite', 'partial', 'fuzzy', 'no_match'):
         n = counts.get(status, 0)
         if n:
             label = status.replace('_', '\\_')
@@ -2346,6 +2384,7 @@ def write_report_md(results: list, options: argparse.Namespace, out_fh) -> None:
         'parent':    'parent',
         'composite': '<span style="color:#28a745;font-weight:700">composite</span>',
         'partial':   'partial',
+        'fuzzy':     '<span style="color:#fd7e14;font-weight:700">fuzzy</span>',
         'no_match':  '<span style="color:#dc3545;font-weight:700">no\\_match</span>',
     }
     for r in results:
@@ -2359,6 +2398,9 @@ def write_report_md(results: list, options: argparse.Namespace, out_fh) -> None:
         _anat_label = _md_cell(_curie_label(_anat_display))
         _anat_cell  = (f'[{_anat_label}]({_anat_iri})'
                        if _anat_iri and _anat_display else _anat_label)
+        _child_notes_md = _notes_md(r.matched_id)
+        _extra_notes_md = '; '.join(r.notes) if r.notes else ''
+        _notes_cell_md  = '; '.join(filter(None, [_extra_notes_md, _child_notes_md]))
         out_fh.write(
             f'| {_md_cell(r.ingredient)} '
             f'| {_status_label.get(r.match_status, r.match_status)} '
@@ -2370,7 +2412,7 @@ def write_report_md(results: list, options: argparse.Namespace, out_fh) -> None:
             f'| {_md_cell(_fmt_subtype(r.subtype))} '
             f'| {_md_char_terms(char_terms)} '
             f'| {"; ".join(_md_cell(t.text) for t in r.unmatched_terms)} '
-            f'| {_notes_md(r.matched_id)} |\n'
+            f'| {_notes_cell_md} |\n'
         )
 
     out_fh.write(
@@ -2379,6 +2421,7 @@ def write_report_md(results: list, options: argparse.Namespace, out_fh) -> None:
         f'**{counts["parent"]} parent**, '
         f'**{counts.get("composite", 0)} composite**, '
         f'**{counts.get("partial", 0)} partial**, '
+        f'**{counts.get("fuzzy", 0)} fuzzy**, '
         f'**{counts["no_match"]} no\\_match**\n'
     )
 
@@ -2434,6 +2477,7 @@ tbody tr:hover td { background: #f9fbe7; }
 .badge-parent     { background: #fff3cd; color: #7d5a00; }
 .badge-composite  { background: #28a745; color: #fff; }
 .badge-partial    { background: #cce5ff; color: #004085; }
+.badge-fuzzy      { background: #fd7e14; color: #fff; }
 .badge-no-match   { background: #dc3545; color: #fff; }
 .term { font-family: 'SFMono-Regular', Consolas, monospace; font-size: 0.82em; }
 a { color: #1565c0; text-decoration: none; }
@@ -2464,7 +2508,7 @@ ul.unmatched li { break-inside: avoid; padding: 0.1em 0; }
 
 _BADGE_CLASS = {
     'exact': 'exact', 'parent': 'parent',
-    'composite': 'composite', 'partial': 'partial', 'no_match': 'no-match',
+    'composite': 'composite', 'partial': 'partial', 'fuzzy': 'fuzzy', 'no_match': 'no-match',
 }
 
 
@@ -2518,7 +2562,7 @@ def _html_food_label(terms: list) -> str:
 
 
 def write_report_html(results: list, options: argparse.Namespace, out_fh) -> None:
-    counts: dict[str, int] = {'exact': 0, 'parent': 0, 'composite': 0, 'partial': 0, 'no_match': 0}
+    counts: dict[str, int] = {'exact': 0, 'parent': 0, 'composite': 0, 'partial': 0, 'fuzzy': 0, 'no_match': 0}
     for r in results:
         counts[r.match_status] = counts.get(r.match_status, 0) + 1
     total = len(results)
@@ -2545,7 +2589,7 @@ def write_report_html(results: list, options: argparse.Namespace, out_fh) -> Non
 
     p.append('<div class="summary-bar">\n')
     p.append(f'  <span class="total">{total} ingredient{"s" if total != 1 else ""}</span>\n')
-    for status in ('exact', 'parent', 'composite', 'partial', 'no_match'):
+    for status in ('exact', 'parent', 'composite', 'partial', 'fuzzy', 'no_match'):
         n = counts.get(status, 0)
         if n:
             p.append(f'  {_badge(status)} &times; {n}\n')
@@ -2569,6 +2613,9 @@ def write_report_html(results: list, options: argparse.Namespace, out_fh) -> Non
             f'<span class="term">{_esc(t.text)}</span>' for t in r.unmatched_terms
         )
         notes_html  = _notes_html(r.matched_id)
+        if r.notes:
+            extra_html = _esc('; '.join(r.notes))
+            notes_html = f'{extra_html}<br>{notes_html}' if notes_html else extra_html
         _tax_iri    = _taxonomy_iri(r.taxonomy)
         _tax_lbl    = _esc(_curie_label(r.taxonomy))
         tax_html    = (f'<span class="term"><a href="{_esc(_tax_iri)}" target="_blank">'
