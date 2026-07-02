@@ -102,6 +102,38 @@ def _taxonomy_iri(curie: str) -> str:
     return curie_to_iri(curie)
 
 
+def _anatomy_iri(curie: str) -> str:
+    """Return the OBO Foundry IRI for an anatomy CURIE (UBERON, PO, FAO, FOODON)."""
+    return curie_to_iri(curie) if curie else ''
+
+
+def _curie_label(curie: str) -> str:
+    """Return the human-readable label for a CURIE from the DB, falling back to the CURIE itself."""
+    if not curie:
+        return curie
+    return get_db().get(curie, {}).get('label', '') or curie
+
+
+_EXT_ANATOMY_PREFIXES = frozenset(['UBERON', 'PO', 'FAO'])
+
+
+def _anatomy_ref_curie(anatomy_curie: str) -> str:
+    """Return the UBERON/PO/FAO CURIE to display for an anatomy term.
+
+    - If the anatomy CURIE itself is UBERON/PO/FAO, return it directly.
+    - If the anatomy entry has a pre-computed 'anatomy_ref' field (written by
+      build_anatomy phase 3), return that.
+    - Otherwise fall back to the anatomy CURIE as-is (FOODON label will be shown).
+    """
+    if not anatomy_curie:
+        return anatomy_curie
+    prefix = anatomy_curie.split(':')[0] if ':' in anatomy_curie else ''
+    if prefix in _EXT_ANATOMY_PREFIXES:
+        return anatomy_curie
+    ref = get_db().get(anatomy_curie, {}).get('anatomy_ref', '')
+    return ref if ref else anatomy_curie
+
+
 @dataclass
 class ComponentTerm:
     """A single matched ontology term with its semantic category."""
@@ -138,6 +170,7 @@ class MatchResult:
     type: str    = ''     # primary ingredient type: nutrient | fruit | grain | dairy | …
     subtype: str = ''     # sub-classification: vitamin | mineral | berry | milk | …
     taxonomy: str = ''    # organism CURIE from 'in taxon' link (e.g. NCBITaxon:3750)
+    anatomy: str  = ''    # anatomical structure CURIE (e.g. UBERON:0000912)
     form_hints: list = field(default_factory=list)
     notes: list = field(default_factory=list)
 
@@ -180,9 +213,39 @@ def get_db() -> dict:
     return _DB
 
 
+# ---------------------------------------------------------------------------
+# Assumption rewriting  (populated after normalize() is defined below)
+# ---------------------------------------------------------------------------
+
+_ASSUMPTIONS: dict[str, str] = {}
+
+
+def _primary_type(entry: dict) -> str:
+    """Return the primary (first) type of an entry.
+
+    An entry's 'type' field may be a plain string or a list where the first
+    element is the primary pipeline type and any subsequent elements are
+    secondary/informational types (e.g. ['fruit', 'anatomy']).
+    """
+    t = entry.get('type', '')
+    return t[0] if isinstance(t, list) and t else (t or '')
+
+
+def _has_type(entry: dict, type_name: str) -> bool:
+    """Return True if *type_name* is any of the entry's types (primary or secondary)."""
+    t = entry.get('type', '')
+    if isinstance(t, list):
+        return type_name in t
+    return t == type_name
+
+
 def get_entries_by_type(type_name: str) -> dict:
-    """Return only entries whose 'type' field equals *type_name*."""
-    return {k: v for k, v in _DB.items() if v.get('type') == type_name}
+    """Return entries whose **primary** type equals *type_name*.
+
+    Secondary types (e.g. 'anatomy' on a fruit entry) are intentionally
+    excluded so pipeline recognisers only see entries they own.
+    """
+    return {k: v for k, v in _DB.items() if _primary_type(v) == type_name}
 
 
 def get_configuration(type_name: str = None) -> dict:
@@ -195,6 +258,29 @@ def get_configuration(type_name: str = None) -> dict:
 def normalize(text: str) -> str:
     """Lower-case, collapse whitespace, strip."""
     return re.sub(r'\s+', ' ', text.strip().lower())
+
+
+def _load_assumptions() -> dict[str, str]:
+    raw = _RAW.get('assumptions') or {}
+    if not isinstance(raw, dict):
+        return {}
+    return {normalize(k): str(v) for k, v in raw.items() if k and v}
+
+
+_ASSUMPTIONS.update(_load_assumptions())
+
+
+def apply_assumptions(ingredient: str) -> str:
+    """Return the assumption-rewritten form of *ingredient*, or *ingredient* unchanged.
+
+    If the normalized ingredient text matches a key in the assumptions dictionary
+    exactly, the configured replacement string is returned.  Otherwise the original
+    string is returned unmodified.
+
+    Example: "egg" → "chicken egg"
+    """
+    replacement = _ASSUMPTIONS.get(normalize(ingredient))
+    return replacement if replacement is not None else ingredient
 
 
 def word_in(key: str, text: str) -> bool:
@@ -246,6 +332,24 @@ def build_lookups(db: dict) -> tuple[dict, dict, dict]:
     alias_lookup:     dict[str, str]   = {}
     food_form_lookup: dict[str, tuple] = {}
     title_lookup:     dict[str, str]   = {}
+
+    # Pre-pass: anatomy-typed entries (e.g. type:[grain,anatomy]) win over
+    # pure food-product entries for the same synonym key.  This lets
+    # "buckwheat seed" (type=[grain,anatomy]) claim "buckwheat" before
+    # "buckwheat food product" (type=grain) can claim it via its title field.
+    for db_key, entry in db.items():
+        if entry.get('parent'):
+            continue
+        et = entry.get('type', '')
+        tl = et if isinstance(et, list) else [et]
+        if 'anatomy' not in tl:
+            continue
+        alias_lookup[entry['label'].lower()] = db_key
+        t = entry.get('title', '')
+        if t:
+            alias_lookup[t.lower()] = db_key
+        for alias in (entry.get('synonyms') or []):
+            alias_lookup[alias.lower()] = db_key
 
     for db_key, entry in db.items():
         parents = entry.get('parent') or []
@@ -332,10 +436,11 @@ class IngredientMatch:
     id:            str
     matched_label: str
     matched_id:    str
-    match_type:    str   # canonical_name | alias | food_form | adjective_stripped | <suffix>_fallback
-    raw_matched:   str
-    residual_text: str
-    form_hints:    list = field(default_factory=list)
+    match_type:         str   # canonical_name | alias | food_form | adjective_stripped | <suffix>_fallback
+    raw_matched:        str
+    residual_text:      str
+    trailing_form_curie: str = ''   # CURIE of recognised trailing form word (syrup, paste…)
+    form_hints:         list = field(default_factory=list)
 
 
 _LOOKUP_CACHE: dict[str, tuple] = {}
@@ -475,7 +580,40 @@ def recognize(type_name: str, text: str) -> Optional[IngredientMatch]:
             m.raw_matched   = text
             return m
 
-    # Tier 5: strip trailing parenthetical annotation and retry
+    # Tier 5: strip trailing preparation-form words (syrup, paste, powder…) and retry.
+    # trailing_forms config may be a list (no CURIE) or a dict {word: curie}.
+    # When a CURIE is provided the form word is itself a recognised food material
+    # (composite); without a CURIE it becomes an unmatched residual (partial).
+    trailing_forms_raw = cfg.get('trailing_forms') or []
+    if isinstance(trailing_forms_raw, dict):
+        trailing_forms_map = trailing_forms_raw        # {word: curie_or_empty}
+    else:
+        trailing_forms_map = {w: '' for w in trailing_forms_raw}
+
+    for form_word in sorted(trailing_forms_map, key=len, reverse=True):
+        if base.endswith(' ' + form_word):
+            core_without_form = base[: -len(' ' + form_word)]
+            if core_without_form:
+                m = _match_tiers(
+                    core_without_form, text,
+                    db, alias_lookup, food_form_lookup, type_name, tier_order,
+                )
+                if m:
+                    prior = (stripped + ' ' if stripped else '')
+                    m.match_type         = 'trailing_form_stripped'
+                    m.trailing_form_curie = trailing_forms_map[form_word] or ''
+                    # If the form has a recognised CURIE it is a component, not residual.
+                    if m.trailing_form_curie:
+                        m.residual_text = prior.rstrip() + (' ' + m.residual_text if m.residual_text else '')
+                    else:
+                        m.residual_text = (
+                            prior + form_word
+                            + (' ' + m.residual_text if m.residual_text else '')
+                        )
+                    m.raw_matched = text
+                    return m
+
+    # Tier 6: strip trailing parenthetical annotation and retry
     pm = _PAREN_PAT.match(base)
     if pm:
         core        = pm.group(1).strip()
@@ -1072,7 +1210,31 @@ for _c_curie, _c_entry in get_db().items():
 def _build_taxonomy_lookup() -> dict[str, str]:
     lookup: dict[str, str] = {}
     for curie, entry in _DB.items():
-        if entry.get('type') != 'taxonomy':
+        if not _has_type(entry, 'taxonomy'):
+            continue
+        candidates = ([entry.get('label', ''), entry.get('title', '')]
+                      + list(entry.get('synonyms') or [])
+                      + list(entry.get('common_names') or []))
+        for name, info in (entry.get('ai_common_names') or {}).items():
+            if isinstance(info, dict) and info.get('status') == 'ok':
+                candidates.append(name)
+        for text in filter(None, candidates):
+            k = normalize(text)
+            if k not in lookup:
+                lookup[k] = curie
+    return lookup
+
+
+_TAXONOMY_LOOKUP: dict[str, str] = _build_taxonomy_lookup()
+
+
+def _build_anatomy_lookup() -> dict[str, str]:
+    # Only include entries whose PRIMARY type is anatomy.
+    # Food materials that have anatomy as a secondary type (e.g. type: [fruit, anatomy])
+    # are food ingredients first and must not pollute the anatomy residual lookup.
+    lookup: dict[str, str] = {}
+    for curie, entry in _DB.items():
+        if _primary_type(entry) != 'anatomy':
             continue
         candidates = ([entry.get('label', ''), entry.get('title', '')]
                       + list(entry.get('synonyms') or []))
@@ -1083,7 +1245,7 @@ def _build_taxonomy_lookup() -> dict[str, str]:
     return lookup
 
 
-_TAXONOMY_LOOKUP: dict[str, str] = _build_taxonomy_lookup()
+_ANATOMY_LOOKUP: dict[str, str] = _build_anatomy_lookup()
 
 
 # ══════════════════════════════════════════════════════════════════════════════
@@ -1170,13 +1332,28 @@ def match_to_result(
     # downgrade to 'parent' so callers know the match was inferred.
     if match_status == 'exact' and getattr(m, 'match_type', '').endswith('_fallback'):
         match_status = 'parent'
+
+    # If a trailing form word has a recognised CURIE, add it as a component term.
+    form_curie = getattr(m, 'trailing_form_curie', '') or ''
+    extra_components: list[ComponentTerm] = []
+    if form_curie:
+        _fdb = get_db()
+        form_entry = _fdb.get(form_curie, {})
+        extra_components.append(ComponentTerm(
+            category='food',
+            label=form_entry.get('label', form_curie),
+            id=form_curie,
+            iri=curie_to_iri(form_curie),
+        ))
+        match_status = 'composite'
+
     result = MatchResult(
         ingredient=ingredient,
         match_status=match_status,
         matched_id=m.matched_id,
         matched_label=m.matched_label,
         matched_iri=curie_to_iri(m.matched_id),
-        component_terms=[component],
+        component_terms=[component] + extra_components,
         unmatched_terms=unmatched,
         source_module=source_module,
         type=getattr(m, 'type', category) or category,
@@ -1187,6 +1364,10 @@ def match_to_result(
     result.taxonomy = (
         _mdb.get(getattr(m, 'id', ''), {}).get('taxonomy', '')
         or _mdb.get(m.matched_id, {}).get('taxonomy', '')
+    )
+    result.anatomy = (
+        _mdb.get(getattr(m, 'id', ''), {}).get('anatomy', '')
+        or _mdb.get(m.matched_id, {}).get('anatomy', '')
     )
     return result
 
@@ -1202,7 +1383,7 @@ vitamin_match_to_result = nutrient_match_to_result
 # ── Plant / organism qualifier prefixes ────────────────────────────────────────
 #
 # FOODON:03430150 = "naturally shaped whole form (sensu food)"
-# FOODON:00005743 = "wild harvested organism material"
+# FOODON:00005746 = "wild harvested organism material"
 
 _WHOLE_FORM_COMPONENT = ComponentTerm(
     category = 'characteristic',
@@ -1214,8 +1395,8 @@ _WHOLE_FORM_COMPONENT = ComponentTerm(
 _WILD_HARVESTED_COMPONENT = ComponentTerm(
     category = 'characteristic',
     label    = 'wild harvested organism material',
-    id       = 'FOODON:00005743',
-    iri      = curie_to_iri('FOODON:00005743'),
+    id       = 'FOODON:00005746',
+    iri      = curie_to_iri('FOODON:00005746'),
 )
 
 _WHOLE_PREFIX_RE = re.compile(r'^whole\s+', re.IGNORECASE)
@@ -1247,7 +1428,7 @@ def _strip_plant_prefixes(text: str):
 
 
 def _match_material_only(ingredient: str, options: argparse.Namespace) -> Optional[MatchResult]:
-    """Run steps 1–10 (material recognisers only). Returns MatchResult or None."""
+    """Run steps 1–15 (material recognisers only). Returns MatchResult or None."""
     has_wild, has_whole, plant_text = _strip_plant_prefixes(ingredient)
 
     # 1. Nutrient
@@ -1261,7 +1442,23 @@ def _match_material_only(ingredient: str, options: argparse.Namespace) -> Option
     if sm:
         return match_to_result(ingredient, sm, category='nutrient', source_module='sweetener')
 
-    # 3. Fruit
+    # 3. Nut
+    ntm = recognize('nut', plant_text if (has_wild or has_whole) else ingredient)
+    if ntm:
+        result = match_to_result(ingredient, ntm, category='food', source_module='nut')
+        if has_wild:
+            result.component_terms.insert(0, _WILD_HARVESTED_COMPONENT)
+        return result
+
+    # 4. Legume
+    lgm = recognize('legume', plant_text if (has_wild or has_whole) else ingredient)
+    if lgm:
+        result = match_to_result(ingredient, lgm, category='food', source_module='legume')
+        if has_wild:
+            result.component_terms.insert(0, _WILD_HARVESTED_COMPONENT)
+        return result
+
+    # 5. Fruit
     fm = recognize('fruit', plant_text if (has_wild or has_whole) else ingredient)
     if fm:
         result = match_to_result(ingredient, fm, category='food', source_module='fruit')
@@ -1271,7 +1468,7 @@ def _match_material_only(ingredient: str, options: argparse.Namespace) -> Option
             result.component_terms.insert(0, _WILD_HARVESTED_COMPONENT)
         return result
 
-    # 4. Root vegetable
+    # 6. Root vegetable
     rvm = recognize('root_vegetable', plant_text if (has_wild or has_whole) else ingredient)
     if rvm:
         result = match_to_result(ingredient, rvm, category='food', source_module='root_vegetable')
@@ -1279,12 +1476,12 @@ def _match_material_only(ingredient: str, options: argparse.Namespace) -> Option
             result.component_terms.insert(0, _WILD_HARVESTED_COMPONENT)
         return result
 
-    # 5. Dairy
+    # 7. Dairy
     dm = recognize('dairy', ingredient)
     if dm:
         return match_to_result(ingredient, dm, category='dairy', source_module='dairy')
 
-    # 6. Spice
+    # 8. Spice
     spm = recognize('spice', plant_text if (has_wild or has_whole) else ingredient)
     if spm:
         result = match_to_result(ingredient, spm, category='spice', source_module='spice')
@@ -1292,7 +1489,7 @@ def _match_material_only(ingredient: str, options: argparse.Namespace) -> Option
             result.component_terms.insert(0, _WILD_HARVESTED_COMPONENT)
         return result
 
-    # 7. Herb
+    # 9. Herb
     hm = recognize('herb', plant_text if (has_wild or has_whole) else ingredient)
     if hm:
         result = match_to_result(ingredient, hm, category='food', source_module='herb')
@@ -1300,7 +1497,7 @@ def _match_material_only(ingredient: str, options: argparse.Namespace) -> Option
             result.component_terms.insert(0, _WILD_HARVESTED_COMPONENT)
         return result
 
-    # 8. Seed
+    # 10. Seed
     sem = recognize('seed', plant_text if (has_wild or has_whole) else ingredient)
     if sem:
         result = match_to_result(ingredient, sem, category='food', source_module='seed')
@@ -1308,22 +1505,27 @@ def _match_material_only(ingredient: str, options: argparse.Namespace) -> Option
             result.component_terms.insert(0, _WILD_HARVESTED_COMPONENT)
         return result
 
-    # 9. Grain
+    # 11. Grain
     gm = recognize('grain', ingredient)
     if gm:
         return match_to_result(ingredient, gm, category='food', source_module='grain')
 
-    # 10. Oil and fat
+    # 12. Animal material
+    anm = recognize('animal', ingredient)
+    if anm:
+        return match_to_result(ingredient, anm, category='food', source_module='animal')
+
+    # 13. Oil and fat
     ofm = recognize('lipid', ingredient)
     if ofm:
         return match_to_result(ingredient, ofm, category='food', source_module='lipid')
 
-    # 11. Chemical
+    # 14. Chemical
     am = recognize('chemical', ingredient)
     if am:
         return match_to_result(ingredient, am, category='additive', source_module='chemical')
 
-    # 12. Fermentation
+    # 15. Fermentation
     fm2 = recognize('fermentation', ingredient)
     if fm2:
         return match_to_result(ingredient, fm2, category='food', source_module='fermentation')
@@ -1354,15 +1556,17 @@ def _char_prefix_match(text: str):
 
 def _resolve_residuals(result: MatchResult) -> MatchResult:
     """
-    Post-process a MatchResult: scan each unmatched term for characteristic and
-    taxonomy terms using the same lookup approach for both.
+    Post-process a MatchResult: scan each unmatched term for characteristic,
+    taxonomy, and anatomy terms using the same lookup approach for all three.
 
     Characteristic matching uses prefix-only matching (front of the term must be a
-    complete characteristic key), then the remainder of the term is checked for a
-    taxonomy hit.  Taxonomy-only terms are matched against the full (normalised) text.
+    complete characteristic key), then the remainder is checked for taxonomy then
+    anatomy.  Taxonomy-only and anatomy-only terms are matched against the full
+    (normalised) text in that order.
 
     - Characteristic prefix → ComponentTerm appended (category='characteristic')
     - First taxonomy hit    → written to result.taxonomy
+    - First anatomy hit     → written to result.anatomy
     - Fully-resolved terms are removed from unmatched_terms.
     - Status upgrades from 'partial' to 'composite' when all terms are resolved.
     """
@@ -1382,13 +1586,20 @@ def _resolve_residuals(result: MatchResult) -> MatchResult:
                 id=char_curie,
                 iri=curie_to_iri(char_curie),
             ))
-            # Check the remainder for a taxonomy term.
+            # Check the remainder for a taxonomy term, then anatomy.
             if char_residual and not result.taxonomy:
                 k  = normalize(char_residual)
                 ks = k[:-1] if k.endswith('s') else None
                 tax_curie = _TAXONOMY_LOOKUP.get(k) or (ks and _TAXONOMY_LOOKUP.get(ks))
                 if tax_curie:
                     result.taxonomy = tax_curie
+                    char_residual = ''
+            if char_residual and not result.anatomy:
+                k  = normalize(char_residual)
+                ks = k[:-1] if k.endswith('s') else None
+                anat_curie = _ANATOMY_LOOKUP.get(k) or (ks and _ANATOMY_LOOKUP.get(ks))
+                if anat_curie:
+                    result.anatomy = anat_curie
                     char_residual = ''
             if char_residual:
                 remaining.append(UnmatchedTerm('unresolved', char_residual))
@@ -1403,6 +1614,15 @@ def _resolve_residuals(result: MatchResult) -> MatchResult:
                 result.taxonomy = tax_curie
                 resolved = True
 
+        # 3. Try full-text anatomy lookup.
+        elif not result.anatomy:
+            k  = normalize(ut.text)
+            ks = k[:-1] if k.endswith('s') else None
+            anat_curie = _ANATOMY_LOOKUP.get(k) or (ks and _ANATOMY_LOOKUP.get(ks))
+            if anat_curie:
+                result.anatomy = anat_curie
+                resolved = True
+
         if not resolved:
             remaining.append(ut)
 
@@ -1412,12 +1632,45 @@ def _resolve_residuals(result: MatchResult) -> MatchResult:
     return result
 
 
-def match_ingredient(ingredient: str, options: argparse.Namespace) -> MatchResult:
-    """Run the recogniser pipeline for one ingredient string."""
+def _anatomy_standalone_match(ingredient: str) -> str:
+    """Return anatomy CURIE if the full ingredient string maps to a primary anatomy term, else ''."""
+    k  = normalize(ingredient)
+    ks = k[:-1] if k.endswith('s') else None
+    return _ANATOMY_LOOKUP.get(k) or (ks and _ANATOMY_LOOKUP.get(ks)) or ''
+
+
+def _make_anatomy_result(ingredient: str, anat_curie: str) -> MatchResult:
+    """Build a MatchResult for an anatomy-only standalone match."""
+    entry = _DB.get(anat_curie, {})
+    return MatchResult(
+        ingredient=ingredient,
+        match_status='exact',
+        matched_id=anat_curie,
+        matched_label=entry.get('label', ''),
+        matched_iri=_anatomy_iri(anat_curie),
+        component_terms=[],
+        unmatched_terms=[],
+        source_module='anatomy_recognizer',
+        type='anatomy',
+        subtype='',
+        anatomy=anat_curie,
+    )
+
+
+def _run_match(ingredient: str, options: argparse.Namespace) -> MatchResult:
+    """Internal pipeline — caller must restore result.ingredient if needed."""
 
     result = _match_material_only(ingredient, options)
     if result:
-        return _resolve_residuals(result)
+        result = _resolve_residuals(result)
+        # Anatomy standalone match supercedes a composite/partial/parent food match:
+        # an exact anatomy term is more specific than a partially-resolved or
+        # fallback-inferred food entry.
+        if result.match_status in ('composite', 'partial', 'parent'):
+            anat_curie = _anatomy_standalone_match(ingredient)
+            if anat_curie:
+                return _make_anatomy_result(ingredient, anat_curie)
+        return result
 
     # 11. Characteristic — iteratively strip and retry material recognisers
     cm = recognize_characteristic(ingredient)
@@ -1443,7 +1696,12 @@ def match_ingredient(ingredient: str, options: argparse.Namespace) -> MatchResul
                 for ct in reversed(collected_chars):
                     retry.component_terms.insert(0, ct)
                 retry.match_status = 'composite' if not retry.unmatched_terms else 'partial'
-                return _resolve_residuals(retry)
+                result = _resolve_residuals(retry)
+                if result.match_status in ('composite', 'partial', 'parent'):
+                    anat_curie = _anatomy_standalone_match(ingredient)
+                    if anat_curie:
+                        return _make_anatomy_result(ingredient, anat_curie)
+                return result
 
             next_cm = recognize_characteristic(residual)
             if not next_cm or next_cm.residual_text == residual:
@@ -1468,6 +1726,11 @@ def match_ingredient(ingredient: str, options: argparse.Namespace) -> MatchResul
 
     # TODO: Claude AI general fallback
 
+    # Anatomy standalone match: fallback when all food/characteristic matching fails.
+    anat_curie = _anatomy_standalone_match(ingredient)
+    if anat_curie:
+        return _make_anatomy_result(ingredient, anat_curie)
+
     return MatchResult(
         ingredient=ingredient,
         match_status='no_match',
@@ -1480,6 +1743,29 @@ def match_ingredient(ingredient: str, options: argparse.Namespace) -> MatchResul
         type='',
         subtype='',
     )
+
+
+def match_ingredient(ingredient: str, options: argparse.Namespace) -> MatchResult:
+    """Run the recogniser pipeline for one ingredient string.
+
+    Applies assumption rewriting (e.g. "egg" → "chicken egg") before matching,
+    then restores the original ingredient text in the result so that reports
+    show exactly what the caller supplied.
+    """
+    original = ingredient
+    ingredient = apply_assumptions(ingredient)
+
+    result = _run_match(ingredient, options)
+
+    # Restore the original (pre-assumption) ingredient text for reporting.
+    result.ingredient = original
+    # Also fix any unmatched term that carries the rewritten text.
+    if ingredient != original:
+        result.unmatched_terms = [
+            UnmatchedTerm(ut.category, original if ut.text == ingredient else ut.text)
+            for ut in result.unmatched_terms
+        ]
+    return result
 
 
 # ── Notes helpers ──────────────────────────────────────────────────────────────
@@ -1544,10 +1830,26 @@ def _fmt_type(type_str: str, food_terms: list) -> str:
     return f'{prefix}:{type_str}'
 
 
+# ── Report helpers ─────────────────────────────────────────────────────────────
+
+_STATUS_ORDER: dict[str, int] = {
+    'exact':     0,
+    'composite': 1,
+    'parent':    2,
+    'partial':   3,
+    'no_match':  4,
+}
+
+
+def _sort_results(results: list) -> list:
+    """Return results sorted by status (exact → composite → parent → partial → no_match)."""
+    return sorted(results, key=lambda r: _STATUS_ORDER.get(r.match_status, 99))
+
+
 # ── TSV writer ─────────────────────────────────────────────────────────────────
 
 _TSV_FIELDS = [
-    'ingredient', 'match_status', 'food_id', 'food_material', 'taxonomy',
+    'ingredient', 'match_status', 'food_id', 'food_material', 'taxonomy', 'anatomy',
     'type', 'subtype', 'matched_id', 'matched_label',
     'characteristics', 'unmatched_terms', 'source', 'notes',
 ]
@@ -1579,6 +1881,7 @@ def write_report_tsv(results: list, options: argparse.Namespace, out_fh) -> None
             'food_id':         '; '.join(t.id for t in food_terms),
             'food_material':   '; '.join(t.label for t in food_terms),
             'taxonomy':        r.taxonomy,
+            'anatomy':         r.anatomy,
             'characteristics': '; '.join(t.label for t in char_terms),
             'unmatched_terms': '; '.join(t.text for t in r.unmatched_terms),
             'source':          r.source_module,
@@ -1651,8 +1954,8 @@ def write_report_md(results: list, options: argparse.Namespace, out_fh) -> None:
             summary_parts.append(f'{label} \u00d7 {n}')
     out_fh.write(' \u2014 '.join(summary_parts) + '\n\n')
     out_fh.write('## Results\n\n')
-    out_fh.write('| Ingredient | Status | ID | Food material | Taxonomy | Type | Subtype | Characteristics | Unmatched Terms | Notes&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; |\n')
-    out_fh.write('|:-----------|:------:|:---|:--------------|:---------|:-----|:--------|:----------------|:----------------|:-------------------------|\n')
+    out_fh.write('| Ingredient | Status | ID | Food material | Taxonomy | Anatomy | Type | Subtype | Characteristics | Unmatched Terms | Notes&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; |\n')
+    out_fh.write('|:-----------|:------:|:---|:--------------|:---------|:--------|:-----|:--------|:----------------|:----------------|:-------------------------|\n')
 
     _status_label = {
         'exact':     '<span style="color:#1a5c2a;font-weight:700">exact</span>',
@@ -1663,15 +1966,22 @@ def write_report_md(results: list, options: argparse.Namespace, out_fh) -> None:
     }
     for r in results:
         food_terms, char_terms = _split_components(r.component_terms)
-        _tax_iri  = _taxonomy_iri(r.taxonomy)
-        _tax_cell = (f'[{_md_cell(r.taxonomy)}]({_tax_iri})'
-                     if _tax_iri and r.taxonomy else _md_cell(r.taxonomy))
+        _tax_iri   = _taxonomy_iri(r.taxonomy)
+        _tax_label = _md_cell(_curie_label(r.taxonomy))
+        _tax_cell  = (f'[{_tax_label}]({_tax_iri})'
+                      if _tax_iri and r.taxonomy else _tax_label)
+        _anat_display = _anatomy_ref_curie(r.anatomy)
+        _anat_iri   = _anatomy_iri(_anat_display)
+        _anat_label = _md_cell(_curie_label(_anat_display))
+        _anat_cell  = (f'[{_anat_label}]({_anat_iri})'
+                       if _anat_iri and _anat_display else _anat_label)
         out_fh.write(
             f'| {_md_cell(r.ingredient)} '
             f'| {_status_label.get(r.match_status, r.match_status)} '
             f'| {_md_food_id(food_terms)} '
             f'| {_md_food_label(food_terms)} '
             f'| {_tax_cell} '
+            f'| {_anat_cell} '
             f'| {_md_cell(_fmt_type(r.type, food_terms))} '
             f'| {_md_cell(_fmt_subtype(r.subtype))} '
             f'| {_md_char_terms(char_terms)} '
@@ -1861,7 +2171,7 @@ def write_report_html(results: list, options: argparse.Namespace, out_fh) -> Non
     p.append('  <thead><tr>'
              '<th>Ingredient</th><th>Status</th>'
              '<th>ID</th><th>Food material</th>'
-             '<th>Taxonomy</th>'
+             '<th>Taxonomy</th><th>Anatomy</th>'
              '<th>Type</th><th>Subtype</th>'
              '<th>Characteristics</th>'
              '<th>Unmatched Terms</th><th style="min-width:30ch">Notes</th>'
@@ -1874,11 +2184,18 @@ def write_report_html(results: list, options: argparse.Namespace, out_fh) -> Non
         unmatched_html = '<br>'.join(
             f'<span class="term">{_esc(t.text)}</span>' for t in r.unmatched_terms
         )
-        notes_html = _notes_html(r.matched_id)
-        _tax_iri   = _taxonomy_iri(r.taxonomy)
-        tax_html   = (f'<span class="term"><a href="{_esc(_tax_iri)}" target="_blank">'
-                      f'{_esc(r.taxonomy)}</a></span>'
-                      if _tax_iri and r.taxonomy else _esc(r.taxonomy))
+        notes_html  = _notes_html(r.matched_id)
+        _tax_iri    = _taxonomy_iri(r.taxonomy)
+        _tax_lbl    = _esc(_curie_label(r.taxonomy))
+        tax_html    = (f'<span class="term"><a href="{_esc(_tax_iri)}" target="_blank">'
+                       f'{_tax_lbl}</a></span>'
+                       if _tax_iri and r.taxonomy else _tax_lbl)
+        _anat_display = _anatomy_ref_curie(r.anatomy)
+        _anat_iri   = _anatomy_iri(_anat_display)
+        _anat_lbl   = _esc(_curie_label(_anat_display))
+        anat_html   = (f'<span class="term"><a href="{_esc(_anat_iri)}" target="_blank">'
+                       f'{_anat_lbl}</a></span>'
+                       if _anat_iri and _anat_display else _anat_lbl)
         p.append(
             f'    <tr>'
             f'<td>{_esc(r.ingredient)}</td>'
@@ -1886,6 +2203,7 @@ def write_report_html(results: list, options: argparse.Namespace, out_fh) -> Non
             f'<td>{food_id_html}</td>'
             f'<td>{food_html}</td>'
             f'<td>{tax_html}</td>'
+            f'<td>{anat_html}</td>'
             f'<td>{_esc(_fmt_type(r.type, food_terms))}</td>'
             f'<td>{_esc(_fmt_subtype(r.subtype))}</td>'
             f'<td>{char_html}</td>'
@@ -1960,6 +2278,8 @@ def run_pipeline(options: argparse.Namespace) -> None:
             tag = (f'{result.match_status} [{result.matched_id}]'
                    if result.matched_id else result.match_status)
             print(f'  {ingredient!r:50s} → {tag}', file=sys.stderr)
+
+    results = _sort_results(results)
 
     _VALID_FMTS = {'tsv', 'markdown', 'html'}
     _DEFAULT_EXT = {'tsv': '.tsv', 'markdown': '.md', 'html': '.html'}
@@ -2075,6 +2395,8 @@ def main() -> None:
         for t in types:
             if t == 'taxonomy':
                 build_taxonomy(options.owl, dry_run=options.dry_run)
+            elif t == 'anatomy':
+                build_anatomy(options.owl, dry_run=options.dry_run)
             else:
                 build_refresh(t, options.owl, dry_run=options.dry_run)
     else:
@@ -2211,6 +2533,50 @@ def build_refresh(type_name: str, owl_path: str, dry_run: bool = False) -> None:
     exclude   = cfg.get('exclude') or {}
     owl_terms = _collect_owl_terms(roots, exclude, owl_path)
 
+    # ── Anatomy-specific: cross-reference in_taxon links ─────────────────────
+    # For each anatomy term in the OWL, check for an 'in taxon' (RO:0002162)
+    # restriction.  If found, record the taxon CURIE and add any missing taxonomy
+    # entries to ingredients.yaml.
+    taxon_xrefs:          dict[str, str]  = {}  # anatomy_curie → taxon_curie
+    new_taxonomy_entries: dict[str, dict] = {}  # taxon_curie → {label} (not yet in DB)
+
+    if type_name == 'anatomy' and owl_terms:
+        try:
+            from rdflib import Graph as _Graph, URIRef as _URIRef, BNode as _BNode
+            from rdflib import RDFS as _RDFS
+        except ImportError:
+            pass
+        else:
+            _IN_TAXON = _URIRef('http://purl.obolibrary.org/obo/RO_0002162')
+            _ON_PROP  = _URIRef('http://www.w3.org/2002/07/owl#onProperty')
+            _SOME_VAL = _URIRef('http://www.w3.org/2002/07/owl#someValuesFrom')
+            import logging as _logging
+            _xlog  = _logging.getLogger('rdflib.term')
+            _xprev = _xlog.level
+            _xlog.setLevel(_logging.ERROR)
+            _gx = _Graph()
+            try:
+                _gx.parse(owl_path)
+            finally:
+                _xlog.setLevel(_xprev)
+            for _anat_curie, _info in owl_terms.items():
+                _node = _URIRef(_info['iri'])
+                for _restr in _gx.objects(_node, _RDFS.subClassOf):
+                    if isinstance(_restr, _BNode) and (_restr, _ON_PROP, _IN_TAXON) in _gx:
+                        for _taxon in _gx.objects(_restr, _SOME_VAL):
+                            if not isinstance(_taxon, _BNode):
+                                _tax_curie = _taxonomy_curie(str(_taxon))
+                                taxon_xrefs[_anat_curie] = _tax_curie
+                                if _tax_curie not in _DB:
+                                    _lab = next(
+                                        (str(_l) for _l in _gx.objects(_taxon, _RDFS.label)),
+                                        _tax_curie,
+                                    )
+                                    new_taxonomy_entries[_tax_curie] = {'label': _lab}
+                                break
+                    if _anat_curie in taxon_xrefs:
+                        break
+
     yaml_entries    = get_entries_by_type(type_name)
     owl_keys        = set(owl_terms.keys())
     yaml_keys       = set(yaml_entries.keys())
@@ -2247,12 +2613,23 @@ def build_refresh(type_name: str, owl_path: str, dry_run: bool = False) -> None:
             updates[curie] = owl_syns
 
     # ── Report ───────────────────────────────────────────────────────────────
-    print(f'[NEW - in OWL under roots, not in ingredients.yaml]  ({len(new_curies)} terms)')
-    for curie in new_curies:
+    # Split new_curies: genuinely absent vs already owned by another primary type
+    truly_new     = [c for c in new_curies if not _DB.get(c)]
+    type_extended = [c for c in new_curies if _DB.get(c)]
+
+    print(f'[NEW - in OWL under roots, not in ingredients.yaml]  ({len(truly_new)} terms)')
+    for curie in truly_new:
         info = owl_terms[curie]
         print(f'  + {curie}  {info["label"]}')
         if info['synonyms']:
             print(f'    ontology synonyms: {info["synonyms"]}')
+
+    if type_extended:
+        print(f'\n[EXTENDS EXISTING - will add {type_name!r} as secondary type]  ({len(type_extended)} terms)')
+        for curie in type_extended:
+            info          = owl_terms[curie]
+            existing_prim = _primary_type(_DB[curie])
+            print(f'  ~ {curie}  {info["label"]}  (primary: {existing_prim!r})')
 
     print(f'\n[POSSIBLY DEPRECATED - in ingredients.yaml but not in OWL under roots]  ({len(missing_curies)} terms)')
     for curie in missing_curies:
@@ -2276,6 +2653,14 @@ def build_refresh(type_name: str, owl_path: str, dry_run: bool = False) -> None:
     in_sync = len(existing_curies) - len(set(updates) | set(migrates))
     print(f'\n[IN SYNC]  {in_sync} entries match')
 
+    if taxon_xrefs:
+        new_in_tax = [c for c in taxon_xrefs.values() if c in new_taxonomy_entries]
+        print(f'\n[TAXONOMY CROSS-REFERENCES from in_taxon]  '
+              f'({len(taxon_xrefs)} anatomy terms with taxon link; '
+              f'{len(set(new_in_tax))} new taxonomy entries)')
+        for tax_curie in sorted(set(new_in_tax)):
+            print(f'  + {tax_curie}  {new_taxonomy_entries[tax_curie]["label"]}')
+
     if dry_run:
         print('\nDry-run mode — no files written.')
         return
@@ -2298,14 +2683,43 @@ def build_refresh(type_name: str, owl_path: str, dry_run: bool = False) -> None:
     for curie in new_curies:
         info     = owl_terms[curie]
         existing = ingredient_section.get(curie) or {}
-        new_entry: dict = {
-            'type':     type_name,
-            'label':    info['label'],
-            'synonyms': list(info['synonyms']),
-        }
-        if existing.get('ai_synonyms'):
-            new_entry['ai_synonyms'] = existing['ai_synonyms']
-        ingredient_section[curie] = new_entry
+        existing_type = existing.get('type', '')
+
+        if existing_type:
+            # Already owned by another primary type — extend the type list.
+            # Food material types (fruit, dairy, grain …) always win primary position
+            # over annotation types (anatomy, taxonomy).
+            _FOOD_TYPES = {
+                'chemical', 'nutrient', 'sweetener', 'fruit', 'dairy', 'spice',
+                'herb', 'seed', 'nut', 'legume', 'grain', 'root_vegetable', 'lipid', 'fermentation',
+                'animal',
+            }
+            existing_prim = (existing_type[0]
+                             if isinstance(existing_type, list) else existing_type)
+            # Decide type order: food type goes first; anatomy/taxonomy go second.
+            if type_name in _FOOD_TYPES and existing_prim not in _FOOD_TYPES:
+                # New type is food; existing primary is annotation → food takes primary.
+                all_types = ([type_name] + (list(existing_type)
+                             if isinstance(existing_type, list) else [existing_type]))
+            else:
+                all_types = ((list(existing_type)
+                             if isinstance(existing_type, list) else [existing_type])
+                             + [type_name])
+            # Deduplicate while preserving order.
+            seen: set = set()
+            deduped = [t for t in all_types if not (t in seen or seen.add(t))]
+            existing['type'] = deduped[0] if len(deduped) == 1 else deduped
+            # Leave label/synonyms intact; the primary type owns them.
+        else:
+            # Genuinely new entry.
+            new_entry: dict = {
+                'type':     type_name,
+                'label':    info['label'],
+                'synonyms': list(info['synonyms']),
+            }
+            if existing.get('ai_synonyms'):
+                new_entry['ai_synonyms'] = existing['ai_synonyms']
+            ingredient_section[curie] = new_entry
 
     for curie, owl_syns in updates.items():
         ingredient_section[curie]['synonyms'] = owl_syns
@@ -2319,6 +2733,48 @@ def build_refresh(type_name: str, owl_path: str, dry_run: bool = False) -> None:
                 ai_section[syn] = {'status': 'proposed'}
         entry['ai_synonyms'] = ai_section
 
+    # Auto-generate stripped synonyms for anatomy-typed entries whose label ends in
+    # an anatomical suffix (seed/grain/kernel/groat).  E.g. "buckwheat seed" gains
+    # synonym "buckwheat" so bare ingredient names resolve to the anatomical form.
+    _STRIP_SFXS = (' seeds', ' grains', ' kernels', ' groats',
+                   ' seed',  ' grain',  ' kernel',  ' groat')
+    for curie, entry in ingredient_section.items():
+        if not isinstance(entry, dict) or entry.get('parent'):
+            continue
+        et = entry.get('type', '')
+        tl = et if isinstance(et, list) else [et]
+        if 'anatomy' not in tl:
+            continue
+        label = entry.get('label', '')
+        base = None
+        for sfx in _STRIP_SFXS:
+            if label.lower().endswith(sfx):
+                base = label[:len(label) - len(sfx)]
+                break
+        if base is None:
+            continue
+        bl = base.lower()
+        existing_syns = {s.lower() for s in (entry.get('synonyms') or [])}
+        existing_ai   = {s.lower() for s in (entry.get('ai_synonyms') or {})}
+        if bl not in existing_syns and bl not in existing_ai:
+            syns = list(entry.get('synonyms') or [])
+            syns.append(base)
+            entry['synonyms'] = syns
+
+    # Write anatomy → taxonomy cross-references
+    for anat_curie, tax_curie in taxon_xrefs.items():
+        if anat_curie in ingredient_section:
+            ingredient_section[anat_curie]['taxonomy'] = tax_curie
+
+    # Add any new taxonomy entries discovered via in_taxon links
+    for tax_curie, tax_info in new_taxonomy_entries.items():
+        if tax_curie not in ingredient_section:
+            ingredient_section[tax_curie] = {
+                'type':     'taxonomy',
+                'label':    tax_info['label'],
+                'synonyms': [],
+            }
+
     with open(_YAML, 'w', encoding='utf-8') as fh:
         ry.dump(doc, fh)
 
@@ -2327,7 +2783,12 @@ def build_refresh(type_name: str, owl_path: str, dry_run: bool = False) -> None:
 
 _TAXONOMY_FOOD_TYPES = frozenset([
     'fruit', 'sweetener', 'dairy', 'spice', 'herb', 'seed',
-    'grain', 'root_vegetable', 'lipid', 'fermentation',
+    'nut', 'legume', 'grain', 'root_vegetable', 'lipid', 'fermentation', 'animal',
+])
+
+_ANATOMY_FOOD_TYPES = frozenset([
+    'fruit', 'sweetener', 'dairy', 'spice', 'herb', 'seed',
+    'nut', 'legume', 'grain', 'root_vegetable', 'lipid', 'fermentation', 'animal',
 ])
 
 
@@ -2395,7 +2856,7 @@ def _annotate_food_taxonomy(owl_path: str, dry_run: bool = False) -> None:
     food_entries = {
         curie: entry
         for curie, entry in _DB.items()
-        if entry.get('type') in _TAXONOMY_FOOD_TYPES
+        if _primary_type(entry) in _TAXONOMY_FOOD_TYPES
         and not entry.get('parent')
     }
 
@@ -2486,6 +2947,79 @@ def _annotate_food_taxonomy(owl_path: str, dry_run: bool = False) -> None:
     print(f'\nUpdated {_YAML}')
 
 
+def _annotate_taxonomy_common_parts(dry_run: bool = False) -> None:
+    """
+    Phase 3 of build_taxonomy: populate common_parts on taxonomy entries.
+
+    Builds a reverse map from taxonomy CURIEs to the labels of all food material
+    entries that have a matching 'taxonomy' attribute in ingredients.yaml, then
+    writes any new common_parts values back to the taxonomy entries.
+
+    Also queries ingredients.yaml for any synonyms of taxonomy entries that could
+    serve as common_names (using oboInOwl synonym annotations is a future addition;
+    for now, existing YAML synonyms are promoted as candidates).
+    """
+    print('\n=== Taxonomy Common Parts | ingredients.yaml ===\n')
+
+    # Build reverse map: taxon_curie → [food material label, …]
+    parts_map: dict[str, list[str]] = {}
+    for curie, entry in _DB.items():
+        tax = entry.get('taxonomy', '')
+        if not tax or _primary_type(entry) not in _TAXONOMY_FOOD_TYPES:
+            continue
+        label = entry.get('label', '')
+        if label:
+            parts_map.setdefault(tax, []).append(label)
+
+    updates: dict[str, list[str]] = {}
+    in_sync = 0
+
+    for curie, entry in sorted(_DB.items()):
+        if not _has_type(entry, 'taxonomy'):
+            continue
+        computed = sorted(set(parts_map.get(curie, [])))
+        existing = list(entry.get('common_parts') or [])
+        new_parts = [p for p in computed if p not in existing]
+        if new_parts:
+            updates[curie] = existing + new_parts
+        else:
+            in_sync += 1
+
+    print(f'[COMMON_PARTS UPDATES]  ({len(updates)} taxonomy entries)')
+    for curie in sorted(updates):
+        label = _DB[curie].get('label', curie)
+        print(f'  ~ {curie}  {label}: common_parts → {updates[curie]}')
+    print(f'\n[IN SYNC]  {in_sync} entries unchanged')
+
+    if dry_run:
+        print('\nDry-run mode — no files written.')
+        return
+    if not updates:
+        print('\nNo updates to write.')
+        return
+
+    try:
+        from ruamel.yaml import YAML as RuamelYAML
+    except ImportError:
+        print('\nERROR: ruamel.yaml is required. Install with: pip install ruamel.yaml',
+              file=sys.stderr)
+        return
+
+    ry = RuamelYAML()
+    ry.preserve_quotes = True
+    with open(_YAML, encoding='utf-8') as fh:
+        doc = ry.load(fh)
+
+    ingredient_section = doc['ingredient']
+    for curie, parts in updates.items():
+        if curie in ingredient_section:
+            ingredient_section[curie]['common_parts'] = parts
+
+    with open(_YAML, 'w', encoding='utf-8') as fh:
+        ry.dump(doc, fh)
+    print(f'\nUpdated {_YAML}')
+
+
 def build_taxonomy(owl_path: str, dry_run: bool = False) -> None:
     """
     Rebuild taxonomy entries and annotate food material entries with organism CURIEs.
@@ -2495,9 +3029,279 @@ def build_taxonomy(owl_path: str, dry_run: bool = False) -> None:
     Phase 2: annotate food material entries (fruit, dairy, spice, herb, seed, grain,
              lipid, fermentation, etc.) with 'taxonomy' CURIEs derived from
              'in taxon' (RO:0002162) links in the OWL.
+    Phase 3: populate common_parts on taxonomy entries from YAML back-links.
     """
     build_refresh('taxonomy', owl_path, dry_run=dry_run)
     _annotate_food_taxonomy(owl_path, dry_run=dry_run)
+    _annotate_taxonomy_common_parts(dry_run=dry_run)
+
+
+def _annotate_food_anatomy(owl_path: str, dry_run: bool = False) -> None:
+    """
+    Annotate food material entries in ingredients.yaml with 'anatomy' CURIEs.
+
+    For each entry whose type is in _ANATOMY_FOOD_TYPES (and has no 'parent' field),
+    traverses rdfs:subClassOf upward from the food material's IRI until the first
+    named UBERON, PO, or FAO class is encountered.  That class becomes the 'anatomy'
+    value for the entry.  Writes the discovered CURIE as an 'anatomy' attribute on
+    the YAML entry.
+    """
+    try:
+        from rdflib import Graph, URIRef, RDFS
+    except ImportError:
+        print('ERROR: rdflib is required. Install with: pip install rdflib', file=sys.stderr)
+        return
+
+    _EXT_IRI_PREFIXES = (
+        'http://purl.obolibrary.org/obo/UBERON_',
+        'http://purl.obolibrary.org/obo/PO_',
+        'http://purl.obolibrary.org/obo/FAO_',
+    )
+
+    def _nearest_ext_ancestor(start_iri: str) -> str:
+        """BFS up rdfs:subClassOf; return first UBERON/PO/FAO named class IRI."""
+        visited: set[str] = {start_iri}
+        queue: list[str]  = [start_iri]
+        while queue:
+            node_iri = queue.pop(0)
+            for parent in g.objects(URIRef(node_iri), RDFS.subClassOf):
+                ps = str(parent)
+                if ps in visited or not ps.startswith('http'):
+                    continue
+                visited.add(ps)
+                if any(ps.startswith(p) for p in _EXT_IRI_PREFIXES):
+                    return ps
+                queue.append(ps)
+        return ''
+
+    owl_basename = os.path.basename(owl_path)
+    print(f'\n=== Anatomy Annotation | OWL: {owl_basename} ===\n')
+    print(f'  Food types scanned: {", ".join(sorted(_ANATOMY_FOOD_TYPES))}\n')
+
+    if not os.path.exists(owl_path):
+        print(f'ERROR: OWL file not found: {owl_path}', file=sys.stderr)
+        return
+
+    import logging
+    _log  = logging.getLogger('rdflib.term')
+    _prev = _log.level
+    _log.setLevel(logging.ERROR)
+    g = Graph()
+    try:
+        g.parse(owl_path)
+    finally:
+        _log.setLevel(_prev)
+
+    food_entries = {
+        curie: entry
+        for curie, entry in _DB.items()
+        if _primary_type(entry) in _ANATOMY_FOOD_TYPES
+        and not entry.get('parent')
+    }
+
+    updates:   dict[str, str] = {}
+    no_anat:   int            = 0
+    in_sync:   int            = 0
+
+    for curie, entry in sorted(food_entries.items()):
+        iri = curie_to_iri(curie)
+        # If the food material's own IRI is a UBERON/PO/FAO entity it IS the anatomy.
+        if any(iri.startswith(p) for p in _EXT_IRI_PREFIXES):
+            anat_iri = iri
+        else:
+            anat_iri = _nearest_ext_ancestor(iri)
+
+        if not anat_iri:
+            existing = entry.get('anatomy', '')
+            if existing:
+                in_sync += 1
+            else:
+                no_anat += 1
+            continue
+
+        new_curie = _char_short(anat_iri)
+        existing  = entry.get('anatomy', '')
+        if existing == new_curie:
+            in_sync += 1
+        else:
+            updates[curie] = new_curie
+
+    print(f'[ANATOMY UPDATES]  ({len(updates)} terms)')
+    for curie in sorted(updates):
+        label   = food_entries[curie].get('label', curie)
+        old_val = food_entries[curie].get('anatomy', '')
+        suffix  = f'  (was: {old_val})' if old_val else ''
+        print(f'  ~ {curie}  {label} → {updates[curie]}{suffix}')
+
+    print(f'\n[NO ANATOMY RELATION FOUND IN OWL]  {no_anat} terms')
+    print(f'\n[IN SYNC]  {in_sync} entries unchanged')
+
+    if dry_run:
+        print('\nDry-run mode — no files written.')
+        return
+    if not updates:
+        print('\nNo updates to write.')
+        return
+
+    try:
+        from ruamel.yaml import YAML as RuamelYAML
+    except ImportError:
+        print('\nERROR: ruamel.yaml is required. Install with: pip install ruamel.yaml',
+              file=sys.stderr)
+        return
+
+    ry = RuamelYAML()
+    ry.preserve_quotes = True
+    with open(_YAML, encoding='utf-8') as fh:
+        doc = ry.load(fh)
+
+    ingredient_section = doc['ingredient']
+    for curie, anat_curie in updates.items():
+        if curie in ingredient_section:
+            ingredient_section[curie]['anatomy'] = anat_curie
+
+    with open(_YAML, 'w', encoding='utf-8') as fh:
+        ry.dump(doc, fh)
+    print(f'\nUpdated {_YAML}')
+
+
+def _annotate_anatomy_refs(owl_path: str, dry_run: bool = False) -> None:
+    """
+    Phase 3 of build_anatomy(): for every anatomy entry in the YAML that is a
+    FOODON-prefixed term, traverse rdfs:subClassOf upward in the merged OWL until
+    the nearest UBERON, PO, or FAO ancestor is found.  Write it as 'anatomy_ref'
+    on the anatomy entry so the report layer can display an external-ontology link.
+
+    UBERON/PO/FAO anatomy entries are skipped (they already ARE the external ref).
+    Manually set 'anatomy_ref' values are preserved when no OWL ancestor is found.
+    """
+    try:
+        from rdflib import Graph, URIRef, RDFS
+    except ImportError:
+        print('ERROR: rdflib is required. Install with: pip install rdflib', file=sys.stderr)
+        return
+
+    owl_basename = os.path.basename(owl_path)
+    print(f'\n=== Anatomy External References | OWL: {owl_basename} ===\n')
+
+    if not os.path.exists(owl_path):
+        print(f'ERROR: OWL file not found: {owl_path}', file=sys.stderr)
+        return
+
+    import logging
+    _log  = logging.getLogger('rdflib.term')
+    _prev = _log.level
+    _log.setLevel(logging.ERROR)
+    g = Graph()
+    try:
+        g.parse(owl_path)
+    finally:
+        _log.setLevel(_prev)
+
+    # OBO IRI prefixes for the target external ontologies
+    _EXT_IRI_PREFIXES = (
+        'http://purl.obolibrary.org/obo/UBERON_',
+        'http://purl.obolibrary.org/obo/PO_',
+        'http://purl.obolibrary.org/obo/FAO_',
+    )
+
+    def _nearest_ext_ancestor(start_iri: str) -> str:
+        """BFS up rdfs:subClassOf; return first UBERON/PO/FAO IRI (excl. start)."""
+        visited: set[str] = {start_iri}
+        queue: list[str]  = [start_iri]
+        while queue:
+            node_iri = queue.pop(0)
+            for parent in g.objects(URIRef(node_iri), RDFS.subClassOf):
+                ps = str(parent)
+                if ps in visited or not ps.startswith('http'):
+                    continue
+                visited.add(ps)
+                if any(ps.startswith(p) for p in _EXT_IRI_PREFIXES):
+                    return ps
+                queue.append(ps)
+        return ''
+
+    anatomy_entries = {
+        curie: entry
+        for curie, entry in _DB.items()
+        if _primary_type(entry) == 'anatomy'
+        and curie.split(':')[0] == 'FOODON'
+    }
+
+    updates: dict[str, str] = {}   # curie → new ref curie
+    no_ref:  list[str]      = []
+    in_sync: list[str]      = []
+
+    for curie, entry in sorted(anatomy_entries.items()):
+        iri     = curie_to_iri(curie)
+        ref_iri = _nearest_ext_ancestor(iri)
+        if not ref_iri:
+            no_ref.append(curie)
+            continue
+        ref_curie = _char_short(ref_iri)
+        existing  = entry.get('anatomy_ref', '')
+        if existing == ref_curie:
+            in_sync.append(curie)
+        else:
+            updates[curie] = ref_curie
+
+    if updates:
+        print(f'[UPDATED]  ({len(updates)} anatomy entries)\n')
+        for curie in sorted(updates):
+            lbl = _DB.get(curie, {}).get('label', curie)
+            old = _DB.get(curie, {}).get('anatomy_ref', '')
+            suffix = f'  (was: {old})' if old else ''
+            print(f'  ~ {curie}  {lbl} → {updates[curie]}{suffix}')
+    if no_ref:
+        print(f'\n[NO EXTERNAL ANCESTOR FOUND IN OWL]  ({len(no_ref)} terms — manual anatomy_ref may be set)')
+    if in_sync:
+        print(f'\n[IN SYNC]  {len(in_sync)} entries already annotated')
+
+    if dry_run:
+        print('\nDry-run mode — no files written.')
+        return
+    if not updates:
+        print('\nNo updates to write.')
+        return
+
+    try:
+        from ruamel.yaml import YAML as RuamelYAML
+    except ImportError:
+        print('\nERROR: ruamel.yaml is required. Install with: pip install ruamel.yaml',
+              file=sys.stderr)
+        return
+
+    ry = RuamelYAML()
+    ry.preserve_quotes = True
+    with open(_YAML, encoding='utf-8') as fh:
+        doc = ry.load(fh)
+
+    ingredient_section = doc['ingredient']
+    for curie, ref_curie in updates.items():
+        if curie in ingredient_section:
+            ingredient_section[curie]['anatomy_ref'] = ref_curie
+
+    with open(_YAML, 'w', encoding='utf-8') as fh:
+        ry.dump(doc, fh)
+    print(f'\nUpdated {_YAML}')
+
+
+def build_anatomy(owl_path: str, dry_run: bool = False) -> None:
+    """
+    Rebuild anatomy entries and annotate food material entries with anatomy CURIEs.
+
+    Phase 1: refresh anatomy type entries (UBERON/PO/FAO/FOODON terms under configured
+             roots) via the standard build_refresh logic.  During this phase, any
+             anatomy term with an 'in taxon' link in the OWL will have its taxon
+             ensured in the taxonomy branch and its 'taxonomy' attribute written.
+    Phase 2: annotate food material entries with 'anatomy' CURIEs by traversing
+             rdfs:subClassOf upward until the first named UBERON/PO/FAO class is found.
+    Phase 3: for FOODON anatomy terms, traverse subClassOf upward to find the nearest
+             UBERON/PO/FAO ancestor and write it as 'anatomy_ref' on the anatomy entry.
+    """
+    build_refresh('anatomy', owl_path, dry_run=dry_run)
+    _annotate_food_anatomy(owl_path, dry_run=dry_run)
+    _annotate_anatomy_refs(owl_path, dry_run=dry_run)
 
 
 if __name__ == '__main__':
