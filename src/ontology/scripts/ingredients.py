@@ -6,6 +6,12 @@ ontology terms using a pipeline of specialist recognisers followed by a
 Claude-AI-assisted OWL search.
 
 Pipeline (applied in order, first match wins):
+  0. NLP pre-processing  – ingredient-parser-nlp extracts quantity, unit, and core name
+                           from recipe-style strings (e.g. "500g chicken breast, diced"
+                           → quantity="500", unit="gram", core="chicken breast").
+                           Only the core name enters steps 1–3; quantity and unit are
+                           attached to every result for report columns Qty / Unit.
+                           Requires: pip install ingredient-parser-nlp
   1. Assumption rules    – e.g. "egg" → "chicken egg"; retry global exact match
   2. Global exact match  – food_form + alias lookup across all ingredient types
   3. Component search    – plant prefixes, parenthetical qualifier stripping,
@@ -69,6 +75,8 @@ Output formats
 
 TSV columns:
   ingredient      – original input string
+  quantity        – parsed quantity (e.g. '500', '1/2', '1-2'); empty if not present
+  unit            – parsed unit (e.g. 'gram', 'cup', 'clove'); empty if not present
   match_status    – exact | parent | partial | fuzzy | no_match
   food_id         – semicolon-separated ontology IDs for matched food material terms
   food_material   – semicolon-separated labels for matched food material terms
@@ -121,6 +129,12 @@ try:
     _RAPIDFUZZ_AVAILABLE = True
 except ImportError:
     _RAPIDFUZZ_AVAILABLE = False
+
+try:
+    from ingredient_parser import parse_ingredient as _ip_parse
+    _IP_AVAILABLE = True
+except ImportError:
+    _IP_AVAILABLE = False
 
 # Minimum normalised-string length for fuzzy matching; short strings produce
 # too many false positives (e.g. "oi" → "tortoise").
@@ -225,6 +239,8 @@ class MatchResult:
     anatomy: str  = ''    # anatomical structure CURIE (e.g. UBERON:0000912)
     form_hints: list = field(default_factory=list)
     notes: list = field(default_factory=list)
+    quantity: str = ''   # parsed quantity string (e.g. '500', '1/2', '1-2')
+    unit: str     = ''   # parsed unit string (e.g. 'gram', 'cup', 'clove')
 
 
 # ══════════════════════════════════════════════════════════════════════════════
@@ -2121,9 +2137,13 @@ def _component_search(ingredient: str, options: argparse.Namespace) -> MatchResu
 
     # 3g: rapidfuzz approximate match
     # Fires only when all exact/prefix steps have failed and the string is long
-    # enough to avoid short-string false positives.  Searches the full alias
-    # index for the closest entry above _FUZZY_SCORE_CUTOFF using WRatio, which
-    # combines token-sort, partial-ratio, and simple ratio for best recall.
+    # enough to avoid short-string false positives.  WRatio finds the best
+    # candidate, then a token-pair check validates the result: both strings are
+    # split on whitespace/hyphens and at least one token pair must score at or
+    # above _FUZZY_SCORE_CUTOFF using fuzz.ratio.  This prevents WRatio's
+    # partial_ratio component from matching short aliases that happen to appear
+    # as a character-substring inside a longer query (e.g. "ass" inside
+    # "sodium-potassium" via "pot-ASS-ium").
     if _RAPIDFUZZ_AVAILABLE and len(normed) >= _FUZZY_MIN_LEN:
         hit = _rf_process.extractOne(
             normed, _FUZZY_KEYS,
@@ -2132,11 +2152,18 @@ def _component_search(ingredient: str, options: argparse.Namespace) -> MatchResu
         )
         if hit:
             matched_key, score, _idx = hit
-            result = _global_exact_match(matched_key, options)
-            if result:
-                result.match_status = 'fuzzy'
-                result.notes = [f'fuzzy match: "{matched_key}" (score {score:.0f})']
-                return _resolve_residuals(result)
+            _q_toks = re.split(r'[\s\-/]+', normed)
+            _k_toks = re.split(r'[\s\-/]+', matched_key)
+            _token_match = any(
+                _rf_fuzz.ratio(qt, kt) >= _FUZZY_SCORE_CUTOFF
+                for qt in _q_toks for kt in _k_toks
+            )
+            if _token_match:
+                result = _global_exact_match(matched_key, options)
+                if result:
+                    result.match_status = 'fuzzy'
+                    result.notes = [f'fuzzy match: "{matched_key}" (score {score:.0f})']
+                    return _resolve_residuals(result)
 
     # No match
     return MatchResult(
@@ -2153,40 +2180,89 @@ def _component_search(ingredient: str, options: argparse.Namespace) -> MatchResu
     )
 
 
+def _nlp_preprocess(text: str) -> tuple:
+    """Use ingredient-parser-nlp to extract quantity, unit, and core ingredient name.
+
+    Returns (quantity, unit, core_name).  Falls back to ('', '', text) on any error
+    or when the library is not installed.
+
+    Examples:
+        '500g chicken breast, diced'  → ('500',   'gram',  'chicken breast')
+        '1/2 cup almond milk'         → ('1/2',   'cup',   'almond milk')
+        '1-2 cloves garlic'           → ('1-2',   'clove', 'garlic')
+        'apple'                       → ('',       '',      'apple')
+    """
+    if not _IP_AVAILABLE:
+        return '', '', text
+    try:
+        parsed = _ip_parse(text)
+        core = parsed.name[0].text.strip() if parsed.name else ''
+        if not core:
+            return '', '', text
+        qty = unit = ''
+        if parsed.amount:
+            a = parsed.amount[0]
+            if a.quantity is not None:
+                if a.quantity_max and a.quantity_max != a.quantity:
+                    qty = f'{a.quantity}-{a.quantity_max}'
+                else:
+                    qty = str(a.quantity)
+            if a.unit:
+                unit = str(a.unit)
+        return qty, unit, core
+    except Exception:
+        return '', '', text
+
+
 def match_ingredient(ingredient: str, options: argparse.Namespace) -> MatchResult:
     """Run the recogniser pipeline for one ingredient string.
 
-    Step 1: assumption rules — applied first for terms explicitly listed in the
+    Step 0: NLP pre-processing — ingredient-parser-nlp extracts quantity, unit, and
+            the core ingredient name from recipe-style strings such as
+            "500g chicken breast, diced" or "1/2 cup almond milk".
+            Only the core name is passed into the matching steps; quantity and unit
+            are attached to every result so they appear in report columns.
+    Step 1: Assumption rules — applied first for terms explicitly listed in the
             assumptions config (e.g. "milk" → "cow milk", "kiwi" → "kiwifruit").
             Allows assumptions to override a direct-label match for a broader/wrong entry.
-    Step 2: global exact match across all ingredient types (food_form + alias).
-    Step 3: component search (plant prefixes, adjectives, characteristics, fallbacks).
+    Step 2: Global exact match across all ingredient types (food_form + alias).
+    Step 3: Component search (plant prefixes, adjectives, characteristics, fallbacks).
 
     The original ingredient text is always restored in the result so reports show
     exactly what the caller supplied.
     """
     original = ingredient
 
+    # Step 0: NLP pre-processing (quantity/unit extraction)
+    # Only use the NLP-extracted core name when a quantity or unit was actually found.
+    # Without those signals the input is not a recipe-style measurement string, so the
+    # original text is passed through unchanged.  This preserves parenthetical qualifiers
+    # like "(Lactobacillus acidophilus)" that carry semantic meaning for later steps.
+    _quantity, _unit, _nlp_core = _nlp_preprocess(ingredient)
+    if _quantity or _unit:
+        ingredient = _nlp_core
+
+    def _finalize(r: MatchResult) -> MatchResult:
+        r.ingredient = original
+        r.quantity   = _quantity
+        r.unit       = _unit
+        return r
+
     # Step 1: assumption rules (only fires when text is an exact assumptions-dict key)
     assumed = apply_assumptions(ingredient)
     if assumed != ingredient:
         result = _global_exact_match(assumed, options)
         if result:
-            result = _resolve_residuals(result)
-            result.ingredient = original
-            return result
+            return _finalize(_resolve_residuals(result))
 
     # Step 2: global exact match
     result = _global_exact_match(ingredient, options)
     if result:
-        result = _resolve_residuals(result)
-        result.ingredient = original
-        return result
+        return _finalize(_resolve_residuals(result))
 
     # Step 3: component search variations
     result = _component_search(ingredient, options)
-    result.ingredient = original
-    return result
+    return _finalize(result)
 
 
 # ── Notes helpers ──────────────────────────────────────────────────────────────
@@ -2271,7 +2347,8 @@ def _sort_results(results: list) -> list:
 # ── TSV writer ─────────────────────────────────────────────────────────────────
 
 _TSV_FIELDS = [
-    'ingredient', 'match_status', 'food_id', 'food_material', 'taxonomy', 'anatomy',
+    'ingredient', 'quantity', 'unit',
+    'match_status', 'food_id', 'food_material', 'taxonomy', 'anatomy',
     'type', 'subtype', 'matched_id', 'matched_label',
     'characteristics', 'unmatched_terms', 'source', 'notes',
 ]
@@ -2295,6 +2372,8 @@ def write_report_tsv(results: list, options: argparse.Namespace, out_fh) -> None
         food_terms, char_terms = _split_components(r.component_terms)
         writer.writerow({
             'ingredient':      r.ingredient,
+            'quantity':        r.quantity,
+            'unit':            r.unit,
             'match_status':    r.match_status,
             'type':            _fmt_type(r.type, food_terms),
             'subtype':         _fmt_subtype(r.subtype),
@@ -2376,8 +2455,8 @@ def write_report_md(results: list, options: argparse.Namespace, out_fh) -> None:
             summary_parts.append(f'{label} \u00d7 {n}')
     out_fh.write(' \u2014 '.join(summary_parts) + '\n\n')
     out_fh.write('## Results\n\n')
-    out_fh.write('| Ingredient | Status | ID | Food material | Taxonomy | Anatomy | Type | Subtype | Characteristics | Unmatched Terms | Notes&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; |\n')
-    out_fh.write('|:-----------|:------:|:---|:--------------|:---------|:--------|:-----|:--------|:----------------|:----------------|:-------------------------|\n')
+    out_fh.write('| Ingredient | Qty | Unit | Status | ID | Food material | Taxonomy | Anatomy | Type | Subtype | Characteristics | Unmatched Terms | Notes&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; |\n')
+    out_fh.write('|:-----------|:----|:-----|:------:|:---|:--------------|:---------|:--------|:-----|:--------|:----------------|:----------------|:-------------------------|\n')
 
     _status_label = {
         'exact':     '<span style="color:#1a5c2a;font-weight:700">exact</span>',
@@ -2403,6 +2482,8 @@ def write_report_md(results: list, options: argparse.Namespace, out_fh) -> None:
         _notes_cell_md  = '; '.join(filter(None, [_extra_notes_md, _child_notes_md]))
         out_fh.write(
             f'| {_md_cell(r.ingredient)} '
+            f'| {_md_cell(r.quantity)} '
+            f'| {_md_cell(r.unit)} '
             f'| {_status_label.get(r.match_status, r.match_status)} '
             f'| {_md_food_id(food_terms)} '
             f'| {_md_food_label(food_terms)} '
@@ -2597,7 +2678,7 @@ def write_report_html(results: list, options: argparse.Namespace, out_fh) -> Non
 
     p.append('<h2>Results</h2>\n<table>\n')
     p.append('  <thead><tr>'
-             '<th>Ingredient</th><th>Status</th>'
+             '<th>Ingredient</th><th>Qty</th><th>Unit</th><th>Status</th>'
              '<th>ID</th><th>Food material</th>'
              '<th>Taxonomy</th><th>Anatomy</th>'
              '<th>Type</th><th>Subtype</th>'
@@ -2630,6 +2711,8 @@ def write_report_html(results: list, options: argparse.Namespace, out_fh) -> Non
         p.append(
             f'    <tr>'
             f'<td>{_esc(r.ingredient)}</td>'
+            f'<td>{_esc(r.quantity)}</td>'
+            f'<td>{_esc(r.unit)}</td>'
             f'<td>{_badge(r.match_status)}</td>'
             f'<td>{food_id_html}</td>'
             f'<td>{food_html}</td>'
