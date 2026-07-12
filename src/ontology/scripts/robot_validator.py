@@ -7,7 +7,8 @@ cause the `robot template` command to fail, including:
 
   1. Blank lines (\\n...\\n) inside quoted cells in template columns - may break TSV parsers
   2. Single newlines (\\n) inside cells in template columns - may cause issues
-  3. Labels in parent/EquivalentTo/restriction columns not found in the ontology
+  3. Values in parent/EquivalentTo/restriction columns (SC %/EC %) that are
+     neither a valid CURIE/IRI nor a known ontology label
   4. Manchester expressions with a missing leading single quote
 
 Only rows with a non-empty Ontology ID (column 2) are validated, and only cells
@@ -252,16 +253,29 @@ def get_label_index(ontology_file: str, catalog_file: str | None,
     return index
 
 
-def add_tsv_labels(tsv_file: str, label_index: dict,
-                   id_col: int = 1, label_col: int = 3) -> None:
+def add_tsv_labels(tsv_file: str, label_index: dict) -> None:
     """
     Add labels defined within the TSV itself to the label index so that rows
     later in the file can reference them as parent/restriction targets.
     Only rows with a non-empty Ontology ID are considered.
+    The ID and label columns are detected from the template row (row 2):
+      ID column    → directive exactly 'ID'
+      Label column → directive starting with 'AL rdfs:label'
     Modifies label_index in-place.
     """
     with open(tsv_file, newline='') as fh:
         rows = list(csv.reader(fh, delimiter='\t'))
+
+    if len(rows) < 2:
+        return
+
+    template = rows[1]
+    id_col    = next((i for i, t in enumerate(template) if t.strip() == 'ID'), None)
+    label_col = next((i for i, t in enumerate(template)
+                      if t.strip().startswith('AL rdfs:label')), None)
+
+    if id_col is None or label_col is None:
+        return  # can't identify columns; skip silently
 
     added = 0
     for row in rows[2:]:  # skip header + template rows
@@ -287,7 +301,7 @@ def is_curie_or_iri(text: str) -> bool:
 def extract_label_refs(cell_value: str, template_directive: str) -> list[str]:
     """
     Given a cell value and its ROBOT template directive, return the list of
-    labels that ROBOT would resolve against the ontology, plus sentinel strings
+    tokens (labels and CURIEs/IRIs) to be validated, plus sentinel strings
     for malformed expressions.
 
     ROBOT template directives that do label lookups:
@@ -299,8 +313,13 @@ def extract_label_refs(cell_value: str, template_directive: str) -> list[str]:
 
     Key rule: a value is treated as a Manchester expression ONLY if it contains
     single-quoted strings ('...'). Without single quotes, the entire (post-split)
-    value is a plain label — even if it contains words like "or" or "and" that
-    happen to be Manchester keywords (e.g. "meat, poultry or fish quality").
+    value is a plain label or CURIE — even if it contains words like "or" or
+    "and" that happen to be Manchester keywords (e.g. "meat, poultry or fish quality").
+
+    All plain (non-Manchester) tokens are returned — both CURIEs and labels.
+    The caller is responsible for checking each token against the appropriate
+    index: CURIEs/IRIs are accepted by syntax; labels are checked against the
+    label index.
 
     Returned sentinels (for malformed expressions):
       _MALFORMED_MISSING_LEAD + original  → missing leading ' (auto-fixable)
@@ -315,7 +334,7 @@ def extract_label_refs(cell_value: str, template_directive: str) -> list[str]:
              if 'SPLIT=|' in template_directive
              else [value])
 
-    labels: list[str] = []
+    tokens: list[str] = []
     for part in parts:
         part = part.strip()
         if not part:
@@ -326,23 +345,22 @@ def extract_label_refs(cell_value: str, template_directive: str) -> list[str]:
             if part.count("'") % 2 != 0:
                 # Odd number of quotes: determine if the leading ' is simply missing
                 if not part.startswith("'"):
-                    labels.append(_MALFORMED_MISSING_LEAD + part)
+                    tokens.append(_MALFORMED_MISSING_LEAD + part)
                 else:
-                    labels.append(_MALFORMED_UNPAIRED + part)
+                    tokens.append(_MALFORMED_UNPAIRED + part)
                 continue
             # Extract the quoted label tokens; skip pure Manchester keywords
             quoted = [q.strip() for q in re.findall(r"'([^']+)'", part)]
-            labels.extend(
+            tokens.extend(
                 q for q in quoted
                 if q and q.lower() not in MANCHESTER_KEYWORDS
             )
         else:
-            # Plain value: a single label or CURIE.
+            # Plain value: a label or CURIE — both are valid in SC/EC % columns.
             # Parentheses are part of the label, e.g. "food (preserved)".
-            if not is_curie_or_iri(part):
-                labels.append(part)
+            tokens.append(part)
 
-    return labels
+    return tokens
 
 
 # ─── Fuzzy Matching ───────────────────────────────────────────────────────────
@@ -449,7 +467,15 @@ def validate(tsv_file: str, label_index: dict) -> list[dict]:
         if t.strip().startswith('AI ')
     ]
 
-    ID_COL = 1  # Ontology ID is always column index 1 (0-based)
+    # Locate the ID column dynamically from the template row (directive == 'ID')
+    ID_COL = next((i for i, t in enumerate(template) if t.strip() == 'ID'), None)
+    if ID_COL is None:
+        issues.append({
+            'type': 'ERROR', 'row': 2, 'col': None, 'header': '',
+            'msg': 'No column with template directive "ID" found in row 2.',
+            'fix': 'Add an "ID" directive to the Ontology ID column in the template row.',
+        })
+        return issues
 
     # ── Check 0: detect cells with unintended CSV double-quote quoting ─────
     # A cell whose value begins with a literal '"' causes Python's csv module
@@ -570,7 +596,9 @@ def validate(tsv_file: str, label_index: dict) -> list[dict]:
                     '_fix_value': fixed,
                 })
 
-        # ── Check 3: label lookups ──────────────────────────────────────────
+        # ── Check 3: label/CURIE lookups ───────────────────────────────────
+        # SC % and EC % columns accept either a CURIE/IRI (resolved directly
+        # by ROBOT) or a plain label (looked up against the ontology).
         for col_info in lookup_cols:
             col_i = col_info['index']
             cell  = row[col_i].strip() if col_i < len(row) else ''
@@ -609,10 +637,15 @@ def validate(tsv_file: str, label_index: dict) -> list[dict]:
                     })
                     continue
 
-                # ── Label not found in ontology ─────────────────────────────
+                # ── Valid CURIE or IRI — accepted directly ──────────────────
+                if is_curie_or_iri(token):
+                    continue
+
+                # ── Known label — accepted ──────────────────────────────────
                 if token.lower() in label_index:
                     continue
 
+                # ── Neither CURIE nor known label ───────────────────────────
                 suggestions = find_close_matches(token, label_index)
                 fix_msg = (
                     'Closest matches: ' + ', '.join(f'"{s}"' for s in suggestions)
@@ -623,7 +656,7 @@ def validate(tsv_file: str, label_index: dict) -> list[dict]:
                     'row':     row_num,
                     'col':     col_i + 1,
                     'header':  col_info['header'],
-                    'msg':     f'Label not found in ontology: "{token}"',
+                    'msg':     f'Value is not a valid CURIE/IRI and not a known ontology label: "{token}"',
                     'fix':     fix_msg,
                     'context': repr(cell),
                 })
@@ -749,7 +782,7 @@ def print_report(issues: list[dict], tsv_file: str, update_mode: bool) -> int:
     deduped_errors: list[dict] = []
     for issue in errors:
         msg = issue.get('msg', '')
-        if msg.startswith('Label not found'):
+        if msg.startswith('Value is not a valid CURIE') or msg.startswith('Label not found'):
             if msg not in seen_label_msg:
                 seen_label_msg[msg] = []
                 deduped_errors.append(issue)
