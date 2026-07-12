@@ -150,6 +150,7 @@ http://purl.obolibrary.org/obo/AGRO_00000322 #   treatment
 http://purl.obolibrary.org/obo/AGRO_00000363 # greenhouse
 
 [Top level source term URIs and target direct superclass URIs]
+http://purl.obolibrary.org/obo/BFO_0000141 # immaterial entity (INTERCEPT for cob compatibility)
 http://purl.obolibrary.org/obo/BFO_0000040 # material entity
 http://purl.obolibrary.org/obo/BFO_0000015 # process
 http://purl.obolibrary.org/obo/PATO_0000001 # quality
@@ -587,6 +588,9 @@ PATO
 
 [Low level source term URIs]
 http://purl.obolibrary.org/obo/PATO_0000033 # concentration of
+http://purl.obolibrary.org/obo/PATO_0001842 # acidity
+http://purl.obolibrary.org/obo/PATO_0001824 # dry
+http://purl.obolibrary.org/obo/PATO_0001822 # wet
 
 http://purl.obolibrary.org/obo/PATO_0002303 # decreased quality
 http://purl.obolibrary.org/obo/PATO_0001163 # decreased concentration

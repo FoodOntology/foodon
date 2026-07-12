@@ -1,14 +1,24 @@
 Prefix(:=<http://purl.obolibrary.org/obo/foodon/imports/chebi_import.owl#>)
+Prefix(dc:=<http://purl.org/dc/terms/>)
 Prefix(obo:=<http://purl.obolibrary.org/obo/>)
 Prefix(owl:=<http://www.w3.org/2002/07/owl#>)
 Prefix(rdf:=<http://www.w3.org/1999/02/22-rdf-syntax-ns#>)
 Prefix(xml:=<http://www.w3.org/XML/1998/namespace>)
 Prefix(xsd:=<http://www.w3.org/2001/XMLSchema#>)
+Prefix(foaf:=<http://xmlns.com/foaf/0.1/>)
+Prefix(prov:=<http://www.w3.org/ns/prov#>)
+Prefix(rdfa:=<http://www.w3.org/ns/rdfa#>)
 Prefix(rdfs:=<http://www.w3.org/2000/01/rdf-schema#>)
+Prefix(skos:=<http://www.w3.org/2004/02/skos/core#>)
+Prefix(void:=<http://rdfs.org/ns/void#>)
+Prefix(dcterms:=<http://purl.org/dc/terms/>)
+Prefix(oboInOwl:=<http://www.geneontology.org/formats/oboInOwl#>)
 
 
 Ontology(<http://purl.obolibrary.org/obo/foodon/imports/chebi_import.owl>
 
+Declaration(Class(obo:BFO_0000017))
+Declaration(Class(obo:BFO_0000040))
 Declaration(Class(obo:CHEBI_10607))
 Declaration(Class(obo:CHEBI_113451))
 Declaration(Class(obo:CHEBI_113455))
@@ -296,6 +306,7 @@ Declaration(Class(obo:CHEBI_25710))
 Declaration(Class(obo:CHEBI_25741))
 Declaration(Class(obo:CHEBI_25806))
 Declaration(Class(obo:CHEBI_25807))
+Declaration(Class(obo:CHEBI_25810))
 Declaration(Class(obo:CHEBI_25830))
 Declaration(Class(obo:CHEBI_25835))
 Declaration(Class(obo:CHEBI_25883))
@@ -518,6 +529,7 @@ Declaration(Class(obo:CHEBI_33457))
 Declaration(Class(obo:CHEBI_33484))
 Declaration(Class(obo:CHEBI_33497))
 Declaration(Class(obo:CHEBI_33521))
+Declaration(Class(obo:CHEBI_33552))
 Declaration(Class(obo:CHEBI_33559))
 Declaration(Class(obo:CHEBI_33560))
 Declaration(Class(obo:CHEBI_33561))
@@ -544,8 +556,10 @@ Declaration(Class(obo:CHEBI_33636))
 Declaration(Class(obo:CHEBI_33640))
 Declaration(Class(obo:CHEBI_33653))
 Declaration(Class(obo:CHEBI_33655))
+Declaration(Class(obo:CHEBI_33658))
 Declaration(Class(obo:CHEBI_33659))
 Declaration(Class(obo:CHEBI_33661))
+Declaration(Class(obo:CHEBI_33663))
 Declaration(Class(obo:CHEBI_33670))
 Declaration(Class(obo:CHEBI_33671))
 Declaration(Class(obo:CHEBI_33672))
@@ -575,6 +589,7 @@ Declaration(Class(obo:CHEBI_33833))
 Declaration(Class(obo:CHEBI_33836))
 Declaration(Class(obo:CHEBI_33837))
 Declaration(Class(obo:CHEBI_33839))
+Declaration(Class(obo:CHEBI_33847))
 Declaration(Class(obo:CHEBI_33853))
 Declaration(Class(obo:CHEBI_33854))
 Declaration(Class(obo:CHEBI_33855))
@@ -638,6 +653,7 @@ Declaration(Class(obo:CHEBI_35618))
 Declaration(Class(obo:CHEBI_35681))
 Declaration(Class(obo:CHEBI_35692))
 Declaration(Class(obo:CHEBI_35701))
+Declaration(Class(obo:CHEBI_35719))
 Declaration(Class(obo:CHEBI_35724))
 Declaration(Class(obo:CHEBI_35741))
 Declaration(Class(obo:CHEBI_35748))
@@ -744,9 +760,12 @@ Declaration(Class(obo:CHEBI_38697))
 Declaration(Class(obo:CHEBI_38700))
 Declaration(Class(obo:CHEBI_38702))
 Declaration(Class(obo:CHEBI_38739))
+Declaration(Class(obo:CHEBI_38778))
+Declaration(Class(obo:CHEBI_38779))
 Declaration(Class(obo:CHEBI_38835))
 Declaration(Class(obo:CHEBI_38889))
 Declaration(Class(obo:CHEBI_38925))
+Declaration(Class(obo:CHEBI_38976))
 Declaration(Class(obo:CHEBI_39022))
 Declaration(Class(obo:CHEBI_39024))
 Declaration(Class(obo:CHEBI_39025))
@@ -794,6 +813,7 @@ Declaration(Class(obo:CHEBI_48299))
 Declaration(Class(obo:CHEBI_48343))
 Declaration(Class(obo:CHEBI_48408))
 Declaration(Class(obo:CHEBI_48730))
+Declaration(Class(obo:CHEBI_48847))
 Declaration(Class(obo:CHEBI_48857))
 Declaration(Class(obo:CHEBI_48901))
 Declaration(Class(obo:CHEBI_49105))
@@ -815,6 +835,7 @@ Declaration(Class(obo:CHEBI_50967))
 Declaration(Class(obo:CHEBI_51026))
 Declaration(Class(obo:CHEBI_51031))
 Declaration(Class(obo:CHEBI_51069))
+Declaration(Class(obo:CHEBI_51081))
 Declaration(Class(obo:CHEBI_51082))
 Declaration(Class(obo:CHEBI_51084))
 Declaration(Class(obo:CHEBI_51086))
@@ -838,6 +859,7 @@ Declaration(Class(obo:CHEBI_52625))
 Declaration(Class(obo:CHEBI_52632))
 Declaration(Class(obo:CHEBI_52634))
 Declaration(Class(obo:CHEBI_52763))
+Declaration(Class(obo:CHEBI_52782))
 Declaration(Class(obo:CHEBI_5291))
 Declaration(Class(obo:CHEBI_53225))
 Declaration(Class(obo:CHEBI_53226))
@@ -867,6 +889,7 @@ Declaration(Class(obo:CHEBI_5653))
 Declaration(Class(obo:CHEBI_5686))
 Declaration(Class(obo:CHEBI_59202))
 Declaration(Class(obo:CHEBI_59230))
+Declaration(Class(obo:CHEBI_59238))
 Declaration(Class(obo:CHEBI_59549))
 Declaration(Class(obo:CHEBI_59554))
 Declaration(Class(obo:CHEBI_59601))
@@ -880,10 +903,12 @@ Declaration(Class(obo:CHEBI_59780))
 Declaration(Class(obo:CHEBI_59999))
 Declaration(Class(obo:CHEBI_60004))
 Declaration(Class(obo:CHEBI_60027))
+Declaration(Class(obo:CHEBI_60911))
 Declaration(Class(obo:CHEBI_60926))
 Declaration(Class(obo:CHEBI_60979))
 Declaration(Class(obo:CHEBI_61120))
 Declaration(Class(obo:CHEBI_61266))
+Declaration(Class(obo:CHEBI_61355))
 Declaration(Class(obo:CHEBI_61458))
 Declaration(Class(obo:CHEBI_61459))
 Declaration(Class(obo:CHEBI_61466))
@@ -928,6 +953,7 @@ Declaration(Class(obo:CHEBI_71298))
 Declaration(Class(obo:CHEBI_71629))
 Declaration(Class(obo:CHEBI_71644))
 Declaration(Class(obo:CHEBI_71645))
+Declaration(Class(obo:CHEBI_71968))
 Declaration(Class(obo:CHEBI_72010))
 Declaration(Class(obo:CHEBI_72544))
 Declaration(Class(obo:CHEBI_72600))
@@ -1018,6 +1044,7 @@ AnnotationAssertion(rdfs:label obo:IAO_0000412 "imported from"@en)
 AnnotationAssertion(obo:IAO_0000412 obo:CHEBI_10607 obo:chebi.owl)
 AnnotationAssertion(rdfs:label obo:CHEBI_10607 "n-propyl gallate")
 SubClassOf(obo:CHEBI_10607 obo:CHEBI_27115)
+SubClassOf(obo:CHEBI_10607 obo:CHEBI_79323)
 
 # Class: obo:CHEBI_113451 (sodium ascorbate)
 
@@ -1032,6 +1059,7 @@ SubClassOf(obo:CHEBI_113451 obo:CHEBI_38700)
 AnnotationAssertion(obo:IAO_0000115 obo:CHEBI_113455 "An organic sodium salt resulting from the replacement of the proton from the carboxy group of benzoic acid by a sodium ion.")
 AnnotationAssertion(obo:IAO_0000412 obo:CHEBI_113455 obo:chebi.owl)
 AnnotationAssertion(rdfs:label obo:CHEBI_113455 "sodium benzoate")
+SubClassOf(obo:CHEBI_113455 obo:CHEBI_22723)
 SubClassOf(obo:CHEBI_113455 obo:CHEBI_38700)
 
 # Class: obo:CHEBI_114786 (sodium disulfite)
@@ -1062,6 +1090,7 @@ AnnotationAssertion(obo:IAO_0000115 obo:CHEBI_132106 "An organic sodium salt com
 AnnotationAssertion(obo:IAO_0000412 obo:CHEBI_132106 obo:chebi.owl)
 AnnotationAssertion(rdfs:label obo:CHEBI_132106 "sodium propionate")
 SubClassOf(obo:CHEBI_132106 obo:CHEBI_38700)
+SubClassOf(obo:CHEBI_132106 obo:CHEBI_50860)
 
 # Class: obo:CHEBI_132124 (1,4-benzoquinones)
 
@@ -1092,6 +1121,7 @@ AnnotationAssertion(obo:IAO_0000115 obo:CHEBI_133354 "An aluminosilicate mineral
 AnnotationAssertion(obo:IAO_0000412 obo:CHEBI_133354 obo:chebi.owl)
 AnnotationAssertion(rdfs:label obo:CHEBI_133354 "bentonite")
 SubClassOf(obo:CHEBI_133354 obo:CHEBI_48730)
+SubClassOf(obo:CHEBI_133354 obo:CHEBI_50860)
 SubClassOf(obo:CHEBI_133354 obo:CHEBI_60004)
 
 # Class: obo:CHEBI_134179 (volatile organic compound)
@@ -1275,6 +1305,7 @@ AnnotationAssertion(obo:IAO_0000412 obo:CHEBI_15864 obo:chebi.owl)
 AnnotationAssertion(rdfs:label obo:CHEBI_15864 "luteolin")
 SubClassOf(obo:CHEBI_15864 obo:CHEBI_27741)
 SubClassOf(obo:CHEBI_15864 obo:CHEBI_38684)
+SubClassOf(obo:CHEBI_15864 obo:CHEBI_71968)
 
 # Class: obo:CHEBI_15889 (sterol)
 
@@ -1304,6 +1335,7 @@ SubClassOf(obo:CHEBI_15940 obo:CHEBI_26420)
 AnnotationAssertion(obo:IAO_0000115 obo:CHEBI_15948 "An acyclic carotene commonly obtained from tomatoes and other red fruits.")
 AnnotationAssertion(obo:IAO_0000412 obo:CHEBI_15948 obo:chebi.owl)
 AnnotationAssertion(rdfs:label obo:CHEBI_15948 "lycopene")
+SubClassOf(obo:CHEBI_15948 obo:CHEBI_23044)
 SubClassOf(obo:CHEBI_15948 obo:CHEBI_35162)
 
 # Class: obo:CHEBI_15956 (biotin)
@@ -1481,6 +1513,7 @@ AnnotationAssertion(obo:IAO_0000115 obo:CHEBI_17151 "A pentitol (five-carbon sug
 AnnotationAssertion(obo:IAO_0000412 obo:CHEBI_17151 obo:chebi.owl)
 AnnotationAssertion(rdfs:label obo:CHEBI_17151 "xylitol")
 SubClassOf(obo:CHEBI_17151 obo:CHEBI_25899)
+SubClassOf(obo:CHEBI_17151 obo:CHEBI_35381)
 
 # Class: obo:CHEBI_17154 (nicotinamide)
 
@@ -1490,6 +1523,7 @@ AnnotationAssertion(rdfs:label obo:CHEBI_17154 "nicotinamide")
 SubClassOf(obo:CHEBI_17154 obo:CHEBI_176839)
 SubClassOf(obo:CHEBI_17154 obo:CHEBI_25529)
 SubClassOf(obo:CHEBI_17154 obo:CHEBI_26416)
+SubClassOf(obo:CHEBI_17154 obo:CHEBI_26420)
 
 # Class: obo:CHEBI_17188 (nucleoside 5'-monophosphate)
 
@@ -1778,6 +1812,7 @@ AnnotationAssertion(obo:IAO_0000115 obo:CHEBI_17992 "A glycosyl glycoside formed
 AnnotationAssertion(obo:IAO_0000412 obo:CHEBI_17992 obo:chebi.owl)
 AnnotationAssertion(rdfs:label obo:CHEBI_17992 "sucrose")
 SubClassOf(obo:CHEBI_17992 obo:CHEBI_24407)
+SubClassOf(obo:CHEBI_17992 obo:CHEBI_59777)
 
 # Class: obo:CHEBI_18012 (fumaric acid)
 
@@ -1930,6 +1965,7 @@ SubClassOf(obo:CHEBI_18388 obo:CHEBI_27116)
 
 AnnotationAssertion(obo:IAO_0000412 obo:CHEBI_18422 obo:chebi.owl)
 AnnotationAssertion(rdfs:label obo:CHEBI_18422 "sulfur dioxide")
+SubClassOf(obo:CHEBI_18422 obo:CHEBI_36963)
 SubClassOf(obo:CHEBI_18422 obo:CHEBI_48154)
 
 # Class: obo:CHEBI_189840 (dicarboxylic fatty acid)
@@ -1958,6 +1994,7 @@ SubClassOf(obo:CHEBI_190297 obo:CHEBI_24839)
 
 # Class: obo:CHEBI_190299 (organic magnesium salt)
 
+AnnotationAssertion(obo:IAO_0000115 obo:CHEBI_190299 "A magnesium salt with C-H bonds")
 AnnotationAssertion(obo:IAO_0000412 obo:CHEBI_190299 obo:chebi.owl)
 AnnotationAssertion(rdfs:label obo:CHEBI_190299 "organic magnesium salt")
 SubClassOf(obo:CHEBI_190299 obo:CHEBI_167164)
@@ -2506,6 +2543,7 @@ SubClassOf(obo:CHEBI_24407 obo:CHEBI_36233)
 AnnotationAssertion(obo:IAO_0000115 obo:CHEBI_24431 "A chemical entity is a physical entity of interest in chemistry including molecular entities, parts thereof, and chemical substances.")
 AnnotationAssertion(obo:IAO_0000412 obo:CHEBI_24431 obo:chebi.owl)
 AnnotationAssertion(rdfs:label obo:CHEBI_24431 "chemical entity")
+SubClassOf(obo:CHEBI_24431 obo:BFO_0000040)
 
 # Class: obo:CHEBI_24432 (biological role)
 
@@ -2804,6 +2842,7 @@ SubClassOf(obo:CHEBI_25048 obo:CHEBI_59549)
 AnnotationAssertion(obo:IAO_0000115 obo:CHEBI_2509 "A complex mixture of polysaccharides extracted from species of red algae. Its two main components are agarose and agaropectin. Agarose is the component responsible for the high-strength gelling properties of agar, while agaropectin provides the viscous properties.")
 AnnotationAssertion(obo:IAO_0000412 obo:CHEBI_2509 obo:chebi.owl)
 AnnotationAssertion(rdfs:label obo:CHEBI_2509 "agar")
+SubClassOf(obo:CHEBI_2509 obo:CHEBI_50860)
 SubClassOf(obo:CHEBI_2509 obo:CHEBI_60004)
 
 # Class: obo:CHEBI_25094 (lysine)
@@ -2835,6 +2874,7 @@ SubClassOf(obo:CHEBI_25106 obo:CHEBI_63944)
 AnnotationAssertion(obo:IAO_0000412 obo:CHEBI_25107 obo:chebi.owl)
 AnnotationAssertion(rdfs:label obo:CHEBI_25107 "magnesium atom")
 SubClassOf(obo:CHEBI_25107 obo:CHEBI_22313)
+SubClassOf(obo:CHEBI_25107 obo:CHEBI_50860)
 
 # Class: obo:CHEBI_25108 (magnesium molecular entity)
 
@@ -3102,6 +3142,12 @@ AnnotationAssertion(obo:IAO_0000412 obo:CHEBI_25807 obo:chebi.owl)
 AnnotationAssertion(rdfs:label obo:CHEBI_25807 "organooxygen heterocyclic antibiotic")
 SubClassOf(obo:CHEBI_25807 obo:CHEBI_24531)
 
+# Class: obo:CHEBI_25810 (oxopurine)
+
+AnnotationAssertion(obo:IAO_0000412 obo:CHEBI_25810 obo:chebi.owl)
+AnnotationAssertion(rdfs:label obo:CHEBI_25810 "oxopurine")
+SubClassOf(obo:CHEBI_25810 obo:CHEBI_26401)
+
 # Class: obo:CHEBI_25830 (p-quinones)
 
 AnnotationAssertion(obo:IAO_0000115 obo:CHEBI_25830 "A quinone in which the two oxo groups of the quinone are located <em>para</em> to each other on the 6-membered quinonoid ring.")
@@ -3265,6 +3311,7 @@ SubClassOf(obo:CHEBI_26214 obo:CHEBI_36309)
 AnnotationAssertion(obo:IAO_0000412 obo:CHEBI_26216 obo:chebi.owl)
 AnnotationAssertion(rdfs:label obo:CHEBI_26216 "potassium atom")
 SubClassOf(obo:CHEBI_26216 obo:CHEBI_22314)
+SubClassOf(obo:CHEBI_26216 obo:CHEBI_50860)
 
 # Class: obo:CHEBI_26217 (potassium molecular entity)
 
@@ -3468,6 +3515,7 @@ AnnotationAssertion(obo:IAO_0000412 obo:CHEBI_26710 obo:chebi.owl)
 AnnotationAssertion(rdfs:label obo:CHEBI_26710 "sodium chloride")
 SubClassOf(obo:CHEBI_26710 obo:CHEBI_36093)
 SubClassOf(obo:CHEBI_26710 obo:CHEBI_38702)
+SubClassOf(obo:CHEBI_26710 obo:CHEBI_50860)
 
 # Class: obo:CHEBI_26712 (sodium molecular entity)
 
@@ -3771,6 +3819,7 @@ AnnotationAssertion(obo:IAO_0000412 obo:CHEBI_27568 obo:chebi.owl)
 AnnotationAssertion(rdfs:label obo:CHEBI_27568 "selenium atom")
 SubClassOf(obo:CHEBI_27568 obo:CHEBI_25585)
 SubClassOf(obo:CHEBI_27568 obo:CHEBI_33303)
+SubClassOf(obo:CHEBI_27568 obo:CHEBI_50860)
 
 # Class: obo:CHEBI_27570 (histidine)
 
@@ -3787,8 +3836,8 @@ SubClassOf(obo:CHEBI_27570 obo:CHEBI_33856)
 AnnotationAssertion(obo:IAO_0000115 obo:CHEBI_27617 "A spiroketal, monensin A is the major component of monensin, a mixture of antibiotic substances produced by <em>Streptomyces cinnamonensis</em>. An antiprotozoal, it is used as the sodium salt as a feed additive for the prevention of coccidiosis in poultry and as a growth promoter in cattle.")
 AnnotationAssertion(obo:IAO_0000412 obo:CHEBI_27617 obo:chebi.owl)
 AnnotationAssertion(rdfs:label obo:CHEBI_27617 "monensin A")
-SubClassOf(obo:CHEBI_27617 obo:CHEBI_25384)
 SubClassOf(obo:CHEBI_27617 obo:CHEBI_26179)
+SubClassOf(obo:CHEBI_27617 obo:CHEBI_48847)
 SubClassOf(obo:CHEBI_27617 obo:CHEBI_59780)
 SubClassOf(obo:CHEBI_27617 obo:CHEBI_72600)
 
@@ -3797,6 +3846,7 @@ SubClassOf(obo:CHEBI_27617 obo:CHEBI_72600)
 AnnotationAssertion(obo:IAO_0000115 obo:CHEBI_27732 "A trimethylxanthine in which the three methyl groups are located at positions 1, 3, and 7. A purine alkaloid that occurs naturally in tea and coffee.")
 AnnotationAssertion(obo:IAO_0000412 obo:CHEBI_27732 obo:chebi.owl)
 AnnotationAssertion(rdfs:label obo:CHEBI_27732 "caffeine")
+SubClassOf(obo:CHEBI_27732 obo:CHEBI_25810)
 SubClassOf(obo:CHEBI_27732 obo:CHEBI_27134)
 
 # Class: obo:CHEBI_27741 (3'-hydroxyflavonoid)
@@ -3811,6 +3861,7 @@ SubClassOf(obo:CHEBI_27741 obo:CHEBI_24698)
 AnnotationAssertion(obo:IAO_0000412 obo:CHEBI_27786 obo:chebi.owl)
 AnnotationAssertion(rdfs:label obo:CHEBI_27786 "hydroxocobalamin")
 SubClassOf(obo:CHEBI_27786 obo:CHEBI_23334)
+SubClassOf(obo:CHEBI_27786 obo:CHEBI_60911)
 
 # Class: obo:CHEBI_27881 (resveratrol)
 
@@ -3982,6 +4033,7 @@ AnnotationAssertion(obo:IAO_0000115 obo:CHEBI_28946 "A dimethylxanthine having t
 AnnotationAssertion(obo:IAO_0000412 obo:CHEBI_28946 obo:chebi.owl)
 AnnotationAssertion(rdfs:label obo:CHEBI_28946 "theobromine")
 SubClassOf(obo:CHEBI_28946 obo:CHEBI_23818)
+SubClassOf(obo:CHEBI_28946 obo:CHEBI_25810)
 
 # Class: obo:CHEBI_28963 (amino sugar)
 
@@ -4088,6 +4140,7 @@ AnnotationAssertion(obo:IAO_0000115 obo:CHEBI_30563 "A silicon oxide made up of 
 AnnotationAssertion(obo:IAO_0000412 obo:CHEBI_30563 obo:chebi.owl)
 AnnotationAssertion(rdfs:label obo:CHEBI_30563 "silicon dioxide")
 SubClassOf(obo:CHEBI_30563 obo:CHEBI_33327)
+SubClassOf(obo:CHEBI_30563 obo:CHEBI_50860)
 
 # Class: obo:CHEBI_30618 (hydroxypropyl methylcellulose)
 
@@ -4132,6 +4185,7 @@ AnnotationAssertion(obo:IAO_0000412 obo:CHEBI_30832 obo:chebi.owl)
 AnnotationAssertion(rdfs:label obo:CHEBI_30832 "adipic acid")
 SubClassOf(obo:CHEBI_30832 obo:CHEBI_189840)
 SubClassOf(obo:CHEBI_30832 obo:CHEBI_28383)
+SubClassOf(obo:CHEBI_30832 obo:CHEBI_59554)
 
 # Class: obo:CHEBI_30879 (alcohol)
 
@@ -4167,12 +4221,16 @@ SubClassOf(obo:CHEBI_31206 obo:CHEBI_47704)
 AnnotationAssertion(obo:IAO_0000115 obo:CHEBI_31344 "A member of the class of calcium oxides of calcium and oxygen in a 1:1 ratio.")
 AnnotationAssertion(obo:IAO_0000412 obo:CHEBI_31344 obo:chebi.owl)
 AnnotationAssertion(rdfs:label obo:CHEBI_31344 "calcium oxide")
+SubClassOf(obo:CHEBI_31344 obo:CHEBI_35156)
 SubClassOf(obo:CHEBI_31344 obo:CHEBI_48232)
+SubClassOf(obo:CHEBI_31344 obo:CHEBI_50860)
 
 # Class: obo:CHEBI_31345 (Calcium pantothenate)
 
 AnnotationAssertion(obo:IAO_0000412 obo:CHEBI_31345 obo:chebi.owl)
 AnnotationAssertion(rdfs:label obo:CHEBI_31345 "Calcium pantothenate")
+SubClassOf(obo:CHEBI_31345 obo:CHEBI_35352)
+SubClassOf(obo:CHEBI_31345 obo:CHEBI_36963)
 SubClassOf(obo:CHEBI_31345 obo:CHEBI_60027)
 
 # Class: obo:CHEBI_31346 (calcium sulfate)
@@ -4181,6 +4239,8 @@ AnnotationAssertion(obo:IAO_0000412 obo:CHEBI_31346 obo:chebi.owl)
 AnnotationAssertion(rdfs:label obo:CHEBI_31346 "calcium sulfate")
 SubClassOf(obo:CHEBI_31346 obo:CHEBI_190295)
 SubClassOf(obo:CHEBI_31346 obo:CHEBI_35156)
+SubClassOf(obo:CHEBI_31346 obo:CHEBI_37826)
+SubClassOf(obo:CHEBI_31346 obo:CHEBI_50860)
 
 # Class: obo:CHEBI_3136 (bixin)
 
@@ -4226,17 +4286,21 @@ AnnotationAssertion(obo:IAO_0000115 obo:CHEBI_32029 "A potassium salt comprising
 AnnotationAssertion(obo:IAO_0000412 obo:CHEBI_32029 obo:chebi.owl)
 AnnotationAssertion(rdfs:label obo:CHEBI_32029 "potassium acetate")
 SubClassOf(obo:CHEBI_32029 obo:CHEBI_26218)
+SubClassOf(obo:CHEBI_32029 obo:CHEBI_50860)
+SubClassOf(obo:CHEBI_32029 obo:CHEBI_59230)
 
 # Class: obo:CHEBI_32032 (Potassium gluconate)
 
 AnnotationAssertion(obo:IAO_0000412 obo:CHEBI_32032 obo:chebi.owl)
 AnnotationAssertion(rdfs:label obo:CHEBI_32032 "Potassium gluconate")
+SubClassOf(obo:CHEBI_32032 obo:CHEBI_36586)
 SubClassOf(obo:CHEBI_32032 obo:CHEBI_78618)
 
 # Class: obo:CHEBI_32035 (potassium hydroxide)
 
 AnnotationAssertion(obo:IAO_0000412 obo:CHEBI_32035 obo:chebi.owl)
 AnnotationAssertion(rdfs:label obo:CHEBI_32035 "potassium hydroxide")
+SubClassOf(obo:CHEBI_32035 obo:CHEBI_25696)
 SubClassOf(obo:CHEBI_32035 obo:CHEBI_33978)
 
 # Class: obo:CHEBI_32036 (potassium sulfate)
@@ -4244,6 +4308,8 @@ SubClassOf(obo:CHEBI_32035 obo:CHEBI_33978)
 AnnotationAssertion(obo:IAO_0000412 obo:CHEBI_32036 obo:chebi.owl)
 AnnotationAssertion(rdfs:label obo:CHEBI_32036 "potassium sulfate")
 SubClassOf(obo:CHEBI_32036 obo:CHEBI_190303)
+SubClassOf(obo:CHEBI_32036 obo:CHEBI_37826)
+SubClassOf(obo:CHEBI_32036 obo:CHEBI_50860)
 
 # Class: obo:CHEBI_32063 (propylparaben)
 
@@ -4256,6 +4322,7 @@ SubClassOf(obo:CHEBI_32063 obo:CHEBI_85122)
 
 AnnotationAssertion(obo:IAO_0000412 obo:CHEBI_32095 obo:chebi.owl)
 AnnotationAssertion(rdfs:label obo:CHEBI_32095 "retinyl acetate")
+SubClassOf(obo:CHEBI_32095 obo:CHEBI_26537)
 SubClassOf(obo:CHEBI_32095 obo:CHEBI_47622)
 
 # Class: obo:CHEBI_32111 (saccharin)
@@ -4270,12 +4337,13 @@ SubClassOf(obo:CHEBI_32111 obo:CHEBI_90852)
 
 AnnotationAssertion(obo:IAO_0000412 obo:CHEBI_32112 obo:chebi.owl)
 AnnotationAssertion(rdfs:label obo:CHEBI_32112 "Saccharin sodium")
-SubClassOf(obo:CHEBI_32112 obo:CHEBI_50860)
+SubClassOf(obo:CHEBI_32112 obo:CHEBI_37947)
 
 # Class: obo:CHEBI_32139 (sodium hydrogencarbonate)
 
 AnnotationAssertion(obo:IAO_0000412 obo:CHEBI_32139 obo:chebi.owl)
 AnnotationAssertion(rdfs:label obo:CHEBI_32139 "sodium hydrogencarbonate")
+SubClassOf(obo:CHEBI_32139 obo:CHEBI_36963)
 SubClassOf(obo:CHEBI_32139 obo:CHEBI_38700)
 SubClassOf(obo:CHEBI_32139 obo:CHEBI_64708)
 
@@ -4283,13 +4351,16 @@ SubClassOf(obo:CHEBI_32139 obo:CHEBI_64708)
 
 AnnotationAssertion(obo:IAO_0000412 obo:CHEBI_32145 obo:chebi.owl)
 AnnotationAssertion(rdfs:label obo:CHEBI_32145 "sodium hydroxide")
+SubClassOf(obo:CHEBI_32145 obo:CHEBI_25696)
 SubClassOf(obo:CHEBI_32145 obo:CHEBI_33978)
 
 # Class: obo:CHEBI_32149 (sodium sulfate)
 
 AnnotationAssertion(obo:IAO_0000412 obo:CHEBI_32149 obo:chebi.owl)
 AnnotationAssertion(rdfs:label obo:CHEBI_32149 "sodium sulfate")
+SubClassOf(obo:CHEBI_32149 obo:CHEBI_37826)
 SubClassOf(obo:CHEBI_32149 obo:CHEBI_38702)
+SubClassOf(obo:CHEBI_32149 obo:CHEBI_50860)
 
 # Class: obo:CHEBI_32159 (sucralose)
 
@@ -4297,6 +4368,7 @@ AnnotationAssertion(obo:IAO_0000115 obo:CHEBI_32159 "A disaccharide derivative c
 AnnotationAssertion(obo:IAO_0000412 obo:CHEBI_32159 obo:chebi.owl)
 AnnotationAssertion(rdfs:label obo:CHEBI_32159 "sucralose")
 SubClassOf(obo:CHEBI_32159 obo:CHEBI_36683)
+SubClassOf(obo:CHEBI_32159 obo:CHEBI_59777)
 SubClassOf(obo:CHEBI_32159 obo:CHEBI_63353)
 
 # Class: obo:CHEBI_32178 (Talc)
@@ -4311,6 +4383,7 @@ AnnotationAssertion(obo:IAO_0000115 obo:CHEBI_32234 "A titanium oxide with the f
 AnnotationAssertion(obo:IAO_0000412 obo:CHEBI_32234 obo:chebi.owl)
 AnnotationAssertion(rdfs:label obo:CHEBI_32234 "titanium dioxide")
 SubClassOf(obo:CHEBI_32234 obo:CHEBI_134438)
+SubClassOf(obo:CHEBI_32234 obo:CHEBI_50860)
 
 # Class: obo:CHEBI_32321 (alpha-Tocopherol acetate)
 
@@ -4325,6 +4398,7 @@ AnnotationAssertion(obo:IAO_0000412 obo:CHEBI_32588 obo:chebi.owl)
 AnnotationAssertion(rdfs:label obo:CHEBI_32588 "potassium chloride")
 SubClassOf(obo:CHEBI_32588 obo:CHEBI_190303)
 SubClassOf(obo:CHEBI_32588 obo:CHEBI_36093)
+SubClassOf(obo:CHEBI_32588 obo:CHEBI_50860)
 
 # Class: obo:CHEBI_32879 (propane)
 
@@ -4338,6 +4412,8 @@ SubClassOf(obo:CHEBI_32879 obo:CHEBI_18310)
 AnnotationAssertion(obo:IAO_0000412 obo:CHEBI_32954 obo:chebi.owl)
 AnnotationAssertion(rdfs:label obo:CHEBI_32954 "sodium acetate")
 SubClassOf(obo:CHEBI_32954 obo:CHEBI_38700)
+SubClassOf(obo:CHEBI_32954 obo:CHEBI_50860)
+SubClassOf(obo:CHEBI_32954 obo:CHEBI_59230)
 
 # Class: obo:CHEBI_32955 (epoxide)
 
@@ -4359,6 +4435,7 @@ AnnotationAssertion(obo:IAO_0000115 obo:CHEBI_3309 "The calcium salt of <small>D
 AnnotationAssertion(obo:IAO_0000412 obo:CHEBI_3309 obo:chebi.owl)
 AnnotationAssertion(rdfs:label obo:CHEBI_3309 "calcium gluconate")
 SubClassOf(obo:CHEBI_3309 obo:CHEBI_35156)
+SubClassOf(obo:CHEBI_3309 obo:CHEBI_36586)
 
 # Class: obo:CHEBI_3310 (calcium acetate)
 
@@ -4366,6 +4443,7 @@ AnnotationAssertion(obo:IAO_0000115 obo:CHEBI_3310 "The calcium salt of acetic a
 AnnotationAssertion(obo:IAO_0000412 obo:CHEBI_3310 obo:chebi.owl)
 AnnotationAssertion(rdfs:label obo:CHEBI_3310 "calcium acetate")
 SubClassOf(obo:CHEBI_3310 obo:CHEBI_35156)
+SubClassOf(obo:CHEBI_3310 obo:CHEBI_35692)
 
 # Class: obo:CHEBI_3311 (calcium carbonate)
 
@@ -4390,6 +4468,7 @@ AnnotationAssertion(rdfs:label obo:CHEBI_3312 "calcium dichloride")
 SubClassOf(obo:CHEBI_3312 obo:CHEBI_190295)
 SubClassOf(obo:CHEBI_3312 obo:CHEBI_35156)
 SubClassOf(obo:CHEBI_3312 obo:CHEBI_36093)
+SubClassOf(obo:CHEBI_3312 obo:CHEBI_50860)
 
 # Class: obo:CHEBI_33145 (boron oxoacid)
 
@@ -4679,6 +4758,12 @@ AnnotationAssertion(obo:IAO_0000412 obo:CHEBI_33521 obo:chebi.owl)
 AnnotationAssertion(rdfs:label obo:CHEBI_33521 "metal atom")
 SubClassOf(obo:CHEBI_33521 obo:CHEBI_33250)
 
+# Class: obo:CHEBI_33552 (sulfonic acid derivative)
+
+AnnotationAssertion(obo:IAO_0000412 obo:CHEBI_33552 obo:chebi.owl)
+AnnotationAssertion(rdfs:label obo:CHEBI_33552 "sulfonic acid derivative")
+SubClassOf(obo:CHEBI_33552 obo:CHEBI_33424)
+
 # Class: obo:CHEBI_33559 (s-block element atom)
 
 AnnotationAssertion(obo:IAO_0000412 obo:CHEBI_33559 obo:chebi.owl)
@@ -4858,6 +4943,14 @@ AnnotationAssertion(obo:IAO_0000412 obo:CHEBI_33655 obo:chebi.owl)
 AnnotationAssertion(rdfs:label obo:CHEBI_33655 "aromatic compound")
 SubClassOf(obo:CHEBI_33655 obo:CHEBI_33595)
 
+# Class: obo:CHEBI_33658 (arene)
+
+AnnotationAssertion(obo:IAO_0000115 obo:CHEBI_33658 "Any monocyclic or polycyclic aromatic hydrocarbon.")
+AnnotationAssertion(obo:IAO_0000412 obo:CHEBI_33658 obo:chebi.owl)
+AnnotationAssertion(rdfs:label obo:CHEBI_33658 "arene")
+SubClassOf(obo:CHEBI_33658 obo:CHEBI_33659)
+SubClassOf(obo:CHEBI_33658 obo:CHEBI_33663)
+
 # Class: obo:CHEBI_33659 (organic aromatic compound)
 
 AnnotationAssertion(obo:IAO_0000412 obo:CHEBI_33659 obo:chebi.owl)
@@ -4870,6 +4963,13 @@ SubClassOf(obo:CHEBI_33659 obo:CHEBI_33832)
 AnnotationAssertion(obo:IAO_0000412 obo:CHEBI_33661 obo:chebi.owl)
 AnnotationAssertion(rdfs:label obo:CHEBI_33661 "monocyclic compound")
 SubClassOf(obo:CHEBI_33661 obo:CHEBI_33595)
+
+# Class: obo:CHEBI_33663 (cyclic hydrocarbon)
+
+AnnotationAssertion(obo:IAO_0000412 obo:CHEBI_33663 obo:chebi.owl)
+AnnotationAssertion(rdfs:label obo:CHEBI_33663 "cyclic hydrocarbon")
+SubClassOf(obo:CHEBI_33663 obo:CHEBI_24632)
+SubClassOf(obo:CHEBI_33663 obo:CHEBI_33598)
 
 # Class: obo:CHEBI_33670 (heteromonocyclic compound)
 
@@ -5074,6 +5174,13 @@ AnnotationAssertion(obo:IAO_0000412 obo:CHEBI_33839 obo:chebi.owl)
 AnnotationAssertion(rdfs:label obo:CHEBI_33839 "macromolecule")
 SubClassOf(obo:CHEBI_33839 obo:CHEBI_36357)
 
+# Class: obo:CHEBI_33847 (monocyclic arene)
+
+AnnotationAssertion(obo:IAO_0000115 obo:CHEBI_33847 "A monocyclic aromatic hydrocarbon.")
+AnnotationAssertion(obo:IAO_0000412 obo:CHEBI_33847 obo:chebi.owl)
+AnnotationAssertion(rdfs:label obo:CHEBI_33847 "monocyclic arene")
+SubClassOf(obo:CHEBI_33847 obo:CHEBI_33658)
+
 # Class: obo:CHEBI_33853 (phenols)
 
 AnnotationAssertion(obo:IAO_0000115 obo:CHEBI_33853 "Organic aromatic compounds having one or more hydroxy groups attached to a benzene or other arene ring.")
@@ -5243,6 +5350,7 @@ AnnotationAssertion(obo:IAO_0000115 obo:CHEBI_34247 "A member of the class of  p
 AnnotationAssertion(obo:IAO_0000412 obo:CHEBI_34247 obo:chebi.owl)
 AnnotationAssertion(rdfs:label obo:CHEBI_34247 "2,6-di-tert-butyl-4-methylphenol")
 SubClassOf(obo:CHEBI_34247 obo:CHEBI_33853)
+SubClassOf(obo:CHEBI_34247 obo:CHEBI_38976)
 
 # Class: obo:CHEBI_3435 (carrageenan)
 
@@ -5262,6 +5370,7 @@ SubClassOf(obo:CHEBI_34533 obo:CHEBI_50860)
 AnnotationAssertion(obo:IAO_0000412 obo:CHEBI_34683 obo:chebi.owl)
 AnnotationAssertion(rdfs:label obo:CHEBI_34683 "disodium hydrogenphosphate")
 SubClassOf(obo:CHEBI_34683 obo:CHEBI_37586)
+SubClassOf(obo:CHEBI_34683 obo:CHEBI_50860)
 
 # Class: obo:CHEBI_35131 (aldose phosphate)
 
@@ -5518,6 +5627,13 @@ AnnotationAssertion(obo:IAO_0000115 obo:CHEBI_35701 "A compound formally derived
 AnnotationAssertion(obo:IAO_0000412 obo:CHEBI_35701 obo:chebi.owl)
 AnnotationAssertion(rdfs:label obo:CHEBI_35701 "ester")
 SubClassOf(obo:CHEBI_35701 obo:CHEBI_36963)
+
+# Class: obo:CHEBI_35719 (sulfamic acids)
+
+AnnotationAssertion(obo:IAO_0000115 obo:CHEBI_35719 "H<small><sub>2</sub></small>NS(=O)<small><sub>2</sub></small>OH (sulfamic acid) and its <em>N</em>-hydrocarbyl derivatives.")
+AnnotationAssertion(obo:IAO_0000412 obo:CHEBI_35719 obo:chebi.owl)
+AnnotationAssertion(rdfs:label obo:CHEBI_35719 "sulfamic acids")
+SubClassOf(obo:CHEBI_35719 obo:CHEBI_33552)
 
 # Class: obo:CHEBI_35724 (carbohydrate sulfate)
 
@@ -5983,12 +6099,14 @@ SubClassOf(obo:CHEBI_37581 obo:CHEBI_25000)
 AnnotationAssertion(obo:IAO_0000412 obo:CHEBI_37583 obo:chebi.owl)
 AnnotationAssertion(rdfs:label obo:CHEBI_37583 "trisodium phosphate")
 SubClassOf(obo:CHEBI_37583 obo:CHEBI_37586)
+SubClassOf(obo:CHEBI_37583 obo:CHEBI_50860)
 
 # Class: obo:CHEBI_37585 (sodium dihydrogenphosphate)
 
 AnnotationAssertion(obo:IAO_0000412 obo:CHEBI_37585 obo:chebi.owl)
 AnnotationAssertion(rdfs:label obo:CHEBI_37585 "sodium dihydrogenphosphate")
 SubClassOf(obo:CHEBI_37585 obo:CHEBI_37586)
+SubClassOf(obo:CHEBI_37585 obo:CHEBI_50860)
 
 # Class: obo:CHEBI_37586 (sodium phosphate)
 
@@ -6277,6 +6395,19 @@ AnnotationAssertion(obo:IAO_0000412 obo:CHEBI_38739 obo:chebi.owl)
 AnnotationAssertion(rdfs:label obo:CHEBI_38739 "trihydroxyflavanone")
 SubClassOf(obo:CHEBI_38739 obo:CHEBI_24697)
 
+# Class: obo:CHEBI_38778 (triazinanes)
+
+AnnotationAssertion(obo:IAO_0000412 obo:CHEBI_38778 obo:chebi.owl)
+AnnotationAssertion(rdfs:label obo:CHEBI_38778 "triazinanes")
+SubClassOf(obo:CHEBI_38778 obo:CHEBI_25693)
+SubClassOf(obo:CHEBI_38778 obo:CHEBI_38101)
+
+# Class: obo:CHEBI_38779 (1,3,5-triazinanes)
+
+AnnotationAssertion(obo:IAO_0000412 obo:CHEBI_38779 obo:chebi.owl)
+AnnotationAssertion(rdfs:label obo:CHEBI_38779 "1,3,5-triazinanes")
+SubClassOf(obo:CHEBI_38779 obo:CHEBI_38778)
+
 # Class: obo:CHEBI_38835 (xanthenes)
 
 AnnotationAssertion(obo:IAO_0000412 obo:CHEBI_38835 obo:chebi.owl)
@@ -6295,6 +6426,14 @@ AnnotationAssertion(obo:IAO_0000412 obo:CHEBI_38925 obo:chebi.owl)
 AnnotationAssertion(rdfs:label obo:CHEBI_38925 "benzopteridine")
 SubClassOf(obo:CHEBI_38925 obo:CHEBI_26979)
 SubClassOf(obo:CHEBI_38925 obo:CHEBI_38101)
+
+# Class: obo:CHEBI_38976 (alkylbenzene)
+
+AnnotationAssertion(obo:IAO_0000115 obo:CHEBI_38976 "A  monocyclic arene that is benzene substituted with one or more alkyl groups.")
+AnnotationAssertion(obo:IAO_0000412 obo:CHEBI_38976 obo:chebi.owl)
+AnnotationAssertion(rdfs:label obo:CHEBI_38976 "alkylbenzene")
+SubClassOf(obo:CHEBI_38976 obo:CHEBI_22712)
+SubClassOf(obo:CHEBI_38976 obo:CHEBI_33847)
 
 # Class: obo:CHEBI_39022 (inclusion compound)
 
@@ -6632,6 +6771,14 @@ AnnotationAssertion(obo:IAO_0000412 obo:CHEBI_48730 obo:chebi.owl)
 AnnotationAssertion(rdfs:label obo:CHEBI_48730 "aluminosilicate mineral")
 SubClassOf(obo:CHEBI_48730 obo:CHEBI_46663)
 
+# Class: obo:CHEBI_48847 (heterocyclic fatty acid)
+
+AnnotationAssertion(obo:IAO_0000115 obo:CHEBI_48847 "Any fatty acid containing a ring composed of atoms including at least one heteroatom.")
+AnnotationAssertion(obo:IAO_0000412 obo:CHEBI_48847 obo:chebi.owl)
+AnnotationAssertion(rdfs:label obo:CHEBI_48847 "heterocyclic fatty acid")
+SubClassOf(obo:CHEBI_48847 obo:CHEBI_5686)
+SubClassOf(obo:CHEBI_48847 obo:CHEBI_59238)
+
 # Class: obo:CHEBI_48857 (sulfite salt)
 
 AnnotationAssertion(obo:IAO_0000412 obo:CHEBI_48857 obo:chebi.owl)
@@ -6754,6 +6901,7 @@ SubClassOf(obo:CHEBI_50860 obo:CHEBI_33582)
 AnnotationAssertion(obo:IAO_0000115 obo:CHEBI_50906 "A role is particular behaviour which a material entity may exhibit.")
 AnnotationAssertion(obo:IAO_0000412 obo:CHEBI_50906 obo:chebi.owl)
 AnnotationAssertion(rdfs:label obo:CHEBI_50906 "role")
+SubClassOf(obo:CHEBI_50906 obo:BFO_0000017)
 
 # Class: obo:CHEBI_50967 (non-covalently-bound molecular entity)
 
@@ -6781,6 +6929,13 @@ SubClassOf(obo:CHEBI_51031 obo:CHEBI_35156)
 AnnotationAssertion(obo:IAO_0000412 obo:CHEBI_51069 obo:chebi.owl)
 AnnotationAssertion(rdfs:label obo:CHEBI_51069 "organic halide salt")
 SubClassOf(obo:CHEBI_51069 obo:CHEBI_24868)
+
+# Class: obo:CHEBI_51081 (nitrates)
+
+AnnotationAssertion(obo:IAO_0000115 obo:CHEBI_51081 "Salts or esters of nitric acid.")
+AnnotationAssertion(obo:IAO_0000412 obo:CHEBI_51081 obo:chebi.owl)
+AnnotationAssertion(rdfs:label obo:CHEBI_51081 "nitrates")
+SubClassOf(obo:CHEBI_51081 obo:CHEBI_51143)
 
 # Class: obo:CHEBI_51082 (nitrate salt)
 
@@ -6945,11 +7100,19 @@ AnnotationAssertion(obo:IAO_0000412 obo:CHEBI_52763 obo:chebi.owl)
 AnnotationAssertion(rdfs:label obo:CHEBI_52763 "magnesium-25 atom")
 SubClassOf(obo:CHEBI_52763 obo:CHEBI_25107)
 
+# Class: obo:CHEBI_52782 (O-acyl carbohydrate)
+
+AnnotationAssertion(obo:IAO_0000115 obo:CHEBI_52782 "A carbohydrate derivative in which the hydrogen atom of at least one alcoholic hydroxy group of a carbohydrate has been replaced by an acyl substituent.")
+AnnotationAssertion(obo:IAO_0000412 obo:CHEBI_52782 obo:chebi.owl)
+AnnotationAssertion(rdfs:label obo:CHEBI_52782 "O-acyl carbohydrate")
+SubClassOf(obo:CHEBI_52782 obo:CHEBI_63299)
+
 # Class: obo:CHEBI_5291 (gelatin)
 
 AnnotationAssertion(obo:IAO_0000115 obo:CHEBI_5291 "A mixture of peptides and proteins produced by partial hydrolysis of collagen extracted from the skin, bones, and connective tissues of animals such as domesticated cattle, chicken, pigs, and fish.")
 AnnotationAssertion(obo:IAO_0000412 obo:CHEBI_5291 obo:chebi.owl)
 AnnotationAssertion(rdfs:label obo:CHEBI_5291 "gelatin")
+SubClassOf(obo:CHEBI_5291 obo:CHEBI_50860)
 SubClassOf(obo:CHEBI_5291 obo:CHEBI_60004)
 
 # Class: obo:CHEBI_53225 (poly(alkylene) macromolecule)
@@ -7013,6 +7176,7 @@ SubClassOf(obo:CHEBI_53251 obo:CHEBI_53249)
 AnnotationAssertion(obo:IAO_0000115 obo:CHEBI_53258 "The trisodium salt of citric acid.")
 AnnotationAssertion(obo:IAO_0000412 obo:CHEBI_53258 obo:chebi.owl)
 AnnotationAssertion(rdfs:label obo:CHEBI_53258 "sodium citrate")
+SubClassOf(obo:CHEBI_53258 obo:CHEBI_36586)
 SubClassOf(obo:CHEBI_53258 obo:CHEBI_38700)
 
 # Class: obo:CHEBI_53270 (polystyrene macromolecule)
@@ -7042,6 +7206,7 @@ AnnotationAssertion(obo:IAO_0000115 obo:CHEBI_53311 "A copolymer macromolecule c
 AnnotationAssertion(obo:IAO_0000412 obo:CHEBI_53311 obo:chebi.owl)
 AnnotationAssertion(rdfs:label obo:CHEBI_53311 "sodium alginate")
 SubClassOf(obo:CHEBI_53311 obo:CHEBI_38700)
+SubClassOf(obo:CHEBI_53311 obo:CHEBI_50860)
 SubClassOf(obo:CHEBI_53311 obo:CHEBI_53310)
 
 # Class: obo:CHEBI_53339 (olefinic fatty acid)
@@ -7153,6 +7318,13 @@ AnnotationAssertion(obo:IAO_0000412 obo:CHEBI_59230 obo:chebi.owl)
 AnnotationAssertion(rdfs:label obo:CHEBI_59230 "acetate salt")
 SubClassOf(obo:CHEBI_59230 obo:CHEBI_24868)
 
+# Class: obo:CHEBI_59238 (cyclic fatty acid)
+
+AnnotationAssertion(obo:IAO_0000115 obo:CHEBI_59238 "Any fatty acid containing anywhere in its structure a ring of atoms.")
+AnnotationAssertion(obo:IAO_0000412 obo:CHEBI_59238 obo:chebi.owl)
+AnnotationAssertion(rdfs:label obo:CHEBI_59238 "cyclic fatty acid")
+SubClassOf(obo:CHEBI_59238 obo:CHEBI_35366)
+
 # Class: obo:CHEBI_59549 (essential fatty acid)
 
 AnnotationAssertion(obo:IAO_0000115 obo:CHEBI_59549 "Any member of the sub-set of polyunsaturated fatty acid for which there is an absolute dietary requirement.")
@@ -7246,6 +7418,13 @@ AnnotationAssertion(obo:IAO_0000412 obo:CHEBI_60027 obo:chebi.owl)
 AnnotationAssertion(rdfs:label obo:CHEBI_60027 "polymer")
 SubClassOf(obo:CHEBI_60027 obo:CHEBI_60004)
 
+# Class: obo:CHEBI_60911 (racemate)
+
+AnnotationAssertion(obo:IAO_0000115 obo:CHEBI_60911 "A racemate is an equimolar mixture of a pair of enantiomers.")
+AnnotationAssertion(obo:IAO_0000412 obo:CHEBI_60911 obo:chebi.owl)
+AnnotationAssertion(rdfs:label obo:CHEBI_60911 "racemate")
+SubClassOf(obo:CHEBI_60911 obo:CHEBI_60004)
+
 # Class: obo:CHEBI_60926 (amino monosaccharide)
 
 AnnotationAssertion(obo:IAO_0000115 obo:CHEBI_60926 "Any  amino sugar that is a monosaccharide in which one alcoholic hydroxy group is replaced by an amino group.")
@@ -7274,6 +7453,13 @@ AnnotationAssertion(obo:IAO_0000115 obo:CHEBI_61266 "Hemicelluloses are polysacc
 AnnotationAssertion(obo:IAO_0000412 obo:CHEBI_61266 obo:chebi.owl)
 AnnotationAssertion(rdfs:label obo:CHEBI_61266 "hemicellulose")
 SubClassOf(obo:CHEBI_61266 obo:CHEBI_18154)
+
+# Class: obo:CHEBI_61355 (3-hydroxy carboxylic acid)
+
+AnnotationAssertion(obo:IAO_0000115 obo:CHEBI_61355 "Any hydroxy carboxylic acid which contains a hydroxy group located β- to the carboxylic acid group.")
+AnnotationAssertion(obo:IAO_0000412 obo:CHEBI_61355 obo:chebi.owl)
+AnnotationAssertion(rdfs:label obo:CHEBI_61355 "3-hydroxy carboxylic acid")
+SubClassOf(obo:CHEBI_61355 obo:CHEBI_24669)
 
 # Class: obo:CHEBI_61458 (polysiloxane polymer)
 
@@ -7315,6 +7501,7 @@ SubClassOf(obo:CHEBI_61697 obo:CHEBI_18059)
 AnnotationAssertion(obo:IAO_0000115 obo:CHEBI_61995 "A lipid-rich mixture containing glycerol, fatty acids, phosphoric acid and other components.")
 AnnotationAssertion(obo:IAO_0000412 obo:CHEBI_61995 obo:chebi.owl)
 AnnotationAssertion(rdfs:label obo:CHEBI_61995 "lecithin")
+SubClassOf(obo:CHEBI_61995 obo:CHEBI_50860)
 SubClassOf(obo:CHEBI_61995 obo:CHEBI_60004)
 
 # Class: obo:CHEBI_62196 (polysaccharide acid oxoanion)
@@ -7354,6 +7541,7 @@ AnnotationAssertion(obo:IAO_0000115 obo:CHEBI_62984 "An acetate salt in which th
 AnnotationAssertion(obo:IAO_0000412 obo:CHEBI_62984 obo:chebi.owl)
 AnnotationAssertion(rdfs:label obo:CHEBI_62984 "zinc acetate")
 SubClassOf(obo:CHEBI_62984 obo:CHEBI_27364)
+SubClassOf(obo:CHEBI_62984 obo:CHEBI_35692)
 SubClassOf(obo:CHEBI_62984 obo:CHEBI_59230)
 
 # Class: obo:CHEBI_63005 (sodium nitrate)
@@ -7362,6 +7550,8 @@ AnnotationAssertion(obo:IAO_0000115 obo:CHEBI_63005 "The inorganic nitrate salt 
 AnnotationAssertion(obo:IAO_0000412 obo:CHEBI_63005 obo:chebi.owl)
 AnnotationAssertion(rdfs:label obo:CHEBI_63005 "sodium nitrate")
 SubClassOf(obo:CHEBI_63005 obo:CHEBI_38702)
+SubClassOf(obo:CHEBI_63005 obo:CHEBI_50860)
+SubClassOf(obo:CHEBI_63005 obo:CHEBI_51081)
 SubClassOf(obo:CHEBI_63005 obo:CHEBI_51084)
 
 # Class: obo:CHEBI_63017 (sodium L-tartrate)
@@ -7370,6 +7560,7 @@ AnnotationAssertion(obo:IAO_0000115 obo:CHEBI_63017 "The organic sodium salt tha
 AnnotationAssertion(obo:IAO_0000412 obo:CHEBI_63017 obo:chebi.owl)
 AnnotationAssertion(rdfs:label obo:CHEBI_63017 "sodium L-tartrate")
 SubClassOf(obo:CHEBI_63017 obo:CHEBI_38700)
+SubClassOf(obo:CHEBI_63017 obo:CHEBI_61355)
 
 # Class: obo:CHEBI_63018 (potassium L-tartrate)
 
@@ -7393,6 +7584,7 @@ AnnotationAssertion(obo:IAO_0000412 obo:CHEBI_63036 obo:chebi.owl)
 AnnotationAssertion(rdfs:label obo:CHEBI_63036 "potassium dihydrogen phosphate")
 SubClassOf(obo:CHEBI_63036 obo:CHEBI_24838)
 SubClassOf(obo:CHEBI_63036 obo:CHEBI_26218)
+SubClassOf(obo:CHEBI_63036 obo:CHEBI_50860)
 
 # Class: obo:CHEBI_63037 (triammonium citrate)
 
@@ -7408,6 +7600,8 @@ AnnotationAssertion(obo:IAO_0000115 obo:CHEBI_63043 "The inorganic nitrate salt 
 AnnotationAssertion(obo:IAO_0000412 obo:CHEBI_63043 obo:chebi.owl)
 AnnotationAssertion(rdfs:label obo:CHEBI_63043 "potassium nitrate")
 SubClassOf(obo:CHEBI_63043 obo:CHEBI_26218)
+SubClassOf(obo:CHEBI_63043 obo:CHEBI_50860)
+SubClassOf(obo:CHEBI_63043 obo:CHEBI_51081)
 SubClassOf(obo:CHEBI_63043 obo:CHEBI_51084)
 
 # Class: obo:CHEBI_63048 (1,3-thiazolium cation)
@@ -7416,7 +7610,6 @@ AnnotationAssertion(obo:IAO_0000115 obo:CHEBI_63048 "An organic cation resulting
 AnnotationAssertion(obo:IAO_0000412 obo:CHEBI_63048 obo:chebi.owl)
 AnnotationAssertion(rdfs:label obo:CHEBI_63048 "1,3-thiazolium cation")
 SubClassOf(obo:CHEBI_63048 obo:CHEBI_25697)
-SubClassOf(obo:CHEBI_63048 obo:CHEBI_38418)
 
 # Class: obo:CHEBI_63161 (glycosyl compound)
 
@@ -7520,6 +7713,7 @@ AnnotationAssertion(obo:IAO_0000412 obo:CHEBI_6636 obo:chebi.owl)
 AnnotationAssertion(rdfs:label obo:CHEBI_6636 "magnesium dichloride")
 SubClassOf(obo:CHEBI_6636 obo:CHEBI_190297)
 SubClassOf(obo:CHEBI_6636 obo:CHEBI_36093)
+SubClassOf(obo:CHEBI_6636 obo:CHEBI_50860)
 SubClassOf(obo:CHEBI_6636 obo:CHEBI_51234)
 
 # Class: obo:CHEBI_6650 (malic acid)
@@ -7528,6 +7722,7 @@ AnnotationAssertion(obo:IAO_0000115 obo:CHEBI_6650 "A 2-hydroxydicarboxylic acid
 AnnotationAssertion(obo:IAO_0000412 obo:CHEBI_6650 obo:chebi.owl)
 AnnotationAssertion(rdfs:label obo:CHEBI_6650 "malic acid")
 SubClassOf(obo:CHEBI_6650 obo:CHEBI_50263)
+SubClassOf(obo:CHEBI_6650 obo:CHEBI_60911)
 SubClassOf(obo:CHEBI_6650 obo:CHEBI_66873)
 
 # Class: obo:CHEBI_66873 (C4-dicarboxylic acid)
@@ -7550,6 +7745,7 @@ AnnotationAssertion(obo:IAO_0000115 obo:CHEBI_6824 "A polycyclic cage that is ad
 AnnotationAssertion(obo:IAO_0000412 obo:CHEBI_6824 obo:chebi.owl)
 AnnotationAssertion(rdfs:label obo:CHEBI_6824 "hexamethylenetetramine")
 SubClassOf(obo:CHEBI_6824 obo:CHEBI_33640)
+SubClassOf(obo:CHEBI_6824 obo:CHEBI_38779)
 SubClassOf(obo:CHEBI_6824 obo:CHEBI_39166)
 SubClassOf(obo:CHEBI_6824 obo:CHEBI_39474)
 
@@ -7560,6 +7756,7 @@ AnnotationAssertion(obo:IAO_0000412 obo:CHEBI_68428 obo:chebi.owl)
 AnnotationAssertion(rdfs:label obo:CHEBI_68428 "maltitol")
 SubClassOf(obo:CHEBI_68428 obo:CHEBI_22390)
 SubClassOf(obo:CHEBI_68428 obo:CHEBI_36307)
+SubClassOf(obo:CHEBI_68428 obo:CHEBI_52782)
 
 # Class: obo:CHEBI_68452 (azole)
 
@@ -7605,6 +7802,15 @@ AnnotationAssertion(obo:IAO_0000115 obo:CHEBI_71645 "Any lantibiotic which has w
 AnnotationAssertion(obo:IAO_0000412 obo:CHEBI_71645 obo:chebi.owl)
 AnnotationAssertion(rdfs:label obo:CHEBI_71645 "type A lantibiotic")
 SubClassOf(obo:CHEBI_71645 obo:CHEBI_71644)
+
+# Class: obo:CHEBI_71968 (hydroxyflavonoid)
+
+AnnotationAssertion(obo:IAO_0000115 obo:CHEBI_71968 "Any flavonoid in which one or more ring hydrogens are replaced by hydroxy groups.")
+AnnotationAssertion(obo:IAO_0000412 obo:CHEBI_71968 obo:chebi.owl)
+AnnotationAssertion(rdfs:label obo:CHEBI_71968 "hydroxyflavonoid")
+SubClassOf(obo:CHEBI_71968 obo:CHEBI_26004)
+SubClassOf(obo:CHEBI_71968 obo:CHEBI_38443)
+SubClassOf(obo:CHEBI_71968 obo:CHEBI_47916)
 
 # Class: obo:CHEBI_72010 (hydroxyflavan)
 
@@ -7687,6 +7893,8 @@ AnnotationAssertion(obo:IAO_0000412 obo:CHEBI_75228 obo:chebi.owl)
 AnnotationAssertion(rdfs:label obo:CHEBI_75228 "sodium lactate")
 SubClassOf(obo:CHEBI_75228 obo:CHEBI_24997)
 SubClassOf(obo:CHEBI_75228 obo:CHEBI_38700)
+SubClassOf(obo:CHEBI_75228 obo:CHEBI_50860)
+SubClassOf(obo:CHEBI_75228 obo:CHEBI_60911)
 
 # Class: obo:CHEBI_75323 (lactitol)
 
@@ -7694,6 +7902,7 @@ AnnotationAssertion(obo:IAO_0000115 obo:CHEBI_75323 "A glycosyl alditol consisti
 AnnotationAssertion(obo:IAO_0000412 obo:CHEBI_75323 obo:chebi.owl)
 AnnotationAssertion(rdfs:label obo:CHEBI_75323 "lactitol")
 SubClassOf(obo:CHEBI_75323 obo:CHEBI_36307)
+SubClassOf(obo:CHEBI_75323 obo:CHEBI_52782)
 
 # Class: obo:CHEBI_75769 (B vitamin)
 
@@ -7740,6 +7949,7 @@ AnnotationAssertion(obo:IAO_0000115 obo:CHEBI_77868 "A potassium salt having sor
 AnnotationAssertion(obo:IAO_0000412 obo:CHEBI_77868 obo:chebi.owl)
 AnnotationAssertion(rdfs:label obo:CHEBI_77868 "potassium sorbate")
 SubClassOf(obo:CHEBI_77868 obo:CHEBI_26218)
+SubClassOf(obo:CHEBI_77868 obo:CHEBI_59554)
 
 # Class: obo:CHEBI_78074 (tin(II) chloride dihydrate)
 
@@ -7820,6 +8030,7 @@ AnnotationAssertion(obo:IAO_0000412 obo:CHEBI_78870 obo:chebi.owl)
 AnnotationAssertion(rdfs:label obo:CHEBI_78870 "sodium nitrite")
 SubClassOf(obo:CHEBI_78870 obo:CHEBI_38702)
 SubClassOf(obo:CHEBI_78870 obo:CHEBI_46648)
+SubClassOf(obo:CHEBI_78870 obo:CHEBI_50860)
 
 # Class: obo:CHEBI_79020 (alpha,beta-unsaturated monocarboxylic acid)
 
@@ -7855,6 +8066,7 @@ AnnotationAssertion(obo:IAO_0000412 obo:CHEBI_81862 obo:chebi.owl)
 AnnotationAssertion(rdfs:label obo:CHEBI_81862 "potassium hydrogencarbonate")
 SubClassOf(obo:CHEBI_81862 obo:CHEBI_24868)
 SubClassOf(obo:CHEBI_81862 obo:CHEBI_26218)
+SubClassOf(obo:CHEBI_81862 obo:CHEBI_36963)
 
 # Class: obo:CHEBI_82130 (Vinylidene chloride-vinyl chloride copolymer)
 
@@ -7872,6 +8084,7 @@ SubClassOf(obo:CHEBI_82411 obo:CHEBI_50860)
 
 AnnotationAssertion(obo:IAO_0000412 obo:CHEBI_82431 obo:chebi.owl)
 AnnotationAssertion(rdfs:label obo:CHEBI_82431 "Cyclamate")
+SubClassOf(obo:CHEBI_82431 obo:CHEBI_35719)
 SubClassOf(obo:CHEBI_82431 obo:CHEBI_50860)
 
 # Class: obo:CHEBI_82519 (Nylon 6)
@@ -8000,6 +8213,7 @@ AnnotationAssertion(obo:IAO_0000412 obo:CHEBI_86477 obo:chebi.owl)
 AnnotationAssertion(rdfs:label obo:CHEBI_86477 "sodium sulfite")
 SubClassOf(obo:CHEBI_86477 obo:CHEBI_38702)
 SubClassOf(obo:CHEBI_86477 obo:CHEBI_48857)
+SubClassOf(obo:CHEBI_86477 obo:CHEBI_50860)
 
 # Class: obo:CHEBI_86478 (antibiotic antifungal agent)
 
@@ -8084,6 +8298,7 @@ SubClassOf(obo:CHEBI_9405 obo:CHEBI_38700)
 
 AnnotationAssertion(obo:IAO_0000412 obo:CHEBI_9679 obo:chebi.owl)
 AnnotationAssertion(rdfs:label obo:CHEBI_9679 "tricalcium bis(phosphate)")
+SubClassOf(obo:CHEBI_9679 obo:CHEBI_50860)
 SubClassOf(obo:CHEBI_9679 obo:CHEBI_77635)
 
 

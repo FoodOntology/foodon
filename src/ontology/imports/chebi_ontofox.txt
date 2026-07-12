@@ -411,6 +411,9 @@ http://purl.obolibrary.org/obo/CHEBI_27617 #monensin A
 
 [Top level source term URIs and target direct superclass URIs]
 http://purl.obolibrary.org/obo/CHEBI_50906 # role 
+subClassOf http://purl.obolibrary.org/obo/BFO_0000017
+http://purl.obolibrary.org/obo/CHEBI_24431 # chemical entity
+subClassOf http://purl.obolibrary.org/obo/BFO_0000040 # material entity
 
 [Source term retrieval setting]
 includeAllIntermediates

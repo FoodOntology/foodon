@@ -416,7 +416,6 @@ Declaration(Class(obo:AfPO_0000579))
 Declaration(Class(obo:AfPO_0000580))
 Declaration(Class(obo:BFO_0000001))
 Declaration(Class(obo:BFO_0000002))
-Declaration(Class(obo:BFO_0000004))
 Declaration(Class(obo:BFO_0000015))
 Declaration(Class(obo:BFO_0000016))
 Declaration(Class(obo:BFO_0000017))
@@ -637,7 +636,9 @@ Declaration(Class(obo:ENVO_01001476))
 Declaration(Class(obo:ENVO_01001477))
 Declaration(Class(obo:ENVO_01001479))
 Declaration(Class(obo:ENVO_01001686))
+Declaration(Class(obo:ENVO_01001687))
 Declaration(Class(obo:ENVO_01001688))
+Declaration(Class(obo:ENVO_01001690))
 Declaration(Class(obo:ENVO_01001780))
 Declaration(Class(obo:ENVO_01001784))
 Declaration(Class(obo:ENVO_01001787))
@@ -1694,9 +1695,12 @@ Declaration(Class(obo:PATO_0001777))
 Declaration(Class(obo:PATO_0001781))
 Declaration(Class(obo:PATO_0001800))
 Declaration(Class(obo:PATO_0001801))
+Declaration(Class(obo:PATO_0001822))
+Declaration(Class(obo:PATO_0001824))
 Declaration(Class(obo:PATO_0001827))
 Declaration(Class(obo:PATO_0001828))
 Declaration(Class(obo:PATO_0001829))
+Declaration(Class(obo:PATO_0001842))
 Declaration(Class(obo:PATO_0001888))
 Declaration(Class(obo:PATO_0001894))
 Declaration(Class(obo:PATO_0001898))
@@ -2856,7 +2860,7 @@ AnnotationAssertion(rdfs:label obo:RO_0001025 "located in"@en)
 AnnotationAssertion(rdfs:label obo:RO_0001025 "located_in")
 TransitiveObjectProperty(obo:RO_0001025)
 
-# Object Property: obo:RO_0002160 (only in taxon)
+# Object Property: obo:RO_0002160 (only_in_taxon)
 
 AnnotationAssertion(rdfs:label obo:RO_0002160 "only in taxon")
 AnnotationAssertion(rdfs:label obo:RO_0002160 "only_in_taxon")
@@ -5895,32 +5899,15 @@ SubClassOf(obo:AfPO_0000580 obo:AfPO_0000205)
 
 # Class: obo:BFO_0000001 (entity)
 
-AnnotationAssertion(obo:IAO_0000412 obo:BFO_0000001 obo:agro.owl)
 AnnotationAssertion(obo:IAO_0000412 obo:BFO_0000001 obo:envo.owl)
-AnnotationAssertion(rdfs:label obo:BFO_0000001 "entity")
 AnnotationAssertion(rdfs:label obo:BFO_0000001 "entity"@en)
-SubClassOf(obo:BFO_0000001 owl:Thing)
 
 # Class: obo:BFO_0000002 (continuant)
 
 AnnotationAssertion(obo:IAO_0000115 obo:BFO_0000002 "An entity that exists in full at any time in which it exists at all, persists through time while maintaining its identity and has no temporal parts."@en)
-AnnotationAssertion(obo:IAO_0000115 obo:BFO_0000002 "An entity that exists in full at any time in which it exists at all, persists through time while maintaining its identity and has no temporal parts.")
-AnnotationAssertion(obo:IAO_0000412 obo:BFO_0000002 obo:agro.owl)
 AnnotationAssertion(obo:IAO_0000412 obo:BFO_0000002 obo:envo.owl)
-AnnotationAssertion(rdfs:label obo:BFO_0000002 "continuant")
 AnnotationAssertion(rdfs:label obo:BFO_0000002 "continuant"@en)
 SubClassOf(obo:BFO_0000002 obo:BFO_0000001)
-
-# Class: obo:BFO_0000004 (independent continuant)
-
-AnnotationAssertion(obo:IAO_0000115 obo:BFO_0000004 "A continuant that is a bearer of quality and realizable entity entities, in which other entities inhere and which itself cannot inhere in anything."@en)
-AnnotationAssertion(obo:IAO_0000115 obo:BFO_0000004 "b is an independent continuant = Def. b is a continuant which is such that there is no c and no t such that b s-depends_on c at t. (axiom label in BFO2 Reference: [017-002])"@en)
-AnnotationAssertion(obo:IAO_0000115 obo:BFO_0000004 "A continuant that is a bearer of quality and realizable entity entities, in which other entities inhere and which itself cannot inhere in anything.")
-AnnotationAssertion(obo:IAO_0000115 obo:BFO_0000004 "b is an independent continuant = Def. b is a continuant which is such that there is no c and no t such that b s-depends_on c at t. (axiom label in BFO2 Reference: [017-002])")
-AnnotationAssertion(obo:IAO_0000412 obo:BFO_0000004 obo:agro.owl)
-AnnotationAssertion(rdfs:label obo:BFO_0000004 "independent continuant"@en)
-AnnotationAssertion(rdfs:label obo:BFO_0000004 "independent continuant")
-SubClassOf(obo:BFO_0000004 obo:BFO_0000002)
 
 # Class: obo:BFO_0000015 (process)
 
@@ -6010,7 +5997,6 @@ AnnotationAssertion(obo:IAO_0000412 obo:BFO_0000141 obo:agro.owl)
 AnnotationAssertion(obo:IAO_0000412 obo:BFO_0000141 obo:envo.owl)
 AnnotationAssertion(obo:IAO_0000412 obo:BFO_0000141 obo:obi.owl)
 AnnotationAssertion(rdfs:label obo:BFO_0000141 "immaterial entity"@en)
-SubClassOf(obo:BFO_0000141 obo:BFO_0000004)
 
 # Class: obo:BTO_0000262 (clove)
 
@@ -7495,12 +7481,26 @@ AnnotationAssertion(obo:IAO_0000412 obo:ENVO_01001686 obo:envo.owl)
 AnnotationAssertion(rdfs:label obo:ENVO_01001686 "mass of environmental material"@en)
 SubClassOf(obo:ENVO_01001686 obo:BFO_0000030)
 
+# Class: obo:ENVO_01001687 (mass of solid material)
+
+AnnotationAssertion(obo:IAO_0000115 obo:ENVO_01001687 "An mass of environmental material which is composed primarily of a solid environmental material"@en)
+AnnotationAssertion(obo:IAO_0000412 obo:ENVO_01001687 obo:envo.owl)
+AnnotationAssertion(rdfs:label obo:ENVO_01001687 "mass of solid material"@en)
+SubClassOf(obo:ENVO_01001687 obo:ENVO_01001686)
+
 # Class: obo:ENVO_01001688 (mass of fluid)
 
 AnnotationAssertion(obo:IAO_0000115 obo:ENVO_01001688 "An object which is composed primarily of a fluid."@en)
 AnnotationAssertion(obo:IAO_0000412 obo:ENVO_01001688 obo:envo.owl)
 AnnotationAssertion(rdfs:label obo:ENVO_01001688 "mass of fluid"@en)
 SubClassOf(obo:ENVO_01001688 obo:ENVO_01001686)
+
+# Class: obo:ENVO_01001690 (mass of liquid)
+
+AnnotationAssertion(obo:IAO_0000115 obo:ENVO_01001690 "An object which is composed primarily of a liquid."@en)
+AnnotationAssertion(obo:IAO_0000412 obo:ENVO_01001690 obo:envo.owl)
+AnnotationAssertion(rdfs:label obo:ENVO_01001690 "mass of liquid"@en)
+SubClassOf(obo:ENVO_01001690 obo:ENVO_01001688)
 
 # Class: obo:ENVO_01001780 (desert ecosystem)
 
@@ -14950,6 +14950,20 @@ AnnotationAssertion(rdfs:label obo:PATO_0001801 "decreased water composition")
 SubClassOf(obo:PATO_0001801 obo:PATO_0001800)
 SubClassOf(obo:PATO_0001801 obo:PATO_0002303)
 
+# Class: obo:PATO_0001822 (wetness)
+
+AnnotationAssertion(obo:IAO_0000115 obo:PATO_0001822 "A quality inhering in a bearer by virtue of whether the bearer's being covered by a liquid.")
+AnnotationAssertion(obo:IAO_0000412 obo:PATO_0001822 obo:pato.owl)
+AnnotationAssertion(rdfs:label obo:PATO_0001822 "wetness")
+SubClassOf(obo:PATO_0001822 obo:PATO_0001018)
+
+# Class: obo:PATO_0001824 (dry)
+
+AnnotationAssertion(obo:IAO_0000115 obo:PATO_0001824 "A wetness quality inhering in a bearer by virtue of the bearer's not being covered by a liquid.")
+AnnotationAssertion(obo:IAO_0000412 obo:PATO_0001824 obo:pato.owl)
+AnnotationAssertion(rdfs:label obo:PATO_0001824 "dry")
+SubClassOf(obo:PATO_0001824 obo:PATO_0001822)
+
 # Class: obo:PATO_0001827 (pseudohermaphrodite)
 
 AnnotationAssertion(obo:IAO_0000115 obo:PATO_0001827 "A biological sex quality inhering in an individual or a population by virtue of having internal reproductive organs of one sex and external sexual characteristics of the other sex.")
@@ -14970,6 +14984,13 @@ AnnotationAssertion(obo:IAO_0000115 obo:PATO_0001829 "A biological sex quality i
 AnnotationAssertion(obo:IAO_0000412 obo:PATO_0001829 obo:pato.owl)
 AnnotationAssertion(rdfs:label obo:PATO_0001829 "female pseudohermaphrodite")
 SubClassOf(obo:PATO_0001829 obo:PATO_0001827)
+
+# Class: obo:PATO_0001842 (acidity)
+
+AnnotationAssertion(obo:IAO_0000115 obo:PATO_0001842 "A concentration quality inhering in a bearer by virtue of the bearer's containing acid (hydrogen ions).")
+AnnotationAssertion(obo:IAO_0000412 obo:PATO_0001842 obo:pato.owl)
+AnnotationAssertion(rdfs:label obo:PATO_0001842 "acidity")
+SubClassOf(obo:PATO_0001842 obo:PATO_0000033)
 
 # Class: obo:PATO_0001888 (miscibility)
 
@@ -21427,7 +21448,6 @@ SubClassOf(obo:UO_1010051 obo:UO_0000111)
 
 # Class: owl:Thing (owl:Thing)
 
-AnnotationAssertion(obo:IAO_0000412 owl:Thing obo:agro.owl)
 AnnotationAssertion(obo:IAO_0000412 owl:Thing obo:obi.owl)
 
 
@@ -21497,16 +21517,16 @@ AnnotationAssertion(rdfs:label obo:IAO_0000428 "requires discussion"@en)
 ClassAssertion(obo:IAO_0000078 obo:IAO_0000428)
 
 
-AnnotationAssertion(obo:IAO_0000412 _:genid2147483788 obo:po.owl)
-AnnotationAssertion(obo:IAO_0000412 _:genid2147483789 obo:obi.owl)
+AnnotationAssertion(obo:IAO_0000412 _:genid2147483788 obo:obi.owl)
+AnnotationAssertion(obo:IAO_0000412 _:genid2147483789 obo:po.owl)
 AnnotationAssertion(obo:IAO_0000412 _:genid2147483790 obo:obi.owl)
-AnnotationAssertion(obo:IAO_0000412 _:genid2147483791 obo:po.owl)
-AnnotationAssertion(obo:IAO_0000412 _:genid2147483792 obo:obi.owl)
-AnnotationAssertion(obo:IAO_0000412 _:genid2147483793 obo:obi.owl)
-AnnotationAssertion(obo:IAO_0000412 _:genid2147483794 obo:obi.owl)
+AnnotationAssertion(obo:IAO_0000412 _:genid2147483791 obo:obi.owl)
+AnnotationAssertion(obo:IAO_0000412 _:genid2147483792 obo:po.owl)
+AnnotationAssertion(obo:IAO_0000412 _:genid2147483793 obo:po.owl)
+AnnotationAssertion(obo:IAO_0000412 _:genid2147483794 obo:po.owl)
 AnnotationAssertion(obo:IAO_0000412 _:genid2147483795 obo:obi.owl)
-AnnotationAssertion(obo:IAO_0000412 _:genid2147483796 obo:po.owl)
-AnnotationAssertion(obo:IAO_0000412 _:genid2147483797 obo:po.owl)
+AnnotationAssertion(obo:IAO_0000412 _:genid2147483796 obo:obi.owl)
+AnnotationAssertion(obo:IAO_0000412 _:genid2147483797 obo:obi.owl)
 AnnotationAssertion(obo:IAO_0000412 _:genid2147483798 obo:po.owl)
 AnnotationAssertion(obo:IAO_0000412 _:genid2147483799 obo:obi.owl)
 )
