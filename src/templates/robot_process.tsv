@@ -1,6 +1,6 @@
 type	Ontology ID	NTR	label	parent	term	MIFC	definition	definition source	comment	example of use	EquivalentTo	SubClassOf	has specified input	has specified output	has characteristic	see also IRI	term contributor	curation status	created
 	ID		AL rdfs:label@en	SC % SPLIT=|			AL IAO:0000115@en	AI IAO:0000119	AL rdfs:comment@en		EC %		SC 'has specified input' some % SPLIT=|	SC 'has specified output' some % SPLIT=|	SC 'has characteristic' some % SPLIT=|	AI rdfs:seeAlso SPLIT=|	AI dcterms:contributor SPLIT=|	A IAO:0000114	AT dcterms:date^^xsd:dateTime
-1	FOODON:03000492	NTR	food characteristic	physical object quality	food characteristic		A physical object quality which is born by food material.												
+1	http://purl.obolibrary.org/obo/FOODON_00002470		food characteristic	physical object quality	food characteristic		A physical object quality which is born by food material.												
 																			
 				Parent term	FoodOn Term	MIFC	Definition												
 1	FOODON:00004348		raw	organismal quality	raw	☑	A characteristic of organism material which has a biochemical composition that closely resembles its harvested or subsequent biologically aged state.		The definition covers plant, animal and fungi material, and allows for drying before harvest, and allows for cleaning, cutting, storing or trimming after harvest as long as harvested biological state is maintained.										
@@ -105,7 +105,7 @@ type	Ontology ID	NTR	label	parent	term	MIFC	definition	definition source	comment
 3	FOODON:03470129		food sterilization by hot filling, held hot and cooling	food sterilization before filling	food sterilization by hot filling, held hot and cooling		LanguaL curation note: Used when a sterile product is filled into a container at approximately 212 degrees F., sealed, and held hot temporarily to complete processing before cooling.		LanguaL curation note: Used when a sterile product is filled into a container at approximately 212 degrees F., sealed, and held hot temporarily to complete processing before cooling.										
 3	FOODON:03000504	NTR	pasteurization	microorganism killing	pasteurization		A microorganism killing process which has the objective of reducing potential pathogenic microbes by an amount equivalent to Pasteur's process.	https://en.wikipedia.org/wiki/Pasteurization											
 2	FOODON:00002654		food (pasteurized)	food material by process	food (pasteurized)		Food material which has been pasteurized.												
-1	FOODON:03000505	NTR	pasteurized	food material characteristic	pasteurized	pasteurized	A characteristic of food material which indicates that it has been pasteurized.												
+1	FOODON:03000505	NTR	pasteurized	food characteristic	pasteurized	pasteurized	A characteristic of food material which indicates that it has been pasteurized.												
 3	FOODON:03470119		pasteurization by irradiation	pasteurization|preservation by ionizing radiation	pasteurization by irradiation		A pasteurization process which employs ionizing radiation.		LanguaL curation note: Used when sufficient radiation (e.g. 10 kGy) is applied to destroy most patho-genic and food spoilage organisms. Also index *preservation by CHILLING*.										
 3	FOODON:03470135		pasteurization by heating	pasteurization|heat treatment food preservation	pasteurization by heating		LanguaL curation note: Used when the product is held at a temperature of 60-150 °C (140-300 °F) for a time sufficient to destroy most pathogenic and food spoilage organisms. When followed by refrigeration, also index *preservation by CHILLING*.		LanguaL curation note: Used when the product is held at a temperature of 60-150 °C (140-300 °F) for a time sufficient to destroy most pathogenic and food spoilage organisms. When followed by refrigeration, also index *preservation by CHILLING*.										
 3	FOODON:03470148		ultra pasteurization (UP) by heat	pasteurization by heating	ultra pasteurization (UP) by heat		When used to describe a dairy product, means that such product shall have been thermally processed at or above 138° C (280° C) for at least 2 seconds, either before or after packaging so as to produce a product that has extended shelf life under refrigerated conditions (21 CFR 131.3 (c)). Used to describe liquid egg products that also have been thermally processed, but at a different temperature than for milk products.  The egg product will have an extended shelf life under refrigerated conditions.												
@@ -127,7 +127,7 @@ type	Ontology ID	NTR	label	parent	term	MIFC	definition	definition source	comment
 																			
 3	FOODON:00001304		food fermentation	food microorganism control|microbial/enzymatic modification	food fermentation		A fermentation process in which either carbohydrates, proteins or fats are modified through microbial, enzymatic and/or other biological processes.										https://orcid.org/0000-0002-8844-9165		
 2	FOODON:00001258		food (fermented)	food material by process	food (fermented)		Food material which has been fermented.												
-1	FOODON:03000506	NTR	fermented		fermented	fermented	A characteristic of food material which indicates that it has undergone fermentation.												
+1	FOODON:03000506	NTR	fermented	food characteristic	fermented	fermented	A characteristic of food material which indicates that it has undergone fermentation.												
 3	FOODON:03460256		carbohydrate fermentation	single component food fermentation	carbohydrate fermentation														
 3	FOODON:03460300		acetic acid fermentation	carbohydrate fermentation	acetic acid fermentation														
 3	FOODON:03460101		lactic acid fermentation	carbohydrate fermentation	lactic acid fermentation		A food fermentation process in which lactic acid bacteria (LAB) convert carbohydrates into energy and lactic acid.												
@@ -220,7 +220,7 @@ type	Ontology ID	NTR	label	parent	term	MIFC	definition	definition source	comment
 1	FOODON:03440014		fully heat-treated	heat-treated	fully heat-treated	☑	A characteristic of food material which indicates that it has been heat-treated throughout, leaving no part raw.												
 2	FOODON:03000543	NTR	food (fully heat-treated)	food (heat-treated)	food (fully heat-treated)		Food material which has completely undergone heating.												
 1	FOODON:03440018		partially heat-treated	heat-treated	partially heat-treated	☑	A characteristic of food material which indicates that part of its material has undergone heating.												
-2	FOODON:03000544	NTR	food (partially heat-treated)		food (partially heat-treated)		Food material which has partially undergone heating.												
+2	FOODON:03000544	NTR	food (partially heat-treated)	food (heat-treated)	food (partially heat-treated)		Food material which has partially undergone heating.												
 																			
 																			
 1	FOODON:03000545	NTR	unheated	physical object quality	unheated	☑	A characteristic of food material which indicates that it has not undergone heating.												
@@ -410,9 +410,9 @@ type	Ontology ID	NTR	label	parent	term	MIFC	definition	definition source	comment
 1	PATO:0001842		acidity		acidity		A concentration quality inhering in a bearer by virtue of the bearer's containing acid (hydrogen ions).												
 																			
 																			
-3	FOODON:03000626	NTR	material movement		material movement		The movement of material from one location to another.		Moving material may be as local as getting an apple from a refrigerator, or as far as flying lobsters by airplane.										
+3	FOODON:03000626	NTR	material movement	'completely executed planned process'	material movement		The movement of material from one location to another.		Moving material may be as local as getting an apple from a refrigerator, or as far as flying lobsters by airplane.										
 																			
-3	FOODON:03000627	NTR	material containment		material containment														
+3	FOODON:03000627	NTR	material containment	material processing	material containment														
 3	FOODON:00004078		adding material to container	food material combination	adding material to container														
 3	FOODON:00004079		adding liquid to container	adding material to container	adding liquid to container														
 3	FOODON:00004080		adding solid to container	adding material to container	adding solid to container														
@@ -475,9 +475,9 @@ type	Ontology ID	NTR	label	parent	term	MIFC	definition	definition source	comment
 3	FOODON:03470103		food salting	food material combination|preservation by adding inorganic acids or salts|preservation by reducing water activity	food salting				LanguaL curation note: Used when salting is used for preservation. The salt content of the food is generally 8% or higher (e.g. salted fish, etc.).										
 3	FOODON:03470139		food dry salting	food salting	food dry salting		A food salting process in which food material is packed in dry salt in sufficient quantity to suppress enzyme activity or growth of undesirable organisms.												
 3	FOODON:03470137		brining	food salting	brining		A food salting process in which food material is Immersed in a salt brine strong enough to suppress enzyme activity and growth of undesirable organisms.	https://en.wikipedia.org/wiki/Brining											
-1	FOODON:03000656	NTR	brined		brined	brined	A characteristic of food material which indicates that it has undergone brining.												
-3	FOODON:03000657	NTR	kippering		kippering		Preservation by rubbing with salt or other spices before drying in the open air or in smoke.		https://en.wikipedia.org/wiki/Kipper										
-1	FOODON:03000658	NTR	kippered		kippered	kippered	A characteristic of food material which indicates that it has been kippered.		https://en.wikipedia.org/wiki/Kipper										
+1	FOODON:03000656	NTR	brined	food characteristic	brined	brined	A characteristic of food material which indicates that it has undergone brining.												
+3	FOODON:03000657	NTR	kippering	food preservation	kippering		Preservation by rubbing with salt or other spices before drying in the open air or in smoke.		https://en.wikipedia.org/wiki/Kipper										
+1	FOODON:03000658	NTR	kippered	food characteristic	kippered	kippered	A characteristic of food material which indicates that it has been kippered.		https://en.wikipedia.org/wiki/Kipper										
 3	FOODON:00002732		food seasoning process	food material combination	food seasoning process		A process of applying a seasoning mixture to a given food.							food (seasoned)			https://orcid.org/0000-0002-8844-9165		
 3	FOODON:03460148		water addition	food material combination|water addition or removal	water addition				LanguaL curation note: Used for a liquid or solid product to which water was added beyond its natural water level. If a single-strength standard for the product exists, use the appropriate narrower term under *WATER ADDED*.										
 3	FOODON:03460234		dilution process to 15-49% of single strength	water addition	dilution process to 15-49% of single strength														
@@ -640,7 +640,7 @@ type	Ontology ID	NTR	label	parent	term	MIFC	definition	definition source	comment
 3	FOODON:03000693	NTR	homogenization	mixing	homogenization		Food emulsification which has the objective of creating a stable emulsion.												
 2	FOODON:03000694	NTR	food (homogenized)	food material by process	food (homogenized)		Food material which has been homogenized.												
 2	OBI:0400109		homogenizer	device	homogenizer		A device which performs a homogenization process.												
-1	FOODON:00005746		homogenized	physical object quality	homogenized		A physical object quality which indciates that a material has undergone a homogenization process.												
+1	FOODON:03000720		homogenized	physical object quality	homogenized		A physical object quality which indciates that a material has undergone a homogenization process.												
 3	FOODON:03000695	NTR	liquid homogenization	homogenization	liquid homogenization		A homogenizatin process involving liquid material inputs.												
 3	FOODON:03000696	NTR	solid and liquid homogenization	homogenization	solid and liquid homogenization		A homogenization process involving both solid and liquid material inputs.												
 3	FOODON:03000697	NTR	primary homogenization	homogenization	primary homogenization			https://en.wikipedia.org/wiki/Homogenization_(chemistry)											
@@ -651,21 +651,21 @@ type	Ontology ID	NTR	label	parent	term	MIFC	definition	definition source	comment
 3	FOODON:03460182		candying	physical/chemical modification	candying		A chemical modification involving osmosis in which water within fruit or vegetable material immersed in sugar syrop is replaced by sugar molecules.		LanguaL curation note: Used for whole fruit or pieces of fruit are permeated by sugar to result in a product with sugar solids over 70% (e.g., candied citrus peel or candied cherry). Not used for sugar-coated products or for such products as candied sweet potatoes or glazed carrots, which are merely sweetened by cooking in syrup.										
 1	FOODON:03000699	NTR	candied	food characteristic	candied	candied	A characteristic of food material which indicates that it has undergone candying.		A characteristic of food material which indicates that it has undergone candying.										
 3	FOODON:03000700	NTR	jellying	physical/chemical modification	jellying		A physical/chemical modification process in which a liquid thickens and transforms into a soft, elastic, semisolid state.	https://en.wiktionary.org/wiki/jelly											
-2	FOODON:03000701	NTR	food (jellied)		food (jellied)		Food material which is subjected to a jellying process.	https://en.wiktionary.org/wiki/jelly	Both fruit and meat can be jellied.										
-1	FOODON:03000702	NTR	jellied		jellied	jellied	A characteristic of food material which indicates that it has undergone a jellying process.	https://en.wiktionary.org/wiki/jelly											
+2	FOODON:03000701	NTR	food (jellied)	food material by process	food (jellied)		Food material which is subjected to a jellying process.	https://en.wiktionary.org/wiki/jelly	Both fruit and meat can be jellied.										
+1	FOODON:03000702	NTR	jellied	food characteristic	jellied	jellied	A characteristic of food material which indicates that it has undergone a jellying process.	https://en.wiktionary.org/wiki/jelly											
 3	FOODON:03460190		pickling	microbial/enzymatic modification	pickling		A process of preserving or extending the shelf life of food by either anaerobic fermentation in brine or immersion in vinegar.	https://en.wikipedia.org/wiki/Pickling	"LanguaL curation note: Also index by other applicable terms from *MICROBIALLY/ ENZYMATICALLY MODIFIED*.  LanguaL definition: ""Treated with acid that may be produced by fermentation or added and/or with salt brine, often in the presence of spices or herbs, producing changes in flavor and texture."""										
 2	FOODON:00001079		food (pickled)	food (preserved)	food (pickled)		Food material which is subjected to fermentation or acidification.	https://en.wikipedia.org/wiki/Pickling	Pickled food is often preserved by soaking and storing it in vinegar or brine.										
 1	FOODON:03000703	NTR	pickled	food characteristic	pickled	pickled	A characteristic of food material which indicates that it has been pickled.												
 3	FOODON:03460197		food bleaching	physical/chemical modification	food bleaching		Treated with chemicals to reduce color, primarily to whiten, e.g., bleached flour.												
 3	FOODON:03460198		debittering	food component separation	debittering														
 																			
-3	FOODON:03000704	NTR	marination		marination		A process of immersing food material in a liquid which may contain seasoning, acidifiers, alcohol, fermented milk products, oil, and enzymatic or alkaline components to flavor and slightly tenderize meats and vegetables before cooking.	https://en.wikipedia.org/wiki/Marination											
-2	FOODON:03000705	NTR	marinade		marinade														
+3	FOODON:03000704	NTR	marination	physical/chemical modification	marination		A process of immersing food material in a liquid which may contain seasoning, acidifiers, alcohol, fermented milk products, oil, and enzymatic or alkaline components to flavor and slightly tenderize meats and vegetables before cooking.	https://en.wikipedia.org/wiki/Marination											
+2	FOODON:03000705	NTR	marinade	food material by process	marinade														
 1	FOODON:03000706	NTR	marinated	food characteristic	marinated	marinated	A characteristic of food material which indicates that it has undergone marination.												
 3	FOODON:03460396		marination with acidifier	food acidification|alcohol-acetic acid fermentation	marination with acidifier		A marination process with an acidifier as a defining ingredient.		LanguaL curation note: Used when a food such as meat, fish or vegetables are soaked in a seasoned liquid in order to absorb flavor and, in some instances, to be tenderized. Most marinades contain an acid (lemon juice, vinegar, wine) and herbs or spices; the acid ingredient serves as the tenderizer.										
 3	FOODON:03460200		food acidification	food material combination	food acidification		A food material combination process where acid is added to 		LanguaL curation note: Used  when acid is added to a food product at any level.										
-2	FOODON:03301625		food (acidified)		food (acidified)														
-1	FOODON:03000707	NTR	cooked by acidification		cooked by acidification														
+2	FOODON:03301625		food (acidified)	food material by process	food (acidified)														
+1	FOODON:03000707	NTR	cooked by acidification	food cooking	cooked by acidification														
 3	FOODON:03460206		food alkalization	physical/chemical modification	food alkalization		Treated with a solution of alkali (primarily potassium or sodium carbonate). In cacao, alkalization neutralizes acids and leads to changes in flavor and color. In fats and oils, treatment with alkali leads to saponification of free fatty acids; soap and alkali are then removed.												
 3	FOODON:03460203		lactose conversion	enzymatic modification	lactose conversion				LanguaL curation note: Used when all or part of the lactose in milk is converted to glucose and galactose through enzymatic action.										
 3	FOODON:03460169		food instantizing	food modification	food instantizing				LanguaL curation note: Used for food products modified to reduce cooking time or to enhance dispersion characteristics of powdered or granulated products.										
