@@ -2437,6 +2437,7 @@ Declaration(Class(obo:FOODON_00005710))
 Declaration(Class(obo:FOODON_00005716))
 Declaration(Class(obo:FOODON_00005717))
 Declaration(Class(obo:FOODON_00005718))
+Declaration(Class(obo:FOODON_00005729))
 Declaration(Class(obo:FOODON_00005732))
 Declaration(Class(obo:FOODON_00005733))
 Declaration(Class(obo:FOODON_00005734))
@@ -18121,9 +18122,9 @@ SubClassOf(obo:FOODON_00002037 obo:FOODON_00001248)
 AnnotationAssertion(rdfs:label obo:FOODON_00002038 "millet food product"@en)
 SubClassOf(obo:FOODON_00002038 obo:FOODON_00001093)
 
-# Class: obo:FOODON_00002039 (mineral substance as food supplement product category)
+# Class: obo:FOODON_00002039 (mineral substance as food supplement)
 
-AnnotationAssertion(rdfs:label obo:FOODON_00002039 "mineral substance as food supplement product category"@en)
+AnnotationAssertion(rdfs:label obo:FOODON_00002039 "mineral substance as food supplement"@en)
 SubClassOf(obo:FOODON_00002039 obo:FOODON_00002336)
 
 # Class: obo:FOODON_00002040 (mineral water based soft drink)
@@ -19292,14 +19293,13 @@ SubClassOf(obo:FOODON_00002236 obo:FOODON_00001006)
 AnnotationAssertion(rdfs:label obo:FOODON_00002237 "sheep milk beverage"@en)
 SubClassOf(obo:FOODON_00002237 obo:FOODON_00001043)
 
-# Class: obo:FOODON_00002238 (obsolete: cocos fruit product)
+# Class: obo:FOODON_00002238 (cocos fruit product)
 
 AnnotationAssertion(obo:IAO_0000115 obo:FOODON_00002238 "A food product that uses fruits of coconut as material."@en)
 AnnotationAssertion(obo:IAO_0100001 obo:FOODON_00002238 obo:FOODON_03316908)
 AnnotationAssertion(dcterms:contributor obo:FOODON_00002238 "https://orcid.org/0000-0002-1816-4260"^^xsd:anyURI)
 AnnotationAssertion(dcterms:contributor obo:FOODON_00002238 "https://orcid.org/0000-0002-4366-3088"^^xsd:anyURI)
-AnnotationAssertion(rdfs:label obo:FOODON_00002238 "obsolete: cocos fruit product"@en)
-AnnotationAssertion(owl:deprecated obo:FOODON_00002238 "true"^^xsd:boolean)
+AnnotationAssertion(rdfs:label obo:FOODON_00002238 "cocos fruit product"@en)
 SubClassOf(obo:FOODON_00002238 obo:FOODON_03316908)
 
 # Class: obo:FOODON_00002239 (shrimp food product)
@@ -19893,14 +19893,14 @@ AnnotationAssertion(rdfs:label obo:FOODON_00002335 "vegetable soup food product"
 EquivalentClasses(obo:FOODON_00002335 ObjectIntersectionOf(obo:FOODON_00002155 ObjectSomeValuesFrom(obo:RO_0001000 obo:FOODON_03411579)))
 SubClassOf(obo:FOODON_00002335 obo:FOODON_00002155)
 
-# Class: obo:FOODON_00002336 (vitamin and mineral food supplement food product)
+# Class: obo:FOODON_00002336 (vitamin and mineral food supplement)
 
-AnnotationAssertion(rdfs:label obo:FOODON_00002336 "vitamin and mineral food supplement food product"@en)
+AnnotationAssertion(rdfs:label obo:FOODON_00002336 "vitamin and mineral food supplement"@en)
 SubClassOf(obo:FOODON_00002336 obo:FOODON_00001874)
 
-# Class: obo:FOODON_00002337 (vitamin as food supplement food product)
+# Class: obo:FOODON_00002337 (vitamin as food supplement)
 
-AnnotationAssertion(rdfs:label obo:FOODON_00002337 "vitamin as food supplement food product"@en)
+AnnotationAssertion(rdfs:label obo:FOODON_00002337 "vitamin as food supplement"@en)
 SubClassOf(obo:FOODON_00002337 obo:FOODON_00002336)
 
 # Class: obo:FOODON_00002338 (walnut food product)
@@ -69326,6 +69326,7 @@ SubClassOf(obo:FOODON_03308763 ObjectSomeValuesFrom(obo:RO_0001000 obo:FOODON_03
 AnnotationAssertion(obo:IAO_0000115 obo:FOODON_03308764 "A raw clam with its shell on."@en)
 AnnotationAssertion(oboInOwl:hasDbXref obo:FOODON_03308764 siren:F8764)
 AnnotationAssertion(rdfs:label obo:FOODON_03308764 "clam (shell on, raw)"@en)
+SubClassOf(obo:FOODON_03308764 obo:FOODON_00005729)
 SubClassOf(obo:FOODON_03308764 obo:FOODON_03301153)
 
 # Class: obo:FOODON_03308766 (cockle (new zealand, raw))
