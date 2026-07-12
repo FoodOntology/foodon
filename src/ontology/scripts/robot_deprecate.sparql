@@ -1,0 +1,24 @@
+PREFIX owl: <http://www.w3.org/2002/07/owl#>
+PREFIX rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>
+PREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#>
+PREFIX oboInOwl: <http://www.geneontology.org/formats/oboInOwl#>
+PREFIX obo: <http://purl.obolibrary.org/obo/>
+PREFIX xsd: <http://www.w3.org/2001/XMLSchema#>
+SELECT DISTINCT ?x ?replacement ?pred ?val ?role
+
+WHERE {
+    ?x obo:IAO_0100001 ?replacement .
+    FILTER (NOT EXISTS {?x owl:deprecated true})
+    FILTER (NOT EXISTS {?replacement owl:deprecated true})
+    FILTER (STRSTARTS(STR(?x), "http://purl.obolibrary.org/obo/FOODON_"))
+    ?x rdfs:label ?label .
+    {
+        ?x ?pred ?val . FILTER (!isBlank(?val))
+        BIND("term" AS ?role)
+    }
+    UNION
+    {
+        ?replacement ?pred ?val . FILTER (!isBlank(?val))
+        BIND("replacement" AS ?role)
+    }
+}
