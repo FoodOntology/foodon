@@ -425,6 +425,7 @@ Declaration(Class(obo:BFO_0000023))
 Declaration(Class(obo:BFO_0000024))
 Declaration(Class(obo:BFO_0000027))
 Declaration(Class(obo:BFO_0000029))
+Declaration(Class(obo:BFO_0000030))
 Declaration(Class(obo:BFO_0000040))
 Declaration(Class(obo:BFO_0000141))
 Declaration(Class(obo:BTO_0000262))
@@ -562,6 +563,7 @@ Declaration(Class(obo:ENVO_00003978))
 Declaration(Class(obo:ENVO_00005747))
 Declaration(Class(obo:ENVO_00005749))
 Declaration(Class(obo:ENVO_00010483))
+Declaration(Class(obo:ENVO_00010506))
 Declaration(Class(obo:ENVO_0010001))
 Declaration(Class(obo:ENVO_0010003))
 Declaration(Class(obo:ENVO_01000001))
@@ -634,6 +636,8 @@ Declaration(Class(obo:ENVO_01001370))
 Declaration(Class(obo:ENVO_01001476))
 Declaration(Class(obo:ENVO_01001477))
 Declaration(Class(obo:ENVO_01001479))
+Declaration(Class(obo:ENVO_01001686))
+Declaration(Class(obo:ENVO_01001688))
 Declaration(Class(obo:ENVO_01001780))
 Declaration(Class(obo:ENVO_01001784))
 Declaration(Class(obo:ENVO_01001787))
@@ -789,19 +793,26 @@ Declaration(Class(obo:FOODON_00002403))
 Declaration(Class(obo:FOODON_00004325))
 Declaration(Class(obo:FOODON_03420178))
 Declaration(Class(obo:GO_0001878))
+Declaration(Class(obo:GO_0003006))
 Declaration(Class(obo:GO_0007610))
 Declaration(Class(obo:GO_0007631))
 Declaration(Class(obo:GO_0008150))
 Declaration(Class(obo:GO_0009605))
 Declaration(Class(obo:GO_0009607))
 Declaration(Class(obo:GO_0009620))
+Declaration(Class(obo:GO_0010154))
+Declaration(Class(obo:GO_0022414))
 Declaration(Class(obo:GO_0032501))
+Declaration(Class(obo:GO_0032502))
 Declaration(Class(obo:GO_0042755))
 Declaration(Class(obo:GO_0042756))
 Declaration(Class(obo:GO_0043207))
 Declaration(Class(obo:GO_0044419))
+Declaration(Class(obo:GO_0048608))
+Declaration(Class(obo:GO_0048856))
 Declaration(Class(obo:GO_0050896))
 Declaration(Class(obo:GO_0051707))
+Declaration(Class(obo:GO_0160109))
 Declaration(Class(obo:HANCESTRO_0004))
 Declaration(Class(obo:HANCESTRO_0005))
 Declaration(Class(obo:HANCESTRO_0006))
@@ -1541,6 +1552,7 @@ Declaration(Class(obo:PATO_0000146))
 Declaration(Class(obo:PATO_0000165))
 Declaration(Class(obo:PATO_0000169))
 Declaration(Class(obo:PATO_0000261))
+Declaration(Class(obo:PATO_0000274))
 Declaration(Class(obo:PATO_0000308))
 Declaration(Class(obo:PATO_0000309))
 Declaration(Class(obo:PATO_0000317))
@@ -1577,6 +1589,7 @@ Declaration(Class(obo:PATO_0000951))
 Declaration(Class(obo:PATO_0000952))
 Declaration(Class(obo:PATO_0000953))
 Declaration(Class(obo:PATO_0000954))
+Declaration(Class(obo:PATO_0000956))
 Declaration(Class(obo:PATO_0000992))
 Declaration(Class(obo:PATO_0000998))
 Declaration(Class(obo:PATO_0001018))
@@ -1648,6 +1661,7 @@ Declaration(Class(obo:PATO_0001422))
 Declaration(Class(obo:PATO_0001424))
 Declaration(Class(obo:PATO_0001425))
 Declaration(Class(obo:PATO_0001426))
+Declaration(Class(obo:PATO_0001434))
 Declaration(Class(obo:PATO_0001472))
 Declaration(Class(obo:PATO_0001501))
 Declaration(Class(obo:PATO_0001543))
@@ -2437,7 +2451,7 @@ AnnotationAssertion(obo:IAO_0000119 obo:IAO_0000114 "OBI_0000281"@en)
 AnnotationAssertion(rdfs:label obo:IAO_0000114 "has curation status")
 AnnotationAssertion(rdfs:label obo:IAO_0000114 "has curation status"@en)
 
-# Annotation Property: obo:IAO_0000115 (definition)
+# Annotation Property: obo:IAO_0000115 (textual definition)
 
 AnnotationAssertion(obo:IAO_0000111 obo:IAO_0000115 "definition")
 AnnotationAssertion(obo:IAO_0000111 obo:IAO_0000115 "definition"@en)
@@ -2449,9 +2463,9 @@ AnnotationAssertion(obo:IAO_0000115 obo:IAO_0000115 "The official OBI definition
 AnnotationAssertion(obo:IAO_0000115 obo:IAO_0000115 "The official definition, explaining the meaning of a class or property. Shall be Aristotelian, formalized and normalized. Can be augmented with colloquial definitions."@en)
 AnnotationAssertion(obo:IAO_0000115 obo:IAO_0000115 "The official definition.")
 AnnotationAssertion(obo:IAO_0000119 obo:IAO_0000115 "GROUP:OBI:<http://purl.obolibrary.org/obo/obi>"@en)
-AnnotationAssertion(rdfs:label obo:IAO_0000115 "definition")
 AnnotationAssertion(rdfs:label obo:IAO_0000115 "definition"@en)
 AnnotationAssertion(rdfs:label obo:IAO_0000115 "textual definition")
+AnnotationAssertion(rdfs:label obo:IAO_0000115 "definition")
 
 # Annotation Property: obo:IAO_0000117 (term editor)
 
@@ -2490,7 +2504,7 @@ AnnotationAssertion(rdfs:label obo:IAO_0000231 "has obsolescence reason"@en)
 # Annotation Property: obo:IAO_0000233 (term tracker item)
 
 AnnotationAssertion(obo:IAO_0000114 obo:IAO_0000233 obo:IAO_0000125)
-AnnotationAssertion(obo:IAO_0000115 obo:IAO_0000233 "An IRI or similar locator for a request or discussion of an ontology term."@en)
+AnnotationAssertion(obo:IAO_0000115 obo:IAO_0000233 "A URL for a request or discussion of an ontology term."@en)
 AnnotationAssertion(obo:IAO_0000119 obo:IAO_0000233 "Person: Jie Zheng, Chris Stoeckert, Alan Ruttenberg"@en)
 AnnotationAssertion(rdfs:label obo:IAO_0000233 "term tracker item"@en)
 
@@ -2622,7 +2636,6 @@ TransitiveObjectProperty(obo:BFO_0000050)
 
 AnnotationAssertion(obo:IAO_0000115 obo:BFO_0000051 "a core relation that holds between a whole and its part"@en)
 AnnotationAssertion(obo:IAO_0000118 obo:BFO_0000051 "has_part"@en)
-AnnotationAssertion(obo:IAO_0000412 obo:BFO_0000051 obo:obi.owl)
 AnnotationAssertion(obo:IAO_0000412 obo:BFO_0000051 obo:ro.owl)
 AnnotationAssertion(rdfs:label obo:BFO_0000051 "has part")
 AnnotationAssertion(rdfs:label obo:BFO_0000051 "has part"@en)
@@ -2663,7 +2676,6 @@ AnnotationAssertion(rdfs:label obo:HANCESTRO_0308 "hasCountryOfOrigin"@en)
 
 AnnotationAssertion(obo:IAO_0000412 obo:IAO_0000039 obo:obi.owl)
 AnnotationAssertion(rdfs:label obo:IAO_0000039 "has measurement unit label"@en)
-SubObjectPropertyOf(obo:IAO_0000039 obo:BFO_0000051)
 FunctionalObjectProperty(obo:IAO_0000039)
 
 # Object Property: obo:IAO_0000136 (is about)
@@ -5891,8 +5903,8 @@ SubClassOf(obo:BFO_0000001 owl:Thing)
 
 # Class: obo:BFO_0000002 (continuant)
 
-AnnotationAssertion(obo:IAO_0000115 obo:BFO_0000002 "An entity that exists in full at any time in which it exists at all, persists through time while maintaining its identity and has no temporal parts.")
 AnnotationAssertion(obo:IAO_0000115 obo:BFO_0000002 "An entity that exists in full at any time in which it exists at all, persists through time while maintaining its identity and has no temporal parts."@en)
+AnnotationAssertion(obo:IAO_0000115 obo:BFO_0000002 "An entity that exists in full at any time in which it exists at all, persists through time while maintaining its identity and has no temporal parts.")
 AnnotationAssertion(obo:IAO_0000412 obo:BFO_0000002 obo:agro.owl)
 AnnotationAssertion(obo:IAO_0000412 obo:BFO_0000002 obo:envo.owl)
 AnnotationAssertion(rdfs:label obo:BFO_0000002 "continuant")
@@ -5901,21 +5913,21 @@ SubClassOf(obo:BFO_0000002 obo:BFO_0000001)
 
 # Class: obo:BFO_0000004 (independent continuant)
 
-AnnotationAssertion(obo:IAO_0000115 obo:BFO_0000004 "A continuant that is a bearer of quality and realizable entity entities, in which other entities inhere and which itself cannot inhere in anything.")
 AnnotationAssertion(obo:IAO_0000115 obo:BFO_0000004 "A continuant that is a bearer of quality and realizable entity entities, in which other entities inhere and which itself cannot inhere in anything."@en)
-AnnotationAssertion(obo:IAO_0000115 obo:BFO_0000004 "b is an independent continuant = Def. b is a continuant which is such that there is no c and no t such that b s-depends_on c at t. (axiom label in BFO2 Reference: [017-002])")
 AnnotationAssertion(obo:IAO_0000115 obo:BFO_0000004 "b is an independent continuant = Def. b is a continuant which is such that there is no c and no t such that b s-depends_on c at t. (axiom label in BFO2 Reference: [017-002])"@en)
+AnnotationAssertion(obo:IAO_0000115 obo:BFO_0000004 "A continuant that is a bearer of quality and realizable entity entities, in which other entities inhere and which itself cannot inhere in anything.")
+AnnotationAssertion(obo:IAO_0000115 obo:BFO_0000004 "b is an independent continuant = Def. b is a continuant which is such that there is no c and no t such that b s-depends_on c at t. (axiom label in BFO2 Reference: [017-002])")
 AnnotationAssertion(obo:IAO_0000412 obo:BFO_0000004 obo:agro.owl)
-AnnotationAssertion(rdfs:label obo:BFO_0000004 "independent continuant")
 AnnotationAssertion(rdfs:label obo:BFO_0000004 "independent continuant"@en)
+AnnotationAssertion(rdfs:label obo:BFO_0000004 "independent continuant")
 SubClassOf(obo:BFO_0000004 obo:BFO_0000002)
 
 # Class: obo:BFO_0000015 (process)
 
-AnnotationAssertion(obo:IAO_0000115 obo:BFO_0000015 "An occurrent that has temporal proper parts and for some time t, p s-depends_on some material entity at t.")
 AnnotationAssertion(obo:IAO_0000115 obo:BFO_0000015 "An occurrent that has temporal proper parts and for some time t, p s-depends_on some material entity at t."@en)
-AnnotationAssertion(obo:IAO_0000115 obo:BFO_0000015 "p is a process = Def. p is an occurrent that has temporal proper parts and for some time t, p s-depends_on some material entity at t. (axiom label in BFO2 Reference: [083-003])")
 AnnotationAssertion(obo:IAO_0000115 obo:BFO_0000015 "p is a process = Def. p is an occurrent that has temporal proper parts and for some time t, p s-depends_on some material entity at t. (axiom label in BFO2 Reference: [083-003])"@en)
+AnnotationAssertion(obo:IAO_0000115 obo:BFO_0000015 "An occurrent that has temporal proper parts and for some time t, p s-depends_on some material entity at t.")
+AnnotationAssertion(obo:IAO_0000115 obo:BFO_0000015 "p is a process = Def. p is an occurrent that has temporal proper parts and for some time t, p s-depends_on some material entity at t. (axiom label in BFO2 Reference: [083-003])")
 AnnotationAssertion(obo:IAO_0000412 obo:BFO_0000015 obo:agro.owl)
 AnnotationAssertion(obo:IAO_0000412 obo:BFO_0000015 obo:ecocore.owl)
 AnnotationAssertion(obo:IAO_0000412 obo:BFO_0000015 obo:envo.owl)
@@ -5942,7 +5954,6 @@ SubClassOf(obo:BFO_0000017 obo:COB_0000502)
 
 # Class: obo:BFO_0000020 (specifically dependent continuant)
 
-AnnotationAssertion(obo:IAO_0000115 obo:BFO_0000020 "b is a relational specifically dependent continuant = Def. b is a specifically dependent continuant and there are n &gt; 1 independent continuants c1, … cn which are not spatial regions are such that for all 1  i &lt; j  n, ci  and cj share no common parts, are such that for each 1  i  n, b s-depends_on ci at every time t during the course of b’s existence (axiom label in BFO2 Reference: [131-004])"@en)
 AnnotationAssertion(obo:IAO_0000115 obo:BFO_0000020 "b is a specifically dependent continuant = Def. b is a continuant & there is some independent continuant c which is not a spatial region and which is such that b s-depends_on c at every time t during the course of b’s existence. (axiom label in BFO2 Reference: [050-003])"@en)
 AnnotationAssertion(obo:IAO_0000412 obo:BFO_0000020 obo:envo.owl)
 AnnotationAssertion(rdfs:label obo:BFO_0000020 "specifically dependent continuant"@en)
@@ -5957,7 +5968,6 @@ SubClassOf(obo:BFO_0000023 obo:BFO_0000017)
 # Class: obo:BFO_0000024 (fiat object part)
 
 AnnotationAssertion(obo:IAO_0000412 obo:BFO_0000024 obo:envo.owl)
-AnnotationAssertion(rdfs:label obo:BFO_0000024 "fiat object"@en)
 AnnotationAssertion(rdfs:label obo:BFO_0000024 "fiat object part"@en)
 SubClassOf(obo:BFO_0000024 obo:BFO_0000040)
 
@@ -5973,11 +5983,17 @@ AnnotationAssertion(obo:IAO_0000412 obo:BFO_0000029 obo:agro.owl)
 AnnotationAssertion(rdfs:label obo:BFO_0000029 "site"@en)
 SubClassOf(obo:BFO_0000029 obo:BFO_0000141)
 
+# Class: obo:BFO_0000030 (object)
+
+AnnotationAssertion(obo:IAO_0000412 obo:BFO_0000030 obo:envo.owl)
+AnnotationAssertion(rdfs:label obo:BFO_0000030 "object"@en)
+SubClassOf(obo:BFO_0000030 obo:BFO_0000040)
+
 # Class: obo:BFO_0000040 (material entity)
 
 AnnotationAssertion(obo:IAO_0000111 obo:BFO_0000040 "material entity"@en)
-AnnotationAssertion(obo:IAO_0000115 obo:BFO_0000040 "An independent continuant that is spatially extended whose identity is independent of that of other entities and can be maintained through time.")
 AnnotationAssertion(obo:IAO_0000115 obo:BFO_0000040 "An independent continuant that is spatially extended whose identity is independent of that of other entities and can be maintained through time."@en)
+AnnotationAssertion(obo:IAO_0000115 obo:BFO_0000040 "An independent continuant that is spatially extended whose identity is independent of that of other entities and can be maintained through time.")
 AnnotationAssertion(obo:IAO_0000412 obo:BFO_0000040 obo:agro.owl)
 AnnotationAssertion(obo:IAO_0000412 obo:BFO_0000040 obo:dron.owl)
 AnnotationAssertion(obo:IAO_0000412 obo:BFO_0000040 obo:envo.owl)
@@ -6039,6 +6055,7 @@ AnnotationAssertion(rdfs:label obo:COB_0000110 "material processing"@en)
 
 # Class: obo:COB_0000502 (characteristic)
 
+AnnotationAssertion(obo:IAO_0000412 obo:COB_0000502 obo:envo.owl)
 AnnotationAssertion(obo:IAO_0000412 obo:COB_0000502 obo:obi.owl)
 AnnotationAssertion(rdfs:label obo:COB_0000502 "characteristic"@en)
 SubClassOf(obo:COB_0000502 owl:Thing)
@@ -6945,6 +6962,13 @@ AnnotationAssertion(obo:IAO_0000412 obo:ENVO_00010483 obo:envo.owl)
 AnnotationAssertion(rdfs:label obo:ENVO_00010483 "environmental material")
 SubClassOf(obo:ENVO_00010483 obo:BFO_0000040)
 
+# Class: obo:ENVO_00010506 (emulsion)
+
+AnnotationAssertion(obo:IAO_0000115 obo:ENVO_00010506 "A mixture of two immiscible (unblendable) substances. One substance (the dispersed phase) is dispersed in the other (the continuous phase).")
+AnnotationAssertion(obo:IAO_0000412 obo:ENVO_00010506 obo:envo.owl)
+AnnotationAssertion(rdfs:label obo:ENVO_00010506 "emulsion")
+SubClassOf(obo:ENVO_00010506 obo:ENVO_00010483)
+
 # Class: obo:ENVO_0010001 (anthropogenic environmental material)
 
 AnnotationAssertion(obo:IAO_0000115 obo:ENVO_0010001 "Anthropogenic material in or on which organisms may live.")
@@ -7130,7 +7154,7 @@ SubClassOf(obo:ENVO_01000352 obo:ENVO_01000813)
 
 AnnotationAssertion(obo:IAO_0000115 obo:ENVO_01000404 "OBSOLETE A (portion of) plastic is an (portion of) anthropogenic environmental material including any of numerous organic synthetic or processed materials which are primarily composed of thermoplastic or thermosetting polymers of high molecular weight.")
 AnnotationAssertion(obo:IAO_0000412 obo:ENVO_01000404 obo:envo.owl)
-AnnotationAssertion(obo:IAO_0100001 obo:ENVO_01000404 <ENVO:06105112>)
+AnnotationAssertion(obo:IAO_0100001 obo:ENVO_01000404 "ENVO:06105112")
 AnnotationAssertion(rdfs:label obo:ENVO_01000404 "obsolete manufactured plastic")
 AnnotationAssertion(owl:deprecated obo:ENVO_01000404 "true"^^xsd:boolean)
 
@@ -7228,7 +7252,7 @@ AnnotationAssertion(obo:IAO_0000412 obo:ENVO_01000752 obo:envo.owl)
 AnnotationAssertion(rdfs:label obo:ENVO_01000752 "area of barren land"@en)
 SubClassOf(obo:ENVO_01000752 obo:ENVO_01001199)
 
-# Class: obo:ENVO_01000813 (geophysical entity)
+# Class: obo:ENVO_01000813 (astronomical body part)
 
 AnnotationAssertion(obo:IAO_0000115 obo:ENVO_01000813 "A material part of an astronomical body.")
 AnnotationAssertion(obo:IAO_0000412 obo:ENVO_01000813 obo:envo.owl)
@@ -7463,6 +7487,20 @@ AnnotationAssertion(obo:IAO_0000115 obo:ENVO_01001479 "A part of an astronomical
 AnnotationAssertion(obo:IAO_0000412 obo:ENVO_01001479 obo:envo.owl)
 AnnotationAssertion(rdfs:label obo:ENVO_01001479 "fluid astronomical body part"@en)
 SubClassOf(obo:ENVO_01001479 obo:ENVO_01000813)
+
+# Class: obo:ENVO_01001686 (mass of environmental material)
+
+AnnotationAssertion(obo:IAO_0000115 obo:ENVO_01001686 "An object which is composed primarily of an environmental material"@en)
+AnnotationAssertion(obo:IAO_0000412 obo:ENVO_01001686 obo:envo.owl)
+AnnotationAssertion(rdfs:label obo:ENVO_01001686 "mass of environmental material"@en)
+SubClassOf(obo:ENVO_01001686 obo:BFO_0000030)
+
+# Class: obo:ENVO_01001688 (mass of fluid)
+
+AnnotationAssertion(obo:IAO_0000115 obo:ENVO_01001688 "An object which is composed primarily of a fluid."@en)
+AnnotationAssertion(obo:IAO_0000412 obo:ENVO_01001688 obo:envo.owl)
+AnnotationAssertion(rdfs:label obo:ENVO_01001688 "mass of fluid"@en)
+SubClassOf(obo:ENVO_01001688 obo:ENVO_01001686)
 
 # Class: obo:ENVO_01001780 (desert ecosystem)
 
@@ -8518,18 +8556,21 @@ SubClassOf(obo:FAO_0002011 obo:FAO_0001001)
 
 # Class: obo:FLOPO_0003948 (seed split)
 
+AnnotationAssertion(obo:IAO_0000115 obo:FLOPO_0003948 "A phenotype in which a(n) seed exhibits the quality of being split."@en)
 AnnotationAssertion(obo:IAO_0000412 obo:FLOPO_0003948 obo:flopo.owl)
 AnnotationAssertion(rdfs:label obo:FLOPO_0003948 "seed split")
 SubClassOf(obo:FLOPO_0003948 obo:FOODON_03420178)
 
 # Class: obo:FLOPO_0012953 (seed mature)
 
+AnnotationAssertion(obo:IAO_0000115 obo:FLOPO_0012953 "A phenotype in which a(n) seed exhibits the quality of being mature."@en)
 AnnotationAssertion(obo:IAO_0000412 obo:FLOPO_0012953 obo:flopo.owl)
 AnnotationAssertion(rdfs:label obo:FLOPO_0012953 "seed mature")
 SubClassOf(obo:FLOPO_0012953 obo:PO_0009010)
 
 # Class: obo:FLOPO_0014628 (seed immature)
 
+AnnotationAssertion(obo:IAO_0000115 obo:FLOPO_0014628 "A phenotype in which a(n) seed exhibits the quality of being immature."@en)
 AnnotationAssertion(obo:IAO_0000412 obo:FLOPO_0014628 obo:flopo.owl)
 AnnotationAssertion(rdfs:label obo:FLOPO_0014628 "seed immature")
 SubClassOf(obo:FLOPO_0014628 obo:PO_0009010)
@@ -8548,6 +8589,14 @@ AnnotationAssertion(obo:IAO_0000115 obo:GO_0001878 "Any process that results in 
 AnnotationAssertion(obo:IAO_0000412 obo:GO_0001878 obo:ecocore.owl)
 AnnotationAssertion(rdfs:label obo:GO_0001878 "response to yeast")
 SubClassOf(obo:GO_0001878 obo:GO_0009620)
+
+# Class: obo:GO_0003006 (developmental process involved in reproduction)
+
+AnnotationAssertion(obo:IAO_0000115 obo:GO_0003006 "A developmental process in which a progressive change in the state of some part of an organism, germline or somatic, specifically contributes to its ability to form offspring.")
+AnnotationAssertion(obo:IAO_0000412 obo:GO_0003006 obo:go.owl)
+AnnotationAssertion(rdfs:label obo:GO_0003006 "developmental process involved in reproduction")
+SubClassOf(obo:GO_0003006 obo:GO_0022414)
+SubClassOf(obo:GO_0003006 obo:GO_0032502)
 
 # Class: obo:GO_0007610 (behavior)
 
@@ -8594,12 +8643,34 @@ AnnotationAssertion(rdfs:label obo:GO_0009620 "response to fungus")
 SubClassOf(obo:GO_0009620 obo:ECOCORE_00000016)
 SubClassOf(obo:GO_0009620 obo:GO_0051707)
 
+# Class: obo:GO_0010154 (fruit development)
+
+AnnotationAssertion(obo:IAO_0000115 obo:GO_0010154 "The process whose specific outcome is the progression of the fruit over time, from its formation to the mature structure. The fruit is a reproductive body of a seed plant.")
+AnnotationAssertion(obo:IAO_0000412 obo:GO_0010154 obo:go.owl)
+AnnotationAssertion(rdfs:label obo:GO_0010154 "fruit development")
+SubClassOf(obo:GO_0010154 obo:GO_0048608)
+SubClassOf(obo:GO_0010154 obo:GO_0160109)
+
+# Class: obo:GO_0022414 (reproductive process)
+
+AnnotationAssertion(obo:IAO_0000115 obo:GO_0022414 "A biological process that directly contributes to the process of producing new individuals by one or two organisms. The new individuals inherit some proportion of their genetic material from the parent or parents.")
+AnnotationAssertion(obo:IAO_0000412 obo:GO_0022414 obo:go.owl)
+AnnotationAssertion(rdfs:label obo:GO_0022414 "reproductive process")
+SubClassOf(obo:GO_0022414 obo:GO_0008150)
+
 # Class: obo:GO_0032501 (multicellular organismal process)
 
 AnnotationAssertion(obo:IAO_0000115 obo:GO_0032501 "Any biological process, occurring at the level of a multicellular organism, pertinent to its function.")
 AnnotationAssertion(obo:IAO_0000412 obo:GO_0032501 obo:go.owl)
 AnnotationAssertion(rdfs:label obo:GO_0032501 "multicellular organismal process")
 SubClassOf(obo:GO_0032501 obo:GO_0008150)
+
+# Class: obo:GO_0032502 (developmental process)
+
+AnnotationAssertion(obo:IAO_0000115 obo:GO_0032502 "A biological process whose specific outcome is the progression of an integrated living unit: an anatomical structure (which may be a subcellular structure, cell, tissue, or organ), or organism over time from an initial condition to a later condition.")
+AnnotationAssertion(obo:IAO_0000412 obo:GO_0032502 obo:go.owl)
+AnnotationAssertion(rdfs:label obo:GO_0032502 "developmental process")
+SubClassOf(obo:GO_0032502 obo:GO_0008150)
 
 # Class: obo:GO_0042755 (eating behavior)
 
@@ -8630,6 +8701,21 @@ AnnotationAssertion(obo:IAO_0000412 obo:GO_0044419 obo:ecocore.owl)
 AnnotationAssertion(rdfs:label obo:GO_0044419 "biological process involved in interspecies interaction between organisms")
 SubClassOf(obo:GO_0044419 obo:GO_0008150)
 
+# Class: obo:GO_0048608 (reproductive structure development)
+
+AnnotationAssertion(obo:IAO_0000115 obo:GO_0048608 "The reproductive developmental process whose specific outcome is the progression of somatic structures that will be used in the process of creating new individuals from one or more parents, from their formation to the mature structures.")
+AnnotationAssertion(obo:IAO_0000412 obo:GO_0048608 obo:go.owl)
+AnnotationAssertion(rdfs:label obo:GO_0048608 "reproductive structure development")
+SubClassOf(obo:GO_0048608 obo:GO_0003006)
+SubClassOf(obo:GO_0048608 obo:GO_0048856)
+
+# Class: obo:GO_0048856 (anatomical structure development)
+
+AnnotationAssertion(obo:IAO_0000115 obo:GO_0048856 "The biological process whose specific outcome is the progression of an anatomical structure from an initial condition to its mature state. This process begins with the formation of the structure and ends with the mature structure, whatever form that may be including its natural destruction. An anatomical structure is any biological entity that occupies space and is distinguished from its surroundings. Anatomical structures can be macroscopic such as a carpel, or microscopic such as an acrosome.")
+AnnotationAssertion(obo:IAO_0000412 obo:GO_0048856 obo:go.owl)
+AnnotationAssertion(rdfs:label obo:GO_0048856 "anatomical structure development")
+SubClassOf(obo:GO_0048856 obo:GO_0032502)
+
 # Class: obo:GO_0050896 (response to stimulus)
 
 AnnotationAssertion(obo:IAO_0000115 obo:GO_0050896 "Any process that results in a change in state or activity of a cell or an organism (in terms of movement, secretion, enzyme production, gene expression, etc.) as a result of a stimulus. The process begins with detection of the stimulus and ends with a change in state or activity or the cell or organism.")
@@ -8644,6 +8730,13 @@ AnnotationAssertion(obo:IAO_0000412 obo:GO_0051707 obo:ecocore.owl)
 AnnotationAssertion(rdfs:label obo:GO_0051707 "response to other organism")
 SubClassOf(obo:GO_0051707 obo:GO_0043207)
 SubClassOf(obo:GO_0051707 obo:GO_0044419)
+
+# Class: obo:GO_0160109 (plant gross anatomical part developmental process)
+
+AnnotationAssertion(obo:IAO_0000115 obo:GO_0160109 "A developmental process whose specific outcome is the progression of a gross anatomical part of a plant over time from an initial condition to a later condition.")
+AnnotationAssertion(obo:IAO_0000412 obo:GO_0160109 obo:go.owl)
+AnnotationAssertion(rdfs:label obo:GO_0160109 "plant gross anatomical part developmental process")
+SubClassOf(obo:GO_0160109 obo:GO_0032502)
 
 # Class: obo:HANCESTRO_0004 (ancestry category)
 
@@ -12432,7 +12525,7 @@ AnnotationAssertion(obo:IAO_0000412 obo:IAO_0000005 obo:obi.owl)
 AnnotationAssertion(rdfs:label obo:IAO_0000005 "objective specification"@en)
 SubClassOf(obo:IAO_0000005 obo:IAO_0000033)
 
-# Class: obo:IAO_0000027 (data item)
+# Class: obo:IAO_0000027 (data entity)
 
 AnnotationAssertion(obo:IAO_0000111 obo:IAO_0000027 "data item"@en)
 AnnotationAssertion(obo:IAO_0000114 obo:IAO_0000027 obo:IAO_0000125)
@@ -12454,7 +12547,7 @@ AnnotationAssertion(obo:IAO_0000412 obo:IAO_0000028 obo:obi.owl)
 AnnotationAssertion(rdfs:label obo:IAO_0000028 "symbol"@en)
 SubClassOf(obo:IAO_0000028 obo:IAO_0000030)
 
-# Class: obo:IAO_0000030 (information content entity)
+# Class: obo:IAO_0000030 (information)
 
 AnnotationAssertion(obo:IAO_0000111 obo:IAO_0000030 "information content entity"@en)
 AnnotationAssertion(obo:IAO_0000114 obo:IAO_0000030 obo:IAO_0000122)
@@ -12496,11 +12589,11 @@ AnnotationAssertion(obo:IAO_0000412 obo:IAO_0000078 obo:obi.owl)
 AnnotationAssertion(rdfs:label obo:IAO_0000078 "curation status specification"@en)
 SubClassOf(obo:IAO_0000078 obo:IAO_0000102)
 
-# Class: obo:IAO_0000100 (data set)
+# Class: obo:IAO_0000100 (homogenous data collection)
 
 AnnotationAssertion(obo:IAO_0000115 obo:IAO_0000100 "A data item that is an aggregate of other data items of the same type that have something in common. Averages and distributions can be determined for data sets."@en)
 AnnotationAssertion(obo:IAO_0000412 obo:IAO_0000100 obo:obi.owl)
-AnnotationAssertion(rdfs:label obo:IAO_0000100 "data set"@en)
+AnnotationAssertion(rdfs:label obo:IAO_0000100 "homogenous data collection"@en)
 SubClassOf(obo:IAO_0000100 obo:IAO_0000027)
 
 # Class: obo:IAO_0000102 (data about an ontology part)
@@ -13833,6 +13926,13 @@ AnnotationAssertion(obo:IAO_0000412 obo:PATO_0000261 obo:pato.owl)
 AnnotationAssertion(rdfs:label obo:PATO_0000261 "maturity")
 SubClassOf(obo:PATO_0000261 obo:PATO_0001995)
 
+# Class: obo:PATO_0000274 (fertility)
+
+AnnotationAssertion(obo:IAO_0000115 obo:PATO_0000274 "A reproductive quality inhering in a bearer by virtue of the bearer's initiating, sustaining, or supporting reproduction.")
+AnnotationAssertion(obo:IAO_0000412 obo:PATO_0000274 obo:pato.owl)
+AnnotationAssertion(rdfs:label obo:PATO_0000274 "fertility")
+SubClassOf(obo:PATO_0000274 obo:PATO_0001434)
+
 # Class: obo:PATO_0000308 (old)
 
 AnnotationAssertion(obo:IAO_0000115 obo:PATO_0000308 "An age which is relatively high.")
@@ -14097,6 +14197,13 @@ AnnotationAssertion(obo:IAO_0000115 obo:PATO_0000954 "Red color having medium to
 AnnotationAssertion(obo:IAO_0000412 obo:PATO_0000954 obo:pato.owl)
 AnnotationAssertion(rdfs:label obo:PATO_0000954 "pink")
 SubClassOf(obo:PATO_0000954 obo:PATO_0000322)
+
+# Class: obo:PATO_0000956 (sterile)
+
+AnnotationAssertion(obo:IAO_0000115 obo:PATO_0000956 "A fertility quality inhering in a bearer by virtue of the bearer's being incapable of initiating, sustaining, or supporting reproduction.")
+AnnotationAssertion(obo:IAO_0000412 obo:PATO_0000956 obo:pato.owl)
+AnnotationAssertion(rdfs:label obo:PATO_0000956 "sterile")
+SubClassOf(obo:PATO_0000956 obo:PATO_0000274)
 
 # Class: obo:PATO_0000992 (viscosity)
 
@@ -14600,6 +14707,13 @@ AnnotationAssertion(obo:IAO_0000115 obo:PATO_0001426 "A color consisting of purp
 AnnotationAssertion(obo:IAO_0000412 obo:PATO_0001426 obo:pato.owl)
 AnnotationAssertion(rdfs:label obo:PATO_0001426 "maroon")
 SubClassOf(obo:PATO_0001426 obo:PATO_0000014)
+
+# Class: obo:PATO_0001434 (reproductive quality)
+
+AnnotationAssertion(obo:IAO_0000115 obo:PATO_0001434 "An organismal quality inhering in a bearer by virtue of the bearer's ability to produce new life or offspring.")
+AnnotationAssertion(obo:IAO_0000412 obo:PATO_0001434 obo:pato.owl)
+AnnotationAssertion(rdfs:label obo:PATO_0001434 "reproductive quality")
+SubClassOf(obo:PATO_0001434 obo:PATO_0001995)
 
 # Class: obo:PATO_0001472 (decreased depth)
 
@@ -21335,7 +21449,7 @@ ClassAssertion(owl:Thing obo:IAO_0000120)
 
 # Individual: obo:IAO_0000121 (organizational term)
 
-AnnotationAssertion(obo:IAO_0000115 obo:IAO_0000121 "Term created to ease viewing/sort terms for development purpose, and will not be included in a release"@en)
+AnnotationAssertion(obo:IAO_0000115 obo:IAO_0000121 "The term was created to ease viewing/sorting terms for development purposes, but will not be included in a release."@en)
 AnnotationAssertion(rdfs:label obo:IAO_0000121 "organizational term"@en)
 ClassAssertion(obo:IAO_0000078 obo:IAO_0000121)
 ClassAssertion(owl:Thing obo:IAO_0000121)
@@ -21383,16 +21497,16 @@ AnnotationAssertion(rdfs:label obo:IAO_0000428 "requires discussion"@en)
 ClassAssertion(obo:IAO_0000078 obo:IAO_0000428)
 
 
-AnnotationAssertion(obo:IAO_0000412 _:genid2147483649 obo:obi.owl)
-AnnotationAssertion(obo:IAO_0000412 _:genid2147483650 obo:po.owl)
-AnnotationAssertion(obo:IAO_0000412 _:genid2147483651 obo:po.owl)
-AnnotationAssertion(obo:IAO_0000412 _:genid2147483652 obo:obi.owl)
-AnnotationAssertion(obo:IAO_0000412 _:genid2147483653 obo:po.owl)
-AnnotationAssertion(obo:IAO_0000412 _:genid2147483654 obo:po.owl)
-AnnotationAssertion(obo:IAO_0000412 _:genid2147483655 obo:po.owl)
-AnnotationAssertion(obo:IAO_0000412 _:genid2147483656 obo:obi.owl)
-AnnotationAssertion(obo:IAO_0000412 _:genid2147483657 obo:obi.owl)
-AnnotationAssertion(obo:IAO_0000412 _:genid2147483658 obo:obi.owl)
-AnnotationAssertion(obo:IAO_0000412 _:genid2147483659 obo:obi.owl)
-AnnotationAssertion(obo:IAO_0000412 _:genid2147483660 obo:obi.owl)
+AnnotationAssertion(obo:IAO_0000412 _:genid2147483788 obo:po.owl)
+AnnotationAssertion(obo:IAO_0000412 _:genid2147483789 obo:obi.owl)
+AnnotationAssertion(obo:IAO_0000412 _:genid2147483790 obo:obi.owl)
+AnnotationAssertion(obo:IAO_0000412 _:genid2147483791 obo:po.owl)
+AnnotationAssertion(obo:IAO_0000412 _:genid2147483792 obo:obi.owl)
+AnnotationAssertion(obo:IAO_0000412 _:genid2147483793 obo:obi.owl)
+AnnotationAssertion(obo:IAO_0000412 _:genid2147483794 obo:obi.owl)
+AnnotationAssertion(obo:IAO_0000412 _:genid2147483795 obo:obi.owl)
+AnnotationAssertion(obo:IAO_0000412 _:genid2147483796 obo:po.owl)
+AnnotationAssertion(obo:IAO_0000412 _:genid2147483797 obo:po.owl)
+AnnotationAssertion(obo:IAO_0000412 _:genid2147483798 obo:po.owl)
+AnnotationAssertion(obo:IAO_0000412 _:genid2147483799 obo:obi.owl)
 )

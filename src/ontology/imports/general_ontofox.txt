@@ -326,8 +326,8 @@ http://purl.obolibrary.org/obo/ENVO_00000023 #    stream
 http://purl.obolibrary.org/obo/ENVO_01000002 #    water well
 http://purl.obolibrary.org/obo/ENVO_00002018 #    sewage (contaminated with feces or urine)
 
-
-
+http://purl.obolibrary.org/obo/ENVO_01001688 # mass of fluid
+http://purl.obolibrary.org/obo/ENVO_01001686 # mass of environmental material
 
 
 # ENVIRONMENTAL MATERIAL
@@ -490,6 +490,7 @@ GO
 [Low level source term URIs]
 http://purl.obolibrary.org/obo/GO_0042756 # drinking behaviour
 http://purl.obolibrary.org/obo/GO_0042755 # eating behaviour
+http://purl.obolibrary.org/obo/GO_0010154 # fruit development
 
 [Top level source term URIs and target direct superclass URIs]
 http://purl.obolibrary.org/obo/GO_0008150 # biological process
