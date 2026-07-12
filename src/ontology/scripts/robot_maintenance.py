@@ -183,7 +183,7 @@ if __name__ == "__main__":
 
 		try:
 			# robot query --input cache-foodon-merged.owl --query temp.sparql temp.tsv
-			subprocess.run(f"robot --add-prefixes prefixes.json --xml-entities query -i {CACHED_ONTOLOGY} --query {tmp_file_name} temp.tsv", shell=True, check=True);
+			subprocess.run(f"robot --add-prefixes ../config/context.json --xml-entities query -i {CACHED_ONTOLOGY} --query {tmp_file_name} temp.tsv", shell=True, check=True);
 
 		except Exception as e:
 			print("ERROR IN ROBOT", e);
@@ -219,9 +219,9 @@ if __name__ == "__main__":
 			target = "temp_" + input_file.rsplit('/', 1)[1];
 			# Perform all queries in a series, then save in single output file as ...
 			# NOTE ISSUE: If input ontology file has some import that isn't mentioned in catalog file, robot throws a fit, even though its not given the instruction to bring in all the imports.
-			command_line = f"robot --add-prefixes prefixes.json --xml-entities query -i {input_file} {update_param} -o {target}";
+			command_line = f"robot --add-prefixes ../config/context.json --xml-entities query -i {input_file} {update_param} -o {target}";
 			# To run a single query manually:
-			#robot --add-prefixes prefixes.json --xml-entities query -i ../foodon-edit.ofn --update temp_query_ncbitaxon_owlthing.sparql -o ../foodon-edit-2.ofn
+			#robot --add-prefixes ../config/context.json --xml-entities query -i ../foodon-edit.ofn --update temp_query_ncbitaxon_owlthing.sparql -o ../foodon-edit-2.ofn
 			print ("EXECUTING QUERIES:", command_line)
 			subprocess.run(command_line, shell=True, check=True);
 
