@@ -1,228 +1,254 @@
-Ontology ID	Curation notes	parent class	label	Equivalence axiom	Subclass axiom	definition	definition source	taxa	derives from	derives from (new term)	cross reference	Exact Synonym	Related synonym	Broad Synonym	Narrow Synonym	see also	curation status	comment	image	created	term contributor	term requested
-ID		SC % SPLIT=|	AL rdfs:label@en	EC %	SC % SPLIT=|	AL IAO:0000115@en	A IAO:0000119 SPLIT=|				A oboInOwl:hasDbXref SPLIT=|	AL oboInOwl:hasExactSynonym@en SPLIT=|	AL oboInOwl:hasRelatedSynonym@en SPLIT=|	AL oboInOwl:hasBroadSynonym@en SPLIT=|	AL oboInOwl:hasNarrowSynonym@en SPLIT=|	A rdfs:seeAlso SPLIT=|	AI IAO:0000114	AL rdfs:comment@en	AI schema:image	AT dcterms:date^^xsd:dateTime	AI dcterms:contributor SPLIT=|	
-FOODON:03000463		fish oil	cod liver oil			A fish oil that is derived from the liver of cod fish.	https://en.wikipedia.org/wiki/Cod_liver_oil													2023-10-13T19:38:15Z	https://orcid.org/0000-0001-5275-8866	USDA
-FOODON:03000464		fish oil	sardine oil			A fish oil that is derived from sardine fish.														2023-10-13T19:38:15Z	https://orcid.org/0000-0001-5275-8866	
-FOODON:03000465		fish oil	menhaden oil			A fish oil that is derived from menhaden fish.	https://www.sciencedirect.com/topics/neuroscience/menhaden-oil													2023-10-13T19:38:15Z	https://orcid.org/0000-0001-5275-8866	USDA
-FOODON:03000466		menhaden oil	menhaden oil (hydrogenated)			A hydrogenated derivative of menhaden oil.														2023-10-13T19:38:15Z	https://orcid.org/0000-0001-5275-8866	
-FOODON:03000280		soybean seed (field) food product	soybean meal (defatted)			A soybean meal without hull.	https://en.wikipedia.org/wiki/Soybean_meal													2023-10-13T19:38:15Z	https://orcid.org/0000-0001-5275-8866	USDA
-FOODON:03000281		margarine food product|soybean food product	soy margarine (hydrogenated)			Margarine that is made from hydrogenated soy oil.														2023-10-13T19:38:15Z	https://orcid.org/0000-0001-5275-8866	USDA
-FOODON:03000282		skim milk (liquid)	skim milk (vitamin A and D fortified)			Skim milk that is  Vitamin A and Vitamin D fortified.	https://www.healthline.com/nutrition/fortified-milk													2023-10-13T19:38:15Z	https://orcid.org/0000-0001-5275-8866	USDA
-FOODON:03000284		skim milk (liquid)	skim milk (vitamin A and D fortified, protein fortified)			Skim milk which is Vitamin A, Vitamin D and protein fortified.														2023-10-13T19:38:15Z	https://orcid.org/0000-0001-5275-8866	USDA
-FOODON:03000283		skim milk (liquid)	skim milk (vitamin A and D fortified, nonfat milk solids added)			Skim milk which is Vitamin A and Vitamin D fortified and also have nonfat milk solids added in it.														2023-10-13T19:38:15Z	https://orcid.org/0000-0001-5275-8866	USDA
-FOODON:03000292		cow milk (liquid)	cow milk (reduced fat)			Cow milk that has approximately 2% fat.														2023-10-13T19:38:15Z	https://orcid.org/0000-0001-5275-8866	USDA
-FOODON:03000293		cow milk (reduced fat)	cow milk (reduced fat, vitamin A and D fortified, protein fortified)			Reduced fat cow milk that is Vitamin A, Vitamin D and protein fortified.														2023-10-13T19:38:15Z	https://orcid.org/0000-0001-5275-8866	USDA
-FOODON:03000291		cow milk (reduced fat)	cow milk (reduced fat, vitamin A and D fortified, nonfat milk solids added)			Reduced fat cow milk that  and is Vitamin A and Vitamin D fortified and have nonfat milk solids added in it.														2023-10-13T19:38:15Z	https://orcid.org/0000-0001-5275-8866	USDA
-FOODON:03000285		lowfat cow milk (1% fat)	lowfat cow milk (1% fat, vitamin A and D fortified, nonfat milk solids added)			Low fat cow milk that contains 1% fat, and is Vitamin A and Vitamin D fortified, and has nonfat milk solids added in it.														2023-10-13T19:38:15Z	https://orcid.org/0000-0001-5275-8866	USDA
-FOODON:03000467		cow whole milk 3.5% fat	cow whole milk 3.5% fat (vitamin D fortified)			Cow whole milk that is Vitamin D fortified.														2023-10-13T19:38:15Z	https://orcid.org/0000-0001-5275-8866	
-FOODON:03000289		chocolate cow milk food product	chocolate milk (reduced fat)			Chocolate milk in which milk fat is 2% of the total weight of the milk.														2023-10-13T19:38:15Z	https://orcid.org/0000-0001-5275-8866	
-FOODON:03000290		chocolate milk (reduced fat)	chocolate milk (reduced fat, vitamin A and D fortified)			Reduced fat chocolate milk that is Vitamin A and D fortified.														2023-10-13T19:38:15Z	https://orcid.org/0000-0001-5275-8866	
-FOODON:03000294		chocolate cow milk food product	chocolate whole milk (vitamin A and D fortified)			Chocolate whole milk that is Vitamin A and D fortified.	https://nunuchocolates.com/whole-chocolate-milk-the-good-the-bad-and-the-delicious/													2023-10-13T19:38:15Z	https://orcid.org/0000-0001-5275-8866	
-FOODON:03000468		chocolate milk (low fat)	chocolate milk (low fat, Vitamin A and D fortified)			Low fat chocolate milk that is Vitamin A and Vitamin D fortified.														2023-10-13T19:38:15Z	https://orcid.org/0000-0001-5275-8866	
-FOODON:03000295		butter oil	ucuhuba butter oil			Butter oil that is made from the seeds of ucuuba tree (Virola surinamensis).														2023-10-13T19:38:15Z	https://orcid.org/0000-0001-5275-8866	
-FOODON:03000286		mustard (prepared)	yellow mustard (prepared)			A food product that is made from yellow mustard.														2023-10-13T19:38:15Z	https://orcid.org/0000-0001-5275-8866	
-FOODON:03000491		flour food product	arrowroot flour food product			A food product that is derived from arrowroot flour.	https://en.wikipedia.org/wiki/Arrowroot													2023-10-13T19:38:15Z	https://orcid.org/0000-0001-5275-8866	
-FOODON:03000469		arrowroot flour food product	arrowroot flour			A white, powdery starch extracted from the rhizome of an arrowroot plant (Maranta arundinacea), which is naturally gluten-free and grain-free.	https://en.wikipedia.org/wiki/Arrowroot													2023-10-13T19:38:15Z	https://orcid.org/0000-0001-5275-8866	
-FOODON:03000470		shortening	shortening (partially hydrogenated)			Shortening made from partially hydrogenated oil.	https://bakerpedia.com/ingredients/partially-hydrogenated-oil-pho/													2023-10-13T19:38:15Z	https://orcid.org/0000-0001-5275-8866	
-FOODON:03000471		goat dairy food product	goat milk (vitamin d fortified)			Goat milk that is vitamin D fortified.														2023-10-13T19:38:15Z	https://orcid.org/0000-0001-5275-8866	
-FOODON:03000472		ricotta cheese	ricotta cheese (made from whole milk)			Ricotta chesse that is made from whole milk.														2023-10-13T19:38:15Z	https://orcid.org/0000-0001-5275-8866	
-FOODON:03000473		hard grating cheese food product	romano cheese			Hard grating cheese that is made from cow, goat, and/or sheep's milk and contain less than 34% water and at least 38% milkfat.	https://en.wikipedia.org/wiki/Romano_cheese													2023-10-13T19:38:15Z	https://orcid.org/0000-0001-5275-8866	
-FOODON:03000474		cow buttermilk food product	cow buttermilk (low fat, cultured)			Cow buttermilk that has low fat and is cultured.														2023-10-13T19:38:15Z	https://orcid.org/0000-0001-5275-8866	
-FOODON:03000475		cottage cheese	cottage cheese (reduced fat)			Cottage cheese that has 2% milk fat.														2023-10-13T19:38:15Z	https://orcid.org/0000-0001-5275-8866	
-FOODON:03000476		butter (whipped)	butter (whipped, salted)			Whipped butter that contains salt.						sour cream (reduced fat)								2023-10-13T19:38:15Z	https://orcid.org/0000-0001-5275-8866	
-FOODON:03000477		sour cream	light sour cream			Sour cream that is made from half-and-half and has around 40 percent less fat.														2023-10-13T19:38:15Z	https://orcid.org/0000-0001-5275-8866	
-FOODON:03000478		mozzarella cheese	mozzarella cheese (made with whole milk, low moisture)			Mozzeralla cheese that is made from whole cow’s milk and has low moisture.														2023-10-13T19:38:15Z	https://orcid.org/0000-0001-5275-8866	
-FOODON:03000479		cheese food product	american cheese food product			A cheese food product that is derived from american cheese.														2023-10-13T19:38:15Z	https://orcid.org/0000-0001-5275-8866	
-FOODON:03000480		american cheese food product	american cheese			Cheese that is made from cheddar, Colby, or similar cheeses. It is mild with a creamy and salty flavor, has a medium-firm consistency, and has a low melting point. It is typically yellow or white in color.	https://en.wikipedia.org/wiki/American_cheese													2023-10-13T19:38:15Z	https://orcid.org/0000-0001-5275-8866	
-FOODON:03000481		american cheese	american cheese (fat free)			American cheese that is made from fat free milk.	https://en.wikipedia.org/wiki/American_cheese													2023-10-13T19:38:15Z	https://orcid.org/0000-0001-5275-8866	
-FOODON:03000482		american cheese	pasteurized process american cheese			American cheese that is made from combining more than one cheese.	https://en.wikipedia.org/wiki/American_cheese													2023-10-13T19:38:15Z	https://orcid.org/0000-0001-5275-8866	
-FOODON:03000483		pasteurized process american cheese	pasteurized process american cheese (vitamin D fortified)			A pasteurized process american cheese that is vitamin D fortified.	https://en.wikipedia.org/wiki/American_cheese													2023-10-13T19:38:15Z	https://orcid.org/0000-0001-5275-8866	
-FOODON:03000490		pasteurized process american cheese food	pasteurized process american cheese food (vitamin D fortified)			A pasteurized process american cheese food that is vitamin D fortified.														2023-10-13T19:38:15Z	https://orcid.org/0000-0001-5275-8866	
-FOODON:03000485		pasteurized process cheese spread	pasteurized process american cheese spread			A pasteurized process cheese spread that is derived from american cheese.														2023-10-13T19:38:15Z	https://orcid.org/0000-0001-5275-8866	
-FOODON:03000486		ricotta cheese	ricotta cheese (part-skim)			Ricotta cheese that is partly skimmed and have less fat and calories.														2023-10-13T19:38:15Z	https://orcid.org/0000-0001-5275-8866	
-FOODON:03000487		nonfat dry milk (instant)	nonfat dry milk (instant, vitamin A and D fortified)			Not fat instant dry milk that is vitamin A and vitamin D fortified.														2023-10-13T19:38:15Z	https://orcid.org/0000-0001-5275-8866	
-FOODON:03000488		full cream milk (dry)	full cream milk (dry, vitamin D fortified)			Full cream milk powder that is vitamin D fortified.														2023-10-13T19:38:15Z	https://orcid.org/0000-0001-5275-8866	
-FOODON:03000489		cheese food product	gjetost cheese			A brown norwegian cheese made of goat's milk or a blend of goat and cow's milk. It is produced by slowly heating a vat of whey, cream and milk.	https://en.wikipedia.org/wiki/Brunost													2023-10-13T19:38:15Z	https://orcid.org/0000-0001-5275-8866	
-FOODON:03000287		cheese food product	cheese			A dairy product that is formed by coagulation of the milk protein casein.	https://en.wikipedia.org/wiki/Cheese													2023-10-13T19:38:15Z	https://orcid.org/0000-0001-5275-8866	GRDI
-FOODON:03000484		pasteurized process cheese food	pasteurized process american cheese food			American cheese that contains at least 51% cheese but other specific dairy ingredients such as cream, milk, skim milk, buttermilk, cheese whey, or albumin from cheese whey are added.	https://en.wikipedia.org/wiki/American_cheese													2023-10-13T19:38:15Z	https://orcid.org/0000-0001-5275-8866	
-FOODON:03000288		bread food product	bread			A food prepared from a dough of flour and water, usually by baking.	https://en.wikipedia.org/wiki/Bread													2023-10-13T19:38:15Z	https://orcid.org/0000-0001-5275-8866	GRDI
-FOODON:03000296		tallow (edible)	mutton tallow			Rendered fat from a sheep.	https://en.wikipedia.org/wiki/Tallow													2023-10-13T19:38:15Z	https://orcid.org/0000-0001-5275-8866	
-			PTFI Requests																			
-FOODON:00004695		white bean food product|flatbread	white bean flatbread			A flatbread made with dried white beans.															https://orcid.org/0000-0001-5275-8866	PTFI
-FOODON:00004696		animal-based stew or hash	elk stew meat			Chopped elk meat suitable for cooking into a stew.															https://orcid.org/0000-0001-5275-8866	PTFI
-FOODON:00004697		tofu food product	tofu			A food product that is prepared by coagulating soy milk and then pressing the resulting curds into solid white blocks of varying softness: silken, soft, firm, extra firm.	https://en.wikipedia.org/wiki/Tofu					bean curd									https://orcid.org/0000-0001-5275-8866	PTFI
-FOODON:00005438		tofu	tofu (raw)	'tofu' and 'has quality' some 'raw'		A raw tofu																USDA
-FOODON:00004698		tofu	extra firm tofu			A tofu that has less water than firm tofu.	https://en.wikipedia.org/wiki/Tofu														https://orcid.org/0000-0001-5275-8866	PTFI
-FOODON:00004699		extra firm tofu	extra firm tofu (raw)			An extra firm tofu that is raw.	https://en.wikipedia.org/wiki/Tofu														https://orcid.org/0000-0001-5275-8866	PTFI
-FOODON:00004700		extra firm tofu	extra firm tofu (sauteed)			An extra firm tofu which has been sauteed.	https://en.wikipedia.org/wiki/Tofu														https://orcid.org/0000-0001-5275-8866	PTFI
-FOODON:00004701		wheat food product	farro food product			A food product that has farro as a defining ingredient.															https://orcid.org/0000-0001-5275-8866	PTFI
-FOODON:00004702		farro food product|whole grain|caryopsis fruit	farro kernel			 A caryopsis fruit of any of three hulled wheat species: spelt (Triticum spelta), emmer (Triticum dicoccum), and einkorn (Triticum monococcum).	https://en.wikipedia.org/wiki/Farro|https://www.wheatfoods.org/resources/wheat-facts/ancient-wheat-and-pseudo-grains/														https://orcid.org/0000-0001-5275-8866	PTFI
-FOODON:00005281		farro kernel	farro kernel (raw)			A farro kernel which is raw (not dried).															https://orcid.org/0000-0001-5275-8866	PTFI
-FOODON:00004703		farro kernel	farro kernel (cooked)			A farro kernel which is cooked.															https://orcid.org/0000-0001-5275-8866	PTFI
-FOODON:00004704		duck egg white	duck egg white (boiled)			A duck egg white that has been boiled.															https://orcid.org/0000-0001-5275-8866	PTFI
-FOODON:00004705		duck egg yolk	duck egg yolk (boiled)			A duck egg yolk that has been boiled.															https://orcid.org/0000-0001-5275-8866	PTFI
-FOODON:00004706		Monterey Jack cheese product	Monterey Jack cheese flavoured with chili flakes			A variant of monterey jack cheese that is flavoured with chili flakes.															https://orcid.org/0000-0001-5275-8866	PTFI
-FOODON:00004711		cricket food product	cricket powder			A powder that is made from a cricket.															https://orcid.org/0000-0001-5275-8866	PTFI
-FOODON:00004708		cricket powder	house cricket powder			A powder that is made from a house cricket.															https://orcid.org/0000-0001-5275-8866	PTFI
-FOODON:00004712		cricket powder	jamaican cricket powder			A powder that is made from a jamaican cricket.															https://orcid.org/0000-0001-5275-8866	PTFI
-			USDA Mappings																			
-FOODON:00005456	FOODON:00005185	seal food product|oil	bearded seal oil			Oil that is derived from blubber of a bearded seal.															https://orcid.org/0000-0001-5275-8866	USDA
-FOODON:00005457	FOODON:00005186	seal food product|oil	spotted seal oil			Oil that is derived from the blubber of a spotted seal.															https://orcid.org/0000-0001-5275-8866	USDA
-FOODON:00005458	FOODON:00005187	oil	walrus oil			Oil that is derived from the blubber of a walrus.															https://orcid.org/0000-0001-5275-8866	USDA
-FOODON:00005459	FOODON:00005188	whale food product|oil	bowhead whale oil			Oil that is derived from the blubber of a bowhead whale.															https://orcid.org/0000-0001-5275-8866	USDA
-FOODON:00005460	FOODON:00005189	fish oil	herring oil			Oil that is derived from herring.															https://orcid.org/0000-0001-5275-8866	USDA
-FOODON:00005454		whale food product|oil	beluga oil			Oil that is derived from beluga whale.																
-FOODON:00005461	FOODON:00005190	oil|cocoa food product	cocoa butter oil			Oil that is derived from the fat extracted from cocoa beans.															https://orcid.org/0000-0001-5275-8866	USDA
-FOODON:00005462	FOODON:00005191	tangerine juice	"tangerine juice (unpasteurized)"			Juice extracted from tangerines that has not undergone pasteurization.															https://orcid.org/0000-0001-5275-8866	USDA
-FOODON:00005463	FOODON:00005192	apple juice	apple juice (unpasteurized)			Apple juice that has not undergone pasteurization.															https://orcid.org/0000-0001-5275-8866	USDA
-FOODON:00005464	FOODON:00005193	lemon juice	lemon juice (unpasteurized)			Lemon juice that has not undergone pasteurization.															https://orcid.org/0000-0001-5275-8866	USDA
-FOODON:00005465	FOODON:00005194	lime juice	lime juice (unpasteurized)			Lime juice that has not undergone pasteurization.															https://orcid.org/0000-0001-5275-8866	USDA
-FOODON:00001277	FOODON:00005195	orange juice (liquid)	orange juice (unpasteurized)			Orange juice that has not undergone pasteurization.															https://orcid.org/0000-0001-5275-8866	USDA
-FOODON:00005439		acerola juice	acerola juice (unpasteurized)			Acerola juice that has not undergone pasteurization.																
-FOODON:00005455		tropical fruit food product	passion fruit food product			A food product which derives from passion fruit																
-FOODON:00005467	FOODON:00005454	fruit juice (liquid)|passion fruit food product	purple passion fruit juice			Fruit juice which derives from purple passion fruit.																
-FOODON:00005440		purple passion fruit juice	purple passion fruit juice (unpasteurized)			Purple passion fruit juice that is raw.															https://orcid.org/0000-0001-5275-8866	USDA
-FOODON:00005468	FOODON:00005199	pink grapefruit juice	pink grapefruit juice (unpasteurized)			Pink grapefruit juice that is raw.															https://orcid.org/0000-0001-5275-8866	USDA
-FOODON:00005596		fruit juice (liquid)|passion fruit food product	yellow passion fruit juice																			
-FOODON:00005469		yellow passion fruit juice	yellow passion fruit juice (unpasterized)																			
-FOODON:00005441		fruit juice (liquid)|pomegranate food product	pomegranate juice			 A fruit juice made from pomegranate.																
-FOODON:03301127		fruit juice (liquid)|grape berry food product	grape juice			 A fruit juice made from grapes.																
-FOODON:00005470	FOODON:00005196	coconut milk	coconut milk (unpasteurized)			Coconut milk that has not undergone pasteurization.																USDA
-FOODON:00005471	FOODON:00005197	coconut cream	coconut cream (unpasteurized)			Coconut cream that has not undergone pasteurization.																USDA
-FOODON:00005472	FOODON:00005200	soursop food product	guanabana nectar			Nectar derived from the pulp of the guanabana fruit.															https://orcid.org/0000-0001-5275-8866	USDA
-FOODON:00005473	FOODON:00005201	tamarind food product	tamarind nectar			Nectar derived from the pulp of the tamarind fruit.															https://orcid.org/0000-0001-5275-8866	USDA
-FOODON:00005474	FOODON:00005202	skim milk (liquid)	skim milk (without added vitamin a and d)			Skim milk without the addition of vitamins A and D.															https://orcid.org/0000-0001-5275-8866	USDA
-FOODON:00005475	FOODON:00005203	nonfat dry milk	nonfat dry milk (instant, without added vitamin A and D)			Instant nonfat dry milk without the addition of vitamins A and D.															https://orcid.org/0000-0001-5275-8866	USDA
-FOODON:00005476	FOODON:00005204	cow milk (reduced fat)	cow milk (reduced fat, without added Vitamin A and Vitamin D)			Reduced-fat cow milk, which has not been fortified with vitamins A and D															https://orcid.org/0000-0001-5275-8866	USDA
-FOODON:00005477	FOODON:00005205	lowfat cow milk (1% fat)	lowfat cow milk (1% fat,  without added Vitamin A and Vitamin D)			Low-fat cow milk containing 1% fat, without the addition of vitamins A and D															https://orcid.org/0000-0001-5275-8866	USDA
-FOODON:00005478	FOODON:00005206	cow milk (liquid)	cow whole milk																			
-FOODON:00005479	FOODON:00005207	cow whole milk	cow whole milk (without additives)			Cow whole milk without the addition of vitamins A and D.																USDA
-FOODON:00005480		cow whole milk	cow whole milk (without Vitamin D)			Cow whole milk without the addition of vitamins D.																
-FOODON:00005481	FOODON:00005208	cow whole milk 3.5% fat	cow whole milk 3.5% fat (without added Vitamin A and Vitamin D)			Whole cow milk with 3.5% fat content and without the addition of vitamins A and D.															https://orcid.org/0000-0001-5275-8866	USDA
-FOODON:00005482	FOODON:00005209	evaporated milk	evaporated milk (reduced fat, Vitamin A and Vitamin D fortified)			Evaporated milk with 2% fat content, fortified with vitamins A and D.															https://orcid.org/0000-0001-5275-8866	USDA
-FOODON:00005483	FOODON:00005210	cow milk (reduced fat)	cow milk (reduced fat, Without added Vitamin A, nonfat milk solids added)			Evaporated milk that is fortified with vitamins A.																USDA
-FOODON:00005484	FOODON:00005211	skim milk (liquid)	skim milk (calcium-fortified)			Skim milk with added calcium.															https://orcid.org/0000-0001-5275-8866	USDA
-FOODON:00005485	FOODON:00005212	evaporated milk (canned, fortified)	evaporated milk (with added vitamin A)			Evaporated milk that is fortified with vitamin A.																USDA
-FOODON:00005486	FOODON:00005213	tofu food product	tofu (fermented)			Tofu that has undergone a fermentation process.															https://orcid.org/0000-0001-5275-8866	USDA
-FOODON:00005487	FOODON:00005214	tallow (edible)	beef tallow			 A fat rendered from beef, typically from the fat surrounding organs and muscles.															https://orcid.org/0000-0001-5275-8866	USDA
-FOODON:00005488	FOODON:00005215	pea	pea (mashed)			Cooked green peas that are smashed to create a creamy texture.															https://orcid.org/0000-0001-5275-8866	USDA
-FOODON:00005489	FOODON:00005216	prune food product|fruit puree	prune puree			A semiliquid, smooth mixture made from cooked prunes (dried plums).															https://orcid.org/0000-0001-5275-8866	USDA
-FOODON:00005490	FOODON:00005217	carrot food product	carrot puree			A semiliquid, smooth mixture made from cooked carrots.															https://orcid.org/0000-0001-5275-8866	USDA
-FOODON:00005491	FOODON:00005218	fruit puree|banana food product	banana puree			A semiliquid, smooth mixture made from ripe bananas.															https://orcid.org/0000-0001-5275-8866	USDA
-FOODON:00005492	FOODON:00005229	squash food product	squash puree			Puree made from cooked squash, that is blended to a smooth consistency.															https://orcid.org/0000-0001-5275-8866	USDA
-FOODON:00005493	FOODON:00005230	sweet potato food product	sweet potato puree			Puree made from cooked sweet potato, that is blended to a smooth consistency.															https://orcid.org/0000-0001-5275-8866	USDA
-FOODON:00005494	FOODON:00005231	beet food product	beet puree			Puree made from cooked beet root, that is blended to a smooth consistency.																USDA
-FOODON:00005443		green bean food product	green bean puree			Puree made from cooked green beans, that is blended to a smooth consistency.																
-FOODON:00005495	FOODON:00005219	butter	clarified butter			Butter from which all milk solids have been removed.															https://orcid.org/0000-0001-5275-8866	USDA
-FOODON:00005496	FOODON:00005220	apple juice	apple juice (calcium-fortified)			Apple juice with added calcium.															https://orcid.org/0000-0001-5275-8866	USDA
-FOODON:00005497	FOODON:00005221	orange juice (liquid)	orange juice (without pulp)			Orange juice that has been strained to remove the pulp.															https://orcid.org/0000-0001-5275-8866	USDA
-FOODON:00005498	FOODON:00005222	pasta food product	corn pasta			Pasta that is made from corn flour.															https://orcid.org/0000-0001-5275-8866	USDA
-FOODON:03310185	FOODON:00005223	clarified butter	ghee			A type of clarified butter originating from the Indian subcontinent.					https://bioregistry.io/reference/siren:F10185										https://orcid.org/0000-0001-5275-8866	USDA
-FOODON:00005500	FOODON:00005224	flour | sesame food product	sesame flour			A flour that is made by grinding defatted sesame seeds.															https://orcid.org/0000-0001-5275-8866	USDA
-FOODON:00005732	FOODON:00005225	sunflower food product	sunflower seed butter			A seed butter that is made from ground sunflower seeds.						sunflower seed butter									https://orcid.org/0000-0001-5275-8866	USDA
-FOODON:00005503	FOODON:00005227	vinegar food product	balsamic vinegar			A traditional Italian vinegar made wholly or partially from grape must, which is freshly crushed grape juice containing all the skins, seeds, and stems															https://orcid.org/0000-0001-5275-8866	USDA
-FOODON:00005504	FOODON:00005228	popcorn (popped)	popcorn (air-popped)			Popcorn that is popped using hot air.															https://orcid.org/0000-0001-5275-8866	USDA
-FOODON:00005505	FOODON:00005232	rice cereal	brown rice cereal			Cereal made from whole brown rice kernels, often processed for easier consumption.															https://orcid.org/0000-0001-5275-8866	USDA
-FOODON:00005506	FOODON:00005233	brown rice cereal	brown rice cereal (dry, instant)			Brown rice cereal that is dried and is meant to be prepared instantly.															https://orcid.org/0000-0001-5275-8866	USDA
-FOODON:00005507	FOODON:00005234	cow food product	corned beef			Beef that has been cured with salt and spices, typically from the brisket cut.															https://orcid.org/0000-0001-5275-8866	USDA
-FOODON:00005508	FOODON:00005235	bologna	beef bologna			Bologna that is made from beef.															https://orcid.org/0000-0001-5275-8866	USDA
-FOODON:00005509	FOODON:00005236	bologna	chicken bologna			Bologna that is made from chicken meat.																USDA
-FOODON:00005510	FOODON:00005237	bologna	pork bologna			Bologna that is made from pork.																USDA
-FOODON:00005511	FOODON:00005238	bologna	turkey bologna			Bologna that is made from turkey meat.																USDA
-FOODON:00005512	FOODON:00005239	macaroni or noodle food product	beef macaroni			Macaroni that is made from beef.															https://orcid.org/0000-0001-5275-8866	USDA
-FOODON:00005513	FOODON:00005240	fruit sauce	guava sauce			A fruit sauce made from guava.															https://orcid.org/0000-0001-5275-8866	USDA
-FOODON:00005514	FOODON:00005241	sugar (refined)	sugar (powdered)																		https://orcid.org/0000-0001-5275-8866	USDA
-FOODON:00005515	FOODON:00005242	tea (steeped)	green tea (steeped)			Steeped tea made from green tea leaves (Camellia sinensis).															https://orcid.org/0000-0001-5275-8866	USDA
-FOODON:00005243		tea (steeped)	black tea (steeped)			Steeped tea made from fully oxidized black tea leaves (Camellia sinensis)															https://orcid.org/0000-0001-5275-8866	USDA
-FOODON:00005516	FOODON:00005244	tea (steeped)	hibiscus tea (steeped)			Steeped tea made from dried hibiscus flowers (Hibiscus sabdariffa).															https://orcid.org/0000-0001-5275-8866	USDA
-FOODON:00005517	FOODON:00005245	tea (steeped)	oolong tea (steeped)			Steeped tea made from partially oxidized tea leaves (Camellia sinensis).															https://orcid.org/0000-0001-5275-8866	USDA
-FOODON:00005518	FOODON:00005246	tea (decaffeinated)	black tea (decaffeinated)			Black tea that has most of its caffeine removed through a decaffeination process, while preserving its flavor, aroma, and other characteristic properties.																USDA
-FOODON:00005444		tea (decaffeinated)	green tea (decaffeinated)			Green tea that has most of its caffeine removed through a decaffeination process, while preserving its flavor, aroma, and other characteristic properties.																
-FOODON:00005519	FOODON:00005247	tea (dry, instant)	lemon tea (dry, instant)			"A beverage mix that quickly dissolves in hot or cold water to create a lemon-flavoured tea."																USDA
-FOODON:00005520	FOODON:00005248	soybean flour	soybean flour (full fat)			A soybean flour that is made from whole soybeans, retaining all of the natural oils, which gives it a higher fat content.																USDA
-FOODON:00005521	FOODON:00005249	soybean flour	soybean flour (low fat)			A soybean flour made from whole soybeans that has been processed to reduce its natural oil content.																USDA
-	FOODON:00005250	flour| sesame food product	sesame flour DUPLICATE			A flour that is made by grinding defatted sesame seeds after oil extraction.																USDA
-FOODON:00005523	FOODON:00005251	flour	acorn flour			A flour that is made by grinding acorns, the nuts of oak trees, after they have been properly processed to remove tannin.																USDA
-FOODON:00005524	FOODON:00005252	animal protein supplement	whey protein isolate			A refined form of whey protein, processed to remove most of the fat and lactose, resulting in a higher protein content.																USDA
-FOODON:00005525	FOODON:00005253	bratwurst	chicken bratwurst			Bratwurst that is made from chicken meat.																USDA
-FOODON:00005526	FOODON:00005254	bratwurst	pork bratwurst			Bratwurst that is made from pork.																USDA
-FOODON:00005527	FOODON:00005255	bratwurst	veal bratwurst			Bratwurst that is made from veal.																USDA
-FOODON:00005528	FOODON:00005256	wheat pasta	whole wheat pasta			Pasta made from whole wheat flour that retains the bran, germ, and endosperm of the wheat grain.																USDA
-FOODON:00005529	FOODON:00005257	white corn flour	whole grain white corn flour			Flour made from the whole kernels of white corn (Zea mays), which includes the bran, germ, and endosperm.																USDA
-FOODON:00005530	FOODON:00005258	white cornmeal	whole grain white cornmeal			Cornmeal made from whole white corn kernels (Zea mays), which includes the bran, germ, and endosperm																USDA
-FOODON:00005531	FOODON:00005259	"bacon (whole cut or pieces)|turkey meat food product"	turkey bacon			A bacon made from turkey meat.																USDA
-FOODON:00005532	FOODON:00005260	milled durum wheat	couscous			A dish made from durum wheat semolina, which is moistened and rolled into small granules, then steamed or boiled.																USDA
-FOODON:00005533	FOODON:00005261	turkey sausage	turkey sausage (raw)			A turkey sausage that is raw.																USDA
-FOODON:00005534	FOODON:00005262	salami	beef salami			Salami made from beef.																USDA
-FOODON:00005535	FOODON:00005263	salami	turkey salami			Salami made from turkey meat.																USDA
-FOODON:00005536	FOODON:00005264	salami	pork salami			Salami made from pork meat.																USDA
-FOODON:00005537	FOODON:00005265	patty	chicken patty			A patty made from chicken meat.																USDA
-FOODON:00005538	FOODON:00005266	salmon food product	salmon nugget			A nugget made from salmon meat that is often breaded or battered and typically fried or baked.																USDA
-FOODON:00005539	FOODON:00005267	tofu	soft tofu			A tofu that has a smooth, delicate texture and high moisture content																USDA
-FOODON:00005540	FOODON:00005268	tofu	firm tofu			A tofu that has a denser texture with lower moisture content, allowing it to hold its shape well during cooking.																USDA
-FOODON:00005541	FOODON:00005269	tofu	silken tofu			A tofu that has a creamy, smooth texture and high moisture content.																USDA
-FOODON:00005542	FOODON:00005270	silken tofu	silken soft tofu			A tofu that has an ultra-creamy texture and high moisture content.																USDA
-FOODON:00005543	FOODON:00005271	silken tofu	silken firm tofu			A tofu that has a creamy texture while being slightly firmer, making it versatile for both savory and sweet dishes that require shape retention.																USDA
-FOODON:00005544	FOODON:00005272	silken tofu	super firm tofu			 A tofu that has minimal moisture and an extremely dense texture, ideal for grilling, frying, or baking while maintaining its shape.																USDA
-FOODON:00005545	FOODON:00005273	silken tofu	silken extra firm tofu			A tofu that has a denser texture while retaining some creaminess.																USDA
-FOODON:00005546	FOODON:00005274	silken tofu	silken lite firm tofu			 A tofu that has a lighter texture with reduced fat content, providing a balance of creaminess and firmness																USDA
-FOODON:00005547	FOODON:00005275	silken tofu	silken lite extra firm tofu			A tofu that has the densest texture with reduced fat.																USDA
-FOODON:00005548	FOODON:00005276	carob food product	Carob flour			A flour made from ground carob pod, which is the dried fruit of the carob tree (Ceratonia siliqua).																USDA
-FOODON:00005549	FOODON:00005277	fruit powder	baobab powder			A powder made from the dried fruit pulp of the baobab tree (Adansonia spp).																USDA
-FOODON:00005550	FOODON:00005278	fruit juice (liquid)	tart cherry juice			A fruit juice made from tart cherry.																USDA
-	FOODON:00005279	pork meat food product	pork headcheese DUPLICATE OF pork head cheese			Headcheese made from pork.																USDA
-FOODON:00005552	FOODON:00005280	fruit puree	raspberry puree			A puree made from raspberry.																USDA
-FOODON:00005553	FOODON:00005281	bran cereal	oat bran cereal			A cereal that is made from the outer layer of the oat grain (the bran), which is separated from the endosperm and germ.																USDA
-FOODON:00005554	FOODON:00005282	pastrami	turkey pastrami			Pastrami that is made from turkey meat																USDA
-FOODON:00005555	FOODON:00005283	noodle	rice noodle			Noodles that are made from rice.																USDA
-FOODON:00005556	FOODON:00005284	cornmeal	whole grain cornmeal			Cornmeal that is made by grinding the whole corn kernel, including the bran, germ, and endosperm.																
-FOODON:00005557	FOODON:00005285	whole grain cornmeal|yellow cornmeal	whole grain yellow cornmeal			Cornmeal that is made by grinding the whole yellow corn kernel, including the bran, germ, and endosperm.																USDA
-FOODON:00005558	FOODON:00005286	wheat cereal	wheat germ cereal			Wheat cereal made from the germ of the wheat kernel, which is the part of the grain that can sprout into a new wheat plant.																USDA
-FOODON:00005559	FOODON:00005287	breakfast cereal (whole grain)|wheat cereal	whole wheat cereal			Breakfast cereal that is made from whole wheat grains that include all parts of the grain—the bran, germ, and endosperm.																USDA
-FOODON:00005560	FOODON:00005288	pork sausage	pork sausage link			A pork sausage made from ground pork mixed with spices and seasonings, encased in a natural or synthetic casing to form individual cylindrical links.																USDA
-FOODON:00005561	FOODON:00005289	pork sausage	pork sausage patty			A pork sausage made from ground pork mixed with spices and seasonings, formed into a flat, round disc shape without the use of a casing.																USDA
-FOODON:00005562	FOODON:00005290	rice cereal food product	cream of rice			A finely ground rice cereal food product, that can be cooked with water or milk to form a smooth, creamy cereal.																USDA
-FOODON:00005563	FOODON:00005291	wheat cereal food product	cream of wheat			A finely ground wheat cereal food product, specifically farina, that is cooked with water or milk to create a smooth and creamy porridge.																USDA
-FOODON:00005564	FOODON:00005292	puffed rice cereal	puffed rice cereal (fortified)			Puffed rice cereal that has been fortified to enhance its nutritional value.																USDA
-FOODON:00005565	FOODON:00005293	puffed wheat cereal	puffed wheat cereal (fortified)			Puffed wheat cereal that has been fortified to enhance its nutritional value.																USDA
-	FOODON:00005294	sunflower food product	sunflower seed butter DUPLICATE			A seed butter that is made from ground sunflower seeds.																USDA
-FOODON:00005567	FOODON:00005295	noodle	cellophane noodle			Noodle that is made from starch, typically mung bean or sweet potato starch, that becomes soft and transparent when cooked.	https://en.wikipedia.org/wiki/Cellophane_noodles					glass noodle|chinese cellophane noodle|fensi						They are called "cellophane noodles" or "glass noodles" due to their transparent, glass-like appearance.				USDA
-FOODON:00005568	FOODON:00005296	common oat cereal food product	quick oats			Whole oat groats that are pre-cooked, dried, and then rolled into thinner flakes to reduce cooking time																USDA
-FOODON:00005569	FOODON:00005297	quick oats	quick oats (with iron)			Quick oats that have been fortified with added iron.																USDA
-FOODON:00005570	FOODON:00005298	beef sausage	lebanon bologna			A type of beef sausage that is cured, smoked, and fermented semi dry, originating from Lebanon County, Pennsylvania.	https://en.wikipedia.org/wiki/Lebanon_bologna															USDA
-FOODON:00005571	FOODON:00005299	hominy grits	white hominy grits			Hominy grits made from white corn that has undergone nixtamalization, a process involving soaking and cooking the corn in an alkaline solution to remove the hull and soften the kernels.																USDA
-FOODON:00005572	FOODON:00005300	processed pork meat food product	pork liver cheese			Liver cheese that is made primarily from ground pork liver.																USDA
-FOODON:00005573	FOODON:00005301	cereal grain food product	cereal grain beverage			A drink made from processed cereal grains, such as wheat, rice, barley, or oats, often combined with water, flavorings, and sweeteners.																USDA
-FOODON:00005574	FOODON:00005302	cereal grain beverage	cereal grain-based coffee substitute			A beverage made from roasted cereal grains that is intended to be used as an alternative to coffee.																USDA
-FOODON:00005575	FOODON:00005303	coffee beverage	espresso			A coffee beverage brewed by forcing hot water under high pressure through finely-ground coffee beans.																USDA
-FOODON:00005576	FOODON:00005304	espresso	"espresso (decaffeinated)"			An espresso coffee made using coffee beans from which most of the caffeine has been removed.																
-FOODON:00005577	FOODON:00005305	soy protein isolate	soy protein isolate (potassium fortified)			A soy protein isolate that has been fortified with potassium, to enhance its mineral content while providing a high concentration of protein.																USDA
-FOODON:00005578	FOODON:00005306	soy protein	soy protein concentrate			A concentrated soy protein product derived from whole soybeans, containing approximately 70% protein. It is produced by partially removing fats and carbohydrates while retaining some natural nutrients and fiber, making it suitable for various food applications.																USDA
-FOODON:00005579	FOODON:00005307	cow whey	acid whey			A byproduct of cheese production, specifically from the manufacturing of soft cheeses, such as cottage cheese or cream cheese. It is characterized by a lower pH and higher acidity.	https://en.wikipedia.org/wiki/Whey					sour whey										USDA
-FOODON:00005580	FOODON:00005308	cow whey	sweet whey			A byproduct of cheese production, primarily from the manufacturing of hard cheeses, such as cheddar or gouda.	https://en.wikipedia.org/wiki/Whey															USDA
-FOODON:00005445		stew	moose stew			A stew made from moose meat.																
-FOODON:00005446		stew	acorn stew			A stew made from acorn.																
-FOODON:00005447		stew	corn stew			A stew made from corn.																
-FOODON:00005448		bread	tennis bread			A type of bread that is often sweetened with ingredients like sugar, butter, and cinnamon, and may include additional flavorings such as dried fruit or nuts.																
-FOODON:00005449		coconut food product	coconut water			The naturally occurring liquid extracted from a young, green coconut.																
-FOODON:00005581	FOODON:00005410	water (bottled)	non-carbonated water (bottled)			Water that is bottled without the addition of carbon dioxide, making it still and free of bubbles or fizz																
-FOODON:00005582	FOODON:00005411	butter	butter (light)			A butter with reduced fat content, made by adding water, air, or non-fat milk solids.																
-FOODON:00005583	FOODON:00005412	gourd food product	Kanpyo			The dried shavings of Lagenaria siceraria var. hispida, a variety of calabash gourd.																
-FOODON:00005584	FOODON:00005413	head cheese	pork head cheese			Headcheese made from pork.																
-FOODON:00005585	FOODON:00005414	meat spread|liver food product	liverwurst spread			A meat spread made from liver, typically from pork or beef, combined with fat, spices, and other seasonings to create a smooth, spreadable product.																
-FOODON:00005586	FOODON:00005415	peanut food product|flour	peanut flour			A flour made from crushed, fully or partly defatted peanuts.																
-FOODON:00005587	FOODON:00005416	syrup	malt syrup			A syrup made from malted barley or grains.																
-FOODON:00005588	FOODON:00005417	pork meat food product	pork loaf			A blend of pork, fat, and spices, pressed into a loaf shape.																
-FOODON:00005589	FOODON:00005418	dietary supplement, amino acid or protein	soy-based protein powder			A plant-based protein supplement what is derived from soybeans.																
-FOODON:00005590	FOODON:00005419	dietary supplement, amino acid or protein	whey-based protein powder			 A protein supplement made from whey, the liquid byproduct that is separated during the process of making cheese from milk.																
-FOODON:00005591	FOODON:00005420	ham food product	ham			Pork hind leg, cured, smoked or cooked.																
-FOODON:00005592	FOODON:00005421	ham food product|ham	ham patty			A patty made from ground or finely chopped ham.																
-FOODON:00005593	FOODON:00005422	ham food product|animal steak	ham steak			An animal steak that comes from the hind leg of the pig (the ham).																
-FOODON:00005594	FOODON:00005423	pork cured meat food product	pork breakfast strip			A thin slice of pork that is specifically prepared for breakfast.																
-FOODON:00005595		berry juice	chilchen			A beverage that is made from red berries.																
-				food (canned)' and 'derives from' some [part of plant or animal]																		
-FOODON:03301003		pineapple food product	pineapple (canned)	'food (canned)' and 'derives from' some pineapple						pineapple												
-FOODON:03301085		shrimp food product	shrimp (canned)	'food (canned)' and 'derives from' some shrimp				shrimp														
-FOODON:03301087		salmon food product	salmon (canned)	'food (canned)' and 'derives from' some salmon				salmon														
-FOODON:03301151		mussel food product	mussel (canned)	'food (canned)' and 'derives from' some mussel				mussel														
-FOODON:03301155		clam food product	clam (canned)	'food (canned)' and 'derives from' some 'clam (raw)'				clam (raw)														
-FOODON:03301165		albacore food product	albacore (canned)	'food (canned)' and 'derives from' some albacore				albacore														
+Ontology ID	parent	label	EquivalentTo	SubClassOf	definition	definition source	taxa	see also	curation status	comment	image	created	term contributor
+ID	SC % SPLIT=|	AL rdfs:label@en	EC %	SC % SPLIT=|	AL IAO:0000115@en	AI IAO:0000119 SPLIT=|		AI rdfs:seeAlso SPLIT=|	AI IAO:0000114	AL rdfs:comment@en	AI schema:image	AT dcterms:date^^xsd:dateTime	AI dcterms:contributor SPLIT=|
+FOODON:03000463	fish oil	cod liver oil			A fish oil that is derived from the liver of cod fish.	https://en.wikipedia.org/wiki/Cod_liver_oil						2023-10-13T19:38:15Z	https://orcid.org/0000-0001-5275-8866
+FOODON:03000464	fish oil	sardine oil			A fish oil that is derived from sardine fish.							2023-10-13T19:38:15Z	https://orcid.org/0000-0001-5275-8866
+FOODON:03000465	fish oil	menhaden oil			A fish oil that is derived from menhaden fish.	https://www.sciencedirect.com/topics/neuroscience/menhaden-oil						2023-10-13T19:38:15Z	https://orcid.org/0000-0001-5275-8866
+FOODON:03000466	menhaden oil	menhaden oil (hydrogenated)			A hydrogenated derivative of menhaden oil.							2023-10-13T19:38:15Z	https://orcid.org/0000-0001-5275-8866
+FOODON:03000280	soybean seed (field) food product	soybean meal (defatted)			A soybean meal without hull.	https://en.wikipedia.org/wiki/Soybean_meal						2023-10-13T19:38:15Z	https://orcid.org/0000-0001-5275-8866
+FOODON:03000281	margarine food product|soybean food product	soy margarine (hydrogenated)			Margarine that is made from hydrogenated soy oil.							2023-10-13T19:38:15Z	https://orcid.org/0000-0001-5275-8866
+FOODON:03000282	skim milk (liquid)	skim milk (vitamin A and D fortified)			Skim milk that is  Vitamin A and Vitamin D fortified.	https://www.healthline.com/nutrition/fortified-milk						2023-10-13T19:38:15Z	https://orcid.org/0000-0001-5275-8866
+FOODON:03000284	skim milk (liquid)	skim milk (vitamin A and D fortified, protein fortified)			Skim milk which is Vitamin A, Vitamin D and protein fortified.							2023-10-13T19:38:15Z	https://orcid.org/0000-0001-5275-8866
+FOODON:03000283	skim milk (liquid)	skim milk (vitamin A and D fortified, nonfat milk solids added)			Skim milk which is Vitamin A and Vitamin D fortified and also have nonfat milk solids added in it.							2023-10-13T19:38:15Z	https://orcid.org/0000-0001-5275-8866
+FOODON:03000292	cow milk (liquid)	cow milk (reduced fat)			Cow milk that has approximately 2% fat.							2023-10-13T19:38:15Z	https://orcid.org/0000-0001-5275-8866
+FOODON:03000293	cow milk (reduced fat)	cow milk (reduced fat, vitamin A and D fortified, protein fortified)			Reduced fat cow milk that is Vitamin A, Vitamin D and protein fortified.							2023-10-13T19:38:15Z	https://orcid.org/0000-0001-5275-8866
+FOODON:03000291	cow milk (reduced fat)	cow milk (reduced fat, vitamin A and D fortified, nonfat milk solids added)			Reduced fat cow milk that  and is Vitamin A and Vitamin D fortified and have nonfat milk solids added in it.							2023-10-13T19:38:15Z	https://orcid.org/0000-0001-5275-8866
+FOODON:03000285	lowfat cow milk (1% fat)	lowfat cow milk (1% fat, vitamin A and D fortified, nonfat milk solids added)			Low fat cow milk that contains 1% fat, and is Vitamin A and Vitamin D fortified, and has nonfat milk solids added in it.							2023-10-13T19:38:15Z	https://orcid.org/0000-0001-5275-8866
+FOODON:03000467	cow whole milk 3.5% fat	cow whole milk 3.5% fat (vitamin D fortified)			Cow whole milk that is Vitamin D fortified.							2023-10-13T19:38:15Z	https://orcid.org/0000-0001-5275-8866
+FOODON:03000289	chocolate cow milk food product	chocolate milk (reduced fat)			Chocolate milk in which milk fat is 2% of the total weight of the milk.							2023-10-13T19:38:15Z	https://orcid.org/0000-0001-5275-8866
+FOODON:03000290	chocolate milk (reduced fat)	chocolate milk (reduced fat, vitamin A and D fortified)			Reduced fat chocolate milk that is Vitamin A and D fortified.							2023-10-13T19:38:15Z	https://orcid.org/0000-0001-5275-8866
+FOODON:03000294	chocolate cow milk food product	chocolate whole milk (vitamin A and D fortified)			Chocolate whole milk that is Vitamin A and D fortified.	https://nunuchocolates.com/whole-chocolate-milk-the-good-the-bad-and-the-delicious/						2023-10-13T19:38:15Z	https://orcid.org/0000-0001-5275-8866
+FOODON:03000468	chocolate milk (low fat)	chocolate milk (low fat, Vitamin A and D fortified)			Low fat chocolate milk that is Vitamin A and Vitamin D fortified.							2023-10-13T19:38:15Z	https://orcid.org/0000-0001-5275-8866
+FOODON:03000295	butter oil	ucuhuba butter oil			Butter oil that is made from the seeds of ucuuba tree (Virola surinamensis).							2023-10-13T19:38:15Z	https://orcid.org/0000-0001-5275-8866
+FOODON:03000286	mustard (prepared)	yellow mustard (prepared)			A food product that is made from yellow mustard.							2023-10-13T19:38:15Z	https://orcid.org/0000-0001-5275-8866
+FOODON:03000491	flour food product	arrowroot flour food product			A food product that is derived from arrowroot flour.	https://en.wikipedia.org/wiki/Arrowroot						2023-10-13T19:38:15Z	https://orcid.org/0000-0001-5275-8866
+FOODON:03000469	arrowroot flour food product	arrowroot flour			A white, powdery starch extracted from the rhizome of an arrowroot plant (Maranta arundinacea), which is naturally gluten-free and grain-free.	https://en.wikipedia.org/wiki/Arrowroot						2023-10-13T19:38:15Z	https://orcid.org/0000-0001-5275-8866
+FOODON:03000470	shortening	shortening (partially hydrogenated)			Shortening made from partially hydrogenated oil.	https://bakerpedia.com/ingredients/partially-hydrogenated-oil-pho/						2023-10-13T19:38:15Z	https://orcid.org/0000-0001-5275-8866
+FOODON:03000471	goat dairy food product	goat milk (vitamin d fortified)			Goat milk that is vitamin D fortified.							2023-10-13T19:38:15Z	https://orcid.org/0000-0001-5275-8866
+FOODON:03000472	ricotta cheese	ricotta cheese (made from whole milk)			Ricotta chesse that is made from whole milk.							2023-10-13T19:38:15Z	https://orcid.org/0000-0001-5275-8866
+FOODON:03000473	hard grating cheese food product	romano cheese			Hard grating cheese that is made from cow, goat, and/or sheep's milk and contain less than 34% water and at least 38% milkfat.	https://en.wikipedia.org/wiki/Romano_cheese						2023-10-13T19:38:15Z	https://orcid.org/0000-0001-5275-8866
+FOODON:03000474	cow buttermilk food product	cow buttermilk (low fat, cultured)			Cow buttermilk that has low fat and is cultured.							2023-10-13T19:38:15Z	https://orcid.org/0000-0001-5275-8866
+FOODON:03000475	cottage cheese	cottage cheese (reduced fat)			Cottage cheese that has 2% milk fat.							2023-10-13T19:38:15Z	https://orcid.org/0000-0001-5275-8866
+FOODON:03000476	butter (whipped)	butter (whipped, salted)			Whipped butter that contains salt.							2023-10-13T19:38:15Z	https://orcid.org/0000-0001-5275-8866
+FOODON:03000477	sour cream	light sour cream			Sour cream that is made from half-and-half and has around 40 percent less fat.							2023-10-13T19:38:15Z	https://orcid.org/0000-0001-5275-8866
+FOODON:03000478	mozzarella cheese	mozzarella cheese (made with whole milk, low moisture)			Mozzeralla cheese that is made from whole cow’s milk and has low moisture.							2023-10-13T19:38:15Z	https://orcid.org/0000-0001-5275-8866
+FOODON:03000479	cheese food product	american cheese food product			A cheese food product that is derived from american cheese.							2023-10-13T19:38:15Z	https://orcid.org/0000-0001-5275-8866
+FOODON:03000480	american cheese food product	american cheese			Cheese that is made from cheddar, Colby, or similar cheeses. It is mild with a creamy and salty flavor, has a medium-firm consistency, and has a low melting point. It is typically yellow or white in color	https://en.wikipedia.org/wiki/American_cheese						2023-10-13T19:38:15Z	https://orcid.org/0000-0001-5275-8866
+FOODON:03000481	american cheese	american cheese (fat free)			American cheese that is made from fat free milk.	https://en.wikipedia.org/wiki/American_cheese						2023-10-13T19:38:15Z	https://orcid.org/0000-0001-5275-8866
+FOODON:03000482	american cheese	pasteurized process american cheese			American cheese that is made from combining more than one cheese.	https://en.wikipedia.org/wiki/American_cheese						2023-10-13T19:38:15Z	https://orcid.org/0000-0001-5275-8866
+FOODON:03000483	pasteurized process american cheese	pasteurized process american cheese (vitamin D fortified)			A pasteurized process american cheese that is vitamin D fortified.	https://en.wikipedia.org/wiki/American_cheese						2023-10-13T19:38:15Z	https://orcid.org/0000-0001-5275-8866
+FOODON:03000490	pasteurized process american cheese food	pasteurized process american cheese food (vitamin D fortified)			A pasteurized process american cheese food that is vitamin D fortified.							2023-10-13T19:38:15Z	https://orcid.org/0000-0001-5275-8866
+FOODON:03000485	pasteurized process cheese spread	pasteurized process american cheese spread			A pasteurized process cheese spread that is derived from american cheese.							2023-10-13T19:38:15Z	https://orcid.org/0000-0001-5275-8866
+FOODON:03000486	ricotta cheese	ricotta cheese (part-skim)			Ricotta cheese that is partly skimmed and have less fat and calories.							2023-10-13T19:38:15Z	https://orcid.org/0000-0001-5275-8866
+FOODON:03000487	nonfat dry milk (instant)	nonfat dry milk (instant, vitamin A and D fortified)			Not fat instant dry milk that is vitamin A and vitamin D fortified.							2023-10-13T19:38:15Z	https://orcid.org/0000-0001-5275-8866
+FOODON:03000488	full cream milk (dry)	full cream milk (dry, vitamin D fortified)			Full cream milk powder that is vitamin D fortified.							2023-10-13T19:38:15Z	https://orcid.org/0000-0001-5275-8866
+FOODON:03000489	cheese food product	gjetost cheese			A brown norwegian cheese made of goat's milk or a blend of goat and cow's milk. It is produced by slowly heating a vat of whey, cream and milk.	https://en.wikipedia.org/wiki/Brunost						2023-10-13T19:38:15Z	https://orcid.org/0000-0001-5275-8866
+FOODON:03000287	cheese food product	cheese			A dairy product that is formed by coagulation of the milk protein casein.	https://en.wikipedia.org/wiki/Cheese						2023-10-13T19:38:15Z	https://orcid.org/0000-0001-5275-8866
+FOODON:03000484	pasteurized process cheese food	pasteurized process american cheese food			American cheese that contains at least 51% cheese but other specific dairy ingredients such as cream, milk, skim milk, buttermilk, cheese whey, or albumin from cheese whey are added.	https://en.wikipedia.org/wiki/American_cheese|https://www.ams.usda.gov/sites/default/files/media/FINALDPPC5PasteurizedProcessAmericanCheeseSpec092019.pdf						2023-10-13T19:38:15Z	https://orcid.org/0000-0001-5275-8866
+FOODON:03000288	bread food product	bread			A food prepared from a dough of flour and water, usually by baking.	https://en.wikipedia.org/wiki/Bread						2023-10-13T19:38:15Z	https://orcid.org/0000-0001-5275-8866
+FOODON:03000296	tallow (edible)	mutton tallow			Rendered fat from a sheep.	https://en.wikipedia.org/wiki/Tallow						2023-10-13T19:38:15Z	https://orcid.org/0000-0001-5275-8866
+		PTFI Requests											
+FOODON:00004695	white bean food product|flatbread	white bean flatbread			A flatbread made with dried white beans.								https://orcid.org/0000-0001-5275-8866
+FOODON:00004696	animal-based stew or hash	elk stew meat			Chopped elk meat suitable for cooking into a stew.								https://orcid.org/0000-0001-5275-8866
+FOODON:00004697	tofu food product	tofu			A food product that is prepared by coagulating soy milk and then pressing the resulting curds into solid white blocks of varying softness: silken, soft, firm, extra firm.	https://en.wikipedia.org/wiki/Tofu							https://orcid.org/0000-0001-5275-8866
+FOODON:00005438	tofu	tofu (raw)	'tofu' and 'has quality' some 'raw'		A raw tofu								
+FOODON:00004698	tofu	extra firm tofu			A tofu that has less water than firm tofu.	https://en.wikipedia.org/wiki/Tofu							https://orcid.org/0000-0001-5275-8866
+FOODON:00004699	extra firm tofu	extra firm tofu (raw)			An extra firm tofu that is raw.	https://en.wikipedia.org/wiki/Tofu							https://orcid.org/0000-0001-5275-8866
+FOODON:00004700	extra firm tofu	extra firm tofu (sauteed)			An extra firm tofu which has been sauteed.	https://en.wikipedia.org/wiki/Tofu							https://orcid.org/0000-0001-5275-8866
+FOODON:00004701	wheat food product	farro food product			A food product that has farro as a defining ingredient.								https://orcid.org/0000-0001-5275-8866
+FOODON:00004702	farro food product|whole grain|caryopsis fruit	farro kernel			 A caryopsis fruit of any of three hulled wheat species: spelt (Triticum spelta), emmer (Triticum dicoccum), and einkorn (Triticum monococcum).	https://en.wikipedia.org/wiki/Farro|https://www.wheatfoods.org/resources/wheat-facts/ancient-wheat-and-pseudo-grains/							https://orcid.org/0000-0001-5275-8866
+FOODON:00005281	farro kernel	farro kernel (raw)			A farro kernel which is raw (not dried).								https://orcid.org/0000-0001-5275-8866
+FOODON:00004703	farro kernel	farro kernel (cooked)			A farro kernel which is cooked.								https://orcid.org/0000-0001-5275-8866
+FOODON:00004704	duck egg white	duck egg white (boiled)			A duck egg white that has been boiled.								https://orcid.org/0000-0001-5275-8866
+FOODON:00004705	duck egg yolk	duck egg yolk (boiled)			A duck egg yolk that has been boiled.								https://orcid.org/0000-0001-5275-8866
+FOODON:00004706	Monterey Jack cheese product	Monterey Jack cheese flavoured with chili flakes			A variant of monterey jack cheese that is flavoured with chili flakes.								https://orcid.org/0000-0001-5275-8866
+FOODON:00004711	cricket food product	cricket powder			A powder that is made from a cricket.								https://orcid.org/0000-0001-5275-8866
+FOODON:00004708	cricket powder	house cricket powder			A powder that is made from a house cricket.								https://orcid.org/0000-0001-5275-8866
+FOODON:00004712	cricket powder	jamaican cricket powder			A powder that is made from a jamaican cricket.								https://orcid.org/0000-0001-5275-8866
+		USDA Mappings											
+FOODON:00005456	seal food product|fat or oil	bearded seal oil			Oil that is derived from blubber of a bearded seal.								https://orcid.org/0000-0001-5275-8866
+FOODON:00005457	seal food product|fat or oil	spotted seal oil			Oil that is derived from the blubber of a spotted seal.								https://orcid.org/0000-0001-5275-8866
+FOODON:00005458	fat or oil	walrus oil			Oil that is derived from the blubber of a walrus.								https://orcid.org/0000-0001-5275-8866
+FOODON:00005459	whale food product|fat or oil	bowhead whale oil			Oil that is derived from the blubber of a bowhead whale.								https://orcid.org/0000-0001-5275-8866
+FOODON:00005460	fish oil	herring oil			Oil that is derived from herring.								https://orcid.org/0000-0001-5275-8866
+FOODON:00005454	whale food product|fat or oil	beluga oil			Oil that is derived from beluga whale.								
+FOODON:00005461	fat or oil|cocoa food product	cocoa butter oil			Oil that is derived from the fat extracted from cocoa beans.								https://orcid.org/0000-0001-5275-8866
+FOODON:00005462	tangerine juice	tangerine juice (unpasteurized)			Juice extracted from tangerines that has not undergone pasteurization.								https://orcid.org/0000-0001-5275-8866
+FOODON:00005463	apple juice	apple juice (unpasteurized)			Apple juice that has not undergone pasteurization.								https://orcid.org/0000-0001-5275-8866
+FOODON:00005464	lemon juice	lemon juice (unpasteurized)			Lemon juice that has not undergone pasteurization.								https://orcid.org/0000-0001-5275-8866
+FOODON:00005465	lime juice	lime juice (unpasteurized)			Lime juice that has not undergone pasteurization.								https://orcid.org/0000-0001-5275-8866
+FOODON:00001277	orange juice (liquid)	orange juice (unpasteurized)			Orange juice that has not undergone pasteurization.								https://orcid.org/0000-0001-5275-8866
+FOODON:00005439	acerola juice	acerola juice (unpasteurized)			Acerola juice that has not undergone pasteurization.								
+FOODON:00005455	tropical fruit food product	passion fruit food product			A food product which derives from passion fruit								
+FOODON:00005467	fruit juice (liquid)|passion fruit food product	purple passion fruit juice			Fruit juice which derives from purple passion fruit.								
+FOODON:00005440	purple passion fruit juice	purple passion fruit juice (unpasteurized)			Purple passion fruit juice that is raw.								https://orcid.org/0000-0001-5275-8866
+FOODON:00005468	pink grapefruit juice	pink grapefruit juice (unpasteurized)			Pink grapefruit juice that is raw.								https://orcid.org/0000-0001-5275-8866
+FOODON:00005596	fruit juice (liquid)|passion fruit food product	yellow passion fruit juice											
+FOODON:00005469	yellow passion fruit juice	yellow passion fruit juice (unpasterized)											
+FOODON:00005441	fruit juice (liquid)|pomegranate food product	pomegranate juice			 A fruit juice made from pomegranate.								
+FOODON:03301127	fruit juice (liquid)|grape berry food product	grape juice			 A fruit juice made from grapes.								
+FOODON:00005470	coconut milk	coconut milk (unpasteurized)			Coconut milk that has not undergone pasteurization.								
+FOODON:00005471	coconut cream	coconut cream (unpasteurized)			Coconut cream that has not undergone pasteurization.								
+FOODON:00005472	soursop food product	guanabana nectar			Nectar derived from the pulp of the guanabana fruit.								https://orcid.org/0000-0001-5275-8866
+FOODON:00005473	tamarind food product	tamarind nectar			Nectar derived from the pulp of the tamarind fruit.								https://orcid.org/0000-0001-5275-8866
+FOODON:00005474	skim milk (liquid)	skim milk (without added vitamin a and d)			Skim milk without the addition of vitamins A and D.								https://orcid.org/0000-0001-5275-8866
+FOODON:00005475	nonfat dry milk	nonfat dry milk (instant, without added vitamin A and D)			Instant nonfat dry milk without the addition of vitamins A and D.								https://orcid.org/0000-0001-5275-8866
+FOODON:00005476	cow milk (reduced fat)	cow milk (reduced fat, without added Vitamin A and Vitamin D)			Reduced-fat cow milk, which has not been fortified with vitamins A and D								https://orcid.org/0000-0001-5275-8866
+FOODON:00005477	lowfat cow milk (1% fat)	lowfat cow milk (1% fat,  without added Vitamin A and Vitamin D)			Low-fat cow milk containing 1% fat, without the addition of vitamins A and D								https://orcid.org/0000-0001-5275-8866
+FOODON:00005478	cow milk (liquid)	cow whole milk											
+FOODON:00005479	cow whole milk	cow whole milk (without additives)			Cow whole milk without the addition of vitamins A and D.								
+FOODON:00005480	cow whole milk	cow whole milk (without Vitamin D)			Cow whole milk without the addition of vitamins D.								
+FOODON:00005481	cow whole milk 3.5% fat	cow whole milk 3.5% fat (without added Vitamin A and Vitamin D)			Whole cow milk with 3.5% fat content and without the addition of vitamins A and D.								https://orcid.org/0000-0001-5275-8866
+FOODON:00005482	evaporated milk	evaporated milk (reduced fat, Vitamin A and Vitamin D fortified)			Evaporated milk with 2% fat content, fortified with vitamins A and D.								https://orcid.org/0000-0001-5275-8866
+FOODON:00005483	cow milk (reduced fat)	cow milk (reduced fat, Without added Vitamin A, nonfat milk solids added)			Evaporated milk that is fortified with vitamins A.								
+FOODON:00005484	skim milk (liquid)	skim milk (calcium-fortified)			Skim milk with added calcium.								https://orcid.org/0000-0001-5275-8866
+FOODON:00005485	evaporated milk (canned, fortified)	evaporated milk (with added vitamin A)			Evaporated milk that is fortified with vitamin A.								
+FOODON:00005486	tofu food product	tofu (fermented)			Tofu that has undergone a fermentation process.								https://orcid.org/0000-0001-5275-8866
+FOODON:00005487	tallow (edible)	beef tallow			 A fat rendered from beef, typically from the fat surrounding organs and muscles.								https://orcid.org/0000-0001-5275-8866
+FOODON:00005488	pea	pea (mashed)			Cooked green peas that are smashed to create a creamy texture.								https://orcid.org/0000-0001-5275-8866
+FOODON:00005489	prune food product|fruit puree	prune puree			A semiliquid, smooth mixture made from cooked prunes (dried plums).								https://orcid.org/0000-0001-5275-8866
+FOODON:00005490	carrot food product	carrot puree			A semiliquid, smooth mixture made from cooked carrots.								https://orcid.org/0000-0001-5275-8866
+FOODON:00005491	fruit puree|banana food product	banana puree			A semiliquid, smooth mixture made from ripe bananas.								https://orcid.org/0000-0001-5275-8866
+FOODON:00005492	squash food product	squash puree			Puree made from cooked squash, that is blended to a smooth consistency.								https://orcid.org/0000-0001-5275-8866
+FOODON:00005493	sweet potato food product	sweet potato puree			Puree made from cooked sweet potato, that is blended to a smooth consistency.								https://orcid.org/0000-0001-5275-8866
+FOODON:00005494	beet food product	beet puree			Puree made from cooked beet root, that is blended to a smooth consistency.								
+FOODON:00005443	green bean food product	green bean puree			Puree made from cooked green beans, that is blended to a smooth consistency.								
+FOODON:00005495	butter	clarified butter			Butter from which all milk solids have been removed.								https://orcid.org/0000-0001-5275-8866
+FOODON:00005496	apple juice	apple juice (calcium-fortified)			Apple juice with added calcium.								https://orcid.org/0000-0001-5275-8866
+FOODON:00005497	orange juice (liquid)	orange juice (without pulp)			Orange juice that has been strained to remove the pulp.								https://orcid.org/0000-0001-5275-8866
+FOODON:00005498	pasta food product	corn pasta			Pasta that is made from corn flour.								https://orcid.org/0000-0001-5275-8866
+FOODON:03310185	clarified butter	ghee			A type of clarified butter originating from the Indian subcontinent.								https://orcid.org/0000-0001-5275-8866
+FOODON:00005500	flour | sesame food product	sesame flour			A flour that is made by grinding defatted sesame seeds.								https://orcid.org/0000-0001-5275-8866
+FOODON:00005732	sunflower food product	sunflower seed butter			A seed butter that is made from ground sunflower seeds.								https://orcid.org/0000-0001-5275-8866
+FOODON:00005503	vinegar food product	balsamic vinegar			A traditional Italian vinegar made wholly or partially from grape must, which is freshly crushed grape juice containing all the skins, seeds, and stems								https://orcid.org/0000-0001-5275-8866
+FOODON:00005504	popcorn (popped)	popcorn (air-popped)			Popcorn that is popped using hot air.								https://orcid.org/0000-0001-5275-8866
+FOODON:00005505	rice cereal	brown rice cereal			Cereal made from whole brown rice kernels, often processed for easier consumption.								https://orcid.org/0000-0001-5275-8866
+FOODON:00005506	brown rice cereal	brown rice cereal (dry, instant)			Brown rice cereal that is dried and is meant to be prepared instantly.								https://orcid.org/0000-0001-5275-8866
+FOODON:00005507	cow food product	corned beef			Beef that has been cured with salt and spices, typically from the brisket cut.								https://orcid.org/0000-0001-5275-8866
+FOODON:00005508	bologna	beef bologna			Bologna that is made from beef.								https://orcid.org/0000-0001-5275-8866
+FOODON:00005509	bologna	chicken bologna			Bologna that is made from chicken meat.								
+FOODON:00005510	bologna	pork bologna			Bologna that is made from pork.								
+FOODON:00005511	bologna	turkey bologna			Bologna that is made from turkey meat.								
+FOODON:00005512	multi-component pasta product	beef macaroni dish			A macaroni dish that includes a beef-based sauce.				ready for release				https://orcid.org/0000-0001-5275-8866
+FOODON:00005513	fruit sauce	guava sauce			A fruit sauce made from guava.								https://orcid.org/0000-0001-5275-8866
+FOODON:00005514	sugar (refined)	sugar (powdered)											https://orcid.org/0000-0001-5275-8866
+FOODON:00005515	tea (steeped)	green tea (steeped)			Steeped tea made from green tea leaves (Camellia sinensis).								https://orcid.org/0000-0001-5275-8866
+FOODON:00005243	tea (steeped)	black tea (steeped)			Steeped tea made from fully oxidized black tea leaves (Camellia sinensis)								https://orcid.org/0000-0001-5275-8866
+FOODON:00005516	tea (steeped)	hibiscus tea (steeped)			Steeped tea made from dried hibiscus flowers (Hibiscus sabdariffa).								https://orcid.org/0000-0001-5275-8866
+FOODON:00005517	tea (steeped)	oolong tea (steeped)			Steeped tea made from partially oxidized tea leaves (Camellia sinensis).								https://orcid.org/0000-0001-5275-8866
+FOODON:00005518	tea (decaffeinated)	black tea (decaffeinated)			Black tea that has most of its caffeine removed through a decaffeination process, while preserving its flavor, aroma, and other characteristic properties.								
+FOODON:00005444	tea (decaffeinated)	green tea (decaffeinated)			Green tea that has most of its caffeine removed through a decaffeination process, while preserving its flavor, aroma, and other characteristic properties.								
+FOODON:00005519	tea (dry, instant)	lemon tea (dry, instant)			A beverage mix that quickly dissolves in hot or cold water to create a lemon-flavoured tea.								
+FOODON:00005520	soybean flour	soybean flour (full fat)			A soybean flour that is made from whole soybeans, retaining all of the natural oils, which gives it a higher fat content.								
+FOODON:00005521	soybean flour	soybean flour (low fat)			A soybean flour made from whole soybeans that has been processed to reduce its natural oil content.								
+	flour| sesame food product	sesame flour DUPLICATE			A flour that is made by grinding defatted sesame seeds after oil extraction.								
+FOODON:00005523	flour	acorn flour			A flour that is made by grinding acorns, the nuts of oak trees, after they have been properly processed to remove tannin.								
+FOODON:00005524	animal protein supplement	whey protein isolate			A refined form of whey protein, processed to remove most of the fat and lactose, resulting in a higher protein content.								
+FOODON:00005525	bratwurst	chicken bratwurst			Bratwurst that is made from chicken meat.								
+FOODON:00005526	bratwurst	pork bratwurst			Bratwurst that is made from pork.								
+FOODON:00005527	bratwurst	veal bratwurst			Bratwurst that is made from veal.								
+FOODON:00005528	wheat pasta	whole wheat pasta			Pasta made from whole wheat flour that retains the bran, germ, and endosperm of the wheat grain.								
+FOODON:00005529	white corn flour	whole grain white corn flour			Flour made from the whole kernels of white corn (Zea mays), which includes the bran, germ, and endosperm.								
+FOODON:00005530	white cornmeal	whole grain white cornmeal			Cornmeal made from whole white corn kernels (Zea mays), which includes the bran, germ, and endosperm								
+FOODON:00005531	bacon (whole cut or pieces)|turkey meat food product	turkey bacon			A bacon made from turkey meat.								
+FOODON:00005532	milled durum wheat	couscous			A dish made from durum wheat semolina, which is moistened and rolled into small granules, then steamed or boiled.								
+FOODON:00005533	turkey sausage	turkey sausage (raw)			A turkey sausage that is raw.								
+FOODON:00005534	salami	beef salami			Salami made from beef.								
+FOODON:00005535	salami	turkey salami			Salami made from turkey meat.								
+FOODON:00005536	salami	pork salami			Salami made from pork meat.								
+FOODON:00005537	patty	chicken patty			A patty made from chicken meat.								
+FOODON:00005538	salmon food product	salmon nugget			A nugget made from salmon meat that is often breaded or battered and typically fried or baked.								
+FOODON:00005539	tofu	soft tofu			A tofu that has a smooth, delicate texture and high moisture content								
+FOODON:00005540	tofu	firm tofu			A tofu that has a denser texture with lower moisture content, allowing it to hold its shape well during cooking.								
+FOODON:00005541	tofu	silken tofu			A tofu that has a creamy, smooth texture and high moisture content.								
+FOODON:00005542	silken tofu	silken soft tofu			A tofu that has an ultra-creamy texture and high moisture content.								
+FOODON:00005543	silken tofu	silken firm tofu			A tofu that has a creamy texture while being slightly firmer, making it versatile for both savory and sweet dishes that require shape retention.								
+FOODON:00005544	silken tofu	super firm tofu			 A tofu that has minimal moisture and an extremely dense texture, ideal for grilling, frying, or baking while maintaining its shape.								
+FOODON:00005545	silken tofu	silken extra firm tofu			A tofu that has a denser texture while retaining some creaminess.								
+FOODON:00005546	silken tofu	silken lite firm tofu			 A tofu that has a lighter texture with reduced fat content, providing a balance of creaminess and firmness								
+FOODON:00005547	silken tofu	silken lite extra firm tofu			A tofu that has the densest texture with reduced fat.								
+FOODON:00005548	carob food product	Carob flour			A flour made from ground carob pod, which is the dried fruit of the carob tree (Ceratonia siliqua).								
+FOODON:00005549	fruit powder	baobab powder			A powder made from the dried fruit pulp of the baobab tree (Adansonia spp).								
+FOODON:00005550	fruit juice (liquid)	tart cherry juice			A fruit juice made from tart cherry.								
+FOODON:00005552	fruit puree	raspberry puree			A puree made from raspberry.								
+FOODON:00005553	bran cereal	oat bran cereal			A cereal that is made from the outer layer of the oat grain (the bran), which is separated from the endosperm and germ.								
+FOODON:00005554	pastrami	turkey pastrami			Pastrami that is made from turkey meat								
+FOODON:00005555	noodle	rice noodle			Noodles that are made from rice.								
+FOODON:00005556	cornmeal	whole grain cornmeal			Cornmeal that is made by grinding the whole corn kernel, including the bran, germ, and endosperm.								
+FOODON:00005557	whole grain cornmeal|yellow cornmeal	whole grain yellow cornmeal			Cornmeal that is made by grinding the whole yellow corn kernel, including the bran, germ, and endosperm.								
+FOODON:00005558	wheat cereal	wheat germ cereal			Wheat cereal made from the germ of the wheat kernel, which is the part of the grain that can sprout into a new wheat plant.								
+FOODON:00005559	breakfast cereal (whole grain)|wheat cereal	whole wheat cereal			Breakfast cereal that is made from whole wheat grains that include all parts of the grain—the bran, germ, and endosperm.								
+FOODON:00005560	pork sausage	pork sausage link			A pork sausage made from ground pork mixed with spices and seasonings, encased in a natural or synthetic casing to form individual cylindrical links.								
+FOODON:00005561	pork sausage	pork sausage patty			A pork sausage made from ground pork mixed with spices and seasonings, formed into a flat, round disc shape without the use of a casing.								
+FOODON:00005562	rice cereal food product	cream of rice			A finely ground rice cereal food product, that can be cooked with water or milk to form a smooth, creamy cereal.								
+FOODON:00005563	wheat cereal food product	cream of wheat			A finely ground wheat cereal food product, specifically farina, that is cooked with water or milk to create a smooth and creamy porridge.								
+FOODON:00005564	puffed rice cereal	puffed rice cereal (fortified)			Puffed rice cereal that has been fortified to enhance its nutritional value.								
+FOODON:00005565	puffed wheat cereal	puffed wheat cereal (fortified)			Puffed wheat cereal that has been fortified to enhance its nutritional value.								
+FOODON:00005567	noodle	cellophane noodle			Noodle that is made from starch, typically mung bean or sweet potato starch, that becomes soft and transparent when cooked.	https://en.wikipedia.org/wiki/Cellophane_noodles				They are called "cellophane noodles" or "glass noodles" due to their transparent, glass-like appearance.			
+FOODON:00005568	common oat cereal food product	quick oats			Whole oat groats that are pre-cooked, dried, and then rolled into thinner flakes to reduce cooking time								
+FOODON:00005569	quick oats	quick oats (with iron)			Quick oats that have been fortified with added iron.								
+FOODON:00005570	beef sausage	lebanon bologna			A type of beef sausage that is cured, smoked, and fermented semi dry, originating from Lebanon County, Pennsylvania.	https://en.wikipedia.org/wiki/Lebanon_bologna							
+FOODON:00005571	hominy grits	white hominy grits			Hominy grits made from white corn that has undergone nixtamalization, a process involving soaking and cooking the corn in an alkaline solution to remove the hull and soften the kernels.								
+FOODON:00005572	processed pork meat food product	pork liver cheese			Liver cheese that is made primarily from ground pork liver.								
+FOODON:00005573	cereal grain food product	cereal grain beverage			A drink made from processed cereal grains, such as wheat, rice, barley, or oats, often combined with water, flavorings, and sweeteners.								
+FOODON:00005574	cereal grain beverage	cereal grain-based coffee substitute			A beverage made from roasted cereal grains that is intended to be used as an alternative to coffee.								
+FOODON:00005575	coffee beverage	espresso			A coffee beverage brewed by forcing hot water under high pressure through finely-ground coffee beans.								
+FOODON:00005576	espresso	espresso (decaffeinated)			An espresso coffee made using coffee beans from which most of the caffeine has been removed.								
+FOODON:00005577	soy protein isolate	soy protein isolate (potassium fortified)			A soy protein isolate that has been fortified with potassium, to enhance its mineral content while providing a high concentration of protein.								
+FOODON:00005578	soy protein	soy protein concentrate			A concentrated soy protein product derived from whole soybeans, containing approximately 70% protein. It is produced by partially removing fats and carbohydrates while retaining some natural nutrients and fiber, making it suitable for various food applications.								
+FOODON:00005579	cow whey	acid whey			A byproduct of cheese production, specifically from the manufacturing of soft cheeses, such as cottage cheese or cream cheese. It is characterized by a lower pH and higher acidity.	https://en.wikipedia.org/wiki/Whey							
+FOODON:00005580	cow whey	sweet whey			A byproduct of cheese production, primarily from the manufacturing of hard cheeses, such as cheddar or gouda.	https://en.wikipedia.org/wiki/Whey							
+FOODON:00005445	stew	moose stew			A stew made from moose meat.								
+FOODON:00005446	stew	acorn stew			A stew made from acorn.								
+FOODON:00005447	stew	corn stew			A stew made from corn.								
+FOODON:00005448	bread	tennis bread			A type of bread that is often sweetened with ingredients like sugar, butter, and cinnamon, and may include additional flavorings such as dried fruit or nuts.								
+FOODON:00005449	coconut food product	coconut water			The naturally occurring liquid extracted from a young, green coconut.								
+FOODON:00005581	water (bottled)	non-carbonated water (bottled)			Water that is bottled without the addition of carbon dioxide, making it still and free of bubbles or fizz								
+FOODON:00005582	butter	butter (light)			A butter with reduced fat content, made by adding water, air, or non-fat milk solids.								
+FOODON:00005583	gourd food product	Kanpyo			The dried shavings of Lagenaria siceraria var. hispida, a variety of calabash gourd.								
+FOODON:00005584	head cheese|pork meat food product	pork head cheese			Headcheese made from pork.								
+FOODON:00005585	meat spread|liver food product	liverwurst spread			A meat spread made from liver, typically from pork or beef, combined with fat, spices, and other seasonings to create a smooth, spreadable product.								
+FOODON:00005586	peanut food product|flour	peanut flour			A flour made from crushed, fully or partly defatted peanuts.								
+FOODON:00005587	syrup	malt syrup			A syrup made from malted barley or grains.								
+FOODON:00005588	pork meat food product	pork loaf			A blend of pork, fat, and spices, pressed into a loaf shape.								
+FOODON:00005591	ham food product	ham			Pork hind leg, cured, smoked or cooked.								
+FOODON:00005592	ham food product	ham patty			A patty made from ground or finely chopped ham.								
+FOODON:00005593	ham food product|animal steak	ham steak			An animal steak that comes from the hind leg of the pig (the ham).								
+FOODON:00005594	pork cured meat food product	pork breakfast strip			A thin slice of pork that is specifically prepared for breakfast.								
+FOODON:00005595	berry juice	chilchen			A beverage that is made from red berries.								
+													
+													
+		DIETARY SUPPLEMENTS											
+FOODON:03600000	dietary supplement, botanical	black cohosh supplement	'dietary supplement, botanical' and 'derives from' some (root and 'part of' some 'Actaea racemosa')		A botanical dietary supplement composed primarily of the root or root extract of the Actaea racemosa plant.	https://www.nccih.nih.gov/health/black-cohosh|https://en.wikipedia.org/wiki/Actaea_racemosa			ready for release	Black cohosh supplementation has been used in functional medicine for management of menopausal symptoms.		2021-06-08T13:32:28	https://orcid.org/0000-0002-7463-6306
+FOODON:03600001	dietary supplement, metabolite or precursor	coenzyme Q10 supplement	'dietary supplement, metabolite or precursor' and 'has part' some 'coenzyme Q10'		A dietary supplement composed primarily of the ubiquinone coenzyme Q10.	https://www.nccih.nih.gov/health/coenzyme-q10|https://en.wikipedia.org/wiki/Coenzyme_Q10			ready for release	Coenzyme Q10 supplementation has been used in functional medicine for a wide range of ailments including heart disease and cancer.		2021-06-08T13:32:29	https://orcid.org/0000-0002-7463-6306
+FOODON:03600002	fat or oil supplement	fish oil supplement	'fat or oil supplement' and 'has part' some 'fish oil'		A dietary fat supplement composed primarily of fish oil.	https://www.health.harvard.edu/blog/fish-oil-friend-or-foe-201307126467			ready for release	Fish oil supplementation has been used in function medicine to reduce cardiovascular disease risk and reduce inflammation.		2021-06-08T13:32:30	https://orcid.org/0000-0002-7463-6306
+FOODON:03600003	fat or oil supplement	flaxseed oil supplement	'fat or oil supplement' and 'has part' some 'flaxseed oil'		A dietary fat supplement composed primarily of flaxseed oil.	https://www.nccih.nih.gov/health/flaxseed-and-flaxseed-oil			ready for release	Flaxseed oil supplementation has been used in function medicine for a variety of ailments including gastrointestinal complaints and cardiovascular disease.		2021-06-08T13:32:31	https://orcid.org/0000-0002-7463-6306
+FOODON:03600004	dietary supplement, botanical	ginkgo biloba supplement	'dietary supplement, botanical' and 'derives from' some (leaf and 'part of' some 'Ginkgo biloba')		A botanical dietary supplement composed primarily of a Ginkgo biloba plant leaf extract.	https://en.wikipedia.org/wiki/Ginkgo_biloba		https://www.nccih.nih.gov/health/ginkgo	ready for release	Ginkgo biloba supplementation has been used in functional medicine for a variety of ailments including peripheral artery disease and dementia.		2021-06-08T13:32:32	https://orcid.org/0000-0002-7463-6306
+FOODON:03600005	dietary supplement, botanical	ginseng supplement	'dietary supplement, botanical' and 'derives from' some 'ginseng root'		A botanical dietary supplement composed primarily of the root or root extract of the Panax ginseng plant.	https://en.wikipedia.org/wiki/Ginseng		https://www.nccih.nih.gov/health/asian-ginseng	ready for release	Ginseng supplementation has been used in functional medicine to stimulate immune function, improve well-being, and a variety of other health problems.		2021-06-08T13:32:33	https://orcid.org/0000-0002-7463-6306
+FOODON:03600006	dietary supplement, metabolite or precursor	glucosamine supplement	'dietary supplement, metabolite or precursor' and 'has part' some 'glucosamine'		A dietary supplement composed primarily of the amino sugar glucosamine.	https://en.wikipedia.org/wiki/Glucosamine#Manufacturing		https://www.nccih.nih.gov/health/glucosamine-and-chondroitin-for-osteoarthritis	ready for release	Glucosamine supplementation has been used in functional medicine for arthritis and pain.		2021-06-08T13:32:34	https://orcid.org/0000-0002-7463-6306
+FOODON:03600007	dietary supplement, metabolite or precursor	melatonin supplement	'dietary supplement, metabolite or precursor' and 'has part' some 'melatonin'		A dietary supplement composed primarily of the hormone melatonin.	https://www.nccih.nih.gov/health/melatonin-what-you-need-to-know			ready for release	Melatonin supplementation has been used in functional medicine for circadian rhythm disruption and insomnia.		2021-06-08T13:32:35	https://orcid.org/0000-0002-7463-6306
+FOODON:03600008	dietary supplement, botanical	milk thistle supplement	'dietary supplement, botanical' and 'derives from' some 'Silybum marianum seed'		A botanical dietary supplement composed primarily of extract from the seeds of the Silybum marianum plant.	https://en.wikipedia.org/wiki/Silybum_marianum		https://www.nccih.nih.gov/health/milk-thistle	ready for release	Milk thistle supplementation has been used in functional medicine for a variety of ailments including hepatitis, cirrhosis, and diabetes.		2021-06-08T13:32:36	https://orcid.org/0000-0002-7463-6306
+FOODON:03600009	fat or oil supplement	omega-3- fatty acid supplement	'fat or oil supplement' and 'has part' some 'omega-3 fatty acid'		A dietary fat supplement composed primarily of omega-3 fatty acids eicosapentaenoic acid (EPA) and docosahexaenoic acid (DHA).	https://www.nccih.nih.gov/health/omega3-supplements-in-depth			ready for release	Omega-3- fatty acid supplementation has been used in function medicine for a variety of ailments including hypertriglyceridemia and rheumatoid arthritis.		2021-06-08T13:32:37	https://orcid.org/0000-0002-7463-6306
+FOODON:03600010	dietary supplement, botanical	red yeast rice supplement	'dietary supplement, botanical' and 'has part' some 'rice kernel food product' and 'has part' some 'Monascus purpureus'		A botanical dietary supplement composed primarily of red yeast rice (rice fermented with the mold Monascus purpureus).	https://en.wikipedia.org/wiki/Red_yeast_rice		https://www.nccih.nih.gov/health/red-yeast-rice	ready for release	Red yeast rice supplementation has been used in functional medicine to aid in digestion and reduce blood cholesterol.		2021-06-08T13:32:38	https://orcid.org/0000-0002-7463-6306
+FOODON:03600011	dietary supplement, botanical	resveratrol supplement	'dietary supplement, botanical' and 'has part' some resveratrol		A botanical dietary supplement composed primarily of resveratrol.	https://en.wikipedia.org/wiki/Resveratrol			ready for release	Resveratrol supplementation has been used in functional medicine to reduce blood pressure and improve cognition.		2021-06-08T13:32:39	https://orcid.org/0000-0002-7463-6306
+FOODON:03600012	dietary supplement, botanical	St. John's wort supplement	'dietary supplement, botanical' and 'derives from' some 'Hypericum perforatum flower'		A botanical dietary supplement composed primarily of an extract of the flower of the Hypericum perforatum plant.	https://en.wikipedia.org/wiki/Hypericum_perforatum		https://www.nccih.nih.gov/health/st-johns-wort	ready for release	St. john's wort supplementation has been used in functional medicine for a variety of ailments including insomnia and depression. St. John's wort is a cytochrome P450 inducer and has known interactions with some medications.		2021-06-08T13:32:40	https://orcid.org/0000-0002-7463-6306
+FOODON:03000437	dietary supplement, amino acid or protein	marine protein supplement			A dietary supplement made from protein derived from marine animals.							2021-12-22T12:35:22Z	https://orcid.org/0000-0001-5275-8866
+FOODON:03000438	dietary supplement, amino acid or protein	animal protein supplement			A dietaty supplement made from protein derived from an animal.					Animal protein supplementation has been used to provide all the essential amino acids body needs to function effectively.		2021-12-22T13:08:23Z	https://orcid.org/0000-0001-5275-8866
+FOODON:00005589	dietary supplement, amino acid or protein	soy-based protein powder			A plant-based protein supplement what is derived from soybeans.								
+FOODON:00005590	dietary supplement, amino acid or protein	whey-based protein powder			 A protein supplement made from whey, the liquid byproduct that is separated during the process of making cheese from milk.								
+FOODON:03000439	multi-vitamin and multi-mineral supplement	green powder supplement			A dietary supplement made from dried leafy greens and other vegetables, seaweed, grasses, high-antioxidant fruits and herbs. Probiotics and digestive enzymes are often added as well.				ready for release	The green powder supplementation has been used to support body’s immune system and energy levels while meeting the nutrition requirements for a healthy diet		2021-12-22T13:23:21Z	https://orcid.org/0000-0001-5275-8866
+FOODON:03000440	botanical supplement with multi-vitamin/mineral	chlorella powder supplement	'multi-vitamin and multi-mineral supplement' and 'derives from' some Chlorella		A powdered dietary supplement made from Chlorella.	https://www.healthline.com/nutrition/benefits-of-chlorella#TOC_TITLE_HDR_1			ready for release	Chlorella has been used as a source of many nutrients, including amino acids, vitamins, minerals, antioxidants and omega-3 fats.		2021-12-22T13:33:34Z	https://orcid.org/0000-0001-5275-8866
+FOODON:03000441	dietary supplement, multi-vitamin/mineral and amino acids	liver powder supplement			A dietary supplement made from an animal liver  that has been ground into powder.					Liver is a great source of high-quality protein. It is rich in essential nutrients including vitamins and minerals.		2021-12-22T16:12:34Z	https://orcid.org/0000-0001-5275-8866
+FOODON:03000442	liver powder supplement	liver powder supplement (desiccated)			A dietary supplement made from an animal liver that has been dried and ground into powder.	https://www.consumerlab.com/answers/desiccated-beef-liver/beef-liver/						2021-12-22T14:09:44Z	https://orcid.org/0000-0001-5275-8866
+FOODON:03000443	dietary supplement, botanical	kratom capsule	'dietary supplement, botanical' and 'derives from' some 'Mitragyna speciosa'		A capsules made of powdered kratom leaves.					Kratom capsule has been used for pain-relieving effects.		2021-12-22T19:48:21Z	https://orcid.org/0000-0001-5275-8866
+FOODON:03000444	dietary supplement, botanical	hoodia supplement	'dietary supplement, botanical' and 'derives from' some 'Hoodia gordonii'		A dietary supplement made from Kalahari cactus plant (Hoodia gordonii).					Hoodia dietary supplement claims to reduce appetite and boost weight loss.		2021-12-22T19:48:21Z	https://orcid.org/0000-0001-5275-8866
+FOODON:03000445	dietary supplement	elderly dietary supplement			A dietary supplement designed to meet nutrition needs of older adults.							2021-12-22T19:55:02Z	https://orcid.org/0000-0001-5275-8866
+FOODON:03603000	food supplement	malnutrition supplement			A food supplement designed to alleviate malnutrition.							2023-02-02T19:55:02Z	https://orcid.org/0000-0003-4173-6551
+FOODON:03603001	malnutrition supplement	moderate malnutrition supplement			A malnutrition supplement designed to alleviate moderate malnutrition.							2023-02-02T19:55:02Z	https://orcid.org/0000-0003-4173-6551
+FOODON:03603002	malnutrition supplement	severe malnutrition supplement			A malnutrition supplement designed to alleviate severe malnutrition.							2023-02-02T19:55:02Z	https://orcid.org/0000-0003-4173-6551
+		CANNED FOOD	'food (canned)' and 'has defining ingredient' some '[part of plant or animal]'		Canned food is a kind of food product which is prepared according to a canning recipe.								
+FOODON:03301003	pineapple food product	pineapple (canned)	'food (canned)' and 'has defining ingredient' some 'piece of pineapple'										
+FOODON:03301085	shrimp food product	shrimp (canned)	'food (canned)' and 'has defining ingredient' some 'shrimp (raw)'				shrimp						
+FOODON:03301087	salmon food product	salmon (canned)	'food (canned)' and 'has defining ingredient' some 'salmon (raw)'				salmon						
+FOODON:03301151	mussel food product	mussel (canned)	'food (canned)' and 'has defining ingredient' some 'mussel (shell off, raw)'				mussel						
+FOODON:03301155	clam food product	clam (canned)	'food (canned)' and 'has defining ingredient' some 'clam (shell off, raw)'				clam						
+FOODON:03301165	albacore food product	albacore (canned)	'food (canned)' and 'has defining ingredient' some 'piece of albacore meat (raw)'				albacore						
