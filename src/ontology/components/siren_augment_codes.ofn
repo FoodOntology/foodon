@@ -12020,7 +12020,7 @@ AnnotationAssertion(rdfs:comment obo:FOODON_03301470 "SIREN DB annotation:
 * preservation by dehydration or drying FOODON:03470116
 * ingredient: flavoring, spice or herb added FOODON:03460227"@en)
 
-# Class: obo:FOODON_03301472 (starch (thin boiling))
+# Class: obo:FOODON_03301472 (corn starch (thin boiling))
 
 AnnotationAssertion(rdfs:comment obo:FOODON_03301472 "SIREN DB annotation:
 * starch FOODON:03420203"@en)
@@ -23089,7 +23089,7 @@ AnnotationAssertion(rdfs:comment obo:FOODON_03303554 "SIREN DB annotation:
 * water removal process FOODON:03460138
 * preservation by dehydration or drying FOODON:03470116"@en)
 
-# Class: obo:FOODON_03303555 (beer (dealcoholized))
+# Class: obo:FOODON_03303555 (beer (barley-based, dealcoholized))
 
 AnnotationAssertion(rdfs:comment obo:FOODON_03303555 "SIREN DB annotation:
 * liquid, low viscosity, with no visible particles FOODON:03430123
@@ -24711,7 +24711,7 @@ AnnotationAssertion(rdfs:comment obo:FOODON_03303806 "SIREN DB annotation:
 * ingredient: gelatin added FOODON:03460165
 * energy special claim or use FOODON:03510045"@en)
 
-# Class: obo:FOODON_03303822 (malt beverage (nonalcoholic))
+# Class: obo:FOODON_03303822 (barley malt beverage (dealcoholized, nonalcoholic))
 
 AnnotationAssertion(rdfs:comment obo:FOODON_03303822 "SIREN DB annotation:
 * liquid, low viscosity, with no visible particles FOODON:03430123
@@ -36769,7 +36769,7 @@ AnnotationAssertion(rdfs:comment obo:FOODON_03305804 "SIREN DB annotation:
 * preservation by dehydration or drying FOODON:03470116
 * ingredient: color added FOODON:03460150"@en)
 
-# Class: obo:FOODON_03305805 (cornstarch (artificially flavored and colored))
+# Class: obo:FOODON_03305805 (corn starch (artificially flavored and colored))
 
 AnnotationAssertion(rdfs:comment obo:FOODON_03305805 "SIREN DB annotation:
 * finely ground FOODON:03430106
@@ -61868,7 +61868,7 @@ AnnotationAssertion(rdfs:comment obo:FOODON_03310878 "SIREN DB annotation:
 * ingredient: sucrose added FOODON:03460158
 * ingredient: gelatin added FOODON:03460165"@en)
 
-# Class: obo:FOODON_03310882 (alcohol-free beer)
+# Class: obo:FOODON_03310882 (beer (barley-based, alcohol-free))
 
 AnnotationAssertion(rdfs:comment obo:FOODON_03310882 "SIREN DB annotation:
 * surrounded by 'can, bottle or jar' FOODON:03490194
@@ -69074,7 +69074,7 @@ AnnotationAssertion(rdfs:comment obo:FOODON_03315286 "SIREN DB annotation:
 AnnotationAssertion(rdfs:comment obo:FOODON_03315287 "SIREN DB annotation:
 * fat or oil FOODON:03420190"@en)
 
-# Class: obo:FOODON_03315288 (beverage, lactobacillus)
+# Class: obo:FOODON_03315288 (beverage (lactobacillus))
 
 AnnotationAssertion(rdfs:comment obo:FOODON_03315288 "SIREN DB annotation:
 * liquid FOODON:03430130
@@ -70372,7 +70372,7 @@ AnnotationAssertion(rdfs:comment obo:FOODON_03315556 "SIREN DB annotation:
 * water removal process FOODON:03460138
 * preservation by dehydration or drying FOODON:03470116"@en)
 
-# Class: obo:FOODON_03315557 (beverage, composite, concentrate for)
+# Class: obo:FOODON_03315557 (composite beverage concentrate)
 
 AnnotationAssertion(rdfs:comment obo:FOODON_03315557 "SIREN DB annotation:
 * beverage base FOODON:03530088
@@ -72122,7 +72122,7 @@ AnnotationAssertion(rdfs:comment obo:FOODON_03315943 "SIREN DB annotation:
 * microbial/enzymatic modification process FOODON:03460119
 * alcohol fermentation process FOODON:03460232"@en)
 
-# Class: obo:FOODON_03315950 (drink (flavored, water-based, energy reduced))
+# Class: obo:FOODON_03315950 (beverage (water-based, flavored, energy reduced))
 
 AnnotationAssertion(rdfs:comment obo:FOODON_03315950 "SIREN DB annotation:
 * liquid FOODON:03430130
@@ -77915,7 +77915,7 @@ AnnotationAssertion(rdfs:comment obo:FOODON_03317070 "SIREN DB annotation:
 * water removal process FOODON:03460138
 * ingredient: stabilizer added FOODON:03460368"@en)
 
-# Class: obo:FOODON_03317071 (drink with no added sugar (flavored, water-based))
+# Class: obo:FOODON_03317071 (beverage (water-based, flavored, no added sugar))
 
 AnnotationAssertion(rdfs:comment obo:FOODON_03317071 "SIREN DB annotation:
 * liquid FOODON:03430130
@@ -78401,7 +78401,7 @@ AnnotationAssertion(rdfs:comment obo:FOODON_03317173 "SIREN DB annotation:
 * fully heat-treated FOODON:03440014
 * meat part of animal FOODON:03420103"@en)
 
-# Class: obo:FOODON_03317174 (drink (sweetened))
+# Class: obo:FOODON_03317174 (beverage (sweetened))
 
 AnnotationAssertion(rdfs:comment obo:FOODON_03317174 "SIREN DB annotation:
 * liquid FOODON:03430130
@@ -80049,7 +80049,7 @@ AnnotationAssertion(rdfs:comment obo:FOODON_03317495 "SIREN DB annotation:
 * liquid FOODON:03430130
 * fruit or seed FOODON:03420165"@en)
 
-# Class: obo:FOODON_03317496 (breakfast cereal (granola-type))
+# Class: obo:FOODON_03317496 (oat granola)
 
 AnnotationAssertion(rdfs:comment obo:FOODON_03317496 "SIREN DB annotation:
 * whole and pieces FOODON:03430104
@@ -81082,8 +81082,6 @@ AnnotationAssertion(rdfs:comment obo:FOODON_00002424 "SIREN DB annotation:
 * curd FOODON:03420245
 * curing or aging process FOODON:03460253
 * interior mold curing process FOODON:03460331"@en)
-AnnotationAssertion(rdfs:comment obo:FOODON_00003202 "SIREN DB annotation:
-* liquid FOODON:03430130"@en)
 AnnotationAssertion(rdfs:comment obo:FOODON_00003627 "SIREN DB annotation:
 * whole, natural shape FOODON:03430150
 * seed (anatomical part) FOODON:03420155"@en)
