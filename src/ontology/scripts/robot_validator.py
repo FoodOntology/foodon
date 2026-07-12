@@ -658,19 +658,22 @@ def validate(tsv_file: str, label_index: dict) -> list[dict]:
                     '_fix_value': fixed_cell,
                 })
 
-            # Check each (stripped) part for valid CURIE or IRI format
+            # Check each (stripped) part for valid CURIE or IRI format.
+            # Exception: a plain-text value that matches a known ontology label
+            # is accepted (it functions as a cross-reference by name).
             for part in stripped_parts:
                 if not part:
                     continue
-                if not is_curie_or_iri(part):
+                if not is_curie_or_iri(part) and part.lower() not in label_index:
                     issues.append({
                         'type':    'ERROR',
                         'row':     row_num,
                         'col':     col_i + 1,
                         'header':  col_info['header'],
-                        'msg':     f'AI column value is not a valid CURIE or IRI: "{part}"',
-                        'fix':     ('Values in AI columns must be CURIEs (e.g. IAO:0000119) '
-                                    'or full IRIs (e.g. https://example.org/...).'),
+                        'msg':     f'AI column value is not a valid CURIE or IRI, and not a known ontology label: "{part}"',
+                        'fix':     ('Values in AI columns must be CURIEs (e.g. IAO:0000119), '
+                                    'full IRIs (e.g. https://example.org/...), '
+                                    'or a label that exists in the ontology.'),
                         'context': repr(raw_cell[:120]),
                     })
 
