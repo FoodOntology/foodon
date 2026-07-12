@@ -12859,7 +12859,7 @@ SubClassOf(obo:FOODON_00002446 obo:FOODON_02021531)
 
 SubClassOf(obo:FOODON_00002449 obo:FOODON_02021555)
 
-# Class: obo:FOODON_00002451 (food transformation)
+# Class: obo:FOODON_00002451 (food material processing)
 
 SubClassOf(obo:FOODON_00002451 obo:FOODON_03530206)
 
@@ -12923,12 +12923,12 @@ AnnotationAssertion(rdfs:label obo:FOODON_00002463 "food (pan-fried)"@en)
 EquivalentClasses(obo:FOODON_00002463 ObjectIntersectionOf(obo:FOODON_00001181 ObjectSomeValuesFrom(obo:RO_0002353 obo:FOODON_00002462)))
 SubClassOf(obo:FOODON_00002463 obo:FOODON_00001181)
 
-# Class: obo:FOODON_00002470 (food material characteristic)
+# Class: obo:FOODON_00002470 (food characteristic)
 
 AnnotationAssertion(obo:IAO_0000114 obo:FOODON_00002470 obo:IAO_0000122)
 AnnotationAssertion(obo:IAO_0000115 obo:FOODON_00002470 "A physical object quality which describes a characteristic of some food material."@en)
 AnnotationAssertion(obo:IAO_0000117 obo:FOODON_00002470 "http://orcid.org/0000-0001-8008-8249")
-AnnotationAssertion(rdfs:label obo:FOODON_00002470 "food material characteristic"@en)
+AnnotationAssertion(rdfs:label obo:FOODON_00002470 "food characteristic"@en)
 SubClassOf(obo:FOODON_00002470 obo:PATO_0001241)
 
 # Class: obo:FOODON_00002483 (ricefield rat)
@@ -18663,11 +18663,8 @@ SubClassOf(obo:FOODON_00004726 obo:FOODON_00004725)
 
 # Class: obo:FOODON_00004727 (thawed)
 
-AnnotationAssertion(obo:IAO_0000115 obo:FOODON_00004727 "A characteristic of material which indicates that it was previously frozen."@en)
 AnnotationAssertion(dcterms:contributor obo:FOODON_00004727 <https://orcid.org/0000-0002-8844-9165>)
 AnnotationAssertion(dcterms:date obo:FOODON_00004727 "2024-04-20T04:37:02Z"^^xsd:dateTime)
-AnnotationAssertion(rdfs:label obo:FOODON_00004727 "thawed"@en)
-SubClassOf(obo:FOODON_00004727 obo:PATO_0001241)
 
 # Class: obo:FOODON_00004728 (flash frozen)
 
@@ -19035,7 +19032,7 @@ AnnotationAssertion(dcterms:contributor obo:FOODON_00005566 <https://orcid.org/0
 AnnotationAssertion(dcterms:date obo:FOODON_00005566 "2025-09-22T17:34:40Z"^^xsd:dateTime)
 AnnotationAssertion(rdfs:label obo:FOODON_00005566 "meat doneness"@en)
 AnnotationAssertion(rdfs:seeAlso obo:FOODON_00005566 <https://archive.org/details/fieldguidetomeat0000gree_n1b1/page/294/mode/2up?view=theater>)
-SubClassOf(obo:FOODON_00005566 obo:PATO_0001241)
+SubClassOf(obo:FOODON_00005566 obo:FOODON_00002470)
 
 # Class: obo:FOODON_00005615 (well done meat)
 
@@ -77505,11 +77502,9 @@ SubClassOf(obo:FOODON_03430125 obo:FOODON_03430152)
 # Class: obo:FOODON_03430130 (food (liquid))
 
 AnnotationAssertion(obo:IAO_0000114 obo:FOODON_03430130 obo:IAO_0000428)
-AnnotationAssertion(obo:IAO_0000115 obo:FOODON_03430130 "A state of matter between a solid and a gas, in which a substance has the capacity to flow and conforms to the shape of the container."@en)
 AnnotationAssertion(oboInOwl:hasBroadSynonym obo:FOODON_03430130 "fluid"@en)
 AnnotationAssertion(oboInOwl:hasDbXref obo:FOODON_03430130 langual:E0130)
 AnnotationAssertion(rdfs:comment obo:FOODON_03430130 "Liquids range from water to honey, corresponding to a range in viscosity (or apparent viscosity) from 1 to 500 centipoise (viscosity is a measure of a liquid's resistance to flow). Products that are pourable but have a higher viscosity are *SEMILIQUID*."@en)
-AnnotationAssertion(rdfs:label obo:FOODON_03430130 "food (liquid)"@en)
 EquivalentClasses(obo:FOODON_03430130 ObjectIntersectionOf(obo:FOODON_00002454 ObjectSomeValuesFrom(obo:RO_0000086 obo:PATO_0001548)))
 SubClassOf(obo:FOODON_03430130 obo:FOODON_00002454)
 
