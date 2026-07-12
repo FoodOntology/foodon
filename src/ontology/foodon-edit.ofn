@@ -1215,10 +1215,16 @@ Declaration(Class(obo:FOODON_00005788))
 Declaration(Class(obo:FOODON_00005789))
 Declaration(Class(obo:FOODON_00005790))
 Declaration(Class(obo:FOODON_00005791))
+Declaration(Class(obo:FOODON_00005792))
 Declaration(Class(obo:FOODON_00005793))
+Declaration(Class(obo:FOODON_00005794))
 Declaration(Class(obo:FOODON_00005795))
 Declaration(Class(obo:FOODON_00005796))
 Declaration(Class(obo:FOODON_00005797))
+Declaration(Class(obo:FOODON_00005798))
+Declaration(Class(obo:FOODON_00005799))
+Declaration(Class(obo:FOODON_00005800))
+Declaration(Class(obo:FOODON_00005801))
 Declaration(Class(obo:FOODON_0002899))
 Declaration(Class(obo:FOODON_02010001))
 Declaration(Class(obo:FOODON_02010014))
@@ -12853,7 +12859,7 @@ SubClassOf(obo:FOODON_00002446 obo:FOODON_02021531)
 
 SubClassOf(obo:FOODON_00002449 obo:FOODON_02021555)
 
-# Class: obo:FOODON_00002451 (food transformation process)
+# Class: obo:FOODON_00002451 (food transformation)
 
 SubClassOf(obo:FOODON_00002451 obo:FOODON_03530206)
 
@@ -17562,8 +17568,6 @@ SubClassOf(obo:FOODON_00004229 obo:FOODON_00002872)
 
 # Class: obo:FOODON_00004243 (roselle calyx)
 
-AnnotationAssertion(obo:IAO_0000117 obo:FOODON_00004243 <http://orcid.org/0000-0002-8844-9165>)
-AnnotationAssertion(dcterms:date obo:FOODON_00004243 "2022-02-20T06:55:12Z"^^xsd:dateTime)
 SubClassOf(obo:FOODON_00004243 obo:FOODON_00003092)
 
 # Class: obo:FOODON_00004261 (chinese chestnut (raw))
@@ -18187,12 +18191,12 @@ AnnotationAssertion(oboInOwl:hasNarrowSynonym obo:FOODON_00004456 "stove pot"@en
 AnnotationAssertion(rdfs:label obo:FOODON_00004456 "cooking pot"@en)
 SubClassOf(obo:FOODON_00004456 obo:OBI_0000967)
 
-# Class: obo:FOODON_00004457 (food recipe process)
+# Class: obo:FOODON_00004457 (food recipe preperation)
 
 AnnotationAssertion(obo:IAO_0000115 obo:FOODON_00004457 "A food treatment process that executes a food recipe specification."@en)
 AnnotationAssertion(dcterms:contributor obo:FOODON_00004457 <https://orcid.org/0000-0002-8844-9165>)
 AnnotationAssertion(dcterms:date obo:FOODON_00004457 "2023-07-16T15:15:17Z"^^xsd:dateTime)
-AnnotationAssertion(rdfs:label obo:FOODON_00004457 "food recipe process"@en)
+AnnotationAssertion(rdfs:label obo:FOODON_00004457 "food recipe preperation"@en)
 SubClassOf(obo:FOODON_00004457 obo:FOODON_03460111)
 
 # Class: obo:FOODON_00004458 (plant piece aggregate)
@@ -19505,17 +19509,6 @@ AnnotationAssertion(rdfs:comment obo:FOODON_00005746 "Organism material that ori
 AnnotationAssertion(rdfs:label obo:FOODON_00005746 "wild harvested"@en)
 SubClassOf(obo:FOODON_00005746 obo:FOODON_00002470)
 
-# Class: obo:FOODON_00005747 (cream (liquid))
-
-AnnotationAssertion(obo:IAO_0000115 obo:FOODON_00005747 "Cow milk cream in liquid form."@en)
-AnnotationAssertion(dcterms:contributor obo:FOODON_00005747 <https://orcid.org/0000-0002-8844-9165>)
-AnnotationAssertion(dcterms:date obo:FOODON_00005747 "2026-07-02T13:22:00Z"^^xsd:dateTime)
-AnnotationAssertion(oboInOwl:hasExactSynonym obo:FOODON_00005747 "cream"@en)
-AnnotationAssertion(oboInOwl:hasExactSynonym obo:FOODON_00005747 "creme"@en)
-AnnotationAssertion(oboInOwl:hasExactSynonym obo:FOODON_00005747 "crème"@fr)
-AnnotationAssertion(rdfs:label obo:FOODON_00005747 "cream (liquid)"@en)
-SubClassOf(obo:FOODON_00005747 obo:FOODON_00001775)
-
 # Class: obo:FOODON_00005748 (plant substance)
 
 AnnotationAssertion(obo:IAO_0000115 obo:FOODON_00005748 "An organism substance which derives from part of one or more plant."@en)
@@ -19879,6 +19872,47 @@ AnnotationAssertion(rdfs:comment obo:FOODON_00005789 "A seed from a vanilla bean
 AnnotationAssertion(rdfs:label obo:FOODON_00005789 "vanilla seed"@en)
 SubClassOf(obo:FOODON_00005789 obo:FOODON_00002328)
 SubClassOf(obo:FOODON_00005789 obo:PO_0009010)
+
+# Class: obo:FOODON_00005792 (roselle sepal)
+
+AnnotationAssertion(obo:IAO_0000115 obo:FOODON_00005792 "A sepal of a roselle plant calyx (Hibiscus sabdariffa)."@en)
+AnnotationAssertion(dcterms:contributor obo:FOODON_00005792 <https://orcid.org/0000-0002-8844-9165>)
+AnnotationAssertion(dcterms:date obo:FOODON_00005792 "2026-07-02T19:16:09Z"^^xsd:dateTime)
+AnnotationAssertion(rdfs:label obo:FOODON_00005792 "roselle sepal"@en)
+SubClassOf(obo:FOODON_00005792 obo:FOODON_00003092)
+
+# Class: obo:FOODON_00005794 (hibiscus tea)
+
+AnnotationAssertion(obo:IAO_0000115 obo:FOODON_00005794 "A tea made from roselle sepia."@en)
+AnnotationAssertion(dcterms:contributor obo:FOODON_00005794 <https://orcid.org/0000-0002-8844-9165>)
+AnnotationAssertion(dcterms:date obo:FOODON_00005794 "2026-07-02T19:19:37Z"^^xsd:dateTime)
+AnnotationAssertion(rdfs:label obo:FOODON_00005794 "hibiscus tea"@en)
+SubClassOf(obo:FOODON_00005794 obo:FOODON_03315081)
+
+# Class: obo:FOODON_00005798 (artificial)
+
+AnnotationAssertion(obo:IAO_0000115 obo:FOODON_00005798 "A characteristic pertaining to a material entity which is made, produced, or contrived by humans rather than occurring naturally."@en)
+AnnotationAssertion(obo:IAO_0000119 obo:FOODON_00005798 <https://en.wiktionary.org/wiki/artificial>)
+AnnotationAssertion(dcterms:contributor obo:FOODON_00005798 <https://orcid.org/0000-0002-8844-9165>)
+AnnotationAssertion(dcterms:date obo:FOODON_00005798 "2026-07-02T20:04:02Z"^^xsd:dateTime)
+AnnotationAssertion(rdfs:label obo:FOODON_00005798 "artificial"@en)
+SubClassOf(obo:FOODON_00005798 obo:PATO_0001241)
+
+# Class: obo:FOODON_00005799 (emulsifier)
+
+AnnotationAssertion(obo:IAO_0000115 obo:FOODON_00005799 "A substance which allows two liquids that normally do not mix, like oil and water, to blend together and stay combined."@en)
+AnnotationAssertion(dcterms:contributor obo:FOODON_00005799 <https://orcid.org/0000-0002-8844-9165>)
+AnnotationAssertion(dcterms:date obo:FOODON_00005799 "2026-07-02T20:11:49Z"^^xsd:dateTime)
+AnnotationAssertion(rdfs:label obo:FOODON_00005799 "emulsifier"@en)
+SubClassOf(obo:FOODON_00005799 obo:FOODON_00001832)
+
+# Class: obo:FOODON_00005800 (plant-based yogurt)
+
+AnnotationAssertion(obo:IAO_0000115 obo:FOODON_00005800 "A yogurt product analog which is made with plant material."@en)
+AnnotationAssertion(dcterms:contributor obo:FOODON_00005800 <https://orcid.org/0000-0002-8844-9165>)
+AnnotationAssertion(dcterms:date obo:FOODON_00005800 "2026-07-02T21:37:24Z"^^xsd:dateTime)
+AnnotationAssertion(rdfs:label obo:FOODON_00005800 "plant-based yogurt"@en)
+SubClassOf(obo:FOODON_00005800 obo:FOODON_00001801)
 
 # Class: obo:FOODON_02010002 (animal egg)
 
@@ -21513,11 +21547,6 @@ SubClassOf(obo:FOODON_03302641 ObjectSomeValuesFrom(obo:RO_0001000 obo:FOODON_03
 
 SubClassOf(obo:FOODON_03302651 ObjectSomeValuesFrom(obo:RO_0001000 obo:FOODON_03411312))
 
-# Class: obo:FOODON_03302671 (fruit and grain beverage (boiled, caffeine-free))
-
-SubClassOf(obo:FOODON_03302671 obo:FOODON_00001253)
-SubClassOf(obo:FOODON_03302671 ObjectSomeValuesFrom(obo:RO_0001000 obo:FOODON_03411140))
-
 # Class: obo:FOODON_03302673 (pasteurized process cheese (artificially colored, spray-dried))
 
 SubClassOf(obo:FOODON_03302673 ObjectSomeValuesFrom(obo:RO_0001000 obo:FOODON_03411201))
@@ -22056,10 +22085,6 @@ SubClassOf(obo:FOODON_03303545 ObjectSomeValuesFrom(obo:RO_0001000 obo:FOODON_03
 
 SubClassOf(obo:FOODON_03303549 ObjectSomeValuesFrom(obo:RO_0001000 obo:FOODON_03411201))
 
-# Class: obo:FOODON_03303555 (beer (dealcoholized))
-
-SubClassOf(obo:FOODON_03303555 ObjectSomeValuesFrom(obo:RO_0001000 obo:FOODON_03411230))
-
 # Class: obo:FOODON_03303558 (pineapple juice (concentrated))
 
 SubClassOf(obo:FOODON_03303558 ObjectSomeValuesFrom(obo:RO_0001000 obo:NCBITaxon_4615))
@@ -22255,10 +22280,6 @@ SubClassOf(obo:FOODON_03303798 ObjectSomeValuesFrom(obo:RO_0001000 obo:FOODON_03
 # Class: obo:FOODON_03303805 (chocolate candy (herb-filled))
 
 SubClassOf(obo:FOODON_03303805 ObjectSomeValuesFrom(obo:RO_0001000 obo:FOODON_03411012))
-
-# Class: obo:FOODON_03303822 (malt beverage (nonalcoholic))
-
-SubClassOf(obo:FOODON_03303822 ObjectSomeValuesFrom(obo:RO_0001000 obo:FOODON_03411230))
 
 # Class: obo:FOODON_03303827 (imitation butterscotch candy)
 
@@ -22706,7 +22727,7 @@ SubClassOf(obo:FOODON_03304619 ObjectSomeValuesFrom(obo:RO_0001000 obo:FOODON_03
 
 # Class: obo:FOODON_03304620 (fig juice)
 
-EquivalentClasses(obo:FOODON_03304620 ObjectIntersectionOf(obo:FOODON_00001140 ObjectSomeValuesFrom(obo:RO_0001000 obo:NCBITaxon_3494)))
+EquivalentClasses(obo:FOODON_03304620 ObjectIntersectionOf(obo:FOODON_03301296 ObjectSomeValuesFrom(obo:RO_0001000 obo:NCBITaxon_3494)))
 
 # Class: obo:FOODON_03304634 (roquefort dressing)
 
@@ -27127,10 +27148,6 @@ SubClassOf(obo:FOODON_03310824 ObjectSomeValuesFrom(obo:RO_0001000 obo:FOODON_03
 # Class: obo:FOODON_03310869 (pudding mix (instant))
 
 SubClassOf(obo:FOODON_03310869 ObjectSomeValuesFrom(obo:RO_0001000 obo:FOODON_03411012))
-
-# Class: obo:FOODON_03310882 (alcohol-free beer)
-
-SubClassOf(obo:FOODON_03310882 ObjectSomeValuesFrom(obo:RO_0001000 obo:FOODON_03411230))
 
 # Class: obo:FOODON_03310884 (tunsoy raw)
 
@@ -95147,11 +95164,6 @@ AnnotationAssertion(obo:IAO_0000117 obo:FOODON_00003200 <http://orcid.org/0000-0
 AnnotationAssertion(obo:IAO_0000119 obo:FOODON_00003200 wikipedia:Plant_cream)
 AnnotationAssertion(dcterms:date obo:FOODON_00003200 "2019-09-11T23:06:43Z"^^xsd:dateTime)
 AnnotationAssertion(rdfs:label obo:FOODON_00003200 "soy cream"@en)
-AnnotationAssertion(obo:IAO_0000115 obo:FOODON_00003202 "A liquid prepared for consumption"@en)
-AnnotationAssertion(obo:IAO_0000117 obo:FOODON_00003202 <http://orcid.org/0000-0002-8844-9165>)
-AnnotationAssertion(dcterms:date obo:FOODON_00003202 "2019-09-13T09:24:52Z"^^xsd:dateTime)
-AnnotationAssertion(oboInOwl:hasExactSynonym obo:FOODON_00003202 "liquid beverage")
-AnnotationAssertion(rdfs:label obo:FOODON_00003202 "beverage"@en)
 AnnotationAssertion(obo:IAO_0000117 obo:FOODON_00003348 <http://orcid.org/0000-0002-8844-9165>)
 AnnotationAssertion(Annotation(dcterms:license <https://creativecommons.org/licenses/by-sa/2.0/de/deed.en>) Annotation(dcterms:rightsHolder "Sven Teschke") schema:image obo:FOODON_00003348 <https://upload.wikimedia.org/wikipedia/commons/thumb/4/4b/Malus-Gala.jpg/604px-Malus-Gala.jpg>)
 AnnotationAssertion(obo:IAO_0000117 obo:FOODON_00003458 <http://orcid.org/0000-0002-8844-9165>)
