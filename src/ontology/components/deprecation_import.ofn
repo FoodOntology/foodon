@@ -61,12 +61,14 @@ Declaration(Class(obo:FOODON_00002123))
 Declaration(Class(obo:FOODON_00002124))
 Declaration(Class(obo:FOODON_00002136))
 Declaration(Class(obo:FOODON_00002169))
+Declaration(Class(obo:FOODON_00002238))
 Declaration(Class(obo:FOODON_00002303))
 Declaration(Class(obo:FOODON_00002332))
 Declaration(Class(obo:FOODON_00002369))
 Declaration(Class(obo:FOODON_00002430))
 Declaration(Class(obo:FOODON_00003316))
 Declaration(Class(obo:FOODON_00003333))
+Declaration(Class(obo:FOODON_00004000))
 Declaration(Class(obo:FOODON_02020570))
 Declaration(Class(obo:FOODON_02020979))
 Declaration(Class(obo:FOODON_02021717))
@@ -374,10 +376,12 @@ Declaration(Class(obo:FOODON_03412941))
 Declaration(Class(obo:FOODON_03412942))
 Declaration(Class(obo:FOODON_03412943))
 Declaration(Class(obo:FOODON_03412973))
+Declaration(Class(obo:FOODON_03413050))
 Declaration(Class(obo:FOODON_03413066))
 Declaration(Class(obo:FOODON_03413165))
 Declaration(Class(obo:FOODON_03413206))
 Declaration(Class(obo:FOODON_03413256))
+Declaration(Class(obo:FOODON_03413262))
 Declaration(Class(obo:FOODON_03413327))
 Declaration(Class(obo:FOODON_03413340))
 Declaration(Class(obo:FOODON_03413341))
@@ -418,8 +422,17 @@ Declaration(Class(obo:FOODON_03414360))
 Declaration(Class(obo:FOODON_03414361))
 Declaration(Class(obo:FOODON_03414369))
 Declaration(Class(obo:FOODON_03414385))
+Declaration(Class(obo:FOODON_03414403))
+Declaration(Class(obo:FOODON_03414405))
+Declaration(Class(obo:FOODON_03414413))
 Declaration(Class(obo:FOODON_03414416))
 Declaration(Class(obo:FOODON_03414418))
+Declaration(Class(obo:FOODON_03414422))
+Declaration(Class(obo:FOODON_03414423))
+Declaration(Class(obo:FOODON_03414425))
+Declaration(Class(obo:FOODON_03414443))
+Declaration(Class(obo:FOODON_03414444))
+Declaration(Class(obo:FOODON_03414448))
 Declaration(Class(obo:FOODON_03414465))
 Declaration(Class(obo:FOODON_03414468))
 Declaration(Class(obo:FOODON_03414469))
@@ -730,6 +743,12 @@ AnnotationAssertion(owl:deprecated obo:FOODON_00002136 "true"^^xsd:boolean)
 AnnotationAssertion(rdfs:label obo:FOODON_00002169 "obsolete: foodon product type template"@en)
 AnnotationAssertion(owl:deprecated obo:FOODON_00002169 "true"^^xsd:boolean)
 
+# Class: obo:FOODON_00002238 (obsolete: cocos fruit product)
+
+AnnotationAssertion(obo:IAO_0100001 obo:FOODON_00002238 obo:FOODON_03316908)
+AnnotationAssertion(rdfs:label obo:FOODON_00002238 "obsolete: cocos fruit product")
+AnnotationAssertion(owl:deprecated obo:FOODON_00002238 "true"^^xsd:boolean)
+
 # Class: obo:FOODON_00002303 (obsolete: swine meat food product)
 
 AnnotationAssertion(obo:IAO_0100001 obo:FOODON_00002303 "http://purl.obolibrary.org/obo/FOODON_00001132"^^xsd:anyURI)
@@ -754,6 +773,12 @@ AnnotationAssertion(owl:deprecated obo:FOODON_00002430 "true"^^xsd:boolean)
 AnnotationAssertion(obo:IAO_0100001 obo:FOODON_00003316 obo:NCBITaxon_9893)
 AnnotationAssertion(rdfs:label obo:FOODON_00003316 "obsolete: giraffe"@en)
 AnnotationAssertion(owl:deprecated obo:FOODON_00003316 "true"^^xsd:boolean)
+
+# Class: obo:FOODON_00004000 (obsolete: peruvian calico scallop)
+
+AnnotationAssertion(obo:IAO_0100001 obo:FOODON_00004000 obo:FOODON_03414603)
+AnnotationAssertion(rdfs:label obo:FOODON_00004000 "obsolete: peruvian calico scallop")
+AnnotationAssertion(owl:deprecated obo:FOODON_00004000 "true"^^xsd:boolean)
 
 # Class: obo:FOODON_03000387 (obsolete: beef shoulder chop)
 
@@ -2319,6 +2344,12 @@ AnnotationAssertion(obo:IAO_0100001 obo:FOODON_03412973 obo:FOODON_03411041)
 AnnotationAssertion(rdfs:label obo:FOODON_03412973 "obsolete: other chemical food source"@en)
 AnnotationAssertion(owl:deprecated obo:FOODON_03412973 "true"^^xsd:boolean)
 
+# Class: obo:FOODON_03413050 (obsolete: calcium silicate)
+
+AnnotationAssertion(obo:IAO_0100001 obo:FOODON_03413050 obo:CHEBI_190294)
+AnnotationAssertion(rdfs:label obo:FOODON_03413050 "obsolete: calcium silicate")
+AnnotationAssertion(owl:deprecated obo:FOODON_03413050 "true"^^xsd:boolean)
+
 # Class: obo:FOODON_03413066 (obsolete: citric acid)
 
 AnnotationAssertion(obo:IAO_0000119 obo:FOODON_03413066 "If used for food additives, this descriptor refers to the European Commission food additive regulation according to the four Food Additive Directives: the EEC Framework Directive on Food Additives (89/107/EEC), the Directive on colours (94/36/EC), the Directive on sweeteners (94/35/EC) and the 'miscellaneous' Directive (95/2/EC) [http://ec.europa.eu/food/fs/sfp/flav_index_en.html] and/or Codex Alimentarius Commission General Standard for Food Additives (CODEX STAN 192) [http://www.codexalimentarius.net/download/standards/4/CXS_192e.pdf].
@@ -2351,6 +2382,12 @@ AnnotationAssertion(oboInOwl:hasDbXref obo:FOODON_03413256 langual:B3256)
 AnnotationAssertion(rdfs:comment obo:FOODON_03413256 "LanguaL curation note: This term is only kept for backward compatibility. DO NOT USE for new indexing."@en)
 AnnotationAssertion(rdfs:label obo:FOODON_03413256 "obsolete: sodium hydrogen carbonate"@en)
 AnnotationAssertion(owl:deprecated obo:FOODON_03413256 "true"^^xsd:boolean)
+
+# Class: obo:FOODON_03413262 (obsolete: sodium malate)
+
+AnnotationAssertion(obo:IAO_0100001 obo:FOODON_03413262 obo:FOODON_03413262)
+AnnotationAssertion(rdfs:label obo:FOODON_03413262 "obsolete: sodium malate")
+AnnotationAssertion(owl:deprecated obo:FOODON_03413262 "true"^^xsd:boolean)
 
 # Class: obo:FOODON_03413327 (obsolete: lesser yam plant)
 
@@ -2463,6 +2500,24 @@ AnnotationAssertion(rdfs:comment obo:FOODON_03414352 "LanguaL curation note: Thi
 AnnotationAssertion(rdfs:label obo:FOODON_03414352 "obsolete: grains-of-paradise"@en)
 AnnotationAssertion(owl:deprecated obo:FOODON_03414352 "true"^^xsd:boolean)
 
+# Class: obo:FOODON_03414403 (obsolete: calcium malates)
+
+AnnotationAssertion(obo:IAO_0100001 obo:FOODON_03414403 obo:FOODON_03413045)
+AnnotationAssertion(rdfs:label obo:FOODON_03414403 "obsolete: calcium malates")
+AnnotationAssertion(owl:deprecated obo:FOODON_03414403 "true"^^xsd:boolean)
+
+# Class: obo:FOODON_03414405 (obsolete: ammonium carbonates)
+
+AnnotationAssertion(obo:IAO_0100001 obo:FOODON_03414405 obo:FOODON_03412997)
+AnnotationAssertion(rdfs:label obo:FOODON_03414405 "obsolete: ammonium carbonates")
+AnnotationAssertion(owl:deprecated obo:FOODON_03414405 "true"^^xsd:boolean)
+
+# Class: obo:FOODON_03414413 (obsolete: calcium phosphates)
+
+AnnotationAssertion(obo:IAO_0100001 obo:FOODON_03414413 obo:CHEBI_77635)
+AnnotationAssertion(rdfs:label obo:FOODON_03414413 "obsolete: calcium phosphates")
+AnnotationAssertion(owl:deprecated obo:FOODON_03414413 "true"^^xsd:boolean)
+
 # Class: obo:FOODON_03414416 (obsolete: cellulose)
 
 AnnotationAssertion(obo:IAO_0000115 obo:FOODON_03414416 "Cellulose used as a food additive."@en)
@@ -2475,6 +2530,42 @@ AnnotationAssertion(owl:deprecated obo:FOODON_03414416 "true"^^xsd:boolean)
 AnnotationAssertion(obo:IAO_0100001 obo:FOODON_03414418 obo:CHEBI_190298)
 AnnotationAssertion(rdfs:label obo:FOODON_03414418 "obsolete: magnesium phosphates")
 AnnotationAssertion(owl:deprecated obo:FOODON_03414418 "true"^^xsd:boolean)
+
+# Class: obo:FOODON_03414422 (obsolete: sodium citrates)
+
+AnnotationAssertion(obo:IAO_0100001 obo:FOODON_03414422 obo:CHEBI_53258)
+AnnotationAssertion(rdfs:label obo:FOODON_03414422 "obsolete: sodium citrates")
+AnnotationAssertion(owl:deprecated obo:FOODON_03414422 "true"^^xsd:boolean)
+
+# Class: obo:FOODON_03414423 (obsolete: sodium malates)
+
+AnnotationAssertion(obo:IAO_0100001 obo:FOODON_03414423 obo:FOODON_03413262)
+AnnotationAssertion(rdfs:label obo:FOODON_03414423 "obsolete: sodium malates")
+AnnotationAssertion(owl:deprecated obo:FOODON_03414423 "true"^^xsd:boolean)
+
+# Class: obo:FOODON_03414425 (obsolete: sodium sulphates)
+
+AnnotationAssertion(obo:IAO_0100001 obo:FOODON_03414425 obo:CHEBI_32149)
+AnnotationAssertion(rdfs:label obo:FOODON_03414425 "obsolete: sodium sulphates")
+AnnotationAssertion(owl:deprecated obo:FOODON_03414425 "true"^^xsd:boolean)
+
+# Class: obo:FOODON_03414443 (obsolete: potassium sulphates)
+
+AnnotationAssertion(obo:IAO_0100001 obo:FOODON_03414443 obo:CHEBI_32036)
+AnnotationAssertion(rdfs:label obo:FOODON_03414443 "obsolete: potassium sulphates")
+AnnotationAssertion(owl:deprecated obo:FOODON_03414443 "true"^^xsd:boolean)
+
+# Class: obo:FOODON_03414444 (obsolete: sodium acetates)
+
+AnnotationAssertion(obo:IAO_0100001 obo:FOODON_03414444 obo:CHEBI_32954)
+AnnotationAssertion(rdfs:label obo:FOODON_03414444 "obsolete: sodium acetates")
+AnnotationAssertion(owl:deprecated obo:FOODON_03414444 "true"^^xsd:boolean)
+
+# Class: obo:FOODON_03414448 (obsolete: riboflavins)
+
+AnnotationAssertion(obo:IAO_0100001 obo:FOODON_03414448 obo:CHEBI_17015)
+AnnotationAssertion(rdfs:label obo:FOODON_03414448 "obsolete: riboflavins")
+AnnotationAssertion(owl:deprecated obo:FOODON_03414448 "true"^^xsd:boolean)
 
 # Class: obo:FOODON_03414465 (obsolete: chordate)
 

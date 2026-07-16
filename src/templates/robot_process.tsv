@@ -1,6 +1,6 @@
 type	Ontology ID	NTR	label	parent	term	MIFC	definition	definition source	comment	example of use	EquivalentTo	SubClassOf	has specified input	has specified output	has characteristic	see also IRI	term contributor	curation status	created
 	ID		AL rdfs:label@en	SC % SPLIT=|			AL IAO:0000115@en	AI IAO:0000119	AL rdfs:comment@en		EC %		SC 'has specified input' some % SPLIT=|	SC 'has specified output' some % SPLIT=|	SC 'has characteristic' some % SPLIT=|	AI rdfs:seeAlso SPLIT=|	AI dcterms:contributor SPLIT=|	A IAO:0000114	AT dcterms:date^^xsd:dateTime
-1	http://purl.obolibrary.org/obo/FOODON_00002470		food characteristic	physical object quality	food characteristic		A physical object quality which is born by food material.												
+1			food characteristic	physical object quality	food characteristic		A physical object quality which describes a characteristic of some food material.												
 																			
 				Parent term	FoodOn Term	MIFC	Definition												
 1	FOODON:00004348		raw	organismal quality	raw	☑	A characteristic of organism material which has a biochemical composition that closely resembles its harvested or subsequent biologically aged state.		The definition covers plant, animal and fungi material, and allows for drying before harvest, and allows for cleaning, cutting, storing or trimming after harvest as long as harvested biological state is maintained.										
@@ -326,7 +326,7 @@ type	Ontology ID	NTR	label	parent	term	MIFC	definition	definition source	comment
 2	FOODON:03000596	NTR	food (stir-fried)	food (cooked with smalls amounts of fat or oil)	food (stir-fried)		Food material that has undergone stir-frying.												
 1	FOODON:03000597	NTR	stir-fried	cooked with small amounts of added fat or oil	stir-fried	☑	A characteristic of food material which indicates that it has undergone stir-frying.												
 3	FOODON:03450029		deep-frying	cooking with added fat or oil	deep-frying		Cooked in hot fat or oil deep enough to immerse the food entirely.							food (deep-fried)					
-2	FOODON:03000598	NTR	food (deep-fried)	food (cooked with added fat or oil)	food (deep-fried)		Food material that has undegone deep-frying.												
+2	FOODON:03307052		food (deep-fried)	food (cooked with added fat or oil)	food (deep-fried)		Food material that has undegone deep-frying.												
 1	FOODON:03000599	NTR	deep-fried	cooked with added fat or oil	deep-fried	☑	A characteristic of food material which indicates that it has undergone deep frying.												
 3	FOODON:03000600	NTR	pan-frying	cooking with added fat or oil	pan-frying		Cooked with small amounts of added oil or fat in a hot pan.												
 2	FOODON:03000601	NTR	food (pan fried)	food (cooked with fat or oil)	food (pan fried)		Food material that has undergone pan-frying.												

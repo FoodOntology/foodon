@@ -262,7 +262,6 @@ Declaration(Class(obo:FOODON_03000594))
 Declaration(Class(obo:FOODON_03000595))
 Declaration(Class(obo:FOODON_03000596))
 Declaration(Class(obo:FOODON_03000597))
-Declaration(Class(obo:FOODON_03000598))
 Declaration(Class(obo:FOODON_03000599))
 Declaration(Class(obo:FOODON_03000600))
 Declaration(Class(obo:FOODON_03000601))
@@ -390,6 +389,7 @@ Declaration(Class(obo:FOODON_03302148))
 Declaration(Class(obo:FOODON_03305364))
 Declaration(Class(obo:FOODON_03306255))
 Declaration(Class(obo:FOODON_03306773))
+Declaration(Class(obo:FOODON_03307052))
 Declaration(Class(obo:FOODON_03307539))
 Declaration(Class(obo:FOODON_03310311))
 Declaration(Class(obo:FOODON_03311126))
@@ -819,12 +819,6 @@ AnnotationAssertion(rdfs:comment obo:FOODON_00002462 "Needs definition"@en)
 AnnotationAssertion(rdfs:label obo:FOODON_00002462 "shallow frying"@en)
 SubClassOf(obo:FOODON_00002462 obo:FOODON_03450026)
 SubClassOf(obo:FOODON_00002462 ObjectSomeValuesFrom(obo:OBI_0000299 obo:FOODON_00002660))
-
-# Class: obo:FOODON_00002470 (food characteristic)
-
-AnnotationAssertion(obo:IAO_0000115 obo:FOODON_00002470 "A physical object quality which is born by food material."@en)
-AnnotationAssertion(rdfs:label obo:FOODON_00002470 "food characteristic"@en)
-SubClassOf(obo:FOODON_00002470 obo:PATO_0001241)
 
 # Class: obo:FOODON_00002642 (food (chilled))
 
@@ -1996,12 +1990,6 @@ AnnotationAssertion(obo:IAO_0000115 obo:FOODON_03000597 "A characteristic of foo
 AnnotationAssertion(rdfs:label obo:FOODON_03000597 "stir-fried"@en)
 SubClassOf(obo:FOODON_03000597 obo:FOODON_03000593)
 
-# Class: obo:FOODON_03000598 (food (deep-fried))
-
-AnnotationAssertion(obo:IAO_0000115 obo:FOODON_03000598 "Food material that has undegone deep-frying."@en)
-AnnotationAssertion(rdfs:label obo:FOODON_03000598 "food (deep-fried)"@en)
-SubClassOf(obo:FOODON_03000598 obo:FOODON_03000590)
-
 # Class: obo:FOODON_03000599 (deep-fried)
 
 AnnotationAssertion(obo:IAO_0000115 obo:FOODON_03000599 "A characteristic of food material which indicates that it has undergone deep frying."@en)
@@ -2801,6 +2789,12 @@ AnnotationAssertion(obo:IAO_0000115 obo:FOODON_03306773 "A thin shell made of pa
 AnnotationAssertion(rdfs:label obo:FOODON_03306773 "pie crust"@en)
 SubClassOf(obo:FOODON_03306773 obo:FOODON_00001626)
 
+# Class: obo:FOODON_03307052 (food (deep-fried))
+
+AnnotationAssertion(obo:IAO_0000115 obo:FOODON_03307052 "Food material that has undegone deep-frying."@en)
+AnnotationAssertion(rdfs:label obo:FOODON_03307052 "food (deep-fried)"@en)
+SubClassOf(obo:FOODON_03307052 obo:FOODON_03000590)
+
 # Class: obo:FOODON_03307539 (food (dried))
 
 AnnotationAssertion(obo:IAO_0000115 obo:FOODON_03307539 "Non-liquid food material which has undergone a water reduction drying process."@en)
@@ -3050,7 +3044,7 @@ SubClassOf(obo:FOODON_03450028 obo:FOODON_03450026)
 AnnotationAssertion(obo:IAO_0000115 obo:FOODON_03450029 "Cooked in hot fat or oil deep enough to immerse the food entirely."@en)
 AnnotationAssertion(rdfs:label obo:FOODON_03450029 "deep-frying"@en)
 SubClassOf(obo:FOODON_03450029 obo:FOODON_03450025)
-SubClassOf(obo:FOODON_03450029 ObjectSomeValuesFrom(obo:OBI_0000299 obo:FOODON_03000598))
+SubClassOf(obo:FOODON_03450029 ObjectSomeValuesFrom(obo:OBI_0000299 obo:FOODON_03307052))
 
 # Class: obo:FOODON_03450031 (heating of container by immersion in water or steam)
 

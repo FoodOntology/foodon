@@ -3476,26 +3476,22 @@ AnnotationAssertion(obo:IAO_0000115 obo:FOODON_03603000 "A food supplement desig
 AnnotationAssertion(dcterms:contributor obo:FOODON_03603000 <https://orcid.org/0000-0003-4173-6551>)
 AnnotationAssertion(dcterms:date obo:FOODON_03603000 "2023-02-02T19:55:02Z"^^xsd:dateTime)
 AnnotationAssertion(rdfs:label obo:FOODON_03603000 "malnutrition supplement"@en)
-AnnotationAssertion(rdfs:label obo:FOODON_03603000 "malnutrition supplement food product"@en)
 SubClassOf(obo:FOODON_03603000 obo:FOODON_00001874)
 
 # Class: obo:FOODON_03603001 (moderate malnutrition supplement)
 
-AnnotationAssertion(obo:IAO_0000115 obo:FOODON_03603001 "A food supplement designed to alleviate moderate malnutrition."@en)
 AnnotationAssertion(obo:IAO_0000115 obo:FOODON_03603001 "A malnutrition supplement designed to alleviate moderate malnutrition."@en)
 AnnotationAssertion(dcterms:contributor obo:FOODON_03603001 <https://orcid.org/0000-0003-4173-6551>)
 AnnotationAssertion(dcterms:date obo:FOODON_03603001 "2023-02-02T19:55:02Z"^^xsd:dateTime)
 AnnotationAssertion(rdfs:label obo:FOODON_03603001 "moderate malnutrition supplement"@en)
 SubClassOf(obo:FOODON_03603001 obo:FOODON_03603000)
 
-# Class: obo:FOODON_03603002 (severe malnutrition supplement food product)
+# Class: obo:FOODON_03603002 (severe malnutrition supplement)
 
-AnnotationAssertion(obo:IAO_0000115 obo:FOODON_03603002 "A food supplement designed to alleviate severe malnutrition."@en)
 AnnotationAssertion(obo:IAO_0000115 obo:FOODON_03603002 "A malnutrition supplement designed to alleviate severe malnutrition."@en)
 AnnotationAssertion(dcterms:contributor obo:FOODON_03603002 <https://orcid.org/0000-0003-4173-6551>)
 AnnotationAssertion(dcterms:date obo:FOODON_03603002 "2023-02-02T19:55:02Z"^^xsd:dateTime)
 AnnotationAssertion(rdfs:label obo:FOODON_03603002 "severe malnutrition supplement"@en)
-AnnotationAssertion(rdfs:label obo:FOODON_03603002 "severe malnutrition supplement food product"@en)
 SubClassOf(obo:FOODON_03603002 obo:FOODON_03603000)
 
 
