@@ -154,10 +154,18 @@ def parse_owl_imports(ofn_file: str) -> list[str]:
     return re.findall(r'Import\(<([^>]+)>\)', text)
 
 
-def find_declaration_file(iri: str, candidates: list[str]) -> str | None:
+def find_declaration_file(iri: str, candidates: list[str],
+                          input_file: str | None = None) -> str | None:
     """
     Find which candidate OFN/OWL file declares this class.
-    Searches for Declaration(Class(…)) first; falls back to most-mentions.
+
+    Primary search: Declaration(Class(<iri>)) in each candidate (in order,
+    so foodon-edit.ofn is checked first).
+
+    Fallback: if no Declaration exists anywhere, return input_file (the main
+    edit file).  The old mention-count heuristic was unreliable — a term
+    present only as a subClassOf filler in food_materials.owl would win even
+    though the term's annotations live in foodon-edit.ofn.
     """
     prefixed = iri_to_prefixed(iri)
     patterns = (f"Declaration(Class({prefixed}))", f"Declaration(Class(<{iri}>))")
@@ -168,17 +176,8 @@ def find_declaration_file(iri: str, candidates: list[str]) -> str | None:
         content = path.read_text(encoding="utf-8", errors="replace")
         if any(p in content for p in patterns):
             return f
-    # Fallback: most textual mentions
-    best_f, best_n = None, 0
-    for f in candidates:
-        path = Path(f)
-        if not path.exists():
-            continue
-        content = path.read_text(encoding="utf-8", errors="replace")
-        n = content.count(prefixed) + content.count(f"<{iri}>")
-        if n > best_n:
-            best_n, best_f = n, f
-    return best_f
+    # No Declaration found anywhere — default to the main input file.
+    return input_file if input_file else (candidates[0] if candidates else None)
 
 
 def rel(path: str | None, base: Path) -> str:
@@ -457,8 +456,8 @@ Examples:
 
     # ── Locate source file for each term and replacement ──────────────────
     for t in term_list:
-        t["src"]  = find_declaration_file(t["x"], decl_candidates)
-        t["rsrc"] = find_declaration_file(t["r"],  decl_candidates)
+        t["src"]  = find_declaration_file(t["x"], decl_candidates, input_file)
+        t["rsrc"] = find_declaration_file(t["r"],  decl_candidates, input_file)
 
     # ── Preview report — sectioned by source ontology ─────────────────────
     by_src: dict[str, list[dict]] = defaultdict(list)
@@ -637,7 +636,7 @@ Examples:
         )
         for x_iri, refs in bns_by_x.items():
             for ref in refs:
-                sf = find_declaration_file(ref["subject"], decl_candidates)
+                sf = find_declaration_file(ref["subject"], decl_candidates, input_file)
                 if sf:
                     bn_subject_files.add(sf)
 
