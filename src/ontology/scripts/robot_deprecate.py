@@ -68,8 +68,9 @@ TRANSFER_PRED_IRIS = {
     "http://purl.obolibrary.org/obo/IAO_0000115",
 }
 
-# Component files that must not be modified — annotation transfers targeting
-# these files are redirected to the main input ontology (foodon-edit.ofn).
+# Source files that cannot be written to directly — when the deprecated term
+# lives in one of these files, annotation transfers to the replacement are
+# redirected to the main input ontology (foodon-edit.ofn) instead.
 READ_ONLY_COMPONENTS: set[str] = {"cdno_import.ofn", "food_materials.owl"}
 
 # SPARQL prefixed names for transfer predicates (used in VALUES clause)
@@ -190,15 +191,16 @@ def rel(path: str | None, base: Path) -> str:
         return path
 
 
-def transfer_target(rsrc_file: str | None, input_file: str) -> tuple[str, bool]:
+def transfer_target(src_file: str | None, input_file: str) -> tuple[str, bool]:
     """
     Return (target_file, was_redirected).
-    If rsrc_file is a read-only component, redirect annotation transfers to
-    input_file (foodon-edit.ofn) instead of modifying the component directly.
+    Annotation transfers go to the deprecated term's own source file (src_file).
+    If that file is a read-only component (e.g. food_materials.owl), redirect
+    to input_file (foodon-edit.ofn) instead.
     """
-    if rsrc_file and Path(rsrc_file).name in READ_ONLY_COMPONENTS:
+    if src_file and Path(src_file).name in READ_ONLY_COMPONENTS:
         return input_file, True
-    return (rsrc_file or input_file), bool(not rsrc_file)
+    return (src_file or input_file), bool(not src_file)
 
 
 # ── SPARQL execution helpers ─────────────────────────────────────────────────
@@ -312,6 +314,9 @@ Examples:
     parser.add_argument("--deprecation-file", default=None, metavar="FILE",
                         help="OFN file to receive deprecated records "
                              "(auto-detected from catalog if omitted)")
+    parser.add_argument("--limit", type=int, default=None, metavar="N",
+                        help="Process at most N terms (useful for testing one change "
+                             "at a time before committing to the full run)")
     args = parser.parse_args()
 
     input_file = str(Path(args.input).resolve())
@@ -426,6 +431,9 @@ Examples:
         {"x": x, "r": r, "label": term_labels.get(x, "")}
         for x, r in seen_pairs
     ]
+    total_found = len(term_list)
+    if args.limit:
+        term_list = term_list[:args.limit]
 
     # ── Blank-node references from OTHER terms to the deprecated IRI ───────
     # Separate merge+query pass; written to temp_bn.sparql.
@@ -461,7 +469,8 @@ Examples:
     print("=" * 64)
     print("DEPRECATION PREVIEW")
     print("=" * 64)
-    print(f"  {len(term_list)} term(s) queued for deprecation\n")
+    limit_note = f"  (limited to {args.limit} of {total_found})" if args.limit and args.limit < total_found else ""
+    print(f"  {len(term_list)} term(s) queued for deprecation{limit_note}\n")
 
     for src_path in sorted(by_src):
         terms = by_src[src_path]
@@ -474,15 +483,13 @@ Examples:
             label  = t["label"]
             rlabel = r_labels.get(r_iri, "")
 
-            tgt_file, redirected = transfer_target(t["rsrc"], input_file)
+            tgt_file, redirected = transfer_target(t["src"], input_file)
 
             print(f"\n  DEPRECATE:  {iri_to_prefixed(x_iri)}")
             print(f'    label:    "{label}"')
             print(f"  REPLACE BY: {iri_to_prefixed(r_iri)}")
             print(f'    label:    "{rlabel}"')
-            print(f"    file:     {rel(t['rsrc'], repo_root)}"
-                  + (f"  [read-only → transfers go to {rel(tgt_file, repo_root)}]"
-                     if redirected else ""))
+            print(f"    file:     {rel(t['rsrc'], repo_root)}")
 
             anns = anns_by_x.get(x_iri, [])
             transfer = [(p, v) for p, v in anns if p in TRANSFER_PRED_IRIS]
@@ -490,7 +497,8 @@ Examples:
 
             if transfer:
                 dest_label = rel(tgt_file, repo_root)
-                print(f"  Annotations → copy to {dest_label}:")
+                redir_note = "  [food_materials.owl → redirected]" if redirected else ""
+                print(f"  Annotations → copy onto {iri_to_prefixed(r_iri)} in {dest_label}{redir_note}:")
                 for p, v in transfer:
                     print(f"    {pred_label(p)}: {sparql_to_display(v)[:80]}")
             if remove:
@@ -563,13 +571,14 @@ Examples:
                          f"temp_insert_{step_name.replace(' ', '_')}.sparql")
             print(f"  INSERT {step_name}: {len(rows)} triples → {Path(dep_file).name}")
 
-    # 3. DELETE all non-blank-node axioms about each deprecated term from its source file
-    #    anns_by_x already holds every (pred, val) pair captured by the combined query.
+    # 3. DELETE all non-blank-node axioms about each deprecated term from its source file.
+    #    Read-only files (food_materials.owl etc.) are skipped — those terms are
+    #    dropped from their template source, not edited in place.
     src_of = {t["x"]: t["src"] for t in term_list}
     by_src_del: dict[str, list] = defaultdict(list)
     for x_iri, ann_list in anns_by_x.items():
         src = src_of.get(x_iri)
-        if not src:
+        if not src or Path(src).name in READ_ONLY_COMPONENTS:
             continue
         for pred, val in ann_list:
             by_src_del[src].append([f"<{x_iri}>", f"<{pred}>", val])
@@ -579,8 +588,8 @@ Examples:
                      f"temp_delete_{Path(src_file).stem}.sparql")
         print(f"  DELETE {len(rows)} axioms from {Path(src_file).name}")
 
-    # 4. INSERT transferred annotations → replacement's source file
-    #    Read-only components (e.g. cdno_import.ofn) are redirected to input_file.
+    # 4. INSERT transferred annotations → deprecated term's own source file.
+    #    food_materials.owl (read-only) is redirected to foodon-edit.ofn.
     by_rsrc_add: dict[str, list] = defaultdict(list)
     for t in term_list:
         transfer = [
@@ -589,11 +598,11 @@ Examples:
         ]
         if not transfer:
             continue
-        raw_rsrc = t["rsrc"]
-        tgt, redirected = transfer_target(raw_rsrc, input_file)
+        raw_src = t["src"]
+        tgt, redirected = transfer_target(raw_src, input_file)
         if redirected:
             print(f"  [redirect] annotation transfer for {t['r']}: "
-                  f"{Path(raw_rsrc).name if raw_rsrc else '?'} → {Path(tgt).name}")
+                  f"{Path(raw_src).name if raw_src else '?'} → {Path(tgt).name}")
         for pred, val in transfer:
             by_rsrc_add[tgt].append([f"<{t['r']}>", f"<{pred}>", val])
 
