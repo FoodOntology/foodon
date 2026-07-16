@@ -485,8 +485,14 @@ Examples:
 
             tgt_file, redirected = transfer_target(t["src"], input_file)
 
+            src_label  = rel(t["src"], repo_root) if t["src"] else "(file not found)"
+            src_rdonly = bool(t["src"] and Path(t["src"]).name in READ_ONLY_COMPONENTS)
+
             print(f"\n  DEPRECATE:  {iri_to_prefixed(x_iri)}")
             print(f'    label:    "{label}"')
+            print(f"    file:     {src_label}"
+                  + ("  [read-only — axioms will NOT be deleted by this script]"
+                     if src_rdonly else ""))
             print(f"  REPLACE BY: {iri_to_prefixed(r_iri)}")
             print(f'    label:    "{rlabel}"')
             print(f"    file:     {rel(t['rsrc'], repo_root)}")
@@ -502,7 +508,8 @@ Examples:
                 for p, v in transfer:
                     print(f"    {pred_label(p)}: {sparql_to_display(v)[:80]}")
             if remove:
-                print("  Annotations → remove from source file:")
+                skip_note = "  [read-only — will NOT be deleted]" if src_rdonly else ""
+                print(f"  Annotations → remove from {src_label}{skip_note}:")
                 for p, v in remove:
                     print(f"    {pred_label(p)}: {sparql_to_display(v)[:80]}")
 

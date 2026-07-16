@@ -1,23 +1,37 @@
 Prefix(:=<http://purl.obolibrary.org/obo/foodon/components/food_process.owl#>)
+Prefix(cc:=<http://creativecommons.org/ns#>)
 Prefix(dc:=<http://purl.org/dc/terms/>)
+Prefix(go:=<http://www.geneontology.org/formats/oboInOwl#>)
+Prefix(wd:=<https://www.wikidata.org/wiki/>)
+Prefix(dce:=<http://purl.org/dc/elements/1.1/>)
 Prefix(obo:=<http://purl.obolibrary.org/obo/>)
 Prefix(owl:=<http://www.w3.org/2002/07/owl#>)
 Prefix(rdf:=<http://www.w3.org/1999/02/22-rdf-syntax-ns#>)
 Prefix(xml:=<http://www.w3.org/XML/1998/namespace>)
 Prefix(xsd:=<http://www.w3.org/2001/XMLSchema#>)
+Prefix(dc11:=<http://purl.org/dc/elements/1.1/>)
 Prefix(foaf:=<http://xmlns.com/foaf/0.1/>)
+Prefix(grin:=<http://www.ars-grin.gov/cgi-bin/npgs/html/taxon.pl?>)
+Prefix(itis:=<http://www.itis.gov/servlet/SingleRpt/SingleRpt?search_topic=TSN&search_value=>)
 Prefix(prov:=<http://www.w3.org/ns/prov#>)
 Prefix(rdfa:=<http://www.w3.org/ns/rdfa#>)
 Prefix(rdfs:=<http://www.w3.org/2000/01/rdf-schema#>)
 Prefix(skos:=<http://www.w3.org/2004/02/skos/core#>)
 Prefix(void:=<http://rdfs.org/ns/void#>)
+Prefix(asfis:=<https://www.fao.org/fishery/en/aqspecies/>)
+Prefix(siren:=<https://bioregistry.io/reference/siren:>)
+Prefix(eolife:=<http://eol.org/pages/>)
+Prefix(schema:=<http://schema.org/>)
 Prefix(dcterms:=<http://purl.org/dc/terms/>)
+Prefix(langual:=<http://www.langual.org/langual_thesaurus.asp?termid=>)
 Prefix(oboInOwl:=<http://www.geneontology.org/formats/oboInOwl#>)
+Prefix(wikipedia:=<https://en.wikipedia.org/wiki/>)
+Prefix(indexfungorum:=<http://www.indexfungorum.org/names/NamesRecord.asp?RecordID=>)
 
 
 Ontology(<http://purl.obolibrary.org/obo/foodon/components/food_process.owl>
-<http://purl.obolibrary.org/obo/foodon/releases/2026-07-12/components/food_process.owl>
-Annotation(owl:versionInfo "2026-07-12")
+<http://purl.obolibrary.org/obo/foodon/releases/2026-07-16/components/food_process.owl>
+Annotation(owl:versionInfo "2026-07-16")
 
 Declaration(Class(obo:BFO_0000040))
 Declaration(Class(obo:COB_0000035))
@@ -153,7 +167,6 @@ Declaration(Class(obo:FOODON_03000498))
 Declaration(Class(obo:FOODON_03000499))
 Declaration(Class(obo:FOODON_03000500))
 Declaration(Class(obo:FOODON_03000501))
-Declaration(Class(obo:FOODON_03000502))
 Declaration(Class(obo:FOODON_03000503))
 Declaration(Class(obo:FOODON_03000504))
 Declaration(Class(obo:FOODON_03000505))
@@ -374,6 +387,7 @@ Declaration(Class(obo:FOODON_03000720))
 Declaration(Class(obo:FOODON_03301625))
 Declaration(Class(obo:FOODON_03301752))
 Declaration(Class(obo:FOODON_03302148))
+Declaration(Class(obo:FOODON_03305364))
 Declaration(Class(obo:FOODON_03306255))
 Declaration(Class(obo:FOODON_03306773))
 Declaration(Class(obo:FOODON_03307539))
@@ -697,7 +711,7 @@ SubClassOf(obo:FOODON_00000071 obo:FOODON_03000666)
 # Class: obo:FOODON_00001079 (food (pickled))
 
 AnnotationAssertion(obo:IAO_0000115 obo:FOODON_00001079 "Food material which is subjected to fermentation or acidification."@en)
-AnnotationAssertion(obo:IAO_0000119 obo:FOODON_00001079 <https://en.wikipedia.org/wiki/Pickling>)
+AnnotationAssertion(obo:IAO_0000119 obo:FOODON_00001079 wikipedia:Pickling)
 AnnotationAssertion(rdfs:comment obo:FOODON_00001079 "Pickled food is often preserved by soaking and storing it in vinegar or brine."@en)
 AnnotationAssertion(rdfs:label obo:FOODON_00001079 "food (pickled)"@en)
 SubClassOf(obo:FOODON_00001079 obo:FOODON_00002158)
@@ -753,7 +767,7 @@ SubClassOf(obo:FOODON_00002415 ObjectSomeValuesFrom(obo:OBI_0000299 obo:FOODON_0
 
 # Class: obo:FOODON_00002416 (canning)
 
-AnnotationAssertion(obo:IAO_0000115 obo:FOODON_00002416 "TBD"@en)
+AnnotationAssertion(obo:IAO_0000115 obo:FOODON_00002416 "A food packaging process involving hermetically sealing food material within an airtight jar or can."@en)
 AnnotationAssertion(dcterms:contributor obo:FOODON_00002416 <https://orcid.org/0000-0002-8844-9165>)
 AnnotationAssertion(rdfs:label obo:FOODON_00002416 "canning"@en)
 SubClassOf(obo:FOODON_00002416 obo:FOODON_00002740)
@@ -920,7 +934,7 @@ SubClassOf(obo:FOODON_00002755 obo:FOODON_00002454)
 # Class: obo:FOODON_00002814 (ikajime)
 
 AnnotationAssertion(obo:IAO_0000115 obo:FOODON_00002814 "An animal harvesting process in which a fish is slaughtered by insertion of a spike quickly and directly into the hindbrain, usually located slightly behind and above the eye, thereby causing immediate brain death, which enables the quality of the fishes' meat to be maintained."@en)
-AnnotationAssertion(obo:IAO_0000119 obo:FOODON_00002814 <https://en.wikipedia.org/wiki/Ikejime>)
+AnnotationAssertion(obo:IAO_0000119 obo:FOODON_00002814 wikipedia:Ikejime)
 AnnotationAssertion(dcterms:contributor obo:FOODON_00002814 <https://orcid.org/0000-0002-8844-9165>)
 AnnotationAssertion(rdfs:comment obo:FOODON_00002814 "The technique originated in Japan, but is now in widespread use. [...] When spiked correctly, the fish fins flare and the fish relaxes, immediately ceasing all motion. Destroying the brain and the spinal cord of the fish will prevent reflex action from happening; such muscle movements would otherwise consume adenosine triphosphate (ATP) in the muscle, and as a result produce lactic acid and ammonia, making the fish sour, soggy and less tasteful. Furthermore, the blood contained in the fish flesh retracts to the gut cavity, which produces a better coloured and flavoured fillet, and prolongs shelf life. [Wikipedia]"@en)
 AnnotationAssertion(rdfs:label obo:FOODON_00002814 "ikajime"@en)
@@ -1035,7 +1049,7 @@ SubClassOf(obo:FOODON_00004043 ObjectSomeValuesFrom(obo:OBI_0000299 obo:FOODON_0
 # Class: obo:FOODON_00004068 (winemaking)
 
 AnnotationAssertion(obo:IAO_0000115 obo:FOODON_00004068 "A food material processing which is the production of wine, starting with the selection of the fruit, its fermentation into alcohol, and the bottling or packaging of the finished liquid."@en)
-AnnotationAssertion(obo:IAO_0000119 obo:FOODON_00004068 <https://en.wikipedia.org/wiki/Winemaking>)
+AnnotationAssertion(obo:IAO_0000119 obo:FOODON_00004068 wikipedia:Winemaking)
 AnnotationAssertion(rdfs:label obo:FOODON_00004068 "winemaking"@en)
 SubClassOf(obo:FOODON_00004068 obo:FOODON_00002451)
 
@@ -1078,13 +1092,13 @@ AnnotationAssertion(obo:IAO_0000114 obo:FOODON_00004074 "https://www.sciencedire
 AnnotationAssertion(obo:IAO_0000115 obo:FOODON_00004074 "A wine maceration process in which  temperatures of the fermenting must are kept low to encourage extraction by water and added sulfur dioxide rather than relying principally on heat and alcohol to act as a solvent."@en)
 AnnotationAssertion(obo:IAO_0000119 obo:FOODON_00004074 <https://en.wikipedia.org/wiki/Maceration_(wine)>)
 AnnotationAssertion(rdfs:label obo:FOODON_00004074 "cold maceration"@en)
-AnnotationAssertion(rdfs:seeAlso obo:FOODON_00004074 <https://en.wikipedia.org/wiki/Sulfur_dioxide>)
+AnnotationAssertion(rdfs:seeAlso obo:FOODON_00004074 wikipedia:Sulfur_dioxide)
 SubClassOf(obo:FOODON_00004074 obo:FOODON_00004069)
 
 # Class: obo:FOODON_00004075 (carbonic maceration)
 
 AnnotationAssertion(obo:IAO_0000115 obo:FOODON_00004075 "A maceration process in which whole grapes are fermented in a carbon dioxide rich environment before crushing.  Fermentation occurs within grape tissue, rather than from the skin surface."@en)
-AnnotationAssertion(obo:IAO_0000119 obo:FOODON_00004075 <https://en.wikipedia.org/wiki/Carbonic_maceration>)
+AnnotationAssertion(obo:IAO_0000119 obo:FOODON_00004075 wikipedia:Carbonic_maceration)
 AnnotationAssertion(rdfs:comment obo:FOODON_00004075 "This method involves filling a sealed vessel with carbon dioxide and then adding whole grapes or grape clusters. ... Carbonic maceration ferments most of the juice while it is still inside the grape, although grapes at the bottom of the vessel are crushed by gravity and undergo conventional fermentation.[https://en.wikipedia.org/wiki/Carbonic_maceration]"@en)
 AnnotationAssertion(rdfs:label obo:FOODON_00004075 "carbonic maceration"@en)
 SubClassOf(obo:FOODON_00004075 obo:FOODON_00004069)
@@ -1181,7 +1195,7 @@ SubClassOf(obo:FOODON_00004549 obo:FOODON_00004291)
 
 # Class: obo:FOODON_00004550 (food cubing)
 
-AnnotationAssertion(obo:IAO_0000115 obo:FOODON_00004550 "The process of cutting food such as meat into cubic pieces."@en)
+AnnotationAssertion(obo:IAO_0000115 obo:FOODON_00004550 "A food component separation process of cutting food such as meat into cubic pieces."@en)
 AnnotationAssertion(dcterms:contributor obo:FOODON_00004550 <https://orcid.org/0000-0002-8844-9165>)
 AnnotationAssertion(rdfs:label obo:FOODON_00004550 "food cubing"@en)
 SubClassOf(obo:FOODON_00004550 obo:FOODON_03460238)
@@ -1261,7 +1275,7 @@ SubClassOf(obo:FOODON_00004728 obo:PATO_0001985)
 
 AnnotationAssertion(obo:IAO_0000114 obo:FOODON_00004729 "https://www.gmp-compliance.org/gmp-news/ambient-room-temperature-cold-what-is-what|http://purl.obolibrary.org/obo/XCO_0000058")
 AnnotationAssertion(obo:IAO_0000115 obo:FOODON_00004729 "A temperature which refers to the average kinetic energy of molecules in the air surrounding an object or within a particular area."@en)
-AnnotationAssertion(obo:IAO_0000119 obo:FOODON_00004729 <https://en.wikipedia.org/wiki/Room_temperature>)
+AnnotationAssertion(obo:IAO_0000119 obo:FOODON_00004729 wikipedia:Room_temperature)
 AnnotationAssertion(rdfs:label obo:FOODON_00004729 "ambient temperature"@en)
 AnnotationAssertion(rdfs:seeAlso obo:FOODON_00004729 obo:XCO_0000058)
 AnnotationAssertion(rdfs:seeAlso obo:FOODON_00004729 <https://www.gmp-compliance.org/gmp-news/ambient-room-temperature-cold-what-is-what>)
@@ -1294,7 +1308,7 @@ SubClassOf(obo:FOODON_00005179 obo:FOODON_00004727)
 # Class: obo:FOODON_00005451 (room temperature)
 
 AnnotationAssertion(obo:IAO_0000115 obo:FOODON_00005451 "A temperature which encompasses the range of air temperatures most people find comfortable indoors while dressed in typical clothing."@en)
-AnnotationAssertion(obo:IAO_0000119 obo:FOODON_00005451 <https://en.wikipedia.org/wiki/Room_temperature>)
+AnnotationAssertion(obo:IAO_0000119 obo:FOODON_00005451 wikipedia:Room_temperature)
 AnnotationAssertion(rdfs:label obo:FOODON_00005451 "room temperature"@en)
 AnnotationAssertion(rdfs:seeAlso obo:FOODON_00005451 <https://www.gmp-compliance.org/gmp-news/ambient-room-temperature-cold-what-is-what>)
 SubClassOf(obo:FOODON_00005451 obo:PATO_0000146)
@@ -1378,12 +1392,6 @@ AnnotationAssertion(obo:IAO_0000115 obo:FOODON_03000501 "A characteristic of irr
 AnnotationAssertion(rdfs:label obo:FOODON_03000501 "ultraviolet light exposed (sensu food)"@en)
 SubClassOf(obo:FOODON_03000501 obo:FOODON_03000503)
 
-# Class: obo:FOODON_03000502 (food (irradiated))
-
-AnnotationAssertion(obo:IAO_0000115 obo:FOODON_03000502 "Food material which has been irradiated."@en)
-AnnotationAssertion(rdfs:label obo:FOODON_03000502 "food (irradiated)"@en)
-SubClassOf(obo:FOODON_03000502 obo:FOODON_00002454)
-
 # Class: obo:FOODON_03000503 (irradiated (sensu food))
 
 AnnotationAssertion(obo:IAO_0000115 obo:FOODON_03000503 "A characteristic of food material which indicates that it has undergone food irradiation."@en)
@@ -1394,7 +1402,7 @@ SubClassOf(obo:FOODON_03000503 obo:FOODON_00002470)
 # Class: obo:FOODON_03000504 (pasteurization)
 
 AnnotationAssertion(obo:IAO_0000115 obo:FOODON_03000504 "A microorganism killing process which has the objective of reducing potential pathogenic microbes by an amount equivalent to Pasteur's process."@en)
-AnnotationAssertion(obo:IAO_0000119 obo:FOODON_03000504 <https://en.wikipedia.org/wiki/Pasteurization>)
+AnnotationAssertion(obo:IAO_0000119 obo:FOODON_03000504 wikipedia:Pasteurization)
 AnnotationAssertion(rdfs:label obo:FOODON_03000504 "pasteurization"@en)
 SubClassOf(obo:FOODON_03000504 obo:FOODON_03000714)
 
@@ -1413,7 +1421,7 @@ SubClassOf(obo:FOODON_03000506 obo:FOODON_00002470)
 # Class: obo:FOODON_03000507 (material energy modulation)
 
 AnnotationAssertion(obo:IAO_0000115 obo:FOODON_03000507 "Material processing which involves a change in energy applied to or inherent in a material."@en)
-AnnotationAssertion(obo:IAO_0000119 obo:FOODON_03000507 <https://en.wikipedia.org/wiki/Energy>)
+AnnotationAssertion(obo:IAO_0000119 obo:FOODON_03000507 wikipedia:Energy)
 AnnotationAssertion(rdfs:label obo:FOODON_03000507 "material energy modulation"@en)
 SubClassOf(obo:FOODON_03000507 obo:FOODON_03000684)
 
@@ -1438,7 +1446,7 @@ SubClassOf(obo:FOODON_03000510 obo:PATO_0001241)
 # Class: obo:FOODON_03000511 (temperature control)
 
 AnnotationAssertion(obo:IAO_0000115 obo:FOODON_03000511 "A thermal energy modulation in which a material or environment is artificially controlled to ensure its temperature falls within a specified range."@en)
-AnnotationAssertion(obo:IAO_0000119 obo:FOODON_03000511 <https://en.wikipedia.org/wiki/Temperature_control>)
+AnnotationAssertion(obo:IAO_0000119 obo:FOODON_03000511 wikipedia:Temperature_control)
 AnnotationAssertion(rdfs:comment obo:FOODON_03000511 "syn temperature regulation"@en)
 AnnotationAssertion(rdfs:label obo:FOODON_03000511 "temperature control"@en)
 SubClassOf(obo:FOODON_03000511 obo:FOODON_03000508)
@@ -1513,7 +1521,7 @@ SubClassOf(obo:FOODON_03000521 obo:PATO_0000146)
 # Class: obo:FOODON_03000522 (ISO 1 standard temperature)
 
 AnnotationAssertion(obo:IAO_0000115 obo:FOODON_03000522 "A reference temperature of 20 Degrees celcius which enables standardized comparison of material characteristics."@en)
-AnnotationAssertion(obo:IAO_0000119 obo:FOODON_03000522 <https://en.wikipedia.org/wiki/ISO_1>)
+AnnotationAssertion(obo:IAO_0000119 obo:FOODON_03000522 wikipedia:ISO_1)
 AnnotationAssertion(rdfs:label obo:FOODON_03000522 "ISO 1 standard temperature"@en)
 SubClassOf(obo:FOODON_03000522 obo:FOODON_00005451)
 
@@ -1553,7 +1561,7 @@ SubClassOf(obo:FOODON_03000527 obo:FOODON_03000526)
 # Class: obo:FOODON_03000528 (boiling point)
 
 AnnotationAssertion(obo:IAO_0000115 obo:FOODON_03000528 "A temperature characteristic of a liquid at which the vapour pressure of the liquid equals the pressure surrounding the liquid and the liquid changes into a vapour."@en)
-AnnotationAssertion(obo:IAO_0000119 obo:FOODON_03000528 <https://en.wikipedia.org/wiki/Boiling_point>)
+AnnotationAssertion(obo:IAO_0000119 obo:FOODON_03000528 wikipedia:Boiling_point)
 AnnotationAssertion(rdfs:comment obo:FOODON_03000528 "The boiling point of a liquid varies depending upon the surrounding environmental pressure.[https://en.wikipedia.org/wiki/Boiling_point]"@en)
 AnnotationAssertion(rdfs:label obo:FOODON_03000528 "boiling point"@en)
 SubClassOf(obo:FOODON_03000528 obo:PATO_0000146)
@@ -1606,7 +1614,7 @@ SubClassOf(obo:FOODON_03000535 obo:PATO_0001985)
 # Class: obo:FOODON_03000536 (food natural freezing)
 
 AnnotationAssertion(obo:IAO_0000115 obo:FOODON_03000536 "A material freezing process in which ambient natural environment sub-zero temperatures are used to freeze food material."@en)
-AnnotationAssertion(obo:IAO_0000119 obo:FOODON_03000536 <https://en.wikipedia.org/wiki/Frozen_food>)
+AnnotationAssertion(obo:IAO_0000119 obo:FOODON_03000536 wikipedia:Frozen_food)
 AnnotationAssertion(rdfs:label obo:FOODON_03000536 "food natural freezing"@en)
 SubClassOf(obo:FOODON_03000536 obo:FOODON_03470136)
 
@@ -1640,7 +1648,7 @@ SubClassOf(obo:FOODON_03000540 obo:FOODON_03470132)
 # Class: obo:FOODON_03000541 (air-blast freezing)
 
 AnnotationAssertion(obo:IAO_0000115 obo:FOODON_03000541 "A quick freezing process which accomplishes cooling by high-velocity air circulation."@en)
-AnnotationAssertion(obo:IAO_0000119 obo:FOODON_03000541 <https://en.wikipedia.org/wiki/Frozen_food>)
+AnnotationAssertion(obo:IAO_0000119 obo:FOODON_03000541 wikipedia:Frozen_food)
 AnnotationAssertion(rdfs:label obo:FOODON_03000541 "air-blast freezing"@en)
 SubClassOf(obo:FOODON_03000541 obo:FOODON_03470132)
 
@@ -1794,7 +1802,7 @@ SubClassOf(obo:FOODON_03000565 obo:FOODON_03000554)
 # Class: obo:FOODON_03000566 (roasting)
 
 AnnotationAssertion(obo:IAO_0000115 obo:FOODON_03000566 "A cooking by dry heat process in which hot air covers the food, cooking it evenly on all sides from an open flame, oven, or other heat source."@en)
-AnnotationAssertion(obo:IAO_0000119 obo:FOODON_03000566 <https://en.wikipedia.org/wiki/Roasting>)
+AnnotationAssertion(obo:IAO_0000119 obo:FOODON_03000566 wikipedia:Roasting)
 AnnotationAssertion(rdfs:comment obo:FOODON_03000566 "While Wikipedia indicates temperature ranges for roasting, since slow-roasting is a subclass, we avoid temperature conditions here."@en)
 AnnotationAssertion(rdfs:label obo:FOODON_03000566 "roasting"@en)
 SubClassOf(obo:FOODON_03000566 obo:FOODON_03450004)
@@ -1880,7 +1888,7 @@ SubClassOf(obo:FOODON_03000579 obo:FOODON_03000568)
 
 # Class: obo:FOODON_03000580 (food (dry-roasted))
 
-AnnotationAssertion(obo:IAO_0000115 obo:FOODON_03000580 "Food material which has been oil-roasted."@en)
+AnnotationAssertion(obo:IAO_0000115 obo:FOODON_03000580 "Food material which has been dry-roasted."@en)
 AnnotationAssertion(rdfs:label obo:FOODON_03000580 "food (dry-roasted)"@en)
 SubClassOf(obo:FOODON_03000580 obo:FOODON_00002744)
 
@@ -2087,7 +2095,7 @@ SubClassOf(obo:FOODON_03000613 obo:FOODON_03316043)
 # Class: obo:FOODON_03000614 (drying)
 
 AnnotationAssertion(obo:IAO_0000115 obo:FOODON_03000614 "A material component separation process in which water or another solvent is removed from a material."@en)
-AnnotationAssertion(obo:IAO_0000119 obo:FOODON_03000614 <https://en.wikipedia.org/wiki/Drying>)
+AnnotationAssertion(obo:IAO_0000119 obo:FOODON_03000614 wikipedia:Drying)
 AnnotationAssertion(dcterms:contributor obo:FOODON_03000614 <https://orcid.org/0000-0002-9578-0788>)
 AnnotationAssertion(rdfs:label obo:FOODON_03000614 "drying"@en)
 SubClassOf(obo:FOODON_03000614 obo:OBI_0600014)
@@ -2117,7 +2125,7 @@ SubClassOf(obo:FOODON_03000617 obo:FOODON_03470116)
 # Class: obo:FOODON_03000618 (dehydration with reaction)
 
 AnnotationAssertion(obo:IAO_0000115 obo:FOODON_03000618 "Dehydration in which chemically bound water is removed using dehydrating agents."@en)
-AnnotationAssertion(obo:IAO_0000119 obo:FOODON_03000618 <https://en.wikipedia.org/wiki/Dehydration_reaction>)
+AnnotationAssertion(obo:IAO_0000119 obo:FOODON_03000618 wikipedia:Dehydration_reaction)
 AnnotationAssertion(rdfs:label obo:FOODON_03000618 "dehydration with reaction"@en)
 SubClassOf(obo:FOODON_03000618 obo:FOODON_03000617)
 
@@ -2180,7 +2188,7 @@ SubClassOf(obo:FOODON_03000627 obo:COB_0000110)
 
 # Class: obo:FOODON_03000628 (food preservation canning)
 
-AnnotationAssertion(obo:IAO_0000115 obo:FOODON_03000628 "TBD"@en)
+AnnotationAssertion(obo:IAO_0000115 obo:FOODON_03000628 "A canning process involving hermetically sealing pasteurized or sterilized food material within a jar or can."@en)
 AnnotationAssertion(rdfs:label obo:FOODON_03000628 "food preservation canning"@en)
 SubClassOf(obo:FOODON_03000628 obo:FOODON_00002416)
 
@@ -2269,7 +2277,7 @@ SubClassOf(obo:FOODON_03000641 obo:FLOPO_0014628)
 # Class: obo:FOODON_03000642 (artificial fruit ripening)
 
 AnnotationAssertion(obo:IAO_0000115 obo:FOODON_03000642 "A fruit ripening process pertaining to climacteric fruit after harvest."@en)
-AnnotationAssertion(obo:IAO_0000119 obo:FOODON_03000642 <https://en.wikipedia.org/wiki/Ripening>)
+AnnotationAssertion(obo:IAO_0000119 obo:FOODON_03000642 wikipedia:Ripening)
 AnnotationAssertion(rdfs:label obo:FOODON_03000642 "artificial fruit ripening"@en)
 SubClassOf(obo:FOODON_03000642 obo:FOODON_03000631)
 SubClassOf(obo:FOODON_03000642 obo:GO_0009835)
@@ -2277,28 +2285,28 @@ SubClassOf(obo:FOODON_03000642 obo:GO_0009835)
 # Class: obo:FOODON_03000643 (ethylene gas ripening)
 
 AnnotationAssertion(obo:IAO_0000115 obo:FOODON_03000643 "An artificial fruit ripening process that utilizes ethylene gas."@en)
-AnnotationAssertion(obo:IAO_0000119 obo:FOODON_03000643 <https://en.wikipedia.org/wiki/Ripening>)
+AnnotationAssertion(obo:IAO_0000119 obo:FOODON_03000643 wikipedia:Ripening)
 AnnotationAssertion(rdfs:label obo:FOODON_03000643 "ethylene gas ripening"@en)
 SubClassOf(obo:FOODON_03000643 obo:FOODON_03000642)
 
 # Class: obo:FOODON_03000644 (calcium carbide ripening)
 
 AnnotationAssertion(obo:IAO_0000115 obo:FOODON_03000644 "An artificial fruit ripening process that utilizes calcium carbide."@en)
-AnnotationAssertion(obo:IAO_0000119 obo:FOODON_03000644 <https://en.wikipedia.org/wiki/Ripening>)
+AnnotationAssertion(obo:IAO_0000119 obo:FOODON_03000644 wikipedia:Ripening)
 AnnotationAssertion(rdfs:label obo:FOODON_03000644 "calcium carbide ripening"@en)
 SubClassOf(obo:FOODON_03000644 obo:FOODON_03000642)
 
 # Class: obo:FOODON_03000645 (natural fruit ripening)
 
 AnnotationAssertion(obo:IAO_0000115 obo:FOODON_03000645 "A fruit ripening process before or after harvest that involves fruit aging in the context of natural heat and light."@en)
-AnnotationAssertion(obo:IAO_0000119 obo:FOODON_03000645 <https://en.wikipedia.org/wiki/Ripening>)
+AnnotationAssertion(obo:IAO_0000119 obo:FOODON_03000645 wikipedia:Ripening)
 AnnotationAssertion(rdfs:label obo:FOODON_03000645 "natural fruit ripening"@en)
 SubClassOf(obo:FOODON_03000645 obo:GO_0009835)
 
 # Class: obo:FOODON_03000646 (climacteric fruit ripening)
 
 AnnotationAssertion(obo:IAO_0000115 obo:FOODON_03000646 "A natural fruit ripening process pertaining to fruits that continue to ripen after harvest."@en)
-AnnotationAssertion(obo:IAO_0000119 obo:FOODON_03000646 <https://en.wikipedia.org/wiki/Climacteric_fruits>)
+AnnotationAssertion(obo:IAO_0000119 obo:FOODON_03000646 wikipedia:Climacteric_fruits)
 AnnotationAssertion(rdfs:comment obo:FOODON_03000646 "Ethylene gass ripening"@en)
 AnnotationAssertion(rdfs:label obo:FOODON_03000646 "climacteric fruit ripening"@en)
 SubClassOf(obo:FOODON_03000646 obo:FOODON_03000645)
@@ -2306,14 +2314,14 @@ SubClassOf(obo:FOODON_03000646 obo:FOODON_03000645)
 # Class: obo:FOODON_03000647 (non-climacteric fruit ripening)
 
 AnnotationAssertion(obo:IAO_0000115 obo:FOODON_03000647 "A natural fruit ripening process pertaining to non-climacteric fruits which only ripen when attached to a plant."@en)
-AnnotationAssertion(obo:IAO_0000119 obo:FOODON_03000647 <https://en.wikipedia.org/wiki/Ripening>)
+AnnotationAssertion(obo:IAO_0000119 obo:FOODON_03000647 wikipedia:Ripening)
 AnnotationAssertion(rdfs:label obo:FOODON_03000647 "non-climacteric fruit ripening"@en)
 SubClassOf(obo:FOODON_03000647 obo:FOODON_03000645)
 
 # Class: obo:FOODON_03000648 (cheese ripening)
 
 AnnotationAssertion(obo:IAO_0000115 obo:FOODON_03000648 "A food maturation process in which animal milk (or cream) undergoes transformation due to select bacteria, mold, yeast, coagulant, and other ingredients."@en)
-AnnotationAssertion(obo:IAO_0000119 obo:FOODON_03000648 <https://en.wikipedia.org/wiki/Cheese_ripening>)
+AnnotationAssertion(obo:IAO_0000119 obo:FOODON_03000648 wikipedia:Cheese_ripening)
 AnnotationAssertion(rdfs:comment obo:FOODON_03000648 "syn cheese aging. affinage"@en)
 AnnotationAssertion(rdfs:label obo:FOODON_03000648 "cheese ripening"@en)
 AnnotationAssertion(rdfs:seeAlso obo:FOODON_03000648 <https://www.wisconsincheese.com/the-cheese-life/article/217/understanding-cheese-aging-levels>)
@@ -2323,14 +2331,14 @@ SubClassOf(obo:FOODON_03000648 obo:FOODON_03460252)
 # Class: obo:FOODON_03000649 (fresh cheese)
 
 AnnotationAssertion(obo:IAO_0000115 obo:FOODON_03000649 "A cheese which undergoes little or no cheese ripening."@en)
-AnnotationAssertion(obo:IAO_0000119 obo:FOODON_03000649 <https://en.wikipedia.org/wiki/Types_of_cheese>)
+AnnotationAssertion(obo:IAO_0000119 obo:FOODON_03000649 wikipedia:Types_of_cheese)
 AnnotationAssertion(rdfs:label obo:FOODON_03000649 "fresh cheese"@en)
 SubClassOf(obo:FOODON_03000649 obo:FOODON_03000287)
 
 # Class: obo:FOODON_03000650 (ripened cheese)
 
 AnnotationAssertion(obo:IAO_0000115 obo:FOODON_03000650 "A cheese which undergoes significant cheese ripening."@en)
-AnnotationAssertion(obo:IAO_0000119 obo:FOODON_03000650 <https://en.wikipedia.org/wiki/Types_of_cheese>)
+AnnotationAssertion(obo:IAO_0000119 obo:FOODON_03000650 wikipedia:Types_of_cheese)
 AnnotationAssertion(rdfs:comment obo:FOODON_03000650 "syn. cheese (maturing)"@en)
 AnnotationAssertion(rdfs:label obo:FOODON_03000650 "ripened cheese"@en)
 SubClassOf(obo:FOODON_03000650 obo:FOODON_03000287)
@@ -2387,7 +2395,7 @@ SubClassOf(obo:FOODON_03000658 obo:FOODON_00002470)
 
 # Class: obo:FOODON_03000659 (fruit pitting)
 
-AnnotationAssertion(obo:IAO_0000115 obo:FOODON_03000659 "A material component separation process involving food material."@en)
+AnnotationAssertion(obo:IAO_0000115 obo:FOODON_03000659 "A food component separation process in which the pit (stone or pyrena) is extracted from a drupe fruit."@en)
 AnnotationAssertion(rdfs:label obo:FOODON_03000659 "fruit pitting"@en)
 SubClassOf(obo:FOODON_03000659 obo:FOODON_03460238)
 
@@ -2426,7 +2434,7 @@ SubClassOf(obo:FOODON_03000665 obo:OBI_0600014)
 # Class: obo:FOODON_03000666 (comminution)
 
 AnnotationAssertion(obo:IAO_0000115 obo:FOODON_03000666 "A physical forming process involving the reduction of solid materials from one average particle size to a smaller average particle size, by crushing, grinding, cutting, vibrating, or other processes."@en)
-AnnotationAssertion(obo:IAO_0000119 obo:FOODON_03000666 <https://en.wikipedia.org/wiki/Comminution>)
+AnnotationAssertion(obo:IAO_0000119 obo:FOODON_03000666 wikipedia:Comminution)
 AnnotationAssertion(rdfs:label obo:FOODON_03000666 "comminution"@en)
 SubClassOf(obo:FOODON_03000666 obo:OBI_0600014)
 
@@ -2508,7 +2516,7 @@ SubClassOf(obo:FOODON_03000678 obo:FOODON_00002470)
 # Class: obo:FOODON_03000679 (dicing)
 
 AnnotationAssertion(obo:IAO_0000115 obo:FOODON_03000679 "Dicing is a culinary knife cut in which the food item is cut into small blocks or dice."@en)
-AnnotationAssertion(obo:IAO_0000119 obo:FOODON_03000679 <https://en.wikipedia.org/wiki/Dicing>)
+AnnotationAssertion(obo:IAO_0000119 obo:FOODON_03000679 wikipedia:Dicing)
 AnnotationAssertion(rdfs:label obo:FOODON_03000679 "dicing"@en)
 SubClassOf(obo:FOODON_03000679 obo:FOODON_00000071)
 
@@ -2535,32 +2543,32 @@ SubClassOf(obo:FOODON_03000683 obo:FOODON_00002470)
 # Class: obo:FOODON_03000684 (material state modulation)
 
 AnnotationAssertion(obo:IAO_0000115 obo:FOODON_03000684 "Material processing which involves a change in energy or physical state of a material."@en)
-AnnotationAssertion(obo:IAO_0000119 obo:FOODON_03000684 <https://en.wikipedia.org/wiki/Energy>)
+AnnotationAssertion(obo:IAO_0000119 obo:FOODON_03000684 wikipedia:Energy)
 AnnotationAssertion(rdfs:label obo:FOODON_03000684 "material state modulation"@en)
 SubClassOf(obo:FOODON_03000684 obo:COB_0000110)
 
 # Class: obo:FOODON_03000685 (force modulation)
 
-AnnotationAssertion(obo:IAO_0000115 obo:FOODON_03000685 "TBD"@en)
+AnnotationAssertion(obo:IAO_0000115 obo:FOODON_03000685 "A material state modulation involving the varying application of pressure to material."@en)
 AnnotationAssertion(rdfs:label obo:FOODON_03000685 "force modulation"@en)
 SubClassOf(obo:FOODON_03000685 obo:FOODON_03000684)
 
 # Class: obo:FOODON_03000686 (kneading)
 
-AnnotationAssertion(obo:IAO_0000115 obo:FOODON_03000686 "TBD"@en)
+AnnotationAssertion(obo:IAO_0000115 obo:FOODON_03000686 "A force modulation process in which dough is shaped using stretching, folding and compression motions effected by hand or by device."@en)
 AnnotationAssertion(rdfs:label obo:FOODON_03000686 "kneading"@en)
 SubClassOf(obo:FOODON_03000686 obo:FOODON_03000685)
 
-# Class: obo:FOODON_03000687 (compressing (pressing))
+# Class: obo:FOODON_03000687 (compressing)
 
-AnnotationAssertion(obo:IAO_0000115 obo:FOODON_03000687 "TBD"@en)
-AnnotationAssertion(rdfs:label obo:FOODON_03000687 "compressing (pressing)"@en)
+AnnotationAssertion(obo:IAO_0000115 obo:FOODON_03000687 "A force modulation process in which pressure is brought to bear on a material."@en)
+AnnotationAssertion(rdfs:label obo:FOODON_03000687 "compressing"@en)
 SubClassOf(obo:FOODON_03000687 obo:FOODON_03000685)
 
-# Class: obo:FOODON_03000688 (material shaping)
+# Class: obo:FOODON_03000688 (shaping)
 
-AnnotationAssertion(obo:IAO_0000115 obo:FOODON_03000688 "A force modulation of a food material that achieves a transformation in shape."@en)
-AnnotationAssertion(rdfs:label obo:FOODON_03000688 "material shaping"@en)
+AnnotationAssertion(obo:IAO_0000115 obo:FOODON_03000688 "A force modulation of a material that achieves a transformation in its shape."@en)
+AnnotationAssertion(rdfs:label obo:FOODON_03000688 "shaping"@en)
 SubClassOf(obo:FOODON_03000688 obo:FOODON_03000685)
 
 # Class: obo:FOODON_03000689 (material agitation)
@@ -2664,7 +2672,7 @@ SubClassOf(obo:FOODON_03000703 obo:FOODON_00002470)
 # Class: obo:FOODON_03000704 (marination)
 
 AnnotationAssertion(obo:IAO_0000115 obo:FOODON_03000704 "A process of immersing food material in a liquid which may contain seasoning, acidifiers, alcohol, fermented milk products, oil, and enzymatic or alkaline components to flavor and slightly tenderize meats and vegetables before cooking."@en)
-AnnotationAssertion(obo:IAO_0000119 obo:FOODON_03000704 <https://en.wikipedia.org/wiki/Marination>)
+AnnotationAssertion(obo:IAO_0000119 obo:FOODON_03000704 wikipedia:Marination)
 AnnotationAssertion(rdfs:label obo:FOODON_03000704 "marination"@en)
 SubClassOf(obo:FOODON_03000704 obo:FOODON_03460130)
 
@@ -2773,6 +2781,12 @@ AnnotationAssertion(obo:IAO_0000115 obo:FOODON_03302148 "Food material which has
 AnnotationAssertion(rdfs:comment obo:FOODON_03302148 "Includes both meat, fish, and kinds of fruit and vegetable that freeze well."@en)
 AnnotationAssertion(rdfs:label obo:FOODON_03302148 "food (frozen)"@en)
 SubClassOf(obo:FOODON_03302148 obo:FOODON_00002454)
+
+# Class: obo:FOODON_03305364 (food (irradiated))
+
+AnnotationAssertion(obo:IAO_0000115 obo:FOODON_03305364 "Food material which has been irradiated."@en)
+AnnotationAssertion(rdfs:label obo:FOODON_03305364 "food (irradiated)"@en)
+SubClassOf(obo:FOODON_03305364 obo:FOODON_00002454)
 
 # Class: obo:FOODON_03306255 (toast)
 
@@ -3109,7 +3123,7 @@ SubClassOf(obo:FOODON_03450041 obo:FOODON_03450037)
 # Class: obo:FOODON_03450043 (double steaming)
 
 AnnotationAssertion(obo:IAO_0000115 obo:FOODON_03450043 "A Chinese cooking technique to prepare delicate food such as bird nests, shark fins, etc. The food is covered with water and put in a covered ceramic jar and the jar is then steamed for several hours."@en)
-AnnotationAssertion(obo:IAO_0000119 obo:FOODON_03450043 <https://en.wikipedia.org/wiki/Double_steaming>)
+AnnotationAssertion(obo:IAO_0000119 obo:FOODON_03450043 wikipedia:Double_steaming)
 AnnotationAssertion(rdfs:comment obo:FOODON_03450043 "This technique ensures there is no loss of liquid or moisture (its essences) from the food being cooked, hence it is often used with expensive ingredients like Chinese herbal medicines. [Wikipedia]"@en)
 AnnotationAssertion(rdfs:label obo:FOODON_03450043 "double steaming"@en)
 SubClassOf(obo:FOODON_03450043 obo:FOODON_03450014)
@@ -3132,7 +3146,7 @@ SubClassOf(obo:FOODON_03450045 obo:FOODON_03450006)
 # Class: obo:FOODON_03450046 (blind baking)
 
 AnnotationAssertion(obo:IAO_0000115 obo:FOODON_03450046 "A food baking process in which a pie crust or other pastry is baked without a filling."@en)
-AnnotationAssertion(obo:IAO_0000119 obo:FOODON_03450046 <https://en.wikipedia.org/wiki/Blind-baking>)
+AnnotationAssertion(obo:IAO_0000119 obo:FOODON_03450046 wikipedia:Blind-baking)
 AnnotationAssertion(rdfs:comment obo:FOODON_03450046 "LanguaL curation note: Use when a pie crust or other pastry is baked without the filling."@en)
 AnnotationAssertion(rdfs:label obo:FOODON_03450046 "blind baking"@en)
 AnnotationAssertion(rdfs:seeAlso obo:FOODON_03450046 <https://www.seriouseats.com/how-to-blind-bake-a-pie-crust>)
@@ -3348,7 +3362,7 @@ SubClassOf(obo:FOODON_03460182 obo:FOODON_03460130)
 # Class: obo:FOODON_03460190 (pickling)
 
 AnnotationAssertion(obo:IAO_0000115 obo:FOODON_03460190 "A process of preserving or extending the shelf life of food by either anaerobic fermentation in brine or immersion in vinegar."@en)
-AnnotationAssertion(obo:IAO_0000119 obo:FOODON_03460190 <https://en.wikipedia.org/wiki/Pickling>)
+AnnotationAssertion(obo:IAO_0000119 obo:FOODON_03460190 wikipedia:Pickling)
 AnnotationAssertion(rdfs:comment obo:FOODON_03460190 "LanguaL curation note: Also index by other applicable terms from *MICROBIALLY/ ENZYMATICALLY MODIFIED*.  LanguaL definition: \"Treated with acid that may be produced by fermentation or added and/or with salt brine, often in the presence of spices or herbs, producing changes in flavor and texture.\""@en)
 AnnotationAssertion(rdfs:label obo:FOODON_03460190 "pickling"@en)
 SubClassOf(obo:FOODON_03460190 obo:FOODON_03460119)
@@ -3357,7 +3371,7 @@ SubClassOf(obo:FOODON_03460190 obo:FOODON_03460119)
 
 AnnotationAssertion(obo:IAO_0000115 obo:FOODON_03460192 "Modified through physical and/or chemical treatment to promote or affect the tactile quality and appearance of a food product."@en)
 AnnotationAssertion(rdfs:label obo:FOODON_03460192 "food texturing"@en)
-SubClassOf(obo:FOODON_03460192 obo:FOODON_00002409)
+SubClassOf(obo:FOODON_03460192 obo:FOODON_03460130)
 
 # Class: obo:FOODON_03460194 (nutrient or dietary substance addition)
 
@@ -3463,11 +3477,11 @@ AnnotationAssertion(rdfs:comment obo:FOODON_03460238 "LanguaL curation note: Use
 AnnotationAssertion(rdfs:label obo:FOODON_03460238 "food component separation"@en)
 SubClassOf(obo:FOODON_03460238 obo:OBI_0600014)
 
-# Class: obo:FOODON_03460239 (food rolling)
+# Class: obo:FOODON_03460239 (grain rolling)
 
-AnnotationAssertion(obo:IAO_0000115 obo:FOODON_03460239 "TBD"@en)
+AnnotationAssertion(obo:IAO_0000115 obo:FOODON_03460239 "A physical forming process in which grain kernels are physically compressed between heated rollers."@en)
 AnnotationAssertion(rdfs:comment obo:FOODON_03460239 "LanguaL curation note: Used for a grain in which the kernels have been physically compressed between heated rollers."@en)
-AnnotationAssertion(rdfs:label obo:FOODON_03460239 "food rolling"@en)
+AnnotationAssertion(rdfs:label obo:FOODON_03460239 "grain rolling"@en)
 SubClassOf(obo:FOODON_03460239 obo:FOODON_00002409)
 
 # Class: obo:FOODON_03460241 (thawing)
@@ -3538,7 +3552,7 @@ SubClassOf(obo:FOODON_03460259 obo:FOODON_03460148)
 
 # Class: obo:FOODON_03460261 (food ultraviolet irradiation)
 
-AnnotationAssertion(obo:IAO_0000115 obo:FOODON_03460261 "TBD:"@en)
+AnnotationAssertion(obo:IAO_0000115 obo:FOODON_03460261 "A food irradiation process which utilizes ultraviolet radiation."@en)
 AnnotationAssertion(rdfs:label obo:FOODON_03460261 "food ultraviolet irradiation"@en)
 SubClassOf(obo:FOODON_03460261 obo:FOODON_03460121)
 
@@ -3549,7 +3563,7 @@ SubClassOf(obo:FOODON_03460266 obo:FOODON_03000665)
 
 # Class: obo:FOODON_03460268 (food puffing)
 
-AnnotationAssertion(obo:IAO_0000115 obo:FOODON_03460268 "TBD"@en)
+AnnotationAssertion(obo:IAO_0000115 obo:FOODON_03460268 "A physical/chemical modification in which moisture inside a starchy food material is instantaneously (flash) evaporated under high heat or pressure, causing a porous, crispy structure to form."@en)
 AnnotationAssertion(rdfs:label obo:FOODON_03460268 "food puffing"@en)
 SubClassOf(obo:FOODON_03460268 obo:FOODON_03460130)
 
@@ -3560,10 +3574,10 @@ SubClassOf(obo:FOODON_03460270 obo:FOODON_03460130)
 
 # Class: obo:FOODON_03460274 (food flaking)
 
-AnnotationAssertion(obo:IAO_0000115 obo:FOODON_03460274 "TBD"@en)
+AnnotationAssertion(obo:IAO_0000115 obo:FOODON_03460274 "A physical forming process in which cooked particles of grain or tiny pellets of dough are forced between very heavy rollers that convert each piece into a single flake."@en)
 AnnotationAssertion(rdfs:comment obo:FOODON_03460274 "LanguaL curation note: Used only for breakfast cereals made by forcing cooked particles of grain or tiny pellets of dough between very heavy rollers that convert each piece into a single flake."@en)
 AnnotationAssertion(rdfs:label obo:FOODON_03460274 "food flaking"@en)
-SubClassOf(obo:FOODON_03460274 obo:FOODON_03460238)
+SubClassOf(obo:FOODON_03460274 obo:FOODON_00002409)
 
 # Class: obo:FOODON_03460275 (food meat liquid injection process)
 
@@ -3732,10 +3746,10 @@ SubClassOf(obo:FOODON_03460331 obo:FOODON_03460329)
 AnnotationAssertion(rdfs:label obo:FOODON_03460351 "chemical leavening agent addition"@en)
 SubClassOf(obo:FOODON_03460351 obo:FOODON_03460751)
 
-# Class: obo:FOODON_03460352 (food extrusion)
+# Class: obo:FOODON_03460352 (extrusion)
 
-AnnotationAssertion(obo:IAO_0000115 obo:FOODON_03460352 "Modified through a physical or chemical procedure by forcing a food mixture through a die to achieve a particular shape."@en)
-AnnotationAssertion(rdfs:label obo:FOODON_03460352 "food extrusion"@en)
+AnnotationAssertion(obo:IAO_0000115 obo:FOODON_03460352 "A physical forming process in which semi-solid material is forced through a die to achieve a particular shape."@en)
+AnnotationAssertion(rdfs:label obo:FOODON_03460352 "extrusion"@en)
 SubClassOf(obo:FOODON_03460352 obo:FOODON_00002409)
 
 # Class: obo:FOODON_03460353 (food coating or covering process)
@@ -3772,11 +3786,11 @@ AnnotationAssertion(rdfs:comment obo:FOODON_03460359 "LanguaL curation note: Use
 AnnotationAssertion(rdfs:label obo:FOODON_03460359 "food aeration by creaming"@en)
 SubClassOf(obo:FOODON_03460359 obo:FOODON_03460178)
 
-# Class: obo:FOODON_03460366 (food flattening)
+# Class: obo:FOODON_03460366 (flattening)
 
-AnnotationAssertion(obo:IAO_0000115 obo:FOODON_03460366 "TBD"@en)
+AnnotationAssertion(obo:IAO_0000115 obo:FOODON_03460366 "A physical forming process in which semi-solid material is flattened between two surfaces."@en)
 AnnotationAssertion(rdfs:comment obo:FOODON_03460366 "LanguaL curation note: Used for any process such as rolling or pounding that is applied to dough, paste or meat (veal, chicken breast) in order to flatten the appearance."@en)
-AnnotationAssertion(rdfs:label obo:FOODON_03460366 "food flattening"@en)
+AnnotationAssertion(rdfs:label obo:FOODON_03460366 "flattening"@en)
 SubClassOf(obo:FOODON_03460366 obo:FOODON_00002409)
 
 # Class: obo:FOODON_03460391 (seed roasting)
@@ -3933,7 +3947,7 @@ SubClassOf(obo:FOODON_03470115 obo:FOODON_03470138)
 # Class: obo:FOODON_03470116 (drying (water reduction))
 
 AnnotationAssertion(obo:IAO_0000115 obo:FOODON_03470116 "A drying process in which water is removed from a material."@en)
-AnnotationAssertion(obo:IAO_0000119 obo:FOODON_03470116 <https://en.wikipedia.org/wiki/Drying>)
+AnnotationAssertion(obo:IAO_0000119 obo:FOODON_03470116 wikipedia:Drying)
 AnnotationAssertion(dcterms:contributor obo:FOODON_03470116 <https://orcid.org/0000-0002-9578-0788>)
 AnnotationAssertion(rdfs:comment obo:FOODON_03470116 "LanguaL curation note: Used when the water activity has been lowered enough to achieve preservation. Also index *WATER REMOVED* in *H. TREATMENT APPLIED*."@en)
 AnnotationAssertion(rdfs:label obo:FOODON_03470116 "drying (water reduction)"@en)
@@ -4009,7 +4023,7 @@ SubClassOf(obo:FOODON_03470129 obo:FOODON_03470102)
 # Class: obo:FOODON_03470130 (freeze-drying)
 
 AnnotationAssertion(obo:IAO_0000115 obo:FOODON_03470130 "Dehydration of food material by freezing it within a vacuum to remove moisture via sublimation, which turns ice directly into vapor."@en)
-AnnotationAssertion(obo:IAO_0000119 obo:FOODON_03470130 <https://en.wikipedia.org/wiki/Freeze_drying>)
+AnnotationAssertion(obo:IAO_0000119 obo:FOODON_03470130 wikipedia:Freeze_drying)
 AnnotationAssertion(rdfs:comment obo:FOODON_03470130 "LanguaL note: \"Usually the product is not stored frozen.\" synonyms: lyophilization or cryodesiccation"@en)
 AnnotationAssertion(rdfs:label obo:FOODON_03470130 "freeze-drying"@en)
 SubClassOf(obo:FOODON_03470130 obo:FOODON_03000617)
@@ -4024,7 +4038,7 @@ SubClassOf(obo:FOODON_03470131 obo:FOODON_03000531)
 # Class: obo:FOODON_03470132 (quick freezing)
 
 AnnotationAssertion(obo:IAO_0000115 obo:FOODON_03470132 "A freezing process which happens much more quickly than slow (conventional) freezing,"@en)
-AnnotationAssertion(obo:IAO_0000119 obo:FOODON_03470132 <https://en.wikipedia.org/wiki/Frozen_food>)
+AnnotationAssertion(obo:IAO_0000119 obo:FOODON_03470132 wikipedia:Frozen_food)
 AnnotationAssertion(rdfs:comment obo:FOODON_03470132 "syn \"fast freezing\""@en)
 AnnotationAssertion(rdfs:label obo:FOODON_03470132 "quick freezing"@en)
 SubClassOf(obo:FOODON_03470132 obo:FOODON_03470136)
@@ -4032,7 +4046,7 @@ SubClassOf(obo:FOODON_03470132 obo:FOODON_03470136)
 # Class: obo:FOODON_03470133 (spray-drying)
 
 AnnotationAssertion(obo:IAO_0000115 obo:FOODON_03470133 "An artificial heat drying process which outputs a dry powder from an input liquid or slurry by rapidly drying with a hot gas."@en)
-AnnotationAssertion(obo:IAO_0000119 obo:FOODON_03470133 <https://en.wikipedia.org/wiki/Spray_drying>)
+AnnotationAssertion(obo:IAO_0000119 obo:FOODON_03470133 wikipedia:Spray_drying)
 AnnotationAssertion(rdfs:comment obo:FOODON_03470133 "LanguaL curation note: Used when liquids and low-viscosity pastes or purees are dried by atomisation. Example: milk."@en)
 AnnotationAssertion(rdfs:label obo:FOODON_03470133 "spray-drying"@en)
 SubClassOf(obo:FOODON_03470133 obo:FOODON_03470144)
@@ -4062,7 +4076,7 @@ SubClassOf(obo:FOODON_03470136 obo:FOODON_03470107)
 # Class: obo:FOODON_03470137 (brining)
 
 AnnotationAssertion(obo:IAO_0000115 obo:FOODON_03470137 "A food salting process in which food material is Immersed in a salt brine strong enough to suppress enzyme activity and growth of undesirable organisms."@en)
-AnnotationAssertion(obo:IAO_0000119 obo:FOODON_03470137 <https://en.wikipedia.org/wiki/Brining>)
+AnnotationAssertion(obo:IAO_0000119 obo:FOODON_03470137 wikipedia:Brining)
 AnnotationAssertion(rdfs:label obo:FOODON_03470137 "brining"@en)
 SubClassOf(obo:FOODON_03470137 obo:FOODON_03470103)
 
@@ -4156,7 +4170,7 @@ SubClassOf(obo:FOODON_03470151 obo:FOODON_03470120)
 # Class: obo:FOODON_03470152 (food material preservation by irradiation)
 
 AnnotationAssertion(obo:IAO_0000115 obo:FOODON_03470152 "A preservation by irradiation process applied to food material."@en)
-AnnotationAssertion(obo:IAO_0000119 obo:FOODON_03470152 <https://en.wikipedia.org/wiki/Ionizing_radiation>)
+AnnotationAssertion(obo:IAO_0000119 obo:FOODON_03470152 wikipedia:Ionizing_radiation)
 AnnotationAssertion(rdfs:comment obo:FOODON_03470152 "LanguaL curation note: Used when an ingredient or a component of a food has been preservation by irradiation."@en)
 AnnotationAssertion(rdfs:label obo:FOODON_03470152 "food material preservation by irradiation"@en)
 SubClassOf(obo:FOODON_03470152 obo:FOODON_03470138)
@@ -4259,7 +4273,7 @@ SubClassOf(obo:FOODON_03470170 obo:FOODON_03470141)
 # Class: obo:FOODON_03470171 (cryogenic freezing)
 
 AnnotationAssertion(obo:IAO_0000115 obo:FOODON_03470171 "Frozen very rapidly by means of refrigerating agents such as liquid nitrogen or carbon dioxide."@en)
-AnnotationAssertion(obo:IAO_0000119 obo:FOODON_03470171 <https://en.wikipedia.org/wiki/Flash_freezing>)
+AnnotationAssertion(obo:IAO_0000119 obo:FOODON_03470171 wikipedia:Flash_freezing)
 AnnotationAssertion(rdfs:comment obo:FOODON_03470171 "This process involves being frozen by a refrigerating agent."@en)
 AnnotationAssertion(rdfs:label obo:FOODON_03470171 "cryogenic freezing"@en)
 SubClassOf(obo:FOODON_03470171 obo:FOODON_03470132)
@@ -4361,7 +4375,7 @@ SubClassOf(obo:FOODON_03530052 obo:FOODON_03530050)
 # Class: obo:GO_0009835 (fruit ripening)
 
 AnnotationAssertion(obo:IAO_0000115 obo:GO_0009835 "An developmental maturation process that has as participant a fruit. Ripening causes changes in one or more characteristics of a fruit (color, aroma, flavor, texture, hardness, cell wall structure) and may make it more attractive to animals and aid in seed dispersal."@en)
-AnnotationAssertion(obo:IAO_0000119 obo:GO_0009835 <https://en.wikipedia.org/wiki/Ripening>)
+AnnotationAssertion(obo:IAO_0000119 obo:GO_0009835 wikipedia:Ripening)
 AnnotationAssertion(rdfs:label obo:GO_0009835 "fruit ripening"@en)
 SubClassOf(obo:GO_0009835 obo:FOODON_03000630)
 SubClassOf(obo:GO_0009835 obo:FOODON_03460252)

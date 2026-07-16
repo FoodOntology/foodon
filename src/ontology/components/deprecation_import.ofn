@@ -419,6 +419,7 @@ Declaration(Class(obo:FOODON_03414361))
 Declaration(Class(obo:FOODON_03414369))
 Declaration(Class(obo:FOODON_03414385))
 Declaration(Class(obo:FOODON_03414416))
+Declaration(Class(obo:FOODON_03414418))
 Declaration(Class(obo:FOODON_03414465))
 Declaration(Class(obo:FOODON_03414468))
 Declaration(Class(obo:FOODON_03414469))
@@ -2468,6 +2469,12 @@ AnnotationAssertion(obo:IAO_0000115 obo:FOODON_03414416 "Cellulose used as a foo
 AnnotationAssertion(obo:IAO_0100001 obo:FOODON_03414416 obo:FOODON_03301343)
 AnnotationAssertion(rdfs:label obo:FOODON_03414416 "obsolete: cellulose"@en)
 AnnotationAssertion(owl:deprecated obo:FOODON_03414416 "true"^^xsd:boolean)
+
+# Class: obo:FOODON_03414418 (obsolete: magnesium phosphates)
+
+AnnotationAssertion(obo:IAO_0100001 obo:FOODON_03414418 obo:CHEBI_190298)
+AnnotationAssertion(rdfs:label obo:FOODON_03414418 "obsolete: magnesium phosphates")
+AnnotationAssertion(owl:deprecated obo:FOODON_03414418 "true"^^xsd:boolean)
 
 # Class: obo:FOODON_03414465 (obsolete: chordate)
 

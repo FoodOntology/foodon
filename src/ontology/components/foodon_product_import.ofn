@@ -14449,7 +14449,8 @@ SubClassOf(obo:FOODON_00001211 obo:FOODON_00001002)
 
 # Class: obo:FOODON_00001212 (pastry food product)
 
-AnnotationAssertion(Annotation(oboInOwl:hasDbXref "http://en.wikipedia.org/wiki/Pastry") obo:IAO_0000115 obo:FOODON_00001212 "A pastry food product is a food product containing a pastry component.  The food may be ready for consumption or may require further cooking."@en)
+AnnotationAssertion(obo:IAO_0000115 obo:FOODON_00001212 "A pastry food product is a food product containing a pastry component.  The food may be ready for consumption or may require further cooking."@en)
+AnnotationAssertion(obo:IAO_0000119 obo:FOODON_00001212 <http://en.wikipedia.org/wiki/Pastry>)
 AnnotationAssertion(rdfs:label obo:FOODON_00001212 "pastry food product"@en)
 SubClassOf(obo:FOODON_00001212 obo:FOODON_00001626)
 SubClassOf(obo:FOODON_00001212 obo:FOODON_00003395)
@@ -24392,7 +24393,7 @@ AnnotationAssertion(dcterms:contributor obo:FOODON_00003050 <https://orcid.org/0
 AnnotationAssertion(dcterms:date obo:FOODON_00003050 "2019-08-24T16:59:45Z"^^xsd:dateTime)
 AnnotationAssertion(Annotation(dcterms:license <https://creativecommons.org/licenses/by/2.5/ar/deed.es_ES>) Annotation(dcterms:rightsHolder "Matías Repetto/GCBA") schema:image obo:FOODON_00003050 <https://upload.wikimedia.org/wikipedia/commons/7/78/Empanadas_argentinas_2017.jpg>)
 AnnotationAssertion(rdfs:label obo:FOODON_00003050 "empanada"@en)
-SubClassOf(obo:FOODON_00003050 obo:FOODON_03312033)
+SubClassOf(obo:FOODON_00003050 obo:FOODON_00002501)
 
 # Class: obo:FOODON_00003051 (arepa (dish))
 
@@ -29259,7 +29260,6 @@ SubClassOf(obo:FOODON_03301002 obo:FOODON_03302463)
 AnnotationAssertion(obo:IAO_0000114 obo:FOODON_03301003 obo:IAO_0000428)
 AnnotationAssertion(oboInOwl:hasDbXref obo:FOODON_03301003 siren:F1003)
 AnnotationAssertion(rdfs:label obo:FOODON_03301003 "pineapple (canned)"@en)
-EquivalentClasses(obo:FOODON_03301003 ObjectIntersectionOf(obo:FOODON_00002418 ObjectSomeValuesFrom(obo:RO_0001000 obo:FOODON_00003459)))
 SubClassOf(obo:FOODON_03301003 obo:FOODON_00002119)
 
 # Class: obo:FOODON_03301004 (macaroni pasta)
@@ -86616,11 +86616,12 @@ AnnotationAssertion(oboInOwl:hasDbXref obo:FOODON_03315271 siren:F15271)
 AnnotationAssertion(rdfs:label obo:FOODON_03315271 "shortening, plastic"@en)
 SubClassOf(obo:FOODON_03315271 obo:FOODON_03301314)
 
-# Class: obo:FOODON_03315272 (pastry)
+# Class: obo:FOODON_03315272 (wheat pastry)
 
 AnnotationAssertion(obo:IAO_0000114 obo:FOODON_03315272 obo:IAO_0000428)
+AnnotationAssertion(obo:IAO_0000119 obo:FOODON_03315272 "A pastry containing wheat as a defining ingredient."@en)
 AnnotationAssertion(oboInOwl:hasDbXref obo:FOODON_03315272 siren:F15272)
-AnnotationAssertion(rdfs:label obo:FOODON_03315272 "pastry"@en)
+AnnotationAssertion(rdfs:label obo:FOODON_03315272 "wheat pastry"@en)
 SubClassOf(obo:FOODON_03315272 obo:FOODON_00002350)
 SubClassOf(obo:FOODON_03315272 ObjectSomeValuesFrom(obo:RO_0002350 obo:FOODON_03400202))
 

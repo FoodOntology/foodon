@@ -84,12 +84,12 @@ type	Ontology ID	NTR	label	parent	term	MIFC	definition	definition source	comment
 3	FOODON:03470138		preservation by irradiation	completely executed planned process	preservation by irradiation		Preservation by the use of radiation to destroy or suppress undesirable microorganisms or enzyme activity.												
 3	FOODON:03470152		food material preservation by irradiation	preservation by irradiation	food material preservation by irradiation		A preservation by irradiation process applied to food material.	https://en.wikipedia.org/wiki/Ionizing_radiation	LanguaL curation note: Used when an ingredient or a component of a food has been preservation by irradiation.										
 3	FOODON:03470122		preservation by ionizing radiation	preservation by irradiation	preservation by ionizing radiation		The application of ionizing radiation to food with the objective of food preservation by irradiation, primarily by high energy electromagnetic waves or particles.												
-3	FOODON:03460261		food ultraviolet irradiation	food irradiation	food ultraviolet irradiation		TBD: 												
+3	FOODON:03460261		food ultraviolet irradiation	food irradiation	food ultraviolet irradiation		A food irradiation process which utilizes ultraviolet radiation.												
 1	FOODON:03000501	NTR	ultraviolet light exposed (sensu food)	irradiated (sensu food)	ultraviolet light exposed (sensu food)	ultraviolet light exposed	A characteristic of irradiated food material which indicates that it has been exposed to ultraviolet light.												
 3	FOODON:03470115		surface pasteurization or disinfection by ultraviolet irradiation	preservation by irradiation	surface pasteurization or disinfection by ultraviolet irradiation		A preservation by irradiation process in which microorganisms are reduced or eliminated on or in material by exposure to ultraviolet irradiation. 		LanguaL curation note: Used when sufficient ultraviolet radiation is applied to destroy most pathogenic and spoilage organisms present on the surface or to inhibit sprouting of stored agricultural produce and destroy storage pests. When followed by refrigeration, also index *preservation by CHILLING*.										
 3	FOODON:03470113		food sterilization by irradiation	preservation by ionizing radiation|food ionizing irradiation	food sterilization by irradiation		A preservation by irradiation process in which microorganisms are reduced or eliminated on or in food material by exposure to ultraviolet irradiation. 		LanguaL curation note: Used for a food product that has been packed in a hermetically sealed container and rendered commercially sterile by ionizing radiation (e.g. 24-28 kGy).										
 3	FOODON:03460121		food irradiation	physical/chemical modification	food irradiation		A physical/chemical modification in which a food product or component is irradiated for any purpose.		There are three kinds of irradiation that can be applied to food: gamma, electron-beam, and X-ray										
-2	FOODON:03000502	NTR	food (irradiated)	food material by characteristic	food (irradiated)		Food material which has been irradiated.												
+2	FOODON:03305364		food (irradiated)	food material by characteristic	food (irradiated)		Food material which has been irradiated.												
 1	FOODON:03000503	NTR	irradiated (sensu food)	food characteristic	irradiated (sensu food)	irradiated	A characteristic of food material which indicates that it has undergone food irradiation.		Irradiation changes the biochemical constitution of some/many foods, so this kind of raw food is not necessarily a child of “raw”: “Some foods, such as dairy foods and eggs, cannot be irradiated because it causes changes in flavour or texture.” [https://www.betterhealth.vic.gov.au/health/healthyliving/food-irradiation]										
 3	FOODON:03460179		food ionizing irradiation	food irradiation	food ionizing irradiation		A food irradiation process in which ionizing irradiation is applied.												
 3	FOODON:03470162		disinfection by irradiation	preservation by ionizing radiation	disinfection by irradiation		LanguaL curation note: Used when sufficient radiation (e.g. 1-5 k gy) is applied to destroy pathogenic and food spoilage organisms. Example: spices. Radurised food should be stored in a cool and dry place.		LanguaL curation note: Used when sufficient radiation (e.g. 1-5 k gy) is applied to destroy pathogenic and food spoilage organisms. Example: spices. Radurised food should be stored in a cool and dry place.										
@@ -284,7 +284,7 @@ type	Ontology ID	NTR	label	parent	term	MIFC	definition	definition source	comment
 2	FOODON:03000577	NTR	food (oil-roasted)	food (roasted)	food (oil-roasted)		Food material which has been oil-roasted.												
 3	FOODON:03000578	NTR	dry-roasting	roasting	dry-roasting		A roasting process that occurs without the use of added oil or liquid.												
 1	FOODON:03000579	NTR	dry-roasted	roasted	dry-roasted		A characteristic of roasted food which indicates that it has undergone a dry-roasting process.												
-2	FOODON:03000580	NTR	food (dry-roasted)	food (roasted)	food (dry-roasted)		Food material which has been oil-roasted.												
+2	FOODON:03000580	NTR	food (dry-roasted)	food (roasted)	food (dry-roasted)		Food material which has been dry-roasted.												
 3	FOODON:03450012		cooking by moist heat	food cooking by heating	cooking by moist heat		Cooking in varying amounts of water, water-based liquid or steam.		LanguaL curation note: If the food absorbs a significant amount of water, also used *REHYDRATED* or *WATER ADDED*.										
 3	FOODON:03450011		cooking by microwave	food cooking by heating	cooking by microwave		Cooking in a microwave oven.												
 2	FOODON:03000581	NTR	food (microwaved)	food material by characteristic	food (microwaved)		Food material which has undergone cooking by microwave.			food (boiled)									
@@ -410,15 +410,15 @@ type	Ontology ID	NTR	label	parent	term	MIFC	definition	definition source	comment
 1	PATO:0001842		acidity		acidity		A concentration quality inhering in a bearer by virtue of the bearer's containing acid (hydrogen ions).												
 																			
 																			
-3	FOODON:03000626	NTR	material movement	'completely executed planned process'	material movement		The movement of material from one location to another.		Moving material may be as local as getting an apple from a refrigerator, or as far as flying lobsters by airplane.										
+3	FOODON:03000626	NTR	material movement	completely executed planned process	material movement		The movement of material from one location to another.		Moving material may be as local as getting an apple from a refrigerator, or as far as flying lobsters by airplane.										
 																			
 3	FOODON:03000627	NTR	material containment	material processing	material containment														
 3	FOODON:00004078		adding material to container	food material combination	adding material to container														
 3	FOODON:00004079		adding liquid to container	adding material to container	adding liquid to container														
 3	FOODON:00004080		adding solid to container	adding material to container	adding solid to container														
 3	FOODON:00002740		food packaging process	food material processing	food packaging process		A process that applies packaging material to a food product for preservation, shipping and/or presentation purposes.							food (packaged)			https://orcid.org/0000-0002-8844-9165		
-3	FOODON:00002416		canning	food packaging process	canning		TBD							food (canned)			https://orcid.org/0000-0002-8844-9165		
-3	FOODON:03000628	NTR	food preservation canning	canning	food preservation canning		TBD												
+3	FOODON:00002416		canning	food packaging process	canning		A food packaging process involving hermetically sealing food material within an airtight jar or can.							food (canned)			https://orcid.org/0000-0002-8844-9165		
+3	FOODON:03000628	NTR	food preservation canning	canning	food preservation canning		A canning process involving hermetically sealing pasteurized or sterilized food material within a jar or can.												
 1	FOODON:03000629	NTR	canned	food characteristic	canned	☑	A characteristic of food material which indicates that it has undergone canning.												
 2	FOODON:00002418		food (canned)	food material by process	food (canned)		Food material which has undergone a canning process.												
 																			
@@ -513,7 +513,7 @@ type	Ontology ID	NTR	label	parent	term	MIFC	definition	definition source	comment
 3	FOODON:00002721		dehulling	food component separation	dehulling		Dehulling is the process of removing the hulls (or chaff) from beans and other seeds.							food (hulled)			https://orcid.org/0000-0002-8844-9165		
 3	FOODON:00002722		corn husking	food component separation	corn husking		Husking of corn is the process of removing its outer layers, leaving only the cob or seed rack of the corn							corn on-the-cob (raw)			https://orcid.org/0000-0002-8844-9165		
 3	FOODON:00004531		deboning	food component separation	deboning		The process of removing bone from animal meat.										https://orcid.org/0000-0002-8844-9165		
-3	FOODON:03000659	NTR	fruit pitting	food component separation	fruit pitting		A material component separation process involving food material.												
+3	FOODON:03000659	NTR	fruit pitting	food component separation	fruit pitting		A food component separation process in which the pit (stone or pyrena) is extracted from a drupe fruit.												
 3	FOODON:03460760		animal rendering	food component separation	animal rendering		Rendering is a process that converts waste animal tissue into stable, value-added materials. Rendering can refer to any processing of animal byproducts into more useful materials, or more narrowly to the rendering of whole animal fatty tissue into purified fats like lard or tallow. Rendering can be carried out on an industrial, farm, or kitchen scale.												
 3	FOODON:00003307		shell removal	food component separation	shell removal		A process which separates a culinary nut's shell from its meat, leaving the meat part more or less intact.												
 3	FOODON:03000001		food peeling	food component separation	food peeling		peeling is the process of removing the outer covering, layer or skin from a fruit, vegetable, or plant or animal (such as a shrimp).							food (peeled)			https://orcid.org/0000-0002-8844-9165		
@@ -613,23 +613,23 @@ type	Ontology ID	NTR	label	parent	term	MIFC	definition	definition source	comment
 2	FOODON:00004554		food (pulped)	food material by characteristic	food (pulped)						'has quality' some 'pulped' and 'output of' some 'food pulping'								
 1	FOODON:03000683	NTR	pulped	food characteristic	pulped														
 																			
-3	FOODON:00004550		food cubing	food component separation	food cubing		The process of cutting food such as meat into cubic pieces.							food (cubed)			https://orcid.org/0000-0002-8844-9165		
-3	FOODON:03460274		food flaking	food component separation	food flaking		TBD		LanguaL curation note: Used only for breakfast cereals made by forcing cooked particles of grain or tiny pellets of dough between very heavy rollers that convert each piece into a single flake.										
+3	FOODON:00004550		food cubing	food component separation	food cubing		A food component separation process of cutting food such as meat into cubic pieces.							food (cubed)			https://orcid.org/0000-0002-8844-9165		
 																			
 																			
 																			
 3	FOODON:03000684	NTR	material state modulation	material processing	material state modulation		Material processing which involves a change in energy or physical state of a material.	https://en.wikipedia.org/wiki/Energy											
 																			
 3	FOODON:00002409		physical forming	physical/chemical modification	physical forming		Modification through physical treatment to affect the shape characteristic of material.										https://orcid.org/0000-0002-8844-9165		
-3	FOODON:03000685	NTR	force modulation	material state modulation	force modulation		TBD												
-3	FOODON:03000686	NTR	kneading	force modulation	kneading		TBD												
-3	FOODON:03000687	NTR	compressing (pressing)	force modulation	compressing (pressing)		TBD												
-3	FOODON:03000688	NTR	material shaping	force modulation	material shaping		A force modulation of a food material that achieves a transformation in shape.												
-3	FOODON:03460192		food texturing	physical forming	food texturing		Modified through physical and/or chemical treatment to promote or affect the tactile quality and appearance of a food product.												
-3	FOODON:03460239		food rolling	physical forming	food rolling		TBD		LanguaL curation note: Used for a grain in which the kernels have been physically compressed between heated rollers.										
-3	FOODON:03460366		food flattening	physical forming	food flattening		TBD		LanguaL curation note: Used for any process such as rolling or pounding that is applied to dough, paste or meat (veal, chicken breast) in order to flatten the appearance.										
-3	FOODON:03460352		food extrusion	physical forming	food extrusion		Modified through a physical or chemical procedure by forcing a food mixture through a die to achieve a particular shape.												
-3	FOODON:03460268		food puffing	physical/chemical modification	food puffing		TBD												
+3	FOODON:03460192		food texturing	physical/chemical modification	food texturing		Modified through physical and/or chemical treatment to promote or affect the tactile quality and appearance of a food product.												
+3	FOODON:03000685	NTR	force modulation	material state modulation	force modulation		A material state modulation involving the varying application of pressure to material.												
+3	FOODON:03000686	NTR	kneading	force modulation	kneading		A force modulation process in which dough is shaped using stretching, folding and compression motions effected by hand or by device.												
+3	FOODON:03000687	NTR	compressing	force modulation	compressing		A force modulation process in which pressure is brought to bear on a material.			Pressing or compressing peanut butter cookies with a fork to make a cross-hatch pattern on top.									
+3	FOODON:03000688	NTR	shaping	force modulation	shaping		A force modulation of a material that achieves a transformation in its shape.												
+3	FOODON:03460239		grain rolling	physical forming	grain rolling		A physical forming process in which grain kernels are physically compressed between heated rollers.		LanguaL curation note: Used for a grain in which the kernels have been physically compressed between heated rollers.										
+3	FOODON:03460274		food flaking	physical forming	food flaking		A physical forming process in which cooked particles of grain or tiny pellets of dough are forced between very heavy rollers that convert each piece into a single flake.		LanguaL curation note: Used only for breakfast cereals made by forcing cooked particles of grain or tiny pellets of dough between very heavy rollers that convert each piece into a single flake.										
+3	FOODON:03460366		flattening	physical forming	flattening		A physical forming process in which semi-solid material is flattened between two surfaces.		LanguaL curation note: Used for any process such as rolling or pounding that is applied to dough, paste or meat (veal, chicken breast) in order to flatten the appearance.										
+3	FOODON:03460352		extrusion	physical forming	extrusion		A physical forming process in which semi-solid material is forced through a die to achieve a particular shape.												
+3	FOODON:03460268		food puffing	physical/chemical modification	food puffing	https://pmc.ncbi.nlm.nih.gov/articles/PMC7333006/	A physical/chemical modification in which moisture inside a starchy food material is instantaneously (flash) evaporated under high heat or pressure, causing a porous, crispy structure to form.												
 							nto long, thick strands												
 3	FOODON:03000689	NTR	material agitation	material processing	material agitation		A material modification process in which a single or multi-phase material is forced to flow.		Agitation may be applied to a mixture to maintain a random distribution of components.										
 3	FOODON:03000690	NTR	mixing	material agitation	mixing		A material agitation process leading to the random distribution, into and through one another, of two or more materials with initially separate phases.	https://pages.mtu.edu/~fmorriso/cm310/fluids_lecture_15											
