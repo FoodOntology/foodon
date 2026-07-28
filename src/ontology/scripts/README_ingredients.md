@@ -350,6 +350,7 @@ python3 -m foodon_mapper.ingredients --rebuild nutrient
 | `--rebuild TYPE\|all` | Refresh `ingredients.yaml` from OWL for one or all types |
 | `--dry-run` | With `--rebuild`: report changes without writing |
 | `--owl PATH` | Path to merged OWL file (default: `cache-foodon-merged.owl`) |
+| `-f / --fresh` | Regenerate `cache-foodon-merged.owl` from `../foodon-edit.ofn` via ROBOT (`merge` → `reason` ELK → `relax --include-subclass-of`) before running. Requires `robot` on `PATH`; run from `scripts/`. |
 
 ---
 
@@ -368,7 +369,10 @@ python3 -m foodon_mapper.ingredients --rebuild nutrient
 | `CDNO:0000001` | dietary chemical component (nutrients, vitamins, minerals) |
 
 ```bash
-# Initial population / full refresh
+# Regenerate cache-foodon-merged.owl from foodon-edit.ofn first, then do a full refresh
+python3 ingredients.py --fresh --rebuild all --owl cache-foodon-merged.owl --dry-run
+
+# Initial population / full refresh (reuses the existing cache-foodon-merged.owl)
 python3 ingredients.py --rebuild all --owl cache-foodon-merged.owl --dry-run
 python3 ingredients.py --rebuild all --owl cache-foodon-merged.owl
 ```
