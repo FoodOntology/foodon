@@ -14459,7 +14459,7 @@ SubClassOf(obo:FOODON_00001211 obo:FOODON_00001002)
 
 # Class: obo:FOODON_00001212 (pastry food product)
 
-AnnotationAssertion(obo:IAO_0000115 obo:FOODON_00001212 "A pastry food product is a food product containing a pastry component.  The food may be ready for consumption or may require further cooking."@en)
+AnnotationAssertion(obo:IAO_0000115 obo:FOODON_00001212 "A bakery food product containing a pastry component.  The food may be ready for consumption or may require further cooking."@en)
 AnnotationAssertion(obo:IAO_0000119 obo:FOODON_00001212 <http://en.wikipedia.org/wiki/Pastry>)
 AnnotationAssertion(rdfs:label obo:FOODON_00001212 "pastry food product"@en)
 SubClassOf(obo:FOODON_00001212 obo:FOODON_00001626)
@@ -59792,8 +59792,6 @@ SubClassOf(obo:FOODON_03306772 ObjectSomeValuesFrom(obo:RO_0002350 obo:FOODON_03
 
 AnnotationAssertion(obo:IAO_0000114 obo:FOODON_03306773 obo:IAO_0000428)
 AnnotationAssertion(oboInOwl:hasDbXref obo:FOODON_03306773 siren:F6773)
-AnnotationAssertion(rdfs:label obo:FOODON_03306773 "pie crust"@en)
-SubClassOf(obo:FOODON_03306773 obo:FOODON_00001626)
 
 # Class: obo:FOODON_03306774 (pie filling (artificially flavored, colored, canned))
 
