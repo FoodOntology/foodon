@@ -35,7 +35,7 @@ These are the recognised ingredient categories, their OWL roots used for `--rebu
 | `dairy` | FOODON:00001256 | Milk, cream, butter, cheese, yogurt, and other dairy |
 | `animal` | FOODON:03420164 | Animal material food products (meat, poultry, seafood, eggs) |
 | `lipid` | FOODON:00002664 | Cooking oils and animal fats |
-| `fermentation` | FOODON:00001258 | Fermented food products (yogurt, kefir, kimchi, vinegar, etc.) |
+| `fermented` | FOODON:00001258 | Fermented food products (yogurt, kefir, kimchi, vinegar, etc.) |
 | `sweetener` | FOODON:00002300 | Sugars, sugar alcohols, syrups, natural sweeteners |
 | `chemical` | FOODON:03412972, CHEBI:60004 | Food additives and chemical mixtures |
 | `nutrient` | CHEBI:33229, CDNO:0000001 | Vitamins, minerals, macronutrients, fatty acids, bioactives |
@@ -220,7 +220,7 @@ OWL roots:
 
 E-numbers (e.g. `e322`, `e471`) are indexed as synonyms and matched directly.
 
-### fermentation
+### fermented
 
 Maps fermented food products and fermentation microorganisms to FoodOn/NCBITaxon terms.
 
@@ -321,7 +321,7 @@ python3 ingredients.py -i ingredients.tsv --format markdown,html
 # Test a single type interactively
 python3 ingredients.py --type grain "rolled oats"
 python3 ingredients.py --type nutrient "vitamin B12"
-python3 ingredients.py --type fermentation "bacterial culture"
+python3 ingredients.py --type fermented "bacterial culture"
 
 # Test a type against a TSV file
 python3 ingredients.py --type fruit --tsv my_file.tsv --column ingredient

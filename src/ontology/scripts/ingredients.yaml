@@ -661,7 +661,7 @@ configuration:
     - unfiltered
     - unrefined
     - virgin
-  fermentation:
+  fermented:
     description: |
       Recognises fermented food products.
       Root: FOODON:00001258 (food (fermented)).
@@ -692,7 +692,7 @@ configuration:
         wine       grape wine, red/white/rosé wine, sparkling wine, champagne, fruit wine
         beer       beer, ale, lager, stout, porter, wheat beer, craft beer
         spirits    whisky, vodka, rum, gin, tequila, brandy, liqueur
-      Note: fermented beverages (wine, beer) also appear under the fermentation type;
+      Note: fermented beverages (wine, beer) also appear under the fermented type;
       beverage is set as the primary type so the report shows beverage/subtype.
       Note: milk-based beverages are in the dairy type.
       Run --rebuild beverage to classify all OWL descendant entries.
@@ -792,7 +792,7 @@ configuration:
       Root: NCBITaxon:2 (Bacteria) covers bacterial starter cultures and probiotics.
       Additional organism CURIEs (NCBITaxon:, FOODON:, wd: prefixes) are populated
       on food material entries (fruit, dairy, spice, herb, seed, grain, lipid,
-      fermentation, etc.) via the 'build_taxonomy' command, which queries
+      fermented, etc.) via the 'build_taxonomy' command, which queries
       'in taxon' (RO:0002162) links in the OWL and writes a 'taxonomy' attribute
       to each matching YAML entry.
     roots:
@@ -7934,7 +7934,7 @@ ingredient:
     anatomy: UBERON:0001913
   FOODON:00001014:
     type:
-    - fermentation
+    - fermented
     - animal
     - dairy
     label: yogurt food product
@@ -7965,7 +7965,7 @@ ingredient:
     anatomy: UBERON:0001913
   FOODON:03310290:
     type:
-    - fermentation
+    - fermented
     - animal
     - dairy
     label: kefir
@@ -8406,7 +8406,7 @@ ingredient:
     parent: [FOODON:03000287]
   FOODON:00004409:
     type:
-    - fermentation
+    - fermented
     - animal
     - dairy
     label: greek yogurt
@@ -8417,7 +8417,7 @@ ingredient:
     anatomy: UBERON:0001913
   FOODON:00003258:
     type:
-    - fermentation
+    - fermented
     - animal
     - dairy
     label: strained yogurt
@@ -8431,7 +8431,7 @@ ingredient:
     anatomy: UBERON:0001913
   FOODON:00004408:
     type:
-    - fermentation
+    - fermented
     - animal
     - dairy
     label: labneh
@@ -8444,7 +8444,7 @@ ingredient:
     anatomy: UBERON:0001913
   FOODON:00004389:
     type:
-    - fermentation
+    - fermented
     - animal
     - dairy
     label: skyr
@@ -13600,7 +13600,7 @@ ingredient:
     taxonomy: NCBITaxon:33090
   FOODON:00001003:
     type:
-    - fermentation
+    - fermented
     - beverage
     label: fermented agave juice
     synonyms: []
@@ -13608,21 +13608,21 @@ ingredient:
     anatomy: FOODON:03411535
   FOODON:00001004:
     type:
-    - fermentation
+    - fermented
     - beverage
     label: fermenting sugar cane juice
     synonyms: []
     taxonomy: NCBITaxon:33090
   FOODON:00001005:
     type:
-    - fermentation
+    - fermented
     - beverage
     label: fermenting elaeis palm sap food product
     synonyms: []
     taxonomy: NCBITaxon:33090
   FOODON:00001017:
     type:
-    - fermentation
+    - fermented
     - animal
     - dairy
     label: commercial yogurt
@@ -13630,28 +13630,28 @@ ingredient:
     anatomy: UBERON:0001913
   FOODON:00001019:
     type:
-    - fermentation
+    - fermented
     - beverage
     label: wort food product
     synonyms: []
     taxonomy: NCBITaxon:33090
   FOODON:00001020:
     type:
-    - fermentation
+    - fermented
     - beverage
     label: beer wort food product
     synonyms: []
     taxonomy: NCBITaxon:33090
   FOODON:00001021:
     type:
-    - fermentation
+    - fermented
     - beverage
     label: acifified beer wort food product
     synonyms: []
     taxonomy: NCBITaxon:33090
   FOODON:00001050:
     type:
-    - fermentation
+    - fermented
     - seed
     - legume
     label: tempeh food product
@@ -13660,7 +13660,7 @@ ingredient:
     anatomy: FOODON:03411156
   FOODON:00001051:
     type:
-    - fermentation
+    - fermented
     - beverage
     label: fermented rice beverage
     synonyms: []
@@ -13668,7 +13668,7 @@ ingredient:
     anatomy: FOODON:03411322
   FOODON:00001052:
     type:
-    - fermentation
+    - fermented
     - beverage
     label: amasake food product
     synonyms: []
@@ -13676,7 +13676,7 @@ ingredient:
     anatomy: FOODON:03411322
   FOODON:00001053:
     type:
-    - fermentation
+    - fermented
     - animal
     - dairy
     label: fermented dairy food product
@@ -13684,14 +13684,14 @@ ingredient:
     anatomy: UBERON:0001913
   FOODON:00001054:
     type:
-    - fermentation
+    - fermented
     - animal
     label: fermented fish or seafood food product
     synonyms: []
     anatomy: FOODON:03411222
   FOODON:00001060:
     type:
-    - fermentation
+    - fermented
     - beverage
     label: awamori food product
     synonyms: []
@@ -13699,7 +13699,7 @@ ingredient:
     anatomy: FOODON:03411322
   FOODON:00001062:
     type:
-    - fermentation
+    - fermented
     - beverage
     label: fermented millet food product
     synonyms: []
@@ -13707,7 +13707,7 @@ ingredient:
     anatomy: FOODON:03412505
   FOODON:00001063:
     type:
-    - fermentation
+    - fermented
     - beverage
     label: millet beer food product
     synonyms: []
@@ -13715,19 +13715,19 @@ ingredient:
     anatomy: FOODON:03412505
   FOODON:00001064:
     type:
-    - fermentation
+    - fermented
     - beverage
     label: bottled beer food product
     synonyms: []
     taxonomy: NCBITaxon:33090
   FOODON:00001069:
-    type: fermentation
+    type: fermented
     label: fermented fruit food product
     synonyms: []
   FOODON:00001070:
     type:
     - legume
-    - fermentation
+    - fermented
     - seed
     label: miso food product
     subtype: soy
@@ -13738,12 +13738,12 @@ ingredient:
       miso:
         status: proposed
   FOODON:00001073:
-    type: fermentation
+    type: fermented
     label: vinegar food product
     synonyms: []
   FOODON:00001074:
     type:
-    - fermentation
+    - fermented
     - grain
     label: barley malt vinegar
     synonyms: []
@@ -13751,7 +13751,7 @@ ingredient:
     anatomy: FOODON:03411230
   FOODON:00001076:
     type:
-    - fermentation
+    - fermented
     - beverage
     label: sake food product
     synonyms: []
@@ -13759,7 +13759,7 @@ ingredient:
     anatomy: FOODON:03411322
   FOODON:00001078:
     type:
-    - fermentation
+    - fermented
     - seed
     - legume
     label: fermented soybean food product
@@ -13768,7 +13768,7 @@ ingredient:
     anatomy: FOODON:03411156
   FOODON:00001080:
     type:
-    - fermentation
+    - fermented
     - beverage
     label: tape kefan food product
     synonyms: []
@@ -13776,7 +13776,7 @@ ingredient:
     anatomy: FOODON:03411322
   FOODON:00001086:
     type:
-    - fermentation
+    - fermented
     - animal
     - dairy
     label: kefir food product
@@ -13784,7 +13784,7 @@ ingredient:
     anatomy: UBERON:0001913
   FOODON:00001094:
     type:
-    - fermentation
+    - fermented
     - beverage
     subtype: alcoholic
     label: fermented beverage
@@ -13792,7 +13792,7 @@ ingredient:
     - alcoholic beverage
   FOODON:00001095:
     type:
-    - fermentation
+    - fermented
     - fruit
     - beverage
     label: fermented grape beverage
@@ -13801,21 +13801,21 @@ ingredient:
     anatomy: FOODON:03411579
   FOODON:00001096:
     type:
-    - fermentation
+    - fermented
     - beverage
     label: fermented elaeis palm beverage
     synonyms: []
     taxonomy: NCBITaxon:33090
   FOODON:00001097:
     type:
-    - fermentation
+    - fermented
     - beverage
     label: fermented sugar cane beverage
     synonyms: []
     taxonomy: NCBITaxon:33090
   FOODON:00001098:
     type:
-    - fermentation
+    - fermented
     - fruit
     - beverage
     label: fermented apple beverage
@@ -13825,14 +13825,14 @@ ingredient:
     anatomy: FOODON:03411579
   FOODON:00001102:
     type:
-    - fermentation
+    - fermented
     - beverage
     label: fermented grain beverage
     synonyms: []
     taxonomy: NCBITaxon:33090
   FOODON:00001103:
     type:
-    - fermentation
+    - fermented
     - beverage
     label: fermented agave beverage
     synonyms: []
@@ -13840,21 +13840,21 @@ ingredient:
     anatomy: FOODON:03411535
   FOODON:00001135:
     type:
-    - fermentation
+    - fermented
     - beverage
     label: distilled fermented grain beverage
     synonyms: []
     taxonomy: NCBITaxon:33090
   FOODON:00001136:
     type:
-    - fermentation
+    - fermented
     - beverage
     label: distilled fermented beverage
     synonyms: []
     taxonomy: NCBITaxon:33090
   FOODON:00001159:
     type:
-    - fermentation
+    - fermented
     - fruit
     - beverage
     label: fermented pomaceous fruit beverage
@@ -13864,7 +13864,7 @@ ingredient:
   FOODON:00001235:
     type:
     - legume
-    - fermentation
+    - fermented
     - seed
     label: soy sauce food product
     subtype: soy
@@ -13880,25 +13880,25 @@ ingredient:
         status: proposed
   FOODON:00001254:
     type:
-    - fermentation
+    - fermented
     - beverage
     label: plant derived fermented beverage
     synonyms: []
     taxonomy: NCBITaxon:33090
   FOODON:00001258:
-    type: fermentation
+    type: fermented
     label: food (fermented)
     synonyms: []
   FOODON:00001259:
     type:
-    - fermentation
+    - fermented
     - beverage
     subtype: wine
     label: non-fruit wine food product
     synonyms: []
   FOODON:00001260:
     type:
-    - fermentation
+    - fermented
     - beverage
     subtype: beer
     label: beer beverage
@@ -13913,14 +13913,14 @@ ingredient:
         status: proposed
   FOODON:00001263:
     type:
-    - fermentation
+    - fermented
     - animal
     label: bu-du
     synonyms: []
     anatomy: FOODON:03411222
   FOODON:00001276:
     type:
-    - fermentation
+    - fermented
     - fruit
     - beverage
     label: apple cider (alcoholic)
@@ -13930,151 +13930,151 @@ ingredient:
     anatomy: FOODON:03411579
   FOODON:00001305:
     type:
-    - fermentation
+    - fermented
     - animal
     label: hoi-dong
     synonyms: []
     taxonomy: FOODON:03411223
     anatomy: FOODON:03411223
   FOODON:00001306:
-    type: fermentation
+    type: fermented
     label: Hom dong
     synonyms: []
   FOODON:00001307:
-    type: fermentation
+    type: fermented
     label: ma kham dong
     synonyms: []
   FOODON:00001308:
-    type: fermentation
+    type: fermented
     label: ma yom dong
     synonyms: []
   FOODON:00001310:
-    type: fermentation
+    type: fermented
     label: mum
     synonyms: []
   FOODON:00001311:
     type:
-    - fermentation
+    - fermented
     - animal
     label: mum-khai-pla
     synonyms: []
     anatomy: FOODON:03411222
   FOODON:00001312:
     type:
-    - fermentation
+    - fermented
     - animal
     label: mum-sai-pla
     synonyms: []
     anatomy: FOODON:03411222
   FOODON:00001313:
     type:
-    - fermentation
+    - fermented
     - animal
     label: nam-budu
     synonyms: []
     anatomy: FOODON:03411222
   FOODON:00001314:
-    type: fermentation
+    type: fermented
     label: fermented meat product
     synonyms: []
   FOODON:00001315:
-    type: fermentation
+    type: fermented
     label: nham
     synonyms: []
   FOODON:00001316:
     type:
-    - fermentation
+    - fermented
     - animal
     label: nham-pla
     synonyms: []
     anatomy: FOODON:03411222
   FOODON:00001317:
-    type: fermentation
+    type: fermented
     label: noa mai
     synonyms: []
     taxonomy: NCBITaxon:33090
     anatomy: PO:0025034
   FOODON:00001318:
-    type: fermentation
+    type: fermented
     label: noa mai dong
     synonyms: []
     taxonomy: NCBITaxon:33090
     anatomy: PO:0025034
   FOODON:00001319:
-    type: fermentation
+    type: fermented
     label: pak kard dong
     synonyms: []
     taxonomy: NCBITaxon:33090
     anatomy: PO:0025034
   FOODON:00001320:
-    type: fermentation
+    type: fermented
     label: pak kum dong
     synonyms: []
     taxonomy: NCBITaxon:33090
     anatomy: PO:0025034
   FOODON:00001321:
-    type: fermentation
+    type: fermented
     label: pak sean dong
     synonyms: []
     taxonomy: NCBITaxon:33090
     anatomy: PO:0025034
   FOODON:00001322:
-    type: fermentation
+    type: fermented
     label: pak sean and hua plee dong
     synonyms: []
     taxonomy: NCBITaxon:33090
     anatomy: PO:0025034
   FOODON:00001323:
-    type: fermentation
+    type: fermented
     label: pak sean and makhua dong
     synonyms: []
     taxonomy: NCBITaxon:33090
     anatomy: PO:0025034
   FOODON:00001324:
     type:
-    - fermentation
+    - fermented
     - animal
     label: pla-chom
     synonyms: []
     anatomy: FOODON:03411222
   FOODON:00001325:
     type:
-    - fermentation
+    - fermented
     - animal
     label: pla-jaw
     synonyms: []
     anatomy: FOODON:03411222
   FOODON:00001326:
     type:
-    - fermentation
+    - fermented
     - animal
     label: pla-som
     synonyms: []
     anatomy: FOODON:03411222
   FOODON:00001327:
     type:
-    - fermentation
+    - fermented
     - animal
     label: pu dong
     synonyms: []
     anatomy: FOODON:02021446
   FOODON:00001328:
     type:
-    - fermentation
+    - fermented
     - animal
     label: som-khai-pla
     synonyms: []
     anatomy: FOODON:03411222
   FOODON:00001329:
     type:
-    - fermentation
+    - fermented
     - animal
     label: tai-pla
     synonyms: []
     anatomy: FOODON:03411222
   FOODON:00001330:
     type:
-    - fermentation
+    - fermented
     - seed
     - legume
     label: tuaw jaew
@@ -14082,25 +14082,25 @@ ingredient:
     taxonomy: NCBITaxon:33090
     anatomy: FOODON:03411156
   FOODON:00001331:
-    type: fermentation
+    type: fermented
     label: pla-ra
     synonyms: []
   FOODON:00001579:
     type:
-    - fermentation
+    - fermented
     - beverage
     subtype: alcoholic
     label: alcoholic beverage
     synonyms: []
   FOODON:00001609:
     type:
-    - fermentation
+    - fermented
     - beverage
     label: apple based alcoholic beverage
     synonyms: []
   FOODON:00001613:
     type:
-    - fermentation
+    - fermented
     - fruit
     label: apple vinegar food product
     synonyms: []
@@ -14108,7 +14108,7 @@ ingredient:
     anatomy: FOODON:00002473
   FOODON:00001614:
     type:
-    - fermentation
+    - fermented
     - fruit
     - beverage
     label: apple wine food product
@@ -14117,7 +14117,7 @@ ingredient:
     anatomy: FOODON:03411579
   FOODON:00001817:
     type:
-    - fermentation
+    - fermented
     - beverage
     label: alcoholic beverage (distilled)
     synonyms:
@@ -14129,7 +14129,7 @@ ingredient:
     - spirit
   FOODON:00001838:
     type:
-    - fermentation
+    - fermented
     - beverage
     label: fermented cereal beverage
     synonyms: []
@@ -14137,69 +14137,69 @@ ingredient:
     anatomy: FOODON:03411324
   FOODON:00001844:
     type:
-    - fermentation
+    - fermented
     - beverage
     label: field corn distinctive distilled spirit
     synonyms: []
     anatomy: FOODON:03411379
   FOODON:00001882:
     type:
-    - fermentation
+    - fermented
     - beverage
     label: fruit based alcoholic beverage
     synonyms: []
   FOODON:00001883:
     type:
-    - fermentation
+    - fermented
     - beverage
     label: fruit based distilled spirit
     synonyms: []
   FOODON:00001916:
     type:
-    - fermentation
+    - fermented
     - beverage
     label: grain based alcoholic beverage
     synonyms: []
     anatomy: FOODON:03411324
   FOODON:00001918:
     type:
-    - fermentation
+    - fermented
     - beverage
     label: grain based distilled spirit
     synonyms: []
     anatomy: FOODON:03411324
   FOODON:00001919:
-    type: fermentation
+    type: fermented
     label: grain based vinegar food product
     synonyms: []
     anatomy: FOODON:03411324
   FOODON:00001922:
     type:
-    - fermentation
+    - fermented
     - beverage
     label: grape based alcoholic beverage
     synonyms: []
   FOODON:00001923:
     type:
-    - fermentation
+    - fermented
     - beverage
     label: grape based distilled spirit
     synonyms: []
   FOODON:00001924:
     type:
-    - fermentation
+    - fermented
     - beverage
     label: grape based low-alcohol wine food product
     synonyms: []
   FOODON:00001925:
     type:
-    - fermentation
+    - fermented
     - beverage
     label: grape based wine or wine-like food product
     synonyms: []
   FOODON:00001928:
     type:
-    - fermentation
+    - fermented
     - fruit
     label: grape vinegar food product
     synonyms: []
@@ -14207,62 +14207,62 @@ ingredient:
     anatomy: FOODON:03411329
   FOODON:00001948:
     type:
-    - fermentation
+    - fermented
     - beverage
     label: heavy wine, 14-24% alcohol, food product
     synonyms: []
   FOODON:00001999:
     type:
-    - fermentation
+    - fermented
     - beverage
     label: light wine
     synonyms: []
   FOODON:00002005:
     type:
-    - fermentation
+    - fermented
     - beverage
     label: liqueur food product
     synonyms: []
   FOODON:00002010:
     type:
-    - fermentation
+    - fermented
     - beverage
     label: low-alcohol wine food product
     synonyms: []
   FOODON:00002017:
     type:
-    - fermentation
+    - fermented
     - beverage
     label: barley malt beverage
     synonyms: []
     anatomy: FOODON:03411324
   FOODON:00002203:
     type:
-    - fermentation
+    - fermented
     - beverage
     label: rice based alcoholic beverage
     synonyms: []
     anatomy: FOODON:03411322
   FOODON:00002287:
-    type: fermentation
+    type: fermented
     label: sugar based vinegar food product
     synonyms: []
     anatomy: FOODON:03411012
   FOODON:00002364:
     type:
-    - fermentation
+    - fermented
     - beverage
     label: wine or wine-like food product
     synonyms: []
   FOODON:00002365:
     type:
-    - fermentation
+    - fermented
     - beverage
     label: wine, 7-24% alcohol, food product
     synonyms: []
   FOODON:00002392:
     type:
-    - fermentation
+    - fermented
     - beverage
     label: Huangjiu
     synonyms:
@@ -14270,29 +14270,29 @@ ingredient:
     - yellow wine
   FOODON:00002393:
     type:
-    - fermentation
+    - fermented
     - beverage
     label: unrefined chinese wine
     synonyms: []
   FOODON:00002394:
-    type: fermentation
+    type: fermented
     label: moromi of sake
     synonyms:
     - sake mash
     - sake moromi
   FOODON:00002395:
-    type: fermentation
+    type: fermented
     label: moromi
     synonyms: []
   FOODON:00002551:
     type:
-    - fermentation
+    - fermented
     - beverage
     label: triple sec
     synonyms: []
   FOODON:00002577:
     type:
-    - fermentation
+    - fermented
     - fruit
     - beverage
     label: wine by region
@@ -14301,7 +14301,7 @@ ingredient:
     anatomy: FOODON:00003417
   FOODON:00002584:
     type:
-    - fermentation
+    - fermented
     - fruit
     - beverage
     label: Chardonnay wine
@@ -14310,7 +14310,7 @@ ingredient:
     anatomy: FOODON:00003777
   FOODON:00002585:
     type:
-    - fermentation
+    - fermented
     - fruit
     - beverage
     label: Cabernet Sauvignon wine
@@ -14319,7 +14319,7 @@ ingredient:
     anatomy: FOODON:00003778
   FOODON:00002586:
     type:
-    - fermentation
+    - fermented
     - fruit
     - beverage
     label: Chenin blanc wine
@@ -14328,7 +14328,7 @@ ingredient:
     anatomy: FOODON:00003777
   FOODON:00002588:
     type:
-    - fermentation
+    - fermented
     - fruit
     - beverage
     label: Malbec wine
@@ -14337,7 +14337,7 @@ ingredient:
     anatomy: FOODON:00003778
   FOODON:00002590:
     type:
-    - fermentation
+    - fermented
     - fruit
     - beverage
     label: Merlot wine
@@ -14346,7 +14346,7 @@ ingredient:
     anatomy: FOODON:00003778
   FOODON:00002592:
     type:
-    - fermentation
+    - fermented
     - fruit
     - beverage
     label: Pinot blanc wine
@@ -14355,7 +14355,7 @@ ingredient:
     anatomy: FOODON:00003777
   FOODON:00002594:
     type:
-    - fermentation
+    - fermented
     - fruit
     - beverage
     label: Pinot gris wine
@@ -14366,7 +14366,7 @@ ingredient:
     anatomy: FOODON:00003777
   FOODON:00002596:
     type:
-    - fermentation
+    - fermented
     - fruit
     - beverage
     label: Pinot noir wine
@@ -14379,7 +14379,7 @@ ingredient:
     anatomy: FOODON:00003778
   FOODON:00002598:
     type:
-    - fermentation
+    - fermented
     - fruit
     - beverage
     label: Pinotage wine
@@ -14388,7 +14388,7 @@ ingredient:
     anatomy: FOODON:00003778
   FOODON:00002600:
     type:
-    - fermentation
+    - fermented
     - fruit
     - beverage
     label: Reserve wine
@@ -14397,7 +14397,7 @@ ingredient:
     anatomy: FOODON:00003417
   FOODON:00002601:
     type:
-    - fermentation
+    - fermented
     - fruit
     - beverage
     label: Riesling wine
@@ -14406,7 +14406,7 @@ ingredient:
     anatomy: FOODON:00003777
   FOODON:00002603:
     type:
-    - fermentation
+    - fermented
     - fruit
     - beverage
     label: Sangiovese wine
@@ -14415,7 +14415,7 @@ ingredient:
     anatomy: FOODON:00003778
   FOODON:00002605:
     type:
-    - fermentation
+    - fermented
     - fruit
     - beverage
     label: Sauvignon blanc wine
@@ -14428,7 +14428,7 @@ ingredient:
     anatomy: FOODON:00003777
   FOODON:00002607:
     type:
-    - fermentation
+    - fermented
     - fruit
     - beverage
     label: Semillon wine
@@ -14438,7 +14438,7 @@ ingredient:
     anatomy: FOODON:00003777
   FOODON:00002609:
     type:
-    - fermentation
+    - fermented
     - fruit
     - beverage
     label: Glera wine
@@ -14448,7 +14448,7 @@ ingredient:
     anatomy: FOODON:00003777
   FOODON:00002611:
     type:
-    - fermentation
+    - fermented
     - fruit
     - beverage
     label: Prosecco wine
@@ -14460,7 +14460,7 @@ ingredient:
     anatomy: FOODON:00003777
   FOODON:00002612:
     type:
-    - fermentation
+    - fermented
     - fruit
     - beverage
     label: Syrah wine
@@ -14469,7 +14469,7 @@ ingredient:
     anatomy: FOODON:00003778
   FOODON:00002614:
     type:
-    - fermentation
+    - fermented
     - fruit
     - beverage
     label: Tempranillo wine
@@ -14478,7 +14478,7 @@ ingredient:
     anatomy: FOODON:00003778
   FOODON:00002617:
     type:
-    - fermentation
+    - fermented
     - fruit
     - beverage
     label: Zinfandel wine
@@ -14487,7 +14487,7 @@ ingredient:
     anatomy: FOODON:00003778
   FOODON:00002619:
     type:
-    - fermentation
+    - fermented
     - fruit
     - beverage
     label: Frappato wine
@@ -14503,7 +14503,7 @@ ingredient:
     anatomy: FOODON:00003778
   FOODON:00002621:
     type:
-    - fermentation
+    - fermented
     - fruit
     - beverage
     label: Gamay noir wine
@@ -14512,7 +14512,7 @@ ingredient:
     anatomy: FOODON:00003778
   FOODON:00002623:
     type:
-    - fermentation
+    - fermented
     - fruit
     - beverage
     label: Gewürztraminer wine
@@ -14521,7 +14521,7 @@ ingredient:
     anatomy: FOODON:00003777
   FOODON:00002625:
     type:
-    - fermentation
+    - fermented
     - fruit
     - beverage
     label: Carignane wine
@@ -14530,7 +14530,7 @@ ingredient:
     anatomy: FOODON:00003778
   FOODON:00002627:
     type:
-    - fermentation
+    - fermented
     - fruit
     - beverage
     label: Grenache wine
@@ -14539,7 +14539,7 @@ ingredient:
     anatomy: FOODON:00003778
   FOODON:00002629:
     type:
-    - fermentation
+    - fermented
     - fruit
     - beverage
     label: Barbera wine
@@ -14548,7 +14548,7 @@ ingredient:
     anatomy: FOODON:00003778
   FOODON:00002639:
     type:
-    - fermentation
+    - fermented
     - fruit
     - beverage
     label: Zakynthos wine
@@ -14558,7 +14558,7 @@ ingredient:
     anatomy: FOODON:00003417
   FOODON:00002641:
     type:
-    - fermentation
+    - fermented
     - fruit
     - beverage
     label: Bordeaux wine
@@ -14568,7 +14568,7 @@ ingredient:
     anatomy: FOODON:00003417
   FOODON:00002864:
     type:
-    - fermentation
+    - fermented
     - fruit
     - beverage
     label: Blaufränkisch wine
@@ -14577,7 +14577,7 @@ ingredient:
     anatomy: FOODON:00003778
   FOODON:00002869:
     type:
-    - fermentation
+    - fermented
     - fruit
     - beverage
     label: Mourvèdre wine
@@ -14587,7 +14587,7 @@ ingredient:
   FOODON:00002870:
     type:
     - legume
-    - fermentation
+    - fermented
     - seed
     label: nattō
     subtype: soy
@@ -14597,7 +14597,7 @@ ingredient:
     taxonomy: NCBITaxon:33090
     anatomy: FOODON:03411156
   FOODON:00002946:
-    type: fermentation
+    type: fermented
     label: kimchi
     synonyms:
     - kimchee
@@ -14605,7 +14605,7 @@ ingredient:
     anatomy: PO:0025034
   FOODON:00003208:
     type:
-    - fermentation
+    - fermented
     - seed
     - legume
     label: miso
@@ -14614,32 +14614,32 @@ ingredient:
     anatomy: FOODON:03411156
   FOODON:00003229:
     type:
-    - fermentation
+    - fermented
     - beverage
     label: absinthe
     synonyms: []
   FOODON:00003256:
     type:
-    - fermentation
+    - fermented
     - beverage
     label: pale ale
     synonyms: []
     taxonomy: NCBITaxon:33090
   FOODON:00003257:
     type:
-    - fermentation
+    - fermented
     - beverage
     label: india pale ale
     synonyms:
     - IPA
     taxonomy: NCBITaxon:33090
   FOODON:00003380:
-    type: fermentation
+    type: fermented
     label: food (fermented from innoculant)
     synonyms: []
   FOODON:00004047:
     type:
-    - fermentation
+    - fermented
     - fruit
     - beverage
     label: sweet wine
@@ -14648,7 +14648,7 @@ ingredient:
     anatomy: FOODON:00003417
   FOODON:00004048:
     type:
-    - fermentation
+    - fermented
     - fruit
     - beverage
     label: table wine (US)
@@ -14656,14 +14656,14 @@ ingredient:
     taxonomy: NCBITaxon:33090
     anatomy: FOODON:00003417
   FOODON:00004110:
-    type: fermentation
+    type: fermented
     label: pikliz
     synonyms: []
     taxonomy: NCBITaxon:33090
     anatomy: PO:0025034
   FOODON:00005370:
     type:
-    - fermentation
+    - fermented
     - fruit
     - beverage
     label: Muscat wine
@@ -14672,7 +14672,7 @@ ingredient:
     anatomy: FOODON:00003778
   FOODON:00005371:
     type:
-    - fermentation
+    - fermented
     - fruit
     - beverage
     label: red Burgundy wine
@@ -14681,7 +14681,7 @@ ingredient:
     anatomy: FOODON:00003778
   FOODON:00005372:
     type:
-    - fermentation
+    - fermented
     - fruit
     - beverage
     label: Muller Thurgau
@@ -14690,7 +14690,7 @@ ingredient:
     anatomy: FOODON:00003777
   FOODON:00005373:
     type:
-    - fermentation
+    - fermented
     - fruit
     - beverage
     label: Petite Sirah wine
@@ -14699,7 +14699,7 @@ ingredient:
     anatomy: FOODON:00003777
   FOODON:00005374:
     type:
-    - fermentation
+    - fermented
     - fruit
     - beverage
     label: Cabernet Franc wine
@@ -14708,7 +14708,7 @@ ingredient:
     anatomy: FOODON:00003778
   FOODON:00005375:
     type:
-    - fermentation
+    - fermented
     - fruit
     - beverage
     label: late harvest wine
@@ -14716,12 +14716,12 @@ ingredient:
     taxonomy: NCBITaxon:33090
     anatomy: FOODON:00003417
   FOODON:00005503:
-    type: fermentation
+    type: fermented
     label: balsamic vinegar
     synonyms: []
   FOODON:03301008:
     type:
-    - fermentation
+    - fermented
     - beverage
     label: liqueur
     synonyms:
@@ -14730,7 +14730,7 @@ ingredient:
     type:
     - fruit
     - beverage
-    - fermentation
+    - fermented
     subtype: wine
     label: grape wine
     synonyms: []
@@ -14741,14 +14741,14 @@ ingredient:
         status: proposed
   FOODON:03301017:
     type:
-    - fermentation
+    - fermented
     - beverage
     label: malt beverage (alcoholic)
     synonyms: []
     anatomy: FOODON:03411324
   FOODON:03301115:
     type:
-    - fermentation
+    - fermented
     - seed
     - legume
     label: soy sauce (proteolytic fermentation)
@@ -14757,7 +14757,7 @@ ingredient:
     anatomy: FOODON:03411156
   FOODON:03301134:
     type:
-    - fermentation
+    - fermented
     - fruit
     - beverage
     label: apple wine
@@ -14765,32 +14765,32 @@ ingredient:
     taxonomy: NCBITaxon:33090
     anatomy: FOODON:03411579
   FOODON:03301228:
-    type: fermentation
+    type: fermented
     label: wine vinegar
     synonyms: []
   FOODON:03301229:
-    type: fermentation
+    type: fermented
     label: malt vinegar
     synonyms: []
     anatomy: FOODON:03411230
   FOODON:03301230:
-    type: fermentation
+    type: fermented
     label: sugar vinegar
     synonyms: []
     anatomy: FOODON:03411012
   FOODON:03301231:
-    type: fermentation
+    type: fermented
     label: glucose vinegar
     synonyms: []
     anatomy: FOODON:03411012
   FOODON:03301233:
-    type: fermentation
+    type: fermented
     label: spirit vinegar and cider mixture
     synonyms: []
     anatomy: FOODON:03411012
   FOODON:03301234:
     type:
-    - fermentation
+    - fermented
     - fruit
     label: vinegar made from dried apple cores and skins
     synonyms: []
@@ -14798,19 +14798,19 @@ ingredient:
     anatomy: FOODON:00002473
   FOODON:03301338:
     type:
-    - fermentation
+    - fermented
     - beverage
     label: wine beverage (less than 7% alcohol)
     synonyms: []
   FOODON:03301344:
     type:
-    - fermentation
+    - fermented
     - beverage
     label: arak
     synonyms: []
   FOODON:03301502:
     type:
-    - fermentation
+    - fermented
     - animal
     - dairy
     label: yogurt (plain)
@@ -14818,39 +14818,39 @@ ingredient:
     anatomy: UBERON:0001913
   FOODON:03301564:
     type:
-    - fermentation
+    - fermented
     - beverage
     label: champagne
     synonyms: []
   FOODON:03301567:
     type:
-    - fermentation
+    - fermented
     - beverage
     label: wine cooler
     synonyms: []
   FOODON:03301600:
     type:
-    - fermentation
+    - fermented
     - beverage
     label: pear brandy
     synonyms: []
     anatomy: FOODON:03411344
   FOODON:03301606:
     type:
-    - fermentation
+    - fermented
     - beverage
     label: creme de menthe liqueur
     synonyms: []
   FOODON:03301614:
     type:
-    - fermentation
+    - fermented
     - beverage
     label: rum
     synonyms: []
     anatomy: FOODON:03411378
   FOODON:03301619:
     type:
-    - fermentation
+    - fermented
     - beverage
     label: barley malt beer beverage
     synonyms: []
@@ -14858,14 +14858,14 @@ ingredient:
     anatomy: FOODON:03411324
   FOODON:03301632:
     type:
-    - fermentation
+    - fermented
     - beverage
     label: brandy
     synonyms: []
     anatomy: FOODON:03411140
   FOODON:03301633:
     type:
-    - fermentation
+    - fermented
     - beverage
     label: mescal
     synonyms: []
@@ -14873,59 +14873,59 @@ ingredient:
     anatomy: FOODON:03411535
   FOODON:03301637:
     type:
-    - fermentation
+    - fermented
     - beverage
     label: alcoholic beverage (powdered)
     synonyms: []
   FOODON:03301638:
     type:
-    - fermentation
+    - fermented
     - beverage
     label: cream liqueur
     synonyms: []
   FOODON:03301639:
     type:
-    - fermentation
+    - fermented
     - beverage
     label: low alcoholic beverage (3-5% alcohol)
     synonyms: []
   FOODON:03301640:
     type:
-    - fermentation
+    - fermented
     - beverage
     label: whiskey sour cocktail (sweetened with saccharin)
     synonyms: []
     anatomy: FOODON:03411324
   FOODON:03301670:
     type:
-    - fermentation
+    - fermented
     - beverage
     label: sake
     synonyms: []
     anatomy: FOODON:03411322
   FOODON:03301705:
-    type: fermentation
+    type: fermented
     label: vinegar
     synonyms: []
   FOODON:03301755:
-    type: fermentation
+    type: fermented
     label: distilled vinegar (apple cider-flavored)
     synonyms: []
     anatomy: FOODON:03411324
   FOODON:03301854:
-    type: fermentation
+    type: fermented
     label: distilled vinegar
     synonyms: []
     anatomy: FOODON:03411324
   FOODON:03301905:
     type:
-    - fermentation
+    - fermented
     - beverage
     label: grape beverage (sparkling, less than 3% alcohol)
     synonyms: []
   FOODON:03301972:
     type:
-    - fermentation
+    - fermented
     - seed
     - legume
     label: barley miso
@@ -14934,7 +14934,7 @@ ingredient:
     anatomy: FOODON:03411156
   FOODON:03301973:
     type:
-    - fermentation
+    - fermented
     - seed
     - legume
     label: brown rice miso
@@ -14943,35 +14943,35 @@ ingredient:
     anatomy: FOODON:03411156
   FOODON:03302106:
     type:
-    - fermentation
+    - fermented
     - beverage
     label: beer (draft)
     synonyms: []
     taxonomy: NCBITaxon:33090
   FOODON:03302108:
     type:
-    - fermentation
+    - fermented
     - beverage
     label: beer (freeze-concentrated)
     synonyms: []
     taxonomy: NCBITaxon:33090
   FOODON:03302109:
     type:
-    - fermentation
+    - fermented
     - beverage
     label: beer (concentrated)
     synonyms: []
     taxonomy: NCBITaxon:33090
   FOODON:03302110:
     type:
-    - fermentation
+    - fermented
     - beverage
     label: beer (made from concentrate)
     synonyms: []
     taxonomy: NCBITaxon:33090
   FOODON:03302111:
     type:
-    - fermentation
+    - fermented
     - beverage
     subtype: beer
     label: ale
@@ -14979,54 +14979,54 @@ ingredient:
     taxonomy: NCBITaxon:33090
   FOODON:03302113:
     type:
-    - fermentation
+    - fermented
     - beverage
     label: beer (light)
     synonyms: []
     taxonomy: NCBITaxon:33090
   FOODON:03302122:
     type:
-    - fermentation
+    - fermented
     - beverage
     label: holly berry brandy
     synonyms: []
   FOODON:03302408:
     type:
-    - fermentation
+    - fermented
     - beverage
     label: malt carbonated beverage (vitamin-fortified)
     synonyms: []
     anatomy: FOODON:03411230
   FOODON:03302416:
     type:
-    - fermentation
+    - fermented
     - beverage
     label: strawberry wine
     synonyms: []
     anatomy: FOODON:03411140
   FOODON:03302668:
     type:
-    - fermentation
+    - fermented
     - beverage
     label: wine (canned)
     synonyms: []
   FOODON:03302749:
     type:
-    - fermentation
+    - fermented
     - beverage
     label: hard cider (artificially carbonated)
     synonyms: []
     anatomy: FOODON:03411245
   FOODON:03302775:
     type:
-    - fermentation
+    - fermented
     - beverage
     label: whiskey
     synonyms: []
     anatomy: FOODON:03411324
   FOODON:03303060:
     type:
-    - fermentation
+    - fermented
     - fruit
     - beverage
     label: cider (sparkling)
@@ -15035,7 +15035,7 @@ ingredient:
     anatomy: FOODON:03411579
   FOODON:03303062:
     type:
-    - fermentation
+    - fermented
     - fruit
     - beverage
     label: apple cider (fermented)
@@ -15044,65 +15044,65 @@ ingredient:
     anatomy: FOODON:03411579
   FOODON:03303067:
     type:
-    - fermentation
+    - fermented
     - beverage
     label: hard cider (sugar added)
     synonyms: []
     anatomy: FOODON:03411245
   FOODON:03303123:
     type:
-    - fermentation
+    - fermented
     - beverage
     label: grape marc
     synonyms: []
   FOODON:03303206:
     type:
-    - fermentation
+    - fermented
     - beverage
     label: may wine
     synonyms: []
   FOODON:03303222:
     type:
-    - fermentation
+    - fermented
     - beverage
     label: wine product category
     synonyms: []
   FOODON:03303430:
     type:
-    - fermentation
+    - fermented
     - beverage
     label: cooking brandy
     synonyms: []
     anatomy: FOODON:03411140
   FOODON:03303623:
     type:
-    - fermentation
+    - fermented
     - beverage
     label: whiskey sour
     synonyms: []
     anatomy: FOODON:03411324
   FOODON:03303624:
     type:
-    - fermentation
+    - fermented
     - beverage
     label: tom collins
     synonyms: []
     anatomy: FOODON:03411324
   FOODON:03303626:
     type:
-    - fermentation
+    - fermented
     - beverage
     label: manhatten cocktail mix (nutritively and nonnutritively sweetened)
     synonyms: []
   FOODON:03303646:
     type:
-    - fermentation
+    - fermented
     - beverage
     label: aperitif beverage
     synonyms: []
   FOODON:03303846:
     type:
-    - fermentation
+    - fermented
     - animal
     - dairy
     label: milk beverage (fermented)
@@ -15110,7 +15110,7 @@ ingredient:
     anatomy: UBERON:0001913
   FOODON:03303909:
     type:
-    - fermentation
+    - fermented
     - animal
     - dairy
     label: cultured dairy product
@@ -15118,14 +15118,14 @@ ingredient:
     anatomy: UBERON:0001913
   FOODON:03304034:
     type:
-    - fermentation
+    - fermented
     - beverage
     label: bloody mary mix
     synonyms: []
     anatomy: FOODON:03411276
   FOODON:03304270:
     type:
-    - fermentation
+    - fermented
     - fruit
     - beverage
     label: apple wine (sparkling)
@@ -15134,7 +15134,7 @@ ingredient:
     anatomy: FOODON:03411579
   FOODON:03304564:
     type:
-    - fermentation
+    - fermented
     - fruit
     - beverage
     label: Burgundy wine
@@ -15143,7 +15143,7 @@ ingredient:
     anatomy: FOODON:00003417
   FOODON:03304697:
     type:
-    - fermentation
+    - fermented
     - animal
     - dairy
     label: kefir (fruit)
@@ -15151,7 +15151,7 @@ ingredient:
     anatomy: UBERON:0001913
   FOODON:03304701:
     type:
-    - fermentation
+    - fermented
     - animal
     - dairy
     label: kefir (lowfat)
@@ -15159,7 +15159,7 @@ ingredient:
     anatomy: UBERON:0001913
   FOODON:03304703:
     type:
-    - fermentation
+    - fermented
     - animal
     - dairy
     label: milk (precultured)
@@ -15167,7 +15167,7 @@ ingredient:
     anatomy: UBERON:0001913
   FOODON:03304704:
     type:
-    - fermentation
+    - fermented
     - beverage
     label: tequila
     synonyms: []
@@ -15176,7 +15176,7 @@ ingredient:
   FOODON:03304999:
     type:
     - legume
-    - fermentation
+    - fermented
     - seed
     label: tempeh
     subtype: soy
@@ -15186,19 +15186,19 @@ ingredient:
     taxonomy: NCBITaxon:33090
     anatomy: FOODON:03411156
   FOODON:03305033:
-    type: fermentation
+    type: fermented
     label: marjoram-flavored vinegar
     synonyms: []
   FOODON:03305050:
     type:
-    - fermentation
+    - fermented
     - beverage
     label: whiskey (blended)
     synonyms: []
     anatomy: FOODON:03411324
   FOODON:03305085:
     type:
-    - fermentation
+    - fermented
     - animal
     - dairy
     label: yogurt (nonfat)
@@ -15206,79 +15206,79 @@ ingredient:
     anatomy: UBERON:0001913
   FOODON:03305159:
     type:
-    - fermentation
+    - fermented
     - beverage
     label: margarita mix
     synonyms: []
   FOODON:03305195:
     type:
-    - fermentation
+    - fermented
     - beverage
     label: ginseng brandy
     synonyms: []
     anatomy: FOODON:03411140
   FOODON:03305330:
     type:
-    - fermentation
+    - fermented
     - beverage
     label: cognac
     synonyms: []
   FOODON:03305467:
     type:
-    - fermentation
+    - fermented
     - beverage
     label: grape beverage (fermented)
     synonyms: []
   FOODON:03305518:
     type:
-    - fermentation
+    - fermented
     - beverage
     label: vodka
     synonyms: []
     anatomy: FOODON:03411016
   FOODON:03305541:
-    type: fermentation
+    type: fermented
     label: vinegar (flavored with herbs)
     synonyms: []
   FOODON:03305542:
-    type: fermentation
+    type: fermented
     label: vinegar (flavored with spices)
     synonyms: []
   FOODON:03305555:
     type:
-    - fermentation
+    - fermented
     - beverage
     label: herbal wine
     synonyms: []
   FOODON:03305605:
     type:
-    - fermentation
+    - fermented
     - beverage
     label: herbal alcoholic beverage
     synonyms: []
     anatomy: FOODON:03411179
   FOODON:03305860:
     type:
-    - fermentation
+    - fermented
     - beverage
     label: cherry liqueur
     synonyms: []
   FOODON:03306131:
     type:
-    - fermentation
+    - fermented
     - beverage
     label: berry cocktail drink
     synonyms: []
     anatomy: FOODON:03411231
   FOODON:03306233:
     type:
-    - fermentation
+    - fermented
     - beverage
     label: mint julep
     synonyms: []
   FOODON:03306652:
     type:
-    - fermentation
+    - fermented
     - fruit
     - beverage
     label: pear juice (fermented)
@@ -15287,7 +15287,7 @@ ingredient:
     anatomy: FOODON:00003041
   FOODON:03307183:
     type:
-    - fermentation
+    - fermented
     - fruit
     label: honey and apple cider vinegar mixture
     synonyms: []
@@ -15295,14 +15295,14 @@ ingredient:
     anatomy: FOODON:00002473
   FOODON:03307196:
     type:
-    - fermentation
+    - fermented
     - beverage
     label: gin and tonic cocktail
     synonyms: []
     anatomy: FOODON:03411324
   FOODON:03307232:
     type:
-    - fermentation
+    - fermented
     - beverage
     label: scotch whiskey
     synonyms:
@@ -15311,19 +15311,19 @@ ingredient:
     anatomy: FOODON:03411230
   FOODON:03307285:
     type:
-    - fermentation
+    - fermented
     - beverage
     label: wine (artificially sweetened)
     synonyms: []
   FOODON:03307295:
     type:
-    - fermentation
+    - fermented
     - beverage
     label: cooking sherry
     synonyms: []
   FOODON:03307296:
     type:
-    - fermentation
+    - fermented
     - fruit
     - beverage
     label: fortified wine
@@ -15332,13 +15332,13 @@ ingredient:
     anatomy: FOODON:00003417
   FOODON:03307299:
     type:
-    - fermentation
+    - fermented
     - beverage
     label: cooking wine
     synonyms: []
   FOODON:03307303:
     type:
-    - fermentation
+    - fermented
     - spice
     - beverage
     label: ginger wine
@@ -15347,13 +15347,13 @@ ingredient:
     anatomy: FOODON:03309840
   FOODON:03307304:
     type:
-    - fermentation
+    - fermented
     - beverage
     label: wine (homemade)
     synonyms: []
   FOODON:03307306:
     type:
-    - fermentation
+    - fermented
     - animal
     - sweetener
     - beverage
@@ -15363,54 +15363,54 @@ ingredient:
     anatomy: FOODON:03411220
   FOODON:03307310:
     type:
-    - fermentation
+    - fermented
     - beverage
     label: wine cooler (margarita-flavored)
     synonyms: []
   FOODON:03307312:
     type:
-    - fermentation
+    - fermented
     - beverage
     label: rice wine
     synonyms: []
     anatomy: FOODON:03411322
   FOODON:03307365:
     type:
-    - fermentation
+    - fermented
     - fruit
     label: grape vinegar
     synonyms: []
     taxonomy: NCBITaxon:33090
     anatomy: FOODON:03411329
   FOODON:03307366:
-    type: fermentation
+    type: fermented
     label: grain vinegar
     synonyms: []
     anatomy: FOODON:03411324
   FOODON:03307370:
-    type: fermentation
+    type: fermented
     label: rice wine vinegar
     synonyms: []
   FOODON:03307372:
     type:
-    - fermentation
+    - fermented
     - fruit
     label: grape wine vinegar
     synonyms: []
     taxonomy: NCBITaxon:33090
     anatomy: FOODON:03411329
   FOODON:03307373:
-    type: fermentation
+    type: fermented
     label: vinegar (powdered)
     synonyms: []
   FOODON:03307375:
-    type: fermentation
+    type: fermented
     label: distilled vinegar (apple-flavored)
     synonyms: []
     anatomy: FOODON:03411324
   FOODON:03307441:
     type:
-    - fermentation
+    - fermented
     - animal
     - dairy
     label: strawberry yogurt
@@ -15418,7 +15418,7 @@ ingredient:
     anatomy: UBERON:0001913
   FOODON:03307442:
     type:
-    - fermentation
+    - fermented
     - animal
     - dairy
     label: yogurt (artificially flavored)
@@ -15426,7 +15426,7 @@ ingredient:
     anatomy: UBERON:0001913
   FOODON:03307443:
     type:
-    - fermentation
+    - fermented
     - animal
     - dairy
     label: yogurt with fruit
@@ -15434,7 +15434,7 @@ ingredient:
     anatomy: UBERON:0001913
   FOODON:03307444:
     type:
-    - fermentation
+    - fermented
     - animal
     - dairy
     label: yogurt (lowfat)
@@ -15442,14 +15442,14 @@ ingredient:
     anatomy: UBERON:0001913
   FOODON:03307501:
     type:
-    - fermentation
+    - fermented
     - beverage
     label: vodka liqueur
     synonyms: []
     anatomy: FOODON:03411016
   FOODON:03307802:
     type:
-    - fermentation
+    - fermented
     - seed
     - legume
     label: tempeh (dehydrated)
@@ -15458,13 +15458,13 @@ ingredient:
     anatomy: FOODON:03411156
   FOODON:03307808:
     type:
-    - fermentation
+    - fermented
     - beverage
     label: vermouth
     synonyms: []
   FOODON:03307916:
     type:
-    - fermentation
+    - fermented
     - fruit
     label: cider vinegar
     synonyms: []
@@ -15472,7 +15472,7 @@ ingredient:
     anatomy: FOODON:00002473
   FOODON:03307919:
     type:
-    - fermentation
+    - fermented
     - fruit
     label: distilled cider vinegar
     synonyms: []
@@ -15480,20 +15480,20 @@ ingredient:
     anatomy: FOODON:00002473
   FOODON:03307920:
     type:
-    - fermentation
+    - fermented
     - fruit
     label: cider vinegar and distilled cider vinegar mixture
     synonyms: []
     taxonomy: NCBITaxon:33090
     anatomy: FOODON:00002473
   FOODON:03307924:
-    type: fermentation
+    type: fermented
     label: vinegar (made from pear and peach waste, distilled)
     synonyms: []
     anatomy: FOODON:03411344
   FOODON:03307926:
     type:
-    - fermentation
+    - fermented
     - fruit
     label: apple wine vinegar
     synonyms: []
@@ -15501,27 +15501,27 @@ ingredient:
     anatomy: FOODON:00002473
   FOODON:03308809:
     type:
-    - fermentation
+    - fermented
     - beverage
     label: whiskey sour mix
     synonyms: []
   FOODON:03309410:
     type:
-    - fermentation
+    - fermented
     - beverage
     label: bourbon whiskey
     synonyms: []
     anatomy: FOODON:03411379
   FOODON:03309491:
     type:
-    - fermentation
+    - fermented
     - beverage
     label: gin
     synonyms: []
     anatomy: FOODON:03411324
   FOODON:03309510:
     type:
-    - fermentation
+    - fermented
     - fruit
     - beverage
     label: apple wine (carbonated)
@@ -15529,13 +15529,13 @@ ingredient:
     taxonomy: NCBITaxon:33090
     anatomy: FOODON:03411579
   FOODON:03309578:
-    type: fermentation
+    type: fermented
     label: distilled vinegar (diluted with spent apple cider)
     synonyms: []
     anatomy: FOODON:03411324
   FOODON:03309580:
     type:
-    - fermentation
+    - fermented
     - fruit
     label: apple vinegar blend
     synonyms: []
@@ -15543,7 +15543,7 @@ ingredient:
     anatomy: FOODON:00002473
   FOODON:03309602:
     type:
-    - fermentation
+    - fermented
     - animal
     - dairy
     label: orange yogurt
@@ -15551,7 +15551,7 @@ ingredient:
     anatomy: UBERON:0001913
   FOODON:03309603:
     type:
-    - fermentation
+    - fermented
     - animal
     - dairy
     label: prune whip yogurt
@@ -15559,7 +15559,7 @@ ingredient:
     anatomy: UBERON:0001913
   FOODON:03309652:
     type:
-    - fermentation
+    - fermented
     - animal
     - dairy
     label: peach and yogurt (infant food)
@@ -15567,7 +15567,7 @@ ingredient:
     anatomy: UBERON:0001913
   FOODON:03309823:
     type:
-    - fermentation
+    - fermented
     - animal
     label: shrimp paste
     synonyms:
@@ -15576,7 +15576,7 @@ ingredient:
     anatomy: FOODON:03411237
   FOODON:03310004:
     type:
-    - fermentation
+    - fermented
     - seed
     - legume
     label: soybean mass (fermented)
@@ -15585,7 +15585,7 @@ ingredient:
     anatomy: FOODON:03411156
   FOODON:03310005:
     type:
-    - fermentation
+    - fermented
     - seed
     - legume
     label: soybean paste (fermented)
@@ -15594,7 +15594,7 @@ ingredient:
     anatomy: FOODON:03411156
   FOODON:03310006:
     type:
-    - fermentation
+    - fermented
     - seed
     - legume
     label: fermented bean product
@@ -15603,7 +15603,7 @@ ingredient:
     anatomy: FOODON:03411156
   FOODON:03310022:
     type:
-    - fermentation
+    - fermented
     - seed
     - legume
     label: soybean-koji
@@ -15612,7 +15612,7 @@ ingredient:
     anatomy: FOODON:03411156
   FOODON:03310068:
     type:
-    - fermentation
+    - fermented
     - beverage
     label: sugar cane wine
     synonyms:
@@ -15620,7 +15620,7 @@ ingredient:
     anatomy: FOODON:03411378
   FOODON:03310143:
     type:
-    - fermentation
+    - fermented
     - fruit
     - beverage
     label: Chianti wine
@@ -15629,14 +15629,14 @@ ingredient:
     anatomy: FOODON:00003417
   FOODON:03310237:
     type:
-    - fermentation
+    - fermented
     - beverage
     label: apple brandy
     synonyms: []
     anatomy: FOODON:03411245
   FOODON:03310238:
     type:
-    - fermentation
+    - fermented
     - beverage
     label: armagnac
     synonyms: []
@@ -15644,7 +15644,7 @@ ingredient:
     type:
     - fruit
     - beverage
-    - fermentation
+    - fermented
     subtype: wine
     label: red wine
     synonyms: []
@@ -15654,7 +15654,7 @@ ingredient:
     type:
     - fruit
     - beverage
-    - fermentation
+    - fermented
     subtype: wine
     label: white wine
     synonyms: []
@@ -15662,18 +15662,18 @@ ingredient:
     anatomy: FOODON:00003777
   FOODON:03310386:
     type:
-    - fermentation
+    - fermented
     - beverage
     label: rice beer
     synonyms: []
     anatomy: FOODON:03411322
   FOODON:03310428:
-    type: fermentation
+    type: fermented
     label: gardiniera (food product)
     synonyms: []
   FOODON:03310443:
     type:
-    - fermentation
+    - fermented
     - animal
     - dairy
     label: black cherry yogurt
@@ -15681,7 +15681,7 @@ ingredient:
     anatomy: UBERON:0001913
   FOODON:03310467:
     type:
-    - fermentation
+    - fermented
     - animal
     - dairy
     label: yogurt (nonfat, sweetened with aspartame)
@@ -15689,7 +15689,7 @@ ingredient:
     anatomy: UBERON:0001913
   FOODON:03310468:
     type:
-    - fermentation
+    - fermented
     - animal
     - dairy
     label: yogurt (lowfat, sweetened with aspartame)
@@ -15697,18 +15697,18 @@ ingredient:
     anatomy: UBERON:0001913
   FOODON:03310477:
     type:
-    - fermentation
+    - fermented
     - beverage
     label: tom collins mix
     synonyms: []
   FOODON:03310728:
-    type: fermentation
+    type: fermented
     label: black vinegar chinese
     synonyms: []
     anatomy: FOODON:03411324
   FOODON:03310730:
     type:
-    - fermentation
+    - fermented
     - fruit
     - beverage
     label: blackberry wine
@@ -15717,7 +15717,7 @@ ingredient:
     anatomy: FOODON:03411407
   FOODON:03310731:
     type:
-    - fermentation
+    - fermented
     - fruit
     - beverage
     label: plum wine
@@ -15726,7 +15726,7 @@ ingredient:
     anatomy: FOODON:03411206
   FOODON:03310733:
     type:
-    - fermentation
+    - fermented
     - fruit
     - beverage
     label: raspberry wine
@@ -15735,7 +15735,7 @@ ingredient:
     anatomy: FOODON:03411494
   FOODON:03310734:
     type:
-    - fermentation
+    - fermented
     - fruit
     - beverage
     label: rosé wine
@@ -15745,7 +15745,7 @@ ingredient:
     anatomy: FOODON:00003417
   FOODON:03310751:
     type:
-    - fermentation
+    - fermented
     - fruit
     - beverage
     label: Rhine wine
@@ -15754,68 +15754,68 @@ ingredient:
     anatomy: FOODON:00003417
   FOODON:03310759:
     type:
-    - fermentation
+    - fermented
     - beverage
     label: sparkling wine
     synonyms: []
   FOODON:03310760:
     type:
-    - fermentation
+    - fermented
     - beverage
     label: sherry
     synonyms: []
   FOODON:03310761:
     type:
-    - fermentation
+    - fermented
     - beverage
     label: martini cocktail
     synonyms: []
     anatomy: FOODON:03411324
   FOODON:03310784:
-    type: fermentation
+    type: fermented
     label: fermented vegetable food product
     synonyms: []
     taxonomy: NCBITaxon:33090
     anatomy: PO:0025034
   FOODON:03310865:
     type:
-    - fermentation
+    - fermented
     - beverage
     label: cocktail beverage (frozen, alcoholic)
     synonyms: []
   FOODON:03310866:
     type:
-    - fermentation
+    - fermented
     - beverage
     label: alcoholic beverage (chinese)
     synonyms: []
   FOODON:03310957:
     type:
-    - fermentation
+    - fermented
     - beverage
     label: madeira wine
     synonyms: []
   FOODON:03310990:
     type:
-    - fermentation
+    - fermented
     - beverage
     label: vermouth sweet
     synonyms: []
   FOODON:03310991:
     type:
-    - fermentation
+    - fermented
     - beverage
     label: vermouth dry
     synonyms: []
   FOODON:03311061:
     type:
-    - fermentation
+    - fermented
     - beverage
     label: cream sherry wine
     synonyms: []
   FOODON:03311123:
     type:
-    - fermentation
+    - fermented
     - fruit
     - beverage
     label: Chablis wine
@@ -15824,14 +15824,14 @@ ingredient:
     anatomy: FOODON:00003417
   FOODON:03311125:
     type:
-    - fermentation
+    - fermented
     - beverage
     label: sour-mash whiskey
     synonyms: []
     anatomy: FOODON:03411379
   FOODON:03311270:
     type:
-    - fermentation
+    - fermented
     - fruit
     - beverage
     label: Beaujolais wine
@@ -15840,13 +15840,13 @@ ingredient:
     anatomy: FOODON:00003417
   FOODON:03311271:
     type:
-    - fermentation
+    - fermented
     - beverage
     label: port wine
     synonyms: []
   FOODON:03311385:
     type:
-    - fermentation
+    - fermented
     - animal
     - dairy
     label: yogurt drink
@@ -15854,7 +15854,7 @@ ingredient:
     anatomy: UBERON:0001913
   FOODON:03311405:
     type:
-    - fermentation
+    - fermented
     - beverage
     label: sweet sake
     synonyms: []
@@ -15862,13 +15862,13 @@ ingredient:
     anatomy: FOODON:03411322
   FOODON:03311433:
     type:
-    - fermentation
+    - fermented
     - beverage
     label: wine (low-alcohol)
     synonyms: []
   FOODON:03311463:
     type:
-    - fermentation
+    - fermented
     - seed
     - legume
     label: soy sauce (acid-hydrolyzed)
@@ -15877,34 +15877,34 @@ ingredient:
     anatomy: FOODON:03411156
   FOODON:03311499:
     type:
-    - fermentation
+    - fermented
     - beverage
     label: lemon breezer wine-based beverage
     synonyms: []
   FOODON:03311527:
     type:
-    - fermentation
+    - fermented
     - beverage
     label: cocktail drink (mixed, ready-prepared)
     synonyms: []
     anatomy: FOODON:03411140
   FOODON:03311528:
     type:
-    - fermentation
+    - fermented
     - beverage
     label: malt cooler
     synonyms: []
     anatomy: FOODON:03411324
   FOODON:03311551:
     type:
-    - fermentation
+    - fermented
     - beverage
     label: malt beverage less than 3% alcohol by volume
     synonyms: []
     anatomy: FOODON:03411324
   FOODON:03311566:
     type:
-    - fermentation
+    - fermented
     - beverage
     label: kamu
     synonyms: []
@@ -15912,26 +15912,26 @@ ingredient:
     anatomy: FOODON:03412505
   FOODON:03311581:
     type:
-    - fermentation
+    - fermented
     - beverage
     label: grape brandy
     synonyms: []
   FOODON:03311656:
-    type: fermentation
+    type: fermented
     label: koji
     synonyms: []
     taxonomy: NCBITaxon:33090
     anatomy: FOODON:03411047
   FOODON:03311848:
     type:
-    - fermentation
+    - fermented
     - beverage
     label: malt beverage (fruit flavored)
     synonyms: []
     anatomy: FOODON:03411230
   FOODON:03315048:
     type:
-    - fermentation
+    - fermented
     - animal
     - dairy
     label: yogurt derived product
@@ -15939,14 +15939,14 @@ ingredient:
     anatomy: UBERON:0001913
   FOODON:03315060:
     type:
-    - fermentation
+    - fermented
     - beverage
     label: malt beverage containing fruit juice less than 7% ethanol by volume
     synonyms: []
     anatomy: FOODON:03411324
   FOODON:03315122:
     type:
-    - fermentation
+    - fermented
     - beverage
     label: beverage fermented malt
     synonyms: []
@@ -15954,7 +15954,7 @@ ingredient:
     anatomy: FOODON:03411324
   FOODON:03315293:
     type:
-    - fermentation
+    - fermented
     - animal
     label: jeotgal
     synonyms:
@@ -15962,34 +15962,34 @@ ingredient:
     - joht
     anatomy: FOODON:03411021
   FOODON:03315331:
-    type: fermentation
+    type: fermented
     label: kochoojang
     synonyms:
     - red chilli paste
   FOODON:03315334:
     type:
-    - fermentation
+    - fermented
     - beverage
     label: fruit wine
     synonyms: []
     anatomy: FOODON:03411140
   FOODON:03315335:
     type:
-    - fermentation
+    - fermented
     - beverage
     label: yakjoo
     synonyms: []
     anatomy: FOODON:03411322
   FOODON:03315336:
     type:
-    - fermentation
+    - fermented
     - beverage
     label: tahkjoo
     synonyms: []
     anatomy: FOODON:03411322
   FOODON:03315357:
     type:
-    - fermentation
+    - fermented
     - animal
     label: Seongge-jeot
     synonyms:
@@ -15998,7 +15998,7 @@ ingredient:
     anatomy: FOODON:03411021
   FOODON:03315359:
     type:
-    - fermentation
+    - fermented
     - seed
     - legume
     label: twoenjang
@@ -16007,7 +16007,7 @@ ingredient:
     anatomy: FOODON:03411156
   FOODON:03315360:
     type:
-    - fermentation
+    - fermented
     - seed
     - legume
     label: choonjang
@@ -16016,7 +16016,7 @@ ingredient:
     anatomy: FOODON:03411156
   FOODON:03315408:
     type:
-    - fermentation
+    - fermented
     - animal
     - dairy
     label: vegetable yogurt
@@ -16024,7 +16024,7 @@ ingredient:
     anatomy: UBERON:0001913
   FOODON:03315409:
     type:
-    - fermentation
+    - fermented
     - animal
     - dairy
     label: nut yogurt
@@ -16032,7 +16032,7 @@ ingredient:
     anatomy: UBERON:0001913
   FOODON:03315410:
     type:
-    - fermentation
+    - fermented
     - animal
     - dairy
     label: fruit yogurt (reduced fat or skim milk)
@@ -16040,7 +16040,7 @@ ingredient:
     anatomy: UBERON:0001913
   FOODON:03315411:
     type:
-    - fermentation
+    - fermented
     - animal
     - dairy
     label: vegetable yogurt (reduced fat or skim milk)
@@ -16048,69 +16048,69 @@ ingredient:
     anatomy: UBERON:0001913
   FOODON:03315412:
     type:
-    - fermentation
+    - fermented
     - animal
     - dairy
     label: nut yogurt (reduced fat or skim milk)
     synonyms: []
     anatomy: UBERON:0001913
   FOODON:03315477:
-    type: fermentation
+    type: fermented
     label: koji pickle
     synonyms: []
     taxonomy: NCBITaxon:33090
     anatomy: PO:0025034
   FOODON:03315560:
-    type: fermentation
+    type: fermented
     label: acetic acid (diluted)
     synonyms: []
   FOODON:03315562:
     type:
-    - fermentation
+    - fermented
     - beverage
     label: wine (spiced, fortified)
     synonyms: []
   FOODON:03315563:
     type:
-    - fermentation
+    - fermented
     - beverage
     label: wine (spiced, fortified, extract for preparation of)
     synonyms: []
   FOODON:03315565:
     type:
-    - fermentation
+    - fermented
     - beverage
     label: wine (reduced alcohol)
     synonyms: []
   FOODON:03315585:
     type:
-    - fermentation
+    - fermented
     - beverage
     label: spirits (extract of)
     synonyms: []
   FOODON:03315586:
     type:
-    - fermentation
+    - fermented
     - beverage
     label: vermouth (extract of)
     synonyms: []
   FOODON:03315616:
     type:
-    - fermentation
+    - fermented
     - beverage
     label: beer (small)
     synonyms: []
     taxonomy: NCBITaxon:33090
   FOODON:03315625:
     type:
-    - fermentation
+    - fermented
     - beverage
     label: malt liquor
     synonyms: []
     anatomy: FOODON:03411324
   FOODON:03315627:
     type:
-    - fermentation
+    - fermented
     - beverage
     label: porter
     synonyms: []
@@ -16118,14 +16118,14 @@ ingredient:
     anatomy: FOODON:03411324
   FOODON:03315687:
     type:
-    - fermentation
+    - fermented
     - beverage
     label: fruit wine sweetened with honey
     synonyms: []
     anatomy: FOODON:03411140
   FOODON:03315752:
     type:
-    - fermentation
+    - fermented
     - beverage
     label: jenever gin
     synonyms:
@@ -16139,100 +16139,100 @@ ingredient:
     anatomy: FOODON:03411324
   FOODON:03315855:
     type:
-    - fermentation
+    - fermented
     - beverage
     label: cocktail beverage (alcoholic)
     synonyms:
     - cocktail
   FOODON:03315888:
     type:
-    - fermentation
+    - fermented
     - beverage
     label: cream based liquor (unstandardized)
     synonyms: []
   FOODON:03315943:
     type:
-    - fermentation
+    - fermented
     - beverage
     label: perry
     synonyms: []
     anatomy: FOODON:03411344
   FOODON:03315976:
     type:
-    - fermentation
+    - fermented
     - beverage
     label: beer with a minimum acidity of 30 mill.-equivalents expressed as naoh
     synonyms: []
     taxonomy: NCBITaxon:33090
   FOODON:03315977:
     type:
-    - fermentation
+    - fermented
     - beverage
     label: brown beer oud bruin type
     synonyms: []
     taxonomy: NCBITaxon:33090
   FOODON:03316004:
     type:
-    - fermentation
+    - fermented
     - beverage
     label: beverage (flavored, wine-based)
     synonyms: []
     anatomy: FOODON:03411140
   FOODON:03316011:
     type:
-    - fermentation
+    - fermented
     - beverage
     label: spirits with not more than 15% alcohol
     synonyms: []
   FOODON:03316095:
-    type: fermentation
+    type: fermented
     label: fermented product
     synonyms: []
   FOODON:03316097:
     type:
-    - fermentation
+    - fermented
     - beverage
     label: liqueur (emulsified)
     synonyms: []
   FOODON:03316144:
     type:
-    - fermentation
+    - fermented
     - beverage
     label: liquer (egg based)
     synonyms: []
   FOODON:03316203:
     type:
-    - fermentation
+    - fermented
     - beverage
     label: fruit wine (sparkling)
     synonyms: []
     anatomy: FOODON:03411140
   FOODON:03316204:
-    type: fermentation
+    type: fermented
     label: fermentation vinegar
     synonyms: []
   FOODON:03316303:
     type:
-    - fermentation
+    - fermented
     - beverage
     label: liqueur (flavored with fruit aromas)
     synonyms: []
   FOODON:03316304:
     type:
-    - fermentation
+    - fermented
     - beverage
     label: liqueur (flavored with herbs and/or spices)
     synonyms: []
   FOODON:03316305:
     type:
-    - fermentation
+    - fermented
     - beverage
     label: brandy flavored with herbs and/or spices
     synonyms: []
     anatomy: FOODON:03411140
   FOODON:03316533:
     type:
-    - fermentation
+    - fermented
     - beverage
     label: kvas
     synonyms: []
@@ -16240,7 +16240,7 @@ ingredient:
     anatomy: FOODON:03411324
   FOODON:03316668:
     type:
-    - fermentation
+    - fermented
     - animal
     - dairy
     label: yogurt (flavored)
@@ -16248,7 +16248,7 @@ ingredient:
     anatomy: UBERON:0001913
   FOODON:03316669:
     type:
-    - fermentation
+    - fermented
     - animal
     - dairy
     label: yogurt product (heat treated after fermentation)
@@ -16256,47 +16256,47 @@ ingredient:
     anatomy: UBERON:0001913
   FOODON:03316910:
     type:
-    - fermentation
+    - fermented
     - beverage
     label: beverage made with wine and cider
     synonyms: []
     anatomy: FOODON:03411140
   FOODON:03316971:
     type:
-    - fermentation
+    - fermented
     - beverage
     label: malt beverage
     synonyms: []
     anatomy: FOODON:03411324
   FOODON:03316982:
     type:
-    - fermentation
+    - fermented
     - beverage
     label: beer (low alcohol)
     synonyms: []
     taxonomy: NCBITaxon:33090
   FOODON:03317002:
     type:
-    - fermentation
+    - fermented
     - beverage
     label: sake compound
     synonyms: []
     anatomy: FOODON:03411322
   FOODON:03317152:
     type:
-    - fermentation
+    - fermented
     - animal
     - dairy
     label: fruit yogurt (no added sugar, energy 2.0 mj or less)
     synonyms: []
     anatomy: UBERON:0001913
   FOODON:03317220:
-    type: fermentation
+    type: fermented
     label: vineger (diluted)
     synonyms: []
   FOODON:03317391:
     type:
-    - fermentation
+    - fermented
     - fruit
     - beverage
     label: black grape wine
@@ -16305,13 +16305,13 @@ ingredient:
     anatomy: FOODON:00003417
   FOODON:03317392:
     type:
-    - fermentation
+    - fermented
     - beverage
     label: wine (high acid)
     synonyms: []
   FOODON:03317393:
     type:
-    - fermentation
+    - fermented
     - fruit
     - beverage
     label: still wine
@@ -16320,70 +16320,70 @@ ingredient:
     anatomy: FOODON:00003417
   FOODON:03317452:
     type:
-    - fermentation
+    - fermented
     - beverage
     label: sambuca
     synonyms: []
   FOODON:03317453:
     type:
-    - fermentation
+    - fermented
     - beverage
     label: maraschino liqueur
     synonyms:
     - maraschino
   FOODON:03317455:
     type:
-    - fermentation
+    - fermented
     - beverage
     label: sangria
     synonyms: []
   FOODON:03317461:
     type:
-    - fermentation
+    - fermented
     - beverage
     label: grape marc spirits
     synonyms: []
   FOODON:03317462:
     type:
-    - fermentation
+    - fermented
     - beverage
     label: fruit spirit drink
     synonyms: []
   FOODON:03317463:
     type:
-    - fermentation
+    - fermented
     - beverage
     label: fruit spirits
     synonyms: []
   FOODON:03317464:
     type:
-    - fermentation
+    - fermented
     - beverage
     label: ouzo
     synonyms: []
   FOODON:03317465:
     type:
-    - fermentation
+    - fermented
     - beverage
     label: alcoholic beverage (fortified)
     synonyms: []
   FOODON:03317539:
     type:
-    - fermentation
+    - fermented
     - beverage
     label: beer with a second fermentation in cask
     synonyms: []
     taxonomy: NCBITaxon:33090
   FOODON:03317551:
     type:
-    - fermentation
+    - fermented
     - beverage
     label: fruit wine (aromatized)
     synonyms: []
     anatomy: FOODON:03411140
   FOODON:03317552:
     type:
-    - fermentation
+    - fermented
     - fruit
     - beverage
     label: cider (aromatized)
@@ -16392,38 +16392,38 @@ ingredient:
     anatomy: FOODON:03411579
   FOODON:03317553:
     type:
-    - fermentation
+    - fermented
     - beverage
     label: perry (aromatized)
     synonyms: []
     anatomy: FOODON:03411344
   FOODON:03317554:
     type:
-    - fermentation
+    - fermented
     - beverage
     label: beverage (aromatized, wine-based)
     synonyms: []
   FOODON:03317559:
     type:
-    - fermentation
+    - fermented
     - beverage
     label: bitter vino
     synonyms: []
   FOODON:03317560:
     type:
-    - fermentation
+    - fermented
     - beverage
     label: americano
     synonyms: []
   FOODON:03317565:
     type:
-    - fermentation
+    - fermented
     - beverage
     label: aperitif wine
     synonyms: []
   FOODON:03317566:
     type:
-    - fermentation
+    - fermented
     - fruit
     - beverage
     label: cidre bouche
@@ -16432,19 +16432,19 @@ ingredient:
     anatomy: FOODON:03411579
   FOODON:03317571:
     type:
-    - fermentation
+    - fermented
     - beverage
     label: grappa invecchiata
     synonyms: []
   FOODON:03317572:
     type:
-    - fermentation
+    - fermented
     - beverage
     label: bagaceira velha
     synonyms: []
   FOODON:03317573:
     type:
-    - fermentation
+    - fermented
     - fruit
     - beverage
     label: liqueur wine
@@ -16453,7 +16453,7 @@ ingredient:
     anatomy: FOODON:00003417
   FOODON:03317605:
     type:
-    - fermentation
+    - fermented
     - animal
     - dairy
     label: yogurt (fruit flavored)
@@ -16461,7 +16461,7 @@ ingredient:
     anatomy: UBERON:0001913
   FOODON:03317606:
     type:
-    - fermentation
+    - fermented
     - animal
     - dairy
     label: nut yogurt (flavored)
@@ -16469,13 +16469,13 @@ ingredient:
     anatomy: UBERON:0001913
   FOODON:03317615:
     type:
-    - fermentation
+    - fermented
     - beverage
     label: wine (artificially carbonated)
     synonyms: []
   FOODON:03317658:
     type:
-    - fermentation
+    - fermented
     - beverage
     label: aromatic wine
     synonyms: []
@@ -16689,14 +16689,14 @@ ingredient:
     - CFB group bacteria
     - Cytophaga-Flexibacter-Bacteroides phylum
   FOODON:00005744:
-    type: fermentation
+    type: fermented
     label: microbial food culture
     synonyms: []
     ai_synonyms:
       live bacteria, yeasts or moulds used in a food production fermentation process.:
         status: proposed
   FOODON:00005745:
-    type: fermentation
+    type: fermented
     label: bacterial food culture
     synonyms:
     - bacterial culture

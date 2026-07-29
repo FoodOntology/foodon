@@ -53,7 +53,7 @@ Type classifications and OWL roots
   dairy          FOODON:00001256                          dairy food products
   animal         FOODON:03420164                          animal material food products
   lipid          FOODON:00002664                          cooking oils and animal fats
-  fermentation   FOODON:00001258                          fermented food products
+  fermented      FOODON:00001258                          fermented food products
   sweetener      FOODON:00002300                          sugars, sugar alcohols, syrups
   chemical       FOODON:03412972, CHEBI:60004             food additives and mixtures
   nutrient       CHEBI:33229, CDNO:0000001                vitamins, minerals, macronutrients
@@ -1656,10 +1656,10 @@ def _match_material_only(ingredient: str, options: argparse.Namespace) -> Option
     if am:
         return match_to_result(ingredient, am, category='additive', source_module='chemical')
 
-    # 15. Fermentation
-    fm2 = recognize('fermentation', ingredient)
+    # 15. Fermented
+    fm2 = recognize('fermented', ingredient)
     if fm2:
-        return match_to_result(ingredient, fm2, category='food', source_module='fermentation')
+        return match_to_result(ingredient, fm2, category='food', source_module='fermented')
 
     return None
 
@@ -3464,7 +3464,7 @@ def build_refresh(type_name: str, owl_path: str, dry_run: bool = False) -> None:
 # Also used in build_refresh() to determine type priority (food > annotation).
 _TAXONOMY_FOOD_TYPES = frozenset([
     'fruit', 'sweetener', 'dairy', 'spice', 'herb', 'seed',
-    'nut', 'legume', 'grain', 'root_vegetable', 'lipid', 'fermentation', 'animal',
+    'nut', 'legume', 'grain', 'root_vegetable', 'lipid', 'fermented', 'animal',
 ])
 
 # Primary food material types (includes chemical/nutrient; used for type-priority logic).
@@ -3709,7 +3709,7 @@ def build_taxonomy(owl_path: str, dry_run: bool = False) -> None:
     Phase 1: refresh taxonomy type entries (organism names from NCBITaxon:2 OWL subtree)
              via the standard build_refresh logic.
     Phase 2: annotate food material entries (fruit, dairy, spice, herb, seed, grain,
-             lipid, fermentation, etc.) with 'taxonomy' CURIEs derived from
+             lipid, fermented, etc.) with 'taxonomy' CURIEs derived from
              'in taxon' (RO:0002162) links in the OWL.
     Phase 3: populate common_parts on taxonomy entries from YAML back-links.
     """
