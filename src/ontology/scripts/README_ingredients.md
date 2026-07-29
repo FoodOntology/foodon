@@ -1,4 +1,4 @@
-# foodon_mapper — Ingredient Recogniser
+# ingredients.py — Ingredient Recogniser
 
 Maps free-text food ingredient strings to [FoodOn](http://purl.obolibrary.org/obo/foodon.owl) ontology terms. Coverage and synonym data live in `ingredients.yaml`; matching logic lives in `ingredients.py`.
 
@@ -313,28 +313,28 @@ E-numbers (e.g. `e322`) are kept in `synonyms` rather than migrated to `ai_synon
 
 ```bash
 # Map a TSV/CSV file (pipeline mode)
-python3 -m foodon_mapper.ingredients -i ingredients.tsv
-python3 -m foodon_mapper.ingredients -i ingredients.tsv -o results.tsv
-python3 -m foodon_mapper.ingredients -i ingredients.tsv --format html
-python3 -m foodon_mapper.ingredients -i ingredients.tsv --format markdown,html
+python3 ingredients.py -i ingredients.tsv
+python3 ingredients.py -i ingredients.tsv -o results.tsv
+python3 ingredients.py -i ingredients.tsv --format html
+python3 ingredients.py -i ingredients.tsv --format markdown,html
 
 # Test a single type interactively
-python3 -m foodon_mapper.ingredients --type grain "rolled oats"
-python3 -m foodon_mapper.ingredients --type nutrient "vitamin B12"
-python3 -m foodon_mapper.ingredients --type fermentation "bacterial culture"
+python3 ingredients.py --type grain "rolled oats"
+python3 ingredients.py --type nutrient "vitamin B12"
+python3 ingredients.py --type fermentation "bacterial culture"
 
 # Test a type against a TSV file
-python3 -m foodon_mapper.ingredients --type fruit --tsv my_file.tsv --column ingredient
+python3 ingredients.py --type fruit --tsv my_file.tsv --column ingredient
 
 # Include proposed ai_synonyms in matching
-python3 -m foodon_mapper.ingredients -i ingredients.tsv --synonyms proposed
+python3 ingredients.py -i ingredients.tsv --synonyms proposed
 
 # Rebuild/refresh ingredients.yaml from OWL (dry run)
-python3 -m foodon_mapper.ingredients --rebuild grain --dry-run
-python3 -m foodon_mapper.ingredients --rebuild all --dry-run
+python3 ingredients.py --rebuild grain --dry-run
+python3 ingredients.py --rebuild all --dry-run
 
 # Rebuild and write changes
-python3 -m foodon_mapper.ingredients --rebuild nutrient
+python3 ingredients.py --rebuild nutrient
 ```
 
 ### Key flags
