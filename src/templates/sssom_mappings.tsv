@@ -1,0 +1,306 @@
+Ontology ID	label	cross reference IRI	synonym	English Exact syn	narrow synonym	Broad Synonym	Related synonym	British english syn.	Italian Exact syn.	French Exact syn.	german Exact syn.	spanish Exact syn.	portuguese Exact syn.	term contributor
+ID		AI oboInOwl:hasDbXref SPLIT=|	AL oboInOwl:hasSynonym@en SPLIT=|	AL oboInOwl:hasExactSynonym@en SPLIT=|	AL oboInOwl:hasNarrowSynonym@en SPLIT=|	AL oboInOwl:hasBroadSynonym@en SPLIT=|	AL oboInOwl:hasRelatedSynonym@en SPLIT=|	AL oboInOwl:hasExactSynonym@en-BR SPLIT=|	AL oboInOwl:hasExactSynonym@it SPLIT=|	AL oboInOwl:hasExactSynonym@fr SPLIT=|	AL oboInOwl:hasExactSynonym@ge SPLIT=|	AL oboInOwl:hasExactSynonym@es SPLIT=|	AL oboInOwl:hasExactSynonym@pt SPLIT=|	AI dcterms:contributor SPLIT=|
+FOODON:03460238	food component separation	langual:H0238												https://orcid.org/0000-0002-8844-9165
+FOODON:03460225	food material combination	langual:H0225												https://orcid.org/0000-0002-8844-9165
+FOODON:00001304	food fermentation					fermentation								https://orcid.org/0000-0002-8844-9165
+FOODON:00002722	corn husking			husking										https://orcid.org/0000-0002-8844-9165
+FOODON:00002648	food scalding			scalding										https://orcid.org/0000-0002-8844-9165
+FOODON:00002732	food seasoning process			seasoning										https://orcid.org/0000-0002-8844-9165
+FOODON:00002814	ikajime			Ikijime|活き締め|活け締め										https://orcid.org/0000-0002-8844-9165
+FOODON:00003215	winterization of oil			fractionate crystallization										
+FOODON:00003307	shell removal process			shelling|shelling process										
+FOODON:00005709	food heating	langual:G0002												
+FOODON:03450004	cooking by dry heat	langual:G0004	dry cooked											
+FOODON:03450005	food baking	langual:G0005	roasting											https://orcid.org/0000-0002-8844-9165
+FOODON:03450006	broiling or grilling	langual:G0006			barbecuing|broiling|grilling									
+FOODON:03450007	charcoal broiling	langual:G0007												
+FOODON:03450008	griddle cooking	langual:G0008												
+FOODON:03450009	cooked by popping	langual:G0009												
+FOODON:03450010	food toasting	langual:G0010												
+FOODON:03450011	cooking by microwave	langual:G0011												
+FOODON:03450012	cooking by moist heat	langual:G0012												
+FOODON:03450013	cooking in water or water-based liquid	langual:G0013												
+FOODON:03450014	boiling in container	langual:G0014												
+FOODON:03450015	boiling and then draining	langual:G0015												
+FOODON:03450016	boiling in large amount of liquid	langual:G0016												
+FOODON:03450017	boiling in small amount of liquid	langual:G0017												
+FOODON:03450018	boiling without draining	langual:G0018												
+FOODON:03450019	cooking by braising	langual:G0019												
+FOODON:03450020	cooking by simmering	langual:G0020	poaching|stewing											
+FOODON:03450021	cooking in steam	langual:G0021												
+FOODON:03450022	steaming with pressure	langual:G0022	pressure-cooked											
+FOODON:03450023	steaming without pressure	langual:G0023												
+FOODON:03450024	cooking with fat or oil	langual:G0024	frying											
+FOODON:03450025	cooking with added fat or oil	langual:G0025	oil roasted											
+FOODON:03450026	cooking in small amount of fat or oil	langual:G0026												
+FOODON:03450027	sautéing	langual:G0027		sauteing										
+FOODON:03450028	stir-frying	langual:G0028												
+FOODON:03450029	deep-frying process	langual:G0029		deep-frying										
+FOODON:03450030	cooking with inherent fat or oil	langual:G0030												
+FOODON:03450032	heating container	langual:G0032												
+FOODON:03450033	heating container in double boiler	langual:G0033	cooked over boiling water|double boiler cooked											
+FOODON:03450034	heating container by water bath	langual:G0034	bain-marie cooked											
+FOODON:03450031	heating container by immersion in water or steam	langual:G0031												
+FOODON:03450035	shallow frying process	langual:G0035		shallow frying										
+FOODON:03450036	steeping	langual:G0036												
+FOODON:03450037	food reheating	langual:G0037												
+FOODON:03450038	food reheating by microwave	langual:G0038												
+FOODON:03450039	food reheating by dry heat	langual:G0039												
+FOODON:03450040	food reheating by boil-in-bag	langual:G0040												
+FOODON:03450041	food reheating in pan or cooking utensil	langual:G0041												
+FOODON:03450043	double steaming	langual:G0043	double boiling											
+FOODON:03450044	rotisserie roasting	langual:G0044												
+FOODON:03450045	searing	langual:G0045			pan searing									
+FOODON:03450046	blind baking	langual:G0046												
+FOODON:03450047	pressure frying process	langual:G0047		pressure frying										
+FOODON:03460101	lactic acid fermentation	langual:H0101	cultured|pickled by fermentation											
+FOODON:03460102	proteolytic fermentation	langual:H0102												
+FOODON:03460103	component substitution process	langual:H0103												
+FOODON:03460106	food noncertified color addition process	langual:H0106												
+FOODON:03460107	lactic acid-other agent fermentation	langual:H0107												
+FOODON:03460109	artificial carbonation process	langual:H0109												
+FOODON:03460111	food treatment process	langual:H0111												
+FOODON:03460112	water removal to reconstitution ratio 3 plus 1 or higher	langual:H0112	concentrated, 40 degrees brix or higher											
+FOODON:03460113	water removal to reconstitution ratio 2 plus 1	langual:H0113	concentrated, 20-40 degrees brix											
+FOODON:03460114	water removal to reconstitution ratio 1 plus 1	langual:H0114	condensed											
+FOODON:03460119	microbial/enzymatic modification process	langual:H0119	fermented, unspecified											
+FOODON:03460121	food irradiation	langual:H0121	picowaved											
+FOODON:03460123	alcohol-acetic acid fermentation	langual:H0123												
+FOODON:03460127	lipolytic fermentation	langual:H0127												
+FOODON:03460128	multi-component food fermentation	langual:H0128	ripened (cured)											
+FOODON:03460130	physical/chemical modification process	langual:H0130												
+FOODON:03460133	food certified color addition process	langual:H0133												
+FOODON:03460134	protein removal process	langual:H0134												
+FOODON:03460135	alkaloid or purine removal process	langual:H0135	dealkaloidized|purine removed											
+FOODON:03460137	demineralizing process	langual:H0137	calcium removed|minerals removed											
+FOODON:03460138	water removal process	langual:H0138												
+FOODON:03460140	decaffeination process	langual:H0140												
+FOODON:03460141	food modification process	langual:H0141												
+FOODON:03460148	water addition process	langual:H0148	diluted											
+FOODON:03460150	food color addition process	langual:H0150												
+FOODON:03460160	alcoholization process	langual:H0160	brandied											
+FOODON:03460161	fat removal process	langual:H0161	cholesterol removed|defatted											
+FOODON:03460169	food instantizing	langual:H0169	agglomerated|converted (grain)											
+FOODON:03460174	food hydrogenation process	langual:H0174												
+FOODON:03460175	carbonation process	langual:H0175	carbon dioxide added											
+FOODON:03460178	food aeration process	langual:H0178												
+FOODON:03460179	food ionizing irradiation	langual:H0179												
+FOODON:03460182	candying	langual:H0182												
+FOODON:03460190	pickling	langual:H0190												
+FOODON:03460192	food texturing process	langual:H0192												
+FOODON:03460194	nutrient or dietary substance addition process	langual:H0194	enriched|fortified|restored											
+FOODON:03460197	food bleaching process	langual:H0197												
+FOODON:03460198	debittering process	langual:H0198												
+FOODON:03460200	acidification process	langual:H0200|foodex2:A07JM	pickled by acidification											
+FOODON:03460203	lactose conversion process	langual:H0203	converted (lactose)|delactosed											
+FOODON:03460206	food alkalization process	langual:H0206	alkalinized|dutch processed											
+FOODON:03460207	food filling process	langual:H0207	stuffing process											
+FOODON:03460208	fat substitution process	langual:H0208												
+FOODON:03460220	food parboiling process (grain)	langual:H0220	parboiled (rice)											
+FOODON:03460230	single component food fermentation	langual:H0230												
+FOODON:03460232	alcohol fermentation	langual:H0232												
+FOODON:03460234	dilution process to 15-49% of single strength	langual:H0234												
+FOODON:03460236	sodium removal process	langual:H0236												
+FOODON:03460237	dilution process to 50-99% of single strength	langual:H0237												
+FOODON:03460239	food rolling process	langual:H0239												
+FOODON:03460241	food thawing process	langual:H0241	frozen previously											
+FOODON:03460246	carbonation by fermentation	langual:H0246												
+FOODON:03460247	partial fat removal process	langual:H0247	dry roasted											
+FOODON:03460248	full fat removal process	langual:H0248												
+FOODON:03460250	protein substitution process	langual:H0250												
+FOODON:03460252	enzymatic modification process	langual:H0252												
+FOODON:03460253	curing or aging	langual:H0253|foodex2:A07KD	aged											
+FOODON:03460254	water addition or removal process	langual:H0254												
+FOODON:03460256	carbohydrate fermentation	langual:H0256	yeast leavened											
+FOODON:03460259	rehydration process	langual:H0259	made from concentrate|moistened|previously concentrated|reconstituted to liquid|soaked											
+FOODON:03460261	food ultraviolet irradiation	langual:H0261												
+FOODON:03460266	carbohydrate removal process	langual:H0266												
+FOODON:03460268	food puffing process	langual:H0268												
+FOODON:03460270	food distillation process	langual:H0270												
+FOODON:03460274	food flaking process	langual:H0274												
+FOODON:03460275	food meat liquid injection process	langual:H0275	enhanced|prebasted											
+FOODON:03460276	food bromination process	langual:H0276												
+FOODON:03460277	food hydrolyzation process	langual:H0277												
+FOODON:03460278	food phosphating process	langual:H0278												
+FOODON:03460285	alcohol removal process	langual:H0285												
+FOODON:03460286	full alcohol removal process	langual:H0286												
+FOODON:03460287	partial alcohol removal process	langual:H0287												
+FOODON:03460288	curing or aging < 2 weeks	langual:H0288												
+FOODON:03460289	curing or aging 2 weeks to 1 month	langual:H0289												
+FOODON:03460290	curing or aging 1 to 2 months	langual:H0290												
+FOODON:03460291	curing or aging 2 to 4 months	langual:H0291												
+FOODON:03460292	curing or aging 4 to 6 months	langual:H0292												
+FOODON:03460293	curing or aging 6 to 12 months	langual:H0293												
+FOODON:03460294	curing or aging 12 months or over	langual:H0294												
+FOODON:03460295	lactose removal process	langual:H0295												
+FOODON:03460298	clotting enzyme addition process	langual:H0298		rennin (rennet) coagulation										
+FOODON:03460300	acetic acid fermentation	langual:H0300												
+FOODON:03460306	food homogenization or emulsification process	langual:H0306		emulsification|homogenization										
+FOODON:03460324	partial fat removal process, 50% or more remaining	langual:H0324												
+FOODON:03460325	partial fat removal process, less than 50% remaining	langual:H0325												
+FOODON:03460326	bacterial food-curing process	langual:H0326												
+FOODON:03460327	food surface bacterial curing	langual:H0327												
+FOODON:03460328	food interior bacterial curing	langual:H0328												
+FOODON:03460329	mold food-curing process	langual:H0329												
+FOODON:03460330	food surface mold curing	langual:H0330												
+FOODON:03460331	food interior mold curing	langual:H0331												
+FOODON:03460351	chemical leavening agent addition process	langual:H0351		baking powder addition|baking soda addition										
+FOODON:03460352	food extrusion	langual:H0352												
+FOODON:03460353	food coating or covering process	langual:H0353		glazing process|food covering process|food coating process										
+FOODON:03460354	sugar coating or covering process	langual:H0354		sugar coating|sugar covering										
+FOODON:03460355	chocolate coating or covering process	langual:H0355		chocolate coating|chocolate covering										
+FOODON:03460357	carob coating or covering process	langual:H0357		carob coating|carob covering										
+FOODON:03460358	food aeration by whipping	langual:H0358		beating|whipping										
+FOODON:03460359	food aeration by creaming	langual:H0359		creaming										
+FOODON:03460366	food flattening process	langual:H0366												
+FOODON:03460391	seed roasting	langual:H0391												
+FOODON:03460393	acid reduction process	langual:H0393												
+FOODON:03460396	marinading	langual:H0396												
+FOODON:03460398	rind removal process	langual:H0398												
+FOODON:03460750	gluten removal process	langual:H0750												
+FOODON:03460751	leavening agent addition process	langual:H0751												
+FOODON:03460752	sourdough addition process	langual:H0752												
+FOODON:03460753	yeast addition process	langual:H0753												
+FOODON:03460760	food animal rendering	langual:H0760												
+FOODON:03460781	food micro-encapsulation process	langual:H0781		coating process|covering process|micro-encapsulation process										
+FOODON:03470100	preservation by adding chemicals	langual:J0100												
+FOODON:03470102	food sterilization before filling	langual:J0102												
+FOODON:03470103	food salting	langual:J0103												
+FOODON:03470106	food smoking	langual:J0106												https://orcid.org/0000-0002-8844-9165
+FOODON:03470107	food preservation	langual:J0107												
+FOODON:03470108	preservation by treatment with chemicals	langual:J0108												
+FOODON:03470109	chemical food preservation	langual:J0109												
+FOODON:03470110	food sterilization after filling	langual:J0110												
+FOODON:03470111	preservation by storage in modified atmosphere	langual:J0111												
+FOODON:03470112	drying under reduced pressure	langual:J0112												
+FOODON:03470113	sterilization by irradiation	langual:J0113												
+FOODON:03470114	food sterilization by hot filling and cooling	langual:J0114												
+FOODON:03470115	surface pasteurization or disinfection by ultraviolet irradiation	langual:J0115												
+FOODON:03470116	drying	langual:J0116|foodex2:A07KG												
+FOODON:03470117	heat drying process	langual:J0117												
+FOODON:03470119	pasteurization by irradiation	langual:J0119												
+FOODON:03470120	heat treatment food preservation	langual:J0120|foodex2:A07HR												
+FOODON:03470121	food filtration	langual:J0121												
+FOODON:03470122	preservation by ionizing radiation	langual:J0122												
+FOODON:03470123	food sterilization by heating	langual:J0123		canning (sterilized and hermetically packed)|preservation by canning										
+FOODON:03470124	osmotic dehydration	langual:J0124												
+FOODON:03470126	aseptic filling and sealing of food	langual:J0126|foodex2:A0BYM												
+FOODON:03470128	food slow freezing	langual:J0128		quiescent freezing|sharp freezing|slush freezing										
+FOODON:03470129	food sterilization by hot filling, held hot and cooling	langual:J0129												
+FOODON:03470130	freeze-drying	langual:J0130												
+FOODON:03470131	food chilling	langual:J0131|foodex2:A07KP		preservation by storage in refrigeration|refrigeration										
+FOODON:03470132	food quick freezing	langual:J0132|foodex2:A07KR												
+FOODON:03470133	spray-drying	langual:J0133												
+FOODON:03470134	shelf-drying under normal pressure	langual:J0134												
+FOODON:03470135	pasteurization by heating	langual:J0135|foodex2:A07HV												
+FOODON:03470136	food freezing	langual:J0136|foodex2:A07KQ		freezing										
+FOODON:03470137	food brining	langual:J0137		brining|corning										
+FOODON:03470138	preservation by irradiation	langual:J0138												
+FOODON:03470139	food dry salting	langual:J0139		dry salted										
+FOODON:03470140	drum-drying	langual:J0140												
+FOODON:03470141	natural heat drying	langual:J0141		field drying|sun drying										
+FOODON:03470142	chilling or freezing	langual:J0142		preservation by refrigeration										
+FOODON:03470143	drying under normal pressure	langual:J0143												
+FOODON:03470144	artificial heat drying	langual:J0144												
+FOODON:03470145	preservation by reducing water activity	langual:J0145												
+FOODON:03470146	preservation by adding sugar	langual:J0146												
+FOODON:03470147	food sterilization at ultra high temperature (UHT)	langual:J0147		UHT sterilized										
+FOODON:03470148	ultra pasteurization (UP) by heat	langual:J0148												
+FOODON:03470149	preservation by adding acid	langual:J0149												
+FOODON:03470150	sous vide cooking	langual:J0150		sous vide										
+FOODON:03470151	preservation of food component by heat treatment	langual:J0151												
+FOODON:03470152	ingredient preservation by irradiation	langual:J0152												
+FOODON:03470153	preservation by adding spices or extracts	langual:J0153												
+FOODON:03470154	preservation by adding inorganic acids or salts	langual:J0154												
+FOODON:03470155	preservation by adding organic acids or salts	langual:J0155												
+FOODON:03470156	preservation by adding antibiotics	langual:J0156												
+FOODON:03470157	food ultra-filtration	langual:J0157												
+FOODON:03470158	pasteurization by heat after filling	langual:J0158												
+FOODON:03470159	pasteurization by heat before filling	langual:J0159												
+FOODON:03470160	ultra high pressure sterilization	langual:J0160												https://orcid.org/0000-0002-8844-9165
+FOODON:03470161	preservation by electron accelerator radiation	langual:J0161												
+FOODON:03470162	disinfection by irradiation	langual:J0162												
+FOODON:03470163	drying by radiation	langual:J0163												
+FOODON:03470165	drying by microwave radiation	langual:J0165												
+FOODON:03470166	drying by infrared heat radiation	langual:J0166												
+FOODON:03470168	drying under increased pressure	langual:J0168												
+FOODON:03470169	concentration by reverse osmosis	langual:J0169												
+FOODON:03470170	sun drying	langual:J0170												
+FOODON:03470171	food cryogenic freezing	langual:J0171		flash freezing										
+FOODON:03470172	food storage with refrigerating agent process	langual:J0172												https://orcid.org/0000-0002-8844-9165
+FOODON:03470173	inert atmosphere storage process	langual:J0173												
+FOODON:03470174	vaccum storage process	langual:J0174												
+FOODON:03470175	food blanching	langual:J0175		blanching										https://orcid.org/0000-0002-8844-9165
+FOODON:03470176	controlled atmosphere storage process	langual:J0176		CA|CA storage										
+FOODON:03470177	food micro-filtration	langual:J0177												
+FOODON:03470178	high temperature short time (HTST) pasteurization	langual:J0178		HTST										
+FOODON:03470179	higher heat shorter time (HHST) pasteurization	langual:J0179		HHST										
+FOODON:03470180	ultra high temperature (UHT) pasteurization	langual:J0180|foodex2:A07HY		UHT										
+FOODON:03470181	filling conditions for pasteurization	langual:J0181												
+FOODON:03470182	low-temperature-long-time (LTLT) pasteurization	langual:J0182		batch pasteurization|holding pasteurization|LTLT										
+FOODON:00004068	winemaking			winemaking|vinification										
+FOODON:00004071	hot maceration			thermo-maceration|thermomaceration|thermo-vinification										
+FOODON:00004074	cold maceration			cold soak										
+	wine secondary alcohol fermentation			malolactic alcohol fermentation										
+FOODON:03000477	light sour cream			sour cream (reduced fat)										
+FOODON:00004697	tofu			bean curd										
+FOODON:00005567	cellophane noodle			glass noodle|chinese cellophane noodle|fensi										
+FOODON:00005579	cow whey			sour whey										
+FOODON:03600009	omega-3- fatty acid supplement				eicosapentaenoic acid (EPA) supplement|docosahexaenoic acid (DHA) supplement									
+FOODON:03600000	black cohosh supplement	DRON:00020995|DRON:00024242		black bugbane supplement|black snakeroot supplement|Cimicifuga racemosa supplement										
+FOODON:03600001	coenzyme Q10 supplement	DRON:00021427|DRON:00021428|DRON:00024311|DRON:00751502|DRON:00032484|DRON:00024309		ubiquinone-10 supplement|CoQ10 supplement										
+FOODON:03600004	ginkgo biloba supplement	DRON:00030691|DRON:00022022|DRON:00022023|DRON:00024375|DRON:00025240		ginkgo leaf supplement										
+FOODON:03600005	ginseng supplement			Asian ginseng supplement										
+FOODON:03600008	milk thistle supplement	DRON:00024676|DRON:00022555|DRON:00022554|DRON:00024434		silymarin supplement|milk thistle extract supplement										
+FOODON:03600010	red yeast rice supplement	DRON:00024498|DRON:00032781		red fermented rice supplement|red koji rice supplement|angkak supplement										
+FOODON:03600012	St. John's wort supplement	DRON:00023439|DRON:00023442|DRON:00023441		hypericum supplement										
+FOODON:03000439	green powder supplement			green powder										
+FOODON:03000440	chlorella powder supplement			chlorella powder										
+FOODON:03000441	liver powder supplement			liver powder										
+FOODON:03000442	liver powder supplement (desiccated)			desiccated liver powder										
+FOODON:03000445	elderly dietary supplement			elderly formula powder|elderly formula										
+FOODON:03301014	grape wine	siren:F1014												
+FOODON:03310272	red wine	siren:F10272												
+FOODON:03310734	rosé wine	siren:F10734		rosé						rosé				
+FOODON:03310273	white wine	siren:F10273												
+FOODON:00004065	Table Wine (deprecated EU standard)			TW										
+FOODON:03307296	fortified wine	siren:F7296												
+FOODON:03317393	still wine	siren:F17393												
+FOODON:00004049	Quality Wines Produced in Specified Regions			QWpsr|Quality Wine psr|quality wines								vino de calidad producido en región determinada|VCPRD		
+FOODON:03530258	Denominazione di origine controllata	langual:Z0258		controlled origin denomination					Denominazione di origine controllata|DOC					
+FOODON:00004053	Vintners Quality Alliance			VQA										
+FOODON:00004054	American Viticultural Area			AVA										
+FOODON:00004057	Denominación de Origen Protegida			protected denomination of origin								DOP|denominación de origin|DO		
+FOODON:00004058	Denominación de Origen Calificada			denomination of qualified origin								DOCa		
+FOODON:00004059	Vino de Pago			estate wine								VP		
+FOODON:00004060	Vino de Calidad con indicación geográfica			quality wine with geographic indication								VC		
+FOODON:00004061	Indicación geográfica protegida			PGI								IGP		
+FOODON:00004062	Vino de Mesa			table wine								VdM		
+FOODON:03530086	Appellation d'origine contrôlée			controlled designation of origin						Appellation d'origine contrôlée|AOC				
+FOODON:00002641	Bordeaux wine							claret						
+FOODON:00002639	Zakynthos wine			zante wine										
+FOODON:00002587	Chenin blanc grape cultivar									Pineau de la Loire				
+FOODON:00002594	Pinot gris wine								Pinot Grigio		Grauburgunder			
+FOODON:00002595	Pinot gris grape cultivar								Pinot Grigio grape		Grauburgunder			
+FOODON:00002596	Pinot noir wine									Rulandské modré|Pinot Nero	Blauburgunder|Spätburgunder			
+FOODON:00002605	Sauvignon blanc wine			Muskat-Silvaner						Sauvignon jaune|Blanc fume|Fume blanc				
+FOODON:00002607	Semillon wine									Sémillon wine				
+FOODON:00002608	Semillon grape cultivar									Sémillon grape				
+FOODON:00002609	Glera wine			Prosecco wine										
+FOODON:00002610	Glera grape cultivar			Prosecco grape										
+FOODON:00002611	Prosecco wine								spumante|frizzante|tranquillo					
+FOODON:00002613	Syrah grape cultivar			Shiraz										
+FOODON:00002615	Tempranillo grape cultivar											Ull de Llebre|Cencibel|Tinta del Pais	Aragonez|Tinta Roriz	
+FOODON:00002618	Zinfandel grape cultivar			Primitivo										
+FOODON:00002619	Frappato wine								Frappato Nero|Frappato Nero di Vittoria|Frappatu|Frappatu di Vittoria|Nerello|Nerello di Catania|Nero Capitano.					
+FOODON:00002620	Frappato grape cultivar								Frappato di Vittoria					
+FOODON:00002622	Gamay grape cultivar									Gamay Noir à Jus Blanc				
+FOODON:00002624	Gewürztraminer grape cultivar			Gewürz						Gewurztraminer				
+FOODON:00002626	Carignane grape cultivar								Carignano|Bovale Grande			Cariñena|Mazuelo|Samsó|Carinyena		
+FOODON:00002628	Grenache grape cultivar											Garnacha		
+FOODON:00002863	Blaufränkisch grape cultivar										Blaufränkisch grape|lemberger|Blauer Limberger|Blue Limberger			
+FOODON:00002868	Mourvèdre grape cultivar			Mourvèdre grape|Mataró|Monastrell								Monastrell		
+FOODON:00004046	grape pomace			marc|grape solids										
+FOODON:00002635	fusilli			rotini										
+FOODON:00002637	linguine			trenette										
+FOODON:03470177				microfiltration										
