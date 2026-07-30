@@ -1,20 +1,22 @@
-<?xml version='1.0' encoding='UTF-8'?>
-<catalog xmlns="urn:oasis:names:tc:entity:xmlns:xml:catalog" prefer="public">
-  <group id="odk-managed-catalog" prefer="public">
-    <uri name="http://purl.obolibrary.org/obo/foodon/imports/chebi_import.owl" uri="imports/chebi_import.owl" />
-    <uri name="http://purl.obolibrary.org/obo/foodon/imports/cob_import.owl" uri="imports/cob_import.owl" />
-    <uri name="http://purl.obolibrary.org/obo/foodon/imports/general_import.owl" uri="imports/general_import.owl" />
-    <uri name="http://purl.obolibrary.org/obo/foodon/imports/ncbitaxon_import.owl" uri="imports/ncbitaxon_import.owl" />
-    <uri name="http://purl.obolibrary.org/obo/foodon/components/product_type_import.ofn" uri="components/product_type_import.ofn" />
-    <uri name="http://purl.obolibrary.org/obo/foodon/components/siren_augment_codes.ofn" uri="components/siren_augment_codes.ofn" />
-    <uri name="http://purl.obolibrary.org/obo/foodon/components/robot_sssom_taxonomy.ofn" uri="components/robot_sssom_taxonomy.ofn" />
-    <uri name="http://purl.obolibrary.org/obo/foodon/components/deprecation_import.ofn" uri="components/deprecation_import.ofn" />
-    <uri name="http://purl.obolibrary.org/obo/foodon/components/gaz_import.ofn" uri="components/gaz_import.ofn" />
-    <uri name="http://purl.obolibrary.org/obo/foodon/components/cdno_import.ofn" uri="components/cdno_import.ofn" />
-    <uri name="http://purl.obolibrary.org/obo/foodon/components/animal_parts.ofn" uri="components/animal_parts.ofn" />
-    <uri name="http://purl.obolibrary.org/obo/foodon/components/food_materials.owl" uri="components/food_materials.owl" />
-    <uri name="http://purl.obolibrary.org/obo/foodon/components/food_products.owl" uri="components/food_products.owl" />
-    <uri name="http://purl.obolibrary.org/obo/foodon/components/food_process.owl" uri="components/food_process.owl" />
-  </group>
-  <uri id="Imports Wizard Entry" name="http://purl.obolibrary.org/obo/foodon/components/foodon_product_import.ofn" uri="components/foodon_product_import.ofn" />
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<catalog prefer="public" xmlns="urn:oasis:names:tc:entity:xmlns:xml:catalog">
+    <uri id="Imports Wizard Entry" name="http://purl.obolibrary.org/obo/foodon/releases/2026-07-30/components/sssom_mappings.owl" uri="components/sssom_mappings.owl"/>
+    <group id="odk-managed-catalog" prefer="public">
+        <uri name="http://purl.obolibrary.org/obo/foodon/imports/chebi_import.owl" uri="imports/chebi_import.owl"/>
+        <uri name="http://purl.obolibrary.org/obo/foodon/imports/cob_import.owl" uri="imports/cob_import.owl"/>
+        <uri name="http://purl.obolibrary.org/obo/foodon/imports/general_import.owl" uri="imports/general_import.owl"/>
+        <uri name="http://purl.obolibrary.org/obo/foodon/imports/ncbitaxon_import.owl" uri="imports/ncbitaxon_import.owl"/>
+        <uri name="http://purl.obolibrary.org/obo/foodon/components/foodon_product_import.ofn" uri="components/foodon_product_import.ofn"/>
+        <uri name="http://purl.obolibrary.org/obo/foodon/components/product_type_import.ofn" uri="components/product_type_import.ofn"/>
+        <uri name="http://purl.obolibrary.org/obo/foodon/components/siren_augment_codes.ofn" uri="components/siren_augment_codes.ofn"/>
+        <uri name="http://purl.obolibrary.org/obo/foodon/components/robot_sssom_taxonomy.ofn" uri="components/robot_sssom_taxonomy.ofn"/>
+        <uri name="http://purl.obolibrary.org/obo/foodon/components/deprecation_import.ofn" uri="components/deprecation_import.ofn"/>
+        <uri name="http://purl.obolibrary.org/obo/foodon/components/gaz_import.ofn" uri="components/gaz_import.ofn"/>
+        <uri name="http://purl.obolibrary.org/obo/foodon/components/cdno_import.ofn" uri="components/cdno_import.ofn"/>
+        <uri name="http://purl.obolibrary.org/obo/foodon/components/animal_parts.ofn" uri="components/animal_parts.ofn"/>
+        <uri name="http://purl.obolibrary.org/obo/foodon/components/food_materials.owl" uri="components/food_materials.owl"/>
+        <uri name="http://purl.obolibrary.org/obo/foodon/components/food_products.owl" uri="components/food_products.owl"/>
+        <uri name="http://purl.obolibrary.org/obo/foodon/components/food_process.owl" uri="components/food_process.owl"/>
+        <uri name="http://purl.obolibrary.org/obo/foodon/components/sssom_mappings.owl" uri="components/sssom_mappings.owl"/>
+    </group>
 </catalog>

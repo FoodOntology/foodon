@@ -41,3 +41,4 @@ These are the components in FOODON
 | food_materials.owl | None |
 | food_products.owl | None |
 | food_process.owl | None |
+| sssom_mappings.owl | None |
