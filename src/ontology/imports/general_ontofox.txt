@@ -153,6 +153,10 @@ http://purl.obolibrary.org/obo/AGRO_00000363 # greenhouse
 http://purl.obolibrary.org/obo/BFO_0000141 # immaterial entity (INTERCEPT for cob compatibility)
 http://purl.obolibrary.org/obo/BFO_0000040 # material entity
 http://purl.obolibrary.org/obo/BFO_0000015 # process
+
+http://purl.obolibrary.org/obo/AGRO_00002071 # agricultural process
+subClassOf http://purl.obolibrary.org/obo/COB_0000035 # completely executed planned process
+
 http://purl.obolibrary.org/obo/PATO_0000001 # quality
 subClassOf http://purl.obolibrary.org/obo/COB_0000502 # characteristic
 
