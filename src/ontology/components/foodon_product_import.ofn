@@ -29096,6 +29096,7 @@ AnnotationAssertion(obo:IAO_0000115 obo:FOODON_00005744 "live bacteria, yeasts o
 AnnotationAssertion(dcterms:contributor obo:FOODON_00005744 <https://orcid.org/0000-0002-8844-9165>)
 AnnotationAssertion(dcterms:date obo:FOODON_00005744 "2026-06-29T16:09:48Z"^^xsd:dateTime)
 AnnotationAssertion(rdfs:label obo:FOODON_00005744 "microbial food culture"@en)
+SubClassOf(obo:FOODON_00005744 obo:FOODON_00001145)
 
 # Class: obo:FOODON_00005745 (bacterial food culture)
 
@@ -83945,6 +83946,7 @@ AnnotationAssertion(oboInOwl:hasDbXref obo:FOODON_03311651 siren:F11651)
 AnnotationAssertion(rdfs:label obo:FOODON_03311651 "bubod starter culture"@en)
 AnnotationAssertion(rdfs:seeAlso obo:FOODON_03311651 "https://www.jstage.jst.go.jp/article/jbrewsocjapan1988/85/11/85_11_818/_article"^^xsd:anyURI)
 SubClassOf(obo:FOODON_03311651 obo:FOODON_00001145)
+SubClassOf(obo:FOODON_03311651 ObjectSomeValuesFrom(obo:RO_0001000 obo:FOODON_03411016))
 SubClassOf(obo:FOODON_03311651 ObjectSomeValuesFrom(obo:RO_0002350 obo:FOODON_03400125))
 
 # Class: obo:FOODON_03311653 (turkey breast (roasted))
@@ -99924,6 +99926,7 @@ SubClassOf(obo:FOODON_03420154 obo:FOODON_00002399)
 
 AnnotationAssertion(obo:IAO_0000114 obo:FOODON_03420156 obo:IAO_0000428)
 AnnotationAssertion(obo:IAO_0000115 obo:FOODON_03420156 "Soft sugar whose crystals are covered by a film of refined dark syrup that imparts color, flavor, and moisture."@en)
+AnnotationAssertion(oboInOwl:hasDbXref obo:FOODON_03420156 <siren:F2833>)
 AnnotationAssertion(oboInOwl:hasDbXref obo:FOODON_03420156 "langual:C0156")
 AnnotationAssertion(rdfs:label obo:FOODON_03420156 "brown sugar"@en)
 SubClassOf(obo:FOODON_03420156 obo:FOODON_00001083)
