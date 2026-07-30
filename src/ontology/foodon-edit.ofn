@@ -42,6 +42,7 @@ Import(<http://purl.obolibrary.org/obo/foodon/components/gaz_import.ofn>)
 Import(<http://purl.obolibrary.org/obo/foodon/components/product_type_import.ofn>)
 Import(<http://purl.obolibrary.org/obo/foodon/components/robot_sssom_taxonomy.ofn>)
 Import(<http://purl.obolibrary.org/obo/foodon/components/siren_augment_codes.ofn>)
+Import(<http://purl.obolibrary.org/obo/foodon/components/sssom_mappings.owl>)
 Import(<http://purl.obolibrary.org/obo/foodon/imports/chebi_import.owl>)
 Import(<http://purl.obolibrary.org/obo/foodon/imports/cob_import.owl>)
 Import(<http://purl.obolibrary.org/obo/foodon/imports/general_import.owl>)
@@ -10432,10 +10433,6 @@ DataPropertyRange(<https://www.w3.org/TR/owl-time/#time:numericDuration> xsd:dec
 ############################
 #   Classes
 ############################
-
-# Class: obo:AGRO_00002071 (agricultural process)
-
-SubClassOf(obo:AGRO_00002071 obo:COB_0000035)
 
 # Class: obo:AfPO_0000188 (Eastern African)
 
@@ -27497,10 +27494,6 @@ SubClassOf(obo:FOODON_03311623 ObjectSomeValuesFrom(obo:RO_0001000 obo:FOODON_03
 # Class: obo:FOODON_03311632 (cake yellow)
 
 SubClassOf(obo:FOODON_03311632 ObjectSomeValuesFrom(obo:RO_0001000 obo:FOODON_03411312))
-
-# Class: obo:FOODON_03311651 (bubod starter culture)
-
-SubClassOf(obo:FOODON_03311651 ObjectSomeValuesFrom(obo:RO_0001000 obo:FOODON_03411016))
 
 # Class: obo:FOODON_03311664 (lamb (roasted))
 
@@ -84208,14 +84201,14 @@ AnnotationAssertion(rdfs:comment obo:FOODON_03530108 "Food preparation can be di
 AnnotationAssertion(rdfs:label obo:FOODON_03530108 "food preparation"@en)
 SubClassOf(obo:FOODON_03530108 obo:FOODON_03530206)
 
-# Class: obo:FOODON_03530109 (home food preparation process)
+# Class: obo:FOODON_03530109 (home food preparation)
 
 AnnotationAssertion(obo:IAO_0000114 obo:FOODON_03530109 obo:IAO_0000122)
-AnnotationAssertion(obo:IAO_0000115 obo:FOODON_03530109 "The process of preparing food at a human residence."@en)
+AnnotationAssertion(obo:IAO_0000115 obo:FOODON_03530109 "A food preparation process within the context of a human residence."@en)
 AnnotationAssertion(oboInOwl:hasDbXref obo:FOODON_03530109 langual:Z0109)
 AnnotationAssertion(oboInOwl:hasSynonym obo:FOODON_03530109 "homemade"@en)
 AnnotationAssertion(oboInOwl:hasSynonym obo:FOODON_03530109 "prepared in home"@en)
-AnnotationAssertion(rdfs:label obo:FOODON_03530109 "home food preparation process"@en)
+AnnotationAssertion(rdfs:label obo:FOODON_03530109 "home food preparation"@en)
 SubClassOf(obo:FOODON_03530109 obo:FOODON_03530108)
 
 # Class: obo:FOODON_03530110 (restaurant food preparation process)
@@ -84234,28 +84227,28 @@ AnnotationAssertion(oboInOwl:hasDbXref obo:FOODON_03530111 langual:Z0111)
 AnnotationAssertion(rdfs:label obo:FOODON_03530111 "fast food outlet preparation process"@en)
 SubClassOf(obo:FOODON_03530111 obo:FOODON_03530119)
 
-# Class: obo:FOODON_03530112 (food industry preparation process)
+# Class: obo:FOODON_03530112 (food industry preparation)
 
 AnnotationAssertion(obo:IAO_0000114 obo:FOODON_03530112 obo:IAO_0000122)
-AnnotationAssertion(obo:IAO_0000115 obo:FOODON_03530112 "The process of preparing food in an industrial facility."@en)
+AnnotationAssertion(obo:IAO_0000115 obo:FOODON_03530112 "A food preparation process within the context of an industrial facility."@en)
 AnnotationAssertion(oboInOwl:hasDbXref obo:FOODON_03530112 langual:Z0112)
-AnnotationAssertion(rdfs:label obo:FOODON_03530112 "food industry preparation process"@en)
+AnnotationAssertion(rdfs:label obo:FOODON_03530112 "food industry preparation"@en)
 SubClassOf(obo:FOODON_03530112 obo:FOODON_03530108)
 
-# Class: obo:FOODON_03530113 (commissary food preparation process)
+# Class: obo:FOODON_03530113 (commissary food preparation)
 
 AnnotationAssertion(obo:IAO_0000114 obo:FOODON_03530113 obo:IAO_0000122)
-AnnotationAssertion(obo:IAO_0000115 obo:FOODON_03530113 "The process of preparing food in a commissary."@en)
+AnnotationAssertion(obo:IAO_0000115 obo:FOODON_03530113 "A food preparation process within the context of a commissary."@en)
 AnnotationAssertion(oboInOwl:hasDbXref obo:FOODON_03530113 langual:Z0113)
-AnnotationAssertion(rdfs:label obo:FOODON_03530113 "commissary food preparation process"@en)
+AnnotationAssertion(rdfs:label obo:FOODON_03530113 "commissary food preparation"@en)
 SubClassOf(obo:FOODON_03530113 obo:FOODON_03530108)
 
-# Class: obo:FOODON_03530119 (restaurant or fast food preparation process)
+# Class: obo:FOODON_03530119 (restaurant or fast food preparation)
 
 AnnotationAssertion(obo:IAO_0000114 obo:FOODON_03530119 obo:IAO_0000122)
-AnnotationAssertion(obo:IAO_0000115 obo:FOODON_03530119 "The process of preparing and serving food in a restaurant or fast food outlet."@en)
+AnnotationAssertion(obo:IAO_0000115 obo:FOODON_03530119 "A food preparation process within the context of a restaurant or fast food outlet."@en)
 AnnotationAssertion(oboInOwl:hasDbXref obo:FOODON_03530119 langual:Z0119)
-AnnotationAssertion(rdfs:label obo:FOODON_03530119 "restaurant or fast food preparation process"@en)
+AnnotationAssertion(rdfs:label obo:FOODON_03530119 "restaurant or fast food preparation"@en)
 SubClassOf(obo:FOODON_03530119 obo:FOODON_03530108)
 
 # Class: obo:FOODON_03530120 (street vendor food retail process)
