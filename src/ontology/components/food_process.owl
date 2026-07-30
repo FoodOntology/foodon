@@ -30,8 +30,8 @@ Prefix(indexfungorum:=<http://www.indexfungorum.org/names/NamesRecord.asp?Record
 
 
 Ontology(<http://purl.obolibrary.org/obo/foodon/components/food_process.owl>
-<http://purl.obolibrary.org/obo/foodon/releases/2026-07-16/components/food_process.owl>
-Annotation(owl:versionInfo "2026-07-16")
+<http://purl.obolibrary.org/obo/foodon/releases/2026-07-30/components/food_process.owl>
+Annotation(owl:versionInfo "2026-07-30")
 
 Declaration(Class(obo:BFO_0000040))
 Declaration(Class(obo:COB_0000035))
@@ -430,6 +430,7 @@ Declaration(Class(obo:FOODON_03450026))
 Declaration(Class(obo:FOODON_03450027))
 Declaration(Class(obo:FOODON_03450028))
 Declaration(Class(obo:FOODON_03450029))
+Declaration(Class(obo:FOODON_03450030))
 Declaration(Class(obo:FOODON_03450031))
 Declaration(Class(obo:FOODON_03450032))
 Declaration(Class(obo:FOODON_03450033))
@@ -607,6 +608,7 @@ Declaration(Class(obo:FOODON_03470149))
 Declaration(Class(obo:FOODON_03470150))
 Declaration(Class(obo:FOODON_03470151))
 Declaration(Class(obo:FOODON_03470152))
+Declaration(Class(obo:FOODON_03470153))
 Declaration(Class(obo:FOODON_03470154))
 Declaration(Class(obo:FOODON_03470155))
 Declaration(Class(obo:FOODON_03470156))
@@ -829,7 +831,7 @@ SubClassOf(obo:FOODON_00002642 obo:FOODON_00002454)
 # Class: obo:FOODON_00002643 (food (dehydrated))
 
 AnnotationAssertion(obo:IAO_0000115 obo:FOODON_00002643 "Food material which has been dehydrated."@en)
-AnnotationAssertion(rdfs:comment obo:FOODON_00002643 "Dehydrated foods are those with no more than 2.5% water (dry basis), while the term dried foods applies to any food product with more than 2.5% water (dry basis). [https://ebooks.inflibnet.ac.in/ftp1/chapter/food-drying-dehydration/]"@en)
+AnnotationAssertion(rdfs:comment obo:FOODON_00002643 "Dehydrated foods are those with no more than 2.5% water (dry basis), while the term dried foods applies to any food product with more than 2.5% water (dry basis).\" [https://ebooks.inflibnet.ac.in/ftp1/chapter/food-drying-dehydration/]"@en)
 AnnotationAssertion(rdfs:label obo:FOODON_00002643 "food (dehydrated)"@en)
 SubClassOf(obo:FOODON_00002643 obo:FOODON_00002645)
 
@@ -930,7 +932,7 @@ SubClassOf(obo:FOODON_00002755 obo:FOODON_00002454)
 AnnotationAssertion(obo:IAO_0000115 obo:FOODON_00002814 "An animal harvesting process in which a fish is slaughtered by insertion of a spike quickly and directly into the hindbrain, usually located slightly behind and above the eye, thereby causing immediate brain death, which enables the quality of the fishes' meat to be maintained."@en)
 AnnotationAssertion(obo:IAO_0000119 obo:FOODON_00002814 wikipedia:Ikejime)
 AnnotationAssertion(dcterms:contributor obo:FOODON_00002814 <https://orcid.org/0000-0002-8844-9165>)
-AnnotationAssertion(rdfs:comment obo:FOODON_00002814 "The technique originated in Japan, but is now in widespread use. [...] When spiked correctly, the fish fins flare and the fish relaxes, immediately ceasing all motion. Destroying the brain and the spinal cord of the fish will prevent reflex action from happening; such muscle movements would otherwise consume adenosine triphosphate (ATP) in the muscle, and as a result produce lactic acid and ammonia, making the fish sour, soggy and less tasteful. Furthermore, the blood contained in the fish flesh retracts to the gut cavity, which produces a better coloured and flavoured fillet, and prolongs shelf life. [Wikipedia]"@en)
+AnnotationAssertion(rdfs:comment obo:FOODON_00002814 "The technique originated in Japan, but is now in widespread use. [...] When spiked correctly, the fish fins flare and the fish relaxes, immediately ceasing all motion. Destroying the brain and the spinal cord of the fish will prevent reflex action from happening; such muscle movements would otherwise consume adenosine triphosphate (ATP) in the muscle, and as a result produce lactic acid and ammonia, making the fish sour, soggy and less tasteful. Furthermore, the blood contained in the fish flesh retracts to the gut cavity, which produces a better coloured and flavoured fillet, and prolongs shelf life.\" [Wikipedia]"@en)
 AnnotationAssertion(rdfs:label obo:FOODON_00002814 "ikajime"@en)
 SubClassOf(obo:FOODON_00002814 obo:FOODON_00005719)
 SubClassOf(obo:FOODON_00002814 obo:FOODON_03460111)
@@ -1064,7 +1066,7 @@ SubClassOf(obo:FOODON_00004070 obo:FOODON_00004069)
 
 AnnotationAssertion(obo:IAO_0000115 obo:FOODON_00004071 "A method of maceration involving high-temperature treatment of grape must before fermentation."@en)
 AnnotationAssertion(obo:IAO_0000119 obo:FOODON_00004071 <https://www.bio-conferences.org/articles/bioconf/full_html/2017/02/bioconf-oiv2017_02032>)
-AnnotationAssertion(rdfs:comment obo:FOODON_00004071 "Various techniques of thermo-maceration were developed on the basis of evolution of the industrial technologies. The extraction principle consists in heating the whole grapes or the crushed and destemmed grapes to high temperatures (65–80◦C), promoting the diffusion of phenolics from the skins, especially anthocyanins.[https://www.bio-conferences.org/articles/bioconf/full_html/2017/02/bioconf-oiv2017_02032]"@en)
+AnnotationAssertion(rdfs:comment obo:FOODON_00004071 "Various techniques of thermo-maceration were developed on the basis of evolution of the industrial technologies. The extraction principle consists in heating the whole grapes or the crushed and destemmed grapes to high temperatures (65–80◦C), promoting the diffusion of phenolics from the skins, especially anthocyanins.\"[https://www.bio-conferences.org/articles/bioconf/full_html/2017/02/bioconf-oiv2017_02032]"@en)
 AnnotationAssertion(rdfs:label obo:FOODON_00004071 "hot maceration"@en)
 SubClassOf(obo:FOODON_00004071 obo:FOODON_00004069)
 
@@ -1093,7 +1095,7 @@ SubClassOf(obo:FOODON_00004074 obo:FOODON_00004069)
 
 AnnotationAssertion(obo:IAO_0000115 obo:FOODON_00004075 "A maceration process in which whole grapes are fermented in a carbon dioxide rich environment before crushing.  Fermentation occurs within grape tissue, rather than from the skin surface."@en)
 AnnotationAssertion(obo:IAO_0000119 obo:FOODON_00004075 wikipedia:Carbonic_maceration)
-AnnotationAssertion(rdfs:comment obo:FOODON_00004075 "This method involves filling a sealed vessel with carbon dioxide and then adding whole grapes or grape clusters. ... Carbonic maceration ferments most of the juice while it is still inside the grape, although grapes at the bottom of the vessel are crushed by gravity and undergo conventional fermentation.[https://en.wikipedia.org/wiki/Carbonic_maceration]"@en)
+AnnotationAssertion(rdfs:comment obo:FOODON_00004075 "This method involves filling a sealed vessel with carbon dioxide and then adding whole grapes or grape clusters. ... Carbonic maceration ferments most of the juice while it is still inside the grape, although grapes at the bottom of the vessel are crushed by gravity and undergo conventional fermentation.\"[https://en.wikipedia.org/wiki/Carbonic_maceration]"@en)
 AnnotationAssertion(rdfs:label obo:FOODON_00004075 "carbonic maceration"@en)
 SubClassOf(obo:FOODON_00004075 obo:FOODON_00004069)
 SubClassOf(obo:FOODON_00004075 ObjectSomeValuesFrom(obo:OBI_0000293 obo:FOODON_00003417))
@@ -1315,7 +1317,7 @@ SubClassOf(obo:FOODON_00005709 obo:FOODON_03000547)
 
 # Class: obo:FOODON_03000001 (food peeling)
 
-AnnotationAssertion(obo:IAO_0000115 obo:FOODON_03000001 "peeling is the process of removing the outer covering, layer or skin from a fruit, vegetable, or plant or animal (such as a shrimp)."@en)
+AnnotationAssertion(obo:IAO_0000115 obo:FOODON_03000001 "peeling\" is the process of removing the outer covering, layer or skin from a fruit, vegetable, or plant or animal (such as a shrimp)."@en)
 AnnotationAssertion(dcterms:contributor obo:FOODON_03000001 <https://orcid.org/0000-0002-8844-9165>)
 AnnotationAssertion(rdfs:label obo:FOODON_03000001 "food peeling"@en)
 SubClassOf(obo:FOODON_03000001 obo:FOODON_03460238)
@@ -1460,7 +1462,7 @@ SubClassOf(obo:FOODON_03000513 obo:PATO_0000146)
 # Class: obo:FOODON_03000514 (controlled environment)
 
 AnnotationAssertion(obo:IAO_0000115 obo:FOODON_03000514 "An environment which is temperature and humidity controlled."@en)
-AnnotationAssertion(rdfs:comment obo:FOODON_03000514 "syn . regulated environment Using the word \"controlled\" here rather than \"regulated\" since regulated may imply not just mechanical but regulatory control."@en)
+AnnotationAssertion(rdfs:comment obo:FOODON_03000514 "Using the word \"controlled\" here rather than \"regulated\" since regulated may imply not just mechanical but regulatory control."@en)
 AnnotationAssertion(rdfs:label obo:FOODON_03000514 "controlled environment"@en)
 SubClassOf(obo:FOODON_03000514 obo:BFO_0000040)
 
@@ -1556,7 +1558,7 @@ SubClassOf(obo:FOODON_03000527 obo:FOODON_03000526)
 
 AnnotationAssertion(obo:IAO_0000115 obo:FOODON_03000528 "A temperature characteristic of a liquid at which the vapour pressure of the liquid equals the pressure surrounding the liquid and the liquid changes into a vapour."@en)
 AnnotationAssertion(obo:IAO_0000119 obo:FOODON_03000528 wikipedia:Boiling_point)
-AnnotationAssertion(rdfs:comment obo:FOODON_03000528 "The boiling point of a liquid varies depending upon the surrounding environmental pressure.[https://en.wikipedia.org/wiki/Boiling_point]"@en)
+AnnotationAssertion(rdfs:comment obo:FOODON_03000528 "The boiling point of a liquid varies depending upon the surrounding environmental pressure.\"[https://en.wikipedia.org/wiki/Boiling_point]"@en)
 AnnotationAssertion(rdfs:label obo:FOODON_03000528 "boiling point"@en)
 SubClassOf(obo:FOODON_03000528 obo:PATO_0000146)
 
@@ -3046,6 +3048,12 @@ AnnotationAssertion(rdfs:label obo:FOODON_03450029 "deep-frying"@en)
 SubClassOf(obo:FOODON_03450029 obo:FOODON_03450025)
 SubClassOf(obo:FOODON_03450029 ObjectSomeValuesFrom(obo:OBI_0000299 obo:FOODON_03307052))
 
+# Class: obo:FOODON_03450030 (cooking with inherent fat or oil)
+
+AnnotationAssertion(obo:IAO_0000115 obo:FOODON_03450030 "Cooked in fat or oil rendered from the food being prepared."@en)
+AnnotationAssertion(rdfs:label obo:FOODON_03450030 "cooking with inherent fat or oil"@en)
+SubClassOf(obo:FOODON_03450030 obo:FOODON_03450024)
+
 # Class: obo:FOODON_03450031 (heating of container by immersion in water or steam)
 
 AnnotationAssertion(obo:IAO_0000115 obo:FOODON_03450031 "A heating of container where the container is closed, such as a pouch, and is immersed in hot water or steam."@en)
@@ -3357,7 +3365,7 @@ SubClassOf(obo:FOODON_03460182 obo:FOODON_03460130)
 
 AnnotationAssertion(obo:IAO_0000115 obo:FOODON_03460190 "A process of preserving or extending the shelf life of food by either anaerobic fermentation in brine or immersion in vinegar."@en)
 AnnotationAssertion(obo:IAO_0000119 obo:FOODON_03460190 wikipedia:Pickling)
-AnnotationAssertion(rdfs:comment obo:FOODON_03460190 "LanguaL curation note: Also index by other applicable terms from *MICROBIALLY/ ENZYMATICALLY MODIFIED*.  LanguaL definition: \"Treated with acid that may be produced by fermentation or added and/or with salt brine, often in the presence of spices or herbs, producing changes in flavor and texture.\""@en)
+AnnotationAssertion(rdfs:comment obo:FOODON_03460190 "LanguaL curation note: Also index by other applicable terms from *MICROBIALLY/ ENZYMATICALLY MODIFIED*.  LanguaL definition: \"Treated with acid that may be produced by fermentation or added and/or with salt brine, often in the presence of spices or herbs, producing changes in flavor and texture."@en)
 AnnotationAssertion(rdfs:label obo:FOODON_03460190 "pickling"@en)
 SubClassOf(obo:FOODON_03460190 obo:FOODON_03460119)
 
@@ -3597,7 +3605,6 @@ SubClassOf(obo:FOODON_03460278 obo:FOODON_03460130)
 # Class: obo:FOODON_03460279 (sterile (sensu material))
 
 AnnotationAssertion(obo:IAO_0000115 obo:FOODON_03460279 "A characteristic of a material entity indicating that it has undergone sterilization."@en)
-AnnotationAssertion(rdfs:comment obo:FOODON_03460279 "DIFFERENT: PATO Sterile refers to bearer's ability to reproduce:\" A fertility quality inhering in a bearer by virtue of the bearer's being incapable of initiating, sustaining, or supporting reproduction."@en)
 AnnotationAssertion(rdfs:label obo:FOODON_03460279 "sterile (sensu material)"@en)
 SubClassOf(obo:FOODON_03460279 obo:PATO_0002198)
 
@@ -3689,7 +3696,7 @@ SubClassOf(obo:FOODON_03460300 obo:FOODON_03460256)
 
 AnnotationAssertion(obo:IAO_0000115 obo:FOODON_03460306 "The mixing of two liquid or solid-liquid components [by a process of severe mixing, stirring and beating] with the objective of creating an emulsion."@en)
 AnnotationAssertion(obo:IAO_0000119 obo:FOODON_03460306 <https://ebooks.inflibnet.ac.in/ftp02/chapter/size-reduction-2-emulsification-and-homogenization/>)
-AnnotationAssertion(rdfs:comment obo:FOODON_03460306 "LanguaL curation note: Used for products in which two or more phases are mixed very finely but not at the molecular level. A very fine dispersion of a solid in a liquid is called a suspension. A very fine dispersion of one liquid in another immiscible liquid is called an emulsion. Renamed from 'food homogenization or emulsification process' in order to move homogenization into a subclass."@en)
+AnnotationAssertion(rdfs:comment obo:FOODON_03460306 "LanguaL curation note: \"Used for products in which two or more phases are mixed very finely but not at the molecular level. A very fine dispersion of a solid in a liquid is called a suspension. A very fine dispersion of one liquid in another immiscible liquid is called an emulsion.\" Renamed from \"food homogenization or emulsification process\" in order to move homogenization into a subclass."@en)
 AnnotationAssertion(rdfs:label obo:FOODON_03460306 "emulsification"@en)
 SubClassOf(obo:FOODON_03460306 obo:FOODON_03000690)
 
@@ -3881,7 +3888,7 @@ SubClassOf(obo:FOODON_03470106 obo:FOODON_03470145)
 # Class: obo:FOODON_03470107 (food preservation)
 
 AnnotationAssertion(obo:IAO_0000115 obo:FOODON_03470107 "A food treatment which contributes to the prevention or retardation of microbial, enzymatic or oxidative spoilage and thus to the durability of food material."@en)
-AnnotationAssertion(rdfs:comment obo:FOODON_03470107 "LanguaL curation notes:  - This term is for CLASSIFICATION ONLY; DO NOT USE term in indexing. Use a more precise narrower term. - Index all methods for which information is available, even if a corresponding descriptor has already been used in *H. TREATMENT APPLIED*. Preservation descriptors refer to the finished food as a whole with these exceptions: (1) if the components of a multi-component food, such as cream pie, are preservation by different methods, index all methods; (2)  if chemical preservatives are declared on the label, always index them even if it is known that the preservative was introduced through or is only present in a component or ingredient of the food; and (3) if the preservation method for an ingredient is declared on the label (such as brie cheese made from pasteurized milk) index it. Also use *INGREDIENT preservation by THERMAL PROCESSING* or *INGREDIENT preservation by IRRADIATION* when ingredients have been pasteurized, ultrapasteurized, sterilized or irradiated."@en)
+AnnotationAssertion(rdfs:comment obo:FOODON_03470107 "LanguaL curation notes: This term is for CLASSIFICATION ONLY; DO NOT USE term in indexing. Use a more precise narrower term. Index all methods for which information is available, even if a corresponding descriptor has already been used in *H. TREATMENT APPLIED*. Preservation descriptors refer to the finished food as a whole with these exceptions: (1) if the components of a multi-component food, such as cream pie, are preservation by different methods, index all methods; (2)  if chemical preservatives are declared on the label, always index them even if it is known that the preservative was introduced through or is only present in a component or ingredient of the food; and (3) if the preservation method for an ingredient is declared on the label (such as brie cheese made from pasteurized milk) index it. Also use *INGREDIENT preservation by THERMAL PROCESSING* or *INGREDIENT preservation by IRRADIATION* when ingredients have been pasteurized, ultrapasteurized, sterilized or irradiated."@en)
 AnnotationAssertion(rdfs:label obo:FOODON_03470107 "food preservation"@en)
 SubClassOf(obo:FOODON_03470107 obo:FOODON_03460111)
 
@@ -4018,7 +4025,7 @@ SubClassOf(obo:FOODON_03470129 obo:FOODON_03470102)
 
 AnnotationAssertion(obo:IAO_0000115 obo:FOODON_03470130 "Dehydration of food material by freezing it within a vacuum to remove moisture via sublimation, which turns ice directly into vapor."@en)
 AnnotationAssertion(obo:IAO_0000119 obo:FOODON_03470130 wikipedia:Freeze_drying)
-AnnotationAssertion(rdfs:comment obo:FOODON_03470130 "LanguaL note: \"Usually the product is not stored frozen.\" synonyms: lyophilization or cryodesiccation"@en)
+AnnotationAssertion(rdfs:comment obo:FOODON_03470130 "LanguaL note: \"Usually the product is not stored frozen."@en)
 AnnotationAssertion(rdfs:label obo:FOODON_03470130 "freeze-drying"@en)
 SubClassOf(obo:FOODON_03470130 obo:FOODON_03000617)
 
@@ -4033,7 +4040,7 @@ SubClassOf(obo:FOODON_03470131 obo:FOODON_03000531)
 
 AnnotationAssertion(obo:IAO_0000115 obo:FOODON_03470132 "A freezing process which happens much more quickly than slow (conventional) freezing,"@en)
 AnnotationAssertion(obo:IAO_0000119 obo:FOODON_03470132 wikipedia:Frozen_food)
-AnnotationAssertion(rdfs:comment obo:FOODON_03470132 "syn \"fast freezing\""@en)
+AnnotationAssertion(rdfs:comment obo:FOODON_03470132 "syn \"fast freezing"@en)
 AnnotationAssertion(rdfs:label obo:FOODON_03470132 "quick freezing"@en)
 SubClassOf(obo:FOODON_03470132 obo:FOODON_03470136)
 
@@ -4094,7 +4101,7 @@ SubClassOf(obo:FOODON_03470140 obo:FOODON_03470143)
 # Class: obo:FOODON_03470141 (natural heat drying)
 
 AnnotationAssertion(obo:IAO_0000115 obo:FOODON_03470141 "Drying by exposure to the sun and/or ambient air."@en)
-AnnotationAssertion(rdfs:comment obo:FOODON_03470141 "LanguaL note: \"Includes field-dried products such as grains and dry beans. These products are included also if they have been artificially dried to return them to normal dry state, e.g. grain that has been artificially dried after harvest.\""@en)
+AnnotationAssertion(rdfs:comment obo:FOODON_03470141 "LanguaL note: \"Includes field-dried products such as grains and dry beans. These products are included also if they have been artificially dried to return them to normal dry state, e.g. grain that has been artificially dried after harvest."@en)
 AnnotationAssertion(rdfs:label obo:FOODON_03470141 "natural heat drying"@en)
 SubClassOf(obo:FOODON_03470141 obo:FOODON_03470117)
 
@@ -4168,6 +4175,12 @@ AnnotationAssertion(obo:IAO_0000119 obo:FOODON_03470152 wikipedia:Ionizing_radia
 AnnotationAssertion(rdfs:comment obo:FOODON_03470152 "LanguaL curation note: Used when an ingredient or a component of a food has been preservation by irradiation."@en)
 AnnotationAssertion(rdfs:label obo:FOODON_03470152 "food material preservation by irradiation"@en)
 SubClassOf(obo:FOODON_03470152 obo:FOODON_03470138)
+
+# Class: obo:FOODON_03470153 (preservation by adding spices or extracts)
+
+AnnotationAssertion(obo:IAO_0000115 obo:FOODON_03470153 "Preservation by adding spices or extracts (e.g. garlic, onion, horseradish, paprika) to suppress or inhibit undesirable micro-organisms, enzyme activity, or oxidative changes."@en)
+AnnotationAssertion(rdfs:label obo:FOODON_03470153 "preservation by adding spices or extracts"@en)
+SubClassOf(obo:FOODON_03470153 obo:FOODON_03470107)
 
 # Class: obo:FOODON_03470154 (preservation by adding inorganic acids or salts)
 
@@ -4297,7 +4310,7 @@ SubClassOf(obo:FOODON_03470174 obo:FOODON_03470176)
 AnnotationAssertion(obo:IAO_0000115 obo:FOODON_03470175 "Blanching is a cooking process wherein a food, usually a vegetable or fruit, is scalded in boiling water, removed after a brief, timed interval, and finally plunged into iced water or placed under cold running water to halt the cooking process."@en)
 AnnotationAssertion(obo:IAO_0000119 obo:FOODON_03470175 <https://en.wikipedia.org/wiki/Blanching_(cooking)>)
 AnnotationAssertion(dcterms:contributor obo:FOODON_03470175 <https://orcid.org/0000-0002-8844-9165>)
-AnnotationAssertion(rdfs:comment obo:FOODON_03470175 "LanguaL definition: \"Short time scalding; this can be used to stop emzymatic activity for vegetables being prepared for freezing.\""@en)
+AnnotationAssertion(rdfs:comment obo:FOODON_03470175 "LanguaL definition: \"Short time scalding; this can be used to stop emzymatic activity for vegetables being prepared for freezing."@en)
 AnnotationAssertion(rdfs:label obo:FOODON_03470175 "food blanching"@en)
 SubClassOf(obo:FOODON_03470175 obo:FOODON_03000548)
 SubClassOf(obo:FOODON_03470175 obo:FOODON_03460130)
