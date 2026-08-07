@@ -1,0 +1,158 @@
+{
+  "_comment": "Edit this file to configure your paper. Run convert_to_ceur.py to regenerate the PDF. File: paper_config.json",
+  "doc_url": "https://docs.google.com/document/d/1BHsEGD81Z7XGb87GMlIbVOp4HRSwEFje3dXe6NdKjBE",
+  "export_format": "docx",
+  "output_pdf": "food_composition_triumvirate.pdf",
+  "pdf_engine": "auto",
+  "title": "The Food Composition Triumvirate: Ingredients, their Characteristics and Processes",
+  "title_note": "",
+  "conference": "Proceedings of the Joint Ontology Workshops (JOWO) - Episode XII: The Tropical Spring of Ontology, co-located with the 16th International Conference on Formal Ontology in Information Systems (FOIS 2026), September 21-22, 2026, Vitória (ES), Brazil",
+  "copyrightyear": "2026",
+  "copyrightclause": "Copyright for this paper by its authors. Use permitted under Creative Commons License Attribution 4.0 International (CC BY 4.0).",
+  "abstract": "",
+  "abstract_from_doc": true,
+  "abstract_heading": "Abstract",
+  "remove_abstract_from_body": true,
+  "keywords": [
+    "food systems",
+    "ontology",
+    "food processing",
+    "recipe",
+    "cooking"
+  ],
+  "keywords_heading": "Keywords",
+  "remove_keywords_from_body": true,
+  "authors": [
+    {
+      "name": "Damion Dooley",
+      "affils": "1",
+      "orcid": "0000-0002-8844-9165",
+      "email": "damion_dooley@sfu.ca",
+      "url": "",
+      "corresponding": true,
+      "equal_contribution": false
+    },
+    {
+      "name": "Robert Warren",
+      "affils": "2",
+      "orcid": "0000-0002-7066-1141",
+      "email": "",
+      "url": "",
+      "corresponding": false,
+      "equal_contribution": false
+    },
+    {
+      "name": "Sarah Brinkley",
+      "affils": "3",
+      "orcid": "0000-0002-0995-0278",
+      "email": "",
+      "url": "",
+      "corresponding": false,
+      "equal_contribution": false
+    },
+    {
+      "name": "Hande McGinty",
+      "affils": "4",
+      "orcid": "0000-0002-9025-5538",
+      "email": "",
+      "url": "",
+      "corresponding": false,
+      "equal_contribution": false
+    },
+    {
+      "name": "Emily Steliotes",
+      "affils": "5",
+      "orcid": "0009-0006-0501-880X",
+      "email": "",
+      "url": "",
+      "corresponding": false,
+      "equal_contribution": false
+    },
+    {
+      "name": "Anoosha Sehar",
+      "affils": "1",
+      "orcid": "0000-0001-5275-8866",
+      "email": "",
+      "url": "",
+      "corresponding": false,
+      "equal_contribution": false
+    },
+    {
+      "name": "Rhiannon Cameron",
+      "affils": "1",
+      "orcid": "0000-0002-9578-0788",
+      "email": "",
+      "url": "",
+      "corresponding": false,
+      "equal_contribution": false
+    },
+    {
+      "name": "Colin Fontaine",
+      "affils": "6",
+      "orcid": "0009-0004-1269-7818",
+      "email": "",
+      "url": "",
+      "corresponding": false,
+      "equal_contribution": false
+    },
+    {
+      "name": "Jenny Gallo",
+      "affils": "7",
+      "orcid": "0000-0003-3653-3805",
+      "email": "",
+      "url": "",
+      "corresponding": false,
+      "equal_contribution": false
+    },
+    {
+      "name": "Magalie Weber",
+      "affils": "8",
+      "orcid": "0000-0001-6573-4070",
+      "email": "",
+      "url": "",
+      "corresponding": false,
+      "equal_contribution": false
+    }
+  ],
+  "affiliations": [
+    {
+      "num": "1",
+      "text": "Simon Fraser University, Burnaby, BC, Canada"
+    },
+    {
+      "num": "2",
+      "text": "Glengarry Agriculture and Forestry, Guelph, ON, Canada"
+    },
+    {
+      "num": "3",
+      "text": "The Periodic Table of Food Initiative (PTFI), American Heart Association, Oakland, CA, USA"
+    },
+    {
+      "num": "4",
+      "text": "Department of Computer Science, Kansas State University, Manhattan, KS, USA"
+    },
+    {
+      "num": "5",
+      "text": "International Center for Food Ontology Operability Data and Semantics (IC-FOODS), Davis, CA, USA"
+    },
+    {
+      "num": "6",
+      "text": "Independent Researcher, Philadelphia, PA, USA"
+    },
+    {
+      "num": "7",
+      "text": "The Periodic Table of Food Initiative, The International Center for Tropical Agriculture (CIAT), CGIAR, Cali, Colombia"
+    },
+    {
+      "num": "8",
+      "text": "Institut National de Recherche pour l'Agriculture l'Alimentation et l'Environnement (INRAE), UR BIA, Nantes, Pays de la Loire, France"
+    }
+  ],
+  "cortext": "Corresponding author.",
+  "acknowledgments": "",
+  "bib_file": "",
+  "pandoc_extra_args": [],
+  "genai_uses": [],
+  "genai_tools": "",
+  "genai_declaration": "The author(s) have not employed any Generative AI tools."
+}
