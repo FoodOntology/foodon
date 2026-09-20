@@ -27,7 +27,7 @@ FOODON:02000418	piece(s) of beef (deboned)	piece(s) of beef (mechanically debone
 FOODON:02000419	piece(s) of beef (mechanically deboned)	piece(s) of beef (mechanically deboned, raw)	'piece(s) of beef (mechanically deboned)' and 'has quality' some 'raw'		One or more raw pieces of mechanically deboned beef.												
 FOODON:02000421	piece(s) of beef	piece(s) of beef (frozen)	'piece(s) of beef' and 'has quality' some 'frozen'		One or more pieces of frozen beef.												
 FOODON:02000422	beef (ground)	beef (ground, fresh frozen)	'beef (ground)' and 'has quality' some 'fresh frozen'		Beef that has been ground and is fresh frozen.												
-FOODON:03311831	piece(s) of beef	beef (minced)	'piece(s) of beef' and 'is specified output of' some 'food mincing'		Beef that has been minced with a blade.												
+FOODON:03311831	piece(s) of beef	beef (minced)	'piece(s) of beef' and 'is specified output of' some 'mincing'		Beef that has been minced with a blade.												
 FOODON:02000425	beef (ground)	beef (ground, lean)			Beef that is ground and lean.												
 FOODON:02000426	beef (ground)	beef (ground, extra lean)			Beef that is ground and extra lean.												
 FOODON:02000427	beef (ground)	beef (ground, medium)			Beef that is medium ground.												
@@ -426,7 +426,7 @@ FOODON:00005406	pork roast	pork loin center roast		'derives from' some 'pork loi
 Characteristics: Pork, Bone-In"	UPC- 3266									
 FOODON:02000317	pork sub-primal cut	pork leg center slice		'derives from' some 'pork leg'	A slice that is derived from a whole pork leg.		The name is “Center” because it comes from the center of the Leg, between the Sirloin and Shank portion. It includes the Top, Bottom, Eye and Tip muscles.				2023-08-01T21:30:23Z	https://orcid.org/0000-0001-5275-8866	ready for release				
 FOODON:02000318	pork leg center slice	pork leg center slice (raw)	'pork leg center slice' and 'has quality' some 'raw'		A raw pork leg center slice that is raw.						2023-08-01T21:30:23Z	https://orcid.org/0000-0001-5275-8866	ready for release				
-FOODON:02000319	pork leg center slice	pork leg center slice (cured, raw)	'pork leg center slice (raw)' and 'is specified output of' some 'curing or aging'		A raw and cured pork leg center slice.						2023-08-01T21:30:23Z	https://orcid.org/0000-0001-5275-8866					
+FOODON:02000319	pork leg center slice	pork leg center slice (cured, raw)	'pork leg center slice (raw)' and 'is specified output of' some 'curing of food'		A raw and cured pork leg center slice.						2023-08-01T21:30:23Z	https://orcid.org/0000-0001-5275-8866					
 FOODON:02000320	pork belly	pork spareribs	'side (meat cut)' and 'derives from' some 'pork belly'		Ribs derived from the pork belly.  Spareribs are the longer rib bones and intercostal meat located below the back ribs. They begin with the second rib and extend downward to the sternum and costal cartilage, spanning the length of the Rib cage.		The name originates from the German “Ribbersper” or “Spear” Ribs in reference to how they were cooked, thus the name “Spareribs.”	https://www.meattrack.com/app/pork-cuts/#125			2023-08-01T21:30:23Z	https://orcid.org/0000-0001-5275-8866	ready for release				
 FOODON:02000321	pork spareribs	pork spareribs (raw)	'pork spareribs' and 'has quality' some 'raw'		Raw pork spareribs.						2023-08-01T21:30:23Z	https://orcid.org/0000-0001-5275-8866	ready for release				
 FOODON:02000322	pork primal cut	pork shoulder			Upper foreleg of a pig that extends from elbow to blade bone.						2023-08-01T21:30:23Z	https://orcid.org/0000-0001-5275-8866	ready for release				
@@ -593,3 +593,5 @@ FOODON:00005433	deer primal cut	deer shoulder		'derives from' some 'deer carcass
 FOODON:00005434	deer shoulder	deer shoulder (raw)	'deer shoulder' and 'has quality' some 'raw'		A raw deer shoulder.						2025-01-30T11:48:21Z	https://orcid.org/0000-0001-5275-8866					
 FOODON:00005435	deer sub-primal cut	deer shoulder clod		'derives from' some 'deer shoulder'	A deer sub-primal cut that is a large muscle group located dorsal and posterior to the elbow joint, ventral and posterior to the scapula (shoulder blade), and anterior to the 6th rib.						2025-01-30T11:48:21Z	https://orcid.org/0000-0001-5275-8866					
 FOODON:00005436	deer shoulder clod	deer shoulder clod (raw)	'deer shoulder clod' and 'has quality' some 'raw'		A raw deer shoulder clod.						2025-01-30T11:48:21Z	https://orcid.org/0000-0001-5275-8866					
+																	
+																	
