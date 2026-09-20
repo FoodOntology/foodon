@@ -10,7 +10,7 @@
 # More information: https://github.com/INCATools/ontology-development-kit/
 
 # Fingerprint of the configuration file when this Makefile was last generated
-CONFIG_HASH=                cc299a016c4bfae15340a0e4700e48627470ba1a86312e51c505ab7547d95eba
+CONFIG_HASH=                1ba1856d8bed701fcc60e258588b7bd094c978db62eda8314fe800ce077b8fbd
 
 
 # ----------------------------------------
@@ -58,7 +58,7 @@ OBODATE ?=                  $(shell date +'%d:%m:%Y %H:%M')
 VERSION=                    $(TODAY)
 ANNOTATE_ONTOLOGY_VERSION = annotate -V $(ONTBASE)/releases/$(VERSION)/$@ --annotation owl:versionInfo $(VERSION)
 ANNOTATE_CONVERT_FILE =     annotate --ontology-iri $(ONTBASE)/$@ $(ANNOTATE_ONTOLOGY_VERSION) convert -f ofn --output $@.tmp.owl && mv $@.tmp.owl $@
-OTHER_SRC =                 $(COMPONENTSDIR)/product_type_import.ofn $(COMPONENTSDIR)/siren_augment_codes.ofn $(COMPONENTSDIR)/robot_sssom_taxonomy.ofn $(COMPONENTSDIR)/deprecation_import.ofn $(COMPONENTSDIR)/gaz_import.ofn $(COMPONENTSDIR)/cdno_import.ofn $(COMPONENTSDIR)/animal_parts.ofn $(COMPONENTSDIR)/food_materials.owl $(COMPONENTSDIR)/food_products.owl $(COMPONENTSDIR)/food_process.owl $(COMPONENTSDIR)/sssom_mappings.owl 
+OTHER_SRC =                 $(COMPONENTSDIR)/foodon_product_import.ofn $(COMPONENTSDIR)/product_type_import.ofn $(COMPONENTSDIR)/siren_augment_codes.ofn $(COMPONENTSDIR)/robot_sssom_taxonomy.ofn $(COMPONENTSDIR)/deprecation_import.ofn $(COMPONENTSDIR)/gaz_import.ofn $(COMPONENTSDIR)/cdno_import.ofn $(COMPONENTSDIR)/animal_parts.ofn $(COMPONENTSDIR)/food_materials.owl $(COMPONENTSDIR)/food_products.owl $(COMPONENTSDIR)/food_process.owl $(COMPONENTSDIR)/sssom_mappings.owl 
 ONTOLOGYTERMS =             $(TMPDIR)/ontologyterms.txt
 EDIT_PREPROCESSED =         $(TMPDIR)/$(ONT)-preprocess.owl
 
@@ -447,7 +447,8 @@ all_components: $(OTHER_SRC)
 
 .PHONY: recreate-components
 recreate-components:
-	$(MAKE) --assume-new=$(TMPDIR)/stamp-component-product_type_import.ofn \
+	$(MAKE) --assume-new=$(TMPDIR)/stamp-component-foodon_product_import.ofn \
+		--assume-new=$(TMPDIR)/stamp-component-product_type_import.ofn \
 		--assume-new=$(TMPDIR)/stamp-component-siren_augment_codes.ofn \
 		--assume-new=$(TMPDIR)/stamp-component-robot_sssom_taxonomy.ofn \
 		--assume-new=$(TMPDIR)/stamp-component-deprecation_import.ofn \
@@ -462,7 +463,8 @@ recreate-components:
 
 .PHONY: no-mirror-recreate-components
 no-mirror-recreate-components:
-	$(MAKE) --assume-new=$(TMPDIR)/stamp-component-product_type_import.ofn \
+	$(MAKE) --assume-new=$(TMPDIR)/stamp-component-foodon_product_import.ofn \
+		--assume-new=$(TMPDIR)/stamp-component-product_type_import.ofn \
 		--assume-new=$(TMPDIR)/stamp-component-siren_augment_codes.ofn \
 		--assume-new=$(TMPDIR)/stamp-component-robot_sssom_taxonomy.ofn \
 		--assume-new=$(TMPDIR)/stamp-component-deprecation_import.ofn \

@@ -31,6 +31,7 @@ These are the components in FOODON
 
 | Filename | URL |
 | -------- | --- |
+| foodon_product_import.ofn | None |
 | product_type_import.ofn | None |
 | siren_augment_codes.ofn | None |
 | robot_sssom_taxonomy.ofn | None |

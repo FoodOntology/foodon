@@ -38,6 +38,7 @@ robot_report:
 components:
   products:
 # Note that for some products, if they have makefile template processing then only use .owl suffix for them
+    - filename: foodon_product_import.ofn
     - filename: product_type_import.ofn
     - filename: siren_augment_codes.ofn
     - filename: robot_sssom_taxonomy.ofn
