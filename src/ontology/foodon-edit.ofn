@@ -18390,6 +18390,7 @@ SubClassOf(obo:FOODON_00004492 obo:FOODON_02010032)
 AnnotationAssertion(obo:IAO_0000114 obo:FOODON_00004501 obo:IAO_0000122)
 AnnotationAssertion(dcterms:contributor obo:FOODON_00004501 <https://orcid.org/0000-0002-8844-9165>)
 AnnotationAssertion(dcterms:date obo:FOODON_00004501 "2023-10-05T17:53:25Z"^^xsd:dateTime)
+SubClassOf(obo:FOODON_00004501 obo:FOODON_00002454)
 SubClassOf(obo:FOODON_00004501 obo:FOODON_00002645)
 
 # Class: obo:FOODON_00004502 (fish (raw))
@@ -18596,7 +18597,6 @@ SubClassOf(obo:FOODON_00004723 obo:PATO_0001241)
 
 AnnotationAssertion(dcterms:contributor obo:FOODON_00004724 <https://orcid.org/0000-0002-8844-9165>)
 AnnotationAssertion(dcterms:date obo:FOODON_00004724 "2024-04-19T22:08:48Z"^^xsd:dateTime)
-SubClassOf(obo:FOODON_00004724 obo:FOODON_00004723)
 
 # Class: obo:FOODON_00004725 (chilled)
 
