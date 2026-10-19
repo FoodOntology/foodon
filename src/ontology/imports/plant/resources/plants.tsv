@@ -1,0 +1,785 @@
+Compiled	anatomical_parent	anatomical_parent_id	organism_parent	organism_base	species	taxon	ID	logic	product_category	PlantMaterialMenu	PlantFruitMenu	PlantSeedMenu	PlantLeafMenu	ShootSystemMenu	RootSystemMenu	Common Name	Curation Notes	Requested by	Deprecate/Use ID
+FALSE					TEMPLATE has all the "ALL" required selections which can be copied into underlying rows as defaults			logic: blank/default = equivalency only | only equivalency = same result as blank, but marks a genus-level row as reviewed | only subclassOf = subclass axiom only (use for a specific item that's a kind of its genus, not equal to it)											
+TRUE	pome fruit	PO:0030110		apple tree	apple	Malus domestica	NCBITaxon:3750			{organism_base} food product, {organism_base}, {organism_base} material, piece of {organism_base}	{organism}, . . {organism} (raw), piece of {organism}, . . piece of {organism} (raw), . . {organism} (dried)					apple			apple (whole or pieces)
+TRUE	berry fruit	PO:0030108		golden kiwifruit plant	golden kiwifruit	Actinidia chinensis	NCBITaxon:3625			{organism_base}, {organism_base} food product, {organism_base} material, piece of {organism_base}	{organism}, . . {organism} (raw), piece of {organism}, . . piece of {organism} (raw)						Add as golden kiwifruit (raw)		
+TRUE	fruit multiple	FLOPO:0016496		pineapple plant	pineapple	Ananas comosus	NCBITaxon:4615			{organism_base}, {organism_base} food product, {organism_base} material, piece of {organism_base}	{organism}, . . {organism} (raw), piece of {organism}, . . piece of {organism} (raw), . . {organism} (dried)					pineapple	Add as pineapple Add as pineapple (raw)		
+TRUE	nut fruit	PO:0030102		cashew nut tree	cashew nut	Anacardium occidentale	NCBITaxon:171929			{organism_base}, {organism_base} food product, {organism_base} material, piece of {organism_base}	{organism}, . . {organism} (raw), piece of {organism}, . . piece of {organism} (raw)					cashew			
+TRUE	fruit multiple	FLOPO:0016496		jackfruit tree	jackfruit	Artocarpus heterophyllus	NCBITaxon:3489			{organism_base}, {organism_base} food product, {organism_base} material, piece of {organism_base}	{organism}, . . {organism} (raw), piece of {organism}, . . piece of {organism} (raw)					jackfruit			
+TRUE	berry fruit	PO:0030108		star fruit tree	star fruit	Averrhoa carambola	NCBITaxon:28974			{organism_base}, {organism_base} food product, {organism_base} material, piece of {organism_base}	{organism}, . . {organism} (raw), piece of {organism}, . . piece of {organism} (raw), . . {organism} (dried)								
+TRUE	drupe fruit	PO:0030103		pili nut plant	pili nut	Canarium ovatum	NCBITaxon:43691			{organism_base}, {organism_base} food product, {organism_base} material, piece of {organism_base}	{organism}, . . {organism} (raw), piece of {organism}, . . piece of {organism} (raw), . . {organism} (dried)								
+TRUE	berry fruit	PO:0030108		pepper plant	pepper	Capsicum	NCBITaxon:4071	only equivalency		{organism_base}, {organism_base} food product, {organism_base} material, piece of {organism_base}	{organism}, . . {organism} (raw), piece of {organism}, . . piece of {organism} (raw)					peppers	pepper (whole or pieces)		
+TRUE	nut fruit	FOODON:00003563	chestnut	chinese chestnut tree	chinese chestnut	Castanea mollissima	NCBITaxon:60419			{organism_base}, {organism_base} food product, {organism_base} material, piece of {organism_base}	{organism}, . . {organism} (raw), piece of {organism}, . . piece of {organism} (raw), . . {organism} (dried)					Chinese chestnut	Add chinese chestnut (raw)		
+TRUE	bulb	PO:0025356		onion plant	onion	Allium cepa	NCBITaxon:4679			{organism_base} food product, {organism_base} material, piece of {organism_base}, {organism_base}					{organism} bulb, . . {organism} bulb (raw)	onion			
+TRUE	berry fruit	PO:0030108		fuzzy kiwifruit plant	fuzzy kiwifruit	Actinidia deliciosa	NCBITaxon:3627			{organism_base} food product, {organism_base} material, piece of {organism_base}	{organism}, . . {organism} (raw)						Add as fuzzy kiwifruit (raw)		
+TRUE	primary root	PO:0020127		horseradish plant	horseradish	Armoracia rusticana	NCBITaxon:3704			{organism_base} food product, {organism_base} material, piece of {organism_base}, {organism_base}	{organism} pulp				{organism} root, . . {organism} root (raw)		Add as horseradish root		
+TRUE	berry fruit	PO:0030108		pawpaw tree	pawpaw	Asimina triloba	NCBITaxon:12953			{organism_base} food product, {organism_base} material, piece of {organism_base}, {organism_base}	{organism}, . . {organism} (raw)								
+TRUE	drupe fruit	PO:0030103		black pepper plant	black peppercorn	Piper nigrum	NCBITaxon:13216			{organism_base}, {organism_base} food product, {organism_base} material, piece of {organism_base}	{organism}, . . {organism} (raw), piece of {organism}, . . piece of {organism} (raw)						GRDI term		Use black pepper (whole or pieces)
+TRUE	berry fruit	PO:0030108		blueberry plant	blueberry	Vaccinium	NCBITaxon:13749	only subclassOf		{organism_base}, {organism_base} food product, {organism_base} material, piece of {organism_base}	{organism}, . . {organism} (raw), piece of {organism}, . . piece of {organism} (raw)								
+TRUE	drupelet berry	FOODON:00003477		boysenberry plant	boysenberry	Rubus	NCBITaxon:23216	only subclassOf		{organism_base}, {organism_base} food product, {organism_base} material, piece of {organism_base}	{organism}, . . {organism} (raw), piece of {organism}, . . piece of {organism} (raw)								
+TRUE	berry fruit	PO:0030108		beautyberry plant	beautyberry	Callicarpa <eudicots>	NCBITaxon:21922			{organism_base} food product, {organism_base} material, piece of {organism_base}	{organism}								
+TRUE	bean	FOODON:00002753		jack bean plant	jack bean	Canavalia ensiformis	NCBITaxon:3823			{organism_base} food product, {organism_base} material, {organism_base}, piece of {organism_base}, . . piece of {organism_base} (raw)	{organism}, . . {organism} (dried)					jack bean			
+TRUE	pepo fruit	PO:0030111		papaya tree	papaya	Carica papaya	NCBITaxon:3649			{organism_base} food product, {organism_base} material, piece of {organism_base}, {organism_base}, . . piece of {organism_base} (raw)	{organism}, . . {organism} (raw)		{organism} leaf, . . {organism} leaf (raw), . . {organism} leaf (dried)			papaya	Also add papaya leaf, papaya seed, papaya seed (ground)		papaya (whole or pieces)
+TRUE	berry fruit	PO:0030108		natal plum plant	natal plum	Carissa macrocarpa	NCBITaxon:403101			{organism_base} food product, {organism_base} material, piece of {organism_base}, {organism_base}	{organism}, . . {organism} (raw)								
+TRUE	drupe fruit	PO:0030103		hickory tree	hickory nut	Carya	NCBITaxon:13402	only equivalency		{organism_base} food product, {organism_base} material, piece of {organism_base}	{organism}, . . {organism} (dried), . . {organism} (raw)						Add hickory nut food product		
+TRUE	fruit	PO:0009001		heart of palm plant	heart of palm	Arecaceae	NCBITaxon:4710	only subclassOf		{organism_base}, {organism_base} food product, {organism_base} material, piece of {organism_base}	{organism}, . . {organism} (raw), piece of {organism}, . . piece of {organism} (raw)						"Heart of palm" is a culinary term for an edible vegetable, not a single plant species. It is harvested from several different types of palm trees (like Peach Palm, Açai Palm, and Coconut Palm). Because these plants span multiple genera, using a single species name would be inaccurate. However, all palms belong to the Arecaceae family, making it the most accurate umbrella taxon for a general classification.		
+TRUE	fruit	PO:0009001		star apple tree	star apple	Chrysophyllum cainito	NCBITaxon:221251			{organism_base}, {organism_base} food product, {organism_base} material, piece of {organism_base}	{organism}, . . {organism} (raw), piece of {organism}, . . piece of {organism} (raw)								
+TRUE	pepo fruit	PO:0030111		watermelon plant	watermelon	Citrullus lanatus	NCBITaxon:3654			{organism_base}, {organism_base} food product, {organism_base} material, piece of {organism_base}	{organism}, . . {organism} (raw), piece of {organism}, . . piece of {organism} (raw)	{organism} seed, . . {organism} seed (raw)				watermelon			
+TRUE	hesperidium fruit	PO:0030109		citrus tree	citrus fruit	Citrus	NCBITaxon:2706	only equivalency		{organism_base}, {organism_base} food product, {organism_base} material, piece of {organism_base}	{organism}, . . {organism} (raw), piece of {organism}, . . piece of {organism} (raw)								
+TRUE	hesperidium fruit	PO:0030109		seville orange tree	seville orange	Citrus x aurantium	NCBITaxon:43166			{organism_base}, {organism_base} food product, {organism_base} material, piece of {organism_base}	{organism}, . . {organism} (raw), piece of {organism}, . . piece of {organism} (raw)								
+TRUE	hesperidium fruit	PO:0030109		clementine tree	clementine	Citrus x clementina	NCBITaxon:85681			{organism_base}, {organism_base} food product, {organism_base} material, piece of {organism_base}	{organism}, . . {organism} (raw), piece of {organism}, . . piece of {organism} (raw)								
+TRUE	hesperidium fruit	PO:0030109		kumquat tree	kumquat	Citrus	NCBITaxon:2706	only subclassOf		{organism_base}, {organism_base} food product, {organism_base} material, piece of {organism_base}	{organism}, . . {organism} (raw), piece of {organism}, . . piece of {organism} (raw)								
+TRUE	hesperidium fruit	PO:0030109		yuzu tree	yuzu	Citrus junos	NCBITaxon:135197			{organism_base}, {organism_base} food product, {organism_base} material, piece of {organism_base}	{organism}, . . {organism} (raw), piece of {organism}, . . piece of {organism} (raw)								
+TRUE	hesperidium fruit	PO:0030109		lemon tree	lemon	Citrus x limon	NCBITaxon:2708			{organism_base}, {organism_base} food product, {organism_base} material, piece of {organism_base}	{organism}, . . {organism} (raw), piece of {organism}, . . piece of {organism} (raw), . . {organism} (dried)								
+TRUE	fruit	PO:0009001		pomelo tree	pomelo fruit	Citrus maxima	NCBITaxon:37334			{organism_base}, {organism_base} food product, {organism_base} material, piece of {organism_base}	{organism}, . . {organism} (raw), piece of {organism}, . . piece of {organism} (raw)						Add pomelo fruit, pomelo fruit (raw)		
+TRUE	hesperidium fruit	PO:0030109		citron tree	citron	Citrus medica	NCBITaxon:171251			{organism_base}, {organism_base} food product, {organism_base} material, piece of {organism_base}	{organism}, . . {organism} (raw), piece of {organism}, . . piece of {organism} (raw)								
+TRUE	hesperidium fruit	PO:0030109		mandarin orange tree	mandarin orange	Citrus reticulata	NCBITaxon:85571			{organism_base}, {organism_base} food product, {organism_base} material, piece of {organism_base}	{organism}, . . {organism} (raw), piece of {organism}, . . piece of {organism} (raw)						Also Add as mandarin orange (raw)		
+TRUE	hesperidium fruit	PO:0030109		orange tree	orange	Citrus sinensis	NCBITaxon:2711			{organism_base}, {organism_base} food product, {organism_base} material, piece of {organism_base}	{organism}, . . {organism} (raw), piece of {organism}, . . piece of {organism} (raw)					sweet orange			
+TRUE	hesperidium fruit	PO:0030109		tangerine tree	tangerine	Citrus tangerina	NCBITaxon:237575			{organism_base}, {organism_base} food product, {organism_base} material, piece of {organism_base}	{organism}, . . {organism} (raw), piece of {organism}, . . piece of {organism} (raw), . . {organism} (dried)								
+TRUE	hesperidium fruit	PO:0030109		grapefruit tree	grapefruit	Citrus x paradisi	NCBITaxon:37656			{organism_base}, {organism_base} food product, {organism_base} material, piece of {organism_base}	{organism}, . . {organism} (raw), piece of {organism}, . . piece of {organism} (raw)								
+TRUE	hesperidium fruit	PO:0030109		tangelo tree	tangelo	Citrus x tangelo	NCBITaxon:229630			{organism_base}, {organism_base} food product, {organism_base} material, piece of {organism_base}	{organism}, . . {organism} (raw), piece of {organism}, . . piece of {organism} (raw)						Add as tangelo food product		
+TRUE	fruit	PO:0009001		ivy gourd plant	ivy gourd	Coccinia grandis	NCBITaxon:387127			{organism_base}, {organism_base} food product, {organism_base} material, piece of {organism_base}	{organism}, . . {organism} (raw), piece of {organism}, . . piece of {organism} (raw)						Add ivy gourd food product, ivy gourd (raw) ivy gourd (fresh frozen)		
+TRUE	drupe fruit	PO:0030103		coconut tree	coconut	Cocos nucifera	NCBITaxon:13894			{organism_base}, {organism_base} food product, {organism_base} material, piece of {organism_base}	{organism}, . . {organism} (raw), piece of {organism}, . . piece of {organism} (raw), . . {organism} (dried)					coconut palm	coconut (whole or pieces)		
+TRUE	pome fruit	PO:0030110		crabapple tree	crabapple	Malus	NCBITaxon:3749	only subclassOf		{organism_base}, {organism_base} food product, {organism_base} material, piece of {organism_base}	{organism}, . . {organism} (raw), piece of {organism}, . . piece of {organism} (raw)								
+TRUE	berry fruit	PO:0030108		sacred pear tree	sacred pear	Crateva religiosa	NCBITaxon:202634			{organism_base}, {organism_base} food product, {organism_base} material, piece of {organism_base}	{organism}, . . {organism} (raw), piece of {organism}, . . piece of {organism} (raw)								
+TRUE	pepo fruit	PO:0030111		muskmelon plant	muskmelon	Cucumis melo	NCBITaxon:3656			{organism_base}, {organism_base} food product, {organism_base} material, piece of {organism_base}	{organism}, . . {organism} (raw), piece of {organism}, . . piece of {organism} (raw)					muskmelon			
+TRUE	pepo fruit	PO:0030111		cantaloupe plant	cantaloupe	Cucumis melo var. cantalupo	NCBITaxon:3658			{organism_base}, {organism_base} food product, {organism_base} material, piece of {organism_base}	{organism}, . . {organism} (raw), piece of {organism}, . . piece of {organism} (raw)					cantaloupe			cantaloupe (whole or pieces)
+TRUE	pepo fruit	PO:0030111		horned melon plant	horned melon	Cucumis metuliferus	NCBITaxon:61886			{organism_base}, {organism_base} food product, {organism_base} material, piece of {organism_base}	{organism}, . . {organism} (raw), piece of {organism}, . . piece of {organism} (raw)								
+TRUE	pepo fruit	PO:0030111		cucumber plant	cucumber	Cucumis sativus	NCBITaxon:3659			{organism_base}, {organism_base} food product, {organism_base} material, piece of {organism_base}	{organism}, . . {organism} (raw), piece of {organism}, . . piece of {organism} (raw)					cucumber	Add cucumber (peeled)		cucumber (whole or pieces)
+TRUE	root	PO:0009005		carrot plant	carrot	Daucus carota	NCBITaxon:4039			{organism_base}, {organism_base} food product, {organism_base} material, piece of {organism_base}					{organism} root, . . {organism} root (raw)	carrot	Add carrot root		
+TRUE	berry fruit	PO:0030108		persimmon tree	persimmon	Diospyros	NCBITaxon:13492	only subclassOf		{organism_base}, {organism_base} food product, {organism_base} material, piece of {organism_base}	{organism}, . . {organism} (raw), piece of {organism}, . . piece of {organism} (raw), . . {organism} (dried)								
+TRUE	fruit	PO:0009001		durian tree	durian	Durio zibethinus	NCBITaxon:66656			{organism_base}, {organism_base} food product, {organism_base} material, piece of {organism_base}	{organism}, . . {organism} (raw), piece of {organism}, . . piece of {organism} (raw)								
+TRUE	fruit multiple	FLOPO:0016496		fig tree	fig	Ficus carica	NCBITaxon:3494			{organism_base}, {organism_base} food product, {organism_base} material, piece of {organism_base}	{organism}, . . {organism} (raw), piece of {organism}, . . piece of {organism} (raw), . . {organism} (dried)					common fig			
+TRUE	aggregate fruit	PO:0025628		strawberry plant	strawberry	Fragaria x ananassa	NCBITaxon:3747			{organism_base}, {organism_base} food product, {organism_base} material, piece of {organism_base}	{organism}, . . {organism} (raw), piece of {organism}, . . piece of {organism} (raw)					strawberry			
+TRUE	berry fruit	PO:0030108		grape vine	grape	Vitis vinifera	NCBITaxon:29760			{organism_base}, {organism_base} food product, {organism_base} material, piece of {organism_base}	{organism}, . . {organism} (raw), piece of {organism}, . . piece of {organism} (raw)	{organism} seed, . . {organism} seed (raw)	{organism} leaf, . . {organism} leaf (raw)				Also add 'grape cluster', grape leaf		
+TRUE	drupe fruit	PO:0030103		walnut tree	walnut	Juglans	NCBITaxon:16718	only equivalency		{organism_base}, {organism_base} food product, {organism_base} material, piece of {organism_base}	{organism}, . . {organism} (raw), piece of {organism}, . . piece of {organism} (raw)					walnuts			
+TRUE	seed	PO:0009010		lentil plant	lentil	Lens culinaris	NCBITaxon:3864			{organism_base}, {organism_base} food product, {organism_base} material, piece of {organism_base}		{organism} seed, . . {organism} seed (raw)				lentil	Add lentil (raw) lentil (raw, sprouted) lentil (dried)		
+TRUE	berry fruit	PO:0030108		wood apple tree	wood apple	Limonia acidissima	NCBITaxon:159053			{organism_base}, {organism_base} food product, {organism_base} material, piece of {organism_base}	{organism}, . . {organism} (raw), piece of {organism}, . . piece of {organism} (raw)								
+TRUE	pepo fruit	PO:0030111		ridge gourd plant	ridge gourd	Luffa acutangula	NCBITaxon:56866			{organism_base}, {organism_base} food product, {organism_base} material, piece of {organism_base}	{organism}, . . {organism} (raw), piece of {organism}, . . piece of {organism} (raw)						Taxon in subclass axiom-		
+TRUE	pepo fruit	PO:0030111		sponge gourd plant	sponge gourd	Luffa aegyptiaca	NCBITaxon:3670			{organism_base}, {organism_base} food product, {organism_base} material, piece of {organism_base}	{organism}, . . {organism} (raw), piece of {organism}, . . piece of {organism} (raw)					smooth loofah	Add sponge gourd (raw)		
+TRUE	fruit	PO:0009001		goji berry shrub	goji berry	Lycium barbarum	NCBITaxon:112863			{organism_base}, {organism_base} food product, {organism_base} material, piece of {organism_base}	{organism}, . . {organism} (raw), piece of {organism}, . . piece of {organism} (raw), . . {organism} (dried)						Add goji berry food product		
+TRUE	drupe fruit	PO:0030103		acerola tree	acerola	Malpighia emarginata	NCBITaxon:151847			{organism_base}, {organism_base} food product, {organism_base} material, piece of {organism_base}	{organism}, . . {organism} (raw), piece of {organism}, . . piece of {organism} (raw)								
+TRUE	drupe fruit	PO:0030103		mango tree	mango	Mangifera indica	NCBITaxon:29780			{organism_base}, {organism_base} food product, {organism_base} material, piece of {organism_base}	{organism}, . . {organism} (raw), piece of {organism}, . . piece of {organism} (raw), . . {organism} (dried)					mango			mango (whole or pieces)
+TRUE	fruit	PO:0009001		sapodilla tree	sapodilla	Manilkara zapota	NCBITaxon:3741			{organism_base}, {organism_base} food product, {organism_base} material, piece of {organism_base}	{organism}, . . {organism} (raw), piece of {organism}, . . piece of {organism} (raw)						Add sapodilla fruit, sapodilla food product, sapodilla fruit (raw)		
+TRUE	fruit multiple	FLOPO:0016496		mulberry tree	mulberry	Morus <eudicots>	NCBITaxon:3497			{organism_base}, {organism_base} food product, {organism_base} material, piece of {organism_base}	{organism}, . . {organism} (raw), piece of {organism}, . . piece of {organism} (raw)								
+TRUE	berry fruit	PO:0030108		banana plant	banana	Musa	NCBITaxon:4640	only subclassOf		{organism_base}, {organism_base} food product, {organism_base} material, piece of {organism_base}	{organism}, . . {organism} (raw), piece of {organism}, . . piece of {organism} (raw), . . {organism} (dried)								
+TRUE	drupe fruit	PO:0030103		bayberry shrub	bayberry	Myrica	NCBITaxon:3509	only equivalency		{organism_base}, {organism_base} food product, {organism_base} material, piece of {organism_base}	{organism}, . . {organism} (raw), piece of {organism}, . . piece of {organism} (raw)								
+TRUE	berry fruit	PO:0030108		olallieberry plant	olallieberry	Rubus	NCBITaxon:23216	only subclassOf		{organism_base}, {organism_base} food product, {organism_base} material, piece of {organism_base}	{organism}, . . {organism} (raw), piece of {organism}, . . piece of {organism} (raw)								
+TRUE	drupe fruit	PO:0030103		olive tree	olive	Olea europaea	NCBITaxon:4146			{organism_base}, {organism_base} food product, {organism_base} material, piece of {organism_base}	{organism}, . . {organism} (raw), piece of {organism}, . . piece of {organism} (raw)					common olive			
+TRUE	fruit	PO:0009001		rowal tree	rowal	Pangium edule	NCBITaxon:112823			{organism_base}, {organism_base} food product, {organism_base} material, piece of {organism_base}	{organism}, . . {organism} (raw), piece of {organism}, . . piece of {organism} (raw)						Add rowal fruit, rowal food product, rowal fruit (raw), rowal fruit (fermented)		
+TRUE	pepo fruit	PO:0030111		passion fruit plant	passion fruit	Passiflora edulis	NCBITaxon:78168			{organism_base}, {organism_base} food product, {organism_base} material, piece of {organism_base}	{organism}, . . {organism} (raw), piece of {organism}, . . piece of {organism} (raw), {organism} pulp, . . {organism} pulp (raw), . . {organism} (dried)	{organism} seed, . . {organism} seed (raw)							
+TRUE	berry fruit	PO:0030108		avocado tree	avocado	Persea americana	NCBITaxon:3435			{organism_base}, {organism_base} food product, {organism_base} material, piece of {organism_base}	{organism}, . . {organism} (raw), piece of {organism}, . . piece of {organism} (raw), {organism} pulp, . . {organism} pulp (raw)	{organism} seed, . . {organism} seed (raw)				avocado			
+TRUE	drupe fruit	PO:0030103		pistachio tree	pistachio nut	Pistacia vera	NCBITaxon:55513			{organism_base}, {organism_base} food product, {organism_base} material, piece of {organism_base}	{organism}, . . {organism} (raw), piece of {organism}, . . piece of {organism} (raw)								
+TRUE	drupe fruit	PO:0030103		plum plant	plum	Prunus	NCBITaxon:3754	only equivalency		{organism_base}, {organism_base} food product, {organism_base} material, piece of {organism_base}	{organism}, . . {organism} (raw), piece of {organism}, . . piece of {organism} (raw)								
+TRUE	drupe fruit	PO:0030103		cherry tree	cherry	Prunus	NCBITaxon:3754	only subclassOf		{organism_base}, {organism_base} food product, {organism_base} material, piece of {organism_base}	{organism}, . . {organism} (raw), piece of {organism}, . . piece of {organism} (raw)						Will be added as a subclass axiom		
+TRUE	drupe fruit	PO:0030103	cherry	sweet cherry tree	sweet cherry	Prunus avium	NCBITaxon:42229			{organism_base}, {organism_base} food product, {organism_base} material, piece of {organism_base}	{organism}, . . {organism} (raw), piece of {organism}, . . piece of {organism} (raw)					sweet cherry			
+TRUE	drupe fruit	PO:0030103	cherry	sour cherry tree	sour cherry	Prunus cerasus	NCBITaxon:140311			{organism_base}, {organism_base} food product, {organism_base} material, piece of {organism_base}	{organism}, . . {organism} (raw), piece of {organism}, . . piece of {organism} (raw)						Also add as sour cherry (raw)		
+TRUE	drupe fruit	PO:0030103	plum	Italian prune plum tree	Italian prune plum	Prunus cocomilia	NCBITaxon:114936			{organism_base}, {organism_base} food product, {organism_base} material, piece of {organism_base}	{organism}, . . {organism} (raw), piece of {organism}, . . piece of {organism} (raw), . . {organism} (dried)								
+TRUE	drupe fruit	PO:0030103	plum	European plum tree	European plum	Prunus domestica	NCBITaxon:3758			{organism_base}, {organism_base} food product, {organism_base} material, piece of {organism_base}	{organism}, . . {organism} (raw), piece of {organism}, . . piece of {organism} (raw)					plum			
+TRUE	drupe fruit	PO:0030103		almond tree	almond	Prunus dulcis	NCBITaxon:3755			{organism_base}, {organism_base} food product, {organism_base} material, piece of {organism_base}	{organism}, . . {organism} (raw), piece of {organism}, . . piece of {organism} (raw)					almond			almond (whole or pieces)
+TRUE	drupe fruit	PO:0030103		peach tree	peach	Prunus persica	NCBITaxon:3760			{organism_base}, {organism_base} food product, {organism_base} material, piece of {organism_base}	{organism}, . . {organism} (raw), piece of {organism}, . . piece of {organism} (raw), . . {organism} (dried)					peach	Also add as peach (raw)		
+TRUE	drupe fruit	PO:0030103		nectarine tree	nectarine	Prunus persica var. nucipersica	NCBITaxon:323851			{organism_base}, {organism_base} food product, {organism_base} material, piece of {organism_base}	{organism}, . . {organism} (raw), piece of {organism}, . . piece of {organism} (raw)								
+TRUE	drupe fruit	PO:0030103		chokecherry tree	chokecherry	Prunus virginiana	NCBITaxon:133204			{organism_base}, {organism_base} food product, {organism_base} material, piece of {organism_base}	{organism}, . . {organism} (raw), piece of {organism}, . . piece of {organism} (raw)						Add chokecherry food product, chokecherry (raw)		
+TRUE	berry fruit	PO:0030108		guava tree	guava	Psidium	NCBITaxon:120289	only subclassOf		{organism_base}, {organism_base} food product, {organism_base} material, piece of {organism_base}	{organism}, . . {organism} (raw), piece of {organism}, . . piece of {organism} (raw), . . {organism} (dried)								
+TRUE	berry fruit	PO:0030108		strawberry guava tree	strawberry guava	Psidium cattleyanum	NCBITaxon:375274			{organism_base}, {organism_base} food product, {organism_base} material, piece of {organism_base}	{organism}, . . {organism} (raw), piece of {organism}, . . piece of {organism} (raw)						Add strawberry guava (raw), strawberry guava food product		
+TRUE	seed	FOODON:00002753	bean	winged bean plant	winged bean	Psophocarpus tetragonolobus	NCBITaxon:3891			{organism_base}, {organism_base} food product, {organism_base} material, piece of {organism_base}	{organism}, . . {organism} (raw), piece of {organism}, . . piece of {organism} (raw), . . {organism} (dried)		{organism} leaf, . . {organism} leaf (raw)		{organism} tuber	winged bean	Add winged bean (raw, mature) winged bean leaf winged bean tuber, winged bean pod, winged bean food product, Add winged bean (raw, immature)		
+TRUE	berry fruit	PO:0030108		pomegranate tree	pomegranate	Punica granatum	NCBITaxon:22663			{organism_base}, {organism_base} food product, {organism_base} material, piece of {organism_base}	{organism}, . . {organism} (raw), piece of {organism}, . . piece of {organism} (raw)					pomegranate			
+TRUE	pome fruit	PO:0030110		pear tree	pear	Pyrus	NCBITaxon:3766	only equivalency		{organism_base}, {organism_base} food product, {organism_base} material, piece of {organism_base}	{organism}, . . {organism} (raw), piece of {organism}, . . piece of {organism} (raw), . . {organism} (dried)					pears			
+TRUE	drupe fruit	PO:0030103		loquat tree	loquat	Eriobotrya japonica	NCBITaxon:32224			{organism_base}, {organism_base} food product, {organism_base} material, piece of {organism_base}	{organism}, . . {organism} (raw), piece of {organism}, . . piece of {organism} (raw)								
+TRUE	drupe fruit	PO:0030103		sumac plant	sumac berry	Rhus	NCBITaxon:4012	only subclassOf		{organism_base}, {organism_base} food product, {organism_base} material, piece of {organism_base}	{organism}, . . {organism} (raw), piece of {organism}, . . piece of {organism} (raw), . . {organism} (dried)						Add as sumac food product, sumac berry, Add sumac berry (raw) sumac berry (dried)		
+TRUE	berry fruit	PO:0030108		black currant shrub	black currant	Ribes nigrum	NCBITaxon:78511			{organism_base}, {organism_base} food product, {organism_base} material, piece of {organism_base}	{organism}, . . {organism} (raw), piece of {organism}, . . piece of {organism} (raw)								
+TRUE	berry fruit	PO:0030108		red currant shrub	red currant	Ribes rubrum	NCBITaxon:175228			{organism_base}, {organism_base} food product, {organism_base} material, piece of {organism_base}	{organism}, . . {organism} (raw), piece of {organism}, . . piece of {organism} (raw)								
+TRUE	berry fruit	PO:0030108		gooseberry shrub	gooseberry	Ribes uva-crispa	NCBITaxon:135518			{organism_base}, {organism_base} food product, {organism_base} material, piece of {organism_base}	{organism}, . . {organism} (raw), piece of {organism}, . . piece of {organism} (raw)								
+TRUE	aggregate fruit	PO:0025628		salmonberry plant	salmonberry	Rubus spectabilis	NCBITaxon:59499			{organism_base}, {organism_base} food product, {organism_base} material, piece of {organism_base}	{organism}, . . {organism} (raw), piece of {organism}, . . piece of {organism} (raw)								
+TRUE	aggregate fruit	PO:0025628		loganberry plant	loganberry	Rubus x loganobaccus	NCBITaxon:483748			{organism_base}, {organism_base} food product, {organism_base} material, piece of {organism_base}	{organism}, . . {organism} (raw), piece of {organism}, . . piece of {organism} (raw)								
+TRUE	berry fruit	PO:0030108		eggplant plant	eggplant	Solanum melongena	NCBITaxon:4111			{organism_base}, {organism_base} food product, {organism_base} material, piece of {organism_base}	{organism}, . . {organism} (raw), piece of {organism}, . . piece of {organism} (raw)					eggplant			
+TRUE	berry fruit	PO:0030108		naranjilla plant	naranjilla	Solanum quitoense	NCBITaxon:227725			{organism_base}, {organism_base} food product, {organism_base} material, piece of {organism_base}	{organism}, . . {organism} (raw), piece of {organism}, . . piece of {organism} (raw), {organism} pulp, . . {organism} pulp (raw)	{organism} seed, . . {organism} seed (raw)							
+TRUE	aggregate fruit	PO:0025628		soursop tree	soursop	Annona muricata	NCBITaxon:13337			{organism_base} food product, {organism_base} material, piece of {organism_base}, {organism_base}	{organism}, . . {organism} pulp (raw), {organism} pulp, . . {organism} (raw)	. . {organism} seed (raw), {organism} seed							
+TRUE	aggregate fruit	PO:0025628		custard apple plant	custard apple	Annona squamosa	NCBITaxon:301693			{organism_base} food product, {organism_base} material, piece of {organism_base}, {organism_base}	{organism}, {organism} pulp, . . {organism} pulp (raw), . . {organism} (raw)	{organism} seed, . . {organism} seed (raw)							
+TRUE	fruit multiple	FLOPO:0016496		breadfruit tree	breadfruit	Artocarpus altilis	NCBITaxon:194251			{organism_base} food product, {organism_base} material, piece of {organism_base}, {organism_base}	{organism}, . . {organism} (raw)	{organism} seed, . . {organism} seed (raw)							
+TRUE	aggregate fruit	PO:0025628		blackberry plant	blackberry	Rubus	NCBITaxon:23216	only subclassOf		{organism_base} food product, {organism_base} material, piece of {organism_base}, {organism_base}	{organism}, . . {organism} (raw)					bramble	sub-class axiom		
+TRUE	aggregate fruit	PO:0025628		cherimoya tree	cherimoya fruit	Annona cherimola	NCBITaxon:49314			{organism_base} food product, {organism_base} material, piece of {organism_base}, {organism_base}	{organism}, . . {organism} (raw)								
+TRUE	aggregate fruit	PO:0025628		dewberry plant	dewberry	Rubus	NCBITaxon:23216	only subclassOf		{organism_base} food product, {organism_base} material, piece of {organism_base}, {organism_base}	{organism}, . . {organism} (raw)					bramble	Ass taxon in a subclass axiom		
+TRUE	aggregate fruit	PO:0025628		cloudberry plant	cloudberry	Rubus chamaemorus	NCBITaxon:57936			{organism_base} food product, {organism_base} material, piece of {organism_base}, {organism_base}	{organism}, . . {organism} (raw)								
+FALSE	caryopsis fruit	PO:0030104		pearl millet plant	pearl millet	Cenchrus americanus	NCBITaxon:4543			{organism_base}, {organism_base} food product, {organism_base} material, piece of {organism_base}	{organism}, . . {organism} (raw), piece of {organism}, . . piece of {organism} (raw)						Add 'pearl millet kernel'		
+FALSE	fruit	PO:0009001		berry plant	berry	berry plant	FOODON:03411231			{organism_base}, {organism_base} food product, {organism_base} material, piece of {organism_base}	{organism}, . . {organism} (raw), piece of {organism}, . . piece of {organism} (raw)								
+FALSE	hesperidium fruit	PO:0030109		navel orange tree	navel orange	Citrus sinensis	NCBITaxon:2711			{organism_base}, {organism_base} food product, {organism_base} material, piece of {organism_base}	{organism}, . . {organism} (raw), piece of {organism}, . . piece of {organism} (raw)					sweet orange			
+FALSE	caryopsis fruit	PO:0030104		teff plant	teff	Eragrostis tef	NCBITaxon:110835			{organism_base}, {organism_base} food product, {organism_base} material, piece of {organism_base}	piece of {organism}, . . piece of {organism} (raw)						Add teff kernel, teff kernel (raw)		
+FALSE	berry fruit	PO:0030108		pitaya plant	pitaya fruit	Stenocereus	NCBITaxon:171972			{organism_base}, {organism_base} food product, {organism_base} material, piece of {organism_base}	{organism}, . . {organism} (raw), piece of {organism}, . . piece of {organism} (raw)						Add Stenocereus to FoodOn.		
+FALSE	loculicidal capsule fruit	PO:0030092		okra plant	okra	Abelmoschus esculentus	NCBITaxon:455045			{organism_base} food product							Add as okra pod, also add okra seed		
+FALSE	caryopsis fruit	PO:0030104		oat plant	oat	Avena sativa	NCBITaxon:4498			{organism_base}, {organism_base} food product, {organism_base} material, piece of {organism_base}	{organism}, . . {organism} (raw), piece of {organism}, . . piece of {organism} (raw)					oats	Add oat straw, oat bran		
+				whole plant	plant	Viridiplantae				. . {organism_base} (raw), {organism_base}, {organism_base} food product, {organism_base} substance, piece of {organism_base}, . . piece of {organism_base} (raw), piece(s) of {organism_base}, . . piece(s) of {organism_base} (raw), {organism_base} material									
+	seed	PO:0009010		acacia tree	acacia	Acacia	NCBITaxon:3808			{organism_base} food product, {organism_base} material, piece of {organism_base}		{organism} seed	{organism} leaf				Add acacia seed, leaf		
+	root	PO:0009005		black cohosh plant	black cohosh	Actaea racemosa	NCBITaxon:64040			{organism_base} food product, {organism_base} material							Add as root.		
+	seed	PO:0009010		pea plant	alaska pea	alaska pea plant	FOODON:03411326												
+	root, tuber or bulb			leek plant	leek	Allium ampeloprasum	NCBITaxon:4681			{organism_base} food product, {organism_base} material, piece of {organism_base}				{organism} stalk	{organism} bulb	leek	Add as leek, leek stalk Check axiom in the plant*part, that says 'bulb and part of top'		
+	bulb	PO:0025356		shallot plant	shallot	Allium cepa var. aggregatum	NCBITaxon:28911			{organism_base} food product, {organism_base} material, piece of {organism_base}					{organism} bulb	shallot			
+	bulb	PO:0025356		garlic plant	garlic	Allium sativum	NCBITaxon:4682			{organism_base} food product, {organism_base} material, piece of {organism_base}				{organism} scape	{organism} bulb, {organism} clove	garlic	Add as garlic bulb Add as garlic clove Add as garlic scape		
+	leaf	PO:0025034		chive plant	chive	Allium schoenoprasum	NCBITaxon:74900			{organism_base} food product, {organism_base} material, piece of {organism_base}			{organism} leaf				Add as chive leaf		chive leaf (whole or pieces)
+	chive			chive plant	Chinese chive	Allium tuberosum	NCBITaxon:4683			{organism_base} food product, {organism_base} material, piece of {organism_base}			{organism} leaf				Add Chinese chive bunch, Chinese chive leaf		
+	seed/leaf			amaranth plant	amaranth	Amaranthus	NCBITaxon:3564			{organism_base} food product, {organism_base} material, piece of {organism_base}		{organism} seed	{organism} leaf				Add amaranth leaf, Add as ' amaranth seed'		
+	berry fruit	PO:0030108		sour cherry plant	Amarelle cherry	Amarelle cherry plant											Also add as Amarelle cherry (raw)		
+	corm	PO:0025355		konjacu plant	konjacu	Amorphophallus konjac	NCBITaxon:78372			{organism_base} food product, {organism_base} material, piece of {organism_base}					{organism} tuber		Add as konjacu tuber		
+	leaf/seed			dill plant	dill	Anethum graveolens	NCBITaxon:40922			{organism_base} food product, {organism_base} material, piece of {organism_base}		{organism} seed				dill	Add as dill seed		
+	pome fruit	PO:0030110		pear plant	anjou pear	Anjou pear plant											Also add as 'anjou pear (raw)'		
+				chervil plant	chervil	Anthriscus cerefolium	NCBITaxon:40888			{organism_base} food product, {organism_base} material, piece of {organism_base}			{organism} leaf			chervil	Add chervil leaf, Add chervil leaf (dried)		
+				celery plant	celery	Apium graveolens Dulce Group	NCBITaxon:117781			{organism_base} food product, {organism_base} material, piece of {organism_base}			{organism} leaf, . . {organism} leaf (raw)	{organism} stalk, . . {organism} stalk (raw)	{organism} root, . . {organism} root (raw)		Add celery stalk, celery leaf, celery root, celery root (raw), celery bunch, celeriac stalk		
+				celeriac plant	celeriac	Apium graveolens Rapaceum Group	NCBITaxon:278110			{organism_base} food product, {organism_base} material, piece of {organism_base}					{organism} root		Add celeriac food product, check with celery, as its known as celery root		
+	seed	PO:0009010		peanut plant	peanut	Arachis hypogaea	NCBITaxon:3818			{organism_base} food product, {organism_base} material, piece of {organism_base}		{organism} seed				peanut			
+	peanut	FOODON:00003206		peanut plant	spanish peanut	Arachis hypogaea var. vulgaris	NCBITaxon:925390			{organism_base} food product, {organism_base} material									
+	seed	PO:0009010		areca palm	areca nut	Areca catechu	NCBITaxon:184783			{organism_base} food product, {organism_base} material, piece of {organism_base}		{organism} seed							
+	leaf	PO:0025034		arnica plant	arnica	Arnica	NCBITaxon:4246			{organism_base} food product, {organism_base} material, piece of {organism_base}			{organism} leaf				Add as arnica leaf		
+	rosette leaf	PO:0000014		mountain arnica plant	mountain arnica	Arnica montana	NCBITaxon:436207			{organism_base} food product, {organism_base} material, piece of {organism_base}			{organism} leaf				Add as mountain arnica leaf		
+				tarragon plant	tarragon	Artemisia dracunculus	NCBITaxon:72341			{organism_base} food product, {organism_base} material, piece of {organism_base}			{organism} leaf				Add as tarragon leaf		
+	leaf	PO:0025034		estafiate wormwood plant	estafiate wormwood	Artemisia ludoviciana	NCBITaxon:86312			{organism_base} food product, {organism_base} material, piece of {organism_base}			{organism} leaf				Add as estafiate wormwood leaf		
+	seed	PO:0009010		breadnut tree	breadnut	Artocarpus camansi	NCBITaxon:709039			{organism_base} food product, {organism_base} material, piece of {organism_base}		{organism} seed							
+	stem	PO:0009047		asparagus plant	asparagus	Asparagus officinalis	NCBITaxon:4686			{organism_base} food product, {organism_base} material, piece of {organism_base}				{organism} stem		garden asparagus			
+	root	PO:0009005		shatawari plant	shatawari	Asparagus racemosus	NCBITaxon:272846			{organism_base} food product, {organism_base} material, piece of {organism_base}					{organism} root		Newly created term, add shatawari root food product, shatawari root		
+	leaf	PO:0025034		neem tree	neem	Azadirachta indica	NCBITaxon:124943			{organism_base} food product, {organism_base} material, piece of {organism_base}			{organism} leaf				Add as neem leaf		
+	lima bean	FOODON:03302053		lima bean plant	baby lima bean	baby lima bean plant	FOODON:03411185										Add baby lima bean (raw), baby lima bean (raw, mature) How to add baby lima bean (raw, mature)		
+	pepo fruit	PO:0030111		banana passionfruit vine	banana passionfruit	banana passionfruit plant	FOODON:03412028												
+	hot pepper	FOODON:00003545		banana pepper plant	banana pepper	banana pepper plant	FOODON:03413722										Add banana pepper (raw)		
+	leaf	PO:0025034		land cress plant	land cress	Barbarea verna	NCBITaxon:50458			{organism_base} food product, {organism_base} material, piece of {organism_base}			{organism} leaf			early winter cress	Add as land cress leaf Add as land cress bunch		
+	spinach			malabar spinach plant	malabar spinach	Basella alba	NCBITaxon:3589			{organism_base} food product, {organism_base} material, piece of {organism_base}			{organism} leaf, . . {organism} leaf (raw)				Add malabar spinach leaf, Add malabar spinach leaf (raw)		
+	leaf	PO:0025034		bay laurel tree	bay leaf	bay plant	FOODON:03411197												
+	fruit	PO:0009001		beechnut tree	beechnut	beech tree	FOODON:03411543												
+	carrot			belgian carrot plant	belgian carrot	belgian carrot plant	FOODON:03411095												
+	serrano pepper	FOODON:03000128		bell pepper plant	bell pepper	bell pepper plant	FOODON:03412628												
+				barberry shrub	barberry	Berberis	NCBITaxon:22774			{organism_base} food product, {organism_base} material						barberries	Add as bark		
+	seed	PO:0009010		brazil nut tree	brazil nut	Bertholletia excelsa	NCBITaxon:3645			{organism_base} food product, {organism_base} material						Brazil nut	Add as 'brazilnut (shell on)'		
+	primary root	PO:0020127		beet plant	beet	Beta vulgaris	NCBITaxon:161934			{organism_base} food product, {organism_base} material, piece of {organism_base}					{organism} root		Add as beet greens bunch, beet greens		
+	beet			sugar beet plant	sugar beet	Beta vulgaris subsp. vulgaris	NCBITaxon:3555			{organism_base} food product, {organism_base} material							Add as swiss chard leaf		
+				chard plant	chard	Beta vulgaris subsp. vulgaris	NCBITaxon:3555			{organism_base} food product, {organism_base} material, piece of {organism_base}			{organism} leaf				Add as chard leaf Add as chard bunch		
+				swiss chard plant	swiss chard	Beta vulgaris subsp. vulgaris	NCBITaxon:3555			{organism_base} food product, {organism_base} material, piece of {organism_base}			{organism} leaf				Add as swiss chard leaf, swiss chard bunch		
+	seed	PO:0009010		annatto tree	annatto	Bixa orellana	NCBITaxon:66672			{organism_base} food product, {organism_base} material, piece of {organism_base}		{organism} seed					Add annatto seed		
+	fruit	PO:0009001		akee tree	akee	Blighia sapida	NCBITaxon:259381			{organism_base} food product, {organism_base} material, piece of {organism_base}	{organism}								
+	seed/leaf/stem			Good-King-Henry plant	Good-King-Henry	Blitum bonus-henricus	NCBITaxon:122298			{organism_base} food product, {organism_base} material, piece of {organism_base}		{organism} seed	{organism} leaf	{organism} stem			Add Good-King-Henry leaf Good-King-Henry stem Good-King-Henry seed		
+	flower/leaf			borage plant	borage	Borago officinalis	NCBITaxon:13363			{organism_base} food product, {organism_base} material, piece of {organism_base}	{organism} flower, . . {organism} flower (raw)		{organism} leaf, . . {organism} leaf (raw)				Add borage leaf borage leaf (raw), borage flower, borage flower (raw)		
+	pear	FOODON:00003041		pear tree	Bosc pear	Bosc pear plant	FOODON:03412080												
+	leaf/seed/bunch			mustard plant	mustard	Brassica juncea	NCBITaxon:3707			{organism_base} food product, {organism_base} material, piece of {organism_base}		{organism} seed	{organism} leaf				Add as mustard leaf Add as mustard greens bunch, Add as mustard seed		
+				indian mustard plant	indian mustard	Brassica juncea subsp. integrifolia	NCBITaxon:1940530			{organism_base} food product, {organism_base} material							Add as a seed.		
+	hypocotyl	PO:0020100		rutabaga plant	rutabaga	Brassica napus subsp. rapifera	NCBITaxon:3709			{organism_base} food product, {organism_base} material									
+	seed	PO:0009010		rapeseed plant	rapeseed	Brassica napus var. napus	NCBITaxon:138011			{organism_base} food product, {organism_base} material, piece of {organism_base}		{organism} seed							
+	leaf/bunch			siberian kale plant	siberian kale	Brassica napus var. pabularia	NCBITaxon:2070381			{organism_base} food product, {organism_base} material, piece of {organism_base}			{organism} leaf				Add as leaf, Add as siberian kale bunch		
+	head/leaf			cauliflower plant	cauliflower	Brassica oleracea var. botrytis	NCBITaxon:3715			{organism_base} food product, {organism_base} material, piece of {organism_base}			{organism} leaf				Add cauliflower floret, cauliflower leaf		
+	head/leaf			cabbage plant	cabbage	Brassica oleracea var. capitata	NCBITaxon:3716			{organism_base} food product, {organism_base} material, piece of {organism_base}			{organism} leaf	{organism} head		cabbage	Add as cabbage head Add as cabbage leaf		
+	axillary bud	PO:0004709		brussels sprout plant	brussels sprout	Brassica oleracea var. gemmifera	NCBITaxon:178616			{organism_base} food product, {organism_base} material						Brussels sprouts			
+	leaf/stem			kohlrabi plant	kohlrabi	Brassica oleracea var. gongylodes	NCBITaxon:109379			{organism_base} food product, {organism_base} material, piece of {organism_base}				{organism} stem			Add as kohlrabi stem		
+	floret/stalk/leaf			broccoli plant	broccoli	Brassica oleracea var. italica	NCBITaxon:36774			{organism_base} food product, {organism_base} material, piece of {organism_base}			{organism} leaf, . . {organism} leaf (raw)	{organism} stalk, . . {organism} stalk (raw)			Add broccoli floret, "Add as broccoli leaf, broccoli leaf (raw) broccoli stalk broccoli stalk (raw)"		
+	head/leaf			savoy cabbage plant	savoy cabbage	Brassica oleracea var. sabauda	NCBITaxon:1216010			{organism_base} food product, {organism_base} material, piece of {organism_base}			{organism} leaf						
+	leaf/stem/bunch			collard plant	collard	Brassica oleracea var. viridis	NCBITaxon:3713						{organism} leaf			kale	Add as collard leaf, "Add as collard head Add as collard greens bunch"		
+	leaf/stem/bunch			rapini plant	rapini	Brassica rapa	NCBITaxon:3711					{organism} seed				field mustard	subclass-axiom Add rapini leaf rapini leaf (raw) rapini bunch rapini food product		
+	leaf/rosette			bok choy plant	bok choy	Brassica rapa subsp. chinensis	NCBITaxon:93385			{organism_base} food product, {organism_base} material, piece of {organism_base}			{organism} leaf				Add as bok choy leaf, Also add bok choy rosette		
+	leaf	PO:0025034		mizuna plant	mizuna	Brassica rapa subsp. nipposinica	NCBITaxon:333344			{organism_base} food product, {organism_base} material, piece of {organism_base}			{organism} leaf				Add as mizuna leaf		
+	leaf	PO:0025034	cabbage	cabbage plant	chinese cabbage	Brassica rapa subsp. pekinensis or Brassica rapa subsp. chinensis	NCBITaxon:51351|NCBITaxon:93385			{organism_base} food product, {organism_base} material, piece of {organism_base}			{organism} leaf	{organism} head			taxon in subclass axiom. Add taxon manually, until I update the script. Add as chinese cabbage head, Add as chinese cabbage leaf		
+	hypocotyl	PO:0020100		turnip plant	turnip	Brassica rapa subsp. rapa	NCBITaxon:51350			{organism_base} food product, {organism_base} material, piece of {organism_base}			{organism} leaf			turnip	Add as turnip leaf Add as turnip greens bunch		
+				mustard spinach plant	mustard spinach	Brassica rapa var. perviridis	NCBITaxon:344680			{organism_base} food product, {organism_base} material, piece of {organism_base}			{organism} leaf, . . {organism} leaf (raw)				Add as mustard spinach leaf, Add mustard spinach food product, mustard spinach leaf (raw)		
+	seed	PO:0009010		charoli tree	charoli	Buchanania lanzan	NCBITaxon:1357583			{organism_base} food product, {organism_base} material, piece of {organism_base}		{organism} seed					Add as charoli seed		
+	seed	PO:0009010		pigeon pea plant	pigeon pea	Cajanus cajan	NCBITaxon:3821			{organism_base} food product, {organism_base} material, piece of {organism_base}		{organism} seed, . . {organism} seed (raw)				pigeon pea	Add pigeon pea (immature, raw)		
+	orange	FOODON:03315106; PATO:0000953		orange tree	california valencia orange	california valencia orange plant	FOODON:03411056												
+	beautyberry	FOODON:00004393		american beautyberry	american beautyberry	Callicarpa americana	NCBITaxon:204211			{organism_base} food product, {organism_base} material, piece of {organism_base}	{organism}						Add american beautyberry (raw)		
+	beautyberry	FOODON:00004393		welchs pink berry plant	welchs pink berry	Callicarpa americana	NCBITaxon:204211			{organism_base} food product, {organism_base} material, piece of {organism_base}	{organism}						Add welchs pink berry (raw)		
+	seed	PO:0009010		hemp plant	hemp	Cannabis sativa	NCBITaxon:3483			{organism_base} food product, {organism_base} material, piece of {organism_base}		{organism} seed, . . {organism} seed (raw)					Add as hemp seed, hemp food product, hemp seed (with hull) hemp seed (with hull, raw) hemp seed (dehulled, raw)		
+	flower bud	PO:0000056		caper plant	caper	Capparis spinosa	NCBITaxon:65558			{organism_base} food product, {organism_base} material						caperbush			
+	hot pepper	FOODON:00003545		cayenne pepper plant	cayenne pepper	Capsicum annuum	NCBITaxon:4072			{organism_base} food product, {organism_base} material									
+	hot pepper	FOODON:00003545		hot pepper plant	hot pepper	Capsicum annuum	NCBITaxon:4072			{organism_base} food product, {organism_base} material									
+	bell pepper	FOODON:00003546		pimiento plant	pimiento	Capsicum annuum	NCBITaxon:4072			{organism_base} food product, {organism_base} material									
+	chili pepper	FOODON:00003744		serrano pepper plant	serrano pepper	Capsicum annuum	NCBITaxon:4072			{organism_base} food product, {organism_base} material, piece of {organism_base}	{organism}						Add serrano pepper (raw)		
+	hot pepper	FOODON:00003545		habanero plant	habanero	Capsicum chinense	NCBITaxon:80379			{organism_base} food product, {organism_base} material, piece of {organism_base}	{organism}						Add habanero (raw)		
+				safflower plant	safflower	Carthamus tinctorius	NCBITaxon:4222			{organism_base} food product, {organism_base} material, piece of {organism_base}		{organism} seed				safflower	Add as safflower seed		
+	hickory nut	FOODON:00003089		pecan tree	pecan	Carya illinoinensis	NCBITaxon:32201			{organism_base} food product, {organism_base} material	. . {organism} (dried)						Add pecan nut food product		
+	hickory nut	FOODON:00003089		pignut hickory tree	pignut hickory nut	Carya glabra	NCBITaxon:13403			{organism_base} food product, {organism_base} material									
+	hickory nut	FOODON:00003089		shellbark hickory tree	shellback hickory nut	Carya laciniosa	NCBITaxon:1370058			{organism_base} food product, {organism_base} material									
+	hickory nut	FOODON:00003089		red hickory tree	red hickory nut	Carya ovalis	NCBITaxon:2800123			{organism_base} food product, {organism_base} material									
+	hickory nut	FOODON:00003089		shagbark hickory tree	shagbark hickory nut	Carya ovata	NCBITaxon:60418			{organism_base} food product, {organism_base} material									
+	hickory nut	FOODON:00003089		mexican hickory tree	mexican hickory nut	Carya palmeri	NCBITaxon:2044477			{organism_base} food product, {organism_base} material									
+	hickory nut	FOODON:00003089		black hickory tree	black hickory nut	Carya texana	NCBITaxon:1370061			{organism_base} food product, {organism_base} material									
+	melon	FOODON:00003597		casaba melon plant	casaba melon	casaba melon plant	FOODON:03411102										Add casaba melon (raw)		
+	nut fruit	PO:0030102		chestnut tree	chestnut	Castanea	NCBITaxon:21019			{organism_base} food product, {organism_base} material							Add in 'sub class axiom'		
+	chestnut	FOODON:00003563		japanese chestnut tree	japanese chestnut	Castanea crenata	NCBITaxon:103480			{organism_base} food product, {organism_base} material									
+	chestnut	FOODON:00003563		european chestnut tree	european chestnut	Castanea sativa	NCBITaxon:21020			{organism_base} food product, {organism_base} material, piece of {organism_base}	{organism}					European chestnut	Add european chestnut (raw)		
+	legume	FOODON:03310646		moreton bay chestnut tree	moreton bay chestnut	Castanospermum australe	NCBITaxon:24962									Australian chestnut			
+	leaf	PO:0025034		fireweed plant	fireweed	Chamaenerion angustifolium	NCBITaxon:13055										Add fireweed leaf, fireweed leaf (raw)		
+	leaf/seed/stem			tree spinach plant	tree spinach	Chenopodium giganteum	NCBITaxon:434242										Add tree spinach seed tree spinach leaf tree spinach stem		
+	seed	PO:0009010		quinoa plant	quinoa	Chenopodium quinoa	NCBITaxon:63459									quinoa	Add as quinoa seed		
+					chlorella	Chlorella	NCBITaxon:3071										Add as chlorella food product		
+	seed	PO:0009010		chickpea plant	chickpea	Cicer arietinum	NCBITaxon:3827									chickpea	Add chickpea (raw), Add chickpea (raw, mature)		
+	root/bunch			chicory plant	chicory	Cichorium intybus	NCBITaxon:13427									chicory	Also add as chicory bunch, chicory leaf, chicory head, Add chicory root (raw), chicory leaf, Add chicory leaf (raw)		
+	leaf	PO:0025034		indian bay tree	indian bay	Cinnamomum tamala	NCBITaxon:397098										indian bay leaf		
+	drupe fruit	PO:0030103		arabica coffee tree	arabica coffee bean	Coffea arabica	NCBITaxon:13443									coffee			
+	seed	PO:0009010		kola nut tree	kola nut	Cola acuminata	NCBITaxon:93760										Also add as kola nut pod		
+	leaf	PO:0025034		spanish thyme plant	spanish thyme	Coleus amboinicus	NCBITaxon:204180										Add as spanish thyme leaf		
+	root/leaf/shoot			taro plant	taro	Colocasia esculenta	NCBITaxon:4460									taro	Add as taro root, taro shoot, Add taro shoot (raw)		
+	leaf	PO:0025034		nalta jute plant	nalta jute	Corchorus olitorius	NCBITaxon:93759										Addnalta jute leaf, nalta jute leaf (raw)		
+	leaf/stem/bunch			coriander plant	coriander	Coriandrum sativum	NCBITaxon:4047									coriander	It was coriander leaff, Add coriander leaf, coriander leaf (raw), coriander leaf (dried), coriander seed, coriander bunch		coriander (whole or pieces) coriander leaf (whole or pieces) coriander seed (whole or pieces)
+	nut fruit	PO:0030102		common hazelnut tree	common hazelnut	Corylus avellana	NCBITaxon:13451												
+	nut fruit	PO:0030102		filbert nut tree	filbert nut	Corylus maxima	NCBITaxon:126985										Add as filbert nut		
+	anther	PO:0009066		saffron plant	saffron	Crocus sativus	NCBITaxon:82528										Add as saffron thread		
+	pepo fruit	PO:0030111		hubbard squash plant	hubbard squash	Cucurbita maxima	NCBITaxon:3661									winter squash	subclass axiom- Add hubbard squash (raw)		
+	pepo fruit	PO:0030111		straightneck squash plant	straightneck squash	Cucurbita pepo	NCBITaxon:3663										Add straightneck squash (raw)		
+	pepo fruit	PO:0030111		crookneck squash plant	crookneck squash	Cucurbita pepo	NCBITaxon:3663										Add crookneck squash (raw)		
+	pepo fruit	PO:0030111		summer squash plant	summer squash	Cucurbita pepo	NCBITaxon:3663										sub-class axiom		Use summer squash (whole or pieces)
+	pepo fruit	PO:0030111		yellow summer squash plant	yellow summer squash	Cucurbita pepo	NCBITaxon:3663										sub-class axiom		
+	pepo fruit	PO:0030111		spaghetti squash plant	spaghetti squash	Cucurbita pepo subsp. pepo	NCBITaxon:3664									vegetable marrow	Add spaghetti squash (raw)		
+	pepo fruit	PO:0030111		acorn squash plant	acorn squash	Cucurbita pepo var. ovifera	NCBITaxon:300795										Add as 'green acorn squash (raw)'		
+	pepo fruit	PO:0030111		melon plant	melon	Cucurbitaceae	NCBITaxon:3650										Add melon seed		
+	seed	PO:0009010		cumin plant	cumin	Cuminum cyminum	NCBITaxon:52462										Add as cumin seed		
+	root	PO:0009005		turmeric plant	turmeric	Curcuma longa	NCBITaxon:136217									turmeric	Add as turmeric root		
+	pome fruit	PO:0030110		quince tree	quince	Cydonia oblonga	NCBITaxon:36610									quince			
+	stalk/leaf			lemongrass plant	lemongrass	Cymbopogon citratus	NCBITaxon:66014									lemon grass	Add lemongrass leaf, lemongrass leaf (raw)		
+	stalk/leaf			cardoon plant	cardoon	Cynara cardunculus	NCBITaxon:4265										Add cardoon stalk, cardoon stalk (raw), cardoon leaf (raw), cardoon leaf		
+	head			artichoke plant	artichoke	Cynara cardunculus var. scolymus	NCBITaxon:59895										Also add as'artichoke head', 'artichoke head (raw)'		
+	tuber	NCBITaxon:36048; PO:0025522		yellow nutsedge plant	yellow nutsedge	Cyperus esculentus	NCBITaxon:1053340										Add as yellow nutsedge tuber		
+	drupe fruit	PO:0030103		longan tree	longan	Dimocarpus longan	NCBITaxon:128017												
+	shoot axis tuber	PO:0004543		yam plant	yam	Dioscorea	NCBITaxon:4672												
+	yam	FOODON:00003448		fiveleaf yam plant	fiveleaf yam	Dioscorea pentaphylla	NCBITaxon:167592												
+	corm	PO:0025355		water chestnut plant	water chestnut	Eleocharis dulcis	NCBITaxon:110284												
+	pod=fruit, seed=seed			cardamom plant	cardamom	Elettaria cardamomum	NCBITaxon:105181										Add as cardamom seed, deprecate cardamom (whole or pieces)		
+	seed	PO:0009010		finger millet plant	finger millet	Eleusine coracana	NCBITaxon:4511									finger millet	Add as fingermillet seed		
+	leaf/head			endive plant	endive	endive plant	FOODON:03411314										Add as head, also add endive leaf, endive leaf (raw)		
+	corm	PO:0025355		red Abyssinian banana plant	red Abyssinian banana	Ensete ventricosum	NCBITaxon:4639												
+	leaf/bunch			arugula plant	arugula	Eruca vesicaria subsp. sativa	NCBITaxon:29727										Add as arugula leaf Add as arugula greens bunch Add as baby arugula greens		
+	root	PO:0009005		wasabi plant	wasabi	Eutrema japonicum	NCBITaxon:75806										Add wasabi root, wasabi root (raw)		
+	seed	PO:0009010		legume plant	legume	Fabaceae	NCBITaxon:3803												
+	seed	PO:0009010		buckwheat plant	buckwheat	Fagopyrum esculentum	NCBITaxon:3617									common buckwheat	Add buckwheat seed, buckwheat seed (dried), Add whole groat buckwheat flour		
+	seed	PO:0009010		field corn plant	field corn	field corn plant	FOODON:03411379										Add as a field corn ernel.		
+	seed/bulb			fennel plant	fennel	Foeniculum vulgare	NCBITaxon:2849586										Add fennel food product, fennel seed fennel seed (dried) fennel bulb		fennel (whole or pieces),
+	apple	FOODON:00002473		fuji apple tree	fuji apple	Fuji apple tree	FOODON:00002861												
+	apple	FOODON:00002473		gala apple tree	gala apple	gala apple tree	FOODON:03415182										Add in FoodOn		
+	fruit	PO:0009001		mangosteen tree	mangosteen	Garcinia mangostana	NCBITaxon:58228												
+	seed	PO:0009010		ginkgo tree	ginkgo	Ginkgo biloba	NCBITaxon:3311									maidenhair tree	It was a 'ginkgo nut', so add ginkgo nut, and ginkgo leaf		
+	seed	PO:0009010		soybean plant	soybean	Glycine max	NCBITaxon:3847									soybean	also add as soybean sprout, Add soybean (raw, sprouted), Add soybean (raw, mature),		It was soybean (whole or pieces),
+	pod			edamame plant	edamame	Glycine max	NCBITaxon:3847									soybean	Add edamame pod, edamame pod (raw), probably same scientific name was used for any other specie as well.		
+	leaf/tuber			okazi plant	okazi	Gnetum africanum	NCBITaxon:44929										It was okazi leaf, so add that, and Add okazi tuber		
+	apple	FOODON:00002473		golden delicious apple tree	golden delicious apple	golden delicious apple tree	FOODON:03415183										Add in FoodOn		
+	apple	FOODON:00002473		granny smith apple tree	granny smith apple	Granny Smith apple tree	FOODON:00002852												
+	pod/spear			green asparagus plant	green asparagus	green asparagus plant	FOODON:03411604										Add green asparagus spear		
+	berry fruit	PO:0030108		sweet green bell pepper plant	sweet green bell pepper	green bell pepper plant	FOODON:03412629												
+	leaf	PO:0025034		bitterleaf plant	bitterleaf	Gymnanthemum amygdalinum	NCBITaxon:82755										Add as bitter leaf		
+	seed	PO:0009010		sunflower plant	sunflower	Helianthus annuus	NCBITaxon:4232									common sunflower	Add as 'sunflower seed (whole kernel)'		
+	root, tuber or bulb			jerusalem artichoke plant	jerusalem artichoke	Helianthus tuberosus	NCBITaxon:4233												
+	calyx	PO:0009060		roselle plant	roselle	Hibiscus sabdariffa	NCBITaxon:183260										Add roselle calyx, roselle calyx (raw)		
+	muskmelon	FOODON:00003596		honeydew melon plant	honeydew melon	honeydew melon plant	FOODON:03411582												
+	stem	PO:0009047		hoodia plant	hoodia	Hoodia	NCBITaxon:197265										Add as hoodia stem		
+	seed	PO:0009010		barley plant	barley	Hordeum vulgare subsp. vulgare	NCBITaxon:112509									domesticated barley	Add barley seed		
+	seed cone			hops plant	hops	Humulus lupulus	NCBITaxon:3486									European hop			
+	berry fruit	PO:0030108		hungarian wax pepper plant	hungarian wax pepper	hungarian wax pepper plant	FOODON:03411353										Add hungarian wax pepper (raw)		
+	seed/fruit			star anise tree	star anise	Illicium verum	NCBITaxon:124778												
+	berry fruit	PO:0030108		jalapeno pepper plant	jalapeno pepper	jalapeno pepper plant	FOODON:03411666										Add jalapeno pepper (raw)		
+	walnut	FOODON:03301364		black walnut tree	black walnut	Juglans nigra	NCBITaxon:16719									black walnut			
+	walnut	FOODON:03301364		english walnut tree	english walnut	Juglans regia	NCBITaxon:51240									English walnut			
+	cone			juniper berry tree	juniper berry	Juniperus	NCBITaxon:13100									junipers			
+	leaf/bunch			kale plant	kale	kale plant	FOODON:03411281										Add as kale leaf Add as kale greens bunch		kale (whole or pieces) kale leaf (whole or pieces)
+	leaf	PO:0025034		alaska wild-rhubarb plant	alaska wild-rhubarb	Koenigia alaskana	NCBITaxon:669613										Add alaska wild-rhubarb leaf		
+	seed	PO:0009010		hyacinth bean plant	hyacinth bean	Lablab purpureus	NCBITaxon:35936										Add hyacinth bean (raw), Add hyacinth bean (raw, mature)		
+	rosette	PO:0025615		lettuce plant	lettuce	Lactuca sativa	NCBITaxon:4236									garden lettuce	Add lettuce leaf,lettuce head, lettuce leaf (raw)		lettuce head (whole or pieces)
+	leaf/stem			celtuce plant	celtuce	Lactuca sativa var. angustana	NCBITaxon:1049370										Add celtuce leaf celtuce leaf (raw) celtuce stem celtuce stem (raw), celtuce food product		
+	head/heart			romaine lettuce plant	romaine lettuce	Lactuca sativa var. longifolia	NCBITaxon:1759395										Add romaine lettuce head		
+	pepo fruit	PO:0030111		zucca melon plant	zucca melon	Lagenaria siceraria	NCBITaxon:3668									white-flowered gourd			
+	leaf	PO:0025034		chaparral plant	chaparral	Larrea tridentata	NCBITaxon:66636									creosote bush	Add as chaparral leaf		
+	seed	PO:0009010		lathyrus pea plant	lathyrus pea	Lathyrus	NCBITaxon:3853										taxon in sub class axiom		
+	seed	PO:0009010		sweet pea plant	sweet pea	Lathyrus odoratus	NCBITaxon:3859									sweet pea			
+	leaf	PO:0025034		bay laurel tree	bay laurel	Laurus nobilis	NCBITaxon:85223												
+	leaf	PO:0025034		field cress plant	field cress	Lepidium campestre	NCBITaxon:65351									pepperwort	Add as field cress leaf		
+	leaf	PO:0025034		garden cress plant	garden cress	Lepidium sativum	NCBITaxon:33125										Add garden cress leaf, garden cress food product garden cress leaf (raw)		
+	seed/pod			river tamarind tree	river tamarind	Leucaena leucocephala	NCBITaxon:3866									white popinac	Add as river tamarind pod, Add as river tamarind seed		
+	hesperidium fruit	PO:0030109		lime tree	lime	lime (citrus) plant	FOODON:03411067												
+	seed	PO:0009010		flaxseed plant	flaxseed	Linum usitatissimum	NCBITaxon:4006									flax			
+	drupe fruit	PO:0030103		lychee tree	lychee	Litchi chinensis	NCBITaxon:151069										Also add as lychee (raw)		
+	leaf	PO:0025034		mexican bay tree	mexican bay	Litsea glaucescens	NCBITaxon:88853										Add as mexican bay leaf		
+	seed	PO:0009010		lupine bean plant	lupine bean	lupine bean plant	FOODON:03411701										Add lupine bean (raw, mature)		
+	lupine bean	FOODON:00003737		white lupine bean plant	white lupine bean	Lupinus albus	NCBITaxon:3870									white lupine			
+	seed	PO:0009010		macadamia nut tree	macadamia nut	Macadamia integrifolia	NCBITaxon:60698										Add macadamia but food product, macadamia nut		
+	apple	FOODON:00002473		Malus sieversii apple tree	Malus sieversii apple	Malus sieversii	NCBITaxon:106567												
+				mamey apple tree	mamey apple	Mammea americana	NCBITaxon:198777										Also add as mamey apple (raw)		
+	tuberous root	PO:0025523		cassava plant	cassava	Manihot esculenta	NCBITaxon:3983									cassava	Add cassava cassava leaf		
+	tuber	NCBITaxon:36048; PO:0025522		arrowroot plant	arrowroot	Maranta arundinacea	NCBITaxon:210060												
+				fiddlehead plant	fiddlehead	Matteuccia struthiopteris	NCBITaxon:3277									ostrich fern	Add fiddlehead leaf, Add fiddlehead leaf (raw)		
+	leaf	PO:0025034		lemon balm plant	lemon balm	Melissa officinalis	NCBITaxon:39338									common balm	Add as lemon balm leaf		
+	leaf	PO:0025034		mint plant	mint	Mentha	NCBITaxon:21819										Add mint leaf, mint bunch		mint (whole or pieces) mint leaf (whole or pieces)
+	berry fruit	PO:0030108		miniature tomato plant	miniature tomato	miniature tomato plant	FOODON:03411608												
+	leaf	PO:0025034		kaim plant	kaim	Mitragyna parvifolia	NCBITaxon:1288021										Add kaim leaf		
+	leaf/pod			bitter gourd plant	bitter gourd	Momordica charantia	NCBITaxon:3673									bitter melon	It was bitter gourd leaf so add that and aAdd bitter gourd leaf (raw), bitter gourd pod		
+	sour cherry	FOODON:00003534		Morello cherry tree	Morello cherry	Morello cherry plant	FOODON:03412506										Also add as Morello cherry (raw)		
+	leaf/pod			moringa tree	moringa	Moringa	NCBITaxon:3734										Add moringa pod, moringa pod (raw), moringa food product		
+	seed	PO:0009010		velvet bean plant	velvet bean	Mucuna pruriens	NCBITaxon:157652												
+	leaf	PO:0025034		curry plant	curry	Murraya koenigii	NCBITaxon:159030										Add as curry leaf, curry leaf food product		
+	berry fruit	PO:0030108		Cavendish banana plant	Cavendish banana	Musa acuminata AAA Group	NCBITaxon:214697									dessert banana			
+	berry fruit	PO:0030108		Musa balbisiana banana plant	Musa balbisiana banana	Musa balbisiana	NCBITaxon:52838												
+	berry fruit	PO:0030108		plantain plant	plantain	Musa x paradisiaca	NCBITaxon:89151												
+	leaf	PO:0025034		watercress plant	watercress	Nasturtium officinale	NCBITaxon:65948										Add watercress leaf, Add watercress leaf (raw)		
+	seed/root			lotus plant	lotus	Nelumbo nucifera	NCBITaxon:4432									sacred lotus	Add as lotus seed		
+	drupe fruit	PO:0030103		rambutan tree	rambutan	Nephelium lappaceum	NCBITaxon:151071												
+	seed	PO:0009010		black cumin plant	black cumin	Nigella sativa	NCBITaxon:555479										Add black cumin seed, Add black cumin food product		black cumin seed (whole or pieces)
+	leaf	PO:0025034		basil plant	basil	Ocimum basilicum	NCBITaxon:39350									sweet basil	GRDI term, change it to basil, add basil leaf (dried)		Was basil (whole or pieces), FoodOn also has basil leaf (whole or pieces)
+	berry fruit	PO:0030108		sweet orange bell pepper plant	sweet orange bell pepper	orange bell pepper plant	FOODON:00003549												
+	leaf	PO:0025034		marjoram plant	marjoram	Origanum majorana	NCBITaxon:268884										Add marjoram leaf		
+	leaf	PO:0025034		oregano plant	oregano	Origanum vulgare	NCBITaxon:39352									oregano	Was oregano (whole or pieces), Add oregano leaf oregano leaf (dried)		Was oregano (whole or pieces)
+	caryopsis fruit	PO:0030104		whole grain rice plant	whole grain rice	Oryza sativa	NCBITaxon:4530									Asian cultivated rice			
+	caryopsis fruit	PO:0030104		white rice plant	white rice	Oryza sativa|Oryza glaberrima	NCBITaxon:4530|NCBITaxon:4538												
+	tuber	NCBITaxon:36048; PO:0025522		jicama plant	jicama	Pachyrhizus erosus	NCBITaxon:109171										Add as jicama tuber		
+	root, tuber or bulb			ginseng plant	ginseng	Panax	NCBITaxon:4053										Add as ginseng root		
+	ginseng	FOODON:03301402		chinese ginseng plant	chinese ginseng	Panax ginseng	NCBITaxon:4054										Add as japanese ginseng root		
+	ginseng	FOODON:03301402		japanese ginseng plant	japanese ginseng	Panax japonicus	NCBITaxon:44685												
+	ginseng	FOODON:03301402		american ginseng plant	american ginseng	Panax quinquefolius	NCBITaxon:44588										Add as american ginseng root		
+	leaf	PO:0025034		pandan plant	pandan	Pandanus amaryllifolius	NCBITaxon:260201										Add as pandan leaf		
+	primary root	PO:0020127		parsnip plant	parsnip	Pastinaca sativa	NCBITaxon:4041									parsnip			
+	pod			edible pea plant	edible pea	pea plant edible pod cultivars	FOODON:03411031										Add edible pea pod, edible pea pod (raw)		
+	turnip	FOODON:00003447		prairie turnip plant	prairie turnip	Pediomelum esculentum	NCBITaxon:458363										Add prairie turnip (raw)		
+	leaf	PO:0025034		eppaw plant	eppaw	Perideridia oregana	NCBITaxon:234866										Add eppaw leaf, Add eppaw leaf (raw)		
+	sprout/stem			butterbur plant	butterbur	Petasites japonicus	NCBITaxon:186965										Add as stem, Add butterbur (Petasites japonicus) food product, butterbur sprout		
+	leaf	PO:0025034		parsley plant	parsley	Petroselinum crispum	NCBITaxon:4043									parsley	Add as parsley leaf, parsley leaf (dried), Parsley leaf (freeze-dried), Add as parsley bunch		parsley (whole or pieces) parsley leaf (whole or pieces)
+	seed	PO:0009010		lima bean plant	lima bean	Phaseolus lunatus	NCBITaxon:3884									lima bean	Add lima bean (raw, immature), lima bean (whole,raw, mature), lima bean (whole,raw, mature),		
+	seed	PO:0009010		kidney bean plant	kidney bean	Phaseolus vulgaris	NCBITaxon:3885										Add kidney bean (raw, sprouted)		
+	seed	PO:0009010		red kidney bean plant	red kidney bean	Phaseolus vulgaris	NCBITaxon:3885												
+	seed	PO:0009010		wax bean plant	wax bean	Phaseolus vulgaris	NCBITaxon:3885										Add wax bean (raw)		
+	seed	PO:0009010		great northern bean plant	great northern bean	Phaseolus vulgaris	NCBITaxon:3885												
+	seed	PO:0009010		pinto bean plant	pinto bean	Phaseolus vulgaris	NCBITaxon:3885										Add pinto bean (raw), Add pinto bean (raw, sprouted), Add pinto bean (raw, mature)		
+	seed	PO:0009010		marrow bean plant	marrow bean	Phaseolus vulgaris	NCBITaxon:3885												
+	seed	PO:0009010		common bean plant	common bean	Phaseolus vulgaris	NCBITaxon:3885										Add common bean common bean pod		
+	drupe fruit	PO:0030103		date palm	date (fruit)	Phoenix dactylifera	NCBITaxon:42345									date palm			
+	berry fruit	PO:0030108		otaheite gooseberry tree	otaheite gooseberry	Phyllanthus acidus	NCBITaxon:260718												
+	berry fruit	PO:0030108		tomatillo plant	tomatillo	Physalis philadelphica	NCBITaxon:304130												
+	leaf	PO:0025034		west Indian bay tree	west Indian bay	Pimenta racemosa	NCBITaxon:260139										Add as west Indian bay leaf		
+	seed	PO:0009010		anise plant	anise	Pimpinella anisum	NCBITaxon:271192										Add as anise seed		
+	seed	PO:0009010		pine tree	pine nut	Pinus	NCBITaxon:3337										taxon in subclass axiom- Add as pine nut kernel		
+	leaf	PO:0025034		betel plant	betel	Piper betle	NCBITaxon:13217										Add as betel leaf		
+	root	PO:0009005		kava plant	kava	Piper methysticum	NCBITaxon:130404										Add as kava root		
+	seed	PO:0009010		pea plant	pea	Lathyrus oleraceus	NCBITaxon:3888									garden pea	Add pea sprout		
+	half seed			split pea plant	split pea	Lathyrus oleraceus	NCBITaxon:3888									garden pea	Add as split pea (dried), Add split pea (dried, immature), split pea (dried, mature)		
+	seed	PO:0009010		field pea plant	field pea	Lathyrus oleraceus var. arvensis	NCBITaxon:208196												
+	plant				plant	Plantae													
+	leaf/vegetative part			purslane plant	purslane	Portulaca oleracea	NCBITaxon:46147										Add as purslane leaf		
+	fruit	PO:0009001		tinda plant	tinda	Praecitrullus	NCBITaxon:252557												
+	drupe fruit	PO:0030103		yellow plum tree	yellow plum	Prunus americana	NCBITaxon:122118												
+	drupe fruit	PO:0030103		apricot tree	apricot	Prunus armeniaca	NCBITaxon:36596									apricot	Also add as apricot (raw)		
+	pepo fruit	PO:0030111		pumpkin plant	pumpkin	pumpkin plant	FOODON:03411456										Add as pumpkin leaf, pumpkin leaf (raw), pumpkin flower, pumpkin flower (raw)		
+	berry fruit	PO:0030108		pyracantha plant	pyracantha berry	Pyracantha	NCBITaxon:144561												
+	pear	FOODON:00003041		common pear tree	common pear	Pyrus communis	NCBITaxon:23211									pear			
+	pear	FOODON:00003041		asian pear tree	asian pear	Pyrus pyrifolia	NCBITaxon:3767												
+	pear	FOODON:00003041		manchurian pear tree	manchurian pear	Pyrus ussuriensis	NCBITaxon:309349												
+	nut	FOODON:03303171		oak tree	acorn	Quercus	NCBITaxon:3511												
+	root, tuber or bulb			radish plant	radish	Raphanus sativus	NCBITaxon:3726									radish	Add as radish leaf, Add radish seed, radish seed (raw), Add radish seed (raw, sprouted), radish seed		
+	root, tuber or bulb			daikon radish plant	daikon	Raphanus sativus var. niger	NCBITaxon:41679									Chinese radish			
+	root, tuber or bulb			black radish plant	black radish	Raphanus sativus var. sativus	NCBITaxon:240228												
+	aggregate fruit	FOODON:00003592		raspberry plant	raspberry	raspberry plant	FOODON:03411494												
+	bell pepper	FOODON:00003546		sweet red bell pepper plant	red bell pepper	red bell pepper plant	FOODON:03412630												
+	apple	FOODON:00002473		red delicious apple tree	red delicious apple	Red Delicious apple tree	FOODON:00002559												
+	berry fruit	PO:0030108		grape vine	red grape	red grape plant	FOODON:00004063										Add as red grape cluster		
+	lettuce			lettuce plant	red leaf lettuce	red leaf lettuce plant	FOODON:00003511										Add red leaf lettuce (raw)		
+	stalk / petiole			rhubarb plant	rhubarb stalk	Rheum rhabarbarum	NCBITaxon:3621									garden rhubarb	Add as rhubarb stalk		
+	aggregate fruit	FOODON:00003592			red raspberry	Rubus idaeus	NCBITaxon:32247										Add as red raspberry leaf		
+	aggregate fruit	FOODON:00003592			black raspberry	Rubus occidentalis	NCBITaxon:75079												
+	leaf	PO:0025034			dock	Rumex	NCBITaxon:3618										Add dock leaf		
+	leaf	PO:0025034			dock leaf	Rumex	NCBITaxon:3618										subclass axiom- Add dock leaf (raw)		
+	leaf	PO:0025034			sorrel	Rumex acetosa	NCBITaxon:41241									garden sorrel	Add as sorrel leaf, Add as sorrel bunch		
+	stem	PO:0009047			sugar cane	Saccharum officinarum	NCBITaxon:4547												
+	tuber	NCBITaxon:36048; PO:0025522			arrowhead	Sagittaria latifolia	NCBITaxon:15008									wapato	Add as arrowhead (raw)		
+	seed	PO:0009010			chia	Salvia hispanica	NCBITaxon:49212										Add chia food product, chia seed, deprecate chia seed (whole or pieces), chia sprout		
+	leaf	PO:0025034			sage	Salvia hispanica	NCBITaxon:49212										Add chia seed food product, chia seed		
+	leaf	PO:0025034			rosemary	Salvia officinalis	NCBITaxon:38868									garden sage	Add as sage leaf		
+	leaf	PO:0025034			elderberry	Salvia rosmarinus	NCBITaxon:39367									rosemary	Add as rosemary leaf		
+	berry fruit	PO:0030108			sarsaparilla	Sambucus	NCBITaxon:4201										sub class axiom		
+	root, tuber or bulb				savory	sarsaparilla plant	FOODON:03412065												
+	leaf	PO:0025034			summer savory	Satureja	NCBITaxon:49986										add savory leaf		
+	leaf	PO:0025034			winter savory	Satureja hortensis	NCBITaxon:49987										Add summer savory leaf		
+	leaf	PO:0025034			scallion	Satureja montana	NCBITaxon:49988												
+	sprout / stem				pattypan squash	scallion plant	FOODON:03411478												scallion (whole or pieces)
+	pepo fruit	PO:0030111			pink peppercorn	scallop squash plant	FOODON:03414505										subclass axiom		Deprecate/Use pattypan squash (whole or pieces) ID
+	seed	PO:0009010			rye	Schinus molle	NCBITaxon:43851												
+	berry fruit	PO:0030108			yellow pitaya fruit	Secale cereale	NCBITaxon:4550									rye	Add as rye kernel, rye kernel (raw), rye kernel (dried), Add dark rye flour medium rye flour light rye flour		
+	berry fruit	PO:0030108			dragon fruit	Selenicereus megalanthus	NCBITaxon:1195127												
+	leaf	PO:0025034			groundsel	Selenicereus undatus	NCBITaxon:176265												
+	seed / legume fruit				sesbania	Senecio vulgaris	NCBITaxon:76276										Add as groundsel leaf		
+	pepo fruit	PO:0030111			chayote	sesbania	NCBITaxon:3894										Add sesbania flower (raw)		
+	seed	PO:0009010			jojoba bean	Silybum marianum	NCBITaxon:92921										Add as Silybum marianum seed		
+	berry fruit	PO:0030108			tamarillo	Simmondsia chinensis	NCBITaxon:3999												
+	tuberous root	PO:0025523			sweet potato	Solanum betaceum	NCBITaxon:45843												
+	shoot axis tuber	PO:0004543			potato	Solanum quitoense	NCBITaxon:227725												
+	caryopsis fruit	PO:0030104			sorghum	Solanum tuberosum	NCBITaxon:4113									potato			
+	caryopsis fruit	PO:0030104			brown durra sorghum	Sorghum	NCBITaxon:4557										Add as kernel		
+	leaf	PO:0025034			spinach														
+	pepo fruit	PO:0030111			squash	Spinacia oleracea	NCBITaxon:3562									spinach	Add as spinach head Add as spinach leaf Add as spinach bunch		spinach (whole or pieces)
+	leaf	PO:0025034			stevia	Cucurbita	NCBITaxon:3660										subclass-Add squash (raw)		
+	caryopsis fruit	PO:0030104			sweet corn	Stevia rebaudiana	NCBITaxon:55670										Add as stevia leaf		
+	leaf	PO:0025034			swamp cabbage														
+	berry fruit	PO:0030108			miracle berry	sweet corn plant	FOODON:03411380										Add as sweet corn kernel		
+	flower bud	PO:0000056			clove (spice)	Symplocarpus foetidus	NCBITaxon:28477										Add swamp cabbage head, swamp cabbage head (raw), fireweed food product		
+	leaf	PO:0025034			indonesian bay	Synsepalum dulcificum	NCBITaxon:3743												
+	berry fruit	PO:0030108			java apple	Syzygium aromaticum	NCBITaxon:219868									clove			
+	drupe fruit	PO:0030103			tamarind	Syzygium polyanthum	NCBITaxon:883761										indonesian bay leaf		
+	leaf	PO:0025034			dandelion	Syzygium samarangense	NCBITaxon:260143												
+	leaf	PO:0025034			New Zealand spinach	Tamarindus indica	NCBITaxon:58860										Add as tamarind pod		
+	seed	PO:0009010			cocoa bean	Taraxacum officinale	NCBITaxon:50225										Add dandelion leaf, dandelion leaf (raw)		
+	berry fruit	PO:0030108			cupuaçu fruit	Tetragonia tetragonoides	NCBITaxon:45318										Add New Zealand spinach leaf, New Zealand spinach leaf (raw), Add New Zealand spinach food product		
+	root	PO:0009005			salsify	Theobroma cacao	NCBITaxon:3641									cacao			
+	seed / nut				mafurra nut	Theobroma grandiflorum	NCBITaxon:108881												
+	seed	PO:0009010			fenugreek	Tragopogon porrifolius	NCBITaxon:13731									salsify	Add as salsify root		
+	caryopsis fruit	PO:0030104			whole wheat														
+	caryopsis fruit	PO:0030104			common wheat														
+	caryopsis fruit	PO:0030104			spelt	Trichilia emetica	NCBITaxon:43895										Add mafurra nut food product		
+	caryopsis fruit	PO:0030104			durum wheat	Trigonella foenum-graecum	NCBITaxon:78534										Also add as fenugreek seed, fenugreek seed (dried), fenugreek leaf, fenugreek leaf bunch		
+	caryopsis fruit	PO:0030104			oriental wheat	Triticum	NCBITaxon:4564										Add as whole wheat kernel		
+	berry fruit	PO:0030108			tropical fruit	Triticum aestivum	NCBITaxon:4565									bread wheat	Add common wheat kernel		
+	leaf	PO:0025034			california bay	Triticum spelta	NCBITaxon:58933										Add spelt kernel, spelt kernel (raw)		
+	berry fruit	PO:0030108			cranberry	Triticum turgidum subsp. durum	NCBITaxon:4567									durum wheat	Add durum wheat kernel durum wheat kernel (raw) durum wheat kernel (dried)		
+	drupelet fruit				huckleberry	Triticum turgidum subsp. turanicum	NCBITaxon:376534										Add oriental wheat kernel ,oriental wheat kernel (raw)		
+	drupelet fruit				Alaska blueberry	tropical or subtropical fruit producing plant	FOODON:03411024												
+	berry fruit	PO:0030108			lingonberry	Umbellularia californica	NCBITaxon:3438									California bay	california bay leaf		
+	plant sap	PO:0025538			gum arabic	Vaccinium	NCBITaxon:13749										subclass axiom		
+	vegetable / leaf				vegetable	Vaccinium|Gaylussacia	NCBITaxon:13749|NCBITaxon:128891										Two taxons		
+	leaf	PO:0025034			mullein	Vaccinium ovalifolium	NCBITaxon:190544										Add Alaska blueberry (raw)		
+	drupelet fruit				squashberry	Vaccinium vitis-idaea	NCBITaxon:180772												
+	seed	PO:0009010			vetch	Vachellia seyal|Senegalia senegal	NCBITaxon:138044|NCBITaxon:138043												
+	seed	PO:0009010			broad bean	vegetable-producing plant	FOODON:03411579										Add as vegetable leaf		vegetable (whole or pieces)
+	seed	PO:0009010			moth bean	Verbascum thapsus	NCBITaxon:39388									common mullein	Add mullein leaf		
+	seed	PO:0009010			adzuki bean	Viburnum edule	NCBITaxon:237934												
+	seed	PO:0009010			black gram bean	Vicia	NCBITaxon:3904										Add as vetch seed		
+	seed	PO:0009010			mung bean	Vicia faba	NCBITaxon:3906									fava bean	Add broad bean (raw, mature)		
+	seed	PO:0009010			bambara groundnut	Vigna aconitifolia	NCBITaxon:3918										Add moth bean (raw, mature)		
+	seed	PO:0009010			rice bean	Vigna angularis	NCBITaxon:3914									adzuki bean			
+	seed	PO:0009010			cowpea	Vigna mungo	NCBITaxon:3915									black gram			
+	seed	PO:0009010			catjang pea	Vigna radiata	NCBITaxon:157791										Add as mung bean sprout, Add as mung bean (raw), mung bean (raw, mature), mung bean (raw, sprouted)		
+	seed	PO:0009010			asparagus bean	Vigna subterranea	NCBITaxon:115715												
+	seed	PO:0009010			blackeyed pea	Vigna umbellata	NCBITaxon:87088												
+	fruit / nut				shea	Vigna unguiculata	NCBITaxon:3917									cowpea	Add cowpea leaf, cowpea leaf (raw), Add cowpea pod (raw), cowpea pod		
+	shoot / stem / sprout				white asparagus	Vigna unguiculata subsp. cylindrica	NCBITaxon:3091605										Add catjang pea (raw, mature)		
+	berry fruit	PO:0030108			white grape	Vigna unguiculata subsp. sesquipedalis	NCBITaxon:138955										Add asparagus bean (raw), Add asparagus bean (raw, mature)		
+	seed	PO:0009010			white peppercorn	Vigna unguiculata subsp. unguiculata	NCBITaxon:3920									cowpea	Add blackeyed pea (raw, immature), blackeyed pea (raw, immature)		
+	caryopsis fruit	PO:0030104			wild rice kernel	Vitellaria paradoxa	NCBITaxon:292385										Add shea nut, shea fruit		
+	pome fruit	PO:0030110			Williams pear	white asparagus plant	FOODON:00003552										Add white asparagus spear		
+	pepo fruit	PO:0030111			winter squash	white grape plant	FOODON:00004064										Add as white grape cluster		
+	tuberous root	PO:0025523			tahitian taro	white pepper plant	FOODON:03411141												white peppercorn (whole or pieces)
+	tuberous root	PO:0025523			arrowleaf elephant ear	wild rice plant	FOODON:03411375										Add wild rice kernel (raw)		
+	berry fruit	PO:0030108			sweet yellow bell pepper	Williams bon chrétien pear plant	FOODON:00002842												
+	caryopsis fruit	PO:0030104			yellow dent corn	winter squash plant	FOODON:03411189												
+	drupelet fruit				youngberry	Xanthosoma brasiliense	NCBITaxon:513163										Add tahitian taro leaf, Add tahitian taro leaf (raw)		
+	caryopsis fruit	PO:0030104			maize	Xanthosoma sagittifolium	NCBITaxon:28478										Add Add arrowleaf elephant ear (raw)		
+	rhizome	PO:0004542			ginger	yellow bell pepper plant	FOODON:03412631												
+	drupe fruit	PO:0030103			jujube	yellow field corn plant	FOODON:03411580										Add as yellow dent corn kernel		
+	berry fruit	PO:0030108			tomato	youngberry plant	FOODON:03411388												
+	berry fruit	PO:0030108			kiwifruit	Zea mays subsp. mays	NCBITaxon:381124									maize	Add maize kernel. maize cob		
+	shoot / stem / sprout				purple asparagus	Zingiber officinale	NCBITaxon:94328										Add as ginger root, ginger leaf		ginger leaf (whole or pieces) ginger root (whole or pieces)
+	shoot axis tuber	PO:0004543			yellow potato	Ziziphus jujuba	NCBITaxon:326968									common jujube	Add as jujube fruit		
+	shoot axis tuber	PO:0004543			white potato	Solanum lycopersicum	NCBITaxon:4081									tomato			tomato (whole or pieces)
+			hard white winter wheat		Breck hard white winter wheat														
+			quinoa		Brightest Brilliant Rainbow quinoa														
+			potato		Canela Russet potato														
+			okra		Carmine Splendor okra														
+			wheat		Castella white club wheat														
+			coffee		Catimor coffee														
+			potato		Chipeta potato														
+			potato		Chipper potato														
+			pine nut		Colorado pinyon pine nut														
+			onion		Cometa white onion														
+			apple		Cosmic Crisp apple														
+			wheat		Crescent hard red winter wheat														
+			tomato		Damsel tomato														
+			carrot		Deep Purple carrot														
+			pecan		Desirable pecan														
+			beet		Detroit Dark Red beet														
+			beet root		Detroit Dark Red beetroot														
+			cucumber		Diva cucumber														
+			squash		Dunja zucchini squash														
+			sweet pepper		Early Perfect Italian sweet pepper														
+			cowpea		Early Scarlet cowpea														
+			sweet red bell pepper		Early sweet red pepper														
+			wheat		Egan hard red spring wheat														
+			apple		Envy apple														
+			bell pepper		Escamillo bell pepper														
+			corn		Festivity corn														
+			bell pepper		Flavorburst bell pepper														
+			muscadine		Fry muscadine														
+			eggplant		Galine eggplant														
+			biloba		Ginkgo biloba														
+			papaya		Gold papaya														
+			broccoli		Green Magic broccoli														
+			grape		Gum Drop grape														
+			wheat		Hailey soft white winter wheat														
+			field pea		Hampton field pea														
+			tea		Hohoysi tea														
+			mango		Honey mango														
+			apple		Honeycrisp apple														
+			potato		Inka Gold potato														
+			potato		Irish potato														
+			pumpkin		Jack O Lantern pumpkin														
+			muscadine		Jane Bell muscadine														
+			pepper		Jedi jalapeno pepper														
+			wheat		Keldin hard red winter wheat														
+			jujube		Lang jujube														
+			jujube		Li jujube														
+			wheat		Longmeier hard red spring wheat														
+			mango		Mangifera minor														
+			olive		Manzanilla olive														
+			papaya		Maradol papaya														
+			potato		Masquerade potato														
+			date		Medjool date														
+			barley		Megs Song Spring barley														
+			bok choy		Mei Qing bok choy														
+			wheat		Mela soft white winter wheat														
+			tea		Mexican tea														
+			tangelo		Minneola tangelo														
+			potato		Modoc potato														
+			chili pepper		Mosco chili pepper														
+			tomato		Moskovich tomato														
+			cherry		Nankin cherry														
+			potato		Nicola potato														
+			corn		Nirvana corn														
+			almond		Nonpareil almond														
+			apple		Pink apple														
+			wheat		Piranha soft white winter wheat														
+			potato		Purple Majesty potato														
+			potato		Purple Peruvian potato														
+			potato		Purple potato														
+			kidney bean		Red California kidney bean														
+			carrot		Redsun carrot root														
+			onion		Redwing onion														
+			onion		Redwing onion cultivar														
+			melon		Rocky Ford melon														
+			tomato		Roma tomato														
+			wheat		Rouge De Bordeaux hard red winter wheat														
+			potato		Russet Norkotah potato (raw)														
+			potato		Russet Norkotah potato														
+			potato		Russet Nugget potato														
+			potato		Russet potato														
+			potato		Sangre-S10 potato														
+			carrot		Scarlet Nantes carrot														
+			apple		Scarlet Spur apple														
+			wheat		Scorpio hard red winter wheat														
+			jujube		Shanxi Li jujube														
+			wheat		Shine soft white winter wheat														
+			wheat		Snowmass hard white winter wheat														
+			wheat		Soft white club wheat														
+			grapefruit		Star Ruby grapefruit														
+			wheat		Stingray soft white winter wheat														
+			apple		SugarBee apple														
+			grape		Supreme muscadine														
+			wheat		Sy McCloud hard red spring wheat														
+			wheat		Sy ingmar hard red spring wheat														
+			apple		Tandem soft white winter wheat														
+			tomatillo		Tango apple														
+			mango		Toma Verde tomatillo														
+			wheat		Tommy Atkins mango														
+			wheat		Trident soft white wheat														
+			onion		Turkey hard red winter wheat														
+			onion		Vaquero onion														
+			wheat		Warhorse hard red winter wheat														
+			radish		Watermelon daikon radish														
+			carrot		White Satin carrot														
+			potato		Yukon Gold potato														
+			kiwifruit		Zespri SunGold kiwifruit														
+			bean		black turtle bean														
+			pineapple		MD2 Super Sweet pineapple														
+			pear		green anjou pear														
+			pear		red anjou pear														
+			blackberry		california blackberry														
+			onion		cipollini														
+			squash		butternut squash														
+			bean		canary bean														
+			date		deglet nour date														
+			pepper		devils tongue														
+			lime bean		fordhook lima bean														
+			grapefruit		golden oriental grapefruit														
+			squash		golden zucchini squash														
+			rice		golden rice														
+			potato		idaho potato														
+			potato		idaho russet potato														
+			tangelo		Jamaican tangelo														
+			potato		russet burbank potato														
+			sweet potato		jersey yellow sweet potato														
+			banana		Saba banana														
+			elderberry		blue elderberry														
+			corn		2171 corn														
+			potato		Alegria potato														
+			corn		Allure corn														
+			wheat		Artdedo soft white winter wheat														
+			rice		Arborio rice														
+			wheat		Artdedo soft white winter wheat														
+			potato		Atlantic potato														
+			apple		Aztec Fuji apple														
+			tomato		Beefsteak tomato														
+			huckleberry		blueleaf huckleberry														
+					borojó														
+					brassica														
+					brazil nut														
+					brown bean														
+					brown rice														
+					bullocks heart														
+					burdock														
+					burma bean														
+					bushberry														
+					cacao														
+					cactus														
+					canada thistle														
+					canola														
+					capsicum pepper														
+					caraway														
+					carob bean														
+					cashew														
+					castor bean														
+					cattail														
+					cherimoya														
+					china bean														
+					chinaberry														
+					chinese yam														
+					chokeberry														
+					chrysanthemum														
+					chufa														
+					cinnamon														
+					citron melon														
+					clove														
+					cocklebur tea														
+					cocos fruit														
+					coffee														
+					comfrey														
+					common bamboo														
+					common cowpea														
+					common millet														
+					corn														
+					cotton seed														
+					cucurbit fruit														
+					curly kale														
+					currant														
+					date														
+					dogwood berry														
+					doliches bean														
+					drupelet berry														
+					dry bean														
+					dry pea														
+					edible bean														
+					edible seed														
+					egusi seed														
+					escarole														
+					european blackberry														
+					european filbert														
+					excelsa coffee bean														
+					farro														
+					field blewit														
+					fiveleaf yam														
+					flax vegetable														
+					forest lamb														
+					fox grape														
+					fragrant grenadilla														
+					french endive														
+					french grey shallot														
+					fruit														
+					fundu nut														
+					gai lan														
+					german chamomile														
+					ginkgo nut														
+					goldenberry														
+					gourd														
+	chinese broccoli				granadilla de quijo														
+					granadilla														
+					greater burdock														
+					green bell pepper														
+					green cardamom														
+					green kidney bean														
+					green lentil														
+					green olive														
+					green plantain														
+					white onion														
+					red onion														
+					yellow onion														
+					green pea														
+					light red kidney bean														
+					dark red kidney bean														
+					black beautyberry														
+					white icicle radish														
+					clingstone peach														
+					freestone peach														
+					blue plum														
+					purple plum														
+					prune														
+					black olive														
+					pear tomato														
+					cranberry bean														
+					pink bean														
+					green bean														
+					grape tomato														
+					green acorn squash														
+					golden acorn squash														
+					Mexican grey squash														
+					black grape														
+					bean														
+					green cabbage														
+					tronchuda cabbage														
+					runner peanut														
+					valencia peanut														
+					virginia peanut														
+					sweet onion														
+					vanilla bean														
+					bramble berry														
+					wrinkled pea														
+					chili pepper														
+					rose hip														
+					red plum														
+					plum tomato														
+					yellow variety sweet potato														
+					red variety sweet potato														
+					sair date														
+					green tomato														
+					purple cauliflower														
+					red potato														
+					seedless white grape														
+					ribier grape														
+					white bean														
+					herb														
+					yellow sweet corn														
+					white sweet corn														
+					chamomile														
+					red pear tomato														
+					kra thom na														
+					shanghai bok choy														
+					egusi														
+					green algae														
+					whole grain														
+					blood orange														
+					prickly pear pad														
+					thyme														
+					crisphead lettuce														
+					butterhead lettuce														
+					loose leaf lettuce														
+					living lettuce														
+					welsh onion														
+					poppy														
+					brown lentil														
+					red lentil														
+					pink lentil														
+					green cauliflower														
+					delicata squash														
+					yellow bean														
+					scotch kale														
+					baby zucchini squash														
+					yellow tomato														
+					orange tomato														
+					mountain yam														
+					navy bean														
+					wheat														
+					rice														
+					kelp														
+					red algae														
+					irish moss														
+					seaweed														
+					agave														
+					alfalfa														
+					amasake														
+					american dewberry														
+					ancho pepper														
+					angelica														
+					anise hyssop														
+					black cardamom														
+					black chokeberry														
+					black crowberry														
+					black fonio														
+					black peppercorn														
+					black rice														
+					black sesame seed														
+					bamboo														
+					baobab														
+					beaked hazelnut														
+					bilberry														
+					bitter leaf														
+					baby spinach														
+					badea														
+					balsam apple														
+					bitter melon														
