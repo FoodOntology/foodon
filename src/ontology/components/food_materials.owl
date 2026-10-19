@@ -30,8 +30,8 @@ Prefix(indexfungorum:=<http://www.indexfungorum.org/names/NamesRecord.asp?Record
 
 
 Ontology(<http://purl.obolibrary.org/obo/foodon/components/food_materials.owl>
-<http://purl.obolibrary.org/obo/foodon/releases/2026-09-20/components/food_materials.owl>
-Annotation(owl:versionInfo "2026-09-20")
+<http://purl.obolibrary.org/obo/foodon/releases/2026-09-29/components/food_materials.owl>
+Annotation(owl:versionInfo "2026-09-29")
 
 Declaration(Class(obo:BTO_0000262))
 Declaration(Class(obo:BTO_0001217))
@@ -2910,6 +2910,7 @@ Declaration(Class(obo:NCBITaxon_100192))
 Declaration(Class(obo:NCBITaxon_100202))
 Declaration(Class(obo:NCBITaxon_1003157))
 Declaration(Class(obo:NCBITaxon_1003729))
+Declaration(Class(obo:NCBITaxon_1003771))
 Declaration(Class(obo:NCBITaxon_1003779))
 Declaration(Class(obo:NCBITaxon_1003939))
 Declaration(Class(obo:NCBITaxon_100756))
@@ -3569,6 +3570,7 @@ Declaration(Class(obo:NCBITaxon_204211))
 Declaration(Class(obo:NCBITaxon_2044477))
 Declaration(Class(obo:NCBITaxon_204813))
 Declaration(Class(obo:NCBITaxon_204814))
+Declaration(Class(obo:NCBITaxon_205127))
 Declaration(Class(obo:NCBITaxon_205130))
 Declaration(Class(obo:NCBITaxon_205134))
 Declaration(Class(obo:NCBITaxon_2057075))
@@ -3938,7 +3940,6 @@ Declaration(Class(obo:NCBITaxon_304850))
 Declaration(Class(obo:NCBITaxon_30493))
 Declaration(Class(obo:NCBITaxon_3049887))
 Declaration(Class(obo:NCBITaxon_3051908))
-Declaration(Class(obo:NCBITaxon_3052985))
 Declaration(Class(obo:NCBITaxon_306053))
 Declaration(Class(obo:NCBITaxon_306578))
 Declaration(Class(obo:NCBITaxon_306579))
@@ -4090,14 +4091,10 @@ Declaration(Class(obo:NCBITaxon_334988))
 Declaration(Class(obo:NCBITaxon_335027))
 Declaration(Class(obo:NCBITaxon_335034))
 Declaration(Class(obo:NCBITaxon_335060))
+Declaration(Class(obo:NCBITaxon_33514))
 Declaration(Class(obo:NCBITaxon_3352246))
-Declaration(Class(obo:NCBITaxon_3352506))
-Declaration(Class(obo:NCBITaxon_3352919))
-Declaration(Class(obo:NCBITaxon_3353515))
 Declaration(Class(obo:NCBITaxon_335480))
 Declaration(Class(obo:NCBITaxon_3357553))
-Declaration(Class(obo:NCBITaxon_3358813))
-Declaration(Class(obo:NCBITaxon_3360502))
 Declaration(Class(obo:NCBITaxon_336262))
 Declaration(Class(obo:NCBITaxon_3363545))
 Declaration(Class(obo:NCBITaxon_3363546))
@@ -4760,6 +4757,7 @@ Declaration(Class(obo:NCBITaxon_555479))
 Declaration(Class(obo:NCBITaxon_555484))
 Declaration(Class(obo:NCBITaxon_555485))
 Declaration(Class(obo:NCBITaxon_555487))
+Declaration(Class(obo:NCBITaxon_555488))
 Declaration(Class(obo:NCBITaxon_555490))
 Declaration(Class(obo:NCBITaxon_555492))
 Declaration(Class(obo:NCBITaxon_555495))
@@ -5133,8 +5131,10 @@ Declaration(Class(obo:NCBITaxon_768495))
 Declaration(Class(obo:NCBITaxon_7685))
 Declaration(Class(obo:NCBITaxon_7688))
 Declaration(Class(obo:NCBITaxon_7691))
+Declaration(Class(obo:NCBITaxon_76921))
 Declaration(Class(obo:NCBITaxon_76926))
 Declaration(Class(obo:NCBITaxon_76927))
+Declaration(Class(obo:NCBITaxon_76929))
 Declaration(Class(obo:NCBITaxon_76930))
 Declaration(Class(obo:NCBITaxon_76931))
 Declaration(Class(obo:NCBITaxon_76966))
@@ -31932,6 +31932,14 @@ AnnotationAssertion(Annotation(obo:IAO_0000412 "FDA SFL Acceptable Market Name")
 AnnotationAssertion(oboInOwl:hasDbXref obo:NCBITaxon_1003729 <http://www.itis.gov/servlet/SingleRpt/SingleRpt?search_topic=TSN&search_value=168905>)
 AnnotationAssertion(Annotation(obo:IAO_0000412 "FDA SFL Common Name") oboInOwl:hasExactSynonym obo:NCBITaxon_1003729 "yellowstripe snapper"@en)
 
+# Class: obo:NCBITaxon_1003771 (obo:NCBITaxon_1003771)
+
+AnnotationAssertion(dcterms:contributor obo:NCBITaxon_1003771 <https://orcid.org/0000-0001-5275-8866>)
+AnnotationAssertion(Annotation(obo:IAO_0000412 "FDA SFL Acceptable Market Name") oboInOwl:hasBroadSynonym obo:NCBITaxon_1003771 "snapper"@en)
+AnnotationAssertion(oboInOwl:hasDbXref obo:NCBITaxon_1003771 <http://www.itis.gov/servlet/SingleRpt/SingleRpt?search_topic=TSN&search_value=643080>)
+AnnotationAssertion(Annotation(obo:IAO_0000412 "FDA SFL Common Name") oboInOwl:hasExactSynonym obo:NCBITaxon_1003771 "yellowtail blue snapper"@en)
+AnnotationAssertion(rdfs:seeAlso obo:NCBITaxon_1003771 wikipedia:Paracaesio_xanthura)
+
 # Class: obo:NCBITaxon_1003779 (obo:NCBITaxon_1003779)
 
 AnnotationAssertion(dcterms:contributor obo:NCBITaxon_1003779 <https://orcid.org/0000-0001-5275-8866>)
@@ -35966,6 +35974,15 @@ AnnotationAssertion(oboInOwl:hasDbXref obo:NCBITaxon_204814 <http://www.itis.gov
 AnnotationAssertion(Annotation(obo:IAO_0000412 "FDA SFL Common Name") oboInOwl:hasExactSynonym obo:NCBITaxon_204814 "moontail blassop"@en)
 AnnotationAssertion(rdfs:seeAlso obo:NCBITaxon_204814 wikipedia:Lunartail_puffer)
 
+# Class: obo:NCBITaxon_205127 (obo:NCBITaxon_205127)
+
+AnnotationAssertion(dcterms:contributor obo:NCBITaxon_205127 <https://orcid.org/0000-0001-5275-8866>)
+AnnotationAssertion(Annotation(obo:IAO_0000412 "FDA SFL Acceptable Market Name") oboInOwl:hasBroadSynonym obo:NCBITaxon_205127 "goby"@en)
+AnnotationAssertion(oboInOwl:hasDbXref obo:NCBITaxon_205127 <http://www.itis.gov/servlet/SingleRpt/SingleRpt?search_topic=TSN&search_value=637376>)
+AnnotationAssertion(oboInOwl:hasExactSynonym obo:NCBITaxon_205127 "baila"@en)
+AnnotationAssertion(Annotation(obo:IAO_0000412 "FDA SFL Common Name") oboInOwl:hasExactSynonym obo:NCBITaxon_205127 "tank goby"@en)
+AnnotationAssertion(rdfs:seeAlso obo:NCBITaxon_205127 wikipedia:Tank_goby)
+
 # Class: obo:NCBITaxon_205130 (obo:NCBITaxon_205130)
 
 AnnotationAssertion(dcterms:contributor obo:NCBITaxon_205130 <https://orcid.org/0000-0001-5275-8866>)
@@ -38345,14 +38362,6 @@ AnnotationAssertion(oboInOwl:hasDbXref obo:NCBITaxon_3051908 <http://www.itis.go
 AnnotationAssertion(Annotation(obo:IAO_0000412 "FDA SFL Common Name") oboInOwl:hasExactSynonym obo:NCBITaxon_3051908 "donkey croaker"@en)
 AnnotationAssertion(rdfs:seeAlso obo:NCBITaxon_3051908 wikipedia:Pennahia_anea)
 
-# Class: obo:NCBITaxon_3052985 (obo:NCBITaxon_3052985)
-
-AnnotationAssertion(dcterms:contributor obo:NCBITaxon_3052985 <https://orcid.org/0000-0001-5275-8866>)
-AnnotationAssertion(Annotation(obo:IAO_0000412 "FDA SFL Acceptable Market Name") oboInOwl:hasBroadSynonym obo:NCBITaxon_3052985 "morwong"@en)
-AnnotationAssertion(oboInOwl:hasDbXref obo:NCBITaxon_3052985 <http://www.itis.gov/servlet/SingleRpt/SingleRpt?search_topic=TSN&search_value=645512>)
-AnnotationAssertion(Annotation(obo:IAO_0000412 "FDA SFL Common Name") oboInOwl:hasExactSynonym obo:NCBITaxon_3052985 "magpie morwong"@en)
-AnnotationAssertion(rdfs:seeAlso obo:NCBITaxon_3052985 <https://www.gbif.org/species/2392121>)
-
 # Class: obo:NCBITaxon_306053 (obo:NCBITaxon_306053)
 
 AnnotationAssertion(dcterms:contributor obo:NCBITaxon_306053 <https://orcid.org/0000-0001-5275-8866>)
@@ -39373,6 +39382,14 @@ AnnotationAssertion(oboInOwl:hasDbXref obo:NCBITaxon_335060 <http://www.itis.gov
 AnnotationAssertion(Annotation(obo:IAO_0000412 "FDA SFL Common Name") oboInOwl:hasExactSynonym obo:NCBITaxon_335060 "blackspotted croaker"@en)
 AnnotationAssertion(rdfs:seeAlso obo:NCBITaxon_335060 wikipedia:Protonibea_diacanthus)
 
+# Class: obo:NCBITaxon_33514 (obo:NCBITaxon_33514)
+
+AnnotationAssertion(dcterms:contributor obo:NCBITaxon_33514 <https://orcid.org/0000-0001-5275-8866>)
+AnnotationAssertion(Annotation(obo:IAO_0000412 "FDA SFL Acceptable Market Name") oboInOwl:hasBroadSynonym obo:NCBITaxon_33514 "skate"@en)
+AnnotationAssertion(oboInOwl:hasDbXref obo:NCBITaxon_33514 <http://www.itis.gov/servlet/SingleRpt/SingleRpt?search_topic=TSN&search_value=160855>)
+AnnotationAssertion(Annotation(obo:IAO_0000412 "FDA SFL Common Name") oboInOwl:hasExactSynonym obo:NCBITaxon_33514 "clearnose skate"@en)
+AnnotationAssertion(rdfs:seeAlso obo:NCBITaxon_33514 wikipedia:Clearnose_skate)
+
 # Class: obo:NCBITaxon_3352246 (obo:NCBITaxon_3352246)
 
 AnnotationAssertion(dcterms:contributor obo:NCBITaxon_3352246 <https://orcid.org/0000-0001-5275-8866>)
@@ -39380,34 +39397,6 @@ AnnotationAssertion(Annotation(obo:IAO_0000412 "FDA SFL Acceptable Market Name")
 AnnotationAssertion(oboInOwl:hasDbXref obo:NCBITaxon_3352246 <http://www.itis.gov/servlet/SingleRpt/SingleRpt?search_topic=TSN&search_value=168826>)
 AnnotationAssertion(Annotation(obo:IAO_0000412 "FDA SFL Common Name") oboInOwl:hasExactSynonym obo:NCBITaxon_3352246 "australian ruff"@en)
 AnnotationAssertion(rdfs:seeAlso obo:NCBITaxon_3352246 wikipedia:Australian_herring)
-
-# Class: obo:NCBITaxon_3352506 (obo:NCBITaxon_3352506)
-
-AnnotationAssertion(dcterms:contributor obo:NCBITaxon_3352506 <https://orcid.org/0000-0001-5275-8866>)
-AnnotationAssertion(Annotation(obo:IAO_0000412 "FDA SFL Acceptable Market Name") oboInOwl:hasBroadSynonym obo:NCBITaxon_3352506 "goby"@en)
-AnnotationAssertion(oboInOwl:hasDbXref obo:NCBITaxon_3352506 <http://www.itis.gov/servlet/SingleRpt/SingleRpt?search_topic=TSN&search_value=637376>)
-AnnotationAssertion(oboInOwl:hasExactSynonym obo:NCBITaxon_3352506 "baila"@en)
-AnnotationAssertion(Annotation(obo:IAO_0000412 "FDA SFL Common Name") oboInOwl:hasExactSynonym obo:NCBITaxon_3352506 "tank goby"@en)
-AnnotationAssertion(rdfs:seeAlso obo:NCBITaxon_3352506 wikipedia:Tank_goby)
-
-# Class: obo:NCBITaxon_3352919 (obo:NCBITaxon_3352919)
-
-AnnotationAssertion(dcterms:contributor obo:NCBITaxon_3352919 <https://orcid.org/0000-0001-5275-8866>)
-AnnotationAssertion(Annotation(obo:IAO_0000412 "FDA SFL Acceptable Market Name") oboInOwl:hasBroadSynonym obo:NCBITaxon_3352919 "grunt"@en)
-AnnotationAssertion(oboInOwl:hasDbXref obo:NCBITaxon_3352919 <http://www.itis.gov/servlet/SingleRpt/SingleRpt?search_topic=TSN&search_value=169064>)
-AnnotationAssertion(Annotation(obo:IAO_0000412 "FDA SFL Common Name") oboInOwl:hasExactSynonym obo:NCBITaxon_3352919 "smallmouth grunt"@en)
-AnnotationAssertion(rdfs:seeAlso obo:NCBITaxon_3352919 wikipedia:Haemulon_chrysargyreum)
-
-# Class: obo:NCBITaxon_3353515 (obo:NCBITaxon_3353515)
-
-AnnotationAssertion(dcterms:contributor obo:NCBITaxon_3353515 <https://orcid.org/0000-0001-5275-8866>)
-AnnotationAssertion(Annotation(obo:IAO_0000412 "FDA SFL Acceptable Market Name") oboInOwl:hasBroadSynonym obo:NCBITaxon_3353515 "moki"@en)
-AnnotationAssertion(Annotation(obo:IAO_0000412 "FDA SFL Acceptable Market Name") oboInOwl:hasBroadSynonym obo:NCBITaxon_3353515 "morwong"@en)
-AnnotationAssertion(oboInOwl:hasDbXref obo:NCBITaxon_3353515 <http://www.itis.gov/servlet/SingleRpt/SingleRpt?search_topic=TSN&search_value=170254>)
-AnnotationAssertion(Annotation(obo:IAO_0000412 "FDA SFL Common Name") oboInOwl:hasExactSynonym obo:NCBITaxon_3353515 "brownband morwong"@en)
-AnnotationAssertion(Annotation(obo:IAO_0000412 "FDA SFL Common Name") oboInOwl:hasExactSynonym obo:NCBITaxon_3353515 "red moki"@en)
-AnnotationAssertion(rdfs:seeAlso obo:NCBITaxon_3353515 wikipedia:Red_moki)
-AnnotationAssertion(rdfs:seeAlso obo:NCBITaxon_3353515 <https://www.gbif.org/species/2392173>)
 
 # Class: obo:NCBITaxon_335480 (obo:NCBITaxon_335480)
 
@@ -39424,22 +39413,6 @@ AnnotationAssertion(Annotation(obo:IAO_0000412 "FDA SFL Acceptable Market Name")
 AnnotationAssertion(oboInOwl:hasDbXref obo:NCBITaxon_3357553 <http://www.itis.gov/servlet/SingleRpt/SingleRpt?search_topic=TSN&search_value=646154>)
 AnnotationAssertion(Annotation(obo:IAO_0000412 "FDA SFL Common Name") oboInOwl:hasExactSynonym obo:NCBITaxon_3357553 "rough leatherjacket"@en)
 AnnotationAssertion(rdfs:seeAlso obo:NCBITaxon_3357553 wikipedia:Smooth_leatherjacket)
-
-# Class: obo:NCBITaxon_3358813 (obo:NCBITaxon_3358813)
-
-AnnotationAssertion(dcterms:contributor obo:NCBITaxon_3358813 <https://orcid.org/0000-0001-5275-8866>)
-AnnotationAssertion(Annotation(obo:IAO_0000412 "FDA SFL Acceptable Market Name") oboInOwl:hasBroadSynonym obo:NCBITaxon_3358813 "snapper"@en)
-AnnotationAssertion(oboInOwl:hasDbXref obo:NCBITaxon_3358813 <http://www.itis.gov/servlet/SingleRpt/SingleRpt?search_topic=TSN&search_value=643080>)
-AnnotationAssertion(Annotation(obo:IAO_0000412 "FDA SFL Common Name") oboInOwl:hasExactSynonym obo:NCBITaxon_3358813 "yellowtail blue snapper"@en)
-AnnotationAssertion(rdfs:seeAlso obo:NCBITaxon_3358813 wikipedia:Paracaesio_xanthura)
-
-# Class: obo:NCBITaxon_3360502 (obo:NCBITaxon_3360502)
-
-AnnotationAssertion(dcterms:contributor obo:NCBITaxon_3360502 <https://orcid.org/0000-0001-5275-8866>)
-AnnotationAssertion(Annotation(obo:IAO_0000412 "FDA SFL Acceptable Market Name") oboInOwl:hasBroadSynonym obo:NCBITaxon_3360502 "skate"@en)
-AnnotationAssertion(oboInOwl:hasDbXref obo:NCBITaxon_3360502 <http://www.itis.gov/servlet/SingleRpt/SingleRpt?search_topic=TSN&search_value=160855>)
-AnnotationAssertion(Annotation(obo:IAO_0000412 "FDA SFL Common Name") oboInOwl:hasExactSynonym obo:NCBITaxon_3360502 "clearnose skate"@en)
-AnnotationAssertion(rdfs:seeAlso obo:NCBITaxon_3360502 wikipedia:Clearnose_skate)
 
 # Class: obo:NCBITaxon_336262 (obo:NCBITaxon_336262)
 
@@ -42803,6 +42776,14 @@ AnnotationAssertion(oboInOwl:hasDbXref obo:NCBITaxon_555487 <http://www.itis.gov
 AnnotationAssertion(Annotation(obo:IAO_0000412 "FDA SFL Common Name") oboInOwl:hasExactSynonym obo:NCBITaxon_555487 "caesar grunt"@en)
 AnnotationAssertion(rdfs:seeAlso obo:NCBITaxon_555487 wikipedia:Caesar_grunt)
 
+# Class: obo:NCBITaxon_555488 (obo:NCBITaxon_555488)
+
+AnnotationAssertion(dcterms:contributor obo:NCBITaxon_555488 <https://orcid.org/0000-0001-5275-8866>)
+AnnotationAssertion(Annotation(obo:IAO_0000412 "FDA SFL Acceptable Market Name") oboInOwl:hasBroadSynonym obo:NCBITaxon_555488 "grunt"@en)
+AnnotationAssertion(oboInOwl:hasDbXref obo:NCBITaxon_555488 <http://www.itis.gov/servlet/SingleRpt/SingleRpt?search_topic=TSN&search_value=169064>)
+AnnotationAssertion(Annotation(obo:IAO_0000412 "FDA SFL Common Name") oboInOwl:hasExactSynonym obo:NCBITaxon_555488 "smallmouth grunt"@en)
+AnnotationAssertion(rdfs:seeAlso obo:NCBITaxon_555488 wikipedia:Haemulon_chrysargyreum)
+
 # Class: obo:NCBITaxon_555490 (obo:NCBITaxon_555490)
 
 AnnotationAssertion(dcterms:contributor obo:NCBITaxon_555490 <https://orcid.org/0000-0001-5275-8866>)
@@ -45244,12 +45225,31 @@ AnnotationAssertion(dcterms:contributor obo:NCBITaxon_7691 <https://orcid.org/00
 AnnotationAssertion(Annotation(obo:IAO_0000412 "FDA SFL Acceptable Market Name") oboInOwl:hasBroadSynonym obo:NCBITaxon_7691 "sea cucumber"@en)
 AnnotationAssertion(rdfs:seeAlso obo:NCBITaxon_7691 wikipedia:Stichopus)
 
+# Class: obo:NCBITaxon_76921 (obo:NCBITaxon_76921)
+
+AnnotationAssertion(dcterms:contributor obo:NCBITaxon_76921 <https://orcid.org/0000-0001-5275-8866>)
+AnnotationAssertion(Annotation(obo:IAO_0000412 "FDA SFL Acceptable Market Name") oboInOwl:hasBroadSynonym obo:NCBITaxon_76921 "morwong"@en)
+AnnotationAssertion(oboInOwl:hasDbXref obo:NCBITaxon_76921 <http://www.itis.gov/servlet/SingleRpt/SingleRpt?search_topic=TSN&search_value=645512>)
+AnnotationAssertion(Annotation(obo:IAO_0000412 "FDA SFL Common Name") oboInOwl:hasExactSynonym obo:NCBITaxon_76921 "magpie morwong"@en)
+AnnotationAssertion(rdfs:seeAlso obo:NCBITaxon_76921 <https://www.gbif.org/species/2392121>)
+
 # Class: obo:NCBITaxon_76927 (obo:NCBITaxon_76927)
 
 AnnotationAssertion(dcterms:contributor obo:NCBITaxon_76927 <https://orcid.org/0000-0001-5275-8866>)
 AnnotationAssertion(Annotation(obo:IAO_0000412 "FDA SFL Acceptable Market Name") oboInOwl:hasBroadSynonym obo:NCBITaxon_76927 "morwong"@en)
 AnnotationAssertion(oboInOwl:hasDbXref obo:NCBITaxon_76927 <http://www.itis.gov/servlet/SingleRpt/SingleRpt?search_topic=TSN&search_value=645813>)
 AnnotationAssertion(Annotation(obo:IAO_0000412 "FDA SFL Common Name") oboInOwl:hasExactSynonym obo:NCBITaxon_76927 "morwong"@en)
+
+# Class: obo:NCBITaxon_76929 (obo:NCBITaxon_76929)
+
+AnnotationAssertion(dcterms:contributor obo:NCBITaxon_76929 <https://orcid.org/0000-0001-5275-8866>)
+AnnotationAssertion(Annotation(obo:IAO_0000412 "FDA SFL Acceptable Market Name") oboInOwl:hasBroadSynonym obo:NCBITaxon_76929 "moki"@en)
+AnnotationAssertion(Annotation(obo:IAO_0000412 "FDA SFL Acceptable Market Name") oboInOwl:hasBroadSynonym obo:NCBITaxon_76929 "morwong"@en)
+AnnotationAssertion(oboInOwl:hasDbXref obo:NCBITaxon_76929 <http://www.itis.gov/servlet/SingleRpt/SingleRpt?search_topic=TSN&search_value=170254>)
+AnnotationAssertion(Annotation(obo:IAO_0000412 "FDA SFL Common Name") oboInOwl:hasExactSynonym obo:NCBITaxon_76929 "brownband morwong"@en)
+AnnotationAssertion(Annotation(obo:IAO_0000412 "FDA SFL Common Name") oboInOwl:hasExactSynonym obo:NCBITaxon_76929 "red moki"@en)
+AnnotationAssertion(rdfs:seeAlso obo:NCBITaxon_76929 wikipedia:Red_moki)
+AnnotationAssertion(rdfs:seeAlso obo:NCBITaxon_76929 <https://www.gbif.org/species/2392173>)
 
 # Class: obo:NCBITaxon_76930 (obo:NCBITaxon_76930)
 
