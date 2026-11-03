@@ -10,7 +10,7 @@ This page covers the day-to-day steps. For the full picture, including what ever
 
 ## Step 1: test run
 
-Safe to run as many times as you want, since nothing real gets changed.
+Safe to run as many times as you want, since no plant import file content gets changed.
 
 ```
 sh run_organism_parts.sh MODE=test MODULE=plant TERM_CONTRIBUTOR_STR=<your orcid>
