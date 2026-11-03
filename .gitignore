@@ -94,3 +94,23 @@ src/ontology/owl2_profile_violations.txt
 src/ontology/foodon-merged.ofn
 src/ontology/foodon-synonyms.tsv
 src/ontology/scripts/cache-foodon-merged.owl
+
+# Python bytecode cache
+__pycache__/
+*.pyc
+
+# macOS Finder junk
+.DS_Store
+
+# Plant Template (src/ontology/imports/plant/) - none of these three paths
+# ever need to be committed, they're all regenerated automatically every
+# time organism_parts.py runs against the plant module.
+# plant_compile_skip_log.txt and plant_curation_flags.txt get rewritten
+# fresh on every run (test or real) to tell a curator what got skipped and
+# what's worth a second look.
+# TEST_RUN_RESULTS/ is MODE=test's whole scratch output folder - MODE=run
+# never writes here, it uses its own intermediate/ folder instead, which
+# deletes itself automatically when a real run finishes.
+src/ontology/imports/plant/plant_compile_skip_log.txt
+src/ontology/imports/plant/plant_curation_flags.txt
+src/ontology/imports/plant/TEST_RUN_RESULTS/

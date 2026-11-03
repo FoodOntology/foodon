@@ -1,0 +1,93 @@
+DISABLED	ID	parent class	label	FoodOn Term against ID in Column B	Example of that term	Equivalence axiom	Equivalence Override	Subclass axiom	definition	comment	Curation notesExample	Exact Synonym	Broad Synonym	created	contributor	see also	curation status	image	Curation notes	Minimum
+	ID	SC % SPLIT=|	AL rdfs:label@en		Example		EC %		AL IAO:0000115@en	AL rdfs:comment@en	A IAO:0000119 SPLIT=|	AL oboInOwl:hasExactSynonym@en	AL oboInOwl:hasBroadSynonym@en	AT dcterms:date^^xsd:dateTime	A dcterms:contributor SPLIT=|	A rdfs:seeAlso SPLIT=|	AI IAO:0000114	AI schema:image		
+	FOODON:00001015	plant food product | {organism_base} material	{organism_base} food product	plant food product	apple tree food product				A food product that has as a defining ingredient some {organism_base} material.											
+	FOODON:00005749	whole plant	{organism_base}	plant	apple tree	'whole plant' and 'in taxon' some '{taxon}'		'whole plant' and 'in taxon' some '{taxon}'	A whole {organism_base}.										e.g pumpkin plant	
+TRUE	FOODON:00005750	{organism_base}	organism_base (raw)	plant (raw)	apple tree (raw)	'{organism_base}' and 'has quality' some 'raw'			A raw {organism_base}.											
+	FOODON:00004331	plant material	{organism_base} material	plant material	apple tree material	'plant material' and 'in taxon' some '{taxon}'		'plant material' and 'in taxon' some '{taxon}'	Organism material that derives from some {organism_base}.	Both anatomical parts and liquids	Previously the EQ was: 'plant anatomical entity' and 'in taxon' some '{organism} plant'.  Definition was: An anatomical entity that is or was part of a{n} {organism}.								whole plant' is a subclass of plant anatomical entity so maybe we cannot use {organism} plant in equivalency?	
+	FOODON:00005748	{organism_base} material	{organism_base} substance	plant substance	apple tree substance	'organism substance' and 'in taxon' some '{taxon}'		'organism substance' and 'in taxon' some '{taxon}'	A plant substance which derives from part of one or more {organism_base}.	Only Liquids: Example: Include substances like latex, xylem sap, phloem sap, resin, mucilage, oil, cuticle, cutin, and sporopollenin.										
+	FOODON:00004333	{organism_base} material	piece of {organism_base}	piece of plant	piece of apple tree	'piece of plant'and 'in taxon' some '{taxon}'		'piece of plant'and 'in taxon' some '{taxon}'	A severed part of a{n} {organism_base}.											
+	FOODON:00005751	piece of {organism_base}	piece of {organism_base} (raw)	piece of plant (raw)	piece of apple tree (raw)	'piece of {organism_base}' and 'has quality' some 'raw'			A raw piece of a{n} {organism_base}.											
+	FOODON:00004334	{organism_base} material	piece(s) of {organism_base}	piece (s) of plant	piece(s) of apple tree	'has member' some 'piece of {organism_base}' and 'has member' only 'piece of {organism_base}'			One or more pieces of {organism_base}.											
+	FOODON:00005752	piece(s) of {organism_base}	piece(s) of {organism_base} (raw)	piece(s) of plant (raw)	piece(s) of apple plant (raw)	'piece(s) of {organism_base}' and 'has quality' some 'raw'			One or more raw pieces of {organism_base}.											
+	{anatomical_parent}	piece of {organism_base}	{organism}		apple	'{anatomical_parent}' and 'in taxon' some '{taxon}'		'{anatomical_parent}' and 'in taxon' some '{taxon}'	A {anatomical_parent} of a{n} {organism_base}.		walnut- to have a deshelled walnut-processing step, all of the processed term will go underneath the food product hierarchy...walnut food product hierarchy, and can add sshelled walnut underneath that. Outside of the drupe fruit hierarchy								Cannot add {organism} plant structure as a parent, because I think it is also a parent class of {organism} leaf e.g. coriander leaf., so should coriander and coriander leaf be siblings classes? Don't think so	
+	{anatomical_parent} (raw)	{organism}	{organism} (raw)		apple (raw)	'{organism}' and 'has quality' some 'raw'			A whole raw {organism}.											
+	{anatomical_parent} (dried)	{organism}	{organism} (dried)		hyacinth bean (dried)				A whole dried {organism}.											
+	{anatomical_parent} piece of {organism}	piece of {organism_base}	piece of {organism}		piece of apple				A severed part of a{n} {organism}.											
+	{anatomical_parent} piece of {organism} (raw)	piece of {organism}	piece of {organism} (raw)		piece of apple (raw)	'piece of {organism}' and 'has quality' some 'raw'			A raw piece of a{n} {organism}.											
+	FOODON:00005762	piece of {organism_base}	{organism} seed	plant seed	apple seed	'{anatomical_parent}' and 'in taxon' some '{taxon}'		'{anatomical_parent}' and 'in taxon' some '{taxon}'	A {anatomical_parent} of a{n} {organism}.										amaranth seed	
+	FOODON:00005763	{organism} seed	{organism} seed (raw)	plant seed (raw)	apple seed (raw)	'{organism} seed' and 'has quality' some 'raw'			A raw {organism} seed.											
+	FOODON:00005764	{organism} seed	{organism} grain	plant grain	barley grain				A grain of a plant.											
+	FOODON:00005765	{organism} grain	{organism} grain (raw)	plant grain (raw)	barley grain (raw)	'{organism} grain' and 'has quality' some 'raw'			A raw plant grain.											
+	FOODON:00005766	piece of {organism_base}	piece of {organism} seed	piece of plant seed	piece of coriander seed	piece of {organism_base}' and 'derives from' some 'plant seed'			A piece of a{n} {organism} seed.											
+	FOODON:00005767	piece of {organism} seed	piece of {organism} seed (raw)	piece of plant seed (raw)	piece of coriander seed (raw)	'piece of {organism} seed' and 'has quality' some 'raw'			A raw piece of {organism} seed.											
+TRUE	FOODON:00005806	piece(s) of {organism_base}	piece(s) of {organism} seed	piece(s) of plant seed	piece(s) of coriander seed	'has member' some 'piece of {organism} seed' and 'has member' only 'piece of {organism} seed'			One or more pieces of {organism} seed.											
+TRUE	FOODON:00005807	piece(s) of {organism} seed	piece(s) of {organism} seed (raw)	piece(s) of plant seed (raw)	piece(s) of coriander seed (raw)	'piece(s) of {organism} seed' and 'has quality' some 'raw'			One or more raw pieces of {organism} seed.											
+TRUE	FOODON:00005768	piece of {organism} seed	piece of {organism} grain	piece of plant grain	piece of barley grain				A piece of a{n} {organism} grain.											
+TRUE	FOODON:00005769	piece of plant grain	piece of {organism} grain (raw)	piece of plant grain (raw)	piece of barley grain (raw)															
+TRUE	FOODON:00005808	piece of {organism} seed	piece of {organism} seed (dried)	piece of plant seed (dried)	piece of coriander seed (dried)	'piece of {organism} seed' and 'has quality' some 'dried'			A dried piece of {organism} seed.											
+TRUE	FOODON:00005770	piece of {organism} grain	{organism} grain husk	plant grain husk		'husk' and 'part of' some 'plant grain'			A husk of a{n} {organism} grain.											
+TRUE	FOODON:00005771	{organism} grain husk	{organism} grain husk (raw)	plant grain husk (raw)		'{organism} grain husk' and 'has quality' some 'raw'			A raw {organism} grain husk.											
+	FOODON:00005757	piece of {organism_base}	{organism} leaf	plant leaf	coriander leaf	'piece of {organism_base}' and 'derives from' some 'plant leaf'			A whole leaf that derives from a{n} {organism}.											
+	FOODON:00005758	{organism} leaf	{organism} leaf (raw)	plant leaf (raw)		'{organism} leaf' and 'has quality' some 'raw'			A raw {organism} leaf.											
+	FOODON:00005759	{organism} leaf	{organism} leaf (fresh)	plant leaf (fresh)		'{organism} leaf' and 'has quality' some 'fresh'			A fresh {organism} leaf.											
+	FOODON:00005760	{organism} leaf	{organism} leaf (dried)	plant leaf (dried)		'{organism} leaf' and 'has quality' some 'dried'			A dried {organism} leaf.											
+	FOODON:00005754	piece of {organism_base}	piece of {organism} leaf	piece of plant leaf		'piece of {organism_base}' and 'derives from' some '{organism} leaf'			A piece of leaf that derives from a{n} {organism} leaf.											
+	FOODON:00005755	piece of {organism} leaf	piece of {organism} leaf (raw)	piece of plant leaf (raw)		'piece of {organism} leaf' and 'has quality' some 'raw'			A raw piece of a{n} {organism} leaf.											
+	FOODON:00005809	piece of {organism} leaf	piece of {organism} leaf (dried)	piece of plant leaf (dried)		'piece of {organism} leaf' and 'has quality' some 'dried'			A dried piece of a{n} {organism} leaf.											
+	FOODON:00005810	piece of {organism} leaf	piece of {organism} leaf (fresh)	piece of plant leaf (fresh)		'piece of {organism} leaf' and 'has quality' some 'fresh'			A fresh piece of a{n} {organism} leaf.											
+	FOODON:00005753	piece(s) of {organism_base} 	piece(s) of {organism} leaf	piece(s) of plant leaf		'has member' some 'piece of {organism} leaf' and 'has member' only 'piece of {organism} leaf'			One or more pieces of {organism} leaves.											
+	FOODON:00005756	piece(s) of {organism} leaf	piece(s) of {organism} leaf (raw)	piece(s) of plant leaf (raw)		'piece(s) of plant leaf' and 'has quality' some 'raw'			One or more raw pieces of {organism} leaves.											
+	FOODON:00005811	piece(s) of {organism} leaf	piece(s) of {organism} leaf (dried)	piece(s) of plant leaf (dried)		'piece(s) of plant leaf' and 'has quality' some 'dried'			One or more dried pieces of a{n} {organism} leaf.											
+	FOODON:00005812	piece(s) of {organism} leaf	piece(s) of {organism} leaf (fresh)	piece(s) of plant leaf (fresh)		'piece(s) of plant leaf' and 'has quality' some 'fresh'			One or more fresh pieces of {organism} leaves.											
+	FOODON:00004800	piece(s) of {organism_base} 	{organism} leaf bunch	plant leaf bunch	coriander bunch or coriander leaf bunch?				One or more {organism} structure piece(s).											
+	FOODON:00005772	piece of {organism_base}	{organism} stem	plant stem		'piece of {organism_base}' and 'derives from' some 'plant stem'			A stem that derives from a{n} {organism}.											
+	FOODON:00005773	{organism} stem	{organism} stem (raw)	plant stem (raw)		'{organism} stem' and 'has quality' some 'raw'			A raw {organism} stem.											
+TRUE	FOODON:00005813	piece of {organism_base}	piece of {organism} stem	piece of plant stem		'piece of {organism_base}' and 'derives from' some '{organism} stem'			A piece of {organism} stem.											
+TRUE	FOODON:00005814	piece of {organism} stem	piece of {organism} stem (raw)	piece of plant stem (raw)		'piece of {organism} stem' and 'has quality' some 'raw'			A raw piece of {organism} stem.											
+TRUE	FOODON:00005815	piece(s) of {organism_base} 	piece(s) of {organism} stem	piece(s) of plant stem		'has member' some 'piece of {organism} stem' and 'has member' only 'piece of {organism} stem'			One or more pieces of {organism} stem.											
+TRUE	FOODON:00005816	piece(s) of {organism} stem	piece(s) of {organism} stem (raw)	piece(s) of plant stem (raw)		'piece(s) of {organism} stem' and 'has quality' some 'raw'			One or more raw pieces of {organism} stem.											
+	FOODON:00005774	piece of {organism_base}	{organism} root	plant root		'piece of {organism_base}' and 'derives from' some 'plant root'			A whole root that derives from a{n} {organism}.											
+	FOODON:00005775	{organism} root	{organism} root (raw)	plant root (raw)		'{organism} root' and 'has quality' some 'raw'			A whole raw {organism} root.											
+	FOODON:00005776	piece of {organism_base}	{organism} tuber	plant tuber		'piece of {organism_base}' and 'derives from' some 'plant tuber'			A whole tuber that derives from a{n} {organism}.											
+	FOODON:00005777	{organism} tuber	{organism} tuber (raw)	plant tuber (raw)		'{organism} tuber' and 'has quality' some 'raw'			A whole raw {organism} tuber.											
+	FOODON:00005778	piece of {organism_base}	{organism} stalk	plant stalk		'piece of {organism_base}' and 'derives from' some 'plant stalk'			A whole stalk that derives from a{n} {organism}.											
+	FOODON:00005779	{organism} stalk	{organism} stalk (raw)	plant stalk (raw)		'{organism} stalk' and 'has quality' some 'raw'			A whole raw {organism} stalk.											
+	FOODON:00005782	piece of {organism_base}	{organism} head	plant head		'rosette' and 'in taxon' some '{organism} plant'			A rosette of a{n} {organism} plant.											
+	FOODON:00005783	{organism} head	{organism} head (raw)	plant head (raw)		'{organism} head' and 'has quality' some 'raw'			A whole raw {organism} head.											
+	FOODON:00005817	piece of {organism_base}	piece of {organism} head	piece of plant head		'piece of {organism_base}' and 'derives from' some 'plant head'			A piece of {organism} head.											
+	FOODON:00005818	piece of {organism} head	piece of {organism} head (raw)	piece of plant head (raw)		'piece of {organism} head' and 'has quality' some 'raw'			A raw piece of {organism} head.											
+	FOODON:00005784	piece of {organism_base}	{organism} bulb	plant bulb		'bulb' and 'in taxon' some '{taxon}' 			A bulb of a{n} {organism} plant.											
+	FOODON:00005785	{organism} bulb	{organism} bulb (raw)	plant bulb (raw)		'{organism} bulb' and 'has quality' some 'raw'			A whole raw {organism} bulb.											
+	FOODON:00005821	piece of {organism_base}	piece of {organism} bulb	piece pf plant bulb																
+	FOODON:00005822	piece of {organism} bulb	piece of {organism} bulb (raw)	piece pf plant bulb (raw)		'piece of {organism} bulb' and 'has quality' some 'raw'														
+	FOODON:00005780	piece of {organism_base}	{organism} scape	plant scape					A whole leafless basal flowering stalk arising from a {organism} plant.											
+	FOODON:00005781	{organism} scape	{organism} scape (raw)	plant scape (raw)		'{organism} scape' and 'has quality' some 'raw'			A whole raw {organism} scape.											
+	FOODON:00005786	piece of {organism_base}	{organism} flower	plant flower		'flower' and 'in taxon' some '{taxon}'			A flower of a {organism} plant.											
+	FOODON:00005787	{organism} flower	{organism} flower (raw)	plant flower (raw)		'{organism} flower' and 'has quality' some 'raw'			A raw {organism} flower.											
+	FOODON:00005819	{organism_base} material	{organism} pulp	plant pulp					The pulp of a{n} {organism}.											
+	FOODON:00005820	{organism} pulp	{organism} pulp (raw)	plant pulp (raw)		'{organism} pulp' and 'has quality' some 'raw'			{organism} pulp that is raw.											
+	FOODON:00005824	piece of {organism_base}	{organism} bark	plant bark																
+	FOODON:00005825	{organism} bark	{organism} bark (raw)	plant bark (raw)																
+	FOODON:00005826	{organism} flower	{organism} flower thread	plant flower thread					A thread-like part of a flower of a {organism} plant.											
+	FOODON:00005827	{organism} flower thread	{organism} flower thread (raw)	plant flower thread (raw)		'{organism} thread' and 'has quality' some 'raw'			A raw {organism} flower thread.											
+TRUE		{organism} material	{organism} peel	plant peel	In the future, we may want to do input for the peeling process and then connect it to the food product.				A {organism} peel.											
+TRUE		{organism} peel	{organism} peel (raw)	plant peel (raw)		'{organism} peel' and 'has quality' some 'raw'														
+TRUE		{organism} material	{organism} rind	plant rind					orange., lemon, etc.											
+TRUE		{organism} rind	{organism} rind (raw)	plant rind (raw)		'{organism} rind' and 'has quality' some 'raw'														
+TRUE		piece of {organism_base}	{organism} shell																	
+TRUE		{organism} shell	{organism} shell (raw)																	
+TRUE			{organism} shell on																	
+TRUE			{organism} shell off																	
+TRUE		clove| piece of {organism} bulb	{organism} clove			'clove' and 'in taxon' some '{organism} bulb'			A clove of a{n} {organism} bulb.											
+TRUE		{organism} clove	{organism} clove (raw)			'{organism} clove' and 'has quality' some 'raw'			A whole raw {organism} clove.											
+TRUE	New FoodOn ID	piece of {organism_base}	{organism} sprout			'piece of {organism_base}' and 'derives from' some 'plant sprout'			A whole sprout that derives from a{n} {organism}.											
+TRUE	New FoodOn ID	{organism} sprout	{organism} sprout (raw)			'{organism} sprout' and 'has quality' some 'raw'			A whole raw {organism} sprout.											
+TRUE		piece(s) of {organism} leaf	{organism} leaf (ground)			'is specified output of' some 'food grinding'  and 'has input' some '{organism} leaf'			a{n} {organism} leaf that has been ground.											
+TRUE		{organism} leaf (dried)|{organism} leaf (ground)	{organism} leaf (dried, ground)			'output of' some 'food grinding' and 'has input' some '{organism} leaf (dried)'			A dried {organism} leaf that has been ground.											
+TRUE		{organism} leaf (ground)	{organism} leaf (finely ground)			'{organism} leaf' and 'has quality' some 'dried' and 'has quality' some 'finely ground'			A whole dried {organism} leaf that has been finely ground.											
+TRUE		piece of {organism_base}	{organism} kernel			'caryopsis fruit' and 'derives from part of' some '{organism} plant'			A caryopsis fruit of a{n} {organism} kernel.											
+TRUE		{organism_parent} kernel	{organism_cultivar} kernel						A caryopsis fruit of a{n} {organism} kernel.											
+TRUE		{organism} kernel	{organism} kernel (raw)			'{organism} kernel' and 'has quality' some 'raw'			A whole raw {organism} kernel.											
+TRUE		{organism} kernel	{organism} kernel (dried)																	
+TRUE		piece of {organism_base}	{organism} pod			'{anatomical_parent}' and 'in taxon' some '{organism}'			A legume fruit of a{n} {organism} plant.											
+TRUE		{organism} pod	{organism} pod (raw)			'{organism} pod' and 'has quality' some 'raw'			A raw {organism} pod.											
