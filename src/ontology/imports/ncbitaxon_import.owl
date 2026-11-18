@@ -1,18 +1,32 @@
 Prefix(:=<http://purl.obolibrary.org/obo/foodon/imports/ncbitaxon_import.owl#>)
+Prefix(cc:=<http://creativecommons.org/ns#>)
 Prefix(dc:=<http://purl.org/dc/terms/>)
+Prefix(go:=<http://www.geneontology.org/formats/oboInOwl#>)
+Prefix(wd:=<https://www.wikidata.org/wiki/>)
+Prefix(dce:=<http://purl.org/dc/elements/1.1/>)
 Prefix(obo:=<http://purl.obolibrary.org/obo/>)
 Prefix(owl:=<http://www.w3.org/2002/07/owl#>)
 Prefix(rdf:=<http://www.w3.org/1999/02/22-rdf-syntax-ns#>)
 Prefix(xml:=<http://www.w3.org/XML/1998/namespace>)
 Prefix(xsd:=<http://www.w3.org/2001/XMLSchema#>)
+Prefix(dc11:=<http://purl.org/dc/elements/1.1/>)
 Prefix(foaf:=<http://xmlns.com/foaf/0.1/>)
+Prefix(grin:=<http://www.ars-grin.gov/cgi-bin/npgs/html/taxon.pl?>)
+Prefix(itis:=<http://www.itis.gov/servlet/SingleRpt/SingleRpt?search_topic=TSN&search_value=>)
 Prefix(prov:=<http://www.w3.org/ns/prov#>)
 Prefix(rdfa:=<http://www.w3.org/ns/rdfa#>)
 Prefix(rdfs:=<http://www.w3.org/2000/01/rdf-schema#>)
 Prefix(skos:=<http://www.w3.org/2004/02/skos/core#>)
 Prefix(void:=<http://rdfs.org/ns/void#>)
+Prefix(asfis:=<https://www.fao.org/fishery/en/aqspecies/>)
+Prefix(siren:=<https://bioregistry.io/reference/siren:>)
+Prefix(eolife:=<http://eol.org/pages/>)
+Prefix(schema:=<http://schema.org/>)
 Prefix(dcterms:=<http://purl.org/dc/terms/>)
+Prefix(langual:=<http://www.langual.org/langual_thesaurus.asp?termid=>)
 Prefix(oboInOwl:=<http://www.geneontology.org/formats/oboInOwl#>)
+Prefix(wikipedia:=<https://en.wikipedia.org/wiki/>)
+Prefix(indexfungorum:=<http://www.indexfungorum.org/names/NamesRecord.asp?RecordID=>)
 
 
 Ontology(<http://purl.obolibrary.org/obo/foodon/imports/ncbitaxon_import.owl>
@@ -3021,7 +3035,6 @@ Declaration(Class(obo:NCBITaxon_40548))
 Declaration(Class(obo:NCBITaxon_4055))
 Declaration(Class(obo:NCBITaxon_40552))
 Declaration(Class(obo:NCBITaxon_4056))
-Declaration(Class(obo:NCBITaxon_40562))
 Declaration(Class(obo:NCBITaxon_405908))
 Declaration(Class(obo:NCBITaxon_40674))
 Declaration(Class(obo:NCBITaxon_4068))
@@ -3044,6 +3057,7 @@ Declaration(Class(obo:NCBITaxon_410349))
 Declaration(Class(obo:NCBITaxon_410350))
 Declaration(Class(obo:NCBITaxon_4107))
 Declaration(Class(obo:NCBITaxon_41084))
+Declaration(Class(obo:NCBITaxon_4111))
 Declaration(Class(obo:NCBITaxon_41117))
 Declaration(Class(obo:NCBITaxon_4112))
 Declaration(Class(obo:NCBITaxon_4113))
@@ -10446,7 +10460,7 @@ SubClassOf(obo:NCBITaxon_1538097 obo:NCBITaxon_91888)
 
 AnnotationAssertion(obo:IAO_0000412 obo:NCBITaxon_1538424 obo:ncbitaxon.owl)
 AnnotationAssertion(rdfs:label obo:NCBITaxon_1538424 "Pholiota microspora")
-SubClassOf(obo:NCBITaxon_1538424 obo:NCBITaxon_40562)
+SubClassOf(obo:NCBITaxon_1538424 obo:NCBITaxon_2982305)
 
 # Class: obo:NCBITaxon_154467 (Bactris gasipaes)
 
@@ -12612,7 +12626,7 @@ SubClassOf(obo:NCBITaxon_181462 obo:NCBITaxon_1489923)
 AnnotationAssertion(obo:IAO_0000412 obo:NCBITaxon_181775 obo:ncbitaxon.owl)
 AnnotationAssertion(oboInOwl:hasExactSynonym obo:NCBITaxon_181775 "liberty cap")
 AnnotationAssertion(rdfs:label obo:NCBITaxon_181775 "Psilocybe semilanceata")
-SubClassOf(obo:NCBITaxon_181775 obo:NCBITaxon_40562)
+SubClassOf(obo:NCBITaxon_181775 obo:NCBITaxon_2982305)
 
 # Class: obo:NCBITaxon_182105 (Ficus benjamina)
 
@@ -25772,12 +25786,6 @@ AnnotationAssertion(oboInOwl:hasExactSynonym obo:NCBITaxon_4056 "dogbane family"
 AnnotationAssertion(rdfs:label obo:NCBITaxon_4056 "Apocynaceae")
 SubClassOf(obo:NCBITaxon_4056 obo:NCBITaxon_4055)
 
-# Class: obo:NCBITaxon_40562 (Strophariaceae)
-
-AnnotationAssertion(obo:IAO_0000412 obo:NCBITaxon_40562 obo:ncbitaxon.owl)
-AnnotationAssertion(rdfs:label obo:NCBITaxon_40562 "Strophariaceae")
-SubClassOf(obo:NCBITaxon_40562 obo:NCBITaxon_2982305)
-
 # Class: obo:NCBITaxon_405908 (Amanita novinupta)
 
 AnnotationAssertion(obo:IAO_0000412 obo:NCBITaxon_405908 obo:ncbitaxon.owl)
@@ -25923,6 +25931,15 @@ AnnotationAssertion(obo:IAO_0000412 obo:NCBITaxon_41084 obo:ncbitaxon.owl)
 AnnotationAssertion(oboInOwl:hasExactSynonym obo:NCBITaxon_41084 "Polyphaga")
 AnnotationAssertion(rdfs:label obo:NCBITaxon_41084 "Polyphaga <beetles>")
 SubClassOf(obo:NCBITaxon_41084 obo:NCBITaxon_7041)
+
+# Class: obo:NCBITaxon_4111 (Solanum melongena)
+
+AnnotationAssertion(obo:IAO_0000412 obo:NCBITaxon_4111 obo:ncbitaxon.owl)
+AnnotationAssertion(oboInOwl:hasExactSynonym obo:NCBITaxon_4111 "aubergine")
+AnnotationAssertion(oboInOwl:hasExactSynonym obo:NCBITaxon_4111 "brinjal")
+AnnotationAssertion(oboInOwl:hasExactSynonym obo:NCBITaxon_4111 "eggplant")
+AnnotationAssertion(rdfs:label obo:NCBITaxon_4111 "Solanum melongena")
+SubClassOf(obo:NCBITaxon_4111 obo:NCBITaxon_4107)
 
 # Class: obo:NCBITaxon_41117 (Pollicipes pollicipes)
 
@@ -29515,10 +29532,11 @@ AnnotationAssertion(oboInOwl:hasExactSynonym obo:NCBITaxon_49988 "winter savory"
 AnnotationAssertion(rdfs:label obo:NCBITaxon_49988 "Satureja montana")
 SubClassOf(obo:NCBITaxon_49988 obo:NCBITaxon_49986)
 
-# Class: obo:NCBITaxon_49990 (Thymus)
+# Class: obo:NCBITaxon_49990 (Thymus <eudicots>)
 
 AnnotationAssertion(obo:IAO_0000412 obo:NCBITaxon_49990 obo:ncbitaxon.owl)
-AnnotationAssertion(rdfs:label obo:NCBITaxon_49990 "Thymus")
+AnnotationAssertion(oboInOwl:hasExactSynonym obo:NCBITaxon_49990 "Thymus")
+AnnotationAssertion(rdfs:label obo:NCBITaxon_49990 "Thymus <eudicots>")
 SubClassOf(obo:NCBITaxon_49990 obo:NCBITaxon_216718)
 
 # Class: obo:NCBITaxon_49992 (Thymus vulgaris)
@@ -31611,11 +31629,11 @@ AnnotationAssertion(oboInOwl:hasExactSynonym obo:NCBITaxon_587042 "scrawled cowf
 AnnotationAssertion(rdfs:label obo:NCBITaxon_587042 "Acanthostracion quadricornis")
 SubClassOf(obo:NCBITaxon_587042 obo:NCBITaxon_587041)
 
-# Class: obo:NCBITaxon_587053 (Equetus punctatus)
+# Class: obo:NCBITaxon_587053 (Eques punctatus)
 
 AnnotationAssertion(obo:IAO_0000412 obo:NCBITaxon_587053 obo:ncbitaxon.owl)
 AnnotationAssertion(oboInOwl:hasExactSynonym obo:NCBITaxon_587053 "spotted drum")
-AnnotationAssertion(rdfs:label obo:NCBITaxon_587053 "Equetus punctatus")
+AnnotationAssertion(rdfs:label obo:NCBITaxon_587053 "Eques punctatus")
 SubClassOf(obo:NCBITaxon_587053 obo:NCBITaxon_30870)
 
 # Class: obo:NCBITaxon_587144 (Crangon septemspinosa)
@@ -38100,10 +38118,11 @@ AnnotationAssertion(oboInOwl:hasExactSynonym obo:NCBITaxon_8284 "chub")
 AnnotationAssertion(rdfs:label obo:NCBITaxon_8284 "Squalius cephalus")
 SubClassOf(obo:NCBITaxon_8284 obo:NCBITaxon_2743728)
 
-# Class: obo:NCBITaxon_83232 (Acrodonta)
+# Class: obo:NCBITaxon_83232 (Acrodonta <lizards & snakes>)
 
 AnnotationAssertion(obo:IAO_0000412 obo:NCBITaxon_83232 obo:ncbitaxon.owl)
-AnnotationAssertion(rdfs:label obo:NCBITaxon_83232 "Acrodonta")
+AnnotationAssertion(oboInOwl:hasExactSynonym obo:NCBITaxon_83232 "Acrodonta")
+AnnotationAssertion(rdfs:label obo:NCBITaxon_83232 "Acrodonta <lizards & snakes>")
 SubClassOf(obo:NCBITaxon_83232 obo:NCBITaxon_8511)
 
 # Class: obo:NCBITaxon_83375 (Aesculus turbinata)
@@ -38381,7 +38400,8 @@ SubClassOf(obo:NCBITaxon_8474 obo:NCBITaxon_8473)
 # Class: obo:NCBITaxon_8475 (Chelydra serpentina)
 
 AnnotationAssertion(obo:IAO_0000412 obo:NCBITaxon_8475 obo:ncbitaxon.owl)
-AnnotationAssertion(oboInOwl:hasExactSynonym obo:NCBITaxon_8475 "Common snapping turtle")
+AnnotationAssertion(oboInOwl:hasExactSynonym obo:NCBITaxon_8475 "North American snapping turtle")
+AnnotationAssertion(oboInOwl:hasExactSynonym obo:NCBITaxon_8475 "common snapping turtle")
 AnnotationAssertion(oboInOwl:hasExactSynonym obo:NCBITaxon_8475 "snapping turtle")
 AnnotationAssertion(rdfs:label obo:NCBITaxon_8475 "Chelydra serpentina")
 SubClassOf(obo:NCBITaxon_8475 obo:NCBITaxon_8474)

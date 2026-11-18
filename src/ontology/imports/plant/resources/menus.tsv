@@ -1,0 +1,103 @@
+name	title	meaning	ALL		Examples
+FungusMenu	{organism} food product	FOODON:00001143			
+FungusMenu	{organism} material	FOODON:00004336	TRUE		
+FungusMenu	. . {organism} substance	FOODON:02010338			
+FungusMenu	. . . . {organism} extract	FOODON:02010339			
+FungusMenu	{organism}	FOODON:03411261			
+FungusMenu	{organism} (no species taxon)	FOODON:03411261			
+FungusMenu	piece of {organism}	FOODON:02010340	TRUE		
+FungusMenu	. . piece of {organism} (raw)	FOODON:02010341	TRUE		
+FungusMenu	. . {organism} fruitbody	FOODON:00003528			
+FungusMenu	. . . . {organism} fruitbody (raw)	FOODON:02010350			
+FungusMenu	. . {organism} cap	FOODON:02010343			
+FungusMenu	. . {organism} stalk	FOODON:02010351			
+FungusMenu	. . {organism} mycelium	FOODON:02010342			
+FungusMenu	. . piece of {organism} fruitbody	FOODON:02010344			
+FungusMenu	. . . . piece of {organism} fruitbody (raw)	FOODON:02010345			
+FungusMenu	piece(s) of {organism}	FOODON:02010346			
+FungusMenu	. . piece(s) of {organism} (raw)	FOODON:02010347			
+FungusMenu	. . . . piece(s) of {organism} fruitbody	FOODON:00005329			
+FungusMenu	. . . . piece(s) of {organism} fruitbody (raw)	FOODON:02010349			
+					
+PlantMaterialMenu	{organism_base} food product	FOODON:00001015			
+PlantMaterialMenu	{organism_base}	FOODON:00005749		plant	
+PlantMaterialMenu	. . {organism_base} (raw)	FOODON:00005750		plant (raw)	
+PlantMaterialMenu	{organism_base} material	FOODON:00004331		plant material	
+PlantMaterialMenu	{organism_base} substance	FOODON:00005748		plant substance	
+PlantMaterialMenu	piece of {organism_base}	FOODON:00004333		piece of plant	
+PlantMaterialMenu	. . piece of {organism_base} (raw)	FOODON:00005751		piece of plant (raw)	
+PlantMaterialMenu	piece(s) of {organism_base}	FOODON:00004334		piece(s) of plant	
+PlantMaterialMenu	. . piece(s) of {organism_base} (raw)	FOODON:00005752		piece(s) of plant (raw)	
+PlantFruitMenu	{organism}	{anatomical_parent}		Id for anatomical parent e.g pome fruit	
+PlantFruitMenu	. . {organism} (raw)	{anatomical_parent} (raw)		Id for {anatomical_parent} (raw) e.g. pome fruit (raw)	
+PlantFruitMenu	. . {organism} (dried)	{anatomical_parent} (dried)		Id for {anatomical_parent} (dried) e.g. pome fruit (dried)	
+PlantFruitMenu	piece of {organism}	{anatomical_parent} piece of {organism}		Example: piece(s) of apple. I’m not sure what the best general term is: ‘piece(s) of fruit’ wouldn’t apply to non-fruit items like carrot or potato. The root/tuber categories in the template are really meant for items explicitly labeled as a root or a tuber. Would ‘piece(s) of food’ work as a general term?”	
+PlantFruitMenu	. . piece of {organism} (raw)	{anatomical_parent} piece of {organism} (raw)			
+PlantFruitMenu	{organism} flower	FOODON:00005786		plant flower	borage flower, pumpkin flower
+PlantFruitMenu	. . {organism} flower (raw)	FOODON:00005787		plant flower (raw)	
+PlantFruitMenu	. . {organism} flower thread	FOODON:00005826		plant flower thread	
+PlantFruitMenu	. . . . {organism} flower thread (raw)	FOODON:00005827 		plant flower thread (raw)	
+PlantFruitMenu	{organism} pulp	FOODON:00005819		plant pulp	
+PlantFruitMenu	. . {organism} pulp (raw)	FOODON:00005820		plant pulp (raw)	
+PlantSeedMenu	{organism} seed	FOODON:00005762		plant seed	
+PlantSeedMenu	. . {organism} seed (raw)	FOODON:00005763		plant seed (raw)?	
+PlantSeedMenu	piece of {organism} seed	FOODON:00005766		piece of plant seed	
+PlantSeedMenu	. . piece of {organism} seed (raw)	FOODON:00005767		piece of plant seed (raw)	
+PlantSeedMenu	 . . {organism} grain	FOODON:00005764		plant grain	all grains are seeds but not all seeds are grains
+PlantSeedMenu	 . . . . {organism} grain (raw)	FOODON:00005765		plant grain (raw)	
+PlantLeafMenu	{organism} leaf	FOODON:00005757		plant leaf	
+PlantLeafMenu	. . {organism} leaf (raw)	FOODON:00005758		plant leaf (raw)	
+PlantLeafMenu	. . {organism} leaf (fresh)	FOODON:00005759		plant leaf (fresh)	
+PlantLeafMenu	. . {organism} leaf (dried)	FOODON:00005760		plant leaf (dried)	
+PlantLeafMenu	piece of {organism} leaf	FOODON:00005754		piece of plant leaf	
+PlantLeafMenu	. . piece of {organism} leaf (raw)	FOODON:00005755		piece of plant leaf (raw)	
+PlantLeafMenu	. . piece of {organism} leaf (dried)	FOODON:00005809		piece of plant leaf (dried)	
+PlantLeafMenu	. . piece of {organism} leaf (fresh)	FOODON:00005810		piece of plant leaf (fresh)	
+PlantLeafMenu	piece(s) of {organism} leaf	FOODON:00005753		piece(s) of plant leaf	
+PlantLeafMenu	. . piece(s) of {organism} leaf (raw)	FOODON:00005756		piece(s) of plant leaf (raw)	
+PlantLeafMenu	. . piece(s) of {organism} leaf (dried)	FOODON:00005811		piece(s) of plant leaf (dried)	
+PlantLeafMenu	. . piece(s) of {organism} leaf (fresh)	FOODON:00005812		piece(s) of plant leaf (fresh)	
+PlantLeafMenu	{organism} leaf bunch	FOODON:00004800		plant leaf bunch	
+ShootSystemMenu	{organism} stem	FOODON:00005772		plant stem	
+ShootSystemMenu	. . {organism} stem (raw)	FOODON:00005773		plant stem (raw)	
+ShootSystemMenu	{organism} stalk	FOODON:00005778		plant stalk	
+ShootSystemMenu	. . {organism} stalk (raw)	FOODON:00005779		plant stalk (raw)	
+ShootSystemMenu	{organism} scape	FOODON:00005780		plant scape	
+ShootSystemMenu	. . {organism} scape (raw)	FOODON:00005781		plant scape (raw)	
+ShootSystemMenu	{organism} head	FOODON:00005782		plant head	
+ShootSystemMenu	. . {organism} head (raw)	FOODON:00005783		plant head (raw)	
+ShootSystemMenu	piece of {organism} head	FOODON:00005817		piece of plant head	
+ShootSystemMenu	. . piece of {organism} head (raw)	FOODON:00005818		piece of plant head (raw)	
+ShootSystemMenu	{organism} bark	FOODON:00005824		plant bark	
+ShootSystemMenu	. . {organism} bark (raw)	FOODON:00005825		plant bark (raw)	
+RootSystemMenu	{organism} root	FOODON:00005774		plant root	
+RootSystemMenu	. . {organism} root (raw)	FOODON:00005775		plant root (raw)	
+RootSystemMenu	{organism} tuber	FOODON:00005776		plant tuber	
+RootSystemMenu	. . {organism} tuber (raw)	FOODON:00005777		plant tuber (raw)	
+RootSystemMenu	{organism} bulb	FOODON:00005784		plant bulb	
+RootSystemMenu	. . {organism} bulb (raw)	FOODON:00005785		plant bulb (raw)	
+RootSystemMenu	piece of {organism} bulb	FOODON:00005821		piece pf plant bulb	
+RootSystemMenu	. . piece of {organism} bulb (raw)	FOODON:00005822		piece pf plant bulb (raw)	
+PlantFruitMenu	{organism} peel	FOODON:00004459			
+PlantFruitMenu	. . {organism} peel (raw)	New FoodOn ID			
+PlantFruitMenu	{organism} rind			plant rind? as it applies to both fruit and vegetables.	
+PlantFruitMenu	 . . {organism} rind (raw)			same as above	
+PlantSeedMenu	{organism} kernel			seed kernel? or plant kernel?	
+PlantSeedMenu	{organism_cultivar} kernel				
+PlantSeedMenu	. . {organism} kernel (raw)				
+PlantSeedMenu	. . {organism} kernel (dried)				
+PlantSeedMenu	{organism} pod				
+PlantSeedMenu	. . {organism} pod (raw)				
+PlantSeedMenu	{organism} grain husk			seed husk?	
+PlantSeedMenu	. . {organism} grain husk (raw)				
+PlantSeedMenu	{organism} shell			seed shell? nut shell?	
+PlantSeedMenu	. . {organism} shell (raw)				
+PlantSeedMenu	. . piece of {organism} seed (dried)	FOODON:00005808 		piece of plant seed (dried)	
+PlantLeafMenu	. . {organism} leaf (ground)				
+PlantLeafMenu	. . {organism} leaf (dried, ground)				
+PlantLeafMenu	. . {organism} leaf (finely ground)				
+ShootSystemMenu	{organism} sprout				
+ShootSystemMenu	. . {organism} sprout (raw)				
+RootSystemMenu	{organism} (primary root)				
+RootSystemMenu	{organism} clove				
+RootSystemMenu	. . {organism} clove (raw)				
